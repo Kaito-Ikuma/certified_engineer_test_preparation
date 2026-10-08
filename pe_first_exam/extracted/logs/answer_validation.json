@@ -1,0 +1,7 @@
+{
+  "official_rows": 1270,
+  "question_rows": 1270,
+  "join_mismatches": 0,
+  "visual_exceptions_verified": 6,
+  "verification_scope": "parsed/structurally checked; source review and independent solutions separately recorded"
+}

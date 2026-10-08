@@ -1,0 +1,8 @@
+{
+  "chapters": [
+    {"file": "chapters/applied_science/geophysics_geochemistry/10_other.tex", "title": "地球物理・地球化学の補足"},
+    {"file": "chapters/applied_science/geology/06_geological_time.tex", "title": "地質年代の補足"},
+    {"file": "chapters/applied_science/geology/11_other.tex", "title": "地質の補足"}
+  ],
+  "scope": "Requested chapter skeletons without additional primary assignments. Current geological-time questions remain in the reviewed stratigraphy mapping."
+}

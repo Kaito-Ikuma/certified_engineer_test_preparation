@@ -1,0 +1,14 @@
+﻿question_id,fields,old_major,old_middle,old_topic,new_major,new_middle,new_topic,evidence,source_file,source_page
+H24-REG-BASIC-1-4,minor_category|topic|concept_id,設計・計画,設計原理・管理,環境法・循環・持続可能性,設計・計画,設計原理・管理,ユニバーサルデザイン,デザイン,sources/H24/basic.pdf,4
+H26-REG-BASIC-1-1,minor_category|topic|concept_id,設計・計画,設計原理・管理,環境法・循環・持続可能性,設計・計画,設計原理・管理,ユニバーサルデザイン,デザイン,sources/H26/basic.pdf,1
+H26-REG-APPLIED-16,minor_category|topic|concept_id,物理及び化学,分析化学,相平衡・溶液,物理及び化学,分析化学,陽イオンの系統分析,陽イオンを含む混合水溶液の分析,sources/H26/17_applied_science.pdf,7
+H28-REG-BASIC-5-4,minor_category|topic|concept_id,環境・エネルギー・技術,エネルギー,科学技術史・政策の経緯,環境・エネルギー・技術,エネルギー,未確定,エネルギー,sources/H28/basic.pdf,23
+H30-REG-BASIC-1-3,minor_category|topic|concept_id,設計・計画,設計原理・管理,安全・リスク評価,設計・計画,設計原理・管理,ユニバーサルデザイン,設計,sources/H30/basic.pdf,3
+R01-REG-BASIC-4-2,minor_category|topic|concept_id,材料・化学・バイオ,原子・無機化学,科学技術史・政策の経緯,材料・化学・バイオ,原子・無機化学,同位体の基礎,電子,sources/R01/basic.pdf,16
+R01-REG-BASIC-5-1,minor_category|topic|concept_id,環境・エネルギー・技術,環境・持続可能性,科学技術史・政策の経緯,環境・エネルギー・技術,環境・持続可能性,環境法・循環・持続可能性,環境,sources/R01/basic.pdf,19
+R02-REG-BASIC-1-1,minor_category|topic|concept_id,設計・計画,設計原理・管理,科学技術史・政策の経緯,設計・計画,設計原理・管理,ユニバーサルデザイン,デザイン,sources/R02/basic.pdf,1
+R03-REG-BASIC-1-1,minor_category|topic|concept_id,設計・計画,設計原理・管理,未確定,設計・計画,設計原理・管理,ユニバーサルデザイン,デザイン,sources/R03/basic.pdf,1
+R03-REG-BASIC-4-1,minor_category|topic|concept_id,材料・化学・バイオ,原子・無機化学,科学技術史・政策の経緯,材料・化学・バイオ,原子・無機化学,同位体の基礎,電子,sources/R03/basic.pdf,16
+R04-REG-APPLIED-30,minor_category|topic|concept_id,地質,構造地質,未確定,地質,構造地質,日本列島の地質構造,日本列島の地質構造,sources/R04/17_applied_science.pdf,10
+R06-REG-BASIC-1-1,minor_category|topic|concept_id,設計・計画,設計原理・管理,未確定,設計・計画,設計原理・管理,ユニバーサルデザイン,デザイン,sources/R06/basic.pdf,1
+R07-REG-BASIC-5-3,minor_category|topic|concept_id,環境・エネルギー・技術,エネルギー,科学技術史・政策の経緯,環境・エネルギー・技術,エネルギー,未確定,エネルギー,sources/R07/basic.pdf,17

@@ -1,0 +1,6 @@
+II-6次の用語のうち、熱電気現象に関わるものとして、最も不適切なものはどれか。
+① ゼーベック効果（Seebeck effect）
+② カー効果（Kerr effect）
+③ ペルティエ効果（Peltier effect）
+④ トムソン効果（Thomson effect）
+⑤ 熱起電力

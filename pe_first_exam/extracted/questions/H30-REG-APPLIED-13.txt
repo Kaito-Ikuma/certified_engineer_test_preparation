@@ -1,0 +1,11 @@
+皿-13分析方法や分析機器、あるいは単離法では、しばしば略称が用いられる。次の方
+法の略称とその正式な英語名の組合せのうち、最も不適切なものはどれか。
+① 電子スピンに注目した磁気共鳴分光法のEPR：Electron Paramagnetic Resonance
+② 高分子の分子量分析に用いられるHPLC：High Precision Liquid Chromatography
+③ X線光電子分光法のうち、充素の触媒表面の状態や化学的構造の分析に用いられる
+ESCA： Electron Spectroscopy for Chemical Analysis
+④ 分子や置換基の分析に用いられるCARS：Coherent Anti-Stokes
+Raman
+Spectroscopy
+⑤ レーザーを用いた高分子の質量分析に用いられるMALDI：Matrix-Assisted Laser
+Desorption/Ionization

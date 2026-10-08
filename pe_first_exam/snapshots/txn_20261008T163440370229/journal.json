@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T16:34:40+09:00",
+  "paths": [
+    "extracted/logs/draft_build_manifest.json"
+  ],
+  "existed": {
+    "extracted/logs/draft_build_manifest.json": true
+  },
+  "sha256": {
+    "extracted/logs/draft_build_manifest.json": "98acf293664bfcc6b6d243fecc5d91c322caa2f8a99d5f1d27b3e41272b0674a"
+  }
+}

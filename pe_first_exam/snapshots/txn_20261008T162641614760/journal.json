@@ -1,0 +1,31 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T16:26:41+09:00",
+  "paths": [
+    "generated/questions/applied_science/geophysics_geochemistry/10_other.tex",
+    "chapters/applied_science/geophysics_geochemistry/10_other.tex",
+    "generated/questions/applied_science/geology/06_geological_time.tex",
+    "chapters/applied_science/geology/06_geological_time.tex",
+    "generated/questions/applied_science/geology/11_other.tex",
+    "chapters/applied_science/geology/11_other.tex",
+    "generated/chapter_inputs.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/geophysics_geochemistry/10_other.tex": false,
+    "chapters/applied_science/geophysics_geochemistry/10_other.tex": false,
+    "generated/questions/applied_science/geology/06_geological_time.tex": false,
+    "chapters/applied_science/geology/06_geological_time.tex": false,
+    "generated/questions/applied_science/geology/11_other.tex": false,
+    "chapters/applied_science/geology/11_other.tex": false,
+    "generated/chapter_inputs.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/geophysics_geochemistry/10_other.tex": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "chapters/applied_science/geophysics_geochemistry/10_other.tex": "8a0019145f389197f90bdb4b494b36c2ab3d1d398347ba179913d73063e88a27",
+    "generated/questions/applied_science/geology/06_geological_time.tex": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "chapters/applied_science/geology/06_geological_time.tex": "68a860935c573bab4b41511c85534e4e60bf84797d5cfef03b59105bde32ebac",
+    "generated/questions/applied_science/geology/11_other.tex": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "chapters/applied_science/geology/11_other.tex": "a79f89542e3971c03188f461dc669d8b9c209c8cc2a41aa50f69ccf904dee738",
+    "generated/chapter_inputs.tex": "811a8d035bc3c867904b7ccbf79e920397b6a0503e957577a7036db216911dd7"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T15:52:13+09:00",
+  "paths": [
+    "data/classification_candidates.csv",
+    "data/classification_changes.csv",
+    "data/questions.csv",
+    "data/classifications.csv",
+    "data/question_topics.csv"
+  ],
+  "existed": {
+    "data/classification_candidates.csv": true,
+    "data/classification_changes.csv": true,
+    "data/questions.csv": true,
+    "data/classifications.csv": true,
+    "data/question_topics.csv": true
+  },
+  "sha256": {
+    "data/classification_candidates.csv": "9f95d239f112aa4afe887b679093e236d3081b289627287d2f3087b39f828685",
+    "data/classification_changes.csv": "52c76e3ed332ea4cc4c68a010a23a8deeb5ba053f9620a9a12ca2f7928c1e8b3",
+    "data/questions.csv": "9f95d239f112aa4afe887b679093e236d3081b289627287d2f3087b39f828685",
+    "data/classifications.csv": "74a3de6ef60aea387979afc1898dd388a41b7ab123f18daa9d83ba3c65e7f6fc",
+    "data/question_topics.csv": "0c66cf5c24fb76902001624ad4aeb8c378145f45d0e7d56abc63eb0a9c116cdb"
+  }
+}

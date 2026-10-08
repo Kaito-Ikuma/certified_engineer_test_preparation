@@ -1,0 +1,11 @@
+I-14 分析方法や分析機器、あるいは単離法では、しばしば略称が用いられる。茨の方
+法の略称とその正式な英語名の組合せのうち、最も不適切なものはどれか。
+① 分子や置換基の分析に用いられるCARS：Coherent Anti-Stokes
+Raman
+Spectroscopy
+② 電子スピンに注目した磁気共鳴分光法のEPR：Electron Paramagnetic Resonance
+③ 又線光電子分光法のうち、元素の触媒表面の状態や化学的構造の分析に用いられる
+ESCA： Electron Spectroscopy for Chemical Analysis
+④ 高分子の分子量分析に用いられるHPLC：High Precision Liquid Chromatography
+⑤ レーザーを用いた高分子の質量分析に用いられるMALDI:Matrix-Assisted Laser
+Desorption/Ionization

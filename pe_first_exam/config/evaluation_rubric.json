@@ -1,0 +1,17 @@
+{
+  "version": "1.0-review1",
+  "audience": "大学院理学研究科・物理学専攻程度",
+  "axes": {
+    "knowledge_novelty": {"0":"既知の数学・物理または既習の基本用語","1":"一つの新規専門概念","2":"複数の新規専門概念・制度知識","3":"高度で領域固有の知識の複合"},
+    "reasoning_steps": {"0":"用語・原則の直接識別","1":"一段の適用","2":"二〜三段の組合せ","3":"複数条件の統合・モデル選択"},
+    "calculation_load": {"0":"計算なし","1":"暗算・単純代入","2":"式変形・複数段の計算","3":"長い導出・複雑な評価"},
+    "figure_reading": {"0":"図表なし","1":"単純な対応・値読み","2":"構造・座標・複数図比較","3":"複雑な空間・地質・観測解釈"}
+  },
+  "anchors": {"1":"既知知識の直接識別または一段適用","2":"軽い新規知識または二段の既知知識適用","3":"新規専門概念と複数段の判断","4":"領域固有知識と多条件・図表の統合","5":"高度な専門知識と多段判断の複合"},
+  "aggregation": "軸の単純加算はしない。校正済み実例と比較して総合評価し、根拠を保存。未知の軸は空欄。",
+  "priority_inputs": ["session_frequency","annual_frequency","foundationality","transferability","learning_minutes","estimated_score_efficiency"],
+  "priority_rule": "S/A/B/Cは全入力の評価理由を記録して人手承認。頻度のみで自動確定しない。学習時間未知は空欄。",
+  "similarity_types": ["same_concept","same_method","parameter_variant","near_repeat","exact_repeat"],
+  "similarity_required_differences": ["numerical_conditions","units","negation","choice_mapping","figure_conditions","law_reference_date"],
+  "approval": "候補と承認済みを区別。OCR類似だけでは再出題としない。"
+}

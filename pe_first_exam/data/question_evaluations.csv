@@ -1,0 +1,6 @@
+﻿question_id,knowledge_novelty,reasoning_steps,calculation_load,figure_reading,difficulty,difficulty_reason,foundationality,transferability,learning_minutes,estimated_score_efficiency,priority,priority_reason,rubric_version,reviewer,status
+H26-REG-BASIC-2-4,1,1,0,0,2,LIFOという新規情報概念を一つ理解し、短い操作列を直接追跡する。,,,,,,未評価,1.0-review1,GPT-6.1 Sol,calibration_draft
+H24-REG-BASIC-3-2,0,2,1,2,2,既知の力学だが、図の接続を読んで有効剛性を比較する二段の判断がある。,,,,,,未評価,1.0-review1,GPT-6.1 Sol,calibration_draft
+H26-REG-APPLIED-16,2,2,0,0,3,物理専攻者には新規の系統分析知識が必要で、既に除かれたイオンを段階的に追跡する。,,,,,,未評価,1.0-review1,GPT-6.1 Sol,calibration_draft
+R02-REG-APPLIED-08,2,1,0,0,3,式計算はないが材料分野の複数の専門語と機構の対応を知る必要がある。,,,,,,未評価,1.0-review1,GPT-6.1 Sol,calibration_draft
+H23-REG-APT-11,2,2,0,0,3,ISO規格の性格という新規知識に加え、出題表現と一次資料の区別が必要。正答理由と他肢の疑義は別評価。,,,,,,未評価,1.0-review1,GPT-6.1 Sol,calibration_draft

@@ -1,0 +1,338 @@
+[
+  {
+    "year": "H23",
+    "subject": "BASIC",
+    "expected": 25,
+    "found": 25,
+    "missing": []
+  },
+  {
+    "year": "H23",
+    "subject": "APT",
+    "expected": 15,
+    "found": 15,
+    "missing": []
+  },
+  {
+    "year": "H23",
+    "subject": "APPLIED",
+    "expected": 35,
+    "found": 35,
+    "missing": []
+  },
+  {
+    "year": "H24",
+    "subject": "BASIC",
+    "expected": 25,
+    "found": 25,
+    "missing": []
+  },
+  {
+    "year": "H24",
+    "subject": "APT",
+    "expected": 15,
+    "found": 15,
+    "missing": []
+  },
+  {
+    "year": "H24",
+    "subject": "APPLIED",
+    "expected": 35,
+    "found": 35,
+    "missing": []
+  },
+  {
+    "year": "H25",
+    "subject": "BASIC",
+    "expected": 30,
+    "found": 30,
+    "missing": []
+  },
+  {
+    "year": "H25",
+    "subject": "APT",
+    "expected": 15,
+    "found": 15,
+    "missing": []
+  },
+  {
+    "year": "H25",
+    "subject": "APPLIED",
+    "expected": 35,
+    "found": 35,
+    "missing": []
+  },
+  {
+    "year": "H26",
+    "subject": "BASIC",
+    "expected": 30,
+    "found": 30,
+    "missing": []
+  },
+  {
+    "year": "H26",
+    "subject": "APT",
+    "expected": 15,
+    "found": 15,
+    "missing": []
+  },
+  {
+    "year": "H26",
+    "subject": "APPLIED",
+    "expected": 35,
+    "found": 35,
+    "missing": []
+  },
+  {
+    "year": "H27",
+    "subject": "BASIC",
+    "expected": 30,
+    "found": 30,
+    "missing": []
+  },
+  {
+    "year": "H27",
+    "subject": "APT",
+    "expected": 15,
+    "found": 15,
+    "missing": []
+  },
+  {
+    "year": "H27",
+    "subject": "APPLIED",
+    "expected": 35,
+    "found": 35,
+    "missing": []
+  },
+  {
+    "year": "H28",
+    "subject": "BASIC",
+    "expected": 30,
+    "found": 30,
+    "missing": []
+  },
+  {
+    "year": "H28",
+    "subject": "APT",
+    "expected": 15,
+    "found": 15,
+    "missing": []
+  },
+  {
+    "year": "H28",
+    "subject": "APPLIED",
+    "expected": 35,
+    "found": 35,
+    "missing": []
+  },
+  {
+    "year": "H29",
+    "subject": "BASIC",
+    "expected": 30,
+    "found": 30,
+    "missing": []
+  },
+  {
+    "year": "H29",
+    "subject": "APT",
+    "expected": 15,
+    "found": 15,
+    "missing": []
+  },
+  {
+    "year": "H29",
+    "subject": "APPLIED",
+    "expected": 35,
+    "found": 35,
+    "missing": []
+  },
+  {
+    "year": "H30",
+    "subject": "BASIC",
+    "expected": 30,
+    "found": 30,
+    "missing": []
+  },
+  {
+    "year": "H30",
+    "subject": "APT",
+    "expected": 15,
+    "found": 15,
+    "missing": []
+  },
+  {
+    "year": "H30",
+    "subject": "APPLIED",
+    "expected": 35,
+    "found": 35,
+    "missing": []
+  },
+  {
+    "year": "R01",
+    "subject": "BASIC",
+    "expected": 30,
+    "found": 30,
+    "missing": []
+  },
+  {
+    "year": "R01",
+    "subject": "APT",
+    "expected": 15,
+    "found": 15,
+    "missing": []
+  },
+  {
+    "year": "R01",
+    "subject": "APPLIED",
+    "expected": 35,
+    "found": 35,
+    "missing": []
+  },
+  {
+    "year": "R01_retest",
+    "subject": "BASIC",
+    "expected": 30,
+    "found": 30,
+    "missing": []
+  },
+  {
+    "year": "R01_retest",
+    "subject": "APT",
+    "expected": 15,
+    "found": 15,
+    "missing": []
+  },
+  {
+    "year": "R01_retest",
+    "subject": "APPLIED",
+    "expected": 35,
+    "found": 35,
+    "missing": []
+  },
+  {
+    "year": "R02",
+    "subject": "BASIC",
+    "expected": 30,
+    "found": 30,
+    "missing": []
+  },
+  {
+    "year": "R02",
+    "subject": "APT",
+    "expected": 15,
+    "found": 15,
+    "missing": []
+  },
+  {
+    "year": "R02",
+    "subject": "APPLIED",
+    "expected": 35,
+    "found": 35,
+    "missing": []
+  },
+  {
+    "year": "R03",
+    "subject": "BASIC",
+    "expected": 30,
+    "found": 30,
+    "missing": []
+  },
+  {
+    "year": "R03",
+    "subject": "APT",
+    "expected": 15,
+    "found": 15,
+    "missing": []
+  },
+  {
+    "year": "R03",
+    "subject": "APPLIED",
+    "expected": 35,
+    "found": 35,
+    "missing": []
+  },
+  {
+    "year": "R04",
+    "subject": "BASIC",
+    "expected": 30,
+    "found": 30,
+    "missing": []
+  },
+  {
+    "year": "R04",
+    "subject": "APT",
+    "expected": 15,
+    "found": 15,
+    "missing": []
+  },
+  {
+    "year": "R04",
+    "subject": "APPLIED",
+    "expected": 35,
+    "found": 35,
+    "missing": []
+  },
+  {
+    "year": "R05",
+    "subject": "BASIC",
+    "expected": 30,
+    "found": 30,
+    "missing": []
+  },
+  {
+    "year": "R05",
+    "subject": "APT",
+    "expected": 15,
+    "found": 15,
+    "missing": []
+  },
+  {
+    "year": "R05",
+    "subject": "APPLIED",
+    "expected": 35,
+    "found": 35,
+    "missing": []
+  },
+  {
+    "year": "R06",
+    "subject": "BASIC",
+    "expected": 30,
+    "found": 30,
+    "missing": []
+  },
+  {
+    "year": "R06",
+    "subject": "APT",
+    "expected": 15,
+    "found": 15,
+    "missing": []
+  },
+  {
+    "year": "R06",
+    "subject": "APPLIED",
+    "expected": 35,
+    "found": 35,
+    "missing": []
+  },
+  {
+    "year": "R07",
+    "subject": "BASIC",
+    "expected": 30,
+    "found": 30,
+    "missing": []
+  },
+  {
+    "year": "R07",
+    "subject": "APT",
+    "expected": 15,
+    "found": 15,
+    "missing": []
+  },
+  {
+    "year": "R07",
+    "subject": "APPLIED",
+    "expected": 35,
+    "found": 35,
+    "missing": []
+  }
+]

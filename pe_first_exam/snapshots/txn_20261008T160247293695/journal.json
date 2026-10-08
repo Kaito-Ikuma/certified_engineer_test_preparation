@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T16:02:47+09:00",
+  "paths": [
+    "generated/yearly_index.tex"
+  ],
+  "existed": {
+    "generated/yearly_index.tex": false
+  },
+  "sha256": {
+    "generated/yearly_index.tex": "c75cc282868a790c0f033b8a3a3959a2995fc10ad05a436531df2d24598c1edd"
+  }
+}

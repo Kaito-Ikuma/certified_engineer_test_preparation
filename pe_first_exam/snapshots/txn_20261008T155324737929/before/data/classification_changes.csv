@@ -1,0 +1,3 @@
+﻿question_id,fields,old_major,old_middle,old_topic,new_major,new_middle,new_topic,evidence,source_file,source_page
+H25-REG-APT-06,major_category|middle_category|core_concept|tex_file|classification_method|discipline_id|chapter_id|classification_evidence,環境・持続可能性,環境・持続可能性,社会的責任・安全の標準,技術者倫理・意思決定,技術者倫理・意思決定,社会的責任・安全の標準,ISO26000・CSRの原則と利害関係者を問う。持続可能の語だけで環境分類に限定しない。原典領域画像で確認。,sources/H25/aptitude.pdf,7
+R02-REG-APT-11,major_category|middle_category|minor_category|topic|core_concept|tex_file|classification_method|discipline_id|chapter_id|concept_id|classification_evidence,環境・持続可能性,環境・持続可能性,環境法・循環・持続可能性,技術者倫理・意思決定,技術者倫理・意思決定,ユニバーサルデザイン,ユニバーサルデザインの公平性・利用者包摂の原則を問う。環境整備の語だけで環境科学分類にしない。原典領域画像で確認。,sources/R02/aptitude.pdf,11

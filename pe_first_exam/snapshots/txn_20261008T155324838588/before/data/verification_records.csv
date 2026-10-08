@@ -1,0 +1,3 @@
+﻿question_id,kind,source_sha256,content_sha256,reviewer,reviewed_at,status,evidence,notes
+H27-REG-BASIC-4-5,boundary,cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039,18ea2db50558a2e542520cdc6d6b3f71faf6bde1e0df85e4537d3037b2d32fa1,GPT-6.1 Sol (historical S2 log),2026-10-08T01:01:38+09:00,verified,config/boundary_overrides.json,Historical image-confirmed boundary only.
+H27-REG-APPLIED-08,boundary,3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80,8df2a4ce3128c0ddf54174e7ffd75c37e5b6571f03c7c52365f75363d2b88500,GPT-6.1 Sol (historical S2 log),2026-10-08T01:01:38+09:00,verified,config/boundary_overrides.json,Historical image-confirmed boundary only.

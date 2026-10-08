@@ -1,0 +1,31 @@
+{
+  "question_id": "H26-REG-BASIC-2-4",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "96b115988b3b2f5b59903756d10088f66ab44cda3aa1551a87f3d2a4f8d8a2f2",
+  "stem": "後入れ先出しのスタックに、空の状態から PUSH 1, PUSH 2, PUSH 3, POP, PUSH 4, PUSH 5, POP, POP を行う。最後に取り出される整数を選ぶ。",
+  "conditions": {
+    "initial_stack": "empty",
+    "operations": [
+      "PUSH 1",
+      "PUSH 2",
+      "PUSH 3",
+      "POP",
+      "PUSH 4",
+      "PUSH 5",
+      "POP",
+      "POP"
+    ]
+  },
+  "choices": {
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5"
+  },
+  "figures": [],
+  "scope": "essential conditions and option mapping; independent paraphrase",
+  "ambiguity": ""
+}

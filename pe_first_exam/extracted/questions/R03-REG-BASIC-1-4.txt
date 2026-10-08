@@ -1,0 +1,8 @@
+I-1-4ある装置において、平均故障間隔（MTBF:Mean Time Between
+Failures）がA時間，平均修復時間（MTTR: Mean Time To Repair）がB時間のと
+き、この装置の定常アベイラビリティ（稼働率）の式として、最も適切なものはどれか。
+① A/（A-B）
+② B/（A-B）
+③ A/（A+B）
+④ B/（A+B）
+⑤ A/B

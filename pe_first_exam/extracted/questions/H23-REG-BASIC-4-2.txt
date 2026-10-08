@@ -1,0 +1,9 @@
+1ー4-2以下の結合エネルギーを用いて得られる、1molの塩化水素HCIの生成熱に最
+も近い値はどれか。
+結合エネルギー H-H：436 kJ/mol, CI-Cl:243 kJ/mol, H-Cl:432 kJ/mol
+① 93 kJ/mol
+②
+216 kJ/mol
+③ 340 kJ/mol
+④ 432 kJ/mol ⑤
+679 kJ/mol

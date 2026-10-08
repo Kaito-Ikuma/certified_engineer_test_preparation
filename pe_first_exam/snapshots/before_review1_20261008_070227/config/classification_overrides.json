@@ -1,0 +1,92 @@
+{
+  "H27-REG-BASIC-3-2": {
+    "major": "解析",
+    "middle": "ベクトル解析・幾何",
+    "file": "chapters/basic/03_analysis.tex",
+    "evidence": "原典page_008.pngを目視確認。スカラー場の勾配。"
+  },
+  "H30-REG-BASIC-3-1": {
+    "major": "解析",
+    "middle": "微積分・数値解析",
+    "file": "chapters/basic/03_analysis.tex",
+    "evidence": "原典page_011.pngを目視確認。一次関数の定積分と求積式。"
+  },
+  "H26-REG-APPLIED-01": {
+    "major": "物理及び化学",
+    "middle": "力学",
+    "file": "chapters/applied_science/physics_chemistry/01_mechanics.tex",
+    "evidence": "地球の接線方向に発射する物体の最小初速度。人工衛星の軌道条件。"
+  },
+  "H28-REG-APPLIED-02": {
+    "major": "物理及び化学",
+    "middle": "力学",
+    "file": "chapters/applied_science/physics_chemistry/01_mechanics.tex",
+    "evidence": "接線方向に発射する物体の初速度と落下条件。"
+  },
+  "H30-REG-APPLIED-14": {
+    "major": "物理及び化学",
+    "middle": "原子・分子・結晶",
+    "file": "chapters/applied_science/physics_chemistry/07_atomic_molecular.tex",
+    "evidence": "選択肢が分子の光吸収、振動、励起、選択律を扱う。"
+  },
+  "H29-REG-APPLIED-11": {
+    "major": "物理及び化学",
+    "middle": "原子・分子・結晶",
+    "file": "chapters/applied_science/physics_chemistry/07_atomic_molecular.tex",
+    "evidence": "選択肢が結合エネルギーと分子間相互作用を扱う。"
+  },
+  "R06-REG-APPLIED-08": {
+    "major": "物理及び化学",
+    "middle": "電磁気・物性",
+    "file": "chapters/applied_science/physics_chemistry/04_electromagnetism.tex",
+    "evidence": "自由電子、半導体、電子軌道、スピン磁性の横断問題。"
+  },
+  "R03-REG-APPLIED-22": {
+    "major": "地質",
+    "middle": "鉱物学",
+    "file": "chapters/applied_science/geology/01_mineralogy.tex",
+    "evidence": "鉱物の多形関係の組合せを問う。"
+  },
+  "R03-REG-APPLIED-28": {
+    "major": "地質",
+    "middle": "応用地質・地盤",
+    "file": "chapters/applied_science/geology/08_engineering_geology.tex",
+    "evidence": "トンネル掘削と崩壊、山はね、沈下を扱う。"
+  },
+  "R01-REG-APPLIED-29": {
+    "major": "地質",
+    "middle": "応用地質・地盤",
+    "file": "chapters/applied_science/geology/08_engineering_geology.tex",
+    "evidence": "新生代砂岩・泥岩の分布域で生じる地質的現象。"
+  },
+  "R05-REG-APPLIED-14": {
+    "major": "物理及び化学",
+    "middle": "有機・高分子化学",
+    "file": "chapters/applied_science/physics_chemistry/12_organic_polymer.tex",
+    "evidence": "メタンに関する記述。最も基本的な炭化水素。"
+  },
+  "H23-REG-APT-13": {
+    "major": "コンプライアンス・説明責任",
+    "middle": "専門職・経営管理・内部統制",
+    "file": "chapters/aptitude/03_compliance_accountability.tex",
+    "evidence": "専門職、BCM/BCP、性能設計、VE、内部統制の横断記述。"
+  },
+  "H26-REG-APT-13": {
+    "major": "安全・リスク",
+    "middle": "インフラ維持管理",
+    "file": "chapters/aptitude/04_safety_risk.tex",
+    "evidence": "笹子トンネル事故を契機としたインフラ老朽化対策と維持管理。"
+  },
+  "R01-REG-APT-08": {
+    "major": "安全・リスク",
+    "middle": "インフラ維持管理",
+    "file": "chapters/aptitude/04_safety_risk.tex",
+    "evidence": "インフラ長寿命化計画とメンテナンスサイクル。"
+  },
+  "R07-REG-APT-07": {
+    "major": "技術と社会・科学技術政策",
+    "middle": "AIと社会変革",
+    "file": "chapters/aptitude/07_science_technology_society.tex",
+    "evidence": "科学技術・イノベーション白書のAIと知識集約型社会の説明。"
+  }
+}

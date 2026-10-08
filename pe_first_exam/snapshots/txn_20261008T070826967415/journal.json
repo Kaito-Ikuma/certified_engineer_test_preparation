@@ -1,0 +1,16 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T07:08:26+09:00",
+  "paths": [
+    "data/answer_exceptions.csv",
+    "extracted/logs/answer_validation.json"
+  ],
+  "existed": {
+    "data/answer_exceptions.csv": true,
+    "extracted/logs/answer_validation.json": true
+  },
+  "sha256": {
+    "data/answer_exceptions.csv": "2564bb8dd327f3425e5aefbe3e8b7793c1ca93df8a60706529a39210dac3c212",
+    "extracted/logs/answer_validation.json": "18ecdd134e46e24d895785f329f34e3df6ceeef392f8c57d21ac4ad369d8c55d"
+  }
+}

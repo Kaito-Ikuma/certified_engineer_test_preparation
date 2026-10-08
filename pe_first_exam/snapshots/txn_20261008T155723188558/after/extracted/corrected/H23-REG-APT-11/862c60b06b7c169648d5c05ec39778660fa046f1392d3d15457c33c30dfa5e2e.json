@@ -1,0 +1,22 @@
+{
+  "question_id": "H23-REG-APT-11",
+  "source_file": "sources/H23/aptitude.pdf",
+  "source_page": "12",
+  "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+  "raw_text_sha256": "1d5cd1e937014f8e56ce05c2358e46cf50025b0a98bb91ac74949366a3e3434d",
+  "stem": "ISO26000の制定と社会的責任に関わる5つの記述から不適切なものを選ぶ。",
+  "conditions": {
+    "standard": "ISO26000",
+    "exam_reference_year": "2011"
+  },
+  "choices": {
+    "1": "政府を除くすべての種類の組織を対象に制定されたとする記述。",
+    "2": "政府、産業界、労働者、消費者、NPO等が日本の検討へ参加したとする記述。",
+    "3": "ISO9000やISO14000と同様に要求事項を示した認証規格で、認証機関の認証により国際的信用を得られるとする記述。",
+    "4": "7中核主題を列挙し、説明責任、透明性、倫理的行動、利害尊重、法の支配、国際行動規範尊重を原則として列挙する記述。",
+    "5": "国連グローバル・コンパクトとの関係と国連との連携を述べる記述。"
+  },
+  "figures": [],
+  "scope": "essential conditions and option mapping; independent paraphrase",
+  "ambiguity": "①政府除外、④原則列挙、②⑤歴史的経緯を要再確認。要旨のみ校正済みで全文の校正完了ではない。"
+}

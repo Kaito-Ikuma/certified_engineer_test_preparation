@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T07:08:22+09:00",
+  "paths": [
+    "data/answers_official.csv"
+  ],
+  "existed": {
+    "data/answers_official.csv": true
+  },
+  "sha256": {
+    "data/answers_official.csv": "0c345acc001a633213b4043e8f3d34afaacc15dd8480e6476aed7d703b750c5c"
+  }
+}

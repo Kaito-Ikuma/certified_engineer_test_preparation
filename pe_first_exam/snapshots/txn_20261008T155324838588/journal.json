@@ -1,0 +1,25 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T15:53:24+09:00",
+  "paths": [
+    "data/questions.csv",
+    "data/classifications.csv",
+    "data/question_topics.csv",
+    "data/verification_records.csv",
+    "data/review1_target_results.csv"
+  ],
+  "existed": {
+    "data/questions.csv": true,
+    "data/classifications.csv": true,
+    "data/question_topics.csv": true,
+    "data/verification_records.csv": true,
+    "data/review1_target_results.csv": false
+  },
+  "sha256": {
+    "data/questions.csv": "f9a471df647722ab83718645a4867b6900ef10838072caca4a42dbcd36945e86",
+    "data/classifications.csv": "638b9bfc5756e2e20b8a42ebae9493dcdd176481b06ff84843a94c2d7530199e",
+    "data/question_topics.csv": "e2f7ec4f6f475e43cfe98f7eb0ed4112114742b68bc70d30502a5e8b0373f103",
+    "data/verification_records.csv": "e0da529c7686d393e67c7e066331e8f9cbef38d6dca5bc3f002b8d1858cf02af",
+    "data/review1_target_results.csv": "47ed3cdcd9f72b55e4bdb76a14fb3fb758b87f62b678ddd0c6b7a20070065fe9"
+  }
+}

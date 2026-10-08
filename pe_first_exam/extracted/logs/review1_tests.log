@@ -1,0 +1,24 @@
+test_actual_input_graph_duplicate_and_reference_rejection (test_review1_regressions.Review1) ... ok
+test_authored_columns_survive_both_entrypoints (test_review1_regressions.Review1) ... ok
+test_cached_source_hash_mismatch_does_not_overwrite (test_review1_regressions.Review1) ... ok
+test_candidate_and_full_pipeline_keep_authored_records (test_review1_regressions.Review1) ... ok
+test_changed_source_invalidates_reviews_keeps_solution (test_review1_regressions.Review1) ... ok
+test_changed_verified_summary_invalidates_evidence (test_review1_regressions.Review1) ... ok
+test_classification_known_cases (test_review1_regressions.Review1) ... ok
+test_duplicate_classification_rejected (test_review1_regressions.Review1) ... ok
+test_final_rejects_flags_and_labels_only (test_review1_regressions.Review1) ... ok
+test_heading_deletion_not_fabricated (test_review1_regressions.Review1) ... ok
+test_idempotent_rebuild (test_review1_regressions.Review1) ... ok
+test_mismatched_answer_rejected (test_review1_regressions.Review1) ... ok
+test_no_ocr_switch_preserves_cached_text (test_review1_regressions.Review1) ... ok
+test_partial_corrected_hash_must_match (test_review1_regressions.Review1) ... ok
+test_relationship_self_reference_and_stale_source_rejected (test_review1_regressions.Review1) ... ok
+test_schema_negative_cases (test_review1_regressions.Review1) ... ok
+test_special_answer_evidence_is_versioned_and_set_based (test_review1_regressions.Review1) ... ok
+test_transaction_mid_replacement_failure_rolls_back (test_review1_regressions.Review1) ... ok
+test_transaction_validation_failure_keeps_old_file (test_review1_regressions.Review1) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 12.924s
+
+OK

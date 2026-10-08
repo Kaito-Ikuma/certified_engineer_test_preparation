@@ -1,0 +1,24 @@
+{
+  "question_id": "H26-REG-APPLIED-16",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "0f9aa2a018afa2623ab24a224e1ba9d37496431877eb56d6c20e13a0d88774af",
+  "stem": "手順I〜IVで、①〜⑤の陽イオンを含む混合水溶液の分析を行った。手順IVでろ別されるイオンを選ぶ。",
+  "conditions": {
+    "I": "塩酸を滴下し沈殿をろ別",
+    "II": "Iのろ液中でチオアセトアミドCH3CSNH2の加水分解を行い、生成した沈殿をろ別",
+    "III": "IIのろ液中へアンモニア水を滴下し、生成した沈殿をろ別",
+    "IV": "IIIのろ液中へ硫化水素を滴下し、生成した沈殿をろ別"
+  },
+  "choices": {
+    "1": "Na+",
+    "2": "Ag+",
+    "3": "Cu2+",
+    "4": "Zn2+",
+    "5": "Fe3+"
+  },
+  "figures": [],
+  "scope": "essential conditions and option mapping; independent paraphrase",
+  "ambiguity": ""
+}

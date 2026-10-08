@@ -1,0 +1,23 @@
+{
+  "pages": 48,
+  "ordinary_cells_checked": 320,
+  "errors": [
+    "sources/R01/official_answers.pdf:2: missing column coverage",
+    "sources/R01_retest/official_answers.pdf:2: missing column coverage",
+    "sources/R02/official_answers.pdf:2: missing column coverage",
+    "sources/R03/official_answers.pdf:2: missing column coverage",
+    "sources/R04/official_answers.pdf:2: missing column coverage",
+    "sources/R05/official_answers.pdf:2: missing column coverage",
+    "sources/R06/official_answers.pdf:2: missing column coverage",
+    "sources/R07/official_answers.pdf:2: missing column coverage",
+    "sources/answers/H23_H30_official_answers.pdf:2: missing column coverage",
+    "sources/answers/H23_H30_official_answers.pdf:24: missing column coverage",
+    "sources/answers/H23_H30_official_answers.pdf:46: missing column coverage",
+    "sources/answers/H23_H30_official_answers.pdf:68: missing column coverage",
+    "sources/answers/H23_H30_official_answers.pdf:90: missing column coverage",
+    "sources/answers/H23_H30_official_answers.pdf:112: missing column coverage",
+    "sources/answers/H23_H30_official_answers.pdf:134: missing column coverage",
+    "sources/answers/H23_H30_official_answers.pdf:156: missing column coverage"
+  ],
+  "scope": "Independent coordinate parsing, not visual or solution verification"
+}

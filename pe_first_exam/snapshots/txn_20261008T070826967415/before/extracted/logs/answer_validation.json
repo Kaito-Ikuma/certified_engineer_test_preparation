@@ -1,0 +1,15 @@
+{
+  "official_rows": 1270,
+  "question_rows": 1270,
+  "join_mismatches": 0,
+  "unverified_official_answers": 0,
+  "exceptions": [
+    "H23-REG-APT-04",
+    "H26-REG-BASIC-5-3",
+    "H30-REG-APT-14",
+    "R01-RET-APT-14",
+    "R02-REG-BASIC-5-5",
+    "R02-REG-APPLIED-10"
+  ],
+  "verification_scope": "text-native official table parsing with structural checks; all six exception pages visually checked"
+}

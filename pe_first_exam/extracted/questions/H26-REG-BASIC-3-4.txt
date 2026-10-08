@@ -1,0 +1,7 @@
+1-3-4二次完ベクトルa=（0z.0y）とb=（0z.bg）の内積a・bを表す式として、正し
+いものはどれか。
+①a.b=ayba+0yby
+② a.b=anby +ay0a
+③ a.b=aby-ayba
+④ a-b=（azba.@y0g）
+⑤ a.b=（azby.@y0a）

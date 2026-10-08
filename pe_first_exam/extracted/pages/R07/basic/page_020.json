@@ -1,0 +1,9 @@
+{
+  "engine" : "Apple Vision VNRecognizeTextRequest accurate ja-JP en-US",
+  "lines" : [
+
+  ],
+  "page" : 20,
+  "page_count" : 20,
+  "render_dpi" : 200
+}

@@ -1,0 +1,386 @@
+[
+  {
+    "source": "sources/R01/official_answers.pdf",
+    "page": 1,
+    "year": "R01",
+    "subject": "BASIC",
+    "count": 30,
+    "note": ""
+  },
+  {
+    "source": "sources/R01/official_answers.pdf",
+    "page": 2,
+    "year": "R01",
+    "subject": "APT",
+    "count": 15,
+    "note": ""
+  },
+  {
+    "source": "sources/R01/official_answers.pdf",
+    "page": 19,
+    "year": "R01",
+    "subject": "APPLIED",
+    "count": 35,
+    "note": ""
+  },
+  {
+    "source": "sources/R01_retest/official_answers.pdf",
+    "page": 1,
+    "year": "R01_retest",
+    "subject": "BASIC",
+    "count": 30,
+    "note": ""
+  },
+  {
+    "source": "sources/R01_retest/official_answers.pdf",
+    "page": 2,
+    "year": "R01_retest",
+    "subject": "APT",
+    "count": 15,
+    "note": "※Ⅱ－１４については、正答としていた選択肢の表現の一部に誤植が\n判明し、的確な選択肢がなかったことから、不適切な出題として、受験\n者全員に得点を与えます。"
+  },
+  {
+    "source": "sources/R01_retest/official_answers.pdf",
+    "page": 19,
+    "year": "R01_retest",
+    "subject": "APPLIED",
+    "count": 35,
+    "note": ""
+  },
+  {
+    "source": "sources/R02/official_answers.pdf",
+    "page": 1,
+    "year": "R02",
+    "subject": "BASIC",
+    "count": 30,
+    "note": "※Ⅰ－5－5については、設問の一部に誤解を招く記述があったことから、当初の正答\nに加え、選択肢③を正答とした受験者についても得点を与える。"
+  },
+  {
+    "source": "sources/R02/official_answers.pdf",
+    "page": 2,
+    "year": "R02",
+    "subject": "APT",
+    "count": 15,
+    "note": ""
+  },
+  {
+    "source": "sources/R02/official_answers.pdf",
+    "page": 19,
+    "year": "R02",
+    "subject": "APPLIED",
+    "count": 35,
+    "note": "※Ⅲ－１０については、不適切とする正答が二つあったことから、当該問題を選択した\n受験者全員に得点を与える。"
+  },
+  {
+    "source": "sources/R03/official_answers.pdf",
+    "page": 1,
+    "year": "R03",
+    "subject": "BASIC",
+    "count": 30,
+    "note": ""
+  },
+  {
+    "source": "sources/R03/official_answers.pdf",
+    "page": 2,
+    "year": "R03",
+    "subject": "APT",
+    "count": 15,
+    "note": ""
+  },
+  {
+    "source": "sources/R03/official_answers.pdf",
+    "page": 19,
+    "year": "R03",
+    "subject": "APPLIED",
+    "count": 35,
+    "note": ""
+  },
+  {
+    "source": "sources/R04/official_answers.pdf",
+    "page": 1,
+    "year": "R04",
+    "subject": "BASIC",
+    "count": 30,
+    "note": ""
+  },
+  {
+    "source": "sources/R04/official_answers.pdf",
+    "page": 2,
+    "year": "R04",
+    "subject": "APT",
+    "count": 15,
+    "note": ""
+  },
+  {
+    "source": "sources/R04/official_answers.pdf",
+    "page": 19,
+    "year": "R04",
+    "subject": "APPLIED",
+    "count": 35,
+    "note": ""
+  },
+  {
+    "source": "sources/R05/official_answers.pdf",
+    "page": 1,
+    "year": "R05",
+    "subject": "BASIC",
+    "count": 30,
+    "note": ""
+  },
+  {
+    "source": "sources/R05/official_answers.pdf",
+    "page": 2,
+    "year": "R05",
+    "subject": "APT",
+    "count": 15,
+    "note": ""
+  },
+  {
+    "source": "sources/R05/official_answers.pdf",
+    "page": 19,
+    "year": "R05",
+    "subject": "APPLIED",
+    "count": 35,
+    "note": ""
+  },
+  {
+    "source": "sources/R06/official_answers.pdf",
+    "page": 1,
+    "year": "R06",
+    "subject": "BASIC",
+    "count": 30,
+    "note": ""
+  },
+  {
+    "source": "sources/R06/official_answers.pdf",
+    "page": 2,
+    "year": "R06",
+    "subject": "APT",
+    "count": 15,
+    "note": ""
+  },
+  {
+    "source": "sources/R06/official_answers.pdf",
+    "page": 19,
+    "year": "R06",
+    "subject": "APPLIED",
+    "count": 35,
+    "note": ""
+  },
+  {
+    "source": "sources/R07/official_answers.pdf",
+    "page": 1,
+    "year": "R07",
+    "subject": "BASIC",
+    "count": 30,
+    "note": ""
+  },
+  {
+    "source": "sources/R07/official_answers.pdf",
+    "page": 2,
+    "year": "R07",
+    "subject": "APT",
+    "count": 15,
+    "note": ""
+  },
+  {
+    "source": "sources/R07/official_answers.pdf",
+    "page": 19,
+    "year": "R07",
+    "subject": "APPLIED",
+    "count": 35,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 1,
+    "year": "H23",
+    "subject": "BASIC",
+    "count": 25,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 2,
+    "year": "H23",
+    "subject": "APT",
+    "count": 15,
+    "note": "* Ⅱ－４については、選択肢の「①」又は「⑤」を正答として取り扱うことといたしました。"
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 19,
+    "year": "H23",
+    "subject": "APPLIED",
+    "count": 35,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 23,
+    "year": "H24",
+    "subject": "BASIC",
+    "count": 25,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 24,
+    "year": "H24",
+    "subject": "APT",
+    "count": 15,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 41,
+    "year": "H24",
+    "subject": "APPLIED",
+    "count": 35,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 45,
+    "year": "H25",
+    "subject": "BASIC",
+    "count": 30,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 46,
+    "year": "H25",
+    "subject": "APT",
+    "count": 15,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 63,
+    "year": "H25",
+    "subject": "APPLIED",
+    "count": 35,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 67,
+    "year": "H26",
+    "subject": "BASIC",
+    "count": 30,
+    "note": "※ Ⅰ－５－３の正答番号について、発表に誤りがあり、\n  「 3 」を「 5 」に訂正しました。(2014.11.13)"
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 68,
+    "year": "H26",
+    "subject": "APT",
+    "count": 15,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 85,
+    "year": "H26",
+    "subject": "APPLIED",
+    "count": 35,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 89,
+    "year": "H27",
+    "subject": "BASIC",
+    "count": 30,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 90,
+    "year": "H27",
+    "subject": "APT",
+    "count": 15,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 107,
+    "year": "H27",
+    "subject": "APPLIED",
+    "count": 35,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 111,
+    "year": "H28",
+    "subject": "BASIC",
+    "count": 30,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 112,
+    "year": "H28",
+    "subject": "APT",
+    "count": 15,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 129,
+    "year": "H28",
+    "subject": "APPLIED",
+    "count": 35,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 133,
+    "year": "H29",
+    "subject": "BASIC",
+    "count": 30,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 134,
+    "year": "H29",
+    "subject": "APT",
+    "count": 15,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 151,
+    "year": "H29",
+    "subject": "APPLIED",
+    "count": 35,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 155,
+    "year": "H30",
+    "subject": "BASIC",
+    "count": 30,
+    "note": ""
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 156,
+    "year": "H30",
+    "subject": "APT",
+    "count": 15,
+    "note": "※Ⅱ－１４については，問題文に対し不適格な選択肢があったことから，\n 不適切な出題として，受験者全員に得点を与えます。"
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "page": 173,
+    "year": "H30",
+    "subject": "APPLIED",
+    "count": 35,
+    "note": ""
+  }
+]

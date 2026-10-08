@@ -1,0 +1,2 @@
+﻿question_id,fields,old_major,old_middle,old_topic,new_major,new_middle,new_topic,evidence,source_file,source_page
+R06-REG-APT-12,major_category|middle_category|core_concept|tex_file|classification_method|discipline_id|chapter_id|classification_evidence,安全・リスク,安全・リスク,社会的責任・安全の標準,コンプライアンス・説明責任,コンプライアンス・説明責任,社会的責任・安全の標準,ISO/IEC/JISの標準化・認証制度を問う。原典領域画像で確認。,sources/R06/aptitude.pdf,12

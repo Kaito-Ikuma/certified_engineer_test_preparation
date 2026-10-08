@@ -1,0 +1,16 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T16:12:26+09:00",
+  "paths": [
+    "data/review_queue.csv",
+    "data/review_coverage.csv"
+  ],
+  "existed": {
+    "data/review_queue.csv": true,
+    "data/review_coverage.csv": true
+  },
+  "sha256": {
+    "data/review_queue.csv": "2d1de4b907b3a95d4a3c14fc2f33211d8067cbd24dc2ae6b52cb70fd8b93972b",
+    "data/review_coverage.csv": "6e706378262e97992387b9e52c5d27969f9a1e30eb01e5b13c6a0a93996ad239"
+  }
+}

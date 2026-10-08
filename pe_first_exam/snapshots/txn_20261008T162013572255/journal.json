@@ -1,0 +1,16 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T16:20:13+09:00",
+  "paths": [
+    "data/verification_records.csv",
+    "extracted/logs/verification_payload_binding.json"
+  ],
+  "existed": {
+    "data/verification_records.csv": true,
+    "extracted/logs/verification_payload_binding.json": false
+  },
+  "sha256": {
+    "data/verification_records.csv": "4beaafbfb753f22063aa6f1083aaeee535023a0fe37eb1dd3fa8831f738cca19",
+    "extracted/logs/verification_payload_binding.json": "58215acd3f4f6cc5e045c6f8b29b0c9caea85e1ea32357a96fd2355e7de62605"
+  }
+}

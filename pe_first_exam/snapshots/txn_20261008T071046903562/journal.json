@@ -1,0 +1,16 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T07:10:46+09:00",
+  "paths": [
+    "data/answer_coordinate_checks.csv",
+    "extracted/logs/answer_coordinate_checks.json"
+  ],
+  "existed": {
+    "data/answer_coordinate_checks.csv": false,
+    "extracted/logs/answer_coordinate_checks.json": false
+  },
+  "sha256": {
+    "data/answer_coordinate_checks.csv": "7d996f5e6bc387cc0805923ec6cca29b33bdb5b79a8b5a86a7c30d397e6fe7ad",
+    "extracted/logs/answer_coordinate_checks.json": "ea25ddf86a997401b4bf14024c2739e3673d4eea16af3621a96cf3e8c1ec3d5f"
+  }
+}

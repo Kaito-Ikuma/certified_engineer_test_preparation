@@ -1,0 +1,344 @@
+[
+  {
+    "source": "sources/H28/17_applied_science.pdf",
+    "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+    "metadata": "extracted/text/H28/17_applied_science.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H28/aptitude.pdf",
+    "source_sha256": "2960d5ff16afaa394186362bb969ee236511012ee2819db45847199af58b073c",
+    "metadata": "extracted/text/H28/aptitude.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H28/basic.pdf",
+    "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+    "metadata": "extracted/text/H28/basic.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H26/17_applied_science.pdf",
+    "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+    "metadata": "extracted/text/H26/17_applied_science.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H26/aptitude.pdf",
+    "source_sha256": "5691e940fce3cbf9423bc99a96803c1c6273563931b76b91bdb9f2b67e6233d3",
+    "metadata": "extracted/text/H26/aptitude.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H26/basic.pdf",
+    "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+    "metadata": "extracted/text/H26/basic.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R01_retest/official_answers.pdf",
+    "source_sha256": "35b96947eff7028bfc52cf1da735ecb099e9ab8184404f8cd3487a4344ba480c",
+    "metadata": "extracted/text/R01_retest/official_answers.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R01_retest/17_applied_science.pdf",
+    "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+    "metadata": "extracted/text/R01_retest/17_applied_science.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R01_retest/aptitude.pdf",
+    "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+    "metadata": "extracted/text/R01_retest/aptitude.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R01_retest/basic.pdf",
+    "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+    "metadata": "extracted/text/R01_retest/basic.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H27/17_applied_science.pdf",
+    "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+    "metadata": "extracted/text/H27/17_applied_science.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H27/aptitude.pdf",
+    "source_sha256": "2965cecde9e4c31c06a94192bf7a750346fbf85d07d37943d58a3fa15d15ebeb",
+    "metadata": "extracted/text/H27/aptitude.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H27/basic.pdf",
+    "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+    "metadata": "extracted/text/H27/basic.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H29/17_applied_science.pdf",
+    "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+    "metadata": "extracted/text/H29/17_applied_science.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H29/aptitude.pdf",
+    "source_sha256": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+    "metadata": "extracted/text/H29/aptitude.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H29/basic.pdf",
+    "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+    "metadata": "extracted/text/H29/basic.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/answers/H23_H30_official_answers.pdf",
+    "source_sha256": "6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683",
+    "metadata": "extracted/text/answers/H23_H30_official_answers.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R06/official_answers.pdf",
+    "source_sha256": "256a6293b49f67f9849172e8cce6ad0219d8573a1b9ed34b322dea1b9dc91b14",
+    "metadata": "extracted/text/R06/official_answers.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R06/17_applied_science.pdf",
+    "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+    "metadata": "extracted/text/R06/17_applied_science.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R06/aptitude.pdf",
+    "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+    "metadata": "extracted/text/R06/aptitude.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R06/basic.pdf",
+    "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+    "metadata": "extracted/text/R06/basic.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R01/official_answers.pdf",
+    "source_sha256": "b262192324e3f62f248fe365ee42feacf69217624f86effe5865b52ce807532b",
+    "metadata": "extracted/text/R01/official_answers.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R01/17_applied_science.pdf",
+    "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+    "metadata": "extracted/text/R01/17_applied_science.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R01/aptitude.pdf",
+    "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+    "metadata": "extracted/text/R01/aptitude.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R01/basic.pdf",
+    "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+    "metadata": "extracted/text/R01/basic.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R07/official_answers.pdf",
+    "source_sha256": "6d4f5427838059ab50f0e7785f3f9cb2718fafaf96a8b74afcb332d969d7e311",
+    "metadata": "extracted/text/R07/official_answers.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R07/17_applied_science.pdf",
+    "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+    "metadata": "extracted/text/R07/17_applied_science.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R07/aptitude.pdf",
+    "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+    "metadata": "extracted/text/R07/aptitude.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R07/basic.pdf",
+    "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+    "metadata": "extracted/text/R07/basic.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H25/17_applied_science.pdf",
+    "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+    "metadata": "extracted/text/H25/17_applied_science.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H25/aptitude.pdf",
+    "source_sha256": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+    "metadata": "extracted/text/H25/aptitude.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H25/basic.pdf",
+    "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+    "metadata": "extracted/text/H25/basic.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H24/17_applied_science.pdf",
+    "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+    "metadata": "extracted/text/H24/17_applied_science.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H24/aptitude.pdf",
+    "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+    "metadata": "extracted/text/H24/aptitude.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H24/basic.pdf",
+    "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+    "metadata": "extracted/text/H24/basic.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H23/17_applied_science.pdf",
+    "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+    "metadata": "extracted/text/H23/17_applied_science.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H23/aptitude.pdf",
+    "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+    "metadata": "extracted/text/H23/aptitude.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H23/basic.pdf",
+    "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+    "metadata": "extracted/text/H23/basic.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R02/official_answers.pdf",
+    "source_sha256": "e644203b51c66f94ed64226a3c8a7ba9d4aa5ea89f5ff83d03b9755555af51e4",
+    "metadata": "extracted/text/R02/official_answers.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R02/17_applied_science.pdf",
+    "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+    "metadata": "extracted/text/R02/17_applied_science.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R02/aptitude.pdf",
+    "source_sha256": "d0ca26aaeeba6d436d8ffa77a759056e7a194c0ac9fad61de2c84392999050bb",
+    "metadata": "extracted/text/R02/aptitude.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R02/basic.pdf",
+    "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+    "metadata": "extracted/text/R02/basic.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R05/official_answers.pdf",
+    "source_sha256": "950c64424ab22fe013affd4274f7be9227033b9e6f8162348364d86fa3a7455a",
+    "metadata": "extracted/text/R05/official_answers.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R05/17_applied_science.pdf",
+    "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+    "metadata": "extracted/text/R05/17_applied_science.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R05/aptitude.pdf",
+    "source_sha256": "3dee8906ad8be46592986fef01028424243f7e515af04979667524eed1f0a915",
+    "metadata": "extracted/text/R05/aptitude.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R05/basic.pdf",
+    "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+    "metadata": "extracted/text/R05/basic.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R04/official_answers.pdf",
+    "source_sha256": "ab8a4eec6917d59f061463bbe0ffc992d031d5f0c8e1f3e14c48a8ba285b7f86",
+    "metadata": "extracted/text/R04/official_answers.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R04/17_applied_science.pdf",
+    "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+    "metadata": "extracted/text/R04/17_applied_science.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R04/aptitude.pdf",
+    "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+    "metadata": "extracted/text/R04/aptitude.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R04/basic.pdf",
+    "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+    "metadata": "extracted/text/R04/basic.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R03/official_answers.pdf",
+    "source_sha256": "d106ba663d0d096614617133ff8b080c440028a5cbfef67d7fffbd6c95cdb788",
+    "metadata": "extracted/text/R03/official_answers.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R03/17_applied_science.pdf",
+    "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+    "metadata": "extracted/text/R03/17_applied_science.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R03/aptitude.pdf",
+    "source_sha256": "73f1426490c272bb33312654f07964404c16a78e9b0ff238c54eca8178d939df",
+    "metadata": "extracted/text/R03/aptitude.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/R03/basic.pdf",
+    "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+    "metadata": "extracted/text/R03/basic.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H30/17_applied_science.pdf",
+    "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+    "metadata": "extracted/text/H30/17_applied_science.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H30/aptitude.pdf",
+    "source_sha256": "9b92cd3549fc1ad21636a544978f1385f63667ff6ac0112f81e553cf2ee4b1f5",
+    "metadata": "extracted/text/H30/aptitude.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  },
+  {
+    "source": "sources/H30/basic.pdf",
+    "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+    "metadata": "extracted/text/H30/basic.json",
+    "basis": "unchanged CP1 PDF hash; retained historical OCR, not re-recognized"
+  }
+]

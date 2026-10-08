@@ -1,0 +1,30 @@
+{
+  "question_id": "H24-REG-BASIC-3-2",
+  "source_file": "sources/H24/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+  "raw_text_sha256": "5d8a2d8c09b85c7cc71688a60ff357e1c86269ee27d4c4448d9166a086d16540",
+  "stem": "同じばね定数kのばね2本と同じ質量mの質点からなるa,b,cの系について、最小の固有振動数をもつものを選ぶ。図のaは並列ばね、bは直列ばね、cは左右の固定壁に一本ずつのばねを接続した質点である。",
+  "conditions": {
+    "spring_constants": "k,k",
+    "mass": "m",
+    "a": "two parallel springs between left wall and mass",
+    "b": "two springs in series between left wall and mass",
+    "c": "mass between two fixed walls, one spring on each side"
+  },
+  "choices": {
+    "1": "a",
+    "2": "b",
+    "3": "c",
+    "4": "aとb",
+    "5": "bとc"
+  },
+  "figures": [
+    {
+      "page": 8,
+      "description": "a並列、b直列、c左右固定壁。原典図の接続を確認。"
+    }
+  ],
+  "scope": "essential conditions and option mapping; independent paraphrase",
+  "ambiguity": ""
+}

@@ -1,0 +1,16 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T16:35:07+09:00",
+  "paths": [
+    "handoff/REVIEW_1_APPLIED_FILES.csv",
+    "extracted/logs/draft_build_manifest.json"
+  ],
+  "existed": {
+    "handoff/REVIEW_1_APPLIED_FILES.csv": false,
+    "extracted/logs/draft_build_manifest.json": true
+  },
+  "sha256": {
+    "handoff/REVIEW_1_APPLIED_FILES.csv": "70177aa38d413efcc5a23ad12bacd0bdef12570f682efd616feb8a3f8f45c636",
+    "extracted/logs/draft_build_manifest.json": "e24c0dc83bc971a796b5269652b7e733a11ad14d06718f8011de0b26c61aae8e"
+  }
+}

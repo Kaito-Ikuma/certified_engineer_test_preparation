@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T16:02:47+09:00",
+  "paths": [
+    "extracted/logs/tex_label_audit.json"
+  ],
+  "existed": {
+    "extracted/logs/tex_label_audit.json": false
+  },
+  "sha256": {
+    "extracted/logs/tex_label_audit.json": "3a0a3894e2a6e5b5d58b908704648b6451b4b67582485d9929046d3e0b2dc9e6"
+  }
+}

@@ -1,0 +1,13 @@
+﻿question_id,official_answer,answer_kind,source_file,source_page,source_sha256,official_note,original_answer,visual_check
+H23-REG-APT-04,1|5,multiple_accepted,sources/answers/H23_H30_official_answers.pdf,2,6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683,* Ⅱ－４については、選択肢の「①」又は「⑤」を正答として取り扱うことといたしました。,,true
+H26-REG-BASIC-5-3,5,single,sources/answers/H23_H30_official_answers.pdf,67,6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683,"※ Ⅰ－５－３の正答番号について、発表に誤りがあり、
+  「 3 」を「 5 」に訂正しました。(2014.11.13)",3,true
+H30-REG-APT-14,ALL,all_awarded,sources/answers/H23_H30_official_answers.pdf,156,6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683,"※Ⅱ－１４については，問題文に対し不適格な選択肢があったことから，
+ 不適切な出題として，受験者全員に得点を与えます。",,true
+R01-RET-APT-14,ALL,all_awarded,sources/R01_retest/official_answers.pdf,2,35b96947eff7028bfc52cf1da735ecb099e9ab8184404f8cd3487a4344ba480c,"※Ⅱ－１４については、正答としていた選択肢の表現の一部に誤植が
+判明し、的確な選択肢がなかったことから、不適切な出題として、受験
+者全員に得点を与えます。",,true
+R02-REG-BASIC-5-5,4|3,multiple_accepted,sources/R02/official_answers.pdf,1,e644203b51c66f94ed64226a3c8a7ba9d4aa5ea89f5ff83d03b9755555af51e4,"※Ⅰ－5－5については、設問の一部に誤解を招く記述があったことから、当初の正答
+に加え、選択肢③を正答とした受験者についても得点を与える。",,true
+R02-REG-APPLIED-10,ALL,all_awarded,sources/R02/official_answers.pdf,19,e644203b51c66f94ed64226a3c8a7ba9d4aa5ea89f5ff83d03b9755555af51e4,"※Ⅲ－１０については、不適切とする正答が二つあったことから、当該問題を選択した
+受験者全員に得点を与える。",,true

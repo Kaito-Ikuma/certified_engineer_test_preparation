@@ -1,0 +1,5 @@
+scripts/ocr_pdf
+build/*
+!build/.gitkeep
+__pycache__/
+*.part

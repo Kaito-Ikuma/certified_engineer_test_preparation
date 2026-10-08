@@ -1,0 +1,22 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T07:06:51+09:00",
+  "paths": [
+    "data/db_candidates.csv",
+    "extracted/logs/heading_candidates.json",
+    "extracted/logs/boundary_missing.json",
+    "data/questions.csv"
+  ],
+  "existed": {
+    "data/db_candidates.csv": true,
+    "extracted/logs/heading_candidates.json": true,
+    "extracted/logs/boundary_missing.json": true,
+    "data/questions.csv": true
+  },
+  "sha256": {
+    "data/db_candidates.csv": "b8a522aeeadd48a0e8b63113fd967e616562f1030688f04a60875d726cdb57d3",
+    "extracted/logs/heading_candidates.json": "4e72def3de8b5747621d536379d71514f47b64ced68b5400f34291f388043468",
+    "extracted/logs/boundary_missing.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "data/questions.csv": "b8a522aeeadd48a0e8b63113fd967e616562f1030688f04a60875d726cdb57d3"
+  }
+}

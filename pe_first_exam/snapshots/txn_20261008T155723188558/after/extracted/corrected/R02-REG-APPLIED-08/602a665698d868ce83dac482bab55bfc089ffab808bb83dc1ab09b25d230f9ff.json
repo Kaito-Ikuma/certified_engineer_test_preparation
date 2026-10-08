@@ -1,0 +1,19 @@
+{
+  "question_id": "R02-REG-APPLIED-08",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "20ac6d00d8dfd1e66ac577ca588febe66a8ab373338bd17bb784c02ee9aee5be",
+  "stem": "金属の強化方法に関する5つの記述から、最も不適切なものを選ぶ。",
+  "conditions": {},
+  "choices": {
+    "1": "加工硬化とは、塑性変形領域でひずみを増加させると、変形に要する応力が増加し硬化することである。",
+    "2": "溶媒原子の格子に溶質原子が均一に混じる固溶体合金は純金属より硬化する。これを固溶強化という。",
+    "3": "合金元素の固溶限の温度変化を利用した強化法を析出強化という。",
+    "4": "結晶粒微細化により降伏強さを高め、強じん化できる。",
+    "5": "焼入れとは鋼をオーステナイト化したのち臨界冷却速度以上で冷却して生じるバウシンガー変態を利用した硬化法である。"
+  },
+  "figures": [],
+  "scope": "essential conditions and option mapping; independent paraphrase",
+  "ambiguity": ""
+}

@@ -1,0 +1,34 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T15:57:23+09:00",
+  "paths": [
+    "extracted/corrected/H26-REG-BASIC-2-4/021f65eb4497ec0ef58ce979e53dc3b33bb31972d183586214be13503d9e2e22.json",
+    "extracted/corrected/H24-REG-BASIC-3-2/3734a0084ce88344863334f254c5adfd7338af65b92dc5fa7d780b63abc375a4.json",
+    "extracted/corrected/H26-REG-APPLIED-16/89b398b9447eaeae9fa189ab5b238e2aa63abd1dda0e28076bbcb80d082545b1.json",
+    "extracted/corrected/R02-REG-APPLIED-08/602a665698d868ce83dac482bab55bfc089ffab808bb83dc1ab09b25d230f9ff.json",
+    "extracted/corrected/H23-REG-APT-11/862c60b06b7c169648d5c05ec39778660fa046f1392d3d15457c33c30dfa5e2e.json",
+    "data/questions.csv",
+    "data/verification_records.csv",
+    "data/question_evaluations.csv"
+  ],
+  "existed": {
+    "extracted/corrected/H26-REG-BASIC-2-4/021f65eb4497ec0ef58ce979e53dc3b33bb31972d183586214be13503d9e2e22.json": false,
+    "extracted/corrected/H24-REG-BASIC-3-2/3734a0084ce88344863334f254c5adfd7338af65b92dc5fa7d780b63abc375a4.json": false,
+    "extracted/corrected/H26-REG-APPLIED-16/89b398b9447eaeae9fa189ab5b238e2aa63abd1dda0e28076bbcb80d082545b1.json": false,
+    "extracted/corrected/R02-REG-APPLIED-08/602a665698d868ce83dac482bab55bfc089ffab808bb83dc1ab09b25d230f9ff.json": false,
+    "extracted/corrected/H23-REG-APT-11/862c60b06b7c169648d5c05ec39778660fa046f1392d3d15457c33c30dfa5e2e.json": false,
+    "data/questions.csv": true,
+    "data/verification_records.csv": true,
+    "data/question_evaluations.csv": true
+  },
+  "sha256": {
+    "extracted/corrected/H26-REG-BASIC-2-4/021f65eb4497ec0ef58ce979e53dc3b33bb31972d183586214be13503d9e2e22.json": "021f65eb4497ec0ef58ce979e53dc3b33bb31972d183586214be13503d9e2e22",
+    "extracted/corrected/H24-REG-BASIC-3-2/3734a0084ce88344863334f254c5adfd7338af65b92dc5fa7d780b63abc375a4.json": "3734a0084ce88344863334f254c5adfd7338af65b92dc5fa7d780b63abc375a4",
+    "extracted/corrected/H26-REG-APPLIED-16/89b398b9447eaeae9fa189ab5b238e2aa63abd1dda0e28076bbcb80d082545b1.json": "89b398b9447eaeae9fa189ab5b238e2aa63abd1dda0e28076bbcb80d082545b1",
+    "extracted/corrected/R02-REG-APPLIED-08/602a665698d868ce83dac482bab55bfc089ffab808bb83dc1ab09b25d230f9ff.json": "602a665698d868ce83dac482bab55bfc089ffab808bb83dc1ab09b25d230f9ff",
+    "extracted/corrected/H23-REG-APT-11/862c60b06b7c169648d5c05ec39778660fa046f1392d3d15457c33c30dfa5e2e.json": "862c60b06b7c169648d5c05ec39778660fa046f1392d3d15457c33c30dfa5e2e",
+    "data/questions.csv": "9b8722b99ea9ece5207f317b19858bbec3632ca68e369dbf059333f782ac2ece",
+    "data/verification_records.csv": "947a865035504974de5ce9703c39ded8d2b2e7018b6c83b638f6a4e241552050",
+    "data/question_evaluations.csv": "a312d053af4885fa59fcc148e5ee82d17e07ede8f9b4e82064b0818cef67a5b0"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T16:22:28+09:00",
+  "paths": [
+    "data/review_strata.csv"
+  ],
+  "existed": {
+    "data/review_strata.csv": false
+  },
+  "sha256": {
+    "data/review_strata.csv": "829afc9b65da90fabcabddef2d3b5c2d6fb42e082b507a13515c92d39980edab"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "questions": 1270,
+  "sessions": 16,
+  "years": 15,
+  "verified_primary_classifications": 48,
+  "verified_relationship_counts": {
+    "same_concept": 0,
+    "same_method": 0,
+    "parameter_variant": 0,
+    "near_repeat": 1,
+    "exact_repeat": 0
+  },
+  "unknown_difficulty": 1265,
+  "scope": "Provisional classification frequencies; verified subset separately reported"
+}
