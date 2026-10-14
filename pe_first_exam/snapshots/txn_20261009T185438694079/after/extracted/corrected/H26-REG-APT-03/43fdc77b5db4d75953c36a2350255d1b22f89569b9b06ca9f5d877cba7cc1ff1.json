@@ -1,0 +1,47 @@
+{
+  "stem": "捏造・改ざん・盗用という3種の研究不正の定義を判定する。",
+  "conditions": {
+    "判断順": "記述アから順に○=適切、×=不適切。",
+    "ア": "捏造は存在しないデータや研究結果を作ること。",
+    "イ": "改ざんは資料・機器・過程などを操作し、データや結果を真正でないものに加工すること。",
+    "ウ": "盗用は他者のアイデア・分析法・データ・結果・論文・用語を、了解若しくは適切な表示なしに流用すること。"
+  },
+  "choices": {
+    "1": {
+      "value": "○○○",
+      "verdict": "問の条件に一致する候補",
+      "reason": "全記述の判定○○○に一致する。"
+    },
+    "2": {
+      "value": "×○○",
+      "verdict": "問の条件に一致しない候補",
+      "reason": "記述アの判定が逆である。独立判定は○○○となる。"
+    },
+    "3": {
+      "value": "○×○",
+      "verdict": "問の条件に一致しない候補",
+      "reason": "記述イの判定が逆である。独立判定は○○○となる。"
+    },
+    "4": {
+      "value": "××○",
+      "verdict": "問の条件に一致しない候補",
+      "reason": "記述ア・イの判定が逆である。独立判定は○○○となる。"
+    },
+    "5": {
+      "value": "×××",
+      "verdict": "問の条件に一致しない候補",
+      "reason": "記述ア・イ・ウの判定が逆である。独立判定は○○○となる。"
+    }
+  },
+  "figures": "正誤の方向、全記述、5候補の全欄を原典画像確認。組合せ表以外に図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/aptitude/page_003.png"
+  ],
+  "question_id": "H26-REG-APT-03",
+  "source_file": "sources/H26/aptitude.pdf",
+  "source_page": "3",
+  "source_sha256": "5691e940fce3cbf9423bc99a96803c1c6273563931b76b91bdb9f2b67e6233d3",
+  "raw_text_sha256": "8955d4ed3568beecc21be2f0d712924e8874eb476a948fc1fa3e439b6077fb58",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

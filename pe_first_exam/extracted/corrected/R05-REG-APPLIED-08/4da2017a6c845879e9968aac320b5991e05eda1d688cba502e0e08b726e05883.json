@@ -1,0 +1,45 @@
+{
+  "stem": "金属抵抗の形状・温度依存と抵抗率の桁を照合する。",
+  "conditions": {
+    "原典確認": "S7_051の11原典画像で13問の全五肢・指数・単位・否定を照合。",
+    "対象": "金属抵抗の形状・温度依存と抵抗率の桁を照合する。"
+  },
+  "choices": {
+    "1": {
+      "value": "不純物・格子欠陥と残留抵抗",
+      "verdict": "代表的条件で適切",
+      "reason": "低温で格子振動の寄与が減っても不純物・欠陥による散乱は残る。組成・構造による寄与を考える。"
+    },
+    "2": {
+      "value": "一定断面でRが長さに比例",
+      "verdict": "代表的条件で適切",
+      "reason": "均一な導線はR=ρL/A。同じ材料・温度・断面積を保つ条件が必要。"
+    },
+    "3": {
+      "value": "−195℃と0℃の抵抗",
+      "verdict": "代表的条件で適切",
+      "reason": "それぞれ約78Kと273K。通常の金属の比較では0℃側が大きい。摂氏温度を比で使わない。"
+    },
+    "4": {
+      "value": "室温の金属が1〜10²Ωm",
+      "verdict": "不適切",
+      "reason": "原典は1〜100Ωm。一般的な金属の抵抗率の典型値より何桁も大きい。特定合金の値を全金属へ固定しない。"
+    },
+    "5": {
+      "value": "電流が電位差に比例",
+      "verdict": "代表的条件で適切",
+      "reason": "オーム性・温度一定ならI=V/R。自己加熱でRが変わる高電圧域まで無条件には広げない。"
+    }
+  },
+  "figures": "図表問題ではない。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_003.png"
+  ],
+  "question_id": "R05-REG-APPLIED-08",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "43dbc2336d4fe257eafa1d37c416392b69585f8f0e50290b9b4468d13a42bc80",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

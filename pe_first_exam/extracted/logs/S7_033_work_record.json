@@ -1,0 +1,81 @@
+{
+  "time": "2026-10-12T07:35:07+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_033_chemical_equilibrium",
+  "question_ids": [
+    "H23-REG-APPLIED-12",
+    "H24-REG-APPLIED-10",
+    "H28-REG-APPLIED-18",
+    "H29-REG-APPLIED-13",
+    "H30-REG-APPLIED-11",
+    "H30-REG-APPLIED-16",
+    "H30-REG-APPLIED-17",
+    "R01-REG-APPLIED-09",
+    "R01-REG-APPLIED-15",
+    "R01-RET-APPLIED-15",
+    "R02-REG-APPLIED-13",
+    "R03-REG-APPLIED-10",
+    "R03-REG-APPLIED-17",
+    "R04-REG-APPLIED-10",
+    "R05-REG-APPLIED-17",
+    "R06-REG-APPLIED-12",
+    "R07-REG-APPLIED-13"
+  ],
+  "source_images": 17,
+  "initial_independent_matches": 16,
+  "corrected_verified": 9,
+  "partial": 8,
+  "related_pairs_added": 8,
+  "related_pairs_total": 208,
+  "primary_references_added": 5,
+  "concepts_added": 9,
+  "concept_total": 245,
+  "canonical_counts": {
+    "recorded_at": "2026-10-12T07:35:07+09:00",
+    "registered": 1270,
+    "classification_verified": 652,
+    "summary_verified": 618,
+    "corrected_verified": 485,
+    "corrected_partial": 133,
+    "solution_drafts": 618,
+    "solution_verified": 0,
+    "manual_required": 785,
+    "subject_drafts": {
+      "BASIC": 196,
+      "APT": 147,
+      "APPLIED": 275
+    }
+  },
+  "pdf": {
+    "pages": 814,
+    "bytes": 4064797,
+    "visual_review_pages": [
+      534,
+      535,
+      536,
+      537,
+      538,
+      540,
+      541,
+      542,
+      547,
+      548,
+      549,
+      550,
+      551,
+      552,
+      555,
+      806
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draft・再生成後初期・1270ラベル監査成功。LuaLaTeX成功、16実画像確認。関係入力のsource_hash欄への内容ハッシュ誤記は公開前検査で拒否され、原典ハッシュに修正して公開した。",
+  "risks": [
+    "8部分校正。R02AP13初回3/公式2と反応速度比の原文を保持。負触媒、pKa、HF一部物性、模型・濃度・混合比の条件が残る。",
+    "Astra未査読、652問未執筆、最終監査未実装。"
+  ],
+  "next": "S7_034相平衡・蒸留・凝固点降下・真空・コロイド19問。全19原典画像と公式前独立初回を保存し19一致。全1270問・全章・頻出分析の条件まで継続。"
+}

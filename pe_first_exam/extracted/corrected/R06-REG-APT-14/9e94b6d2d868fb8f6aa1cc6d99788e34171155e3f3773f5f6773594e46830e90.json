@@ -1,0 +1,46 @@
+{
+  "stem": "無体物・自損・OEM・再生品・医薬品の5記述を判定する。",
+  "conditions": {
+    "原典条件": "問題幹、否定、ア等の記号順、5選択肢と個数又は表の全行を原典16画像で確認した。",
+    "論理条件": "列順ア・イ・ウ・エ・オ。医薬品の安全性や免責は個別に確認する。",
+    "法の時点": "出題時の制度を保持。現行取得基準日は2026-10-12。2020年施行の期間変更を別記する。"
+  },
+  "choices": {
+    "1": {
+      "value": "正・誤・誤・正・誤",
+      "verdict": "組合せが不一致",
+      "reason": "各記述の判定はTTFTFである。原典の列順で[2]列目が異なる。"
+    },
+    "2": {
+      "value": "誤・誤・正・誤・正",
+      "verdict": "組合せが不一致",
+      "reason": "各記述の判定はTTFTFである。原典の列順で[1, 2, 3, 4, 5]列目が異なる。"
+    },
+    "3": {
+      "value": "正・正・誤・正・誤",
+      "verdict": "適切な組合せ",
+      "reason": "各記述の判定はTTFTFである。全ての列が一致する。"
+    },
+    "4": {
+      "value": "正・誤・正・誤・正",
+      "verdict": "組合せが不一致",
+      "reason": "各記述の判定はTTFTFである。原典の列順で[2, 3, 4, 5]列目が異なる。"
+    },
+    "5": {
+      "value": "誤・正・誤・正・誤",
+      "verdict": "組合せが不一致",
+      "reason": "各記述の判定はTTFTFである。原典の列順で[1]列目が異なる。"
+    }
+  },
+  "figures": "文字表又は記述問題であり図なし。組合せの各行は原典画像の列順を保持する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/aptitude/page_014.png"
+  ],
+  "question_id": "R06-REG-APT-14",
+  "source_file": "sources/R06/aptitude.pdf",
+  "source_page": "14",
+  "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+  "raw_text_sha256": "c140fd809343793092cfeafbb399c4e975fa5d4f38d50aec16961485691c31d5",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

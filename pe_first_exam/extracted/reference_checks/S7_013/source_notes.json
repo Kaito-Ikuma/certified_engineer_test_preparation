@@ -1,0 +1,139 @@
+{
+  "time": "2026-10-10T20:29:24+09:00",
+  "references": [
+    {
+      "key": "mlit_mediation2006",
+      "url": "https://www.mlit.go.jp/pri/houkoku/gaiyou/kkk70.html"
+    },
+    {
+      "key": "mlit_pi_thirdparty",
+      "url": "https://www.mlit.go.jp/road/pi/2guide/chapter5.html"
+    },
+    {
+      "key": "ieej_conduct2007",
+      "url": "https://www.iee.jp/about/code_conduct/"
+    },
+    {
+      "key": "ip_basic_act",
+      "url": "https://laws.e-gov.go.jp/law/414AC0000000122"
+    },
+    {
+      "key": "jpo_ip_overview",
+      "url": "https://www.jpo.go.jp/system/basic/index.html"
+    },
+    {
+      "key": "jpo_patent_utility",
+      "url": "https://www.jpo.go.jp/system/patent/gaiyo/seidogaiyo/chizai04.html"
+    },
+    {
+      "key": "jpo_invention_criteria",
+      "url": "https://www.jpo.go.jp/system/laws/rule/guideline/patent/tukujitu_kijun/ht/03_0100.html"
+    },
+    {
+      "key": "meti_trade_secret",
+      "url": "https://www.meti.go.jp/policy/economy/chizai/chiteki/trade-secret.html"
+    },
+    {
+      "key": "bunka_citation_faq",
+      "url": "https://www.bunka.go.jp/seisaku/bunka_gyosei/kibankyoka/faq/index.html"
+    },
+    {
+      "key": "kyushu_copyright2015",
+      "url": "https://www.icer.kyushu-u.ac.jp/sites/default/files/copyright_seminar_ppt_20150928_4.pdf"
+    },
+    {
+      "key": "cabinet_copyright2008",
+      "url": "https://www.cas.go.jp/jp/seisaku/hourei/data/CA_2.pdf"
+    },
+    {
+      "key": "bunka_amend2018",
+      "url": "https://www.bunka.go.jp/seisaku/chosakuken/hokaisei/h30_hokaisei/"
+    },
+    {
+      "key": "bunka_ai2024",
+      "url": "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/pdf/94037901_01.pdf"
+    },
+    {
+      "key": "bunka_text2026",
+      "url": "https://www.bunka.go.jp/seisaku/chosakuken/seidokaisetsu/pdf/94383901_01.pdf"
+    },
+    {
+      "key": "jftc_rules",
+      "url": "https://www.jftc.go.jp/dk/dkgaiyo/kisei.html"
+    },
+    {
+      "key": "jftc_bid_cartel2021",
+      "url": "https://www.jftc.go.jp/dk/kansei/text_files/honbunr3.10.pdf"
+    },
+    {
+      "key": "jftc_kansei",
+      "url": "https://www.jftc.go.jp/dk/kansei/index.html"
+    },
+    {
+      "key": "jftc_private2018",
+      "url": "https://www.jftc.go.jp/houdou/pressrelease/h30/may/180523_1.html"
+    },
+    {
+      "key": "mof_procurement2006",
+      "url": "https://www.mof.go.jp/policy/budget/topics/public_purchase/koukyou/koukyou_02.htm"
+    },
+    {
+      "key": "fsa_market2004",
+      "url": "https://www.fsa.go.jp/access/16/200401c.html"
+    },
+    {
+      "key": "fsa_information",
+      "url": "https://www.fsa.go.jp/sesc/watch/"
+    },
+    {
+      "key": "fsa_insider_rules",
+      "url": "https://www.fsa.go.jp/sesc/support/hukousei/hukousei.html"
+    },
+    {
+      "key": "caa_handbook_pre2022",
+      "url": "https://www.caa.go.jp/policies/policy/consumer_partnerships/meeting_materials/assets/consumer_system_cms206_201021_06.pdf"
+    },
+    {
+      "key": "caa_report_current",
+      "url": "https://www.caa.go.jp/policies/policy/consumer_partnerships/whisleblower_protection_system/detail/report"
+    },
+    {
+      "key": "caa_amend2020",
+      "url": "https://www.caa.go.jp/policies/policy/consumer_system/whisleblower_protection_system/overview/assets/overview_200828_0001.pdf"
+    },
+    {
+      "key": "caa_current_faq",
+      "url": "https://www.caa.go.jp/policies/policy/consumer_partnerships/whisleblower_protection_system/faq/faq_001"
+    },
+    {
+      "key": "caa_schedule2026",
+      "url": "https://www.caa.go.jp/about_us/about/caa_pamphlet/assets/pamphlet_jp_2026_0000.pdf"
+    },
+    {
+      "key": "jisc_isoiec",
+      "url": "https://www.jisc.go.jp/international/index.html"
+    },
+    {
+      "key": "jisc_certification",
+      "url": "https://www.jisc.go.jp/newjis/cap_index.html"
+    },
+    {
+      "key": "jisc_marks",
+      "url": "https://www.jisc.go.jp/newjis/newjismknews.html"
+    },
+    {
+      "key": "meti_jis2019",
+      "url": "https://www.meti.go.jp/policy/economy/hyojun-kijun/katsuyo/kondan/pdf/20190625_material.pdf"
+    },
+    {
+      "key": "mhlw_jis_history",
+      "url": "https://anzeninfo.mhlw.go.jp/yougo/yougo91_1.html"
+    }
+  ],
+  "notes": [
+    "一次機関の検索結果・本文で要件を確認。e-Gov著作権法・独禁法の本文は取得不可のため官公庁説明と歴史資料を使用。",
+    "JISC現行マーク画像を取得・表示し原典左と一致を確認。厚労省ページに旧図への参照もあるが条番号などは古い記述を含むので現在制度の根拠には使わない。",
+    "公益通報2025年改正は確認日では主要部分未施行。",
+    "JPOの一般説明の高度を単独の発明該当性審査基準とせず、審査基準の説明を優先。"
+  ]
+}

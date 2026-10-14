@@ -1,0 +1,82 @@
+{
+  "batch_id": "S7_052_engineering_revision1",
+  "reference_date": "2026-10-13",
+  "questions": [
+    {
+      "question_id": "H29-REG-APPLIED-22",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "一面せん断の直線包絡線から切片と摩擦角を求める。",
+      "summary": "一面せん断の直線包絡線から切片と摩擦角を求める。",
+      "conditions": {
+        "原典照合": "H29応用原典7頁の四測定点・指数4・全五候補を画像確認。",
+        "条件": "Mohr–Coulombの破壊包絡線を直線とする。指定tan25°=0.47、tan30°=0.58、tan35°=0.70。",
+        "単位": "σ・τ・cは×10⁴N/m²。全応力又は有効応力という区別は原典に明示されず、勝手にuの値を追加しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "c=2.5×10⁴Pa、φ=25°",
+          "verdict": "不適切",
+          "reason": "切片は近いが指定tan25°=0.47は測定の傾き約0.57〜0.60から離れる。"
+        },
+        "2": {
+          "value": "c=2.5×10⁴Pa、φ=30°",
+          "verdict": "代表的条件で適切",
+          "reason": "指定tan30°=0.58、直線τ=c+σtanφから各点のcは2.52・2.54・2.48・2.46（×10⁴Pa）で、丸めを含めて2.5と整合。"
+        },
+        "3": {
+          "value": "c=2.0×10⁴Pa、φ=25°",
+          "verdict": "不適切",
+          "reason": "切片も傾きも測定と不一致。σ=1で予測τ=2.47に対し3.1。"
+        },
+        "4": {
+          "value": "c=2.0×10⁴Pa、φ=30°",
+          "verdict": "不適切",
+          "reason": "傾きは近いがσ=1で予測τ=2.58に対し3.1。切片が不足。"
+        },
+        "5": {
+          "value": "c=2.0×10⁴Pa、φ=35°",
+          "verdict": "不適切",
+          "reason": "傾き0.70は大きすぎ、低応力の切片も不足。全測定点で比較する。"
+        }
+      },
+      "figures": "原典の組合せ表又は測定表を独自に要約。元画像は照合用で転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_007.png"
+      ],
+      "core_concept": "一面せん断の直線包絡線から切片と摩擦角を求める。",
+      "required_knowledge": "原典の測定点(σ,τ)は共通単位×10⁴N/m²で(1,3.1),(2,3.7),(4,4.8),(8,7.1)。端点の傾き(7.1−3.1)/(8−1)=0.5714で、指定0.58の30度に近い。φ=30度で各点からc=τ−0.58σを求めると約2.5×10⁴Paなので2。丸め値は厳密に一つの直線上ではない。最小二乗でも傾き0.5696、切片2.5391となり同じ候補が最も近い。",
+      "solution": "原典の測定点(σ,τ)は共通単位×10⁴N/m²で(1, 3.1)、(2, 3.7)、(4, 4.8)、(8, 7.1)。端点の傾き(7.1−3.1)/(8−1)=0.5714で、指定0.58の30度に近い。φ=30度で各点からc=τ−0.58σを求めると約2.5×10⁴Paなので2。丸め値は厳密に一つの直線上ではない。最小二乗でも傾き0.5696、切片2.5391となり同じ候補が最も近い。",
+      "answer_reason": "原典の測定点(σ,τ)は共通単位×10⁴N/m²で(1,3.1),(2,3.7),(4,4.8),(8,7.1)。端点の傾き(7.1−3.1)/(8−1)=0.5714で、指定0.58の30度に近い。φ=30度で各点からc=τ−0.58σを求めると約2.5×10⁴Paなので2。丸め値は厳密に一つの直線上ではない。最小二乗でも傾き0.5696、切片2.5391となり同じ候補が最も近い。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前独立JSONを保持。直線近似でc=2.5×10⁴Pa、傾き約0.58で30度。",
+      "learning_points": "直接測る量と代理指標を区別し、分母・有効応力・水の経路・材料の条件から判断する。",
+      "theory_references": [
+        "theory:engineering:mohr"
+      ],
+      "discipline_id": "geo_engineering",
+      "concept_id": "eng52_mohr",
+      "cross_concepts": [],
+      "classification_reason": "全原典五肢と図表の主題を照合：一面せん断の直線包絡線から切片と摩擦角を求める。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "測定量の定義・材料挙動を比べ、相対的な適性と全称を区別する。"
+      },
+      "citations": [
+        "eng52_mohr_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "3911084d7f3b139a85b127c048c54548fece2199e6ca34be9f6fa2525580812d",
+      "revision_of_batch": "S7_052_engineering",
+      "revision_reason": "原典の4測定点を保持し、読点と空白で改行可能にしてOverfullを解消。"
+    }
+  ]
+}

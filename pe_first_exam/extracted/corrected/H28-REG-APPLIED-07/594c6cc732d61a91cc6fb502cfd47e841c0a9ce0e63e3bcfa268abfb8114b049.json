@@ -1,0 +1,45 @@
+{
+  "stem": "FCCの最近接距離から格子定数を求める。",
+  "conditions": {
+    "判断対象": "FCCの最近接距離から格子定数を求める。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "d",
+      "verdict": "選ばない候補",
+      "reason": "FCCの最近接距離は胞辺より短い。"
+    },
+    "2": {
+      "value": "√2d",
+      "verdict": "選ぶ候補",
+      "reason": "面対角線を半分にした距離d=a/√2からa=√2d。"
+    },
+    "3": {
+      "value": "d/√2",
+      "verdict": "選ばない候補",
+      "reason": "距離と格子定数を逆にした値。"
+    },
+    "4": {
+      "value": "2d/√3",
+      "verdict": "選ばない候補",
+      "reason": "BCCなら現れる関係でFCCではない。"
+    },
+    "5": {
+      "value": "√3d",
+      "verdict": "選ばない候補",
+      "reason": "FCCの面対角線の幾何に合わない。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_003.png"
+  ],
+  "question_id": "H28-REG-APPLIED-07",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "b26a1cefea6f06a4140668c31db75f06eb510b0c73ea4a83dd0e72649d36754b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

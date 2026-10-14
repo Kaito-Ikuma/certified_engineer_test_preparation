@@ -1,0 +1,45 @@
+{
+  "stem": "第一法則・第二法則と気体の体積変化を判定し、最も不適切な記述を選ぶ。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "原典の範囲": "一定質量の気体。理想気体という語は明記されていない。"
+  },
+  "choices": {
+    "1": {
+      "value": "外部からの熱と系へされた仕事の和が内部エネルギー増加に等しい",
+      "verdict": "正しい",
+      "reason": "熱を流入正、仕事を系へ入力正とすれば\\(\\Delta U=Q+W_{\\mathrm{on}}\\)である。系全体の運動・位置エネルギー変化はこの閉じた熱力学系では考えない。"
+    },
+    "2": {
+      "value": "熱は高温から低温へ移り、自然に低温から高温へは移らない",
+      "verdict": "正しい",
+      "reason": "第二法則の巨視的な受動的熱移動の方向である。冷凍機は外部仕事を使うので反例ではない。"
+    },
+    "3": {
+      "value": "圧力一定・一定質量の気体の体積は絶対温度に比例する",
+      "verdict": "理想気体近似で正しい",
+      "reason": "理想気体又はその近似が成り立つ範囲では固定\\(n,p\\)により\\(V=(nR/p)T\\)である。"
+    },
+    "4": {
+      "value": "温度一定・一定質量の気体の体積は圧力に比例する",
+      "verdict": "誤り",
+      "reason": "理想気体なら\\(pV=nRT\\)であり、固定\\(n,T\\)では\\(V=nRT/p\\)と反比例する。比例という記述が誤りである。"
+    },
+    "5": {
+      "value": "エネルギー変換で関与する全エネルギーの和が保存される",
+      "verdict": "正しい",
+      "reason": "第一法則のエネルギー保存の内容である。対象系から外へ出るエネルギーを数え落とさない。"
+    }
+  },
+  "figures": "正誤方向、全条件・数値・単位、候補5肢を原典画像で確認。図なし。組合せ問題では表の全欄を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_002.png"
+  ],
+  "question_id": "R01-RET-APPLIED-04",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "7be51107853f467f78835594e0329003323a2134371c78a12c4bfa3c3ac5d5c4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

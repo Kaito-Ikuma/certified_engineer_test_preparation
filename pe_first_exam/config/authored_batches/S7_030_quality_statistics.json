@@ -1,0 +1,1207 @@
+{
+  "batch_id": "S7_030_quality_statistics",
+  "reference_date": "2026-10-11",
+  "questions": [
+    {
+      "question_id": "H23-REG-BASIC-5-4",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "独立な製品質量の標本平均と総質量について、平均と標準偏差を求める。",
+      "summary": "独立な製品質量の標本平均と総質量について、平均と標準偏差を求める。",
+      "conditions": {
+        "判断方向": "最も適切な記述又は組合せを選ぶ",
+        "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+        "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+      },
+      "choices": {
+        "1": {
+          "value": "平均20・偏差4・合計400・偏差10",
+          "verdict": "不適切",
+          "reason": "Aの標本平均の期待値は80gであり、標本数で平均を割らない。総質量の期待値も800gである。"
+        },
+        "2": {
+          "value": "平均80・偏差4・合計800・偏差7",
+          "verdict": "不適切",
+          "reason": "平均の偏差は4gではなく2gである。合計の偏差も標準偏差をそのまま足した7gではなく10gである。"
+        },
+        "3": {
+          "value": "平均80・偏差2・合計800・偏差10",
+          "verdict": "適切",
+          "reason": "Aの4個平均の偏差は4/2=2g、合計の分散は4×16+4×9=100g²なので10gである。"
+        },
+        "4": {
+          "value": "平均20・偏差2・合計400・偏差7",
+          "verdict": "不適切",
+          "reason": "平均と総質量の期待値がともに違い、合計の偏差も違う。"
+        },
+        "5": {
+          "value": "平均80・偏差2・合計800・偏差7",
+          "verdict": "不適切",
+          "reason": "平均部分は合うが、合計の標準偏差は7gではない。独立成分の分散を足して最後に平方根を取る。"
+        }
+      },
+      "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H23/basic/page_017.png"
+      ],
+      "core_concept": "独立な製品質量の標本平均と総質量について、平均と標準偏差を求める。",
+      "required_knowledge": "独立変数の線形結合、平均の線形性、分散への係数の二乗、正規分布の閉性。",
+      "solution": "各質量を独立正規変数とする。Aの標本平均は \\(\\bar A=(A_1+\\cdots+A_4)/4\\) で、期待値80g、分散 \\(4(4^2)/4^2=4\\,\\mathrm{g^2}\\) である。総質量は \\(T=\\sum_{i=1}^4A_i+\\sum_{i=1}^4B_i\\) なので期待値 \\(4(80)+4(120)=800\\,\\mathrm g\\)、分散 \\(4(4^2)+4(3^2)=100\\,\\mathrm{g^2}\\) となる。標準偏差はそれぞれ2gと10gで、3を選ぶ。平均を取る操作と、四つの値を合計する操作を混同しない。",
+      "answer_reason": "各質量を独立正規変数とする。Aの標本平均は \\(\\bar A=(A_1+\\cdots+A_4)/4\\) で、期待値80g、分散 \\(4(4^2)/4^2=4\\,\\mathrm{g^2}\\) である。総質量は \\(T=\\sum_{i=1}^4A_i+\\sum_{i=1}^4B_i\\) なので期待値 \\(4(80)+4(120)=800\\,\\mathrm g\\)、分散 \\(4(4^2)+4(3^2)=100\\,\\mathrm{g^2}\\) となる。標準偏差はそれぞれ2gと10gで、3を選ぶ。平均を取る操作と、四つの値を合計する操作を混同しない。",
+      "independent_answer": "3",
+      "independent_solution_note": "14原典画像の確認後、公式参照前の16解答を保存。独立正規変数。A標本平均80g,2g。4A+4Bの平均800g、分散4*16+4*9=100g^2、標準偏差10g。候補3。公式照合後も初回記録は保存する。",
+      "learning_points": "変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。",
+      "theory_references": [
+        "theory:quality:variance",
+        "theory:quality:normal",
+        "theory:quality:sample_mean"
+      ],
+      "discipline_id": "basic_5_3",
+      "concept_id": "quality_normal_combinations",
+      "cross_concepts": [],
+      "classification_reason": "原典で品質保証、品質表、抜取検査、確率分布、統計推論を照合。既存の設計・計画及び技術に関する分類を維持し、共有する概念を追加する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "数学自体は既知として扱う。品質の判断対象、組合せ表、モデル仮定を追加理解する負荷を別に評価する。"
+      },
+      "citations": [
+        "stat_nist_normal",
+        "stat_psu_linear"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-1-3",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "要求品質の重みと対応の強さから、品質要素の重要度を積和で求める。",
+      "summary": "要求品質の重みと対応の強さから、品質要素の重要度を積和で求める。",
+      "conditions": {
+        "判断方向": "最も適切な記述又は組合せを選ぶ",
+        "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+        "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+      },
+      "choices": {
+        "1": {
+          "value": "A>C>D",
+          "verdict": "不適切",
+          "reason": "C=53でA=49を上回るため、Aを先に置く順序は合わない。"
+        },
+        "2": {
+          "value": "A>D>C",
+          "verdict": "不適切",
+          "reason": "Cは三要素のうち最大であり、最後に置けない。"
+        },
+        "3": {
+          "value": "C>A>D",
+          "verdict": "適切",
+          "reason": "重み付き合計はC=53、A=49、D=46なのでこの順序となる。"
+        },
+        "4": {
+          "value": "C>D>A",
+          "verdict": "不適切",
+          "reason": "A=49はD=46より大きく、後二要素の順が逆である。"
+        },
+        "5": {
+          "value": "D>A>C",
+          "verdict": "不適切",
+          "reason": "D=46は最小であり、最初にはならない。"
+        }
+      },
+      "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/basic/page_003.png"
+      ],
+      "core_concept": "要求品質の重みと対応の強さから、品質要素の重要度を積和で求める。",
+      "required_knowledge": "要求品質と設計特性、対応行列、重要度の積和、問題固有の対応尺度。",
+      "solution": "対応の強さを原典どおり◎5、○3、△1とし、空欄は加点しない。要求の重みは行順に5,5,4,3,4,3である。Aは \\(5\\cdot5+4\\cdot3+4\\cdot3=49\\)、Cは \\(5\\cdot3+4\\cdot5+3\\cdot5+3\\cdot1=53\\)、Dは \\(5\\cdot5+4\\cdot3+3\\cdot3=46\\) であり、3を選ぶ。各列に関係のある要求の重要度を反映する計算である。係数を一般的な別の尺度へ勝手に置き換えない。図中のBとEは今回の大小比較の対象ではない。",
+      "answer_reason": "対応の強さを原典どおり◎5、○3、△1とし、空欄は加点しない。要求の重みは行順に5,5,4,3,4,3である。Aは \\(5\\cdot5+4\\cdot3+4\\cdot3=49\\)、Cは \\(5\\cdot3+4\\cdot5+3\\cdot5+3\\cdot1=53\\)、Dは \\(5\\cdot5+4\\cdot3+3\\cdot3=46\\) であり、3を選ぶ。各列に関係のある要求の重要度を反映する計算である。係数を一般的な別の尺度へ勝手に置き換えない。図中のBとEは今回の大小比較の対象ではない。",
+      "independent_answer": "3",
+      "independent_solution_note": "14原典画像の確認後、公式参照前の16解答を保存。画像の◎5/○3/△1と要求重みを積和する。A=5*5+4*3+4*3=49、C=5*3+4*5+3*5+3*1=53、D=5*5+4*3+3*3=46。C>A>D、候補3。公式照合後も初回記録は保存する。",
+      "learning_points": "変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。",
+      "theory_references": [
+        "theory:quality:qfd"
+      ],
+      "discipline_id": "basic_1_1",
+      "concept_id": "quality_qfd",
+      "cross_concepts": [],
+      "classification_reason": "原典で品質保証、品質表、抜取検査、確率分布、統計推論を照合。既存の設計・計画及び技術に関する分類を維持し、共有する概念を追加する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "数学自体は既知として扱う。品質の判断対象、組合せ表、モデル仮定を追加理解する負荷を別に評価する。"
+      },
+      "citations": [
+        "quality_qfd_scale"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-5-4",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "最終検査と上流の品質保証を分け、プロセスの標準化と改善の関係を読む。",
+      "summary": "最終検査と上流の品質保証を分け、プロセスの標準化と改善の関係を読む。",
+      "conditions": {
+        "判断方向": "最も適切な記述又は組合せを選ぶ",
+        "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+        "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+      },
+      "choices": {
+        "1": {
+          "value": "検査・三現管理・基準化・プロセス",
+          "verdict": "不適切",
+          "reason": "現場・現物・現実という三現の確認と、上流で不適合原因を抑える源流管理は同じ説明ではない。"
+        },
+        "2": {
+          "value": "検査・源流管理・標準化・プロセス",
+          "verdict": "適切",
+          "reason": "要求適合を判定する検査、上流からの源流管理、方法を定める標準化、プロセスを管理する流れでつながる。"
+        },
+        "3": {
+          "value": "検査・三現管理・基準化・アウトカム",
+          "verdict": "不適切",
+          "reason": "三現管理・基準化の対応に加え、ここで管理する対象は一連のプロセスである。"
+        },
+        "4": {
+          "value": "評価・源流管理・標準化・アウトカム",
+          "verdict": "不適切",
+          "reason": "評価は広い概念だが本問の要求適合判定は検査である。末尾も成果だけを意味するアウトカムではなくプロセスである。"
+        },
+        "5": {
+          "value": "評価・三現管理・標準化・プロセス",
+          "verdict": "不適切",
+          "reason": "要求適合判定と上流の改善に対応する語が検査・源流管理になっていない。"
+        }
+      },
+      "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/basic/page_017.png"
+      ],
+      "core_concept": "最終検査と上流の品質保証を分け、プロセスの標準化と改善の関係を読む。",
+      "required_knowledge": "検査と予防、上流工程、標準化、PDCA、プロセスと成果。",
+      "solution": "完成品を検査して不適合品を隔離することと、不適合を生む工程を上流から改善することを分ける。設問の文脈ではアが検査、イが源流管理、ウが標準化、エがプロセスであり2となる。標準を設定して実施し、結果を確認して更新する循環が品質保証を支える。標準化は永久に方法を固定することではなく、改善結果を次の標準へ反映することを含む。",
+      "answer_reason": "完成品を検査して不適合品を隔離することと、不適合を生む工程を上流から改善することを分ける。設問の文脈ではアが検査、イが源流管理、ウが標準化、エがプロセスであり2となる。標準を設定して実施し、結果を確認して更新する循環が品質保証を支える。標準化は永久に方法を固定することではなく、改善結果を次の標準へ反映することを含む。",
+      "independent_answer": "2",
+      "independent_solution_note": "14原典画像の確認後、公式参照前の16解答を保存。要求適合判定は検査、上流改善は源流管理、プロセス設定は標準化、プロセスに基づく管理、候補2。公式照合後も初回記録は保存する。",
+      "learning_points": "変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。",
+      "theory_references": [
+        "theory:quality:assurance",
+        "theory:quality:pdca"
+      ],
+      "discipline_id": "basic_5_3",
+      "concept_id": "quality_process_assurance",
+      "cross_concepts": [],
+      "classification_reason": "原典で品質保証、品質表、抜取検査、確率分布、統計推論を照合。既存の設計・計画及び技術に関する分類を維持し、共有する概念を追加する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "数学自体は既知として扱う。品質の判断対象、組合せ表、モデル仮定を追加理解する負荷を別に評価する。"
+      },
+      "citations": [
+        "quality_process_jsqc",
+        "quality_iso_process"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-1-6",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "工程能力指数、回帰分析、管理図、ヒストグラムを目的で区別する。",
+      "summary": "工程能力指数、回帰分析、管理図、ヒストグラムを目的で区別する。",
+      "conditions": {
+        "判断方向": "最も適切な記述又は組合せを選ぶ",
+        "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+        "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+      },
+      "choices": {
+        "1": {
+          "value": "標準偏差・主成分分析・管理図・ヒストグラム",
+          "verdict": "不適切",
+          "reason": "公差を工程のばらつき幅で割る値は標準偏差そのものではない。主成分分析も指定された応答モデルの評価と違う。"
+        },
+        "2": {
+          "value": "標準偏差・回帰分析・工程図・散布図",
+          "verdict": "不適切",
+          "reason": "アの比は無次元の工程能力指数であり、異常監視は管理図、区間内度数の表示はヒストグラムである。"
+        },
+        "3": {
+          "value": "工程能力指数・回帰分析・管理図・ヒストグラム",
+          "verdict": "適切",
+          "reason": "公差と工程能力の比、応答への説明変数のモデル、時間変動の監視、区間度数の図がそれぞれ対応する。"
+        },
+        "4": {
+          "value": "工程能力指数・主成分分析・工程図・ヒストグラム",
+          "verdict": "不適切",
+          "reason": "主成分分析は変数を合成して次元を減らす方法で、工程図も時間変動の統計監視とは異なる。"
+        },
+        "5": {
+          "value": "工程能力指数・回帰分析・工程図・散布図",
+          "verdict": "不適切",
+          "reason": "工程図は手順を示し、散布図は二変数の関係を示す。ここで求める監視と一変数の度数分布に対応しない。"
+        }
+      },
+      "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_005.png"
+      ],
+      "core_concept": "工程能力指数、回帰分析、管理図、ヒストグラムを目的で区別する。",
+      "required_knowledge": "安定工程と規格、Cp、回帰と主成分分析の目的差、管理図、度数密度。",
+      "solution": "公差幅を工程のばらつき幅で規格化する値は工程能力指数である。正規かつ安定な工程の両側規格では \\(C_p=(U-L)/(6\\sigma)\\) と表せる。応答変数と説明変数のモデルは回帰分析、工程の時間変動は管理図、測定値を区間に分け度数に比例する面積を並べる図はヒストグラムなので3である。管理図の管理限界と製品の規格限界、標準偏差と無次元の指数を混同しない。",
+      "answer_reason": "公差幅を工程のばらつき幅で規格化する値は工程能力指数である。正規かつ安定な工程の両側規格では \\(C_p=(U-L)/(6\\sigma)\\) と表せる。応答変数と説明変数のモデルは回帰分析、工程の時間変動は管理図、測定値を区間に分け度数に比例する面積を並べる図はヒストグラムなので3である。管理図の管理限界と製品の規格限界、標準偏差と無次元の指数を混同しない。",
+      "independent_answer": "3",
+      "independent_solution_note": "14原典画像の確認後、公式参照前の16解答を保存。公差/工程能力は工程能力指数、説明変数と応答は回帰分析、異常監視は管理図、区間面積で度数を示す図はヒストグラム。候補3。公式照合後も初回記録は保存する。",
+      "learning_points": "変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。",
+      "theory_references": [
+        "theory:quality:capability",
+        "theory:quality:charts",
+        "theory:quality:regression"
+      ],
+      "discipline_id": "basic_1_1",
+      "concept_id": "quality_tools_capability",
+      "cross_concepts": [],
+      "classification_reason": "原典で品質保証、品質表、抜取検査、確率分布、統計推論を照合。既存の設計・計画及び技術に関する分類を維持し、共有する概念を追加する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "数学自体は既知として扱う。品質の判断対象、組合せ表、モデル仮定を追加理解する負荷を別に評価する。"
+      },
+      "citations": [
+        "quality_nist_capability",
+        "quality_nist_control",
+        "quality_nist_histogram",
+        "stat_psu_correlation"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-1-3",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "抜取検査の測定量、危険の負担者、合否の閾値と検査切換えを対応させる。",
+      "summary": "抜取検査の測定量、危険の負担者、合否の閾値と検査切換えを対応させる。",
+      "conditions": {
+        "判断方向": "最も適切な記述又は組合せを選ぶ",
+        "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+        "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+      },
+      "choices": {
+        "1": {
+          "value": "個数・生産者・消費者・判定個数・なみ/きつい",
+          "verdict": "適切",
+          "reason": "計数値の個数と危険の負担者、個数の合否閾値、ロット間の切換えが対応する。"
+        },
+        "2": {
+          "value": "平均・消費者・生産者・判定値・なみ/きつい",
+          "verdict": "不適切",
+          "reason": "計数値を平均値へ、危険の負担者を逆へ取り違えている。"
+        },
+        "3": {
+          "value": "個数・消費者・生産者・判定個数・多回抜取",
+          "verdict": "不適切",
+          "reason": "生産者と消費者の危険を逆にし、ロット間切換えを一ロット内の多回抜取と混同する。"
+        },
+        "4": {
+          "value": "平均・生産者・消費者・判定値・多回抜取",
+          "verdict": "不適切",
+          "reason": "計量値の平均と判定値、複数標本を取る手順は本問の指定と合わない。"
+        },
+        "5": {
+          "value": "個数・生産者・消費者・判定値・なみ/きつい",
+          "verdict": "不適切",
+          "reason": "本問は不適合品の個数と合否判定個数の組合せを問う。計量値に対応する判定値との用語差を保持する。"
+        }
+      },
+      "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+      "ambiguity": "原典の「抜取検査手順を固定」と「判定個数で調整」は、標本数を固定して閾値を変更するという意味に限定する。全(n,c)固定なら二つの危険も固定である。切換え規則の出題時JIS原文全体は未取得であり一般概念の照合と区別する。",
+      "evidence": [
+        "extracted/pages/H26/basic/page_002.png"
+      ],
+      "core_concept": "抜取検査の測定量、危険の負担者、合否の閾値と検査切換えを対応させる。",
+      "required_knowledge": "計数値と計量値、ロットとサンプル、不適合品の数、OC曲線、生産者危険と消費者危険、検査の切換え。",
+      "solution": "合否を数で決める計数値検査では不適合品の数を数える。良いロットの拒否は生産者危険 \\(\\alpha\\)、悪いロットの受入れは消費者危険 \\(\\beta\\) である。サンプル数を固定して合格判定個数を増やすと、受入確率が増し、生産者危険が下がる一方で消費者危険が上がる。先行ロットの成績によるなみ検査・きつい検査の切換えと、一ロット内で複数の標本を取る多回抜取を区別する。本問の五項目の組合せは1である。",
+      "answer_reason": "合否を数で決める計数値検査では不適合品の数を数える。良いロットの拒否は生産者危険 \\(\\alpha\\)、悪いロットの受入れは消費者危険 \\(\\beta\\) である。サンプル数を固定して合格判定個数を増やすと、受入確率が増し、生産者危険が下がる一方で消費者危険が上がる。先行ロットの成績によるなみ検査・きつい検査の切換えと、一ロット内で複数の標本を取る多回抜取を区別する。本問の五項目の組合せは1である。",
+      "independent_answer": "1",
+      "independent_solution_note": "14原典画像の確認後、公式参照前の16解答を保存。計数値は不適合品の数、良品拒否は生産者危険、不良品受入は消費者危険。個数の判定、なみ/きつい切換え。候補1。手順固定と判定閾値変更の表現は精査する。公式照合後も初回記録は保存する。",
+      "learning_points": "変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。",
+      "theory_references": [
+        "theory:quality:acceptance",
+        "theory:quality:oc",
+        "theory:quality:switching"
+      ],
+      "discipline_id": "basic_1_1",
+      "concept_id": "quality_acceptance_sampling",
+      "cross_concepts": [],
+      "classification_reason": "原典で品質保証、品質表、抜取検査、確率分布、統計推論を照合。既存の設計・計画及び技術に関する分類を維持し、共有する概念を追加する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "数学自体は既知として扱う。品質の判断対象、組合せ表、モデル仮定を追加理解する負荷を別に評価する。"
+      },
+      "citations": [
+        "quality_nist_sampling",
+        "quality_nist_oc"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-1-2",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "計数値抜取検査の危険と、先行ロットの成績による検査の切換えを読む。",
+      "summary": "計数値抜取検査の危険と、先行ロットの成績による検査の切換えを読む。",
+      "conditions": {
+        "判断方向": "最も適切な記述又は組合せを選ぶ",
+        "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+        "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+      },
+      "choices": {
+        "1": {
+          "value": "平均・消費者・生産者・多回",
+          "verdict": "不適切",
+          "reason": "測定量と危険の負担者が違い、多回抜取は先行ロットを使う切換えではない。"
+        },
+        "2": {
+          "value": "平均・生産者・消費者・なみ/きつい",
+          "verdict": "不適切",
+          "reason": "危険の順序は合うが、計数値検査では平均値でなく不適合品の数を使う。"
+        },
+        "3": {
+          "value": "個数・消費者・生産者・多回",
+          "verdict": "不適切",
+          "reason": "危険の負担者が逆で、切換えと多回抜取も違う。"
+        },
+        "4": {
+          "value": "個数・生産者・消費者・なみ/きつい",
+          "verdict": "適切",
+          "reason": "個数、良品拒否の生産者危険、不良品受入れの消費者危険、なみ/きついの切換えが対応する。"
+        },
+        "5": {
+          "value": "平均・消費者・生産者・なみ/きつい",
+          "verdict": "不適切",
+          "reason": "平均値への置換と危険の負担者の逆転が不適切である。"
+        }
+      },
+      "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+      "ambiguity": "原典の「抜取検査手順を固定」と「判定個数で調整」は、標本数を固定して閾値を変更するという意味に限定する。全(n,c)固定なら二つの危険も固定である。切換え規則の出題時JIS原文全体は未取得であり一般概念の照合と区別する。",
+      "evidence": [
+        "extracted/pages/H28/basic/page_002.png"
+      ],
+      "core_concept": "計数値抜取検査の危険と、先行ロットの成績による検査の切換えを読む。",
+      "required_knowledge": "計数値と計量値、ロットとサンプル、不適合品の数、OC曲線、生産者危険と消費者危険、検査の切換え。",
+      "solution": "合否を数で決める計数値検査では不適合品の数を数える。良いロットの拒否は生産者危険 \\(\\alpha\\)、悪いロットの受入れは消費者危険 \\(\\beta\\) である。サンプル数を固定して合格判定個数を増やすと、受入確率が増し、生産者危険が下がる一方で消費者危険が上がる。先行ロットの成績によるなみ検査・きつい検査の切換えと、一ロット内で複数の標本を取る多回抜取を区別する。本問は合格判定個数が問題幹にあり、残る四項目の組合せは4である。",
+      "answer_reason": "合否を数で決める計数値検査では不適合品の数を数える。良いロットの拒否は生産者危険 \\(\\alpha\\)、悪いロットの受入れは消費者危険 \\(\\beta\\) である。サンプル数を固定して合格判定個数を増やすと、受入確率が増し、生産者危険が下がる一方で消費者危険が上がる。先行ロットの成績によるなみ検査・きつい検査の切換えと、一ロット内で複数の標本を取る多回抜取を区別する。本問は合格判定個数が問題幹にあり、残る四項目の組合せは4である。",
+      "independent_answer": "4",
+      "independent_solution_note": "14原典画像の確認後、公式参照前の16解答を保存。不適合品の数、生産者危険、消費者危険、なみ検査ときつい検査。候補4。固定手順で危険を調整する記述の範囲は精査する。公式照合後も初回記録は保存する。",
+      "learning_points": "変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。",
+      "theory_references": [
+        "theory:quality:acceptance",
+        "theory:quality:oc",
+        "theory:quality:switching"
+      ],
+      "discipline_id": "basic_1_1",
+      "concept_id": "quality_acceptance_sampling",
+      "cross_concepts": [],
+      "classification_reason": "原典で品質保証、品質表、抜取検査、確率分布、統計推論を照合。既存の設計・計画及び技術に関する分類を維持し、共有する概念を追加する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "数学自体は既知として扱う。品質の判断対象、組合せ表、モデル仮定を追加理解する負荷を別に評価する。"
+      },
+      "citations": [
+        "quality_nist_sampling",
+        "quality_nist_oc"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-1-5",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "独立な二部材の長さを足し、規定長さを超える確率を標準化する。",
+      "summary": "独立な二部材の長さを足し、規定長さを超える確率を標準化する。",
+      "conditions": {
+        "判断方向": "最も適切な記述又は組合せを選ぶ",
+        "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+        "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+      },
+      "choices": {
+        "1": {
+          "value": "0.2%未満",
+          "verdict": "適切",
+          "reason": "z=3の上側確率0.13%はこの範囲に入る。"
+        },
+        "2": {
+          "value": "0.2%以上1%未満",
+          "verdict": "不適切",
+          "reason": "0.13%は下限0.2%より小さい。"
+        },
+        "3": {
+          "value": "1%以上5%未満",
+          "verdict": "不適切",
+          "reason": "0.13%は下限1%より小さい。"
+        },
+        "4": {
+          "value": "5%以上10%未満",
+          "verdict": "不適切",
+          "reason": "0.13%は下限5%より小さい。"
+        },
+        "5": {
+          "value": "10%以上",
+          "verdict": "不適切",
+          "reason": "0.13%は10%に届かない。"
+        }
+      },
+      "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/basic/page_004.png"
+      ],
+      "core_concept": "独立な二部材の長さを足し、規定長さを超える確率を標準化する。",
+      "required_knowledge": "寸法和、分散の加法、上側確率と標準化、連続分布。",
+      "solution": "全長 \\(L=A+B\\) は平均3500mm、分散 \\(0.4^2+0.3^2=0.25\\,\\mathrm{mm^2}\\) の正規変数である。標準偏差0.5mmにより \\(z=(3501.5-3500)/0.5=3\\) となる。原典表の上側確率0.13%を読み、1を選ぶ。標準偏差を0.7mmと足す方法は独立な確率変動に対して使わない。連続分布では「超える」と「以上」の確率は等しい。",
+      "answer_reason": "全長 \\(L=A+B\\) は平均3500mm、分散 \\(0.4^2+0.3^2=0.25\\,\\mathrm{mm^2}\\) の正規変数である。標準偏差0.5mmにより \\(z=(3501.5-3500)/0.5=3\\) となる。原典表の上側確率0.13%を読み、1を選ぶ。標準偏差を0.7mmと足す方法は独立な確率変動に対して使わない。連続分布では「超える」と「以上」の確率は等しい。",
+      "independent_answer": "1",
+      "independent_solution_note": "14原典画像の確認後、公式参照前の16解答を保存。独立寸法和の平均3500mm、標準偏差sqrt(.4^2+.3^2)=.5mm、z=3。上側.13%で0.2%未満、候補1。公式照合後も初回記録は保存する。",
+      "learning_points": "変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。",
+      "theory_references": [
+        "theory:quality:variance",
+        "theory:quality:normal"
+      ],
+      "discipline_id": "basic_1_1",
+      "concept_id": "quality_normal_combinations",
+      "cross_concepts": [],
+      "classification_reason": "原典で品質保証、品質表、抜取検査、確率分布、統計推論を照合。既存の設計・計画及び技術に関する分類を維持し、共有する概念を追加する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "数学自体は既知として扱う。品質の判断対象、組合せ表、モデル仮定を追加理解する負荷を別に評価する。"
+      },
+      "citations": [
+        "stat_nist_normal",
+        "stat_psu_linear"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-1-3",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "独立な引張力と圧縮力の差について、正の合力が閾値を超える確率を求める。",
+      "summary": "独立な引張力と圧縮力の差について、正の合力が閾値を超える確率を求める。",
+      "conditions": {
+        "判断方向": "最も適切な記述又は組合せを選ぶ",
+        "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+        "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+      },
+      "choices": {
+        "1": {
+          "value": "0.2%未満",
+          "verdict": "不適切",
+          "reason": "2.28%は0.2%未満ではない。"
+        },
+        "2": {
+          "value": "0.2%以上1%未満",
+          "verdict": "不適切",
+          "reason": "2.28%は上限1%を超える。"
+        },
+        "3": {
+          "value": "1%以上5%未満",
+          "verdict": "適切",
+          "reason": "z=2の上側確率2.28%がこの範囲に入る。"
+        },
+        "4": {
+          "value": "5%以上10%未満",
+          "verdict": "不適切",
+          "reason": "2.28%は下限5%より小さい。"
+        },
+        "5": {
+          "value": "10%以上",
+          "verdict": "不適切",
+          "reason": "2.28%は10%より小さい。"
+        }
+      },
+      "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/basic/page_002.png"
+      ],
+      "core_concept": "独立な引張力と圧縮力の差について、正の合力が閾値を超える確率を求める。",
+      "required_knowledge": "力の符号、正規差、分散と係数の二乗、上側確率。",
+      "solution": "引張りを正として \\(F=F_a-F_b\\) と置く。期待値は300-200=100Nであり、独立な差の分散も \\(30^2+40^2=2500\\,\\mathrm{N^2}\\) と加える。したがって標準偏差50N、閾値200Nの標準化は \\(z=(200-100)/50=2\\) である。上側確率2.28%から3となる。力の平均では符号を反転するが、分散では係数を二乗するため圧縮成分の分散も正に加わる。",
+      "answer_reason": "引張りを正として \\(F=F_a-F_b\\) と置く。期待値は300-200=100Nであり、独立な差の分散も \\(30^2+40^2=2500\\,\\mathrm{N^2}\\) と加える。したがって標準偏差50N、閾値200Nの標準化は \\(z=(200-100)/50=2\\) である。上側確率2.28%から3となる。力の平均では符号を反転するが、分散では係数を二乗するため圧縮成分の分散も正に加わる。",
+      "independent_answer": "3",
+      "independent_solution_note": "14原典画像の確認後、公式参照前の16解答を保存。合力Fa-Fbの平均100N、標準偏差sqrt(30^2+40^2)=50N。200N以上z=2で2.28%。候補3。公式照合後も初回記録は保存する。",
+      "learning_points": "変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。",
+      "theory_references": [
+        "theory:quality:variance",
+        "theory:quality:normal"
+      ],
+      "discipline_id": "basic_1_1",
+      "concept_id": "quality_normal_combinations",
+      "cross_concepts": [],
+      "classification_reason": "原典で品質保証、品質表、抜取検査、確率分布、統計推論を照合。既存の設計・計画及び技術に関する分類を維持し、共有する概念を追加する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "数学自体は既知として扱う。品質の判断対象、組合せ表、モデル仮定を追加理解する負荷を別に評価する。"
+      },
+      "citations": [
+        "stat_nist_normal",
+        "stat_psu_linear"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-BASIC-1-2",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "stem": "応力と強度の独立正規モデルで、強度が応力を下回る確率を比較する。",
+      "summary": "応力と強度の独立正規モデルで、強度が応力を下回る確率を比較する。",
+      "conditions": {
+        "判断方向": "最も適切な記述又は組合せを選ぶ",
+        "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+        "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+      },
+      "choices": {
+        "1": {
+          "value": "ウ→イ→エ→ア",
+          "verdict": "不適切",
+          "reason": "ウの次はイではなくアである。アの信頼性指標4/3はイの1より大きい。"
+        },
+        "2": {
+          "value": "ア→ウ→イ→エ",
+          "verdict": "不適切",
+          "reason": "ウの3/2はアの4/3より大きく、最小故障確率はウとなる。"
+        },
+        "3": {
+          "value": "ア→イ→ウ→エ",
+          "verdict": "不適切",
+          "reason": "ウをイより後に置くのが違い、ウは全ケース中で故障確率が最小となる。"
+        },
+        "4": {
+          "value": "ウ→ア→イ→エ",
+          "verdict": "適切",
+          "reason": "信頼性指標を大きい順に並べると3/2、4/3、1、1/√2で、故障確率はこの順に小さい。"
+        },
+        "5": {
+          "value": "ア→ウ→エ→イ",
+          "verdict": "不適切",
+          "reason": "ウが最初でないことと、エがイより後であることに反する。"
+        }
+      },
+      "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/basic/page_002.png"
+      ],
+      "core_concept": "応力と強度の独立正規モデルで、強度が応力を下回る確率を比較する。",
+      "required_knowledge": "独立な応力と強度、限界状態、信頼性指標、標準正規累積分布。",
+      "solution": "限界状態 \\(Z=R-S\\) の平均は \\(\\mu_R-\\mu_S\\)、分散は \\(\\sigma_R^2+\\sigma_S^2\\) である。故障確率は \\(\\Phi(-b)\\)、\\(b=(\\mu_R-\\mu_S)/\\sqrt{\\sigma_R^2+\\sigma_S^2}\\) なので、大きい \\(b\\) ほど小さい。原典比のアは4/3、イは3/3=1、ウは3/2、エは1/√2である。故障確率の小さい順はウ・ア・イ・エとなり4を選ぶ。平均強度と平均応力の差だけで順位を決めず、その散らばりで規格化する。",
+      "answer_reason": "限界状態 \\(Z=R-S\\) の平均は \\(\\mu_R-\\mu_S\\)、分散は \\(\\sigma_R^2+\\sigma_S^2\\) である。故障確率は \\(\\Phi(-b)\\)、\\(b=(\\mu_R-\\mu_S)/\\sqrt{\\sigma_R^2+\\sigma_S^2}\\) なので、大きい \\(b\\) ほど小さい。原典比のアは4/3、イは3/3=1、ウは3/2、エは1/√2である。故障確率の小さい順はウ・ア・イ・エとなり4を選ぶ。平均強度と平均応力の差だけで順位を決めず、その散らばりで規格化する。",
+      "independent_answer": "4",
+      "independent_solution_note": "14原典画像の確認後、公式参照前の16解答を保存。独立差R-Sの標準偏差平方和。信頼性指標ア4/3、イ1、ウ3/2、エ1/sqrt2。故障確率は指標の大きい順で小さい。ウ→ア→イ→エ、候補4。公式照合後も初回記録は保存する。",
+      "learning_points": "変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。",
+      "theory_references": [
+        "theory:quality:stress_strength",
+        "theory:quality:variance"
+      ],
+      "discipline_id": "basic_1_1",
+      "concept_id": "quality_stress_strength",
+      "cross_concepts": [],
+      "classification_reason": "原典で品質保証、品質表、抜取検査、確率分布、統計推論を照合。既存の設計・計画及び技術に関する分類を維持し、共有する概念を追加する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "数学自体は既知として扱う。品質の判断対象、組合せ表、モデル仮定を追加理解する負荷を別に評価する。"
+      },
+      "citations": [
+        "stat_nist_normal",
+        "stat_psu_linear"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-BASIC-1-6",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "stem": "独立正規寸法の和と差の分布を、平均と分散に分けて表す。",
+      "summary": "独立正規寸法の和と差の分布を、平均と分散に分けて表す。",
+      "conditions": {
+        "判断方向": "最も適切な記述又は組合せを選ぶ",
+        "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+        "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+      },
+      "choices": {
+        "1": {
+          "value": "和は平均和/分散和、すき間も平均和/分散和",
+          "verdict": "不適切",
+          "reason": "接続長さは合うが、すき間の平均は内径から外径を引く。"
+        },
+        "2": {
+          "value": "和は平均和/分散和、すき間は平均差/分散差",
+          "verdict": "不適切",
+          "reason": "すき間の平均は合うが、差の分散を引いてはいけない。"
+        },
+        "3": {
+          "value": "和は平均和/分散和、すき間は平均差/分散和",
+          "verdict": "適切",
+          "reason": "和の平均はμA1+μA2、すき間の平均はμB2-μB1で、どちらも独立成分の分散を足す。"
+        },
+        "4": {
+          "value": "和は平均和/分散差、すき間は平均差/分散差",
+          "verdict": "不適切",
+          "reason": "独立な和でも差でも分散差にはならない。"
+        },
+        "5": {
+          "value": "和は平均和/分散差、すき間は平均和/分散差",
+          "verdict": "不適切",
+          "reason": "接続長さの分散と、すき間の平均・分散の両方が違う。"
+        }
+      },
+      "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/basic/page_005.png"
+      ],
+      "core_concept": "独立正規寸法の和と差の分布を、平均と分散に分けて表す。",
+      "required_knowledge": "独立正規寸法、平均和差、分散和、平均の順序と個体のすき間。",
+      "solution": "接続長さを \\(L=A_1+A_2\\)、すき間を \\(G=B_2-B_1\\) とする。独立正規変数の線形結合より、\\(L\\) は平均 \\(\\mu_{A1}+\\mu_{A2}\\)、分散 \\(\\sigma_{A1}^2+\\sigma_{A2}^2\\)、\\(G\\) は平均 \\(\\mu_{B2}-\\mu_{B1}\\)、分散 \\(\\sigma_{B2}^2+\\sigma_{B1}^2\\) である。3を選ぶ。原典の \\(\\mu_{B2}>\\mu_{B1}\\) は平均の順序であり、すべての個体で内径が外径より大きい保証ではない。分布の負側はしまりばめを表し得る。",
+      "answer_reason": "接続長さを \\(L=A_1+A_2\\)、すき間を \\(G=B_2-B_1\\) とする。独立正規変数の線形結合より、\\(L\\) は平均 \\(\\mu_{A1}+\\mu_{A2}\\)、分散 \\(\\sigma_{A1}^2+\\sigma_{A2}^2\\)、\\(G\\) は平均 \\(\\mu_{B2}-\\mu_{B1}\\)、分散 \\(\\sigma_{B2}^2+\\sigma_{B1}^2\\) である。3を選ぶ。原典の \\(\\mu_{B2}>\\mu_{B1}\\) は平均の順序であり、すべての個体で内径が外径より大きい保証ではない。分布の負側はしまりばめを表し得る。",
+      "independent_answer": "3",
+      "independent_solution_note": "14原典画像の確認後、公式参照前の16解答を保存。独立正規和差。和の平均和、差の平均B2-B1、分散は双方平方和。候補3。平均B2>B1は各寸法の差が常に正になる保証ではない。公式照合後も初回記録は保存する。",
+      "learning_points": "変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。",
+      "theory_references": [
+        "theory:quality:variance",
+        "theory:quality:normal"
+      ],
+      "discipline_id": "basic_1_1",
+      "concept_id": "quality_normal_combinations",
+      "cross_concepts": [],
+      "classification_reason": "原典で品質保証、品質表、抜取検査、確率分布、統計推論を照合。既存の設計・計画及び技術に関する分類を維持し、共有する概念を追加する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "数学自体は既知として扱う。品質の判断対象、組合せ表、モデル仮定を追加理解する負荷を別に評価する。"
+      },
+      "citations": [
+        "stat_nist_normal",
+        "stat_psu_linear"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-1-6",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "ISO 9001:2008を背景とするPDCAの順序を対応させる。",
+      "summary": "ISO 9001:2008を背景とするPDCAの順序を対応させる。",
+      "conditions": {
+        "判断方向": "最も適切な記述又は組合せを選ぶ",
+        "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+        "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+      },
+      "choices": {
+        "1": {
+          "value": "Plan Act Check Do",
+          "verdict": "不適切",
+          "reason": "実施前に改善を置き、実施を最後にする順序になっている。"
+        },
+        "2": {
+          "value": "Plan Act Do Check",
+          "verdict": "不適切",
+          "reason": "実施より前に改善を置き、確認後に次の改善へ戻る対応がない。"
+        },
+        "3": {
+          "value": "Plan Check Act Do",
+          "verdict": "不適切",
+          "reason": "計画の後に実施がなく確認へ進み、実施が最後になっている。"
+        },
+        "4": {
+          "value": "Plan Do Act Check",
+          "verdict": "不適切",
+          "reason": "実施結果を確認する前に改善段階を置いている。"
+        },
+        "5": {
+          "value": "Plan Do Check Act",
+          "verdict": "適切",
+          "reason": "計画・実施・確認・改善の順で、結果を次の計画に反映する。"
+        }
+      },
+      "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+      "ambiguity": "ISO公式の2008実施ガイダンスでPDCA名称を確認したが、設問が参照するISO9001:2008/JISQ9001:2008の規格本文全体は未取得。現在版の説明を過去版の条文へ無条件に代用しない。",
+      "evidence": [
+        "extracted/pages/H27/basic/page_004.png"
+      ],
+      "core_concept": "ISO 9001:2008を背景とするPDCAの順序を対応させる。",
+      "required_knowledge": "計画、実施、確認、改善、フィードバック、規格の版。",
+      "solution": "PDCAはPlanで目標とプロセスを定め、Doで実施し、Checkで目標・要求との対応を確認し、Actで改善する循環である。順序は5である。2008年版の実施ガイダンスもPlan-Do-Check-Actを用いる。一方、2015年版のプロセス解説は同じ循環をリスクに基づく思考とともに説明する。一般の循環の確認と、2008年規格の条文全体を照合したことは区別する。",
+      "answer_reason": "PDCAはPlanで目標とプロセスを定め、Doで実施し、Checkで目標・要求との対応を確認し、Actで改善する循環である。順序は5である。2008年版の実施ガイダンスもPlan-Do-Check-Actを用いる。一方、2015年版のプロセス解説は同じ循環をリスクに基づく思考とともに説明する。一般の循環の確認と、2008年規格の条文全体を照合したことは区別する。",
+      "independent_answer": "5",
+      "independent_solution_note": "14原典画像の確認後、公式参照前の16解答を保存。PDCA順序Plan Do Check Act、候補5。2008規格の歴史原文は照合予定。公式照合後も初回記録は保存する。",
+      "learning_points": "変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。",
+      "theory_references": [
+        "theory:quality:pdca",
+        "theory:quality:historical"
+      ],
+      "discipline_id": "basic_1_1",
+      "concept_id": "quality_pdca",
+      "cross_concepts": [],
+      "classification_reason": "原典で品質保証、品質表、抜取検査、確率分布、統計推論を照合。既存の設計・計画及び技術に関する分類を維持し、共有する概念を追加する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "数学自体は既知として扱う。品質の判断対象、組合せ表、モデル仮定を追加理解する負荷を別に評価する。"
+      },
+      "citations": [
+        "quality_iso2008_guidance",
+        "quality_iso_process"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-BASIC-1-3",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "stem": "PDCAの段階名と、それぞれの目的を照合する。",
+      "summary": "PDCAの段階名と、それぞれの目的を照合する。",
+      "conditions": {
+        "判断方向": "最も適切な記述又は組合せを選ぶ",
+        "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+        "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+      },
+      "choices": {
+        "1": {
+          "value": "正誤正正",
+          "verdict": "不適切",
+          "reason": "Doを誤とし、ChangeとAdjustを正としている。"
+        },
+        "2": {
+          "value": "正正誤誤",
+          "verdict": "適切",
+          "reason": "PlanとDoは正しく、Check/Actに対応しないChange/Adjustは誤りである。"
+        },
+        "3": {
+          "value": "正正正誤",
+          "verdict": "不適切",
+          "reason": "CをChangeとする説明を正としている点が違う。"
+        },
+        "4": {
+          "value": "誤正誤正",
+          "verdict": "不適切",
+          "reason": "Planを誤とし、Adjustを正としている点が違う。"
+        },
+        "5": {
+          "value": "誤誤正正",
+          "verdict": "不適切",
+          "reason": "PlanとDoを誤とし、ChangeとAdjustを正としている。"
+        }
+      },
+      "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/basic/page_003.png"
+      ],
+      "core_concept": "PDCAの段階名と、それぞれの目的を照合する。",
+      "required_knowledge": "Plan/Do/Check/Act、目標と評価、改善のフィードバック。",
+      "solution": "計画を定めるPlanと実施するDoは正しい。Cは結果を監視・評価するCheck、Aは改善するActである。変更や達成などの一般語が意味として近くても、PDCAの指定された段階名への置換にはならない。正正誤誤の候補2を選ぶ。",
+      "answer_reason": "計画を定めるPlanと実施するDoは正しい。Cは結果を監視・評価するCheck、Aは改善するActである。変更や達成などの一般語が意味として近くても、PDCAの指定された段階名への置換にはならない。正正誤誤の候補2を選ぶ。",
+      "independent_answer": "2",
+      "independent_solution_note": "14原典画像の確認後、公式参照前の16解答を保存。PlanとDo正しい。ChangeとAdjustは誤りでCheckとAct。正正誤誤、候補2。公式照合後も初回記録は保存する。",
+      "learning_points": "変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。",
+      "theory_references": [
+        "theory:quality:pdca"
+      ],
+      "discipline_id": "basic_1_2",
+      "concept_id": "quality_pdca",
+      "cross_concepts": [],
+      "classification_reason": "原典で品質保証、品質表、抜取検査、確率分布、統計推論を照合。既存の設計・計画及び技術に関する分類を維持し、共有する概念を追加する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "数学自体は既知として扱う。品質の判断対象、組合せ表、モデル仮定を追加理解する負荷を別に評価する。"
+      },
+      "citations": [
+        "quality_iso_process"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-1-2",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "PDCAの段階名と、それぞれの目的を照合する。",
+      "summary": "PDCAの段階名と、それぞれの目的を照合する。",
+      "conditions": {
+        "判断方向": "最も適切な記述又は組合せを選ぶ",
+        "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+        "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+      },
+      "choices": {
+        "1": {
+          "value": "誤誤誤正",
+          "verdict": "不適切",
+          "reason": "PlanとDoは正しく、AchieveはActと違う。"
+        },
+        "2": {
+          "value": "誤正正正",
+          "verdict": "不適切",
+          "reason": "Planを誤、ChooseとAchieveを正としている。"
+        },
+        "3": {
+          "value": "正正正誤",
+          "verdict": "不適切",
+          "reason": "Chooseを正としている点が違い、CはCheckである。"
+        },
+        "4": {
+          "value": "正正誤誤",
+          "verdict": "適切",
+          "reason": "PlanとDoが正しく、ChooseとAchieveはCheckとActに対応しない。"
+        },
+        "5": {
+          "value": "正正誤正",
+          "verdict": "不適切",
+          "reason": "Achieveを正としている点が違い、AはActである。"
+        }
+      },
+      "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/basic/page_002.png"
+      ],
+      "core_concept": "PDCAの段階名と、それぞれの目的を照合する。",
+      "required_knowledge": "Plan/Do/Check/Act、目標と評価、改善のフィードバック。",
+      "solution": "計画を定めるPlanと実施するDoは正しい。Cは結果を監視・評価するCheck、Aは改善するActである。変更や達成などの一般語が意味として近くても、PDCAの指定された段階名への置換にはならない。正正誤誤の候補4を選ぶ。",
+      "answer_reason": "計画を定めるPlanと実施するDoは正しい。Cは結果を監視・評価するCheck、Aは改善するActである。変更や達成などの一般語が意味として近くても、PDCAの指定された段階名への置換にはならない。正正誤誤の候補4を選ぶ。",
+      "independent_answer": "4",
+      "independent_solution_note": "14原典画像の確認後、公式参照前の16解答を保存。Plan/Do正、Choose/Achieve誤。正正誤誤、候補4。公式照合後も初回記録は保存する。",
+      "learning_points": "変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。",
+      "theory_references": [
+        "theory:quality:pdca"
+      ],
+      "discipline_id": "basic_1_2",
+      "concept_id": "quality_pdca",
+      "cross_concepts": [],
+      "classification_reason": "原典で品質保証、品質表、抜取検査、確率分布、統計推論を照合。既存の設計・計画及び技術に関する分類を維持し、共有する概念を追加する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "数学自体は既知として扱う。品質の判断対象、組合せ表、モデル仮定を追加理解する負荷を別に評価する。"
+      },
+      "citations": [
+        "quality_iso_process"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-1-2",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "一様・二項・ポアソン・指数・正規の分布と、現象をモデル化する前提を比較する。",
+      "summary": "一様・二項・ポアソン・指数・正規の分布と、現象をモデル化する前提を比較する。",
+      "conditions": {
+        "判断方向": "不適切な記述を選ぶ",
+        "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+        "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+      },
+      "choices": {
+        "1": {
+          "value": "サイコロの各面は一様分布",
+          "verdict": "条件を含めて検討",
+          "reason": "公平なサイコロを前提に離散一様となる。偏ったサイコロまでは一様としない。"
+        },
+        "2": {
+          "value": "工業製品の不良個数はポアソン近似",
+          "verdict": "条件を含めて検討",
+          "reason": "多数の独立機会と小さな一定不良確率を前提に二項分布をポアソンで近似できる。共通原因の不良連発には注意する。"
+        },
+        "3": {
+          "value": "災害間隔は指数近似",
+          "verdict": "条件を含めて検討",
+          "reason": "一定率の独立発生モデルなら待ち時間は指数となる。災害全般の普遍法則ではない。"
+        },
+        "4": {
+          "value": "5年間の事故回数は正規近似",
+          "verdict": "不適切",
+          "reason": "低頻度の回数を正規へ直接対応させるのは不適切という典型比較である。ただし平均回数が大きいポアソンには正規近似が成立するので、条件なしの不可能命題にはしない。"
+        },
+        "5": {
+          "value": "5回のコインの表数は二項分布",
+          "verdict": "条件を含めて検討",
+          "reason": "独立な試行と一定の表確率なら二項となる。公平性はp=1/2にするが、二項であること自体は一定pでも成立する。"
+        }
+      },
+      "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+      "ambiguity": "原典に平均事故回数がなく、ポアソンの大平均に対する正規近似を排除できない。災害間隔や不良個数にも仮定が省略される。公式/初回4を保持し、唯一不適切の厳密な成立範囲をAstra重点査読へ残す。",
+      "evidence": [
+        "extracted/pages/R04/basic/page_002.png"
+      ],
+      "core_concept": "一様・二項・ポアソン・指数・正規の分布と、現象をモデル化する前提を比較する。",
+      "required_knowledge": "離散/連続、二項の独立試行、ポアソンの希少事象、一定率と指数待ち時間、正規近似。",
+      "solution": "初回は有限期間の事故回数の基本モデルをポアソンと読み、4を最も不適切とした。しかし原典は平均回数を指定しておらず、平均が十分大きいなら正規近似も可能である。2と3も小確率や一定率などの仮定を要する。したがって公式4を保持して典型分布の対応は説明するが、4だけがあらゆる条件で不適切という厳密な主張はしない。回数と間隔を区別し、分布名より先にモデルの前提を確認する。",
+      "answer_reason": "初回は有限期間の事故回数の基本モデルをポアソンと読み、4を最も不適切とした。しかし原典は平均回数を指定しておらず、平均が十分大きいなら正規近似も可能である。2と3も小確率や一定率などの仮定を要する。したがって公式4を保持して典型分布の対応は説明するが、4だけがあらゆる条件で不適切という厳密な主張はしない。回数と間隔を区別し、分布名より先にモデルの前提を確認する。",
+      "independent_answer": "4",
+      "independent_solution_note": "14原典画像の確認後、公式参照前の16解答を保存。想定は事故回数ポアソンと事故間隔指数、候補4。ただし正規近似は大平均で成立し得る。災害も一定率仮定が必要。原文条件だけで唯一不適切を厳密に決め難く部分確認候補。公式照合後も初回記録は保存する。",
+      "learning_points": "変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。",
+      "theory_references": [
+        "theory:quality:models",
+        "theory:quality:poisson"
+      ],
+      "discipline_id": "basic_1_1",
+      "concept_id": "quality_probability_models",
+      "cross_concepts": [],
+      "classification_reason": "原典で品質保証、品質表、抜取検査、確率分布、統計推論を照合。既存の設計・計画及び技術に関する分類を維持し、共有する概念を追加する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "数学自体は既知として扱う。品質の判断対象、組合せ表、モデル仮定を追加理解する負荷を別に評価する。"
+      },
+      "citations": [
+        "stat_nist_binomial",
+        "stat_nist_poisson",
+        "stat_nist_exponential",
+        "stat_nist_normal"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-BASIC-1-6",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "stem": "ピアソン相関の線形性、端点、独立性、決定係数、因果の関係を区別する。",
+      "summary": "ピアソン相関の線形性、端点、独立性、決定係数、因果の関係を区別する。",
+      "conditions": {
+        "判断方向": "最も適切な記述又は組合せを選ぶ",
+        "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+        "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+      },
+      "choices": {
+        "1": {
+          "value": "相関は常に-1<r<1",
+          "verdict": "不適切",
+          "reason": "完全な線形関係ではr=±1を取り得るため、厳密不等号で端点を除外できない。"
+        },
+        "2": {
+          "value": "rが0から1へ近づくほど直線関係になる",
+          "verdict": "適切",
+          "reason": "正の相関が1へ近づくほど、正傾斜の直線の周りに集まる程度が強まるという意味である。"
+        },
+        "3": {
+          "value": "r=0なら独立",
+          "verdict": "不適切",
+          "reason": "無相関は独立を含意しない。対称なXとY=X²では相関が0でもYはXに依存する。"
+        },
+        "4": {
+          "value": "決定係数は|r|",
+          "verdict": "不適切",
+          "reason": "切片あり一説明変数の最小二乗回帰ではR²=r²であり、|r|ではない。"
+        },
+        "5": {
+          "value": "相関絶対値で因果が変わる",
+          "verdict": "不適切",
+          "reason": "相関は線形関連の強さを表し、共通原因などの交絡があるため、因果の有無や方向を決めない。"
+        }
+      },
+      "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/basic/page_004.png"
+      ],
+      "core_concept": "ピアソン相関の線形性、端点、独立性、決定係数、因果の関係を区別する。",
+      "required_knowledge": "共分散、Cauchy–Schwarz、無相関と独立、切片あり単回帰、交絡。",
+      "solution": "相関係数は有限な非零分散の変数について \\(\\rho=\\mathrm{Cov}(X,Y)/(\\sigma_X\\sigma_Y)\\) と定義され、端点を含む[-1,1]にある。2は正の線形関連が強まるという典型的な説明である。無相関の反例として \\(X\\) を[-1,1]の対称一様、\\(Y=X^2\\) とすれば、\\(\\mathrm{Cov}(X,Y)=E[X^3]=0\\) でもYはXに完全に依存する。決定係数は切片あり単回帰ならr²である。相関の大小から因果関係を結論しない。",
+      "answer_reason": "相関係数は有限な非零分散の変数について \\(\\rho=\\mathrm{Cov}(X,Y)/(\\sigma_X\\sigma_Y)\\) と定義され、端点を含む[-1,1]にある。2は正の線形関連が強まるという典型的な説明である。無相関の反例として \\(X\\) を[-1,1]の対称一様、\\(Y=X^2\\) とすれば、\\(\\mathrm{Cov}(X,Y)=E[X^3]=0\\) でもYはXに完全に依存する。決定係数は切片あり単回帰ならr²である。相関の大小から因果関係を結論しない。",
+      "independent_answer": "2",
+      "independent_solution_note": "14原典画像の確認後、公式参照前の16解答を保存。相関係数は端点±1を含む。0から+1へ直線的関係が強まる候補2。無相関は独立を含意せず、切片あり単回帰R^2=r^2、因果も決まらない。2は「なる」の精度条件を限定する。公式照合後も初回記録は保存する。",
+      "learning_points": "変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。",
+      "theory_references": [
+        "theory:quality:correlation",
+        "theory:quality:regression"
+      ],
+      "discipline_id": "basic_1_9",
+      "concept_id": "quality_correlation_regression",
+      "cross_concepts": [],
+      "classification_reason": "原典で品質保証、品質表、抜取検査、確率分布、統計推論を照合。既存の設計・計画及び技術に関する分類を維持し、共有する概念を追加する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "数学自体は既知として扱う。品質の判断対象、組合せ表、モデル仮定を追加理解する負荷を別に評価する。"
+      },
+      "citations": [
+        "stat_psu_correlation"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-1-6",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "仮説検定の二種類の誤り、t統計量の自由度、信頼区間の意味を比較する。",
+      "summary": "仮説検定の二種類の誤り、t統計量の自由度、信頼区間の意味を比較する。",
+      "conditions": {
+        "判断方向": "最も適切な記述又は組合せを選ぶ",
+        "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+        "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+      },
+      "choices": {
+        "1": {
+          "value": "成立を期待する帰無仮説から始める",
+          "verdict": "不適切",
+          "reason": "帰無仮説は基準となる命題であり、必ずそれが成立することを期待して設定するわけではない。棄却されないことも真の証明ではない。"
+        },
+        "2": {
+          "value": "有意水準は一般に30%",
+          "verdict": "不適切",
+          "reason": "有意水準は事前に定める。典型例は5%などであり30%を一般的とする記述は違う。"
+        },
+        "3": {
+          "value": "真H0棄却は第1種、偽H0不棄却は第2種",
+          "verdict": "適切",
+          "reason": "誤りの定義に合う。第2種の確率は対立仮説下の値に依存し、1-αと同じではない。"
+        },
+        "4": {
+          "value": "母分散未知の平均検定は自由度nのt",
+          "verdict": "不適切",
+          "reason": "独立正規標本の通常の一標本t検定では平均の推定に一自由度を使い、自由度はn-1である。"
+        },
+        "5": {
+          "value": "信頼度は危険率の逆数",
+          "verdict": "不適切",
+          "reason": "信頼係数は1-αであり1/αではない。固定された一つの区間に固定母数が入る確率という事後解釈にも注意する。"
+        }
+      },
+      "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/basic/page_004.png"
+      ],
+      "core_concept": "仮説検定の二種類の誤り、t統計量の自由度、信頼区間の意味を比較する。",
+      "required_knowledge": "H0と対立、第1種/第2種、有意水準、独立正規標本とt、頻度論的被覆。",
+      "solution": "帰無仮説が真なのに棄却する誤りを第1種、偽なのに棄却しない誤りを第2種と呼ぶ3が正しい。独立正規標本で母分散が未知なら \\(T=(\\bar X-\\mu_0)/(s/\\sqrt n)\\) はH0下で自由度n-1のt分布である。信頼係数1-αは同じ手順を反復したときに区間が母数を覆う割合であり、危険率の逆数ではない。観測後の固定された区間に対する確率と、観測前のランダムな区間の被覆率を区別する。",
+      "answer_reason": "帰無仮説が真なのに棄却する誤りを第1種、偽なのに棄却しない誤りを第2種と呼ぶ3が正しい。独立正規標本で母分散が未知なら \\(T=(\\bar X-\\mu_0)/(s/\\sqrt n)\\) はH0下で自由度n-1のt分布である。信頼係数1-αは同じ手順を反復したときに区間が母数を覆う割合であり、危険率の逆数ではない。観測後の固定された区間に対する確率と、観測前のランダムな区間の被覆率を区別する。",
+      "independent_answer": "3",
+      "independent_solution_note": "14原典画像の確認後、公式参照前の16解答を保存。第1種は真H0の棄却、第2種は偽H0不棄却、候補3。有意水準30%標準は誤り。正規母集団未知分散のtはn-1自由度、信頼度1-alphaで逆数ではない。帰無仮説成立を期待とは限らない。公式照合後も初回記録は保存する。",
+      "learning_points": "変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。",
+      "theory_references": [
+        "theory:quality:hypothesis",
+        "theory:quality:t_interval"
+      ],
+      "discipline_id": "basic_1_1",
+      "concept_id": "quality_hypothesis_inference",
+      "cross_concepts": [],
+      "classification_reason": "原典で品質保証、品質表、抜取検査、確率分布、統計推論を照合。既存の設計・計画及び技術に関する分類を維持し、共有する概念を追加する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "数学自体は既知として扱う。品質の判断対象、組合せ表、モデル仮定を追加理解する負荷を別に評価する。"
+      },
+      "citations": [
+        "stat_nist_interval",
+        "quality_nist_sampling"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

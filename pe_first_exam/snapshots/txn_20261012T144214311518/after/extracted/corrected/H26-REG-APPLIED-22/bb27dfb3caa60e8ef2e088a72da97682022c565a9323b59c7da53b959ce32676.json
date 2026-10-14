@@ -1,0 +1,45 @@
+{
+  "stem": "Archie・電磁結合・CSAMT近接場・VLF・TEMを比較する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "遠方条件の指標は送受信距離/δであり、同一周波数では高比抵抗ほどδが増す。"
+  },
+  "choices": {
+    "1": {
+      "value": "Archieは孔隙水だけの電流を仮定する",
+      "verdict": "条件付きで適切",
+      "reason": "絶縁性骨格・表面伝導が無視できる孔隙ネットワークを想定する。低抵抗流体はその条件を満たしやすいが、有効孔隙率が大きければ十分とは限らない。"
+    },
+    "2": {
+      "value": "電磁カップリングがIP誤差になる",
+      "verdict": "適切",
+      "reason": "送受信ケーブル間の誘導応答は分極による位相・減衰応答と重なり誤差へ寄与する。"
+    },
+    "3": {
+      "value": "CSAMT近接場は低比抵抗で生じやすい",
+      "verdict": "不適切",
+      "reason": "δは√ρに比例するため同一条件では高比抵抗の方が有限距離による近接場になりやすい。"
+    },
+    "4": {
+      "value": "VLFは3〜30kHz、VLF-EMとVLF-MT",
+      "verdict": "適切",
+      "reason": "磁場変化を測る方式と電場磁場比を用いる方式を区別する周波数帯・分類である。"
+    },
+    "5": {
+      "value": "TEMは時間応答、一次磁場なしで測りstatic shiftが生じにくい",
+      "verdict": "条件付きで適切",
+      "reason": "送信遮断後の二次応答を観測し、MT電場の局所歪みとは異なる。turn-off過程・送信器残留応答などは別途扱い、生じにくいを完全ゼロへ強めない。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "Archieの骨格・表面伝導条件、TEM一次場遮断の過渡とstatic shiftの比較を留保。生じにくいという原典限定を保持。",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_009.png"
+  ],
+  "question_id": "H26-REG-APPLIED-22",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "3154e464c9d6f92771e4933d4a810f16ffc0a0f6161441aaf0ba1b4621bab288",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

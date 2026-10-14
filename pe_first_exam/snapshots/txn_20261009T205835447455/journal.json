@@ -1,0 +1,40 @@
+{
+  "status": "committed",
+  "time": "2026-10-09T20:58:35+09:00",
+  "paths": [
+    "data/batch_changes/S7_007_thermodynamics_revision1_H29-REG-APPLIED-06_revision.json",
+    "extracted/corrected/H29-REG-APPLIED-06/86c2cd71f574a3f8ee44cbd1aedf6b66df03e84926e29bbe972f2d4bb48e1f03.json",
+    "data/batch_changes/S7_007_thermodynamics_revision1_R06-REG-APPLIED-06_revision.json",
+    "extracted/corrected/R06-REG-APPLIED-06/95138f2d384d0a3ae2d369a9daa84a6a1ac5f868c8d53d76a6361238cb59b6e6.json",
+    "data/questions.csv",
+    "data/verification_records.csv",
+    "data/question_topics.csv",
+    "data/question_evaluations.csv",
+    "data/batch_changes/S7_007_thermodynamics_revision1.csv",
+    "extracted/logs/batches/S7_007_thermodynamics_revision1.json"
+  ],
+  "existed": {
+    "data/batch_changes/S7_007_thermodynamics_revision1_H29-REG-APPLIED-06_revision.json": false,
+    "extracted/corrected/H29-REG-APPLIED-06/86c2cd71f574a3f8ee44cbd1aedf6b66df03e84926e29bbe972f2d4bb48e1f03.json": false,
+    "data/batch_changes/S7_007_thermodynamics_revision1_R06-REG-APPLIED-06_revision.json": false,
+    "extracted/corrected/R06-REG-APPLIED-06/95138f2d384d0a3ae2d369a9daa84a6a1ac5f868c8d53d76a6361238cb59b6e6.json": false,
+    "data/questions.csv": true,
+    "data/verification_records.csv": true,
+    "data/question_topics.csv": true,
+    "data/question_evaluations.csv": true,
+    "data/batch_changes/S7_007_thermodynamics_revision1.csv": false,
+    "extracted/logs/batches/S7_007_thermodynamics_revision1.json": false
+  },
+  "sha256": {
+    "data/batch_changes/S7_007_thermodynamics_revision1_H29-REG-APPLIED-06_revision.json": "84fe162e9f1c5c7ec494b5087a5c909cc58f69a87a798b597aa7fdf42521a592",
+    "extracted/corrected/H29-REG-APPLIED-06/86c2cd71f574a3f8ee44cbd1aedf6b66df03e84926e29bbe972f2d4bb48e1f03.json": "86c2cd71f574a3f8ee44cbd1aedf6b66df03e84926e29bbe972f2d4bb48e1f03",
+    "data/batch_changes/S7_007_thermodynamics_revision1_R06-REG-APPLIED-06_revision.json": "27d74944731fa32845d696e75c56212d6a653d93264275dac0e4248d749b52b2",
+    "extracted/corrected/R06-REG-APPLIED-06/95138f2d384d0a3ae2d369a9daa84a6a1ac5f868c8d53d76a6361238cb59b6e6.json": "95138f2d384d0a3ae2d369a9daa84a6a1ac5f868c8d53d76a6361238cb59b6e6",
+    "data/questions.csv": "419f3027b9a2cba9373764912817435a9fcba731c2a833f644638b58f911d249",
+    "data/verification_records.csv": "ad190f5ad480f90cd3fe96c844999e1d566027e345661846dd00c9cca6a902dd",
+    "data/question_topics.csv": "aa7dba0d7e4f7babfca6a1f02dd32b6ec5353c37d3059cda7f63e484b3179189",
+    "data/question_evaluations.csv": "c8e524b9c65fac780f31bd3df26b1193474fff07f4bc087acd961f2729b29ba4",
+    "data/batch_changes/S7_007_thermodynamics_revision1.csv": "9c45f6cbda9d5f627b31224389eac4b03a04f575da9fc45ddf4540e21c63b74e",
+    "extracted/logs/batches/S7_007_thermodynamics_revision1.json": "275700e1aac4d3b49fe190d3c87a3931021b9ab8ec9847721c8d7fc77143f14c"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "committed",
+  "time": "2026-10-14T21:33:19+09:00",
+  "paths": [
+    "data/checkpoint2_review_queue.csv",
+    "extracted/logs/checkpoint2_draft_audit.json"
+  ],
+  "existed": {
+    "data/checkpoint2_review_queue.csv": false,
+    "extracted/logs/checkpoint2_draft_audit.json": false
+  },
+  "sha256": {
+    "data/checkpoint2_review_queue.csv": "84f95aea9062998eab9b518eeaded6eabe68cad1cbd2f780b617bbcada49b6fc",
+    "extracted/logs/checkpoint2_draft_audit.json": "813d3c6d867c64b044670a8bbf2ae914d248f91503eb01a8a63ad5d8e73a2a90"
+  }
+}

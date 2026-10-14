@@ -1,0 +1,44 @@
+{
+  "stem": "季節・緯度収支、太陽放射の主帯域、反射率、太陽定数の定義を比較する。",
+  "conditions": {
+    "方向": "最も適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "地球太陽距離の変化が四季の原因。",
+      "verdict": "不適切",
+      "reason": "地軸の傾きで太陽高度と日長が変わることが主因であり、南北半球の季節は逆になる。"
+    },
+    "2": {
+      "value": "吸収日射の緯度差は小さく、高緯度の放出が低緯度より大きい。",
+      "verdict": "不適切",
+      "reason": "低緯度の日射吸収は大きく、正味収支の緯度差を大気・海洋の熱輸送が補う。"
+    },
+    "3": {
+      "value": "太陽放射の約半分は可視光線。",
+      "verdict": "最適",
+      "reason": "太陽光スペクトルの主な一部が可視であるという概数と合う。残りは主に赤外と一部紫外。"
+    },
+    "4": {
+      "value": "入射の約15%が反射散乱され宇宙へ戻る。",
+      "verdict": "不適切",
+      "reason": "全球反射は約3割の代表値であり、15%は小さすぎる。"
+    },
+    "5": {
+      "value": "大気下端の太陽垂直面の受光を太陽定数という。",
+      "verdict": "不適切",
+      "reason": "大気の吸収散乱の影響を除いた大気上端で、太陽光に垂直な単位面積あたりの放射束で定義する。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_007.png"
+  ],
+  "question_id": "R01-REG-APPLIED-22",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "967ffe854439eef44aaa3b26af53abca501c045a827bc5d7f5161540eb4492b3",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

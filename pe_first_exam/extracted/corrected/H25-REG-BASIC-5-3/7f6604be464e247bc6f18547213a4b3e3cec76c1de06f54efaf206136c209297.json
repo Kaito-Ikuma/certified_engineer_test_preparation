@@ -1,0 +1,45 @@
+{
+  "stem": "気候緩和と適応、LCAの境界。",
+  "conditions": {
+    "時点": "平成25年度に指定された資料・制度。",
+    "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "環境基準は維持が望ましい",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "CDMは京都の認証削減",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "CFPは全過程CO2換算",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "適応は排出削減で原因抑制",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "5": {
+      "value": "LCAは資源から廃棄まで評価",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "CDMとCFPの出題当時規則全文は未取得。定義の独立判断と条文・規格の確定は分ける。",
+  "evidence": [
+    "extracted/pages/H25/basic/page_020.png"
+  ],
+  "question_id": "H25-REG-BASIC-5-3",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "20",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "5ab70cb04f366c5631466fa1d9f8bf7c81937588b23d3d7f581e6de4c702baee",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

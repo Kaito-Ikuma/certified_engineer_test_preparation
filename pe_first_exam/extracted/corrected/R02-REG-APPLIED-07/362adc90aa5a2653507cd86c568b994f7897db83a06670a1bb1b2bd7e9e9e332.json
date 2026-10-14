@@ -1,0 +1,45 @@
+{
+  "stem": "赤外・可視・紫外・γ線の4領域を光子エネルギーの大きい順に並べる。",
+  "conditions": {
+    "方向": "光子エネルギーの大きい順。",
+    "対象": "4つの電磁波領域。光子エネルギーを波の総エネルギーと区別。"
+  },
+  "choices": {
+    "1": {
+      "value": "赤外線→可視光線→紫外線→γ線",
+      "verdict": "不適切",
+      "reason": "指定した順序はγ→紫外→可視→赤外であり、この候補は少なくとも隣接2領域の大小関係が逆又は途中に不適切な領域を挟む。"
+    },
+    "2": {
+      "value": "紫外線→可視光線→赤外線→γ線",
+      "verdict": "不適切",
+      "reason": "指定した順序はγ→紫外→可視→赤外であり、この候補は少なくとも隣接2領域の大小関係が逆又は途中に不適切な領域を挟む。"
+    },
+    "3": {
+      "value": "赤外線→γ線→紫外線→可視光線",
+      "verdict": "不適切",
+      "reason": "指定した順序はγ→紫外→可視→赤外であり、この候補は少なくとも隣接2領域の大小関係が逆又は途中に不適切な領域を挟む。"
+    },
+    "4": {
+      "value": "γ線→紫外線→可視光線→赤外線",
+      "verdict": "最適",
+      "reason": "指定した順序はγ→紫外→可視→赤外であり、この候補は整合する。"
+    },
+    "5": {
+      "value": "γ線→赤外線→紫外線→可視光線",
+      "verdict": "不適切",
+      "reason": "指定した順序はγ→紫外→可視→赤外であり、この候補は少なくとも隣接2領域の大小関係が逆又は途中に不適切な領域を挟む。"
+    }
+  },
+  "figures": "原典の条件・数式・単位・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_003.png"
+  ],
+  "question_id": "R02-REG-APPLIED-07",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "9c63f3f05c8aaaa067028cef1a1c568efe75529f1c2de79db826ef566a80b7c2",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

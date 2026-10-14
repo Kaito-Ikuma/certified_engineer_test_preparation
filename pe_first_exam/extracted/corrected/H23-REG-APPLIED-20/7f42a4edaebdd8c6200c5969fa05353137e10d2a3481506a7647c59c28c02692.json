@@ -1,0 +1,44 @@
+{
+  "stem": "大気中水蒸気の全球平均滞留時間に最も近い日数を選ぶ。",
+  "conditions": {
+    "方向": "最も適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "200日",
+      "verdict": "不適切",
+      "reason": "代表的な約10日に対し約20倍で長すぎる。"
+    },
+    "2": {
+      "value": "120日",
+      "verdict": "不適切",
+      "reason": "約10日の一桁日数とは整合しない。"
+    },
+    "3": {
+      "value": "50日",
+      "verdict": "不適切",
+      "reason": "大気の小さい貯留量と大きい降水流量の比より長すぎる。"
+    },
+    "4": {
+      "value": "10日",
+      "verdict": "最適",
+      "reason": "全球水量を出入りする水量率で割った約8〜11日の代表範囲に最近。"
+    },
+    "5": {
+      "value": "36時間",
+      "verdict": "不適切",
+      "reason": "約1.5日で代表的な全球交換時間より短い。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_007.png"
+  ],
+  "question_id": "H23-REG-APPLIED-20",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "3474e6fe8f4e3301a61acf2b34deec059dbfc2102d8914a69eff3a2b4d86a691",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

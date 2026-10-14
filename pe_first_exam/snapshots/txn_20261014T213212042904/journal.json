@@ -1,0 +1,16 @@
+{
+  "status": "committed",
+  "time": "2026-10-14T21:32:12+09:00",
+  "paths": [
+    "data/topic_statistics.csv",
+    "data/concept_statistics.csv"
+  ],
+  "existed": {
+    "data/topic_statistics.csv": true,
+    "data/concept_statistics.csv": true
+  },
+  "sha256": {
+    "data/topic_statistics.csv": "5d96ef1fd33d9913ac346f430ef43f43364d58046bc3d51b6304ffb5330f99ae",
+    "data/concept_statistics.csv": "0edad063eecca5224b559b3e3080be11f7f2c1b3854a068f911ba34d691e981a"
+  }
+}

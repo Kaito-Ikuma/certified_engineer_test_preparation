@@ -1,0 +1,45 @@
+{
+  "stem": "倫理綱領に沿う技術者の行動について、最も不適切な記述を選ぶ。",
+  "conditions": {
+    "方向": "最も不適切な記述。",
+    "対象": "公衆、雇用者、顧客への責任を持つ技術専門職。"
+  },
+  "choices": {
+    "1": {
+      "value": "誠実な対応で専門職の品位・信頼を高める。",
+      "verdict": "適切",
+      "reason": "専門職の信用は、能力とともに誠実な履行によって支えられる。"
+    },
+    "2": {
+      "value": "不当な対価を直接にも間接にも与えず、求めず、受け取らない。",
+      "verdict": "適切",
+      "reason": "不当な利益の授受は判断の公正さを損なう。直接・間接を問わないという趣旨は妥当である。"
+    },
+    "3": {
+      "value": "公衆の安全・健康・福祉又は環境へ害の可能性があれば、即時・無条件に情報を公開する。",
+      "verdict": "不適切",
+      "reason": "危険の確認、被害の緊急性、適切な通報先、秘密・個人情報の扱いを検討せず、あらゆる情報を無条件で公表することは適切でない。"
+    },
+    "4": {
+      "value": "人種、性、年齢、地位、所属、思想・宗教等によって差別せず、人権と人格を尊重する。",
+      "verdict": "適切",
+      "reason": "人格尊重と公平な取扱いは倫理的な協業の基礎である。"
+    },
+    "5": {
+      "value": "専門知識と経験を生かして、次世代の技術者・研究者を育てる。",
+      "verdict": "適切",
+      "reason": "専門職の知識継承と人材育成に沿う。"
+    }
+  },
+  "figures": "原典画像で問題幹、条件、正誤の向き、全5肢、組合せ表の全セルを確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/aptitude/page_001.png"
+  ],
+  "question_id": "H24-REG-APT-02",
+  "source_file": "sources/H24/aptitude.pdf",
+  "source_page": "1",
+  "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+  "raw_text_sha256": "67c916dd1524be8bcc544201d18da647be3e8cef82e76fbde6df3df9ee8c1f87",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

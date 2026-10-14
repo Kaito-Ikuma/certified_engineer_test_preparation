@@ -1,0 +1,45 @@
+{
+  "stem": "分子光吸収の選択則とレチナールの光異性化を判断する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "分子光吸収の選択則とレチナールの光異性化を判断する。"
+  },
+  "choices": {
+    "1": {
+      "value": "温室効果の振動吸収を可視とする",
+      "verdict": "不適切",
+      "reason": "水蒸気・CO2の代表的な温室効果は熱赤外の振動・回転吸収に関係する。"
+    },
+    "2": {
+      "value": "IRは分極率だけで双極子変化なら起こらない",
+      "verdict": "不適切",
+      "reason": "IR活性には振動による双極子変化、Raman活性には分極率変化が関係する。"
+    },
+    "3": {
+      "value": "cisレチナールの光異性化が視覚へ関与",
+      "verdict": "通常の条件で適切",
+      "reason": "11cisレチナールが光子を吸収して異性化し視物質の応答を引き起こす。"
+    },
+    "4": {
+      "value": "系間交差後の発光を蛍光",
+      "verdict": "不適切",
+      "reason": "通常の三重項を経る発光はりん光の説明。"
+    },
+    "5": {
+      "value": "選択則があるので衝突・運動で線幅不変",
+      "verdict": "不適切",
+      "reason": "Doppler幅・衝突幅があり、選択則と線幅の機構は異なる。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_004.png"
+  ],
+  "question_id": "R02-REG-APPLIED-12",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "e3b5cd5a7755bab739bffbd3702fb077bcb671a06a98288af70f18e8a4d4fd99",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

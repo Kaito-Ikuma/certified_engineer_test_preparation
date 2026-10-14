@@ -1,0 +1,59 @@
+{
+  "stem": "第4章の5空欄へ入る語を選ぶ。",
+  "conditions": {
+    "空欄順": [
+      "ア",
+      "イ",
+      "ウ",
+      "エ",
+      "オ"
+    ],
+    "正しい語句の照合": {
+      "ア": "禁止",
+      "イ": "義務",
+      "ウ": "公益",
+      "エ": "責務",
+      "オ": "制限"
+    },
+    "出題時資料": ""
+  },
+  "choices": {
+    "1": {
+      "value": "制限／責務／利益／義務／制約",
+      "verdict": "不適切な解答候補",
+      "reason": "5語すべてが見出し・条文と異なる。"
+    },
+    "2": {
+      "value": "禁止／義務／公益／責務／制限",
+      "verdict": "適切な解答候補",
+      "reason": "信用失墜の禁止、秘密保持の義務、公益確保の責務、業務の制限に一致する。"
+    },
+    "3": {
+      "value": "禁止／義務／利益／責務／制約",
+      "verdict": "不適切な解答候補",
+      "reason": "ウは公益、オは制限である。"
+    },
+    "4": {
+      "value": "禁止／責務／利益／義務／制限",
+      "verdict": "不適切な解答候補",
+      "reason": "イ・ウ・エが異なる。"
+    },
+    "5": {
+      "value": "制限／責務／公益／義務／制約",
+      "verdict": "不適切な解答候補",
+      "reason": "ア・イ・エ・オが異なる。"
+    }
+  },
+  "figures": "図なし。組合せ表または個数選択肢は原典画像で確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/aptitude/page_001.png",
+    "extracted/pages/H30/aptitude/page_002.png"
+  ],
+  "question_id": "H30-REG-APT-01",
+  "source_file": "sources/H30/aptitude.pdf",
+  "source_page": "1",
+  "source_sha256": "9b92cd3549fc1ad21636a544978f1385f63667ff6ac0112f81e553cf2ee4b1f5",
+  "raw_text_sha256": "6ecd89b940ca96dcda4ce8532852cc67ac20f5f9774273ef609f0ac773303464",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

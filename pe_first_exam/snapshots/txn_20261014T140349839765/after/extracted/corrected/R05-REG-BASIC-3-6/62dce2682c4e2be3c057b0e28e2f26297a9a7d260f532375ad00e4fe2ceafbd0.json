@@ -1,0 +1,47 @@
+{
+  "stem": "対称性と節点方程式で抵抗網を比較。",
+  "conditions": {
+    "配線": "a2×3節点梯子、b3×3節点格子、c菱形5辺",
+    "端子": "原典で示す対角頂点A,B。",
+    "各辺": "長さL、同材料・同断面。交点の接続を原典で確認。"
+  },
+  "choices": {
+    "1": {
+      "value": "Ra<Rb<Rc",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Rc<Ra<Rb と異なる。"
+    },
+    "2": {
+      "value": "Ra<Rc<Rb",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Rc<Ra<Rb と異なる。"
+    },
+    "3": {
+      "value": "Rc<Ra<Rb",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "Rc<Rb<Ra",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Rc<Ra<Rb と異なる。"
+    },
+    "5": {
+      "value": "Rb<Ra<Rc",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Rc<Ra<Rb と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_012.png",
+    "extracted/pages/R05/basic/page_013.png"
+  ],
+  "question_id": "R05-REG-BASIC-3-6",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "12",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "62b24bc4968197f7cf74361c7fdede38e4cbf9b2563d425a483ddfcdd36c9656",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

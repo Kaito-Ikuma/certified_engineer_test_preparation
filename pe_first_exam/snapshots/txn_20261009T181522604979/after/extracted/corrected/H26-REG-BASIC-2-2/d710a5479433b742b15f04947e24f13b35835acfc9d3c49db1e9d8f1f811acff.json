@@ -1,0 +1,47 @@
+{
+  "stem": "ユークリッド互除法の流れ図で、継続・終了条件と出力変数を選ぶ。",
+  "conditions": {
+    "入力": "A,Bは正の自然数。",
+    "反復": "R←AをBで割った余り。非零ならA←B、B←Rとして反復。",
+    "空欄": "アは出力への横分岐、イはA←B、B←Rへの下分岐。",
+    "候補順": "ア／イ／ウ"
+  },
+  "choices": {
+    "1": {
+      "value": "R=0／R≠0／A",
+      "verdict": "条件に一致しない候補",
+      "reason": "終了時の最大公約数はBであり、Aではない。AはBの倍数で、Rは0である。"
+    },
+    "2": {
+      "value": "R=0／R≠0／B",
+      "verdict": "条件に一致する候補",
+      "reason": "非零で更新、零で終了しBを出力する正しい対応である。"
+    },
+    "3": {
+      "value": "R=0／R≠0／R",
+      "verdict": "条件に一致しない候補",
+      "reason": "終了時の最大公約数はBであり、Rではない。AはBの倍数で、Rは0である。"
+    },
+    "4": {
+      "value": "R≠0／R=0／A",
+      "verdict": "条件に一致しない候補",
+      "reason": "分岐が逆で、余り0で更新しB=0を作るか、非零の余りで途中終了する。終了時の最大公約数はBであり、Aではない。AはBの倍数で、Rは0である。"
+    },
+    "5": {
+      "value": "R≠0／R=0／B",
+      "verdict": "条件に一致しない候補",
+      "reason": "分岐が逆で、余り0で更新しB=0を作るか、非零の余りで途中終了する。"
+    }
+  },
+  "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/basic/page_006.png"
+  ],
+  "question_id": "H26-REG-BASIC-2-2",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "f9709423d54ee1afd9e8d83d9871bb95b4cf03d9329a5acacc7e40f5ea2787de",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

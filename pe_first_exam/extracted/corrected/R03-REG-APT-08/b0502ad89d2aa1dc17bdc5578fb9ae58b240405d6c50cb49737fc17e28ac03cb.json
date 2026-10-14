@@ -1,0 +1,46 @@
+{
+  "stem": "付合・組込みソフト・再生品・修理の4記述を正誤表で判定する。",
+  "conditions": {
+    "原典条件": "問題幹、否定、ア等の記号順、5選択肢と個数又は表の全行を原典16画像で確認した。",
+    "論理条件": "列順ア・イ・ウ・エ。修理された元の製品の対象性とは区別する。",
+    "法の時点": "出題時の制度を保持。現行取得基準日は2026-10-12。2020年施行の期間変更を別記する。"
+  },
+  "choices": {
+    "1": {
+      "value": "正・誤・正・正",
+      "verdict": "組合せが不一致",
+      "reason": "各記述の判定はTTFTである。原典の列順で[2, 3]列目が異なる。"
+    },
+    "2": {
+      "value": "誤・正・正・誤",
+      "verdict": "組合せが不一致",
+      "reason": "各記述の判定はTTFTである。原典の列順で[1, 3, 4]列目が異なる。"
+    },
+    "3": {
+      "value": "正・正・誤・正",
+      "verdict": "適切な組合せ",
+      "reason": "各記述の判定はTTFTである。全ての列が一致する。"
+    },
+    "4": {
+      "value": "正・誤・正・誤",
+      "verdict": "組合せが不一致",
+      "reason": "各記述の判定はTTFTである。原典の列順で[2, 3, 4]列目が異なる。"
+    },
+    "5": {
+      "value": "誤・正・誤・正",
+      "verdict": "組合せが不一致",
+      "reason": "各記述の判定はTTFTである。原典の列順で[1]列目が異なる。"
+    }
+  },
+  "figures": "文字表又は記述問題であり図なし。組合せの各行は原典画像の列順を保持する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/aptitude/page_008.png"
+  ],
+  "question_id": "R03-REG-APT-08",
+  "source_file": "sources/R03/aptitude.pdf",
+  "source_page": "8",
+  "source_sha256": "73f1426490c272bb33312654f07964404c16a78e9b0ff238c54eca8178d939df",
+  "raw_text_sha256": "6f27f0c70c8709fdfd9391e28dae100c3966296e2e6462452693fac29d4933ba",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

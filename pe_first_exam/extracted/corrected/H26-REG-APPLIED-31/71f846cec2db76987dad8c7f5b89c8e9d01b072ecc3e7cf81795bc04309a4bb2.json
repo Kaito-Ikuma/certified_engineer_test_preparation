@@ -1,0 +1,46 @@
+{
+  "stem": "2万年前の貝化石に対し、試料成分と時計の時間範囲に適合する測定法を選ぶ。",
+  "conditions": {
+    "試料": "2万年前の貝化石。海生か淡水生かは原典に指定なし。",
+    "選択": "K-Ar、Rb-Sr、U-Pb、14C、フィッション・トラックの5法。",
+    "方向": "最も適切なもの。"
+  },
+  "choices": {
+    "1": {
+      "value": "K-Ar法",
+      "verdict": "本試料では選ばない",
+      "reason": "Kを含む鉱物等の40Kから生成した40Arを測る。2万年前の貝殻炭酸塩の生物由来炭素を直接測る方法としては選ばない。若い火山岩の測定まで絶対不可能という意味ではない。"
+    },
+    "2": {
+      "value": "Rb-Sr法",
+      "verdict": "本試料では選ばない",
+      "reason": "Rbを含む鉱物・岩石の87Rb→87Srを用い初生Srと閉鎖条件を検討する。提示の若い貝殻へは14Cほど直接的でない。"
+    },
+    "3": {
+      "value": "U-Pb法",
+      "verdict": "本試料では選ばない",
+      "reason": "ジルコン等のUを取り込む鉱物のU→Pb系列に適する。炭酸塩のU系列法一般とU-Pb法を混同せず、提示5法では14Cを選ぶ。"
+    },
+    "4": {
+      "value": "14C法",
+      "verdict": "最も適切（補正は別）",
+      "reason": "生存中取り込まれた14Cが炭素交換停止後に減ることを使う。物理半減期5730年なら2万年後の残存率は約0.089であり測定時間範囲内である。海洋リザーバー・混入・再結晶・暦年校準を別途検討する。"
+    },
+    "5": {
+      "value": "フィッション・トラック法",
+      "verdict": "本試料では選ばない",
+      "reason": "Uの自発核分裂による鉱物中の飛跡を用い、加熱で飛跡が消えるため熱履歴に依存する。若い貝殻の炭素を直接測る方法ではない。"
+    }
+  },
+  "figures": "問題幹・5肢・否定・質量数・δ記号・標準名称・年度番号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_013.png"
+  ],
+  "question_id": "H26-REG-APPLIED-31",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "13",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "fd679ac32d114bc48b6d16fad4bd0dececda8020eaba51de825a4784913a9cbe",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

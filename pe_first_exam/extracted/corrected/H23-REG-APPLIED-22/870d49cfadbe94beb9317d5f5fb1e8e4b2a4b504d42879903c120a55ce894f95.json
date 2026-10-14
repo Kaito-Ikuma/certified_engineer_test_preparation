@@ -1,0 +1,45 @@
+{
+  "stem": "提示された陸上の水貯留の中で最大のものを選ぶ。",
+  "conditions": {
+    "方向": "最も貯留量が大きいもの。",
+    "対象": "湖沼・河川・湿地・地下・土壌の5貯留。"
+  },
+  "choices": {
+    "1": {
+      "value": "湖沼水",
+      "verdict": "最大でない",
+      "reason": "USGS表の全湖沼は約17.6万km3で、地下水より小さい。"
+    },
+    "2": {
+      "value": "河川水",
+      "verdict": "最大でない",
+      "reason": "河川の瞬時貯留は約2120km3である。大きい年間輸送量と区別する。"
+    },
+    "3": {
+      "value": "湿地の水",
+      "verdict": "最大でない",
+      "reason": "湿地の貯留は約11470km3で地下水より小さい。"
+    },
+    "4": {
+      "value": "地下水",
+      "verdict": "最大",
+      "reason": "全地下水約2340万km3、淡水地下水だけでも約1053万km3で提示中最大。"
+    },
+    "5": {
+      "value": "土壌水",
+      "verdict": "最大でない",
+      "reason": "土壌水約16500km3は地下水より小さい。"
+    }
+  },
+  "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_007.png"
+  ],
+  "question_id": "H23-REG-APPLIED-22",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "3310b86940f59436e53c66d133563529d4a48c9a694552ddd5a96cfdd66373ec",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

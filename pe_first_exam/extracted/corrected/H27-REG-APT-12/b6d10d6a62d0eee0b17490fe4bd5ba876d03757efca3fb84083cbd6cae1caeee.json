@@ -1,0 +1,45 @@
+{
+  "stem": "学術論文等の引用について適切な説明を選ぶ。",
+  "conditions": {
+    "時点": "平成27年。",
+    "方向": "最も適切なもの。"
+  },
+  "choices": {
+    "1": {
+      "value": "承諾のない引用は全て著作権侵害である。",
+      "verdict": "設問条件に不一致",
+      "reason": "著作権法32条の要件を満たす引用という権利制限がある。"
+    },
+    "2": {
+      "value": "適法な引用の条件を満たせば、承諾なしに引用できる。",
+      "verdict": "設問条件に一致",
+      "reason": "公表、公正な慣行、目的上正当な範囲などを満たす場合が対象で、出所も明示する。"
+    },
+    "3": {
+      "value": "公表済みの著作物は自由に複製できる。",
+      "verdict": "設問条件に不一致",
+      "reason": "公表と権利放棄は別であり、一般に無制限の複製を許さない。"
+    },
+    "4": {
+      "value": "引用は学術研究目的だけに限られる。",
+      "verdict": "設問条件に不一致",
+      "reason": "報道・批評・研究その他の引用目的で、研究だけとの限定は誤り。"
+    },
+    "5": {
+      "value": "外国語の著作物は原語のままでしか引用できない。",
+      "verdict": "設問条件に不一致",
+      "reason": "適法引用の範囲では43条による翻訳利用が可能であり、原語に限定されない。"
+    }
+  },
+  "figures": "原典画像で問題幹・条件・否定・全5肢と全組合せセルを確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/aptitude/page_012.png"
+  ],
+  "question_id": "H27-REG-APT-12",
+  "source_file": "sources/H27/aptitude.pdf",
+  "source_page": "12",
+  "source_sha256": "2965cecde9e4c31c06a94192bf7a750346fbf85d07d37943d58a3fa15d15ebeb",
+  "raw_text_sha256": "521db0fbb67ceb5563636d549440384fadc2f50f7f3afdd21f5bc7b780ed5b40",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

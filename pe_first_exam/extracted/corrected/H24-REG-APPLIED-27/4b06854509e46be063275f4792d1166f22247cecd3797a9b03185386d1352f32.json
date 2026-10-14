@@ -1,0 +1,45 @@
+{
+  "stem": "ESRを核磁気共鳴と取り違えた略称を判断する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "ESRを核磁気共鳴と取り違えた略称を判断する。"
+  },
+  "choices": {
+    "1": {
+      "value": "XRF／蛍光X線",
+      "verdict": "通常の条件で適切",
+      "reason": "X-ray Fluorescenceである。"
+    },
+    "2": {
+      "value": "SEM／走査型電子顕微鏡",
+      "verdict": "通常の条件で適切",
+      "reason": "Scanning Electron Microscopeである。"
+    },
+    "3": {
+      "value": "ICP-MS／誘導結合プラズマ質量分析",
+      "verdict": "通常の条件で適切",
+      "reason": "Inductively Coupled Plasma Mass Spectrometryで、プラズマで作ったイオンを質量分析する。"
+    },
+    "4": {
+      "value": "ESR／核磁気共鳴",
+      "verdict": "不適切",
+      "reason": "ESRはElectron Spin Resonance。核磁気共鳴はNMRである。"
+    },
+    "5": {
+      "value": "FTIR／フーリエ変換赤外分光",
+      "verdict": "通常の条件で適切",
+      "reason": "Fourier Transform Infraredで、干渉信号から赤外スペクトルを求める。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_008.png"
+  ],
+  "question_id": "H24-REG-APPLIED-27",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "daa3d2f1b7f257e4c200baf03e32c7e7771fc18991bc53b221d35f3412c5268a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

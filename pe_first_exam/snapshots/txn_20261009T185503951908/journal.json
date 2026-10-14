@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-09T18:55:03+09:00",
+  "paths": [
+    "data/db_candidates.csv"
+  ],
+  "existed": {
+    "data/db_candidates.csv": true
+  },
+  "sha256": {
+    "data/db_candidates.csv": "aa75122f0ef5a113d8b61ebebf1cb6a43e64262c3c03894629b9e89df5d84890"
+  }
+}

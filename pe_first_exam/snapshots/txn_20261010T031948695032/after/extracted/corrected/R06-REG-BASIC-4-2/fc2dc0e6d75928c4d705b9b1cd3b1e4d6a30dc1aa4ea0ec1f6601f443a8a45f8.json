@@ -1,0 +1,44 @@
+{
+  "stem": "2価の多原子イオンを含む化合物を選ぶ。",
+  "conditions": {
+    "条件": "電荷の絶対値が2で、複数原子からなるイオンを探す。化合物中に同じ1価イオンが2個あることとは違う。"
+  },
+  "choices": {
+    "1": {
+      "value": "硫化銀 Ag2S",
+      "verdict": "条件に不一致",
+      "reason": "S²⁻は2価だが単原子であり条件を満たさない。"
+    },
+    "2": {
+      "value": "水酸化ナトリウム NaOH",
+      "verdict": "条件に不一致",
+      "reason": "OH⁻は多原子だが1価である。"
+    },
+    "3": {
+      "value": "硫酸アンモニウム (NH4)2SO4",
+      "verdict": "条件に一致",
+      "reason": "SO4²⁻はSとOからなる多原子・2価陰イオンである。NH4⁺は1価陽イオン。"
+    },
+    "4": {
+      "value": "硝酸鉛(II) Pb(NO3)2",
+      "verdict": "条件に不一致",
+      "reason": "NO3⁻は多原子・1価で、Pb²⁺は2価だが単原子である。"
+    },
+    "5": {
+      "value": "リン酸カルシウム Ca3(PO4)2",
+      "verdict": "条件に不一致",
+      "reason": "PO4³⁻は多原子・3価。Ca²⁺は2価だが単原子である。"
+    }
+  },
+  "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_015.png"
+  ],
+  "question_id": "R06-REG-BASIC-4-2",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "15",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "313b621fb27d42378e7cb2860da9f7eebf9fef828feb067b68e6ce3a60f9a08d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

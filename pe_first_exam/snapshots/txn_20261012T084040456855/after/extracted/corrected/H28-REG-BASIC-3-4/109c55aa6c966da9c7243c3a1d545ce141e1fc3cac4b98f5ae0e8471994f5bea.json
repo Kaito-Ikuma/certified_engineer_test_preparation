@@ -1,0 +1,45 @@
+{
+  "stem": "三角領域で一次関数の重積分を計算する。",
+  "conditions": {
+    "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+    "成立条件": "a>0、直線x=0,y=0,x+y=aで囲む三角領域。f=x+y、a=2、原典の積分順はxを先に積分する。"
+  },
+  "choices": {
+    "1": {
+      "value": "3/8",
+      "verdict": "不適切",
+      "reason": "正しい8/3の逆数であり、積分で領域面積を逆に割る操作はない。"
+    },
+    "2": {
+      "value": "1/2",
+      "verdict": "不適切",
+      "reason": "導出値8/3と一致しない。三角形の面積公式の1/2だけでは被積分関数もaの値も反映しない。"
+    },
+    "3": {
+      "value": "1",
+      "verdict": "不適切",
+      "reason": "領域を単位面積として扱う値ではなく、a=2の面積は2である。平均のx+yも1ではない。"
+    },
+    "4": {
+      "value": "2",
+      "verdict": "不適切",
+      "reason": "a=2の領域面積は2だが、被積分関数を常に1に置き換えてはならない。"
+    },
+    "5": {
+      "value": "8/3",
+      "verdict": "適切",
+      "reason": "xの積分後の(a²−y²)/2をyについて積分し、a=2を入れた値である。"
+    }
+  },
+  "figures": "図なし。数式と5候補を原本で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/basic/page_014.png"
+  ],
+  "question_id": "H28-REG-BASIC-3-4",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "b420496783dafb28a48e25e23aab16ee34e6240fd351d7a0955d7897d3c099e3",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

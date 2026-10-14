@@ -1,0 +1,44 @@
+{
+  "stem": "電流と電気抵抗について、最も不適切な記述を選ぶ。",
+  "conditions": {
+    "対象": "一定の抵抗率を持つ一様な導体。オーム則を使う際は温度等を固定。"
+  },
+  "choices": {
+    "1": {
+      "value": "電流は断面を単位時間に通過する電気量である。",
+      "verdict": "適切",
+      "reason": "I=dQ/dtという定義に一致する。"
+    },
+    "2": {
+      "value": "自由電子は負電荷なので電場と逆向きの力を受けて流れる。",
+      "verdict": "適切",
+      "reason": "電気力qEでq<0なので力はEと逆向きである。"
+    },
+    "3": {
+      "value": "抵抗は断面積に比例し長さに反比例する。",
+      "verdict": "不適切",
+      "reason": "R=ρL/Aであり、長さと断面積の比例・反比例が逆である。"
+    },
+    "4": {
+      "value": "電力は単位時間の仕事で、電圧の二乗に比例し抵抗へ反比例する。",
+      "verdict": "適切",
+      "reason": "抵抗性負荷ではP=VI=V²/Rとなる。"
+    },
+    "5": {
+      "value": "電流は電圧に比例し、抵抗が大きいほど流れにくい。",
+      "verdict": "適切",
+      "reason": "オーム性導体のI=V/Rに一致する。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_002.png"
+  ],
+  "question_id": "H30-REG-APPLIED-03",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "e92e08aa9fd81fbbb296622db0659acd26ab303411e030c0532f669ffea0bffc",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

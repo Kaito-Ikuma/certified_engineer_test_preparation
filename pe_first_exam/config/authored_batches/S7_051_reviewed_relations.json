@@ -1,0 +1,56 @@
+{
+  "batch_id": "S7_051_electromagnetic",
+  "relations": [
+    {
+      "left_question_id": "H26-REG-APPLIED-05",
+      "right_question_id": "R01-REG-APPLIED-07",
+      "relation_type": "parameter_variant",
+      "shared_concept": "金属抵抗の五肢",
+      "shared_method": "原典全五肢と独立解答を比較し、法則の条件と単位を確認。",
+      "numerical_differences": "H26は10²〜10⁴Ωcm、R01は10²〜10⁴Ωm。換算後も同じ数値にはならない。300/100Kは共通。",
+      "negation_differences": "両方最も不適切。",
+      "choice_differences": "温度・残留・長さ・Ohm・抵抗率を長さ・Ohm・抵抗率・温度・残留へ並べ替え、誤り5→3。",
+      "figure_differences": "双方図表なし。",
+      "temporal_differences": "各原典の温度・元素・単位を保持。モデルの留保とAstra未査読状態は関係承認で解除しない。",
+      "evidence": "extracted/pages/H26/17_applied_science/page_002.png|extracted/pages/R01/17_applied_science/page_003.png",
+      "approval_status": "verified",
+      "source_hash_left": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "source_hash_right": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "rubric_version": "1.0-review1"
+    },
+    {
+      "left_question_id": "R01-REG-APPLIED-07",
+      "right_question_id": "R05-REG-APPLIED-08",
+      "relation_type": "parameter_variant",
+      "shared_concept": "金属抵抗率と温度",
+      "shared_method": "原典全五肢と独立解答を比較し、法則の条件と単位を確認。",
+      "numerical_differences": "R01は10²〜10⁴Ωm・300/100K。R05は1〜10²Ωm・−195/0℃。原典の値を保持。",
+      "negation_differences": "両方最も不適切。",
+      "choice_differences": "長さ・Ohm・抵抗率・温度・残留を残留・長さ・温度・抵抗率・Ohmへ変更、誤り3→4。",
+      "figure_differences": "双方図表なし。",
+      "temporal_differences": "各原典の温度・元素・単位を保持。モデルの留保とAstra未査読状態は関係承認で解除しない。",
+      "evidence": "extracted/pages/R01/17_applied_science/page_003.png|extracted/pages/R05/17_applied_science/page_003.png",
+      "approval_status": "verified",
+      "source_hash_left": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "source_hash_right": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "rubric_version": "1.0-review1"
+    },
+    {
+      "left_question_id": "H29-REG-APPLIED-09",
+      "right_question_id": "R06-REG-APPLIED-07",
+      "relation_type": "near_repeat",
+      "shared_concept": "Néel温度と磁性の五肢",
+      "shared_method": "原典全五肢と独立解答を比較し、法則の条件と単位を確認。",
+      "numerical_differences": "数値条件なし。原典の元素記号は共通。",
+      "negation_differences": "両方最も適切。",
+      "choice_differences": "Curie・Néel・FeMnNi・反磁場・黒鉛をCurie・黒鉛・Néel・FeMnNi・反磁場へ変更、適切2→3。MnをCoへ読み替えない。",
+      "figure_differences": "双方図表なし。",
+      "temporal_differences": "各原典の温度・元素・単位を保持。モデルの留保とAstra未査読状態は関係承認で解除しない。",
+      "evidence": "extracted/pages/H29/17_applied_science/page_003.png|extracted/pages/R06/17_applied_science/page_003.png",
+      "approval_status": "verified",
+      "source_hash_left": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "source_hash_right": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "rubric_version": "1.0-review1"
+    }
+  ]
+}

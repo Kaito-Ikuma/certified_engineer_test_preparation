@@ -1,0 +1,45 @@
+{
+  "stem": "衝突模型、拡散律速、平衡の熱力学、活性化エネルギーの意味を比較する。",
+  "conditions": {
+    "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+    "成立条件": "気体圧力比較は温度・組成一定。衝突頻度の単位と対象を明記する。アレニウス式の経験的活性化エネルギーと電子的障壁高さは一般には別。"
+  },
+  "choices": {
+    "1": {
+      "value": "衝突頻度は圧力に比例",
+      "verdict": "条件付きで適切",
+      "reason": "分子1個あたりの頻度は数密度に比例する。単位体積あたりの衝突数なら固定組成では圧力の2乗に比例する。"
+    },
+    "2": {
+      "value": "反応断面積は衝突断面積と立体因子の積",
+      "verdict": "条件付きで適切",
+      "reason": "配向の割合を掛ける単純模型である。一般の反応断面積の定義を尽くさない。"
+    },
+    "3": {
+      "value": "速い酸塩基中和は反応律速",
+      "verdict": "不適切",
+      "reason": "遭遇後の反応が速い極限では拡散による遭遇が律速する。"
+    },
+    "4": {
+      "value": "標準自由エネルギー変化は平衡定数を決める",
+      "verdict": "適切",
+      "reason": "\\(K=\\exp(-\\Delta_rG^\\circ/RT)\\) に従う。"
+    },
+    "5": {
+      "value": "アレニウス活性化エネルギーは活性錯合体との差",
+      "verdict": "条件付きで適切",
+      "reason": "単純な障壁模型の説明である。厳密な経験的定義は \\(E_a=RT^2d\\ln k/dT\\) であり、常に障壁高さと同じではない。"
+    }
+  },
+  "figures": "文字記述又は順序候補であり図なし。",
+  "ambiguity": "衝突頻度の対象、立体因子模型、アレニウス活性化エネルギーを障壁差で代表する省略を原典通り保持し、適用範囲を教材で限定する。",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_005.png"
+  ],
+  "question_id": "R01-REG-APPLIED-15",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "f20bbdcb5f44aa64d771f4fa568314d12d792c3f8e33548082d9ba191a44409e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

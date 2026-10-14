@@ -1,0 +1,56 @@
+{
+  "stem": "平成26年4月のCPDガイドライン第2版の4空欄を選ぶ。",
+  "conditions": {
+    "空欄順": [
+      "ア",
+      "イ",
+      "ウ",
+      "エ"
+    ],
+    "正しい語句の照合": {
+      "ア": "自己研鑚",
+      "イ": "立場",
+      "ウ": "記録",
+      "エ": "日頃従事"
+    },
+    "出題時資料": "出題指定の第2版2.2節で確認する。"
+  },
+  "choices": {
+    "1": {
+      "value": "自己研鑚／環境／記録／専門的に従事",
+      "verdict": "不適切な解答候補",
+      "reason": "イは立場、エは日頃従事である。"
+    },
+    "2": {
+      "value": "自己学習／環境／掲載／日頃従事",
+      "verdict": "不適切な解答候補",
+      "reason": "アは自己研鑚、イは立場、ウは記録である。"
+    },
+    "3": {
+      "value": "自己学習／立場／記録／専門的に従事",
+      "verdict": "不適切な解答候補",
+      "reason": "アは自己研鑚、エは日頃従事である。"
+    },
+    "4": {
+      "value": "自己研鑚／環境／掲載／日頃従事",
+      "verdict": "不適切な解答候補",
+      "reason": "イは立場、ウは記録である。"
+    },
+    "5": {
+      "value": "自己研鑚／立場／記録／日頃従事",
+      "verdict": "適切な解答候補",
+      "reason": "第2版2.2節の語句に一致する。"
+    }
+  },
+  "figures": "図なし。組合せ表または個数選択肢は原典画像で確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/aptitude/page_002.png"
+  ],
+  "question_id": "H27-REG-APT-02",
+  "source_file": "sources/H27/aptitude.pdf",
+  "source_page": "2",
+  "source_sha256": "2965cecde9e4c31c06a94192bf7a750346fbf85d07d37943d58a3fa15d15ebeb",
+  "raw_text_sha256": "2b388804eab1f90f6f73f9a9bd394504a296fed8c5c24e2b77a1467df0382327",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

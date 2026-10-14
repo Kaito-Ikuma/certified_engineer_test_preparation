@@ -1,0 +1,299 @@
+NPTEL – Chemical – Mass Transfer Operation 1
+
+
+
+                      MODULE 5: DISTILLATION
+
+
+                                  LECTURE NO. 1
+
+5.1. Introduction
+Distillation is method of separation of components from a liquid mixture which
+depends on the differences in boiling points of the individual components and the
+distributions of the components between a liquid and gas phase in the mixture.
+The liquid mixture may have different boiling point characteristics depending on
+the concentrations of the components present in it. Therefore, distillation
+processes depends on the vapor pressure characteristics of liquid mixtures. The
+vapor pressure is created by supplying heat as separating agent. In the
+distillation, the new phases differ from the original by their heat content. During
+most of the century, distillation was by far the most widely used method for
+separating liquid mixtures of chemical components (Seader and Henley, 1998).
+This is a very energy intensive technique, especially when the relative volatility of
+the components is low. It is mostly carried out in multi tray columns. Packed
+column with efficient structured packing has also led to increased use in
+distillation.
+
+
+5.1.1. Vapor Pressure
+Vapor Pressure: The vaporization process changes liquid to gaseous state. The
+opposite process of this vaporization is called condensation. At equilibrium, the
+rates of these two processes are same. The pressure exerted by the vapor at this
+equilibrium state is termed as the vapor pressure of the liquid. It depends on the
+temperature and the quantity of the liquid and vapor. From the following
+Clausius-Clapeyron Equation or by using Antoine Equation, the vapor pressure
+can be calculated.
+
+
+
+
+Joint initiative of IITs and IISc – Funded by MHRD                        Page 1 of 9
+NPTEL – Chemical – Mass Transfer Operation 1
+
+
+
+Clausius-Clapeyron Equation:
+     p v     1 1 
+ln  v                                                                             (5.1)
+     p1   R  T1 T 
+where p v and p1v are the vapor pressures in Pascal at absolute temperature T
+and T1 in K. λ is the molar latent heat of vaporization which is independent of
+temperature.
+Antoine Equation:
+                          B                                                                   (5.2)
+ln p v (Pascal)  A 
+                        T C
+Typical representative values of the constants A, B and C are given in the
+following Table 5.1 (Ghosal et al., 1993)
+                Table 5.1: Typical representative values of the constants A, B and C
+
+Components           Range of                   A                     B                C
+                     Temperature (T),
+                     K
+Acetone              241-350                    21.5439               2940.46          -35.93
+Ammonia              179-261                    21.8407               2132.50          -32.98
+Benzene              280-377                    20.7934               2788.51          -52.36
+Ethanol              270-369                    21.8045               3803.98          -41.68
+Methanol             257-364                    23.4801               3626.55          -34.29
+Toluene              280-410                    20.9063               3096.52          -53.67
+Water                284-441                    23.1962               3816.44          -46.13
+
+Readers are suggested to revise the thermodynamics for more about vapor
+pressure and boiling point.
+
+
+5.1.2. Phase Diagram
+For binary mixture phase diagram only two-component mixture, (e.g. A (more
+volatile) and B (less volatile)) are considered. There are two types of phase
+diagram: constant pressure and constant temperature.
+
+
+5.1.3. Constant Pressure Phase Diagram
+The Figure 5.1 shows a constant pressure phase diagram for an ideal solution
+(one that obeys Raoult's Law). At constant pressure, depending on relative
+
+
+Joint initiative of IITs and IISc – Funded by MHRD                                         Page 2 of 9
+NPTEL – Chemical – Mass Transfer Operation 1
+
+
+
+concentrations of each component in the liquid, many boiling point temperatures
+are possible for mixture of liquids (solutions) as shown in phase disgram diagram
+(Figure 5.1). For mixture, the temperature is called bubble point temperature
+when the liquid starts to boil and dew point when the vapor starts to condense.
+Boiling of a liquid mixture takes place over a range of boiling points. Likewise,
+condensation of a vapor mixture takes place over a range of condensation
+points. The upper curve in the boiling point diagram is called the dew-point curve
+(DPC) while the lower one is called the bubble-point curve (BPC). At each
+temperature, the vapor and the liquid are in equilibrium. The constant pressure
+phase diagram is more commonly used in the analysis of vapor-liquid
+equilibrium.
+
+
+
+
+                    Figure 5.1: Phase diagram of binary system at constant pressure
+
+
+
+5.1.4. Constant temperature (isothermal) phase diagram
+
+The constant temperature phase diagram is shown in Figure 5.2. The constant
+temperature phase diagram is useful in the analysis of solution behaviour. The
+more volatile liquid will have a higher vapor pressure (i.e. pA at xA = 1.0)
+
+
+
+Joint initiative of IITs and IISc – Funded by MHRD                                    Page 3 of 9
+NPTEL – Chemical – Mass Transfer Operation 1
+
+
+
+
+                         Figure 5.2: Binary Phase diagram at constant temperature
+
+
+
+5.1.5. Relative volatility
+Relative volatility is a measure of the differences in volatility between two
+components, and hence their boiling points. It indicates how easy or difficult a
+particular separation will be. The relative volatility of component ‘A’ with respect
+to component ‘B’ in a binary mixture is defined as
+         y A / xA
+ AB                                                                                  (5.3)
+         y B / xB
+where, yA = mole fraction of component ‘A’ in the vapor, xA = mole fraction of
+component ‘A’ in the liquid. In general, relative volatility of a mixture changes with
+the mixture composition. For binary mixture, xB = 1-xA. So Equation (5.3) can be
+rearranged, simplifying and expressed by dropping subscript 'A' for more volatile
+component as:
+           ave x
+y                                                                                     (5.4)
+     1  ( ave  1) x
+
+The Equation (5.4) is a non-linear relationships between x and y. This Equation
+can be used to determine the equilibrium relationship (y vs. x) provided the
+
+Joint initiative of IITs and IISc – Funded by MHRD                                  Page 4 of 9
+NPTEL – Chemical – Mass Transfer Operation 1
+
+
+
+average relative volatility, ave is known. If the system obeys Raoult’s law, i.e
+p A  Py A , pB  Py B , the relative volatility can be expressed as:
+         pA / xA
+ AB                                                                                                       (5.5)
+         p B / xB
+where pA is the partial pressure of component A in the vapor, pB is the partial
+pressure of component B in the vapor and P is the total pressure of the system.
+Thus if the relative volatility between two components is equal to one, separation
+is not possible by distillation. The larger the value of , above 1.0, the greater the
+degree of separability, i.e. the easier the separation. Some examples of optimal
+relative volatility that are used for distillation process design are given in Table
+5.2.
+                    Table 5.2: Some optimal relative volatility that are used for distillation process design
+
+       More volatile component                 Less boiling component                 Optimal Relative
+       (normal boiling point oC)               (normal boiling point, oC)             volatility
+       Benzene (80.1)                          Toluene (110.6)                        2.34
+       Toluene (110.6)                         p-Xylene (138.3)                       2.31
+       Benzene (80.6)                          p-Xylene (138.3)                       4.82
+       m-Xylene (139.1)                        p-Xylene (138.3)                       1.02
+       Pentane (36.0)                          Hexane (68.7)                          2.59
+       Hexane (68.7)                           Heptane (98.5)                         2.45
+       Hexane (68.7)                           p-Xylene (138.3)                       7.0
+       Ethanol (78.4)                          iso-Propanol (82.3)                    1.17
+       iso-Propanol (82.3)                     n-Propanol (97.3)                      1.78
+       Ethanol (78.4)                          n-Propanol (97.3)                      2.10
+       Methanol (64.6)                         Ethanol (78.4)                         1.56
+       Methanol (64.6)                         iso-Propanol (82.3)                    2.26
+       Chloroform (61.2)                       Acetic acid (118.1)                    6.15
+
+
+5.1.6. Vapor-Liquid Equilibrium (VLE)
+It is useful for graphical design in determining the number of theoretical stages
+required for a distillation column. A typical equilibrium curve for a binary mixture
+on x-y plot is shown in Figure 5.3. It can be plotted by the Equations (5.4) or (5.5)
+as discussed earlier section. It contains less information than the phase diagram
+(i.e. temperature is not included), but it is most commonly used. The VLE plot
+
+Joint initiative of IITs and IISc – Funded by MHRD                                                      Page 5 of 9
+NPTEL – Chemical – Mass Transfer Operation 1
+
+
+
+expresses the bubble-point and the dew-point of a binary mixture at constant
+pressure. The curved line in Figure 5.3 is called the equilibrium line and it
+describes the compositions of the liquid and vapor in equilibrium at some fixed
+pressure. The equilibrium line can be obtained from the Equation (5.4) once the
+relative volatility is known.
+
+
+
+                                                                   y = 0.671x3 - 1.883x2 + 2.211x + 0.003
+                                                                                 R² = 0.999
+               Mole fraction of benzene in vapour, y
+
+
+
+
+                                                       Equilibrium curve
+
+
+
+
+                                                                      45o diagonal line
+
+
+
+
+                                                          Mole fraction of benzene in liquid , x
+
+
+
+              Figure 5.3: Equilibrium diagram for a benzene-toluene mixture at 1 atmosphere
+
+
+
+This particular VLE plot (Figure 5.3) shows a binary ideal mixture that has a
+uniform vapor-liquid equilibrium that is relatively easy to separate. On the other
+hand, the VLE plots shown in Figure 5.4 represented for non-ideal systems.
+These non-ideal VLE systems will present more difficult separation.
+
+
+
+
+Joint initiative of IITs and IISc – Funded by MHRD                                                          Page 6 of 9
+NPTEL – Chemical – Mass Transfer Operation 1
+
+
+
+
+                     Figure 5.4: Vapor-liquid equilibrium curve for non-ideal systems
+
+The most challenging VLE curves are generated by azeotropic systems. An
+azeotrope is a liquid mixture which when vaporized, produces the same
+composition as the liquid. Two types of azeotropes are known: minimum-boiling
+and maximum-boiling (less common). Ethanol-water system (at 1 atm, 89.4 mole
+%, 78.2 oC; Carbon-disulfide - acetone (61.0 mole% CS2, 39.25 oC, 1 atm) and
+Benzene - water (29.6 mole% H2O, 69.25 oC, 1 atm) are minimum-boiling
+azeotropes. Hydrochloric acid - water (11.1 mole% HCl, 110 oC, 1 atm); Acetone
+- chloroform (65.5 mole% chloroform, 64.5 oC, 1 atm) are the examples of
+Maximum-boiling azeotropes. The Figure 5.5 shows two different azeotropic
+systems, one with a minimum boiling point (Figure 5.5a) and one with a
+maximum boiling point (Figure 5.5b). The points of intersections of the
+equilibrium curves with the diagonal lines are called azeotropic points. An
+azeotrope cannot be separated by conventional distillation. However, vacuum
+distillation may be used as the lower pressures which can shift the azeotropic
+point.
+
+
+
+
+Joint initiative of IITs and IISc – Funded by MHRD                                      Page 7 of 9
+NPTEL – Chemical – Mass Transfer Operation 1
+
+
+
+
+                Figure 5.5: VLE curves for azeotropic systems: (a) for maximum boiling point, (b) for minimum
+                boiling point
+
+
+
+
+Although most distillations are carried out at atmospheric or near atmospheric
+pressure, it is not uncommon to distill at other pressures. High pressure
+distillation (typically 3 - 20 atm) usually occurs in thermally integrated processes.
+In those cases the equilibrium curve becomes narrower at higher pressures as
+
+
+
+
+Joint initiative of IITs and IISc – Funded by MHRD                                             Page 8 of 9
+NPTEL – Chemical – Mass Transfer Operation 1
+
+
+
+shown in Figure 5.6. Separability becomes less at higher pressures.
+
+
+
+
+                Figure 5.6: Variation of equilibrium curve with pressure
+
+
+
+
+Joint initiative of IITs and IISc – Funded by MHRD                         Page 9 of 9
+

@@ -1,0 +1,11 @@
+{
+  "time": "2026-10-11T10:31:42+09:00",
+  "questions": [
+    "H23-REG-APPLIED-06",
+    "H27-REG-APPLIED-04",
+    "R05-REG-APPLIED-13"
+  ],
+  "source_conditions_checked": 3,
+  "solution_drafts": 3,
+  "final_verification": false
+}

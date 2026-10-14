@@ -1,0 +1,45 @@
+{
+  "stem": "2022家庭CO2の積み上げ棒は電気・都市ガス・LP・灯油。",
+  "conditions": {
+    "指定": "令和4年度家庭CO2確報、令和6年3月。",
+    "図": "2017〜2022年度、A〜Dは下からの順。"
+  },
+  "choices": {
+    "1": {
+      "value": "電気/都市ガス/灯油/LP",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 電気/都市ガス/LP/灯油 と異なる。"
+    },
+    "2": {
+      "value": "電気/都市ガス/LP/灯油",
+      "verdict": "適切・選択対象",
+      "reason": "独立に求めた組合せ 電気/都市ガス/LP/灯油 と一致する。"
+    },
+    "3": {
+      "value": "都市ガス/電気/LP/灯油",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 電気/都市ガス/LP/灯油 と異なる。"
+    },
+    "4": {
+      "value": "都市ガス/電気/灯油/LP",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 電気/都市ガス/LP/灯油 と異なる。"
+    },
+    "5": {
+      "value": "灯油/電気/都市ガス/LP",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 電気/都市ガス/LP/灯油 と異なる。"
+    }
+  },
+  "figures": "図の数値又は組合せ表を独自要約。原典画像は確認用のみ。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_019.png"
+  ],
+  "question_id": "R06-REG-BASIC-5-3",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "19",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "3fb1e773096a5e1faec7bdb5717d27bd3ff0ce4ac02bfddc950e93c1c83e21b8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

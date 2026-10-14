@@ -1,0 +1,45 @@
+{
+  "stem": "平面上の全点で非圧縮性の連続の式を満たす流速場を選ぶ。",
+  "conditions": {
+    "式": "\\(\\partial_xu+\\partial_yv=0\\)",
+    "量化": "特定の点だけでなく平面上の全ての点。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\((x,y)\\)",
+      "verdict": "条件に不一致",
+      "reason": "発散は1+1=2である。"
+    },
+    "2": {
+      "value": "\\((x,-y)\\)",
+      "verdict": "条件に一致",
+      "reason": "発散は1−1=0で全点で成立する。"
+    },
+    "3": {
+      "value": "\\((xy,xy)\\)",
+      "verdict": "条件に不一致",
+      "reason": "発散はy+xであり恒等的には0でない。"
+    },
+    "4": {
+      "value": "\\((xy,-xy)\\)",
+      "verdict": "条件に不一致",
+      "reason": "発散はy−xで、直線y=x上に限る。"
+    },
+    "5": {
+      "value": "\\((x^2,-y^2)\\)",
+      "verdict": "条件に不一致",
+      "reason": "発散は2x−2yで、直線y=x上に限る。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/basic/page_009.png"
+  ],
+  "question_id": "H26-REG-BASIC-3-1",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "9",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "5b85478247727fc95ee6e1a038013c52b3a7950771a5c1b1583bae86c3b4c00d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

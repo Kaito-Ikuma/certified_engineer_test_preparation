@@ -1,0 +1,45 @@
+{
+  "stem": "線形・凸・整数計画の成立条件。",
+  "conditions": {
+    "列順": "線形計画/図解法/凸計画/整数計画。",
+    "O/X": "正/誤。"
+  },
+  "choices": {
+    "1": {
+      "value": "OOXX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 XOOO と異なる。"
+    },
+    "2": {
+      "value": "OXOX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 XOOO と異なる。"
+    },
+    "3": {
+      "value": "XOXO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 XOOO と異なる。"
+    },
+    "4": {
+      "value": "XXOO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 XOOO と異なる。"
+    },
+    "5": {
+      "value": "XOOO",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_001.png"
+  ],
+  "question_id": "R01-REG-BASIC-1-1",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "1",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "9387e41681113632d8f9d407a5b0512a7a96758ffba629e782b53dede1223236",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

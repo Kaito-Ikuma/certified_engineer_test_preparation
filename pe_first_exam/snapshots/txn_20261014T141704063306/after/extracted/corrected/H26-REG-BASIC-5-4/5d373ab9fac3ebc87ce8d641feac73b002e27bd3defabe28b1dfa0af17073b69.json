@@ -1,0 +1,45 @@
+{
+  "stem": "資源量と太陽光面積の桁を比較。",
+  "conditions": {
+    "時点": "平成26年度に指定された資料・制度。",
+    "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "石炭埋蔵エネルギーが石油超",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "石油確認埋蔵量は危機時より増",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "海水Uは1億t超",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "100km²太陽光が日本需要超",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "5": {
+      "value": "全球の光合成固定が人類需要超",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "概算の日射・需要は桁比較であり厳密な上限証明ではない。石炭石油の指定時点埋蔵量、海水U総量、全球純生産と人類エネルギーの各原表は追加照合。初回記録の昼夜連続1kW仮定を解説では日照条件を示す概算へ改めた。",
+  "evidence": [
+    "extracted/pages/H26/basic/page_017.png"
+  ],
+  "question_id": "H26-REG-BASIC-5-4",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "e495107ec5d09989e10f64667dd0c30b46f97214a6af8b76028b1f5c905fc749",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

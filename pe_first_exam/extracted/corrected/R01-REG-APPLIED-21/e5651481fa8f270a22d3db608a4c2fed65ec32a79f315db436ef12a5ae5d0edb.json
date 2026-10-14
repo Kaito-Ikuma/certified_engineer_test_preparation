@@ -1,0 +1,44 @@
+{
+  "stem": "潜熱・温室効果、海陸の水収支、氷床の貯留と輸送、平均滞留時間を判定する。",
+  "conditions": {
+    "方向": "最も不適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "水蒸気は現在の自然温室効果へ最大に寄与。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "自然温室効果への寄与と、人為的な追加放射強制力を区別する。CO2の温暖化上の重要性を否定しない。"
+    },
+    "2": {
+      "value": "水蒸気の潜熱は低緯度から中緯度の熱輸送に重要。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "蒸発時に地表からエネルギーを受け取り移流後の凝結で放出する。"
+    },
+    "3": {
+      "value": "陸は降水超過、海は蒸発超過。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "全球長期平均では海から陸への大気輸送と陸から海への流出が釣り合う。"
+    },
+    "4": {
+      "value": "海洋・水蒸気・地下水・土壌水では水蒸気の滞留が最短。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "大気は貯留が小さく出入りが大きいため約10日。地下水等には広い時間分布があり代表平均として比較する。"
+    },
+    "5": {
+      "value": "氷床は貯留量も輸送量も大きい。",
+      "verdict": "不適切",
+      "reason": "氷床は大きい貯留だが交換に長い時間を要する。大きい貯留から大きい年間流量を結論できない。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_007.png"
+  ],
+  "question_id": "R01-REG-APPLIED-21",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "471315cb43b63d699f43e53314a652ef66612a39917f6ee3858280308c582c43",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

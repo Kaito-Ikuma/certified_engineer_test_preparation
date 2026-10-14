@@ -1,0 +1,88 @@
+{
+  "recorded_at": "2026-10-11T10:30:35.626401+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "official_answers_consulted": false,
+  "source_images_reviewed": 18,
+  "questions": [
+    {
+      "question_id": "H23-REG-BASIC-2-2",
+      "independent_answer": "2",
+      "reason": "辺和の最小はA-B-E-F=1+2+2=5。"
+    },
+    {
+      "question_id": "H23-REG-BASIC-2-5",
+      "independent_answer": "2",
+      "reason": "公開鍵方式を適切に認証された保護通信で使う肢2。方式名だけでは認証は保証しない。"
+    },
+    {
+      "question_id": "H26-REG-BASIC-2-6",
+      "independent_answer": "3",
+      "reason": "道幅の経路最小を最大化し5。6以上では分断される。"
+    },
+    {
+      "question_id": "H27-REG-BASIC-2-5",
+      "independent_answer": "2",
+      "reason": "認証局は公開鍵と所有者を結び付ける。署名は秘密鍵で生成し公開鍵で検証。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-2-1",
+      "independent_answer": "1",
+      "reason": "知人送信者でも添付は無条件安全でない。定期変更の推奨には時点上の疑義。"
+    },
+    {
+      "question_id": "H30-REG-BASIC-2-1",
+      "independent_answer": "4",
+      "reason": "別サービスの同一パスワード再利用は漏洩を連鎖する。SSLを現行推奨しない。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-2-3",
+      "independent_answer": "3",
+      "reason": "D=(21,9,6)=3(7,3,2)なのでコサイン距離0。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-2-1",
+      "independent_answer": "5",
+      "reason": "マルウェア除去だけで破壊済み情報を全復旧はできない。"
+    },
+    {
+      "question_id": "R02-REG-BASIC-2-3",
+      "independent_answer": "1",
+      "reason": "正規ストレージのリンク先にも悪性ファイルを置け、メール検査だけでは排除できない。"
+    },
+    {
+      "question_id": "R03-REG-BASIC-2-1",
+      "independent_answer": "1",
+      "reason": "公開鍵暗号は公開鍵で暗号化、秘密鍵で復号。"
+    },
+    {
+      "question_id": "R04-REG-BASIC-2-1",
+      "independent_answer": "1",
+      "reason": "会議URLを安全に伝える対策だけでは会議への不正アクセスを全防止できない。"
+    },
+    {
+      "question_id": "R05-REG-BASIC-2-1",
+      "independent_answer": "1",
+      "reason": "侵害兆候がなければ機械的な定期変更でなく長い独自パスワード。"
+    },
+    {
+      "question_id": "R06-REG-BASIC-2-3",
+      "independent_answer": "2",
+      "reason": "全リンク情報で経路計算するのはリンクステート、距離ベクトルは隣接情報。"
+    },
+    {
+      "question_id": "R06-REG-BASIC-2-6",
+      "independent_answer": "4",
+      "reason": "多要素であるだけではリプレイ防止を保証しない。原典の対策の断定に疑義を保持。"
+    },
+    {
+      "question_id": "R07-REG-BASIC-2-3",
+      "independent_answer": "3",
+      "reason": "ACKごとに増えるとRTTあたり概ね倍増で指数的である。ECN・現行初期窓・FlightSizeについて他肢にも疑義。"
+    },
+    {
+      "question_id": "R07-REG-BASIC-2-4",
+      "independent_answer": "5",
+      "reason": "外部オンライン解析へ添付を無差別送信すると機密漏洩する。承認・取扱基準が必要。"
+    }
+  ]
+}

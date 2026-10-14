@@ -1,0 +1,45 @@
+{
+  "stem": "放射能・力・磁束密度・仕事率・抵抗を基本単位へ分解し、指数の誤りを選ぶ。",
+  "conditions": {
+    "方向": "誤っているもの。",
+    "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(\\mathrm{Bq=s^{-1}}\\)",
+      "verdict": "適切",
+      "reason": "放射能は単位時間の壊変数なのでBqはsの-1乗。周期周波数と同じ次元でも意味は区別する。"
+    },
+    "2": {
+      "value": "\\(\\mathrm{N=m\\,kg\\,s^{-2}}\\)",
+      "verdict": "適切",
+      "reason": "力F=maからN=\\(\\mathrm{kg\\,m\\,s^{-2}}\\)である。"
+    },
+    "3": {
+      "value": "\\(\\mathrm{T=m\\,kg\\,s^{-2}A^{-2}}\\)",
+      "verdict": "不適切",
+      "reason": "電流に働く磁気力F=IℓBからT=N/(A m)=kg s^-2 A^-1。原典は不要なmとAの指数-2を含む。"
+    },
+    "4": {
+      "value": "\\(\\mathrm{W=m^2kg\\,s^{-3}}\\)",
+      "verdict": "適切",
+      "reason": "仕事率はエネルギーを時間で割りW=\\(\\mathrm{kg\\,m^2s^{-3}}\\)である。"
+    },
+    "5": {
+      "value": "\\(\\mathrm{\\Omega=m^2kg\\,s^{-3}A^{-2}}\\)",
+      "verdict": "適切",
+      "reason": "抵抗R=V/IからΩ=\\(\\mathrm{kg\\,m^2s^{-3}A^{-2}}\\)である。"
+    }
+  },
+  "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+  "ambiguity": "原典の導入は6基本単位だけを列挙し、光度のcdを欠いてその他全部を組立できるとする。SIは出題時も7基本単位である。選択肢内の指数誤りは特定できるが導入の全称を正しい記述として校正完了にしない。",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_003.png"
+  ],
+  "question_id": "H23-REG-APPLIED-06",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "e20c370ddf30edb3f2dfac17af61842615628e2b3571a3642433452bf89e85c5",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,78 @@
+{
+  "time": "2026-10-11T01:04:07.818634+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_020_environment",
+  "question_ids": [
+    "H23-REG-APT-14",
+    "H24-REG-APT-05",
+    "H25-REG-APT-11",
+    "H28-REG-APT-14",
+    "H30-REG-APT-13",
+    "R01-REG-APT-15",
+    "R01-RET-APT-11",
+    "R01-RET-APT-13",
+    "R01-RET-APT-14",
+    "R03-REG-APT-05",
+    "R03-REG-APT-11",
+    "R04-REG-APT-10",
+    "R04-REG-APT-14",
+    "R05-REG-APT-15",
+    "R06-REG-APT-02",
+    "R06-REG-APT-05",
+    "R06-REG-APT-06",
+    "R07-REG-APT-10"
+  ],
+  "source_images": 18,
+  "initial_independent_matches": 17,
+  "corrected_verified": 12,
+  "partial": 6,
+  "related_pairs_added": 7,
+  "related_pairs_total": 100,
+  "primary_references_added": 34,
+  "concepts_added": 6,
+  "concept_total": 140,
+  "canonical_counts": {
+    "recorded_at": "2026-10-11T01:04:07.818634+09:00",
+    "registered": 1270,
+    "classification_verified": 420,
+    "summary_verified": 383,
+    "corrected_verified": 355,
+    "corrected_partial": 28,
+    "solution_drafts": 383,
+    "solution_verified": 0,
+    "manual_required": 915,
+    "subject_drafts": {
+      "BASIC": 125,
+      "APT": 94,
+      "APPLIED": 164
+    }
+  },
+  "theory_sections_added": 20,
+  "labeled_theory_sections": 19,
+  "pdf": {
+    "pages": 582,
+    "bytes": 2819008,
+    "visual_review_pages": [
+      252,
+      264,
+      266,
+      267,
+      268,
+      269,
+      270,
+      286,
+      291
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draft・初期監査・1270ラベル監査成功。実装変更なし、直前24回帰成功記録を保持。",
+  "risks": [
+    "R01-RET-APT-14初回3は原本誤植「感梁症」を見落としていた。初回記録を保存、公式ALLは全肢正しいと解釈しない。",
+    "企業数時系列・家電販売条件・生物濃縮一般化・再生可能エネルギー排出・地球境界の因果表現を部分校正に保持。",
+    "Astra未査読。887問未執筆。"
+  ],
+  "next": "S7_021地球化学22問。原典19画像と初回独立解答保存済、21一意一致・H27問27は初回4|5と公式5。一次資料と全肢を検証して執筆。Checkpoint2未到達。"
+}

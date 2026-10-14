@@ -1,0 +1,45 @@
+{
+  "stem": "社会的合意を形成する際の進行役・専門家・第三者の役割から、不適切な説明を選ぶ。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "状況": "利害・価値観の異なる関係者間で社会的合意を形成する。"
+  },
+  "choices": {
+    "1": {
+      "value": "業務担当技術者自身が、あらゆる問題に対応する進行役となる。",
+      "verdict": "設問条件に一致",
+      "reason": "担当者は事業への利害も持つ。専門知識だけで中立な進行能力やあらゆる対立の処理を保証できない。"
+    },
+    "2": {
+      "value": "技術的役割と会議進行・意見調整の役割を分けて検討する。",
+      "verdict": "設問条件に不一致",
+      "reason": "科学技術の助言と公正な発言機会の確保は異なる能力・役割である。"
+    },
+    "3": {
+      "value": "関係者とその利害を把握する。",
+      "verdict": "設問条件に不一致",
+      "reason": "表面の賛否だけでなく、守りたい利益や懸念を把握して調整する。"
+    },
+    "4": {
+      "value": "中立な第三者の支援を得る。",
+      "verdict": "設問条件に不一致",
+      "reason": "中立性を担保した第三者は手続の公正さを支援し得る。"
+    },
+    "5": {
+      "value": "進行支援の必要性を事前評価する。",
+      "verdict": "設問条件に不一致",
+      "reason": "関係者・対立点・実施可能性を調べて適切な支援を設計する。"
+    }
+  },
+  "figures": "原典画像で問題幹・条件・否定・全5肢と全組合せセルを確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/aptitude/page_016.png"
+  ],
+  "question_id": "H23-REG-APT-15",
+  "source_file": "sources/H23/aptitude.pdf",
+  "source_page": "16",
+  "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+  "raw_text_sha256": "916d45442d521fd289716c978fab600db544978fc9da6ae6f25bc105d1b74054",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

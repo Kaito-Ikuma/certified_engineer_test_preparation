@@ -1,0 +1,1941 @@
+{
+  "batch_id": "S7_011_electromagnetism",
+  "reference_date": "2026-10-10",
+  "scope": "応用理学電磁気27問。原典22頁画像の全条件・全5肢を確認し独立解答を保存後に公式と全問一致。電束/磁束、外力/電場仕事、固定Q/固定V、共振モデルを区別。",
+  "questions": [
+    {
+      "question_id": "H23-REG-APPLIED-08",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "充電したコンデンサーに蓄えられるエネルギーを計算する。",
+      "summary": "充電したコンデンサーに蓄えられるエネルギーを計算する。",
+      "conditions": {
+        "容量": "2.0 μF",
+        "電圧": "300 V"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(9.0\\times10^{-3}\\) J",
+          "verdict": "条件に不一致",
+          "reason": "正しい値0.09 Jの1/10である。"
+        },
+        "2": {
+          "value": "\\(1.8\\times10^{-2}\\) J",
+          "verdict": "条件に不一致",
+          "reason": "正しい値0.09 Jの1/5である。"
+        },
+        "3": {
+          "value": "\\(9.0\\times10^{-2}\\) J",
+          "verdict": "条件に一致",
+          "reason": "容量を2.0×10⁻⁶ Fへ換算したCV²/2に一致する。"
+        },
+        "4": {
+          "value": "\\(1.8\\times10^{-1}\\) J",
+          "verdict": "条件に不一致",
+          "reason": "CV²とするとこの値になるが、充電中の電圧上昇を積分する係数1/2がない。"
+        },
+        "5": {
+          "value": "\\(9.0\\times10^{-1}\\) J",
+          "verdict": "条件に不一致",
+          "reason": "正しい値の10倍で、接頭語又は指数の扱いが違う。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_003.png"
+      ],
+      "core_concept": "容量に蓄える電場エネルギー",
+      "required_knowledge": "静電容量、μ=10⁻⁶、電圧上昇の積分。",
+      "solution": "\\(U=CV^2/2=(2.0\\times10^{-6})300^2/2=0.09\\) Jで3を選ぶ。充電中の微小仕事Vdqを積分するため、最終電圧を全電荷へ掛けたQVそのものではない。",
+      "independent_answer": "3",
+      "answer_reason": "\\(U=CV^2/2=(2.0\\times10^{-6})300^2/2=0.09\\) Jで3を選ぶ。充電中の微小仕事Vdqを積分するため、最終電圧を全電荷へ掛けたQVそのものではない。",
+      "learning_points": "容量に蓄える電場エネルギーを、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:capacitor",
+        "theory:em:energy"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_037",
+      "classification_reason": "原典全条件・全5肢から容量に蓄える電場エネルギーを中心に電磁気として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em05"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-04",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "stem": "10 Ωと5 Ωを並列接続した合成抵抗を選ぶ。",
+      "summary": "10 Ωと5 Ωを並列接続した合成抵抗を選ぶ。",
+      "conditions": {
+        "接続": "同じ二端子間へ並列に接続。"
+      },
+      "choices": {
+        "1": {
+          "value": "約0.2 Ω",
+          "verdict": "条件に不一致",
+          "reason": "0.2は5 Ωの逆数だが単位はSで、抵抗ではない。"
+        },
+        "2": {
+          "value": "約1.5 Ω",
+          "verdict": "条件に不一致",
+          "reason": "逆数の和を逆に戻した10/3 Ωと違う。"
+        },
+        "3": {
+          "value": "約3.3 Ω",
+          "verdict": "条件に一致",
+          "reason": "共通電圧で各電流を足した等価抵抗10/3 Ωに最も近い。"
+        },
+        "4": {
+          "value": "約7.5 Ω",
+          "verdict": "条件に不一致",
+          "reason": "合成抵抗が小さい方の5 Ωを超えており並列の性質に反する。"
+        },
+        "5": {
+          "value": "約15 Ω",
+          "verdict": "条件に不一致",
+          "reason": "10+5は直列接続の場合である。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/17_applied_science/page_001.png"
+      ],
+      "core_concept": "並列抵抗の電流加算",
+      "required_knowledge": "オーム則、コンダクタンス、直列と並列。",
+      "solution": "\\(1/R=1/10+1/5=3/10\\)よりR=10/3 Ω≃3.3 Ωで3を選ぶ。並列では電圧が共通、電流が加算されるため、抵抗そのものではなくコンダクタンスを足す。",
+      "independent_answer": "3",
+      "answer_reason": "\\(1/R=1/10+1/5=3/10\\)よりR=10/3 Ω≃3.3 Ωで3を選ぶ。並列では電圧が共通、電流が加算されるため、抵抗そのものではなくコンダクタンスを足す。",
+      "learning_points": "並列抵抗の電流加算を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:dc"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_039",
+      "classification_reason": "原典全条件・全5肢から並列抵抗の電流加算を中心に電磁気として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em07"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-02",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "10 Ωと5 Ωを並列接続した合成抵抗を選ぶ。",
+      "summary": "10 Ωと5 Ωを並列接続した合成抵抗を選ぶ。",
+      "conditions": {
+        "接続": "同じ二端子間へ並列に接続。"
+      },
+      "choices": {
+        "1": {
+          "value": "約0.2 Ω",
+          "verdict": "条件に不一致",
+          "reason": "0.2は5 Ωの逆数だが単位はSで、抵抗ではない。"
+        },
+        "2": {
+          "value": "約1.5 Ω",
+          "verdict": "条件に不一致",
+          "reason": "逆数の和を逆に戻した10/3 Ωと違う。"
+        },
+        "3": {
+          "value": "約3.3 Ω",
+          "verdict": "条件に一致",
+          "reason": "共通電圧で各電流を足した等価抵抗10/3 Ωに最も近い。"
+        },
+        "4": {
+          "value": "約7.5 Ω",
+          "verdict": "条件に不一致",
+          "reason": "合成抵抗が小さい方の5 Ωを超えており並列の性質に反する。"
+        },
+        "5": {
+          "value": "約15 Ω",
+          "verdict": "条件に不一致",
+          "reason": "10+5は直列接続の場合である。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_001.png"
+      ],
+      "core_concept": "並列抵抗の電流加算",
+      "required_knowledge": "オーム則、コンダクタンス、直列と並列。",
+      "solution": "\\(1/R=1/10+1/5=3/10\\)よりR=10/3 Ω≃3.3 Ωで3を選ぶ。並列では電圧が共通、電流が加算されるため、抵抗そのものではなくコンダクタンスを足す。",
+      "independent_answer": "3",
+      "answer_reason": "\\(1/R=1/10+1/5=3/10\\)よりR=10/3 Ω≃3.3 Ωで3を選ぶ。並列では電圧が共通、電流が加算されるため、抵抗そのものではなくコンダクタンスを足す。",
+      "learning_points": "並列抵抗の電流加算を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:dc"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_039",
+      "classification_reason": "原典全条件・全5肢から並列抵抗の電流加算を中心に電磁気として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em07"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-06",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "stem": "真空中の2点電荷間の静電気力の大きさを求める。",
+      "summary": "真空中の2点電荷間の静電気力の大きさを求める。",
+      "conditions": {
+        "電荷": "+2.0×10⁻⁶ C、+1.5×10⁻⁶ C",
+        "距離": "0.30 m",
+        "係数": "9.0×10⁹ N·m²/C²"
+      },
+      "choices": {
+        "1": {
+          "value": "0.10 N",
+          "verdict": "条件に不一致",
+          "reason": "距離の逆二乗で評価した0.30 Nに一致しない。"
+        },
+        "2": {
+          "value": "0.15 N",
+          "verdict": "条件に不一致",
+          "reason": "0.30 Nの半分であり、クーロン力へ1/2を掛ける理由がない。"
+        },
+        "3": {
+          "value": "0.30 N",
+          "verdict": "条件に一致",
+          "reason": "電荷の積と距離の逆二乗から0.30 Nとなる。"
+        },
+        "4": {
+          "value": "1.0 N",
+          "verdict": "条件に不一致",
+          "reason": "与えられた電荷と距離では0.30 Nである。"
+        },
+        "5": {
+          "value": "3.0 N",
+          "verdict": "条件に不一致",
+          "reason": "正しい値の10倍である。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/17_applied_science/page_002.png"
+      ],
+      "core_concept": "点電荷のクーロン力",
+      "required_knowledge": "電荷の符号、逆二乗則、単位と接頭語。",
+      "solution": "\\(F=k|q_1q_2|/r^2=9.0\\times10^9(2.0\\times10^{-6})(1.5\\times10^{-6})/0.30^2=0.30\\) N、3である。同符号なので互いに離れる方向の反発力であり、ここでは大きさを問う。",
+      "independent_answer": "3",
+      "answer_reason": "\\(F=k|q_1q_2|/r^2=9.0\\times10^9(2.0\\times10^{-6})(1.5\\times10^{-6})/0.30^2=0.30\\) N、3である。同符号なので互いに離れる方向の反発力であり、ここでは大きさを問う。",
+      "learning_points": "点電荷のクーロン力を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:coulomb"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_037",
+      "classification_reason": "原典全条件・全5肢から点電荷のクーロン力を中心に電磁気として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em02"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-03",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "stem": "静電場の閉曲面積分の法則名と、無限一様帯電平面の電場の大きさを選ぶ。",
+      "summary": "静電場の閉曲面積分の法則名と、無限一様帯電平面の電場の大きさを選ぶ。",
+      "conditions": {
+        "式": "\\(\\int_S E_n\\,dS=Q/\\varepsilon_0\\)",
+        "平面": "面電荷密度σ。両側に等しい大きさで逆向きの垂直電場。",
+        "組合せ": "法則名／電場の大きさ。"
+      },
+      "choices": {
+        "1": {
+          "value": "ガウス／\\(|\\sigma|/\\varepsilon_0\\)",
+          "verdict": "条件に不一致",
+          "reason": "法則名は合うが、両面から出る電束の係数2が抜ける。"
+        },
+        "2": {
+          "value": "ガウス／\\(|\\sigma|/(2\\varepsilon_0)\\)",
+          "verdict": "条件に一致",
+          "reason": "ガウス法則を薄い柱へ適用した2EA=|σ|A/ε0に一致する。"
+        },
+        "3": {
+          "value": "ガウス／\\(2|\\sigma|/\\varepsilon_0\\)",
+          "verdict": "条件に不一致",
+          "reason": "両面の電束を足すと電場は半分になり、2倍ではない。"
+        },
+        "4": {
+          "value": "クーロン／\\(|\\sigma|/\\varepsilon_0\\)",
+          "verdict": "条件に不一致",
+          "reason": "原典の閉曲面積分はガウス法則で、電場の値も2倍である。"
+        },
+        "5": {
+          "value": "クーロン／\\(|\\sigma|/(2\\varepsilon_0)\\)",
+          "verdict": "条件に不一致",
+          "reason": "電場値は合うが提示された法則名と違う。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/17_applied_science/page_002.png"
+      ],
+      "core_concept": "ガウス法則と対称性",
+      "required_knowledge": "電束、外向き法線、無限平面、二面の寄与。",
+      "solution": "平面をまたぐ薄い柱を閉曲面に選ぶ。側面の電場法線成分は0、二つの端面の寄与は各EAである。内部電荷の大きさは|σ|Aなので\\(2EA=|\\sigma|A/\\varepsilon_0\\)、2を選ぶ。一枚の帯電平面と、逆符号二枚の間の電場を混同しない。",
+      "independent_answer": "2",
+      "answer_reason": "平面をまたぐ薄い柱を閉曲面に選ぶ。側面の電場法線成分は0、二つの端面の寄与は各EAである。内部電荷の大きさは|σ|Aなので\\(2EA=|\\sigma|A/\\varepsilon_0\\)、2を選ぶ。一枚の帯電平面と、逆符号二枚の間の電場を混同しない。",
+      "learning_points": "ガウス法則と対称性を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:gauss"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_037",
+      "classification_reason": "原典全条件・全5肢からガウス法則と対称性を中心に電磁気として分類。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em04"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-04",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "負電荷を電場方向へゆっくり動かす外力の仕事から、電位差と電場の大きさを選ぶ。",
+      "summary": "負電荷を電場方向へゆっくり動かす外力の仕事から、電位差と電場の大きさを選ぶ。",
+      "conditions": {
+        "電荷": "−2 C",
+        "移動": "PからQ。電場の方向と移動方向は同じ。",
+        "外力の仕事": "80 J。ゆっくり移動し運動エネルギー変化を無視。",
+        "距離": "0.1 m",
+        "候補の順": "電位差／電場。電位差は候補に合わせ大きさを表す。"
+      },
+      "choices": {
+        "1": {
+          "value": "160 V／320 V·C",
+          "verdict": "条件に不一致",
+          "reason": "外力80 Jを電荷の絶対値2 Cで割ると40 Vであり、160 Vではない。"
+        },
+        "2": {
+          "value": "160 V／1600 V/m",
+          "verdict": "条件に不一致",
+          "reason": "電位差の大きさは40 Vで、電場も400 V/mである。"
+        },
+        "3": {
+          "value": "40 V／80 V·C",
+          "verdict": "条件に不一致",
+          "reason": "40 Vは合うがV·Cはエネルギーの単位で、電場ではない。"
+        },
+        "4": {
+          "value": "40 V／400 V/m",
+          "verdict": "条件に一致",
+          "reason": "電位差の大きさ40 V、電場の大きさ400 V/mで両単位も合う。"
+        },
+        "5": {
+          "value": "8 V／16 V·C",
+          "verdict": "条件に不一致",
+          "reason": "電位差は40 Vであり8 Vではなく、電場の単位も違う。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_002.png"
+      ],
+      "core_concept": "電位・外力仕事と負電荷の符号",
+      "required_knowledge": "準静的移動、位置エネルギーqV、E=−grad V、V/m=N/C。",
+      "solution": "外力の仕事は\\(W_{ext}=q(V_Q-V_P)\\)で、80=(−2)ΔVよりΔV=−40 Vである。電場方向へ進むと電位が下がるが、負電荷の位置エネルギーは増える。候補の電位差の大きさは40 V、\\(|E|=|\\Delta V|/d\\)=400 V/mなので4である。電場の仕事は−80 Jと逆符号になる。",
+      "independent_answer": "4",
+      "answer_reason": "外力の仕事は\\(W_{ext}=q(V_Q-V_P)\\)で、80=(−2)ΔVよりΔV=−40 Vである。電場方向へ進むと電位が下がるが、負電荷の位置エネルギーは増える。候補の電位差の大きさは40 V、\\(|E|=|\\Delta V|/d\\)=400 V/mなので4である。電場の仕事は−80 Jと逆符号になる。",
+      "learning_points": "電位・外力仕事と負電荷の符号を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:potential"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_037",
+      "classification_reason": "原典全条件・全5肢から電位・外力仕事と負電荷の符号を中心に電磁気として分類。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em03"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-08",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "stem": "負電荷を電場方向へゆっくり動かす外力の仕事から、電位差と電場の大きさを選ぶ。",
+      "summary": "負電荷を電場方向へゆっくり動かす外力の仕事から、電位差と電場の大きさを選ぶ。",
+      "conditions": {
+        "電荷": "−2 C",
+        "移動": "PからQ。電場の方向と移動方向は同じ。",
+        "外力の仕事": "80 J。ゆっくり移動し運動エネルギー変化を無視。",
+        "距離": "0.2 m",
+        "候補の順": "電位差／電場。電位差は候補に合わせ大きさを表す。"
+      },
+      "choices": {
+        "1": {
+          "value": "160 V／32 V·C",
+          "verdict": "条件に不一致",
+          "reason": "外力80 Jを電荷の絶対値2 Cで割ると40 Vであり、160 Vではない。"
+        },
+        "2": {
+          "value": "160 V／800 V/m",
+          "verdict": "条件に不一致",
+          "reason": "電位差の大きさは40 Vで、電場も200 V/mである。"
+        },
+        "3": {
+          "value": "40 V／200 V/m",
+          "verdict": "条件に一致",
+          "reason": "電位差の大きさ40 V、電場の大きさ200 V/mで両単位も合う。"
+        },
+        "4": {
+          "value": "40 V／400 V/m",
+          "verdict": "条件に不一致",
+          "reason": "40 Vは合うが距離は0.2 mなので電場は200 V/mである。"
+        },
+        "5": {
+          "value": "40 V／8 V·C",
+          "verdict": "条件に不一致",
+          "reason": "V·CはJに等しく、電場の単位V/mではない。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/17_applied_science/page_003.png"
+      ],
+      "core_concept": "電位・外力仕事と負電荷の符号",
+      "required_knowledge": "準静的移動、位置エネルギーqV、E=−grad V、V/m=N/C。",
+      "solution": "外力の仕事は\\(W_{ext}=q(V_Q-V_P)\\)で、80=(−2)ΔVよりΔV=−40 Vである。電場方向へ進むと電位が下がるが、負電荷の位置エネルギーは増える。候補の電位差の大きさは40 V、\\(|E|=|\\Delta V|/d\\)=200 V/mなので3である。電場の仕事は−80 Jと逆符号になる。",
+      "independent_answer": "3",
+      "answer_reason": "外力の仕事は\\(W_{ext}=q(V_Q-V_P)\\)で、80=(−2)ΔVよりΔV=−40 Vである。電場方向へ進むと電位が下がるが、負電荷の位置エネルギーは増える。候補の電位差の大きさは40 V、\\(|E|=|\\Delta V|/d\\)=200 V/mなので3である。電場の仕事は−80 Jと逆符号になる。",
+      "learning_points": "電位・外力仕事と負電荷の符号を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:potential"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_037",
+      "classification_reason": "原典全条件・全5肢から電位・外力仕事と負電荷の符号を中心に電磁気として分類。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em03"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-02",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "stem": "コイルを貫く磁束が一定速度で変わるときの誘導起電力の大きさを求める。",
+      "summary": "コイルを貫く磁束が一定速度で変わるときの誘導起電力の大きさを求める。",
+      "conditions": {
+        "巻数": "2000",
+        "磁束変化": "各巻きを貫く磁束が20秒で0.01 Wb変化。",
+        "速度": "一定の割合。1 Wb=1 V·s。"
+      },
+      "choices": {
+        "1": {
+          "value": "0.10 V",
+          "verdict": "条件に不一致",
+          "reason": "2000×0.01/20=1 Vと違う。"
+        },
+        "2": {
+          "value": "0.50 V",
+          "verdict": "条件に不一致",
+          "reason": "正しい値の1/2であり余分な係数がある。"
+        },
+        "3": {
+          "value": "1.0 V",
+          "verdict": "条件に一致",
+          "reason": "巻数×各巻きの磁束変化率に一致する。"
+        },
+        "4": {
+          "value": "2.5 V",
+          "verdict": "条件に不一致",
+          "reason": "磁束変化の時間20 sで割った1 Vと違う。"
+        },
+        "5": {
+          "value": "5.0 V",
+          "verdict": "条件に不一致",
+          "reason": "与えられた変化率では1 Vである。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/17_applied_science/page_001.png"
+      ],
+      "core_concept": "磁束鎖交数の変化と誘導",
+      "required_knowledge": "ファラデーの法則、巻数、Wb/s=V。",
+      "solution": "\\(|\\mathcal E|=N|\\Delta\\Phi|/\\Delta t=2000(0.01)/20=1.0\\) Vで3を選ぶ。一定速度なので平均変化率が任意の時点の変化率に等しい。向きは磁束変化を妨げるレンツの法則で決まり、ここでは大きさのみを求める。",
+      "independent_answer": "3",
+      "answer_reason": "\\(|\\mathcal E|=N|\\Delta\\Phi|/\\Delta t=2000(0.01)/20=1.0\\) Vで3を選ぶ。一定速度なので平均変化率が任意の時点の変化率に等しい。向きは磁束変化を妨げるレンツの法則で決まり、ここでは大きさのみを求める。",
+      "learning_points": "磁束鎖交数の変化と誘導を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:induction"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_038",
+      "classification_reason": "原典全条件・全5肢から磁束鎖交数の変化と誘導を中心に電磁気として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em10"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-03",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "電束密度・磁束密度を用いた電磁気の法則で、最も不適切なものを選ぶ。",
+      "summary": "電束密度・磁束密度を用いた電磁気の法則で、最も不適切なものを選ぶ。",
+      "conditions": {
+        "記号": "E=電場、D=電束密度、H=磁場、B=磁束密度、ρ=真電荷密度、i=伝導電流密度。",
+        "方向": "最も不適切な記述。"
+      },
+      "choices": {
+        "1": {
+          "value": "閉曲面を貫く電束は、内部にある真電荷の総量に等しい。",
+          "verdict": "適切",
+          "reason": "Dの閉曲面電束は自由電荷、原典の真電荷の総量に等しい。束縛電荷まで含むEの式と区別する。"
+        },
+        "2": {
+          "value": "\\(\\operatorname{rot}E=-\\partial B/\\partial t\\)は時間変化する磁束密度が電場を誘導する法則である。",
+          "verdict": "適切",
+          "reason": "ファラデーの法則の局所形で、負号は向きを表す。"
+        },
+        "3": {
+          "value": "\\(\\operatorname{div}B=0\\)は磁気単極子の存在を反映する。",
+          "verdict": "不適切",
+          "reason": "発散0は磁気単極子による湧き出し・吸込みがないという通常の電磁気学の式であり、存在と逆である。"
+        },
+        "4": {
+          "value": "\\(\\operatorname{rot}H=i+\\partial D/\\partial t\\)で\\(\\partial D/\\partial t\\)は変位電流密度である。",
+          "verdict": "適切",
+          "reason": "伝導電流に加える変位電流の項を正しく述べる。"
+        },
+        "5": {
+          "value": "磁場のガウス法則は時間変化する磁場にも成立する。",
+          "verdict": "適切",
+          "reason": "div B=0は静磁場だけの制限ではなく、マクスウェル方程式の一つである。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_001.png"
+      ],
+      "core_concept": "マクスウェル方程式と場の発散",
+      "required_knowledge": "自由電荷と束縛電荷、回転と発散、変位電流、磁気単極子。",
+      "solution": "磁場に関するガウス法則\\(\\operatorname{div}B=0\\)は、閉曲面を通る正味磁束が0であること、すなわち通常の理論で磁気単極子がないことを表す。「存在」を反映するとする3が誤りである。他の式は真電荷、磁束の変化、変位電流をそれぞれ扱う。",
+      "independent_answer": "3",
+      "answer_reason": "磁場に関するガウス法則\\(\\operatorname{div}B=0\\)は、閉曲面を通る正味磁束が0であること、すなわち通常の理論で磁気単極子がないことを表す。「存在」を反映するとする3が誤りである。他の式は真電荷、磁束の変化、変位電流をそれぞれ扱う。",
+      "learning_points": "マクスウェル方程式と場の発散を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:maxwell",
+        "theory:em:gauss"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_038",
+      "classification_reason": "原典全条件・全5肢からマクスウェル方程式と場の発散を中心に電磁気として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em13"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-04",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "電束密度・磁束密度を用いた電磁気の法則で、最も不適切なものを選ぶ。",
+      "summary": "電束密度・磁束密度を用いた電磁気の法則で、最も不適切なものを選ぶ。",
+      "conditions": {
+        "記号": "E=電場、D=電束密度、H=磁場、B=磁束密度、ρ=真電荷密度、i=伝導電流密度。",
+        "方向": "最も不適切な記述。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(\\operatorname{rot}E=-\\partial B/\\partial t\\)は時間変化する磁束密度が電場を誘導する法則である。",
+          "verdict": "適切",
+          "reason": "ファラデーの法則の局所形で、負号は向きを表す。"
+        },
+        "2": {
+          "value": "\\(\\operatorname{div}B=0\\)は磁気単極子の存在を反映する。",
+          "verdict": "不適切",
+          "reason": "発散0は磁気単極子による湧き出し・吸込みがないという通常の電磁気学の式であり、存在と逆である。"
+        },
+        "3": {
+          "value": "磁場のガウス法則は時間変化する磁場にも成立する。",
+          "verdict": "適切",
+          "reason": "div B=0は静磁場だけの制限ではなく、マクスウェル方程式の一つである。"
+        },
+        "4": {
+          "value": "閉曲面を貫く電束は、内部にある真電荷の総量に等しい。",
+          "verdict": "適切",
+          "reason": "Dの閉曲面電束は自由電荷、原典の真電荷の総量に等しい。束縛電荷まで含むEの式と区別する。"
+        },
+        "5": {
+          "value": "\\(\\operatorname{rot}H=i+\\partial D/\\partial t\\)で\\(\\partial D/\\partial t\\)は変位電流密度である。",
+          "verdict": "適切",
+          "reason": "伝導電流に加える変位電流の項を正しく述べる。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_002.png"
+      ],
+      "core_concept": "マクスウェル方程式と場の発散",
+      "required_knowledge": "自由電荷と束縛電荷、回転と発散、変位電流、磁気単極子。",
+      "solution": "磁場に関するガウス法則\\(\\operatorname{div}B=0\\)は、閉曲面を通る正味磁束が0であること、すなわち通常の理論で磁気単極子がないことを表す。「存在」を反映するとする2が誤りである。他の式は真電荷、磁束の変化、変位電流をそれぞれ扱う。",
+      "independent_answer": "2",
+      "answer_reason": "磁場に関するガウス法則\\(\\operatorname{div}B=0\\)は、閉曲面を通る正味磁束が0であること、すなわち通常の理論で磁気単極子がないことを表す。「存在」を反映するとする2が誤りである。他の式は真電荷、磁束の変化、変位電流をそれぞれ扱う。",
+      "learning_points": "マクスウェル方程式と場の発散を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:maxwell",
+        "theory:em:gauss"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_038",
+      "classification_reason": "原典全条件・全5肢からマクスウェル方程式と場の発散を中心に電磁気として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em13"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-04",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "誘電体とコンデンサーについて、最も不適切な説明を選ぶ。",
+      "summary": "誘電体とコンデンサーについて、最も不適切な説明を選ぶ。",
+      "conditions": {
+        "方向": "最も不適切。",
+        "モデル": "容量の比例関係は一様誘電体と平行平板の近似。"
+      },
+      "choices": {
+        "1": {
+          "value": "静電容量の単位はファラドFである。",
+          "verdict": "適切",
+          "reason": "C=Q/Vなので単位はC/V=Fである。"
+        },
+        "2": {
+          "value": "絶縁体を電場へ置いて電気双極子モーメントを持つことを強誘電性という。",
+          "verdict": "不適切",
+          "reason": "これは一般的な誘電分極である。強誘電性は外部電場なしの自発分極とその反転を特徴とする。"
+        },
+        "3": {
+          "value": "交流電場で電気エネルギーの一部が熱となることを誘電損失という。",
+          "verdict": "適切",
+          "reason": "分極の応答に損失があると電場からのエネルギーが熱へ散逸する。"
+        },
+        "4": {
+          "value": "可動電極の対向面積を変えると容量が変化する。",
+          "verdict": "適切",
+          "reason": "端効果を無視するとC=εA/dであり対向面積Aに依存する。"
+        },
+        "5": {
+          "value": "誘電体として酸化アルミニウムや酸化タンタルが使われる。",
+          "verdict": "適切",
+          "reason": "金属酸化物の薄い絶縁層を使う電解コンデンサーの例である。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_002.png"
+      ],
+      "core_concept": "誘電分極と強誘電性の区別",
+      "required_knowledge": "分極、容量、交流損失、電解コンデンサーの酸化膜。",
+      "solution": "電場による電気双極子の誘起・配向は分極であり、全ての誘電分極を強誘電性と呼ぶことはできない。外場0でも自発分極を持ち、それを電場で反転できることが強誘電体の特徴である。2を選ぶ。損失、材料、幾何学による容量変化は別の性質である。",
+      "independent_answer": "2",
+      "answer_reason": "電場による電気双極子の誘起・配向は分極であり、全ての誘電分極を強誘電性と呼ぶことはできない。外場0でも自発分極を持ち、それを電場で反転できることが強誘電体の特徴である。2を選ぶ。損失、材料、幾何学による容量変化は別の性質である。",
+      "learning_points": "誘電分極と強誘電性の区別を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:dielectric",
+        "theory:em:capacitor"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_037",
+      "classification_reason": "原典全条件・全5肢から誘電分極と強誘電性の区別を中心に電磁気として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em05",
+        "mit_ferroelectric"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-03",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "stem": "誘電体とコンデンサーについて、最も不適切な説明を選ぶ。",
+      "summary": "誘電体とコンデンサーについて、最も不適切な説明を選ぶ。",
+      "conditions": {
+        "方向": "最も不適切。",
+        "モデル": "容量の比例関係は一様誘電体と平行平板の近似。"
+      },
+      "choices": {
+        "1": {
+          "value": "絶縁体を電場へ置いて電気双極子モーメントを持つことを強誘電性という。",
+          "verdict": "不適切",
+          "reason": "これは一般的な誘電分極である。強誘電性は外部電場なしの自発分極とその反転を特徴とする。"
+        },
+        "2": {
+          "value": "交流電場で電気エネルギーの一部が熱となることを誘電損失という。",
+          "verdict": "適切",
+          "reason": "分極の応答に損失があると電場からのエネルギーが熱へ散逸する。"
+        },
+        "3": {
+          "value": "可動電極の対向面積を変えると容量が変化する。",
+          "verdict": "適切",
+          "reason": "端効果を無視するとC=εA/dであり対向面積Aに依存する。"
+        },
+        "4": {
+          "value": "誘電体として酸化アルミニウムや酸化タンタルが使われる。",
+          "verdict": "適切",
+          "reason": "金属酸化物の薄い絶縁層を使う電解コンデンサーの例である。"
+        },
+        "5": {
+          "value": "平行平板容量は誘電率に比例し、誘電体の厚さへ反比例する。",
+          "verdict": "適切",
+          "reason": "誘電体が一様に隙間を満たす平行平板近似ではC=εA/dである。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/17_applied_science/page_002.png"
+      ],
+      "core_concept": "誘電分極と強誘電性の区別",
+      "required_knowledge": "分極、容量、交流損失、電解コンデンサーの酸化膜。",
+      "solution": "電場による電気双極子の誘起・配向は分極であり、全ての誘電分極を強誘電性と呼ぶことはできない。外場0でも自発分極を持ち、それを電場で反転できることが強誘電体の特徴である。1を選ぶ。損失、材料、幾何学による容量変化は別の性質である。",
+      "independent_answer": "1",
+      "answer_reason": "電場による電気双極子の誘起・配向は分極であり、全ての誘電分極を強誘電性と呼ぶことはできない。外場0でも自発分極を持ち、それを電場で反転できることが強誘電体の特徴である。1を選ぶ。損失、材料、幾何学による容量変化は別の性質である。",
+      "learning_points": "誘電分極と強誘電性の区別を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:dielectric",
+        "theory:em:capacitor"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_037",
+      "classification_reason": "原典全条件・全5肢から誘電分極と強誘電性の区別を中心に電磁気として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em05",
+        "mit_ferroelectric"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-02",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "平行平板コンデンサーの容量と直列接続について、最も不適切なものを選ぶ。",
+      "summary": "平行平板コンデンサーの容量と直列接続について、最も不適切なものを選ぶ。",
+      "conditions": {
+        "方向": "最も不適切。",
+        "モデル": "平板の端効果を無視。容量比較では形状を固定。直列の2個は初め未充電。"
+      },
+      "choices": {
+        "1": {
+          "value": "比誘電率の大きな物質を極板間へ入れると容量は減少する。",
+          "verdict": "不適切",
+          "reason": "C=εA/dなので同じ形状では誘電率の増加で容量は増え、減少しない。"
+        },
+        "2": {
+          "value": "極板間距離を小さくすると容量は増える。",
+          "verdict": "適切",
+          "reason": "分母dが小さくなるとCが増える。"
+        },
+        "3": {
+          "value": "極板面積に比例して容量は増える。",
+          "verdict": "適切",
+          "reason": "面積Aが増えるとCも同じ割合で増える。"
+        },
+        "4": {
+          "value": "電気量が同じなら容量の小さい方が大きな電位差を持つ。",
+          "verdict": "適切",
+          "reason": "V=Q/CなのでQ一定ではCが小さいほどVが大きい。"
+        },
+        "5": {
+          "value": "未充電の2個を直列につないで電圧を加えると等しい電気量が蓄えられる。",
+          "verdict": "適切",
+          "reason": "漏れのない直列回路で中間導体が初めに中性なら、電荷保存で対向極板の電荷の大きさは等しい。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_001.png"
+      ],
+      "core_concept": "容量の幾何学と固定電荷",
+      "required_knowledge": "平行平板近似、比誘電率、V=Q/C、直列の電荷保存。",
+      "solution": "\\(C=\\varepsilon A/d\\)より誘電率、面積の増加と距離の減少は容量を大きくする。誘電率増加で容量が減るとする1が誤りである。Q一定の電圧はQ/C、未充電直列の同じ電気量は中間導体の電荷保存から確認する。",
+      "independent_answer": "1",
+      "answer_reason": "\\(C=\\varepsilon A/d\\)より誘電率、面積の増加と距離の減少は容量を大きくする。誘電率増加で容量が減るとする1が誤りである。Q一定の電圧はQ/C、未充電直列の同じ電気量は中間導体の電荷保存から確認する。",
+      "learning_points": "容量の幾何学と固定電荷を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:capacitor",
+        "theory:em:dielectric"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_037",
+      "classification_reason": "原典全条件・全5肢から容量の幾何学と固定電荷を中心に電磁気として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em05"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-03",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "平行平板コンデンサーの容量と直列接続について、最も不適切なものを選ぶ。",
+      "summary": "平行平板コンデンサーの容量と直列接続について、最も不適切なものを選ぶ。",
+      "conditions": {
+        "方向": "最も不適切。",
+        "モデル": "平板の端効果を無視。容量比較では形状を固定。直列の2個は初め未充電。"
+      },
+      "choices": {
+        "1": {
+          "value": "極板面積に比例して容量は増える。",
+          "verdict": "適切",
+          "reason": "面積Aが増えるとCも同じ割合で増える。"
+        },
+        "2": {
+          "value": "極板間距離を小さくすると容量は増える。",
+          "verdict": "適切",
+          "reason": "分母dが小さくなるとCが増える。"
+        },
+        "3": {
+          "value": "比誘電率の大きな物質を極板間へ入れると容量は減少する。",
+          "verdict": "不適切",
+          "reason": "C=εA/dなので同じ形状では誘電率の増加で容量は増え、減少しない。"
+        },
+        "4": {
+          "value": "未充電の2個を直列につないで電圧を加えると等しい電気量が蓄えられる。",
+          "verdict": "適切",
+          "reason": "漏れのない直列回路で中間導体が初めに中性なら、電荷保存で対向極板の電荷の大きさは等しい。"
+        },
+        "5": {
+          "value": "電気量が同じなら容量の小さい方が大きな電位差を持つ。",
+          "verdict": "適切",
+          "reason": "V=Q/CなのでQ一定ではCが小さいほどVが大きい。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_001.png"
+      ],
+      "core_concept": "容量の幾何学と固定電荷",
+      "required_knowledge": "平行平板近似、比誘電率、V=Q/C、直列の電荷保存。",
+      "solution": "\\(C=\\varepsilon A/d\\)より誘電率、面積の増加と距離の減少は容量を大きくする。誘電率増加で容量が減るとする3が誤りである。Q一定の電圧はQ/C、未充電直列の同じ電気量は中間導体の電荷保存から確認する。",
+      "independent_answer": "3",
+      "answer_reason": "\\(C=\\varepsilon A/d\\)より誘電率、面積の増加と距離の減少は容量を大きくする。誘電率増加で容量が減るとする3が誤りである。Q一定の電圧はQ/C、未充電直列の同じ電気量は中間導体の電荷保存から確認する。",
+      "learning_points": "容量の幾何学と固定電荷を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:capacitor",
+        "theory:em:dielectric"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_037",
+      "classification_reason": "原典全条件・全5肢から容量の幾何学と固定電荷を中心に電磁気として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em05"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-03",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "直列RLC回路のインピーダンスの大きさが最小となる交流周波数を求める。",
+      "summary": "直列RLC回路のインピーダンスの大きさが最小となる交流周波数を求める。",
+      "conditions": {
+        "抵抗": "100 Ω",
+        "インダクタンス": "1 mH",
+        "容量": "0.1 μF",
+        "接続": "抵抗・コイル・コンデンサーを直列。理想的な周波数一定素子の定常交流。"
+      },
+      "choices": {
+        "1": {
+          "value": "1 kHz",
+          "verdict": "条件に不一致",
+          "reason": "SIへ換算した共振周波数は約15.9155 kHzであり、この候補より離れる。"
+        },
+        "2": {
+          "value": "5.1 kHz",
+          "verdict": "条件に不一致",
+          "reason": "SIへ換算した共振周波数は約15.9155 kHzであり、この候補より離れる。"
+        },
+        "3": {
+          "value": "16 kHz",
+          "verdict": "条件に一致",
+          "reason": "リアクタンスが相殺する約15.9155 kHzに最も近い。"
+        },
+        "4": {
+          "value": "100 kHz",
+          "verdict": "条件に不一致",
+          "reason": "SIへ換算した共振周波数は約15.9155 kHzであり、この候補より離れる。"
+        },
+        "5": {
+          "value": "630 kHz",
+          "verdict": "条件に不一致",
+          "reason": "SIへ換算した共振周波数は約15.9155 kHzであり、この候補より離れる。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_001.png"
+      ],
+      "core_concept": "直列RLCのリアクタンス相殺",
+      "required_knowledge": "複素インピーダンス、角周波数と周波数、m=10⁻³、μ=10⁻⁶。",
+      "solution": "\\(Z=R+j(\\omega L-1/(\\omega C))\\)なので大きさの二乗は\\(R^2+(\\omega L-1/(\\omega C))^2\\)となる。非負の第2項が0となる\\(f_0=1/(2\\pi\\sqrt{LC})\\)で最小である。mHとμFをHとFへ換算すると約15.9155 kHz、3を選ぶ。Rは最小値を決めるが、この理想モデルの共振周波数は変えない。",
+      "independent_answer": "3",
+      "answer_reason": "\\(Z=R+j(\\omega L-1/(\\omega C))\\)なので大きさの二乗は\\(R^2+(\\omega L-1/(\\omega C))^2\\)となる。非負の第2項が0となる\\(f_0=1/(2\\pi\\sqrt{LC})\\)で最小である。mHとμFをHとFへ換算すると約15.9155 kHz、3を選ぶ。Rは最小値を決めるが、この理想モデルの共振周波数は変えない。",
+      "learning_points": "直列RLCのリアクタンス相殺を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:rlc"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_039",
+      "classification_reason": "原典全条件・全5肢から直列RLCのリアクタンス相殺を中心に電磁気として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em12"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-04",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "stem": "直列RLC回路のインピーダンスの大きさが最小となる交流周波数を求める。",
+      "summary": "直列RLC回路のインピーダンスの大きさが最小となる交流周波数を求める。",
+      "conditions": {
+        "抵抗": "2 kΩ",
+        "インダクタンス": "5 mH",
+        "容量": "2 μF",
+        "接続": "抵抗・コイル・コンデンサーを直列。理想的な周波数一定素子の定常交流。"
+      },
+      "choices": {
+        "1": {
+          "value": "1.6 kHz",
+          "verdict": "条件に一致",
+          "reason": "リアクタンスが相殺する約1.5915 kHzに最も近い。"
+        },
+        "2": {
+          "value": "5.1 kHz",
+          "verdict": "条件に不一致",
+          "reason": "SIへ換算した共振周波数は約1.5915 kHzであり、この候補より離れる。"
+        },
+        "3": {
+          "value": "10 kHz",
+          "verdict": "条件に不一致",
+          "reason": "SIへ換算した共振周波数は約1.5915 kHzであり、この候補より離れる。"
+        },
+        "4": {
+          "value": "100 kHz",
+          "verdict": "条件に不一致",
+          "reason": "SIへ換算した共振周波数は約1.5915 kHzであり、この候補より離れる。"
+        },
+        "5": {
+          "value": "630 kHz",
+          "verdict": "条件に不一致",
+          "reason": "SIへ換算した共振周波数は約1.5915 kHzであり、この候補より離れる。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/17_applied_science/page_002.png"
+      ],
+      "core_concept": "直列RLCのリアクタンス相殺",
+      "required_knowledge": "複素インピーダンス、角周波数と周波数、m=10⁻³、μ=10⁻⁶。",
+      "solution": "\\(Z=R+j(\\omega L-1/(\\omega C))\\)なので大きさの二乗は\\(R^2+(\\omega L-1/(\\omega C))^2\\)となる。非負の第2項が0となる\\(f_0=1/(2\\pi\\sqrt{LC})\\)で最小である。mHとμFをHとFへ換算すると約1.5915 kHz、1を選ぶ。Rは最小値を決めるが、この理想モデルの共振周波数は変えない。",
+      "independent_answer": "1",
+      "answer_reason": "\\(Z=R+j(\\omega L-1/(\\omega C))\\)なので大きさの二乗は\\(R^2+(\\omega L-1/(\\omega C))^2\\)となる。非負の第2項が0となる\\(f_0=1/(2\\pi\\sqrt{LC})\\)で最小である。mHとμFをHとFへ換算すると約1.5915 kHz、1を選ぶ。Rは最小値を決めるが、この理想モデルの共振周波数は変えない。",
+      "learning_points": "直列RLCのリアクタンス相殺を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:rlc"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_039",
+      "classification_reason": "原典全条件・全5肢から直列RLCのリアクタンス相殺を中心に電磁気として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em12"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-03",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "stem": "直列RLC回路のインピーダンスの大きさが最小となる交流周波数を求める。",
+      "summary": "直列RLC回路のインピーダンスの大きさが最小となる交流周波数を求める。",
+      "conditions": {
+        "抵抗": "200 Ω",
+        "インダクタンス": "5.0 mH",
+        "容量": "0.50 μF",
+        "接続": "抵抗・コイル・コンデンサーを直列。理想的な周波数一定素子の定常交流。"
+      },
+      "choices": {
+        "1": {
+          "value": "3.2 kHz",
+          "verdict": "条件に一致",
+          "reason": "リアクタンスが相殺する約3.1831 kHzに最も近い。"
+        },
+        "2": {
+          "value": "6.3 kHz",
+          "verdict": "条件に不一致",
+          "reason": "SIへ換算した共振周波数は約3.1831 kHzであり、この候補より離れる。"
+        },
+        "3": {
+          "value": "20 kHz",
+          "verdict": "条件に不一致",
+          "reason": "SIへ換算した共振周波数は約3.1831 kHzであり、この候補より離れる。"
+        },
+        "4": {
+          "value": "64 kHz",
+          "verdict": "条件に不一致",
+          "reason": "SIへ換算した共振周波数は約3.1831 kHzであり、この候補より離れる。"
+        },
+        "5": {
+          "value": "130 kHz",
+          "verdict": "条件に不一致",
+          "reason": "SIへ換算した共振周波数は約3.1831 kHzであり、この候補より離れる。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/17_applied_science/page_002.png"
+      ],
+      "core_concept": "直列RLCのリアクタンス相殺",
+      "required_knowledge": "複素インピーダンス、角周波数と周波数、m=10⁻³、μ=10⁻⁶。",
+      "solution": "\\(Z=R+j(\\omega L-1/(\\omega C))\\)なので大きさの二乗は\\(R^2+(\\omega L-1/(\\omega C))^2\\)となる。非負の第2項が0となる\\(f_0=1/(2\\pi\\sqrt{LC})\\)で最小である。mHとμFをHとFへ換算すると約3.1831 kHz、1を選ぶ。Rは最小値を決めるが、この理想モデルの共振周波数は変えない。",
+      "independent_answer": "1",
+      "answer_reason": "\\(Z=R+j(\\omega L-1/(\\omega C))\\)なので大きさの二乗は\\(R^2+(\\omega L-1/(\\omega C))^2\\)となる。非負の第2項が0となる\\(f_0=1/(2\\pi\\sqrt{LC})\\)で最小である。mHとμFをHとFへ換算すると約3.1831 kHz、1を選ぶ。Rは最小値を決めるが、この理想モデルの共振周波数は変えない。",
+      "learning_points": "直列RLCのリアクタンス相殺を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:rlc"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_039",
+      "classification_reason": "原典全条件・全5肢から直列RLCのリアクタンス相殺を中心に電磁気として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em12"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-03",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "stem": "電流と電気抵抗について、最も不適切な記述を選ぶ。",
+      "summary": "電流と電気抵抗について、最も不適切な記述を選ぶ。",
+      "conditions": {
+        "対象": "一定の抵抗率を持つ一様な導体。オーム則を使う際は温度等を固定。"
+      },
+      "choices": {
+        "1": {
+          "value": "電流は断面を単位時間に通過する電気量である。",
+          "verdict": "適切",
+          "reason": "I=dQ/dtという定義に一致する。"
+        },
+        "2": {
+          "value": "自由電子は負電荷なので電場と逆向きの力を受けて流れる。",
+          "verdict": "適切",
+          "reason": "電気力qEでq<0なので力はEと逆向きである。"
+        },
+        "3": {
+          "value": "抵抗は断面積に比例し長さに反比例する。",
+          "verdict": "不適切",
+          "reason": "R=ρL/Aであり、長さと断面積の比例・反比例が逆である。"
+        },
+        "4": {
+          "value": "電力は単位時間の仕事で、電圧の二乗に比例し抵抗へ反比例する。",
+          "verdict": "適切",
+          "reason": "抵抗性負荷ではP=VI=V²/Rとなる。"
+        },
+        "5": {
+          "value": "電流は電圧に比例し、抵抗が大きいほど流れにくい。",
+          "verdict": "適切",
+          "reason": "オーム性導体のI=V/Rに一致する。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/17_applied_science/page_002.png"
+      ],
+      "core_concept": "抵抗率と導体の幾何学",
+      "required_knowledge": "電流の定義、電子の電荷、オーム則、ジュール電力。",
+      "solution": "一様導体では長いほど衝突する経路が増え、太いほど電流の経路が増える。\\(R=\\rho L/A\\)なので3の比例関係が逆である。電力と電流の関係はオーム性・温度一定という条件で読む。",
+      "independent_answer": "3",
+      "answer_reason": "一様導体では長いほど衝突する経路が増え、太いほど電流の経路が増える。\\(R=\\rho L/A\\)なので3の比例関係が逆である。電力と電流の関係はオーム性・温度一定という条件で読む。",
+      "learning_points": "抵抗率と導体の幾何学を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:dc",
+        "theory:em:resistivity"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_039",
+      "classification_reason": "原典全条件・全5肢から抵抗率と導体の幾何学を中心に電磁気として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em06"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-04",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "stem": "小さな電流素片が作る磁場を与える法則名を選ぶ。",
+      "summary": "小さな電流素片が作る磁場を与える法則名を選ぶ。",
+      "conditions": {
+        "対象": "定常電流の微小素片が作る磁場。"
+      },
+      "choices": {
+        "1": {
+          "value": "クーロンの法則",
+          "verdict": "条件に不一致",
+          "reason": "点電荷の静電気力を与え、電流素片の磁場ではない。"
+        },
+        "2": {
+          "value": "プランクの法則",
+          "verdict": "条件に不一致",
+          "reason": "黒体の熱放射スペクトルの法則である。"
+        },
+        "3": {
+          "value": "ビオ・サバールの法則",
+          "verdict": "条件に一致",
+          "reason": "定常電流素片Idℓから磁束密度dBを与える法則である。"
+        },
+        "4": {
+          "value": "ファラデーの誘導法則",
+          "verdict": "条件に不一致",
+          "reason": "磁束の時間変化による誘導起電力を与える。"
+        },
+        "5": {
+          "value": "キュリー・ワイスの法則",
+          "verdict": "条件に不一致",
+          "reason": "磁性体の磁化率の温度依存を扱う。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/17_applied_science/page_002.png"
+      ],
+      "core_concept": "電流素片から磁場を作る法則",
+      "required_knowledge": "定常電流、外積、重ね合わせ、磁束の時間変化との違い。",
+      "solution": "微小素片の寄与は\\(dB=\\mu_0 I(d\\ell\\times\\hat r)/(4\\pi r^2)\\)というビオ・サバールの法則で与えられ、3である。素片を積分して導線全体の場を求める。誘導起電力の法則と、電流を源とする場の法則を区別する。",
+      "independent_answer": "3",
+      "answer_reason": "微小素片の寄与は\\(dB=\\mu_0 I(d\\ell\\times\\hat r)/(4\\pi r^2)\\)というビオ・サバールの法則で与えられ、3である。素片を積分して導線全体の場を求める。誘導起電力の法則と、電流を源とする場の法則を区別する。",
+      "learning_points": "電流素片から磁場を作る法則を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:biot"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_038",
+      "classification_reason": "原典全条件・全5肢から電流素片から磁場を作る法則を中心に電磁気として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em09"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-03",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "stem": "小さな電流素片が作る磁場を与える法則名を選ぶ。",
+      "summary": "小さな電流素片が作る磁場を与える法則名を選ぶ。",
+      "conditions": {
+        "対象": "定常電流の微小素片が作る磁場。"
+      },
+      "choices": {
+        "1": {
+          "value": "プランクの法則",
+          "verdict": "条件に不一致",
+          "reason": "黒体の熱放射スペクトルの法則である。"
+        },
+        "2": {
+          "value": "クーロンの法則",
+          "verdict": "条件に不一致",
+          "reason": "点電荷の静電気力を与え、電流素片の磁場ではない。"
+        },
+        "3": {
+          "value": "ファラデーの誘導法則",
+          "verdict": "条件に不一致",
+          "reason": "磁束の時間変化による誘導起電力を与える。"
+        },
+        "4": {
+          "value": "ビオ・サバールの法則",
+          "verdict": "条件に一致",
+          "reason": "定常電流素片Idℓから磁束密度dBを与える法則である。"
+        },
+        "5": {
+          "value": "キュリー・ワイスの法則",
+          "verdict": "条件に不一致",
+          "reason": "磁性体の磁化率の温度依存を扱う。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/17_applied_science/page_001.png"
+      ],
+      "core_concept": "電流素片から磁場を作る法則",
+      "required_knowledge": "定常電流、外積、重ね合わせ、磁束の時間変化との違い。",
+      "solution": "微小素片の寄与は\\(dB=\\mu_0 I(d\\ell\\times\\hat r)/(4\\pi r^2)\\)というビオ・サバールの法則で与えられ、4である。素片を積分して導線全体の場を求める。誘導起電力の法則と、電流を源とする場の法則を区別する。",
+      "independent_answer": "4",
+      "answer_reason": "微小素片の寄与は\\(dB=\\mu_0 I(d\\ell\\times\\hat r)/(4\\pi r^2)\\)というビオ・サバールの法則で与えられ、4である。素片を積分して導線全体の場を求める。誘導起電力の法則と、電流を源とする場の法則を区別する。",
+      "learning_points": "電流素片から磁場を作る法則を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:biot"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_038",
+      "classification_reason": "原典全条件・全5肢から電流素片から磁場を作る法則を中心に電磁気として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em09"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-03",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "stem": "電流の定義、向き、磁場、単位の4空欄の組合せを選ぶ。",
+      "summary": "電流の定義、向き、磁場、単位の4空欄の組合せを選ぶ。",
+      "conditions": {
+        "A": "電流が表す何の流れか。",
+        "B": "電流方向と逆に移動するAの符号。",
+        "C": "電流方向に対する、直線電流の周囲の磁場方向。",
+        "D": "アンペアの表現。",
+        "並び": "A／B／C／D。"
+      },
+      "choices": {
+        "1": {
+          "value": "原子／負／垂直／C/s",
+          "verdict": "条件に不一致",
+          "reason": "電流は一般に電荷の流れで、原子に限定されない。"
+        },
+        "2": {
+          "value": "電子／正／垂直／C/s",
+          "verdict": "条件に不一致",
+          "reason": "電子は負であり、正の電子が逆方向へ進むという表現は合わない。"
+        },
+        "3": {
+          "value": "イオン／正／平行／C/m²",
+          "verdict": "条件に不一致",
+          "reason": "正電荷の移動方向は電流方向と同じで、磁場と単位も違う。"
+        },
+        "4": {
+          "value": "電荷／負／平行／C/m²",
+          "verdict": "条件に不一致",
+          "reason": "最初の二語は合うが、直線電流の磁場は周方向で電流へ垂直、単位はC/sである。"
+        },
+        "5": {
+          "value": "電荷／負／垂直／C/s",
+          "verdict": "条件に一致",
+          "reason": "電荷の流れ、負の移動と逆向き、垂直、C/sの4条件が全て合う。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/17_applied_science/page_001.png"
+      ],
+      "core_concept": "電流の符号規約と単位",
+      "required_knowledge": "電荷輸送、正負の担い手、右ねじ、アンペア。",
+      "solution": "電流は電荷の移動を数える。正電荷の移動方向を正とするため、負電荷の移動と電流は逆向きになる。直線電流の周囲の磁場は電流を囲む円周方向、1 A=1 C/sで5を選ぶ。電流の担い手を電子だけへ限定しない。",
+      "independent_answer": "5",
+      "answer_reason": "電流は電荷の移動を数える。正電荷の移動方向を正とするため、負電荷の移動と電流は逆向きになる。直線電流の周囲の磁場は電流を囲む円周方向、1 A=1 C/sで5を選ぶ。電流の担い手を電子だけへ限定しない。",
+      "learning_points": "電流の符号規約と単位を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:dc",
+        "theory:em:biot"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_039",
+      "classification_reason": "原典全条件・全5肢から電流の符号規約と単位を中心に電磁気として分類。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em06",
+        "mit_em09"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-04",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "stem": "電磁気の基本法則の説明で、最も不適切なものを選ぶ。",
+      "summary": "電磁気の基本法則の説明で、最も不適切なものを選ぶ。",
+      "conditions": {
+        "注意": "③の原典は二箇所とも電束と記す。磁束へ書き換えて読まない。",
+        "方向": "最も不適切。"
+      },
+      "choices": {
+        "1": {
+          "value": "閉曲面を貫く電束は内部の真電荷の量に等しく、電場のガウス法則である。",
+          "verdict": "適切",
+          "reason": "Dの閉曲面電束を内部真電荷へ対応させる説明である。"
+        },
+        "2": {
+          "value": "ビオ・サバールの法則は定常電流が作る磁場を決める。",
+          "verdict": "適切",
+          "reason": "電流素片から場を積分する定常磁場の法則である。"
+        },
+        "3": {
+          "value": "閉回路を貫く電束が変化すると、電束変化を妨げる起電力が生じることをファラデーの法則という。",
+          "verdict": "不適切",
+          "reason": "誘導起電力は磁束の変化に対応する。電束変化はアンペール・マクスウェルの変位電流側の量である。"
+        },
+        "4": {
+          "value": "領域の総電荷の時間変化は閉曲面を通じた電荷の正味の出入りと対応し、電気量保存を表す。",
+          "verdict": "適切",
+          "reason": "外向き電流を正に取ればdQ/dt=−∫i·n dSである。原典の出入りは符号付きの正味量として読む。"
+        },
+        "5": {
+          "value": "マクスウェル方程式は電磁場の基本方程式で19世紀に提出された。",
+          "verdict": "適切",
+          "reason": "マクスウェルが19世紀に電磁気の法則をまとめたという説明に合う。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/17_applied_science/page_002.png"
+      ],
+      "core_concept": "電束の変化と磁束の変化",
+      "required_knowledge": "ガウス、ビオ・サバール、ファラデー、連続の式、変位電流。",
+      "solution": "3の決め手は原典の「電束」である。ファラデーの法則は\\(\\mathcal E=-d\\Phi_B/dt\\)と磁束を用いる。電束変化による変位電流と混同しているため3を選ぶ。保存則の「出入り」は流入を正にした正味量として区別する。",
+      "independent_answer": "3",
+      "answer_reason": "3の決め手は原典の「電束」である。ファラデーの法則は\\(\\mathcal E=-d\\Phi_B/dt\\)と磁束を用いる。電束変化による変位電流と混同しているため3を選ぶ。保存則の「出入り」は流入を正にした正味量として区別する。",
+      "learning_points": "電束の変化と磁束の変化を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:induction",
+        "theory:em:maxwell"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_038",
+      "classification_reason": "原典全条件・全5肢から電束の変化と磁束の変化を中心に電磁気として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em10",
+        "mit_em13"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-06",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "stem": "直流回路と抵抗の説明で、最も不適切なものを選ぶ。",
+      "summary": "直流回路と抵抗の説明で、最も不適切なものを選ぶ。",
+      "conditions": {
+        "対象": "定常直流、真性半導体、純金属の抵抗。",
+        "方向": "最も不適切。"
+      },
+      "choices": {
+        "1": {
+          "value": "二点間の電位差はどの経路で測っても同じである。",
+          "verdict": "適切",
+          "reason": "静電的・定常直流の近似では電位は一価な関数であり経路に依存しない。"
+        },
+        "2": {
+          "value": "真性半導体では温度上昇で電気抵抗が減る。",
+          "verdict": "適切",
+          "reason": "熱励起により担い手が増え、真性領域では抵抗が減る。"
+        },
+        "3": {
+          "value": "純金属に少量の不純物を混ぜると抵抗は増える。",
+          "verdict": "適切",
+          "reason": "不純物による電子散乱が増え、残留抵抗等が大きくなる。"
+        },
+        "4": {
+          "value": "多くの導体の抵抗率は温度の二乗に比例する。",
+          "verdict": "不適切",
+          "reason": "室温近傍の金属では基準温度からの変化を一次近似することが多い。特定低温域のT²項を多くの導体の一般則にできない。"
+        },
+        "5": {
+          "value": "消費電力は単位時間あたり消費するエネルギーである。",
+          "verdict": "適切",
+          "reason": "P=dW/dtであり、単位J/s=Wである。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/17_applied_science/page_003.png"
+      ],
+      "core_concept": "抵抗の温度依存と材料の区別",
+      "required_knowledge": "金属の散乱、残留抵抗、真性キャリア、近似の温度範囲。",
+      "solution": "4は材料と温度域を限定せず二乗比例を一般則とする点が誤りである。金属の室温近傍では\\(\\rho(T)\\simeq\\rho(T_0)[1+\\alpha(T-T_0)]\\)と近似し、真性半導体では担い手の熱励起が支配する。低温でT²項が現れる場合まで否定するのではない。",
+      "independent_answer": "4",
+      "answer_reason": "4は材料と温度域を限定せず二乗比例を一般則とする点が誤りである。金属の室温近傍では\\(\\rho(T)\\simeq\\rho(T_0)[1+\\alpha(T-T_0)]\\)と近似し、真性半導体では担い手の熱励起が支配する。低温でT²項が現れる場合まで否定するのではない。",
+      "learning_points": "抵抗の温度依存と材料の区別を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:resistivity",
+        "theory:em:potential"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_039",
+      "classification_reason": "原典全条件・全5肢から抵抗の温度依存と材料の区別を中心に電磁気として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em06",
+        "mit_semiconductor"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-04",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "stem": "充電したコンデンサーを抵抗0のコイルへ接続し、最大電流時のコイルエネルギーを求める。",
+      "summary": "充電したコンデンサーを抵抗0のコイルへ接続し、最大電流時のコイルエネルギーを求める。",
+      "conditions": {
+        "容量": "2.0×10⁻¹⁰ F",
+        "初期電圧": "5.0 V",
+        "インダクタンス": "5.0×10⁻³ H",
+        "抵抗": "0。理想LC振動。"
+      },
+      "choices": {
+        "1": {
+          "value": "0 J",
+          "verdict": "条件に不一致",
+          "reason": "最大電流時はコイルの磁場エネルギーが最大であり0でない。"
+        },
+        "2": {
+          "value": "\\(1.3\\times10^{-9}\\) J",
+          "verdict": "条件に不一致",
+          "reason": "初期エネルギーの約半分だが、最大電流では電気エネルギーは0となり全量が磁気側へ移る。"
+        },
+        "3": {
+          "value": "\\(2.5\\times10^{-9}\\) J",
+          "verdict": "条件に一致",
+          "reason": "初期のCV²/2=2.5×10⁻⁹ Jに一致する。"
+        },
+        "4": {
+          "value": "\\(5.0\\times10^{-9}\\) J",
+          "verdict": "条件に不一致",
+          "reason": "係数1/2を落としたCV²の値である。"
+        },
+        "5": {
+          "value": "\\(7.5\\times10^{-9}\\) J",
+          "verdict": "条件に不一致",
+          "reason": "保存される初期エネルギーの3倍である。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/17_applied_science/page_002.png"
+      ],
+      "core_concept": "LC振動の電気・磁気エネルギー交換",
+      "required_knowledge": "無散逸振動、コンデンサーとコイルのエネルギー、最大値の時点。",
+      "solution": "抵抗0なので全エネルギー\\(Q^2/(2C)+LI^2/2\\)は一定である。電流最大時はQ=0、初期の\\(CV_0^2/2=(2.0\\times10^{-10})5.0^2/2=2.5\\times10^{-9}\\) Jが全てコイルにある。3を選ぶ。Lは最大電流を決めるが、問われる全エネルギーは初期条件から決まる。",
+      "independent_answer": "3",
+      "answer_reason": "抵抗0なので全エネルギー\\(Q^2/(2C)+LI^2/2\\)は一定である。電流最大時はQ=0、初期の\\(CV_0^2/2=(2.0\\times10^{-10})5.0^2/2=2.5\\times10^{-9}\\) Jが全てコイルにある。3を選ぶ。Lは最大電流を決めるが、問われる全エネルギーは初期条件から決まる。",
+      "learning_points": "LC振動の電気・磁気エネルギー交換を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:lc",
+        "theory:em:energy"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_039",
+      "classification_reason": "原典全条件・全5肢からLC振動の電気・磁気エネルギー交換を中心に電磁気として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em11"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-03",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "stem": "電荷を固定した平行平板の間隔と誘電率を変え、極板間引力の比を選ぶ。",
+      "summary": "電荷を固定した平行平板の間隔と誘電率を変え、極板間引力の比を選ぶ。",
+      "conditions": {
+        "初期": "真空、間隔d、帯電量Q、引力F0。",
+        "変更": "間隔5d、比誘電率5の誘電体で全間隙を満たす。",
+        "固定量": "Qは変わらない。",
+        "モデル": "同じ面積A、端効果なし、一様な線形誘電体。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(F=F_0/25\\)",
+          "verdict": "条件に不一致",
+          "reason": "固定Qで引力は間隔に依存しないため、距離の逆二乗だけを使うのは違う。"
+        },
+        "2": {
+          "value": "\\(F=F_0/5\\)",
+          "verdict": "条件に一致",
+          "reason": "F=Q²/(2εA)でεが5倍となり1/5である。"
+        },
+        "3": {
+          "value": "\\(F=F_0\\)",
+          "verdict": "条件に不一致",
+          "reason": "εの増加による引力減少を無視している。"
+        },
+        "4": {
+          "value": "\\(F=5F_0\\)",
+          "verdict": "条件に不一致",
+          "reason": "固定Qでは引力はεに反比例し、比例ではない。"
+        },
+        "5": {
+          "value": "\\(F=25F_0\\)",
+          "verdict": "条件に不一致",
+          "reason": "電荷固定の平板モデルでは25倍となる要因はない。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/17_applied_science/page_002.png"
+      ],
+      "core_concept": "固定電荷のエネルギー微分と静電力",
+      "required_knowledge": "容量、固定する量、平板近似、力とエネルギーの微分。",
+      "solution": "固定Qのエネルギーは\\(U=Q^2/(2C)=Q^2d/(2\\varepsilon A)\\)であり、間隔方向の引力の大きさは\\(F=\\partial U/\\partial d=Q^2/(2\\varepsilon A)\\)となる。εが5ε0へ変わるのでF=F0/5、2である。間隔5倍で容量は初期と同じになるが、力はエネルギーの間隔微分であり同じとは限らない。",
+      "independent_answer": "2",
+      "answer_reason": "固定Qのエネルギーは\\(U=Q^2/(2C)=Q^2d/(2\\varepsilon A)\\)であり、間隔方向の引力の大きさは\\(F=\\partial U/\\partial d=Q^2/(2\\varepsilon A)\\)となる。εが5ε0へ変わるのでF=F0/5、2である。間隔5倍で容量は初期と同じになるが、力はエネルギーの間隔微分であり同じとは限らない。",
+      "learning_points": "固定電荷のエネルギー微分と静電力を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:force",
+        "theory:em:capacitor"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_037",
+      "classification_reason": "原典全条件・全5肢から固定電荷のエネルギー微分と静電力を中心に電磁気として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em05"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-04",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "stem": "静電場、磁場中の運動、誘導、エネルギー流の説明で最も不適切なものを選ぶ。",
+      "summary": "静電場、磁場中の運動、誘導、エネルギー流の説明で最も不適切なものを選ぶ。",
+      "conditions": {
+        "方向": "最も不適切。",
+        "導体": "孤立導体球を帯電させた静電平衡。",
+        "運動": "磁場に垂直な初速度、磁場以外の力なし。"
+      },
+      "choices": {
+        "1": {
+          "value": "点電荷間の力は距離の二乗に反比例する。",
+          "verdict": "適切",
+          "reason": "クーロン力の逆二乗則に一致する。"
+        },
+        "2": {
+          "value": "帯電導体球の内部電場は中心からの距離の二乗に反比例する。",
+          "verdict": "不適切",
+          "reason": "静電平衡の導体内部はE=0である。逆二乗場は孤立球の外側の説明である。"
+        },
+        "3": {
+          "value": "磁場に垂直な速度を持つ荷電粒子は、速度に垂直な力で円運動する。",
+          "verdict": "適切",
+          "reason": "qv×Bは速度へ垂直で速さを変えず、向きを変える。"
+        },
+        "4": {
+          "value": "起電力の大きさは回路を貫く磁束の時間変化率に比例する。",
+          "verdict": "適切",
+          "reason": "ファラデーの法則の大きさに一致する。"
+        },
+        "5": {
+          "value": "ポインティングベクトルはエネルギー流の密度で、電場・磁場に垂直である。",
+          "verdict": "適切",
+          "reason": "S=E×Hでエネルギー流密度W/m²を表し、外積なので双方へ垂直である。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/17_applied_science/page_002.png"
+      ],
+      "core_concept": "静電平衡導体の内外と電磁場",
+      "required_knowledge": "導体遮蔽、クーロン則、ローレンツ力、磁束、外積と流密度。",
+      "solution": "導体内に非零の電場が残ると自由電荷が移動して平衡ではなくなる。静電平衡では内部電場は0で、表面の外側には点電荷に相当する逆二乗場がある。内外を入れ替えた2を選ぶ。磁気力は仕事をせず、エネルギー輸送はポインティングベクトルで記述する。",
+      "independent_answer": "2",
+      "answer_reason": "導体内に非零の電場が残ると自由電荷が移動して平衡ではなくなる。静電平衡では内部電場は0で、表面の外側には点電荷に相当する逆二乗場がある。内外を入れ替えた2を選ぶ。磁気力は仕事をせず、エネルギー輸送はポインティングベクトルで記述する。",
+      "learning_points": "静電平衡導体の内外と電磁場を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:gauss",
+        "theory:em:lorentz",
+        "theory:em:poynting"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_038",
+      "classification_reason": "原典全条件・全5肢から静電平衡導体の内外と電磁場を中心に電磁気として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em04",
+        "mit_em13",
+        "mit_lorentz"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-04",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "磁性体で満たしたソレノイド内部の磁束密度を計算する。",
+      "summary": "磁性体で満たしたソレノイド内部の磁束密度を計算する。",
+      "conditions": {
+        "長さ": "40 cm=0.40 m",
+        "全巻数": "150",
+        "比透磁率": "100",
+        "電流": "1.5 A",
+        "磁気定数": "\\(4\\pi\\times10^{-7}\\) T·m/A",
+        "モデル": "長いソレノイドの内部近似。比透磁率は与えられた値を使用。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(2.8\\times10^{-3}\\) mT",
+          "verdict": "条件に不一致",
+          "reason": "与えられた透磁率・巻数密度では約70.7 mTであり一致しない。"
+        },
+        "2": {
+          "value": "\\(1.4\\times10^{-1}\\) mT",
+          "verdict": "条件に不一致",
+          "reason": "透磁率と巻数密度を含めた70.7 mTと一致しない。"
+        },
+        "3": {
+          "value": "\\(1.1\\times10^1\\) mT",
+          "verdict": "条件に不一致",
+          "reason": "約70.7 mTより小さく、全巻数を単位長さ巻数へ換算する必要がある。"
+        },
+        "4": {
+          "value": "\\(7.1\\times10^1\\) mT",
+          "verdict": "条件に一致",
+          "reason": "B=μ0μr(N/ℓ)Iから約70.7 mTで最も近い。"
+        },
+        "5": {
+          "value": "\\(1.1\\times10^2\\) mT",
+          "verdict": "条件に不一致",
+          "reason": "同じ計算では約70.7 mTで110 mTではない。"
+        }
+      },
+      "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_002.png"
+      ],
+      "core_concept": "ソレノイドの巻数密度と磁束密度",
+      "required_knowledge": "アンペール則、透磁率、全巻数と巻数密度、cmとm、TとmT。",
+      "solution": "単位長さの巻数は150/0.40=375 m⁻¹である。\\(B=\\mu_0\\mu_r(N/\\ell)I=4\\pi\\times10^{-7}\\times100\\times375\\times1.5\\)≃0.0707 T=70.7 mTなので4を選ぶ。端部や磁性体の非線形性はこの出題の近似へ含めず、与えられた比透磁率を用いる。",
+      "independent_answer": "4",
+      "answer_reason": "単位長さの巻数は150/0.40=375 m⁻¹である。\\(B=\\mu_0\\mu_r(N/\\ell)I=4\\pi\\times10^{-7}\\times100\\times375\\times1.5\\)≃0.0707 T=70.7 mTなので4を選ぶ。端部や磁性体の非線形性はこの出題の近似へ含めず、与えられた比透磁率を用いる。",
+      "learning_points": "ソレノイドの巻数密度と磁束密度を、成立条件・単位・符号から再現する。電場と電束密度、磁場と磁束密度、電荷一定と電圧一定を読み分ける。",
+      "theory_references": [
+        "theory:em:solenoid"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "concept_038",
+      "classification_reason": "原典全条件・全5肢からソレノイドの巻数密度と磁束密度を中心に電磁気として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "場と回路のモデルを特定し、符号・接続・固定量とSI接頭語を区別する必要がある。"
+      },
+      "citations": [
+        "mit_em09"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

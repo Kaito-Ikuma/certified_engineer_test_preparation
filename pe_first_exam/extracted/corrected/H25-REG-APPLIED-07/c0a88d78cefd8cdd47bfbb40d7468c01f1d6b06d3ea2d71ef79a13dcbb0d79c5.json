@@ -1,0 +1,45 @@
+{
+  "stem": "同じ速さを持つ粒子の物質波長を質量比から並べる。",
+  "conditions": {
+    "方向": "長い順番として適切。",
+    "対象": "量子・原子核の性質。質量数、係数、否定と肢対応を画像照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "陽子→α→電子",
+      "verdict": "誤順序",
+      "reason": "電子は最軽量で最長波長なので最後にはならない。"
+    },
+    "2": {
+      "value": "α→陽子→電子",
+      "verdict": "誤順序",
+      "reason": "質量の大きい順を波長の大きい順へ取り違えている。"
+    },
+    "3": {
+      "value": "電子→α→陽子",
+      "verdict": "誤順序",
+      "reason": "電子は先頭だがαは陽子より重く、αの波長は短い。"
+    },
+    "4": {
+      "value": "陽子→電子→α",
+      "verdict": "誤順序",
+      "reason": "陽子より軽い電子が最長であり最初の2者が逆。"
+    },
+    "5": {
+      "value": "電子→陽子→α",
+      "verdict": "適切",
+      "reason": "静止質量は電子<陽子<α。同速ではγも共通、p=γmvは質量に比例、λはその逆なのでこの順になる。"
+    }
+  },
+  "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_004.png"
+  ],
+  "question_id": "H25-REG-APPLIED-07",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "a6cf9a268f85b8502901790320a7ce2559a84f574e90e4221a1ef7b9cbc911f6",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "アルカリ金属の半径・イオン化と融点を比較する。",
+  "conditions": {
+    "判断対象": "アルカリ金属の半径・イオン化と融点を比較する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "外殻s1が失われ希ガス配置",
+      "verdict": "選ばない候補",
+      "reason": "電子を1個失う通常の1価陽イオン。"
+    },
+    "2": {
+      "value": "Li→Csで陽イオン半径増",
+      "verdict": "選ばない候補",
+      "reason": "同じ電荷で殻が増える系列。"
+    },
+    "3": {
+      "value": "Li→CsでIE低下",
+      "verdict": "選ばない候補",
+      "reason": "外殻が遠く遮蔽されて第一IEが下がる。"
+    },
+    "4": {
+      "value": "Li→Csで融点上昇",
+      "verdict": "選ぶ候補",
+      "reason": "通常の融点は系列で低下するので逆。"
+    },
+    "5": {
+      "value": "固有の炎色",
+      "verdict": "選ばない候補",
+      "reason": "原子励起の発光スペクトルの違い。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_004.png"
+  ],
+  "question_id": "H24-REG-APPLIED-12",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "1b9b67badda7a03747a8937e64d33754292447f3e4d0d826a0c8648d1cb7b1a9",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

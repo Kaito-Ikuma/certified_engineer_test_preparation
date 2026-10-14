@@ -1,0 +1,47 @@
+{
+  "stem": "展開・複素指数・不定形極限の三公式。",
+  "conditions": {
+    "ア": "0中心、適当な条件下の級数。",
+    "イ": "e^(iπ)+1=0。",
+    "ウ": "0/0又は∞/∞、gprime≠0、微分比の極限が存在。"
+  },
+  "choices": {
+    "1": {
+      "value": "ロピタル/オイラー/フーリエ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 マクローリン/オイラー/ロピタル と異なる。"
+    },
+    "2": {
+      "value": "マクローリン/フーリエ/オイラー",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 マクローリン/オイラー/ロピタル と異なる。"
+    },
+    "3": {
+      "value": "マクローリン/オイラー/ロピタル",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "フーリエ/ロピタル/マクローリン",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 マクローリン/オイラー/ロピタル と異なる。"
+    },
+    "5": {
+      "value": "フーリエ/マクローリン/ロピタル",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 マクローリン/オイラー/ロピタル と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_006.png",
+    "extracted/pages/R01/basic/page_007.png"
+  ],
+  "question_id": "R01-REG-BASIC-1-6",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "00f33c5639369f76e746a82ca042951a231f863efebac48521704ec808d398fa",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,163 @@
+{
+  "batch_id": "S7_007_thermodynamics_revision1",
+  "reference_date": "2026-10-09",
+  "scope": "気化仕事2問の物質名を水から物質Aへ訂正。原典再画像確認に基づく版付き更新。",
+  "questions": [
+    {
+      "question_id": "H29-REG-APPLIED-06",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "ヒーターで1molの物質Aを一定外圧で全て気体にしたとき、物質Aが外部へ行う仕事を求める。",
+      "summary": "ヒーターで1molの物質Aを一定外圧で全て気体にしたとき、物質Aが外部へ行う仕事を求める。",
+      "conditions": {
+        "系": "断熱シリンダー内の1molの液体物質Aと、加熱用ヒーター。",
+        "温度": "物質Aの沸点373K",
+        "外圧": "0.1MPa一定",
+        "仮定": "液体体積を無視、気体状態の物質Aは理想気体。",
+        "気体定数": "8.3J/(mol・K)",
+        "求める量": "物質Aが外部へ行う仕事の正の大きさ。"
+      },
+      "choices": {
+        "1": {
+          "value": "0.023J",
+          "verdict": "条件に不一致",
+          "reason": "外圧×体積増加=nRTに対して桁又は値が合わない。"
+        },
+        "2": {
+          "value": "830J",
+          "verdict": "条件に不一致",
+          "reason": "外圧×体積増加=nRTに対して桁又は値が合わない。"
+        },
+        "3": {
+          "value": "2300J",
+          "verdict": "条件に不一致",
+          "reason": "外圧×体積増加=nRTに対して桁又は値が合わない。"
+        },
+        "4": {
+          "value": "3100J",
+          "verdict": "条件に一致",
+          "reason": "理想蒸気のpV=nRTに一致する。"
+        },
+        "5": {
+          "value": "8300J",
+          "verdict": "条件に不一致",
+          "reason": "外圧×体積増加=nRTに対して桁又は値が合わない。"
+        }
+      },
+      "figures": "正誤方向、全条件・数値・単位、候補5肢を原典画像で確認。図なし。組合せ問題では表の全欄を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_002.png"
+      ],
+      "core_concept": "気化で増えた体積による定圧仕事",
+      "required_knowledge": "一定外圧の仕事、理想気体、液体体積無視、壁からの熱流と電気入力の区別。",
+      "solution": "外部への体積仕事は\\(W_{\\mathrm{out}}=p_{\\mathrm{ext}}(V_g-V_l)\\)である。液体体積を無視し、終状態の理想気体に\\(p_{\\mathrm{ext}}V_g=nRT\\)を適用すると\\(W_{\\mathrm{out}}=1\\times8.3\\times373=3095.9\\,\\mathrm{J}\\)である。最も近い3100Jの4を選ぶ。加熱の総エネルギーや潜熱を問う問題ではない。断熱壁でもヒーターから仕事としてエネルギーが入る。",
+      "independent_answer": "4",
+      "answer_reason": "外部への体積仕事は\\(W_{\\mathrm{out}}=p_{\\mathrm{ext}}(V_g-V_l)\\)である。液体体積を無視し、終状態の理想蒸気に\\(p_{\\mathrm{ext}}V_g=nRT\\)を適用すると\\(W_{\\mathrm{out}}=1\\times8.3\\times373=3095.9\\,\\mathrm{J}\\)である。最も近い3100Jの4を選ぶ。加熱の総エネルギーや潜熱を問う問題ではない。断熱壁でもヒーターから仕事としてエネルギーが入る。",
+      "learning_points": "モデルの前提を明示し、気化で増えた体積による定圧仕事から記述や数値を判定する。",
+      "theory_references": [
+        "theory:thermo:firstlaw",
+        "theory:thermo:workpaths"
+      ],
+      "discipline_id": "physics_thermo",
+      "concept_id": "concept_042",
+      "classification_reason": "全条件と全肢を原典画像確認。気化で増えた体積による定圧仕事を中心とする熱現象の問題であり、熱力学へ分類する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻読者には既知の理論であるが、仕事の向き、条件の省略、量の定義と数値の単位を確認する。"
+      },
+      "citations": [
+        "mit_thermo_firstlaw2008"
+      ],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "d0869f19f2dd189fe5d3668b5b7ebc59f3325d47e9e315f78c5b96a8e618eb08",
+      "revision_of_batch": "S7_007_thermodynamics",
+      "revision_reason": "原典は水ではなく液体物質A。気化前後の物質名と沸点の説明を訂正。数値・公式値・独立仕事計算は変更しない。"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-06",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "stem": "ヒーターで1molの物質Aを一定外圧で全て気体にしたとき、物質Aが外部へ行う仕事を求める。",
+      "summary": "ヒーターで1molの物質Aを一定外圧で全て気体にしたとき、物質Aが外部へ行う仕事を求める。",
+      "conditions": {
+        "系": "断熱シリンダー内の1molの液体物質Aと、加熱用ヒーター。",
+        "温度": "物質Aの沸点506K",
+        "外圧": "0.1MPa一定",
+        "仮定": "液体体積を無視、気体状態の物質Aは理想気体。",
+        "気体定数": "8.3J/(mol・K)",
+        "求める量": "物質Aが外部へ行う仕事の正の大きさ。"
+      },
+      "choices": {
+        "1": {
+          "value": "830J",
+          "verdict": "条件に不一致",
+          "reason": "外圧×体積増加=nRTに対して桁又は値が合わない。"
+        },
+        "2": {
+          "value": "2240J",
+          "verdict": "条件に不一致",
+          "reason": "外圧×体積増加=nRTに対して桁又は値が合わない。"
+        },
+        "3": {
+          "value": "4200J",
+          "verdict": "条件に一致",
+          "reason": "理想蒸気のpV=nRTに一致する。"
+        },
+        "4": {
+          "value": "8300J",
+          "verdict": "条件に不一致",
+          "reason": "外圧×体積増加=nRTに対して桁又は値が合わない。"
+        },
+        "5": {
+          "value": "22400J",
+          "verdict": "条件に不一致",
+          "reason": "外圧×体積増加=nRTに対して桁又は値が合わない。"
+        }
+      },
+      "figures": "正誤方向、全条件・数値・単位、候補5肢を原典画像で確認。図なし。組合せ問題では表の全欄を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/17_applied_science/page_002.png"
+      ],
+      "core_concept": "気化で増えた体積による定圧仕事",
+      "required_knowledge": "一定外圧の仕事、理想気体、液体体積無視、壁からの熱流と電気入力の区別。",
+      "solution": "外部への体積仕事は\\(W_{\\mathrm{out}}=p_{\\mathrm{ext}}(V_g-V_l)\\)である。液体体積を無視し、終状態の理想気体に\\(p_{\\mathrm{ext}}V_g=nRT\\)を適用すると\\(W_{\\mathrm{out}}=1\\times8.3\\times506=4199.8\\,\\mathrm{J}\\)である。最も近い4200Jの3を選ぶ。加熱の総エネルギーや潜熱を問う問題ではない。断熱壁でもヒーターから仕事としてエネルギーが入る。",
+      "independent_answer": "3",
+      "answer_reason": "外部への体積仕事は\\(W_{\\mathrm{out}}=p_{\\mathrm{ext}}(V_g-V_l)\\)である。液体体積を無視し、終状態の理想蒸気に\\(p_{\\mathrm{ext}}V_g=nRT\\)を適用すると\\(W_{\\mathrm{out}}=1\\times8.3\\times506=4199.8\\,\\mathrm{J}\\)である。最も近い4200Jの3を選ぶ。加熱の総エネルギーや潜熱を問う問題ではない。断熱壁でもヒーターから仕事としてエネルギーが入る。",
+      "learning_points": "モデルの前提を明示し、気化で増えた体積による定圧仕事から記述や数値を判定する。",
+      "theory_references": [
+        "theory:thermo:firstlaw",
+        "theory:thermo:workpaths"
+      ],
+      "discipline_id": "physics_thermo",
+      "concept_id": "concept_042",
+      "classification_reason": "全条件と全肢を原典画像確認。気化で増えた体積による定圧仕事を中心とする熱現象の問題であり、熱力学へ分類する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻読者には既知の理論であるが、仕事の向き、条件の省略、量の定義と数値の単位を確認する。"
+      },
+      "citations": [
+        "mit_thermo_firstlaw2008"
+      ],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "f39a8eaedda477c3ee3b1928ff6aa511d5305dbf6bb6b6e476623a256c87c5cb",
+      "revision_of_batch": "S7_007_thermodynamics",
+      "revision_reason": "原典は水ではなく液体物質A。気化前後の物質名と沸点の説明を訂正。数値・公式値・独立仕事計算は変更しない。"
+    }
+  ]
+}

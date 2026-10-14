@@ -1,0 +1,47 @@
+{
+  "stem": "Euler座屈の有効長で支持条件を比較。",
+  "conditions": {
+    "a": "両端ピン。",
+    "b": "一端固定・他端ピン。",
+    "c": "一端固定・他端自由。",
+    "共通": "同じL,E,I、理想的細長柱、軸圧縮。"
+  },
+  "choices": {
+    "1": {
+      "value": "Pa>Pb>Pc",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Pb>Pa>Pc と異なる。"
+    },
+    "2": {
+      "value": "Pa>Pc>Pb",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Pb>Pa>Pc と異なる。"
+    },
+    "3": {
+      "value": "Pb>Pa>Pc",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "Pb>Pc>Pa",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Pb>Pa>Pc と異なる。"
+    },
+    "5": {
+      "value": "Pc>Pa>Pb",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Pb>Pa>Pc と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "真直・線形弾性の理想柱の比較。初期不整・残留応力・短柱の圧壊を含む実設計荷重としては使わない。",
+  "evidence": [
+    "extracted/pages/R06/basic/page_012.png"
+  ],
+  "question_id": "R06-REG-BASIC-3-4",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "12",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "9d6172a407855c1d236226d24469038c026f93783e8432e9603611ec4d5e5791",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

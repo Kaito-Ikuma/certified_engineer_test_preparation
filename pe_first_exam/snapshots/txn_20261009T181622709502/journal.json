@@ -1,0 +1,22 @@
+{
+  "status": "committed",
+  "time": "2026-10-09T18:16:22+09:00",
+  "paths": [
+    "data/questions.csv",
+    "data/classifications.csv",
+    "data/verification_records.csv",
+    "data/batch_changes/S7_005_classification_correction.json"
+  ],
+  "existed": {
+    "data/questions.csv": true,
+    "data/classifications.csv": true,
+    "data/verification_records.csv": true,
+    "data/batch_changes/S7_005_classification_correction.json": false
+  },
+  "sha256": {
+    "data/questions.csv": "1c495005c1d72c66e3065264f7b36111464dfa1af8f94594f5f512e4f306cd78",
+    "data/classifications.csv": "125d8e54cad61c84ca4793e01edc3b44f8bd317e5688f829131cd9acb25bd879",
+    "data/verification_records.csv": "74b94e07f051e281d23c5787e4109b0a9f759746e80eb63ca44f28db4334843c",
+    "data/batch_changes/S7_005_classification_correction.json": "7b795eba57394cdf4972a4d9932141a9fa1f31811057ac73b075b4d94278caad"
+  }
+}

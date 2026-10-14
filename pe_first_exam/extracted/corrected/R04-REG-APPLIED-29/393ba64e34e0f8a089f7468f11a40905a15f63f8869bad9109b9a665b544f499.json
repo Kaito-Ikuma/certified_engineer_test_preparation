@@ -1,0 +1,45 @@
+{
+  "stem": "衝上系と横ずれ系の構造を、正断層の深度による傾斜変化と区別する。",
+  "conditions": {
+    "判断方向": "最も不適切なもの。",
+    "原典照合": "全5肢、上下・平行直交・右左・時代・固結度と割合を画像照合。図なし。"
+  },
+  "choices": {
+    "1": {
+      "value": "移動した衝上断層上盤岩体をナップ。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "低角衝上断層に沿って広域に移動した岩体であり、変位面と移動体の名を分ける。"
+    },
+    "2": {
+      "value": "衝上断層が収束する低角すべり面はデコルマン/デタッチメント。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "浅部の変形を下方の比較的水平な剥離面に接続する。距離は個別構造によるが大規模な水平移動もある。"
+    },
+    "3": {
+      "value": "横ずれ断層の枝が深部で収束し花束構造。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "断面で上方に分岐し、深部では主断層へ収束する複数枝の構造が見られる。圧縮性/伸張性で形態が異なる。"
+    },
+    "4": {
+      "value": "高い地塊が地塁、低い地塊が地溝。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "相対的な高低の用語である。正断層群に挟まれる地塊の上下を地形だけでなく対比層で確認する。"
+    },
+    "5": {
+      "value": "地表で緩傾斜、深部で高角になるリストリック正断層。",
+      "verdict": "不適切",
+      "reason": "典型的なリストリック正断層は地表近くで急、深部で緩くなる。原典は傾斜変化を逆にしている。"
+    }
+  },
+  "figures": "設問固有図なし。原典の用語・否定・全5肢を確認。剪断の方位条件を推測で補わない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_010.png"
+  ],
+  "question_id": "R04-REG-APPLIED-29",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "099c817f2cdd9bf9d90dcbced93cec69d5d7f7f3edb563f60ba4094be669d8ea",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "周波数・力・圧力・仕事・電圧の組立単位を比較する。",
+  "conditions": {
+    "方向": "誤っているもの。",
+    "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(\\mathrm{Hz=s^{-1}}\\)",
+      "verdict": "適切",
+      "reason": "周期Tの逆数でHz=s^-1である。"
+    },
+    "2": {
+      "value": "\\(\\mathrm{N=m\\,kg\\,s^{-2}}\\)",
+      "verdict": "適切",
+      "reason": "力F=maからN=\\(\\mathrm{kg\\,m\\,s^{-2}}\\)である。"
+    },
+    "3": {
+      "value": "\\(\\mathrm{Pa=m^{-1}kg\\,s^{-2}}\\)",
+      "verdict": "適切",
+      "reason": "圧力p=F/SからPa=\\(\\mathrm{kg\\,m^{-1}s^{-2}}\\)である。"
+    },
+    "4": {
+      "value": "\\(\\mathrm{J=m^2kg\\,s^{-2}}\\)",
+      "verdict": "適切",
+      "reason": "仕事は力と移動距離の積でJ=\\(\\mathrm{kg\\,m^2s^{-2}}\\)である。"
+    },
+    "5": {
+      "value": "\\(\\mathrm{V=m\\,kg\\,s^{-3}A^{-1}}\\)",
+      "verdict": "不適切",
+      "reason": "電位差は仕事/電荷からV=J/C=\\(\\mathrm{kg\\,m^2s^{-3}A^{-1}}\\)である。原典はmの指数が1であり2ではない。"
+    }
+  },
+  "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_003.png"
+  ],
+  "question_id": "H25-REG-APPLIED-04",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "213117132025701a0babdfbab1f07fe63cbc4bcc4bc5a154f3fb59f22283db4c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

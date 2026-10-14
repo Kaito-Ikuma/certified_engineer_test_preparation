@@ -1,0 +1,45 @@
+{
+  "stem": "造岩鉱物の偏光顕微鏡下の特徴から、最も不適切なものを選ぶ。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "対象": "通常の透過岩石薄片。消光角は適切な結晶切断面で判定する。"
+  },
+  "choices": {
+    "1": {
+      "value": "石英は無色で多色性がない",
+      "verdict": "通常の薄片で正しい",
+      "reason": "通常の石英薄片は無色であり、方向に依存する吸収色の変化は目立たない。"
+    },
+    "2": {
+      "value": "カリ長石の屈折率は石英より低い",
+      "verdict": "正しい",
+      "reason": "正長石の主屈折率約1.518〜1.525は石英の1.544〜1.553より低い。"
+    },
+    "3": {
+      "value": "斜長石には累帯構造がしばしば見られる",
+      "verdict": "正しい",
+      "reason": "成長中の組成変化が結晶の内外の光学性に現れる。"
+    },
+    "4": {
+      "value": "黒雲母には2方向の明瞭な劈開がある",
+      "verdict": "誤り",
+      "reason": "黒雲母の卓越する劈開は底面(001)の一方向である。"
+    },
+    "5": {
+      "value": "普通角閃石は直消光しない",
+      "verdict": "通常の特徴として正しい／切断面依存",
+      "reason": "普通角閃石は通常斜消光を特徴とするが、見掛けの角度は切断方位に依存するので任意の一粒だけで断定しない。"
+    }
+  },
+  "figures": "図なし。原典頁画像で選択方向、観察条件、鉱物名と全5肢を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_009.png"
+  ],
+  "question_id": "H25-REG-APPLIED-23",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "2292bbe70003f00061ce7fbfad0b6e69b953bea21ea48a44d1c0b0944712340d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

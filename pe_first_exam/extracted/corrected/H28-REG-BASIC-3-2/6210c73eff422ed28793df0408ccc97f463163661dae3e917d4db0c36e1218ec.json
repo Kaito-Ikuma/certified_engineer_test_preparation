@@ -1,0 +1,46 @@
+{
+  "stem": "二重積分の変数変換に使うヤコビアンを計算する。",
+  "conditions": {
+    "変換": "\\(x=u+v,y=uv\\)",
+    "原典の式": "dxdyをJdudvへ置き換える。",
+    "領域": "変換領域でuとvの大小を指定していない。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(1\\)",
+      "verdict": "条件に不一致",
+      "reason": "微分行列の行列式は定数ではない。"
+    },
+    "2": {
+      "value": "\\(u+v\\)",
+      "verdict": "条件に不一致",
+      "reason": "行列式の二項を足している。"
+    },
+    "3": {
+      "value": "\\(u-v\\)",
+      "verdict": "条件に一致",
+      "reason": "符号付き行列式に一致。ただし面積要素では絶対値が必要である。"
+    },
+    "4": {
+      "value": "\\(1+uv\\)",
+      "verdict": "条件に不一致",
+      "reason": "微分した成分を使っていない。"
+    },
+    "5": {
+      "value": "\\(1-uv\\)",
+      "verdict": "条件に不一致",
+      "reason": "微分した成分を使っていない。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "原典は面積要素dxdy=Jdudvとするが、候補に|u−v|がなく、領域でu≥vなどの符号条件も指定しない。また変換はu,vの交換で同じx,yになる。符号付き行列式は3だが、積分の置換を成立させる領域/絶対値条件の不足を保持し部分校正とする。",
+  "evidence": [
+    "extracted/pages/H28/basic/page_012.png"
+  ],
+  "question_id": "H28-REG-BASIC-3-2",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "12",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "6dfd79b4f05d9532d180b524d5878c3b375627df224d5183ed9b6246a6fcdcf1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

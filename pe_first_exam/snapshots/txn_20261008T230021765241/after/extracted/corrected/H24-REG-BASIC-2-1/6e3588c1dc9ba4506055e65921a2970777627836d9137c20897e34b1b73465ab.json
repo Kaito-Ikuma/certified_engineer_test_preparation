@@ -1,0 +1,44 @@
+{
+  "stem": "数値表現と誤差に関する5記述から、最も適切なものを選ぶ。",
+  "conditions": {
+    "仮定": "選択肢5は10進7桁精度で100000.0と0.01を加算する。"
+  },
+  "choices": {
+    "1": {
+      "value": "浮動小数点では桁あふれ・桁不足はない",
+      "verdict": "不適切な解答候補",
+      "reason": "指数の範囲は有限であり、上限・下限の範囲超過がある。"
+    },
+    "2": {
+      "value": "桁落ちは乗算又は除算で生じる",
+      "verdict": "不適切な解答候補",
+      "reason": "近い数の減算又は逆符号の加算で有効桁が相殺される現象である。"
+    },
+    "3": {
+      "value": "固定小数点なら誤差はない",
+      "verdict": "不適切な解答候補",
+      "reason": "小数桁数が有限なら表現できない値があり、演算後の丸めもある。"
+    },
+    "4": {
+      "value": "単精度の丸め誤差は倍精度により改善できることが多い",
+      "verdict": "適切な解答候補",
+      "reason": "通常は仮数の桁数が増え、同じ計算の表現・丸め誤差を小さくできる。ただし常に完全に解消するという主張ではない。"
+    },
+    "5": {
+      "value": "10進7桁なら100000.0+0.01に誤差はない",
+      "verdict": "不適切な解答候補",
+      "reason": "正確な100000.01には8桁の有効数字が必要で、7桁では0.01が保持されない。"
+    }
+  },
+  "figures": "図なし。5肢の値または記述を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/basic/page_005.png"
+  ],
+  "question_id": "H24-REG-BASIC-2-1",
+  "source_file": "sources/H24/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+  "raw_text_sha256": "40a9e49a4ab068ac3026b1d4eae10c6b6eb961742a12c7b7eda930c3cdf8a538",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

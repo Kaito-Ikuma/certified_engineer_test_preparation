@@ -1,0 +1,45 @@
+{
+  "stem": "同じ二分探索木を作る挿入順を、部分木の祖先が先に入る条件から選ぶ。",
+  "conditions": {
+    "判断対象": "二分探索木の大小分岐と親子の挿入先行。",
+    "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+  },
+  "choices": {
+    "1": {
+      "value": "8,5,7,12,3,10,6",
+      "verdict": "適切",
+      "reason": "12を10より、7を6より先に入れ、根8と左根5も維持する。"
+    },
+    "2": {
+      "value": "8,5,7,10,3,12,6",
+      "verdict": "不適切",
+      "reason": "10が12より先なので右部分木の根が10になる。"
+    },
+    "3": {
+      "value": "8,5,6,12,3,10,7",
+      "verdict": "不適切",
+      "reason": "6が7より先なので5の右部分木の根が6になる。"
+    },
+    "4": {
+      "value": "8,5,3,10,7,12,6",
+      "verdict": "不適切",
+      "reason": "10が12より先なので右部分木が変わる。"
+    },
+    "5": {
+      "value": "8,5,3,12,6,10,7",
+      "verdict": "不適切",
+      "reason": "6が7より先なので左側部分木が変わる。"
+    }
+  },
+  "figures": "原典の木・道路接続・構文経路・矢印を画像確認。教材では独自の構造表現で説明し原図転載なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_008.png"
+  ],
+  "question_id": "R01-REG-BASIC-2-2",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "fe49665475214ad2acd9b26b9c797f5853d5f3b34f9fecd71e9b365846a91824",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

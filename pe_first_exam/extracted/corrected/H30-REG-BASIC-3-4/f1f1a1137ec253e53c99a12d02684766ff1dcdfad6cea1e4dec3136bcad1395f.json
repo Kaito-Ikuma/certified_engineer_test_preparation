@@ -1,0 +1,45 @@
+{
+  "stem": "Newton法の接線更新とフローチャートの終了分岐を対応させる。",
+  "conditions": {
+    "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+    "成立条件": "f′(xn)≠0、ε>0。原図は現在xnを出力し、更新はNO側にある。局所収束には初期値と滑らかさが必要であり、実装では残差・最大反復数・有限精度停滞も確認する。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(\\Delta x=ff^\\prime,\\ |\\Delta x|<\\varepsilon\\)",
+      "verdict": "不適切",
+      "reason": "停止の向きは合うが傾きで掛ける積になっており、接線の根から得る比でない。"
+    },
+    "2": {
+      "value": "\\(\\Delta x=f/f^\\prime,\\ |\\Delta x|<\\varepsilon\\)",
+      "verdict": "条件付きで適切",
+      "reason": "図の減算更新によりx次=x−f/f′となる。増分の絶対値が小さいとき終了する判定である。実装には残差の確認も要する。"
+    },
+    "3": {
+      "value": "\\(\\Delta x=f^\\prime/f,\\ |\\Delta x|<\\varepsilon\\)",
+      "verdict": "不適切",
+      "reason": "分子分母が逆であり、接線で予測する横方向距離にならない。"
+    },
+    "4": {
+      "value": "\\(\\Delta x=ff^\\prime,\\ |\\Delta x|>\\varepsilon\\)",
+      "verdict": "不適切",
+      "reason": "傾きとの積も誤り、YES終了する条件の大小も逆である。"
+    },
+    "5": {
+      "value": "\\(\\Delta x=f/f^\\prime,\\ |\\Delta x|>\\varepsilon\\)",
+      "verdict": "不適切",
+      "reason": "減算更新の比は合うが大きい補正で停止し小さい補正で続ける逆の条件である。"
+    }
+  },
+  "figures": "図を確認：初期値と閾値→fとf′→増分→判定。YESがxn出力と終了、NOがxn+1=xn−Δxとn増加へ戻る。",
+  "ambiguity": "原図は増分だけの収束判定であり、残差・f′=0・最大反復数の処理が省略される。式の穴埋めとして公式を保持し、一般の収束保証とはしない。",
+  "evidence": [
+    "extracted/pages/H30/basic/page_013.png"
+  ],
+  "question_id": "H30-REG-BASIC-3-4",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "13",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "25e75f44e1d0850315c6136cbf5cfecf33b310ac29f479eeb3a68a64cffacfc2",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

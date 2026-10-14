@@ -1,0 +1,46 @@
+{
+  "stem": "十対象のうち産業財産権に含まれない数を求める。",
+  "conditions": {
+    "判断対象": "広義知的財産・産業財産権・引用・営業秘密を区別する。",
+    "原典照合": "15問の原典画像について問題幹、否定、表の列順、全5候補を確認。",
+    "法の時点": "出題時の制度を保持し、説明の取得基準日は2026-10-12とする。"
+  },
+  "choices": {
+    "1": {
+      "value": "4個",
+      "verdict": "不適切",
+      "reason": "十対象中四つが含まれるので、4は含まれる側の数である。"
+    },
+    "2": {
+      "value": "5個",
+      "verdict": "不適切",
+      "reason": "著作権、回路配置、育成者、営業秘密、商号、商品等表示の六つが外れる。五つではない。"
+    },
+    "3": {
+      "value": "6個",
+      "verdict": "独立判断で適切",
+      "reason": "10から特許・実用新案・意匠・商標の4を引き、6となる。"
+    },
+    "4": {
+      "value": "7個",
+      "verdict": "不適切",
+      "reason": "4種類の一つを誤って除外しなければ7にはならない。"
+    },
+    "5": {
+      "value": "8個",
+      "verdict": "不適切",
+      "reason": "特許・実用新案以外にも意匠・商標が含まれるため、8ではない。"
+    }
+  },
+  "figures": "組合せ表の全5行を画像確認。原典の長文は独自要約へ変換し、正誤と選択肢の対応を保持する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/aptitude/page_005.png"
+  ],
+  "question_id": "R02-REG-APT-05",
+  "source_file": "sources/R02/aptitude.pdf",
+  "source_page": "5",
+  "source_sha256": "d0ca26aaeeba6d436d8ffa77a759056e7a194c0ac9fad61de2c84392999050bb",
+  "raw_text_sha256": "cf642059aad5b6e006a03f157e06828d2ea781167d7afbc93dba8a6e47868988",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

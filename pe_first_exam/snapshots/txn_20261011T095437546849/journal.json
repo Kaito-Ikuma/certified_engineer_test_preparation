@@ -1,0 +1,25 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T09:54:37+09:00",
+  "paths": [
+    "data/batch_changes/S7_021_geochemistry_revision1_R06-REG-APPLIED-22_revision.json",
+    "data/questions.csv",
+    "data/verification_records.csv",
+    "data/batch_changes/S7_021_geochemistry_revision1.csv",
+    "extracted/logs/batches/S7_021_geochemistry_revision1.json"
+  ],
+  "existed": {
+    "data/batch_changes/S7_021_geochemistry_revision1_R06-REG-APPLIED-22_revision.json": false,
+    "data/questions.csv": true,
+    "data/verification_records.csv": true,
+    "data/batch_changes/S7_021_geochemistry_revision1.csv": false,
+    "extracted/logs/batches/S7_021_geochemistry_revision1.json": false
+  },
+  "sha256": {
+    "data/batch_changes/S7_021_geochemistry_revision1_R06-REG-APPLIED-22_revision.json": "060a4835489e5699e1f4a03c0bd85113c1e3975aa334fe74fb5647bd3c284468",
+    "data/questions.csv": "87a4e2dab8e22658c003b0b22f1159fd891f089a989d4e2ab8b61b5fadaa82c7",
+    "data/verification_records.csv": "561f10294816f6d23206ac9fbf33a944cb387d6ae63c21ebbc4e9f6c4ba36a39",
+    "data/batch_changes/S7_021_geochemistry_revision1.csv": "9c45f6cbda9d5f627b31224389eac4b03a04f575da9fc45ddf4540e21c63b74e",
+    "extracted/logs/batches/S7_021_geochemistry_revision1.json": "2fb617c1f78534f9a01a7164de2179a49a11676c62a5232c88299d68746a6c2b"
+  }
+}

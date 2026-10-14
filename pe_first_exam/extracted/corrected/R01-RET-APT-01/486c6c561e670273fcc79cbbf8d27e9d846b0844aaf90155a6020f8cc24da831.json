@@ -1,0 +1,54 @@
+{
+  "stem": "適性科目の目的と第4章の規範としての性格を選ぶ。",
+  "conditions": {
+    "空欄順": [
+      "ア",
+      "イ",
+      "ウ"
+    ],
+    "正しい語句の照合": {
+      "ア": "社会規範",
+      "イ": "法規範",
+      "ウ": "倫理規範"
+    },
+    "出題時資料": ""
+  },
+  "choices": {
+    "1": {
+      "value": "社会規範／倫理規範／法規範",
+      "verdict": "不適切な解答候補",
+      "reason": "イとウが逆である。法として制定された第4章は形式上法規範である。"
+    },
+    "2": {
+      "value": "行動規範／法規範／倫理規範",
+      "verdict": "不適切な解答候補",
+      "reason": "アは法と倫理を包括する社会規範である。"
+    },
+    "3": {
+      "value": "社会規範／法規範／倫理規範",
+      "verdict": "適切な解答候補",
+      "reason": "法・倫理を包括する社会規範、形式上の法、内容上の倫理の関係に一致する。"
+    },
+    "4": {
+      "value": "行動規範／倫理規範／行動規範",
+      "verdict": "不適切な解答候補",
+      "reason": "ア・イ・ウの区別が崩れている。"
+    },
+    "5": {
+      "value": "社会規範／行動規範／倫理規範",
+      "verdict": "不適切な解答候補",
+      "reason": "イは一般的行動規範より具体的な法規範である。"
+    }
+  },
+  "figures": "図なし。組合せ表または個数選択肢は原典画像で確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/aptitude/page_001.png"
+  ],
+  "question_id": "R01-RET-APT-01",
+  "source_file": "sources/R01_retest/aptitude.pdf",
+  "source_page": "1",
+  "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+  "raw_text_sha256": "c406730fed9e096ca0e50a565077513ab1658205b90202f5e396f1801517d3f0",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

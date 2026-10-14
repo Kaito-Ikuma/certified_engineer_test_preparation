@@ -1,0 +1,497 @@
+2  Linear Combinations of Random Variables – STAT 505 | Applied Multivariate Statistical Analysis
+STAT 505 | Applied Multivariate Statistical Analysis
+Department of Statistics
+Lessons
+2  Linear Combinations of Random Variables
+About this course
+Lessons
+0: Matrices and Vectors
+1  Measures of Central Tendency, Dispersion and Association
+2  Linear Combinations of Random Variables
+3  Graphical Display of Multivariate Data
+4  Multivariate Normal Distribution
+5  Sample Mean Vector and Sample Correlation and Related Inference Problems
+6  Multivariate Conditional Distribution and Partial Correlation
+7  Inferences Regarding Multivariate Population Mean
+8  Multivariate Analysis of Variance (MANOVA)
+9  Repeated Measures Analysis
+10  Discriminant Analysis
+11  Principal Components Analysis (PCA)
+12  Factor Analysis
+13  Canonical Correlation Analysis
+14  Cluster Analysis
+Resources
+SAS Programs
+In this lesson
+2.1 Examples of Linear Combinations
+2.2 Measures of Central Tendency
+2.3 Population Variance
+2.4 Population Covariance
+2.5 Summary
+Lessons
+2  Linear Combinations of Random Variables
+2  Linear Combinations of Random Variables Code
+Sample mean
+Sample variance
+Linear combination
+Random Variables
+Central Tendancy
+Population Variance
+Population Covariance
+Overview
+This lesson is concerned with linear combinations or if you would like linear transformations of the variables. Mathematically linear combinations can be expressed as shown in the expression below:
+\[
+Y = c_1X_1 +c_2X_2 +\dots + c_pX_p = \sum_{j=1}^{p}c_jX_j = \mathbf{c}'\mathbf{X}
+\]
+Here what we have is a set of coefficients \(c_{1}\) through \(c_{p}\) that is multiplied bycorresponding variables \(X_{1}\) through \(X_{p}\). So, in the first term, we have \(c_{1}\) times \(X_{1}\) which is added to \(c_{2}\) times \(X_{2}\) and so on up to the variable \(X_{p}\). Mathematically this is expressed as the sum of \(j = 1, ... , p\) of the terms \(c_{j}\) times \(X_{j}\). The random variables \(X_{1}\) through \(X_{p}\) are collected into a column vector X and the coefficient \(c_{1}\) to \(c_{p}\) are collected into a column vector c. Hence, the linear combination can be expressed as \(\mathbf{c}'\mathbf{X}\).
+The selection of the coefficients \(c_{1}\) through \(c_{p}\) is very much dependent on the application of interest and what kinds of scientific questions we would like to address.
+Later on in this course, when we learn about multivariate data reduction techniques, the interpretation of linear combinations will be of great importance.
+Objectives
+Upon completion of this lesson, you should be able to:
+Interpret the meaning of a specified linear combination;
+Compute the sample mean and variance of a linear combination from the sample means, variances, and covariances of the individual variables.
+2.1 Examples of Linear Combinations
+Example 2.1 (Women’s Health Survey (Linear Combinations)) The Women’s Health Survey data contains observations for the following variables:
+\(X_{1}\) calcium (mg)
+\(X_{2}\) iron (mg)
+\(X_{3}\) protein(g)
+\(X_{4}\) vitamin A(μg)
+\(X_{5}\) vitamin C(mg)
+In addition to addressing questions about the individual nutritional component, we may wish to address questions about certain combinations of these components. For instance, we might want to ask what is the total intake of vitamins A and C (in mg). We note that in this case, Vitamin A is measured in micrograms while Vitamin C is measured in milligrams. There are a thousand micrograms per milligram so the total intake of the two vitamins, \(Y\), can be expressed as the following:
+\[
+Y = 0.001 X _ { 4 } + X _ { 5 }
+\]
+In this case, our coefficients \(c_{1}\) , \(c_{2}\) and \(c_{3}\) are all equal to 0 since the variables \(X_{1}\), \(X_{2}\) and \(X_{3}\) do not appear in this expression. In addition, \(c_{4}\) is equal to 0.001 since each microgram of vitamin A is equal to 0.001 milligrams of vitamin A. In summary, we have
+\[
+c_{1}=c_{2}=c_{3}=0,c_{4}=0.001,c_{5}=1
+\]
+Example 2.2 (Monthly Employment Data) Another example where we might be interested in linear combinations is in the Monthly Employment Data. Here we have observations on 6 variables:
+\(X_{1}\) Number people laid off or fired
+\(X_{2}\) Number of people resigning
+\(X_{3}\) Number of people retiring
+\(X_{4}\) Number of jobs created
+\(X_{5}\) Number of people hired
+\(X_{6}\) Number of people entering the workforce
+Net employment decrease:
+In looking at the net job increase, which is equal to the number of jobs created, minus the number of jobs lost.
+\[
+Y = X_{4}-X_{1}-X_{2}-X_{3}
+\]
+In this case, we have the number of jobs created, (\(X_{4}\)), minus the number of people laid off or fired, (\(X_{1}\)), minus the number of people resigning, (\(X_{2}\)), minus the number of people retired, (\(X_{3}\)). These are all of the people that have left their jobs for whatever reason.
+In this case
+\[
+c_{1}=c_{2}=c_{3}=-1\text{ and }c_{4}=1
+\]
+Because variables 5 and 6 are not included in this expression,
+\[
+c_{5}=c_{6}=0
+\]
+Net employment increase:
+In a similar fashion, net employment increase is equal to the number of people hired, (\(X_{5}\)), minus the number of people laid off or fired, (\(X_{1}\)), minus the number of people resigning, (\(X_{2}\)), minus the number of people retired, (\(X_{3}\)).
+\[
+Y=X_{5}-X_{1}-X_{2}-X_{3}
+\]
+In this case
+\[
+c_{1}=c_{2}=c_{3}=-1,c_{4}=c_{6}=0,\text{ and }c_{5}=1
+\]
+Net unemployment increase:
+Net unemployment increase is going to be equal to the number of people laid off or fired, (\(X_{1}\)), plus the number of people resigning, (\(X_{2}\)), plus the number of people entering the workforce, (\(X_{6}\)), minus the number of people hired, (\(X_{5}\)).
+\[
+Y=X_{1}+X_{2}+X_{6}-X_{5}
+\]
+Unfilled jobs:
+Finally, if we wanted to ask about the number of jobs that went unfilled, this is simply equal to the number of jobs created, (\(X_{4}\)), minus the number of people hired, (\(X_{5}\)).
+\[
+Y=X_{4}-X_{5}
+\]
+In other applications, of course, other linear combinations would be of interest.
+2.2 Measures of Central Tendency
+Overview
+Because linear combinations are functions of random quantities, they also are random vectors, and hence have population means and variances. Moreover, if you are looking at several linear combinations, they will have covariances and correlations as well.
+Therefore we are interested in knowing:
+What is the population mean of \(Y\)?
+What is the population variance of \(Y\)?
+What is the population covariance between two linear combinations \(Y_{1}\) and \(Y_{2}\)?
+Population Mean
+The population mean of a linear combination is equal to the same linear combination of the population means of the component variables. If
+\[
+Y = c_1X_1 + c_2X_2 +\dots c_pX_p =\sum_{j=1}^{p}c_jX_j = \mathbf{c}'\mathbf{X}
+\]
+then
+\[
+E(Y) = c_1 \mu_1 +c_2\mu_2 +\dots + c_p\mu_p = \sum_{j=1}^{p}c_j\mu_j = \mathbf{c}'\mathbf{\mu}
+\]
+Mathematically you express this as the sum of \(j = 1\) to \(p\) of \(c_{j}\) times the corresponding mean of the \(j_{th}\) variable. If the coefficient c’s are collected into a vector c and the mean \(\mu\) are collected into a mean vector \(\mu\) you can express this as c transpose times \(\mu\).
+We can estimate the population mean by replacing the population means with the corresponding sample means; that is replace all of the \(\mu\)’s with \(\bar{x}\)’s so that \(\bar{y}\) equals \(c_{1}\) times \(\bar{x}_{1}\) plus \(c_{2}\) times \(\bar{x}_{2}\) and so on…
+Population mean of a linear combination
+\[
+\bar{y} = c_1\bar{x}_1 + c_2\bar{x}_2 + \dots + c_p\bar{x}_p = \sum_{j=1}^{p}c_j\bar{x}_j = \mathbf{c}'\mathbf{\bar{x}}
+\]
+Example 2.3 (Women’s Health Survey (Population Mean)) The following table shows the sample means for each of the five nutritional components that we computed in the previous lesson.
+Variable
+Mean
+Calcium
+624.0 mg
+Iron
+11.1 mg
+Protein
+65.8 g
+Vitamin A
+839.6 μg
+Vitamin C
+78.9 mg
+If, as previously, we define \(Y\) to be the total intake of vitamins A and C (in mg) or:
+\[
+Y=0.001X_{4}+X_{5}
+\]
+Then we can work out the estimated mean intake of the two vitamins as follows:
+\[
+\bar{y}=0.001 \bar{x}_4 +\bar{x}_5 = 0.001 \times 839.6 + 78.9248 = 0.8396 + 78.9248 = 79.7680 \text{mg}
+\]
+2.3 Population Variance
+Linear combinations not only have a population mean but they also have a population variance. The population variance of a linear combination is expressed as the following double sum of \(j=1\) to \(p\) and \(k=1\) to \(p\) over all pairs of variables.
+\[
+var(Y) =\sum_{j=1}^{p}\sum_{k=1}^{p}c_jc_k\sigma_{jk}= c ^ { \prime } \Sigma c
+\]
+In each term within the double sum, the product of the paired coefficients \(c_{j}\) times \(c_{k}\) is multiplied by the covariance between the \(j^{th}\) and \(k^{th}\) variables. If \(\Sigma\) is the variance-covariance matrix of \(\mathbf{X}\), then \(Var(Y) = c ^ { \prime } \Sigma c\) .
+Expressions of vectors and matrices of this form are called quadratic form’s.
+When using this expression, the covariance between the variables and itself, or \(\sigma_{jj}\) is simply equal to the variance of the \(j^{th}\) variable, or \(\sigma_{j}^{2}\).
+\[
+\sigma_{jj} = \sigma^2_j
+\]
+The variance of the random variable y can be estimated by the sample variances or \(s\) squared \(Y\). This is obtained by substituting the sample variances and covariances for the population variances and covariances as shown in the expression below.
+\[
+s^2_Y = \sum_{j=1}^{p}\sum_{k=1}^{p}c_jc_ks_{jk} =c ^ { \prime } S c
+\]
+A simplified calculation can be found below. This involves two terms.
+Population variance of linear combinations
+\[
+s^2_Y = \sum_{j=1}^{p}c^2_j s^2_j +2\sum_{j<k}c_jc_ks_{jk}
+\]
+The first term involves summing over all the variables. Here we take the squared coefficients and multiply them by their respective variances. In the second term, we sum over all unique pairs of variables \(j\) less than \(k\). Again take the product of \(c_{j}\) times \(c_{k}\) times the covariances between variables \(j\) and \(k\). Since each unique pair appears twice in the original expression, we must multiply the sum by 2.
+Example 2.4 (Women’s Health Survey (Population Variance)) Looking at the Women’s Nutrition survey data we obtained the following variance/covariance matrix as shown below from the previous lesson.
+\[S = \left(\begin{array}{`RRRRR`}157829.4 & 940.1 & 6075.8 & 102411.1 & 6701.6 \\ 940.1 & 35.8 & 114.1 & 2383.2 & 137.7 \\ 6075.8 & 114.1 & 934.9 & 7330.1 & 477.2 \\ 102411.1 & 2383.2 & 7330.1 & 2668452.4 & 22063.3 \\ 6701.6 & 137.7 & 477.2 & 22063.3 & 5416.3 \end{array}\right)\]
+If we wanted to take a look at the total intake of vitamins A and C (in mg) remember we defined this earlier as:
+\[Y=0.001X_{4}+X_{5}\]
+Therefore the sample variance of \(Y\) is equal to \((0.001)^{2}\) times the variance for \(X_{4}\), plus the variance for \(X_{5}\), plus 2 times 0.001 times the covariance between \(X_{4}\) and \(X_{5}\). The next few lines carry out the mathematical calculations using these values.
+\[
+\begin{align}
+s^2_Y &= 0.001^2s^2_4 + s^2_5 + 2 \times 0.001s_{45}\\ &= 0.000001 \times 2668452.4 + 5416.3 + 0.002 \times 22063.3\\ &= 2.7 + 5416.3 + 44.1 \\ &= 5463.1
+\end{align}
+\]
+2.4 Population Covariance
+Sometimes we are interested in more than one linear combination or variable. In this case, we may be interested in the association between those two linear combinations. More specifically, we can consider the covariance between two linear combinations of the data.
+Consider the pair of linear combinations:
+\[
+Y_1 = \sum_{j=1}^{p}c_jX_j \quad \text{and} \quad Y_2 = \sum_{k=1}^{p}d_kX_k
+\]
+Here \(Y_{1}\) and \(Y_{2}\) are two distinct linear combinations. Both variables \(Y_{1}\) and \(Y_{2}\) are going to be random and so they will be potentially correlated. We can assess the association between these variables using the covariance as the two vectors c and d are distinct.
+The population covariance between \(Y_{1}\) and \(Y_{2}\) is obtained by summing over all pairs of variables. We then multiply respective coefficients from the two linear combinations as \(d_{j}\) times \(d_{k}\) times the covariances between j and k.
+Population Covariance between two linear combinations
+\[
+cov(Y_1, Y_2) = \sum_{j=1}^{p}\sum_{k=1}^{p}c_jd_k\sigma_{jk}
+\]
+We can then estimate the population covariance by using the sample covariance. This is obtained by simply substituting the sample covariances between the pairs of variables for the population covariances between the pairs of variables.
+Sample Covariance between two linear combinations
+\[
+s_{Y_1,Y_2}= \sum_{j=1}^{p}\sum_{k=1}^{p}c_jd_ks_{jk}
+\]
+Correlation
+The population correlation between variables \(Y_{1}\) and \(Y_{2}\) can be obtained by using the usual formula of the covariance between \(Y_{1}\) and \(Y_{2}\) divided by the standard deviation for the two variables as shown below.
+Population Correlation between two linear combinations
+\[
+\rho_{Y_1,Y_2} = \dfrac{\sigma_{Y_1,Y_2}}{\sigma_{Y_1}\sigma_{Y_2}}
+\]
+This population correlation is estimated by the sample correlation where we simply substitute the sample quantities for the population quantities below
+Sample Correlation between two linear combinations
+\[
+r_{Y_1,Y_2} = \dfrac{s_{Y_1, Y_2}}{s_{Y_1}s_{Y_2}}
+\]
+Example 2.5 (Women’s Health Survey (Pop. Covariance and Correlation)) Here is the matrix of the data as was shown previously.
+\[
+S = \left(\begin{array}{`RRRRR`}157829.4 & 940.1 & 6075.8 & 102411.1 & 6701.6 \\ 940.1 & 35.8 & 114.1 & 2383.2 & 137.7 \\ 6075.8 & 114.1 & 934.9 & 7330.1 & 477.2 \\ 102411.1 & 2383.2 & 7330.1 & 2668452.4 & 22063.3 \\ 6701.6 & 137.7 & 477.2 & 22063.3 & 5416.3 \end{array}\right)
+\]
+We may wish to define the total intake of vitamins A and C in mg as before.
+\[
+Y_{1}=0.001X_{4}+X_{5}
+\]
+and we may also want to take a look at the total intake of calcium and iron:
+\[
+Y_{2}=X_{1}+X_{2}
+\]
+Then the sample covariance between \(Y_{1}\) and \(Y_{2}\) can then be obtained by looking at the covariances between each pair of the component variables time the respective coefficients. So in this case we are looking at pairing \(X_{1}\) and \(X_{4}\), \(X_{1}\) and \(X_{5}\), \(X_{2}\) and \(X_{4}\), and \(X_{2}\) and \(X_{5}\). You will notice that in the expression below \(s_{41}\), \(s_{42}\), \(s_{51}\) and \(s_{52}\) all appear. The variables are taken from the matrix above and substituted into the expression and the math is carried out below.
+\[
+\begin{align}
+s_{Y_1, Y_2} & = 0.001s_{41} + 0.001s_{42} + s_{51}+s_{52}\\& = 0.001 \times 102411.1 + 0.001 \times 2383.2 + 6701.6 +137.7\\ & = 102.4 + 2.4 + 6701.6 + 137.7\\ & = 6944.1
+\end{align}
+\]
+You should be able at this point to be able to confirm that the sample variance of \(Y_{2}\) is 159,745.4 as shown below:
+\[
+\begin{align}
+s^2_{Y_2} & = s_{11}+s_{22}+2s_{12}\\ & = 157829.4 + 35.8 + 2 \times 940.1\\ & = 157829.4 + 35.8 + 1880.2 \\ & = 159745.4
+\end{align}
+\]
+And, if we care to obtain the sample correlation between \(Y_{1}\) and \(Y_{2}\), we take the sample covariance that we just obtained and divide it by the square root of the product of the two component variances, 5463.1, for \(Y_{1}\), which we obtained earlier, and 159745.4, which we just obtained above. Following this math through, we end up with a correlation of about 0.235 as shown below.
+\[
+\begin{align}
+r_{Y_1,Y_2} &= \dfrac{s_{Y_1, Y_2}}{s_{Y_1}s_{Y_2}}\\ &= \dfrac{6944.1}{\sqrt{5463.1 \times 159745.4}}\\&=0.235
+\end{align}
+\]
+2.5 Summary
+In this lesson we learned about:
+The definition of a linear combination of random variables;
+Expressions of the population mean and variance of a linear combination and the covariance between two linear combinations;
+How to compute the sample mean of a linear combination from the sample means of the component variables;
+How to compute the sample variance of a linear combination from the sample variances and covariances of the component variables;
+How to compute the sample covariance and correlation between two linear combinations from the sample covariances of the component variables.
+×
+Online master’s program
+Take your statistics skills further
+Explore Penn State’s online Master of Applied Statistics program.
+Explore the program
+→
+1  Measures of Central Tendency, Dispersion and Association
+3  Graphical Display of Multivariate Data
+Source Code
+---
+categories: [Sample mean, Sample variance, Linear combination, Random Variables, Central Tendancy, Population Variance, Population Covariance] # Add your categories here
+image: /assets/L2card.png # change the image path
+---
+# Linear Combinations of Random Variables
+## Overview {.unnumbered .unlisted}
+This lesson is concerned with linear combinations or if you would like **linear transformations** of the variables. Mathematically linear combinations can be expressed as shown in the expression below:
+$$
+Y = c_1X_1 +c_2X_2 +\dots + c_pX_p = \sum_{j=1}^{p}c_jX_j = \mathbf{c}'\mathbf{X}
+$$
+Here what we have is a set of coefficients $c_{1}$ through $c_{p}$ that is multiplied bycorresponding variables $X_{1}$ through $X_{p}$. So, in the first term, we have $c_{1}$ times $X_{1}$ which is added to $c_{2}$ times $X_{2}$ and so on up to the variable $X_{p}$. Mathematically this is expressed as the sum of $j = 1, ... , p$ of the terms $c_{j}$ times $X_{j}$. The random variables $X_{1}$ through $X_{p}$ are collected into a column vector `X` and the coefficient $c_{1}$ to $c_{p}$ are collected into a column vector **c**. Hence, the linear combination can be expressed as $\mathbf{c}'\mathbf{X}$.
+The selection of the coefficients $c_{1}$ through $c_{p}$ is very much dependent on the application of interest and what kinds of scientific questions we would like to address.
+Later on in this course, when we learn about multivariate data reduction techniques, the interpretation of linear combinations will be of great importance.
+::: {.objectiveblock}
+### <i class="bi bi-check2-circle"></i>Objectives {.unnumbered  .unlisted}
+Upon completion of this lesson, you should be able to:
+1. Interpret the meaning of a specified linear combination;
+2. Compute the sample mean and variance of a linear combination from the sample means, variances, and covariances of the individual variables.
+:::
+## Examples of Linear Combinations
+::: {#exm-example-2-1}
+#### Women’s Health Survey (Linear Combinations)
+The Women's Health Survey data contains observations for the following variables:
+-   $X_{1}$ calcium (mg)
+-   $X_{2}$ iron (mg)
+-   $X_{3}$ protein(g)
+-   $X_{4}$ vitamin A(μg)
+-   $X_{5}$ vitamin C(mg)
+In addition to addressing questions about the individual nutritional component, we may wish to address questions about certain combinations of these components. For instance, we might want to ask what is the total intake of vitamins A and C (in mg). We note that in this case, Vitamin A is measured in micrograms while Vitamin C is measured in milligrams. There are a thousand micrograms per milligram so the total intake of the two vitamins,  $Y$, can be expressed as the following:
+$$
+Y = 0.001 X _ { 4 } + X _ { 5 }
+$$
+In this case, our coefficients $c_{1}$ , $c_{2}$ and $c_{3}$ are all equal to 0 since the variables $X_{1}$, $X_{2}$ and $X_{3}$ do not appear in this expression. In addition, $c_{4}$ is equal to 0.001 since each microgram of vitamin A is equal to 0.001 milligrams of vitamin A. In summary, we have
+$$
+c_{1}=c_{2}=c_{3}=0,c_{4}=0.001,c_{5}=1
+$$
+:::
+::: {#exm-example-2-2}
+#### Monthly Employment Data
+Another example where we might be interested in linear combinations is in the Monthly Employment Data. Here we have observations on 6 variables:
+-   $X_{1}$ Number people laid off or fired
+-   $X_{2}$ Number of people resigning
+-   $X_{3}$ Number of people retiring
+-   $X_{4}$ Number of jobs created
+-   $X_{5}$ Number of people hired
+-   $X_{6}$ Number of people entering the workforce
+#### Net employment decrease: {.unnumbered .unlisted}
+In looking at the net job increase, which is equal to the number of jobs created, minus the number of jobs lost.
+$$
+Y = X_{4}-X_{1}-X_{2}-X_{3}
+$$
+In this case, we have the number of jobs created, ($X_{4}$), minus the number of people laid off or fired, ($X_{1}$), minus the number of people resigning, ($X_{2}$), minus the number of people retired, ($X_{3}$). These are all of the people that have left their jobs for whatever reason.
+In this case
+$$
+c_{1}=c_{2}=c_{3}=-1\text{ and }c_{4}=1
+$$
+Because variables 5 and 6 are not included in this expression,
+$$
+c_{5}=c_{6}=0
+$$
+#### Net employment increase: {.unnumbered .unlisted}
+In a similar fashion, net employment increase is equal to the number of people hired, ($X_{5}$), minus the number of people laid off or fired, ($X_{1}$), minus the number of people resigning, ($X_{2}$), minus the number of people retired, ($X_{3}$).
+$$
+Y=X_{5}-X_{1}-X_{2}-X_{3}
+$$
+In this case
+$$
+c_{1}=c_{2}=c_{3}=-1,c_{4}=c_{6}=0,\text{ and }c_{5}=1
+$$
+#### Net unemployment increase: {.unnumbered .unlisted}
+Net unemployment increase is going to be equal to the number of people laid off or fired, ($X_{1}$), plus the number of people resigning, ($X_{2}$), plus the number of people entering the workforce, ($X_{6}$), minus the number of people hired, ($X_{5}$).
+$$
+Y=X_{1}+X_{2}+X_{6}-X_{5}
+$$
+#### Unfilled jobs: {.unnumbered .unlisted}
+Finally, if we wanted to ask about the number of jobs that went unfilled, this is simply equal to the number of jobs created, ($X_{4}$), minus the number of people hired, ($X_{5}$).
+$$
+Y=X_{4}-X_{5}
+$$
+In other applications, of course, other linear combinations would be of interest.
+:::
+## Measures of Central Tendency
+### Overview {.unnumbered .unlisted}
+Because linear combinations are functions of random quantities, they also are random vectors, and hence have population means and variances. Moreover, if you are looking at several linear combinations, they will have covariances and correlations as well.
+Therefore we are interested in knowing:
+-   What is the population mean of $Y$?
+-   What is the population variance of $Y$?
+-   What is the population covariance between two linear combinations $Y_{1}$ and $Y_{2}$?
+### Population Mean {.unnumbered .unlisted}
+The population mean of a linear combination is equal to the same linear combination of the population means of the component variables. If
+$$
+Y = c_1X_1 + c_2X_2 +\dots c_pX_p =\sum_{j=1}^{p}c_jX_j = \mathbf{c}'\mathbf{X}
+$$
+then
+$$
+E(Y) = c_1 \mu_1 +c_2\mu_2 +\dots + c_p\mu_p = \sum_{j=1}^{p}c_j\mu_j = \mathbf{c}'\mathbf{\mu}
+$$
+Mathematically you express this as the sum of $j = 1$ to $p$ of $c_{j}$ times the corresponding mean of the $j_{th}$ variable. If the coefficient c's are collected into a vector **c** and the mean $\mu$ are collected into a mean vector $\mu$ you can express this as **c** transpose times $\mu$.
+We can estimate the population mean by replacing the population means with the corresponding sample means; that is replace all of the $\mu$'s with $\bar{x}$'s so that $\bar{y}$ equals $c_{1}$ times $\bar{x}_{1}$ plus $c_{2}$ times $\bar{x}_{2}$ and so on...
+::: {.callout-note appearance="minimal"}
+[**Population mean of a linear combination**]{.fs-4}
+$$
+\bar{y} = c_1\bar{x}_1 + c_2\bar{x}_2 + \dots + c_p\bar{x}_p = \sum_{j=1}^{p}c_j\bar{x}_j = \mathbf{c}'\mathbf{\bar{x}}
+$$
+:::
+::: {#exm-example-2-3}
+#### Women’s Health Survey (Population Mean)
+The following table shows the sample means for each of the five nutritional components that we computed in the previous lesson.
+| Variable | Mean |
+| --- |:---: |
+| Calcium | 624.0 mg |
+| Iron | 11.1 mg |
+| Protein | 65.8 g |
+| Vitamin A | 839.6 μg |
+| Vitamin C | 78.9 mg |
+: {.w-auto .table-sm .mx-auto .row-header}
+If, as previously, we define  $Y$ to be the total intake of vitamins A and C (in mg) or:
+$$
+Y=0.001X_{4}+X_{5}
+$$
+Then we can work out the estimated mean intake of the two vitamins as follows:
+$$
+\bar{y}=0.001 \bar{x}_4 +\bar{x}_5 = 0.001 \times 839.6 + 78.9248 = 0.8396 + 78.9248 = 79.7680 \text{mg}
+$$
+:::
+## Population Variance
+Linear combinations not only have a population mean but they also have a population variance. The population variance of a linear combination is expressed as the following double sum of  $j=1$ to  $p$ and  $k=1$ to  $p$ over all pairs of variables.
+$$
+var(Y) =\sum_{j=1}^{p}\sum_{k=1}^{p}c_jc_k\sigma_{jk}= c ^ { \prime } \Sigma c
+$$
+In each term within the double sum, the product of the paired coefficients $c_{j}$ times $c_{k}$ is multiplied by the covariance between the $j^{th}$ and $k^{th}$ variables. If $\Sigma$ is the variance-covariance matrix of $\mathbf{X}$, then $Var(Y) = c ^ { \prime } \Sigma c$ .
+Expressions of vectors and matrices of this form are called **quadratic form's**.
+When using this expression, the covariance between the variables and itself, or $\sigma_{jj}$ is simply equal to the variance of the $j^{th}$ variable, or $\sigma_{j}^{2}$.
+$$
+\sigma_{jj} = \sigma^2_j
+$$
+The variance of the random variable y can be estimated by the sample variances or  $s$ squared  $Y$. This is obtained by substituting the sample variances and covariances for the population variances and covariances as shown in the expression below.
+$$
+s^2_Y = \sum_{j=1}^{p}\sum_{k=1}^{p}c_jc_ks_{jk} =c ^ { \prime } S c
+$$
+A simplified calculation can be found below. This involves two terms.
+::: {.callout-note appearance="minimal"}
+[**Population variance of linear combinations**]{.fs-4}
+$$
+s^2_Y = \sum_{j=1}^{p}c^2_j s^2_j +2\sum_{j<k}c_jc_ks_{jk}
+$$
+:::
+The first term involves summing over all the variables. Here we take the squared coefficients and multiply them by their respective variances. In the second term, we sum over all unique pairs of variables  $j$ less than  $k$. Again take the product of $c_{j}$ times $c_{k}$ times the covariances between variables  $j$ and  $k$. Since each unique pair appears twice in the original expression, we must multiply the sum by 2.
+::: {#exm-example-2-4}
+#### Women’s Health Survey (Population Variance)
+Looking at the Women's Nutrition survey data we obtained the following variance/covariance matrix as shown below from the previous lesson.
+$$S = \left(\begin{array}{`RRRRR`}157829.4 & 940.1 & 6075.8 & 102411.1 & 6701.6 \\ 940.1 & 35.8 & 114.1 & 2383.2 & 137.7 \\ 6075.8 & 114.1 & 934.9 & 7330.1 & 477.2 \\ 102411.1 & 2383.2 & 7330.1 & 2668452.4 & 22063.3 \\ 6701.6 & 137.7 & 477.2 & 22063.3 & 5416.3 \end{array}\right)$$
+If we wanted to take a look at the total intake of vitamins A and C (in mg) remember we defined this earlier as:
+$$Y=0.001X_{4}+X_{5}$$
+Therefore the sample variance of $Y$ is equal to $(0.001)^{2}$ times the variance for $X_{4}$, plus the variance for $X_{5}$, plus 2 times 0.001 times the covariance between $X_{4}$ and $X_{5}$. The next few lines carry out the mathematical calculations using these values.
+$$
+\begin{align}
+s^2_Y &= 0.001^2s^2_4 + s^2_5 + 2 \times 0.001s_{45}\\ &= 0.000001 \times 2668452.4 + 5416.3 + 0.002 \times 22063.3\\ &= 2.7 + 5416.3 + 44.1 \\ &= 5463.1
+\end{align}
+$$
+:::
+## Population Covariance
+Sometimes we are interested in more than one linear combination or variable. In this case, we may be interested in the association between those two linear combinations. More specifically, we can consider the covariance between two linear combinations of the data.
+Consider the pair of linear combinations:
+$$
+Y_1 = \sum_{j=1}^{p}c_jX_j \quad \text{and} \quad Y_2 = \sum_{k=1}^{p}d_kX_k
+$$
+Here $Y_{1}$ and $Y_{2}$ are two distinct linear combinations. Both variables $Y_{1}$ and $Y_{2}$ are going to be random and so they will be potentially correlated. We can assess the association between these variables using the covariance as the two vectors c and d are distinct.
+The population covariance between $Y_{1}$ and $Y_{2}$ is obtained by summing over all pairs of variables. We then multiply respective coefficients from the two linear combinations as $d_{j}$ times $d_{k}$ times the covariances between j and k.
+::: {.callout-note appearance="minimal"}
+[**Population Covariance between two linear combinations**]{.fs-4}
+$$
+cov(Y_1, Y_2) = \sum_{j=1}^{p}\sum_{k=1}^{p}c_jd_k\sigma_{jk}
+$$
+:::
+We can then estimate the population covariance by using the sample covariance. This is obtained by simply substituting the sample covariances between the pairs of variables for the population covariances between the pairs of variables.
+::: {.callout-note appearance="minimal"}
+[**Sample Covariance between two linear combinations**]{.fs-4}
+$$
+s_{Y_1,Y_2}= \sum_{j=1}^{p}\sum_{k=1}^{p}c_jd_ks_{jk}
+$$
+:::
+### Correlation {.unnumbered .unlisted}
+The population correlation between variables $Y_{1}$ and $Y_{2}$ can be obtained by using the usual formula of the covariance between $Y_{1}$ and $Y_{2}$ divided by the standard deviation for the two variables as shown below.
+::: {.callout-note appearance="minimal"}
+[**Population Correlation between two linear combinations**]{.fs-4}
+$$
+\rho_{Y_1,Y_2} = \dfrac{\sigma_{Y_1,Y_2}}{\sigma_{Y_1}\sigma_{Y_2}}
+$$
+:::
+This population correlation is estimated by the sample correlation where we simply substitute the sample quantities for the population quantities below
+::: {.callout-note appearance="minimal"}
+[**Sample Correlation between two linear combinations**]{.fs-4}
+$$
+r_{Y_1,Y_2} = \dfrac{s_{Y_1, Y_2}}{s_{Y_1}s_{Y_2}}
+$$
+:::
+::: {#exm-example-2-5}
+#### Women’s Health Survey (Pop. Covariance and Correlation)
+Here is the matrix of the data as was shown previously.
+$$
+S = \left(\begin{array}{`RRRRR`}157829.4 & 940.1 & 6075.8 & 102411.1 & 6701.6 \\ 940.1 & 35.8 & 114.1 & 2383.2 & 137.7 \\ 6075.8 & 114.1 & 934.9 & 7330.1 & 477.2 \\ 102411.1 & 2383.2 & 7330.1 & 2668452.4 & 22063.3 \\ 6701.6 & 137.7 & 477.2 & 22063.3 & 5416.3 \end{array}\right)
+$$
+We may wish to define the total intake of vitamins A and C in mg as before.
+$$
+Y_{1}=0.001X_{4}+X_{5}
+$$
+and we may also want to take a look at the total intake of calcium and iron:
+$$
+Y_{2}=X_{1}+X_{2}
+$$
+Then the sample covariance between $Y_{1}$ and $Y_{2}$ can then be obtained by looking at the covariances between each pair of the component variables time the respective coefficients. So in this case we are looking at pairing $X_{1}$ and $X_{4}$, $X_{1}$ and $X_{5}$, $X_{2}$ and $X_{4}$, and $X_{2}$ and $X_{5}$. You will notice that in the expression below $s_{41}$, $s_{42}$, $s_{51}$ and $s_{52}$ all appear. The variables are taken from the matrix above and substituted into the expression and the math is carried out below.
+$$
+\begin{align}
+s_{Y_1, Y_2} & = 0.001s_{41} + 0.001s_{42} + s_{51}+s_{52}\\& = 0.001 \times 102411.1 + 0.001 \times 2383.2 + 6701.6 +137.7\\ & = 102.4 + 2.4 + 6701.6 + 137.7\\ & = 6944.1
+\end{align}
+$$
+You should be able at this point to be able to confirm that the sample variance of $Y_{2}$ is 159,745.4 as shown below:
+$$
+\begin{align}
+s^2_{Y_2} & = s_{11}+s_{22}+2s_{12}\\ & = 157829.4 + 35.8 + 2 \times 940.1\\ & = 157829.4 + 35.8 + 1880.2 \\ & = 159745.4
+\end{align}
+$$
+And, if we care to obtain the sample correlation between $Y_{1}$ and $Y_{2}$, we take the sample covariance that we just obtained and divide it by the square root of the product of the two component variances, 5463.1, for $Y_{1}$, which we obtained earlier, and 159745.4, which we just obtained above. Following this math through, we end up with a correlation of about 0.235 as shown below.
+$$
+\begin{align}
+r_{Y_1,Y_2} &= \dfrac{s_{Y_1, Y_2}}{s_{Y_1}s_{Y_2}}\\ &= \dfrac{6944.1}{\sqrt{5463.1 \times 159745.4}}\\&=0.235
+\end{align}
+$$
+:::
+## Summary
+In this lesson we learned about:
+-   The definition of a linear combination of random variables;
+-   Expressions of the population mean and variance of a linear combination and the covariance between two linear combinations;
+-   How to compute the sample mean of a linear combination from the sample means of the component variables;
+-   How to compute the sample variance of a linear combination from the sample variances and covariances of the component variables;
+-   How to compute the sample covariance and correlation between two linear combinations from the sample covariances of the component variables.
+Except where otherwise noted, content on this site is licensed under a CC BY-NC 4.0 license.
+OPEN.ED@PSU
+Cookie Preferences
+Privacy | Accessibility | Copyright  The Pennsylvania State University ©  |  Leave Us Feedback

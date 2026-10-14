@@ -1,0 +1,48 @@
+{
+  "stem": "FCCの胞質量をSI体積で割り密度を求める。",
+  "conditions": {
+    "構造": "FCC",
+    "格子定数": "0.41nm",
+    "原子量": "197",
+    "指定NA": "6.0×10^23mol^-1",
+    "求める単位": "kg/m3"
+  },
+  "choices": {
+    "1": {
+      "value": "7.9×10^3kg/m3",
+      "verdict": "選ばない候補",
+      "reason": "計算密度に達しない。"
+    },
+    "2": {
+      "value": "1.2×10^4kg/m3",
+      "verdict": "選ばない候補",
+      "reason": "計算密度より小さい。"
+    },
+    "3": {
+      "value": "1.5×10^4kg/m3",
+      "verdict": "選ばない候補",
+      "reason": "計算密度より小さい。"
+    },
+    "4": {
+      "value": "1.9×10^4kg/m3",
+      "verdict": "選ぶ候補",
+      "reason": "胞原子数4とa=4.1×10^-10mから約1.91×10^4。"
+    },
+    "5": {
+      "value": "2.3×10^4kg/m3",
+      "verdict": "選ばない候補",
+      "reason": "計算密度より大きい。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_004.png"
+  ],
+  "question_id": "R04-REG-APPLIED-12",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "3b8cfccf772c181d19ad3ed182f351e7054e3f73e1647773e3e04ceedc3019ae",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

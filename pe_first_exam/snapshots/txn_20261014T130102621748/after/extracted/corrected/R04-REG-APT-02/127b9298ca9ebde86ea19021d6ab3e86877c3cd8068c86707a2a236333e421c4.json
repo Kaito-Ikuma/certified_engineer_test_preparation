@@ -1,0 +1,45 @@
+{
+  "stem": "PDCAの計画・実施・点検・処置。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+    "時点": "令和4年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "計画・点検・実施・処置",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 計画・実施・点検・処置 と異なる。"
+    },
+    "2": {
+      "value": "計画・点検・処置・実施",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 計画・実施・点検・処置 と異なる。"
+    },
+    "3": {
+      "value": "計画・実施・処置・点検",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 計画・実施・点検・処置 と異なる。"
+    },
+    "4": {
+      "value": "計画・実施・点検・処置",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "5": {
+      "value": "計画・処置・点検・実施",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 計画・実施・点検・処置 と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/aptitude/page_002.png"
+  ],
+  "question_id": "R04-REG-APT-02",
+  "source_file": "sources/R04/aptitude.pdf",
+  "source_page": "2",
+  "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+  "raw_text_sha256": "5c6b78b012cda2a216b765e3b12bc391460e1fe391e79035a63ab8fac127fbeb",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

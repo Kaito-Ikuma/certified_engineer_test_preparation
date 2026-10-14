@@ -1,0 +1,45 @@
+{
+  "stem": "Darcy則・異方性・井戸水位と自噴条件を比較する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "Darcy則・異方性・井戸水位と自噴条件を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "Darcy則は被圧帯水層で成立する",
+      "verdict": "条件付き・解釈留保",
+      "reason": "適切な層流・連続体近似のもとでは被圧帯水層にも成立する。原典に被圧だけ、のみという語はない。非被圧でも使えることは、この肢を直接否定しない。"
+    },
+    "2": {
+      "value": "水平・鉛直の透水性の違いは稀",
+      "verdict": "不適切",
+      "reason": "堆積層の配列や亀裂方向による異方性は一般的であり、等方性は近似条件である。"
+    },
+    "3": {
+      "value": "一定揚水の水位低下は厚さに比例",
+      "verdict": "不適切",
+      "reason": "均一な被圧帯水層の定常井戸モデルではs=Q ln(R/r)/(2πKb)。厚さbへの依存は反比例である。"
+    },
+    "4": {
+      "value": "漏水は常に下向き",
+      "verdict": "不適切",
+      "reason": "流れの向きは上下帯水層の水頭差で決まり、上向きも生じ得る。"
+    },
+    "5": {
+      "value": "扇状地下流の被圧層と自噴",
+      "verdict": "条件付き・解釈留保",
+      "reason": "透水層を難透水層が覆い、水頭が地表より高い場合に自噴する。扇端等でその構造が成立する代表例であり、すべての扇状地に必ず起こるわけではない。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "公式5、独立初回1|5を保持。原典1にのみ／だけの限定を追加して公式へ合わせない。Darcy流速と実流速の意味及び扇状地の地質・水頭条件も確認が必要。",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_010.png"
+  ],
+  "question_id": "R01-RET-APPLIED-29",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "810905586354b35f7df4bf40ac89046b8a437a261db38dbf6879ca532e2011c6",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

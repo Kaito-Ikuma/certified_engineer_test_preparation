@@ -1,0 +1,46 @@
+{
+  "stem": "凸レンズの物体位置、像の実虚と向き、物体移動と像距離の変化を表の5空欄へ対応させる。",
+  "conditions": {
+    "候補表": "各行はア・イ・ウ・エ・オの順。",
+    "条件": "凸レンズ、焦点距離の内外と有限の物体位置。",
+    "方向": "表の適切な組合せ。"
+  },
+  "choices": {
+    "1": {
+      "value": "外側／虚像／同じ／遠い／実像",
+      "verdict": "不適切",
+      "reason": "焦点外の像を虚像とした点と正立とした点が誤り。内側では実像ではない。"
+    },
+    "2": {
+      "value": "外側／実像／反対／近い／虚像",
+      "verdict": "最適",
+      "reason": "焦点外は倒立実像で、物体を焦点へ近づけると像は遠ざかる。内側は正立虚像であり、全空欄が整合。"
+    },
+    "3": {
+      "value": "内側／虚像／反対／遠い／実像",
+      "verdict": "不適切",
+      "reason": "実像形成の対象位置と虚像の向きを取り違え、内側の像を実像としている。"
+    },
+    "4": {
+      "value": "内側／実像／同じ／遠い／虚像",
+      "verdict": "不適切",
+      "reason": "焦点内の像は正立だが虚像である。最初の実像条件と像の向き、最後の実像が不整合。"
+    },
+    "5": {
+      "value": "焦点上／実像／反対／近い／虚像",
+      "verdict": "不適切",
+      "reason": "物体が焦点上なら出射光は平行で、有限位置へ像はできない。最初の空欄が成立しない。"
+    }
+  },
+  "figures": "原典の条件・数式・単位・全5肢を実画像確認。原典の配置図又は5候補表を照合し、独自説明で位置と符号を区別。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_003.png"
+  ],
+  "question_id": "H26-REG-APPLIED-07",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "73f19c7b3b3d579426f452697c6c87a0c3f70aa2db216aa5da5b6a9e8e1f0806",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

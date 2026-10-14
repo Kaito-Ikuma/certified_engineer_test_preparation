@@ -1,0 +1,12 @@
+{
+  "H27/basic/14/0": {
+    "number": "4-5",
+    "reason": "原典PNGを目視確認。OCRが群番号4をAと誤認。",
+    "evidence": "extracted/pages/H27/basic/page_014.png"
+  },
+  "H27/17_applied_science/3/37": {
+    "number": "8",
+    "reason": "原典PNGを目視確認。OCRが見出しIII-8を欠落。",
+    "evidence": "extracted/pages/H27/17_applied_science/page_003.png"
+  }
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "question_id": "H24-REG-APPLIED-24",
+    "source": "sources/H24/17_applied_science.pdf",
+    "pages": "8-8",
+    "image": "extracted/pages/H24/17_applied_science/page_008.png"
+  },
+  {
+    "question_id": "H25-REG-APPLIED-18",
+    "source": "sources/H25/17_applied_science.pdf",
+    "pages": "8-8",
+    "image": "extracted/pages/H25/17_applied_science/page_008.png"
+  },
+  {
+    "question_id": "H25-REG-APPLIED-22",
+    "source": "sources/H25/17_applied_science.pdf",
+    "pages": "9-9",
+    "image": "extracted/pages/H25/17_applied_science/page_009.png"
+  },
+  {
+    "question_id": "H25-REG-APPLIED-23",
+    "source": "sources/H25/17_applied_science.pdf",
+    "pages": "9-9",
+    "image": "extracted/pages/H25/17_applied_science/page_009.png"
+  },
+  {
+    "question_id": "H26-REG-APPLIED-28",
+    "source": "sources/H26/17_applied_science.pdf",
+    "pages": "12-12",
+    "image": "extracted/pages/H26/17_applied_science/page_012.png"
+  },
+  {
+    "question_id": "H27-REG-APPLIED-30",
+    "source": "sources/H27/17_applied_science.pdf",
+    "pages": "11-11",
+    "image": "extracted/pages/H27/17_applied_science/page_011.png"
+  },
+  {
+    "question_id": "H29-REG-APPLIED-27",
+    "source": "sources/H29/17_applied_science.pdf",
+    "pages": "9-9",
+    "image": "extracted/pages/H29/17_applied_science/page_009.png"
+  },
+  {
+    "question_id": "H30-REG-APPLIED-31",
+    "source": "sources/H30/17_applied_science.pdf",
+    "pages": "10-10",
+    "image": "extracted/pages/H30/17_applied_science/page_010.png"
+  },
+  {
+    "question_id": "R01-REG-APPLIED-26",
+    "source": "sources/R01/17_applied_science.pdf",
+    "pages": "9-9",
+    "image": "extracted/pages/R01/17_applied_science/page_009.png"
+  },
+  {
+    "question_id": "R01-RET-APPLIED-25",
+    "source": "sources/R01_retest/17_applied_science.pdf",
+    "pages": "8-8",
+    "image": "extracted/pages/R01_retest/17_applied_science/page_008.png"
+  },
+  {
+    "question_id": "R03-REG-APPLIED-22",
+    "source": "sources/R03/17_applied_science.pdf",
+    "pages": "8-8",
+    "image": "extracted/pages/R03/17_applied_science/page_008.png"
+  },
+  {
+    "question_id": "R03-REG-APPLIED-25",
+    "source": "sources/R03/17_applied_science.pdf",
+    "pages": "9-9",
+    "image": "extracted/pages/R03/17_applied_science/page_009.png"
+  },
+  {
+    "question_id": "R04-REG-APPLIED-23",
+    "source": "sources/R04/17_applied_science.pdf",
+    "pages": "8-8",
+    "image": "extracted/pages/R04/17_applied_science/page_008.png"
+  },
+  {
+    "question_id": "R06-REG-APPLIED-23",
+    "source": "sources/R06/17_applied_science.pdf",
+    "pages": "8-8",
+    "image": "extracted/pages/R06/17_applied_science/page_008.png"
+  }
+]

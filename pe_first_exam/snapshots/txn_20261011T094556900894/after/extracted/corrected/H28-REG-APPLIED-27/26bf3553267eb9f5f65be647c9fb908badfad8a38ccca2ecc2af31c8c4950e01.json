@@ -1,0 +1,44 @@
+{
+  "stem": "自然温室効果、初期大気、メタン条件、風化と炭素貯留を判定する。",
+  "conditions": {
+    "方向": "最も適切なもの。"
+  },
+  "choices": {
+    "1": {
+      "value": "初期CO2は現在より低い。",
+      "verdict": "不適切",
+      "reason": "初期大気のCO2は現在より高かったとする地史的な理解と逆である。初期という語の全時代の精密濃度を固定しない。"
+    },
+    "2": {
+      "value": "最大の温室効果はCO2で水蒸気が次。",
+      "verdict": "不適切",
+      "reason": "自然の温室効果では水蒸気の寄与が大きい。人為的な追加放射強制力のランキングを現在大気の全温室効果と混ぜている。"
+    },
+    "3": {
+      "value": "メタンは酸化環境で生成。",
+      "verdict": "不適切",
+      "reason": "メタン生成微生物は通常嫌気的な条件で活動する。酸化的な条件でのメタン酸化と生成を区別する。"
+    },
+    "4": {
+      "value": "風化によるCO2除去は重要で、光合成・分解・呼吸で長期に均衡。",
+      "verdict": "意図上適切・収支範囲疑義",
+      "reason": "風化による炭素固定と生物の吸収・呼吸・分解は重要である。ただし遅い循環の収支は火山・堆積・有機炭素埋没等も含み、3作用だけで任意時点の均衡が保証されるわけではない。"
+    },
+    "5": {
+      "value": "大気Cは海洋Cの半分。",
+      "verdict": "不適切",
+      "reason": "海洋の溶存無機炭素等は大気炭素よりはるかに大きい。大気が海洋の半分という量関係ではない。"
+    }
+  },
+  "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "正答の風化・生物循環の重要性は支持されるが、「光合成、有機物分解、呼吸によって長期にバランス」という原典の収支範囲は不十分。火山・堆積・埋没も必要で、人為擾乱下の現在大気は定常でない。原典を修正せず部分校正。",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_011.png"
+  ],
+  "question_id": "H28-REG-APPLIED-27",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "fd2d786441c7b10c704d4d590bfb8fcfadf459541f2767bc20da7c65fcc6a70d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

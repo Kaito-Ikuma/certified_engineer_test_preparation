@@ -1,0 +1,47 @@
+{
+  "stem": "100110の6桁を固定して、2の補数と1の補数を求める。",
+  "conditions": {
+    "対象二進数": "100110",
+    "桁数": 6,
+    "定義": "2の補数は2^k-X、1の補数は(2^k-1)-X。",
+    "空欄順": "2の補数／1の補数"
+  },
+  "choices": {
+    "1": {
+      "value": "000110／000101",
+      "verdict": "不適切な解答候補",
+      "reason": "2の補数は011010であり、000110ではない。1の補数は011001であり、000101ではない。"
+    },
+    "2": {
+      "value": "011010／011001",
+      "verdict": "適切な解答候補",
+      "reason": "2の補数と1の補数がともに一致する。"
+    },
+    "3": {
+      "value": "000111／000110",
+      "verdict": "不適切な解答候補",
+      "reason": "2の補数は011010であり、000111ではない。1の補数は011001であり、000110ではない。"
+    },
+    "4": {
+      "value": "011001／011010",
+      "verdict": "不適切な解答候補",
+      "reason": "2の補数は011010であり、011001ではない。1の補数は011001であり、011010ではない。"
+    },
+    "5": {
+      "value": "011000／011001",
+      "verdict": "不適切な解答候補",
+      "reason": "2の補数は011010であり、011000ではない。"
+    }
+  },
+  "figures": "図なし。5肢の値または記述を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/basic/page_008.png"
+  ],
+  "question_id": "R02-REG-BASIC-2-4",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "ca2cf3624e5f29334214d32ab5a78d82731c6c25f061c1299137f642f2ec3b34",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

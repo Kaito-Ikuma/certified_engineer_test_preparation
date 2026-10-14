@@ -1,0 +1,45 @@
+{
+  "stem": "標準タンパク質のアミノ酸種数、共通官能基、側鎖の疎水性、立体配置を4空欄へ対応させる。",
+  "conditions": {
+    "空欄": "ア〜エ。特殊なアミノ酸を除く。",
+    "対象": "タンパク質加水分解のアミノ酸、グリシンの不斉例外。"
+  },
+  "choices": {
+    "1": {
+      "value": "20／カルボキシ基／疎水／L体",
+      "verdict": "最適",
+      "reason": "標準20種、共通カルボキシ基、非極性の疎水側鎖、主にLという全項目が一致。"
+    },
+    "2": {
+      "value": "20／ヒドロキシ基／疎水／D体",
+      "verdict": "不適切",
+      "reason": "共通の基をヒドロキシ基へ置換し、標準タンパク質の立体配置も逆。"
+    },
+    "3": {
+      "value": "30／カルボキシ基／親水／L体",
+      "verdict": "不適切",
+      "reason": "標準種数とロイシン・フェニルアラニンの側鎖の分類が違う。"
+    },
+    "4": {
+      "value": "30／ヒドロキシ基／親水／L体",
+      "verdict": "不適切",
+      "reason": "種数・共通基・炭化水素側鎖の分類が違う。"
+    },
+    "5": {
+      "value": "30／カルボキシ基／疎水／D体",
+      "verdict": "不適切",
+      "reason": "共通基と疎水性は合うが、標準20種と主にLを満たさない。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。空欄と5行の候補表を個別に照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/basic/page_017.png"
+  ],
+  "question_id": "H25-REG-BASIC-4-5",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "0657423efe5744fb4a71e16f656ee4508c2284208181d5a22ce9a529791f909b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

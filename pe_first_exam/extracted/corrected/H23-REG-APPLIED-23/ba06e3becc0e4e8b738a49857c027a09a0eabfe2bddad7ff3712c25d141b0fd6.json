@@ -1,0 +1,45 @@
+{
+  "stem": "斑岩銅・黒鉱・別子型・スカルンの生成場を比較する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "斑岩銅・黒鉱・別子型・スカルンの生成場を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "浅所貫入岩内外の鉱染・細脈",
+      "verdict": "代表的条件で適切",
+      "reason": "斑岩質岩体とその周辺に分散した硫化物と網状細脈を作り、大規模・低品位となる代表的な斑岩銅の産状。"
+    },
+    "2": {
+      "value": "珪長質海底火山の塊状硫化物",
+      "verdict": "不適切",
+      "reason": "火山性塊状硫化物鉱床、特に黒鉱型の説明。斑岩銅と生成位置・形態が異なる。"
+    },
+    "3": {
+      "value": "苦鉄質起源の変成岩中の層状硫化物",
+      "verdict": "不適切",
+      "reason": "別子型等の層状含銅硫化鉄鉱の説明に対応する。"
+    },
+    "4": {
+      "value": "炭酸塩岩の熱水交代",
+      "verdict": "不適切",
+      "reason": "接触交代・スカルン鉱床の説明で、斑岩銅の鉱染・細脈とは区別する。"
+    },
+    "5": {
+      "value": "縞状鉱でCu2+を酸化沈殿",
+      "verdict": "不適切",
+      "reason": "古い縞状鉄鉱の成因を銅へ置換している。鉄の酸化・沈殿を述べる場合と混同しない。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_007.png"
+  ],
+  "question_id": "H23-REG-APPLIED-23",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "e7211f5ea2579548a1ffcb7a5f97b55d34b3198a3968d08372dafd89f31dbb2b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

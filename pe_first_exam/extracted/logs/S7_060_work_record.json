@@ -1,0 +1,19 @@
+{
+  "time": "2026-10-14T21:34:11.730194",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_060_environment_final",
+  "source_images_actually_viewed": 22,
+  "source_reviewed_questions": 30,
+  "initial_matches": 30,
+  "new_concepts": 14,
+  "concept_count": 617,
+  "concept_version": "1.54",
+  "new_references": 15,
+  "solution_drafts_after_batch": 1270,
+  "batch_full_conditions": 5,
+  "batch_partial_conditions": 25,
+  "intermediate_pdf_manifest": "extracted/logs/S7_060_intermediate_build_manifest.json",
+  "pdf_visual_review": "最終CP2ビルドで追加・理論・分析・初期5問を確認する。中間PDF未目視を成功に数えない。",
+  "remaining": "最終PDF目視とCheckpoint2引継ぎ文書。"
+}

@@ -1,0 +1,166 @@
+5.60 Spring 2007                    Lecture #23                             page     1
+
+
+
+                       Colligative Properties
+
+These are properties of solutions in the dilute limit, where there is a
+solvent “A” and a solute “B” where nA >> nB.
+
+                                                                  pure
+These properties are a direct result of µ Amix (l, T, p) < µ A           (l, T, p)
+
+Use two measures of concentration:
+
+a.    Mole Fraction: xB = nB/(nA+nB) ~ nB/nA
+
+b.    Molalility: mB = (moles solute)/(kg solvent) = nB/(nAM A)
+      Where MA is the mass in kg of one mole of solvent.
+
+There are FOUR Colligative Properties:
+
+1.    Vapor pressure lowering:              "pA = pA ! pA* = !xB pA*
+
+
+2.    Boiling point elevation:              "Tb = Tb ! Tb* = Kb mB
+
+                                                                    2
+
+                                                  Kb =
+                                                             ( )
+                                                         MA R Tb*
+                                                           !Hvap
+
+
+3.    Freezing point depression:            "Tf = Tf ! Tf* = !Kf mB
+
+                                                                    2
+
+                                                  Kf =
+                                                             ( )
+                                                         MA R Tf*
+                                                            !Hf
+
+
+4.    Osmotic pressure:                     ! = RTc~
+                                ~=   nB
+                          where c       is concentration of solute
+                                     V
+5.60 Spring 2007                                 Lecture #23                        page   2
+
+
+
+
+Let’s go through these one at a time:
+
+1.     Vapor pressure lowering: This is just Raoult’s Law.
+
+     pA = xA pA* = (1 ! xB )pA*             So          "pA = pA ! pA* = !xB pA* (<0)
+
+
+2.     Boiling point elevation:
+
+Let’s derive this. Start with                 µ A (l, T, p) = µ A (g, T, p)
+
+So,                               µ A* (l, T, p) + RT ln xA = µ A (g, T, p)
+                                             1                                    !Gvap
+And                               ln xA =      [µ A (g, T, p) " µ A* (l, T, p)] =
+                                            RT                                     RT
+
+But lnxA = ln(1-xB) ~ -xB = -nB/(nA+nB) ~ -nB/nA = -(MnB)/(MnA)
+
+Where M is the total mass of A,
+
+So, lnxA ~ m BMA, where MA is the molar mass of A.
+
+                                                                      " !Gvap
+Putting it all together then,                                  mB =
+                                                                       MA RT
+But we need ΔT in there!
+
+
+       ( )mB %              (
+                 " 1 (& ) !Gvap T %#      )
+                                        " !Hvap
+…      &     # =                      =
+       ' )T $ p MA R &'    )T                  2
+                                   #
+                                   $p   M A RT
+
+
+                           MA RT 2
+which gives us !T =                    !mB
+                            "Hvap
+5.60 Spring 2007                       Lecture #23                               page   3
+
+
+
+If δmB = mB – 0 (mixed – pure) and mB is very small
+
+
+                                      *  MA R(Tb* ) 2
+Then                      #T = Tb " Tb =              mB = Kb mB
+                                          !Hvap
+
+
+
+3.    Freezing point depression:
+
+Same arguments as above, replacing                       ΔGvap with –ΔGf
+                                                         ΔHvap with –ΔHf
+                                                         Tb with Tf
+                                                         Kb with Kf
+
+
+
+4.    Osmotic Pressure:
+
+                                        The pressures at points:
+     pext
+                          h             β:     p = pext + ρg
+
+              α•    β•
+                                        α:     p + π = pext + ρg + h ρg
+              A+B
+
+
+
+     A
+
+
+
+
+At equilibrium:           µ A (l, p + !, T ) = µ A* (l, p, T )
+
+Using Raoult’s Law:       RT ln xA + µ A* (l, p + ", T ) ! µ A* (l, p, T ) = 0
+
+At constant T:            dG = Vdp, or dµ A* = VA* dp
+5.60 Spring 2007                       Lecture #23                             page   4
+
+
+                                                                   p+ !
+Integrating…             µ A* (l, p + !, T ) " µ A* (l, p, T ) =          *    *
+                                                                    # VA dp = VA !
+                                                                    p
+
+(this assumed an incompressible liquid, where volume does not depend
+on p)
+
+So then RT ln xA + VA* ! = 0
+
+Again using lnxA ~ -nB/nA
+
+Then RT(-nB/nA) + (VA/nA)π = 0
+
+But VA ~ VA + VB = V              (VB<<VA)
+
+So finally,              πV = RTnB
+
+This is the Van’t Hoff Equation. It looks like the ideal gas law!
+
+              ~ = n /V in the Van’t Hoff Eq., then we get the osmotic
+If we replace c    B
+pressure relation:
+
+                         ! = RTc~
+

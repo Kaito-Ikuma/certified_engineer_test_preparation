@@ -1,0 +1,45 @@
+{
+  "stem": "界面活性分子と固体吸着材を区別する。",
+  "conditions": {
+    "判断対象": "界面活性分子と固体吸着材を区別する。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "けん化",
+      "verdict": "選ばない候補",
+      "reason": "脂肪酸塩の石けんを生成。"
+    },
+    "2": {
+      "value": "活性炭",
+      "verdict": "選ぶ候補",
+      "reason": "多孔質の固体吸着材で界面活性分子とは別分類。"
+    },
+    "3": {
+      "value": "臨界ミセル濃度",
+      "verdict": "選ばない候補",
+      "reason": "界面活性分子の会合が重要になる濃度。"
+    },
+    "4": {
+      "value": "ソルビタン脂肪酸エステル",
+      "verdict": "選ばない候補",
+      "reason": "非イオン系の代表。"
+    },
+    "5": {
+      "value": "ドデシルベンゼンスルホン酸Na",
+      "verdict": "選ばない候補",
+      "reason": "陰イオン系の代表。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_005.png"
+  ],
+  "question_id": "H29-REG-APPLIED-17",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "af1d9d32ffafe90718cfd3e835ccb22d37dfdada747e26944ee60c31693312a9",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

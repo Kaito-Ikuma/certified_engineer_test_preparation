@@ -1,0 +1,45 @@
+{
+  "stem": "高分子分子量の相対GPC測定と浸透圧による数平均を比較する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "高分子分子量の相対GPC測定と浸透圧による数平均を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "ゲルろ過の溶離時間",
+      "verdict": "条件付き・解釈留保",
+      "reason": "サイズ排除クロマトグラフィーとして標準物質で校正すれば分子量と分布を測定できる。原典に絶対測定という限定はなく、一般の分子量測定法としても成立する。"
+    },
+    "2": {
+      "value": "中和滴定から解離度",
+      "verdict": "不適切",
+      "reason": "示されたpH・解離定数の式は電離状態を調べる。末端基の数など追加情報なしに一般の高分子分子量を与えない。"
+    },
+    "3": {
+      "value": "半透膜による浸透圧",
+      "verdict": "通常の条件で適切",
+      "reason": "希薄溶液の粒子数に依存する浸透圧から数平均分子量を求める。濃度ゼロへの外挿で相互作用の寄与を減らす。"
+    },
+    "4": {
+      "value": "ガラス転移点の測定",
+      "verdict": "不適切",
+      "reason": "分子量と相関することはあるが、化学構造・可塑剤等にも依存し、記述だけでは一意に分子量が決まらない。"
+    },
+    "5": {
+      "value": "円偏光二色性",
+      "verdict": "不適切",
+      "reason": "左右円偏光に対する吸収差を測り、立体構造や二次構造を調べる。一般の分子量直接測定ではない。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "公式3を保持。初回独立1|3を保存。1も校正されたGPCによる分子量測定として成立し、単一正答の排他性は未解決。",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_007.png"
+  ],
+  "question_id": "H25-REG-APPLIED-16",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "507f5cd56112a257caac28b05c20ecd00d00e3c5232332d05054d106f1f34da4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

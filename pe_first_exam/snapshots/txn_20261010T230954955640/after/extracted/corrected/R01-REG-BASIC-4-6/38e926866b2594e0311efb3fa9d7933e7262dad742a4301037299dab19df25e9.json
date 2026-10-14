@@ -1,0 +1,44 @@
+{
+  "stem": "タンパク質の標準種数・側鎖・主鎖結合と、等電点より高いpHでの電荷を対応させる。",
+  "conditions": {
+    "空欄": "ア〜エ。水溶液のpHは等電点より高い。"
+  },
+  "choices": {
+    "1": {
+      "value": "15／側鎖／ペプチド／正",
+      "verdict": "不適切",
+      "reason": "標準種数は20で、pHが等電点より高いと正味負に帯電する。"
+    },
+    "2": {
+      "value": "15／アミノ基／エステル／負",
+      "verdict": "不適切",
+      "reason": "種数・各種の物性を分けるR・主鎖結合が違う。負だけが合う。"
+    },
+    "3": {
+      "value": "20／側鎖／ペプチド／負",
+      "verdict": "最適",
+      "reason": "標準20、側鎖の性質、ペプチド、pH>pIで負の全項目が整合。"
+    },
+    "4": {
+      "value": "20／側鎖／エステル／正",
+      "verdict": "不適切",
+      "reason": "種数と側鎖は合うが、連結はペプチド、電荷は負。"
+    },
+    "5": {
+      "value": "20／アミノ基／ペプチド／正",
+      "verdict": "不適切",
+      "reason": "共通のアミノ基を側鎖と取り違え、pHと電荷も逆。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。空欄と5行の候補表を個別に照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_018.png"
+  ],
+  "question_id": "R01-REG-BASIC-4-6",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "18",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "1867dcc8715f31a7c7f4a23002babcaddd014c3f4c6da4e411ff9645af9e5bea",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

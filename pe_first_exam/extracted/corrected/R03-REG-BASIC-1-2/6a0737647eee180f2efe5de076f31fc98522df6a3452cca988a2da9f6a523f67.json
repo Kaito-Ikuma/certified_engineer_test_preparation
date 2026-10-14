@@ -1,0 +1,46 @@
+{
+  "stem": "同じ三要素の接続順序を変えた五つの系の信頼度を、成功経路から比較する。",
+  "conditions": {
+    "判断方向": "全候補を比較し最も適切な語又は数値・順位を選ぶ。",
+    "原典照合": "25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。",
+    "前提": "事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "C>B>E>A>D",
+      "verdict": "不適合",
+      "reason": "A=0.916はE=0.846より高く、その順序が逆である。"
+    },
+    "2": {
+      "value": "C>B>A>E>D",
+      "verdict": "適合（記載条件内）",
+      "reason": "C=0.956、B=0.926、A=0.916、E=0.846、D=0.776の順位に一致する。"
+    },
+    "3": {
+      "value": "C>E>B>D>A",
+      "verdict": "不適合",
+      "reason": "EはBより低く、DはAより低い。"
+    },
+    "4": {
+      "value": "E>D>A>B>C",
+      "verdict": "不適合",
+      "reason": "EとDは前三系より低いので上位に置けない。"
+    },
+    "5": {
+      "value": "E>D>C>B>A",
+      "verdict": "不適合",
+      "reason": "EとDをCより上位に置く点が違う。"
+    }
+  },
+  "figures": "回路、FTA又は候補表を全て原典で照合。元図は転載せず、接続関係と値を独自に記述。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/basic/page_002.png"
+  ],
+  "question_id": "R03-REG-BASIC-1-2",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "2",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "bfece3e7427fe6e35f84409225bc8ab63e9b688b0d9d765c26bc5c245c37bae3",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

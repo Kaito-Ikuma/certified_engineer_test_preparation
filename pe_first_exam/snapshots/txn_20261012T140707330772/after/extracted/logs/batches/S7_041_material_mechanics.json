@@ -1,0 +1,22 @@
+{
+  "time": "2026-10-12T14:07:07+09:00",
+  "questions": [
+    "H23-REG-BASIC-4-4",
+    "H30-REG-BASIC-4-4",
+    "H24-REG-BASIC-4-3",
+    "H26-REG-BASIC-4-3",
+    "R03-REG-BASIC-4-3",
+    "H28-REG-BASIC-4-4",
+    "R04-REG-BASIC-4-4",
+    "H29-REG-BASIC-4-3",
+    "R06-REG-BASIC-4-3",
+    "R02-REG-BASIC-4-4",
+    "R04-REG-BASIC-4-3",
+    "R05-REG-BASIC-4-3",
+    "R06-REG-BASIC-4-4",
+    "R07-REG-BASIC-4-3"
+  ],
+  "source_conditions_checked": 14,
+  "solution_drafts": 14,
+  "final_verification": false
+}

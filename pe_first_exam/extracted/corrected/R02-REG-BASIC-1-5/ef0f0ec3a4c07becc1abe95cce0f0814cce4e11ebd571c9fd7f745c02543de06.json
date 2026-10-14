@@ -1,0 +1,45 @@
+{
+  "stem": "投影図の配置と断面図の目的。",
+  "conditions": {
+    "O/X": "正/誤。",
+    "列順": "第三角/第一角/想像図という名称/明記不要/主投影図。"
+  },
+  "choices": {
+    "1": {
+      "value": "OOXXX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OXXXO と異なる。"
+    },
+    "2": {
+      "value": "XOOXX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OXXXO と異なる。"
+    },
+    "3": {
+      "value": "XXOOX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OXXXO と異なる。"
+    },
+    "4": {
+      "value": "XXXOO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OXXXO と異なる。"
+    },
+    "5": {
+      "value": "OXXXO",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/basic/page_005.png"
+  ],
+  "question_id": "R02-REG-BASIC-1-5",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "10b0f2f39587765af2755e7602a8f815acfa7db514dacec07636667bdaae6f7d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

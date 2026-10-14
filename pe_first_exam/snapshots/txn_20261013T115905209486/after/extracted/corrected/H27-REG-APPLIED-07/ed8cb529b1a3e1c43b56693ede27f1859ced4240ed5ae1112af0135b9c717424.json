@@ -1,0 +1,45 @@
+{
+  "stem": "磁気秩序・残留磁化とCurie則の温度依存を区別する。",
+  "conditions": {
+    "原典確認": "S7_051の11原典画像で13問の全五肢・指数・単位・否定を照合。",
+    "対象": "磁気秩序・残留磁化とCurie則の温度依存を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "昇温で自発磁化が消えるCurie温度",
+      "verdict": "代表的条件で適切",
+      "reason": "通常の強磁性相は温度上昇で秩序が弱まり、Curie温度で自発磁化を失う。"
+    },
+    "2": {
+      "value": "外場に反対向きの反磁性",
+      "verdict": "代表的条件で適切",
+      "reason": "線形応答の磁化率が負で、誘起磁化が外場と反対向きになる。"
+    },
+    "3": {
+      "value": "反強磁性から常磁性へのNéel温度",
+      "verdict": "代表的条件で適切",
+      "reason": "反平行の長距離秩序が失われる温度。強磁性のCurie温度とは区別する。"
+    },
+    "4": {
+      "value": "磁場ゼロで残る残留磁化",
+      "verdict": "代表的条件で適切",
+      "reason": "磁化履歴のある試料に、外場を取り去っても残る磁化。全強磁性試料が必ず大きな値を持つとは限らない。"
+    },
+    "5": {
+      "value": "常磁性磁化率が温度とともに増加",
+      "verdict": "不適切",
+      "reason": "局在モーメントのCurie領域ではχ=C/Tで、絶対温度の上昇に対して減少する。伝導電子のPauli常磁性の弱い温度依存と混同しない。"
+    }
+  },
+  "figures": "図表問題ではない。原典画像は照合用で転載しない。",
+  "ambiguity": "原典の常磁性全体への表現は広すぎる。PauliやVan Vleck等を含む全常磁性に単一の温度法則を適用せず、局在モーメントのCurie領域として説明する。",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_003.png"
+  ],
+  "question_id": "H27-REG-APPLIED-07",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "06fd1d97610df41cb5618e7654fa046aae5174e968e765aa5ab7fc1ec2ce79c4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

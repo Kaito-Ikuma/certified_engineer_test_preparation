@@ -1,0 +1,45 @@
+{
+  "stem": "バリアフリーとユニバーサルデザインを区別する。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "バリアフリーとユニバーサルデザインを区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "正正誤",
+      "verdict": "選ばない候補",
+      "reason": "物理的障壁だけとする限定が誤。"
+    },
+    "2": {
+      "value": "誤正誤",
+      "verdict": "選ぶ候補",
+      "reason": "アの限定とウのBF名称が誤、イはUD説明。"
+    },
+    "3": {
+      "value": "誤誤正",
+      "verdict": "選ばない候補",
+      "reason": "イを否定しウの名称を肯定している。"
+    },
+    "4": {
+      "value": "正誤誤",
+      "verdict": "選ばない候補",
+      "reason": "アの限定を肯定、イを否定。"
+    },
+    "5": {
+      "value": "正正正",
+      "verdict": "選ばない候補",
+      "reason": "アとウを誤としていない。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "バリアフリーの全制度領域の出題当時一次定義は追加照合対象。",
+  "evidence": [
+    "extracted/pages/H30/basic/page_003.png"
+  ],
+  "question_id": "H30-REG-BASIC-1-3",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "3",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "ee44284745605dc9ed1965b7eea734105052e828c3230da2e3060d41346a2aa1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

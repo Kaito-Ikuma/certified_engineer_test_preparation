@@ -1,0 +1,49 @@
+{
+  "status": "committed",
+  "time": "2026-10-09T18:56:45+09:00",
+  "paths": [
+    "generated/questions/basic/02_information_logic.tex",
+    "generated/questions/basic/03_analysis.tex",
+    "generated/questions/aptitude/01_engineer_act.tex",
+    "generated/questions/aptitude/02_engineering_ethics.tex",
+    "generated/questions/aptitude/06_research_information_ethics.tex",
+    "generated/questions/applied_science/physics_chemistry/01_mechanics.tex",
+    "generated/questions/applied_science/physics_chemistry/02_oscillation_wave.tex",
+    "generated/questions/applied_science/physics_chemistry/10_analytical_chemistry.tex",
+    "generated/questions/applied_science/geophysics_geochemistry/03_gravity_geodesy.tex",
+    "generated/questions/applied_science/geophysics_geochemistry/04_geomagnetism.tex",
+    "generated/questions/applied_science/geology/10_geophysical_exploration.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/basic/02_information_logic.tex": true,
+    "generated/questions/basic/03_analysis.tex": true,
+    "generated/questions/aptitude/01_engineer_act.tex": true,
+    "generated/questions/aptitude/02_engineering_ethics.tex": true,
+    "generated/questions/aptitude/06_research_information_ethics.tex": true,
+    "generated/questions/applied_science/physics_chemistry/01_mechanics.tex": true,
+    "generated/questions/applied_science/physics_chemistry/02_oscillation_wave.tex": true,
+    "generated/questions/applied_science/physics_chemistry/10_analytical_chemistry.tex": true,
+    "generated/questions/applied_science/geophysics_geochemistry/03_gravity_geodesy.tex": true,
+    "generated/questions/applied_science/geophysics_geochemistry/04_geomagnetism.tex": true,
+    "generated/questions/applied_science/geology/10_geophysical_exploration.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/basic/02_information_logic.tex": "b7401ac1e5f665e41afad831de612122e779a385117b40716795d3e2e92488b7",
+    "generated/questions/basic/03_analysis.tex": "15a1534f3debb2a1bd4c454212052afad10f0db29164af788efb4e5ccce52c8d",
+    "generated/questions/aptitude/01_engineer_act.tex": "4f5e6629b77fe1f0a7be855eae120653b2948409ae1f99997d155a23c132d1f4",
+    "generated/questions/aptitude/02_engineering_ethics.tex": "a173138260db7e12c2bf0535ca7128871fadee350ed4b40fe8253890d8382e08",
+    "generated/questions/aptitude/06_research_information_ethics.tex": "9d282b3e22d5f3e87b4886de8559f4b3f9f2f52b7f0ac60404a6e7cb9794dd4d",
+    "generated/questions/applied_science/physics_chemistry/01_mechanics.tex": "83577d35bc6117f06ecf6ffc8ac426d23033703d286b38b0af75474bde5cdd68",
+    "generated/questions/applied_science/physics_chemistry/02_oscillation_wave.tex": "1f97f17d9a562c73dbdff4858d1ee8fb20728be1f5b84ec1c46e60ba6fc1f961",
+    "generated/questions/applied_science/physics_chemistry/10_analytical_chemistry.tex": "9b43b14c944bf4a8548bcefcc8e3f406457d91d21c555d9fb1068e76f2880458",
+    "generated/questions/applied_science/geophysics_geochemistry/03_gravity_geodesy.tex": "36042e1e30218ccb637156804b48e073b0c6d95cf3eabd9cf67ca97f7463cb40",
+    "generated/questions/applied_science/geophysics_geochemistry/04_geomagnetism.tex": "14474022d04585b805c282bf6b94198b944dc1c381ad6d54b38d3aec06ada0c5",
+    "generated/questions/applied_science/geology/10_geophysical_exploration.tex": "53fb66b4da134a397c2eeb10ae8789e28fbce93d489bf3b5112ae4fabe99a588",
+    "generated/audit_summary.tex": "b2223f60f71e91400cd110f18fa62d49f76d0648361450273cd89a51e4b31f52",
+    "generated/frequency_tables.tex": "4bc6591337ab40fc2ebae3544d86a94c34a4b57038c4d2777f2f2d001cdc0d30"
+  }
+}

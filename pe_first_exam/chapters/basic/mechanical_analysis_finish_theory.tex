@@ -1,0 +1,96 @@
+\section{軸変形は釣合と適合を同時に満たす}
+\label{theory:analysis:fixedbar}
+\label{theory:analysis:compositebar}
+\label{theory:analysis:parallelbar}
+\label{theory:analysis:extension}
+一様な棒の軸剛性は \(EA/l\)、伸びは \(Nl/(EA)\) である。力の釣合だけで決まらない反力には、固定端間の総変位がゼロという適合条件を加える。途中の荷重点を動かすと、左の伸びと右の縮みは同じ変位となり、両区間は荷重点に対して復元剛性を並列に提供する。右向きの外力に対する支持反力を右向き正で表せば、いずれも負になる。
+
+二本の等長棒を回転しない剛体端板で結ぶ場合は伸び、従ってひずみが共通である。応力比は弾性係数比、軸力比は \(EA\) の比となる。端板が回転する条件や長さが違う場合はこの結論をそのまま使わない。計算は N と mm なら \(E\) を N/mm\(^2\) にそろえる。\cite{mit_material_elastic2000}
+
+\section{横収縮と非圧縮極限}
+\label{theory:analysis:hooke}
+\label{theory:analysis:incompressible}
+\label{theory:analysis:thermal}
+等方線形弾性体の構成則は
+\[
+ \varepsilon_x=\frac{\sigma_x-\nu(\sigma_y+\sigma_z)}{E},\qquad
+ \varepsilon_v=\frac{1-2\nu}{E}(\sigma_x+\sigma_y+\sigma_z).
+\]
+引張の横収縮は負符号で入る。任意の応力状態でも体積を変えない極限は \(\nu\to1/2\) である。このとき \(K=E/[3(1-2\nu)]\) は発散し、通常の有限圧縮性の逆構成則へそのまま代入する操作とは区別する。熱を受ける完全固定棒では全ひずみ \(\sigma/E+\alpha\Delta T=0\) から温度上昇に対する圧縮応力を得る。部分拘束では支持の変形も加えて解く。\cite{mit_material_elastic2000}
+
+\section{弾性エネルギーの基準と安定性}
+\label{theory:analysis:axialenergy}
+\label{theory:analysis:potential}
+\label{theory:analysis:verticalenergy}
+線形ばねの蓄積仕事は力変位線図の三角形面積である。
+\[
+ U=\frac12 P\delta=\frac{P^2l}{2EA},\qquad
+ U_s=\frac12ku^2.
+\]
+ばね自身の \(u\) は自然長から測る。鉛直ばねで平衡からの変位を \(x\) とすると \(u=mg/k+x\) であり、ばねエネルギーと重力エネルギーを合計して平衡値を引いた振動エネルギーは \(kx^2/2\) となる。ばねだけの全量とは違う。全ポテンシャル \(\Pi=ku^2/2-mgu\) は平衡で停留し、二階微分が正なので安定な最小となる。\cite{analysis57_shm}
+
+\section{曲げ方向の高さと片持ち撓み}
+\label{theory:analysis:section}
+\label{theory:analysis:cantilever}
+矩形断面の曲げ軸に関する断面二次モーメントは \(I=bh^3/12\)。断面積が等しくても高さ \(h\) が違えば曲げ剛性は違う。同じ \(E\) と荷重に対し小さい \(I\) が大きい撓みを与える。先端荷重を受ける細長い片持ち梁では
+\[
+ \delta=\frac{PL^3}{3EI}.
+\]
+他の支持や分布荷重なら係数も式も変わる。寸法比を求めるときは各梁の長さと断面を別々に代入し、無次元比で比較する。\cite{struct_mit_beam,analysis57_beam}
+
+\section{孔縁の自由表面にも接線応力が残る}
+\label{theory:analysis:inglis}
+自由表面は応力テンソル全体がゼロという条件ではなく、法線 \(n\) に対する表面力 \(\sigma n=0\) である。楕円孔の水平端では法線が水平なので法線垂直応力とせん断応力が消え、接線垂直応力は残る。十分広い等方線形弾性板で遠方荷重が楕円長軸に直交する場合、孔端の応力集中係数は \(1+2a/b\)。円孔の3へ戻ることを検算に使える。有限幅、塑性や鋭い亀裂先端には別のモデルが必要となる。\cite{analysis57_inglis}
+
+\section{小振動の剛性を配置から組み立てる}
+\label{theory:analysis:spring}
+\label{theory:analysis:springgravity}
+\label{theory:analysis:stringmass}
+運動を平衡からの変位で表すと \(m\ddot x+k_{\rm eff}x=0\) なので \(\omega=\sqrt{k_{\rm eff}/m}\)、\(f=\omega/(2\pi)\)。ばね並列は剛性の和、直列はコンプライアンスの和になる。質点を左右の壁へつなぐ二ばねは、一方が伸び他方が縮んでも復元力が同じ方向へ働く。重力の一定成分は線形ばねの平衡位置をずらすが剛性を変えない。
+
+張った弦の中央に質点を置く場合は横変位に対する張力成分を小角近似で加える。各半長を \(L\) とすると \(k_{\rm eff}=2T/L\)。全長と半長を取り違えず、質量の変更も二乗振動数の比へ含める。\cite{analysis57_shm}
+
+\section{梁振動と柱座屈の境界条件}
+\label{theory:analysis:beamfreq}
+\label{theory:analysis:buckling}
+一様Euler--Bernoulli梁の曲げ固有角振動数は \(\omega_1=\beta_1^2\sqrt{EI/(\rho A)}/L^2\)。片持ちの特性式は \(\cosh\beta\cos\beta=-1\)、両端固定は \(=1\) で、それぞれ非零の最小根は約1.875と4.730である。単純支持では \(\beta_1=\pi\)。剛体モードのゼロ根を曲げ基本振動と混同しない。\cite{analysis57_beam}
+
+Euler座屈は \(P_{\rm cr}=\pi^2EI/(KL)^2\) に支持を有効長係数 \(K\) として含める。ピン・ピンは1、固定・自由は2、固定・ピンは約0.699。後者の特性根 \(z\) は \(\tan z=z\)、\(K=\pi/z\) である。これは真直な細長柱の弾性理想モデルで、初期不整や短柱圧壊の設計耐力を保証しない。
+
+\section{節点の力から伸びへ進む}
+\label{theory:analysis:truss}
+\label{theory:analysis:trussforce}
+ピン節点の二力部材は軸方向だけに力を伝える。節点の水平・鉛直力を釣り合わせて部材力 \(N_i\) を求め、その後に \(\delta_i=N_il_i/(EA_i)\) を使う。軸力比と伸び比は長さ・断面の因子が違う。角度が水平基準か鉛直基準かを先に定め、正負によって引張・圧縮を分ける。\cite{mit_material_elastic2000}
+
+\section{回転慣性と動力の二つの関係}
+\label{theory:analysis:inertia}
+\label{theory:analysis:torque}
+\label{theory:analysis:geartorque}
+\label{theory:analysis:pendulum}
+回転運動は \(\tau=I\alpha\)、回転動力は \(P=\tau\omega\)。角速度を時間で変える問題と減速比の問題では、同じ式だけでは解けない。入力速度が出力の \(n\) 倍、効率1なら入力トルクは出力の \(1/n\)。換算慣性 \(I/n^2\) を使うときの角加速度も入力側へ換算する。
+
+一様薄板の面外重心軸には垂直軸定理 \(I_z=I_x+I_y\) が使える。面外に厚さがある物体には同じ式を無条件に使わない。物理振子の微小角運動は \(I\ddot\theta+Mgd\theta=0\)、従って周期は \(2\pi\sqrt{I/(Mgd)}\)。支点から重心までの距離 \(d\) と物体の慣性モーメントを別々に求める。
+
+\section{終端・定常の意味を保存則で読む}
+\label{theory:analysis:terminal}
+\label{theory:analysis:bernoulli}
+\label{theory:analysis:motional}
+線形抵抗落下は \(m\dot v=mg-kv\)。終端では \(\dot v=0\) で、速度依存が二乗抵抗とは違う。水平な定常・非圧縮・非粘性流れには \(A_av_a=A_bv_b\) と \(p+\rho v^2/2=\text{一定}\) を併用する。断面積比が速度二乗へ入ること、粘性損失や高さの差を原典条件から外せるかを確認する。
+
+運動起電力の棒では \(\mathcal E=BLv\)、\(I=\mathcal E/R\)、制動力 \(IBL\)。定常で駆動力と制動が釣り合う。抵抗が大きいほど電流が小さくなるため制動が弱まるという極限も検算に使える。
+
+\section{抵抗網は線の形でなく節点の接続で解く}
+\label{theory:analysis:network}
+\label{theory:analysis:tetra}
+同じ二節点を結ぶ枝は並列、途中で分岐のない経路が直列である。交差線の接続点を確認し、対称性で同電位と証明できる節点をまとめる。任意網には内部節点で
+\[
+ \sum_j\frac{V_i-V_j}{R_{ij}}=0
+\]
+を解き、端子電圧を1とすれば \(R_{\rm eq}=1/I_{\rm terminal}\)。一辺の中点を端子にする場合はその辺を半抵抗二本に分ける。四面体の頂点・対辺中点・対辺の両中点は異なる端子条件であり、同じ正四面体だから同抵抗とはならない。\cite{analysis57_resistors}
+
+\section{拡散の減衰と幾何の重心}
+\label{theory:analysis:heat}
+\label{theory:analysis:centroid}
+正の拡散係数の通常の熱伝導は、固定温度又は断熱の安定境界下で空間固有値 \(\lambda\ge0\) に対し \(e^{-\kappa\lambda t}\) の応答を持つ。時間一階微分という形式だけでは非振動性を証明できず、連立一階方程式が回転運動を表す例もある。微分次数、演算子、境界条件を一組で扱う。
+
+面積重心は \(\bar x=A^{-1}\int x\,dA\)、\(\bar y=A^{-1}\int y\,dA\)。一様面、線、体積の重心では積分の測度が違う。対称性で二座標が等しい場合も、値は面積一次モーメントから求める。四分円面と円弧を同じ式で扱わない。

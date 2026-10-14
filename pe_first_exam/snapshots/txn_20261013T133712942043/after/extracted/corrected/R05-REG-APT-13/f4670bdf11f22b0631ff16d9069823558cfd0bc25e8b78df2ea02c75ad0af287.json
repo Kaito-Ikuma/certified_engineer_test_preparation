@@ -1,0 +1,45 @@
+{
+  "stem": "2021行動計画の七項目と人材施策の内容を分ける。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+    "時点": "令和5年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "予算管理",
+      "verdict": "条件内で適切",
+      "reason": "維持更新費用の見通しと財政支援等を扱う独立項目に含まれる。"
+    },
+    "2": {
+      "value": "体制の構築",
+      "verdict": "条件内で適切",
+      "reason": "担い手・役割分担・支援等の体制を整える独立項目に含まれる。"
+    },
+    "3": {
+      "value": "新技術の開発・導入",
+      "verdict": "条件内で適切",
+      "reason": "点検・維持更新の技術と適用の評価を扱う独立項目に含まれる。"
+    },
+    "4": {
+      "value": "情報基盤の整備と活用",
+      "verdict": "条件内で適切",
+      "reason": "施設情報の蓄積・更新と利用を扱う独立項目に含まれる。"
+    },
+    "5": {
+      "value": "技術継承の取組",
+      "verdict": "不適切",
+      "reason": "重要性の否定ではなく、原典が問う七つの独立見出しとして列挙されていない。体制・人材の中の内容との区別が必要。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/aptitude/page_013.png"
+  ],
+  "question_id": "R05-REG-APT-13",
+  "source_file": "sources/R05/aptitude.pdf",
+  "source_page": "13",
+  "source_sha256": "3dee8906ad8be46592986fef01028424243f7e515af04979667524eed1f0a915",
+  "raw_text_sha256": "78c2a0c0d3303783301a5afca2b272dea915215a6d652d7b077284eb658c505e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

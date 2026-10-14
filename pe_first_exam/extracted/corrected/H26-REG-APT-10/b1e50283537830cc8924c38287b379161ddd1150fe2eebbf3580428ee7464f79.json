@@ -1,0 +1,45 @@
+{
+  "stem": "残留リスクの被害と不確かさを説明し、知らないことを説明不要の根拠にしない。",
+  "conditions": {
+    "判断方向": "各肢の理由に記録。組合せ・個数問題では記述の真偽と回答番号を区別する。",
+    "原典照合": "全5候補、表の列順、否定、条件、規格番号、法令時点を23原典画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "ア〜エ：○××○",
+      "verdict": "不一致",
+      "reason": "アとエは適切だが、ウを×にする点が違う。"
+    },
+    "2": {
+      "value": "×○○×",
+      "verdict": "不一致",
+      "reason": "ア・エを否定し、被害説明を免除するイを肯定する。"
+    },
+    "3": {
+      "value": "×○×○",
+      "verdict": "不一致",
+      "reason": "適切なアを否定し、不適切なイを肯定する。"
+    },
+    "4": {
+      "value": "○×○○",
+      "verdict": "適切な組合せ",
+      "reason": "アは対応の選択、イは説明不要として誤り、ウは当時の努力義務、エは助言で適切。"
+    },
+    "5": {
+      "value": "○×○×",
+      "verdict": "不一致",
+      "reason": "エを×にする点が違う。市民の認識を考慮した情報交換は必要である。"
+    }
+  },
+  "figures": "設問固有図なし。組合せ表がある問題では全候補の記号順を画像照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/aptitude/page_010.png"
+  ],
+  "question_id": "H26-REG-APT-10",
+  "source_file": "sources/H26/aptitude.pdf",
+  "source_page": "10",
+  "source_sha256": "5691e940fce3cbf9423bc99a96803c1c6273563931b76b91bdb9f2b67e6233d3",
+  "raw_text_sha256": "4896a4ef00019cd87e206f0532118e16ed84df5f4003284bc77f2c38c1856370",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

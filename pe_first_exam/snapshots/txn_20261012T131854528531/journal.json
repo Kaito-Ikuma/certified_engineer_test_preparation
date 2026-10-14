@@ -1,0 +1,16 @@
+{
+  "status": "committed",
+  "time": "2026-10-12T13:18:54+09:00",
+  "paths": [
+    "data/question_relations.csv",
+    "data/batch_changes/S7_038_relation_wording_revision.json"
+  ],
+  "existed": {
+    "data/question_relations.csv": true,
+    "data/batch_changes/S7_038_relation_wording_revision.json": false
+  },
+  "sha256": {
+    "data/question_relations.csv": "18820363d686e3567ef176bd67fbbabbcff620b3d171e68e5f004e4e9497616e",
+    "data/batch_changes/S7_038_relation_wording_revision.json": "3add22cfa8c5f62a61baaf9ab6b5a92f72c926e133bf6a12f236b2c3aa21d1cd"
+  }
+}

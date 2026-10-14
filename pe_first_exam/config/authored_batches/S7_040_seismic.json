@@ -1,0 +1,1148 @@
+{
+  "batch_id": "S7_040_seismic",
+  "reference_date": "2026-10-12",
+  "questions": [
+    {
+      "question_id": "H23-REG-APPLIED-32",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "表面波・浅層反射・はぎとり・全走時・ミラージ構造を比較する。",
+      "summary": "表面波・浅層反射・はぎとり・全走時・ミラージ構造を比較する。",
+      "conditions": {
+        "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+        "前提": "通常の屈折法の初動走時、浅層反射の配置目安、波長依存の表面波分散を考える。"
+      },
+      "choices": {
+        "1": {
+          "value": "レイリー波の波長別位相速度からS波速度分布を推定する",
+          "verdict": "適切",
+          "reason": "地盤の深度方向の不均質が分散曲線へ反映され、主にS波速度モデルを推定できる。P波速度・密度・層厚にも依存し、S波だけの関数ではない。"
+        },
+        "2": {
+          "value": "浅層反射で最大オフセットを探査深度程度に設定する",
+          "verdict": "条件付きで適切",
+          "reason": "浅層反射の一般的な展開目安として読む。速度解析・近接雑音・反射角・地形・重合数で調整し、全ての計測に必要な厳密等式ではない。"
+        },
+        "3": {
+          "value": "反射波の走時をはぎとり法で解析して境界深度を求める",
+          "verdict": "不適切",
+          "reason": "萩原のはぎとり法は直接波と屈折波の初動走時から層構造を求める手法である。反射波の走時を同じ手法の入力とする説明は誤りである。"
+        },
+        "4": {
+          "value": "屈折法で全走時が一致することを確認する",
+          "verdict": "条件付きで適切",
+          "reason": "相反的な同じ測線で起振点を往復した端点間走時の整合などを確認する。異なる受振点の全時刻が同じになるという意味ではなく、走時読み取り・経路の条件を要する。"
+        },
+        "5": {
+          "value": "連続増速のミラージ構造では初動走時が曲線になりトモグラフィが適する",
+          "verdict": "適切",
+          "reason": "離散境界の折れ線モデルでなく深度ごとに屈折しながら曲がる経路となる。格子速度を更新する走時トモグラフィは連続的な速度変化も扱える。解像度は波線分布に依存する。"
+        }
+      },
+      "figures": "図なし。文章又は用語の五候補を画像照合。",
+      "ambiguity": "オフセットと深度の対応は目安であり一律の必要条件ではない。全走時の一致は相反的往復観測の整合であり、全測点の同時到達を意味しない。",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_011.png"
+      ],
+      "core_concept": "表面波・浅層反射・はぎとり・全走時・ミラージ構造を比較する。",
+      "required_knowledge": "通常の屈折法の初動走時、浅層反射の配置目安、波長依存の表面波分散を考える。",
+      "solution": "3が不適切である。はぎとり法は屈折波と直接波の初動走時の解析であり、反射波から同じ手法で境界を求める説明は対応が誤っている。全走時一致は往復の整合を意味し、各受振点の時刻が同じという命題ではない。",
+      "answer_reason": "3が不適切である。はぎとり法は屈折波と直接波の初動走時の解析であり、反射波から同じ手法で境界を求める説明は対応が誤っている。全走時一致は往復の整合を意味し、各受振点の時刻が同じという命題ではない。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回を別保存し維持。はぎとり法は屈折初動に基づく手法であり反射波へそのまま対応させない。反射オフセットの目安と全走時の条件は留保。",
+      "learning_points": "反射と屈折を、入力する波と走時解析の前提から分ける。",
+      "theory_references": [
+        "theory:exploration:refraction",
+        "theory:exploration:reflectiongeometry",
+        "theory:exploration:surfacewaves"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_refraction_interpretation",
+      "cross_concepts": [],
+      "classification_reason": "人工震源の弾性波・反射屈折・地盤の表面波分散から地下構造を推定する物理探査である。自然地震の発生機構へ配置しない。反射と屈折を、入力する波と走時解析の前提から分ける。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "波動の知識を走時と地下物性へ対応させる。深度目安・局所近似・計測配置・多重解の条件を比較する。"
+      },
+      "citations": [
+        "jica_refraction2015",
+        "usgs_refraction2013",
+        "epa_surfacewaves",
+        "xia_rayleigh1999",
+        "coastal_reflection2016"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-34",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "表面波・浅層反射・はぎとり・全走時・ミラージ構造を比較する。",
+      "summary": "表面波・浅層反射・はぎとり・全走時・ミラージ構造を比較する。",
+      "conditions": {
+        "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+        "前提": "通常の屈折法の初動走時、浅層反射の配置目安、波長依存の表面波分散を考える。"
+      },
+      "choices": {
+        "1": {
+          "value": "レイリー波の波長別位相速度からS波速度分布を推定する",
+          "verdict": "適切",
+          "reason": "地盤の深度方向の不均質が分散曲線へ反映され、主にS波速度モデルを推定できる。P波速度・密度・層厚にも依存し、S波だけの関数ではない。"
+        },
+        "2": {
+          "value": "浅層反射で最大オフセットを探査深度程度に設定する",
+          "verdict": "条件付きで適切",
+          "reason": "浅層反射の一般的な展開目安として読む。速度解析・近接雑音・反射角・地形・重合数で調整し、全ての計測に必要な厳密等式ではない。"
+        },
+        "3": {
+          "value": "反射波の走時をはぎとり法で解析して境界深度を求める",
+          "verdict": "不適切",
+          "reason": "萩原のはぎとり法は直接波と屈折波の初動走時から層構造を求める手法である。反射波の走時を同じ手法の入力とする説明は誤りである。"
+        },
+        "4": {
+          "value": "屈折法で全走時が一致することを確認する",
+          "verdict": "条件付きで適切",
+          "reason": "相反的な同じ測線で起振点を往復した端点間走時の整合などを確認する。異なる受振点の全時刻が同じになるという意味ではなく、走時読み取り・経路の条件を要する。"
+        },
+        "5": {
+          "value": "連続増速のミラージ構造では初動走時が曲線になりトモグラフィが適する",
+          "verdict": "適切",
+          "reason": "離散境界の折れ線モデルでなく深度ごとに屈折しながら曲がる経路となる。格子速度を更新する走時トモグラフィは連続的な速度変化も扱える。解像度は波線分布に依存する。"
+        }
+      },
+      "figures": "図なし。文章又は用語の五候補を画像照合。",
+      "ambiguity": "オフセットと深度の対応は目安であり一律の必要条件ではない。全走時の一致は相反的往復観測の整合であり、全測点の同時到達を意味しない。",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_012.png"
+      ],
+      "core_concept": "表面波・浅層反射・はぎとり・全走時・ミラージ構造を比較する。",
+      "required_knowledge": "通常の屈折法の初動走時、浅層反射の配置目安、波長依存の表面波分散を考える。",
+      "solution": "3が不適切である。はぎとり法は屈折波と直接波の初動走時の解析であり、反射波から同じ手法で境界を求める説明は対応が誤っている。全走時一致は往復の整合を意味し、各受振点の時刻が同じという命題ではない。",
+      "answer_reason": "3が不適切である。はぎとり法は屈折波と直接波の初動走時の解析であり、反射波から同じ手法で境界を求める説明は対応が誤っている。全走時一致は往復の整合を意味し、各受振点の時刻が同じという命題ではない。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回を別保存し維持。はぎとり法は反射ではなく屈折法の解析。",
+      "learning_points": "反射と屈折を、入力する波と走時解析の前提から分ける。",
+      "theory_references": [
+        "theory:exploration:refraction",
+        "theory:exploration:reflectiongeometry",
+        "theory:exploration:surfacewaves"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_refraction_interpretation",
+      "cross_concepts": [],
+      "classification_reason": "人工震源の弾性波・反射屈折・地盤の表面波分散から地下構造を推定する物理探査である。自然地震の発生機構へ配置しない。反射と屈折を、入力する波と走時解析の前提から分ける。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "波動の知識を走時と地下物性へ対応させる。深度目安・局所近似・計測配置・多重解の条件を比較する。"
+      },
+      "citations": [
+        "jica_refraction2015",
+        "usgs_refraction2013",
+        "epa_surfacewaves",
+        "xia_rayleigh1999",
+        "coastal_reflection2016"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-32",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "stem": "屈折法の増速前提と地下水・風化・波種・初動を区別する。",
+      "summary": "屈折法の増速前提と地下水・風化・波種・初動を区別する。",
+      "conditions": {
+        "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+        "前提": "通常の地盤の等方弾性を想定し、臨界屈折の層状解釈とP波の飽和依存を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "通常の屈折法で深部ほど速度が高いと仮定する",
+          "verdict": "条件付きで適切",
+          "reason": "臨界屈折の層状モデルの前提である。あらゆる地下構造が必ず増速するという自然法則ではない。"
+        },
+        "2": {
+          "value": "同じ岩種でも浅部速度の違いが風化・変質・割れ目の違いを反映する",
+          "verdict": "適切",
+          "reason": "弾性係数、接触状態、空隙等の変化が速度へ影響する。同じ岩種なら一定速度とは限らない。"
+        },
+        "3": {
+          "value": "土質のP波速度は地下水の有無に左右されない",
+          "verdict": "不適切",
+          "reason": "空隙流体と飽和状態が圧縮性に影響するため無関係という断定は誤りである。"
+        },
+        "4": {
+          "value": "P波速度は常にS波速度より大きい",
+          "verdict": "条件付きで適切",
+          "reason": "安定な等方弾性体ではVP²=(K+4G/3)/ρ、VS²=G/ρよりVP>VSである。異方性のモードや流体のS波不存在まで常に二つの速度を比較できるわけではない。"
+        },
+        "5": {
+          "value": "解析に初動走時のみを用いる",
+          "verdict": "条件付きで適切",
+          "reason": "通常の屈折初動解析の説明である。反射・全波形等を含める別の解析まで禁止する意味ではない。"
+        }
+      },
+      "figures": "図なし。文章又は用語の五候補を画像照合。",
+      "ambiguity": "P>Sは安定な等方弾性体の条件、増速と初動のみは通常の屈折法の枠組みである。異方性や他の解析を無条件に排除しない。",
+      "evidence": [
+        "extracted/pages/H25/17_applied_science/page_012.png"
+      ],
+      "core_concept": "屈折法の増速前提と地下水・風化・波種・初動を区別する。",
+      "required_knowledge": "通常の地盤の等方弾性を想定し、臨界屈折の層状解釈とP波の飽和依存を区別する。",
+      "solution": "3が不適切である。空隙を空気又は水が満たす状態は圧縮性等へ影響し、P波速度は地下水の有無・飽和状態に左右され得る。速度だけで岩種を決めず、同じ岩種でも割れ目と風化の程度を考える。",
+      "answer_reason": "3が不適切である。空隙を空気又は水が満たす状態は圧縮性等へ影響し、P波速度は地下水の有無・飽和状態に左右され得る。速度だけで岩種を決めず、同じ岩種でも割れ目と風化の程度を考える。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回を別保存し維持。P波速度は飽和状態に左右される。深部増速・等方弾性のP>S・初動解析は条件付き。",
+      "learning_points": "波種、弾性係数、空隙流体を結び、速度を岩種の識別子にしない。",
+      "theory_references": [
+        "theory:exploration:refraction",
+        "theory:exploration:waveproperties"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_refraction_properties",
+      "cross_concepts": [],
+      "classification_reason": "人工震源の弾性波・反射屈折・地盤の表面波分散から地下構造を推定する物理探査である。自然地震の発生機構へ配置しない。波種、弾性係数、空隙流体を結び、速度を岩種の識別子にしない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "波動の知識を走時と地下物性へ対応させる。深度目安・局所近似・計測配置・多重解の条件を比較する。"
+      },
+      "citations": [
+        "usgs_refraction2013",
+        "segj_integrated2017"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-20",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "反射法の配置・薄層分解能・NMOと屈折法のブラインドを比較する。",
+      "summary": "反射法の配置・薄層分解能・NMOと屈折法のブラインドを比較する。",
+      "conditions": {
+        "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+        "前提": "最大オフセットの目安と必要条件、薄層の検出と二境界の分離を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "反射法の最大オフセットを探査深度の二倍程度にする必要がある",
+          "verdict": "不適切",
+          "reason": "浅層反射の通常目安の倍数を取り違える。一律に二倍を必要とする原理はなく、波群分離・速度解析・調査目的から設計する。"
+        },
+        "2": {
+          "value": "反射法で波長の四分の一未満の地層の検出が難しい",
+          "verdict": "条件付きで適切",
+          "reason": "通常の分解能目安はλ/4程度で上面と下面を別々の反射として分離する話である。振幅変化で存在を検出できることと区別し、薄層は全て不可視とはしない。"
+        },
+        "3": {
+          "value": "CMP記録からNMO用の重合速度を速度解析する",
+          "verdict": "適切",
+          "reason": "異なるオフセットでの走時差をそろえる速度を推定する。重合速度を無条件に真の区間速度と同一視しない。"
+        },
+        "4": {
+          "value": "深部へ増速する層構造でも薄い中間層が初動に現れない",
+          "verdict": "適切",
+          "reason": "臨界屈折波が生じても、直接波や深い層を通る波より早くなる距離範囲がなければ初動に現れない。低速度逆転だけが見えない原因ではない。"
+        },
+        "5": {
+          "value": "屈折法で全走時が一致することを確認する",
+          "verdict": "条件付きで適切",
+          "reason": "相反的な同じ測線で起振点を往復した端点間走時の整合などを確認する。異なる受振点の全時刻が同じになるという意味ではなく、走時読み取り・経路の条件を要する。"
+        }
+      },
+      "figures": "図なし。文章又は用語の五候補を画像照合。",
+      "ambiguity": "原典1の反射法は浅層の目安を想定した公式判断と読めるが、調査条件を一律固定できない。2は検出という語で分解能を説明する省略があり、薄層の振幅検出を否定しない。",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_008.png"
+      ],
+      "core_concept": "反射法の配置・薄層分解能・NMOと屈折法のブラインドを比較する。",
+      "required_knowledge": "最大オフセットの目安と必要条件、薄層の検出と二境界の分離を区別する。",
+      "solution": "1が不適切である。浅層反射の展開長の通常目安を探査深度程度とする資料に対し、二倍を必須としている。必要距離は目的と速度構造次第であり、二倍が絶対禁止という意味でもない。2の四分の一波長は二境界の分離の目安であり、薄層の存在検出はそれ以下でも可能となる。",
+      "answer_reason": "1が不適切である。浅層反射の展開長の通常目安を探査深度程度とする資料に対し、二倍を必須としている。必要距離は目的と速度構造次第であり、二倍が絶対禁止という意味でもない。2の四分の一波長は二境界の分離の目安であり、薄層の存在検出はそれ以下でも可能となる。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回を別保存し維持。反射法の必要最大オフセットを探査深度の二倍へ固定する説明が不適切と考える。quarter wavelengthは分離と検出の差を留保。",
+      "learning_points": "配置の数値、分離能力、検出の有無、速度の種類を別々に判断する。",
+      "theory_references": [
+        "theory:exploration:reflectiongeometry",
+        "theory:exploration:resolution",
+        "theory:exploration:refraction"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_reflection_resolution",
+      "cross_concepts": [],
+      "classification_reason": "人工震源の弾性波・反射屈折・地盤の表面波分散から地下構造を推定する物理探査である。自然地震の発生機構へ配置しない。配置の数値、分離能力、検出の有無、速度の種類を別々に判断する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "波動の知識を走時と地下物性へ対応させる。深度目安・局所近似・計測配置・多重解の条件を比較する。"
+      },
+      "citations": [
+        "jica_refraction2015",
+        "usgs_refraction2013",
+        "epa_surfacewaves",
+        "xia_rayleigh1999",
+        "coastal_reflection2016",
+        "seg_vertical_resolution",
+        "usgs_processing2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-21",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "stem": "表面波の深度目安、屈折ブラインド、反射展開、比抵抗、音響基盤を比較する。",
+      "summary": "表面波の深度目安、屈折ブラインド、反射展開、比抵抗、音響基盤を比較する。",
+      "conditions": {
+        "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+        "前提": "能動の浅部表面波探査の通常目安と、長波長の利用により深度が変わる事実を分ける。"
+      },
+      "choices": {
+        "1": {
+          "value": "表面波の分散でS波構造を調べ探査深度は100m程度までである",
+          "verdict": "条件付きで適切",
+          "reason": "分散によるS波推定は正しい。通常の浅部能動測定では20m級の目安であり公式は100mを不適切とするが、装置と最大波長を指定しない普遍的上限は定められない。"
+        },
+        "2": {
+          "value": "深部へ増速する層構造でも薄い中間層が初動に現れない",
+          "verdict": "適切",
+          "reason": "臨界屈折波が生じても、直接波や深い層を通る波より早くなる距離範囲がなければ初動に現れない。低速度逆転だけが見えない原因ではない。"
+        },
+        "3": {
+          "value": "浅層反射で最大オフセットを探査深度程度に設定する",
+          "verdict": "条件付きで適切",
+          "reason": "浅層反射の一般的な展開目安として読む。速度解析・近接雑音・反射角・地形・重合数で調整し、全ての計測に必要な厳密等式ではない。"
+        },
+        "4": {
+          "value": "二次元比抵抗法は低比抵抗部を検出し実用深度が300m程度である",
+          "verdict": "条件付きで適切",
+          "reason": "導電性領域へ電流が集まりやすい等の特性があるが、電極展開、コントラスト、ノイズで感度と深度が変わる。300mは原典の典型目安であり装置非依存の保証ではない。"
+        },
+        "5": {
+          "value": "海上音波で海底下反射を測り固結層等の上面が音響基盤となる",
+          "verdict": "条件付きで適切",
+          "reason": "大きなインピーダンス差と減衰等によって深部への透過が弱まり、内部を捉えにくくなる。基盤より下は常に観測不能という絶対命題ではない。"
+        }
+      },
+      "figures": "図なし。文章又は用語の五候補を画像照合。",
+      "ambiguity": "公式1の100mと通常20mの区別は当時の一般的装置条件の読みである。長波長表面波で100mが不可能とはいえない。比抵抗300mと音響基盤も一律保証ではない。",
+      "evidence": [
+        "extracted/pages/H27/17_applied_science/page_008.png"
+      ],
+      "core_concept": "表面波の深度目安、屈折ブラインド、反射展開、比抵抗、音響基盤を比較する。",
+      "required_knowledge": "能動の浅部表面波探査の通常目安と、長波長の利用により深度が変わる事実を分ける。",
+      "solution": "公式1は通常の浅層表面波の目安を100m程度とした説明を選ぶ。環境省資料では20m程度、数m〜数十mの通常対象を述べる。一方、長周期起振や微動で100m級以上を調べる方法もあるため、100mが原理的に不可能とは解説しない。",
+      "answer_reason": "公式1は通常の浅層表面波の目安を100m程度とした説明を選ぶ。環境省資料では20m程度、数m〜数十mの通常対象を述べる。一方、長周期起振や微動で100m級以上を調べる方法もあるため、100mが原理的に不可能とは解説しない。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回を別保存し維持。通常の能動表面波を深度100mまでとする一律目安が疑わしい。測線長・波長次第で深度が変わるため単一上限は保証しない。",
+      "learning_points": "探査深度を手法名に固定せず、波長・配列・震源・物性・雑音条件を確認する。",
+      "theory_references": [
+        "theory:exploration:surfacewaves",
+        "theory:exploration:reflectiongeometry"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_depth_limits",
+      "cross_concepts": [],
+      "classification_reason": "人工震源の弾性波・反射屈折・地盤の表面波分散から地下構造を推定する物理探査である。自然地震の発生機構へ配置しない。探査深度を手法名に固定せず、波長・配列・震源・物性・雑音条件を確認する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "波動の知識を走時と地下物性へ対応させる。深度目安・局所近似・計測配置・多重解の条件を比較する。"
+      },
+      "citations": [
+        "moe_surface2004",
+        "epa_surfacewaves",
+        "segj_integrated2017",
+        "epa_seismic_reflection"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-21",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "反射走時の双曲線と放物線近似、ミラージ、微動、表面波を比較する。",
+      "summary": "反射走時の双曲線と放物線近似、ミラージ、微動、表面波を比較する。",
+      "conditions": {
+        "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+        "前提": "単一水平反射境界の走時t²=t0²+x²/V²を基本モデルとする。"
+      },
+      "choices": {
+        "1": {
+          "value": "水平二層の反射走時は放物線で近似される",
+          "verdict": "条件付きで適切",
+          "reason": "正確な単一反射の走時は双曲線である。一方、小オフセットの二次近似は放物線であり、適用範囲を指定すれば近似として成立する。"
+        },
+        "2": {
+          "value": "連続増速のミラージ構造では初動走時が曲線になりトモグラフィが適する",
+          "verdict": "適切",
+          "reason": "離散境界の折れ線モデルでなく深度ごとに屈折しながら曲がる経路となる。格子速度を更新する走時トモグラフィは連続的な速度変化も扱える。解像度は波線分布に依存する。"
+        },
+        "3": {
+          "value": "屈折法は通常初動を読み解析する",
+          "verdict": "適切",
+          "reason": "直接波・臨界屈折波のうち最も早く到達する時刻を距離ごとに読む。反射波を同じ初動としない。"
+        },
+        "4": {
+          "value": "微動アレイで自然・人為的な微振動からS波構造を推定する",
+          "verdict": "適切",
+          "reason": "複数点の位相・空間相関から表面波の分散を求め、主にS波速度構造を推定する。"
+        },
+        "5": {
+          "value": "表面波から20m程度までのS波分布を求める",
+          "verdict": "条件付きで適切",
+          "reason": "通常の浅部能動測定の典型的対象である。最大波長と配列・震源が変われば探査深度も変わり、20mを絶対上限とはしない。"
+        }
+      },
+      "figures": "図なし。文章又は用語の五候補を画像照合。",
+      "ambiguity": "放物線は小オフセットの正当な局所二次近似となる。原文の近似に範囲がなく、公式1を通常の双曲線近似の知識として保持し条件不足を査読対象にする。20mも装置条件付きの目安。",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_008.png"
+      ],
+      "core_concept": "反射走時の双曲線と放物線近似、ミラージ、微動、表面波を比較する。",
+      "required_knowledge": "単一水平反射境界の走時t²=t0²+x²/V²を基本モデルとする。",
+      "solution": "公式1は通常の反射走時を双曲線とすることを問う。しかしt=t0 sqrt(1+x²/(V²t0²))を小xで展開すればt≈t0+x²/(2V²t0)という放物線近似が成立する。近似されるという原文を絶対的に数学の誤りと断定しない。",
+      "answer_reason": "公式1は通常の反射走時を双曲線とすることを問う。しかしt=t0 sqrt(1+x²/(V²t0²))を小xで展開すればt≈t0+x²/(2V²t0)という放物線近似が成立する。近似されるという原文を絶対的に数学の誤りと断定しない。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回を別保存し維持。水平単一反射境界の走時は双曲線。ただし小オフセットではTaylor展開で放物線近似できるため原典の近似という語を疑義として残す。",
+      "learning_points": "曲線名を暗記するだけでなく走時式を展開し、近似範囲を確認する。",
+      "theory_references": [
+        "theory:exploration:reflectiongeometry",
+        "theory:exploration:surfacewaves"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_reflection_geometry",
+      "cross_concepts": [],
+      "classification_reason": "人工震源の弾性波・反射屈折・地盤の表面波分散から地下構造を推定する物理探査である。自然地震の発生機構へ配置しない。曲線名を暗記するだけでなく走時式を展開し、近似範囲を確認する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "波動の知識を走時と地下物性へ対応させる。深度目安・局所近似・計測配置・多重解の条件を比較する。"
+      },
+      "citations": [
+        "epa_seismic_reflection",
+        "jica_refraction2015",
+        "moe_surface2004",
+        "epa_surfacewaves"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-32",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "stem": "地震探査を重力・磁気・電気・放射能探査から観測量で選ぶ。",
+      "summary": "地震探査を重力・磁気・電気・放射能探査から観測量で選ぶ。",
+      "conditions": {
+        "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+        "前提": "最も適切な説明を選ぶ。弾性波の人工震源と地下からの応答を対象とする。"
+      },
+      "choices": {
+        "1": {
+          "value": "ブーゲー異常で基盤・褶曲・断層を考察する",
+          "verdict": "不適切",
+          "reason": "密度差による重力探査であり弾性波の走時・波形を直接測る地震探査ではない。"
+        },
+        "2": {
+          "value": "磁性鉱床・堆積盆地・地殻熱構造を調べる",
+          "verdict": "不適切",
+          "reason": "磁気異常や磁化の性質を使う探査の説明である。"
+        },
+        "3": {
+          "value": "電気的構造と深度別の比抵抗を知る",
+          "verdict": "不適切",
+          "reason": "電気・電磁応答から導電率又は比抵抗を推定する説明である。"
+        },
+        "4": {
+          "value": "人工起振で弾性波を地下へ送り資源・土木調査に用いる",
+          "verdict": "適切",
+          "reason": "地震探査の震源と観測量に対応する。海上のエアガンなど場所ごとに装置は異なる。"
+        },
+        "5": {
+          "value": "U・Th・K等の放射性元素を探査する",
+          "verdict": "不適切",
+          "reason": "放射能探査の観測対象であり弾性波とは異なる。天然核種のガンマ線等を利用する。"
+        }
+      },
+      "figures": "図なし。文章又は用語の五候補を画像照合。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/17_applied_science/page_011.png"
+      ],
+      "core_concept": "地震探査を重力・磁気・電気・放射能探査から観測量で選ぶ。",
+      "required_knowledge": "最も適切な説明を選ぶ。弾性波の人工震源と地下からの応答を対象とする。",
+      "solution": "4が適切である。爆薬・バイブレータ・エアガンで弾性波を送り、反射や屈折から構造を推定する。地質を調べるという目的が同じでも、他の四つは測定する物理量が異なる。",
+      "answer_reason": "4が適切である。爆薬・バイブレータ・エアガンで弾性波を送り、反射や屈折から構造を推定する。地質を調べるという目的が同じでも、他の四つは測定する物理量が異なる。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回を別保存し維持。弾性波の人工起振と走時・反射を用いる探査である。他は重力・磁気・電気・放射能。",
+      "learning_points": "手法の目的が同じ場合も入力・出力の物理量で区別する。",
+      "theory_references": [
+        "theory:exploration:observables"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_method_observables",
+      "cross_concepts": [],
+      "classification_reason": "人工震源の弾性波・反射屈折・地盤の表面波分散から地下構造を推定する物理探査である。自然地震の発生機構へ配置しない。手法の目的が同じ場合も入力・出力の物理量で区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "波動の知識を走時と地下物性へ対応させる。測る量と手法の目的を照合する。"
+      },
+      "citations": [
+        "epa_seismic_reflection",
+        "segj_integrated2017"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-32",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "stem": "屈折法の主用途と強震動のS波モデルを区別する。",
+      "summary": "屈折法の主用途と強震動のS波モデルを区別する。",
+      "conditions": {
+        "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+        "前提": "通常のP波屈折による地山の硬軟・割れ目・風化等の評価を主用途として比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "ダムの基礎岩盤の評価",
+          "verdict": "適切",
+          "reason": "風化・破砕・硬軟の構造を把握する通常の地山評価に関係する。"
+        },
+        "2": {
+          "value": "強震動予測や耐震設計",
+          "verdict": "条件付きで適切",
+          "reason": "P波屈折の代表的な主用途の比較では公式の選択対象である。S波屈折等の応用と地下モデルの補助情報としての役割はあり、全く利用できないという意味ではない。"
+        },
+        "3": {
+          "value": "のり面勾配等の土構造物の基礎調査",
+          "verdict": "適切",
+          "reason": "風化帯や基盤等の地質評価を補助する。速度だけで設計勾配を機械的に決定しない。"
+        },
+        "4": {
+          "value": "不安定土塊の工学的判断",
+          "verdict": "適切",
+          "reason": "土塊・基盤の速度構造が地質状態の判断を助ける。力学強度や地下水等の他情報も要する。"
+        },
+        "5": {
+          "value": "トンネル沿いの地山評価",
+          "verdict": "適切",
+          "reason": "岩盤の風化・破砕帯等の分布を速度情報から把握する代表的用途である。"
+        }
+      },
+      "figures": "図なし。文章又は用語の五候補を画像照合。",
+      "ambiguity": "屈折法にはS波もあり、強震動に寄与する地下情報を得る可能性はある。通常のP波地山調査の主用途という比較を明示し、用途の絶対排除をしない。",
+      "evidence": [
+        "extracted/pages/R02/17_applied_science/page_011.png"
+      ],
+      "core_concept": "屈折法の主用途と強震動のS波モデルを区別する。",
+      "required_knowledge": "通常のP波屈折による地山の硬軟・割れ目・風化等の評価を主用途として比較する。",
+      "solution": "公式2である。強震動・耐震評価では主にS波構造や減衰・震源条件が必要であり、通常の地山P波屈折をその主たる方法としない。他の四項目は岩盤・土構造物の地質条件の評価に結び付く。ただしS波屈折や複数手法の統合が耐震評価に役立つ可能性まで否定しない。",
+      "answer_reason": "公式2である。強震動・耐震評価では主にS波構造や減衰・震源条件が必要であり、通常の地山P波屈折をその主たる方法としない。他の四項目は岩盤・土構造物の地質条件の評価に結び付く。ただしS波屈折や複数手法の統合が耐震評価に役立つ可能性まで否定しない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回を別保存し維持。主としてのり面・ダム・トンネル等のP波速度による地山評価。強震動や耐震にはS波構造等を要しP波屈折を主用途としない。ただし応用可能性は否定しない。",
+      "learning_points": "主としてという比較を、利用可能性が一切ないという全称へ変えない。",
+      "theory_references": [
+        "theory:exploration:waveproperties",
+        "theory:exploration:surfacewaves"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_refraction_applications",
+      "cross_concepts": [],
+      "classification_reason": "人工震源の弾性波・反射屈折・地盤の表面波分散から地下構造を推定する物理探査である。自然地震の発生機構へ配置しない。主としてという比較を、利用可能性が一切ないという全称へ変えない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "波動の知識を走時と地下物性へ対応させる。深度目安・局所近似・計測配置・多重解の条件を比較する。"
+      },
+      "citations": [
+        "segj_integrated2017",
+        "jica_refraction2015",
+        "japansea_spac2017"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-33",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "反射の分解能を走時切片と区別する。",
+      "summary": "反射の分解能を走時切片と区別する。",
+      "conditions": {
+        "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+        "前提": "薄層の上下面の分離、横方向の反射寄与範囲、入力waveletを区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "インターセプトタイム",
+          "verdict": "不適切",
+          "reason": "屈折波の走時直線を距離ゼロへ外挿した切片である。反射分解能の直接的な基準と異なる。"
+        },
+        "2": {
+          "value": "レイリー基準",
+          "verdict": "適切",
+          "reason": "近接する二つの応答を分離できるかという分解能の基準に関係する。表面波としてのRayleighと用語の役割を分ける。"
+        },
+        "3": {
+          "value": "ウェーブレット",
+          "verdict": "適切",
+          "reason": "反射の応答形状と有効帯域が近いイベントを分離できる程度に影響する。"
+        },
+        "4": {
+          "value": "リッカー基準",
+          "verdict": "適切",
+          "reason": "反射waveletの重なりを用いる分解能の基準に関係する。具体的閾値を基準名から一律数値へ補わない。"
+        },
+        "5": {
+          "value": "フレネルゾーン",
+          "verdict": "適切",
+          "reason": "同程度の位相で反射へ寄与する面上の範囲であり、横方向の分解能に関係する。migration前後と開口の条件を区別する。"
+        }
+      },
+      "figures": "図なし。文章又は用語の五候補を画像照合。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_012.png"
+      ],
+      "core_concept": "反射の分解能を走時切片と区別する。",
+      "required_knowledge": "薄層の上下面の分離、横方向の反射寄与範囲、入力waveletを区別する。",
+      "solution": "1が不適切である。intercept timeは屈折走時の直線の切片であり、反射の二イベントの分離や横方向の寄与範囲を表す基準ではない。",
+      "answer_reason": "1が不適切である。intercept timeは屈折走時の直線の切片であり、反射の二イベントの分離や横方向の寄与範囲を表す基準ではない。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回を別保存し維持。intercept timeは屈折走時の切片であり反射分解能の基準と異なる。",
+      "learning_points": "同じ人名の用語でも波の種類、wavelet、分離基準を混同しない。",
+      "theory_references": [
+        "theory:exploration:resolution"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_reflection_resolution",
+      "cross_concepts": [],
+      "classification_reason": "人工震源の弾性波・反射屈折・地盤の表面波分散から地下構造を推定する物理探査である。自然地震の発生機構へ配置しない。同じ人名の用語でも波の種類、wavelet、分離基準を混同しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "波動の知識を走時と地下物性へ対応させる。測る量と手法の目的を照合する。"
+      },
+      "citations": [
+        "seg_vertical_resolution",
+        "seg_lateral_resolution",
+        "usgs_refraction2013"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-34",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "速度境界と地質境界、S波屈折の地形条件と用途を比較する。",
+      "summary": "速度境界と地質境界、S波屈折の地形条件と用途を比較する。",
+      "conditions": {
+        "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+        "前提": "通常の土質地盤のS波屈折は比較的平坦な配置で測ることが多い。地形により走時解釈や起振・受振方向が難しくなる。"
+      },
+      "choices": {
+        "1": {
+          "value": "屈折法の速度境界は地質境界と必ずしも一致しない",
+          "verdict": "適切",
+          "reason": "速度は岩種だけでなく風化・割れ目・飽和等に依存する。同じ岩種内でも速度が変わり、異なる地質が近い速度を持つ場合もある。"
+        },
+        "2": {
+          "value": "土質のS波屈折を比較的急峻な地形で多く行う",
+          "verdict": "不適切",
+          "reason": "典型的なS波の土質調査の地形条件は比較的平坦である。急峻が通常条件という説明は逆であり、起振・受振・経路の制約が増す。"
+        },
+        "3": {
+          "value": "トンネル・ダム・のり面等の基礎調査へ屈折法を用いる",
+          "verdict": "適切",
+          "reason": "通常のP波初動を使って地山の速度構造を求め、工学的地質評価の一情報とする。"
+        },
+        "4": {
+          "value": "速度構造から硬軟・割れ目・風化・破砕帯等を推定する",
+          "verdict": "条件付きで適切",
+          "reason": "物性と地質状態の相関を利用する推定である。速度だけから一意に種類や強度を決めず、露頭・ボーリング等で拘束する。"
+        },
+        "5": {
+          "value": "速度層は岩種・膠結・風化・変質・亀裂の複合で決まる",
+          "verdict": "適切",
+          "reason": "速度への寄与が複数あるため、速度層を岩種ごとのラベルと同一視しない。"
+        }
+      },
+      "figures": "図なし。文章又は用語の五候補を画像照合。",
+      "ambiguity": "S波屈折は平坦な土質調査という代表的運用の比較であり、急峻地形で絶対実施できないと断定しない。速度からの地質推定は複数解を持つ。",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_013.png"
+      ],
+      "core_concept": "速度境界と地質境界、S波屈折の地形条件と用途を比較する。",
+      "required_knowledge": "通常の土質地盤のS波屈折は比較的平坦な配置で測ることが多い。地形により走時解釈や起振・受振方向が難しくなる。",
+      "solution": "2が不適切である。土質のS波屈折を急峻地形で多く行うという説明を、典型的な比較的平坦な条件と取り違えている。地形を克服する特別な測定が不可能という意味ではない。",
+      "answer_reason": "2が不適切である。土質のS波屈折を急峻地形で多く行うという説明を、典型的な比較的平坦な条件と取り違えている。地形を克服する特別な測定が不可能という意味ではない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回を別保存し維持。土質のS波屈折は比較的平坦な地形条件が典型。急峻が主条件とする説明は逆。",
+      "learning_points": "地形の典型条件と技術的な実施可能性を分け、速度の多要因性を保つ。",
+      "theory_references": [
+        "theory:exploration:waveproperties",
+        "theory:exploration:refraction"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_refraction_properties",
+      "cross_concepts": [],
+      "classification_reason": "人工震源の弾性波・反射屈折・地盤の表面波分散から地下構造を推定する物理探査である。自然地震の発生機構へ配置しない。地形の典型条件と技術的な実施可能性を分け、速度の多要因性を保つ。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "波動の知識を走時と地下物性へ対応させる。深度目安・局所近似・計測配置・多重解の条件を比較する。"
+      },
+      "citations": [
+        "jica_refraction2015",
+        "segj_integrated2017",
+        "usgs_refraction2013"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-34",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "stem": "微動アレイの短波長限界、水平層モデル、F-K/SPAC、S波逆解析を比較する。",
+      "summary": "微動アレイの短波長限界、水平層モデル、F-K/SPAC、S波逆解析を比較する。",
+      "conditions": {
+        "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+        "前提": "短波長側の空間aliasingと長波長側の開口・位相差・統計精度を分ける。"
+      },
+      "choices": {
+        "1": {
+          "value": "最長波長がアレイ固有の空間aliasingで決まる",
+          "verdict": "不適切",
+          "reason": "最長と最短の役割が逆である。短波長を粗い測点で標本化すると空間波数が折り返して区別できなくなる。"
+        },
+        "2": {
+          "value": "水平多層構造を仮定して表面波から地下構造を推定する",
+          "verdict": "条件付きで適切",
+          "reason": "通常の一次元分散逆解析のモデルである。横方向変化が強い場所や他の多次元算法まで常に水平層であるとはいえない。"
+        },
+        "3": {
+          "value": "人工地表加振の表面波で一次元地下モデルを推定する",
+          "verdict": "適切",
+          "reason": "通常の浅層能動表面波探査の説明であり、周波数・波長ごとの速度を地盤の深度構造に結ぶ。"
+        },
+        "4": {
+          "value": "同じアレイサイズでF-Kの最大波長はSPACより短い",
+          "verdict": "条件付きで適切",
+          "reason": "通常の解析性能の比較であり、実験論文の条件ではSPACがより長波長まで推定した。配置・波の入射・ノイズ・推定算法に依存するため全ての実装に無条件の大小関係を課さない。"
+        },
+        "5": {
+          "value": "観測位相速度に近い理論値を持つS波速度構造を作る",
+          "verdict": "適切",
+          "reason": "順モデルによる分散曲線と観測を照合し主にS波速度を更新する。P波速度・密度・層厚の前提も必要であり唯一解の保証ではない。"
+        }
+      },
+      "figures": "図なし。文章又は用語の五候補を画像照合。",
+      "ambiguity": "F-K対SPACの大小は解析・入射条件と実装に依存する。水平多層モデルは通常の一次元逆解析の前提であり、手法全般の絶対定義とはしない。",
+      "evidence": [
+        "extracted/pages/R04/17_applied_science/page_012.png"
+      ],
+      "core_concept": "微動アレイの短波長限界、水平層モデル、F-K/SPAC、S波逆解析を比較する。",
+      "required_knowledge": "短波長側の空間aliasingと長波長側の開口・位相差・統計精度を分ける。",
+      "solution": "1が不適切である。空間aliasingは主に短波長・高波数側の限界であり最長波長ではない。長波長側はアレイ内の位相差が小さくなることや有限開口・解析手法の精度等に制約される。",
+      "answer_reason": "1が不適切である。空間aliasingは主に短波長・高波数側の限界であり最長波長ではない。長波長側はアレイ内の位相差が小さくなることや有限開口・解析手法の精度等に制約される。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回を別保存し維持。空間aliasingは一般に短波長の限界であり最長ではない。F-KとSPACの比較は解析・配置条件付き。",
+      "learning_points": "周波数ではなく波数の標本化として空間aliasingを理解する。",
+      "theory_references": [
+        "theory:exploration:surfacewaves",
+        "theory:exploration:arraylimits"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_array_wavelength",
+      "cross_concepts": [],
+      "classification_reason": "人工震源の弾性波・反射屈折・地盤の表面波分散から地下構造を推定する物理探査である。自然地震の発生機構へ配置しない。周波数ではなく波数の標本化として空間aliasingを理解する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "波動の知識を走時と地下物性へ対応させる。深度目安・局所近似・計測配置・多重解の条件を比較する。"
+      },
+      "citations": [
+        "epa_surfacewaves",
+        "xia_rayleigh1999",
+        "japansea_spac2017",
+        "array_limits2002"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-32",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "stem": "ミラージ、測線方向、S波屈折、反射曲線、相関雑音を比較する。",
+      "summary": "ミラージ、測線方向、S波屈折、反射曲線、相関雑音を比較する。",
+      "conditions": {
+        "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+        "前提": "CMPの通常の双曲線近似と小オフセットの局所二次近似を分ける。"
+      },
+      "choices": {
+        "1": {
+          "value": "連続的な深度増速構造をミラージュ構造と呼ぶ",
+          "verdict": "適切",
+          "reason": "速度層境界を持つ折れ線モデルでなく、曲がる波線の走時曲線になる連続勾配モデルである。"
+        },
+        "2": {
+          "value": "屈折測線を等高線とほぼ垂直で一定勾配に配置するのが望ましい",
+          "verdict": "条件付きで適切",
+          "reason": "地質構造と地形を評価しやすい代表的な測線設計である。全地形・全目的でその配置が唯一又は可能とはいえない。"
+        },
+        "3": {
+          "value": "土質のS波屈折を比較的平坦な地形で多く行う",
+          "verdict": "適切",
+          "reason": "起振と受振及び地形補正の制約を考えた通常の調査条件である。"
+        },
+        "4": {
+          "value": "多層CMPの反射走時は近似的に放物線となる",
+          "verdict": "条件付きで適切",
+          "reason": "通常は有効速度を用いる双曲線で近似する。小オフセットなら双曲線の二次展開は放物線となるため、その条件を除外せず公式判断と分ける。"
+        },
+        "5": {
+          "value": "CMP重合がランダムとコヒーレント雑音の抑制に貢献する",
+          "verdict": "条件付きで適切",
+          "reason": "適切なNMOで反射波をそろえ、異なるmoveoutの多重反射等は重合で弱められる。反射と同じmoveoutの相関雑音まで必ず消えるわけではない。"
+        }
+      },
+      "figures": "図なし。文章又は用語の五候補を画像照合。",
+      "ambiguity": "放物線は小オフセットの局所近似として成立する。公式4を一般走時式の比較として保持し範囲不足を残す。CMPによる相関雑音抑制もmoveoutの差に依存する。",
+      "evidence": [
+        "extracted/pages/R05/17_applied_science/page_011.png"
+      ],
+      "core_concept": "ミラージ、測線方向、S波屈折、反射曲線、相関雑音を比較する。",
+      "required_knowledge": "CMPの通常の双曲線近似と小オフセットの局所二次近似を分ける。",
+      "solution": "公式4である。水平成層の通常近似は双曲線であり、放物線を一般的走時式とする説明は不十分である。一方、小オフセットのTaylor二次近似は放物線となるため、原文の近似的という語に対する範囲不足を疑義として保持する。",
+      "answer_reason": "公式4である。水平成層の通常近似は双曲線であり、放物線を一般的走時式とする説明は不十分である。一方、小オフセットのTaylor二次近似は放物線となるため、原文の近似的という語に対する範囲不足を疑義として保持する。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回を別保存し維持。多層CMPの通常近似は双曲線。小オフセットで放物線も局所近似なので無条件の誤りにしない。",
+      "learning_points": "近似の次数と範囲、雑音のmoveoutを示して判断する。",
+      "theory_references": [
+        "theory:exploration:reflectiongeometry",
+        "theory:exploration:refraction",
+        "theory:exploration:stack"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_reflection_geometry",
+      "cross_concepts": [],
+      "classification_reason": "人工震源の弾性波・反射屈折・地盤の表面波分散から地下構造を推定する物理探査である。自然地震の発生機構へ配置しない。近似の次数と範囲、雑音のmoveoutを示して判断する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "波動の知識を走時と地下物性へ対応させる。深度目安・局所近似・計測配置・多重解の条件を比較する。"
+      },
+      "citations": [
+        "epa_seismic_reflection",
+        "jica_refraction2015",
+        "usgs_processing2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-32",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "stem": "速度境界、連続勾配、浅層展開、反射双曲線、受振器群を比較する。",
+      "summary": "速度境界、連続勾配、浅層展開、反射双曲線、受振器群を比較する。",
+      "conditions": {
+        "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+        "前提": "地震波速度は岩種だけでなく、割れ目・風化・飽和などの状態にも依存する。"
+      },
+      "choices": {
+        "1": {
+          "value": "屈折法の層境界は地質境界とよく一致する",
+          "verdict": "不適切",
+          "reason": "速度差で定まる境界を地質分類の境界と同一視している。岩種以外の要因が速度へ影響するため一般的な一致を保証しない。"
+        },
+        "2": {
+          "value": "連続増速のミラージ構造では初動走時が曲線になりトモグラフィが適する",
+          "verdict": "適切",
+          "reason": "離散境界の折れ線モデルでなく深度ごとに屈折しながら曲がる経路となる。格子速度を更新する走時トモグラフィは連続的な速度変化も扱える。解像度は波線分布に依存する。"
+        },
+        "3": {
+          "value": "浅層反射で最大オフセットを探査深度程度に設定する",
+          "verdict": "条件付きで適切",
+          "reason": "浅層反射の一般的な展開目安として読む。速度解析・近接雑音・反射角・地形・重合数で調整し、全ての計測に必要な厳密等式ではない。"
+        },
+        "4": {
+          "value": "水平多層CMPの走時は近似的に双曲線となる",
+          "verdict": "条件付きで適切",
+          "reason": "通常のNMO近似で有効速度とゼロオフセット走時を用いる。大オフセットや強い不均質・異方性では非双曲線成分が重要になる。"
+        },
+        "5": {
+          "value": "受振器群を結合し表面波等を抑え反射を強調する",
+          "verdict": "条件付きで適切",
+          "reason": "配列の空間応答により波群を選別し独立雑音も平均化する。方向・間隔が対象に適していなければ必要信号を弱める場合がある。"
+        }
+      },
+      "figures": "図なし。文章又は用語の五候補を画像照合。",
+      "ambiguity": "オフセット深度の対応と双曲線は通常条件の目安・近似である。受振器群の効果は方向・間隔・波長に依存する。",
+      "evidence": [
+        "extracted/pages/R06/17_applied_science/page_011.png"
+      ],
+      "core_concept": "速度境界、連続勾配、浅層展開、反射双曲線、受振器群を比較する。",
+      "required_knowledge": "地震波速度は岩種だけでなく、割れ目・風化・飽和などの状態にも依存する。",
+      "solution": "1が不適切である。屈折法の速度境界と地質学の境界がよく一致するという一般化はできない。同じ岩種内の風化境界が速度を変え、異なる岩種間で速度差が小さい場合もある。",
+      "answer_reason": "1が不適切である。屈折法の速度境界と地質学の境界がよく一致するという一般化はできない。同じ岩種内の風化境界が速度を変え、異なる岩種間で速度差が小さい場合もある。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回を別保存し維持。速度境界は風化・割れ目・飽和等で変わるため地質境界との良い一致を一般保証しない。",
+      "learning_points": "速度構造と地質構造、近似モデルと実地の制約を別々に評価する。",
+      "theory_references": [
+        "theory:exploration:waveproperties",
+        "theory:exploration:reflectiongeometry",
+        "theory:exploration:stack"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_refraction_properties",
+      "cross_concepts": [],
+      "classification_reason": "人工震源の弾性波・反射屈折・地盤の表面波分散から地下構造を推定する物理探査である。自然地震の発生機構へ配置しない。速度構造と地質構造、近似モデルと実地の制約を別々に評価する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "波動の知識を走時と地下物性へ対応させる。深度目安・局所近似・計測配置・多重解の条件を比較する。"
+      },
+      "citations": [
+        "segj_integrated2017",
+        "jica_refraction2015",
+        "usgs_processing2000",
+        "epa_seismic_reflection"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-33",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "stem": "F-K/SPAC、S波逆解析、水平層、能動起振、最短波長を比較する。",
+      "summary": "F-K/SPAC、S波逆解析、水平層、能動起振、最短波長を比較する。",
+      "conditions": {
+        "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+        "前提": "微動のRayleigh位相速度は複数の物性へ依存するが、主にS波速度構造に強い感度を持つ。"
+      },
+      "choices": {
+        "1": {
+          "value": "同じアレイサイズでF-Kの最大波長はSPACより短い",
+          "verdict": "条件付きで適切",
+          "reason": "通常の解析性能の比較であり、実験論文の条件ではSPACがより長波長まで推定した。配置・波の入射・ノイズ・推定算法に依存するため全ての実装に無条件の大小関係を課さない。"
+        },
+        "2": {
+          "value": "観測位相速度に近いP波速度構造モデルを作る",
+          "verdict": "不適切",
+          "reason": "対象とする主な未知量をP波へ取り違える。分散はP波にも依存するが、通常はS波構造を推定し他の物性を別条件で拘束する。"
+        },
+        "3": {
+          "value": "水平多層構造を仮定して表面波から地下構造を推定する",
+          "verdict": "条件付きで適切",
+          "reason": "通常の一次元分散逆解析のモデルである。横方向変化が強い場所や他の多次元算法まで常に水平層であるとはいえない。"
+        },
+        "4": {
+          "value": "人工地表加振の表面波で一次元地下モデルを推定する",
+          "verdict": "適切",
+          "reason": "通常の浅層能動表面波探査の説明であり、周波数・波長ごとの速度を地盤の深度構造に結ぶ。"
+        },
+        "5": {
+          "value": "推定位相速度の最短波長は空間aliasingに制約される",
+          "verdict": "適切",
+          "reason": "波長に対し測点が粗いと異なる空間波数が区別できなくなる。長波長側の位相差の小ささ・有限開口の制約とは区別する。"
+        }
+      },
+      "figures": "図なし。文章又は用語の五候補を画像照合。",
+      "ambiguity": "P波速度・密度・層厚の影響もゼロでない。F-K/SPACの最大波長比較と水平層モデルは通常の解析条件の範囲で読む。",
+      "evidence": [
+        "extracted/pages/R06/17_applied_science/page_011.png"
+      ],
+      "core_concept": "F-K/SPAC、S波逆解析、水平層、能動起振、最短波長を比較する。",
+      "required_knowledge": "微動のRayleigh位相速度は複数の物性へ依存するが、主にS波速度構造に強い感度を持つ。",
+      "solution": "2が不適切である。通常の微動分散逆解析で作るのは主にS波速度モデルであり、P波モデルへ置換する説明が誤りである。P波速度が位相速度へ影響しないという意味ではない。",
+      "answer_reason": "2が不適切である。通常の微動分散逆解析で作るのは主にS波速度モデルであり、P波モデルへ置換する説明が誤りである。P波速度が位相速度へ影響しないという意味ではない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回を別保存し維持。微動のRayleigh分散から主にS波速度モデルを推定しP波のみではない。P波・密度の影響もゼロではない。",
+      "learning_points": "位相速度の感度が強い物性と、影響がゼロではない他物性を区別する。",
+      "theory_references": [
+        "theory:exploration:surfacewaves",
+        "theory:exploration:arraylimits"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_array_wavelength",
+      "cross_concepts": [],
+      "classification_reason": "人工震源の弾性波・反射屈折・地盤の表面波分散から地下構造を推定する物理探査である。自然地震の発生機構へ配置しない。位相速度の感度が強い物性と、影響がゼロではない他物性を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "波動の知識を走時と地下物性へ対応させる。深度目安・局所近似・計測配置・多重解の条件を比較する。"
+      },
+      "citations": [
+        "epa_surfacewaves",
+        "xia_rayleigh1999",
+        "japansea_spac2017",
+        "array_limits2002"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-35",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "表面波の分散、物性感度、反復逆解析、波長別深度、能動と微動の併用を比較する。",
+      "summary": "表面波の分散、物性感度、反復逆解析、波長別深度、能動と微動の併用を比較する。",
+      "conditions": {
+        "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+        "前提": "通常の不均質水平成層モデルとRayleigh分散の主なS波速度感度を考える。"
+      },
+      "choices": {
+        "1": {
+          "value": "水平成層のRayleigh位相速度は周波数による分散を持つ",
+          "verdict": "条件付きで適切",
+          "reason": "深度で物性が変わる成層の通常モデルでは分散を持つ。均質等方半無限体や全層同物性の退化例は非分散なので、全てのモデルへの全称としない。"
+        },
+        "2": {
+          "value": "Rayleigh位相速度へのP波の影響がS波より大きい",
+          "verdict": "不適切",
+          "reason": "通常の地盤分散はS波速度が支配的に影響し、P波だけを主たる未知量とする説明は誤りである。"
+        },
+        "3": {
+          "value": "理論と観測の位相速度差を減らすようモデル修正と計算を反復する",
+          "verdict": "適切",
+          "reason": "分散曲線を順計算し地下構造パラメータを更新する逆問題である。初期値・誤差と拘束にも依存する。"
+        },
+        "4": {
+          "value": "探査深度は最大波長、浅部解像度は最小波長と強く関係する",
+          "verdict": "適切",
+          "reason": "長波長ほど深部に感度を持ち、短波長は浅部の小さな構造を拘束する傾向がある。一波長が一深度だけを測るわけではない。"
+        },
+        "5": {
+          "value": "能動表面波と微動を併用して探査深度を増やす",
+          "verdict": "条件付きで適切",
+          "reason": "微動で長波長側を補える観測条件なら深部の拘束が増す。低周波が得られない場合やモードが不整合の場合は併用だけで深度増加を保証しない。"
+        }
+      },
+      "figures": "図なし。文章又は用語の五候補を画像照合。",
+      "ambiguity": "均質半無限体は非分散の退化例であり1を全称にしない。P波・密度の感度はゼロではない。微動併用で長波長が得られることとモード同定の確認が必要。",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_013.png"
+      ],
+      "core_concept": "表面波の分散、物性感度、反復逆解析、波長別深度、能動と微動の併用を比較する。",
+      "required_knowledge": "通常の不均質水平成層モデルとRayleigh分散の主なS波速度感度を考える。",
+      "solution": "2が不適切である。Rayleigh分散は一般にS波速度へ強い感度を持ち、P波の影響がS波より大きいとする説明は逆である。波長を広い範囲で得ると浅部と深部を拘束しやすくなるが、観測に合うモデルが唯一とは限らない。",
+      "answer_reason": "2が不適切である。Rayleigh分散は一般にS波速度へ強い感度を持ち、P波の影響がS波より大きいとする説明は逆である。波長を広い範囲で得ると浅部と深部を拘束しやすくなるが、観測に合うモデルが唯一とは限らない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回を別保存し維持。Rayleigh位相速度の感度は一般にS波速度に強くP波より弱い。半無限均質非分散の例もある。",
+      "learning_points": "分散の主感度、波長の感度範囲、データ併用の条件を示し唯一解を仮定しない。",
+      "theory_references": [
+        "theory:exploration:surfacewaves",
+        "theory:exploration:arraylimits",
+        "theory:exploration:inverse"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_surfacewave_inversion",
+      "cross_concepts": [],
+      "classification_reason": "人工震源の弾性波・反射屈折・地盤の表面波分散から地下構造を推定する物理探査である。自然地震の発生機構へ配置しない。分散の主感度、波長の感度範囲、データ併用の条件を示し唯一解を仮定しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "波動の知識を走時と地下物性へ対応させる。深度目安・局所近似・計測配置・多重解の条件を比較する。"
+      },
+      "citations": [
+        "epa_surfacewaves",
+        "xia_rayleigh1999",
+        "japansea_spac2017",
+        "array_limits2002",
+        "pygimli_inversion"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

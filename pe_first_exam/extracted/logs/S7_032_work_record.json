@@ -1,0 +1,82 @@
+{
+  "time": "2026-10-12T07:19:53+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_032_product_liability",
+  "question_ids": [
+    "H23-REG-APT-08",
+    "H24-REG-APT-07",
+    "H25-REG-APT-07",
+    "H26-REG-APT-07",
+    "H28-REG-APT-07",
+    "H29-REG-APT-08",
+    "H30-REG-APT-09",
+    "R01-REG-APT-03",
+    "R01-RET-APT-07",
+    "R02-REG-APT-06",
+    "R02-REG-APT-12",
+    "R03-REG-APT-08",
+    "R04-REG-APT-11",
+    "R05-REG-APT-06",
+    "R06-REG-APT-14",
+    "R07-REG-APT-12"
+  ],
+  "source_images": 16,
+  "initial_independent_matches": 14,
+  "corrected_verified": 10,
+  "partial": 6,
+  "related_pairs_added": 8,
+  "related_pairs_total": 200,
+  "primary_references_added": 7,
+  "concepts_added": 8,
+  "concept_total": 236,
+  "canonical_counts": {
+    "recorded_at": "2026-10-12T07:19:53+09:00",
+    "registered": 1270,
+    "classification_verified": 635,
+    "summary_verified": 601,
+    "corrected_verified": 476,
+    "corrected_partial": 125,
+    "solution_drafts": 601,
+    "solution_verified": 0,
+    "manual_required": 794,
+    "subject_drafts": {
+      "BASIC": 196,
+      "APT": 147,
+      "APPLIED": 258
+    }
+  },
+  "theory_note": "製造物責任の四判定、三条件、立証、自損、加工、付合、OEM、免責、修理再生、期間改正、特別法、CSRの共通理論。",
+  "pdf": {
+    "pages": 800,
+    "bytes": 3991223,
+    "visual_review_pages": [
+      342,
+      343,
+      344,
+      345,
+      356,
+      357,
+      358,
+      359,
+      360,
+      361,
+      362,
+      363,
+      365,
+      366,
+      786,
+      787
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draft・再生成後初期・1270ラベル監査成功。LuaLaTeX再生成成功、16実画像確認。参考文献のアンパサンドをエスケープ修正し、初回失敗ログと回復ログを保持。",
+  "risks": [
+    "6部分校正。H24APT7初回3/公式4の修理製品の解釈。H25APT7初回5/公式4は逐条解説の冷凍冷蔵境界で訂正し初回保持。省略条件とISO原規格未取得を保持。",
+    "Astra未査読、669問未執筆、最終監査未実装。"
+  ],
+  "next": "S7_033化学平衡・反応速度・酸塩基17問。17原典画像と公式前初回保存、16一致、R02AP13初回3/公式2を保持。全1270問・全章・頻出分析まで継続。",
+  "revision_note": "12問の候補理由に解法全文が繰り返される冗長性を原入力保持・ハッシュ束縛revision1で整理。"
+}

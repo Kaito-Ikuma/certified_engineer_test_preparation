@@ -1,0 +1,45 @@
+{
+  "stem": "汎用樹脂と代表エンジニアリングプラスチックを区別する。",
+  "conditions": {
+    "判断対象": "汎用樹脂と代表エンジニアリングプラスチックを区別する。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "PE",
+      "verdict": "選ぶ候補",
+      "reason": "通常PEは汎用プラスチックとして選ぶ。ただし超高分子量等の特殊PEは工学用途がある。"
+    },
+    "2": {
+      "value": "PC",
+      "verdict": "選ばない候補",
+      "reason": "代表汎用エンプラ。"
+    },
+    "3": {
+      "value": "ポリアミド",
+      "verdict": "選ばない候補",
+      "reason": "ナイロン等は代表汎用エンプラ。"
+    },
+    "4": {
+      "value": "POM",
+      "verdict": "選ばない候補",
+      "reason": "代表汎用エンプラ。"
+    },
+    "5": {
+      "value": "PPO",
+      "verdict": "選ばない候補",
+      "reason": "PPEとも呼ぶ系統で代表エンプラに入る。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "原典はPEのグレードを限定しない。汎用PEを想定した公式1を示し、UHMWPE等の工学材料例と区別。",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_006.png"
+  ],
+  "question_id": "R01-RET-APPLIED-17",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "abe455c5733cf40161321d335ca116d902e03fc18faf6c957349e24395ead05f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

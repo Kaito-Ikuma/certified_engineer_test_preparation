@@ -1,0 +1,22 @@
+{
+  "time": "2026-10-14T14:32:56+09:00",
+  "questions": [
+    "H24-REG-BASIC-5-5",
+    "H25-REG-BASIC-5-3",
+    "H25-REG-BASIC-5-4",
+    "H26-REG-BASIC-5-1",
+    "H26-REG-BASIC-5-3",
+    "H26-REG-BASIC-5-4",
+    "H26-REG-BASIC-5-5",
+    "H27-REG-BASIC-5-1",
+    "H27-REG-BASIC-5-2",
+    "H27-REG-BASIC-5-5",
+    "H28-REG-BASIC-5-1",
+    "H28-REG-BASIC-5-2",
+    "H28-REG-BASIC-5-3",
+    "H28-REG-BASIC-5-4"
+  ],
+  "source_conditions_checked": 14,
+  "solution_drafts": 14,
+  "final_verification": false
+}

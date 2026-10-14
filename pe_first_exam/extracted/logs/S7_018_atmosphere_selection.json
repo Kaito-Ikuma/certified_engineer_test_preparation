@@ -1,0 +1,350 @@
+{
+  "selected_at": "2026-10-10T23:40:37.492028+09:00",
+  "questions": [
+    {
+      "question_id": "H23-REG-APPLIED-20",
+      "source_file": "sources/H23/17_applied_science.pdf",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "source_page": "7",
+      "source_page_end": "7",
+      "raw_text_sha256": "3474e6fe8f4e3301a61acf2b34deec059dbfc2102d8914a69eff3a2b4d86a691",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/H23/17_applied_science/page_007.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/H23/17_applied_science/page_007.png": "0048643e24983720a07322b040e758c1b3b875de511ac14079a0ad82ce3f8c12"
+      }
+    },
+    {
+      "question_id": "H24-REG-APPLIED-34",
+      "source_file": "sources/H24/17_applied_science.pdf",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "source_page": "10",
+      "source_page_end": "10",
+      "raw_text_sha256": "834e1fa726e39a3e1615a2a39002463e4c155caf313af528af8dd881750078eb",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/H24/17_applied_science/page_010.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/H24/17_applied_science/page_010.png": "3293521506e05f9d8f141593484b14c7577341a3d0b6c0189badb9779896a695"
+      }
+    },
+    {
+      "question_id": "H26-REG-APPLIED-26",
+      "source_file": "sources/H26/17_applied_science.pdf",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "source_page": "11",
+      "source_page_end": "11",
+      "raw_text_sha256": "d6f6a0ddc550b893cddefae00e9d81ddfbe59e92dcc5bcc84df22b0c8e3b748e",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/H26/17_applied_science/page_011.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/H26/17_applied_science/page_011.png": "232789c2dce3d7584dbd2869c0ca0604359a2f97a46b529fe0a384c0b0481607"
+      }
+    },
+    {
+      "question_id": "H27-REG-APPLIED-24",
+      "source_file": "sources/H27/17_applied_science.pdf",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "source_page": "9",
+      "source_page_end": "9",
+      "raw_text_sha256": "f7e7c4b9c38d0a5c28efb5cca7071a31eab3454109c057e2ec9c1a678adb19a8",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/H27/17_applied_science/page_009.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/H27/17_applied_science/page_009.png": "ba6362897cfb5be007084a7534ed78fae63d6e7312cfc3ab9ccfb0cbc1356a5d"
+      }
+    },
+    {
+      "question_id": "H27-REG-APPLIED-26",
+      "source_file": "sources/H27/17_applied_science.pdf",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "source_page": "10",
+      "source_page_end": "10",
+      "raw_text_sha256": "9660f219ec45f141f89dc4e5f04297d2996f7448a0c1863361aa203efa02e115",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/H27/17_applied_science/page_010.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/H27/17_applied_science/page_010.png": "752b8714b9bf0ec9cae8e298543c60c798b79363827422dbaa2e90656f3f7107"
+      }
+    },
+    {
+      "question_id": "H28-REG-APPLIED-25",
+      "source_file": "sources/H28/17_applied_science.pdf",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "source_page": "10",
+      "source_page_end": "10",
+      "raw_text_sha256": "137307f4537c7e6554155ad3d7fc1e7fec6cd2f7faf5a5f4446940c2c963fa76",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/H28/17_applied_science/page_010.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/H28/17_applied_science/page_010.png": "f90c08ce5bd27c208ca9f28f20ddad91e2c402fc3d118e71a41873ac01967166"
+      }
+    },
+    {
+      "question_id": "H28-REG-APPLIED-26",
+      "source_file": "sources/H28/17_applied_science.pdf",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "source_page": "11",
+      "source_page_end": "11",
+      "raw_text_sha256": "2af83ca52b2c97ce81fe2ad5ac167b29f44de3936d687116dc151bee3e7d9d10",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/H28/17_applied_science/page_011.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/H28/17_applied_science/page_011.png": "76f6e36d7d5f71d0246dc6cd6489a3cb5b0b838c04da4113d07133584bd3ac91"
+      }
+    },
+    {
+      "question_id": "H29-REG-APPLIED-19",
+      "source_file": "sources/H29/17_applied_science.pdf",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "source_page": "6",
+      "source_page_end": "6",
+      "raw_text_sha256": "4fea0875513a9b0b695ff1b0fa3d16e9b1e45929a48fd1e6e80aac77a6e45f88",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/H29/17_applied_science/page_006.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/H29/17_applied_science/page_006.png": "29230a9e37cc89bf86c7fe4c80ada953fdbc1e82647be60fd37da303d9244f03"
+      }
+    },
+    {
+      "question_id": "H29-REG-APPLIED-21",
+      "source_file": "sources/H29/17_applied_science.pdf",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "source_page": "7",
+      "source_page_end": "7",
+      "raw_text_sha256": "8a144b1719d36149d53c74e9bc52c5d5eb6b95e40ecb7835864a0d165f6f7047",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/H29/17_applied_science/page_007.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/H29/17_applied_science/page_007.png": "0b66a6981d78fc5bc43299587818501e912814a76ef77c97d1584f4035f85858"
+      }
+    },
+    {
+      "question_id": "H30-REG-APPLIED-20",
+      "source_file": "sources/H30/17_applied_science.pdf",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "source_page": "7",
+      "source_page_end": "7",
+      "raw_text_sha256": "61d5529e61e172a9fa856a0d478e01b1d14c08541a33feda02daa09d4e27b43e",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/H30/17_applied_science/page_007.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/H30/17_applied_science/page_007.png": "6529aa15699a74358a4f61298d5ee1e843742e531b01b0cdfd4b15165901d281"
+      }
+    },
+    {
+      "question_id": "H30-REG-APPLIED-22",
+      "source_file": "sources/H30/17_applied_science.pdf",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "source_page": "7",
+      "source_page_end": "7",
+      "raw_text_sha256": "90d313a00f5f713521cbef8e72ae143072c1f66583b83fdc866cd33066f483b1",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/H30/17_applied_science/page_007.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/H30/17_applied_science/page_007.png": "6529aa15699a74358a4f61298d5ee1e843742e531b01b0cdfd4b15165901d281"
+      }
+    },
+    {
+      "question_id": "R01-REG-APPLIED-19",
+      "source_file": "sources/R01/17_applied_science.pdf",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "source_page": "6",
+      "source_page_end": "6",
+      "raw_text_sha256": "2fca050cbc4c36e31accb54f28dd8d0de9421f3c02cdb36aa81ac51cb31bc9d7",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/R01/17_applied_science/page_006.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/R01/17_applied_science/page_006.png": "45294f0496114b79da27cee8854915c03ff12d98421f40b0e023af5789b52dd1"
+      }
+    },
+    {
+      "question_id": "R01-REG-APPLIED-21",
+      "source_file": "sources/R01/17_applied_science.pdf",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "source_page": "7",
+      "source_page_end": "7",
+      "raw_text_sha256": "471315cb43b63d699f43e53314a652ef66612a39917f6ee3858280308c582c43",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/R01/17_applied_science/page_007.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/R01/17_applied_science/page_007.png": "1fb3b6d2e5549e1a6fc425330b30b628e4fd1b8b93b24967abcc5db74a061087"
+      }
+    },
+    {
+      "question_id": "R01-REG-APPLIED-22",
+      "source_file": "sources/R01/17_applied_science.pdf",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "source_page": "7",
+      "source_page_end": "7",
+      "raw_text_sha256": "967ffe854439eef44aaa3b26af53abca501c045a827bc5d7f5161540eb4492b3",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/R01/17_applied_science/page_007.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/R01/17_applied_science/page_007.png": "1fb3b6d2e5549e1a6fc425330b30b628e4fd1b8b93b24967abcc5db74a061087"
+      }
+    },
+    {
+      "question_id": "R01-RET-APPLIED-20",
+      "source_file": "sources/R01_retest/17_applied_science.pdf",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "source_page": "7",
+      "source_page_end": "7",
+      "raw_text_sha256": "0a23aaaa78c70ac68a75298f408d7fb6cf27c098cdb8a875127c25c897844d00",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/R01_retest/17_applied_science/page_007.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/R01_retest/17_applied_science/page_007.png": "a38b0d29878bbd24fcd8bdc7907428c3f50a2fea6c2d32b993b978895d246e0b"
+      }
+    },
+    {
+      "question_id": "R01-RET-APPLIED-21",
+      "source_file": "sources/R01_retest/17_applied_science.pdf",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "source_page": "7",
+      "source_page_end": "7",
+      "raw_text_sha256": "ead7c1c46d32c7afe19d67b41810adccf39f0ec8af8c946b05d72cb4b701fc35",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/R01_retest/17_applied_science/page_007.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/R01_retest/17_applied_science/page_007.png": "a38b0d29878bbd24fcd8bdc7907428c3f50a2fea6c2d32b993b978895d246e0b"
+      }
+    },
+    {
+      "question_id": "R02-REG-APPLIED-21",
+      "source_file": "sources/R02/17_applied_science.pdf",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "source_page": "8",
+      "source_page_end": "8",
+      "raw_text_sha256": "1aa5da3b13ab25186873c446b4b1b5f2e9fe9557d9b8467276c8a1d381d3088d",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/R02/17_applied_science/page_008.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/R02/17_applied_science/page_008.png": "858c4e6963584c20ed7cf036d06800aa4676a0fdde488738e012332b707e8729"
+      }
+    },
+    {
+      "question_id": "R02-REG-APPLIED-22",
+      "source_file": "sources/R02/17_applied_science.pdf",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "source_page": "8",
+      "source_page_end": "8",
+      "raw_text_sha256": "eb0f012c512b0b0769abdc2770e74d6ae45f94df25fa8ad9d1f7c65af6b30c17",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/R02/17_applied_science/page_008.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/R02/17_applied_science/page_008.png": "858c4e6963584c20ed7cf036d06800aa4676a0fdde488738e012332b707e8729"
+      }
+    },
+    {
+      "question_id": "R04-REG-APPLIED-22",
+      "source_file": "sources/R04/17_applied_science.pdf",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "source_page": "7",
+      "source_page_end": "7",
+      "raw_text_sha256": "97509ffd473a1cb2deda85bbf5b9ee277e9b9e4a548bde78a5436db26ce611fa",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/R04/17_applied_science/page_007.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/R04/17_applied_science/page_007.png": "8c6ee032f99d811e22afb59b18fc2ab1a6bfd5b6fe0ec4dca928ac8145f8e1be"
+      }
+    },
+    {
+      "question_id": "R05-REG-APPLIED-18",
+      "source_file": "sources/R05/17_applied_science.pdf",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "source_page": "6",
+      "source_page_end": "6",
+      "raw_text_sha256": "3a7c5a242a1314638416ab50e7c1c5328c915ba317f0116f94cb8838ad8ef9c7",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/R05/17_applied_science/page_006.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/R05/17_applied_science/page_006.png": "4deeac36905e61b98b007355447ae79e5d61edbd0210dabbc3142419a5d37147"
+      }
+    },
+    {
+      "question_id": "R05-REG-APPLIED-20",
+      "source_file": "sources/R05/17_applied_science.pdf",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "source_page": "7",
+      "source_page_end": "7",
+      "raw_text_sha256": "e5460471b0a38a03df96a32de5728b6c72a9e39546ae8b53b358f3924db1612e",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/R05/17_applied_science/page_007.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/R05/17_applied_science/page_007.png": "4705dca6757fccbf0ebca4860ff3788a83b1d9e6d7593997b5b98fc51a0daeba"
+      }
+    },
+    {
+      "question_id": "R06-REG-APPLIED-20",
+      "source_file": "sources/R06/17_applied_science.pdf",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "source_page": "6",
+      "source_page_end": "6",
+      "raw_text_sha256": "434e371704dc34cff4061bacee25335792133f963e71d05c9a6dab8bd0ba1f14",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/R06/17_applied_science/page_006.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/R06/17_applied_science/page_006.png": "1463406c510c67287aedfd064babe9a0236964fed63e208a638ce3719cef1833"
+      }
+    },
+    {
+      "question_id": "R07-REG-APPLIED-21",
+      "source_file": "sources/R07/17_applied_science.pdf",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "source_page": "7",
+      "source_page_end": "7",
+      "raw_text_sha256": "484df2a63f0f90f527125dfe2de269a199c1a02de812b27d4e7d96a0dd85532b",
+      "chapter_id": "applied_science/geophysics_geochemistry/06_meteorology_atmosphere",
+      "images": [
+        "extracted/pages/R07/17_applied_science/page_007.png"
+      ],
+      "image_sha256": {
+        "extracted/pages/R07/17_applied_science/page_007.png": "711dec302b0f49a333863c71f69cde9f4e9c4c16ca3a9da2a76c65956e4e7685"
+      }
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "stem": "ISBN-13の交互重み1/3の合同式から欠けた末尾検査数字を求める。",
+  "conditions": {
+    "番号": "978-4-103-34194-X",
+    "左から重み": "1,3交互",
+    "合同式": "全和mod10=0"
+  },
+  "choices": {
+    "1": {
+      "value": "1",
+      "verdict": "不適切",
+      "reason": "101+1=102はmod10で2。"
+    },
+    "2": {
+      "value": "3",
+      "verdict": "不適切",
+      "reason": "101+3=104はmod10で4。"
+    },
+    "3": {
+      "value": "5",
+      "verdict": "不適切",
+      "reason": "101+5=106はmod10で6。"
+    },
+    "4": {
+      "value": "7",
+      "verdict": "不適切",
+      "reason": "101+7=108はmod10で8。"
+    },
+    "5": {
+      "value": "9",
+      "verdict": "適切",
+      "reason": "101+9=110はmod10で0となる。"
+    }
+  },
+  "figures": "問題幹・全5肢・数値・単位・否定を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_007.png"
+  ],
+  "question_id": "R05-REG-BASIC-2-3",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "260ab2195378855a93f3d4947ef5c63b18f915a447b415faea85d87d29335ec4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

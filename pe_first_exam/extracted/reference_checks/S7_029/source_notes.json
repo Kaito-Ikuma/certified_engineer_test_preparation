@@ -1,0 +1,173 @@
+{
+  "checked_at": "2026-10-11T23:36:50+09:00",
+  "sources": [
+    {
+      "key": "sed_gsj_slate",
+      "title": "地質標本館：黒色粘板岩 GSJ R10562",
+      "url": "https://www.gsj.jp/Muse/hyohon/rock/r10562.html",
+      "checked_claim": "標本の堆積岩分類と登米層の記載を本文15行で確認。粘板岩を一律に未変成堆積岩とする根拠ではない。"
+    },
+    {
+      "key": "sed_mit_environment",
+      "title": "Depositional Environments, Chapter 10 (2007)",
+      "url": "https://ocw.mit.edu/courses/12-110-sedimentary-geology-spring-2007/935e82faac10751572cd54f18531e17a_ch10.pdf",
+      "checked_claim": "物理1–4頁の観察と解釈、8–12頁の河川、17–19頁の級化とBouma省略、22–23頁の潮流反転と断面効果を本文確認。33頁全文の通読ではない。"
+    },
+    {
+      "key": "sed_mit_cross",
+      "title": "Cross Stratification, Chapter 16 (2006)",
+      "url": "https://ocw.mit.edu/courses/12-090-introduction-to-fluid-motions-sediment-transport-and-current-generated-sedimentary-structures-fall-2006/b76e182106487208fe4e449ccd40400e_ch16.pdf",
+      "checked_claim": "物理24–25頁のHCSの振動流・複合流、成因の多様性と反砂堆例を確認。単一成因の絶対指標とはしない。"
+    },
+    {
+      "key": "sed_walther_oregon",
+      "title": "Stratigraphy and Sequence Stratigraphy: Week 8",
+      "url": "https://pages.uoregon.edu/rdorsey/geo334/334lect8.html",
+      "checked_claim": "本文47行を確認。整合累重内のWalther、相対海水準と供給の競合、上昇中の通常海退、堆積シーケンスの境界を確認。"
+    },
+    {
+      "key": "sed_houston_structures",
+      "title": "The Story of Earth: Sedimentary Structures (2023)",
+      "url": "https://uhlibraries.pressbooks.pub/thestoryofearthv2/chapter/chapter-4-sedimentary-structures2e/",
+      "checked_claim": "4.2の移動リップル・斜交・級化・流痕・荷重痕と上下判定、4.4の生物擾乱を確認。画像は教材へ転載しない。"
+    },
+    {
+      "key": "sed_soft_deformation",
+      "title": "Soft-sediment deformation structures: Upper Triassic Ordos Basin (2020)",
+      "url": "https://experts.illinois.edu/en/publications/soft-sediment-deformation-structures-as-indicators-of-tectono-vol/",
+      "checked_claim": "著者機関掲載の論文抄録のみ確認。火炎・荷重痕、未固結層の液状化・流動化・過荷重の関与を確認。全文取得・全成因照合ではない。"
+    },
+    {
+      "key": "sed_plumose_michigan",
+      "title": "Joints and Veins: Plumose Structure",
+      "url": "https://psgt.earth.lsa.umich.edu/chapter/4/joints.html?zoom_highlight=row",
+      "checked_claim": "羽毛状構造の節理起点・ハックル・停止線と割れ目伝播の節を本文確認。堆積面や上下指標と混同しない。"
+    },
+    {
+      "key": "sed_gsj_ec2011",
+      "title": "東京低地と中川低地の沖積層堆積物で作成した懸濁液の水素イオン濃度指数及び電気伝導度 (2011)",
+      "url": "https://www.gsj.jp/data/bulletin/62_01_full.pdf",
+      "checked_claim": "物理88頁（印刷86頁）を実見。黄鉄鉱酸化・乾燥処理・ECの環境指標利用と単独識別の限界を確認。全116頁通読ではない。"
+    },
+    {
+      "key": "sed_xrf_jaea",
+      "title": "ATOMICA: 蛍光X線分析の原理と応用 (2009)",
+      "url": "https://atomica.jaea.go.jp/data/detail/dat_detail_08-04-01-26.html",
+      "checked_claim": "概要と原理節の蛍光特性X線による元素の定性・定量、非破壊分析を確認。内部堆積構造の画像観察と区別。"
+    },
+    {
+      "key": "sed_sem_shimane",
+      "title": "地学試料の電子顕微鏡的観察（その1）：石英砂粒の表面構造 (1974)",
+      "url": "https://ir.lib.shimane-u.ac.jp/3447",
+      "checked_claim": "機関リポジトリ抄録の水成・風成砂の微細表面と溶食の区別を確認。本文PDF全6頁は未通読、SEMで単一履歴を一意決定するとはしない。"
+    },
+    {
+      "key": "strat_pollen_tokushima",
+      "title": "電気伝導度および花粉化石分析に基づく徳島平野・板東観測井コアの海成層の層序対比 (2021)",
+      "url": "https://www.jstage.jst.go.jp/article/geosocabst/2021/0/2021_326/_article/-char/ja/",
+      "checked_claim": "学会要旨の方法・結果を通読。海成層の花粉化石組成による対比と古地磁気の併用を確認。仮説年代を確定値へ変更しない。"
+    },
+    {
+      "key": "strat_gsj_tephra2013",
+      "title": "栃木−茨城地域における過去約30万年間のテフラの再記載と定量化 (2013)",
+      "url": "https://www.gsj.jp/data/bulletin/64_09_full.pdf",
+      "checked_claim": "物理41頁の岩種・層厚・粒径を使う対比訂正と屈折率の併用を文字層で確認。全巻通読ではない。"
+    },
+    {
+      "key": "strat_gsj_atsumi",
+      "title": "豊橋及び田原地域の地質：テフラ層序と対比",
+      "url": "https://cdn.gsj.jp/ld/zfk/zfkdoc/1143/1143.html",
+      "checked_claim": "2.5と7.7の中期更新世の海進泥層内テフラとMIS11・9対比を確認。局地/水域/古い地層を一律除外できない。"
+    },
+    {
+      "key": "strat_iu_unconformity",
+      "title": "Unconformities",
+      "url": "https://geol105b.sitehost.iu.edu/images/gaia_chapter_6/unconformities.htm",
+      "checked_claim": "検索取得された一次機関本文抜粋で侵食・非堆積と三分類を確認。ブラウズ本頁・curlはSSL名不一致で取得できず、全頁の通読とはしない。"
+    },
+    {
+      "key": "sed_tsunami_fujino",
+      "title": "陸上津波堆積物の多様な粒度，層厚，堆積構造 (2012)",
+      "url": "https://www.jstage.jst.go.jp/article/jssj/71/2/71_102/_article/-char/ja",
+      "checked_claim": "学会抄録全文を確認。塊状・葉理・正逆級化・複数ユニットの多様性と複数指標による認定を確認。"
+    },
+    {
+      "key": "sed_tsunami_usgs",
+      "title": "Identification of tsunami deposits in the geologic record (2010)",
+      "url": "https://pubs.usgs.gov/of/2010/1239/of2010-1239.pdf",
+      "checked_claim": "要旨及び堆積構造節を確認。近年のデータ集では構造が稀との記述があり「常に複雑」と一般化できない。全研究の単純/複雑頻度集計ではない。"
+    },
+    {
+      "key": "sed_tsunami_2002",
+      "title": "津波堆積物 (2002)",
+      "url": "https://www.jstage.jst.go.jp/article/agcjchikyukagaku/56/3/56_KJ00004409827/_pdf",
+      "checked_claim": "物理1–2頁を実見。遡上/戻り流れの構造・海生遺骸・保存、隕石衝突及びストレッガー津波報告を確認。火山起源堆積物の個別報告は未確認。"
+    },
+    {
+      "key": "sed_tsunami_gsj_survey",
+      "title": "津波堆積物データベース：調査方法",
+      "url": "https://gbank.gsj.jp/tsunami_deposit_db/tsunami/survey.html",
+      "checked_claim": "本文の湿地・堤間低地での保存、微化石・化学・分布・構造の複数判定を確認。岩礁の報告を不可能とはしない。"
+    },
+    {
+      "key": "volc_usgs_merapi",
+      "title": "Nuées ardentes of 22 November 1994 at Merapi volcano (2000)",
+      "url": "https://www.usgs.gov/publications/nuees-ardentes-22-november-1994-merapi-volcano-java-indonesia",
+      "checked_claim": "USGS掲載論文抄録全文を確認。ドーム崩落起源、谷埋積と希薄サージの分岐・非単純分布を確認。"
+    },
+    {
+      "key": "volc_usgs_msh_flow",
+      "title": "Mount St. Helens: Pyroclastic Flows",
+      "url": "https://pubs.usgs.gov/gip/msh/pyroclastic.html",
+      "checked_claim": "取得された一次本文抜粋の扇状・舌状・ローブ状分布を確認。頁open失敗のため全頁通読とはしない。"
+    },
+    {
+      "key": "volc_usgs_tephra",
+      "title": "Pre-1980 Tephra-Fall Deposits: Terminology",
+      "url": "https://pubs.usgs.gov/pp/p1563/introduction.html",
+      "checked_claim": "取得された一次本文抜粋でテフラの広義/狭義と本報告の降下限定を確認。頁open失敗、用語の範囲を全資料で一律としない。"
+    }
+  ],
+  "local_files": [
+    {
+      "file": "extracted/reference_checks/S7_029/S7_029_EC.pdf",
+      "sha256": "6e0958583c4a886e1cf427f2bc939de0ba466f30479e7dad5e908f73b82caee9"
+    },
+    {
+      "file": "extracted/reference_checks/S7_029/S7_029_MIT_env.pdf",
+      "sha256": "80dd44c84d61921c22f38455298e9819741a8d56e3a2a09d0b056fe1c87c8572"
+    },
+    {
+      "file": "extracted/reference_checks/S7_029/S7_029_MIT_cross.pdf",
+      "sha256": "b6377cddb77c602608bc2f8838aab32c0fa869e00a212faaf2013b23de8c6c09"
+    },
+    {
+      "file": "extracted/reference_checks/S7_029/S7_029_tsunami.pdf",
+      "sha256": "3dbb8da50de187a898a97a12f3b05daf80e5a7903d174dae9da8c7721d80c127"
+    },
+    {
+      "file": "extracted/reference_checks/S7_029/S7_029_tsunami_2002.pdf",
+      "sha256": "a8e5e7cf8ed4e3ef32b6b899a10f9dcbb2cdae48e9f13cb1ba7be11ee0d58eea"
+    },
+    {
+      "file": "extracted/reference_checks/S7_029/S7_029_tephra.pdf",
+      "sha256": "36adab7463582cc45a195fbaa1e524186b973487bed0d6907d140a9912c6fba7"
+    },
+    {
+      "file": "extracted/reference_checks/S7_029/S7_029_EC_checked.png",
+      "sha256": "bd52efb336a0c5f533e79f7a3ab8ebdf8b24d05a567f96ad0ac7cc6125c449e2"
+    },
+    {
+      "file": "extracted/reference_checks/S7_029/S7_029_tsunami2002_1.png",
+      "sha256": "974eca40d6194820eb814090c9f0b00ae759f19c4663e84cb4a99ae45778eec0"
+    },
+    {
+      "file": "extracted/reference_checks/S7_029/S7_029_tsunami2002_2.png",
+      "sha256": "46aa9b54cd45ef5a5ee741a0059fc03f2b19622c857a320b26177db695308c9b"
+    }
+  ],
+  "limitations": [
+    "検索取得の一次本文抜粋・抄録・選択頁の確認範囲を個別に記録。全文通読や用語の全普遍性を確認したとはしない。",
+    "津波火山起源堆積物、PL型火砕流用語、逆級化の非一意性、HCSの多成因は個別疑義へ残す。"
+  ]
+}

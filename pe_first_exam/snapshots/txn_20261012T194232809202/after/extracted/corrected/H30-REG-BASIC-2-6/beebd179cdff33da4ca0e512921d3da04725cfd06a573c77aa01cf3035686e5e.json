@@ -1,0 +1,46 @@
+{
+  "stem": "三集合の包除原理から和集合の補集合の要素数を求める。",
+  "conditions": {
+    "数値": "|U|900、|A|300、|B|180、|C|128、|A∩B|60、|A∩C|43、|B∩C|26、三重9。",
+    "対象": "上線はA∪B∪C全体の補集合である。"
+  },
+  "choices": {
+    "1": {
+      "value": "385",
+      "verdict": "不適切",
+      "reason": "与えた交差数の包除と全体900からの差引きに合わない。"
+    },
+    "2": {
+      "value": "412",
+      "verdict": "適切",
+      "reason": "和集合488の補集合は900−488=412である。"
+    },
+    "3": {
+      "value": "420",
+      "verdict": "不適切",
+      "reason": "三重交差等の補正を正しく扱った412とは異なる。"
+    },
+    "4": {
+      "value": "480",
+      "verdict": "不適切",
+      "reason": "三重交差の加算を落とした等の誤りであり412ではない。"
+    },
+    "5": {
+      "value": "488",
+      "verdict": "不適切",
+      "reason": "488は和集合の数であり問う補集合ではない。"
+    }
+  },
+  "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/basic/page_010.png",
+    "extracted/pages/H30/basic/page_011.png"
+  ],
+  "question_id": "H30-REG-BASIC-2-6",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "10",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "f8fe0fa027267e5c892d7d276451c0f6b81cafbb58e152c6d84e4703e1071720",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

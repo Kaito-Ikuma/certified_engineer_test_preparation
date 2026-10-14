@@ -1,0 +1,19 @@
+{
+  "status": "committed",
+  "time": "2026-10-14T13:02:01+09:00",
+  "paths": [
+    "generated/questions/aptitude/02_engineering_ethics.tex",
+    "generated/questions/aptitude/04_safety_risk.tex",
+    "generated/questions/aptitude/07_science_technology_society.tex"
+  ],
+  "existed": {
+    "generated/questions/aptitude/02_engineering_ethics.tex": true,
+    "generated/questions/aptitude/04_safety_risk.tex": true,
+    "generated/questions/aptitude/07_science_technology_society.tex": true
+  },
+  "sha256": {
+    "generated/questions/aptitude/02_engineering_ethics.tex": "4c3f6dc1777a661a39e34b30529b1f2f88e66ada1139adfb7430b15a5d225940",
+    "generated/questions/aptitude/04_safety_risk.tex": "7bae354bfb5549ab7e7f146facba0ac9ce4555fb9b1fee560ab4829e405571bb",
+    "generated/questions/aptitude/07_science_technology_society.tex": "01bff608d02cfaadc465fc30010fc6ccbc49db10742503cdaef8a98328c850ce"
+  }
+}

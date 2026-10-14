@@ -1,0 +1,45 @@
+{
+  "stem": "HPLCのPerformanceとPrecisionを区別する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "HPLCのPerformanceとPrecisionを区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "CARSの正式名",
+      "verdict": "通常の条件で適切",
+      "reason": "Coherent Anti-Stokes Raman Spectroscopy。コヒーレントな反Stokes Raman信号を観測する。"
+    },
+    "2": {
+      "value": "EPRの正式名",
+      "verdict": "通常の条件で適切",
+      "reason": "Electron Paramagnetic Resonance。電子常磁性共鳴でESRと同じ対象を扱う。"
+    },
+    "3": {
+      "value": "ESCAの正式名",
+      "verdict": "通常の条件で適切",
+      "reason": "Electron Spectroscopy for Chemical Analysis。XPSによる元素・化学状態の分析に用いられる。"
+    },
+    "4": {
+      "value": "HPLCをHigh Precisionとする",
+      "verdict": "不適切",
+      "reason": "現在の通常名はHigh Performance Liquid Chromatography。高精度のPrecisionではない。"
+    },
+    "5": {
+      "value": "MALDIの正式名",
+      "verdict": "通常の条件で適切",
+      "reason": "Matrix-Assisted Laser Desorption/Ionization。マトリックス支援レーザー脱離イオン化を表す。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_004.png"
+  ],
+  "question_id": "R06-REG-APPLIED-14",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "2c6a77e5265da8f958e6a47322b73e23219abd32c330f4b454f8fe20c32f8127",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,210 @@
+{
+  "time": "2026-10-12T14:11:55.583276+09:00",
+  "official_consulted": false,
+  "original_images_reviewed": 21,
+  "records": [
+    {
+      "question_id": "H23-REG-APPLIED-30",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "source_page": "10",
+      "answer_initial": "2",
+      "reason": "IPは分極・時間周波数応答、他配置とlinear filterはDC抵抗率に対応。ただしIPでも抵抗率測定するため最も関係ないの比較を留保。"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-31",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "source_page": "10",
+      "answer_initial": "2",
+      "reason": "ダウンホールは孔壁に固定し水位より上も測る。電極・密度は通常条件。"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-20",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "source_page": "7",
+      "answer_initial": "5",
+      "reason": "ループ・ループは電磁誘導、四つは抵抗率電極測定。"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-21",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "source_page": "7",
+      "answer_initial": "3",
+      "reason": "深度増加で周波数減衰・分解能低下が通常。全装置の深度単調性の絶対則にはしない。"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-22",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "source_page": "7",
+      "answer_initial": "2",
+      "reason": "ノルマルは電気抵抗率検層であり速度検層ではない。"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-33",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "source_page": "12",
+      "answer_initial": "5",
+      "reason": "急峻凹凸地形を浅層反射の典型適用条件とする説明が疑わしい。ただし実施可能性の排除ではない。"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-34",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "source_page": "12",
+      "answer_initial": "3",
+      "reason": "四電極は測定電極を高入力抵抗にし接地抵抗電圧降下を軽減。"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-35",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "source_page": "13",
+      "answer_initial": "2",
+      "reason": "CSAMT低周波は近接場へ移り距離に依存する。TDEMでも配置影響は留保。"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-19",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "source_page": "8",
+      "answer_initial": "5",
+      "reason": "P速度は含水・飽和・有効弾性係数に依存。"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-22",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "source_page": "9",
+      "answer_initial": "3",
+      "reason": "δ=√(2ρ/ωμ)。高ρの大δが同距離の近接場を生みやすく低ρは逆。Archie条件も粘土表面伝導を留保。"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-23",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "source_page": "10",
+      "answer_initial": "4",
+      "reason": "R=ρL/AよりρはΩm、Ωm3は誤り。"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-18",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "source_page": "6",
+      "answer_initial": "4",
+      "reason": "海水はイオン伝導で抵抗率を下げる。風化裂隙の水分前提を留保。"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-19",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "source_page": "7",
+      "answer_initial": "1",
+      "reason": "NMOは反射波走時補正。他は電磁応答・共振。"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-22",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "source_page": "9",
+      "answer_initial": "1",
+      "reason": "典型的硫化鉱体SPは負電位異常。異常符号の基準と機構条件は留保。"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-23",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "source_page": "9",
+      "answer_initial": "3",
+      "reason": "式自体はE/Hと透磁率μで成立するが、原典は真空の誘電率をμと誤定義。"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-32",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "source_page": "11",
+      "answer_initial": "4",
+      "reason": "孔隙水高抵抗では粒子表面伝導等が無視できなくなりArchie精度保証が疑わしい。天然淡水clean sand例は留保。"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-33",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "source_page": "11",
+      "answer_initial": "3",
+      "reason": "錘ばねは相対重力計、絶対は自由落下等。"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-32",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "source_page": "11",
+      "answer_initial": "5",
+      "reason": "表面波は主にVS、Pへの影響は非ゼロ。"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-33",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "source_page": "12",
+      "answer_initial": "3",
+      "reason": "β散乱と粒子密度が誤り。通常はγCompton・bulk density。"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-27",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "source_page": "9",
+      "answer_initial": "3",
+      "reason": "圧密降伏は典型的土の圧密。他は岩盤強度又は間接評価。RQDと強度の非一意性留保。"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-33",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "source_page": "12",
+      "answer_initial": "3",
+      "reason": "GPRは通常MHz、10kHzではない。他の比例・力学相関を絶対則にしない。"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-34",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "source_page": "12",
+      "answer_initial": "4",
+      "reason": "周波数領域は位相/振幅、過渡時間応答ではない。"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-32",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "source_page": "12",
+      "answer_initial": "4",
+      "reason": "SPは主に自然電位分布を観測し分布や流れを考察。深さ直接保証しない。水平探査の特定深度も感度分布の近似として留保。"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-35",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "source_page": "13",
+      "answer_initial": "4",
+      "reason": "ε単位F/mでありF mではない。比は真空基準、空気近似。"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-33",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "source_page": "12",
+      "answer_initial": "3",
+      "reason": "高fは細かい分解・浅い深度の傾向であり逆の説明が誤り。"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-34",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "source_page": "12",
+      "answer_initial": "4",
+      "reason": "通常の電極抵抗率検層には孔内水による導電接触が必要。"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-35",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "source_page": "13",
+      "answer_initial": "2",
+      "reason": "Rayleighは主にVS推定でありP分布へ置換誤り。"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-35",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "source_page": "12",
+      "answer_initial": "2",
+      "reason": "高fは細かい分解・浅い深度の傾向。分解能という能力と分離距離を区別。"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-34",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "source_page": "13",
+      "answer_initial": "4",
+      "reason": "βRayleighではなくγComptonからbulk density。"
+    }
+  ]
+}

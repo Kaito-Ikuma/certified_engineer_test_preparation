@@ -1,0 +1,46 @@
+{
+  "stem": "2スピーカの正面での強め合いと、片方の正面での極小から音の振動数を求める。",
+  "conditions": {
+    "配置": "スピーカ間隔2 m、正面の聴取線まで3.3 m。",
+    "観測": "中央は強め合い、片方の正面で最小。音速340 m/s。",
+    "次数": "初回極小という明示なし。候補範囲も照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "280 Hz",
+      "verdict": "不適切",
+      "reason": "最初の逆位相による極小の振動数約304.2 Hzから、正答候補より離れている。次の奇数次数は候補範囲外。"
+    },
+    "2": {
+      "value": "310 Hz",
+      "verdict": "最適",
+      "reason": "道のり差約0.5588 mが半波長となる振動数約304.2 Hzに最も近い。"
+    },
+    "3": {
+      "value": "370 Hz",
+      "verdict": "不適切",
+      "reason": "最初の逆位相による極小の振動数約304.2 Hzから、正答候補より離れている。次の奇数次数は候補範囲外。"
+    },
+    "4": {
+      "value": "430 Hz",
+      "verdict": "不適切",
+      "reason": "最初の逆位相による極小の振動数約304.2 Hzから、正答候補より離れている。次の奇数次数は候補範囲外。"
+    },
+    "5": {
+      "value": "490 Hz",
+      "verdict": "不適切",
+      "reason": "最初の逆位相による極小の振動数約304.2 Hzから、正答候補より離れている。次の奇数次数は候補範囲外。"
+    }
+  },
+  "figures": "原典の条件・数式・単位・全5肢を実画像確認。原典の配置図又は5候補表を照合し、独自説明で位置と符号を区別。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_002.png"
+  ],
+  "question_id": "R01-REG-APPLIED-05",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "bdb485412b3c30475f7a6c1a56a77baaac4c5c127dcd377c96d0432001bb7b4f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "水の三重点を既知として、富士山頂の大気圧下の沸点を求めるための理論式を選ぶ。",
+  "conditions": {
+    "既知のもの": "水の三重点の温度と蒸気圧、山頂の大気圧。",
+    "求める対象": "純水の液気共存温度。数値の沸点を答える問題ではない。"
+  },
+  "choices": {
+    "1": {
+      "value": "ボルンの式",
+      "verdict": "条件に不一致",
+      "reason": "イオンの静電的な溶媒和などを扱う式で、直接の液気共存曲線ではない。"
+    },
+    "2": {
+      "value": "クラウジウス＝クラペイロンの式",
+      "verdict": "条件に一致",
+      "reason": "液気共存の圧力と温度の関係を与える。"
+    },
+    "3": {
+      "value": "ファントホッフの式",
+      "verdict": "条件に不一致",
+      "reason": "平衡定数の温度依存を扱うが、この液気平衡を直接記す名称としてはクラウジウス＝クラペイロンが適切である。"
+    },
+    "4": {
+      "value": "プランクの式",
+      "verdict": "条件に不一致",
+      "reason": "黒体放射のスペクトルを扱う。"
+    },
+    "5": {
+      "value": "レイリー＝ジーンズの式",
+      "verdict": "条件に不一致",
+      "reason": "黒体放射の古典的な低周波近似を扱う。"
+    }
+  },
+  "figures": "正誤方向、全条件・数値・単位、候補5肢を原典画像で確認。図なし。組合せ問題では表の全欄を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_004.png"
+  ],
+  "question_id": "R04-REG-APPLIED-11",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "a1156d75f7e0992cb867642632676516ebc0488fd2db709f798c76efd91c423a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

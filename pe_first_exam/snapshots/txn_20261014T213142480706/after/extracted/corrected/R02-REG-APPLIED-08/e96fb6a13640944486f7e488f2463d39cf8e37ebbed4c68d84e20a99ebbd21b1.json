@@ -1,0 +1,44 @@
+{
+  "stem": "金属の強化機構を識別し、焼入れに関する変態名の誤りを見抜く。",
+  "conditions": {
+    "原典": "指定頁を実画像で再確認。"
+  },
+  "choices": {
+    "1": {
+      "value": "加工硬化",
+      "verdict": "記述と範囲を確認",
+      "reason": "塑性変形に伴う転位等により変形抵抗が増す。"
+    },
+    "2": {
+      "value": "固溶強化",
+      "verdict": "記述と範囲を確認",
+      "reason": "溶質原子が格子・転位へ影響し強化する。"
+    },
+    "3": {
+      "value": "析出強化",
+      "verdict": "記述と範囲を確認",
+      "reason": "固溶限の温度依存を利用した析出が転位運動を妨げる。"
+    },
+    "4": {
+      "value": "結晶粒微細化",
+      "verdict": "記述と範囲を確認",
+      "reason": "粒界が転位の移動を妨げ通常降伏強さが増す。極端な粒径や温度まで無限定にしない。"
+    },
+    "5": {
+      "value": "焼入れはバウシンガー変態",
+      "verdict": "不適切・独立選択",
+      "reason": "焼入れ硬化はマルテンサイト変態。Bauschingerは逆方向の降伏挙動に関する効果で焼入れ変態名ではない。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_003.png"
+  ],
+  "question_id": "R02-REG-APPLIED-08",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "20ac6d00d8dfd1e66ac577ca588febe66a8ab373338bd17bb784c02ee9aee5be",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,46 @@
+{
+  "stem": "IPv4とIPv6のビット長から表現可能なアドレス総数の倍率を求める。",
+  "conditions": {
+    "判断対象": "nビットの全列2のn乗と、指数の差による状態数の比。",
+    "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+  },
+  "choices": {
+    "1": {
+      "value": "2の8乗倍",
+      "verdict": "不適切",
+      "reason": "IPv6とIPv4のビット長の差は96であり、この指数ではない。"
+    },
+    "2": {
+      "value": "2の16乗倍",
+      "verdict": "不適切",
+      "reason": "IPv6とIPv4のビット長の差は96であり、この指数ではない。"
+    },
+    "3": {
+      "value": "2の32乗倍",
+      "verdict": "不適切",
+      "reason": "IPv6とIPv4のビット長の差は96であり、この指数ではない。"
+    },
+    "4": {
+      "value": "2の64乗倍",
+      "verdict": "不適切",
+      "reason": "IPv6とIPv4のビット長の差は96であり、この指数ではない。"
+    },
+    "5": {
+      "value": "2の96乗倍",
+      "verdict": "適切",
+      "reason": "128−32=96ビットの差に対応する。"
+    }
+  },
+  "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/basic/page_011.png",
+    "extracted/pages/H28/basic/page_012.png"
+  ],
+  "question_id": "H28-REG-BASIC-2-6",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "11",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "a447e76bbc6f84bd1ddba1d107b3e11a993ff2a85c4b7e599e627b774801c564",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

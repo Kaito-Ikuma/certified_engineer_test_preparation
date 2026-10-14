@@ -1,0 +1,45 @@
+{
+  "stem": "周期と族を分けて元素の位置を比較する。",
+  "conditions": {
+    "判断対象": "周期と族を分けて元素の位置を比較する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "Mg/Siは第3周期",
+      "verdict": "選ばない候補",
+      "reason": "Mg12/Si14は第3。"
+    },
+    "2": {
+      "value": "In/Bは同族",
+      "verdict": "選ばない候補",
+      "reason": "In49/B5は13族。"
+    },
+    "3": {
+      "value": "Nb/Tcは第5周期",
+      "verdict": "選ばない候補",
+      "reason": "Nb41/Tc43は第5。"
+    },
+    "4": {
+      "value": "Au/Cuは同族",
+      "verdict": "選ばない候補",
+      "reason": "Au79/Cu29は11族。"
+    },
+    "5": {
+      "value": "Mo/Irは第6周期",
+      "verdict": "選ぶ候補",
+      "reason": "Mo42は第5、Ir77は第6。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_004.png"
+  ],
+  "question_id": "R06-REG-APPLIED-13",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "4bdc5fbb415cd2bb605735a923207c7b7e0162ce8475c5359cbb3084c53e7c88",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

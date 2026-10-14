@@ -1,0 +1,81 @@
+{
+  "time": "2026-10-11T23:50:37.679236+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_029_sediment_stratigraphy",
+  "question_ids": [
+    "H23-REG-APPLIED-25",
+    "H29-REG-APPLIED-25",
+    "R05-REG-APPLIED-30",
+    "H23-REG-APPLIED-35",
+    "H24-REG-APPLIED-29",
+    "H28-REG-APPLIED-34",
+    "H30-REG-APPLIED-25",
+    "R04-REG-APPLIED-28",
+    "R07-REG-APPLIED-27",
+    "R01-REG-APPLIED-25",
+    "R01-REG-APPLIED-28",
+    "R06-REG-APPLIED-30",
+    "R02-REG-APPLIED-29",
+    "R02-REG-APPLIED-31",
+    "R03-REG-APPLIED-30",
+    "R05-REG-APPLIED-31",
+    "R06-REG-APPLIED-31",
+    "R07-REG-APPLIED-28"
+  ],
+  "source_images": 15,
+  "initial_independent_matches": 18,
+  "corrected_verified": 8,
+  "partial": 10,
+  "related_pairs_added": 8,
+  "related_pairs_total": 176,
+  "primary_references_added": 21,
+  "concepts_added": 10,
+  "concept_total": 211,
+  "canonical_counts": {
+    "recorded_at": "2026-10-11T23:50:37.679236+09:00",
+    "registered": 1270,
+    "classification_verified": 588,
+    "summary_verified": 554,
+    "corrected_verified": 444,
+    "corrected_partial": 110,
+    "solution_drafts": 554,
+    "solution_verified": 0,
+    "manual_required": 826,
+    "subject_drafts": {
+      "BASIC": 180,
+      "APT": 116,
+      "APPLIED": 258
+    }
+  },
+  "theory_note": "堆積17節・層序10節・火山4節。輸送と保存・ワルター・観察と環境推定・時間間隙と対比を体系化。",
+  "relation_revision": "初回variant2件を監査で検出。原入力を保存してrevision1を作りnear_repeatへ変更。公開前種別拒否と無変更回帰を追加。extracted/logs/S7_029_relation_revision.json。",
+  "pdf": {
+    "pages": 757,
+    "bytes": 3776023,
+    "visual_review_pages": [
+      534,
+      537,
+      635,
+      636,
+      638,
+      639,
+      647,
+      650,
+      653,
+      654,
+      657,
+      755,
+      756
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draft成功。再生成後初期監査・1270ラベル監査成功。25回帰成功（23.268秒）。LuaLaTeX成功。13実画像で本文・式・疑義・参考文献を確認。",
+  "risks": [
+    "10部分校正。堆積相の典型と例外、HCS多成因、津波構造の頻度と個別起源報告、火砕流類型を区別。",
+    "Astra未査読、716問未執筆、最終監査未実装。"
+  ],
+  "next": "S7_030品質・統計16問。14原典画像を確認、公式前初回解答保存後16一致。全1270問と全章・頻出分析まで継続。"
+}

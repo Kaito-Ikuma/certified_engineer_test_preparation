@@ -1,0 +1,47 @@
+{
+  "stem": "全100万件中の2語の出現数から、一方のみを含む件数の可能範囲を求める。",
+  "conditions": {
+    "全集合": "100万件",
+    "L": "論理を含む65万件",
+    "I": "情報を含む55万件",
+    "求める量": "Lを含みIを含まない件数k。"
+  },
+  "choices": {
+    "1": {
+      "value": "0〜35万",
+      "verdict": "条件に一致しない候補",
+      "reason": "重なりは最大55万なのでkの最小値は10万であり、0まで許す範囲は不正確である。"
+    },
+    "2": {
+      "value": "0〜45万",
+      "verdict": "条件に一致しない候補",
+      "reason": "最大値45万は合うが、最小値は10万である。"
+    },
+    "3": {
+      "value": "0〜65万",
+      "verdict": "条件に一致しない候補",
+      "reason": "最小値も最大値も実際の可能範囲より広い。"
+    },
+    "4": {
+      "value": "10〜45万",
+      "verdict": "条件に一致する候補",
+      "reason": "重なり20〜55万に対して65万から差し引いた範囲10〜45万に一致する。"
+    },
+    "5": {
+      "value": "10〜65万",
+      "verdict": "条件に一致しない候補",
+      "reason": "最小値は合うが、重なりは少なくとも20万あり、最大値は45万となる。"
+    }
+  },
+  "figures": "問題幹・数値・記号・5肢を画像確認。図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/basic/page_008.png"
+  ],
+  "question_id": "H25-REG-BASIC-2-4",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "176b2afb8329f123dd41b711767a250919edf0e64988e99ef3527b00c0e97123",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

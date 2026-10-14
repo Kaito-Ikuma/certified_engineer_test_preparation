@@ -1,0 +1,46 @@
+{
+  "stem": "スタック操作の途中状態を追って最後のPOPの戻り値を求める。",
+  "conditions": {
+    "判断対象": "後入れ先出し、PUSH/POPの状態と戻り値。",
+    "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+  },
+  "choices": {
+    "1": {
+      "value": "1",
+      "verdict": "不適切",
+      "reason": "1は最後にスタックへ残る底の値である。"
+    },
+    "2": {
+      "value": "2",
+      "verdict": "適切",
+      "reason": "取り出し列4,3,5,2の最後である。"
+    },
+    "3": {
+      "value": "3",
+      "verdict": "不適切",
+      "reason": "2回目のPOPで既に取り出されている。"
+    },
+    "4": {
+      "value": "4",
+      "verdict": "不適切",
+      "reason": "1回目のPOPの値である。"
+    },
+    "5": {
+      "value": "5",
+      "verdict": "不適切",
+      "reason": "最後から2回目のPOPの値である。"
+    }
+  },
+  "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_011.png",
+    "extracted/pages/R01/basic/page_012.png"
+  ],
+  "question_id": "R01-REG-BASIC-2-6",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "11",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "70cdc6cd8528bccdf82484caa6c617bfade75088519e2448d43adf63abf4ab9f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

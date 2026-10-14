@@ -1,0 +1,45 @@
+{
+  "stem": "各物理探査の観測量とP波速度の含水依存を比較する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "P波速度は弾性率と密度で決まり、飽和や孔隙流体は両者と接触状態を変え得る。"
+  },
+  "choices": {
+    "1": {
+      "value": "重力が密度・深度・形状を反映する",
+      "verdict": "適切",
+      "reason": "密度差の体積積分が重力へ寄与し、同じ密度でも深度と形状で観測異常が変わる。"
+    },
+    "2": {
+      "value": "通常の屈折法は地表でP波初動を測る",
+      "verdict": "条件付きで適切",
+      "reason": "地表から広い対象を調査しP初動を使う構成が一般的である。S波方式や隠れ層の限界もある。"
+    },
+    "3": {
+      "value": "ダウンホールは孔内速度測定方式",
+      "verdict": "適切",
+      "reason": "地表起振・孔内受振の走時を使う。"
+    },
+    "4": {
+      "value": "ガンマ線で深度方向の密度検層",
+      "verdict": "適切",
+      "reason": "線源と受信器を降下させ孔壁周囲の校正かさ密度を測る。"
+    },
+    "5": {
+      "value": "P波速度は一般に含水比によらず不変",
+      "verdict": "不適切",
+      "reason": "孔隙流体による有効弾性率と密度・接触の変化があるため、含水依存を一般に除外できない。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "含水比・飽和度・間隙流体を区別し、P波速度の全材料での単調変化を主張しない。P波初動の利点は通常の方式に限定する。",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_008.png"
+  ],
+  "question_id": "H26-REG-APPLIED-19",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "e38d774076f3eaaa9ececfa2317f39ff96983c76aeb997776716e938fa4df7d5",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

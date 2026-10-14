@@ -1,0 +1,46 @@
+{
+  "stem": "リスク対話は情報の検証可能性も必要。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+    "時点": "平成27年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "ハザードとアウトレージの認知モデル",
+      "verdict": "条件内で適切",
+      "reason": "感情・公平性・信頼の要素を含む認知モデル。異単位の物理量を足す計算式ではない。"
+    },
+    "2": {
+      "value": "情報や決定権の非対称性を考慮",
+      "verdict": "条件内で適切",
+      "reason": "発信側と当事者の条件の違いを調べる。"
+    },
+    "3": {
+      "value": "統治者と当事者でリスクの視点が違う",
+      "verdict": "条件内で適切",
+      "reason": "集団の確率的管理と本人の一回の経験の双方を考える。"
+    },
+    "4": {
+      "value": "中立的な媒介者と専門家の役割",
+      "verdict": "条件内で適切",
+      "reason": "利害の異なる者の対話を支え、専門知識だけで価値判断を押しつけない。"
+    },
+    "5": {
+      "value": "検証可能性は不要",
+      "verdict": "不適切",
+      "reason": "不確かな情報ほど根拠を調べられることが重要。分かりやすさを理由に検証を捨てない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "参照PDFは2014年資料の案と検討資料を含む。原典の採用版全体との対照と簡潔さの条件は追加照合。認知モデルを普遍的な数値式にしない。",
+  "evidence": [
+    "extracted/pages/H27/aptitude/page_014.png",
+    "extracted/pages/H27/aptitude/page_015.png"
+  ],
+  "question_id": "H27-REG-APT-14",
+  "source_file": "sources/H27/aptitude.pdf",
+  "source_page": "14",
+  "source_sha256": "2965cecde9e4c31c06a94192bf7a750346fbf85d07d37943d58a3fa15d15ebeb",
+  "raw_text_sha256": "31c0afa66335ea7810278b7077ae536e7d5ab6b0f489fd499b0b27f31a0c4e12",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

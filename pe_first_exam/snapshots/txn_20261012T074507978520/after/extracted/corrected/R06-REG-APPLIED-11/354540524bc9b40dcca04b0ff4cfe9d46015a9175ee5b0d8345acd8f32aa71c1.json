@@ -1,0 +1,45 @@
+{
+  "stem": "コロイドの分散と分子・イオンの溶解を、乳濁液・光散乱・石けんで区別する。",
+  "conditions": {
+    "確認範囲": "問題幹、条件、否定、数値、単位、全5肢を原典画像で照合した。",
+    "成立条件": "最も関係が薄い用語の選択。石けんの会合は濃度・温度に依存し、通常の分子・イオンの溶液とコロイド分散を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "エマルション",
+      "verdict": "適切",
+      "reason": "互いに混ざりにくい液体の一方が微小な液滴として他方へ分散した乳濁液である。"
+    },
+    "2": {
+      "value": "溶解",
+      "verdict": "条件付きで適切",
+      "reason": "通常の小分子・イオンの溶解はコロイドの粒子分散とは区別する。高分子や会合体を含む系まで語だけで排除できない。"
+    },
+    "3": {
+      "value": "チンダル現象",
+      "verdict": "適切",
+      "reason": "分散粒子が光を散乱し、光の経路が見える現象である。"
+    },
+    "4": {
+      "value": "マヨネーズ",
+      "verdict": "適切",
+      "reason": "油滴が水性の連続相に分散し、卵黄成分などが乳化を安定化する例である。"
+    },
+    "5": {
+      "value": "せっけん水",
+      "verdict": "条件付きで適切",
+      "reason": "石けんは親水部と疎水部を持ち、適切な温度・濃度でミセル等の会合体を作る。全濃度の水溶液が同じコロイド状態という意味ではない。"
+    }
+  },
+  "figures": "図なし。全5候補は文字又は温度値である。",
+  "ambiguity": "溶解という語の範囲、石けんの濃度・温度・ミセル形成条件を原典は限定しない。公式2と初回2を保持し、全称の説明はしない。",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_004.png"
+  ],
+  "question_id": "R06-REG-APPLIED-11",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "3db828fd529ae338c068d27b15dc95cc6168837f4d66ef27e8f1e6b3fde6d1c5",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

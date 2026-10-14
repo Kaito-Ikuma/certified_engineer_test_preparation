@@ -1,0 +1,45 @@
+{
+  "stem": "HFの弱酸性と水素結合・腐食性を比較する。",
+  "conditions": {
+    "判断対象": "HFの弱酸性と水素結合・腐食性を比較する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "HF水溶液は毒性の強い強酸",
+      "verdict": "選ぶ候補",
+      "reason": "毒性は強いが通常希薄水溶液は弱酸で酸強度の語が誤り。"
+    },
+    "2": {
+      "value": "液体HFの高い誘電率",
+      "verdict": "選ばない候補",
+      "reason": "分極と液体の配向応答。値は温度等に依存。"
+    },
+    "3": {
+      "value": "他HXより高沸点",
+      "verdict": "選ばない候補",
+      "reason": "分子間水素結合が異常な高沸点を説明。"
+    },
+    "4": {
+      "value": "空気中で発煙",
+      "verdict": "選ばない候補",
+      "reason": "HF原液・濃厚水溶液で発煙。全希薄溶液とはしない。"
+    },
+    "5": {
+      "value": "SiO2/ガラスを腐食、Au/Ptを侵さない",
+      "verdict": "選ばない候補",
+      "reason": "ガラス除去性と貴金属の通常耐性。全混合条件保証ではない。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "誘電率の全温度依存・Au/Ptの全混合物耐性は未照合。原液HFと水溶液濃度の条件を保持。",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_005.png"
+  ],
+  "question_id": "R03-REG-APPLIED-13",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "455cd38ef472c3e6929f7662aaa41687b95587f7241beaa96b159e9460807105",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

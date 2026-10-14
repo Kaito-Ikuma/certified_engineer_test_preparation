@@ -1,0 +1,49 @@
+{
+  "stem": "2006年の科学者行動規範から、社会への説明を理由としたデータ改変の不適切さを判断する。",
+  "conditions": {
+    "原典確認": "問題幹と各記述の主体・否定・全称・表の5候補を保存原典画像で確認。",
+    "制度時点": "H23年度の原典表現を保持。現行資料の条番号や仕様を過去へ補わない。",
+    "各記述の判断": {
+      "規範": "2006年声明の2・4・5・9・11項に照合。"
+    },
+    "前提": "科学者の自律性は社会の信頼に支えられ、正直な判断と厳格な記録を必要とする。分かりやすい表現と結果自体の改変は違う。"
+  },
+  "choices": {
+    "1": {
+      "value": "正直な行動と科学者相互の評価",
+      "verdict": "適切",
+      "reason": "規範2の正直・誠実と相互評価に対応する。"
+    },
+    "2": {
+      "value": "影響を中立・客観的に公開する",
+      "verdict": "適切",
+      "reason": "規範4の説明と公開に対応する。"
+    },
+    "3": {
+      "value": "理解を得るため多少のデータ修正を認める",
+      "verdict": "不適切",
+      "reason": "規範5の改ざん禁止と矛盾する。説明用の図の整理や誤記訂正を、結論を変える改ざんへ拡張しない。"
+    },
+    "4": {
+      "value": "批判に耳を傾け他者の成果を尊重する",
+      "verdict": "適切",
+      "reason": "規範9の他者との関係に対応する。"
+    },
+    "5": {
+      "value": "利益の衝突に注意して公共性へ配慮する",
+      "verdict": "適切",
+      "reason": "規範11の利益相反への対応に合う。"
+    }
+  },
+  "figures": "図なし。記号組合せ又は語句組合せ・個数を原典と照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/aptitude/page_003.png"
+  ],
+  "question_id": "H23-REG-APT-02",
+  "source_file": "sources/H23/aptitude.pdf",
+  "source_page": "3",
+  "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+  "raw_text_sha256": "dded4bd67c15deea14e4aec6ffcd723b66c1e0bd5bc2b25a8e0d3152b54b5ee2",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

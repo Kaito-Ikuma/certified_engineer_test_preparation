@@ -1,0 +1,45 @@
+{
+  "stem": "試し割りで素数を判定する流れ図の継続条件と割り切れ判定を決める。",
+  "conditions": {
+    "判断対象": "因子対の平方根境界、継続判定、割り切れの向き。",
+    "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+  },
+  "choices": {
+    "1": {
+      "value": "I≥√N・IがNで割り切れる",
+      "verdict": "不適切",
+      "reason": "継続範囲が逆で割り算の向きも逆である。"
+    },
+    "2": {
+      "value": "I≥√N・NがIで割り切れない",
+      "verdict": "不適切",
+      "reason": "範囲と非素数へ進む判定が逆である。"
+    },
+    "3": {
+      "value": "I≥√N・NがIで割り切れる",
+      "verdict": "不適切",
+      "reason": "範囲が逆でN=9等を正しく調べられない。"
+    },
+    "4": {
+      "value": "I≤√N・NがIで割り切れない",
+      "verdict": "不適切",
+      "reason": "割り切れない時に非素数と出すので逆である。"
+    },
+    "5": {
+      "value": "I≤√N・NがIで割り切れる",
+      "verdict": "適切",
+      "reason": "2から平方根まで調べ、割り切れるなら非素数である。"
+    }
+  },
+  "figures": "原典の木・道路接続・構文経路・矢印を画像確認。教材では独自の構造表現で説明し原図転載なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/basic/page_008.png"
+  ],
+  "question_id": "H29-REG-BASIC-2-3",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "be807b621e82b6d2761971b7812123d9950b1f5cc53745e5829591d1eef7f865",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

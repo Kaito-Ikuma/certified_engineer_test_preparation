@@ -1,0 +1,48 @@
+{
+  "stem": "4・100・400によるうるう年規則を、条件と動作の決定表へ対応させる。",
+  "conditions": {
+    "規則": "4で割り切れ100で割り切れない、又は400で割り切れる年がうるう年。",
+    "表条件3行": "4、100、400でそれぞれ割り切れるか。",
+    "4列": "(N,−,−)、(Y,N,−)、(Y,Y,N)、(Y,Y,Y)。全候補の条件部は一致。",
+    "動作行": "うるう年／平年の排他的2行。候補値は表のうるう年実行をY、平年実行をNへ符号化したもの。",
+    "表記": "原典のX=実行、−=不実行。条件部の−は不要又は不可能。"
+  },
+  "choices": {
+    "1": {
+      "value": "4条件列でのうるう年判定：NYYY（Y=うるう年、N=平年）",
+      "verdict": "条件に一致しない候補",
+      "reason": "1900年は平年であるがうるう年としている。"
+    },
+    "2": {
+      "value": "4条件列でのうるう年判定：NNYY（Y=うるう年、N=平年）",
+      "verdict": "条件に一致しない候補",
+      "reason": "2024年はうるう年であるが平年としている。1900年は平年であるがうるう年としている。"
+    },
+    "3": {
+      "value": "4条件列でのうるう年判定：NYNY（Y=うるう年、N=平年）",
+      "verdict": "条件に一致する候補",
+      "reason": "4つの有効な条件列がすべて規則に一致する。"
+    },
+    "4": {
+      "value": "4条件列でのうるう年判定：NYNN（Y=うるう年、N=平年）",
+      "verdict": "条件に一致しない候補",
+      "reason": "2000年はうるう年であるが平年としている。"
+    },
+    "5": {
+      "value": "4条件列でのうるう年判定：NNNY（Y=うるう年、N=平年）",
+      "verdict": "条件に一致しない候補",
+      "reason": "2024年はうるう年であるが平年としている。"
+    }
+  },
+  "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/basic/page_009.png"
+  ],
+  "question_id": "H29-REG-BASIC-2-4",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "9",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "68a3e1ae8a471e2f1a1bc5dec810772f80aa1c7cc30fba5b3ecd7f6a92c8be5d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

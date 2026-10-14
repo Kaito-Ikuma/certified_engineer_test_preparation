@@ -1,0 +1,45 @@
+{
+  "stem": "気体の低温凝縮又は吸着を利用する真空ポンプを識別する。",
+  "conditions": {
+    "確認範囲": "問題幹、条件、否定、数値、単位、全5肢を原典画像で照合した。",
+    "成立条件": "気体の凝縮又は吸着を利用する装置。拡散ポンプの油蒸気の循環と、排気対象を冷面へ捕捉する原理を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "クライオポンプ",
+      "verdict": "適切",
+      "reason": "低温面での凝縮と、活性炭等の吸着材への低温吸着で排気対象を捕捉する。"
+    },
+    "2": {
+      "value": "ターボ分子ポンプ",
+      "verdict": "不適切",
+      "reason": "高速回転翼が気体分子へ方向を持つ運動量を与えて排出する。"
+    },
+    "3": {
+      "value": "拡散ポンプ",
+      "verdict": "不適切",
+      "reason": "噴出する作動油等の蒸気が排気対象の気体を運ぶ。作動流体の凝縮があっても、対象気体を凝縮捕捉する主原理ではない。"
+    },
+    "4": {
+      "value": "ダイヤフラムポンプ",
+      "verdict": "不適切",
+      "reason": "膜の往復変形と弁で容積を変え、気体を吸入・排出する。"
+    },
+    "5": {
+      "value": "ルーツ型ポンプ",
+      "verdict": "不適切",
+      "reason": "互いにかみ合うロータで気体を吸入口から排気側へ移送する。"
+    }
+  },
+  "figures": "図なし。全5候補は文字又は温度値である。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_003.png"
+  ],
+  "question_id": "H30-REG-APPLIED-08",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "e4ac0cb9551faea2985da047622071f4a30966f6f9d3feee42d6d0d9d404dd34",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

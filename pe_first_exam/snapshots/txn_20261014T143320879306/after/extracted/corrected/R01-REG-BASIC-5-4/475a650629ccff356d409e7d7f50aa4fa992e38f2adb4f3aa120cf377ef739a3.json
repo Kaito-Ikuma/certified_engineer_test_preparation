@@ -1,0 +1,47 @@
+{
+  "stem": "非エネルギー利用を除いた炭素量からCO2へ。",
+  "conditions": {
+    "燃料PJ": "石炭5044、石油7831、天然ガス都市ガス4696。",
+    "非燃焼石油": "約1600PJ。",
+    "係数t-C/TJ": "石炭24、石油19、ガス14。",
+    "換算": "C12、CO2 44、PJ=1000TJ。"
+  },
+  "choices": {
+    "1": {
+      "value": "100Mt",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "300Mt",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "500Mt",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "1100Mt",
+      "verdict": "適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "5": {
+      "value": "1600Mt",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_021.png"
+  ],
+  "question_id": "R01-REG-BASIC-5-4",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "21",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "e3d2519c5fdd35bb408740026d475fc183afe8e3dff465da0bea849dc601e9f8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

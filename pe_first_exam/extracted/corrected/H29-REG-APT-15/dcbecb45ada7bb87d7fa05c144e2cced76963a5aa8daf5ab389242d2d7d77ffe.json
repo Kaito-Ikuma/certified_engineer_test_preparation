@@ -1,0 +1,50 @@
+{
+  "stem": "倫理的意思決定の促進要因と阻害要因を対比した7行のうち、不適切な対比の数を選ぶ。",
+  "conditions": {
+    "ア": "促進=利他主義、阻害=利己主義。",
+    "イ": "促進=希望・勇気、阻害=失望・おそれ。",
+    "ウ": "促進=正直・誠実、阻害=自己ぎまん。",
+    "エ": "促進=知識・専門能力、阻害=無知。",
+    "オ": "促進=公共的志向、阻害=自己中心的志向。",
+    "カ": "促進=指示・命令への批判精神、阻害=無批判な受入れ。",
+    "キ": "促進=依存的思考、阻害=自律的思考。"
+  },
+  "choices": {
+    "1": {
+      "value": "0",
+      "verdict": "設問条件に不一致",
+      "reason": "キで促進と阻害が逆なので0ではない。"
+    },
+    "2": {
+      "value": "1",
+      "verdict": "設問条件に一致",
+      "reason": "キだけが逆の対比で、不適切なものは1件。"
+    },
+    "3": {
+      "value": "2",
+      "verdict": "設問条件に不一致",
+      "reason": "ア〜カに追加の不適切行を数える根拠がない。"
+    },
+    "4": {
+      "value": "3",
+      "verdict": "設問条件に不一致",
+      "reason": "逆の行はキだけで3件ではない。"
+    },
+    "5": {
+      "value": "4",
+      "verdict": "設問条件に不一致",
+      "reason": "逆の行はキだけで4件ではない。"
+    }
+  },
+  "figures": "原典画像で問題幹、条件、正誤の向き、全5肢、組合せ表の全セルを確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/aptitude/page_014.png"
+  ],
+  "question_id": "H29-REG-APT-15",
+  "source_file": "sources/H29/aptitude.pdf",
+  "source_page": "14",
+  "source_sha256": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+  "raw_text_sha256": "7b99d13b039e9096df467eb291b9416482b26c4b7762ad9c031305d7a9cb12bc",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,47 @@
+{
+  "stem": "充電したコンデンサーを抵抗0のコイルへ接続し、最大電流時のコイルエネルギーを求める。",
+  "conditions": {
+    "容量": "2.0×10⁻¹⁰ F",
+    "初期電圧": "5.0 V",
+    "インダクタンス": "5.0×10⁻³ H",
+    "抵抗": "0。理想LC振動。"
+  },
+  "choices": {
+    "1": {
+      "value": "0 J",
+      "verdict": "条件に不一致",
+      "reason": "最大電流時はコイルの磁場エネルギーが最大であり0でない。"
+    },
+    "2": {
+      "value": "\\(1.3\\times10^{-9}\\) J",
+      "verdict": "条件に不一致",
+      "reason": "初期エネルギーの約半分だが、最大電流では電気エネルギーは0となり全量が磁気側へ移る。"
+    },
+    "3": {
+      "value": "\\(2.5\\times10^{-9}\\) J",
+      "verdict": "条件に一致",
+      "reason": "初期のCV²/2=2.5×10⁻⁹ Jに一致する。"
+    },
+    "4": {
+      "value": "\\(5.0\\times10^{-9}\\) J",
+      "verdict": "条件に不一致",
+      "reason": "係数1/2を落としたCV²の値である。"
+    },
+    "5": {
+      "value": "\\(7.5\\times10^{-9}\\) J",
+      "verdict": "条件に不一致",
+      "reason": "保存される初期エネルギーの3倍である。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_002.png"
+  ],
+  "question_id": "R04-REG-APPLIED-04",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "1f7f0eff9dfc73751ec13b314f35292c29c8714d9570dcfec07e5730dfef9739",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

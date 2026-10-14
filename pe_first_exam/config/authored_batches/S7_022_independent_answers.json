@@ -1,0 +1,83 @@
+{
+  "recorded_at": "2026-10-11T09:51:31.680019+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "official_answers_consulted": false,
+  "source_images_reviewed": 15,
+  "questions": [
+    {
+      "question_id": "H23-REG-APPLIED-21",
+      "independent_answer": "2",
+      "reason": "CはPDB/VPDB系列、CDTはS。H/OはSMOW、炭酸塩OはPDB。歴史名称と現在の尺度を区別。"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-24",
+      "independent_answer": "4",
+      "reason": "2万年の生物起源炭酸塩は14C。海洋リザーバー補正が必要だが選択中最適。"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-32",
+      "independent_answer": "3",
+      "reason": "炭酸塩酸素はPDB/VPDBも使うのでSMOWのみは誤り。海水地域差小さいは広域概数、熱水O増加もあり全称ではない。古い有機C混入条件。"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-27",
+      "independent_answer": "2",
+      "reason": "ジルコンZrSiO4はUを取り込み初生Pbが少なく高い閉鎖性。両雲母・K長石・海緑石はKAr/RbSr等の対象。"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-31",
+      "independent_answer": "4",
+      "reason": "H23問24と同じ選択順と2万年前貝。14C半減期約5730年、他は長時間鉱物年代。"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-25",
+      "independent_answer": "3",
+      "reason": "天水線はδD対δ18O、17O対18Oではない。トリチウム核実験パルス、千分偏差、分別は妥当。"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-32",
+      "independent_answer": "1",
+      "reason": "白亜紀約1億4500万〜6600万年前では14Cほぼ消失。KArUPbRbSrFTは適切な試料と閉鎖条件で可。"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-30",
+      "independent_answer": "3",
+      "reason": "14N(n,p)14C宇宙線二次中性子。UPbRbSr自然親核種、FT自発核分裂、TL蓄積線量。"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-21",
+      "independent_answer": "3",
+      "reason": "炭素CDTは誤り。S CDT、H/O SMOW、O PDBは旧標準対応。"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-35",
+      "independent_answer": "5",
+      "reason": "白亜紀では14C短すぎる、同じ論点がH28では1。"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-20",
+      "independent_answer": "3",
+      "reason": "有孔虫酸素同位体は氷期重い陸上氷に軽い水隔離と低温分別、間氷期大とする3逆。旧CDT名称は現在VCDT。"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-25",
+      "independent_answer": "3",
+      "reason": "白亜紀14C不適、3位置へ変更。"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-21",
+      "independent_answer": "1",
+      "reason": "重水素2H安定。半減期12.3年はトリチウム3H。天水線δ2H=8δ18O+10。熱水O岩石交換可。"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-21",
+      "independent_answer": "1",
+      "reason": "R02問20肢順変更、間氷期δ18O大が逆。原典3重い酸素18Oと画像確認。"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-22",
+      "independent_answer": "4",
+      "reason": "36Cl石灰岩露出は主要Caの核破砕やCl中性子捕獲など。原典カルサイトに含まれるClへ宇宙線生成という表現は少量Cl反応もあるため4を意図候補とするが単純不可能は断定できない。3He蓄積時計、14C補正、10Be大気核破砕堆積、4HeUTh由来は妥当。"
+    }
+  ]
+}

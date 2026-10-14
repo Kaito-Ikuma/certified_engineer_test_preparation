@@ -1,0 +1,30 @@
+{
+  "time": "2026-10-14T21:33:19+09:00",
+  "registered_questions": 1270,
+  "subject_drafts": {
+    "BASIC": 470,
+    "APT": 240,
+    "APPLIED": 560
+  },
+  "all_five_choices": 1270,
+  "all_theory_connected": 1270,
+  "astra_flags": 1270,
+  "manual_required": 499,
+  "source_correction_states": {
+    "partial": 499,
+    "verified": 771
+  },
+  "independent_states": {
+    "matches_official_draft": 1245,
+    "discrepancy_pending": 24,
+    "accepted_official_member_draft": 1
+  },
+  "difficulty_4_5": 38,
+  "law_questions": 150,
+  "figure_questions": 274,
+  "analysis_chapters": 5,
+  "csv_sha256": "59494aea88daa64357873b39e7efdce9c2db8ceb0f2e7c95572cde369114e3bd",
+  "draft_readiness_passed": true,
+  "final_expert_signoff": false,
+  "errors": []
+}

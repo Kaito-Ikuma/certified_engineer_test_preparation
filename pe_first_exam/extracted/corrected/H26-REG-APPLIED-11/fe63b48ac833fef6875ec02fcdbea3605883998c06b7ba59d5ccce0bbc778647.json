@@ -1,0 +1,45 @@
+{
+  "stem": "分子極性と水素結合の供与・受容を判断する。",
+  "conditions": {
+    "判断対象": "分子極性と水素結合の供与・受容を判断する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "極性の強い水素化合物に多い",
+      "verdict": "選ばない候補",
+      "reason": "典型的なN/O/Fに結合したH等を入口とする。"
+    },
+    "2": {
+      "value": "CH4は強極性で水素結合",
+      "verdict": "選ぶ候補",
+      "reason": "正四面体CH4の結合双極子は相殺し、強極性という前提が誤り。"
+    },
+    "3": {
+      "value": "水の沸点はH2Sより高い",
+      "verdict": "選ばない候補",
+      "reason": "水の分子間水素結合が高い沸点を説明する。"
+    },
+    "4": {
+      "value": "HFは高い電気陰性度に関係",
+      "verdict": "選ばない候補",
+      "reason": "HFの分極した結合と電子対による相互作用。"
+    },
+    "5": {
+      "value": "異種分子間にも水素結合",
+      "verdict": "選ばない候補",
+      "reason": "供与体と受容体が違う分子でも成立する。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_005.png"
+  ],
+  "question_id": "H26-REG-APPLIED-11",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "418023336e4f4a281d45065f2b96a9acb0ae05dbf8da1d5a5882ec5a51371bf1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

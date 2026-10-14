@@ -1,0 +1,45 @@
+{
+  "stem": "トラスの軸力比と軸伸び比を分ける。",
+  "conditions": {
+    "形状": "A,C間の棒1は水平30°、B,C間の棒2は60°。A,B同じ水平高さ。",
+    "材料": "E共通、断面A1,A2、Cへ下向きP、ピン接合。"
+  },
+  "choices": {
+    "1": {
+      "value": "A1/A2",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 A2/A1 と異なる。"
+    },
+    "2": {
+      "value": "√3A1/(2A2)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 A2/A1 と異なる。"
+    },
+    "3": {
+      "value": "A2/A1",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "√3A2/(2A1)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 A2/A1 と異なる。"
+    },
+    "5": {
+      "value": "√3A2/A1",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 A2/A1 と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/basic/page_013.png"
+  ],
+  "question_id": "H29-REG-BASIC-3-5",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "13",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "95b0fd8ccdd4fdef89221de006b7420ea7337c4af7eef4dea8d708cfcc33cb69",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

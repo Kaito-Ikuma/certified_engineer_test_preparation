@@ -1,0 +1,48 @@
+{
+  "stem": "BCCの胞原子数と体積から密度を求める。",
+  "conditions": {
+    "構造": "BCC",
+    "格子定数": "0.29nm",
+    "原子量": "52",
+    "指定NA": "6.0×10^23mol^-1",
+    "求める単位": "g/cm3"
+  },
+  "choices": {
+    "1": {
+      "value": "3.6g/cm3",
+      "verdict": "選ばない候補",
+      "reason": "胞原子数を1とした約半分の値。"
+    },
+    "2": {
+      "value": "7.1g/cm3",
+      "verdict": "選ぶ候補",
+      "reason": "2×52/(6.0×10^23×(2.9×10^-8)^3)=約7.11。"
+    },
+    "3": {
+      "value": "7.9g/cm3",
+      "verdict": "選ばない候補",
+      "reason": "指定量からの計算値より大きい。"
+    },
+    "4": {
+      "value": "10.1g/cm3",
+      "verdict": "選ばない候補",
+      "reason": "指定量からの計算値より大きい。"
+    },
+    "5": {
+      "value": "12.3g/cm3",
+      "verdict": "選ばない候補",
+      "reason": "指定量からの計算値より大きい。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_006.png"
+  ],
+  "question_id": "H26-REG-APPLIED-14",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "e88534b41502b90f93464a43654e6c68dd13633cc266f60df7b0974eb997fea1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

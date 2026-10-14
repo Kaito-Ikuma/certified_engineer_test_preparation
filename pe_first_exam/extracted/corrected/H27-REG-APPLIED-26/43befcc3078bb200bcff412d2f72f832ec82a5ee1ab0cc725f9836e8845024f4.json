@@ -1,0 +1,44 @@
+{
+  "stem": "降水のpHと水素イオン濃度、炭酸平衡・中和、当時の日本の酸性度を判定する。",
+  "conditions": {
+    "方向": "最も不適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "CO2のみでも25℃の降水pHは約5.6。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "CO2と平衡する希薄水の代表的目安であり、全降水の固定値ではない。"
+    },
+    "2": {
+      "value": "pH3.3は約30μmol/LのH+。",
+      "verdict": "不適切",
+      "reason": "希薄近似で10^-3.3 mol/L=約501μmol/L。30μmol/LならpH約4.52である。"
+    },
+    "3": {
+      "value": "pH5はpH6の10倍のH+。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "対数が1違うと濃度比は10となる。pH値を単純に比で比較しない。"
+    },
+    "4": {
+      "value": "日本には年平均pH5未満の地点が多い。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "気象庁が紹介する2008〜2012調査は地点年平均4.48〜5.37、全地点5年4.72で、原典当時の定性的傾向と整合する。全地点5未満ではない。"
+    },
+    "5": {
+      "value": "乾燥地ではアルカリ粒子・アンモニア中和でpH7に近い場合がある。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "土壌の炭酸塩等やNH3は酸を中和する。地域の組成次第で、全乾燥地で固定7とはしない。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_010.png"
+  ],
+  "question_id": "H27-REG-APPLIED-26",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "9660f219ec45f141f89dc4e5f04297d2996f7448a0c1863361aa203efa02e115",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

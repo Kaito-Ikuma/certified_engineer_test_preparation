@@ -1,0 +1,45 @@
+{
+  "stem": "生物多様性条約と外来種防除。",
+  "conditions": {
+    "時点": "平成28年度に指定された資料・制度。",
+    "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "組換え生物の議定書",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "1992署名開放・1993発効",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "保全・持続利用・利益配分",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "外来種に重大影響の例",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "5": {
+      "value": "日本は動物愛護で駆除禁止",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "1992・1993と議定書、当時の外来生物法の防除条項の一次本文を追加照合。動物愛護上の配慮が不要という意味にはしない。",
+  "evidence": [
+    "extracted/pages/H28/basic/page_022.png"
+  ],
+  "question_id": "H28-REG-BASIC-5-2",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "22",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "66f06a090085c18002b6bb886346e371ffa1451b96cfb7bab3772cfc3c568b77",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

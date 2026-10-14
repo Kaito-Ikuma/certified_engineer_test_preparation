@@ -1,0 +1,45 @@
+{
+  "stem": "10進0.1を二進小数で小数点以下16桁まで表す。",
+  "conditions": {
+    "入力": "10進0.1",
+    "表示桁": "小数点以下16桁"
+  },
+  "choices": {
+    "1": {
+      "value": "0.0000011001100110",
+      "verdict": "不適切な解答候補",
+      "reason": "先頭の1が6桁目にあり、0.1の4桁目と合わない。"
+    },
+    "2": {
+      "value": "0.0000110011001100",
+      "verdict": "不適切な解答候補",
+      "reason": "先頭の1が5桁目で、0.1の表現を一桁右へずらした形である。"
+    },
+    "3": {
+      "value": "0.0001100110011001",
+      "verdict": "適切な解答候補",
+      "reason": "反復2倍の出力0001100110011001に一致する。"
+    },
+    "4": {
+      "value": "0.0011001100110011",
+      "verdict": "不適切な解答候補",
+      "reason": "先頭の1が3桁目で、0.1の表現を一桁左へずらした形である。"
+    },
+    "5": {
+      "value": "0.0110011001100110",
+      "verdict": "不適切な解答候補",
+      "reason": "先頭の1が2桁目で、0.1より大きい値である。"
+    }
+  },
+  "figures": "図なし。5肢の値または記述を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/basic/page_006.png"
+  ],
+  "question_id": "H27-REG-BASIC-2-3",
+  "source_file": "sources/H27/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+  "raw_text_sha256": "871b2ff7f64ce067ef58f1cfc5c29694b55c2fbcbf5f2bf03c37506a264c2b58",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

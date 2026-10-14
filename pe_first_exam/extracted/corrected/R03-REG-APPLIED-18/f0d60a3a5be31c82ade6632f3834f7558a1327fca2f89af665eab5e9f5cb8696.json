@@ -1,0 +1,45 @@
+{
+  "stem": "分子拡散、機械分散、縦横の分散長と野外の尺度を比較する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+  },
+  "choices": {
+    "1": {
+      "value": "分子の不規則運動が分子拡散。",
+      "verdict": "適切（通常条件）",
+      "reason": "不規則な熱運動に基づく濃度の平滑化である。"
+    },
+    "2": {
+      "value": "濃度勾配に比例する速度で分子拡散。",
+      "verdict": "適切（通常条件）",
+      "reason": "Fick則は拡散流束\\(J=-D_m\\partial C/\\partial x\\)を与える。「速度」は流束として解釈し、正味の分子流速との同一視を避ける。"
+    },
+    "3": {
+      "value": "不均質な間隙構造で流動中の溶質集団が広がる。",
+      "verdict": "適切（通常条件）",
+      "reason": "流速・経路の差を平均化した見かけの広がりで、静止水の分子拡散とは区別する。"
+    },
+    "4": {
+      "value": "横分散長は通常縦より小さい。",
+      "verdict": "適切（通常条件）",
+      "reason": "流れ方向の速度差が大きく、通常は\\(\\alpha_T<\\alpha_L\\)である。媒体構造に依存する経験傾向。"
+    },
+    "5": {
+      "value": "野外分散長は室内よりはるかに小さい。",
+      "verdict": "不適切",
+      "reason": "野外は大きな不均質性を含み一般に大きい側の傾向がある。1992年59現場の研究は尺度傾向と大きな散らばりを示し、普遍直線は否定する。"
+    }
+  },
+  "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_007.png"
+  ],
+  "question_id": "R03-REG-APPLIED-18",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "0b3675c5a683222ba19aa7b3bbe96b3dcf58b567d56e4efba79326bba8853a1a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

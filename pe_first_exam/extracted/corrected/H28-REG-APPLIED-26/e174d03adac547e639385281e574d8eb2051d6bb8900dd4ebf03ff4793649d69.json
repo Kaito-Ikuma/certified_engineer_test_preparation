@@ -1,0 +1,47 @@
+{
+  "stem": "指定された地球半径と太陽定数から、地球が毎秒受け取る日射の総量を求める。",
+  "conditions": {
+    "方向": "最も近い値。",
+    "半径": "6370km=6.370×10^6m。",
+    "太陽定数": "1.368×10^3W/m²。",
+    "大気": "H28は反射吸収無視、H30は大気上端で定義。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(1.74\\times10^{17}\\ {\\rm W}\\)",
+      "verdict": "最適",
+      "reason": "受光円の計算1.74×10^17Wと一致。"
+    },
+    "2": {
+      "value": "\\(3.49\\times10^{17}\\ {\\rm W}\\)",
+      "verdict": "不適切",
+      "reason": "計算値の約2倍。受光断面と球表面を混同せず、単位換算と面積を確認する。"
+    },
+    "3": {
+      "value": "\\(6.97\\times10^{17}\\ {\\rm W}\\)",
+      "verdict": "不適切",
+      "reason": "計算値の約4倍。受光断面と球表面を混同せず、単位換算と面積を確認する。"
+    },
+    "4": {
+      "value": "\\(1.39\\times10^{18}\\ {\\rm W}\\)",
+      "verdict": "不適切",
+      "reason": "計算値の約8倍。受光断面と球表面を混同せず、単位換算と面積を確認する。"
+    },
+    "5": {
+      "value": "\\(2.79\\times10^{18}\\ {\\rm W}\\)",
+      "verdict": "不適切",
+      "reason": "計算値の約16倍。受光断面と球表面を混同せず、単位換算と面積を確認する。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_011.png"
+  ],
+  "question_id": "H28-REG-APPLIED-26",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "2af83ca52b2c97ce81fe2ad5ac167b29f44de3936d687116dc151bee3e7d9d10",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

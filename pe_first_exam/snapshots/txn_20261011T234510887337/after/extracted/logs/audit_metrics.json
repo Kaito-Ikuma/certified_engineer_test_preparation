@@ -1,0 +1,18 @@
+{
+  "expected_questions": 1270,
+  "registered_questions": 1270,
+  "missing_questions": 0,
+  "extra_questions": 0,
+  "duplicate_question_ids": 0,
+  "unclassified_questions": 0,
+  "unverified_official_answers": 0,
+  "questions_without_tex": 4,
+  "unexplained_questions": 1270,
+  "manual_verification_required": 826,
+  "unresolved_questions": 1270,
+  "integrity_errors": [],
+  "initial_audit_passed": true,
+  "final_audit_passed": false,
+  "final_status": "not_implemented",
+  "scope": "S4 registration/provenance"
+}

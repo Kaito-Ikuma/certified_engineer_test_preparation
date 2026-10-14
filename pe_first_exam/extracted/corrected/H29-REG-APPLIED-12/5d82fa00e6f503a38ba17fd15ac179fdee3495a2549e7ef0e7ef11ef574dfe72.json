@@ -1,0 +1,45 @@
+{
+  "stem": "分析信号と水銀温度計・天秤の環境依存を比較する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "分析信号と水銀温度計・天秤の環境依存を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "炎中の原子励起と発光",
+      "verdict": "通常の条件で適切",
+      "reason": "高い状態から低い状態への遷移による特性発光を測る。"
+    },
+    "2": {
+      "value": "透過度の対数の濃度比例",
+      "verdict": "通常の条件で適切",
+      "reason": "固定波長・光路長でBeer則A=−log10T=εcl。logTも係数の符号が負の比例関係となる。"
+    },
+    "3": {
+      "value": "水銀柱全部が同温度なら正しい",
+      "verdict": "条件付き・解釈留保",
+      "reason": "全浸没用温度計ではその条件に対応する。一方、部分浸没型は指定浸没位置と露出柱の校正条件があり、全型に無条件の規則ではない。"
+    },
+    "4": {
+      "value": "XRF波長が化学結合状態で変わり得る",
+      "verdict": "通常の条件で適切",
+      "reason": "内殻の信号にも周辺電子状態に応じた小さいエネルギー差があり、高分解能では化学シフトを扱える。"
+    },
+    "5": {
+      "value": "天秤は温度・圧力・湿度で変化しない",
+      "verdict": "不適切",
+      "reason": "空気密度と浮力が変わる。試料と分銅の密度差があると見かけの比較が変わる。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "水銀温度計の全浸没型という条件が原典に明記されていない。部分浸没型の校正まで全水銀柱同温と一般化しない。Beer則にも化学種・波長・散乱等の成立条件がある。",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_004.png"
+  ],
+  "question_id": "H29-REG-APPLIED-12",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "cca882888397ed0cc1e54e3b9fe3283022b88e6301ea1debc85328b9a49e13c1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

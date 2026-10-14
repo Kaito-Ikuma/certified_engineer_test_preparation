@@ -1,0 +1,45 @@
+{
+  "stem": "炭素同素体の結合構造と導電性を比較する。",
+  "conditions": {
+    "判断対象": "炭素同素体の結合構造と導電性を比較する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "ダイヤモンドは四面体結合で全鉱物中最高硬度",
+      "verdict": "選ばない候補",
+      "reason": "通常の鉱物のMohs尺度の最高位10。全人工材料・全荷重の絶対比較とはしない。"
+    },
+    "2": {
+      "value": "ダイヤモンドは共有結合結晶で電気をよく通す",
+      "verdict": "選ぶ候補",
+      "reason": "通常の純粋ダイヤモンドは大きなバンドギャップを持ち良導体ではない。ドープ材の例外と分ける。"
+    },
+    "3": {
+      "value": "黒鉛は六角網面で層間が弱い",
+      "verdict": "選ばない候補",
+      "reason": "層内の強い共有結合と層間相互作用を分ける。"
+    },
+    "4": {
+      "value": "CNTは単層又は多層同軸のナノ管",
+      "verdict": "選ばない候補",
+      "reason": "六角網面の管状構造。原典の同軸形状を保持。"
+    },
+    "5": {
+      "value": "CNTの直径・配列で導電性が変わる",
+      "verdict": "選ばない候補",
+      "reason": "巻き方のカイラリティと径が電子構造へ関係する。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "ダイヤモンドの硬度をMohs尺度・通常純結晶へ限定。ドーピング等の導電性例外を保持。",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_005.png"
+  ],
+  "question_id": "H28-REG-APPLIED-14",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "b9dcbc7dd96778fad426eb1d4567fbba5ede7bb22db52f8f72c264f144ce040b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

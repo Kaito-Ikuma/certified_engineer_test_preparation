@@ -1,0 +1,81 @@
+{
+  "batch_id": "S7_059_revision1",
+  "reference_date": "2026-10-14",
+  "questions": [
+    {
+      "question_id": "R02-REG-BASIC-5-5",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "stem": "戦前技術史の曖昧な比較と公式複数正答。",
+      "summary": "戦前技術史の曖昧な比較と公式複数正答。",
+      "conditions": {
+        "時点": "令和2年度に指定された資料・制度。",
+        "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "江戸手工業が西洋技術と発展",
+          "verdict": "条件内で適切",
+          "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+        },
+        "2": {
+          "value": "標準化技術を輸入し低賃金競争",
+          "verdict": "条件内で適切",
+          "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+        },
+        "3": {
+          "value": "学協会は欧米と異なり高学歴出身者",
+          "verdict": "不適切・公式追加受理",
+          "reason": "欧米との比較表現に誤解を招く記述があるとして公式が3も受理。4との両受理を維持。"
+        },
+        "4": {
+          "value": "Taylorと同時に統計的品質管理導入",
+          "verdict": "不適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "5": {
+          "value": "技術官僚の地位向上運動",
+          "verdict": "条件内で適切",
+          "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "公式の複数受理4|3を保持。独立解4は受理対象だが全受理集合を独立に列挙したものではない。3の欧米との差という一般化、戦前統計利用の個別例を追加史料で査読。",
+      "evidence": [
+        "extracted/pages/R02/basic/page_021.png"
+      ],
+      "core_concept": "戦前技術史の曖昧な比較と公式複数正答。",
+      "required_knowledge": "技術移転、学協会史、科学的管理と品質管理、公式訂正。",
+      "solution": "独立の主な判断は4。日本で統計的品質管理が組織的に普及した節目は日科技連による1950のDeming講義等の戦後であり、戦前のTaylor導入と同時に普及したというまとめは不適切。ただし戦前の個別統計手法の利用まで無かったとはしない。公式は誤解を招く記述があったとして当初4に加え3も正答とした。3の「欧米とは異なり」という一般化は学協会の時期・構成の違いを落とす。独立解4、受理正答3と4をそれぞれ残す。",
+      "answer_reason": "独立の主な判断は4。日本で統計的品質管理が組織的に普及した節目は日科技連による1950のDeming講義等の戦後であり、戦前のTaylor導入と同時に普及したというまとめは不適切。ただし戦前の個別統計手法の利用まで無かったとはしない。公式は誤解を招く記述があったとして当初4に加え3も正答とした。3の「欧米とは異なり」という一般化は学協会の時期・構成の違いを落とす。独立解4、受理正答3と4をそれぞれ残す。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。日本の統計品質管理導入は主に戦後。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "技術移転、学協会史、科学的管理と品質管理、公式訂正。 集計対象・時点・法の主体・選択方向を固定し、同型でも元の五肢へ戻す。",
+      "theory_references": [
+        "theory:env:japanindustrial"
+      ],
+      "discipline_id": "basic_5_0",
+      "concept_id": "env59_japanindustrial",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：戦前技術史の曖昧な比較と公式複数正答。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点・定義・集計境界・全称表現・特殊正答を確認する。"
+      },
+      "citations": [
+        "env59_juse"
+      ],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "3d09ffdfb58f1af23bc6943ab44d75b290926c1e9774ae73cb76e2452c8625e6",
+      "revision_of_batch": "S7_059_environment_finish_middle_corrected",
+      "revision_reason": "正本のmultiple_accepted種別に対応した独立解の部分受理比較へ修正。独立解4と公式4|3を変更しない。"
+    }
+  ]
+}

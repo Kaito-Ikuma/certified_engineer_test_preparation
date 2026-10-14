@@ -1,0 +1,45 @@
+{
+  "stem": "ユニバーサルデザインの四原則を穴埋めする。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "ユニバーサルデザインの四原則を穴埋めする。"
+  },
+  "choices": {
+    "1": {
+      "value": "柔軟/論理/失敗/継続",
+      "verdict": "選ばない候補",
+      "reason": "直観的利用と身体的努力が不一致。"
+    },
+    "2": {
+      "value": "限定/論理/失敗/継続",
+      "verdict": "選ばない候補",
+      "reason": "柔軟性・直観・身体の三点が不一致。"
+    },
+    "3": {
+      "value": "柔軟/論理/欠陥/身体",
+      "verdict": "選ばない候補",
+      "reason": "直観と利用者の失敗への寛容が不一致。"
+    },
+    "4": {
+      "value": "限定/直観/欠陥/継続",
+      "verdict": "選ばない候補",
+      "reason": "柔軟・失敗・身体の三点が不一致。"
+    },
+    "5": {
+      "value": "柔軟/直観/失敗/身体",
+      "verdict": "選ぶ候補",
+      "reason": "利用者多様性と操作ミスへの寛容・省力に対応。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/basic/page_001.png"
+  ],
+  "question_id": "H26-REG-BASIC-1-1",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "1",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "324d9b9db056b23f2abdc04eef8af6dbb9d887eca274f5c38f77dacb7131f919",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "結合多重度・分散力とLennard–Jonesの符号を確認する。",
+  "conditions": {
+    "判断対象": "結合多重度・分散力とLennard–Jonesの符号を確認する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "炭素結合の多重度増で強く短くなる",
+      "verdict": "選ばない候補",
+      "reason": "代表的C-C/C=C/C≡Cの傾向。"
+    },
+    "2": {
+      "value": "Wの大凝集エネルギーは結合エネルギーでなく配位数だけ",
+      "verdict": "選ばない候補",
+      "reason": "配位数だけとの排他的説明に疑義。BCCの配位数8だけで凝集を保証できない。"
+    },
+    "3": {
+      "value": "CO2は電子対反発を避け直線",
+      "verdict": "選ばない候補",
+      "reason": "VSEPRでCまわり2電子領域は180度。"
+    },
+    "4": {
+      "value": "分散は瞬間双極子による",
+      "verdict": "選ばない候補",
+      "reason": "瞬間双極子が他分子へ双極子を誘起。"
+    },
+    "5": {
+      "value": "LJはr^-6反発とr^-12引力",
+      "verdict": "選ぶ候補",
+      "reason": "通常の12–6ポテンシャルの反発と引力が逆。力の指数もポテンシャルとは異なる。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "候補2は凝集エネルギーを配位数のみへ帰する排他的主張で疑義。候補5はポテンシャルと力の語も混在。公式5と科学的一意性を分けて査読。",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_004.png"
+  ],
+  "question_id": "H29-REG-APPLIED-11",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "2b04caff261ac3c9a916293410a09ed34fb7550f1f12a3685b90b62804eb85ca",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

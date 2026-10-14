@@ -1,0 +1,45 @@
+{
+  "stem": "原典の複数の誤りと全員正解の公式採点を保持する。",
+  "conditions": {
+    "判断対象": "原典の複数の誤りと全員正解の公式採点を保持する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "Neは1s2 2s2 2p6",
+      "verdict": "公式採点は全員正解",
+      "reason": "中性Neの10電子配置。"
+    },
+    "2": {
+      "value": "Krは[Ar]4s2 3d10 4p6",
+      "verdict": "公式採点は全員正解",
+      "reason": "中性Krの36電子配置。記載順と容量を区別。"
+    },
+    "3": {
+      "value": "ZnよりZが1大きいCuは4sが1多い",
+      "verdict": "公式採点は全員正解",
+      "reason": "原典のCuを保持。Cu29はZn30より1小さく4sは1対2で少ない。"
+    },
+    "4": {
+      "value": "MgのIEはNaより大きい",
+      "verdict": "公式採点は全員正解",
+      "reason": "NIST値Mg7.6462eV>Na5.1391eV。"
+    },
+    "5": {
+      "value": "KrのIEはArより大きい",
+      "verdict": "公式採点は全員正解",
+      "reason": "NIST値Kr13.9996eV<Ar15.7596eVで逆。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "公式ALLを維持。初回3|5は公式前の独立判断として保持。原典の銅・原子番号・電子数を別元素へ変更しない。公式措置理由の全文は未取得。",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_004.png"
+  ],
+  "question_id": "R02-REG-APPLIED-10",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "3b6d7035156215c979c082770c2ff5fca2822838656901709799a99b1c4f7519",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

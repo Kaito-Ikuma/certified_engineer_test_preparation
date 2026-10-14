@@ -1,0 +1,45 @@
+{
+  "stem": "粒径範囲と大気汚染の生成経路。",
+  "conditions": {
+    "時点": "平成26年度に指定された資料・制度。",
+    "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "PM2.5は2.5μm付近だけ",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "2": {
+      "value": "SO2は燃料中S由来",
+      "verdict": "条件内で適切",
+      "reason": "原典の条件内では適切な記述であり、不適切なものを選ぶ問の選択対象ではない。"
+    },
+    "3": {
+      "value": "NO2は燃焼と光化学前駆物質",
+      "verdict": "条件内で適切",
+      "reason": "原典の条件内では適切な記述であり、不適切なものを選ぶ問の選択対象ではない。"
+    },
+    "4": {
+      "value": "光化学オキシダントはNOxとVOCの光反応",
+      "verdict": "条件内で適切",
+      "reason": "原典の条件内では適切な記述であり、不適切なものを選ぶ問の選択対象ではない。"
+    },
+    "5": {
+      "value": "COは不完全燃焼でメタン寿命にも影響",
+      "verdict": "条件内で適切",
+      "reason": "原典の条件内では適切な記述であり、不適切なものを選ぶ問の選択対象ではない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "COによるメタン寿命の化学過程と各健康影響は追加一次資料照合。肺沈着と粒径の関係を2.5μm一値へ固定しない。",
+  "evidence": [
+    "extracted/pages/H26/basic/page_016.png"
+  ],
+  "question_id": "H26-REG-BASIC-5-1",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "16",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "3d277a7f7f54aa33e2c7d2b21009f75c64017c0132d3da1645efe0997bfe9f0d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

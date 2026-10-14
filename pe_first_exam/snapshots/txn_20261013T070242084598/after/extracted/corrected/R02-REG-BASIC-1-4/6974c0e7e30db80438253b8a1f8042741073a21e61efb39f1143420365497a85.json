@@ -1,0 +1,45 @@
+{
+  "stem": "最適頂点と利益係数変化の許容範囲を求める。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "最適頂点と利益係数変化の許容範囲を求める。"
+  },
+  "choices": {
+    "1": {
+      "value": "(0,5),−1≤Δc≤2.5",
+      "verdict": "選ばない候補",
+      "reason": "当初最適は(6,3)で異なる。"
+    },
+    "2": {
+      "value": "(6,3),範囲の外",
+      "verdict": "選ばない候補",
+      "reason": "交点が最適になる範囲を逆にしている。"
+    },
+    "3": {
+      "value": "(6,3),−1≤Δc≤1",
+      "verdict": "選ばない候補",
+      "reason": "上限を狭め全許容範囲を示さない。"
+    },
+    "4": {
+      "value": "(0,5),範囲の外",
+      "verdict": "選ばない候補",
+      "reason": "当初点も範囲も不適合。"
+    },
+    "5": {
+      "value": "(6,3),−1≤Δc≤2.5",
+      "verdict": "選ぶ候補",
+      "reason": "隣接頂点(0,5),(8,0)に負けない両不等式。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/basic/page_004.png"
+  ],
+  "question_id": "R02-REG-BASIC-1-4",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "4",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "692ffeab2ed2c53b5acbfeb760abf8a3427467e557a5ccb4849ac68a1a1476c7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

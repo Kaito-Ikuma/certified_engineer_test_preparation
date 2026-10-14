@@ -1,0 +1,45 @@
+{
+  "stem": "硫黄快削鋼・BCC・粒径強化・再結晶・Charpyを比較する。",
+  "conditions": {
+    "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+    "前提": "一般的な鋼の結晶粒径範囲と、他の材料条件が近い比較を想定する。"
+  },
+  "choices": {
+    "1": {
+      "value": "S0.3%鋼はS0.005%鋼より被削性に優れる",
+      "verdict": "条件付きで適切",
+      "reason": "適切なMn等と組織条件ではMnS介在物が切りくず分断や工具との摩擦へ作用し被削性を改善する。Sだけで全ての鋼の加工性を保証せず、延性・溶接性との交換条件もある。"
+    },
+    "2": {
+      "value": "BCC立方単位胞には2原子ある",
+      "verdict": "適切",
+      "reason": "角8個の共有分は1原子、内部中心は1原子で合計2である。原始胞を使う場合とは胞の体積が違う。"
+    },
+    "3": {
+      "value": "鋼は結晶粒粗大化により強度が向上する",
+      "verdict": "不適切",
+      "reason": "一般的粒径範囲では粗大化は粒界による転位障害を減らし通常の粒径強化を弱める。ナノ領域の別機構を通常の鋼の粗大化強化の根拠にしない。"
+    },
+    "4": {
+      "value": "加工硬化材を加熱再結晶すると延性が増す",
+      "verdict": "適切",
+      "reason": "冷間加工で蓄積した転位を、新たな低転位密度の結晶粒へ置き換え、通常は加工硬化を緩和して延性を回復する。"
+    },
+    "5": {
+      "value": "Charpy衝撃試験で靭性を評価する",
+      "verdict": "適切",
+      "reason": "所定の切欠き試験片を衝撃破断し吸収エネルギーを測る靭性評価である。規格・温度・寸法に依存し、KICを直接測る試験ではない。"
+    }
+  },
+  "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+  "ambiguity": "S量だけでの被削性の全称比較、Hall–Petchの適用粒径範囲を留保する。衝撃靭性の測定値を破壊靭性KICへ直接置換しない。",
+  "evidence": [
+    "extracted/pages/R07/basic/page_013.png"
+  ],
+  "question_id": "R07-REG-BASIC-4-3",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "13",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "68e19e68157bfbfbeeb7b4b1e18919e36db982dcc502bd7bc40e03eb3e8ce6ca",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

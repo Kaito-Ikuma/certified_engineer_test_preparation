@@ -1,0 +1,46 @@
+{
+  "stem": "点aから単位ベクトルbの張る直線へ向かう垂線ベクトルを選ぶ。",
+  "conditions": {
+    "始点": "aの終点。",
+    "終点": "原点を通りb方向の直線上の垂足。",
+    "条件": "\\(|b|=1\\)"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(a\\times b\\)",
+      "verdict": "条件に不一致",
+      "reason": "a,bの両方に垂直な向きであり、aから直線上の垂足への変位ではない。"
+    },
+    "2": {
+      "value": "\\((b\\cdot a)b-a\\)",
+      "verdict": "条件に一致",
+      "reason": "垂足の位置(b·a)bから始点aを引いたベクトルに一致する。"
+    },
+    "3": {
+      "value": "\\(b-a\\)",
+      "verdict": "条件に不一致",
+      "reason": "終点をbの端点に固定しており、その点が垂足である保証がない。"
+    },
+    "4": {
+      "value": "\\((b\\cdot a)b\\)",
+      "verdict": "条件に不一致",
+      "reason": "原点から垂足への位置ベクトルであり、始点aからの変位ではない。"
+    },
+    "5": {
+      "value": "\\(a\\times b-a\\)",
+      "verdict": "条件に不一致",
+      "reason": "終点a×bは一般にb方向の直線上にない。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_010.png"
+  ],
+  "question_id": "R06-REG-BASIC-3-2",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "10",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "982e09bd1ac3c123499854fa564af5aaa1647866a8725bc1a7bf1d8a0610561a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

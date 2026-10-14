@@ -1,0 +1,46 @@
+{
+  "stem": "与えられた鋼とCFRPの密度・強度・価格から、比強度とその価格当たり性能を比較する。",
+  "conditions": {
+    "判断方向": "空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。",
+    "原典照合": "16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。",
+    "前提": "解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。"
+  },
+  "choices": {
+    "1": {
+      "value": "強度/密度・CFRP・2",
+      "verdict": "不適合",
+      "reason": "比強度の定義と優れる材料は合うが、単位比強度当たり価格の倍率は約10.8であり2ではない。"
+    },
+    "2": {
+      "value": "密度/強度・CFRP・10",
+      "verdict": "不適合",
+      "reason": "密度/強度は比強度の逆数である。"
+    },
+    "3": {
+      "value": "密度/強度・鋼・2",
+      "verdict": "不適合",
+      "reason": "定義を逆転し、与条件での優れる材料と価格倍率も違う。"
+    },
+    "4": {
+      "value": "強度/密度・鋼・2",
+      "verdict": "不適合",
+      "reason": "定義は合うが、強度/密度はCFRPの方が大きく、価格倍率も2ではない。"
+    },
+    "5": {
+      "value": "強度/密度・CFRP・10",
+      "verdict": "適合（前提内）",
+      "reason": "強度/密度でCFRPが優れ、価格当たりの比較ではCFRPの単位比強度当たり費用が約10倍となる。"
+    }
+  },
+  "figures": "原典の図又は表の各条件と記号を照合。元図は転載せず式と独自説明を用いる。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_001.png"
+  ],
+  "question_id": "R05-REG-BASIC-1-1",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "1",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "63851b4ef738111585bc29899d82026343062fa2e6b73370fc6fd3e9bfccda46",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,83 @@
+{
+  "time": "2026-10-12T12:50:54+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_038_employment",
+  "format_revision_batch": "S7_038_employment_format_revision",
+  "question_ids": [
+    "H24-REG-APT-03",
+    "H25-REG-APT-03",
+    "H25-REG-APT-04",
+    "H26-REG-APT-05",
+    "H27-REG-APT-11",
+    "H29-REG-APT-04",
+    "H29-REG-APT-05",
+    "H30-REG-APT-12",
+    "R01-REG-APT-12",
+    "R02-REG-APT-13",
+    "R04-REG-APT-05",
+    "R06-REG-APT-10",
+    "R07-REG-APT-15"
+  ],
+  "source_images": 13,
+  "initial_independent_matches": 12,
+  "corrected_verified": 7,
+  "partial": 6,
+  "related_pairs_added": 6,
+  "related_pairs_total": 245,
+  "primary_references_added": 20,
+  "concepts_added": 9,
+  "concept_total": 294,
+  "canonical_counts": {
+    "recorded_at": "2026-10-12T12:50:54+09:00",
+    "registered": 1270,
+    "classification_verified": 727,
+    "summary_verified": 701,
+    "corrected_verified": 514,
+    "corrected_partial": 187,
+    "solution_drafts": 701,
+    "solution_verified": 0,
+    "manual_required": 756,
+    "subject_drafts": {
+      "BASIC": 217,
+      "APT": 160,
+      "APPLIED": 324
+    }
+  },
+  "pdf": {
+    "pages": 896,
+    "bytes": 4479204,
+    "visual_review_pages": [
+      330,
+      331,
+      332,
+      352,
+      353,
+      354,
+      355,
+      356,
+      357,
+      360,
+      361,
+      362,
+      363,
+      364,
+      365,
+      366,
+      367,
+      876,
+      877,
+      878
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draft・再生成後初期監査・1270ラベル監査成功。LuaLaTeX/Biber成功。20実画像で理論・13問全5候補・疑義・20参考文献を確認。辞書表記を明示的ハッシュ指定改訂13件で修正。",
+  "risks": [
+    "6問部分校正。裁量労働H25版と保存H26.3版の差を査読待ち。",
+    "初回H25APT04=3は保存し、19業務列挙から5へ訂正した追記を保持。",
+    "Astra未査読、569問未執筆、最終監査未実装。"
+  ],
+  "next": "S7_039物理探査データ17問の13原典画像と公式前初回を保存。16一致、R01AP34は5対公式4。波動下方接続と電磁リジッドブームの一次資料を照合。全1270問・全章・頻出分析まで継続。"
+}

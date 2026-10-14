@@ -1,0 +1,45 @@
+{
+  "stem": "完全解離する食塩の溶液について、粒子数を数えて凝固点降下を計算する。",
+  "conditions": {
+    "確認範囲": "問題幹、条件、否定、数値、単位、全5肢を原典画像で照合した。",
+    "成立条件": "水1.0 kg、NaCl 0.20 mol、\\(K_f=1.85\\,\\mathrm{K\\,kg\\,mol^{-1}}\\)、完全イオン解離の指定。希薄溶液の束一的性質の式を用いる。"
+  },
+  "choices": {
+    "1": {
+      "value": "−0.19°C",
+      "verdict": "不適切",
+      "reason": "完全解離後の粒子濃度0.40 mol/kgを使った降下量0.74 Kと合わない。"
+    },
+    "2": {
+      "value": "−0.37°C",
+      "verdict": "不適切",
+      "reason": "NaClの式量単位だけを数え、2種類のイオンへの解離を無視した値である。"
+    },
+    "3": {
+      "value": "−0.56°C",
+      "verdict": "不適切",
+      "reason": "粒子濃度と係数の積0.74 Kに合わない。"
+    },
+    "4": {
+      "value": "−0.74°C",
+      "verdict": "適切",
+      "reason": "解離による粒子数2倍と凝固点の低下方向を共に反映する。"
+    },
+    "5": {
+      "value": "−1.9°C",
+      "verdict": "不適切",
+      "reason": "指定濃度は粒子基準でも0.40 mol/kgであり、1 mol/kg相当の降下とは異なる。"
+    }
+  },
+  "figures": "図なし。全5候補は文字又は温度値である。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_003.png"
+  ],
+  "question_id": "H24-REG-APPLIED-11",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "b995c381a513f820bba0c1b2b7d7cf4e4562a05ff9084a92f42cf54d4a56a0af",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

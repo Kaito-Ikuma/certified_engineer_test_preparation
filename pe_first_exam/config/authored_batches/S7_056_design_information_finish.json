@@ -1,0 +1,2165 @@
+{
+  "batch_id": "S7_056_design_information_finish",
+  "reference_date": "2026-10-14",
+  "questions": [
+    {
+      "question_id": "H23-REG-BASIC-1-4",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "利得表の最適反応と支配戦略。",
+      "summary": "利得表の最適反応と支配戦略。",
+      "conditions": {
+        "行": "Aの定価60,65万円。",
+        "列": "Bの定価60,65万円。",
+        "利得(A,B)": "行A60：(12,13),(15,7)。行A65：(8,14),(10,10)。単位億円。"
+      },
+      "choices": {
+        "1": {
+          "value": "A60/B60",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "A60/B65",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 A60/B60 と異なる。"
+        },
+        "3": {
+          "value": "A65/B60",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 A60/B60 と異なる。"
+        },
+        "4": {
+          "value": "A65/B65",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 A60/B60 と異なる。"
+        },
+        "5": {
+          "value": "決まらない",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 A60/B60 と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H23/basic/page_003.png"
+      ],
+      "core_concept": "利得表の最適反応と支配戦略。",
+      "required_knowledge": "利得表の行列、支配戦略、最適反応、ナッシュ均衡。",
+      "solution": "Aの行を比較するとB60では12>8、B65では15>10なのでAは60が支配戦略。Bの列を比較するとA60では13>7、A65では14>10なのでBも60。互いの最適反応が一致するA60/B60の1。両社の売上合計を最大にする協調案とは別の基準である。",
+      "answer_reason": "Aの行を比較するとB60では12>8、B65では15>10なのでAは60が支配戦略。Bの列を比較するとA60では13>7、A65では14>10なのでBも60。互いの最適反応が一致するA60/B60の1。両社の売上合計を最大にする協調案とは別の基準である。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。画像の利得A60行12,15>A65行8,10。B60列13,14>B65列7,10。両社60。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "利得表の行列、支配戦略、最適反応、ナッシュ均衡。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:game"
+      ],
+      "discipline_id": "basic_1_5",
+      "concept_id": "finish56_game",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：利得表の最適反応と支配戦略。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H23-REG-BASIC-2-4",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "二段キャッシュの実効アクセス時間。",
+      "summary": "二段キャッシュの実効アクセス時間。",
+      "conditions": {
+        "一次": "1ns、95%。",
+        "二次": "10ns、一次失敗条件下90%。",
+        "主記憶": "100ns。"
+      },
+      "choices": {
+        "1": {
+          "value": "1.9",
+          "verdict": "条件内で適切",
+          "reason": "解法の条件と結果を照合する。 計算結果と一致。"
+        },
+        "2": {
+          "value": "6.45",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "3": {
+          "value": "11.45",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "4": {
+          "value": "15.4",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "5": {
+          "value": "19.95",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "原典はアクセス時間に上位段の探索時間を含めるか明示しない。候補に合う経路総時間モデルと逐次加算モデルを区別し、査読を要する。",
+      "evidence": [
+        "extracted/pages/H23/basic/page_006.png"
+      ],
+      "core_concept": "二段キャッシュの実効アクセス時間。",
+      "required_knowledge": "条件付き確率、排他的経路、ヒット率、累積時間のモデル。",
+      "solution": "一次成功、一次失敗かつ二次成功、両方失敗を排他的に分ける。二次の90%は一次失敗時の条件付きヒット率と読む。0.95×1+0.05×0.9×10+0.05×0.1×100=1.9 nsの1。二次や主記憶の時間を各経路の総所要時間として扱う試験モデル。各段を逐次探索し、その時間を別々に加えるモデルなら1+0.05×(10+0.1×100)=2 nsとなる。",
+      "answer_reason": "一次成功、一次失敗かつ二次成功、両方失敗を排他的に分ける。二次の90%は一次失敗時の条件付きヒット率と読む。0.95×1+0.05×0.9×10+0.05×0.1×100=1.9 nsの1。二次や主記憶の時間を各経路の総所要時間として扱う試験モデル。各段を逐次探索し、その時間を別々に加えるモデルなら1+0.05×(10+0.1×100)=2 nsとなる。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。排他的な成功経路の重み0.95×1+0.05×0.9×10+0.05×0.1×100=1.9。逐次検索加算とは区別。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "条件付き確率、排他的経路、ヒット率、累積時間のモデル。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:information:cache"
+      ],
+      "discipline_id": "basic_2_5",
+      "concept_id": "finish56_cache",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：二段キャッシュの実効アクセス時間。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [
+        "info_cache"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H23-REG-BASIC-4-3",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "放射線の実体・遮蔽と照射による変化。",
+      "summary": "放射線の実体・遮蔽と照射による変化。",
+      "conditions": {
+        "比較": "同じ厚さ、コンクリート密度2.35g/cm3。",
+        "原典β": "電子の流れとして記述。"
+      },
+      "choices": {
+        "1": {
+          "value": "ア イ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 イ ウ と異なる。"
+        },
+        "2": {
+          "value": "ア ウ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 イ ウ と異なる。"
+        },
+        "3": {
+          "value": "ア エ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 イ ウ と異なる。"
+        },
+        "4": {
+          "value": "イ ウ",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "5": {
+          "value": "イ エ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 イ ウ と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "βには陽電子を放出するβ+もある。原典の電子という通常のβ−表現を全βの定義へ広げない。γ遮蔽は光子エネルギーと材料の減衰係数を含む。",
+      "evidence": [
+        "extracted/pages/H23/basic/page_012.png"
+      ],
+      "core_concept": "放射線の実体・遮蔽と照射による変化。",
+      "required_knowledge": "粒子線と電磁波、飛程・電離、γ減衰と材料、照射損傷。",
+      "solution": "アは同じ厚さで普通コンクリートの方が鉛よりγ遮蔽効果が高いという一般化が誤り。イは照射が材料特性を変え得るので正。ウはαがHe核、β−が電子で、αの強い電離と短い飛程が対応して正。エはβを中性子、γを電子とするので誤。イウの4。",
+      "answer_reason": "アは同じ厚さで普通コンクリートの方が鉛よりγ遮蔽効果が高いという一般化が誤り。イは照射が材料特性を変え得るので正。ウはαがHe核、β−が電子で、αの強い電離と短い飛程が対応して正。エはβを中性子、γを電子とするので誤。イウの4。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。同厚の鉛遮蔽が通常有利、照射効果あり、αHe核β電子、γ光子。イウ。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "粒子線と電磁波、飛程・電離、γ減衰と材料、照射損傷。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:basicchem:radiation"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "finish56_radiation",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：放射線の実体・遮蔽と照射による変化。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [
+        "finish56_radiation"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-1-5",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "資源制約から生産利益を最大にする。",
+      "summary": "資源制約から生産利益を最大にする。",
+      "conditions": {
+        "製品X": "A3kg、B1kg、利益3万円。",
+        "製品Y": "A1kg、B2kg、利益2万円。",
+        "上限": "A9kg、B8kg。"
+      },
+      "choices": {
+        "1": {
+          "value": "4",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "2": {
+          "value": "6",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "3": {
+          "value": "9",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "4": {
+          "value": "10",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "5": {
+          "value": "12",
+          "verdict": "条件内で適切",
+          "reason": "解法の条件と結果を照合する。 計算結果と一致。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/basic/page_004.png",
+        "extracted/pages/H24/basic/page_005.png"
+      ],
+      "core_concept": "資源制約から生産利益を最大にする。",
+      "required_knowledge": "線形計画、制約交点、頂点比較、整数生産量。",
+      "solution": "生産個数x,y≥0に対し3x+y≤9、x+2y≤8、利益3x+2y。頂点(0,0),(3,0),(0,4),(2,3)の利益は0,9,8,12万円。交点(2,3)は整数でも実行可能で最大12万円、5。",
+      "answer_reason": "生産個数x,y≥0に対し3x+y≤9、x+2y≤8、利益3x+2y。頂点(0,0),(3,0),(0,4),(2,3)の利益は0,9,8,12万円。交点(2,3)は整数でも実行可能で最大12万円、5。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。3x+y≤9,x+2y≤8。交点x2y3、利益12。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "線形計画、制約交点、頂点比較、整数生産量。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:lp"
+      ],
+      "discipline_id": "basic_1_5",
+      "concept_id": "finish56_lp",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：資源制約から生産利益を最大にする。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-2-6",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "命令数とCPIからCPU実行時間を求める。",
+      "summary": "命令数とCPIからCPU実行時間を求める。",
+      "conditions": {
+        "命令": "転送3500×CPI6、算術5000×5、分岐1500×4。",
+        "周波数": "2.0GHz。"
+      },
+      "choices": {
+        "1": {
+          "value": "26ns",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 26μs と異なる。"
+        },
+        "2": {
+          "value": "25μs",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 26μs と異なる。"
+        },
+        "3": {
+          "value": "26μs",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "25ms",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 26μs と異なる。"
+        },
+        "5": {
+          "value": "26ms",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 26μs と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_009.png",
+        "extracted/pages/H25/basic/page_010.png"
+      ],
+      "core_concept": "命令数とCPIからCPU実行時間を求める。",
+      "required_knowledge": "CPI、クロック周期、命令構成による重み付き平均、SI接頭辞。",
+      "solution": "必要サイクル数は3500×6+5000×5+1500×4=52000。2.0GHzは2.0×10^9サイクル/秒なので時間は52000/(2.0×10^9)=26×10^-6秒=26μs。命令数10000だけを周波数で割らず、CPIで重み付けする。",
+      "answer_reason": "必要サイクル数は3500×6+5000×5+1500×4=52000。2.0GHzは2.0×10^9サイクル/秒なので時間は52000/(2.0×10^9)=26×10^-6秒=26μs。命令数10000だけを周波数で割らず、CPIで重み付けする。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。総52000サイクル÷2e9=26マイクロ秒。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "CPI、クロック周期、命令構成による重み付き平均、SI接頭辞。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:information:cpu"
+      ],
+      "discipline_id": "basic_2_5",
+      "concept_id": "finish56_cpu",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：命令数とCPIからCPU実行時間を求める。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-2-6",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "命令数とCPIからCPU実行時間を求める。",
+      "summary": "命令数とCPIからCPU実行時間を求める。",
+      "conditions": {
+        "命令": "転送3500×CPI6、算術5000×5、分岐1500×4。",
+        "周波数": "2.0GHz。"
+      },
+      "choices": {
+        "1": {
+          "value": "260ns",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 26μs と異なる。"
+        },
+        "2": {
+          "value": "26μs",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "3": {
+          "value": "260μs",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 26μs と異なる。"
+        },
+        "4": {
+          "value": "26ms",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 26μs と異なる。"
+        },
+        "5": {
+          "value": "260ms",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 26μs と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/basic/page_010.png",
+        "extracted/pages/H29/basic/page_011.png"
+      ],
+      "core_concept": "命令数とCPIからCPU実行時間を求める。",
+      "required_knowledge": "CPI、クロック周期、命令構成による重み付き平均、SI接頭辞。",
+      "solution": "必要サイクル数は3500×6+5000×5+1500×4=52000。2.0GHzは2.0×10^9サイクル/秒なので時間は52000/(2.0×10^9)=26×10^-6秒=26μs。命令数10000だけを周波数で割らず、CPIで重み付けする。",
+      "answer_reason": "必要サイクル数は3500×6+5000×5+1500×4=52000。2.0GHzは2.0×10^9サイクル/秒なので時間は52000/(2.0×10^9)=26×10^-6秒=26μs。命令数10000だけを周波数で割らず、CPIで重み付けする。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。3500×6+5000×5+1500×4=52000サイクル、26μs。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "CPI、クロック周期、命令構成による重み付き平均、SI接頭辞。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:information:cpu"
+      ],
+      "discipline_id": "basic_2_5",
+      "concept_id": "finish56_cpu",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：命令数とCPIからCPU実行時間を求める。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-1-2",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "限界利益から必要な客席回転を求める。",
+      "summary": "限界利益から必要な客席回転を求める。",
+      "conditions": {
+        "売上": "500円/人。",
+        "変動費": "200円/人。",
+        "固定費": "月50万円。",
+        "目標利益": "月100万円。",
+        "営業": "20日、50席。"
+      },
+      "choices": {
+        "1": {
+          "value": "2",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "2": {
+          "value": "3",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "3": {
+          "value": "4",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "4": {
+          "value": "5",
+          "verdict": "条件内で適切",
+          "reason": "解法の条件と結果を照合する。 計算結果と一致。"
+        },
+        "5": {
+          "value": "10",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/basic/page_001.png"
+      ],
+      "core_concept": "限界利益から必要な客席回転を求める。",
+      "required_knowledge": "売上と変動費、固定費、限界利益、期間と席数の換算。",
+      "solution": "一人当たり限界利益は500-200=300円。月の目標利益100万円と固定費50万円を賄う人数は1500000/300=5000人。20日×50席で割ると一席一日5人、4。売上高500円をそのまま利益としない。",
+      "answer_reason": "一人当たり限界利益は500-200=300円。月の目標利益100万円と固定費50万円を賄う人数は1500000/300=5000人。20日×50席で割ると一席一日5人、4。売上高500円をそのまま利益としない。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。(100万+50万)/(500-200)/(20×50)=5。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "売上と変動費、固定費、限界利益、期間と席数の換算。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:economics"
+      ],
+      "discipline_id": "basic_1_5",
+      "concept_id": "finish56_economics",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：限界利益から必要な客席回転を求める。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-1-6",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "製作図の角法・寸法・公差・検査を区別。",
+      "summary": "製作図の角法・寸法・公差・検査を区別。",
+      "conditions": {
+        "列順": "角法/寸法/はめあい/幾何公差/表題",
+        "O/X": "正/誤。",
+        "原典": "全五行を画像から転記。"
+      },
+      "choices": {
+        "1": {
+          "value": "OXOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。"
+        },
+        "2": {
+          "value": "XOOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。"
+        },
+        "3": {
+          "value": "XOOXO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "OOXOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。"
+        },
+        "5": {
+          "value": "XXXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/basic/page_004.png",
+        "extracted/pages/H26/basic/page_005.png"
+      ],
+      "core_concept": "製作図の角法・寸法・公差・検査を区別。",
+      "required_knowledge": "投影法、寸法公差と幾何公差、はめあい・限界ゲージ、図面情報。",
+      "solution": "幾何公差は形状・姿勢・位置等を管理し、高精度化で不要にはならない。寸法は現場で誤算が起きないよう製作に必要な情報を示す。はめあい又は限界ゲージは指定公差の管理・検査に対応する。通常の正投影は第一角又は第三角で、第二角ではない。表題・部品等の情報を示す。 この年度の列順へ戻してXOOXO。O正、X誤。",
+      "answer_reason": "幾何公差は形状・姿勢・位置等を管理し、高精度化で不要にはならない。寸法は現場で誤算が起きないよう製作に必要な情報を示す。はめあい又は限界ゲージは指定公差の管理・検査に対応する。通常の正投影は第一角又は第三角で、第二角ではない。表題・部品等の情報を示す。 この年度の列順へ戻してXOOXO。O正、X誤。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。第一/第三角法、寸法と公差必要、はめあい・表題。誤正正誤正。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "投影法、寸法公差と幾何公差、はめあい・限界ゲージ、図面情報。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:drawing"
+      ],
+      "discipline_id": "basic_1_10",
+      "concept_id": "finish56_drawing",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：製作図の角法・寸法・公差・検査を区別。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [
+        "design48_iso"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-1-5",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "製作図の角法・寸法・公差・検査を区別。",
+      "summary": "製作図の角法・寸法・公差・検査を区別。",
+      "conditions": {
+        "列順": "幾何公差/寸法/はめあい/角法/表題",
+        "O/X": "正/誤。",
+        "原典": "全五行を画像から転記。"
+      },
+      "choices": {
+        "1": {
+          "value": "XOOXO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "XOOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。"
+        },
+        "3": {
+          "value": "OXOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。"
+        },
+        "4": {
+          "value": "OOXOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。"
+        },
+        "5": {
+          "value": "XXXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/basic/page_004.png"
+      ],
+      "core_concept": "製作図の角法・寸法・公差・検査を区別。",
+      "required_knowledge": "投影法、寸法公差と幾何公差、はめあい・限界ゲージ、図面情報。",
+      "solution": "幾何公差は形状・姿勢・位置等を管理し、高精度化で不要にはならない。寸法は現場で誤算が起きないよう製作に必要な情報を示す。はめあい又は限界ゲージは指定公差の管理・検査に対応する。通常の正投影は第一角又は第三角で、第二角ではない。表題・部品等の情報を示す。 この年度の列順へ戻してXOOXO。O正、X誤。",
+      "answer_reason": "幾何公差は形状・姿勢・位置等を管理し、高精度化で不要にはならない。寸法は現場で誤算が起きないよう製作に必要な情報を示す。はめあい又は限界ゲージは指定公差の管理・検査に対応する。通常の正投影は第一角又は第三角で、第二角ではない。表題・部品等の情報を示す。 この年度の列順へ戻してXOOXO。O正、X誤。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。幾何公差不要×、寸法○、はめあい○、第二角×、表題○。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "投影法、寸法公差と幾何公差、はめあい・限界ゲージ、図面情報。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:drawing"
+      ],
+      "discipline_id": "basic_1_10",
+      "concept_id": "finish56_drawing",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：製作図の角法・寸法・公差・検査を区別。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [
+        "design48_iso"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-1-3",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "製作図の角法・寸法・公差・検査を区別。",
+      "summary": "製作図の角法・寸法・公差・検査を区別。",
+      "conditions": {
+        "列順": "幾何公差/寸法/限界ゲージ/角法/表題",
+        "O/X": "正/誤。",
+        "原典": "全五行を画像から転記。"
+      },
+      "choices": {
+        "1": {
+          "value": "XXXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。"
+        },
+        "2": {
+          "value": "XOOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。"
+        },
+        "3": {
+          "value": "OXOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。"
+        },
+        "4": {
+          "value": "OOXOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。"
+        },
+        "5": {
+          "value": "XOOXO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/basic/page_003.png"
+      ],
+      "core_concept": "製作図の角法・寸法・公差・検査を区別。",
+      "required_knowledge": "投影法、寸法公差と幾何公差、はめあい・限界ゲージ、図面情報。",
+      "solution": "幾何公差は形状・姿勢・位置等を管理し、高精度化で不要にはならない。寸法は現場で誤算が起きないよう製作に必要な情報を示す。はめあい又は限界ゲージは指定公差の管理・検査に対応する。通常の正投影は第一角又は第三角で、第二角ではない。表題・部品等の情報を示す。 この年度の列順へ戻してXOOXO。O正、X誤。",
+      "answer_reason": "幾何公差は形状・姿勢・位置等を管理し、高精度化で不要にはならない。寸法は現場で誤算が起きないよう製作に必要な情報を示す。はめあい又は限界ゲージは指定公差の管理・検査に対応する。通常の正投影は第一角又は第三角で、第二角ではない。表題・部品等の情報を示す。 この年度の列順へ戻してXOOXO。O正、X誤。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。幾何公差不要×、寸法○、限界ゲージ○、第二角×、表題○。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "投影法、寸法公差と幾何公差、はめあい・限界ゲージ、図面情報。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:drawing"
+      ],
+      "discipline_id": "basic_1_10",
+      "concept_id": "finish56_drawing",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：製作図の角法・寸法・公差・検査を区別。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [
+        "design48_iso"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-1-3",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "決定と確率分岐を後ろから評価する。",
+      "summary": "決定と確率分岐を後ろから評価する。",
+      "conditions": {
+        "状態": "S1 .6、S2 .1、S3 .3。",
+        "S1": "A1=(5,.5;7,.5)、A2=8。",
+        "S2": "A1=(8,.6;10,.4)、A2=12。",
+        "S3": "3。",
+        "恒久": "6.5、額は全て億円。"
+      },
+      "choices": {
+        "1": {
+          "value": "4.5 状況対応",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 5.4 状況対応 と異なる。"
+        },
+        "2": {
+          "value": "5.4 状況対応",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "3": {
+          "value": "5.7 状況対応",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 5.4 状況対応 と異なる。"
+        },
+        "4": {
+          "value": "6.6 恒久",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 5.4 状況対応 と異なる。"
+        },
+        "5": {
+          "value": "6.9 恒久",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 5.4 状況対応 と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/basic/page_002.png"
+      ],
+      "core_concept": "決定と確率分岐を後ろから評価する。",
+      "required_knowledge": "条件付き期待値、決定ノードの最適化、後向き評価。",
+      "solution": "状態S1ではA1の期待損失は.5×5+.5×7=6億円、A2の8より小さい。S2はA1が.6×8+.4×10=8.8、A2の12より小さい。状況対応全体は.6×6+.1×8.8+.3×3=5.38億円。恒久6.5より小さく、最も近い5.4と状況対応の2。決定ノードでは平均せず小さい案を選び、機会ノードだけ確率で平均する。",
+      "answer_reason": "状態S1ではA1の期待損失は.5×5+.5×7=6億円、A2の8より小さい。S2はA1が.6×8+.4×10=8.8、A2の12より小さい。状況対応全体は.6×6+.1×8.8+.3×3=5.38億円。恒久6.5より小さく、最も近い5.4と状況対応の2。決定ノードでは平均せず小さい案を選び、機会ノードだけ確率で平均する。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。S1min6,8=6、S2min8.8,12=8.8、総.6×6+.1×8.8+.3×3=5.38<6.5。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "条件付き期待値、決定ノードの最適化、後向き評価。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:decision"
+      ],
+      "discipline_id": "basic_1_8",
+      "concept_id": "finish56_decision",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：決定と確率分岐を後ろから評価する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-2-5",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "再帰文法の生成列の不変条件。",
+      "summary": "再帰文法の生成列の不変条件。",
+      "conditions": {
+        "規則": "S::=01 | 0 S 1。"
+      },
+      "choices": {
+        "1": {
+          "value": "111110",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 000111 と異なる。"
+        },
+        "2": {
+          "value": "111000",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 000111 と異なる。"
+        },
+        "3": {
+          "value": "101010",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 000111 と異なる。"
+        },
+        "4": {
+          "value": "000111",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "5": {
+          "value": "000001",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 000111 と異なる。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/basic/page_010.png"
+      ],
+      "core_concept": "再帰文法の生成列の不変条件。",
+      "required_knowledge": "BNF、基底と再帰、生成列の構造、不変条件。",
+      "solution": "基底は01。再帰規則は生成列の外へ0と1を一つずつ付け、0011、000111となる。一般形0^n1^n(n≥1)なので4のみ生成可能。数が等しいだけでなく全0が全1の前に並ぶ必要がある。",
+      "answer_reason": "基底は01。再帰規則は生成列の外へ0と1を一つずつ付け、0011、000111となる。一般形0^n1^n(n≥1)なので4のみ生成可能。数が等しいだけでなく全0が全1の前に並ぶ必要がある。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。基底01へ外側0/1を重ね0^n1^n、000111。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "BNF、基底と再帰、生成列の構造、不変条件。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:information:grammar"
+      ],
+      "discipline_id": "basic_2_10",
+      "concept_id": "finish56_grammar",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：再帰文法の生成列の不変条件。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-BASIC-1-5",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "検査費用と期待損害の合計を最小化。",
+      "summary": "検査費用と期待損害の合計を最小化。",
+      "conditions": {
+        "確率": "1/(x+2)^2。",
+        "検査費": "1回30万円。",
+        "不具合損害": "3240万円。"
+      },
+      "choices": {
+        "1": {
+          "value": "2",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "2": {
+          "value": "3",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "3": {
+          "value": "4",
+          "verdict": "条件内で適切",
+          "reason": "解法の条件と結果を照合する。 計算結果と一致。"
+        },
+        "4": {
+          "value": "5",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "5": {
+          "value": "6",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/basic/page_005.png"
+      ],
+      "core_concept": "検査費用と期待損害の合計を最小化。",
+      "required_knowledge": "期待損害、総費用、微分と凸性、整数候補の比較。",
+      "solution": "万円でC(x)=30x+3240/(x+2)^2。Cprime=30-6480/(x+2)^3=0からx+2=6、x=4。二階微分19440/(x+2)^4>0なので最小。整数候補でもC(3)=219.6、C(4)=210、C(5)=216.122...万円で4回、3。",
+      "answer_reason": "万円でC(x)=30x+3240/(x+2)^2。Cprime=30-6480/(x+2)^3=0からx+2=6、x=4。二階微分19440/(x+2)^4>0なので最小。整数候補でもC(3)=219.6、C(4)=210、C(5)=216.122...万円で4回、3。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。C=30x+3240/(x+2)^2、Cprime=30-6480/(x+2)^3、x4。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "期待損害、総費用、微分と凸性、整数候補の比較。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:inspection"
+      ],
+      "discipline_id": "basic_1_1",
+      "concept_id": "finish56_cost",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：検査費用と期待損害の合計を最小化。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-BASIC-2-2",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "エレベータの状態遷移のガード条件。",
+      "summary": "エレベータの状態遷移のガード条件。",
+      "conditions": {
+        "状態": "停止・上昇・下降のみ。扉・故障・別階呼出を除外。",
+        "a": "上昇自己遷移。",
+        "b": "上昇→停止。",
+        "c": "下降→停止。",
+        "d": "下降自己遷移。",
+        "e": "停止→下降。"
+      },
+      "choices": {
+        "1": {
+          "value": "= = = = =",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 < = = > > と異なる。"
+        },
+        "2": {
+          "value": "= > < = =",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 < = = > > と異なる。"
+        },
+        "3": {
+          "value": "< = = > >",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "= < > = =",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 < = = > > と異なる。"
+        },
+        "5": {
+          "value": "> = = < >",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 < = = > > と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/basic/page_007.png"
+      ],
+      "core_concept": "エレベータの状態遷移のガード条件。",
+      "required_knowledge": "状態、イベント、ガード、状態不変条件。",
+      "solution": "上昇を継続するaは現在階<目的階、停止へ戻るb,cはともに=。下降を続けるdと停止から下降を始めるeは現在階>目的階。a,b,c,d,e=<,=,=,>,>の3。矢印の始点・終点と比較を合わせて読む。",
+      "answer_reason": "上昇を継続するaは現在階<目的階、停止へ戻るb,cはともに=。下降を続けるdと停止から下降を始めるeは現在階>目的階。a,b,c,d,e=<,=,=,>,>の3。矢印の始点・終点と比較を合わせて読む。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。上昇継続<、到着両=、下降継続>、下降開始>。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "状態、イベント、ガード、状態不変条件。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:information:state"
+      ],
+      "discipline_id": "basic_2_15",
+      "concept_id": "finish56_state",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：エレベータの状態遷移のガード条件。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-1-1",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "線形・凸・整数計画の成立条件。",
+      "summary": "線形・凸・整数計画の成立条件。",
+      "conditions": {
+        "列順": "線形計画/図解法/凸計画/整数計画。",
+        "O/X": "正/誤。"
+      },
+      "choices": {
+        "1": {
+          "value": "OOXX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOO と異なる。"
+        },
+        "2": {
+          "value": "OXOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOO と異なる。"
+        },
+        "3": {
+          "value": "XOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOO と異なる。"
+        },
+        "4": {
+          "value": "XXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOO と異なる。"
+        },
+        "5": {
+          "value": "XOOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/basic/page_001.png"
+      ],
+      "core_concept": "線形・凸・整数計画の成立条件。",
+      "required_knowledge": "線形制約、凸最小化、局所と大域、整数計画と近似。",
+      "solution": "アは目的だけ線形ならよいとするので誤りで、線形計画は制約も線形。イは二変数の図解法で正。ウは凸実行可能集合上の凸関数の最小化では局所最適が大域最適となり正。エは整数問題の困難さとヒューリスティック近似の利用で正。XOOOの5。ヒューリスティックが全問題の最適性を保証するわけではない。",
+      "answer_reason": "アは目的だけ線形ならよいとするので誤りで、線形計画は制約も線形。イは二変数の図解法で正。ウは凸実行可能集合上の凸関数の最小化では局所最適が大域最適となり正。エは整数問題の困難さとヒューリスティック近似の利用で正。XOOOの5。ヒューリスティックが全問題の最適性を保証するわけではない。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。線形制約も必要、二変数図解可能、凸最小局所=大域、整数難問近似。誤正正正。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "線形制約、凸最小化、局所と大域、整数計画と近似。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:convex"
+      ],
+      "discipline_id": "basic_1_8",
+      "concept_id": "finish56_convex",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：線形・凸・整数計画の成立条件。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [
+        "finish56_convex"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-1-2",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "定常需要の経済的発注量。",
+      "summary": "定常需要の経済的発注量。",
+      "conditions": {
+        "k": "20000円/回。",
+        "d": "1350単位/年。",
+        "h": "15000円/(単位・年)。",
+        "条件": "欠品なし、需要一定、即時一括補充、0<q≤d。"
+      },
+      "choices": {
+        "1": {
+          "value": "50",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "2": {
+          "value": "60",
+          "verdict": "条件内で適切",
+          "reason": "解法の条件と結果を照合する。 計算結果と一致。"
+        },
+        "3": {
+          "value": "70",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "4": {
+          "value": "80",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "5": {
+          "value": "90",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/basic/page_002.png"
+      ],
+      "core_concept": "定常需要の経済的発注量。",
+      "required_knowledge": "一定需要、即時補充、発注回数、平均在庫、凸費用の最小化。",
+      "solution": "年間費用C(q)=kd/q+hq/2。微分すると-kd/q²+h/2=0、q=sqrt(2kd/h)。指定値でsqrt(2×20000×1350/15000)=sqrt3600=60単位の2。q>0で二階微分2kd/q³>0、q≤dも満たす。購入単価はqによらず、最適qへ影響しない。",
+      "answer_reason": "年間費用C(q)=kd/q+hq/2。微分すると-kd/q²+h/2=0、q=sqrt(2kd/h)。指定値でsqrt(2×20000×1350/15000)=sqrt3600=60単位の2。q>0で二階微分2kd/q³>0、q≤dも満たす。購入単価はqによらず、最適qへ影響しない。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。q=sqrt(2kd/h)=sqrt3600=60。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "一定需要、即時補充、発注回数、平均在庫、凸費用の最小化。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:eoq"
+      ],
+      "discipline_id": "basic_1_5",
+      "concept_id": "finish56_eoq",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：定常需要の経済的発注量。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [
+        "finish56_eoq"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-1-6",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "展開・複素指数・不定形極限の三公式。",
+      "summary": "展開・複素指数・不定形極限の三公式。",
+      "conditions": {
+        "ア": "0中心、適当な条件下の級数。",
+        "イ": "e^(iπ)+1=0。",
+        "ウ": "0/0又は∞/∞、gprime≠0、微分比の極限が存在。"
+      },
+      "choices": {
+        "1": {
+          "value": "ロピタル/オイラー/フーリエ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 マクローリン/オイラー/ロピタル と異なる。"
+        },
+        "2": {
+          "value": "マクローリン/フーリエ/オイラー",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 マクローリン/オイラー/ロピタル と異なる。"
+        },
+        "3": {
+          "value": "マクローリン/オイラー/ロピタル",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "フーリエ/ロピタル/マクローリン",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 マクローリン/オイラー/ロピタル と異なる。"
+        },
+        "5": {
+          "value": "フーリエ/マクローリン/ロピタル",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 マクローリン/オイラー/ロピタル と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/basic/page_006.png",
+        "extracted/pages/R01/basic/page_007.png"
+      ],
+      "core_concept": "展開・複素指数・不定形極限の三公式。",
+      "required_knowledge": "Taylor/Maclaurin、複素指数、ロピタルの適用条件。",
+      "solution": "アは0中心のf(x)=Σf^(k)(0)x^k/k!なのでマクローリン。イはe^(iπ)+1=0なのでオイラーの等式。ウは0/0又は∞/∞で微分比の極限を用いるロピタル。3。何回でも微分可能というだけで無限級数と関数が一致するとは限らず、原典の適当な条件を保持する。",
+      "answer_reason": "アは0中心のf(x)=Σf^(k)(0)x^k/k!なのでマクローリン。イはe^(iπ)+1=0なのでオイラーの等式。ウは0/0又は∞/∞で微分比の極限を用いるロピタル。3。何回でも微分可能というだけで無限級数と関数が一致するとは限らず、原典の適当な条件を保持する。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。0中心マクローリン、eiπ+1=0オイラー、0/0微分比ロピタル。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "Taylor/Maclaurin、複素指数、ロピタルの適用条件。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:mathformulas"
+      ],
+      "discipline_id": "basic_1_9",
+      "concept_id": "finish56_math",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：展開・複素指数・不定形極限の三公式。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-2-5",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "ハミング距離と一ビット誤り訂正。",
+      "summary": "ハミング距離と一ビット誤り訂正。",
+      "conditions": {
+        "比較": "1110001 / 0001110",
+        "受信": "1001010",
+        "検査式": "x5=x2+x3+x4、x6=x1+x3+x4、x7=x1+x2+x4、全てmod2。",
+        "仮定": "通信誤りは高々一ビット。"
+      },
+      "choices": {
+        "1": {
+          "value": "5/1001010",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 7/1011010 と異なる。"
+        },
+        "2": {
+          "value": "5/0001010",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 7/1011010 と異なる。"
+        },
+        "3": {
+          "value": "5/1101010",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 7/1011010 と異なる。"
+        },
+        "4": {
+          "value": "7/1001010",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 7/1011010 と異なる。"
+        },
+        "5": {
+          "value": "7/1011010",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/basic/page_010.png"
+      ],
+      "core_concept": "ハミング距離と一ビット誤り訂正。",
+      "required_knowledge": "XOR、ハミング距離、mod2の検査式、最小距離と訂正能力。",
+      "solution": "1110001と0001110の各位置を比較すると距離7。受信1001010について無反転と七通りの一ビット反転を調べ、三つの検査ビットが全て再計算値に合う1011010を選ぶ。R01では第3位置を反転し、情報1011のパリティは010。 最小距離3なので、誤りが高々1という条件下で訂正が一意になる。",
+      "answer_reason": "1110001と0001110の各位置を比較すると距離7。受信1001010について無反転と七通りの一ビット反転を調べ、三つの検査ビットが全て再計算値に合う1011010を選ぶ。R01では第3位置を反転し、情報1011のパリティは010。 最小距離3なので、誤りが高々1という条件下で訂正が一意になる。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。二列全7bit違い、受信3bit目反転1011010は三パリティ一致。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "XOR、ハミング距離、mod2の検査式、最小距離と訂正能力。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:information:hamming"
+      ],
+      "discipline_id": "basic_2_1",
+      "concept_id": "finish56_hamming",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：ハミング距離と一ビット誤り訂正。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-2-4",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "ハミング距離と一ビット誤り訂正。",
+      "summary": "ハミング距離と一ビット誤り訂正。",
+      "conditions": {
+        "比較": "1110101 / 1001111",
+        "受信": "1000010",
+        "検査式": "x5=x2+x3+x4、x6=x1+x3+x4、x7=x1+x2+x4、全てmod2。",
+        "仮定": "通信誤りは高々一ビット。"
+      },
+      "choices": {
+        "1": {
+          "value": "4/0000010",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 4/1000011 と異なる。"
+        },
+        "2": {
+          "value": "5/1100010",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 4/1000011 と異なる。"
+        },
+        "3": {
+          "value": "4/1001010",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 4/1000011 と異なる。"
+        },
+        "4": {
+          "value": "5/1000110",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 4/1000011 と異なる。"
+        },
+        "5": {
+          "value": "4/1000011",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/basic/page_007.png"
+      ],
+      "core_concept": "ハミング距離と一ビット誤り訂正。",
+      "required_knowledge": "XOR、ハミング距離、mod2の検査式、最小距離と訂正能力。",
+      "solution": "1110101と1001111の各位置を比較すると距離4。受信1000010について無反転と七通りの一ビット反転を調べ、三つの検査ビットが全て再計算値に合う1000011を選ぶ。R04では第7位置を反転し、情報1000のパリティは011。 最小距離3なので、誤りが高々1という条件下で訂正が一意になる。",
+      "answer_reason": "1110101と1001111の各位置を比較すると距離4。受信1000010について無反転と七通りの一ビット反転を調べ、三つの検査ビットが全て再計算値に合う1000011を選ぶ。R04では第7位置を反転し、情報1000のパリティは011。 最小距離3なので、誤りが高々1という条件下で訂正が一意になる。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。ハミング距離4、受信末尾を反転1000011がパリティ一致。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "XOR、ハミング距離、mod2の検査式、最小距離と訂正能力。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:information:hamming"
+      ],
+      "discipline_id": "basic_2_1",
+      "concept_id": "finish56_hamming",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：ハミング距離と一ビット誤り訂正。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-4-4",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "化学物質の製法・特性・用途。",
+      "summary": "化学物質の製法・特性・用途。",
+      "conditions": {
+        "原典": "五肢の前半と後半をともに判定。"
+      },
+      "choices": {
+        "1": {
+          "value": "炭酸NaはHaber-Bosch製造",
+          "verdict": "不適切",
+          "reason": "Haber-Boschはアンモニア合成。炭酸Naの代表はSolvay法。"
+        },
+        "2": {
+          "value": "黄リンは毒性少ない",
+          "verdict": "不適切",
+          "reason": "黄リンは強い毒性がある。空気中発火と水中保管は毒性の低さの根拠でない。"
+        },
+        "3": {
+          "value": "TiO2の一部は光触媒用途",
+          "verdict": "条件内で適切",
+          "reason": "光を受けて表面で反応を促し、抗菌・防汚等へ使われる。"
+        },
+        "4": {
+          "value": "黒鉛は極めて硬く導電性悪い",
+          "verdict": "不適切",
+          "reason": "層状構造で軟らかく、電気を伝える。ダイヤモンドと混同。"
+        },
+        "5": {
+          "value": "Pbは鉛電池正極、PbOガラス",
+          "verdict": "不適切",
+          "reason": "放電時の負極がPb、正極活物質はPbO2。後半のガラス用途と合わせても肢全体は誤。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "黄リンの毒性分類とSolvayの詳細一次資料は追加照合対象。TiO2の組成・結晶相・照射条件により光触媒性能が異なる。",
+      "evidence": [
+        "extracted/pages/R01/basic/page_017.png"
+      ],
+      "core_concept": "化学物質の製法・特性・用途。",
+      "required_knowledge": "Haber-BoschとSolvay、同素体と構造、光触媒、鉛蓄電池の活物質。",
+      "solution": "3のみ適切。製法名、同素体、電極極性、毒性を個別に判定する。原典の「中には」「使われている」という範囲を保持し、全TiO2が可視光で同じ性能を出すとはしない。",
+      "answer_reason": "3のみ適切。製法名、同素体、電極極性、毒性を個別に判定する。原典の「中には」「使われている」という範囲を保持し、全TiO2が可視光で同じ性能を出すとはしない。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。TiO2光触媒○、炭酸Na法違い、黄リン毒性、黒鉛柔導電、Pb負極。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "Haber-BoschとSolvay、同素体と構造、光触媒、鉛蓄電池の活物質。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:basicchem:substances"
+      ],
+      "discipline_id": "basic_4_4",
+      "concept_id": "finish56_substances",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：化学物質の製法・特性・用途。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [
+        "finish56_titania",
+        "openstax_batteries"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-BASIC-1-1",
+      "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+      "stem": "等号条件を含む三つの不等式。",
+      "summary": "等号条件を含む三つの不等式。",
+      "conditions": {
+        "1": "非負実数n個。",
+        "2": "0<θ≤π/2。",
+        "3": "区間のfsecond>0、x1≠x2。"
+      },
+      "choices": {
+        "1": {
+          "value": "≤ = =",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 ≤ ≥ < と異なる。"
+        },
+        "2": {
+          "value": "≤ ≥ =",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 ≤ ≥ < と異なる。"
+        },
+        "3": {
+          "value": "= ≤ <",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 ≤ ≥ < と異なる。"
+        },
+        "4": {
+          "value": "< = ≥",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 ≤ ≥ < と異なる。"
+        },
+        "5": {
+          "value": "≤ ≥ <",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/basic/page_001.png"
+      ],
+      "core_concept": "等号条件を含む三つの不等式。",
+      "required_knowledge": "相加相乗、凹関数と弦、端点、厳密凸性とJensen。",
+      "solution": "相加相乗は幾何平均≤算術平均で、全数が同じなら等号。sinは[0,π/2]で凹なので両端を結ぶ直線より上にありsinθ≥2θ/π、θ>0で割ってsinθ/θ≥2/π。π/2は等号を含む。fsecond>0の厳密凸では異なる二点の中点関数値が平均より厳密に小さい。≤,≥,<の5。",
+      "answer_reason": "相加相乗は幾何平均≤算術平均で、全数が同じなら等号。sinは[0,π/2]で凹なので両端を結ぶ直線より上にありsinθ≥2θ/π、θ>0で割ってsinθ/θ≥2/π。π/2は等号を含む。fsecond>0の厳密凸では異なる二点の中点関数値が平均より厳密に小さい。≤,≥,<の5。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。相加相乗≤、sinθ/θ≥2/π端点等号、厳密凸中点<。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "相加相乗、凹関数と弦、端点、厳密凸性とJensen。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:inequality"
+      ],
+      "discipline_id": "basic_1_9",
+      "concept_id": "finish56_inequality",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：等号条件を含む三つの不等式。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-BASIC-4-1",
+      "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+      "stem": "結合双極子のベクトル和と分子極性。",
+      "summary": "結合双極子のベクトル和と分子極性。",
+      "conditions": {
+        "対象": "中性分子の通常構造の極性。"
+      },
+      "choices": {
+        "1": {
+          "value": "CO2",
+          "verdict": "不適切",
+          "reason": "直線対称で二つのC=O双極子が相殺。"
+        },
+        "2": {
+          "value": "ジエチルエーテル",
+          "verdict": "条件内で適切",
+          "reason": "Oの周りが折れ曲がり、C-O結合の双極子は相殺しない。"
+        },
+        "3": {
+          "value": "CH4",
+          "verdict": "不適切",
+          "reason": "正四面体対称で相殺。"
+        },
+        "4": {
+          "value": "BF3",
+          "verdict": "不適切",
+          "reason": "平面三角形対称で相殺。"
+        },
+        "5": {
+          "value": "CCl4",
+          "verdict": "不適切",
+          "reason": "正四面体対称で相殺。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/basic/page_014.png"
+      ],
+      "core_concept": "結合双極子のベクトル和と分子極性。",
+      "required_knowledge": "分子形、結合極性、双極子ベクトル和、対称性。",
+      "solution": "結合が極性でも分子全体は対称性によって無極性になり得る。候補ではジエチルエーテルのO付近の折れ曲がり構造だけが双極子を残すので2。",
+      "answer_reason": "結合が極性でも分子全体は対称性によって無極性になり得る。候補ではジエチルエーテルのO付近の折れ曲がり構造だけが双極子を残すので2。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。エーテル折れ曲がり双極子非零、他4対称相殺。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "分子形、結合極性、双極子ベクトル和、対称性。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:basicchem:polarity"
+      ],
+      "discipline_id": "basic_4_4",
+      "concept_id": "finish56_polarity",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：結合双極子のベクトル和と分子極性。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [
+        "finish56_polarity"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-BASIC-4-2",
+      "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+      "stem": "塩酸・酢酸・フェノールの酸性度。",
+      "summary": "塩酸・酢酸・フェノールの酸性度。",
+      "conditions": {
+        "a": "フェノール。",
+        "b": "酢酸。",
+        "c": "塩酸。"
+      },
+      "choices": {
+        "1": {
+          "value": "a b c",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 c b a と異なる。"
+        },
+        "2": {
+          "value": "b a c",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 c b a と異なる。"
+        },
+        "3": {
+          "value": "c b a",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "b c a",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 c b a と異なる。"
+        },
+        "5": {
+          "value": "c a b",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 c b a と異なる。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/basic/page_014.png"
+      ],
+      "core_concept": "塩酸・酢酸・フェノールの酸性度。",
+      "required_knowledge": "強酸・弱酸、共役塩基と共鳴、酸性度比較。",
+      "solution": "水中の通常比較は強酸HCl、弱酸酢酸、さらに弱いフェノールの順。c,b,aの3。フェノキシドも共鳴するが、カルボキシラートの安定性を同じ強さとしない。",
+      "answer_reason": "水中の通常比較は強酸HCl、弱酸酢酸、さらに弱いフェノールの順。c,b,aの3。フェノキシドも共鳴するが、カルボキシラートの安定性を同じ強さとしない。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。塩酸>酢酸>フェノール、cba。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "強酸・弱酸、共役塩基と共鳴、酸性度比較。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:basicchem:acid"
+      ],
+      "discipline_id": "basic_4_4",
+      "concept_id": "finish56_acid",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：塩酸・酢酸・フェノールの酸性度。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [
+        "purdue_acid_strength"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-BASIC-1-5",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "stem": "投影図の配置と断面図の目的。",
+      "summary": "投影図の配置と断面図の目的。",
+      "conditions": {
+        "O/X": "正/誤。",
+        "列順": "第三角/第一角/想像図という名称/明記不要/主投影図。"
+      },
+      "choices": {
+        "1": {
+          "value": "OOXXX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXXXO と異なる。"
+        },
+        "2": {
+          "value": "XOOXX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXXXO と異なる。"
+        },
+        "3": {
+          "value": "XXOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXXXO と異なる。"
+        },
+        "4": {
+          "value": "XXXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXXXO と異なる。"
+        },
+        "5": {
+          "value": "OXXXO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/basic/page_005.png"
+      ],
+      "core_concept": "投影図の配置と断面図の目的。",
+      "required_knowledge": "第一角・第三角、主投影図、断面図、図面の解釈。",
+      "solution": "アの第三角の平面図上・右側面図右は正。イの第一角では平面図は下なので誤。ウは内部を切って示す断面図で、想像図との呼称が誤。エは投影法明記不要が誤。オは情報量の多い主投影図を使い単純な物体は一図で足りる場合があり正。OXXXOの5。",
+      "answer_reason": "アの第三角の平面図上・右側面図右は正。イの第一角では平面図は下なので誤。ウは内部を切って示す断面図で、想像図との呼称が誤。エは投影法明記不要が誤。オは情報量の多い主投影図を使い単純な物体は一図で足りる場合があり正。OXXXOの5。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。第三角正、第一角上×、想像図×断面図、明記不要×、主投影○。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "第一角・第三角、主投影図、断面図、図面の解釈。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:drawing"
+      ],
+      "discipline_id": "basic_1_10",
+      "concept_id": "finish56_drawing",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：投影図の配置と断面図の目的。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [
+        "design48_iso"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-1-6",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "便益の期待値から建設費を引く。",
+      "summary": "便益の期待値から建設費を引く。",
+      "conditions": {
+        "確率": "a.7,b.2,c.1。",
+        "便益(abc)": "ア(5,4,4)、イ(5,4,7)、ウ(3,6,7)、エ(6,5,3)、オ(7,4,5)。",
+        "費用": "ア3、イ3、ウ3、エ4、オ6、額は億円。"
+      },
+      "choices": {
+        "1": {
+          "value": "ア",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 イ と異なる。"
+        },
+        "2": {
+          "value": "イ",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "3": {
+          "value": "ウ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 イ と異なる。"
+        },
+        "4": {
+          "value": "エ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 イ と異なる。"
+        },
+        "5": {
+          "value": "オ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 イ と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/basic/page_004.png",
+        "extracted/pages/R04/basic/page_005.png"
+      ],
+      "core_concept": "便益の期待値から建設費を引く。",
+      "required_knowledge": "期待値、一定費用の控除、最大純便益。",
+      "solution": "期待価値=0.7Ba+0.2Bb+0.1Bc-C。ア4.7-3=1.7、イ5.0-3=2.0、ウ4.0-3=1.0、エ5.5-4=1.5、オ6.2-6=.2億円。最大イの2。便益最大のオでも費用控除後は最大でない。",
+      "answer_reason": "期待価値=0.7Ba+0.2Bb+0.1Bc-C。ア4.7-3=1.7、イ5.0-3=2.0、ウ4.0-3=1.0、エ5.5-4=1.5、オ6.2-6=.2億円。最大イの2。便益最大のオでも費用控除後は最大でない。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。価値ア1.7イ2.0ウ1.0エ1.5オ.2、最大イ。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "期待値、一定費用の控除、最大純便益。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:decision"
+      ],
+      "discipline_id": "basic_1_8",
+      "concept_id": "finish56_decision",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：便益の期待値から建設費を引く。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-2-3",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "LRUで参照履歴を更新する。",
+      "summary": "LRUで参照履歴を更新する。",
+      "conditions": {
+        "容量": "3ページ、初期空。",
+        "参照": "2,1,1,2,3,4,1,3,4。",
+        "時間": "ヒットH、外部M。原典例はミスに追加Hを計上しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "7M+2H",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 5M+4H と異なる。"
+        },
+        "2": {
+          "value": "6M+3H",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 5M+4H と異なる。"
+        },
+        "3": {
+          "value": "5M+4H",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "4M+5H",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 5M+4H と異なる。"
+        },
+        "5": {
+          "value": "3M+6H",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 5M+4H と異なる。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/basic/page_006.png"
+      ],
+      "core_concept": "LRUで参照履歴を更新する。",
+      "required_knowledge": "LRU、ページフォールト、ヒット時更新、アクセス時間の原典モデル。",
+      "solution": "古い→新しいの順で保持。2(M):[2]、1(M):[2,1]、1(H):[2,1]、2(H):[1,2]、3(M):[1,2,3]、4(M):1を追出し[2,3,4]、1(M):2を追出し[3,4,1]、3(H):[4,1,3]、4(H):[1,3,4]。外部5回・主記憶4回で5M+4Hの3。挿入の古さを使うFIFOとは違いヒットでも順序を更新する。",
+      "answer_reason": "古い→新しいの順で保持。2(M):[2]、1(M):[2,1]、1(H):[2,1]、2(H):[1,2]、3(M):[1,2,3]、4(M):1を追出し[2,3,4]、1(M):2を追出し[3,4,1]、3(H):[4,1,3]、4(H):[1,3,4]。外部5回・主記憶4回で5M+4Hの3。挿入の古さを使うFIFOとは違いヒットでも順序を更新する。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。LRU miss at1,2,5,6,7、5M4H。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "LRU、ページフォールト、ヒット時更新、アクセス時間の原典モデル。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:information:lru"
+      ],
+      "discipline_id": "basic_2_5",
+      "concept_id": "finish56_lru",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：LRUで参照履歴を更新する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-BASIC-4-2",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "stem": "コロイドの分離・光散乱・移動と状態。",
+      "summary": "コロイドの分離・光散乱・移動と状態。",
+      "conditions": {
+        "対象": "原典の通常の液体中コロイドの用語。"
+      },
+      "choices": {
+        "1": {
+          "value": "電解質で疎水コロイド凝析",
+          "verdict": "条件内で適切",
+          "reason": "粒子間の反発が弱まり集合・沈殿。"
+        },
+        "2": {
+          "value": "半透膜で透析",
+          "verdict": "条件内で適切",
+          "reason": "小さい分子・イオンを透過させコロイド粒子と分離。"
+        },
+        "3": {
+          "value": "光路が見えるTyndall",
+          "verdict": "条件内で適切",
+          "reason": "粒子による光散乱。"
+        },
+        "4": {
+          "value": "直流電場で電気泳動",
+          "verdict": "条件内で適切",
+          "reason": "荷電粒子が電場に応じ移動。"
+        },
+        "5": {
+          "value": "流動しない状態がゾル",
+          "verdict": "不適切",
+          "reason": "流動性のある分散系がゾル、網目等によって流動しにくい状態がゲル。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/basic/page_013.png"
+      ],
+      "core_concept": "コロイドの分離・光散乱・移動と状態。",
+      "required_knowledge": "コロイド粒子、凝析、透析、Tyndall、電気泳動、ゾルとゲル。",
+      "solution": "不適切5。凝析、透析、光散乱、電気泳動はそれぞれ電解質・膜・光・電場の作用。ゾルとゲルの状態を取り違えている。",
+      "answer_reason": "不適切5。凝析、透析、光散乱、電気泳動はそれぞれ電解質・膜・光・電場の作用。ゾルとゲルの状態を取り違えている。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。非流動ゲル、ゾルは流動分散。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "コロイド粒子、凝析、透析、Tyndall、電気泳動、ゾルとゲル。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:basicchem:colloids"
+      ],
+      "discipline_id": "basic_4_4",
+      "concept_id": "finish56_colloid",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：コロイドの分離・光散乱・移動と状態。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [
+        "openstax_colloids"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-BASIC-1-4",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "stem": "減速比と動力保存から出力トルクを求める。",
+      "summary": "減速比と動力保存から出力トルクを求める。",
+      "conditions": {
+        "速度比": "入力角速度/出力角速度=30。",
+        "効率": "ほぼ100%、滑りなし。"
+      },
+      "choices": {
+        "1": {
+          "value": "入力1→出力30/トルク等倍",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 入力30→出力1/トルク30倍 と異なる。"
+        },
+        "2": {
+          "value": "入力30→出力1/トルク等倍",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 入力30→出力1/トルク30倍 と異なる。"
+        },
+        "3": {
+          "value": "入力30→出力1/トルク30倍",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "入力1→出力30/トルク30倍",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 入力30→出力1/トルク30倍 と異なる。"
+        },
+        "5": {
+          "value": "入力30→出力1/トルク1/30",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 入力30→出力1/トルク30倍 と異なる。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/basic/page_003.png"
+      ],
+      "core_concept": "減速比と動力保存から出力トルクを求める。",
+      "required_knowledge": "角速度、動力とトルク、減速比、伝達効率。",
+      "solution": "速度比ωin/ωout=30なので入力30回転に出力1回転。動力P=Tωと効率ほぼ1からToutωout≈Tinωin、Tout≈30Tin。両条件を満たす3。速度が減ってもトルクは同じとすると出力動力が不足する。",
+      "answer_reason": "速度比ωin/ωout=30なので入力30回転に出力1回転。動力P=Tωと効率ほぼ1からToutωout≈Tinωin、Tout≈30Tin。両条件を満たす3。速度が減ってもトルクは同じとすると出力動力が不足する。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。omegaout=omegain/30、P=Tomega保存Tout30倍。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "角速度、動力とトルク、減速比、伝達効率。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:gear"
+      ],
+      "discipline_id": "basic_1_6",
+      "concept_id": "finish56_gear",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：減速比と動力保存から出力トルクを求める。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-1-4",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "平面応力と平面ひずみの拘束条件。",
+      "summary": "平面応力と平面ひずみの拘束条件。",
+      "conditions": {
+        "薄板": "面内荷重。",
+        "長柱": "側面に長さ方向一様荷重。"
+      },
+      "choices": {
+        "1": {
+          "value": "薄板の面外応力無視=平面応力",
+          "verdict": "条件内で適切",
+          "reason": "自由表面と薄さから面外応力を小さいとする。"
+        },
+        "2": {
+          "value": "長柱の軸応力無視=平面ひずみ",
+          "verdict": "不適切",
+          "reason": "無視するのは軸ひずみ、軸応力はPoisson結合で残り得る。"
+        },
+        "3": {
+          "value": "長柱の軸ひずみ無視=平面応力",
+          "verdict": "不適切",
+          "reason": "その近似は平面ひずみ。"
+        },
+        "4": {
+          "value": "薄板の面外ひずみ無視=平面ひずみ",
+          "verdict": "不適切",
+          "reason": "薄板は面外変形を許し、通常面外ひずみは0でない。"
+        },
+        "5": {
+          "value": "長柱の軸応力無視=平面応力",
+          "verdict": "不適切",
+          "reason": "指定の長柱を軸方向変形の拘束モデルとして読むとひずみを無視。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "原典長柱の軸方向拘束は省略。平面ひずみの標準的適用を説明し、自由な端部・一様軸伸びがある一般化平面ひずみとは区別して査読。",
+      "evidence": [
+        "extracted/pages/R07/basic/page_003.png"
+      ],
+      "core_concept": "平面応力と平面ひずみの拘束条件。",
+      "required_knowledge": "三次元Hooke則、Poisson効果、自由面、拘束と二次元近似。",
+      "solution": "適切1。平面応力ではσz,τxz,τyz≈0でもεzはPoisson効果で一般に0でない。平面ひずみではεz,γxz,γyz≈0でもσzは一般に0でない。長柱は端部から離れた一様部分の変形拘束という適用条件を確かめる。",
+      "answer_reason": "適切1。平面応力ではσz,τxz,τyz≈0でもεzはPoisson効果で一般に0でない。平面ひずみではεz,γxz,γyz≈0でもσzは一般に0でない。長柱は端部から離れた一様部分の変形拘束という適用条件を確かめる。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。薄板面外応力0、長柱軸ひずみ0で軸応力は一般0でない。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "三次元Hooke則、Poisson効果、自由面、拘束と二次元近似。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:plane"
+      ],
+      "discipline_id": "basic_1_6",
+      "concept_id": "finish56_plane",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：平面応力と平面ひずみの拘束条件。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-1-5",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "M/M/1の系内時間と待ち時間を分ける。",
+      "summary": "M/M/1の系内時間と待ち時間を分ける。",
+      "conditions": {
+        "到着": "36人/時間。",
+        "処理": "平均50秒/人、指数分布。",
+        "窓口": "1、Poisson到着。",
+        "問": "並んでから処理終了まで。"
+      },
+      "choices": {
+        "1": {
+          "value": "0",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "2": {
+          "value": "25",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "3": {
+          "value": "50",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "4": {
+          "value": "75",
+          "verdict": "不適切",
+          "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+        },
+        "5": {
+          "value": "100",
+          "verdict": "条件内で適切",
+          "reason": "解法の条件と結果を照合する。 計算結果と一致。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/basic/page_003.png"
+      ],
+      "core_concept": "M/M/1の系内時間と待ち時間を分ける。",
+      "required_knowledge": "Poisson到着、指数サービス、ρ<1、Little則、系内と行列。",
+      "solution": "λ=36/3600=.01人/秒、μ=1/50=.02人/秒、ρ=.5。系内人数L=ρ/(1-ρ)=1、滞在W=L/λ=100秒。処理50秒を含むので待ちだけなら50秒。5。到着人数とサービス率を同じ単位にし、平均処理時間50秒を率50としない。",
+      "answer_reason": "λ=36/3600=.01人/秒、μ=1/50=.02人/秒、ρ=.5。系内人数L=ρ/(1-ρ)=1、滞在W=L/λ=100秒。処理50秒を含むので待ちだけなら50秒。5。到着人数とサービス率を同じ単位にし、平均処理時間50秒を率50としない。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。lambda.01/s,mu.02/s,rho.5,L1,W100s待ち50sサービス50s。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "Poisson到着、指数サービス、ρ<1、Little則、系内と行列。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。",
+      "theory_references": [
+        "theory:design:queue"
+      ],
+      "discipline_id": "basic_1_1",
+      "concept_id": "finish56_queue",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：M/M/1の系内時間と待ち時間を分ける。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "表・係数・単位・成立条件を確認し、独立解法を全候補へ照合する。"
+      },
+      "citations": [
+        "design48_queue_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

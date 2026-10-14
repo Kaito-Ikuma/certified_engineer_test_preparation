@@ -1,0 +1,45 @@
+{
+  "stem": "風化・堆積・マグマ・熱水・石油の濃集機構を比較する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "風化・堆積・マグマ・熱水・石油の濃集機構を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "熱水中の元素の濃縮・沈殿",
+      "verdict": "代表的条件で適切",
+      "reason": "温度・圧力・酸化還元・pH等の変化で溶解度が変わり鉱化する。"
+    },
+    "2": {
+      "value": "硫化物メルト分離・結晶集積",
+      "verdict": "代表的条件で適切",
+      "reason": "マグマ内の液相不混和や結晶分化・集積で金属が濃集する正マグマ成因。"
+    },
+    "3": {
+      "value": "Al・Feを溶かしてNa・K・Ca・Mgを残留",
+      "verdict": "不適切",
+      "reason": "通常の強い風化残留では移動しやすい成分が溶脱し、Al・Fe等の難溶性成分が相対濃集する。列挙した方向が逆。"
+    },
+    "4": {
+      "value": "石油のトラップ濃集",
+      "verdict": "代表的条件で適切",
+      "reason": "移動する炭化水素が貯留層と封じる構造へ集まる。根源岩での生成とトラップは別段階。"
+    },
+    "5": {
+      "value": "溶存成分沈殿又は粒子堆積",
+      "verdict": "代表的条件で適切",
+      "reason": "化学的な沈殿と物理的な運搬・分級による堆積鉱床の二つを含む。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_010.png"
+  ],
+  "question_id": "R02-REG-APPLIED-26",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "215b76953d6e023968fa607cc65c25947cb40706bfb09ccfbfad9859f98eeefd",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

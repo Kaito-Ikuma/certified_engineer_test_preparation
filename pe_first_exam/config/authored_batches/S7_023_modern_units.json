@@ -1,0 +1,1450 @@
+{
+  "batch_id": "S7_023_modern_units",
+  "reference_date": "2026-10-11",
+  "scope": "単位系11・現代物理8、18原典画像、19初回公式一致。導入cd欠落2・改定後三重点・beta安定全称の4疑義を保持。",
+  "questions": [
+    {
+      "question_id": "H23-REG-APPLIED-06",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "放射能・力・磁束密度・仕事率・抵抗を基本単位へ分解し、指数の誤りを選ぶ。",
+      "summary": "放射能・力・磁束密度・仕事率・抵抗を基本単位へ分解し、指数の誤りを選ぶ。",
+      "conditions": {
+        "方向": "誤っているもの。",
+        "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(\\mathrm{Bq=s^{-1}}\\)",
+          "verdict": "適切",
+          "reason": "放射能は単位時間の壊変数なのでBqはsの-1乗。周期周波数と同じ次元でも意味は区別する。"
+        },
+        "2": {
+          "value": "\\(\\mathrm{N=m\\,kg\\,s^{-2}}\\)",
+          "verdict": "適切",
+          "reason": "力F=maからN=\\(\\mathrm{kg\\,m\\,s^{-2}}\\)である。"
+        },
+        "3": {
+          "value": "\\(\\mathrm{T=m\\,kg\\,s^{-2}A^{-2}}\\)",
+          "verdict": "不適切",
+          "reason": "電流に働く磁気力F=IℓBからT=N/(A m)=kg s^-2 A^-1。原典は不要なmとAの指数-2を含む。"
+        },
+        "4": {
+          "value": "\\(\\mathrm{W=m^2kg\\,s^{-3}}\\)",
+          "verdict": "適切",
+          "reason": "仕事率はエネルギーを時間で割りW=\\(\\mathrm{kg\\,m^2s^{-3}}\\)である。"
+        },
+        "5": {
+          "value": "\\(\\mathrm{\\Omega=m^2kg\\,s^{-3}A^{-2}}\\)",
+          "verdict": "適切",
+          "reason": "抵抗R=V/IからΩ=\\(\\mathrm{kg\\,m^2s^{-3}A^{-2}}\\)である。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "原典の導入は6基本単位だけを列挙し、光度のcdを欠いてその他全部を組立できるとする。SIは出題時も7基本単位である。選択肢内の指数誤りは特定できるが導入の全称を正しい記述として校正完了にしない。",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_003.png"
+      ],
+      "core_concept": "物理量の定義から組立単位を導く",
+      "required_knowledge": "F=ma、p=F/S、仕事Fℓ、P=E/t、Q=It、V=E/Q、R=V/I、磁気力IℓB。",
+      "solution": "3が指数を取り違えている。\\(F=I\\ell B\\)より\\([B]=\\mathrm{N/(A\\,m)=kg\\,s^{-2}A^{-1}}\\)である。長さを一つ消し電流指数を-1にする必要がある。Bq/N/W/Ωは各物理定義から導ける。導入のcd欠落は別の疑義として保持する。",
+      "independent_answer": "3",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。Tの電流指数は-1であり-2ではない。導入の6基本単位列挙は光度cdを欠く。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "3が指数を取り違えている。\\(F=I\\ell B\\)より\\([B]=\\mathrm{N/(A\\,m)=kg\\,s^{-2}A^{-1}}\\)である。長さを一つ消し電流指数を-1にする必要がある。Bq/N/W/Ωは各物理定義から導ける。導入のcd欠落は別の疑義として保持する。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:units:derived",
+        "theory:units:electrical",
+        "theory:units:activity"
+      ],
+      "discipline_id": "physics_units",
+      "concept_id": "concept_043",
+      "cross_concepts": [],
+      "classification_reason": "原典全肢の中心は物理量の定義から組立単位を導くである。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻読者に対し既知の定義・指数又は一段代入で解ける。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "si_nist811",
+        "si_brochure9"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-04",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "stem": "周波数・力・圧力・仕事・電圧の組立単位を比較する。",
+      "summary": "周波数・力・圧力・仕事・電圧の組立単位を比較する。",
+      "conditions": {
+        "方向": "誤っているもの。",
+        "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(\\mathrm{Hz=s^{-1}}\\)",
+          "verdict": "適切",
+          "reason": "周期Tの逆数でHz=s^-1である。"
+        },
+        "2": {
+          "value": "\\(\\mathrm{N=m\\,kg\\,s^{-2}}\\)",
+          "verdict": "適切",
+          "reason": "力F=maからN=\\(\\mathrm{kg\\,m\\,s^{-2}}\\)である。"
+        },
+        "3": {
+          "value": "\\(\\mathrm{Pa=m^{-1}kg\\,s^{-2}}\\)",
+          "verdict": "適切",
+          "reason": "圧力p=F/SからPa=\\(\\mathrm{kg\\,m^{-1}s^{-2}}\\)である。"
+        },
+        "4": {
+          "value": "\\(\\mathrm{J=m^2kg\\,s^{-2}}\\)",
+          "verdict": "適切",
+          "reason": "仕事は力と移動距離の積でJ=\\(\\mathrm{kg\\,m^2s^{-2}}\\)である。"
+        },
+        "5": {
+          "value": "\\(\\mathrm{V=m\\,kg\\,s^{-3}A^{-1}}\\)",
+          "verdict": "不適切",
+          "reason": "電位差は仕事/電荷からV=J/C=\\(\\mathrm{kg\\,m^2s^{-3}A^{-1}}\\)である。原典はmの指数が1であり2ではない。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/17_applied_science/page_003.png"
+      ],
+      "core_concept": "電気量を力学的エネルギーへ接続する",
+      "required_knowledge": "Hz=1/T、N=ma、Pa=N/m²、J=Nm、C=As、V=J/C。",
+      "solution": "5の長さ指数が不足している。電圧は1Cを移す仕事で\\(V=J/C\\)、\\([V]=\\mathrm{kg\\,m^2s^{-3}A^{-1}}\\)となる。OCRのma等を文字通り使わず原典上付きと全7基本単位を確認した。",
+      "independent_answer": "5",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。V=W/A、長さ指数2であり1ではない。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "5の長さ指数が不足している。電圧は1Cを移す仕事で\\(V=J/C\\)、\\([V]=\\mathrm{kg\\,m^2s^{-3}A^{-1}}\\)となる。OCRのma等を文字通り使わず原典上付きと全7基本単位を確認した。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:units:derived",
+        "theory:units:electrical"
+      ],
+      "discipline_id": "physics_units",
+      "concept_id": "concept_043",
+      "cross_concepts": [],
+      "classification_reason": "原典全肢の中心は電気量を力学的エネルギーへ接続するである。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻読者に対し既知の定義・指数又は一段代入で解ける。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "si_nist811",
+        "si_brochure9"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-04",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "stem": "電荷・力・圧力・仕事率・抵抗の基本単位指数を確認する。",
+      "summary": "電荷・力・圧力・仕事率・抵抗の基本単位指数を確認する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(\\mathrm{C=s\\,A}\\)",
+          "verdict": "適切",
+          "reason": "電荷Q=ItよりC=Asである。"
+        },
+        "2": {
+          "value": "\\(\\mathrm{N=m\\,kg\\,s^{-2}}\\)",
+          "verdict": "適切",
+          "reason": "力F=maからN=\\(\\mathrm{kg\\,m\\,s^{-2}}\\)である。"
+        },
+        "3": {
+          "value": "\\(\\mathrm{Pa=m^{-1}kg\\,s^{-2}}\\)",
+          "verdict": "適切",
+          "reason": "圧力p=F/SからPa=\\(\\mathrm{kg\\,m^{-1}s^{-2}}\\)である。"
+        },
+        "4": {
+          "value": "\\(\\mathrm{W=m\\,kg\\,s^{-3}}\\)",
+          "verdict": "不適切",
+          "reason": "仕事率はエネルギーを時間で割りW=\\(\\mathrm{kg\\,m^2s^{-3}}\\)である。原典は長さ指数1であり、仕事の移動距離が一つ不足する。"
+        },
+        "5": {
+          "value": "\\(\\mathrm{\\Omega=m^2kg\\,s^{-3}A^{-2}}\\)",
+          "verdict": "適切",
+          "reason": "抵抗R=V/IからΩ=\\(\\mathrm{kg\\,m^2s^{-3}A^{-2}}\\)である。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "原典の導入は6基本単位だけを列挙し、光度のcdを欠いてその他全部を組立できるとする。SIは出題時も7基本単位である。選択肢内の指数誤りは特定できるが導入の全称を正しい記述として校正完了にしない。",
+      "evidence": [
+        "extracted/pages/H27/17_applied_science/page_002.png"
+      ],
+      "core_concept": "仕事率の長さ指数と電気量の結合",
+      "required_knowledge": "F=ma、仕事Fℓ、P=仕事/t、Q=It、R=V/I。",
+      "solution": "4が仕事率を誤っている。\\(P=F\\ell/t\\)から\\([P]=\\mathrm{kg\\,m^2s^{-3}}\\)でありm²が必要である。電荷と抵抗も電流と時間・仕事から同じ体系で導く。導入はcdを欠くため疑義を別に残す。",
+      "independent_answer": "4",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。W=J/s、長さ指数2。導入は光度cdを欠く。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "4が仕事率を誤っている。\\(P=F\\ell/t\\)から\\([P]=\\mathrm{kg\\,m^2s^{-3}}\\)でありm²が必要である。電荷と抵抗も電流と時間・仕事から同じ体系で導く。導入はcdを欠くため疑義を別に残す。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:units:derived",
+        "theory:units:electrical"
+      ],
+      "discipline_id": "physics_units",
+      "concept_id": "concept_043",
+      "cross_concepts": [],
+      "classification_reason": "原典全肢の中心は仕事率の長さ指数と電気量の結合である。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻読者に対し既知の定義・指数又は一段代入で解ける。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "si_nist811",
+        "si_brochure9"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-13",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "stem": "SI組立単位と動粘度の非SI単位の換算を比較する。",
+      "summary": "SI組立単位と動粘度の非SI単位の換算を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(1\\mathrm C=1\\mathrm{A\\,s}\\)",
+          "verdict": "適切",
+          "reason": "電荷Q=ItよりC=Asである。"
+        },
+        "2": {
+          "value": "\\(1\\mathrm J=1\\mathrm{kg\\,m^2s^{-2}}\\)",
+          "verdict": "適切",
+          "reason": "仕事は力と移動距離の積でJ=\\(\\mathrm{kg\\,m^2s^{-2}}\\)である。"
+        },
+        "3": {
+          "value": "\\(1\\mathrm{Pa}=1\\mathrm{kg\\,m^{-1}s^{-2}}\\)",
+          "verdict": "適切",
+          "reason": "圧力p=F/SからPa=\\(\\mathrm{kg\\,m^{-1}s^{-2}}\\)である。"
+        },
+        "4": {
+          "value": "\\(1\\mathrm{St}=10^{-4}\\mathrm{m^2s^{-1}}\\)",
+          "verdict": "適切",
+          "reason": "Stは動粘度cm²/s。cm=10^-2mを二乗するので10^-4m²/sである。SI基本単位そのものとは呼ばない。"
+        },
+        "5": {
+          "value": "\\(1\\mathrm{\\Omega}=1\\mathrm{m^2kg\\,s^{-3}A^{-1}}\\)",
+          "verdict": "不適切",
+          "reason": "抵抗R=V/IからΩ=\\(\\mathrm{kg\\,m^2s^{-3}A^{-2}}\\)である。原典はA^-1であり抵抗に必要なA^-2を欠く。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/17_applied_science/page_005.png"
+      ],
+      "core_concept": "組立単位の指数と非SI換算係数",
+      "required_knowledge": "C=As、J=Nm、Pa=N/m²、Ω=V/A、動粘度St=cm²/s。",
+      "solution": "5の電流指数が誤りである。\\(R=V/I=(J/Q)/I\\)、\\(Q=It\\)より\\([R]=\\mathrm{kg\\,m^2s^{-3}A^{-2}}\\)。4は非SI単位StをSIへ正しく換算した記述であり、「SIでないから換算も誤り」としない。",
+      "independent_answer": "5",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。Ω=V/AのA指数-2。St=cm²/s=1e-4m²/s。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "5の電流指数が誤りである。\\(R=V/I=(J/Q)/I\\)、\\(Q=It\\)より\\([R]=\\mathrm{kg\\,m^2s^{-3}A^{-2}}\\)。4は非SI単位StをSIへ正しく換算した記述であり、「SIでないから換算も誤り」としない。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:units:derived",
+        "theory:units:electrical",
+        "theory:units:conversion"
+      ],
+      "discipline_id": "physics_units",
+      "concept_id": "concept_043",
+      "cross_concepts": [],
+      "classification_reason": "原典全肢の中心は組立単位の指数と非SI換算係数である。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻読者に対し既知の定義・指数又は一段代入で解ける。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "si_nist811"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-16",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "stem": "圧力の慣用単位をPaへ換算し、最も遠い係数を選ぶ。",
+      "summary": "圧力の慣用単位をPaへ換算し、最も遠い係数を選ぶ。",
+      "conditions": {
+        "方向": "圧力換算として最も遠い値。",
+        "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(1\\mathrm{atm}=1.01325\\times10^5\\mathrm{Pa}\\)",
+          "verdict": "適切",
+          "reason": "標準気圧の定義係数である。実際の当地大気圧が常にこの値とはしない。"
+        },
+        "2": {
+          "value": "\\(1\\mathrm{bar}=10^5\\mathrm{Pa}\\)",
+          "verdict": "適切",
+          "reason": "barは10^5Paの単位定義である。"
+        },
+        "3": {
+          "value": "\\(1\\mathrm{kgf\\,cm^{-2}}=9.80665\\times10^2\\mathrm{Pa}\\)",
+          "verdict": "不適切",
+          "reason": "kgfは標準重力9.80665m/s²で1kgに働く力9.80665N。cm²=10^-4m²で割ると9.80665e4Pa、原典は100分の1である。"
+        },
+        "4": {
+          "value": "\\(1\\mathrm{mmHg}=133.322\\mathrm{Pa}\\)",
+          "verdict": "適切",
+          "reason": "通常の水銀柱換算は133.322Pa程度、液柱の実測は密度・温度・重力条件を持つ。"
+        },
+        "5": {
+          "value": "\\(1\\mathrm{psi}=6.894757\\times10^3\\mathrm{Pa}\\)",
+          "verdict": "適切",
+          "reason": "psiはlbf/in²で約6894.757Pa。NIST通常換算と一致する有効桁である。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/17_applied_science/page_005.png"
+      ],
+      "core_concept": "力単位と面積換算の二乗",
+      "required_knowledge": "標準重力9.80665m/s²、kgf=9.80665N、1cm²=10^-4m²、Pa=N/m²、atm/bar/mmHg/psiの定義と慣用係数。",
+      "solution": "3が2桁遠い。\\(1\\mathrm{kgf\\,cm^{-2}}=\\frac{9.80665\\mathrm N}{10^{-4}\\mathrm{m^2}}=9.80665\\times10^4\\mathrm{Pa}\\)である。原典の10²と係数を比較する。kgfとkg、面積のcm²とcmを混同しない。",
+      "independent_answer": "3",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。kgf/cm²=9.80665N/1e-4m²=9.80665e4Pa。原典指数2は100分の1。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "3が2桁遠い。\\(1\\mathrm{kgf\\,cm^{-2}}=\\frac{9.80665\\mathrm N}{10^{-4}\\mathrm{m^2}}=9.80665\\times10^4\\mathrm{Pa}\\)である。原典の10²と係数を比較する。kgfとkg、面積のcm²とcmを混同しない。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:units:conversion",
+        "theory:units:derived"
+      ],
+      "discipline_id": "physics_units",
+      "concept_id": "concept_043",
+      "cross_concepts": [],
+      "classification_reason": "原典全肢の中心は力単位と面積換算の二乗である。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻読者に対し定義改定・防護量等の新規性を含むか、複数段のエネルギー変換と単位を組み合わせる。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "si_nist811"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-06",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "改定前のSI基本単位の定義から、温度基準の取り違えを見つける。",
+      "summary": "改定前のSI基本単位の定義から、温度基準の取り違えを見つける。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "秒：Cs133超微細構造遷移に対応する放射の周期。",
+          "verdict": "適切",
+          "reason": "出題当時はCs133基底状態の二超微細準位間の放射9192631770周期を秒とした。現行も同じ周波数定数を固定する。"
+        },
+        "2": {
+          "value": "m：定めた時間に真空を進む光の距離。",
+          "verdict": "適切",
+          "reason": "真空光速cを299792458m/sに固定し、秒との関係からmを定義する。"
+        },
+        "3": {
+          "value": "kg：国際キログラム原器の質量。",
+          "verdict": "適切",
+          "reason": "2016当時のkgは原器定義で適切。2019-05-20後はh固定となり原器は定義ではない。"
+        },
+        "4": {
+          "value": "K：水の凝固点を基準。",
+          "verdict": "不適切",
+          "reason": "2019改定前のKは同位体組成を規定した水三重点の熱力学温度の1/273.16。通常圧凝固点とは異なる。現在はボルツマン定数kを固定する。"
+        },
+        "5": {
+          "value": "mol：.012kgの12C中の原子数と同数の要素粒子を含む物質量。",
+          "verdict": "適切",
+          "reason": "2016当時のmolはこの炭素12基準で適切。現在はNAを固定し、12gの12Cを定義文として使わない。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_002.png"
+      ],
+      "core_concept": "時点に応じたSI基本単位の基準",
+      "required_knowledge": "旧Kの水三重点273.16K、旧kg原器・mol炭素12基準、2019-05-20改定、現行h/e/k/NA固定。",
+      "solution": "4が水の凝固点と三重点を取り違える。2019改定前のKは同位体組成を規定した水三重点の熱力学温度の1/273.16。通常圧凝固点とは異なる。現在はボルツマン定数kを固定する。出題年は2016であるため、kg原器と12C基準のmolを現在の知識だけで誤答扱いしない。定義は測定手順と区別する。",
+      "independent_answer": "4",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。2016当時Kは凝固点でなく水三重点273.16K。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "4が水の凝固点と三重点を取り違える。2019改定前のKは同位体組成を規定した水三重点の熱力学温度の1/273.16。通常圧凝固点とは異なる。現在はボルツマン定数kを固定する。出題年は2016であるため、kg原器と12C基準のmolを現在の知識だけで誤答扱いしない。定義は測定手順と区別する。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:units:history",
+        "theory:units:definition",
+        "theory:units:temperature"
+      ],
+      "discipline_id": "physics_units",
+      "concept_id": "si_definitions",
+      "cross_concepts": [
+        "concept_043"
+      ],
+      "classification_reason": "原典全肢の中心は時点に応じたSI基本単位の基準である。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻読者に対し定義改定・防護量等の新規性を含むか、複数段のエネルギー変換と単位を組み合わせる。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "si_nist811",
+        "si_kelvin2007",
+        "si_cgpm2018"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-05",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "改定前の温度基準と電位・角度の単位関係を比較する。",
+      "summary": "改定前の温度基準と電位・角度の単位関係を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "Kは水三重点で定義。",
+          "verdict": "適切",
+          "reason": "2019改定前のKは同位体組成を規定した水三重点の熱力学温度の1/273.16。通常圧凝固点とは異なる。現在はボルツマン定数kを固定する。"
+        },
+        "2": {
+          "value": "水三重点は.01℃。",
+          "verdict": "適切",
+          "reason": "2017の旧定義では三重点273.16KとCelsiusの273.15Kオフセットから.01℃。定義水組成条件を持つ。"
+        },
+        "3": {
+          "value": "1C=As。",
+          "verdict": "適切",
+          "reason": "電荷Q=ItよりC=Asである。"
+        },
+        "4": {
+          "value": "1V=1N C^-1。",
+          "verdict": "不適切",
+          "reason": "N/Cは電場の次元である。VはJ/C=Nm/Cなので長さが一つ不足する。"
+        },
+        "5": {
+          "value": "平面角はradで無次元。",
+          "verdict": "適切",
+          "reason": "平面角は弧長/半径で次元1、単位radを用いる。radは角度の意味を残す記号であり、角度でない任意の比と区別する。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_002.png"
+      ],
+      "core_concept": "温度の定義時点と電位のエネルギー基準",
+      "required_knowledge": "旧KとCelsiusオフセット、Q=It、V=仕事/Q、電場F/Q、rad=弧長/半径。",
+      "solution": "4が電位差と電場を取り違える。\\(V=E_{\\rm work}/Q\\)よりV=J/C=Nm/Cである。水三重点の1・2は出題時の旧K定義として読む。平面角は長さ比でrad=1の次元を持つが角の意味を保持する。",
+      "independent_answer": "4",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。V=J/C=Nm/C、N/Cは電場。出題当時Kは水三重点。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "4が電位差と電場を取り違える。\\(V=E_{\\rm work}/Q\\)よりV=J/C=Nm/Cである。水三重点の1・2は出題時の旧K定義として読む。平面角は長さ比でrad=1の次元を持つが角の意味を保持する。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:units:history",
+        "theory:units:temperature",
+        "theory:units:electrical",
+        "theory:units:angle"
+      ],
+      "discipline_id": "physics_units",
+      "concept_id": "si_definitions",
+      "cross_concepts": [
+        "concept_043"
+      ],
+      "classification_reason": "原典全肢の中心は温度の定義時点と電位のエネルギー基準である。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻読者に対し定義改定・防護量等の新規性を含むか、複数段のエネルギー変換と単位を組み合わせる。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "si_kelvin2007",
+        "si_nist811",
+        "si_cgpm2018"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-01",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "stem": "2019年5月改定後のSIを旧原器定義と区別する。",
+      "summary": "2019年5月改定後のSIを旧原器定義と区別する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "kgは国際キログラム原器の質量で定義。",
+          "verdict": "不適切",
+          "reason": "原器定義は2019-05-20に廃止。プランク定数h=6.62607015e-34Jsを固定する。Js=kg m²/sなのでmとsの既定義と結びkgを定義する。重力定数Gを固定しない。"
+        },
+        "2": {
+          "value": "水三重点は.01℃。",
+          "verdict": "近似として適切・厳密さ疑義",
+          "reason": "最良推定は273.16Kすなわち.01℃であるが、新K定義では実測値と不確かさを持つ。ITS-90のT90固定点を真の熱力学温度の定義と混同しない。"
+        },
+        "3": {
+          "value": "1C=1As。",
+          "verdict": "適切",
+          "reason": "電荷Q=ItよりC=Asである。"
+        },
+        "4": {
+          "value": "1mは真空光が1/299792458秒に進む距離。",
+          "verdict": "適切",
+          "reason": "真空光速cを299792458m/sに固定し、秒との関係からmを定義する。"
+        },
+        "5": {
+          "value": "平面角はradで無次元。",
+          "verdict": "適切",
+          "reason": "平面角は弧長/半径で次元1、単位radを用いる。radは角度の意味を残す記号であり、角度でない任意の比と区別する。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "改定後を明記する原典の2は三重点.01℃を無条件に断定する。熱力学温度Tは改定後不確かさを持ち、ITS-90のT90と同じ厳密定義値ではない。提示桁の近似としては妥当、厳密さが未指定である。公式・初回1は維持し原器誤りと別に疑義を保持。",
+      "evidence": [
+        "extracted/pages/R01_retest/17_applied_science/page_001.png"
+      ],
+      "core_concept": "定義定数と三重点の測定値の違い",
+      "required_knowledge": "新kgはh固定、秒と光速m、C=As、Celsiusオフセット273.15K、水三重点の定義から実測への変化、rad。",
+      "solution": "意図された誤りは1であり、2019年5月後はh固定である。2の.01℃は提示精度での約値としては整合するが、以前の厳密定義値ではない。公式1と初回1を保持し、2の精度・温度尺度の省略は別の疑義にする。",
+      "independent_answer": "1",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。2019改定後kgはh固定、原器ではない。水三重点は約.01Cだが定義値の厳密さに注意。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "意図された誤りは1であり、2019年5月後はh固定である。2の.01℃は提示精度での約値としては整合するが、以前の厳密定義値ではない。公式1と初回1を保持し、2の精度・温度尺度の省略は別の疑義にする。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:units:history",
+        "theory:units:definition",
+        "theory:units:temperature",
+        "theory:units:angle"
+      ],
+      "discipline_id": "physics_units",
+      "concept_id": "si_definitions",
+      "cross_concepts": [
+        "concept_043"
+      ],
+      "classification_reason": "原典全肢の中心は定義定数と三重点の測定値の違いである。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻読者に対し定義改定・防護量等の新規性を含むか、複数段のエネルギー変換と単位を組み合わせる。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "si_cgpm2018",
+        "si_kelvin_realization",
+        "si_brochure9"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-09",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "stem": "現行SIの基本単位と定義定数の対応を判定する。",
+      "summary": "現行SIの基本単位と定義定数の対応を判定する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "mは真空光速で定義。",
+          "verdict": "適切",
+          "reason": "真空光速cを299792458m/sに固定し、秒との関係からmを定義する。"
+        },
+        "2": {
+          "value": "kgは重力定数で定義。",
+          "verdict": "不適切",
+          "reason": "プランク定数h=6.62607015e-34Jsを固定する。Js=kg m²/sなのでmとsの既定義と結びkgを定義する。重力定数Gを固定しない。原典の重力Gとの対応が誤り。"
+        },
+        "3": {
+          "value": "Aは電気素量で定義。",
+          "verdict": "適切",
+          "reason": "素電荷e=1.602176634e-19Cを固定する。C=Asなので秒と電荷の関係でAを定義する。"
+        },
+        "4": {
+          "value": "Kはボルツマン定数で定義。",
+          "verdict": "適切",
+          "reason": "k=1.380649e-23J/Kを固定し、エネルギー尺度と温度尺度を結ぶ。"
+        },
+        "5": {
+          "value": "molはアボガドロ定数で定義。",
+          "verdict": "適切",
+          "reason": "NA=6.02214076e23mol^-1を固定し、1molが含む指定要素粒子数を定める。粒子の種類を明示する。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/17_applied_science/page_003.png"
+      ],
+      "core_concept": "基本単位の定数による定義",
+      "required_knowledge": "2019改定のh/e/k/NA、Cs周波数、c、単色540THz視感効果度、定義と実現の区別。",
+      "solution": "2のkgと重力定数Gの対応が誤り。プランク定数h=6.62607015e-34Jsを固定する。Js=kg m²/sなのでmとsの既定義と結びkgを定義する。重力定数Gを固定しない。 定数一つが他単位から独立に一単位を定義するわけではない。既に固定された時間・長さ等の体系と結ぶ。",
+      "independent_answer": "2",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。kgはプランクhで定義、重力Gではない。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "2のkgと重力定数Gの対応が誤り。プランク定数h=6.62607015e-34Jsを固定する。Js=kg m²/sなのでmとsの既定義と結びkgを定義する。重力定数Gを固定しない。 定数一つが他単位から独立に一単位を定義するわけではない。既に固定された時間・長さ等の体系と結ぶ。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:units:definition",
+        "theory:units:history",
+        "theory:units:photometry"
+      ],
+      "discipline_id": "physics_units",
+      "concept_id": "si_definitions",
+      "cross_concepts": [
+        "concept_043"
+      ],
+      "classification_reason": "原典全肢の中心は基本単位の定数による定義である。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻読者に対し定義改定・防護量等の新規性を含むか、複数段のエネルギー変換と単位を組み合わせる。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "si_cgpm2018",
+        "si_brochure9"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-09",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "現行SIの基本単位と定義定数の対応を判定する。",
+      "summary": "現行SIの基本単位と定義定数の対応を判定する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "cdは黒体放射で定義。",
+          "verdict": "不適切",
+          "reason": "540THzの単色放射の視感効果度Kcd=683lm/Wを固定する。光度は方向当たりの量で、現在は黒体温度を定義基準としない。黒体基準は1979以前の歴史的定義に関係する。"
+        },
+        "2": {
+          "value": "mは真空光速で定義。",
+          "verdict": "適切",
+          "reason": "真空光速cを299792458m/sに固定し、秒との関係からmを定義する。"
+        },
+        "3": {
+          "value": "kgはプランク定数で定義。",
+          "verdict": "適切",
+          "reason": "プランク定数h=6.62607015e-34Jsを固定する。Js=kg m²/sなのでmとsの既定義と結びkgを定義する。重力定数Gを固定しない。"
+        },
+        "4": {
+          "value": "秒はCs超微細遷移周波数で定義。",
+          "verdict": "適切",
+          "reason": "Cs133の摂動のない基底状態超微細遷移周波数9192631770Hzを固定する。"
+        },
+        "5": {
+          "value": "molはアボガドロ定数で定義。",
+          "verdict": "適切",
+          "reason": "NA=6.02214076e23mol^-1を固定し、1molが含む指定要素粒子数を定める。粒子の種類を明示する。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_004.png"
+      ],
+      "core_concept": "基本単位の定数による定義",
+      "required_knowledge": "2019改定のh/e/k/NA、Cs周波数、c、単色540THz視感効果度、定義と実現の区別。",
+      "solution": "黒体を使う1が誤り。540THzの単色放射の視感効果度Kcd=683lm/Wを固定する。光度は方向当たりの量で、現在は黒体温度を定義基準としない。 定数一つが他単位から独立に一単位を定義するわけではない。既に固定された時間・長さ等の体系と結ぶ。",
+      "independent_answer": "1",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。cdは単色540THzの発光効率683lm/W。黒体定義ではない。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "黒体を使う1が誤り。540THzの単色放射の視感効果度Kcd=683lm/Wを固定する。光度は方向当たりの量で、現在は黒体温度を定義基準としない。 定数一つが他単位から独立に一単位を定義するわけではない。既に固定された時間・長さ等の体系と結ぶ。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:units:definition",
+        "theory:units:history",
+        "theory:units:photometry"
+      ],
+      "discipline_id": "physics_units",
+      "concept_id": "si_definitions",
+      "cross_concepts": [
+        "concept_043"
+      ],
+      "classification_reason": "原典全肢の中心は基本単位の定数による定義である。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻読者に対し定義改定・防護量等の新規性を含むか、複数段のエネルギー変換と単位を組み合わせる。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "si_cgpm2018",
+        "si_brochure9"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-09",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "現行SIの基本単位と定義定数の対応を判定する。",
+      "summary": "現行SIの基本単位と定義定数の対応を判定する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "mは真空光速で定義。",
+          "verdict": "適切",
+          "reason": "真空光速cを299792458m/sに固定し、秒との関係からmを定義する。"
+        },
+        "2": {
+          "value": "Aは素電荷で定義。",
+          "verdict": "適切",
+          "reason": "素電荷e=1.602176634e-19Cを固定する。C=Asなので秒と電荷の関係でAを定義する。"
+        },
+        "3": {
+          "value": "kgは重力定数で定義。",
+          "verdict": "不適切",
+          "reason": "プランク定数h=6.62607015e-34Jsを固定する。Js=kg m²/sなのでmとsの既定義と結びkgを定義する。重力定数Gを固定しない。原典の重力Gとの対応が誤り。"
+        },
+        "4": {
+          "value": "molはアボガドロ定数で定義。",
+          "verdict": "適切",
+          "reason": "NA=6.02214076e23mol^-1を固定し、1molが含む指定要素粒子数を定める。粒子の種類を明示する。"
+        },
+        "5": {
+          "value": "cdは単色放射で定義。",
+          "verdict": "適切",
+          "reason": "540THzの単色放射の視感効果度Kcd=683lm/Wを固定する。光度は方向当たりの量で、現在は黒体温度を定義基準としない。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_003.png"
+      ],
+      "core_concept": "基本単位の定数による定義",
+      "required_knowledge": "2019改定のh/e/k/NA、Cs周波数、c、単色540THz視感効果度、定義と実現の区別。",
+      "solution": "3のkgと重力定数Gの対応が誤り。プランク定数h=6.62607015e-34Jsを固定する。Js=kg m²/sなのでmとsの既定義と結びkgを定義する。重力定数Gを固定しない。 定数一つが他単位から独立に一単位を定義するわけではない。既に固定された時間・長さ等の体系と結ぶ。",
+      "independent_answer": "3",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。kgはhによる定義。Gではない。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "3のkgと重力定数Gの対応が誤り。プランク定数h=6.62607015e-34Jsを固定する。Js=kg m²/sなのでmとsの既定義と結びkgを定義する。重力定数Gを固定しない。 定数一つが他単位から独立に一単位を定義するわけではない。既に固定された時間・長さ等の体系と結ぶ。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:units:definition",
+        "theory:units:history",
+        "theory:units:photometry"
+      ],
+      "discipline_id": "physics_units",
+      "concept_id": "si_definitions",
+      "cross_concepts": [
+        "concept_043"
+      ],
+      "classification_reason": "原典全肢の中心は基本単位の定数による定義である。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻読者に対し定義改定・防護量等の新規性を含むか、複数段のエネルギー変換と単位を組み合わせる。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "si_cgpm2018",
+        "si_brochure9"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-10",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "天然壊変・熱中性子核分裂・β安定・透過と内部影響・γ脱励起を区別する。",
+      "summary": "天然壊変・熱中性子核分裂・β安定・透過と内部影響・γ脱励起を区別する。",
+      "conditions": {
+        "方向": "誤っているもの。",
+        "対象": "量子・原子核の性質。質量数、係数、否定と肢対応を画像照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "自然UとThはα・β壊変を経て安定Pbへ至る。",
+          "verdict": "主要天然系列で適切",
+          "reason": "主要な天然U238/U235とTh232の壊変系列の終点は安定Pb同位体。原子番号を変えるα・βと核準位遷移を分ける。"
+        },
+        "2": {
+          "value": "238Uへ熱中性子を当て核分裂連鎖反応で発電。",
+          "verdict": "不適切",
+          "reason": "通常の熱中性子連鎖反応では235U等の核分裂性核種を用いる。238Uは高速中性子核分裂や捕獲後Pu生成の役割を持ち、熱核分裂性とは区別する。"
+        },
+        "3": {
+          "value": "同質量数の核はその中の最小質量へ向けてβ壊変。",
+          "verdict": "一般傾向・全称疑義",
+          "reason": "β壊変はエネルギー的に可能な隣接Zへ進む。偶数Aでは偶偶・奇奇質量が別放物線となり、単一βに安定な核が複数あり得る。最小質量へ必ず単一βで進む全称は不正確。"
+        },
+        "4": {
+          "value": "α線は紙で止まるが、放出核種を体内へ取り込むとダメージが大きい。",
+          "verdict": "適切（影響条件付き）",
+          "reason": "外部αの透過は弱いが内部取込みでは短い距離に高密度にエネルギーを与え得る。影響は量・核種・摂取経路・組織への分布等で変わるので無条件に一定被害を割り当てない。"
+        },
+        "5": {
+          "value": "γ放出はエネルギー準位が変わり原子番号は変わらない。",
+          "verdict": "適切",
+          "reason": "γは同じ核種の励起準位からの電磁遷移で、AとZを保つ。α・β後に伴うγは先行壊変で変わったZと区別する。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "原典3は同質量数の最小質量核へβ壊変するという全称。単一β安定核が複数となる偶数Aの対エネルギーを省く。二重βの実在は単一β経路とは別である。原典4は内部取込みの量・経路条件を省く。公式・初回2を保持し、3の科学的排他性は未確定。",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_004.png"
+      ],
+      "core_concept": "核反応のエネルギー条件と保存するA・Z",
+      "required_knowledge": "αでA-4/Z-2、βでA一定/Z±1、γで核種不変、熱核分裂と高速核分裂、質量放物線と対エネルギー、内部と外部の透過条件。",
+      "solution": "2の238Uと熱中性子が取り違えである。235U等の熱核分裂、238Uの高速核分裂・中性子捕獲を分ける。3はβ安定へ質量が減る一般傾向を述べるが、偶奇性と隣接核のQ値を省いた全称では成り立たない。公式2・独立2を保持し3の文字通りの一意性は査読対象に残す。",
+      "independent_answer": "2",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。熱中性子で核分裂する通常の天然U核種は235U。238Uは高速中性子なら核分裂、熱中性子は主に捕獲。β安定について質量最小との全称に疑義。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "2の238Uと熱中性子が取り違えである。235U等の熱核分裂、238Uの高速核分裂・中性子捕獲を分ける。3はβ安定へ質量が減る一般傾向を述べるが、偶奇性と隣接核のQ値を省いた全称では成り立たない。公式2・独立2を保持し3の文字通りの一意性は査読対象に残す。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:modern:nuclear",
+        "theory:modern:stability",
+        "theory:modern:fission",
+        "theory:modern:dose"
+      ],
+      "discipline_id": "physics_modern",
+      "concept_id": "concept_044",
+      "cross_concepts": [],
+      "classification_reason": "原典全肢の中心は核反応のエネルギー条件と保存するA・Zである。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻読者に対し定義改定・防護量等の新規性を含むか、複数段のエネルギー変換と単位を組み合わせる。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "modern_mit_nuclear",
+        "modern_mit_mass",
+        "modern_doublebeta",
+        "modern_fastfission",
+        "modern_alpha",
+        "modern_series"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-07",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "stem": "同じ速さを持つ粒子の物質波長を質量比から並べる。",
+      "summary": "同じ速さを持つ粒子の物質波長を質量比から並べる。",
+      "conditions": {
+        "方向": "長い順番として適切。",
+        "対象": "量子・原子核の性質。質量数、係数、否定と肢対応を画像照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "陽子→α→電子",
+          "verdict": "誤順序",
+          "reason": "電子は最軽量で最長波長なので最後にはならない。"
+        },
+        "2": {
+          "value": "α→陽子→電子",
+          "verdict": "誤順序",
+          "reason": "質量の大きい順を波長の大きい順へ取り違えている。"
+        },
+        "3": {
+          "value": "電子→α→陽子",
+          "verdict": "誤順序",
+          "reason": "電子は先頭だがαは陽子より重く、αの波長は短い。"
+        },
+        "4": {
+          "value": "陽子→電子→α",
+          "verdict": "誤順序",
+          "reason": "陽子より軽い電子が最長であり最初の2者が逆。"
+        },
+        "5": {
+          "value": "電子→陽子→α",
+          "verdict": "適切",
+          "reason": "静止質量は電子<陽子<α。同速ではγも共通、p=γmvは質量に比例、λはその逆なのでこの順になる。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/17_applied_science/page_004.png"
+      ],
+      "core_concept": "物質波長を運動量で比較する",
+      "required_knowledge": "λ=h/p、同速のγ共通、電子・陽子・α核の静止質量の順、速度ゼロで波長比較をする極限は除く。",
+      "solution": "5である。\\(\\lambda=h/p,\\quad p=\\gamma mv\\)。同じ速さではγとvは共通なので\\(\\lambda\\propto1/m\\)、電子、陽子、αの順となる。非相対論近似ならp=mvで同じ結論であり、同運動エネルギーという別条件を混ぜない。",
+      "independent_answer": "5",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。同じ速さならp=γmvで質量比に比例、λ=h/p、電子>陽子>α。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "5である。\\(\\lambda=h/p,\\quad p=\\gamma mv\\)。同じ速さではγとvは共通なので\\(\\lambda\\propto1/m\\)、電子、陽子、αの順となる。非相対論近似ならp=mvで同じ結論であり、同運動エネルギーという別条件を混ぜない。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:modern:matter"
+      ],
+      "discipline_id": "physics_modern",
+      "concept_id": "photon_matter_wave",
+      "cross_concepts": [],
+      "classification_reason": "原典全肢の中心は物質波長を運動量で比較するである。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻読者に対し定義改定・防護量等の新規性を含むか、複数段のエネルギー変換と単位を組み合わせる。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "os_matter"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-05",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "stem": "加速電子の運動エネルギーから連続X線の最短波長を求める。",
+      "summary": "加速電子の運動エネルギーから連続X線の最短波長を求める。",
+      "conditions": {
+        "方向": "最短波長に最も近い値。",
+        "加速電圧": "35kV",
+        "h": "\\(6.6\\times10^{-34}\\mathrm{J\\,s}\\)",
+        "e": "\\(1.6\\times10^{-19}\\mathrm C\\)",
+        "c": "\\(3.0\\times10^8\\mathrm{m/s}\\)"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(2.6\\times10^{-11}\\mathrm m\\)",
+          "verdict": "不一致",
+          "reason": "求めた3.5357e-11mより小さく、本条件の電子エネルギー限界を超える。"
+        },
+        "2": {
+          "value": "\\(3.5\\times10^{-11}\\mathrm m\\)",
+          "verdict": "最も近い",
+          "reason": "3.5357e-11mへ最も近い提示値。"
+        },
+        "3": {
+          "value": "\\(3.9\\times10^{-11}\\mathrm m\\)",
+          "verdict": "不一致",
+          "reason": "限界より長い波長の光子は放出され得るが最短値として2より遠い。"
+        },
+        "4": {
+          "value": "\\(9.1\\times10^{-11}\\mathrm m\\)",
+          "verdict": "不一致",
+          "reason": "連続線にこの波長が存在し得ることと最短端であることは別、算出値から遠い。"
+        },
+        "5": {
+          "value": "\\(9.9\\times10^{-11}\\mathrm m\\)",
+          "verdict": "不一致",
+          "reason": "この値も最短端ではなく、eVを全て一光子へ与える上限と一致しない。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/17_applied_science/page_002.png"
+      ],
+      "core_concept": "制動放射の端をエネルギー保存で求める",
+      "required_knowledge": "電圧仕事eV、光子E=hc/λ、全エネルギーを一光子へ渡す最短端、kV=10³V、指定h/e/c。",
+      "solution": "初期運動エネルギーを無視する電子が電圧Vで得るK=eVを、一光子へ最大限移すと\\(hc/\\lambda_{\\min}=eV\\)である。\\(\\lambda_{\\min}=\\frac{6.6\\times10^{-34}\\times3.0\\times10^8}{1.6\\times10^{-19}\\times35\\times10^3}=3.5357\\times10^{-11}\\mathrm m\\)より2。現行h/eの精密値へ置き換えず指定丸め値を使う。電子速度の非相対論近似は不要である。",
+      "independent_answer": "2",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。hc/(e×35000)=3.5357e-11 m。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "初期運動エネルギーを無視する電子が電圧Vで得るK=eVを、一光子へ最大限移すと\\(hc/\\lambda_{\\min}=eV\\)である。\\(\\lambda_{\\min}=\\frac{6.6\\times10^{-34}\\times3.0\\times10^8}{1.6\\times10^{-19}\\times35\\times10^3}=3.5357\\times10^{-11}\\mathrm m\\)より2。現行h/eの精密値へ置き換えず指定丸め値を使う。電子速度の非相対論近似は不要である。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:modern:xray",
+        "theory:modern:duality"
+      ],
+      "discipline_id": "physics_modern",
+      "concept_id": "photon_matter_wave",
+      "cross_concepts": [],
+      "classification_reason": "原典全肢の中心は制動放射の端をエネルギー保存で求めるである。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻読者に対し定義改定・防護量等の新規性を含むか、複数段のエネルギー変換と単位を組み合わせる。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "os_photoelectric"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-09",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "半減期と経過時間の比から残存する親核種の割合を求める。",
+      "summary": "半減期と経過時間の比から残存する親核種の割合を求める。",
+      "conditions": {
+        "方向": "最も適切。",
+        "半減期": "30年",
+        "経過時間": "90年",
+        "対象": "元の放射性核種の残存量、生成等なし。"
+      },
+      "choices": {
+        "1": {
+          "value": "1/6",
+          "verdict": "不一致",
+          "reason": "N/N0=2^(-t/T)で得る0.125と比較すると1/6は大きすぎる。 時間の比を線形に割るのではない。"
+        },
+        "2": {
+          "value": "1/8",
+          "verdict": "適切",
+          "reason": "計算結果と一致する。"
+        },
+        "3": {
+          "value": "1/9",
+          "verdict": "不一致",
+          "reason": "N/N0=2^(-t/T)で得る0.125と比較すると1/9は小さすぎる。 時間の比を線形に割るのではない。"
+        },
+        "4": {
+          "value": "1/16",
+          "verdict": "不一致",
+          "reason": "N/N0=2^(-t/T)で得る0.125と比較すると1/16は小さすぎる。 時間の比を線形に割るのではない。"
+        },
+        "5": {
+          "value": "1/18",
+          "verdict": "不一致",
+          "reason": "N/N0=2^(-t/T)で得る0.125と比較すると1/18は小さすぎる。 時間の比を線形に割るのではない。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_004.png"
+      ],
+      "core_concept": "半減期は指数減衰の時間尺度",
+      "required_knowledge": "一定壊変定数、T=ln2/λ、N/N0=2^(-t/T)、親核種量、指定時間の同単位化。",
+      "solution": "生成・流出入を除き一定壊変率なら\\(dN/dt=-\\lambda N\\)を積分して\\(N/N_0=e^{-\\lambda t}=2^{-t/T_{1/2}}\\)。\\(t/T_{1/2}=90/30\\)から残存比は0.125、2の1/8を選ぶ。残った親核種量と壊変済み割合1−N/N0を区別する。",
+      "independent_answer": "2",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。90/30=3半減期、2^-3=1/8。肢は1/6,1/8,1/9,1/16,1/18。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "生成・流出入を除き一定壊変率なら\\(dN/dt=-\\lambda N\\)を積分して\\(N/N_0=e^{-\\lambda t}=2^{-t/T_{1/2}}\\)。\\(t/T_{1/2}=90/30\\)から残存比は0.125、2の1/8を選ぶ。残った親核種量と壊変済み割合1−N/N0を区別する。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:modern:decay"
+      ],
+      "discipline_id": "physics_modern",
+      "concept_id": "concept_044",
+      "cross_concepts": [],
+      "classification_reason": "原典全肢の中心は半減期は指数減衰の時間尺度である。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻読者に対し既知の定義・指数又は一段代入で解ける。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "modern_mit_nuclear"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-09",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "半減期と経過時間の比から残存する親核種の割合を求める。",
+      "summary": "半減期と経過時間の比から残存する親核種の割合を求める。",
+      "conditions": {
+        "方向": "最も近い値。",
+        "半減期": "8日",
+        "経過時間": "30日",
+        "対象": "元の放射性核種の残存量、生成等なし。"
+      },
+      "choices": {
+        "1": {
+          "value": ".20",
+          "verdict": "不一致",
+          "reason": "N/N0=2^(-t/T)で得る0.0743254と比較すると.20は大きすぎる。 適切肢より差が大きい。"
+        },
+        "2": {
+          "value": ".15",
+          "verdict": "不一致",
+          "reason": "N/N0=2^(-t/T)で得る0.0743254と比較すると.15は大きすぎる。 適切肢より差が大きい。"
+        },
+        "3": {
+          "value": ".07",
+          "verdict": "適切",
+          "reason": "計算値へ5候補中で最も近い。"
+        },
+        "4": {
+          "value": ".05",
+          "verdict": "不一致",
+          "reason": "N/N0=2^(-t/T)で得る0.0743254と比較すると.05は小さすぎる。 適切肢より差が大きい。"
+        },
+        "5": {
+          "value": ".03",
+          "verdict": "不一致",
+          "reason": "N/N0=2^(-t/T)で得る0.0743254と比較すると.03は小さすぎる。 適切肢より差が大きい。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_004.png"
+      ],
+      "core_concept": "半減期は指数減衰の時間尺度",
+      "required_knowledge": "一定壊変定数、T=ln2/λ、N/N0=2^(-t/T)、親核種量、指定時間の同単位化。",
+      "solution": "生成・流出入を除き一定壊変率なら\\(dN/dt=-\\lambda N\\)を積分して\\(N/N_0=e^{-\\lambda t}=2^{-t/T_{1/2}}\\)。\\(t/T_{1/2}=30/8\\)から残存比は0.07432544、3の.07を選ぶ。残った親核種量と壊変済み割合1−N/N0を区別する。",
+      "independent_answer": "3",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。2^(-30/8)=.074325に最も近い.07。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "生成・流出入を除き一定壊変率なら\\(dN/dt=-\\lambda N\\)を積分して\\(N/N_0=e^{-\\lambda t}=2^{-t/T_{1/2}}\\)。\\(t/T_{1/2}=30/8\\)から残存比は0.07432544、3の.07を選ぶ。残った親核種量と壊変済み割合1−N/N0を区別する。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:modern:decay"
+      ],
+      "discipline_id": "physics_modern",
+      "concept_id": "concept_044",
+      "cross_concepts": [],
+      "classification_reason": "原典全肢の中心は半減期は指数減衰の時間尺度である。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻読者に対し既知の定義・指数又は一段代入で解ける。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "modern_mit_nuclear"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-09",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "stem": "半減期と経過時間の比から残存する親核種の割合を求める。",
+      "summary": "半減期と経過時間の比から残存する親核種の割合を求める。",
+      "conditions": {
+        "方向": "最も近い値。",
+        "半減期": "9日",
+        "経過時間": "30日",
+        "対象": "元の放射性核種の残存量、生成等なし。"
+      },
+      "choices": {
+        "1": {
+          "value": ".20",
+          "verdict": "不一致",
+          "reason": "N/N0=2^(-t/T)で得る0.0992126と比較すると.20は大きすぎる。 適切肢より差が大きい。"
+        },
+        "2": {
+          "value": ".10",
+          "verdict": "適切",
+          "reason": "計算値へ5候補中で最も近い。"
+        },
+        "3": {
+          "value": ".05",
+          "verdict": "不一致",
+          "reason": "N/N0=2^(-t/T)で得る0.0992126と比較すると.05は小さすぎる。 適切肢より差が大きい。"
+        },
+        "4": {
+          "value": ".03",
+          "verdict": "不一致",
+          "reason": "N/N0=2^(-t/T)で得る0.0992126と比較すると.03は小さすぎる。 適切肢より差が大きい。"
+        },
+        "5": {
+          "value": ".01",
+          "verdict": "不一致",
+          "reason": "N/N0=2^(-t/T)で得る0.0992126と比較すると.01は小さすぎる。 適切肢より差が大きい。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/17_applied_science/page_003.png"
+      ],
+      "core_concept": "半減期は指数減衰の時間尺度",
+      "required_knowledge": "一定壊変定数、T=ln2/λ、N/N0=2^(-t/T)、親核種量、指定時間の同単位化。",
+      "solution": "生成・流出入を除き一定壊変率なら\\(dN/dt=-\\lambda N\\)を積分して\\(N/N_0=e^{-\\lambda t}=2^{-t/T_{1/2}}\\)。\\(t/T_{1/2}=30/9\\)から残存比は0.09921257、2の.10を選ぶ。残った親核種量と壊変済み割合1−N/N0を区別する。",
+      "independent_answer": "2",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。2^(-30/9)=.0992126に最も近い.10。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "生成・流出入を除き一定壊変率なら\\(dN/dt=-\\lambda N\\)を積分して\\(N/N_0=e^{-\\lambda t}=2^{-t/T_{1/2}}\\)。\\(t/T_{1/2}=30/9\\)から残存比は0.09921257、2の.10を選ぶ。残った親核種量と壊変済み割合1−N/N0を区別する。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:modern:decay"
+      ],
+      "discipline_id": "physics_modern",
+      "concept_id": "concept_044",
+      "cross_concepts": [],
+      "classification_reason": "原典全肢の中心は半減期は指数減衰の時間尺度である。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻読者に対し既知の定義・指数又は一段代入で解ける。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "modern_mit_nuclear"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-06",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "stem": "吸収エネルギーと防護上の重み付けを、線量名と単位の対応表へ結び付ける。",
+      "summary": "吸収エネルギーと防護上の重み付けを、線量名と単位の対応表へ結び付ける。",
+      "conditions": {
+        "ア": "単位質量当たりの吸収エネルギー",
+        "イ": "アの単位",
+        "ウ": "放射線荷重係数をアへ乗じた量（原典の名称）",
+        "エ": "ウと実効線量の単位",
+        "方向": "最も適切な組合せ。"
+      },
+      "choices": {
+        "1": {
+          "value": "吸収線量／Bq／等価線量／Sv",
+          "verdict": "単位不適切",
+          "reason": "ア・ウ・エは対応するが吸収線量のイはGyでありBqは壊変率。"
+        },
+        "2": {
+          "value": "等価線量／Gy／吸収線量／Bq",
+          "verdict": "名称と単位不適切",
+          "reason": "アとウが逆である。吸収線量にGy、等価/実効線量にSvを使うのでエBqも誤り。"
+        },
+        "3": {
+          "value": "吸収線量／Sv／等価線量／Gy",
+          "verdict": "単位逆",
+          "reason": "アとウは適切だがGyとSvを逆にしている。次元が同じでも量の意味が違う。"
+        },
+        "4": {
+          "value": "等価線量／Sv／吸収線量／Gy",
+          "verdict": "名称逆",
+          "reason": "Svが等価線量、Gyが吸収線量なのはよいが、原典のアは質量当たりエネルギーなので吸収、ウは放射線重み付け後なので等価。名称を逆にした。"
+        },
+        "5": {
+          "value": "吸収線量／Gy／等価線量／Sv",
+          "verdict": "適切",
+          "reason": "アは吸収線量D、イGy、ウは等価線量HT、エSvである。実効線量EもSvだが組織重み付けをさらに持つ。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。ア〜エの対応表の全20セルを確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/17_applied_science/page_003.png"
+      ],
+      "core_concept": "エネルギー量と生物影響を考慮する防護量",
+      "required_knowledge": "吸収線量D、Gy=J/kg、HT=sum wR DTR、E=sum wT HT、Sv、Bq=s^-1、重みは無次元。",
+      "solution": "5である。質量当たり吸収エネルギー\\(D=d\\epsilon/dm\\)の単位はGy=J/kg。組織Tへの放射線Rの平均吸収線量に無次元重みwRを掛け\\(H_T=\\sum_Rw_RD_{T,R}\\)とするとSv。さらに\\(E=\\sum_Tw_TH_T\\)が実効線量でSvである。Bqは壊変/秒であってエネルギー/質量ではない。",
+      "independent_answer": "5",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。ア吸収線量、イGy、ウ等価線量、エSv。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "5である。質量当たり吸収エネルギー\\(D=d\\epsilon/dm\\)の単位はGy=J/kg。組織Tへの放射線Rの平均吸収線量に無次元重みwRを掛け\\(H_T=\\sum_Rw_RD_{T,R}\\)とするとSv。さらに\\(E=\\sum_Tw_TH_T\\)が実効線量でSvである。Bqは壊変/秒であってエネルギー/質量ではない。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:modern:dose",
+        "theory:modern:activity"
+      ],
+      "discipline_id": "physics_modern",
+      "concept_id": "radiation_dosimetry",
+      "cross_concepts": [],
+      "classification_reason": "原典全肢の中心はエネルギー量と生物影響を考慮する防護量である。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻読者に対し定義改定・防護量等の新規性を含むか、複数段のエネルギー変換と単位を組み合わせる。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "modern_dose",
+        "si_brochure9"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-07",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "stem": "光と電子の励起・再結合を利用する素子と、超伝導の巨視的量子現象を比較する。",
+      "summary": "光と電子の励起・再結合を利用する素子と、超伝導の巨視的量子現象を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "量子・原子核の性質。質量数、係数、否定と肢対応を画像照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "太陽電池",
+          "verdict": "該当",
+          "reason": "光吸収で電子・正孔を作り電流として取り出す。光から電気への変換であり光電子相互作用を利用する。"
+        },
+        "2": {
+          "value": "発光ダイオードLED",
+          "verdict": "該当",
+          "reason": "注入した電子と正孔の放射再結合で光を出す。電気から光への変換である。"
+        },
+        "3": {
+          "value": "半導体レーザー",
+          "verdict": "該当",
+          "reason": "活性層の電子励起と反転分布、光電磁場による誘導放出・共振器帰還を利用する。"
+        },
+        "4": {
+          "value": "超伝導（超電導）",
+          "verdict": "主原理が異なる",
+          "reason": "超伝導は電子対等の巨視的な量子状態に伴う無抵抗・磁場応答の現象である。光吸収/放出素子とは主原理が異なる。光と超伝導体が相互作用しないという断言ではない。"
+        },
+        "5": {
+          "value": "有機EL",
+          "verdict": "該当",
+          "reason": "有機半導体へ電荷を注入し、励起子等の放射緩和で光を出す。分子励起も電子励起に含む。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/17_applied_science/page_003.png"
+      ],
+      "core_concept": "光素子の吸収・自発放出・誘導放出の役割",
+      "required_knowledge": "光子E=hf、半導体の電子正孔、分子励起、光吸収と放射再結合、レーザーの反転分布/共振器、超伝導の凝縮状態。",
+      "solution": "4がこの分類で最も不適切である。1は光吸収で電子励起を作り電流へ、2・3・5は励起された電子状態の放射緩和・誘導放出で光へ変換する。一方、超伝導は低温の凝縮量子状態の電気磁気応答が主原理である。光励起で超伝導を変化させる研究が存在し得ることとは別の比較である。",
+      "independent_answer": "4",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。超伝導は巨視的量子凝縮の現象。ほかは光吸収/放出に電子励起が関与。光との相互作用皆無の断言ではない。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "4がこの分類で最も不適切である。1は光吸収で電子励起を作り電流へ、2・3・5は励起された電子状態の放射緩和・誘導放出で光へ変換する。一方、超伝導は低温の凝縮量子状態の電気磁気応答が主原理である。光励起で超伝導を変化させる研究が存在し得ることとは別の比較である。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:modern:devices",
+        "theory:modern:superconduct",
+        "theory:modern:duality"
+      ],
+      "discipline_id": "physics_modern",
+      "concept_id": "optoelectronic_devices",
+      "cross_concepts": [],
+      "classification_reason": "原典全肢の中心は光素子の吸収・自発放出・誘導放出の役割である。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻読者に対し定義改定・防護量等の新規性を含むか、複数段のエネルギー変換と単位を組み合わせる。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "modern_pv",
+        "modern_led",
+        "modern_laser",
+        "modern_oled",
+        "modern_superconduct",
+        "modern_pairs"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

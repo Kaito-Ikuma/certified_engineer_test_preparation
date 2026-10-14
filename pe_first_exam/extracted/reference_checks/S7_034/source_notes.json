@@ -1,0 +1,87 @@
+{
+  "checked_at": "2026-10-12T07:45:07+09:00",
+  "sources": [
+    {
+      "key": "mit_colligative2008",
+      "url": "https://ocw.mit.edu/courses/5-60-thermodynamics-kinetics-spring-2008/f48ecc8d62ef6e1d0e3c72317cb067a7_lec_23.pdf",
+      "checked_claim": "4頁の文字層で希薄条件、質量モル濃度、化学ポテンシャル、凝固点降下の関係を確認。資料ヘッダはSpring 2007、公開講義は2008。"
+    },
+    {
+      "key": "nptel_distillation1",
+      "url": "https://archive.nptel.ac.in/content/storage2/courses/103103035/module5/lec1.pdf",
+      "checked_claim": "1・4〜7頁の文字層で蒸留の目的、相対揮発度、平衡曲線、共沸を確認。蒸気圧の量依存など原資料の粗い記述は教材へ一般則として転載しない。"
+    },
+    {
+      "key": "nptel_azeotrope",
+      "url": "https://archive.nptel.ac.in/content/storage2/courses/103101004/modules/chapter-7/sec-4/1.9.html",
+      "checked_claim": "取得HTMLの本文で共沸の気液組成一致と蒸発時の濃縮不能を確認。式画像は数式の出典として使わない。"
+    },
+    {
+      "key": "iapws_supercooled2015",
+      "url": "https://iapws.org/technical-guidance/release/Supercooled.download",
+      "checked_claim": "2015年指針7〜8頁の文字層で準安定液体の適用範囲、大気圧近傍を確認。旧PDF URLはHTMLへリダイレクトしたため現行公式downloadを取得。"
+    },
+    {
+      "key": "iapws95_2018",
+      "url": "https://iapws.org/technical-guidance/release/IAPWS-95.download",
+      "checked_claim": "2018年改訂資料2〜3頁で温度尺度、臨界温度647.096 K、密度322 kg/m3を確認。旧mailホストは証明書エラー、現行公式URLで取得。"
+    },
+    {
+      "key": "leybold_cryopump",
+      "url": "https://www.leybold.com/en/knowledge/vacuum-fundamentals/vacuum-generation/how-does-a-cryopump-work",
+      "checked_claim": "公式本文の冷面捕捉、凝縮、低温吸着、再生を確認。吸着と凝縮の結合エネルギーを取り違えた一文は引用しない。"
+    },
+    {
+      "key": "openstax_colloids",
+      "url": "https://openstax.org/books/chemistry-2e/pages/11-5-colloids",
+      "checked_claim": "公式本文で分子イオン溶液との区別、チンダル効果、乳濁液、マヨネーズ、石けんの構造と乳化作用を確認。"
+    }
+  ],
+  "local_files": [
+    {
+      "file": "extracted/reference_checks/S7_034/colligative_mit.txt",
+      "sha256": "0d63343344a8bb0a2cf94c111f6fbf6bf95a4bcc908910b041ad3b132a53bfe5"
+    },
+    {
+      "file": "extracted/reference_checks/S7_034/distillation_nptel.pdf",
+      "sha256": "77a6e1a9c1581cfeccefc2c2439843f7d9405caf1043cc08e0d8b4bb854a1eb0"
+    },
+    {
+      "file": "extracted/reference_checks/S7_034/supercooled.pdf",
+      "sha256": "dbd52e2886ee641c9eaea128c34ccdbcb7241debefd65c26e17db187669e4be4"
+    },
+    {
+      "file": "extracted/reference_checks/S7_034/colligative_mit.pdf",
+      "sha256": "b4197f4882d3ad9c6db02112c4b77598c106356f78961ef2f71992c3f5738937"
+    },
+    {
+      "file": "extracted/reference_checks/S7_034/distillation_nptel.txt",
+      "sha256": "393345dc04eaf65a78651b3c0ed5f878d7cddbf395fe2be1c4be5ddc97de26e2"
+    },
+    {
+      "file": "extracted/reference_checks/S7_034/water95_actual.pdf",
+      "sha256": "512879217b94f4d0741c88cab743d41098268914d538d73e680a736cb1c3aad7"
+    },
+    {
+      "file": "extracted/reference_checks/S7_034/supercooled_actual.pdf",
+      "sha256": "34d14d4504cd641636bdb6b8c3467dfffb77e3766c8cde2e1e419dc551cafc32"
+    },
+    {
+      "file": "extracted/reference_checks/S7_034/water95_actual.txt",
+      "sha256": "4d6720ac030fa04b73a79a190353bea9a23dcc17ed1f99705b37afb6c278a59d"
+    },
+    {
+      "file": "extracted/reference_checks/S7_034/supercooled_actual.txt",
+      "sha256": "90d744aec96d359bcc47e2258f2537c114420e4dfabe9ad87e25f36e395dda4b"
+    },
+    {
+      "file": "extracted/reference_checks/S7_034/azeotrope.html",
+      "sha256": "1e1ed3dbf6946510147bd232ab6a338dd722ea2b0d230d346b1bce44ba5d7171"
+    }
+  ],
+  "limitations": [
+    "supercooled.pdfは名前に反してHTMLであり、PDF解析に失敗した。actual.pdfだけを指針の本文確認に用いた。",
+    "旧mail.iapws.orgでSSL検証失敗、証明書検証を無効にせず現行公式に切り替えた。",
+    "原典の容器条件、平衡定数、96%の基準等は部分校正に保存する。"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "stem": "水素と塩素からHClを1 mol生成する反応の熱を、結合エネルギーから求める。",
+  "conditions": {
+    "切断エネルギー": "H–H:436、Cl–Cl:243、H–Cl:432 kJ/mol",
+    "基準": "HCl生成量1 mol。気体分子の結合エネルギーによる評価。",
+    "符号": "発熱を負とする指定あり。"
+  },
+  "choices": {
+    "1": {
+      "value": "-93 kJ/mol",
+      "verdict": "条件に一致",
+      "reason": "HCl1 mol当たりのエンタルピー変化−92.5に最も近い。"
+    },
+    "2": {
+      "value": "-216 kJ/mol",
+      "verdict": "条件に不一致",
+      "reason": "切断と生成の差をHCl2 molで割った92.5の大きさに合わない。"
+    },
+    "3": {
+      "value": "-340 kJ/mol",
+      "verdict": "条件に不一致",
+      "reason": "切断エネルギー679の約半分だけを数え、生成側を差し引いていない。"
+    },
+    "4": {
+      "value": "-432 kJ/mol",
+      "verdict": "条件に不一致",
+      "reason": "HClの結合を切るエネルギーであり、反応の正味熱ではない。"
+    },
+    "5": {
+      "value": "-679 kJ/mol",
+      "verdict": "条件に不一致",
+      "reason": "水素と塩素の切断だけの679を使い、HCl生成による放出と1 mol基準を無視する。"
+    }
+  },
+  "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/basic/page_013.png"
+  ],
+  "question_id": "H26-REG-BASIC-4-1",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "13",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "6b4603e23bbfe32786914d49c02bf99c9334680bf5b592db4aa49728ab7dcc58",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

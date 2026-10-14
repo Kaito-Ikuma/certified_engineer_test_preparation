@@ -1,0 +1,45 @@
+{
+  "stem": "不動態と海水の局部腐食を区別する。",
+  "conditions": {
+    "確認": "原典26画像で五肢・図表と条件を照合。",
+    "対象": "不動態、塩化物、孔食・すきま腐食、応力腐食割れ、水素脆化。"
+  },
+  "choices": {
+    "1": {
+      "value": "気体中の乾食と液体中の湿食",
+      "verdict": "条件内で適切",
+      "reason": "化学的又は電気化学的な環境との反応を区別する。"
+    },
+    "2": {
+      "value": "表面酸化物による不動態化",
+      "verdict": "条件内で適切",
+      "reason": "強固な膜が反応の速度を抑える。イオン化傾向だけでは耐食性を決めない。"
+    },
+    "3": {
+      "value": "不動態があるから一般に海水用途へ適する",
+      "verdict": "不適切",
+      "reason": "塩化物は孔食やすきま腐食等を生み得る。鋼種・温度・流動等によって選ぶ。"
+    },
+    "4": {
+      "value": "腐食と引張応力で強さ以下でも割れる",
+      "verdict": "条件内で適切",
+      "reason": "応力腐食割れでは特定の材料・環境・引張応力が関わる。"
+    },
+    "5": {
+      "value": "侵入水素が金属を脆化",
+      "verdict": "条件内で適切",
+      "reason": "水素の侵入・拡散・欠陥との相互作用が延性や破壊へ影響する。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "炭素鋼との相対適性は鋼種・環境・防食条件で変わるため原典の一般化を留保。全ステンレスが海水で使用不可とはしない。",
+  "evidence": [
+    "extracted/pages/H25/basic/page_017.png"
+  ],
+  "question_id": "H25-REG-BASIC-4-4",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "5bdf3379f056027d02cb82f171a20822d38fb8c3e5d89fac600ced16cc6b0de0",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

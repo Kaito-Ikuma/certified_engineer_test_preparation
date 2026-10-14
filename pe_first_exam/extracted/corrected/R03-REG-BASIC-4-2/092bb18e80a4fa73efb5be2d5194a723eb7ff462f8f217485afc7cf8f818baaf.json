@@ -1,0 +1,45 @@
+{
+  "stem": "酸化数が変わらない反応式を選ぶ。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典26画像で確認。",
+    "時点": "令和3年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "2Na+2H2O→2NaOH+H2",
+      "verdict": "不適切",
+      "reason": "Na0→+1、H+1→0。酸化還元。"
+    },
+    "2": {
+      "value": "NaClO+2HCl→NaCl+H2O+Cl2",
+      "verdict": "不適切",
+      "reason": "Cl+1と−1が0へ変わる過程を含む。酸化還元。"
+    },
+    "3": {
+      "value": "3H2+N2→2NH3",
+      "verdict": "不適切",
+      "reason": "H0→+1、N0→−3。酸化還元。"
+    },
+    "4": {
+      "value": "2NaCl+CaCO3→Na2CO3+CaCl2",
+      "verdict": "条件内で適切",
+      "reason": "Na+1、Cl−1、Ca+2、C+4、O−2が変わらない。"
+    },
+    "5": {
+      "value": "NH3+2O2→HNO3+H2O",
+      "verdict": "不適切",
+      "reason": "N−3→+5、O0→−2。酸化還元。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/basic/page_016.png"
+  ],
+  "question_id": "R03-REG-BASIC-4-2",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "16",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "0aa5ba9eb727486519e3e55158f94a6eb9cea2c689e3a0fe9e5bb1bc6c7d943f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

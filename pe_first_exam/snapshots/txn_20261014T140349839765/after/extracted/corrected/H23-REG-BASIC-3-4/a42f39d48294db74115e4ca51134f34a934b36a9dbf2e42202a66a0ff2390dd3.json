@@ -1,0 +1,47 @@
+{
+  "stem": "梁の固有振動数は支持条件から比較。",
+  "conditions": {
+    "a": "両端単純支持。",
+    "b": "片持ち。",
+    "c": "両端固定。",
+    "共通": "同じ長さ・材質・断面、最も低い曲げモード。"
+  },
+  "choices": {
+    "1": {
+      "value": "fa<fb<fc",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。"
+    },
+    "2": {
+      "value": "fa<fc<fb",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。"
+    },
+    "3": {
+      "value": "fb<fa<fc",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "fb<fc<fa",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。"
+    },
+    "5": {
+      "value": "fc<fa<fb",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "一様細長梁・線形小振動の標準モデル。せん断変形・回転慣性を含む短い梁へ厳密な値を一般化しない。",
+  "evidence": [
+    "extracted/pages/H23/basic/page_011.png"
+  ],
+  "question_id": "H23-REG-BASIC-3-4",
+  "source_file": "sources/H23/basic.pdf",
+  "source_page": "11",
+  "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+  "raw_text_sha256": "f7314db38c903002530491ce6373606daecc77f95c05b8d9b33595c7b476ce6a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

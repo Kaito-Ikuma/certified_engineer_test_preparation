@@ -1,0 +1,45 @@
+{
+  "stem": "安全達成の反復、予見可能な誤使用、設計の優先順位とALARP条件を判定する。",
+  "conditions": {
+    "判断方向": "各肢の理由に記録。組合せ・個数問題では記述の真偽と回答番号を区別する。",
+    "原典照合": "全5候補、表の列順、否定、条件、規格番号、法令時点を23原典画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "不適切0個",
+      "verdict": "不一致",
+      "reason": "エが本質安全設計の検討を省略できるとしており、0個ではない。"
+    },
+    "2": {
+      "value": "不適切1個",
+      "verdict": "初回・公式一致、規格本文照合保留",
+      "reason": "エのみが明確に誤る。アは非ゼロリスクの安全、イは使用者と誤使用の同定、ウは反復と残留確認、オは適用領域内での合理的低減として読む。"
+    },
+    "3": {
+      "value": "不適切2個",
+      "verdict": "不一致",
+      "reason": "他に二つ目の明確な誤りはない。ただしオの適用領域の限定を守る。"
+    },
+    "4": {
+      "value": "不適切3個",
+      "verdict": "不一致",
+      "reason": "三つの誤りを特定できない。"
+    },
+    "5": {
+      "value": "不適切4個",
+      "verdict": "不一致",
+      "reason": "四つの誤りを特定できない。"
+    }
+  },
+  "figures": "設問固有図なし。組合せ表がある問題では全候補の記号順を画像照合。",
+  "ambiguity": "Guide51全文取得不能のためア〜オの規格全条項への直接照合は未完。オを全ての水準に共通する唯一の許容条件へ拡張しない。",
+  "evidence": [
+    "extracted/pages/R01_retest/aptitude/page_013.png"
+  ],
+  "question_id": "R01-RET-APT-12",
+  "source_file": "sources/R01_retest/aptitude.pdf",
+  "source_page": "13",
+  "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+  "raw_text_sha256": "5fb5704ecb57957d33ffd5ded2de1a6b07cbffdb702b4f3d67a68e4d3fcbda55",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,46 @@
+{
+  "stem": "一面せん断の直線包絡線から切片と摩擦角を求める。",
+  "conditions": {
+    "原典照合": "H29応用原典7頁の四測定点・指数4・全五候補を画像確認。",
+    "条件": "Mohr–Coulombの破壊包絡線を直線とする。指定tan25°=0.47、tan30°=0.58、tan35°=0.70。",
+    "単位": "σ・τ・cは×10⁴N/m²。全応力又は有効応力という区別は原典に明示されず、勝手にuの値を追加しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "c=2.5×10⁴Pa、φ=25°",
+      "verdict": "不適切",
+      "reason": "切片は近いが指定tan25°=0.47は測定の傾き約0.57〜0.60から離れる。"
+    },
+    "2": {
+      "value": "c=2.5×10⁴Pa、φ=30°",
+      "verdict": "代表的条件で適切",
+      "reason": "指定tan30°=0.58、直線τ=c+σtanφから各点のcは2.52・2.54・2.48・2.46（×10⁴Pa）で、丸めを含めて2.5と整合。"
+    },
+    "3": {
+      "value": "c=2.0×10⁴Pa、φ=25°",
+      "verdict": "不適切",
+      "reason": "切片も傾きも測定と不一致。σ=1で予測τ=2.47に対し3.1。"
+    },
+    "4": {
+      "value": "c=2.0×10⁴Pa、φ=30°",
+      "verdict": "不適切",
+      "reason": "傾きは近いがσ=1で予測τ=2.58に対し3.1。切片が不足。"
+    },
+    "5": {
+      "value": "c=2.0×10⁴Pa、φ=35°",
+      "verdict": "不適切",
+      "reason": "傾き0.70は大きすぎ、低応力の切片も不足。全測定点で比較する。"
+    }
+  },
+  "figures": "原典の組合せ表又は測定表を独自に要約。元画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_007.png"
+  ],
+  "question_id": "H29-REG-APPLIED-22",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "5e7f1cb5dbd4d26e6d8d1b6ea3ff4a4c06b30c4639c74ddff705ecbbdfe44086",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

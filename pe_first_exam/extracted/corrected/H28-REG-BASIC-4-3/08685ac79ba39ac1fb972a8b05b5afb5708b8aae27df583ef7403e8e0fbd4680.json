@@ -1,0 +1,50 @@
+{
+  "stem": "Fe・Cu・Alの密度・抵抗率・融点の順序。",
+  "conditions": {
+    "ア": "Fe>Cu>Al。",
+    "イ": "Cu>Fe>Al。",
+    "ウ": "Al>Fe>Cu。",
+    "エ": "Cu>Al>Fe。",
+    "オ": "Fe>Al>Cu。",
+    "比較条件": "密度と抵抗率20°C、融点1気圧。",
+    "列順": "密度 / 電気抵抗率 / 融点。"
+  },
+  "choices": {
+    "1": {
+      "value": "ア イ エ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 イ オ ア と異なる。"
+    },
+    "2": {
+      "value": "イ エ エ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 イ オ ア と異なる。"
+    },
+    "3": {
+      "value": "イ オ ア",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "ウ ウ オ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 イ オ ア と異なる。"
+    },
+    "5": {
+      "value": "ウ オ ア",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 イ オ ア と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "材料の純度・結晶状態・温度を変えた一般的大小へ拡張しない。原典は単体の通常値の比較。",
+  "evidence": [
+    "extracted/pages/H28/basic/page_018.png"
+  ],
+  "question_id": "H28-REG-BASIC-4-3",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "18",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "76ef907be3762f295942405a96021fb8f32024e43bc41bf2760b9565cdfa5923",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

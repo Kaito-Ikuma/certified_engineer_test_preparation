@@ -1,0 +1,135 @@
+{
+  "checked_at": "2026-10-10T23:06:44+09:00",
+  "sources": [
+    {
+      "key": "bio_composition",
+      "title": "Molecular Biology of the Cell, 4th edition: The Chemical Components of a Cell",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK26883/",
+      "checked_claim": "公開検索抽出で水70・4小分子群・典型的組成を確認。直接ページはcaptchaで全文読了ではない。"
+    },
+    {
+      "key": "bio_cell_mass",
+      "title": "Intracellular Water Exchange for Measuring the Dry Mass, Water Mass and Changes in Chemical Composition of Living Cells",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3699654/",
+      "checked_claim": "2013研究論文の表2：細菌・酵母・哺乳類細胞、分母別の水・乾燥重量組成。検索抽出で確認。"
+    },
+    {
+      "key": "bio_membrane",
+      "title": "Molecular Biology of the Cell, 4th edition: The Lipid Bilayer",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK26871/",
+      "checked_claim": "公式公開検索本文でcis・短鎖・相転移と温度適応を確認。"
+    },
+    {
+      "key": "bu_dna_melting",
+      "title": "Lecture 26: Nucleic Acids Introduction (2024)",
+      "url": "https://www.bu.edu/aldolase/biochemistry/html_docs/26_NucleicAcids_Intro_24.pdf",
+      "checked_claim": "講義PDF検索抽出で7頁DNA変性の紫外増色と260 nm・融解曲線。直接取得エラー、全文読了ではない。"
+    },
+    {
+      "key": "mit_amino",
+      "title": "Structures of Amino Acids and Protein Synthesis (7.012, 2004)",
+      "url": "https://ocw.mit.edu/courses/7-012-introduction-to-biology-fall-2004/93d90acfb2556162708a7401c8c7b7d8_protq.pdf",
+      "checked_claim": "標準20種の側鎖構造とペプチド結合の独自講義資料を検索抽出で照合。"
+    },
+    {
+      "key": "mit_protein",
+      "title": "31. Biochemistry: Protein Structure (3.091SC, 2010)",
+      "url": "https://ocw.mit.edu/courses/3-091sc-introduction-to-solid-state-chemistry-fall-2010/pages/organic-materials/31-protein-structure/",
+      "checked_claim": "講義本文の一次構造、等電点、酸塩基、ペプチド・S-S、疎水効果を確認。"
+    },
+    {
+      "key": "nhgri_dna",
+      "title": "Deoxyribonucleic Acid (DNA) Fact Sheet",
+      "url": "https://www.genome.gov/about-genomics/fact-sheets/Deoxyribonucleic-Acid-Fact-Sheet",
+      "checked_claim": "塩基対、逆平行、転写と翻訳を公式公開本文で照合。"
+    },
+    {
+      "key": "nhgri_codon",
+      "title": "Codon",
+      "url": "https://www.genome.gov/genetics-glossary/Codon",
+      "checked_claim": "64・61・3とコドンの機能を本文確認。"
+    },
+    {
+      "key": "nhgri_frameshift",
+      "title": "Frameshift Mutation",
+      "url": "https://www.genome.gov/genetics-glossary/Frameshift-Mutation",
+      "checked_claim": "3の倍数でない挿入欠失と読み枠を本文確認。翻訳領域の成立条件を独自に明示。"
+    },
+    {
+      "key": "nhgri_sickle",
+      "title": "HBB gene: MedlinePlus Genetics",
+      "url": "https://medlineplus.gov/genetics/gene/hbb/",
+      "checked_claim": "HbSのGlu6Valと遺伝子変異を公式検索本文で確認。治療情報は教材へ持ち込まない。"
+    },
+    {
+      "key": "nhgri_cdna",
+      "title": "cDNA (copy DNA)",
+      "url": "https://www.genome.gov/genetics-glossary/copy-DNA-cDNA",
+      "checked_claim": "mRNA由来と逆転写を本文確認。cDNAはUTRも含み得るので、ページのcoding-onlyという簡略化は採用しない。誤った推定URL404の後に実URL確認。"
+    },
+    {
+      "key": "nhgri_epigenomics",
+      "title": "Epigenomics Fact Sheet",
+      "url": "https://www.genome.gov/about-genomics/fact-sheets/Epigenomics-Fact-Sheet",
+      "checked_claim": "配列変異と異なるメチル化、発現状態と細胞分裂での継承を本文確認。"
+    },
+    {
+      "key": "nhgri_cloning",
+      "title": "Cloning Fact Sheet",
+      "url": "https://www.genome.gov/about-genomics/fact-sheets/Cloning-Fact-Sheet",
+      "checked_claim": "除核卵と体細胞核、核由来と表現型の差を本文確認。他の時点依存の人クローン記述は不使用。"
+    },
+    {
+      "key": "plant_regeneration",
+      "title": "Genome scale transcriptome analysis of shoot organogenesis in Populus (2009)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19919717/",
+      "checked_claim": "一次研究の検索本文でホルモン処理、カルスとシュート再生を確認。直接取得captcha、全文読了でない。"
+    },
+    {
+      "key": "neb_pcr",
+      "title": "PCR Troubleshooting Guide",
+      "url": "https://www.neb.com/en/tools-and-resources/troubleshooting-guides/pcr-troubleshooting-guide",
+      "checked_claim": "非特異産物欄の低温対策、プライマー条件、長い鋳型を公式製造者文書で確認。"
+    },
+    {
+      "key": "neb_ecori",
+      "title": "EcoRI-HF",
+      "url": "https://www.neb.com/en/products/r3101-ecori-hf",
+      "checked_claim": "公式製造者ページ取得。認識図は画像で、GAATTC文字検索一致なし。平均間隔は独立等確率モデルから自分で導出し固定長を否定。"
+    },
+    {
+      "key": "fda_insulin",
+      "title": "100 Years of Insulin",
+      "url": "https://www.fda.gov/about-fda/fda-history-exhibits/100-years-insulin",
+      "checked_claim": "1978開発と1982承認を公式歴史本文確認。"
+    },
+    {
+      "key": "nih_amino",
+      "title": "Amino acids: MedlinePlus Medical Encyclopedia",
+      "url": "https://medlineplus.gov/ency/article/002222.htm",
+      "checked_claim": "通常の必須9、非必須Pro、条件付き必須を本文確認。哺乳類全種を同じとする保証ではない。"
+    },
+    {
+      "key": "iubmb_lipase",
+      "title": "EC 3.1.1.3: triacylglycerol lipase",
+      "url": "https://iubmb.qmul.ac.uk/enzyme/EC3/1/1/3.html",
+      "checked_claim": "公式酵素分類の反応式と受容名を本文確認。"
+    },
+    {
+      "key": "iubmb_amylase",
+      "title": "EC 3.2.1.1: alpha-amylase",
+      "url": "https://iubmb.qmul.ac.uk/enzyme/EC3/2/1/1.html",
+      "checked_claim": "公式酵素分類のα1→4結合に対する加水分解を本文確認。"
+    },
+    {
+      "key": "hyper_amylase",
+      "title": "Cloning, Expression, and Purification of Hyperthermophile alpha-Amylase from Pyrococcus woesei",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4700765/",
+      "checked_claim": "2015一次研究の100℃至適の記述を公開検索本文で確認。20℃以下も100℃以上もないという肢はこの一例だけで否定。"
+    }
+  ],
+  "limitations": [
+    "H26B4-6の組成比の普遍性を未確定として保持。代表例と全生物を区別。",
+    "検索抽出と直接本文の範囲を区別しcaptcha/取得エラーを読了にしない。"
+  ]
+}

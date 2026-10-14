@@ -1,0 +1,119 @@
+[
+  {
+    "question_id": "H24-REG-APT-13",
+    "independent_answer": "3",
+    "reason": "ア20分野公共利益○、イ他事業と報酬可能○、ウ競争保護制限×、エ会社員参加禁止×。○○××の3。",
+    "source_images_viewed": [
+      "extracted/pages/H24/aptitude/page_011.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H25-REG-APT-06",
+    "independent_answer": "5",
+    "reason": "ISO26000対象は組織で公人個人も対象とするア×、持続可能発展イ○、株主限定ウ×、認証用エ×。×○××の5。",
+    "source_images_viewed": [
+      "extracted/pages/H25/aptitude/page_007.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H26-REG-APT-06",
+    "independent_answer": "5",
+    "reason": "公益通報は生じようとしている場合も含み、5の除外が誤り。秘密保持等の時点資料を確認する。",
+    "source_images_viewed": [
+      "extracted/pages/H26/aptitude/page_006.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H27-REG-APT-03",
+    "independent_answer": "2",
+    "reason": "認定課程修了で免除と技術士補となる資格が得られるが、技術士補の登録が必要。自動とする2。",
+    "source_images_viewed": [
+      "extracted/pages/H27/aptitude/page_003.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H27-REG-APT-15",
+    "independent_answer": "4",
+    "reason": "短期非正規雇用を増すことはWLB実現の必要条件ではなく、4。",
+    "source_images_viewed": [
+      "extracted/pages/H27/aptitude/page_016.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H30-REG-APT-04",
+    "independent_answer": "1",
+    "reason": "抵触の可能性だけで即時無条件公開ではなく、危害防止と秘密・証拠・適切な通報を検討。1。",
+    "source_images_viewed": [
+      "extracted/pages/H30/aptitude/page_004.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H30-REG-APT-14",
+    "independent_answer": "2|5",
+    "reason": "暫定：福知山線歴代3社長の有罪2は無罪との既知の経緯と不整合。原典画像に5は不起訴で刑事裁判でなく不適切出題の公式注記がある。初回候補2|5を記録し、全肢の判決を一次資料で追加確認。公式正答DBは未参照。",
+    "source_images_viewed": [
+      "extracted/pages/H30/aptitude/page_014.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R01-REG-APT-09",
+    "independent_answer": "2",
+    "reason": "不適切は単独作業推奨イの1件、0/1/2/3/4候補の2。オ暗号化は適切な設定として理解、暗号化だけで万能とはしない。",
+    "source_images_viewed": [
+      "extracted/pages/R01/aptitude/page_010.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R01-REG-APT-14",
+    "independent_answer": "4",
+    "reason": "ISO7原則の法の支配を政府の意向と混同した4。",
+    "source_images_viewed": [
+      "extracted/pages/R01/aptitude/page_014.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R02-REG-APT-11",
+    "independent_answer": "1",
+    "reason": "7つの原則の趣旨は全て一致し異なる0の1。",
+    "source_images_viewed": [
+      "extracted/pages/R02/aptitude/page_011.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R02-REG-APT-15",
+    "independent_answer": "1",
+    "reason": "6項目はいずれも慎重な根拠確認・組織手段・支持・適切な上司・解決提案・他の理解者という適切な行動。6の1。法的保護の条件とは別。",
+    "source_images_viewed": [
+      "extracted/pages/R02/aptitude/page_015.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R05-REG-APT-02",
+    "independent_answer": "3",
+    "reason": "単独作業を可能な限り推奨する3が相互チェックを排除。",
+    "source_images_viewed": [
+      "extracted/pages/R05/aptitude/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R05-REG-APT-09",
+    "independent_answer": "4",
+    "reason": "2006年エレベータ事故はかごの不意上昇による挟まれで、ケーブル破断落下とする4が違う。他4の因果・組織背景は一次資料で追加照合。",
+    "source_images_viewed": [
+      "extracted/pages/R05/aptitude/page_009.png"
+    ],
+    "official_answer_consulted": false
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "stem": "地下水の水質・水頭・含水量の定義を比較する。",
+  "conditions": {
+    "判断対象": "地下水の水質・水頭・含水量の定義を比較する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "帯水層に不飽和を含み被圧に自由水面",
+      "verdict": "選ばない候補",
+      "reason": "飽和し水を伝える帯水層と不飽和帯、自由水面の不圧を取り違え。"
+    },
+    "2": {
+      "value": "水質は降水/地表水/地層/環境に依存",
+      "verdict": "選ぶ候補",
+      "reason": "起源と水岩反応・環境条件が水質を変える。"
+    },
+    "3": {
+      "value": "全水頭は位置−圧力、勾配を拡散率",
+      "verdict": "選ばない候補",
+      "reason": "低速地下水のh=z+p/(ρg)は和で、差/距離は動水勾配。"
+    },
+    "4": {
+      "value": "体積含水率は水/間隙、飽和で間隙比",
+      "verdict": "選ばない候補",
+      "reason": "θ=Vw/V全体、飽和では間隙率n。間隙比eではない。"
+    },
+    "5": {
+      "value": "基底流は低水期除外、都市で直接流出減",
+      "verdict": "選ばない候補",
+      "reason": "基底流は低水期にも地下水等が支える流量。都市流出の断定も逆。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_010.png"
+  ],
+  "question_id": "H26-REG-APPLIED-24",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "f2f8cdd1009317df52bc19e3d2b87d1e46b42e33467994e739b120b8dc33a91f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

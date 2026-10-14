@@ -1,0 +1,219 @@
+[
+  {
+    "time": "2026-10-08T19:33:15+09:00",
+    "change": "Five physics-mechanics concepts added; existing IDs and taxonomy assignments retained",
+    "added_ids": [
+      "newton_dynamics",
+      "mechanical_energy",
+      "buoyancy",
+      "bernoulli",
+      "impact"
+    ],
+    "reason": "Source review found buoyancy, energy, Newton dynamics and impact wrongly tagged as circuits/orbits or left unresolved; Pitot principle also needs explicit concept"
+  },
+  {
+    "time": "2026-10-09T17:14:20+09:00",
+    "added_ids": [
+      "cpd",
+      "competency"
+    ],
+    "change": "Two aptitude concepts added during S7_002; retrospectively logged",
+    "reason": "Source-image reviewed CPD guidelines and competency questions require distinct concepts within existing apt_0"
+  },
+  {
+    "time": "2026-10-09T17:14:20+09:00",
+    "added_ids": [
+      "gnss",
+      "geomagnetic_declination"
+    ],
+    "change": "Two narrowly scoped geophysical concepts added during S7_004",
+    "reason": "GNSS aggregate-name and historical declination questions are outside exploration-method concepts; existing taxonomy unchanged"
+  },
+  {
+    "time": "2026-10-09T23:38:43+09:00",
+    "added_ids": [
+      "engineering_ethics"
+    ],
+    "change": "既存apt_5へ倫理原理・意思決定・組織倫理の概念を1件追加。分類体系の変更なし。",
+    "reason": "原典12問の確認で一般倫理の概念が空欄又はアルゴリズムなど誤概念になっていたため。公益だけでは原理・意思決定・組織倫理を表せない。前版JSONを保存。"
+  },
+  {
+    "time": "2026-10-10T03:19:48+09:00",
+    "added_ids": [
+      "basic_stoichiometry",
+      "basic_oxidation",
+      "basic_composition",
+      "basic_halogen",
+      "basic_ceramics",
+      "basic_reaction_enthalpy"
+    ],
+    "change": "S7_012原典18問に基づく既存basic_4_1/4_2内の6概念追加。既存体系・既存概念の対象範囲を保持。",
+    "reason": "応用理学専用のconcept_045/046/048を基礎へ流用せず、基礎の未確定化学概念を明確化。前版85概念を保存。"
+  },
+  {
+    "time": "2026-10-10T20:29:24+09:00",
+    "added_ids": [
+      "fair_trade",
+      "whistleblower"
+    ],
+    "change": "S7_013原典14問に基づき、既存apt_4内へ公正取引と公益通報の2概念追加。体系変更なし。",
+    "reason": "知的財産・一般説明責任の概念へ誤統合せず、異なる制度の対象・要件を識別する。91概念の前版を保存。"
+  },
+  {
+    "time": "2026-10-10T21:17:29+09:00",
+    "added_ids": [
+      "igneous_assemblage",
+      "metamorphic_equilibrium",
+      "pyroclastic_deposit",
+      "accretion_rocks",
+      "soil_origin",
+      "rock_weathering"
+    ],
+    "change": "S7_014原典17問に基づき既存geo_petrology/geo_engineering内6概念を追加。93概念の前版保存。",
+    "reason": "鉱物・岩石の大分類だけでは変成平衡・火成組成・土成因・風化機構を区別できないため。taxonomyの変更なし。"
+  },
+  {
+    "time": "2026-10-10T21:42:41+09:00",
+    "batch": "S7_015_wave_optics",
+    "previous_version": "1.7-S7-concept-additions",
+    "version": "1.8-S7-concept-additions",
+    "added": [
+      "wave_kinematics",
+      "acoustic_propagation",
+      "acoustic_doppler",
+      "acoustic_interference",
+      "thin_lens",
+      "optical_diffraction",
+      "thinfilm_interference",
+      "photon_matter_wave",
+      "em_spectrum"
+    ],
+    "reason": "既存分野を保持し、位相・媒質・運動・経路差・像・回折・薄膜・光子・スペクトルを区別。9概念追加、99概念の前版保存。"
+  },
+  {
+    "time": "2026-10-10T22:21:58+09:00",
+    "batch": "S7_016_ethics_institutions",
+    "previous_version": "1.8-S7-concept-additions",
+    "version": "1.9-S7-concept-additions",
+    "added": [
+      "npo_activity",
+      "work_life_balance",
+      "secret_management",
+      "international_registration",
+      "accident_learning"
+    ],
+    "reason": "既存分類を保持し、非営利、仕事生活、秘密管理、国際登録、事故学習の5概念を適性へ追加。108概念の前版保存。"
+  },
+  {
+    "time": "2026-10-10T23:06:44+09:00",
+    "batch": "S7_017_biology",
+    "previous_version": "1.9-S7-concept-additions",
+    "version": "1.10-S7-concept-additions",
+    "added": [
+      "cell_composition",
+      "membrane_fluidity",
+      "amino_acids",
+      "protein_structure",
+      "dna_structure",
+      "dna_denaturation",
+      "genetic_code",
+      "molecular_biology_techniques",
+      "cloning",
+      "genetic_mutation",
+      "enzyme_catalysis"
+    ],
+    "reason": "生命科学28原典に現れる11概念を既存basic_4_0内で整理。113概念の前版保存。"
+  },
+  {
+    "time": "2026-10-10T23:52:28+09:00",
+    "batch": "S7_018_atmosphere",
+    "previous_version": "1.10-S7-concept-additions",
+    "version": "1.11-S7-concept-additions",
+    "added": [
+      "atmospheric_composition",
+      "atmospheric_vertical",
+      "earth_radiation_budget",
+      "atmospheric_circulation",
+      "enso",
+      "water_budget_residence",
+      "precipitation_chemistry"
+    ],
+    "reason": "大気23原典の7中心概念を既存earth_weather内へ追加。124概念の前版保存。"
+  },
+  {
+    "time": "2026-10-11T00:27:22+09:00",
+    "batch": "S7_019_information",
+    "previous_version": "1.11-S7-concept-additions",
+    "version": "1.12-S7-concept-additions",
+    "added": [
+      "markov_transition",
+      "source_compression",
+      "data_transfer"
+    ],
+    "reason": "15原典の中心概念を3追加。既存符号・キャッシュ・文法概念を再利用。131概念の前版保存。"
+  },
+  {
+    "time": "2026-10-11T00:44:21+09:00",
+    "batch": "S7_020_environment",
+    "previous_version": "1.12-S7-concept-additions",
+    "version": "1.13-S7-concept-additions",
+    "added": [
+      "circular_resources",
+      "sdgs_integration",
+      "carbon_accounting",
+      "biosafety_containment",
+      "renewable_carriers",
+      "disaster_preparedness"
+    ],
+    "reason": "18原典から環境の広い旧概念を6中心課題に分ける。134概念版を保存。"
+  },
+  {
+    "time": "2026-10-11T09:38:42+09:00",
+    "batch": "S7_021_geochemistry",
+    "previous_version": "1.13-S7-concept-additions",
+    "version": "1.14-S7-concept-additions",
+    "added": [
+      "water_quality_indicators",
+      "carbon_geochemical_cycle",
+      "river_water_chemistry",
+      "crust_abundance",
+      "natural_water_redox",
+      "groundwater_transport",
+      "water_conductivity",
+      "water_mineral_equilibrium",
+      "nitrogen_geochemical_cycle"
+    ],
+    "modified_disciplines": [
+      "rock_weathering",
+      "water_budget_residence"
+    ],
+    "reason": "22原典を物質収支・水質・鉱物反応の中心課題に分ける。貯留・風化の既存概念は統合して領域適用を追加。140概念版を保持。"
+  },
+  {
+    "time": "2026-10-11T09:58:21+09:00",
+    "batch": "S7_022_isotope",
+    "previous_version": "1.14-S7-concept-additions",
+    "version": "1.15-S7-concept-additions",
+    "added": [
+      "water_isotope_fractionation",
+      "water_isotope_age",
+      "cosmogenic_nuclides"
+    ],
+    "modified_disciplines": [
+      "isotope_general"
+    ],
+    "reason": "同位体15原典の標準・放射年代の既存概念を再利用。水分別、水時計、宇宙線核種のみを追加。149概念版保持。"
+  },
+  {
+    "time": "2026-10-11T10:16:42+09:00",
+    "batch": "S7_023_modern_units",
+    "previous_version": "1.15-S7-concept-additions",
+    "version": "1.16-S7-concept-additions",
+    "added": [
+      "si_definitions",
+      "radiation_dosimetry",
+      "optoelectronic_devices"
+    ],
+    "reason": "19原典で単位換算と歴史的定義を分離。線量を材料応力から、光素子を一般磁性から修正。既存原子核と物質波は再利用。152概念版保存。"
+  }
+]

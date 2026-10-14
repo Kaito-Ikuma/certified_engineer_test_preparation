@@ -1,0 +1,45 @@
+{
+  "stem": "面の走向・真の傾斜と線の方位・沈下角を、測定する断面で区別する。",
+  "conditions": {
+    "判断方向": "最も不適切なもの。",
+    "原典照合": "全5肢、上下・平行直交・右左・時代・固結度と割合を画像照合。図なし。"
+  },
+  "choices": {
+    "1": {
+      "value": "面を水平に横切る長辺で走向方位を読む。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "面と水平面の交線が走向線であり、水平を保った接触線の方位を読む。"
+    },
+    "2": {
+      "value": "走向に直交する方向で傾斜方向の方位を読む。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "平面が最も下降する水平方位は走向に直交する。どちら側へ下がるかも記録する。"
+    },
+    "3": {
+      "value": "走向に平行な長辺で面の傾斜角を読む。",
+      "verdict": "不適切",
+      "reason": "走向方向は水平なので真の傾斜を測れない。走向に直交する鉛直断面で面の下降方向に長辺を当てる。"
+    },
+    "4": {
+      "value": "線を含む鉛直板と水平な長辺で線の水平投影方位を読む。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "線の方位は水平投影の方向として測れる。原典の「線構造の走向」は線のトレンドを意味し、面の走向線と同じ定義ではない。"
+    },
+    "5": {
+      "value": "線に沿い計器面を鉛直にしてプランジ角を読む。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "線と水平面のなす下降角を測る。方位と角度を合わせて三次元の線を記載する。"
+    }
+  },
+  "figures": "設問固有図なし。原典の用語・否定・全5肢を確認。剪断の方位条件を推測で補わない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_011.png"
+  ],
+  "question_id": "R02-REG-APPLIED-30",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "72143cca03737bf7f19bc4a52e5b39ffeb164bb144a208ce882b4c1a7d4bb2d1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "ガンマ密度検層のCompton散乱と誤った線種を比較する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "速度検層は弾性波、電極検層は比抵抗、ガンマ密度検層は校正かさ密度である。"
+  },
+  "choices": {
+    "1": {
+      "value": "電極検層の測定区間は孔内水位以深",
+      "verdict": "条件付きで適切",
+      "reason": "通常の裸孔電極検層では導電水・泥水を介する区間を測る。電極接触を持たない誘導検層などには一般化しない。"
+    },
+    "2": {
+      "value": "ダウンホールで地表起振・孔内受振の初動走時を測る",
+      "verdict": "適切",
+      "reason": "孔壁に結合した受振器の位置と走時から区間速度を推定する。経路と屈折の補正が必要である。"
+    },
+    "3": {
+      "value": "VSPで孔内に振源又は受振器を設置し反射波を測る",
+      "verdict": "条件付きで適切",
+      "reason": "通常の地表振源・孔内受振と逆VSPなどの構成を区別する。孔内深度と反射記録を結び地表反射探査の解釈を助ける。"
+    },
+    "4": {
+      "value": "ベータ線のレイリー散乱で密度分布を測る",
+      "verdict": "不適切",
+      "reason": "ガンマ線のCompton散乱が主要な原理である。電子密度と岩石かさ密度の校正を使う。"
+    },
+    "5": {
+      "value": "サスペンションで孔内振源と複数受振器を用いる",
+      "verdict": "適切",
+      "reason": "孔内ゾンデの起振と受振点間の走時差により、孔軸に沿う地盤の区間速度を求める。水中のS波伝播を直接測るという意味ではない。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "水位条件は通常の電極検層についてである。VSPの逆配置や孔内流体・孔壁接触による密度補正を別に扱う。",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_013.png"
+  ],
+  "question_id": "R07-REG-APPLIED-34",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "13",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "c146c2578bf6b37b32dd08a7032211bdb8c9045b8d8e6c244c3fd3e4ff2faa2a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

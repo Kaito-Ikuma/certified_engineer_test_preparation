@@ -1,0 +1,45 @@
+{
+  "stem": "メタンの四面体構造とエタンのねじれ・重なり配座を区別する。",
+  "conditions": {
+    "判断対象": "メタンの四面体構造とエタンのねじれ・重なり配座を区別する。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "1atmで−100℃では液化しない",
+      "verdict": "選ばない候補",
+      "reason": "1atmの沸点は約−161℃で−100℃は気体。"
+    },
+    "2": {
+      "value": "2s/2p混成で単結合説明",
+      "verdict": "選ばない候補",
+      "reason": "sp3の四面体軌道をHの1sと組合せる。"
+    },
+    "3": {
+      "value": "水に不溶",
+      "verdict": "選ばない候補",
+      "reason": "通常は難溶として扱う。有限の小さい溶解度はある。"
+    },
+    "4": {
+      "value": "天然ガス主成分",
+      "verdict": "選ばない候補",
+      "reason": "主要燃料成分の代表。"
+    },
+    "5": {
+      "value": "ねじれ型と重なり型配座",
+      "verdict": "選ぶ候補",
+      "reason": "C-C単結合の両端の相対回転で扱うエタン等の配座をメタンに当てた誤り。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "水に不溶は難溶の慣用表現で厳密ゼロではない。原典を保持し溶解度の全条件未照合を明示。",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_005.png"
+  ],
+  "question_id": "R05-REG-APPLIED-14",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "70eab973cda27817c868362bd6a229ee73d045aec1ae21bac91d183b5d378094",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

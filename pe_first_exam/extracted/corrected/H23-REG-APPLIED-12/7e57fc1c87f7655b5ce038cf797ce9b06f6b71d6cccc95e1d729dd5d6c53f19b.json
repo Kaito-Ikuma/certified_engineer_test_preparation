@@ -1,0 +1,45 @@
+{
+  "stem": "触媒が変える反応速度と、変えない平衡定数・反応熱を区別する。",
+  "conditions": {
+    "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+    "成立条件": "触媒の正味の再生、同一温度での平衡不変、反応熱の状態関数性。"
+  },
+  "choices": {
+    "1": {
+      "value": "自ら変化せず速度を変え又は反応を開始する",
+      "verdict": "条件付きで適切",
+      "reason": "反応過程では中間体として変化し得るが、正味で再生されるという意味である。開始は実用上観測できる速度への増大として読む。"
+    },
+    "2": {
+      "value": "平衡に影響しない",
+      "verdict": "適切",
+      "reason": "同じ温度で反応の標準ギブズエネルギー差を変えない。"
+    },
+    "3": {
+      "value": "反応熱を減少させる",
+      "verdict": "不適切",
+      "reason": "活性化障壁の低下と反応前後のエンタルピー差は別である。"
+    },
+    "4": {
+      "value": "負触媒は速度を低下させる",
+      "verdict": "条件付きで適切",
+      "reason": "歴史的呼称ではその意味であるが、IUPACは負触媒という用語を採用せず阻害を区別する。"
+    },
+    "5": {
+      "value": "選択性を持ち特定生成物を与える",
+      "verdict": "適切",
+      "reason": "競合する反応経路の相対速度を変えて生成物選択性を持ち得る。"
+    }
+  },
+  "figures": "文字記述又は順序候補であり図なし。",
+  "ambiguity": "負触媒という出題時の用語と現行IUPAC定義の不一致、及び自ら変化せずの正味再生という省略を保持する。",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_005.png"
+  ],
+  "question_id": "H23-REG-APPLIED-12",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "7c65f41a71bbaee32fe3b9a40205914140a927359ab3bf84d583f5f43ede3784",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

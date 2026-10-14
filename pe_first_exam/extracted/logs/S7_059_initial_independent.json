@@ -1,0 +1,155 @@
+{
+  "scope": "全18原典画像と全30本文から初回解を記録。公式情報の入った選択ファイルを使っており完全盲検ではない。",
+  "records": [
+    {
+      "question_id": "H29-REG-BASIC-5-1",
+      "independent_answer": "1",
+      "reason": "LCA PPP EPR正、税務監査の定義誤。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-5-2",
+      "independent_answer": "1",
+      "reason": "NDC削減は緩和で適応ではない。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-5-3",
+      "independent_answer": "4",
+      "reason": "純CH4の密度比.714/425≈1/595。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-5-4",
+      "independent_answer": "2",
+      "reason": "冷房は暖房十倍ではなく小さい。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-5-5",
+      "independent_answer": "2",
+      "reason": "産業革命大学主導一般化が誤。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-5-6",
+      "independent_answer": "5",
+      "reason": "cyclotronはLawrence、Edisonではない。"
+    },
+    {
+      "question_id": "H30-REG-BASIC-5-1",
+      "independent_answer": "2",
+      "reason": "SDGs先進含む全世界、途上だけ誤。"
+    },
+    {
+      "question_id": "H30-REG-BASIC-5-2",
+      "independent_answer": "3",
+      "reason": "環境会計費用効果金額物量。"
+    },
+    {
+      "question_id": "H30-REG-BASIC-5-3",
+      "independent_answer": "3",
+      "reason": "2017中東87、ホルムズ、サウジ、12%。"
+    },
+    {
+      "question_id": "H30-REG-BASIC-5-4",
+      "independent_answer": "4",
+      "reason": "需給最適化HEMSをメータ定義と混同。"
+    },
+    {
+      "question_id": "H30-REG-BASIC-5-5",
+      "independent_answer": "3",
+      "reason": "Watt1769<Bell1876<Hertz1880s<Haber1909<Hahn1938。"
+    },
+    {
+      "question_id": "H30-REG-BASIC-5-6",
+      "independent_answer": "5",
+      "reason": "規定なしも責任。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-5-1",
+      "independent_answer": "3",
+      "reason": "SOx NOx SPM Ox。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-5-2",
+      "independent_answer": "2",
+      "reason": "削減は緩和、影響備え適応。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-5-3",
+      "independent_answer": "3",
+      "reason": "25–27はLNG、石油3。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-5-4",
+      "independent_answer": "4",
+      "reason": "(5044×24+(7831−1600)×19+4696×14)×1000×44/12≈1.119e9t。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-5-5",
+      "independent_answer": "2",
+      "reason": "Jenner1796はウイルス発見前。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-5-6",
+      "independent_answer": "5",
+      "reason": "基本法国責務有り。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-5-1",
+      "independent_answer": "1",
+      "reason": "緩和適応生態系生物多様性。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-5-2",
+      "independent_answer": "1",
+      "reason": "家電小売引取引渡し。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-5-3",
+      "independent_answer": "3",
+      "reason": "C>A>B>D、質量単位。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-5-4",
+      "independent_answer": "3",
+      "reason": "(710+938+596)/20095≈11.17%。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-5-5",
+      "independent_answer": "4",
+      "reason": "Halley<Watt<Darwin<Einstein<Fukui。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-5-6",
+      "independent_answer": "3",
+      "reason": "知覚リスクと評価リスクに隔たりがあり得る。"
+    },
+    {
+      "question_id": "R02-REG-BASIC-5-1",
+      "independent_answer": "2",
+      "reason": "OXXOO。海外再生半数以下が誤、陸域対策正。戦略の採択月原典六月は要確認。"
+    },
+    {
+      "question_id": "R02-REG-BASIC-5-2",
+      "independent_answer": "3",
+      "reason": "外来種防除禁止ではない。"
+    },
+    {
+      "question_id": "R02-REG-BASIC-5-3",
+      "independent_answer": "4",
+      "reason": "家庭部門震災後継続増加でない。"
+    },
+    {
+      "question_id": "R02-REG-BASIC-5-4",
+      "independent_answer": "1",
+      "reason": "30コンバインドシェール。"
+    },
+    {
+      "question_id": "R02-REG-BASIC-5-5",
+      "independent_answer": "4",
+      "reason": "日本の統計品質管理導入は主に戦後。"
+    },
+    {
+      "question_id": "R02-REG-BASIC-5-6",
+      "independent_answer": "1",
+      "reason": "Jenner1796<Mendeleev1869<Curie1898<triode1906<transistor1947。"
+    }
+  ]
+}

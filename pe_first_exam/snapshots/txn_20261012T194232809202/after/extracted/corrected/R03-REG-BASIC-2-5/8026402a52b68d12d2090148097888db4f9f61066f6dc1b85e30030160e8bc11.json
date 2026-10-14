@@ -1,0 +1,45 @@
+{
+  "stem": "除算の優先を保って括弧内の中置式を逆ポーランド記法へ変換する。",
+  "conditions": {
+    "原典式": "(A+B÷C)×(D−F)",
+    "OCR差": "生OCRの(A+B−C)は原典に一致しない。÷を別校正へ記録。"
+  },
+  "choices": {
+    "1": {
+      "value": "ABC÷+DF−×",
+      "verdict": "適切",
+      "reason": "B÷Cの後にAを足し、D−Fの後に掛ける順に合う。"
+    },
+    "2": {
+      "value": "AB+C÷DF−×",
+      "verdict": "不適切",
+      "reason": "(A+B)÷Cへ括りを変えている。"
+    },
+    "3": {
+      "value": "ABC÷+D×F−",
+      "verdict": "不適切",
+      "reason": "左式×Dの後でFを引いてしまう。"
+    },
+    "4": {
+      "value": "×+A÷BC−DF",
+      "verdict": "不適切",
+      "reason": "先頭の演算子は後置ではない。"
+    },
+    "5": {
+      "value": "AB+C÷D×F−",
+      "verdict": "不適切",
+      "reason": "左の除算対象と最後の減算の括りが違う。"
+    }
+  },
+  "figures": "原典の木・道路接続・構文経路・矢印を画像確認。教材では独自の構造表現で説明し原図転載なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/basic/page_009.png"
+  ],
+  "question_id": "R03-REG-BASIC-2-5",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "9",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "3a63f85b1691f7e70617f7a1866c0393fc49462957d1a2de60c6ca86d340347c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "家庭エネルギーの用途と消費範囲。",
+  "conditions": {
+    "時点": "平成29年度に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "給湯が約三割",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "2": {
+      "value": "冷房が暖房の約十倍",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "3": {
+      "value": "電気が約五割",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "4": {
+      "value": "冷蔵庫TV空調はトップランナー",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "5": {
+      "value": "電力約5%が待機",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "原典「近年」の指定統計年が曖昧で、給湯三割・電気五割・待機五%の全原表は未取得。比率を現行値の普遍定数にはしない。",
+  "evidence": [
+    "extracted/pages/H29/basic/page_019.png"
+  ],
+  "question_id": "H29-REG-BASIC-5-4",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "19",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "f02636e05fde70ad5e38d3f2d8e377ab8abd37be7e6142b57be73b49f9e5b873",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,254 @@
+[
+  {
+    "question_id": "H23-REG-BASIC-4-5",
+    "independent_answer": "3",
+    "reason": "エステル・高い・長鎖・低い・増す・飽和。温度上昇の流動化を高融点脂質で相殺。",
+    "source_images_viewed": [
+      "extracted/pages/H23/basic/page_014.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H24-REG-BASIC-4-5",
+    "independent_answer": "3",
+    "reason": "水素結合、紫外吸収、G-C対、アニーリング。",
+    "source_images_viewed": [
+      "extracted/pages/H24/basic/page_014.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H25-REG-BASIC-4-5",
+    "independent_answer": "1",
+    "reason": "標準20種、カルボキシ基、疎水、L。表の組合せ。",
+    "source_images_viewed": [
+      "extracted/pages/H25/basic/page_017.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H26-REG-BASIC-4-5",
+    "independent_answer": "3",
+    "reason": "エステル・高い・長鎖・低い・増す・飽和。",
+    "source_images_viewed": [
+      "extracted/pages/H26/basic/page_015.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H26-REG-BASIC-4-6",
+    "independent_answer": "1|2",
+    "reason": "1の主要元素PはNの誤り。2の全生物で組成比同様という断定も厳密には成立せず、1を主候補とし2の普遍性に疑義。",
+    "source_images_viewed": [
+      "extracted/pages/H26/basic/page_015.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H27-REG-BASIC-4-5",
+    "independent_answer": "2",
+    "reason": "植物ホルモン・カルス・核・未受精卵。",
+    "source_images_viewed": [
+      "extracted/pages/H27/basic/page_014.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H27-REG-BASIC-4-6",
+    "independent_answer": "3",
+    "reason": "同じ鎖のA+G=100−20−35=45。相補鎖A+G55。",
+    "source_images_viewed": [
+      "extracted/pages/H27/basic/page_014.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H28-REG-BASIC-4-5",
+    "independent_answer": "1",
+    "reason": "複数コドンが同じアミノ酸を指定する縮重、停止3を区別。",
+    "source_images_viewed": [
+      "extracted/pages/H28/basic/page_019.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H28-REG-BASIC-4-6",
+    "independent_answer": "3",
+    "reason": "水素・ヌクレオチド・ホスホジエステル・C。",
+    "source_images_viewed": [
+      "extracted/pages/H28/basic/page_020.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H29-REG-BASIC-4-5",
+    "independent_answer": "1",
+    "reason": "20・カルボキシ・疎水・L。H25と4/5並びが違う。",
+    "source_images_viewed": [
+      "extracted/pages/H29/basic/page_017.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H29-REG-BASIC-4-6",
+    "independent_answer": "1",
+    "reason": "PCR反復加熱に耐熱ポリメラーゼ。EcoRI切断長は固定4096ではない。",
+    "source_images_viewed": [
+      "extracted/pages/H29/basic/page_017.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H30-REG-BASIC-4-5",
+    "independent_answer": "5",
+    "reason": "有機成分の重量最大は通常タンパク質で核酸ではない。水70は総重量、H60超は原子数。",
+    "source_images_viewed": [
+      "extracted/pages/H30/basic/page_016.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H30-REG-BASIC-4-6",
+    "independent_answer": "3",
+    "reason": "一次構造は遺伝子で指定。ペプチドとジスルフィドは共有結合、L優位、疎水側鎖は水溶性球状の内部。",
+    "source_images_viewed": [
+      "extracted/pages/H30/basic/page_017.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R01-REG-BASIC-4-5",
+    "independent_answer": "4",
+    "reason": "水素・ヌクレオチド・ホスホジエステル・C。H28から表順が違う。",
+    "source_images_viewed": [
+      "extracted/pages/R01/basic/page_018.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R01-REG-BASIC-4-6",
+    "independent_answer": "3",
+    "reason": "20・側鎖・ペプチド・pH>pIで負。",
+    "source_images_viewed": [
+      "extracted/pages/R01/basic/page_018.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R01-RET-BASIC-4-5",
+    "independent_answer": "3",
+    "reason": "縮重。同型H28の選択肢順が変わった。",
+    "source_images_viewed": [
+      "extracted/pages/R01_retest/basic/page_015.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R01-RET-BASIC-4-6",
+    "independent_answer": "3",
+    "reason": "ゲノムにある翻訳領域でもその組織で未発現ならcDNAに含まれない場合。PCR理想2^30、EcoRI平均と固定の区別。",
+    "source_images_viewed": [
+      "extracted/pages/R01_retest/basic/page_016.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R02-REG-BASIC-4-6",
+    "independent_answer": "4",
+    "reason": "耐熱性高いDNAポリメラーゼ。熱変性は主鎖共有結合切断ではない。",
+    "source_images_viewed": [
+      "extracted/pages/R02/basic/page_018.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R03-REG-BASIC-4-5",
+    "independent_answer": "1",
+    "reason": "カルボキシ・疎水・S。Cys/Met硫黄、Cys間S-Sは共有結合。",
+    "source_images_viewed": [
+      "extracted/pages/R03/basic/page_019.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R03-REG-BASIC-4-6",
+    "independent_answer": "2",
+    "reason": "翻訳領域1塩基挿入でフレームずれ。鎌状赤血球は欠失でなく置換。",
+    "source_images_viewed": [
+      "extracted/pages/R03/basic/page_020.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R04-REG-BASIC-4-5",
+    "independent_answer": "5",
+    "reason": "リパーゼはトリグリセリドのエステルを加水分解。触媒は障壁を下げる。",
+    "source_images_viewed": [
+      "extracted/pages/R04/basic/page_015.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R04-REG-BASIC-4-6",
+    "independent_answer": "5",
+    "reason": "同じ鎖C+T60、相補鎖G+A60。相補C25T15、sum40。",
+    "source_images_viewed": [
+      "extracted/pages/R04/basic/page_016.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R05-REG-BASIC-4-5",
+    "independent_answer": "3",
+    "reason": "アミノ酸・ペプチド・酵素・デンプン。アミラーゼはα結合、セルロースβは別。",
+    "source_images_viewed": [
+      "extracted/pages/R05/basic/page_014.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R05-REG-BASIC-4-6",
+    "independent_answer": "5",
+    "reason": "熱変性は塩基間水素結合等の会合を解く。4耐熱性低いは誤り。R02とは候補順と命題が変化。",
+    "source_images_viewed": [
+      "extracted/pages/R05/basic/page_015.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R06-REG-BASIC-4-5",
+    "independent_answer": "1",
+    "reason": "DNA標準塩基はA,C,G,T、UはRNA。",
+    "source_images_viewed": [
+      "extracted/pages/R06/basic/page_016.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R06-REG-BASIC-4-6",
+    "independent_answer": "4",
+    "reason": "アミノ酸配列は核酸配列に規定される。他はD・非共有・疎水側鎖分布の誤り。",
+    "source_images_viewed": [
+      "extracted/pages/R06/basic/page_016.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R07-REG-BASIC-4-5",
+    "independent_answer": "4",
+    "reason": "通常の必須9種にIleValLeuMet、Pro非必須。哺乳類全体/栄養状況への無条件拡張はしない。",
+    "source_images_viewed": [
+      "extracted/pages/R07/basic/page_014.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R07-REG-BASIC-4-6",
+    "independent_answer": "4",
+    "reason": "細菌の巨大分子で重量最大は通常タンパク質。核酸ではない。",
+    "source_images_viewed": [
+      "extracted/pages/R07/basic/page_014.png"
+    ],
+    "official_answer_consulted": false
+  }
+]

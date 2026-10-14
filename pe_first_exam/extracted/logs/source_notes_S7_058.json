@@ -1,0 +1,80 @@
+[
+  {
+    "key": "env58_ghg2008",
+    "url": "https://www.env.go.jp/press/files/jp/15529.pdf",
+    "reading_scope": "検索本文の2008CO2値を確認。全図表の取得・照合ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env58_wastegoal",
+    "url": "https://www.env.go.jp/press/files/jp/2109.html",
+    "reading_scope": "本文の一般・産業廃棄物最終処分半減目標を確認。平成22白書の引用全文確定ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env58_heating",
+    "url": "https://www.enecho.meti.go.jp/statistics/total_energy/pdf/shv2023_cmt.pdf",
+    "reading_scope": "検索索引の歴史改訂表を参照。2005全四燃料値の原表照合は未完了。",
+    "full_source_read": false
+  },
+  {
+    "key": "env58_oil",
+    "url": "https://www.enecho.meti.go.jp/about/whitepaper/2015html/2-1-3.html",
+    "reading_scope": "検索本文の2013年度83.6%とサウジ首位を確認。2012暦年の財務省表の確定証跡ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env58_curie",
+    "url": "https://www.nobelprize.org/prizes/themes/marie-and-pierre-curie-and-the-discovery-of-polonium-and-radium/",
+    "reading_scope": "公式検索本文の新元素発見の対応を確認。全史料の読了ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env58_steam",
+    "url": "https://www.imeche.org/about-us/imeche-engineering-history/mechanical-engineering-history-timeline/1600-1799",
+    "reading_scope": "専門職団体の検索本文でNewcomen1712とWatt1757–1769を確認。原特許全文ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env58_nylon",
+    "url": "https://www.acs.org/education/whatischemistry/landmarks/carotherspolymers.html",
+    "reading_scope": "団体本文検索で1939商業化、同団体歴史PDF検索で1935選定を確認。原合成記録未読。",
+    "full_source_read": false
+  },
+  {
+    "key": "env58_pmstandard",
+    "url": "https://www.env.go.jp/kijun/taiki4.html",
+    "reading_scope": "公開告示82–92行の定義・分粒装置・環境基準を本文確認。",
+    "full_source_read": false
+  },
+  {
+    "key": "env58_pm25",
+    "url": "https://www.env.go.jp/air/osen/pm/info.html",
+    "reading_scope": "検索本文の概ね2.5μm以下という説明を確認。全健康評価報告の検証ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env58_accounting",
+    "url": "https://www.env.go.jp/policy/j-hiroba/04-2.html",
+    "reading_scope": "公開本文86–95行で費用・効果・金額物量・内部外部機能を確認。2005ガイドライン全文読了ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env58_fit2013",
+    "url": "https://www.meti.go.jp/shingikai/enecho/kihon_seisaku/denryoku_system/seido_sekkei/pdf/03_04_04.pdf",
+    "reading_scope": "公式検索本文の正当な拒否理由を確認。PDF取得失敗、全文未読。",
+    "full_source_read": false
+  },
+  {
+    "key": "env58_communication",
+    "url": "https://www.miraikan.jst.go.jp/aboutus/communicators/",
+    "reading_scope": "科学と社会の双方向性を公式検索本文で確認。出題時の政策資料全文ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env58_mix2015",
+    "url": "https://www.enecho.meti.go.jp/about/whitepaper/2015html/1-3-3.html",
+    "reading_scope": "検索本文で3E+Sと自給率25%・省エネ骨子を確認。7月最終PDF取得失敗、全電源図の取得ではない。",
+    "full_source_read": false
+  }
+]

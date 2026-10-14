@@ -1,0 +1,46 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T10:31:42+09:00",
+  "paths": [
+    "data/batch_changes/S7_023_omega_math_revision_H23-REG-APPLIED-06_revision.json",
+    "extracted/corrected/H23-REG-APPLIED-06/02a27aa5b10bb7782f6f66e7cbaba75f50db6d83dbc206bf59f0bf0df2145471.json",
+    "data/batch_changes/S7_023_omega_math_revision_H27-REG-APPLIED-04_revision.json",
+    "extracted/corrected/H27-REG-APPLIED-04/61fa53215caecedf73e959929f71709e06d7c05a661ec05beffea2efb2106ef0.json",
+    "data/batch_changes/S7_023_omega_math_revision_R05-REG-APPLIED-13_revision.json",
+    "extracted/corrected/R05-REG-APPLIED-13/92b49748584dc5ef72d126fdedeb26b9e2fc2fb8029425fa9260ae76225acfee.json",
+    "data/questions.csv",
+    "data/verification_records.csv",
+    "data/question_topics.csv",
+    "data/question_evaluations.csv",
+    "data/batch_changes/S7_023_omega_math_revision.csv",
+    "extracted/logs/batches/S7_023_omega_math_revision.json"
+  ],
+  "existed": {
+    "data/batch_changes/S7_023_omega_math_revision_H23-REG-APPLIED-06_revision.json": false,
+    "extracted/corrected/H23-REG-APPLIED-06/02a27aa5b10bb7782f6f66e7cbaba75f50db6d83dbc206bf59f0bf0df2145471.json": false,
+    "data/batch_changes/S7_023_omega_math_revision_H27-REG-APPLIED-04_revision.json": false,
+    "extracted/corrected/H27-REG-APPLIED-04/61fa53215caecedf73e959929f71709e06d7c05a661ec05beffea2efb2106ef0.json": false,
+    "data/batch_changes/S7_023_omega_math_revision_R05-REG-APPLIED-13_revision.json": false,
+    "extracted/corrected/R05-REG-APPLIED-13/92b49748584dc5ef72d126fdedeb26b9e2fc2fb8029425fa9260ae76225acfee.json": false,
+    "data/questions.csv": true,
+    "data/verification_records.csv": true,
+    "data/question_topics.csv": true,
+    "data/question_evaluations.csv": true,
+    "data/batch_changes/S7_023_omega_math_revision.csv": false,
+    "extracted/logs/batches/S7_023_omega_math_revision.json": false
+  },
+  "sha256": {
+    "data/batch_changes/S7_023_omega_math_revision_H23-REG-APPLIED-06_revision.json": "2231d7a0fa3ba6c5710b011e604302c8da2626e32b087eafed81de84c5d6a139",
+    "extracted/corrected/H23-REG-APPLIED-06/02a27aa5b10bb7782f6f66e7cbaba75f50db6d83dbc206bf59f0bf0df2145471.json": "02a27aa5b10bb7782f6f66e7cbaba75f50db6d83dbc206bf59f0bf0df2145471",
+    "data/batch_changes/S7_023_omega_math_revision_H27-REG-APPLIED-04_revision.json": "828697e883df40fd6d5d403d0979d010155dc5e2d4755bf496f95d85f7183bb9",
+    "extracted/corrected/H27-REG-APPLIED-04/61fa53215caecedf73e959929f71709e06d7c05a661ec05beffea2efb2106ef0.json": "61fa53215caecedf73e959929f71709e06d7c05a661ec05beffea2efb2106ef0",
+    "data/batch_changes/S7_023_omega_math_revision_R05-REG-APPLIED-13_revision.json": "040151ddd5ce178caeb7517586601e9dfcebdd535a50be702346fc217190554c",
+    "extracted/corrected/R05-REG-APPLIED-13/92b49748584dc5ef72d126fdedeb26b9e2fc2fb8029425fa9260ae76225acfee.json": "92b49748584dc5ef72d126fdedeb26b9e2fc2fb8029425fa9260ae76225acfee",
+    "data/questions.csv": "553e7018cc0903fcddfd8662edad67f70ab7edb876917da2830809ff64e4ab4a",
+    "data/verification_records.csv": "4edcef4ab328ffea8196d88ddc22e31cf9df4e5a654a744f873512eb3636acf5",
+    "data/question_topics.csv": "ba639ace2cf6490077ba6468a3c9f52f7daf9695ed6012f1a1ac658c3c9375ed",
+    "data/question_evaluations.csv": "436ab9ce8e49cf66e21cf2771ac12b02451afc565f4ead69886045eead610e0f",
+    "data/batch_changes/S7_023_omega_math_revision.csv": "9c45f6cbda9d5f627b31224389eac4b03a04f575da9fc45ddf4540e21c63b74e",
+    "extracted/logs/batches/S7_023_omega_math_revision.json": "91dd2641a1504df56a44f8674cc4fc1972b3ac49edd8897c12509975236f4e8d"
+  }
+}

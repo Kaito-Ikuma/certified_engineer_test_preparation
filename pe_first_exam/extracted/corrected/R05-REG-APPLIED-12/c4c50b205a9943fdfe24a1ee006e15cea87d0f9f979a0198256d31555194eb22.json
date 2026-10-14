@@ -1,0 +1,45 @@
+{
+  "stem": "元素の原子番号を周期表で比較する。",
+  "conditions": {
+    "判断対象": "元素の原子番号を周期表で比較する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "Nb>Ga",
+      "verdict": "選ばない候補",
+      "reason": "41>31。"
+    },
+    "2": {
+      "value": "Pm<Dy",
+      "verdict": "選ばない候補",
+      "reason": "61<66。"
+    },
+    "3": {
+      "value": "B<P",
+      "verdict": "選ばない候補",
+      "reason": "5<15。"
+    },
+    "4": {
+      "value": "I>Kr",
+      "verdict": "選ばない候補",
+      "reason": "53>36。"
+    },
+    "5": {
+      "value": "Re<Ta",
+      "verdict": "選ぶ候補",
+      "reason": "Re75>Ta73で小さいは逆。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_005.png"
+  ],
+  "question_id": "R05-REG-APPLIED-12",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "b4911c6db4f8c48fec14123416d3494c1ba5de3300706ecf6c3558e0cab77faf",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

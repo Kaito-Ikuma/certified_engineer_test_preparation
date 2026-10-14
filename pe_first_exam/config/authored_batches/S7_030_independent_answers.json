@@ -1,0 +1,136 @@
+{
+  "time": "2026-10-11T23:47:50.536974+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "official_consulted": false,
+  "source_images_checked": 14,
+  "questions": [
+    {
+      "question_id": "H23-REG-BASIC-5-4",
+      "independent_answer": "3",
+      "reason": "独立正規変数。A標本平均80g,2g。4A+4Bの平均800g、分散4*16+4*9=100g^2、標準偏差10g。候補3。",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "source_image": "extracted/pages/H23/basic/page_017.png",
+      "image_sha256": "34c202fbccce7c291aaad512ad149d885584bc68701d5403988b65afdcce639a"
+    },
+    {
+      "question_id": "H24-REG-BASIC-1-3",
+      "independent_answer": "3",
+      "reason": "画像の◎5/○3/△1と要求重みを積和する。A=5*5+4*3+4*3=49、C=5*3+4*5+3*5+3*1=53、D=5*5+4*3+3*3=46。C>A>D、候補3。",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "source_image": "extracted/pages/H24/basic/page_003.png",
+      "image_sha256": "31672c39fa2e90c2b4f06d703df63e7cf6c41853cf3e8e1a9f1eb49b0e63e607"
+    },
+    {
+      "question_id": "H24-REG-BASIC-5-4",
+      "independent_answer": "2",
+      "reason": "要求適合判定は検査、上流改善は源流管理、プロセス設定は標準化、プロセスに基づく管理、候補2。",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "source_image": "extracted/pages/H24/basic/page_017.png",
+      "image_sha256": "5d732432c25d1f4a82ec73eeefa1aceb4211a002584fb3fa11d3380c4172e882"
+    },
+    {
+      "question_id": "H25-REG-BASIC-1-6",
+      "independent_answer": "3",
+      "reason": "公差/工程能力は工程能力指数、説明変数と応答は回帰分析、異常監視は管理図、区間面積で度数を示す図はヒストグラム。候補3。",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "source_image": "extracted/pages/H25/basic/page_005.png",
+      "image_sha256": "1006d39f58771e6e7b89ba661493ee4f1cf126f8c48c9ae43577f584cd1ef998"
+    },
+    {
+      "question_id": "H26-REG-BASIC-1-3",
+      "independent_answer": "1",
+      "reason": "計数値は不適合品の数、良品拒否は生産者危険、不良品受入は消費者危険。個数の判定、なみ/きつい切換え。候補1。手順固定と判定閾値変更の表現は精査する。",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "source_image": "extracted/pages/H26/basic/page_002.png",
+      "image_sha256": "1e734e43579e4f73b441f926c69cc1d88a61ee697708e5350a0911f02a326c8a"
+    },
+    {
+      "question_id": "H27-REG-BASIC-1-5",
+      "independent_answer": "1",
+      "reason": "独立寸法和の平均3500mm、標準偏差sqrt(.4^2+.3^2)=.5mm、z=3。上側.13%で0.2%未満、候補1。",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "source_image": "extracted/pages/H27/basic/page_004.png",
+      "image_sha256": "715627c12636522443c69afd5e75cd7b8b639871ddc0944c1fe51329b5e65d68"
+    },
+    {
+      "question_id": "H27-REG-BASIC-1-6",
+      "independent_answer": "5",
+      "reason": "PDCA順序Plan Do Check Act、候補5。2008規格の歴史原文は照合予定。",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "source_image": "extracted/pages/H27/basic/page_004.png",
+      "image_sha256": "715627c12636522443c69afd5e75cd7b8b639871ddc0944c1fe51329b5e65d68"
+    },
+    {
+      "question_id": "H28-REG-BASIC-1-2",
+      "independent_answer": "4",
+      "reason": "不適合品の数、生産者危険、消費者危険、なみ検査ときつい検査。候補4。固定手順で危険を調整する記述の範囲は精査する。",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "source_image": "extracted/pages/H28/basic/page_002.png",
+      "image_sha256": "a0b9a3db632c5c8e041f83975b72dc614db4e2261e1caa259663c5f9d86c05c5"
+    },
+    {
+      "question_id": "R02-REG-BASIC-1-2",
+      "independent_answer": "4",
+      "reason": "独立差R-Sの標準偏差平方和。信頼性指標ア4/3、イ1、ウ3/2、エ1/sqrt2。故障確率は指標の大きい順で小さい。ウ→ア→イ→エ、候補4。",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "source_image": "extracted/pages/R02/basic/page_002.png",
+      "image_sha256": "7d530c19c85faeb1e897b13515839e89596dabdfbf07fac3b7cf4dc8e8374877"
+    },
+    {
+      "question_id": "R03-REG-BASIC-1-3",
+      "independent_answer": "2",
+      "reason": "PlanとDo正しい。ChangeとAdjustは誤りでCheckとAct。正正誤誤、候補2。",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "source_image": "extracted/pages/R03/basic/page_003.png",
+      "image_sha256": "5e1d313e748d3aff1432e9a67002de0e7222e4090bb2916206d2086ee25f3712"
+    },
+    {
+      "question_id": "R04-REG-BASIC-1-2",
+      "independent_answer": "4",
+      "reason": "想定は事故回数ポアソンと事故間隔指数、候補4。ただし正規近似は大平均で成立し得る。災害も一定率仮定が必要。原文条件だけで唯一不適切を厳密に決め難く部分確認候補。",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "source_image": "extracted/pages/R04/basic/page_002.png",
+      "image_sha256": "67417a81d63f35dacd77a53c1f5cc165eea1318cf3f7220d761b567739459759"
+    },
+    {
+      "question_id": "R04-REG-BASIC-1-3",
+      "independent_answer": "3",
+      "reason": "合力Fa-Fbの平均100N、標準偏差sqrt(30^2+40^2)=50N。200N以上z=2で2.28%。候補3。",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "source_image": "extracted/pages/R04/basic/page_002.png",
+      "image_sha256": "67417a81d63f35dacd77a53c1f5cc165eea1318cf3f7220d761b567739459759"
+    },
+    {
+      "question_id": "R05-REG-BASIC-1-6",
+      "independent_answer": "2",
+      "reason": "相関係数は端点±1を含む。0から+1へ直線的関係が強まる候補2。無相関は独立を含意せず、切片あり単回帰R^2=r^2、因果も決まらない。2は「なる」の精度条件を限定する。",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "source_image": "extracted/pages/R05/basic/page_004.png",
+      "image_sha256": "06eb8f137051f44e9e78bbf29c2b7d7b83963fcb646d974bfbfdcedcc1d870eb"
+    },
+    {
+      "question_id": "R06-REG-BASIC-1-6",
+      "independent_answer": "3",
+      "reason": "独立正規和差。和の平均和、差の平均B2-B1、分散は双方平方和。候補3。平均B2>B1は各寸法の差が常に正になる保証ではない。",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "source_image": "extracted/pages/R06/basic/page_005.png",
+      "image_sha256": "6624e6def75fa955920bc17fa82a1928725bc429d147beda077219a3e7765c3b"
+    },
+    {
+      "question_id": "R07-REG-BASIC-1-2",
+      "independent_answer": "4",
+      "reason": "Plan/Do正、Choose/Achieve誤。正正誤誤、候補4。",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "source_image": "extracted/pages/R07/basic/page_002.png",
+      "image_sha256": "c240165f86b05c030d309902810bbac69842ed708507f0ca03858765bf73d01c"
+    },
+    {
+      "question_id": "R07-REG-BASIC-1-6",
+      "independent_answer": "3",
+      "reason": "第1種は真H0の棄却、第2種は偽H0不棄却、候補3。有意水準30%標準は誤り。正規母集団未知分散のtはn-1自由度、信頼度1-alphaで逆数ではない。帰無仮説成立を期待とは限らない。",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "source_image": "extracted/pages/R07/basic/page_004.png",
+      "image_sha256": "879100945db8f27d7a7c403c8eafdd0bb4c3233394ab6ef8a7460aff92ad7b21"
+    }
+  ]
+}

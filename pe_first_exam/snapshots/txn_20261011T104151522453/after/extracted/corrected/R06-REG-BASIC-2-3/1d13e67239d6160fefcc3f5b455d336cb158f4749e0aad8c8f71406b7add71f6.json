@@ -1,0 +1,45 @@
+{
+  "stem": "リンクステートと距離ベクトルの保持情報・経路計算を比較する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "時点": "R06年度。現在の推奨を出題当時へ無条件に転用しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "経路表を参照して次ホップへ転送。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "動的ルーティングが構築した経路表を用いた次ホップ転送の説明として妥当。実装には静的経路や転送用FIBもあるが、問題が説明する動的経路制御を否定しない。"
+    },
+    "2": {
+      "value": "どちらもネットワークトポロジを把握。",
+      "verdict": "不適切",
+      "reason": "距離ベクトルの節点は隣接節点の宛先距離を利用するのでネットワーク全体の詳細トポロジを必ず保持するわけではない。"
+    },
+    "3": {
+      "value": "リンク情報を広告し最短経路計算。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "リンクステートは領域内のリンク状態を共有してSPF等を計算する。全インターネットの全接続を各ルータが保持する意味ではない。"
+    },
+    "4": {
+      "value": "宛先距離を伝搬し最短となる次ホップ決定。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "隣接経由コストと隣接節点からの距離を足して比較する。Bellman-Ford型の分散更新である。"
+    },
+    "5": {
+      "value": "OSPF/IS-ISはリンク状態、RIPは距離ベクトル。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "代表例の対応は妥当。BGPのパスベクトル等もあり、全プロトコルを厳密に2種だけへ封じる分類ではない。"
+    }
+  },
+  "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_007.png"
+  ],
+  "question_id": "R06-REG-BASIC-2-3",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "e725ce4963ea20a57db8f8a2eeede3235dce209e62b09bcf954e1a784885c2f5",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

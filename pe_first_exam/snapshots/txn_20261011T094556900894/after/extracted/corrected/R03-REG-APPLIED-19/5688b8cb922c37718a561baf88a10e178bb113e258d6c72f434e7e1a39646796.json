@@ -1,0 +1,45 @@
+{
+  "stem": "天然水のイオン量・温度と電気伝導率、抵抗率と残留物を比較する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+  },
+  "choices": {
+    "1": {
+      "value": "伝導率で溶存イオン量を大まかに比較。",
+      "verdict": "適切（通常条件）",
+      "reason": "イオン濃度と移動度に依存するので概略指標になる。中性有機物等の全溶存量の直接測定ではない。"
+    },
+    "2": {
+      "value": "温度が上がると伝導率低下。",
+      "verdict": "不適切",
+      "reason": "同一試料・通常温度では温度上昇でイオン移動度が増し伝導率は上がる。25℃への温度補正値と生の温度依存を分ける。"
+    },
+    "3": {
+      "value": "通常海水→河川→雨の順で低下。",
+      "verdict": "適切（通常条件）",
+      "reason": "塩類濃度の一般傾向に沿う。汚染・温泉・酸性水等の例外があり試料名だけで固定しない。"
+    },
+    "4": {
+      "value": "1cm立方体の対面間に対応する電気抵抗率の逆数。",
+      "verdict": "適切（通常条件）",
+      "reason": "伝導率\\(\\kappa=1/\\rho=\\ell/(RA)\\)。\\(\\ell=1\\,\\mathrm{cm},A=1\\,\\mathrm{cm}^2\\)で測定抵抗Rの逆数の数値に対応するが単位はS/cm。抵抗と抵抗率の量を混ぜない。"
+    },
+    "5": {
+      "value": "同じ組成比で濃度が違えば蒸発残留物と密接に関係。",
+      "verdict": "適切（通常条件）",
+      "reason": "同じ組成・温度・希薄条件なら比例的に変化する。ただし異なるイオン組成の試料を一つの係数で換算しない。"
+    }
+  },
+  "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_007.png"
+  ],
+  "question_id": "R03-REG-APPLIED-19",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "76146a58f667be3ddf2e0a98959b74f449ad356659520d58b3bcc543f1ad7de2",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

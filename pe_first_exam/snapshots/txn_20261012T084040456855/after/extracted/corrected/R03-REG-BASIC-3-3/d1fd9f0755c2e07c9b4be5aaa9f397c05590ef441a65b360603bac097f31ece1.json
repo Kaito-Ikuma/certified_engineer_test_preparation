@@ -1,0 +1,45 @@
+{
+  "stem": "3節点・6節点三角形と4節点四角形のひずみの次数を比較する。",
+  "conditions": {
+    "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+    "成立条件": "線形弾性の2次元変位法。アは3節点一次三角形、イは辺中点を含む6節点二次三角形、ウは4節点アイソパラメトリック四辺形。非退化の要素を想定する。"
+  },
+  "choices": {
+    "1": {
+      "value": "ア",
+      "verdict": "適切",
+      "reason": "一次変位の微分が定数となる一定ひずみ三角形である。"
+    },
+    "2": {
+      "value": "イ",
+      "verdict": "不適切",
+      "reason": "二次変位の微分は一般に一次関数となり、任意の節点変位に対して一定ではない。"
+    },
+    "3": {
+      "value": "ウ",
+      "verdict": "不適切",
+      "reason": "双一次変位や非線形写像の微分は一般に位置で変わる。特定の一様変位場は再現できるが要素全体の一般的特性ではない。"
+    },
+    "4": {
+      "value": "アとイ",
+      "verdict": "不適切",
+      "reason": "アは一定であるがイの二次補間まで常に一定とはいえない。"
+    },
+    "5": {
+      "value": "アとウ",
+      "verdict": "不適切",
+      "reason": "アは一定であるがウは交差項や写像の影響を含み、一般に一様ひずみではない。"
+    }
+  },
+  "figures": "図を確認：アは頂点3節点、イは頂点と辺中点の6節点、ウは四隅4節点の歪んだ四辺形である。",
+  "ambiguity": "実現した変位場が一次ならイやウにも一様ひずみの例がある。原典は要素の一般的補間特性を尋ねると読み、公式1を保持する。",
+  "evidence": [
+    "extracted/pages/R03/basic/page_012.png"
+  ],
+  "question_id": "R03-REG-BASIC-3-3",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "12",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "0cbf39e0c7bbb9ebc3c506dff273e8ccdc1e1e4fa147d02310ff85f047865b7e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

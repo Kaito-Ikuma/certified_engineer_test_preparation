@@ -1,0 +1,46 @@
+{
+  "stem": "4要素と2要素の直積から2要素集合へ送る写像の総数を求める。",
+  "conditions": {
+    "集合": "A={a,b,c,d}、B={α,β}、C={0,1}。",
+    "対象": "任意の写像f:A×B→C。単射・全射などの追加制約なし。"
+  },
+  "choices": {
+    "1": {
+      "value": "32",
+      "verdict": "条件に一致しない候補",
+      "reason": "2⁵であり、独立に像を選ぶ8要素を5要素と誤って数えている。"
+    },
+    "2": {
+      "value": "64",
+      "verdict": "条件に一致しない候補",
+      "reason": "2⁶であり、直積を4+2=6とする和の計数と混同している。"
+    },
+    "3": {
+      "value": "128",
+      "verdict": "条件に一致しない候補",
+      "reason": "2⁷であり、直積の8個すべての像の選択を数えていない。"
+    },
+    "4": {
+      "value": "256",
+      "verdict": "条件に一致する候補",
+      "reason": "直積には4×2=8個あり、各要素に2通りの像を独立に選べるので2⁸である。"
+    },
+    "5": {
+      "value": "512",
+      "verdict": "条件に一致しない候補",
+      "reason": "2⁹であり、独立の入力を1個多く数えている。"
+    }
+  },
+  "figures": "問題幹・数値・記号・5肢を画像確認。図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_010.png",
+    "extracted/pages/R01_retest/basic/page_011.png"
+  ],
+  "question_id": "R01-RET-BASIC-2-6",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "10",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "4657d9b22a17c3fdff5f7a04576bceaef0c4a93f2c649050d5fb5670248a8216",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

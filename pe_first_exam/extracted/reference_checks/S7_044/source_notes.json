@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-10-12T19:42:07+09:00",
+  "sources": [
+    {
+      "key": "rfc4291_addresses",
+      "url": "https://www.rfc-editor.org/rfc/rfc4291.html",
+      "checked_claim": "2節の128bitと2.2節の8個16bit表記・IPv4表記を確認。予約を除いた実用割当数と全ビット列数を分ける。"
+    },
+    {
+      "key": "princeton_bst",
+      "url": "https://algs4.cs.princeton.edu/32bst/",
+      "checked_claim": "取得HTMLの定義・Search・Insert・Analysisを確認。挿入順に依存する木形と左右部分木の大小条件を確認。"
+    },
+    {
+      "key": "mit_discrete2015",
+      "url": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/mit6_042js15_textbook.pdf",
+      "checked_claim": "取得PDF印刷250--251頁の拡張互除法、529--530頁のBig O、584--585頁のn集合包除を確認。全882頁読了とはしない。問題の数値は独自計算。"
+    }
+  ],
+  "local_sources": [
+    {
+      "path": "extracted/reference_checks/S7_044/discrete.pdf",
+      "sha256": "a07e73979a55f0be10633fcba12c0195f4475288a9b84331c8eb0de0e0a1571a"
+    },
+    {
+      "path": "extracted/reference_checks/S7_044/bst.html",
+      "sha256": "d76c366efe3263227e8832440d347821911388556a36ae8aec61ab31d35332bc"
+    }
+  ],
+  "notes": [
+    "原典21問29頁画像を確認し、公式前初回21解答は全一致。",
+    "R03逆ポーランドのOCR減算を原典の除算へ校正。H30補集合の上線を確認。",
+    "Bézout方程式だけでは複数候補を満たすため、指定行列積の第二行を条件にする。"
+  ]
+}

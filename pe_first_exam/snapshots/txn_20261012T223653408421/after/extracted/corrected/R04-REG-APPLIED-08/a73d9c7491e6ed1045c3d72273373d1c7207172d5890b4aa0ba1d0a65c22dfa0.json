@@ -1,0 +1,45 @@
+{
+  "stem": "金属の通常相とアモルファスの長距離秩序を比較する。",
+  "conditions": {
+    "判断対象": "金属の通常相とアモルファスの長距離秩序を比較する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "Al/Cu/NiはFCC",
+      "verdict": "選ばない候補",
+      "reason": "通常の常温常圧相。"
+    },
+    "2": {
+      "value": "W/Mo/NbはBCC",
+      "verdict": "選ばない候補",
+      "reason": "通常の常温常圧相。"
+    },
+    "3": {
+      "value": "Mg/Zn/YはHCP",
+      "verdict": "選ばない候補",
+      "reason": "通常の六方相。"
+    },
+    "4": {
+      "value": "Feは912℃で格子型変態",
+      "verdict": "選ばない候補",
+      "reason": "純FeのαBCC→γFCCの相変態。"
+    },
+    "5": {
+      "value": "アモルファスは規則的結晶格子",
+      "verdict": "選ぶ候補",
+      "reason": "長距離の周期的並進秩序を持たない。短距離秩序はあり得る。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "元素例の全相境界・出題時測定条件は未指定。912℃は通常圧純Feの代表構造変態値。",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_003.png"
+  ],
+  "question_id": "R04-REG-APPLIED-08",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "11ede8c422c5eb001a4b1dde7c503621c7657b05ae3ea621990cd76e4337e12d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

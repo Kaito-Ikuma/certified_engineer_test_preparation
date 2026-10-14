@@ -1,0 +1,92 @@
+[
+  {
+    "key": "env60_blue",
+    "url": "https://www.env.go.jp/earth/ondanka/blue-carbon-jp.html",
+    "reading_scope": "2024報告の告知本文88〜91行を確認。他制度の全文確認ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env60_plan2",
+    "url": "https://www8.cao.go.jp/cstp/kihonkeikaku/honbun.html",
+    "reading_scope": "一次検索索引の社会のため・社会の中と双方向箇所を確認。open404、全文未取得。",
+    "full_source_read": false
+  },
+  {
+    "key": "env60_plan3",
+    "url": "https://www.mext.go.jp/a_menu/kagaku/kihon/06032816/001/__icsFiles/afieldfile/2013/04/11/1241965_001.pdf",
+    "reading_scope": "一次検索索引のELSI箇所のみ確認、PDF全体未読。",
+    "full_source_read": false
+  },
+  {
+    "key": "env60_ar6",
+    "url": "https://www.ipcc.ch/report/ar6/wg1/chapter/summary-for-policymakers/",
+    "reading_scope": "一次検索本文の指定期間温度1.09を確認。open403、他部会全段落未読。",
+    "full_source_read": false
+  },
+  {
+    "key": "env60_hydrogen",
+    "url": "https://www.enecho.meti.go.jp/committee/council/basic_policy_subcommittee/2022/052/052_008.pdf",
+    "reading_scope": "一次検索索引の水素利用・吸熱・加熱の説明のみ確認。物性表全読ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env60_biodiversity",
+    "url": "https://www.env.go.jp/policy/hakusyo/r06/html/hj24020203.html",
+    "reading_scope": "一次検索本文の里山利用低下箇所を確認。2023国家戦略全表の代替確定ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env60_safety",
+    "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/anzen/hyosyo.html",
+    "reading_scope": "一次検索本文の昭和3年開始を確認。法令制定全文確認ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env60_house2022",
+    "url": "https://www.env.go.jp/content/000226308.pdf",
+    "reading_scope": "一次検索本文の1.74/.38/.15/.32を確認。openサイズ制限、原PDF全読未実施。",
+    "full_source_read": false
+  },
+  {
+    "key": "env60_energy2022",
+    "url": "https://www.enecho.meti.go.jp/statistics/total_energy/pdf/honbun2022fykaku.pdf",
+    "reading_scope": "一次検索の再エネ供給説明を確認。三区分元表の追加合算が必要。open403。",
+    "full_source_read": false
+  },
+  {
+    "key": "env60_plan7",
+    "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/energykihonkeikaku2025_01.html",
+    "reading_scope": "2025公式解説索引のS+3EとGXの説明のみ確認。原計画全読未実施。",
+    "full_source_read": false
+  },
+  {
+    "key": "env60_re2023",
+    "url": "https://www.meti.go.jp/press/2025/04/20250425004/20250425004.html",
+    "reading_scope": "一次検索本文の水力含む再エネ22.9を確認。open403。",
+    "full_source_read": false
+  },
+  {
+    "key": "env60_pv2024",
+    "url": "https://www.meti.go.jp/shingikai/santeii/pdf/20250203_1.pdf",
+    "reading_scope": "一次索引で指定資料を同定。住宅用平均と価格算定想定値を区別。事業用2024単純平均原表は未読。",
+    "full_source_read": false
+  },
+  {
+    "key": "env60_patent",
+    "url": "https://www.jpo.go.jp/introduction/rekishi/seido-rekishi.html",
+    "reading_scope": "一次検索本文の特許第1号1885年7月1日出願を確認。全文未読。",
+    "full_source_read": false
+  },
+  {
+    "key": "env60_ramsar",
+    "url": "https://www.ramsar.org/about/our-mission",
+    "reading_scope": "検索に表示された目的・湿地定義・柱の説明を確認。条約全条文の照合ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env60_yukawa",
+    "url": "https://www.nobelprize.org/prizes/physics/1949/summary/",
+    "reading_scope": "一次検索で1949湯川・中間子予言を確認。朝永1965の原ページは追加確認。",
+    "full_source_read": false
+  }
+]

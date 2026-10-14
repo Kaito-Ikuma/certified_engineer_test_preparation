@@ -1,0 +1,53 @@
+{
+  "stem": "平成26年3月の資質能力で挙げる7項目のうち該当する数を選ぶ。",
+  "conditions": {
+    "提示項目": [
+      "専門的学識",
+      "問題解決",
+      "マネジメント",
+      "評価",
+      "コミュニケーション",
+      "リーダーシップ",
+      "技術者倫理"
+    ],
+    "指定資料": "平成26年3月7日技術士分科会資料。"
+  },
+  "choices": {
+    "1": {
+      "value": "3項目",
+      "verdict": "不適切な解答候補",
+      "reason": "7項目のうち4項目を根拠なく除外している。"
+    },
+    "2": {
+      "value": "4項目",
+      "verdict": "不適切な解答候補",
+      "reason": "7項目のうち3項目を根拠なく除外している。"
+    },
+    "3": {
+      "value": "5項目",
+      "verdict": "不適切な解答候補",
+      "reason": "7項目のうち2項目を根拠なく除外している。"
+    },
+    "4": {
+      "value": "6項目",
+      "verdict": "不適切な解答候補",
+      "reason": "7項目のうち1項目を根拠なく除外している。"
+    },
+    "5": {
+      "value": "7項目",
+      "verdict": "適切な解答候補",
+      "reason": "提示された全7項目が資料の見出しとして載っている。"
+    }
+  },
+  "figures": "図なし。組合せ表または個数選択肢は原典画像で確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/aptitude/page_003.png"
+  ],
+  "question_id": "R01-REG-APT-02",
+  "source_file": "sources/R01/aptitude.pdf",
+  "source_page": "3",
+  "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+  "raw_text_sha256": "3df8562a8372935ff479542c65368170688dd3a020a427bf99f2f47ed7d75643",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

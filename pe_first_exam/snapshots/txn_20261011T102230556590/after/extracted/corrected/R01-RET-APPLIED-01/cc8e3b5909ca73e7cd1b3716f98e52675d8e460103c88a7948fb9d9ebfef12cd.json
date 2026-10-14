@@ -1,0 +1,45 @@
+{
+  "stem": "2019年5月改定後のSIを旧原器定義と区別する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "kgは国際キログラム原器の質量で定義。",
+      "verdict": "不適切",
+      "reason": "原器定義は2019-05-20に廃止。プランク定数h=6.62607015e-34Jsを固定する。Js=kg m²/sなのでmとsの既定義と結びkgを定義する。重力定数Gを固定しない。"
+    },
+    "2": {
+      "value": "水三重点は.01℃。",
+      "verdict": "近似として適切・厳密さ疑義",
+      "reason": "最良推定は273.16Kすなわち.01℃であるが、新K定義では実測値と不確かさを持つ。ITS-90のT90固定点を真の熱力学温度の定義と混同しない。"
+    },
+    "3": {
+      "value": "1C=1As。",
+      "verdict": "適切",
+      "reason": "電荷Q=ItよりC=Asである。"
+    },
+    "4": {
+      "value": "1mは真空光が1/299792458秒に進む距離。",
+      "verdict": "適切",
+      "reason": "真空光速cを299792458m/sに固定し、秒との関係からmを定義する。"
+    },
+    "5": {
+      "value": "平面角はradで無次元。",
+      "verdict": "適切",
+      "reason": "平面角は弧長/半径で次元1、単位radを用いる。radは角度の意味を残す記号であり、角度でない任意の比と区別する。"
+    }
+  },
+  "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+  "ambiguity": "改定後を明記する原典の2は三重点.01℃を無条件に断定する。熱力学温度Tは改定後不確かさを持ち、ITS-90のT90と同じ厳密定義値ではない。提示桁の近似としては妥当、厳密さが未指定である。公式・初回1は維持し原器誤りと別に疑義を保持。",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_001.png"
+  ],
+  "question_id": "R01-RET-APPLIED-01",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "08811ab659073c34ec29bdbd44aab4af34006c98c48bdf43c5d111708dc72c74",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

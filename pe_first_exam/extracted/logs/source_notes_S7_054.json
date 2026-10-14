@@ -1,0 +1,114 @@
+[
+  {
+    "key": "eth54_eea",
+    "url": "https://www.eea.europa.eu/en/analysis/publications/environmental_issue_report_2001_22/environmental_issue_report_2001_22/@@download/file",
+    "title": "Late lessons from early warnings: report22/2001",
+    "reading_scope": "章16の十二見出しを検索・抽出本文で確認。211頁全文読了ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "eth54_rio",
+    "url": "https://legal.un.org/avl/ha/dunche/dunche.html",
+    "title": "Rio Declaration: procedural history and legal character",
+    "reading_scope": "国連の宣言の歴史資料を参照。宣言を条約として批准したとしない。原典前文のサミット交渉史全体は未照合。",
+    "full_source_read": false
+  },
+  {
+    "key": "eth54_globalcompact",
+    "url": "https://unglobalcompact.org/what-is-gc/mission/principles",
+    "title": "The Ten Principles",
+    "reading_scope": "公式検索本文で四分野と十原則の構成を確認。全実施手引の確認ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "eth54_university",
+    "url": "https://www.u-tokyo.ac.jp/content/400283132.pdf",
+    "title": "東京大学学生懲戒処分規程等",
+    "reading_scope": "公式検索本文の試験不正を懲戒対象とする規定を確認。直接web openは内部エラー。2014全大学の処分分布の証明ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "eth54_riskcomm",
+    "url": "https://www.mext.go.jp/b_menu/shingi/gijyutu/gijyutu2/066/shiryo/__icsFiles/afieldfile/2014/04/03/1346337_1_1.pdf",
+    "title": "2014リスクコミュニケーションの推進方策資料",
+    "reading_scope": "案と検討資料を含む55頁PDF。抽出本文の認知モデル、当事者と統治者、検証可能性の箇所を確認。原典採用版との全照合は未完。",
+    "full_source_read": false
+  },
+  {
+    "key": "eth54_iso_brochure",
+    "url": "https://www.iso.org/files/live/sites/isoorg/files/store/en/PUB100258.pdf",
+    "title": "Discovering ISO26000: Guidance on social responsibility",
+    "reading_scope": "公式公開冊子の抽出本文と検索された図の七原則を確認。Clause4の七原則とClause6の七中核主題を区別。106頁規格本文の全読ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "eth54_bcp2013",
+    "url": "https://www.bousai.go.jp/kyoiku/kigyou/pdf/guideline03.pdf",
+    "title": "事業継続ガイドライン第三版：2013年8月",
+    "reading_scope": "公式旧版リンクとPDFを開いて版を確認。重要事業とBCMの枠組みに用いる。全55頁の読了とはしない。",
+    "full_source_read": false
+  },
+  {
+    "key": "eth54_bcp2021",
+    "url": "https://www.bousai.go.jp/kyoiku/kigyou/pdf/guideline202104.pdf",
+    "title": "事業継続ガイドライン：2021年4月",
+    "reading_scope": "57頁のうち抽出本文の影響度分析・法令契約と重要業務・改善の箇所を確認。全文読了ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "eth54_bcp_survey2018",
+    "url": "https://www.bousai.go.jp/kyoiku/kigyou/topics/pdf/h29_jittaichousa.pdf",
+    "title": "平成29年度企業の事業継続及び防災の取組実態調査",
+    "reading_scope": "2018年3月調査。検索本文とPDF抽出の策定済大企業64.0・中堅31.8%を確認。114頁全部と各母集団定義は未読。2019試験後の調査値を使わない。",
+    "full_source_read": false
+  },
+  {
+    "key": "eth54_cogen2018",
+    "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/cogeneration.html",
+    "title": "コジェネでエネルギーを効率的に使う：2018年",
+    "reading_scope": "公開検索本文で発電と廃熱利用を確認。CEMSの当時定義全文は追加照合対象。",
+    "full_source_read": false
+  },
+  {
+    "key": "eth54_zeh2018",
+    "url": "https://www.enecho.meti.go.jp/category/saving_and_new/saving/assets/pdf/general/housing/zeh_definition_kodate.pdf",
+    "title": "ZEHの定義：改定版",
+    "reading_scope": "2018改定版の公式索引と検索本文を確認。年間・一次エネルギーの評価境界を条件として扱い、全エネルギー無条件ゼロにしない。全文精読ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "eth54_pdca2017",
+    "url": "https://www.mext.go.jp/component/a_menu/science/detail/__icsFiles/afieldfile/2018/12/11/1411583_02.pdf",
+    "title": "研究開発評価研修資料：2017評価指針への言及",
+    "reading_scope": "検索本文で2017指針とPDCAへの言及を確認。2017指針全文の転載ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "eth54_society2021",
+    "url": "https://www8.cao.go.jp/cstp/english/society5_0/index.html",
+    "title": "Society5.0：2016提案と2021計画",
+    "reading_scope": "本文の社会段階、2016の人間中心と2021の持続可能・強靱・well-beingの説明を読んだ。現在ページの後段の事業全体を当時へ遡及しない。",
+    "full_source_read": false
+  },
+  {
+    "key": "eth54_competency2023",
+    "url": "https://www.mext.go.jp/content/20230607-mxt_kiban02-000030294_7.pdf",
+    "title": "2023コンピテンシーを収録するガイドブック",
+    "reading_scope": "62頁PDFの物理29・30頁の抽出本文で2014七項目から2023八項目への変化と全キーワードを確認。全ガイドブック読了ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "eth54_profession2007",
+    "url": "https://www.engineer.or.jp/c_topics/000/000029.html",
+    "title": "技術士プロフェッション宣言：2007年1月1日",
+    "reading_scope": "公式本文の三つの行動原則と日付を読んだ。",
+    "full_source_read": true
+  },
+  {
+    "key": "eth54_dei2025",
+    "url": "https://www.engineer.or.jp/c_topics/010/010898.html",
+    "title": "日本技術士会DEI推進宣言：2025年4月",
+    "reading_scope": "本文の目的・三方針・Diversity/Equity/Inclusion定義と3月14日策定を読んだ。2021問題には後年の補足である。",
+    "full_source_read": true
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "status": "committed",
+  "time": "2026-10-13T12:00:07+09:00",
+  "paths": [
+    "generated/questions/applied_science/physics_chemistry/04_electromagnetism.tex",
+    "generated/questions/applied_science/physics_chemistry/05_optics.tex",
+    "generated/questions/applied_science/physics_chemistry/07_atomic_molecular.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/physics_chemistry/04_electromagnetism.tex": true,
+    "generated/questions/applied_science/physics_chemistry/05_optics.tex": true,
+    "generated/questions/applied_science/physics_chemistry/07_atomic_molecular.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/physics_chemistry/04_electromagnetism.tex": "1c650bf7f9171b28d0880374bf8dac1f94a3d3a1fe1ef689449d878cec3b74bf",
+    "generated/questions/applied_science/physics_chemistry/05_optics.tex": "c80c86b8f50667f112eb34925d490e901565c624f5deb5962c71d57e3b4e5c8d",
+    "generated/questions/applied_science/physics_chemistry/07_atomic_molecular.tex": "12aa4a3004cba6e614e0c24be26a49dc681baa5cd7eb8ff7d0f8b38bd9e2641b",
+    "generated/audit_summary.tex": "940606d26b8768e38aee14f8746c5aa7820cb1ede3dff9c666f05c44edc1857e",
+    "generated/frequency_tables.tex": "0715ea8bec88905380dcbadcc55684c4a976247489fd7cf65e1dbc0a63383c87"
+  }
+}

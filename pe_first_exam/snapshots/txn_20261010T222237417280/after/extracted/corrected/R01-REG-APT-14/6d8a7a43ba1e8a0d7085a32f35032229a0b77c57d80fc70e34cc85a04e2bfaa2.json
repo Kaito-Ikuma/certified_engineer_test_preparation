@@ -1,0 +1,45 @@
+{
+  "stem": "ISO26000の社会的責任の原則として、説明責任、透明性、倫理、法の支配、人権を判定する。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "時点": "ISO26000:2010、JIS Z26000:2012を背景とする令和元年。"
+  },
+  "choices": {
+    "1": {
+      "value": "組織は社会・経済・環境への影響に説明責任を負う。",
+      "verdict": "適切",
+      "reason": "行動の影響に応答し説明する原則に対応する。"
+    },
+    "2": {
+      "value": "社会・環境に影響する決定と活動を透明にする。",
+      "verdict": "適切",
+      "reason": "判断と活動を説明可能・理解可能にする原則である。無関係な秘密まで無条件に公開する意味ではない。"
+    },
+    "3": {
+      "value": "組織は倫理的に行動する。",
+      "verdict": "適切",
+      "reason": "誠実さ、公平さ等を行動に反映する原則に対応する。"
+    },
+    "4": {
+      "value": "法の支配を尊重すると同時に自国政府の意向も尊重する。",
+      "verdict": "不適切",
+      "reason": "法の支配の尊重を政府の意向への同調へ拡張している。政府も法の制約を受け、意向は法・人権に優先する一般的根拠ではない。"
+    },
+    "5": {
+      "value": "人権の重要性と普遍性を認識し尊重する。",
+      "verdict": "適切",
+      "reason": "対象国の都合だけで人権の普遍性を否定しない。"
+    }
+  },
+  "figures": "原典の設問・全5肢・否定・時点を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/aptitude/page_014.png"
+  ],
+  "question_id": "R01-REG-APT-14",
+  "source_file": "sources/R01/aptitude.pdf",
+  "source_page": "14",
+  "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+  "raw_text_sha256": "69081fb78fc2b6a03c940cf20cc97f715c13f6b1f2c318ba0088c895d38b7d23",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

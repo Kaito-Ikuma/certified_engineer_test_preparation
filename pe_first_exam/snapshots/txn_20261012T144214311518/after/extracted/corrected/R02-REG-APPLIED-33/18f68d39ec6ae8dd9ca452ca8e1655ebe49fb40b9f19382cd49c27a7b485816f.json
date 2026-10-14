@@ -1,0 +1,45 @@
+{
+  "stem": "GPRのMHz帯と測線・速度・強度の推定限界を照合する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "低損失非磁性媒質でv≈c/√εr、波長λ=v/f、パルス帯域Bに対する距離分解はおよそv/(2B)である。導電率等が到達深度を制限する。"
+  },
+  "choices": {
+    "1": {
+      "value": "profileにより構造、wide angleで電磁波速度を推定",
+      "verdict": "適切",
+      "reason": "走査波形を位置へ並べるprofileと、送受信距離を変えて走時から速度を求める構成を使い分ける。"
+    },
+    "2": {
+      "value": "周波数と分解能は比例、深度は逆比例",
+      "verdict": "条件付きで適切",
+      "reason": "周波数が高いほど分解能力が良く、深度を制限する通常の傾向である。最小識別距離は波長に比例し、実深度が厳密に1/fとなる保証はない。"
+    },
+    "3": {
+      "value": "10kHz程度以上をGPR、以下を電磁探査とする",
+      "verdict": "不適切",
+      "reason": "通常の目安は10MHz程度であり、kHzの桁を取り違える。物理的境界としての厳密性もない。"
+    },
+    "4": {
+      "value": "直線埋設物へできる限り直角の測線",
+      "verdict": "適切",
+      "reason": "横切る測線で位置の変化と点状反射の走時を捉えやすくする。未知方位では複数方位を測る。"
+    },
+    "5": {
+      "value": "電気境界を測るため力学特性との相関はほとんどない",
+      "verdict": "条件付きで適切",
+      "reason": "強度や硬さを直接測らないことは正しい。ただし含水・空隙・劣化など共通要因を通じた間接相関まで全面否定はできない。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "2の分解能は能力と最小距離で比例方向が変わる。深度の厳密反比例と5の間接相関全面否定は留保。",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_012.png"
+  ],
+  "question_id": "R02-REG-APPLIED-33",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "cc679d533c3853b3005e7b94fd607c8d778ddd8b02e9901e54419a57bbb0223d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

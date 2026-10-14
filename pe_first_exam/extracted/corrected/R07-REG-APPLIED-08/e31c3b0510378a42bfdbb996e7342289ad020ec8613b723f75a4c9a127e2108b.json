@@ -1,0 +1,45 @@
+{
+  "stem": "格子の並進対称性・Bravais種類と基底を区別する。",
+  "conditions": {
+    "判断対象": "格子の並進対称性・Bravais種類と基底を区別する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "3次元格子は並進対称",
+      "verdict": "選ばない候補",
+      "reason": "格子点は整数並進で互いに等価。"
+    },
+    "2": {
+      "value": "3次元Bravaisは8種",
+      "verdict": "選ぶ候補",
+      "reason": "3次元Bravais格子は14種類。"
+    },
+    "3": {
+      "value": "逆格子Wigner–Seitz胞はBrillouin域",
+      "verdict": "選ばない候補",
+      "reason": "逆格子点まわりのWigner–Seitz胞は第一Brillouin域。"
+    },
+    "4": {
+      "value": "diamondの隣接は4と12",
+      "verdict": "選ばない候補",
+      "reason": "四面体第一近接4と同じ副格子の第二近接12。"
+    },
+    "5": {
+      "value": "NaClはFCCに属す",
+      "verdict": "選ばない候補",
+      "reason": "FCC Bravais格子にNa/Clの基底が付く。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_003.png"
+  ],
+  "question_id": "R07-REG-APPLIED-08",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "a8a1363a3d4b07475012685f7902299e1853b6d967f2ce0257508121f9a7db06",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

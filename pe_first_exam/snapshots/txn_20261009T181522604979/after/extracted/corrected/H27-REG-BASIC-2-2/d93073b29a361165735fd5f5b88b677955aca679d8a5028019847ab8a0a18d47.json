@@ -1,0 +1,46 @@
+{
+  "stem": "住民CとDの賛否規則を論理式へ変換し、必ず成り立つ記述を選ぶ。",
+  "conditions": {
+    "値": "賛成1、反対0。住民は必ずどちらかを決める。",
+    "C": "AとBの両方が賛成のときだけ反対。",
+    "D": "AとCの両方が賛成のときだけ反対。"
+  },
+  "choices": {
+    "1": {
+      "value": "Cの賛成はAとBがともに賛成のときだけ",
+      "verdict": "条件に一致しない候補",
+      "reason": "A=B=1ならC=0であり規則と逆である。"
+    },
+    "2": {
+      "value": "Cの賛成はAとBの賛否が異なるときだけ",
+      "verdict": "条件に一致しない候補",
+      "reason": "A=B=0でもC=1なので、異なるときだけという限定は誤りである。"
+    },
+    "3": {
+      "value": "Dの賛成はAとBがともに賛成のときだけ",
+      "verdict": "条件に一致しない候補",
+      "reason": "A=B=0でもD=1となり、両者賛成のときだけではない。"
+    },
+    "4": {
+      "value": "Dの賛成はAとBの賛否が異なるときだけ",
+      "verdict": "条件に一致しない候補",
+      "reason": "A=B=1でもD=1であり、異なるときだけではない。"
+    },
+    "5": {
+      "value": "Bが賛成すれば必ずDも賛成",
+      "verdict": "条件に一致する候補",
+      "reason": "Dは否定A又はBに簡約されるので、B=1ならAにかかわらずD=1となる。"
+    }
+  },
+  "figures": "問題幹・数値・記号・5肢を画像確認。図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/basic/page_005.png"
+  ],
+  "question_id": "H27-REG-BASIC-2-2",
+  "source_file": "sources/H27/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+  "raw_text_sha256": "e27ec3348c95d7447b02f79bb991a0f3b19f5fae9f019a8d2bbdac18d6e6dfee",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

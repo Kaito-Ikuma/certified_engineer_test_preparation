@@ -1,0 +1,45 @@
+{
+  "stem": "ボルン・ハーバーサイクルの各過程に符号を付けてNaClの生成エンタルピーを求める。",
+  "conditions": {
+    "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+    "成立条件": "原典の電子親和力354と格子エネルギー788は正の大きさとして与えられている。電子獲得と結晶生成はエンタルピー低下であり負符号、Cl原子1 molにはCl2を半mol解離する。"
+  },
+  "choices": {
+    "1": {
+      "value": "−289 kJ/mol",
+      "verdict": "不適切",
+      "reason": "Cl2の解離熱243を半分にせず全量使うと−289になる。NaCl 1 molに必要なCl原子は1 molである。"
+    },
+    "2": {
+      "value": "−411 kJ/mol",
+      "verdict": "適切",
+      "reason": "半molの塩素分子解離と吸熱・発熱の方向をすべて反映する。"
+    },
+    "3": {
+      "value": "−471 kJ/mol",
+      "verdict": "不適切",
+      "reason": "指定された5過程のエンタルピー和−410.5と合わない。"
+    },
+    "4": {
+      "value": "−597 kJ/mol",
+      "verdict": "不適切",
+      "reason": "原典の昇華、イオン化、半解離、電子獲得、格子形成の和と合わない。"
+    },
+    "5": {
+      "value": "−1166 kJ/mol",
+      "verdict": "不適切",
+      "reason": "吸熱の昇華・イオン化・解離を含めた生成エンタルピーより過剰な負値である。"
+    }
+  },
+  "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+  "ambiguity": "原典は「生成熱」を負の候補で表す一方、他の熱量は正の大きさで与える。現代的な生成エンタルピーと熱化学式の右辺の発熱量の符号を区別して説明する。",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_006.png"
+  ],
+  "question_id": "H26-REG-APPLIED-15",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "97e3364a42df2ca242b8c957a7b4f6af3dff638eafb69958c18f1ca6dde7625c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

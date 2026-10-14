@@ -1,0 +1,55 @@
+{
+  "relations": [
+    {
+      "left_question_id": "R04-REG-APT-12",
+      "right_question_id": "R07-REG-APT-11",
+      "relation_type": "parameter_variant",
+      "shared_concept": "公正取引の4用語",
+      "shared_method": "競争制限・未公表情報・価格形成を行為から識別",
+      "numerical_differences": "数値・計算条件なし。記述の数と解答形式の差はchoice_differences参照。",
+      "negation_differences": "各記述を正誤判断して適切な組/数を選ぶ。",
+      "choice_differences": "R04は入札談合/相場操縦/カルテル/インサイダーの記述順で正誤5行、R07はカルテル/インサイダー/相場操縦/談合の記述順で数4〜0。真の記述はどちらも相場操縦、正答5→4。",
+      "figure_differences": "設問固有模式図なし。組合せ表のセルと候補配列を両原典画像で照合。",
+      "temporal_differences": "2022/2025で出題の基本定義は一致。制度の詳細・適用除外を同一視しない。",
+      "evidence": "S7_013で両原典画像の全条件・全肢を直接比較。関連校正JSON参照。",
+      "approval_status": "verified",
+      "source_hash_left": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+      "source_hash_right": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+      "rubric_version": "1.0-review1"
+    },
+    {
+      "left_question_id": "H27-REG-APT-12",
+      "right_question_id": "R06-REG-APT-03",
+      "relation_type": "same_concept",
+      "shared_concept": "著作権の引用と権利制限",
+      "shared_method": "公表・公正な慣行・正当な範囲で無許諾引用が可能",
+      "numerical_differences": "数値・計算条件なし。記述の数と解答形式の差はchoice_differences参照。",
+      "negation_differences": "各記述を正誤判断して適切な組/数を選ぶ。",
+      "choice_differences": "H27は5説明から適切2、R06は引用・官公資料・AI・試験の4記述の組で1。両年に無承諾の引用は常に侵害との誤りがある。全問題として再出題とはしない。",
+      "figure_differences": "設問固有模式図なし。組合せ表のセルと候補配列を両原典画像で照合。",
+      "temporal_differences": "2015→2024。R06は2019年施行の柔軟な権利制限を含むため同一制度条件としない。",
+      "evidence": "S7_013で両原典画像の全条件・全肢を直接比較。関連校正JSON参照。",
+      "approval_status": "verified",
+      "source_hash_left": "2965cecde9e4c31c06a94192bf7a750346fbf85d07d37943d58a3fa15d15ebeb",
+      "source_hash_right": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+      "rubric_version": "1.0-review1"
+    },
+    {
+      "left_question_id": "R04-REG-APT-09",
+      "right_question_id": "R05-REG-APT-04",
+      "relation_type": "same_concept",
+      "shared_concept": "知的財産の範囲",
+      "shared_method": "問われる集合の範囲を先に決める",
+      "numerical_differences": "数値・計算条件なし。記述の数と解答形式の差はchoice_differences参照。",
+      "negation_differences": "各記述を正誤判断して適切な組/数を選ぶ。",
+      "choice_differences": "R04は創作物の発明/考案/意匠/著作物/営業秘密が全て正5、R05は産業財産権の特許/実用新案/意匠/商標/著作権で最後だけ誤2。範囲と候補が違う。",
+      "figure_differences": "設問固有模式図なし。組合せ表のセルと候補配列を両原典画像で照合。",
+      "temporal_differences": "2022/2023の基本範囲に改正による差なし。個別保護要件の同一性は主張しない。",
+      "evidence": "S7_013で両原典画像の全条件・全肢を直接比較。関連校正JSON参照。",
+      "approval_status": "verified",
+      "source_hash_left": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+      "source_hash_right": "3dee8906ad8be46592986fef01028424243f7e515af04979667524eed1f0a915",
+      "rubric_version": "1.0-review1"
+    }
+  ]
+}

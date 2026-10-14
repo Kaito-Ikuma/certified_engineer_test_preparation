@@ -1,0 +1,22 @@
+{
+  "status": "committed",
+  "time": "2026-10-14T14:17:43+09:00",
+  "paths": [
+    "generated/questions/basic/03_analysis.tex",
+    "generated/questions/basic/05_environment_energy_technology.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/basic/03_analysis.tex": true,
+    "generated/questions/basic/05_environment_energy_technology.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/basic/03_analysis.tex": "28cbfdf22d5b6f1e4ac841a25310ec9c69e88a2ac0df740d400c023a74cf6bb1",
+    "generated/questions/basic/05_environment_energy_technology.tex": "c13c61e74f478d396c1877db26937276f8d53c920d4df872bf8c4f5c68b0c860",
+    "generated/audit_summary.tex": "3e07ef274d51d3f962a96d058d79e06047950b41a847eeb70bbb24309b83feb4",
+    "generated/frequency_tables.tex": "d187f8eb1db10d8f94b9ec64d2d134898e2adff8000f8661989c1d9153d55c73"
+  }
+}

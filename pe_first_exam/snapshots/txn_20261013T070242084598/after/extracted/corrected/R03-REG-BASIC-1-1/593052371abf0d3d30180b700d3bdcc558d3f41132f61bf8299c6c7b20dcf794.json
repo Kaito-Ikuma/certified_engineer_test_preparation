@@ -1,0 +1,45 @@
+{
+  "stem": "UDの具体的な機能とアクセス阻害を比較する。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "UDの具体的な機能とアクセス阻害を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "自動ドア",
+      "verdict": "選ばない候補",
+      "reason": "手がふさがる利用者の身体負担を減らす。"
+    },
+    "2": {
+      "value": "再生速度変更",
+      "verdict": "選ばない候補",
+      "reason": "能力や好みに合わせる柔軟性。"
+    },
+    "3": {
+      "value": "ピクトグラム",
+      "verdict": "選ばない候補",
+      "reason": "情報を認知しやすくする。"
+    },
+    "4": {
+      "value": "高い取っ手",
+      "verdict": "選ぶ候補",
+      "reason": "低身長や車椅子利用者の到達を妨げる。"
+    },
+    "5": {
+      "value": "多形式説明書",
+      "verdict": "選ばない候補",
+      "reason": "視覚・聴覚等の多様性へ情報提供を広げる。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/basic/page_001.png"
+  ],
+  "question_id": "R03-REG-BASIC-1-1",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "1",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "fe918a4695076bc9af7db93f5812a62f695608ed1dc8caa537d7314687c0bb21",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,31 @@
+{
+  "status": "committed",
+  "time": "2026-10-14T21:25:46+09:00",
+  "paths": [
+    "data/checkpoint2_frequency_analysis.csv",
+    "chapters/analysis/01_frequency_analysis.tex",
+    "chapters/analysis/02_yearly_trends.tex",
+    "chapters/analysis/03_repeated_topics.tex",
+    "chapters/analysis/04_priority_topics.tex",
+    "chapters/analysis/05_exam_strategy.tex",
+    "extracted/logs/checkpoint2_analysis_record.json"
+  ],
+  "existed": {
+    "data/checkpoint2_frequency_analysis.csv": false,
+    "chapters/analysis/01_frequency_analysis.tex": true,
+    "chapters/analysis/02_yearly_trends.tex": true,
+    "chapters/analysis/03_repeated_topics.tex": true,
+    "chapters/analysis/04_priority_topics.tex": true,
+    "chapters/analysis/05_exam_strategy.tex": true,
+    "extracted/logs/checkpoint2_analysis_record.json": false
+  },
+  "sha256": {
+    "data/checkpoint2_frequency_analysis.csv": "98b467b5eb7310671f015c1c17425d531a75f44238483c6e0be3a90529fb4719",
+    "chapters/analysis/01_frequency_analysis.tex": "7eed3905db0f630cc4f86d870f173e62790a38fb0a0cfec866e81a4b7b85d44d",
+    "chapters/analysis/02_yearly_trends.tex": "f8b95785e580c323e163588031cb0d829d461d86935615975c5db1f11db10e6f",
+    "chapters/analysis/03_repeated_topics.tex": "e139eff22d9756cac153e5395df34a0cca4aafebbd33a7be2c185cfe9fe5abed",
+    "chapters/analysis/04_priority_topics.tex": "ca076b47ea3bf877b2087de5f1e26f5d3e81ca00493a88bc43fa8606d2b4ee08",
+    "chapters/analysis/05_exam_strategy.tex": "c427817abe4edd2524d6f87a0fc21befd08e607a06014e2e9502975befa822de",
+    "extracted/logs/checkpoint2_analysis_record.json": "9f53fd79443912a076376eabd8d0e8db1b5038c440fa28f693d952da0972ae87"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "温対法の排出抑制と吸収作用。",
+  "conditions": {
+    "時点": "平成27年度に指定された資料・制度。",
+    "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "森林吸収の保全に言及なし",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "2": {
+      "value": "対象七種の温室効果ガス",
+      "verdict": "条件内で適切",
+      "reason": "原典の条件内では適切な記述であり、不適切なものを選ぶ問の選択対象ではない。"
+    },
+    "3": {
+      "value": "一定規模事業所別の算定報告",
+      "verdict": "条件内で適切",
+      "reason": "原典の条件内では適切な記述であり、不適切なものを選ぶ問の選択対象ではない。"
+    },
+    "4": {
+      "value": "知事が推進員委嘱とセンター指定",
+      "verdict": "条件内で適切",
+      "reason": "原典の条件内では適切な記述であり、不適切なものを選ぶ問の選択対象ではない。"
+    },
+    "5": {
+      "value": "少なくとも三年ごと計画検討",
+      "verdict": "条件内で適切",
+      "reason": "原典の条件内では適切な記述であり、不適切なものを選ぶ問の選択対象ではない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "2015施行時の全五条項を履歴条文で一括確認する作業は未完了。現行の2050目標を当時条文へ追加しない。",
+  "evidence": [
+    "extracted/pages/H27/basic/page_015.png"
+  ],
+  "question_id": "H27-REG-BASIC-5-2",
+  "source_file": "sources/H27/basic.pdf",
+  "source_page": "15",
+  "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+  "raw_text_sha256": "e673e8e6c59b72c6c98f264a0448fa41036cc67fb4e05610770f9f8175185a4a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

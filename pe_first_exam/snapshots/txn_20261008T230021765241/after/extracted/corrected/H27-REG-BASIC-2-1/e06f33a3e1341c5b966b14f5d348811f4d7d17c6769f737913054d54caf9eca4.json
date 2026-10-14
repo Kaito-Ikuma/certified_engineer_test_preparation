@@ -1,0 +1,45 @@
+{
+  "stem": "二進計算機で0.01を100回加え、正しいプログラムでも結果が1と一致しない原因を選ぶ。",
+  "conditions": {
+    "入力": "10進0.01",
+    "繰返し": "100回加算。プログラムの誤りはない。"
+  },
+  "choices": {
+    "1": {
+      "value": "桁落ち",
+      "verdict": "不適切な解答候補",
+      "reason": "ほぼ等しい量を減算して有効桁が失われる状況ではない。"
+    },
+    "2": {
+      "value": "情報落ち",
+      "verdict": "不適切な解答候補",
+      "reason": "著しく桁の異なる量を加算して小さい量が消える原因を主題としていない。"
+    },
+    "3": {
+      "value": "オーバーフロー",
+      "verdict": "不適切な解答候補",
+      "reason": "1付近の合計が通常の浮動小数点の上限を超える状況ではない。"
+    },
+    "4": {
+      "value": "アンダーフロー",
+      "verdict": "不適切な解答候補",
+      "reason": "0.01は通常の浮動小数点の最小正数より十分大きい。"
+    },
+    "5": {
+      "value": "丸め誤差",
+      "verdict": "適切な解答候補",
+      "reason": "0.01は二進有限小数で表せず、入力表現と各加算の丸めが蓄積し得る。"
+    }
+  },
+  "figures": "図なし。5肢の値または記述を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/basic/page_005.png"
+  ],
+  "question_id": "H27-REG-BASIC-2-1",
+  "source_file": "sources/H27/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+  "raw_text_sha256": "3ec05a467ef523f5b821ad314ed90ce29540f7279bb413ee25655416ae040dda",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

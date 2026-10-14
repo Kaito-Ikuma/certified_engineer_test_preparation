@@ -1,0 +1,45 @@
+{
+  "stem": "地熱貯留層の透水経路と温度利用を比較する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "地熱貯留層の透水経路と温度利用を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "広域と局所の地温勾配",
+      "verdict": "条件・解釈を留保",
+      "reason": "放射性壊変・深部熱供給・火山等の熱源を考える。20–30、50–100℃/km以上は代表範囲で全地点の一定値ではない。"
+    },
+    "2": {
+      "value": "非火山地域も低温利用の対象",
+      "verdict": "代表的条件で適切",
+      "reason": "地殻の広域熱等による熱水も利用でき、火山周辺だけに限定されない。"
+    },
+    "3": {
+      "value": "化学成分による温度推定",
+      "verdict": "代表的条件で適切",
+      "reason": "溶解平衡等の温度依存を利用する地化学温度計。冷却、混合、再平衡の影響は別に検討する。"
+    },
+    "4": {
+      "value": "割れ目に乏しい地熱貯留層",
+      "verdict": "不適切",
+      "reason": "通常の開発可能な熱水循環には割れ目等の透水経路が重要。原典H23の富んだを乏しいへ反転したもの。"
+    },
+    "5": {
+      "value": "蒸気方式とバイナリー",
+      "verdict": "代表的条件で適切",
+      "reason": "蒸気でタービンを回す方式と、熱交換で低沸点の二次媒体を蒸発させる方式を区別する。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "地温勾配の代表範囲と地化学温度計の平衡仮定は地域・化学種の条件を要する。原典の固定範囲を地球全域の厳密定数としない。",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_007.png"
+  ],
+  "question_id": "R03-REG-APPLIED-20",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "734bd0677fca4fe7d4d52ca1d10089ad3e3d9b0f72872c2d0e707526574bf35b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "committed",
+  "time": "2026-10-12T12:39:42+09:00",
+  "paths": [
+    "generated/questions/aptitude/03_compliance_accountability.tex",
+    "generated/questions/aptitude/04_safety_risk.tex",
+    "generated/questions/aptitude/05_environment_sustainability.tex",
+    "generated/questions/aptitude/06_research_information_ethics.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/aptitude/03_compliance_accountability.tex": true,
+    "generated/questions/aptitude/04_safety_risk.tex": true,
+    "generated/questions/aptitude/05_environment_sustainability.tex": true,
+    "generated/questions/aptitude/06_research_information_ethics.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/aptitude/03_compliance_accountability.tex": "03ae6e817d6e317bf9c169edde19fd20bc23bfc0ce1537944d6839525041398c",
+    "generated/questions/aptitude/04_safety_risk.tex": "a985f613418cdfa3509694dc670f9bed68311df61262c856195bc6496ad54911",
+    "generated/questions/aptitude/05_environment_sustainability.tex": "23c72b3e316d8fd88bd9515f2a7ef71a5d941ef60be548497ad0a759838874de",
+    "generated/questions/aptitude/06_research_information_ethics.tex": "a387044646d78d6a4a286903ac78d5250cecd59c5afa32993f8fcc32629ff0a4",
+    "generated/audit_summary.tex": "aad17cf3c6576ac6001a373e4d6b9f4f397136d9c958b2001c0681f5a815c38f",
+    "generated/frequency_tables.tex": "9d8b57693d9976e3d8a6b27ab3d52e548da39e861e4fa8a64ed804a5268eb090"
+  }
+}

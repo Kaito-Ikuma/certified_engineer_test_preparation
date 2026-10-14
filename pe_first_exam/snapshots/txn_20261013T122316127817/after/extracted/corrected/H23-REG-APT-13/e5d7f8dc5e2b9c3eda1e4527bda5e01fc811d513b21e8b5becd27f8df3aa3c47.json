@@ -1,0 +1,45 @@
+{
+  "stem": "専門職・BCM・設計・VE・内部統制を定義から照合する。",
+  "conditions": {
+    "原典照合": "H23適性14頁のア〜オと候補表全五行を確認。",
+    "各記述": "ア：専門職大学院＝博士後期。イ：BCM管理とBCP計画。ウ：要求性能と製作仕様に基づく性能設計、確率に基づく信頼性。エ：必要機能/最小ライフサイクルコストの価値。オ：当時の内部統制四目的。"
+  },
+  "choices": {
+    "1": {
+      "value": "ア○イ○ウ○エ○オ○",
+      "verdict": "不適切",
+      "reason": "アは専門職大学院を博士後期とする誤り。ウも要求性能の評価と製作仕様による方法規定を混同。"
+    },
+    "2": {
+      "value": "ア×イ○ウ○エ○オ○",
+      "verdict": "不適切",
+      "reason": "アの訂正はできるが、ウの仕様への固定を残している。"
+    },
+    "3": {
+      "value": "ア×イ○ウ×エ○オ○",
+      "verdict": "代表的条件で適切",
+      "reason": "専門職学位課程と博士後期を分け、要求性能と仕様を区別する。BCMは継続的管理、BCPは計画。VEは必要機能とコスト、内部統制は当時の四目的を組織全体で遂行する。"
+    },
+    "4": {
+      "value": "ア○イ×ウ○エ○オ×",
+      "verdict": "不適切",
+      "reason": "ア・ウの誤りを残し、BCM/BCPと当時の内部統制四目的を誤りとする。"
+    },
+    "5": {
+      "value": "ア○イ×ウ○エ×オ○",
+      "verdict": "不適切",
+      "reason": "ア・ウの誤りを残し、BCM/BCPとVEの定義を誤りとする。"
+    }
+  },
+  "figures": "原典の組合せ表又は測定表を独自に要約。元画像は照合用で転載しない。",
+  "ambiguity": "信頼性設計の詳細と全性能設計手法の一意の定義は追加照合対象。ア・ウの複合記述を語ごとに確認し、公式3を保持。",
+  "evidence": [
+    "extracted/pages/H23/aptitude/page_014.png"
+  ],
+  "question_id": "H23-REG-APT-13",
+  "source_file": "sources/H23/aptitude.pdf",
+  "source_page": "14",
+  "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+  "raw_text_sha256": "fcefd4330f943e669a93a7f3c7fc472af69ae073d170e3579c826361fd0f1abd",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

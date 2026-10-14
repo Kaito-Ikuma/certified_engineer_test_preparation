@@ -1,0 +1,45 @@
+{
+  "stem": "里地里山の危機は利用縮小・管理低下。",
+  "conditions": {
+    "原典": "全五肢と否定方向・組合せ表を画像確認。",
+    "資料時点": "令和5年度の指定資料・統計年を保持し、後年値に置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "爬虫類約6割・両生類約8割が固有種",
+      "verdict": "条件内で適切",
+      "reason": "固有種割合を全動植物へ一般化しない。"
+    },
+    "2": {
+      "value": "近年大規模開発の圧力は低下",
+      "verdict": "条件内で適切",
+      "reason": "過去の減少と近年の開発圧力の変化を別に記す。"
+    },
+    "3": {
+      "value": "里山の利用拡大で生息地減少",
+      "verdict": "不適切・選択対象",
+      "reason": "里地里山は利用・管理の縮小による環境変化が主要な危機。拡大という原因説明が逆。"
+    },
+    "4": {
+      "value": "他地域からの導入種が在来へ影響",
+      "verdict": "条件内で適切",
+      "reason": "国外だけでなく国内他地域からの移動でも影響し得る。"
+    },
+    "5": {
+      "value": "タケや南方系チョウの北上",
+      "verdict": "条件内で適切",
+      "reason": "気候変化と分布の変化の事例。全種が一様に北上するという主張ではない。"
+    }
+  },
+  "figures": "文章五肢を独自要約。",
+  "ambiguity": "指定国家戦略の固有種比率・開発圧力・分布事例の全原文は追加確認対象。",
+  "evidence": [
+    "extracted/pages/R05/basic/page_016.png"
+  ],
+  "question_id": "R05-REG-BASIC-5-1",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "16",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "88f57e374bf5a1f5244da54a707ccf44b46c118a159649aa75a3fcbea8184453",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,48 @@
+{
+  "stem": "質量mの球が速度uで静止している質量Mの球へ一次元完全弾性衝突するとき、後者の衝突後速度を求める。",
+  "conditions": {
+    "mass_A": "m",
+    "mass_B": "M",
+    "initial_velocity_A": "u",
+    "initial_velocity_B": 0,
+    "collision": "one-dimensional, perfectly elastic"
+  },
+  "choices": {
+    "1": {
+      "value": "\\((m-M)u/(m+M)\\)",
+      "verdict": "不採用",
+      "reason": "これは入射球Aの衝突後速度で、問われている球Bではない。"
+    },
+    "2": {
+      "value": "\\(Mu/(m+M)\\)",
+      "verdict": "不採用",
+      "reason": "運動量と反発係数1の二条件を同時に満たさない。"
+    },
+    "3": {
+      "value": "\\(mu/(m+M)\\)",
+      "verdict": "不採用",
+      "reason": "完全非弾性で一体化した速度に対応し、本問ではない。"
+    },
+    "4": {
+      "value": "\\(2Mu/(m+M)\\)",
+      "verdict": "不採用",
+      "reason": "Bの速度の分子にMを置いており、Mが無限大でも速度が有限という不適切な極限になる。"
+    },
+    "5": {
+      "value": "\\(2mu/(m+M)\\)",
+      "verdict": "採用",
+      "reason": "運動量保存と相対速度反転の両条件を満たす。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_001.png"
+  ],
+  "question_id": "R03-REG-APPLIED-02",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "91e99473455dbd51e6e14505690483519985c14e07ee15b53bd7f23d29ed362f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,75 @@
+\section{観測することと分けること}\label{theory:analysis:separation}
+分析では、試料から何を知るかと、どの操作で成分を分けるかを区別する。NMRは磁場中の核スピンの共鳴を測り、通常は試料を成分別に回収しない。遠心分離は沈降、電気泳動は電場中の移動度、クロマトグラフィーは固定相と移動相の間の保持の差を利用する。
+MSは作ったイオンを質量電荷比で選別するため装置内部の分離を含むが、元の中性混合物を大量に分取する方法という意味とは異なる\cite{analysis49_ms_ref}。原典の「成分分離」の広さを確認する。
+
+\section{分子量はどの平均か}\label{theory:analysis:molar}
+分子量の違う鎖が共存する高分子では、一つの値を述べるだけでは分布が分からない。分子数 \(N_i\)、分子量 \(M_i\) に対し
+\[
+ M_n=\frac{\sum N_iM_i}{\sum N_i},\qquad
+ M_w=\frac{\sum N_iM_i^2}{\sum N_iM_i}.
+\]
+粒子数に依存する浸透圧は数平均に対応する。溶質質量濃度 \(c\)、絶対温度 \(T\)、気体定数 \(R\) を使い、非電解質高分子の希薄溶液では
+\[
+ \frac{\Pi}{c}=\frac{RT}{M_n}+O(c).
+\]
+濃度を変えて零へ外挿し、相互作用項を分けて切片を使う。
+GPCは溶液中の大きさに応じた細孔への侵入の差を使う。標準物質による保持の校正から相対的な分子量と分布も測定できる\cite{analysis49_gpc_ref}。
+鎖形状や溶媒の違いは校正へ影響する。「絶対測定」を明記しない問いで、GPCを分子量測定でないと排除しない。
+
+\section{略称を励起・分離・検出へ分解する}\label{theory:analysis:acronyms}
+ESRはElectron Spin Resonance、EPRはElectron Paramagnetic Resonanceで不対電子を対象とする。核磁気共鳴NMRとは対象が違う\cite{analysis49_esr_ref}。
+HPLCの通常名はHigh Performance Liquid ChromatographyでPrecisionではない。
+MALDIはMatrix-Assisted Laser Desorption/Ionizationでイオン化、TOFは飛行時間型の質量選別を表す\cite{analysis49_hplc_ref,analysis49_maldi_ref}。
+CARSはCoherent Anti-Stokes Raman Spectroscopy、ESCAはElectron Spectroscopy for Chemical Analysisである\cite{analysis49_cars_ref,analysis49_xps_ref}。
+FTIRのFTはFourier Transformで、核分裂飛跡と区別する。EPMAは電子線による局所分析、NAAは中性子放射化分析、GC/MSは気体クロマトグラフィーと質量分析の組合せである\cite{analysis49_epma_ref,analysis49_naa_ref}。
+装置名に含まれる「何を照射するか」「何で分けるか」「何を観測するか」を別々に読む。
+
+\section{吸光・発光と濃度}\label{theory:analysis:beer}
+光強度の透過率 \(T_{\rm opt}=I/I_0\)、吸光度 \(A=-\log_{10}T_{\rm opt}\) を定める。
+同じ化学種、波長、光路長 \(l\) を保つ希薄溶液で
+\[
+ A=\varepsilon cl,\qquad \log_{10}T_{\rm opt}=-\varepsilon cl.
+\]
+透過率自体は濃度に線形ではないが、その対数は負の係数で比例する\cite{analysis49_beer_ref}。濃度で会合・解離が変わる試料や強い散乱、迷光を無条件に同じ式へ入れない。
+炎光分析は励起した原子が低いエネルギー状態へ戻る発光を使う。UV--Visは電子遷移、IRは主に振動遷移という励起対象の違いを押さえる。
+
+\section{温度計と天秤にも測定条件がある}\label{theory:analysis:metrology}
+温度計の感温部を入れれば常に真の温度を得るわけではない。全浸没型液体温度計と部分浸没型は校正条件が違い、後者では露出柱の温度も関係する\cite{analysis49_thermo_ref}。「水銀柱全部が同温度」は全型を網羅する規則ではない。
+天秤では空気の浮力により概略の有効力が \(mg-\rho_{\rm air}Vg\) になる。同質量でも密度の違う分銅と試料は体積が違う。空気密度を温度・圧力・湿度から求め、必要なら補正する\cite{analysis49_buoy_ref}。
+物理専攻者は力の釣合いへ戻って誤差の向きを判断できる。高精度測定での補正と、通常の秤量で無視する近似の大きさを区別する。
+
+\section{内殻を測っても結合状態を調べられる}\label{theory:analysis:xray}
+内殻電子を励起・電離すると空孔ができる。別の電子がその空孔へ移ると元素に特徴的な蛍光X線を出し得る。入射光子は吸収端より高エネルギー、すなわち短波長であることが必要になる。XRFの複数ピークから複数元素を分析できる\cite{analysis49_xrf_ref}。
+XPSでは放出した光電子の運動エネルギーから結合エネルギーを求める。
+\[
+ E_{\rm bind}=h\nu-E_{\rm kin}-\phi
+\]
+ここで \(\phi\) は装置の仕事関数等の基準補正である。化学状態で内殻結合エネルギーに差が生じるので「内殻だから化学結合に鈍感」としない\cite{analysis49_xps_ref}。
+X線発光にも高分解能で電子状態の差を扱う方法がある\cite{analysis49_sxes_ref}。微小シフトがあることと、任意の通常装置で必ずそれを分解できることは違う。
+
+\section{分離と検出と校正}\label{theory:analysis:chrom}
+保持値は固定相・移動相・温度等に依存する。同条件で標準と一致すれば候補を推定できるが、共溶出があり保持一致だけでは唯一の同定とはならない。MS検出器は質量スペクトルという追加情報を得られる\cite{analysis49_library_ref}。
+外部標準の検量線では既知量と信号の関係を作る。内標準法は対象と分離される物質を加え、応答比で注入量等の変動を補正する。標準添加は試料の分取へ既知量を加え、そのマトリックスで応答を測る\cite{analysis49_chrom_ref}。
+全検出器が一律に線形応答というわけではない。例えばFPD硫黄モードの非線形性がある。検出器の機構と検量線の適合を確認する。
+
+\section{分離操作と共沸の例外}\label{theory:analysis:operations}
+蒸留は気液の組成差を使うが、共沸では \(y=x\) となる。単に沸点の違う二成分だから必ず気液組成が違うとは言えない\cite{nptel_azeotrope}。
+吸収は気体成分を液体内部へ溶かす操作、吸着は表面や細孔へ保持する操作、液液抽出は非混和二相間の分配を使う操作である。
+逆浸透は膜を挟む浸透圧差に逆らう圧力差を与える。水を優先的に透過させる代表的な脱塩法だが、実膜の全溶質阻止率を常に100\%としない。理想膜での原理と実際の透過性能を分ける。
+
+\section{IRは伸縮だけではない}\label{theory:analysis:ir}
+二原子の近似では \(\omega\simeq\sqrt{k/\mu_{\rm red}}\) で、力定数と換算質量が振動数を決める。多原子分子には伸縮、結合角を変える変角、面外変形等の多数の正規振動がある。振動に伴って双極子が変わるものがIR吸収へ現れる\cite{analysis49_ir_ref,atomic_ir_raman}。
+官能基が同じなら似た吸収領域を持つことが多いが、共役・水素結合・分子環境で変わり得る。Ramanの分極率変化という条件と、IRの双極子変化を交換しない。
+
+\section{発光・解離・軌道エネルギー}\label{theory:analysis:photophysics}
+通常の蛍光は同じスピン多重度の励起状態からの発光、りん光は典型的に三重項から一重項への遷移である。系間交差、無放射緩和、発光を一つの過程へまとめない。核は電子に比べて重く、電子遷移では核配置をほぼ固定した垂直遷移と振動波動関数の重なりを扱う。
+前期解離は束縛的な状態と解離性の別状態の結合により生じ得る非放射解離である。自身の解離極限を超えた直接解離の単なる別名ではない\cite{analysis49_pred_ref}。
+Hartree--Fockで他の軌道を凍結して一電子を取り去るKoopmans近似では
+\[
+ I_i\simeq-\varepsilon_i.
+\]
+軌道緩和と電子相関の変化を省く近似であり、全固体・全分子の観測値への厳密な等式ではない\cite{analysis49_koop_ref}。
+発光の種類には遅延蛍光等もあり、過去問の典型的な図式と全過程の一般論を区別する。
+
+\section{学習順序と原典の疑義}
+まず対象を原子核・電子・振動・元素・分子量へ分け、次に分離の原理と検出信号を整理する。最後に検量線・測定環境・成立条件を確認する。公式の番号を保存しつつ、GPC、検出器の全称、温度計の校正などの限定不足は問題別の未解決記録へ残す。

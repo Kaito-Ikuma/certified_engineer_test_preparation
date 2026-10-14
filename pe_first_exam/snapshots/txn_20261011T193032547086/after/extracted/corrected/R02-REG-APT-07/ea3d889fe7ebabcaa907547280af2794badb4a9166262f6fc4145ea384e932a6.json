@@ -1,0 +1,46 @@
+{
+  "stem": "対策後にも見積りと評価を反復し、残留リスクの妥当性を確認して文書化する。",
+  "conditions": {
+    "判断方向": "各肢の理由に記録。組合せ・個数問題では記述の真偽と回答番号を区別する。",
+    "原典照合": "全5候補、表の列順、否定、条件、規格番号、法令時点を23原典画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "見積り・評価・発生リスク・妥当性確認文書化",
+      "verdict": "不適合",
+      "reason": "ウが違う。対策後に残る危険を評価するので残留リスクである。"
+    },
+    "2": {
+      "value": "同定・評価・発生リスク・合理性確認記録化",
+      "verdict": "不適合",
+      "reason": "ア、ウ、エが違う。対策後の見積り・残留性・妥当性確認という流れを満たさない。"
+    },
+    "3": {
+      "value": "見積り・検証・残留リスク・妥当性確認記録化",
+      "verdict": "不適合",
+      "reason": "イとエが違う。先に大きさを見積り、基準に照らして評価し、最後に妥当性確認と文書化を行う。"
+    },
+    "4": {
+      "value": "見積り・評価・残留リスク・妥当性確認文書化",
+      "verdict": "図の流れに適合・規格本文保留",
+      "reason": "ア見積り、イ評価、ウ残留リスク、エ妥当性確認及び文書化で、原典図の反復と完了の位置に合う。"
+    },
+    "5": {
+      "value": "同定・検証・発生リスク・合理性確認文書化",
+      "verdict": "不適合",
+      "reason": "ア、イ、ウ、エが違う。危険源同定や検証という語を反復中の見積り・評価へ置き換えない。"
+    }
+  },
+  "figures": "原典の表又は図の矢印と列順を確認。元図は転載せず独自説明とする。",
+  "ambiguity": "原典図・全候補は2頁の画像で確認済み。Guide51原規格の全文取得不能のため規格条項の直接照合は未完。",
+  "evidence": [
+    "extracted/pages/R02/aptitude/page_007.png",
+    "extracted/pages/R02/aptitude/page_008.png"
+  ],
+  "question_id": "R02-REG-APT-07",
+  "source_file": "sources/R02/aptitude.pdf",
+  "source_page": "7",
+  "source_sha256": "d0ca26aaeeba6d436d8ffa77a759056e7a194c0ac9fad61de2c84392999050bb",
+  "raw_text_sha256": "d28d2eee6a3bbf52a9373c6e478d55b296d25c0d9516969c0421dd8e16116496",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

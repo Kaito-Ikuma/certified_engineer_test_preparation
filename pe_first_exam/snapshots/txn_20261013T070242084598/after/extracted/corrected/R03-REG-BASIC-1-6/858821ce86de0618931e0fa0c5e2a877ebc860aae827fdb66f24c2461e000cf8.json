@@ -1,0 +1,45 @@
+{
+  "stem": "第一角・第三角投影の配置と標準化を判断する。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "第一角・第三角投影の配置と標準化を判断する。"
+  },
+  "choices": {
+    "1": {
+      "value": "誤正正正誤",
+      "verdict": "選ばない候補",
+      "reason": "第一角の平面図が上というウを肯定。"
+    },
+    "2": {
+      "value": "正誤正誤正",
+      "verdict": "選ばない候補",
+      "reason": "第五角とISOイタリアを肯定し第三角・標準化を否定。"
+    },
+    "3": {
+      "value": "誤正誤正誤",
+      "verdict": "選ぶ候補",
+      "reason": "第五角の誤、第三角正、第一角上の誤、国家規格正、ISO国別の誤。"
+    },
+    "4": {
+      "value": "誤誤正誤正",
+      "verdict": "選ばない候補",
+      "reason": "第三角・国家規格を否定、第一角とISO国別を肯定。"
+    },
+    "5": {
+      "value": "正誤誤正誤",
+      "verdict": "選ばない候補",
+      "reason": "第五角を肯定、第三角を否定。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/basic/page_005.png"
+  ],
+  "question_id": "R03-REG-BASIC-1-6",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "b2866fa67c43c663855ef378ce459835ab9e64648007bfdfede49086cddf6a06",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

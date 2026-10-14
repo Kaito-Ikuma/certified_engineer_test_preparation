@@ -1,0 +1,45 @@
+{
+  "stem": "熱化学方程式を組み合わせ、指定量の液体ベンゼンの完全燃焼熱を求める。",
+  "conditions": {
+    "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+    "成立条件": "原典の水は液体、炭素は黒鉛、ベンゼンは液体。式に付く熱量の符号を反応エンタルピーへ変換し、指定物質量を最後に掛ける。"
+  },
+  "choices": {
+    "1": {
+      "value": "900 kJ",
+      "verdict": "不適切",
+      "reason": "生成物のCO2六つと水三つの寄与を合計した値より大きく不足する。"
+    },
+    "2": {
+      "value": "1700 kJ",
+      "verdict": "不適切",
+      "reason": "炭素と水素の両方の酸化による発熱を正しく合計した値に達しない。"
+    },
+    "3": {
+      "value": "2500 kJ",
+      "verdict": "不適切",
+      "reason": "生成物と反応物のエンタルピー差から求めた値より小さい。"
+    },
+    "4": {
+      "value": "3300 kJ",
+      "verdict": "適切",
+      "reason": "原典指定の量の放出熱量に最も近い。"
+    },
+    "5": {
+      "value": "4100 kJ",
+      "verdict": "不適切",
+      "reason": "原典の反応係数と指定物質量から求めた値より大きい。"
+    }
+  },
+  "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_005.png"
+  ],
+  "question_id": "H24-REG-APPLIED-14",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "b75ed9b490505214ffb09d30a77136577d9d7a798d14a464fb9d599e5135e04b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

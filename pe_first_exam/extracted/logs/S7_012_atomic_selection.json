@@ -1,0 +1,110 @@
+[
+  {
+    "question_id": "H23-REG-BASIC-4-2",
+    "pages": [
+      "extracted/pages/H23/basic/page_012.png"
+    ]
+  },
+  {
+    "question_id": "H25-REG-BASIC-4-3",
+    "pages": [
+      "extracted/pages/H25/basic/page_016.png"
+    ]
+  },
+  {
+    "question_id": "H26-REG-BASIC-4-1",
+    "pages": [
+      "extracted/pages/H26/basic/page_013.png"
+    ]
+  },
+  {
+    "question_id": "H26-REG-BASIC-4-2",
+    "pages": [
+      "extracted/pages/H26/basic/page_013.png"
+    ]
+  },
+  {
+    "question_id": "H27-REG-BASIC-4-1",
+    "pages": [
+      "extracted/pages/H27/basic/page_012.png"
+    ]
+  },
+  {
+    "question_id": "H27-REG-BASIC-4-2",
+    "pages": [
+      "extracted/pages/H27/basic/page_012.png"
+    ]
+  },
+  {
+    "question_id": "H28-REG-BASIC-4-2",
+    "pages": [
+      "extracted/pages/H28/basic/page_017.png"
+    ]
+  },
+  {
+    "question_id": "H30-REG-BASIC-4-1",
+    "pages": [
+      "extracted/pages/H30/basic/page_015.png"
+    ]
+  },
+  {
+    "question_id": "R01-REG-BASIC-4-1",
+    "pages": [
+      "extracted/pages/R01/basic/page_016.png"
+    ]
+  },
+  {
+    "question_id": "R01-REG-BASIC-4-2",
+    "pages": [
+      "extracted/pages/R01/basic/page_016.png"
+    ]
+  },
+  {
+    "question_id": "R02-REG-BASIC-4-1",
+    "pages": [
+      "extracted/pages/R02/basic/page_015.png"
+    ]
+  },
+  {
+    "question_id": "R03-REG-BASIC-4-1",
+    "pages": [
+      "extracted/pages/R03/basic/page_016.png"
+    ]
+  },
+  {
+    "question_id": "R04-REG-BASIC-4-2",
+    "pages": [
+      "extracted/pages/R04/basic/page_014.png"
+    ]
+  },
+  {
+    "question_id": "R05-REG-BASIC-4-1",
+    "pages": [
+      "extracted/pages/R05/basic/page_013.png"
+    ]
+  },
+  {
+    "question_id": "R06-REG-BASIC-4-1",
+    "pages": [
+      "extracted/pages/R06/basic/page_015.png"
+    ]
+  },
+  {
+    "question_id": "R06-REG-BASIC-4-2",
+    "pages": [
+      "extracted/pages/R06/basic/page_015.png"
+    ]
+  },
+  {
+    "question_id": "R07-REG-BASIC-4-1",
+    "pages": [
+      "extracted/pages/R07/basic/page_013.png"
+    ]
+  },
+  {
+    "question_id": "R07-REG-BASIC-4-4",
+    "pages": [
+      "extracted/pages/R07/basic/page_014.png"
+    ]
+  }
+]

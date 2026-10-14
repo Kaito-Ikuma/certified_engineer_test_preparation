@@ -1,0 +1,45 @@
+{
+  "stem": "造岩鉱物の薄片光学特性から最も不適切なものを選ぶ。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "観察": "通常の切断面の透過偏光観察。"
+  },
+  "choices": {
+    "1": {
+      "value": "石英では波動消光が見られることがある",
+      "verdict": "正しい",
+      "reason": "結晶内部の歪みで光学方位が連続的に変わると一粒の消光が一斉でなくなる。"
+    },
+    "2": {
+      "value": "普通角閃石には2方向の劈開が見られる",
+      "verdict": "正しい",
+      "reason": "角閃石の柱面劈開は約56°・124°で交わる二方向である。"
+    },
+    "3": {
+      "value": "かんらん石は直消光し劈開に乏しい",
+      "verdict": "通常の特徴として正しい",
+      "reason": "通常のかんらん石は直消光で、劈開は弱く顕著ではない。"
+    },
+    "4": {
+      "value": "斜方輝石は斜消光し単斜輝石は直消光する",
+      "verdict": "誤り",
+      "reason": "通常の特徴は斜方輝石が直消光、単斜輝石が斜消光であり、記述が逆である。単斜輝石も切断面次第で平行消光を示す。"
+    },
+    "5": {
+      "value": "斜長石にはアルバイト双晶や累帯構造が見られる",
+      "verdict": "正しい",
+      "reason": "斜長石は反復双晶と成長中の組成変化を示し得る。"
+    }
+  },
+  "figures": "図なし。原典頁画像で選択方向、観察条件、鉱物名と全5肢を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_010.png"
+  ],
+  "question_id": "H30-REG-APPLIED-31",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "4e06965d863d24b640949efac9358b6dcff380bc026b00ade72d02fb7eefedb0",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

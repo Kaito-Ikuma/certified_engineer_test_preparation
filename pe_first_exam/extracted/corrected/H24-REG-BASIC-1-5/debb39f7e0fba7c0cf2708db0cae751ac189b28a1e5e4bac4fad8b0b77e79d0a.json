@@ -1,0 +1,47 @@
+{
+  "stem": "資源制約から生産利益を最大にする。",
+  "conditions": {
+    "製品X": "A3kg、B1kg、利益3万円。",
+    "製品Y": "A1kg、B2kg、利益2万円。",
+    "上限": "A9kg、B8kg。"
+  },
+  "choices": {
+    "1": {
+      "value": "4",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "2": {
+      "value": "6",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "3": {
+      "value": "9",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "4": {
+      "value": "10",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "5": {
+      "value": "12",
+      "verdict": "条件内で適切",
+      "reason": "解法の条件と結果を照合する。 計算結果と一致。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/basic/page_004.png",
+    "extracted/pages/H24/basic/page_005.png"
+  ],
+  "question_id": "H24-REG-BASIC-1-5",
+  "source_file": "sources/H24/basic.pdf",
+  "source_page": "4",
+  "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+  "raw_text_sha256": "0150da6f7da3b9a4a80ca74acb0c7a61f6e7508854f16b0b3a452502cdfb185a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "芳香族置換の配向性からoニトロトルエンの導入順を決める。",
+  "conditions": {
+    "判断対象": "芳香族置換の配向性からoニトロトルエンの導入順を決める。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "ニトロ基/メチル基/ニトロベンゼン/トルエン",
+      "verdict": "選ばない候補",
+      "reason": "ニトロを先に入れる順はm配向・不活性化なので目的の経路に合わない。"
+    },
+    "2": {
+      "value": "カルボキシル基/ニトロ基/安息香酸/ニトロベンゼン",
+      "verdict": "選ばない候補",
+      "reason": "oニトロトルエンの置換基メチル/ニトロ又は中間トルエン/ニトロベンゼンの対応と異なる。"
+    },
+    "3": {
+      "value": "ニトロ基/アミノ基/ニトロベンゼン/アニリン",
+      "verdict": "選ばない候補",
+      "reason": "oニトロトルエンの置換基メチル/ニトロ又は中間トルエン/ニトロベンゼンの対応と異なる。"
+    },
+    "4": {
+      "value": "メチル基/ニトロ基/トルエン/ニトロベンゼン",
+      "verdict": "選ぶ候補",
+      "reason": "メチル基はo,p配向、トルエンを先に作りニトロを導入する全対応に合う。"
+    },
+    "5": {
+      "value": "ヒドロキシ基/ニトロ基/フェノール/ニトロベンゼン",
+      "verdict": "選ばない候補",
+      "reason": "oニトロトルエンの置換基メチル/ニトロ又は中間トルエン/ニトロベンゼンの対応と異なる。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_007.png"
+  ],
+  "question_id": "H25-REG-APPLIED-17",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "a92beba7a978c12447068c6119af1ce9f052f1257bf2e242d3d4cb6bce3b0d73",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

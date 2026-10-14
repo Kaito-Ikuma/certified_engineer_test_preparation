@@ -1,0 +1,45 @@
+{
+  "stem": "0℃1気圧のメタンと液体密度から体積比。",
+  "conditions": {
+    "気体": "純CH4理想気体、0℃・1気圧。",
+    "液体": "密度425kg/m³一定。"
+  },
+  "choices": {
+    "1": {
+      "value": "1/400",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 1/600 と異なる。"
+    },
+    "2": {
+      "value": "1/600",
+      "verdict": "適切・選択対象",
+      "reason": "独立に求めた組合せ 1/600 と一致する。"
+    },
+    "3": {
+      "value": "1/800",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 1/600 と異なる。"
+    },
+    "4": {
+      "value": "1/1000",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 1/600 と異なる。"
+    },
+    "5": {
+      "value": "1/1200",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 1/600 と異なる。"
+    }
+  },
+  "figures": "図の数値又は組合せ表を独自要約。原典画像は確認用のみ。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_017.png"
+  ],
+  "question_id": "R05-REG-BASIC-5-4",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "78e816a072638862408ca2d9c3af6e28090829c9f5c0113d644ff0524e2551e2",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

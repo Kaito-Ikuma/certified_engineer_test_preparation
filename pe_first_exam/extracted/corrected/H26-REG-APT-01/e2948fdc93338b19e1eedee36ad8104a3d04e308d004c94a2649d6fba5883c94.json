@@ -1,0 +1,59 @@
+{
+  "stem": "第4章の5空欄へ入る語を選ぶ。",
+  "conditions": {
+    "空欄順": [
+      "ア",
+      "イ",
+      "ウ",
+      "エ",
+      "オ"
+    ],
+    "正しい語句の照合": {
+      "ア": "不名誉",
+      "イ": "義務",
+      "ウ": "公益",
+      "エ": "責務",
+      "オ": "資質"
+    },
+    "出題時資料": ""
+  },
+  "choices": {
+    "1": {
+      "value": "不名誉／義務／安全／責務／能力",
+      "verdict": "不適切な解答候補",
+      "reason": "ウは安全だけでなく公益、オは資質である。"
+    },
+    "2": {
+      "value": "不利益／責務／公益／義務／資質",
+      "verdict": "不適切な解答候補",
+      "reason": "アは不名誉、イは義務、エは責務である。"
+    },
+    "3": {
+      "value": "不名誉／義務／公益／責務／資質",
+      "verdict": "適切な解答候補",
+      "reason": "第44・45・45条の2・47条の2の見出しと本文に一致する。"
+    },
+    "4": {
+      "value": "不名誉／責務／公益／義務／資質",
+      "verdict": "不適切な解答候補",
+      "reason": "イの義務とエの責務が逆である。"
+    },
+    "5": {
+      "value": "不利益／義務／安全／責務／能力",
+      "verdict": "不適切な解答候補",
+      "reason": "ア・ウ・オが条文と異なる。"
+    }
+  },
+  "figures": "図なし。組合せ表または個数選択肢は原典画像で確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/aptitude/page_001.png",
+    "extracted/pages/H26/aptitude/page_002.png"
+  ],
+  "question_id": "H26-REG-APT-01",
+  "source_file": "sources/H26/aptitude.pdf",
+  "source_page": "1",
+  "source_sha256": "5691e940fce3cbf9423bc99a96803c1c6273563931b76b91bdb9f2b67e6233d3",
+  "raw_text_sha256": "28c14722bf7b82596f5d4ff04838cb654c27373c071dee6cc7c01d20d68ca4cc",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

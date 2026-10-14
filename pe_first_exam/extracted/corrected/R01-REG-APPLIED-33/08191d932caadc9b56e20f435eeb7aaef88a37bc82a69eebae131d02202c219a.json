@@ -1,0 +1,45 @@
+{
+  "stem": "密度検層の放射線と粒子密度・かさ密度を区別する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "速度検層は弾性波、電極検層は比抵抗、ガンマ密度検層は校正かさ密度である。"
+  },
+  "choices": {
+    "1": {
+      "value": "VSPで孔内に振源又は受振器を設置し反射波を測る",
+      "verdict": "条件付きで適切",
+      "reason": "通常の地表振源・孔内受振と逆VSPなどの構成を区別する。孔内深度と反射記録を結び地表反射探査の解釈を助ける。"
+    },
+    "2": {
+      "value": "ダウンホールは孔内水の有無が問題とならない",
+      "verdict": "条件付きで適切",
+      "reason": "孔壁結合が確保できれば水位より上も測定できる。ただし孔壁崩壊や受振器の結合条件は測定品質へ影響する。"
+    },
+    "3": {
+      "value": "ベータ線の散乱で地層の粒子密度を測る",
+      "verdict": "不適切",
+      "reason": "線種はガンマ線、主観測は電子密度から校正するかさ密度である。二つの観測対象を取り違える。"
+    },
+    "4": {
+      "value": "電極検層は孔内と地表の電極で比抵抗を測り裸孔を基本とする",
+      "verdict": "条件付きで適切",
+      "reason": "通常のnormal電極検層では導電孔内流体を介して地層へ電流を流す。金属ケーシングの影響を避ける。誘導検層等の別方式へこの条件をそのまま一般化しない。"
+    },
+    "5": {
+      "value": "サスペンションで孔内振源と複数受振器を用いる",
+      "verdict": "適切",
+      "reason": "孔内ゾンデの起振と受振点間の走時差により、孔軸に沿う地盤の区間速度を求める。水中のS波伝播を直接測るという意味ではない。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "水の有無だけでdownhole可否は決まらないが、全孔内条件の非依存性を保証しない。VSPと裸孔は方式を特定する。",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_012.png"
+  ],
+  "question_id": "R01-REG-APPLIED-33",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "19ed5f24dbb9ca911aa8ea7d987b102b4f9fd13355c6cc999d7de4eb568a2c4a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

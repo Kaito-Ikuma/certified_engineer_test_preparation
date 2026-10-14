@@ -1,0 +1,46 @@
+{
+  "stem": "単語出現回数のベクトルを長さで正規化し、文書Aへ最も近い文書を選ぶ。",
+  "conditions": {
+    "定義": "\\(d(X,Y)=1-\\frac{X\\cdot Y}{|X||Y|}\\)",
+    "全18セル": "A(7,3,2)、B(2,3,0)、C(70,3,2)、D(21,9,6)、E(1,2,3)、F(7,30,20)。",
+    "対象": "3単語だけの頻度ベクトル。原典は非零。"
+  },
+  "choices": {
+    "1": {
+      "value": "B=(2,3,0)",
+      "verdict": "不一致",
+      "reason": "原典の定義による距離は0.189860。非零のAと同じ向きではなく、Dの距離0より大きい。"
+    },
+    "2": {
+      "value": "C=(70,3,2)",
+      "verdict": "不一致",
+      "reason": "原典の定義による距離は0.088622。非零のAと同じ向きではなく、Dの距離0より大きい。"
+    },
+    "3": {
+      "value": "D=(21,9,6)",
+      "verdict": "適切",
+      "reason": "原典の定義による距離は0.000000。D=3Aで正の比例となり、内積/ノルム積が1になる。"
+    },
+    "4": {
+      "value": "E=(1,2,3)",
+      "verdict": "不一致",
+      "reason": "原典の定義による距離は0.355098。非零のAと同じ向きではなく、Dの距離0より大きい。"
+    },
+    "5": {
+      "value": "F=(7,30,20)",
+      "verdict": "不一致",
+      "reason": "原典の定義による距離は0.381056。非零のAと同じ向きではなく、Dの距離0より大きい。"
+    }
+  },
+  "figures": "3単語×6文書の18セル、内積・ノルム・距離式と文書B〜Fの5肢を画像照合。OCRの欠落・列ずれを確定表へ混ぜない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_009.png"
+  ],
+  "question_id": "R01-REG-BASIC-2-3",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "9",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "7a8270a1ae4e57e4c009c4da8d582b4dc61aa81f76e953768dad11c65d70946c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

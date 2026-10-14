@@ -1,0 +1,45 @@
+{
+  "stem": "ベンゼンの非局在π電子と単置換位置の対称性を判定する。",
+  "conditions": {
+    "判断対象": "ベンゼンの非局在π電子と単置換位置の対称性を判定する。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "通常アルケンより安定・反応しにくい",
+      "verdict": "選ばない候補",
+      "reason": "芳香族性により通常の付加反応へ抵抗し、置換で環共役を回復する。全反応速度を無条件比較しない。"
+    },
+    "2": {
+      "value": "C-C結合にπ電子が関与",
+      "verdict": "選ばない候補",
+      "reason": "各sp2炭素のp軌道から環全体へ6π電子を持つ。"
+    },
+    "3": {
+      "value": "全C-C結合は単/二重の中間",
+      "verdict": "選ばない候補",
+      "reason": "非局在π電子により等価な結合となる。"
+    },
+    "4": {
+      "value": "モノブロモベンゼンに位置異性体",
+      "verdict": "選ぶ候補",
+      "reason": "六位置が対称で等価なので単置換の位置異性体は一種のみ。"
+    },
+    "5": {
+      "value": "C6H6の六炭素環",
+      "verdict": "選ばない候補",
+      "reason": "各炭素がHを一つ持つ平面環。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_006.png"
+  ],
+  "question_id": "R04-REG-APPLIED-18",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "b49c8ae755c6e82a2d1b37436b8820000b46024d23358229d8fa78088b47271b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

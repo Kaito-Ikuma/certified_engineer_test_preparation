@@ -1,0 +1,37 @@
+{
+  "status": "committed",
+  "time": "2026-10-13T12:37:57+09:00",
+  "paths": [
+    "data/batch_changes/S7_052_engineering_revision2_H23-REG-APT-13_revision.json",
+    "data/batch_changes/S7_052_engineering_revision2_H26-REG-APT-13_revision.json",
+    "data/batch_changes/S7_052_engineering_revision2_R01-REG-APT-08_revision.json",
+    "data/questions.csv",
+    "data/verification_records.csv",
+    "data/question_topics.csv",
+    "data/question_evaluations.csv",
+    "data/batch_changes/S7_052_engineering_revision2.csv",
+    "extracted/logs/batches/S7_052_engineering_revision2.json"
+  ],
+  "existed": {
+    "data/batch_changes/S7_052_engineering_revision2_H23-REG-APT-13_revision.json": false,
+    "data/batch_changes/S7_052_engineering_revision2_H26-REG-APT-13_revision.json": false,
+    "data/batch_changes/S7_052_engineering_revision2_R01-REG-APT-08_revision.json": false,
+    "data/questions.csv": true,
+    "data/verification_records.csv": true,
+    "data/question_topics.csv": true,
+    "data/question_evaluations.csv": true,
+    "data/batch_changes/S7_052_engineering_revision2.csv": false,
+    "extracted/logs/batches/S7_052_engineering_revision2.json": false
+  },
+  "sha256": {
+    "data/batch_changes/S7_052_engineering_revision2_H23-REG-APT-13_revision.json": "3189fedb988f5e5a41aaaef6bd0ee9991267a9d95161fb2b62cf564cb6b06f1e",
+    "data/batch_changes/S7_052_engineering_revision2_H26-REG-APT-13_revision.json": "0134d62eb1b8460a22a64487b92d59e7941164fd20427ae8e47f23444aa6cd5c",
+    "data/batch_changes/S7_052_engineering_revision2_R01-REG-APT-08_revision.json": "ffe9f5a7832b82c5f4214ac2c5d5cc3f3e8b4ec8c74e44a5c85d7da23847620a",
+    "data/questions.csv": "437845971045a9a964e30c15d3a6f13a791910d3ff9366d3cb745e9df7e8f5ae",
+    "data/verification_records.csv": "fb16c72d50c434a4663237eef6e92272d3b4c70d0685fd0f911ef0d958265c8f",
+    "data/question_topics.csv": "34103d580a72a4ff4803fd047267bf66b3a88c22337cb0c745b1a027059fe8fa",
+    "data/question_evaluations.csv": "6d265e8a473a474bb16add70ffe8021b1d470b071daa8c28455d8963e9495b1f",
+    "data/batch_changes/S7_052_engineering_revision2.csv": "9c45f6cbda9d5f627b31224389eac4b03a04f575da9fc45ddf4540e21c63b74e",
+    "extracted/logs/batches/S7_052_engineering_revision2.json": "b2177a51047d46eac621cf566fa06fcbdbb627be055e43825f54bfd2d7a00fbe"
+  }
+}

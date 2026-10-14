@@ -1,0 +1,45 @@
+{
+  "stem": "希ガスの通常状態・外殻例外と放電を比較する。",
+  "conditions": {
+    "判断対象": "希ガスの通常状態・外殻例外と放電を比較する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "空気中は化合物",
+      "verdict": "選ばない候補",
+      "reason": "通常の空気では単体原子で存在。"
+    },
+    "2": {
+      "value": "常温常圧で気体と液体",
+      "verdict": "選ばない候補",
+      "reason": "出題範囲のHeからRnは通常気体。"
+    },
+    "3": {
+      "value": "軽いほど低沸点・高反応",
+      "verdict": "選ばない候補",
+      "reason": "沸点傾向はよいが軽いほど反応性に富むは適切でない。"
+    },
+    "4": {
+      "value": "低圧放電で特有色",
+      "verdict": "選ぶ候補",
+      "reason": "励起原子の準位遷移の発光。"
+    },
+    "5": {
+      "value": "全て外殻8電子",
+      "verdict": "選ばない候補",
+      "reason": "Heの1s2は外殻2電子という例外。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_004.png"
+  ],
+  "question_id": "H27-REG-APPLIED-10",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "7181c7cd54438063c12ef872e1e07b70850bfee7b674fcaa1e45d6f0e188445d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

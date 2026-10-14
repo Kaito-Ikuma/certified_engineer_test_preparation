@@ -1,0 +1,45 @@
+{
+  "stem": "第7次計画は技術の選択肢を限定しない。",
+  "conditions": {
+    "原典": "全五肢と否定方向・組合せ表を画像確認。",
+    "資料時点": "令和7年度の指定資料・統計年を保持し、後年値に置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "データセンター等で電力需要増の可能性",
+      "verdict": "条件内で適切",
+      "reason": "効率改善を見込んでも需要を押し上げる要因がある。"
+    },
+    "2": {
+      "value": "三つのEの最適バランスが基本的視点",
+      "verdict": "条件内で適切",
+      "reason": "安全性Sを大前提に3Eのバランスを追求する。原典の三つのEだけの短縮を完全定義としない。"
+    },
+    "3": {
+      "value": "2035/2040に2013比60%/73%削減",
+      "verdict": "条件内で適切",
+      "reason": "目標の基準年は2013年度。前年度比ではない。"
+    },
+    "4": {
+      "value": "利用技術を選別し選択肢を限定",
+      "verdict": "不適切・選択対象",
+      "reason": "不確実性に対応し使える技術の選択肢を幅広く追求する方向と逆で不適切。"
+    },
+    "5": {
+      "value": "脱炭素投資を経済成長へつなげる",
+      "verdict": "条件内で適切",
+      "reason": "供給構造転換と産業投資・成長を一体で扱う。"
+    }
+  },
+  "figures": "文章五肢を独自要約。",
+  "ambiguity": "2のS省略は不完全な要約として注意。計画本文と目標の各原段落全体を査読し、単に安全性を不要とする文へ読み替えない。",
+  "evidence": [
+    "extracted/pages/R07/basic/page_017.png"
+  ],
+  "question_id": "R07-REG-BASIC-5-3",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "8da8a6b740316844c0eaf72860cb4fc05c95f2a2920a400548c2bc2ab5eb718d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

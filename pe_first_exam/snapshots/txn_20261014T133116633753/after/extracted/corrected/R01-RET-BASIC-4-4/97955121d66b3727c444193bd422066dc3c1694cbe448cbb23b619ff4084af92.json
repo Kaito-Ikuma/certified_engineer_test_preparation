@@ -1,0 +1,44 @@
+{
+  "stem": "材料の用途と構成元素を対応させる。",
+  "conditions": {
+    "列順": "Liイオン二次電池正極 / 光ファイバー / ジュラルミン / 永久磁石。"
+  },
+  "choices": {
+    "1": {
+      "value": "Co Si Cu Zn",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Co Si Cu Fe と異なる。"
+    },
+    "2": {
+      "value": "C Zn Fe Cu",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Co Si Cu Fe と異なる。"
+    },
+    "3": {
+      "value": "C Zn Fe Si",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Co Si Cu Fe と異なる。"
+    },
+    "4": {
+      "value": "Co Si Cu Fe",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "5": {
+      "value": "Co Cu Si Fe",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Co Si Cu Fe と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "材料の代表例と候補の対応。Coを含まないLi正極、プラスチック光ファイバー、Feを必須としない磁石などの例外を排除しない。",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_015.png"
+  ],
+  "question_id": "R01-RET-BASIC-4-4",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "15",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "a8ac6413205a86a39f991716e1682001d42b6c1fc8a35540819974bf3badb15f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

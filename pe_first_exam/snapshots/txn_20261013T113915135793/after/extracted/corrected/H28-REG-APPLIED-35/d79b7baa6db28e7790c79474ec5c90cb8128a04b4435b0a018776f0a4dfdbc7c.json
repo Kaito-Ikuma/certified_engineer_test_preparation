@@ -1,0 +1,45 @@
+{
+  "stem": "火山ガス・気候影響・火砕流・泥流・津波を比較する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "火山ガス・気候影響・火砕流・泥流・津波を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "高い噴煙と灰による世界冷却",
+      "verdict": "条件・解釈を留保",
+      "reason": "高い噴煙と日射遮蔽はあり得るが、長距離・長期間の全球冷却は主にSO2由来の硫酸エアロゾル。火山灰だけの説明を一般化しない。"
+    },
+    "2": {
+      "value": "大部分が有害な酸性ガス",
+      "verdict": "不適切",
+      "reason": "量の大部分は通常水蒸気。少量の有害ガスの危険性と量の割合を混同している。"
+    },
+    "3": {
+      "value": "高温ガスと粒子の火砕流",
+      "verdict": "代表的条件で適切",
+      "reason": "ガスと火砕粒子の混合流が高速に移動する。"
+    },
+    "4": {
+      "value": "融雪・湖水等を取り込む火山泥流",
+      "verdict": "代表的条件で適切",
+      "reason": "水と火山砕屑物が混ざり、土石流状に流下する。噴火と同時以外の降雨でも発生し得る。"
+    },
+    "5": {
+      "value": "火山島噴火や海への岩屑で津波",
+      "verdict": "代表的条件で適切",
+      "reason": "水塊の急激な変位により津波を起こす場合がある。必ず発生するという全称ではない。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "公式2を保持。肢1の全球冷却を大量火山灰へ帰す説明には、灰の短期影響と硫酸エアロゾルの長期影響の区別が必要。噴煙20–40kmも代表範囲。",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_014.png"
+  ],
+  "question_id": "H28-REG-APPLIED-35",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "14",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "05d9ff3c8d4076a9bbc4e73f3aa84fa38c4be3d5c59fca6b77afecae6c422b4f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

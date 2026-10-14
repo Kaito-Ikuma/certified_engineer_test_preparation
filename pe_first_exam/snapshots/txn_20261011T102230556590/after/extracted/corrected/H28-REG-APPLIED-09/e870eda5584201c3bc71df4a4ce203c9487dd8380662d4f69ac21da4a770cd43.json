@@ -1,0 +1,47 @@
+{
+  "stem": "半減期と経過時間の比から残存する親核種の割合を求める。",
+  "conditions": {
+    "方向": "最も近い値。",
+    "半減期": "8日",
+    "経過時間": "30日",
+    "対象": "元の放射性核種の残存量、生成等なし。"
+  },
+  "choices": {
+    "1": {
+      "value": ".20",
+      "verdict": "不一致",
+      "reason": "N/N0=2^(-t/T)で得る0.0743254と比較すると.20は大きすぎる。 適切肢より差が大きい。"
+    },
+    "2": {
+      "value": ".15",
+      "verdict": "不一致",
+      "reason": "N/N0=2^(-t/T)で得る0.0743254と比較すると.15は大きすぎる。 適切肢より差が大きい。"
+    },
+    "3": {
+      "value": ".07",
+      "verdict": "適切",
+      "reason": "計算値へ5候補中で最も近い。"
+    },
+    "4": {
+      "value": ".05",
+      "verdict": "不一致",
+      "reason": "N/N0=2^(-t/T)で得る0.0743254と比較すると.05は小さすぎる。 適切肢より差が大きい。"
+    },
+    "5": {
+      "value": ".03",
+      "verdict": "不一致",
+      "reason": "N/N0=2^(-t/T)で得る0.0743254と比較すると.03は小さすぎる。 適切肢より差が大きい。"
+    }
+  },
+  "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_004.png"
+  ],
+  "question_id": "H28-REG-APPLIED-09",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "a1139c3a16cbe0cd116f419d1de992e20990cbfc7ac9d76a82f80c56d24c40f8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

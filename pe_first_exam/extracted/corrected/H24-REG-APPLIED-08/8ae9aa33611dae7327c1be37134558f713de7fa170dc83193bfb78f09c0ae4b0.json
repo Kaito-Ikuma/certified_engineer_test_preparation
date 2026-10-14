@@ -1,0 +1,47 @@
+{
+  "stem": "内部エネルギーの要素と単原子・二原子分子の自由度を、4つの空欄へ対応させる。",
+  "conditions": {
+    "A": "分子間の力に由来するエネルギー。",
+    "B": "分子の熱運動によるエネルギー。",
+    "C": "二原子分子ではBに加わる分子内自由度。",
+    "D": "同温での分子1個当たりの二原子分子の平均内部エネルギーを、単原子分子と比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "A運動／B振動・回転／C位置／D小さい",
+      "verdict": "条件に不一致",
+      "reason": "Aは分子間相互作用の位置エネルギーであり、Bは並進の運動エネルギーである。A〜Cの対応が違う。"
+    },
+    "2": {
+      "value": "A運動／B振動・回転／C位置／D大きい",
+      "verdict": "条件に不一致",
+      "reason": "大きいというDだけでは足りず、A〜Cの対応が違う。"
+    },
+    "3": {
+      "value": "A位置／B運動／C振動・回転／D大きい",
+      "verdict": "条件に一致",
+      "reason": "A位置、B運動、C振動・回転、D大きいという対応に一致する。"
+    },
+    "4": {
+      "value": "A位置／B運動／C振動・回転／D小さい",
+      "verdict": "条件に不一致",
+      "reason": "二原子分子の回転等が熱的に励起される条件では平均の熱エネルギーが加わる。小さいは逆である。"
+    },
+    "5": {
+      "value": "A運動／B位置／C振動・回転／D大きい",
+      "verdict": "条件に不一致",
+      "reason": "相互作用の位置エネルギーと並進の運動エネルギーを逆にしている。"
+    }
+  },
+  "figures": "正誤方向、全条件・数値・単位、候補5肢を原典画像で確認。図なし。組合せ問題では表の全欄を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_002.png"
+  ],
+  "question_id": "H24-REG-APPLIED-08",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "ea33f1c898378a6e868964bf34167db7d6d7167db71bd560a39b9c126565b9d1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

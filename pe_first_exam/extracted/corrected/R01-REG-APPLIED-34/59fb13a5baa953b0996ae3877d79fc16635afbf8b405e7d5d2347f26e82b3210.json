@@ -1,0 +1,45 @@
+{
+  "stem": "静補正・深度走時・CMP・リジッドブーム・下方接続を区別する。",
+  "conditions": {
+    "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+    "前提": "原典の4はリジットブームシステム、5は下方接続と表記される。下方接続を重力・磁気にしか使わない手法と限定しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "静補正",
+      "verdict": "適切",
+      "reason": "地形や表層低速度層などによる走時ずれを一定の時間シフトとしてそろえる処理である。重力の地形・Bouguer補正と観測量が異なる。"
+    },
+    "2": {
+      "value": "深度走時",
+      "verdict": "適切",
+      "reason": "速度モデルと対応する深度での伝播時間を結ぶ量であり、地震探査の時間・深度対応に用いる。"
+    },
+    "3": {
+      "value": "CMP重合",
+      "verdict": "適切",
+      "reason": "共通中点の反射記録を集め、走時差を補正して重ねる反射法の処理である。強い傾斜や不均質では中点が同じ反射点を意味するとは限らない。"
+    },
+    "4": {
+      "value": "リジットブームシステム",
+      "verdict": "不適切",
+      "reason": "原典表記を保存する。rigid-boom EMIの一次論文では一次磁場と導体の二次磁場を送受信コイルで扱う電磁計測として記述される。地震波の走時処理ではない。"
+    },
+    "5": {
+      "value": "下方接続",
+      "verdict": "適切",
+      "reason": "地震波動場を深部へ外挿してmigration画像を得る方法に関係する。重力・磁気のポテンシャル場にも下方接続があるため、名前の共通性だけで地震分野から除外しない。"
+    }
+  },
+  "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+  "ambiguity": "初回独立5対公式4を保持し資料確認後の訂正4を別記する。rigid-boom論文は検索収録の当該原理を確認し、PDF取得は403及びHTML challengeで未達である。日本語表記と装置体系の最終照合を査読対象とする。",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_012.png"
+  ],
+  "question_id": "R01-REG-APPLIED-34",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "b87d4e86bee80a7a9c844c382e1ec20c27ae36090b491bb5268e13a367cecb25",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

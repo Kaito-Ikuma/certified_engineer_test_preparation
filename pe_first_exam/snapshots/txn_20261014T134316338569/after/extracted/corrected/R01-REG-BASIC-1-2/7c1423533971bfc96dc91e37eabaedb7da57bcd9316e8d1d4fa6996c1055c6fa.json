@@ -1,0 +1,47 @@
+{
+  "stem": "定常需要の経済的発注量。",
+  "conditions": {
+    "k": "20000円/回。",
+    "d": "1350単位/年。",
+    "h": "15000円/(単位・年)。",
+    "条件": "欠品なし、需要一定、即時一括補充、0<q≤d。"
+  },
+  "choices": {
+    "1": {
+      "value": "50",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "2": {
+      "value": "60",
+      "verdict": "条件内で適切",
+      "reason": "解法の条件と結果を照合する。 計算結果と一致。"
+    },
+    "3": {
+      "value": "70",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "4": {
+      "value": "80",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "5": {
+      "value": "90",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_002.png"
+  ],
+  "question_id": "R01-REG-BASIC-1-2",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "2",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "ab5e2c1299c0ab18e5005bfbf6d9f6ae94b56be7b3fefa93047a4021d0f909d8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

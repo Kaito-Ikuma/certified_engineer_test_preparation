@@ -1,0 +1,46 @@
+{
+  "stem": "塩酸・酢酸・フェノールの酸性度。",
+  "conditions": {
+    "a": "フェノール。",
+    "b": "酢酸。",
+    "c": "塩酸。"
+  },
+  "choices": {
+    "1": {
+      "value": "a b c",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 c b a と異なる。"
+    },
+    "2": {
+      "value": "b a c",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 c b a と異なる。"
+    },
+    "3": {
+      "value": "c b a",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "b c a",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 c b a と異なる。"
+    },
+    "5": {
+      "value": "c a b",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 c b a と異なる。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_014.png"
+  ],
+  "question_id": "R01-RET-BASIC-4-2",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "632d6640aecbbd914f987a0ce36a5d0ff9e78bdc70271a39ee4e34539be8d307",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

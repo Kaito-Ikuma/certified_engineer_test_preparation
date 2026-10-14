@@ -1,0 +1,45 @@
+{
+  "stem": "レアメタルの元素と機器用途を対応させる。",
+  "conditions": {
+    "判断対象": "レアメタルの元素と機器用途を対応させる。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "青LEDにAs",
+      "verdict": "選ぶ候補",
+      "reason": "代表的青LEDはGaN/InGaN系で、Asの対応が不適切。"
+    },
+    "2": {
+      "value": "透明電極にIn",
+      "verdict": "選ばない候補",
+      "reason": "ITO等の透明導電膜のIn。"
+    },
+    "3": {
+      "value": "日本EEZに熱水/Coクラスト/RE泥",
+      "verdict": "選ばない候補",
+      "reason": "存在確認と経済的採掘・埋蔵量評価は別。"
+    },
+    "4": {
+      "value": "HV/EVモータにNd",
+      "verdict": "選ばない候補",
+      "reason": "Nd永久磁石モータの代表用途。全モータ方式に不可欠ではない。"
+    },
+    "5": {
+      "value": "排ガス浄化触媒にPt",
+      "verdict": "選ばない候補",
+      "reason": "白金族金属の代表的触媒用途。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "機器は代表方式・出題時用途を扱う。全車両モータNd不可欠の全称、海洋鉱床の経済性・数量は未確定。",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_004.png"
+  ],
+  "question_id": "R04-REG-APPLIED-13",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "02981d0e20f409e89a957283357bf7169aef2f2b13dc6273de23bcd5091f2ae1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

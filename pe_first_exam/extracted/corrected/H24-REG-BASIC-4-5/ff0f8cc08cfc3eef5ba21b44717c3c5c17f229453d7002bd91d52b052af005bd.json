@@ -1,0 +1,45 @@
+{
+  "stem": "DNAの熱変性と再会合、吸収スペクトル、GC含量と融解温度を4空欄へ対応させる。",
+  "conditions": {
+    "空欄": "ア〜エ。熱又は強アルカリによる変性、ゆっくり冷却。",
+    "比較": "GC含量と融解温度は他条件を揃える。"
+  },
+  "choices": {
+    "1": {
+      "value": "水素結合／紫外線／ウラシル／メルティング",
+      "verdict": "不適切",
+      "reason": "鎖間会合と紫外は合うが、DNAのGの相手はCで、冷却再会合はアニーリングである。"
+    },
+    "2": {
+      "value": "共有結合／可視光線／シトシン／メルティング",
+      "verdict": "不適切",
+      "reason": "通常の熱変性は主鎖の共有結合切断でなく、吸収は主に紫外であり、再会合の名称も違う。"
+    },
+    "3": {
+      "value": "水素結合／紫外線／シトシン／アニーリング",
+      "verdict": "最適",
+      "reason": "鎖間会合、紫外増色、GC、冷却再会合の4つが一致する。"
+    },
+    "4": {
+      "value": "共有結合／紫外線／ウラシル／アニーリング",
+      "verdict": "不適切",
+      "reason": "二重鎖を支える塩基間水素結合を主鎖共有結合と取り違え、Gの相手も違う。"
+    },
+    "5": {
+      "value": "水素結合／可視光線／シトシン／メルティング",
+      "verdict": "不適切",
+      "reason": "塩基間とCは合うが、測るのは紫外、再会合はアニーリング。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。空欄と5行の候補表を個別に照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/basic/page_014.png"
+  ],
+  "question_id": "H24-REG-BASIC-4-5",
+  "source_file": "sources/H24/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+  "raw_text_sha256": "a89c4853d9f3c49d0d05e35d60341b43911de73738d24ff0b4ccf49337e7a6b1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

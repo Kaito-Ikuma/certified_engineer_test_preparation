@@ -1,0 +1,45 @@
+{
+  "stem": "SI組立単位と動粘度の非SI単位の換算を比較する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(1\\mathrm C=1\\mathrm{A\\,s}\\)",
+      "verdict": "適切",
+      "reason": "電荷Q=ItよりC=Asである。"
+    },
+    "2": {
+      "value": "\\(1\\mathrm J=1\\mathrm{kg\\,m^2s^{-2}}\\)",
+      "verdict": "適切",
+      "reason": "仕事は力と移動距離の積でJ=\\(\\mathrm{kg\\,m^2s^{-2}}\\)である。"
+    },
+    "3": {
+      "value": "\\(1\\mathrm{Pa}=1\\mathrm{kg\\,m^{-1}s^{-2}}\\)",
+      "verdict": "適切",
+      "reason": "圧力p=F/SからPa=\\(\\mathrm{kg\\,m^{-1}s^{-2}}\\)である。"
+    },
+    "4": {
+      "value": "\\(1\\mathrm{St}=10^{-4}\\mathrm{m^2s^{-1}}\\)",
+      "verdict": "適切",
+      "reason": "Stは動粘度cm²/s。cm=10^-2mを二乗するので10^-4m²/sである。SI基本単位そのものとは呼ばない。"
+    },
+    "5": {
+      "value": "\\(1\\mathrm{\\Omega}=1\\mathrm{m^2kg\\,s^{-3}A^{-1}}\\)",
+      "verdict": "不適切",
+      "reason": "抵抗R=V/IからΩ=\\(\\mathrm{kg\\,m^2s^{-3}A^{-2}}\\)である。原典はA^-1であり抵抗に必要なA^-2を欠く。"
+    }
+  },
+  "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_005.png"
+  ],
+  "question_id": "R05-REG-APPLIED-13",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "3437595cbf87d42af999fb4475ca8d4f0e1053ec713866314cf75ed33dab240f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

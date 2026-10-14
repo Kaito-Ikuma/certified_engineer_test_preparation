@@ -1,0 +1,45 @@
+{
+  "stem": "反射の分解能を走時切片と区別する。",
+  "conditions": {
+    "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+    "前提": "薄層の上下面の分離、横方向の反射寄与範囲、入力waveletを区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "インターセプトタイム",
+      "verdict": "不適切",
+      "reason": "屈折波の走時直線を距離ゼロへ外挿した切片である。反射分解能の直接的な基準と異なる。"
+    },
+    "2": {
+      "value": "レイリー基準",
+      "verdict": "適切",
+      "reason": "近接する二つの応答を分離できるかという分解能の基準に関係する。表面波としてのRayleighと用語の役割を分ける。"
+    },
+    "3": {
+      "value": "ウェーブレット",
+      "verdict": "適切",
+      "reason": "反射の応答形状と有効帯域が近いイベントを分離できる程度に影響する。"
+    },
+    "4": {
+      "value": "リッカー基準",
+      "verdict": "適切",
+      "reason": "反射waveletの重なりを用いる分解能の基準に関係する。具体的閾値を基準名から一律数値へ補わない。"
+    },
+    "5": {
+      "value": "フレネルゾーン",
+      "verdict": "適切",
+      "reason": "同程度の位相で反射へ寄与する面上の範囲であり、横方向の分解能に関係する。migration前後と開口の条件を区別する。"
+    }
+  },
+  "figures": "図なし。文章又は用語の五候補を画像照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_012.png"
+  ],
+  "question_id": "R03-REG-APPLIED-33",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "b949afc8b2c51e614fec7633b720f016ec74de4ffca0e82ab586f014f457bc91",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

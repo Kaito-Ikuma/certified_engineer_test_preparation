@@ -1,0 +1,164 @@
+[
+  {
+    "question_id": "H23-REG-APPLIED-25",
+    "source_file": "sources/H23/17_applied_science.pdf",
+    "source_page": "8",
+    "source_page_end": "8",
+    "source_year_directory": "H23",
+    "question_text_file": "extracted/questions/H23-REG-APPLIED-25.txt",
+    "discipline_id": "geo_sediment"
+  },
+  {
+    "question_id": "H23-REG-APPLIED-35",
+    "source_file": "sources/H23/17_applied_science.pdf",
+    "source_page": "11",
+    "source_page_end": "11",
+    "source_year_directory": "H23",
+    "question_text_file": "extracted/questions/H23-REG-APPLIED-35.txt",
+    "discipline_id": "geo_sediment"
+  },
+  {
+    "question_id": "H24-REG-APPLIED-29",
+    "source_file": "sources/H24/17_applied_science.pdf",
+    "source_page": "9",
+    "source_page_end": "9",
+    "source_year_directory": "H24",
+    "question_text_file": "extracted/questions/H24-REG-APPLIED-29.txt",
+    "discipline_id": "geo_sediment"
+  },
+  {
+    "question_id": "H28-REG-APPLIED-34",
+    "source_file": "sources/H28/17_applied_science.pdf",
+    "source_page": "13",
+    "source_page_end": "13",
+    "source_year_directory": "H28",
+    "question_text_file": "extracted/questions/H28-REG-APPLIED-34.txt",
+    "discipline_id": "geo_sediment"
+  },
+  {
+    "question_id": "H29-REG-APPLIED-25",
+    "source_file": "sources/H29/17_applied_science.pdf",
+    "source_page": "8",
+    "source_page_end": "8",
+    "source_year_directory": "H29",
+    "question_text_file": "extracted/questions/H29-REG-APPLIED-25.txt",
+    "discipline_id": "geo_sediment"
+  },
+  {
+    "question_id": "H30-REG-APPLIED-25",
+    "source_file": "sources/H30/17_applied_science.pdf",
+    "source_page": "8",
+    "source_page_end": "8",
+    "source_year_directory": "H30",
+    "question_text_file": "extracted/questions/H30-REG-APPLIED-25.txt",
+    "discipline_id": "geo_sediment"
+  },
+  {
+    "question_id": "R01-REG-APPLIED-25",
+    "source_file": "sources/R01/17_applied_science.pdf",
+    "source_page": "9",
+    "source_page_end": "9",
+    "source_year_directory": "R01",
+    "question_text_file": "extracted/questions/R01-REG-APPLIED-25.txt",
+    "discipline_id": "geo_sediment"
+  },
+  {
+    "question_id": "R01-REG-APPLIED-28",
+    "source_file": "sources/R01/17_applied_science.pdf",
+    "source_page": "10",
+    "source_page_end": "10",
+    "source_year_directory": "R01",
+    "question_text_file": "extracted/questions/R01-REG-APPLIED-28.txt",
+    "discipline_id": "geo_sediment"
+  },
+  {
+    "question_id": "R02-REG-APPLIED-29",
+    "source_file": "sources/R02/17_applied_science.pdf",
+    "source_page": "10",
+    "source_page_end": "10",
+    "source_year_directory": "R02",
+    "question_text_file": "extracted/questions/R02-REG-APPLIED-29.txt",
+    "discipline_id": "geo_stratigraphy"
+  },
+  {
+    "question_id": "R02-REG-APPLIED-31",
+    "source_file": "sources/R02/17_applied_science.pdf",
+    "source_page": "11",
+    "source_page_end": "11",
+    "source_year_directory": "R02",
+    "question_text_file": "extracted/questions/R02-REG-APPLIED-31.txt",
+    "discipline_id": "geo_stratigraphy"
+  },
+  {
+    "question_id": "R03-REG-APPLIED-30",
+    "source_file": "sources/R03/17_applied_science.pdf",
+    "source_page": "11",
+    "source_page_end": "11",
+    "source_year_directory": "R03",
+    "question_text_file": "extracted/questions/R03-REG-APPLIED-30.txt",
+    "discipline_id": "geo_sediment"
+  },
+  {
+    "question_id": "R04-REG-APPLIED-28",
+    "source_file": "sources/R04/17_applied_science.pdf",
+    "source_page": "10",
+    "source_page_end": "10",
+    "source_year_directory": "R04",
+    "question_text_file": "extracted/questions/R04-REG-APPLIED-28.txt",
+    "discipline_id": "geo_sediment"
+  },
+  {
+    "question_id": "R05-REG-APPLIED-30",
+    "source_file": "sources/R05/17_applied_science.pdf",
+    "source_page": "11",
+    "source_page_end": "11",
+    "source_year_directory": "R05",
+    "question_text_file": "extracted/questions/R05-REG-APPLIED-30.txt",
+    "discipline_id": "geo_sediment"
+  },
+  {
+    "question_id": "R05-REG-APPLIED-31",
+    "source_file": "sources/R05/17_applied_science.pdf",
+    "source_page": "11",
+    "source_page_end": "11",
+    "source_year_directory": "R05",
+    "question_text_file": "extracted/questions/R05-REG-APPLIED-31.txt",
+    "discipline_id": "geo_sediment"
+  },
+  {
+    "question_id": "R06-REG-APPLIED-30",
+    "source_file": "sources/R06/17_applied_science.pdf",
+    "source_page": "10",
+    "source_page_end": "10",
+    "source_year_directory": "R06",
+    "question_text_file": "extracted/questions/R06-REG-APPLIED-30.txt",
+    "discipline_id": "geo_sediment"
+  },
+  {
+    "question_id": "R06-REG-APPLIED-31",
+    "source_file": "sources/R06/17_applied_science.pdf",
+    "source_page": "10",
+    "source_page_end": "10",
+    "source_year_directory": "R06",
+    "question_text_file": "extracted/questions/R06-REG-APPLIED-31.txt",
+    "discipline_id": "geo_sediment"
+  },
+  {
+    "question_id": "R07-REG-APPLIED-27",
+    "source_file": "sources/R07/17_applied_science.pdf",
+    "source_page": "10",
+    "source_page_end": "10",
+    "source_year_directory": "R07",
+    "question_text_file": "extracted/questions/R07-REG-APPLIED-27.txt",
+    "discipline_id": "geo_sediment"
+  },
+  {
+    "question_id": "R07-REG-APPLIED-28",
+    "source_file": "sources/R07/17_applied_science.pdf",
+    "source_page": "10",
+    "source_page_end": "10",
+    "source_year_directory": "R07",
+    "question_text_file": "extracted/questions/R07-REG-APPLIED-28.txt",
+    "discipline_id": "geo_stratigraphy"
+  }
+]

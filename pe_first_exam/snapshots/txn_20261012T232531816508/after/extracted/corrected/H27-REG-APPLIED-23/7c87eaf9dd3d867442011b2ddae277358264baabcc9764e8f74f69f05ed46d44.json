@@ -1,0 +1,45 @@
+{
+  "stem": "含水比の分母と陸水の移動過程を比較する。",
+  "conditions": {
+    "判断対象": "含水比の分母と陸水の移動過程を比較する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "大気平均滞留8日で河川より短い",
+      "verdict": "選ばない候補",
+      "reason": "約8日は推計条件依存。USGSには大気約10日・河川16–26日例もある。"
+    },
+    "2": {
+      "value": "失水河川は地下へ浸透",
+      "verdict": "選ばない候補",
+      "reason": "河川から帯水層へ水が失われる区間。"
+    },
+    "3": {
+      "value": "含水比は水/湿潤土全体",
+      "verdict": "選ぶ候補",
+      "reason": "通常土質含水比w=Mw/M乾燥であり湿潤全体ではない。"
+    },
+    "4": {
+      "value": "浸透能より降雨強度大ならHorton流",
+      "verdict": "選ばない候補",
+      "reason": "浸透能力を超え余剰が地表へ流れる。"
+    },
+    "5": {
+      "value": "蒸散と蒸発を合わせ蒸発散",
+      "verdict": "選ばない候補",
+      "reason": "植物経由と非植物面の気化を合算。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "大気/河川平均滞留時間は資料・期間・推計の定義に依存。原典8日とUSGS約10日の違いを保持。",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_009.png"
+  ],
+  "question_id": "H27-REG-APPLIED-23",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "35f43b1237097ac8a6cfa6379474106a06fd9a9f5828615ee767e792622c9079",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,623 +1,45 @@
-\subsection{平成23年度 問1-1}
-\label{q:h23-reg-basic-1-1}
+\section{工程管理・PERT}
 
-\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理1頁。
+\subsection{平成26年度 問2-1}
+\label{q:h26-reg-basic-2-1}
 
-\textbf{公式正答：} 2（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成23年度 問1-2}
-\label{q:h23-reg-basic-1-2}
-
-\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理1頁。
-
-\textbf{公式正答：} 4（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成23年度 問1-3}
-\label{q:h23-reg-basic-1-3}
-
-\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理2頁。
-
-\textbf{公式正答：} 3（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成23年度 問1-4}
-\label{q:h23-reg-basic-1-4}
-
-\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理3頁。
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理5頁。
 
 \textbf{公式正答：} 1（single）。
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\paragraph{問題の要旨} 二機械の部品加工を、機械順と部品順の二種類の先行制約でアロー図へ割り当てる。
 
-\subsection{平成23年度 問1-5}
-\label{q:h23-reg-basic-1-5}
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
 
-\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理4頁。
+\noindent\textbf{判断対象：} 機械ごとのp→q→rと部品ごとのA→Bという先行制約。\par
 
-\textbf{公式正答：} 4（single）。
+\noindent\textbf{原典確認：} 図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。\par
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\paragraph{問われる核心} 二機械の部品加工を、機械順と部品順の二種類の先行制約でアロー図へ割り当てる。
 
-\subsection{平成24年度 問1-1}
-\label{q:h24-reg-basic-1-1}
+\paragraph{必要知識} 機械ごとのp→q→rと部品ごとのA→Bという先行制約。
 
-\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理1頁。
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} Apの後にAqとBpが並行し、Aqの後にAr、AqとBpの両方が終わった後にBqを開始する。ArとBqの両方が終わってBrが始まる。よってアAq・イBp・ウAr・エBq、1である。ダミーは時間を要する実加工でなく先行関係を追加する。
 
-\textbf{公式正答：} 4（single）。
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\noindent\textbf{1：適切} Aq,Bp,Ar,Bq。A列とB列の先行順、AqからBqのダミー制約に合う。\par
 
-\subsection{平成24年度 問1-2}
-\label{q:h24-reg-basic-1-2}
+\noindent\textbf{2：不適切} Aq,Bp,Bq,Ar。BqとArを入れ替えたためBpとBqの先行を保証できない。\par
 
-\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理2頁。
+\noindent\textbf{3：不適切} Aq,Ar,Bp,Bq。ApからArがAqと並行になりA機械の順序に反する。\par
 
-\textbf{公式正答：} 5（single）。
+\noindent\textbf{4：不適切} Bp,Aq,Bq,Ar。Aqが終了していなくてもBpの後にBqを開始でき、部品qのA→B順を保証しない。\par
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\noindent\textbf{5：不適切} Bp,Aq,Ar,Bq。Aqが終了していなくてもBpの後にArを開始でき、A機械のq→r順を保証しない。\par
 
-\subsection{平成24年度 問1-3}
-\label{q:h24-reg-basic-1-3}
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
 
-\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理3頁。
+\paragraph{共通理論} \hyperref[theory:discrete:precedence]{第\ref*{theory:discrete:precedence}節}
 
-\textbf{公式正答：} 3（single）。
+\par 難易度 3（校準初稿）、優先度未評価。
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成24年度 問1-4}
-\label{q:h24-reg-basic-1-4}
-
-\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理4頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成24年度 問1-5}
-\label{q:h24-reg-basic-1-5}
-
-\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理4頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成25年度 問1-1}
-\label{q:h25-reg-basic-1-1}
-
-\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理1頁。
-
-\textbf{公式正答：} 3（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成25年度 問1-2}
-\label{q:h25-reg-basic-1-2}
-
-\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理2頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成25年度 問1-3}
-\label{q:h25-reg-basic-1-3}
-
-\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理3頁。
-
-\textbf{公式正答：} 2（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成25年度 問1-4}
-\label{q:h25-reg-basic-1-4}
-
-\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理4頁。
-
-\textbf{公式正答：} 4（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成25年度 問1-5}
-\label{q:h25-reg-basic-1-5}
-
-\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理5頁。
-
-\textbf{公式正答：} 4（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成25年度 問1-6}
-\label{q:h25-reg-basic-1-6}
-
-\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理5頁。
-
-\textbf{公式正答：} 3（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成26年度 問1-1}
-\label{q:h26-reg-basic-1-1}
-
-\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理1頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成26年度 問1-2}
-\label{q:h26-reg-basic-1-2}
-
-\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理1頁。
-
-\textbf{公式正答：} 4（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成26年度 問1-3}
-\label{q:h26-reg-basic-1-3}
-
-\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理2頁。
-
-\textbf{公式正答：} 1（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成26年度 問1-4}
-\label{q:h26-reg-basic-1-4}
-
-\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理3頁。
-
-\textbf{公式正答：} 3（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成26年度 問1-5}
-\label{q:h26-reg-basic-1-5}
-
-\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理3頁。
-
-\textbf{公式正答：} 1（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成26年度 問1-6}
-\label{q:h26-reg-basic-1-6}
-
-\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理4頁。
-
-\textbf{公式正答：} 3（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成27年度 問1-1}
-\label{q:h27-reg-basic-1-1}
-
-\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理1頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成27年度 問1-2}
-\label{q:h27-reg-basic-1-2}
-
-\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理2頁。
-
-\textbf{公式正答：} 4（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成27年度 問1-3}
-\label{q:h27-reg-basic-1-3}
-
-\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理2頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成27年度 問1-4}
-\label{q:h27-reg-basic-1-4}
-
-\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理3頁。
-
-\textbf{公式正答：} 3（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成27年度 問1-5}
-\label{q:h27-reg-basic-1-5}
-
-\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理4頁。
-
-\textbf{公式正答：} 1（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成27年度 問1-6}
-\label{q:h27-reg-basic-1-6}
-
-\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理4頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成28年度 問1-1}
-\label{q:h28-reg-basic-1-1}
-
-\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理1頁。
-
-\textbf{公式正答：} 4（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成28年度 問1-2}
-\label{q:h28-reg-basic-1-2}
-
-\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理2頁。
-
-\textbf{公式正答：} 4（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成28年度 問1-3}
-\label{q:h28-reg-basic-1-3}
-
-\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理3頁。
-
-\textbf{公式正答：} 4（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成28年度 問1-4}
-\label{q:h28-reg-basic-1-4}
-
-\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理4頁。
-
-\textbf{公式正答：} 4（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成28年度 問1-5}
-\label{q:h28-reg-basic-1-5}
-
-\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理5頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成28年度 問1-6}
-\label{q:h28-reg-basic-1-6}
-
-\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理6頁。
-
-\textbf{公式正答：} 1（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成29年度 問1-1}
-\label{q:h29-reg-basic-1-1}
-
-\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理1頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成29年度 問1-2}
-\label{q:h29-reg-basic-1-2}
-
-\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理1頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成29年度 問1-3}
-\label{q:h29-reg-basic-1-3}
-
-\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理2頁。
-
-\textbf{公式正答：} 2（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成29年度 問1-4}
-\label{q:h29-reg-basic-1-4}
-
-\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理3頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成29年度 問1-5}
-\label{q:h29-reg-basic-1-5}
-
-\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理4頁。
-
-\textbf{公式正答：} 1（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成29年度 問1-6}
-\label{q:h29-reg-basic-1-6}
-
-\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理5頁。
-
-\textbf{公式正答：} 2（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成30年度 問1-1}
-\label{q:h30-reg-basic-1-1}
-
-\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理1頁。
-
-\textbf{公式正答：} 3（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成30年度 問1-2}
-\label{q:h30-reg-basic-1-2}
-
-\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理2頁。
-
-\textbf{公式正答：} 1（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成30年度 問1-3}
-\label{q:h30-reg-basic-1-3}
-
-\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理3頁。
-
-\textbf{公式正答：} 2（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成30年度 問1-4}
-\label{q:h30-reg-basic-1-4}
-
-\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理4頁。
-
-\textbf{公式正答：} 2（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成30年度 問1-5}
-\label{q:h30-reg-basic-1-5}
-
-\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理5頁。
-
-\textbf{公式正答：} 3（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{平成30年度 問1-6}
-\label{q:h30-reg-basic-1-6}
-
-\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理5頁。
-
-\textbf{公式正答：} 4（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和元年度 問1-1}
-\label{q:r01-reg-basic-1-1}
-
-\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理1頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和元年度 問1-2}
-\label{q:r01-reg-basic-1-2}
-
-\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理2頁。
-
-\textbf{公式正答：} 2（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和元年度 問1-3}
-\label{q:r01-reg-basic-1-3}
-
-\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理3頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和元年度 問1-4}
-\label{q:r01-reg-basic-1-4}
-
-\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理4頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和元年度 問1-5}
-\label{q:r01-reg-basic-1-5}
-
-\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理5頁。
-
-\textbf{公式正答：} 2（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和元年度 問1-6}
-\label{q:r01-reg-basic-1-6}
-
-\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理6頁。
-
-\textbf{公式正答：} 3（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和元年度再試験 問1-1}
-\label{q:r01-ret-basic-1-1}
-
-\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理1頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和元年度再試験 問1-2}
-\label{q:r01-ret-basic-1-2}
-
-\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理2頁。
-
-\textbf{公式正答：} 3（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和元年度再試験 問1-3}
-\label{q:r01-ret-basic-1-3}
-
-\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理3頁。
-
-\textbf{公式正答：} 1（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和元年度再試験 問1-4}
-\label{q:r01-ret-basic-1-4}
-
-\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理4頁。
-
-\textbf{公式正答：} 2（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和元年度再試験 問1-5}
-\label{q:r01-ret-basic-1-5}
-
-\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理5頁。
-
-\textbf{公式正答：} 2（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和元年度再試験 問1-6}
-\label{q:r01-ret-basic-1-6}
-
-\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理5頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和2年度 問1-1}
-\label{q:r02-reg-basic-1-1}
-
-\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理1頁。
-
-\textbf{公式正答：} 3（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和2年度 問1-2}
-\label{q:r02-reg-basic-1-2}
-
-\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理2頁。
-
-\textbf{公式正答：} 4（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和2年度 問1-3}
-\label{q:r02-reg-basic-1-3}
-
-\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理3頁。
-
-\textbf{公式正答：} 3（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和2年度 問1-4}
-\label{q:r02-reg-basic-1-4}
-
-\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理4頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和2年度 問1-5}
-\label{q:r02-reg-basic-1-5}
-
-\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理5頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和2年度 問1-6}
-\label{q:r02-reg-basic-1-6}
-
-\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理6頁。
-
-\textbf{公式正答：} 3（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和3年度 問1-1}
-\label{q:r03-reg-basic-1-1}
-
-\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理1頁。
-
-\textbf{公式正答：} 4（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和3年度 問1-2}
-\label{q:r03-reg-basic-1-2}
-
-\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理2頁。
-
-\textbf{公式正答：} 2（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和3年度 問1-3}
-\label{q:r03-reg-basic-1-3}
-
-\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理3頁。
-
-\textbf{公式正答：} 2（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和3年度 問1-4}
-\label{q:r03-reg-basic-1-4}
-
-\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理3頁。
-
-\textbf{公式正答：} 3（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和3年度 問1-5}
-\label{q:r03-reg-basic-1-5}
-
-\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理4頁。
-
-\textbf{公式正答：} 5（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\section{第一角・第三角投影の配置と標準化を判断する。}
 
 \subsection{令和3年度 問1-6}
 \label{q:r03-reg-basic-1-6}
@@ -626,151 +48,201 @@
 
 \textbf{公式正答：} 3（single）。
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\paragraph{問題の要旨} 第一角・第三角投影の配置と標準化を判断する。
 
-\subsection{令和4年度 問1-1}
-\label{q:r04-reg-basic-1-1}
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
 
-\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理1頁。
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
 
-\textbf{公式正答：} 1（single）。
+\noindent\textbf{対象：} 第一角・第三角投影の配置と標準化を判断する。\par
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\paragraph{問われる核心} 第一角・第三角投影の配置と標準化を判断する。
 
-\subsection{令和4年度 問1-2}
-\label{q:r04-reg-basic-1-2}
+\paragraph{必要知識} 平面と直立面が作る四象限の角法に第五角はない。
 
-\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理2頁。
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 平面と直立面が作る四象限の角法に第五角はない。第三角では平面図は上、右側面図は右。第一角では平面図は下、左側面図は右で、ウの上が誤り。国家規格JISで共通の製図方式を定め、ISOは国際標準化機構・国際規格でイタリア規格ではない。誤正誤正誤の3。
 
-\textbf{公式正答：} 4（single）。
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\noindent\textbf{1：選ばない候補} 誤正正正誤。第一角の平面図が上というウを肯定。\par
 
-\subsection{令和4年度 問1-3}
-\label{q:r04-reg-basic-1-3}
+\noindent\textbf{2：選ばない候補} 正誤正誤正。第五角とISOイタリアを肯定し第三角・標準化を否定。\par
 
-\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理2頁。
+\noindent\textbf{3：選ぶ候補} 誤正誤正誤。第五角の誤、第三角正、第一角上の誤、国家規格正、ISO国別の誤。\par
 
-\textbf{公式正答：} 3（single）。
+\noindent\textbf{4：選ばない候補} 誤誤正誤正。第三角・国家規格を否定、第一角とISO国別を肯定。\par
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\noindent\textbf{5：選ばない候補} 正誤誤正誤。第五角を肯定、第三角を否定。\par
 
-\subsection{令和4年度 問1-4}
-\label{q:r04-reg-basic-1-4}
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
 
-\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理3頁。
+\paragraph{共通理論} \hyperref[theory:design:drawing]{第\ref*{theory:design:drawing}節}
 
-\textbf{公式正答：} 1（single）。
+\par 参考：\cite{design48_iso}。
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\par 難易度 2（校準初稿）、優先度未評価。
 
-\subsection{令和4年度 問1-5}
-\label{q:r04-reg-basic-1-5}
+\section{数理計画の制約・目的・線形性と近似解法を対応させる。}
 
-\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理3頁。
+\subsection{平成25年度 問1-3}
+\label{q:h25-reg-basic-1-3}
 
-\textbf{公式正答：} 3（single）。
-
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
-
-\subsection{令和4年度 問1-6}
-\label{q:r04-reg-basic-1-6}
-
-\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理4頁。
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理3頁。
 
 \textbf{公式正答：} 2（single）。
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\par\textbf{検討未確定：} 原典の組合せ問題の計算量の全称を厳密な計算量下界とは扱わない。
 
-\subsection{令和5年度 問1-1}
-\label{q:r05-reg-basic-1-1}
+\paragraph{問題の要旨} 数理計画の制約・目的・線形性と近似解法を対応させる。
 
-\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理1頁。
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} 数理計画の制約・目的・線形性と近似解法を対応させる。\par
+
+\paragraph{問われる核心} 数理計画の制約・目的・線形性と近似解法を対応させる。
+
+\paragraph{必要知識} 最適化は実行可能な制約条件下で目的関数を最大化または最小化する。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 最適化は実行可能な制約条件下で目的関数を最大化または最小化する。線形計画では目的と制約は変数の一次結合で表す。計算困難な組合せ問題では近似・ヒューリスティックを用いることがあるので2。ただし全組合せ問題が必ず指数時間を要するという一般命題は証明されず、多項式で解ける部分クラスもある。近似解法も全問題に品質保証があるわけではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} 制約/目的/二次/厳密。線形を二次としている。\par
+
+\noindent\textbf{2：選ぶ候補} 制約/目的/一次/近似。制約下で目的を最大最小、線形式と近似が対応。\par
+
+\noindent\textbf{3：選ばない候補} 制約/調和/二次/近似。尺度を調和関数とし線形を二次とする。\par
+
+\noindent\textbf{4：選ばない候補} 十分/目的/一次/厳密。制約条件を十分条件と取り違える。\par
+
+\noindent\textbf{5：選ばない候補} 十分/調和/二次/厳密。条件・尺度・次数が全て不適合。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:lp]{第\ref*{theory:design:lp}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成28年度 問1-5}
+\label{q:h28-reg-basic-1-5}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理5頁。
 
 \textbf{公式正答：} 5（single）。
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\paragraph{問題の要旨} 台数の資源制約と利益を同時に比較する。
 
-\subsection{令和5年度 問1-2}
-\label{q:r05-reg-basic-1-2}
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
 
-\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理2頁。
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
 
-\textbf{公式正答：} 4（single）。
+\noindent\textbf{対象：} 台数の資源制約と利益を同時に比較する。\par
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\paragraph{問われる核心} 台数の資源制約と利益を同時に比較する。
 
-\subsection{令和5年度 問1-3}
-\label{q:r05-reg-basic-1-3}
+\paragraph{必要知識} x≤5,x+2y≤9,2y≤6、x,y≥0の整数、利益2x+5y万円。
 
-\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理3頁。
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} x≤5,x+2y≤9,2y≤6、x,y≥0の整数、利益2x+5y万円。候補の実行可能性を先に点検し(5,3)/(4,3)を除く。残る利益20,18,21より(3,3)の5。全域でもy=\allowbreak{}0,1,2,3の最大利益は10,15,20,21で確認できる。
 
-\textbf{公式正答：} 3（single）。
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\noindent\textbf{1：選ばない候補} (5,3)。M2=\allowbreak{}11>9で不能。\par
 
-\subsection{令和5年度 問1-4}
-\label{q:r05-reg-basic-1-4}
+\noindent\textbf{2：選ばない候補} (5,2)。M2=\allowbreak{}9で可能、利益20。\par
 
-\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理3頁。
+\noindent\textbf{3：選ばない候補} (4,3)。M2=\allowbreak{}10>9で不能。\par
 
-\textbf{公式正答：} 4（single）。
+\noindent\textbf{4：選ばない候補} (4,2)。M2=\allowbreak{}8で可能、利益18。\par
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\noindent\textbf{5：選ぶ候補} (3,3)。M2=\allowbreak{}9,M3=\allowbreak{}6で可能、利益21が最大。\par
 
-\subsection{令和5年度 問1-5}
-\label{q:r05-reg-basic-1-5}
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
 
-\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理4頁。
+\paragraph{共通理論} \hyperref[theory:design:lp]{第\ref*{theory:design:lp}節}
 
-\textbf{公式正答：} 1（single）。
+\par 難易度 3（校準初稿）、優先度未評価。
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\subsection{平成30年度 問1-4}
+\label{q:h30-reg-basic-1-4}
 
-\subsection{令和5年度 問1-6}
-\label{q:r05-reg-basic-1-6}
-
-\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理4頁。
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理4頁。
 
 \textbf{公式正答：} 2（single）。
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\paragraph{問題の要旨} 材料と共有ライン制約から最大利益を求める。
 
-\subsection{令和6年度 問1-1}
-\label{q:r06-reg-basic-1-1}
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
 
-\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理1頁。
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
 
-\textbf{公式正答：} 1（single）。
+\noindent\textbf{対象：} 材料と共有ライン制約から最大利益を求める。\par
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\paragraph{問われる核心} 材料と共有ライン制約から最大利益を求める。
 
-\subsection{令和6年度 問1-2}
-\label{q:r06-reg-basic-1-2}
+\paragraph{必要知識} 2x+y≤12,x+3y≤15,x+y≤7,x,y≥0、max300x+200y。
 
-\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理2頁。
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 2x+y≤12,x+3y≤15,x+y≤7,x,y≥0、max300x+200y。実行可能頂点(0,0),(6,0),(5,2),(3,4),(0,5)の利益0,1800,1900,1700,1000万円を比較し2。材料二式だけの交点(4.2,3.6)はx+y7.8>7で不能。製品を同時生産できないとは一日の両品種生産禁止でなく時間を合算する。
 
-\textbf{公式正答：} 2（single）。
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\noindent\textbf{1：選ばない候補} 1980万円。ライン制約を落とした交点利益で実行不能。\par
 
-\subsection{令和6年度 問1-3}
-\label{q:r06-reg-basic-1-3}
+\noindent\textbf{2：選ぶ候補} 1900万円。(5,2)の利益300×5+200×2。\par
 
-\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理2頁。
+\noindent\textbf{3：選ばない候補} 1000万円。可能でも最適利益より低い。\par
 
-\textbf{公式正答：} 1（single）。
+\noindent\textbf{4：選ばない候補} 1800万円。製品1だけ6kgの利益、混合生産より低い。\par
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\noindent\textbf{5：選ばない候補} 1700万円。最適利益より低い。\par
 
-\subsection{令和6年度 問1-4}
-\label{q:r06-reg-basic-1-4}
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
 
-\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理3頁。
+\paragraph{共通理論} \hyperref[theory:design:lp]{第\ref*{theory:design:lp}節}
 
-\textbf{公式正答：} 3（single）。
+\paragraph{関連問題} \hyperref[q:r06-reg-basic-1-5]{R06-REG-BASIC-1-5}
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和2年度 問1-4}
+\label{q:r02-reg-basic-1-4}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理4頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 最適頂点と利益係数変化の許容範囲を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} 最適頂点と利益係数変化の許容範囲を求める。\par
+
+\paragraph{問われる核心} 最適頂点と利益係数変化の許容範囲を求める。
+
+\paragraph{必要知識} 3x+2y≤24,x+3y≤15。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 3x+2y≤24,x+3y≤15。初期利益2x+3yは(6,3)で21、(8,0)16、(0,5)15。変更後(6,3)は21+6Δc。(0,5)15との比較でΔc≥−1、(8,0)16+8Δcとの比較でΔc≤5/2。よって5。端点では隣接辺上の複数解が同じ利益となり、(6,3)は依然最適だが唯一とは言えない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} (0,5),−1≤Δc≤2.5。当初最適は(6,3)で異なる。\par
+
+\noindent\textbf{2：選ばない候補} (6,3),範囲の外。交点が最適になる範囲を逆にしている。\par
+
+\noindent\textbf{3：選ばない候補} (6,3),−1≤Δc≤1。上限を狭め全許容範囲を示さない。\par
+
+\noindent\textbf{4：選ばない候補} (0,5),範囲の外。当初点も範囲も不適合。\par
+
+\noindent\textbf{5：選ぶ候補} (6,3),−1≤Δc≤2.5。隣接頂点(0,5),(8,0)に負けない両不等式。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:lp]{第\ref*{theory:design:lp}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
 
 \subsection{令和6年度 問1-5}
 \label{q:r06-reg-basic-1-5}
@@ -779,16 +251,41 @@
 
 \textbf{公式正答：} 4（single）。
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\paragraph{問題の要旨} 材料係数変更後の最大利益を求める。
 
-\subsection{令和6年度 問1-6}
-\label{q:r06-reg-basic-1-6}
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
 
-\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理5頁。
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
 
-\textbf{公式正答：} 3（single）。
+\noindent\textbf{対象：} 材料係数変更後の最大利益を求める。\par
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\paragraph{問われる核心} 材料係数変更後の最大利益を求める。
+
+\paragraph{必要知識} x+2y≤12,3x+y≤15,x+y≤7、max300x+200y。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} x+2y≤12,3x+y≤15,x+y≤7、max300x+200y。頂点(0,0),(5,0),(4,3),(2,5),(0,6)の利益0,1500,1800,1600,1200より4。H30とは原料係数が製品間で交換されているが利益係数は同じなので数値解を使い回さない。材料二式交点(3.6,4.2)は時間制約を満たさない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} 1200万円。最適利益より低い。\par
+
+\noindent\textbf{2：選ばない候補} 1500万円。製品1だけ5kgの利益。\par
+
+\noindent\textbf{3：選ばない候補} 1600万円。(2,5)の利益で最適より低い。\par
+
+\noindent\textbf{4：選ぶ候補} 1800万円。(4,3)で材料B15、時間7、利益1800。\par
+
+\noindent\textbf{5：選ばない候補} 1920万円。材料二式交点の利益だが時間7.8で不能。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:lp]{第\ref*{theory:design:lp}節}
+
+\paragraph{関連問題} \hyperref[q:h30-reg-basic-1-4]{H30-REG-BASIC-1-4}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{要求性能・構造計画・構造詳細・照査の順序を選ぶ。}
 
 \subsection{令和7年度 問1-1}
 \label{q:r07-reg-basic-1-1}
@@ -797,16 +294,1737 @@
 
 \textbf{公式正答：} 3（single）。
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\paragraph{問題の要旨} 要求性能・構造計画・構造詳細・照査の順序を選ぶ。
 
-\subsection{令和7年度 問1-2}
-\label{q:r07-reg-basic-1-2}
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
 
-\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理2頁。
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} 要求性能・構造計画・構造詳細・照査の順序を選ぶ。\par
+
+\paragraph{問われる核心} 要求性能・構造計画・構造詳細・照査の順序を選ぶ。
+
+\paragraph{必要知識} 所要性能を実現する合理的構造体を目指し、要求性能を設定、構造計画、構造詳細の設定、供用期間の要求性能照査と進めるので3。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 所要性能を実現する合理的構造体を目指し、要求性能を設定、構造計画、構造詳細の設定、供用期間の要求性能照査と進めるので3。国交省2021要領は構造詳細を部材寸法・使用材料等の照査に必要な情報の設定とする。詳細設計という一般工程と、ここでの設定対象の語を区別する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} 合理/使用性能/施工計画/詳細設計。性能対象と構造計画の段階が不一致。\par
+
+\noindent\textbf{2：選ばない候補} 不合理/使用性能/構造計画/構造詳細。合理性を逆にし要求性能を使用性能へ限定。\par
+
+\noindent\textbf{3：選ぶ候補} 合理/要求性能/構造計画/構造詳細。要求を設定し計画後に照査用構造詳細を設定。\par
+
+\noindent\textbf{4：選ばない候補} 不合理/要求性能/施工計画/詳細設計。合理性と計画の対象が不一致。\par
+
+\noindent\textbf{5：選ばない候補} 合理/要求性能/構造計画/詳細設計。詳細設計という工程名で構造詳細という設定情報を置換。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:performance]{第\ref*{theory:design:performance}節}
+
+\par 参考：\cite{design48_mlit}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{先行関係を保ち工期を1日短縮する最安作業を選ぶ。}
+
+\subsection{平成23年度 問1-3}
+\label{q:h23-reg-basic-1-3}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 先行関係を保ち工期を1日短縮する最安作業を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} 先行関係を保ち工期を1日短縮する最安作業を選ぶ。\par
+
+\paragraph{問われる核心} 先行関係を保ち工期を1日短縮する最安作業を選ぶ。
+
+\paragraph{必要知識} A終了1、B4、C2、D3、E=\allowbreak{}max(4,2)+4=\allowbreak{}8、F=\allowbreak{}max(3,8)+5=\allowbreak{}13、G8+3=\allowbreak{}11。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} A終了1、B4、C2、D3、E=\allowbreak{}max(4,2)+4=\allowbreak{}8、F=\allowbreak{}max(3,8)+5=\allowbreak{}13、G8+3=\allowbreak{}11。最長はB-E-Fの13日。1日短縮で工期を下げる候補B/E/Fの費用は45/40/50万円で、最小を選ぶ。DやGの安さだけでは工期は変わらない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} B。B-E-Fのクリティカル上で45万円。\par
+
+\noindent\textbf{2：選ばない候補} D。Dは最早終了3でF開始8まで余裕5、1日短縮しても工期不変。\par
+
+\noindent\textbf{3：選ぶ候補} E。Eはクリティカル上で40万円。\par
+
+\noindent\textbf{4：選ばない候補} F。Fはクリティカル上で50万円。\par
+
+\noindent\textbf{5：選ばない候補} G。Gの終了11はF終了13より早く、短縮しても工期不変。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:pert]{第\ref*{theory:design:pert}節}
+
+\paragraph{関連問題} \hyperref[q:h25-reg-basic-1-4]{H25-REG-BASIC-1-4}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{平成25年度 問1-4}
+\label{q:h25-reg-basic-1-4}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理4頁。
 
 \textbf{公式正答：} 4（single）。
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\paragraph{問題の要旨} 先行関係を保ち工期を1日短縮する最安作業を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} 先行関係を保ち工期を1日短縮する最安作業を選ぶ。\par
+
+\paragraph{問われる核心} 先行関係を保ち工期を1日短縮する最安作業を選ぶ。
+
+\paragraph{必要知識} A終了1、B4、C2、D3、E=\allowbreak{}max(4,2)+4=\allowbreak{}8、F=\allowbreak{}max(3,8)+5=\allowbreak{}13、G8+3=\allowbreak{}11。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} A終了1、B4、C2、D3、E=\allowbreak{}max(4,2)+4=\allowbreak{}8、F=\allowbreak{}max(3,8)+5=\allowbreak{}13、G8+3=\allowbreak{}11。最長はB-E-Fの13日。1日短縮で工期を下げる候補B/E/Fの費用は45/50/40万円で、最小を選ぶ。DやGの安さだけでは工期は変わらない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} B。B-E-Fのクリティカル上で45万円。\par
+
+\noindent\textbf{2：選ばない候補} D。Dは最早終了3でF開始8まで余裕5、1日短縮しても工期不変。\par
+
+\noindent\textbf{3：選ばない候補} E。Eはクリティカル上で50万円。\par
+
+\noindent\textbf{4：選ぶ候補} F。Fはクリティカル上で40万円。\par
+
+\noindent\textbf{5：選ばない候補} G。Gの終了11はF終了13より早く、短縮しても工期不変。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:pert]{第\ref*{theory:design:pert}節}
+
+\paragraph{関連問題} \hyperref[q:h23-reg-basic-1-3]{H23-REG-BASIC-1-3}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{平成28年度 問1-4}
+\label{q:h28-reg-basic-1-4}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理4頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} ダミー先行関係を含む工期短縮の最小費用を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} ダミー先行関係を含む工期短縮の最小費用を求める。\par
+
+\paragraph{問われる核心} ダミー先行関係を含む工期短縮の最小費用を求める。
+
+\paragraph{必要知識} p終了10、a1 18、a2 33、a3 53、a4 61。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} p終了10、a1 18、a2 33、a3 53、a4 61。b1 25、b2=\allowbreak{}max(33,25)+22=\allowbreak{}55。c1 17、c2 32、c3 47。b3=\allowbreak{}max(53,55,47)+10=\allowbreak{}65、f=\allowbreak{}max(61,65)+15=\allowbreak{}80日。最長経路p-a1-a2-b2-b3-f。短縮可能なその上のa2/b3を18/15万円で比較しb3を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} a2 18万円。クリティカル上だがb3より高い。\par
+
+\noindent\textbf{2：選ばない候補} a3 10万円。a3終了53はb2終了55より2日早く、短縮で工期不変。\par
+
+\noindent\textbf{3：選ばない候補} b1 5万円。b1終了25はa2終了33より早く、b2の開始を早めない。\par
+
+\noindent\textbf{4：選ぶ候補} b3 15万円。クリティカル作業を15万円で短縮でき最小。\par
+
+\noindent\textbf{5：選ばない候補} c1 6万円。c3終了47はb2終了55より早く、短縮で工期不変。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:pert]{第\ref*{theory:design:pert}節}
+
+\paragraph{関連問題} \hyperref[q:h30-reg-basic-1-2]{H30-REG-BASIC-1-2}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{平成30年度 問1-2}
+\label{q:h30-reg-basic-1-2}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 複数のクリティカルパスの作業集合を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} 複数のクリティカルパスの作業集合を求める。\par
+
+\paragraph{問われる核心} 複数のクリティカルパスの作業集合を求める。
+
+\paragraph{必要知識} 最早時刻はp10,a1 18,a2 33,a3 55,a4 63,b1 25,b2 55,c1 17,c2 32,c3 47,b3 65,f80。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 最早時刻はp10,a1 18,a2 33,a3 55,a4 63,b1 25,b2 55,c1 17,c2 32,c3 47,b3 65,f80。a3とb2が同じ時刻55で合流するのでp-a1-a2-a3-b3-fとp-a1-a2-b2-b3-fの二経路が最長。重点管理作業は両経路の和集合で1。1の並びを一本の直列経路と誤読しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ぶ候補} p,a1,a2,a3,b2,b3,f。a3とb2の両枝を含みクリティカル作業の和集合。\par
+
+\noindent\textbf{2：選ばない候補} p,c1,c2,c3,b3,f。c枝の終了47は合流55まで余裕8。\par
+
+\noindent\textbf{3：選ばない候補} p,b1,b2,b3,f。b1終了25は合流33まで余裕8。\par
+
+\noindent\textbf{4：選ばない候補} p,a1,a2,b2,b3,f。b2枝だけでa3枝のクリティカルを落とす。\par
+
+\noindent\textbf{5：選ばない候補} p,a1,a2,a3,a4,f。a4は終了63で合流65まで余裕2。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:pert]{第\ref*{theory:design:pert}節}
+
+\paragraph{関連問題} \hyperref[q:h28-reg-basic-1-4]{H28-REG-BASIC-1-4}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和元年度再試験 問1-4}
+\label{q:r01-ret-basic-1-4}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理4頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} PERTの最早・最遅時刻と工期短縮を判断する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} PERTの最早・最遅時刻と工期短縮を判断する。\par
+
+\paragraph{問われる核心} PERTの最早・最遅時刻と工期短縮を判断する。
+
+\paragraph{必要知識} 作業i→jの総余裕はTF=\allowbreak{}TL(j)−TE(i)−tij。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 作業i→jの総余裕はTF=\allowbreak{}TL(j)−TE(i)−tij。この値0ならクリティカル作業であり、指定工期のまま遅延できない。全体短縮は全クリティカル経路を短くする必要があり、余裕のある非クリティカル作業だけを縮めても最長経路は変わらない。正正正誤の2。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} 誤正正誤。先行関係を矢線とノードで表すアを誤にする。\par
+
+\noindent\textbf{2：選ぶ候補} 正正正誤。ア〜ウ正、非クリティカル短縮を必須とするエは誤。\par
+
+\noindent\textbf{3：選ばない候補} 正誤誤誤。総余裕0を否定しクリティカル遅延も否定する。\par
+
+\noindent\textbf{4：選ばない候補} 誤誤誤正。ア〜ウを否定しエを正とする逆。\par
+
+\noindent\textbf{5：選ばない候補} 誤正正正。先行関係と非クリティカル短縮の二点が誤。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:pert]{第\ref*{theory:design:pert}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{設計の調和・簡素化・分割・機能独立性を判断する。}
+
+\subsection{平成28年度 問1-6}
+\label{q:h28-reg-basic-1-6}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textbf{検討未確定：} 原典の調和という原理の特定原著は未照合。代表設計方針を全系の最適性定理へ拡張しない。
+
+\paragraph{問題の要旨} 設計の調和・簡素化・分割・機能独立性を判断する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} 設計の調和・簡素化・分割・機能独立性を判断する。\par
+
+\paragraph{問われる核心} 設計の調和・簡素化・分割・機能独立性を判断する。
+
+\paragraph{必要知識} 各要求の調和を図り、巨大・複雑化した系は適切な機能単位へ分割する。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 各要求の調和を図り、巨大・複雑化した系は適切な機能単位へ分割する。複雑であるほど最善でも、機能独立性が低いほど良いでもない。実系にはばらつきがある。正誤正誤正の1。ただし独立性だけで全システム最適を保証せず、インタフェースや全体相互作用も設計対象である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ぶ候補} 正誤正誤正。調和と分割・ばらつきを認め複雑最善・低独立最善を否定。\par
+
+\noindent\textbf{2：選ばない候補} 誤正正正正。調和を否定し複雑・低独立を肯定。\par
+
+\noindent\textbf{3：選ばない候補} 誤正正誤誤。調和とばらつきを否定し複雑を肯定。\par
+
+\noindent\textbf{4：選ばない候補} 正正誤正正。複雑・低独立を肯定し分割を否定。\par
+
+\noindent\textbf{5：選ばない候補} 誤誤誤正誤。分割・ばらつきを否定し低独立を肯定。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:principles]{第\ref*{theory:design:principles}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。}
+
+\subsection{平成23年度 問1-2}
+\label{q:h23-reg-basic-1-2}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textbf{検討未確定：} 原典の待ち行列長ρ/(1−ρ)は標準用語では系内人数Lで、待ちのみのLqとは異なる。ただし原典のL×平均処理時間はL/μ=ρ/(μ−λ)=\allowbreak{}Wqとなり計算法は一致する。名称の不整合だけを保持。
+
+\paragraph{問題の要旨} 単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} 単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。\par
+
+\paragraph{問われる核心} 単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。
+
+\paragraph{必要知識} 処理平均30秒からμ=120.0人/時、λ=50人/時。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 処理平均30秒からμ=120.0人/時、λ=50人/時。ρ=λ/μ<1で定常が成立し、W=\allowbreak{}1/(μ−λ)時間=51.428571秒。待ちのみはWq=\allowbreak{}W−30秒であり、求める並び始めから処理終了までとは違う。原典のρ/(1−ρ)は標準の系内人数Lであるが、そのL/μはWqに等しく補助計算法は一致する。Lq=λWqと区別し名称の留保だけを残す。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} 21秒。21秒は計算した滞在時間51.4286秒と異なる。\par
+
+\noindent\textbf{2：選ばない候補} 31秒。31秒は計算した滞在時間51.4286秒と異なる。\par
+
+\noindent\textbf{3：選ばない候補} 41秒。41秒は計算した滞在時間51.4286秒と異なる。\par
+
+\noindent\textbf{4：選ぶ候補} 51秒。系内滞在時間51.4286秒に最も近い。\par
+
+\noindent\textbf{5：選ばない候補} 61秒。61秒は計算した滞在時間51.4286秒と異なる。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:queue]{第\ref*{theory:design:queue}節}
+
+\par 参考：\cite{design48_queue_ref}。
+
+\paragraph{関連問題} \hyperref[q:h27-reg-basic-1-2]{H27-REG-BASIC-1-2}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{平成25年度 問1-5}
+\label{q:h25-reg-basic-1-5}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textbf{検討未確定：} 原典の待ち行列長ρ/(1−ρ)は標準用語では系内人数Lで、待ちのみのLqとは異なる。ただし原典のL×平均処理時間はL/μ=ρ/(μ−λ)=\allowbreak{}Wqとなり計算法は一致する。名称の不整合だけを保持。
+
+\paragraph{問題の要旨} 単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} 単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。\par
+
+\paragraph{問われる核心} 単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。
+
+\paragraph{必要知識} 処理平均6秒からμ=600.0人/時、λ=360人/時。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 処理平均6秒からμ=600.0人/時、λ=360人/時。ρ=λ/μ<1で定常が成立し、W=\allowbreak{}1/(μ−λ)時間=15.0秒。待ちのみはWq=\allowbreak{}W−6秒であり、求める並び始めから処理終了までとは違う。原典のρ/(1−ρ)は標準の系内人数Lであるが、そのL/μはWqに等しく補助計算法は一致する。Lq=λWqと区別し名称の留保だけを残す。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} 6秒。6秒は計算した滞在時間15.0秒と異なる。\par
+
+\noindent\textbf{2：選ばない候補} 9秒。9秒は計算した滞在時間15.0秒と異なる。\par
+
+\noindent\textbf{3：選ばない候補} 12秒。12秒は計算した滞在時間15.0秒と異なる。\par
+
+\noindent\textbf{4：選ぶ候補} 15秒。系内滞在時間15.0秒に最も近い。\par
+
+\noindent\textbf{5：選ばない候補} 18秒。18秒は計算した滞在時間15.0秒と異なる。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:queue]{第\ref*{theory:design:queue}節}
+
+\par 参考：\cite{design48_queue_ref}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{平成27年度 問1-2}
+\label{q:h27-reg-basic-1-2}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textbf{検討未確定：} 原典の待ち行列長ρ/(1−ρ)は標準用語では系内人数Lで、待ちのみのLqとは異なる。ただし原典のL×平均処理時間はL/μ=ρ/(μ−λ)=\allowbreak{}Wqとなり計算法は一致する。名称の不整合だけを保持。
+
+\paragraph{問題の要旨} 単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} 単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。\par
+
+\paragraph{問われる核心} 単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。
+
+\paragraph{必要知識} 処理平均30秒からμ=120.0人/時、λ=50人/時。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 処理平均30秒からμ=120.0人/時、λ=50人/時。ρ=λ/μ<1で定常が成立し、W=\allowbreak{}1/(μ−λ)時間=51.428571秒。待ちのみはWq=\allowbreak{}W−30秒であり、求める並び始めから処理終了までとは違う。原典のρ/(1−ρ)は標準の系内人数Lであるが、そのL/μはWqに等しく補助計算法は一致する。Lq=λWqと区別し名称の留保だけを残す。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} 21秒。21秒は計算した滞在時間51.4286秒と異なる。\par
+
+\noindent\textbf{2：選ばない候補} 31秒。31秒は計算した滞在時間51.4286秒と異なる。\par
+
+\noindent\textbf{3：選ばない候補} 41秒。41秒は計算した滞在時間51.4286秒と異なる。\par
+
+\noindent\textbf{4：選ぶ候補} 51秒。系内滞在時間51.4286秒に最も近い。\par
+
+\noindent\textbf{5：選ばない候補} 61秒。61秒は計算した滞在時間51.4286秒と異なる。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:queue]{第\ref*{theory:design:queue}節}
+
+\par 参考：\cite{design48_queue_ref}。
+
+\paragraph{関連問題} \hyperref[q:h23-reg-basic-1-2]{H23-REG-BASIC-1-2}, \hyperref[q:h29-reg-basic-1-1]{H29-REG-BASIC-1-1}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{平成29年度 問1-1}
+\label{q:h29-reg-basic-1-1}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} 単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。\par
+
+\paragraph{問われる核心} 単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。
+
+\paragraph{必要知識} 処理平均40秒からμ=90.0人/時、λ=60人/時。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 処理平均40秒からμ=90.0人/時、λ=60人/時。ρ=λ/μ<1で定常が成立し、W=\allowbreak{}1/(μ−λ)時間=120.0秒。待ちのみはWq=\allowbreak{}W−40秒であり、求める並び始めから処理終了までとは違う。原典の補助式に名称の不整合がある場合は勝手に名称を修正せず標準のL=λW、Lq=λWqを併記する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} 60秒。60秒は計算した滞在時間120.0秒と異なる。\par
+
+\noindent\textbf{2：選ばない候補} 75秒。75秒は計算した滞在時間120.0秒と異なる。\par
+
+\noindent\textbf{3：選ばない候補} 90秒。90秒は計算した滞在時間120.0秒と異なる。\par
+
+\noindent\textbf{4：選ばない候補} 105秒。105秒は計算した滞在時間120.0秒と異なる。\par
+
+\noindent\textbf{5：選ぶ候補} 120秒。系内滞在時間120.0秒に最も近い。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:queue]{第\ref*{theory:design:queue}節}
+
+\par 参考：\cite{design48_queue_ref}。
+
+\paragraph{関連問題} \hyperref[q:h27-reg-basic-1-2]{H27-REG-BASIC-1-2}, \hyperref[q:r01-reg-basic-1-5]{R01-REG-BASIC-1-5}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和元年度 問1-5}
+\label{q:r01-reg-basic-1-5}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} 単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。\par
+
+\paragraph{問われる核心} 単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。
+
+\paragraph{必要知識} 処理平均40秒からμ=90.0人/時、λ=40人/時。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 処理平均40秒からμ=90.0人/時、λ=40人/時。ρ=λ/μ<1で定常が成立し、W=\allowbreak{}1/(μ−λ)時間=72.0秒。待ちのみはWq=\allowbreak{}W−40秒であり、求める並び始めから処理終了までとは違う。原典の補助式に名称の不整合がある場合は勝手に名称を修正せず標準のL=λW、Lq=λWqを併記する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} 68秒。68秒は計算した滞在時間72.0秒と異なる。\par
+
+\noindent\textbf{2：選ぶ候補} 72秒。系内滞在時間72.0秒に最も近い。\par
+
+\noindent\textbf{3：選ばない候補} 85秒。85秒は計算した滞在時間72.0秒と異なる。\par
+
+\noindent\textbf{4：選ばない候補} 90秒。90秒は計算した滞在時間72.0秒と異なる。\par
+
+\noindent\textbf{5：選ばない候補} 100秒。100秒は計算した滞在時間72.0秒と異なる。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:queue]{第\ref*{theory:design:queue}節}
+
+\par 参考：\cite{design48_queue_ref}。
+
+\paragraph{関連問題} \hyperref[q:h29-reg-basic-1-1]{H29-REG-BASIC-1-1}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{ユニバーサルデザインの四原則を穴埋めする。}
+
+\subsection{平成24年度 問1-4}
+\label{q:h24-reg-basic-1-4}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理4頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} ユニバーサルデザインの四原則を穴埋めする。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} ユニバーサルデザインの四原則を穴埋めする。\par
+
+\paragraph{問われる核心} ユニバーサルデザインの四原則を穴埋めする。
+
+\paragraph{必要知識} 七原則のうち柔軟な利用、単純で直観的な利用、失敗への寛容、少ない身体的努力が該当し5。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 七原則のうち柔軟な利用、単純で直観的な利用、失敗への寛容、少ない身体的努力が該当し5。論理性だけを求めたり、利用者を限定したり、継続的努力を求める語では意図が変わる。ミスが発生しても危害を抑える設計を材料欠陥一般と同一視しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} 柔軟/論理/失敗/継続。直観的利用と身体的努力が不一致。\par
+
+\noindent\textbf{2：選ばない候補} 限定/論理/失敗/継続。柔軟性・直観・身体の三点が不一致。\par
+
+\noindent\textbf{3：選ばない候補} 柔軟/論理/欠陥/身体。直観と利用者の失敗への寛容が不一致。\par
+
+\noindent\textbf{4：選ばない候補} 限定/直観/欠陥/継続。柔軟・失敗・身体の三点が不一致。\par
+
+\noindent\textbf{5：選ぶ候補} 柔軟/直観/失敗/身体。利用者多様性と操作ミスへの寛容・省力に対応。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:universal]{第\ref*{theory:design:universal}節}
+
+\par 参考：\cite{design48_ud}。
+
+\paragraph{関連問題} \hyperref[q:h26-reg-basic-1-1]{H26-REG-BASIC-1-1}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成26年度 問1-1}
+\label{q:h26-reg-basic-1-1}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} ユニバーサルデザインの四原則を穴埋めする。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} ユニバーサルデザインの四原則を穴埋めする。\par
+
+\paragraph{問われる核心} ユニバーサルデザインの四原則を穴埋めする。
+
+\paragraph{必要知識} 七原則のうち柔軟な利用、単純で直観的な利用、失敗への寛容、少ない身体的努力が該当し5。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 七原則のうち柔軟な利用、単純で直観的な利用、失敗への寛容、少ない身体的努力が該当し5。論理性だけを求めたり、利用者を限定したり、継続的努力を求める語では意図が変わる。ミスが発生しても危害を抑える設計を材料欠陥一般と同一視しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} 柔軟/論理/失敗/継続。直観的利用と身体的努力が不一致。\par
+
+\noindent\textbf{2：選ばない候補} 限定/論理/失敗/継続。柔軟性・直観・身体の三点が不一致。\par
+
+\noindent\textbf{3：選ばない候補} 柔軟/論理/欠陥/身体。直観と利用者の失敗への寛容が不一致。\par
+
+\noindent\textbf{4：選ばない候補} 限定/直観/欠陥/継続。柔軟・失敗・身体の三点が不一致。\par
+
+\noindent\textbf{5：選ぶ候補} 柔軟/直観/失敗/身体。利用者多様性と操作ミスへの寛容・省力に対応。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:universal]{第\ref*{theory:design:universal}節}
+
+\par 参考：\cite{design48_ud}。
+
+\paragraph{関連問題} \hyperref[q:h24-reg-basic-1-4]{H24-REG-BASIC-1-4}, \hyperref[q:r06-reg-basic-1-1]{R06-REG-BASIC-1-1}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成30年度 問1-3}
+\label{q:h30-reg-basic-1-3}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textbf{検討未確定：} バリアフリーの全制度領域の出題当時一次定義は追加照合対象。
+
+\paragraph{問題の要旨} バリアフリーとユニバーサルデザインを区別する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} バリアフリーとユニバーサルデザインを区別する。\par
+
+\paragraph{問われる核心} バリアフリーとユニバーサルデザインを区別する。
+
+\paragraph{必要知識} バリアフリーの障壁を物理的なものだけに限定しない。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} バリアフリーの障壁を物理的なものだけに限定しない。UDは新たな障壁を作らず広く使える設計を目指す。Ron Mace等の七原則はUDの原則でありBF名称のウは誤。誤正誤の2。身体の段差だけでなく情報・制度・心理等の障壁も区別する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} 正正誤。物理的障壁だけとする限定が誤。\par
+
+\noindent\textbf{2：選ぶ候補} 誤正誤。アの限定とウのBF名称が誤、イはUD説明。\par
+
+\noindent\textbf{3：選ばない候補} 誤誤正。イを否定しウの名称を肯定している。\par
+
+\noindent\textbf{4：選ばない候補} 正誤誤。アの限定を肯定、イを否定。\par
+
+\noindent\textbf{5：選ばない候補} 正正正。アとウを誤としていない。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:universal]{第\ref*{theory:design:universal}節}
+
+\par 参考：\cite{design48_ud}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和2年度 問1-1}
+\label{q:r02-reg-basic-1-1}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textbf{検討未確定：} ノーマライゼーションの北欧起源とUDの単一歴史経路の当時一次文書は未照合。
+
+\paragraph{問題の要旨} 社会理念とUDの対象・直感的利用を対応させる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} 社会理念とUDの対象・直感的利用を対応させる。\par
+
+\paragraph{問われる核心} 社会理念とUDの対象・直感的利用を対応させる。
+
+\paragraph{必要知識} 共に生活する社会理念はノーマライゼーション。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 共に生活する社会理念はノーマライゼーション。UDは製品と環境を可能な限り広く利用できるよう設計し、単純で直感的利用とミスへの寛容を求めるので3。北欧・米国の歴史の単一起源をこの解説で追加証明したとはせず、原典年代の資料照合は保留。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} カスタム/環境/直感/ミス。共に生活する理念を個別仕様化と取り違え。\par
+
+\noindent\textbf{2：選ばない候補} ノーマル/制度/直感/長時間。製品や環境の対象とミス寛容が不一致。\par
+
+\noindent\textbf{3：選ぶ候補} ノーマル/環境/直感/ミス。ノーマライゼーション/環境/直感/ミスが対応。\par
+
+\noindent\textbf{4：選ばない候補} カスタム/制度/論理/長時間。理念・対象・利用・寛容の全てが不一致。\par
+
+\noindent\textbf{5：選ばない候補} ノーマル/環境/論理/長時間。直感とミス寛容を置換している。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:universal]{第\ref*{theory:design:universal}節}
+
+\par 参考：\cite{design48_ud}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和3年度 問1-1}
+\label{q:r03-reg-basic-1-1}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} UDの具体的な機能とアクセス阻害を比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} UDの具体的な機能とアクセス阻害を比較する。\par
+
+\paragraph{問われる核心} UDの具体的な機能とアクセス阻害を比較する。
+
+\paragraph{必要知識} 上部だけの取っ手は特定の子どもの操作を妨げる一方、低身長や座位での接近も妨げるため4がUD例として不適切。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 上部だけの取っ手は特定の子どもの操作を妨げる一方、低身長や座位での接近も妨げるため4がUD例として不適切。安全性は必要だが、一律到達禁止では公平な利用やサイズ・空間の原則に合わない。その他は省力、柔軟性、認知情報に対応。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ばない候補} 自動ドア。手がふさがる利用者の身体負担を減らす。\par
+
+\noindent\textbf{2：選ばない候補} 再生速度変更。能力や好みに合わせる柔軟性。\par
+
+\noindent\textbf{3：選ばない候補} ピクトグラム。情報を認知しやすくする。\par
+
+\noindent\textbf{4：選ぶ候補} 高い取っ手。低身長や車椅子利用者の到達を妨げる。\par
+
+\noindent\textbf{5：選ばない候補} 多形式説明書。視覚・聴覚等の多様性へ情報提供を広げる。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:universal]{第\ref*{theory:design:universal}節}
+
+\par 参考：\cite{design48_ud}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和6年度 問1-1}
+\label{q:r06-reg-basic-1-1}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} ユニバーサルデザインの柔軟性・単純性・寛容・省力を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 24保存原典画像の表・矢印・否定・全候補を照合。\par
+
+\noindent\textbf{対象：} ユニバーサルデザインの柔軟性・単純性・寛容・省力を選ぶ。\par
+
+\paragraph{問われる核心} ユニバーサルデザインの柔軟性・単純性・寛容・省力を選ぶ。
+
+\paragraph{必要知識} Flexibility,Simple and Intuitive,Tolerance for Error,Low Physical Effortの対応から1。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} Flexibility,Simple and Intuitive,Tolerance for Error,Low Physical Effortの対応から1。文字だけでなく、利用者の能力・好みを受け入れ、ミスの影響と身体負担を減らす設計目的へ対応させる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：選ぶ候補} 柔軟/単純/寛大/身体。四つが七原則に対応。\par
+
+\noindent\textbf{2：選ばない候補} 限定/単純/厳格/精神。利用者限定、ミスへの厳格、精神的努力が不適合。\par
+
+\noindent\textbf{3：選ばない候補} 柔軟/単純/厳格/身体。ミスへの厳格だけが原則と逆。\par
+
+\noindent\textbf{4：選ばない候補} 限定/複雑/厳格/身体。限定・複雑・厳格が逆。\par
+
+\noindent\textbf{5：選ばない候補} 柔軟/複雑/寛大/精神。複雑性と精神的努力が不一致。\par
+
+\paragraph{再利用する考え方} 到着率と処理率の単位、資源制約と利益、最長経路と最安費用、原則の適用範囲を分ける。
+
+\paragraph{共通理論} \hyperref[theory:design:universal]{第\ref*{theory:design:universal}節}
+
+\par 参考：\cite{design48_ud}。
+
+\paragraph{関連問題} \hyperref[q:h26-reg-basic-1-1]{H26-REG-BASIC-1-1}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{修復系の定常稼働率}
+
+\subsection{令和3年度 問1-4}
+\label{q:r03-reg-basic-1-4}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 平均運転時間と平均修復時間から、修復可能な装置の長期の稼働割合を導く。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 平均運転時間と平均修復時間から、修復可能な装置の長期の稼働割合を導く。
+
+\paragraph{必要知識} 平均運転時間、平均非稼働時間、交互修復の周期平均、信頼度R(t)と稼働率の相違。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 試験で用いるMTBFを修復完了から次故障までの平均運転時間A、MTTRを平均修復時間Bとして読む。運転と修復を交互に繰り返す二状態系の長期割合は、有限平均と安定した周期モデルのもとで \(\mathcal A=E[T_{\mathrm{up}}]/(E[T_{\mathrm{up}}]+E[T_{\mathrm{down}}])=A/(A+B)\)、3である。指数分布の仮定はこの平均周期による割合には必須でない。待機・補給・計画停止を含める稼働率では分母の非稼働時間を拡張する。MTBFという名前だけで停止時間込みの暦時間間隔を代入しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} \(A/(A-B)\)。周期は差ではなく運転と修復の和であり、B>0なら1を超える場合もある。\par
+
+\noindent\textbf{2：不適合} \(B/(A-B)\)。周期の分母と、稼働時間の分子がともに違う。\par
+
+\noindent\textbf{3：適合（記載条件内）} \(A/(A+B)\)。平均運転時間Aを、運転と修復の平均周期A+Bで割った稼働割合である。\par
+
+\noindent\textbf{4：不適合} \(B/(A+B)\)。同じ二状態モデルでは非稼働率である。\par
+
+\noindent\textbf{5：不適合} \(A/B\)。運転/修復の比は稼働の全時間割合ではなく1を超え得る。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:availability]{第\ref*{theory:dependability:availability}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{故障時の安全・縮退・機能継続}
+
+\subsection{令和5年度 問1-5}
+\label{q:r05-reg-basic-1-5}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理4頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 故障時の安全確保、機能縮退、誤操作対策、故障下の機能継続を区別する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 故障時の安全確保、機能縮退、誤操作対策、故障下の機能継続を区別する。
+
+\paragraph{必要知識} 機器故障、人為的誤操作、機能縮退、安全状態、耐故障能力と故障影響隠蔽の範囲。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 故障しても安全側を保つ性質はフェールセーフである。故障又は故障の切迫時に影響機能を優先順位に従って徐々に終了するのがフェールソフトである。人為的な誤操作を重大な失敗へつなげない設計はフールプルーフ、想定された故障が存在しても機能を継続できる能力はフォールトトレランスである。四つをこの順に置く1を選ぶ。フォールトマスキングは故障影響を冗長性等で外へ現さない方式であり、故障の検出・隔離・回復を含む一般的な耐故障能力と同じ範囲ではない。安全に停止してよい系と停止自体が危険な系では、要求する安全状態を先に定める。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適合（記載条件内）} フェールセーフ・フェールソフト・フールプルーフ・フォールトトレランス。安全側、優先順位付き縮退、人為的誤り対策、故障下での機能継続の四記述に一致する。\par
+
+\noindent\textbf{2：不適合} フェールセーフ・フェールソフト・フールプルーフ・フォールトマスキング。最後の一般的能力を、故障影響を外へ現さない一方式であるマスキングに限定している。\par
+
+\noindent\textbf{3：不適合} フェールソフト・フォールトトレランス・フールプルーフ・フォールトマスキング。アは安全性を維持するフェールセーフ、イは段階的な機能終了のフェールソフトであり、エの一般的能力はトレランスである。\par
+
+\noindent\textbf{4：不適合} フールプルーフ・フォールトトレランス・フェールソフト・フォールトマスキング。アの故障は人為的誤りのフールプルーフと異なり、イ・ウ・エの対応も違う。\par
+
+\noindent\textbf{5：不適合} フールプルーフ・フェールセーフ・フェールソフト・フォールトトレランス。アはフェールセーフ、イはフェールソフト、ウはフールプルーフなので最初の三欄が違う。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:handling]{第\ref*{theory:dependability:handling}節}
+
+\par 参考：\cite{design_mhlw_foolproof,design_mhlw_failsafe,design_nasa_tolerance}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{故障の木と論理ゲート}
+
+\subsection{令和元年度再試験 問1-3}
+\label{q:r01-ret-basic-1-3}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 独立な末端故障事象のFTAで、下位ゲートから最上位事象の発生確率を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 独立な末端故障事象のFTAで、下位ゲートから最上位事象の発生確率を求める。
+
+\paragraph{必要知識} 直列は全要素成功の共通事象、並列は少なくとも一つ成功の和事象。独立時の積と補集合、確率範囲と丸め。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 原典は各下流事象の独立を明記する。左枝の下位ORは \(1-0.9^2=0.19\)、その隣のANDは \(0.2^2=0.04\)、これらのORは \(1-(1-0.19)(1-0.04)=0.2224\)。右枝のANDは \(0.4^2=0.16\)。最上位はANDなので \(P=0.2224\cdot0.16=0.035584\)、近い0.036の1である。図は故障事象の木であり、ANDを直列系の「成功」と取り違えない。異なる枝に同じ末端事象を再使用する木では枝間の独立を別途点検する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適合（記載条件内）} 0.036。導出値0.035584に最も近い。\par
+
+\noindent\textbf{2：不適合} 0.038。導出値0.035584と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{3：不適合} 0.233。導出値0.035584と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{4：不適合} 0.641。導出値0.035584と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{5：不適合} 0.804。導出値0.035584と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:fta]{第\ref*{theory:dependability:fta}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{時間計画・状態監視・事後保全}
+
+\subsection{平成26年度 問1-5}
+\label{q:h26-reg-basic-1-5}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 故障前後と保全時期の決定基準から、予防・事後・状態監視・時間計画の保全を対応させる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 故障前後と保全時期の決定基準から、予防・事後・状態監視・時間計画の保全を対応させる。
+
+\paragraph{必要知識} 故障前/後、暦・運転時間の予定、状態測定による処置判断、定期点検と処置時期の区別。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 故障を防ぐ目的で故障前に行う予防保全と、故障後に回復する事後保全を分ける。状態監視保全は点検値等から状態を評価して必要な処置を行う。時間計画保全では暦や運転時間等で予定を決め、定期的な保全や経時に基づく保全が対応する。本問の第三欄は状態監視、表の五欄は予防・事後・状態監視・定期・経時、1である。両年度は第三欄が異なるため、用語が似ているだけで候補を転用しない。状態を確認する点検が定期的であっても、それだけで状態に基づく処置が時間計画保全へ変わるわけではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適合（記載条件内）} 予防・事後・状態監視・定期・経時。故障前/後、保全時期の判断基準、定期と経時の対応が一致する。\par
+
+\noindent\textbf{2：不適合} 定期・事後・経時・状態監視・予防。第1欄は予防であり定期ではない。第3欄は状態監視であり経時ではない。第4欄は定期であり状態監視ではない。第5欄は経時であり予防ではない。\par
+
+\noindent\textbf{3：不適合} 状態監視・事後・予防・定期・経時。第1欄は予防であり状態監視ではない。第3欄は状態監視であり予防ではない。\par
+
+\noindent\textbf{4：不適合} 定期・経時・予防・状態監視・事後。第1欄は予防であり定期ではない。第2欄は事後であり経時ではない。第3欄は状態監視であり予防ではない。第4欄は定期であり状態監視ではない。第5欄は経時であり事後ではない。\par
+
+\noindent\textbf{5：不適合} 予防・定期・状態監視・経時・事後。第2欄は事後であり定期ではない。第4欄は定期であり経時ではない。第5欄は経時であり事後ではない。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:maintenance]{第\ref*{theory:dependability:maintenance}節}
+
+\par 参考：\cite{maintenance_mlit_2013}。
+
+\paragraph{関連問題} \hyperref[q:r01-ret-basic-1-6]{R01-RET-BASIC-1-6}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和元年度再試験 問1-6}
+\label{q:r01-ret-basic-1-6}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 故障前後と保全時期の決定基準から、予防・事後・状態監視・時間計画の保全を対応させる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 故障前後と保全時期の決定基準から、予防・事後・状態監視・時間計画の保全を対応させる。
+
+\paragraph{必要知識} 故障前/後、暦・運転時間の予定、状態測定による処置判断、定期点検と処置時期の区別。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 故障を防ぐ目的で故障前に行う予防保全と、故障後に回復する事後保全を分ける。状態監視保全は点検値等から状態を評価して必要な処置を行う。時間計画保全では暦や運転時間等で予定を決め、定期的な保全や経時に基づく保全が対応する。本問の第三欄は時間計画、表の五欄は予防・事後・時間計画・定期・経時、5である。両年度は第三欄が異なるため、用語が似ているだけで候補を転用しない。状態を確認する点検が定期的であっても、それだけで状態に基づく処置が時間計画保全へ変わるわけではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 予防・事後・劣化基準・状態監視・経時。第3欄は時間計画であり劣化基準ではない。第4欄は定期であり状態監視ではない。\par
+
+\noindent\textbf{2：不適合} 状態監視・経時・時間計画・定期・予防。第1欄は予防であり状態監視ではない。第2欄は事後であり経時ではない。第5欄は経時であり予防ではない。\par
+
+\noindent\textbf{3：不適合} 状態監視・事後・劣化基準・定期・経時。第1欄は予防であり状態監視ではない。第3欄は時間計画であり劣化基準ではない。\par
+
+\noindent\textbf{4：不適合} 定期・経時・時間計画・状態監視・事後。第1欄は予防であり定期ではない。第2欄は事後であり経時ではない。第4欄は定期であり状態監視ではない。第5欄は経時であり事後ではない。\par
+
+\noindent\textbf{5：適合（記載条件内）} 予防・事後・時間計画・定期・経時。故障前/後、保全時期の判断基準、定期と経時の対応が一致する。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:maintenance]{第\ref*{theory:dependability:maintenance}節}
+
+\par 参考：\cite{maintenance_mlit_2013}。
+
+\paragraph{関連問題} \hyperref[q:h26-reg-basic-1-5]{H26-REG-BASIC-1-5}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{単体法・双対と多目的最適化}
+
+\subsection{令和元年度再試験 問1-2}
+\label{q:r01-ret-basic-1-2}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textbf{検討未確定：} 原文の「全ての目的関数を同時に改善できない」は全成分の厳密改善を意味すると弱パレートの条件であり通常の非支配性より弱い。初回/公式3と定義上の反例を別々に保持。
+
+\paragraph{問題の要旨} 線形計画の解法と双対、多目的設計の相反関係とパレートの意味を整理する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 線形計画の解法と双対、多目的設計の相反関係とパレートの意味を整理する。
+
+\paragraph{必要知識} 線形計画、基底交換、弱/強双対、可行集合、目的間の相反、支配と弱パレートの論理。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 線形目的と線形制約の計画問題の代表解法はシンプレックス（単体）法であり、制約の重みを変数にする対応問題は双対である。複数の目的の改善が相反する関係はトレードオフで、他の可行解に支配されない解がパレート最適解である。表の意図はシンプレックス・双対・トレードオフ・パレートの3である。ただし最小化で「全てを同時に改善」を全成分の厳密減少と読むと弱パレートの条件になる。可行集合 \(\{(0,1),(0,0)\}\) では(0,1)は全成分の厳密減少を受けないが(0,0)に支配され、通常のパレート最適ではない。通常の定義は全成分で悪化せず少なくとも一成分を厳密改善する他解が存在しないことである。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} シンプレックス・逆・トレードオン・パレート。線形計画で対応する問題は双対であり逆問題ではない。相反する改善はトレードオフである。\par
+
+\noindent\textbf{2：不適合} シンプレックス・逆・トレードオフ・アクティブ。双対を逆とし、非支配解の呼称をアクティブとする点が違う。\par
+
+\noindent\textbf{3：適合（記載条件内）} シンプレックス・双対・トレードオフ・パレート。単体法、双対、目的間の相反、意図されたパレートに対応する。ただし原文の全目的を同時改善できないという定義は弱パレートにも当てはまる。\par
+
+\noindent\textbf{4：不適合} コンプレックス・逆・トレードオン・アクティブ。単体法のシンプレックス、双対、トレードオフ、パレートの四欄が異なる。\par
+
+\noindent\textbf{5：不適合} コンプレックス・双対・トレードオン・パレート。単体法はシンプレックス、相反関係はトレードオフなので二欄が違う。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:optimization]{第\ref*{theory:dependability:optimization}節}
+
+\par 参考：\cite{design_mit_lp}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{製造物の欠陥と通常の安全性}
+
+\subsection{平成25年度 問1-1}
+\label{q:h25-reg-basic-1-1}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textbf{検討未確定：} 原典の条文と平成30年消費者庁逐条解説の第1条・第2条を照合した。e-Gov現行本文は取得不能であり、出題年から現行までの全改正履歴は未照合。空欄の独立解と公式正答を保持し、現在の法全体が当時と同じだとはしない。
+
+\paragraph{問題の要旨} 製造物責任法の保護目的と、通常有すべき安全性を欠くという欠陥の意味を整理する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 製造物責任法の保護目的と、通常有すべき安全性を欠くという欠陥の意味を整理する。
+
+\paragraph{必要知識} 第1条の目的、第2条の製造物/欠陥、機能と安全性の違い、引渡時点と予見可能な使用。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 第1条の対象は製造物、責任の根拠となる性状は欠陥、保護を図る相手は被害者である。第2条の欠陥は、製造物の特性、通常予見される使用形態、引渡時期等を考慮した通常有すべき安全性の不足である。従って製造物・欠陥・被害者・安全性の行を選ぶ。単なる故障、破損、性能や機能の不足が全てこの法の欠陥になるとは限らず、絶対に危険がないという要求でもない。被害者は購入者又は自然人だけへ限定しない。出題当時の原典条文と平成30年解説の比較に基づく空欄判断であり、時効等を含む法全体の現行解説とは区別する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 製造物・欠陥・被害者・機能性。第4欄は安全性であり機能性ではない。\par
+
+\noindent\textbf{2：不適合} 設計物・欠陥・製造者・安全性。第1欄は製造物であり設計物ではない。第3欄は被害者であり製造者ではない。\par
+
+\noindent\textbf{3：適合（記載条件内）} 製造物・欠陥・被害者・安全性。第1条の対象・責任根拠・保護目的、第2条の欠陥の安全性概念に一致する。\par
+
+\noindent\textbf{4：不適合} 設計物・破損・被害者・機能性。第1欄は製造物であり設計物ではない。第2欄は欠陥であり破損ではない。第4欄は安全性であり機能性ではない。\par
+
+\noindent\textbf{5：不適合} 製造物・破損・製造者・機能性。第2欄は欠陥であり破損ではない。第3欄は被害者であり製造者ではない。第4欄は安全性であり機能性ではない。\par
+
+\paragraph{再利用する考え方} 法定の欠陥と単なる不調を分け、設計・製造・指示警告の三側面から安全性を検討する。出題時点と現行解説の確認範囲を混同しない。
+
+\paragraph{共通理論} \hyperref[theory:dependability:liability]{第\ref*{theory:dependability:liability}節}
+
+\par 参考：\cite{design_caa_pl1,design_caa_pl2}。
+
+\paragraph{関連問題} \hyperref[q:h27-reg-basic-1-4]{H27-REG-BASIC-1-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成27年度 問1-4}
+\label{q:h27-reg-basic-1-4}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textbf{検討未確定：} 原典の条文と平成30年消費者庁逐条解説の第1条・第2条を照合した。e-Gov現行本文は取得不能であり、出題年から現行までの全改正履歴は未照合。空欄の独立解と公式正答を保持し、現在の法全体が当時と同じだとはしない。
+
+\paragraph{問題の要旨} 製造物責任法の保護目的と、通常有すべき安全性を欠くという欠陥の意味を整理する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 製造物責任法の保護目的と、通常有すべき安全性を欠くという欠陥の意味を整理する。
+
+\paragraph{必要知識} 第1条の目的、第2条の製造物/欠陥、機能と安全性の違い、引渡時点と予見可能な使用。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 第1条の対象は製造物、責任の根拠となる性状は欠陥、保護を図る相手は被害者である。第2条の欠陥は、製造物の特性、通常予見される使用形態、引渡時期等を考慮した通常有すべき安全性の不足である。従って製造物・欠陥・被害者・安全性の行を選ぶ。単なる故障、破損、性能や機能の不足が全てこの法の欠陥になるとは限らず、絶対に危険がないという要求でもない。被害者は購入者又は自然人だけへ限定しない。出題当時の原典条文と平成30年解説の比較に基づく空欄判断であり、時効等を含む法全体の現行解説とは区別する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 製造物・欠陥・被害者・機能性。第4欄は安全性であり機能性ではない。\par
+
+\noindent\textbf{2：不適合} 設計物・欠陥・製造者・安全性。第1欄は製造物であり設計物ではない。第3欄は被害者であり製造者ではない。\par
+
+\noindent\textbf{3：適合（記載条件内）} 製造物・欠陥・被害者・安全性。第1条の対象・責任根拠・保護目的、第2条の欠陥の安全性概念に一致する。\par
+
+\noindent\textbf{4：不適合} 設計物・破損・被害者・機能性。第1欄は製造物であり設計物ではない。第2欄は欠陥であり破損ではない。第4欄は安全性であり機能性ではない。\par
+
+\noindent\textbf{5：不適合} 製造物・破損・製造者・機能性。第2欄は欠陥であり破損ではない。第3欄は被害者であり製造者ではない。第4欄は安全性であり機能性ではない。\par
+
+\paragraph{再利用する考え方} 法定の欠陥と単なる不調を分け、設計・製造・指示警告の三側面から安全性を検討する。出題時点と現行解説の確認範囲を混同しない。
+
+\paragraph{共通理論} \hyperref[theory:dependability:liability]{第\ref*{theory:dependability:liability}節}
+
+\par 参考：\cite{design_caa_pl1,design_caa_pl2}。
+
+\paragraph{関連問題} \hyperref[q:h25-reg-basic-1-1]{H25-REG-BASIC-1-1}, \hyperref[q:h30-reg-basic-1-6]{H30-REG-BASIC-1-6}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成30年度 問1-6}
+\label{q:h30-reg-basic-1-6}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textbf{検討未確定：} 原典の条文と平成30年消費者庁逐条解説の第1条・第2条を照合した。e-Gov現行本文は取得不能であり、出題年から現行までの全改正履歴は未照合。空欄の独立解と公式正答を保持し、現在の法全体が当時と同じだとはしない。
+
+\paragraph{問題の要旨} 製造物責任法の保護目的と、通常有すべき安全性を欠くという欠陥の意味を整理する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 製造物責任法の保護目的と、通常有すべき安全性を欠くという欠陥の意味を整理する。
+
+\paragraph{必要知識} 第1条の目的、第2条の製造物/欠陥、機能と安全性の違い、引渡時点と予見可能な使用。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 第1条の対象は製造物、責任の根拠となる性状は欠陥、保護を図る相手は被害者である。第2条の欠陥は、製造物の特性、通常予見される使用形態、引渡時期等を考慮した通常有すべき安全性の不足である。従って製造物・欠陥・被害者・安全性の行を選ぶ。単なる故障、破損、性能や機能の不足が全てこの法の欠陥になるとは限らず、絶対に危険がないという要求でもない。被害者は購入者又は自然人だけへ限定しない。出題当時の原典条文と平成30年解説の比較に基づく空欄判断であり、時効等を含む法全体の現行解説とは区別する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 製造物・故障・被害者・機能性。第2欄は欠陥であり故障ではない。第4欄は安全性であり機能性ではない。\par
+
+\noindent\textbf{2：不適合} 設計物・欠陥・製造者・安全性。第1欄は製造物であり設計物ではない。第3欄は被害者であり製造者ではない。\par
+
+\noindent\textbf{3：不適合} 設計物・破損・被害者・信頼性。第1欄は製造物であり設計物ではない。第2欄は欠陥であり破損ではない。第4欄は安全性であり信頼性ではない。\par
+
+\noindent\textbf{4：適合（記載条件内）} 製造物・欠陥・被害者・安全性。第1条の対象・責任根拠・保護目的、第2条の欠陥の安全性概念に一致する。\par
+
+\noindent\textbf{5：不適合} 製造物・破損・製造者・機能性。第2欄は欠陥であり破損ではない。第3欄は被害者であり製造者ではない。第4欄は安全性であり機能性ではない。\par
+
+\paragraph{再利用する考え方} 法定の欠陥と単なる不調を分け、設計・製造・指示警告の三側面から安全性を検討する。出題時点と現行解説の確認範囲を混同しない。
+
+\paragraph{共通理論} \hyperref[theory:dependability:liability]{第\ref*{theory:dependability:liability}節}
+
+\par 参考：\cite{design_caa_pl1,design_caa_pl2}。
+
+\paragraph{関連問題} \hyperref[q:h27-reg-basic-1-4]{H27-REG-BASIC-1-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{直列・並列の信頼度と独立性}
+
+\subsection{平成23年度 問1-1}
+\label{q:h23-reg-basic-1-1}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textbf{検討未確定：} 原典は要素/路線の独立を明記しない。周辺信頼度だけでは結合確率が決まらず、積の式は独立モデルを補った条件付き解である。公式正答と独立初回を保持する。
+
+\paragraph{問題の要旨} 既存の二路線を直列経路とし、直結路線の追加で全体の信頼度を指定値へ上げる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 既存の二路線を直列経路とし、直結路線の追加で全体の信頼度を指定値へ上げる。
+
+\paragraph{必要知識} 直列は全要素成功の共通事象、並列は少なくとも一つ成功の和事象。独立時の積と補集合、確率範囲と丸め。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 東京から大阪まで名古屋経由の成功事象は二路線の両成功である。独立なら \(R_0=0.8\cdot0.6=0.48\)。直結の信頼度を \(x\) とし、旧経路との独立も仮定すると \(R=1-(1-0.48)(1-x)\)。\(R=0.8\) より \(0.52(1-x)=0.2\)、\(x=1-0.2/0.52=0.6153846\)、最も近い0.62の2である。路線の共通災害で同時不通になる場合にこの独立式をそのまま使わない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 0.52。導出値0.6153846と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{2：適合（記載条件内）} 0.62。導出値0.6153846に最も近い。\par
+
+\noindent\textbf{3：不適合} 0.72。導出値0.6153846と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{4：不適合} 0.82。導出値0.6153846と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{5：不適合} 0.92。導出値0.6153846と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:series]{第\ref*{theory:dependability:series}節}, \hyperref[theory:dependability:parallel]{第\ref*{theory:dependability:parallel}節}
+
+\par 参考：\cite{reliability_nist_series,reliability_nist_parallel}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成24年度 問1-1}
+\label{q:h24-reg-basic-1-1}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textbf{検討未確定：} 原典は要素/路線の独立を明記しない。周辺信頼度だけでは結合確率が決まらず、積の式は独立モデルを補った条件付き解である。公式正答と独立初回を保持する。
+
+\paragraph{問題の要旨} 並列二要素と直列一要素からなる経路へ、もう一経路を並列接続した信頼度を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 並列二要素と直列一要素からなる経路へ、もう一経路を並列接続した信頼度を求める。
+
+\paragraph{必要知識} 直列は全要素成功の共通事象、並列は少なくとも一つ成功の和事象。独立時の積と補集合、確率範囲と丸め。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 図を内側から読む。独立なら \(R_{12}=1-(1-0.9)(1-0.8)=0.98\)、これと \(R_3=0.5\) の直列は \(0.49\)。\(R_4=0.7\) がこの経路と並列なので \(R=1-(1-0.49)(1-0.7)=0.8474\)。近い0.85の4である。最外側の並列を、全四要素の直列や全四要素の並列と読み替えない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 0.25。導出値0.8474と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{2：不適合} 0.60。導出値0.8474と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{3：不適合} 0.73。導出値0.8474と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{4：適合（記載条件内）} 0.85。導出値0.8474に最も近い。\par
+
+\noindent\textbf{5：不適合} 0.91。導出値0.8474と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:series]{第\ref*{theory:dependability:series}節}, \hyperref[theory:dependability:parallel]{第\ref*{theory:dependability:parallel}節}
+
+\par 参考：\cite{reliability_nist_series,reliability_nist_parallel}。
+
+\paragraph{関連問題} \hyperref[q:h26-reg-basic-1-4]{H26-REG-BASIC-1-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成26年度 問1-4}
+\label{q:h26-reg-basic-1-4}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textbf{検討未確定：} 原典は要素/路線の独立を明記しない。周辺信頼度だけでは結合確率が決まらず、積の式は独立モデルを補った条件付き解である。公式正答と独立初回を保持する。
+
+\paragraph{問題の要旨} 四要素の直並列系と同じ信頼度を持つ三要素直列系の、単体信頼度を逆算する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 四要素の直並列系と同じ信頼度を持つ三要素直列系の、単体信頼度を逆算する。
+
+\paragraph{必要知識} 直列は全要素成功の共通事象、並列は少なくとも一つ成功の和事象。独立時の積と補集合、確率範囲と丸め。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 独立ならA系の両端の0.9は直列、中央の二つの0.9は並列である。\(R_A=0.9^2[1-(1-0.9)^2]=0.8019\)。B系は同じ信頼度 \(x\) の三要素の直列なので \(x^3=0.8019\)、\(x=0.8019^{1/3}=0.9290521\)。近い0.93の3である。初回記録の概算0.928はそのまま保存し、ここで精算値を示す。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 0.87。導出値0.9290521と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{2：不適合} 0.90。導出値0.9290521と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{3：適合（記載条件内）} 0.93。導出値0.9290521に最も近い。\par
+
+\noindent\textbf{4：不適合} 0.96。導出値0.9290521と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{5：不適合} 0.99。導出値0.9290521と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:series]{第\ref*{theory:dependability:series}節}, \hyperref[theory:dependability:parallel]{第\ref*{theory:dependability:parallel}節}
+
+\par 参考：\cite{reliability_nist_series,reliability_nist_parallel}。
+
+\paragraph{関連問題} \hyperref[q:h24-reg-basic-1-1]{H24-REG-BASIC-1-1}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成27年度 問1-1}
+\label{q:h27-reg-basic-1-1}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 同じ単体信頼度を持つ単独・二要素直列・二要素並列の大小を比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 同じ単体信頼度を持つ単独・二要素直列・二要素並列の大小を比較する。
+
+\paragraph{必要知識} 独立二事象、共通/和事象、0<r<1での不等式。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 独立性は原典に明記される。単独 \(A=0.9\)、二要素直列 \(B=0.9^2=0.81\)、二要素並列 \(C=1-(1-0.9)^2=0.99\) なので \(B<A<C\)、5である。一般に \(0<r<1\) なら \(r^2<r<2r-r^2\) であり、両端r=\allowbreak{}0,1では等しくなる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} B>A>C。直列Bが単独Aより高いという最初の関係が逆である。\par
+
+\noindent\textbf{2：不適合} B>A=\allowbreak{}C。BはAより小さく、AとCも等しくない。\par
+
+\noindent\textbf{3：不適合} B=\allowbreak{}A=\allowbreak{}C。三者は0.81、0.90、0.99で等しくない。\par
+
+\noindent\textbf{4：不適合} B<A=\allowbreak{}C。B<Aは合うがA=\allowbreak{}Cは違う。\par
+
+\noindent\textbf{5：適合（記載条件内）} B<A<C。0.81<0.90<0.99に一致する。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:series]{第\ref*{theory:dependability:series}節}, \hyperref[theory:dependability:parallel]{第\ref*{theory:dependability:parallel}節}
+
+\par 参考：\cite{reliability_nist_series,reliability_nist_parallel}。
+
+\paragraph{関連問題} \hyperref[q:r03-reg-basic-1-2]{R03-REG-BASIC-1-2}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成28年度 問1-1}
+\label{q:h28-reg-basic-1-1}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textbf{検討未確定：} 原典は要素/路線の独立を明記しない。周辺信頼度だけでは結合確率が決まらず、積の式は独立モデルを補った条件付き解である。公式正答と独立初回を保持する。さらに非零信頼度の条件がなくx=\allowbreak{}0も解である。公式4はx>0を補った解として示す。
+
+\paragraph{問題の要旨} 共通信頼度の未知要素を含む二つの直並列系が等しいとき、全体の信頼度を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 共通信頼度の未知要素を含む二つの直並列系が等しいとき、全体の信頼度を求める。
+
+\paragraph{必要知識} 直列は全要素成功の共通事象、並列は少なくとも一つ成功の和事象。独立時の積と補集合、確率範囲と丸め。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 独立なら \(R_A=0.9^2[1-(1-x)^2]=0.81(2x-x^2)\)、\(R_B=0.95x^2\)。等式は \(1.62x-1.76x^2=0\)。非零の根を選ぶ場合 \(x=1.62/1.76=0.9204545\)、全体系 \(R=0.95x^2=0.8048747\) なので0.805の4である。ただし原典はx>0を明示せず、x=\allowbreak{}0でも等式を満たしR=\allowbreak{}0となる。未知単体xと問われた全体系Rも分ける。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 0.857。導出値0.8048747と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{2：不適合} 0.839。導出値0.8048747と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{3：不適合} 0.822。導出値0.8048747と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{4：適合（記載条件内）} 0.805。導出値0.8048747に最も近い。\par
+
+\noindent\textbf{5：不適合} 0.787。導出値0.8048747と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:series]{第\ref*{theory:dependability:series}節}, \hyperref[theory:dependability:parallel]{第\ref*{theory:dependability:parallel}節}
+
+\par 参考：\cite{reliability_nist_series,reliability_nist_parallel}。
+
+\paragraph{関連問題} \hyperref[q:h30-reg-basic-1-1]{H30-REG-BASIC-1-1}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{平成30年度 問1-1}
+\label{q:h30-reg-basic-1-1}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textbf{検討未確定：} 原典は要素/路線の独立を明記しない。周辺信頼度だけでは結合確率が決まらず、積の式は独立モデルを補った条件付き解である。公式正答と独立初回を保持する。
+
+\paragraph{問題の要旨} 未知単体信頼度を含む直並列系と三要素直列系の等式から、系の信頼度を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 未知単体信頼度を含む直並列系と三要素直列系の等式から、系の信頼度を求める。
+
+\paragraph{必要知識} 直列は全要素成功の共通事象、並列は少なくとも一つ成功の和事象。独立時の積と補集合、確率範囲と丸め。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 独立なら \(R_A=0.95^2(2x-x^2)=0.9025(2x-x^2)\)、\(R_B=x^3\)。原典の \(x>0\) を用いて割ると \(x^2+0.9025x-1.805=0\)。正根は \(x=(-0.9025+\sqrt{0.9025^2+4\cdot1.805})/2=0.9660102\)、もう一根は負で不適である。問われる系の信頼度は \(x^3=0.9014573\)、0.901の3である。0.966は単体の値であり全体値ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 0.835。導出値0.9014573と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{2：不適合} 0.857。導出値0.9014573と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{3：適合（記載条件内）} 0.901。導出値0.9014573に最も近い。\par
+
+\noindent\textbf{4：不適合} 0.945。導出値0.9014573と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{5：不適合} 0.966。導出値0.9014573と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:series]{第\ref*{theory:dependability:series}節}, \hyperref[theory:dependability:parallel]{第\ref*{theory:dependability:parallel}節}
+
+\par 参考：\cite{reliability_nist_series,reliability_nist_parallel}。
+
+\paragraph{関連問題} \hyperref[q:h28-reg-basic-1-1]{H28-REG-BASIC-1-1}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和2年度 問1-6}
+\label{q:r02-reg-basic-1-6}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 同じ部品の並列数を増やし、直列部品を含む系で要求信頼度を初めて満たす個数を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 同じ部品の並列数を増やし、直列部品を含む系で要求信頼度を初めて満たす個数を求める。
+
+\paragraph{必要知識} 直列は全要素成功の共通事象、並列は少なくとも一つ成功の和事象。独立時の積と補集合、確率範囲と丸め。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 独立性が明記される。信頼度0.7のn個並列と0.95の一要素が直列であるから \(R_n=0.95(1-0.3^n)\)。\(R_n\ge0.94\) は \(0.3^n\le1/95\)。\(n\ge2\) の整数を比較すると \(R_2=0.8645\)、\(R_3=0.92435\)、\(R_4=0.942305\)、\(R_5=0.9476915\)。単調増加なので最小は4、候補3である。上限は0.95であり0.94は達成可能である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 2。導出値最小n=\allowbreak{}4と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{2：不適合} 3。導出値最小n=\allowbreak{}4と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{3：適合（記載条件内）} 4。導出値最小n=\allowbreak{}4に最も近い。\par
+
+\noindent\textbf{4：不適合} 5。導出値最小n=\allowbreak{}4と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{5：不適合} nをいくつにしても信頼度0.94以上にならない。導出値最小n=\allowbreak{}4と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:series]{第\ref*{theory:dependability:series}節}, \hyperref[theory:dependability:parallel]{第\ref*{theory:dependability:parallel}節}
+
+\par 参考：\cite{reliability_nist_series,reliability_nist_parallel}。
+
+\paragraph{関連問題} \hyperref[q:r05-reg-basic-1-4]{R05-REG-BASIC-1-4}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和3年度 問1-2}
+\label{q:r03-reg-basic-1-2}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 同じ三要素の接続順序を変えた五つの系の信頼度を、成功経路から比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 同じ三要素の接続順序を変えた五つの系の信頼度を、成功経路から比較する。
+
+\paragraph{必要知識} 五つの接続の識別、二要素直列経路と一要素並列経路、単体と系の値の区別。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 独立を前提とする原典の接続を式へ写す。\(A=1-(1-0.9\cdot0.8)(1-0.7)=0.916\)、\(B=1-(1-0.9\cdot0.7)(1-0.8)=0.926\)、\(C=1-(1-0.8\cdot0.7)(1-0.9)=0.956\)。\(D=0.8[1-(1-0.9)(1-0.7)]=0.776\)、\(E=0.9[1-(1-0.8)(1-0.7)]=0.846\)。従ってC>B>A>E>D、2である。単体の値の順だけを見ず、どの要素が一つの独立経路として全体の停止を防げるかを読む。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} C>B>E>A>D。A=\allowbreak{}0.916はE=\allowbreak{}0.846より高く、その順序が逆である。\par
+
+\noindent\textbf{2：適合（記載条件内）} C>B>A>E>D。C=\allowbreak{}0.956、B=\allowbreak{}0.926、A=\allowbreak{}0.916、E=\allowbreak{}0.846、D=\allowbreak{}0.776の順位に一致する。\par
+
+\noindent\textbf{3：不適合} C>E>B>D>A。EはBより低く、DはAより低い。\par
+
+\noindent\textbf{4：不適合} E>D>A>B>C。EとDは前三系より低いので上位に置けない。\par
+
+\noindent\textbf{5：不適合} E>D>C>B>A。EとDをCより上位に置く点が違う。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:series]{第\ref*{theory:dependability:series}節}, \hyperref[theory:dependability:parallel]{第\ref*{theory:dependability:parallel}節}
+
+\par 参考：\cite{reliability_nist_series,reliability_nist_parallel}。
+
+\paragraph{関連問題} \hyperref[q:h27-reg-basic-1-1]{H27-REG-BASIC-1-1}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{多数決冗長系の信頼度}
+
+\subsection{令和5年度 問1-4}
+\label{q:r05-reg-basic-1-4}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 三要素のうち二つ以上が動けば成功する多数決系の信頼度の区間を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 三要素のうち二つ以上が動けば成功する多数決系の信頼度の区間を求める。
+
+\paragraph{必要知識} 直列は全要素成功の共通事象、並列は少なくとも一つ成功の和事象。独立時の積と補集合、確率範囲と丸め。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 独立な三要素の単体信頼度は0.7である。成功事象は「ちょうど二つ成功」と「三つ成功」の排反和であるから \(R={3\choose2}0.7^2(1-0.7)+0.7^3=0.441+0.343=0.784\)。\(0.75\le R<0.80\) の4である。少なくとも一つ成功する全並列、全三つ必要な直列、単に二要素だけを選ぶ直列とは異なる。判定器自身の故障は所与モデルに含まれておらず、その信頼性を実装で無条件に保証しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} \(0.90\le R\le1.00\)。導出値0.784と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{2：不適合} \(0.85\le R<0.90\)。導出値0.784と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{3：不適合} \(0.80\le R<0.85\)。導出値0.784と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\noindent\textbf{4：適合（記載条件内）} \(0.75\le R<0.80\)。導出値0.784に最も近い。\par
+
+\noindent\textbf{5：不適合} \(0.70\le R<0.75\)。導出値0.784と一致せず、本問の接続・条件を満たす数値ではない。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:voting]{第\ref*{theory:dependability:voting}節}
+
+\par 参考：\cite{reliability_nist_voting}。
+
+\paragraph{関連問題} \hyperref[q:r02-reg-basic-1-6]{R02-REG-BASIC-1-6}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{用途・基準時点ごとの安全係数}
+
+\subsection{平成23年度 問1-5}
+\label{q:h23-reg-basic-1-5}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理4頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textbf{検討未確定：} 航空宇宙と薬品の対象が広すぎ、四値の全称命題は検証できない。主索4.0は平成25年改正反映表で確認したが2011当時版の全条件未照合。公式/独立4を保持して適用範囲を限定。
+
+\paragraph{問題の要旨} 異なる用途で使われる安全率の代表値を比較し、それぞれの定義と条件を区別する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 異なる用途で使われる安全率の代表値を比較し、それぞれの定義と条件を区別する。
+
+\paragraph{必要知識} 限界/終局荷重比、切断荷重/最大荷重、無毒性量/許容摂取量、主索と端部、設置/使用時の区別。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 代表値の意図を、航空機の構造1.5、玉掛けワイヤロープ6、摂取量の毒性評価100、使用時のエレベーター主索4として読むと4である。2011年米国25.303は航空機の限界荷重に原則1.5を掛ける規定であり、ロケット全体の普遍規準ではない。クレーン等安全規則213条は玉掛けワイヤロープの切断荷重/最大荷重を6以上とする。食品安全委員会の2008年説明は残留農薬等のADIを無毒性量から通常100で割る扱いであって治療薬全般の定数ではない。国交省の平成25年改正反映告示表では、限定された主索の常時使用時4.0、設置時5.0、端部は別値である。分母・対象・時点が異なる数値を同じ物理量の絶対的安全余裕として比較しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 100・6・1000・4。航空機の代表1.5、摂取量評価の代表100という対応と異なる。\par
+
+\noindent\textbf{2：不適合} 1.5・4・100・6。玉掛けワイヤロープは6以上であり4ではない。使用時主索の表値も4.0であって6ではない。\par
+
+\noindent\textbf{3：不適合} 100・4・1000・6。航空機、玉掛け、摂取量評価、使用時主索の四代表値との対応が違う。\par
+
+\noindent\textbf{4：適合（記載条件内）} 1.5・6・100・4。意図された四代表値1.5・6・100・4に対応する。ただし航空宇宙/薬品という広い対象を一律の規定値とする根拠にはしない。\par
+
+\noindent\textbf{5：不適合} 10・4・100・6。航空機の代表は1.5、玉掛けは6、対象告示表の使用時主索は4.0なので三欄が違う。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:factor]{第\ref*{theory:dependability:factor}節}
+
+\par 参考：\cite{design_faa_2011,design_mhlw_crane,design_fsc_adi,design_mlit_elevator}。
+
+\paragraph{関連問題} \hyperref[q:h29-reg-basic-1-2]{H29-REG-BASIC-1-2}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{平成27年度 問1-3}
+\label{q:h27-reg-basic-1-3}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textbf{検討未確定：} 安全率の一般的な2以上という説明は基準強度・材料・荷重・規準で変わり普遍の下限ではない。公式/独立5を保持して代表的な許容応力モデルと区別する。
+
+\paragraph{問題の要旨} 許容応力の定義、安全率の代表値、線形弾性の法則と棒の伸びを対応させる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 許容応力の定義、安全率の代表値、線形弾性の法則と棒の伸びを対応させる。
+
+\paragraph{必要知識} 基準強さ/安全率、フックの法則、一定断面棒の伸び、固定する長さ・弾性係数・断面積。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 許容応力を基準の極限強さから定めるモデルは \(\sigma_{\mathrm{allow}}=\sigma_{\mathrm{u}}/n\)。線形弾性域の \(\sigma=E\varepsilon\) はフックの法則であり、一定断面・均一材料の軸荷重棒で \(\Delta L=FL/(EA)\)。L,E,Aを固定すると伸びは荷重Fに比例する。表の÷・2以上・フック・荷重の5である。ただし設問の一般的なnが2以上という代表的説明を、航空機やすべての設計規準へ適用する下限値にしない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} ÷・2以上・エネルギー・断面積。比例の法則はフックであり、同じL,E,Aの伸びは荷重に比例して断面積には反比例する。\par
+
+\noindent\textbf{2：不適合} ÷・2以上・フック・断面積。最後の比例先は荷重であり断面積ではない。\par
+
+\noindent\textbf{3：不適合} ×・1以下・フック・荷重。基準強度に安全率を掛けるのではなく割る。1以下は強度を十分下回る許容応力を作らない。\par
+
+\noindent\textbf{4：不適合} ×・1以下・エネルギー・断面積。演算、代表値、法則、比例先がいずれも想定された対応と異なる。\par
+
+\noindent\textbf{5：適合（記載条件内）} ÷・2以上・フック・荷重。基準強度を割る、設問の代表2以上、フックの法則、荷重比例の四欄が一致する。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:factor]{第\ref*{theory:dependability:factor}節}
+
+\par 参考：\cite{struct_mit_beam,design_faa_2011}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成29年度 問1-2}
+\label{q:h29-reg-basic-1-2}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textbf{検討未確定：} アの航空機/ロケット、ウの摂取薬品の範囲が規準を特定しない。100>6>1.5は限定された代表例の順序として保持し普遍命題にしない。
+
+\paragraph{問題の要旨} 航空宇宙・玉掛け・薬品の安全率の代表値の順序を、用途の違いを含めて比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 航空宇宙・玉掛け・薬品の安全率の代表値の順序を、用途の違いを含めて比較する。
+
+\paragraph{必要知識} 用途別の安全係数定義、基準荷重と毒性評価、代表値と規準値の差。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} アを航空機構造の原則1.5、イを玉掛けワイヤロープの6、ウをADI算定などの通常100という代表例として読むと、ウ>イ>ア、5である。数値の大きさは同じ破壊荷重比を使った横断的な安全順位ではない。毒性評価では種差と個体差等を補う不確実係数であり、航空機では限界荷重と終局荷重、玉掛けでは切断荷重と最大荷重の比である。治療薬、ロケットの全てに一律の代表値を適用しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} ア>イ>ウ。意図された代表値ではウが最も大きいので逆である。\par
+
+\noindent\textbf{2：不適合} イ>ウ>ア。100のウは6のイより大きい。\par
+
+\noindent\textbf{3：不適合} ウ>ア>イ。1.5のアは6のイより小さい。\par
+
+\noindent\textbf{4：不適合} ア>ウ>イ。1.5のアを100のウより大きくする点が違う。\par
+
+\noindent\textbf{5：適合（記載条件内）} ウ>イ>ア。限定した代表例100>6>1.5に一致する。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:factor]{第\ref*{theory:dependability:factor}節}
+
+\par 参考：\cite{design_faa_2011,design_mhlw_crane,design_fsc_adi}。
+
+\paragraph{関連問題} \hyperref[q:h23-reg-basic-1-5]{H23-REG-BASIC-1-5}
+
+\par 難易度 2（校準初稿）、優先度未評価。
 
 \subsection{令和7年度 問1-3}
 \label{q:r07-reg-basic-1-3}
@@ -815,7 +2033,698 @@
 
 \textbf{公式正答：} 2（single）。
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\par\textbf{検討未確定：} 2以上と1.3～2.0は設問の一般的代表値である。全材料・全用途に成立する統一規準を一次資料で確認していない。公式/独立2を保持し普遍の安全条件としない。
+
+\paragraph{問題の要旨} 許容応力を基準強さから定める演算と、静的強度・疲労限度に対する代表安全率を区別する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 全候補を比較し最も適切な語又は数値・順位を選ぶ。\par
+
+\noindent\textbf{原典照合：} 25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。\par
+
+\noindent\textbf{前提：} 事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。\par
+
+\paragraph{問われる核心} 許容応力を基準強さから定める演算と、静的強度・疲労限度に対する代表安全率を区別する。
+
+\paragraph{必要知識} 許容応力の次元、基準強さの選定、引張強さと疲労限度、代表安全率と規準。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 原典の分数は基準強さを安全率nで割る \(\sigma_{\mathrm{allow}}=\sigma_{\mathrm{ref}}/n\) である。nは無次元なので結果は応力の次元を持つ。引張強さを基準とする一般的代表値2以上、疲労限度を基準とする代表範囲1.3～2.0を表に置く2である。13～20という十倍の範囲へ小数点を落とさない。一方、実設計では降伏・座屈・疲労寿命・使用条件と指定規準を確認する必要があり、この代表範囲を全用途の法定下限とはしない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 基準強さ/n・1以下・13～20。Bの1以下と疲労側13～20が設問の代表値に一致しない。\par
+
+\noindent\textbf{2：適合（記載条件内）} 基準強さ/n・2以上・1.3～2.0。許容応力の次元と演算、設問で想定する静的2以上・疲労1.3～2.0に対応する。\par
+
+\noindent\textbf{3：不適合} 基準強さ/n・2以上・13～20。Cは小数点を落とした13～20であり1.3～2.0ではない。\par
+
+\noindent\textbf{4：不適合} n/基準強さ・1以下・1.3～2.0。Aは応力の逆数となり許容応力の次元でなく、Bも違う。\par
+
+\noindent\textbf{5：不適合} n/基準強さ・2以上・13～20。Aの次元とCの小数点が違う。\par
+
+\paragraph{再利用する考え方} 信頼度と稼働率、安全性と機能継続、規準に依存する係数を分ける。論理接続を事象に置き換え、積を使う前に独立性を確認する。
+
+\paragraph{共通理論} \hyperref[theory:dependability:factor]{第\ref*{theory:dependability:factor}節}
+
+\par 参考：\cite{struct_mit_beam,struct_nims_data,design_faa_2011}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{線形・凸・整数計画の成立条件}
+
+\subsection{令和元年度 問1-1}
+\label{q:r01-reg-basic-1-1}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 線形・凸・整数計画の成立条件。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{列順：} 線形計画/図解法/凸計画/整数計画。\par
+
+\noindent\textbf{O/X：} 正/誤。\par
+
+\paragraph{問われる核心} 線形・凸・整数計画の成立条件。
+
+\paragraph{必要知識} 線形制約、凸最小化、局所と大域、整数計画と近似。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} アは目的だけ線形ならよいとするので誤りで、線形計画は制約も線形。イは二変数の図解法で正。ウは凸実行可能集合上の凸関数の最小化では局所最適が大域最適となり正。エは整数問題の困難さとヒューリスティック近似の利用で正。XOOOの5。ヒューリスティックが全問題の最適性を保証するわけではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} OOXX。各文又は定義の判定を先に行う。並びが判定 XOOO と異なる。\par
+
+\noindent\textbf{2：不適切} OXOX。各文又は定義の判定を先に行う。並びが判定 XOOO と異なる。\par
+
+\noindent\textbf{3：不適切} XOXO。各文又は定義の判定を先に行う。並びが判定 XOOO と異なる。\par
+
+\noindent\textbf{4：不適切} XXOO。各文又は定義の判定を先に行う。並びが判定 XOOO と異なる。\par
+
+\noindent\textbf{5：条件内で適切} XOOO。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\paragraph{再利用する考え方} 線形制約、凸最小化、局所と大域、整数計画と近似。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:convex]{第\ref*{theory:design:convex}節}
+
+\par 参考：\cite{finish56_convex}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{検査費用と期待損害の合計を最小化}
+
+\subsection{平成30年度 問1-5}
+\label{q:h30-reg-basic-1-5}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 検査費用と期待損害の合計を最小化。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{確率：} 1/(x+2)\textasciicircum{}2。\par
+
+\noindent\textbf{検査費：} 1回30万円。\par
+
+\noindent\textbf{不具合損害：} 3240万円。\par
+
+\paragraph{問われる核心} 検査費用と期待損害の合計を最小化。
+
+\paragraph{必要知識} 期待損害、総費用、微分と凸性、整数候補の比較。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 万円でC(x)=\allowbreak{}30x+3240/(x+2)\textasciicircum{}2。Cprime=\allowbreak{}30-6480/(x+2)\textasciicircum{}3=\allowbreak{}0からx+2=\allowbreak{}6、x=\allowbreak{}4。二階微分19440/(x+2)\textasciicircum{}4>0なので最小。整数候補でもC(3)=\allowbreak{}219.6、C(4)=\allowbreak{}210、C(5)=\allowbreak{}216.122...万円で4回、3。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 2。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{2：不適切} 3。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{3：条件内で適切} 4。解法の条件と結果を照合する。 計算結果と一致。\par
+
+\noindent\textbf{4：不適切} 5。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{5：不適切} 6。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\paragraph{再利用する考え方} 期待損害、総費用、微分と凸性、整数候補の比較。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:inspection]{第\ref*{theory:design:inspection}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{便益の期待値から建設費を引く}
+
+\subsection{平成29年度 問1-3}
+\label{q:h29-reg-basic-1-3}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 決定と確率分岐を後ろから評価する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{状態：} S1 .6、S2 .1、S3 .3。\par
+
+\noindent\textbf{S1：} A1=\allowbreak{}(5,.5;7,.5)、A2=\allowbreak{}8。\par
+
+\noindent\textbf{S2：} A1=\allowbreak{}(8,.6;10,.4)、A2=\allowbreak{}12。\par
+
+\noindent\textbf{S3：} 3。\par
+
+\noindent\textbf{恒久：} 6.5、額は全て億円。\par
+
+\paragraph{問われる核心} 決定と確率分岐を後ろから評価する。
+
+\paragraph{必要知識} 条件付き期待値、決定ノードの最適化、後向き評価。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 状態S1ではA1の期待損失は.5×5+.5×7=\allowbreak{}6億円、A2の8より小さい。S2はA1が.6×8+.4×10=\allowbreak{}8.8、A2の12より小さい。状況対応全体は.6×6+.1×8.8+.3×3=\allowbreak{}5.38億円。恒久6.5より小さく、最も近い5.4と状況対応の2。決定ノードでは平均せず小さい案を選び、機会ノードだけ確率で平均する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 4.5 状況対応。各文又は定義の判定を先に行う。並びが判定 5.4 状況対応 と異なる。\par
+
+\noindent\textbf{2：条件内で適切} 5.4 状況対応。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{3：不適切} 5.7 状況対応。各文又は定義の判定を先に行う。並びが判定 5.4 状況対応 と異なる。\par
+
+\noindent\textbf{4：不適切} 6.6 恒久。各文又は定義の判定を先に行う。並びが判定 5.4 状況対応 と異なる。\par
+
+\noindent\textbf{5：不適切} 6.9 恒久。各文又は定義の判定を先に行う。並びが判定 5.4 状況対応 と異なる。\par
+
+\paragraph{再利用する考え方} 条件付き期待値、決定ノードの最適化、後向き評価。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:decision]{第\ref*{theory:design:decision}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和4年度 問1-6}
+\label{q:r04-reg-basic-1-6}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理4頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 便益の期待値から建設費を引く。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{確率：} a.7,b.2,c.1。\par
+
+\noindent\textbf{便益(abc)：} ア(5,4,4)、イ(5,4,7)、ウ(3,6,7)、エ(6,5,3)、オ(7,4,5)。\par
+
+\noindent\textbf{費用：} ア3、イ3、ウ3、エ4、オ6、額は億円。\par
+
+\paragraph{問われる核心} 便益の期待値から建設費を引く。
+
+\paragraph{必要知識} 期待値、一定費用の控除、最大純便益。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 期待価値=0.7Ba+0.2Bb+0.1Bc-C。ア4.7-3=\allowbreak{}1.7、イ5.0-3=\allowbreak{}2.0、ウ4.0-3=\allowbreak{}1.0、エ5.5-4=\allowbreak{}1.5、オ6.2-6=.2億円。最大イの2。便益最大のオでも費用控除後は最大でない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} ア。各文又は定義の判定を先に行う。並びが判定 イ と異なる。\par
+
+\noindent\textbf{2：条件内で適切} イ。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{3：不適切} ウ。各文又は定義の判定を先に行う。並びが判定 イ と異なる。\par
+
+\noindent\textbf{4：不適切} エ。各文又は定義の判定を先に行う。並びが判定 イ と異なる。\par
+
+\noindent\textbf{5：不適切} オ。各文又は定義の判定を先に行う。並びが判定 イ と異なる。\par
+
+\paragraph{再利用する考え方} 期待値、一定費用の控除、最大純便益。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:decision]{第\ref*{theory:design:decision}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{投影図の配置と断面図の目的}
+
+\subsection{平成26年度 問1-6}
+\label{q:h26-reg-basic-1-6}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理4頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 製作図の角法・寸法・公差・検査を区別。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{列順：} 角法/寸法/はめあい/幾何公差/表題\par
+
+\noindent\textbf{O/X：} 正/誤。\par
+
+\noindent\textbf{原典：} 全五行を画像から転記。\par
+
+\paragraph{問われる核心} 製作図の角法・寸法・公差・検査を区別。
+
+\paragraph{必要知識} 投影法、寸法公差と幾何公差、はめあい・限界ゲージ、図面情報。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 幾何公差は形状・姿勢・位置等を管理し、高精度化で不要にはならない。寸法は現場で誤算が起きないよう製作に必要な情報を示す。はめあい又は限界ゲージは指定公差の管理・検査に対応する。通常の正投影は第一角又は第三角で、第二角ではない。表題・部品等の情報を示す。 この年度の列順へ戻してXOOXO。O正、X誤。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} OXOXO。各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。\par
+
+\noindent\textbf{2：不適切} XOOOX。各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。\par
+
+\noindent\textbf{3：条件内で適切} XOOXO。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{4：不適切} OOXOX。各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。\par
+
+\noindent\textbf{5：不適切} XXXOO。各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。\par
+
+\paragraph{再利用する考え方} 投影法、寸法公差と幾何公差、はめあい・限界ゲージ、図面情報。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:drawing]{第\ref*{theory:design:drawing}節}
+
+\par 参考：\cite{design48_iso}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成29年度 問1-5}
+\label{q:h29-reg-basic-1-5}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理4頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 製作図の角法・寸法・公差・検査を区別。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{列順：} 幾何公差/寸法/はめあい/角法/表題\par
+
+\noindent\textbf{O/X：} 正/誤。\par
+
+\noindent\textbf{原典：} 全五行を画像から転記。\par
+
+\paragraph{問われる核心} 製作図の角法・寸法・公差・検査を区別。
+
+\paragraph{必要知識} 投影法、寸法公差と幾何公差、はめあい・限界ゲージ、図面情報。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 幾何公差は形状・姿勢・位置等を管理し、高精度化で不要にはならない。寸法は現場で誤算が起きないよう製作に必要な情報を示す。はめあい又は限界ゲージは指定公差の管理・検査に対応する。通常の正投影は第一角又は第三角で、第二角ではない。表題・部品等の情報を示す。 この年度の列順へ戻してXOOXO。O正、X誤。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件内で適切} XOOXO。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{2：不適切} XOOOX。各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。\par
+
+\noindent\textbf{3：不適切} OXOXO。各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。\par
+
+\noindent\textbf{4：不適切} OOXOX。各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。\par
+
+\noindent\textbf{5：不適切} XXXOO。各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。\par
+
+\paragraph{再利用する考え方} 投影法、寸法公差と幾何公差、はめあい・限界ゲージ、図面情報。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:drawing]{第\ref*{theory:design:drawing}節}
+
+\par 参考：\cite{design48_iso}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和元年度 問1-3}
+\label{q:r01-reg-basic-1-3}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 製作図の角法・寸法・公差・検査を区別。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{列順：} 幾何公差/寸法/限界ゲージ/角法/表題\par
+
+\noindent\textbf{O/X：} 正/誤。\par
+
+\noindent\textbf{原典：} 全五行を画像から転記。\par
+
+\paragraph{問われる核心} 製作図の角法・寸法・公差・検査を区別。
+
+\paragraph{必要知識} 投影法、寸法公差と幾何公差、はめあい・限界ゲージ、図面情報。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 幾何公差は形状・姿勢・位置等を管理し、高精度化で不要にはならない。寸法は現場で誤算が起きないよう製作に必要な情報を示す。はめあい又は限界ゲージは指定公差の管理・検査に対応する。通常の正投影は第一角又は第三角で、第二角ではない。表題・部品等の情報を示す。 この年度の列順へ戻してXOOXO。O正、X誤。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} XXXOO。各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。\par
+
+\noindent\textbf{2：不適切} XOOOX。各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。\par
+
+\noindent\textbf{3：不適切} OXOXO。各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。\par
+
+\noindent\textbf{4：不適切} OOXOX。各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。\par
+
+\noindent\textbf{5：条件内で適切} XOOXO。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\paragraph{再利用する考え方} 投影法、寸法公差と幾何公差、はめあい・限界ゲージ、図面情報。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:drawing]{第\ref*{theory:design:drawing}節}
+
+\par 参考：\cite{design48_iso}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和2年度 問1-5}
+\label{q:r02-reg-basic-1-5}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 投影図の配置と断面図の目的。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{O/X：} 正/誤。\par
+
+\noindent\textbf{列順：} 第三角/第一角/想像図という名称/明記不要/主投影図。\par
+
+\paragraph{問われる核心} 投影図の配置と断面図の目的。
+
+\paragraph{必要知識} 第一角・第三角、主投影図、断面図、図面の解釈。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} アの第三角の平面図上・右側面図右は正。イの第一角では平面図は下なので誤。ウは内部を切って示す断面図で、想像図との呼称が誤。エは投影法明記不要が誤。オは情報量の多い主投影図を使い単純な物体は一図で足りる場合があり正。OXXXOの5。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} OOXXX。各文又は定義の判定を先に行う。並びが判定 OXXXO と異なる。\par
+
+\noindent\textbf{2：不適切} XOOXX。各文又は定義の判定を先に行う。並びが判定 OXXXO と異なる。\par
+
+\noindent\textbf{3：不適切} XXOOX。各文又は定義の判定を先に行う。並びが判定 OXXXO と異なる。\par
+
+\noindent\textbf{4：不適切} XXXOO。各文又は定義の判定を先に行う。並びが判定 OXXXO と異なる。\par
+
+\noindent\textbf{5：条件内で適切} OXXXO。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\paragraph{再利用する考え方} 第一角・第三角、主投影図、断面図、図面の解釈。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:drawing]{第\ref*{theory:design:drawing}節}
+
+\par 参考：\cite{design48_iso}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{限界利益から必要な客席回転を求める}
+
+\subsection{平成26年度 問1-2}
+\label{q:h26-reg-basic-1-2}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 限界利益から必要な客席回転を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{売上：} 500円/人。\par
+
+\noindent\textbf{変動費：} 200円/人。\par
+
+\noindent\textbf{固定費：} 月50万円。\par
+
+\noindent\textbf{目標利益：} 月100万円。\par
+
+\noindent\textbf{営業：} 20日、50席。\par
+
+\paragraph{問われる核心} 限界利益から必要な客席回転を求める。
+
+\paragraph{必要知識} 売上と変動費、固定費、限界利益、期間と席数の換算。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 一人当たり限界利益は500-200=\allowbreak{}300円。月の目標利益100万円と固定費50万円を賄う人数は1500000/300=\allowbreak{}5000人。20日×50席で割ると一席一日5人、4。売上高500円をそのまま利益としない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 2。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{2：不適切} 3。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{3：不適切} 4。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{4：条件内で適切} 5。解法の条件と結果を照合する。 計算結果と一致。\par
+
+\noindent\textbf{5：不適切} 10。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\paragraph{再利用する考え方} 売上と変動費、固定費、限界利益、期間と席数の換算。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:economics]{第\ref*{theory:design:economics}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{定常需要の経済的発注量}
+
+\subsection{令和元年度 問1-2}
+\label{q:r01-reg-basic-1-2}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 定常需要の経済的発注量。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{k：} 20000円/回。\par
+
+\noindent\textbf{d：} 1350単位/年。\par
+
+\noindent\textbf{h：} 15000円/(単位・年)。\par
+
+\noindent\textbf{条件：} 欠品なし、需要一定、即時一括補充、0<q≤d。\par
+
+\paragraph{問われる核心} 定常需要の経済的発注量。
+
+\paragraph{必要知識} 一定需要、即時補充、発注回数、平均在庫、凸費用の最小化。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 年間費用C(q)=\allowbreak{}kd/q+hq/2。微分すると-kd/q\textsuperscript{2}+h/2=\allowbreak{}0、q=\allowbreak{}sqrt(2kd/h)。指定値でsqrt(2×20000×1350/15000)=\allowbreak{}sqrt3600=\allowbreak{}60単位の2。q>0で二階微分2kd/q\textsuperscript{3}>0、q≤dも満たす。購入単価はqによらず、最適qへ影響しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 50。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{2：条件内で適切} 60。解法の条件と結果を照合する。 計算結果と一致。\par
+
+\noindent\textbf{3：不適切} 70。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{4：不適切} 80。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{5：不適切} 90。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\paragraph{再利用する考え方} 一定需要、即時補充、発注回数、平均在庫、凸費用の最小化。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:eoq]{第\ref*{theory:design:eoq}節}
+
+\par 参考：\cite{finish56_eoq}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{利得表の最適反応と支配戦略}
+
+\subsection{平成23年度 問1-4}
+\label{q:h23-reg-basic-1-4}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 利得表の最適反応と支配戦略。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{行：} Aの定価60,65万円。\par
+
+\noindent\textbf{列：} Bの定価60,65万円。\par
+
+\noindent\textbf{利得(A,B)：} 行A60：(12,13),(15,7)。行A65：(8,14),(10,10)。単位億円。\par
+
+\paragraph{問われる核心} 利得表の最適反応と支配戦略。
+
+\paragraph{必要知識} 利得表の行列、支配戦略、最適反応、ナッシュ均衡。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} Aの行を比較するとB60では12>8、B65では15>10なのでAは60が支配戦略。Bの列を比較するとA60では13>7、A65では14>10なのでBも60。互いの最適反応が一致するA60/B60の1。両社の売上合計を最大にする協調案とは別の基準である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件内で適切} A60/B60。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{2：不適切} A60/B65。各文又は定義の判定を先に行う。並びが判定 A60/B60 と異なる。\par
+
+\noindent\textbf{3：不適切} A65/B60。各文又は定義の判定を先に行う。並びが判定 A60/B60 と異なる。\par
+
+\noindent\textbf{4：不適切} A65/B65。各文又は定義の判定を先に行う。並びが判定 A60/B60 と異なる。\par
+
+\noindent\textbf{5：不適切} 決まらない。各文又は定義の判定を先に行う。並びが判定 A60/B60 と異なる。\par
+
+\paragraph{再利用する考え方} 利得表の行列、支配戦略、最適反応、ナッシュ均衡。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:game]{第\ref*{theory:design:game}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{減速比と動力保存から出力トルクを求める}
+
+\subsection{令和6年度 問1-4}
+\label{q:r06-reg-basic-1-4}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 減速比と動力保存から出力トルクを求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{速度比：} 入力角速度/出力角速度=30。\par
+
+\noindent\textbf{効率：} ほぼ100\%、滑りなし。\par
+
+\paragraph{問われる核心} 減速比と動力保存から出力トルクを求める。
+
+\paragraph{必要知識} 角速度、動力とトルク、減速比、伝達効率。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 速度比ωin/ωout=\allowbreak{}30なので入力30回転に出力1回転。動力P=\allowbreak{}Tωと効率ほぼ1からToutωout≈Tinωin、Tout≈30Tin。両条件を満たす3。速度が減ってもトルクは同じとすると出力動力が不足する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 入力1→出力30/トルク等倍。各文又は定義の判定を先に行う。並びが判定 入力30→出力1/トルク30倍 と異なる。\par
+
+\noindent\textbf{2：不適切} 入力30→出力1/トルク等倍。各文又は定義の判定を先に行う。並びが判定 入力30→出力1/トルク30倍 と異なる。\par
+
+\noindent\textbf{3：条件内で適切} 入力30→出力1/トルク30倍。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{4：不適切} 入力1→出力30/トルク30倍。各文又は定義の判定を先に行う。並びが判定 入力30→出力1/トルク30倍 と異なる。\par
+
+\noindent\textbf{5：不適切} 入力30→出力1/トルク1/30。各文又は定義の判定を先に行う。並びが判定 入力30→出力1/トルク30倍 と異なる。\par
+
+\paragraph{再利用する考え方} 角速度、動力とトルク、減速比、伝達効率。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:gear]{第\ref*{theory:design:gear}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{等号条件を含む三つの不等式}
+
+\subsection{令和元年度再試験 問1-1}
+\label{q:r01-ret-basic-1-1}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 等号条件を含む三つの不等式。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{1：} 非負実数n個。\par
+
+\noindent\textbf{2：} 0<θ≤π/2。\par
+
+\noindent\textbf{3：} 区間のfsecond>0、x1≠x2。\par
+
+\paragraph{問われる核心} 等号条件を含む三つの不等式。
+
+\paragraph{必要知識} 相加相乗、凹関数と弦、端点、厳密凸性とJensen。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 相加相乗は幾何平均≤算術平均で、全数が同じなら等号。sinは[0,π/2]で凹なので両端を結ぶ直線より上にありsinθ≥2θ/π、θ>0で割ってsinθ/θ≥2/π。π/2は等号を含む。fsecond>0の厳密凸では異なる二点の中点関数値が平均より厳密に小さい。≤,≥,<の5。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} ≤ = =。各文又は定義の判定を先に行う。並びが判定 ≤ ≥ < と異なる。\par
+
+\noindent\textbf{2：不適切} ≤ ≥ =。各文又は定義の判定を先に行う。並びが判定 ≤ ≥ < と異なる。\par
+
+\noindent\textbf{3：不適切} = ≤ <。各文又は定義の判定を先に行う。並びが判定 ≤ ≥ < と異なる。\par
+
+\noindent\textbf{4：不適切} < = ≥。各文又は定義の判定を先に行う。並びが判定 ≤ ≥ < と異なる。\par
+
+\noindent\textbf{5：条件内で適切} ≤ ≥ <。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\paragraph{再利用する考え方} 相加相乗、凹関数と弦、端点、厳密凸性とJensen。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:inequality]{第\ref*{theory:design:inequality}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{資源制約から生産利益を最大にする}
+
+\subsection{平成24年度 問1-5}
+\label{q:h24-reg-basic-1-5}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理4頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 資源制約から生産利益を最大にする。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{製品X：} A3kg、B1kg、利益3万円。\par
+
+\noindent\textbf{製品Y：} A1kg、B2kg、利益2万円。\par
+
+\noindent\textbf{上限：} A9kg、B8kg。\par
+
+\paragraph{問われる核心} 資源制約から生産利益を最大にする。
+
+\paragraph{必要知識} 線形計画、制約交点、頂点比較、整数生産量。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 生産個数x,y≥0に対し3x+y≤9、x+2y≤8、利益3x+2y。頂点(0,0),(3,0),(0,4),(2,3)の利益は0,9,8,12万円。交点(2,3)は整数でも実行可能で最大12万円、5。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 4。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{2：不適切} 6。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{3：不適切} 9。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{4：不適切} 10。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{5：条件内で適切} 12。解法の条件と結果を照合する。 計算結果と一致。\par
+
+\paragraph{再利用する考え方} 線形計画、制約交点、頂点比較、整数生産量。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:lp]{第\ref*{theory:design:lp}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{展開・複素指数・不定形極限の三公式}
+
+\subsection{令和元年度 問1-6}
+\label{q:r01-reg-basic-1-6}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 展開・複素指数・不定形極限の三公式。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ア：} 0中心、適当な条件下の級数。\par
+
+\noindent\textbf{イ：} e\textasciicircum{}(iπ)+1=\allowbreak{}0。\par
+
+\noindent\textbf{ウ：} 0/0又は∞/∞、gprime≠0、微分比の極限が存在。\par
+
+\paragraph{問われる核心} 展開・複素指数・不定形極限の三公式。
+
+\paragraph{必要知識} Taylor/Maclaurin、複素指数、ロピタルの適用条件。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} アは0中心のf(x)=Σf\textasciicircum{}(k)(0)x\textasciicircum{}k/k!なのでマクローリン。イはe\textasciicircum{}(iπ)+1=\allowbreak{}0なのでオイラーの等式。ウは0/0又は∞/∞で微分比の極限を用いるロピタル。3。何回でも微分可能というだけで無限級数と関数が一致するとは限らず、原典の適当な条件を保持する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} ロピタル/オイラー/フーリエ。各文又は定義の判定を先に行う。並びが判定 マクローリン/オイラー/ロピタル と異なる。\par
+
+\noindent\textbf{2：不適切} マクローリン/フーリエ/オイラー。各文又は定義の判定を先に行う。並びが判定 マクローリン/オイラー/ロピタル と異なる。\par
+
+\noindent\textbf{3：条件内で適切} マクローリン/オイラー/ロピタル。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{4：不適切} フーリエ/ロピタル/マクローリン。各文又は定義の判定を先に行う。並びが判定 マクローリン/オイラー/ロピタル と異なる。\par
+
+\noindent\textbf{5：不適切} フーリエ/マクローリン/ロピタル。各文又は定義の判定を先に行う。並びが判定 マクローリン/オイラー/ロピタル と異なる。\par
+
+\paragraph{再利用する考え方} Taylor/Maclaurin、複素指数、ロピタルの適用条件。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:mathformulas]{第\ref*{theory:design:mathformulas}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{平面応力と平面ひずみの拘束条件}
 
 \subsection{令和7年度 問1-4}
 \label{q:r07-reg-basic-1-4}
@@ -824,7 +2733,41 @@
 
 \textbf{公式正答：} 1（single）。
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\par\textbf{検討未確定：} 原典長柱の軸方向拘束は省略。平面ひずみの標準的適用を説明し、自由な端部・一様軸伸びがある一般化平面ひずみとは区別して査読。
+
+\paragraph{問題の要旨} 平面応力と平面ひずみの拘束条件。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{薄板：} 面内荷重。\par
+
+\noindent\textbf{長柱：} 側面に長さ方向一様荷重。\par
+
+\paragraph{問われる核心} 平面応力と平面ひずみの拘束条件。
+
+\paragraph{必要知識} 三次元Hooke則、Poisson効果、自由面、拘束と二次元近似。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 適切1。平面応力ではσz,τxz,τyz≈0でもεzはPoisson効果で一般に0でない。平面ひずみではεz,γxz,γyz≈0でもσzは一般に0でない。長柱は端部から離れた一様部分の変形拘束という適用条件を確かめる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件内で適切} 薄板の面外応力無視=平面応力。自由表面と薄さから面外応力を小さいとする。\par
+
+\noindent\textbf{2：不適切} 長柱の軸応力無視=平面ひずみ。無視するのは軸ひずみ、軸応力はPoisson結合で残り得る。\par
+
+\noindent\textbf{3：不適切} 長柱の軸ひずみ無視=平面応力。その近似は平面ひずみ。\par
+
+\noindent\textbf{4：不適切} 薄板の面外ひずみ無視=平面ひずみ。薄板は面外変形を許し、通常面外ひずみは0でない。\par
+
+\noindent\textbf{5：不適切} 長柱の軸応力無視=平面応力。指定の長柱を軸方向変形の拘束モデルとして読むとひずみを無視。\par
+
+\paragraph{再利用する考え方} 三次元Hooke則、Poisson効果、自由面、拘束と二次元近似。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:plane]{第\ref*{theory:design:plane}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{M/M/1の系内時間と待ち時間を分ける}
 
 \subsection{令和7年度 問1-5}
 \label{q:r07-reg-basic-1-5}
@@ -833,7 +2776,188 @@
 
 \textbf{公式正答：} 5（single）。
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\paragraph{問題の要旨} M/M/1の系内時間と待ち時間を分ける。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{到着：} 36人/時間。\par
+
+\noindent\textbf{処理：} 平均50秒/人、指数分布。\par
+
+\noindent\textbf{窓口：} 1、Poisson到着。\par
+
+\noindent\textbf{問：} 並んでから処理終了まで。\par
+
+\paragraph{問われる核心} M/M/1の系内時間と待ち時間を分ける。
+
+\paragraph{必要知識} Poisson到着、指数サービス、ρ<1、Little則、系内と行列。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} λ=36/3600=.01人/秒、μ=1/50=.02人/秒、ρ=.5。系内人数L=ρ/(1-ρ)=\allowbreak{}1、滞在W=\allowbreak{}L/λ=100秒。処理50秒を含むので待ちだけなら50秒。5。到着人数とサービス率を同じ単位にし、平均処理時間50秒を率50としない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 0。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{2：不適切} 25。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{3：不適切} 50。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{4：不適切} 75。解法の条件と結果を照合する。 計算結果に一致しない。\par
+
+\noindent\textbf{5：条件内で適切} 100。解法の条件と結果を照合する。 計算結果と一致。\par
+
+\paragraph{再利用する考え方} Poisson到着、指数サービス、ρ<1、Little則、系内と行列。 条件を式又は判定にし、全候補を照合してその年度の番号へ戻す。
+
+\paragraph{共通理論} \hyperref[theory:design:queue]{第\ref*{theory:design:queue}節}
+
+\par 参考：\cite{design48_queue_ref}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{抜取検査の二つの危険と切換え}
+
+\subsection{平成26年度 問1-3}
+\label{q:h26-reg-basic-1-3}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textbf{検討未確定：} 原典の「抜取検査手順を固定」と「判定個数で調整」は、標本数を固定して閾値を変更するという意味に限定する。全(n,c)固定なら二つの危険も固定である。切換え規則の出題時JIS原文全体は未取得であり一般概念の照合と区別する。
+
+\paragraph{問題の要旨} 抜取検査の測定量、危険の負担者、合否の閾値と検査切換えを対応させる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 最も適切な記述又は組合せを選ぶ\par
+
+\noindent\textbf{原典照合：} 14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。\par
+
+\noindent\textbf{モデル：} 独立性、正規性、一定発生率などの前提を個別に保持する。\par
+
+\paragraph{問われる核心} 抜取検査の測定量、危険の負担者、合否の閾値と検査切換えを対応させる。
+
+\paragraph{必要知識} 計数値と計量値、ロットとサンプル、不適合品の数、OC曲線、生産者危険と消費者危険、検査の切換え。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 合否を数で決める計数値検査では不適合品の数を数える。良いロットの拒否は生産者危険 \(\alpha\)、悪いロットの受入れは消費者危険 \(\beta\) である。サンプル数を固定して合格判定個数を増やすと、受入確率が増し、生産者危険が下がる一方で消費者危険が上がる。先行ロットの成績によるなみ検査・きつい検査の切換えと、一ロット内で複数の標本を取る多回抜取を区別する。本問の五項目の組合せは1である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} 個数・生産者・消費者・判定個数・なみ/きつい。計数値の個数と危険の負担者、個数の合否閾値、ロット間の切換えが対応する。\par
+
+\noindent\textbf{2：不適切} 平均・消費者・生産者・判定値・なみ/きつい。計数値を平均値へ、危険の負担者を逆へ取り違えている。\par
+
+\noindent\textbf{3：不適切} 個数・消費者・生産者・判定個数・多回抜取。生産者と消費者の危険を逆にし、ロット間切換えを一ロット内の多回抜取と混同する。\par
+
+\noindent\textbf{4：不適切} 平均・生産者・消費者・判定値・多回抜取。計量値の平均と判定値、複数標本を取る手順は本問の指定と合わない。\par
+
+\noindent\textbf{5：不適切} 個数・生産者・消費者・判定値・なみ/きつい。本問は不適合品の個数と合否判定個数の組合せを問う。計量値に対応する判定値との用語差を保持する。\par
+
+\paragraph{再利用する考え方} 変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。
+
+\paragraph{共通理論} \hyperref[theory:quality:acceptance]{第\ref*{theory:quality:acceptance}節}, \hyperref[theory:quality:oc]{第\ref*{theory:quality:oc}節}, \hyperref[theory:quality:switching]{第\ref*{theory:quality:switching}節}
+
+\par 参考：\cite{quality_nist_sampling,quality_nist_oc}。
+
+\paragraph{関連問題} \hyperref[q:h28-reg-basic-1-2]{H28-REG-BASIC-1-2}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{平成28年度 問1-2}
+\label{q:h28-reg-basic-1-2}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textbf{検討未確定：} 原典の「抜取検査手順を固定」と「判定個数で調整」は、標本数を固定して閾値を変更するという意味に限定する。全(n,c)固定なら二つの危険も固定である。切換え規則の出題時JIS原文全体は未取得であり一般概念の照合と区別する。
+
+\paragraph{問題の要旨} 計数値抜取検査の危険と、先行ロットの成績による検査の切換えを読む。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 最も適切な記述又は組合せを選ぶ\par
+
+\noindent\textbf{原典照合：} 14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。\par
+
+\noindent\textbf{モデル：} 独立性、正規性、一定発生率などの前提を個別に保持する。\par
+
+\paragraph{問われる核心} 計数値抜取検査の危険と、先行ロットの成績による検査の切換えを読む。
+
+\paragraph{必要知識} 計数値と計量値、ロットとサンプル、不適合品の数、OC曲線、生産者危険と消費者危険、検査の切換え。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 合否を数で決める計数値検査では不適合品の数を数える。良いロットの拒否は生産者危険 \(\alpha\)、悪いロットの受入れは消費者危険 \(\beta\) である。サンプル数を固定して合格判定個数を増やすと、受入確率が増し、生産者危険が下がる一方で消費者危険が上がる。先行ロットの成績によるなみ検査・きつい検査の切換えと、一ロット内で複数の標本を取る多回抜取を区別する。本問は合格判定個数が問題幹にあり、残る四項目の組合せは4である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 平均・消費者・生産者・多回。測定量と危険の負担者が違い、多回抜取は先行ロットを使う切換えではない。\par
+
+\noindent\textbf{2：不適切} 平均・生産者・消費者・なみ/きつい。危険の順序は合うが、計数値検査では平均値でなく不適合品の数を使う。\par
+
+\noindent\textbf{3：不適切} 個数・消費者・生産者・多回。危険の負担者が逆で、切換えと多回抜取も違う。\par
+
+\noindent\textbf{4：適切} 個数・生産者・消費者・なみ/きつい。個数、良品拒否の生産者危険、不良品受入れの消費者危険、なみ/きついの切換えが対応する。\par
+
+\noindent\textbf{5：不適切} 平均・消費者・生産者・なみ/きつい。平均値への置換と危険の負担者の逆転が不適切である。\par
+
+\paragraph{再利用する考え方} 変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。
+
+\paragraph{共通理論} \hyperref[theory:quality:acceptance]{第\ref*{theory:quality:acceptance}節}, \hyperref[theory:quality:oc]{第\ref*{theory:quality:oc}節}, \hyperref[theory:quality:switching]{第\ref*{theory:quality:switching}節}
+
+\par 参考：\cite{quality_nist_sampling,quality_nist_oc}。
+
+\paragraph{関連問題} \hyperref[q:h26-reg-basic-1-3]{H26-REG-BASIC-1-3}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{線形相関と回帰・因果の区別}
+
+\subsection{令和5年度 問1-6}
+\label{q:r05-reg-basic-1-6}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理4頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} ピアソン相関の線形性、端点、独立性、決定係数、因果の関係を区別する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 最も適切な記述又は組合せを選ぶ\par
+
+\noindent\textbf{原典照合：} 14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。\par
+
+\noindent\textbf{モデル：} 独立性、正規性、一定発生率などの前提を個別に保持する。\par
+
+\paragraph{問われる核心} ピアソン相関の線形性、端点、独立性、決定係数、因果の関係を区別する。
+
+\paragraph{必要知識} 共分散、Cauchy–Schwarz、無相関と独立、切片あり単回帰、交絡。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 相関係数は有限な非零分散の変数について \(\rho=\mathrm{Cov}(X,Y)/(\sigma_X\sigma_Y)\) と定義され、端点を含む[-1,1]にある。2は正の線形関連が強まるという典型的な説明である。無相関の反例として \(X\) を[-1,1]の対称一様、\(Y=X^2\) とすれば、\(\mathrm{Cov}(X,Y)=E[X^3]=0\) でもYはXに完全に依存する。決定係数は切片あり単回帰ならr\textsuperscript{2}である。相関の大小から因果関係を結論しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 相関は常に-1<r<1。完全な線形関係ではr=±1を取り得るため、厳密不等号で端点を除外できない。\par
+
+\noindent\textbf{2：適切} rが0から1へ近づくほど直線関係になる。正の相関が1へ近づくほど、正傾斜の直線の周りに集まる程度が強まるという意味である。\par
+
+\noindent\textbf{3：不適切} r=\allowbreak{}0なら独立。無相関は独立を含意しない。対称なXとY=\allowbreak{}X\textsuperscript{2}では相関が0でもYはXに依存する。\par
+
+\noindent\textbf{4：不適切} 決定係数は|r|。切片あり一説明変数の最小二乗回帰ではR\textsuperscript{2}=r\textsuperscript{2}であり、|r|ではない。\par
+
+\noindent\textbf{5：不適切} 相関絶対値で因果が変わる。相関は線形関連の強さを表し、共通原因などの交絡があるため、因果の有無や方向を決めない。\par
+
+\paragraph{再利用する考え方} 変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。
+
+\paragraph{共通理論} \hyperref[theory:quality:correlation]{第\ref*{theory:quality:correlation}節}, \hyperref[theory:quality:regression]{第\ref*{theory:quality:regression}節}
+
+\par 参考：\cite{stat_psu_correlation}。
+
+\paragraph{関連問題} \hyperref[q:h25-reg-basic-1-6]{H25-REG-BASIC-1-6}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{仮説検定と信頼区間}
 
 \subsection{令和7年度 問1-6}
 \label{q:r07-reg-basic-1-6}
@@ -842,4 +2966,1283 @@
 
 \textbf{公式正答：} 3（single）。
 
-\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+\paragraph{問題の要旨} 仮説検定の二種類の誤り、t統計量の自由度、信頼区間の意味を比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 最も適切な記述又は組合せを選ぶ\par
+
+\noindent\textbf{原典照合：} 14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。\par
+
+\noindent\textbf{モデル：} 独立性、正規性、一定発生率などの前提を個別に保持する。\par
+
+\paragraph{問われる核心} 仮説検定の二種類の誤り、t統計量の自由度、信頼区間の意味を比較する。
+
+\paragraph{必要知識} H0と対立、第1種/第2種、有意水準、独立正規標本とt、頻度論的被覆。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 帰無仮説が真なのに棄却する誤りを第1種、偽なのに棄却しない誤りを第2種と呼ぶ3が正しい。独立正規標本で母分散が未知なら \(T=(\bar X-\mu_0)/(s/\sqrt n)\) はH0下で自由度n-1のt分布である。信頼係数1-αは同じ手順を反復したときに区間が母数を覆う割合であり、危険率の逆数ではない。観測後の固定された区間に対する確率と、観測前のランダムな区間の被覆率を区別する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 成立を期待する帰無仮説から始める。帰無仮説は基準となる命題であり、必ずそれが成立することを期待して設定するわけではない。棄却されないことも真の証明ではない。\par
+
+\noindent\textbf{2：不適切} 有意水準は一般に30\%。有意水準は事前に定める。典型例は5\%などであり30\%を一般的とする記述は違う。\par
+
+\noindent\textbf{3：適切} 真H0棄却は第1種、偽H0不棄却は第2種。誤りの定義に合う。第2種の確率は対立仮説下の値に依存し、1-αと同じではない。\par
+
+\noindent\textbf{4：不適切} 母分散未知の平均検定は自由度nのt。独立正規標本の通常の一標本t検定では平均の推定に一自由度を使い、自由度はn-1である。\par
+
+\noindent\textbf{5：不適切} 信頼度は危険率の逆数。信頼係数は1-αであり1/αではない。固定された一つの区間に固定母数が入る確率という事後解釈にも注意する。\par
+
+\paragraph{再利用する考え方} 変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。
+
+\paragraph{共通理論} \hyperref[theory:quality:hypothesis]{第\ref*{theory:quality:hypothesis}節}, \hyperref[theory:quality:t_interval]{第\ref*{theory:quality:t_interval}節}
+
+\par 参考：\cite{stat_nist_interval,quality_nist_sampling}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{独立正規変数の和差と標本平均}
+
+\subsection{平成27年度 問1-5}
+\label{q:h27-reg-basic-1-5}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理4頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 独立な二部材の長さを足し、規定長さを超える確率を標準化する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 最も適切な記述又は組合せを選ぶ\par
+
+\noindent\textbf{原典照合：} 14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。\par
+
+\noindent\textbf{モデル：} 独立性、正規性、一定発生率などの前提を個別に保持する。\par
+
+\paragraph{問われる核心} 独立な二部材の長さを足し、規定長さを超える確率を標準化する。
+
+\paragraph{必要知識} 寸法和、分散の加法、上側確率と標準化、連続分布。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 全長 \(L=A+B\) は平均3500mm、分散 \(0.4^2+0.3^2=0.25\,\mathrm{mm^2}\) の正規変数である。標準偏差0.5mmにより \(z=(3501.5-3500)/0.5=3\) となる。原典表の上側確率0.13\%を読み、1を選ぶ。標準偏差を0.7mmと足す方法は独立な確率変動に対して使わない。連続分布では「超える」と「以上」の確率は等しい。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} 0.2\%未満。z=\allowbreak{}3の上側確率0.13\%はこの範囲に入る。\par
+
+\noindent\textbf{2：不適切} 0.2\%以上1\%未満。0.13\%は下限0.2\%より小さい。\par
+
+\noindent\textbf{3：不適切} 1\%以上5\%未満。0.13\%は下限1\%より小さい。\par
+
+\noindent\textbf{4：不適切} 5\%以上10\%未満。0.13\%は下限5\%より小さい。\par
+
+\noindent\textbf{5：不適切} 10\%以上。0.13\%は10\%に届かない。\par
+
+\paragraph{再利用する考え方} 変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。
+
+\paragraph{共通理論} \hyperref[theory:quality:variance]{第\ref*{theory:quality:variance}節}, \hyperref[theory:quality:normal]{第\ref*{theory:quality:normal}節}
+
+\par 参考：\cite{stat_nist_normal,stat_psu_linear}。
+
+\paragraph{関連問題} \hyperref[q:r04-reg-basic-1-3]{R04-REG-BASIC-1-3}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和4年度 問1-3}
+\label{q:r04-reg-basic-1-3}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 独立な引張力と圧縮力の差について、正の合力が閾値を超える確率を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 最も適切な記述又は組合せを選ぶ\par
+
+\noindent\textbf{原典照合：} 14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。\par
+
+\noindent\textbf{モデル：} 独立性、正規性、一定発生率などの前提を個別に保持する。\par
+
+\paragraph{問われる核心} 独立な引張力と圧縮力の差について、正の合力が閾値を超える確率を求める。
+
+\paragraph{必要知識} 力の符号、正規差、分散と係数の二乗、上側確率。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 引張りを正として \(F=F_a-F_b\) と置く。期待値は300-200=\allowbreak{}100Nであり、独立な差の分散も \(30^2+40^2=2500\,\mathrm{N^2}\) と加える。したがって標準偏差50N、閾値200Nの標準化は \(z=(200-100)/50=2\) である。上側確率2.28\%から3となる。力の平均では符号を反転するが、分散では係数を二乗するため圧縮成分の分散も正に加わる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 0.2\%未満。2.28\%は0.2\%未満ではない。\par
+
+\noindent\textbf{2：不適切} 0.2\%以上1\%未満。2.28\%は上限1\%を超える。\par
+
+\noindent\textbf{3：適切} 1\%以上5\%未満。z=\allowbreak{}2の上側確率2.28\%がこの範囲に入る。\par
+
+\noindent\textbf{4：不適切} 5\%以上10\%未満。2.28\%は下限5\%より小さい。\par
+
+\noindent\textbf{5：不適切} 10\%以上。2.28\%は10\%より小さい。\par
+
+\paragraph{再利用する考え方} 変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。
+
+\paragraph{共通理論} \hyperref[theory:quality:variance]{第\ref*{theory:quality:variance}節}, \hyperref[theory:quality:normal]{第\ref*{theory:quality:normal}節}
+
+\par 参考：\cite{stat_nist_normal,stat_psu_linear}。
+
+\paragraph{関連問題} \hyperref[q:h27-reg-basic-1-5]{H27-REG-BASIC-1-5}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和6年度 問1-6}
+\label{q:r06-reg-basic-1-6}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 独立正規寸法の和と差の分布を、平均と分散に分けて表す。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 最も適切な記述又は組合せを選ぶ\par
+
+\noindent\textbf{原典照合：} 14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。\par
+
+\noindent\textbf{モデル：} 独立性、正規性、一定発生率などの前提を個別に保持する。\par
+
+\paragraph{問われる核心} 独立正規寸法の和と差の分布を、平均と分散に分けて表す。
+
+\paragraph{必要知識} 独立正規寸法、平均和差、分散和、平均の順序と個体のすき間。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 接続長さを \(L=A_1+A_2\)、すき間を \(G=B_2-B_1\) とする。独立正規変数の線形結合より、\(L\) は平均 \(\mu_{A1}+\mu_{A2}\)、分散 \(\sigma_{A1}^2+\sigma_{A2}^2\)、\(G\) は平均 \(\mu_{B2}-\mu_{B1}\)、分散 \(\sigma_{B2}^2+\sigma_{B1}^2\) である。3を選ぶ。原典の \(\mu_{B2}>\mu_{B1}\) は平均の順序であり、すべての個体で内径が外径より大きい保証ではない。分布の負側はしまりばめを表し得る。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 和は平均和/分散和、すき間も平均和/分散和。接続長さは合うが、すき間の平均は内径から外径を引く。\par
+
+\noindent\textbf{2：不適切} 和は平均和/分散和、すき間は平均差/分散差。すき間の平均は合うが、差の分散を引いてはいけない。\par
+
+\noindent\textbf{3：適切} 和は平均和/分散和、すき間は平均差/分散和。和の平均はμA1+μA2、すき間の平均はμB2-μB1で、どちらも独立成分の分散を足す。\par
+
+\noindent\textbf{4：不適切} 和は平均和/分散差、すき間は平均差/分散差。独立な和でも差でも分散差にはならない。\par
+
+\noindent\textbf{5：不適切} 和は平均和/分散差、すき間は平均和/分散差。接続長さの分散と、すき間の平均・分散の両方が違う。\par
+
+\paragraph{再利用する考え方} 変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。
+
+\paragraph{共通理論} \hyperref[theory:quality:variance]{第\ref*{theory:quality:variance}節}, \hyperref[theory:quality:normal]{第\ref*{theory:quality:normal}節}
+
+\par 参考：\cite{stat_nist_normal,stat_psu_linear}。
+
+\paragraph{関連問題} \hyperref[q:h23-reg-basic-5-4]{H23-REG-BASIC-5-4}, \hyperref[q:r02-reg-basic-1-2]{R02-REG-BASIC-1-2}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{PDCAによるプロセスの継続改善}
+
+\subsection{平成27年度 問1-6}
+\label{q:h27-reg-basic-1-6}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理4頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textbf{検討未確定：} ISO公式の2008実施ガイダンスでPDCA名称を確認したが、設問が参照するISO 9001:2008 と JIS Q 9001:2008の規格本文全体は未取得。現在版の説明を過去版の条文へ無条件に代用しない。
+
+\paragraph{問題の要旨} ISO 9001:2008を背景とするPDCAの順序を対応させる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 最も適切な記述又は組合せを選ぶ\par
+
+\noindent\textbf{原典照合：} 14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。\par
+
+\noindent\textbf{モデル：} 独立性、正規性、一定発生率などの前提を個別に保持する。\par
+
+\paragraph{問われる核心} ISO 9001:2008を背景とするPDCAの順序を対応させる。
+
+\paragraph{必要知識} 計画、実施、確認、改善、フィードバック、規格の版。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} PDCAはPlanで目標とプロセスを定め、Doで実施し、Checkで目標・要求との対応を確認し、Actで改善する循環である。順序は5である。2008年版の実施ガイダンスもPlan-Do-Check-Actを用いる。一方、2015年版のプロセス解説は同じ循環をリスクに基づく思考とともに説明する。一般の循環の確認と、2008年規格の条文全体を照合したことは区別する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} Plan Act Check Do。実施前に改善を置き、実施を最後にする順序になっている。\par
+
+\noindent\textbf{2：不適切} Plan Act Do Check。実施より前に改善を置き、確認後に次の改善へ戻る対応がない。\par
+
+\noindent\textbf{3：不適切} Plan Check Act Do。計画の後に実施がなく確認へ進み、実施が最後になっている。\par
+
+\noindent\textbf{4：不適切} Plan Do Act Check。実施結果を確認する前に改善段階を置いている。\par
+
+\noindent\textbf{5：適切} Plan Do Check Act。計画・実施・確認・改善の順で、結果を次の計画に反映する。\par
+
+\paragraph{再利用する考え方} 変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。
+
+\paragraph{共通理論} \hyperref[theory:quality:pdca]{第\ref*{theory:quality:pdca}節}, \hyperref[theory:quality:historical]{第\ref*{theory:quality:historical}節}
+
+\par 参考：\cite{quality_iso2008_guidance,quality_iso_process}。
+
+\paragraph{関連問題} \hyperref[q:r03-reg-basic-1-3]{R03-REG-BASIC-1-3}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和3年度 問1-3}
+\label{q:r03-reg-basic-1-3}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} PDCAの段階名と、それぞれの目的を照合する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 最も適切な記述又は組合せを選ぶ\par
+
+\noindent\textbf{原典照合：} 14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。\par
+
+\noindent\textbf{モデル：} 独立性、正規性、一定発生率などの前提を個別に保持する。\par
+
+\paragraph{問われる核心} PDCAの段階名と、それぞれの目的を照合する。
+
+\paragraph{必要知識} Plan/Do/Check/Act、目標と評価、改善のフィードバック。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 計画を定めるPlanと実施するDoは正しい。Cは結果を監視・評価するCheck、Aは改善するActである。変更や達成などの一般語が意味として近くても、PDCAの指定された段階名への置換にはならない。正正誤誤の候補2を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 正誤正正。Doを誤とし、ChangeとAdjustを正としている。\par
+
+\noindent\textbf{2：適切} 正正誤誤。PlanとDoは正しく、Check/Actに対応しないChange/Adjustは誤りである。\par
+
+\noindent\textbf{3：不適切} 正正正誤。CをChangeとする説明を正としている点が違う。\par
+
+\noindent\textbf{4：不適切} 誤正誤正。Planを誤とし、Adjustを正としている点が違う。\par
+
+\noindent\textbf{5：不適切} 誤誤正正。PlanとDoを誤とし、ChangeとAdjustを正としている。\par
+
+\paragraph{再利用する考え方} 変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。
+
+\paragraph{共通理論} \hyperref[theory:quality:pdca]{第\ref*{theory:quality:pdca}節}
+
+\par 参考：\cite{quality_iso_process}。
+
+\paragraph{関連問題} \hyperref[q:h24-reg-basic-5-4]{H24-REG-BASIC-5-4}, \hyperref[q:h27-reg-basic-1-6]{H27-REG-BASIC-1-6}, \hyperref[q:r07-reg-basic-1-2]{R07-REG-BASIC-1-2}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和7年度 問1-2}
+\label{q:r07-reg-basic-1-2}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} PDCAの段階名と、それぞれの目的を照合する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 最も適切な記述又は組合せを選ぶ\par
+
+\noindent\textbf{原典照合：} 14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。\par
+
+\noindent\textbf{モデル：} 独立性、正規性、一定発生率などの前提を個別に保持する。\par
+
+\paragraph{問われる核心} PDCAの段階名と、それぞれの目的を照合する。
+
+\paragraph{必要知識} Plan/Do/Check/Act、目標と評価、改善のフィードバック。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 計画を定めるPlanと実施するDoは正しい。Cは結果を監視・評価するCheck、Aは改善するActである。変更や達成などの一般語が意味として近くても、PDCAの指定された段階名への置換にはならない。正正誤誤の候補4を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 誤誤誤正。PlanとDoは正しく、AchieveはActと違う。\par
+
+\noindent\textbf{2：不適切} 誤正正正。Planを誤、ChooseとAchieveを正としている。\par
+
+\noindent\textbf{3：不適切} 正正正誤。Chooseを正としている点が違い、CはCheckである。\par
+
+\noindent\textbf{4：適切} 正正誤誤。PlanとDoが正しく、ChooseとAchieveはCheckとActに対応しない。\par
+
+\noindent\textbf{5：不適切} 正正誤正。Achieveを正としている点が違い、AはActである。\par
+
+\paragraph{再利用する考え方} 変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。
+
+\paragraph{共通理論} \hyperref[theory:quality:pdca]{第\ref*{theory:quality:pdca}節}
+
+\par 参考：\cite{quality_iso_process}。
+
+\paragraph{関連問題} \hyperref[q:r03-reg-basic-1-3]{R03-REG-BASIC-1-3}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{事象回数と間隔の確率モデル}
+
+\subsection{令和4年度 問1-2}
+\label{q:r04-reg-basic-1-2}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textbf{検討未確定：} 原典に平均事故回数がなく、ポアソンの大平均に対する正規近似を排除できない。災害間隔や不良個数にも仮定が省略される。公式/初回4を保持し、唯一不適切の厳密な成立範囲をAstra重点査読へ残す。
+
+\paragraph{問題の要旨} 一様・二項・ポアソン・指数・正規の分布と、現象をモデル化する前提を比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 不適切な記述を選ぶ\par
+
+\noindent\textbf{原典照合：} 14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。\par
+
+\noindent\textbf{モデル：} 独立性、正規性、一定発生率などの前提を個別に保持する。\par
+
+\paragraph{問われる核心} 一様・二項・ポアソン・指数・正規の分布と、現象をモデル化する前提を比較する。
+
+\paragraph{必要知識} 離散/連続、二項の独立試行、ポアソンの希少事象、一定率と指数待ち時間、正規近似。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 初回は有限期間の事故回数の基本モデルをポアソンと読み、4を最も不適切とした。しかし原典は平均回数を指定しておらず、平均が十分大きいなら正規近似も可能である。2と3も小確率や一定率などの仮定を要する。したがって公式4を保持して典型分布の対応は説明するが、4だけがあらゆる条件で不適切という厳密な主張はしない。回数と間隔を区別し、分布名より先にモデルの前提を確認する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件を含めて検討} サイコロの各面は一様分布。公平なサイコロを前提に離散一様となる。偏ったサイコロまでは一様としない。\par
+
+\noindent\textbf{2：条件を含めて検討} 工業製品の不良個数はポアソン近似。多数の独立機会と小さな一定不良確率を前提に二項分布をポアソンで近似できる。共通原因の不良連発には注意する。\par
+
+\noindent\textbf{3：条件を含めて検討} 災害間隔は指数近似。一定率の独立発生モデルなら待ち時間は指数となる。災害全般の普遍法則ではない。\par
+
+\noindent\textbf{4：不適切} 5年間の事故回数は正規近似。低頻度の回数を正規へ直接対応させるのは不適切という典型比較である。ただし平均回数が大きいポアソンには正規近似が成立するので、条件なしの不可能命題にはしない。\par
+
+\noindent\textbf{5：条件を含めて検討} 5回のコインの表数は二項分布。独立な試行と一定の表確率なら二項となる。公平性はp=\allowbreak{}1/2にするが、二項であること自体は一定pでも成立する。\par
+
+\paragraph{再利用する考え方} 変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。
+
+\paragraph{共通理論} \hyperref[theory:quality:models]{第\ref*{theory:quality:models}節}, \hyperref[theory:quality:poisson]{第\ref*{theory:quality:poisson}節}
+
+\par 参考：\cite{stat_nist_binomial,stat_nist_poisson,stat_nist_exponential,stat_nist_normal}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{品質要求の展開と重要度}
+
+\subsection{平成24年度 問1-3}
+\label{q:h24-reg-basic-1-3}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 要求品質の重みと対応の強さから、品質要素の重要度を積和で求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 最も適切な記述又は組合せを選ぶ\par
+
+\noindent\textbf{原典照合：} 14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。\par
+
+\noindent\textbf{モデル：} 独立性、正規性、一定発生率などの前提を個別に保持する。\par
+
+\paragraph{問われる核心} 要求品質の重みと対応の強さから、品質要素の重要度を積和で求める。
+
+\paragraph{必要知識} 要求品質と設計特性、対応行列、重要度の積和、問題固有の対応尺度。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 対応の強さを原典どおり◎5、○3、△1とし、空欄は加点しない。要求の重みは行順に5,5,4,3,4,3である。Aは \(5\cdot5+4\cdot3+4\cdot3=49\)、Cは \(5\cdot3+4\cdot5+3\cdot5+3\cdot1=53\)、Dは \(5\cdot5+4\cdot3+3\cdot3=46\) であり、3を選ぶ。各列に関係のある要求の重要度を反映する計算である。係数を一般的な別の尺度へ勝手に置き換えない。図中のBとEは今回の大小比較の対象ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} A>C>D。C=\allowbreak{}53でA=\allowbreak{}49を上回るため、Aを先に置く順序は合わない。\par
+
+\noindent\textbf{2：不適切} A>D>C。Cは三要素のうち最大であり、最後に置けない。\par
+
+\noindent\textbf{3：適切} C>A>D。重み付き合計はC=\allowbreak{}53、A=\allowbreak{}49、D=\allowbreak{}46なのでこの順序となる。\par
+
+\noindent\textbf{4：不適切} C>D>A。A=\allowbreak{}49はD=\allowbreak{}46より大きく、後二要素の順が逆である。\par
+
+\noindent\textbf{5：不適切} D>A>C。D=\allowbreak{}46は最小であり、最初にはならない。\par
+
+\paragraph{再利用する考え方} 変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。
+
+\paragraph{共通理論} \hyperref[theory:quality:qfd]{第\ref*{theory:quality:qfd}節}
+
+\par 参考：\cite{quality_qfd_scale}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{正規応力強度モデルの故障確率}
+
+\subsection{令和2年度 問1-2}
+\label{q:r02-reg-basic-1-2}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 応力と強度の独立正規モデルで、強度が応力を下回る確率を比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 最も適切な記述又は組合せを選ぶ\par
+
+\noindent\textbf{原典照合：} 14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。\par
+
+\noindent\textbf{モデル：} 独立性、正規性、一定発生率などの前提を個別に保持する。\par
+
+\paragraph{問われる核心} 応力と強度の独立正規モデルで、強度が応力を下回る確率を比較する。
+
+\paragraph{必要知識} 独立な応力と強度、限界状態、信頼性指標、標準正規累積分布。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 限界状態 \(Z=R-S\) の平均は \(\mu_R-\mu_S\)、分散は \(\sigma_R^2+\sigma_S^2\) である。故障確率は \(\Phi(-b)\)、\(b=(\mu_R-\mu_S)/\sqrt{\sigma_R^2+\sigma_S^2}\) なので、大きい \(b\) ほど小さい。原典比のアは4/3、イは3/3=\allowbreak{}1、ウは3/2、エは1/√2である。故障確率の小さい順はウ・ア・イ・エとなり4を選ぶ。平均強度と平均応力の差だけで順位を決めず、その散らばりで規格化する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} ウ→イ→エ→ア。ウの次はイではなくアである。アの信頼性指標4/3はイの1より大きい。\par
+
+\noindent\textbf{2：不適切} ア→ウ→イ→エ。ウの3/2はアの4/3より大きく、最小故障確率はウとなる。\par
+
+\noindent\textbf{3：不適切} ア→イ→ウ→エ。ウをイより後に置くのが違い、ウは全ケース中で故障確率が最小となる。\par
+
+\noindent\textbf{4：適切} ウ→ア→イ→エ。信頼性指標を大きい順に並べると3/2、4/3、1、1/√2で、故障確率はこの順に小さい。\par
+
+\noindent\textbf{5：不適切} ア→ウ→エ→イ。ウが最初でないことと、エがイより後であることに反する。\par
+
+\paragraph{再利用する考え方} 変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。
+
+\paragraph{共通理論} \hyperref[theory:quality:stress_strength]{第\ref*{theory:quality:stress_strength}節}, \hyperref[theory:quality:variance]{第\ref*{theory:quality:variance}節}
+
+\par 参考：\cite{stat_nist_normal,stat_psu_linear}。
+
+\paragraph{関連問題} \hyperref[q:r06-reg-basic-1-6]{R06-REG-BASIC-1-6}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{工程能力と統計的品質管理の図}
+
+\subsection{平成25年度 問1-6}
+\label{q:h25-reg-basic-1-6}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 工程能力指数、回帰分析、管理図、ヒストグラムを目的で区別する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 最も適切な記述又は組合せを選ぶ\par
+
+\noindent\textbf{原典照合：} 14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。\par
+
+\noindent\textbf{モデル：} 独立性、正規性、一定発生率などの前提を個別に保持する。\par
+
+\paragraph{問われる核心} 工程能力指数、回帰分析、管理図、ヒストグラムを目的で区別する。
+
+\paragraph{必要知識} 安定工程と規格、Cp、回帰と主成分分析の目的差、管理図、度数密度。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 公差幅を工程のばらつき幅で規格化する値は工程能力指数である。正規かつ安定な工程の両側規格では \(C_p=(U-L)/(6\sigma)\) と表せる。応答変数と説明変数のモデルは回帰分析、工程の時間変動は管理図、測定値を区間に分け度数に比例する面積を並べる図はヒストグラムなので3である。管理図の管理限界と製品の規格限界、標準偏差と無次元の指数を混同しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 標準偏差・主成分分析・管理図・ヒストグラム。公差を工程のばらつき幅で割る値は標準偏差そのものではない。主成分分析も指定された応答モデルの評価と違う。\par
+
+\noindent\textbf{2：不適切} 標準偏差・回帰分析・工程図・散布図。アの比は無次元の工程能力指数であり、異常監視は管理図、区間内度数の表示はヒストグラムである。\par
+
+\noindent\textbf{3：適切} 工程能力指数・回帰分析・管理図・ヒストグラム。公差と工程能力の比、応答への説明変数のモデル、時間変動の監視、区間度数の図がそれぞれ対応する。\par
+
+\noindent\textbf{4：不適切} 工程能力指数・主成分分析・工程図・ヒストグラム。主成分分析は変数を合成して次元を減らす方法で、工程図も時間変動の統計監視とは異なる。\par
+
+\noindent\textbf{5：不適切} 工程能力指数・回帰分析・工程図・散布図。工程図は手順を示し、散布図は二変数の関係を示す。ここで求める監視と一変数の度数分布に対応しない。\par
+
+\paragraph{再利用する考え方} 変数の意味と単位を先に定め、平均・分散・確率・判定を順に分ける。品質の要求、工程の監視、ロットの受入れを区別し、成立条件のない一般化を避ける。
+
+\paragraph{共通理論} \hyperref[theory:quality:capability]{第\ref*{theory:quality:capability}節}, \hyperref[theory:quality:charts]{第\ref*{theory:quality:charts}節}, \hyperref[theory:quality:regression]{第\ref*{theory:quality:regression}節}
+
+\par 参考：\cite{quality_nist_capability,quality_nist_control,quality_nist_histogram,stat_psu_correlation}。
+
+\paragraph{関連問題} \hyperref[q:r05-reg-basic-1-6]{R05-REG-BASIC-1-6}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{断面二次モーメント・断面係数と寸法依存}
+
+\subsection{令和4年度 問1-5}
+\label{q:r04-reg-basic-1-5}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textbf{検討未確定：} 径/高さを変える比較でq,L,E（矩形は幅b）を固定する前提が必要。自重のみでqが断面積に比例して変わる円梁なら応力はdの逆1乗、たわみは逆2乗となる。試験の通常の固定荷重解と区別。
+
+\paragraph{問題の要旨} 等分布荷重を受ける単純支持梁の断面寸法と、最大曲げ応力・たわみのべき依存性を導く。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} 等分布荷重を受ける単純支持梁の断面寸法と、最大曲げ応力・たわみのべき依存性を導く。
+
+\paragraph{必要知識} 固定するq,L,E、円断面IとZ、矩形の幅固定、曲げモーメント、梁の線形小たわみ。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 同じq,L,Eの円断面梁では \(M_{\max}=qL^2/8\)、\(I=\pi d^4/64\)、\(Z=I/(d/2)=\pi d^3/32\)。従って \(\sigma_{\max}=M_{\max}/Z\propto d^{-3}\)、\(\delta_{\max}=5qL^4/(384EI)\propto d^{-4}\)。矩形断面は幅bを固定して \(Z=bh^2/6\) より \(\sigma_{\max}\propto h^{-2}\)。A3、B反比例、C4、D2の3となる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 3・比例・4・3。列2は反比例であり比例ではない。列4は2であり3ではない。\par
+
+\noindent\textbf{2：不適合} 4・比例・3・2。列1は3であり4ではない。列2は反比例であり比例ではない。列3は4であり3ではない。\par
+
+\noindent\textbf{3：適合（前提内）} 3・反比例・4・2。曲げ応力は断面係数Zの逆数、変位は断面二次モーメントIの逆数という二つの依存性に適合する。\par
+
+\noindent\textbf{4：不適合} 4・反比例・3・3。列1は3であり4ではない。列3は4であり3ではない。列4は2であり3ではない。\par
+
+\noindent\textbf{5：不適合} 3・反比例・4・3。列4は2であり3ではない。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:beam]{第\ref*{theory:structural:beam}節}, \hyperref[theory:structural:scaling]{第\ref*{theory:structural:scaling}節}
+
+\par 参考：\cite{struct_mit_beam,struct_mit_buckling,struct_mlit_limit}。
+
+\paragraph{関連問題} \hyperref[q:r06-reg-basic-1-3]{R06-REG-BASIC-1-3}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和6年度 問1-3}
+\label{q:r06-reg-basic-1-3}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textbf{検討未確定：} 径/高さを変える比較でq,L,E（矩形は幅b）を固定する前提が必要。自重のみでqが断面積に比例して変わる円梁なら応力はdの逆1乗、たわみは逆2乗となる。試験の通常の固定荷重解と区別。
+
+\paragraph{問題の要旨} 等分布荷重を受ける単純支持梁の断面寸法と、最大曲げ応力・たわみのべき依存性を導く。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} 等分布荷重を受ける単純支持梁の断面寸法と、最大曲げ応力・たわみのべき依存性を導く。
+
+\paragraph{必要知識} 固定するq,L,E、円断面IとZ、矩形の幅固定、曲げモーメント、梁の線形小たわみ。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 同じq,L,Eの円断面単純支持梁で \(I=\pi d^4/64\)、\(Z=\pi d^3/32\) である。最大モーメントは \(qL^2/8\)、最大たわみは \(5qL^4/(384EI)\)。従って \(\sigma_{\max}\propto d^{-3}\)、\(\delta_{\max}\propto d^{-4}\) であり、3乗に反比例・4乗に反比例の1を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適合（前提内）} 3・反比例・4・反比例。曲げ応力は断面係数Zの逆数、変位は断面二次モーメントIの逆数という二つの依存性に適合する。\par
+
+\noindent\textbf{2：不適合} 4・比例・4・反比例。列1は3であり4ではない。列2は反比例であり比例ではない。\par
+
+\noindent\textbf{3：不適合} 4・反比例・3・反比例。列1は3であり4ではない。列3は4であり3ではない。\par
+
+\noindent\textbf{4：不適合} 4・比例・3・比例。列1は3であり4ではない。列2は反比例であり比例ではない。列3は4であり3ではない。列4は反比例であり比例ではない。\par
+
+\noindent\textbf{5：不適合} 3・反比例・4・比例。列4は反比例であり比例ではない。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:beam]{第\ref*{theory:structural:beam}節}, \hyperref[theory:structural:scaling]{第\ref*{theory:structural:scaling}節}
+
+\par 参考：\cite{struct_mit_beam,struct_mit_buckling,struct_mlit_limit}。
+
+\paragraph{関連問題} \hyperref[q:r04-reg-basic-1-5]{R04-REG-BASIC-1-5}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{圧縮安定とオイラー座屈}
+
+\subsection{平成25年度 問1-2}
+\label{q:h25-reg-basic-1-2}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 薄い定規の引張と圧縮の差を座屈で説明し、許容応力と安全率を対応させる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} 薄い定規の引張と圧縮の差を座屈で説明し、許容応力と安全率を対応させる。
+
+\paragraph{必要知識} 材料強度と座屈荷重の相違、圧縮の安定性、許容応力＝強度/安全率。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 引張では直線形状が安定しやすいが、圧縮では小さな横たわみが増幅され座屈する。Aは引張、Bは圧縮、Cは座屈、Dは安全率である。強度を \(\sigma_{\mathrm{str}}\)、安全率を \(n>1\) とすると \(\sigma_{\mathrm{allow}}=\sigma_{\mathrm{str}}/n\)。圧縮の座屈荷重はこの材料強度だけで決まらない。表の並びに従い本問の候補番号を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 引張・圧縮・剥離・安全率。横へたわむ圧縮不安定は座屈であり、層がはがれる剥離ではない。\par
+
+\noindent\textbf{2：不適合} 圧縮・引張・剥離・安全率。薄い定規は引張より圧縮の安定性を失いやすく、AとBが逆である。横へたわむ圧縮不安定は座屈であり、層がはがれる剥離ではない。\par
+
+\noindent\textbf{3：不適合} 圧縮・引張・剥離・ヤング率。薄い定規は引張より圧縮の安定性を失いやすく、AとBが逆である。横へたわむ圧縮不安定は座屈であり、層がはがれる剥離ではない。強度を割る無次元比は安全率であり、応力単位のヤング率ではない。\par
+
+\noindent\textbf{4：不適合} 圧縮・引張・座屈・ヤング率。薄い定規は引張より圧縮の安定性を失いやすく、AとBが逆である。強度を割る無次元比は安全率であり、応力単位のヤング率ではない。\par
+
+\noindent\textbf{5：適合（前提内）} 引張・圧縮・座屈・安全率。引張・圧縮・座屈・安全率が対応する。形の安定と材料強度は別の照査である。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:buckling]{第\ref*{theory:structural:buckling}節}, \hyperref[theory:structural:allowable]{第\ref*{theory:structural:allowable}節}
+
+\par 参考：\cite{struct_mit_beam,struct_mit_buckling,struct_mlit_limit}。
+
+\paragraph{関連問題} \hyperref[q:h28-reg-basic-1-3]{H28-REG-BASIC-1-3}, \hyperref[q:r03-reg-basic-1-5]{R03-REG-BASIC-1-5}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成28年度 問1-3}
+\label{q:h28-reg-basic-1-3}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 薄い定規の引張と圧縮の差を座屈で説明し、許容応力と安全率を対応させる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} 薄い定規の引張と圧縮の差を座屈で説明し、許容応力と安全率を対応させる。
+
+\paragraph{必要知識} 材料強度と座屈荷重の相違、圧縮の安定性、許容応力＝強度/安全率。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 引張では直線形状が安定しやすいが、圧縮では小さな横たわみが増幅され座屈する。Aは引張、Bは圧縮、Cは座屈、Dは安全率である。強度を \(\sigma_{\mathrm{str}}\)、安全率を \(n>1\) とすると \(\sigma_{\mathrm{allow}}=\sigma_{\mathrm{str}}/n\)。圧縮の座屈荷重はこの材料強度だけで決まらない。表の並びに従い本問の候補番号を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 引張・圧縮・剥離・安全率。横へたわむ圧縮不安定は座屈であり、層がはがれる剥離ではない。\par
+
+\noindent\textbf{2：不適合} 圧縮・引張・剥離・安全率。薄い定規は引張より圧縮の安定性を失いやすく、AとBが逆である。横へたわむ圧縮不安定は座屈であり、層がはがれる剥離ではない。\par
+
+\noindent\textbf{3：不適合} 圧縮・引張・剥離・ヤング率。薄い定規は引張より圧縮の安定性を失いやすく、AとBが逆である。横へたわむ圧縮不安定は座屈であり、層がはがれる剥離ではない。強度を割る無次元比は安全率であり、応力単位のヤング率ではない。\par
+
+\noindent\textbf{4：適合（前提内）} 引張・圧縮・座屈・安全率。引張・圧縮・座屈・安全率が対応する。形の安定と材料強度は別の照査である。\par
+
+\noindent\textbf{5：不適合} 圧縮・引張・座屈・ヤング率。薄い定規は引張より圧縮の安定性を失いやすく、AとBが逆である。強度を割る無次元比は安全率であり、応力単位のヤング率ではない。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:buckling]{第\ref*{theory:structural:buckling}節}, \hyperref[theory:structural:allowable]{第\ref*{theory:structural:allowable}節}
+
+\par 参考：\cite{struct_mit_beam,struct_mit_buckling,struct_mlit_limit}。
+
+\paragraph{関連問題} \hyperref[q:h25-reg-basic-1-2]{H25-REG-BASIC-1-2}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和元年度 問1-4}
+\label{q:r01-reg-basic-1-4}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理4頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 細長い棒の軸圧縮による横変形を、静的座屈として説明する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} 細長い棒の軸圧縮による横変形を、静的座屈として説明する。
+
+\paragraph{必要知識} 圧縮荷重、曲げ剛性EI、端部拘束に依存する有効長KL、座屈と共振の差。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 軸圧縮のもとで横たわみを増やす効果が曲げの復元に勝つと直線状態が不安定になる。\(P_{\mathrm{cr}}=\pi^2EI/(KL)^2\) であり、断面円の \(I=\pi d^4/64\) より、小径ほど臨界荷重が小さい。図の現象はねじれや振動の共振ではなく曲げ座屈である。理想棒では臨界を超える条件を選び、実物の初期不整に対しては臨界前からたわみが生じ得る点も分ける。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 小さい・以下・ねじれ・座屈。理想的な直線平衡の安定性を失うのは臨界荷重を超える側である。描かれた横変位は曲げであり、断面の軸回り回転であるねじれではない。\par
+
+\noindent\textbf{2：不適合} 大きい・以下・ねじれ・共振。同じ長さ・材質では小径ほど曲げ剛性EIが小さく座屈しやすい。理想的な直線平衡の安定性を失うのは臨界荷重を超える側である。描かれた横変位は曲げであり、断面の軸回り回転であるねじれではない。静的圧縮での安定性喪失は座屈であり、周期的外力と固有振動の共振ではない。\par
+
+\noindent\textbf{3：不適合} 小さい・超える・ねじれ・共振。描かれた横変位は曲げであり、断面の軸回り回転であるねじれではない。静的圧縮での安定性喪失は座屈であり、周期的外力と固有振動の共振ではない。\par
+
+\noindent\textbf{4：不適合} 大きい・超える・曲げ・共振。同じ長さ・材質では小径ほど曲げ剛性EIが小さく座屈しやすい。静的圧縮での安定性喪失は座屈であり、周期的外力と固有振動の共振ではない。\par
+
+\noindent\textbf{5：適合（前提内）} 小さい・超える・曲げ・座屈。小さい径・臨界荷重を超える・曲げ・座屈の対応である。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:buckling]{第\ref*{theory:structural:buckling}節}
+
+\par 参考：\cite{struct_mit_beam,struct_mit_buckling,struct_mlit_limit}。
+
+\paragraph{関連問題} \hyperref[q:r05-reg-basic-1-2]{R05-REG-BASIC-1-2}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和3年度 問1-5}
+\label{q:r03-reg-basic-1-5}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理4頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} オイラー座屈の長さ・強度依存性と、許容応力・限界状態を組合せで検討する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} オイラー座屈の長さ・強度依存性と、許容応力・限界状態を組合せで検討する。
+
+\paragraph{必要知識} オイラー式の弾性条件、Lの逆二乗、ヤング率と降伏強度の差、安全率の除算、複数の限界状態。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(P_{\mathrm{cr}}\propto L^{-2}\) なので長い柱ほど座屈荷重は小さい。弾性座屈域なら同じ \(E,I,KL\) の柱の臨界荷重は降伏強度を直接含まない。ただし算出座屈応力が降伏域に入る柱には弾性式をそのまま適用しない。許容応力は強度を安全率で割る。使用・終局・疲労等の限界状態を分けるため、誤正誤誤の5である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 正誤正正。アは長いほど臨界荷重が小さくなるので誤。イを誤、ウ・エを正とする点も違う。\par
+
+\noindent\textbf{2：不適合} 正正誤正。アは逆二乗則に反し、エは限界状態を一つだけに限定している。\par
+
+\noindent\textbf{3：不適合} 誤誤誤正。イは弾性オイラー式の条件内では同じE・幾何・拘束で等しい座屈荷重となるため正。エも誤。\par
+
+\noindent\textbf{4：不適合} 誤正正誤。ウの強度に安全率を掛けた許容応力は逆である。\par
+
+\noindent\textbf{5：適合（前提内）} 誤正誤誤。アは長さ依存の方向が誤、イは弾性オイラー範囲で正、ウは除算でなく乗算のため誤、エは限界状態の単一化のため誤。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:buckling]{第\ref*{theory:structural:buckling}節}, \hyperref[theory:structural:allowable]{第\ref*{theory:structural:allowable}節}, \hyperref[theory:structural:limit]{第\ref*{theory:structural:limit}節}
+
+\par 参考：\cite{struct_mit_beam,struct_mit_buckling,struct_mlit_limit}。
+
+\paragraph{関連問題} \hyperref[q:h25-reg-basic-1-2]{H25-REG-BASIC-1-2}, \hyperref[q:r06-reg-basic-1-2]{R06-REG-BASIC-1-2}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和5年度 問1-2}
+\label{q:r05-reg-basic-1-2}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 細長い棒の軸圧縮による横変形を、静的座屈として説明する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} 細長い棒の軸圧縮による横変形を、静的座屈として説明する。
+
+\paragraph{必要知識} 圧縮荷重、曲げ剛性EI、端部拘束に依存する有効長KL、座屈と共振の差。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 軸圧縮のもとで横たわみを増やす効果が曲げの復元に勝つと直線状態が不安定になる。\(P_{\mathrm{cr}}=\pi^2EI/(KL)^2\) であり、断面円の \(I=\pi d^4/64\) より、小径ほど臨界荷重が小さい。図の現象はねじれや振動の共振ではなく曲げ座屈である。理想棒では臨界を超える条件を選び、実物の初期不整に対しては臨界前からたわみが生じ得る点も分ける。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 大きい・以下・ねじれ・共振。同じ長さ・材質では小径ほど曲げ剛性EIが小さく座屈しやすい。理想的な直線平衡の安定性を失うのは臨界荷重を超える側である。描かれた横変位は曲げであり、断面の軸回り回転であるねじれではない。静的圧縮での安定性喪失は座屈であり、周期的外力と固有振動の共振ではない。\par
+
+\noindent\textbf{2：不適合} 小さい・超える・ねじれ・座屈。描かれた横変位は曲げであり、断面の軸回り回転であるねじれではない。\par
+
+\noindent\textbf{3：不適合} 大きい・超える・曲げ・共振。同じ長さ・材質では小径ほど曲げ剛性EIが小さく座屈しやすい。静的圧縮での安定性喪失は座屈であり、周期的外力と固有振動の共振ではない。\par
+
+\noindent\textbf{4：適合（前提内）} 小さい・超える・曲げ・座屈。小さい径・臨界荷重を超える・曲げ・座屈の対応である。\par
+
+\noindent\textbf{5：不適合} 小さい・以下・曲げ・共振。理想的な直線平衡の安定性を失うのは臨界荷重を超える側である。静的圧縮での安定性喪失は座屈であり、周期的外力と固有振動の共振ではない。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:buckling]{第\ref*{theory:structural:buckling}節}
+
+\par 参考：\cite{struct_mit_beam,struct_mit_buckling,struct_mlit_limit}。
+
+\paragraph{関連問題} \hyperref[q:r01-reg-basic-1-4]{R01-REG-BASIC-1-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{安全率と費用モデルの最適化}
+
+\subsection{令和元年度再試験 問1-5}
+\label{q:r01-ret-basic-1-5}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 安全率に依存する損害費用と対策費用の和を、定義域で最小化する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} 安全率に依存する損害費用と対策費用の和を、定義域で最小化する。
+
+\paragraph{必要知識} 与えられた費用関数、微分による停留点、二階微分の正値、定義域と単位。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 費用の単位を億円にそろえる。\(x\ge1\)、\(C(x)=90/(1+4x)+10x\) である。\(C^\prime=-360/(1+4x)^2+10=0\) より \(1+4x=6\)、\(x=5/4=1.25\) で候補2となる。\(C^{\prime\prime}=2880/(1+4x)^3>0\) なので許容域内の唯一の最小である。候補の費用は順に28、27.5、約27.857、28.75、30億円である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 1.00。与式に代入した総費用は約28億円であり、最小の候補より大きい。\par
+
+\noindent\textbf{2：適合（前提内）} 1.25。与式に代入した総費用は約27.5億円であり、連続域での停留点かつ最小である。\par
+
+\noindent\textbf{3：不適合} 1.50。与式に代入した総費用は約27.857142857億円であり、最小の候補より大きい。\par
+
+\noindent\textbf{4：不適合} 1.75。与式に代入した総費用は約28.75億円であり、最小の候補より大きい。\par
+
+\noindent\textbf{5：不適合} 2.00。与式に代入した総費用は約30億円であり、最小の候補より大きい。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:optimization]{第\ref*{theory:structural:optimization}節}
+
+\paragraph{関連問題} \hyperref[q:r04-reg-basic-1-4]{R04-REG-BASIC-1-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和4年度 問1-4}
+\label{q:r04-reg-basic-1-4}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 安全率に依存する損害費用と対策費用の和を、定義域で最小化する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} 安全率に依存する損害費用と対策費用の和を、定義域で最小化する。
+
+\paragraph{必要知識} 与えられた費用関数、微分による停留点、二階微分の正値、定義域と単位。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 費用の単位を億円にそろえる。\(x>1\)、\(C(x)=9/(1+x)+x\) である。\(C^\prime=-9/(1+x)^2+1=0\) より \(1+x=3\)、\(x=2\) で候補1となる。\(C^{\prime\prime}=18/(1+x)^3>0\) なので許容域で唯一の最小である。候補の費用は順に5、約5.071、5.25、5.5、5.8億円である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適合（前提内）} 2.0。与式に代入した総費用は約5億円であり、連続域での停留点かつ最小である。\par
+
+\noindent\textbf{2：不適合} 2.5。与式に代入した総費用は約5.071428571億円であり、最小の候補より大きい。\par
+
+\noindent\textbf{3：不適合} 3.0。与式に代入した総費用は約5.25億円であり、最小の候補より大きい。\par
+
+\noindent\textbf{4：不適合} 3.5。与式に代入した総費用は約5.5億円であり、最小の候補より大きい。\par
+
+\noindent\textbf{5：不適合} 4.0。与式に代入した総費用は約5.8億円であり、最小の候補より大きい。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:optimization]{第\ref*{theory:structural:optimization}節}
+
+\paragraph{関連問題} \hyperref[q:r01-ret-basic-1-5]{R01-RET-BASIC-1-5}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{崩壊・共振・圧壊と構造モデル}
+
+\subsection{令和2年度 問1-3}
+\label{q:r02-reg-basic-1-3}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textbf{検討未確定：} 短柱の圧縮が破断強度を超えるというエの語は材料・圧縮強度・降伏の条件が曖昧。延性材料が一定の引張破断強度で圧縮破断するとは一般化しない。初回3/公式3を保持。
+
+\paragraph{問題の要旨} 静的崩壊、共振、座屈、短柱の圧縮破損と構造解析のモデルを区別する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} 静的崩壊、共振、座屈、短柱の圧縮破損と構造解析のモデルを区別する。
+
+\paragraph{必要知識} 塑性崩壊、外力周波数と固有振動数、細長比、圧縮材料破損、構造解析モデル。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} アの崩壊は塑性ヒンジ等による荷重支持機構の喪失であり弾性範囲だけで決めない。イの共振は外力の周波数が固有振動数へ近づくときに起き、応力が振動数へ達するという比較は次元も違う。ウの細長い柱は圧縮座屈する。エは短く太い柱で材料圧縮破損が支配し得るという趣旨、オは荷重・支持条件と部材を表す解析モデルである。従って誤誤正正正、3とする。ただしエの破断強度を全材料の圧縮破壊に同じように適用しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 正正正誤誤。アは塑性崩壊を弾性で決める点が誤り、イも応力と振動数を比べている。エ・オを誤りとする点も違う。\par
+
+\noindent\textbf{2：不適合} 誤正正正誤。イの応力が固有振動数へ達する説明は単位も機構も違う。オの解析モデルの定義を否定できない。\par
+
+\noindent\textbf{3：適合（前提内）} 誤誤正正正。アは誤、イは誤、ウは圧縮座屈で正、エは短柱の材料圧縮破損を意図した正、オは部材と力・拘束のモデルで正となる。\par
+
+\noindent\textbf{4：不適合} 正誤誤正正。アは塑性機構の崩壊荷重であって弾性だけでは決まらず、ウの圧縮座屈は正である。\par
+
+\noindent\textbf{5：不適合} 正正誤誤正。ア・イは誤、ウは正なので最初の三記号が一致しない。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:modes]{第\ref*{theory:structural:modes}節}, \hyperref[theory:structural:buckling]{第\ref*{theory:structural:buckling}節}
+
+\par 参考：\cite{struct_mit_beam,struct_mit_buckling,struct_mlit_limit}。
+
+\paragraph{関連問題} \hyperref[q:h24-reg-basic-1-2]{H24-REG-BASIC-1-2}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{疲労・クリープと局所応力集中}
+
+\subsection{令和4年度 問1-1}
+\label{q:r04-reg-basic-1-1}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textbf{検討未確定：} 疲労の平均応力依存は振幅等の同条件比較を要する。急変部の局所von Mises値は荷重/形状/拘束に依存し、常に上がる全称の証明ではない。公式/初回1を維持し条件を限定。
+
+\paragraph{問題の要旨} 疲労の平均応力、クリープ温度、曲げ剛性と応力集中を区別する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} 疲労の平均応力、クリープ温度、曲げ剛性と応力集中を区別する。
+
+\paragraph{必要知識} 応力振幅/平均応力、通常の平均応力補正の条件、高温クリープ、EIと変位、局所応力と公称応力。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} Aは通常の疲労限度線図の引張平均応力側である。同じ応力振幅なら平均引張応力の増加は一般に疲労寿命へ不利となるが、材料・残留応力・塑性域へ無条件には拡張しない。Bは高温での時間依存変形、Cは同じ荷重と断面の \(\delta\propto E^{-1}\) より小さいヤング率、Dは断面急変部の局所応力の上昇である。従って1を選ぶ。von Mises応力の局所値は荷重と形状に依存し、急変させればどの点でも必ず高くなるという命題にはしない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適合（前提内）} 引張・高い・小さい・高い。振幅等を固定した通常の金属疲労モデルでは引張平均応力が不利、高温でクリープ、小Eで大変位、急変部で局所応力が高い。\par
+
+\noindent\textbf{2：不適合} 引張・高い・大きい・小さい。同じ荷重と幾何では変位はEの逆数であり、小Eが大変位である。応力集中は局所上昇を表す。\par
+
+\noindent\textbf{3：不適合} 圧縮・高い・小さい・小さい。一般的平均応力モデルの不利側は引張であり、応力集中を局所低下とはしない。\par
+
+\noindent\textbf{4：不適合} 圧縮・高強度・小さい・高い。Aは引張側、Bは高温である。高強度を温度条件の代わりにはできない。\par
+
+\noindent\textbf{5：不適合} 引張・高強度・大きい・高い。クリープのBは高温であり、曲げ変位のCは小さいEである。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:fatigue]{第\ref*{theory:structural:fatigue}節}, \hyperref[theory:structural:creep]{第\ref*{theory:structural:creep}節}, \hyperref[theory:structural:beam]{第\ref*{theory:structural:beam}節}, \hyperref[theory:structural:concentration]{第\ref*{theory:structural:concentration}節}
+
+\par 参考：\cite{struct_nims_data,struct_nasa_mean,struct_mit_beam}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{使用・終局・疲労の限界状態}
+
+\subsection{平成24年度 問1-2}
+\label{q:h24-reg-basic-1-2}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textbf{検討未確定：} 全ての構成部材の破壊まで至らなければ安全性が十分という前文は、機構形成や全体座屈を除外しておらず一般には保証できない。公式5と初回5を保持し、余力の条件を限定する。
+
+\paragraph{問題の要旨} 不静定構造の余力、部分損傷、限界状態と非線形解析の関係を整理する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} 不静定構造の余力、部分損傷、限界状態と非線形解析の関係を整理する。
+
+\paragraph{必要知識} 静定と不静定、荷重再配分、塑性ヒンジ、材料・幾何非線形、終局/使用/疲労の限界。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} Aを高い、Bを限界状態、Cを部分的、Dを非線形性とする5である。余剰拘束のある構造で一部が降伏しても荷重を他部へ再配分できる場合がある。しかし塑性機構、全体座屈、接合部破壊が先に生じ得るため、「全ての部材が破壊しなければ安全」という前文を普遍命題にしない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 高い・限界状態・部分的・線形性。損傷後の応答を線形のままとするDが違う。\par
+
+\noindent\textbf{2：不適合} 低い・限界状態・全体的・非線形性。Aは余剰拘束が多い高不静定、Cは部分損傷を許す説明なので全体的とする点が違う。\par
+
+\noindent\textbf{3：不適合} 高い・弾性・部分的・線形性。弾性設計に限定すると部分損傷後の余力を捉えず、Dも非線形である。\par
+
+\noindent\textbf{4：不適合} 低い・弾性・全体的・線形性。高不静定の余力を低不静定へ置換し、弾性・全体的・線形へ限定している。\par
+
+\noindent\textbf{5：適合（前提内）} 高い・限界状態・部分的・非線形性。想定された延性と荷重再配分のモデルでは高不静定、限界状態、部分的損傷、非線形が対応する。ただし全構成部材が破壊しないだけでは全体安全の証明にならない。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:limit]{第\ref*{theory:structural:limit}節}, \hyperref[theory:structural:redundancy]{第\ref*{theory:structural:redundancy}節}
+
+\par 参考：\cite{struct_mit_beam,struct_mit_buckling,struct_mlit_limit}。
+
+\paragraph{関連問題} \hyperref[q:r02-reg-basic-1-3]{R02-REG-BASIC-1-3}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和6年度 問1-2}
+\label{q:r06-reg-basic-1-2}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理2頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 通常使用、繰返し荷重、最大耐荷性能の三つの要求を限界状態へ対応させる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} 通常使用、繰返し荷重、最大耐荷性能の三つの要求を限界状態へ対応させる。
+
+\paragraph{必要知識} 使用性、疲労による累積損傷、終局耐荷性能、規準別の分類粒度。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 過大なたわみや振動等で通常の使用に支障が生じる状態は使用限界である。繰返し荷重の損傷が疲労限界、崩壊や不安定等で最大耐荷性能を失う状態が終局限界である。使用・疲労・終局の2を選ぶ。基準によっては疲労を終局に含める分類もあるが、本問の三項目対応を変えない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 使用・終局・疲労。Bの繰返し荷重は疲労、Cの最大耐荷は終局であり入れ替わっている。\par
+
+\noindent\textbf{2：適合（前提内）} 使用・疲労・終局。Aは通常の機能・快適性等の使用限界、Bは疲労、Cは終局であり対応する。\par
+
+\noindent\textbf{3：不適合} 終局・疲労・使用。Aは使用、Cは終局なので逆転している。\par
+
+\noindent\textbf{4：不適合} 疲労・使用・終局。Aは使用、Bは繰返しの疲労なので逆転している。\par
+
+\noindent\textbf{5：不適合} 疲労・終局・使用。三項目とも用途との対応が一致しない。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:limit]{第\ref*{theory:structural:limit}節}
+
+\par 参考：\cite{struct_mlit_limit}。
+
+\paragraph{関連問題} \hyperref[q:r03-reg-basic-1-5]{R03-REG-BASIC-1-5}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{強度・荷重の同時分布と破壊確率}
+
+\subsection{平成29年度 問1-6}
+\label{q:h29-reg-basic-1-6}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textbf{検討未確定：} 強度と荷重の独立性が原文に明記されない。周辺一様分布だけでは破壊確率を一意に決定できない。独立なら初回2/公式2、同じ周辺を持つ別結合で0又は2/15となる反例を保存する。
+
+\paragraph{問題の要旨} 強度と荷重が一様分布するモデルで、荷重が強度を超える確率と独立性の役割を検討する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} 強度と荷重が一様分布するモデルで、荷重が強度を超える確率と独立性の役割を検討する。
+
+\paragraph{必要知識} 同時分布と周辺分布、独立性、破壊事象S>R、密度の面積積分。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 強度を \(R\sim U[18,23]\)、荷重を \(S\sim U[10,20]\) とする。独立なら \(f_{R,S}=1/(5\cdot10)\)。破壊条件 \(S>R\) の領域は \(18\le R\le20,\ R<S\le20\) であるから、\(P(S>R)=\int_{18}^{20}(20-r)/50\,dr=4/100=0.04\)、候補2である。ただし原文には独立の明記がない。共通の \(U\sim U[0,1]\) を用い、\(R=18+5U,S=10+10U\) なら破壊確率は0、\(R=18+5U,S=20-10U\) なら \(U<2/15\) より確率2/15である。いずれも同じ周辺一様分布を持つ。従って公式0.04は独立モデルを補った条件付きの解として示す。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 0.02。独立モデルの三角形面積をさらに半分にすると0.02となるが、その二重の半減は不要である。\par
+
+\noindent\textbf{2：適合（前提内）} 0.04。独立を仮定すれば支持矩形の面積50に対し破壊三角形面積2なので0.04となる。\par
+
+\noindent\textbf{3：不適合} 0.08。一辺2の正方形を全て破壊領域にすると0.08となる。対角線の半分だけが該当する。\par
+
+\noindent\textbf{4：不適合} 0.10。0.10は独立モデルの領域積分と一致しない。周辺分布だけで確率が決まる値でもない。\par
+
+\noindent\textbf{5：不適合} 0.20。強度の区間長5の逆数0.20は密度であり、破壊事象の確率ではない。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:reliability]{第\ref*{theory:structural:reliability}節}
+
+\par 難易度 4（校準初稿）、優先度未評価。
+
+\section{比強度と材料価格当たり性能}
+
+\subsection{令和5年度 問1-1}
+\label{q:r05-reg-basic-1-1}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理1頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 与えられた鋼とCFRPの密度・強度・価格から、比強度とその価格当たり性能を比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} 与えられた鋼とCFRPの密度・強度・価格から、比強度とその価格当たり性能を比較する。
+
+\paragraph{必要知識} 比強度σ/ρ、同じ質量の荷重支持能力、価格/比強度、所与価格と方向条件。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 比強度は \(\sigma/\rho\) である。与えられた数値だけを使うと、CFRP/鋼の比強度比は \((2000/1600)/(400/7900)=24.6875\)、kg当たり価格比は \(16000/60=266.6667\)。単位比強度当たり価格比は \((16000/(2000/1600))/(60/(400/7900))\simeq10.8017\) で、最も近い約10、5を選ぶ。比強度が大きいことと費用当たり有利なことを区別する。価格は設問所与であり現在の相場ではない。CFRPの方向依存や圧縮特性を所与の引張強度へ無断で補わない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} 強度/密度・CFRP・2。比強度の定義と優れる材料は合うが、単位比強度当たり価格の倍率は約10.8であり2ではない。\par
+
+\noindent\textbf{2：不適合} 密度/強度・CFRP・10。密度/強度は比強度の逆数である。\par
+
+\noindent\textbf{3：不適合} 密度/強度・鋼・2。定義を逆転し、与条件での優れる材料と価格倍率も違う。\par
+
+\noindent\textbf{4：不適合} 強度/密度・鋼・2。定義は合うが、強度/密度はCFRPの方が大きく、価格倍率も2ではない。\par
+
+\noindent\textbf{5：適合（前提内）} 強度/密度・CFRP・10。強度/密度でCFRPが優れ、価格当たりの比較ではCFRPの単位比強度当たり費用が約10倍となる。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:specific]{第\ref*{theory:structural:specific}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{引張試験と公称応力・弾塑性}
+
+\subsection{平成29年度 問1-4}
+\label{q:h29-reg-basic-1-4}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textbf{検討未確定：} 前文は荷重を断面積で割った値を応力とするが初期断面積を明示しない。最大値を引張強さとするには公称応力を用いる条件が必要。真応力の最大と同一視せず初回/公式5を保持。
+
+\paragraph{問題の要旨} 引張試験の測定値と、弾性・塑性・引張強さの定義を対応させる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} 引張試験の測定値と、弾性・塑性・引張強さの定義を対応させる。
+
+\paragraph{必要知識} 初期断面積と初期標点距離、荷重/伸び、弾性/塑性、延性と公称引張強さ。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 測定する荷重 \(F\) と伸び \(\Delta L\) から、公称応力 \(F/A_0\) と公称ひずみ \(\Delta L/L_0\) を求める。除荷で回復する変形が弾性、残る変形が塑性である。単調引張試験での \(\max F/A_0\) が引張強さであり、破断時の応力、繰返し荷重での疲労限度、真応力 \(F/A(t)\) と分ける。従って伸び・弾性・塑性・引張強さを選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} ひずみ・弾性・延性・疲労限度。直接測る長さの増分は伸びであり、ひずみは初期長さで除した値である。残る変形の性質は塑性であり、延性は破断まで塑性変形を許す能力である。単調引張の最大公称応力は引張強さであり、疲労限度や破断時応力と区別する。\par
+
+\noindent\textbf{2：不適合} 伸び・塑性・弾性・引張強さ。除荷後に回復する性質は弾性である。残る変形の性質は塑性であり、延性は破断まで塑性変形を許す能力である。\par
+
+\noindent\textbf{3：不適合} 伸び・弾性・延性・疲労限度。残る変形の性質は塑性であり、延性は破断まで塑性変形を許す能力である。単調引張の最大公称応力は引張強さであり、疲労限度や破断時応力と区別する。\par
+
+\noindent\textbf{4：不適合} ひずみ・延性・塑性・破断強度。直接測る長さの増分は伸びであり、ひずみは初期長さで除した値である。除荷後に回復する性質は弾性である。単調引張の最大公称応力は引張強さであり、疲労限度や破断時応力と区別する。\par
+
+\noindent\textbf{5：適合（前提内）} 伸び・弾性・塑性・引張強さ。伸び・弾性・塑性・引張強さが対応する。公称応力の断面積は初期値である。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:tensile]{第\ref*{theory:structural:tensile}節}
+
+\par 参考：\cite{struct_mit_beam,struct_mit_buckling,struct_mlit_limit}。
+
+\paragraph{関連問題} \hyperref[q:r05-reg-basic-1-3]{R05-REG-BASIC-1-3}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和5年度 問1-3}
+\label{q:r05-reg-basic-1-3}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理3頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 引張試験の測定値と、弾性・塑性・引張強さの定義を対応させる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断方向：} 空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。\par
+
+\noindent\textbf{原典照合：} 16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。\par
+
+\noindent\textbf{前提：} 解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。\par
+
+\paragraph{問われる核心} 引張試験の測定値と、弾性・塑性・引張強さの定義を対応させる。
+
+\paragraph{必要知識} 初期断面積と初期標点距離、荷重/伸び、弾性/塑性、延性と公称引張強さ。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 測定する荷重 \(F\) と伸び \(\Delta L\) から、公称応力 \(F/A_0\) と公称ひずみ \(\Delta L/L_0\) を求める。除荷で回復する変形が弾性、残る変形が塑性である。単調引張試験での \(\max F/A_0\) が引張強さであり、破断時の応力、繰返し荷重での疲労限度、真応力 \(F/A(t)\) と分ける。従って伸び・弾性・塑性・引張強さを選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適合} ひずみ・弾性・延性・疲労限度。直接測る長さの増分は伸びであり、ひずみは初期長さで除した値である。残る変形の性質は塑性であり、延性は破断まで塑性変形を許す能力である。単調引張の最大公称応力は引張強さであり、疲労限度や破断時応力と区別する。\par
+
+\noindent\textbf{2：不適合} 伸び・塑性・弾性・引張強さ。除荷後に回復する性質は弾性である。残る変形の性質は塑性であり、延性は破断まで塑性変形を許す能力である。\par
+
+\noindent\textbf{3：適合（前提内）} 伸び・弾性・塑性・引張強さ。伸び・弾性・塑性・引張強さが対応する。公称応力の断面積は初期値である。\par
+
+\noindent\textbf{4：不適合} 伸び・弾性・延性・疲労限度。残る変形の性質は塑性であり、延性は破断まで塑性変形を許す能力である。単調引張の最大公称応力は引張強さであり、疲労限度や破断時応力と区別する。\par
+
+\noindent\textbf{5：不適合} ひずみ・延性・塑性・引張強さ。直接測る長さの増分は伸びであり、ひずみは初期長さで除した値である。除荷後に回復する性質は弾性である。\par
+
+\paragraph{再利用する考え方} 材料の強さ、構造の安定、変形による機能低下を分ける。寸法だけを変えるとき何を固定したかを明示し、同じ理論でも候補番号を年度間で流用しない。
+
+\paragraph{共通理論} \hyperref[theory:structural:tensile]{第\ref*{theory:structural:tensile}節}
+
+\par 参考：\cite{struct_mit_beam,struct_mit_buckling,struct_mlit_limit}。
+
+\paragraph{関連問題} \hyperref[q:h29-reg-basic-1-4]{H29-REG-BASIC-1-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。

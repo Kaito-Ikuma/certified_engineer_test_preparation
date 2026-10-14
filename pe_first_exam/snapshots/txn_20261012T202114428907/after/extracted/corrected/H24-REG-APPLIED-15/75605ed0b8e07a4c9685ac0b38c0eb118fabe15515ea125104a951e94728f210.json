@@ -1,0 +1,45 @@
+{
+  "stem": "主鎖結合と生分解性高分子の代表分類を判定する。",
+  "conditions": {
+    "判断対象": "主鎖結合と生分解性高分子の代表分類を判定する。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "PGA",
+      "verdict": "選ばない候補",
+      "reason": "脂肪族ポリエステルとして生分解性分類。"
+    },
+    "2": {
+      "value": "ポリL乳酸",
+      "verdict": "選ばない候補",
+      "reason": "PLAの生分解性で分類される。"
+    },
+    "3": {
+      "value": "PBS",
+      "verdict": "選ばない候補",
+      "reason": "PBSは脂肪族ポリエステル。"
+    },
+    "4": {
+      "value": "PMMA",
+      "verdict": "選ぶ候補",
+      "reason": "炭素主鎖の通常PMMAは生分解性高分子に該当しない。"
+    },
+    "5": {
+      "value": "ポリR3ヒドロキシブチレート",
+      "verdict": "選ばない候補",
+      "reason": "PHBは微生物が作るポリエステル。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_005.png"
+  ],
+  "question_id": "H24-REG-APPLIED-15",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "c89a528b1bcbbb4b9b1fb0cdbfccf33188a1e2710364fe1d6dec9718f92e1425",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

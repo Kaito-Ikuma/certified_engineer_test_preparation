@@ -1,0 +1,46 @@
+{
+  "stem": "飽和溶液質量を分母にした溶解度から析出量を求める。",
+  "conditions": {
+    "60℃溶質": "飽和溶液100g中52.2g",
+    "20℃溶質": "飽和溶液100g中24.0g",
+    "水の初期量": "47.8g"
+  },
+  "choices": {
+    "1": {
+      "value": "15.1g",
+      "verdict": "選ばない候補",
+      "reason": "冷却後の溶存量で析出量ではない。"
+    },
+    "2": {
+      "value": "24.0g",
+      "verdict": "選ばない候補",
+      "reason": "冷却前の水量を100gと誤認。"
+    },
+    "3": {
+      "value": "28.2g",
+      "verdict": "選ばない候補",
+      "reason": "52.2−24.0は溶液量が変わることを無視。"
+    },
+    "4": {
+      "value": "37.1g",
+      "verdict": "選ぶ候補",
+      "reason": "水47.8gを保持し溶存15.0947gを差し引く。"
+    },
+    "5": {
+      "value": "59.0g",
+      "verdict": "選ばない候補",
+      "reason": "初期溶質52.2gより大きく質量保存に反する。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "水の蒸発なし・析出結晶への水の取込みなしを置く物質収支。原典の分母は飽和溶液。",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_004.png"
+  ],
+  "question_id": "H27-REG-APPLIED-11",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "95022c3edf161511049257d423e4b5881c1f2c6936a6d25d033c7e0bcc5bd01e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

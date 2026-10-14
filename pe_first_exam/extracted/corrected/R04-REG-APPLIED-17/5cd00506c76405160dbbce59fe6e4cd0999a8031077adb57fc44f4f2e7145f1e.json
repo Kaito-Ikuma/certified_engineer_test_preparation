@@ -1,0 +1,45 @@
+{
+  "stem": "実在気体の圧縮係数と分子間力の記述から最も不適切なものを選ぶ。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "定義": "同温・同圧で実在気体のモル体積を理想気体のモル体積で割った比を圧縮係数とする。"
+  },
+  "choices": {
+    "1": {
+      "value": "高圧では理想気体の法則から外れる",
+      "verdict": "一般に正しい",
+      "reason": "分子の占有体積や相互作用が無視できず、低密度の理想近似から外れやすい。"
+    },
+    "2": {
+      "value": "低圧では分子間力の影響が小さい",
+      "verdict": "低密度極限で正しい",
+      "reason": "密度が下がると分子間相互作用による圧力への補正は小さくなる。"
+    },
+    "3": {
+      "value": "圧縮係数は同温同圧の実在／理想のモル体積比である",
+      "verdict": "正しい",
+      "reason": "理想モル体積は\\(RT/p\\)なので比は\\(Z=pV_m/(RT)\\)である。"
+    },
+    "4": {
+      "value": "ファンデルワールス式は引力と分子の大きさを考慮する",
+      "verdict": "正しい",
+      "reason": "\\((p+a/V_m^2)(V_m-b)=RT\\)でaが引力、bが排除体積の補正を表す。"
+    },
+    "5": {
+      "value": "圧縮係数は温度や圧力に関係なく1より大きい",
+      "verdict": "誤り",
+      "reason": "引力が優勢なら\\(Z<1\\)、排除体積が優勢なら\\(Z>1\\)になり得る。低密度では1へ近づく。"
+    }
+  },
+  "figures": "正誤方向、全条件・数値・単位、候補5肢を原典画像で確認。図なし。組合せ問題では表の全欄を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_006.png"
+  ],
+  "question_id": "R04-REG-APPLIED-17",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "56ac14d00bd5deed4d4154f43501a65f1698a9903befee7af77bc5724d167c9b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

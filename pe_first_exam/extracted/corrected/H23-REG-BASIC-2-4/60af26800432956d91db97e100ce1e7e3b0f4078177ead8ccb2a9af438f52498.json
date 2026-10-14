@@ -1,0 +1,46 @@
+{
+  "stem": "二段キャッシュの実効アクセス時間。",
+  "conditions": {
+    "一次": "1ns、95%。",
+    "二次": "10ns、一次失敗条件下90%。",
+    "主記憶": "100ns。"
+  },
+  "choices": {
+    "1": {
+      "value": "1.9",
+      "verdict": "条件内で適切",
+      "reason": "解法の条件と結果を照合する。 計算結果と一致。"
+    },
+    "2": {
+      "value": "6.45",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "3": {
+      "value": "11.45",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "4": {
+      "value": "15.4",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "5": {
+      "value": "19.95",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "原典はアクセス時間に上位段の探索時間を含めるか明示しない。候補に合う経路総時間モデルと逐次加算モデルを区別し、査読を要する。",
+  "evidence": [
+    "extracted/pages/H23/basic/page_006.png"
+  ],
+  "question_id": "H23-REG-BASIC-2-4",
+  "source_file": "sources/H23/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+  "raw_text_sha256": "265b72b1fdc325683999cd93510bc5b3a682419b444d8c5d1d2b123dde4e80ff",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

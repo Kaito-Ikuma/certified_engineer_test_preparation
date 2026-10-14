@@ -1,0 +1,48 @@
+{
+  "stem": "吸収エネルギーと防護上の重み付けを、線量名と単位の対応表へ結び付ける。",
+  "conditions": {
+    "ア": "単位質量当たりの吸収エネルギー",
+    "イ": "アの単位",
+    "ウ": "放射線荷重係数をアへ乗じた量（原典の名称）",
+    "エ": "ウと実効線量の単位",
+    "方向": "最も適切な組合せ。"
+  },
+  "choices": {
+    "1": {
+      "value": "吸収線量／Bq／等価線量／Sv",
+      "verdict": "単位不適切",
+      "reason": "ア・ウ・エは対応するが吸収線量のイはGyでありBqは壊変率。"
+    },
+    "2": {
+      "value": "等価線量／Gy／吸収線量／Bq",
+      "verdict": "名称と単位不適切",
+      "reason": "アとウが逆である。吸収線量にGy、等価/実効線量にSvを使うのでエBqも誤り。"
+    },
+    "3": {
+      "value": "吸収線量／Sv／等価線量／Gy",
+      "verdict": "単位逆",
+      "reason": "アとウは適切だがGyとSvを逆にしている。次元が同じでも量の意味が違う。"
+    },
+    "4": {
+      "value": "等価線量／Sv／吸収線量／Gy",
+      "verdict": "名称逆",
+      "reason": "Svが等価線量、Gyが吸収線量なのはよいが、原典のアは質量当たりエネルギーなので吸収、ウは放射線重み付け後なので等価。名称を逆にした。"
+    },
+    "5": {
+      "value": "吸収線量／Gy／等価線量／Sv",
+      "verdict": "適切",
+      "reason": "アは吸収線量D、イGy、ウは等価線量HT、エSvである。実効線量EもSvだが組織重み付けをさらに持つ。"
+    }
+  },
+  "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。ア〜エの対応表の全20セルを確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_003.png"
+  ],
+  "question_id": "H27-REG-APPLIED-06",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "9910f9d03b73bcb6b8ac78831c268036ba84b198d7506f46ff1c8d56678b19d8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

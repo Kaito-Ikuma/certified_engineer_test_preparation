@@ -1,0 +1,45 @@
+{
+  "stem": "ナイロン6と66の原料経路を区別する。",
+  "conditions": {
+    "判断対象": "ナイロン6と66の原料経路を区別する。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "シクロヘキサン",
+      "verdict": "選ばない候補",
+      "reason": "環状六炭素の出発原料経路に属す。"
+    },
+    "2": {
+      "value": "シクロヘキサノン",
+      "verdict": "選ばない候補",
+      "reason": "オキシムの前駆体。"
+    },
+    "3": {
+      "value": "アジピン酸",
+      "verdict": "選ぶ候補",
+      "reason": "ジアミンとの縮合でナイロン66を作る原料。"
+    },
+    "4": {
+      "value": "シクロヘキサノンオキシム",
+      "verdict": "選ばない候補",
+      "reason": "Beckmann転位でラクタムへ進む。"
+    },
+    "5": {
+      "value": "εカプロラクタム",
+      "verdict": "選ばない候補",
+      "reason": "環を開いてナイロン6のポリアミド鎖になる。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_006.png"
+  ],
+  "question_id": "H23-REG-APPLIED-16",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "014420ef4788d7339f2f05e7de7d0548e0de93c189a0c9a687463bea1e90c5ce",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

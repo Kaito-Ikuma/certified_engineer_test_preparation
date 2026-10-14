@@ -1,0 +1,45 @@
+{
+  "stem": "粘土・不飽和・割れ目・海水が比抵抗へ与える傾向を比較する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "孔隙水のイオン伝導と粘土表面伝導、含水した割れ目を考える。"
+  },
+  "choices": {
+    "1": {
+      "value": "粘性土は砂質土より一般に低比抵抗",
+      "verdict": "条件付きで適切",
+      "reason": "粘土表面伝導と含水が低抵抗へ寄与する。同じ流体・飽和等の比較が必要である。"
+    },
+    "2": {
+      "value": "不飽和部分は一般に高比抵抗",
+      "verdict": "条件付きで適切",
+      "reason": "水を通る連続導電経路が減り通常は抵抗率が上がる。鉱物・流体条件も影響する。"
+    },
+    "3": {
+      "value": "割れ目と風化が進んだ岩盤は低比抵抗",
+      "verdict": "条件付きで適切",
+      "reason": "含水割れ目や粘土化がある場合の傾向である。乾燥空隙や珪化を同じ低下としない。"
+    },
+    "4": {
+      "value": "海水混入で比抵抗が著しく高くなる",
+      "verdict": "不適切",
+      "reason": "イオンを含む海水は通常導電性が高く、淡水状態より抵抗率を下げる方向である。"
+    },
+    "5": {
+      "value": "電気検層は裸孔が基本",
+      "verdict": "適切",
+      "reason": "通常の電極法では地層への電流経路を確保しケーシングによる影響を避ける。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "粘土と砂、割れ目と健岩の比較は含水・塩分・鉱物条件に依存する。風化の全称則とはしない。",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_006.png"
+  ],
+  "question_id": "H27-REG-APPLIED-18",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "a59c737ecea666f6e5baef9f69194b0cc5b8b893bd7cb3c2fe1465d33b807249",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

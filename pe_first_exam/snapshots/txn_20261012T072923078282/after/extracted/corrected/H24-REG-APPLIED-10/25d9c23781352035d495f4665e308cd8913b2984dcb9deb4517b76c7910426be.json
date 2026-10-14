@@ -1,0 +1,45 @@
+{
+  "stem": "同濃度・同体積で中和した3組の酸塩基について、生成塩の加水分解からpHの順序を求める。",
+  "conditions": {
+    "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+    "成立条件": "各水溶液は同じモル濃度、同じ体積。1対1の中和を先に処理する。強酸強塩基塩は水の自己解離に対して中性、弱酸塩は塩基性、弱塩基塩は酸性。"
+  },
+  "choices": {
+    "1": {
+      "value": "A・B・C",
+      "verdict": "不適切",
+      "reason": "酸性C、中性B、塩基性Aの順に一致しない。"
+    },
+    "2": {
+      "value": "B・C・A",
+      "verdict": "不適切",
+      "reason": "酸性C、中性B、塩基性Aの順に一致しない。"
+    },
+    "3": {
+      "value": "B・A・C",
+      "verdict": "不適切",
+      "reason": "酸性C、中性B、塩基性Aの順に一致しない。"
+    },
+    "4": {
+      "value": "C・A・B",
+      "verdict": "不適切",
+      "reason": "酸性C、中性B、塩基性Aの順に一致しない。"
+    },
+    "5": {
+      "value": "C・B・A",
+      "verdict": "適切",
+      "reason": "酸性C、中性B、塩基性Aの順に一致する。"
+    }
+  },
+  "figures": "文字記述又は順序候補であり図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_003.png"
+  ],
+  "question_id": "H24-REG-APPLIED-10",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "91b932d105d7fdf27f0124e32d529a9e6e84ef4064403230eb019bfb8a93498d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

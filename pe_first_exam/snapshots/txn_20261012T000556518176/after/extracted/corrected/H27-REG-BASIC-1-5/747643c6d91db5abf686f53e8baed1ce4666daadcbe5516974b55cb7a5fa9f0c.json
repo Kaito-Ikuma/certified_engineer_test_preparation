@@ -1,0 +1,46 @@
+{
+  "stem": "独立な二部材の長さを足し、規定長さを超える確率を標準化する。",
+  "conditions": {
+    "判断方向": "最も適切な記述又は組合せを選ぶ",
+    "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+    "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+  },
+  "choices": {
+    "1": {
+      "value": "0.2%未満",
+      "verdict": "適切",
+      "reason": "z=3の上側確率0.13%はこの範囲に入る。"
+    },
+    "2": {
+      "value": "0.2%以上1%未満",
+      "verdict": "不適切",
+      "reason": "0.13%は下限0.2%より小さい。"
+    },
+    "3": {
+      "value": "1%以上5%未満",
+      "verdict": "不適切",
+      "reason": "0.13%は下限1%より小さい。"
+    },
+    "4": {
+      "value": "5%以上10%未満",
+      "verdict": "不適切",
+      "reason": "0.13%は下限5%より小さい。"
+    },
+    "5": {
+      "value": "10%以上",
+      "verdict": "不適切",
+      "reason": "0.13%は10%に届かない。"
+    }
+  },
+  "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/basic/page_004.png"
+  ],
+  "question_id": "H27-REG-BASIC-1-5",
+  "source_file": "sources/H27/basic.pdf",
+  "source_page": "4",
+  "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+  "raw_text_sha256": "564e56262711ae4d713a6d4d0e19d1a633ffcc084eefdd5af17e02837947d663",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

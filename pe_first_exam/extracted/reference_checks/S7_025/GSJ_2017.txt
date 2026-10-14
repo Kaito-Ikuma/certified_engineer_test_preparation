@@ -1,0 +1,2384 @@
+     Geological
+Survey of Japan
+      地質調査総合センター
+Geological Survey of Japan
+      地質調査総合センター
+Contents
+Greetings ･････････････････････････････････････････････････････････････････････ 04
+Vision & Mission ････････････････････････････････････････････････････････････ 06
+Organization & Scope of Research ･･･････････････････････････････････ 08
+History ････････････････････････････････････････････････････････････････････････ 10
+Geological Hazards 地質災害 ･････････････････････････････････････････････ 12
+         Coastal Geology and Disaster Prevention 沿岸域地質と防災
+         Active Faults and Earthquakes 活断層・地震
+         Tsunamis 津波
+         Volcanoes 火山
+Resources & Environment             資源・環境 ･･･････････････････････････････････    22
+         Marine Resources Survey 海域資源調査
+         Geothermal and Ground-source Heat 地熱・地中熱
+         CO2 Geological Storage CO2 地中貯留
+         Soil and Groundwater Contamination 土壌・地下水汚染
+Geological Information         地質情報･･････････････････････････････････････････    32
+         Geological Maps 地質図
+         Remote Sensing 衛星画像
+         Gravity Maps 重力図
+         Geochemical Maps 地球化学図
+         Water Environment Maps 水文環境図
+Technology Seeds          技術シーズ ･････････････････････････････････････････････    40
+         Analysis of Critical Metal Ores レアメタル鉱石解析
+         Geomicrobiology 地圏微生物
+         Marine EM System 浅海域電磁探査技術
+         Preparation of Thin and Polished Sections 薄片・研磨片製作
+International & Outreach Activities          国際・アウトリーチ活動 ･･････････････          44
+         International Cooperation 国際連携・協力
+         Outreach Activities アウトリーチ活動
+Publications 情報配信 ･･･････････････････････････････････････････････････････ 50
+Access ････････････････････････････････････････････････････････････････････････ 52
+
+
+
+                                                                   GSJ -Geological Survey of Japan-   03
+GREETINGS
+
+
+
+
+  We are Working for a Better Future Earth
+     The Geological Survey of Japan (GSJ), the only     in 3D by integrating surface and borehole
+  national research institute engaged in geological     data, including groundwater information. This
+  surveys, is committed to neutral and transparent      type of visualization is needed to overcome the
+  research. We aim to promote sustainable social        GLIÀFXOWLHV DVVRFLDWHG ZLWK GLVDVWHU SUHYHQWLRQ
+  development and better quality of human life and      and environmental conservation in metropolitan
+  to help create a safe and secure society by using     areas. We also need to promote comprehensive
+  geological information relevant to resources, the     studies of natural disasters, especially in light of
+  environment, and disaster prevention. We conduct      the increase in seismic and volcanic activity in
+  comprehensive research on the development             Japan since the 2011 Great East Japan Earthquake,
+  of survey techniques to collect needed earth          as well as advanced studies on natural resources
+  science information. We also perform systematic       under the lands and sea bottoms, and on storage
+  management and modeling of subsurface                 of greenhouse effect gas. With what we can, and
+  information and disseminate the results to the        must, do as a public research institute always in
+  public in an easy-to-understand way.                  mind, we intend to tackle these challenging tasks
+     One of our priority strategies is to promote the   by accumulating experience and knowledge in
+  visualization of subsurface geological structure      cooperation with other domestic and foreign
+                                                        institutes and universities, as well as by providing
+                                                        the public with accurate information.
+                                                            It is extremely important to have a broad and
+                                                        LQWHUQDWLRQDOSHUVSHFWLYHLQRXUUHVHDUFKÀHOGRI
+                                                        earth science. The problems the world is currently
+                                                        facing—for example, rapidly progressing global
+                                                        warming, natural disasters associated with climate
+                                                        change and crustal deformation, and depletion of
+                                                        energy and mineral resources indispensable for
+                                                        economic development—are research subjects
+                                                        that we must address in harmony with global
+                                                        society. We at GSJ have long been involved in
+                                                        LQWHUQDWLRQDO VFLHQWLÀF FRRSHUDWLRQ LQ (DVW DQG
+                                                        Southeast Asia. We will commit ourselves to
+                                                        accelerating research collaboration with countries
+                                                        all over the globe so as to update the geological
+                                                        information and improve our research through
+                                                        human and technology exchange.
+
+                                                                    Yusaku Yano
+                                                                    Director General, Geological Survey of Japan
+                                                                    National Institute of Advanced
+                                                                    Industrial Science and Technology
+
+
+
+
+04     GSJ -Geological Survey of Japan-
+安全で安心な未来の地球社会の実現に貢献します
+ 地質調査総合センター（GSJ）は、我が国で唯一の「地    中貯留についての先端的研究などにも取り組んでいます。
+質の調査」に関わる研究組織として、中立で透明性の高い     我々は、公的機関がやるべき課題、GSJ にしかできないこ
+研究の実施に努めています。我々の研究は、社会の持続      となどを強く意識し、国内外の研究機関・大学と連携しな
+的発展と国民生活の質を向上させるために資源、環境、防     がら、継続的に研究成果を蓄積し、それを正確に社会に伝
+災に関わる地質情報を整備し、より安全で安心な未来社会     える努力をしていくことで、この困難な課題に挑戦していき
+の実現に貢献することを目指しています。社会のニーズに     ます。
+対応した地球科学情報収集のための調査技術を開発し、地      我々の扱う地球科学という研究領域は、広い国際的視野
+下の情報を体系的に整備・モデル化して、その本質・品質     の中で研究を進めることが重要です。今、世界が直面して
+に関する情報を社会にわかりやすく提供するための総合的     いる急速な地球温暖化、気候変動・地殻変動に伴う自然災
+な研究活動を推進します。                   害、経済発展に不可欠な資源・エネルギー問題は、我々が
+ 具体的な重点課題としては、大都市圏の防災・環境問題     国際社会の中で調和を持って取り組むべき研究課題です。
+の解決や社会的判断のため、ボーリング情報などの活用      GSJ は、永年、東・東南アジア地域において、地球科学と
+を進め、地下水情報を含めた地下の可視化を進めることが     いう研究領域での国際協力・支援活動を推進してきました。
+挙げられます。さらに、2011 年東北地方太平洋沖地震の   今後も先進国、発展途上国を問わず、世界の国々と研究協
+発生以後、日本では地震・火山活動が活発化しており、自     力を推進し、人材・技術交流を通して、情報の収集、研究
+然災害に関する更なる調査研究の充実も必要とされてい      レベルの向上を進めていきます。
+ます。また、陸域、海域の地下資源や温室効果ガスの地
+
+                                                 矢野 雄策
+                                                 産業技術総合研究所
+                                                 地質調査総合センター長
+
+
+
+
+                                         GSJ -Geological Survey of Japan-   05
+VISION & MISSION
+
+
+
+
+  Vision
+  Assess the Geology (Quality of Earth) by using our
+  world’s-best geological survey and analytical techniques,
+  and help to solve the social problems relating to
+  stable supply of resources and energy, environmental
+  conservation, and mitigation of natural disasters from a
+  global perspective. As a national institute of geological
+  survey, promote cooperation with domestic and
+  overseas earth science organizations.
+
+  世界最高レベルの地質調査・分析技術により大地の質を評価し、
+  地球的視野で資源エネルギーの安定供給、環境の保全、自然災
+  害の軽減等に係る社会的課題の解決に貢献します。そのため、国
+  を代表する地質調査機関として、国内外の関係組織との連携を積
+  極的に進めます。
+
+
+                                                              Resources and Energy Securement
+
+                                                              Geo-hazards Mitigation
+
+                                                              Geo-environment Conservation
+
+
+
+
+                                          地球をよく知る̶ 過去
+
+
+
+
+06     GSJ -Geological Survey of Japan-
+Understanding and
+ Living with the Earth
+                   地球をよく知り、地球と共生する
+
+
+
+
+             地球と共生する̶ 将来
+
+
+
+
+        Mission
+        Gather, compile, and provide geological information, and
+        GHYHORSLWVWHFKQRORJLHVWRRYHUFRPHYDULRXVGLIÀFXOWLHVLQ
+        global environmental protection, exploration of minerals
+        and energy resources, and natural disaster mitigation.
+        Disseminate the outcomes of its research activities and
+        coordinate international cooperation with geoscience
+        institutions and organizations all over the world.
+
+
+        地質情報の整備を行い、得られた地質情報を基礎として、地球環
+        境の保全、資源・エネルギーの開発、地質災害の軽減などに関連
+        する様々な問題を解決するための技術を開発します。さらに、整
+        備された各種地質情報の提供・普及を行い、我が国を代表して国
+        際協力を行います。
+
+
+
+
+                                    GSJ -Geological Survey of Japan-   07
+ORGANIZATION & SCOPE OF RESEARCH
+
+
+
+
+  Organization
+  The Geological Survey of Japan(GSJ) is one of         地質調査総合センターは、国立研究開発法人産業技術総合
+  the seven departments of the National Institute of    研究所の７つの領域の１つであり、地質情報研究部門、活断層・
+  Advanced Industrial Science and Technology(AIST).     火山研究部門、地圏資源環境研究部門の 3 研究部門、福島
+  It consists of three research units, namely the       再生可能エネルギー研究所再生可能エネルギー研究センター
+  Institute of Geology and Geoinformation, Institute   （地熱チーム・地中熱チーム）、知的基盤整備およびアウトリー
+  of Earthquake and Volcano Geology, Institute          チ活動を支援する地質情報基盤センターより構成されます。
+  for Geo-Resources and Environment, together
+  with the Renewable Energy Research Center
+  (Geothermal Energy Team, Shallow Geothermal
+  and Hydrogeology Team), Fukushima Renewable
+  Energy Institute (FREA) and the Geoinformation
+  Service Center.
+
+
+
+
+                  Research Institute of
+                     Geology and
+                    Geoinformation
+                         地質情報研究部門
+                                                       Research Institute for
+                                                        Geo-Resources and
+                                                           Environment
+                                                         地圏資源環境研究部門
+                                                                               Renewable Energy
+                                                                                Research Center
+   Research Institute of                                                         再生可能エネルギー
+     Earthquake and                                                                研究センター
+    Volcano Geology
+      活断層・火山研究部門
+
+
+
+
+                                                       Geoinformation
+                                                       Service Center
+                                                       地質情報基盤センター
+
+
+
+
+                       WEB            産業技術総合研究所地質調査総合センター         https://www.gsj.jp/
+
+
+
+
+08     GSJ -Geological Survey of Japan-
+Scope of Research
+ Geological Hazards 地質災害
+ Evaluation of geological hazards for creating a resilient social infrastructure.
+ 回復力のある社会基盤の構築に資する地質の評価
+
+
+ Resources and Environment 資源・環境
+ Provision of geological information and development of evaluation techniques
+ applicable to geosphere resources development and environmental
+ conservation for sustainable social development.
+ 持続可能な社会発展に資する地圏の資源および環境利用と保全のための基盤情報整備と評
+ 価技術の開発
+
+
+ Geological Information 地質情報
+ Compilation and publication of geological information to sustain the society.
+ 地質情報にかかわるナショナルセンターとして社会を支える地質基盤情報の着実な整備
+
+
+ International and Outreach Activity                        国際・アウトリーチ活動
+ Enhancement of international activity and dissemination of research results
+ to the public.
+ 地質調査における国際活動の強化および一般社会への成果の普及
+
+
+
+
+                                   Survey・
+    Society                       Technology
+       社会                        Development
+                                    調査・技術開発
+
+
+
+
+                Decision-                                Modeling・
+                 making                                 Visualization
+                     判断                                 モデル化・可視化
+
+
+
+
+                                      Future
+                                    Prediction
+                                       将来予測
+
+
+
+
+                                                               GSJ -Geological Survey of Japan-   09
+HISTORY
+                                                         Brief History of GSJ
+
+                                                       1882
+  History                                              The Geological Survey of Japan (GSJ) was established in
+                                                       Tokyo on February 13 under the Ministry of Agriculture and
+                                                       Commerce (MOAC).
+                                                       農商務省に地質調査所が設立
+                                                                   （2 月 13 日）
+                                                                            。東京市赤坂区葵町に所在。
+     Geological Survey of Japan (GSJ), AIST is a
+  public organization that performs various types
+  of geological surveys and research. GSJ has          1925
+  consistently provided geological information,        MOAC was divided into two ministries and GSJ belonged to the
+  which is essential to build a safe and sustainable   Ministry of Commerce and Industry (MOCI).
+  society, since its establishment in 1882.            農商務省が農林省と商工省に分かれ、地質調査所は商工省鉱山局に所属。
+     The mission of GSJ has varied historically.
+  Initially, the primary mission was natural
+  resources exploration including metallic and         1946
+  nonmetallic minerals, oil and natural gas, and       GSJ was moved to Kawasaki City, Kanagawa Prefecture.
+  coal resources. After the oil crisis in the 1970s,   川崎市溝の口に移転。
+  exploration of geothermal resources became
+  important. GSJ now plays a role in dealing
+  with a range of problems, including geological       1948
+  hazards, water resources, global warming,            GSJ belonged to the Agency of Industrial Science and
+                                                       Technology (former AIST), which was created in MOCI.
+  geological disposal of nuclear wastes, and soil
+  contamination.                                       商工省に新設された工業技術庁に所属。
+
+
+    地質調査総合センターは、1882 年に前身である地質                         1949
+  調査所が設立されて以来、現在に至るまで国として行うべ                           MOCI was reorganized as the Ministry of International Trade
+  き「地質の調査」に取り組んでいます。                                   and Industry (MITI).
+   「地質の調査」に対する社会からの要請は、古くは金属・                          商工省が通商産業省となり、通商産業省工業技術庁に所属。
+  非金属鉱物、石油・天然ガス、石炭などの資源探査が中
+  心でした。1970 年代のオイルショック以降は石油代替エ
+  ネルギーとしての地熱探査が活発になり、その後、地震・
+                                                       1951
+                                                       A GSJ branch was established in Sinjuku-ku, Tokyo.
+  火山災害の軽減、安全な水資源の確保、地球温暖化防止、
+                                                       新宿区河田町に分室を設置。
+  放射性廃棄物地層処分の安全評価、土壌汚染評価などへ
+  と変遷してきました。
+                                                       1979
+                                                       GSJ was moved to Tsukuba Science City, Ibaraki Prefecture.
+                                                       筑波研究学園都市に移転。
+
+
+                                                       1980
+                                                       The Geological Museum opened next to the GSJ building.
+                                                       地質標本館開館。
+
+
+                                                       2001
+                                                       National Institute of Advanced Industrial Science and
+                                                       Technology (new AIST) was established in April 2001 as an
+                                                       independent administrative agency by integrating 15 research
+                                                       institutes of the former AIST. GSJ became a division of new
+                                                       AIST. MITI was reorganized as the Ministry of Economy, Trade
+                                                       DQG,QGXVWU\ 0(7, ZKLFK$,67ZDVDIÀOLDWHGZLWK
+                                                       中央省庁改編に伴い、工業技術院傘下にあった 15 研究所が（独）産
+                                                       業技術総合研究所（産総研）として統合され、地質調査所は産総研
+                                                       地質調査総合センターとなる。通商産業省は経済産業省に改組され産
+                                                       総研を管轄。
+
+
+                                                       2014
+                                                       The Fukushima Renewable Energy Institute, AIST (FREA) was
+                                                       established in Koriyama, Fukushima Prefecture.
+                                                       福島再生可能エネルギー研究所が福島県郡山市に開所。
+
+
+10     GSJ -Geological Survey of Japan-
+                                                        ❶
+ Publication of Major Maps
+
+1890 1:3,000,000 Geological Map of the Japanese
+          Islands
+          300 万分の１日本群島地質図
+
+1899 1:1,000,000 Geological Map of Japan, 1st edition
+          100 万分の 1 地質図（第 1 版）
+
+
+1921 1:75,000 Geological Map
+          7.5 万分の 1 地質図        (ﬁnished in 1954)        ❷
+
+1952 1:50,000 Geological Map
+          5 万分の 1 地質図         (in progress)
+
+
+1956 1:200,000 Geological Map
+          20 万分の１地質図 (completed in 2010)
+
+1957 Mineral Province of Japan
+          日本の鉱床区       (completed in 1960)
+
+1961 Hydrogeological Maps of Japan (1:50,000, etc.)
+          日本水理地質図（5 万分の１など）(ﬁnished in 1998)
+                                                        ❸
+1972 Aeromagnetic Map (1:200,000, etc.)
+          空中磁気図（20 万分の１など） (in progress)
+
+
+1975 1:200,000 Marine Geology Map
+          20 万分の 1 海洋地質図           (in progress)
+
+
+1981 Geological Map of Volcanoes
+          火山地質図      (in progress)
+
+
+1982 1:500,000 Neotectonic Map
+          50 万分の１活構造図           (completed in 2002)
+
+
+1990 Gravity Map (1:200,000, etc)
+          重力図（20 万分の１など） (in progress)
+
+                                                        ❹
+2004 Geochemical Map of Japan
+          日本の地球化学図
+
+
+2005 Water Environment Map
+          水文環境図      (in progress)
+
+
+2008 Soils Assessment Map
+          表層土壌評価基本図            (in progress)
+
+
+2010 Release of Seamless Digital Geological Map of
+          Japan (1:200,000)
+          20 万分の 1 シームレス地質図公開
+
+
+2010 Seamless Geoinformation of Coastal Zone            ❶ 1906-1923 GSJ in Kobiki-cho, Tokyo
+                                                        ❷ 1989 GSJ in Tsukuba Science City, Ibaraki
+          海陸シームレス地質情報集               (in progress)
+                                                        ❸ 1890 1:3,000,000 Geological Map of the Japanese Islands
+                                                        ❹ 2010 1:200,000 Seamless Digital Geological Map of Japan
+2013 Release of GeomapNavi
+          地質図 Navi 公開
+
+                                                                         GSJ -Geological Survey of Japan-   11
+GEOLOGICAL HAZARDS                        地質災害
+
+
+
+
+  Investigating Active Faults and
+  Unconsolidated Sediments in
+  Urban Coastal Area
+  都市沿岸域の活断層と軟弱地盤を知る
+
+  Geological information on coastal areas                                    重要な沿岸域の地下の地質情報
+     Japan’s large cities and infrastructure, such as its industrial          日本の都市は沿岸域に集中しています。工場地帯や空港な
+  districts and airports, are situated mainly in coastal areas. We can       どのインフラも多くは沿岸域にあります。そのため、もしも
+  easily imagine that there could be enormous damage if an earthquake
+                                                                             沿岸域で地震が発生すれば、大きな被害が生じることは想像
+  were to occur there. However, we do not have enough geological
+  information on these coastal areas to prepare for an earthquake and        に難くありません。しかし実は、
+                                                                                           この沿岸域の地下については、
+  mitigate possible damage.                                                  これまで、地震減災対策に役立つ地質情報の整備が充分と
+     In some coastal areas, the complex topography that is the result of     は言えませんでした。
+  repeated marine transgressions and regressions is covered by thick          沿岸域は、過去の海進・海退の繰り返しの中でつくられて
+  unconsolidated sediments. There are many areas in which seamless
+                                                                             きた複雑な地形の上を、軟弱な堆積物が厚く覆っていたりし
+  geological information linking sea and land is lacking because
+  different research organizations have conducted studies using              ます。また、これまで陸側と海側では調査機関や調査手法が
+  different methods.                                                         異なっていたこともあり、海陸で連続した地質情報が得られ
+     This project focuses on coastal areas and includes studies on the       ていない、情報の空白域も多く存在しました。
+  seamless integration of geological and geophysical information on
+                                                                              このため、本プロジェクトでは、沿岸域をターゲットとして、
+  land and sea, the continuity and activity of active faults, the creation
+  of 3D geological maps, and the physical properties of unconsolidated       海陸でシームレスとなる地質・地球物理情報の整備を行うと
+  sediments.                                                                 共に、活断層の連続性・活動性の把握、地質図情報の３次元化、
+                                                                             軟弱地盤の物理特性の把握のための研究を行っています。
+
+
+
+
+                                 3D geological model of a coastal urban area. 3D visualization
+                                 facilitates intuitive understanding of subsurface geology.
+
+
+
+12       GSJ -Geological Survey of Japan-
+Make
+
+
+Geo-Information
+Seamless                         No one knows when a disaster will
+        in Sea and on Land
+                                 occur. It might be 100 years from
+                                 now, or tomorrow. As researchers,
+                                 we need a sense of urgency.
+海と陸で、                            Masanori Ozaki
+                                 Geoinformatics Research Group
+
+
+地質情報
+                                 Research Institute of Geology and Geoinformation
+
+                    を
+                                 災害はいつ発生するのかわかりません。100
+
+
+シームレス                        に
+                                 年後かもしれませんが、明日かもしれないので
+                                 す。私たち研究者にも切迫感が必要なのです。
+
+                                 尾崎 正紀
+                                 地質情報研究部門 情報地質研究グループ
+
+
+
+
+                                      GSJ -Geological Survey of Japan-   13
+GEOLOGICAL HAZARDS                            地質災害
+
+
+
+
+  The search for hidden active faults                                                隠れた活断層を探す
+     Recently, it has become clear that the active faults separately                  近年、海域や陸域で個別に確認された活断層の多くは海陸
+  LGHQWLÀHG LQ PDULQH DQG ODQG DUHDV DUH FRQWLQXRXV ,W LV KLJKO\         で連続していることが明らかになっています。このため、沿
+  important to understand the continuity of active faults between
+                                                                                     岸域の地震被害想定のためには、活断層の海陸の連続性と
+  sea and land, as well as their activity, in order to estimate potential
+  earthquake damage in coastal areas. In our active-fault survey of                  活動性を正確に把握することが重要です。沿岸域の活断層調
+  coastal areas, we are attempting to obtain accurate information by                 査では、海域での音波探査・表層堆積物調査、陸域での反
+  using a wide range of survey methods, such as acoustic exploration,                射法地震探査・ボーリング調査・野外露頭調査、海陸で重力・
+  D VHDÁRRU VHGLPHQW VXUYH\ LQ PDULQH DUHDV D VHLVPLF UHÁHFWLRQ          空中磁気探査など、多様な調査によって正確な情報の把握
+  survey, drilling exploration, outcrop exploration in land areas, and
+                                                                                     に努めています。現在、3 つのプレートが接し、複雑な地質
+  gravity and airborne magnetic surveys in both marine and land areas.
+  We are currently surveying the southern coastal area of the Kanto                  構造からなる関東地方南部の沿岸域において調査を進めてお
+  Plain—an area with a complex geological structure where three                      り、1923 年に首都圏を襲った関東大地震の震源域における
+  tectonic plates converge—to determine the continuity and activity of               沿岸域部分の活断層の連続性と活動性の正確な把握や未知
+  active faults at the hypocenter of the Great Kanto Earthquake, which
+                                                                                     の地震履歴を明らかしていく予定です。
+  struck the metropolitan area in 1923. Our study should also reveal the
+  unknown seismic history of this area.
+                                                                                     2 次元ではなく、 3 次元で知る
+  Understanding geology in 3D rather than in 2D                                       これまでの地質図は、紙に印刷された 2 次元のものでした。
+     Traditional geological maps are created in 2D and printed on                    そのため、地下の地層が 3 次元的にどのような構造をしてい
+  paper. Some expertise is required to understand the structure of                   るのかを読み取るには専門的な知識が必要でした。しかし近
+  subsurface strata in 3D from these maps. However, thanks to recent
+                                                                                     年の技術進歩により、ウェブ配信を前提とすることで、地下
+  computing technology, it is now possible to create and deliver a new
+  type of geological map, which can display subsurface information                   の情報を 3 次元で表示する新たな地質図を作ることが可能に
+  in 3D via the Internet. This will help many people to understand                   なりました。3 次元地質図を作ることで、より多くの人が、よ
+  subsurface structure.                                                              り直感的に地下を理解しやすくなります。
+     7R FUHDWH D ' JHRORJLFDO PDS RI FRDVWDO DUHDV ZH ÀUVW GULOO LQ    沿岸域の３次元地質図の作成では、まず独自のボーリング
+  VSHFLÀFSODFHVWRUHYHDOGHSRVLWLRQDODJHDQGHQYLURQPHQWSDUWLFOH
+                                                                                     調査によって、堆積年代や堆積環境、堆積物粒子の大きさ、
+  size, fossil components, and seismic wave velocity. We then use these
+  data and borehole logs obtained previously for building construction               含まれる化石、地層の地震波伝播速度などを調べます。この
+  to determine the 3D structure of the geology to depths of several                  ようなデータを軸として、既存の公共工事などのボーリング
+  tens of meters. By integrating the 3D geological models, we plan to                データを追加し、さらに表層の地形や地質なども考慮するこ
+  deliver, via the Internet, geological information that will be useful for
+                                                                                     とで、地下数 10 m までの地質構造全体を 3 次元的に、よ
+  future urban planning and hazard mapping.
+                                                                                     り詳しく解析することが可能となります。ボーリングデータや
+                                                                                     それらを基に解釈された 3 次元地質モデル、地盤振動特性
+                                                                                     等を統合し、今後の都市計画や、ハザードマップ作りにも役
+                                                                                     立つ地質情報をウェブで配信する予定です。
+
+
+
+
+                                                                                       Show
+
+
+                                                                                       Geo-
+                                                                                       information
+                                                                                                   on Underground Area in
+
+
+                                                                                       3Dimensions
+                                                                                       地下の
+
+
+                                                                                      地質情報                を
+
+
+                                                                                      3次元          で
+
+  Sediment cores are cut in half and examined in detail.
+
+
+
+14        GSJ -Geological Survey of Japan-
+Piston-coring survey in Suruga Bay. By such surveys we aim to determine the sources of large-scale earthquakes; obtain seamless data
+on active faults on land and sea; determine the structure of alluvial layers; and map geological, geophysical, and active structures.
+
+
+
+
+Distribution of unconsolidated sediments                                    地層の物理特性と分布が地震被害を支配する
+determines seismic damage
+  In the Tokyo Lowland, we have drilled 18 stratotype sediment               私たちは東京低地で、18 本のボーリングコアを新たに採
+cores, and by integrating 20,000 borehole logs obtained previously          取し、約 2 万本のボーリング資料を収集しました。そして沖
+for building construction, we have revealed details of the incised-
+                                                                            積層の下にある、約 2 万年前の氷期のときにできた谷地形
+valley topography formed up until the Last Glacial Maximum. The
+GLVWULEXWLRQDQGLQÀOOLQJKLVWRU\RIWKHYDOOH\ÀOOVDUHJRYHUQHGPDLQO\   の詳細な様子や、海水準変動によってつくられてきた地層の
+by the last deglacial sea-level changes.                                    歴史と分布を明らかにしました。
+  The distribution of damage to wooden houses in the 1923 Great              その結果、例えば、1923 年の関東大震災の被害は、植
+Kanto Earthquake closely matches the distribution of mud deposited
+                                                                            物片が多く含まれ、含水率がひときわ高い 5000 年前の泥
+5000 years ago; this mud is abundant in plant fragments and has an
+exceptionally high water content. Thus the physical properties and          層の分布と一致することを明らかにしました。地層の物理特
+distribution of the soft mud are key factors controlling the scale of       性と分布が、地震の被害を決めていたことがわかったのです。
+damage in earthquakes in this area.                                          こうした東京低地のような研究の取り組みは、現在、神奈
+  We are currently taking a similar research approach in other              川県や千葉県の東京湾岸地域においても進めています。そし
+coastal areas of Tokyo Bay, in Kanagawa and Chiba prefectures. We
+                                                                            て将来的には、このような取り組みを日本列島の様々な沿岸
+plan to expand our investigation to include other major coastal plains
+around the Japanese Islands in the near future.                             平野に広げていく予定です。
+
+
+
+
+Left: 3D model of post-LGM incised valleys beneath the Tokyo Lowland.
+Right: Microscopic observation of sediments obtained from the subsurface strata.
+
+
+
+                                                                                             GSJ -Geological Survey of Japan-   15
+ Mitigate Disasters
+                                        by Investigating
+
+
+ Active Faults                             and
+
+
+ Earthquakes                                               New problems occur one by one.
+                                                           Understanding and cooperation
+                                                           among many people is essential
+                                                           for clearing a path to solve these
+                                                           problems.
+
+ 活断層・地震                                  の調査で
+                                                           Yukari Miyashita
+                                                           Active Fault Research Group
+                                                           Research Institute of Earthquake and Volcano
+
+
+ 減災
+                                                           Geology
+
+                  を目指す
+                                                            次々と発生する新たな課題 。解決への道を
+                                                           切り開くために、多くの方々の理解と協力が
+                                                           必要です。
+
+                                                           宮下 由香里
+                                                           活断層・火山研究部門          活断層評価研究グループ
+
+
+
+16   GSJ -Geological Survey of Japan-
+                                                                                     GEOLOGICAL HAZARDS                      地質災害
+
+
+
+
+Know the Past to                                                               過去を知り、
+Predict the Future                                                             未来を予測する
+   As the central organ of the Japanese Government’s active fault               地質調査総合センターは、国の活断層調査研究における中
+survey and research, the Geological Survey of Japan investigates major         軸機関としての役割を担っています。空中写真判読、地形地
+active faults inland and offshore by integrating various methods, such
+                                                                               質調査、反射法地震探査などの物理探査を組み合わせて活
+as geological and geomorphological mapping, paleoseismological
+WUHQFKLQJ ERULQJ DQG VHLVPLF SURÀOLQJ WR EHWWHU GHÀQH WKH H[WHQW   断層を見つけ出し、ボーリング調査、トレンチ調査などによっ
+and timing of past rupture events, as well as recurrence intervals. On         て、多くの活断層の過去の活動を明らかにしてきました。
+the basis of these paleoseismological data, we evaluate the long-term
+possibility of future earthquakes for each fault or fault group.
+                                                                               新たな調査・評価の手法が必要
+New survey and evaluation methods are required                                  地震は「自然現象」です。その発生メカニズムのすべてが
+  Earthquakes are natural phenomena, but their generation                      解明されているわけではありません。地震が起こるたびに、
+mechanisms are not fully understood. Every time an earthquake                  それまでのモデルでは説明できないような新たな課題が次々
+RFFXUVQHZSUREOHPVWKDWFDQQRWEHH[SODLQHGE\NQRZQPRGHOVDULVH          と突きつけられます。私たちは、「どのような研究を行ったら
+We are pursuing research into active faults and the development of new
+methods for their evaluation by asking the following questions: “What
+                                                                               それらを解決することができるのか。そして、次の地震予測
+kind of research should we do to solve these problems?” and “How can           につなげていけるのか」との視点から、新たな活断層調査・
+ZHFRQQHFWRXUUHVHDUFKUHVXOWVWRSUHGLFWLRQVRIWKHQH[WHDUWKTXDNH"µ        評価手法の研究開発に取り組んでいます。
+  )RU H[DPSOH E\ IRFXVLQJ RQ WKH GLVSODFHPHQW DVVRFLDWHG ZLWK         例えば、「地震時変位量」に着目して、地震を起こす領域
+paleoearthquakes, we are developing a new model for assessing the
+                                                                               を推定する手法の開発を行っています。地震時変位量がわか
+SRVVLEOHH[WHQWRIUXSWXUHLQIXWXUHHDUWKTXDNHV7KLVLVEHFDXVHZH
+have learned that the displacement associated with a paleoearthquake           れば、活断層帯の中のどの領域が地震を起こしたのかを知る
+can be a clue to identifying the segmentation area in the active fault         手がかりになるということがわかってきたのです。また、岩
+zone that caused the earthquake. We are also trying to develop a               盤の中の断層破砕物質を使った活断層の評価手法開発にも
+new method of evaluating fault activity by using fault gouge in the            挑戦しています。ここでは、断層の活動性と断層破砕物質の
+bedrock; we are focusing on the correlation between fault activity
+                                                                               鉱物化学組成との相関関係を導き出そうと研究中です。
+and the chemical composition of the fault gouge.
+  7KHUHVXOWVDUHSXEOLVKHGQRWRQO\LQDFDGHPLFSDSHUVEXWDOVRRQ            これらの研究の成果は、論文で公表するとともに、 「活断
+the Web in the Active Fault Database of Japan, which delivers our              層データベース」をウェブ上で公開し、迅速かつわかりやす
+outcomes quickly and in an easy-to-understand way.                             く発信していきます。
+
+
+
+
+Left: Polished slabs of fault rocks used to develop new criteria for fault activity evaluation.
+Right: Trenching survey of the Nishiyama fault zone, Fukuoka Prefecture, Japan. Paleoseismic parameters, such as, paleoearthquake
+       event ages, recurrence intervals, and slip rates, are obtained from trench wall observation.
+
+
+
+                                                                                          GSJ -Geological Survey of Japan-   17
+       Scrutinizing Past Great
+
+
+       Earthquakes                             and
+
+
+       Tsunamis                                      There are many approaches to
+                                                     understanding past earthquakes
+                                                     and tsunamis. We welcome the
+                                                     participation of many researchers
+      過去の巨大                                          from both the sciences and the
+                                                     liberal arts.
+      地震・津波                                          Masanobu Shishikura
+                                                     Subduction Zone Paleoearthquake Research
+                                        を探る！         Group, Research Institute of Earthquake and
+                                                     Volcano Geology
+
+
+                                                     過去の地震・津波を明らかにするには、さまざ
+                                                     まなアプローチがあります。理系・文系を問わ
+                                                     ず、多くの研究者の参加をお待ちしています。
+
+                                                     宍倉正展
+                                                     活断層・火山研究部門 海溝型地震履歴研究グループ
+
+
+18   GSJ -Geological Survey of Japan-
+                                                                                        GEOLOGICAL HAZARDS                       地質災害
+
+
+
+
+Working out Historical Events 津波の事前対応を
+from Geological Evidence 可能とするために
+   7KHUHDUHPDQ\VLPLODULWLHVEHWZHHQWKH2IIWKH3DFLÀF&RDVWRI          2011 年の東北地方太平洋沖地震は、歴史上の巨大地震
+7RKRNX(DUWKTXDNHDQGWKHKLVWRULFDOJUHDWHDUWKTXDNHNQRZQDVWKH              である 869 年の貞観地震と類似点の多い地震です。貞観地
+-RJDQ(DUWKTXDNH*HRORJLFDOUHFRUGVRIWKHWVXQDPLFDXVHGE\WKH
+                                                                                 震の津波の痕跡は、  「津波堆積物」と呼ばれる地層に記録さ
+-RJDQ(DUWKTXDNHDUHSUHVHUYHGLQVWUDWDFDOOHGWVXQDPLGHSRVLWV6LQFH
+WKH*HRORJLFDO6XUYH\RI-DSDQKDVEHHQFRQGXFWLQJJHRORJLFDO              れています。地質調査総合センターでは、貞観地震の津波の
+VXUYH\V RI WKHVH WVXQDPL GHSRVLWV WR JHW IXUWKHU LQIRUPDWLRQ RQ WKH    浸水域を広域でより正確に復元するため、2004 年から津波
+H[WHQWRIWKHDUHDLQXQGDWHGE\WKH-RJDQ(DUWKTXDNH7KH6XUYH\KDV             堆積物の地質調査を行ってきました。その結果、貞観地震の
+IRXQGWKDWLQVRPHDUHDVWKHWVXQDPLH[WHQGHGWRNPLQODQGIURP           津波は、場所により当時の海岸線から内陸 3 〜 4km まで及
+WKHFRDVWOLQHDWWKHWLPH$WVXQDPLVLPXODWLRQEDVHGRQWKHVHGDWDKDV
+VKRZQWKDWWKH-RJDQ(DUWKTXDNHRFFXUUHGLQWKHSODWHERXQGDU\RII
+                                                                                 んでいたことがわかりました。さらにそのデータに基づいた
+WKHFRDVWRI0L\DJLDQG)XNXVKLPDSUHIHFWXUHV                                   津波シミュレーションから、宮城県沖から福島県沖のプレート
+   ,Q6HQGDLDQG,VKLQRPDNLPRVWRIWKHDUHDLQXQGDWHGE\WKHWVXQDPL          境界で発生した地震であることを解明しました。
+WKDW IROORZHG WKH  2II WKH 3DFLÀF &RDVW RI 7RKRNX (DUWKTXDNH       仙台や石巻における東北地方太平洋沖地震の津波の浸水
+RYHUODSVZLWKWKHDUHDHVWLPDWHGWRKDYHEHHQLQXQGDWHGE\WKHWVXQDPL
+                                                                                 範囲は、私たちの推定した貞観地震の津波のそれとほぼ重な
+IURPWKH-RJDQ(DUWKTXDNH,IWKHSRVVLELOLW\RIUHFXUUHQFHRIWKH-RJDQ
+(DUWKTXDNHKDGEHHQFRQVLGHUHGWKHQVRPHSUHFDXWLRQDU\PHDVXUHV                 ります。貞観地震の再来を想定していれば、東北地方太平洋
+PLJKWKDYHEHHQWDNHQDJDLQVWWKHWVXQDPL                                  沖地震の津波は、事前の対応が可能であったかもしれません。
+
+Knowing the impacts                           of     tsunamis            as      「過去の事実」としての津波の影響を知る
+historical events
+    $IWHU WKH H[SHULHQFH RI WKH  *UHDW (DUWKTXDNH 'LVDVWHU ,W      東日本大震災を経た今、次の巨大地震の発生が危惧され
+LV IHDUHG WKDW WKH QH[W ODUJH HDUWKTXDNH ZLOO RFFXU DORQJ WKH .XULO   ているのが千島海溝、相模トラフ、南海トラフです。
+7UHQFKRULQWKH6DJDPL7URXJKRU1DQNDL7URXJK                                  国や各自治体では、最大クラスの地震や津波を想定するこ
+    7KH FHQWUDO DQG ORFDO JRYHUQPHQWV DUH DLPLQJ WR UHGXFH WKH          とで、想定外を減らすことを目指しています。ただし、あく
+QXPEHU RI XQH[SHFWHG HYHQWV LQ D IXWXUH GLVDVWHU E\ DVVXPLQJ
+                                                                                 までも「仮定の最大規模」であるため、実際にそのような地
+WKH RFFXUUHQFH RI WKH ODUJHVW SRVVLEOH HDUWKTXDNH DQG WVXQDPL
++RZHYHU WKLV LV PHUHO\ K\SRWKHWLFDO DQG LW LV XQFHUWDLQ ZKHWKHU      震が過去にあったのかはわかっていません。私たちは、地層
+VXFKDQHDUWKTXDNHDQGDWVXQDPLKDYHLQIDFWRFFXUUHGLQWKHSDVW              に残された津波堆積物などを調査することで、「過去の事実」
+:H GLVWULEXWH UHOLDEOH GDWD REWDLQHG E\ VWXG\LQJ WVXQDPL GHSRVLWV        として信頼性のあるデータを広く一般に提供していきます。
+DQGRWKHUQDWXUHWUDFHVE\DFWXDOSDVWHYHQWVWRWKHZLGHUSXEOLF%\           また、こうした調査・研究の手法を開発、確立し、行政や民
+GHYHORSLQJDQGHVWDEOLVKLQJVXUYH\VDQGUHVHDUFKPHWKRGVZHDOVR
+                                                                                 間事業者へ役立てることも目指していきます。
+DLPWRPDNHLWXVHIXOWRERWKWKHJRYHUQPHQWDQGSULYDWHEXVLQHVVHV
+
+
+
+
+                                                                                             0 min                          40 min
+
+
+
+
+                                                                                             20 min                         60 min
+
+
+
+
+Left: Looking for lithofacies in a core sample obtained from Hirota Bay, Iwate Prefecture.
+Right: Numerical simulation of the AD 869 Jogan earthquake tsunami, northeastern Japan.
+
+
+
+                                                                                              GSJ -Geological Survey of Japan-   19
+           Volcanoes
+       Know our                         and
+
+
+
+       Live with them                         *HWRXWLQWKHÀHOGDQGWKLQNWKHUH³
+                                              WKDW·VWKHZD\ZHGRLW2XUUHVHDUFK
+                                              FRQWLQXHVLQDQHIIRUWWRPHHWVRFLHW\·V
+                                              H[SHFWDWLRQV
+
+     火山                  を知り、 火山と
+                                              Yoshihiro Ishizuka
+                                              Volcanic Activity Research Group
+                                              Research Institute of Earthquake and Volcano
+                                              Geology
+
+
+     ともに生きる                                   現場に行って考える。それが私たちです。社
+                                              会の期待に応えるため、日夜、調査を進めて
+                                              参ります。
+
+                                              石塚 吉浩
+                                              活断層・火山研究部門 火山活動研究グループ
+
+
+
+
+20   GSJ -Geological Survey of Japan-
+                                                                                        GEOLOGICAL HAZARDS                     地質災害
+
+
+
+
+Collect Data on the 火山全体の情報を
+Whole Volcano       集めていく
+  9ROFDQRHV JLYH XV WZR RSSRVLWH WKLQJV EHQHÀWV DQG GLVDVWHUV            火山には「恩恵」と「災害」という二つの面があります。
+7R PLWLJDWH WKH GLVDVWHU DVSHFW ZH QHHG WR HVWLPDWH WKH HUXSWLRQ      このうち、災害を軽減するためには、火山噴火推移の予測が
+VHTXHQFHVRIYROFDQRHV7KH*HRORJLFDO6XUYH\RI-DSDQLVSURPRWLQJ
+                                                                                  必要です。地質調査総合センターは、過去の噴火履歴と火
+UHVHDUFK EDVHG RQ SDVW HUXSWLRQ UHFRUGV DQG WKH PHFKDQLVPV RI
+YROFDQLFHUXSWLRQ                                                                山噴火機構に基づいた研究を進めています。
+  7R REWDLQ HUXSWLRQ UHFRUGV ZH PDNH GHWDLOHG ÀHOG VXUYH\V RYHU         私たちが行う噴火履歴の調査手法は、なめるように火山全
+WKH ZKROH DUHD RI D YROFDQR RQ IRRW³QRW MXVW ORFDOL]HG VXUYH\V         体を歩き、観察していくことです。ピンポイントの調査ではな
+:HFROOHFWLQIRUPDWLRQIURPWKHHQWLUHPRXQWDLQ:HDOVRFRQGXFW                  く、山全体の情報を集めることで、その火山の噴火の歴史を
+SHWURORJLFDO VWXGLHV RI PDJPD DQG REVHUYDWLRQV RI YROFDQLF JDV WR
+HOXFLGDWHWKHFKDUDFWHULVWLFVDQGDVFHQWPHFKDQLVPVRIWKHPDJPD
+                                                                                  明らかにしていきます。また、噴火を起こすマグマの性質や
+FDXVLQJDQHUXSWLRQDQGWRXQGHUVWDQGWKHSURFHVVRIVHSDUDWLRQRI               上昇機構、マグマとガスの分離過程などを明らかにするため
+PDJPDDQGJDV                                                                    に、マグマの岩石学的な解析や火山ガスの観測の研究も進め
+                                                                                  ています。
+Characteristics of individual volcanoes
+   0W )XML LV WKH KLJKHVW YROFDQR LQ -DSDQ DQG LV ORFDWHG FORVH WR   火山の個性をよりわかりやすく
+PHWURSROLWDQ DUHDV 7KLV LV ZK\ LWV IXWXUH HUXSWLRQV DUH RI JUHDW
+FRQFHUQ IURP WKH SHUVSHFWLYH RI GLVDVWHU SUHYHQWLRQ )RU PRUH              富士山は日本の最大の火山であり、首都圏にも近い事か
+WKDQ  \HDUV ZH KDYH EHHQ VWXG\LQJ 0W )XML WR GHWHUPLQH WKH         ら防災上も重要な火山です。私たちは 10 年以上にわたり富
+YDULRXVSDVWEHKDYLRUVRIWKHYROFDQR:HKDYHFRQGXFWHGGHWDLOHG                 士山の調査を続けています。そして、富士山の多様な活動
+VXUIDFH JHRORJLFDO VXUYH\V DQG GULOOLQJV DV ZHOO DV GDWLQJ DQG ZH    の歴史を理解するために、詳細な地表地質調査や掘削調査、
+KDYHFRPSLOHGWKHUHVXOWVLQWRWKH*HRORJLFDO0DSRI)XML9ROFDQR
+7KHJHRORJLFDOPDSVKRXOGEHXVHIXOIRUFUHDWLQJKD]DUGPDSVDQG
+                                                                                  年代測定を行い、「富士火山地質図」を作成しました。この
+HYDOXDWLQJ WKH EHKDYLRU VHTXHQFH ZKHQ 0W )XML VKRZV VLJQV RI           地質図は、ハザートマップの作成や火山活動が活発化した際
+YROFDQLFDFWLYLW\                                                                の活動推移評価の基礎として活用されることでしょう。
+   :HSODQWRUXQVLPLODUVXUYH\VDQGVWXGLHVRIRWKHUPDMRUDFWLYH               富士山と同様な調査研究を日本の主要な活火山について
+YROFDQRHV LQ -DSDQ RQH E\ RQH DQG ZH ZLOO NHHS VWXG\LQJ WKH
+                                                                                  順次実施するとともに、その噴火の発生や推移を支配してい
+PHFKDQLVPV WKDW FRQWURO YROFDQLF HUXSWLRQV DQG WKH VHTXHQFH RI
+YROFDQLFHUXSWLRQV:HKDYHFRPSLOHGDYROFDQRPDSDV´9ROFDQRHV                  るメカニズムの研究を進めています。そして、各火山の個性
+RI-DSDQµDQGDUHFXUUHQWO\FRPSLOLQJD9ROFDQR'DWDEDVHVRWKDW                をまとめ、日本の火山の分布の情報を一覧できる「日本の火
+,QWHUQHWXVHUVFDQORRNXSWKHFKDUDFWHULVWLFVRIHDFKYROFDQRDQGLWV            山」を作成し、それに基づいた「火山のデータベース」の整
+GLVWULEXWLRQLQDQHDV\WRVHHIRUPDW                                            備を進めています。
+
+
+
+
+Left: Sampling of high-temperature (800 °C) volcanic gases into a vacuum glass bottle at Satsuma-Iwojima Volcano.
+Right: Texture analyses of volcanic ejecta by using a scanning electron microscope.
+
+
+
+                                                                                            GSJ -Geological Survey of Japan-   21
+RESOURCES & ENVIRONMENT                            資源・環境
+
+
+
+
+  Scientiﬁc Approach to Marine
+  Mineral and Fuel Resources
+  科学で海底資源に迫る
+
+  The pioneer of seabed resource exploration                                海底資源探査の先駆け
+     In recent years, increased attention has been focused on mineral         近年、海底下の鉱物資源についての注目が高まっています。
+  UHVRXUFHV XQGHU WKH VHD +RZHYHU DQ RSWLPDO PHWKRG RI ÀQGLQJ   しかし、海底鉱物資源を見つける手法は、いまだ確立してい
+  seabed mineral resources has not yet been established. Our
+                                                                             ません。現在は、最も可能性の高いと言われている海底火
+  current surveys are focused heavily on the areas around submarine
+  volcanoes, where resources are considered most likely to be found.         山周辺の調査を重視しています。その調査結果をもとにして、
+  7KHVXUYH\UHVXOWVZLOOEHXVHGWRDFFXPXODWHVFLHQWLÀFLQIRUPDWLRQ      「どのような場所にあるのか」という科学的知見を蓄える必
+  RQWKHJHRORJLFDOIHDWXUHVRIVXFKORFDOLWLHVLQFOXGLQJNQRZOHGJHRI     要があるからです。
+  where resources can be found.                                               海底資源の探査には、総合的な地球科学の研究が必要に
+     Comprehensive earth science research is essential for seabed
+                                                                             なります。とくに、海底熱水系の形成過程の解明が不可欠で
+  resource exploration. Especially indispensable is elucidation of the
+  formation process of submarine hydrothermal systems; this will             す。形成過程を解明することができれば、海底鉱床の場所を
+  provide important information needed to localize submarine deposits.       把握するために必要な情報を得ることができます。
+     :HDUHHQJDJHGLQMRLQWUHVHDUFKZLWKRWKHULQVWLWXWLRQVVXFKDV        私たちは、石油天然ガス・金属鉱物資源機構（JOGMEC*）
+  -2*0(& DQG-$067(& 7KH*HRORJLFDO6XUYH\RI-DSDQ·VWDVN
+                                                                             や、海洋研究開発機構（JAMSTEC**）などの機関と共同で
+  LVWRQDUURZGRZQDQGLGHQWLI\SURPLVLQJDUHDVIRUVHDEHGUHVRXUFH
+  H[SORUDWLRQEDVHGRQLWVJHRORJLFDOEDFNJURXQG,QRWKHUZRUGVZH         研究を進めています。地質学的な背景をもとに、海底資源
+  DUHSLRQHHULQJVHDEHGUHVRXUFHH[SORUDWLRQ5HFHQWO\LQDVKDOORZ        開発に有望な海域を絞り込むことが、地質調査総合センター
+  area of the sea near Iou-torishima in Okinawa Prefecture, we               の役割です。いわば、海底資源探査の「先駆け」の役割を担っ
+  discovered a submarine volcano and an area of hydrothermal activity        ています。近年では、硫黄鳥島の周辺海域に、海底火山と、
+  ZKHUHSRO\PHWDOOLFPDVVLYHVXOÀGHVDUHEHLQJIRUPHG
+                                                                             多金属塊状硫化物を伴う熱水活動域を発見しました。
+
+  * JOGMEC: Japan Oil, Gas and Metals National Corporation
+    -$067(&-DSDQ$JHQF\IRU0DULQH(DUWK6FLHQFHDQG7HFKQRORJ\
+
+
+
+
+                                                                                          Geological Breakthroughs in
+
+
+                                                                                          Marine
+                                                                                          Mineral
+                                                                                          Resources
+  $QDO\VLVRIVHDERWWRPVWUDWDE\XVLQJVHLVPLFUHÁHFWLRQVXUYH\ GDWD
+
+
+
+
+22       GSJ -Geological Survey of Japan-
+            Resource exploration requires         Japan has led research into
+            all the skills and expertise in       methane hydrate and will
+            HYHU\ÀHOGRIHDUWKVFLHQFH          continue to lead the world.
+            Takahiko Inoue                        Sumito Morita
+
+海底鉱物
+            Marine Geology Research Group         Fuel resource Geology Research Group
+            Research Institute of Geology and     Research Institute for Geo-Resources
+            Geoinformation                        and Environment
+
+
+
+資源の地質学的解明
+            資源探査は、地球科学のあらゆる分
+            野の力を結集することが必要です。
+                                                  日本はハイドレート研究のリーダーと
+                                                  して、常に世界を牽引していきます。
+
+            井上 卓彦                                 森田 澄人
+            地質情報研究部門 海洋地質研究グループ                   地圏資源環境研究部門
+                                                  燃料資源地質研究グループ
+
+
+
+
+                                                GSJ -Geological Survey of Japan-   23
+RESOURCES & ENVIRONMENT                                 資源・環境
+
+
+
+
+  Observing the seabed by using a wide range                                      多様な音波で、 海底を              視る
+  of sound waves                                                                   海洋地質の重要な情報として、海底下の地質断面、海底
+     .H\LQIRUPDWLRQDERXWPDULQHJHRORJ\LQFOXGHVJHRORJLFDOFURVV
+                                                                                  地形を含む海底面情報、重磁力情報、海底堆積物情報など
+  sections of areas beneath the seabed; seabed-surface information,
+  LQFOXGLQJ WRSRJUDSK\ JUDYLW\ DQG PDJQHWLF GDWD DQG VHGLPHQW           があります。私たちは、これらの情報を統合的に取得・解析
+  LQIRUPDWLRQ &ROOHFWLQJ DQG DQDO\]LQJ WKHVH GDWD LQ DQ LQWHJUDWHG      を行い、海洋地質情報として整備しています。
+  ZD\HQDEOHVXVWRFRPSLOHDQGPDQDJHPDULQHJHRORJ\LQIRUPDWLRQ                 例えば、海底面及び海底下の地質情報を得るために、そ
+     7R REWDLQ LQIRUPDWLRQ RQ WKH JHRORJ\ RQ DQG XQGHU WKH VHDEHG     の目的に応じて、様々な周波数の音波を使用しています。大
+  ZH XVH VRXQG ZDYHV ZLWK IUHTXHQFLHV WKDW GLIIHU DFFRUGLQJ WR WKH
+  SXUSRVH/RZHUIUHTXHQF\VRXUFHVVXFKDVDLUJXQV DERXWWR
+                                                                                  きな地質構造を把握する際にはエアガンなどの低周波（10
+  +]  DUH XVHG WR DQDO\]H ODUJHVFDOH JHRORJLFDO VWUXFWXUHV KLJKHU      〜 50Hz 程度）を、高分解能な地質構造を得る必要がある
+  IUHTXHQF\ VRXUFHV VXFK DV ERRPHUV DERXW  WR  N+]  DUH XVHG       際にはブーマーなどの高周波（1 〜 10kHz 程度）を、海底
+  LQ KLJKUHVROXWLRQ VXUYH\V RI JHRORJLFDO VWUXFWXUH DQG HYHQ KLJKHU    面の情報を得る際には更に高周波（30kHz 以上）を用いて
+  IUHTXHQF\ VRXUFHV PRUH WKDQ  N+]  DUH XVHG WR REWDLQ VHDEHG
+                                                                                  調査を行います。また、より明瞭な地質断面を効率的に得る
+  VXUIDFHLQIRUPDWLRQ0XOWLFKDQQHOVWUHDPHUV 0&6V DQGFDEOHVDUH
+  XVHG HIÀFLHQWO\ WR UHFHLYH PRUH GHWDLOHG JHRORJLFDO FURVVVHFWLRQDO     ためにマルチチャンネルストリーマ（MCS）ケーブルを受信
+  LPDJHVDQGPXOWLEHDPHFKRVRXQGHUV 0%(6V DUHXVHGWRREWDLQ                 器として使用したり、詳細な海底地形を得るために、マルチ
+  GHWDLOHG LQIRUPDWLRQ RQ VXEPDULQH WRSRJUDSK\ 7KH 0%(6 ZKLFK           ビーム音響測量装置（MBES）を使用したりします。MBES
+  can detect underwater acoustic anomalies in two dimensions, is useful           では水中音響異常も面的に捉えることができるため、海底か
+  IRULGHQWLI\LQJSURPLVLQJVHDEHGUHVRXUFHDUHDVZLWKRXWSRXULQJVRI
+                                                                                  らの物質の湧昇等で特徴づけられる海底資源有望域を把握
+  PDWHULDOVFRQWDLQLQJPHWDOVDQGRWKHUXVHIXOHOHPHQWV
+                                                                                  することが可能です。
+  Japan’s methane hydrate research is leading
+  the world                                                                       世界をリードする日本のメタンハイドレート研究
+     $PRQJWKHPDQ\VHDEHGUHVRXUFHVPHWKDQHK\GUDWHLVH[SHFWHG                 さまざまな海底資源の中でも、   「将来のエネルギー資源」
+  WREHWKHPRVWSURPLVLQJIXWXUHHQHUJ\UHVRXUFH-DSDQLVVXUURXQGHG
+  by sea with the physical conditions suitable for the formation of
+                                                                                  として期待されているのが「メタンハイドレート」です。日本
+  methane hydrate.                                                                のまわりには、メタンハイドレートの存在条件を満たす海域が
+     Japan has always led the world in the development of methane                 広がっています。
+  K\GUDWH UHVRXUFHV ,Q D QDWLRQDO SURMHFW ODXQFKHG LQ  DIWHU       メタンハイドレートの資源開発研究で、日本は常に世界を
+  UHSHDWHGVXUYH\VLQWKH1DQNDL7URXJKDUHDRIWKHZHVWHUQ3DFLÀF
+                                                                                  リードしてきました。1995 年から国のプロジェクトが始まり、
+  2FHDQ QDWXUDO JDV ZDV VXFFHVVIXOO\ H[WUDFWHG LQ  IRU WKH ÀUVW
+  time in the world from frozen methane layer hydrate found beneath               太平洋側の南海トラフで調査を重ね、2013 年には世界で初
+  the seabed.                                                                     めて海底下のメタンハイドレートから天然ガスを生産する試験
+     The existence of another type of massive methane hydrate,                    に成功しました。
+  FDOOHG´VKDOORZW\SHPHWKDQHK\GUDWHµKDVEHHQFRQÀUPHGDWYHU\                近年、日本海側の海底下のごく浅い部分に、   「表層型」と
+  VKDOORZGHSWKVLQWKH6HDRI-DSDQ:HDUHFXUUHQWO\VWXG\LQJWKLV
+                                                                                  呼ばれる塊状のメタンハイドレートの存在が確認されるように
+  VKDOORZW\SH PHWKDQH K\GUDWH :H DUH FRQGXFWLQJ VRXQG SURELQJ
+  GULOOLQJVDQGRWKHUVXUYH\VWRREWDLQPRUHDFFXUDWHLQIRUPDWLRQRQ            なりました。現在私たちは、この表層型メタンハイドレートに
+  the distribution and quantity of methane hydrate. We also aim to                集中した研究を行っています。主に音響探査や掘削調査を行
+  DQVZHUWKHTXHVWLRQ´:K\LVLWWKHUHDQGKRZGLGLWJHWWKHUH"µDQG          うことで、メタンハイドレートの分布の様子や量などをより正
+  WRREWDLQDZLGHUDQJHRIFRPSUHKHQVLYHLQIRUPDWLRQDSSOLFDEOHWR              確に評価することを進めています。同時に「なぜ、そこに、
+  other research areas.
+                                                                                  そのようにあるのか」という問題を解明し、他海域も含めた
+                                                                                  汎用的な理解を目指しています。
+    Find
+
+
+   Methane
+   Hydrate                                 and Find out
+
+
+
+   'Why is it there?'
+メタンハイドレート                                                              を探し、
+
+
+
+「なぜそこにあるか？」
+                                                                     を探る
+                                                                                      5K\ROLWHURFNFROOHFWHGIURPDUHJLRQRIDEQRUPDO
+                                                                                      VRXQGLQVKDOORZVHDV
+
+
+
+24        GSJ -Geological Survey of Japan-
+                                                                                      資源確保のための                   地球科学総合力
+                                                                                       海域での海底資源の調査や開発の権利や管理は、  「海洋法
+                                                                                      に関する国際連合条約」に定められています。この条約で定
+                                                                                      められた「延長大陸棚」は、沿岸国が 200 海里を超えて、
+                                                                                      海底資源の探査・開発の権利を有する区域を示すものです。
+                                                                                      延長大陸棚の決定には、沿岸国の領土からの連続性を示す
+                                                                                      地形・地質に関する科学的根拠に基づいた申請を国連へ提
+Left: /RQJSLVWRQFRULQJGXULQJPHWKDQHK\GUDWHH[SORUDWLRQLQWKH6HD                出する必要があります。
+       RI-DSDQ6HGLPHQWDU\FRUHVXSWRPHWHUVORQJZHUHUHFRYHUHG               地質調査総合センターは国の地質調査を担う研究機関とし
+Right: 5HVXOWVRIDVXEPDULQHWRSRJUDSK\VXUYH\XVLQJPXOWLEHDPHFKR
+       VRXQGHUV 0%(6V 7KLV)LJXUHVKRZVVHDEHGVXUIDFHLQIRUPDWLRQ                て、2004 年から大陸棚画定調査に参加しています。日本周
+       DQGWKHHFKRVRXQGUHFRUGDURXQGDQDUHDRIVXEPDULQHK\GUR-                   辺海域の地球科学データ統合のノウハウや、岩石試料の最高
+       WKHUPDOUHVRXUFHV
+                                                                                      レベルの分析解析技術を駆使して、日本の延長大陸棚の申
+                                                                                      請文書作成と審査での対応に貢献しました。
+                                                                                       人類共有の財産である海底資源を沿岸国の管轄・管理下
+                                                                                      に置くことは、一見、国の利益独占と見えるかもしれません。
+                                                                                      しかし、国際的に定められたルールに従って、資源の開発の
+                                                                                      権利の行使や海域の管理をすることは、我が国のためだけで
+                                                                                      なく世界の発展と平和にも貢献するものです。私たちは、今
+                                                                                      後も地球科学調査研究の総合力を発揮して、開発に向けた
+    Collective capabilities of earth science                                          科学調査を進めていきます。
+    for peaceful and equitable resources
+    management of the ocean
+       7KH8QLWHG1DWLRQV&RQYHQWLRQRQWKH/DZRIWKH6HDGHÀQHVWKH
+    H[WHQW RI WKH VRYHUHLJQW\ RU MXULVGLFWLRQ RI FRDVWDO 6WDWHV RYHU WKH
+    VHDV DQG WKH RFHDQV $V GHÀQHG LQ WKH &RQYHQWLRQ FRDVWDO VWDWHV
+    KDYH WKH ULJKW WR H[SORUH DQG H[SORLW UHVRXUFHV RQ DQG XQGHU WKH
+    H[WHQGHG FRQWLQHQWDO VKHOI RU (&6 RXWVLGH WKH QDXWLFDOPLOH
+    limit. The ECS to be approved, the coastal state is required to
+    VXEPLW LQIRUPDWLRQ WR WKH 8QLWHG 1DWLRQV ZLWK WKH WRSRJUDSKLF
+    DQG JHRORJLFDO HYLGHQFHV MXVWLI\LQJ WKDW WKH FRQWLQHQWDO VKHOI LV D
+    FRQWLQXDWLRQRIWKHVWDWH·VWHUULWRU\
+       6LQFHWKH*HRORJLFDO6XUYH\RI-DSDQDVDQDWLRQDORUJDQL]DWLRQ
+    KDV EHHQ SDUWLFLSDWLQJ LQ WKH WDVN WR GHOLQHDWH WKH RXWHU OLPLWV RI
+    -DSDQ·VFRQWLQHQWDOVKHOI:HKDYHFRQWULEXWHGWRERWKSUHSDUDWLRQRI
+    the application to extend the continental shelf around Japan and the
+    MXGJPHQWSURFHVV7RGRWKLVZHDUHPDNLQJWKHEHVWXVHRIRXUNQRZ
+    KRZRQWKHLQWHJUDWLRQRIHDUWKVFLHQFHGDWDRQWKHVHDVDURXQG-DSDQ
+    DQGRXUVWDWHRIDUWWHFKQLTXHVIRUDQDO\]LQJURFNVDPSOHV
+       6HDEHGUHVRXUFHVDUHWKHFRPPRQKHULWDJHRIPDQNLQG3ODFLQJ
+    UHVRXUFHV XQGHU WKH MXULVGLFWLRQ DQG PDQDJHPHQW RI D FRDVWDO
+    FRXQWU\ PD\ VRXQG OLNH JUDQWLQJ WKDW FRXQWU\ D PRQRSRO\ RQ WKH
+    UHVRXUFHV +RZHYHU H[HFXWLQJ WKH ULJKW WR GHYHORS UHVRXUFHV DQG
+    PDQDJHWKHVHDLQDFFRUGDQFHZLWKLQWHUQDWLRQDOO\DJUHHGUXOHVFDQ
+    FRQWULEXWHQRWRQO\WRWKHFRDVWDOVWDWHLWVHOIEXWDOVRWRWKHJOREDO
+    SHDFH:HDUHFRPPLWWHGWRXVLQJDOORIRXUNQRZOHGJHDQGVNLOOVLQ
+    HDUWKVFLHQFHVXUYH\DQGUHVHDUFKWRSURPRWHVFLHQWLÀFVXUYH\VIRU
+    the development of seabed resources.
+
+                                                                                      7KHDUHDRIWKHH[WHQGHGFRQWLQHQWDOVKHOIRI-DSDQ
+
+
+
+
+                                                                                                            GSJ -Geological Survey of Japan-   25
+     Utilization of
+
+
+     Geothermal and
+     Ground-source
+     Heat                 by Communities   :H KDYH EHHQ GRLQJ ÀHOG VXUYH\
+                                           DQG DQDO\VLV PDLQO\ )URP QRZ
+                                           ZH DUH DOVR JRLQJ WR SURFHHG WKH
+                                           GHYHORSPHQWRIPRQLWRULQJV\VWHPV
+     地域を活かす
+                                           Kasumi Yasukawa
+                                           Renewable Energy Research Center
+
+     地熱・                                   Fukushima Renewable Energy Institute
+
+
+                                           これまで現地の調査と解析を中心に進めてき
+     地中熱利用                                 ました。今後は、観測システムの開発も進め
+                                           ていきます。
+
+                                           安川 香澄
+                                           福島再生可能エネルギー研究所
+                                           再生可能エネルギー研究センター
+
+
+
+
+26   GSJ -Geological Survey of Japan-
+                                                                                 RESOURCES & ENVIRONMENT                            資源・環境
+
+
+
+
+Eﬀectively Using the 足下の「エネルギー」を
+Energy Beneath Us    いかに上手に使うか
+Making the best use of the world’s third-                                      世界第 3 位の資源量を生かすために
+largest resource                                                                日本は世界有数の火山国で、世界第 3 位の地熱資源を持っ
+   Japan is one of the world’s most active volcanic countries and
+                                                                               ています。再生可能エネルギー研究センター地熱チームは、
+has the world’s third-largest geothermal resource. The Geothermal
+Energy Team, Renewable Energy Research Center (RERC) is                        資源量の推定、開発コストの削減、社会的受容性などの課題
+GHYHORSLQJWHFKQRORJLHVWRRYHUFRPHWKHGLIÀFXOWLHVDVVRFLDWHGZLWK            を克服するための技術開発を進めています。現在の活動の主
+estimating available resources, reducing development costs, social             軸は、
+                                                                                 「地熱開発のリスクとコスト削減のための，超解像貯留
+acceptance, and other relevant issues. The main current activities are         層モニタリング」「地熱発電可能地域の拡大をめざした，工学
+super-resolution monitoring of reservoirs to reduce the risks and costs
+of geothermal development; development of Engineered Geothermal
+                                                                               的な貯留層造成・能力改善技術の開発」「地熱資源の高度デー
+Systems (EGS) technologies for reservoir creation and capacity                 タベース化と広域地下水理系のモデリング」です。そのほか、
+improvement to expand the areas usable for geothermal power                    温泉と地熱開発との共生や、地域に応じた地熱利用システム
+generation; and construction of an advanced database of geothermal             設計を実現するための研究を行っています。
+resources and regional hydrothermal modeling. In addition, we
+are conducting research on harmonious coexistence of geothermal
+power generation and hot spring and geothermal exploitation                    地域の状況にあった地中熱システムの普及を
+systems suitable for different socio-economical conditions.
+                                                                                地中熱は、地上と浅い地中の温度差を使うため、ほぼ全国
+Promoting ground source heat                                     pump          どこでも利用できます。地中熱チームは、この省エネシステ
+                                                                               ムの普及を目指した研究を行っています。
+systems best suited to each area
+                                                                                地中熱システムの普及には、各地域の地中の状況把握と、
+   Ground source heat pump (GSHP) systems can be used almost
+everywhere because they utilize the difference between the air                 その状況に適したシステムが必要です。現在、モデル地域と
+temperature and the shallow subsurface temperature. The Shallow                して東北地方の盆地・平野の地質・地下水調査を進め、そ
+Geothermal and Hydrogeology Team, RERC is engaged in research                  れに基づいて３次元地下水流動・熱輸送モデルを構築し、地
+aimed at promoting the dissemination of this energy-saving system.
+                                                                               中熱ポテンシャルマップを作成しています。また、地域の地質・
+   To popularize the use of GSHP systems it is essential to understand
+the subsurface conditions in different areas and use a system design           地下水の状態にあった最適なシステムを提案するための実証
+best suited to each area’s hydro-geological conditions. We will                実験を行っています。
+conduct hydro-geological surveys in the basins and plains of the
+7RKRNX 5HJLRQ DV PRGHO ÀHOGV ,W ZLOO WKHQ XVH WKH VXUYH\ UHVXOWV
+WR FRQVWUXFW ' JURXQGZDWHUÁRZ DQG KHDWWUDQVSRUW PRGHOV DQG
+create a potential map of GSHP systems. The demonstration tests are
+also conducted to determine which kind of system may best suit the
+geological and groundwater conditions in each area.
+
+
+
+
+                                                      &RQFHSWRIVXSHUGHHS(*6XVLQJDQDUWLÀFLDOEULWWOHIUDFWXUHUHVHUYRLUV\VWHPFRPSOHWHO\
+                                                      VXUURXQGHGLQWKHGXFWLOH]RQHDWDGHSWKZKHUHWKHWHPSHUDWXUH H[FHHGVʝ
+
+
+
+                                                                                                    GSJ -Geological Survey of Japan-   27
+     CO2 Geological
+     Storage
+      to Mitigate Global Warming              Nearly 20% of the halving of global CO2
+                                              emissions by 2050 is expected to be
+                                              achieved by geological storage. As there
+                                              are many things we still need to do to
+                                              reach this goal, we need the energy and
+                                              enthusiasm of many young scientists!
+     CO2 地中貯留                                 Yuji Nishi
+                                              CO2 Geological Storage Research Group
+                                   で地球温暖化緩和   Research Institute for Geo-Resources and Environment
+
+
+                                              2050 年に二酸化炭素（CO2）の排出量を半減
+                                              するためには、削減量の約 2 割を地中貯留で担
+                                              うことが求められています。そのためにやるべき
+                                              ことは多く、若い研究者の力が必要です。
+
+                                              西 祐司
+                                              地圏資源環境研究部門 CO2 地中貯留研究グループ
+
+
+28   GSJ -Geological Survey of Japan-
+                                                                            RESOURCES & ENVIRONMENT                              資源・環境
+
+
+
+
+Helping Mitigate Global                                                   二酸化炭素地下貯留により
+Warming through CCS                                                       地球温暖化緩和に貢献する
+   With the aim of mitigating global warming, we are promoting              地球温暖化を緩和するために、私たちは主要な温室効果ガ
+research into the geological storage of CO2. Carbon capture and           スである CO2 を地中に貯留するための研究を進めています。
+storage (CCS) is a promising technology that is expected to reduce
+                                                                          CO2 地中貯留では、発電所などの大規模排出源において回
+CO2 emissions to the atmosphere by collecting CO2 emitted from
+large sources such as power plants and injecting it into porous           収した CO2 を深度 800m 〜 3000m の空隙の多い地層に
+strata at depths of 800 to 3000 m. Our research aims to ensure safe       圧入して大気中への CO2 排出を抑制します。安全な貯留を
+implementation of CO2 geological storage; it includes improvement         実現するために、私たちは圧入した CO2 がその後どのように
+of monitoring and modeling techniques for injected CO2 and                移動し固定されるかを精度よく効率的に監視（モニタリング）
+VWXGLHVRIWKHK\GUDXOLFDQGJHRFKHPLFDOFKDUDFWHULVWLFVRIÁXLGV
+containing CO2.
+                                                                          し、予測（モデリング）するための技術、CO2 を含む流体の
+   This research has become more important in Japan since the             水理特性や地化学反応特性などを研究しています。
+Great East Japan Earthquake, as increased fossil fuel consumption           東日本大震災以降、日本では化石燃料の使用が増加して
+for power generation increases CO2 emissions. The Tomakomai               CO2 排出量も増えており、CO2 地中貯留研究の重要性は一
+CCS demonstration project is currently being carried out, which
+                                                                          層高まっています。国内では北海道の苫小牧において年間
+plans to start CO2 injection in FY 2016 at a rate of more than 100,000
+t/year. In the United States, CO2 injection is already widely used for    10 万 t 以上を目標とした CO2 地中貯留の大規模実証試験が
+(25 HQKDQFHGRLOUHFRYHU\ LQGHSOHWHGRLOÀHOGVDQG&&6LVFORVH      進められており、2016 年度から圧入が開始される予定です。
+to the stage of practical application. To accelerate our study, we are    米国では生産が進んだ油田から残存原油を取り出すため様々
+conducting some of our research at a test site in the US and are          な油田で CO2 が地下へ圧入されており、CO2 地中貯留は実
+cooperating with overseas scientists.
+                                                                          用化段階に近い技術となっています。私たちも研究の一部を
+   The study of bio-CCS and risk assessment, including the possible
+EHQHÀWVRIELR&&6LVSDUWRIRXUQHZUHVHDUFKLQWR&22 geological       米国のテストサイトにおいて実施し、米国など海外の研究者
+storage. A recent AIST study has shown that CO2 injection can             と協力することで、国内での貯留に先行して国際レベルの研
+change the environment in oil reservoirs, promoting crude oil             究を行っています。
+biodegradation and methane production by microorganisms                     産総研の最近の研究で、CO2 圧入により石油貯留層の環
+present in the reservoirs.
+                                                                          境が変わることで、そこに生息する微生物による原油分解・
+                                                                          メタン生成が促進されることがわかりました。このような地下
+                                                                          の微生物活動やそれに伴う便益も含めたリスク評価などの新
+                                                                          たな切り口での研究も進めています。
+
+
+
+
+Left: ([SHULPHQWDOVHWXSIRUKLJKSUHVVXUHÁXLGÁRZWHVWVLQDVXSHUFULWLFDO&22ZDWHUV\VWHP
+Right: 0HDVXULQJPLQHUDOUHDFWLRQUDWHVXQGHUFRQGLWLRQVRI&22JHRORJLFDOVWRUDJHEDVHGRQQDQRVFDOHFU\VWDOVXUIDFHREVHUYDWLRQV
+
+
+
+
+                                                                                                GSJ -Geological Survey of Japan-       29
+     Soil and
+     Groundwater
+     Contamination                             To solve the increasingly complex and
+                                               diverse issues of soil contamination, we
+     An old and Emerging Environmental Issue
+                                               would like to enhance cooperation with
+                                               researchers from different disciplines.
+                                               Ming Zhang
+     古くて新しい                                    Geo-Environment Risk Research Group
+                                               Research Institute for Geo-Resources   and
+
+
+     土壌・地下水
+                                               Environment
+
+
+                                               複雑化・多様化する土壌汚染の問題を解決す
+
+     汚染問題                                      るためには、分野を問わずに連携していきた
+                                               いと考えています。
+
+                                               張銘
+                                               地圏資源環境研究部門 地圏環境リスク研究グループ
+
+
+
+
+30   GSJ -Geological Survey of Japan-
+                                                                                       RESOURCES & ENVIRONMENT                              資源・環境
+
+
+
+
+How Can We Reduce the 土壌汚染のリスクを
+Risk of Soil Contamination? いかに減らしていくか
+  Soil and groundwater contamination is an old and emerging                           土壌・地下水汚染は、 古くて新しい環境問題 です。古く
+environmental problem. In the past there was a notorious pollution                   は「足尾鉱毒事件」、近年では福島第一原子力事故による放
+incident at the Ashio Copper Mine in Tochigi Prefecture, Japan, and
+                                                                                     射能汚染が問題となっています。これらの汚染問題は日本の
+recently the radioactive contamination resulting from the Fukushima
+Daiichi Nuclear Power Plant Accident has been a serious problem.                     経済成長、産業の発展に伴って、多様化・複雑化してきました。
+With the growth of Japan’s economy and industry, pollution problems                   土壌および水の汚染は人の健康、動植物や生態環境に深
+have become more and more complex and diverse.                                       刻な影響を与え、ときには大気汚染が関与することもありま
+  Soil and water contamination, some of which may occur together                     す。しかし、汚染問題が発覚した場合、いかなる対策を講じ
+with air pollution, can seriously affect human health, animals and
+plants, and the environment. However, once pollution occurs, it is
+                                                                                     ても総合的なリスクをゼロにすることは難しいと考えられてい
+YHU\ GLIÀFXOW WR WRWDOO\ HOLPLQDWH WKH RYHUDOO ULVN UHJDUGOHVV RI WKH    ます。
+measures used.
+
+Practically applicable technologies                                                  現場で使える技術を
+   To cope with this risk, we are committed to the aggressive research
+                                                                                      私たちは、リスクと上手に付き合うために、各種汚染物質
+and development of survey and assessment technologies; remediation                   の調査・評価技術、浄化・対策技術およびリスク評価・管理
+and countermeasure technologies; and risk assessment and risk                        技術に関する研究開発に「挑戦的な気概を持って」取り組ん
+management technologies that are applicable to a wide range of                       でいます。
+contaminants.
+                                                                                      具体的には汚染物質の拡散・溶出挙動の評価・シミュレー
+   Our basic research includes the development of technologies for
+assessing and simulating the mass transport and leaching behavior                    ション技術の開発、現場での汚染物質の迅速測定技術開発と
+of contaminants and the development of new technologies for rapid                    いった基礎研究に加え、動電学的手法、微生物、天然鉱物、
+DQGDFFXUDWHTXDQWLÀFDWLRQRIFRQWDPLQDWLRQLQWKHÀHOG:HDUHDOVR                 吸着材等を用いた現場に即した浄化技術の開発を行っていま
+promoting a variety of remediation technologies that use electrokinetics,            す。また、汚染物質を対象とした地圏環境リスク評価システム
+microorganisms, natural minerals, and absorbents to enable practical
+                                                                                    （GERAS）を開発・公表し、土壌・地下水汚染評価に環境
+DSSOLFDWLRQ LQ WKH ÀHOG :H KDYH GHYHORSHG DQG UHOHDVHG WKH *HR
+(QYLURQPHQWDO5LVN$VVHVVPHQW6\VWHP *(5$6 IRUGLIIHUHQWNLQGV                    リスクの概念のほか、社会・経済的側面も考慮することを提
+of contaminants. In addition, we propose that not only environmental                 唱しつづけています。
+risk but also the social and economic aspects should be considered in                 これら開発技術は、他分野にも幅広く適用するものです。
+assessments of soil and groundwater contamination.                                   そのため、技術の普及および社会への還元、そして、国際
+   These technologies can be transferred to many other areas of study.
+We are trying to disseminate them, return the results of our research
+                                                                                     社会への貢献も積極的に進めています。
+to society, and contribute to the international community as a whole.
+
+
+
+
+                                                                                    Changes in hydraulic head         Spatial distribution of a
+                                                                                    induced by pumping                contaminant
+
+Left: Column testing systems for characterizing the leaching and transport properties of contaminants in soils.
+Right: The Geo-Environmental Risk Assessment System (GERAS) is capable of simultaneous mass transport simulation and risk assessment.
+
+
+
+                                                                                                          GSJ -Geological Survey of Japan-        31
+GEOLOGICAL INFORMATION                           地質情報
+
+
+
+
+  Bring the World's Greatest
+  Geological Maps Closer to the People
+  世界最高の地質図をもっと 身近 に
+
+  Making the world’s best and most detailed                                世界最高水準の緻密性
+  geological maps                                                           地質図の整備は、国の知的基盤整備の一つに位置づけら
+     The creation of geological maps is one of the most important          れています。国土の地質学的な実態を明らかにし、その情報
+  projects in our Intellectual Infrastructure Development Plan. This
+                                                                           を社会の安全・安心と持続的発展を支えるために利用可能な
+  project aims to identify the geology of our country; put in place the
+  basic geological infrastructure needed to construct a secure and safe    状態に整えることが目的です。1882 年以来、旧地質調査所、
+  society; and achieve sustainable development. To achieve these aims,     そして地質調査総合センターは、5 万分の 1、20 万分の 1
+  since 1882 GSJ has published many quadrangle geological maps at          地質図幅 * をはじめとする各種の地質図を制作し、公表して
+  various scales, including 1:50,000 and 1:200,000.                        きました。
+     Japan is located in a plate subduction zone and has many active
+  faults and volcanoes. Its geology is far more diverse and complex than
+                                                                            日本はプレートの沈み込み帯に位置し、活断層や火山が多
+  that of many other countries, ranging from plutonic, metamorphic,        く、古生代前半の深成岩・変成岩・堆積岩から完新世の堆
+  and sedimentary rocks of the early Paleozoic to Holocene sediments.      積物に至る多様な地質が存在します。そのため、日本の地質
+  The maps of the 1:50,000 Quadrangle Series depict this complex           は海外のものと比較すると極めて複雑です。その複雑な地質
+  JHRORJ\ LQ ÀQH GHWDLO PDNLQJ WKHP DPRQJ WKH PRVW GHWDLOHG
+                                                                           を精緻に記載した「５万分の１地質図幅」は、世界でも最高
+  geological maps in the world.
+     During the creation of a geological map, the geological history       水準の緻密性を誇ります。
+  of the area under investigation is gradually revealed. For example,       地質図の制作が進むと、地域の地史も解き明かされてい
+  when we made the geological map of the Imajo and Takenami district       きます。例えば、  「今庄及び竹波」地域の地質図幅では、そ
+  we were able to reconstruct the stratigraphy of the oceanic plate. We    の制作を通じて、海洋底で堆積した地層の層序を復元し、こ
+  also elucidated the complex history of the accretionary complex,
+                                                                           れらが断層により繰り返す付加体の複雑な成り立ちを明らか
+  which is characterized by piling-up of the stratigraphy through the
+  development of many thrust faults.                                       にしました。
+                                                                                             * 緯度経度で区切られた四角形の地質図のこと
+
+
+
+
+                                  1:50,000 Geological Map of Imajo and Takenami. Dashed lines A-E show
+                                  WKHURXWHVRIWKHJHRORJLFDOÀHOGVXUYH\VXVHGWRPDNHWKHPDS
+
+
+
+32       GSJ -Geological Survey of Japan-
+Aim for
+
+
+More Accessible
+Geological Maps       Fieldwork is the basis of our
+                      UHVHDUFK :DONLQJ LQ WKH ÀHOG
+                      experienced geologists can draw a
+                      geological map in their head. That’s
+                      a pretty exciting magic trick!
+
+天気図       のように利用できる
+                      Makoto Saito
+                      Integrated Geo-information Research Group
+                      Research Institute of Geology and Geoinformation
+
+
+地質図       を目指して       私たちの研究では、野外調査が重要です。経
+                      験を積むと、野外を歩きながら、その地質が
+                      透けて見えてくるようになります。その楽しさ
+                      をともに味わってみませんか。
+
+                      斎藤 眞
+                      地質情報研究部門 シームレス地質情報研究グループ
+
+
+
+                           GSJ -Geological Survey of Japan-   33
+GEOLOGICAL INFORMATION                           地質情報
+
+
+
+
+     Examination of the geological cross-sections of the alluvial              また、平野の地質図幅に付属している地質断面図を見ると、
+  plains depicted on a quadrangle geological map may reveal that the          場所によって沖積層が厚くなっていることがあります。これは、
+  thickness of the alluvium varies with the location. Areas where the
+                                                                              かつて谷だったところが沖積層により完全に埋め立てられて隠
+  alluvium is thick are ancient valleys buried completely by alluvium.
+  The alluvium is composed of soft sediments and tends to shake               れているためです。沖積層は軟弱な地層からなり、地震のと
+  harder during an earthquake. Therefore, these thicker areas can             きに揺れを増幅します。一見、どこも同じように思える平らな
+  suffer increased damage in an earthquake, even if the area has no           場所でも、沖積層が局所的に厚いためにその場所だけ地震の
+  topographic features that distinguish it from other areas. Such             被害が大きくなる可能性があります。こうした情報は、例え
+  underground information can help in deciding where to locate
+  various buildings.
+                                                                              ばいろいろな建造物の立地を考えるときに役に立つでしょう。
+     Detailed geological maps therefore provide very helpful                   精緻な地質図は、さまざまな面で有益な情報元となり得る
+  information on a number of things.                                          のです。
+
+  Understanding the marine geology around Japan                               周辺海域の地質を知る
+     Japan is surrounded by oceans. In recent years, to tackle issues
+                                                                                四方を海に囲まれた日本では、海域の断層活動による地震
+  such as the occurrence of earthquakes and tsunamis caused by
+  offshore faults; the exploration of seabed resources; and the long-         や津波の発生、海底に眠る資源の探査、汚染物質の長期的
+  term dispersion and accumulation of pollutants, there has been              な拡散・堆積など、海域の地質および地質現象が近年ますま
+  increasing emphasis on the need to understand the geology and               す重要視されるようになってきています。
+  geological phenomena in these surrounding marine areas. Maps                  私たちは「海洋地質図」の制作も進めています。海洋地
+  in the Marine Geology Map series are compiled after long and
+                                                                              質図は、調査船に長期間乗船して海域で試料やデータを取得
+  exhaustive work: we collect samples and data on board a survey
+  ship for weeks and then analyze them in the laboratory. The Marine          し、それらを解析することで作成されます。「20 万分の 1 海
+  Geology Map series at the scale of 1:200,000 includes two types of          洋地質図」には、各区画で海底地質図と表層堆積図の 2 種
+  map for each area, namely a geological map and a sedimentological           類の地質図があります。
+  map. The former depicts the stratigraphy and geological structure,
+                                                                               「海底地質図」は海底下の地層の層序や地質構造を表現し
+  as analyzed with the help of information on the distribution of
+  gravity and geomagnetic anomalies, which is also included in the            たもので，付図として作成される重力異常・磁気異常の分布
+  PDS7KHODWWHUVKRZVWKHGLVWULEXWLRQRIVHGLPHQWVRQWKHVHDÁRRU       図と合わせて地質構造の解析を行います。もう一つの海洋地
+  the thickness and sedimentation rate of the sedimentary layer, the          質図である「表層堆積図」は、堆積物の分布、堆積層の層
+  sedimentation process, and the direction of sediment transportation.        厚や堆積速度、堆積プロセス、堆積物の輸送方向などを表
+     We have completed a survey of all areas surrounding the four
+                                                                              現したものです。
+  major Japanese islands, from Hokkaido to Kyushu, and maps are
+  being published for these areas. Surveys of the area surrounding              すでに北海道から九州までの主要 4 島周辺海域の調査
+  Okinawa began in 2008. Ten areal maps will be published at the scale        を終了し、解析の終了したものから順次、出版しています。
+  of 1:200,000 for this region.                                               2008 年度から沖縄周辺海域の調査を実施中です。この海
+                                                                              域で 10 区画の 20 万分の１海洋地質図を作成する予定です。
+
+
+
+
+  Left: 0DULQHVHGLPHQWVDPSOLQJE\XVLQJDJUDYLW\FRUHU9DULRXVNLQGVRIVDPSOHUVVXFKDVJUDEVDPSOHUVDQGGUHGJHVDUHXVHGIRUPDULQH
+         sediment and rock sampling, depending on the objects.
+  Right: ([DPSOHRIDPDULQHJHRORJLFDOPDS 2IIVKRUHRI&DSH(ULPR ZKLFKLVPDLQO\EDVHGRQVHLVPLFUHÁHFWLRQSURÀOHV,WVKRZVWKHGLVWULEXWLRQV
+         of submarine strata and geological structure such as faults and folds.
+
+
+
+34       GSJ -Geological Survey of Japan-
+                                                                                Left: Making a Seamless Digital Geological Map
+                                                                                      from 1:200,000 Geological Sheet Maps.
+                                                                                      Geologic understanding of the whole area
+                                                                                      of Japan is required.
+                                                                                Low: Seamless Digital Geological Map of Japan
+                                                                                       )DVWGLVSOD\DQGHDV\KDQGOLQJ
+                                                                                     KDYHEHHQUHDOL]HG
+
+
+
+
+The next generation of geological maps                                  そして、 地質図は新たな時代へ
+   A geological map is a visual expression of what the land has gone      地質図は、さまざまな地質情報を組み立てて、その時代
+through. Data are reconstructed and interpreted by assembling a          の最新の研究成果をもとに大地の成り立ちを復元、解釈した
+wide range of geological information based on the latest research
+                                                                         図面です。そのため、作成年代や作成者が違えば、隣同士
+results. Therefore, it sometimes happens that the lines and colors of
+adjacent maps do not match well and are discontinuous if they are        でも地質図は繋がらないことがあります。
+created by different geologists or at different times.                    私たちは、こうした地質図のシームレス化を進めてきました。
+   GSJ promotes the harmonization of traditional geological maps.        地質学の最新研究成果に基づいて全国統一凡例を作成し、繋
+The Seamless Digital Geological Map of Japan (1:200,000) was             目がなくなるように地質を再解釈し、全国を一つの地質図にし
+SXEOLVKHGDIWHUWKHXQLÀFDWLRQRIOHJHQGVDQGUHLQWHUSUHWDWLRQRIWKH
+                                                                         た、
+                                                                          「２０万分の１日本シームレス地質図」を作成しました。
+geology by using the latest knowledge; all of the nation’s geological
+maps were integrated into one seamless geological map.                    ウェブ上で公開しているシームレス地質図は気軽に情報を
+   The map has been released on the Web and has won public attention     得ることができるサイトとしても注目されています。地質図
+because it is very easy to access the information. Just click on the    をクリックするとそこの地質について簡単な説明が表示され、
+geological map and a brief explanation of the local geology will be
+                                                                         活断層や火山のデータベースを重ねることも可能です。また、
+displayed. Other geological databases, such as those on active faults
+and volcanoes, can be overlaid on the map. The map is smartphone         スマートフォンでも快適に表示でき、現在位置情報と組み合
+compatible and can display current location information, too.            わせることができます。
+   A major revision of the Seamless Digital Geological Map of Japan,      現在、シームレス地質図の大改訂を進めています。最新
+with six times the current number of legends, is currently under way.    の知見に基づいて、凡例を従来版の 6 倍以上に増やし、そ
+All of these legends are being systematically revised on the basis of
+                                                                         のすべてを系統立て、理解しやすいように再構築中です。
+the latest knowledge to make the map even easier to understand.
+   GeomapNavi, another online geological data service, is a               シームレス地質図をはじめ、地質図幅や海洋地質図、重力
+geological map display system that can overlay various earth science     図、地球化学図等も重ね合わせ表示できるようにしたものが
+maps, including the Seamless Digital Geological Map of Japan,           「地質図 Navi」です。 地すべり地形など他機関から配信さ
+the Quadrangle Series, the Marine Geology Map, the Gravity Map           れている情報と組み合わせ、地質との関連性を調べることも
+Series, the Geochemical Map, and many others. We aim to make
+                                                                         容易にできるようになっています。こうした情報発信を進め、
+geological maps more user-friendly and as useful as weather maps
+in everyday life.                                                        将来的には「天気図のように地質図を気軽に利用できる」こ
+                                                                        とを目指しています。
+
+
+
+
+                                                                                    GSJ -Geological Survey of Japan-   35
+GEOLOGICAL INFORMATION                                 地質情報
+
+
+
+
+    Monitoring the Earth                                                by Eye of Science
+
+    視力 14.0！
+       科学の目で             地球監視
+
+
+
+
+  Left: Vicarious calibration campaign. Right: Global geologic index map.
+
+
+
+
+  Remote Sensing                                                                 衛星画像の利用研究
+ （calibration, validation and its utilization）                                   ̶利用技術および校正・検証̶
+     We are studying satellite remote sensing, which is used in                   金属鉱物やエネルギー資源、地球環境などの調査に利用
+  PDQ\ÀHOGVLQFOXGLQJLQVXUYH\VRIPHWDOVIXHOVDQGWKHJOREDO             するための衛星リモートセンシングに関する研究を行ってい
+  HQYLURQPHQW2XUUHVHDUFKIRFXVHVRQGHYHORSLQJQHZVHQVRUV
+                                                                                ます。主に、打ち上げ前の新規衛星センサーの開発、実際
+  IRUDVDWHOOLWHWKDWLVWREHODXQFKHGFDOLEUDWLRQDQGYDOLGDWLRQ
+  IRU TXDOLW\ FRQWURO RI DFTXLUHG GDWD DQG HIÀFLHQW PDQDJHPHQW         に取得したデータの品質管理（校正・検証）や大量に取得さ
+  RI PDVVLYH GDWD DQG WKH FUHDWLRQ DQG SUDFWLFDO DSSOLFDWLRQ RI       れたデータの効率的管理に関する研究、さらには各種主題図
+  YDULRXVWKHPDWLFPDSVIRUVFLHQWLÀFLQWHUSUHWDWLRQ                           （科学的な解釈を加えた地図）の作成や実利用に関する研
+     $67(5  RQH RI WKH VHQVRUV RQ ERDUG WKH 1$6$·V )ODJVKLS
+                                                                                 究を進めています。
+  (DUWK2EVHUYLQJ6DWHOOLWHZHKDYHEHHQKHDYLO\LQYROYHGLQDOO
+  DVSHFWVRILWVGHYHORSPHQWWRLWVXVHLQVSDFH7KHFROODERUDWLYH              NASA の衛星に搭載されている「ASTER*」について、私
+  UHVHDUFK ZLWK RWKHU UHVHDUFK LQVWLWXWHV RI $,67 LV LQFUHDVLQJO\      たちは開発から実際の利用まで深くかかわってきました。産
+  SURPRWHG WR GHYHORS WKH VHQVRU DQG WR PDQDJH FDOLEUDWH DQG          総研の他の領域ユニットとも連携し、センサー開発、ビック
+  XVHPDVVLYHGDWD                                                             データの管理・品質管理および利用に関する研究を進めてい
+     :HDUHDOVRLQYROYHGLQGHYHORSLQJQHZVHQVRUVVXFKDV+,68,
+                                                                                ます。
+   WKH+\SHUVSHFWUDO,PDJHU6XLWH ZKLFKKDVDERXWVSHFWUDO
+  EDQGVDQGLVLQWHQGHGSULPDULO\IRUUHVRXUFHH[SORUDWLRQ                       新規センサー開発として、資源探査を主目的とした多波長
+     7RHQVXUHGDWDTXDOLW\LQÁLJKWVHQVRUVDUHFDOLEUDWHGXVLQJ             センサー HISUI（約 180 バンド）の開発にも携わっています。
+  GHVHUWV RU RQ GU\ ODNHV DEURDG :H FRQGXFW UHDOWLPH JURXQG          品質管理に関する研究では、海外の砂漠地帯や乾燥湖に赴
+  REVHUYDWLRQV DW WKH VDPH SODFH DV ZKHUH WKH VDWHOOLWH PDNHV         き、衛星観測と同じ時間、同じ場所の地上観測を実行してい
+  REVHUYDWLRQV&RPSDULQJWKHUHVXOWVRIWKHJURXQGDQGVDWHOOLWH
+                                                                                ます。この地上観測と、衛星の観測結果と比較することで宇
+  REVHUYDWLRQVUHYHDOVWKHGHJUHHRIVHQVLWLYLW\GHJUDGDWLRQRIWKH
+  VHQVRU LQ VSDFH DQG HQDEOHV XV WR DVVHVV WKH GDWD TXDOLW\ DQG      宙にあるセンサーがどの程度劣化しているか品質管理を行っ
+  FDOLEUDWHWKHV\VWHP                                                         ています。
+     $V SDUW RI RXU GHYHORSPHQW RI GDWDEDVH DQG LPDJHGHOLYHU\           データベースや画像配信技術に関しては、地理空間データ
+  WHFKQRORJ\ZHDUHLQWURGXFLQJLQWHUQDWLRQDOVWDQGDUGVIRUXVLQJ              のインターネット利用に関する国際標準の実装を進めていま
+  JHRVSDWLDO GDWD RQ WKH ,QWHUQHW 7KHVH GDWD DUH XVHG WR FUHDWH
+  DJOREDOPDSRIXUEDQDUHDVDQGDEDVHPDSXVLQJWKH$67(5
+                                                                                 す。また、それらを用いた全球の都市マップや背景地図とし
+  6HDPOHVV6DWHOOLWH,PDJH0RVDLFRIWKH(DUWKLQ1DWXUDO&RORU               ての ASTER 全球シームレス天然色マップの作成、世界の火
+  2XU ZRUN DOVR LQFOXGHV UHVHDUFK LQWR D ZRUOGZLGH YROFDQR              山のモニタリングサービス等の利用研究を続けています。こ
+  PRQLWRULQJVHUYLFH$OORIWKHVHGDWDDUHEHLQJPDGHSXEOLFDV                れらのデータは順次公開するとともに、サービスとして定常
+  WKH\EHFRPHDYDLODEOHDQGDUHSURYLGHGDVDUHJXODUVHUYLFH
+                                                                                 的に運用しています。
+  $67(5$GYDQFHG6SDFHERUQH7KHUPDO(PLVVLRQDQG5HÁHFWLRQ5DGLRPHWHU
+
+
+
+
+36        GSJ -Geological Survey of Japan-
+                                                                                     GEOLOGICAL INFORMATION                               地質情報
+
+
+                                                                            See the Underground by
+
+
+                                                                      Gravity Difference
+                                                                      「重力の差」                                        で地下を知る
+
+
+
+
+Left: Gravity map of the Kyoto and Osaka areas. Sharp gravity changes are obvious along faults. Right: Gravity measurement on a mountain summit.
+
+
+
+
+Gravity Maps                                                                     重力図
+   7KH GLVWULEXWLRQ RI JUDYLW\ RQ WKH VXUIDFH RI WKH JURXQG LV         地表で測定する重力値の分布は、地下の密度の不均質構
+DQ H[WUHPHO\ LPSRUWDQW FOXH IRU GHWHFWLQJ WKH KHWHURJHQHLW\              造を探るための非常に重要な情報です。地質調査総合セン
+RIXQGHUJURXQGGHQVLWLHV7KH*HRORJLFDO6XUYH\RI-DSDQKDV
+                                                                                 ターでは長年にわたり、国内で測定された重力データを集約
+FRQVWUXFWHG D QDWLRQDO JUDYLW\ GDWDEDVH RI WKH KLJKHVW JOREDO
+VWDQGDUGV E\ FROOHFWLQJ DQG FRPSLOLQJ JUDYLW\ GDWD DOO RYHU             して、世界最高水準の重力データベースを構築してきました。
+-DSDQIRUPDQ\\HDUV1RWRQO\LWLVWKHODUJHVWJUDYLW\GDWDEDVH                重力データベースに収録されたデータは、陸域 47 万点、
+LQ -DSDQ ZLWK PRUH WKDQ  ODQG GDWD DQG                 海域 124 万点を超える膨大なものです。日本国内で最大の
+PDULQHGDWDEXWDOVRLWVDFFXUDF\DQGUHJXODUDUUDQJHPHQWRI                   規模であることはもちろん、国際的にみてもその精度と測点
+PHDVXUHPHQW VWDWLRQV PHHW WKH KLJKHVW ZRUOG VWDQGDUGV 7KH
+GDWDEDVHLVDYDLODEOHWRWKHSXEOLFRQ'9'DQGLVZLGHO\XVHG
+                                                                                 配置の均一性では世界最高水準となっています。このデータ
+DVDVRXUFHRIEDVLF-DSDQHVHHDUWKVFLHQFHGDWD7KH*HRORJLFDO                ベースは DVD やインターネットにより公開され、日本におけ
+6XUYH\RI-DSDQDOVRSXEOLVKHVWKH*UDYLW\0DSVHULHVDQGWKHLU                 る地球科学の基礎的なデータとして利用されています。
+GLJLWDOYHUVLRQYLDWKH,QWHUQHW *$/,/(2 
+
+Given these geographical conditions                                              最新の重力データベース
+   7KH *HRORJLFDO 6XUYH\ RI -DSDQ LV XVLQJ WKH DERYH *UDYLW\            地質調査総合センターの重力図プロジェクトでは、   このデー
+'DWDEDVH DV D EDVLV IRU UXQQLQJ WKH JUDYLW\ PDS SURMHFW LQ           タベースを基本として、さらに重力データが比較的少ない地
+ZKLFKIXUWKHUJUDYLW\PHDVXUHPHQWVDUHEHLQJWDNHQIRUDUHDV                    域で重力調査を実施しています。そして、高精度な補正処理
+LQ ZKLFK WKHUH DUH FRPSDUDWLYHO\ IHZHU GDWD 7KH UHVXOWV DUH
+                                                                                 等を施し、
+                                                                                     「重力図」として出版しています。
+SXEOLVKHG DV WKH *UDYLW\ 0DS 6HULHV IROORZLQJ KLJKSUHFLVLRQ
+FRUUHFWLRQDQGRWKHUSURFHGXUHV                                                  これまでに出版された 20 万分の 1 重力図は、32 図幅に
+   $ WRWDO RI  TXDGUDQJOH JUDYLW\ PDSV KDYH QRZ EHHQ                 なります。重力図の編集のために測定された新規測定デー
+SXEOLVKHG DW  VFDOH 7KH QHZ JUDYLW\ GDWD FROOHFWHG            タは重力データベースにも反映されているため、重力データ
+IRU FRPSLODWLRQ RI WKH *UDYLW\ 0DS 6HULHV DUH FRQVHFXWLYHO\             ベースは常に最新のものに更新されています。重力図と重力
+UHÁHFWHGLQWKH*UDYLW\'DWDEDVHWRHQVXUHWKDWLWLVDOZD\VXS
+                                                                                 データベースは、防災のための地下構造解析、資源探査等
+WRGDWH7KH*UDYLW\0DS6HULHVDQGWKH*UDYLW\'DWDEDVHXVHG
+WRFRPSLOHWKHPDSVDUHEDVLFLQIRUPDWLRQXVHGLQPDQ\ÀHOGV                   に基礎的な情報となっているのです。
+LQFOXGLQJUHVRXUFHH[SORUDWLRQDQGWKHDQDO\VLVRIXQGHUJURXQG
+VWUXFWXUHVWRSUHYHQWGLVDVWHUV
+
+
+
+
+                                                                                                     GSJ -Geological Survey of Japan-      37
+GEOLOGICAL INFORMATION                               地質情報
+
+
+
+   Look at Japan as
+
+
+   Element                                Concentration
+
+
+
+   元素                    で日本を見る
+
+
+          クロム（Cr）
+
+
+
+
+  Left: *HRFKHPLFDOPDSRI-DSDQ·VVHDDQGODQGVKRZLQJWKHGLVWULEXWLRQRIFKURPLXPRight: Geochemical reference materials.
+
+
+
+
+  Geochemical Maps                                                         地球化学図
+     $Q DFFXUDWH XQGHUVWDQGLQJ RI HOHPHQWDO GLVWULEXWLRQV LV          地球上にある、さまざまな元素の移動や拡散といった「動
+  LQGLVSHQVDEOH IRU HOXFLGDWLQJ WKH PLJUDWLRQ DQG GLVSHUVLRQ RI    き」を解明するためには、元素の分布の状態を正しく把握
+  YDULRXV HOHPHQWV RQ (DUWK :H KDYH FROOHFWHG DQG DQDO\]HG
+                                                                           することが必要不可欠です。 私たちは、日本の陸域から約
+  DERXW  ULYHU VHGLPHQW VDPSOHV DQG DERXW  VDPSOHV
+  RI PDULQH VHGLPHQWV IURP DURXQG -DSDQ 7KH *HRFKHPLFDO            3000 個の河川堆積物試料を、沿岸域から約 5000 個の海
+  0DSRI-DSDQFRPSLOHGIURPWKHVHUHVXOWVLVWKHZRUOG·VÀUVW          底堆積物試料を採取し、分析しました。こうしてできた、陸
+  FRPSUHKHQVLYHDWWHPSWWRUHSUHVHQWWKHGLVWULEXWLRQRIHOHPHQWV         から海へとつながる「元素濃度マップ」 （地球化学図）は、
+  DFURVV WKH FRXQWU\ FRQQHFWLQJ ODQG DQG VHD VHDPOHVVO\
+                                                                           世界で初めてとなる大規模なものです。これにより、全国の
+  (OHPHQWDOGLVWULEXWLRQDQGPRYHPHQWERWKRQODQGDQGLQWKH
+  FRDVWDOVHGLPHQWVRI-DSDQFDQFOHDUO\EHVHHQRQWKHPDS              陸から沿岸域における元素の分布と動きを明らかにしました。
+     7KH *HRFKHPLFDO 0DS WKH VDPSOLQJ ORFDWLRQV DQG WKH            完成した地球化学図と作成に用いた堆積物試料の採取地
+  FRQFHQWUDWLRQYDOXHVRIHDFKHOHPHQWDUHFRPSLOHGDVDGDWDEDVH         点や各元素の濃度値はデータベースとして一般にも公開して
+  DQG SXEOLVKHG RQ WKH ,QWHUQHW WR PDNH WKHP ZLGHO\ DYDLODEOH     います。現在は、全国図の 10 倍の精度を持つ、大都市市
+  WR WKH SXEOLF :H DUH SUHVHQWO\ FUHDWLQJ GHWDLOHG JHRFKHPLFDO
+                                                                           街地を対象とした「精密地球化学図」の作成を進めています。
+  PDSV RI PDMRU PHWURSROLWDQ DUHDV WKHVH PDSV ZLOO KDYH 
+  WLPHVDVPXFKGHWDLODVWKHQDWLRQZLGHPDS
+                                                                           世界で役立つ「標準試料」を供給
+  Providing reference samples of world standard
+                                                                            地質調査総合センターは、50 年以上にわたって地質関連
+     7KH*HRORJLFDO6XUYH\RI-DSDQKDVEHHQSURGXFLQJUHIHUHQFH
+                                                                           試料の標準物質を作製してきました。この標準物質には、世
+  PDWHULDOV IRU JHRORJLFDO VDPSOHV IRU PRUH WKDQ  \HDUV 7KH
+  FKHPLFDO DQG LVRWRSLF FRPSRVLWLRQ DQG JHRORJLFDO DJH RI          界各国の研究機関との共同研究によって化学組成や同位体組
+  WKHVHUHIHUHQFHPDWHULDOVDUHKLJKO\UHOLDEOH7KHVHGDWDZHUH          成、年代値の信頼性の高いデータが定められています。
+  REWDLQHG IURP FROODERUDWLYH UHVHDUFK ZLWK YDULRXV UHVHDUFK         近年、標準物質は国際的な基準である ISO に対応するこ
+  LQVWLWXWHVWKURXJKRXWWKHZRUOG                                         とが必要とされるようになりました。地質調査総合センター
+     5HIHUHQFH PDWHULDOV DUH QRZ UHTXLUHG WR FRPSO\ ZLWK ,62
+                                                                           が発行する岩石標準試料についても、ISO に対応した「標準
+  LQWHUQDWLRQDO VWDQGDUGV *6- LV DFFUHGLWHG DV D UHIHUHQFH
+  PDWHULDO SURGXFHU XQGHU ,62 *XLGH  DQG ,62  $OO RI    物質生産者としての認定（ISO Guide34 & ISO 17025）
+                                                                                                              」
+  RXUQHZO\SUHSDUHGUHIHUHQFHVDPSOHVDUHFHUWLÀHGE\,62                を取得し、新規に作製する標準試料については ISO の規定
+                                                                           に則った認証標準物質として供給を行っています。
+
+
+
+
+38        GSJ -Geological Survey of Japan-
+                                                                               GEOLOGICAL INFORMATION                    地質情報
+
+
+
+                                                                       For Future
+
+
+                                                                       Groundwater Use
+                                                                       地下水利用                            の道しるべ
+
+
+
+
+Left: Hydrogeological information overlaid on a color topographic map.
+Right: &KHPLFDODQDO\VLVRIQDWXUDOZDWHUIRUZDWHUHQYLURQPHQWPDSV
+
+
+
+
+Water Environment Maps                                                    水文環境図
+   6XUYH\V DQG VWXGLHV RI JURXQGZDWHU KDYH D ORQJ DQG ULFK       日本では、古くから地下水に関する多くの調査・研究が行
+KLVWRU\ LQ -DSDQ :DWHU (QYLURQPHQW 0DSV FRPELQH SDVW             われてきました。こうした過去の知見に最新の調査・研究の
+NQRZOHGJH ZLWK WKH UHVXOWV RI WKH PRVW UHFHQW VXUYH\V DQG
+                                                                          結果を加えて、まとめたものが「水文環境図」です。
+VWXGLHVRIJURXQGZDWHU
+   :DWHU (QYLURQPHQW 0DSV LQFOXGH GHWDLOV RI PDFURVFRSLF            水文環境図は、盆地や平野などの巨視的な地下水の流れや、
+JURXQGZDWHU ÁRZ ZDWHU TXDOLW\ DQG ZDWHU WHPSHUDWXUH              水質・水温分布を掲載しています。当研究所はこうした地下
+GLVWULEXWLRQLQEDVLQVDQGSODLQV*6-KDVEHHQSXEOLVKLQJWKHVH         水の地図について、約 50 年にわたって出版を続けています。
+JURXQGZDWHUPDSVIRUQHDUO\\HDUV
+
+Protecting high quality groundwater                                       良質の地下水を守るために
+   :DWHU (QYLURQPHQW 0DSV VKRZ WKH UHODWLRQVKLSV EHWZHHQ            水文環境図を見ることで、帯水層と地質構造の関係や、地
+DTXLIHUV DQG JHRORJLFDO VWUXFWXUHV DQG JURXQGZDWHU ÁRZ             下水がどこから涵養され、どこへ向かって流れているのかを
+V\VWHPV³LQRWKHUZRUGVZKHUHWKHJURXQGZDWHUFRPHVIURP                 知ることができます。このような情報があれば、私たちが土
+DQGZKHUHLWJRHV7KHVHW\SHVRILQIRUPDWLRQFDQKHOSXVGHFLGH
+ZKDWZHQHHGWRIRFXVRQWRSURWHFWWKHJURXQGZDWHUUHVRXUFH
+                                                                          地利用をする際、地下水を守るために何に気をつければよい
+   7KHUHLVDQHYHULQFUHDVLQJQHHGIRUDEHWWHUXQGHUVWDQGLQJ           のかを判断することができます。
+RI ORFDO JURXQGZDWHU ÁRZ V\VWHPV DQG :DWHU (QYLURQPHQW            今後、地域の地下水を理解する必要性はますます高まり、
+0DSVZLOOSOD\LQFUHDVLQJO\LPSRUWDQWUROHVLQWKLVUHJDUG               水文環境図の果たす役割はより重要になっていくでしょう。
+
+
+
+
+                                                                                      GSJ -Geological Survey of Japan-   39
+TECHNOLOGY SEEDS                     技術シーズ
+
+
+
+
+    Quickly, Accurately
+    迅速 に 正確 に
+
+
+
+
+  Left: SHRIMP (Sensitive High-Resolution Ion Micro Probe).    Upper Right: Laser-ablation ICP-MS. Lower Right: Mineral liberation analyzer.
+
+
+
+
+  Analysis of Critical
+                                                                              レアメタル鉱石の解析
+  Metal Ores
+     To extract critical metals from ores we need to know what                 鉱石からレアメタルを取り出すには、鉱石に含まれる鉱物
+  minerals and elements are present in the ores. Formation age                種や化学組成を知らなければなりません。また、鉱石が作ら
+  and isotopic composition are also important in determining the
+                                                                              れた年代や同位体組成を測定し、鉱石の起源を知ることも重
+  origin of the ores. The Geological Survey of Japan possesses the
+  latest equipment and techniques for quick and accurate analysis             要です。地質調査総合センターでは、レアメタル鉱石を早く
+  of ores, namely laser ablation inductively coupled plasma mass              正確に解析する最新の装置と技術を導入しています。
+  spectrometry (LA-ICPMS) and sensitive high-resolution ion                    それが、「レーザーアブレーション誘導結合プラズマ質量
+  micro-probe (SHRIMP), both of which can determine chemical                  分析計（LA-ICPMS）
+                                                                                          」と「高感度高分解能 2 次イオン質量
+  concentrations and isotopic ratios in small areas with diameters
+  of less than several tens of microns. These methods can be
+                                                                              分析計（SHRIMP）」です。共に、直径数十 µm 以下の微小
+  used to detect very small amounts of a wide range of elements,              領域中に含まれる元素の濃度や同位体比を分析することが可
+  from lithium to uranium, with a sensitivity of less than 1 ppm              能な装置で、リチウムからウランまでの幅広い元素に対応し
+  (0.0001%).                                                                  ています。検出限界も 1ppm（0.0001%）以下と、極微量
+                                                                              まで測定することができます。
+  Highly precise isotope analysis in a micro-area
+    LA-ICPMS, by instantly vaporizing a small amount of
+  sample and atomizing the elements in a plasma at about 7000
+                                                                              微小領域における高精度同位体分析
+  °C, determines chemical composition by mass spectrometry.                    LA-ICPMS は試料表面の分析したい微小領域をいっきに蒸
+  Analysis of one sample is completed in only in 2 minutes. In
+                                                                              発させることができます。蒸発した試料は約 7000℃のプラ
+  contrast, SHRIMP measures the number of secondary ions
+  sputtered from the surface by emitting a primary ion beam                   ズマ中で強制的にイオン化し、その質量を測って化学組成を
+  to the micro-scale surface area (about 20 μm) under a high                  求めます。分析は「1 試料あたり 2 分」という短時間で可能
+  vacuum. This instrument is suited particularly to highly precise            です。一方、SHRIMP は高真空中にセットされた試料表面の
+  analyses such as uranium–lead dating and oxygen isotope ratio               微小領域（20µm 程度）に電子線を照射し、試料からはじき
+  determination.
+                                                                              出されたイオンの数を測定します。U-Pb 年代、酸素同位体
+    The Geological Survey of Japan, by making the best use of
+  these latest technologies and items of equipment, promotes and              等の高精度分析を得意としています。
+  supports critical metal resource exploration and assessment                  地質調査総合センターでは、これらの最新の装置や技術を
+  around the world.                                                           駆使して世界各地で行われるレアメタル資源の探査や評価を
+                                                                              推進しています。
+
+
+40        GSJ -Geological Survey of Japan-
+                                                                                            TECHNOLOGY SEEDS                      技術シーズ
+
+
+
+
+                                                                    Create Resources
+                                                                                                        and Protect Environment
+
+
+                                                                    資源 生み               を                      環境を守る
+
+
+
+
+                                                                                                                         1μｍ
+
+Left: High-pressure culture system. Upper Right: Vessels for simulating subsurface conditions. Lower Right: A newly isolated methanogen.
+
+
+
+
+Studying Microbes which                                                    メタン生成・消費
+Produce/Consume CH4                                                        微生物研究
+Elucidating the origin of natural gas for                                  天然ガス資源の成因を解明し、効率的に開発する
+LWVHIÀFLHQWGHYHORSPHQWDVDUHVRXUFH                                      私たちは、天然ガス資源の成因を解明するために、地下
+   With the overall aim of elucidating the origin of natural gas,
+                                                                           水や堆積物の培養実験、遺伝子解析、地化学分析を行って、
+we are using microbial culture experiments in groundwater
+and sediments, as well as gene and geochemical analyses, to                温度や水質などの環境因子が地下微生物の種類やメタン生
+examine how environmental factors such as temperature and                  成活性に与える影響を調べています。
+water chemistry affect the composition of subsurface microbial              また、地下微生物の能力を利用して、地層内から石油・天
+communities and their methanogenic activity.                               然ガスを効率的に生産する資源技術の開発を目指し、枯渇油
+   We are also working toward the goal of developing a
+technology to enhance the production of oil and natural gas in
+                                                                           田に残った原油を油層微生物によってメタンに変換し、生産
+GHSOHWHGÀHOGVE\XVLQJVXEVXUIDFHPLFUREHVWKDWDUHIRXQGLQ             量を増やすことに挑戦しています。
+oil-bearing strata and have the ability to convert residual crude
+oil into methane.
+                                                                           温室効果ガスを抑制し、 地圏の環境も守る
+Suppressing greenhouse gas emissions and                                    地下微生物はメタンを生成するだけでなく、メタンを消費
+SURWHFWLQJWKHJHRVSKHUHHQYLURQPHQW                                       する能力も持っています。私たちは、海陸地下圏に生息する
+   Although subsurface microbes can produce methane, they                  メタン消費微生物の研究を進め、どのようなメカニズムでメ
+also consume methane. We are studying methane-consuming
+                                                                           タンを消費するのかを調べています。このような情報は、地
+microbes living in deep subsurface environments to determine
+the mechanism of methane consumption. This information is                  下から大気へ放出されるメタンの地球環境に与える影響を予
+needed to estimate the global environmental impact of methane              測するために必要となります。
+released from the subsurface to the atmosphere.                             また、地下微生物は汚染された地下水を浄化する能力を有
+   Some subsurface microbes also have the ability to remediate             しています。そこで、揮発性有機塩素化合物を分解する微生
+contaminated groundwater. We are developing bioremediation
+                                                                           物を活用した地圏環境を守る技術の開発にも挑戦しています。
+technologies by utilizing microbes that can decompose volatile
+organic chlorine compounds.                                                 このように地下微生物を研究することで、天然ガスなどの
+   The study of subsurface microbes thus contributes to the                地圏資源の開発や地圏環境の保全を行う事が可能なのです。
+development of natural gas and other resources in the geosphere
+and to conservation of the geosphere environment.
+
+
+
+
+                                                                                                 GSJ -Geological Survey of Japan-     41
+TECHNOLOGY SEEDS                        技術シーズ
+
+
+
+
+    Seamless                                     Subsurface          Visualization
+    連続                    して 地下を            可視化
+
+
+
+
+  Left: Marine electromagnetic (EM) system in a shallow-water environment. Right: Deployment of the EM system from a boat.
+
+
+
+
+  Marine EM System in
+                                                                             浅海域電磁探査技術
+  Shallow-Water Environment
+     Large research vessels cannot enter shallow water. Moreover,             浅海には大型の作業船は入って行けず、また、海岸近くで
+  rough waves near the coast often cause conventional data                   は波が荒く、海底に設置した通常の地下探査装置は揺れのた
+  DFTXLVLWLRQHTXLSPHQWSODFHGRQWKHVHDÁRRUWRVZD\DURXQG
+                                                                             めにノイズが発生し、良質なデータを取得することができま
+  WKXVOHDGLQJWRLQWHUIHUHQFHQRLVHDQGPDNLQJLWGLIÀFXOWWRREWDLQ
+  reliable data. We have therefore developed electromagnetic                 せん。そこで私たちは、波浪による装置の揺れを減らし、小
+  (EM) exploration equipment that is less affected by waves and              型の作業船でも運搬可能な電磁気を利用した地下探査装置
+  small enough to be carried on small vessels.                               を開発しました。
+     To demonstrate the performance of the new exploration                    開発した装置の実証実験として、北海道幌延沿岸域で、陸
+  system, EM measurements were carried out on- and offshore in
+  the Horonobe coastal area, Hokkaido, by setting up the system
+                                                                             側と海側それぞれ約 10km（全長で約 20km）にわたって、
+  for about 10 km in each direction across the coastline, giving an          装置を設置し、電磁探査法のデータ計測を実施しました。そ
+  entire length of about 20 km. Comprehensive interpretation of              の結果と他の地質調査の結果を総合して考えることで、陸域
+  the results of the measurements and other geological surveys               の砂岩層は、淡水性の地下水で満たされていることがわかり
+  VKRZHG WKDW D VDQGVWRQH OD\HU RQ ODQG ZDV ÀOOHG ZLWK IUHVK
+                                                                             ました。そしてその地層は沖合 10km まで続き、その中に
+  groundwater and extended to 10 km offshore, where the
+  existence of freshwater was estimated. The fresh groundwater               も淡水が存在していることが示されました。過去に浸透した
+  LQÀOWUDWHG LQWR WKLV OD\HU GXULQJ WKH SDVW JODFLDO DJH DQG LV   淡水性の地下水が、海に覆われた現在においてもいまだ海水
+  considered to remain there without being replaced by seawater,             に置き換えられることもなく残っているものと考えられます。
+  even after periods of submergence.                                          このように、陸から海へと連続して地下の様子を把握し、
+     Our research efforts to obtain continuous underground
+                                                                             地下水の状態を推定することは、沿岸部での重要施設立地や
+  information on land and sea and estimate the status of the
+  groundwater provide valuable information to various projects.              放射性廃棄物の地層処分、二酸化炭素の地中貯留などの事
+  These projects include deciding on the most suitable locations             業において、どの場所が利用の目的に合う場所なのかを探す
+  for important coastal facilities; optimizing the geological                のに有効な情報となります。どこに、どのような地下水があり、
+  disposal of radioactive waste; and implementing geological                 どうしてそのようになっているかが見えて来るのです。
+  storage of CO2. Our system provides the information on where
+  the groundwater is, as well as its characteristics, why it is found
+  in these locations, and how it came to be there.
+
+
+
+
+42        GSJ -Geological Survey of Japan-
+                                                                                        TECHNOLOGY SEEDS                     技術シーズ
+
+
+
+
+                                                                     World's Highest                                       Quality
+
+
+
+
+                                                                     世界最高水準
+
+
+
+
+Left: Thin-section production. Right: Optical micrograph of soil samples including imogolite (yellow areas).
+
+
+
+
+Preparation of Thin and
+                                                                         薄片・研磨片製作
+Polished Sections
+   Preparation of thin and polished sections, which provide               多くの情報を持つ薄片・研磨片を作るために必要なのは、
+various types of information about the Earth, requires not only          技術の正確さだけではありません。製作工程で起こりうる試
+technical accuracy. What is also vital is the knowledge gained
+                                                                         料へのダメージを想定し、それに対応するための「経験知」
+through experience—in other words, the ability to anticipate
+potential damage during the process and to take precautions              が重要です。
+against it. The quality of the thin and polished sections prepared        地質調査総合センターでは、熟練した技術者の現場で培わ
+by skilled technicians from the Geological Survey of Japan,              れた感覚・知識によって、機械だけでは決して到達できない
+whose intuition and knowledge have been cultivated through               世界最高レベルの薄片・研磨片を作製しています。
+long experience, is among the world’s best—better than can
+ever be achieved by automated machinery.
+                                                                         地質研究の最前線を支える「手業」
+Craftspersonship supports the latest
+                                                                          新たな技術の開発にも積極的に取り組み、多様化する試料
+geological research
+                                                                         に柔軟に対応しています。例えば、粘土鉱物の 「イモゴライト」
+   We are continually trying to improve our techniques so as
+WR ÁH[LELOLW\ FRSH ZLWK D YDULHW\ RI VSHFLPHQV )RU H[DPSOH   は、発見されてから約 50 年もの間、薄片の製作は不可能と
+LPRJROLWHDFOD\PLQHUDOÀUVWGHVFULEHGKDOIDFHQWXU\DJRKDV        考えられてきました。我々は、この鉱物を薄片にする技術を
+been considered impossible to be prepared as a thin section.             世界で初めて開発し、野外で産出する状態を保ったままの観
+)RUWKHÀUVWWLPHLQWKHZRUOGZHKDYHVXFFHVVIXOO\GHYHORSHG          察・分析を可能にしました。
+a technique to make thin sections of this material, enabling
+                                                                          その他、硬度差が極端にある鉱物を含む試料や、固形を
+observation and analysis under in situ conditions.
+   We can now make high-quality thin and polished sections               維持していないヘドロのような試料、熱に弱い試料などであっ
+from almost any geological material, including rocks containing          ても、精度の高い薄片・研磨片を製作し、研究者に提供して
+minerals with extreme differences in hardness, shapeless                 います。さらに、薄片技術者を対象とした技術研修も行い、
+samples such as sludge, and heat-sensitive samples. The
+                                                                         最新の薄片技術を国内外に発信しています。
+technical training and supports are also provided to other thin-
+section technicians, both in Japan and around the world.
+
+
+
+
+                                                                                              GSJ -Geological Survey of Japan-   43
+INTERNATIONAL & OUTREACH ACTIVITIES                                          国際・アウトリーチ活動
+
+
+
+
+  Joining Hands with the World
+  世界と手を携えて
+
+  Cooperation and competition, and understanding                              「協力と競争」と「ニーズの理解」
+  others’ needs                                                                 地質調査総合センターは、海外の地質調査機関との協力
+    GSJ recognizes that cooperation with overseas geological                   を重点課題としています。産業技術総合研究所の中でも、最
+  research organizations is a priority issue. Our international research
+                                                                               も活発に国際活動を行っているといえるでしょう。
+  activities include bilateral and multilateral cooperation. The latter is
+  implemented within the framework of international organizations or            私たちが行っている国際活動には、海外の研究機関と 1
+  consortia.                                                                   対 1 の連携を行う「二国間研究協力」と、国際的な組織・コ
+    We are promoting bilateral research cooperation with a                     ンソーシアム等の下での「多国間研究協力」があります。
+  number of overseas geological institutes under a memorandum                   二国間協力では、現在、海外の多くの地質調査関連研究
+  of understanding. In cooperation with geological institutes in the
+  so-called industrialized nations, we are developing innovative
+                                                                               機関と研究協力覚書を締結し、研究協力を進めています。そ
+  survey and analysis techniques applicable to research in such                のうち、いわゆる先進国の地質調査所とは、主に、地震・津
+  ÀHOGVDVHDUWKTXDNHWVXQDPLDQGYROFDQLFKD]DUGDVVHVVPHQWWKH           波、火山災害、地熱資源開発、二酸化炭素地中貯留などに
+  GHYHORSPHQW RI JHRWKHUPDO UHVRXUFHV DQG &22 geological storage.        おける先進的な調査技術・解析技術に関する研究協力を行っ
+  Through many years of partnership, we have built solid relationships
+                                                                               ています。長年の研究者どうしの交流を通じて信頼関係を築
+  and mutual trust, on the basis of which we cooperate in developing
+  new techniques, at times competing with one another.                         き、時には互いに競争しながら新技術の開発を進めています。
+
+
+
+
+                          Technical training on coastal geology and coastal management (March 2013, Malaysia).
+
+
+
+44       GSJ -Geological Survey of Japan-
+                           MRAM, MME Mongolia
+    GBA Austria                                      CGS China
+                                                                     GSC Canada
+                                                         KIGAM Korea
+BRGM France
+
+
+                                                         Geological Survey
+                            CCOP (E&SE Asia)             of Japan (GSJ)
+INGV Italy                  14 member countries                                                             USGS USA
+                                                             LBNL, LANL USA
+
+                                                         NCKU Taiwan
+                          DGSE Myanmar                    VAST Vietnam
+    MTA Turkey
+                                                                           SEGEMAR Argentina
+                                DMR Thailand
+                                                                                                                 DNPM Brazil
+   CGS South Africa                   GA Indonesia               GNS New Zealand
+
+
+
+
+             Various types of
+
+
+             International
+             Cooperation                                                  The Geological Survey of Japan
+             and Partnership                                               *6-  VSHFLDOL]HV LQ HYHU\ ÀHOG RI
+                                                                          earth science. By making the best use
+                                                                          of its comprehensive capacity, GSJ
+                                                                          promotes international cooperation
+                                                                          ZLWKRWKHUUHVHDUFKLQVWLWXWHVDURXQG
+                                                                          WKHZRUOG
+             さまざまな形の                                                      Shinji Takarada
+                                                                          Caldera Volcano Research Group
+
+
+             国際                                                           Research Institute of Earthquake and Volcano
+                                                                          Geology
+
+
+
+
+             連携・協力
+                                                                          地質調査総合センターには、「地球科学の総
+                                                                          合力」があります。この力を活かし、世界各
+                                                                          国の研究機関と国際協力を進めていきます。
+
+                                                                          宝田 晋治
+                                                                          活断層・火山研究部門           大規模噴火研究グループ
+
+
+
+
+                                                                              GSJ -Geological Survey of Japan-    45
+INTERNATIONAL & OUTREACH ACTIVITIES                                            国際・アウトリーチ活動
+
+
+
+
+    In cooperating with the so-called developing nations, we try to              また、いわゆる新興国などとの二国間協力では、相手国に
+  XQGHUVWDQG WKH VFLHQWLÀF DQG WHFKQLFDO QHHGV RI RXU FRXQWHUSDUWV     おける調査・研究のニーズを正しく把握するように努め、また、
+  DQGWKHVFLHQWLÀFLVVXHVWKDWZHDW*6-VKRXOGWDFNOH7KURXJKMRLQW
+                                                                                日本の地質調査機関として実施すべき研究課題を明確にしま
+  activities such as geological surveys, we provide cooperation in human
+  resource development and the compilation of geological information            す。そして、共同して地質調査などを行うことにより、相手
+  for resource development and natural disaster mitigation.                     国での資源開発や自然災害軽減などのための地質情報整備・
+                                                                                人材育成のための協力を行っています。
+  Systematic implementation of international
+  cooperation                                                                   国際的・組織的に進めていく
+     7KH DFWLYLWLHV RI WKH &RRUGLQDWLQJ &RPPLWWHH IRU *HRVFLHQFH
+  3URJUDPPHVLQ(DVWDQG6RXWKHDVW$VLD &&23 DUHW\SLFDOH[DPSOHV             私たちが進める国際活動の一つに、    「CCOP（東・東南ア
+  RI RXU PXOWLODWHUDO FRRSHUDWLRQ &&23 LV DQ LQWHUJRYHUQPHQWDO         ジア地球科学計画調整委員会）    」があります。CCOP は、東・
+  RUJDQL]DWLRQ,WVREMHFWLYHVDUHWRHQFRXUDJHHFRQRPLFGHYHORSPHQW           東南アジア地域における経済発展と生活レベルの向上を目的
+  and improve quality of life in East and Southeast Asia through its
+                                                                                として、地球科学分野のプロジェクトやワークショップなどを
+  SURMHFWVDQGZRUNVKRSVLQWKHÀHOGRIHDUWKVFLHQFH
+     &&23ZDVHVWDEOLVKHGZLWKRQO\IRXUPHPEHUFRXQWULHVLQ             推進する政府間機関です。
+  $IWHU D KDOI FHQWXU\ LW QRZ KDV  PHPEHU FRXQWULHV 1R RWKHU     CCOP の設立は 1966 年です。当初、４カ国でスタートし
+  international research organization has such a long history in the            た組織は、約 50 年を経過して 14 カ国の参加にまで拡大し
+  ÀHOG RI HDUWK VFLHQFH *6- KDV DVVXPHG OHDGHUVKLS RI &&23 VLQFH    ました。これほどまでに長い歴史をもつ地球科学系の国際研
+  the organization was established. We are currently promoting
+  VHYHUDO SURMHFWV XQGHU &&23 QDPHO\ WKH FUHDWLRQ RI JURXQGZDWHU
+                                                                                究機関は他に類をみません。日本は設立以来、この活動を
+  HQYLURQPHQWPDSVRIWKHPDMRUSODLQVRI6RXWKHDVW$VLDDVWXG\RI           牽引してきました。現在、日本が提案するプロジェクトとして、
+  WKHJHRORJLFDOHQYLURQPHQWRIFRDVWDODUHDVDQGWKHHVWDEOLVKPHQWRI        東南アジアの主な平野の水文環境図の作成、沿岸域の地質
+  an online system for sharing geological data on member countries.             環境の調査、CCOP 加盟国が出版する地質情報をウェブ上
+     6LQFHZHKDYHDOVREHHQFRRSHUDWLQJZLWKRWKHU$VLD3DFLÀF
+                                                                                で共有するシステムの構築などを行っています。
+  FRXQWULHVLQWKHDFWLYLWLHVRI$VLD3DFLÀF5HJLRQ*OREDO(DUWKTXDNH
+  DQG9ROFDQLF(UXSWLRQ5LVN0DQDJHPHQW *(9(5 DQLQWHUQDWLRQDO              また、地質調査総合センターの提案によって活動を開始し
+  SURMHFW WKDW ZH LQLWLDWHG 7KH SURMHFW LQFOXGHV FRPSLODWLRQ DQG      た国際プロジェクト「G-EVER」では、2012 年からアジア・
+  improvement of seismic and volcanic data, hazard information                  太平洋地域を中心に地震・火山災害リスク評価のための地震・
+  sharing, and international standardization of earthquake and                  火山情報のデータ整備、ハザード情報の共有化、国際標準
+  volcanic information to assess the risks of earthquake and volcanic
+                                                                                化を行っています。2011 年の東北地方太平洋沖地震を受け
+  KD]DUGV $V D UHVSRQVH WR WKH  *UHDW 7RKRNX (DUWKTXDNH
+  SURMHFWV VXFK DV WKH ULVN DVVHVVPHQW RI ODUJH HDUWKTXDNHV DQG       て、「巨大地震のリスク評価」や「巨大噴火のリスク評価」等
+  YROFDQLFHUXSWLRQVDUHEHLQJFRQGXFWHGV\VWHPDWLFDOO\E\*(9(5LQ           を国際的・組織的に進めています。
+  cooperation with other foreign organizations. GSJ is the core player           その他、G-EVER では、シミュレーションシステムを活用し
+  LQWKHVHLQWHUQDWLRQDOSURMHFWV                                              た「火山災害予測支援システム」の開発や、    「アジア太平洋
+                                                                                地域地震火山災害図プロジェクト」を進めています。地質調
+                                                                                査総合センターは、こうした国際プロジェクトの中核を担って
+                                                                                います。
+
+
+
+
+  Left: Workshop on groundwater resources management (February 2013, Vietnam).
+  Right: $VLD3DFLÀFUHJLRQHDUWKTXDNHDQGYROFDQLFKD]DUGLQIRUPDWLRQV\VWHPGHYHORSHGE\*(9(5
+
+
+
+46       GSJ -Geological Survey of Japan-
+Left:0LQHUDO /LEHUDWLRQ $QDO\]HU 7KH V\VWHP LV XVHG WR DQDO\]H RUHV E\ XVLQJ DQ HOHFWURQ PLFURVFRSH ZLWK DQ HQHUJ\ GLVSHUVLYH
+        VSHFWURPHWHU,WUDSLGO\FDOFXODWHVVWDWLVWLFGDWDVXFKDVWKHVSHFLHVDQGJUDLQVL]HRIFRQVWLWXHQWPLQHUDOV
+Right:([SORUDWLRQGULOOLQJLQ6RXWK$IULFD7KHGULOOLQJLVDVVHVVLQJWKHJUDGHDQGGLVWULEXWLRQRIDQHZO\IRXQGKHDY\UDUHHDUWKVGHSRVLW
+
+
+
+
+Preparing for a recurrence of the critical                                     第 2、 第 3 のレアアース危機に備えて
+metal crisis                                                                    私たちは、海外の公的地質調査機関の情報を得ながら、
+   We are promoting research into critical metals by using information         レアメタル資源研究も進めています。
+provided by public geological survey organizations overseas.
+                                                                                レアメタル資源の研究は、現地調査、試料の分析・解析、
+   6WXGLHVRIPLQRUPHWDOUHVRXUFHVKDYHWKUHHSKDVHVH[SORUDWLRQ
+HYDOXDWLRQRIRUHVDPSOHVDQGEHQHÀFLDWLRQWHVWLQJ,IWKLQJVGRQ·WJR       選鉱試験の３段階に分かれています。この 3 段階のステップ
+well in any of these phases, the mineral deposit is left undeveloped.          が成功しなければ、レアメタル鉱山としては開発できません。
+2XUSUHYLRXVVWXGLHVKDYHUHYHDOHGWKDW6RXWK$IULFD·VFULWLFDOPHWDO         これまでの調査研究の結果、特に南アフリカにおいて、南ア
+GHSRVLWVZKLFKZHUHGLVFRYHUHGE\*6-DQG6RXWK$IULFD·V&RXQFLO             フリカ地質調査所と共同で発見したレアアース資源が有望で
+for Geoscience, are particularly promising. Drilling to determine the
+SRWHQWLDOTXDQWLW\RIWKHUHVRXUFHVDVZHOODVEHQHÀFLDWLRQWHVWLQJLV
+                                                                               あることが判明しています。そのため、現在、資源賦存量を
+currently under way.                                                           調べるための掘削調査や選鉱試験を行っているところです。
+   0LQRU PHWDOV DUH FULWLFDO IRU WRGD\·V KLJKWHFK LQGXVWULHV \HW     レアメタルは、今日のハイテク産業を支える資源でありなが
+they are maldistributed and their prices are unstable owing to their           ら、その産出量が少ないために価格が安定せず、そして生産
+VPDOOSURGXFWLRQRXWSXWV)RUH[DPSOHIURPWRWKHSULFH
+                                                                               が特定の国に偏っています。実際、2009 年から 2012 年に
+of minor metals required for the manufacture of high-performance
+magnets soared several tenfold. The supply structure of rare earth             かけて、 第一次レアアース危機 が勃発し、高性能磁石の製
+elements remains unstable. In the case of many of these elements,              造などに必要なレアアースの価格が何十倍にも高騰しました。
+including tungsten, lithium, and niobium, more than half of the                 現在でも、レアアースの不安定な供給構造はまったく変わっ
+ZRUOG·VFRQVXPSWLRQLVVXSSOLHGE\RQHFRXQWU\:HLQWHQGWRFRQGXFW          ていません。タングステン、リチウム、ニオブのように、世
+VXUYH\VDQGUHVHDUFKWRSUHSDUHIRUWKHQH[WFULWLFDOPHWDOFULVLV
+                                                                               界の消費量の 5 割以上が 1 国から供給されているレアメタ
+                                                                               ルも数多くあります。私たちは、第 2、第 3 のレアアース危
+                                                                               機に備えて、これからも調査研究を進めていきます。
+
+
+
+
+                                                                                                      GSJ -Geological Survey of Japan-       47
+     Outreach
+     Activities
+     to Disseminate Geological Information
+
+
+
+
+ 地質情報の発信
+
+
+ アウトリーチ
+ 活動
+
+
+48   GSJ -Geological Survey of Japan-
+                                         INTERNATIONAL & OUTREACH ACTIVITIES                                    国際・アウトリーチ活動
+
+
+
+
+Communicate Clearly, 「わかりやすく」伝える
+Reinforce Communicator 「伝え手」も増やす
+Storing physical evidence on geological                                     「地質の調査」の物証を未来に残す
+surveys for future research                                                  地質標本館では、地質調査総合センターに所属する 200
+  One of the roles of the Geological Museum is to introduce the
+                                                                            人以上の研究者の研究成果を各種行事を通してわかりやすく
+research results of the Geological Survey of Japan, which has more
+than 200 scientists, to the public. Long-term storage of geological         紹介する役割を担っています。そして、調査や研究の成果に
+specimens, which are part of our research outcomes, is another.             あたる地質標本の長期保管も行っています。
+  Most of the specimens are in the form of physical evidence                 保管標本の多くは、地質図や様々な研究の物的証拠ともな
+of geological mapping and studies. They are provided to other               るものです。これらの標本は所内外の研究素材としても２次
+researchers within and outside AIST as research materials, and they
+have supported many geological studies. They have also been used in
+                                                                            使用され、地質学の多くの研究を支えています。その他にも、
+our outreach activities and are sometimes lent to other museums for         アウトリーチ活動の素材や所外博物館展示などに、保管標本
+exhibition. A database of these specimens is available on the Web.          が利用されることもあります。こうした標本の台帳データは、
+                                                                            WEB 公開されているデータベースから検索可能です。
+Nurturing interpreters of earth science
+   The Museum also works to raise public awareness of earth science,        地球科学の伝え手を育む
+holding in-museum fossil-replica-making activities, special exhibition
+and cooperating in external events all over Japan.                           地球科学の啓発活動も地質標本館の役割です。特別展や
+   Fostering more interpreters of earth science is key to further           化石レプリカ作りなどのイベントを地質標本館内で行うととも
+GLVVHPLQDWLQJ RXU VFLHQWLÀF RXWFRPHV 7R PHHW WKLV REMHFWLYH ZH   に、国内各地の関連イベントにも協力しています。
+actively promote geological events such as Geology Day and the
+                                                                             地球科学の研究成果を社会に伝えるためには、その「伝え
+Geological Information Exhibition, and we support science in the
+form of Geopark initiatives in Japan. Our goals are to have local           手」を増やすことが重要です。そのために、 「地質の日」
+                                                                                                      「地
+museums and various organizations spread earth science knowledge            質情報展」の活動を進め、 「ジオパーク」の活動にも学術面
+in an easy-to-understand manner and to familiarize more people with         から協力しています。各地の博物館や各種団体が地球科学を
+earth science.                                                              わかりやすく伝えられるように、そして、多くの人が地球科学
+                                                                            に親しめるように、支援を続けます。
+
+
+
+
+Left: Boring-core storage. About 45,000 m of core samples investigated by GSJ are kept here for the long term.
+Right: Geological Exhibition, Kagoshima 2014. The Geological Exhibition is held for the public once a year all over the country.
+
+
+
+
+                                                                                               GSJ -Geological Survey of Japan-    49
+PUBLICATIONS            情報配信
+
+
+
+
+  Publications
+      Geoinformation Service Center at the Geological Survey of
+  Japan (GSJ) publishes its outcomes both in print and electronic
+  format: geological maps of land and sea, earth science maps and
+  databases on volcanoes, earthquakes and active faults, resources,
+  geophysics, environment, geochemistry, etc. For details, please
+  refer to the Catalogue of Geological Maps at https://www.gsj.jp/
+  Map/index_e.html.
+      Materials and reports of our survey and research are also open
+  to the public. Other databases* of our outcomes are available at
+  https://www.gsj.jp/en/database/index.html.
+      They are used in many areas such as civil engineering,
+  construction, disaster prevention, resource development,
+  environmental protection, and others, not just for academic purpose.
+
+    地質情報基盤センターでは、陸域・海洋の各種地質図、火山、地震・活断
+  層、資源、地球物理、環境地質、地球化学等、各種地質関連データをまとめ
+  た各種地球科学図や地球科学データ集の出版を、紙・電子媒体で行っていま
+  す。出版物の詳細については地質図カタログ（https://www.gsj.jp/Map/
+  index.html）をご覧下さい。また、調査・研究によって得られた知見・情報
+  などの報告集や、研究成果の基となったデータ・原図・資料類等も公開して
+  います。さらに、ウェブサイト (https://www.gsj.jp/researches/geodb/
+  index.html) を通じて研究成果を発信する地質情報データベース * の公開を
+  行っています。
+    これらは学術研究資料としてのみならず、自然災害軽減のための重要な情
+  報源や、土木建築・防災・資源開発・環境対策分野などにおいてもさまざま
+  な目的で広く利用されています。
+
+
+
+
+50      GSJ -Geological Survey of Japan-
+Geoinformation Database & GeomapNavi
+    Geoinformation Service Center maintain web database               地質情報基盤センターでは、研究成果をウェブ発信
+which distribute our research outcome. In consideration              するデータベースの整備も行っております。公開に当
+of users’ conveniences, open license is adopted for the              たっては利用者の利便性を考慮し、オープンライセン
+database.                                                            スを採用しています。
+    $OVR LQWHUQDWLRQDO VWDQGDUGL]DWLRQ LQ WKH ÀHOG RI         また、地理標準に関する国際標準規格にも準拠した
+digital geographic information is employed for the                   形式で公開することで、他機関のデータとの統合利用
+database to provide an environment which enables to                  も容易な環境を提供しています。スマートフォン向けに
+integrate usage with other geo-data maintained by other              対応した配信やオフライン対応を行っているデータベー
+organization. Some database works on smart phones or
+                                                                     スもあります。
+off-line basis as well.
+                                                                      さらに、 地 質 情 報 の 活 用を増やすことを目的に、
+    GSJ provides not only its database but also a geology
+                                                                     GSJ が公開している地質情報表示システム地質図 Navi
+information display system named “GeomapNavi”,
+for the purpose of increasing practical use of geology               も公開中です。これまで整備してきた多くの地質図を
+information. Our research outcome and other geo-data                 表示すると共に、他機関の各種データも重ねて表示す
+maintained by other organization can overlay on this                 ることができます。このシステムも PC やタブレット端
+system. “GeomapNavi” works on PC and tablets and so on.              末など多くの情報機器から利用可能です。
+
+
+
+
+                                          Three core technologies of GeomapNavi.
+
+
+
+               GeomapNavi：https://gbank.gsj.jp/geonavi/?lang=en
+               地質図ナビ：https://gbank.gsj.jp/geonavi/
+WEB GEOLIS (Geological Literature Search)：https://gbank.gsj.jp/geolis/indexE.html
+               地質文献データベース：https://gbank.gsj.jp/geolis/
+
+
+                                                                                   GSJ -Geological Survey of Japan-   51
+ACCESS
+
+
+
+
+   Access Guide to GSJ
+   From Tsukuba Center
+   The nearest train station and bus terminal to GSJ are at Tsukuba Center. There are free shuttle bus
+   services from Tsukuba Center to AIST operated by AIST and the National Institute for Material
+   Science (NIMS) (weekdays only). You can also take a public bus or a taxi (15 min).
+
+   To Tsukuba Center
+    Train
+     Using the Tsukuba Express (TX)
+         Take a train (rapid service, 45 minutes; or semi-rapid service, 55 minutes) from Akihabara
+         Station and get off at Tsukuba Station (next to the Tsukuba Center Bus Terminal). Take exit
+         A3 for the AIST shuttle bus or public transport.
+     Bus
+      Using the Airport Bus from Narita
+         Take an airport bus bound for Tsuchiura Station (East Exit) and leaving from Narita Airport
+         Terminals 1 and 2. Get off at Tsukuba Center (about 100 minutes).
+      Using the Airport Bus from Haneda
+         Take a highway bus bound for Tsukuba Center from Haneda Airport International/Domestic
+         Terminal and get off at Tsukuba Center (about 2 hours), or get off at “Namiki Nichoume” bus
+         stop, just in front of AIST’s main gate.
+
+   From Tokyo Station to GSJ using the Highway Bus
+     Take a highway bus bound for Tsukuba Center (or Tsukuba University) and leaving from bus
+     terminal No. 2 near the Yaesu South Exit of JR Tokyo Station. Get off at "Namiki Nichome" bus
+     stop (70 minutes), just in front of AIST’s main gate.
+
+
+
+   Access Guide to FREA
+   The nearest Shinkansen (bullet train) station is Koriyama (1.5 hour from Tokyo). You can take a
+   bus (45 minutes) or a taxi (25 minutes) from Koriyama Station to FREA.
+
+     Bus from Koriyama Station to FREA
+      Take a bus going to “Seibu Kogyo Danchi” and leaving from pole No. 8 at Koriyama bus
+      terminal. Get off at the “Sansoken-mae” bus stop.
+
+
+
+
+52     GSJ -Geological Survey of Japan-
+◉ 編集        土屋 健（オフィス ジオパレオント）／
+            地質調査総合センター
+
+◉ DTP       小野寺佑紀（レカポラ編集舎）
+
+◉ 写真        安友康博／地質調査総合センター，
+            地質調査総合センター
+
+◉ 発行        国立研究開発法人 産業技術総合研究所
+            地質調査総合センター
+            〒 305-8567 茨城県つくば市東 1-1-1 中央第 7
+            https://www.gsj.jp/
+
+発行日         平成 29 年 7 月 1 日
+
+〇掲載内容の無断転載を禁じます。
+
+Published by
+Geological Survey of Japan, National Institute of
+Advanced Industrial Science and Technology
+AIST Central 7, 1-1-1 Higashi, Tsukuba 305-8567,
+Japan
+https://www.gsj.jp/
+
+July 2017
+

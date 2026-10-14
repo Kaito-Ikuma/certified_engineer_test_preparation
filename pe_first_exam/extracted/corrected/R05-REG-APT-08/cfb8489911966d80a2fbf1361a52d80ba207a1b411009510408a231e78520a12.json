@@ -1,0 +1,45 @@
+{
+  "stem": "組織リスクの特定、分析、評価と、評価後の対応の位置を区別する。",
+  "conditions": {
+    "判断方向": "各肢の理由に記録。組合せ・個数問題では記述の真偽と回答番号を区別する。",
+    "原典照合": "全5候補、表の列順、否定、条件、規格番号、法令時点を23原典画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "分析・評価・対応・管理",
+      "verdict": "不適合",
+      "reason": "アで特定を欠き、対応をアセスメント内へ入れ、エに管理を置く点が違う。"
+    },
+    "2": {
+      "value": "特定・分析・評価・対応",
+      "verdict": "原典図に適合・規格全文保留",
+      "reason": "ア特定、イ分析、ウ評価、エ対応で図の順序とアセスメントの囲みに合う。"
+    },
+    "3": {
+      "value": "特定・評価・対応・管理",
+      "verdict": "不適合",
+      "reason": "分析が抜け、対応を評価と同じ囲み内へ入れる。"
+    },
+    "4": {
+      "value": "分析・特定・評価・対応",
+      "verdict": "不適合",
+      "reason": "事象を特定する前に分析する順序が違う。"
+    },
+    "5": {
+      "value": "分析・評価・特定・管理",
+      "verdict": "不適合",
+      "reason": "特定を最後に置き、対応を欠く。"
+    }
+  },
+  "figures": "原典の表又は図の矢印と列順を確認。元図は転載せず独自説明とする。",
+  "ambiguity": "原典図と全候補は確認済み。ISO公式公開説明は特定分析評価対応等の体系を確認できたが、JIS Q31000:2019本文全文への図・条項の直接照合は未完。",
+  "evidence": [
+    "extracted/pages/R05/aptitude/page_008.png"
+  ],
+  "question_id": "R05-REG-APT-08",
+  "source_file": "sources/R05/aptitude.pdf",
+  "source_page": "8",
+  "source_sha256": "3dee8906ad8be46592986fef01028424243f7e515af04979667524eed1f0a915",
+  "raw_text_sha256": "2037547ddd26d59ffb3292111e0e25b8efcc5b98ed5534788df1e487e0843df9",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

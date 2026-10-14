@@ -1,0 +1,19 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T10:42:05+09:00",
+  "paths": [
+    "generated/questions/basic/02_information_logic.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/basic/02_information_logic.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/basic/02_information_logic.tex": "757aee58a0752a01f1545a41e5ccddf34f21473651e8d94c95fac12a211f1831",
+    "generated/audit_summary.tex": "81e8d085ee8c2cdeca3e2fd07b304fedbd0e50d9bafbbdcefbc6e9545b21839b",
+    "generated/frequency_tables.tex": "cc1b55ed646d6b8f46652089edcb7e7426ebd90075af4c93fae2d8750f3954d9"
+  }
+}

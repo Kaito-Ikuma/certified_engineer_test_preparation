@@ -1,0 +1,16 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T23:42:03+09:00",
+  "paths": [
+    "data/question_relations.csv",
+    "extracted/logs/S7_029_relation_revision.json"
+  ],
+  "existed": {
+    "data/question_relations.csv": true,
+    "extracted/logs/S7_029_relation_revision.json": false
+  },
+  "sha256": {
+    "data/question_relations.csv": "c5d9276fe62ae6b5d2feb9c0d0208f65c3cbd4b0beabf79765bb91ce5a44553d",
+    "extracted/logs/S7_029_relation_revision.json": "e30e2b5053fefbae89ba0ecb4e10840db5471c10dccf1a6d68e0fdff393eb52a"
+  }
+}

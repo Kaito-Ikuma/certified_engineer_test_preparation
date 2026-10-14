@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-09T20:59:27+09:00",
+  "paths": [
+    "extracted/logs/statistics_summary.json"
+  ],
+  "existed": {
+    "extracted/logs/statistics_summary.json": true
+  },
+  "sha256": {
+    "extracted/logs/statistics_summary.json": "fa462595a0ecb2cdf783b5eca2089ebb3f6a9a36f7a59a071a3ab3f41f344e31"
+  }
+}

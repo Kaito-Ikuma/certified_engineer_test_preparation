@@ -1,0 +1,46 @@
+{
+  "stem": "PDCAの段階名と、それぞれの目的を照合する。",
+  "conditions": {
+    "判断方向": "最も適切な記述又は組合せを選ぶ",
+    "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+    "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+  },
+  "choices": {
+    "1": {
+      "value": "誤誤誤正",
+      "verdict": "不適切",
+      "reason": "PlanとDoは正しく、AchieveはActと違う。"
+    },
+    "2": {
+      "value": "誤正正正",
+      "verdict": "不適切",
+      "reason": "Planを誤、ChooseとAchieveを正としている。"
+    },
+    "3": {
+      "value": "正正正誤",
+      "verdict": "不適切",
+      "reason": "Chooseを正としている点が違い、CはCheckである。"
+    },
+    "4": {
+      "value": "正正誤誤",
+      "verdict": "適切",
+      "reason": "PlanとDoが正しく、ChooseとAchieveはCheckとActに対応しない。"
+    },
+    "5": {
+      "value": "正正誤正",
+      "verdict": "不適切",
+      "reason": "Achieveを正としている点が違い、AはActである。"
+    }
+  },
+  "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/basic/page_002.png"
+  ],
+  "question_id": "R07-REG-BASIC-1-2",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "2",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "a61c0463fb4edf8d2af09d61b1ecf60b22e04249dd37c3d77bb9d7c294608ecf",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

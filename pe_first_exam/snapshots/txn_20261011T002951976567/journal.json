@@ -1,0 +1,19 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T00:29:51+09:00",
+  "paths": [
+    "data/topic_statistics.csv",
+    "data/concept_statistics.csv",
+    "extracted/logs/statistics_summary.json"
+  ],
+  "existed": {
+    "data/topic_statistics.csv": true,
+    "data/concept_statistics.csv": true,
+    "extracted/logs/statistics_summary.json": true
+  },
+  "sha256": {
+    "data/topic_statistics.csv": "a9177d67fe8f556e86524ea68d30139ca366123b4e4790fd96e984569d536eaf",
+    "data/concept_statistics.csv": "2bc1ce5804fe4fa6e70ea64d6f8561858975ab0b3e5e2831b533e42bd1484ec9",
+    "extracted/logs/statistics_summary.json": "6eab40a498db85a4d7827762962925f0741be66f90fcc77e3c5c02f02ae3e4b6"
+  }
+}

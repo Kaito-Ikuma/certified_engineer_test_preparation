@@ -1,0 +1,45 @@
+{
+  "stem": "腐食の定義とアルミニウムの不動態。",
+  "conditions": {
+    "確認": "原典26画像で五肢・図表と条件を照合。",
+    "対象": "化学的・電気化学的腐食、局部腐食、皮膜、Crを含むステンレス。"
+  },
+  "choices": {
+    "1": {
+      "value": "Al酸化膜で不動態化",
+      "verdict": "条件内で適切",
+      "reason": "Al表面の酸化物が保護膜として働く。膜を壊す環境での腐食まで否定しない。"
+    },
+    "2": {
+      "value": "Cu5%以上でステンレス",
+      "verdict": "不適切",
+      "reason": "Cuをこの割合含むことが定義ではない。基本となるのはCr。"
+    },
+    "3": {
+      "value": "温度依存なし",
+      "verdict": "不適切",
+      "reason": "温度は反応・拡散・皮膜の挙動へ影響する。"
+    },
+    "4": {
+      "value": "局部腐食なし",
+      "verdict": "不適切",
+      "reason": "孔食・すきま腐食などの局部腐食がある。"
+    },
+    "5": {
+      "value": "力学的減量",
+      "verdict": "不適切",
+      "reason": "力学的な摩耗と腐食の化学・電気化学的反応を区別する。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_014.png"
+  ],
+  "question_id": "R05-REG-BASIC-4-4",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "840e9718cf69b187131174a38567f28e1de8383ac9d07a376ea67e4d7a53d5fe",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "2012開始のFITの原則と拒否事由。",
+  "conditions": {
+    "時点": "平成26年度に指定された資料・制度。",
+    "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "五種類の再エネ",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "大臣が年度価格設定",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "電力量に応じ賦課",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "地域負担差を調整",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "5": {
+      "value": "接続は一切拒否不可",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "2013METI資料の検索本文で正当拒否事由を確認したがPDF全文取得は失敗。出題時価格決定と対象水力条件の詳細、法令履歴は追加照合。",
+  "evidence": [
+    "extracted/pages/H26/basic/page_017.png"
+  ],
+  "question_id": "H26-REG-BASIC-5-3",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "541faae4236fac7c562520643d46c357a721693c486bca2398ccf1bbff592eb4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "再帰的な生成規則が表す6文字の二進記号列を選ぶ。",
+  "conditions": {
+    "規則": "S ::= 01 | 0S1。|は生成規則の選択。",
+    "対象": "整数への数値変換ではなく、0と1の列の生成。"
+  },
+  "choices": {
+    "1": {
+      "value": "000000",
+      "verdict": "条件に一致しない候補",
+      "reason": "規則の基底01に1があり、1を含まない列は生成できない。"
+    },
+    "2": {
+      "value": "000111",
+      "verdict": "条件に一致する候補",
+      "reason": "S→0S1→00S11→000111と生成できる。"
+    },
+    "3": {
+      "value": "001011",
+      "verdict": "条件に一致しない候補",
+      "reason": "0と1は同数だが、1の後に0が出るため規則が作る順序に反する。"
+    },
+    "4": {
+      "value": "010101",
+      "verdict": "条件に一致しない候補",
+      "reason": "01の単なる繰返しは、0で囲んだ内側が再びSになる規則では作れない。"
+    },
+    "5": {
+      "value": "011111",
+      "verdict": "条件に一致しない候補",
+      "reason": "0と1の個数が異なり、両端へ1個ずつ付ける規則の不変量に反する。"
+    }
+  },
+  "figures": "問題幹・数値・記号・5肢を画像確認。図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/basic/page_005.png"
+  ],
+  "question_id": "H24-REG-BASIC-2-2",
+  "source_file": "sources/H24/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+  "raw_text_sha256": "f4f6ff521d2bb8f59d60b108dcac6ce91472e9c3921ccc080779f9cfbbaefd02",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

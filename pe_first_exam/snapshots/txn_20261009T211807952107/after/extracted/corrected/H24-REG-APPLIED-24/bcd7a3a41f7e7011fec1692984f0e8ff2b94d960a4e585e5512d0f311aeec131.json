@@ -1,0 +1,45 @@
+{
+  "stem": "偏光顕微鏡を用いる同定が最も難しい鉱物を選ぶ。",
+  "conditions": {
+    "方向": "偏光顕微鏡による同定が最も難しいもの。",
+    "観察法": "原典に透過光の明記なし。通常の岩石薄片の透過観察として解釈する。"
+  },
+  "choices": {
+    "1": {
+      "value": "黄鉄鉱",
+      "verdict": "条件に一致",
+      "reason": "不透明な硫化鉱物である。通常の透過薄片では内部の光学性を調べにくく、反射光観察等を要する。"
+    },
+    "2": {
+      "value": "普通角閃石",
+      "verdict": "条件に不一致",
+      "reason": "通常の薄片では透過光による多色性、劈開、消光などを観察できる。"
+    },
+    "3": {
+      "value": "単斜輝石",
+      "verdict": "条件に不一致",
+      "reason": "通常の薄片では屈折率、劈開、消光などが同定の手掛かりとなる。"
+    },
+    "4": {
+      "value": "黒雲母",
+      "verdict": "条件に不一致",
+      "reason": "通常の薄片で強い多色性と一方向の劈開を観察できる。"
+    },
+    "5": {
+      "value": "ジルコン",
+      "verdict": "条件に不一致",
+      "reason": "小粒でも透明な薄片で高い屈折率・複屈折等を観察できる。"
+    }
+  },
+  "figures": "図なし。原典頁画像で選択方向、観察条件、鉱物名と全5肢を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_008.png"
+  ],
+  "question_id": "H24-REG-APPLIED-24",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "cba07e3441cf60e47e2e30b2f50a3f843351b8666cb062d4263b096294e0d545",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

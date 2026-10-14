@@ -1,0 +1,73 @@
+{
+  "time": "2026-10-11T00:37:39.205889+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_019_information",
+  "question_ids": [
+    "H24-REG-BASIC-2-3",
+    "H28-REG-BASIC-2-1",
+    "H24-REG-BASIC-2-4",
+    "H26-REG-BASIC-2-3",
+    "R05-REG-BASIC-2-3",
+    "H28-REG-BASIC-2-5",
+    "R06-REG-BASIC-2-4",
+    "R01-REG-BASIC-2-4",
+    "R02-REG-BASIC-2-1",
+    "R05-REG-BASIC-2-4",
+    "H28-REG-BASIC-2-4",
+    "R02-REG-BASIC-2-6",
+    "R03-REG-BASIC-2-3",
+    "R07-REG-BASIC-2-5",
+    "R07-REG-BASIC-2-2"
+  ],
+  "source_images": 12,
+  "initial_independent_matches": 15,
+  "corrected_verified": 15,
+  "partial": 0,
+  "related_pairs_added": 6,
+  "related_pairs_total": 93,
+  "primary_references_added": 10,
+  "concepts_added": 3,
+  "concept_total": 134,
+  "canonical_counts": {
+    "recorded_at": "2026-10-11T00:37:39.205889+09:00",
+    "registered": 1270,
+    "classification_verified": 402,
+    "summary_verified": 365,
+    "corrected_verified": 343,
+    "corrected_partial": 22,
+    "solution_drafts": 365,
+    "solution_verified": 0,
+    "manual_required": 927,
+    "subject_drafts": {
+      "BASIC": 125,
+      "APT": 76,
+      "APPLIED": 164
+    }
+  },
+  "theory_sections_added": 10,
+  "labeled_theory_sections": 9,
+  "pdf": {
+    "pages": 562,
+    "bytes": 2699826,
+    "visual_review_pages": [
+      43,
+      44,
+      45,
+      46,
+      60,
+      80,
+      84,
+      90
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draft・初期監査・1270ラベル監査成功。数学命令equiv/pmodを追加し24回帰成功17.786秒。",
+  "risks": [
+    "キャッシュの主記憶時間を総時間か追加時間か明示し両模型でも同じ候補になることを確認。",
+    "Astra未査読。905問の解説未作成。"
+  ],
+  "next": "S7_020環境・持続可能性18問。原典残り6頁を読み独立解答保存、公式と一次制度資料の比較後に執筆。Checkpoint2未到達。"
+}

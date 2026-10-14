@@ -1,0 +1,45 @@
+{
+  "stem": "Pauliのスピン応答と軌道反磁性を区別する。",
+  "conditions": {
+    "原典確認": "S7_051の11原典画像で13問の全五肢・指数・単位・否定を照合。",
+    "対象": "Pauliのスピン応答と軌道反磁性を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "室温の鉄は強磁性",
+      "verdict": "代表的条件で適切",
+      "reason": "通常圧・通常の純Feは室温で強磁性。結晶構造転移と磁気秩序の転移を区別する。"
+    },
+    "2": {
+      "value": "Meissner効果による完全反磁性",
+      "verdict": "条件・語義を留保",
+      "reason": "Meissner状態では磁束を排除する。臨界磁場・温度以下の条件が必要で、II型の混合状態では量子化磁束が侵入する。"
+    },
+    "3": {
+      "value": "反強磁性から常磁性へのNéel温度",
+      "verdict": "代表的条件で適切",
+      "reason": "反平行の長距離秩序が失われる温度。強磁性のCurie温度とは区別する。"
+    },
+    "4": {
+      "value": "Curie点以上で常磁性",
+      "verdict": "代表的条件で適切",
+      "reason": "通常の強磁性物質ではCurie温度を超えると自発磁化秩序を失う。"
+    },
+    "5": {
+      "value": "Pauli常磁性が原子核まわりの軌道運動",
+      "verdict": "不適切",
+      "reason": "伝導電子のスピンに外場が作用し、Fermi統計を反映した応答となる。自由電子の軌道応答はLandau反磁性として区別する。"
+    }
+  },
+  "figures": "図表問題ではない。原典画像は照合用で転載しない。",
+  "ambiguity": "肢2の完全反磁性はMeissner状態の条件付き。II型超伝導の混合状態を含めて全状態へ断定しない。",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_003.png"
+  ],
+  "question_id": "R01-REG-APPLIED-08",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "9db1ef088a6289e40b93b9af4b0bb94b637d3cf9386b29f560ce7075a7c3136f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

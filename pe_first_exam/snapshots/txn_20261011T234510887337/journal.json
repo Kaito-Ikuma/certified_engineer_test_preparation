@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T23:45:10+09:00",
+  "paths": [
+    "extracted/logs/audit_metrics.json"
+  ],
+  "existed": {
+    "extracted/logs/audit_metrics.json": true
+  },
+  "sha256": {
+    "extracted/logs/audit_metrics.json": "ba0a89e8c4a90522e24f8eb23d9751547b759d75382c489f81b6d00d59400797"
+  }
+}

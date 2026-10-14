@@ -1,0 +1,46 @@
+{
+  "stem": "パラメータを含む上三角行列の逆行列を選ぶ。",
+  "conditions": {
+    "行列A": "\\((1,a,a^2;0,1,a;0,0,1)\\)",
+    "条件": "\\(a\\neq0\\)の実数。",
+    "表記": "セミコロンで行を区切る。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\((1,-a,-a^2;0,1,-a;0,0,1)\\)",
+      "verdict": "条件に不一致",
+      "reason": "積の第1行第3列が−a²でゼロにならない。"
+    },
+    "2": {
+      "value": "\\((1,-a,0;0,1,-a;0,0,1)\\)",
+      "verdict": "条件に一致",
+      "reason": "上の非対角−aを打ち消し、第1行第3列も−a²+a²=0となる。"
+    },
+    "3": {
+      "value": "\\((1,a,0;0,1,a;0,0,1)\\)",
+      "verdict": "条件に不一致",
+      "reason": "第1行第2列と第2行第3列の符号が違う。"
+    },
+    "4": {
+      "value": "\\((1,0,-a^2;0,1,0;0,0,1)\\)",
+      "verdict": "条件に不一致",
+      "reason": "隣接する非対角aを打ち消す−aがない。"
+    },
+    "5": {
+      "value": "\\((1,-a,a^2;0,1,-a;0,0,1)\\)",
+      "verdict": "条件に不一致",
+      "reason": "積の第1行第3列がa²でゼロにならない。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/basic/page_008.png"
+  ],
+  "question_id": "R07-REG-BASIC-3-1",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "fd0513b8ca68669689af8c4d6dd6f41fb491bd6d95e6e3d645e5a9796cb411f2",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "2018発電比・2020太陽光費用と風速三乗。",
+  "conditions": {
+    "原典": "全五肢と否定方向・組合せ表を画像確認。",
+    "資料時点": "令和3年度の指定資料・統計年を保持し、後年値に置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "9/25/3",
+      "verdict": "適切・選択対象",
+      "reason": "独立に求めた組合せ 9/25/3 と一致する。"
+    },
+    "2": {
+      "value": "14/25/3",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 9/25/3 と異なる。"
+    },
+    "3": {
+      "value": "14/15/3",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 9/25/3 と異なる。"
+    },
+    "4": {
+      "value": "9/25/2",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 9/25/3 と異なる。"
+    },
+    "5": {
+      "value": "14/15/2",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 9/25/3 と異なる。"
+    }
+  },
+  "figures": "図の数値又は組合せ表を独自要約。原典画像は確認用のみ。",
+  "ambiguity": "当時の発電統計と調達価格委員会の2020設置単純平均の原表を追加照合。全規模毎年低下という表現は個別年の反例を排除しない。",
+  "evidence": [
+    "extracted/pages/R03/basic/page_023.png"
+  ],
+  "question_id": "R03-REG-BASIC-5-3",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "23",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "b23c93f60d1136a9123079b06f4bead4155631c532df9137e9ff38625d6b7cd5",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

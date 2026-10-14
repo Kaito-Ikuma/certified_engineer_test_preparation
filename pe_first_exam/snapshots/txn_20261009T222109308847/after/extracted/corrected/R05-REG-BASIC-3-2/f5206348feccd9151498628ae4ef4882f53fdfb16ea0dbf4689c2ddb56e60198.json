@@ -1,0 +1,45 @@
+{
+  "stem": "四分の一円領域でxの二重積分を求める。",
+  "conditions": {
+    "領域": "\\(0\\le x\\le1,0\\le y\\le\\sqrt{1-x^2}\\)",
+    "積分": "\\(\\int\\int_R x\\,dxdy\\)"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(\\pi/3\\)",
+      "verdict": "条件に不一致",
+      "reason": "xを重みにした積分は円の角度や単なる面積と異なる。"
+    },
+    "2": {
+      "value": "\\(1/3\\)",
+      "verdict": "条件に一致",
+      "reason": "積分x√(1−x²)を0〜1で評価した1/3に一致する。"
+    },
+    "3": {
+      "value": "\\(\\pi/2\\)",
+      "verdict": "条件に不一致",
+      "reason": "半円の面積に相当し領域・被積分関数が違う。"
+    },
+    "4": {
+      "value": "\\(\\pi/4\\)",
+      "verdict": "条件に不一致",
+      "reason": "四分の一円の面積であり、xという重みを落としている。"
+    },
+    "5": {
+      "value": "\\(1/4\\)",
+      "verdict": "条件に不一致",
+      "reason": "同じ領域でのxの平均を単に1/πと仮定する根拠はない。積分で求めると1/3である。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_009.png"
+  ],
+  "question_id": "R05-REG-BASIC-3-2",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "9",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "b30ef97971624e759fd5b416ab9336d9d50fc30c864292b99ff9cc0ca3ca9783",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

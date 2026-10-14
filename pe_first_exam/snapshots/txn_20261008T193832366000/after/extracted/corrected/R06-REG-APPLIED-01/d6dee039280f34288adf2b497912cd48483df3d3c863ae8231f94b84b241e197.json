@@ -1,0 +1,47 @@
+{
+  "stem": "静止衛星の地球中心からの距離を、地球質量と万有引力定数から評価する。",
+  "conditions": {
+    "Earth_mass_kg": 6e+24,
+    "G_N_m2_kg2": 6.7e-11,
+    "requested_distance": "from Earth centre",
+    "period_assumption": "Earth rotation; approximate 24 hours=86400 s"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(4.2\\times10^3\\) km",
+      "verdict": "不採用",
+      "reason": "地球中心からの円軌道半径約4.2×10⁷ m（4.2×10⁴ km）と一致しない。"
+    },
+    "2": {
+      "value": "\\(2.4\\times10^4\\) km",
+      "verdict": "不採用",
+      "reason": "地球中心からの円軌道半径約4.2×10⁷ m（4.2×10⁴ km）と一致しない。"
+    },
+    "3": {
+      "value": "\\(4.2\\times10^4\\) km",
+      "verdict": "採用",
+      "reason": "地球中心からの半径約4.2×10⁷ m=4.2×10⁴ kmと一致する。地表からの高度ではない。"
+    },
+    "4": {
+      "value": "\\(1.2\\times10^5\\) km",
+      "verdict": "不採用",
+      "reason": "地球中心からの円軌道半径約4.2×10⁷ m（4.2×10⁴ km）と一致しない。"
+    },
+    "5": {
+      "value": "\\(2.4\\times10^5\\) km",
+      "verdict": "不採用",
+      "reason": "地球中心からの円軌道半径約4.2×10⁷ m（4.2×10⁴ km）と一致しない。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_001.png"
+  ],
+  "question_id": "R06-REG-APPLIED-01",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "d7d9cee1c2203aa47cc7df159a01b03a5c93c81b131b797118456f32f8dfb66a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

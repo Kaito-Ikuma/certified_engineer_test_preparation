@@ -1,0 +1,1756 @@
+{
+  "batch_id": "S7_047_inorganic",
+  "reference_date": "2026-10-12",
+  "questions": [
+    {
+      "question_id": "H23-REG-APPLIED-11",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "希ガスの通常状態・外殻例外と放電を比較する。",
+      "summary": "希ガスの通常状態・外殻例外と放電を比較する。",
+      "conditions": {
+        "判断対象": "希ガスの通常状態・外殻例外と放電を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "空気中は化合物",
+          "verdict": "選ばない候補",
+          "reason": "通常の空気では単体原子で存在。"
+        },
+        "2": {
+          "value": "常温常圧で気体と液体",
+          "verdict": "選ばない候補",
+          "reason": "出題範囲のHeからRnは通常気体。"
+        },
+        "3": {
+          "value": "軽いほど低沸点・高反応",
+          "verdict": "選ばない候補",
+          "reason": "沸点傾向はよいが軽いほど反応性に富むは適切でない。"
+        },
+        "4": {
+          "value": "低圧放電で特有色",
+          "verdict": "選ぶ候補",
+          "reason": "励起原子の準位遷移の発光。"
+        },
+        "5": {
+          "value": "全て外殻8電子",
+          "verdict": "選ばない候補",
+          "reason": "Heの1s2は外殻2電子という例外。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_004.png"
+      ],
+      "core_concept": "希ガスの通常状態・外殻例外と放電を比較する。",
+      "required_knowledge": "希ガス原子の励起・脱励起が特有の放電色を与えるので4。",
+      "solution": "希ガス原子の励起・脱励起が特有の放電色を与えるので4。通常の空気中は単体、常温常圧で気体でありHe外殻は2。Xe化合物の存在から希ガスは一切反応しないとする逆の全称にも広げない。沸点の低さと化学的反応性は別の性質。",
+      "answer_reason": "希ガス原子の励起・脱励起が特有の放電色を与えるので4。通常の空気中は単体、常温常圧で気体でありHe外殻は2。Xe化合物の存在から希ガスは一切反応しないとする逆の全称にも広げない。沸点の低さと化学的反応性は別の性質。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前初回を不変JSON保存。単体気体放電色。He外殻2、軽い希ガス高反応は逆。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:noble"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_noble",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補から希ガスの通常状態・外殻例外と放電を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "inorganic_noble_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-10",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "stem": "希ガスの通常状態・外殻例外と放電を比較する。",
+      "summary": "希ガスの通常状態・外殻例外と放電を比較する。",
+      "conditions": {
+        "判断対象": "希ガスの通常状態・外殻例外と放電を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "空気中は化合物",
+          "verdict": "選ばない候補",
+          "reason": "通常の空気では単体原子で存在。"
+        },
+        "2": {
+          "value": "常温常圧で気体と液体",
+          "verdict": "選ばない候補",
+          "reason": "出題範囲のHeからRnは通常気体。"
+        },
+        "3": {
+          "value": "軽いほど低沸点・高反応",
+          "verdict": "選ばない候補",
+          "reason": "沸点傾向はよいが軽いほど反応性に富むは適切でない。"
+        },
+        "4": {
+          "value": "低圧放電で特有色",
+          "verdict": "選ぶ候補",
+          "reason": "励起原子の準位遷移の発光。"
+        },
+        "5": {
+          "value": "全て外殻8電子",
+          "verdict": "選ばない候補",
+          "reason": "Heの1s2は外殻2電子という例外。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/17_applied_science/page_004.png"
+      ],
+      "core_concept": "希ガスの通常状態・外殻例外と放電を比較する。",
+      "required_knowledge": "希ガス原子の励起・脱励起が特有の放電色を与えるので4。",
+      "solution": "希ガス原子の励起・脱励起が特有の放電色を与えるので4。通常の空気中は単体、常温常圧で気体でありHe外殻は2。Xe化合物の存在から希ガスは一切反応しないとする逆の全称にも広げない。沸点の低さと化学的反応性は別の性質。",
+      "answer_reason": "希ガス原子の励起・脱励起が特有の放電色を与えるので4。通常の空気中は単体、常温常圧で気体でありHe外殻は2。Xe化合物の存在から希ガスは一切反応しないとする逆の全称にも広げない。沸点の低さと化学的反応性は別の性質。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前初回を不変JSON保存。H23と全五命題一致、放電色。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:noble"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_noble",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補から希ガスの通常状態・外殻例外と放電を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "inorganic_noble_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-16",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "stem": "希ガスの単原子性とHeの電子例外を確認する。",
+      "summary": "希ガスの単原子性とHeの電子例外を確認する。",
+      "conditions": {
+        "判断対象": "希ガスの単原子性とHeの電子例外を確認する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "空気中は化合物",
+          "verdict": "選ばない候補",
+          "reason": "通常空気は単体。"
+        },
+        "2": {
+          "value": "1原子分子からなる",
+          "verdict": "選ぶ候補",
+          "reason": "通常の単体気体は単原子で2が適切。"
+        },
+        "3": {
+          "value": "常温常圧で気体と液体",
+          "verdict": "選ばない候補",
+          "reason": "出題範囲の通常単体は気体。"
+        },
+        "4": {
+          "value": "軽いほど低沸点・高反応",
+          "verdict": "選ばない候補",
+          "reason": "軽いほど高反応性とは言えない。"
+        },
+        "5": {
+          "value": "全て外殻8電子",
+          "verdict": "選ばない候補",
+          "reason": "Heは2で例外。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/17_applied_science/page_006.png"
+      ],
+      "core_concept": "希ガスの単原子性とHeの電子例外を確認する。",
+      "required_knowledge": "原典の1原子分子は単原子気体という意味で2を選ぶ。",
+      "solution": "原典の1原子分子は単原子気体という意味で2を選ぶ。共有結合した多原子分子ではない。Heの1s2とXeの化合物の例外を保持し、通常状態と極低温や特殊な分子種を混同しない。",
+      "answer_reason": "原典の1原子分子は単原子気体という意味で2を選ぶ。共有結合した多原子分子ではない。Heの1s2とXeの化合物の例外を保持し、通常状態と極低温や特殊な分子種を混同しない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前初回を不変JSON保存。希ガス通常単原子、He2例外で5不可。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:noble"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_noble",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補から希ガスの単原子性とHeの電子例外を確認する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "inorganic_noble_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-13",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "気体の水溶性・酸塩基・酸化還元を比較する。",
+      "summary": "気体の水溶性・酸塩基・酸化還元を比較する。",
+      "conditions": {
+        "判断対象": "気体の水溶性・酸塩基・酸化還元を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "H2は最軽量で難溶",
+          "verdict": "選ばない候補",
+          "reason": "通常の中性分子気体の同温同圧比較。"
+        },
+        "2": {
+          "value": "Cl2は黄緑・酸化・漂白",
+          "verdict": "選ばない候補",
+          "reason": "水中HOCl等の酸化作用。"
+        },
+        "3": {
+          "value": "NH3は易溶アルカリ/Haber–Bosch",
+          "verdict": "選ばない候補",
+          "reason": "NH3の塩基性とN2/H2の合成。歴史の初めての範囲は留保。"
+        },
+        "4": {
+          "value": "CO2で石灰水白濁/過剰で溶解",
+          "verdict": "選ばない候補",
+          "reason": "CaCO3生成後に炭酸水素イオンを伴って溶解する。"
+        },
+        "5": {
+          "value": "H2Sは腐卵臭・酸化性・硫化物沈殿",
+          "verdict": "選ぶ候補",
+          "reason": "通常の反応比較ではH2Sは還元剤、酸化性という語が不適切。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "最軽量は通常分子気体の同温同圧比較。NH3工業合成史の初めてという全称・全気体性状の原典当時全文は未照合。",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_005.png"
+      ],
+      "core_concept": "気体の水溶性・酸塩基・酸化還元を比較する。",
+      "required_knowledge": "H2SのSは−2で、例えばハロゲンへ電子を渡してSなどへ酸化される還元剤として扱う。",
+      "solution": "H2SのSは−2で、例えばハロゲンへ電子を渡してSなどへ酸化される還元剤として扱う。5が誤り。硫化物の沈殿はpHと溶解度積の別機構である。CO2+Ca(OH)2→CaCO3+H2O、さらにCO2と水で炭酸水素イオンを含む溶液となる。臭い・毒性と酸化還元性を同一視しない。",
+      "answer_reason": "H2SのSは−2で、例えばハロゲンへ電子を渡してSなどへ酸化される還元剤として扱う。5が誤り。硫化物の沈殿はpHと溶解度積の別機構である。CO2+Ca(OH)2→CaCO3+H2O、さらにCO2と水で炭酸水素イオンを含む溶液となる。臭い・毒性と酸化還元性を同一視しない。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前初回を不変JSON保存。H2Sは還元剤。石灰水過剰CO2は炭酸水素塩。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:gases"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_gases",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補から気体の水溶性・酸塩基・酸化還元を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "inorganic_halogen_ref",
+        "inorganic_hydrogen_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-17",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "ゼオライトによる硬度イオン除去の機構を判断する。",
+      "summary": "ゼオライトによる硬度イオン除去の機構を判断する。",
+      "conditions": {
+        "判断対象": "ゼオライトによる硬度イオン除去の機構を判断する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "イオン交換",
+          "verdict": "選ぶ候補",
+          "reason": "交換可能なNa等とCa/Mgを交換。"
+        },
+        "2": {
+          "value": "吸着",
+          "verdict": "選ばない候補",
+          "reason": "表面への保持一般で、軟化の指定機構を十分に特定しない。"
+        },
+        "3": {
+          "value": "吸収",
+          "verdict": "選ばない候補",
+          "reason": "内部への取込み一般で、対イオン交換を特定しない。"
+        },
+        "4": {
+          "value": "還元",
+          "verdict": "選ばない候補",
+          "reason": "Ca/Mgの価数を減らす操作ではない。"
+        },
+        "5": {
+          "value": "酸化",
+          "verdict": "選ばない候補",
+          "reason": "Ca/Mgを酸化する操作ではない。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_006.png"
+      ],
+      "core_concept": "ゼオライトによる硬度イオン除去の機構を判断する。",
+      "required_knowledge": "ゼオライトの骨格負電荷を補償する交換可能陽イオンと、水中のCa2+/Mg2+が交換して硬度を下げるので1。",
+      "solution": "ゼオライトの骨格負電荷を補償する交換可能陽イオンと、水中のCa2+/Mg2+が交換して硬度を下げるので1。2Na型+Ca2+⇌Ca型+2Na+という電荷収支で理解する。吸着機能もあることと、軟化に問われる主機構は別。",
+      "answer_reason": "ゼオライトの骨格負電荷を補償する交換可能陽イオンと、水中のCa2+/Mg2+が交換して硬度を下げるので1。2Na型+Ca2+⇌Ca型+2Na+という電荷収支で理解する。吸着機能もあることと、軟化に問われる主機構は別。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前初回を不変JSON保存。NaとCaMg硬度イオンの交換。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:exchange"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_ion_exchange",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補からゼオライトによる硬度イオン除去の機構を判断する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "inorganic_zeolite"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-12",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "stem": "アルカリ金属の半径・イオン化と融点を比較する。",
+      "summary": "アルカリ金属の半径・イオン化と融点を比較する。",
+      "conditions": {
+        "判断対象": "アルカリ金属の半径・イオン化と融点を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "外殻s1が失われ希ガス配置",
+          "verdict": "選ばない候補",
+          "reason": "電子を1個失う通常の1価陽イオン。"
+        },
+        "2": {
+          "value": "Li→Csで陽イオン半径増",
+          "verdict": "選ばない候補",
+          "reason": "同じ電荷で殻が増える系列。"
+        },
+        "3": {
+          "value": "Li→CsでIE低下",
+          "verdict": "選ばない候補",
+          "reason": "外殻が遠く遮蔽されて第一IEが下がる。"
+        },
+        "4": {
+          "value": "Li→Csで融点上昇",
+          "verdict": "選ぶ候補",
+          "reason": "通常の融点は系列で低下するので逆。"
+        },
+        "5": {
+          "value": "固有の炎色",
+          "verdict": "選ばない候補",
+          "reason": "原子励起の発光スペクトルの違い。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/17_applied_science/page_004.png"
+      ],
+      "core_concept": "アルカリ金属の半径・イオン化と融点を比較する。",
+      "required_knowledge": "Li,Na,K,Rb,Csは外殻ns1の第1族で、殻が増え陽イオン半径が大きく第一IEは低くなる。",
+      "solution": "Li,Na,K,Rb,Csは外殻ns1の第1族で、殻が増え陽イオン半径が大きく第一IEは低くなる。通常圧の融点はLiからCsへ下がるので4が不適切。融点は金属結晶の凝集と相の自由エネルギーに関係し、原子のIEの同義ではない。",
+      "answer_reason": "Li,Na,K,Rb,Csは外殻ns1の第1族で、殻が増え陽イオン半径が大きく第一IEは低くなる。通常圧の融点はLiからCsへ下がるので4が不適切。融点は金属結晶の凝集と相の自由エネルギーに関係し、原子のIEの同義ではない。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前初回を不変JSON保存。LiからCsへ通常融点低下、IE低下と半径増。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:periodic"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_periodicity",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補からアルカリ金属の半径・イオン化と融点を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "inorganic_alkali",
+        "atomic_nist2019"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-13",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "stem": "金属イオンの沈殿・錯体と反応条件を確認する。",
+      "summary": "金属イオンの沈殿・錯体と反応条件を確認する。",
+      "conditions": {
+        "判断対象": "金属イオンの沈殿・錯体と反応条件を確認する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "BaSO4黒色沈殿",
+          "verdict": "選ばない候補",
+          "reason": "BaSO4の通常沈殿は白色。"
+        },
+        "2": {
+          "value": "AgCl白沈殿が日光で溶解",
+          "verdict": "選ばない候補",
+          "reason": "光分解で銀等を生じ暗色化し、溶解とは異なる。"
+        },
+        "3": {
+          "value": "酸性ZnにH2Sで白沈殿",
+          "verdict": "選ばない候補",
+          "reason": "ZnS白色はあり得るが、酸性の程度・濃度で析出が変わる。"
+        },
+        "4": {
+          "value": "Znに少量NH3で白沈殿/過剰で溶解",
+          "verdict": "選ぶ候補",
+          "reason": "Zn(OH)2沈殿と過剰NH3のammine錯体で溶解。"
+        },
+        "5": {
+          "value": "Fe濃硝酸でH2と溶解",
+          "verdict": "選ばない候補",
+          "reason": "通常濃硝酸はFeを不動態化。酸化性酸からH2発生とも説明できない。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "酸性ZnSの析出はpH・濃度に依存し3の一律排除をしない。濃硝酸Feの温度・濃度・表面状態も未指定。",
+      "evidence": [
+        "extracted/pages/H25/17_applied_science/page_006.png"
+      ],
+      "core_concept": "金属イオンの沈殿・錯体と反応条件を確認する。",
+      "required_knowledge": "NH3水は塩基としてOH−を供給してZn(OH)2を析出させ、過剰NH3は[Zn(NH3)4]2+として溶解を促すので4。",
+      "solution": "NH3水は塩基としてOH−を供給してZn(OH)2を析出させ、過剰NH3は[Zn(NH3)4]2+として溶解を促すので4。色の誤り、光分解と溶解、酸の酸化性と不動態を分ける。3の酸性という広い表現はZnSが全酸性で析出不可という証明にはならず、pH・金属濃度・S2−の活量に留保を残す。",
+      "answer_reason": "NH3水は塩基としてOH−を供給してZn(OH)2を析出させ、過剰NH3は[Zn(NH3)4]2+として溶解を促すので4。色の誤り、光分解と溶解、酸の酸化性と不動態を分ける。3の酸性という広い表現はZnSが全酸性で析出不可という証明にはならず、pH・金属濃度・S2−の活量に留保を残す。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前初回を不変JSON保存。ZnOH2少量NH3沈殿/過剰tetraammine溶解。ZnS酸性濃度留保。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:complex"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_precip_complex",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補から金属イオンの沈殿・錯体と反応条件を確認する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "qualitative_stanford",
+        "inorganic_zinc_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-12",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "Alの両性・不動態・塩と製錬を比較する。",
+      "summary": "Alの両性・不動態・塩と製錬を比較する。",
+      "conditions": {
+        "判断対象": "Alの両性・不動態・塩と製錬を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "酸と反応するが塩基とは反応しない",
+          "verdict": "選ぶ候補",
+          "reason": "Alは強塩基とも反応し1が誤り。"
+        },
+        "2": {
+          "value": "濃硝酸で酸化膜・不動態",
+          "verdict": "選ばない候補",
+          "reason": "通常の濃硝酸で表面保護が起きるという条件付き説明。"
+        },
+        "3": {
+          "value": "ジュラルミンはAl主成分",
+          "verdict": "選ばない候補",
+          "reason": "Alを基材とする合金分類。"
+        },
+        "4": {
+          "value": "Al硫酸塩/K硫酸塩からミョウバン",
+          "verdict": "選ばない候補",
+          "reason": "KAl(SO4)2・12H2Oという複塩。"
+        },
+        "5": {
+          "value": "ボーキサイト/アルミナ/氷晶石電解",
+          "verdict": "選ばない候補",
+          "reason": "アルミナを溶融塩に溶かして還元する。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "濃硝酸の温度・濃度・表面条件、ミョウバン結晶化条件は未指定。原典の代表工程を全条件の保証にしない。",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_005.png"
+      ],
+      "core_concept": "Alの両性・不動態・塩と製錬を比較する。",
+      "required_knowledge": "Alは両性で酸にも強塩基にも反応し、水溶液中の強塩基ではアルミン酸/水酸化錯イオン形成を伴うため1。",
+      "solution": "Alは両性で酸にも強塩基にも反応し、水溶液中の強塩基ではアルミン酸/水酸化錯イオン形成を伴うため1。不動態は酸への全条件無反応を意味しない。ボーキサイト精製→アルミナ→氷晶石を含む融液の電解と、Al主合金・複塩の分類を別に整理する。",
+      "answer_reason": "Alは両性で酸にも強塩基にも反応し、水溶液中の強塩基ではアルミン酸/水酸化錯イオン形成を伴うため1。不動態は酸への全条件無反応を意味しない。ボーキサイト精製→アルミナ→氷晶石を含む融液の電解と、Al主合金・複塩の分類を別に整理する。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前初回を不変JSON保存。Al両性で塩基と反応。濃硝酸不動態条件留保。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:aluminum"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_aluminum",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補からAlの両性・不動態・塩と製錬を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "inorganic_al_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-24",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "地下水の水質・水頭・含水量の定義を比較する。",
+      "summary": "地下水の水質・水頭・含水量の定義を比較する。",
+      "conditions": {
+        "判断対象": "地下水の水質・水頭・含水量の定義を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "帯水層に不飽和を含み被圧に自由水面",
+          "verdict": "選ばない候補",
+          "reason": "飽和し水を伝える帯水層と不飽和帯、自由水面の不圧を取り違え。"
+        },
+        "2": {
+          "value": "水質は降水/地表水/地層/環境に依存",
+          "verdict": "選ぶ候補",
+          "reason": "起源と水岩反応・環境条件が水質を変える。"
+        },
+        "3": {
+          "value": "全水頭は位置−圧力、勾配を拡散率",
+          "verdict": "選ばない候補",
+          "reason": "低速地下水のh=z+p/(ρg)は和で、差/距離は動水勾配。"
+        },
+        "4": {
+          "value": "体積含水率は水/間隙、飽和で間隙比",
+          "verdict": "選ばない候補",
+          "reason": "θ=Vw/V全体、飽和では間隙率n。間隙比eではない。"
+        },
+        "5": {
+          "value": "基底流は低水期除外、都市で直接流出減",
+          "verdict": "選ばない候補",
+          "reason": "基底流は低水期にも地下水等が支える流量。都市流出の断定も逆。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_010.png"
+      ],
+      "core_concept": "地下水の水質・水頭・含水量の定義を比較する。",
+      "required_knowledge": "地下水水質は起源の水だけでなく岩石との溶解・沈殿、酸化還元、生物・人為作用等を反映するので2。",
+      "solution": "地下水水質は起源の水だけでなく岩石との溶解・沈殿、酸化還元、生物・人為作用等を反映するので2。全水頭は位置と圧力の和、動水勾配は無次元。θは全体積を分母にし、飽和時θ=n、e=n/(1−n)。定義の名前だけでなく分母・次元を点検する。",
+      "answer_reason": "地下水水質は起源の水だけでなく岩石との溶解・沈殿、酸化還元、生物・人為作用等を反映するので2。全水頭は位置と圧力の和、動水勾配は無次元。θは全体積を分母にし、飽和時θ=n、e=n/(1−n)。定義の名前だけでなく分母・次元を点検する。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前初回を不変JSON保存。源水岩石環境水質。全水頭和、θ水/全体積、自由水面は不圧。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:hydro:definitions"
+      ],
+      "discipline_id": "geo_groundwater",
+      "concept_id": "inorganic_hydro_definitions",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補から地下水の水質・水頭・含水量の定義を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "inorganic_waterchem",
+        "inorganic_hydro_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-23",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "stem": "含水比の分母と陸水の移動過程を比較する。",
+      "summary": "含水比の分母と陸水の移動過程を比較する。",
+      "conditions": {
+        "判断対象": "含水比の分母と陸水の移動過程を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "大気平均滞留8日で河川より短い",
+          "verdict": "選ばない候補",
+          "reason": "約8日は推計条件依存。USGSには大気約10日・河川16–26日例もある。"
+        },
+        "2": {
+          "value": "失水河川は地下へ浸透",
+          "verdict": "選ばない候補",
+          "reason": "河川から帯水層へ水が失われる区間。"
+        },
+        "3": {
+          "value": "含水比は水/湿潤土全体",
+          "verdict": "選ぶ候補",
+          "reason": "通常土質含水比w=Mw/M乾燥であり湿潤全体ではない。"
+        },
+        "4": {
+          "value": "浸透能より降雨強度大ならHorton流",
+          "verdict": "選ばない候補",
+          "reason": "浸透能力を超え余剰が地表へ流れる。"
+        },
+        "5": {
+          "value": "蒸散と蒸発を合わせ蒸発散",
+          "verdict": "選ばない候補",
+          "reason": "植物経由と非植物面の気化を合算。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "大気/河川平均滞留時間は資料・期間・推計の定義に依存。原典8日とUSGS約10日の違いを保持。",
+      "evidence": [
+        "extracted/pages/H27/17_applied_science/page_009.png"
+      ],
+      "core_concept": "含水比の分母と陸水の移動過程を比較する。",
+      "required_knowledge": "通常の土質含水比は水質量/乾燥固体質量で、湿潤土全体で割った3は別の質量分率。",
+      "solution": "通常の土質含水比は水質量/乾燥固体質量で、湿潤土全体で割った3は別の質量分率。同じ試料でも値が異なる。失水/得水河川は交換の向き、Horton流は浸透能力を越える雨、蒸発散は気化の合算。大気滞留約8日の値を全推計の厳密定数とせず、比較関係と数値の留保を分ける。",
+      "answer_reason": "通常の土質含水比は水質量/乾燥固体質量で、湿潤土全体で割った3は別の質量分率。同じ試料でも値が異なる。失水/得水河川は交換の向き、Horton流は浸透能力を越える雨、蒸発散は気化の合算。大気滞留約8日の値を全推計の厳密定数とせず、比較関係と数値の留保を分ける。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前初回を不変JSON保存。含水比は水/乾燥固体、全湿潤質量でない。8日数値留保。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:hydro:definitions"
+      ],
+      "discipline_id": "geo_groundwater",
+      "concept_id": "inorganic_hydro_definitions",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補から含水比の分母と陸水の移動過程を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "inorganic_hydro_ref",
+        "inorganic_waterbudget"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-11",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "ハロゲン単体の状態・酸化力とHFの酸強度を比較する。",
+      "summary": "ハロゲン単体の状態・酸化力とHFの酸強度を比較する。",
+      "conditions": {
+        "判断対象": "ハロゲン単体の状態・酸化力とHFの酸強度を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "四単体は二原子分子で有毒",
+          "verdict": "選ばない候補",
+          "reason": "F2,Cl2,Br2,I2の分子単体と有害性。"
+        },
+        "2": {
+          "value": "F2/Cl2気体、Br2液体、I2固体",
+          "verdict": "選ばない候補",
+          "reason": "常温常圧の代表状態。"
+        },
+        "3": {
+          "value": "F2は水と激しく反応、I2は難溶",
+          "verdict": "選ばない候補",
+          "reason": "F2の酸化性とI2水への低溶解度。"
+        },
+        "4": {
+          "value": "酸化力F2>Cl2>Br2>I2",
+          "verdict": "選ばない候補",
+          "reason": "標準的な水溶液の酸化還元比較。"
+        },
+        "5": {
+          "value": "HF/HCl/HBr/HIは全強酸",
+          "verdict": "選ぶ候補",
+          "reason": "通常希薄水溶液のHFは弱酸で、毒性と酸強度は別。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "HFの酸強度は希薄水溶液の通常分類。濃厚系の活量・溶媒依存を全条件へ拡張しない。",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_004.png"
+      ],
+      "core_concept": "ハロゲン単体の状態・酸化力とHFの酸強度を比較する。",
+      "required_knowledge": "通常希薄水溶液ではHFは弱酸なので全強酸という候補5が不適切。",
+      "solution": "通常希薄水溶液ではHFは弱酸なので全強酸という候補5が不適切。F2単体の酸化力の強さ、HF水溶液の解離、毒性・腐食性は別の性質。酸化力系列と常温の状態を同じ五候補の順で照合する。",
+      "answer_reason": "通常希薄水溶液ではHFは弱酸なので全強酸という候補5が不適切。F2単体の酸化力の強さ、HF水溶液の解離、毒性・腐食性は別の性質。酸化力系列と常温の状態を同じ五候補の順で照合する。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前初回を不変JSON保存。通常希薄水溶液のHF弱酸。他3強酸。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:halogen"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_halogens",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補からハロゲン単体の状態・酸化力とHFの酸強度を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "inorganic_halogen_ref",
+        "niosh_hf"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-17",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "ハロゲン単体の状態・酸化力とHFの酸強度を比較する。",
+      "summary": "ハロゲン単体の状態・酸化力とHFの酸強度を比較する。",
+      "conditions": {
+        "判断対象": "ハロゲン単体の状態・酸化力とHFの酸強度を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "F2/Cl2気体、Br2液体、I2固体",
+          "verdict": "選ばない候補",
+          "reason": "常温常圧の代表状態。"
+        },
+        "2": {
+          "value": "酸化力F2>Cl2>Br2>I2",
+          "verdict": "選ばない候補",
+          "reason": "標準的な水溶液の酸化還元比較。"
+        },
+        "3": {
+          "value": "HF/HCl/HBr/HIは全強酸",
+          "verdict": "選ぶ候補",
+          "reason": "通常希薄水溶液のHFは弱酸で、毒性と酸強度は別。"
+        },
+        "4": {
+          "value": "F2は水と激しく反応、I2は難溶",
+          "verdict": "選ばない候補",
+          "reason": "F2の酸化性とI2水への低溶解度。"
+        },
+        "5": {
+          "value": "四単体は二原子分子で有毒",
+          "verdict": "選ばない候補",
+          "reason": "F2,Cl2,Br2,I2の分子単体と有害性。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "HFの酸強度は希薄水溶液の通常分類。濃厚系の活量・溶媒依存を全条件へ拡張しない。",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_006.png"
+      ],
+      "core_concept": "ハロゲン単体の状態・酸化力とHFの酸強度を比較する。",
+      "required_knowledge": "通常希薄水溶液ではHFは弱酸なので全強酸という候補3が不適切。",
+      "solution": "通常希薄水溶液ではHFは弱酸なので全強酸という候補3が不適切。F2単体の酸化力の強さ、HF水溶液の解離、毒性・腐食性は別の性質。酸化力系列と常温の状態を同じ五候補の順で照合する。",
+      "answer_reason": "通常希薄水溶液ではHFは弱酸なので全強酸という候補3が不適切。F2単体の酸化力の強さ、HF水溶液の解離、毒性・腐食性は別の性質。酸化力系列と常温の状態を同じ五候補の順で照合する。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前初回を不変JSON保存。H28ハロゲン並替えHF含む全強酸誤り。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:halogen"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_halogens",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補からハロゲン単体の状態・酸化力とHFの酸強度を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "inorganic_halogen_ref",
+        "niosh_hf"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-08",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "周期表の副殻容量と希土類の電子配置を比較する。",
+      "summary": "周期表の副殻容量と希土類の電子配置を比較する。",
+      "conditions": {
+        "判断対象": "周期表の副殻容量と希土類の電子配置を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "第3周期はn3まで占有",
+          "verdict": "選ばない候補",
+          "reason": "中性基底の第3周期の配置。"
+        },
+        "2": {
+          "value": "s/p/dは2/6/10電子",
+          "verdict": "選ばない候補",
+          "reason": "副殻軌道数1/3/5と各2電子。"
+        },
+        "3": {
+          "value": "Beの2s満でも不活性ではない",
+          "verdict": "選ばない候補",
+          "reason": "閉じた2s副殻だけで希ガス的全不活性にならない。"
+        },
+        "4": {
+          "value": "K19番目は4s",
+          "verdict": "選ばない候補",
+          "reason": "通常K基底[Ar]4s1。"
+        },
+        "5": {
+          "value": "希土類はd電子が1ずつ増える",
+          "verdict": "選ぶ候補",
+          "reason": "主にf配置が変わる系列で、dの単調増加ではない。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_003.png"
+      ],
+      "core_concept": "周期表の副殻容量と希土類の電子配置を比較する。",
+      "required_knowledge": "希土類をd副殻に1個ずつ増える系列とする5は誤り。",
+      "solution": "希土類をd副殻に1個ずつ増える系列とする5は誤り。ランタノイドのf電子数にも例外があり、希土類の定義はSc/Yを含む。閉副殻Beと閉殻希ガスの化学性も同一視しない。原子番号・副殻・族の三つの分類を分ける。",
+      "answer_reason": "希土類をd副殻に1個ずつ増える系列とする5は誤り。ランタノイドのf電子数にも例外があり、希土類の定義はSc/Yを含む。閉副殻Beと閉殻希ガスの化学性も同一視しない。原子番号・副殻・族の三つの分類を分ける。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前初回を不変JSON保存。希土類にd電子1ずつの単調増加なし。f中心とScYの範囲留保。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:periodic"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_periodicity",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補から周期表の副殻容量と希土類の電子配置を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "atomic_nist2019",
+        "inorganic_periodic_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-10",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "分子・結晶・錯体の配位を比較する。",
+      "summary": "分子・結晶・錯体の配位を比較する。",
+      "conditions": {
+        "判断対象": "分子・結晶・錯体の配位を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "白リンP4は正四面体",
+          "verdict": "選ばない候補",
+          "reason": "P4の4原子の分子構造。"
+        },
+        "2": {
+          "value": "Bは12頂点二十面体単位",
+          "verdict": "選ばない候補",
+          "reason": "代表的な結晶BのB12単位。全同素体の例外は留保。"
+        },
+        "3": {
+          "value": "CCl4/SiCl4は四面体",
+          "verdict": "選ばない候補",
+          "reason": "中心原子に4結合の分子形。"
+        },
+        "4": {
+          "value": "NaCl/CsClは同一結晶型",
+          "verdict": "選ぶ候補",
+          "reason": "NaCl6/CsCl8の配位とBravaisが違う。"
+        },
+        "5": {
+          "value": "deoxyheme5配位、oxyheme6配位",
+          "verdict": "選ばない候補",
+          "reason": "酸素結合で第6配位子が加わる代表近似。平面からの変位等もある。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "ホウ素全同素体の一般化とヘムの厳密理想配位には留保。原典の五配位/六配位と分子全構造を区別。",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_003.png"
+      ],
+      "core_concept": "分子・結晶・錯体の配位を比較する。",
+      "required_knowledge": "NaClとCsClは異なる構造で4が不適切。",
+      "solution": "NaClとCsClは異なる構造で4が不適切。NaClはFCC基底の6配位、CsClは単純立方基底の8配位。P4とBXのクラスター、四面体分子、ヘムの配位数は別の階層。ヘモグロビンの近似配位を完全な理想八面体全角度の保証にしない。",
+      "answer_reason": "NaClとCsClは異なる構造で4が不適切。NaClはFCC基底の6配位、CsClは単純立方基底の8配位。P4とBXのクラスター、四面体分子、ヘムの配位数は別の階層。ヘモグロビンの近似配位を完全な理想八面体全角度の保証にしない。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前初回を不変JSON保存。NaClとCsCl違う配位6/8。Hbの近似配位留保。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:structure"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_structure_compare",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補から分子・結晶・錯体の配位を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "openstax_crystals",
+        "inorganic_metalloid_ref",
+        "inorganic_heme"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-10",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "stem": "電子配置の例外と周期表ブロックの定義を比較する。",
+      "summary": "電子配置の例外と周期表ブロックの定義を比較する。",
+      "conditions": {
+        "判断対象": "電子配置の例外と周期表ブロックの定義を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "s/pは主族",
+          "verdict": "選ばない候補",
+          "reason": "通常のs/p主族分類。"
+        },
+        "2": {
+          "value": "dは遷移、12族を除く場合あり",
+          "verdict": "選ばない候補",
+          "reason": "遷移元素の定義とdblockの範囲を区別。"
+        },
+        "3": {
+          "value": "Cu4s1d10/Zn4s2d10だからsblock",
+          "verdict": "選ぶ候補",
+          "reason": "電子配置は正しくてもCu/Znの周期表位置はdblock。"
+        },
+        "4": {
+          "value": "lanthanoid/actinoid内部遷移",
+          "verdict": "選ばない候補",
+          "reason": "内部系列の代表分類。"
+        },
+        "5": {
+          "value": "fblockは1原子番号で必ずf1増でない",
+          "verdict": "選ばない候補",
+          "reason": "基底配置の例外を認める。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "主族/遷移元素の定義には12族の取扱い差。dblockの分類と区別する。",
+      "evidence": [
+        "extracted/pages/H30/17_applied_science/page_003.png"
+      ],
+      "core_concept": "電子配置の例外と周期表ブロックの定義を比較する。",
+      "required_knowledge": "CuとZnの基底配置の4s電子数だけを見てsblockと結論する3は誤り。",
+      "solution": "CuとZnの基底配置の4s電子数だけを見てsblockと結論する3は誤り。ブロックは周期表のd系列の位置として分類し、個別基底配置の例外だけで移動させない。遷移元素の語では12族を除外する定義があり、dblockとの同義を強制しない。",
+      "answer_reason": "CuとZnの基底配置の4s電子数だけを見てsblockと結論する3は誤り。ブロックは周期表のd系列の位置として分類し、個別基底配置の例外だけで移動させない。遷移元素の語では12族を除外する定義があり、dblockとの同義を強制しない。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前初回を不変JSON保存。CuZn配置正しいがdblockをsblockとする推論誤り。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:periodic"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_periodicity",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補から電子配置の例外と周期表ブロックの定義を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "atomic_nist2019"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-09",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "stem": "HFの酸化膜除去とPTFEの原料・加工を比較する。",
+      "summary": "HFの酸化膜除去とPTFEの原料・加工を比較する。",
+      "conditions": {
+        "判断対象": "HFの酸化膜除去とPTFEの原料・加工を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "FはPauling EN最大",
+          "verdict": "選ばない候補",
+          "reason": "指定尺度でFが最大。"
+        },
+        "2": {
+          "value": "HFはホタル石由来",
+          "verdict": "選ばない候補",
+          "reason": "CaF2からHFを製造。"
+        },
+        "3": {
+          "value": "HFはウェハSiO2膜生成",
+          "verdict": "選ぶ候補",
+          "reason": "HFはSiO2をエッチして除去するので生成とは逆。"
+        },
+        "4": {
+          "value": "TFE重合でPTFE",
+          "verdict": "選ばない候補",
+          "reason": "CF2=CF2の付加重合。"
+        },
+        "5": {
+          "value": "PTFE融点327℃・特殊成形",
+          "verdict": "選ばない候補",
+          "reason": "再結晶材の代表融点で、新生材などの熱履歴差を保持。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "PTFEの原料製造・全グレード加工の出題当時本文は未照合。初回と再結晶で融解温度が異なり得る。",
+      "evidence": [
+        "extracted/pages/R01_retest/17_applied_science/page_004.png"
+      ],
+      "core_concept": "HFの酸化膜除去とPTFEの原料・加工を比較する。",
+      "required_knowledge": "HFの半導体工程での用途は酸化膜の除去であり、生成とする3が逆。",
+      "solution": "HFの半導体工程での用途は酸化膜の除去であり、生成とする3が逆。SiO2とFの反応による可溶性/揮発性フッ化物を使う。PTFEはTFE重合体で高い溶融粘度を持ち、特殊加工を使うが327℃を全熱履歴の普遍融点へ固定しない。",
+      "answer_reason": "HFの半導体工程での用途は酸化膜の除去であり、生成とする3が逆。SiO2とFの反応による可溶性/揮発性フッ化物を使う。PTFEはTFE重合体で高い溶融粘度を持ち、特殊加工を使うが327℃を全熱履歴の普遍融点へ固定しない。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前初回を不変JSON保存。HFはSiO2除去etch、成膜逆。PTFE生成融点全条件留保。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:fluorine"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_fluorine_etch",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補からHFの酸化膜除去とPTFEの原料・加工を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "inorganic_metalloid_ref",
+        "inorganic_hf_etch",
+        "inorganic_ptfe"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-14",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "stem": "Siの通常性状と炭化物・ホウ化物形成を比較する。",
+      "summary": "Siの通常性状と炭化物・ホウ化物形成を比較する。",
+      "conditions": {
+        "判断対象": "Siの通常性状と炭化物・ホウ化物形成を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "高純度Siは半導体材料",
+          "verdict": "選ばない候補",
+          "reason": "通常の電子材料用途。"
+        },
+        "2": {
+          "value": "SiO2/ケイ酸塩で地殻に多い",
+          "verdict": "選ばない候補",
+          "reason": "元素Siの単体ではなく化合物の分布。"
+        },
+        "3": {
+          "value": "高純度Siは水/無機酸に不溶",
+          "verdict": "選ばない候補",
+          "reason": "通常の非酸化性酸の代表耐性。酸化剤とHFを組合せたエッチングなどに例外。"
+        },
+        "4": {
+          "value": "高温でもC/Bと直接結合しない",
+          "verdict": "選ぶ候補",
+          "reason": "SiCとSiB6等の化合物が存在し無結合の全称は誤り。"
+        },
+        "5": {
+          "value": "Siにはdiamond構造",
+          "verdict": "選ばない候補",
+          "reason": "通常結晶Siは四面体結合のdiamond型。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "水/無機酸不溶の全称には混酸等の例外。純度・酸種・温度・表面条件未指定。公式誤りと他候補の一般化疑義を分ける。",
+      "evidence": [
+        "extracted/pages/R02/17_applied_science/page_005.png"
+      ],
+      "core_concept": "Siの通常性状と炭化物・ホウ化物形成を比較する。",
+      "required_knowledge": "SiCやSiのホウ化物が存在するため、C/Bと結合しないという候補4が不適切。",
+      "solution": "SiCやSiのホウ化物が存在するため、C/Bと結合しないという候補4が不適切。半導体用途、地殻での酸化物/ケイ酸塩、diamond型構造を区別する。一方、無機酸に全く溶けないという他候補は酸種・混合・酸化剤で変わり得るので留保を残す。",
+      "answer_reason": "SiCやSiのホウ化物が存在するため、C/Bと結合しないという候補4が不適切。半導体用途、地殻での酸化物/ケイ酸塩、diamond型構造を区別する。一方、無機酸に全く溶けないという他候補は酸種・混合・酸化剤で変わり得るので留保を残す。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前初回を不変JSON保存。SiC/borides形成可能。無機酸不溶HF混酸例外。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:silicon"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_silicon",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補からSiの通常性状と炭化物・ホウ化物形成を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "inorganic_metalloid_ref",
+        "inorganic_sic",
+        "inorganic_sib6",
+        "inorganic_hf_etch"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-09",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "stem": "Siの通常性状と炭化物・ホウ化物形成を比較する。",
+      "summary": "Siの通常性状と炭化物・ホウ化物形成を比較する。",
+      "conditions": {
+        "判断対象": "Siの通常性状と炭化物・ホウ化物形成を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "SiO2/ケイ酸塩で地殻に多い",
+          "verdict": "選ばない候補",
+          "reason": "元素Siの単体ではなく化合物の分布。"
+        },
+        "2": {
+          "value": "高純度Siは半導体材料",
+          "verdict": "選ばない候補",
+          "reason": "通常の電子材料用途。"
+        },
+        "3": {
+          "value": "高純度Siは水/無機酸に不溶",
+          "verdict": "選ばない候補",
+          "reason": "通常の非酸化性酸の代表耐性。酸化剤とHFを組合せたエッチングなどに例外。"
+        },
+        "4": {
+          "value": "Siにはdiamond構造",
+          "verdict": "選ばない候補",
+          "reason": "通常結晶Siは四面体結合のdiamond型。"
+        },
+        "5": {
+          "value": "高温でもC/Bと直接結合しない",
+          "verdict": "選ぶ候補",
+          "reason": "SiCとSiB6等の化合物が存在し無結合の全称は誤り。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "水/無機酸不溶の全称には混酸等の例外。純度・酸種・温度・表面条件未指定。公式誤りと他候補の一般化疑義を分ける。",
+      "evidence": [
+        "extracted/pages/R06/17_applied_science/page_003.png"
+      ],
+      "core_concept": "Siの通常性状と炭化物・ホウ化物形成を比較する。",
+      "required_knowledge": "SiCやSiのホウ化物が存在するため、C/Bと結合しないという候補5が不適切。",
+      "solution": "SiCやSiのホウ化物が存在するため、C/Bと結合しないという候補5が不適切。半導体用途、地殻での酸化物/ケイ酸塩、diamond型構造を区別する。一方、無機酸に全く溶けないという他候補は酸種・混合・酸化剤で変わり得るので留保を残す。",
+      "answer_reason": "SiCやSiのホウ化物が存在するため、C/Bと結合しないという候補5が不適切。半導体用途、地殻での酸化物/ケイ酸塩、diamond型構造を区別する。一方、無機酸に全く溶けないという他候補は酸種・混合・酸化剤で変わり得るので留保を残す。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前初回を不変JSON保存。R02の並替えSi炭素ホウ素結合可能。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:silicon"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_silicon",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補からSiの通常性状と炭化物・ホウ化物形成を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "inorganic_metalloid_ref",
+        "inorganic_sic",
+        "inorganic_sib6",
+        "inorganic_hf_etch"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-13",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "HFの弱酸性と水素結合・腐食性を比較する。",
+      "summary": "HFの弱酸性と水素結合・腐食性を比較する。",
+      "conditions": {
+        "判断対象": "HFの弱酸性と水素結合・腐食性を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "HF水溶液は毒性の強い強酸",
+          "verdict": "選ぶ候補",
+          "reason": "毒性は強いが通常希薄水溶液は弱酸で酸強度の語が誤り。"
+        },
+        "2": {
+          "value": "液体HFの高い誘電率",
+          "verdict": "選ばない候補",
+          "reason": "分極と液体の配向応答。値は温度等に依存。"
+        },
+        "3": {
+          "value": "他HXより高沸点",
+          "verdict": "選ばない候補",
+          "reason": "分子間水素結合が異常な高沸点を説明。"
+        },
+        "4": {
+          "value": "空気中で発煙",
+          "verdict": "選ばない候補",
+          "reason": "HF原液・濃厚水溶液で発煙。全希薄溶液とはしない。"
+        },
+        "5": {
+          "value": "SiO2/ガラスを腐食、Au/Ptを侵さない",
+          "verdict": "選ばない候補",
+          "reason": "ガラス除去性と貴金属の通常耐性。全混合条件保証ではない。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "誘電率の全温度依存・Au/Ptの全混合物耐性は未照合。原液HFと水溶液濃度の条件を保持。",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_005.png"
+      ],
+      "core_concept": "HFの弱酸性と水素結合・腐食性を比較する。",
+      "required_knowledge": "通常HF水溶液を強酸とする1が不適切。",
+      "solution": "通常HF水溶液を強酸とする1が不適切。水中の解離が小さいことと腐食・有害性が低いことは同義でない。HF分子間水素結合はHX系列での高い沸点に関係する。NIOSHはHF液体/気体と40%を越える水溶液の発煙を区別しており、原典の空気中発煙を全希薄水溶液の保証にはしない。",
+      "answer_reason": "通常HF水溶液を強酸とする1が不適切。水中の解離が小さいことと腐食・有害性が低いことは同義でない。HF分子間水素結合はHX系列での高い沸点に関係する。NIOSHはHF液体/気体と40%を越える水溶液の発煙を区別しており、原典の空気中発煙を全希薄水溶液の保証にはしない。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前初回を不変JSON保存。毒性と酸強度別、通常HF水溶液弱酸。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:halogen"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_halogens",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補からHFの弱酸性と水素結合・腐食性を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "niosh_hf",
+        "yale_hydrohalic"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-13",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "stem": "レアメタルの元素と機器用途を対応させる。",
+      "summary": "レアメタルの元素と機器用途を対応させる。",
+      "conditions": {
+        "判断対象": "レアメタルの元素と機器用途を対応させる。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "青LEDにAs",
+          "verdict": "選ぶ候補",
+          "reason": "代表的青LEDはGaN/InGaN系で、Asの対応が不適切。"
+        },
+        "2": {
+          "value": "透明電極にIn",
+          "verdict": "選ばない候補",
+          "reason": "ITO等の透明導電膜のIn。"
+        },
+        "3": {
+          "value": "日本EEZに熱水/Coクラスト/RE泥",
+          "verdict": "選ばない候補",
+          "reason": "存在確認と経済的採掘・埋蔵量評価は別。"
+        },
+        "4": {
+          "value": "HV/EVモータにNd",
+          "verdict": "選ばない候補",
+          "reason": "Nd永久磁石モータの代表用途。全モータ方式に不可欠ではない。"
+        },
+        "5": {
+          "value": "排ガス浄化触媒にPt",
+          "verdict": "選ばない候補",
+          "reason": "白金族金属の代表的触媒用途。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "機器は代表方式・出題時用途を扱う。全車両モータNd不可欠の全称、海洋鉱床の経済性・数量は未確定。",
+      "evidence": [
+        "extracted/pages/R04/17_applied_science/page_004.png"
+      ],
+      "core_concept": "レアメタルの元素と機器用途を対応させる。",
+      "required_knowledge": "代表的青色LEDはGaN/InGaNの窒化物半導体で、Asとする1が不適切。",
+      "solution": "代表的青色LEDはGaN/InGaNの窒化物半導体で、Asとする1が不適切。In透明電極、Nd磁石、Pt触媒は元素の電子構造と機器機能の対応。海洋資源の存在確認を商業採掘済みと読み替えず、Ndを全HV/EV方式に不可欠とする全称にも留保を残す。",
+      "answer_reason": "代表的青色LEDはGaN/InGaNの窒化物半導体で、Asとする1が不適切。In透明電極、Nd磁石、Pt触媒は元素の電子構造と機器機能の対応。海洋資源の存在確認を商業採掘済みと読み替えず、Ndを全HV/EV方式に不可欠とする全称にも留保を残す。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前初回を不変JSON保存。青色GaN系nitride、GaAs通常青色不可。モータ不可欠全称留保。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:materials"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_critical_materials",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補からレアメタルの元素と機器用途を対応させる。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "inorganic_blueled",
+        "inorganic_rareuses",
+        "inorganic_searesources"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-12",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "stem": "元素の原子番号を周期表で比較する。",
+      "summary": "元素の原子番号を周期表で比較する。",
+      "conditions": {
+        "判断対象": "元素の原子番号を周期表で比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "Nb>Ga",
+          "verdict": "選ばない候補",
+          "reason": "41>31。"
+        },
+        "2": {
+          "value": "Pm<Dy",
+          "verdict": "選ばない候補",
+          "reason": "61<66。"
+        },
+        "3": {
+          "value": "B<P",
+          "verdict": "選ばない候補",
+          "reason": "5<15。"
+        },
+        "4": {
+          "value": "I>Kr",
+          "verdict": "選ばない候補",
+          "reason": "53>36。"
+        },
+        "5": {
+          "value": "Re<Ta",
+          "verdict": "選ぶ候補",
+          "reason": "Re75>Ta73で小さいは逆。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/17_applied_science/page_005.png"
+      ],
+      "core_concept": "元素の原子番号を周期表で比較する。",
+      "required_knowledge": "原子番号は陽子数で質量順位ではない。",
+      "solution": "原子番号は陽子数で質量順位ではない。Nb41/Ga31、Pm61/Dy66、B5/P15、I53/Kr36の比較は正しいがRe75はTa73より大きく5が不適切。原子質量や天然存在量の大小から推測しない。",
+      "answer_reason": "原子番号は陽子数で質量順位ではない。Nb41/Ga31、Pm61/Dy66、B5/P15、I53/Kr36の比較は正しいがRe75はTa73より大きく5が不適切。原子質量や天然存在量の大小から推測しない。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前初回を不変JSON保存。Re75>Ta73。Nb41>Ga31,Pm61<Dy66,B5<P15,I53>Kr36。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:periodic"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_periodicity",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補から元素の原子番号を周期表で比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "atomic_nist2019"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-13",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "stem": "周期と族を分けて元素の位置を比較する。",
+      "summary": "周期と族を分けて元素の位置を比較する。",
+      "conditions": {
+        "判断対象": "周期と族を分けて元素の位置を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "Mg/Siは第3周期",
+          "verdict": "選ばない候補",
+          "reason": "Mg12/Si14は第3。"
+        },
+        "2": {
+          "value": "In/Bは同族",
+          "verdict": "選ばない候補",
+          "reason": "In49/B5は13族。"
+        },
+        "3": {
+          "value": "Nb/Tcは第5周期",
+          "verdict": "選ばない候補",
+          "reason": "Nb41/Tc43は第5。"
+        },
+        "4": {
+          "value": "Au/Cuは同族",
+          "verdict": "選ばない候補",
+          "reason": "Au79/Cu29は11族。"
+        },
+        "5": {
+          "value": "Mo/Irは第6周期",
+          "verdict": "選ぶ候補",
+          "reason": "Mo42は第5、Ir77は第6。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/17_applied_science/page_004.png"
+      ],
+      "core_concept": "周期と族を分けて元素の位置を比較する。",
+      "required_knowledge": "MoとIrの周期を同じ6とする5が不適切。",
+      "solution": "MoとIrの周期を同じ6とする5が不適切。周期は横の列、族は縦の列。Mg/Si第3、In/B13族、Nb/Tc第5、Au/Cu11族の五対応を元素の位置から確認する。",
+      "answer_reason": "MoとIrの周期を同じ6とする5が不適切。周期は横の列、族は縦の列。Mg/Si第3、In/B13族、Nb/Tc第5、Au/Cu11族の五対応を元素の位置から確認する。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前初回を不変JSON保存。Mo5周期対Ir6周期。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:periodic"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_periodicity",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補から周期と族を分けて元素の位置を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "atomic_nist2019"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-15",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "ランタノイドとアクチノイドを区別する。",
+      "summary": "ランタノイドとアクチノイドを区別する。",
+      "conditions": {
+        "判断対象": "ランタノイドとアクチノイドを区別する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "Sm",
+          "verdict": "選ばない候補",
+          "reason": "Sm62はlanthanoid。"
+        },
+        "2": {
+          "value": "Th",
+          "verdict": "選ぶ候補",
+          "reason": "Th90はactinoidで提示系列に属さない。"
+        },
+        "3": {
+          "value": "Nd",
+          "verdict": "選ばない候補",
+          "reason": "Nd60はlanthanoid。"
+        },
+        "4": {
+          "value": "Pm",
+          "verdict": "選ばない候補",
+          "reason": "Pm61は放射性だがlanthanoid。"
+        },
+        "5": {
+          "value": "Ho",
+          "verdict": "選ばない候補",
+          "reason": "Ho67はlanthanoid。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_005.png"
+      ],
+      "core_concept": "ランタノイドとアクチノイドを区別する。",
+      "required_knowledge": "Th90はアクチノイドなので2。",
+      "solution": "Th90はアクチノイドなので2。Sm62,Nd60,Pm61,Ho67はランタノイド。放射性か安定かという軸は系列分類と別で、放射性Pmを系列外としない。希土類の広い範囲とランタノイド15元素も区別する。",
+      "answer_reason": "Th90はアクチノイドなので2。Sm62,Nd60,Pm61,Ho67はランタノイド。放射性か安定かという軸は系列分類と別で、放射性Pmを系列外としない。希土類の広い範囲とランタノイド15元素も区別する。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前初回を不変JSON保存。Th90actinoid。他Sm62Nd60Pm61Ho67lanthanoids。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:periodic"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_periodicity",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補からランタノイドとアクチノイドを区別する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "atomic_nist2019"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-16",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "水素化物の電荷・分極と多中心結合を比較する。",
+      "summary": "水素化物の電荷・分極と多中心結合を比較する。",
+      "conditions": {
+        "判断対象": "水素化物の電荷・分極と多中心結合を比較する。",
+        "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "Hは外殻1/希ガスに1不足",
+          "verdict": "選ばない候補",
+          "reason": "H1s1はHe1s2へ1不足。Na等との共通点と独自性。"
+        },
+        "2": {
+          "value": "NaH/CaH2はイオン性",
+          "verdict": "選ばない候補",
+          "reason": "電気陽性金属とのH−を含む塩型。"
+        },
+        "3": {
+          "value": "遷移金属間隙で不定比水素化物",
+          "verdict": "選ばない候補",
+          "reason": "格子の間隙占有率で組成が変わる系がある。"
+        },
+        "4": {
+          "value": "B2H6は最小安定ホウ素水素化物で3中心",
+          "verdict": "選ばない候補",
+          "reason": "通常持続する中性boraneの代表。BH3単量体の特殊条件存在と区別。"
+        },
+        "5": {
+          "value": "ハロゲン/カルコゲンではHが負に分極",
+          "verdict": "選ぶ候補",
+          "reason": "F/O等がHより電気陰性度大でHは通常正に分極、符号が逆。"
+        }
+      },
+      "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+      "ambiguity": "B2H6最小安定の通常条件とBH3の特殊な単量体・配位付加体を区別。全遷移金属水素化物を不定比にしない。",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_006.png"
+      ],
+      "core_concept": "水素化物の電荷・分極と多中心結合を比較する。",
+      "required_knowledge": "非金属のF/O等に結合したHは正に分極するので5が逆。",
+      "solution": "非金属のF/O等に結合したHは正に分極するので5が逆。金属塩型のH−、共有分子のHδ+、金属格子間隙の水素を区別する。B2H6の架橋B-H-Bには三中心二電子結合があり、全結合を普通の二中心結合だけで説明しない。最小安定という語はBH3の特殊条件での単量体存在を排除する普遍定義ではない。",
+      "answer_reason": "非金属のF/O等に結合したHは正に分極するので5が逆。金属塩型のH−、共有分子のHδ+、金属格子間隙の水素を区別する。B2H6の架橋B-H-Bには三中心二電子結合があり、全結合を普通の二中心結合だけで説明しない。最小安定という語はBH3の特殊条件での単量体存在を排除する普遍定義ではない。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前初回を不変JSON保存。ハロゲンカルコゲン水素Hδ+、Hδ−逆。BH3単量体寿命など留保。",
+      "learning_points": "原子番号と周期・族、物性と反応性、酸強度と危険性、生成と除去、定義の分母を別々に確かめる。",
+      "theory_references": [
+        "theory:inorganic:hydride"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "inorganic_hydrides",
+      "cross_concepts": [],
+      "classification_reason": "原典五候補から水素化物の電荷・分極と多中心結合を比較する。を主題として判断。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典の名称と例外・条件を区別し五候補を比較する。"
+      },
+      "citations": [
+        "inorganic_hydrogen_ref",
+        "inorganic_metalloid_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

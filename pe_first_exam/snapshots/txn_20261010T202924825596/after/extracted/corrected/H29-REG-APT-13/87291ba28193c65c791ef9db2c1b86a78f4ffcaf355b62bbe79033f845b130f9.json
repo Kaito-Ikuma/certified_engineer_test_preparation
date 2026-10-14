@@ -1,0 +1,47 @@
+{
+  "stem": "黄金律による他者への配慮と技術者の優先責任を表す空欄の組を選ぶ。",
+  "conditions": {
+    "A": "自分が他者から与えられる何かを立場交換で考える。",
+    "B": "自分が受けることをどう判断するか。",
+    "C・D": "公衆の何を優先するか。",
+    "並び": "A／B／C／D。"
+  },
+  "choices": {
+    "1": {
+      "value": "不利益／無視／安全／人格",
+      "verdict": "設問条件に不一致",
+      "reason": "立場交換で不利益の許容を問うのでBが違い、優先責任のDも合わない。"
+    },
+    "2": {
+      "value": "不道徳／許容／環境／人格",
+      "verdict": "設問条件に不一致",
+      "reason": "Aは不利益、C・Dは安全・健康の組である。"
+    },
+    "3": {
+      "value": "不利益／許容／安全／健康",
+      "verdict": "設問条件に一致",
+      "reason": "受け手側で不利益を許容できるか考え、公衆の安全・健康を優先する。"
+    },
+    "4": {
+      "value": "不道徳／無視／環境／健康",
+      "verdict": "設問条件に不一致",
+      "reason": "A・B・Cが文脈と合わない。"
+    },
+    "5": {
+      "value": "不利益／許容／環境／人格",
+      "verdict": "設問条件に不一致",
+      "reason": "A・Bは合うがC・Dは安全・健康である。"
+    }
+  },
+  "figures": "原典画像で問題幹・条件・否定・全5肢と全組合せセルを確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/aptitude/page_012.png"
+  ],
+  "question_id": "H29-REG-APT-13",
+  "source_file": "sources/H29/aptitude.pdf",
+  "source_page": "12",
+  "source_sha256": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+  "raw_text_sha256": "c971bbab097973f7abeadf52af899bf5ac390a219e54a6d56b04f2cc4ed49f34",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

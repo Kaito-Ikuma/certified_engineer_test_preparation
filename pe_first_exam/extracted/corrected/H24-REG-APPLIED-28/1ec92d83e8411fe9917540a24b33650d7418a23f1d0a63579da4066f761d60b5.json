@@ -1,0 +1,45 @@
+{
+  "stem": "岩石名だけでコンクリート骨材の適性を固定しない。",
+  "conditions": {
+    "原典照合": "22原典画像で25問の全五肢・数値・単位・否定を確認。",
+    "対象": "岩石名だけでコンクリート骨材の適性を固定しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "チャート",
+      "verdict": "条件・全称を留保",
+      "reason": "硬い珪質岩だが、微細なシリカを含む骨材ではアルカリシリカ反応等に注意。全チャートが無条件に安全とはしない。"
+    },
+    "2": {
+      "value": "蛇紋岩",
+      "verdict": "不適切",
+      "reason": "公式・独立とも2。蛇紋岩骨材に起因するポップアウトの研究例がある。風化・変質・鉱物組成により強度・耐久性の適性が変わる。"
+    },
+    "3": {
+      "value": "硬質砂岩",
+      "verdict": "代表的条件で適切",
+      "reason": "硬く耐久性を持つ適切な試料は骨材候補。砂岩という名称だけで粒子結合や吸水率等を省略しない。"
+    },
+    "4": {
+      "value": "斑れい岩",
+      "verdict": "代表的条件で適切",
+      "reason": "健全で緻密な試料は骨材候補。鉱物組成・変質・有害成分等の試験も必要。"
+    },
+    "5": {
+      "value": "片麻岩",
+      "verdict": "条件・全称を留保",
+      "reason": "片理や異方性を含めて品質評価する。すべての方向・試料で同じ破砕形状・強度とはしない。"
+    }
+  },
+  "figures": "図表なしの五肢。原典画像は照合用で転載しない。",
+  "ambiguity": "蛇紋岩のポップアウト研究は土研報告の参考文献で確認し、研究原報告の全文は未取得。各岩種の試験当時の総合順位と全試料の適性は未確定。",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_008.png"
+  ],
+  "question_id": "H24-REG-APPLIED-28",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "286bb9f97073883e90fa9ff49aaf5d79cb40f1ce6f4f676721083993965509b1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

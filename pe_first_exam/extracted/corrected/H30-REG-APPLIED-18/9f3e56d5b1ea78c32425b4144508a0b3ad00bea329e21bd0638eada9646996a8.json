@@ -1,0 +1,45 @@
+{
+  "stem": "分離操作の原理と共沸による蒸留限界を判断する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "分離操作の原理と共沸による蒸留限界を判断する。"
+  },
+  "choices": {
+    "1": {
+      "value": "蒸留で気液組成は必ず違う",
+      "verdict": "不適切",
+      "reason": "共沸組成では気液の組成が一致し、通常の単純な蒸留を反復してもその組成を越えて分離できない。"
+    },
+    "2": {
+      "value": "気体成分の液体への吸収",
+      "verdict": "通常の条件で適切",
+      "reason": "気体を液体と接触させ、溶けやすい成分を液相へ移す。表面への吸着と区別する。"
+    },
+    "3": {
+      "value": "非混和液相への抽出",
+      "verdict": "通常の条件で適切",
+      "reason": "二相間の分配平衡を利用し、溶質を片方の相へ移す。"
+    },
+    "4": {
+      "value": "活性炭・シリカゲル・ゼオライト",
+      "verdict": "通常の条件で適切",
+      "reason": "表面や細孔への相互作用により成分を保持する吸着剤として用いられる。"
+    },
+    "5": {
+      "value": "逆浸透膜の水の選択透過",
+      "verdict": "条件付き・解釈留保",
+      "reason": "溶媒を選択的に透過させ、浸透圧差に逆らう圧力で濃縮・脱塩する。実膜は全溶質を100%阻止する理想膜とは限らない。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "逆浸透膜の全分子・イオンの完全阻止という記述は理想化。公式は蒸留の共沸例外を選ぶが、実膜の阻止率と対象化学種の条件を留保。",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_006.png"
+  ],
+  "question_id": "H30-REG-APPLIED-18",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "4aa886efc5d36d4c513864017d3a361d9f8a5a451f5130c7b6ab77fcd7826837",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

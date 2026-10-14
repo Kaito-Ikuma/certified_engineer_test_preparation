@@ -1,0 +1,45 @@
+{
+  "stem": "周期表の副殻容量と希土類の電子配置を比較する。",
+  "conditions": {
+    "判断対象": "周期表の副殻容量と希土類の電子配置を比較する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "第3周期はn3まで占有",
+      "verdict": "選ばない候補",
+      "reason": "中性基底の第3周期の配置。"
+    },
+    "2": {
+      "value": "s/p/dは2/6/10電子",
+      "verdict": "選ばない候補",
+      "reason": "副殻軌道数1/3/5と各2電子。"
+    },
+    "3": {
+      "value": "Beの2s満でも不活性ではない",
+      "verdict": "選ばない候補",
+      "reason": "閉じた2s副殻だけで希ガス的全不活性にならない。"
+    },
+    "4": {
+      "value": "K19番目は4s",
+      "verdict": "選ばない候補",
+      "reason": "通常K基底[Ar]4s1。"
+    },
+    "5": {
+      "value": "希土類はd電子が1ずつ増える",
+      "verdict": "選ぶ候補",
+      "reason": "主にf配置が変わる系列で、dの単調増加ではない。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_003.png"
+  ],
+  "question_id": "H29-REG-APPLIED-08",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "0a0192df66177f0cc1b0b27bdd7fa29b81e1e597c0ee7f45bc99be0597519cc7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

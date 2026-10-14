@@ -1,0 +1,22 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T00:53:42+09:00",
+  "paths": [
+    "generated/questions/aptitude/04_safety_risk.tex",
+    "generated/questions/aptitude/05_environment_sustainability.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/aptitude/04_safety_risk.tex": true,
+    "generated/questions/aptitude/05_environment_sustainability.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/aptitude/04_safety_risk.tex": "98aa7df300154028ca617267e6199461975c087d53c5e4cf376569a7cc23c859",
+    "generated/questions/aptitude/05_environment_sustainability.tex": "c3042c79c49059030ce0a7fc725318d90174d73e0b286ac276fed9322c10d208",
+    "generated/audit_summary.tex": "126795f2b78b1275681339034aeec27b7238f22f943a0d01af6235e1c51c01d5",
+    "generated/frequency_tables.tex": "c359ed578170c01f0fff16e3fc8630a61e1b590d7992cd6d2e0dde1a512ee6ee"
+  }
+}

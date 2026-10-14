@@ -1,0 +1,46 @@
+{
+  "stem": "転倒した地層の形成時の上下を決める構造と、節理の伝播を示す構造を区別する。",
+  "conditions": {
+    "判断方向": "最も不適切・誤りを選ぶ",
+    "原典照合": "15原典画像で18問の問題幹、全5肢、否定、専門語、化学式、候補順を確認。",
+    "適用条件": "流れと構造の典型対応は一意成因を保証しない。用語、時間間隙、保存、試料処理の条件を個別に示す。"
+  },
+  "choices": {
+    "1": {
+      "value": "羽毛状構造",
+      "verdict": "誤り・最も不適切",
+      "reason": "節理の破断面の起点から広がる伝播模様である。堆積時の上下面を直接示さない。"
+    },
+    "2": {
+      "value": "皿状構造",
+      "verdict": "適切（条件を含めて検討）",
+      "reason": "一般に上に凹の脱水構造の形と周囲の層を使い上下を検討できる。"
+    },
+    "3": {
+      "value": "荷重痕",
+      "verdict": "適切（条件を含めて検討）",
+      "reason": "上の砂が下の泥へ突出するため、荷重の向きを使える。"
+    },
+    "4": {
+      "value": "流痕",
+      "verdict": "適切（条件を含めて検討）",
+      "reason": "侵食した凹面と上位層底面の凸型の充填を区別すると上下を検討できる。"
+    },
+    "5": {
+      "value": "生痕化石",
+      "verdict": "適切（条件を含めて検討）",
+      "reason": "巣穴の開口・分岐や地表からの貫入などが明瞭なら上下を使える。全ての名称だけで上下が分かるとは限らない。"
+    }
+  },
+  "figures": "設問固有の図なし。全候補・専門語・化学式を原典で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_010.png"
+  ],
+  "question_id": "R02-REG-APPLIED-29",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "248b38f75fad461111b0e42c5bcd2a90ac1675f44f73b7a2e5f531fb121434aa",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "比抵抗法の電極配置・計算法とIP分極測定を比較する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "直流比抵抗の電極配列・順計算と、時間又は周波数に依存する分極応答を分ける。"
+  },
+  "choices": {
+    "1": {
+      "value": "ウェンナー法",
+      "verdict": "適切",
+      "reason": "等間隔の四電極配置で電流と電位差から見掛比抵抗を求める。"
+    },
+    "2": {
+      "value": "IP法",
+      "verdict": "条件付きで適切",
+      "reason": "電流印加で生じる分極の減衰又は位相を測る。静的比抵抗法とは目的量が異なるが、同じ配置で比抵抗も測るので関係のなさは相対的である。"
+    },
+    "3": {
+      "value": "シュランベルジャー法",
+      "verdict": "適切",
+      "reason": "電流電極と短い電位電極対を使う比抵抗垂直探査の代表的配置である。"
+    },
+    "4": {
+      "value": "リニアフィルタ法",
+      "verdict": "適切",
+      "reason": "層状比抵抗モデルの順応答計算に用いられる。一般の信号ノイズ処理だけと解釈しない。"
+    },
+    "5": {
+      "value": "ダイポール・ダイポール法",
+      "verdict": "適切",
+      "reason": "電流双極子と電位双極子を離した比抵抗配置で、二次元調査等に用いる。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "最も関係ないは相対比較である。IPは比抵抗測定と密接に関連するため完全な非関連とは説明しない。",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_010.png"
+  ],
+  "question_id": "H23-REG-APPLIED-30",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "c27cf104179cb14cdc18f334ea173b4c78e0408028c662f510610a6fc87a7fbc",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

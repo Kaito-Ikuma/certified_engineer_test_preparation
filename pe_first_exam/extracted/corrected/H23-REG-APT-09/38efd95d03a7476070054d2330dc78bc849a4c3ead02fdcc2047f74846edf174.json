@@ -1,0 +1,46 @@
+{
+  "stem": "産業財産権4種類に含まれない権利を選ぶ。",
+  "conditions": {
+    "判断対象": "広義知的財産・産業財産権・引用・営業秘密を区別する。",
+    "原典照合": "15問の原典画像について問題幹、否定、表の列順、全5候補を確認。",
+    "法の時点": "出題時の制度を保持し、説明の取得基準日は2026-10-12とする。"
+  },
+  "choices": {
+    "1": {
+      "value": "特許権",
+      "verdict": "対象範囲を検討",
+      "reason": "発明を保護する産業財産権の一つである。"
+    },
+    "2": {
+      "value": "実用新案権",
+      "verdict": "対象範囲を検討",
+      "reason": "物品の形状等の考案を保護する産業財産権である。"
+    },
+    "3": {
+      "value": "意匠権",
+      "verdict": "対象範囲を検討",
+      "reason": "デザインの保護であり4種類に含まれる。"
+    },
+    "4": {
+      "value": "商標権",
+      "verdict": "対象範囲を検討",
+      "reason": "商品・役務の出所標識を保護する4種類の一つである。"
+    },
+    "5": {
+      "value": "回路配置利用権",
+      "verdict": "該当しない対象",
+      "reason": "回路配置の専用制度は知的財産に関係するが産業財産権の4種類には含まれない。"
+    }
+  },
+  "figures": "組合せ表の全5行を画像確認。原典の長文は独自要約へ変換し、正誤と選択肢の対応を保持する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/aptitude/page_010.png"
+  ],
+  "question_id": "H23-REG-APT-09",
+  "source_file": "sources/H23/aptitude.pdf",
+  "source_page": "10",
+  "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+  "raw_text_sha256": "f518596a48245d1f5b37acb2150236d41af57dfd7ee966828b15c15386ab2c6a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

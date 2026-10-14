@@ -1,0 +1,1629 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<base href="https://iapws.org/">
+<title>G12-15: Guideline on Thermodynamic Properties of Supercooled Water</title>
+<link rel="canonical" href="https://iapws.org/technical-guidance/release/Supercooled"/>
+<meta property="og:url" content="https://iapws.org/technical-guidance/release/Supercooled"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="G12-15: Guideline on Thermodynamic Properties of Supercooled Water"/>
+<meta property="og:image:type" content="image/webp" />
+<meta property="og:image" content="https://iapws.org/public/images/ooIYK/486_630/Supercooled.pdf.webp"/>
+<meta property="og:image:width" content="486" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:secure_url" content="https://iapws.org/public/images/ooIYK/486_630/Supercooled.pdf.webp"/>
+<meta property="og:description" content=""/>
+<meta name="description" content="" />
+<meta name="generator" content="Zenario" />
+<link type="image/png" rel="icon" href="https://iapws.org/public/special_images/Qm40O/favicon.png"/>
+<link type="image/x-icon" rel="shortcut icon" href="https://iapws.org/public/special_images/02xfR/favicon.ico"/>
+<link rel="stylesheet" type="text/css" href="https://iapws.org/zenario/libs/yarn/@fortawesome/fontawesome-free/css/all.min.css?v=11.1.tmneb5"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://iapws.org/zenario/libs/manually_maintained/mit/colorbox/colorbox.min.css?v=11.1.tmneb5"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://iapws.org/zenario/libs/manually_maintained/mit/jqueryui/jquery-ui.min.css?v=11.1.tmneb5"/>
+<style type="text/css">@media all and (max-width:820px){.grid_clear,.grid_space,.pad_slot,.responsive{display:none}}@media all and (min-width:821px){body{min-width:821px}.container_12{min-width:821px;max-width:1240px;margin:0 auto;padding:0}.container_12 .span{display:inline;float:left;margin-left:.5%;margin-right:.5%}.container_12 .span{margin-left:.5%;margin-right:.5%}.container_12 .span1{width:7.167%}.container_12 .span2{width:15.333%}.container_12 .span2 .span{margin-left:3.261%;margin-right:3.261%}.container_12 .span2 .span1{width:46.739%}.container_12 .span3{width:23.5%}.container_12 .span3 .span{margin-left:2.128%;margin-right:2.128%}.container_12 .span3 .span1{width:30.496%}.container_12 .span3 .span2{width:65.248%}.container_12 .span4{width:31.667%}.container_12 .span5{width:39.833%}.container_12 .span6{width:48%}.container_12 .span7{width:56.167%}.container_12 .span8{width:64.333%}.container_12 .span8 .span{margin-left:.777%;margin-right:.777%}.container_12 .span8 .span1{width:11.14%}.container_12 .span8 .span2{width:23.834%}.container_12 .span8 .span3{width:36.528%}.container_12 .span8 .span4{width:49.223%}.container_12 .span8 .span5{width:61.917%}.container_12 .span8 .span6{width:74.611%}.container_12 .span8 .span7{width:87.306%}.container_12 .span9{width:72.5%}.container_12 .span10{width:80.667%}.container_12 .span10 .span{margin-left:.62%;margin-right:.62%}.container_12 .span10 .span1{width:8.884%}.container_12 .span10 .span2{width:19.008%}.container_12 .span10 .span3{width:29.132%}.container_12 .span10 .span4{width:39.256%}.container_12 .span10 .span5{width:49.38%}.container_12 .span10 .span6{width:59.504%}.container_12 .span10 .span7{width:69.628%}.container_12 .span10 .span8{width:79.752%}.container_12 .span10 .span9{width:89.876%}.container_12 .span11{width:88.833%}.container_12 .span12{width:97%}.container_12 .span12 .span{margin-left:.515%;margin-right:.515%}.container_12 .span12 .span1{width:7.388%}.container_12 .span12 .span2{width:15.808%}.container_12 .span12 .span3{width:24.227%}.container_12 .span12 .span4{width:32.646%}.container_12 .span12 .span5{width:41.065%}.container_12 .span12 .span6{width:49.485%}.container_12 .span12 .span7{width:57.904%}.container_12 .span12 .span8{width:66.323%}.container_12 .span12 .span9{width:74.742%}.container_12 .span12 .span10{width:83.162%}.container_12 .span12 .span11{width:91.581%}.container_12 .span1_1{width:97%}.container_12 .span .span1_1,.container_12 .span .span .span1_1{width:100%}.container_12 .alpha{margin-left:1.5%}.container_12 .omega{margin-right:1.5%}.container .span .alpha,.container .span .span .alpha{margin-left:0}.container .span .omega,.container .span .span .omega{margin-right:0;margin-left:-50px}.container .omega{margin-left:-50px;float:right}.container:before,.container:after{content:'.'}.container:before,.container:after,.grid_clear,.pad_slot{width:0;height:0;font-size:0;line-height:0;display:block;overflow:hidden;visibility:hidden}.pad_slot{height:1px}.container:after,.grid_clear{clear:both}.responsive_only,.container .responsive_only{display:none}}</style>
+<link rel="stylesheet" type="text/css" href="https://iapws.org/public/css/skin_2/tmn7ov.min.css"/>
+<style type="text/css" id="plgslt_Slot_Header_Logo-styles">
+#plgslt_Slot_Header_Logo_img { width: 208px; height: 70px; }
+body.mobile #plgslt_Slot_Header_Logo_img { width: 119px; height: 40px; }
+</style>
+<style type="text/css" id="plgslt_Slot_Header_Search-styles">
+body.mobile #plgslt_Slot_Header_Search_search_results { display: block; }
+#plgslt_Slot_Header_Search_html_results { width: 50% }
+body.mobile #plgslt_Slot_Header_Search_html_results { width: 100% }
+#plgslt_Slot_Header_Search_document_results { width: 50% }
+body.mobile #plgslt_Slot_Header_Search_document_results { width: 100% }
+</style>
+<style type="text/css" id="plgslt_Slot_Masthead-styles">
+#plgslt_Slot_Masthead_img {
+	display: block;
+	width: 2000px;
+	height: 350px;
+	background-size: 2000px 350px;
+	background-image: url('https://iapws.org/public/images/N3zCF/crop_and_zoom_2000x350_3x1113_6965x1219/modern-turbine.webp');
+	background-repeat: no-repeat;
+}
+body.retina #plgslt_Slot_Masthead_img {
+	background-image: url('https://iapws.org/public/images/N3zCF/crop_and_zoom_4000x700_3x1113_6965x1219/modern-turbine.webp');
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<script type="text/javascript">window.zenarioCodeVersion = "11.1.tmneb5"</script></head>
+<body class="desktop no_js ">
+<script type="text/javascript">
+(function(h,c,m,n,p,k){c.URLBasePath=k;var l=c.addEventListener,q=c.zOnLoad=function(a){c.$?$(a):l?l("DOMContentLoaded",a):a()},e=c.zenarioL={},g=e.set=function(a,b,d,f){d=d||"not_"+b;a||(f=b,b=d,d=f);h.body.className=h.body.className.replace(new RegExp("\\b("+d+")\\b","g"),"")+" "+b;e[d]=!(e[b]=!0)},r=e.resize=function(a){var b=e.set,d=a.responsive,f=c.innerWidth;b(a.fluid,"fluid","fixed");b(d&&f<a.minWidth,"mobile","desktop");b(!d||f>=a.maxWidth,"fullsize","notfullsize")},t=e.init=function(a){r(c.zenarioGrid=
+a)};e.cType=m;e.layoutId=n;e.skinId=p;t({});g(!0,"js","no_js");g(c!==c.parent,"in_iframe");g(c.devicePixelRatio>1,"retina");g("ontouchstart"in c||navigator.msMaxTouchPoints,"touchscreen","non_touchscreen");q(function(a){var b=h.querySelectorAll('a[href^="#"]:not([class^="mm-"])'),d=b.length,f=location;for(a=0;a<d;++a)b[a].href=f.pathname+f.search+b[a].href.replace(k,"")})})(document,window,"document",5,2,"https://iapws.org/");
+</script>
+
+
+<!--googleoff: all-->
+<div id="zenario_cookie_consent" class="zenario_cookie_consent cookies_explicit"></div>
+<div id="zenario_cookie_consent_manage_popup" class="zenario_cookie_consent_manage_popup" style="opacity:0; visibility:hidden;"></div>
+<script type="text/javascript" src="zenario/cookie_message.php?type=accept"></script>
+<!--googleon: all-->
+<div id="zenario_skin" class="zenario_skin">
+<div id="zenario_layout" class="zenario_document_layout">
+<div id="zenario_citem" class="lang_en">
+<script type="text/javascript">
+	zenarioL.init({"cols":12,"minWidth":821,"maxWidth":1240,"fluid":true,"responsive":true});
+</script>
+
+<div class="Gridbreak_Header Fixed">
+	<div class="container container_12">
+		<div class="span span3 span1_4 alpha slot  Slot_Header_Logo">
+			
+
+					<div id="plgslt_Slot_Header_Logo"  class="zenario_slot zenario_full_slot zenario_banner banner_logo zenario_banner_1 zenario_slot_in_header">
+
+<div class="banner_wrap"><div class="banner_wrap_outer"><div class="banner_wrap_inner" >
+		
+			
+			
+			<div class="banner_image">
+					<a href="https://iapws.org/" >
+							<picture>
+	<source srcset="https://iapws.org/public/images/wH09-/IAPWS-Logo-full.svg" media="(max-width: 820px)" type="image/svg+xml">
+	<img
+		id="plgslt_Slot_Header_Logo_img"
+		src="https://iapws.org/public/images/wH09-/IAPWS-Logo-full.svg"
+		type="image/svg+xml"
+		alt="IAPWS Logo Full"
+	/>
+</picture>
+
+				
+				
+				
+						</a>
+				</div>
+				
+	</div></div></div>
+
+
+					</div>		</div>
+		<div class="span span8 span2_3 responsive slot  Slot_Header_Menu">
+			
+
+					<div id="plgslt_Slot_Header_Menu"  class="zenario_slot zenario_full_slot zenario_menu main_menu zenario_menu_2 zenario_slot_in_header">
+
+<div class="wrap_menu ">
+<div class="wrap_menu_outer">
+<div class="wrap_menu_inner">
+							
+			
+			<ul>
+				<li class="zenario_menu_node level1 level1_1 has_child">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/about-us">About us</a>
+					
+										
+																				<ul>
+									<li class="zenario_menu_node level2 level2_1">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/about-us/organization">Organization</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_2">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/about-us/outputs">IAPWS Outputs</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_3">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/about-us/benefits-from-participation">Benefits from Participation</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_4">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/about-us/national">National Contacts</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_5 has_child">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/about-us/awards">IAPWS Awards</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_6">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/about-us/edu">Educational Resources</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_7">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/about-us/tributes">Tributes</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_8">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/about-us/contact">Contact us</a>
+					
+										
+									</li>
+						</ul>
+
+																						</li>
+			</ul>
+								
+			
+			<ul>
+				<li class="zenario_menu_node level1 level1_2 level1_on level1_2_on has_child">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/technical-guidance">Technical Guidance</a>
+					
+										
+																				<ul>
+									<li class="zenario_menu_node level2 level2_1 level2_on level2_1_on has_child">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/technical-guidance/release">IAPWS Releases and Guidelines</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_2">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/technical-guidance/techguide">IAPWS Technical Guidance Documents</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_3">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/technical-guidance/icrn">IAPWS Certified Research Needs</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_4 has_child">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/technical-guidance/newform">IAPWS Thermodynamic Property Formulations</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_5">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/technical-guidance/white-papers">White Papers</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_6 has_child">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/technical-guidance/webinars">Webinars</a>
+					
+										
+									</li>
+						</ul>
+
+																						</li>
+			</ul>
+								
+			
+			<ul>
+				<li class="zenario_menu_node level1 level1_3 has_child">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/working-groups">Working Groups</a>
+					
+										
+																				<ul>
+									<li class="zenario_menu_node level2 level2_1">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/working-groups/TPWS">TPWS Working Group</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_2">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/working-groups/PCAS">PCAS Working Group</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_3">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/working-groups/PCC">PCC Working Group</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_4">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/working-groups/IRS">IRS Working group</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_5">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/working-groups/seawater-wg">SWWG Working Group</a>
+					
+										
+									</li>
+						</ul>
+
+																						</li>
+			</ul>
+								
+			
+			<ul>
+				<li class="zenario_menu_node level1 level1_4 has_child">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/news-and-events">News &amp; Events</a>
+					
+										
+																				<ul>
+									<li class="zenario_menu_node level2 level2_1 highlight_node">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/news-and-events/meetings">IAPWS Annual Meetings</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_2">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/news-and-events/other-events">Other Events</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_3">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/news-and-events/press-releases-and-highlights">Press Releases and Highlights</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_4">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/news-and-events/news">IAPWS News</a>
+					
+										
+									</li>
+						</ul>
+
+																						</li>
+			</ul>
+								
+			
+			<ul>
+				<li class="zenario_menu_node level1 level1_5 has_child">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/faqs">FAQs</a>
+					
+										
+																				<ul>
+									<li class="zenario_menu_node level2 level2_1">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/faqs/faq1">About Water and Steam</a>
+					
+										
+									</li>
+												<li class="zenario_menu_node level2 level2_2">
+					<span class="menu_image"></span>
+										
+					<a href="https://iapws.org/faqs/faq2">About IAPWS</a>
+					
+										
+									</li>
+						</ul>
+
+																						</li>
+			</ul>
+			
+	</div>
+</div>
+</div>
+
+		
+					</div>		</div>
+		<div class="span span1 span1_12 omega responsive slot  Slot_Header_Search">
+			
+
+					<div id="plgslt_Slot_Header_Search"  class="zenario_slot zenario_full_slot zenario_advanced_search zenario_advanced_search__default_style zenario_advanced_search_30 zenario_slot_in_header zenario_advanced_search__in_mode__search_entry_box">	
+				<div id="plgslt_Slot_Header_Search_search_button_panel" class="search_button_panel">
+			<div
+				id="plgslt_Slot_Header_Search_search_button"
+				class="search_button"
+				onclick="zenario_advanced_search.searchButtonOnClick('plgslt_Slot_Header_Search');"
+				style="display: block;"
+			>
+				Open search
+			</div>
+		</div>
+		
+					
+	<div id="plgslt_Slot_Header_Search-search_entry_box_panel" class="search_entry_box_panel" style="display: none;">
+
+	<div class="search_area">
+		<div class="zenario_advanced_search_criteria">
+			    <form type="post" action="https://iapws.org/search">
+        <div>
+                        
+            
+            <input
+                id="plgslt_Slot_Header_Search-search_input_box"
+                type="text"
+                class="search_input_box"
+                name="searchString"
+
+                                    placeholder="Search the site"
+                
+                value="" 
+                onkeyup="zenario_advanced_search.onKeyUp('plgslt_Slot_Header_Search', this, 'html', 'search_entry_box', 500, '1');"
+                autocomplete="off"
+            />
+
+			<input
+				type="submit"
+				class="search_entry_button"
+				name="doSearch"
+				value="Search"
+							/>
+
+                            <span
+                    id = "plgslt_Slot_Header_Search_close_button"
+                    class="close_button"
+                    onclick="zenario_advanced_search.closeButtonOnClick('plgslt_Slot_Header_Search', 'search_entry_box');"
+                >
+                    X
+                </span>
+            
+                        
+                    </div>
+    
+				</form>
+		</div>
+
+		<div id="plgslt_Slot_Header_Search_results" class="zenario_advanced_search_results">
+						
+							
+								
+								
+					</div>
+	</div>
+
+		</div>
+
+					</div>		</div>
+		<div class="grid_clear"></div>
+		<div class="span span12 span1_1 alpha omega responsive_only slot  Slot_Header_Mobile_Menu">
+			
+
+					<div id="plgslt_Slot_Header_Mobile_Menu"  class="zenario_slot zenario_full_slot zenario_menu_responsive_push_pull zenario_menu_responsive_push_pull__default_style zenario_menu_responsive_push_pull_3 zenario_slot_in_header"><nav id="plgslt_Slot_Header_Mobile_Menu_push_pull_menu" class="zenario_push_pull-menu zenario_push_pull-menu_offcanvas" aria-hidden="true" style="display:block;">
+	<div class="zenario_push_pull-panels">
+
+															
+																															
+																										
+						
+																												
+							<div id="zz_node_4" class="zenario_push_pull-panel  zenario_push_pull-panel_opened   ">
+																	<div class="zenario_push_pull-navbar">
+										
+										<a class="zenario_push_pull-navbar__title">
+																							Menu
+																					</a>
+
+																			</div>
+																<ul class="zenario_push_pull-listview">
+														
+																						<li class="level1 zenario_menu_node zenario_menu_node_special home"><a  href="https://iapws.org/">Home</a></li>
+														
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_4" class="zenario_menu_node level1 level1_1 has_child zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/about-us">About us</a>
+
+													
+															<a
+									class="zenario_push_pull-btn zenario_push_pull-btn_next zenario_push_pull-listitem__btn"
+									id="plgslt_Slot_Header_Mobile_Menu_node_4_toggle}}"
+									onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_node_4', 'zz_child_of_node_4', 'open');"
+								>
+									<span class="zenario_push_pull-sronly">Open submenu</span>
+								</a>
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_11" class="zenario_menu_node level1 level1_13 level1_on level1_13_on has_child zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/technical-guidance">Technical Guidance</a>
+
+													
+															<a
+									class="zenario_push_pull-btn zenario_push_pull-btn_next zenario_push_pull-listitem__btn"
+									id="plgslt_Slot_Header_Mobile_Menu_node_11_toggle}}"
+									onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_node_4', 'zz_child_of_node_11', 'open');"
+								>
+									<span class="zenario_push_pull-sronly">Open submenu</span>
+								</a>
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_38" class="zenario_menu_node level1 level1_28 has_child zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/working-groups">Working Groups</a>
+
+													
+															<a
+									class="zenario_push_pull-btn zenario_push_pull-btn_next zenario_push_pull-listitem__btn"
+									id="plgslt_Slot_Header_Mobile_Menu_node_38_toggle}}"
+									onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_node_4', 'zz_child_of_node_38', 'open');"
+								>
+									<span class="zenario_push_pull-sronly">Open submenu</span>
+								</a>
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_19" class="zenario_menu_node level1 level1_34 has_child zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/news-and-events">News &amp; Events</a>
+
+													
+															<a
+									class="zenario_push_pull-btn zenario_push_pull-btn_next zenario_push_pull-listitem__btn"
+									id="plgslt_Slot_Header_Mobile_Menu_node_19_toggle}}"
+									onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_node_4', 'zz_child_of_node_19', 'open');"
+								>
+									<span class="zenario_push_pull-sronly">Open submenu</span>
+								</a>
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_16" class="zenario_menu_node level1 level1_39 has_child zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/faqs">FAQs</a>
+
+													
+															<a
+									class="zenario_push_pull-btn zenario_push_pull-btn_next zenario_push_pull-listitem__btn"
+									id="plgslt_Slot_Header_Mobile_Menu_node_16_toggle}}"
+									onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_node_4', 'zz_child_of_node_16', 'open');"
+								>
+									<span class="zenario_push_pull-sronly">Open submenu</span>
+								</a>
+													</li>
+
+																																			
+								
+															
+																	<li id="push_pull_search_box" class="level1 zenario_menu_node zenario_menu_node_special search_box">
+										<form class="search_entry_box" action="https://iapws.org/search" method="post">
+											<input type="text" class="search_entry_input_box" id="plgslt_Slot_Header_Mobile_Menu_search_input_box" name="searchString" value=""
+																									placeholder="Search the site"
+																							/>
+											<input type="submit" class="search_entry_button" value="Search" />
+										</form>
+									</li>
+															
+													
+														</ul>
+							</div>
+												
+					
+																											
+																										
+																										
+																												
+							<div id="zz_child_of_node_4" class="zenario_push_pull-panel  zenario_push_pull-hidden  ">
+																	<div class="zenario_push_pull-navbar">
+																					<a
+												class="zenario_push_pull-btn zenario_push_pull-btn_prev zenario_push_pull-navbar__btn"
+												onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_node_4', 'zz_child_of_node_4', 'close');"
+											>
+												<span class="zenario_push_pull-sronly">Close submenu</span>
+											</a>
+										
+										<a class="zenario_push_pull-navbar__title">
+																							About us
+																					</a>
+
+																					<span class="zenario_push_pull-btn zenario_push_pull-navbar__btn"></span>
+																			</div>
+																<ul class="zenario_push_pull-listview">
+														
+																					
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_35" class="zenario_menu_node level2 level2_2 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/about-us/organization">Organization</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_36" class="zenario_menu_node level2 level2_3 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/about-us/outputs">IAPWS Outputs</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_37" class="zenario_menu_node level2 level2_4 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/about-us/benefits-from-participation">Benefits from Participation</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_7" class="zenario_menu_node level2 level2_5 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/about-us/national">National Contacts</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_8" class="zenario_menu_node level2 level2_6 has_child zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/about-us/awards">IAPWS Awards</a>
+
+													
+															<a
+									class="zenario_push_pull-btn zenario_push_pull-btn_next zenario_push_pull-listitem__btn"
+									id="plgslt_Slot_Header_Mobile_Menu_node_8_toggle}}"
+									onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_child_of_node_4', 'zz_child_of_node_8', 'open');"
+								>
+									<span class="zenario_push_pull-sronly">Open submenu</span>
+								</a>
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_15" class="zenario_menu_node level2 level2_10 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/about-us/edu">Educational Resources</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_9" class="zenario_menu_node level2 level2_11 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/about-us/tributes">Tributes</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_10" class="zenario_menu_node level2 level2_12 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/about-us/contact">Contact us</a>
+
+													
+													</li>
+
+												
+														</ul>
+							</div>
+												
+					
+																				
+																			
+																										
+																												
+							<div id="zz_child_of_node_11" class="zenario_push_pull-panel  zenario_push_pull-hidden  ">
+																	<div class="zenario_push_pull-navbar">
+																					<a
+												class="zenario_push_pull-btn zenario_push_pull-btn_prev zenario_push_pull-navbar__btn"
+												onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_node_4', 'zz_child_of_node_11', 'close');"
+											>
+												<span class="zenario_push_pull-sronly">Close submenu</span>
+											</a>
+										
+										<a class="zenario_push_pull-navbar__title">
+																							Technical Guidance
+																					</a>
+
+																					<span class="zenario_push_pull-btn zenario_push_pull-navbar__btn"></span>
+																			</div>
+																<ul class="zenario_push_pull-listview">
+														
+																					
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_3" class="zenario_menu_node level2 level2_14 level2_on level2_14_on has_child zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/technical-guidance/release">IAPWS Releases and Guidelines</a>
+
+													
+															<a
+									class="zenario_push_pull-btn zenario_push_pull-btn_next zenario_push_pull-listitem__btn"
+									id="plgslt_Slot_Header_Mobile_Menu_node_3_toggle}}"
+									onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_child_of_node_11', 'zz_child_of_node_3', 'open');"
+								>
+									<span class="zenario_push_pull-sronly">Open submenu</span>
+								</a>
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_5" class="zenario_menu_node level2 level2_19 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/technical-guidance/techguide">IAPWS Technical Guidance Documents</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_12" class="zenario_menu_node level2 level2_20 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/technical-guidance/icrn">IAPWS Certified Research Needs</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_14" class="zenario_menu_node level2 level2_21 has_child zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/technical-guidance/newform">IAPWS Thermodynamic Property Formulations</a>
+
+													
+															<a
+									class="zenario_push_pull-btn zenario_push_pull-btn_next zenario_push_pull-listitem__btn"
+									id="plgslt_Slot_Header_Mobile_Menu_node_14_toggle}}"
+									onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_child_of_node_11', 'zz_child_of_node_14', 'open');"
+								>
+									<span class="zenario_push_pull-sronly">Open submenu</span>
+								</a>
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_580" class="zenario_menu_node level2 level2_23 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/technical-guidance/white-papers">White Papers</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_561" class="zenario_menu_node level2 level2_24 has_child zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/technical-guidance/webinars">Webinars</a>
+
+													
+															<a
+									class="zenario_push_pull-btn zenario_push_pull-btn_next zenario_push_pull-listitem__btn"
+									id="plgslt_Slot_Header_Mobile_Menu_node_561_toggle}}"
+									onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_child_of_node_11', 'zz_child_of_node_561', 'open');"
+								>
+									<span class="zenario_push_pull-sronly">Open submenu</span>
+								</a>
+													</li>
+
+												
+														</ul>
+							</div>
+												
+					
+																				
+																			
+																										
+																												
+							<div id="zz_child_of_node_38" class="zenario_push_pull-panel  zenario_push_pull-hidden  ">
+																	<div class="zenario_push_pull-navbar">
+																					<a
+												class="zenario_push_pull-btn zenario_push_pull-btn_prev zenario_push_pull-navbar__btn"
+												onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_node_4', 'zz_child_of_node_38', 'close');"
+											>
+												<span class="zenario_push_pull-sronly">Close submenu</span>
+											</a>
+										
+										<a class="zenario_push_pull-navbar__title">
+																							Working Groups
+																					</a>
+
+																					<span class="zenario_push_pull-btn zenario_push_pull-navbar__btn"></span>
+																			</div>
+																<ul class="zenario_push_pull-listview">
+														
+																					
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_39" class="zenario_menu_node level2 level2_29 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/working-groups/TPWS">TPWS Working Group</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_40" class="zenario_menu_node level2 level2_30 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/working-groups/PCAS">PCAS Working Group</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_41" class="zenario_menu_node level2 level2_31 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/working-groups/PCC">PCC Working Group</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_42" class="zenario_menu_node level2 level2_32 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/working-groups/IRS">IRS Working group</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_43" class="zenario_menu_node level2 level2_33 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/working-groups/seawater-wg">SWWG Working Group</a>
+
+													
+													</li>
+
+												
+														</ul>
+							</div>
+												
+					
+																				
+																			
+																										
+																												
+							<div id="zz_child_of_node_19" class="zenario_push_pull-panel  zenario_push_pull-hidden  ">
+																	<div class="zenario_push_pull-navbar">
+																					<a
+												class="zenario_push_pull-btn zenario_push_pull-btn_prev zenario_push_pull-navbar__btn"
+												onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_node_4', 'zz_child_of_node_19', 'close');"
+											>
+												<span class="zenario_push_pull-sronly">Close submenu</span>
+											</a>
+										
+										<a class="zenario_push_pull-navbar__title">
+																							News & Events
+																					</a>
+
+																					<span class="zenario_push_pull-btn zenario_push_pull-navbar__btn"></span>
+																			</div>
+																<ul class="zenario_push_pull-listview">
+														
+																					
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_13" class="zenario_menu_node level2 level2_35 highlight_node zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/news-and-events/meetings">IAPWS Annual Meetings</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_46" class="zenario_menu_node level2 level2_36 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/news-and-events/other-events">Other Events</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_20" class="zenario_menu_node level2 level2_37 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/news-and-events/press-releases-and-highlights">Press Releases and Highlights</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_21" class="zenario_menu_node level2 level2_38 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/news-and-events/news">IAPWS News</a>
+
+													
+													</li>
+
+												
+														</ul>
+							</div>
+												
+					
+																				
+																			
+																										
+																												
+							<div id="zz_child_of_node_16" class="zenario_push_pull-panel  zenario_push_pull-hidden  ">
+																	<div class="zenario_push_pull-navbar">
+																					<a
+												class="zenario_push_pull-btn zenario_push_pull-btn_prev zenario_push_pull-navbar__btn"
+												onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_node_4', 'zz_child_of_node_16', 'close');"
+											>
+												<span class="zenario_push_pull-sronly">Close submenu</span>
+											</a>
+										
+										<a class="zenario_push_pull-navbar__title">
+																							FAQs
+																					</a>
+
+																					<span class="zenario_push_pull-btn zenario_push_pull-navbar__btn"></span>
+																			</div>
+																<ul class="zenario_push_pull-listview">
+														
+																					
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_17" class="zenario_menu_node level2 level2_40 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/faqs/faq1">About Water and Steam</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_18" class="zenario_menu_node level2 level2_41 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/faqs/faq2">About IAPWS</a>
+
+													
+													</li>
+
+												
+														</ul>
+							</div>
+												
+					
+																											
+																										
+																										
+																												
+							<div id="zz_child_of_node_8" class="zenario_push_pull-panel  zenario_push_pull-hidden  ">
+																	<div class="zenario_push_pull-navbar">
+																					<a
+												class="zenario_push_pull-btn zenario_push_pull-btn_prev zenario_push_pull-navbar__btn"
+												onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_child_of_node_4', 'zz_child_of_node_8', 'close');"
+											>
+												<span class="zenario_push_pull-sronly">Close submenu</span>
+											</a>
+										
+										<a class="zenario_push_pull-navbar__title">
+																							IAPWS Awards
+																					</a>
+
+																					<span class="zenario_push_pull-btn zenario_push_pull-navbar__btn"></span>
+																			</div>
+																<ul class="zenario_push_pull-listview">
+														
+																					
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_160" class="zenario_menu_node level3 level3_7 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/about-us/awards/Gibbs">IAPWS Gibbs Award</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_161" class="zenario_menu_node level3 level3_8 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/about-us/awards/Helmholtz">IAPWS Helmholtz Award</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_163" class="zenario_menu_node level3 level3_9 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/about-us/awards/fellows">IAPWS Honorary Fellows</a>
+
+													
+													</li>
+
+												
+														</ul>
+							</div>
+												
+					
+																				
+																			
+																										
+																												
+							<div id="zz_child_of_node_3" class="zenario_push_pull-panel  zenario_push_pull-hidden  ">
+																	<div class="zenario_push_pull-navbar">
+																					<a
+												class="zenario_push_pull-btn zenario_push_pull-btn_prev zenario_push_pull-navbar__btn"
+												onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_child_of_node_11', 'zz_child_of_node_3', 'close');"
+											>
+												<span class="zenario_push_pull-sronly">Close submenu</span>
+											</a>
+										
+										<a class="zenario_push_pull-navbar__title">
+																							IAPWS Releases and Guidelines
+																					</a>
+
+																					<span class="zenario_push_pull-btn zenario_push_pull-navbar__btn"></span>
+																			</div>
+																<ul class="zenario_push_pull-listview">
+														
+																					
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_74" class="zenario_menu_node level3 level3_15 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/technical-guidance/release#REL">Releases</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_75" class="zenario_menu_node level3 level3_16 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/technical-guidance/release#SUPP">Supplementary Releases</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_79" class="zenario_menu_node level3 level3_17 level3_on level3_17_on zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/technical-guidance/release#GUIDE">Guidelines</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_94" class="zenario_menu_node level3 level3_18 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/technical-guidance/release#ADVNOTE">Advisory Notes</a>
+
+													
+													</li>
+
+												
+														</ul>
+							</div>
+												
+					
+																				
+																			
+																										
+																												
+							<div id="zz_child_of_node_14" class="zenario_push_pull-panel  zenario_push_pull-hidden  ">
+																	<div class="zenario_push_pull-navbar">
+																					<a
+												class="zenario_push_pull-btn zenario_push_pull-btn_prev zenario_push_pull-navbar__btn"
+												onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_child_of_node_11', 'zz_child_of_node_14', 'close');"
+											>
+												<span class="zenario_push_pull-sronly">Close submenu</span>
+											</a>
+										
+										<a class="zenario_push_pull-navbar__title">
+																							IAPWS Thermodynamic Property Formulations
+																					</a>
+
+																					<span class="zenario_push_pull-btn zenario_push_pull-navbar__btn"></span>
+																			</div>
+																<ul class="zenario_push_pull-listview">
+														
+																					
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_157" class="zenario_menu_node level3 level3_22 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/technical-guidance/newform/95data">Compilation of Experimental Data Used to Develop IAPWS-95</a>
+
+													
+													</li>
+
+												
+														</ul>
+							</div>
+												
+					
+																				
+																			
+																										
+																												
+							<div id="zz_child_of_node_561" class="zenario_push_pull-panel  zenario_push_pull-hidden  ">
+																	<div class="zenario_push_pull-navbar">
+																					<a
+												class="zenario_push_pull-btn zenario_push_pull-btn_prev zenario_push_pull-navbar__btn"
+												onclick="zenario_menu_responsive_push_pull.menuNodeToggleOnclick('zz_child_of_node_11', 'zz_child_of_node_561', 'close');"
+											>
+												<span class="zenario_push_pull-sronly">Close submenu</span>
+											</a>
+										
+										<a class="zenario_push_pull-navbar__title">
+																							Webinars
+																					</a>
+
+																					<span class="zenario_push_pull-btn zenario_push_pull-navbar__btn"></span>
+																			</div>
+																<ul class="zenario_push_pull-listview">
+														
+																					
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_565" class="zenario_menu_node level3 level3_25 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/technical-guidance/webinars/steam-turbine-ptz-damage-failure-and-steam-purity-requirements-webinar">Steam Turbine PTZ Damage, Failure, and Steam Purity Requirements: Webinar</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_536" class="zenario_menu_node level3 level3_26 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/technical-guidance/webinars/webinar-1">Major Power Plant Chemistry Related Damage and Failures</a>
+
+													
+													</li>
+
+												
+												
+											
+																			
+						
+													
+						<li id="plgslt_Slot_Header_Mobile_Menu_node_562" class="zenario_menu_node level3 level3_27 zenario_push_pull-listitem">
+							
+							<a href="https://iapws.org/technical-guidance/webinars/application-of-film-forming-substances-ffs-in-power-cycles.download" onclick="if (window.gtag) gtag(&#039;event&#039;, &#039;pageview&#039;, {&#039;page_location&#039; : &#039;https://iapws.org/technical-guidance/webinars/application-of-film-forming-substances-ffs-in-power-cycles.download&#039;});">Application of Film-Forming Substances (FFS) in Power Cycles</a>
+
+													
+													</li>
+
+												
+														</ul>
+							</div>
+												
+					
+												
+	</div>
+</nav>
+
+<a id="plgslt_Slot_Header_Mobile_Menu_mmenu-hamburger" class="zenario_push_pull-hamburger preventScrolling" onclick="zenario_menu_responsive_push_pull.hamburgerOnclick('plgslt_Slot_Header_Mobile_Menu', 'open')">
+	<span class="top-bar"></span>
+	<span class="middle-bar"></span>
+	<span class="bottom-bar"></span>
+</a>
+					</div>		</div>
+	</div>
+</div>
+<div class="slot Slot_Masthead">
+	
+
+					<div id="plgslt_Slot_Masthead"  class="zenario_slot zenario_full_slot zenario_banner banner_masthead zenario_banner_750 zenario_slot_in_body">
+
+<div class="banner_wrap"><div class="banner_wrap_outer"><div class="banner_wrap_inner" >
+		
+			
+			
+			<div 
+	id="plgslt_Slot_Masthead_img"
+	class="banner_background_image">
+					
+
+				
+				
+				
+						</div>
+						
+	</div></div></div>
+
+
+					</div></div>
+<div class="Gridbreak_Body">
+	<div class="container container_12">
+		<div class="span span12 span1_1 alpha omega slot  Slot_Breadcrumbs">
+			
+
+					<div id="plgslt_Slot_Breadcrumbs"  class="zenario_slot zenario_full_slot zenario_breadcrumbs zenario_breadcrumbs__default_style zenario_breadcrumbs_21 zenario_slot_in_body">
+					
+	<span class="
+		zenario_menu_node
+		breadcrumb
+		zenario_menu_node level1 level1_1 level1_on level1_1_on
+			">
+				
+		<a href="https://iapws.org/">Home</a>
+		
+				
+				
+					</span>
+		
+	<span class="
+		zenario_menu_node
+		breadcrumb
+		zenario_menu_node level2 level2_1 level2_on level2_1_on
+			">
+				
+		<a href="https://iapws.org/technical-guidance">Technical Guidance</a>
+		
+				
+				
+					</span>
+		
+	<span class="
+		zenario_menu_node
+		breadcrumb
+		zenario_menu_node level3 level3_1 level3_on level3_1_on
+			">
+				
+		<a href="https://iapws.org/technical-guidance/release">IAPWS Releases and Guidelines</a>
+		
+				
+				
+					</span>
+		
+	<span class="
+		zenario_menu_node
+		breadcrumb
+		zenario_menu_node level4 level4_1 level4_on level4_1_on
+			">
+				
+		<a href="https://iapws.org/technical-guidance/release#GUIDE">Guidelines</a>
+		
+				
+				
+					</span>
+		
+	<span class="
+		zenario_menu_node
+		breadcrumb
+		zenario_menu_node level5 level5_1 level5_on level5_1_on current
+			">
+				
+		<a href="https://iapws.org/technical-guidance/release/Supercooled.download" onclick="if (window.gtag) gtag(&#039;event&#039;, &#039;pageview&#039;, {&#039;page_location&#039; : &#039;https://iapws.org/technical-guidance/release/Supercooled.download&#039;});">G12-15</a>
+		
+				
+				
+					</span>
+
+
+
+					</div>		</div>
+		<div class="grid_clear"></div>
+		<div class="span span12 span1_1 alpha omega slot  Slot_Data">
+			
+
+					<div id="plgslt_Slot_Data"  class="zenario_slot zenario_full_slot zenario_ctype_document zenario_ctype_document__default_style zenario_ctype_document_63 zenario_slot_in_body"><div id="document_details">
+	<div class="document">
+					<h1 class="ctype_document_header">Document download: G12-15: Guideline on Thermodynamic Properties of Supercooled Water</h1>
+		
+		<div id="document_details_content">
+			<div class="outer">
+				<div class="inner">
+					<div class="document_details_content_panel ">
+													<div class="document_details_content_sticky_image">
+								<img src="https://iapws.org/public/images/ooIYK/crop_and_zoom_200x270_13x0_586x792/Supercooled.pdf.webp"  srcset="https://iapws.org/public/images/ooIYK/crop_and_zoom_200x270_13x0_586x792/Supercooled.pdf.webp 2x"  />
+							</div>
+												
+						<div class="document_details_content_download">		
+						
+														
+														
+														
+													
+																								<div class="document_detail aws_release_date">
+										<p><span class="label">Release date: </span>29 May 2018</p>
+									</div>
+																	
+																						
+																											<div class="document_detail document_filename">
+											<h3>Filename:</h3>
+											<p>Supercooled.pdf</p>
+										</div>
+																		
+																			<div class="document_detail document_type_size">
+											<h3>File type and size:</h3>
+											<p>pdf, 173 KB</p>
+										</div>
+																		
+									
+																			<div class="document_detail document_view_download">
+											
+																							<h3>View/download:</h3>
+																						<div class="document_view_download_buttons">
+																
+												<p
+														
+												 class="document_download_link">
+				
+																											<span>
+															<a
+																href="https://iapws.org/technical-guidance/release/Supercooled.download"
+																onclick="if (window.gtag) gtag(&#039;event&#039;, &#039;pageview&#039;, {&#039;page_location&#039; : &#039;https://iapws.org/technical-guidance/release/Supercooled.download&#039;});"
+																class="document_download"
+																download
+															>Download now</a>
+														</span>
+																	
+																										</p>
+												</div>
+											</div>
+																												
+																		
+								
+																
+													</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+					</div>		</div>
+		<div class="grid_clear"></div>
+		<div class="span span12 span1_1 alpha omega slot  Slot_Main">
+			
+
+					<div id="plgslt_Slot_Main"  class="zenario_slot zenario_full_slot zenario_html_snippet zenario_html_snippet__default_style document_51_Slot_Main_zenario_html_snippet zenario_slot_in_body">
+	<div class="zenario_wysiwyg">
+<h3>Description</h3>
+<p>This guideline provides an equation of state (in the form of a Gibbs energy function) for the thermodynamic properties of cold and supercooled (metastable) liquid H<sub>2</sub>O. <br />The range of validity is the metastable liquid from the homogeneous ice nucleation temperature to the melting temperature at pressures from 0 MPa to 400 MPa. The equation is also valid for stable liquid states up to 300 K in the same pressure range, where <a href="/documents/release/IAPWS-95.download">IAPWS-95</a> remains the recommended formulation. <br />The development of the formulation and comparisons to available data are described in detail in a <a href="https://doi.org/10.1063/1.4895593" target="_blank" rel="noopener noreferrer">scientific article</a>.</p>
+<h3>Online calculation</h3>
+<p>The Russian National Committee of IAPWS (through Moscow Power Engineering Institute) has provided an <a href="http://twt.mpei.ac.ru/mcs/worksheets/iapws/iapws-scw.xmcd">online calculation page</a>, which may be useful in program development and verification. <strong>Note that IAPWS is not responsible for the content of these online calculation pages.</strong></p>
+<p>This Guideline is the product of the <a href="/working-groups/wg">Working Groups</a> "Thermophysical Properties of Water and Steam" (TPWS) and "Subcommittee on Seawater" (SCSW) of the <a href="/">International Association for the Properties of Water and Steam</a> (IAPWS).</p>
+	</div>
+					</div>		</div>
+		<div class="grid_clear"></div>
+		<div class="span span12 span1_1 alpha omega slot  Slot_Back">
+			
+
+					<div id="plgslt_Slot_Back"  class="zenario_slot zenario_full_slot zenario_menu_forward_back_navigator back_navigator zenario_menu_forward_back_navigator_166 zenario_slot_in_body"><div class="mfbn_container">
+				<span class="mfbn_up">
+			<a href="https://iapws.org/technical-guidance/release#GUIDE">Guidelines</a>
+		</span>
+		</div>
+					</div>		</div>
+	</div>
+</div>
+<div class="Gridbreak_Footer">
+	<div class="container container_12">
+		<div class="span span2 span1_6 alpha slot  Slot_Footer_Logo">
+			
+
+					<div id="plgslt_Slot_Footer_Logo"  class="zenario_slot zenario_full_slot zenario_banner banner_logo zenario_banner_148 zenario_slot_in_footer">
+
+<div class="banner_wrap"><div class="banner_wrap_outer"><div class="banner_wrap_inner" >
+		
+			
+			
+			<div class="banner_image">
+					<a href="https://iapws.org/" >
+							<picture>
+	<img
+		id="plgslt_Slot_Footer_Logo_img"
+		src="https://iapws.org/public/images/U5OXu/IAPWS-Logo-gray.svg"
+		style="width: 119px; height: 40px;"
+		type="image/svg+xml"
+		alt="IAPWS Logo Gray"
+	/>
+</picture>
+
+				
+				
+				
+						</a>
+				</div>
+				
+	</div></div></div>
+
+
+					</div>		</div>
+		<div class="span span10 span5_6 Grouping_Footer_Main omega">
+			<div class="span span10 span1_1 alpha omega slot  Slot_Footer_Menu">
+				
+
+					<div id="plgslt_Slot_Footer_Menu"  class="zenario_slot zenario_full_slot zenario_footer zenario_footer__default_style zenario_footer_18 zenario_slot_in_footer"><div class="links">
+				<span class="zenario_menu_node level1 level1_1">
+													
+						
+			<a href="https://iapws.org/">Home</a>
+			
+					</span>
+			<span class="zenario_menu_node level1 level1_2">
+												|
+										
+						
+			<a href="https://iapws.org/about-us/contact">Contact us</a>
+			
+					</span>
+			<span class="zenario_menu_node level1 level1_3">
+												|
+										
+						
+			<a href="https://iapws.org/sitemap">Sitemap</a>
+			
+					</span>
+			<span class="zenario_menu_node level1 level1_4">
+												|
+										
+						
+			<a href="https://iapws.org/privacy-policy">Privacy policy</a>
+			
+					</span>
+	
+			<span class="zenario_cc_manage">
+												|
+										
+			<a onclick="zenario.manageCookies();">
+				Manage cookies
+			</a>
+			
+					</span>
+	</div>
+					</div>			</div>
+			<div class="grid_clear"></div>
+			<div class="span span10 span1_1 alpha omega slot  Slot_Footer_Copyright">
+				
+
+					<div id="plgslt_Slot_Footer_Copyright"  class="zenario_slot zenario_full_slot zenario_plugin_nest nest_copyright zenario_plugin_nest_55 zenario_slot_in_footer">
+
+	
+			
+		
+<div class="nest_wrap ">
+		
+					
+		<div class="nest_plugins_wrap">
+																	
+					<div
+						class="
+							nest_plugins
+														slide_1 
+						"
+											>
+																			
+
+					<div id="plgslt_Slot_Footer_Copyright-24"  class="zenario_slot zenario_full_slot zenario_copyright zenario_copyright__default_style zenario_copyright_55_24 zenario_slot_in_footer"><div class="copyright_notice">
+			Copyright &#169; IAPWS The International Association for the Properties of Water and Steam 2026
+	</div>
+					</div>																				
+
+					<div id="plgslt_Slot_Footer_Copyright-25"  class="zenario_slot zenario_full_slot zenario_html_snippet webdesign_by zenario_html_snippet_55_25 zenario_slot_in_footer">
+	<div class="zenario_wysiwyg">
+<p>Web design by <a href="https://tribalsystems.uk" target="_blank" rel="noopener noreferrer">Tribal Systems</a>, <a href="https://onzenario.com" target="_blank" rel="noopener noreferrer">built on Zenario</a></p>
+	</div>
+					</div>																		</div>
+									</div>
+		
+				
+		
+	
+</div>
+
+					</div>			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</div></div></div>
+<script type="text/javascript" defer src="https://iapws.org/zenario/libs/yarn/jquery/dist/jquery.min.js?v=11.1.tmneb5"></script>
+<script type="text/javascript" defer src="https://iapws.org/zenario/libs/manually_maintained/mit/jqueryui/jquery-ui.visitor.min.js?v=11.1.tmneb5"></script>
+<script type="text/javascript" defer src="https://iapws.org/public/js/visitor/11.1.tmneb5.cb.min.js"></script>
+<script type="text/javascript" defer>zOnLoad(function() {zenario.init("tmn7ov",0,"en","d/m/yy","index.php",0,0,0,0,0,51,51,true,1,"technical-guidance\/release\/Supercooled",null,",",".");});</script>
+<script type="text/javascript" defer src="https://iapws.org/zenario/libs/yarn/jquery-doubletaptogo/dist/jquery.dcd.doubletaptogo.min.js?v=11.1.tmneb5"></script>
+<script type="text/javascript" defer src="https://iapws.org/public/js/plugin/11.1.tmneb5.min.js"></script>
+<script type="text/javascript" defer>zOnLoad(function() {
+zenario.slot([["Slot_Header_Logo",1,2,3],["Slot_Header_Menu",2,6,3],["Slot_Header_Search",30,20,3],["Slot_Header_Mobile_Menu",3,12,3],["Slot_Masthead",750,2,2],["Slot_Breadcrumbs",21,3,2],["Slot_Data",63,45,2],["Slot_Main",200,8,2,0,0,0,1],["Slot_Back",166,84,2],["Slot_Footer_Logo",148,2,3],["Slot_Footer_Menu",18,4,3],["Slot_Footer_Copyright",55,14,3,23],["Slot_Footer_Copyright-24",55,15,0,23],["Slot_Footer_Copyright-25",55,8,0,23]]);
+(function(c) {
+c([".","#plgslt_Slot_Header_Menu .level1.has_child > a","doubleTapToGo"]);
+c(["zenario_menu_responsive_push_pull","pageReady","plgslt_Slot_Header_Mobile_Menu"]);
+})(zenario._ioe);});</script>
+<script>
+zOnLoad(function () {
+	//if ($(window).width() >= 769) {
+		winHeight = 10;
+		
+		// Function to check scroll position and update class
+		function checkScroll() {
+		  if($(window).scrollTop() >= winHeight){
+		    $(".Gridbreak_Header").addClass('header_active');
+		  } else if ($(window).scrollTop() < winHeight){
+		    $(".Gridbreak_Header").removeClass('header_active');
+		  }
+		}
+		
+		// Run on scroll
+		$(window).scroll(function(){
+		  checkScroll();
+		});
+		
+		// Run on page load
+		checkScroll();
+	//}
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "stem": "浅部地中熱の循環方式と移流による熱輸送を区別する。",
+  "conditions": {
+    "原典照合": "22原典画像で25問の全五肢・数値・単位・否定を確認。",
+    "対象": "浅部地中熱の循環方式と移流による熱輸送を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "概ね200mより浅い低温地中熱",
+      "verdict": "代表的条件で適切",
+      "reason": "通常の地中熱利用の目安。深部の高温地熱発電と区別するが、200mを物理的な熱源の断絶境界とはしない。"
+    },
+    "2": {
+      "value": "外部騒音が一般に小さい",
+      "verdict": "代表的条件で適切",
+      "reason": "空気熱交換部等の条件を考える。機器の音が絶対にゼロではない。"
+    },
+    "3": {
+      "value": "クローズド・オープンループ",
+      "verdict": "代表的条件で適切",
+      "reason": "地中の閉じた配管で媒体を循環する方式と、地下水を利用する方式を分ける。"
+    },
+    "4": {
+      "value": "地盤を蓄熱体にする地下蓄熱",
+      "verdict": "代表的条件で適切",
+      "reason": "季節等の熱を地盤又は帯水層へ蓄えて利用する。すべての採熱装置が蓄熱運用という意味ではない。"
+    },
+    "5": {
+      "value": "移流で見掛け熱伝導率が大きく減少",
+      "verdict": "不適切",
+      "reason": "地下水移流は熱を運び、熱応答試験の伝導モデルで見掛けの有効熱伝導率が増える場合がある。一般的な減少効果という向きが不適切。"
+    }
+  },
+  "figures": "図表なしの五肢。原典画像は照合用で転載しない。",
+  "ambiguity": "浅度200m・低温・騒音は代表的な説明であり全機器・地点の厳密境界ではない。移流の寄与は流速・方向・試験期間等に依存し全例の同じ倍率ではない。",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_006.png"
+  ],
+  "question_id": "R06-REG-APPLIED-18",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "b6f34d9466a234c60a03bf4bd939d091f9ed84cdf52d1c843991ff319b1500c1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

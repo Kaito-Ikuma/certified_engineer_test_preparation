@@ -1,0 +1,3113 @@
+{
+  "batch_id": "S7_057_analysis_finish",
+  "reference_date": "2026-10-14",
+  "questions": [
+    {
+      "question_id": "H23-REG-BASIC-3-2",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "楕円孔端で自由表面と応力集中を併用。",
+      "summary": "楕円孔端で自由表面と応力集中を併用。",
+      "conditions": {
+        "孔": "x方向半軸a、y方向半軸b、a>b。",
+        "荷重": "遠方y方向一様引張σ>0。",
+        "地点": "A=(a,0)、列順σx,σy,τxy。"
+      },
+      "choices": {
+        "1": {
+          "value": "(0,>3σ,0)",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "(>0,>3σ,0)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。"
+        },
+        "3": {
+          "value": "(0,>3σ,>0)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。"
+        },
+        "4": {
+          "value": "(0,<3σ,0)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。"
+        },
+        "5": {
+          "value": "(>0,<3σ,0)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "Inglis式は十分広い等方線形弾性板の理想化。有限幅・塑性・鋭い亀裂先端へそのまま数値を外挿しない。",
+      "evidence": [
+        "extracted/pages/H23/basic/page_009.png"
+      ],
+      "core_concept": "楕円孔端で自由表面と応力集中を併用。",
+      "required_knowledge": "自由表面の応力ベクトル、法線と接線、楕円孔の応力集中。",
+      "solution": "A(a,0)の孔縁の法線はx方向。外力を受けない孔面なのでσx=τxy=0。一方、接線方向のσyは自由表面でも消えない。Inglis解σy=(1+2a/b)σでa>bなので3σより大きい。三成分の順を元表に戻す。",
+      "answer_reason": "A(a,0)の孔縁の法線はx方向。外力を受けない孔面なのでσx=τxy=0。一方、接線方向のσyは自由表面でも消えない。Inglis解σy=(1+2a/b)σでa>bなので3σより大きい。三成分の順を元表に戻す。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。Inglis楕円孔端：(0,(1+2a/b)σ,0)、a>b。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "自由表面の応力ベクトル、法線と接線、楕円孔の応力集中。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:inglis"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_inglis",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：楕円孔端で自由表面と応力集中を併用。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "analysis57_inglis"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-BASIC-3-6",
+      "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+      "stem": "楕円孔端で自由表面と応力集中を併用。",
+      "summary": "楕円孔端で自由表面と応力集中を併用。",
+      "conditions": {
+        "孔": "x方向半軸a、y方向半軸b、a>b。",
+        "荷重": "遠方y方向一様引張σ>0。",
+        "地点": "A=(a,0)、列順σx,σy,τxy。"
+      },
+      "choices": {
+        "1": {
+          "value": "(0,<3σ,0)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。"
+        },
+        "2": {
+          "value": "(0,>3σ,0)",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "3": {
+          "value": "(0,>3σ,>0)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。"
+        },
+        "4": {
+          "value": "(>0,<3σ,0)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。"
+        },
+        "5": {
+          "value": "(>0,>3σ,0)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "Inglis式は十分広い等方線形弾性板の理想化。有限幅・塑性・鋭い亀裂先端へそのまま数値を外挿しない。",
+      "evidence": [
+        "extracted/pages/R01_retest/basic/page_013.png",
+        "extracted/pages/R01_retest/basic/page_014.png"
+      ],
+      "core_concept": "楕円孔端で自由表面と応力集中を併用。",
+      "required_knowledge": "自由表面の応力ベクトル、法線と接線、楕円孔の応力集中。",
+      "solution": "A(a,0)の孔縁の法線はx方向。外力を受けない孔面なのでσx=τxy=0。一方、接線方向のσyは自由表面でも消えない。Inglis解σy=(1+2a/b)σでa>bなので3σより大きい。三成分の順を元表に戻す。",
+      "answer_reason": "A(a,0)の孔縁の法線はx方向。外力を受けない孔面なのでσx=τxy=0。一方、接線方向のσyは自由表面でも消えない。Inglis解σy=(1+2a/b)σでa>bなので3σより大きい。三成分の順を元表に戻す。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。楕円端の自由表面と応力集中。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "自由表面の応力ベクトル、法線と接線、楕円孔の応力集中。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:inglis"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_inglis",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：楕円孔端で自由表面と応力集中を併用。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "analysis57_inglis"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H23-REG-BASIC-3-4",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "梁の固有振動数は支持条件から比較。",
+      "summary": "梁の固有振動数は支持条件から比較。",
+      "conditions": {
+        "a": "両端単純支持。",
+        "b": "片持ち。",
+        "c": "両端固定。",
+        "共通": "同じ長さ・材質・断面、最も低い曲げモード。"
+      },
+      "choices": {
+        "1": {
+          "value": "fa<fb<fc",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。"
+        },
+        "2": {
+          "value": "fa<fc<fb",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。"
+        },
+        "3": {
+          "value": "fb<fa<fc",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "fb<fc<fa",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。"
+        },
+        "5": {
+          "value": "fc<fa<fb",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "一様細長梁・線形小振動の標準モデル。せん断変形・回転慣性を含む短い梁へ厳密な値を一般化しない。",
+      "evidence": [
+        "extracted/pages/H23/basic/page_011.png"
+      ],
+      "core_concept": "梁の固有振動数は支持条件から比較。",
+      "required_knowledge": "曲げ振動、変位と回転の境界条件、固有値。",
+      "solution": "一様Euler–Bernoulli梁のω1=β1²√(EI/(ρA))/L²。同じ梁なら共通係数が消える。片持ちbはβ1≈1.875、単純支持aはπ、両端固定cは≈4.730なのでfb<fa<fc。固定端を増やすと拘束が強くなるが、名称だけで判断せず境界条件の固有値を比較する。",
+      "answer_reason": "一様Euler–Bernoulli梁のω1=β1²√(EI/(ρA))/L²。同じ梁なら共通係数が消える。片持ちbはβ1≈1.875、単純支持aはπ、両端固定cは≈4.730なのでfb<fa<fc。固定端を増やすと拘束が強くなるが、名称だけで判断せず境界条件の固有値を比較する。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。固有値1.875<π<4.730。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "曲げ振動、変位と回転の境界条件、固有値。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:beamfreq"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_beamfreq",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：梁の固有振動数は支持条件から比較。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-3-5",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "梁の固有振動数は支持条件から比較。",
+      "summary": "梁の固有振動数は支持条件から比較。",
+      "conditions": {
+        "a": "両端単純支持。",
+        "b": "片持ち。",
+        "c": "両端固定。",
+        "共通": "同じ長さ・材質・断面、最も低い曲げモード。"
+      },
+      "choices": {
+        "1": {
+          "value": "fb<fa<fc",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "fa<fc<fb",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。"
+        },
+        "3": {
+          "value": "fa<fb<fc",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。"
+        },
+        "4": {
+          "value": "fb<fc<fa",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。"
+        },
+        "5": {
+          "value": "fc<fa<fb",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "一様細長梁・線形小振動の標準モデル。せん断変形・回転慣性を含む短い梁へ厳密な値を一般化しない。",
+      "evidence": [
+        "extracted/pages/H28/basic/page_015.png"
+      ],
+      "core_concept": "梁の固有振動数は支持条件から比較。",
+      "required_knowledge": "曲げ振動、変位と回転の境界条件、固有値。",
+      "solution": "一様Euler–Bernoulli梁のω1=β1²√(EI/(ρA))/L²。同じ梁なら共通係数が消える。片持ちbはβ1≈1.875、単純支持aはπ、両端固定cは≈4.730なのでfb<fa<fc。固定端を増やすと拘束が強くなるが、名称だけで判断せず境界条件の固有値を比較する。",
+      "answer_reason": "一様Euler–Bernoulli梁のω1=β1²√(EI/(ρA))/L²。同じ梁なら共通係数が消える。片持ちbはβ1≈1.875、単純支持aはπ、両端固定cは≈4.730なのでfb<fa<fc。固定端を増やすと拘束が強くなるが、名称だけで判断せず境界条件の固有値を比較する。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。片持ち<単純支持<両端固定。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "曲げ振動、変位と回転の境界条件、固有値。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:beamfreq"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_beamfreq",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：梁の固有振動数は支持条件から比較。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-3-5",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "両端固定棒の荷重点変位から反力を求める。",
+      "summary": "両端固定棒の荷重点変位から反力を求める。",
+      "conditions": {
+        "支持": "両端固定、荷重点の左長さ：右長さ=1:3。",
+        "材料": "一様E,A、微小軸変形。",
+        "符号": "Pは右向き、両反力も右向きを正として記入。"
+      },
+      "choices": {
+        "1": {
+          "value": "(0,−P)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (−3P/4,−P/4) と異なる。"
+        },
+        "2": {
+          "value": "(−P/4,−3P/4)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (−3P/4,−P/4) と異なる。"
+        },
+        "3": {
+          "value": "(−P/2,−P/2)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (−3P/4,−P/4) と異なる。"
+        },
+        "4": {
+          "value": "(−3P/4,−P/4)",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "5": {
+          "value": "(−P,0)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (−3P/4,−P/4) と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/basic/page_011.png",
+        "extracted/pages/H24/basic/page_012.png"
+      ],
+      "core_concept": "両端固定棒の荷重点変位から反力を求める。",
+      "required_knowledge": "軸剛性EA/l、変形適合、不静定棒、力の符号。",
+      "solution": "荷重点の右向き変位をuと置く。左区間の伸びuと右区間の縮みuから、反力はPA=−EAu/lleft、PB=−EAu/lright。釣合PA+PB+P=0と合わせる。左右剛性比3:1なのでPA=−3P/4、PB=−P/4。短い区間の反力が大きく、どちらも図の正方向に対して負。",
+      "answer_reason": "荷重点の右向き変位をuと置く。左区間の伸びuと右区間の縮みuから、反力はPA=−EAu/lleft、PB=−EAu/lright。釣合PA+PB+P=0と合わせる。左右剛性比3:1なのでPA=−3P/4、PB=−P/4。短い区間の反力が大きく、どちらも図の正方向に対して負。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。剛性比3:1、反力とも負。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "軸剛性EA/l、変形適合、不静定棒、力の符号。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:fixedbar"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_fixedbar",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：両端固定棒の荷重点変位から反力を求める。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "mit_material_elastic2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-3-6",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "両端固定棒の荷重点変位から反力を求める。",
+      "summary": "両端固定棒の荷重点変位から反力を求める。",
+      "conditions": {
+        "支持": "両端固定、荷重点の左長さ：右長さ=1:2。",
+        "材料": "一様E,A、微小軸変形。",
+        "符号": "Pは右向き、両反力も右向きを正として記入。"
+      },
+      "choices": {
+        "1": {
+          "value": "(−P,0)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (−2P/3,−P/3) と異なる。"
+        },
+        "2": {
+          "value": "(−2P/3,−P/3)",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "3": {
+          "value": "(−P/2,−P/2)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (−2P/3,−P/3) と異なる。"
+        },
+        "4": {
+          "value": "(−P/3,−2P/3)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (−2P/3,−P/3) と異なる。"
+        },
+        "5": {
+          "value": "(0,−P)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (−2P/3,−P/3) と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/basic/page_012.png",
+        "extracted/pages/H26/basic/page_013.png"
+      ],
+      "core_concept": "両端固定棒の荷重点変位から反力を求める。",
+      "required_knowledge": "軸剛性EA/l、変形適合、不静定棒、力の符号。",
+      "solution": "荷重点の右向き変位をuと置く。左区間の伸びuと右区間の縮みuから、反力はPA=−EAu/lleft、PB=−EAu/lright。釣合PA+PB+P=0と合わせる。左右剛性比2:1なのでPA=−2P/3、PB=−P/3。短い区間の反力が大きく、どちらも図の正方向に対して負。",
+      "answer_reason": "荷重点の右向き変位をuと置く。左区間の伸びuと右区間の縮みuから、反力はPA=−EAu/lleft、PB=−EAu/lright。釣合PA+PB+P=0と合わせる。左右剛性比2:1なのでPA=−2P/3、PB=−P/3。短い区間の反力が大きく、どちらも図の正方向に対して負。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。左右剛性比2:1。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "軸剛性EA/l、変形適合、不静定棒、力の符号。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:fixedbar"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_fixedbar",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：両端固定棒の荷重点変位から反力を求める。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "mit_material_elastic2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-3-4",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "両端固定棒の荷重点変位から反力を求める。",
+      "summary": "両端固定棒の荷重点変位から反力を求める。",
+      "conditions": {
+        "支持": "両端固定、荷重点の左長さ：右長さ=1:4。",
+        "材料": "一様E,A、微小軸変形。",
+        "符号": "Pは右向き、両反力も右向きを正として記入。"
+      },
+      "choices": {
+        "1": {
+          "value": "(−P,0)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (−4P/5,−P/5) と異なる。"
+        },
+        "2": {
+          "value": "(−4P/5,−P/5)",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "3": {
+          "value": "(−P/2,−P/2)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (−4P/5,−P/5) と異なる。"
+        },
+        "4": {
+          "value": "(−P/5,−4P/5)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (−4P/5,−P/5) と異なる。"
+        },
+        "5": {
+          "value": "(0,−P)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (−4P/5,−P/5) と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/basic/page_010.png"
+      ],
+      "core_concept": "両端固定棒の荷重点変位から反力を求める。",
+      "required_knowledge": "軸剛性EA/l、変形適合、不静定棒、力の符号。",
+      "solution": "荷重点の右向き変位をuと置く。左区間の伸びuと右区間の縮みuから、反力はPA=−EAu/lleft、PB=−EAu/lright。釣合PA+PB+P=0と合わせる。左右剛性比4:1なのでPA=−4P/5、PB=−P/5。短い区間の反力が大きく、どちらも図の正方向に対して負。",
+      "answer_reason": "荷重点の右向き変位をuと置く。左区間の伸びuと右区間の縮みuから、反力はPA=−EAu/lleft、PB=−EAu/lright。釣合PA+PB+P=0と合わせる。左右剛性比4:1なのでPA=−4P/5、PB=−P/5。短い区間の反力が大きく、どちらも図の正方向に対して負。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。左右剛性比4:1、負反力。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "軸剛性EA/l、変形適合、不静定棒、力の符号。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:fixedbar"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_fixedbar",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：両端固定棒の荷重点変位から反力を求める。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "mit_material_elastic2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-3-1",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "三次元Hooke則のPoisson結合。",
+      "summary": "三次元Hooke則のPoisson結合。",
+      "conditions": {
+        "材料": "均質等方の線形弾性体。",
+        "記号": "垂直応力σx,σy,σz、E、Poisson比ν。"
+      },
+      "choices": {
+        "1": {
+          "value": "Eσx",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (σx−ν(σy+σz))/E と異なる。"
+        },
+        "2": {
+          "value": "E(σx+ν(σy+σz))",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (σx−ν(σy+σz))/E と異なる。"
+        },
+        "3": {
+          "value": "E(σx−ν(σy+σz))",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (σx−ν(σy+σz))/E と異なる。"
+        },
+        "4": {
+          "value": "(σx+ν(σy+σz))/E",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (σx−ν(σy+σz))/E と異なる。"
+        },
+        "5": {
+          "value": "(σx−ν(σy+σz))/E",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_010.png"
+      ],
+      "core_concept": "三次元Hooke則のPoisson結合。",
+      "required_knowledge": "三次元構成則、横収縮、応力とひずみの次元。",
+      "solution": "x方向の引張応力はσx/Eの正ひずみを作る。y,z方向の引張は横収縮を通じて各−νσ/Eを加えるのでεx=[σx−ν(σy+σz)]/E。弾性係数を掛けるとひずみが無次元にならず、横応力の符号を正にすると収縮の向きも逆になる。",
+      "answer_reason": "x方向の引張応力はσx/Eの正ひずみを作る。y,z方向の引張は横収縮を通じて各−νσ/Eを加えるのでεx=[σx−ν(σy+σz)]/E。弾性係数を掛けるとひずみが無次元にならず、横応力の符号を正にすると収縮の向きも逆になる。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。三次元Hooke則εx=(σx−ν(σy+σz))/E。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "三次元構成則、横収縮、応力とひずみの次元。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:hooke"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_hooke",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：三次元Hooke則のPoisson結合。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "mit_material_elastic2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-3-2",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "同面積でも曲げ方向の断面高さが効く。",
+      "summary": "同面積でも曲げ方向の断面高さが効く。",
+      "conditions": {
+        "断面": "a:幅z=d・高さy=4d、b:2d×2d、c:幅z=4d・高さy=d。",
+        "共通": "同じE、梁長さ、支持、荷重、断面積4d²。",
+        "曲げ": "xy面内。"
+      },
+      "choices": {
+        "1": {
+          "value": "aのみ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 cのみ と異なる。"
+        },
+        "2": {
+          "value": "bのみ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 cのみ と異なる。"
+        },
+        "3": {
+          "value": "cのみ",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "a,b",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 cのみ と異なる。"
+        },
+        "5": {
+          "value": "b,c",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 cのみ と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_011.png"
+      ],
+      "core_concept": "同面積でも曲げ方向の断面高さが効く。",
+      "required_knowledge": "断面二次モーメント、曲げ軸、曲げ剛性、撓み。",
+      "solution": "xy面内の曲げではz軸回りIz=bh³/12。aは幅d×高さ4dで16d⁴/3、bは2d×2dで4d⁴/3、cは幅4d×高さdでd⁴/3。cの曲げ剛性EIが最小なので撓みが最大。面積はいずれも4d²でも、曲げでは高さの三乗を使う。",
+      "answer_reason": "xy面内の曲げではz軸回りIz=bh³/12。aは幅d×高さ4dで16d⁴/3、bは2d×2dで4d⁴/3、cは幅4d×高さdでd⁴/3。cの曲げ剛性EIが最小なので撓みが最大。面積はいずれも4d²でも、曲げでは高さの三乗を使う。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。断面二次モーメントbh³/12、c最小。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "断面二次モーメント、曲げ軸、曲げ剛性、撓み。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:section"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_section",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：同面積でも曲げ方向の断面高さが効く。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "struct_mit_beam"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-3-6",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "同面積でも曲げ方向の断面高さが効く。",
+      "summary": "同面積でも曲げ方向の断面高さが効く。",
+      "conditions": {
+        "断面": "a:幅z=d・高さy=4d、b:2d×2d、c:幅z=4d・高さy=d。",
+        "共通": "同じE、梁長さ、支持、荷重、断面積4d²。",
+        "曲げ": "xy面内。"
+      },
+      "choices": {
+        "1": {
+          "value": "a,b",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 cのみ と異なる。"
+        },
+        "2": {
+          "value": "b,c",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 cのみ と異なる。"
+        },
+        "3": {
+          "value": "aのみ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 cのみ と異なる。"
+        },
+        "4": {
+          "value": "bのみ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 cのみ と異なる。"
+        },
+        "5": {
+          "value": "cのみ",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/basic/page_014.png",
+        "extracted/pages/H29/basic/page_015.png"
+      ],
+      "core_concept": "同面積でも曲げ方向の断面高さが効く。",
+      "required_knowledge": "断面二次モーメント、曲げ軸、曲げ剛性、撓み。",
+      "solution": "xy面内の曲げではz軸回りIz=bh³/12。aは幅d×高さ4dで16d⁴/3、bは2d×2dで4d⁴/3、cは幅4d×高さdでd⁴/3。cの曲げ剛性EIが最小なので撓みが最大。面積はいずれも4d²でも、曲げでは高さの三乗を使う。",
+      "answer_reason": "xy面内の曲げではz軸回りIz=bh³/12。aは幅d×高さ4dで16d⁴/3、bは2d×2dで4d⁴/3、cは幅4d×高さdでd⁴/3。cの曲げ剛性EIが最小なので撓みが最大。面積はいずれも4d²でも、曲げでは高さの三乗を使う。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。曲げ方向の高さ3乗、c最小。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "断面二次モーメント、曲げ軸、曲げ剛性、撓み。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:section"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_section",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：同面積でも曲げ方向の断面高さが効く。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "struct_mit_beam"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-3-5",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "軸伸びと弾性エネルギーの二分の一。",
+      "summary": "軸伸びと弾性エネルギーの二分の一。",
+      "conditions": {
+        "棒": "長さl、断面積A、E一定。",
+        "伸び": "軸伸びδ、弾性域の準静的負荷。"
+      },
+      "choices": {
+        "1": {
+          "value": "P=EAδ/l,U=EAδ²/l",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 P=EAδ/l,U=EAδ²/(2l) と異なる。"
+        },
+        "2": {
+          "value": "P=EAδ/l,U=EAδ²/(2l)",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "3": {
+          "value": "P=EAδ/(2l),U=EAδ²/l",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 P=EAδ/l,U=EAδ²/(2l) と異なる。"
+        },
+        "4": {
+          "value": "P=EAδ/(2l),U=EAδ²/(2l)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 P=EAδ/l,U=EAδ²/(2l) と異なる。"
+        },
+        "5": {
+          "value": "P=EAδ/(2l),U=EAδ²/(4l)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 P=EAδ/l,U=EAδ²/(2l) と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_013.png"
+      ],
+      "core_concept": "軸伸びと弾性エネルギーの二分の一。",
+      "required_knowledge": "応力・ひずみ、力変位線図、弾性ひずみエネルギー。",
+      "solution": "ε=δ/l、σ=Eε、P=Aσ=EAδ/l。線形に力を増す仕事U=∫0^δ(EA/l)x dx=EAδ²/(2l)=Pδ/2。最終荷重Pを全行程に掛けたPδでは仕事を二倍に数える。",
+      "answer_reason": "ε=δ/l、σ=Eε、P=Aσ=EAδ/l。線形に力を増す仕事U=∫0^δ(EA/l)x dx=EAδ²/(2l)=Pδ/2。最終荷重Pを全行程に掛けたPδでは仕事を二倍に数える。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。P=EAδ/l、U=EAδ²/(2l)。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "応力・ひずみ、力変位線図、弾性ひずみエネルギー。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:axialenergy"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_axialenergy",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：軸伸びと弾性エネルギーの二分の一。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "mit_material_elastic2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-3-5",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "ばねの並列・直列と両側支持を区別。",
+      "summary": "ばねの並列・直列と両側支持を区別。",
+      "conditions": {
+        "配置": "a並列、b直列、c左右の壁",
+        "共通": "ばね二本ともk、質点m、ばね質量・摩擦・減衰を無視。"
+      },
+      "choices": {
+        "1": {
+          "value": "a",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 b と異なる。"
+        },
+        "2": {
+          "value": "b",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "3": {
+          "value": "c",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 b と異なる。"
+        },
+        "4": {
+          "value": "a,b",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 b と異なる。"
+        },
+        "5": {
+          "value": "b,c",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 b と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/basic/page_011.png"
+      ],
+      "core_concept": "ばねの並列・直列と両側支持を区別。",
+      "required_knowledge": "等価ばね定数、復元力の符号、角振動数。",
+      "solution": "並列では同変位の力が加わりkeff=2k。直列では同じ力に対する伸びが加わりkeff=k/2。質点の両側を壁へつなぐ二本は、右へ動かすと左の伸びと右の縮みがともに左向き復元力を作り2k。ω=√(keff/m)が最小なのは直列。配置のa,b,cが年度で入れ替わるので番号を転用しない。",
+      "answer_reason": "並列では同変位の力が加わりkeff=2k。直列では同じ力に対する伸びが加わりkeff=k/2。質点の両側を壁へつなぐ二本は、右へ動かすと左の伸びと右の縮みがともに左向き復元力を作り2k。ω=√(keff/m)が最小なのは直列。配置のa,b,cが年度で入れ替わるので番号を転用しない。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。並列2k、直列k/2、両壁2k。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "等価ばね定数、復元力の符号、角振動数。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:spring"
+      ],
+      "discipline_id": "basic_3_0",
+      "concept_id": "finish57_spring",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：ばねの並列・直列と両側支持を区別。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "analysis57_shm"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-BASIC-3-5",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "stem": "ばねの並列・直列と両側支持を区別。",
+      "summary": "ばねの並列・直列と両側支持を区別。",
+      "conditions": {
+        "配置": "a並列、b左右の壁、c直列",
+        "共通": "ばね二本ともk、質点m、ばね質量・摩擦・減衰を無視。"
+      },
+      "choices": {
+        "1": {
+          "value": "a",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 c と異なる。"
+        },
+        "2": {
+          "value": "b",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 c と異なる。"
+        },
+        "3": {
+          "value": "c",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "a,b",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 c と異なる。"
+        },
+        "5": {
+          "value": "b,c",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 c と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/basic/page_013.png"
+      ],
+      "core_concept": "ばねの並列・直列と両側支持を区別。",
+      "required_knowledge": "等価ばね定数、復元力の符号、角振動数。",
+      "solution": "並列では同変位の力が加わりkeff=2k。直列では同じ力に対する伸びが加わりkeff=k/2。質点の両側を壁へつなぐ二本は、右へ動かすと左の伸びと右の縮みがともに左向き復元力を作り2k。ω=√(keff/m)が最小なのは直列。配置のa,b,cが年度で入れ替わるので番号を転用しない。",
+      "answer_reason": "並列では同変位の力が加わりkeff=2k。直列では同じ力に対する伸びが加わりkeff=k/2。質点の両側を壁へつなぐ二本は、右へ動かすと左の伸びと右の縮みがともに左向き復元力を作り2k。ω=√(keff/m)が最小なのは直列。配置のa,b,cが年度で入れ替わるので番号を転用しない。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。cのみ直列k/2。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "等価ばね定数、復元力の符号、角振動数。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:spring"
+      ],
+      "discipline_id": "basic_3_0",
+      "concept_id": "finish57_spring",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：ばねの並列・直列と両側支持を区別。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "analysis57_shm"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-3-2",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "偏微分で勾配を作ってから座標を代入。",
+      "summary": "偏微分で勾配を作ってから座標を代入。",
+      "conditions": {
+        "関数": "ψ(x,y)=2x−x²y。",
+        "点": "(1,−1)。"
+      },
+      "choices": {
+        "1": {
+          "value": "(1,−4)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (4,−1) と異なる。"
+        },
+        "2": {
+          "value": "(4,−1)",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "3": {
+          "value": "√17",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (4,−1) と異なる。"
+        },
+        "4": {
+          "value": "3",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (4,−1) と異なる。"
+        },
+        "5": {
+          "value": "−3",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (4,−1) と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/basic/page_008.png"
+      ],
+      "core_concept": "偏微分で勾配を作ってから座標を代入。",
+      "required_knowledge": "偏微分、勾配、ベクトルとノルム。",
+      "solution": "ψ=2x−x²yの勾配は(∂ψ/∂x,∂ψ/∂y)=(2−2xy,−x²)。x=1,y=−1を入れると(4,−1)。√17はこのベクトルの大きさであって勾配そのものではない。先に点の値を代入してψを定数にすると微分情報が失われる。",
+      "answer_reason": "ψ=2x−x²yの勾配は(∂ψ/∂x,∂ψ/∂y)=(2−2xy,−x²)。x=1,y=−1を入れると(4,−1)。√17はこのベクトルの大きさであって勾配そのものではない。先に点の値を代入してψを定数にすると微分情報が失われる。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。勾配(2−2xy,−x²)=(4,−1)。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "偏微分、勾配、ベクトルとノルム。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:gradient"
+      ],
+      "discipline_id": "basic_3_9",
+      "concept_id": "finish57_gradient",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：偏微分で勾配を作ってから座標を代入。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-3-4",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "薄板の垂直軸定理で慣性モーメントを比較。",
+      "summary": "薄板の垂直軸定理で慣性モーメントを比較。",
+      "conditions": {
+        "薄板": "一様な長方形、x方向a、y方向2a。",
+        "軸": "重心を通る直交三軸、zは面外。"
+      },
+      "choices": {
+        "1": {
+          "value": "Ixのみ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Izのみ と異なる。"
+        },
+        "2": {
+          "value": "Iyのみ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Izのみ と異なる。"
+        },
+        "3": {
+          "value": "Izのみ",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "Ix,Iy",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Izのみ と異なる。"
+        },
+        "5": {
+          "value": "Ix,Iz",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Izのみ と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/basic/page_009.png"
+      ],
+      "core_concept": "薄板の垂直軸定理で慣性モーメントを比較。",
+      "required_knowledge": "質量慣性モーメント、垂直軸定理、重心軸。",
+      "solution": "重心を通る面内x軸はIx=M(2a)²/12=Ma²/3、y軸はIy=Ma²/12。面外z軸には垂直軸定理Iz=Ix+Iy=5Ma²/12を用いる。Ix>Iyでも和のIzがさらに大きいのでzのみ。",
+      "answer_reason": "重心を通る面内x軸はIx=M(2a)²/12=Ma²/3、y軸はIy=Ma²/12。面外z軸には垂直軸定理Iz=Ix+Iy=5Ma²/12を用いる。Ix>Iyでも和のIzがさらに大きいのでzのみ。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。垂直軸定理Iz=Ix+Iy。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "質量慣性モーメント、垂直軸定理、重心軸。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:inertia"
+      ],
+      "discipline_id": "basic_3_7",
+      "concept_id": "finish57_inertia",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：薄板の垂直軸定理で慣性モーメントを比較。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-3-5",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "異材両端固定棒の荷重点剛性。",
+      "summary": "異材両端固定棒の荷重点剛性。",
+      "conditions": {
+        "棒": "全長l、各区間l/2、断面積S一定、左E1・右E2。",
+        "支持": "両端固定、中央に軸方向P。"
+      },
+      "choices": {
+        "1": {
+          "value": "Pl/(2SE1)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Pl/[2S(E1+E2)] と異なる。"
+        },
+        "2": {
+          "value": "Pl/(2SE2)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Pl/[2S(E1+E2)] と異なる。"
+        },
+        "3": {
+          "value": "Pl/[2S(E1+E2)]",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "3Pl/[2S(2E1+E2)]",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Pl/[2S(E1+E2)] と異なる。"
+        },
+        "5": {
+          "value": "Pl/[2S(E1−E2)]",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Pl/[2S(E1+E2)] と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/basic/page_010.png"
+      ],
+      "core_concept": "異材両端固定棒の荷重点剛性。",
+      "required_knowledge": "異材の軸剛性、適合と釣合、極限検算。",
+      "solution": "荷重点の左右はそれぞれl/2なので軸剛性は2SE1/lと2SE2/l。変位δに対し一方の伸びと他方の縮みがともに復元力を作る。P=[2S(E1+E2)/l]δ、従ってδ=Pl/[2S(E1+E2)]。E1=E2にしても分母が0にならず、均質な両端固定棒へ戻る。",
+      "answer_reason": "荷重点の左右はそれぞれl/2なので軸剛性は2SE1/lと2SE2/l。変位δに対し一方の伸びと他方の縮みがともに復元力を作る。P=[2S(E1+E2)/l]δ、従ってδ=Pl/[2S(E1+E2)]。E1=E2にしても分母が0にならず、均質な両端固定棒へ戻る。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。左右剛性合計2S(E1+E2)/l。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "異材の軸剛性、適合と釣合、極限検算。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:compositebar"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_compositebar",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：異材両端固定棒の荷重点剛性。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "mit_material_elastic2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-3-6",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "等しい片持ち撓みから形状比を求める。",
+      "summary": "等しい片持ち撓みから形状比を求める。",
+      "conditions": {
+        "梁1": "長さl、正方形一辺l/4。",
+        "梁2": "長さa、断面幅l/32、高さd。",
+        "共通": "同じE、先端荷重P、片持ち梁、等しい先端撓み。"
+      },
+      "choices": {
+        "1": {
+          "value": "ad=0.5",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 a/d=2 と異なる。"
+        },
+        "2": {
+          "value": "ad=2.5",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 a/d=2 と異なる。"
+        },
+        "3": {
+          "value": "a/d=0.5",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 a/d=2 と異なる。"
+        },
+        "4": {
+          "value": "a/d=2",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "5": {
+          "value": "a/d=2.5",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 a/d=2 と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/basic/page_011.png",
+        "extracted/pages/H27/basic/page_012.png"
+      ],
+      "core_concept": "等しい片持ち撓みから形状比を求める。",
+      "required_knowledge": "梁撓み、曲げ軸、断面二次モーメント、次元。",
+      "solution": "先端荷重撓みδ=PL³/(3EI)。梁1の正方形断面はI1=(l/4)^4/12=l⁴/3072。梁2は幅l/32、高さdなのでI2=ld³/384。等しい撓みからl³/I1=a³/I2、a³/d³=8、a/d=2。長さの積adは無次元の形状比とならない。",
+      "answer_reason": "先端荷重撓みδ=PL³/(3EI)。梁1の正方形断面はI1=(l/4)^4/12=l⁴/3072。梁2は幅l/32、高さdなのでI2=ld³/384。等しい撓みからl³/I1=a³/I2、a³/d³=8、a/d=2。長さの積adは無次元の形状比とならない。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。撓み比からa³/d³=8。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "梁撓み、曲げ軸、断面二次モーメント、次元。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:cantilever"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_cantilever",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：等しい片持ち撓みから形状比を求める。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "struct_mit_beam"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-3-6",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "平行な棒の共通伸びから応力比を求める。",
+      "summary": "平行な棒の共通伸びから応力比を求める。",
+      "conditions": {
+        "棒": "等長L、A棒のAA,EAとB棒のAB,EB。",
+        "端": "剛体板で共通軸変位、原典の平行配置。"
+      },
+      "choices": {
+        "1": {
+          "value": "AAEA/(ABEB)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 EA/EB と異なる。"
+        },
+        "2": {
+          "value": "ABEB/(AAEA)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 EA/EB と異なる。"
+        },
+        "3": {
+          "value": "ABEA/(AAEB)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 EA/EB と異なる。"
+        },
+        "4": {
+          "value": "EA/EB",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "5": {
+          "value": "EB/EA",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 EA/EB と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/basic/page_016.png",
+        "extracted/pages/H28/basic/page_017.png"
+      ],
+      "core_concept": "平行な棒の共通伸びから応力比を求める。",
+      "required_knowledge": "共通ひずみ、応力と軸力の区別。",
+      "solution": "両棒は等しい長さLで剛体端板に接続され、端板の回転が拘束されるため伸びδが共通。εA=εB=δ/Lで、σA/σB=EA/EB。軸力の比ならNA/NB=AAEA/(ABEB)だが、問は応力なので断面積は消える。",
+      "answer_reason": "両棒は等しい長さLで剛体端板に接続され、端板の回転が拘束されるため伸びδが共通。εA=εB=δ/Lで、σA/σB=EA/EB。軸力の比ならNA/NB=AAEA/(ABEB)だが、問は応力なので断面積は消える。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。共通歪みからσA/σB=EA/EB。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "共通ひずみ、応力と軸力の区別。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:parallelbar"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_parallelbar",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：平行な棒の共通伸びから応力比を求める。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "mit_material_elastic2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-3-4",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "対称性と節点方程式で抵抗網を比較。",
+      "summary": "対称性と節点方程式で抵抗網を比較。",
+      "conditions": {
+        "配線": "a菱形5辺、b3×3節点格子、c2×3節点梯子",
+        "端子": "原典で示す対角頂点A,B。",
+        "各辺": "長さL、同材料・同断面。交点の接続を原典で確認。"
+      },
+      "choices": {
+        "1": {
+          "value": "Ra<Rb<Rc",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Ra<Rc<Rb と異なる。"
+        },
+        "2": {
+          "value": "Ra<Rc<Rb",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "3": {
+          "value": "Rc<Ra<Rb",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Ra<Rc<Rb と異なる。"
+        },
+        "4": {
+          "value": "Rc<Rb<Ra",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Ra<Rc<Rb と異なる。"
+        },
+        "5": {
+          "value": "Rb<Ra<Rc",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Ra<Rc<Rb と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/basic/page_012.png"
+      ],
+      "core_concept": "対称性と節点方程式で抵抗網を比較。",
+      "required_knowledge": "Ohm則、Kirchhoff則、等電位、グラフ。",
+      "solution": "同長同断面の各辺をrとする。菱形は上下節点が同電位で中央の辺に電流が流れず、2rの二枝並列でr。3×3節点格子の対角端子は3r/2、2×3梯子の対角端子は7r/5。後二者は分岐があるので図の見た目で直列化せず、端子1Vで各内部節点にΣ(Vi−Vj)/r=0を立てる。有理数消去による別検算を保存。r<7r/5<3r/2を当該a,b,cへ戻す。",
+      "answer_reason": "同長同断面の各辺をrとする。菱形は上下節点が同電位で中央の辺に電流が流れず、2rの二枝並列でr。3×3節点格子の対角端子は3r/2、2×3梯子の対角端子は7r/5。後二者は分岐があるので図の見た目で直列化せず、端子1Vで各内部節点にΣ(Vi−Vj)/r=0を立てる。有理数消去による別検算を保存。r<7r/5<3r/2を当該a,b,cへ戻す。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。網目Ra=r,Rb=3r/2,Rc=7r/5。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "Ohm則、Kirchhoff則、等電位、グラフ。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:network"
+      ],
+      "discipline_id": "basic_3_6",
+      "concept_id": "finish57_network",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：対称性と節点方程式で抵抗網を比較。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "analysis57_resistors"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-BASIC-3-6",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "stem": "対称性と節点方程式で抵抗網を比較。",
+      "summary": "対称性と節点方程式で抵抗網を比較。",
+      "conditions": {
+        "配線": "a2×3節点梯子、b3×3節点格子、c菱形5辺",
+        "端子": "原典で示す対角頂点A,B。",
+        "各辺": "長さL、同材料・同断面。交点の接続を原典で確認。"
+      },
+      "choices": {
+        "1": {
+          "value": "Ra<Rb<Rc",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Rc<Ra<Rb と異なる。"
+        },
+        "2": {
+          "value": "Ra<Rc<Rb",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Rc<Ra<Rb と異なる。"
+        },
+        "3": {
+          "value": "Rc<Ra<Rb",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "Rc<Rb<Ra",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Rc<Ra<Rb と異なる。"
+        },
+        "5": {
+          "value": "Rb<Ra<Rc",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Rc<Ra<Rb と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/basic/page_012.png",
+        "extracted/pages/R05/basic/page_013.png"
+      ],
+      "core_concept": "対称性と節点方程式で抵抗網を比較。",
+      "required_knowledge": "Ohm則、Kirchhoff則、等電位、グラフ。",
+      "solution": "同長同断面の各辺をrとする。菱形は上下節点が同電位で中央の辺に電流が流れず、2rの二枝並列でr。3×3節点格子の対角端子は3r/2、2×3梯子の対角端子は7r/5。後二者は分岐があるので図の見た目で直列化せず、端子1Vで各内部節点にΣ(Vi−Vj)/r=0を立てる。有理数消去による別検算を保存。r<7r/5<3r/2を当該a,b,cへ戻す。",
+      "answer_reason": "同長同断面の各辺をrとする。菱形は上下節点が同電位で中央の辺に電流が流れず、2rの二枝並列でr。3×3節点格子の対角端子は3r/2、2×3梯子の対角端子は7r/5。後二者は分岐があるので図の見た目で直列化せず、端子1Vで各内部節点にΣ(Vi−Vj)/r=0を立てる。有理数消去による別検算を保存。r<7r/5<3r/2を当該a,b,cへ戻す。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。梯子7r/5、格子3r/2、菱形r。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "Ohm則、Kirchhoff則、等電位、グラフ。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:network"
+      ],
+      "discipline_id": "basic_3_6",
+      "concept_id": "finish57_network",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：対称性と節点方程式で抵抗網を比較。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "analysis57_resistors"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-3-5",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "トラスの軸力比と軸伸び比を分ける。",
+      "summary": "トラスの軸力比と軸伸び比を分ける。",
+      "conditions": {
+        "形状": "A,C間の棒1は水平30°、B,C間の棒2は60°。A,B同じ水平高さ。",
+        "材料": "E共通、断面A1,A2、Cへ下向きP、ピン接合。"
+      },
+      "choices": {
+        "1": {
+          "value": "A1/A2",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 A2/A1 と異なる。"
+        },
+        "2": {
+          "value": "√3A1/(2A2)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 A2/A1 と異なる。"
+        },
+        "3": {
+          "value": "A2/A1",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "√3A2/(2A1)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 A2/A1 と異なる。"
+        },
+        "5": {
+          "value": "√3A2/A1",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 A2/A1 と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/basic/page_013.png"
+      ],
+      "core_concept": "トラスの軸力比と軸伸び比を分ける。",
+      "required_knowledge": "節点釣合、三角形の幾何、棒伸び。",
+      "solution": "節点Cの水平釣合からN1cos30°=N2cos60°、N1/N2=1/√3。幾何からl1/l2=√3。棒伸びδi=Ni li/(EAi)なのでδ1/δ2=(1/√3)×√3×A2/A1=A2/A1。軸力比だけを答えにしない。",
+      "answer_reason": "節点Cの水平釣合からN1cos30°=N2cos60°、N1/N2=1/√3。幾何からl1/l2=√3。棒伸びδi=Ni li/(EAi)なのでδ1/δ2=(1/√3)×√3×A2/A1=A2/A1。軸力比だけを答えにしない。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。水平力釣合と伸びからδ1/δ2=A2/A1。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "節点釣合、三角形の幾何、棒伸び。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:truss"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_truss",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：トラスの軸力比と軸伸び比を分ける。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "mit_material_elastic2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-3-4",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "節点の水平釣合からトラス軸力比。",
+      "summary": "節点の水平釣合からトラス軸力比。",
+      "conditions": {
+        "形状": "棒1水平30°、棒2水平60°、Cに鉛直P。",
+        "接合": "ピン節点の二力部材。"
+      },
+      "choices": {
+        "1": {
+          "value": "1/2",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 1/√3 と異なる。"
+        },
+        "2": {
+          "value": "1/√3",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "3": {
+          "value": "1",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 1/√3 と異なる。"
+        },
+        "4": {
+          "value": "√3",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 1/√3 と異なる。"
+        },
+        "5": {
+          "value": "2",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 1/√3 と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/basic/page_011.png"
+      ],
+      "core_concept": "節点の水平釣合からトラス軸力比。",
+      "required_knowledge": "二力部材、水平釣合、力の分解。",
+      "solution": "荷重Pは鉛直なのでCの水平力和は0。N1cos30°=N2cos60°からN1/N2=(1/2)/(√3/2)=1/√3。棒の長さや断面積は、この静定トラスの力の釣合による比には不要。伸び比を問う別問題と混同しない。",
+      "answer_reason": "荷重Pは鉛直なのでCの水平力和は0。N1cos30°=N2cos60°からN1/N2=(1/2)/(√3/2)=1/√3。棒の長さや断面積は、この静定トラスの力の釣合による比には不要。伸び比を問う別問題と混同しない。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。水平力釣合N1/N2=1/√3。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "二力部材、水平釣合、力の分解。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:trussforce"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_trussforce",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：節点の水平釣合からトラス軸力比。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-BASIC-3-5",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "安定平衡のポテンシャルは最小。",
+      "summary": "安定平衡のポテンシャルは最小。",
+      "conditions": {
+        "系": "鉛直ばねk、質点m、重力g。",
+        "座標": "自然長位置から下向きをu>0。",
+        "問": "不適切な記述を一つ。"
+      },
+      "choices": {
+        "1": {
+          "value": "ばねポテンシャルはku²/2",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 平衡で全ポテンシャル最大 と異なる。"
+        },
+        "2": {
+          "value": "重力ポテンシャルは−mgu",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 平衡で全ポテンシャル最大 と異なる。"
+        },
+        "3": {
+          "value": "平衡で全ポテンシャル最大",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "平衡変位mg/k",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 平衡で全ポテンシャル最大 と異なる。"
+        },
+        "5": {
+          "value": "エネルギーの極値が保守系FEMの基礎",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 平衡で全ポテンシャル最大 と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/basic/page_014.png"
+      ],
+      "core_concept": "安定平衡のポテンシャルは最小。",
+      "required_knowledge": "ポテンシャル、停留と安定性、座標の符号。",
+      "solution": "自然長から下向きuとしてΠ=ku²/2−mgu。Πprime=ku−mg=0でu=mg/k、Πsecond=k>0なので最小。最大とする3が不適切。他の式は同じ座標と基準で整合する。有限要素のエネルギー原理も保守系等の適用条件があり、あらゆる非保存力の問題へ無条件に一般化しない。",
+      "answer_reason": "自然長から下向きuとしてΠ=ku²/2−mgu。Πprime=ku−mg=0でu=mg/k、Πsecond=k>0なので最小。最大とする3が不適切。他の式は同じ座標と基準で整合する。有限要素のエネルギー原理も保守系等の適用条件があり、あらゆる非保存力の問題へ無条件に一般化しない。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。Π二階微分k>0、最小を最大とする肢が誤。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "ポテンシャル、停留と安定性、座標の符号。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:potential"
+      ],
+      "discipline_id": "basic_3_7",
+      "concept_id": "finish57_potential",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：安定平衡のポテンシャルは最小。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "analysis57_shm"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-BASIC-3-6",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "SI接頭辞をそろえて軸伸びを計算。",
+      "summary": "SI接頭辞をそろえて軸伸びを計算。",
+      "conditions": {
+        "荷重N": "4000",
+        "長さmm": "2000",
+        "面積mm2": "100",
+        "弾性係数N/mm2": "200000"
+      },
+      "choices": {
+        "1": {
+          "value": ".004mm",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 .4mm と異なる。"
+        },
+        "2": {
+          "value": ".04mm",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 .4mm と異なる。"
+        },
+        "3": {
+          "value": ".4mm",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "4mm",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 .4mm と異なる。"
+        },
+        "5": {
+          "value": "40mm",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 .4mm と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/basic/page_014.png",
+        "extracted/pages/H30/basic/page_015.png"
+      ],
+      "core_concept": "SI接頭辞をそろえて軸伸びを計算。",
+      "required_knowledge": "軸伸び、応力単位、接頭辞と長さ単位。",
+      "solution": "NとmmにそろえるとP=4000 N、L=2000 mm、A=100 mm²、E=200000 N/mm²。δ=PL/(EA)=0.4 mm。GPaをN/mm²にすると1GPa=1000N/mm²。長さだけmに残すと1000倍の誤差が生じる。",
+      "answer_reason": "NとmmにそろえるとP=4000 N、L=2000 mm、A=100 mm²、E=200000 N/mm²。δ=PL/(EA)=0.4 mm。GPaをN/mm²にすると1GPa=1000N/mm²。長さだけmに残すと1000倍の誤差が生じる。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。単位換算PL/EA=.4mm。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "軸伸び、応力単位、接頭辞と長さ単位。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:extension"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_extension",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：SI接頭辞をそろえて軸伸びを計算。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "mit_material_elastic2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-BASIC-3-4",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "stem": "SI接頭辞をそろえて軸伸びを計算。",
+      "summary": "SI接頭辞をそろえて軸伸びを計算。",
+      "conditions": {
+        "荷重N": "2000",
+        "長さmm": "2400",
+        "面積mm2": "120",
+        "弾性係数N/mm2": "200000"
+      },
+      "choices": {
+        "1": {
+          "value": ".010mm",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 .20mm と異なる。"
+        },
+        "2": {
+          "value": ".020mm",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 .20mm と異なる。"
+        },
+        "3": {
+          "value": ".050mm",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 .20mm と異なる。"
+        },
+        "4": {
+          "value": ".10mm",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 .20mm と異なる。"
+        },
+        "5": {
+          "value": ".20mm",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/basic/page_010.png"
+      ],
+      "core_concept": "SI接頭辞をそろえて軸伸びを計算。",
+      "required_knowledge": "軸伸び、応力単位、接頭辞と長さ単位。",
+      "solution": "NとmmにそろえるとP=2000 N、L=2400 mm、A=120 mm²、E=200000 N/mm²。δ=PL/(EA)=0.2 mm。GPaをN/mm²にすると1GPa=1000N/mm²。長さだけmに残すと1000倍の誤差が生じる。",
+      "answer_reason": "NとmmにそろえるとP=2000 N、L=2400 mm、A=120 mm²、E=200000 N/mm²。δ=PL/(EA)=0.2 mm。GPaをN/mm²にすると1GPa=1000N/mm²。長さだけmに残すと1000倍の誤差が生じる。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。PL/EA=.20mm。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "軸伸び、応力単位、接頭辞と長さ単位。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:extension"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_extension",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：SI接頭辞をそろえて軸伸びを計算。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "mit_material_elastic2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-3-3",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "線形抵抗を受ける落下の終端速度。",
+      "summary": "線形抵抗を受ける落下の終端速度。",
+      "conditions": {
+        "質点": "m>0、g>0。",
+        "抵抗": "速さに比例、係数k>0、運動と反対。",
+        "範囲": "原典は浮力を別項として与えない。"
+      },
+      "choices": {
+        "1": {
+          "value": "mg/k",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "2mg/k",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 mg/k と異なる。"
+        },
+        "3": {
+          "value": "√(mg)/k",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 mg/k と異なる。"
+        },
+        "4": {
+          "value": "√(mg/k)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 mg/k と異なる。"
+        },
+        "5": {
+          "value": "√(2mg/k)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 mg/k と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/basic/page_013.png"
+      ],
+      "core_concept": "線形抵抗を受ける落下の終端速度。",
+      "required_knowledge": "運動方程式、終端速度、一次微分方程式。",
+      "solution": "下向き正でm dv/dt=mg−kv。定常状態dv/dt=0からv∞=mg/k。解v=mg/k+(v0−mg/k)e^(−kt/m)もこの極限に収束する。速度の二乗に比例する抵抗なら平方根になるが、原典はkvなので使わない。",
+      "answer_reason": "下向き正でm dv/dt=mg−kv。定常状態dv/dt=0からv∞=mg/k。解v=mg/k+(v0−mg/k)e^(−kt/m)もこの極限に収束する。速度の二乗に比例する抵抗なら平方根になるが、原典はkvなので使わない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。線形抵抗終端mg/k。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "運動方程式、終端速度、一次微分方程式。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:terminal"
+      ],
+      "discipline_id": "basic_3_7",
+      "concept_id": "finish57_terminal",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：線形抵抗を受ける落下の終端速度。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-3-4",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "非圧縮条件を体積ひずみから読む。",
+      "summary": "非圧縮条件を体積ひずみから読む。",
+      "conditions": {
+        "材料": "等方線形弾性、微小ひずみ。",
+        "要件": "任意の応力状態でも体積変化なし。"
+      },
+      "choices": {
+        "1": {
+          "value": "0",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 0.5 と異なる。"
+        },
+        "2": {
+          "value": "0.1",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 0.5 と異なる。"
+        },
+        "3": {
+          "value": "0.2",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 0.5 と異なる。"
+        },
+        "4": {
+          "value": "0.5",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "5": {
+          "value": "1",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 0.5 と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "ν=0.5は非圧縮極限。K=E/[3(1−2ν)]は発散し、有限の体積弾性係数をもつ通常の構成則に数値代入して扱わない。",
+      "evidence": [
+        "extracted/pages/R01/basic/page_013.png"
+      ],
+      "core_concept": "非圧縮条件を体積ひずみから読む。",
+      "required_knowledge": "体積ひずみ、Hooke則、Poisson比。",
+      "solution": "体積ひずみの一次近似はεx+εy+εz=(1−2ν)(σx+σy+σz)/E。任意の垂直応力に対して0とする非圧縮条件には1−2ν=0、ν=0.5が必要。特定の応力で和が0になる条件だけでは非圧縮材料を定義できない。",
+      "answer_reason": "体積ひずみの一次近似はεx+εy+εz=(1−2ν)(σx+σy+σz)/E。任意の垂直応力に対して0とする非圧縮条件には1−2ν=0、ν=0.5が必要。特定の応力で和が0になる条件だけでは非圧縮材料を定義できない。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。体積歪みの係数1−2ν=0。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "体積ひずみ、Hooke則、Poisson比。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:incompressible"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_incompressible",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：非圧縮条件を体積ひずみから読む。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "mit_material_elastic2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-3-5",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "荷重表示で棒のひずみエネルギー。",
+      "summary": "荷重表示で棒のひずみエネルギー。",
+      "conditions": {
+        "棒": "長さl、断面A、E、弾性域で軸荷重P。"
+      },
+      "choices": {
+        "1": {
+          "value": "Pl",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 P²l/(2EA) と異なる。"
+        },
+        "2": {
+          "value": "Pl/E",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 P²l/(2EA) と異なる。"
+        },
+        "3": {
+          "value": "Pl²/A",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 P²l/(2EA) と異なる。"
+        },
+        "4": {
+          "value": "P²l/(2EA)",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "5": {
+          "value": "P²/(2EA²)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 P²l/(2EA) と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/basic/page_014.png"
+      ],
+      "core_concept": "荷重表示で棒のひずみエネルギー。",
+      "required_knowledge": "軸剛性、力変位面積、エネルギー単位。",
+      "solution": "軸伸びδ=Pl/(EA)をU=Pδ/2へ代入するとP²l/(2EA)。単位はN·mである。UがPに一次比例する候補は線形ばねのエネルギーの二次依存と整合しない。",
+      "answer_reason": "軸伸びδ=Pl/(EA)をU=Pδ/2へ代入するとP²l/(2EA)。単位はN·mである。UがPに一次比例する候補は線形ばねのエネルギーの二次依存と整合しない。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。U=P²l/(2EA)。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "軸剛性、力変位面積、エネルギー単位。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:axialenergy"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_axialenergy",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：荷重表示で棒のひずみエネルギー。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "mit_material_elastic2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-3-6",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "棒振子の質量慣性と重力トルク。",
+      "summary": "棒振子の質量慣性と重力トルク。",
+      "conditions": {
+        "棒": "一様細長棒、長さl、上端回転自由、重力g。",
+        "運動": "微小角振動、摩擦無視。"
+      },
+      "choices": {
+        "1": {
+          "value": "2π√(l/g)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 2π√(2l/(3g)) と異なる。"
+        },
+        "2": {
+          "value": "2π√(3l/(2g))",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 2π√(2l/(3g)) と異なる。"
+        },
+        "3": {
+          "value": "2π√(2l/(3g))",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "2π√(2g/(3l))",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 2π√(2l/(3g)) と異なる。"
+        },
+        "5": {
+          "value": "2π√(3g/(2l))",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 2π√(2l/(3g)) と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/basic/page_015.png",
+        "extracted/pages/R01/basic/page_016.png"
+      ],
+      "core_concept": "棒振子の質量慣性と重力トルク。",
+      "required_knowledge": "物理振子、慣性モーメント、線形化。",
+      "solution": "上端を支点とする一様棒のI=Ml²/3、重心距離l/2。小振幅ではIθsecond=−Mg(l/2)θなのでω²=3g/(2l)、T=2π√(2l/(3g))。全質量を棒端に集める単振子の式を使わない。質量は約分される。",
+      "answer_reason": "上端を支点とする一様棒のI=Ml²/3、重心距離l/2。小振幅ではIθsecond=−Mg(l/2)θなのでω²=3g/(2l)、T=2π√(2l/(3g))。全質量を棒端に集める単振子の式を使わない。質量は約分される。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。物理振子I=Ml²/3、T=2π√(2l/3g)。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "物理振子、慣性モーメント、線形化。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:pendulum"
+      ],
+      "discipline_id": "basic_3_0",
+      "concept_id": "finish57_pendulum",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：棒振子の質量慣性と重力トルク。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-BASIC-3-2",
+      "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+      "stem": "平面への垂足を法線方向射影で求める。",
+      "summary": "平面への垂足を法線方向射影で求める。",
+      "conditions": {
+        "点": "A=(6,5,4)。",
+        "平面": "x+2y−z=0。"
+      },
+      "choices": {
+        "1": {
+          "value": "(1,1,3)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (4,1,6) と異なる。"
+        },
+        "2": {
+          "value": "(4,1,6)",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "3": {
+          "value": "(3,2,7)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (4,1,6) と異なる。"
+        },
+        "4": {
+          "value": "(2,1,4)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (4,1,6) と異なる。"
+        },
+        "5": {
+          "value": "(5,3,5)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (4,1,6) と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/basic/page_011.png"
+      ],
+      "core_concept": "平面への垂足を法線方向射影で求める。",
+      "required_knowledge": "法線、内積、正射影、二条件による検算。",
+      "solution": "法線n=(1,2,−1)、A=(6,5,4)、n·A=12、n·n=6。垂足H=A−[12/6]n=(4,1,6)。4+2×1−6=0で平面上にあり、A−H=(2,4,−2)=2nで垂直も確認できる。",
+      "answer_reason": "法線n=(1,2,−1)、A=(6,5,4)、n·A=12、n·n=6。垂足H=A−[12/6]n=(4,1,6)。4+2×1−6=0で平面上にあり、A−H=(2,4,−2)=2nで垂直も確認できる。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。法線(1,2,−1)、射影A−2n。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "法線、内積、正射影、二条件による検算。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:projection"
+      ],
+      "discipline_id": "basic_3_9",
+      "concept_id": "finish57_projection",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：平面への垂足を法線方向射影で求める。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-BASIC-3-5",
+      "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+      "stem": "通常の熱伝導と機械的振動を区別。",
+      "summary": "通常の熱伝導と機械的振動を区別。",
+      "conditions": {
+        "問": "最も適切な記述。",
+        "熱": "通常の伝導を扱う原典のモデル。"
+      },
+      "choices": {
+        "1": {
+          "value": "振動数は材料特性だけで定まる",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 通常の熱伝導の自由応答は振動しない と異なる。"
+        },
+        "2": {
+          "value": "気柱の境界は振動数に影響しない",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 通常の熱伝導の自由応答は振動しない と異なる。"
+        },
+        "3": {
+          "value": "振子の振動数は質量平方根に反比例",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 通常の熱伝導の自由応答は振動しない と異なる。"
+        },
+        "4": {
+          "value": "通常の熱伝導の自由応答は振動しない",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "5": {
+          "value": "薄板には一つのモードだけ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 通常の熱伝導の自由応答は振動しない と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "時間一階微分だけでは非振動性を証明できない。一階の連立回転方程式は振動し得る。正の拡散係数とLaplacianの固有値を含む通常モデルとして限定して査読する。",
+      "evidence": [
+        "extracted/pages/R01_retest/basic/page_012.png"
+      ],
+      "core_concept": "通常の熱伝導と機械的振動を区別。",
+      "required_knowledge": "時間微分、安定な熱拡散、モード、境界条件。",
+      "solution": "通常のFourier熱伝導∂T/∂t=κ∇²T、κ>0では適切な固定温度又は断熱境界下の固有モードはe^(−κλt)で減衰し、慣性復元力による自由振動と異なる。材料だけでは形状・支持を落とし、気柱の開閉境界も重要。小振幅単振子の周期は質量によらず、薄板には複数モードがある。",
+      "answer_reason": "通常のFourier熱伝導∂T/∂t=κ∇²T、κ>0では適切な固定温度又は断熱境界下の固有モードはe^(−κλt)で減衰し、慣性復元力による自由振動と異なる。材料だけでは形状・支持を落とし、気柱の開閉境界も重要。小振幅単振子の周期は質量によらず、薄板には複数モードがある。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。通常の熱伝導の固有モードは減衰する。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "時間微分、安定な熱拡散、モード、境界条件。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:heat"
+      ],
+      "discipline_id": "basic_3_0",
+      "concept_id": "finish57_heat",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：通常の熱伝導と機械的振動を区別。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-BASIC-3-5",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "stem": "傾斜と重力は平衡位置を変える。",
+      "summary": "傾斜と重力は平衡位置を変える。",
+      "conditions": {
+        "A": "水平。",
+        "B": "45°の滑らかな斜面。",
+        "C": "鉛直。",
+        "共通": "質点m、同じばねk、摩擦無視、ばね軸方向運動。"
+      },
+      "choices": {
+        "1": {
+          "value": "A=B=C",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "A>B>C",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 A=B=C と異なる。"
+        },
+        "3": {
+          "value": "A<B<C",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 A=B=C と異なる。"
+        },
+        "4": {
+          "value": "A=C>B",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 A=B=C と異なる。"
+        },
+        "5": {
+          "value": "A=C<B",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 A=B=C と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/basic/page_013.png"
+      ],
+      "core_concept": "傾斜と重力は平衡位置を変える。",
+      "required_knowledge": "平衡位置、一定外力、線形ばね振動。",
+      "solution": "運動方向をばね軸に取り、平衡位置からの変位xを使う。重力成分は平衡条件に吸収され、どの配置もm xsecond=−kx。ω=√(k/m)なので三者同じ。鉛直で伸びが大きいことを振動数の違いへ直結させない。",
+      "answer_reason": "運動方向をばね軸に取り、平衡位置からの変位xを使う。重力成分は平衡条件に吸収され、どの配置もm xsecond=−kx。ω=√(k/m)なので三者同じ。鉛直で伸びが大きいことを振動数の違いへ直結させない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。重力は平衡位置のみ変更しω=√k/m共通。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "平衡位置、一定外力、線形ばね振動。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:springgravity"
+      ],
+      "discipline_id": "basic_3_0",
+      "concept_id": "finish57_springgravity",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：傾斜と重力は平衡位置を変える。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "analysis57_shm"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-BASIC-3-6",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "stem": "連続式とBernoulliで管内速度を求める。",
+      "summary": "連続式とBernoulliで管内速度を求める。",
+      "conditions": {
+        "管": "水平、a断面Aaからb断面Abへ、密度ρ。",
+        "モデル": "非圧縮・非粘性、定常として流線のエネルギー損失を無視。"
+      },
+      "choices": {
+        "1": {
+          "value": "(Ab/Aa)√((pb−pa)/ρ)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 √(2(pa−pb)/ρ)/√(1−(Ab/Aa)²) と異なる。"
+        },
+        "2": {
+          "value": "(Aa/Ab)√((pa−pb)/ρ)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 √(2(pa−pb)/ρ)/√(1−(Ab/Aa)²) と異なる。"
+        },
+        "3": {
+          "value": "√(2(pb−pa)/ρ)/√(1−Ab/Aa)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 √(2(pa−pb)/ρ)/√(1−(Ab/Aa)²) と異なる。"
+        },
+        "4": {
+          "value": "√(2(pa−pb)/ρ)/(1−Ab/Aa)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 √(2(pa−pb)/ρ)/√(1−(Ab/Aa)²) と異なる。"
+        },
+        "5": {
+          "value": "√(2(pa−pb)/ρ)/√(1−(Ab/Aa)²)",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/basic/page_014.png",
+        "extracted/pages/R02/basic/page_015.png"
+      ],
+      "core_concept": "連続式とBernoulliで管内速度を求める。",
+      "required_knowledge": "質量保存、圧力エネルギー、Bernoulli、面積比。",
+      "solution": "非圧縮の連続式Aa va=Ab vbからva=(Ab/Aa)vb。同じ高さのBernoulli式pa+ρva²/2=pb+ρvb²/2へ代入する。pa−pb=ρvb²[1−(Ab/Aa)²]/2を解くと5。面積比は速度へ一次で入り、速度エネルギーへ代入すると二乗になる。",
+      "answer_reason": "非圧縮の連続式Aa va=Ab vbからva=(Ab/Aa)vb。同じ高さのBernoulli式pa+ρva²/2=pb+ρvb²/2へ代入する。pa−pb=ρvb²[1−(Ab/Aa)²]/2を解くと5。面積比は速度へ一次で入り、速度エネルギーへ代入すると二乗になる。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。連続式とBernoulliで平方比。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "質量保存、圧力エネルギー、Bernoulli、面積比。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:bernoulli"
+      ],
+      "discipline_id": "basic_3_6",
+      "concept_id": "finish57_bernoulli",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：連続式とBernoulliで管内速度を求める。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-BASIC-3-4",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "stem": "固定棒の熱ひずみを圧縮応力が相殺。",
+      "summary": "固定棒の熱ひずみを圧縮応力が相殺。",
+      "conditions": {
+        "材料": "E=2.0×10³MPa、α=1.0×10^-4/K。",
+        "拘束": "両端固定、温度20K上昇。"
+      },
+      "choices": {
+        "1": {
+          "value": "2MPa引張",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 4MPa圧縮 と異なる。"
+        },
+        "2": {
+          "value": "4MPa引張",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 4MPa圧縮 と異なる。"
+        },
+        "3": {
+          "value": "4MPa圧縮",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "8MPa引張",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 4MPa圧縮 と異なる。"
+        },
+        "5": {
+          "value": "8MPa圧縮",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 4MPa圧縮 と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/basic/page_013.png"
+      ],
+      "core_concept": "固定棒の熱ひずみを圧縮応力が相殺。",
+      "required_knowledge": "熱ひずみ、適合、応力の符号。",
+      "solution": "自由な熱ひずみαΔTに機械ひずみσ/Eを加え、両端固定の全ひずみ0とする。σ=−EαΔT=−(2.0×10³MPa)×(1.0×10^-4/K)×20K=−4MPa。温度上昇を妨げるので圧縮。Eを鋼の代表値へ置き換えず原典の2.0×10³MPaを使う。",
+      "answer_reason": "自由な熱ひずみαΔTに機械ひずみσ/Eを加え、両端固定の全ひずみ0とする。σ=−EαΔT=−(2.0×10³MPa)×(1.0×10^-4/K)×20K=−4MPa。温度上昇を妨げるので圧縮。Eを鋼の代表値へ置き換えず原典の2.0×10³MPaを使う。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。−EαΔT=−4MPa。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "熱ひずみ、適合、応力の符号。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:thermal"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_thermal",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：固定棒の熱ひずみを圧縮応力が相殺。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "mit_material_elastic2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-BASIC-3-5",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "stem": "ばねの全エネルギーは自然長から測る。",
+      "summary": "ばねの全エネルギーは自然長から測る。",
+      "conditions": {
+        "系": "鉛直ばねk、質点m、振幅a、g。",
+        "問": "最下端でのばね自身の弾性エネルギー。"
+      },
+      "choices": {
+        "1": {
+          "value": "0",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 k(mg/k+a)²/2 と異なる。"
+        },
+        "2": {
+          "value": "ka²/2",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 k(mg/k+a)²/2 と異なる。"
+        },
+        "3": {
+          "value": "ka²/2−mga",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 k(mg/k+a)²/2 と異なる。"
+        },
+        "4": {
+          "value": "k(mg/k+a)²/2",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "5": {
+          "value": "ka²/2+mga",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 k(mg/k+a)²/2 と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/basic/page_014.png"
+      ],
+      "core_concept": "ばねの全エネルギーは自然長から測る。",
+      "required_knowledge": "自然長、平衡位置、基準の違うエネルギー。",
+      "solution": "静止時の自然長からの伸びはmg/k。下端振幅位置ではさらにa伸びるのでばね単体のひずみエネルギーU=k(mg/k+a)²/2。平衡位置を中心とする振動エネルギーka²/2とは別の量。平衡時との差ならka²/2+mgaであり、問われた全量ではない。",
+      "answer_reason": "静止時の自然長からの伸びはmg/k。下端振幅位置ではさらにa伸びるのでばね単体のひずみエネルギーU=k(mg/k+a)²/2。平衡位置を中心とする振動エネルギーka²/2とは別の量。平衡時との差ならka²/2+mgaであり、問われた全量ではない。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。自然長からの伸びmg/k+aを二乗。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "自然長、平衡位置、基準の違うエネルギー。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:verticalenergy"
+      ],
+      "discipline_id": "basic_3_7",
+      "concept_id": "finish57_verticalenergy",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：ばねの全エネルギーは自然長から測る。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "analysis57_shm"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-BASIC-3-6",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "stem": "四分円の重心を面積一次モーメントで求める。",
+      "summary": "四分円の重心を面積一次モーメントで求める。",
+      "conditions": {
+        "領域": "第一象限、半径aの一様な四分円面。",
+        "問": "面積重心のx,y座標。"
+      },
+      "choices": {
+        "1": {
+          "value": "(√3a/4,√3a/4)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (4a/(3π),4a/(3π)) と異なる。"
+        },
+        "2": {
+          "value": "(a/2,a/2)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (4a/(3π),4a/(3π)) と異なる。"
+        },
+        "3": {
+          "value": "(a/√2,a/√2)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (4a/(3π),4a/(3π)) と異なる。"
+        },
+        "4": {
+          "value": "(3a/(4π),3a/(4π))",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 (4a/(3π),4a/(3π)) と異なる。"
+        },
+        "5": {
+          "value": "(4a/(3π),4a/(3π))",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/basic/page_015.png",
+        "extracted/pages/R03/basic/page_016.png"
+      ],
+      "core_concept": "四分円の重心を面積一次モーメントで求める。",
+      "required_knowledge": "面積重心、対称性、一次モーメント。",
+      "solution": "第一象限の半径aの四分円は対称性でxbar=ybar。面積A=πa²/4、∫x dA=∫0^a x√(a²−x²)dx=a³/3。割るとxbar=4a/(3π)、同じくybar。弧だけの重心とは違い、面積全体を積分する。",
+      "answer_reason": "第一象限の半径aの四分円は対称性でxbar=ybar。面積A=πa²/4、∫x dA=∫0^a x√(a²−x²)dx=a³/3。割るとxbar=4a/(3π)、同じくybar。弧だけの重心とは違い、面積全体を積分する。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。面積一次モーメントから4a/(3π)。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "面積重心、対称性、一次モーメント。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:centroid"
+      ],
+      "discipline_id": "basic_3_9",
+      "concept_id": "finish57_centroid",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：四分円の重心を面積一次モーメントで求める。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-3-5",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "角速度変化から慣性トルク。",
+      "summary": "角速度変化から慣性トルク。",
+      "conditions": {
+        "円盤": "慣性モーメントI。",
+        "操作": "角速度ω1からω2へ時間Tで一定角加速度。"
+      },
+      "choices": {
+        "1": {
+          "value": "IΔω",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 IΔω/T と異なる。"
+        },
+        "2": {
+          "value": "IΔωT",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 IΔω/T と異なる。"
+        },
+        "3": {
+          "value": "IΔω/T",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "I(ω2²−ω1²)/2",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 IΔω/T と異なる。"
+        },
+        "5": {
+          "value": "I(ω2²−ω1²)T",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 IΔω/T と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/basic/page_012.png"
+      ],
+      "core_concept": "角速度変化から慣性トルク。",
+      "required_knowledge": "角加速度、回転運動方程式、次元。",
+      "solution": "一定角加速度α=(ω2−ω1)/T=Δω/T。運動方程式τ=Iαなので3。角速度の二乗差は回転運動エネルギーの差に関係し、所要トルクと単位も異なる。",
+      "answer_reason": "一定角加速度α=(ω2−ω1)/T=Δω/T。運動方程式τ=Iαなので3。角速度の二乗差は回転運動エネルギーの差に関係し、所要トルクと単位も異なる。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。トルクIΔω/T。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "角加速度、回転運動方程式、次元。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:torque"
+      ],
+      "discipline_id": "basic_3_7",
+      "concept_id": "finish57_torque",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：角速度変化から慣性トルク。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-3-6",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "張力の小振動剛性と長さ・質量の比。",
+      "summary": "張力の小振動剛性と長さ・質量の比。",
+      "conditions": {
+        "a": "全長2L、中央質量m。",
+        "b": "全長4L、中央質量2m。",
+        "共通": "一定張力T、原典の弦に直交する微小変位、他方向の変位無視。"
+      },
+      "choices": {
+        "1": {
+          "value": "1:1",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 2:1 と異なる。"
+        },
+        "2": {
+          "value": "1:√2",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 2:1 と異なる。"
+        },
+        "3": {
+          "value": "1:2",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 2:1 と異なる。"
+        },
+        "4": {
+          "value": "√2:1",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 2:1 と異なる。"
+        },
+        "5": {
+          "value": "2:1",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/basic/page_013.png",
+        "extracted/pages/R04/basic/page_014.png"
+      ],
+      "core_concept": "張力の小振動剛性と長さ・質量の比。",
+      "required_knowledge": "張力の成分、小角近似、等価剛性。",
+      "solution": "aの各半長Lで中央変位xが小さいと各張力の横成分はTx/L、合計2Tx/L。ωa²=2T/(mL)。bは各半長2L、質量2mでωb²=2T/[(2m)(2L)]=T/(2mL)。二乗比4なのでωa:ωb=2:1。",
+      "answer_reason": "aの各半長Lで中央変位xが小さいと各張力の横成分はTx/L、合計2Tx/L。ωa²=2T/(mL)。bは各半長2L、質量2mでωb²=2T/[(2m)(2L)]=T/(2mL)。二乗比4なのでωa:ωb=2:1。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。有効剛性2T/L、質量長さ倍で周波数半分。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "張力の成分、小角近似、等価剛性。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:stringmass"
+      ],
+      "discipline_id": "basic_3_0",
+      "concept_id": "finish57_stringmass",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：張力の小振動剛性と長さ・質量の比。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-BASIC-3-5",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "stem": "減速機を介した円盤加速の入力トルク。",
+      "summary": "減速機を介した円盤加速の入力トルク。",
+      "conditions": {
+        "減速": "入力角速度:出力角速度=n:1。",
+        "円盤": "出力に慣性I、ω1→ω2を時間T。",
+        "効率": "1、損失無視。"
+      },
+      "choices": {
+        "1": {
+          "value": "IΔω/(n²T)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 IΔω/(nT) と異なる。"
+        },
+        "2": {
+          "value": "IΔω/(nT)",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "3": {
+          "value": "IΔω/T",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 IΔω/(nT) と異なる。"
+        },
+        "4": {
+          "value": "nIΔω/T",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 IΔω/(nT) と異なる。"
+        },
+        "5": {
+          "value": "n²IΔω/T",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 IΔω/(nT) と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/basic/page_011.png"
+      ],
+      "core_concept": "減速機を介した円盤加速の入力トルク。",
+      "required_knowledge": "動力保存、反射慣性、角加速度の基準。",
+      "solution": "出力円盤の角加速度はΔω/Tで、出力トルクIΔω/T。入力/出力角速度比n、効率1なので入力トルクは出力の1/n。入力側換算慣性I/n²を使う場合も入力角加速度はnΔω/Tであり、積はIΔω/(nT)になる。",
+      "answer_reason": "出力円盤の角加速度はΔω/Tで、出力トルクIΔω/T。入力/出力角速度比n、効率1なので入力トルクは出力の1/n。入力側換算慣性I/n²を使う場合も入力角加速度はnΔω/Tであり、積はIΔω/(nT)になる。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。出力トルクの1/n、反射慣性の比だけ使わない。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "動力保存、反射慣性、角加速度の基準。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:geartorque"
+      ],
+      "discipline_id": "basic_3_7",
+      "concept_id": "finish57_geartorque",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：減速機を介した円盤加速の入力トルク。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-BASIC-3-4",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "stem": "Euler座屈の有効長で支持条件を比較。",
+      "summary": "Euler座屈の有効長で支持条件を比較。",
+      "conditions": {
+        "a": "両端ピン。",
+        "b": "一端固定・他端ピン。",
+        "c": "一端固定・他端自由。",
+        "共通": "同じL,E,I、理想的細長柱、軸圧縮。"
+      },
+      "choices": {
+        "1": {
+          "value": "Pa>Pb>Pc",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Pb>Pa>Pc と異なる。"
+        },
+        "2": {
+          "value": "Pa>Pc>Pb",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Pb>Pa>Pc と異なる。"
+        },
+        "3": {
+          "value": "Pb>Pa>Pc",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "Pb>Pc>Pa",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Pb>Pa>Pc と異なる。"
+        },
+        "5": {
+          "value": "Pc>Pa>Pb",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Pb>Pa>Pc と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "真直・線形弾性の理想柱の比較。初期不整・残留応力・短柱の圧壊を含む実設計荷重としては使わない。",
+      "evidence": [
+        "extracted/pages/R06/basic/page_012.png"
+      ],
+      "core_concept": "Euler座屈の有効長で支持条件を比較。",
+      "required_knowledge": "Euler座屈、有効長、支持境界。",
+      "solution": "臨界荷重Pcr=π²EI/(KL)²。a両端ピンはK=1、b固定・ピンはK≈0.699、c片持ちはK=2。EIとLは同じなので有効長が短いほど臨界荷重が大きく、Pb>Pa>Pc。",
+      "answer_reason": "臨界荷重Pcr=π²EI/(KL)²。a両端ピンはK=1、b固定・ピンはK≈0.699、c片持ちはK=2。EIとLは同じなので有効長が短いほど臨界荷重が大きく、Pb>Pa>Pc。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。Euler有効長.699L,L,2L。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "Euler座屈、有効長、支持境界。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:buckling"
+      ],
+      "discipline_id": "basic_3_4",
+      "concept_id": "finish57_buckling",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：Euler座屈の有効長で支持条件を比較。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-BASIC-3-6",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "stem": "交点接続を含む抵抗網の等電位を利用。",
+      "summary": "交点接続を含む抵抗網の等電位を利用。",
+      "conditions": {
+        "各抵抗": "全八個1Ω。",
+        "図": "菱形外周四辺と上下・左右の中央接続四辺、交点に接続点。",
+        "端子": "左右a,b。"
+      },
+      "choices": {
+        "1": {
+          "value": "4/3Ω",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 2/3Ω と異なる。"
+        },
+        "2": {
+          "value": "1Ω",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 2/3Ω と異なる。"
+        },
+        "3": {
+          "value": "2/3Ω",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "1/3Ω",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 2/3Ω と異なる。"
+        },
+        "5": {
+          "value": "1/6Ω",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 2/3Ω と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/basic/page_014.png",
+        "extracted/pages/R06/basic/page_015.png"
+      ],
+      "core_concept": "交点接続を含む抵抗網の等電位を利用。",
+      "required_knowledge": "等電位、節点接続、並列合成。",
+      "solution": "a,b端子の中央に対する対称性から上、下、中央接続点が同電位。これらを結ぶ二抵抗には電流が流れない。残るaからbへの上・中央・下の三枝はそれぞれ1Ω+1Ω=2Ω、並列で2/3Ω。中央の黒点は交差線の接続を示し、未接続の交差へ読み替えない。",
+      "answer_reason": "a,b端子の中央に対する対称性から上、下、中央接続点が同電位。これらを結ぶ二抵抗には電流が流れない。残るaからbへの上・中央・下の三枝はそれぞれ1Ω+1Ω=2Ω、並列で2/3Ω。中央の黒点は交差線の接続を示し、未接続の交差へ読み替えない。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。中央と上下同電位、2Ω三枝並列。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "等電位、節点接続、並列合成。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:network"
+      ],
+      "discipline_id": "basic_3_6",
+      "concept_id": "finish57_network",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：交点接続を含む抵抗網の等電位を利用。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "analysis57_resistors"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-3-5",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "四面体の端子位置で合成抵抗は変わる。",
+      "summary": "四面体の端子位置で合成抵抗は変わる。",
+      "conditions": {
+        "構造": "正四面体六辺、各辺同材料・同長L・同断面。",
+        "a": "二頂点。",
+        "b": "頂点とその対辺中点。",
+        "c": "互いに向かい合う二辺の中点。"
+      },
+      "choices": {
+        "1": {
+          "value": "Rb<Rc<Ra",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Ra<Rb<Rc と異なる。"
+        },
+        "2": {
+          "value": "Ra<Rc<Rb",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Ra<Rb<Rc と異なる。"
+        },
+        "3": {
+          "value": "Rc<Ra<Rb",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Ra<Rb<Rc と異なる。"
+        },
+        "4": {
+          "value": "Rc<Rb<Ra",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Ra<Rb<Rc と異なる。"
+        },
+        "5": {
+          "value": "Ra<Rb<Rc",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/basic/page_011.png"
+      ],
+      "core_concept": "四面体の端子位置で合成抵抗は変わる。",
+      "required_knowledge": "対称な等電位群、中点での辺分割、直並列。",
+      "solution": "一辺全体の抵抗をRとする。aは頂点間で直接Rと、残る二頂点を同電位にまとめた経路Rとの並列からR/2。bは頂点と対辺中点。対辺の両頂点をまとめると端子からそこまでR/2と3R/2の並列で3R/8、その節点から中点までR/4を足し5R/8。cは向かい合う二辺中点で各端のR/4と二頂点群間の四辺並列R/4を直列にし3R/4。従ってRa<Rb<Rc。節点方程式の有理数検算も一致する。",
+      "answer_reason": "一辺全体の抵抗をRとする。aは頂点間で直接Rと、残る二頂点を同電位にまとめた経路Rとの並列からR/2。bは頂点と対辺中点。対辺の両頂点をまとめると端子からそこまでR/2と3R/2の並列で3R/8、その節点から中点までR/4を足し5R/8。cは向かい合う二辺中点で各端のR/4と二頂点群間の四辺並列R/4を直列にし3R/4。従ってRa<Rb<Rc。節点方程式の有理数検算も一致する。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。正四面体頂点R/2、頂点対辺中点5R/8、対辺中点3R/4。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "対称な等電位群、中点での辺分割、直並列。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:tetra"
+      ],
+      "discipline_id": "basic_3_6",
+      "concept_id": "finish57_tetra",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：四面体の端子位置で合成抵抗は変わる。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "analysis57_resistors"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-3-6",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "運動起電力と磁気制動から終端速度。",
+      "summary": "運動起電力と磁気制動から終端速度。",
+      "conditions": {
+        "回路": "レール間隔L、抵抗R、棒・レールの抵抗無視。",
+        "磁場": "面に垂直で一様B。",
+        "駆動": "滑車と糸で質量Mが落下、摩擦無視、定常速度。"
+      },
+      "choices": {
+        "1": {
+          "value": "MgR/(BL)²",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "(BL)²/(MgR)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 MgR/(BL)² と異なる。"
+        },
+        "3": {
+          "value": "MgR/(BL)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 MgR/(BL)² と異なる。"
+        },
+        "4": {
+          "value": "BLR/(Mg)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 MgR/(BL)² と異なる。"
+        },
+        "5": {
+          "value": "Mg/(BLR)",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 MgR/(BL)² と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/basic/page_012.png",
+        "extracted/pages/R07/basic/page_013.png"
+      ],
+      "core_concept": "運動起電力と磁気制動から終端速度。",
+      "required_knowledge": "運動起電力、Lenz則、磁気力、終端釣合。",
+      "solution": "棒の起電力ε=BLv、回路電流I=ε/R。棒に働く磁気力F=IBL=B²L²v/RはLenz則で運動を妨げる。終端速度ではつり下げ質量の張力Mgと釣合うのでv=MgR/(BL)²。回路抵抗を増すと制動電流が減り、速度は増える。",
+      "answer_reason": "棒の起電力ε=BLv、回路電流I=ε/R。棒に働く磁気力F=IBL=B²L²v/RはLenz則で運動を妨げる。終端速度ではつり下げ質量の張力Mgと釣合うのでv=MgR/(BL)²。回路抵抗を増すと制動電流が減り、速度は増える。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。起電力BLv、制動B²L²v/R、Mgと釣合。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "運動起電力、Lenz則、磁気力、終端釣合。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:motional"
+      ],
+      "discipline_id": "basic_3_6",
+      "concept_id": "finish57_motional",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：運動起電力と磁気制動から終端速度。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

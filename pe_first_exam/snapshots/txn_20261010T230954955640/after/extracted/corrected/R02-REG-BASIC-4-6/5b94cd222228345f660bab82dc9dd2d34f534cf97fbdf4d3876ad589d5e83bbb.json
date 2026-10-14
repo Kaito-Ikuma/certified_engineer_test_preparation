@@ -1,0 +1,44 @@
+{
+  "stem": "PCRの熱変性・アニーリング・伸長の条件と産物に残るプライマーを判定する。",
+  "conditions": {
+    "方向": "最も適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "熱変性はDNA主鎖の共有結合を切断して一本鎖へ解離させる。",
+      "verdict": "不適切",
+      "reason": "通常の変性は鎖間の会合を解く段階で、糖リン酸主鎖の分解ではない。"
+    },
+    "2": {
+      "value": "アニーリング温度を上げすぎると非特異的会合が増える。",
+      "verdict": "不適切",
+      "reason": "通常、非特異的な会合は温度が低すぎる場合に増え、高すぎると標的との会合も減り増幅が低下する。製品と配列ごとの条件を確認する。"
+    },
+    "3": {
+      "value": "増幅する配列が長いほど伸長時間を短くする。",
+      "verdict": "不適切",
+      "reason": "同じ伸長速度なら長い領域を合成するにはより長い時間が必要である。"
+    },
+    "4": {
+      "value": "高い耐熱性のDNAポリメラーゼを用いる。",
+      "verdict": "最適",
+      "reason": "各回の加熱変性に耐える酵素を使う。耐熱性と最適反応温度は同じ概念ではない。"
+    },
+    "5": {
+      "value": "生成DNAにプライマーの配列は含まれない。",
+      "verdict": "不適切",
+      "reason": "ポリメラーゼはプライマーの3端から伸長し、プライマー自身は産物の一部に残る。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/basic/page_018.png"
+  ],
+  "question_id": "R02-REG-BASIC-4-6",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "18",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "f87bd5f1fa2bee7b4096d1d49d408dca62529362bc5a96c357f649e88ac9a473",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

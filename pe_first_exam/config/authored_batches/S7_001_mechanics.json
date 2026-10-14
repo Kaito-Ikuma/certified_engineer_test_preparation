@@ -1,0 +1,2003 @@
+{
+  "batch_id": "S7_001_mechanics",
+  "reference_date": "2026-10-08",
+  "scope": "All 26 questions currently assigned to mechanics plus 3 related oscillator questions; source images reviewed before independent answer comparison",
+  "questions": [
+    {
+      "question_id": "H23-REG-APPLIED-01",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "30度の斜面を下る質量2 kgの物体について、動摩擦を含めた加速度を求める。",
+      "conditions": {
+        "mass_kg": 2,
+        "angle_deg": 30,
+        "kinetic_friction": "\\(\\sqrt{3}/6\\)",
+        "gravity": "g",
+        "air_resistance": "ignored"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(g/2\\)",
+          "verdict": "不採用",
+          "reason": "摩擦を無視した値である。"
+        },
+        "2": {
+          "value": "\\(g/3\\)",
+          "verdict": "不採用",
+          "reason": "指定された摩擦項を差し引いたg/4と一致しない。"
+        },
+        "3": {
+          "value": "\\(g/4\\)",
+          "verdict": "採用",
+          "reason": "斜面重力g/2から摩擦による減速g/4を差し引いた値である。"
+        },
+        "4": {
+          "value": "\\(g/\\sqrt{3}\\)",
+          "verdict": "不採用",
+          "reason": "摩擦がなくても最大g/2であり、この値はそれを超える。"
+        },
+        "5": {
+          "value": "\\(g/\\sqrt{6}\\)",
+          "verdict": "不採用",
+          "reason": "指定条件のg/4より大きく、運動方程式を満たさない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_001.png"
+      ],
+      "summary": "30度の斜面を下る質量2 kgの物体について、動摩擦を含めた加速度を求める。",
+      "core_concept": "斜面方向の運動方程式と動摩擦",
+      "required_knowledge": "\\(N=mg\\cos\\theta\\)、動摩擦力は\\(\\mu N\\)で移動方向と逆向き。",
+      "solution": "下向きを正にして\\(ma=mg\\sin30^\\circ-\\mu mg\\cos30^\\circ\\)。したがって\\(a=g(1/2-(\\sqrt3/6)(\\sqrt3/2))=g/4\\)。質量は消去される。",
+      "independent_answer": "3",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢3である。斜面重力g/2から摩擦による減速g/4を差し引いた値である。",
+      "learning_points": "斜面方向の運動方程式と動摩擦を、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:newton"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "concept_035",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は斜面方向の運動方程式と動摩擦であり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "H28-REG-APPLIED-01",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "45度で滑り始める物体を30度の斜面で上向きに動かし始めるための力を求める。",
+      "conditions": {
+        "mass_kg": 20,
+        "critical_angle_deg": 45,
+        "test_angle_deg": 30,
+        "applied_force_direction": "parallel uphill",
+        "g_in_source": "not stated",
+        "calculation_assumption_g": 9.8
+      },
+      "choices": {
+        "1": {
+          "value": "72 N",
+          "verdict": "不採用",
+          "reason": "上向き始動に必要な力は約267.7 Nであり、この値は対応しない。"
+        },
+        "2": {
+          "value": "98 N",
+          "verdict": "不採用",
+          "reason": "上向き始動に必要な力は約267.7 Nであり、この値は対応しない。"
+        },
+        "3": {
+          "value": "170 N",
+          "verdict": "不採用",
+          "reason": "上向き始動に必要な力は約267.7 Nであり、この値は対応しない。"
+        },
+        "4": {
+          "value": "196 N",
+          "verdict": "不採用",
+          "reason": "上向き始動に必要な力は約267.7 Nであり、この値は対応しない。"
+        },
+        "5": {
+          "value": "268 N",
+          "verdict": "採用",
+          "reason": "約267.7 Nに最も近い。下向きの重力成分と最大静止摩擦力を足す。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_001.png"
+      ],
+      "summary": "45度で滑り始める物体を30度の斜面で上向きに動かし始めるための力を求める。",
+      "core_concept": "滑り出し条件から静止摩擦係数を決める",
+      "required_knowledge": "\\(\\mu_s=\\tan\\theta_c\\)、上向き始動時の摩擦は下向き、\\(N=mg\\cos\\theta\\)。",
+      "solution": "臨界角45度より\\(\\mu_s=1\\)。力を斜面に平行に加えるので法線反力は変わらない。上向き始動の閾値は\\(F=mg\\sin30^\\circ+\\mu_smg\\cos30^\\circ\\)。\\(m=20\\) kgを代入して約267.7 Nとなる。原典でgは数値指定されていないため、ここでは通常の地表重力近似9.8 m/s²を明示して用いる。",
+      "independent_answer": "5",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢5である。約267.7 Nに最も近い。下向きの重力成分と最大静止摩擦力を足す。",
+      "learning_points": "静止摩擦は運動の向きを仮定して符号を決め、動摩擦と区別する。",
+      "theory_references": [
+        "theory:mechanics:newton"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "concept_035",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は滑り出し条件から静止摩擦係数を決めるであり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。複数の釣合い・保存則・定義を組み合わせるため二段の判断がある。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "R03-REG-APPLIED-01",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "45度で滑り始める物体を30度の斜面で上向きに動かし始めるための力を求める。",
+      "conditions": {
+        "mass_kg": 20,
+        "critical_angle_deg": 45,
+        "test_angle_deg": 30,
+        "applied_force_direction": "parallel uphill",
+        "g_in_source": "not stated",
+        "calculation_assumption_g": 9.8
+      },
+      "choices": {
+        "1": {
+          "value": "98 N",
+          "verdict": "不採用",
+          "reason": "上向き始動に必要な力は約267.7 Nであり、この値は対応しない。"
+        },
+        "2": {
+          "value": "170 N",
+          "verdict": "不採用",
+          "reason": "上向き始動に必要な力は約267.7 Nであり、この値は対応しない。"
+        },
+        "3": {
+          "value": "196 N",
+          "verdict": "不採用",
+          "reason": "上向き始動に必要な力は約267.7 Nであり、この値は対応しない。"
+        },
+        "4": {
+          "value": "268 N",
+          "verdict": "採用",
+          "reason": "約267.7 Nに最も近い。下向きの重力成分と最大静止摩擦力を足す。"
+        },
+        "5": {
+          "value": "340 N",
+          "verdict": "不採用",
+          "reason": "上向き始動に必要な力は約267.7 Nであり、この値は対応しない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_001.png"
+      ],
+      "summary": "45度で滑り始める物体を30度の斜面で上向きに動かし始めるための力を求める。",
+      "core_concept": "滑り出し条件から静止摩擦係数を決める",
+      "required_knowledge": "\\(\\mu_s=\\tan\\theta_c\\)、上向き始動時の摩擦は下向き、\\(N=mg\\cos\\theta\\)。",
+      "solution": "臨界角45度より\\(\\mu_s=1\\)。力を斜面に平行に加えるので法線反力は変わらない。上向き始動の閾値は\\(F=mg\\sin30^\\circ+\\mu_smg\\cos30^\\circ\\)。\\(m=20\\) kgを代入して約267.7 Nとなる。原典でgは数値指定されていないため、ここでは通常の地表重力近似9.8 m/s²を明示して用いる。",
+      "independent_answer": "4",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢4である。約267.7 Nに最も近い。下向きの重力成分と最大静止摩擦力を足す。",
+      "learning_points": "静止摩擦は運動の向きを仮定して符号を決め、動摩擦と区別する。",
+      "theory_references": [
+        "theory:mechanics:newton"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "concept_035",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は滑り出し条件から静止摩擦係数を決めるであり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。複数の釣合い・保存則・定義を組み合わせるため二段の判断がある。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "R07-REG-APPLIED-01",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "45度で滑り始める物体を30度の斜面で上向きに動かし始めるための力を求める。",
+      "conditions": {
+        "mass_kg": 5,
+        "critical_angle_deg": 45,
+        "test_angle_deg": 30,
+        "applied_force_direction": "parallel uphill",
+        "g_in_source": 9.8,
+        "calculation_assumption_g": 9.8
+      },
+      "choices": {
+        "1": {
+          "value": "15 N",
+          "verdict": "不採用",
+          "reason": "上向き始動に必要な力は約66.9 Nであり、この値は対応しない。"
+        },
+        "2": {
+          "value": "33 N",
+          "verdict": "不採用",
+          "reason": "上向き始動に必要な力は約66.9 Nであり、この値は対応しない。"
+        },
+        "3": {
+          "value": "67 N",
+          "verdict": "採用",
+          "reason": "約66.9 Nに最も近い。下向きの重力成分と最大静止摩擦力を足す。"
+        },
+        "4": {
+          "value": "\\(13\\times10^1\\) N",
+          "verdict": "不採用",
+          "reason": "上向き始動に必要な力は約66.9 Nであり、この値は対応しない。"
+        },
+        "5": {
+          "value": "\\(20\\times10^1\\) N",
+          "verdict": "不採用",
+          "reason": "上向き始動に必要な力は約66.9 Nであり、この値は対応しない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_001.png"
+      ],
+      "summary": "45度で滑り始める物体を30度の斜面で上向きに動かし始めるための力を求める。",
+      "core_concept": "滑り出し条件から静止摩擦係数を決める",
+      "required_knowledge": "\\(\\mu_s=\\tan\\theta_c\\)、上向き始動時の摩擦は下向き、\\(N=mg\\cos\\theta\\)。",
+      "solution": "臨界角45度より\\(\\mu_s=1\\)。力を斜面に平行に加えるので法線反力は変わらない。上向き始動の閾値は\\(F=mg\\sin30^\\circ+\\mu_smg\\cos30^\\circ\\)。\\(m=5\\) kgを代入して約66.9 Nとなる。",
+      "independent_answer": "3",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢3である。約66.9 Nに最も近い。下向きの重力成分と最大静止摩擦力を足す。",
+      "learning_points": "静止摩擦は運動の向きを仮定して符号を決め、動摩擦と区別する。",
+      "theory_references": [
+        "theory:mechanics:newton"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "concept_035",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は滑り出し条件から静止摩擦係数を決めるであり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。複数の釣合い・保存則・定義を組み合わせるため二段の判断がある。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "H25-REG-APPLIED-01",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "stem": "静止時に60.0 kgを示す体重計が、0.5 m/sで等速上昇するエレベーター内で示す値を求める。",
+      "conditions": {
+        "rest_reading_kg": 60.0,
+        "velocity_m_s": 0.5,
+        "motion": "constant upward speed"
+      },
+      "choices": {
+        "1": {
+          "value": "57.0 kg",
+          "verdict": "不採用",
+          "reason": "反力が減るのは下向き加速度がある場合で、この条件ではない。"
+        },
+        "2": {
+          "value": "60.0 kg",
+          "verdict": "採用",
+          "reason": "等速運動では加速度0なので反力は変わらない。"
+        },
+        "3": {
+          "value": "63.0 kg",
+          "verdict": "不採用",
+          "reason": "上向き速度を上向き加速度と混同している。"
+        },
+        "4": {
+          "value": "66.0 kg",
+          "verdict": "不採用",
+          "reason": "指定条件に反力を増やす加速度はない。"
+        },
+        "5": {
+          "value": "69.0 kg",
+          "verdict": "不採用",
+          "reason": "一定速度によって質量や反力が増えることはない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/17_applied_science/page_001.png"
+      ],
+      "summary": "静止時に60.0 kgを示す体重計が、0.5 m/sで等速上昇するエレベーター内で示す値を求める。",
+      "core_concept": "体重計の反力と速度・加速度の区別",
+      "required_knowledge": "体重計が測るのは垂直抗力Nであり、質量表示はN/gである。\\(N-mg=ma\\)。",
+      "solution": "上昇中でも速度が一定なら\\(a=0\\)である。従って\\(N=mg\\)となり、静止時と同じ60.0 kgを示す。0.5 m/sは加速度ではなく速度である。",
+      "independent_answer": "2",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢2である。等速運動では加速度0なので反力は変わらない。",
+      "learning_points": "体重計の反力と速度・加速度の区別を、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:newton"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "newton_dynamics",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は体重計の反力と速度・加速度の区別であり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "R04-REG-APPLIED-02",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "stem": "慣性、質量、力と加速度、鉛直投射の最高点に関する5記述から不適切なものを判定する。",
+      "conditions": {
+        "selection": "most inappropriate",
+        "mechanics": "Newtonian, fixed mass; gravity during vertical projection"
+      },
+      "choices": {
+        "1": {
+          "value": "合力0なら速度は保たれる",
+          "verdict": "不採用",
+          "reason": "慣性の法則を述べており正しい。"
+        },
+        "2": {
+          "value": "無重力でも質量の違いは測定できる",
+          "verdict": "不採用",
+          "reason": "同じ力による加速度や振動など慣性に基づく方法で質量を比べられる。"
+        },
+        "3": {
+          "value": "同じ質量なら力2倍で加速度2倍",
+          "verdict": "不採用",
+          "reason": "質量一定という通常の前提でF=maから正しい。"
+        },
+        "4": {
+          "value": "合力と加速度は同方向",
+          "verdict": "不採用",
+          "reason": "正の質量を持つ物体の運動方程式から正しい。"
+        },
+        "5": {
+          "value": "鉛直投射の最高点で力が釣り合う",
+          "verdict": "採用",
+          "reason": "速度0は加速度0を意味しない。最高点でも重力は下向きに作用する。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/17_applied_science/page_001.png"
+      ],
+      "summary": "慣性、質量、力と加速度、鉛直投射の最高点に関する5記述から不適切なものを判定する。",
+      "core_concept": "瞬間的な速度0と力の釣合いは異なる",
+      "required_knowledge": "\\(\\mathbf F=m\\mathbf a\\)。最高点でも重力が働き、\\(a=-g\\)である。",
+      "solution": "鉛直投射の最高点では瞬間的に速度が0になるが、加速度は重力による下向き\\(g\\)である。従って力は釣り合っておらず、⑤が誤りである。質量は慣性の測定でも区別できる。",
+      "independent_answer": "5",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢5である。速度0は加速度0を意味しない。最高点でも重力は下向きに作用する。",
+      "learning_points": "力は速度でなく加速度を決める。最高点は静的平衡ではない。",
+      "theory_references": [
+        "theory:mechanics:newton"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "newton_dynamics",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は瞬間的な速度0と力の釣合いは異なるであり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "H24-REG-APPLIED-01",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "stem": "摩擦のない曲面を静止状態から10 m下った質量0.1 kgの物体の速さを求める。",
+      "conditions": {
+        "mass_kg": 0.1,
+        "height_drop_m": 10,
+        "g_m_s2": 9.8,
+        "initial_speed": 0,
+        "friction": "none"
+      },
+      "choices": {
+        "1": {
+          "value": "7 m/s",
+          "verdict": "不採用",
+          "reason": "必要な運動エネルギーの1/4しか持たない。"
+        },
+        "2": {
+          "value": "10 m/s",
+          "verdict": "不採用",
+          "reason": "v²=100であり、指定された2gh=196と一致しない。"
+        },
+        "3": {
+          "value": "14 m/s",
+          "verdict": "採用",
+          "reason": "v²=196=2ghを満たす。"
+        },
+        "4": {
+          "value": "20 m/s",
+          "verdict": "不採用",
+          "reason": "指定された落差で得られる運動エネルギーより大きい。"
+        },
+        "5": {
+          "value": "28 m/s",
+          "verdict": "不採用",
+          "reason": "必要速度の2倍で、エネルギーは4倍となり保存則を満たさない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/17_applied_science/page_001.png"
+      ],
+      "summary": "摩擦のない曲面を静止状態から10 m下った質量0.1 kgの物体の速さを求める。",
+      "core_concept": "重力による位置エネルギーの運動エネルギーへの変換",
+      "required_knowledge": "\\(mgh=mv^2/2\\)。滑らかな面の反力は変位と垂直で仕事をしない。",
+      "solution": "\\(v=\\sqrt{2gh}=\\sqrt{2\\times9.8\\times10}=14\\) m/sである。質量と経路形状は、反力が仕事をせず摩擦がないという条件の下で結果に入らない。",
+      "independent_answer": "3",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢3である。v²=196=2ghを満たす。",
+      "learning_points": "重力による位置エネルギーの運動エネルギーへの変換を、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:energy"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "mechanical_energy",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は重力による位置エネルギーの運動エネルギーへの変換であり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "R01-RET-APPLIED-02",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "stem": "同じ19.6 mの高さから同じ初速9.8 m/sで5方向へ投げた小球の、着地直前の速さを比較する。",
+      "conditions": {
+        "height_m": 19.6,
+        "initial_speed_m_s": 9.8,
+        "directions": [
+          "up",
+          "down",
+          "horizontal",
+          "up 30 deg",
+          "down 45 deg"
+        ],
+        "g_m_s2": 9.8,
+        "air_resistance": "none"
+      },
+      "choices": {
+        "1": {
+          "value": "水平の方が斜め上30度より速い",
+          "verdict": "不採用",
+          "reason": "両者とも同じ速さとなる。"
+        },
+        "2": {
+          "value": "斜め上30度の方が斜め下45度より速い",
+          "verdict": "不採用",
+          "reason": "両者とも同じ速さとなる。"
+        },
+        "3": {
+          "value": "鉛直下の方が鉛直上より速い",
+          "verdict": "不採用",
+          "reason": "両者とも同じ速さとなる。"
+        },
+        "4": {
+          "value": "斜め上30度と鉛直下の速さは等しい",
+          "verdict": "採用",
+          "reason": "同じ初期エネルギーから同じ着地速さが得られる。"
+        },
+        "5": {
+          "value": "斜め上30度の方が鉛直上より速い",
+          "verdict": "不採用",
+          "reason": "両者とも同じ速さとなる。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/17_applied_science/page_001.png"
+      ],
+      "summary": "同じ19.6 mの高さから同じ初速9.8 m/sで5方向へ投げた小球の、着地直前の速さを比較する。",
+      "core_concept": "着地速度の大きさは初期エネルギーで決まる",
+      "required_knowledge": "\\(v_f^2=v_0^2+2gh\\)。速さと速度ベクトル、飛行時間を区別する。",
+      "solution": "全ての方向で初期位置エネルギーと初期運動エネルギーが同じである。従って\\(v_f=\\sqrt{9.8^2+2\\times9.8\\times19.6}=9.8\\sqrt5\\) m/sで等しい。飛行時間や着地方向は異なっても、着地の速さは変わらない。",
+      "independent_answer": "4",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢4である。同じ初期エネルギーから同じ着地速さが得られる。",
+      "learning_points": "着地速度の大きさは初期エネルギーで決まるを、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:energy"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "mechanical_energy",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は着地速度の大きさは初期エネルギーで決まるであり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "R04-REG-APPLIED-01",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "stem": "ばね定数100 N/mのばねを0.10 m縮めて質量1.0 kgの物体を放し、自然長での速さを求める。",
+      "conditions": {
+        "spring_N_m": 100,
+        "mass_kg": 1.0,
+        "compression_m": 0.1,
+        "initial_speed": 0,
+        "surface": "smooth horizontal",
+        "air_resistance": "none"
+      },
+      "choices": {
+        "1": {
+          "value": "0.1 m/s",
+          "verdict": "不採用",
+          "reason": "指定条件によるエネルギー0.5 Jを満たす速度ではない。"
+        },
+        "2": {
+          "value": "0.5 m/s",
+          "verdict": "不採用",
+          "reason": "運動エネルギー0.125 Jで、初期弾性エネルギー0.5 Jに足りない。"
+        },
+        "3": {
+          "value": "1.0 m/s",
+          "verdict": "採用",
+          "reason": "運動エネルギー0.5 Jで初期弾性エネルギーに一致する。"
+        },
+        "4": {
+          "value": "5.0 m/s",
+          "verdict": "不採用",
+          "reason": "初期エネルギーを超える。"
+        },
+        "5": {
+          "value": "10 m/s",
+          "verdict": "不採用",
+          "reason": "初期エネルギーを超える。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/17_applied_science/page_001.png"
+      ],
+      "summary": "ばね定数100 N/mのばねを0.10 m縮めて質量1.0 kgの物体を放し、自然長での速さを求める。",
+      "core_concept": "弾性エネルギーの運動エネルギーへの変換",
+      "required_knowledge": "\\(kx^2/2=mv^2/2\\)。重力位置は変化せず、自然長でばねエネルギーは0。",
+      "solution": "\\(v=x\\sqrt{k/m}=0.10\\sqrt{100/1.0}=1.0\\) m/s。ばねが自然長となる瞬間は加速度0だが、速度は最大である。",
+      "independent_answer": "3",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢3である。運動エネルギー0.5 Jで初期弾性エネルギーに一致する。",
+      "learning_points": "弾性エネルギーの運動エネルギーへの変換を、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:energy"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "mechanical_energy",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は弾性エネルギーの運動エネルギーへの変換であり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "H23-REG-APPLIED-04",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "棒の軸方向の応力とひずみの比例法則、比例係数、横ひずみと軸ひずみの比の名称を対応付ける。",
+      "conditions": {
+        "loading": "axial tension or compression",
+        "regime": "linear elasticity",
+        "requested": "law, axial modulus, transverse-to-axial strain ratio"
+      },
+      "choices": {
+        "1": {
+          "value": "フック・ヤング・ポアソン",
+          "verdict": "採用",
+          "reason": "法則・縦弾性係数・横収縮の比が全て対応する。"
+        },
+        "2": {
+          "value": "ストークス・ヤング・レイリー",
+          "verdict": "不採用",
+          "reason": "ストークスの法則は粘性抵抗を扱い、レイリー比も横収縮比ではない。"
+        },
+        "3": {
+          "value": "ストークス・剛性・レイリー",
+          "verdict": "不採用",
+          "reason": "法則と比例係数と横収縮比の名称が一致しない。"
+        },
+        "4": {
+          "value": "フック・ヤング・レイリー",
+          "verdict": "不採用",
+          "reason": "レイリー比はこの横ひずみ比の名称ではない。"
+        },
+        "5": {
+          "value": "フック・剛性・ポアソン",
+          "verdict": "不採用",
+          "reason": "剛性率はせん断変形に対する係数で、軸引張の係数ではない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_002.png"
+      ],
+      "summary": "棒の軸方向の応力とひずみの比例法則、比例係数、横ひずみと軸ひずみの比の名称を対応付ける。",
+      "core_concept": "フックの法則・ヤング率・ポアソン比の役割",
+      "required_knowledge": "\\(\\sigma=E\\epsilon_a\\)、\\(\\nu=-\\epsilon_t/\\epsilon_a\\)。ヤング率と剛性率は異なる変形の係数。",
+      "solution": "軸方向の線形応力―ひずみ関係がフックの法則、その係数がヤング率Eである。横ひずみの大きさを軸ひずみの大きさで割った値がポアソン比で、①の組合せが一致する。",
+      "independent_answer": "1",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢1である。法則・縦弾性係数・横収縮の比が全て対応する。",
+      "learning_points": "フックの法則・ヤング率・ポアソン比の役割を、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:elasticity"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "concept_025",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題はフックの法則・ヤング率・ポアソン比の役割であり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "H25-REG-APPLIED-06",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "stem": "棒の軸方向の応力とひずみの比例法則、比例係数、横ひずみと軸ひずみの比の名称を対応付ける。",
+      "conditions": {
+        "loading": "axial tension or compression",
+        "regime": "linear elasticity",
+        "requested": "law, axial modulus, transverse-to-axial strain ratio"
+      },
+      "choices": {
+        "1": {
+          "value": "フック・ヤング・ポアソン",
+          "verdict": "採用",
+          "reason": "法則・縦弾性係数・横収縮の比が全て対応する。"
+        },
+        "2": {
+          "value": "ストークス・ヤング・レイリー",
+          "verdict": "不採用",
+          "reason": "ストークスの法則は粘性抵抗を扱い、レイリー比も横収縮比ではない。"
+        },
+        "3": {
+          "value": "ストークス・剛性・レイリー",
+          "verdict": "不採用",
+          "reason": "法則と比例係数と横収縮比の名称が一致しない。"
+        },
+        "4": {
+          "value": "フック・ヤング・レイリー",
+          "verdict": "不採用",
+          "reason": "レイリー比はこの横ひずみ比の名称ではない。"
+        },
+        "5": {
+          "value": "フック・剛性・ポアソン",
+          "verdict": "不採用",
+          "reason": "剛性率はせん断変形に対する係数で、軸引張の係数ではない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/17_applied_science/page_003.png"
+      ],
+      "summary": "棒の軸方向の応力とひずみの比例法則、比例係数、横ひずみと軸ひずみの比の名称を対応付ける。",
+      "core_concept": "フックの法則・ヤング率・ポアソン比の役割",
+      "required_knowledge": "\\(\\sigma=E\\epsilon_a\\)、\\(\\nu=-\\epsilon_t/\\epsilon_a\\)。ヤング率と剛性率は異なる変形の係数。",
+      "solution": "軸方向の線形応力―ひずみ関係がフックの法則、その係数がヤング率Eである。横ひずみの大きさを軸ひずみの大きさで割った値がポアソン比で、①の組合せが一致する。",
+      "independent_answer": "1",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢1である。法則・縦弾性係数・横収縮の比が全て対応する。",
+      "learning_points": "フックの法則・ヤング率・ポアソン比の役割を、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:elasticity"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "concept_025",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題はフックの法則・ヤング率・ポアソン比の役割であり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "H30-REG-APPLIED-02",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "stem": "棒の線形応力―ひずみ関係について、法則・比例係数・横収縮比の名称の組合せを選ぶ。",
+      "conditions": {
+        "regime": "linear axial elasticity",
+        "ratio_wording": "原典は縦横ひずみの比率を文章で述べ、分数を明記しない。標準のポアソン比定義を解説で明示する。"
+      },
+      "choices": {
+        "1": {
+          "value": "フック・剛性・ポアソン",
+          "verdict": "不採用",
+          "reason": "軸方向の係数をせん断の剛性率と取り違えている。"
+        },
+        "2": {
+          "value": "フック・ヤング・ポアソン",
+          "verdict": "採用",
+          "reason": "フック・ヤング・ポアソンが対応する。"
+        },
+        "3": {
+          "value": "フック・ヤング・剛性",
+          "verdict": "不採用",
+          "reason": "剛性率はひずみ比ではなく応力の次元を持つ弾性係数である。"
+        },
+        "4": {
+          "value": "ガウス・ヤング・ポアソン",
+          "verdict": "不採用",
+          "reason": "ガウスの法則は軸応力とひずみの比例法則ではない。"
+        },
+        "5": {
+          "value": "ガウス・ヤング・剛性",
+          "verdict": "不採用",
+          "reason": "法則とひずみ比の名称がともに不適切である。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/17_applied_science/page_001.png"
+      ],
+      "summary": "棒の線形応力―ひずみ関係について、法則・比例係数・横収縮比の名称の組合せを選ぶ。",
+      "core_concept": "軸方向弾性定数と横方向収縮を分ける",
+      "required_knowledge": "\\(\\sigma=E\\epsilon_a\\)、ポアソン比は\\(\\nu=-\\epsilon_t/\\epsilon_a\\)。",
+      "solution": "軸方向にフックの法則を適用する係数はヤング率であり、横収縮の比はポアソン比である。従って②。原典の比率の文章表現から、縦/横の逆数を新しい定義として作らない。",
+      "independent_answer": "2",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢2である。フック・ヤング・ポアソンが対応する。",
+      "learning_points": "軸方向弾性定数と横方向収縮を分けるを、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:elasticity"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "concept_025",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は軸方向弾性定数と横方向収縮を分けるであり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "R05-REG-APPLIED-01",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "stem": "微小な軸引張りを受ける金属棒の弾性係数・性質・ポアソン比と、体積変化の符号を判定する。",
+      "conditions": {
+        "axial_strain": "positive and small",
+        "lateral_strain": "negative",
+        "poisson_range": [
+          0.1,
+          0.45
+        ],
+        "unloading": "returns to zero strain"
+      },
+      "choices": {
+        "1": {
+          "value": "剛性・線形弾性・ヤング・減少",
+          "verdict": "不採用",
+          "reason": "係数とひずみ比の名称が不適切で、体積の符号も異なる。"
+        },
+        "2": {
+          "value": "ヤング・線形塑性・剛性・増加",
+          "verdict": "不採用",
+          "reason": "除荷で戻る条件は塑性ではなく弾性であり、Cも不適切。"
+        },
+        "3": {
+          "value": "ヤング・線形弾性・ポアソン・減少",
+          "verdict": "不採用",
+          "reason": "A/B/Cはよいが体積変化の符号が逆である。"
+        },
+        "4": {
+          "value": "ヤング・線形塑性・ポアソン・減少",
+          "verdict": "不採用",
+          "reason": "Bと体積変化の符号が不適切。"
+        },
+        "5": {
+          "value": "ヤング・線形弾性・ポアソン・増加",
+          "verdict": "採用",
+          "reason": "ヤング・線形弾性・ポアソン・体積増加が全条件と一致する。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/17_applied_science/page_001.png"
+      ],
+      "summary": "微小な軸引張りを受ける金属棒の弾性係数・性質・ポアソン比と、体積変化の符号を判定する。",
+      "core_concept": "ポアソン収縮と体積ひずみの符号",
+      "required_knowledge": "\\(\\epsilon_t=-\\nu\\epsilon_a\\)、\\(\\Delta V/V\\simeq\\epsilon_a+2\\epsilon_t\\)。微小ひずみ近似。",
+      "solution": "除荷で戻る比例応答は線形弾性、軸方向係数はヤング率である。体積ひずみは\\(\\Delta V/V\\simeq(1-2\\nu)\\epsilon_a\\)。\\(0.1\\le\\nu\\le0.45<0.5\\)かつ\\(\\epsilon_a>0\\)なので体積は増加し、⑤が一致する。",
+      "independent_answer": "5",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢5である。ヤング・線形弾性・ポアソン・体積増加が全条件と一致する。",
+      "learning_points": "ポアソン収縮と体積ひずみの符号を、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:elasticity"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "concept_025",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題はポアソン収縮と体積ひずみの符号であり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。複数の釣合い・保存則・定義を組み合わせるため二段の判断がある。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "R01-REG-APPLIED-02",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "stem": "直径10 mmの丸棒に20 N mのねじりモーメントを加えたときの最大せん断応力を求める。",
+      "conditions": {
+        "diameter_mm": 10,
+        "torque_N_m": 20,
+        "section": "solid circular bar",
+        "model": "elastic circular-shaft torsion"
+      },
+      "choices": {
+        "1": {
+          "value": "50 MPa",
+          "verdict": "不採用",
+          "reason": "計算値101.9 MPaより大幅に小さい。"
+        },
+        "2": {
+          "value": "100 MPa",
+          "verdict": "採用",
+          "reason": "101.9 MPaに最も近い。"
+        },
+        "3": {
+          "value": "150 MPa",
+          "verdict": "不採用",
+          "reason": "計算値より約48 MPa大きい。"
+        },
+        "4": {
+          "value": "200 MPa",
+          "verdict": "不採用",
+          "reason": "計算値のほぼ2倍となる。"
+        },
+        "5": {
+          "value": "250 MPa",
+          "verdict": "不採用",
+          "reason": "計算値より大幅に大きい。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/17_applied_science/page_001.png"
+      ],
+      "summary": "直径10 mmの丸棒に20 N mのねじりモーメントを加えたときの最大せん断応力を求める。",
+      "core_concept": "丸棒のねじりと断面二次極モーメント",
+      "required_knowledge": "\\(J=\\pi d^4/32\\)、\\(\\tau(r)=Tr/J\\)、外周\\(r=d/2\\)で最大。",
+      "solution": "\\(\\tau_{\\max}=16T/(\\pi d^3)\\)。\\(d=0.010\\) m、\\(T=20\\) N mを代入し、\\(\\tau_{\\max}\\simeq1.019\\times10^8\\) Pa=101.9 MPa。従って②の100 MPaが最も近い。直径と半径及びmmとmを混同しない。",
+      "independent_answer": "2",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢2である。101.9 MPaに最も近い。",
+      "learning_points": "丸棒のねじりと断面二次極モーメントを、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:torsion"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "concept_025",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は丸棒のねじりと断面二次極モーメントであり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。複数の釣合い・保存則・定義を組み合わせるため二段の判断がある。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "H26-REG-APPLIED-03",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "体積V、密度αの物体を密度βの静止水に完全に浸したときの浮力の大きさを求める。",
+      "conditions": {
+        "object_volume": "V",
+        "object_density": "alpha",
+        "water_density": "beta",
+        "immersion": "complete",
+        "deformation": "none",
+        "flow": "none",
+        "gravity": "g"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(\\alpha Vg\\)",
+          "verdict": "不採用",
+          "reason": "物体自身の重力であり浮力ではない。"
+        },
+        "2": {
+          "value": "\\(\\beta Vg\\)",
+          "verdict": "採用",
+          "reason": "排除した水の重量であり浮力に等しい。"
+        },
+        "3": {
+          "value": "\\(|\\alpha-\\beta|Vg\\)",
+          "verdict": "不採用",
+          "reason": "重力と浮力の差の大きさであり、浮力そのものではない。"
+        },
+        "4": {
+          "value": "\\((\\alpha+\\beta)Vg\\)",
+          "verdict": "不採用",
+          "reason": "重力と浮力の大きさの和であり、作用する浮力の定義ではない。"
+        },
+        "5": {
+          "value": "\\(\\alpha\\beta Vg\\)",
+          "verdict": "不採用",
+          "reason": "密度を二つ掛けており力の次元にもならない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_001.png"
+      ],
+      "summary": "体積V、密度αの物体を密度βの静止水に完全に浸したときの浮力の大きさを求める。",
+      "core_concept": "浮力は排除した流体の重量で決まる",
+      "required_knowledge": "静水圧\\(dp/dz=-\\rho g\\)を物体表面で積分すると\\(F_B=\\rho_{\\rm fluid}gV\\)となる。",
+      "solution": "排除した水の体積はV、質量はβVである。従って浮力は\\(F_B=\\beta Vg\\)。物体の密度αは重力や合力には入るが、指定された完全浸漬・変形なしの浮力には入らない。",
+      "independent_answer": "2",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢2である。排除した水の重量であり浮力に等しい。",
+      "learning_points": "浮力は排除した流体の重量で決まるを、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:hydrostatics"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "buoyancy",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は浮力は排除した流体の重量で決まるであり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "R01-REG-APPLIED-01",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "stem": "体積V、密度αの物体を密度βの静止水に完全に浸したときの浮力の大きさを求める。",
+      "conditions": {
+        "object_volume": "V",
+        "object_density": "alpha",
+        "water_density": "beta",
+        "immersion": "complete",
+        "deformation": "none",
+        "flow": "none",
+        "gravity": "g"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(|\\alpha-\\beta|Vg\\)",
+          "verdict": "不採用",
+          "reason": "重力と浮力の差の大きさであり、浮力そのものではない。"
+        },
+        "2": {
+          "value": "\\(\\alpha\\beta Vg\\)",
+          "verdict": "不採用",
+          "reason": "密度を二つ掛けており力の次元にもならない。"
+        },
+        "3": {
+          "value": "\\(\\alpha Vg\\)",
+          "verdict": "不採用",
+          "reason": "物体自身の重力であり浮力ではない。"
+        },
+        "4": {
+          "value": "\\((\\alpha+\\beta)Vg\\)",
+          "verdict": "不採用",
+          "reason": "重力と浮力の大きさの和であり、作用する浮力の定義ではない。"
+        },
+        "5": {
+          "value": "\\(\\beta Vg\\)",
+          "verdict": "採用",
+          "reason": "排除した水の重量であり浮力に等しい。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/17_applied_science/page_001.png"
+      ],
+      "summary": "体積V、密度αの物体を密度βの静止水に完全に浸したときの浮力の大きさを求める。",
+      "core_concept": "浮力は排除した流体の重量で決まる",
+      "required_knowledge": "静水圧\\(dp/dz=-\\rho g\\)を物体表面で積分すると\\(F_B=\\rho_{\\rm fluid}gV\\)となる。",
+      "solution": "排除した水の体積はV、質量はβVである。従って浮力は\\(F_B=\\beta Vg\\)。物体の密度αは重力や合力には入るが、指定された完全浸漬・変形なしの浮力には入らない。",
+      "independent_answer": "5",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢5である。排除した水の重量であり浮力に等しい。",
+      "learning_points": "浮力は排除した流体の重量で決まるを、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:hydrostatics"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "buoyancy",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は浮力は排除した流体の重量で決まるであり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "H24-REG-APPLIED-09",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "stem": "ピトー管の速度測定で使う原理と、差を測る二種類の圧力を対応付ける。",
+      "conditions": {
+        "requested": "principle; pressure B; pressure C",
+        "measurement": "tube parallel to flow",
+        "source_description": "total pressure is static plus dynamic pressure"
+      },
+      "choices": {
+        "1": {
+          "value": "ベルヌーイ・総圧・静圧",
+          "verdict": "採用",
+          "reason": "ベルヌーイにより総圧から静圧を引いて動圧を得る。"
+        },
+        "2": {
+          "value": "ベルヌーイ・静圧・動圧",
+          "verdict": "不採用",
+          "reason": "静圧と動圧の差を直接測るという組合せは測定原理と異なる。"
+        },
+        "3": {
+          "value": "ベルヌーイ・総圧・動圧",
+          "verdict": "不採用",
+          "reason": "総圧から動圧を引くと静圧になり、目的の差ではない。"
+        },
+        "4": {
+          "value": "ストークス・総圧・静圧",
+          "verdict": "不採用",
+          "reason": "ストークスの法則は粘性抵抗の法則であり、この原理ではない。"
+        },
+        "5": {
+          "value": "ストークス・静圧・動圧",
+          "verdict": "不採用",
+          "reason": "原理と圧力の組合せがいずれも不適切。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/17_applied_science/page_003.png"
+      ],
+      "summary": "ピトー管の速度測定で使う原理と、差を測る二種類の圧力を対応付ける。",
+      "core_concept": "流れの運動エネルギーを停滞圧との差へ変換する",
+      "required_knowledge": "同じ高さで定常・非圧縮・粘性損失を無視すると\\(p_0=p+\\rho v^2/2\\)。",
+      "solution": "ピトー管の入口で流れを停滞させて総圧を測り、別に静圧を測る。その差が動圧なので\\(v=\\sqrt{2(p_0-p)/\\rho}\\)。ベルヌーイ・総圧・静圧の①が一致する。高さが変わる場合は位置エネルギー項も必要で、原典の短い総圧表現を任意の流れへ無条件に拡張しない。",
+      "independent_answer": "1",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢1である。ベルヌーイにより総圧から静圧を引いて動圧を得る。",
+      "learning_points": "流れの運動エネルギーを停滞圧との差へ変換するを、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:bernoulli"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "bernoulli",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は流れの運動エネルギーを停滞圧との差へ変換するであり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "R02-REG-APPLIED-02",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "stem": "ピトー管の速度測定で使う原理と、差を測る二種類の圧力を対応付ける。",
+      "conditions": {
+        "requested": "principle; pressure B; pressure C",
+        "measurement": "tube parallel to flow",
+        "source_description": "total pressure is static plus dynamic pressure"
+      },
+      "choices": {
+        "1": {
+          "value": "ベルヌーイ・総圧・静圧",
+          "verdict": "採用",
+          "reason": "ベルヌーイにより総圧から静圧を引いて動圧を得る。"
+        },
+        "2": {
+          "value": "ベルヌーイ・静圧・動圧",
+          "verdict": "不採用",
+          "reason": "静圧と動圧の差を直接測るという組合せは測定原理と異なる。"
+        },
+        "3": {
+          "value": "ベルヌーイ・総圧・動圧",
+          "verdict": "不採用",
+          "reason": "総圧から動圧を引くと静圧になり、目的の差ではない。"
+        },
+        "4": {
+          "value": "ストークス・総圧・静圧",
+          "verdict": "不採用",
+          "reason": "ストークスの法則は粘性抵抗の法則であり、この原理ではない。"
+        },
+        "5": {
+          "value": "ストークス・静圧・動圧",
+          "verdict": "不採用",
+          "reason": "原理と圧力の組合せがいずれも不適切。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/17_applied_science/page_001.png"
+      ],
+      "summary": "ピトー管の速度測定で使う原理と、差を測る二種類の圧力を対応付ける。",
+      "core_concept": "流れの運動エネルギーを停滞圧との差へ変換する",
+      "required_knowledge": "同じ高さで定常・非圧縮・粘性損失を無視すると\\(p_0=p+\\rho v^2/2\\)。",
+      "solution": "ピトー管の入口で流れを停滞させて総圧を測り、別に静圧を測る。その差が動圧なので\\(v=\\sqrt{2(p_0-p)/\\rho}\\)。ベルヌーイ・総圧・静圧の①が一致する。高さが変わる場合は位置エネルギー項も必要で、原典の短い総圧表現を任意の流れへ無条件に拡張しない。",
+      "independent_answer": "1",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢1である。ベルヌーイにより総圧から静圧を引いて動圧を得る。",
+      "learning_points": "流れの運動エネルギーを停滞圧との差へ変換するを、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:bernoulli"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "bernoulli",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は流れの運動エネルギーを停滞圧との差へ変換するであり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "H26-REG-APPLIED-01",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "球形の地球の表面近くから水平に発射した物体が地表へ落ちないための最小速度を求める。",
+      "conditions": {
+        "Earth_radius": "R",
+        "surface_gravity": "g",
+        "projectile_mass": "m",
+        "launch": "tangent, just above surface",
+        "air_resistance": "none"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(\\sqrt{gR}\\)",
+          "verdict": "採用",
+          "reason": "円軌道を保つ向心加速度gを与える最小値。"
+        },
+        "2": {
+          "value": "\\(2\\pi\\sqrt{gR}\\)",
+          "verdict": "不採用",
+          "reason": "周期や角周波数の2πを速度へ余分に掛けている。最小値ではない。"
+        },
+        "3": {
+          "value": "\\(\\sqrt{gR}/(2\\pi)\\)",
+          "verdict": "不採用",
+          "reason": "向心加速度がg/(4π²)となり足りない。"
+        },
+        "4": {
+          "value": "\\(m\\sqrt{gR}\\)",
+          "verdict": "不採用",
+          "reason": "発射物の質量が入り、速度の次元も満たさない。"
+        },
+        "5": {
+          "value": "\\(\\sqrt{gR}/m\\)",
+          "verdict": "不採用",
+          "reason": "発射物の質量が入り、速度の次元も満たさない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_001.png"
+      ],
+      "summary": "球形の地球の表面近くから水平に発射した物体が地表へ落ちないための最小速度を求める。",
+      "core_concept": "第一宇宙速度と円軌道の向心加速度",
+      "required_knowledge": "\\(v^2/R=g\\)。地表すれすれの円軌道を近似する。",
+      "solution": "円軌道の向心加速度を重力加速度に一致させると\\(v^2/R=g\\)、よって\\(v=\\sqrt{gR}\\)で①。脱出速度ではなく落下しないための最小接線速度であり、発射物の質量は消える。",
+      "independent_answer": "1",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢1である。円軌道を保つ向心加速度gを与える最小値。",
+      "learning_points": "第一宇宙速度と円軌道の向心加速度を、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:orbit"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "concept_036",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は第一宇宙速度と円軌道の向心加速度であり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "H28-REG-APPLIED-02",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "球形の地球の表面近くから水平に発射した物体が地表へ落ちないための最小速度を求める。",
+      "conditions": {
+        "Earth_radius": "R",
+        "surface_gravity": "g",
+        "projectile_mass": "m",
+        "launch": "tangent, just above surface",
+        "air_resistance": "none"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(\\sqrt{gR}\\)",
+          "verdict": "採用",
+          "reason": "円軌道を保つ向心加速度gを与える最小値。"
+        },
+        "2": {
+          "value": "\\(2\\pi\\sqrt{gR}\\)",
+          "verdict": "不採用",
+          "reason": "周期や角周波数の2πを速度へ余分に掛けている。最小値ではない。"
+        },
+        "3": {
+          "value": "\\(\\sqrt{gR}/(2\\pi)\\)",
+          "verdict": "不採用",
+          "reason": "向心加速度がg/(4π²)となり足りない。"
+        },
+        "4": {
+          "value": "\\(m\\sqrt{gR}\\)",
+          "verdict": "不採用",
+          "reason": "発射物の質量が入り、速度の次元も満たさない。"
+        },
+        "5": {
+          "value": "\\(\\sqrt{gR}/m\\)",
+          "verdict": "不採用",
+          "reason": "発射物の質量が入り、速度の次元も満たさない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_001.png"
+      ],
+      "summary": "球形の地球の表面近くから水平に発射した物体が地表へ落ちないための最小速度を求める。",
+      "core_concept": "第一宇宙速度と円軌道の向心加速度",
+      "required_knowledge": "\\(v^2/R=g\\)。地表すれすれの円軌道を近似する。",
+      "solution": "円軌道の向心加速度を重力加速度に一致させると\\(v^2/R=g\\)、よって\\(v=\\sqrt{gR}\\)で①。脱出速度ではなく落下しないための最小接線速度であり、発射物の質量は消える。",
+      "independent_answer": "1",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢1である。円軌道を保つ向心加速度gを与える最小値。",
+      "learning_points": "第一宇宙速度と円軌道の向心加速度を、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:orbit"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "concept_036",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は第一宇宙速度と円軌道の向心加速度であり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "H30-REG-APPLIED-01",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "stem": "静止衛星の地球中心からの距離を、地球質量と万有引力定数から評価する。",
+      "conditions": {
+        "Earth_mass_kg": 6e+24,
+        "G_N_m2_kg2": 6.7e-11,
+        "requested_distance": "from Earth centre",
+        "period_assumption": "Earth rotation; approximate 24 hours=86400 s"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(4.2\\times10^4\\) m",
+          "verdict": "不採用",
+          "reason": "地球中心からの円軌道半径約4.2×10⁷ m（4.2×10⁴ km）と一致しない。"
+        },
+        "2": {
+          "value": "\\(4.2\\times10^5\\) m",
+          "verdict": "不採用",
+          "reason": "地球中心からの円軌道半径約4.2×10⁷ m（4.2×10⁴ km）と一致しない。"
+        },
+        "3": {
+          "value": "\\(4.2\\times10^6\\) m",
+          "verdict": "不採用",
+          "reason": "地球中心からの円軌道半径約4.2×10⁷ m（4.2×10⁴ km）と一致しない。"
+        },
+        "4": {
+          "value": "\\(4.2\\times10^7\\) m",
+          "verdict": "採用",
+          "reason": "地球中心からの半径約4.2×10⁷ m=4.2×10⁴ kmと一致する。地表からの高度ではない。"
+        },
+        "5": {
+          "value": "\\(4.2\\times10^8\\) m",
+          "verdict": "不採用",
+          "reason": "地球中心からの円軌道半径約4.2×10⁷ m（4.2×10⁴ km）と一致しない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/17_applied_science/page_001.png"
+      ],
+      "summary": "静止衛星の地球中心からの距離を、地球質量と万有引力定数から評価する。",
+      "core_concept": "静止衛星の周期条件とケプラー則",
+      "required_knowledge": "\\(GM/r^2=(2\\pi/T)^2r\\)、\\(r=(GMT^2/4\\pi^2)^{1/3}\\)。",
+      "solution": "地上から静止して見える衛星は地球の自転と同じ角速度で回る。周期を近似的に24時間とし、\\(GM=4.02\\times10^{14}\\) m³/s²を代入すると\\(r\\simeq4.24\\times10^7\\) mとなる。厳密な恒星日を使っても選択肢の桁は変わらない。原典は地球中心からの距離を問うので地球半径を差し引かない。",
+      "independent_answer": "4",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢4である。地球中心からの半径約4.2×10⁷ m=4.2×10⁴ kmと一致する。地表からの高度ではない。",
+      "learning_points": "静止衛星の周期条件とケプラー則を、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:orbit"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "concept_036",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は静止衛星の周期条件とケプラー則であり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。複数の釣合い・保存則・定義を組み合わせるため二段の判断がある。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "R06-REG-APPLIED-01",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "stem": "静止衛星の地球中心からの距離を、地球質量と万有引力定数から評価する。",
+      "conditions": {
+        "Earth_mass_kg": 6e+24,
+        "G_N_m2_kg2": 6.7e-11,
+        "requested_distance": "from Earth centre",
+        "period_assumption": "Earth rotation; approximate 24 hours=86400 s"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(4.2\\times10^3\\) km",
+          "verdict": "不採用",
+          "reason": "地球中心からの円軌道半径約4.2×10⁷ m（4.2×10⁴ km）と一致しない。"
+        },
+        "2": {
+          "value": "\\(2.4\\times10^4\\) km",
+          "verdict": "不採用",
+          "reason": "地球中心からの円軌道半径約4.2×10⁷ m（4.2×10⁴ km）と一致しない。"
+        },
+        "3": {
+          "value": "\\(4.2\\times10^4\\) km",
+          "verdict": "採用",
+          "reason": "地球中心からの半径約4.2×10⁷ m=4.2×10⁴ kmと一致する。地表からの高度ではない。"
+        },
+        "4": {
+          "value": "\\(1.2\\times10^5\\) km",
+          "verdict": "不採用",
+          "reason": "地球中心からの円軌道半径約4.2×10⁷ m（4.2×10⁴ km）と一致しない。"
+        },
+        "5": {
+          "value": "\\(2.4\\times10^5\\) km",
+          "verdict": "不採用",
+          "reason": "地球中心からの円軌道半径約4.2×10⁷ m（4.2×10⁴ km）と一致しない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/17_applied_science/page_001.png"
+      ],
+      "summary": "静止衛星の地球中心からの距離を、地球質量と万有引力定数から評価する。",
+      "core_concept": "静止衛星の周期条件とケプラー則",
+      "required_knowledge": "\\(GM/r^2=(2\\pi/T)^2r\\)、\\(r=(GMT^2/4\\pi^2)^{1/3}\\)。",
+      "solution": "地上から静止して見える衛星は地球の自転と同じ角速度で回る。周期を近似的に24時間とし、\\(GM=4.02\\times10^{14}\\) m³/s²を代入すると\\(r\\simeq4.24\\times10^7\\) mとなる。厳密な恒星日を使っても選択肢の桁は変わらない。原典は地球中心からの距離を問うので地球半径を差し引かない。",
+      "independent_answer": "3",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢3である。地球中心からの半径約4.2×10⁷ m=4.2×10⁴ kmと一致する。地表からの高度ではない。",
+      "learning_points": "静止衛星の周期条件とケプラー則を、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:orbit"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "concept_036",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は静止衛星の周期条件とケプラー則であり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。複数の釣合い・保存則・定義を組み合わせるため二段の判断がある。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "R02-REG-APPLIED-01",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "stem": "高さ1 mから落とした球の反発係数が0.8のとき、2回目の跳ね返り高さを求める。",
+      "conditions": {
+        "initial_height_m": 1,
+        "restitution_coefficient": 0.8,
+        "floor": "stationary horizontal",
+        "air_resistance": "none",
+        "requested": "height after second rebound"
+      },
+      "choices": {
+        "1": {
+          "value": "30 cm",
+          "verdict": "不採用",
+          "reason": "40.96 cmとの近似距離が40 cmより大きい。"
+        },
+        "2": {
+          "value": "40 cm",
+          "verdict": "採用",
+          "reason": "40.96 cmに最も近い。"
+        },
+        "3": {
+          "value": "50 cm",
+          "verdict": "不採用",
+          "reason": "40.96 cmより大きく、2回の高さ倍率を満たさない。"
+        },
+        "4": {
+          "value": "60 cm",
+          "verdict": "不採用",
+          "reason": "1回目の64 cmに近く、求める2回目とは異なる。"
+        },
+        "5": {
+          "value": "80 cm",
+          "verdict": "不採用",
+          "reason": "速度比0.8を高さ比と取り違えた値である。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/17_applied_science/page_001.png"
+      ],
+      "summary": "高さ1 mから落とした球の反発係数が0.8のとき、2回目の跳ね返り高さを求める。",
+      "core_concept": "反発係数は速度比であり高さ比はその二乗である",
+      "required_knowledge": "\\(h_{n+1}=e^2h_n\\)。自由飛行中は力学的エネルギー保存。",
+      "solution": "1回の反発で高さは\\(e^2=0.64\\)倍になる。2回後は\\(h_2=e^4h_0=0.8^4\\times1=0.4096\\) m=40.96 cmで、最も近いのは②40 cm。",
+      "independent_answer": "2",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢2である。40.96 cmに最も近い。",
+      "learning_points": "反発係数は速度比であり高さ比はその二乗であるを、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:impact"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "impact",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は反発係数は速度比であり高さ比はその二乗であるであり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。複数の釣合い・保存則・定義を組み合わせるため二段の判断がある。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "R03-REG-APPLIED-02",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "質量mの球が速度uで静止している質量Mの球へ一次元完全弾性衝突するとき、後者の衝突後速度を求める。",
+      "conditions": {
+        "mass_A": "m",
+        "mass_B": "M",
+        "initial_velocity_A": "u",
+        "initial_velocity_B": 0,
+        "collision": "one-dimensional, perfectly elastic"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((m-M)u/(m+M)\\)",
+          "verdict": "不採用",
+          "reason": "これは入射球Aの衝突後速度で、問われている球Bではない。"
+        },
+        "2": {
+          "value": "\\(Mu/(m+M)\\)",
+          "verdict": "不採用",
+          "reason": "運動量と反発係数1の二条件を同時に満たさない。"
+        },
+        "3": {
+          "value": "\\(mu/(m+M)\\)",
+          "verdict": "不採用",
+          "reason": "完全非弾性で一体化した速度に対応し、本問ではない。"
+        },
+        "4": {
+          "value": "\\(2Mu/(m+M)\\)",
+          "verdict": "不採用",
+          "reason": "Bの速度の分子にMを置いており、Mが無限大でも速度が有限という不適切な極限になる。"
+        },
+        "5": {
+          "value": "\\(2mu/(m+M)\\)",
+          "verdict": "採用",
+          "reason": "運動量保存と相対速度反転の両条件を満たす。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_001.png"
+      ],
+      "summary": "質量mの球が速度uで静止している質量Mの球へ一次元完全弾性衝突するとき、後者の衝突後速度を求める。",
+      "core_concept": "運動量保存と弾性衝突の相対速度反転",
+      "required_knowledge": "\\(mu=mv_A+Mv_B\\)、\\(v_B-v_A=u\\)。外力の力積を無視する。",
+      "solution": "相対速度反転より\\(v_A=v_B-u\\)。運動量保存に代入し\\(mu=m(v_B-u)+Mv_B\\)、従って\\(v_B=2mu/(m+M)\\)で⑤。m=MならBがuを受け取り、Mが極めて大きければBの速度は小さいという極限とも一致する。",
+      "independent_answer": "5",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢5である。運動量保存と相対速度反転の両条件を満たす。",
+      "learning_points": "運動量保存と弾性衝突の相対速度反転を、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:impact"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "impact",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は運動量保存と弾性衝突の相対速度反転であり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。複数の釣合い・保存則・定義を組み合わせるため二段の判断がある。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "R06-REG-APPLIED-02",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "stem": "摩擦のない壁と摩擦のある水平床に立て掛けた一様な棒について、床の摩擦力を傾角θで表す。",
+      "conditions": {
+        "rod_mass": "M",
+        "rod_length": "L",
+        "rod_uniform": "yes",
+        "floor_angle": "theta",
+        "wall_friction": "none",
+        "state": "static"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(Mg\\cos\\theta\\)",
+          "verdict": "不採用",
+          "reason": "棒は斜面上の質点ではなく、回転の釣合いも必要である。"
+        },
+        "2": {
+          "value": "\\(Mg\\sin\\theta\\)",
+          "verdict": "不採用",
+          "reason": "重力成分だけでは壁の反力と腕の長さを反映しない。"
+        },
+        "3": {
+          "value": "\\(Mg\\tan\\theta/L\\)",
+          "verdict": "不採用",
+          "reason": "Mg/Lは力/長さとなり、摩擦力の次元を満たさない。"
+        },
+        "4": {
+          "value": "\\(Mg/(L\\cos\\theta)\\)",
+          "verdict": "不採用",
+          "reason": "Mg/Lは力/長さとなり、摩擦力の次元を満たさない。"
+        },
+        "5": {
+          "value": "\\(Mg/(2\\tan\\theta)\\)",
+          "verdict": "採用",
+          "reason": "中央に働く重力の腕から1/2が生じ、力とモーメントをともに満たす。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/17_applied_science/page_001.png"
+      ],
+      "summary": "摩擦のない壁と摩擦のある水平床に立て掛けた一様な棒について、床の摩擦力を傾角θで表す。",
+      "core_concept": "剛体の力とモーメントの釣合い",
+      "required_knowledge": "一様棒の重心は中央。床接点まわりで壁反力と重力のモーメントを比べる。",
+      "solution": "壁の水平反力をNwとする。床接点まわりの釣合いは\\(N_wL\\sin\\theta=Mg(L/2)\\cos\\theta\\)。従って\\(N_w=Mg/(2\\tan\\theta)\\)。水平力の釣合いから床の摩擦力F=Nwとなり⑤。床の法線反力はMgで、摩擦力を重力の斜面分解として直接求めてはいけない。",
+      "independent_answer": "5",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢5である。中央に働く重力の腕から1/2が生じ、力とモーメントをともに満たす。",
+      "learning_points": "剛体の力とモーメントの釣合いを、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:equilibrium"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "concept_035",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は剛体の力とモーメントの釣合いであり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。複数の釣合い・保存則・定義を組み合わせるため二段の判断がある。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "H27-REG-APPLIED-01",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "stem": "ばね定数1.0 N/mの軽いばねに質量8.0 kgをつるした鉛直単振動の周期を求める。",
+      "conditions": {
+        "spring_N_m": 1.0,
+        "mass_kg": 8.0,
+        "spring_mass": "negligible"
+      },
+      "choices": {
+        "1": {
+          "value": "1.4 s",
+          "verdict": "不採用",
+          "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+        },
+        "2": {
+          "value": "2.8 s",
+          "verdict": "不採用",
+          "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+        },
+        "3": {
+          "value": "8.8 s",
+          "verdict": "不採用",
+          "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+        },
+        "4": {
+          "value": "18 s",
+          "verdict": "採用",
+          "reason": "導出した周期に最も近い。角周波数と周期を区別して2πを含める。"
+        },
+        "5": {
+          "value": "26 s",
+          "verdict": "不採用",
+          "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/17_applied_science/page_001.png"
+      ],
+      "summary": "ばね定数1.0 N/mの軽いばねに質量8.0 kgをつるした鉛直単振動の周期を求める。",
+      "core_concept": "復元力の線形化と固有角振動数",
+      "required_knowledge": "\\(m\\ddot x+kx=0\\)なら\\(T=2\\pi\\sqrt{m/k}\\)。単振り子は小角近似で\\(\\ddot\\theta+(g/\\ell)\\theta=0\\)。",
+      "solution": "\\(T=2\\pi\\sqrt{m/k}=2\\pi\\sqrt8\\simeq17.8\\) sで④。重力は平衡位置をずらすが、平衡位置からの振動周期には入らない。",
+      "independent_answer": "4",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢4である。導出した周期に最も近い。角周波数と周期を区別して2πを含める。",
+      "learning_points": "復元力の線形化と固有角振動数を、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:oscillation"
+      ],
+      "discipline_id": "physics_wave",
+      "concept_id": "concept_034",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は復元力の線形化と固有角振動数であり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "H29-REG-APPLIED-01",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "長さ0.1 mのひもに質量0.1 kgの小さいおもりをつけた小角単振り子の周期を求める。",
+      "conditions": {
+        "length_m": 0.1,
+        "mass_kg": 0.1,
+        "g_m_s2": 9.8,
+        "angle": "small",
+        "bob_size": "negligible"
+      },
+      "choices": {
+        "1": {
+          "value": "0.1 s",
+          "verdict": "不採用",
+          "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+        },
+        "2": {
+          "value": "0.3 s",
+          "verdict": "不採用",
+          "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+        },
+        "3": {
+          "value": "0.6 s",
+          "verdict": "採用",
+          "reason": "導出した周期に最も近い。角周波数と周期を区別して2πを含める。"
+        },
+        "4": {
+          "value": "1.0 s",
+          "verdict": "不採用",
+          "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+        },
+        "5": {
+          "value": "6.0 s",
+          "verdict": "不採用",
+          "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_001.png"
+      ],
+      "summary": "長さ0.1 mのひもに質量0.1 kgの小さいおもりをつけた小角単振り子の周期を求める。",
+      "core_concept": "復元力の線形化と固有角振動数",
+      "required_knowledge": "\\(m\\ddot x+kx=0\\)なら\\(T=2\\pi\\sqrt{m/k}\\)。単振り子は小角近似で\\(\\ddot\\theta+(g/\\ell)\\theta=0\\)。",
+      "solution": "小角近似\\(\\sin\\theta\\simeq\\theta\\)から\\(T=2\\pi\\sqrt{\\ell/g}\\)。\\(T=2\\pi\\sqrt{0.1/9.8}\\simeq0.635\\) sで③。質量は消える。",
+      "independent_answer": "3",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢3である。導出した周期に最も近い。角周波数と周期を区別して2πを含める。",
+      "learning_points": "復元力の線形化と固有角振動数を、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:oscillation"
+      ],
+      "discipline_id": "physics_wave",
+      "concept_id": "concept_034",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は復元力の線形化と固有角振動数であり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "R05-REG-APPLIED-02",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "stem": "長さ2.0 mのひもにつけた質量5.0 kgのおもりの、小角単振り子の周期を求める。",
+      "conditions": {
+        "length_m": 2.0,
+        "mass_kg": 5.0,
+        "g_m_s2": 9.8,
+        "angle": "small",
+        "bob_size": "negligible"
+      },
+      "choices": {
+        "1": {
+          "value": "2.8 s",
+          "verdict": "採用",
+          "reason": "導出した周期に最も近い。角周波数と周期を区別して2πを含める。"
+        },
+        "2": {
+          "value": "3.3 s",
+          "verdict": "不採用",
+          "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+        },
+        "3": {
+          "value": "4.0 s",
+          "verdict": "不採用",
+          "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+        },
+        "4": {
+          "value": "6.6 s",
+          "verdict": "不採用",
+          "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+        },
+        "5": {
+          "value": "12.2 s",
+          "verdict": "不採用",
+          "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/17_applied_science/page_001.png"
+      ],
+      "summary": "長さ2.0 mのひもにつけた質量5.0 kgのおもりの、小角単振り子の周期を求める。",
+      "core_concept": "復元力の線形化と固有角振動数",
+      "required_knowledge": "\\(m\\ddot x+kx=0\\)なら\\(T=2\\pi\\sqrt{m/k}\\)。単振り子は小角近似で\\(\\ddot\\theta+(g/\\ell)\\theta=0\\)。",
+      "solution": "\\(T=2\\pi\\sqrt{\\ell/g}=2\\pi\\sqrt{2.0/9.8}\\simeq2.84\\) sで①。小角の条件を外した大振幅にはこの近似式をそのまま用いない。",
+      "independent_answer": "1",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢1である。導出した周期に最も近い。角周波数と周期を区別して2πを含める。",
+      "learning_points": "復元力の線形化と固有角振動数を、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:oscillation"
+      ],
+      "discipline_id": "physics_mechanics",
+      "concept_id": "concept_034",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は復元力の線形化と固有角振動数であり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。主要な判断は一段で、数式の成立条件の確認を要する。"
+      },
+      "citations": []
+    },
+    {
+      "question_id": "R07-REG-APPLIED-02",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "質量0.80 kgを鉛直ばねにつるすと4.9 cm伸びた。平衡位置から引いて放す単振動の周期を求める。",
+      "conditions": {
+        "mass_kg": 0.8,
+        "static_extension_m": 0.049,
+        "g_m_s2": 9.8,
+        "spring_mass": "light"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(4.4\\times10^{-1}\\) s",
+          "verdict": "採用",
+          "reason": "導出した周期に最も近い。角周波数と周期を区別して2πを含める。"
+        },
+        "2": {
+          "value": "\\(8.9\\times10^{-1}\\) s",
+          "verdict": "不採用",
+          "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+        },
+        "3": {
+          "value": "1.0 s",
+          "verdict": "不採用",
+          "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+        },
+        "4": {
+          "value": "1.8 s",
+          "verdict": "不採用",
+          "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+        },
+        "5": {
+          "value": "2.0 s",
+          "verdict": "不採用",
+          "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_001.png"
+      ],
+      "summary": "質量0.80 kgを鉛直ばねにつるすと4.9 cm伸びた。平衡位置から引いて放す単振動の周期を求める。",
+      "core_concept": "復元力の線形化と固有角振動数",
+      "required_knowledge": "\\(m\\ddot x+kx=0\\)なら\\(T=2\\pi\\sqrt{m/k}\\)。単振り子は小角近似で\\(\\ddot\\theta+(g/\\ell)\\theta=0\\)。",
+      "solution": "静的釣合い\\(k\\Delta\\ell=mg\\)から\\(k=0.80\\times9.8/0.049=160\\) N/m。\\(T=2\\pi\\sqrt{m/k}=2\\pi\\sqrt{0.80/160}\\simeq0.444\\) sで①。cmをmへ変換してから計算する。",
+      "independent_answer": "1",
+      "answer_reason": "独立に得た条件適合値・組合せは選択肢1である。導出した周期に最も近い。角周波数と周期を区別して2πを含める。",
+      "learning_points": "復元力の線形化と固有角振動数を、条件と式の対応から説明できること。",
+      "theory_references": [
+        "theory:mechanics:oscillation"
+      ],
+      "discipline_id": "physics_wave",
+      "concept_id": "concept_034",
+      "classification_reason": "原典の問題幹・5肢を画像確認。主題は復元力の線形化と固有角振動数であり、選択肢に現れる一般語による誤タグを除く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者の既習事項を条件へ適用する。複数の釣合い・保存則・定義を組み合わせるため二段の判断がある。"
+      },
+      "citations": []
+    }
+  ]
+}

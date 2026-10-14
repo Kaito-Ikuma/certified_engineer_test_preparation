@@ -1,0 +1,47 @@
+{
+  "stem": "2024年白書の知識集約社会と生成AIの普及を四つの語句へ対応させる。",
+  "conditions": {
+    "原典確認": "問題幹と各記述の主体・否定・全称・表の5候補を保存原典画像で確認。",
+    "制度時点": "R07年度の原典表現を保持。現行資料の条番号や仕様を過去へ補わない。",
+    "各記述の判断": "ア：知識；イ：高付加価値化；ウ：医療；エ：対話",
+    "前提": "白書は知識を価値創造の中心とする社会、製品やサービスの高付加価値化、医療への影響、対話型インターフェースの普及を説明する。"
+  },
+  "choices": {
+    "1": {
+      "value": "知識・高付加価値化・医療・対話",
+      "verdict": "適切",
+      "reason": "四空欄が白書の対象記述に対応する。"
+    },
+    "2": {
+      "value": "情報・標準規定化・倫理・対話",
+      "verdict": "不適切",
+      "reason": "知識集約・高付加価値化・医療の三語が違う。"
+    },
+    "3": {
+      "value": "知識・標準規定化・医療・学習",
+      "verdict": "不適切",
+      "reason": "高付加価値化と対話型の二語が違う。"
+    },
+    "4": {
+      "value": "情報・標準規定化・医療・対話",
+      "verdict": "不適切",
+      "reason": "知識集約と高付加価値化の二語が違う。"
+    },
+    "5": {
+      "value": "知識・高付加価値化・倫理・学習",
+      "verdict": "不適切",
+      "reason": "医療と対話型の二語が違う。"
+    }
+  },
+  "figures": "図なし。記号組合せ又は語句組合せ・個数を原典と照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/aptitude/page_007.png"
+  ],
+  "question_id": "R07-REG-APT-07",
+  "source_file": "sources/R07/aptitude.pdf",
+  "source_page": "7",
+  "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+  "raw_text_sha256": "d9e084440f926a47819afdd09492aee42d669374caf7c3df9dc43d1cbf7dc87c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

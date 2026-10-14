@@ -1,0 +1,45 @@
+{
+  "stem": "DNAの一方の鎖のCとTの割合から、同じ鎖と相補鎖で必ず成り立つ塩基割合を求める。",
+  "conditions": {
+    "条件": "一方の鎖C20、T35パーセント。",
+    "方向": "最も適切。割合の対象鎖を毎回確認。"
+  },
+  "choices": {
+    "1": {
+      "value": "同じ鎖G=20パーセント。",
+      "verdict": "不適切",
+      "reason": "一方の鎖内でG=Cとは限らずG単独は未決定。"
+    },
+    "2": {
+      "value": "同じ鎖A=35パーセント。",
+      "verdict": "不適切",
+      "reason": "一方の鎖内でA=Tとは限らずA単独は未決定。"
+    },
+    "3": {
+      "value": "同じ鎖A+G=45パーセント。",
+      "verdict": "最適",
+      "reason": "全塩基の割合は100なので100−20−35=45。"
+    },
+    "4": {
+      "value": "相補鎖A+G=45パーセント。",
+      "verdict": "不適切",
+      "reason": "相補鎖Aは元のT、Gは元のCで合計55となる。"
+    },
+    "5": {
+      "value": "相補鎖C+T=55パーセント。",
+      "verdict": "不適切",
+      "reason": "相補鎖C+Tは元のG+Aなので45となる。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/basic/page_014.png"
+  ],
+  "question_id": "H27-REG-BASIC-4-6",
+  "source_file": "sources/H27/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+  "raw_text_sha256": "ee79bd473aa686ded4c1048c98e5cd30ead190cb067d6709e22adf284943de9d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

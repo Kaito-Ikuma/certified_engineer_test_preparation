@@ -1,0 +1,80 @@
+{
+  "time": "2026-10-11T10:49:56.179947+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_024_network_security",
+  "question_ids": [
+    "H23-REG-BASIC-2-2",
+    "H23-REG-BASIC-2-5",
+    "H26-REG-BASIC-2-6",
+    "H27-REG-BASIC-2-5",
+    "H29-REG-BASIC-2-1",
+    "H30-REG-BASIC-2-1",
+    "R01-REG-BASIC-2-3",
+    "R01-RET-BASIC-2-1",
+    "R02-REG-BASIC-2-3",
+    "R03-REG-BASIC-2-1",
+    "R04-REG-BASIC-2-1",
+    "R05-REG-BASIC-2-1",
+    "R06-REG-BASIC-2-3",
+    "R06-REG-BASIC-2-6",
+    "R07-REG-BASIC-2-3",
+    "R07-REG-BASIC-2-4"
+  ],
+  "source_images": 18,
+  "initial_independent_matches": 16,
+  "corrected_verified": 10,
+  "partial": 6,
+  "related_pairs_added": 9,
+  "related_pairs_total": 136,
+  "primary_references_added": 22,
+  "concepts_added": 8,
+  "concept_total": 163,
+  "canonical_counts": {
+    "recorded_at": "2026-10-11T10:49:56.179947+09:00",
+    "registered": 1270,
+    "classification_verified": 491,
+    "summary_verified": 455,
+    "corrected_verified": 401,
+    "corrected_partial": 54,
+    "solution_drafts": 455,
+    "solution_verified": 0,
+    "manual_required": 869,
+    "subject_drafts": {
+      "BASIC": 141,
+      "APT": 94,
+      "APPLIED": 220
+    }
+  },
+  "theory_sections": 19,
+  "labeled_theory_sections": 19,
+  "pdf": {
+    "pages": 660,
+    "bytes": 3267977,
+    "visual_review_pages": [
+      47,
+      48,
+      49,
+      50,
+      51,
+      85,
+      90,
+      91,
+      104,
+      105
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draft・1270ラベル監査成功。内容追加のみ。rendererのpropto追加を含む24回帰はS7_023で実施済み。",
+  "revisions": [
+    "H26問2-6の初回の道幅呼称を車高制限へ校正。初回数値3と履歴は保持。1肢の残存語はハッシュ束縛明示改訂。",
+    "引用登録漏れnet_ospf/net_ripを一次RFC確認のうえ登録し再ビルド。"
+  ],
+  "risks": [
+    "定期変更、SSL総称、会議・テレワーク相対リスク、耐量子候補・署名・秘匿取引の条件、TCPのECN・初期窓・FlightSizeの省略を6部分校正で追跡。",
+    "Astra未査読。815問未執筆、最終監査未実装。"
+  ],
+  "next": "S7_025構造地質20問。全15原典画像確認、公式前初回保存済み。H30問23は初回5/公式4の不一致を維持して一次資料検討。全1270問と全章初稿・頻出分析まで継続。"
+}

@@ -1,0 +1,236 @@
+{
+  "batch_id": "S7_052_engineering_revision2",
+  "reference_date": "2026-10-13",
+  "questions": [
+    {
+      "question_id": "H23-REG-APT-13",
+      "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+      "stem": "専門職・BCM・設計・VE・内部統制を定義から照合する。",
+      "summary": "専門職・BCM・設計・VE・内部統制を定義から照合する。",
+      "conditions": {
+        "原典照合": "H23適性14頁のア〜オと候補表全五行を確認。",
+        "各記述": "ア：専門職大学院＝博士後期。イ：BCM管理とBCP計画。ウ：要求性能と製作仕様に基づく性能設計、確率に基づく信頼性。エ：必要機能/最小ライフサイクルコストの価値。オ：当時の内部統制四目的。"
+      },
+      "choices": {
+        "1": {
+          "value": "ア○イ○ウ○エ○オ○",
+          "verdict": "不適切",
+          "reason": "アは専門職大学院を博士後期とする誤り。ウも要求性能の評価と製作仕様による方法規定を混同。"
+        },
+        "2": {
+          "value": "ア×イ○ウ○エ○オ○",
+          "verdict": "不適切",
+          "reason": "アの訂正はできるが、ウの仕様への固定を残している。"
+        },
+        "3": {
+          "value": "ア×イ○ウ×エ○オ○",
+          "verdict": "代表的条件で適切",
+          "reason": "専門職学位課程と博士後期を分け、要求性能と仕様を区別する。BCMは継続的管理、BCPは計画。VEは必要機能とコスト、内部統制は当時の四目的を組織全体で遂行する。"
+        },
+        "4": {
+          "value": "ア○イ×ウ○エ○オ×",
+          "verdict": "不適切",
+          "reason": "ア・ウの誤りを残し、BCM/BCPと当時の内部統制四目的を誤りとする。"
+        },
+        "5": {
+          "value": "ア○イ×ウ○エ×オ○",
+          "verdict": "不適切",
+          "reason": "ア・ウの誤りを残し、BCM/BCPとVEの定義を誤りとする。"
+        }
+      },
+      "figures": "原典の組合せ表又は測定表を独自に要約。元画像は照合用で転載しない。",
+      "ambiguity": "信頼性設計の詳細と全性能設計手法の一意の定義は追加照合対象。ア・ウの複合記述を語ごとに確認し、公式3を保持。",
+      "evidence": [
+        "extracted/pages/H23/aptitude/page_014.png"
+      ],
+      "core_concept": "専門職・BCM・設計・VE・内部統制を定義から照合する。",
+      "required_knowledge": "原典の五記述はア×・イ○・ウ×・エ○・オ○で候補3。専門職学位課程は博士後期そのものではない。性能設計は要求性能の満足を評価するもので、あらかじめ製作仕様を固定する考えと分ける。信頼性の確率的評価はこれと関連する別の軸。平成19年内部統制基準の四目的を確認し、後年の報告範囲の改訂をH23の本文へ遡及しない。",
+      "solution": "原典の五記述はア×・イ○・ウ×・エ○・オ○で候補3。専門職学位課程は博士後期そのものではない。性能設計は要求性能の満足を評価するもので、あらかじめ製作仕様を固定する考えと分ける。信頼性の確率的評価はこれと関連する別の軸。平成19年内部統制基準の四目的を確認し、後年の報告範囲の改訂をH23の本文へ遡及しない。",
+      "answer_reason": "原典の五記述はア×・イ○・ウ×・エ○・オ○で候補3。専門職学位課程は博士後期そのものではない。性能設計は要求性能の満足を評価するもので、あらかじめ製作仕様を固定する考えと分ける。信頼性の確率的評価はこれと関連する別の軸。平成19年内部統制基準の四目的を確認し、後年の報告範囲の改訂をH23の本文へ遡及しない。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前独立JSONを保持。専門職大学院は博士後期ではなく、性能設計も製作仕様へ固定しない。ア×ウ×で3。",
+      "learning_points": "定義を目的・機能・手段へ分け、学位課程と博士課程、BCMとBCP、要求性能と製作仕様、内部統制全体と財務報告の対象を区別する。",
+      "theory_references": [
+        "theory:compliance:management"
+      ],
+      "discipline_id": "manual_78",
+      "concept_id": "eng52_management",
+      "cross_concepts": [],
+      "classification_reason": "全原典五肢と図表の主題を照合：専門職・BCM・設計・VE・内部統制を定義から照合する。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "制度の定義・時点と、全称表現の適用範囲を比較する。"
+      },
+      "citations": [
+        "eng52_professional",
+        "eng52_bcp",
+        "eng52_performance",
+        "eng52_ve",
+        "eng52_control"
+      ],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "e5d7f8dc5e2b9c3eda1e4527bda5e01fc811d513b21e8b5becd27f8df3aa3c47",
+      "revision_of_batch": "S7_052_engineering",
+      "revision_reason": "適性科目固有の制度・管理概念に合わせて再利用の考え方と難易度理由を具体化。"
+    },
+    {
+      "question_id": "H26-REG-APT-13",
+      "source_sha256": "5691e940fce3cbf9423bc99a96803c1c6273563931b76b91bdb9f2b67e6233d3",
+      "stem": "維持管理の行政責任と住民・民間の協働を区別する。",
+      "summary": "維持管理の行政責任と住民・民間の協働を区別する。",
+      "conditions": {
+        "原典照合": "22原典画像で25問の全五肢・数値・単位・否定を確認。",
+        "対象": "維持管理の行政責任と住民・民間の協働を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "高度成長期の整備と老朽化費増大",
+          "verdict": "代表的条件で適切",
+          "reason": "整備時期の集中が将来の点検・修繕・更新の需要を増やす。年数だけで個別施設の健全度を決めない。"
+        },
+        "2": {
+          "value": "計画で費用平準化・性能保持",
+          "verdict": "代表的条件で適切",
+          "reason": "予防・計画的な修繕でライフサイクル全体の需要と性能を調整する。必ず費用が一定になる保証ではない。"
+        },
+        "3": {
+          "value": "人材確保・技術向上・新技術",
+          "verdict": "代表的条件で適切",
+          "reason": "点検・診断・施工の能力と技術を確保する。ロボット等を導入しても責任と評価を省略しない。"
+        },
+        "4": {
+          "value": "点検履歴・施設諸元の情報整備",
+          "verdict": "代表的条件で適切",
+          "reason": "情報を記録して次の診断・措置の根拠とする。データ未整備の把握も必要。"
+        },
+        "5": {
+          "value": "住民自主管理・民間ボランティアは禁止",
+          "verdict": "不適切",
+          "reason": "管理者の責任と市民参加は両立する。国交省には道路のアダプト制度等の協働例があり、全禁止ではない。"
+        }
+      },
+      "figures": "図表なしの五肢。原典画像は照合用で転載しない。",
+      "ambiguity": "H26時点の全分野・地域の制度を網羅した確認ではない。協働例で全禁止を否定するが、専門点検や危険作業を無条件に住民へ移せるとはしない。",
+      "evidence": [
+        "extracted/pages/H26/aptitude/page_013.png"
+      ],
+      "core_concept": "維持管理の行政責任と住民・民間の協働を区別する。",
+      "required_knowledge": "5は行政の管理責任から地域住民・民間の参加を全面禁止へ飛躍した点が不適切。施設の安全を管理する専門的責任を明確にしつつ、点検情報・清掃等で役割を分担できる。維持管理は点検・診断・措置・記録を次の周期へつなぐ活動。",
+      "solution": "5は行政の管理責任から地域住民・民間の参加を全面禁止へ飛躍した点が不適切。施設の安全を管理する専門的責任を明確にしつつ、点検情報・清掃等で役割を分担できる。維持管理は点検・診断・措置・記録を次の周期へつなぐ活動。",
+      "answer_reason": "5は行政の管理責任から地域住民・民間の参加を全面禁止へ飛躍した点が不適切。施設の安全を管理する専門的責任を明確にしつつ、点検情報・清掃等で役割を分担できる。維持管理は点検・診断・措置・記録を次の周期へつなぐ活動。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前独立JSONを保持。住民・民間協働を全禁止ではない。",
+      "learning_points": "点検・診断・措置・記録のサイクルを再構成し、施設ごとの基準と全施設一律の主張を区別する。管理者の専門的責任と住民との協働を両立させる。",
+      "theory_references": [
+        "theory:safety:maintenance"
+      ],
+      "discipline_id": "manual_79",
+      "concept_id": "eng52_maintenance",
+      "cross_concepts": [],
+      "classification_reason": "全原典五肢と図表の主題を照合：維持管理の行政責任と住民・民間の協働を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "制度の定義・時点と、全称表現の適用範囲を比較する。"
+      },
+      "citations": [
+        "eng52_infra2014",
+        "eng52_adopt"
+      ],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "2fa277e529bd667bc3b2bd9034b7ec55480f0067f40fd73ad179133d564de313",
+      "revision_of_batch": "S7_052_engineering",
+      "revision_reason": "適性科目固有の制度・管理概念に合わせて再利用の考え方と難易度理由を具体化。"
+    },
+    {
+      "question_id": "R01-REG-APT-08",
+      "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+      "stem": "2014年行動計画のメンテナンスサイクルと施設別条件を読む。",
+      "summary": "2014年行動計画のメンテナンスサイクルと施設別条件を読む。",
+      "conditions": {
+        "原典照合": "22原典画像で25問の全五肢・数値・単位・否定を確認。",
+        "対象": "2014年行動計画のメンテナンスサイクルと施設別条件を読む。"
+      },
+      "choices": {
+        "1": {
+          "value": "点検診断・措置・記録のサイクル",
+          "verdict": "代表的条件で適切",
+          "reason": "施設状態を点検・診断し、必要な措置を行い記録して次周期に反映する。"
+        },
+        "2": {
+          "value": "頻度・内容を全国一律",
+          "verdict": "不適切",
+          "reason": "全施設・全分野へ一つの頻度と内容を固定する記述は不適切。施設特性・状態・重要度等を考えて基準を整える。分野内の最低基準や統一した健全度尺度と混同しない。"
+        },
+        "3": {
+          "value": "劣化損傷・構造諸元を継続収集",
+          "verdict": "代表的条件で適切",
+          "reason": "繰返し点検で最新の状態を記録し、過去に欠けた情報も補う。"
+        },
+        "4": {
+          "value": "ロボット・非破壊検査・ICTで高度化",
+          "verdict": "代表的条件で適切",
+          "reason": "診断を支える技術で効率と精度の改善を図る。新技術の適用範囲・限界を確認する。"
+        },
+        "5": {
+          "value": "業務別能力・民間資格の認定仕組み",
+          "verdict": "代表的条件で適切",
+          "reason": "施設分野・業務別に必要能力を明確にし、人材の質と担い手を確保する。資格名の存在だけで全業務を担当可能とはしない。"
+        }
+      },
+      "figures": "図表なしの五肢。原典画像は照合用で転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/aptitude/page_009.png"
+      ],
+      "core_concept": "2014年行動計画のメンテナンスサイクルと施設別条件を読む。",
+      "required_knowledge": "誤り2は全分野の点検頻度・内容の全国一律化。2014年行動計画には施設別の取組があり、各施設の状態等に応じた実施と基準整備を読む。道路橋等の分野内の定期基準を、全インフラで内容まで同一という全称に変えない。",
+      "solution": "誤り2は全分野の点検頻度・内容の全国一律化。2014年行動計画には施設別の取組があり、各施設の状態等に応じた実施と基準整備を読む。道路橋等の分野内の定期基準を、全インフラで内容まで同一という全称に変えない。",
+      "answer_reason": "誤り2は全分野の点検頻度・内容の全国一律化。2014年行動計画には施設別の取組があり、各施設の状態等に応じた実施と基準整備を読む。道路橋等の分野内の定期基準を、全インフラで内容まで同一という全称に変えない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前独立JSONを保持。点検内容を全国一律に固定しない。",
+      "learning_points": "点検・診断・措置・記録のサイクルを再構成し、施設ごとの基準と全施設一律の主張を区別する。管理者の専門的責任と住民との協働を両立させる。",
+      "theory_references": [
+        "theory:safety:maintenance"
+      ],
+      "discipline_id": "manual_79",
+      "concept_id": "eng52_maintenance",
+      "cross_concepts": [],
+      "classification_reason": "全原典五肢と図表の主題を照合：2014年行動計画のメンテナンスサイクルと施設別条件を読む。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "制度の定義・時点と、全称表現の適用範囲を比較する。"
+      },
+      "citations": [
+        "eng52_infra2014"
+      ],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "d5f8f485217f955024c03f8521e7d6d7bb395ef49a95ec41a8ce5e9bac61a8d2",
+      "revision_of_batch": "S7_052_engineering",
+      "revision_reason": "適性科目固有の制度・管理概念に合わせて再利用の考え方と難易度理由を具体化。"
+    }
+  ]
+}

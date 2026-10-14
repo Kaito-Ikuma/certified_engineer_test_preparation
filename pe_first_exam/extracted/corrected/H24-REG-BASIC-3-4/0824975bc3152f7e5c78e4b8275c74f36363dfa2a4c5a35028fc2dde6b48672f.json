@@ -1,0 +1,46 @@
+{
+  "stem": "二階導関数の格子点での差分近似を選ぶ。",
+  "conditions": {
+    "導関数": "\\(f''(x_i)\\)",
+    "格子幅": "\\(\\Delta\\)",
+    "格子": "等間隔、iは格子点の番号。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\((f_{i+1}-f_i)/\\Delta\\)",
+      "verdict": "条件に不一致",
+      "reason": "一階前進差分であり、二階微分ではない。"
+    },
+    "2": {
+      "value": "\\((f_{i+1}+f_i)/\\Delta\\)",
+      "verdict": "条件に不一致",
+      "reason": "定数関数でもゼロにならず、差分の分子が和になっている。"
+    },
+    "3": {
+      "value": "\\((f_{i+1}-2f_i+f_{i-1})/(2\\Delta)\\)",
+      "verdict": "条件に不一致",
+      "reason": "二階差分の分子は合うが、分母は幅の二乗である。"
+    },
+    "4": {
+      "value": "\\((f_{i+1}-2f_i+f_{i-1})/\\Delta^2\\)",
+      "verdict": "条件に一致",
+      "reason": "テイラー展開で定数項と一階項が消え、二階微分が残る。"
+    },
+    "5": {
+      "value": "\\((f_{i+1}+2f_i+f_{i-1})/\\Delta^2\\)",
+      "verdict": "条件に不一致",
+      "reason": "中央項の符号が逆で、定数関数でもゼロにならない。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/basic/page_010.png"
+  ],
+  "question_id": "H24-REG-BASIC-3-4",
+  "source_file": "sources/H24/basic.pdf",
+  "source_page": "10",
+  "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+  "raw_text_sha256": "14d2e4ea1e05abdd51e6485d73b984edc28a3d954c093c0a42bdd8e56507dc37",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,44 @@
+{
+  "stem": "光の粒子性に直接関係しない現象又は概念を選ぶ。",
+  "conditions": {
+    "方向": "光の粒子性に直接関係しないことがらとして最適。"
+  },
+  "choices": {
+    "1": {
+      "value": "光電効果",
+      "verdict": "直接関係",
+      "reason": "光がエネルギーhf単位で電子へ渡すモデルで、閾値周波数と光電子の最大運動エネルギーを説明する。"
+    },
+    "2": {
+      "value": "電子線回折",
+      "verdict": "直接関係しない",
+      "reason": "電子の物質波が結晶で干渉・回折する現象で、光の粒子性を直接示すものではない。"
+    },
+    "3": {
+      "value": "コンプトン効果",
+      "verdict": "直接関係",
+      "reason": "光子のエネルギー・運動量を電子との散乱で保存させ、波長変化を説明する。"
+    },
+    "4": {
+      "value": "仕事関数",
+      "verdict": "光電効果へ関係",
+      "reason": "表面から電子を取り出す最小エネルギーで、光電効果のエネルギー収支へ入る。これ自体を光子と同一の概念にはしない。"
+    },
+    "5": {
+      "value": "プランク定数",
+      "verdict": "直接関係",
+      "reason": "光子エネルギーhfや運動量h/λを結ぶ定数で、光の量子性へ直接関係する。"
+    }
+  },
+  "figures": "原典の条件・数式・単位・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_002.png"
+  ],
+  "question_id": "H24-REG-APPLIED-07",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "8ad6ba5ef6e60efd5cc7823a3c27264a0d53c50882688e8717b0a4f6774d872e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

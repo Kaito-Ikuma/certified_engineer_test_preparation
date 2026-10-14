@@ -1,0 +1,46 @@
+{
+  "stem": "四分円の重心を面積一次モーメントで求める。",
+  "conditions": {
+    "領域": "第一象限、半径aの一様な四分円面。",
+    "問": "面積重心のx,y座標。"
+  },
+  "choices": {
+    "1": {
+      "value": "(√3a/4,√3a/4)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 (4a/(3π),4a/(3π)) と異なる。"
+    },
+    "2": {
+      "value": "(a/2,a/2)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 (4a/(3π),4a/(3π)) と異なる。"
+    },
+    "3": {
+      "value": "(a/√2,a/√2)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 (4a/(3π),4a/(3π)) と異なる。"
+    },
+    "4": {
+      "value": "(3a/(4π),3a/(4π))",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 (4a/(3π),4a/(3π)) と異なる。"
+    },
+    "5": {
+      "value": "(4a/(3π),4a/(3π))",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/basic/page_015.png",
+    "extracted/pages/R03/basic/page_016.png"
+  ],
+  "question_id": "R03-REG-BASIC-3-6",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "15",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "5d65fa617c7d7b063616320c1ea26a10885ab1d6dcca139318f043cdaea4acbf",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

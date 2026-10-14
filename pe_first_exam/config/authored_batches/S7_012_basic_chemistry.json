@@ -1,0 +1,1300 @@
+{
+  "batch_id": "S7_012_basic_chemistry",
+  "reference_date": "2026-10-10",
+  "scope": "基礎の原子・反応量・酸化数・濃度・ハロゲン・機能性セラミックス18問。原典14頁の画像確認、独立解答保存後に公式18問一致。濃度ppm近似とCu酸化生成物は未指定として保持。",
+  "questions": [
+    {
+      "question_id": "H23-REG-BASIC-4-2",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "水素と塩素からHClを1 mol生成する反応の熱を、結合エネルギーから求める。",
+      "summary": "水素と塩素からHClを1 mol生成する反応の熱を、結合エネルギーから求める。",
+      "conditions": {
+        "切断エネルギー": "H–H:436、Cl–Cl:243、H–Cl:432 kJ/mol",
+        "基準": "HCl生成量1 mol。気体分子の結合エネルギーによる評価。",
+        "符号": "発生する熱の量を問う。候補は正の値。"
+      },
+      "choices": {
+        "1": {
+          "value": "93 kJ/mol",
+          "verdict": "条件に一致",
+          "reason": "HCl1 mol当たりの放出熱92.5に最も近い。"
+        },
+        "2": {
+          "value": "216 kJ/mol",
+          "verdict": "条件に不一致",
+          "reason": "切断と生成の差をHCl2 molで割った92.5の大きさに合わない。"
+        },
+        "3": {
+          "value": "340 kJ/mol",
+          "verdict": "条件に不一致",
+          "reason": "切断エネルギー679の約半分だけを数え、生成側を差し引いていない。"
+        },
+        "4": {
+          "value": "432 kJ/mol",
+          "verdict": "条件に不一致",
+          "reason": "HClの結合を切るエネルギーであり、反応の正味熱ではない。"
+        },
+        "5": {
+          "value": "679 kJ/mol",
+          "verdict": "条件に不一致",
+          "reason": "水素と塩素の切断だけの679を使い、HCl生成による放出と1 mol基準を無視する。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H23/basic/page_012.png"
+      ],
+      "core_concept": "結合切断・生成の差と反応量基準",
+      "required_knowledge": "ヘスの法則、気相結合エンタルピー、反応係数、発熱の符号。",
+      "solution": "H2+Cl2→2HClを基準に、切断へ436+243=679 kJ、生成で2×432=864 kJが放出される。\\(\\Delta H=(679-864)/2=-92.5\\) kJ/mol-HClである。原典の「発生する熱」と正の候補に従えば放出熱の大きさ92.5≃93の1である。エンタルピー変化そのものは負と区別する。",
+      "independent_answer": "1",
+      "answer_reason": "H2+Cl2→2HClを基準に、切断へ436+243=679 kJ、生成で2×432=864 kJが放出される。\\(\\Delta H=(679-864)/2=-92.5\\) kJ/mol-HClである。原典の「発生する熱」と正の候補に従えば放出熱の大きさ92.5≃93の1である。エンタルピー変化そのものは負と区別する。",
+      "learning_points": "結合切断・生成の差と反応量基準を、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:enthalpy"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "basic_reaction_enthalpy",
+      "classification_reason": "原典全条件・全5肢から結合切断・生成の差と反応量基準を中心に分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [
+        "mit_bond_enthalpy"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-4-1",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "水素と塩素からHClを1 mol生成する反応の熱を、結合エネルギーから求める。",
+      "summary": "水素と塩素からHClを1 mol生成する反応の熱を、結合エネルギーから求める。",
+      "conditions": {
+        "切断エネルギー": "H–H:436、Cl–Cl:243、H–Cl:432 kJ/mol",
+        "基準": "HCl生成量1 mol。気体分子の結合エネルギーによる評価。",
+        "符号": "発熱を負とする指定あり。"
+      },
+      "choices": {
+        "1": {
+          "value": "-93 kJ/mol",
+          "verdict": "条件に一致",
+          "reason": "HCl1 mol当たりのエンタルピー変化−92.5に最も近い。"
+        },
+        "2": {
+          "value": "-216 kJ/mol",
+          "verdict": "条件に不一致",
+          "reason": "切断と生成の差をHCl2 molで割った92.5の大きさに合わない。"
+        },
+        "3": {
+          "value": "-340 kJ/mol",
+          "verdict": "条件に不一致",
+          "reason": "切断エネルギー679の約半分だけを数え、生成側を差し引いていない。"
+        },
+        "4": {
+          "value": "-432 kJ/mol",
+          "verdict": "条件に不一致",
+          "reason": "HClの結合を切るエネルギーであり、反応の正味熱ではない。"
+        },
+        "5": {
+          "value": "-679 kJ/mol",
+          "verdict": "条件に不一致",
+          "reason": "水素と塩素の切断だけの679を使い、HCl生成による放出と1 mol基準を無視する。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/basic/page_013.png"
+      ],
+      "core_concept": "結合切断・生成の差と反応量基準",
+      "required_knowledge": "ヘスの法則、気相結合エンタルピー、反応係数、発熱の符号。",
+      "solution": "H2+Cl2→2HClを基準に、切断へ436+243=679 kJ、生成で2×432=864 kJが放出される。\\(\\Delta H=(679-864)/2=-92.5\\) kJ/mol-HClである。原典は発熱を負と指定するので−93の1である。",
+      "independent_answer": "1",
+      "answer_reason": "H2+Cl2→2HClを基準に、切断へ436+243=679 kJ、生成で2×432=864 kJが放出される。\\(\\Delta H=(679-864)/2=-92.5\\) kJ/mol-HClである。原典は発熱を負と指定するので−93の1である。",
+      "learning_points": "結合切断・生成の差と反応量基準を、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:enthalpy"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "basic_reaction_enthalpy",
+      "classification_reason": "原典全条件・全5肢から結合切断・生成の差と反応量基準を中心に分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [
+        "mit_bond_enthalpy"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-4-3",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "電子セラミックス4種の利用特性・材料名の組合せを選ぶ。",
+      "summary": "電子セラミックス4種の利用特性・材料名の組合せを選ぶ。",
+      "conditions": {
+        "A": "BaTiO3の大きな何をコンデンサーへ利用するか。",
+        "B": "サーミスタの温度で大きく変わる量。",
+        "C": "ひずみにより電圧を生む材料。",
+        "D": "バリスタの印加電圧で大きく変わる量。",
+        "並び": "A／B／C／D"
+      },
+      "choices": {
+        "1": {
+          "value": "導電率／電気抵抗／圧電体／体積",
+          "verdict": "条件に不一致",
+          "reason": "BとCは合うが、コンデンサーは高比誘電率を利用し、バリスタは体積変化を機能としていない。"
+        },
+        "2": {
+          "value": "導電率／熱膨張係数／放電体／電気抵抗",
+          "verdict": "条件に不一致",
+          "reason": "AとBは違い、機械的ひずみからの電圧発生も放電体の説明ではない。"
+        },
+        "3": {
+          "value": "比誘電率／電気抵抗／放電体／体積",
+          "verdict": "条件に不一致",
+          "reason": "AとBは合うが、ひずみと電気応答は圧電体、バリスタは電気抵抗の変化である。"
+        },
+        "4": {
+          "value": "比誘電率／電気抵抗／圧電体／電気抵抗",
+          "verdict": "条件に一致",
+          "reason": "4項とも対応する。誘電・温度依存抵抗・圧電・非線形抵抗を区別できている。"
+        },
+        "5": {
+          "value": "比誘電率／熱膨張係数／圧電体／体積",
+          "verdict": "条件に不一致",
+          "reason": "AとCは合うが、温度で変わる抵抗と電圧で変わる抵抗を取り違える。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_016.png"
+      ],
+      "core_concept": "電子セラミックスの入力・出力と物性",
+      "required_knowledge": "誘電率と導電率の違い、温度抵抗、圧電効果、非線形抵抗。",
+      "solution": "コンデンサーは\\(C=\\varepsilon_0\\varepsilon_r A/d\\)で高い比誘電率を大容量へ利用する。サーミスタは抵抗の温度依存、圧電体は機械ひずみと電気応答の結合、バリスタは非線形な電圧–電流特性を用いる。比誘電率／電気抵抗／圧電体／電気抵抗の4である。",
+      "independent_answer": "4",
+      "answer_reason": "コンデンサーは\\(C=\\varepsilon_0\\varepsilon_r A/d\\)で高い比誘電率を大容量へ利用する。サーミスタは抵抗の温度依存、圧電体は機械ひずみと電気応答の結合、バリスタは非線形な電圧–電流特性を用いる。比誘電率／電気抵抗／圧電体／電気抵抗の4である。",
+      "learning_points": "電子セラミックスの入力・出力と物性を、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:ceramics"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "basic_ceramics",
+      "classification_reason": "原典全条件・全5肢から電子セラミックスの入力・出力と物性を中心に分類。機能性電子セラミックスを材料へ修正し、旧応力・変形タグを外す。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [
+        "murata_batio3",
+        "murata_thermistor",
+        "murata_piezo",
+        "tdk_varistor"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-4-2",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "ショ糖水溶液の濃度と調製方法の説明から、不適切なものを選ぶ。",
+      "summary": "ショ糖水溶液の濃度と調製方法の説明から、不適切なものを選ぶ。",
+      "conditions": {
+        "モル質量": "ショ糖342 g/mol、水18 g/mol。",
+        "方向": "不適切な説明を一つ。",
+        "濃度": "質量モル濃度、モル濃度、質量%、モル分率、ppm。"
+      },
+      "choices": {
+        "1": {
+          "value": "1 mol/kgはショ糖342 gを水1000 gへ溶かす。",
+          "verdict": "適切",
+          "reason": "1 molを溶媒1 kgで割る定義で、溶液全体の質量ではない。"
+        },
+        "2": {
+          "value": "1 mol/Lはショ糖342 gを水1 Lへ溶かす。",
+          "verdict": "不適切",
+          "reason": "分母は最終溶液体積である。水1 Lへ加えた後の溶液が1 Lとは限らず、この調製法で濃度を保証できない。"
+        },
+        "3": {
+          "value": "質量10%はショ糖100 gを水900 gへ溶かす。",
+          "verdict": "適切",
+          "reason": "100/(100+900)=0.10である。"
+        },
+        "4": {
+          "value": "ショ糖のモル分率0.01は34.2 gを水178.2 gへ溶かす。",
+          "verdict": "適切",
+          "reason": "ショ糖0.1 mol、水9.9 molなので0.1/(0.1+9.9)=0.01である。"
+        },
+        "5": {
+          "value": "1 ppmはショ糖1 mgを含む水溶液の体積が1 Lである。",
+          "verdict": "希薄水溶液近似で適切・厳密基準は要確認",
+          "reason": "1 mg/Lという質量濃度は確認できる。密度約1 kg/Lの希薄水溶液では質量ppmと近似一致するが、ppmの基準と密度を明記しない原典を厳密な同一量とはしない。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "⑤はppmの基準と溶液密度が未指定。1 mg/L≈質量1 ppmという希薄水溶液近似の範囲はAstra確認。独立の選択2と公式2は一致する。",
+      "evidence": [
+        "extracted/pages/H26/basic/page_013.png"
+      ],
+      "core_concept": "溶媒・溶液と濃度の分母",
+      "required_knowledge": "物質量、最終体積、質量モル濃度、質量分率、モル分率、密度。",
+      "solution": "定義を先に書くと、質量モル濃度は溶質mol/溶媒kg、モル濃度は溶質mol/最終溶液Lである。2だけは最終溶液体積を保証しない。1・3・4は定義式で確かめられる。5は試験の希薄水溶液・密度約1 kg/Lという近似なら妥当であり、公式の2と独立判断は一致する。ppmをmg/Lの無条件の別名として覚えない。",
+      "independent_answer": "2",
+      "answer_reason": "定義を先に書くと、質量モル濃度は溶質mol/溶媒kg、モル濃度は溶質mol/最終溶液Lである。2だけは最終溶液体積を保証しない。1・3・4は定義式で確かめられる。5は試験の希薄水溶液・密度約1 kg/Lという近似なら妥当であり、公式の2と独立判断は一致する。ppmをmg/Lの無条件の別名として覚えない。",
+      "learning_points": "溶媒・溶液と濃度の分母を、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:concentration",
+        "theory:basicchem:fraction"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "basic_composition",
+      "classification_reason": "原典全条件・全5肢から溶媒・溶液と濃度の分母を中心に分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [
+        "iupac_amount_concentration",
+        "iupac_molality",
+        "iupac_amount_fraction"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-4-1",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "5物質をそれぞれ同じ質量だけ完全燃焼させ、CO2発生量が最大のものを選ぶ。",
+      "summary": "5物質をそれぞれ同じ質量だけ完全燃焼させ、CO2発生量が最大のものを選ぶ。",
+      "conditions": {
+        "条件": "CO2と水への完全燃焼。同質量。",
+        "原子量": "H=1、C=12、O=16。"
+      },
+      "choices": {
+        "1": {
+          "value": "メタン CH4",
+          "verdict": "条件に不一致",
+          "reason": "1 g当たりのCO2は1/16=0.06250 molである。エチレンの2/28より小さい。"
+        },
+        "2": {
+          "value": "メタノール CH4O",
+          "verdict": "条件に不一致",
+          "reason": "1 g当たりのCO2は1/32=0.03125 molである。エチレンの2/28より小さい。"
+        },
+        "3": {
+          "value": "エタン C2H6",
+          "verdict": "条件に不一致",
+          "reason": "1 g当たりのCO2は2/30=0.06667 molである。エチレンの2/28より小さい。"
+        },
+        "4": {
+          "value": "エチレン C2H4",
+          "verdict": "条件に一致",
+          "reason": "1 g当たりのCO2は2/28=0.07143 molである。5物質で最大。"
+        },
+        "5": {
+          "value": "エタノール C2H6O",
+          "verdict": "条件に不一致",
+          "reason": "1 g当たりのCO2は2/46=0.04348 molである。エチレンの2/28より小さい。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/basic/page_012.png"
+      ],
+      "core_concept": "完全燃焼の炭素保存と単位質量当たり収率",
+      "required_knowledge": "n=w/M、原子数の保存、分子式、完全燃焼。",
+      "solution": "分子中の炭素原子数をc、モル質量をM、燃焼させる質量をwとすると、炭素保存から\\(n_{CO_2}=c w/M\\)である。同じwなのでc/Mを比べればよい。1/16、1/32、2/30、2/28、2/46の最大はエチレン2/28で4を選ぶ。炭素数だけではなく、その質量を運ぶ水素・酸素も分母へ含める。",
+      "independent_answer": "4",
+      "answer_reason": "分子中の炭素原子数をc、モル質量をM、燃焼させる質量をwとすると、炭素保存から\\(n_{CO_2}=c w/M\\)である。同じwなのでc/Mを比べればよい。1/16、1/32、2/30、2/28、2/46の最大はエチレン2/28で4を選ぶ。炭素数だけではなく、その質量を運ぶ水素・酸素も分母へ含める。",
+      "learning_points": "完全燃焼の炭素保存と単位質量当たり収率を、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:amount",
+        "theory:basicchem:stoichiometry"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "basic_stoichiometry",
+      "classification_reason": "原典全条件・全5肢から完全燃焼の炭素保存と単位質量当たり収率を中心に分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-BASIC-4-1",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "stem": "5物質をそれぞれ同じ質量だけ完全燃焼させ、CO2発生量が最大のものを選ぶ。",
+      "summary": "5物質をそれぞれ同じ質量だけ完全燃焼させ、CO2発生量が最大のものを選ぶ。",
+      "conditions": {
+        "条件": "CO2と水への完全燃焼。同質量。",
+        "原子量": "H=1、C=12、O=16。"
+      },
+      "choices": {
+        "1": {
+          "value": "メタン CH4",
+          "verdict": "条件に不一致",
+          "reason": "1 g当たりのCO2は1/16=0.06250 molである。エチレンの2/28より小さい。"
+        },
+        "2": {
+          "value": "エチレン C2H4",
+          "verdict": "条件に一致",
+          "reason": "1 g当たりのCO2は2/28=0.07143 molである。5物質で最大。"
+        },
+        "3": {
+          "value": "エタン C2H6",
+          "verdict": "条件に不一致",
+          "reason": "1 g当たりのCO2は2/30=0.06667 molである。エチレンの2/28より小さい。"
+        },
+        "4": {
+          "value": "メタノール CH4O",
+          "verdict": "条件に不一致",
+          "reason": "1 g当たりのCO2は1/32=0.03125 molである。エチレンの2/28より小さい。"
+        },
+        "5": {
+          "value": "エタノール C2H6O",
+          "verdict": "条件に不一致",
+          "reason": "1 g当たりのCO2は2/46=0.04348 molである。エチレンの2/28より小さい。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/basic/page_015.png"
+      ],
+      "core_concept": "完全燃焼の炭素保存と単位質量当たり収率",
+      "required_knowledge": "n=w/M、原子数の保存、分子式、完全燃焼。",
+      "solution": "分子中の炭素原子数をc、モル質量をM、燃焼させる質量をwとすると、炭素保存から\\(n_{CO_2}=c w/M\\)である。同じwなのでc/Mを比べればよい。1/16、1/32、2/30、2/28、2/46の最大はエチレン2/28で2を選ぶ。炭素数だけではなく、その質量を運ぶ水素・酸素も分母へ含める。",
+      "independent_answer": "2",
+      "answer_reason": "分子中の炭素原子数をc、モル質量をM、燃焼させる質量をwとすると、炭素保存から\\(n_{CO_2}=c w/M\\)である。同じwなのでc/Mを比べればよい。1/16、1/32、2/30、2/28、2/46の最大はエチレン2/28で2を選ぶ。炭素数だけではなく、その質量を運ぶ水素・酸素も分母へ含める。",
+      "learning_points": "完全燃焼の炭素保存と単位質量当たり収率を、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:amount",
+        "theory:basicchem:stoichiometry"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "basic_stoichiometry",
+      "classification_reason": "原典全条件・全5肢から完全燃焼の炭素保存と単位質量当たり収率を中心に分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-4-2",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "原典で下線を付けた原子の酸化数が最大の物質を選ぶ。",
+      "summary": "原典で下線を付けた原子の酸化数が最大の物質を選ぶ。",
+      "conditions": {
+        "対象": "各肢に元素名を添え、下線対象を明記。",
+        "規則": "この組ではH=+1、O=−2、単体=0。全原子の酸化数の総和は化学種の電荷。"
+      },
+      "choices": {
+        "1": {
+          "value": "HNO3のN",
+          "verdict": "条件に不一致",
+          "reason": "HNO3のNは酸化数+5。選択対象の最大値ではない。"
+        },
+        "2": {
+          "value": "Cr2O7²⁻のCr",
+          "verdict": "条件に不一致",
+          "reason": "Cr2O7²⁻のCrは酸化数+6。選択対象の最大値ではない。"
+        },
+        "3": {
+          "value": "MnO4⁻のMn",
+          "verdict": "条件に一致",
+          "reason": "MnO4⁻のMnは酸化数+7。比較した最大値である。"
+        },
+        "4": {
+          "value": "NO2のN",
+          "verdict": "条件に不一致",
+          "reason": "NO2のNは酸化数+4。選択対象の最大値ではない。"
+        },
+        "5": {
+          "value": "H2SO4のS",
+          "verdict": "条件に不一致",
+          "reason": "H2SO4のSは酸化数+6。選択対象の最大値ではない。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/basic/page_012.png"
+      ],
+      "core_concept": "全電荷から原子1個の酸化数を決める",
+      "required_knowledge": "形式的電子配分、HとOの通常値、単体0、多原子イオンの総電荷。",
+      "solution": "化学種全体の電荷を右辺にして未知原子の酸化数xを解く。例えばMnO4⁻はx+4(−2)=−1よりx=+7、Cr2O7²⁻は2x+7(−2)=−2よりx=+6である。NH3ならx+3(+1)=0より−3となる。この問題の並びは+5, +6, +7, +4, +6なので3である。二つのCrの総和+12とCr1原子の+6を区別する。",
+      "independent_answer": "3",
+      "answer_reason": "化学種全体の電荷を右辺にして未知原子の酸化数xを解く。例えばMnO4⁻はx+4(−2)=−1よりx=+7、Cr2O7²⁻は2x+7(−2)=−2よりx=+6である。NH3ならx+3(+1)=0より−3となる。この問題の並びは+5, +6, +7, +4, +6なので3である。二つのCrの総和+12とCr1原子の+6を区別する。",
+      "learning_points": "全電荷から原子1個の酸化数を決めるを、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:oxidation"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "basic_oxidation",
+      "classification_reason": "原典全条件・全5肢から全電荷から原子1個の酸化数を決めるを中心に分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [
+        "iupac_oxidation_state"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-4-2",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "原典で下線を付けた原子の酸化数が最小の物質を選ぶ。",
+      "summary": "原典で下線を付けた原子の酸化数が最小の物質を選ぶ。",
+      "conditions": {
+        "対象": "各肢に元素名を添え、下線対象を明記。",
+        "規則": "この組ではH=+1、O=−2、単体=0。全原子の酸化数の総和は化学種の電荷。"
+      },
+      "choices": {
+        "1": {
+          "value": "H2SのS",
+          "verdict": "条件に不一致",
+          "reason": "H2SのSは酸化数-2。選択対象の最小値ではない。"
+        },
+        "2": {
+          "value": "単体Mn",
+          "verdict": "条件に不一致",
+          "reason": "単体Mnは酸化数0。選択対象の最小値ではない。"
+        },
+        "3": {
+          "value": "MnO4⁻のMn",
+          "verdict": "条件に不一致",
+          "reason": "MnO4⁻のMnは酸化数+7。選択対象の最小値ではない。"
+        },
+        "4": {
+          "value": "NH3のN",
+          "verdict": "条件に一致",
+          "reason": "NH3のNは酸化数-3。比較した最小値である。"
+        },
+        "5": {
+          "value": "HNO3のN",
+          "verdict": "条件に不一致",
+          "reason": "HNO3のNは酸化数+5。選択対象の最小値ではない。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/basic/page_014.png"
+      ],
+      "core_concept": "全電荷から原子1個の酸化数を決める",
+      "required_knowledge": "形式的電子配分、HとOの通常値、単体0、多原子イオンの総電荷。",
+      "solution": "化学種全体の電荷を右辺にして未知原子の酸化数xを解く。例えばMnO4⁻はx+4(−2)=−1よりx=+7、Cr2O7²⁻は2x+7(−2)=−2よりx=+6である。NH3ならx+3(+1)=0より−3となる。この問題の並びは-2, 0, +7, -3, +5なので4である。二つのCrの総和+12とCr1原子の+6を区別する。",
+      "independent_answer": "4",
+      "answer_reason": "化学種全体の電荷を右辺にして未知原子の酸化数xを解く。例えばMnO4⁻はx+4(−2)=−1よりx=+7、Cr2O7²⁻は2x+7(−2)=−2よりx=+6である。NH3ならx+3(+1)=0より−3となる。この問題の並びは-2, 0, +7, -3, +5なので4である。二つのCrの総和+12とCr1原子の+6を区別する。",
+      "learning_points": "全電荷から原子1個の酸化数を決めるを、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:oxidation"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "basic_oxidation",
+      "classification_reason": "原典全条件・全5肢から全電荷から原子1個の酸化数を決めるを中心に分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [
+        "iupac_oxidation_state"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-4-1",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "原典で下線を付けた原子の酸化数が最大の物質を選ぶ。",
+      "summary": "原典で下線を付けた原子の酸化数が最大の物質を選ぶ。",
+      "conditions": {
+        "対象": "各肢に元素名を添え、下線対象を明記。",
+        "規則": "この組ではH=+1、O=−2、単体=0。全原子の酸化数の総和は化学種の電荷。"
+      },
+      "choices": {
+        "1": {
+          "value": "H2SO4のS",
+          "verdict": "条件に不一致",
+          "reason": "H2SO4のSは酸化数+6。選択対象の最大値ではない。"
+        },
+        "2": {
+          "value": "MnO4⁻のMn",
+          "verdict": "条件に一致",
+          "reason": "MnO4⁻のMnは酸化数+7。比較した最大値である。"
+        },
+        "3": {
+          "value": "Cr2O7²⁻のCr",
+          "verdict": "条件に不一致",
+          "reason": "Cr2O7²⁻のCrは酸化数+6。選択対象の最大値ではない。"
+        },
+        "4": {
+          "value": "HNO3のN",
+          "verdict": "条件に不一致",
+          "reason": "HNO3のNは酸化数+5。選択対象の最大値ではない。"
+        },
+        "5": {
+          "value": "NO2のN",
+          "verdict": "条件に不一致",
+          "reason": "NO2のNは酸化数+4。選択対象の最大値ではない。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/basic/page_013.png"
+      ],
+      "core_concept": "全電荷から原子1個の酸化数を決める",
+      "required_knowledge": "形式的電子配分、HとOの通常値、単体0、多原子イオンの総電荷。",
+      "solution": "化学種全体の電荷を右辺にして未知原子の酸化数xを解く。例えばMnO4⁻はx+4(−2)=−1よりx=+7、Cr2O7²⁻は2x+7(−2)=−2よりx=+6である。NH3ならx+3(+1)=0より−3となる。この問題の並びは+6, +7, +6, +5, +4なので2である。二つのCrの総和+12とCr1原子の+6を区別する。",
+      "independent_answer": "2",
+      "answer_reason": "化学種全体の電荷を右辺にして未知原子の酸化数xを解く。例えばMnO4⁻はx+4(−2)=−1よりx=+7、Cr2O7²⁻は2x+7(−2)=−2よりx=+6である。NH3ならx+3(+1)=0より−3となる。この問題の並びは+6, +7, +6, +5, +4なので2である。二つのCrの総和+12とCr1原子の+6を区別する。",
+      "learning_points": "全電荷から原子1個の酸化数を決めるを、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:oxidation"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "basic_oxidation",
+      "classification_reason": "原典全条件・全5肢から全電荷から原子1個の酸化数を決めるを中心に分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [
+        "iupac_oxidation_state"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-4-2",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "中性のCa、Ar、Cl核種の比較について、適切な記述を選ぶ。",
+      "summary": "中性のCa、Ar、Cl核種の比較について、適切な記述を選ぶ。",
+      "conditions": {
+        "核種": "\\({}^{40}_{20}Ca,{}^{40}_{18}Ar,{}^{35}_{17}Cl,{}^{37}_{17}Cl\\)",
+        "条件": "いずれも電荷を持たない原子。"
+      },
+      "choices": {
+        "1": {
+          "value": "Ca-40(Z=20)とAr-40(Z=18)の中性子数は等しい。",
+          "verdict": "不適切",
+          "reason": "中性子数A−Zは20と22なので違う。"
+        },
+        "2": {
+          "value": "Cl-35とCl-37(Z=17)の中性子数は等しい。",
+          "verdict": "不適切",
+          "reason": "35−17=18、37−17=20なので違う。"
+        },
+        "3": {
+          "value": "Ca-40とAr-40は同位体である。",
+          "verdict": "不適切",
+          "reason": "同位体はZが同じでAが違う。ここではZが違いAが同じ同重体である。"
+        },
+        "4": {
+          "value": "Cl-35とCl-37の電子数は等しい。",
+          "verdict": "適切",
+          "reason": "中性原子なので電子数はいずれもZ=17である。"
+        },
+        "5": {
+          "value": "Cl-35とCl-37は同素体である。",
+          "verdict": "不適切",
+          "reason": "同素体は同じ元素が異なる結合・構造を持つ単体であり、核の中性子数違いとは異なる。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/basic/page_017.png"
+      ],
+      "core_concept": "核種のZ・Aと中性原子の電子数",
+      "required_knowledge": "質量数は核子数、N=A−Z、電子数=Z、同位体・同重体・同素体。",
+      "solution": "陽子数Z、質量数Aより中性子数はA−Z、中性原子の電子数はZである。Ca-40は20、Ar-40は22中性子、Cl-35は18、Cl-37は20中性子となる。両Clの電子は17で等しく4が正しい。イオンなら電子数は電荷だけ変わるが、この問題は中性を指定している。",
+      "independent_answer": "4",
+      "answer_reason": "陽子数Z、質量数Aより中性子数はA−Z、中性原子の電子数はZである。Ca-40は20、Ar-40は22中性子、Cl-35は18、Cl-37は20中性子となる。両Clの電子は17で等しく4が正しい。イオンなら電子数は電荷だけ変わるが、この問題は中性を指定している。",
+      "learning_points": "核種のZ・Aと中性原子の電子数を、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:isotope"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "isotope_general",
+      "classification_reason": "原典全条件・全5肢から核種のZ・Aと中性原子の電子数を中心に分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [
+        "iupac_isotopes"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-BASIC-4-1",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "stem": "中性のCa、Ar、Cl核種の比較について、適切な記述を選ぶ。",
+      "summary": "中性のCa、Ar、Cl核種の比較について、適切な記述を選ぶ。",
+      "conditions": {
+        "核種": "\\({}^{40}_{20}Ca,{}^{40}_{18}Ar,{}^{35}_{17}Cl,{}^{37}_{17}Cl\\)",
+        "条件": "いずれも電荷を持たない原子。"
+      },
+      "choices": {
+        "1": {
+          "value": "Ca-40(Z=20)とAr-40(Z=18)の中性子数は等しい。",
+          "verdict": "不適切",
+          "reason": "中性子数A−Zは20と22なので違う。"
+        },
+        "2": {
+          "value": "Cl-35とCl-37(Z=17)の中性子数は等しい。",
+          "verdict": "不適切",
+          "reason": "35−17=18、37−17=20なので違う。"
+        },
+        "3": {
+          "value": "Cl-35とCl-37の電子数は等しい。",
+          "verdict": "適切",
+          "reason": "中性原子なので電子数はいずれもZ=17である。"
+        },
+        "4": {
+          "value": "Ca-40とAr-40は同位体である。",
+          "verdict": "不適切",
+          "reason": "同位体はZが同じでAが違う。ここではZが違いAが同じ同重体である。"
+        },
+        "5": {
+          "value": "Cl-35とCl-37は同素体である。",
+          "verdict": "不適切",
+          "reason": "同素体は同じ元素が異なる結合・構造を持つ単体であり、核の中性子数違いとは異なる。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/basic/page_013.png"
+      ],
+      "core_concept": "核種のZ・Aと中性原子の電子数",
+      "required_knowledge": "質量数は核子数、N=A−Z、電子数=Z、同位体・同重体・同素体。",
+      "solution": "陽子数Z、質量数Aより中性子数はA−Z、中性原子の電子数はZである。Ca-40は20、Ar-40は22中性子、Cl-35は18、Cl-37は20中性子となる。両Clの電子は17で等しく3が正しい。イオンなら電子数は電荷だけ変わるが、この問題は中性を指定している。",
+      "independent_answer": "3",
+      "answer_reason": "陽子数Z、質量数Aより中性子数はA−Z、中性原子の電子数はZである。Ca-40は20、Ar-40は22中性子、Cl-35は18、Cl-37は20中性子となる。両Clの電子は17で等しく3が正しい。イオンなら電子数は電荷だけ変わるが、この問題は中性を指定している。",
+      "learning_points": "核種のZ・Aと中性原子の電子数を、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:isotope"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "isotope_general",
+      "classification_reason": "原典全条件・全5肢から核種のZ・Aと中性原子の電子数を中心に分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [
+        "iupac_isotopes"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-BASIC-4-1",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "5条件に対応する物質量を比較して、最小のものを選ぶ。",
+      "summary": "5条件に対応する物質量を比較して、最小のものを選ぶ。",
+      "conditions": {
+        "原子量": "C12.0、H1.0、O16.0、Na23.0、Cl35.5、Cu63.6。",
+        "気体条件": "0℃、1.013×10⁵ Pa。理想気体モル体積約22.4 L/mol。"
+      },
+      "choices": {
+        "1": {
+          "value": "標準状態のN2 14 L",
+          "verdict": "条件に不一致",
+          "reason": "14/22.4=0.625 molで、0.250 molより大きい。"
+        },
+        "2": {
+          "value": "質量10%の食塩水200 g中のNaCl",
+          "verdict": "条件に不一致",
+          "reason": "NaCl20 g、20/58.5≃0.342 molである。"
+        },
+        "3": {
+          "value": "水分子3.0×10²³個に相当する水",
+          "verdict": "条件に不一致",
+          "reason": "3.0×10²³/(6.02214076×10²³)≃0.498 molである。"
+        },
+        "4": {
+          "value": "Cu 64 gの酸化に消費するO2",
+          "verdict": "条件に不一致",
+          "reason": "CuO生成ならO2は64/(2×63.6)≃0.503 mol。Cu2O生成なら約0.252 molで、いずれも⑤の0.250 molより大きい。ただし生成酸化物は原典で未指定。"
+        },
+        "5": {
+          "value": "CH4 4.0 gを完全燃焼して発生するCO2",
+          "verdict": "条件に一致",
+          "reason": "CH4→CO2は1:1。4.0/16.0=0.250 molで最小。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "④のCu酸化生成物が未指定。CuO想定0.503 mol、Cu2O想定0.2516 molで、どちらでも⑤0.250 molが最小。反応条件の欠落はAstraで確認。",
+      "evidence": [
+        "extracted/pages/H30/basic/page_015.png"
+      ],
+      "core_concept": "異なる記述から物質量へそろえて比較する",
+      "required_knowledge": "n=w/M、n=N/NA、標準状態の気体体積、質量分率、反応係数。",
+      "solution": "全てをmolへ統一する。気体体積、溶液の溶質質量、分子個数、反応係数を使った後は0.625、0.342、0.498、CuOなら0.503、0.250 molとなり5である。4は通常のCuOを想定して解けるが、原典に生成物の式はない。Cu2Oの場合も64/(4×63.6)≃0.2516 molで順位は変わらない。酸化物の未指定を黙って確定情報へ変えない。",
+      "independent_answer": "5",
+      "answer_reason": "全てをmolへ統一する。気体体積、溶液の溶質質量、分子個数、反応係数を使った後は0.625、0.342、0.498、CuOなら0.503、0.250 molとなり5である。4は通常のCuOを想定して解けるが、原典に生成物の式はない。Cu2Oの場合も64/(4×63.6)≃0.2516 molで順位は変わらない。酸化物の未指定を黙って確定情報へ変えない。",
+      "learning_points": "異なる記述から物質量へそろえて比較するを、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:amount",
+        "theory:basicchem:stoichiometry"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "basic_stoichiometry",
+      "classification_reason": "原典全条件・全5肢から異なる記述から物質量へそろえて比較するを中心に分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-4-1",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "ハロゲン原子・分子・ハロゲン化水素の4記述から、正しい2項の組を選ぶ。",
+      "summary": "ハロゲン原子・分子・ハロゲン化水素の4記述から、正しい2項の組を選ぶ。",
+      "conditions": {
+        "ア": "ア：水溶液中の酸の強さはHF>HCl>HBr>HI。",
+        "イ": "イ：原子の電気陰性度はF>Cl>Br>I。",
+        "ウ": "ウ：沸点はHF>HCl>HBr>HI。",
+        "エ": "エ：ハロゲン分子の酸化力はF2>Cl2>Br2>I2。"
+      },
+      "choices": {
+        "1": {
+          "value": "ア・イ",
+          "verdict": "条件に不一致",
+          "reason": "含まれるアが誤り。酸性度・H⁺濃度はHFを最大にできず、沸点ではHClが最小である。"
+        },
+        "2": {
+          "value": "ア・ウ",
+          "verdict": "条件に不一致",
+          "reason": "含まれるア・ウが誤り。酸性度・H⁺濃度はHFを最大にできず、沸点ではHClが最小である。"
+        },
+        "3": {
+          "value": "イ・ウ",
+          "verdict": "条件に不一致",
+          "reason": "含まれるウが誤り。酸性度・H⁺濃度はHFを最大にできず、沸点ではHClが最小である。"
+        },
+        "4": {
+          "value": "イ・エ",
+          "verdict": "条件に一致",
+          "reason": "両記述が正しい。"
+        },
+        "5": {
+          "value": "ウ・エ",
+          "verdict": "条件に不一致",
+          "reason": "含まれるウが誤り。酸性度・H⁺濃度はHFを最大にできず、沸点ではHClが最小である。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/basic/page_016.png"
+      ],
+      "core_concept": "ハロゲン族の異なる性質を別々に比較する",
+      "required_knowledge": "電気陰性度、酸化力、酸解離と溶媒、水素結合と分散力。",
+      "solution": "電気陰性度とハロゲン分子の酸化力はF、Cl、Br、Iの順に小さくなる。しかし水中でHFは弱酸、HCl・HBr・HIは強酸であり、Fの高電気陰性度をHFが最強の酸という結論へ転用できない。強酸3種は水による水平化にも注意する。通常沸点はHF>HI>HBr>HClで、HFの水素結合と他3種の分散力の増大を分ける。正しいのはイ・エ、4である。",
+      "independent_answer": "4",
+      "answer_reason": "電気陰性度とハロゲン分子の酸化力はF、Cl、Br、Iの順に小さくなる。しかし水中でHFは弱酸、HCl・HBr・HIは強酸であり、Fの高電気陰性度をHFが最強の酸という結論へ転用できない。強酸3種は水による水平化にも注意する。通常沸点はHF>HI>HBr>HClで、HFの水素結合と他3種の分散力の増大を分ける。正しいのはイ・エ、4である。",
+      "learning_points": "ハロゲン族の異なる性質を別々に比較するを、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:halogen"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "basic_halogen",
+      "classification_reason": "原典全条件・全5肢からハロゲン族の異なる性質を別々に比較するを中心に分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [
+        "purdue_halogens",
+        "rsc_halogen",
+        "nist_halogen_properties",
+        "msu_hydrogen_bonding",
+        "purdue_acid_strength",
+        "yale_hydrohalic"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-BASIC-4-1",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "stem": "ハロゲン原子・分子・ハロゲン化水素の4記述から、正しい2項の組を選ぶ。",
+      "summary": "ハロゲン原子・分子・ハロゲン化水素の4記述から、正しい2項の組を選ぶ。",
+      "conditions": {
+        "ア": "ア：原子の電気陰性度はF>Cl>Br>I。",
+        "イ": "イ：ハロゲン分子の酸化力はF2>Cl2>Br2>I2。",
+        "ウ": "ウ：同濃度水溶液のH⁺濃度はHF>HCl>HBr>HI。",
+        "エ": "エ：沸点はHF>HCl>HBr>HI。"
+      },
+      "choices": {
+        "1": {
+          "value": "ア・イ",
+          "verdict": "条件に一致",
+          "reason": "両記述が正しい。"
+        },
+        "2": {
+          "value": "ア・ウ",
+          "verdict": "条件に不一致",
+          "reason": "含まれるウが誤り。酸性度・H⁺濃度はHFを最大にできず、沸点ではHClが最小である。"
+        },
+        "3": {
+          "value": "イ・ウ",
+          "verdict": "条件に不一致",
+          "reason": "含まれるウが誤り。酸性度・H⁺濃度はHFを最大にできず、沸点ではHClが最小である。"
+        },
+        "4": {
+          "value": "イ・エ",
+          "verdict": "条件に不一致",
+          "reason": "含まれるエが誤り。酸性度・H⁺濃度はHFを最大にできず、沸点ではHClが最小である。"
+        },
+        "5": {
+          "value": "ウ・エ",
+          "verdict": "条件に不一致",
+          "reason": "含まれるウ・エが誤り。酸性度・H⁺濃度はHFを最大にできず、沸点ではHClが最小である。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/basic/page_015.png"
+      ],
+      "core_concept": "ハロゲン族の異なる性質を別々に比較する",
+      "required_knowledge": "電気陰性度、酸化力、酸解離と溶媒、水素結合と分散力。",
+      "solution": "電気陰性度とハロゲン分子の酸化力はF、Cl、Br、Iの順に小さくなる。しかし水中でHFは弱酸、HCl・HBr・HIは強酸であり、Fの高電気陰性度をHFが最強の酸という結論へ転用できない。強酸3種は水による水平化にも注意する。通常沸点はHF>HI>HBr>HClで、HFの水素結合と他3種の分散力の増大を分ける。正しいのはア・イ、1である。",
+      "independent_answer": "1",
+      "answer_reason": "電気陰性度とハロゲン分子の酸化力はF、Cl、Br、Iの順に小さくなる。しかし水中でHFは弱酸、HCl・HBr・HIは強酸であり、Fの高電気陰性度をHFが最強の酸という結論へ転用できない。強酸3種は水による水平化にも注意する。通常沸点はHF>HI>HBr>HClで、HFの水素結合と他3種の分散力の増大を分ける。正しいのはア・イ、1である。",
+      "learning_points": "ハロゲン族の異なる性質を別々に比較するを、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:halogen"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "basic_halogen",
+      "classification_reason": "原典全条件・全5肢からハロゲン族の異なる性質を別々に比較するを中心に分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [
+        "purdue_halogens",
+        "rsc_halogen",
+        "nist_halogen_properties",
+        "msu_hydrogen_bonding",
+        "purdue_acid_strength",
+        "yale_hydrohalic"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-4-2",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "同位体について5記述の正誤を判定し、その組合せを選ぶ。",
+      "summary": "同位体について5記述の正誤を判定し、その組合せを選ぶ。",
+      "conditions": {
+        "ア": "ア：陽子数は同じだが電子数は違う。",
+        "イ": "イ：質量数が違うため化学的性質も違う。",
+        "ウ": "ウ：中性子数が違う。",
+        "エ": "エ：放射性同位体は医療や考古学に使う。",
+        "オ": "オ：放射性同位体には別元素へ変化するものがある。",
+        "並び": "ア／イ／ウ／エ／オ。一般の中性原子を基礎化学の近似で比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "正／正／誤／誤／誤",
+          "verdict": "条件に不一致",
+          "reason": "ア・イ・ウ・エ・オの正誤が違う。同じ電子配置、中性子差、放射性核種の応用と元素変化で判定する。"
+        },
+        "2": {
+          "value": "正／正／正／正／誤",
+          "verdict": "条件に不一致",
+          "reason": "ア・イ・オの正誤が違う。同じ電子配置、中性子差、放射性核種の応用と元素変化で判定する。"
+        },
+        "3": {
+          "value": "誤／誤／正／誤／誤",
+          "verdict": "条件に不一致",
+          "reason": "エ・オの正誤が違う。同じ電子配置、中性子差、放射性核種の応用と元素変化で判定する。"
+        },
+        "4": {
+          "value": "誤／正／誤／正／正",
+          "verdict": "条件に不一致",
+          "reason": "イ・ウの正誤が違う。同じ電子配置、中性子差、放射性核種の応用と元素変化で判定する。"
+        },
+        "5": {
+          "value": "誤／誤／正／正／正",
+          "verdict": "条件に一致",
+          "reason": "全5項の判断に一致する。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/basic/page_016.png"
+      ],
+      "core_concept": "核の違い・電子配置・放射壊変を区別する",
+      "required_knowledge": "同位体定義、同位体効果、核種変化、放射性年代測定・診断。",
+      "solution": "同位体は同じZで異なるAを持ち、中性子数が違う。中性なら電子数も電子配置も同じなので基礎的化学性質はほぼ同じで、ア・イを誤、ウを正とする。放射性核種は医療・年代測定に利用でき、α崩壊やβ崩壊でZが変わる場合があるためエ・オは正。誤／誤／正／正／正の5である。ただし「同じ化学的性質」は同位体効果まで0という意味ではなく、速度や平衡に質量由来の差が現れる。全放射壊変で元素が変わるとも限らず、γ遷移はZを変えない。",
+      "independent_answer": "5",
+      "answer_reason": "同位体は同じZで異なるAを持ち、中性子数が違う。中性なら電子数も電子配置も同じなので基礎的化学性質はほぼ同じで、ア・イを誤、ウを正とする。放射性核種は医療・年代測定に利用でき、α崩壊やβ崩壊でZが変わる場合があるためエ・オは正。誤／誤／正／正／正の5である。ただし「同じ化学的性質」は同位体効果まで0という意味ではなく、速度や平衡に質量由来の差が現れる。全放射壊変で元素が変わるとも限らず、γ遷移はZを変えない。",
+      "learning_points": "核の違い・電子配置・放射壊変を区別するを、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:isotope",
+        "theory:basicchem:isotope_effect"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "isotope_general",
+      "classification_reason": "原典全条件・全5肢から核の違い・電子配置・放射壊変を区別するを中心に分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [
+        "iupac_isotopes",
+        "iupac_isotope_effect"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-BASIC-4-1",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "stem": "同位体について5記述の正誤を判定し、その組合せを選ぶ。",
+      "summary": "同位体について5記述の正誤を判定し、その組合せを選ぶ。",
+      "conditions": {
+        "ア": "ア：質量数が違うため化学的性質も違う。",
+        "イ": "イ：陽子数は同じだが電子数は違う。",
+        "ウ": "ウ：中性子数が違う。",
+        "エ": "エ：放射性同位体には別元素へ変化するものがある。",
+        "オ": "オ：放射性同位体は年代測定等へ利用する。",
+        "並び": "ア／イ／ウ／エ／オ。一般の中性原子を基礎化学の近似で比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "正／正／誤／誤／誤",
+          "verdict": "条件に不一致",
+          "reason": "ア・イ・ウ・エ・オの正誤が違う。同じ電子配置、中性子差、放射性核種の応用と元素変化で判定する。"
+        },
+        "2": {
+          "value": "正／正／正／正／誤",
+          "verdict": "条件に不一致",
+          "reason": "ア・イ・オの正誤が違う。同じ電子配置、中性子差、放射性核種の応用と元素変化で判定する。"
+        },
+        "3": {
+          "value": "誤／誤／正／正／正",
+          "verdict": "条件に一致",
+          "reason": "全5項の判断に一致する。"
+        },
+        "4": {
+          "value": "誤／正／誤／正／正",
+          "verdict": "条件に不一致",
+          "reason": "イ・ウの正誤が違う。同じ電子配置、中性子差、放射性核種の応用と元素変化で判定する。"
+        },
+        "5": {
+          "value": "誤／誤／正／誤／誤",
+          "verdict": "条件に不一致",
+          "reason": "エ・オの正誤が違う。同じ電子配置、中性子差、放射性核種の応用と元素変化で判定する。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/basic/page_016.png"
+      ],
+      "core_concept": "核の違い・電子配置・放射壊変を区別する",
+      "required_knowledge": "同位体定義、同位体効果、核種変化、放射性年代測定・診断。",
+      "solution": "同位体は同じZで異なるAを持ち、中性子数が違う。中性なら電子数も電子配置も同じなので基礎的化学性質はほぼ同じで、ア・イを誤、ウを正とする。放射性核種は医療・年代測定に利用でき、α崩壊やβ崩壊でZが変わる場合があるためエ・オは正。誤／誤／正／正／正の3である。ただし「同じ化学的性質」は同位体効果まで0という意味ではなく、速度や平衡に質量由来の差が現れる。全放射壊変で元素が変わるとも限らず、γ遷移はZを変えない。",
+      "independent_answer": "3",
+      "answer_reason": "同位体は同じZで異なるAを持ち、中性子数が違う。中性なら電子数も電子配置も同じなので基礎的化学性質はほぼ同じで、ア・イを誤、ウを正とする。放射性核種は医療・年代測定に利用でき、α崩壊やβ崩壊でZが変わる場合があるためエ・オは正。誤／誤／正／正／正の3である。ただし「同じ化学的性質」は同位体効果まで0という意味ではなく、速度や平衡に質量由来の差が現れる。全放射壊変で元素が変わるとも限らず、γ遷移はZを変えない。",
+      "learning_points": "核の違い・電子配置・放射壊変を区別するを、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:isotope",
+        "theory:basicchem:isotope_effect"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "isotope_general",
+      "classification_reason": "原典全条件・全5肢から核の違い・電子配置・放射壊変を区別するを中心に分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [
+        "iupac_isotopes",
+        "iupac_isotope_effect"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-BASIC-4-2",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "stem": "2価の多原子イオンを含む化合物を選ぶ。",
+      "summary": "2価の多原子イオンを含む化合物を選ぶ。",
+      "conditions": {
+        "条件": "電荷の絶対値が2で、複数原子からなるイオンを探す。化合物中に同じ1価イオンが2個あることとは違う。"
+      },
+      "choices": {
+        "1": {
+          "value": "硫化銀 Ag2S",
+          "verdict": "条件に不一致",
+          "reason": "S²⁻は2価だが単原子であり条件を満たさない。"
+        },
+        "2": {
+          "value": "水酸化ナトリウム NaOH",
+          "verdict": "条件に不一致",
+          "reason": "OH⁻は多原子だが1価である。"
+        },
+        "3": {
+          "value": "硫酸アンモニウム (NH4)2SO4",
+          "verdict": "条件に一致",
+          "reason": "SO4²⁻はSとOからなる多原子・2価陰イオンである。NH4⁺は1価陽イオン。"
+        },
+        "4": {
+          "value": "硝酸鉛(II) Pb(NO3)2",
+          "verdict": "条件に不一致",
+          "reason": "NO3⁻は多原子・1価で、Pb²⁺は2価だが単原子である。"
+        },
+        "5": {
+          "value": "リン酸カルシウム Ca3(PO4)2",
+          "verdict": "条件に不一致",
+          "reason": "PO4³⁻は多原子・3価。Ca²⁺は2価だが単原子である。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/basic/page_015.png"
+      ],
+      "core_concept": "イオン1個の組成・電荷と式単位の個数",
+      "required_knowledge": "単原子・多原子イオン、電気的中性、硫酸・硝酸・リン酸、括弧添字。",
+      "solution": "まず単原子か多原子かを分け、次に式単位の電気的中性からイオン電荷を確認する。(NH4)2SO4ではNH4⁺が2個なのでSO4は−2であり、3を選ぶ。括弧の外の添字2はイオン個数を示し、NO3そのものを2価に変えるものではない。",
+      "independent_answer": "3",
+      "answer_reason": "まず単原子か多原子かを分け、次に式単位の電気的中性からイオン電荷を確認する。(NH4)2SO4ではNH4⁺が2個なのでSO4は−2であり、3を選ぶ。括弧の外の添字2はイオン個数を示し、NO3そのものを2価に変えるものではない。",
+      "learning_points": "イオン1個の組成・電荷と式単位の個数を、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:ion"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "basic_stoichiometry",
+      "classification_reason": "原典全条件・全5肢からイオン1個の組成・電荷と式単位の個数を中心に分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-4-4",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "Sn–Ag–Cu合金の質量分率をモル分率へ換算する。",
+      "summary": "Sn–Ag–Cu合金の質量分率をモル分率へ換算する。",
+      "conditions": {
+        "質量分率": "Sn96.5%、Ag3.00%、Cu0.500%。",
+        "原子量": "Sn118.7、Ag107.8、Cu63.5。",
+        "候補の並び": "Sn／Ag／Cuのモル分率%。"
+      },
+      "choices": {
+        "1": {
+          "value": "97.0／2.74／0.269",
+          "verdict": "条件に不一致",
+          "reason": "各質量を原子量で割って正規化した組と違い、特にCuが小さすぎる。"
+        },
+        "2": {
+          "value": "97.0／2.34／0.662",
+          "verdict": "条件に不一致",
+          "reason": "正規化したAg約3.28%、Cu約0.928%と合わない。"
+        },
+        "3": {
+          "value": "96.5／3.00／0.500",
+          "verdict": "条件に不一致",
+          "reason": "質量分率をそのまま書いており原子量の差が反映されない。"
+        },
+        "4": {
+          "value": "95.8／3.82／0.375",
+          "verdict": "条件に不一致",
+          "reason": "Snは合うがAgとCuのモル比が与えられた質量/原子量と合わない。"
+        },
+        "5": {
+          "value": "95.8／3.28／0.928",
+          "verdict": "条件に一致",
+          "reason": "各成分の物質量を合計で割った95.8%、3.28%、0.928%に一致する。"
+        }
+      },
+      "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/basic/page_014.png"
+      ],
+      "core_concept": "質量分率から物質量分率への正規化",
+      "required_knowledge": "n=w/M、原子量、分率の分母、比の不変性。",
+      "solution": "合金100 gを取ると\\(n_{Sn}=96.5/118.7\\simeq0.8138\\)、\\(n_{Ag}=3.00/107.8\\simeq0.02783\\)、\\(n_{Cu}=0.500/63.5\\simeq0.007874\\) molで、合計約0.8495 molである。各値を合計で割り100倍すると約95.8、3.28、0.928%、5となる。基準質量を1 gに変えても分子・分母の係数が消えて同じ割合になる。",
+      "independent_answer": "5",
+      "answer_reason": "合金100 gを取ると\\(n_{Sn}=96.5/118.7\\simeq0.8138\\)、\\(n_{Ag}=3.00/107.8\\simeq0.02783\\)、\\(n_{Cu}=0.500/63.5\\simeq0.007874\\) molで、合計約0.8495 molである。各値を合計で割り100倍すると約95.8、3.28、0.928%、5となる。基準質量を1 gに変えても分子・分母の係数が消えて同じ割合になる。",
+      "learning_points": "質量分率から物質量分率への正規化を、数える対象・分母・電荷保存・成立条件を明示して判断する。",
+      "theory_references": [
+        "theory:basicchem:fraction"
+      ],
+      "discipline_id": "basic_4_2",
+      "concept_id": "basic_composition",
+      "classification_reason": "原典全条件・全5肢から質量分率から物質量分率への正規化を中心に分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学量の定義と比較の対象を特定し、質量と物質量、原子とイオン、発熱量とエンタルピーを読み分ける。"
+      },
+      "citations": [
+        "iupac_amount_fraction"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

@@ -1,0 +1,1061 @@
+{
+  "batch_id": "S7_041_material_mechanics",
+  "reference_date": "2026-10-12",
+  "questions": [
+    {
+      "question_id": "H23-REG-BASIC-4-4",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "金属結合・粒径強化・加工硬化・疲労負荷の組合せを選ぶ。",
+      "summary": "金属結合・粒径強化・加工硬化・疲労負荷の組合せを選ぶ。",
+      "conditions": {
+        "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+        "前提": "一般的な多結晶金属の室温加工を考える。自由電子の結合と転位移動による塑性を分ける。"
+      },
+      "choices": {
+        "1": {
+          "value": "同位体／大きく／加工硬化／経年腐食",
+          "verdict": "不適切",
+          "reason": "同位体は金属結合を担う電子ではない。通常の結晶粒微細化の強化と疲労の繰返し負荷も逆である。"
+        },
+        "2": {
+          "value": "同位体／小さく／加工軟化／繰返し負荷",
+          "verdict": "不適切",
+          "reason": "粒径と疲労は通常の説明と一致するが、結合を同位体、通常の加工を軟化とする点が誤りである。"
+        },
+        "3": {
+          "value": "自由電子／小さく／加工軟化／繰返し負荷",
+          "verdict": "不適切",
+          "reason": "通常の室温塑性加工では転位が増え互いの移動を妨げ、加工硬化する。軟化を代表的機構にする点が誤りである。"
+        },
+        "4": {
+          "value": "自由電子／小さく／加工硬化／繰返し負荷",
+          "verdict": "適切",
+          "reason": "金属結合、通常の粒径強化、塑性加工に伴う転位増殖、疲労負荷を正しく組み合わせる。"
+        },
+        "5": {
+          "value": "自由電子／大きく／加工軟化／経年腐食",
+          "verdict": "不適切",
+          "reason": "通常の粒径強化・加工硬化・疲労負荷の三項目が不一致である。腐食疲労はあるが疲労一般を腐食だけでは定義しない。"
+        }
+      },
+      "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+      "ambiguity": "金属全てが室温で容易に塑性変形するわけではない。粒径強化をナノ領域まで無条件に外挿せず、高温回復・再結晶による軟化とも区別する。",
+      "evidence": [
+        "extracted/pages/H23/basic/page_013.png"
+      ],
+      "core_concept": "金属結合・粒径強化・加工硬化・疲労負荷の組合せを選ぶ。",
+      "required_knowledge": "一般的な多結晶金属の室温加工を考える。自由電子の結合と転位移動による塑性を分ける。",
+      "solution": "空欄は自由電子、小さく、加工硬化、繰返し負荷である。金属結合の非方向性は原子の配列変更に対応し、実際の塑性は転位の移動による。通常の粒径範囲では粒界が移動を妨げ、加工で増えた転位も障害となる。疲労は繰返し損傷である。",
+      "answer_reason": "空欄は自由電子、小さく、加工硬化、繰返し負荷である。金属結合の非方向性は原子の配列変更に対応し、実際の塑性は転位の移動による。通常の粒径範囲では粒界が移動を妨げ、加工で増えた転位も障害となる。疲労は繰返し損傷である。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回14問を別保存。自由電子、通常の結晶粒微細化、加工硬化、繰返し負荷による疲労。",
+      "learning_points": "結合の起源と塑性の機構、粒径と転位密度、単発破壊と繰返し破壊を分ける。",
+      "theory_references": [
+        "theory:material:bonding",
+        "theory:material:strengthening",
+        "theory:material:fracture"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "material_strengthening",
+      "cross_concepts": [],
+      "classification_reason": "金属の結合・結晶構造・強化・破壊・力学特性又は材料選択の問題であり、材料分野へ配置する。結合の起源と塑性の機構、粒径と転位密度、単発破壊と繰返し破壊を分ける。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "結合、結晶、組織、試験の観測量を結び付ける。単位胞規約・実験条件又は材料の例外を区別する。"
+      },
+      "citations": [
+        "mit_material_dislocations2001",
+        "mit_material_fatigue2001",
+        "mit_material_atomistic2001"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-BASIC-4-4",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "金属結合・粒径強化・加工硬化・疲労負荷の組合せを選ぶ。",
+      "summary": "金属結合・粒径強化・加工硬化・疲労負荷の組合せを選ぶ。",
+      "conditions": {
+        "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+        "前提": "一般的な多結晶金属の室温加工を考える。自由電子の結合と転位移動による塑性を分ける。"
+      },
+      "choices": {
+        "1": {
+          "value": "自由電子／小さく／加工軟化／繰返し負荷",
+          "verdict": "不適切",
+          "reason": "通常の室温塑性加工では転位が増え互いの移動を妨げ、加工硬化する。軟化を代表的機構にする点が誤りである。"
+        },
+        "2": {
+          "value": "自由電子／小さく／加工硬化／繰返し負荷",
+          "verdict": "適切",
+          "reason": "金属結合、通常の粒径強化、塑性加工に伴う転位増殖、疲労負荷を正しく組み合わせる。"
+        },
+        "3": {
+          "value": "自由電子／大きく／加工軟化／経年腐食",
+          "verdict": "不適切",
+          "reason": "通常の粒径強化・加工硬化・疲労負荷の三項目が不一致である。腐食疲労はあるが疲労一般を腐食だけでは定義しない。"
+        },
+        "4": {
+          "value": "同位体／大きく／加工硬化／経年腐食",
+          "verdict": "不適切",
+          "reason": "同位体は金属結合を担う電子ではない。通常の結晶粒微細化の強化と疲労の繰返し負荷も逆である。"
+        },
+        "5": {
+          "value": "同位体／小さく／加工軟化／繰返し負荷",
+          "verdict": "不適切",
+          "reason": "粒径と疲労は通常の説明と一致するが、結合を同位体、通常の加工を軟化とする点が誤りである。"
+        }
+      },
+      "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+      "ambiguity": "金属全てが室温で容易に塑性変形するわけではない。粒径強化をナノ領域まで無条件に外挿せず、高温回復・再結晶による軟化とも区別する。",
+      "evidence": [
+        "extracted/pages/H30/basic/page_016.png"
+      ],
+      "core_concept": "金属結合・粒径強化・加工硬化・疲労負荷の組合せを選ぶ。",
+      "required_knowledge": "一般的な多結晶金属の室温加工を考える。自由電子の結合と転位移動による塑性を分ける。",
+      "solution": "空欄は自由電子、小さく、加工硬化、繰返し負荷である。金属結合の非方向性は原子の配列変更に対応し、実際の塑性は転位の移動による。通常の粒径範囲では粒界が移動を妨げ、加工で増えた転位も障害となる。疲労は繰返し損傷である。",
+      "answer_reason": "空欄は自由電子、小さく、加工硬化、繰返し負荷である。金属結合の非方向性は原子の配列変更に対応し、実際の塑性は転位の移動による。通常の粒径範囲では粒界が移動を妨げ、加工で増えた転位も障害となる。疲労は繰返し損傷である。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回14問を別保存。H23と同じ概念、選択肢順序が変わる。",
+      "learning_points": "結合の起源と塑性の機構、粒径と転位密度、単発破壊と繰返し破壊を分ける。",
+      "theory_references": [
+        "theory:material:bonding",
+        "theory:material:strengthening",
+        "theory:material:fracture"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "material_strengthening",
+      "cross_concepts": [],
+      "classification_reason": "金属の結合・結晶構造・強化・破壊・力学特性又は材料選択の問題であり、材料分野へ配置する。結合の起源と塑性の機構、粒径と転位密度、単発破壊と繰返し破壊を分ける。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "結合、結晶、組織、試験の観測量を結び付ける。単位胞規約・実験条件又は材料の例外を区別する。"
+      },
+      "citations": [
+        "mit_material_dislocations2001",
+        "mit_material_fatigue2001",
+        "mit_material_atomistic2001"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-4-3",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "粒径強化・焼結体欠陥・リバティ船・コメットの破壊様式を選ぶ。",
+      "summary": "粒径強化・焼結体欠陥・リバティ船・コメットの破壊様式を選ぶ。",
+      "conditions": {
+        "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+        "前提": "理論無欠陥強度と実焼結体の欠陥、脆性破壊と疲労き裂を分ける。"
+      },
+      "choices": {
+        "1": {
+          "value": "大きく／イオン結合／脆性破壊／絶縁破壊",
+          "verdict": "不適切",
+          "reason": "イオン結合はアルミナの結合様式であり、理論値より実強度を低くする欠陥そのものではない。コメットの繰返し損傷は絶縁破壊ではない。"
+        },
+        "2": {
+          "value": "大きく／欠陥／脆性破壊／疲労破壊",
+          "verdict": "適切",
+          "reason": "通常の粒径効果と欠陥の応力集中、船の脆性と航空機の疲労を対応させる。窓周辺のリベット孔など詳細な起点は個別事故の確認を要する。"
+        },
+        "3": {
+          "value": "大きく／欠陥／延性破壊／絶縁破壊",
+          "verdict": "不適切",
+          "reason": "粒径と欠陥は一致するが、設問のリバティ船の代表的破壊様式とコメットの疲労を取り違える。"
+        },
+        "4": {
+          "value": "小さく／イオン結合／延性破壊／絶縁破壊",
+          "verdict": "不適切",
+          "reason": "通常の粒径強化を逆にし、結合様式と欠陥及び事故の破壊様式を混同する。"
+        },
+        "5": {
+          "value": "小さく／欠陥／延性破壊／疲労破壊",
+          "verdict": "不適切",
+          "reason": "欠陥と疲労は対応するが、粒径効果が逆でありリバティ船を延性破壊へ置き換える。"
+        }
+      },
+      "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+      "ambiguity": "事故記述は歴史の簡略化である。コメットは窓周辺のリベット孔・開口部などの起点を区別し、全事故の窓の角起点と断定しない。リバティ船の全損や溶接部のみへの因果限定も査読対象とする。",
+      "evidence": [
+        "extracted/pages/H24/basic/page_013.png"
+      ],
+      "core_concept": "粒径強化・焼結体欠陥・リバティ船・コメットの破壊様式を選ぶ。",
+      "required_knowledge": "理論無欠陥強度と実焼結体の欠陥、脆性破壊と疲労き裂を分ける。",
+      "solution": "大きく、欠陥、脆性破壊、疲労破壊の2が適切である。粒微細化は通常の降伏応力を上げ、欠陥は局所応力とき裂を生む。船の低温脆性破壊と、航空機の繰返し与圧による疲労を比較する。実事故は材料・設計・製造・使用条件が重なるため一語だけで全原因を確定しない。",
+      "answer_reason": "大きく、欠陥、脆性破壊、疲労破壊の2が適切である。粒微細化は通常の降伏応力を上げ、欠陥は局所応力とき裂を生む。船の低温脆性破壊と、航空機の繰返し与圧による疲労を比較する。実事故は材料・設計・製造・使用条件が重なるため一語だけで全原因を確定しない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回14問を別保存。理想無欠陥強度は実強度より大きい。欠陥・低温脆性・繰返し疲労を区別する。",
+      "learning_points": "理論強度は無欠陥モデル、実強度は欠陥と破壊条件を含む。疲労の最終破断は急速破壊でも、それまでの繰返し過程が重要である。",
+      "theory_references": [
+        "theory:material:strengthening",
+        "theory:material:fracture"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "material_fracture",
+      "cross_concepts": [],
+      "classification_reason": "金属の結合・結晶構造・強化・破壊・力学特性又は材料選択の問題であり、材料分野へ配置する。理論強度は無欠陥モデル、実強度は欠陥と破壊条件を含む。疲労の最終破断は急速破壊でも、それまでの繰返し過程が重要である。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "結合、結晶、組織、試験の観測量を結び付ける。単位胞規約・実験条件又は材料の例外を区別する。"
+      },
+      "citations": [
+        "mit_material_dislocations2001",
+        "mit_material_fracture2001",
+        "mit_material_fatigue2001",
+        "nist_fracture_history2010"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-4-3",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "フック則・ヤング率とMg/Wの代表値、温度依存を対応させる。",
+      "summary": "フック則・ヤング率とMg/Wの代表値、温度依存を対応させる。",
+      "conditions": {
+        "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+        "前提": "小応力・単軸線形弾性σ=Eεを想定する。Eの値は温度・結晶方位・材質に依存する代表値である。"
+      },
+      "choices": {
+        "1": {
+          "value": "フック／ヤング率／45／407／大きく",
+          "verdict": "不適切",
+          "reason": "法則・名称と値は一致するが、通常の金属の昇温によるヤング率変化が逆である。"
+        },
+        "2": {
+          "value": "ヘンリー／ポアソン比／407／45／大きく",
+          "verdict": "不適切",
+          "reason": "ヘンリー則は気体溶解の関係、ポアソン比は横ひずみと軸ひずみの比であり、σ=Eεの名称ではない。数値も逆である。"
+        },
+        "3": {
+          "value": "フック／ポアソン比／407／45／小さく",
+          "verdict": "不適切",
+          "reason": "フック則と昇温傾向は一致するが、Eはヤング率であり無次元のポアソン比ではない。MgとWの値も逆である。"
+        },
+        "4": {
+          "value": "ヘンリー／ヤング率／407／45／小さく",
+          "verdict": "不適切",
+          "reason": "Eの名称と温度傾向は一致するが、比例則の名称と二金属の数値を取り違える。"
+        },
+        "5": {
+          "value": "フック／ヤング率／45／407／小さく",
+          "verdict": "適切",
+          "reason": "単軸線形弾性の比例則、応力と同じ単位を持つE、MgとWの代表値、通常の昇温低下を対応させる。"
+        }
+      },
+      "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+      "ambiguity": "45/407 GPaは原典と大学教材にある代表値である。温度依存の定量データと範囲は未指定であり、相変態・特殊材料を含む全称には拡張しない。",
+      "evidence": [
+        "extracted/pages/H26/basic/page_014.png"
+      ],
+      "core_concept": "フック則・ヤング率とMg/Wの代表値、温度依存を対応させる。",
+      "required_knowledge": "小応力・単軸線形弾性σ=Eεを想定する。Eの値は温度・結晶方位・材質に依存する代表値である。",
+      "solution": "フック、ヤング率、45、407、小さくの組合せが適切である。E=σ/εなのでGPaを単位とする。MgはWよりはるかに小さい弾性率を持つ。通常の金属のEは昇温で低下するが、全材料・全温度の普遍則とはしない。",
+      "answer_reason": "フック、ヤング率、45、407、小さくの組合せが適切である。E=σ/εなのでGPaを単位とする。MgはWよりはるかに小さい弾性率を持つ。通常の金属のEは昇温で低下するが、全材料・全温度の普遍則とはしない。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回14問を別保存。小応力のフック則とヤング率、Mg45/W407GPaという原典値、通常の昇温軟化。",
+      "learning_points": "ヤング率は剛性の材料定数であり、引張強度・降伏応力や無次元のポアソン比と違う。",
+      "theory_references": [
+        "theory:material:elasticity"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "material_elastic_modulus",
+      "cross_concepts": [],
+      "classification_reason": "金属の結合・結晶構造・強化・破壊・力学特性又は材料選択の問題であり、材料分野へ配置する。ヤング率は剛性の材料定数であり、引張強度・降伏応力や無次元のポアソン比と違う。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "結合、結晶、組織、試験の観測量を結び付ける。単位胞規約・実験条件又は材料の例外を区別する。"
+      },
+      "citations": [
+        "mit_material_elastic2000",
+        "princeton_magnesium",
+        "princeton_tungsten"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-BASIC-4-3",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "stem": "フック則・ヤング率とMg/Wの代表値、温度依存を対応させる。",
+      "summary": "フック則・ヤング率とMg/Wの代表値、温度依存を対応させる。",
+      "conditions": {
+        "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+        "前提": "小応力・単軸線形弾性σ=Eεを想定する。Eの値は温度・結晶方位・材質に依存する代表値である。"
+      },
+      "choices": {
+        "1": {
+          "value": "フック／ヤング率／45／407／大きく",
+          "verdict": "不適切",
+          "reason": "法則・名称と値は一致するが、通常の金属の昇温低下を増大へ逆転している。"
+        },
+        "2": {
+          "value": "フック／ヤング率／45／407／小さく",
+          "verdict": "適切",
+          "reason": "フック則の比例定数がヤング率であり、Mg45・W407 GPaの代表値と通常の昇温低下が対応する。"
+        },
+        "3": {
+          "value": "フック／ポアソン比／407／45／小さく",
+          "verdict": "不適切",
+          "reason": "Eは応力の単位を持つヤング率であり、横と縦のひずみ比を表すポアソン比ではない。金属の数値も逆である。"
+        },
+        "4": {
+          "value": "ブラッグ／ポアソン比／407／45／大きく",
+          "verdict": "不適切",
+          "reason": "ブラッグ則は回折条件でありσ=Eεではない。比例定数・金属の数値・昇温傾向も不一致である。"
+        },
+        "5": {
+          "value": "ブラッグ／ヤング率／407／45／小さく",
+          "verdict": "不適切",
+          "reason": "名称と温度傾向の一部は対応するが、法則と二金属の数値が誤りである。"
+        }
+      },
+      "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+      "ambiguity": "45/407 GPaは原典と大学教材にある代表値である。温度依存の定量データと範囲は未指定であり、相変態・特殊材料を含む全称には拡張しない。",
+      "evidence": [
+        "extracted/pages/R03/basic/page_017.png"
+      ],
+      "core_concept": "フック則・ヤング率とMg/Wの代表値、温度依存を対応させる。",
+      "required_knowledge": "小応力・単軸線形弾性σ=Eεを想定する。Eの値は温度・結晶方位・材質に依存する代表値である。",
+      "solution": "フック、ヤング率、45、407、小さくの組合せが適切である。E=σ/εなのでGPaを単位とする。MgはWよりはるかに小さい弾性率を持つ。通常の金属のEは昇温で低下するが、全材料・全温度の普遍則とはしない。",
+      "answer_reason": "フック、ヤング率、45、407、小さくの組合せが適切である。E=σ/εなのでGPaを単位とする。MgはWよりはるかに小さい弾性率を持つ。通常の金属のEは昇温で低下するが、全材料・全温度の普遍則とはしない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回14問を別保存。フック、ヤング率、45/407、通常の温度上昇で低下。",
+      "learning_points": "ヤング率は剛性の材料定数であり、引張強度・降伏応力や無次元のポアソン比と違う。",
+      "theory_references": [
+        "theory:material:elasticity"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "material_elastic_modulus",
+      "cross_concepts": [],
+      "classification_reason": "金属の結合・結晶構造・強化・破壊・力学特性又は材料選択の問題であり、材料分野へ配置する。ヤング率は剛性の材料定数であり、引張強度・降伏応力や無次元のポアソン比と違う。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "結合、結晶、組織、試験の観測量を結び付ける。単位胞規約・実験条件又は材料の例外を区別する。"
+      },
+      "citations": [
+        "mit_material_elastic2000",
+        "princeton_magnesium",
+        "princeton_tungsten"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-4-4",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "引張試験の初期寸法から公称応力・公称ひずみと弾性を求める。",
+      "summary": "引張試験の初期寸法から公称応力・公称ひずみと弾性を求める。",
+      "conditions": {
+        "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+        "前提": "標点間の伸びを用いる単軸引張試験を考える。試験機の変位と試験片の伸びは装置コンプライアンス等を補正して対応させる。"
+      },
+      "choices": {
+        "1": {
+          "value": "変形前／真応力／真ひずみ／弾性",
+          "verdict": "不適切",
+          "reason": "初期断面積と初期長さで割る量は公称値である。真応力は現在断面積、真ひずみは微小伸びを現在長さで割って積分する。"
+        },
+        "2": {
+          "value": "変形前／公称応力／公称ひずみ／弾性",
+          "verdict": "適切",
+          "reason": "荷重Fを初期断面積A0で割り、伸びΔLを初期標点距離L0で割る。初期の直線領域は通常の線形弾性である。"
+        },
+        "3": {
+          "value": "変形後／真応力／真ひずみ／弾性",
+          "verdict": "不適切",
+          "reason": "現在断面積で割る応力は真応力となるが、全伸びを最終長さで割るだけでは真ひずみにならない。"
+        },
+        "4": {
+          "value": "変形後／公称応力／公称ひずみ／塑性",
+          "verdict": "不適切",
+          "reason": "公称値の基準は変形前であり、通常の初期直線領域を塑性とする点も誤りである。"
+        },
+        "5": {
+          "value": "変形後／真応力／公称ひずみ／塑性",
+          "verdict": "不適切",
+          "reason": "真応力の面積は対応するが公称ひずみの長さは初期値であり、通常の初期直線域も塑性ではない。"
+        }
+      },
+      "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+      "ambiguity": "一次的に計測される変位がクロスヘッド変位の場合は機械・つかみの変形を含む。標点間の伸びに対応させる条件を明記し、全ての材料の初期直線性を保証しない。",
+      "evidence": [
+        "extracted/pages/H28/basic/page_018.png"
+      ],
+      "core_concept": "引張試験の初期寸法から公称応力・公称ひずみと弾性を求める。",
+      "required_knowledge": "標点間の伸びを用いる単軸引張試験を考える。試験機の変位と試験片の伸びは装置コンプライアンス等を補正して対応させる。",
+      "solution": "変形前、公称応力、公称ひずみ、弾性が適切である。公称応力はF/A0、公称ひずみはΔL/L0である。真ひずみはln(L/L0)となり、ΔLを最終長さで割る定義とは異なる。",
+      "answer_reason": "変形前、公称応力、公称ひずみ、弾性が適切である。公称応力はF/A0、公称ひずみはΔL/L0である。真ひずみはln(L/L0)となり、ΔLを最終長さで割る定義とは異なる。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回14問を別保存。変形前の面積・標点距離で公称応力・公称ひずみ、初期線形弾性。",
+      "learning_points": "公称と真を現在寸法への置換だけで覚えず、ひずみの微小増分を積分して区別する。",
+      "theory_references": [
+        "theory:material:tension",
+        "theory:material:elasticity"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "material_tensile_measures",
+      "cross_concepts": [],
+      "classification_reason": "金属の結合・結晶構造・強化・破壊・力学特性又は材料選択の問題であり、材料分野へ配置する。公称と真を現在寸法への置換だけで覚えず、ひずみの微小増分を積分して区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "結合、結晶、組織、試験の観測量を結び付ける。単位胞規約・実験条件又は材料の例外を区別する。"
+      },
+      "citations": [
+        "mit_material_stressstrain2001",
+        "mit_material_elastic2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-4-4",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "引張試験の初期寸法から公称応力・公称ひずみと弾性を求める。",
+      "summary": "引張試験の初期寸法から公称応力・公称ひずみと弾性を求める。",
+      "conditions": {
+        "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+        "前提": "標点間の伸びを用いる単軸引張試験を考える。試験機の変位と試験片の伸びは装置コンプライアンス等を補正して対応させる。"
+      },
+      "choices": {
+        "1": {
+          "value": "変形前／公称応力／公称ひずみ／弾性",
+          "verdict": "適切",
+          "reason": "荷重Fを初期断面積A0で割り、伸びΔLを初期標点距離L0で割る。初期の直線領域は通常の線形弾性である。"
+        },
+        "2": {
+          "value": "変形後／真応力／公称ひずみ／弾性",
+          "verdict": "不適切",
+          "reason": "真応力の面積は対応するが、公称ひずみの分母は変形後でなく初期標点距離である。"
+        },
+        "3": {
+          "value": "変形前／公称応力／真ひずみ／塑性",
+          "verdict": "不適切",
+          "reason": "初期長さで伸びを割る量は公称ひずみであり、通常の初期直線域も塑性ではない。"
+        },
+        "4": {
+          "value": "変形後／真応力／真ひずみ／塑性",
+          "verdict": "不適切",
+          "reason": "全伸びを現在長さで割るだけでは真ひずみの積分定義を満たさない。通常の初期直線領域を塑性とする点も不一致である。"
+        },
+        "5": {
+          "value": "変形前／公称応力／公称ひずみ／塑性",
+          "verdict": "不適切",
+          "reason": "公称値の二つの基準は正しいが、初期線形域を塑性とする点が誤りである。"
+        }
+      },
+      "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+      "ambiguity": "一次的に計測される変位がクロスヘッド変位の場合は機械・つかみの変形を含む。標点間の伸びに対応させる条件を明記し、全ての材料の初期直線性を保証しない。",
+      "evidence": [
+        "extracted/pages/R04/basic/page_015.png"
+      ],
+      "core_concept": "引張試験の初期寸法から公称応力・公称ひずみと弾性を求める。",
+      "required_knowledge": "標点間の伸びを用いる単軸引張試験を考える。試験機の変位と試験片の伸びは装置コンプライアンス等を補正して対応させる。",
+      "solution": "変形前、公称応力、公称ひずみ、弾性が適切である。公称応力はF/A0、公称ひずみはΔL/L0である。真ひずみはln(L/L0)となり、ΔLを最終長さで割る定義とは異なる。",
+      "answer_reason": "変形前、公称応力、公称ひずみ、弾性が適切である。公称応力はF/A0、公称ひずみはΔL/L0である。真ひずみはln(L/L0)となり、ΔLを最終長さで割る定義とは異なる。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回14問を別保存。変形前、公称応力、公称ひずみ、弾性。真ひずみは積分対数。",
+      "learning_points": "公称と真を現在寸法への置換だけで覚えず、ひずみの微小増分を積分して区別する。",
+      "theory_references": [
+        "theory:material:tension",
+        "theory:material:elasticity"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "material_tensile_measures",
+      "cross_concepts": [],
+      "classification_reason": "金属の結合・結晶構造・強化・破壊・力学特性又は材料選択の問題であり、材料分野へ配置する。公称と真を現在寸法への置換だけで覚えず、ひずみの微小増分を積分して区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "結合、結晶、組織、試験の観測量を結び付ける。単位胞規約・実験条件又は材料の例外を区別する。"
+      },
+      "citations": [
+        "mit_material_stressstrain2001",
+        "mit_material_elastic2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-4-3",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "FeNa・AlCu・TiZnの室温結晶構造と単位胞の数え方を比較する。",
+      "summary": "FeNa・AlCu・TiZnの室温結晶構造と単位胞の数え方を比較する。",
+      "conditions": {
+        "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+        "前提": "元素・室温・大気圧を指定する。原始並進胞と通常の立方胞・六角柱胞を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "六方最密／面心立方／体心立方／3",
+          "verdict": "不適切",
+          "reason": "FeNaとTiZnが逆である。BCC通常立方胞は角8×1/8と中心1で2原子となり3ではない。"
+        },
+        "2": {
+          "value": "面心立方／六方最密／体心立方／4",
+          "verdict": "不適切",
+          "reason": "FeNaはBCC、AlCuはFCC、TiZnはHCPであり、三種類の配置を取り違える。"
+        },
+        "3": {
+          "value": "面心立方／体心立方／六方最密／2",
+          "verdict": "不適切",
+          "reason": "TiZnとBCC胞の2原子は対応するが、FeNaとAlCuの構造が逆である。"
+        },
+        "4": {
+          "value": "体心立方／面心立方／六方最密／2",
+          "verdict": "適切",
+          "reason": "室温常圧の金属構造と、BCC通常立方胞の2原子が対応する。HCPの本文2原子は原始並進胞に二原子基底を置く規約で読む。"
+        },
+        "5": {
+          "value": "体心立方／六方最密／面心立方／4",
+          "verdict": "不適切",
+          "reason": "FeNaのみ対応し、AlCuとTiZnが逆である。BCCの通常立方胞を4原子とする点も誤りである。"
+        }
+      },
+      "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+      "ambiguity": "原典はHCPを2原子と記すが単位胞の形状を示さない。二原子基底の原始並進胞と六角柱6原子を明示する。HCPをBravais格子単独と呼ばない。",
+      "evidence": [
+        "extracted/pages/H29/basic/page_016.png"
+      ],
+      "core_concept": "FeNa・AlCu・TiZnの室温結晶構造と単位胞の数え方を比較する。",
+      "required_knowledge": "元素・室温・大気圧を指定する。原始並進胞と通常の立方胞・六角柱胞を区別する。",
+      "solution": "FeNaは体心立方、AlCuは面心立方、TiZnは六方最密であり、体心立方の通常立方胞は2原子である。HCPは六方Bravais格子に二原子基底を置くため原始並進胞は2原子となる。六角柱として図示する胞では6原子となり、原典の数だけを全ての胞へ適用しない。",
+      "answer_reason": "FeNaは体心立方、AlCuは面心立方、TiZnは六方最密であり、体心立方の通常立方胞は2原子である。HCPは六方Bravais格子に二原子基底を置くため原始並進胞は2原子となる。六角柱として図示する胞では6原子となり、原典の数だけを全ての胞へ適用しない。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回14問を別保存。FeNaはBCC、AlCuはFCC、TiZnはHCP。HCP原始単位胞2と六角柱6を区別。",
+      "learning_points": "BCC/FCCの立方胞とHCPの原始並進胞を同じ体積の図形と思わず、共有分率と基底を数える。",
+      "theory_references": [
+        "theory:material:crystals"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "material_crystal_cells",
+      "cross_concepts": [],
+      "classification_reason": "金属の結合・結晶構造・強化・破壊・力学特性又は材料選択の問題であり、材料分野へ配置する。BCC/FCCの立方胞とHCPの原始並進胞を同じ体積の図形と思わず、共有分率と基底を数える。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "結合、結晶、組織、試験の観測量を結び付ける。単位胞規約・実験条件又は材料の例外を区別する。"
+      },
+      "citations": [
+        "cambridge_unitcell",
+        "princeton_hcp",
+        "princeton_iron",
+        "princeton_aluminum",
+        "princeton_copper",
+        "princeton_sodium",
+        "princeton_titanium",
+        "princeton_zinc"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-BASIC-4-3",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "stem": "FeNa・AlCu・TiZnの室温結晶構造と単位胞の数え方を比較する。",
+      "summary": "FeNa・AlCu・TiZnの室温結晶構造と単位胞の数え方を比較する。",
+      "conditions": {
+        "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+        "前提": "元素・室温・大気圧を指定する。原始並進胞と通常の立方胞・六角柱胞を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "面心立方／六方最密／体心立方／4",
+          "verdict": "不適切",
+          "reason": "FeNaはBCC、AlCuはFCC、TiZnはHCPであり、三種類の配置を取り違える。"
+        },
+        "2": {
+          "value": "面心立方／体心立方／六方最密／2",
+          "verdict": "不適切",
+          "reason": "TiZnとBCC胞の2原子は対応するが、FeNaとAlCuの構造が逆である。"
+        },
+        "3": {
+          "value": "体心立方／面心立方／六方最密／2",
+          "verdict": "適切",
+          "reason": "室温常圧の金属構造と、BCC通常立方胞の2原子が対応する。HCPの本文2原子は原始並進胞に二原子基底を置く規約で読む。"
+        },
+        "4": {
+          "value": "体心立方／六方最密／面心立方／4",
+          "verdict": "不適切",
+          "reason": "FeNaのみ対応し、AlCuとTiZnが逆である。BCCの通常立方胞を4原子とする点も誤りである。"
+        },
+        "5": {
+          "value": "六方最密／面心立方／体心立方／3",
+          "verdict": "不適切",
+          "reason": "FeNaとTiZnが逆である。BCC通常立方胞は角8×1/8と中心1で2原子となり3ではない。"
+        }
+      },
+      "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+      "ambiguity": "原典はHCPを2原子と記すが単位胞の形状を示さない。二原子基底の原始並進胞と六角柱6原子を明示する。HCPをBravais格子単独と呼ばない。",
+      "evidence": [
+        "extracted/pages/R06/basic/page_015.png"
+      ],
+      "core_concept": "FeNa・AlCu・TiZnの室温結晶構造と単位胞の数え方を比較する。",
+      "required_knowledge": "元素・室温・大気圧を指定する。原始並進胞と通常の立方胞・六角柱胞を区別する。",
+      "solution": "FeNaは体心立方、AlCuは面心立方、TiZnは六方最密であり、体心立方の通常立方胞は2原子である。HCPは六方Bravais格子に二原子基底を置くため原始並進胞は2原子となる。六角柱として図示する胞では6原子となり、原典の数だけを全ての胞へ適用しない。",
+      "answer_reason": "FeNaは体心立方、AlCuは面心立方、TiZnは六方最密であり、体心立方の通常立方胞は2原子である。HCPは六方Bravais格子に二原子基底を置くため原始並進胞は2原子となる。六角柱として図示する胞では6原子となり、原典の数だけを全ての胞へ適用しない。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回14問を別保存。原典3行はBCC/FCC/HCP/2でありOCRのFCC誤読を補正。HCP単位胞規約を留保。",
+      "learning_points": "BCC/FCCの立方胞とHCPの原始並進胞を同じ体積の図形と思わず、共有分率と基底を数える。",
+      "theory_references": [
+        "theory:material:crystals"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "material_crystal_cells",
+      "cross_concepts": [],
+      "classification_reason": "金属の結合・結晶構造・強化・破壊・力学特性又は材料選択の問題であり、材料分野へ配置する。BCC/FCCの立方胞とHCPの原始並進胞を同じ体積の図形と思わず、共有分率と基底を数える。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "結合、結晶、組織、試験の観測量を結び付ける。単位胞規約・実験条件又は材料の例外を区別する。"
+      },
+      "citations": [
+        "cambridge_unitcell",
+        "princeton_hcp",
+        "princeton_iron",
+        "princeton_aluminum",
+        "princeton_copper",
+        "princeton_sodium",
+        "princeton_titanium",
+        "princeton_zinc"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-BASIC-4-4",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "stem": "AlのFCC立方胞の原子数・配位数・格子定数を求める。",
+      "summary": "AlのFCC立方胞の原子数・配位数・格子定数を求める。",
+      "conditions": {
+        "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+        "前提": "室温常圧のAl、等半径の硬球モデル、通常のFCC立方胞を想定する。"
+      },
+      "choices": {
+        "1": {
+          "value": "2／12／a=4R/√3",
+          "verdict": "不適切",
+          "reason": "配位数のみ一致する。2原子と体対角線の接触式はBCC立方胞の値でありFCCに適用できない。"
+        },
+        "2": {
+          "value": "2／8／a=4R/√3",
+          "verdict": "不適切",
+          "reason": "BCCの原子数・配位数・体対角線接触の組合せであり、FCCのAlとは異なる。"
+        },
+        "3": {
+          "value": "4／12／a=4R/√3",
+          "verdict": "不適切",
+          "reason": "原子数と配位数は一致するがFCCの接触は面対角線であり√2a=4Rである。"
+        },
+        "4": {
+          "value": "4／8／a=2√2R",
+          "verdict": "不適切",
+          "reason": "原子数と格子定数は一致するが、FCC最近接配位数は8ではなく12である。"
+        },
+        "5": {
+          "value": "4／12／a=2√2R",
+          "verdict": "適切",
+          "reason": "FCC立方胞の共有分率、最近接原子数、面対角線の接触条件を全て満たす。"
+        }
+      },
+      "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/basic/page_017.png"
+      ],
+      "core_concept": "AlのFCC立方胞の原子数・配位数・格子定数を求める。",
+      "required_knowledge": "室温常圧のAl、等半径の硬球モデル、通常のFCC立方胞を想定する。",
+      "solution": "FCCの原子数は8×1/8+6×1/2=4、最近接配位数は同じ面6と上下各3で12である。面対角線上で原子が接触するので√2a=4R、a=2√2Rとなる5が適切である。",
+      "answer_reason": "FCCの原子数は8×1/8+6×1/2=4、最近接配位数は同じ面6と上下各3で12である。面対角線上で原子が接触するので√2a=4R、a=2√2Rとなる5が適切である。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回14問を別保存。FCCは4原子、配位数12、面対角線4R=√2a。",
+      "learning_points": "単位胞内の原子数と一原子の周りの配位数は別である。接触する対角線から式を導く。",
+      "theory_references": [
+        "theory:material:crystals"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "material_fcc_geometry",
+      "cross_concepts": [],
+      "classification_reason": "金属の結合・結晶構造・強化・破壊・力学特性又は材料選択の問題であり、材料分野へ配置する。単位胞内の原子数と一原子の周りの配位数は別である。接触する対角線から式を導く。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "結合、結晶、組織、試験の観測量を結び付ける。定義又は数値の対応から候補を消去する。"
+      },
+      "citations": [
+        "cambridge_unitcell",
+        "openstax_crystals"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-4-3",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "片面Niめっきの質量と鋼を含む質量百分率を計算する。",
+      "summary": "片面Niめっきの質量と鋼を含む質量百分率を計算する。",
+      "conditions": {
+        "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+        "前提": "幅0.50m、長さ1.0m、鋼厚0.60mm、Ni厚10µmの片面めっき。密度は鋼7.9×10^3、Ni8.9×10^3kg/m3である。"
+      },
+      "choices": {
+        "1": {
+          "value": "レアメタル／4.5×10^-2kg／1.8%",
+          "verdict": "適切",
+          "reason": "日本でのNiの分類、片面の体積・密度計算、めっき後全質量を分母にする百分率が対応する。"
+        },
+        "2": {
+          "value": "ベースメタル／4.5×10^-2kg／0.18%",
+          "verdict": "不適切",
+          "reason": "Ni質量は一致し、国際的にはベースメタルと呼ぶ例もあるが、百分率が一桁小さいため組合せは不適切である。"
+        },
+        "3": {
+          "value": "レアメタル／4.5×10^-2kg／0.18%",
+          "verdict": "不適切",
+          "reason": "分類とNi質量は対応するが、めっき後質量に対する百分率は約1.8%であり0.18%ではない。"
+        },
+        "4": {
+          "value": "ベースメタル／8.9×10^-2kg／0.18%",
+          "verdict": "不適切",
+          "reason": "Ni質量を二面分へ増やしており片面条件を満たさない。百分率も片面条件の値ではない。"
+        },
+        "5": {
+          "value": "レアメタル／8.9×10^-2kg／1.8%",
+          "verdict": "不適切",
+          "reason": "分類と百分率の数字は対応するが、Ni質量を両面分にしている。計算の途中だけを二面へ変えた組合せである。"
+        }
+      },
+      "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+      "ambiguity": "Niのレアメタル分類は日本の政策文脈であり国際的なベースメタル分類もある。面積とめっき後質量を固定して計算し、分類の非普遍性を保持する。",
+      "evidence": [
+        "extracted/pages/R04/basic/page_014.png"
+      ],
+      "core_concept": "片面Niめっきの質量と鋼を含む質量百分率を計算する。",
+      "required_knowledge": "幅0.50m、長さ1.0m、鋼厚0.60mm、Ni厚10µmの片面めっき。密度は鋼7.9×10^3、Ni8.9×10^3kg/m3である。",
+      "solution": "Ni体積は0.50×1.0×10×10^-6=5.0×10^-6m3、質量は0.0445kgであり候補では4.5×10^-2kgとなる。鋼質量は0.50×1.0×0.60×10^-3×7900=2.37kg。Ni百分率は100×0.0445/(2.37+0.0445)=1.843%で1.8%となる。日本の政策文脈のレアメタルを選ぶ1が適切である。",
+      "answer_reason": "Ni体積は0.50×1.0×10×10^-6=5.0×10^-6m3、質量は0.0445kgであり候補では4.5×10^-2kgとなる。鋼質量は0.50×1.0×0.60×10^-3×7900=2.37kg。Ni百分率は100×0.0445/(2.37+0.0445)=1.843%で1.8%となる。日本の政策文脈のレアメタルを選ぶ1が適切である。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回14問を別保存。片面Ni体積0.5×10^-5m3、質量0.0445kg。鋼2.37kgを含む質量百分率1.843%。Ni分類は日本の政策文脈。",
+      "learning_points": "µm・mmをmへ統一し、片面/両面と被膜/基材の質量を分け、百分率の分母を指定する。",
+      "theory_references": [
+        "theory:material:coating"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "material_coating_mass",
+      "cross_concepts": [],
+      "classification_reason": "金属の結合・結晶構造・強化・破壊・力学特性又は材料選択の問題であり、材料分野へ配置する。µm・mmをmへ統一し、片面/両面と被膜/基材の質量を分け、百分率の分母を指定する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "結合、結晶、組織、試験の観測量を結び付ける。単位胞規約・実験条件又は材料の例外を区別する。"
+      },
+      "citations": [
+        "jogmec_nickel2014"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-BASIC-4-3",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "stem": "室温αFeの構造と磁性、Co及びγFe変態時の収縮を選ぶ。",
+      "summary": "室温αFeの構造と磁性、Co及びγFe変態時の収縮を選ぶ。",
+      "conditions": {
+        "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+        "前提": "常温常圧の純鉄とCoを考える。磁気転移と結晶の同素変態を分ける。"
+      },
+      "choices": {
+        "1": {
+          "value": "体心立方／強磁性／コバルト／膨張",
+          "verdict": "不適切",
+          "reason": "室温の構造・磁性・金属例は一致するが、αからγへの変態による体積変化が逆である。通常の熱膨張と変態時の収縮を分ける。"
+        },
+        "2": {
+          "value": "面心立方／強磁性／クロム／膨張",
+          "verdict": "不適切",
+          "reason": "室温αFeをFCCとし、常温の代表的強磁性金属をCrとする点が誤りである。変態による収縮も逆である。"
+        },
+        "3": {
+          "value": "体心立方／強磁性／コバルト／収縮",
+          "verdict": "適切",
+          "reason": "室温のαFeとCo、加熱時のαからγの変態による収縮を対応させる。強磁性が912°Cまで続くとは解釈しない。"
+        },
+        "4": {
+          "value": "面心立方／常磁性／クロム／収縮",
+          "verdict": "不適切",
+          "reason": "変態の収縮だけは対応するが、室温αFeの結晶構造と磁性を取り違える。Crを室温強磁性の例にもできない。"
+        },
+        "5": {
+          "value": "体心立方／常磁性／コバルト／膨張",
+          "verdict": "不適切",
+          "reason": "構造と金属名は対応するが、常温αFeの磁性と加熱変態による収縮が逆である。"
+        }
+      },
+      "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+      "ambiguity": "原典は温度を数値指定しない。約770°Cの磁気転移と約912°Cの結晶変態を別記する。熱膨張と変態収縮の合計は加熱区間・拘束条件による。",
+      "evidence": [
+        "extracted/pages/R05/basic/page_013.png"
+      ],
+      "core_concept": "室温αFeの構造と磁性、Co及びγFe変態時の収縮を選ぶ。",
+      "required_knowledge": "常温常圧の純鉄とCoを考える。磁気転移と結晶の同素変態を分ける。",
+      "solution": "体心立方、強磁性、コバルト、収縮の3が適切である。室温のαFeはBCCで強磁性でありCoも強磁性である。加熱時のαからγへの結晶変態では収縮する。磁性は約770°Cで先に常磁性へ移り、約912°CのBCCからFCCへの変態とは別である。",
+      "answer_reason": "体心立方、強磁性、コバルト、収縮の3が適切である。室温のαFeはBCCで強磁性でありCoも強磁性である。加熱時のαからγへの結晶変態では収縮する。磁性は約770°Cで先に常磁性へ移り、約912°CのBCCからFCCへの変態とは別である。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回14問を別保存。室温αFeはBCC強磁性、Coも強磁性、γへの変態で収縮。磁気転移と結晶変態を分ける。",
+      "learning_points": "体積は原子数と実際の格子定数から評価し、充填率だけで全物質の変態体積を決めない。磁性と結晶相の変化を別の転移として扱う。",
+      "theory_references": [
+        "theory:material:ironphases"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "material_iron_phases",
+      "cross_concepts": [],
+      "classification_reason": "金属の結合・結晶構造・強化・破壊・力学特性又は材料選択の問題であり、材料分野へ配置する。体積は原子数と実際の格子定数から評価し、充填率だけで全物質の変態体積を決めない。磁性と結晶相の変化を別の転移として扱う。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "結合、結晶、組織、試験の観測量を結び付ける。単位胞規約・実験条件又は材料の例外を区別する。"
+      },
+      "citations": [
+        "princeton_iron",
+        "iron_transform2023",
+        "openstax_magnetism",
+        "iron_curie1954"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-BASIC-4-4",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "stem": "ステンレス・比強度・抵抗率・工具・水素脆化を区別する。",
+      "summary": "ステンレス・比強度・抵抗率・工具・水素脆化を区別する。",
+      "conditions": {
+        "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+        "前提": "通常の室温の純金属と材料特性を比較する。引張強度/密度とヤング率/密度を別の指標にする。"
+      },
+      "choices": {
+        "1": {
+          "value": "Crが10%未満の鉄系合金はステンレス鋼ではない",
+          "verdict": "適切",
+          "reason": "ステンレスの一般的な定義はCr10.5%以上であり、10%未満はこれを満たさない。10%以上だけで全てステンレスという逆命題ではない。"
+        },
+        "2": {
+          "value": "比強度をヤング率/密度で求める",
+          "verdict": "不適切",
+          "reason": "ヤング率は弾性剛性を表す。強度/密度が比強度であり、E/ρは比弾性率又は比剛性である。"
+        },
+        "3": {
+          "value": "室温の電気抵抗率は純銅<純金<純鉄",
+          "verdict": "適切",
+          "reason": "通常の室温代表値はCu約1.7、Au約2.4、Fe約9.7×10^-8Ωmであり、同じ温度・純度条件の比較として対応する。"
+        },
+        "4": {
+          "value": "ダイヤモンドは高硬度・小熱膨張を持ち切削工具に用いる",
+          "verdict": "適切",
+          "reason": "硬さと寸法安定性を利用した工具用途がある。被削材との化学反応や熱条件も適性を左右し、全ての金属加工に万能とはしない。"
+        },
+        "5": {
+          "value": "水素吸収による金属の物性変化を水素脆化と呼ぶ",
+          "verdict": "条件付きで適切",
+          "reason": "通常は水素の侵入により延性や破壊抵抗などの機械特性が劣化することを指す。物性変化なら全て脆化とする広い定義は不十分である。"
+        }
+      },
+      "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+      "ambiguity": "5の物性変化は脆化の定義として広すぎるため、機械的劣化に限定した通常の読みを明記する。抵抗率は温度・純度依存、ダイヤモンドの工具適性は被削材依存である。",
+      "evidence": [
+        "extracted/pages/R06/basic/page_016.png"
+      ],
+      "core_concept": "ステンレス・比強度・抵抗率・工具・水素脆化を区別する。",
+      "required_knowledge": "通常の室温の純金属と材料特性を比較する。引張強度/密度とヤング率/密度を別の指標にする。",
+      "solution": "2が不適切である。比強度は引張強度等の強度を密度で割った量であり、ヤング率/密度は比弾性率である。軽くて破断しにくい材料と、軽くて変形しにくい材料の選択を分ける。",
+      "answer_reason": "2が不適切である。比強度は引張強度等の強度を密度で割った量であり、ヤング率/密度は比弾性率である。軽くて破断しにくい材料と、軽くて変形しにくい材料の選択を分ける。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回14問を別保存。比強度は引張強度/密度でありヤング率/密度は比剛性。水素脆化の物性変化という広い表現は留保。",
+      "learning_points": "強度・剛性・靭性・硬さ・導電性を互いに代用しない。水素による変化は機械的劣化を特定する。",
+      "theory_references": [
+        "theory:material:selection"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "material_property_selection",
+      "cross_concepts": [],
+      "classification_reason": "金属の結合・結晶構造・強化・破壊・力学特性又は材料選択の問題であり、材料分野へ配置する。強度・剛性・靭性・硬さ・導電性を互いに代用しない。水素による変化は機械的劣化を特定する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "結合、結晶、組織、試験の観測量を結び付ける。単位胞規約・実験条件又は材料の例外を区別する。"
+      },
+      "citations": [
+        "mit_material_elastic2000",
+        "stainless_definition2022",
+        "openstax_resistivity",
+        "nims_hydrogen2024",
+        "nims_diamond2007"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-4-3",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "硫黄快削鋼・BCC・粒径強化・再結晶・Charpyを比較する。",
+      "summary": "硫黄快削鋼・BCC・粒径強化・再結晶・Charpyを比較する。",
+      "conditions": {
+        "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+        "前提": "一般的な鋼の結晶粒径範囲と、他の材料条件が近い比較を想定する。"
+      },
+      "choices": {
+        "1": {
+          "value": "S0.3%鋼はS0.005%鋼より被削性に優れる",
+          "verdict": "条件付きで適切",
+          "reason": "適切なMn等と組織条件ではMnS介在物が切りくず分断や工具との摩擦へ作用し被削性を改善する。Sだけで全ての鋼の加工性を保証せず、延性・溶接性との交換条件もある。"
+        },
+        "2": {
+          "value": "BCC立方単位胞には2原子ある",
+          "verdict": "適切",
+          "reason": "角8個の共有分は1原子、内部中心は1原子で合計2である。原始胞を使う場合とは胞の体積が違う。"
+        },
+        "3": {
+          "value": "鋼は結晶粒粗大化により強度が向上する",
+          "verdict": "不適切",
+          "reason": "一般的粒径範囲では粗大化は粒界による転位障害を減らし通常の粒径強化を弱める。ナノ領域の別機構を通常の鋼の粗大化強化の根拠にしない。"
+        },
+        "4": {
+          "value": "加工硬化材を加熱再結晶すると延性が増す",
+          "verdict": "適切",
+          "reason": "冷間加工で蓄積した転位を、新たな低転位密度の結晶粒へ置き換え、通常は加工硬化を緩和して延性を回復する。"
+        },
+        "5": {
+          "value": "Charpy衝撃試験で靭性を評価する",
+          "verdict": "適切",
+          "reason": "所定の切欠き試験片を衝撃破断し吸収エネルギーを測る靭性評価である。規格・温度・寸法に依存し、KICを直接測る試験ではない。"
+        }
+      },
+      "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+      "ambiguity": "S量だけでの被削性の全称比較、Hall–Petchの適用粒径範囲を留保する。衝撃靭性の測定値を破壊靭性KICへ直接置換しない。",
+      "evidence": [
+        "extracted/pages/R07/basic/page_013.png"
+      ],
+      "core_concept": "硫黄快削鋼・BCC・粒径強化・再結晶・Charpyを比較する。",
+      "required_knowledge": "一般的な鋼の結晶粒径範囲と、他の材料条件が近い比較を想定する。",
+      "solution": "3が不適切である。通常の鋼ではHall–Petch関係σy=σ0+k/√dにより、粒を細かくするほど降伏応力が上がる。粗大化で強度が上がるという説明は逆である。他の項目は被削性、立方胞原子数、再結晶軟化、衝撃吸収エネルギーの評価として読む。",
+      "answer_reason": "3が不適切である。通常の鋼ではHall–Petch関係σy=σ0+k/√dにより、粒を細かくするほど降伏応力が上がる。粗大化で強度が上がるという説明は逆である。他の項目は被削性、立方胞原子数、再結晶軟化、衝撃吸収エネルギーの評価として読む。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回14問を別保存。通常の鋼の粒粗大化はHall–Petch強化を減らす。硫黄MnSと被削性、再結晶延性、Charpyを区別。",
+      "learning_points": "製造による組織制御と使用時の破壊を結び、被削性を強度又は靭性の向上と同一視しない。",
+      "theory_references": [
+        "theory:material:strengthening",
+        "theory:material:fracture",
+        "theory:material:selection"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "material_strengthening",
+      "cross_concepts": [],
+      "classification_reason": "金属の結合・結晶構造・強化・破壊・力学特性又は材料選択の問題であり、材料分野へ配置する。製造による組織制御と使用時の破壊を結び、被削性を強度又は靭性の向上と同一視しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "結合、結晶、組織、試験の観測量を結び付ける。単位胞規約・実験条件又は材料の例外を区別する。"
+      },
+      "citations": [
+        "mit_material_dislocations2001",
+        "sulfur_machinability2004",
+        "nist_charpy",
+        "hall_petch_limits2020"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

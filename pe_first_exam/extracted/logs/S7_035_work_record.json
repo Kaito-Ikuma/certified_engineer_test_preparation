@@ -1,0 +1,78 @@
+{
+  "time": "2026-10-12T08:09:11+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_035_energy_electrochem",
+  "question_ids": [
+    "H24-REG-APPLIED-14",
+    "H28-REG-APPLIED-12",
+    "R01-RET-APPLIED-12",
+    "H24-REG-APPLIED-17",
+    "H25-REG-APPLIED-11",
+    "H25-REG-APPLIED-12",
+    "H26-REG-APPLIED-13",
+    "H26-REG-APPLIED-15",
+    "H29-REG-APPLIED-07",
+    "R03-REG-APPLIED-06",
+    "R04-REG-APPLIED-15",
+    "R07-REG-APPLIED-10"
+  ],
+  "source_images": 11,
+  "initial_independent_matches": 12,
+  "corrected_verified": 8,
+  "partial": 4,
+  "related_pairs_added": 7,
+  "related_pairs_total": 223,
+  "primary_references_added": 8,
+  "concepts_added": 8,
+  "concept_total": 260,
+  "canonical_counts": {
+    "recorded_at": "2026-10-12T08:09:11+09:00",
+    "registered": 1270,
+    "classification_verified": 683,
+    "summary_verified": 649,
+    "corrected_verified": 496,
+    "corrected_partial": 153,
+    "solution_drafts": 649,
+    "solution_verified": 0,
+    "manual_required": 774,
+    "subject_drafts": {
+      "BASIC": 196,
+      "APT": 147,
+      "APPLIED": 306
+    }
+  },
+  "pdf": {
+    "pages": 845,
+    "bytes": 4212742,
+    "visual_review_pages": [
+      506,
+      507,
+      541,
+      542,
+      543,
+      544,
+      546,
+      547,
+      557,
+      558,
+      559,
+      560,
+      561,
+      562,
+      563,
+      572,
+      836,
+      837
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draft・再生成後初期・1270ラベル監査成功。LuaLaTeX成功。18実画像で理論・全5候補・省略条件・参考文献の表示を確認。",
+  "risks": [
+    "4部分校正。標準還元電位の媒体、鉛電池の電流効率と質量収支、生成熱の符号慣例、熱電現象の形状依存条件を保持。",
+    "Astra未査読、621問未執筆、最終監査未実装。"
+  ],
+  "next": "S7_036地球内部・海洋18問。17原典画像と公式前独立初回を保存し18一致。全1270問・全章・頻出分析まで継続。"
+}

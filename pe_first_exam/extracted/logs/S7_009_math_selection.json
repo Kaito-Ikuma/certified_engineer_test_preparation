@@ -1,0 +1,147 @@
+[
+  {
+    "question_id": "H23-REG-BASIC-3-5",
+    "page": "11",
+    "image": "extracted/pages/H23/basic/page_011.png"
+  },
+  {
+    "question_id": "H24-REG-BASIC-3-3",
+    "page": "9",
+    "image": "extracted/pages/H24/basic/page_009.png"
+  },
+  {
+    "question_id": "H24-REG-BASIC-3-4",
+    "page": "10",
+    "image": "extracted/pages/H24/basic/page_010.png"
+  },
+  {
+    "question_id": "H25-REG-BASIC-3-4",
+    "page": "13",
+    "image": "extracted/pages/H25/basic/page_013.png"
+  },
+  {
+    "question_id": "H25-REG-BASIC-3-6",
+    "page": "14",
+    "image": "extracted/pages/H25/basic/page_014.png"
+  },
+  {
+    "question_id": "H26-REG-BASIC-3-1",
+    "page": "9",
+    "image": "extracted/pages/H26/basic/page_009.png"
+  },
+  {
+    "question_id": "H26-REG-BASIC-3-4",
+    "page": "10",
+    "image": "extracted/pages/H26/basic/page_010.png"
+  },
+  {
+    "question_id": "H28-REG-BASIC-3-1",
+    "page": "12",
+    "image": "extracted/pages/H28/basic/page_012.png"
+  },
+  {
+    "question_id": "H28-REG-BASIC-3-2",
+    "page": "12",
+    "image": "extracted/pages/H28/basic/page_012.png"
+  },
+  {
+    "question_id": "H29-REG-BASIC-3-1",
+    "page": "11",
+    "image": "extracted/pages/H29/basic/page_011.png"
+  },
+  {
+    "question_id": "H29-REG-BASIC-3-2",
+    "page": "11",
+    "image": "extracted/pages/H29/basic/page_011.png"
+  },
+  {
+    "question_id": "H30-REG-BASIC-3-2",
+    "page": "11",
+    "image": "extracted/pages/H30/basic/page_011.png"
+  },
+  {
+    "question_id": "H30-REG-BASIC-3-3",
+    "page": "12",
+    "image": "extracted/pages/H30/basic/page_012.png"
+  },
+  {
+    "question_id": "R01-REG-BASIC-3-1",
+    "page": "12",
+    "image": "extracted/pages/R01/basic/page_012.png"
+  },
+  {
+    "question_id": "R01-REG-BASIC-3-2",
+    "page": "12",
+    "image": "extracted/pages/R01/basic/page_012.png"
+  },
+  {
+    "question_id": "R01-RET-BASIC-3-1",
+    "page": "11",
+    "image": "extracted/pages/R01_retest/basic/page_011.png"
+  },
+  {
+    "question_id": "R01-RET-BASIC-3-4",
+    "page": "12",
+    "image": "extracted/pages/R01_retest/basic/page_012.png"
+  },
+  {
+    "question_id": "R02-REG-BASIC-3-1",
+    "page": "11",
+    "image": "extracted/pages/R02/basic/page_011.png"
+  },
+  {
+    "question_id": "R02-REG-BASIC-3-2",
+    "page": "11",
+    "image": "extracted/pages/R02/basic/page_011.png"
+  },
+  {
+    "question_id": "R03-REG-BASIC-3-1",
+    "page": "11",
+    "image": "extracted/pages/R03/basic/page_011.png"
+  },
+  {
+    "question_id": "R03-REG-BASIC-3-2",
+    "page": "11",
+    "image": "extracted/pages/R03/basic/page_011.png"
+  },
+  {
+    "question_id": "R04-REG-BASIC-3-2",
+    "page": "10",
+    "image": "extracted/pages/R04/basic/page_010.png"
+  },
+  {
+    "question_id": "R05-REG-BASIC-3-1",
+    "page": "9",
+    "image": "extracted/pages/R05/basic/page_009.png"
+  },
+  {
+    "question_id": "R05-REG-BASIC-3-2",
+    "page": "9",
+    "image": "extracted/pages/R05/basic/page_009.png"
+  },
+  {
+    "question_id": "R06-REG-BASIC-3-1",
+    "page": "10",
+    "image": "extracted/pages/R06/basic/page_010.png"
+  },
+  {
+    "question_id": "R06-REG-BASIC-3-2",
+    "page": "10",
+    "image": "extracted/pages/R06/basic/page_010.png"
+  },
+  {
+    "question_id": "R07-REG-BASIC-3-1",
+    "page": "8",
+    "image": "extracted/pages/R07/basic/page_008.png"
+  },
+  {
+    "question_id": "R07-REG-BASIC-3-2",
+    "page": "8",
+    "image": "extracted/pages/R07/basic/page_008.png"
+  },
+  {
+    "question_id": "R07-REG-BASIC-3-3",
+    "page": "9",
+    "image": "extracted/pages/R07/basic/page_009.png"
+  }
+]

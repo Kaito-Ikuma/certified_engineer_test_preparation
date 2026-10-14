@@ -1,0 +1,44 @@
+{
+  "stem": "組換えDNA技術での発現、PCR増幅率、制限酵素の期待間隔、電気泳動方向を判定する。",
+  "conditions": {
+    "方向": "最も適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "大腸菌による組換えインスリン合成の成功は1990年代後半。",
+      "verdict": "不適切",
+      "reason": "組換えヒトインスリンは1978年の製法開発、1982年の米承認であり、1990年代後半ではない。"
+    },
+    "2": {
+      "value": "理想的PCRで30回反復すると鋳型DNAは30倍。",
+      "verdict": "不適切",
+      "reason": "完全な増幅が各回続く理想なら指数増幅で2の30乗。実反応の効率・枯渇を含む定数倍30ではない。"
+    },
+    "3": {
+      "value": "翻訳領域が同じ組織のゲノムライブラリにあってもcDNAにない場合がある。",
+      "verdict": "最適",
+      "reason": "その組織・採取時点で当該遺伝子が発現していなければRNA由来cDNAにはない。ゲノムに領域が存在することと転写は別。"
+    },
+    "4": {
+      "value": "EcoRIの6塩基認識で切断後は全て正確に\\(4^6\\)塩基対。",
+      "verdict": "不適切",
+      "reason": "独立・等確率の4塩基というランダムモデルで認識配列の出現確率は1/4096にすぎず、各断片の長さを固定しない。実ゲノムの塩基偏り・配列相関も別である。"
+    },
+    "5": {
+      "value": "DNAはゲル電気泳動で陰極へ移動する。",
+      "verdict": "不適切",
+      "reason": "通常の緩衝液でDNAのリン酸骨格は負に帯電するため陽極へ進む。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_016.png"
+  ],
+  "question_id": "R01-RET-BASIC-4-6",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "16",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "bd6fc006b79301f0be6cefff4583ab90d1657161a162ec3b2528e0bda836d063",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

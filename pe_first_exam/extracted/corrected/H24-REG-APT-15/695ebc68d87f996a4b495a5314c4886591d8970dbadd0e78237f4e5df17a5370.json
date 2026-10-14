@@ -1,0 +1,45 @@
+{
+  "stem": "期待と異なる測定結果の検証と相談。",
+  "conditions": {
+    "状況": "企業Cの期待と違う夜間自動測定、装置故障、再測定不能、報告期限。",
+    "判断": "データの妥当性が未確定であり、期待との差だけでは除外理由にならない。"
+  },
+  "choices": {
+    "1": {
+      "value": "未確認の新データを期限に合わせ提出",
+      "verdict": "不適切",
+      "reason": "検証できていないデータの条件と不確かさを確認せず、期限だけで結論を急ぐ。"
+    },
+    "2": {
+      "value": "新データを除外して従来の予測どおり報告",
+      "verdict": "不適切",
+      "reason": "期待と違うこと自体は除外の科学的理由にならない。"
+    },
+    "3": {
+      "value": "予測から作った値を実測として報告",
+      "verdict": "不適切",
+      "reason": "予測値と観測値を偽って同一視する。"
+    },
+    "4": {
+      "value": "将来の契約を優先して新データを伏せる",
+      "verdict": "不適切",
+      "reason": "事業上の都合を研究結果の取捨選択の根拠にしている。"
+    },
+    "5": {
+      "value": "装置の修理見通しを調べ教授と協議",
+      "verdict": "条件内で適切",
+      "reason": "再測定の可能性、納期、データ品質を整理して判断し、結論の限界を伝える。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/aptitude/page_013.png"
+  ],
+  "question_id": "H24-REG-APT-15",
+  "source_file": "sources/H24/aptitude.pdf",
+  "source_page": "13",
+  "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+  "raw_text_sha256": "c5ea5c6a2f4866e029150df1bbd0248e2ae6e1e7d349ab517ca4115dea4cd02a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

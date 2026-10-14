@@ -1,0 +1,45 @@
+{
+  "stem": "分子・結晶・錯体の配位を比較する。",
+  "conditions": {
+    "判断対象": "分子・結晶・錯体の配位を比較する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "白リンP4は正四面体",
+      "verdict": "選ばない候補",
+      "reason": "P4の4原子の分子構造。"
+    },
+    "2": {
+      "value": "Bは12頂点二十面体単位",
+      "verdict": "選ばない候補",
+      "reason": "代表的な結晶BのB12単位。全同素体の例外は留保。"
+    },
+    "3": {
+      "value": "CCl4/SiCl4は四面体",
+      "verdict": "選ばない候補",
+      "reason": "中心原子に4結合の分子形。"
+    },
+    "4": {
+      "value": "NaCl/CsClは同一結晶型",
+      "verdict": "選ぶ候補",
+      "reason": "NaCl6/CsCl8の配位とBravaisが違う。"
+    },
+    "5": {
+      "value": "deoxyheme5配位、oxyheme6配位",
+      "verdict": "選ばない候補",
+      "reason": "酸素結合で第6配位子が加わる代表近似。平面からの変位等もある。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "ホウ素全同素体の一般化とヘムの厳密理想配位には留保。原典の五配位/六配位と分子全構造を区別。",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_003.png"
+  ],
+  "question_id": "H29-REG-APPLIED-10",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "0e878d2d47fa58a6c441cd7b60e1778e5d014a636e75821cb83ab44a76151717",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

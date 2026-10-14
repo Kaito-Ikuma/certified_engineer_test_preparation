@@ -1,0 +1,45 @@
+{
+  "stem": "NaClとCsClの格子・配位を比較する。",
+  "conditions": {
+    "判断対象": "NaClとCsClの格子・配位を比較する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "O2/F2はσ分裂がπより大きい",
+      "verdict": "選ばない候補",
+      "reason": "指定2p軌道の重なりの向きの比較。"
+    },
+    "2": {
+      "value": "H2Oはsp3電子対で折れ線",
+      "verdict": "選ばない候補",
+      "reason": "結合対2と孤立対2のモデル。"
+    },
+    "3": {
+      "value": "NaClとCsClは同構造・同Madelung定数",
+      "verdict": "選ぶ候補",
+      "reason": "NaClはFCC基底で配位6、CsClは単純立方基底で配位8で異なる。"
+    },
+    "4": {
+      "value": "水素結合は多くの場合共有結合より弱い",
+      "verdict": "選ばない候補",
+      "reason": "典型的分子間水素結合の比較で、全化学種の普遍的上限とはしない。"
+    },
+    "5": {
+      "value": "分子性固体は一般に軟らかく低融点",
+      "verdict": "選ばない候補",
+      "reason": "相互作用の代表傾向で全分子固体の数値保証ではない。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "他候補は混成・典型結合強度・分子固体というモデル/一般傾向。全条件への無限定一般化は保持しない。",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_005.png"
+  ],
+  "question_id": "R03-REG-APPLIED-14",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "80754dc0aded3d2b08e3656206a54f3e59ac57a371533ce6cf9e33419c680127",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,2144 @@
+{
+  "batch_id": "S7_055_chemistry",
+  "reference_date": "2026-10-14",
+  "questions": [
+    {
+      "question_id": "H23-REG-BASIC-4-1",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "酸の強さ、同濃度pH、ガス発生を区別する。",
+      "summary": "酸の強さ、同濃度pH、ガス発生を区別する。",
+      "conditions": {
+        "条件": "原典の常圧又は常温・常圧。",
+        "濃度": "塩酸・酢酸各0.1 mol/L。",
+        "アンモニア生成": "硫酸アンモニウムとNaOH水溶液"
+      },
+      "choices": {
+        "1": {
+          "value": "酢酸＞炭酸＞フェノールの酸性度",
+          "verdict": "条件内で適切",
+          "reason": "水溶液の通常の比較ではこの順。炭酸は第一解離と、溶存CO2を含む見かけの扱いを区別する。"
+        },
+        "2": {
+          "value": "同濃度の塩酸と酢酸のpHが等しい",
+          "verdict": "不適切",
+          "reason": "塩酸は強酸、酢酸は弱酸。同じ分析濃度でも水素イオン濃度は等しくならない。"
+        },
+        "3": {
+          "value": "Na/K/Ca/Baの水酸化物は水で強塩基性",
+          "verdict": "条件内で適切",
+          "reason": "溶けた部分は強塩基として作用する。溶解度がすべて同じという意味ではない。"
+        },
+        "4": {
+          "value": "炭酸カルシウムと希塩酸からCO2",
+          "verdict": "条件内で適切",
+          "reason": "炭酸イオンへの酸の作用でCO2と水を生じる。"
+        },
+        "5": {
+          "value": "硫酸アンモニウムとNaOH水溶液からNH3",
+          "verdict": "条件内で適切",
+          "reason": "アンモニウムイオンからプロトンを取りアンモニアを生じる。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "炭酸の見かけの解離と強塩基の溶解度の限定を保持。すべての条件で同じ酸性度や溶解度を保証しない。",
+      "evidence": [
+        "extracted/pages/H23/basic/page_012.png"
+      ],
+      "core_concept": "酸の強さ、同濃度pH、ガス発生を区別する。",
+      "required_knowledge": "強酸と弱酸、分析濃度と解離、水酸化物の溶解度、炭酸塩、アンモニウム塩。",
+      "solution": "誤りは同じ0.1 mol/Lの塩酸と酢酸のpHが同じという肢。弱酸の部分解離では水素イオン濃度が分析濃度より小さい。炭酸塩への酸の作用とアンモニウム塩への強塩基の作用は別のガス発生反応として判断する。",
+      "answer_reason": "誤りは同じ0.1 mol/Lの塩酸と酢酸のpHが同じという肢。弱酸の部分解離では水素イオン濃度が分析濃度より小さい。炭酸塩への酸の作用とアンモニウム塩への強塩基の作用は別のガス発生反応として判断する。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。塩酸強酸と酢酸弱酸では同じ濃度でも水素イオン濃度が異なる。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "強酸と弱酸、分析濃度と解離、水酸化物の溶解度、炭酸塩、アンモニウム塩。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:acid"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "chem55_acid",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：酸の強さ、同濃度pH、ガス発生を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "purdue_acid_strength",
+        "chem55_hydrolysis"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-BASIC-4-2",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "酸の強さ、同濃度pH、ガス発生を区別する。",
+      "summary": "酸の強さ、同濃度pH、ガス発生を区別する。",
+      "conditions": {
+        "条件": "原典の常圧又は常温・常圧。",
+        "濃度": "塩酸・酢酸各0.1 mol/L。",
+        "アンモニア生成": "塩化アンモニウムとCa(OH)2の混合物を加熱"
+      },
+      "choices": {
+        "1": {
+          "value": "酢酸＞炭酸＞フェノールの酸性度",
+          "verdict": "条件内で適切",
+          "reason": "水溶液の通常の比較ではこの順。炭酸は第一解離と、溶存CO2を含む見かけの扱いを区別する。"
+        },
+        "2": {
+          "value": "Na/K/Ca/Baの水酸化物は水で強塩基性",
+          "verdict": "条件内で適切",
+          "reason": "溶けた部分は強塩基として作用する。溶解度がすべて同じという意味ではない。"
+        },
+        "3": {
+          "value": "炭酸カルシウムと希塩酸からCO2",
+          "verdict": "条件内で適切",
+          "reason": "炭酸イオンへの酸の作用でCO2と水を生じる。"
+        },
+        "4": {
+          "value": "塩化アンモニウムとCa(OH)2の混合物を加熱からNH3",
+          "verdict": "条件内で適切",
+          "reason": "アンモニウムイオンからプロトンを取りアンモニアを生じる。"
+        },
+        "5": {
+          "value": "同濃度の塩酸と酢酸のpHが等しい",
+          "verdict": "不適切",
+          "reason": "塩酸は強酸、酢酸は弱酸。同じ分析濃度でも水素イオン濃度は等しくならない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "炭酸の見かけの解離と強塩基の溶解度の限定を保持。すべての条件で同じ酸性度や溶解度を保証しない。",
+      "evidence": [
+        "extracted/pages/H30/basic/page_015.png"
+      ],
+      "core_concept": "酸の強さ、同濃度pH、ガス発生を区別する。",
+      "required_knowledge": "強酸と弱酸、分析濃度と解離、水酸化物の溶解度、炭酸塩、アンモニウム塩。",
+      "solution": "誤りは同じ0.1 mol/Lの塩酸と酢酸のpHが同じという肢。弱酸の部分解離では水素イオン濃度が分析濃度より小さい。炭酸塩への酸の作用とアンモニウム塩への強塩基の作用は別のガス発生反応として判断する。",
+      "answer_reason": "誤りは同じ0.1 mol/Lの塩酸と酢酸のpHが同じという肢。弱酸の部分解離では水素イオン濃度が分析濃度より小さい。炭酸塩への酸の作用とアンモニウム塩への強塩基の作用は別のガス発生反応として判断する。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。同濃度塩酸と酢酸のpHは異なる。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "強酸と弱酸、分析濃度と解離、水酸化物の溶解度、炭酸塩、アンモニウム塩。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:acid"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "chem55_acid",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：酸の強さ、同濃度pH、ガス発生を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "purdue_acid_strength",
+        "chem55_hydrolysis"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-4-1",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "酸の強さ、同濃度pH、ガス発生を区別する。",
+      "summary": "酸の強さ、同濃度pH、ガス発生を区別する。",
+      "conditions": {
+        "条件": "原典の常圧又は常温・常圧。",
+        "濃度": "塩酸・酢酸各0.1 mol/L。",
+        "アンモニア生成": "塩化アンモニウムとCa(OH)2の混合物を加熱"
+      },
+      "choices": {
+        "1": {
+          "value": "酢酸＞炭酸＞フェノールの酸性度",
+          "verdict": "条件内で適切",
+          "reason": "水溶液の通常の比較ではこの順。炭酸は第一解離と、溶存CO2を含む見かけの扱いを区別する。"
+        },
+        "2": {
+          "value": "同濃度の塩酸と酢酸のpHが等しい",
+          "verdict": "不適切",
+          "reason": "塩酸は強酸、酢酸は弱酸。同じ分析濃度でも水素イオン濃度は等しくならない。"
+        },
+        "3": {
+          "value": "Na/K/Ca/Baの水酸化物は水で強塩基性",
+          "verdict": "条件内で適切",
+          "reason": "溶けた部分は強塩基として作用する。溶解度がすべて同じという意味ではない。"
+        },
+        "4": {
+          "value": "炭酸カルシウムと希塩酸からCO2",
+          "verdict": "条件内で適切",
+          "reason": "炭酸イオンへの酸の作用でCO2と水を生じる。"
+        },
+        "5": {
+          "value": "塩化アンモニウムとCa(OH)2の混合物を加熱からNH3",
+          "verdict": "条件内で適切",
+          "reason": "アンモニウムイオンからプロトンを取りアンモニアを生じる。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "炭酸の見かけの解離と強塩基の溶解度の限定を保持。すべての条件で同じ酸性度や溶解度を保証しない。",
+      "evidence": [
+        "extracted/pages/R04/basic/page_014.png"
+      ],
+      "core_concept": "酸の強さ、同濃度pH、ガス発生を区別する。",
+      "required_knowledge": "強酸と弱酸、分析濃度と解離、水酸化物の溶解度、炭酸塩、アンモニウム塩。",
+      "solution": "誤りは同じ0.1 mol/Lの塩酸と酢酸のpHが同じという肢。弱酸の部分解離では水素イオン濃度が分析濃度より小さい。炭酸塩への酸の作用とアンモニウム塩への強塩基の作用は別のガス発生反応として判断する。",
+      "answer_reason": "誤りは同じ0.1 mol/Lの塩酸と酢酸のpHが同じという肢。弱酸の部分解離では水素イオン濃度が分析濃度より小さい。炭酸塩への酸の作用とアンモニウム塩への強塩基の作用は別のガス発生反応として判断する。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。塩酸強酸と酢酸弱酸で同濃度pH不同。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "強酸と弱酸、分析濃度と解離、水酸化物の溶解度、炭酸塩、アンモニウム塩。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:acid"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "chem55_acid",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：酸の強さ、同濃度pH、ガス発生を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "purdue_acid_strength",
+        "chem55_hydrolysis"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-4-1",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "ヘスの法則で五つの反応の発熱・吸熱を判定。",
+      "summary": "ヘスの法則で五つの反応の発熱・吸熱を判定。",
+      "conditions": {
+        "温度圧力": "25°C、1気圧。",
+        "CO": "黒鉛+1/2 O2→CO+111 kJ。",
+        "CO2": "黒鉛+O2→CO2+394 kJ。",
+        "水": "H2+1/2 O2→H2O(液)+286 kJ。"
+      },
+      "choices": {
+        "1": {
+          "value": "CO+H2→C+H2O(液)",
+          "verdict": "条件内で適切",
+          "reason": "ΔH=-286-(-111)=-175 kJ、発熱。"
+        },
+        "2": {
+          "value": "CO+H2O(液)→H2+CO2",
+          "verdict": "不適切",
+          "reason": "ΔH=-394-(-111-286)=+3 kJ、吸熱。水は液体。"
+        },
+        "3": {
+          "value": "CO2→CO+1/2 O2",
+          "verdict": "不適切",
+          "reason": "ΔH=-111-(-394)=+283 kJ、吸熱。"
+        },
+        "4": {
+          "value": "C+CO2→2CO",
+          "verdict": "不適切",
+          "reason": "ΔH=2(-111)-(-394)=+172 kJ、吸熱。"
+        },
+        "5": {
+          "value": "C+2H2O(液)→2H2+CO2",
+          "verdict": "不適切",
+          "reason": "ΔH=-394-2(-286)=+178 kJ、吸熱。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/basic/page_012.png"
+      ],
+      "core_concept": "ヘスの法則で五つの反応の発熱・吸熱を判定。",
+      "required_knowledge": "生成熱の符号、反応係数、元素の標準状態、生成エンタルピー差、相。",
+      "solution": "生成熱が発熱量として正に与えられているため、生成エンタルピーはCO=-111、CO2=-394、水(液)=-286 kJ/molと読む。生成物の総和から反応物の総和を引くと、五肢のΔHは順に-175、+3、+283、+172、+178 kJ。負の1のみ発熱。",
+      "answer_reason": "生成熱が発熱量として正に与えられているため、生成エンタルピーはCO=-111、CO2=-394、水(液)=-286 kJ/molと読む。生成物の総和から反応物の総和を引くと、五肢のΔHは順に-175、+3、+283、+172、+178 kJ。負の1のみ発熱。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。生成エンタルピー差は1が-175、2が+3、3が+283、4が+172、5が+178kJ。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "生成熱の符号、反応係数、元素の標準状態、生成エンタルピー差、相。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:hess"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "chem55_hess",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：ヘスの法則で五つの反応の発熱・吸熱を判定。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "openstax_hess"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-4-2",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "過剰NaOHで再溶解する両性水酸化物。",
+      "summary": "過剰NaOHで再溶解する両性水酸化物。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典26画像で確認。",
+        "時点": "平成24年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "Cu2+",
+          "verdict": "不適切",
+          "reason": "Cu(OH)2を生じるが、通常の過剰NaOHによる再溶解に対応しない。"
+        },
+        "2": {
+          "value": "Ag+",
+          "verdict": "不適切",
+          "reason": "通常はAg2Oを生じる。Alと同じ両性の再溶解ではない。"
+        },
+        "3": {
+          "value": "Al3+",
+          "verdict": "条件内で適切",
+          "reason": "Al(OH)3を生じ、過剰OH−で[Al(OH)4]−となって溶解。"
+        },
+        "4": {
+          "value": "Mg2+",
+          "verdict": "不適切",
+          "reason": "Mg(OH)2の沈殿はこの過剰NaOHの条件では再溶解しない。"
+        },
+        "5": {
+          "value": "Fe3+",
+          "verdict": "不適切",
+          "reason": "Fe(OH)3の沈殿はこの通常条件では再溶解しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/basic/page_012.png"
+      ],
+      "core_concept": "過剰NaOHで再溶解する両性水酸化物。",
+      "required_knowledge": "両性水酸化物、沈殿と溶解平衡、ヒドロキソ錯イオン。",
+      "solution": "最初に水酸化物が沈殿し、過剰の水酸化物イオンで溶けるという二段階を読む。Al3++3OH−→Al(OH)3、Al(OH)3+OH−→[Al(OH)4]−。両性のAlを選ぶ。別の錯形成剤で溶ける性質をNaOH添加の条件へ移さない。",
+      "answer_reason": "最初に水酸化物が沈殿し、過剰の水酸化物イオンで溶けるという二段階を読む。Al3++3OH−→Al(OH)3、Al(OH)3+OH−→[Al(OH)4]−。両性のAlを選ぶ。別の錯形成剤で溶ける性質をNaOH添加の条件へ移さない。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。Al水酸化物の両性による過剰OHで錯イオンとして再溶解。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "両性水酸化物、沈殿と溶解平衡、ヒドロキソ錯イオン。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:amphoteric"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "chem55_ampho",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：過剰NaOHで再溶解する両性水酸化物。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "chem55_ampho"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-4-1",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "過剰NaOHで再溶解する両性水酸化物。",
+      "summary": "過剰NaOHで再溶解する両性水酸化物。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典26画像で確認。",
+        "時点": "平成29年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "Ag+",
+          "verdict": "不適切",
+          "reason": "通常はAg2Oを生じる。Alと同じ両性の再溶解ではない。"
+        },
+        "2": {
+          "value": "Fe3+",
+          "verdict": "不適切",
+          "reason": "Fe(OH)3の沈殿はこの通常条件では再溶解しない。"
+        },
+        "3": {
+          "value": "Mg2+",
+          "verdict": "不適切",
+          "reason": "Mg(OH)2の沈殿はこの過剰NaOHの条件では再溶解しない。"
+        },
+        "4": {
+          "value": "Al3+",
+          "verdict": "条件内で適切",
+          "reason": "Al(OH)3を生じ、過剰OH−で[Al(OH)4]−となって溶解。"
+        },
+        "5": {
+          "value": "Cu2+",
+          "verdict": "不適切",
+          "reason": "Cu(OH)2を生じるが、通常の過剰NaOHによる再溶解に対応しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/basic/page_015.png"
+      ],
+      "core_concept": "過剰NaOHで再溶解する両性水酸化物。",
+      "required_knowledge": "両性水酸化物、沈殿と溶解平衡、ヒドロキソ錯イオン。",
+      "solution": "最初に水酸化物が沈殿し、過剰の水酸化物イオンで溶けるという二段階を読む。Al3++3OH−→Al(OH)3、Al(OH)3+OH−→[Al(OH)4]−。両性のAlを選ぶ。別の錯形成剤で溶ける性質をNaOH添加の条件へ移さない。",
+      "answer_reason": "最初に水酸化物が沈殿し、過剰の水酸化物イオンで溶けるという二段階を読む。Al3++3OH−→Al(OH)3、Al(OH)3+OH−→[Al(OH)4]−。両性のAlを選ぶ。別の錯形成剤で溶ける性質をNaOH添加の条件へ移さない。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。過剰NaOHでAl水酸化物が再溶解。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "両性水酸化物、沈殿と溶解平衡、ヒドロキソ錯イオン。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:amphoteric"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "chem55_ampho",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：過剰NaOHで再溶解する両性水酸化物。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "chem55_ampho"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-4-4",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "熱輸送の担い手と材料の乱れ・気孔。",
+      "summary": "熱輸送の担い手と材料の乱れ・気孔。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典26画像で確認。",
+        "時点": "平成24年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "高純度金属の電子による熱輸送",
+          "verdict": "条件内で適切",
+          "reason": "通常の金属では自由電子の寄与が大きい。"
+        },
+        "2": {
+          "value": "合金化で純金属より熱伝導率が低下",
+          "verdict": "条件内で適切",
+          "reason": "不純物や構造の乱れが輸送を散乱する一般的傾向。"
+        },
+        "3": {
+          "value": "非晶質は結晶質より熱伝導率が低い",
+          "verdict": "条件内で適切",
+          "reason": "同系材料の通常比較では乱れによるフォノン散乱が大きい。すべての別組成の比較ではない。"
+        },
+        "4": {
+          "value": "気孔率を増すと熱伝導率が増す",
+          "verdict": "不適切",
+          "reason": "低伝導の空隙を増す通常条件では有効熱伝導率は下がる。"
+        },
+        "5": {
+          "value": "結晶化率が高い高分子の熱伝導率は高い",
+          "verdict": "条件内で適切",
+          "reason": "同じ物質で規則性が増す一般的傾向。方向性や構造条件は別に検討する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "原典の合金・非晶質・結晶化率の記述は一般的傾向として限定。同組成・構造・温度の全称にはしない。",
+      "evidence": [
+        "extracted/pages/H24/basic/page_013.png"
+      ],
+      "core_concept": "熱輸送の担い手と材料の乱れ・気孔。",
+      "required_knowledge": "電子とフォノン、散乱、気孔率、有効熱伝導率、結晶化と方向性。",
+      "solution": "不適切4。金属は電子、絶縁性結晶は主に格子振動によって熱を運ぶ。乱れや不純物による散乱、低伝導の空隙は通常熱輸送を妨げる。高分子の結晶化率も構造の規則性に関わるが、任意の別物質間の大小へ拡張しない。",
+      "answer_reason": "不適切4。金属は電子、絶縁性結晶は主に格子振動によって熱を運ぶ。乱れや不純物による散乱、低伝導の空隙は通常熱輸送を妨げる。高分子の結晶化率も構造の規則性に関わるが、任意の別物質間の大小へ拡張しない。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。気孔率増加は一般的に熱伝導を下げる。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "電子とフォノン、散乱、気孔率、有効熱伝導率、結晶化と方向性。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:thermal"
+      ],
+      "discipline_id": "basic_4_3",
+      "concept_id": "chem55_thermal",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：熱輸送の担い手と材料の乱れ・気孔。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "aist_metal_thermal",
+        "openstax_thermal_conduction",
+        "chem55_polymer"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-4-4",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "熱輸送の担い手と材料の乱れ・気孔。",
+      "summary": "熱輸送の担い手と材料の乱れ・気孔。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典26画像で確認。",
+        "時点": "平成26年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "高純度金属の電子による熱輸送",
+          "verdict": "条件内で適切",
+          "reason": "通常の金属では自由電子の寄与が大きい。"
+        },
+        "2": {
+          "value": "合金化で純金属より熱伝導率が低下",
+          "verdict": "条件内で適切",
+          "reason": "不純物や構造の乱れが輸送を散乱する一般的傾向。"
+        },
+        "3": {
+          "value": "非晶質は結晶質より熱伝導率が低い",
+          "verdict": "条件内で適切",
+          "reason": "同系材料の通常比較では乱れによるフォノン散乱が大きい。すべての別組成の比較ではない。"
+        },
+        "4": {
+          "value": "気孔率を増すと熱伝導率が増す",
+          "verdict": "不適切",
+          "reason": "低伝導の空隙を増す通常条件では有効熱伝導率は下がる。"
+        },
+        "5": {
+          "value": "結晶化率が高い高分子の熱伝導率は高い",
+          "verdict": "条件内で適切",
+          "reason": "同じ物質で規則性が増す一般的傾向。方向性や構造条件は別に検討する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "原典の合金・非晶質・結晶化率の記述は一般的傾向として限定。同組成・構造・温度の全称にはしない。",
+      "evidence": [
+        "extracted/pages/H26/basic/page_014.png"
+      ],
+      "core_concept": "熱輸送の担い手と材料の乱れ・気孔。",
+      "required_knowledge": "電子とフォノン、散乱、気孔率、有効熱伝導率、結晶化と方向性。",
+      "solution": "不適切4。金属は電子、絶縁性結晶は主に格子振動によって熱を運ぶ。乱れや不純物による散乱、低伝導の空隙は通常熱輸送を妨げる。高分子の結晶化率も構造の規則性に関わるが、任意の別物質間の大小へ拡張しない。",
+      "answer_reason": "不適切4。金属は電子、絶縁性結晶は主に格子振動によって熱を運ぶ。乱れや不純物による散乱、低伝導の空隙は通常熱輸送を妨げる。高分子の結晶化率も構造の規則性に関わるが、任意の別物質間の大小へ拡張しない。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。気孔率増大により熱伝導率増大とする向きが逆。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "電子とフォノン、散乱、気孔率、有効熱伝導率、結晶化と方向性。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:thermal"
+      ],
+      "discipline_id": "basic_4_3",
+      "concept_id": "chem55_thermal",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：熱輸送の担い手と材料の乱れ・気孔。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "aist_metal_thermal",
+        "openstax_thermal_conduction",
+        "chem55_polymer"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-4-1",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "発熱のアンモニア合成の平衡条件。",
+      "summary": "発熱のアンモニア合成の平衡条件。",
+      "conditions": {
+        "式": "N2(g)+3H2(g)=2NH3(g)+92 kJ。",
+        "数量": "原料気体4molに対し生成物2mol。"
+      },
+      "choices": {
+        "1": {
+          "value": "高温・高圧",
+          "verdict": "不適切",
+          "reason": "圧力の作用は有利だが、高温は平衡を吸熱の分解側へ。"
+        },
+        "2": {
+          "value": "低温・高圧",
+          "verdict": "条件内で適切",
+          "reason": "発熱の生成側へ低温が有利。気体4→2molのため高圧も有利。"
+        },
+        "3": {
+          "value": "高温・低圧",
+          "verdict": "不適切",
+          "reason": "温度・圧力とも生成側に不利。"
+        },
+        "4": {
+          "value": "低温・低圧",
+          "verdict": "不適切",
+          "reason": "低温は有利だが低圧は気体モル数の多い原料側へ。"
+        },
+        "5": {
+          "value": "変化なし",
+          "verdict": "不適切",
+          "reason": "温度は平衡定数、圧力は気体の平衡組成へ影響する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "温度と圧力が平衡に及ぼす方向を扱う問題。原典の「できるだけ」等を、速度・相変化・非理想性を無視した実装指示にしない。",
+      "evidence": [
+        "extracted/pages/H25/basic/page_015.png"
+      ],
+      "core_concept": "発熱のアンモニア合成の平衡条件。",
+      "required_knowledge": "ルシャトリエの原理、発熱と平衡定数、分圧、反応速度と平衡収率。",
+      "solution": "N2+3H2→2NH3は指定の式で92 kJ発熱し、気体の総モル数が4から2へ減る。平衡収率は低温・高圧により増す。温度を下げると反応速度が遅くなるため、工業運転で単純に無限低温にすればよいという意味ではない。",
+      "answer_reason": "N2+3H2→2NH3は指定の式で92 kJ発熱し、気体の総モル数が4から2へ減る。平衡収率は低温・高圧により増す。温度を下げると反応速度が遅くなるため、工業運転で単純に無限低温にすればよいという意味ではない。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。発熱で気体4mol→2mol、低温高圧が平衡を生成側へ。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "ルシャトリエの原理、発熱と平衡定数、分圧、反応速度と平衡収率。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:equilibrium"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "chem55_equilibrium",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：発熱のアンモニア合成の平衡条件。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "chem55_equilibrium"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-4-1",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "発熱のアンモニア合成の平衡条件。",
+      "summary": "発熱のアンモニア合成の平衡条件。",
+      "conditions": {
+        "式": "N2(g)+3H2(g)=2NH3(g)+92 kJ。",
+        "数量": "原料気体4molに対し生成物2mol。"
+      },
+      "choices": {
+        "1": {
+          "value": "変化なし",
+          "verdict": "不適切",
+          "reason": "温度は平衡定数、圧力は気体の平衡組成へ影響する。"
+        },
+        "2": {
+          "value": "低温・低圧",
+          "verdict": "不適切",
+          "reason": "低温は有利だが低圧は気体モル数の多い原料側へ。"
+        },
+        "3": {
+          "value": "高温・高圧",
+          "verdict": "不適切",
+          "reason": "圧力の作用は有利だが、高温は平衡を吸熱の分解側へ。"
+        },
+        "4": {
+          "value": "低温・高圧",
+          "verdict": "条件内で適切",
+          "reason": "発熱の生成側へ低温が有利。気体4→2molのため高圧も有利。"
+        },
+        "5": {
+          "value": "高温・低圧",
+          "verdict": "不適切",
+          "reason": "温度・圧力とも生成側に不利。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "温度と圧力が平衡に及ぼす方向を扱う問題。原典の「できるだけ」等を、速度・相変化・非理想性を無視した実装指示にしない。",
+      "evidence": [
+        "extracted/pages/H28/basic/page_017.png"
+      ],
+      "core_concept": "発熱のアンモニア合成の平衡条件。",
+      "required_knowledge": "ルシャトリエの原理、発熱と平衡定数、分圧、反応速度と平衡収率。",
+      "solution": "N2+3H2→2NH3は指定の式で92 kJ発熱し、気体の総モル数が4から2へ減る。平衡収率は低温・高圧により増す。温度を下げると反応速度が遅くなるため、工業運転で単純に無限低温にすればよいという意味ではない。",
+      "answer_reason": "N2+3H2→2NH3は指定の式で92 kJ発熱し、気体の総モル数が4から2へ減る。平衡収率は低温・高圧により増す。温度を下げると反応速度が遅くなるため、工業運転で単純に無限低温にすればよいという意味ではない。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。低温高圧が平衡収率を上げる。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "ルシャトリエの原理、発熱と平衡定数、分圧、反応速度と平衡収率。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:equilibrium"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "chem55_equilibrium",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：発熱のアンモニア合成の平衡条件。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "chem55_equilibrium"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-4-2",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "中和当量と残る酸・塩基、塩の加水分解。",
+      "summary": "中和当量と残る酸・塩基、塩の加水分解。",
+      "conditions": {
+        "各体積": "すべて1 L。",
+        "濃度": "H2SO4 1.0、NaOH 2.0、HCl 1.0、アンモニア水2.0、酢酸1.0 mol/L。",
+        "注記": "原典NH4OH表記を、実際の水中のNH3/NH4+/OH−の平衡と区別。"
+      },
+      "choices": {
+        "1": {
+          "value": "硫酸とNaOH",
+          "verdict": "不適切",
+          "reason": "酸2当量と塩基2当量が中和し硫酸ナトリウムとなる。通常の中性近似又は硫酸イオンの弱い塩基性で扱い、酸性の組合せではない。"
+        },
+        "2": {
+          "value": "硫酸とアンモニア",
+          "verdict": "条件内で適切",
+          "reason": "H2SO4 1molとNH3 2molから硫酸アンモニウム。NH4+の酸性が支配する。"
+        },
+        "3": {
+          "value": "NaOHと塩酸",
+          "verdict": "不適切",
+          "reason": "塩基2molに酸1molなのでOH−が過剰。"
+        },
+        "4": {
+          "value": "NaOHと酢酸",
+          "verdict": "不適切",
+          "reason": "塩基2molに酸1molなのでOH−が過剰。"
+        },
+        "5": {
+          "value": "アンモニアと酢酸",
+          "verdict": "不適切",
+          "reason": "NH3 2molに酢酸1mol。NH3とNH4+が残り塩基性の緩衝系。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_015.png"
+      ],
+      "core_concept": "中和当量と残る酸・塩基、塩の加水分解。",
+      "required_knowledge": "酸塩基当量、強弱と加水分解、過剰量、緩衝溶液。",
+      "solution": "すべて1 Lなので濃度からモル数を計算する。硫酸は2酸当量、塩酸・酢酸は1、NaOHは2塩基当量、アンモニアは2。硫酸とアンモニアだけは当量中和後に弱塩基の共役酸NH4+が残り、酸性となる2。他の肢は強塩基過剰又は非酸性の塩。",
+      "answer_reason": "すべて1 Lなので濃度からモル数を計算する。硫酸は2酸当量、塩酸・酢酸は1、NaOHは2塩基当量、アンモニアは2。硫酸とアンモニアだけは当量中和後に弱塩基の共役酸NH4+が残り、酸性となる2。他の肢は強塩基過剰又は非酸性の塩。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。硫酸2酸当量とNH3 2塩基当量で硫酸アンモニウム、酸性。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "酸塩基当量、強弱と加水分解、過剰量、緩衝溶液。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:neutralization"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "chem55_neutral",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：中和当量と残る酸・塩基、塩の加水分解。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "chem55_hydrolysis"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-4-4",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "不動態と海水の局部腐食を区別する。",
+      "summary": "不動態と海水の局部腐食を区別する。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典26画像で確認。",
+        "時点": "平成25年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "気体中の乾食と液体中の湿食",
+          "verdict": "条件内で適切",
+          "reason": "化学的又は電気化学的な環境との反応を区別する。"
+        },
+        "2": {
+          "value": "表面酸化物による不動態化",
+          "verdict": "条件内で適切",
+          "reason": "強固な膜が反応の速度を抑える。イオン化傾向だけでは耐食性を決めない。"
+        },
+        "3": {
+          "value": "不動態があるから一般に海水用途へ適する",
+          "verdict": "不適切",
+          "reason": "塩化物は孔食やすきま腐食等を生み得る。鋼種・温度・流動等によって選ぶ。"
+        },
+        "4": {
+          "value": "腐食と引張応力で強さ以下でも割れる",
+          "verdict": "条件内で適切",
+          "reason": "応力腐食割れでは特定の材料・環境・引張応力が関わる。"
+        },
+        "5": {
+          "value": "侵入水素が金属を脆化",
+          "verdict": "条件内で適切",
+          "reason": "水素の侵入・拡散・欠陥との相互作用が延性や破壊へ影響する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "炭素鋼との相対適性は鋼種・環境・防食条件で変わるため原典の一般化を留保。全ステンレスが海水で使用不可とはしない。",
+      "evidence": [
+        "extracted/pages/H25/basic/page_017.png"
+      ],
+      "core_concept": "不動態と海水の局部腐食を区別する。",
+      "required_knowledge": "不動態、塩化物、孔食・すきま腐食、応力腐食割れ、水素脆化。",
+      "solution": "不適切3。不動態の形成は耐食性の理由だが、海水の塩化物中で局部腐食や応力腐食割れが起こり得る。ステンレスを一括して海水に適すると結論しない。一方、海水用の適切な高合金鋼が存在しないという逆の全称もしない。",
+      "answer_reason": "不適切3。不動態の形成は耐食性の理由だが、海水の塩化物中で局部腐食や応力腐食割れが起こり得る。ステンレスを一括して海水に適すると結論しない。一方、海水用の適切な高合金鋼が存在しないという逆の全称もしない。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。不動態があっても塩化物中の局部腐食に注意し海水適性を一律に断定しない。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "不動態、塩化物、孔食・すきま腐食、応力腐食割れ、水素脆化。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:corrosion"
+      ],
+      "discipline_id": "basic_4_3",
+      "concept_id": "chem55_corrosion",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：不動態と海水の局部腐食を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "chem55_corrosion",
+        "nims_hydrogen2024"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-BASIC-4-3",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "腐食の定義とアルミニウムの不動態。",
+      "summary": "腐食の定義とアルミニウムの不動態。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典26画像で確認。",
+        "時点": "平成30年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "力学的減量",
+          "verdict": "不適切",
+          "reason": "力学的な摩耗と腐食の化学・電気化学的反応を区別する。"
+        },
+        "2": {
+          "value": "局部腐食なし",
+          "verdict": "不適切",
+          "reason": "孔食・すきま腐食などの局部腐食がある。"
+        },
+        "3": {
+          "value": "Al酸化膜で不動態化",
+          "verdict": "条件内で適切",
+          "reason": "Al表面の酸化物が保護膜として働く。膜を壊す環境での腐食まで否定しない。"
+        },
+        "4": {
+          "value": "Ni5%以上でステンレス",
+          "verdict": "不適切",
+          "reason": "ステンレスの基本はCr含有量。Niをこの割合含むことが定義ではない。"
+        },
+        "5": {
+          "value": "温度依存なし",
+          "verdict": "不適切",
+          "reason": "温度は反応・拡散・皮膜の挙動へ影響する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/basic/page_015.png"
+      ],
+      "core_concept": "腐食の定義とアルミニウムの不動態。",
+      "required_knowledge": "化学的・電気化学的腐食、局部腐食、皮膜、Crを含むステンレス。",
+      "solution": "適切なのはAlの酸化膜による不動態化。腐食は摩耗と異なり、局部的にも進み、環境・温度に依存する。ステンレスの定義をNiやCuの5%へ置き換えない。",
+      "answer_reason": "適切なのはAlの酸化膜による不動態化。腐食は摩耗と異なり、局部的にも進み、環境・温度に依存する。ステンレスの定義をNiやCuの5%へ置き換えない。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。Alの酸化物による不動態、局部腐食あり、Crがステンレス基本。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "化学的・電気化学的腐食、局部腐食、皮膜、Crを含むステンレス。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:corrosion"
+      ],
+      "discipline_id": "basic_4_3",
+      "concept_id": "chem55_corrosion",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：腐食の定義とアルミニウムの不動態。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "stainless_definition2022",
+        "chem55_corrosion"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-BASIC-4-4",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "stem": "腐食の定義とアルミニウムの不動態。",
+      "summary": "腐食の定義とアルミニウムの不動態。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典26画像で確認。",
+        "時点": "令和5年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "Al酸化膜で不動態化",
+          "verdict": "条件内で適切",
+          "reason": "Al表面の酸化物が保護膜として働く。膜を壊す環境での腐食まで否定しない。"
+        },
+        "2": {
+          "value": "Cu5%以上でステンレス",
+          "verdict": "不適切",
+          "reason": "Cuをこの割合含むことが定義ではない。基本となるのはCr。"
+        },
+        "3": {
+          "value": "温度依存なし",
+          "verdict": "不適切",
+          "reason": "温度は反応・拡散・皮膜の挙動へ影響する。"
+        },
+        "4": {
+          "value": "局部腐食なし",
+          "verdict": "不適切",
+          "reason": "孔食・すきま腐食などの局部腐食がある。"
+        },
+        "5": {
+          "value": "力学的減量",
+          "verdict": "不適切",
+          "reason": "力学的な摩耗と腐食の化学・電気化学的反応を区別する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/basic/page_014.png"
+      ],
+      "core_concept": "腐食の定義とアルミニウムの不動態。",
+      "required_knowledge": "化学的・電気化学的腐食、局部腐食、皮膜、Crを含むステンレス。",
+      "solution": "適切なのはAlの酸化膜による不動態化。腐食は摩耗と異なり、局部的にも進み、環境・温度に依存する。ステンレスの定義をNiやCuの5%へ置き換えない。",
+      "answer_reason": "適切なのはAlの酸化膜による不動態化。腐食は摩耗と異なり、局部的にも進み、環境・温度に依存する。ステンレスの定義をNiやCuの5%へ置き換えない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。Al不動態、ステンレスCu5%ではない、環境依存と局部腐食。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "化学的・電気化学的腐食、局部腐食、皮膜、Crを含むステンレス。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:corrosion"
+      ],
+      "discipline_id": "basic_4_3",
+      "concept_id": "chem55_corrosion",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：腐食の定義とアルミニウムの不動態。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "stainless_definition2022",
+        "chem55_corrosion"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-4-6",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "酸素と二酸化炭素から二つの代謝量を求める。",
+      "summary": "酸素と二酸化炭素から二つの代謝量を求める。",
+      "conditions": {
+        "好気呼吸": "C6H12O6+6O2+6H2O→6CO2+12H2O。",
+        "発酵": "C6H12O6→2C2H5OH+2CO2。",
+        "指定量": "酸素3mol吸収、CO2 7mol発生。"
+      },
+      "choices": {
+        "1": {
+          "value": "1:1",
+          "verdict": "不適切",
+          "reason": "好気呼吸のグルコースx、発酵のyとする。酸素消費6x=3よりx=0.5 mol。CO2総発生6x+2y=7よりy=2 mol。よってx:y=0.5:2=1:4の3。 計算結果に一致しない。"
+        },
+        "2": {
+          "value": "1:2",
+          "verdict": "不適切",
+          "reason": "好気呼吸のグルコースx、発酵のyとする。酸素消費6x=3よりx=0.5 mol。CO2総発生6x+2y=7よりy=2 mol。よってx:y=0.5:2=1:4の3。 計算結果に一致しない。"
+        },
+        "3": {
+          "value": "1:4",
+          "verdict": "条件内で適切",
+          "reason": "好気呼吸のグルコースx、発酵のyとする。酸素消費6x=3よりx=0.5 mol。CO2総発生6x+2y=7よりy=2 mol。よってx:y=0.5:2=1:4の3。 計算結果と一致。"
+        },
+        "4": {
+          "value": "1:6",
+          "verdict": "不適切",
+          "reason": "好気呼吸のグルコースx、発酵のyとする。酸素消費6x=3よりx=0.5 mol。CO2総発生6x+2y=7よりy=2 mol。よってx:y=0.5:2=1:4の3。 計算結果に一致しない。"
+        },
+        "5": {
+          "value": "1:7",
+          "verdict": "不適切",
+          "reason": "好気呼吸のグルコースx、発酵のyとする。酸素消費6x=3よりx=0.5 mol。CO2総発生6x+2y=7よりy=2 mol。よってx:y=0.5:2=1:4の3。 計算結果に一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_018.png",
+        "extracted/pages/H25/basic/page_019.png"
+      ],
+      "core_concept": "酸素と二酸化炭素から二つの代謝量を求める。",
+      "required_knowledge": "反応係数とモル量、二経路の物質収支、比と絶対量。",
+      "solution": "好気呼吸のグルコースx、発酵のyとする。酸素消費6x=3よりx=0.5 mol。CO2総発生6x+2y=7よりy=2 mol。よってx:y=0.5:2=1:4の3。",
+      "answer_reason": "好気呼吸のグルコースx、発酵のyとする。酸素消費6x=3よりx=0.5 mol。CO2総発生6x+2y=7よりy=2 mol。よってx:y=0.5:2=1:4の3。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。6x=3よりx=.5、6x+2y=7よりy=2、比1:4。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "反応係数とモル量、二経路の物質収支、比と絶対量。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:stoichiometry"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "chem55_stoich",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：酸素と二酸化炭素から二つの代謝量を求める。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "chem55_stoich"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-BASIC-4-5",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "stem": "酸素と二酸化炭素から二つの代謝量を求める。",
+      "summary": "酸素と二酸化炭素から二つの代謝量を求める。",
+      "conditions": {
+        "好気呼吸": "C6H12O6+6O2+6H2O→6CO2+12H2O。",
+        "発酵": "C6H12O6→2C2H5OH+2CO2。",
+        "指定量": "酸素2mol吸収、グルコースの好気:発酵=1:6。"
+      },
+      "choices": {
+        "1": {
+          "value": "3 mol",
+          "verdict": "不適切",
+          "reason": "好気呼吸のグルコースxは6x=2より1/3 mol。発酵は比1:6からy=2 mol。CO2は6x+2y=2+4=6 molの3。 計算結果に一致しない。"
+        },
+        "2": {
+          "value": "4 mol",
+          "verdict": "不適切",
+          "reason": "好気呼吸のグルコースxは6x=2より1/3 mol。発酵は比1:6からy=2 mol。CO2は6x+2y=2+4=6 molの3。 計算結果に一致しない。"
+        },
+        "3": {
+          "value": "6 mol",
+          "verdict": "条件内で適切",
+          "reason": "好気呼吸のグルコースxは6x=2より1/3 mol。発酵は比1:6からy=2 mol。CO2は6x+2y=2+4=6 molの3。 計算結果と一致。"
+        },
+        "4": {
+          "value": "8 mol",
+          "verdict": "不適切",
+          "reason": "好気呼吸のグルコースxは6x=2より1/3 mol。発酵は比1:6からy=2 mol。CO2は6x+2y=2+4=6 molの3。 計算結果に一致しない。"
+        },
+        "5": {
+          "value": "12 mol",
+          "verdict": "不適切",
+          "reason": "好気呼吸のグルコースxは6x=2より1/3 mol。発酵は比1:6からy=2 mol。CO2は6x+2y=2+4=6 molの3。 計算結果に一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/basic/page_018.png"
+      ],
+      "core_concept": "酸素と二酸化炭素から二つの代謝量を求める。",
+      "required_knowledge": "反応係数とモル量、二経路の物質収支、比と絶対量。",
+      "solution": "好気呼吸のグルコースxは6x=2より1/3 mol。発酵は比1:6からy=2 mol。CO2は6x+2y=2+4=6 molの3。",
+      "answer_reason": "好気呼吸のグルコースxは6x=2より1/3 mol。発酵は比1:6からy=2 mol。CO2は6x+2y=2+4=6 molの3。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。6x=2,x=1/3,y=2、CO2=6x+2y=6mol。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "反応係数とモル量、二経路の物質収支、比と絶対量。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:stoichiometry"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "chem55_stoich",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：酸素と二酸化炭素から二つの代謝量を求める。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "chem55_stoich"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-4-3",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "合金の質量組成を物質量分率へ変換する。",
+      "summary": "合金の質量組成を物質量分率へ変換する。",
+      "conditions": {
+        "質量百分率": "Al 96%、Cu 4%。",
+        "原子量": "Al27.0、Cu63.5。",
+        "答案列": "Al / Cuの百分率。"
+      },
+      "choices": {
+        "1": {
+          "value": "91.1 / 8.92",
+          "verdict": "不適切",
+          "reason": "合金100gを仮定し、Alは96/27.0=3.555556 mol、Cuは4/63.5=0.062992 mol。合計で割り、Al=98.2592%、Cu=1.7408%。質量百分率をそのまま原子百分率として使わず、原子量で割ってから規格化する。 計算結果に一致しない。"
+        },
+        "2": {
+          "value": "93.5 / 6.51",
+          "verdict": "不適切",
+          "reason": "合金100gを仮定し、Alは96/27.0=3.555556 mol、Cuは4/63.5=0.062992 mol。合計で割り、Al=98.2592%、Cu=1.7408%。質量百分率をそのまま原子百分率として使わず、原子量で割ってから規格化する。 計算結果に一致しない。"
+        },
+        "3": {
+          "value": "96.0 / 4.00",
+          "verdict": "不適切",
+          "reason": "合金100gを仮定し、Alは96/27.0=3.555556 mol、Cuは4/63.5=0.062992 mol。合計で割り、Al=98.2592%、Cu=1.7408%。質量百分率をそのまま原子百分率として使わず、原子量で割ってから規格化する。 計算結果に一致しない。"
+        },
+        "4": {
+          "value": "97.9 / 2.11",
+          "verdict": "不適切",
+          "reason": "合金100gを仮定し、Alは96/27.0=3.555556 mol、Cuは4/63.5=0.062992 mol。合計で割り、Al=98.2592%、Cu=1.7408%。質量百分率をそのまま原子百分率として使わず、原子量で割ってから規格化する。 計算結果に一致しない。"
+        },
+        "5": {
+          "value": "98.3 / 1.74",
+          "verdict": "条件内で適切",
+          "reason": "合金100gを仮定し、Alは96/27.0=3.555556 mol、Cuは4/63.5=0.062992 mol。合計で割り、Al=98.2592%、Cu=1.7408%。質量百分率をそのまま原子百分率として使わず、原子量で割ってから規格化する。 計算結果と一致。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/basic/page_012.png"
+      ],
+      "core_concept": "合金の質量組成を物質量分率へ変換する。",
+      "required_knowledge": "質量分率、物質量、原子量、物質量分率の規格化。",
+      "solution": "合金100gを仮定し、Alは96/27.0=3.555556 mol、Cuは4/63.5=0.062992 mol。合計で割り、Al=98.2592%、Cu=1.7408%。質量百分率をそのまま原子百分率として使わず、原子量で割ってから規格化する。",
+      "answer_reason": "合金100gを仮定し、Alは96/27.0=3.555556 mol、Cuは4/63.5=0.062992 mol。合計で割り、Al=98.2592%、Cu=1.7408%。質量百分率をそのまま原子百分率として使わず、原子量で割ってから規格化する。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。96/27と4/63.5のモル比、98.26/1.74at%。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "質量分率、物質量、原子量、物質量分率の規格化。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:fraction"
+      ],
+      "discipline_id": "basic_4_3",
+      "concept_id": "chem55_fraction",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：合金の質量組成を物質量分率へ変換する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "iupac_amount_fraction"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-4-3",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "合金の質量組成を物質量分率へ変換する。",
+      "summary": "合金の質量組成を物質量分率へ変換する。",
+      "conditions": {
+        "質量百分率": "Al 95.5%、Cu 4.5%。",
+        "原子量": "Al27.0、Cu63.5。",
+        "答案列": "Al / Cuの百分率。"
+      },
+      "choices": {
+        "1": {
+          "value": "95.0 / 4.96",
+          "verdict": "不適切",
+          "reason": "合金100gを仮定し、Alは95.5/27.0=3.537037 mol、Cuは4.5/63.5=0.070866 mol。合計で割り、Al=98.0358%、Cu=1.9642%。質量百分率をそのまま原子百分率として使わず、原子量で割ってから規格化する。 計算結果に一致しない。"
+        },
+        "2": {
+          "value": "96.0 / 3.96",
+          "verdict": "不適切",
+          "reason": "合金100gを仮定し、Alは95.5/27.0=3.537037 mol、Cuは4.5/63.5=0.070866 mol。合計で割り、Al=98.0358%、Cu=1.9642%。質量百分率をそのまま原子百分率として使わず、原子量で割ってから規格化する。 計算結果に一致しない。"
+        },
+        "3": {
+          "value": "97.0 / 2.96",
+          "verdict": "不適切",
+          "reason": "合金100gを仮定し、Alは95.5/27.0=3.537037 mol、Cuは4.5/63.5=0.070866 mol。合計で割り、Al=98.0358%、Cu=1.9642%。質量百分率をそのまま原子百分率として使わず、原子量で割ってから規格化する。 計算結果に一致しない。"
+        },
+        "4": {
+          "value": "98.0 / 1.96",
+          "verdict": "条件内で適切",
+          "reason": "合金100gを仮定し、Alは95.5/27.0=3.537037 mol、Cuは4.5/63.5=0.070866 mol。合計で割り、Al=98.0358%、Cu=1.9642%。質量百分率をそのまま原子百分率として使わず、原子量で割ってから規格化する。 計算結果と一致。"
+        },
+        "5": {
+          "value": "99.0 / 0.96",
+          "verdict": "不適切",
+          "reason": "合金100gを仮定し、Alは95.5/27.0=3.537037 mol、Cuは4.5/63.5=0.070866 mol。合計で割り、Al=98.0358%、Cu=1.9642%。質量百分率をそのまま原子百分率として使わず、原子量で割ってから規格化する。 計算結果に一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/basic/page_017.png"
+      ],
+      "core_concept": "合金の質量組成を物質量分率へ変換する。",
+      "required_knowledge": "質量分率、物質量、原子量、物質量分率の規格化。",
+      "solution": "合金100gを仮定し、Alは95.5/27.0=3.537037 mol、Cuは4.5/63.5=0.070866 mol。合計で割り、Al=98.0358%、Cu=1.9642%。質量百分率をそのまま原子百分率として使わず、原子量で割ってから規格化する。",
+      "answer_reason": "合金100gを仮定し、Alは95.5/27.0=3.537037 mol、Cuは4.5/63.5=0.070866 mol。合計で割り、Al=98.0358%、Cu=1.9642%。質量百分率をそのまま原子百分率として使わず、原子量で割ってから規格化する。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。95.5/27と4.5/63.5のモル分率98.04/1.96%。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "質量分率、物質量、原子量、物質量分率の規格化。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:fraction"
+      ],
+      "discipline_id": "basic_4_3",
+      "concept_id": "chem55_fraction",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：合金の質量組成を物質量分率へ変換する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "iupac_amount_fraction"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-4-4",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "金属の資源と製錬法を組み合わせる。",
+      "summary": "金属の資源と製錬法を組み合わせる。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典26画像で確認。",
+        "時点": "平成27年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "Al Fe Zn Mg Ti",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "Al Mg Zn Fe Ti",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Al Fe Zn Mg Ti と異なる。"
+        },
+        "3": {
+          "value": "Ti Fe Al Mg Zn",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Al Fe Zn Mg Ti と異なる。"
+        },
+        "4": {
+          "value": "Ti Fe Al Zn Mg",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Al Fe Zn Mg Ti と異なる。"
+        },
+        "5": {
+          "value": "Ti Mg Al Fe Zn",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Al Fe Zn Mg Ti と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "2015年の世界生産量・可採年数・価格の全統計と基準日は未確認。資源埋蔵量を不変の枯渇期限としない。",
+      "evidence": [
+        "extracted/pages/H27/basic/page_013.png"
+      ],
+      "core_concept": "金属の資源と製錬法を組み合わせる。",
+      "required_knowledge": "地殻存在と生産量の違い、酸化鉱・硫化鉱・炭酸塩鉱、溶融塩電解、Kroll法。",
+      "solution": "地殻中はAlがFeより多いが生産量はFeが多い。Znは硫化鉱、Mgは炭酸塩鉱も用い、反応性の高いAlとMgは溶融塩電解による。TiCl4はMgで還元する。Al Fe Zn Mg Tiの1。",
+      "answer_reason": "地殻中はAlがFeより多いが生産量はFeが多い。Znは硫化鉱、Mgは炭酸塩鉱も用い、反応性の高いAlとMgは溶融塩電解による。TiCl4はMgで還元する。Al Fe Zn Mg Tiの1。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。Al/Fe/Zn/Mg/Ti、地殻存在・還元法とKroll法から。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "地殻存在と生産量の違い、酸化鉱・硫化鉱・炭酸塩鉱、溶融塩電解、Kroll法。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:metallurgy"
+      ],
+      "discipline_id": "basic_4_3",
+      "concept_id": "chem55_metallurgy",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：金属の資源と製錬法を組み合わせる。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "chem55_kroll",
+        "chem55_crust"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-4-3",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "Fe・Cu・Alの密度・抵抗率・融点の順序。",
+      "summary": "Fe・Cu・Alの密度・抵抗率・融点の順序。",
+      "conditions": {
+        "ア": "Fe>Cu>Al。",
+        "イ": "Cu>Fe>Al。",
+        "ウ": "Al>Fe>Cu。",
+        "エ": "Cu>Al>Fe。",
+        "オ": "Fe>Al>Cu。",
+        "比較条件": "密度と抵抗率20°C、融点1気圧。",
+        "列順": "密度 / 電気抵抗率 / 融点。"
+      },
+      "choices": {
+        "1": {
+          "value": "ア イ エ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 イ オ ア と異なる。"
+        },
+        "2": {
+          "value": "イ エ エ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 イ オ ア と異なる。"
+        },
+        "3": {
+          "value": "イ オ ア",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "ウ ウ オ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 イ オ ア と異なる。"
+        },
+        "5": {
+          "value": "ウ オ ア",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 イ オ ア と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "材料の純度・結晶状態・温度を変えた一般的大小へ拡張しない。原典は単体の通常値の比較。",
+      "evidence": [
+        "extracted/pages/H28/basic/page_018.png"
+      ],
+      "core_concept": "Fe・Cu・Alの密度・抵抗率・融点の順序。",
+      "required_knowledge": "密度と質量、電気抵抗率、融点、温度と純度、組合せ表。",
+      "solution": "20°Cで密度はCu>Fe>Al、抵抗率はFe>Al>Cu。1気圧で融点はFe>Cu>Al。各大小順を先に定め、その年度のア〜オの記号に戻す。同じ三元素でも記号の割当が異なる。",
+      "answer_reason": "20°Cで密度はCu>Fe>Al、抵抗率はFe>Al>Cu。1気圧で融点はFe>Cu>Al。各大小順を先に定め、その年度のア〜オの記号に戻す。同じ三元素でも記号の割当が異なる。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。密度CuFeAl、抵抗FeAlCu、融点FeCuAl、イオア。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "密度と質量、電気抵抗率、融点、温度と純度、組合せ表。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:properties"
+      ],
+      "discipline_id": "basic_4_3",
+      "concept_id": "chem55_properties",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：Fe・Cu・Alの密度・抵抗率・融点の順序。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "openstax_resistivity",
+        "chem55_properties",
+        "chem55_properties_al",
+        "chem55_properties_fe"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-BASIC-4-3",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "stem": "Fe・Cu・Alの密度・抵抗率・融点の順序。",
+      "summary": "Fe・Cu・Alの密度・抵抗率・融点の順序。",
+      "conditions": {
+        "ア": "Fe>Cu>Al。",
+        "イ": "Fe>Al>Cu。",
+        "ウ": "Cu>Fe>Al。",
+        "エ": "Cu>Al>Fe。",
+        "オ": "Al>Fe>Cu。",
+        "比較条件": "密度と抵抗率20°C、融点1気圧。",
+        "列順": "密度 / 電気抵抗率 / 融点。"
+      },
+      "choices": {
+        "1": {
+          "value": "ア ウ オ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 ウ イ ア と異なる。"
+        },
+        "2": {
+          "value": "ア エ オ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 ウ イ ア と異なる。"
+        },
+        "3": {
+          "value": "イ エ ア",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 ウ イ ア と異なる。"
+        },
+        "4": {
+          "value": "ウ イ ア",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "5": {
+          "value": "ウ イ オ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 ウ イ ア と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "材料の純度・結晶状態・温度を変えた一般的大小へ拡張しない。原典は単体の通常値の比較。",
+      "evidence": [
+        "extracted/pages/R02/basic/page_016.png"
+      ],
+      "core_concept": "Fe・Cu・Alの密度・抵抗率・融点の順序。",
+      "required_knowledge": "密度と質量、電気抵抗率、融点、温度と純度、組合せ表。",
+      "solution": "20°Cで密度はCu>Fe>Al、抵抗率はFe>Al>Cu。1気圧で融点はFe>Cu>Al。各大小順を先に定め、その年度のア〜オの記号に戻す。同じ三元素でも記号の割当が異なる。",
+      "answer_reason": "20°Cで密度はCu>Fe>Al、抵抗率はFe>Al>Cu。1気圧で融点はFe>Cu>Al。各大小順を先に定め、その年度のア〜オの記号に戻す。同じ三元素でも記号の割当が異なる。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。密度CuFeAl、抵抗FeAlCu、融点FeCuAl、ウイア。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "密度と質量、電気抵抗率、融点、温度と純度、組合せ表。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:properties"
+      ],
+      "discipline_id": "basic_4_3",
+      "concept_id": "chem55_properties",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：Fe・Cu・Alの密度・抵抗率・融点の順序。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "openstax_resistivity",
+        "chem55_properties",
+        "chem55_properties_al",
+        "chem55_properties_fe"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-4-2",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "溶質粒子数と沸点上昇。",
+      "summary": "溶質粒子数と沸点上昇。",
+      "conditions": {
+        "量": "各0.10mol溶質、溶媒純水1.0kg。",
+        "濃度": "各0.10mol/kg。"
+      },
+      "choices": {
+        "1": {
+          "value": "すべて100°Cより低い",
+          "verdict": "不適切",
+          "reason": "不揮発性溶質による沸点上昇の向きと逆。"
+        },
+        "2": {
+          "value": "すべて高く同じ値",
+          "verdict": "不適切",
+          "reason": "分析濃度が同じでも電離後の粒子数が異なる。"
+        },
+        "3": {
+          "value": "NaClが最低",
+          "verdict": "不適切",
+          "reason": "粒子数約2のNaClは非電解質のグルコースより上昇が大きい。"
+        },
+        "4": {
+          "value": "グルコースが最高",
+          "verdict": "不適切",
+          "reason": "電離せず粒子数1のグルコースが最小の上昇。"
+        },
+        "5": {
+          "value": "CaCl2が最高",
+          "verdict": "条件内で適切",
+          "reason": "理想的な電離でCa2+とCl−2個、粒子数3に相当。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "100°Cの比較には純水の沸点100°Cとなる圧力を前提とする。実溶液の非理想性を無視した厳密なi=整数の断定にはしない。",
+      "evidence": [
+        "extracted/pages/H29/basic/page_015.png"
+      ],
+      "core_concept": "溶質粒子数と沸点上昇。",
+      "required_knowledge": "質量モル濃度、束一性、電離、van’t Hoff係数。",
+      "solution": "各0.10 molを純水1.0kgへ溶かす。希薄の近似でΔTb=Kbi m、iはグルコース1、NaCl2、CaCl2 3。沸点上昇はこの順に大きくなり最高はCaCl2の5。",
+      "answer_reason": "各0.10 molを純水1.0kgへ溶かす。希薄の近似でΔTb=Kbi m、iはグルコース1、NaCl2、CaCl2 3。沸点上昇はこの順に大きくなり最高はCaCl2の5。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。粒子数3のCaCl2が最大沸点上昇。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "質量モル濃度、束一性、電離、van’t Hoff係数。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:colligative"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "chem55_colligative",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：溶質粒子数と沸点上昇。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "chem55_colligative"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-4-4",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "材料の用途と構成元素を対応させる。",
+      "summary": "材料の用途と構成元素を対応させる。",
+      "conditions": {
+        "列順": "乾電池負極 / 光ファイバー / ジュラルミン / 永久磁石。"
+      },
+      "choices": {
+        "1": {
+          "value": "Zn Si Cu Fe",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "Zn Cu Si Fe",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Zn Si Cu Fe と異なる。"
+        },
+        "3": {
+          "value": "Fe Si Cu Zn",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Zn Si Cu Fe と異なる。"
+        },
+        "4": {
+          "value": "Si Zn Fe Cu",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Zn Si Cu Fe と異なる。"
+        },
+        "5": {
+          "value": "Si Zn Fe Si",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Zn Si Cu Fe と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "材料の代表例と候補の対応。Coを含まないLi正極、プラスチック光ファイバー、Feを必須としない磁石などの例外を排除しない。",
+      "evidence": [
+        "extracted/pages/H29/basic/page_016.png"
+      ],
+      "core_concept": "材料の用途と構成元素を対応させる。",
+      "required_knowledge": "乾電池と二次電池の電極、シリカ、Al合金、磁性材料。",
+      "solution": "乾電池負極はZn、シリカ光ファイバーはSi、Al-Cu系ジュラルミンはCu、代表的な永久磁石の候補はFe。Zn Si Cu Feの1。",
+      "answer_reason": "乾電池負極はZn、シリカ光ファイバーはSi、Al-Cu系ジュラルミンはCu、代表的な永久磁石の候補はFe。Zn Si Cu Feの1。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。乾電池負極Zn、ファイバーSi、ジュラルミンCu、磁石Fe。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "乾電池と二次電池の電極、シリカ、Al合金、磁性材料。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:elements"
+      ],
+      "discipline_id": "basic_4_3",
+      "concept_id": "chem55_elements",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：材料の用途と構成元素を対応させる。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "openstax_batteries",
+        "chem55_fiber",
+        "chem55_duralumin",
+        "openstax_magnetism"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-BASIC-4-4",
+      "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+      "stem": "材料の用途と構成元素を対応させる。",
+      "summary": "材料の用途と構成元素を対応させる。",
+      "conditions": {
+        "列順": "Liイオン二次電池正極 / 光ファイバー / ジュラルミン / 永久磁石。"
+      },
+      "choices": {
+        "1": {
+          "value": "Co Si Cu Zn",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Co Si Cu Fe と異なる。"
+        },
+        "2": {
+          "value": "C Zn Fe Cu",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Co Si Cu Fe と異なる。"
+        },
+        "3": {
+          "value": "C Zn Fe Si",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Co Si Cu Fe と異なる。"
+        },
+        "4": {
+          "value": "Co Si Cu Fe",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "5": {
+          "value": "Co Cu Si Fe",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 Co Si Cu Fe と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "材料の代表例と候補の対応。Coを含まないLi正極、プラスチック光ファイバー、Feを必須としない磁石などの例外を排除しない。",
+      "evidence": [
+        "extracted/pages/R01_retest/basic/page_015.png"
+      ],
+      "core_concept": "材料の用途と構成元素を対応させる。",
+      "required_knowledge": "乾電池と二次電池の電極、シリカ、Al合金、磁性材料。",
+      "solution": "設問のリチウムイオン二次電池正極の代表はCo系、シリカ光ファイバーはSi、ジュラルミンはCu、磁石はFe。Co Si Cu Feの4。全リチウム電池の正極がCoを必ず含むという意味ではない。",
+      "answer_reason": "設問のリチウムイオン二次電池正極の代表はCo系、シリカ光ファイバーはSi、ジュラルミンはCu、磁石はFe。Co Si Cu Feの4。全リチウム電池の正極がCoを必ず含むという意味ではない。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。正極Co/光Si/ジュラルCu/磁石Fe。全リチウム正極ではない。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "乾電池と二次電池の電極、シリカ、Al合金、磁性材料。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:elements"
+      ],
+      "discipline_id": "basic_4_3",
+      "concept_id": "chem55_elements",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：材料の用途と構成元素を対応させる。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "openstax_batteries",
+        "chem55_fiber",
+        "chem55_duralumin",
+        "openstax_magnetism"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-BASIC-4-3",
+      "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+      "stem": "標準反応ギブズエネルギーの関係式。",
+      "summary": "標準反応ギブズエネルギーの関係式。",
+      "conditions": {
+        "指定": "標準反応エンタルピーと標準反応エントロピーを用い、Tは絶対温度。"
+      },
+      "choices": {
+        "1": {
+          "value": "H−S",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 H−TS と異なる。"
+        },
+        "2": {
+          "value": "H−TS",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "3": {
+          "value": "H−T²S",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 H−TS と異なる。"
+        },
+        "4": {
+          "value": "TH−S",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 H−TS と異なる。"
+        },
+        "5": {
+          "value": "T²H−S",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 H−TS と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/basic/page_014.png"
+      ],
+      "core_concept": "標準反応ギブズエネルギーの関係式。",
+      "required_knowledge": "ギブズエネルギー、エンタルピー、エントロピー、絶対温度と単位。",
+      "solution": "標準反応量でもΔrG°=ΔrH°−TΔrS°。エントロピーの単位はエネルギー/温度なので、Tを掛けるとエンタルピーと同じ単位になる。H−TSの2。",
+      "answer_reason": "標準反応量でもΔrG°=ΔrH°−TΔrS°。エントロピーの単位はエネルギー/温度なので、Tを掛けるとエンタルピーと同じ単位になる。H−TSの2。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。G=H-TSの標準反応量。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "ギブズエネルギー、エンタルピー、エントロピー、絶対温度と単位。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:gibbs"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "chem55_gibbs",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：標準反応ギブズエネルギーの関係式。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "chem55_gibbs"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-BASIC-4-2",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "stem": "反応図から付加・脱離・置換を区別。",
+      "summary": "反応図から付加・脱離・置換を区別。",
+      "conditions": {
+        "a": "CH3CH2CH2OH+HBr→CH3CH2CH2Br+H2O。",
+        "b": "Ph-CH(OH)-CH3→Ph-CH=CH2+H2O、酸触媒。",
+        "c": "CH3CH2CH=CH2+HBr→CH3CH2CH(Br)CH3。",
+        "d": "Ph-COOH+CH3OH→Ph-COOCH3+H2O、酸触媒。"
+      },
+      "choices": {
+        "1": {
+          "value": "a b",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 a d と異なる。"
+        },
+        "2": {
+          "value": "a c",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 a d と異なる。"
+        },
+        "3": {
+          "value": "a d",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "b c",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 a d と異なる。"
+        },
+        "5": {
+          "value": "b d",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 a d と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/basic/page_015.png"
+      ],
+      "core_concept": "反応図から付加・脱離・置換を区別。",
+      "required_knowledge": "結合の変化、置換、脱離、二重結合への付加、エステル化。",
+      "solution": "aは1-プロパノールのOHをBrへ置換する。bは1-フェニルエタノールから水が脱離してスチレンとなる。cは1-ブテンの二重結合にHBrが付加。dは安息香酸とメタノールから安息香酸メチルを作る求核アシル置換。置換はa,dの3。",
+      "answer_reason": "aは1-プロパノールのOHをBrへ置換する。bは1-フェニルエタノールから水が脱離してスチレンとなる。cは1-ブテンの二重結合にHBrが付加。dは安息香酸とメタノールから安息香酸メチルを作る求核アシル置換。置換はa,dの3。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。aアルコールOH置換、dカルボン酸エステル化の置換。b脱離c付加。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "結合の変化、置換、脱離、二重結合への付加、エステル化。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:organic"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "chem55_organic",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：反応図から付加・脱離・置換を区別。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "chem55_organic"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-BASIC-4-2",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "stem": "酸化数が変わらない反応式を選ぶ。",
+      "summary": "酸化数が変わらない反応式を選ぶ。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典26画像で確認。",
+        "時点": "令和3年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "2Na+2H2O→2NaOH+H2",
+          "verdict": "不適切",
+          "reason": "Na0→+1、H+1→0。酸化還元。"
+        },
+        "2": {
+          "value": "NaClO+2HCl→NaCl+H2O+Cl2",
+          "verdict": "不適切",
+          "reason": "Cl+1と−1が0へ変わる過程を含む。酸化還元。"
+        },
+        "3": {
+          "value": "3H2+N2→2NH3",
+          "verdict": "不適切",
+          "reason": "H0→+1、N0→−3。酸化還元。"
+        },
+        "4": {
+          "value": "2NaCl+CaCO3→Na2CO3+CaCl2",
+          "verdict": "条件内で適切",
+          "reason": "Na+1、Cl−1、Ca+2、C+4、O−2が変わらない。"
+        },
+        "5": {
+          "value": "NH3+2O2→HNO3+H2O",
+          "verdict": "不適切",
+          "reason": "N−3→+5、O0→−2。酸化還元。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/basic/page_016.png"
+      ],
+      "core_concept": "酸化数が変わらない反応式を選ぶ。",
+      "required_knowledge": "酸化数、酸化・還元、反応の分類と進行条件。",
+      "solution": "酸化数の増減があるかを各元素で追う。4の形式的な交換式では全原子の酸化数が保存される。他の四反応はいずれも増減を含む。水中で4の反応が実際に右へ進むかは溶解平衡などの別の問題である。",
+      "answer_reason": "酸化数の増減があるかを各元素で追う。4の形式的な交換式では全原子の酸化数が保存される。他の四反応はいずれも増減を含む。水中で4の反応が実際に右へ進むかは溶解平衡などの別の問題である。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。NaClとCaCO3の交換式で全原子の酸化数不変。実際の反応進行とは別。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "酸化数、酸化・還元、反応の分類と進行条件。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:redox"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "chem55_redox",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：酸化数が変わらない反応式を選ぶ。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "iupac_oxidation_state"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-BASIC-4-4",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "stem": "鉄鉱石から鉄への還元と必要質量。",
+      "summary": "鉄鉱石から鉄への還元と必要質量。",
+      "conditions": {
+        "原料": "Fe2O3、石灰石、コークス。",
+        "生成量": "Fe1000kg。",
+        "原子量": "Fe56、O16。",
+        "理想化": "鉄鉱石と銑鉄に不純物なし。"
+      },
+      "choices": {
+        "1": {
+          "value": "Al・高炉・還元・1429kg",
+          "verdict": "条件内で適切",
+          "reason": "元素順位、製錬法、酸化数の方向、質量収支が全て対応。"
+        },
+        "2": {
+          "value": "Al・電炉・還元・2857kg",
+          "verdict": "不適切",
+          "reason": "指定の鉱石とコークスは高炉。160/112の倍率であり2倍の質量ではない。"
+        },
+        "3": {
+          "value": "Al・高炉・酸化・2857kg",
+          "verdict": "不適切",
+          "reason": "Fe3+からFe0は還元。質量倍率も誤り。"
+        },
+        "4": {
+          "value": "Cu・電炉・酸化・2857kg",
+          "verdict": "不適切",
+          "reason": "地殻順位、炉、酸化還元、質量の各条件が異なる。"
+        },
+        "5": {
+          "value": "Cu・高炉・還元・1429kg",
+          "verdict": "不適切",
+          "reason": "地殻の順位の空欄はAlでありCuではない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/basic/page_018.png"
+      ],
+      "core_concept": "鉄鉱石から鉄への還元と必要質量。",
+      "required_knowledge": "地殻存在量、酸化鉄、高炉、CO等の還元、式量と物質収支。",
+      "solution": "地殻の主要元素はO,Si,Al,Feの順。高炉で酸化鉄を還元する。Fe2O3は式量2×56+3×16=160、その中のFeは112。1000×160/112=1428.571...kg、最低約1429kgの1。原典の純粋Feという理想化に従い、実操業の歩留まりや銑鉄の炭素を加えない。",
+      "answer_reason": "地殻の主要元素はO,Si,Al,Feの順。高炉で酸化鉄を還元する。Fe2O3は式量2×56+3×16=160、その中のFeは112。1000×160/112=1428.571...kg、最低約1429kgの1。原典の純粋Feという理想化に従い、実操業の歩留まりや銑鉄の炭素を加えない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。Al高炉還元、Fe2O3の160/112倍から1429kg。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "地殻存在量、酸化鉄、高炉、CO等の還元、式量と物質収支。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:metallurgy"
+      ],
+      "discipline_id": "basic_4_3",
+      "concept_id": "chem55_metallurgy",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：鉄鉱石から鉄への還元と必要質量。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "chem55_crust",
+        "chem55_iron"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-4-2",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "希薄水溶液での酸性度を四組比較。",
+      "summary": "希薄水溶液での酸性度を四組比較。",
+      "conditions": {
+        "条件": "希薄水溶液。",
+        "ア": "HF>HClの主張。",
+        "イ": "CF3COOH>CH3COOH。",
+        "ウ": "エタノール<酢酸。",
+        "エ": "フェノール<エタノールの主張。"
+      },
+      "choices": {
+        "1": {
+          "value": "ア イ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 イ ウ と異なる。"
+        },
+        "2": {
+          "value": "ア ウ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 イ ウ と異なる。"
+        },
+        "3": {
+          "value": "イ ウ",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "イ エ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 イ ウ と異なる。"
+        },
+        "5": {
+          "value": "ウ エ",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 イ ウ と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/basic/page_013.png"
+      ],
+      "core_concept": "希薄水溶液での酸性度を四組比較。",
+      "required_knowledge": "酸解離、結合強度、誘起効果、共役塩基の共鳴安定化。",
+      "solution": "アはHFがHClより強いとするので誤。イはCF3基の電子求引性によりトリフルオロ酢酸が酢酸より強く正。ウはエタノールが酢酸より弱く正。エはフェノールがエタノールより弱いとするので逆。正しいイ・ウの3。",
+      "answer_reason": "アはHFがHClより強いとするので誤。イはCF3基の電子求引性によりトリフルオロ酢酸が酢酸より強く正。ウはエタノールが酢酸より弱く正。エはフェノールがエタノールより弱いとするので逆。正しいイ・ウの3。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。HF<HCl、CF3COOH>酢酸、エタノール<酢酸、フェノール>エタノール、イウ。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "酸解離、結合強度、誘起効果、共役塩基の共鳴安定化。 対象・単位・条件を定め、判断を選択肢の番号に戻す。",
+      "theory_references": [
+        "theory:basicchem:acid"
+      ],
+      "discipline_id": "basic_4_1",
+      "concept_id": "chem55_acid",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：希薄水溶液での酸性度を四組比較。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "反応係数・酸性度・材料条件を区別して判断する。"
+      },
+      "citations": [
+        "purdue_acid_strength",
+        "yale_hydrohalic"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

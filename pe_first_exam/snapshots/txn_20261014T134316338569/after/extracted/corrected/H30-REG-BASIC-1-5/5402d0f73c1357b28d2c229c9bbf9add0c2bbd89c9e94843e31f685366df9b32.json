@@ -1,0 +1,46 @@
+{
+  "stem": "検査費用と期待損害の合計を最小化。",
+  "conditions": {
+    "確率": "1/(x+2)^2。",
+    "検査費": "1回30万円。",
+    "不具合損害": "3240万円。"
+  },
+  "choices": {
+    "1": {
+      "value": "2",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "2": {
+      "value": "3",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "3": {
+      "value": "4",
+      "verdict": "条件内で適切",
+      "reason": "解法の条件と結果を照合する。 計算結果と一致。"
+    },
+    "4": {
+      "value": "5",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "5": {
+      "value": "6",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/basic/page_005.png"
+  ],
+  "question_id": "H30-REG-BASIC-1-5",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "74be174f80df936e552f04a179d193396ed2ba0d62983752f14e8b6b61a5484e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

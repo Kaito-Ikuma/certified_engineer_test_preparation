@@ -1,0 +1,110 @@
+{
+  "reference_date": "2026-10-13",
+  "references": [
+    {
+      "key": "em51_mit_magnetic_readings",
+      "author": "MIT OpenCourseWare",
+      "title": "3.45 Magnetic Materials: Readings",
+      "url": "https://ocw.mit.edu/courses/3-45-magnetic-materials-spring-2004/pages/readings/",
+      "scope": "検索本文のSlater–Pauling・Curie温度とスピンの講義範囲を確認。指定教科書全文を読んだものではない。"
+    },
+    {
+      "key": "em51_wf",
+      "author": "MIT OpenCourseWare",
+      "title": "Nano-to-Macro Transport Processes: 2004 Lecture Notes",
+      "url": "https://ocw.mit.edu/courses/2-57-nano-to-macro-transport-processes-spring-2012/2e4ecaa5cf55f03bcefbc8ccce79aed6_MIT2_57S12_lec_notes_2004.pdf",
+      "scope": "検索本文のWiedemann–Franz則とLorenz数を確認。全講義の通読ではない。"
+    },
+    {
+      "key": "em51_resistance",
+      "author": "OpenStax",
+      "title": "College Physics: Resistance and Resistivity",
+      "url": "https://openstax.org/books/college-physics/pages/20-3-resistance-and-resistivity",
+      "scope": "取得本文の温度依存と合金の係数の例を確認。原典の指数・単位は13原典画像から独立に照合。"
+    },
+    {
+      "key": "em51_pauli",
+      "author": "M. S. Dresselhaus",
+      "title": "Solid State Physics Part III: Magnetic Properties of Solids",
+      "url": "https://web.mit.edu/6.732/www/6.732-pt3.pdf",
+      "scope": "表紙著者と第4章導入の伝導電子スピンのPauli、軌道のLandau、Curieとの温度依存の差を確認。143頁全体の通読ではない。"
+    },
+    {
+      "key": "em51_demag",
+      "author": "MIT",
+      "title": "Electromagnetic Fields and Energy: Chapter 9",
+      "url": "https://web.mit.edu/6.013_book/www/chapter9/9.html",
+      "scope": "本文508–534、565–622の磁化界面と球の内部反磁場を確認。任意形状を球と同一としない。式は画像の部分もあり全式の文字取得とはしない。"
+    },
+    {
+      "key": "em51_heating",
+      "author": "日本電気技術者協会",
+      "title": "誘導加熱と誘電加熱の得失",
+      "url": "https://jeea.or.jp/course/contents/12113/",
+      "scope": "本文31、48–53、90、136–138で対象・渦電流・深さ1/e・誘電損失・マイクロ波を確認。画像式は読み取っていない。本文71の比例の記載は普遍的式として転載しない。"
+    },
+    {
+      "key": "em51_skin",
+      "author": "CEIA",
+      "title": "Induction Heating: Frequently Asked Questions",
+      "url": "https://induction.ceia.net/en-UK/faq",
+      "scope": "公開本文の導電体・渦電流と周波数による侵入深さを確認。メーカーの効率や価格は利用しない。"
+    },
+    {
+      "key": "em51_plasma",
+      "author": "量子科学技術研究開発機構",
+      "title": "JT-60高周波加熱装置：加熱と電流駆動の原理",
+      "url": "https://www.qst.go.jp/site/jt60/5208.html",
+      "scope": "公開ページと検索本文で核融合プラズマのRF加熱を確認。図内の具体的回路と無電極トーチは未照合。"
+    },
+    {
+      "key": "em51_transformer_ref",
+      "author": "OpenStax",
+      "title": "College Physics: Transformers",
+      "url": "https://openstax.org/books/college-physics/pages/23-7-transformers",
+      "scope": "本文の二次/一次電圧比＝巻数比と電力保存を確認。理想条件を保持。"
+    },
+    {
+      "key": "em51_xray",
+      "author": "OpenStax",
+      "title": "College Physics 2e: X Rays, Atomic Origins and Applications",
+      "url": "https://openstax.org/books/college-physics-2e/pages/30-4-x-rays-atomic-origins-and-applications",
+      "scope": "公開本文の連続制動放射と特性ピーク・内殻準位遷移を確認。原典図を転載しない。"
+    },
+    {
+      "key": "em51_radio_law",
+      "author": "e-Gov法令検索",
+      "title": "電波法 第二条（2024年4月1日版）",
+      "url": "https://laws.e-gov.go.jp/document?lawid=325AC0000000131_20240401_504AC0100000052",
+      "scope": "取得本文の300万MHz以下を確認。2023年11月26日指定の直接取得は失敗。当時施行版の確認済みとはせず部分校正。"
+    },
+    {
+      "key": "em51_ge",
+      "author": "NIST",
+      "title": "Atomic Data for Germanium",
+      "url": "https://physics.nist.gov/PhysRefData/Handbook/Tables/germaniumtable1_a.htm",
+      "scope": "公開原子データのGe I基底配置4s2 4p2を確認。結晶の混成は別資料を使う。"
+    },
+    {
+      "key": "em51_ge_structure",
+      "author": "Portland State University",
+      "title": "Semiconductor Devices: Introduction, 2012 Lecture",
+      "url": "https://web.cecs.pdx.edu/~jmorris/ECE%20415%20%26%20515%20Semiconductor%20Devices/lecture_1_intro_2012%20%5BCompatibility%20Mode%5D.pdf",
+      "scope": "取得文字層291–294のSi・Ge・Cのsp3 diamond latticeとFCC基底を確認。全講義の図の目視確認ではない。"
+    },
+    {
+      "key": "em51_quartz",
+      "author": "PCB Piezotronics",
+      "title": "General Piezoelectric Theory",
+      "url": "https://www.pcb.com/resources/technical-information/general-piezoelectric-theory",
+      "scope": "本文表263–270で石英の自然圧電性・非焦電性と分極処理したセラミックを比較。機器の静的測定性能の主張は利用しない。"
+    },
+    {
+      "key": "em51_ferro_transition",
+      "author": "International Union of Crystallography",
+      "title": "International Tables for Crystallography: Structural Phase Transitions",
+      "url": "https://onlinelibrary.wiley.com/iucr/itc/Db/ch3o1v0001/sec3o1o5o2o1/",
+      "scope": "本文24–29のLandau–Devonshire理論で自発分極を秩序変数とする一次転移の不連続を確認。図の転載はしない。"
+    }
+  ]
+}

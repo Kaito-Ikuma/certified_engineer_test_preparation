@@ -1,0 +1,45 @@
+{
+  "stem": "一般廃棄物と産業廃棄物の総量を逆転しない。",
+  "conditions": {
+    "原典": "全五肢と否定方向・組合せ表を画像確認。",
+    "資料時点": "令和4年度の指定資料・統計年を保持し、後年値に置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "一般廃棄物の総量が産業廃棄物より多い",
+      "verdict": "不適切・選択対象",
+      "reason": "同じ近年の年間排出総量では産業廃棄物が一般廃棄物より大きく、逆の記述が不適切。"
+    },
+    "2": {
+      "value": "特別管理産業廃棄物は爆発性・毒性・感染性等",
+      "verdict": "条件内で適切",
+      "reason": "危険性に応じ通常とは別の管理が必要となる。"
+    },
+    "3": {
+      "value": "バイオマスは化石資源を除く生物由来有機資源",
+      "verdict": "条件内で適切",
+      "reason": "生物起源でも長期地質過程で生じた化石燃料はここに含めない。"
+    },
+    "4": {
+      "value": "RPFは主に廃紙・廃プラスチック固形燃料",
+      "verdict": "条件内で適切",
+      "reason": "略称と対象材料を照合。RDF等の別燃料を混同しない。"
+    },
+    "5": {
+      "value": "東京大会メダルは使用済小型家電の金属を利用",
+      "verdict": "条件内で適切",
+      "reason": "回収金属を資源として使う事業であり、新規採掘だけで製造したとの説明ではない。"
+    }
+  },
+  "figures": "文章五肢を独自要約。",
+  "ambiguity": "当時の全国両区分の総量とメダル事業の回収・製造記録全文を追加確認。",
+  "evidence": [
+    "extracted/pages/R04/basic/page_017.png"
+  ],
+  "question_id": "R04-REG-BASIC-5-2",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "46d70fce66dee43ce72759e994f90726419ee370f74bd6cbc590a9ea77f488d0",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

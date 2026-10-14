@@ -1,0 +1,22 @@
+{
+  "time": "2026-10-11T23:42:03+09:00",
+  "input_before_sha256": "ff7ad0f10de70be96249056895b17aea5700cbe2b3264c928b12be75bdcafc41",
+  "input_after_sha256": "3474a3f91a7eb110a3fb7c078f886c2688445568e470395f0bfb4f5dc8af3214",
+  "original_input_preserved": true,
+  "changes": [
+    {
+      "left": "H29-REG-APPLIED-25",
+      "right": "R05-REG-APPLIED-30",
+      "before": "variant",
+      "after": "near_repeat",
+      "reason": "選択肢順の変化であり既存taxonomyのnear_repeatを用いる。parameter_variantの数値差ではない。"
+    },
+    {
+      "left": "R01-REG-APPLIED-28",
+      "right": "R06-REG-APPLIED-30",
+      "before": "variant",
+      "after": "near_repeat",
+      "reason": "選択肢順の変化であり既存taxonomyのnear_repeatを用いる。parameter_variantの数値差ではない。"
+    }
+  ]
+}

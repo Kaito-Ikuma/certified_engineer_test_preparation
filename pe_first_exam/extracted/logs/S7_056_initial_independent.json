@@ -1,0 +1,155 @@
+{
+  "records": [
+    {
+      "question_id": "H23-REG-BASIC-1-4",
+      "independent_answer": "1",
+      "reason": "画像の利得A60行12,15>A65行8,10。B60列13,14>B65列7,10。両社60。"
+    },
+    {
+      "question_id": "H23-REG-BASIC-2-4",
+      "independent_answer": "1",
+      "reason": "排他的な成功経路の重み0.95×1+0.05×0.9×10+0.05×0.1×100=1.9。逐次検索加算とは区別。"
+    },
+    {
+      "question_id": "H23-REG-BASIC-4-3",
+      "independent_answer": "4",
+      "reason": "同厚の鉛遮蔽が通常有利、照射効果あり、αHe核β電子、γ光子。イウ。"
+    },
+    {
+      "question_id": "H24-REG-BASIC-1-5",
+      "independent_answer": "5",
+      "reason": "3x+y≤9,x+2y≤8。交点x2y3、利益12。"
+    },
+    {
+      "question_id": "H25-REG-BASIC-2-6",
+      "independent_answer": "3",
+      "reason": "総52000サイクル÷2e9=26マイクロ秒。"
+    },
+    {
+      "question_id": "H26-REG-BASIC-1-2",
+      "independent_answer": "4",
+      "reason": "(100万+50万)/(500-200)/(20×50)=5。"
+    },
+    {
+      "question_id": "H26-REG-BASIC-1-6",
+      "independent_answer": "3",
+      "reason": "第一/第三角法、寸法と公差必要、はめあい・表題。誤正正誤正。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-1-3",
+      "independent_answer": "2",
+      "reason": "S1min6,8=6、S2min8.8,12=8.8、総.6×6+.1×8.8+.3×3=5.38<6.5。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-1-5",
+      "independent_answer": "1",
+      "reason": "幾何公差不要×、寸法○、はめあい○、第二角×、表題○。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-2-5",
+      "independent_answer": "4",
+      "reason": "基底01へ外側0/1を重ね0^n1^n、000111。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-2-6",
+      "independent_answer": "2",
+      "reason": "3500×6+5000×5+1500×4=52000サイクル、26μs。"
+    },
+    {
+      "question_id": "H30-REG-BASIC-1-5",
+      "independent_answer": "3",
+      "reason": "C=30x+3240/(x+2)^2、Cprime=30-6480/(x+2)^3、x4。"
+    },
+    {
+      "question_id": "H30-REG-BASIC-2-2",
+      "independent_answer": "3",
+      "reason": "上昇継続<、到着両=、下降継続>、下降開始>。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-1-1",
+      "independent_answer": "5",
+      "reason": "線形制約も必要、二変数図解可能、凸最小局所=大域、整数難問近似。誤正正正。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-1-2",
+      "independent_answer": "2",
+      "reason": "q=sqrt(2kd/h)=sqrt3600=60。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-1-3",
+      "independent_answer": "5",
+      "reason": "幾何公差不要×、寸法○、限界ゲージ○、第二角×、表題○。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-1-6",
+      "independent_answer": "3",
+      "reason": "0中心マクローリン、eiπ+1=0オイラー、0/0微分比ロピタル。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-2-5",
+      "independent_answer": "5",
+      "reason": "二列全7bit違い、受信3bit目反転1011010は三パリティ一致。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-4-4",
+      "independent_answer": "3",
+      "reason": "TiO2光触媒○、炭酸Na法違い、黄リン毒性、黒鉛柔導電、Pb負極。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-1-1",
+      "independent_answer": "5",
+      "reason": "相加相乗≤、sinθ/θ≥2/π端点等号、厳密凸中点<。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-4-1",
+      "independent_answer": "2",
+      "reason": "エーテル折れ曲がり双極子非零、他4対称相殺。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-4-2",
+      "independent_answer": "3",
+      "reason": "塩酸>酢酸>フェノール、cba。"
+    },
+    {
+      "question_id": "R02-REG-BASIC-1-5",
+      "independent_answer": "5",
+      "reason": "第三角正、第一角上×、想像図×断面図、明記不要×、主投影○。"
+    },
+    {
+      "question_id": "R04-REG-BASIC-1-6",
+      "independent_answer": "2",
+      "reason": "価値ア1.7イ2.0ウ1.0エ1.5オ.2、最大イ。"
+    },
+    {
+      "question_id": "R04-REG-BASIC-2-3",
+      "independent_answer": "3",
+      "reason": "LRU miss at1,2,5,6,7、5M4H。"
+    },
+    {
+      "question_id": "R04-REG-BASIC-2-4",
+      "independent_answer": "5",
+      "reason": "ハミング距離4、受信末尾を反転1000011がパリティ一致。"
+    },
+    {
+      "question_id": "R05-REG-BASIC-4-2",
+      "independent_answer": "5",
+      "reason": "非流動ゲル、ゾルは流動分散。"
+    },
+    {
+      "question_id": "R06-REG-BASIC-1-4",
+      "independent_answer": "3",
+      "reason": "omegaout=omegain/30、P=Tomega保存Tout30倍。"
+    },
+    {
+      "question_id": "R07-REG-BASIC-1-4",
+      "independent_answer": "1",
+      "reason": "薄板面外応力0、長柱軸ひずみ0で軸応力は一般0でない。"
+    },
+    {
+      "question_id": "R07-REG-BASIC-1-5",
+      "independent_answer": "5",
+      "reason": "lambda.01/s,mu.02/s,rho.5,L1,W100s待ち50sサービス50s。"
+    }
+  ],
+  "scope": "原典画像33枚を読んで計算。選択メタデータに公式情報はあり完全盲検とはしない。"
+}

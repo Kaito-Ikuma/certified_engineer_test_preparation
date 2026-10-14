@@ -1,0 +1,45 @@
+{
+  "stem": "社会理念とUDの対象・直感的利用を対応させる。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "社会理念とUDの対象・直感的利用を対応させる。"
+  },
+  "choices": {
+    "1": {
+      "value": "カスタム/環境/直感/ミス",
+      "verdict": "選ばない候補",
+      "reason": "共に生活する理念を個別仕様化と取り違え。"
+    },
+    "2": {
+      "value": "ノーマル/制度/直感/長時間",
+      "verdict": "選ばない候補",
+      "reason": "製品や環境の対象とミス寛容が不一致。"
+    },
+    "3": {
+      "value": "ノーマル/環境/直感/ミス",
+      "verdict": "選ぶ候補",
+      "reason": "ノーマライゼーション/環境/直感/ミスが対応。"
+    },
+    "4": {
+      "value": "カスタム/制度/論理/長時間",
+      "verdict": "選ばない候補",
+      "reason": "理念・対象・利用・寛容の全てが不一致。"
+    },
+    "5": {
+      "value": "ノーマル/環境/論理/長時間",
+      "verdict": "選ばない候補",
+      "reason": "直感とミス寛容を置換している。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "ノーマライゼーションの北欧起源とUDの単一歴史経路の当時一次文書は未照合。",
+  "evidence": [
+    "extracted/pages/R02/basic/page_001.png"
+  ],
+  "question_id": "R02-REG-BASIC-1-1",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "1",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "cc750c8bd7149f662a04327bafd07a93d155106f188a50db38cfeec254060c0a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

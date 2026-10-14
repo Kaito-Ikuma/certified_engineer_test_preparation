@@ -1,0 +1,45 @@
+{
+  "stem": "ゼオライトによる硬度イオン除去の機構を判断する。",
+  "conditions": {
+    "判断対象": "ゼオライトによる硬度イオン除去の機構を判断する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "イオン交換",
+      "verdict": "選ぶ候補",
+      "reason": "交換可能なNa等とCa/Mgを交換。"
+    },
+    "2": {
+      "value": "吸着",
+      "verdict": "選ばない候補",
+      "reason": "表面への保持一般で、軟化の指定機構を十分に特定しない。"
+    },
+    "3": {
+      "value": "吸収",
+      "verdict": "選ばない候補",
+      "reason": "内部への取込み一般で、対イオン交換を特定しない。"
+    },
+    "4": {
+      "value": "還元",
+      "verdict": "選ばない候補",
+      "reason": "Ca/Mgの価数を減らす操作ではない。"
+    },
+    "5": {
+      "value": "酸化",
+      "verdict": "選ばない候補",
+      "reason": "Ca/Mgを酸化する操作ではない。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_006.png"
+  ],
+  "question_id": "H23-REG-APPLIED-17",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "d3d6fffb161b47290748b2dcdb309651884ef2f3d9011a3fd1b1e4b617cb6a7c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

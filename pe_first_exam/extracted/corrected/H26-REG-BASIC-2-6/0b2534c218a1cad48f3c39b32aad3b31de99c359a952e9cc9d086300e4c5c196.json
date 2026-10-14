@@ -1,0 +1,48 @@
+{
+  "stem": "道路網で通行できる車高の最大値を、各経路の最小車高制限から求める。",
+  "conditions": {
+    "方向": "車高最大。",
+    "位置名": "以下の節点名は解説の独自呼称。A、U=左上、V=上中央、W=右上、R=右中、L=左中、P=内左下、D=左下、E=下中央、C=中央、Q=内右下、B。",
+    "全辺の車高制限": "AU8、AL9、UV4、UP3、VW9、WR7、RB6、LP2、LD6、PC6、PE6、DE7、CV5、CR3、CQ9、QB4、EQ5。",
+    "実現経路": "A-L-D-E-P-C-V-W-R-Bの最小5。"
+  },
+  "choices": {
+    "1": {
+      "value": "3",
+      "verdict": "最大でない",
+      "reason": "車高5まで通る経路があり最大でない。単一の車高制限3の道路を避ける経路も存在する。"
+    },
+    "2": {
+      "value": "4",
+      "verdict": "最大でない",
+      "reason": "車高制限4以下の道を通らなくても車高5の経路がある。最初に見つけた経路の幅を最大としない。"
+    },
+    "3": {
+      "value": "5",
+      "verdict": "適切",
+      "reason": "図のAから左中・左下・下中央・内左下・中央・上中央・上右・右中・Bへの経路の最小車高制限は5である。"
+    },
+    "4": {
+      "value": "6",
+      "verdict": "通行経路なし",
+      "reason": "車高6以上だけを残すとA側とB側が接続しない。経路全体の最小車高制限が車高を制限する。"
+    },
+    "5": {
+      "value": "7",
+      "verdict": "通行経路なし",
+      "reason": "車高7以上の経路がないことは6以上で既に分断されることからも分かる。最大制限の一辺だけでは判断できない。"
+    }
+  },
+  "figures": "全12節点17辺・車高制限と非接続交差を原典画像で確認。位置名は独自説明用、原典図転載なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/basic/page_008.png",
+    "extracted/pages/H26/basic/page_009.png"
+  ],
+  "question_id": "H26-REG-BASIC-2-6",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "ee4a722aa483d21d5490f47d195a9556165115cf5daadcd1a2ed6e493620cbfc",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

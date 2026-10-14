@@ -1,0 +1,44 @@
+{
+  "stem": "材料の用途と構成元素を対応させる。",
+  "conditions": {
+    "列順": "乾電池負極 / 光ファイバー / ジュラルミン / 永久磁石。"
+  },
+  "choices": {
+    "1": {
+      "value": "Zn Si Cu Fe",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "2": {
+      "value": "Zn Cu Si Fe",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Zn Si Cu Fe と異なる。"
+    },
+    "3": {
+      "value": "Fe Si Cu Zn",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Zn Si Cu Fe と異なる。"
+    },
+    "4": {
+      "value": "Si Zn Fe Cu",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Zn Si Cu Fe と異なる。"
+    },
+    "5": {
+      "value": "Si Zn Fe Si",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Zn Si Cu Fe と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "材料の代表例と候補の対応。Coを含まないLi正極、プラスチック光ファイバー、Feを必須としない磁石などの例外を排除しない。",
+  "evidence": [
+    "extracted/pages/H29/basic/page_016.png"
+  ],
+  "question_id": "H29-REG-BASIC-4-4",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "16",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "6414808fafb592ac3ace4ac2e0d103e704d2c3d768c5c3a73c9150416869ed0b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

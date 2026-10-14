@@ -1,0 +1,9 @@
+{
+  "question_labels": 1270,
+  "errors": [
+    "unresolved reference q:r04-reg-app-04",
+    "unresolved reference q:h24-reg-bas-3-2",
+    "unresolved reference q:h26-reg-bas-3-5"
+  ],
+  "scope": "source labels/references only, not final content/compile sign-off"
+}

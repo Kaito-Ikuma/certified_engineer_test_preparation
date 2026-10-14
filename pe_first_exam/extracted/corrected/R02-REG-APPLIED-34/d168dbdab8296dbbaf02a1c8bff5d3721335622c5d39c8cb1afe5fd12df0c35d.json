@@ -1,0 +1,45 @@
+{
+  "stem": "周波数領域の位相と時間領域の過渡応答を区別する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "正弦波定常応答は振幅と位相、遮断後応答は時間に対する減衰を測る。"
+  },
+  "choices": {
+    "1": {
+      "value": "微小重力差の相対測定や鉛直重力勾配を利用",
+      "verdict": "条件付きで適切",
+      "reason": "0.01mGal級以下の精度を持つ計器の利用と勾配観測がある。全装置と測定現場に共通の精度保証ではない。"
+    },
+    "2": {
+      "value": "領域を囲む信号源センサで物性を逆解析",
+      "verdict": "適切",
+      "reason": "tomographyの観測覆いと感度に沿って物性分布を推定する。"
+    },
+    "3": {
+      "value": "検層で比抵抗密度速度孔隙率等を深度に記録",
+      "verdict": "条件付きで適切",
+      "reason": "物性を連続記録し、孔隙率のように複数物性と校正から推定する量もある。すべてが直接測定ではない。"
+    },
+    "4": {
+      "value": "周波数領域で連続波の振幅と過渡応答を測る",
+      "verdict": "不適切",
+      "reason": "定常の振幅と位相を測る方式と、遮断後の時間領域過渡を混同する。"
+    },
+    "5": {
+      "value": "AEは微小破壊で主破壊に先行することが多い",
+      "verdict": "条件付きで適切",
+      "reason": "微小破壊に伴う弾性波放出が前兆の研究対象になる。主破壊前だけの定義又は常に発生する保証ではない。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "精度0.01mGalは機器/現場の条件値、検層孔隙率は間接推定、AEの先行は全称ではない。",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_012.png"
+  ],
+  "question_id": "R02-REG-APPLIED-34",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "250f4e07b7e064f89f1199d7899d96efa4716812e01525e730670a4d9f0b8054",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

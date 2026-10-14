@@ -16,6 +16,7 @@ class Review1(unittest.TestCase):
         (cls.p/'sources').symlink_to(ROOT/'sources',target_is_directory=True)
         shutil.copytree(ROOT/'extracted/text',cls.p/'extracted/text')
         (cls.p/'extracted/questions').symlink_to(ROOT/'extracted/questions',target_is_directory=True)
+        (cls.p/'extracted/pages').symlink_to(ROOT/'extracted/pages',target_is_directory=True)
         if (ROOT/'extracted/questions_raw').exists():(cls.p/'extracted/questions_raw').symlink_to(ROOT/'extracted/questions_raw',target_is_directory=True)
         shutil.copytree(ROOT/'extracted/corrected',cls.p/'extracted/corrected')
         (cls.p/'extracted/logs').mkdir();cls.base=read(cls.p/'data/questions.csv');cls.cls=read(cls.p/'data/classifications.csv');cls.checks=read(cls.p/'data/verification_records.csv')
@@ -49,6 +50,31 @@ class Review1(unittest.TestCase):
         before=(self.p/'data/questions.csv').read_bytes()
         for s in ('build_question_db.py','classify_questions.py'):self.assertEqual(self.run_script(s,'--apply').returncode,0)
         self.assertEqual(before,(self.p/'data/questions.csv').read_bytes())
+    def test_authored_revision_rejects_stale_hash_preserves_history_and_draft(self):
+        batch=json.loads((self.p/'config/authored_batches/S7_007_thermodynamics.json').read_text())
+        e=next(x for x in batch['questions'] if x['question_id']=='H29-REG-APPLIED-06')
+        old=next(x for x in self.base if x['question_id']==e['question_id'])
+        old_path=self.p/old['corrected_content_file'];old_bytes=old_path.read_bytes()
+        e.update(stem='Isolated revision fixture',summary='Isolated revision fixture',revision_of_content_sha256='0'*64,revision_of_batch=old['authoring_batch'],revision_reason='Synthetic fixture only: exercise explicit revision guard',independent_solution_note='Initial attempt retained; revised against a separate primary source after answer comparison. Test fixture only.')
+        batch.update(batch_id='test_explicit_revision',questions=[e])
+        path=self.p/'config/authored_batches/test_revision.json';path.write_text(json.dumps(batch))
+        before=(self.p/'data/questions.csv').read_bytes()
+        result=self.run_script('publish_authored_batch.py','config/authored_batches/test_revision.json')
+        self.assertNotEqual(result.returncode,0);self.assertIn('hash-bound revision',result.stderr)
+        self.assertEqual(before,(self.p/'data/questions.csv').read_bytes())
+        e['revision_of_content_sha256']=old['corrected_content_sha256'];path.write_text(json.dumps(batch))
+        result=self.run_script('publish_authored_batch.py','config/authored_batches/test_revision.json')
+        self.assertEqual(result.returncode,0,result.stderr)
+        new=next(x for x in read(self.p/'data/questions.csv') if x['question_id']==e['question_id'])
+        self.assertNotEqual(new['corrected_content_sha256'],old['corrected_content_sha256'])
+        self.assertEqual(old_bytes,old_path.read_bytes())
+        self.assertEqual(new['solution_review_status'],'draft_pending_astra')
+        records=read(self.p/'data/verification_records.csv')
+        self.assertTrue(any(x['question_id']==e['question_id'] and x['kind']=='independent_solution' and x['content_sha256']==new['corrected_content_sha256'] and x['notes']==e['independent_solution_note'] for x in records))
+        self.assertTrue(any(x['question_id']==e['question_id'] and x['content_sha256']==old['corrected_content_sha256'] and x['status']=='superseded' for x in records))
+        updated=(self.p/'data/questions.csv').read_bytes()
+        self.assertEqual(self.run_script('publish_authored_batch.py','config/authored_batches/test_revision.json').returncode,0)
+        self.assertEqual(updated,(self.p/'data/questions.csv').read_bytes())
     def test_no_ocr_switch_preserves_cached_text(self):
         text=self.p/'extracted/text/H24/basic.txt';before=text.read_bytes()
         result=self.inline("import sys;sys.path.insert(0,'scripts');import extract_pdf_text as e;e.extract(e.ROOT/'sources/H24/basic.pdf',False)")
@@ -119,6 +145,16 @@ class Review1(unittest.TestCase):
                 relations=read(ROOT/'data/question_relations.csv');relations[0][field]=value;write(path,relations)
                 self.assertNotEqual(self.run_script('audit_completeness.py').returncode,0)
         finally:path.write_bytes(before)
+    def test_relation_publisher_rejects_invalid_type_without_mutation(self):
+        paths=['data/questions.csv','data/question_relations.csv']
+        before={k:(self.p/k).read_bytes() for k in paths}
+        relation=copy.deepcopy(read(self.p/'data/question_relations.csv')[0])
+        relation['relation_type']='variant'
+        (self.p/'bad_relation.json').write_text(json.dumps({'relations':[relation]}))
+        result=self.run_script('publish_reviewed_relations.py','bad_relation.json')
+        self.assertNotEqual(result.returncode,0)
+        self.assertIn('Invalid relationship type',result.stderr)
+        for k,b in before.items():self.assertEqual((self.p/k).read_bytes(),b)
     def test_transaction_mid_replacement_failure_rolls_back(self):
         paths=['data/questions.csv','data/classifications.csv'];before={k:(self.p/k).read_bytes() for k in paths}
         r=self.inline("import sys;sys.path.insert(0,'scripts');import common;real=common.os.replace;calls=0\ndef replace(a,b):\n global calls\n calls+=1\n if calls==2:raise OSError('synthetic replacement failure')\n return real(a,b)\ncommon.os.replace=replace\ncommon.publish_bundle({'data/questions.csv':b'changed','data/classifications.csv':b'changed'})")

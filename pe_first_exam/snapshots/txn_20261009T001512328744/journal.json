@@ -1,0 +1,22 @@
+{
+  "status": "committed",
+  "time": "2026-10-09T00:15:12+09:00",
+  "paths": [
+    "generated/questions/basic/02_information_logic.tex",
+    "generated/questions/aptitude/01_engineer_act.tex",
+    "generated/questions/applied_science/physics_chemistry/01_mechanics.tex",
+    "generated/questions/applied_science/physics_chemistry/02_oscillation_wave.tex"
+  ],
+  "existed": {
+    "generated/questions/basic/02_information_logic.tex": true,
+    "generated/questions/aptitude/01_engineer_act.tex": true,
+    "generated/questions/applied_science/physics_chemistry/01_mechanics.tex": true,
+    "generated/questions/applied_science/physics_chemistry/02_oscillation_wave.tex": true
+  },
+  "sha256": {
+    "generated/questions/basic/02_information_logic.tex": "64ededfbf00a009b2716f4a2dfde6aaffff511b860a4b203c10e39de43cc3248",
+    "generated/questions/aptitude/01_engineer_act.tex": "32bf9df9eee628fc63180f21c21b6a868095fbd6e2dc6be8489a743e1aa35430",
+    "generated/questions/applied_science/physics_chemistry/01_mechanics.tex": "55a7bf5dce25c178f5e817008e574d6a1fc6bee0b84b304ac1192ad96c0cc1a1",
+    "generated/questions/applied_science/physics_chemistry/02_oscillation_wave.tex": "d53c8657a04735899eb3fd2891997de7e6d98e08b0e122904d5a61bdc7cfb3de"
+  }
+}

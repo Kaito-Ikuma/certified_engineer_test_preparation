@@ -1,0 +1,45 @@
+{
+  "stem": "全地球水に占める氷・地下水を含む淡水の割合を選ぶ。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "全地球水に占める氷・地下水を含む淡水の割合を選ぶ。"
+  },
+  "choices": {
+    "1": {
+      "value": "3%",
+      "verdict": "通常の条件で適切",
+      "reason": "全水量を分母とする代表推計約2.5%に最も近い。"
+    },
+    "2": {
+      "value": "5%",
+      "verdict": "不適切",
+      "reason": "淡水総量の代表割合約2.5%より大きい。"
+    },
+    "3": {
+      "value": "7%",
+      "verdict": "不適切",
+      "reason": "淡水総量の代表割合約2.5%より大きい。"
+    },
+    "4": {
+      "value": "9%",
+      "verdict": "不適切",
+      "reason": "淡水総量の代表割合約2.5%より大きい。"
+    },
+    "5": {
+      "value": "11%",
+      "verdict": "不適切",
+      "reason": "淡水総量の代表割合約2.5%より大きい。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "水量は推計・対象範囲に依存する代表値。3%を厳密な物理定数とはしない。",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_010.png"
+  ],
+  "question_id": "H24-REG-APPLIED-35",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "aefa5373ac2da2abb6735999b4466ad7121cb64118daf49a802dd70865b4d958",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

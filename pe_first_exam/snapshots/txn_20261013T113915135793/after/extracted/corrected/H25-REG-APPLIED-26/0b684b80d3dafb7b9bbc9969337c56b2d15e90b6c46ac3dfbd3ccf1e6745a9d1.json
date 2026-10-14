@@ -1,0 +1,45 @@
+{
+  "stem": "島弧沈み込み系と中央海嶺の用語を区別する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "島弧沈み込み系と中央海嶺の用語を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "マントルウェッジ",
+      "verdict": "代表的条件で適切",
+      "reason": "沈み込むスラブの上のくさび状マントルで、流体供給と島弧マグマ生成に関係する。"
+    },
+    "2": {
+      "value": "背弧",
+      "verdict": "代表的条件で適切",
+      "reason": "火山弧の海溝と反対側で、伸張する背弧盆地等が形成され得る。"
+    },
+    "3": {
+      "value": "火山前線",
+      "verdict": "代表的条件で適切",
+      "reason": "島弧火山の分布の海溝側限界を示す線。海溝そのものと違う。"
+    },
+    "4": {
+      "value": "沈み込み帯",
+      "verdict": "代表的条件で適切",
+      "reason": "収束するプレートが地下へ沈み込む島弧活動の主要な生成場。"
+    },
+    "5": {
+      "value": "中央海嶺",
+      "verdict": "不適切",
+      "reason": "プレートが離れ、新しい海洋地殻を作る発散境界。島弧の直接構成用語ではない。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_010.png"
+  ],
+  "question_id": "H25-REG-APPLIED-26",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "71b2dddb72729a99b7c5953cfa213c3f0812ec095271b24598565823057175f9",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

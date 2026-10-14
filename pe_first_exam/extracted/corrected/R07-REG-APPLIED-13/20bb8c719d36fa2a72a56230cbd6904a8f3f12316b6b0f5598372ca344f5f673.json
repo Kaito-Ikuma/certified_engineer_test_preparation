@@ -1,0 +1,45 @@
+{
+  "stem": "四酸化二窒素の解離平衡で、反応種の分圧と不活性気体による全圧変化を区別する。",
+  "conditions": {
+    "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+    "成立条件": "1、2、3、5は温度・体積一定、4は温度一定で体積増加。理想気体近似。不活性な窒素と固体触媒は反応商に含めない。"
+  },
+  "choices": {
+    "1": {
+      "value": "定温定積で四酸化二窒素を加えると右へ",
+      "verdict": "適切",
+      "reason": "反応商の分母が増えてQが下がる。"
+    },
+    "2": {
+      "value": "定温定積で二酸化窒素を除くと右へ",
+      "verdict": "適切",
+      "reason": "反応商の分子が減ってQが下がる。"
+    },
+    "3": {
+      "value": "窒素を加えて圧力を上げると左へ",
+      "verdict": "不適切",
+      "reason": "一定体積では反応種の分圧が変わらず、圧縮による圧力上昇とは異なる。"
+    },
+    "4": {
+      "value": "一定温度で体積を増すと右へ",
+      "verdict": "適切",
+      "reason": "反応商が下がり気体の化学量論数の多い側へ進む。"
+    },
+    "5": {
+      "value": "定温定積で固体触媒を加えても平衡は変わらない",
+      "verdict": "適切",
+      "reason": "触媒はKを変えず、反応商の因子にもならない。"
+    }
+  },
+  "figures": "文字記述又は順序候補であり図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_005.png"
+  ],
+  "question_id": "R07-REG-APPLIED-13",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "4f0b973b0cd9fa622f3c43e3c22c4a1e0403a88bd01e3b5760c67db1eb754752",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

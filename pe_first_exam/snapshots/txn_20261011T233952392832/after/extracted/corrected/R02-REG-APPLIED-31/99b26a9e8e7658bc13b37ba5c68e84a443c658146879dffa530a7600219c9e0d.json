@@ -1,0 +1,46 @@
+{
+  "stem": "火山砕屑物を使う地層対比の適用範囲と、野外記載・鉱物分析の役割を比較する。",
+  "conditions": {
+    "判断方向": "最も適切な記述を選ぶ",
+    "原典照合": "15原典画像で18問の問題幹、全5肢、否定、専門語、化学式、候補順を確認。",
+    "適用条件": "流れと構造の典型対応は一意成因を保証しない。用語、時間間隙、保存、試料処理の条件を個別に示す。"
+  },
+  "choices": {
+    "1": {
+      "value": "局地的テフラを避け広域テフラだけを使う",
+      "verdict": "非該当・不適切",
+      "reason": "局地的噴火層もその地域の時間対比に使える。広域性は用途の利点であり必須条件ではない。"
+    },
+    "2": {
+      "value": "陸上地層だけに適用する",
+      "verdict": "非該当・不適切",
+      "reason": "海や湖の堆積物中のテフラも時間対比に使える。"
+    },
+    "3": {
+      "value": "色・粒度・層厚を使わず屈折率と組成で同定する",
+      "verdict": "非該当・不適切",
+      "reason": "分析値は重要だが野外の層序位置・色・粒径・層厚も使う。GSJの対比訂正には粒径/層厚による候補排除がある。"
+    },
+    "4": {
+      "value": "テフラは一般に火山砕屑物で溶岩と区別する",
+      "verdict": "該当・適切",
+      "reason": "破片状の噴出物を連続した溶岩流と分けるという本問の一般的な用語に対応する。"
+    },
+    "5": {
+      "value": "後期更新世以降だけに適用する",
+      "verdict": "非該当・不適切",
+      "reason": "GSJの中期更新世海成層の対比例だけでもこの限定への反例になる。古い層では保存と変質を別途検討する。"
+    }
+  },
+  "figures": "設問固有の図なし。全候補・専門語・化学式を原典で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_011.png"
+  ],
+  "question_id": "R02-REG-APPLIED-31",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "7bb04bc1b411789a90fb9cdf0453efc0a12361c91d2ab6c225bff146aeab14f2",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

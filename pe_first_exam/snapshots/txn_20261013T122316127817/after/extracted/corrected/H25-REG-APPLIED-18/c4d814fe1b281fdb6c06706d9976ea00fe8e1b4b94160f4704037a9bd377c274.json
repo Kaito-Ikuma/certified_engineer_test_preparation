@@ -1,0 +1,45 @@
+{
+  "stem": "土壌の酸化還元と鉄の色・溶出を対応させる。",
+  "conditions": {
+    "原典照合": "22原典画像で25問の全五肢・数値・単位・否定を確認。",
+    "対象": "土壌の酸化還元と鉄の色・溶出を対応させる。"
+  },
+  "choices": {
+    "1": {
+      "value": "粘土鉱物は風化・変質で生成",
+      "verdict": "代表的条件で適切",
+      "reason": "一次鉱物が水等と反応して粘土鉱物を生じる。形成環境や続成もあるため生成経路を一つだけに固定しない。"
+    },
+    "2": {
+      "value": "土壌の炭素は主として有機物",
+      "verdict": "条件・全称を留保",
+      "reason": "腐植等の有機炭素は重要。炭酸塩の多い乾燥地・石灰質土壌もあり、全土壌の総炭素を有機だけで説明しない。"
+    },
+    "3": {
+      "value": "酸化で淡青・還元で赤黄褐色",
+      "verdict": "不適切",
+      "reason": "典型的には酸化鉄は赤褐色〜黄褐色、還元・グライ化で灰色〜青灰色。原典は代表的な向きを逆にしている。"
+    },
+    "4": {
+      "value": "湛水でFe・Mnが二価で溶出",
+      "verdict": "代表的条件で適切",
+      "reason": "酸素消費と還元により酸化物のFe・Mnが還元され溶けやすくなる場合がある。沈殿・錯形成の条件も分ける。"
+    },
+    "5": {
+      "value": "交換の吸着基総数一定・電気的中性",
+      "verdict": "条件・全称を留保",
+      "reason": "同じ固定された交換サイト系では電荷を保ってカチオンが入れ替わる。ただし変異荷電の土壌・pH変化に対して全サイト容量が不変とはしない。"
+    }
+  },
+  "figures": "図表なしの五肢。原典画像は照合用で転載しない。",
+  "ambiguity": "全土壌の炭素と全pHに対する吸着基一定の全称を留保。反応の一系内の電荷保存と材料全体の交換容量を区別する。",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_008.png"
+  ],
+  "question_id": "H25-REG-APPLIED-18",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "cf7f8a878e3ad923861c71840e4d39b0312cfe3ebd1e949beb8a9ac36234a78f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

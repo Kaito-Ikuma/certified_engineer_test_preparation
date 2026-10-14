@@ -1,0 +1,187 @@
+{
+  "saved_at": "2026-10-12T19:46:48+09:00",
+  "official_answers_consulted_before_initial": false,
+  "original_images_reviewed": 24,
+  "records": [
+    {
+      "question_id": "H23-REG-APPLIED-09",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "answer_initial": "1",
+      "reason": "架橋フェノール樹脂のみ熱硬化。"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-14",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "answer_initial": "4",
+      "reason": "芳香族は高いアンチノック性で負が一般ではない。"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-15",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "answer_initial": "2",
+      "reason": "18炭素は末端1+メチレン16+カルボキシル1。"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-16",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "answer_initial": "3",
+      "reason": "アジピン酸はナイロン66、6はラクタム。"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-15",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "answer_initial": "4",
+      "reason": "PMMAの主鎖はC-Cで一般生分解性ではない。"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-18",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "answer_initial": "3",
+      "reason": "ナフサ分解主目的オレフィン、パラフィンではない。"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-14",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "answer_initial": "1",
+      "reason": "ナフサは軽油より低沸点。"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-17",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "answer_initial": "4",
+      "reason": "メチル→トルエン→ニトロ、ニトロベンゼン。"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-17",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "answer_initial": "2",
+      "reason": "H+は電子対受容、求電子。"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-13",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "answer_initial": "2",
+      "reason": "活性炭は固体吸着材。"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-14",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "answer_initial": "4",
+      "reason": "ニトロベンゼン比重は1超。"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-15",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "answer_initial": "5",
+      "reason": "C42mg,H3mg,O24mg→C7H6O3。"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-17",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "answer_initial": "4",
+      "reason": "PVCは熱可塑、ただし全ナイロンが二原料縮合との表現にも留保。"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-15",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "answer_initial": "2",
+      "reason": "C48mg,H8mg,O32mg→C2H4O。"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-16",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "answer_initial": "1",
+      "reason": "単置換環の二方向は等価で不斉中心なし。"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-17",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "answer_initial": "2",
+      "reason": "活性炭は吸着材。"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-11",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "answer_initial": "3",
+      "reason": "単置換ベンゼンの位置は全等価。"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-13",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "answer_initial": "3",
+      "reason": "C42mg,H3mg,O16mg→C7H6O2。"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-11",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "answer_initial": "4",
+      "reason": "C4,C5,C6骨格数2,3,5。"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-13",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "answer_initial": "1",
+      "reason": "メチルがo,p、ニトロがm。"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-17",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "answer_initial": "1",
+      "reason": "PEは汎用。他4は一般エンプラ分類。"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-15",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "answer_initial": "2",
+      "reason": "吸着しても溶液中に単量体・ミセルを持つ。"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-18",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "answer_initial": "3",
+      "reason": "単置換シクロヘキサンは非キラル。"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-12",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "answer_initial": "2",
+      "reason": "ニトロベンゼンは水より密。"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-16",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "answer_initial": "4",
+      "reason": "CMC未満は単量体存在。"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-18",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "answer_initial": "4",
+      "reason": "単置換ベンゼンは位置異性なし。"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-11",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "answer_initial": "4",
+      "reason": "C48mg,H12mg,O32mg→C2H6O。"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-14",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "answer_initial": "5",
+      "reason": "ねじれ/重なりはC-Cまわりのエタン。メタンにない。"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-17",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "answer_initial": "3",
+      "reason": "PVC熱可塑、ナイロン定義の全称に留保。"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-12",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "answer_initial": "2",
+      "reason": "C36mg,H3mg,O8mg→C6H6O。"
+    }
+  ]
+}

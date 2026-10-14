@@ -1,0 +1,45 @@
+{
+  "stem": "5条件に対応する物質量を比較して、最小のものを選ぶ。",
+  "conditions": {
+    "原子量": "C12.0、H1.0、O16.0、Na23.0、Cl35.5、Cu63.6。",
+    "気体条件": "0℃、1.013×10⁵ Pa。理想気体モル体積約22.4 L/mol。"
+  },
+  "choices": {
+    "1": {
+      "value": "標準状態のN2 14 L",
+      "verdict": "条件に不一致",
+      "reason": "14/22.4=0.625 molで、0.250 molより大きい。"
+    },
+    "2": {
+      "value": "質量10%の食塩水200 g中のNaCl",
+      "verdict": "条件に不一致",
+      "reason": "NaCl20 g、20/58.5≃0.342 molである。"
+    },
+    "3": {
+      "value": "水分子3.0×10²³個に相当する水",
+      "verdict": "条件に不一致",
+      "reason": "3.0×10²³/(6.02214076×10²³)≃0.498 molである。"
+    },
+    "4": {
+      "value": "Cu 64 gの酸化に消費するO2",
+      "verdict": "条件に不一致",
+      "reason": "CuO生成ならO2は64/(2×63.6)≃0.503 mol。Cu2O生成なら約0.252 molで、いずれも⑤の0.250 molより大きい。ただし生成酸化物は原典で未指定。"
+    },
+    "5": {
+      "value": "CH4 4.0 gを完全燃焼して発生するCO2",
+      "verdict": "条件に一致",
+      "reason": "CH4→CO2は1:1。4.0/16.0=0.250 molで最小。"
+    }
+  },
+  "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+  "ambiguity": "④のCu酸化生成物が未指定。CuO想定0.503 mol、Cu2O想定0.2516 molで、どちらでも⑤0.250 molが最小。反応条件の欠落はAstraで確認。",
+  "evidence": [
+    "extracted/pages/H30/basic/page_015.png"
+  ],
+  "question_id": "H30-REG-BASIC-4-1",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "15",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "6ce1441f76342a650b86903e99425c3b935f275ba71128ae5e6fb469438b6495",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

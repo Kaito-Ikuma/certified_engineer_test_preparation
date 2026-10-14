@@ -1,0 +1,45 @@
+{
+  "stem": "含水比・体積含水率・飽和度の分母を区別する。",
+  "conditions": {
+    "原典照合": "H25原典10頁で全五候補と記号を確認。",
+    "指定": "湿潤質量M、全体積V、水質量Mw、水体積Vw、110±5℃炉乾燥質量Ms、間隙体積Vφ。"
+  },
+  "choices": {
+    "1": {
+      "value": "Mw/M×100",
+      "verdict": "不適切",
+      "reason": "湿潤試料全質量が分母で、乾燥土質量を分母とする土質の含水比とは違う。"
+    },
+    "2": {
+      "value": "Mw/Ms×100",
+      "verdict": "代表的条件で適切",
+      "reason": "水の質量を乾燥土粒子の質量で割る含水比。百分率で示すため100を掛ける。"
+    },
+    "3": {
+      "value": "Mw/V×100",
+      "verdict": "不適切",
+      "reason": "質量/体積で密度の次元がある。百分率の無次元比ではない。"
+    },
+    "4": {
+      "value": "Vw/V×100",
+      "verdict": "不適切",
+      "reason": "全体積に対する水体積の体積含水率。質量の含水比ではない。"
+    },
+    "5": {
+      "value": "Vw/Vφ×100",
+      "verdict": "不適切",
+      "reason": "間隙全体積に対する水体積で飽和度。試料全体積の体積含水率とも違う。"
+    }
+  },
+  "figures": "図表なしの五肢。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_010.png"
+  ],
+  "question_id": "H25-REG-APPLIED-28",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "891c8a604bc716416098fad9f9f1d434d6f7bd9a0eb8f20379953ec6df44985f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

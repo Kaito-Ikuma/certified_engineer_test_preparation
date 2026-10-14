@@ -1,0 +1,45 @@
+{
+  "stem": "2019年度原油依存と輸入金額の分母。",
+  "conditions": {
+    "原典": "全五肢と否定方向・組合せ表を画像確認。",
+    "資料時点": "令和4年度の指定資料・統計年を保持し、後年値に置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "90/ホルムズ/サウジ/10",
+      "verdict": "適切・選択対象",
+      "reason": "独立に求めた組合せ 90/ホルムズ/サウジ/10 と一致する。"
+    },
+    "2": {
+      "value": "90/マラッカ/クウェート/32",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 90/ホルムズ/サウジ/10 と異なる。"
+    },
+    "3": {
+      "value": "90/ホルムズ/クウェート/10",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 90/ホルムズ/サウジ/10 と異なる。"
+    },
+    "4": {
+      "value": "67/マラッカ/クウェート/10",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 90/ホルムズ/サウジ/10 と異なる。"
+    },
+    "5": {
+      "value": "67/ホルムズ/サウジ/32",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 90/ホルムズ/サウジ/10 と異なる。"
+    }
+  },
+  "figures": "図の数値又は組合せ表を独自要約。原典画像は確認用のみ。",
+  "ambiguity": "エネルギー白書2021の2019年度元表・輸入額比の原図は追加確認対象。",
+  "evidence": [
+    "extracted/pages/R04/basic/page_018.png"
+  ],
+  "question_id": "R04-REG-BASIC-5-3",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "18",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "b42e7fd481607755445d5e99f64e085266d8ff9c9ad38142cd52e645e67c669d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

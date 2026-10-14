@@ -1,0 +1,44 @@
+{
+  "stem": "熱電対、金属の伝導、多孔質、放射について最も不適切な記述を選ぶ。",
+  "conditions": {
+    "方向": "最も不適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "異種金属又は合金2種で温度計測できる",
+      "verdict": "正しい",
+      "reason": "熱電対は2種の材料の熱電能の差から温度差を電圧へ変換する。"
+    },
+    "2": {
+      "value": "金属の熱伝導率／電気伝導率は極低温を除き絶対温度へ比例する",
+      "verdict": "通常の金属の電子輸送近似で正しい",
+      "reason": "ウィーデマン＝フランツ則の電子輸送の関係である。散乱の機構や格子熱伝導の大きさによって厳密には変わる。"
+    },
+    "3": {
+      "value": "ダイヤモンドの熱伝導率は銀より小さい",
+      "verdict": "通常のバルク比較で誤り",
+      "reason": "高品質バルクダイヤモンドは銀より大きい。金属の電気伝導の序列から熱伝導の序列を全材料へ拡張できない。"
+    },
+    "4": {
+      "value": "空孔にある気体は熱を運びにくく、多孔質材料は熱伝導率が低い",
+      "verdict": "一般的な断熱材料で正しい",
+      "reason": "固体の連続した伝導経路を減らし気体の低い伝導率を利用する。ただし大きな孔の対流や高温の放射は別に評価する。"
+    },
+    "5": {
+      "value": "熱放射は電磁波でのエネルギー移動である",
+      "verdict": "正しい",
+      "reason": "媒体の巨視的移動が必要な対流とは区別する。"
+    }
+  },
+  "figures": "正誤方向、全条件・数値・単位、候補5肢を原典画像で確認。図なし。組合せ問題では表の全欄を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_002.png"
+  ],
+  "question_id": "R04-REG-APPLIED-07",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "0db3ec4e1ff71aa58d12e2173b653569a0512efcb19c61dc0037dc06722203de",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

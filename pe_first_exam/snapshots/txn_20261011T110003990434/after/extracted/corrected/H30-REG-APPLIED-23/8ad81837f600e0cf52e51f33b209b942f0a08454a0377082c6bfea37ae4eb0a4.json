@@ -1,0 +1,45 @@
+{
+  "stem": "活断層調査における形態観察、露出断面、岩相踏査、古環境分析、磁性物性の役割を比較する。",
+  "conditions": {
+    "判断方向": "最も関係が薄いもの。",
+    "原典照合": "全5肢、上下・平行直交・右左・時代・固結度と割合を画像照合。図なし。"
+  },
+  "choices": {
+    "1": {
+      "value": "空中写真判読",
+      "verdict": "直接関連",
+      "reason": "線状地形や変位地形を広域で認識し候補位置を絞る。"
+    },
+    "2": {
+      "value": "トレンチ調査",
+      "verdict": "直接関連",
+      "reason": "掘削断面で断層と地層の切断・被覆関係を観察し、年代資料と組み合わせて活動履歴を調べる。"
+    },
+    "3": {
+      "value": "地質踏査",
+      "verdict": "直接関連",
+      "reason": "露頭で岩相・層序・姿勢・断層岩・変位を観察し地質図へ統合する。"
+    },
+    "4": {
+      "value": "花粉分析",
+      "verdict": "公式候補・相対順位に疑義",
+      "reason": "植生・古環境や層序対比の情報であり、断層の直接変位の測定ではない。ただしGSJの活断層調査で花粉分析が実施される例もある。"
+    },
+    "5": {
+      "value": "磁気探査",
+      "verdict": "初回候補・実際の利用あり",
+      "reason": "岩石の磁化コントラストから地下の構造境界を推定し得る。GSJの2017資料は沿岸活断層調査で空中磁気探査を利用すると記す。"
+    }
+  },
+  "figures": "設問固有図なし。原典の用語・否定・全5肢を確認。剪断の方位条件を推測で補わない。",
+  "ambiguity": "独立初回5、公式4の不一致。GSJ2017は磁気探査の活断層調査利用、GSJ2014は活断層調査での花粉分析を記録する。「最も薄い」の対象・目的が未指定であり、4の排他的妥当性は追加査読を要する。公式から逆算して花粉が使われないとしない。",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_008.png"
+  ],
+  "question_id": "H30-REG-APPLIED-23",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "1fd7f59a3dd8aae2c7aaa1223f7d697b2bc4f72b1db7a74be57800abcd4faf9b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

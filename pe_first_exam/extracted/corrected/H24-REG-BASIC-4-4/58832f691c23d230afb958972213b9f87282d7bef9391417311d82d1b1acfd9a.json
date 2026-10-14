@@ -1,0 +1,45 @@
+{
+  "stem": "熱輸送の担い手と材料の乱れ・気孔。",
+  "conditions": {
+    "確認": "原典26画像で五肢・図表と条件を照合。",
+    "対象": "電子とフォノン、散乱、気孔率、有効熱伝導率、結晶化と方向性。"
+  },
+  "choices": {
+    "1": {
+      "value": "高純度金属の電子による熱輸送",
+      "verdict": "条件内で適切",
+      "reason": "通常の金属では自由電子の寄与が大きい。"
+    },
+    "2": {
+      "value": "合金化で純金属より熱伝導率が低下",
+      "verdict": "条件内で適切",
+      "reason": "不純物や構造の乱れが輸送を散乱する一般的傾向。"
+    },
+    "3": {
+      "value": "非晶質は結晶質より熱伝導率が低い",
+      "verdict": "条件内で適切",
+      "reason": "同系材料の通常比較では乱れによるフォノン散乱が大きい。すべての別組成の比較ではない。"
+    },
+    "4": {
+      "value": "気孔率を増すと熱伝導率が増す",
+      "verdict": "不適切",
+      "reason": "低伝導の空隙を増す通常条件では有効熱伝導率は下がる。"
+    },
+    "5": {
+      "value": "結晶化率が高い高分子の熱伝導率は高い",
+      "verdict": "条件内で適切",
+      "reason": "同じ物質で規則性が増す一般的傾向。方向性や構造条件は別に検討する。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "原典の合金・非晶質・結晶化率の記述は一般的傾向として限定。同組成・構造・温度の全称にはしない。",
+  "evidence": [
+    "extracted/pages/H24/basic/page_013.png"
+  ],
+  "question_id": "H24-REG-BASIC-4-4",
+  "source_file": "sources/H24/basic.pdf",
+  "source_page": "13",
+  "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+  "raw_text_sha256": "699e26cff6709922adba2ac5835cc3692d2707a700d863d766367d4b166da930",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

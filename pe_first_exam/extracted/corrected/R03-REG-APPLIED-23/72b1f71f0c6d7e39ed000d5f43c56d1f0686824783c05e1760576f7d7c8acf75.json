@@ -1,0 +1,45 @@
+{
+  "stem": "泥質変成岩の組織と変成度による岩型名を判定する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "一般的な岩石分類・形成過程。"
+  },
+  "choices": {
+    "1": {
+      "value": "スレートは剥離性の発達した細粒岩で石材にも使われる。",
+      "verdict": "適切（一般的分類）",
+      "reason": "細粒でもよく割れる劈開を持つ点が特徴で、屋根材などへ加工できる。"
+    },
+    "2": {
+      "value": "泥質岩の変成温度上昇に伴いスレート・千枚岩・片岩・片麻岩の順の変化が見られる。",
+      "verdict": "適切（一般的分類）",
+      "reason": "泥質の代表的な進行変成系列である。岩型名は組成・変形・組織にも依存し、温度だけの万能温度計ではない。"
+    },
+    "3": {
+      "value": "片麻岩は粗粒で片状構造や縞状構造が見られない。",
+      "verdict": "不適切",
+      "reason": "片麻岩は明暗の鉱物群が作る縞状組織などを持つ。見られないとの否定が誤り。"
+    },
+    "4": {
+      "value": "片岩は片理の発達した広域変成岩の総称である。",
+      "verdict": "適切（一般的分類）",
+      "reason": "配向した板状鉱物等が面構造を作る。片理は単純な堆積時の層理とは異なる。"
+    },
+    "5": {
+      "value": "ホルンフェルスは一般に片理・縞を持たず熱変成で形成される。",
+      "verdict": "適切（一般的分類）",
+      "reason": "方向性に乏しい緻密な再結晶組織が典型である。原岩の構造が残ることまで絶対に排除しない。"
+    }
+  },
+  "figures": "原典の問題幹・否定・鉱物名・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_008.png"
+  ],
+  "question_id": "R03-REG-APPLIED-23",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "8c212a3983560dd06b19989c60dfd537a3a42d3dd2165f3816afab749bcdddfc",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

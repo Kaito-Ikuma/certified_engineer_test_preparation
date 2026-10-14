@@ -1,0 +1,45 @@
+{
+  "stem": "中性のCa、Ar、Cl核種の比較について、適切な記述を選ぶ。",
+  "conditions": {
+    "核種": "\\({}^{40}_{20}Ca,{}^{40}_{18}Ar,{}^{35}_{17}Cl,{}^{37}_{17}Cl\\)",
+    "条件": "いずれも電荷を持たない原子。"
+  },
+  "choices": {
+    "1": {
+      "value": "Ca-40(Z=20)とAr-40(Z=18)の中性子数は等しい。",
+      "verdict": "不適切",
+      "reason": "中性子数A−Zは20と22なので違う。"
+    },
+    "2": {
+      "value": "Cl-35とCl-37(Z=17)の中性子数は等しい。",
+      "verdict": "不適切",
+      "reason": "35−17=18、37−17=20なので違う。"
+    },
+    "3": {
+      "value": "Cl-35とCl-37の電子数は等しい。",
+      "verdict": "適切",
+      "reason": "中性原子なので電子数はいずれもZ=17である。"
+    },
+    "4": {
+      "value": "Ca-40とAr-40は同位体である。",
+      "verdict": "不適切",
+      "reason": "同位体はZが同じでAが違う。ここではZが違いAが同じ同重体である。"
+    },
+    "5": {
+      "value": "Cl-35とCl-37は同素体である。",
+      "verdict": "不適切",
+      "reason": "同素体は同じ元素が異なる結合・構造を持つ単体であり、核の中性子数違いとは異なる。"
+    }
+  },
+  "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_013.png"
+  ],
+  "question_id": "R05-REG-BASIC-4-1",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "13",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "470e2ba5111f1f8f0bbbf43b0c5bb870362cd7bcfcf258b5edc03c5b61ae6ca9",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

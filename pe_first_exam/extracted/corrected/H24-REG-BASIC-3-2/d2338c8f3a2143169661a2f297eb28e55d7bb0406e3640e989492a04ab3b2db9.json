@@ -1,0 +1,53 @@
+{
+  "stem": "ばね接続から有効剛性を求め、3系の固有振動数を比較する。",
+  "conditions": {
+    "spring_constants": "k,k",
+    "mass": "m",
+    "a": "two parallel springs between left wall and mass",
+    "b": "two springs in series between left wall and mass",
+    "c": "mass between two fixed walls, one spring on each side"
+  },
+  "choices": {
+    "1": {
+      "value": "a",
+      "verdict": "不適切",
+      "reason": "並列二本の剛性2kで最小ではない。"
+    },
+    "2": {
+      "value": "b",
+      "verdict": "適切・選択対象",
+      "reason": "直列二本の剛性k/2で最小。"
+    },
+    "3": {
+      "value": "c",
+      "verdict": "不適切",
+      "reason": "両側ばねの復元力は合計2kxで最小ではない。"
+    },
+    "4": {
+      "value": "aとb",
+      "verdict": "不適切",
+      "reason": "aが最小でないため組合せは不適切。"
+    },
+    "5": {
+      "value": "bとc",
+      "verdict": "不適切",
+      "reason": "cが最小でないため組合せは不適切。"
+    }
+  },
+  "figures": [
+    {
+      "page": 8,
+      "description": "a並列、b直列、c左右固定壁。原典図の接続を確認。"
+    }
+  ],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/basic/page_008.png"
+  ],
+  "question_id": "H24-REG-BASIC-3-2",
+  "source_file": "sources/H24/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+  "raw_text_sha256": "5d8a2d8c09b85c7cc71688a60ff357e1c86269ee27d4c4448d9166a086d16540",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

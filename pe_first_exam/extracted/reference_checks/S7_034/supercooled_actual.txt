@@ -1,0 +1,428 @@
+                                                                               IAPWS G12-15
+
+
+     The International Association for the Properties of Water and Steam
+                                       Stockholm, Sweden
+                                            July 2015
+
+         Guideline on Thermodynamic Properties of Supercooled Water
+            © 2015 International Association for the Properties of Water and Steam
+Publication in whole or in part is allowed in all countries provided that attribution is given to the
+                International Association for the Properties of Water and Steam
+
+  Please cite as: International Association for the Properties of Water and Steam, Guideline on
+                     Thermodynamic Properties of Supercooled Water (2015).
+
+
+This Guideline has been authorized by the International Association for the Properties of Water
+and Steam (IAPWS) at its meeting in Stockholm, Sweden, 28 June – 3 July, 2015. The members
+of IAPWS are: Britain and Ireland, Canada, the Czech Republic, Germany, Japan, Russia,
+Scandinavia (Denmark, Finland, Norway and Sweden), and the United States, and Associate
+Members Argentina and Brazil, Australia, France, Greece, New Zealand and Switzerland. The
+President at the time of adoption of this document is Dr. David Guzonas of Canada.
+
+
+                                             Summary
+The equation of state for cold and supercooled liquid H2O (ordinary water substance) provided in
+this guideline is a fundamental equation for the Gibbs energy as a function of temperature and
+pressure; details of the equation can be found in Ref. [1].
+
+
+
+                   This guideline contains 10 pages, including this cover page.
+
+
+
+
+Further information about this Guideline and other documents issued by IAPWS can be obtained
+from the Executive Secretary of IAPWS or from http://www.iapws.org.
+                                                  2
+
+
+                                               Contents
+1    Nomenclature                                                                                  2
+2    Equation of State                                                                             3
+3    Thermodynamic Properties                                                                      5
+4    Range of Validity                                                                             7
+5    Estimates of Uncertainty                                                                      8
+6    Solving Eq. (8)                                                                               9
+7    Computer-Program Verification                                                                 9
+8    References                                                                                    9
+
+
+
+
+                                        1 Nomenclature
+
+Thermodynamic quantities                                  Other dimensionless quantities
+cp   Specific isobaric heat capacity                      L     Ordering field
+cv   Specific isochoric heat capacity                     x     Mole fraction of
+g    Specific Gibbs energy                                      low-density structure
+p    Pressure                                                  Order parameter
+R    Specific gas constant                                      Scaling susceptibility
+s    Specific entropy                                           Interaction parameter
+T    Absolute temperature (ITS-90)
+u    Specific internal energy                             Subscripts
+v    Specific volume                                      0     Reference quantity
+w    Speed of sound                                       LL    Liquid–liquid critical point
+p   Thermal expansion coefficient,                       H     Homogeneous ice nucleation limit
+         p  (1 /  )( / T ) p                       t     Ice I–liquid–vapor triple point
+T     Isothermal compressibility,                             Partial derivative with respect to 
+        T  (1 /  )(  / p)T                               Partial derivative with respect to 
+
+      Reduced pressure,   p /(  0 RTLL )
+                                                          Superscripts
+      Mass density
+                                                          r     Regular background contribution
+      Reduced temperature,   (T / TLL )  1
+      Reduced Gibbs energy,   g /( RTLL )
+                                                              3
+
+
+                                                 2 Equation of State
+
+The equation of state presented here is in the form of the dimensionless Gibbs energy
+  g /( RTLL ) as a function of temperature and pressure, corresponding to a Gibbs potential
+function. The expression for the Gibbs energy is based on a two-state model, in which water is
+considered as a mixture of a high-density structure and a low-density structure,
+
+       (T , P )   r ( , )  (  1)x L( , )  x ln x  (1  x ) ln(1  x )   ( ) x(1  x ) ,   (1)
+
+where the reduced temperature  and the reduced pressure  are defined as
+
+            T                          p
+              1,                       .                                                              (2)
+           TLL                      0 RTLL
+
+The values of reference parameters TLL and 0 and the specific gas constant R are given in
+Table 1. The dimensionless background Gibbs energy  r is given by
+
+                     
+       r (     ci (  1) ai (   0 )bi e  d i (  0 ) .                                       (3)
+                     i 
+The reference parameter  0 is given in Table 1, and the coefficients ai, bi, and ci are listed in
+Table 2. The field L( ,  ) has the form
+
+      L( , )  L0
+                        K2
+                             1  k0k2  k1 (  k2 )  K1 ,                                             (4)
+                       2k1k2
+
+where the values of L0, k0, k1, and k2 are given in Table 1, and K1 and K2 are given by
+
+             
+      K1  1  k0k2  k1 (  k2 )  4k0k1k2 (  k2 ) 1/2,
+                                            2
+                                                                                                          (5)
+      K 2  (1  k22 )1/2 .
+
+The interaction parameter  has a linear pressure dependence,
+
+       ( )  2  0 ,                                                                                   (6)
+
+with 0 given in Table 1. The mole fraction x of the low-density structure depends on pressure
+and temperature, and is found by minimizing the Gibbs energy as a function of x at constant
+temperature and pressure,
+
+        
+            0,                                                                                          (7)
+       x T , p
+                                                       4
+
+
+which corresponds to the condition
+
+                       x
+      L( , )  ln          ( )(1  2 x )  0 .                                            (8)
+                      1 x
+
+This equation cannot be solved analytically for x, so the solution must be found numerically.
+Further information on solving this equation is given in Sec. 6.
+
+
+
+Table 1. Parameter values for the equation of state
+Parameter        Value                                Parameter    Value          Unit
+0                0.521 226 9                         TLL           228.2         K
+L0                0.763 179 54                        0           1081.648 2     kg m−3
+k0                0.072 158 686                       R             461.523 087   J kg−1 K−1
+k1               −0.315 692 32
+k2                5.299 260 8
+                      300  10 6 Pa
+0
+                         0 RTLL
+
+
+Table 2. Parameter values for Eq. (3)
+ i               ci                              ai                bi              di
+ 1        −8.157 068 138 165 5                   0                 0               0
+ 2         1.287 503 2                           0                 1               0
+ 3         7.090 167 359 801 2                   1                 0               0
+ 4        −3.277 916 1 × 10−2                   −0.2555            2.1051         −0.0016
+ 5         7.370 394 9 × 10−1                    1.5762            1.1422          0.6894
+ 6        −2.162 862 2 × 10−1                    1.6400            0.9510          0.0130
+ 7        −5.178 247 9                           3.6385            0               0.0002
+ 8         4.229 351 7 × 10−4                   −0.3828            3.6402          0.0435
+ 9         2.359 210 9 × 10−2                    1.6219            2.0760          0.0500
+10         4.377 375 4                           4.3287           −0.0016          0.0004
+11        −2.996 777 0 × 10−3                    3.4763            2.2769          0.0528
+12        −9.655 801 8 × 10−1                    5.1556            0.0008          0.0147
+13         3.759 528 6                          −0.3593            0.3706          0.8584
+14         1.263 244 1                           5.0361           −0.3975          0.9924
+15         2.854 269 7 × 10−1                    2.9786            2.9730          1.0041
+16        −8.599 494 7 × 10−1                    6.2373           −0.3180          1.0961
+17        −3.291 615 3 × 10−1                    4.0460            2.9805          1.0228
+18         9.001 961 6 × 10−2                    5.3558            2.9265          1.0303
+19         8.114 972 6 × 10−2                    9.0157            0.4456          1.6180
+20        −3.278 821 3                           1.2194            0.1298          0.5213
+                                                                 5
+
+
+The values of the coefficients c1 and c3 in Table 2 do not affect measurable properties of liquid
+water. The values of these coefficients have been chosen such that values of the specific entropy
+and the specific Gibbs energy at the triple point satisfy the following conditions. The zero point
+of the specific entropy s has been chosen in accordance with the IAPWS convention that the
+specific entropy of liquid water is zero at the triple point,
+
+      s(Tt , pt )  0 ,                                                                                (9)
+
+where Tt and pt are the temperature and pressure at the ice Ih–liquid–vapor triple point [3,4],
+
+      Tt  273.16 K,
+                                                                                                      (10)
+      pt  611.654 771 007 894 Pa.
+
+The value for the triple-point pressure given here is not the experimental value, but was
+calculated [4] from the IAPWS-95 formulation and the equation of state of ice Ih. The calculated
+value agrees with the experimental value of (611.657 ± 0.010) Pa. In accordance with IAPWS
+convention, in the IAPWS-95 formulation [2] the internal energy u of liquid water is set to zero
+at the triple point given by Eq. (10). In the present formulation, the specific internal energy of
+liquid water at the triple point slightly deviates from zero and it is defined by the condition that
+the specific Gibbs energy g at the ice Ih–liquid–vapor triple point equals the specific Gibbs
+energy calculated from the IAPWS-95 formulation gIAPWS-95 [2],
+
+      g (Tt , p t )  u (Tt , p t )  Tt s(Tt , p t )  p t v(Tt , p t )  g IAPWS-95 (Tt , p t ) .   (11)
+
+By this choice, it is ensured that the temperature and pressure at the triple point computed from
+the present formulation for the liquid, the formulation IAPWS-95 [2] for the vapor, and the 2006
+formulation for ice Ih [3], are equal to the values in Eq. (10) within the numerical precision.
+
+
+                                         3 Thermodynamic Properties
+
+All thermodynamic properties can be derived from Eq. (1) by using the derivatives of the dimen-
+sionless Gibbs energy with respect to temperature and pressure. It is convenient to express the
+thermodynamic properties in terms of the order parameter  and susceptibility  , defined as
+
+                                                          1
+                                       2           
+        2 x  1,                       2
+                                                  .                                               (12)
+                                      1          
+                                                                        6
+
+
+The specific volume v is given by
+
+           1   1  0        2                      r
+      v                (1     )  L  (  1)        ,                                                 (13)
+           0  2  2                               
+                                                          
+and the mass density  is found from   1 / v . In Eq. (13) and in the following equations, sub-
+scripts  and  indicate partial derivatives with respect to the subscripted quantities.
+Expressions for the derivatives of L and  r with respect to  and  are given in Table 3.
+
+The specific entropy s is given by
+
+              (  1) L                                                                     
+      s   R            (  1)  x L  x ln x  (1  x ) ln(1  x )   x(1  x )   r  .            (14)
+                  2                                                                          
+
+The isothermal compressibility  T , thermal expansion coefficient  p , and specific isobaric heat
+capacity cp are given by
+
+                     1
+      T           
+              RTLL  2
+              2
+                                                                
+                            ( L  0 ) 2  (  1) L  r  ,        
+              0                                                  
+                    L                  1  0 (1   2 )              (  1) L                       
+      p                (  1)(  1)                    L (  1)            ( L  0 )  r  ,
+              0TLL  2                    2       2                         2                            
+
+                                                      
+      c p   R (  1) L (  1)  12 (  1) L (  1)  L2    r .                              (15)
+
+The specific isochoric heat capacity cv is found from the thermodynamic relation
+
+                   T 2p
+      cv  c p              ,                                                                               (16)
+                       T
+
+and the speed of sound w is found from
+
+                             1 / 2                        1 / 2
+               c                             T 2p 
+      w   T v                      T                      .                                        (17)
+              c p                            cp 
+                                                     
+                                                         7
+
+
+Table 3. Derivatives of L and  r
+
+Derivatives of L                                             Derivatives of  r (see Note)
+                                                                     
+       L0 K 2  1  k0k2  k1 (  k2 ) 
+L           1                                              ci ai ai 1 bi e  d i
+                                                               r
+         2              K1                                       i 
+        L0 K 2 ( K1  k0k2  k1  k1k2  1)                         
+L 
+                        2k2 K1                                r   ci ai  bi 1 (bi  d i )e  d i
+                                                                     i 
+                                                                       
+       2L K k k k 2
+L   0 2 30 1 2                                            r   ci ai (ai  1) ai  2 bi e  d i
+           K1                                                        i 
+        2 L0 K 2k0k1k2                                                
+L                                                            r
+                                                                 ci ai ai 1 bi 1 (bi  d i )e  d i
+              K13
+                                                                      i 
+
+                                                                                                            
+          2 L0 K 2k0k1                                                  
+L                                                          r
+                                                                 ci ai  bi  2 (d i  bi )2  bi e  d i
+               K13
+                                                                      i 
+Note: to simplify the expressions, the following shorthand definitions are used:     1 and      0 .
+
+
+
+                                            4 Range of Validity
+
+The equation of state is recommended for the metastable liquid from the homogeneous ice
+nucleation temperature to the melting temperature at pressures from 0 MPa to 400 MPa. The
+equation is also valid for stable liquid states up to 300 K in the same pressure range, where
+IAPWS-95 remains the recommended formulation. In this latter region, calculated properties
+agree with those from IAPWS-95 within their mutual uncertainties. The equation of state
+behaves reasonably when extrapolated to 1000 MPa.
+
+The homogeneous ice nucleation curve can be approximated by the fits given in Eqs. (18) and
+(19) [1]. There is a discontinuity in the slope of the homogeneous ice nucleation curve at
+approximately 181.4 K and 198.9 MPa, where Eqs. (18) and (19) intersect. Equation (18) is to be
+used at pressures below the discontinuity, and Eq. (19) at pressures above it.
+
+For pressures in the range of 0 MPa to 198.9 MPa:
+
+        pH / MPa  0.1  228.27(1   6.243 )  15.724(1   79.81 ) ,          with   T /( 235.15 K) .           (18)
+
+For pressures in the range of 198.9 MPa to 1500 MPa:
+
+        TH / K  172.82  0.03718( p / MPa )  3.403  10 5 ( p / MPa ) 2  1.573  10 8 ( p / MPa ) 3 . (19)
+
+Here TH and pH are the temperature and pressure on the homogeneous ice nucleation curve.
+                                              8
+
+
+                                5 Estimates of Uncertainty
+
+Estimates have been made of the uncertainty of the density and speed of sound when calculated
+from the equation of state. These estimates, shown in Figs. 1 and 2, were derived from compari-
+sons with the various sets of experimental data.
+
+
+
+
+                                                         Fig. 1. Uncertainties in density
+                                                         estimated for Eq. (1). The thin
+                                                         rectangles around zero pressure refer
+                                                         to pressures near atmospheric
+                                                         (0.09 MPa < p < 0.11 MPa). TM
+                                                         indicates the melting temperature [5]
+                                                         and TH the homogeneous nucleation
+                                                         temperature (Sec. 4). The melting
+                                                         curve does not separate uncertainty
+                                                         regions.
+
+
+
+
+                                                         Fig. 2. Uncertainties in speed of
+                                                         sound estimated for Eq. (1). The thin
+                                                         rectangles around zero pressure refer
+                                                         to pressures near atmospheric
+                                                         (0.09 MPa < p < 0.11 MPa). TM
+                                                         indicates the melting temperature
+                                                         [5]. In the region labeled “No
+                                                         estimate given”, there are no
+                                                         experimental data for the speed of
+                                                         sound; this region extends down to
+                                                         the homogeneous nucleation
+                                                         temperature.
+                                                                        9
+
+
+                                                           6 Solving Eq. (8)
+
+To find x, Eq. (8) must be solved numerically. For some implementations, it is helpful or
+necessary to know the interval in which the solution is located. Table 4 provides several of these
+intervals for x, depending on the values of L and  .
+
+Table 4. Intervals in which x, the solution of Eq. (8), is located
+
+                                                               Interval for x, containing the solution of Eq. (8)
+           Values of L and 
+                                                              Lower bound                          Upper bound
+        < (10/9) [ln(19) – L]                                    0.049                                 0.5
+      (10/9) [ln(19) – L] ≤  <
+                                                                       0.0099                                            0.051
+           (50/49) [ln(99) – L]
+          ≥ (50/49) [ln(99) – L]          0.99 exp[−(50/49)L −  ]                                      min(1.1 exp(−L −  ), 0.0101) a
+a
+  the “min” function returns the smallest of its arguments
+
+
+                                      7 Computer-Program Verification
+
+For the verification of computer programs, Table 5 lists calculated values for several properties
+as well as values of x and L. To reproduce the values in Table 5 to the number of digits given,
+the solution for the fraction x should be accurate to 1010.
+
+Table 5. Values for computer program verification
+
+  T            p                            p                        T                cp                w
+                                 3                               4         1          1       1                        x               L
+  K           MPa         kg m          10   4
+                                                  K   1     10        MPa        J kg        K          m s 1
+273.15       0.101325    999.842 29     −0.683 042           5.088 499            4 218.300 2          1 402.388 6   0.096 654 715 5   0.621 204 74
+235.15       0.101325    968.099 99    −29.633 816          11.580 785            5 997.563 2          1 134.585 5   0.255 102 858 7   0.091 763 68
+250        200          1090.456 77      3.267 768           3.361 311            3 708.390 2          1 668.202 0   0.030 429 266 7   0.723 770 81
+200        400          1185.028 00      6.716 009           2.567 237            3 338.525 0          1 899.329 4   0.007 170 080 9   1.155 396 5
+250        400          1151.715 17      4.929 927           2.277 029            3 757.214 4          2 015.878 2   0.005 358 836 6   1.434 514 5
+
+
+
+
+                                                            8 References
+
+[1]      Holten, V., Sengers, J.V., and Anisimov, M.A., Equation of state for supercooled water at
+         pressures up to 400 MPa, J. Phys. Chem. Ref. Data 43, 043101 (2014).
+[2]      IAPWS, Revised Release on the IAPWS Formulation 1995 for the Thermodynamic
+         Properties of Ordinary Water Substance for General and Scientific Use (2014). Available
+         from www.iapws.org.
+[3]      IAPWS, Revised Release on the Equation of State 2006 for H2O Ice Ih (2009). Available
+         from www.iapws.org.
+                                             10
+
+[4]   Feistel, R., Wright, D.G., Miyagawa, K., Harvey, A.H., Hruby, J., Jackett, D.R.,
+      McDougall, T.J., and Wagner, W., Mutually consistent thermodynamic potentials for fluid
+      water, ice and seawater: a new standard for oceanography, Ocean Sci. 4, 275 (2008).
+      Available at www.ocean-sci.net/4/275/2008/.
+[5]   IAPWS, Revised Release on the Pressure along the Melting and Sublimation Curves of
+      Ordinary Water Substance (2011). Available from www.iapws.org.
+

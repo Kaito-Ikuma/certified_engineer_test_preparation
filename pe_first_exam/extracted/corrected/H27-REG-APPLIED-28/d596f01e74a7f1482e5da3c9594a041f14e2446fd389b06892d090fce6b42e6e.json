@@ -1,0 +1,45 @@
+{
+  "stem": "玄武岩の組成・起源・粘性について不適切な記述を選ぶ。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "一般的な岩石分類・形成過程。"
+  },
+  "choices": {
+    "1": {
+      "value": "富士火山や伊豆大島を構成する苦鉄質火山岩である。",
+      "verdict": "適切（一般的分類）",
+      "reason": "代表的な玄武岩火山の例である。ただし火山全体の全噴出物を単一岩種と断定しない。"
+    },
+    "2": {
+      "value": "SiO2はおよそ50質量%である。",
+      "verdict": "適切（一般的分類）",
+      "reason": "玄武岩の代表的値で、全ての試料を正確に50%とする意味ではない。"
+    },
+    "3": {
+      "value": "鉄・マグネシウムの含有量は流紋岩より少ない。",
+      "verdict": "不適切",
+      "reason": "玄武岩は流紋岩より一般にFe・Mgに富むので、比較方向が逆。"
+    },
+    "4": {
+      "value": "上部マントル岩石の部分溶融が起源の一つである。",
+      "verdict": "適切（一般的分類）",
+      "reason": "マントルのかんらん岩が部分溶融して玄武岩質メルトを生じ得る。起源を全溶融と混同しない。"
+    },
+    "5": {
+      "value": "流紋岩より粘性が低く、平らな火山体を作りやすい。",
+      "verdict": "適切（一般的分類）",
+      "reason": "一般に高温でSiO2に乏しい玄武岩質溶岩は流紋岩質より流れやすい。噴火様式・供給量・地形も火山形状へ影響する。"
+    }
+  },
+  "figures": "原典の問題幹・否定・鉱物名・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_011.png"
+  ],
+  "question_id": "H27-REG-APPLIED-28",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "d137ccdc8c91ca43899e5cab3d891db6952d0e92a65fd3037c17f74edbebb98a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

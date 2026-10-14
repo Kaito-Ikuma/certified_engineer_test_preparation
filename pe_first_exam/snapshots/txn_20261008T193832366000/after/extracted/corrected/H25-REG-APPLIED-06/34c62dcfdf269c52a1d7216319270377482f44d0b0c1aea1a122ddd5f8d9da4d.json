@@ -1,0 +1,46 @@
+{
+  "stem": "棒の軸方向の応力とひずみの比例法則、比例係数、横ひずみと軸ひずみの比の名称を対応付ける。",
+  "conditions": {
+    "loading": "axial tension or compression",
+    "regime": "linear elasticity",
+    "requested": "law, axial modulus, transverse-to-axial strain ratio"
+  },
+  "choices": {
+    "1": {
+      "value": "フック・ヤング・ポアソン",
+      "verdict": "採用",
+      "reason": "法則・縦弾性係数・横収縮の比が全て対応する。"
+    },
+    "2": {
+      "value": "ストークス・ヤング・レイリー",
+      "verdict": "不採用",
+      "reason": "ストークスの法則は粘性抵抗を扱い、レイリー比も横収縮比ではない。"
+    },
+    "3": {
+      "value": "ストークス・剛性・レイリー",
+      "verdict": "不採用",
+      "reason": "法則と比例係数と横収縮比の名称が一致しない。"
+    },
+    "4": {
+      "value": "フック・ヤング・レイリー",
+      "verdict": "不採用",
+      "reason": "レイリー比はこの横ひずみ比の名称ではない。"
+    },
+    "5": {
+      "value": "フック・剛性・ポアソン",
+      "verdict": "不採用",
+      "reason": "剛性率はせん断変形に対する係数で、軸引張の係数ではない。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_003.png"
+  ],
+  "question_id": "H25-REG-APPLIED-06",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "63b32c4b2d826aa5d89ca7467024bc784d48b5fd32c2e6a04df4da01c48ef506",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

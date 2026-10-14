@@ -1,0 +1,44 @@
+{
+  "stem": "タンパク質の単位・連結と生体触媒、アミラーゼの基質を4空欄へ対応させる。",
+  "conditions": {
+    "空欄": "ア〜エ。タンパク質を主成分とする生体触媒。"
+  },
+  "choices": {
+    "1": {
+      "value": "グルコース／イオン／酵素／デンプン",
+      "verdict": "不適切",
+      "reason": "タンパク質の単位と主鎖結合が違う。グルコースは糖の単位である。"
+    },
+    "2": {
+      "value": "グルコース／ペプチド／抗体／セルロース",
+      "verdict": "不適切",
+      "reason": "単位が違い、抗体は一般の生体反応触媒の総称ではない。アミラーゼはセルロースのβ結合を標的としない。"
+    },
+    "3": {
+      "value": "アミノ酸／ペプチド／酵素／デンプン",
+      "verdict": "最適",
+      "reason": "アミノ酸、ペプチド、酵素、デンプンの4項目が整合。"
+    },
+    "4": {
+      "value": "アミノ酸／ペプチド／抗体／セルロース",
+      "verdict": "不適切",
+      "reason": "単位と結合は合うが、触媒の総称と基質が違う。"
+    },
+    "5": {
+      "value": "アミノ酸／イオン／酵素／デンプン",
+      "verdict": "不適切",
+      "reason": "主鎖は共有のペプチド結合で、イオン結合の連結ではない。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。空欄と5行の候補表を個別に照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_014.png"
+  ],
+  "question_id": "R05-REG-BASIC-4-5",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "f516b7bd6c0478dcf3b6cb2b3b6f502c4712b550e5c747657e1d403169900527",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

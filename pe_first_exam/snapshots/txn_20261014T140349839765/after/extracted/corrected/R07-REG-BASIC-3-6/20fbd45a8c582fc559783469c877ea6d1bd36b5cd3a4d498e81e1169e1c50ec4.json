@@ -1,0 +1,47 @@
+{
+  "stem": "運動起電力と磁気制動から終端速度。",
+  "conditions": {
+    "回路": "レール間隔L、抵抗R、棒・レールの抵抗無視。",
+    "磁場": "面に垂直で一様B。",
+    "駆動": "滑車と糸で質量Mが落下、摩擦無視、定常速度。"
+  },
+  "choices": {
+    "1": {
+      "value": "MgR/(BL)²",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "2": {
+      "value": "(BL)²/(MgR)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 MgR/(BL)² と異なる。"
+    },
+    "3": {
+      "value": "MgR/(BL)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 MgR/(BL)² と異なる。"
+    },
+    "4": {
+      "value": "BLR/(Mg)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 MgR/(BL)² と異なる。"
+    },
+    "5": {
+      "value": "Mg/(BLR)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 MgR/(BL)² と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/basic/page_012.png",
+    "extracted/pages/R07/basic/page_013.png"
+  ],
+  "question_id": "R07-REG-BASIC-3-6",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "12",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "5c7fa5b04b872b2e71374d5a5bbebe96b8dfe74ac00559d4cb774a7f701f65da",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

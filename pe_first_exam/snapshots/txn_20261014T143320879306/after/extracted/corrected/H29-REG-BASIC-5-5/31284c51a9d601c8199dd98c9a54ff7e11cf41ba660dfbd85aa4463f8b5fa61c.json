@@ -1,0 +1,45 @@
+{
+  "stem": "産業革命の担い手を大学主導へ一般化しない。",
+  "conditions": {
+    "時点": "平成29年度に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "既存改良の積重ね",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "2": {
+      "value": "欧州大学研究者主導が多い",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "3": {
+      "value": "大工場への機械化",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "4": {
+      "value": "娯楽機構から転用例",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "5": {
+      "value": "児童労働等の社会問題",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "個別の娯楽機構転用史料は未取得。大学との個別接点も無かったという全称にはしない。",
+  "evidence": [
+    "extracted/pages/H29/basic/page_019.png"
+  ],
+  "question_id": "H29-REG-BASIC-5-5",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "19",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "30f825df51f2586815ebb09954b4e347411d9d7d866e77086d6c9e302fe7f767",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

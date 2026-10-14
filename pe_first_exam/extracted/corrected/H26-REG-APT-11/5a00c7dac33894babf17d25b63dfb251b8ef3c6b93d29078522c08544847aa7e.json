@@ -1,0 +1,46 @@
+{
+  "stem": "食品リスクの科学的評価と管理・対話の役割を分ける。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+    "時点": "平成26年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "XOOOO",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "2": {
+      "value": "OXXOX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 XOOOO と異なる。"
+    },
+    "3": {
+      "value": "OOXOX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 XOOOO と異なる。"
+    },
+    "4": {
+      "value": "OXOOX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 XOOOO と異なる。"
+    },
+    "5": {
+      "value": "XOOXO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 XOOOO と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "当時の全関係者文言の逐語照合は未実施。初回説明が用量評価と取り違えた事実をfollowupに保持し、改めて原典の役割逆転を説明。",
+  "evidence": [
+    "extracted/pages/H26/aptitude/page_011.png",
+    "extracted/pages/H26/aptitude/page_012.png"
+  ],
+  "question_id": "H26-REG-APT-11",
+  "source_file": "sources/H26/aptitude.pdf",
+  "source_page": "11",
+  "source_sha256": "5691e940fce3cbf9423bc99a96803c1c6273563931b76b91bdb9f2b67e6233d3",
+  "raw_text_sha256": "82225327b5c5d351da3f17065dc31aa60a73f544167e60bc8848da197173cc13",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,82 @@
+{
+  "time": "2026-10-12T02:04:15.239915+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_030_quality_statistics",
+  "question_ids": [
+    "H23-REG-BASIC-5-4",
+    "H24-REG-BASIC-1-3",
+    "H24-REG-BASIC-5-4",
+    "H25-REG-BASIC-1-6",
+    "H26-REG-BASIC-1-3",
+    "H28-REG-BASIC-1-2",
+    "H27-REG-BASIC-1-5",
+    "R04-REG-BASIC-1-3",
+    "R02-REG-BASIC-1-2",
+    "R06-REG-BASIC-1-6",
+    "H27-REG-BASIC-1-6",
+    "R03-REG-BASIC-1-3",
+    "R07-REG-BASIC-1-2",
+    "R04-REG-BASIC-1-2",
+    "R05-REG-BASIC-1-6",
+    "R07-REG-BASIC-1-6"
+  ],
+  "source_images": 14,
+  "initial_independent_matches": 16,
+  "corrected_verified": 12,
+  "partial": 4,
+  "related_pairs_added": 8,
+  "related_pairs_total": 184,
+  "primary_references_added": 16,
+  "concepts_added": 10,
+  "concept_total": 221,
+  "canonical_counts": {
+    "recorded_at": "2026-10-12T02:04:15.239915+09:00",
+    "registered": 1270,
+    "classification_verified": 604,
+    "summary_verified": 570,
+    "corrected_verified": 456,
+    "corrected_partial": 114,
+    "solution_drafts": 570,
+    "solution_verified": 0,
+    "manual_required": 814,
+    "subject_drafts": {
+      "BASIC": 196,
+      "APT": 116,
+      "APPLIED": 258
+    }
+  },
+  "theory_note": "品質・統計21節20ラベル。共分散・和差・標本平均、品質表、工程能力、PDCA、OC、分布の条件、仮説検定・区間を統合。",
+  "revision_note": "規格名連結のOverfull39.68ptを検出。原入力保持、S7_030_standard_name_revision1.jsonで空白と区切りを明示し再生成。",
+  "pdf": {
+    "pages": 774,
+    "bytes": 3860180,
+    "visual_review_pages": [
+      40,
+      41,
+      42,
+      43,
+      66,
+      69,
+      70,
+      72,
+      73,
+      75,
+      76,
+      250,
+      750,
+      751,
+      772,
+      773
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draft・初期・1270ラベル監査成功。25回帰成功21.604秒。bar/cdotsの数式保存回帰を拡張。LuaLaTeX再生成成功、16実画像確認。",
+  "risks": [
+    "4部分校正。JIS抜取の時点規格本文、ISO2008全文未取得、回数正規近似の平均未指定を保持。",
+    "Astra未査読、700問未執筆、最終監査未実装。"
+  ],
+  "next": "S7_031知的財産15問、15原典画像確認・公式前初回保存。14一致、R03APT7は初回4/公式5の相違を保持。全1270問と全章・頻出分析まで継続。"
+}

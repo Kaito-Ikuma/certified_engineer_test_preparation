@@ -1,0 +1,180 @@
+{
+  "reference_date": "2026-10-13",
+  "references": [
+    {
+      "key": "eng52_liquefaction",
+      "author": "U.S. Geological Survey",
+      "title": "What is liquefaction?",
+      "url": "https://www.usgs.gov/faqs/what-liquefaction",
+      "scope": "公開定義の緩い飽和堆積物と地震動による強度低下を確認。全N値の境界を定める資料ではない。"
+    },
+    {
+      "key": "eng52_plate_liq",
+      "author": "地盤工学会",
+      "title": "液状化に伴う地盤反力係数の低下に関する平板載荷実験：第37回研究発表会",
+      "url": "https://www.jstage.jst.go.jp/article/jiban/JGS37/0/JGS37_0_1861/_pdf/-char/ja",
+      "scope": "検索本文で振動台と平板載荷による加振載荷実験を確認。通常の発生評価と液状化後反力の研究を分ける。著者書誌と原図は追加照合対象。"
+    },
+    {
+      "key": "eng52_geotech_tests",
+      "author": "Federal Highway Administration",
+      "title": "Subsurface Investigations: FHWA-RD-83-026",
+      "url": "https://apps.itd.idaho.gov/apps/manuals/Materials/Materials%20References/FHWA-RD-83-026.pdf",
+      "scope": "Idaho DOT所蔵のFHWA原資料の検索本文で三軸・ベーンの粘性土強度と圧密試験を確認。全報告通読ではない。"
+    },
+    {
+      "key": "eng52_mohr_ref",
+      "author": "Federal Highway Administration",
+      "title": "Evaluation of LS-DYNA Soil Material Model 147: Chapter 4",
+      "url": "https://www.fhwa.dot.gov/publications/research/safety/04094/04.cfm",
+      "scope": "2004報告の公開本文で垂直応力・せん断応力と摩擦・粘着のMohr–Coulombを確認。H29の数値は原典から独立計算し、モデル土の値は転載しない。"
+    },
+    {
+      "key": "eng52_consolidation",
+      "author": "環境省",
+      "title": "地盤沈下監視ガイドライン",
+      "url": "https://www.env.go.jp/houdou/gazou/6132/6914/2356.pdf",
+      "scope": "2005公開資料の検索本文で地下水位低下・粘土層収縮・観測と圧密試験を確認。全章の図の目視ではない。"
+    },
+    {
+      "key": "eng52_liq_sorting",
+      "author": "U.S. Geological Survey",
+      "title": "Liquefaction: Open-File Report 1985-0731",
+      "url": "https://pubs.usgs.gov/of/1985/0731/report.pdf",
+      "scope": "検索本文のporous well-sorted sand・飽和等の代表条件を確認。N20を安全閾値へ使わない。"
+    },
+    {
+      "key": "eng52_serpent_aggregate",
+      "author": "厚生労働省",
+      "title": "左官用モルタル混和材中の石綿の含有について",
+      "url": "https://www.mhlw.go.jp/houdou/2004/07/h0702-1a.html",
+      "scope": "検索本文の蛇紋岩の砂利・骨材用採石を確認。全蛇紋岩の骨材使用禁止という排他命題を否定する範囲。コンクリート品質順位を直接示す資料ではない。"
+    },
+    {
+      "key": "eng52_popout",
+      "author": "土木研究所",
+      "title": "沸石族鉱物含有岩石の工学的特性：共同研究報告137号",
+      "url": "https://thesis.pwri.go.jp/files/doken_kyoudoukenkyu_0137_00.pdf",
+      "scope": "検索本文117頁の1982蛇紋岩ポップアウト原研究の引用を確認。引用された竹中技術研究所報告の全文読了ではない。"
+    },
+    {
+      "key": "eng52_weathering",
+      "author": "関陽児",
+      "title": "土壌・風化帯の形成と水質変化：地質調査所月報49巻12号",
+      "url": "https://www.gsj.jp/data/bull-gsj/49-12_04.pdf",
+      "scope": "1998本文表紙・導入とPDF7頁624–642の硫酸塩析出、盤膨れ、黄鉄鉱酸化・溶解帯を確認。29頁全通読ではない。地すべり頻度の全称は未確認。"
+    },
+    {
+      "key": "eng52_slip_weaklayer",
+      "author": "国土交通省",
+      "title": "宅地造成に関する技術的基準",
+      "url": "https://www.mlit.go.jp/notice/noticedata/sgml/002/74000032/74000032.html",
+      "scope": "公開本文と検索本文の流れ盤に対するすべりの留意、浸透と弱化を確認。背斜等全構造の発生順位や原典の頻度は未確定。法令要件の現行実務助言として使用しない。"
+    },
+    {
+      "key": "eng52_soil_colour",
+      "author": "農林水産省",
+      "title": "土壌改良のすすめ方",
+      "url": "https://www.maff.go.jp/j/seisan/kankyo/hozen_type/h_sehi_kizyun/pdf/ntuti12.pdf",
+      "scope": "検索本文の腐植黒・酸化鉄赤・還元青灰の代表色と酸性硫酸土壌の注意を確認。全交換サイトが全pHで不変という根拠ではない。"
+    },
+    {
+      "key": "eng52_soil_phases",
+      "author": "三重大学",
+      "title": "環境土壌学実験2018：土の三相と土粒子密度",
+      "url": "https://soilphys.bio.mie-u.ac.jp/japanese/lecture/18soilphyex.pdf",
+      "scope": "取得文字層PDF14頁489–511の間隙比・体積含水率・含水比と分母を確認。資料の105℃条件で原典H25の110±5℃を置換しない。"
+    },
+    {
+      "key": "eng52_subsidence_ref",
+      "author": "環境省",
+      "title": "関東平野南部の地盤環境情報",
+      "url": "https://www.env.go.jp/water/jiban/directory/13kantouminami.html",
+      "scope": "公開検索本文の被圧帯水層採取の構成を確認。現在の年次沈下量をH25の値として利用しない。"
+    },
+    {
+      "key": "eng52_landslide_ref",
+      "author": "気象庁",
+      "title": "河川・洪水・土砂崩れに関する用語",
+      "url": "https://www.jma.go.jp/jma/kishou/know/yougo_hp/kasen.html",
+      "scope": "本文120–126の地すべり・がけ崩れの代表説明を確認。全機構を塑性/脆性の二分へする定義として使わない。現行避難情報は教材へ遡及しない。"
+    },
+    {
+      "key": "eng52_tunnel_ref",
+      "author": "国土交通省",
+      "title": "山岳トンネル工法に関する技術的指針",
+      "url": "https://www.mlit.go.jp/notice/noticedata/sgml/070/79000114/79000114.html",
+      "scope": "公開検索本文の地質調査・切羽観察・計測と設計施工への反映を確認。土かぶりと地表沈下の単調関係は未確定。現行施工の法的指示として利用しない。"
+    },
+    {
+      "key": "eng52_rockburst",
+      "author": "日本原子力研究開発機構",
+      "title": "地下施設建設時の地質環境調査",
+      "url": "https://www.jaea.go.jp/04/tono/miu/history/2/2_01/2_01_06.html",
+      "scope": "取得公開本文と検索本文で大土かぶり・高応力・少節理硬岩の山はねを確認。事例の岩片寸法を全例へ固定しない。"
+    },
+    {
+      "key": "eng52_groundheat_ref",
+      "author": "環境省",
+      "title": "地中熱とは？",
+      "url": "https://www.env.go.jp/water/jiban/post_117.html",
+      "scope": "公開本文で浅部の温度安定性、利用方式を確認。200mを物理的断絶境界や全機器の騒音保証としない。"
+    },
+    {
+      "key": "eng52_heat_advection",
+      "author": "環境省",
+      "title": "平成22年度環境技術実証事業：052-1007b",
+      "url": "https://www.env.go.jp/policy/etv/pdf/list/h22/052-1007b.pdf",
+      "scope": "検索本文のTRT解析で大きい見掛け伝導率と地下水移流優位の説明を確認。全試験の同一倍率を主張しない。2018ガイドライン検索の5.18対1.46の例も確認、直接PDF取得は失敗。"
+    },
+    {
+      "key": "eng52_professional",
+      "author": "文部科学省",
+      "title": "専門職大学院の制度",
+      "url": "https://www.mext.go.jp/a_menu/koutou/senmonshoku/index.htm",
+      "scope": "公開説明の2003創設・専門職学位課程と学位種別を確認。2012通知も専門職と博士後期を区別。H23年度制度の全改訂史を読了とはしない。"
+    },
+    {
+      "key": "eng52_bcp",
+      "author": "内閣府",
+      "title": "事業継続：初めての方へ",
+      "url": "https://www.bousai.go.jp/kyoiku/kigyou/keizoku/hajimete.html",
+      "scope": "検索本文の2005第一版・2009第二版の公表を確認。管理と計画の区別は原典と合わせて整理。全2009ガイドライン本文は追加照合対象。"
+    },
+    {
+      "key": "eng52_performance",
+      "author": "国土交通省",
+      "title": "仕様規定から性能規定へ：港湾構造物の基準",
+      "url": "https://www.mlit.go.jp/singikai/koutusin/kouwanbun/anzen_ijikanri/1/images/shiryou3.pdf",
+      "scope": "2005公開資料の検索本文で材料寸法工法の仕様と要求性能（安全性・使用性・修復性）を区別。全信頼性設計手法の定義ではない。"
+    },
+    {
+      "key": "eng52_ve",
+      "author": "SAVE International",
+      "title": "About Value Engineering",
+      "url": "https://www.value-eng.org/page/AboutVM?hhsearchterms=%22is+and+value+and+engineering%22",
+      "scope": "組織公式の定義の必要機能と最低全体コストの価値を確認。H23当時の版の全文照合ではない。"
+    },
+    {
+      "key": "eng52_control",
+      "author": "金融庁・企業会計審議会",
+      "title": "財務報告に係る内部統制基準：2007年2月15日意見書",
+      "url": "https://www.fsa.go.jp/singi/singi_kigyou/tosin/20070215.pdf",
+      "scope": "取得本文PDF45頁1259–1269の四目的・全組織による過程・財務報告評価制度との範囲の違いを確認。129頁全通読ではない。"
+    },
+    {
+      "key": "eng52_infra2014",
+      "author": "国土交通省",
+      "title": "インフラ長寿命化計画（2014年行動計画）",
+      "url": "https://www.mlit.go.jp/common/001051276.pdf",
+      "scope": "公式の2014年公表ページと本文・概要工程表の施設別取組を確認。検索本文の特性に応じた頻度内容、道路内の五年・統一尺度との区別を確認。119頁全通読ではない。"
+    },
+    {
+      "key": "eng52_adopt",
+      "author": "国土交通省",
+      "title": "平成12年建設白書：維持管理のボランティア活用",
+      "url": "https://www.mlit.go.jp/hakusyo/kensetu/h12_2/h12/html/C1424400.htm",
+      "scope": "検索本文で日本の行政合意による道路河川の市民清掃等を確認。直接openは文字化けであり全文取得済みとはしない。全住民に専門診断を委任できる根拠ではない。"
+    }
+  ]
+}

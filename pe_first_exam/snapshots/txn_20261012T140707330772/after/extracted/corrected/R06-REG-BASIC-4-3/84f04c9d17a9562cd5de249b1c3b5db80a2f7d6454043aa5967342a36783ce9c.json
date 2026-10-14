@@ -1,0 +1,45 @@
+{
+  "stem": "FeNa・AlCu・TiZnの室温結晶構造と単位胞の数え方を比較する。",
+  "conditions": {
+    "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+    "前提": "元素・室温・大気圧を指定する。原始並進胞と通常の立方胞・六角柱胞を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "面心立方／六方最密／体心立方／4",
+      "verdict": "不適切",
+      "reason": "FeNaはBCC、AlCuはFCC、TiZnはHCPであり、三種類の配置を取り違える。"
+    },
+    "2": {
+      "value": "面心立方／体心立方／六方最密／2",
+      "verdict": "不適切",
+      "reason": "TiZnとBCC胞の2原子は対応するが、FeNaとAlCuの構造が逆である。"
+    },
+    "3": {
+      "value": "体心立方／面心立方／六方最密／2",
+      "verdict": "適切",
+      "reason": "室温常圧の金属構造と、BCC通常立方胞の2原子が対応する。HCPの本文2原子は原始並進胞に二原子基底を置く規約で読む。"
+    },
+    "4": {
+      "value": "体心立方／六方最密／面心立方／4",
+      "verdict": "不適切",
+      "reason": "FeNaのみ対応し、AlCuとTiZnが逆である。BCCの通常立方胞を4原子とする点も誤りである。"
+    },
+    "5": {
+      "value": "六方最密／面心立方／体心立方／3",
+      "verdict": "不適切",
+      "reason": "FeNaとTiZnが逆である。BCC通常立方胞は角8×1/8と中心1で2原子となり3ではない。"
+    }
+  },
+  "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+  "ambiguity": "原典はHCPを2原子と記すが単位胞の形状を示さない。二原子基底の原始並進胞と六角柱6原子を明示する。HCPをBravais格子単独と呼ばない。",
+  "evidence": [
+    "extracted/pages/R06/basic/page_015.png"
+  ],
+  "question_id": "R06-REG-BASIC-4-3",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "15",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "fb7236589726f60905b6f2bd64dfbc8e87af98e0186247b5974222be3bc56b96",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

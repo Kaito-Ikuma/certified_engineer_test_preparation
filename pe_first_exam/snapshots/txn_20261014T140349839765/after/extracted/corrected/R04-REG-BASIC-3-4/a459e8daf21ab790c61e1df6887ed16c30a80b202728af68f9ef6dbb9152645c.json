@@ -1,0 +1,45 @@
+{
+  "stem": "節点の水平釣合からトラス軸力比。",
+  "conditions": {
+    "形状": "棒1水平30°、棒2水平60°、Cに鉛直P。",
+    "接合": "ピン節点の二力部材。"
+  },
+  "choices": {
+    "1": {
+      "value": "1/2",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 1/√3 と異なる。"
+    },
+    "2": {
+      "value": "1/√3",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "3": {
+      "value": "1",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 1/√3 と異なる。"
+    },
+    "4": {
+      "value": "√3",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 1/√3 と異なる。"
+    },
+    "5": {
+      "value": "2",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 1/√3 と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/basic/page_011.png"
+  ],
+  "question_id": "R04-REG-BASIC-3-4",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "11",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "5903f56d76e63ef0ccf932673828a0be9aedb2c2776dd82381086d2dab84db3b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

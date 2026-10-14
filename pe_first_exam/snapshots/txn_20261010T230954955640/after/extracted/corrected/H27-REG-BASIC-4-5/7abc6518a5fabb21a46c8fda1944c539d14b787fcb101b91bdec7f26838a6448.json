@@ -1,0 +1,44 @@
+{
+  "stem": "植物の組織培養と哺乳類の体細胞核移植に必要な因子・細胞群・移植対象を対応させる。",
+  "conditions": {
+    "空欄": "ア〜エ。カルス培養後の再分化、体細胞核移植。"
+  },
+  "choices": {
+    "1": {
+      "value": "植物ホルモン／プロトプラスト／核／未受精卵",
+      "verdict": "不適切",
+      "reason": "プロトプラストは細胞壁を除いた細胞であり、ここで問う不定形の細胞塊ではない。"
+    },
+    "2": {
+      "value": "植物ホルモン／カルス／核／未受精卵",
+      "verdict": "最適",
+      "reason": "オーキシン等は植物ホルモンで、細胞塊はカルス。核を除いた未受精卵へ体細胞核を入れる手順にも整合。"
+    },
+    "3": {
+      "value": "植物ホルモン／カルス／胚／卵原細胞",
+      "verdict": "不適切",
+      "reason": "体細胞から胚を取り出すのではなく核を使う。受容側も卵原細胞ではない。"
+    },
+    "4": {
+      "value": "アミノ酸／カルス／胚／未受精卵",
+      "verdict": "不適切",
+      "reason": "ア・ウが違う。植物ホルモンはアミノ酸という物質群ではなく、移す対象は核。"
+    },
+    "5": {
+      "value": "アミノ酸／プロトプラスト／胚／卵原細胞",
+      "verdict": "不適切",
+      "reason": "ホルモン、カルス、核、未受精卵の各対応が違う。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。空欄と5行の候補表を個別に照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/basic/page_014.png"
+  ],
+  "question_id": "H27-REG-BASIC-4-5",
+  "source_file": "sources/H27/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+  "raw_text_sha256": "18ea2db50558a2e542520cdc6d6b3f71faf6bde1e0df85e4537d3037b2d32fa1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

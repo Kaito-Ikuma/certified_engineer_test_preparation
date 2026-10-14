@@ -1,0 +1,239 @@
+{
+  "batch_id": "S7_023_unit_math_revision",
+  "reference_date": "2026-10-11",
+  "scope": "単位系11・現代物理8、18原典画像、19初回公式一致。導入cd欠落2・改定後三重点・beta安定全称の4疑義を保持。",
+  "questions": [
+    {
+      "question_id": "R05-REG-APPLIED-13",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "stem": "SI組立単位と動粘度の非SI単位の換算を比較する。",
+      "summary": "SI組立単位と動粘度の非SI単位の換算を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(1\\mathrm{C}=1\\mathrm{A\\,s}\\)",
+          "verdict": "適切",
+          "reason": "電荷Q=ItよりC=Asである。"
+        },
+        "2": {
+          "value": "\\(1\\mathrm{J}=1\\mathrm{kg\\,m^2s^{-2}}\\)",
+          "verdict": "適切",
+          "reason": "仕事は力と移動距離の積でJ=\\(\\mathrm{kg\\,m^2s^{-2}}\\)である。"
+        },
+        "3": {
+          "value": "\\(1\\mathrm{Pa}=1\\mathrm{kg\\,m^{-1}s^{-2}}\\)",
+          "verdict": "適切",
+          "reason": "圧力p=F/SからPa=\\(\\mathrm{kg\\,m^{-1}s^{-2}}\\)である。"
+        },
+        "4": {
+          "value": "\\(1\\mathrm{St}=10^{-4}\\mathrm{m^2s^{-1}}\\)",
+          "verdict": "適切",
+          "reason": "Stは動粘度cm²/s。cm=10^-2mを二乗するので10^-4m²/sである。SI基本単位そのものとは呼ばない。"
+        },
+        "5": {
+          "value": "\\(1\\mathrm{\\Omega}=1\\mathrm{m^2kg\\,s^{-3}A^{-1}}\\)",
+          "verdict": "不適切",
+          "reason": "抵抗R=V/IからΩ=\\(\\mathrm{kg\\,m^2s^{-3}A^{-2}}\\)である。原典はA^-1であり抵抗に必要なA^-2を欠く。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/17_applied_science/page_005.png"
+      ],
+      "core_concept": "組立単位の指数と非SI換算係数",
+      "required_knowledge": "C=As、J=Nm、Pa=N/m²、Ω=V/A、動粘度St=cm²/s。",
+      "solution": "5の電流指数が誤りである。\\(R=V/I=(J/Q)/I\\)、\\(Q=It\\)より\\([R]=\\mathrm{kg\\,m^2s^{-3}A^{-2}}\\)。4は非SI単位StをSIへ正しく換算した記述であり、「SIでないから換算も誤り」としない。",
+      "independent_answer": "5",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。Ω=V/AのA指数-2。St=cm²/s=1e-4m²/s。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "5の電流指数が誤りである。\\(R=V/I=(J/Q)/I\\)、\\(Q=It\\)より\\([R]=\\mathrm{kg\\,m^2s^{-3}A^{-2}}\\)。4は非SI単位StをSIへ正しく換算した記述であり、「SIでないから換算も誤り」としない。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:units:derived",
+        "theory:units:electrical",
+        "theory:units:conversion"
+      ],
+      "discipline_id": "physics_units",
+      "concept_id": "concept_043",
+      "cross_concepts": [],
+      "classification_reason": "原典全肢の中心は組立単位の指数と非SI換算係数である。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻読者に対し既知の定義・指数又は一段代入で解ける。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "si_nist811"
+      ],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "e7767aab6002e724c5416abc169244ac8162ca3bd2f9ada00346198653d03116",
+      "revision_of_batch": "S7_023_modern_units",
+      "revision_reason": "数式の単位記号に明示的な波括弧を付け、LuaTeX-jaのU+000A欠落を除去。物理量・値・判断は保持。"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-16",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "stem": "圧力の慣用単位をPaへ換算し、最も遠い係数を選ぶ。",
+      "summary": "圧力の慣用単位をPaへ換算し、最も遠い係数を選ぶ。",
+      "conditions": {
+        "方向": "圧力換算として最も遠い値。",
+        "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(1\\mathrm{atm}=1.01325\\times10^5\\mathrm{Pa}\\)",
+          "verdict": "適切",
+          "reason": "標準気圧の定義係数である。実際の当地大気圧が常にこの値とはしない。"
+        },
+        "2": {
+          "value": "\\(1\\mathrm{bar}=10^5\\mathrm{Pa}\\)",
+          "verdict": "適切",
+          "reason": "barは10^5Paの単位定義である。"
+        },
+        "3": {
+          "value": "\\(1\\mathrm{kgf\\,cm^{-2}}=9.80665\\times10^2\\mathrm{Pa}\\)",
+          "verdict": "不適切",
+          "reason": "kgfは標準重力9.80665m/s²で1kgに働く力9.80665N。cm²=10^-4m²で割ると9.80665e4Pa、原典は100分の1である。"
+        },
+        "4": {
+          "value": "\\(1\\mathrm{mmHg}=133.322\\mathrm{Pa}\\)",
+          "verdict": "適切",
+          "reason": "通常の水銀柱換算は133.322Pa程度、液柱の実測は密度・温度・重力条件を持つ。"
+        },
+        "5": {
+          "value": "\\(1\\mathrm{psi}=6.894757\\times10^3\\mathrm{Pa}\\)",
+          "verdict": "適切",
+          "reason": "psiはlbf/in²で約6894.757Pa。NIST通常換算と一致する有効桁である。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/17_applied_science/page_005.png"
+      ],
+      "core_concept": "力単位と面積換算の二乗",
+      "required_knowledge": "標準重力9.80665m/s²、kgf=9.80665N、1cm²=10^-4m²、Pa=N/m²、atm/bar/mmHg/psiの定義と慣用係数。",
+      "solution": "3が2桁遠い。\\(1\\mathrm{kgf\\,cm^{-2}}=\\frac{9.80665\\mathrm{N}}{10^{-4}\\mathrm{m^2}}=9.80665\\times10^4\\mathrm{Pa}\\)である。原典の10²と係数を比較する。kgfとkg、面積のcm²とcmを混同しない。",
+      "independent_answer": "3",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。kgf/cm²=9.80665N/1e-4m²=9.80665e4Pa。原典指数2は100分の1。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "3が2桁遠い。\\(1\\mathrm{kgf\\,cm^{-2}}=\\frac{9.80665\\mathrm{N}}{10^{-4}\\mathrm{m^2}}=9.80665\\times10^4\\mathrm{Pa}\\)である。原典の10²と係数を比較する。kgfとkg、面積のcm²とcmを混同しない。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:units:conversion",
+        "theory:units:derived"
+      ],
+      "discipline_id": "physics_units",
+      "concept_id": "concept_043",
+      "cross_concepts": [],
+      "classification_reason": "原典全肢の中心は力単位と面積換算の二乗である。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻読者に対し定義改定・防護量等の新規性を含むか、複数段のエネルギー変換と単位を組み合わせる。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "si_nist811"
+      ],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "5d5d93c029a9005a778955cb1915cc10f9f2cfad61fe3670e090fbf4573b264b",
+      "revision_of_batch": "S7_023_modern_units",
+      "revision_reason": "数式の単位記号に明示的な波括弧を付け、LuaTeX-jaのU+000A欠落を除去。物理量・値・判断は保持。"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-05",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "stem": "加速電子の運動エネルギーから連続X線の最短波長を求める。",
+      "summary": "加速電子の運動エネルギーから連続X線の最短波長を求める。",
+      "conditions": {
+        "方向": "最短波長に最も近い値。",
+        "加速電圧": "35kV",
+        "h": "\\(6.6\\times10^{-34}\\mathrm{J\\,s}\\)",
+        "e": "\\(1.6\\times10^{-19}\\mathrm{C}\\)",
+        "c": "\\(3.0\\times10^8\\mathrm{m/s}\\)"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(2.6\\times10^{-11}\\mathrm{m}\\)",
+          "verdict": "不一致",
+          "reason": "求めた3.5357e-11mより小さく、本条件の電子エネルギー限界を超える。"
+        },
+        "2": {
+          "value": "\\(3.5\\times10^{-11}\\mathrm{m}\\)",
+          "verdict": "最も近い",
+          "reason": "3.5357e-11mへ最も近い提示値。"
+        },
+        "3": {
+          "value": "\\(3.9\\times10^{-11}\\mathrm{m}\\)",
+          "verdict": "不一致",
+          "reason": "限界より長い波長の光子は放出され得るが最短値として2より遠い。"
+        },
+        "4": {
+          "value": "\\(9.1\\times10^{-11}\\mathrm{m}\\)",
+          "verdict": "不一致",
+          "reason": "連続線にこの波長が存在し得ることと最短端であることは別、算出値から遠い。"
+        },
+        "5": {
+          "value": "\\(9.9\\times10^{-11}\\mathrm{m}\\)",
+          "verdict": "不一致",
+          "reason": "この値も最短端ではなく、eVを全て一光子へ与える上限と一致しない。"
+        }
+      },
+      "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/17_applied_science/page_002.png"
+      ],
+      "core_concept": "制動放射の端をエネルギー保存で求める",
+      "required_knowledge": "電圧仕事eV、光子E=hc/λ、全エネルギーを一光子へ渡す最短端、kV=10³V、指定h/e/c。",
+      "solution": "初期運動エネルギーを無視する電子が電圧Vで得るK=eVを、一光子へ最大限移すと\\(hc/\\lambda_{\\min}=eV\\)である。\\(\\lambda_{\\min}=\\frac{6.6\\times10^{-34}\\times3.0\\times10^8}{1.6\\times10^{-19}\\times35\\times10^3}=3.5357\\times10^{-11}\\mathrm{m}\\)より2。現行h/eの精密値へ置き換えず指定丸め値を使う。電子速度の非相対論近似は不要である。",
+      "independent_answer": "2",
+      "independent_solution_note": "S7_023_independent_answers.jsonへ18原典画像を確認した後・公式前の初回を保存。hc/(e×35000)=3.5357e-11 m。 初回を保持し一次資料で限定条件を追加。",
+      "answer_reason": "初期運動エネルギーを無視する電子が電圧Vで得るK=eVを、一光子へ最大限移すと\\(hc/\\lambda_{\\min}=eV\\)である。\\(\\lambda_{\\min}=\\frac{6.6\\times10^{-34}\\times3.0\\times10^8}{1.6\\times10^{-19}\\times35\\times10^3}=3.5357\\times10^{-11}\\mathrm{m}\\)より2。現行h/eの精密値へ置き換えず指定丸め値を使う。電子速度の非相対論近似は不要である。",
+      "learning_points": "定義の基準日を確定し、物理量の関係から指数と係数を導く。量子現象では運動量・エネルギー保存と観測対象を区別する。",
+      "theory_references": [
+        "theory:modern:xray",
+        "theory:modern:duality"
+      ],
+      "discipline_id": "physics_modern",
+      "concept_id": "photon_matter_wave",
+      "cross_concepts": [],
+      "classification_reason": "原典全肢の中心は制動放射の端をエネルギー保存で求めるである。単位の換算と時点依存の定義、核種一般と量子物質波、線量の防護量と光素子を分離する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻読者に対し定義改定・防護量等の新規性を含むか、複数段のエネルギー変換と単位を組み合わせる。疑義は別軸で保持し難易度と混同しない。"
+      },
+      "citations": [
+        "os_photoelectric"
+      ],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "87da73426fafa20bbb05df3a44d2e560022a63fa314b3020b6046320d6aa3715",
+      "revision_of_batch": "S7_023_modern_units",
+      "revision_reason": "数式の単位記号に明示的な波括弧を付け、LuaTeX-jaのU+000A欠落を除去。物理量・値・判断は保持。"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "金属の資源と製錬法を組み合わせる。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典26画像で確認。",
+    "時点": "平成27年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "Al Fe Zn Mg Ti",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "2": {
+      "value": "Al Mg Zn Fe Ti",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Al Fe Zn Mg Ti と異なる。"
+    },
+    "3": {
+      "value": "Ti Fe Al Mg Zn",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Al Fe Zn Mg Ti と異なる。"
+    },
+    "4": {
+      "value": "Ti Fe Al Zn Mg",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Al Fe Zn Mg Ti と異なる。"
+    },
+    "5": {
+      "value": "Ti Mg Al Fe Zn",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Al Fe Zn Mg Ti と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "2015年の世界生産量・可採年数・価格の全統計と基準日は未確認。資源埋蔵量を不変の枯渇期限としない。",
+  "evidence": [
+    "extracted/pages/H27/basic/page_013.png"
+  ],
+  "question_id": "H27-REG-BASIC-4-4",
+  "source_file": "sources/H27/basic.pdf",
+  "source_page": "13",
+  "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+  "raw_text_sha256": "2cf850f5f79fa9a0a639a98ea42ca8858765b0bf881536ce92b9ae7919223fbf",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

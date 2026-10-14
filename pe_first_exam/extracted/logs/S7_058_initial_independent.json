@@ -1,0 +1,165 @@
+{
+  "scope": "全21原典画像・全32本文を確認、初回推論を保存。公式メタデータを含む選択情報のため盲検ではない。統計・年表の一次資料確認は続いて実施。",
+  "records": [
+    {
+      "question_id": "H23-REG-BASIC-5-1",
+      "independent_answer": "1",
+      "reason": "2008CO2換算でCO2九割以上。"
+    },
+    {
+      "question_id": "H23-REG-BASIC-5-2",
+      "independent_answer": "2",
+      "reason": "公衆衛生、再使用、適正処分、半分。"
+    },
+    {
+      "question_id": "H23-REG-BASIC-5-3",
+      "independent_answer": "2",
+      "reason": "気体密度.016/.0224≈.714、体積比.714/425≈1/595。"
+    },
+    {
+      "question_id": "H23-REG-BASIC-5-5",
+      "independent_answer": "4",
+      "reason": "ラジウムはキュリー夫妻、Becquerelは放射能。"
+    },
+    {
+      "question_id": "H24-REG-BASIC-5-1",
+      "independent_answer": "3",
+      "reason": "家電小売に引取・引渡し義務。"
+    },
+    {
+      "question_id": "H24-REG-BASIC-5-2",
+      "independent_answer": "4",
+      "reason": "単位質量で天然ガス>石油>石炭>木材。"
+    },
+    {
+      "question_id": "H24-REG-BASIC-5-3",
+      "independent_answer": "2",
+      "reason": "2010原子力約30、複合、シェール。"
+    },
+    {
+      "question_id": "H24-REG-BASIC-5-5",
+      "independent_answer": "4",
+      "reason": "産業革命を大学主導へ一般化するのが不適切。"
+    },
+    {
+      "question_id": "H25-REG-BASIC-5-1",
+      "independent_answer": "5",
+      "reason": "2012中東83、ホルムズ、サウジ、原油製品21。"
+    },
+    {
+      "question_id": "H25-REG-BASIC-5-2",
+      "independent_answer": "2",
+      "reason": "A31.5kg B46.4kg≈2:3。"
+    },
+    {
+      "question_id": "H25-REG-BASIC-5-3",
+      "independent_answer": "4",
+      "reason": "削減は緩和、影響備え適応。"
+    },
+    {
+      "question_id": "H25-REG-BASIC-5-4",
+      "independent_answer": "2",
+      "reason": "活性汚泥は二次。"
+    },
+    {
+      "question_id": "H25-REG-BASIC-5-5",
+      "independent_answer": "2",
+      "reason": "アウ双方向。"
+    },
+    {
+      "question_id": "H25-REG-BASIC-5-6",
+      "independent_answer": "1",
+      "reason": "Halley1705<Watt1769<Darwin1858<Einstein1915<Fukui1952。"
+    },
+    {
+      "question_id": "H26-REG-BASIC-5-1",
+      "independent_answer": "1",
+      "reason": "PM2.5は2.5以下で付近だけではない。"
+    },
+    {
+      "question_id": "H26-REG-BASIC-5-2",
+      "independent_answer": "5",
+      "reason": "環境会計費用効果金額物量。"
+    },
+    {
+      "question_id": "H26-REG-BASIC-5-3",
+      "independent_answer": "5",
+      "reason": "接続拒否には正当理由の例外。"
+    },
+    {
+      "question_id": "H26-REG-BASIC-5-4",
+      "independent_answer": "4",
+      "reason": "100km2の上限1kW/m2×8760h≈876TWhも国内約1000TWh未満。"
+    },
+    {
+      "question_id": "H26-REG-BASIC-5-5",
+      "independent_answer": "3",
+      "reason": "規定なしも責任が残る。"
+    },
+    {
+      "question_id": "H26-REG-BASIC-5-6",
+      "independent_answer": "4",
+      "reason": "Galileo1609<Newcomen1712<Watt1769<Wilson1911<nylon1935。"
+    },
+    {
+      "question_id": "H27-REG-BASIC-5-1",
+      "independent_answer": "2",
+      "reason": "E-waste電子電気。"
+    },
+    {
+      "question_id": "H27-REG-BASIC-5-2",
+      "independent_answer": "1",
+      "reason": "目的は吸収作用保全も含む。"
+    },
+    {
+      "question_id": "H27-REG-BASIC-5-3",
+      "independent_answer": "5",
+      "reason": "a7.73 b9.4 c11.75kgでc>b>a。"
+    },
+    {
+      "question_id": "H27-REG-BASIC-5-4",
+      "independent_answer": "5",
+      "reason": "米加7以上、韓露5、独日4。"
+    },
+    {
+      "question_id": "H27-REG-BASIC-5-5",
+      "independent_answer": "3",
+      "reason": "知財は著作物営業秘密も含む。"
+    },
+    {
+      "question_id": "H27-REG-BASIC-5-6",
+      "independent_answer": "4",
+      "reason": "Becquerel/radiumの誤対応。"
+    },
+    {
+      "question_id": "H28-REG-BASIC-5-1",
+      "independent_answer": "5",
+      "reason": "直接処分13−7=6で60ではない。"
+    },
+    {
+      "question_id": "H28-REG-BASIC-5-2",
+      "independent_answer": "5",
+      "reason": "外来種防除禁止ではない。"
+    },
+    {
+      "question_id": "H28-REG-BASIC-5-3",
+      "independent_answer": "3",
+      "reason": "ガスタービン先、廃熱蒸気。"
+    },
+    {
+      "question_id": "H28-REG-BASIC-5-4",
+      "independent_answer": "1",
+      "reason": "2015の2030石油3%、25–27はLNG。"
+    },
+    {
+      "question_id": "H28-REG-BASIC-5-5",
+      "independent_answer": "5",
+      "reason": "ウエ双方向。"
+    },
+    {
+      "question_id": "H28-REG-BASIC-5-6",
+      "independent_answer": "4",
+      "reason": "Franklin1752<Mendeleev1869<Curie1898<triode1906<transistor1947。"
+    }
+  ]
+}

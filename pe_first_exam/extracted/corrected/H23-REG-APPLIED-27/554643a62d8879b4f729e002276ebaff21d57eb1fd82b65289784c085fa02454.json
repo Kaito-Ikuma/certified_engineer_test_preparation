@@ -1,0 +1,45 @@
+{
+  "stem": "マンガン団塊の組成・海底分布・成長時間を比較する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "マンガン団塊の組成・海底分布・成長時間を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "Mn・Fe酸化物の黒色団塊",
+      "verdict": "代表的条件で適切",
+      "reason": "鉄・マンガン酸化物を主体に成長する団塊。原典の1mm以上は分類上の目安として保持する。"
+    },
+    "2": {
+      "value": "Cu・Ni・Coを1–2%含む場合",
+      "verdict": "条件・解釈を留保",
+      "reason": "これら金属を副成分として含む。原典の最大1–2%を全海域・全団塊の厳密上限とする根拠は未確認。"
+    },
+    "3": {
+      "value": "堆積の遅い深海底の表層",
+      "verdict": "代表的条件で適切",
+      "reason": "団塊の埋没が遅い場所で海水・間隙水から成長する代表的な産状。露岩を覆うクラストと区別する。"
+    },
+    "4": {
+      "value": "岩片や化石を核に成長",
+      "verdict": "代表的条件で適切",
+      "reason": "核を中心に層状に成長する場合がある。"
+    },
+    "5": {
+      "value": "数mm／1万年の成長",
+      "verdict": "不適切",
+      "reason": "代表値は百万年で1mm程度と極めて遅い。原典の万年は代表的な海水沈殿成長の時間尺度と合わない。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "副成分の最大1–2%という上限と粒径の全分類範囲は未確定。成長も海水起源・続成作用等で異なり、一つの代表率を全試料へ固定しない。",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_009.png"
+  ],
+  "question_id": "H23-REG-APPLIED-27",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "c981a41a026ceceff0284ad24e22405b7ead8cea84d6badaa191f38c6decec16",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

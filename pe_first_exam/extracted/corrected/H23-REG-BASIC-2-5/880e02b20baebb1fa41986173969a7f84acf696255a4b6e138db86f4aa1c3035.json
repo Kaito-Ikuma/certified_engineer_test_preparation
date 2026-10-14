@@ -1,0 +1,46 @@
+{
+  "stem": "パスワードの伝送・保管・端末入力・推測攻撃の対策を比較する。",
+  "conditions": {
+    "方向": "最も適切なもの。",
+    "時点": "H23年度。現在の推奨を出題当時へ無条件に転用しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "WEP無線LANなら覚えやすい単語パスワードを安全に利用。",
+      "verdict": "不適切",
+      "reason": "WEPには既知の弱点があり安全を保証しない。無線区間の暗号と端末・Webサービスの安全性も別である。"
+    },
+    "2": {
+      "value": "公開鍵暗号でパスワード伝送時の漏洩を防ぐ。",
+      "verdict": "意図として適切・条件不足",
+      "reason": "適切に鍵を認証して構成した暗号通信なら伝送中の秘匿に寄与する。ただし公開鍵という方式名だけで偽サーバへの入力や中間者攻撃を防ぐ保証はない。"
+    },
+    "3": {
+      "value": "忘れたとき通知できるようサーバにパスワードをそのまま保存。",
+      "verdict": "不適切",
+      "reason": "ファイルを読める者へ認証秘密が露出する。サーバ側は適切なソルトと計算コストを伴うパスワードハッシュ等で検証する。"
+    },
+    "4": {
+      "value": "長いパスワードなら公共端末で安全。",
+      "verdict": "不適切",
+      "reason": "共有端末のキーロガー等は入力そのものを読むため文字数だけでは防げない。長さは推測耐性の要素である。"
+    },
+    "5": {
+      "value": "asdfghjkなら辞書攻撃に強い。",
+      "verdict": "不適切",
+      "reason": "キーボード配列上の連続列は推測候補になり得る。辞書攻撃の候補は自然言語の辞書語だけとは限らない。"
+    }
+  },
+  "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+  "ambiguity": "選択肢2は公開鍵の真正性確認・認証済み保護通信という条件を省く。方式を用いるだけで全漏洩が防げると一般化しない。初回2・公式2を保持。",
+  "evidence": [
+    "extracted/pages/H23/basic/page_007.png",
+    "extracted/pages/H23/basic/page_008.png"
+  ],
+  "question_id": "H23-REG-BASIC-2-5",
+  "source_file": "sources/H23/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+  "raw_text_sha256": "fd8b0d5d6d4fec8f1fc892ac2fc95ec33aef9a4c3e59517542051ef10ff607c1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

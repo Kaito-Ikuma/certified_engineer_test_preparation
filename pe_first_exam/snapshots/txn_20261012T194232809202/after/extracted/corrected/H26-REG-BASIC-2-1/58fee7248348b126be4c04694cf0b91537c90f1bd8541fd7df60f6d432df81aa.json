@@ -1,0 +1,45 @@
+{
+  "stem": "二機械の部品加工を、機械順と部品順の二種類の先行制約でアロー図へ割り当てる。",
+  "conditions": {
+    "判断対象": "機械ごとのp→q→rと部品ごとのA→Bという先行制約。",
+    "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+  },
+  "choices": {
+    "1": {
+      "value": "Aq,Bp,Ar,Bq",
+      "verdict": "適切",
+      "reason": "A列とB列の先行順、AqからBqのダミー制約に合う。"
+    },
+    "2": {
+      "value": "Aq,Bp,Bq,Ar",
+      "verdict": "不適切",
+      "reason": "BqとArを入れ替えたためBpとBqの先行を保証できない。"
+    },
+    "3": {
+      "value": "Aq,Ar,Bp,Bq",
+      "verdict": "不適切",
+      "reason": "ApからArがAqと並行になりA機械の順序に反する。"
+    },
+    "4": {
+      "value": "Bp,Aq,Bq,Ar",
+      "verdict": "不適切",
+      "reason": "Aqが終了していなくてもBpの後にBqを開始でき、部品qのA→B順を保証しない。"
+    },
+    "5": {
+      "value": "Bp,Aq,Ar,Bq",
+      "verdict": "不適切",
+      "reason": "Aqが終了していなくてもBpの後にArを開始でき、A機械のq→r順を保証しない。"
+    }
+  },
+  "figures": "原典の木・道路接続・構文経路・矢印を画像確認。教材では独自の構造表現で説明し原図転載なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/basic/page_005.png"
+  ],
+  "question_id": "H26-REG-BASIC-2-1",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "edff2fbce10838ba593d0c552f217aa2b3ac98c28207ba9fecc6ec19aef59541",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

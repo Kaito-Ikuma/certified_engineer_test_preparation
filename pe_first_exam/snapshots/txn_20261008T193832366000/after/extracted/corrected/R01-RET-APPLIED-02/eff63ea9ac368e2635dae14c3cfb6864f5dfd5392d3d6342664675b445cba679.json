@@ -1,0 +1,54 @@
+{
+  "stem": "同じ19.6 mの高さから同じ初速9.8 m/sで5方向へ投げた小球の、着地直前の速さを比較する。",
+  "conditions": {
+    "height_m": 19.6,
+    "initial_speed_m_s": 9.8,
+    "directions": [
+      "up",
+      "down",
+      "horizontal",
+      "up 30 deg",
+      "down 45 deg"
+    ],
+    "g_m_s2": 9.8,
+    "air_resistance": "none"
+  },
+  "choices": {
+    "1": {
+      "value": "水平の方が斜め上30度より速い",
+      "verdict": "不採用",
+      "reason": "両者とも同じ速さとなる。"
+    },
+    "2": {
+      "value": "斜め上30度の方が斜め下45度より速い",
+      "verdict": "不採用",
+      "reason": "両者とも同じ速さとなる。"
+    },
+    "3": {
+      "value": "鉛直下の方が鉛直上より速い",
+      "verdict": "不採用",
+      "reason": "両者とも同じ速さとなる。"
+    },
+    "4": {
+      "value": "斜め上30度と鉛直下の速さは等しい",
+      "verdict": "採用",
+      "reason": "同じ初期エネルギーから同じ着地速さが得られる。"
+    },
+    "5": {
+      "value": "斜め上30度の方が鉛直上より速い",
+      "verdict": "不採用",
+      "reason": "両者とも同じ速さとなる。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_001.png"
+  ],
+  "question_id": "R01-RET-APPLIED-02",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "14b9b6c6e157100c9d9748a19ca247d25445f51c4d09e9d410691c40eb5121f0",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

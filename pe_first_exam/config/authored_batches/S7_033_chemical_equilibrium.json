@@ -1,0 +1,1253 @@
+{
+  "batch_id": "S7_033_chemical_equilibrium",
+  "reference_date": "2026-10-12",
+  "questions": [
+    {
+      "question_id": "H23-REG-APPLIED-12",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "触媒が変える反応速度と、変えない平衡定数・反応熱を区別する。",
+      "summary": "触媒が変える反応速度と、変えない平衡定数・反応熱を区別する。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "触媒の正味の再生、同一温度での平衡不変、反応熱の状態関数性。"
+      },
+      "choices": {
+        "1": {
+          "value": "自ら変化せず速度を変え又は反応を開始する",
+          "verdict": "条件付きで適切",
+          "reason": "反応過程では中間体として変化し得るが、正味で再生されるという意味である。開始は実用上観測できる速度への増大として読む。"
+        },
+        "2": {
+          "value": "平衡に影響しない",
+          "verdict": "適切",
+          "reason": "同じ温度で反応の標準ギブズエネルギー差を変えない。"
+        },
+        "3": {
+          "value": "反応熱を減少させる",
+          "verdict": "不適切",
+          "reason": "活性化障壁の低下と反応前後のエンタルピー差は別である。"
+        },
+        "4": {
+          "value": "負触媒は速度を低下させる",
+          "verdict": "条件付きで適切",
+          "reason": "歴史的呼称ではその意味であるが、IUPACは負触媒という用語を採用せず阻害を区別する。"
+        },
+        "5": {
+          "value": "選択性を持ち特定生成物を与える",
+          "verdict": "適切",
+          "reason": "競合する反応経路の相対速度を変えて生成物選択性を持ち得る。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "負触媒という出題時の用語と現行IUPAC定義の不一致、及び自ら変化せずの正味再生という省略を保持する。",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_005.png"
+      ],
+      "core_concept": "触媒が変える反応速度と、変えない平衡定数・反応熱を区別する。",
+      "required_knowledge": "触媒の正味の再生、同一温度での平衡不変、反応熱の状態関数性。",
+      "solution": "触媒は別の反応経路を与えるが、反応前後の状態が同じなら反応熱を変えない。したがって反応熱の減少を述べる3が不適切である。4の負触媒は歴史的用語として読み、現行IUPACでは速度を下げる作用を阻害として区別する。",
+      "answer_reason": "触媒は別の反応経路を与えるが、反応前後の状態が同じなら反応熱を変えない。したがって反応熱の減少を述べる3が不適切である。4の負触媒は歴史的用語として読み、現行IUPACでは速度を下げる作用を阻害として区別する。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。触媒は経路や速度を変えるが反応物と生成物の反応熱は変えない。負触媒という歴史用語の範囲に注意。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:catalyst"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "chemical_catalysis",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。化学反応と溶液平衡の物理化学に配置する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "iupac_greenbook2012",
+        "iupac_catalyst"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-10",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "stem": "同濃度・同体積で中和した3組の酸塩基について、生成塩の加水分解からpHの順序を求める。",
+      "summary": "同濃度・同体積で中和した3組の酸塩基について、生成塩の加水分解からpHの順序を求める。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "各水溶液は同じモル濃度、同じ体積。1対1の中和を先に処理する。強酸強塩基塩は水の自己解離に対して中性、弱酸塩は塩基性、弱塩基塩は酸性。"
+      },
+      "choices": {
+        "1": {
+          "value": "A・B・C",
+          "verdict": "不適切",
+          "reason": "酸性C、中性B、塩基性Aの順に一致しない。"
+        },
+        "2": {
+          "value": "B・C・A",
+          "verdict": "不適切",
+          "reason": "酸性C、中性B、塩基性Aの順に一致しない。"
+        },
+        "3": {
+          "value": "B・A・C",
+          "verdict": "不適切",
+          "reason": "酸性C、中性B、塩基性Aの順に一致しない。"
+        },
+        "4": {
+          "value": "C・A・B",
+          "verdict": "不適切",
+          "reason": "酸性C、中性B、塩基性Aの順に一致しない。"
+        },
+        "5": {
+          "value": "C・B・A",
+          "verdict": "適切",
+          "reason": "酸性C、中性B、塩基性Aの順に一致する。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/17_applied_science/page_003.png"
+      ],
+      "core_concept": "同濃度・同体積で中和した3組の酸塩基について、生成塩の加水分解からpHの順序を求める。",
+      "required_knowledge": "各水溶液は同じモル濃度、同じ体積。1対1の中和を先に処理する。強酸強塩基塩は水の自己解離に対して中性、弱酸塩は塩基性、弱塩基塩は酸性。",
+      "solution": "Aの酢酸と水酸化ナトリウムから生じる酢酸イオンは加水分解で水酸化物イオンを生じ、塩基性となる。Bの塩酸と水酸化ナトリウムは中性の塩、Cの塩酸とアンモニアはアンモニウムイオンを含む酸性の塩である。低いpHからC、B、Aとなり5を選ぶ。",
+      "answer_reason": "Aの酢酸と水酸化ナトリウムから生じる酢酸イオンは加水分解で水酸化物イオンを生じ、塩基性となる。Bの塩酸と水酸化ナトリウムは中性の塩、Cの塩酸とアンモニアはアンモニウムイオンを含む酸性の塩である。低いpHからC、B、Aとなり5を選ぶ。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。Aは酢酸塩で塩基性、Bは中性、Cはアンモニウム塩で酸性。低い順C,B,Aで5。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:hydrolysis"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "salt_hydrolysis",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。化学反応と溶液平衡の物理化学に配置する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "iupac_greenbook2012",
+        "mit_buffer2008"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-18",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "発熱するアンモニア合成の温度・圧力・窒素追加・触媒の効果を判定する。",
+      "summary": "発熱するアンモニア合成の温度・圧力・窒素追加・触媒の効果を判定する。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "\\(\\mathrm{N_2+3H_2\\rightleftharpoons2NH_3}+92\\,\\mathrm{kJ}\\)。窒素追加は温度・体積一定。気体の分圧を用いる理想気体近似。"
+      },
+      "choices": {
+        "1": {
+          "value": "発熱反応である",
+          "verdict": "適切",
+          "reason": "式の生成側の92 kJは反応式1回分の放熱を表す。"
+        },
+        "2": {
+          "value": "定温定積で窒素を加えると生成側へ進む",
+          "verdict": "適切",
+          "reason": "直後の \\(Q=p_{\\mathrm{NH_3}}^2/(p_{\\mathrm{N_2}}p_{\\mathrm{H_2}}^3)\\) が小さくなる。"
+        },
+        "3": {
+          "value": "平衡後の触媒追加で生成側へ移る",
+          "verdict": "不適切",
+          "reason": "触媒は平衡定数を変えず、正逆の反応を促進する。"
+        },
+        "4": {
+          "value": "鉄触媒のハーバー・ボッシュ法で製造する",
+          "verdict": "適切",
+          "reason": "鉄系触媒による工業合成である。実用温度は反応速度も考慮して選ぶ。"
+        },
+        "5": {
+          "value": "低温・高圧ほど生成に有利である",
+          "verdict": "適切",
+          "reason": "発熱方向は低温で平衡上有利となり、気体の化学量論数が4から2へ減る方向は圧縮で有利となる。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_007.png"
+      ],
+      "core_concept": "発熱するアンモニア合成の温度・圧力・窒素追加・触媒の効果を判定する。",
+      "required_knowledge": "\\(\\mathrm{N_2+3H_2\\rightleftharpoons2NH_3}+92\\,\\mathrm{kJ}\\)。窒素追加は温度・体積一定。気体の分圧を用いる理想気体近似。",
+      "solution": "反応式は窒素1、水素3、アンモニア2であり、生成側に92 kJを持つ。窒素追加は定温定積で反応商を低下させる。低温は発熱方向、高圧は気体量の少ない生成方向を平衡上有利にする。触媒による平衡移動だけが誤りであり、3を選ぶ。",
+      "answer_reason": "反応式は窒素1、水素3、アンモニア2であり、生成側に92 kJを持つ。窒素追加は定温定積で反応商を低下させる。低温は発熱方向、高圧は気体量の少ない生成方向を平衡上有利にする。触媒による平衡移動だけが誤りであり、3を選ぶ。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。発熱、定温定積窒素追加はQ低下、高圧低温有利、鉄触媒法適切。平衡への触媒追加は平衡位置不変で3。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:quotient",
+        "theory:chem_eq:ammonia",
+        "theory:chem_eq:catalyst"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "reaction_equilibrium_shift",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。化学反応と溶液平衡の物理化学に配置する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "iupac_greenbook2012"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-16",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "stem": "発熱するアンモニア合成の温度・圧力・窒素追加・触媒の効果を判定する。",
+      "summary": "発熱するアンモニア合成の温度・圧力・窒素追加・触媒の効果を判定する。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "\\(\\mathrm{N_2+3H_2\\rightleftharpoons2NH_3}+92\\,\\mathrm{kJ}\\)。窒素追加は温度・体積一定。気体の分圧を用いる理想気体近似。"
+      },
+      "choices": {
+        "1": {
+          "value": "発熱反応である",
+          "verdict": "適切",
+          "reason": "式の生成側の92 kJは反応式1回分の放熱を表す。"
+        },
+        "2": {
+          "value": "定温定積で窒素を加えると生成側へ進む",
+          "verdict": "適切",
+          "reason": "直後の \\(Q=p_{\\mathrm{NH_3}}^2/(p_{\\mathrm{N_2}}p_{\\mathrm{H_2}}^3)\\) が小さくなる。"
+        },
+        "3": {
+          "value": "低温・高圧ほど生成に有利である",
+          "verdict": "適切",
+          "reason": "発熱方向は低温で平衡上有利となり、気体の化学量論数が4から2へ減る方向は圧縮で有利となる。"
+        },
+        "4": {
+          "value": "平衡後の触媒追加で生成側へ移る",
+          "verdict": "不適切",
+          "reason": "触媒は平衡定数を変えず、正逆の反応を促進する。"
+        },
+        "5": {
+          "value": "鉄触媒のハーバー・ボッシュ法で製造する",
+          "verdict": "適切",
+          "reason": "鉄系触媒による工業合成である。実用温度は反応速度も考慮して選ぶ。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/17_applied_science/page_005.png"
+      ],
+      "core_concept": "発熱するアンモニア合成の温度・圧力・窒素追加・触媒の効果を判定する。",
+      "required_knowledge": "\\(\\mathrm{N_2+3H_2\\rightleftharpoons2NH_3}+92\\,\\mathrm{kJ}\\)。窒素追加は温度・体積一定。気体の分圧を用いる理想気体近似。",
+      "solution": "反応式は窒素1、水素3、アンモニア2であり、生成側に92 kJを持つ。窒素追加は定温定積で反応商を低下させる。低温は発熱方向、高圧は気体量の少ない生成方向を平衡上有利にする。触媒による平衡移動だけが誤りであり、4を選ぶ。",
+      "answer_reason": "反応式は窒素1、水素3、アンモニア2であり、生成側に92 kJを持つ。窒素追加は定温定積で反応商を低下させる。低温は発熱方向、高圧は気体量の少ない生成方向を平衡上有利にする。触媒による平衡移動だけが誤りであり、4を選ぶ。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。H28と候補順差、触媒移動の誤りが4。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:quotient",
+        "theory:chem_eq:ammonia",
+        "theory:chem_eq:catalyst"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "reaction_equilibrium_shift",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。化学反応と溶液平衡の物理化学に配置する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "iupac_greenbook2012"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-10",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "stem": "発熱するアンモニア合成の温度・圧力・窒素追加・触媒の効果を判定する。",
+      "summary": "発熱するアンモニア合成の温度・圧力・窒素追加・触媒の効果を判定する。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "\\(\\mathrm{N_2+3H_2\\rightleftharpoons2NH_3}+92\\,\\mathrm{kJ}\\)。窒素追加は温度・体積一定。気体の分圧を用いる理想気体近似。"
+      },
+      "choices": {
+        "1": {
+          "value": "発熱反応である",
+          "verdict": "適切",
+          "reason": "式の生成側の92 kJは反応式1回分の放熱を表す。"
+        },
+        "2": {
+          "value": "定温定積で窒素を加えると生成側へ進む",
+          "verdict": "適切",
+          "reason": "直後の \\(Q=p_{\\mathrm{NH_3}}^2/(p_{\\mathrm{N_2}}p_{\\mathrm{H_2}}^3)\\) が小さくなる。"
+        },
+        "3": {
+          "value": "平衡後の触媒追加で生成側へ移る",
+          "verdict": "不適切",
+          "reason": "触媒は平衡定数を変えず、正逆の反応を促進する。"
+        },
+        "4": {
+          "value": "鉄触媒のハーバー・ボッシュ法で製造する",
+          "verdict": "適切",
+          "reason": "鉄系触媒による工業合成である。実用温度は反応速度も考慮して選ぶ。"
+        },
+        "5": {
+          "value": "低温・高圧ほど生成に有利である",
+          "verdict": "適切",
+          "reason": "発熱方向は低温で平衡上有利となり、気体の化学量論数が4から2へ減る方向は圧縮で有利となる。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/17_applied_science/page_003.png"
+      ],
+      "core_concept": "発熱するアンモニア合成の温度・圧力・窒素追加・触媒の効果を判定する。",
+      "required_knowledge": "\\(\\mathrm{N_2+3H_2\\rightleftharpoons2NH_3}+92\\,\\mathrm{kJ}\\)。窒素追加は温度・体積一定。気体の分圧を用いる理想気体近似。",
+      "solution": "反応式は窒素1、水素3、アンモニア2であり、生成側に92 kJを持つ。窒素追加は定温定積で反応商を低下させる。低温は発熱方向、高圧は気体量の少ない生成方向を平衡上有利にする。触媒による平衡移動だけが誤りであり、3を選ぶ。",
+      "answer_reason": "反応式は窒素1、水素3、アンモニア2であり、生成側に92 kJを持つ。窒素追加は定温定積で反応商を低下させる。低温は発熱方向、高圧は気体量の少ない生成方向を平衡上有利にする。触媒による平衡移動だけが誤りであり、3を選ぶ。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。H28と候補順同じ触媒による位置変化3が誤り。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:quotient",
+        "theory:chem_eq:ammonia",
+        "theory:chem_eq:catalyst"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "reaction_equilibrium_shift",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。化学反応と溶液平衡の物理化学に配置する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "iupac_greenbook2012"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-13",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "一次可逆反応、反応性衝突、溶解度積、連鎖反応、熱暴走を比較する。",
+      "summary": "一次可逆反応、反応性衝突、溶解度積、連鎖反応、熱暴走を比較する。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "1のAとBの可逆反応は双方一次。2はClとNOClの衝突。3は \\(\\mathrm{Mg(OH)_2}\\)。4は連鎖開始・伝播・停止。5は発熱と温度上昇の正帰還。"
+      },
+      "choices": {
+        "1": {
+          "value": "一次正逆反応の速度定数比が平衡定数",
+          "verdict": "適切",
+          "reason": "平衡で \\(k_f[A]=k_r[B]\\) なので濃度基準の \\(K=[B]/[A]=k_f/k_r\\) となる。"
+        },
+        "2": {
+          "value": "十分なエネルギーの衝突でも必ず反応するとは限らない",
+          "verdict": "適切",
+          "reason": "分子の向きや反応経路にも依存する。"
+        },
+        "3": {
+          "value": "水酸化マグネシウムの溶解度はpHに依存しない",
+          "verdict": "不適切",
+          "reason": "共通イオン効果を通じて水酸化物イオンの活量が溶解量を変える。"
+        },
+        "4": {
+          "value": "連鎖反応は開始・伝播・停止を含む",
+          "verdict": "適切",
+          "reason": "反応性中間体の生成、再生、消滅を区別する。"
+        },
+        "5": {
+          "value": "発熱が速度を上げて熱爆発を起こし得る",
+          "verdict": "適切",
+          "reason": "発熱と除熱の釣合いが失われると温度上昇と反応加速が循環する。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_004.png"
+      ],
+      "core_concept": "一次可逆反応、反応性衝突、溶解度積、連鎖反応、熱暴走を比較する。",
+      "required_knowledge": "1のAとBの可逆反応は双方一次。2はClとNOClの衝突。3は \\(\\mathrm{Mg(OH)_2}\\)。4は連鎖開始・伝播・停止。5は発熱と温度上昇の正帰還。",
+      "solution": "水酸化マグネシウムの飽和溶液では \\(K_{\\mathrm{sp}}=a_{\\mathrm{Mg^{2+}}}a_{\\mathrm{OH^-}}^2\\) である。一定温度でもpHにより水酸化物イオンの活量が変わるため、溶解度は一般に変化する。pH依存性を否定する3が不適切である。",
+      "answer_reason": "水酸化マグネシウムの飽和溶液では \\(K_{\\mathrm{sp}}=a_{\\mathrm{Mg^{2+}}}a_{\\mathrm{OH^-}}^2\\) である。一定温度でもpHにより水酸化物イオンの活量が変わるため、溶解度は一般に変化する。pH依存性を否定する3が不適切である。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。Ksp=[Mg2+][OH-]^2、pHでOH-変わり溶解度も変わる。3。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:solubility",
+        "theory:chem_eq:rates"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "solubility_product",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。化学反応と溶液平衡の物理化学に配置する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "iupac_greenbook2012"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-11",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "stem": "溶媒系・酸化物イオン・電子対の酸塩基定義と、硫酸の酸化性を区別する。",
+      "summary": "溶媒系・酸化物イオン・電子対の酸塩基定義と、硫酸の酸化性を区別する。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "最も不適切な記述。酸の強さ、酸化還元、溶媒の相対的なプロトン授受を分離する。"
+      },
+      "choices": {
+        "1": {
+          "value": "溶媒の自己解離陽イオンを生じさせる物質は酸",
+          "verdict": "適切",
+          "reason": "溶媒系の定義であり、水に限らない。"
+        },
+        "2": {
+          "value": "酸化物イオンを受け取る物質は酸",
+          "verdict": "適切",
+          "reason": "ルクス・フラッドの定義である。電子対受容の定義とは区別する。"
+        },
+        "3": {
+          "value": "電子対を受け取る物質は酸",
+          "verdict": "適切",
+          "reason": "ルイスの定義である。"
+        },
+        "4": {
+          "value": "硫酸は非常に強い酸化剤",
+          "verdict": "不適切",
+          "reason": "希硫酸と熱濃硫酸を同じ酸化剤として一括できない。酸性の強さから酸化性を導けない。"
+        },
+        "5": {
+          "value": "酢酸は水中で酸、硫酸中で塩基",
+          "verdict": "適切",
+          "reason": "強酸溶媒中のプロトン受容という相対的役割である。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "4は濃度と温度を指定しない。初回記録のルクス・フラッドに関する短文は電子対と酸化物イオンを混同しており、原記録を保持して本文では定義を訂正する。",
+      "evidence": [
+        "extracted/pages/H30/17_applied_science/page_004.png"
+      ],
+      "core_concept": "溶媒系・酸化物イオン・電子対の酸塩基定義と、硫酸の酸化性を区別する。",
+      "required_knowledge": "最も不適切な記述。酸の強さ、酸化還元、溶媒の相対的なプロトン授受を分離する。",
+      "solution": "溶媒系では自己解離で生じる陽イオンを増やす物質が酸、ルクス・フラッドでは酸化物イオン受容体、ルイスでは電子対受容体が酸である。酢酸もより強い酸である硫酸溶媒中ではプロトンを受ける塩基として働く。硫酸の酸化性は濃度・温度に依存し、一般に非常に強い酸化剤とする4は適切でない。",
+      "answer_reason": "溶媒系では自己解離で生じる陽イオンを増やす物質が酸、ルクス・フラッドでは酸化物イオン受容体、ルイスでは電子対受容体が酸である。酢酸もより強い酸である硫酸溶媒中ではプロトンを受ける塩基として働く。硫酸の酸化性は濃度・温度に依存し、一般に非常に強い酸化剤とする4は適切でない。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。溶媒系、Lux-Flood電子対受容、強酸溶媒中酢酸の塩基性は適切。硫酸は濃度温度を問わず非常に強い酸化剤ではない。4。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:definitions"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "acid_base_definitions",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。化学反応と溶液平衡の物理化学に配置する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "iupac_greenbook2012"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-17",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "stem": "安息香酸と等モルの強塩基を混合し、生成塩の加水分解でpHを計算する。",
+      "summary": "安息香酸と等モルの強塩基を混合し、生成塩の加水分解でpHを計算する。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "\\(K_a=10^{-4}\\,\\mathrm{mol\\,dm^{-3}}\\)、\\(K_w=10^{-14}\\,\\mathrm{mol^2\\,dm^{-6}}\\)。体積加成、濃度で平衡式を扱う理想溶液近似、加水分解量が1 mol/dm3に比べ十分小さいこと。"
+      },
+      "choices": {
+        "1": {
+          "value": "7",
+          "verdict": "不適切",
+          "reason": "等モル中和は過剰酸塩基を消すが、弱酸の塩の加水分解を消さない。"
+        },
+        "2": {
+          "value": "8",
+          "verdict": "不適切",
+          "reason": "加水分解の平方根から得たpOH=5と対応しない。"
+        },
+        "3": {
+          "value": "9",
+          "verdict": "適切",
+          "reason": "水酸化物イオン濃度が約10のマイナス5乗なので対応する。"
+        },
+        "4": {
+          "value": "10",
+          "verdict": "不適切",
+          "reason": "形式濃度1とKbの積の平方根を取った結果と対応しない。"
+        },
+        "5": {
+          "value": "14",
+          "verdict": "不適切",
+          "reason": "未反応の1 mol/dm3強塩基が残る場合ではない。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "形式濃度1 mol/dm3の塩溶液に活量係数1を用いる計算上の近似を明示する。原典は温度・活量係数・実在溶液の調製可能性を指定しないため、実測pHの断定とは区別する。",
+      "evidence": [
+        "extracted/pages/H30/17_applied_science/page_006.png"
+      ],
+      "core_concept": "安息香酸と等モルの強塩基を混合し、生成塩の加水分解でpHを計算する。",
+      "required_knowledge": "\\(K_a=10^{-4}\\,\\mathrm{mol\\,dm^{-3}}\\)、\\(K_w=10^{-14}\\,\\mathrm{mol^2\\,dm^{-6}}\\)。体積加成、濃度で平衡式を扱う理想溶液近似、加水分解量が1 mol/dm3に比べ十分小さいこと。",
+      "solution": "両溶液は \\(2\\,\\mathrm{mol\\,dm^{-3}}\\)、各 \\(10\\,\\mathrm{cm^3}=0.010\\,\\mathrm{dm^3}\\) である。各物質量は0.020 molなので過剰の強塩基は残らない。混合体積0.020 dm3より安息香酸塩の形式濃度は1 mol/dm3である。\\(K_b=K_w/K_a=10^{-10}\\,\\mathrm{mol\\,dm^{-3}}\\) とし、加水分解量 \\(x\\) は \\(x^2/(1-x)=10^{-10}\\) から約 \\(10^{-5}\\,\\mathrm{mol\\,dm^{-3}}\\) となる。与えた \\(K_w=10^{-14}\\) に対応してpOH=5、pH=9であり3を選ぶ。",
+      "answer_reason": "両溶液は \\(2\\,\\mathrm{mol\\,dm^{-3}}\\)、各 \\(10\\,\\mathrm{cm^3}=0.010\\,\\mathrm{dm^3}\\) である。各物質量は0.020 molなので過剰の強塩基は残らない。混合体積0.020 dm3より安息香酸塩の形式濃度は1 mol/dm3である。\\(K_b=K_w/K_a=10^{-10}\\,\\mathrm{mol\\,dm^{-3}}\\) とし、加水分解量 \\(x\\) は \\(x^2/(1-x)=10^{-10}\\) から約 \\(10^{-5}\\,\\mathrm{mol\\,dm^{-3}}\\) となる。与えた \\(K_w=10^{-14}\\) に対応してpOH=5、pH=9であり3を選ぶ。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。中和後安息香酸塩1mol/L、Kb=Kw/Ka=1e-10、OH~1e-5、pOH5,pH9では? sqrt1e-10=1e-5、pH9で候補3。初め4と考えたが計算を完了し3。原典Ka=1e-4。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:hydrolysis"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "salt_hydrolysis",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。化学反応と溶液平衡の物理化学に配置する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "iupac_greenbook2012",
+        "mit_buffer2008"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-09",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "stem": "フッ化水素の物性・ガラスへの反応・危険性と、酸解離の強さを区別する。",
+      "summary": "フッ化水素の物性・ガラスへの反応・危険性と、酸解離の強さを区別する。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "他のハロゲン化水素との比較。純液体の誘電性と水溶液の酸解離は別。単独のHFと他の酸化剤を併用する系を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "他のハロゲン化水素より沸点が高い",
+          "verdict": "適切",
+          "reason": "分子間水素結合による会合が寄与する。"
+        },
+        "2": {
+          "value": "液体HFは大きな誘電率を持つ",
+          "verdict": "解釈未解決",
+          "reason": "定性的な候補として初回は適切としたが、温度条件付きの定量一次資料の照合が残る。"
+        },
+        "3": {
+          "value": "ガラスと反応するが金・白金とは反応しない",
+          "verdict": "条件付きで適切",
+          "reason": "ガラス腐食はNIOSHで確認できる。金・白金の非反応性を他の酸化剤との混合条件まで一般化しない。"
+        },
+        "4": {
+          "value": "水溶液は空気中で発煙する",
+          "verdict": "条件付きで適切",
+          "reason": "NIOSHは濃度40パーセント超の発煙を説明する。濃度を指定しない全水溶液への全称とは読まない。"
+        },
+        "5": {
+          "value": "強い毒性を持つ強酸である",
+          "verdict": "不適切",
+          "reason": "毒性・腐食性は強いが、通常の希薄水溶液における解離は弱酸の分類である。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "純液体HFの誘電率と単独HFの金・白金非反応性について条件付き一次資料の全文確認が残る。発煙も濃度条件を要する。初回5と公式5の一致だけで全肢校正完了としない。",
+      "evidence": [
+        "extracted/pages/R01/17_applied_science/page_003.png"
+      ],
+      "core_concept": "フッ化水素の物性・ガラスへの反応・危険性と、酸解離の強さを区別する。",
+      "required_knowledge": "他のハロゲン化水素との比較。純液体の誘電性と水溶液の酸解離は別。単独のHFと他の酸化剤を併用する系を区別する。",
+      "solution": "HFは強い水素結合を形成し、他のハロゲン化水素より高い沸点を持つ。ガラスのケイ酸成分と反応する。高濃度水溶液は発煙し、弱酸であっても深刻な有害性を持つ。5は有害性を強酸であることに結び付けるため誤りである。",
+      "answer_reason": "HFは強い水素結合を形成し、他のハロゲン化水素より高い沸点を持つ。ガラスのケイ酸成分と反応する。高濃度水溶液は発煙し、弱酸であっても深刻な有害性を持つ。5は有害性を強酸であることに結び付けるため誤りである。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。HF水溶液は危険だが通常弱酸。5の毒性強い強酸という結合が誤り。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:acid_strength"
+      ],
+      "discipline_id": "chem_inorganic",
+      "concept_id": "hf_properties",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。HFのハロゲン化水素としての物性が中心なので無機化学に配置し、酸解離理論を横断参照する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "purdue_acid_strength",
+        "niosh_hf"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-15",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "stem": "衝突模型、拡散律速、平衡の熱力学、活性化エネルギーの意味を比較する。",
+      "summary": "衝突模型、拡散律速、平衡の熱力学、活性化エネルギーの意味を比較する。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "気体圧力比較は温度・組成一定。衝突頻度の単位と対象を明記する。アレニウス式の経験的活性化エネルギーと電子的障壁高さは一般には別。"
+      },
+      "choices": {
+        "1": {
+          "value": "衝突頻度は圧力に比例",
+          "verdict": "条件付きで適切",
+          "reason": "分子1個あたりの頻度は数密度に比例する。単位体積あたりの衝突数なら固定組成では圧力の2乗に比例する。"
+        },
+        "2": {
+          "value": "反応断面積は衝突断面積と立体因子の積",
+          "verdict": "条件付きで適切",
+          "reason": "配向の割合を掛ける単純模型である。一般の反応断面積の定義を尽くさない。"
+        },
+        "3": {
+          "value": "速い酸塩基中和は反応律速",
+          "verdict": "不適切",
+          "reason": "遭遇後の反応が速い極限では拡散による遭遇が律速する。"
+        },
+        "4": {
+          "value": "標準自由エネルギー変化は平衡定数を決める",
+          "verdict": "適切",
+          "reason": "\\(K=\\exp(-\\Delta_rG^\\circ/RT)\\) に従う。"
+        },
+        "5": {
+          "value": "アレニウス活性化エネルギーは活性錯合体との差",
+          "verdict": "条件付きで適切",
+          "reason": "単純な障壁模型の説明である。厳密な経験的定義は \\(E_a=RT^2d\\ln k/dT\\) であり、常に障壁高さと同じではない。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "衝突頻度の対象、立体因子模型、アレニウス活性化エネルギーを障壁差で代表する省略を原典通り保持し、適用範囲を教材で限定する。",
+      "evidence": [
+        "extracted/pages/R01/17_applied_science/page_005.png"
+      ],
+      "core_concept": "衝突模型、拡散律速、平衡の熱力学、活性化エネルギーの意味を比較する。",
+      "required_knowledge": "気体圧力比較は温度・組成一定。衝突頻度の単位と対象を明記する。アレニウス式の経験的活性化エネルギーと電子的障壁高さは一般には別。",
+      "solution": "出会った後のプロトン移動が十分速い中和では、分子やイオンが出会う拡散が速度を制限する。反応そのものが律速とする3が不適切である。1は温度と組成一定の分子1個あたりの衝突頻度、2は単純な立体因子模型、5は障壁模型という適用範囲を持つ。",
+      "answer_reason": "出会った後のプロトン移動が十分速い中和では、分子やイオンが出会う拡散が速度を制限する。反応そのものが律速とする3が不適切である。1は温度と組成一定の分子1個あたりの衝突頻度、2は単純な立体因子模型、5は障壁模型という適用範囲を持つ。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。速い中和は出会い拡散が律速で反応律速ではない。3。衝突頻度の単位対象は注意。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:collision",
+        "theory:chem_eq:diffusion",
+        "theory:chem_eq:activation"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "collision_diffusion_kinetics",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。化学反応と溶液平衡の物理化学に配置する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "iupac_greenbook2012"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-15",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "stem": "活性化障壁・動的平衡・触媒選択性と、速度と平衡位置の独立性を問う。",
+      "summary": "活性化障壁・動的平衡・触媒選択性と、速度と平衡位置の独立性を問う。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "温度・圧力一定。同じ反応物と生成物について平衡と速度を比較する。活性化エネルギーは問題の反応経路上の障壁模型として読む。"
+      },
+      "choices": {
+        "1": {
+          "value": "反応物から遷移状態への差が障壁",
+          "verdict": "適切",
+          "reason": "指定した反応経路のエネルギー障壁を説明する。経験的アレニウス量と無条件に同一視しない。"
+        },
+        "2": {
+          "value": "平衡では正逆反応速度が等しい",
+          "verdict": "適切",
+          "reason": "濃度の正味変化が0でも各方向の反応は進む。"
+        },
+        "3": {
+          "value": "触媒は低い障壁の経路を与える",
+          "verdict": "適切",
+          "reason": "同じ反応の別経路を通じて速度を上げる。"
+        },
+        "4": {
+          "value": "触媒は選択性を持つ",
+          "verdict": "適切",
+          "reason": "競合経路の相対速度を変え得る。"
+        },
+        "5": {
+          "value": "速度増大で定温定圧の平衡位置が変わる",
+          "verdict": "不適切",
+          "reason": "速度は平衡への到達時間に関わり、平衡位置は自由エネルギーで決まる。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/17_applied_science/page_006.png"
+      ],
+      "core_concept": "活性化障壁・動的平衡・触媒選択性と、速度と平衡位置の独立性を問う。",
+      "required_knowledge": "温度・圧力一定。同じ反応物と生成物について平衡と速度を比較する。活性化エネルギーは問題の反応経路上の障壁模型として読む。",
+      "solution": "触媒は障壁の低い別経路を与えるが、温度一定で平衡定数を変えない。平衡では正逆の反応が停止するのではなく同じ速度で継続する。定温定圧で反応速度が増すと平衡位置も変わるとする5が誤りである。",
+      "answer_reason": "触媒は障壁の低い別経路を与えるが、温度一定で平衡定数を変えない。平衡では正逆の反応が停止するのではなく同じ速度で継続する。定温定圧で反応速度が増すと平衡位置も変わるとする5が誤りである。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。速度増大だけで定温定圧の平衡位置は変わらない5。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:catalyst",
+        "theory:chem_eq:activation",
+        "theory:chem_eq:rates"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "chemical_catalysis",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。化学反応と溶液平衡の物理化学に配置する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "iupac_greenbook2012"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-13",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "stem": "衝突断面積と反応断面積、反応速度と速度定数、拡散律速の定義を区別する。",
+      "summary": "衝突断面積と反応断面積、反応速度と速度定数、拡散律速の定義を区別する。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "原典3は逆反応の反応速度と正反応の反応速度の比。速度定数へ置換しない。断面積は入射流束に対する有効面積であり、比較する衝突の定義とエネルギーを指定する。"
+      },
+      "choices": {
+        "1": {
+          "value": "衝突頻度は断面積・相対速さ・数密度に比例",
+          "verdict": "適切",
+          "reason": "分子1個あたりの衝突頻度の式である。"
+        },
+        "2": {
+          "value": "反応断面積は衝突断面積を上回らない",
+          "verdict": "解釈未解決",
+          "reason": "同じ遭遇集合のうち反応する割合という模型なら成立する。剛体球幾何学面積との比較を一般則とすることはできない。公式2の根拠となる断面積の意味は追加査読が必要である。"
+        },
+        "3": {
+          "value": "平衡定数は逆反応速度と正反応速度の比",
+          "verdict": "不適切",
+          "reason": "動的平衡では速度比は1である。一次可逆反応の速度定数比でも順序は正方向の定数を逆方向で割る。"
+        },
+        "4": {
+          "value": "二分子速度定数は障壁を超える衝突割合に依存",
+          "verdict": "条件付きで適切",
+          "reason": "活性化障壁を持つ単純衝突模型である。無障壁反応や拡散律速を包括する一般式ではない。"
+        },
+        "5": {
+          "value": "遭遇対が分離より速く生成物を作るなら拡散で決まる",
+          "verdict": "適切",
+          "reason": "出会った後の反応確率が高い拡散律速の極限である。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "初回3、公式2の不一致を保持する。原典3の速度比は一般に誤りであり、2も比較する断面積の定義に依存する。最も不適切を一意に説明する根拠は未解決であり、公式に合わせて3を速度定数に書き換えない。",
+      "evidence": [
+        "extracted/pages/R02/17_applied_science/page_005.png"
+      ],
+      "core_concept": "衝突断面積と反応断面積、反応速度と速度定数、拡散律速の定義を区別する。",
+      "required_knowledge": "原典3は逆反応の反応速度と正反応の反応速度の比。速度定数へ置換しない。断面積は入射流束に対する有効面積であり、比較する衝突の定義とエネルギーを指定する。",
+      "solution": "1は分子1個あたりの \\(z=\\sigma\\bar v_{\\mathrm{rel}}n\\)、4は活性化模型、5は拡散律速を述べる。3の原文は速度定数ではなく反応速度の比である。平衡では正逆の速度が等しく比は1なので、一般の平衡定数を表せず、初回は3を選んだ。公式正答は2である。2について剛体球の幾何学断面積と実効的反応断面積を区別する必要があるが、断面積の比較条件は原典に明示されない。2の公式判定だけで3の記述を適切に直すことはできない。",
+      "answer_reason": "1は分子1個あたりの \\(z=\\sigma\\bar v_{\\mathrm{rel}}n\\)、4は活性化模型、5は拡散律速を述べる。3の原文は速度定数ではなく反応速度の比である。平衡では正逆の速度が等しく比は1なので、一般の平衡定数を表せず、初回は3を選んだ。公式正答は2である。2について剛体球の幾何学断面積と実効的反応断面積を区別する必要があるが、断面積の比較条件は原典に明示されない。2の公式判定だけで3の記述を適切に直すことはできない。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。平衡では正逆反応速度は等しく比1でありKを表さない。3。速度定数比と区別。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:collision",
+        "theory:chem_eq:diffusion",
+        "theory:chem_eq:rates"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "collision_diffusion_kinetics",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。化学反応と溶液平衡の物理化学に配置する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "iupac_greenbook2012"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-10",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "一定温度・圧力のAとBの可逆反応で、実際の反応ギブズエネルギーと標準量を区別する。",
+      "summary": "一定温度・圧力のAとBの可逆反応で、実際の反応ギブズエネルギーと標準量を区別する。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "定温定圧の \\(\\mathrm{A\\rightleftharpoons B}\\)。標準生成ギブズエネルギーの差と実際の組成による反応量を区別する。濃度比で活量比を近似する条件を明記する。"
+      },
+      "choices": {
+        "1": {
+          "value": "反応ギブズエネルギー負なら正方向へ進む",
+          "verdict": "適切",
+          "reason": "定温定圧で正方向の反応進行が系のギブズエネルギーを低下させる。"
+        },
+        "2": {
+          "value": "平衡では反応ギブズエネルギーが0",
+          "verdict": "適切",
+          "reason": "反応進行度に関するギブズエネルギーの微分が0となる。"
+        },
+        "3": {
+          "value": "標準生成量から反応標準量を求める",
+          "verdict": "適切",
+          "reason": "生成物の標準生成ギブズエネルギーの和から反応物の和を化学量論係数付きで引く。"
+        },
+        "4": {
+          "value": "一定温度なら濃度比が変わっても反応量は一定",
+          "verdict": "不適切",
+          "reason": "標準反応量と異なり、実際の反応量は反応商に依存する。"
+        },
+        "5": {
+          "value": "平衡定数は標準生成ギブズエネルギーから求まる",
+          "verdict": "適切",
+          "reason": "標準反応量を求めて指数式に代入する。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_004.png"
+      ],
+      "core_concept": "一定温度・圧力のAとBの可逆反応で、実際の反応ギブズエネルギーと標準量を区別する。",
+      "required_knowledge": "定温定圧の \\(\\mathrm{A\\rightleftharpoons B}\\)。標準生成ギブズエネルギーの差と実際の組成による反応量を区別する。濃度比で活量比を近似する条件を明記する。",
+      "solution": "\\(\\Delta_rG=\\Delta_rG^\\circ+RT\\ln Q\\) であり、AとBの1対1反応では \\(Q=a_B/a_A\\) である。一定温度でも組成が変われば実際の反応ギブズエネルギーは変わる。平衡の \\(\\Delta_rG=0\\) から \\(K=\\exp(-\\Delta_rG^\\circ/RT)\\) が得られる。濃度比変化を無視する4が不適切である。",
+      "answer_reason": "\\(\\Delta_rG=\\Delta_rG^\\circ+RT\\ln Q\\) であり、AとBの1対1反応では \\(Q=a_B/a_A\\) である。一定温度でも組成が変われば実際の反応ギブズエネルギーは変わる。平衡の \\(\\Delta_rG=0\\) から \\(K=\\exp(-\\Delta_rG^\\circ/RT)\\) が得られる。濃度比変化を無視する4が不適切である。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。Delta_rG=Delta_rGstd+RTlnQ、濃度比で変わるため4。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:gibbs",
+        "theory:chem_eq:quotient"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "reaction_gibbs_equilibrium",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。化学反応と溶液平衡の物理化学に配置する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "iupac_greenbook2012"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-17",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "stem": "一定温度・圧力のAとBの可逆反応で、実際の反応ギブズエネルギーと標準量を区別する。",
+      "summary": "一定温度・圧力のAとBの可逆反応で、実際の反応ギブズエネルギーと標準量を区別する。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "定温定圧の \\(\\mathrm{A\\rightleftharpoons B}\\)。標準生成ギブズエネルギーの差と実際の組成による反応量を区別する。濃度比で活量比を近似する条件を明記する。"
+      },
+      "choices": {
+        "1": {
+          "value": "一定温度なら濃度比が変わっても反応量は一定",
+          "verdict": "不適切",
+          "reason": "標準反応量と異なり、実際の反応量は反応商に依存する。"
+        },
+        "2": {
+          "value": "反応ギブズエネルギー負なら正方向へ進む",
+          "verdict": "適切",
+          "reason": "定温定圧で正方向の反応進行が系のギブズエネルギーを低下させる。"
+        },
+        "3": {
+          "value": "平衡定数は標準生成ギブズエネルギーから求まる",
+          "verdict": "適切",
+          "reason": "標準反応量を求めて指数式に代入する。"
+        },
+        "4": {
+          "value": "標準生成量から反応標準量を求める",
+          "verdict": "適切",
+          "reason": "生成物の標準生成ギブズエネルギーの和から反応物の和を化学量論係数付きで引く。"
+        },
+        "5": {
+          "value": "平衡では反応ギブズエネルギーが0",
+          "verdict": "適切",
+          "reason": "反応進行度に関するギブズエネルギーの微分が0となる。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/17_applied_science/page_006.png"
+      ],
+      "core_concept": "一定温度・圧力のAとBの可逆反応で、実際の反応ギブズエネルギーと標準量を区別する。",
+      "required_knowledge": "定温定圧の \\(\\mathrm{A\\rightleftharpoons B}\\)。標準生成ギブズエネルギーの差と実際の組成による反応量を区別する。濃度比で活量比を近似する条件を明記する。",
+      "solution": "\\(\\Delta_rG=\\Delta_rG^\\circ+RT\\ln Q\\) であり、AとBの1対1反応では \\(Q=a_B/a_A\\) である。一定温度でも組成が変われば実際の反応ギブズエネルギーは変わる。平衡の \\(\\Delta_rG=0\\) から \\(K=\\exp(-\\Delta_rG^\\circ/RT)\\) が得られる。濃度比変化を無視する1が不適切である。",
+      "answer_reason": "\\(\\Delta_rG=\\Delta_rG^\\circ+RT\\ln Q\\) であり、AとBの1対1反応では \\(Q=a_B/a_A\\) である。一定温度でも組成が変われば実際の反応ギブズエネルギーは変わる。平衡の \\(\\Delta_rG=0\\) から \\(K=\\exp(-\\Delta_rG^\\circ/RT)\\) が得られる。濃度比変化を無視する1が不適切である。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。R03と同内容だが濃度比不変の誤りが1。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:gibbs",
+        "theory:chem_eq:quotient"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "reaction_gibbs_equilibrium",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。化学反応と溶液平衡の物理化学に配置する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "iupac_greenbook2012"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-17",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "緩衝溶液の定義、血液、式、酸塩基対の調製条件を判定する。",
+      "summary": "緩衝溶液の定義、血液、式、酸塩基対の調製条件を判定する。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "最も不適切な文。緩衝は有限量の酸塩基添加に対する変化の小ささであり、pH完全不変ではない。弱塩基の強酸による部分中和。"
+      },
+      "choices": {
+        "1": {
+          "value": "少量の強酸強塩基添加でpHが大きく変わらない",
+          "verdict": "適切",
+          "reason": "緩衝容量内での性質である。"
+        },
+        "2": {
+          "value": "血液のpH7.4維持に緩衝は関与しない",
+          "verdict": "不適切",
+          "reason": "重炭酸系やタンパク等の酸塩基対が関与する。"
+        },
+        "3": {
+          "value": "ヘンダーソン・ハッセルバルヒ式でpHを求める",
+          "verdict": "条件付きで適切",
+          "reason": "活量比の式は平衡から導かれる。濃度比や混合時の物質量比に置換するには近似条件が必要である。"
+        },
+        "4": {
+          "value": "弱酸とその共役塩基の塩で調製",
+          "verdict": "適切",
+          "reason": "両成分が有効量存在するように調製する。"
+        },
+        "5": {
+          "value": "弱塩基と強酸で緩衝溶液を作る",
+          "verdict": "条件付きで適切",
+          "reason": "部分中和で弱塩基と共役酸の両方を残す。強酸過剰では一般に緩衝溶液にならない。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "5は混合比を指定しない。部分中和という成立条件を注記し、一律に全混合比で適切とは扱わない。",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_006.png"
+      ],
+      "core_concept": "緩衝溶液の定義、血液、式、酸塩基対の調製条件を判定する。",
+      "required_knowledge": "最も不適切な文。緩衝は有限量の酸塩基添加に対する変化の小ささであり、pH完全不変ではない。弱塩基の強酸による部分中和。",
+      "solution": "緩衝溶液には弱酸と共役塩基、又は弱塩基と共役酸の両方が必要である。血液のpH維持にも緩衝作用が関与するので、それを否定する2が誤りである。\\(K_a=a_{\\mathrm{H^+}}a_{\\mathrm{A^-}}/a_{\\mathrm{HA}}\\) を対数化すると \\(\\mathrm{pH=p}K_a+\\log_{10}(a_{\\mathrm{A^-}}/a_{\\mathrm{HA}})\\) となる。弱塩基と強酸の混合は部分中和で両成分を残す条件が必要である。",
+      "answer_reason": "緩衝溶液には弱酸と共役塩基、又は弱塩基と共役酸の両方が必要である。血液のpH維持にも緩衝作用が関与するので、それを否定する2が誤りである。\\(K_a=a_{\\mathrm{H^+}}a_{\\mathrm{A^-}}/a_{\\mathrm{HA}}\\) を対数化すると \\(\\mathrm{pH=p}K_a+\\log_{10}(a_{\\mathrm{A^-}}/a_{\\mathrm{HA}})\\) となる。弱塩基と強酸の混合は部分中和で両成分を残す条件が必要である。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。血液pH維持に重炭酸やタンパク等の緩衝が関与、否定2が誤り。強酸過剰なら緩衝でなくなる。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:buffer"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "buffer_equilibrium",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。化学反応と溶液平衡の物理化学に配置する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "iupac_greenbook2012",
+        "mit_buffer2008"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-12",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "stem": "ルイス・ブレンステッド・アレニウスの酸、pKa、塩素のオキソ酸の強さを比較する。",
+      "summary": "ルイス・ブレンステッド・アレニウスの酸、pKa、塩素のオキソ酸の強さを比較する。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "酸解離定数は活量に基づく無次元量でありpKaはその負常用対数。HClOとHClO2は同じ中心元素で比較。"
+      },
+      "choices": {
+        "1": {
+          "value": "ルイス酸は電子対受容体",
+          "verdict": "適切",
+          "reason": "共有結合形成に電子対を受け取る。"
+        },
+        "2": {
+          "value": "ブレンステッド酸はプロトン供与体",
+          "verdict": "適切",
+          "reason": "相手の塩基にプロトンを渡す。"
+        },
+        "3": {
+          "value": "酸解離定数pKaが小さいほど強酸",
+          "verdict": "条件付きで適切",
+          "reason": "数値の大小関係はpKaについて正しい。pKaそのものを酸解離定数と呼ぶ点は不正確である。"
+        },
+        "4": {
+          "value": "アレニウス酸は水中で水素イオンを生じる",
+          "verdict": "適切",
+          "reason": "水溶液に限定した定義である。"
+        },
+        "5": {
+          "value": "次亜塩素酸は亜塩素酸より強い酸",
+          "verdict": "不適切",
+          "reason": "Purdueの表ではHOClのKaが2.9の10のマイナス8乗、HOClOが1.1の10のマイナス2乗であり、逆である。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "3の原典表現は酸解離定数pKaである。pKaとKaを同一視する文を科学的に修正した原文として保存せず、用語の不正確さを注記する。",
+      "evidence": [
+        "extracted/pages/R06/17_applied_science/page_004.png"
+      ],
+      "core_concept": "ルイス・ブレンステッド・アレニウスの酸、pKa、塩素のオキソ酸の強さを比較する。",
+      "required_knowledge": "酸解離定数は活量に基づく無次元量でありpKaはその負常用対数。HClOとHClO2は同じ中心元素で比較。",
+      "solution": "ルイス酸は電子対受容体、ブレンステッド酸はプロトン供与体、アレニウス酸は水中で水素イオンを増やす物質である。\\(\\mathrm{p}K_a=-\\log_{10}K_a\\) なので小さいほど強い酸となる。塩素中心のオキソ酸では亜塩素酸HClO2が次亜塩素酸HClOより強く、逆を述べる5が誤りである。",
+      "answer_reason": "ルイス酸は電子対受容体、ブレンステッド酸はプロトン供与体、アレニウス酸は水中で水素イオンを増やす物質である。\\(\\mathrm{p}K_a=-\\log_{10}K_a\\) なので小さいほど強い酸となる。塩素中心のオキソ酸では亜塩素酸HClO2が次亜塩素酸HClOより強く、逆を述べる5が誤りである。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。HClO2の方が酸素が多く共役塩基安定化、強酸。5。pKaは酸解離定数そのものではなく負常用対数。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:definitions",
+        "theory:chem_eq:acid_strength"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "acid_base_definitions",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。化学反応と溶液平衡の物理化学に配置する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "iupac_greenbook2012",
+        "purdue_acid_strength"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-13",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "四酸化二窒素の解離平衡で、反応種の分圧と不活性気体による全圧変化を区別する。",
+      "summary": "四酸化二窒素の解離平衡で、反応種の分圧と不活性気体による全圧変化を区別する。",
+      "conditions": {
+        "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+        "成立条件": "1、2、3、5は温度・体積一定、4は温度一定で体積増加。理想気体近似。不活性な窒素と固体触媒は反応商に含めない。"
+      },
+      "choices": {
+        "1": {
+          "value": "定温定積で四酸化二窒素を加えると右へ",
+          "verdict": "適切",
+          "reason": "反応商の分母が増えてQが下がる。"
+        },
+        "2": {
+          "value": "定温定積で二酸化窒素を除くと右へ",
+          "verdict": "適切",
+          "reason": "反応商の分子が減ってQが下がる。"
+        },
+        "3": {
+          "value": "窒素を加えて圧力を上げると左へ",
+          "verdict": "不適切",
+          "reason": "一定体積では反応種の分圧が変わらず、圧縮による圧力上昇とは異なる。"
+        },
+        "4": {
+          "value": "一定温度で体積を増すと右へ",
+          "verdict": "適切",
+          "reason": "反応商が下がり気体の化学量論数の多い側へ進む。"
+        },
+        "5": {
+          "value": "定温定積で固体触媒を加えても平衡は変わらない",
+          "verdict": "適切",
+          "reason": "触媒はKを変えず、反応商の因子にもならない。"
+        }
+      },
+      "figures": "文字記述又は順序候補であり図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_005.png"
+      ],
+      "core_concept": "四酸化二窒素の解離平衡で、反応種の分圧と不活性気体による全圧変化を区別する。",
+      "required_knowledge": "1、2、3、5は温度・体積一定、4は温度一定で体積増加。理想気体近似。不活性な窒素と固体触媒は反応商に含めない。",
+      "solution": "\\(\\mathrm{N_2O_4\\rightleftharpoons2NO_2}\\) の \\(Q=p_{\\mathrm{NO_2}}^2/p_{\\mathrm{N_2O_4}}\\) を各操作直後に比較する。一定温度・体積で窒素を加えても反応種の \\(p_i=n_iRT/V\\) は変わらず、Qも変わらない。全圧が上がるだけで左へ進むとする3が誤りである。体積を増やす場合は全反応種の分圧が下がり、Qは体積に反比例して下がるため右へ進む。",
+      "answer_reason": "\\(\\mathrm{N_2O_4\\rightleftharpoons2NO_2}\\) の \\(Q=p_{\\mathrm{NO_2}}^2/p_{\\mathrm{N_2O_4}}\\) を各操作直後に比較する。一定温度・体積で窒素を加えても反応種の \\(p_i=n_iRT/V\\) は変わらず、Qも変わらない。全圧が上がるだけで左へ進むとする3が誤りである。体積を増やす場合は全反応種の分圧が下がり、Qは体積に反比例して下がるため右へ進む。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式参照前に保存した17原典画像の初回判断を保持する。定温定積のN2追加は反応種分圧不変。総圧のみで左移動とはならない3。",
+      "learning_points": "反応速度と平衡位置、全圧と分圧、濃度と活量を分ける。式の適用条件を確認し、原典の不正確な記述を科学的に正しい文へ置き換えない。",
+      "theory_references": [
+        "theory:chem_eq:quotient",
+        "theory:chem_eq:inert"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "reaction_equilibrium_shift",
+      "cross_concepts": [],
+      "classification_reason": "反応の速度・化学平衡・酸塩基の定義と溶液組成が中心である。化学反応と溶液平衡の物理化学に配置する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "化学固有の定義と条件を新規知識として評価し、数式操作は物理専攻の既知の手法として評価する。原典の解釈疑義は別記する。"
+      },
+      "citations": [
+        "iupac_greenbook2012"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "まさ土・しらす・黄土・火山灰質粘性土・泥炭の成因について適切な記述を選ぶ。",
+  "conditions": {
+    "方向": "最も適切なもの。",
+    "対象": "土の一般的な名称と成因。"
+  },
+  "choices": {
+    "1": {
+      "value": "黄土は海洋堆積物である。",
+      "verdict": "不適切",
+      "reason": "黄土（レス）は風で運ばれたシルトを主体とする風成堆積物で、海成という説明が誤り。"
+    },
+    "2": {
+      "value": "しらすは花崗岩の風化物とその二次堆積物である。",
+      "verdict": "不適切",
+      "reason": "しらすは主に珪長質火砕流の未溶結部などに由来する火山性堆積物で、二次堆積物もある。花崗岩の風化土とは起源が違う。"
+    },
+    "3": {
+      "value": "泥炭はピートとも呼ばれ、未分解の植物組織を肉眼で判定できる。",
+      "verdict": "適切",
+      "reason": "水分の多い環境などで植物遺体の分解が遅れ、繊維・組織を残す有機質土が泥炭である。分解程度には幅があり、あらゆる泥炭の全組織が必ず肉眼で見えるという一般化は避ける。"
+    },
+    "4": {
+      "value": "まさ土の母材は流紋岩である。",
+      "verdict": "不適切",
+      "reason": "まさ土は主に花崗岩類の風化により砂状となった土である。残留と崩積はその後の移動の区別であり、流紋岩を母材とする記述が誤り。"
+    },
+    "5": {
+      "value": "火山灰質粘性土をレスと呼ぶ。",
+      "verdict": "不適切",
+      "reason": "火山灰由来の粘性土と風成シルトのレスを同一にしない。分布地域が一部重なるだけでは成因を一致させられない。"
+    }
+  },
+  "figures": "原典の問題幹・否定・鉱物名・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_009.png"
+  ],
+  "question_id": "R01-RET-APPLIED-28",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "4a0e05c445156393dec21b698a2bfcea2ec9b5416aeccbcd96daa1ea6dfa2492",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

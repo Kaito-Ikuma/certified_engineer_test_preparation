@@ -1,0 +1,5028 @@
+Geosoft eXecutables (GX’s) Developed by the U.S.
+Geological Survey, Version 2.0, with Notes on GX
+Development from Fortran Code
+By Jeffrey D. Phillips
+
+
+
+
+Open-File Report 2007–1355
+
+
+
+
+U.S. Department of the Interior
+U.S. Geological Survey
+U.S. Department of the Interior
+DIRK KEMPTHORNE, Secretary
+
+U.S. Geological Survey
+Mark D. Myers, Director
+
+U.S. Geological Survey, Reston, Virginia 2007
+
+
+
+
+For product and ordering information:
+World Wide Web: http://www.usgs.gov/pubprod
+Telephone: 1-888-ASK-USGS
+
+
+For more information on the USGS—the Federal source for science about the Earth,
+its natural and living resources, natural hazards, and the environment:
+World Wide Web: http://www.usgs.gov
+Telephone: 1-888-ASK-USGS
+
+
+Any use of trade, product, or firm names is for descriptive purposes only and does not imply
+endorsement by the U.S. Government.
+
+
+Although this report is in the public domain, permission must be secured from the individual
+copyright owners to reproduce any copyrighted material contained within this report.
+
+
+
+
+Suggested citation:
+Phillips, J.D., 2007, Geosoft eXecutables (GX’s) developed by the U.S. Geological Survey, version 2.0, with
+notes on GX development from Fortran code: U.S. Geological Survey Open-File Report 2007-1355.
+
+
+
+
+                                    ii
+Contents
+
+   Introduction .....................................................................................................................................................................1
+
+   Download and Installation ............................................................................................................................................2
+
+   The USGS Menu Files and Short GX Descriptions ...................................................................................................3
+
+      Grid Utilities..................................................................................................................................................................3
+
+      Grid Spatial Filtering ...................................................................................................................................................4
+
+      Grid Fourier Filtering – Step-by-Step ......................................................................................................................4
+
+      Grid Fourier Filtering – All-in-One ............................................................................................................................5
+
+      Grid Matched Filtering ...............................................................................................................................................6
+
+      Grid Interpretation ......................................................................................................................................................6
+
+      Database Utilities........................................................................................................................................................6
+
+      Map Utilities.................................................................................................................................................................7
+
+      General Utilities...........................................................................................................................................................7
+
+   Temporary and Ancillary Files Generated and Used by the GX’s..........................................................................7
+
+   Help Files for the Individual GX’s .................................................................................................................................8
+
+   Source Code Files and Tutorials ..................................................................................................................................8
+
+   References Cited ............................................................................................................................................................9
+
+Appendix 1: Help files for the individual GX’s.............................................................................................................15
+
+      USGS_ADDGRD.........................................................................................................................................................15
+
+      USGS_ ANALYTIC .....................................................................................................................................................16
+
+      USGS_BPFIL ..............................................................................................................................................................17
+
+      USGS_CTFIL...............................................................................................................................................................18
+
+      USGS_CURV4.............................................................................................................................................................19
+                                                                                         iii
+USGS_DECIMATE .....................................................................................................................................................20
+
+USGS_DECOR ............................................................................................................................................................21
+
+USGS_DIGVECS ........................................................................................................................................................23
+
+USGS_DVALTEST......................................................................................................................................................24
+
+USGS_EULERAVE......................................................................................................................................................25
+
+USGS_FTFIL ...............................................................................................................................................................30
+
+USGS_FTFWD............................................................................................................................................................32
+
+USGS_FTINV..............................................................................................................................................................33
+
+USGS_FTPREP...........................................................................................................................................................34
+
+USGS_GRADCOMP...................................................................................................................................................35
+
+USGS_GRADXYH.......................................................................................................................................................36
+
+USGS_GRIDMASK ....................................................................................................................................................37
+
+USGS_GRIDPLUG......................................................................................................................................................38
+
+USGS_GRIDPROX .....................................................................................................................................................39
+
+USGS_GRIDSAMP ....................................................................................................................................................40
+
+USGS_HGRAD ...........................................................................................................................................................41
+
+USGS_HTFIL...............................................................................................................................................................42
+
+USGS_IGRFPT............................................................................................................................................................43
+
+USGS_IMPOST..........................................................................................................................................................44
+
+USGS_LNPLOT ..........................................................................................................................................................45
+
+USGS_LW...................................................................................................................................................................47
+
+USGS_MBASE...........................................................................................................................................................49
+
+USGS_MFDESIGN.....................................................................................................................................................51
+                                                                                 iv
+USGS_MFFILTER.......................................................................................................................................................52
+
+USGS_MFINIT ...........................................................................................................................................................54
+
+USGS_MFPLOT..........................................................................................................................................................55
+
+USGS_OPENPOST ....................................................................................................................................................56
+
+USGS_PDRAW ..........................................................................................................................................................57
+
+USGS_PGPLOT ..........................................................................................................................................................59
+
+USGS_PLUGGRID......................................................................................................................................................61
+
+USGS_PREP4 .............................................................................................................................................................62
+
+USGS_PSDGRV .........................................................................................................................................................63
+
+USGS_PSDMAG........................................................................................................................................................64
+
+USGS_RCDEP ............................................................................................................................................................65
+
+USGS_REDPOL ..........................................................................................................................................................67
+
+USGS_RENUMLNS ...................................................................................................................................................68
+
+USGS_RTFIL...............................................................................................................................................................69
+
+USGS_SETEULER ......................................................................................................................................................71
+
+USGS_SFDEPTH........................................................................................................................................................72
+
+USGS_SURFIT............................................................................................................................................................74
+
+USGS_T2VECT ...........................................................................................................................................................75
+
+USGS_TGRAD............................................................................................................................................................76
+
+USGS_TRANSPOS ....................................................................................................................................................78
+
+USGS_TRIMGRD .......................................................................................................................................................79
+
+USGS_UPCONT .........................................................................................................................................................80
+
+USGS_VDFIL ..............................................................................................................................................................81
+                                                                                 v
+     USGS_VERTINT.........................................................................................................................................................82
+
+Appendix 2: Converting FORTRAN code to a Geosoft GX using the GNU g77 and gcc compilers ...................83
+
+  INSTALLATION AND SETUP.......................................................................................................................................84
+
+  GETTING STARTED.......................................................................................................................................................84
+
+  STEP 0: CREATING THE LIBRARIES AND FORTRAN WRAPPER FUNCTIONS .................................................85
+
+  CONVERTING AN EXAMPLE FORTRAN PROGRAM TO A GX...............................................................................86
+
+  STEP 1: EDITING THE FORTRAN SOURCE CODE ...................................................................................................87
+
+  STEP 2: CREATING THE USER INTERFACE .............................................................................................................89
+
+  STEP 3: CREATING THE GX SOURCE CODE ............................................................................................................89
+
+  STEP 4: COMPILING THE GX .....................................................................................................................................90
+
+  STEP 5: CREATING THE DYNAMIC LINK LIBRARY................................................................................................90
+
+  STEP 6: TESTING AND DEBUGGING........................................................................................................................91
+
+
+Tables
+
+Table 1.          Listing of usgs.omn ....................................................................................................................................11
+
+Table 2.          Listing of usgsv.omn..................................................................................................................................13
+
+Table A1.         Listing of Makefile for creating the Geosoft libraries. ........................................................................93
+
+Table A2.         Part 1 of the edited Fortran source code file, usgs_curv4.f...............................................................95
+
+Table A3.         Part 2 of the edited Fortran source code file. .......................................................................................96
+
+Table A4.         Part 3 of the edited Fortran source code file. .......................................................................................97
+
+Table A5.         Part 4 of the edited Fortran source code file. .......................................................................................98
+
+Table A6.         Part 5 of the edited Fortran source code file. .......................................................................................99
+
+Table A7.         Part 6 of the edited Fortran source code file. .....................................................................................102
+
+Table A8.         The GX resource source code file, usgs_curv4.grc..........................................................................103
+
+                                                                                   vi
+Table A9.    The GX help file, usgs_curv4.rtf. ...........................................................................................................104
+
+Table A10.      The GX source code file, usgs_curv4.gxc. .....................................................................................105
+
+Table A11.      The GX header file, usgs_curv4.gxh. ...............................................................................................107
+
+Table A12.      Code fragment added to the end of the wrapper functions header file, wrappers.h. ............108
+
+Table A13.      The C source code file, gxx_curv4.c................................................................................................109
+
+Table A14.      The makefile for creating the GX dynamic-link library, Makefile...............................................110
+
+
+
+
+                                                                         vii
+Geosoft eXecutables (GX’s) Developed by the U.S.
+Geological Survey, Version 2.0, with Notes on GX
+Development from Fortran Code
+By Jeffrey D. Phillips
+
+
+
+
+Introduction
+
+       Geosoft executables (GX’s) are custom software modules for use with the Geosoft Oasis
+
+montaj™ geophysical data processing system, which currently runs under the Microsoft Windows™
+
+2000 or XP operating systems. The U.S. Geological Survey (USGS) uses Oasis montaj™ primarily for
+
+the processing and display of airborne geophysical data. The ability to add custom software modules to
+
+the Oasis montaj™ system is a feature employed by the USGS in order to take advantage of the large
+
+number of geophysical algorithms developed by the USGS during the past half century.
+
+
+
+       This main part of this report, along with Appendix 1, describes Version 2.0 GX’s developed by
+
+the USGS or specifically for the USGS by contractors. These GX’s perform both basic and advanced
+
+operations. Version 1.0 GX’s developed by the USGS were described by Phillips and others (2003),
+
+and are included in Version 2.0. Appendix 1 contains the help files for the individual GX’s.
+
+
+
+
+                                                   1
+       Appendix 2 describes the new method that was used to create the compiled GX files, starting
+
+from legacy Fortran source code. Although the new method shares many steps with the approach
+
+presented in the Geosoft GX Developer manual, it differs from that approach in that it uses free, open-
+
+source Fortran and C compilers and avoids all Fortran-to-C conversion.
+
+
+Download and Installation
+
+       The executable GX files, which will only work from within Geosoft Oasis montaj™, and the
+
+source code files used to develop them can be downloaded using a web browser from
+
+ftp://ftpext.usgs.gov. The files are in the /pub/cr/co/denver/musette/pub/gx directory. This location
+
+is subject to change, so the best way to locate the files is through the following link.
+
+
+
+                                           <GO TO FTP SITE>
+
+
+
+       Each compiled GX consists of a compiled GX file with the suffix .gx. In addition, there is a
+
+global file containing error messages called usgs.err and two menu files called usgs.omn and
+
+usgsv.omn. The usgs.omn menu file is intended for use with the licensed version of Oasis montaj™,
+
+and the usgsv.omn menu is intended for use with the free Oasis montaj™ viewer. Many GX’s require a
+
+dynamically-linked library file with the suffix .dll, and a few require an executable file with the suffix
+
+.exe. In the current release of Oasis montaj™ (version 6.4), compiled GX files are installed in the gx
+
+subdirectory of the \Program Files\Geosoft\Oasis montaj directory for the licensed version, and in the
+
+\Program Files\Geosoft\Oasis montaj Viewer directory for the free viewer; error files are installed in
+
+the corresponding ger subdirectory, menu files are installed in the corresponding omn subdirectory, and
+
+dynamic-link library and executable files are installed in the corresponding bin subdirectory.
+
+
+
+
+                                                      2
+The USGS Menu Files and Short GX Descriptions
+
+       The GX’s described here can be accessed from a USGS menu that can be added to the menu bar
+
+in Oasis montaj™. The menu structure for use with the licensed version of Oasis montaj™ is defined in
+
+a text file called usgs.omn (<Table 1>). The menu structure for use with the unlicensed (free) Oasis
+
+montaj Viewer™ is defined in a text file called usgsv.omn (<Table 2>). These files can be easily
+
+modified to add additional categories and custom GX’s as they are developed. Some of the GX’s
+
+referenced in the usgs.omn menu file (those with names that do not start with usgs_) are part of the
+
+licensed Oasis montaj™ package; others (with names that do start with usgs_) use Geosoft library
+
+routines that are part of the licensed package. All of the GX’s referenced in the usgsv.omn menu file
+
+work with the free Oasis montaj viewer as of version 6.4. There is no guarantee that these GX’s will
+
+work with later versions of the viewer.
+
+       The following GX’s, listed by menu category, are described in this report. GX’s that originally
+
+appeared in version 1.0 (Phillips and others, 2003) are indicated by “(from version 1.0)”. New GX’s
+
+that did not appear in version 1.0 are indicated by “(new)”. GX’s that will likely run only in the
+
+licensed version of Oasis montaj are so indicated; all others will run in either the licensed version or the
+
+unlicensed Viewer version.
+
+
+Grid Utilities
+
+•   usgs_addgrid.gx - perform arithmetic operations (including masking) using two grids or using a
+
+                       grid and a constant (new).
+
+•   usgs_decimate.gx - decimate (or replicate) a grid by removing (or duplicating) nodes (new).
+
+•   usgs_dvaltest.gx - test for dummy (no data) values in a grid (from version 1.0).
+
+•   usgs_gridmask.gx - restore holes to a grid from a masking grid (from version 1.0).
+
+•   usgs_gridplug.gx - plug holes in a grid by using minimum curvature iterations (from version 1.0).
+
+
+                                                     3
+•   usgs_gridprox.gx - create a grid containing distance to the nearest data point (from version 1.0).
+
+•   usgs_pluggrid.gx - plug holes in a grid by regridding (from version 1.0; better than gridplug.gx, but
+
+                       requires a license for gridding).
+
+•   usgs_prep4.gx      - prepare a grid for Geosoft Fourier transform by plugging holes (if any), and
+
+                       extending the rows and columns (from version 1.0; requires a license for
+
+                       gridding).
+
+•   usgs_transpos.gx - transpose a grid (from version 1.0).
+
+•   usgs_analytic.gx - total gradient (“3D analytic signal”) from three derivative grids (new).
+
+•   usgs_trimgrd.gx - trim a grid back to its data area by removing borders of dummy values (new).
+
+
+Grid Spatial Filtering
+
+•   usgs_decor.gx      - decorrugation of east-west or north-south flight-line noise (new).
+
+•   usgs_gradcomp.gx - compute filtered horizontal derivative grids and the horizontal gradient
+
+                       magnitude grid using the gradient-component method of Thurston and Brown
+
+                       (1994) (from version 1.0).
+
+•   usgs_gradxyh.gx - compute horizontal derivative grids and the horizontal gradient magnitude grid
+
+                       using local quadratic surfaces (new).
+
+•   usgs_hgrad.gx      - calculate the magnitude of the horizontal gradient of a grid (from version 1.0;
+
+                       requires licensed grid filtering).
+
+•   usgs_surfit.gx     - fit a polynomial surface to a grid and calculate the residual grid (new).
+
+
+Grid Fourier Filtering – Step-by-Step
+
+•   usgs_gridplug.gx - plug holes in a grid by using minimum curvature iterations (from version 1.0).
+
+•   usgs_ftprep.gx     - prepare (extend) a plugged input grid for Fourier transformation (new).
+
+
+
+                                                      4
+•   usgs_ftfwd.gx     - compute the Fourier transform of a (prepared) grid (new).
+
+•   usgs_ftfil.gx     - basic Fourier domain filtering (new).
+
+•   usgs_htfil.gx     - Fourier domain Hilbert transform components of a grid (new).
+
+•   usgs_rtfil.gx     - regularized Fourier domain filtering (new).
+
+•   usgs_bpfil.gx     - Fourier domain bandpass, highpass, or lowpass filtering (new).
+
+•   usgs_ctfil.gx     - Fourier domain transformation of any component (total field, X, Y, or Z) to all
+
+                      other components (new).
+
+•   usgs_vdfil.gx     - Fourier domain vertical derivative from horizontal derivatives (new).
+
+•   usgs_ftinv.gx     - compute the inverse Fourier transform of a grid (new).
+
+
+
+
+Grid Fourier Filtering – All-in-One
+
+•   usgs_tgrad.gx     - one-step total gradient (3D analytic signal) of a potential-field data grid using
+
+                      either the gradient-component method with optional low-pass filtering or local
+
+                      quadratic surfaces (new).
+
+•   usgs_lw.gx        - one-step local wavenumber of a potential-field data grid using either the
+
+                      gradient-component method with optional low-pass filtering or local quadratic
+
+                      surfaces (new).
+
+•   usgs_psdgrv.gx    - one-step pseudogravity transformation of a total-field magnetic data grid (new).
+
+•   usgs_psdmag.gx - one-step pseudomagnetic transformation of a gravity data grid (new).
+
+•   usgs_redpol.gx    - one-step simple reduction-to-the-pole transformation of a grid (new).
+
+•   usgs_upcont.gx    - one-step upward or downward continuation of a potential-field grid (new).
+
+•   usgs_t2vect.gx    - one-step total-field grid to vector component grids (new).
+
+•   usgs_vertint.gx   - vertical integral or derivative of a potential-field grid (new)
+
+
+                                                     5
+Grid Matched Filtering
+
+•   usgs_mfdesign.gx - design matched bandpass filters (new).
+
+•   usgs_mffilter.gx - apply matched bandpass filters (new).
+
+•   usgs_mfinit.gx    - initialize the matched filtering process (new).
+
+•   usgs_mfplot.gx    - plot the current matched filters (new).
+
+
+Grid Interpretation
+
+•   usgs_tgrad.gx     - one-step total gradient (analytic signal) of a data grid (new).
+
+•   usgs_lw.gx        - one-step local wavenumber of a potential-field data grid (new).
+
+•   usgs_curv4.gx     - extract extrema (highs, lows, ridges, troughs) from a grid using curvature (new).
+
+•   usgs_seteuler.gx - prepare a grid for extended Euler deconvolution (new).
+
+•   usgs_eulerave.gx - magnetic source location using extended Euler deconvolution (new).
+
+•   usgs_gridsamp.gx - sample a grid at the locations of a USGS post file (new).
+
+•   usgs_rcdep.gx     - magnetic source location using profile analysis on grid rows and columns (new).
+
+•   usgs_sfdepth.gx   - magnetic source location from a special function (total gradient or local
+
+                      wavenumber) grid (new).
+
+
+Database Utilities
+
+•   usgs_impost.gx    - import a USGS post file into a new database (new).
+
+•   usgs_openpost.gx - import a USGS post file into a new database (new; faster but requires license).
+
+•   usgs_renumlns.gx - renumber selected lines in a database (from version 1.0).
+
+
+
+
+                                                    6
+Map Utilities
+
+
+•   usgs_digvecs.gx - digitize vectors from a map and place them in an ASCII XYZ file (from version
+
+                       1.0).
+
+
+•   usgs_lnplot.gx     - plot lines from an ASCII line file (new).
+
+
+•   usgs_pdraw.gx      - draw, redraw, or append polygons from a .ply file to a specified map group
+
+                       (from version 1.0).
+
+•   usgs_pgplot.gx     - draw a crude page-sized map surround (new).
+
+
+General Utilities
+
+
+•   usgs_igrfpt.gx     - calculate the International Geomagnetic Reference Field (IGRF) at a specified
+
+                       location (new).
+
+•   usgs_mbase.gx      - generate diurnal corrections for magnetic anomaly measurements using data
+
+                       from multiple magnetic base stations (new).
+
+
+Temporary and Ancillary Files Generated and Used by the GX’s
+
+       Many of the GX’s generate and use temporary or ancillary files. Temporary files are deleted by
+
+the GX prior to a successful completion. Temporary grid files are generated in the default Geosoft
+
+format, unless a different default grid format has been selected (licensed version only). Ancillary files
+
+are not deleted by the GX, but are left for use by other computer programs. Ancillary files include DXF
+
+(AutoCad) drawings, Geosoft ASCII XYZ point and line data files, and USGS binary post files. The
+
+USGS post files contain point data with x (east) and y (north) coordinates, and six z-channels. The post
+
+files, along with USGS PC binary grid files, provide an interface between Oasis montaj and the USGS
+
+DOS-based potential-field software package (Phillips, 1997).
+
+
+                                                     7
+       The GX’s in this report do not access Geosoft’s proprietary .gi files, which contain projection
+
+information for grid files. As a consequence, grid files produced by these GX’s will have corresponding
+
+.gi files with unknown projections. This is a limitation of this software.
+
+
+Help Files for the Individual GX’s
+
+       The help files in Appendix 1 are RTF-formatted files that are compiled into each GX. The help
+
+file can be displayed in WordPad by pressing the “?” button in the upper right corner of the GX dialog
+
+box. Each help file contains several sections, including a general description of the function of the GX,
+
+a list of the interactive parameters that can be entered through the dialog box, a list of the batch
+
+parameter names that can be used to call the GX from within another GX, and application notes
+
+providing additional information.
+
+
+Source Code Files and Tutorials
+
+       Each GX is built from a number of source code files. These include, at a minimum, an RTF help
+
+file with the suffix .rtf, a GX source code file with the suffix .gxc, and a resource file with the suffix
+
+.grc. Some GXs use a dynamic link library compiled from Fortran code. In addition to the three source
+
+code files described above, these GXs require the Fortran source code file with a suffix of .f, a C code
+
+wrapper function for the Fortran subroutine calls, usually called gxx_*.c; the generic wrapper functions
+
+wfuncs.c; the C header file and wrappers.h, and a .gxh prototype file. The interrelationships of these
+
+files are described in Appendix 2, which is a tutorial on GX development from Fortran code.
+
+
+
+
+                                                      8
+References Cited
+
+
+Barbosa, V.C.F., Silva, J.B.C. and Medeiros, W.E., 1999, Stability analysis and improvement of
+
+  structural index estimation in Euler deconvolution: Geophysics, v. 64, no. 1, p. 48-60.
+
+
+
+Nabighian, M.N., 1984, Toward a three-dimensional automatic interpretation of potential field data via
+
+  generalized Hilbert transforms: Fundamental relations: Geophysics, v. 49, no. 6, p. 780-786.
+
+
+
+Nabighian, M.N., and Hansen, R.O., 2001, Unification of Euler and Werner deconvolution in three
+
+  dimensions via the generalized Hilbert transform: Geophysics, v. 66, no. 6, p. 1805-1810.
+
+
+
+Oppenheim, A.V., and Schafer, R.W., 1975, Digital Signal Processing: Englewood Cliffs, New Jersey,
+
+  Prentice-Hall, Inc., 585 p.
+
+
+
+Phillips, J.D., 1997, Potential-field geophysical software for the PC, version 2.2: U.S. Geological
+
+  Survey Open-File Report 97-725, 34 p.
+
+
+
+Phillips, J.D., 2000, Locating magnetic contacts: a comparison of the horizontal gradient, analytic
+
+  signal, and local wavenumber methods: Society of Exploration Geophysicists, Expanded Abstracts
+
+  with Biographies, 2000 Technical Program, v. 1, p. 402-405.
+
+
+
+Phillips, J.D., 2001, Designing matched bandpass and azimuthal filters for the separation of potential-
+
+  field anomalies by source region and source type: Australian Society of Exploration Geophysicists,
+
+  15th Geophysical Conference and Exhibition, Expanded Abstracts CD-ROM, 4 p.
+
+
+                                                    9
+Phillips, J.D., 2002, Two-step processing for 3D magnetic source locations and structural indices using
+
+  extended Euler or analytic signal methods: Society of Exploration Geophysicists, 2002 Technical
+
+  Program Expanded Abstracts, 4 p.
+
+
+
+Phillips, J.D., Duval, J.S., and Saltus, R.W., 2003, Geosoft executables (GXs) developed by the U.S.
+
+  Geological Survey, version 1.0, with a viewgraph tutorial on GX development: U.S. Geological
+
+  Survey Open-File Report 03-010, 21 p. http://pubs.usgs.gov/of/2003/ofr-03-010/
+
+
+
+Phillips, J.D., Hansen, R.O., and Blakely, R.J., 2007, The use of curvature in potential-field
+
+  interpretation: Exploration Geophysics, v. 38, p. 111-119.
+
+
+
+Reid, A.B., Allsop, J.M., Granser, H., Millett, A.J., and Somerton, I.W., 1990, Magnetic interpretation
+
+  in three dimensions using Euler deconvolution: Geophysics, v. 55, no. 1, p. 80-91.
+
+
+
+Thurston, J.B., and Brown, R.J., 1994, Automated source-edge location with a new variable pass-band
+
+  horizontal-gradient operator: Geophysics, v. 59, no. 4, p. 546-554.
+
+
+
+Urquhart, Ted, 1988, Decorrugation of enhanced magnetic field maps: Society of Exploration
+
+  Geophysicists Fifty-Eighth Annual Meeting, Expanded Abstracts, p. 371-372.
+
+
+
+
+                                                    10
+Table 1.    Listing of usgs.omn
+
+MENU "&USGS"
+SUBMENU "Grid &Utilities"
+SUBMENU "Grid &Spatial Filtering"
+SUBMENU "Grid &Fourier Filtering"
+SUBMENU "Grid M&Atched Filtering"
+SUBMENU "Grid &Interpretation"
+SUBMENU "&Database Utilities"
+SUBMENU "&Map Utilities"
+SUBMENU "&General Utilities"
+MENU "&USGS/Grid &Utilities"
+ITEM "Test for Dummy &Values"                   ,usgs_dvaltest.gx
+ITEM "Plug holes by &Regriding"                 ,usgs_pluggrid.gx
+ITEM "Plug holes by &Iterating"                 ,usgs_gridplug.gx
+ITEM "&Mask a grid"                             ,usgs_gridmask.gx
+ITEM "&Algebraic operations"                    ,usgs_addgrid.gx
+ITEM "&Decimate or replicate"                   ,usgs_decimate.gx
+ITEM "&Transpose"                               ,usgs_transpos.gx
+ITEM "Total &Gradient from derivatives"         ,usgs_analytic.gx
+ITEM "Tr&Im a grid to the data area"            ,usgs_trimgrd.gx
+ITEM "&Prepare grid for Geosoft FFT"            ,usgs_prep4.gx
+ITEM "Pro&Ximity of data points"                ,usgs_gridprox.gx
+SEPARATOR
+MENU "&USGS/Grid &Spatial Filtering"
+ITEM "&Horizontal gradient magnitude"           ,usgs_hgrad.gx
+ITEM "&Horizontal gradients"                    ,usgs_gradxyh.gx
+ITEM "&Filtered gradients"                      ,usgs_gradcomp.gx
+ITEM "&Polynomial surface fitting"              ,usgs_surfit.gx
+ITEM "&Decorrugation"                           ,usgs_decor.gx
+SEPARATOR
+MENU "&USGS/Grid &Fourier Filtering"
+SUBMENU "&Step-by-step"
+SUBMENU "&All-in-one"
+SEPARATOR
+MENU "&USGS/Grid &Fourier Filtering/&Step-by-step"
+ITEM "&Plug holes by iterating"                 ,usgs_gridplug.gx
+ITEM "&Extend grid for FFT"                     ,usgs_ftprep.gx
+ITEM "&Forward Fourier transform"               ,usgs_ftfwd.gx
+ITEM "&Basic Fourier domain filtering"          ,usgs_ftfil.gx
+ITEM "B&Andpass Fourier domain filtering"       ,usgs_bpfil.gx
+ITEM "&Regularized Fourier domain filtering"    ,usgs_rtfil.gx
+ITEM "&Hilbert transform components"            ,usgs_htfil.gx
+ITEM "&Vertical derivative from horizontal"     ,usgs_vdfil.gx
+ITEM "&Magnetic component transformations"      ,usgs_ctfil.gx
+ITEM "&Inverse Fourier transform"               ,usgs_ftinv.gx
+SEPARATOR
+MENU "&USGS/Grid &Fourier Filtering/&All-in-one"
+ITEM "&Total gradient and gradient components" ,usgs_tgrad.gx
+ITEM "&Local wavenumber and gradient components",usgs_lw.gx
+ITEM "Total field to vector &Components"        ,usgs_t2vect.gx
+ITEM "Pseudo-&Gravity transformation"           ,usgs_psdgrv.gx
+ITEM "Pseudo-&Magnetic transformation"          ,usgs_psdmag.gx
+ITEM "&Reduction-to-the-pole transformation"    ,usgs_redpol.gx
+ITEM "&Upward or downward continuation"         ,usgs_upcont.gx
+
+
+
+                                         11
+ITME "&Vertical integral or derivative"         ,usgs_vertint.gx
+SEPARATOR
+MENU "&USGS/Grid M&atched Filtering"
+ITEM "&Initialization"                          ,usgs_mfinit.gx
+ITEM "&Design filters"                          ,usgs_mfdesign.gx
+ITEM "&Apply filters"                           ,usgs_mffilter.gx
+ITEM "&Show filters"                            ,usgs_mfplot.gx
+SEPARATOR
+MENU "&USGS/Grid &Interpretation"
+ITEM "&Total gradient and gradient components" ,usgs_tgrad.gx
+ITEM "&Local wavenumber"                        ,usgs_lw.gx
+ITEM "&Grid extrema from curvature analysis"    ,usgs_curv4.gx
+ITEM "S&Ample a grid to a post file"            ,usgs_gridsamp.gx
+ITEM "Euler &Setup"                             ,usgs_seteuler.gx
+ITEM "&Euler depth analysis"                    ,usgs_eulerave.gx
+ITEM "Apply &Profile depth analysis to a grid" ,usgs_rcdep.gx
+ITEM "Special &Function depth analysis"         ,usgs_sfdepth.gx
+SEPARATOR
+MENU "&USGS/&Database Utilities"
+ITEM "&Open USGS POST file into a new database" ,usgs_openpost.gx
+//ITEM "&Open USGS POST file into a new database" ,usgs_impost.gx
+ITEM "&Renumber selected lines"                 ,usgs_renumlns.gx
+SEPARATOR
+MENU "&USGS/&Map Utilities"
+ITEM "&Create new base map from a grid"         ,usgs_pgplot.gx
+//ITEM "&Display color-shaded grid"             ,gridimgs.gx
+//ITEM "Plot &Symbols"                          ,symbols.gx
+ITEM "Plot &Line file"                          ,usgs_lnplot.gx
+ITEM "Digitize &Vectors"                        ,usgs_digvecs.gx
+ITEM "Draw &Polygons to a specified group"      ,usgs_pdraw.gx
+SEPARATOR
+MENU "&USGS/&General Utilities"
+ITEM "&Geomagnetic field values"                ,usgs_igrfpt.gx
+ITEM "&Diurnal from multiple base stations"     ,usgs_mbase.gx
+
+
+
+
+                                         12
+Table 2.    Listing of usgsv.omn
+
+MENU "&USGSV"
+SUBMENU "Grid &Utilities"
+SUBMENU "Grid &Spatial Filtering"
+SUBMENU "Grid &Fourier Filtering"
+SUBMENU "Grid M&Atched Filtering"
+SUBMENU "Grid &Interpretation"
+SUBMENU "&Database Utilities"
+SUBMENU "&Map Utilities"
+SUBMENU "&General Utilities"
+MENU "&USGSV/Grid &Utilities"
+ITEM "Test for Dummy &Values"                   ,usgs_dvaltest.gx
+//ITEM "Plug holes by &Regriding"               ,usgs_pluggrid.gx
+ITEM "Plug holes by &Iterating"                 ,usgs_gridplug.gx
+ITEM "&Mask a grid"                             ,usgs_gridmask.gx
+ITEM "&Algebraic operations"                    ,usgs_addgrid.gx
+ITEM "&Decimate or replicate"                   ,usgs_decimate.gx
+ITEM "&Transpose"                               ,usgs_transpos.gx
+ITEM "Total &Gradient from derivatives"         ,usgs_analytic.gx
+ITEM "Tr&Im a grid to the data area"            ,usgs_trimgrd.gx
+//ITEM "&Prepare grid for Geosoft FFT"          ,usgs_prep4.gx
+ITEM "Pro&Ximity of data points"                ,usgs_gridprox.gx
+SEPARATOR
+MENU "&USGSV/Grid &Spatial Filtering"
+//ITEM "&Horizontal gradient"                   ,usgs_hgrad.gx
+ITEM "&Horizontal gradients"                    ,usgs_gradxyh.gx
+ITEM "&Filtered gradients"                      ,usgs_gradcomp.gx
+ITEM "&Polynomial surface fitting"              ,usgs_surfit.gx
+ITEM "&Decorrugation"                           ,usgs_decor.gx
+SEPARATOR
+MENU "&USGSV/Grid &Fourier Filtering"
+SUBMENU "&Step-by-step"
+SUBMENU "&All-in-one"
+SEPARATOR
+MENU "&USGSV/Grid &Fourier Filtering/&Step-by-step"
+ITEM "&Plug holes by iterating"                 ,usgs_gridplug.gx
+ITEM "&Extend grid for FFT"                     ,usgs_ftprep.gx
+ITEM "&Forward Fourier transform"               ,usgs_ftfwd.gx
+ITEM "&Basic Fourier domain filtering"          ,usgs_ftfil.gx
+ITEM "B&Andpass Fourier domain filtering"       ,usgs_bpfil.gx
+ITEM "&Regularized Fourier domain filtering"    ,usgs_rtfil.gx
+ITEM "&Hilbert transform components"            ,usgs_htfil.gx
+ITEM "&Vertical derivative from horizontal"     ,usgs_vdfil.gx
+ITEM "&Magnetic component transformations"      ,usgs_ctfil.gx
+ITEM "&Inverse Fourier transform"               ,usgs_ftinv.gx
+SEPARATOR
+MENU "&USGSV/Grid &Fourier Filtering/&All-in-one"
+ITEM "&Total gradient and gradient components" ,usgs_tgrad.gx
+ITEM "&Local wavenumber and gradient components",usgs_lw.gx
+ITEM "Total field to vector &Components"        ,usgs_t2vect.gx
+ITEM "Pseudo-&Gravity transformation"           ,usgs_psdgrv.gx
+ITEM "Pseudo-&Magnetic transformation"          ,usgs_psdmag.gx
+ITEM "&Reduction-to-the-pole transformation"    ,usgs_redpol.gx
+ITEM "&Upward or downward continuation"         ,usgs_upcont.gx
+
+
+
+                                         13
+ITME "&Vertical integral or derivative"         ,usgs_vertint.gx
+SEPARATOR
+MENU "&USGSV/Grid M&atched Filtering"
+ITEM "&Initialization"                          ,usgs_mfinit.gx
+ITEM "&Design filters"                          ,usgs_mfdesign.gx
+ITEM "&Apply filters"                           ,usgs_mffilter.gx
+ITEM "&Show filters"                            ,usgs_mfplot.gx
+SEPARATOR
+MENU "&USGSV/Grid &Interpretation"
+ITEM "&Total gradient and gradient components" ,usgs_tgrad.gx
+ITEM "&Local wavenumber"                        ,usgs_lw.gx
+ITEM "&Grid extrema from curvature analysis"    ,usgs_curv4.gx
+ITEM "S&Ample a grid to a post file"            ,usgs_gridsamp.gx
+ITEM "Euler &Setup"                             ,usgs_seteuler.gx
+ITEM "&Euler depth analysis"                    ,usgs_eulerave.gx
+ITEM "Apply &Profile depth analysis to a grid" ,usgs_rcdep.gx
+ITEM "Special &Function depth analysis"         ,usgs_sfdepth.gx
+SEPARATOR
+MENU "&USGSV/&Database Utilities"
+//ITEM "&Open USGS POST file into a new database" ,usgs_openpost.gx
+ITEM "&Open USGS POST file into a new database" ,usgs_impost.gx
+ITEM "&Renumber selected lines"                 ,usgs_renumlns.gx
+SEPARATOR
+MENU "&USGSV/&Map Utilities"
+ITEM "&Create new base map from a grid"         ,usgs_pgplot.gx
+ITEM "&Display color-shaded grid"               ,gridimgs.gx
+ITEM "Plot &Symbols"                            ,symbols.gx
+ITEM "Plot &Line file"                          ,usgs_lnplot.gx
+ITEM "Digitize &Vectors"                        ,usgs_digvecs.gx
+ITEM "Draw &Polygons to a specified group"      ,usgs_pdraw.gx
+SEPARATOR
+MENU "&USGSV/&General Utilities"
+ITEM "&Geomagnetic field values"                ,usgs_igrfpt.gx
+ITEM "&Diurnal from multiple base stations"     ,usgs_mbase.gx
+
+
+
+
+                                         14
+Appendix 1: Help files for the individual GX’s
+
+USGS_ADDGRD
+
+USGS_ADDGRID GX
+
+Node by node algebraic operations between two grids or between one
+grid and a constant. Operations include addition, subtraction,
+multiplication, division, masking (moving dummy (no data) values from
+the second grid into the first grid), and percent difference
+(100*(grid1-grid2)/grid1).
+
+INTERACTIVE PARAMETERS
+
+ First input grid file
+ Operator (+,-,*,/,m,%)
+ Second input grid file
+ Flag to use constant instead of second grid
+ Constant
+ Output grid file
+
+BATCH PARAMETERS
+
+USGS_ADDGRID.INGRID1      First input grid file
+USGS_ADDGRID.OPR          Operator ("+","-","*","/","m","%")
+USGS_ADDGRID.INGRID2      Second input grid file
+USGS_ADDGRID.ICON         Flag = 1 to use constant instead of second grid
+                               = 0 to use second grid
+USGS_ADDGRID.ZC           Constant
+USGS_ADDGRID.OUTGRID      Output grid file
+
+APPLICATION NOTES
+
+The two input grids must have the same origin, number of rows, number of
+columns, and grid interval. The maximum column dimension of the grids is
+8,000. Grid projection information is ignored.
+
+Original Fortran code by Mike Webring.
+GX written by Jeff Phillips (jeff@usgs.gov) 1/8/2003.
+
+
+
+
+                                         15
+USGS_ ANALYTIC
+
+USGS_ANALYTIC GX
+
+Computes the total gradient (“3D analytic signal”) grid from three
+first-derivative grids of a potential field. At each grid node, the
+three input values are squared and summed, then the square root of the
+sum is written to the output grid.
+
+INTERACTIVE PARAMETERS
+
+ Input x-derivative grid file
+ Input y-derivative grid file
+ Input z-derivative grid file
+ Output total gradient grid file
+
+BATCH PARAMETERS
+
+USGS_ANALYTIC.INGRIDX     input x-derivative grid
+USGS_ANALYTIC.INGRIDY     input y-derivative grid
+USGS_ANALYTIC.INGRIDZ     input z-derivative grid
+USGS_ANALYTIC.OUTGRID     output total gradient grid
+
+APPLICATION NOTES
+
+The three input grids must have the same origin, number of rows, number
+of columns, and grid interval. The maximum column dimension of the
+grids is 8,000. Grid projection information is ignored.
+
+Written by Jeff Phillips (jeff@usgs.gov) 1/2/2003.
+
+
+
+
+                                         16
+USGS_BPFIL
+
+USGS_BPFIL GX
+
+Applies highpass, lowpass, bandpass, or notch Fourier filters to a
+Fourier transform grid file produced by USGS_FTFWD.GX. Standard,
+Butterworth, and continuation-based filters are provided. The output
+filtered transform grid should be inverse Fourier transformed using
+USGS_FTINV.GX.
+
+INTERACTIVE PARAMETERS
+
+ Input Fourier transform grid file
+ Output filtered Fourier transform grid file
+ Filtering operation flag (lowpass, highpass, bandpass, notch)
+ Filter type flag (standard, Butterworth, continuation)
+ Short or lowpass/highpass wavelength cutoff (grid units)
+ Long wavelength cutoff for bandpass/notch (grid units)
+ Order of filter (1 to 8)
+
+BATCH PARAMETERS
+
+ USGS_BPFIL.INFFT           Input Fourier transform grid
+ USGS_BPFIL.OUTFFT          Output filtered Fourier transform grid
+ USGS_BPFIL.IOPR            Operation flag
+                             1 = Lowpass
+                             2 = Highpass
+                             3 = Bandpass
+                             4 = Notch
+ USGS_BPFIL.ITYP            Filter type flag
+                             1 = Standard
+                             2 = Butterworth
+                             3 = Continuation
+ USGS_BPFIL.WLEN1           Short or lowpass/high wavelength cutoff
+                              (grid units)
+ USGS_BPFIL.WLEN2           Long wavelength cutoff for bandpass/notch
+                              (grid units)
+ USGS_BPFIL.NORDER          Order of Butterworth filter (1 to 8)
+
+APPLICATION NOTES
+
+Higher Butterworth filter orders have steeper slopes and greater ringing.
+
+Output post file bpfil.pst and database bpfil.gdb contain these fields:
+   X = radial wavenumber
+   Y = radial wavelength
+   Z1 = input amplitude
+   Z2 = filter amplitude
+   Z3 = output amplitude
+   Z4 = input log10 amplitude
+   Z5 = filter log10 amplitude
+   Z6 = output log10 amplitude
+
+Written by Jeff Phillips (jeff@usgs.gov) 02/07/2005.
+
+
+
+
+                                         17
+USGS_CTFIL
+
+USGS_CTFIL GX
+
+Computes all remaining magnetic field components in the Fourier domain
+from an input Fourier transform grid file of one magnetic field
+component as generated by USGS_FTFWD.GX.
+
+INTERACTIVE PARAMETERS
+
+ Input Fourier transform grid file
+ Input component type (Total field, X (north), Y (east), or Z (down))
+ Geomagnetic inclination (degrees)
+ Geomagnetic declination (degrees)
+
+BATCH PARAMETERS
+
+USGS_CTFIL.INFFT    Input Fourier transform grid file
+USGS_CTFIL.INTYPE   Input component type (0=total field, 1=X, 2=Y, 3=Z)
+USGS_CTFIL.INCL     Geomagnetic inclination (degrees)
+USGS_CTFIL.DECL     Geomagnetic declination (degrees)
+
+APPLICATION NOTES
+
+The output Fourier transform grid files have the same prefix as the
+input file and suffixes .FXC for the x-component, .FYC for the
+y-component, .FZC for the z-component, and .FTF for the total field.
+Use USGS_FTINV.GX to inverse Fourier transform the output files.
+
+This routine is not intended for use at low magnetic latitudes within
+20 degrees of the magnetic equator.
+
+Written by Jeff Phillips (jeff@usgs.gov) 06/05/2003.
+
+
+
+
+                                         18
+USGS_CURV4
+
+USGS_CURV4 GX
+
+Locates local extrema in a grid file using curvature analysis.
+
+INTERACTIVE PARAMETERS
+
+ Input grid file
+ Output post file (new database will have the same prefix)
+ Flag for finding ridges
+ Flag for finding troughs
+ Flag for finding highs
+ Flag for finding lows
+ Flag for finding saddles
+
+BATCH PARAMETERS
+
+USGS_CURV4.INGRID        Input grid file
+USGS_CURV4.OUTPOST       Output post file (new database will have the
+                           same prefix)
+USGS_CURV4.RIDGES        Flag for finding ridges (Y=1,N=0)
+USGS_CURV4.TROUGHS       Flag for finding troughs (Y=1,N=0)
+USGS_CURV4.HIGHS         Flag for finding highs   (Y=1,N=0)
+USGS_CURV4.LOWS          Flag for finding lows    (Y=1,N=0)
+USGS_CURV4.SADDLES       Flag for finding saddles (Y=1,N=0)
+
+APPLICATION NOTES
+
+The output post file and database have the following channels:
+ id          type of feature (ridge, high, etc)
+ x           x(east)-coordinate of solution
+ y           y(north)-coordinate of solution
+ z1 g(x,y) grid value at the solution as estimated from the
+                 quadratic surface
+ z2 elong    elongation factor of the feature from the ratio of the
+                 two eigenvalues
+ z3 strike degrees clockwise from north
+ z4 e1       first eigenvalue of the curvature matrix
+ z5 e2       second eigenvalue of the curvature matrix
+ z6 type     integer value indicating type of feature (ridge=1,
+                 trough=2, etc)
+
+The maximum column dimension of the input grid is 8,000.
+
+Reference:
+
+Phillips, J.D., Hansen, R.O., and Blakely, R.J., 2007, The use of
+curvature in potential-field interpretation: Exploration Geophysics,
+v.38, p.111-119.
+
+Written by Jeff Phillips (jeff@usgs.gov) 9/14/2006.
+
+
+
+
+                                         19
+USGS_DECIMATE
+
+USGS_DECIMATE GX
+
+Decimate or enlarge a grid.
+
+INTERACTIVE PARAMETERS
+
+ Input grid file
+ Output grid file
+ Function (Decimate = 1, Enlarge = -1)
+ Factor (positive integer)
+
+BATCH PARAMETERS
+
+ USGS_DECIMATE.INGRID     Input grid file
+              .OUTGRID    Output grid file
+              .FUNCTION   Function (Decimate = 1, Enlarge = -1)
+              .FACTOR     Factor (positive integer)
+
+APPLICATION NOTES
+
+The maximum number of input columns for decimation is 16000.
+The maximum number of output columns for replication is 16000.
+Grids are decimated by removing rows and columns. Grids are
+enlarged by duplicating rows and columns. Grid projection
+information is ignored.
+
+
+Original Fortran code by Mike Webring.
+GX written by Jeff Phillips (jeff@usgs.gov) 2/24/2003.
+
+
+
+
+                                         20
+USGS_DECOR
+
+USGS_DECOR GX
+
+Decorrugation of flight line noise using the method of Urquhart (1988).
+The flight line direction must correspond to either the row or the
+column direction of the grid.
+
+INTERACTIVE PARAMETERS
+
+ Input plugged potential-field grid file
+ Output decorrugated grid file
+ Output noise grid file
+ Flight line direction flag (N-S = 1, E-W = 0)
+ Filter length for filtering along the flight line direction
+ Filter length for filtering across the flight line direction
+ Save intermediate grids (No = 0, Yes = 1)
+
+BATCH PARAMETERS
+
+ USGS_DECOR.INGRID       Input plugged potential-field grid
+           .OUTGRID      Output decorrugated grid file
+           .OUTNOISE     Output noise grid file
+           .NS           Flight line direction flag (N-S = 1, E-W = 0)
+           .NFL          Filter length for filtering along the flight
+                           line direction
+           .NFX          Filter length for filtering across the flight
+                           line direction
+           .TSAVE        Save intermendiate grids (No = 0, Yes = 1)
+
+APPLICATION NOTES
+
+Decorrugation of flight line noise in a grid using the method of
+Urquhart (1988). The flight line direction must correspond to either
+the row or the column direction of the grid. The algorithm is as
+follows:
+
+1.   The input grid USGS_DECOR.INGRID is checked for dummy values.
+
+1a. For north-south flight lines the input grid is transposed to
+    DECOR0.TMP.
+
+2.   A Blackman filter (Oppenheim and Schafer, 1975, p.242) is used to
+     lowpass filter the input grid (or DECOR0.TMP) along the flight line
+     direction, with the result stored in grid DECOR1.TMP.
+
+2a. The highpass component along the flight lines, DECOR2.TMP, is
+    computed as the difference between the input grid (or DECOR0.TMP)
+    and DECOR1.TMP.
+
+3.   DECOR1.TMP is transposed to DECOR3.TMP.
+
+4.   DECOR3.TMP is lowpass filtered perpendicular to the flight line
+     direction using a different Blackman filter, with the result stored
+     in DECOR4.TMP. This step is intended to remove the corrugations.
+
+
+
+                                         21
+5.   DECOR4.TMP is transposed back to DECOR5.TMP.
+
+6.   DECOR2.TMP is added to DECOR5.TMP to restore the short wavelengths
+     along the flight lines and produce the final decorrugated grid,
+     USGS_DECOR.OUTGRID (or DECOR6.TMP for north-south flight lines).
+
+6a. For north-south flight lines, DECOR6.TMP is transposed back to
+    USGS_DECOR.OUTGRID.
+
+7.   The difference between the input grid and the decorrugated grid is
+     calculated as USGS_DECOR.OUTNOISE.
+
+The length (number of non-zero coefficients) of each Blackman filter is
+specified as an odd number. Longer filters remove longer wavelengths.
+
+Tests on grids containing sine waves suggest the following optimum
+filter lengths:
+
+Flight line spacing      Optimum
+ (grid intervals)     filter length
+        2                  11
+        3                  11
+        4                  11
+        5                  13
+        6                  13
+        7                  17
+        8                  19
+        9                  23
+       10                  25
+
+Normally the same filter length is used along and across the flight
+lines.
+
+To experiment, the best strategy is to try several filter combinations
+and display the decorrugated and noise results. The decorrugated
+images will tell you if you are removing the correct wavelengths; the
+noise images will tell you if you are removing too much geologic
+signal.
+
+The maximum column dimension of the input grid is 8,000.   Grid
+projection information is ignored.
+
+References:
+
+Oppenheim, A.V., and Schafer, R.W., 1975, Digital Signal Processing,
+   Prentice-Hall, Inc., Englewood Cliffs, New Jersey.
+
+Urquhart, Ted, 1988, Decorrugation of enhanced magnetic field maps:
+   Society of Exploration Geophysicists Fifty-Eighth Annual Meeting,
+   Expanded Abstracts, p.371-372.
+
+Original code by Bob Bisdorf, USGS. Modified for PC memory limitations
+and to allow for specification of filter lengths by Jeff Phillips, USGS.
+GX written by Jeff Phillips (jeff@usgs.gov) 2/21/2003.
+
+
+
+
+                                         22
+USGS_DIGVECS
+
+USGS_DIGVECS GX
+
+Digitize vectors from a map and place them in an ASCII XYZ file.
+
+INTERACTIVE PARAMETERS
+
+ Output ASCII XYZ File
+ Append or Overwrite
+ Grid name
+ Line Thickness
+ Line Color
+
+BATCH PARAMETERS
+
+USGS_DIGVECS.XYZ            output ASCII XYZ file name
+USGS_DIGVECS.APPEND         overwrite file = 0; append to output = 1
+USGS_DIGVECS.GRID           grid name
+USGS_DIGVECS.LINETHICK      line thickness (mm)
+USGS_DIGVECS.LINECOLOR      line color
+
+APPLICATION NOTES
+
+If the output file does not exist, you must specify overwrite mode. If
+the file does exist and you specify overwrite mode, you will be asked to
+confirm the overwrite.
+
+If no grid is specified, only LINE,X,Y coordinates will be placed in the
+output file. If a grid is specified, LINE,X,Y and Z values will be placed
+in the output file. A header record in the output file identifies the
+channel names. To use this header record when importing the XYZ file into
+a database, blank out the 'Import template' field.
+
+A map group corresponding to the output file name prefix will be used to
+hold the vectors drawn on the map.
+
+Multi-point vectors are digitized using the left mouse button. The right
+mouse button is used to terminate a vector (using the "Done" menu item)
+and start a new vector. Digitizing is terminated by using the right mouse
+button and selecting "Done" twice in a row. The "Cancel" menu item is
+equivalent to the "Done" menu item, it does not remove the digitized
+vector from the file or the map. The "Exit Menu" menu item will cancel
+the menu and return to digitizing the current vector.
+
+Because the map cannot be redrawn inside a GX, the digitized vectors will
+not be drawn until the GX is exited. For the same reason, the remaining
+right mouse menu items won't work properly.
+
+Written by Jeff Phillips (jeff@usgs.gov) 2/9/99, modified 3/21/02.
+
+
+
+
+                                         23
+USGS_DVALTEST
+
+USGS_DVALTEST GX
+
+Tests for dummy (no data) values in a grid.
+
+INTERACTIVE PARAMETERS
+
+ Input grid file
+
+BATCH PARAMETERS
+
+ USGS_DVALTEST.INGRID           input grid
+
+Written by Jeff Phillips (jeff@usgs.gov) 01/07/00.
+
+
+
+
+                                         24
+USGS_EULERAVE
+
+USGS_EULERAVE GX
+
+Two-step extended Euler depth analysis with averaged results in each
+data window. Use USGS_SETEULER.GX to generate input derivative grid
+files.
+
+INTERACTIVE PARAMETERS
+
+ Input observation surface grid file
+   OR input constant observation surface elevation (elevation units)
+ Input minimum depth surface
+   OR input constant minimum depth surface elevation (elevation units)
+ Conversion factor (elevation units / horizontal grid units)
+ Input potential-field grid file
+ Input x-derivative of potential-field grid file
+ Input y-derivative of potential-field grid file
+ Input z-derivative of potential-field grid file
+ Input Hilbert transform x-component grid file
+ Input x-derivative of Hilbert transform x-component grid file
+ Input y-derivative of Hilbert transform x-component grid file
+ Input z-derivative of Hilbert transform x-component grid file
+ Input Hilbert transform y-component grid file
+ Input x-derivative of Hilbert transform y-component grid file
+ Input y-derivative of Hilbert transform y-component grid file
+ Input z-derivative of Hilbert transform y-component grid file
+ Minimum structural index (0.0 to force shallowest magnetic solutions)
+ Window size (odd number between 3 and 25)
+ Type of depth error to use (0=Absolute, 1=Percent)
+ Maximum error in depth (in horizontal grid units or percent)
+ Maximum horizontal distance of solutions from center of window
+ Maximum depth of solutions below the observation surface (in
+   horizontal grid units)
+ Output post file (output database will have the same prefix)
+
+BATCH PARAMETERS
+
+ USGS_EULERAVE.OSGRID        Input observation surface grid
+              .OSELEV        OR input observation surface elevation
+              .MDSGRID       Input minimum depth surface grid
+              .MDSELEV       OR input minimum depth surface elevation
+              .CONV          Conversion factor
+                               (elevation units / horizontal units)
+              .INGRIDD       Input potential-field grid
+              .INGRIDDX      Input x-derivative of potential-field grid
+              .INGRIDDY      Input y-derivative of potential-field grid
+              .INGRIDDZ      Input z-derivative of potential-field grid
+              .INGRIDHX      Input Hilbert transform x-component grid
+                               file
+              .INGRIDHXX     Input x-derivative of Hilbert transform
+                               x-component grid file
+              .INGRIDHXY     Input y-derivative of Hilbert transform
+                               x-component grid file
+              .INGRIDHXZ     Input z-derivative of Hilbert transform
+
+
+
+                                         25
+                              x-component grid file
+              .INGRIDHY     Input Hilbert transform y-component grid
+                              file
+              .INGRIDHYX    Input x-derivative of Hilbert transform
+                              y-component grid file
+              .INGRIDHYY    Input y-derivative of Hilbert transform
+                              y-component grid file
+              .INGRIDHYZ    Input z-derivative of Hilbert transform
+                              y-component grid file
+              .SIMIN        Minimum structural index
+              .IWIN         Window size
+              .ITYPE        Type of depth error to use
+              .MAXERR       Maximum error in depth
+              .MAXDIST      Maximum horizontal distance of solutions
+                              from center of window
+              .MAXDEPTH     Maximum depth of solutions
+              .OUTPOST      Output post file
+
+METHOD DESCRIPTION
+
+ USGS_EULERAVE.GX estimates the parameters of isolated magnetic sources
+ from gridded magnetic anomaly data using Euler's equation (Reid and
+ others, 1990). Analysis can be done on any combination of the
+ magnetic anomaly grid and its Hilbert transform components (Nabighian
+ and Hansen, 2001). Successful results are averaged for each window.
+
+ USGS_SETEULER.GX is used to generate the Hilbert transform component
+ grids and the horizontal and vertical derivative grids used by
+ USGS_EULERAVE.GX. Optional input grids include the elevation of the
+ observation surface and the elevation of a reference surface, such as
+ the topography or the seismic basement, that represents the top of the
+ shallowest expected sources.
+
+ Because the depth and structural index cannot be estimated
+ simultaneously (Barbosa and others, 1999), analysis is done in two
+ stages (Phillips, 2002) by passing a window over the data grids.
+ First an attempt is made to estimate a source location and background
+ constant (xo,yo,zo,K) from the data within the window using an initial
+ structural index (usually zero). If the attempt is successful, and
+ the resulting source lies on or below the reference surface, the
+ source is retained as valid. If the attempt is successful, but the
+ resulting source lies above the reference surface, the source is moved
+ down to the reference surface and a solution for the horizontal
+ location, structural index, and background constant (xo,yo,si,K) is
+ attempted. If this second stage is successful, the source on the
+ reference surface is retained as valid. If the initial structural
+ index is set to zero (the default), then the combined solutions on and
+ below the reference surface will represent the shallowest possible
+ magnetic basement surface. For a more traditional Euler analysis, the
+ initial structural index can be specified and the reference surface
+ can be set equal to the observation surface.
+
+APPLICATION NOTES
+
+ All input grids must have the same origin, number of rows, number of
+ columns, and grid intervals. The maximum column dimension of the
+ input grids is 8,000.
+
+
+                                        26
+ Leave the input observation surface grid file entry blank to use the
+ constant observation surface elevation.
+
+ Leave the input minimum depth surface grid file entry blank to use the
+ constant minimum depth surface elevation. Examples of minimum depth
+ surfaces are the topography, bathymetry, or seismic basement.
+
+ Leave the Hilbert transform component grid file entries blank to force
+ conventional Euler depth analysis.
+
+ The input potential-field grid entry can be left blank to generate
+ solutions due solely to the Hilbert transform components.
+
+ If the maximum horizontal distance entry is left blank, a value of
+ (window_size-1)*(|dx|+|dy|)/4 is used, where dx and dy are the grid
+ intervals in the east and north directions respectively.
+
+ Output of the program is contained in the specified binary post file
+ and in a database with the same name as the post file, both containing
+ the following fields:
+     id blank
+     x the average x (east) coordinate of the source
+     y the average y (north) coordinate of the source
+     z1 the average elevation (positive upward) of the source
+     z2 the average estimated elevation error (either absolute or as %
+          of depth)
+     z3 a dummy value for the strike of the feature
+     z4 the information index = z5/z2
+     z5 the number of solutions in the average
+     z6 the average estimated structural index of the source
+
+ Output horizontal and vertical units are the same as the input
+ horizontal grid units.
+
+ADDITIONAL APPLICATION NOTES FROM BEN DRENTH
+
+  Initial Considerations
+  1. The Euler deconvolution method is insensitive to magnetic
+     remanence and inclination effects, so it is preferable to use a
+     standard total-field anomaly grid (i.e., not reduced-to-pole).
+  2. This implementation is not affected by holes in the total-field
+     anomaly grid. It is preferable that the grid not be plugged,
+     so that spurious solutions in plugged regions are avoided.
+  3. The total-field anomaly grid must be free of excessive flight-line
+     noise (or other types of obvious noise).
+  4. Before starting, decide on a window size or an appropriate range
+     of window sizes to test. Window size should be ideally chosen
+     large enough so that full anomalies just fit within the window,
+     yet small enough so that adjacent anomalies cannot contaminate
+     that window. This can easily be examined using the ruler function
+     in Oasis.
+  5. Window sizes are expressed in terms of grid spacing, so for a grid
+     with a 400 meter interval, a window size of 25 would produce a
+     window 10,000 meters on a side. If this is too small a window
+     (see #4), then re-grid the total-field anomaly grid to a larger
+     interval in order to appropriately represent anomaly width using
+
+
+                                         27
+   window sizes of 25 or less.
+6. Before starting, make sure that you know the surface elevation and
+   flight surface for the total-field anomaly grid. You will be
+   making grids of each in the following steps.
+
+Euler Setup
+1. The total-field anomaly, ground surface elevation, and flight
+   surface grids must all be perfectly coincident. In order to most
+   easily achieve this, save the total-field anomaly grid to a
+   database. Next, create new database channels for the ground and
+   flight surface elevations and interpolate from the appropriate
+   grids into those channels.
+2. Make the following grids, using the same gridding parameters for
+   each: total-field anomaly, ground elevation, and flight surface.
+3. Run the Euler setup GX. The input grid file is the total-
+   field anomaly grid from the previous step. Use the defaults for
+   all of the listed parameters.
+
+Euler Depth Analysis
+1. This is mostly self-explanatory as most of the fields are
+   automatically populated after running the Euler setup. However,
+   there are a few tricks. After specifying the observation
+   (flight) surface and minimum depth (ground elevation) surface,
+   enter the factor for elevation units/horizontal units. This
+   factor is 1000 if the grid units are in kilometers and the
+   elevation units are in meters.
+2. The structural index values for magnetic sources are listed below.
+   An advantage of using an index of 0 is that it will yield the
+   minimum possible depths to the tops of the magnetic sources. An
+   index of 1 will yield the maximum possible depths to the tops of
+   most geological magnetic sources, so these two sets of solutions
+   can be compared in a meaningful way.
+
+     Structural         Geologic Model           Depth Type
+        Index
+          0        high-throw contact/fault     depth to top
+          1         low-throw contact/fault     depth to top
+          2               line source          depth to center
+          3                  sphere            depth to center
+
+3. Run the program with different window sizes and compare the
+   solutions. A 25 percent error gives a nicely large number of
+   solutions for later gridding. Always set the maximum horizontal
+   distance parameter to 0, which suppresses horizontal location
+   errors. The maximum depth should be set to a very large number,
+   so that there is no risk of excluding deeper solutions.
+
+Manipulating the Results
+1. If an observation surface grid has been used, the depth solutions
+   are listed in horizontal grid units above sea level, so these must
+   be converted to depths by being subtracted from the surface
+   elevation. An elevation grid can be sampled into the database for
+   this purpose. Negative depth solutions are commonly present in
+   the database; these can be masked out prior to gridding.
+2. Gridding the depths at 3-6 times the original total-field anomaly
+   grid interval is pretty good for displaying results over a large
+
+
+
+                                      28
+     area. Multiply the depth grid by -1 so that “cold” color solutions
+     appear “deep” on a color shaded image map.
+
+References
+
+ Barbosa, V.C.F., Silva, J.B.C. and Medeiros, W.E., 1999, Stability
+   analysis and improvement of structural index estimation in Euler
+   deconvolution: Geophysics, v.64, no.1, p.48-60.
+
+ Nabighian, M.N., and Hansen, R.O., 2001, Unification of Euler and
+   Werner deconvolution in three dimensions via the generalized
+   Hilbert transform: Geophysics, v.66, no.6, p.1805-1810.
+
+ Phillips, J.D., 2002, Two-step processing for 3D magnetic source
+   locations and structural indices using extended Euler or analytic
+   signal methods: Society of Exploration Geophysicists, Expanded
+   Abstracts, 4p.
+
+ Reid, A.B., Allsop, J.M., Granser, H., Millett, A.J., and Somerton,
+   I.W., 1990, Magnetic interpretation in three dimensions using Euler
+   deconvolution: Geophysics, v.55, no.1, p.80-91.
+
+Written by Jeff Phillips (jeff@usgs.gov) 04/10/2003.
+
+
+
+
+                                         29
+USGS_FTFIL
+
+USGS_FTFIL GX
+
+Applies basic Fourier filters to a Fourier transform grid file produced
+by USGS_FTFWD.GX. The output filtered transform grid should be inverse
+Fourier transformed using USGS_FTINV.GX.
+
+INTERACTIVE PARAMETERS
+
+ Input Fourier transform grid file
+ Output filtered Fourier tranform grid file
+ Lanczos filter flag (Yes = On, No = Off)
+ Hanning filter flag
+ Reduction TO the pole flag
+ Current inclination (degrees)
+ Current declination (degrees)
+ Reduction FROM the pole flag
+ Desired inclination (degrees)
+ Desired declination (degrees)
+ Continuation flag
+ Continuation distance (positive up)
+ Vertical derivative or integral flag
+ Order of derivative or integral (positive for derivative)
+ Multiplication flag
+ Multiplication factor
+
+BATCH PARAMETERS
+
+USGS_FTFIL.INFFT          Input Fourier transform grid
+USGS_FTFIL.OUTFFT         Output filtered Fourier transform grid
+USGS_FTFIL.ILANC          Lanczos filter flag (1 = On, 0 = Off)
+USGS_FTFIL.IHANN          Hanning filter flag
+USGS_FTFIL.IPOLE          Reduction TO the pole flag
+USGS_FTFIL.AINCL          Current inclination (degrees)
+USGS_FTFIL.ADECL          Current declination (degrees)
+USGS_FTFIL.IFROM          Reduction FROM the pole flag
+USGS_FTFIL.BINCL          Desired inclination (degrees)
+USGS_FTFIL.BDECL          Desired declination (degrees)
+USGS_FTFIL.ICONT          Continuation flag
+USGS_FTFIL.HEIGHT         Continuation distance (positive up)
+USGS_FTFIL.IVERT          Vertical derivative or integral flag
+USGS_FTFIL.RORDER         Order of derivative or integral
+                                    (positive for derivative)
+USGS_FTFIL.IMULT          Multiplication flag
+USGS_FTFIL.AMULT          Multiplication factor
+
+APPLICATION NOTES
+
+ Lanczos filter - slight lowpass to reduce Gibbs effects.
+ Hanning filter - mild lowpass to correct for the data window.
+ Reduction TO or FROM the pole
+                - not valid within approximately ten degrees of
+                       the geomagnetic equator.
+                - assumes that the input grid to the USGS_FTFWD GX
+
+
+
+                                         30
+                       contains potential-field data measured on
+                       a flat, horizontal surface.
+ Continuation   - assumes that the input grid to the USGS_FTFWD GX
+                       contains potential-field data measured on
+                       a flat, horizontal surface.
+ Vertical derivative or integral
+                - non-integer orders are supported.
+                - assumes that the input grid to the USGS_FTFWD GX
+                       contains potential-field data measured on
+                       a flat, horizontal surface.
+
+ Useful combinations of operations include:
+
+ Pseudogravity transformation of magnetic anomaly data
+    = Reduction-to-Pole + 1st vertical integral (+ optional
+      multiplication for scaling).
+
+ Pseudomagnetic transformation of gravity anomaly data
+    = Reduction-from-Pole + 1st vertical derivative (+ optional
+      multiplication for scaling).
+
+Written by Jeff Phillips (jeff@usgs.gov) 12/26/2002.
+
+
+
+
+                                         31
+USGS_FTFWD
+
+USGS_FTFWD GX
+
+Fourier transforms an extended grid produced by USGS_FTPREP.GX. The
+output Fourier transform grid can be filtered using:
+  USGS_FTFIL.GX   - basic potential-field filters
+  USGS_BPFIL.GX   - lowpass,highpass, bandpass, notch filters
+  USGS_CTFIL.GX   - magnetic component transformations
+  USGS_RTFIL.GX   - regularized basic potential-field filters
+  USGS_HTFIL.GX   - Hilbert transform components
+  USGS_VDFIL.GX   - Vertical derivative from horizontal derivatives
+
+INTERACTIVE PARAMETERS
+
+ Input grid file
+ Output Fourier transform file
+
+BATCH PARAMETERS
+
+USGS_FTFWD.INGRID          input grid
+USGS_FTFWD.OUTFFT          output Fourier transform
+
+APPLICATION NOTES
+
+The maximum column dimension of the input grid is 16,384.
+
+Written by Jeff Phillips (jeff@usgs.gov) 12/18/2002.
+
+
+
+
+                                         32
+USGS_FTINV
+
+USGS_FTINV GX
+
+Inverse Fourier transforms a filtered Fourier transform grid file
+  produced by USGS_FTFIL.GX, USGS_BPFIL.GX, etc. back to the space
+  domain. The output grid will cover the same area and be dummied
+  in the same places as a specified masking grid, which is usually
+  the starting grid for the filtering process.
+
+INTERACTIVE PARAMETERS
+
+ Input Fourier transform grid file
+ Input masking grid file
+ Output masked grid file
+
+BATCH PARAMETERS
+
+USGS_FTINV.INFFT           input Fourier transform grid
+USGS_FTINV.MASKGRID        input Space-domain masking grid
+USGS_FTINV.OUTGRID         output Space-domain masked grid
+
+APPLICATION NOTES
+
+The maximum column dimension of the masking and output grid files
+is 16,384.
+
+Written by Jeff Phillips (jeff@usgs.gov) 12/26/2002.
+
+
+
+
+                                         33
+USGS_FTPREP
+
+USGS_FTPREP GX
+
+Prepares a plugged grid for Fourier transform by USGS_FTFWD.GX
+The grid is extended to a size required by USGS_FTFWD.GX and
+made to be periodic.
+
+INTERACTIVE PARAMETERS
+
+ Input plugged grid file
+ Output extended grid file
+ Minimum percent expansion (e.g., 25)
+
+BATCH PARAMETERS
+
+USGS_FTPREP.INGRID          input plugged grid
+USGS_FTPREP.PREPGRID        output extended grid
+USGS_FTPREP.PCT             minimum percent expansion
+
+APPLICATION NOTES
+
+Maximum dimensions of the extended grid are 16,384 x 16,384.
+The input grid should be smaller than this.
+
+The input grid is processed through the following 8 steps:
+1. Get the min/max of the grid edge values for use as limits
+   on the extended data.
+2. Extend the grid to the right using prediction filtering.
+3. Transpose the extended grid.
+4. Extend the transposed grid to the right.
+5. Smooth across the first extension.
+6. Transpose back.
+7. Smooth across the second extension.
+8. Center the data in the grid.
+
+Written by Jeff Phillips (jeff@usgs.gov) 12/18/2002.
+
+
+
+
+                                         34
+USGS_GRADCOMP
+
+USGS_GRADCOMP GX
+
+ Computes filtered horizontal derivative and horizontal gradient
+ magnitude (HGM) grids using the gradient-component method of Thurston
+ and Brown (1994).
+
+INTERACTIVE PARAMETERS
+
+ Input grid file
+ Output HGM grid file
+ Output x(east)-derivative grid file
+ Output y(north)-derivative grid file
+ Window size (odd and < 22)
+ Polynomial order (< Window size)
+
+BATCH PARAMETERS
+
+USGS_GRADCOMP.GRID          input grid
+USGS_GRADCOMP.HGRID         output HGM grid
+USGS_GRADCOMP.XGRID         output x-derivative grid
+USGS_GRADCOMP.YGRID         output y-derivative grid
+USGS_GRADCOMP.WINDOW        window size
+USGS_GRADCOMP.POLY          polynomial order
+
+APPLICATION NOTES
+
+ Computes filtered horizontal derivative and horizontal gradient
+ magnitude grids using the gradient-component method of Thurston and
+ Brown (1994). The user must specify a window size, w, and a polynomial
+ order, n < w. The standard first-difference operator corresponds to
+ w = 3, n = 2. For this and similar operators having n = w-1, there is
+ no attenuation of short wavelengths. For operators having n < w-1,
+ short wavelength features will be attenuated.
+
+ Source code modified from Thurston and Brown (1994) by Jeff Phillips.
+ The maximum number of columns in the grid is limited to 8,000. Grid
+ projection information is ignored.
+
+ Reference:
+
+ Thurston, J.B., and Brown, R.J., 1994, Automated source-edge location
+      with a new variable pass-band horizontal-gradient operator:
+      Geophysics, v.59, no.4, p.546-554.
+
+Written by Jeff Phillips (jeff@usgs.gov) 10/13/99.
+
+
+
+
+                                         35
+USGS_GRADXYH
+
+USGS_GRADXYH GX
+
+ Computes horizontal derivative and horizontal gradient magnitude
+ (HGM) grids using local quadratic surface fitting in 3x3 data
+ windows. Gradient values are computed to the edges of the data
+ coverage, so there are no gaps in coverage around the outside
+ edge of the grid or around holes in the data coverage.
+
+INTERACTIVE PARAMETERS
+
+ Input grid file
+ Output x(east)-derivative grid file
+ Output y(north)-derivative grid file
+ Output HGM grid file
+
+BATCH PARAMETERS
+
+USGS_GRADXYH.INGRID        input grid
+USGS_GRADXYH.XGRID         output x-derivative grid
+USGS_GRADXYH.YGRID         output y-derivative grid
+USGS_GRADXYH.HGRID         output HGM grid
+
+APPLICATION NOTES
+
+The maximum column dimension of the input grid is 8,000.   Grid
+projection information is ignored.
+
+Written by Jeff Phillips (jeff@usgs.gov) 7/16/2007.
+
+
+
+
+                                         36
+USGS_GRIDMASK
+
+USGS_GRIDMASK GX
+
+Masks a grid file by inserting dummy (no data) values. The inserted
+dummy values correspond either to the dummy values in a second grid
+file (normal masking) or to the non-dummy (data) values in the second
+grid file (inverse masking).
+
+INTERACTIVE PARAMETERS
+
+ Grid file to be masked
+ Grid file containing the masking values
+ Output masked grid file
+ Normal or inverse masking
+
+BATCH PARAMETERS
+
+USGS_GRIDMASK.INGRID1      input grid file to be masked
+USGS_GRIDMASK.INGRID2      input masking grid file
+USGS_GRIDMASK.OUTGRID      output masked grid file
+USGS_GRIDMASK.MTYPE        type of masking (Normal=1, Inverse=0)
+
+APPLICATION NOTES
+
+The two input grids must have the same origin, number of rows, number
+of columns, and grid interval. The maximum column dimension is 16,384
+for all grids. Grid projection information is ignored.
+
+
+Written by Jeff Phillips (jeff@usgs.gov) 01/18/00.
+
+
+
+
+                                           37
+USGS_GRIDPLUG
+
+USGS_GRIDPLUG GX
+
+Plugs dummy values in a grid file by using polynomial or local
+median initialization followed by minimum curvature iterations.
+
+INTERACTIVE PARAMETERS
+
+ Grid file to be plugged
+ Output plugged grid file
+ Polynomial order (0 to 3, or -1 for local median replacement)
+ Number of minimum curvature iterations
+
+BATCH PARAMETERS
+
+USGS_GRIDPLUG.INGRID       input grid file to be plugged
+USGS_GRIDPLUG.OUTGRID      output plugged grid file
+USGS_GRIDPLUG.IORDER       polynomial order for initialization
+                             (0 to 3 or -1 for local median)
+USGS_GRIDPLUG.NITER        number of minimum curvature iterations
+                             (e.g., 100)
+
+APPLICATION NOTES
+
+The maximum column dimension of the grids is 10,000.   Grid
+projection information is ignored.
+
+Written by Jeff Phillips (jeff@usgs.gov) 12/16/2002.
+
+
+
+
+                                         38
+USGS_GRIDPROX
+
+USGS_GRIDPROX GX
+
+Use this GX to create a grid containing distance to nearest data point.
+
+INTERACTIVE PARAMETERS
+
+ X channel
+ Y channel
+ Input grid (used to determine size and spacing of output grid)
+ Output grid
+
+BATCH PARAMETERS
+
+USGS_GRIDPROX.DB         input database
+USGS_GRIDPROX.XCH        input x-channel
+USGS_GRIDPROX.YCH        input y-channel
+USGS_GRIDPROX.INGRID     input grid file
+USGS_GRIDPROX.OUTGRID    output grid file
+
+APPLICATION NOTES
+
+This GX is written entirely in native gxc code - it is slow.
+
+Written by Rick Saltus, USGS (saltus@usgs.gov)
+
+
+
+
+                                            39
+USGS_GRIDSAMP
+
+USGS_GRIDSAMP GX
+
+Sample a grid at points of a post file using bilinear interpolation.
+The output post file is imported into a new Geosoft database.
+
+INTERACTIVE PARAMETERS
+
+ Input post file
+ Output post file and database
+ Input grid file
+ Post channel to overwrite
+
+BATCH PARAMETERS
+
+ USGS_GRIDSAMP.INPOST            Input post file
+              .OUTPOST           Output post file and database
+              .INGRID            Input grid file
+              .ICHAN             Post channel to overwrite (1 to 6)
+
+APPLICATION NOTES
+
+The maximum column dimension of the grid is 8,000.
+
+Written by Jeff Phillips (jeff@usgs.gov) 04/14/2003.
+
+
+
+
+                                          40
+USGS_HGRAD
+
+USGS_HGRAD.GX
+
+This GX calculates the magnitude of the horizontal gradient of a grid.
+
+INTERACTIVE PARAMETERS
+
+       Input grid
+       Output horizontal gradient magnitude grid
+
+BATCH PARAMETERS
+
+       USGS_HGRAD.IN = Input grid
+       USGS_HGRAD.OUT = Output horizontal gradient magnitude grid
+
+APPLICATION NOTES
+
+The HORIZONTAL GRADIENT MAGNITUDE is the square root of the sum of the
+squares of the derivatives in the x and y directions:
+
+       hgrad = sqrt ( dx*dx + dy*dy )
+
+Written by Northwest Geophysical Associates for the USGS.
+Requires licensed grid filtering.
+
+
+
+
+                                         41
+USGS_HTFIL
+
+USGS_HTFIL GX
+
+Computes Hilbert transform components in the Fourier domain
+from an input Fourier transform grid file generated by
+USGS_FTFWD.GX
+
+INTERACTIVE PARAMETERS
+
+ Input Fourier transform grid file
+
+BATCH PARAMETERS
+
+USGS_HTFIL.INFFT         input Fourier transform grid
+
+APPLICATION NOTES
+
+The output Fourier transform grid files have the same prefix
+as the input file and suffixes .FHX for the x-component and
+.FHY for the y-component. Use USGS_FTINV.GX to inverse
+Fourier transform the output files.
+
+References
+
+Nabighian, M.N., 1984, Toward a three-dimensional automatic
+    interpretation of potential field data via generalized
+    Hilbert transforms: Fundamental relations: Geophysics,
+    v.49, no.6, p.780-786.
+
+Nabighian, M.N., and Hansen, R.O., 2001, Unification of Euler
+    and Werner deconvolution in three dimensions via the
+    generalized Hilbert transform: Geophysics, v.66, no.6,
+    p.1805-1810.
+
+Written by Jeff Phillips (jeff@usgs.gov) 12/27/2002.
+
+
+
+
+                                          42
+USGS_IGRFPT
+
+USGS_IGRFPT GX
+
+Geomagnetic field values at a specified point location and time.
+
+INTERACTIVE PARAMETERS
+
+ Month
+ Day
+ Year (1945 +)
+ North latitude (decimal degrees)
+ East longitude (decimal degrees)
+ Altitude (meters)
+
+BATCH PARAMETERS
+
+ USGS_IGRFPT.MONTH       Month (1 to 12)
+            .DAY         Day (1 to 31)
+            .YEAR        Year (1945 to 2015)
+            .LAT         North latitude (decimal degrees)
+            .LON         East longitude (decimal degrees)
+            .ALT         Altitude (meters)
+
+
+APPLICATION NOTES
+
+The coefficients were last updated using the IGRF 1900-1940, the
+Definitive IGRF 1945-2000, the IGRF 2005, and the IGRF 2005 secular
+change.
+
+Original Fortran code by Mike Webring and Ron Sweeney, USGS.
+GX written by Jeff Phillips (jeff@usgs.gov) 2/12/2003.
+
+
+
+
+                                         43
+USGS_IMPOST
+
+USGS_IMPOST GX
+
+Imports an existing USGS post file with six data channels into a new
+database.
+
+INTERACTIVE PARAMETERS
+
+ Input post file
+ Output database
+
+BATCH PARAMETERS
+
+USGS_IMPOST.INPOST       Input post file
+USGS_IMPOST.OUTGBD       Output database
+
+APPLICATION NOTES
+
+A USGS post file is a Microsoft Fortran sequential binary file with
+the following nine fields in each record:
+id    station id (character*8)
+x     x(east)-coordinate (real*4)
+y     y(north)-coordinate (real*4)
+z1    first data value (real*4)
+z2    second data value (real*4)
+...
+z6    sixth data value (real*4)
+
+Reference
+
+Phillips, J.D., 1997, Potential-field geophysical software for the PC,
+version 2.2: U.S. Geological Survey Open-File Report 97-725, 34p.
+
+Written by Jeff Phillips (jeff@usgs.gov) 1/9/2003.
+
+
+
+
+                                           44
+USGS_LNPLOT
+
+USGS_LNPLOT GX
+
+Creates a DXF file from an ASCII line file (in one of two formats) and
+plots it to the current map.
+
+INTERACTIVE PARAMETERS
+
+ Input ASCII line file in .LX or XYP format
+ Output .DXF file
+ Group Name
+ Color for plotting lines
+
+BATCH PARAMETERS
+
+USGS_LNPLOT.INLINE   Input ASCII line file
+           .OUTDXF   Output DXF file containing the lines
+           .GROUP    Group Name in the DXF file
+           .COLOR    Color to use
+                       "retain colours"
+                       "black"
+                       "red"
+                       "green"
+                       "blue"
+                       "cyan"
+                       "magenta"
+                       "yellow"
+                       "grey"
+                       "light grey"
+                       "light red"
+                       "light green"
+                       "light blue"
+                       "light cyan"
+                       "light magenta"
+                       "light yellow"
+                       "white"
+
+APPLICATION NOTES
+
+An LX file such as myfile.lx is an ASCII file containing two columns
+separated by one or more spaces. The left column contains the
+x(east)-coordinates of the polylines; the right column contains the
+y(north)-coordinates. The end of each polyline is indicated by a value
+of 1.e38 in each column.
+
+An XYP file, which can have any extension other than .lx, is an ASCII
+file containing three columns separated by one or more spaces. The
+left column contains the x(east)-coordinates of the polylines, the
+center column contains the y(north)-coordinates, and the right column
+contains the polyline number. When the value in the right column
+changes, a new line is started.
+
+The GX assumes that the x and y coordinates in the line file are in the
+same projection and distance units as the map.
+
+
+
+                                         45
+Written by Jeff Phillips (jeff@usgs.gov) 03/03/2005.
+
+
+
+
+                                         46
+USGS_LW
+
+USGS_LW GX
+
+One-step computation of the local wavenumber grid of a potential-field
+data grid, with optional low-pass filtering, and including all related
+first derivative grids.
+
+INTERACTIVE PARAMETERS
+
+ Input potential-field grid file
+ Output local wavenumber grid file
+ Output total gradient grid file
+ Output horizontal gradient grid file
+ Output x(east)-derivative grid file
+ Output y(north)-derivative grid file
+ Output z(down)-derivative grid file
+ Order of initializing polynomial for plugging horizontal derivative
+   grids (0 to 3, or -1 for local median replacement)
+ Number of minimum curvature iterations for plugging horizontal
+   derivative grids (e.g., 100)
+ Gradient operator size (odd and < 22, normally 3, or 0 for local
+   quadratic)
+ Gradient operator order (Gradient operator size minus 1 for no
+   filtering, smaller values for low-pass filtering, normally 2)
+ Minimum percent expansion prior to Fourier transform (e.g., 25)
+
+BATCH PARAMETERS
+
+ USGS_LW.INGRID          Input potential-field grid
+        .OUTLGRID        Output local wavenumber grid
+        .OUTTGRID        Output total gradient grid
+        .OUTHGRID        Output horizontal gradient grid
+        .OUTXGRID        Output x(east)-derivative grid
+        .OUTYGRID        Output y(north)-derivative grid
+        .OUTZGRID        Output z(down)-derivative grid
+        .IORDER          Polynomial order for plugging holes
+        .NITER           Iterations for plugging holes
+        .WINDOW          Gradient operatior size
+        .POLY            Gradient operator order
+        .PCT             Minimum percent expansion
+
+APPLICATION NOTES
+
+The equation for the local wavenumber is given by Phillips (2000) and
+Phillips and others (2007).
+
+If gradient operator size is 3 or greater, horizontal gradients are
+computed using differences (usgs_gradcomp.gx). If gradient operator
+order is less than gradient operator size minus one, low-pass filtering
+will result (Thurston and Brown, 1994).
+
+If gradient operator size is 0, horizontal gradients are computed using
+local quadratic surfaces (usgs_gradxyh.gx). Gradient operator order is
+ignored.
+
+
+
+                                         47
+Vertical gradients are computed from the horizontal gradients using
+Hilbert transform components (Nabighian, 1984).
+
+Holes in the input grid, if any, are plugged before processing. All
+output grids will be completely plugged, except for the z-derivative,
+the total gradient, and the local wavenumber, which are masked to the
+input grid.
+
+The maximum column dimension of the input grid is 8,000.   Grid
+projection information is ignored.
+
+References:
+
+Nabighian, M.N., 1984, Toward a three-dimensional automatic
+  interpretation of potential field data via generalized Hilbert
+  transforms: Fundamental relations: Geophysics, v.49, no.6, p.780-786.
+
+Phillips, J.D., 2000, Locating magnetic contacts: a comparison of the
+  horizontal gradient, analytic signal, and local wavenumber methods:
+  Society of Exploration Geophysicists, Expanded Abstracts with
+  Biographies, 2000 Technical Program, v.1, p.402-405.
+
+Phillips, J.D., Hansen, R.O., and Blakely, R.J., 2007, The use of
+  curvature in potential-field interpretation: Exploration Geophysics,
+  v.38, p.111-119.
+
+Thurston, J.B., and Brown, R.J., 1994, Automated source-edge location
+  with a new variable pass-band horizontal-gradient operator:
+  Geophysics, v.59, no.4, p.546-554.
+
+Written by Jeff Phillips (jeff@usgs.gov) 09/28/2005.
+
+
+
+
+                                         48
+USGS_MBASE
+
+USGS_MBASE GX
+
+Create a diurnal correction channel from multiple magnetic base stations.
+
+INTERACTIVE PARAMETERS
+
+ X(east) channel name
+ Y(north) channel name
+ Z(elevation) channel name
+ Output diurnal channel name
+ Number of base stations
+ Base station 1 channel name
+ Base station 1 X-coordinate
+ Base station 1 Y-coordinate
+ Base station 1 Z-coordinate
+ Base station 1 DC value
+ Base station 2 channel name
+ Base station 2 X-coordinate
+ Base station 2 Y-coordinate
+ Base station 2 Z-coordinate
+ Base station 2 DC value
+ ...
+ Base station 6 channel name
+ Base station 6 X-coordinate
+ Base station 6 Y-coordinate
+ Base station 6 Z-coordinate
+ Base station 6 DC value
+
+BATCH PARAMETERS
+
+USGS_MBASE.XCHAN          X(east) channel name
+USGS_MBASE.YCHAN          Y(north) channel name
+USGS_MBASE.ZCHAN          Z(elevation) channel name
+USGS_MBASE.OUTCHAN        Output diurnal channel name
+USGS_MBASE.NBASE          Number of base stations
+USGS_MBASE.B1CHAN         Base station 1 channel name
+USGS_MBASE.B1X            Base station 1 X-coordinate
+USGS_MBASE.B1Y            Base station 1 Y-coordinate
+USGS_MBASE.B1Z            Base station 1 Z-coordinate
+USGS_MBASE.B1DC           Base station 1 DC value
+USGS_MBASE.B2CHAN         Base station 2 channel name
+USGS_MBASE.B2X            Base station 2 X-coordinate
+USGS_MBASE.B2Y            Base station 2 Y-coordinate
+USGS_MBASE.B2Z            Base station 2 Z-coordinate
+USGS_MBASE.B2DC           Base station 2 DC value
+
+...
+USGS_MBASE.B6CHAN         Base station 6 channel name
+USGS_MBASE.B6X            Base station 6 X-coordinate
+USGS_MBASE.B6Y            Base station 6 Y-coordinate
+USGS_MBASE.B6Z            Base station 6 Z-coordinate
+USGS_MBASE.B6DC           Base station 6 DC value
+
+
+
+
+                                         49
+APPLICATION NOTES
+
+For one base station, the base station value is returned.
+For two base stations, the returned value is on the "most level" plane
+  defined by the two base station values.
+For three base stations, the returned value is on the plane defined by
+  the three base station values.
+For more than three base stations, the returned value is on a plane
+  fitting all base station values, weighted by inverse distance.
+
+Base station DC values are typically an average of quiet-time values
+near local midnight. The averages should be performed over the same set
+of days for all base stations.
+
+Written by Jeff Phillips (jeff@usgs.gov) 11/28/2006.
+
+
+
+
+                                         50
+USGS_MFDESIGN
+
+USGS_MFDESIGN GX
+
+Design matched bandpass filters for a potential-field data grid.
+
+INTERACTIVE PARAMETERS
+
+ Input spectrum file from USGS_MFINIT.GX
+ Output layer file
+ Background color (1 = black, -1 = white)
+
+BATCH PARAMETERS
+
+USGS_MFDESIGN.SPEC        Input spectrum file from USGS_MFINIT.GX
+USGS_MFDESIGN.LAYER       Initial layer type
+USGS_MFDESIGN.BKGRND      1 = black
+                         -1 = white
+
+APPLICATION NOTES
+
+This GX requires files generated by USGS_MFINIT.GX.
+
+Start by fitting the the right-hand side of the plot with the
+shallowest equivalent layer, usually a dipole layer (magnetics) or
+a density layer (gravity). Then move to the left for each
+subsequent equivalent layer.
+
+Use thin-layer models for the shallowest layers; switch to half-space
+models at the depth where you want the greatest spectral separation.
+
+You can try different models for the current layer. Remember to
+move on to the next layer when you are happy with the fit, and select
+"all done" after fitting the deepest (left-most) layer.
+
+The non-linear least squares iterative improvement is performed until
+the RMS error is minimized. This step is recommended.
+
+Use USGS_MFFILTER.GX to apply the bandpass filters to the data.
+
+Reference
+
+Phillips, J.D., 2001, Designing matched bandpass and azimuthal filters
+  for the separation of potential-field anomalies by source region and
+  source type: Australian Society of Exploration Geophysicists, 15th
+  Geophysical Conference and Exhibition, Expanded Abstracts CD-ROM, 4p.
+
+Written by Jeff Phillips (jeff@usgs.gov) 2/10/2003.
+
+
+
+
+                                         51
+USGS_MFFILTER
+
+USGS_MFFILTER GX
+
+Apply matched bandpass filters to a potential-field data grid in order
+to approximately separate anomalies produced at different equivalent
+layer depths.
+
+INTERACTIVE PARAMETERS
+
+ Input Fourier transform grid file (generated by USGS_MFINIT.GX)
+ Input layer file                  (generated by USGS_MFDESIGN.GX)
+ Filter type (Amplitude or Wiener)
+ Input masking grid file    (same as input grid to USGS_MFINIT.GX)
+ Output lowpass grid file   (anomalies from the deepest layer)
+ Output bandpass1 grid file (anomalies from the next deepest layer)
+ Output bandpass2 grid file (anomalies from the next deepest layer)
+ Output bandpass3 grid file (anomalies from the next deepest layer)
+ Output bandpass4 grid file (anomalies from the next deepest layer)
+ Output bandpass5 grid file (anomalies from the next deepest layer)
+ Output bandpass6 grid file (anomalies from the next deepest layer)
+ Output bandpass7 grid file (anomalies from the next deepest layer)
+ Output bandpass8 grid file (anomalies from the next deepest layer)
+
+BATCH PARAMETERS
+
+USGS_MFFILTER.INFFT      Input Fourier transform grid file(from
+                           USGS_MFINIT.GX)
+USGS_MFFILTER.INLAY      Input equivalent layer file (from
+                           USGS_MFDESIGN.GX)
+USGS_MFFILTER.FTYPE      Filter type ("a" or "w")
+USGS_MFFILTER.MASKGRD    Masking grid to be applied to the bandpass
+                           grids (the input grid to USGS_MFINIT.GX)
+USGS_MFFILTER.OUTGRD0    Output lowpass grid file   (deepest layer)
+USGS_MFFILTER.OUTGRD1    Output bandpass1 grid file (the next deepest
+                           layer)
+USGS_MFFILTER.OUTGRD2    Output bandpass2 grid file (the next deepest
+                            layer)
+USGS_MFFILTER.OUTGRD3    Output bandpass3 grid file (the next deepest
+                            layer)
+USGS_MFFILTER.OUTGRD4    Output bandpass4 grid file (the next deepest
+                            layer)
+USGS_MFFILTER.OUTGRD5    Output bandpass5 grid file (the next deepest
+                            layer)
+USGS_MFFILTER.OUTGRD6    Output bandpass6 grid file (the next deepest
+                            layer)
+USGS_MFFILTER.OUTGRD7    Output bandpass7 grid file (the next deepest
+                            layer)
+USGS_MFFILTER.OUTGRD8    Output bandpass8 grid file (the next deepest
+                            layer)
+
+APPLICATION NOTES
+
+Requires files generated by USGS_MFINIT.GX and USGS_MFDESIGN.GX.
+
+
+
+
+                                         52
+You only need to specify as many output grids as you have layers in the
+layer file.
+
+The maximum column dimension of the masking and output grids is 8,000.
+Grid projection information is ignored.
+
+Reference
+
+Phillips, J.D., 2001, Designing matched bandpass and azimuthal filters
+  for the separation of potential-field anomalies by source region and
+  source type: Australian Society of Exploration Geophysicists, 15th
+  Geophysical Conference and Exhibition, Expanded Abstracts CD-ROM, 4p.
+
+Written by Jeff Phillips (jeff@usgs.gov) 2/10/2003.
+
+
+
+
+                                         53
+USGS_MFINIT
+
+USGS_MFINIT GX
+
+Initialize the matched bandpass filtering process for a potential-field
+data grid.
+
+INTERACTIVE PARAMETERS
+
+ Input potential-field grid file
+ Output Fourier transform grid file
+ Output radial spectrum file
+ Output residual spectrum grid file
+ Order of initializing polynomial for plugging horizontal derivative
+   grids (0 to 3, or -1 for local median replacement)
+ Number of minimum curvature iterations for plugging horizontal
+   derivative grids (e.g., 100)
+ Minimum percent expansion prior to Fourier transform (e.g., 25)
+
+BATCH PARAMETERS
+
+ USGS_MFINIT.INGRID       Input potential-field grid
+            .OUTFFT       Output Fourier transform grid
+            .OUTSPC       Output radial spectrum file
+            .OUTGRID      Output residual spectrum grid file
+            .IORDER       Polynomial order for plugging holes
+            .NITER        Iterations for plugging holes
+            .PCT          Minimum percent expansion
+
+APPLICATION NOTES
+
+Follow up with USGS_MFDESIGN.GX, which uses the radial spectrum file,
+and USGS_MFFILTER.GX, which uses the Fourier transform grid. The
+maximum column dimension of the input grid is 8,000.
+
+Reference
+
+Phillips, J.D., 2001, Designing matched bandpass and azimuthal filters
+  for the separation of potential-field anomalies by source region and
+  source type: Australian Society of Exploration Geophysicists, 15th
+  Geophysical Conference and Exhibition, Expanded Abstracts CD-ROM, 4p.
+
+Written by Jeff Phillips (jeff@usgs.gov) 2/11/2003.
+
+
+
+
+                                         54
+USGS_MFPLOT
+
+USGS_MFPLOT GX
+
+Display matched bandpass filters designed by USGS_MFDESIGN.GX.
+
+INTERACTIVE PARAMETERS
+
+ Input radial spectrum file from USGS_MFINIT.GX
+ Input layer file from USGS_MFDESIGN.GX
+ Background color (1 = black, -1 = white)
+
+BATCH PARAMETERS
+
+USGS_MFPLOT.SPEC          Input radial spectrum file from USGS_MFINIT.GX
+USGS_MFPLOT.LAYER         Input layer file from USGS_MFDESIGN.GX
+USGS_MFPLOT.BKGRND        1 = black
+                         -1 = white
+
+APPLICATION NOTES
+
+This GX requires files generated by USGS_MFINIT.GX and USGS_MFDESIGN.GX.
+
+First the fit between the layer model and the radial spectrum is shown,
+then the bandpass filters corresponding to the model are shown.
+
+Use USGS_MFFILTER.GX to apply the bandpass filters to the potential-field
+data grid.
+
+Reference
+
+Phillips, J.D., 2001, Designing matched bandpass and azimuthal filters
+  for the separation of potential-field anomalies by source region and
+  source type: Australian Society of Exploration Geophysicists, 15th
+  Geophysical Conference and Exhibition, Expanded Abstracts CD-ROM, 4p.
+
+Written by Jeff Phillips (jeff@usgs.gov) 2/11/2003.
+
+
+
+
+                                          55
+USGS_OPENPOST
+
+USGS_OPENPOST GX
+
+Imports a USGS POST file to a new database.    Requires a licensed version
+of Oasis montaj.
+
+INTERACTIVE PARAMETERS
+
+ Input USGS POST file (new database will have the same prefix)
+ Maximum number of lines in the database
+ Maximum number of channels in the database
+
+BATCH PARAMETERS
+
+USGS_OPENPOST.FILE       Input USGS POST file (new database will have
+                           the same prefix)
+USGS_OPENPOST.LINES      Maximum number of lines in the database
+USGS_OPENPOST.CHANNELS   Maximum number of channels in the database
+
+APPLICATION NOTES
+
+A USGS POST file is a Microsoft Fortran unformatted sequential binary
+File in which each record contains a record identification ID (8 ASCII
+characters), X (real*4) and Y (real*4) coordinates, and any number of
+dependent variables Z1,Z2,... (real*4 for each one).
+
+In addition to the data values, the file contains a first byte of
+Decimal 75, and a last byte of decimal 130. Each logical record is made
+up of one or more physical blocks of up to 128 data bytes with a
+preceding and trailing length-byte. If a logical record contains more
+than one physical block, the length-bytes of all but the last block are
+set to decimal 129.
+
+Reference
+
+Phillips, J.D., 1997, Potential-field geophysical software for the PC,
+  version 2.2: U.S. Geological Survey Open-File Report 97-725, 34p.
+
+Modified from Geosoft's OpenXYZ.gx and impost.gx
+  by Jeff Phillips (jeff@usgs.gov) 1/10/2003.
+
+
+
+
+                                          56
+USGS_PDRAW
+
+USGS_PDRAW GX
+
+Draws the polygons from a polygon file into a specified group on the
+current map.
+
+INTERACTIVE PARAMETERS
+
+     Polygon file name (.ply)      The name of the polygon file
+
+     Map view                      Map view in which to draw, select
+                                   from the list
+
+     Line thickness (mm)           The polygon outline line thickness
+                                   in mm
+
+     Line colour                   Enter a line colour of form
+                                   RxxxGxxxBxxx
+
+     Fill colour                   Enter a fill colour of form
+                                   RxxxGxxxBxxx
+
+     Group Name                    Enter the group name
+
+     Group Action                  Enter a zero (0) to replace the group
+                                   (i.e. erase and replot) and a one (1)
+                                   to append polygons to the group
+
+BATCH PARAMETERS
+
+       USGS_PDRAW.FILE              Polygon file
+       USGS_PDRAW.VIEW              Map view
+       USGS_PDRAW.LINETHICK         Line thickness
+       USGS_PDRAW.LINECOLO          Line color
+       USGS_PDRAW.FILLCOLO          Fill color
+       USGS_PDRAW.GROUPNAME         Group name
+       USGS_PDRAW.GROUPACTN         Group action
+
+APPLICATION NOTES
+
+Polygons are ASCII files with default extension .ply. A polygon file
+contains a list of X,Y coordinates that define one or more polygons. The
+file may contain any number of polygons, and each polygon may have any
+number of vertices. The first and last points in each polygon are assumed
+to connect. If the file will contain more than one polygon, each polygon
+must start with a line 'poly #' ('p' or 'P' in column 1). Comment lines are
+indicated by a '/' in column 1. Please note that the polygon coordinates
+are assumed to be in the same coordinate system as that of the map view on
+which the polygons will be drawn.
+
+Following is an example of a single polygon file:
+
+/
+/   Sample single polygon file
+
+
+
+                                         57
+/----------------------------
+poly 1
+    1376027.6061    6178025.9399
+    1382846.3129    6178025.9399
+    1382846.3129    6182748.8182
+    1376027.6061    6182748.8182
+    1376027.6061    6178025.9399
+
+Following is an example of a three-polygon file:
+
+/
+/ Sample three polygon file
+/---------------------------
+poly 1
+    1375594.6724    6181961.6718
+    1378706.3838    6181961.6718
+    1378706.3838    6184716.6842
+    1375594.6724    6184716.6842
+    1375594.6724    6181961.6718
+poly 2
+    1375757.0225    6178629.4188
+    1379896.9516    6178629.4188
+    1379896.9516    6181174.5254
+    1375757.0225    6181174.5254
+    1375757.0225    6178629.4188
+poly 3
+    1380546.3523    6175926.8828
+    1384550.9896    6175926.8828
+    1384550.9896     6179022.992
+    1380546.3523     6179022.992
+    1380546.3523    6175926.8828
+
+TOPIC MODIFIED BY JOE DUVAL, USGS (03/04/2002)
+
+
+
+
+                                         58
+USGS_PGPLOT
+
+USGS_PGPLOT GX
+
+Creates a DXF file containing a page size map surround from a grid file,
+then creates a new map from the DXF file.
+
+INTERACTIVE PARAMETERS
+
+ Input grid file
+ Output grid file with added colorbar
+ Output DXF file
+ Colorbar flag
+ Colorbar offset (grid columns)
+ Colorbar width (grid columns)
+ Colorbar units
+ Distance units flag
+ Map scale
+
+BATCH PARAMETERS
+
+USGS_PGPLOT.INGRID    Input grid file
+           .OUTGRID   Output grid file with color bar
+           .OUTDXF    Output DXF file containing map surround
+           .YNCB      Color bar plotting flag
+                            0 = No
+                            1 = Yes
+          .NOFF       Offset to color bar (grid columns)
+          .NWID       Width of color bar (grid columns)
+          .CBUNITS    Color bar label
+          .IDIST      Distance units flag
+                            0 = kilometers
+                            1 = meters
+                            2 = centimeters
+                            3 = millimeters
+                            4 = statute miles
+                            5 = nautical miles
+                            6 = kilofeet
+                            7 = feet
+                            8 = inches
+                            9 = degrees
+          .SCALE       Map scale (e.g., 50000)
+
+APPLICATION NOTES
+
+The scale button will attempt to return the largest scale factor
+that will fit on a letter-size page. For a page-sized plot, enter
+a scale factor greater than this.
+
+If the output DXF file or grid exist, they will be overwritten.
+The output map will have the same name as the DXF file. If the output
+map exists, the user will be asked to verify the overwrite.
+
+After the new map is created, the output grid with a colorbar (if any)
+can be plotted without shading, and the original grid can be plotted
+
+
+
+                                         59
+with shading.
+
+Individual components of the base map can be displayed or hidden using
+the Group Manager.
+
+Written by Jeff Phillips (jeff@usgs.gov) 03/02/2005.
+
+
+
+
+                                         60
+USGS_PLUGGRID
+
+USGS_PLUGGRID GX
+
+Plugs holes in a grid using minimum curvature gridding.
+Requires a license for Geosoft gridding.
+
+INTERACTIVE PARAMETERS
+
+ Input grid file
+ Output plugged grid file
+
+BATCH PARAMETERS
+
+ USGS_PLUGGRID.INGRID           input grid
+ USGS_PLUGGRID.PLUGGRID         output plugged grid
+
+APPLICATION NOTES
+
+ Tests input grid for dummy values. If dummy values are
+ found, runs GRIDGDB.GX to copy valid grid values to a
+ temporary database, then runs RANGRID.GX to create the
+ plugged grid.
+
+Written by Jeff Phillips (jeff@usgs.gov) 01/07/00.
+
+
+
+
+                                         61
+USGS_PREP4
+
+USGS_PREP4 GX
+
+Prepares a grid for Geosoft Fourier transform by plugging holes, and
+extending the rows and columns. Requires a Geosoft license for
+gridding.
+
+INTERACTIVE PARAMETERS
+
+ Input grid file
+ Output plugged and extended grid file
+ Percent expansion
+
+BATCH PARAMETERS
+
+USGS_PREP4.INGRID          input grid
+USGS_PREP4.PREPGRID        output plugged and extended grid
+USGS_PREP4.PCT             percent expansion
+
+APPLICATION NOTES
+
+Maximum dimensions of the extended grid are 16,384 x 16,384.   The
+input grid should be smaller than this.
+
+Initial processing tests the input grid for dummy values; if any exist,
+the valid grid values are copied into a temporary database called
+Prep4.gdb and regridded using minimum curvature into a new grid called
+Prep4.plg.
+
+The input grid (or Prep4.plg) is then processed through the
+following 8 steps:
+1. Get the min/max of the grid and the extended dimensions.
+2. Extend the grid to the right using prediction filtering.
+3. Transpose the extended grid.
+4. Extend the transposed grid to the right.
+5. Smooth across the first extension.
+6. Transpose back.
+7. Smooth across the second extension.
+8. Center the data in the grid.
+
+Written by Jeff Phillips (jeff@usgs.gov) 01/18/00.
+
+
+
+
+                                         62
+USGS_PSDGRV
+
+USGS_PSDGRV GX
+
+One-step computation of a pseudo-gravity field grid from a total
+magnetic field grid.
+
+INTERACTIVE PARAMETERS
+
+ Input total field magnetic anomaly grid file
+ Output pseudo-gravity anomaly grid file
+ Geomagnetic inclination (degrees)
+ Geomagnetic declination (degrees)
+ Ratio of magnetization to density
+ Order of initializing polynomial for plugging input
+   grid (0 to 3, or -1 for local median replacement)
+ Number of minimum curvature iterations for plugging
+   input grid (e.g., 100)
+ Minimum percent expansion prior to Fourier transform (e.g., 25)
+
+BATCH PARAMETERS
+
+ USGS_PSDGRV.INGRID          Input gravity grid
+            .OUTGRID         Output pseudo-magnetic grid
+            .INCL            Geomagnetic inclination (degrees)
+            .DECL            Geomagnetic declination (degrees)
+            .RATIO           Ratio of magnetization to density
+            .IORDER          Polynomial order for plugging holes
+            .NITER           Iterations for plugging holes
+            .PCT             Minimum percent expansion
+
+APPLICATION NOTES
+
+Like standard reduction-to-the-pole, this will not work well at low
+magnetic latitudes (within 20 degrees of the magnetic equator). The
+maximum number of columns in the expanded input grid is 16,384.
+Grid projection information is ignored.
+
+Written by Jeff Phillips (jeff@usgs.gov) 06/10/2003.
+
+
+
+
+                                         63
+USGS_PSDMAG
+
+USGS_PSDMAG GX
+
+One-step computation of a pseudo-magnetic field grid from a gravity
+field grid.
+
+INTERACTIVE PARAMETERS
+
+ Input gravity anomaly grid file
+ Output pseudo-magnetic anomaly grid file
+ Geomagnetic inclination (degrees)
+ Geomagnetic declination (degrees)
+ Ratio of magnetization to density
+ Order of initializing polynomial for plugging input
+   grid (0 to 3, or -1 for local median replacement)
+ Number of minimum curvature iterations for plugging
+   input grid (e.g., 100)
+ Minimum percent expansion prior to Fourier transform (e.g., 25)
+ Lowpass filtering option (0 = None, 1 = Lanczos, 2 = Hanning)
+
+BATCH PARAMETERS
+
+ USGS_PSDMAG.INGRID          Input gravity grid
+            .OUTGRID         Output pseudo-magnetic grid
+            .INCL            Geomagnetic inclination (degrees)
+            .DECL            Geomagnetic declination (degrees)
+            .RATIO           Ratio of magnetization to density
+            .IORDER          Polynomial order for plugging holes
+            .NITER           Iterations for plugging holes
+            .PCT             Minimum percent expansion
+            .IFILT           Lowpass filtering option
+
+APPLICATION NOTES
+
+The maximum number of columns in the expanded input grid is 16,384.
+Grid projection information is ignored.
+
+Written by Jeff Phillips (jeff@usgs.gov) 06/05/2003.
+
+
+
+
+                                         64
+USGS_RCDEP
+
+USGS_RCDEP GX
+
+Profile depth analysis methods applied to the rows and/or columns of a
+magnetic anomaly grid.
+
+INTERACTIVE PARAMETERS
+
+ Input magnetic anomaly grid (must be reduced-to-pole magnetics for
+       horizontal gradient contacts or pseudogravity for horizontal
+       gradient sheets)
+ Polynomial order for plugging
+ Iterations for plugging
+ Optional input observation surface grid
+ Elevation units per horizontal units
+ Method used for depth analysis: 1=analytic signal, 2=horizontal
+       gradient, or 3=local wavenumber
+ Desired source type for analytic signal or horizontal gradient
+       analysis: 0=contact or 1=sheet
+ Desired strike direction of features: 1=north, 2=east, or 3=both
+ Minimum amplitude of the derivative function
+ Output closed peaks only: 0=No, 1=Yes
+ Output post file (and database)
+
+BATCH PARAMETERS
+
+ USGS_RCDEP.AGRID         Input magnetic anomaly grid (must be
+                            reduced-to-pole magnetic field for
+                            horizontal gradient contacts or
+                            pseudogravity for horizontal gradient
+                            sheets)
+           .IORDER        Polynomial order for plugging
+           .NITER         Iterations for plugging
+           .OSGRID        Optional input observation surface grid
+           .CONV          Elevation units per horizontal units
+           .TYPE          Method used for depth analysis:
+                            1=analytic signal, 2=horizontal gradient,
+                            or 3=local wavenumber
+           .STYP          Desired source type for analytic signal or
+                            horizontal gradient analysis: 0=contact
+                            or 1=sheet
+           .SDIR          Desired strike direction of features:
+                            1=north, 2=east, or 3=both
+           .AMP           Minimum amplitude of the derivative function
+           .IPEAK         Output closed peaks only: 0=No, 1=Yes
+           .OUTPOST       Output post file (and database)
+
+APPLICATION NOTES
+
+If an observation surface grid is used, it must have the same origin,
+number of rows and columns, and sample interval as the magnetic anomaly
+grid. The maximum number of columns in the input grids is 8,000.
+
+
+
+
+                                         65
+Reference
+
+Phillips, J.D., 2000, Locating magnetic contacts: a comparison of the
+  horizontal gradient, analytic signal, and local wavenumber methods:
+  Society of Exploration Geophysicists, Expanded Abstracts with
+  Biographies, 2000 Technical Program, v.1, p.402-405
+
+Written by Jeff Phillips (jeff@usgs.gov) 04/15/2003.
+
+
+
+
+                                         66
+USGS_REDPOL
+
+USGS_REDPOL GX
+
+One-step computation of a reduced-to-the-pole magnetic field grid.
+
+INTERACTIVE PARAMETERS
+
+ Input total field magnetic anomaly grid file
+ Output RTP magnetic anomaly grid file
+ Geomagnetic inclination (degrees)
+ Geomagnetic declination (degrees)
+ Order of initializing polynomial for plugging input
+   grid (0 to 3, or -1 for local median replacement)
+ Number of minimum curvature iterations for plugging
+   input grid (e.g., 100)
+ Minimum percent expansion prior to Fourier transform (e.g., 25)
+
+BATCH PARAMETERS
+
+ USGS_REDPOL.INGRID          Input gravity grid
+            .OUTGRID         Output pseudo-magnetic grid
+            .INCL            Geomagnetic inclination (degrees)
+            .DECL            Geomagnetic declination (degrees)
+            .IORDER          Polynomial order for plugging holes
+            .NITER           Iterations for plugging holes
+            .PCT             Minimum percent expansion
+
+APPLICATION NOTES
+
+This standard reduction-to-the-pole filter will not work well at
+low magnetic latitudes (within 20 degrees of the magnetic equator).
+The maximum number of columns in the expanded input grid is 16,384.
+Grid projection information is ignored.
+
+
+Written by Jeff Phillips (jeff@usgs.gov) 06/10/2003.
+
+
+
+
+                                         67
+USGS_RENUMLNS
+
+USGS_RENUMLNS GX
+
+Renumber all selected lines.   This is useful for changing line numbers
+prior to merging databases.
+
+INTERACTIVE PARAMETERS
+
+      The starting line number.
+      The line number increment for numbering sequential lines.
+
+BATCH PARAMETERS
+
+      USGS_RENUMLNS.STRTLN           Starting line number
+      USGS_RENUMLNS.INCRLN           Line number increment
+
+APPLICATION NOTES
+
+If any parameters are blank, the default parameter value is set to 1.
+The process will stop if the new name of a selected line already exists.
+All lines processed up to that point will be changed.
+
+TOPIC WRITTEN BY JOE DUVAL, USGS (11/21/2000)
+
+
+
+
+                                          68
+USGS_RTFIL
+
+USGS_RTFIL GX
+
+Applies regularized Fourier filters to a Fourier transform grid file
+produced by USGS_FTFWD.GX. The output filtered transform grid
+should be inverse Fourier transformed using USGS_FTINV.GX.
+
+INTERACTIVE PARAMETERS
+
+ Input Fourier transform grid file
+ Output filtered Fourier tranform grid file
+ Lanczos filter flag (Yes = On, No = Off)
+ Hanning filter flag
+ Reduction TO the pole flag
+ Current inclination (degrees)
+ Current declination (degrees)
+ Terms in RTP series
+ Reduction FROM the pole flag
+ Desired inclination (degrees)
+ Desired declination (degrees)
+ Continuation flag
+ Continuation distance (positive up)
+ Vertical derivative or integral flag
+ Order of derivative or integral (positive for derivative)
+ Strike filtering flag
+ Central azimuth of strike filter (degrees)
+ Azimuthal half-width of strike filter (degrees)
+ Type of strike filter (enhance or suppress)
+ Multiplication flag
+ Multiplication factor
+ Regularization flag
+ Regularizing factor (0 for no regularization)
+
+BATCH PARAMETERS
+
+USGS_RTFIL.INFFT          Input Fourier transform grid
+USGS_RTFIL.OUTFFT         Output filtered Fourier transform grid
+USGS_RTFIL.ILANC          Lanczos filter flag (1 = On, 0 = Off)
+USGS_RTFIL.IHANN          Hanning filter flag
+USGS_RTFIL.IPOLE          Reduction TO the pole flag
+USGS_RTFIL.AINCL          Current inclination (degrees)
+USGS_RTFIL.ADECL          Current declination (degrees)
+USGS_RTFIL.NPTS           Terms in RTP series
+USGS_RTFIL.IFROM          Reduction FROM the pole flag
+USGS_RTFIL.BINCL          Desired inclination (degrees)
+USGS_RTFIL.BDECL          Desired declination (degrees)
+USGS_RTFIL.ICONT          Continuation flag
+USGS_RTFIL.HEIGHT         Continuation distance (positive up)
+USGS_RTFIL.IVERT          Vertical derivative or integral flag
+USGS_RTFIL.IORDER         Order of derivative or integral
+                                    (positive for derivative)
+USGS_RTFIL.ISTRK          Strike filtering flag
+USGS_RTFIL.ASTRK          Strike central azimuth (degrees)
+USGS_RTFIL.WSTRK          Strike asimuthal half-width (degrees)
+
+
+
+                                         69
+USGS_RTFIL.IES            Strike filter type (Enhance=1 or Suppress=2)
+USGS_RTFIL.IMULT          Multiplication flag
+USGS_RTFIL.AMULT          Multiplication factor
+USGS_RTFIL.IALFA          Regularization flag
+USGS_RTFIL.ALPHA          Regularizing parameter
+
+APPLICATION NOTES
+
+ Lanczos filter - slight lowpass to reduce Gibbs effects.
+ Hanning filter - mild lowpass to correct for the data window.
+ Reduction-TO or -FROM the pole
+                - assumes that the input grid to the USGS_FTFWD GX
+                  contains potential-field data measured on
+                  a flat, horizontal surface.
+                - assumes induced magnetization.
+ Reduction-TO-pole - the current magnetic inclination and declination
+                  are required, as is the number of terms to keep
+                  in the series expansion. At low-latitudes
+                  (<30 degrees), use few terms (15) and regularization.
+                  At high latitudes, use 1000 terms and no regularization.
+ Reduction-FROM-pole - to other latitudes. The desired magnetic
+                  inclination and declination are required.
+ Continuation   - assumes that the input grid to the USGS_FTFWD GX
+                  contains potential-field data measured on
+                  a flat, horizontal surface.
+ Vertical derivative or integral
+                - integer orders only.
+                - assumes that the input grid to the USGS_FTFWD GX
+                  contains potential-field data measured on
+                  a flat, horizontal surface.
+ Strike filter - The direction and half-angle width are required.
+                  Strike suppression is more stable than strike
+                  enhancement. Regularization is supported.
+ Regularization - If used, the default parameter alpha is 0.001. A value
+                  of zero for alpha is equivalent to no regularization.
+
+ Useful combinations of operations include:
+
+ Pseudogravity transformation of magnetic anomaly data
+    = Reduction-to-Pole + 1st vertical integral (+ optional
+      multiplication for scaling).
+
+ Pseudomagnetic transformation of gravity anomaly data
+    = Reduction-from-Pole + 1st vertical derivative (+ optional
+      multiplication for scaling).
+
+Written by Jeff Phillips (jeff@usgs.gov) 01/13/2005.
+
+
+
+
+                                         70
+USGS_SETEULER
+
+USGS_SETEULER GX
+
+Set up derivative grids for Euler depth analysis using USGS_EULERAVE.GX.
+
+INTERACTIVE PARAMETERS
+
+ Input potential-field grid file
+ Order of initializing polynomial for plugging input and horizontal
+   derivative grids (0 to 3, or -1 for local median replacement)
+ Number of minimum curvature iterations for plugging input and
+   horizontal derivative grids (e.g., 100)
+ Gradient operator size (odd and < 22, normally 3)
+ Gradient operator order (operator size - 1 for no filtering,
+   smaller for low-pass filtering, normally 2)
+ Minimum percent expansion prior to Fourier transform (e.g., 25)
+ Output x(east)-derivative grid file
+ Output y(north)-derivative grid file
+ Output z(vertical)-derivative grid file
+ Output Hilbert transform x-component grid file
+ Output x-derivative of x-component grid file
+ Output y-derivative of x-component grid file
+ Output z-derivative of x-component grid file
+ Output Hilbert transform y-component grid file
+ Output x-derivative of y-component grid file
+ Output y-derivative of y-component grid file
+ Output z-derivative of y-component grid file
+
+BATCH PARAMETERS
+
+ USGS_SETEULER.INGRID          Input potential-field grid
+              .IORDER          Polynomial order for plugging holes
+              .NITER           Iterations for plugging holes
+              .WINDOW          Gradient operatior size
+              .POLY            Gradient operator order
+              .PCT             Minimum percent expansion
+              .OUTGRIDX        Output x-derivative grid file
+              .OUTGRIDY        Output y-derivative grid file
+              .OUTGRIDZ        Output z-derivative grid file
+              .OUTGRIDHX       Output Hilbert transform x-component grid file
+              .OUTGRIDHXX      Output x-derivative of x-component grid file
+              .OUTGRIDHXY      Output y-derivative of x-component grid file
+              .OUTGRIDHXZ      Output z-derivative of x-component grid file
+              .OUTGRIDHY       Output Hilbert transform y-component grid file
+              .OUTGRIDHYX      Output x-derivative of y-component grid file
+              .OUTGRIDHYY      Output y-derivative of y-component grid file
+              .OUTGRIDHYZ      Output z-derivative of y-component grid file
+
+APPLICATION NOTES
+
+The maximum number of columns in the input grid is 8,000.   Grid projection
+information is ignored.
+
+Written by Jeff Phillips (jeff@usgs.gov) 04/07/2003.
+
+
+
+                                         71
+USGS_SFDEPTH
+
+USGS_SFDEPTH GX
+
+Estimates potential field source locations from a special function grid.
+
+Model-specific special function grids require that a specific source
+type be assumed and the field be transformed before the special function
+is calculated. Model-specific special functions include the Horizontal
+Gradient Magnitude (HGM) and the Absolute Value (ABS) of the transformed
+field. The possible transformations include Reduction-to-Pole (RTP),
+Reduction-to-Pole plus Vertical Integral (RTP+VI), Vertical Derivative
+(VD), or None. The following model-specific special functions are
+Supported (SI is structural index):
+
+Assumed_Source_Type         SI Transform   Model-Specific_Special_Function
+Vertical_Magnetic_Contact    0 RTP         HGM of RTP magnetic field
+Vertical Magnetic Sheet      1 RTP         ABS of RTP magnetic field
+Horizontal Magnetic Sheet    1 RTP+VI      HGM of VI of RTP magnetic field
+Horizontal Magnetic Line     2 RTP+VI      ABS of VI of RTP magnetic field
+Vertical Magnetic Line       2 RTP+VI      ABS of VI of RTP magnetic field
+Magnetic Dipole              3 RTP+VI      ABS of VI of RTP magnetic field
+Vertical Density Contact    -1 VD          HGM of VD of gravity field
+Vertical Density Sheet       0 VD          ABS of VD of gravity field
+Horizontal Density Sheet     0 None        HGM of gravity field
+Horizontal Density Line      1 None        ABS of gravity field
+Vertical Density Line        1 None        ABS of gravity field
+Point Mass                   2 None        ABS of gravity field
+
+Model-independent special functions include the Total Gradient (TG) and
+the Local Wavenumber (LW). These are calculated directly from the
+potential field or from a vertical integral (VI) of the potential field.
+The total gradient requires that a structural index (SI) be assumed for
+the source.
+
+INTERACTIVE PARAMETERS
+
+ Input special function grid file
+ Output post file (and database)
+ Minimum special function amplitude to use in the analysis (normally
+   zero)
+ Type of special function (ABS, HGM, TG, LW)
+ Type of feature to locate (Ridge, High, Both)
+ Assumed source type for ABS analysis
+ Assumed source type for HGM analysis
+ Assumed structural index for TG analysis
+ Order of vertical integral used for TG
+ Minimum structural index for LW analysis
+ Maximum structural index for LW analysis
+ Flag to adjust or discard LW solutions outside SI range
+ Order of vertical integral used for LW
+
+BATCH PARAMETERS
+
+
+
+
+                                           72
+USGS_SFDEPTH.INGRID         Input grid
+USGS_SFDEPTH.OUTPST         Output post file
+USGS_SFDEPTH.AMPMIN         Minimum amplitude
+USGS_SFDEPTH.TYP            Type of input grid (a,h,t,l)
+USGS_SFDEPTH.FTYP           Feature type (r,h,b)
+USGS_SFDEPTH.ATYP           Assumed source type for ABS (vms,hml,vds,
+                              hdl,vml,vdl,mdp,ptm)
+USGS_SFDEPTH.HTYP           Assumed source type for HGM (vmc,hms,vdc,
+                              hds)
+USGS_SFDEPTH.TSI            Assumed SI for TG
+USGS_SFDEPTH.TVI            Order of VI for TG
+USGS_SFDEPTH.SIMIN          Minimum SI for LW
+USGS_SFDEPTH.SIMAX          Maximum SI for LW
+USGS_SFDEPTH.ICOR           Flag for LW solutions outside range
+                              (1=adjust, 0=discard)
+USGS_SFDEPTH.LVI            Order of VI for LW
+
+APPLICATION NOTES
+
+The output post file and database have the following channels:
+ id            type of feature (ridge, high)
+ x             x(east)-coordinate of solution
+ y             y(north)-coordinate of solution
+ z1    depth   z-coordinate of solution (negative)
+ z2    g(x,y) grid value at the solution as estimated from the
+                 quadratic surface
+ z3    strike degrees clockwise from north
+ z4    e1      first eigenvalue of the curvature matrix
+ z5    e2      second eigenvalue of the curvature matrix
+ z5    si      assumed or calculated structural index
+
+The maximum number of columns on the input grid is 8,000.
+
+Reference
+
+Phillips, J.D., Hansen, R.O., and Blakely, R.J., 2007, The use of curvature in
+potential-field interpretation: Exploration Geophysics, v.38, p.111-119.
+
+Written by Jeff Phillips (jeff@usgs.gov) 9/19/2006.
+
+
+
+
+                                         73
+USGS_SURFIT
+
+USGS_SURFIT GX
+
+Fits a polynomial surface to a grid and generates the residual grid.
+
+INTERACTIVE PARAMETERS
+
+ Input grid file
+ Output residual grid file
+ Output surface grid file
+ Polynomial order (0 to 3)
+
+BATCH PARAMETERS
+
+ USGS_SURFIT.INGRID      Input grid file
+            .OUTGRID     Output residual grid file
+            .OUTSURF     Output surface grid file
+            .ORDER       Polynomial order (0 to 3)
+
+APPLICATION NOTES
+
+Removes a polynomial surface of order 0 to 3 from an input grid.
+Creates both the residual grid and the polynomial surface grid.
+No data (DUMMY) areas are maintained in the output grids.
+The maximum number of columns is 8,000. Grid projection
+information is ignored.
+
+Written by Jeff Phillips (jeff@usgs.gov) 2/21/2003.
+
+
+
+
+                                          74
+USGS_T2VECT
+
+USGS_T2VECT GX
+
+One-step computation of magnetic field components from a total field
+magnetic anomaly grid.
+
+INTERACTIVE PARAMETERS
+
+ Input total field grid file
+ Output X(north)-component grid file
+ Output Y(east)-component grid file
+ Output Z(down)-component grid file
+ Geomagnetic inclination (degrees down from horizontal)
+ Geomagnetic declination (degrees clockwise from north)
+ Order of initializing polynomial for plugging input grid
+   (0 to 3, or -1 for local median replacement)
+ Number of minimum curvature iterations for plugging input grid
+   (e.g., 100)
+ Minimum percent expansion prior to Fourier transform (e.g., 25)
+
+BATCH PARAMETERS
+
+ USGS_T2VECT.INGRID          Input total field grid
+            .OUTGRIDX        Output X-component grid
+            .OUTGRIDY        Output Y-component grid
+            .OUTGRIDZ        Output Z-component grid
+            .INCL            Geomagnetic inclination (degrees)
+            .DECL            Geomagnetic declination (degrees)
+            .IORDER          Polynomial order for plugging holes
+            .NITER           Iterations for plugging holes
+            .PCT             Minimum percent expansion
+
+APPLICATION NOTES
+
+This will not work well at low magnetic latitudes (within 20 degrees
+of the magnetic equator). The maximum number of columns in the
+expanded input grid is 16,384. Grid projection information is ignored.
+
+Written by Jeff Phillips (jeff@usgs.gov) 06/05/2003.
+
+
+
+
+                                         75
+USGS_TGRAD
+
+USGS_TGRAD GX
+
+One-step computation of the total gradient grid, and related derivative
+grids.
+
+INTERACTIVE PARAMETERS
+
+ Input potential-field grid file
+ Output total gradient grid file
+ Output horizontal gradient grid file
+ Output x(east)-derivative grid file
+ Output y(north)-derivative grid file
+ Output z(vertical)-derivative grid file
+ Order of initializing polynomial for plugging horizontal
+   derivative grids (0 to 3, or -1 for local median replacement)
+ Number of minimum curvature iterations for plugging
+   horizontal derivative grids (e.g., 100)
+ Gradient operator size (odd and < 22, normally 3 or 0 for local quadratic)
+ Gradient operator order (operator size - 1 for no filtering,
+   smaller for low-pass filtering, normally 2)
+ Minimum percent expansion prior to Fourier transform (e.g., 25)
+
+BATCH PARAMETERS
+
+ USGS_TGRAD.INGRID          Input potential-field grid
+           .OUTTGRID        Output total gradient grid
+           .OUTHGRID        Output horizontal gradient grid
+           .OUTXGRID        Output x(east)-derivative grid
+           .OUTYGRID        Output y(north)-derivative grid
+           .OUTZGRID        Output z(down)-derivative grid
+           .IORDER          Polynomial order for plugging holes
+           .NITER           Iterations for plugging holes
+           .WINDOW          Gradient operatior size
+           .POLY            Gradient operator order
+           .PCT             Minimum percent expansion
+
+APPLICATION NOTES
+
+If gradient operator size is 3 or greater, horizontal gradients are
+computed using differences (USGS_GRADCOMP.GX). If gradient operator
+order is less than gradient operator size minus one, low-pass filtering
+will result (Thurston and Brown, 1994).
+
+If gradient operator size is 0, horizontal gradients are computed using
+local quadratic surfaces (USGS_GRADXYH.GX). Gradient operator order is
+ignored.
+
+Vertical gradients are computed from the horizontal gradients using
+Hilbert transform components (Nabighian, 1984).
+
+Holes in the input grid, if any, will be plugged before processing. All
+output grids will be completely plugged, except for the z-derivative and
+the total gradient, which are masked to the input grid.
+
+
+
+                                         76
+The maximum number of columns in the input grid is 8,000.   Grid
+projection information is ignored.
+
+References:
+
+Nabighian, M.N., 1984, Toward a three-dimensional automatic
+  interpretation of potential field data via generalized
+  Hilbert transforms: Fundamental relations: Geophysics,
+  v.49, no.6, p.780-786.
+
+Thurston, J.B., and Brown, R.J., 1994, Automated source-edge
+  location with a new variable pass-band horizontal-gradient
+  operator: Geophysics, v.59, no.4, p.546-554.
+
+Written by Jeff Phillips (jeff@usgs.gov) 07/17/2007.
+
+
+
+
+                                         77
+USGS_TRANSPOS
+
+USGS_TRANSPOS GX
+
+Transpose the rows and columns of a grid.
+
+INTERACTIVE PARAMETERS
+
+ Input grid file
+ Output grid file
+
+BATCH PARAMETERS
+
+USGS_TRANSPOS.INGRID          input grid
+             .OUTGRID         output grid
+
+APPLICATION NOTES
+
+This is useful for row- or column-based processing such as filtering,
+extension, or depth analysis. The maximum number of columns in the
+input grid is 10,000.
+
+Written by Jeff Phillips (jeff@usgs.gov) 1/11/00.
+
+
+
+
+                                            78
+USGS_TRIMGRD
+
+USGS_TRIMGRD GX
+
+Removes outer grid rows and columns that contain only dummy values.
+
+INTERACTIVE PARAMETERS
+
+ Input grid file
+ Output trimmed grid file
+
+BATCH PARAMETERS
+
+USGS_TRIMGRD.INGRID         Input grid file
+USGS_TRIMGRD.OUTGRID        Output trimmed grid file
+
+APPLICATION NOTES
+
+Borders of dummy values typically result from window-based filtering.
+The output grid will be the same size or smaller than the input grid.
+The maximum number of columns in the input grid is 8,000. Grid
+projection information is ignored.
+
+Original Fortran code by V.J.S. (Tien) Grauch.
+GX written by Jeff Phillips (jeff@usgs.gov) 12/26/2006.
+
+
+
+
+                                          79
+USGS_UPCONT
+
+USGS_UPCONT GX
+
+One-step computation of an upward (or downward) continued field
+from a potential-field grid.
+
+INTERACTIVE PARAMETERS
+
+ Input potential-field anomaly grid file
+ Output upward (or downward) continued grid file
+ Continuation distance (positive up)
+ Order of initializing polynomial for plugging input
+   grid (0 to 3, or -1 for local median replacement)
+ Number of minimum curvature iterations for plugging
+   input grid (e.g., 100)
+ Minimum percent expansion prior to Fourier transform (e.g., 25)
+
+BATCH PARAMETERS
+
+ USGS_UPCONT.INGRID          Input gravity grid
+            .OUTGRID         Output pseudo-magnetic grid
+            .DISTANCE        Continuation distance (positive up)
+            .IORDER          Polynomial order for plugging holes
+            .NITER           Iterations for plugging holes
+            .PCT             Minimum percent expansion
+
+APPLICATION NOTES
+
+Assumes the input data are on a flat, horizontal surface. Upward
+continuation is stable, but downward continuation may require
+additional low-pass filtering. The maximum number of columns in
+the expanded input grid is 16,384. Grid projection information is
+ignored.
+
+Written by Jeff Phillips (jeff@usgs.gov) 06/10/2003.
+
+
+
+
+                                         80
+USGS_VDFIL
+
+USGS_VDFIL GX
+
+Computes the vertical derivative in the Fourier domain from input
+Fourier transform grid files of the two horizontal derivatives.
+
+Use USGS_FTFWD.GX to generate the input Fourier transform grid files.
+Use USGS_FTINV.GX to inverse Fourier transform the output grid file.
+
+INTERACTIVE PARAMETERS
+
+ Input x(east)-derivative Fourier transform grid file
+ Input y(north)-derivative Fourier transform grid file
+ Output z(vertical)-derivative Fourier transform grid file
+
+BATCH PARAMETERS
+
+USGS_VDFIL.INFFTX        input x-derivative Fourier transform grid
+USGS_VDFIL.INFFTY        input y-derivative Fourier transform grid
+USGS_VDFIL.OUTFFTZ       output z-derivative Fourier transform grid
+
+APPLICATION NOTES
+
+The vertical derivative is computed from the horizontal derivatives
+using Hilbert transform components (Nabighian, 1984).
+
+Reference:
+
+Nabighian, M.N., 1984, Toward a three-dimensional automatic
+  interpretation of potential field data via generalized
+  Hilbert transforms: Fundamental relations: Geophysics,
+  v.49, no.6, p.780-786.
+
+Written by Jeff Phillips (jeff@usgs.gov) 12/27/2002.
+
+
+
+
+                                          81
+USGS_VERTINT
+
+USGS_VERTINT GX
+
+One-step computation of a vertical integral or derivative from a
+potential-field grid.
+
+INTERACTIVE PARAMETERS
+
+ Input potential-field anomaly grid file
+ Output vertical integral or derivative grid file
+ Order of integral or derivative (positive for derivative)
+ Order of initializing polynomial for plugging input
+   grid (0 to 3, or -1 for local median replacement)
+ Number of minimum curvature iterations for plugging
+   input grid (e.g., 100)
+ Minimum percent expansion prior to Fourier transform (e.g., 25)
+
+BATCH PARAMETERS
+
+ USGS_VERTINT.INGRID         Input potential-field grid file
+            .OUTGRID         Output vertical integral or derivative
+                               grid file
+            .ORDER           Order of derivative or integral
+                               (positive for derivative)
+            .IORDER          Polynomial order for plugging holes
+            .NITER           Iterations for plugging holes
+            .PCT             Minimum percent expansion
+
+APPLICATION NOTES
+
+Assumes the data are on a flat horizontal surface. Non-integer
+orders are supported. The maximum column dimension of the expanded
+input grid is 16,384. Grid projection information is ignored.
+
+Written by Jeff Phillips (jeff@usgs.gov) 06/10/2003.
+
+
+
+
+                                         82
+Appendix 2: Converting FORTRAN code to a Geosoft GX using
+the GNU g77 and gcc compilers
+       To convert Fortran code to a dynamic link library (dll) that can be called from a GX, Geosoft
+
+recommends using their version of the Fortran-to-C conversion program, f2c.exe, and the Microsoft
+
+Visual C++ compiler. This approach is described in the Geosoft GX Developer’s Manual, available at
+
+http://www.geosoft.com, and was outlined in the version 1.0 GX release (Phillips and others, 2003).
+
+       An alternative approach for compiling dynamic link libraries from Fortran code for use with
+
+compiled GX’s has been developed by Jim Roy and Tom Popowski of Northwest Geophysical
+
+Associates. This approach does not require the use of either f2c or Microsoft Visual C++. Instead, it
+
+uses the free, open-source compilers g77 and gcc. The object code placed in the dll is compiled directly
+
+from the Fortran source code along with the ancilliary C source code.
+
+       To use this alternate approach, the GX developer must install the free compilers and utilities of
+
+the open-source software package MinGW along with the command-line window system MSYS
+
+(described at http://www.mingw.org/ and available at http://sourceforge.net/). Also required are the free
+
+Geosoft GX Developer Toolkit (available at http://www.geosoft.com/downloads/), and either the free
+
+Geosoft Viewer (also available at http://www.geosoft.com/downloads/), or a licensed version of Geosoft
+
+Oasis montaj. In summary, the GX developer will need:
+
+           1. Either Geosoft Oasis montaj (licensed version) or the free Geosoft Viewer.
+
+           2. The free GX Developer software from Geosoft.
+
+           3. The free MinGW and MSYS software packages from sourceforge.net.
+
+           4. A text editor such as PFE32.EXE or Notepad.
+
+
+
+
+                                                   83
+INSTALLATION AND SETUP
+
+
+       The Geosoft web site (http://www.geosoft.com) contains instructions for downloading and
+
+installing the current Geosoft Viewer (required if a licensed Oasis version is not installed) and the
+
+current GX Development software.
+
+       The MinGW and MSYS home page (http://www.mingw.org/) contains much useful information,
+
+but the current software versions are available only from sourceforge (http://sourceforge.net/). The
+
+installation files for the current versions are MinGW-5.1.3.exe and MSYS-1.0.10.exe. MinGW should
+
+be installed first, making sure g77 and g++ are checked and make is not checked. The installation will
+
+create a directory, C:\MinGW, containing a minimalist GNU system. MSYS should be installed next,
+
+resulting in a directory, C:\msys\1.0\, containing the user file system.
+
+       A text editor will also be required. Two options are Windows Notepad or PFE, currently
+
+available from http://www.lancs.ac.uk/people/steveb/cpaap/pfe/default.htm. Either can be accessed
+
+from a shortcut on the Windows desktop.
+
+
+GETTING STARTED
+
+       GX development can be done under the /home/user_name directory of MSYS. You should be in
+
+this directory when you start MSYS by clicking on the blue “M” icon on your desktop. Create a new
+
+subdirectory called gxdev and move into it with the commands:
+
+                       mkdir gxdev
+
+                       cd gxdev
+
+This new directory will eventually contain:
+
+           1. Some library files, such as libGEODIST6.4.a and libGEOGX6.4.a.
+
+           2. A file called Makefile that we will use to create the libraries.
+
+
+                                                     84
+           3. The C source-code file wfuncs.c, containing the common source code for the wrapper
+
+               functions called by the Fortran code to access the Geosoft library functions.
+
+           4. The C header file wrappers.h, containing the definitions for the wrapper functions.
+
+           5. Subdirectories for each GX to be developed.
+
+
+
+
+STEP 0: CREATING THE LIBRARIES AND FORTRAN WRAPPER FUNCTIONS
+
+       The library files geogx.dll and geodist.dll, as supplied by Geosoft, cannot be used within the
+
+MinGW system. They must be converted to MinGW-compatible libraries. For GX Developer, version
+
+6.4, this is a matter of running make within the MSYS window on the makefile of <Table A1>, which
+
+has the name Makefile. This makefile will need to be modified for later versions of GX Developer,
+
+hopefully only by changing the line assigning the OMVERS variable. Note that some long lines in
+
+<Table A1> have been wrapped.
+
+       I have chosen to use a single set of wrapper functions for all of my GX code. These wrapper
+
+functions are contained in the files wfuncs.c and wrappers.h, which reside in the gxdev directory. As
+
+new wrapper functions are needed, they can be added to these files. If old wrapper functions need to be
+
+modified, they should be thoroughly tested on all previously compiled GX code. If Geosoft makes
+
+changes to their basic library functions, as they did with the release of version 6.3, some wrapper
+
+functions may need to be rewritten.
+
+
+
+
+                                                    85
+CONVERTING AN EXAMPLE FORTRAN PROGRAM TO A GX
+
+       We will be converting an example Fortran program (curv4.for) that reads a USGS binary grid
+
+file, operates on the grid file, and outputs a USGS binary post file. The resulting GX (usgs_curv4.gx)
+
+will read any grid file format supported by Geosoft, operate on the grid file, and output a USGS binary
+
+post file. It then calls another GX, either usgs_impost.gx for the free viewer or usgs_openpost.gx for
+
+the licensed version, to import the post file into a Geosoft database. The compiled GX files
+
+usgs_impost.gx and usgs_openpost.gx are included in the /gx directory on the ftp site. Copy them to
+
+the \Program Files\Geosoft\ Oasis montaj\ gx directory or to the \Program Files\Geosoft\ Oasis
+
+montaj Viewer\ gx directory on your computer. The compiled dynamic-link library files
+
+usgs_impost.dll and usgs_openpost.dll are included in the /binx directory on the ftp site. Copy them
+
+to the \Program Files\Geosoft\ Oasis montaj\ bin directory or to the \Program Files\Geosoft\ Oasis
+
+montaj Viewer\ bin directory on your computer. The source code files for usgs_curv4.gx are
+
+included in the /src/usgs_curv4 subdirectory on the ftp site.
+
+       Start by creating a working directory under your gxdev directory called usgs_curv4 with the
+
+command:
+                      mkdir usgs_curv4
+
+This directory will contain the many files needed to create the GX. All GX’s need:
+
+           1. A GX resource file that defines the user interface. This file has the suffix .grc and is
+
+               compiled into a .gr file and a .grh file using the Geosoft grc compiler.
+
+           2. An rtf help file, created using WordPad, that is compiled along with the resource file.
+
+           3. A GX source code file with the suffix .gxc. This file is compiled, along with the output
+
+               of the grc compiler, using the Geosoft gxc compiler to create the .gx file.
+
+
+
+
+                                                    86
+In addition, GX’s that use Fortran code need:
+
+           1. A Fortran source code file that has been modified to (a) remove all user interaction, (b)
+
+               replace file I/O with calls to Geosoft wrapper functions, and (c) replace the main routine
+
+               with a subroutine. This file has the suffix .f.
+
+           2. The C source code file for the wrapper functions. This file, which we call wfuncs.c, is
+
+               kept in the gxdev directory.
+
+           3. The C header file for the wrapper functions. This file, which we call wrappers.h, is also
+
+               kept in the gxdev directory.
+
+           4. A GX header file with suffix .gxh containing the prototype for the Fortran function
+
+               called from the GX.
+
+           5. Another C source code file called gxx_<gx_name>.c that contains the wrapper function
+
+               called by the GX to access the Fortran code in the dynamic link library.
+
+           6. A file called Makefile for compiling the dynamic link library.
+
+
+
+STEP 1: EDITING THE FORTRAN SOURCE CODE
+
+       The first file needed is the original Fortran source file curv4.for. Copy it from the
+
+\src\usgs_curv4 subdirectory of the ftp site to your usgs_curv4 subdirectory. We will be editing this
+
+file to remove all user interaction, to replace all file I/O with calls to Fortran wrapper functions, and to
+
+convert it into a subroutine. The edited file will be called usgs_curv4.f, and it is also available on the
+
+ftp site. Here we examine the edited file a section at a time. The changes to the file are shown in
+
+uppercase bold text.
+
+       In this first section of code (<Table A2>), we have turned the program into a subroutine, using
+
+parameters in the call list to replace filenames and other parameters previously entered interactively by
+
+
+                                                      87
+the user. The input character strings must be declared character*(*). Instead of testing for dvals, the
+
+USGS dummy value, we will be testing for the Geosoft DUMMY. The file unit numbers INF and IOF
+
+are initialized to zero. I have not found a successful way to pass an array to the subroutine, so the
+
+ITYPE array elements are passed as individual parameters.
+
+        In this second section of code (<Table A3>), the input grid file is opened using a wrapper
+
+function. The grid header is read using another wrapper function. If the grid contains too many
+
+columns, error message number 5007 in file usgs.err is displayed with the actual and maximum number
+
+of columns. The file usgs.err is contained on the ftp site in the /ger directory. It should be copied to
+
+either the \Program Files\Geosoft\ Oasis montaj\ ger subdirectory or the \Program Files\Geosoft\
+
+Oasis montaj Viewer\ ger subdirectory.
+
+        In this section (<Table A4>), the output post file is opened using a wrapper function. The first
+
+two rows of the input grid are read into the data array using another wrapper function.
+
+        Here (<Table A5>), a progress indicator is created and initialized using wrapper functions. The
+
+indicator is updated during each iteration of loop 2000 using another wrapper function. The next row of
+
+the input grid is read using a wrapper function.
+
+        Here (<Table A6>), the test for dvals is replaced by a test for the Geosoft DUMMY value. The
+
+output post record is written by a wrapper function. Not much else is changed in the data processing
+
+code.
+
+        In this final section (<Table A7>), another post record is written using a wrapper function. The
+
+progress indicator is updated to 100% at the end of all processing. If the input and output files exist,
+
+they are closed using wrapper functions. We are done with the Fortran code.
+
+
+
+
+                                                     88
+STEP 2: CREATING THE USER INTERFACE
+
+        The next step is to design the user interface for the GX. This is done in a resource file called
+
+ usgs_curv4.grc, displayed in <Table A8> and available on the ftp site. The interface uses two
+
+ filename entry boxes for the input grid file and the output post file, and five list entries for the options.
+
+ There are three buttons – OK, which returns 0, Cancel, which returns -1, and Help, which calls the help
+
+ resource text file usgs_curv4.rtf.
+
+        Another common interface element not seen in this example is the text entry box. Here is an
+
+ example:
+                        EDIT,,,10,"Minimum amplitude",,REAL,-1.e30
+
+        Before we forget, let’s create the help file, usgs_curv4.rtf (<Table A9>). This is just a text file
+
+ that has been converted to RTF format using Wordpad. You can copy it from the ftp site.
+
+
+
+
+ STEP 3: CREATING THE GX SOURCE CODE
+
+        Next we will create the GX source code file, usgs_curv4.gxc (<Table A10>). Like all the
+
+ source code, this can be found on the ftp site.
+
+        The example text entry box, which was not used in the resource file, has been carried through in
+
+ the gxc code using lines that have been commented out. The GX should create and open a new
+
+ database, so there is no need for a closing message. For more information on .grc and .gxc file formats,
+
+ see the GX Developer Users Guide and Reference Manual available from the Geosoft website. Details
+
+ on the use of Geosoft library functions, such as DisplayMessage_SYS, can be found in C:\Program
+
+ Files\Geosoft\GX Developer\gx\include\*.gxh.
+
+        The GX source code file requires a GX header file called usgs_curv4.gxh (<Table A11>).
+
+
+
+
+                                                       89
+STEP 4: COMPILING THE GX
+
+       At this point, we can compile the GX resource and help files using:
+
+                       grc usgs_curv4
+
+       Then we can compile the GX using:
+
+                       gxc usgs_curv4
+
+This assumes that the PATH environment variable contains the location of the grc and gxc compilers,
+
+C:\Program Files\Geosoft\GX Developer\gx\bin. The output of the gxc compiler is the file
+
+usgs_curv4.gx. This can be copied to the Oasis montaj gx directory using Windows drag-and-drop or
+
+by using the MSYS command
+
+       cp usgs_curv4.gx /c/Program\ Files/Geosoft/Oasis\ montaj\ Viewer/gx
+
+for the viewer, or
+
+       cp usgs_curv4.gx /c/Program\ Files/Geosoft/Oasis\ montaj/gx
+
+for the licensed version.
+
+
+
+STEP 5: CREATING THE DYNAMIC LINK LIBRARY
+
+       To create the dynamic link library (DLL), you will need the libraries, libGEOGX6.4.a and
+
+libGEODIST6.4.a, which are located in the gxdev directory and which were created in Step 0 above.
+
+You will need the edited Fortran source code file, usgs_curv4.f, located in the gxdev/usgs_curv4
+
+subdirectory and created in Step 1 above, and the wrapper function source code file wfuncs.c, located in
+
+the gxdev directory. You will need to edit the wrapper function header file, wrappers.h in the gxdev
+
+directory to include the definition for the new curv4 wrapper function just before the final #endif
+
+
+
+
+                                                    90
+(<Table A12>). You will also need one more source code file called gxx_curv4.c in the
+
+gxdev/usgs_curv4 subdirectory (<Table A13>).
+
+       The final file needed is a makefile, called Makefile, which resides in the gxdev/usgs_curv4
+
+subdirectory (<Table A14>). This makefile is set up to compile the DLL and copy it to the bin directory
+
+of the Geosoft viewer. You can change the final destination to the bin directory of the licensed version
+
+by using the line that is commented out. Run the makefile using the command make in the MSYS
+
+window while in the gxdev/usgs_curv4 subdirectory.
+
+
+
+STEP 6: TESTING AND DEBUGGING
+
+       Fire up Oasis montaj or the Oasis montaj Viewer and test the GX. You will need to authorize
+
+the GX the first time you run it. At this point, several things can happen:
+
+           1. The GX can run and produce the desired output. Congratulations, you have created a
+
+               successful GX!
+
+           2. The GX can exit without producing output or messages.
+
+           3. The GX can produce an error message.
+
+           4. The GX can crash Oasis.
+
+Debugging a GX is difficult. There are often many source code files involved, and an error in any one
+
+of them, even as insignificant as a missing semicolon, can lead to failure. Problems involving syntax
+
+errors can be avoided by referring to the many successful examples on the ftp site. Problems involving
+
+logic errors in the Fortran code can be tracked down through a combination of:
+
+   1. Placing go to 9999 statements in various places in the Fortran code, until you can isolate the
+
+       loop or subroutine generating the problem.
+
+
+
+
+                                                    91
+2. Using error wrapper functions to print out the values of suspect variables. For example, error
+
+   number 6001 in the usgs.err file will print the values of up to five variables, using code such as
+           call RegisterErr_WF(6001,’usgs’)
+           call SetErrParmR_WF(1,radius)
+           call SetErrParmI_WF(2,indx)
+
+
+
+
+                                                92
+Table A1.   Listing of Makefile for creating the Geosoft libraries.
+
+################################################################
+#
+#   Prepare Geosoft libraries for use with MinGW compilers
+#
+################################################################
+#
+#   The basic idea here is to convert Geosoft's geogx.dll and
+#   geodist.dll ( MSVC import libraries?? ) to libGEOGX.a and
+#   libGEODIST.a ( MinGW/gcc style import libraries ). First
+#   use nm to extract the symbol names from geogx.lib and
+#   geodist.lib to GEOGX.def and GEODIST.def. Second build the
+#   .a files using dlltool.
+#
+#   To use, name this file Makefile and move it to a directory
+#   where you can run the MSYS command 'make' on it.
+#
+#   Original code from Jim Roy (jim@nga.com) and Tom Popowski
+#     (tom@nga.com), Northwest Geophysical Associates
+#   Assembled into a single makefile by Jeff Phillips
+#       (jeff@usgs.gov), U.S. Geological Survey
+#
+################################################################
+
+OMVERS = 6.4
+
+GLIBDIR = /c/Program\ Files/Geosoft/GX\ Developer/apps/lib
+GDLLDIR = /c/Program\ Files/Geosoft/GX\ Developer/apps/dll
+
+GEOGX_IMP = $(GLIBDIR)/geogx.lib
+#GEOGX_DLL = $(GDLLDIR)/geogx.dll
+GEOGX_DLL = geogx.dll
+GEODIST_IMP = $(GLIBDIR)/geodist.lib
+#GEODIST_DLL = $(GDLLDIR)/geodist.dll
+GEODIST_DLL = geodist.dll
+
+GEOGX_LIB   = GEOGX$(OMVERS)
+GEOGX_DEF   = $(GEOGX_LIB).def
+GEODIST_LIB = GEODIST$(OMVERS)
+GEODIST_DEF = $(GEODIST_LIB).def
+
+all dlls LINKLIBS:    lib$(GEOGX_LIB).a lib$(GEODIST_LIB).a
+
+lib$(GEOGX_LIB).a: $(GEOGX_DEF) $(GEOGX_IMP)
+      @echo "building lib$(GEOGX_LIB).a"
+      dlltool --dllname $(GEOGX_DLL) --def $(GEOGX_DEF) --output-lib
+lib$(GEOGX_LIB).a
+
+lib$(GEODIST_LIB).a: $(GEODIST_DEF) $(GEODIST_IMP)
+
+ifeq ($(OMVERS),5.1.8)
+            echo "not building lib$(GEODIST_LIB).a"
+else
+            @echo "building lib$(GEODIST_LIB).a"
+
+
+
+                                                  93
+            dlltool --dllname $(GEODIST_DLL) --def $(GEODIST_DEF) --output-lib
+lib$(GEODIST_LIB).a
+endif
+
+$(GEOGX_DEF): $(GEOGX_IMP)
+      echo "building $(GEOGX_DEF)"
+      echo EXPORTS > $(GEOGX_DEF)
+#     nm --demangle --defined-only $(GEOGX_IMP) | grep ' T ' | grep -v '.text' |
+sed 's/.* T //' >> $(GEOGX_DEF)
+      nm --demangle --defined-only $(GEOGX_IMP) | grep ' T \w' | sed 's/.* T //' |
+egrep -v '^[A-Z0-9]{7}_\w{23}' >> $(GEOGX_DEF)
+#     You may need to manually edit the .def file at this point
+
+$(GEODIST_DEF): $(GEODIST_IMP)
+ifeq ($(OMVERS),5.1.8)
+      echo "not building $(GEODIST_DEF)"
+else
+      echo "building $(GEODIST_DEF)"
+      echo EXPORTS > $(GEODIST_DEF)
+#     nm --demangle --defined-only $(GEODIST_IMP) | grep ' T ' | grep -v '.text' |
+sed 's/.* T //' >> $(GEODIST_DEF)
+      nm --demangle --defined-only $(GEODIST_IMP) | grep ' T \w' | sed 's/.* T //'
+| egrep -v '^\?' >> $(GEODIST_DEF)
+#     You may need to manually edit the .def file at this point
+endif
+
+clean:
+      rm -f $(GEOGX_DEF)
+      rm -f lib$(GEOGX_LIB).a
+      rm -f $(GEODIST_DEF)
+      rm -f lib$(GEODIST_LIB).a
+
+
+
+
+                                         94
+Table A2.   Part 1 of the edited Fortran source code file, usgs_curv4.f.
+
+       SUBROUTINE CURV4(IFILE,OFILE,ITYPE1,ITYPE2,ITYPE3,ITYPE4,ITYPE5,
+     1                  IERR)
+C UPPERCASE TEXT INDICATES LINES ADDED FOR GX CONVERSION
+C UPPERCASE C IN COLUMN 1 INDICATES LINES COMMENTED OUT
+C LOWERCASE C IN COLUMN 1 INDICATES PRE-EXISTING COMMENT
+      parameter(MAXCOL=8000)
+C       character ifile*80,ofile*80,id*56,sta*8,prompt*80
+       CHARACTER*(*) IFILE,OFILE
+       CHARACTER STA*8
+      dimension f(MAXCOL,3),post(8),b(9),d(6),itype(5)
+C       data ddval/1.e30/
+       DATA DUMMY/-1.E32/
+       DATA INF/0/,IOF/0/
+       DATA ITYPE/5*0/
+       ITYPE(1)=ITYPE1
+       ITYPE(2)=ITYPE2
+       ITYPE(3)=ITYPE3
+       ITYPE(4)=ITYPE4
+       ITYPE(5)=ITYPE5
+
+
+
+
+                                                 95
+Table A3.   Part 2 of the edited Fortran source code file.
+
+C       call pfinit('curv4')
+C       call user('curv4')
+C       call askin
+c
+C       ifile=' '
+C       prompt='Data grid'
+C       call askc(prompt,ifile,ierr)
+C       if(ierr.lt.0) stop
+C       call gopen(10,ifile,'old','read',ierr)
+C       if(ierr.ne.0) stop 'error opening file'
+C       call gheader('r',10,id,nc,nr,xo,dx,yo,dy,ierr)
+C       if(ierr.ne.0) stop 'error reading header'
+C       if(nc.gt.MAXCOL) stop 'too many columns'
+       CALL OPENGRID_WF(IFILE,INF,IERR)
+       IF(IERR.NE.0) GO TO 9999
+       CALL GETGRIDINFO_WF(INF,NC,NR,XO,YO,DX,DY,ROT,IERR)
+       IF(IERR.NE.0) GO TO 9999
+       IF(NC.GT.MAXCOL) THEN
+         CALL REGISTERERR_WF(5007,'USGS')
+         CALL SETERRPARMI_WF(1,NC)
+         CALL SETERRPARMI_WF(2,MAXCOL)
+         IERR=1
+         GOTO 9999
+       ENDIF
+       xmax=xo+(nc-1)*dx
+       ymax=yo+(nr-1)*dy
+
+
+
+
+                                                  96
+Table A4.      Part 3 of the edited Fortran source code file.
+
+       type='r'
+c        print*,'Get highs, lows, saddles, or all_extrema; ridges, troughs, or all'
+c        prompt=' (h,l,s,e,r,t,a)?'
+c        call askc(prompt,type,ierr)
+c        call gccvc(type,2)
+c        ampin=-1.e38
+c        prompt='Minimum amplitude?'
+c        call askf4(prompt,ampin,err)
+c        ampax=1.e38
+c        prompt='Maximum amplitude?'
+c        call askf4(prompt,ampax,err)
+C           prompt='find ridges?'
+C           ians=0
+C           call aski4l(prompt,ians,ierr)
+C           itype(1)=ians
+C           prompt='find troughs?'
+C           ians=0
+C           call aski4l(prompt,ians,ierr)
+C           itype(2)=ians
+C           prompt='find highs?'
+C           ians=0
+C           call aski4l(prompt,ians,ierr)
+C           itype(3)=ians
+C           prompt='find lows?'
+C           ians=0
+C           call aski4l(prompt,ians,ierr)
+C           itype(4)=ians
+C           prompt='find saddles?'
+C           ians=0
+C           call aski4l(prompt,ians,ierr)
+C           itype(5)=ians
+
+C        call xopen1(14,'curv4.pst','unknown','write',8,ierr)
+       CALL NEWPOSTFILE_WF(OFILE,IOF,IERR)
+       IF(IERR.NE.0) GO TO 9999
+C        call grow('r',10,1,f(1,1),nc,ierr)
+C        call grow('r',10,2,f(1,2),nc,ierr)
+       CALL GETROW_WF(INF,1,NC,F(1,1),IERR)
+       IF(IERR.NE.0) GO TO 9999
+       CALL GETROW_WF(INF,2,NC,F(1,2),IERR)
+       IF(IERR.NE.0) GO TO 9999
+
+
+
+
+                                                     97
+Table A5.   Part 4 of the edited Fortran source code file.
+
+C
+C ADD A PROGRESS INDICATOR
+C
+      CALL PROGNAME_WF('PROCESSING GRID',1)
+      CALL PROGUPDATE_WF(0)
+       nsol=0
+c main loop through rows
+       do 2000 j=2,nr-1
+         CALL PROGUPDATEL_WF(J-1,NR)
+C         call grow('r',10,j+1,f(1,3),nc,ierr)
+         CALL GETROW_WF(INF,J+1,NC,F(1,3),IERR)
+         IF(IERR.NE.0) GO TO 9999
+         yc=yo+(j-1)*dy
+
+
+
+
+                                                  98
+Table A6.   Part 5 of the edited Fortran source code file.
+
+c main loop through columns
+         do 1000 i=2,nc-1
+           xc=xo+(i-1)*dx
+           b(1)=f(i-1,1)
+           b(2)=f(i,1)
+           b(3)=f(i+1,1)
+           b(4)=f(i-1,2)
+           b(5)=f(i,2)
+           b(6)=f(i+1,2)
+           b(7)=f(i-1,3)
+           b(8)=f(i,3)
+           b(9)=f(i+1,3)
+           do k=1,9
+C              if(b(k).ge.ddval) go to 1000
+              IF(B(K).EQ.DUMMY) GO TO 1000
+           enddo
+      d(1)=(5.*b(5)+2.*(b(2)+b(4)+b(6)+b(8))-(b(1)+b(3)+b(7)+b(9)))/9.
+      d(2)=(b(3)+b(6)+b(9)-(b(1)+b(4)+b(7)))/(6.*dx)
+      d(3)=(b(7)+b(8)+b(9)-(b(1)+b(2)+b(3)))/(6.*dy)
+      d(4)=(b(1)+b(3)+b(4)+b(6)+b(7)+b(9)-2.*(b(2)+b(5)+b(8)))/
+     1     (6.*dx*dx)
+      d(5)=(b(1)-b(3)-b(7)+b(9))/(4.*dx*dy)
+      d(6)=(b(1)+b(2)+b(3)+b(7)+b(8)+b(9)-2.*(b(4)+b(5)+b(6)))/
+     1     (6.*dy*dy)
+c Get the eigenvalues of the curvature matrix
+        bb=d(4)+d(6)
+        term=(d(4)-d(6))**2+d(5)**2
+        e1=bb+sqrt(term)
+        e2=bb-sqrt(term)
+c        print*,'eigenvalues=',e1,e2
+c get the corresponding eigenvectors
+        xx1=1.0
+        if(d(5).ne.0.0) then
+          yy1=(e1-2.*d(4))/d(5)
+        else if(e1.ne.2.*d(6)) then
+          yy1=d(5)/(e1-2.*d(6))
+        else
+          yy1=1.e38
+        endif
+        xx2=1.0
+        if(d(5).ne.0.0) then
+          yy2=(e2-2.*d(4))/d(5)
+        else if(e2.ne.2.*d(6)) then
+          yy2=d(5)/(e2-2.*d(6))
+        else
+          yy2=1.e38
+        endif
+c        print*,'eigenvectors=',xx1,yy1,xx2,yy2
+c fix infinite eigenvectors
+        if(yy1.eq.1.e38) then
+          xx1=0.0
+          yy1=1.0
+        endif
+        if(yy2.eq.1.e38) then
+          xx2=0.0
+          yy2=1.0
+        endif
+c get the strike
+        if(e1.eq.e2) then
+          s=1.e38
+
+
+
+                                                  99
+        else
+          if(abs(e1).gt.abs(e2)) then
+            s=57.29578*atan2(xx2,yy2)
+          else
+            s=57.29578*atan2(xx1,yy1)
+          endif
+          if(s.gt.90.) s=s-180.
+          if(s.lt.-90.) s=s+180.
+        endif
+c        print*,'strike=',s
+c Find the critical point
+        if(abs(e1).eq.abs(e2)) then
+c          print*,'no critical point'
+          go to 500
+        else if(abs(e1).gt.abs(e2)) then
+          den=(d(4)*xx1**2+d(5)*xx1*yy1+d(6)*yy1**2)
+          if(den.eq.0.0) then
+c             print*,'no critical point'
+            go to 500
+          else
+            t0=-0.5*(d(2)*xx1+d(3)*yy1)/den
+            x0=xx1*t0
+            y0=yy1*t0
+          endif
+        else
+          den=(d(4)*xx2**2+d(5)*xx2*yy2+d(6)*yy2**2)
+          if(den.eq.0.0) then
+c             print*,'no critical point'
+            go to 500
+          else
+            t0=-0.5*(d(2)*xx2+d(3)*yy2)/den
+            x0=xx2*t0
+            y0=yy2*t0
+          endif
+        endif
+        if(x0.lt.-dx/2..or.x0.gt.dx/2.) go to 500
+        if(y0.lt.-dy/2..or.y0.gt.dy/2.) go to 500
+c        print*,'critical point=',xc,yc
+        g0=d(1)+d(2)*x0+d(3)*y0+d(4)*x0*x0+d(5)*x0*y0+d(6)*y0*y0
+c        write(10) xc,yc,g
+          if(e1.gt.0.0.and.e1.gt.abs(e2)) then
+            sta='trough '
+            post(8)=2.0
+            if(itype(2).eq.0) go to 500
+          else if(e2.gt.0.0.and.e2.gt.abs(e1)) then
+            sta='trough '
+            post(8)=2.0
+            if(itype(2).eq.0) go to 500
+          else if(e1.lt.0.0.and.abs(e1).gt.abs(e2)) then
+            sta='ridge    '
+            post(8)=1.0
+            if(itype(1).eq.0) go to 500
+          else if(e2.lt.0.0.and.abs(e2).gt.abs(e1)) then
+            sta='ridge    '
+            post(8)=1.0
+            if(itype(1).eq.0) go to 500
+          endif
+c get the maximum curvature
+c          if(abs(e1).gt.abs(e2)) then
+c             rat=yy1/xx1
+c          else
+c             rat=yy2/xx2
+c          endif
+c          ak=2.0*(d(4)+(d(5)+d(6)*rat)*rat)
+
+
+
+                                       100
+c get the depth
+c          zz=-2.0*g0/e2
+c          if(zz.ge.0.0) then
+c            zz=-sqrt(zz)
+c          else
+c            go to 500
+c          endif
+          post(1)=x0+xc
+          post(2)=y0+yc
+          post(3)=g0
+          post(4)=zz
+          post(5)=s
+          post(6)=e1
+          post(7)=e2
+          post(4)=abs(post(6)/post(7))
+c          post(8)=0.0
+C          call xiopst('w',14,sta,post,8,ierr)
+          CALL WRITEPOST_WF(IOF,STA,POST(1),POST(2),POST(3),IERR)
+          IF(IERR.NE.0) GO TO 9999
+          nsol=nsol+1
+
+
+
+
+                                       101
+Table A7.   Part 6 of the edited Fortran source code file.
+
+c Find the extremum
+500    den=d(5)**2-4.*d(4)*d(6)
+       if(den.eq.0.0) then
+c         print*,'no extremum'
+         go to 1000
+       else
+         xe=(2.*d(6)*d(2)-d(3)*d(5))/den
+         ye=(2.*d(4)*d(3)-d(5)*d(2))/den
+         if(xe.lt.-dx/2..or.xe.gt.dx/2.) go to 1000
+         if(ye.lt.-dy/2..or.ye.gt.dy/2.) go to 1000
+         ge=d(1)+d(2)*xe+d(3)*ye+d(4)*xe*xe+d(5)*xe*ye+d(6)*ye*ye
+c         write(10) xe,ye,g
+         if(e1.lt.0.0.and.e2.lt.0.0) then
+           sta='high     '
+           post(8)=3.0
+           if(itype(3).eq.0) go to 1000
+         else if(e1.gt.0.0.and.e2.gt.0.0) then
+           sta='low      '
+           post(8)=4.0
+           if(itype(4).eq.0) go to 1000
+         else if(e1*e2.lt.0.0) then
+           sta='saddle '
+           post(8)=5.0
+           if(itype(5).eq.0) go to 1000
+         endif
+       endif
+           post(1)=xe+xc
+           post(2)=ye+yc
+c            if(post(1).lt.xo.or.post(1).gt.xmax) go to 1000
+c            if(post(2).lt.yo.or.post(2).gt.ymax) go to 1000
+           post(3)=ge
+c            post(4)=0.0
+           post(5)=s
+           post(6)=e1
+           post(7)=e2
+           post(4)=abs(post(6)/post(7))
+c            post(8)=0.0
+C            call xiopst('w',14,sta,post,8,ierr)
+            CALL WRITEPOST_WF(IOF,STA,POST(1),POST(2),POST(3),IERR)
+            IF(IERR.NE.0) GO TO 9999
+           nsol=nsol+1
+  1000    continue
+c End of loop through columns
+          do 1500 i=1,nc
+             f(i,1)=f(i,2)
+             f(i,2)=f(i,3)
+  1500    continue
+  2000    continue
+          CALL PROGUPDATE_WF(100)
+c End of loop through rows
+C          close(10)
+C          call xclose(14,'keep')
+C          print*,nsol,' solutions written to curv4.pst'
+C          stop
+  9999    CONTINUE
+          IF(INF.NE.0) CALL CLOSEGRID_WF(INF,IERR)
+          IF(IOF.NE.0) CALL CLOSEPOSTFILE_WF(IOF,IERR)
+          RETURN
+          end
+
+
+
+
+                                                 102
+Table A8.   The GX resource source code file, usgs_curv4.grc.
+
+// USGS_CURV4.GRC
+//---------------------------------------------------------------------
+RESOURCE,FORM,CURV4,"Grid Local Extrema from Curvature Analysis",-1
+FEDIT,,,40,"Input grid",R,OLD,,,*.grd
+FEDIT,,,40,"Output post file",R,,,,*.pst
+LEDIT,,,15,"Find Ridges",R,FORCE,"Y",RIDGES
+LEDIT,,,15,"Find Troughs",R,FORCE,"N",TROUGHS
+LEDIT,,,15,"Find Highs",R,FORCE,"N",HIGHS
+LEDIT,,,15,"Find Lows",R,FORCE,"N",LOWS
+LEDIT,,,15,"Find Saddles",R,FORCE,"N",SADDLES
+EBUT,&OK,0
+EBUT,&Cancel,-1,CANCEL
+HBUT,&Help,help
+RESOURCE,LIST,RIDGES
+ITEM,"Y",1
+ITEM,"N",0
+RESOURCE,LIST,TROUGHS
+ITEM,"Y",1
+ITEM,"N",0
+
+RESOURCE,LIST,HIGHS
+ITEM,"Y",1
+ITEM,"N",0
+RESOURCE,LIST,LOWS
+ITEM,"Y",1
+ITEM,"N",0
+RESOURCE,LIST,SADDLES
+ITEM,"Y",1
+ITEM,"N",0
+RESOURCE,HELP,help,.\usgs_curv4.rtf
+
+
+
+
+                                              103
+Table A9.    The GX help file, usgs_curv4.rtf.
+
+USGS_CURV4 GX
+Locates local extrema in a grid file using curvature analysis
+INTERACTIVE PARAMETERS
+
+  Input grid file
+  Output post file (new database will have the same prefix)
+  Flag for finding ridges
+  Flag for finding troughs
+  Flag for finding highs
+  Flag for finding lows
+  Flag for finding saddles
+BATCH PARAMETERS
+USGS_CURV4.INGRID              Input grid file
+USGS_CURV4.OUTPOST             Output post file (new database will have the
+                                 same prefix)
+USGS_CURV4.RIDGES              Flag for finding ridges (Y=1,N=0)
+USGS_CURV4.TROUGHS             Flag for finding troughs (Y=1,N=0)
+USGS_CURV4.HIGHS               Flag for finding highs   (Y=1,N=0)
+USGS_CURV4.LOWS                Flag for finding lows    (Y=1,N=0)
+USGS_CURV4.SADDLES             Flag for finding saddles (Y=1,N=0)
+APPLICATION NOTES
+The output post file and database have the following channels:
+       id      type of feature (ridge, high, etc)
+       x       x-coordinate of solution
+       y       y-coordinate of solution
+ p(1) g(x,y) grid value at the solution as estimated from the
+                 quadratic surface
+ p(2) elong    elongation factor of the feature from the ratio of the
+                 two eigenvalues
+ p(3) strike degrees clockwise from north
+ p(4) e1       first eigenvalue of the curvature matrix
+ p(5) e2       second eigenvalue of the curvature matrix
+ p(6) type     integer value indicating type of feature (ridge=1,
+                 trough=2, etc)
+Reference:
+Phillips, J.D., Hansen, R.O., and Blakely, R.J., 2007, The use of
+  curvature in potential-field interpretation: Exploration Geophysics,
+  v.38, p.111-119.
+Written by Jeff Phillips (jeff@usgs.gov) 9/14/2006.
+
+
+
+
+                                                 104
+Table A10.   The GX source code file, usgs_curv4.gxc.
+
+//=====================================================================
+NAME          = "FORTRAN Code CURV4"
+VERSION       = "v1.00 U.S. Geological Survey 2006"
+DESCRIPTION   = "
+          USGS_CURV4.INGRID            Input grid
+          USGS_CURV4.OUTPOST           Output post file
+          USGS_CURV4.RIDGES            Flag for finding ridges
+          USGS_CURV4.TROUGHS           Flag for finding troughs
+          USGS_CURV4.HIGHS             Flag for finding highs
+          USGS_CURV4.LOWS              Flag for finding lows
+          USGS_CURV4.SADDLES           Flag for finding saddles
+"
+//=====================================================================
+RESOURCE = "usgs_curv4.gr"
+#include "usgs_curv4.grh"
+//=====================================================================
+#include <all.gxh>
+#include "usgs_curv4.gxh"
+
+//=====================================================================
+//                             GLOBAL VARIABLES
+//=====================================================================
+DGW        Diag;              // Dialogue handle
+string(GS_MAX_PATH) sInGrid, sOutPost, sOutGDB;
+int(5) iType;
+//real rAmpin;
+
+//=====================================================================
+//                                    CODE
+//=====================================================================
+{
+
+    if (iInteractive_SYS()) {
+      // --- Create the Dialogue ---
+      Diag = Create_DGW("CURV4");
+      // --- Set any Defaults from INI ---
+      SetInfoSYS_DGW(Diag,_CURV4_0,DGW_FILEPATH,"USGS_CURV4","INGRID");
+      SetInfoSYS_DGW(Diag,_CURV4_1,DGW_FILEPATH,"USGS_CURV4","OUTPOST");
+      SetInfoSYS_DGW(Diag,_CURV4_2,DGW_LISTALIAS,"USGS_CURV4","RIDGES");
+      SetInfoSYS_DGW(Diag,_CURV4_3,DGW_LISTALIAS,"USGS_CURV4","TROUGHS");
+      SetInfoSYS_DGW(Diag,_CURV4_4,DGW_LISTALIAS,"USGS_CURV4","HIGHS");
+      SetInfoSYS_DGW(Diag,_CURV4_5,DGW_LISTALIAS,"USGS_CURV4","LOWS");
+      SetInfoSYS_DGW(Diag,_CURV4_6,DGW_LISTALIAS,"USGS_CURV4","SADDLES");
+//      SetInfoSYS_DGW(Diag,_CURV4_7,DGW_TEXT,"USGS_CURV4","AMPIN");
+      // --- Run the Dialogue ---
+      if (iRunDialogue_DGW(Diag) != 0)
+         Cancel_SYS();
+
+
+
+                                               105
+        // --- Get the Strings and replace in INI ---
+        GetInfoSYS_DGW(Diag,_CURV4_0,DGW_FILEPATH,"USGS_CURV4","INGRID");
+        GetInfoSYS_DGW(Diag,_CURV4_1,DGW_FILEPATH,"USGS_CURV4","OUTPOST");
+        GetInfoSYS_DGW(Diag,_CURV4_2,DGW_LISTALIAS,"USGS_CURV4","RIDGES");
+        GetInfoSYS_DGW(Diag,_CURV4_3,DGW_LISTALIAS,"USGS_CURV4","TROUGHS");
+        GetInfoSYS_DGW(Diag,_CURV4_4,DGW_LISTALIAS,"USGS_CURV4","HIGHS");
+        GetInfoSYS_DGW(Diag,_CURV4_5,DGW_LISTALIAS,"USGS_CURV4","LOWS");
+        GetInfoSYS_DGW(Diag,_CURV4_6,DGW_LISTALIAS,"USGS_CURV4","SADDLES");
+//        GetInfoSYS_DGW(Diag,_CURV4_7,DGW_TEXT,"USGS_CURV4","AMPIN");
+        // --- Destroy the Dialogue ---
+        Destroy_DGW(Diag);
+
+    }
+    // --- Get Parameters ---
+ GetString_SYS("USGS_CURV4","INGRID",sInGrid);
+ GetString_SYS("USGS_CURV4","OUTPOST",sOutPost);
+ iType[0] = iGetInt_SYS("USGS_CURV4","RIDGES");
+ iType[1] = iGetInt_SYS("USGS_CURV4","TROUGHS");
+ iType[2] = iGetInt_SYS("USGS_CURV4","HIGHS");
+ iType[3] = iGetInt_SYS("USGS_CURV4","LOWS");
+ iType[4] = iGetInt_SYS("USGS_CURV4","SADDLES");
+// rAmpin = rGetReal_SYS("USGS_CURV","AMPIN");
+// --- Check for null input and output file name strings ---
+//       DisplayMessage_SYS("Input grid",sInGrid);
+//       DisplayMessage_SYS("Output post file",sOutPost);
+
+    if(!iStrlen_STR(sInGrid))
+       Abort_SYS("Input grid not specified");
+
+    if(!iStrlen_STR(sOutPost))
+       Abort_SYS("Output post file not specified");
+    Progress_SYS(1);
+    ProgName_SYS("Processing Grid",1);
+    USGS_Curv4(sInGrid, sOutPost, iType[0], iType[1], iType[2], iType[3],
+               iType[4]);
+    Progress_SYS(0);
+// --- Write the post file into a new database ---
+          FileNamePart_STR(sOutPost,sOutGDB,STR_FILE_PART_NAME);
+          Strcat_STR(sOutGDB,".GDB");
+          SetString_SYS("USGS_IMPOST","INPOST",sOutPost);
+          SetString_SYS("USGS_IMPOST","OUTGDB",sOutGDB);
+          SetInteractive_SYS(0); // Interactive mode off
+          if (iRunGX_SYS("usgs_impost.gx")) Cancel_SYS();
+// --- Print Message ---
+//       if (iInteractive_SYS())
+//         DisplayMessage_SYS("Post File Created",sOutPost);
+}
+
+
+
+                                            106
+Table A11.   The GX header file, usgs_curv4.gxh.
+
+//=====================================================================
+//
+// usgs_curv4.gxh - Prototype for wrappers for CURV4 Fortran subroutine
+//
+//
+//=====================================================================
+#ifndef CURV4_GXH_DEFINED
+#define CURV4_GXH_DEFINED
+#define USGS_Curv4(A,B,C,D,E,F,G) IUSGS_Curv4(A,sizeof(A),B,sizeof(B),C,D,E,F,G)
+[usgs_curv4] void
+IUSGS_Curv4(string,   // input grid file
+              int,    // string length
+              string, // output post file
+              int,    // string length
+              int,    // itype1
+              int,    // itype2
+              int,    // itype3
+              int,    // itype4
+              int);   // itype5
+//              int(5));    // itype
+
+#endif
+
+
+
+
+                                               107
+Table A12.   Code fragment added to the end of the wrapper functions header file, wrappers.h.
+
+// USGS_Curv4.f
+int curv4_(char *pcInfile, char *pcOutfile, long *itype1, long *itype2,
+        long *itype3, long *itype4, long *itype5, long *ierr,
+        long infile_len, long outfile_len);
+
+
+
+
+                                                108
+Table A13.   The C source code file, gxx_curv4.c.
+
+//=====================================================================
+//static char *__THIS_FILE_NAME__ = "$Id: //depot/src/usgs/gxx_usgs.c#4$";
+//=====================================================================
+//=====================================================================
+//
+//   gxx_curv4.c
+//
+//   USGS FORTRAN method wrappers.
+//
+//=====================================================================
+#define C_MICROSOFT
+#include <gx_define.h>
+#include <gx_lib.h>
+#include <gx_extern.h>
+#include "../wrappers.h"
+//---------------------------------------------------------------------
+__declspec(dllexport)                      // add this to be safe
+GX_WRAPPER_FUNC GX_LONG GX_WRAPPER_CALL
+IUSGS_Curv4(void       *pGeo,
+            const char *pcInfile,
+            long       *plInfile_len,
+            const char *pcOutfile,
+            long       *plOutfile_len,
+            long       *plType1,
+            long       *plType2,
+            long       *plType3,
+            long       *plType4,
+            long       *plType5)
+//            long       *plType[5])
+{
+    const char *modn = "IUSGS_Curv4";
+    long lErr=0;
+
+    // --- Load the global structure ---
+    InitGlobals(pGeo);
+    // --- Convert doubles to floats for REAL*4 ---
+    // --- Process the grid ---
+    curv4_((char *)pcInfile, (char *)pcOutfile, plType1, plType2,
+            plType3, plType4, plType5, &lErr,
+            *plInfile_len, *plOutfile_len);
+    // --- Convert returned values back to doubles ---
+    return 0;
+}
+
+
+
+
+                                                109
+Table A14.   The makefile for creating the GX dynamic-link library, Makefile.
+
+################################################################
+#
+# MinGW Makefile for usgs_curv4 Fortran GX
+#
+################################################################
+#
+# Creates a dynamic-link library, usgs_curv4.dll, from Fortran
+# and C code that can be accessed from the compiled GX,
+# usgs_curv4.gx. Does not use f2c or Microsoft Visual C++.
+#
+# Besides this Makefile, you will need:
+#     usgs_curv4.f
+#     ../wfuncs.c
+#     gxx_curv4.c
+#     ../wrappers.h
+#
+# You will also need libGEOGX6.4.a and libGEODIST6.4.a as
+# created using the other Makefile. Edit $(LIBDIR) so it
+# points to the directory containing these files.
+#
+# Written by Jeff Phillips (jeff@usgs.gov) based on original
+#     code by Jim Roy (jim@nga.com) and
+#           Tom Popowski (tom@nga.com).
+#
+################################################################
+OMVERS = 6.4
+GEOGX_LIB   = GEOGX$(OMVERS)
+GEODIST_LIB = GEODIST$(OMVERS)
+
+TARGETDLL = usgs_curv4
+TARGETGX = usgs_curv4
+
+CMODULES = \
+        gxx_curv4 \
+        ../wfuncs
+CMODULESOBJ = $(CMODULES:%=%.o)
+CMODULESSRC = $(CMODULES:%=%.c)
+FMODULES = \
+      usgs_curv4
+FMODULESOBJ = $(FMODULES:%=%.o)
+FMODULESSRC = $(FMODULES:%=%.f)
+LIBDIR = -L /home/jeff/gxdev
+LIBS = $(LIBDIR)/lib$(GEOGX_LIB).a \
+      $(LIBDIR)/lib$(GEODIST_LIB).a
+INCDIR = /c/Program\ Files/Geosoft/GX\ Developer/apps/include
+CC = gcc
+CFLAGS = -I $(INCDIR) -DC_MICROSOFT -DMINGW
+FC = g77
+FFLAGS = -fugly-assumed
+#INCLUDES = ../wrappers.h
+
+
+
+                                                 110
+$(TARGETDLL): $(FMODULESOBJ) $(CMODULESOBJ)
+            dlltool --export-all-symbols -z $(TARGETDLL).def $^
+            dlltool -d $(TARGETDLL).def -l $(TARGETDLL).a -D $(TARGETDLL).dll -e
+exports.o $^
+            g77 -shared -o $(TARGETDLL).dll $(LIBDIR) $^ exports.o -lGEOGX$(OMVERS)
+-lGEODIST$(OMVERS)
+            cp $(TARGETDLL).dll /c/Program\ Files/Geosoft/Oasis\ montaj\ Viewer/bin
+            cp $(TARGETDLL).dll /c/Program\ Files/Geosoft/Oasis\ montaj/bin
+            cp $(TARGETGX).gx /c/Program\ Files/Geosoft/Oasis\ montaj\ Viewer/gx
+            cp $(TARGETGX).gx /c/Program\ Files/Geosoft/Oasis\ montaj/gx
+$(CMODULESOBJ):   $(CMODULESSRC)
+      $(CC) -c $*.c $(CFLAGS) -o $*.o
+
+$(FMODULESOBJ):   $(FMODULESSRC)
+      $(FC) -c $*.f $(FFLAGS) -o $*.o
+
+clean:
+      rm -f core $(TARGETDLL) *.o *.a *.def
+
+.c.o: Makefile
+      $(CC) $(CFLAGS) -c $< -o $@
+.f.o: Makefile
+      $(FC) $(FFLAGS) -c $< -o $@
+
+
+
+
+                                        111
+

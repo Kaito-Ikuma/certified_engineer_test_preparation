@@ -1,0 +1,46 @@
+{
+  "stem": "オイラー座屈の長さ・強度依存性と、許容応力・限界状態を組合せで検討する。",
+  "conditions": {
+    "判断方向": "空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。",
+    "原典照合": "16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。",
+    "前提": "解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。"
+  },
+  "choices": {
+    "1": {
+      "value": "正誤正正",
+      "verdict": "不適合",
+      "reason": "アは長いほど臨界荷重が小さくなるので誤。イを誤、ウ・エを正とする点も違う。"
+    },
+    "2": {
+      "value": "正正誤正",
+      "verdict": "不適合",
+      "reason": "アは逆二乗則に反し、エは限界状態を一つだけに限定している。"
+    },
+    "3": {
+      "value": "誤誤誤正",
+      "verdict": "不適合",
+      "reason": "イは弾性オイラー式の条件内では同じE・幾何・拘束で等しい座屈荷重となるため正。エも誤。"
+    },
+    "4": {
+      "value": "誤正正誤",
+      "verdict": "不適合",
+      "reason": "ウの強度に安全率を掛けた許容応力は逆である。"
+    },
+    "5": {
+      "value": "誤正誤誤",
+      "verdict": "適合（前提内）",
+      "reason": "アは長さ依存の方向が誤、イは弾性オイラー範囲で正、ウは除算でなく乗算のため誤、エは限界状態の単一化のため誤。"
+    }
+  },
+  "figures": "設問固有図なし。全候補の順序を原典画像で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/basic/page_004.png"
+  ],
+  "question_id": "R03-REG-BASIC-1-5",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "4",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "df3d7c5e8901d74bc9c9fb0f3ecebc0b2afa873343d71c6fa046bc1a6f5d7fdf",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

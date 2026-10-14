@@ -1,0 +1,49 @@
+{
+  "stem": "摩擦のない壁と摩擦のある水平床に立て掛けた一様な棒について、床の摩擦力を傾角θで表す。",
+  "conditions": {
+    "rod_mass": "M",
+    "rod_length": "L",
+    "rod_uniform": "yes",
+    "floor_angle": "theta",
+    "wall_friction": "none",
+    "state": "static"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(Mg\\cos\\theta\\)",
+      "verdict": "不採用",
+      "reason": "棒は斜面上の質点ではなく、回転の釣合いも必要である。"
+    },
+    "2": {
+      "value": "\\(Mg\\sin\\theta\\)",
+      "verdict": "不採用",
+      "reason": "重力成分だけでは壁の反力と腕の長さを反映しない。"
+    },
+    "3": {
+      "value": "\\(Mg\\tan\\theta/L\\)",
+      "verdict": "不採用",
+      "reason": "Mg/Lは力/長さとなり、摩擦力の次元を満たさない。"
+    },
+    "4": {
+      "value": "\\(Mg/(L\\cos\\theta)\\)",
+      "verdict": "不採用",
+      "reason": "Mg/Lは力/長さとなり、摩擦力の次元を満たさない。"
+    },
+    "5": {
+      "value": "\\(Mg/(2\\tan\\theta)\\)",
+      "verdict": "採用",
+      "reason": "中央に働く重力の腕から1/2が生じ、力とモーメントをともに満たす。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_001.png"
+  ],
+  "question_id": "R06-REG-APPLIED-02",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "e5dfc16848a36ceda7531c22ab02c3a3e075be9a89f532934863ad3c57c620ed",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

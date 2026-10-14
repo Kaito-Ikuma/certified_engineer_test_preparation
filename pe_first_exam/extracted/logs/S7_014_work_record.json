@@ -1,0 +1,79 @@
+{
+  "time": "2026-10-10T21:38:15+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_014_petrology",
+  "question_ids": [
+    "H25-REG-APPLIED-19",
+    "H27-REG-APPLIED-29",
+    "R01-RET-APPLIED-28",
+    "H27-REG-APPLIED-28",
+    "H27-REG-APPLIED-34",
+    "H29-REG-APPLIED-24",
+    "H30-REG-APPLIED-30",
+    "R02-REG-APPLIED-25",
+    "R01-REG-APPLIED-24",
+    "R01-RET-APPLIED-31",
+    "R05-REG-APPLIED-26",
+    "R03-REG-APPLIED-23",
+    "R03-REG-APPLIED-24",
+    "R06-REG-APPLIED-26",
+    "R05-REG-APPLIED-24",
+    "R07-REG-APPLIED-23",
+    "R06-REG-APPLIED-27"
+  ],
+  "source_images": 14,
+  "official_answer_image": "extracted/reference_checks/S7_014/H27_official_answer_page107.png",
+  "independent_answer_matches": 14,
+  "independent_discrepancies": 3,
+  "corrected_verified": 13,
+  "partial": 4,
+  "related_pairs_added": 8,
+  "related_pairs_total": 55,
+  "theory_sections": {
+    "petrology": 14,
+    "engineering": 7
+  },
+  "primary_references_added": 34,
+  "concepts_added": 6,
+  "canonical_counts": {
+    "recorded_at": "2026-10-10T21:19:18+09:00",
+    "registered": 1270,
+    "classification_verified": 305,
+    "summary_verified": 265,
+    "corrected_verified": 251,
+    "corrected_partial": 14,
+    "solution_drafts": 265,
+    "solution_verified": 0,
+    "manual_required": 1019,
+    "subject_drafts": {
+      "BASIC": 82,
+      "APT": 63,
+      "APPLIED": 120
+    }
+  },
+  "tests": "24回帰成功15.772秒（S7_013時、以降は教材内容のみ変更）。初期・実ラベル監査エラー0。",
+  "pdf": {
+    "pages": 463,
+    "bytes": 2171904,
+    "visual_review_pages": [
+      377,
+      379,
+      383,
+      401,
+      402,
+      403
+    ],
+    "log_undefined": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "risks": [
+    "H27AP34の独立5と公式1の不一致。表層崩壊を否定する限定根拠未確定。",
+    "H30AP30/R02AP25は原典の白雲母の有色分類に疑義。",
+    "R06AP27の大理石を接触のみとする解釈疑義。",
+    "初回ビルドのcref未定義を既存refへ修正し再ビルド成功。",
+    "Astra未査読"
+  ],
+  "next": "S7_015波動光学21問。原典20頁確認・独立解答保存・公式21一致。疑義を記録して執筆継続。Checkpoint2未到達。"
+}

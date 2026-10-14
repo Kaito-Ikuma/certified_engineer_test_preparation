@@ -1,0 +1,44 @@
+{
+  "stem": "重力探査で用いる補正名のうち、主に反射法地震探査に属するものを選ぶ。",
+  "conditions": {
+    "選択方向": "誤り又は最も不適切・関係の薄いものを1つ"
+  },
+  "choices": {
+    "1": {
+      "value": "エトベス補正",
+      "verdict": "適切",
+      "reason": "船や航空機の運動に伴う回転系の見掛加速度の差を補正する。"
+    },
+    "2": {
+      "value": "ブーゲー補正",
+      "verdict": "適切",
+      "reason": "基準面と測点の間の岩石質量の引力を除く。"
+    },
+    "3": {
+      "value": "潮汐補正",
+      "verdict": "適切",
+      "reason": "月・太陽による時間変動を除く。"
+    },
+    "4": {
+      "value": "フリーエア補正",
+      "verdict": "適切",
+      "reason": "基準面からの高さに伴う重力変化を補正する。"
+    },
+    "5": {
+      "value": "静補正",
+      "verdict": "不適切",
+      "reason": "浅部低速度層や標高による地震波の走時差を、共通の基準面へ補正する地震探査の用語である。"
+    }
+  },
+  "figures": "図なし。否定方向と全5肢を原典ページ画像で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_010.png"
+  ],
+  "question_id": "H29-REG-APPLIED-31",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "e44436a070dda2910c2c2c658be80764f4fbeef7d656dd13540fbeefae3a4bf7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

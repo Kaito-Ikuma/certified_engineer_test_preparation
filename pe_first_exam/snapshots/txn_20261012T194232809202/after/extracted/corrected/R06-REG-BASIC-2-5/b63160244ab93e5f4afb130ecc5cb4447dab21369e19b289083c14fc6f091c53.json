@@ -1,0 +1,45 @@
+{
+  "stem": "拡張ユークリッド互除法の行列積から最大公約数と指定係数を求める。",
+  "conditions": {
+    "判断対象": "割り算の余り、(0,1;1,−q)の行変換、Bézout係数。",
+    "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+  },
+  "choices": {
+    "1": {
+      "value": "(5, 2, -3)",
+      "verdict": "不適切",
+      "reason": "指定する係数行又は最大公約数が違う。線形和は13となるが、gとの一致だけで指定行列の行とは限らない。"
+    },
+    "2": {
+      "value": "(5, -3, 5)",
+      "verdict": "不適切",
+      "reason": "指定する係数行又は最大公約数が違う。線形和は13となるが、gとの一致だけで指定行列の行とは限らない。"
+    },
+    "3": {
+      "value": "(8, 3, -3)",
+      "verdict": "不適切",
+      "reason": "指定する係数行又は最大公約数が違う。線形和は117となるが、gとの一致だけで指定行列の行とは限らない。"
+    },
+    "4": {
+      "value": "(13, 2, -3)",
+      "verdict": "適切",
+      "reason": "指定行列の第二行と最大公約数が全て一致する。"
+    },
+    "5": {
+      "value": "(13, -3, 5)",
+      "verdict": "不適切",
+      "reason": "指定する係数行又は最大公約数が違う。線形和は13となるが、gとの一致だけで指定行列の行とは限らない。"
+    }
+  },
+  "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_008.png"
+  ],
+  "question_id": "R06-REG-BASIC-2-5",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "2789414ab801c2696fda7460f4b4b7d08432b3253d9cee9824c0bd7a879778a8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

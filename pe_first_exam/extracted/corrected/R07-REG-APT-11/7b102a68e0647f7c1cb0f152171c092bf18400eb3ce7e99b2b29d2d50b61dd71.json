@@ -1,0 +1,47 @@
+{
+  "stem": "公正取引を損なう4行為と名称について適切な記述の数を選ぶ。",
+  "conditions": {
+    "ア": "ア：事業者間で商品価格や生産・販売数量を共同決定する行為を談合という。",
+    "イ": "イ：会社関係者等が未公表の重要事実に関係する株式等の取引をする行為をカルテルという。",
+    "ウ": "ウ：自然な需給に見せて人為的に価格を動かし利益を図る行為を相場操縦という。",
+    "エ": "エ：公共入札で事前に受注者等を決める行為をインサイダー取引という。"
+  },
+  "choices": {
+    "1": {
+      "value": "4",
+      "verdict": "設問条件に不一致",
+      "reason": "適切なのはウだけで、4項ではない。"
+    },
+    "2": {
+      "value": "3",
+      "verdict": "設問条件に不一致",
+      "reason": "アはカルテル、イはインサイダー、エは入札談合なので3項ではない。"
+    },
+    "3": {
+      "value": "2",
+      "verdict": "設問条件に不一致",
+      "reason": "ウ以外は行為と名称が合わず、2項ではない。"
+    },
+    "4": {
+      "value": "1",
+      "verdict": "設問条件に一致",
+      "reason": "相場操縦のウだけが適切で、1項である。"
+    },
+    "5": {
+      "value": "0",
+      "verdict": "設問条件に不一致",
+      "reason": "ウの説明が適切なので0項ではない。"
+    }
+  },
+  "figures": "原典画像で問題幹・条件・否定・全5肢と全組合せセルを確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/aptitude/page_011.png"
+  ],
+  "question_id": "R07-REG-APT-11",
+  "source_file": "sources/R07/aptitude.pdf",
+  "source_page": "11",
+  "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+  "raw_text_sha256": "41b23bdfc5ee3c532077909a5150e0c5df06ec3fecf80478d242e3660633b4cf",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,126 @@
+{
+  "time": "2026-10-12T12:47:18.077256+09:00",
+  "official_consulted": false,
+  "original_images_reviewed": 13,
+  "records": [
+    {
+      "question_id": "H23-REG-APPLIED-28",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "source_page": "9",
+      "answer_initial": "4",
+      "reason": "低域通過の短周期・長周期の役割が逆。線形性だけと時不変性、標本化の端点・帯域制限は別途留保する。"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-19",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "source_page": "7",
+      "answer_initial": "5",
+      "reason": "ノッチは指定帯域を阻止する。指定周波数だけ通過は逆。"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-21",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "source_page": "9",
+      "answer_initial": "3",
+      "reason": "ADCの標本化周波数を最高周波数と同じにはできない。"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-20",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "source_page": "7",
+      "answer_initial": "1",
+      "reason": "独立雑音の振幅S/N向上は加算回数の平方根でありN倍ではない。"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-20",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "source_page": "8",
+      "answer_initial": "2",
+      "reason": "一般的な移動平均と周期雑音の選択除去を混同している。ただし周期と窓長が一致すれば除去可能であり疑義を残す。"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-35",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "source_page": "12",
+      "answer_initial": "5",
+      "reason": "ノッチの通過と遮断を逆にしている。"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-34",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "source_page": "11",
+      "answer_initial": "1",
+      "reason": "スタックの振幅S/N改善はNの平方根でありNの二乗ではない。"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-33",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "source_page": "11",
+      "answer_initial": "5",
+      "reason": "バーティカルスタックの独立雑音S/N改善はNの平方根でありNの二乗ではない。"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-31",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "source_page": "11",
+      "answer_initial": "1",
+      "reason": "地下モデルからデータを予測するのが順問題、データから地下を推定するのが逆問題。"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-23",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "source_page": "7",
+      "answer_initial": "4",
+      "reason": "ブーゲー補正は重力探査の質量補正である。"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-33",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "source_page": "11",
+      "answer_initial": "5",
+      "reason": "ブーゲー補正は重力探査である。"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-34",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "source_page": "12",
+      "answer_initial": "5",
+      "reason": "原典表記は下方接続。潜在場の下方接続・下方継続を想定した選択と推定するが、用語及びリジットブームの一次資料照合が必要。"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-32",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "source_page": "11",
+      "answer_initial": "3",
+      "reason": "ブーゲー補正は重力探査に属する。"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-35",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "source_page": "12",
+      "answer_initial": "2",
+      "reason": "等価層はポテンシャル場などの表現に関する概念であり波動伝播の基本原理との関係が薄い。一次資料の用語範囲を要確認。"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-32",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "source_page": "12",
+      "answer_initial": "3",
+      "reason": "レンツの法則は電磁誘導の向きに関する法則であり地震波伝播の基本則ではない。"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-35",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "source_page": "12",
+      "answer_initial": "5",
+      "reason": "有限要素法は通常順問題の離散化。逆問題の内部にも用いるためインバージョンと無関係とは断言しない。"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-35",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "source_page": "12",
+      "answer_initial": "2",
+      "reason": "ラテラル法は電気検層の測定方式であり数値処理アルゴリズムとは異なる。"
+    }
+  ]
+}

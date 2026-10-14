@@ -1,0 +1,45 @@
+{
+  "stem": "通常の必須アミノ酸の候補から、体内で合成できるものを選ぶ。",
+  "conditions": {
+    "方向": "必須アミノ酸として最も不適切。",
+    "対象": "原典は哺乳類。解説は通常のヒトの分類と条件付き必須の差を明示。"
+  },
+  "choices": {
+    "1": {
+      "value": "イソロイシン",
+      "verdict": "必須",
+      "reason": "分岐鎖の必須アミノ酸で、通常のヒトの必須9種に含まれる。"
+    },
+    "2": {
+      "value": "バリン",
+      "verdict": "必須",
+      "reason": "分岐鎖の必須アミノ酸である。"
+    },
+    "3": {
+      "value": "ロイシン",
+      "verdict": "必須",
+      "reason": "分岐鎖の必須アミノ酸である。"
+    },
+    "4": {
+      "value": "プロリン",
+      "verdict": "通常非必須",
+      "reason": "通常はグルタミン酸等から生合成できる非必須に分類され、この候補が不適切。ただし病態・成長等で条件付き必須となる場合を区別。"
+    },
+    "5": {
+      "value": "メチオニン",
+      "verdict": "必須",
+      "reason": "硫黄を含む必須アミノ酸である。CysとMetを同じ栄養分類とする必要はない。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/basic/page_014.png"
+  ],
+  "question_id": "R07-REG-BASIC-4-5",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "e2797527cfd3cea668111ae4fb39775e1cd8083888bdd2e922f31bb936c8994b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

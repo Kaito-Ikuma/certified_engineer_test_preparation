@@ -1,0 +1,44 @@
+{
+  "stem": "荷重表示で棒のひずみエネルギー。",
+  "conditions": {
+    "棒": "長さl、断面A、E、弾性域で軸荷重P。"
+  },
+  "choices": {
+    "1": {
+      "value": "Pl",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 P²l/(2EA) と異なる。"
+    },
+    "2": {
+      "value": "Pl/E",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 P²l/(2EA) と異なる。"
+    },
+    "3": {
+      "value": "Pl²/A",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 P²l/(2EA) と異なる。"
+    },
+    "4": {
+      "value": "P²l/(2EA)",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "5": {
+      "value": "P²/(2EA²)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 P²l/(2EA) と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_014.png"
+  ],
+  "question_id": "R01-REG-BASIC-3-5",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "fc2391a8e53b088f71c2268a43ff89ea191c1216371fb427627f38d59c6bd114",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

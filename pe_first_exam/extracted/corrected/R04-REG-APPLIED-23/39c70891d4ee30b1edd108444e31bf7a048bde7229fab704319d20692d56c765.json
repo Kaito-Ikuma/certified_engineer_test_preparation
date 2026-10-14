@@ -1,0 +1,45 @@
+{
+  "stem": "火成岩を作る鉱物の構造・光学性・分化の記述から最も不適切なものを選ぶ。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "顕微鏡": "透過薄片のオープン／クロスを区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "火成岩の主要鉱物はSiO4四面体を骨格とするケイ酸塩である",
+      "verdict": "主要鉱物について正しい",
+      "reason": "石英・長石・輝石・角閃石・かんらん石・雲母はケイ酸塩の主要な造岩鉱物である。酸化物等の副成分まで全てケイ酸塩とはしていない。"
+    },
+    "2": {
+      "value": "黒雲母の劈開は一方向である",
+      "verdict": "正しい",
+      "reason": "層に平行な底面劈開が卓越する。"
+    },
+    "3": {
+      "value": "オープンでは黒雲母・角閃石・輝石に多色性が見られ、かんらん石・ざくろ石には見られない",
+      "verdict": "通常の特徴として正しい／鉱物種・組成依存",
+      "reason": "吸収異方性を持つ有色鉱物には多色性があり得るが、輝石の種・組成で弱い又は目立たない場合もある。ざくろ石は通常等方性、かんらん石は通常薄片で無色である。"
+    },
+    "4": {
+      "value": "火山ガラスはクロスニコルで波動消光を示す",
+      "verdict": "誤り",
+      "reason": "通常の火山ガラスは光学的等方性で、クロスでは回転しても暗い。歪んだ石英の波動消光とは違う。"
+    },
+    "5": {
+      "value": "晶出した鉱物を分離する結晶分化でマグマ組成が変わる",
+      "verdict": "正しい",
+      "reason": "晶出相を残液から除くと、除去された元素比に応じ残液組成が変わる。"
+    }
+  },
+  "figures": "図なし。原典頁画像で選択方向、観察条件、鉱物名と全5肢を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_008.png"
+  ],
+  "question_id": "R04-REG-APPLIED-23",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "6e3bb5a96f0d4b92feaab49f4cb2428761714d8f5120f0b92d0f5b6ecfed204e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

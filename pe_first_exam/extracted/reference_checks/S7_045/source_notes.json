@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-10-12T20:21:13+09:00",
+  "sources": [
+    {
+      "key": "organic_physical",
+      "url": "https://openstax.org/books/organic-chemistry/pages/31-7-polymer-structure-and-physical-properties",
+      "checked_claim": "熱可塑/架橋の説明とBakeliteのフェノール・ホルムアルデヒドを確認。"
+    },
+    {
+      "key": "organic_step",
+      "url": "https://openstax.org/books/organic-chemistry/pages/31-4-step-growth-polymers",
+      "checked_claim": "ナイロン66の二原料と6のカプロラクタム、ポリカーボネートを確認。"
+    },
+    {
+      "key": "organic_directing",
+      "url": "https://openstax.org/books/organic-chemistry/pages/16-4-substituent-effects-in-electrophilic-substitutions",
+      "checked_claim": "メチルのo,pとニトロm配向、反応速度の効果を確認。収率100パーセントではない。"
+    },
+    {
+      "key": "organic_chirality",
+      "url": "https://openstax.org/books/organic-chemistry/pages/5-1-enantiomers-and-the-tetrahedral-carbon",
+      "checked_claim": "四置換基の違いと鏡像との重なりを確認。試験の分枝鎖・環は独自に比較。"
+    },
+    {
+      "key": "organic_benzene",
+      "url": "https://openstax.org/books/organic-chemistry/pages/15-2-structure-and-stability-of-benzene",
+      "checked_claim": "芳香族安定性、同一C-C結合、6π電子の非局在を確認。"
+    },
+    {
+      "key": "organic_isomers",
+      "url": "https://openstax.org/books/organic-chemistry/pages/3-2-alkanes-and-alkane-isomers",
+      "checked_claim": "C4=2,C5=3,C6=5と結合骨格の違いを確認。"
+    },
+    {
+      "key": "organic_gasoline",
+      "url": "https://openstax.org/books/organic-chemistry/pages/3-chemistry-matters-gasoline",
+      "checked_claim": "0/100標準、分解・改質と芳香族高オクタンを確認。出題当時100超規格本文は未取得。"
+    },
+    {
+      "key": "organic_jpca",
+      "url": "https://www.jpca.or.jp/studies/junior/tour02.html",
+      "checked_claim": "取得公開本文でエチレン・プロピレン等への熱分解を確認。"
+    },
+    {
+      "key": "organic_jpca_dict",
+      "url": "https://www.jpca.or.jp/studies/dict.html",
+      "checked_claim": "ナフサ軽質留分・分解・エチレンオキサイド等の項を確認。原典温度を固定条件としない。"
+    },
+    {
+      "key": "organic_nitro",
+      "url": "https://www.inchem.org/documents/icsc/icsc/eics0065.htm",
+      "checked_claim": "物性欄の水=1に対する相対密度1.2を確認。"
+    },
+    {
+      "key": "organic_peroxide",
+      "url": "https://www.inchem.org/documents/icsc/icsc/eics0225.htm",
+      "checked_claim": "加熱・摩擦・衝撃で爆発的分解の可能性を確認。必然とはしない。"
+    },
+    {
+      "key": "organic_cmc",
+      "url": "https://goldbook.iupac.org/terms/view/C01395",
+      "checked_claim": "検索収録の定義本文、CMC未満のミセル/以上の追加分・測定法依存を確認。直接openは失敗。"
+    },
+    {
+      "key": "organic_jbpa",
+      "url": "https://jbpaweb.net/gp/",
+      "checked_claim": "PGA/PLA/PBSの代表分類を確認。環境条件は別にする。"
+    },
+    {
+      "key": "organic_jbpa_en",
+      "url": "https://jbpaweb.net/english/e-gp/",
+      "checked_claim": "生分解と崩壊の区別、PHB/PLA/PBSの一覧を確認。個別製品全表は読了としない。"
+    },
+    {
+      "key": "organic_enpla",
+      "url": "https://www.enpla.jp/enpla.html",
+      "checked_claim": "分類表の汎用PE/PVC/PMMA、PC/PA/POM/PPEとUHMWPE例、厳密数値区別しない旨を確認。"
+    },
+    {
+      "key": "organic_methane",
+      "url": "https://anzeninfo.mhlw.go.jp/anzen/gmsds/1402.html",
+      "checked_claim": "物性欄の沸点約零下161度を確認。全安全操作資料の転載なし。"
+    }
+  ],
+  "limits": [
+    "有機化学一般則は科学的説明用。過去の法令・規格の全改正照合ではない。",
+    "ナイロン一般化、含酸素物を炭化水素とする原典、PEグレード、脂質全称、溶解度ゼロ、過酸化物必然爆発の留保を保存。",
+    "公式前初回30解答保存後に全30公式一致を確認。"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "光と電子の励起・再結合を利用する素子と、超伝導の巨視的量子現象を比較する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "量子・原子核の性質。質量数、係数、否定と肢対応を画像照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "太陽電池",
+      "verdict": "該当",
+      "reason": "光吸収で電子・正孔を作り電流として取り出す。光から電気への変換であり光電子相互作用を利用する。"
+    },
+    "2": {
+      "value": "発光ダイオードLED",
+      "verdict": "該当",
+      "reason": "注入した電子と正孔の放射再結合で光を出す。電気から光への変換である。"
+    },
+    "3": {
+      "value": "半導体レーザー",
+      "verdict": "該当",
+      "reason": "活性層の電子励起と反転分布、光電磁場による誘導放出・共振器帰還を利用する。"
+    },
+    "4": {
+      "value": "超伝導（超電導）",
+      "verdict": "主原理が異なる",
+      "reason": "超伝導は電子対等の巨視的な量子状態に伴う無抵抗・磁場応答の現象である。光吸収/放出素子とは主原理が異なる。光と超伝導体が相互作用しないという断言ではない。"
+    },
+    "5": {
+      "value": "有機EL",
+      "verdict": "該当",
+      "reason": "有機半導体へ電荷を注入し、励起子等の放射緩和で光を出す。分子励起も電子励起に含む。"
+    }
+  },
+  "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_003.png"
+  ],
+  "question_id": "R05-REG-APPLIED-07",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "bfabba0da641a2485ab9695de25595c1f23b6540c99276f36f2c272317e948e7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

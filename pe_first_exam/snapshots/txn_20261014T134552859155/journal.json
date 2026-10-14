@@ -1,0 +1,19 @@
+{
+  "status": "committed",
+  "time": "2026-10-14T13:45:52+09:00",
+  "paths": [
+    "data/audit_report.csv",
+    "data/unresolved.csv",
+    "extracted/logs/audit_metrics.json"
+  ],
+  "existed": {
+    "data/audit_report.csv": true,
+    "data/unresolved.csv": true,
+    "extracted/logs/audit_metrics.json": true
+  },
+  "sha256": {
+    "data/audit_report.csv": "eee7369485a023630ada9d92576dcdca80492adea35ae410cbc67a0c36aadf7b",
+    "data/unresolved.csv": "c6722cbd1282131de8a4e5b4f1693d10a94f97ece6a5712326aedda2ed4e7951",
+    "extracted/logs/audit_metrics.json": "078d4d1399f79e557ff4b80c12ea82eec7235478af0ade2346dd1c20f6a26d5e"
+  }
+}

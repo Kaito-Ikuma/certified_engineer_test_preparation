@@ -1,0 +1,47 @@
+{
+  "stem": "アッカーマン関数の二段の再帰を展開してA(2,2)を求める。",
+  "conditions": {
+    "基底": "A(0,n)=n+1",
+    "零引数": "A(m+1,0)=A(m,1)",
+    "再帰": "A(m+1,n+1)=A(m,A(m+1,n))"
+  },
+  "choices": {
+    "1": {
+      "value": "7",
+      "verdict": "適切",
+      "reason": "A(1,n)=n+2、A(2,n)=2n+3より7である。"
+    },
+    "2": {
+      "value": "8",
+      "verdict": "不適切",
+      "reason": "各再帰段の増分2と初期3を適用した7ではない。"
+    },
+    "3": {
+      "value": "9",
+      "verdict": "不適切",
+      "reason": "n=3のA(2,3)=9でありnを一つ多くしている。"
+    },
+    "4": {
+      "value": "10",
+      "verdict": "不適切",
+      "reason": "再帰の初期値又は増分の誤りである。"
+    },
+    "5": {
+      "value": "11",
+      "verdict": "不適切",
+      "reason": "A(2,4)=11であり二段多く展開している。"
+    }
+  },
+  "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/basic/page_007.png",
+    "extracted/pages/R07/basic/page_008.png"
+  ],
+  "question_id": "R07-REG-BASIC-2-6",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "50fc0cc8bc092f4af360db404efa1121440af3e25ff3a14c51a541c69e0284fd",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

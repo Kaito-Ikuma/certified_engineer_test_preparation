@@ -1,0 +1,45 @@
+{
+  "stem": "カルシウム塩の溶解・水和・潮解を比較する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "カルシウム塩の溶解・水和・潮解を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "CaCO3と塩酸でCO2",
+      "verdict": "通常の条件で適切",
+      "reason": "炭酸塩が酸で分解されCa2+・CO2・水となる。"
+    },
+    "2": {
+      "value": "CO2水に不溶で純水に易溶",
+      "verdict": "不適切",
+      "reason": "通常は逆。純水に難溶で、CO2の溶解で酸性となる水では炭酸水素イオンの生成を伴い溶解が促進される。"
+    },
+    "3": {
+      "value": "骨・歯の水酸アパタイト",
+      "verdict": "通常の条件で適切",
+      "reason": "Caを含むリン酸塩で骨や歯の無機成分の主成分をなす。"
+    },
+    "4": {
+      "value": "半水石膏は加水で硬化",
+      "verdict": "通常の条件で適切",
+      "reason": "CaSO4·1/2H2Oが二水石膏へ水和し、結晶が成長して固まる。"
+    },
+    "5": {
+      "value": "CaCl2の潮解性と吸湿",
+      "verdict": "通常の条件で適切",
+      "reason": "空気中の水分を取り込み、水溶液となり得るので乾燥用途に用いられる。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_005.png"
+  ],
+  "question_id": "H28-REG-APPLIED-13",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "bbf0a8b5bea4683821abd5c5a90110e2baef733c45b33c1913f276f8ca53fb02",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,63 @@
+{
+  "stem": "第4章の7空欄へ入る語を選ぶ。",
+  "conditions": {
+    "空欄順": [
+      "ア",
+      "イ",
+      "ウ",
+      "エ",
+      "オ",
+      "カ",
+      "キ"
+    ],
+    "正しい語句の照合": {
+      "ア": "義務",
+      "イ": "公益",
+      "ウ": "責務",
+      "エ": "技術部門",
+      "オ": "制限",
+      "カ": "準用",
+      "キ": "資質"
+    },
+    "出題時資料": ""
+  },
+  "choices": {
+    "1": {
+      "value": "義務／公益／責務／技術部門／制限／準用／能力",
+      "verdict": "不適切な解答候補",
+      "reason": "キは能力ではなく資質である。"
+    },
+    "2": {
+      "value": "責務／安全／義務／専門部門／制約／適用／能力",
+      "verdict": "不適切な解答候補",
+      "reason": "ア・イ・ウ・エ・オ・カ・キが条文と異なる。"
+    },
+    "3": {
+      "value": "義務／公益／責務／技術部門／制約／適用／資質",
+      "verdict": "不適切な解答候補",
+      "reason": "オは制限、カは準用である。"
+    },
+    "4": {
+      "value": "責務／安全／義務／専門部門／制約／準用／資質",
+      "verdict": "不適切な解答候補",
+      "reason": "ア・イ・ウ・エ・オが条文と異なる。"
+    },
+    "5": {
+      "value": "義務／公益／責務／技術部門／制限／準用／資質",
+      "verdict": "適切な解答候補",
+      "reason": "秘密保持・名称表示は義務、公益・資質向上は責務。登録技術部門、業務の制限、準用という語も一致する。"
+    }
+  },
+  "figures": "図なし。組合せ表または個数選択肢は原典画像で確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/aptitude/page_001.png",
+    "extracted/pages/R01/aptitude/page_002.png"
+  ],
+  "question_id": "R01-REG-APT-01",
+  "source_file": "sources/R01/aptitude.pdf",
+  "source_page": "1",
+  "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+  "raw_text_sha256": "178627aea74b24945f60fc746caeb38e793a0ccc8fb40bbacbe435a6c651ba7f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

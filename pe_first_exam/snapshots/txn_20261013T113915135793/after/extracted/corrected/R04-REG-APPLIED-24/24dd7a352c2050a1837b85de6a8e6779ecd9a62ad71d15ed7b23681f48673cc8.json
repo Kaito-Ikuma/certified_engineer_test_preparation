@@ -1,0 +1,45 @@
+{
+  "stem": "ウラン鉱床の母岩・年代・品位の分類を比較する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "ウラン鉱床の母岩・年代・品位の分類を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "古い基盤と砂岩の不整合近傍",
+      "verdict": "代表的条件で適切",
+      "reason": "不整合関連型の代表は原生代砂岩盆地と古い変成基盤の不整合をまたぐ熱水・流体鉱化。"
+    },
+    "2": {
+      "value": "4億年前以降の河川砂岩・礫岩",
+      "verdict": "条件・解釈を留保",
+      "reason": "顕生代の堆積盆地は砂岩型の代表だが、4億年を全砂岩型鉱床の唯一の年齢限界とする確認は未完了。"
+    },
+    "3": {
+      "value": "約23億年前以前の石英礫岩",
+      "verdict": "条件・解釈を留保",
+      "reason": "古い酸素の少ない環境でU鉱物等が漂砂濃集する代表的な古代石英礫岩型。年代は酸化環境と地域史の条件として扱う。"
+    },
+    "4": {
+      "value": "様々な時代の鉱脈型",
+      "verdict": "代表的条件で適切",
+      "reason": "亀裂等を切る流体の通路に脈状鉱体ができる形態で、特定時代だけに限定されない。"
+    },
+    "5": {
+      "value": "貫入岩型は他型より高品位",
+      "verdict": "不適切",
+      "reason": "一般に低品位で大規模な貫入岩関連資源があり、高品位を共通特徴としない。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "公式5を保持。4億年以降と23億年前以前等の厳密な分類時代境界・例外は原典の当時分類とIAEA原分類表の追加照合が必要。低品位資源の存在のみで全鉱床の一律平均品位を作らない。",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_008.png"
+  ],
+  "question_id": "R04-REG-APPLIED-24",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "a7c61e5ae107abce927c500c65cde664eb4b9d9f475e82d89bb5eb13c82600a8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,838 @@
+「人工知能と人間社会に関する懇談会」
+
+       報告書
+
+
+
+
+     平成29年3月24日
+
+
+
+ 人工知能と人間社会に関する懇談会
+                            目次
+
+Executive Summary                 ----- 1
+
+
+第１章 はじめに                         ----- 3
+     1.1 人工知能技術が社会にもたらすインパクト
+     1.2 人工知能技術がもたらす期待と不安
+     1.3 人工知能技術はこれまでの技術と何が違うのか
+     1.4 懇談会の目的
+
+
+第２章 人工知能と人間社会に関する検討動向            ----- 6
+     2.1 世界の動向
+     2.2 日本の動向
+
+
+参考     人工知能は人間を超えるか？              ----- 8
+
+
+第３章      懇談会におけるアプローチ             ----- 10
+     3.1 分野の選択
+     3.2 検討する観点
+     3.3 共通する論点の整理へ向けて
+
+
+第４章      人工知能技術と人間社会について検討すべき論点   ----- 13
+     4.1 倫理的論点
+     4.2 法的論点
+     4.3 経済的論点
+     4.4 教育的論点
+     4.5 社会的論点
+     4.6 研究開発的論点
+
+
+第５章      おわりに                     ----- 19
+
+
+
+
+  
+                      Executive  Summary  
+
+ ʒŶIêuʭʥɲľΠ̭ʭIǝˬIȉ̷Ie rŻlW̋ʂ˃ΡͰĩʥrðȶ_Pêƶʭ
+˲Ǹ̌vI¹«®Õ¨oɘɌƖ˪rjmǞ͡qʣƱ_mRI˷ľ͔͓ͦņʢ̦ȡȓȏI
+Ƨ̪Õ¢Ò¯qpyuƟ̐ͤnOJêƶʭ˲Ǹ̌vIȧȾȖǁTʨȂa$;/51@E u
+ʹ̖qŻʧǸ̌nNIƭƔΝΟŃTg          aļĘķÙ͌qpuʵõ̴Ζu̝ɫ̳T˷ĩu˲
+ķʣȎ_mɲ͑nUʵõlWr̀ʎ_IʵõrƇƉqĆʦg                a[oTȼǎ]mO
+Jgh_Iêƶʭ˲Ǹ̌vIeuͻʣ͡ǂT͡WĮʘ˭S              veuľÿT̘QrWOǸ̌nN
+[oS   Iʭ   sͼrȰŒ_ΝǂŃ_ʵõuŶȣrɉȾʥǌΐÚQŘ˲ǟNIĒğqĮ
+ʘugreuǌΐɍ̡aǙ̖TNJ
+ ŴĥƆrROmIêƶʭ˲Ǹ̌TêͼʵõrŒ|aǌΐrkOmuĐʓʥIɰʥIʵõʥũΖ
+Π@45/-813-8-:0$;/5-8??A1?$ΡTɱʨ]mRIʯʽ˭Ôͻʣ˭u~q   bI
+ɓKqêTêƶʭ˲Ǹ̌ug        a˻OǌΐoǮǜrͽǘȁjmɍ̡_mOJāQwIʖʗǟ
+Ş×ʹļĘS     u̝ȕIʷƖʥʭ̘ɭʢɰ˃uʣ̘uĹ͡oOP˻Oē΍rĹQmI·ʘŬƊ
+êΘyuʰɽʥ˳ƓuŘ˲ǟqprkOmIƖ̌õ̺Iɥͼ˷à˕˧IȖǁɘͽIŴ΄ɘͽqp
+ɓKqʿžS     ɍ̡ȋ̟T̋mOJ
+ Lêƶʭ˲oêͼʵõrͽaǭ̶õMnvIʉrIʒƕaêƶʭ˲Ǹ̌I}gv͘OƩɁƟ
+ʒaŘ˲ǟTΝOêƶʭ˲Ǹ̌eTȰŒ_gʵõrʄʁ˘IpuPqĆʦTȼǎnU
+SIˬǬazUʁvýSIëǐŔ˕zU̴ΖȣŞǟvýSȪ                Sra[oʨʥo_
+gJ}gIêƶʭ˲Ǹ̌rͽͣ_mŏƤrĩΉnUqO®¢¨Ì¦Õ¡ËÒuåārkOmƧ
+̾o_gJêƶʭ˲Ǹ̌TǰKuʵõuɓKqΔźrȰŒ_kkN[oˬǬ_IʹľI̓͢I
+čêŞYÕ¹£IƧ̪ÔèɳoOPΤkuð̎ʥĩ͵rkOmɓKqåāΠÕ£ΡȃZmɍ
+̡aǴɰojgJe_mIêƶʭ˲Ǹ̌ĀPêIʯʽÔͻʣaêIȟŃ˽̌ǾPêIȽ
+ɁuʵõkWƔpqpɓKqÛðuêIôɎIe_mȖǁqpɓKqͽć˭uʿžΠÄÎ
+ªÔ£­ÕÁÎ©ÕΡS       êƶʭ˲Ǹ̌oêͼʵõrͽća̷ʁȪ           Sra[oʨȂ_
+gJ
+ êƶʭ˲Ǹ̌vêͼuʭʥ˲ķőʂ̒ĺ_IÖͰðȶ_Ȁǈa[oŘ˲oa[oS
+ Iȁ˜Ř˲ʵõuǉķqȉͤķrq[oTȼǎnUJgh_IñØuPq̷ʁrkOmɍ
+̡_ˬǬaǙ̖TNJ
+  u   Đʓʥ̷ʁΧ êƶʭ˲Ǹ̌rŻlWĬȡoêuĬȡu¶ÌÒ£Ŕ[oTƉĪnN
+      Ieu¶ÌÒ£oͽćvëǐƄŃ_mOW[oTãǧ]Ier÷OĐʓ̜ƄŃ_
+      mOWhPJêƶʭ˲Ǹ̌Tg        aÕ¹£rjmIĮʘ˭Tʭ         sͼrǪǦĊ
+      ɀI̋ľTȒÿ]gIΒùlYÔͯĭ]ga[oTʖ`PžśrvĐʓʥɍ
+      ̡TǙ̖nNJêƶʭ˲Ǹ̌rjmêṷʭ̋ľTȀǈ][onêͼ̜TpP
+      ƄS̘mOWǙ̖TNJêƶʭ˲Ǹ̌oŉĘ_gĵÿuĄďuŕƢeuƄŃI
+      êrjmʟq¹¢ËÒΠêƶʭ˲Ǹ̌ouͽȣΡĄď̜rkOm̭̹aǙ̖
+      TNJ
+
+                                1
+    u   ɰʥ̷ʁΧ êƶʭ˲Ǹ̌ĀPÍ£IĀqOÍ£ˬǬ_gĮɲʘȉͤag
+      rIeuĮʘr÷Pɰʥ̴ΖuǽĨIāQwåȗ˃rjmʖ`̓óĩͲuɍ̡ĉ
+      ΂uȝĔTǙ̖nNJ¹«®Õ¨ɲʘ_gêƶʭ˲Ǹ̌uĮĆǟʲĉočêǦŽÔ
+      ½Ì¶¡Õĉ̻uÜʿrkOmɰʥȝĔÔƧǚTǙ̖nNJÎÍ¤Æͻʣ˭®
+      Õ¨ȋĂ˭IĮʘ˭qpuƇɓq£­ÕÁÎ©ÕTͽÚaêƶʭ˲Ǹ̌Įʘ_gĵ
+      ÿʈ˃uɖĮrkOmuɍ̡TǙ̖nNJ̓óɑǜqpuʒ̋ɰ×uŻȾʥqɑǜrk
+      OmIêƶʭ˲Ǹ̌oʵõuʪæʣƱrō_gɍ̡oŻʳʯʽTɧ     hPJ
+    u   ˖ɸʥ̷ʁΧ čêrojmvĵ͢ʥļĘTƁQqpɎĿĥƢuƄŃĘUȣuƄŃT
+      ʖ`Ř˲ǟTNIerƧǚnU˲ķ͒rʬY[oTȻ}_OJôɎo_mv
+      euPq·ʘĘUȣuƄŃr͗͡rƧǚa[oTǙ̖nNJȖǁo_mvIļĘ
+      ˭TɎĿƄQ[oŘ˲oaț˰ʔƀuȝĔI̴ΖĜͤŴnNȧȾuȁ˜ʣƱ
+      Ř˲ǟugr˖ɸɊƷqW_Iêƶʭ˲Ǹ̌uĮɲʘĈͤaguȖˆTǙ̖
+      nNJ
+    u   ț˰ʥ̷ʁΧ ʒʋuêƶʭ˲Ǹ̌u΁ʝǹȍ_IŉĘ_mĵ͢ʥɲľTnUgu
+      ˲ķ͒rʬY[oTȻ}_OJêu˲ķêƶʭ˲Ǹ̌oȷƉ΁rƷʟŃ_Iêr_
+      SnUqO˲ķøǈaț˰ÍÊÌÆIǒɁ͠̋PzUț˰ĥƢuɍ̡qpuȖ
+      ˆTǙ̖nNJ
+    u   ʵõʥ̷ʁΧ êƶʭ˲Ǹ̌ouͽu˷ʚrkOmƧ̪ažÿIƇɓǟġ͠
+      ǟrkOmɍ̡a[oTƉĪnNJêƶʭ˲Ǹ̌®¶°êƶʭ˲Ǹ̌rͽͣa
+      ʵõʥ£¯uÙŸ̍Iêƶʭ˲Ǹ̌r½Ð»ÍÒqpȉƝ˗ɃrƷĭT
+      ʖ`qOPqƧħTǙ̖nNJêƶʭ˲Ǹ̌rƧaăƕͨĊÔͨĳqǿ˚qpȢ
+      gqʵõũΖʵõʥʡʓTʖ`Ř˲ǟɍ̡azUnNJ
+    u   ʯʽͻʣʥ̷ʁΧ ʷƖ˭ʯʽͻʣ˭rvIĐʓ̜ȁi°ÌÒĐʓ̙Ɲrɮ
+      jg̋ľTɧ   J¥ÊÍ­ʲĉI½Ì¶¡Õĉ̻Ǹ̌qpuͻʣTǙ̖nN
+      Iêƶʭ˲Ǹ̌TįǔÙŘ˲oq   qOPqͲǬeu̠ˇͨʺ̷ʓ̲ȪnU
+      ͞ȪǟrͽaʯʽTǙ̖nNJ}gIɘɌƖ˪rʲʐʥqľÿrƧaʵõʥŕ
+      Ƣǟ̘mOW[oIêƶʭ˲Ǹ̌uƇɓǟuȉͤIÕ½ÒÒ£uĈͤIȽɁʵ
+      õ̤̠aêȟʵõʷƖʯʽ̉śʯʽuȉͤqp͠`mIʵõr̀ʎaêƶʭ˲
+      Ǹ̌uʯʽͻʣĈa[oTʹ̖nNJ
+    ǰKvIɍ̡ȣɰƫSg̷ʁrkOmŴ΄ʥqͣȑʣĊ̋jmUgTIëǐŴ΄ʥr
+ŉ̵_gŔ˕~˜Ym̋WǙ̖TNJʉrIêƶʭ˲Ǹ̌oʵõuͽćɍ̡rkOmŴ΄ʥ
+qɅ˕~ˬQ[oTÛʝğüo_muȁ˜Ř˲ʵõuƟʒr̀ʎaoǝgIÛʝn
+ġȹazUĄď̜výSɍ̡azUnNJ
+    [uǭ̶õnǓ   g̷ʁrkOmIʵõɒǯağmuêT˷   u[oo_mŕYɜIʶ
+giuȽɁʵõ˻Ouoagrģüʥq̷̺˜YIͮĪq̋ľŔ[oȼǎa
+J
+                 
+
+
+
+                          2
+    
+
+                       第１章      はじめに
+
+1.1 人工知能技術が社会にもたらすインパクト
+        ƾIÇÍu©Õ¯Ä£ƉƖn̋g͠ʸ©Õ¯Ä£õ̺rROmILǝˬaɘɌM
+rͽaɓKqʯʽLêƶʭ˲MoOPȢ_OʯʽΔźoaoOPȋɋTq]gJe}n
+r΋Ɣ̠ˇɘuʣȪêuʭǟêƶʥrƟʒŘ˲SrkOmuʯʽv̋mUgTI[uȯ
+ʁS       Lêƶʭ˲MoOṔ̟ʘOgʯʽΔźo_m̤Ɲ]gJLêƶʭ˲Mvʯʽ˭Teu
+ƟʒʨȂ_mOƧ̾nNIȽhƚğquvƕŶ_qO_IýjmƚğSo̟OP[o
+Ί_OJeP_gʯʽuͨʺnIêTʭǟʘOm̋jmOoǝmOʭʥɲľΠ̭ʭI
+ȉ̷IƖ˪IǝˬI[       rŻlW̋ʂqpΡuÖͰðȶ_PǸ̌Tͻʣ]mOJe
+[uŽšȵnvLêƶʭ˲Ǹ̌MoŤxIàgɍ̡Ƨ̾oaJ
+         ƾ ȸIêƶʭ˲Ǹ̌rŻlW½ÐÌÆTŲʱuÛʝªÉÒºÒr ŀ ȚnŀĮ_IƉ
+UqΜUg       _gJeuʓʚuΣkvŲʱTΌƻrΊ_OÕÆnNIǵkǴuŘ˲qˉŲ
+T˵ƉnN[oS       ̠ˇɘr˝˩ʥq̝ȇ˒nvIÛʝªÉÒºÒuPqͪêrvȞ
+qOoǝmOgS       nNJk}Iêr_SnUqOΝǂqǝˬTǙ̖oˬQ              mUg
+ÕÆn]QIêƶʭ˲Ǹ̌Tê͉Qgo̟QJ}gI                ƾΑS   Ï¿Î o̟˷ľ
+͔ͦΠ̒ĺΡɘ˲ĔQg͓TƸ́]mOJevÇÌÏÕ©Õ˃uǦŽĀjmĹ͡I
+Ȓ˺IįľuPi̔Ȝuɘ˲˷ľn̋OIΝͩ͡͏qp΁Ɲ]gž΍nvêoɣzmͬ˼u
+qO͔ͦƟʒ_mOJ        ƾƅrvIͮĪqɭʢɰT̘kY        qSjgTǤ˭rƧ_mI
+êƶʭ˲Ǹ̌ɲʘa[onĭuɭʢɰTȋɋ]můǕ_goOPŽͩTq]gJ
+    }gI˷ľ͓ͅʗo_mȁgqOôɎTǦŽuŔhYn¨¡Õuɘ˲ƟʒaÌ
+°¡uPq®¢¨Ì¦Õ¡ËÒTIôɎɲľoǰKuĘUȣʖɲuĮĆǟƄQkkN
+J®¢¨Ì¦Õ¡ËÒrROmʘO          ǦŽuȷͮŃuÞrvêƶʭ˲Ǹ̌oŏƤrĩΉn
+UqOåāƭqWqOJ
+    ʒŶIȧȾȖǁvƭƔΝΟŃqpuʵõ̴ΖʷƖǸ̌rjmĝȺ_IȽɁrŞSjmȁ˜ʣ
+ƱŘ˲q$;/51@E uƟʒʨȂ_mOJe[nIêƶʭ˲Ǹ̌vÐÂ«¯®¢¨Ì¦Õ
+¡ËÒĹ͡a;%qpoġrʹ̖qŻʧǸ̌o]mOJ
+    [uPr͘ƾuêƶʭ˲Ǹ̌uͤƱvʵõrƉUqΜUg             _mRIȖǁôɎvȁ˜
+Ř˲ʵõƟʒyuŎľķo_mI}gʗɎķǉŃuÞɈǸ̌o_mȼǎ_IʯʽͻʣrƇƉqǺͅ
+_mOJ
+
+
+
+1 Society 5.0 ovILǙ̖quÔÕ¹£IǙ̖qêrIǙ̖qȯrIǙ̖qhYȋĂ_Iʵõ
+uɓKq²Õ¤rU˓SrƧǚnUIN êT͆uΝOÕ¹£ŕY IƾΟIǟĭIŷ
+źI̟̯oOjgɓKqͫOâ͊QIɲUɲUoǛͮrȳ a[ounUʵõMnNIêKr
+̽S]g a[oTȼǎ]Π˂ΥȼʷƖǸ̌ŻȾ̠ʜΡ
+4@@<CCC/-;3;6</?@<754;:7157-7A5:01D4@98Π ƾ ȸ ȧŔǓΡJ
+                                3
+1.2 人工知能技術がもたらす期待と不安
+ êƶʭ˲Ǹ̌vêͼʵõrƇƉqĆʦg      aoȼǎ]JāQwI˷ľ͔͓ͦvêuÙɱ
+ǨÅ£n͈UmOåȗɹ      _IƙğǟΝo̟mOJe_mIɓKqɘɌu˷ľ
+ŃTƟʒawêvʆΈqÿɎS      ̝ȕ]Iȯͼʥþ̑TnUIĄďuΝOíå͋ţrȯ
+ͼĴW[oTŘ˲oqJTuɭʢɰȋɋuPrIƨͺơuʭ̹˖ΛTǙ̖nISk˵Ɖ
+qȯͼTSSʭʥÿɎT͗͡Ń]IΝĽʐnʭʥʣ̘TŘ˲oqJ_gTjmIêƶʭ˲Ǹ
+̌vIʶgiuʵõĆĮrI̽SrIƙğƙǘra[or̀ʎa[oTȼǎ]J
+ ÖȣnIêƶʭ˲Ǹ̌uʣƱrÙƙǪ`mOêƕŶaJ˷ľ͔͓ͦTåȗ͈[_gž
+ś̳T̓óŔuSIêƶʭ˲ríåƍm_}PunvqOSIêƶʭ˲Ǹ̌TȰŒ_g
+ ƔpgivƖ˪aǨɛƊPunvqOSINOvI_S_g        êvêƶʭ˲rȒ   
+m_}PunvqOS˃uʠǜÔÙƙTʖ`PJ[uŽšȵuʨʥvI[       uʠǜÔÙƙrƧ_
+mǟǞrƙğǟƙǘç̂a[onvqWIʒʋȝʓ_IýTũΖSIýëǐɍ̡_mO
+WzUSȪ   Sra[onNJʒȯʁn{opˬǬaǙ̖uqOǘͲNTIÖȣn
+OWkSuÙƙ̖ˑrͽ_mvʒʋNOvëǐuƧǚȣɰɍ̡_mOW[oTčêΠêƶʭ˲
+Ǹ̌ĮʘaêʯʽͻʣaêΡo_mIôɎo_mIȖǁo_mǙ̖nNPJ
+ ʵõyuêƶʭ˲Ǹ̌uƫĞĮɲʘrvIʮȼʥrvÖƝuǮǜƧħTǙ̖qŘ˲ǟN
+TIǮǜÍ£rͮĪrƧħa[onêƶʭ˲Ǹ̌S        ǓĆʦvƉUWqJǯʇ_g
+ʵõnNǰTŴv̴ΖĜͤŴo̟mOJ˖ɸǯ͹IƭƔΝΟŃŷźʵõu˷ǏʥʣƱI
+ƙǘƙğn̽SqʖɲuƟʒI˷ʅʀƠƧˆqpu̴Ζ̝ɫ_Iȁ˜ʣƱŘ˲qʵõȉͤa
+grêƶʭ˲Ǹ̌ùʎTȼǎ]J
+     
+1.3 人工知能技術はこれまでの技術と何が違うのか
+ [}nȢ_OǸ̌uʤžrƧ_mǰKvȼǎ_IȯrvÙƙǪ`Ie       rƧǚ_mǸ̌
+ĀO[q_mʵõrŕƢ_mUgJëqdʉĭrêƶʭ˲Ǹ̌rͽ_mêͼʵõrŒ|aǌΐ
+ˬǬaǙ̖TNuhPSJ
+ êƶʭ˲Ǹ̌T[}nuîuǸ̌oȷͫPʁvILΠêu~TȁjmOΡʭǟʘOqO
+onUqOoǝmOg[oMͰĩʥnvNTðȶaǸ̌hoOP[onNJe_mI
+êƶʭ˲Ǹ̌vͮĪqʨɔÚQw®Õ¨S      ˷   Ɩ˪a[oTnUIǑKrȔ˻_mOW[
+onǞ͡rΝǂŃaJ]      rIêƶʭ˲Ǹ̌vI΋ɦɘŮ˷ľ͓Iȑƹ΋̪uPrʨr̘Q
+ƆǋuNǸ̌nvqWIanrNɓKqÈ´Õ¹£uĥēnɘ˲aǸ̌nNoOP
+ʁʹ̖nNJ½ÐÌÆuÖͰo_mɘ˲a[oS        Ie[rêƶʭ˲Ǹ̌TĮʘ]mO
+SpPSIpuʺǂĮʘ]mOuSTĮʘ˭S        vĩSrWO[oTƇOJ[}nvê
+TͩģǸ̌ĀjmOgTIêƶʭ˲Ǹ̌êuPrȦƕuͩģǸ̌{|eu}}Įʘa
+[oTŘ˲nNJk}IƆ̘S      vêƶʭ˲Ǹ̌ĮʘuȹʃvŅĭTkSqOJ_gTj
+mIʵõuɓKqǸ̌¡ÕÒuÞrȦrêƶʭ˲Ǹ̌TĀmOŘ˲ǟTNINOvê
+ƶʭ˲Ǹ̌uĮʘ̸jmOmƟ΄rv΁Ɲʥr_SĀmOqOSğWĀmOqOŘ˲
+ǟa   NJk}Iêƶʭ˲Ǹ̌vIeuͻʣ͡ǂT͡WƆS      veuľÿT̘QrWOǸ̌n
+N[oTƇO[oS   Iʭ   qOͼrǰKuŢrȰŒ_ΝǂŃ_mOWoOPŘ˲ǟˬQP
+
+                          4
+J
+ QrIǒɁŹuǸ̌ΎȢrƧ_m̋jmUgƧǚrĹQmI×̣n͚zgPqêƶʭ˲Ǹ̌
+uʉǗrǚ`gƧǚTǙ̖nNPJ
+
+1.4 懇談会の目的
+ Lêƶʭ˲oêͼʵõrͽaǭ̶õM vIĥ;ǁʉťƉ˶ΠʷƖǸ̌ȖˆǾǊΡuØrIȧȾ
+TʨȂaʵõ$;/51@E Ɵʒaȉͤķoqêƶʭ˲Ǹ̌uʯʽͻʣoĮɲʘĒğrͤ
+gr          ƾȸr̤˨]gJʉrIʒƕaêƶʭ˲Ǹ̌I}gv͘OƩɁƟʒaŘ˲ǟ
+TΝOêƶʭ˲Ǹ̌eTȰŒ_gʵõrʄʁNmIpuPqĆʦTȼǎnUSIˬǬa
+zUʁvýSIëǐŔ˕zU̴ΖȣŞǟvýSȪ                                  Sra[oʨʥo_ɲľ̋jm
+UgJ
+    êƶʭ˲Ǹ̌TǰKuʵõuɓKqΔźrȰŒ_kkN[oˬǬ_IʹľI̓͢IčêŞY
+Õ¹£IƧ̪ÔèɳoOPð̎ʥqΤkuĩ͵rkOmɓKqåāΠÕ£ΡȃZmɍ̡a
+ǴɰojgJ}gIêƶʭ˲Ǹ̌rͽͣ_mŏƤrĩΉnUqO®¢¨Ì¦Õ¡ËÒuåār
+kOmƧ̾o_gJe_mIêƶʭ˲Ǹ̌ĀPêIͻʣaêIȽɁuʵõkWƔp
+ŠɓKqÛðuêKIȟŃ˽̌ǾPêIôɎIe_mȖǁqpɓKqͽć˭uʿžΠÄÎ
+ªÔ£­ÕÁÎ©ÕΡS                   Iêƶʭ˲Ǹ̌oêͼʵõrͽćaʹ̖q̷ʁȪ                    Sr_Iëǐ
+˛˜ʥr̋Pɍ̡uˀˡoq[oʨȂ_gJ
+         
+
+
+
+
+2   http://www8.cao.go.jp/cstp/tyousakai/ai/index.html Π   ƾ   ȸ   ȧŔǓΡ
+                                                  5
+           第２章           人工知能と人間社会に関する検討動向
+
+ êƶʭ˲Ǹ̌ʭʥɘɌΠ5:@188531:@9-/45:1ΡuǞ͡qͤƱr÷OIeuêͼʵõyuǌΐ
+rkOmɍ̡aľUTÛʝʥrŜȯrOWk͈[jmOJʉǗʥq[ovIêƶʭ˲ʯʽr
+ͽćaʷƖ˭IƶƖ˭e_mȖǁɘͽu~q                           bIîĩ͵uʯʽ˭ôɎơIe_mÖ˹Ƹɥ
+ǉOͽǘȁjmO[onNJ
+
+2.1 世界の動向
+         ƾrÇÍêƶʭ˲ƖõΠ??;/5-@5;:2;>@410B-:/191:@;2>@525/5-8
+:@188531:/1nvƖõ͹Tàƫaȹ̹˭õśÿIêƶʭ˲uʣƱTʵõrŒ|a͹
+ȼʥǌΐrkOmɍ̡_gΠ                      ">1?501:@5-8"-:18;:;:3%1>9A@A>1ΡJ
+     ƾreuʣƱǋo_mI£¨Ò»Õ°ƉƖΠÇÍś̊ŴΡrL!:14A:0>10E1->?@A0E
+;2>@525/5-8:@188531:/1MoOPɲľTʣ͌_gJêƶʭ˲uʣƱTʵõrŒ|a͹ȼʥǌΐ
+rkOmƎɘoǮǜΠ;<<;>@A:5@51?-:0/;:/1>:?ΡIɰǏĐʓuũΖqpʯʽ˭Þǘuɒǯ
+ŧT˛˜ʥr̵ɆÔɍ̡_mOJ                      ƾuÏÃÕ¯ nvI                ƾ}nuĤŹʥqńˊͱƸǧƝ
+_mè͠IơǃI¾Î£qpĩ͵\orêƶʭ˲ʯʽuǌΐrkOmɍ̡̋OIȖˆȋ̟
+̋jmOJ}gI               ƾ}nrvêΘTêƶʭ˲rɽ|]PqǮǜvqOoȪ̟_mO
+Jɔɼ̙ɊuįƝ̋PˊŴ΋ɦ΋ƔƖõΠΡvI                                ƾ   ȸr      ŝñ×uêƶʭ˲Đ
+ʓuȹ̹˭uǨ̘ΆmL@45/-88E853:101?53:'1>?5;: MĠͻ_g JeuʨʥvI
+˷Ǐʥqʭ˲¡£­Æuğmuͻʣ˭rĐʓʥq̚ʁˬǬazUʹ̴̖Ζȋɋa[oIR
+xĐʓȂͷuɔɼŃyuȋ̟nNJ
+    ÖȣIÂ£¯ÒΠÇÍś̊ŴΡr                      ƾrʣ͌_gɥͼ˷à˕˧LA@A>1;2521
+:?@5@A@1MvIêȟʵõʷƖ˷ʅʷƖqpɓKqĩ͵uʯʽ˭u~q                                     bIċĚIƖ
+ʖIôɎơqpƇɓq˱ȱkêTΆ}Iêƶʭ˲uʣƱÞǘr¶­´Ð¢ÕIɈĢ
+ŮIɦĎƄľTêΘrg                _PŌ΂ǟΠD5?@1:@5-8#5?7?ΡǷPJƣïͶŎͅo_gʵ
+õr˻Oêƶʭ˲Ǹ̌uguʯʽĺǯʯʽõuͻĕIŪ̄ɲľ˃̋jmOJɨʘêƶʭ˲
+Π>@525/5-81:1>-8:@188531:/1uƩɁʥŌ΂ǟêƶʭ˲rͽaƙğǟΠ
+$-21@EΡuũΖǷPJ
+    «£»Õ°ƉƖΠ˾ŴΡuLA@A>1;2A9-:5@E:?@5@A@1MΠ                          ƾĵ̤Ρn
+vIêƶʭ˲uƙğǟŠmêΘuƕçrͽŌ΂ǟΠD5?@1:@5-8#5?7?ΡTʯʽ]mO
+JÒ¼Í«¢ƉƖuL1:@>12;>@41$@A0E;2D5?@1:@5-8#5?7?$#MΠ                         ƾĵ̤Ρ
+
+3 Peter Stone, Rodney Brooks, Erik Brynjolfsson, Ryan Calo, Oren Etzioni, Greg Hager, Julia
+Hirschberg, Shivaram Kalyanakrishnan, Ece Kamar, Sarit Kraus, Kevin Leyton-Brown, David
+Parkes, William Press, AnnaLee Saxenian, Julie Shah, Milind Tambe, and Astro Teller. "Artificial
+Intelligence and Life in 2030." One Hundred Year Study on Artificial Intelligence: Report of the
+2015-2016 Study Panel, Stanford University, Stanford, CA, September 2016. Doc:
+http://ai100.stanford.edu/2016-report Π2017 ƾ 2 ȸ 24 ȧŔǓΡ
+4 http://standards.ieee.org/develop/indconn/ec/autonomous_systems.html (2017 ƾ 2 ȸ 24 ȧŔǓ)
+5 Beneficial AI 2017.   https://futureoflife.org/bai-2017/ (2017 ƾ 2 ȸ 24 ȧŔǓ)
+                                               6
+nvIɨʘêƶʭ˲Þǘo_mʷƖǸ̌uʣƱrjmʖ`PÛʝʥqʰɽʥŌɘΠ8;.-8
+-@-?@>;<45/#5?7?Ρuãɻǌΐ̨ĄTq]mOJ
+    ôɎrROmêƶʭ˲ʯʽrͽaĐʓƒŧõΠ:?@5@A@5;:-8#1B51C;->0#Ρ̤˨
+aľUI̔ȜôɎT·Õ¯±Õ¡«½˗xêƶʭ˲TʵõĐʓrǥǌΐŒ|]qOȣɰ
+ġȹ_IʵõrŒ|aǌΐrkOmɝ_WǀŽaí˕~ÿ[oTŽͩ]mOJ
+    ȖǁɘͽŴ΄ɘͽnŜɓuɍ̡TƑ}jmOJāQwIÇÍś̊ŴnvÁÑ¯µ
+£ʷƖǸ̌ȖˆƯΠ(45@1;A?1!225/1;2$/51:/1-:0%1/4:;8;3E";85/E!$%"ΡTÖ˹Ƹɥ
+ŐĹaÑÕ¡Ë«½                   ƾȸS       ůƟȤ_Iêƶʭ˲Ǹ̌Tʵõrg                        aĆʦoÍ£
+rkOmɍ̡oƧ̪̋jgΠŜƾ                       ȸrŽšȵĠͻΡJ˖ɸŉķͻʣɘɒΠ%41!>3-:5?-@5;:
+2;>/;:;95/;;<1>-@5;:-:01B18;<91:@!Ρnv®¢¨Î˖ɸȖˆƒŧõΠ%41
+;995@@11;:535@-8/;:;9E";85/EΡTÞǘoqIêƶʭ˲Ǹ̌Š®¢¨Ì¦Õ¡Ë
+ÒTʵõrg          aĆʦoeugrǙ̖qȖˆɍ̡a̩~ƑgJ
+
+
+2.2 日本の動向
+ ȧȾuêƶʭ˲ƖõvIƖõ̬uŝʸo̎ːuƄȴTʵõʥrƉUq̪Ζrqjg[oƌɘo
+qIÖ˹ʵõrRYêƶʭ˲uΝO½Ï¦Ò£oǉOÒ·¯ˬǬ_mIʵõouȈʁ
+ʹ̖̚aPrqjgJe_mIêƶʭ˲oʵõouͽrkOm̷̺Iˬƥ_ʵõrʣĊa
+[oʨʥr             ƾ   ȸrĐʓƒŧõTʣ͌_I                  ƾ ȸrvĐʓȂͷTĠͻ]gJʷƖǸ
+̌ʵõ̷êƶʭ˲uʯʽ˭TΆ}L#Π//1<@-.81:@188531:/1C5@4#1?<;:?5.585@EΡM
+ʯʽõvêƶʭ˲uʵõʥŕƢǟrͽ_mʒž̚ƥÒ¨¹ÊÕ̋PqpƧ̪Þǘo_mɍ
+̡_mOJǦŽ³«¯ÑÕɰƖõuÐÂ«¯ɰʯʽõvʵõįǂuŴ΄ʥʯʽľŞoɵ̈́˭ĉ
+̻rkOmɍ̡̋jmOJ[uPrɓKq̚ʁS                                 uŔ˕T̋mOJ
+ ˠśʷƖǸ̌Ô´¿Õ¡ËÒõ̺TˆƝ_                              ƾS   Ƒ}jgL˂ΥȼʷƖǸ̌ŻȾ̠ʜM
+vI͹ȼʥ̚͵rʿiüˍʥSkÖ͂_gʷƖǸ̌ȖˆƟ̋aguunNJʨȂazU
+ʵõo_mu$;/51@E uƟʒugrêƶʭ˲Ǹ̌ʹ̖qǍĴǾP[orĹQIʷƖǸ̌
+´¿Õ¡ËÒoʵõouͽćɷŃuʹ̖ǟIeugrĐʓʥÔɰįǂʥÔʵõʥŔ˕̋Pz
+Uoʴ]mOJ}gIˠĿʫv                       ƾ ȸS        L³«¯ÑÕŃɍ̡õ̺M̤˨_Iêƶ
+ʭ˲u³«¯ÑÕŃTʵõÔ˖ɸrg                         aǌΐÍ£ųĄIëǐu̴Ζuɍ̡̋OIʯ
+ʽͻʣuŎİĠ̎_gJ                 ƾ    ȸS     vL³«¯ÑÕʵõȉͤõ̺Mo_mǆU˜Uɍ̡
+uģüŃͤmOJ
+
+6
+
+https://obamawhitehouse.archives.gov/sites/default/files/whitehouse_files/microsites/ostp/NSTC/pre
+paring_for_the_future_of_ai.pdf Π2017 ƾ 2 ȸ 24 ȧŔǓΡ
+7 ɂƮ     (2015)Iêƶʭ˲ƖõĐʓƒŧõuŔ˕~Iêƶʭ˲I30(3), 358-364.
+8 ˂ΥȼʷƖǸ̌ŻȾ̠ʜ http://www8.cao.go.jp/cstp/kihonkeikaku/index5.html Π2017 ƾ 2 ȸ 24
+
+ȧŔǓΡ
+9 LLAI ³«¯ÑÕŃɍ̡õ̺MÞͼŽšȵuĠ̎Mhttp://www.soumu.go.jp/menu_news/s-
+news/01iicp01_02000049.html 2017 ƾ 2 ȸ 24 ȧŔǓJLAI ³«¯ÑÕŃɍ̡õ̺ Žšȵ 2016 u
+Ġ̎Mhttp://www.soumu.go.jp/menu_news/s-news/01iicp01_02000050.html Π2017 ƾ 2 ȸ 24 ȧŔ
+ǓΡJ
+                                                7
+                    人工知能は人間を超えるか？
+
+ Ò£»¡ËÒΠ$ΡuÛʝnvêͼoŜ˃}gveñ×uʭ˲ȁiIêΘu˳
+Ɠo_mI}gvêͼoŜ`Pr̃̈aƕŶo_mêƶʭ˲˃TȊSmUgJȮëIêƶ
+ʭ˲oêͼʵõrͽ_mÛʝÞn̷̺]mOTIeuÖͰvIeP_g $ rRYêƶʭ˲
+ęuɳɪnOuNunvqOSJñØnvIêƶʭ˲oêͼʵõrͽ_mëǐ]
+ r̷̺ɷ×nu¸Ò¯oazWI$ rRYêƶʭ˲uāŔ×ZIeu̅ʅǟ˃r
+kOmˬƥ̩~J
+ êΘuˈʓɽçôêƶʭ˲vȭʜL¨ÕÅ³Õ¨ÕMLÄ¯Í«£MIɾʜLɿuΞ
+ȽɁˣM˃ƇWu $ nȊSmUgJȭʜL              ƾƗƜuȥMLÍÒMIL¼ÏÕ°Ì
+Ò±ÕMIL£ÔÄ±M˃nvêͼrŌƠĹQPoaêƶʭ˲Tʤž_gJ
+ êͼoŜ`Pr̃̈aêƶʭ˲ȭʜLÒ°ÍÊÕ #              MLM˃nȊSmU
+gJȭʜL1>Mnvêƶʭ˲oêͼuʛǟouǠǩTȊSmOJ[P_gêƶʭ˲rkOm
+vIɘɌo½ÐÌÆS      ɒǯ]êƶʈnNqT           êͼoŜ`WǘȁkPr̘Qʟ
+͆qƕŶopPͽjmOWzUSIeeeuPqêƶʭ˲ͻʣ_mOSoOjg
+̷̺TN* +J
+ [uPqΝǂqʭǟȁkêƶʭ˲uĨʒuŘ˲ǟrkOmvIêͼu¤ʑ* +ʱuª
+ÉÒºÒ* +I¿­ÌÒǱͿɘ·Ð«¯* +rŀĮahYnqWIȠʓ*+Ƭ̲*+oOj
+gĵÿrͽaΔźnêͼr͙Poa˃Iȷ͘uêƶʭ˲ʯʽuǞ͡qͤƱ͐}Qo
+ÖƝu̲ǓķTNPrǝQJ
+ _S_IʒƟuêƶʭ˲Ǹ̌vğmÒºÊÕ¨½ÐÌÆIōiI̤̠˭uʨʥģüʥq
+̠ˇǴΒo_m̎ʒ_gunNJɷƳƖ˪v`oa͘ƾuͤɟrΝǂqƖ˪ɘ˲
+ĔQPrvqjgTI×͚_g $ rRYêƶʭ˲oͫOI˷             ʨʥ̤Ɲa[ovn
+UbIŻȾʥrv̤̠˭uǨų͠rľÿau~nNJɘɌƖ˪˙̠ʥǴɰrŻlWêƶ
+ʭ˲Ǹ̌vȯr̤̠˭uǨųrɮqOľÿa[oTN_I¶TNw̱ľÿvaTI
+̤̠˭TǨų_qSjgʨʥ˷       ̤Ɲ_IeuͪǯrŞYmśʓʥqľÿaŘ˲ǟv¦Ð
+r͘OJʒƟuêƶʭ˲Ǹ̌rÚQ        ʨʥovIǳÚuĞķS         ̤̠˭TȻĨķǓo
+OPʉƝuģüʥq̴Ζrîq       bIΣkuêƶʭ˲Ǹ̌Tʂ_PuvʜęΏƃṷ̹˷
+ľ͇̋oOjgčĭģüʥq̴Ζrʞ}Jʒƕaêƶʭ˲Ǹ̌vêͼoŜ`Pqɨʘʥq
+ʭǟȁkunvqWIčĭģüʥq̴Ζ˷ľʥrͥ̋arͨVqOJ
+ ëǐuȜƇWuĶʥq¼ÏÕ£ÎÕrIʒƕaǸ̌uǅ͹ˢ×rvqOIǒɁoğW
+ʟqŎʓrŻlWµÕ°§»¯Tʤža[onIeP_g΁ʝǵiʰI
+ɨʘêƶʭ˲NOv $A<1>5:@188531:/1ΠN       ʁnȷΕ˴ȪȲqêͼ×ůʭǟȁ
+kò̲ʥêƶʭ˲ *+ΡTĨʒ_IêΘyu˳ƓoqŌ΂ǟvƚğrvşƝnUqOJ}gI
+êƶʭ˲Ǹ̌ǥʘaêͼTʵõrƠŒ|aŌ΂ǟrkOmvIîuN                Ǹ̌oŜɓI
+ʒȯʁnŇĩɱǨǶPǙ̖TNJ_S_Iêƶʭ˲T˷                ʨʥȁiIêΘrŌƠĹQ
+
+                                 8
+oOP $ uPqÛʝTʒƟuuoq̅ʅǟvƭqWoëǐȜŇƾvɏmúOo̟
+jmOunvqOSJ
+     ƾ     ȸrĠͻ]gˊŴÁÑ¯µ£uŽšȵL">1<->5:3 2;> @41 A@A>1 ;2
+>@525/5-8 :@188531:/1M*+rLɨʘêƶʭ˲vƭqWoëǐȜŇƾuͼvƟʒ_qOh
+PMoȵSmOJ!:1A:0>10)1->$@A0E;:>@525/5-8:@188531:/1                 *+nv
+£¨Ò»Õ°ƉƖTÞǘoqjmêƶʭ˲oêͼʵõrͽa̷̺ɷmOTI                                              ƾ 
+ȸrĨ]gŽšȵL>@525/5-8:@188531:/1-:05215:                    M*   +rvLƉ̊ːrȵS
+mOPqãɻovʟqIêƶʭ˲TêΘu˳ƓoqPq̖Űv̘kS                                          qSjgMo
+ȵSmOJɘɌƖ˪ƨͺoa -50A ʵu :0>1C 3 ɤvIêΘrŌƠĹQÐÂ«¯
+rkOmǘͲauvɿȬnuêŖͨĳǘͲaPquho͚zmO*                                        +J
+ ÖȣIêƶʭ˲ƑoaLêΘɽçuŌɘ D5?@1:@5-8 #5?7?MkOmʯʽ_mO
+A@A>1;2521:?@5@A@1*   +vIÞǘʥqʯʽƧ̾êͼoŜ˃uʭǟȁkêƶʭ˲
+őv $A<1>5:@188531:/1 o_mOʓʚrkOmI
+                                LeP_gêƶʭ˲TêΘrÚQPǌΐuʕ
+Ɖ]ˬǬawIëS              ʯʽazUnNMo͚zmO*                   +J
+ ëǐIêƶʭ˲oêͼʵõrkOm̷̺ͤmOW×nʹ̖oquvI×̣                                          kuƧɏʥ
+qÃ¢¡ËÒu¶ÌÒ£IōiIǸ̌Ï¿ÎuͤƱɝʲrǹȍ_g×nuŷr͌uʬOgʒƟ
+ʥq̷̺oI̅ʅǟrͽ               bƻrȷǥuåǫǧƝ_g̷̺u¶ÌÒ£ƏýrŔSInv
+qOhPSJ
+
+
+                                      参考文献・URL
+
+
+    ɂƮ̽̕ʙ̽ȪżɴÖɞʙ˾Ȫ͹̼Șřſ͵̰ȺͰƛěɩͼȹɬ͹
+    ČĝɄêƶʭ˲oĐʓêƶʭ˲                       
+    £­ÕÓÒÔ¿ÕΠ̂ΡŵưȖ΅˫̥Ƌ͍uGÑ¯§ÒH½Ð¢¯
+    êƶʭ˲v¤ʑuƈ~ȩƵȵǲ                      
+     4@@<?011<95:0/;9>1?1->/4-8<4-3;
+     4@@<CCC4A225:3@;:<;?@6<1:3-031@6-<-:-52534@1>,.,  4@98
+   4@@<CCC4A225:3@;:<;?@6<         /412C-@?;:,:, 4@98
+   4@@<CCC2A:-/6<F759-3A>1,-5
+   5/7;?@>;9$A<1>5:@188531:/1"-@4?-:31>?$@>-@1351?!D2;>0&:5B1>?5@E
+       ">1??    
+   4@@<?;.-9-C45@14;A?1->/45B1?3;B?5@1?012-A8@2581?C45@14;A?1,2581?95/>;?5@
+       1?;?@< $%<>1<->5:3,2;>,@41,2A@A>1,;2,-5<02
+   4@@<?-5     ?@-:2;>010A
+      4@@<?-5   ?@-:2;>010A    >1<;>@
+      4@@<?CCCC5>10/;9.>-:08-.     -:0>1C:3011<81->:5:39-:0-@14A9-:?:;@
+       6A?@9-/45:1?
+      4@@<2A@A>1;28521;>3
+      4@@<2A@A>1;28521;>3      -52-=
+
+
+                                            9
+             第３章    懇談会におけるアプローチ
+
+
+ Ⱦǭ̶õnvIͭOȽɁuʈ̯ƻ̹ʥrvNQqOÙƙrkOmǽ̾ʥq̷̺aunv
+qWIŷr͌uʬOgģüʥq̷̺ʨȂ_gJeugILʒƕaêƶʭ˲Ǹ̌INOv͘
+ȽɁrƟʒa[oTʲƟqêƶʭ˲Ǹ̌MƧ̾o_Ie      Tʵõrg   aǌΐɍ̡a
+gILåārŻlW½ÐÕªMȆʘ_gJ}bIOWkSuĩ͵rkOm͘ȽɁęǧƝ
+_IĐʓIɰI˖ɸqpu̜ʁS      IɓKqģüʥåāīȃ_gJeu΄Iȹ̹˭nNǭ̶õ
+ɒǯŧŚĩ͵uƨͺơIƟ΄rôɎɲľ̋P˖ŭ˭qpuǨ̘rŻlUɍ̡_gJ}gIƼǀ
+OǨ̘åāΆgrIÒ¨Õ³«¯uÁÕÆÀÕ¢ĀjgƧ̾΁Ɲ_qOǨ̘ŁΆ
+êƶʭ˲oêͼʵõuͽćr˸ţuNêΆm̋jg¼ÏÒ£¯ÕÅÒʥÑÕ¡Ë«
+½IȧȾʷƖȽɁΚnuƔpŠÖ˹Ɂž˭Ƨ̾o_gÑÕ¡Ë«½̋OŐˬr_gJ
+e_mI̔Ȝuåārġ͠a̷ʁǽĨ_ȝʓ_gJ[uPra[onIāQw·ʘuũΖ
+rkOm˖ɸʥ̜ʁu~q      bț˰ʥ̜ʁʯʽͻʣʥ̜ʁqpS   ɍ̡a[oTŘ˲oq
+Iêƶʭ˲Ǹ̌oʵõuͽćrkOmuƇ΍ʥqɍ̡T̋gJ
+
+3.1 分野の選択
+ êƶʭ˲Ǹ̌vI͘ȽɁuʖɲuɓKqo[rĞjmWoãǧ]Je[nIʖɲroj
+m͒͘nN[oȧȾuʗɎķuǉ~qpˬǬ_mIΤkuĩ͵LʹľMIL̓͢MILčê
+ŞYÕ¹£ΠņʢIͶ̉ŠΡMRxLƧ̪ÔèɳΠÅÊ²Õ¡ËÒΡMɍ̡Ƨ̾o
+_mͯǼ_gJ[    vIêƶʭ˲Ǹ̌Tͮʘ]čKuǸ̌ǨţaunqWIǸ̌ɲʘ
+aĩ͵Ǩţ_Ie[rŠ}ɓKqåāɍ̡_gJ
+  l   ʹľΧ êʈuʹľrͽĩ͵Jåāo_mvI˷ľ͔͓ͦIÌ°¡I°ÐÕ
+     ÒͲ͜qpJ
+  l   ̓͢Χ ʈu̓͢ÿŦuįÿrͽĩ͵Jåāo_mvI˷ľŃ_g̓͢ÌÒĮ
+     ʘa£ÄÕ¯ƶžIêuÿɎ˲ķ̒˞ÔȀǈaÐÂ«¯£Õ¬Iêƶʭ˲Ǹ̌r
+     ˌ˥q̓͢Ǹ̌I˽̌ơͪêuÿΙǸ̌u̔̓qpJ
+  l   čêŞYÕ¹£ΠņʢIͶ̉ŠΡΧ čêrͽaǦŽÕ¹£ĩ͵Jåāo_m
+     vIÒ¨Õ³«¯¡Ë«ºÒɍ˒nuȉ̆Õ¹£Iêƶʭ˲Ǹ̌ɲʘaĒ
+     ǄÔņʢÕ¹£IÐÂ°¶    ÕÎÍ¤ÆŔǆIÚĊƦɆyuêƶʭ˲Ǹ̌ǚ
+     ʘqpJ
+  l   Ƨ̪ÔèɳΠÅÊ²Õ¡ËÒΡΧ êŜƂêoɘɌouÅÊ²Õ¡ËÒrͽ
+     ĩ͵Jåāo_mvI͆ũǚ˅uguƧ̪Õ¢Ò¯IªÉ«¯Â«¯IɘɌ˫̥
+     qpJ
+ 
+
+                          10
+3.2 検討する観点
+ ʷƖǸ̌oʵõouͽćrkOmvI$@45/-813-8-:0$;/5-8??A1?oOPʘ̯T
+NI¸¯´Æ½Ð¢¯ñɁIĐʓʥIɰʥIʵõʥ̜ʁrkOmɍ̡a[oTɧ                     
+mOJȾǭ̶õnvIêƶʭ˲Ǹ̌TʗɎļĘrŒ|aǌΐuƉU]ˬǬ_m˖ɸʥ̜ʁI
+ʵõuƄŃoȽɁʵõuɒǯŧoqƔpͪyuǌΐˬǬ_mț˰ʥ̜ʁIêoʵõrͽa
+ɍ̡ĥƢêƶʭ˲Ǹ̌uʯʽͻʣrœȭagrʯʽͻʣʥ̜ʁĹQIΦku̜ʁS                     ̷ʁ
+ɍ̡a[oo_gJ
+n   Đʓʥ̷ʁΧ êƶʭ˲Ǹ̌ug     a˗ɃrƧaĐʓʥē΍ͩǖǟIĄďqprkO
+  mJ
+n   ɰʥ̷ʁΧ êƶʭ˲Ǹ̌Įɲʘa΄rͽͣaɰǏƌˎIêƶʭ˲Ǹ̌ug                a˗
+  ɃrƧa̓óIčêǦŽĉ̻qprkOmJ
+n   ˖ɸʥ̷ʁΧ êƶʭ˲Ǹ̌Įʘ_g˖ɸɲľeĮɲʘa΄uĘUȣrkOmȕ
+  ·ʘ˭čêIôɎIe_mȖǁS         ~gͲǬazUʁqprkOmJ
+n   ț˰ʥ̷ʁΧ êƶʭ˲Ǹ̌TĮɲʘ]oUrț˰vpPƄuSIț˰ȋĂaē
+  ț˰ŕYēu̚ʁS        uũΖqprkOmJ
+n   ʵõʥ̷ʁΧ ɓKqêoêƶʭ˲Ǹ̌ouͽȣIêƶʭ˲Ǹ̌uĮɲʘrjmĲɚʥ
+  rʖ`PʵõũΖqprkOmJ
+n   ʯʽͻʣʥ̷ʁΧ êƶʭ˲uʯʽͻʣ˭TɱǨazU[oIĮʘ˭Têƶʭ˲Ǹ̌uʯʽ
+  ͻʣrpPƧħazUSqprkOmJ
+ Ǚb_[   u̜ʁrŏƤrĩY      qOũΖNIĐʓoɰǏqp̔Ȝu̜ʁr͎T̷
+ʁNTIĆƞʥr[       u̜ʁnȝʓ̋OI̔Ȝu̜ʁr͎urkOmveuȨ̟Œ_
+gJ
+  
+3.3 共通する論点の整理へ向けて
+ ×̣uPr kuĩ͵LʹľMIL̓͢MILčêŞYÕ¹£ΠņʢIͶ̉ŠΡMR
+xLƧ̪ÔèɳΠÅÊ²Õ¡ËÒΡMrkOmIƇWuåāģüʥrɍ̡_IĐʓʥIɰ
+ʥI˖ɸʥIț˰ʥIʵõʥIʯʽͻʣʥ̷ʁrkOmefɍ̡_gǐrIġ͠a̷ʁuȝ
+ʓʨȂ_gJeugrIŚĩ͵nu͘ȽɁuʵõƟ̐āð̎ʥq  kr˘͖~Ie
+rͽaŚåāoĩ͵oS       q̎ÿǯ_gJɚrI̜ʁ\orΠāQwĐʓʥ̷ʁrkO
+mΡIɗßƷaPrčĭåā̘mOUIĩ͵}gTjmġ͠_mO̷ʁˬƥ_ȝʓ_
+gJ
+  
+
+
+
+
+                               11
+分野別の事例の深掘り検討       論点の絞り込み          共通する論点の抽出
+                                          個人向け     対話・ 共通する
+                              移動    製造    サービス     交流   論点
+
+
+
+
+                              倫 理 、 法 、 経済 、教育 、社 会、研 究開発 ごと に
+                                     事 例 に 共 通 する論 点を抽出
+
+
+                                                                 
+               論点整理のための分野別事例の表（右）の導き方
+
+    [uȣɰʘO[onIǽ̾ʥq̷ʁu~̷̺aunvqWIŷr͌uʬOgIʒƟʥq
+ũΖNOv͘ȽɁrģüʥrǧƝnUũΖo_m̷ʁǽĨa[oTŘ˲oqjgJgh
+_IÛuÞuåāazmīȃa[ovÙŘ˲nNI[P_mǽĨ_g̷ʁTǙb_ğm
+˝˩_mOYnvqO[orɱǨaǙ̖TNJåārjmeuȯͼ͕̙ɕrvƇƭu
+ͫOTNIāQwǥǨȁk˭rêƶʭ˲Ǹ̌uĮʘIêƶʭ˲Ǹ̌uǧƝƆÔʨʥƆuĮ
+ʘIêƶʭ˲Ǹ̌T˷Ǐǟȁiʪærŉ̵_mʵõrǌΐaPqåǫqprƧaɍ̡vŇ
+ĩov̟QqOJ[P_gũΖrkOmvIĩ͵ƨͺʥq˕˧rROmëǐuɍ̡TȻ}JȾ
+ǭ̶õnvƟʒǟʹ̖ǟuΝOåārʄʁ˘Iɍ̡uˀˡo_m̷ʁo}ogJ
+
+
+
+
+
+                        12
+     第４章   人工知能技術と人間社会について検討すべき論点
+
+
+     êƶʭ˲Ǹ̌vêͼuʭʥ˲ķőʂ̒ĺ_IÖͰðȶ_IȀǈa[oŘ˲oaJ_
+gTjmIêƶʭ˲Ǹ̌vʶgiuʵõrƇƉqĆʦg     _IĒğrĮɲʘ]wȁ˜Ř˲
+ʵõuǉķqȉͤķrq[oTȼǎnUJgh_IeuƟʒugrvêƶʭ˲Ǹ̌oêͼʵ
+õuͮĪqͽćrkOmıjmˬQIɼĔ_mRWǙ̖TNJeugrëʒŶɍ̡_ˬǬ
+azU̷ʁ}ogJ
+
+4.1 倫理的論点
+     êv[}nɓKqͩģɘɌĮʘ_mIʋɯrǚ`gͯǼĬȡ̋OI̋ľ_mUgJ
+ʒŶIêƶʭ˲ʯʽuͤƱrjmI˵Ɖq®Õ¨rŻlOg͗͡nɝʲqĬȡIň˷ľʥqȒ
+ÿI˙̠rŻlWʥʲqͯǼTŘ˲oq[oTƁQmUgJêƶʭ˲Ǹ̌TêuͯǼĬȡȓ
+ȏa[onIeuɝʲ]͗͡]vŞ×_IêTʊ_aO̭ʭ¶£đ̘ uǌΐŕY
+qOĬȡTŘ˲rqqpƇWuĆʦTg     ]Jgh_IǙb_ğmêƶʭ˲Ǹ̌rƒ
+tunvqWIĬȡaʋɯƧ̾rǚ`mIêrĬȡoêƶʭ˲Ǹ̌rŻlWĬȡu¶Ì
+Ò£ˬǬaǙ̖TN Jêƶʭ˲Ǹ̌T]    rͤƱ_mOWoIêƶʭ˲Ǹ̌ÔɘɌoêͼ
+ouͽćǟrǑKrƄŃT~     Ř˲ǟTNJƩɁʥrveuȢgqͽćǟrŻlOmIȢg
+qĐʓ̜Tǋǯ][oãǧ]J（人工知能技術の進展に伴って生じる、人と人工知能技
+術・機械の関係性の変化と倫理観の変化）
+     êƶʭ˲Ǹ̌vIêr_SnUqOoǝmUgΝǂqǝˬȉ̷΢̋ľ̒ĺÔðȶnU
+PrqkkNJeuÖȣnIêƶʭ˲Ǹ̌ǚʘ_gÕ¹£˃rjmêuǘ̋ľTȒ
+ÿÔ̮ƫ]gĮĄÔΒùlY]gIǪǦIǩǦIĊɀrĘUSY     [oTNoa
+w Ie[rvÙƙǮǜTʖ`Ř˲ǟTNJʉrIȾêTɦlSqOo[ne    T̋
+žśrvIĐʓʥɍ̡TǙ̖nNPJ（人工知能技術によって知らぬ間に感情や信条、行
+動が操作されたり、順位づけ・選別さられたりする可能性への懸念）
+
+
+
+10 ʲ̧¶£Π˷ĩuò̲rͱśuOǦŽͨĳ̨Ą_Iʲ̧rʹU˨W̭ʭʥėŞΡɉȾʥ
+ƺƲÌÕΠêűľu˗ɃʋɯÔʔƀčêʉǟucOra̭ʭʥėŞΡqpṷʭ¶
+£IRxčêʥ˱ȱȟŃʥ˱ȱrŻlWđ̘qpJgh_IɘɌƖ˪rŻlWêƶʭ˲Ǹ̌vƖ˪
+®Õ¨uđrjmĨķ]ĬȡTđ[oʭ mRΠÎÍ¤Æ¶£ΡIeu¶
+£rÙĠƽTʖ`[o΀XguʯʽTɧ J
+11 āQw˟Ǟåǫr͔ͦ˭ΣŝuťoƧŞ͓uƇȜuâŧuťupi șPSĸĮÔĽʘrŻlO
+mĬȡŘ˲Svʒʋnv̝YqOĐʓʥũΖnNJêv˷ĩuťƘPoaS_qO_Iê
+ƶʭ˲Ǹ̌nvĽʘrŻlOmƇȜuťƘPr̤Ɲa[oŘ˲nNJe[nʒɢ΃nvI
+êoêƶʭ˲Ǹ̌uĬȡu¶ÌÒ£pPaSTũΖoqJ
+12 ŗWS ǀš˃nŜɓuǮǜTNIÖƝu˷à̙įɱǨū͈Tq]mOJêƶʭ˲Ǹ̌ʘ
+OžśrvIÕ¹£ǀšTčêʉǟrǚ`mȷͮŃ][oS ˓SqɱǨTǙ̖nN
+PJ
+
+                         13
+     êƶʭ˲Ǹ̌vIêu[}nuȯʾͼǪ̛͒üǪ̛Ȁǈ aJer÷OIêu˲ķr
+kOmuɑǜǪǦuȄQȣrkOmƄŃTʖ`J[     uʪæÿʘNIeuŕƢug
+rêͼ̜uȄQʩ_ T̋mOWŘ˲ǟNJ（能力や感情を含む人間観の捉え直し）
+     êƶʭ˲Ǹ̌uĮɲʘrjmIʖʗǟTŞ×aJgoQwI[}n˽̌ơͪê_Sĵ
+qSjgu˵Ɖqȯͼo£¯TǙ̖hjguTIƢȫÔƙĄrʖʗ]I̳TĮʘnU
+PrqJeuoUIêTào_m̋jg̋ʂÔĵ͢Iêƶʭ˲Ǹ̌Tào_m̋jg̋ʂÔ
+ĵ͢Ie_mêoêƶʭ˲Ǹ̌TŉĘ_m̋jg̋ʂÔĵ͢uĄďΠȹʘǟIÍ¢±Í­I˽
+̌ǟqpΡTefpuPr̨Ą]uSIʵõʥrŕƢ]mOWuSrkOmIɱǨ_
+m̘mOWǙ̖TNJ}gɓKqêTƧ̪_mˬQžÿ[oƉĪnNJʉrIêoê
+ƶʭ˲Ǹ̌TŉĘa[ovêͼ˲ķuȀǈo̟QIȢ_OĄď̜uŻʧoqŘ˲ǟTNJ
+gh_Iêrjmêƶʭ˲Ǹ̌ɘɌrͽaĄď̜ȄQȣvͫP[o̭̹_IɓKqͯǼ
+˯ĄďuƇɓǟrkOmɍ̡a[oTƉĪnNJ（人工知能技術が関与する行為・創造に対
+する価値・評価の受容性。価値観や捉え方の多様性）
+
+4.2 法的論点
+     êƶʭ˲Ǹ̌TʼɏʥrĮɲʘ]ʵõrƙǘ_mŕƢ]grvͮĪqɰʥɍ̡TǙ̖n
+NJāQwIè͠åȗuƉƇȜvêuÅ£ÙɱǨrjmʖ`o̟mRI˷ľ͔͓ͦ
+TƁQ[on˙̠ʥrvåȗTɹƭ_Iƙğqʵõrqoȼǎ]J_S_I˷ľ͔ͦ
+͓Tåȗ͈[_goUreu̓óvp[rNuSoOPũOTʖ`J[uPqʵõƟ̐T
+͘OģüǟuΝOêƶʭ˲Ǹ̌rkOmvIeTg     aĆʦǯɃRxêƶʭ˲Ǹ̌Tg
+     aÍ£åȗIɖĮąƠ˃rkOmIeu̓óuĩͲȪʲra[oTǙ̖nNJʉrI
+Ǹ̌ͤƱuÏ¿ÎΠgoQwI˷ľ͔ͦuÏ¿Î Ψ uefqpΡrƧǚ_g̓óĩͲȪ
+ʲr_ IeñƆuÙʲƟnʲʐʥrʖ`PqÍ£rƧ_mvĉ΂ ȝĔ_mƧǚa[
+oTIêƶʭ˲Ǹ̌TʵõrŕƢ]IeuĆʦTéŕ]grȹĽnNPJʗɎʝrRY
+˿˦ĽɃÏºÊ­Õ¡ËÒÍ£yuͨĳœǚ΀Xgr̓óĩͲuȪʲŃoĉ΂uȝĔ
+vʹ̖nNJe_mIêƶʭ˲Ǹ̌Įʘa[orÍ£u~q     bIĮʘ_qO[on
+ĆʦƊPÍ£̓ó Ǩ̹_mêƶʭ˲Ǹ̌uĮɲʘɍ̡azUnNPJ（人工知能技
+術による事故等の責任分配の明確化と保険の整備。人工知能技術を使うリスク、使わないリスクの
+考慮）
+     êƶʭ˲Ǹ̌v¹«®Õ¨uɲʘnȹʦoqJeuĮĆǟočêǦŽĉ̻Π½Ì¶¡
+ÕΡÜʿ_I˿˦ĽɃʖ}qOguįǂΠɰǏIƌˎI°ÌÒΡuɍ̡TǙ̖nN
+
+
+13 ˷ľ͔͓ͦqp˷ľŃ_gɘɌ͒ü̒˞Ǹ̌uȧƻʥĮʘrŻlWƄŃqpJ
+14 êu˲ķovýSI͒rkYmOêƶʭ˲Ǹ̌̒˞Ǹ̌Šmeuêu˲ķquSIqpJ
+15˷ľ͔ͦuÏ¿Î }nrkOmvIè͠åȗu̓óvŻȾʥr͔ͦ˭rNo]mOJ
+16 gh_IȖǁTʵõĉ΂uPqǉįĉ΂̤YzUSIĉ΂Ƞ̳T̿ǾaSqpuɍ̡TǙ
+
+̖nNJ
+17 goQwêƶʭ˲Ǹ̌ɲʘ_g̦ȡnɭʢɰƄQwůǕ_gS_qOǤ˭TIeuPq
+
+̦ȡŕY qSjgžśqpJ
+
+                         14
+JčêǦŽrkOmu®Õ¨¥£ɖI®Õ¨ÃÕ¨¹Í­Ie_meu¥ÊÍ­qp
+rkOmIŴ΄ʥrŉ̵_m̷̺_mOW[oTʹ̖oq[oS     IȧȾnëǐɍ̡_mOW
+[oTǙ̖nNJ}gIeƟ΄rͮʘaāo_m̋ȖÕ¹£yuêƶʭ˲Ǹ̌ɲʘȖ
+ǁTɍ̡a[oTȼǎ]J（個人情報とプライバシーの保護も含めたビッグデータ利活用）
+     êƶʭ˲Ǹ̌uɲʘrjmΝïĹĄďqĵÿʈTƢȫrʖʗ]Prqoãɻ]
+
+    Jêƶʭ˲Ǹ̌Įɲʘ_g̓͢nvIÎÍ¤Æͻʣ˭IƖ˪®Õ¨ȋĂ˭IÕ¹£ȋĂ
+˭IƟ΄r̓͢_gêqpƇWuêTͽJe[nIêƶʭ˲Ǹ̌rĵÿʈêƶʭ˲Ǹ̌
+oêTŉĘ_gĵÿʈIƖ˪È®ÎqpuɖĮv̳uuSqpuO®Õ¨Õ±Õ¡«½
+uɍ̡TǙ̖nNJeu΄Iêƶʭ˲Ǹ̌uͻʣoĮɲʘĈͤagrIȅîʥqɖĮĉ̻
+nvqWIʋɯrǚ`gƌˎo°ÌÒrjmIÎÍ¤Æuͻʣ˭ɲʘ˭IƖ˪®Õ
+¨ȋĂ˭˃yͮĪqɖĮΠÒ¥Ò­¼qpΡͲĩaȣɰɍ̡a[oȹĽnNPJ
+（人工知能技術を活用した創作物等の権利の検討）
+     êƶʭ˲Ǹ̌uͤƱrʵõ·ʘuƄŃrƧ_mIǒɁɰΠͩ͏ͽͣɰIņ̇ŦņʢɘŮ
+ɰI̓͢ʈ̓óɰIļĘͽͣɰ qpΡu̝ͳnƧǚTŇĩSIɰǏuȔɝTǙ̖SIȢ_OɰǏ
+TǙ̖SINOvɰǏuɑǜ˷üɍ̡aǙ̖TNSɍ̡_I̷̺˜YmOWǙ̖TN
+JāQwIɘɌƖ˪rêƶʭ˲Ǹ̌TʵõƟ̐]rkIeuĬȡêoêƶʭ˲Ǹ̌
+TŉĘ_g̋ʂrjmʖ`˗ɃrkOmeu̓óuǳŶȪʲrauTΊ_Oå̾Tʖ`k
+kN Jêƶʭ˲Ǹ̌TʵõrŕƢ]mOWͨʺrROmIǸ̌u~q    bêͼʵõʪæŜ
+ȯrʣƱ_mOW[oTǙ̖nNI̓óovýSoOPũΖqprͽaʒ̋ɰ×uŻȾʥɑǜ
+rkOmuɍ̡ŻʳʯʽTȻ} J（法解釈I法改正I法に関連する基本的概念の再検討の可
+能性）
+  
+4.3 経済的論点
+     êƶʭ˲Ǹ̌r˖ɸÔʗɎTɲǟŃaoorIɘɌƖ˪rǙ̖q®Õ¨ʖǯag
+qprȢ_O·ʘTʖ}Ř˲ǟTNJOêƶʭ˲̗˭ôɎTĨʒ_mIȦƕu¹¢³
+£łķųTǻȾʥrƄŃaŘ˲ǟTNI[uPqʗɎʥʌŋrkOmʵõouͽćyuǌΐ
+ˬǬ_m̘mOWǙ̖TNJƇWuôɎrojmIêƶʭ˲Ǹ̌ɲʘa[onƇƉqļĘ
+ķǙ̖ocboƉ̙ɕq˖ɸɲľTŘ˲oqI£¯ÇÍ«¯TΝWɘľķ×T[oT
+
+
+18 ʇˤƶoŜ˃Señ×uÿɎ̋PʗɎʘÐÂ«¯̂ŝq˽̌ơuÿΙƖxĵÿaêƶʭ˲
+Ǹ̌qpTƟʘŃ]kkNJ
+19 āQwI˖ɸʥ̷ʁnǐ͚aPrčêåɎàŃTͤoȈ·ʘ˭Ƨ̾oaļĘɰrkOm
+
+ȄQʩ_TǙ̖oqŘ˲ǟTNJ
+20 āQwI˄΋ùuƄŃɍĨ_mêu͒üľÿuǨǝȉɻ_mľWÐÂ«¯£Õ¬TîêĖkY
+
+åȗ͈[_gžśIeu˄΋ùvêuǨǝœȭ_mRĀʘ˭r̓óTNoˬQ uSI
+euPqȉɻ˗Ƀg _gƖ˪®Õ¨ȋĂ˭NOvÎÍ¤Æͻʣ˭r̓óTNuSvĪ
+ĩYTΌƻrΊ_OũΖnNJ
+21 āQwI˷ľ͇͓̋rkOmv˙̠ʥrè͠åȗȜTɹƙğǟT×TTIeuÞn}hTƖ˪
+
+®Õ¨S áΉ_gʋɯqprROm̓óTȪʲnvqOåȗTʖ`Ř˲ǟTNJeuPqåȗ
+rkOmu˖ɸʥȐƊvĉ΂nƧħa[oTŘ˲nNPJ_S_I[uPqå̾ʵõo_mp
+PŕYĞSvIɰƖĐʓƖIʵõƖ˃uŻʳʥÔȾ͆ʥũΖnNIƼǀu̷̺TǙ̖nNJ
+                         15
+ãǧ]JÖȣnIêƶʭ˲Ǹ̌TĐʓÔɰÔʵõqpouȝśǟÿ×ZmOWͨɺȼr
+vI͝r˖ɸʥrΌĽʐqʋɯTʖ`Ř˲ǟN[oS       I͗͡nͮĪqƧǚTǙ̖nNJ
+     ̏·ʘ˭rojmvIʒŶuíåÔɎĿĥƢΠ¨£ΡrjmveuǍĴTêͼS   êƶʭ˲
+Ǹ̌ÔɘɌrðIêvŊˏļĘS     ̝ȕ]Iĵ͢ʥqɎĿàr̋PPrq[oT
+ãǧ]Jgh_IëuɎĿS     Ȣ_WǙ̖o]ɎĿrʹ̋a[oTΊ_OžśIk}
+êȿoɎĿuÄ«ªÒTP}W̋qOžśrvIƊɎoêǴÙ͌uÜȣTŜȯrʖ`Ř˲
+ǟTNJeugIļĘ˭včêu˲ķêƶʭ˲Ǹ̌oƷʟŃ_møǈ]c[oIeu˲ķ
+ȷƉ΁rʣȎagríåƄQ͔ˮķĵ͢ʥļĘrǙ̖q˲ķIêƶʭ˲Ǹ̌ɲʘa
+˲ķqpuʏǓàüʥr̋P[oTȻ}JëǐIêƶʭ˲Ǹ̌ɲʘ_g͈ɎqpƁĹ
+_IčêåɎàŃTͤ[oTãǧ]J（人工知能技術による業務や働き方の変化：個人対
+象）
+     ôɎuŴ΄ˁärROmêƶʭ˲Ǹ̌vəScqOuoqjmOJêƶʭ˲Ǹ̌uĮɲʘr
+jmŊˏļĘ͹ȯͼļĘTɹƭ_IΝïĹĄďqļĘoôɎrǒƲ_qO˷ʚqĘUȣyuƄ
+ŃTãǧ]JerścmSkêƶʭ˲Ǹ̌uͤƱ͡ǂu͡]ˬǬ_mIôɎvI˖ŭĬ
+ȡu͗͡ŃI·ʘuĦͲ˨u͗͡ŃI­ÏÑÕqpʾͼoȯͼrįˎ]qOĘUȣuĈͤɍ
+̡_mȁ˜ʥq˖ɸǯ͹ʨȂa[oTǙ̖nNJʉrêƶʭ˲Ǹ̌ͻʣaêȿĀO[q
+cêȿuʲĉINOvîuɎĿS     uͲ˨͔ȌTǙ̖oqjgȯr͗͡rƧħnUɘľķT
+Ǚ̖nNJͲ˨͔ȌugrvɎĿoÝ̋_gˮɎ̢ˤƖ˪ɘõuȋĂTȹĽnNPJ（人
+工知能技術の利活用による雇用と企業の変化：企業対象）
+     ŴuȖˆo_mvIêƶʭ˲Ǹ̌ɲʘ_m˖ɸǯ͹Ĉ_Ičêrͮ_gƇɓqļĘǋǫʲ
+ĉa[oTǙ̖nNJqrļĘʹľ Ř˲oa˲ķ˰ǯ_IƖ˪aɘõȋĂa
+zUnN Jɧ    ɎĿoêȿouÄ«ªÒĈͤaí˕~ɧ   J[   ț
+˰Ȗˆo·ʘȖˆvͣľ]c[onĽɃTȷƉŃaJerĹQmIý       SuÄÐ˖ɸȖˆ
+¥Õ»­³«¯TǙ̖Sɍ̡a[oTƉĪnNPJêƶʭ˲Ǹ̌rʖʗĽʐŞ×
+˖ɸɲǟŃIãɻŘ˲ǟuŞ×qpuǢǣÔĮʦpuPrʵõʥrĠƽrͲĩ_I˖ɸɊƷ
+qWaSɍ̡aǙ̖TNJe_mIļĘķÙ͌rʩ΍aȧȾrojmvʉrêƶʭ˲Ǹ̌
+uȹĽǟTΝO[oS     IʗɎˁäķŞ×]cȖˆ]   rĹ͡a[oȹĽnNPJ
+iIĮʘ˭ē˷     ˬQmʗɎȖˆrȼǎa[oˬǬazUʁ̖ɧa[oTƉĪn
+NJ（人工知能技術の利活用を促進するための経済政策、労働移動を可能とする教育政策・雇用
+政策：国対象）
+     
+4.4 教育的論点
+     êƶʭ˲Ǹ̌uĮʘ˭veuĆʦoÍ£ʓ̝_I̓óuǳŶ̘ɏIêƶʭ˲Ǹ̌rj
+mpuPqͯǼȒÿTq]mOSʓ̝_mĀO[qa[oTȻ}_OJk}Iêƶʭ
+˲Ǹ̌uĚùʁo΁ʝǹȍ_IŉĘÔŉ̵_mĵ͢ʥɲľTnUPq˲ķ͒rʬY[o
+
+
+22
+ ļĘ˭čêTIļĘƸžrROmôɎͼIʗɎͼIˮɎͼqpʹľa[oJ
+23
+ [vț˰ʥ̷ʁrġ͠aũΖnNIƔpyuț˰rĹQmIĘUqT     ƻrʭ̹o£Î
+ȴȢaguʖɶț˰uʹ̖ǟTƁaJ
+                         16
+TȻ}J（人工知能技術を適切に利活用するための教育）
+    ț˰ȖˆrROmɧ   uvIʒʋuêƶʭ˲Ǹ̌nvýTnUqOS̵zIeu¹®
+Ò£rŻlOgț˰ÍÊÌÆɍ̡a[onNJāQwI®Õ¨u˙̠ʥħʓrŻlWu
+~nvȽhΊ_Oo]ɷOǨţʓ̝I˷      uƟüΛrŻlOmǧęķĘScȽʭuÛʝ
+ɷWÇÕ¢nUķI̝ɫazUũΖeuu̘kYĨa˲ķIġŜÿɎuguÅÊ²
+Õ¡ËÒ˲ķI˲ľʥrȢ_OǦŽȇɧ_ʟqǨ̘Ŕ͖~ɍ̡a˲ķqpuʹ̖ǟT
+ƁaoˬQ    JerjmIêu˲ķêƶʭ˲Ǹ̌S   ȷƉ΁rƷʟŃa[oTŘ˲o
+qIêTêƶʭ˲Ǹ̌Įɲʘ_mĵ͢ʥɎĿ̋OIƭqOļĘķnΝOʖʗǟƟʒa
+ʵõʨȂcJqRIêƶʭ˲Ǹ̌uͤƱu͡]rƧ_mƔpuț˰rvȯͼTSS[oS
+    IʉrƖɇț˰uɍ̡vǞĿnNJ}gIêƶʭ˲Ǹ̌nðȶŘ˲o_mIʣͪͨʺnǙ̖
+qŻȾʥț˰ĥƢovýSIêrɡazU˲ķovýSɍ̡a[oǙ̖nNJ（人にとっ
+て本質的な能力や人にしかできない能力の育成）
+
+4.5 社会的論点
+    ƙğƙǘqʵõuƟʒIƭƔΝΟŃTͤÞnƭqOļĘķnΝOʖʗǟT×T[oIč
+êrȷͮŃ_gȓȏɘ˲rƇɓqêuʵõŐĹȉͤa[oqpIêƶʭ˲Ǹ̌Tȁ˜Ř˲
+ʵõ $;/51@E uƟʒr̀ʎaŘ˲ǟvƉƄƉUOJgh_IîuƇWuͩģǸ̌oŜɓr
+êƶʭ˲Ǹ̌ΣkuǸ̌nNIeuĀʘTʵõʥrǉį]unvqOJčêuĊɀrŻ
+lWêƶʭ˲Ǹ̌ouͽȣu˷ʚʲĉ_Iêƶʭ˲Ǹ̌uĮʘǉį]qO[oRx˷
+ʚrĮʘnU[oTƉĪnNJêƶʭ˲Ǹ̌vǦŽǸ̌uÖͰo_mĘUIƆS      veTŠ
+}mOSpPSĩSrWO[oS      Iêƶʭ˲Ǹ̌uĀʘuȹʃrkOmȪʴaSrkO
+muɍ̡Ǚ̖nNPJe_mêƶʭ˲Ǹ̌Įʘa˭oĮʘ_qO˭ouͼrʵõʥƧʿT
+ʖ`qOPqͲǬǙ̖nNJeugrIʟq¹¢ËÒˬQȣȁk˭ŜƂTƧ̪a
+žkWIƨͺơuǨ̘Šm˛˜ʥrɍ̡˜YIêƶʭ˲Ǹ̌rƧaƇɓqĄď̜
+ƪʹaoŜȯrIġ͠ŻʧʥrʵõʥrġȹnUĄďovýSˬQmOW[oTƉĪnN
+J（人工知能技術との関わりの自由と共有可能な価値についての対話）
+    êƶʭ˲Ǹ̌uĆʦȷƉ΁réŕarvIêƶʭ˲Ǹ̌rͽaÍ­Ì¡ÕrĹQmIčê
+ǦŽĉ̻rͽa®Õ¨uʭ̹I®¢¨ÎɘŮrͽaÍ­Ì¡ÕqpTN[oTȻ}_OJg
+h_ğmuêT[    ȹa[ovʒƟrvΊ_WIOêƶʭ˲Ǹ̌®¶°TĨʒa
+Ř˲ǟTNJāQwIȾɁʹľǇ˭rĆʦoqzUÌ°¡Tʭ̹Ù͌rĮʘnU
+bIðrĮʘa͠ƻu¨¡ÕTqWqjm_}jgIΝΗrqjm_}PPqåǫT
+ˬQ    J_gTjmIÍ­Ì¡Õʭ̹IͅʗuȹʃrjmȢgqɊƷʵõʥ£¯̿Ǿ
+uÙŸ̍Tʖ`qOPqͲǬÔȖˆTǙ̖nNJêƶʭ˲Ǹ̌r½Ð»ÍÒqpu
+ȉƝ˗ɃrŻlWƷĭTʖ`Ř˲ǟrkOmɍ̡_ƧħaǙ̖TN（人工知能技術によるデ
+バイド、社会的コストの不均衡、差別への対処）
+    êƶʭ˲Ǹ̌Tʵõnɲʘ]ž΍TƇWqgIƩɁʥrvêƶʭ˲Ǹ̌rƧaăƕ
+ͨĊÔͨĳqǿ˚qpȢgqʵõũΖʵõʥʡʓʖ`Ř˲ǟNJêƶʭ˲Ǹ̌rǦ
+Žuȉ̆ÔčêȷͮŃrjmIêT̞ǦŽuˉŲTʍWqI}geȰͧʥquoŕ
+
+                          17
+Yɜm_}PėŞTǉWqŘ˲ǟNJɝ_OǦŽuĠͻI̷̺užuȋĂIț˰Ȥˆqp
+͠`gƧħǙ̖nNPJ（新たな社会的病理の可能性、対立、依存への対処）
+
+4.6 研究開発的論点
+ êƶʭ˲ʯʽͻʣa˭vIΝOĐʓ̜ȁjmʯʽͻʣrǒå_ IŚʻƖõǳƲɘͽu
+Đʓ̙Ɲ I°ÌÒ˃ΒƘ_mĄďĵĨrĻ[oIRxe             rͽ_m̲Ȫ̓ó
+ΠÒ¨¹Í­Ρȁk[oTɧ         Jʉrêƶʭ˲Ǹ̌veuͻʣ͡ǂT͡WIȦr
+NɘɌÕ¹£uĥēn§»¯uÖͰo_mĘW[oTƇO[oS               IĮʘ˭rve
+TĀmOuSpPSIpuPrɘ˲_mOuSqpTSrWOoOPʉǟTNJ
+eQIeuPqʋɯrpPƧħ_mIĮʘ˭rêƶʭ˲Ǹ̌uĀȣǂśOrͽ_mͮ
+ĪqǦŽöQ[oTŘ˲Sʯʽͻʣuē΍S            ɍ̡aǙ̖TNJ（倫理観、アカウン
+タビリティ、可視化）
+ Įʘ˭Têƶʭ˲Ǹ̌ƙǘ_mĮʘnUʔƀȝĔagrI¶Õ¥ÊÍ­uǉ
+ŃI®Õ¨ÎÍ¤ÆuȔ^΀ɜqpƙğǟ͛ɧaʯʽͻʣTǙ̖nNJʉrčêǦ
+Žo½Ì¶¡Õuĉ̻Iep[}nĮʘŘ˲oaSuͯǼƙğrŘ˲oaǸ̌uͻʣ
+Tɧ     Jêƶʭ˲Ǹ̌TįǔÙŘ˲rq      qOǸ̌ΠįǔŘ˲ǟΡȉ̷Ô̠ˇuͨʺÔ̷
+ʓ̲ȪnUǸ̌Π͞ȪǟΡIêoêƶʭ˲Ǹ̌uįǔɖuĪȶQ£ÆÕ£raÒ¨»
+Õ£qprͽaʯʽTǙ̖nNJ（セキュリティ確保、プライバシー保護、制御可能性、透
+明性）
+     ɘɌƖ˪rŻlWêƶʭ˲Ǹ̌nvIʲʐʥrƐǊq˗ɃTǓ         IeT˙̠ʥrĆʦg
+     aJ[uPqí˕~TʵõrŕƢ]grIʯʽͻʣ˭vƇWuêreɝ_W̲Ȫa
+[oTɧ     Jʯʽͻʣ˭Žͩɘͽ˃TIʵõrƧ_mêƶʭ˲Ǹ̌̯΄rvIǸ̌
+rjmǓ     ĆʦoÍ£ǡǨǟqWʥʲr̎ʒa[oTƉĪnNJêƶʭ˲Ǹ̌oê
+ͼʵõuͽćɝ_Wɍ̡_IȽɁʵõͮĪr̤̠ÔƟʒagrIɰǏ˖ɸIǘʓƖIʵ
+õƖqpuêȟʵõʷƖʯʽ˭TȢ_OʷƖǸ̌rƧaʭ̘͒rʬY˷               uʯʽrʼɏʥrŔ
+ĞmOW[oI˷ʅʷƖƶƖuʯʽ˭TêȟʵõʷƖʯʽ˭oġŜ_mʯʽͤǙ̖
+TNJ（人工知能技術に関する適切な情報伝達と人文社会科学研究、融合研究の必要性）
+ ʒŶuêƶʭ˲Ǹ̌vɘɌƖ˪ÞǘrʣƱ_mOTIŻʧoqʓ̷Ǹ̌rvɓKNI
+ëǐȢ_Oʓ̷TĨʒaŘ˲ǟTNJȖǁvIêƶʭ˲Ǹ̌uƇɓǟʲĉ_kkʯʽͻʣ
+ĈͤagrIŻʳʯʽuȉͤÕ½ÒÒ£uʔƀȝĔa[oTǙ̖nNJe
+vêƶʭ˲Ǹ̌uΝǂŃoorΓĒǟoĒğǟΝIʵõuƇɓǟrƧǚa[orq
+J（人工知能技術の多様性確保と多様な社会への対応）
+
+
+
+24 ˠĿʫLAI ³«¯ÑÕŃɍ̡õ̺MnvILʯʽͻʣuŎİMuˆƝo_mI(1)͞ȪǟuŎİI
+(2)Įʘ˭ȓȏuŎİI(3)įǔŘ˲ǟuŎİI(4)¥ÊÍ­ʲĉuŎİI(5)ƙğĉ̻uŎİI(6)½Ì
+¶¡Õĉ̻uŎİI(7)ĐʓuŎİI(8)Ò¨¹Í­uŎİŠ[oʣ̎_gΠ2016 ƾ 4
+ȸÞͼŽšȵIŜƾ 6 ȸŽšȵ 2016ΡJ
+25 êƶʭ˲ƖõvI2017 ƾ 2 ȸrLĐʓȂͷMĠ̎_gJëǐIʯʽɘͽÔƉƖÔôɎĥrêƶʭ
+
+˲rͽaʯʽĐʓƦɆƒŧõΠInstitutional Review Board: IRBΡT̤˨][oTãǧ]J
+                              18
+                   第５章      おわりに
+
+ ʒƕaêƶʭ˲Ǹ̌INOv͘OƩɁƟʒaŘ˲ǟuΝOêƶʭ˲Ǹ̌rkOmIģüʥ
+qåārŻlUIĐʓʥ̷ʁIɰʥ̷ʁI˖ɸʥ̷ʁIț˰ʥ̷ʁIʵõʥ̷ʁIRxʯʽͻʣ
+ʥ̷ʁȝʓ_gJ[uǭ̶õnvIêƶʭ˲Ǹ̌uʯʽͻʣr¼ÏÕSYunvʃWIʯ
+ʽͻʣu͡ǂØZbrͮĪqµÒ°Î]wUa[onIêƶʭ˲Ǹ̌oêͼʵõouͽć
+ͮĪqurarvpPazUSɍ̡_gJêƶʭ˲Ǹ̌rkOmǮǜɍ̡azUʁ
+NTIe    ɱǨɷWˬǬ_mĮɲʘa[onIƉUqĆʦǓ[oTŘ˲oqJā
+QwIȧȾvƭƔΝΟŃTͤnOTIêƶʭ˲Ǹ̌Įɲʘa[onƭqOêȿn_
+ʖʗǟ×Z[oTnUIêvĵ͢ʥn˷ĩTɐ_OoǝPíåa[oTŘ˲oqJ}
+gIɓKqŷźrûêΝΟ˭ŠƇɓqêTêƶʭ˲Ǹ̌Įʘa[onIǒɁnvűΊ
+hjgíåɲľŘ˲oqI̳Tɲ͑nUʵõTʨȂcJȖǁv[uPqʵõ
+$;/15@E oŝïYeuƟʒuguʯʽͻʣȉͤ_mOJ
+    ͘ƾuȢǸ̌rvIeuͻʣ͡ǂu͡]u~q      bINǸ̌TͤƱ_ƙƝʥŸ̍ȼrͪ_m̀
+iʬWırɚuȢ_OǸ̌TĨmWoOPʉǗTNJ_gTjmINǸ̌rƧaêͼʵõ
+rͽũΖrkOmǸ̌T}hͤƱ_mO͟ÞnƧħ_qYwq         qOJǸ̌uͤƱoʹ
+̋TÛð͎TbIŜÖÛðuÞnʖ`Pqžśrvț˰ʵõƄΎrkOmʉr͗͡qƧǚ
+Tɧ    J}]rêƶʭ˲Ǹ̌veuPqƯ΍rNIȽheuƩɁęȷ˔ǋǫTʲƝ_
+mOYnvqOTI[uǭ̶õnvʒɢ΃o͘OƩɁƟʒ]êƶʭ˲Ǹ̌Ƨ̾o_m̷
+ʁȝʓ̋jgJeu˗ɃIʗɎˁä·ʘIț˰qpͲǬ_gȖˆIȽɁ̤̠aʵõʷ
+Ɩʯʽoͣľ]cmOW[oTǙ̖nNoʴŨ]gJe_mIëǐuǸ̌ãɻ̋OqT         I
+ŜȯrêͼʵõouͽćrkOmuɍ̡˜Ym̋W[oTƉĪnNJ
+ [uPqŔ˕~vŴĥrop}unvqOJȦrOWkSuŴ΄ʣĊ̋jmUgTI
+ëǐŴ΄ʥrŉ̵_mLêͼʵõˬǬ_gIġƕaêƶʭ˲Ǹ̌rͽaŔ˕~M˜Y
+m̋WǙ̖TNJʉrIêƶʭ˲Ǹ̌oʵõuͽćuɍ̡rkOmŴ΄ʥqɅ˕~ˬQ[o
+TÛʝğüo_muȁ˜Ř˲ʵõuƟʒr̀ʎaoǝ[oS         IÛʝnġȹazUĄď
+̜výSɍ̡aǙ̖TNJ
+    êƶʭ˲Ǹ̌Įʘaêʯʽͻʣ˭IȖǁɘͽɥͼôɎIț˰ͽć˭IğmuêT[
+uǭ̶õnǓ    g̷ʁȋ̟rkOm˷   u[oo_mŕYɜIʶgiuȽɁʵõ˻O
+uoagrģüʥq̷̺˜YIͮĪq̋ľŔ[oȼǎaJ
+
+
+
+
+                          19
+                            付録（別添）
+
+
+ï͸  êƶʭ˲oêͼʵõrͽaǭ̶õṳ˨Ôɲľɑ̖
+    l   ǭ̶õ̤˨u˱ȱ
+    l   ɒǯŧoͽćʫƿ
+    l   ɲľƴɠ
+ï͸  ɍ̡u̫˓
+    l   ǭ̶õnu̷̺uǻˋ
+    l   åāuɍ̡
+    l   ̷ʁu˘͖~
+    l   ġ͠a̷ʁuǽĨ
+ï͸  ʵõouƧ̪
+    l   ĠͻǨ̘ŁΆ
+    l   ΆÞɍ̡ÑÕ¡Ë«½
+    l   ȧȾʷƖȽɁΚÑÕ¡Ë«½
+ï͸  Ŵ΄ͣȑ
+    l   Ŵ΄ʷƖǸ̌ͽćƉ˶õśÑÕÒÌÒª
+    l   ȧì¡ÒÃ¢ÆɷƳƖ˪oêƶʭ˲
+    l   Ûʝ˖ɸ»ÕÌÆ);A:38;.-81-01>?8A9:5::A-8$A995@
+    l   !®¢¨Î˖ɸȖˆƒŧõ%
+    l   ȧ˾ʷƖǸ̌ŉķśŜƒŧõ°¿Ò¯Χȧ˾ÌÒ°­Õ¼Î
+ï͸ ŴĥƆuɍ̡ľŞ
+    l   ŴƆuɍ̡ľŞ
+    l   Ŵĥuɍ̡ľŞ
+       
+
+
+
+
+
+                                    20
+

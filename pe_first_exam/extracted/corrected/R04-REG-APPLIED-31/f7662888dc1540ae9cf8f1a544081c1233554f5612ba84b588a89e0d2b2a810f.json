@@ -1,0 +1,45 @@
+{
+  "stem": "活断層による変位地形と氷河堆積地形を区別する。",
+  "conditions": {
+    "判断方向": "最も不適切なもの。",
+    "原典照合": "全5肢、上下・平行直交・右左・時代・固結度と割合を画像照合。図なし。"
+  },
+  "choices": {
+    "1": {
+      "value": "閉塞丘",
+      "verdict": "適切（記述の条件内）",
+      "reason": "横ずれで移動した尾根等が谷の流れを遮る地形であり、変位対比に使う。"
+    },
+    "2": {
+      "value": "三角末端面",
+      "verdict": "適切（記述の条件内）",
+      "reason": "断層崖等に沿う山脚の末端が切られ三角状斜面として現れる場合がある。侵食の効果も評価する。"
+    },
+    "3": {
+      "value": "撓曲崖",
+      "verdict": "適切（記述の条件内）",
+      "reason": "基盤断層の変位が被覆層へ曲がりとして伝わる崖である。"
+    },
+    "4": {
+      "value": "モレーン",
+      "verdict": "不適切",
+      "reason": "氷河が運搬した岩屑等を堆積した地形である。断層の変位によって直接形成される地形ではない。"
+    },
+    "5": {
+      "value": "バルジ",
+      "verdict": "適切（記述の条件内）",
+      "reason": "横ずれの圧縮的屈曲等で地表が隆起・膨らむ地形として現れる。形状名だけで全原因を断層と確定しない。"
+    }
+  },
+  "figures": "設問固有図なし。原典の用語・否定・全5肢を確認。剪断の方位条件を推測で補わない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_011.png"
+  ],
+  "question_id": "R04-REG-APPLIED-31",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "059a0462b32fdb3914aacc48098cc259acdd45b2fc1fc46bdf42bca6f2f18f84",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

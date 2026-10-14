@@ -1,0 +1,46 @@
+{
+  "stem": "酸素と二酸化炭素から二つの代謝量を求める。",
+  "conditions": {
+    "好気呼吸": "C6H12O6+6O2+6H2O→6CO2+12H2O。",
+    "発酵": "C6H12O6→2C2H5OH+2CO2。",
+    "指定量": "酸素2mol吸収、グルコースの好気:発酵=1:6。"
+  },
+  "choices": {
+    "1": {
+      "value": "3 mol",
+      "verdict": "不適切",
+      "reason": "独立計算の値 6 mol と異なる。"
+    },
+    "2": {
+      "value": "4 mol",
+      "verdict": "不適切",
+      "reason": "独立計算の値 6 mol と異なる。"
+    },
+    "3": {
+      "value": "6 mol",
+      "verdict": "条件内で適切",
+      "reason": "独立計算の値 6 mol と一致。"
+    },
+    "4": {
+      "value": "8 mol",
+      "verdict": "不適切",
+      "reason": "独立計算の値 6 mol と異なる。"
+    },
+    "5": {
+      "value": "12 mol",
+      "verdict": "不適切",
+      "reason": "独立計算の値 6 mol と異なる。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/basic/page_018.png"
+  ],
+  "question_id": "R02-REG-BASIC-4-5",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "18",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "3403b5127af2f741c4b8f7d333b992459e1521c142acf15cbd75c3a51ed5f4b8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

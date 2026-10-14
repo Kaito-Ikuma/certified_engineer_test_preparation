@@ -1,0 +1,45 @@
+{
+  "stem": "戦前技術史の曖昧な比較と公式複数正答。",
+  "conditions": {
+    "時点": "令和2年度に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "江戸手工業が西洋技術と発展",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "2": {
+      "value": "標準化技術を輸入し低賃金競争",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "3": {
+      "value": "学協会は欧米と異なり高学歴出身者",
+      "verdict": "不適切・公式追加受理",
+      "reason": "欧米との比較表現に誤解を招く記述があるとして公式が3も受理。4との両受理を維持。"
+    },
+    "4": {
+      "value": "Taylorと同時に統計的品質管理導入",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "5": {
+      "value": "技術官僚の地位向上運動",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "公式の複数受理4|3を保持。独立解4は受理対象だが全受理集合を独立に列挙したものではない。3の欧米との差という一般化、戦前統計利用の個別例を追加史料で査読。",
+  "evidence": [
+    "extracted/pages/R02/basic/page_021.png"
+  ],
+  "question_id": "R02-REG-BASIC-5-5",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "21",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "c1a075836a757268bf1febe6e2d45bffdb9cdcb6d5bc75f4c8851fd03bf8da2c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

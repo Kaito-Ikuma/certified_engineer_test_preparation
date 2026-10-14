@@ -1,0 +1,45 @@
+{
+  "stem": "元素と同位体比の歴史的標準の対応を比較し、炭素と硫黄の基準を取り違えた組合せを選ぶ。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "同位体の標準・分別又は年代。番号・核種・旧標準名称を原典画像で確認。"
+  },
+  "choices": {
+    "1": {
+      "value": "SとCDT",
+      "verdict": "対応は意図適切・旧名称注意",
+      "reason": "CDTはCanyon Diablo隕石のトロイライトFeSに由来する硫黄の歴史的基準。実際のVCDT実現は硫化銀IAEA-S-1等を使い、旧CDT物質を無条件に現行標準としない。"
+    },
+    "2": {
+      "value": "OとSMOW",
+      "verdict": "対応は意図適切・旧名称注意",
+      "reason": "水・ケイ酸塩等の18O/16OにはSMOW/VSMOW系列が使われる。対象により尺度を明記する。"
+    },
+    "3": {
+      "value": "CとCDT",
+      "verdict": "対応不適切",
+      "reason": "炭素13C/12CはPDB/VPDB系列である。CDTは硫黄の尺度の起源であり、炭素の標準という対応は誤り。"
+    },
+    "4": {
+      "value": "OとPDB",
+      "verdict": "対応は意図適切・旧名称注意",
+      "reason": "炭酸塩酸素はPDB/VPDB系列でも表す。同じ18Oでも水のVSMOWと炭酸塩のVPDBは数値基準が異なる。"
+    },
+    "5": {
+      "value": "HとSMOW",
+      "verdict": "対応は意図適切・旧名称注意",
+      "reason": "水の2H/1HはSMOW系列（現在のVSMOW-SLAP尺度）。水素をCDT系列としない。"
+    }
+  },
+  "figures": "問題幹・5肢・否定・質量数・δ記号・標準名称・年度番号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "原典のSMOW/PDB/CDTは歴史的対応を問う旧名称である。1995年IAEA勧告は既にVSMOW/VPDB/VCDTと尺度の実現物質を区別しており、出題時に旧隕石・化石標準そのものを現在も測定用一次物質として使うとは説明できない。公式と初回の対応は保存し、尺度と物質・旧名称の省略を査読事項に保持。",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_007.png"
+  ],
+  "question_id": "H30-REG-APPLIED-21",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "f93b7f7f2c346844c0219b1645b81ea068e3571cc4ce5f4f1567eb1074ec121a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

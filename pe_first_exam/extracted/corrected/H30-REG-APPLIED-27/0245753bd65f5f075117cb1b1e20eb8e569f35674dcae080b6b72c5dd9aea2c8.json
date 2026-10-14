@@ -1,0 +1,45 @@
+{
+  "stem": "圧密の体積変形とせん断強度試験の測定量を分ける。",
+  "conditions": {
+    "原典照合": "22原典画像で25問の全五肢・数値・単位・否定を確認。",
+    "対象": "圧密の体積変形とせん断強度試験の測定量を分ける。"
+  },
+  "choices": {
+    "1": {
+      "value": "圧密試験",
+      "verdict": "不適切",
+      "reason": "主目的は荷重増加に対する時間依存の体積変化・圧縮性・排水の評価。せん断破壊強度を直接測る試験とは違う。"
+    },
+    "2": {
+      "value": "三軸又は一軸の力学試験",
+      "verdict": "代表的条件で適切",
+      "reason": "拘束圧・排水条件を指定して試料を破壊へ載荷し、強度や応力ひずみ応答を調べる。"
+    },
+    "3": {
+      "value": "標準貫入試験",
+      "verdict": "代表的条件で適切",
+      "reason": "N値は所定貫入の打撃数で、密度・硬軟等の経験的評価に使う。N値をせん断強度の単位としない。"
+    },
+    "4": {
+      "value": "ベーンせん断試験",
+      "verdict": "代表的条件で適切",
+      "reason": "羽根を回すトルク等から軟らかい粘性土の非排水せん断抵抗を評価する。"
+    },
+    "5": {
+      "value": "スウェーデン式サウンディング",
+      "verdict": "代表的条件で適切",
+      "reason": "貫入抵抗から地盤の硬軟や支持性・土質を経験的に推定する。推定量と直接破壊試験を区別する。"
+    }
+  },
+  "figures": "図表なしの五肢。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_009.png"
+  ],
+  "question_id": "H30-REG-APPLIED-27",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "6b6902dbb6300c24b97e19307db4719c247cd123d6f6c78e80a30642ecbfedef",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

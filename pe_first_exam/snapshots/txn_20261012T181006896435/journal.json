@@ -1,0 +1,28 @@
+{
+  "status": "committed",
+  "time": "2026-10-12T18:10:06+09:00",
+  "paths": [
+    "generated/questions/aptitude/03_compliance_accountability.tex",
+    "generated/questions/aptitude/04_safety_risk.tex",
+    "generated/questions/aptitude/06_research_information_ethics.tex",
+    "generated/questions/aptitude/07_science_technology_society.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/aptitude/03_compliance_accountability.tex": true,
+    "generated/questions/aptitude/04_safety_risk.tex": true,
+    "generated/questions/aptitude/06_research_information_ethics.tex": true,
+    "generated/questions/aptitude/07_science_technology_society.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/aptitude/03_compliance_accountability.tex": "d581fc6d753eb5a8d84b4f7906b9f81251e97f01d786d693eda01e42d7fecf05",
+    "generated/questions/aptitude/04_safety_risk.tex": "62b1a464f7ef427d20f48fdd6ae085382d695418daa1f70a72b2acfbbfd2ea7f",
+    "generated/questions/aptitude/06_research_information_ethics.tex": "3d428e8cbd7cdb4af1525daf838246fd349b2cf384ceef2a4574ec01919553c8",
+    "generated/questions/aptitude/07_science_technology_society.tex": "c1ea4949864d7c0efb543d98329694fa3fee14109d9a70bd6a2a3b6b566a5e99",
+    "generated/audit_summary.tex": "87613e3d7d4893b7e96f50179ac3a27b2ea845d936a8245f5a0552215dc051e5",
+    "generated/frequency_tables.tex": "d8aff1886a10d3d5445a61dcd7e59e433dd3ff797224ea29c75d2754d3669de1"
+  }
+}

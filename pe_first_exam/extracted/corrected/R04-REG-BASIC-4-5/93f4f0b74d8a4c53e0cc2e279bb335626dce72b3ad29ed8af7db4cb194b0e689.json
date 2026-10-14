@@ -1,0 +1,44 @@
+{
+  "stem": "酵素の側鎖分布、温度適応、触媒の分類と障壁、リパーゼの標的結合を判定する。",
+  "conditions": {
+    "方向": "最も適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "非極性側鎖は酵素の外表面に多い。",
+      "verdict": "不適切（通常の水溶性）",
+      "reason": "通常の水溶性球状酵素では非極性Rは内部へ偏る。膜への接触面や活性部位等を区別する。"
+    },
+    "2": {
+      "value": "至適温度が20℃以下又は100℃以上の酵素は存在しない。",
+      "verdict": "不適切",
+      "reason": "温度適応は多様である。実測100℃至適のPyrococcus woesei αアミラーゼだけでも不存在という断定を反証する。"
+    },
+    "3": {
+      "value": "酵素はタンパク質を主成分とする無機触媒。",
+      "verdict": "不適切",
+      "reason": "多くはタンパク質、例外には触媒RNAもある生体触媒で、無機触媒という分類ではない。"
+    },
+    "4": {
+      "value": "酵素は活性化エネルギーを増加させる。",
+      "verdict": "不適切",
+      "reason": "別反応経路や遷移状態の安定化で活性化障壁を下げる。反応の自由エネルギー差や平衡定数を変えるとは言わない。"
+    },
+    "5": {
+      "value": "リパーゼはトリグリセリドのエステル結合を加水分解する。",
+      "verdict": "適切",
+      "reason": "脂質のエステル結合に水を使って作用する酵素であり、分類も加水分解酵素。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/basic/page_015.png"
+  ],
+  "question_id": "R04-REG-BASIC-4-5",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "15",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "f1adccc829a35ae12409f7c74355bdebc46548b9e7e11dd356ae7ef2627dacc4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

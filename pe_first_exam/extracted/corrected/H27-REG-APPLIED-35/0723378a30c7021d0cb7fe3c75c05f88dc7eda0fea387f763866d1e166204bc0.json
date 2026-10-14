@@ -1,0 +1,45 @@
+{
+  "stem": "液状化しやすい飽和・粒度・密度の条件を比べる。",
+  "conditions": {
+    "原典照合": "22原典画像で25問の全五肢・数値・単位・否定を確認。",
+    "対象": "液状化しやすい飽和・粒度・密度の条件を比べる。"
+  },
+  "choices": {
+    "1": {
+      "value": "埋立地・旧河道",
+      "verdict": "代表的条件で適切",
+      "reason": "若く緩い砂質堆積物や高い地下水位がある場所ではリスクが高まり得る。名称だけで全地点を判定しない。"
+    },
+    "2": {
+      "value": "砂丘・浜堤列の間の低地",
+      "verdict": "代表的条件で適切",
+      "reason": "地下水が浅く飽和した砂質地盤が分布し得る。高い砂丘そのものと列間低地を区別する。"
+    },
+    "3": {
+      "value": "高い地下水位",
+      "verdict": "代表的条件で適切",
+      "reason": "浅い飽和砂層が揺れを受ける条件を作る。水位だけで粒度・密度・揺れを省略しない。"
+    },
+    "4": {
+      "value": "粒度が一定の堆積物",
+      "verdict": "代表的条件で適切",
+      "reason": "よく淘汰された緩い飽和砂は代表的に液状化しやすい。粒度だけで全密度の判定をしない。"
+    },
+    "5": {
+      "value": "N値20以上",
+      "verdict": "条件・全称を留保",
+      "reason": "密度・締まりが相対的に高い傾向で、緩い砂の典型条件との関係は小さい。地震動・有効上載圧・粒度等の補正があり、20を絶対的な安全線とはしない。"
+    }
+  },
+  "figures": "図表なしの五肢。原典画像は照合用で転載しない。",
+  "ambiguity": "N20を全地震動・全土層の不液状化保証へ使わない。R03の淘汰の悪さも唯一の排他的条件ではなく、原典は代表的な相対比較として保持。",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_014.png"
+  ],
+  "question_id": "H27-REG-APPLIED-35",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "14",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "5038211e6ffd807200e258776583f497269f1d3519236c9ca246b7ff2a485219",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

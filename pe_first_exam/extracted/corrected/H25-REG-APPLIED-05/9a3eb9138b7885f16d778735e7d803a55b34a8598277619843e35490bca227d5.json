@@ -1,0 +1,46 @@
+{
+  "stem": "静止した観測者から遠ざかる音源の観測振動数を求める。",
+  "conditions": {
+    "音源": "440 Hz、観測者から4 m/sで遠ざかる。",
+    "音速": "340 m/s。観測者は静止。",
+    "方向": "観測振動数に最も近い値。"
+  },
+  "choices": {
+    "1": {
+      "value": "430 Hz",
+      "verdict": "不適切",
+      "reason": "後退で下がる方向は正しいが、計算値約434.9 Hzには435の方が近い。"
+    },
+    "2": {
+      "value": "435 Hz",
+      "verdict": "最適",
+      "reason": "波面間隔が広がるため約434.9 Hzとなり、この候補が最も近い。"
+    },
+    "3": {
+      "value": "440 Hz",
+      "verdict": "不適切",
+      "reason": "運動による波長変化を無視した音源そのものの振動数。"
+    },
+    "4": {
+      "value": "445 Hz",
+      "verdict": "不適切",
+      "reason": "遠ざかるときの変化を接近と取り違えた候補。"
+    },
+    "5": {
+      "value": "450 Hz",
+      "verdict": "不適切",
+      "reason": "遠ざかる音源で観測周波数が増えることはない。"
+    }
+  },
+  "figures": "原典の条件・数式・単位・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_003.png"
+  ],
+  "question_id": "H25-REG-APPLIED-05",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "12f25b9924450dc78bf7a884ee6660052bf978856362789c4755428726526bb1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,47 @@
+{
+  "stem": "カルノーサイクルの吸熱と2熱源の温度から、1サイクルの低温熱源への放熱を求める。",
+  "conditions": {
+    "高温熱源": "1000K",
+    "低温熱源": "800K",
+    "高温側吸熱": "500J",
+    "求める量": "低温源へ放出する熱量の正の大きさ。"
+  },
+  "choices": {
+    "1": {
+      "value": "400J",
+      "verdict": "条件に一致",
+      "reason": "吸熱に低温／高温の温度比を掛けた放熱に一致する。"
+    },
+    "2": {
+      "value": "450J",
+      "verdict": "条件に不一致",
+      "reason": "可逆性から得る低温側放熱400Jと一致しない。"
+    },
+    "3": {
+      "value": "500J",
+      "verdict": "条件に不一致",
+      "reason": "可逆性から得る低温側放熱400Jと一致しない。"
+    },
+    "4": {
+      "value": "550J",
+      "verdict": "条件に不一致",
+      "reason": "可逆性から得る低温側放熱400Jと一致しない。"
+    },
+    "5": {
+      "value": "600J",
+      "verdict": "条件に不一致",
+      "reason": "可逆性から得る低温側放熱400Jと一致しない。"
+    }
+  },
+  "figures": "正誤方向、全条件・数値・単位、候補5肢を原典画像で確認。図なし。組合せ問題では表の全欄を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_002.png"
+  ],
+  "question_id": "R04-REG-APPLIED-06",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "7d7e7df704617ccc3c715c078be74de4bde389a21beddc8253b73156bee1f3b3",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

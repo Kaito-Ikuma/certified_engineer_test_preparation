@@ -1,0 +1,101 @@
+{
+  "checked_at": "2026-10-12T14:25:26+09:00",
+  "sources": [
+    {
+      "key": "epa_resistivity",
+      "url": "https://www.epa.gov/environmental-geophysics/electrical-resistivity",
+      "checked_claim": "本文の四電極・幾何係数・Ωm・配列・感度体積・非一意性を確認。図注のRと抵抗率の混同は採用しない。Wenner式は半空間から独自導出。"
+    },
+    {
+      "key": "epa_ip",
+      "url": "https://www.epa.gov/environmental-geophysics/induced-polarization-ip-and-complex-resistivity",
+      "checked_claim": "本文の時間減衰・周波数位相・粒界分極・直流比抵抗との同時計測を確認。掲載式の電流/電圧の誤記は転記しない。IPは比抵抗と無関係とはしない。"
+    },
+    {
+      "key": "epa_gpr",
+      "url": "https://www.epa.gov/environmental-geophysics/ground-penetrating-radar-gpr",
+      "checked_claim": "本文の電気特性境界、往復走時・速度測定、導電減衰、周波数と分解能の交換条件を確認。速度式には比誘電率を明示し、探査深度の厳密反比例を主張しない。"
+    },
+    {
+      "key": "epa_sp",
+      "url": "https://www.epa.gov/environmental-geophysics/self-potential-sp",
+      "checked_claim": "本文の非分極電極・基準点相対電位・流動/酸化還元機構・鉱体負異常とモデル依存の深度推定を確認。SPに深度推定能力が全くないとはしない。"
+    },
+    {
+      "key": "epa_gamma_density",
+      "url": "https://www.epa.gov/environmental-geophysics/gamma-gamma-density-logging",
+      "checked_claim": "本文のガンマ線Compton散乱・電子密度からかさ密度・孔隙率・校正と孔壁接触の条件を確認。粒子密度の直接測定又はベータ線とはしない。"
+    },
+    {
+      "key": "epa_borehole_resistivity",
+      "url": "https://www.epa.gov/environmental-geophysics/borehole-resistivity",
+      "checked_claim": "本文のnormal/focused電極、裸孔と導電孔内流体、含水・粘土・塩分の影響を確認。誘導検層は電極検層と区別。本文の流体影響の全称は装置非依存の保証にしない。"
+    },
+    {
+      "key": "epa_fdem",
+      "url": "https://www.epa.gov/environmental-geophysics/frequency-domain-electromagnetic-fdem",
+      "checked_claim": "本文のコイル・渦電流・振幅と位相・送受信間隔と低誘導数を確認。掲載skin depth説明を普遍的DOI境界へ転記しない。"
+    },
+    {
+      "key": "epa_tdem_archive",
+      "url": "https://archive.epa.gov/esd/archive-geophysics/web/html/time-domain_electromagnetic_methods.html",
+      "checked_claim": "旧サイト本文の遮断後過渡応答・central loop・時間と深部感度を確認。装置寸法・ノイズに依存し、送受信間隔によらず無限に深く探査できるとはしない。"
+    },
+    {
+      "key": "usgs_csamt2012",
+      "url": "https://pubs.usgs.gov/sir/2012/5060/sir2012-5060.pdf",
+      "checked_claim": "SIR2012-5060。取得PDF表紙と印刷12--13頁のskin depth・平面波・送受信距離と近接場を確認。三skin depthはこの報告の目安で全装置の厳密閾値ではない。"
+    },
+    {
+      "key": "usgs_linear_filter1981",
+      "url": "https://pubs.usgs.gov/of/1981/0160/report.pdf",
+      "checked_claim": "取得PDFのGhosh linear filterによる比抵抗変換からSchlumberger見掛比抵抗を計算する説明を確認。線形フィルタを電極配列そのものとはしない。表紙著者と1980年プログラム日付・81-160報告番号を別確認。"
+    },
+    {
+      "key": "geebec_ps",
+      "url": "https://www.geebec.co.jp/service/exploration/ps-logging/",
+      "checked_claim": "施工事業者の一次技術説明本文：孔壁へ密着した受振器は水位のない部分でもdownhole測定可能。全孔状態・全装置への非依存性は保証しない。"
+    },
+    {
+      "key": "oyo_suspension",
+      "url": "https://www.oyo.co.jp/services/products-list/geological-survey/suspension-ps-logger/",
+      "checked_claim": "メーカー本文と専用製品PDF要約の孔内振源と二受振器、地表起振不要を確認。製品深度を全探査法の限界へ一般化しない。"
+    },
+    {
+      "key": "schumann_mt2009",
+      "url": "https://angeo.copernicus.org/articles/27/3497/2009/",
+      "checked_claim": "Annales Geophysicae27(2009)3497--3507。出版社抄録のMT電磁記録でのSchumann共振観測を確認。全文の全読了ではない。"
+    },
+    {
+      "key": "naro_thermal2008",
+      "url": "https://www.naro.go.jp/project/results/laboratory/nkk/2008/nkk08-35.html",
+      "checked_claim": "2008成果情報本文の温度差・測定季節・熱伝導逆解析を確認。1mは測温深度で地下水の上限深度ではない。"
+    },
+    {
+      "key": "landslide_thermal2007",
+      "url": "https://www.jstage.jst.go.jp/article/jls/44/2/44_2_111/_pdf",
+      "checked_claim": "日本地すべり学会誌44(2007)111--115。本文111・113--114頁の水温と平常地温の差・季節反転・測線試験を確認。特定地の適期を全国の固定月へ拡張しない。"
+    },
+    {
+      "key": "rion_vibration2016",
+      "url": "https://www.rion.co.jp/shakehands/ShakeHands_vol4_%E5%8D%B0%E5%88%B7%E7%94%A8.pdf",
+      "checked_claim": "メーカー一次資料の検索収録で振動感覚補正加速度レベルとJIS C1510、2014マニュアルを確認。規格本文は未取得、出題当時と現行の版差の断定はしない。"
+    }
+  ],
+  "local_sources": [
+    {
+      "path": "extracted/reference_checks/S7_042/csamt.pdf",
+      "sha256": "c1874c9c60e01dcd12138b0ce19813ea316f6cda1a42da7832d12fb94b7fa31f"
+    },
+    {
+      "path": "extracted/reference_checks/S7_042/linear_filter.pdf",
+      "sha256": "877574ae9005a63f8285e7398abb2354cc12f64a0992cfe8e8af02a406574853"
+    }
+  ],
+  "limitations": [
+    "29原典と21頁画像、公式前初回29一致を保存済み。",
+    "近接場とArchie式、GPR比例表現、SP深度推定は条件を留保。",
+    "原典の真空の誘電率μ、Ωmの三乗、F・m、ベータ線を誤答のまま保持。",
+    "検索収録・抄録・全文の確認範囲を区別。"
+  ]
+}

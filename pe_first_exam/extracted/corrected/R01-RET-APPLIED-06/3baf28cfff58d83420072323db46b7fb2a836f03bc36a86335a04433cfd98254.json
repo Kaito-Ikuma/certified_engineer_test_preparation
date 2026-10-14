@@ -1,0 +1,45 @@
+{
+  "stem": "直流回路と抵抗の説明で、最も不適切なものを選ぶ。",
+  "conditions": {
+    "対象": "定常直流、真性半導体、純金属の抵抗。",
+    "方向": "最も不適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "二点間の電位差はどの経路で測っても同じである。",
+      "verdict": "適切",
+      "reason": "静電的・定常直流の近似では電位は一価な関数であり経路に依存しない。"
+    },
+    "2": {
+      "value": "真性半導体では温度上昇で電気抵抗が減る。",
+      "verdict": "適切",
+      "reason": "熱励起により担い手が増え、真性領域では抵抗が減る。"
+    },
+    "3": {
+      "value": "純金属に少量の不純物を混ぜると抵抗は増える。",
+      "verdict": "適切",
+      "reason": "不純物による電子散乱が増え、残留抵抗等が大きくなる。"
+    },
+    "4": {
+      "value": "多くの導体の抵抗率は温度の二乗に比例する。",
+      "verdict": "不適切",
+      "reason": "室温近傍の金属では基準温度からの変化を一次近似することが多い。特定低温域のT²項を多くの導体の一般則にできない。"
+    },
+    "5": {
+      "value": "消費電力は単位時間あたり消費するエネルギーである。",
+      "verdict": "適切",
+      "reason": "P=dW/dtであり、単位J/s=Wである。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_003.png"
+  ],
+  "question_id": "R01-RET-APPLIED-06",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "b0757f55329cd583437d2200bb248375d86ee3e61621b866892e0edaf4a01d3e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

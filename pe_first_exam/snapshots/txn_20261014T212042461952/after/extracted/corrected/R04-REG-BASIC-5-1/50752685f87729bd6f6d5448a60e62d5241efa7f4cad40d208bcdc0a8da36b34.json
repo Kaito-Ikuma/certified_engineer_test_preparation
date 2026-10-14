@@ -1,0 +1,45 @@
+{
+  "stem": "AR6観測温暖化は約1.1℃であって3℃ではない。",
+  "conditions": {
+    "原典": "全五肢と否定方向・組合せ表を画像確認。",
+    "資料時点": "令和4年度の指定資料・統計年を保持し、後年値に置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "人間影響による温暖化は疑う余地がない",
+      "verdict": "条件内で適切",
+      "reason": "WGIの結論は人間影響について明確な評価を示す。"
+    },
+    "2": {
+      "value": "2011〜2020は1850〜1900より約3℃高い",
+      "verdict": "不適切・選択対象",
+      "reason": "指定二期間の世界平均地表温度差は1.09℃、概数1.1℃。約3℃は観測済みの差ではない。"
+    },
+    "3": {
+      "value": "極端現象や酸性化・海面上昇等の影響",
+      "verdict": "条件内で適切",
+      "reason": "物理・生態系影響を一種類に限定しない。"
+    },
+    "4": {
+      "value": "脆弱性は地域内外で異なる",
+      "verdict": "条件内で適切",
+      "reason": "発展形態や曝露、適応能力が脆弱性を変える。"
+    },
+    "5": {
+      "value": "2010〜2019の平均排出量は過去の十年より高い",
+      "verdict": "条件内で適切",
+      "reason": "WGIIIの評価対象は年間平均の正味人為GHG排出量。濃度や年ごとの増加率とは違う。"
+    }
+  },
+  "figures": "文章五肢を独自要約。",
+  "ambiguity": "WGI温度箇所を確認。WGII脆弱性とWGIII排出量の各原SPM全段落照合は未完。",
+  "evidence": [
+    "extracted/pages/R04/basic/page_017.png"
+  ],
+  "question_id": "R04-REG-BASIC-5-1",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "a3f656658ef5fba98a33606b68630161fcd0d05481db35890f7281caca70c090",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,77 @@
+{
+  "time": "2026-10-11T10:12:02.698212+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_022_isotope",
+  "question_ids": [
+    "H23-REG-APPLIED-21",
+    "H23-REG-APPLIED-24",
+    "H24-REG-APPLIED-32",
+    "H25-REG-APPLIED-27",
+    "H26-REG-APPLIED-31",
+    "H27-REG-APPLIED-25",
+    "H28-REG-APPLIED-32",
+    "H29-REG-APPLIED-30",
+    "H30-REG-APPLIED-21",
+    "R01-RET-APPLIED-35",
+    "R02-REG-APPLIED-20",
+    "R04-REG-APPLIED-25",
+    "R05-REG-APPLIED-21",
+    "R06-REG-APPLIED-21",
+    "R07-REG-APPLIED-22"
+  ],
+  "source_images": 15,
+  "initial_independent_matches": 15,
+  "corrected_verified": 10,
+  "partial": 5,
+  "related_pairs_added": 9,
+  "related_pairs_total": 118,
+  "primary_references_added": 15,
+  "concepts_added": 3,
+  "concept_total": 152,
+  "canonical_counts": {
+    "recorded_at": "2026-10-11T10:12:02.698212+09:00",
+    "registered": 1270,
+    "classification_verified": 456,
+    "summary_verified": 420,
+    "corrected_verified": 376,
+    "corrected_partial": 44,
+    "solution_drafts": 420,
+    "solution_verified": 0,
+    "manual_required": 894,
+    "subject_drafts": {
+      "BASIC": 125,
+      "APT": 94,
+      "APPLIED": 201
+    }
+  },
+  "theory_sections_added": 19,
+  "labeled_theory_sections": 18,
+  "pdf": {
+    "pages": 622,
+    "bytes": 3066707,
+    "visual_review_pages": [
+      496,
+      497,
+      498,
+      499,
+      500,
+      501,
+      502,
+      506,
+      509,
+      513,
+      514
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draft・初期監査・1270ラベル監査成功。レンダラ改変なし。",
+  "risks": [
+    "旧標準名4問は1995年勧告と尺度・物質の区別を省く。出題時からの疑義として保持。",
+    "R07問22は主要Ca核破砕と実在する35Cl中性子捕獲経路を区別し、原典ClをCaへ改変しない。",
+    "Astra未査読。850問未執筆。最終監査未実装。"
+  ],
+  "next": "S7_023単位系・現代物理19問の原典画像を確認し、公式前独立解答保存から続行。全1270問と全章初稿・頻出分析まで継続。"
+}

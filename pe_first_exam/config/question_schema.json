@@ -471,6 +471,41 @@
       "name": "explanation_citations",
       "type": "string",
       "empty_allowed": true
+    },
+    {
+      "name": "choice_reviews",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "answer_reason",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "learning_points",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "theory_references",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "authoring_batch",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "independent_answer",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "independent_solution_status",
+      "type": "string",
+      "empty_allowed": true
     }
   ],
   "validator": "scripts/validate_schema.py",

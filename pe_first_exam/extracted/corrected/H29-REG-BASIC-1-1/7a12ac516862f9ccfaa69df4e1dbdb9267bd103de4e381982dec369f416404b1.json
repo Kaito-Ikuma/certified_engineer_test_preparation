@@ -1,0 +1,45 @@
+{
+  "stem": "単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。"
+  },
+  "choices": {
+    "1": {
+      "value": "60秒",
+      "verdict": "選ばない候補",
+      "reason": "60秒は計算した滞在時間120.0秒と異なる。"
+    },
+    "2": {
+      "value": "75秒",
+      "verdict": "選ばない候補",
+      "reason": "75秒は計算した滞在時間120.0秒と異なる。"
+    },
+    "3": {
+      "value": "90秒",
+      "verdict": "選ばない候補",
+      "reason": "90秒は計算した滞在時間120.0秒と異なる。"
+    },
+    "4": {
+      "value": "105秒",
+      "verdict": "選ばない候補",
+      "reason": "105秒は計算した滞在時間120.0秒と異なる。"
+    },
+    "5": {
+      "value": "120秒",
+      "verdict": "選ぶ候補",
+      "reason": "系内滞在時間120.0秒に最も近い。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/basic/page_001.png"
+  ],
+  "question_id": "H29-REG-BASIC-1-1",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "1",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "de0453108d9dc5978033d11eefe9604f3d0cb3718867cd8c2c5e30e2e16524d4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,47 @@
+{
+  "stem": "ハミング距離と一ビット誤り訂正。",
+  "conditions": {
+    "比較": "1110101 / 1001111",
+    "受信": "1000010",
+    "検査式": "x5=x2+x3+x4、x6=x1+x3+x4、x7=x1+x2+x4、全てmod2。",
+    "仮定": "通信誤りは高々一ビット。"
+  },
+  "choices": {
+    "1": {
+      "value": "4/0000010",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 4/1000011 と異なる。"
+    },
+    "2": {
+      "value": "5/1100010",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 4/1000011 と異なる。"
+    },
+    "3": {
+      "value": "4/1001010",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 4/1000011 と異なる。"
+    },
+    "4": {
+      "value": "5/1000110",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 4/1000011 と異なる。"
+    },
+    "5": {
+      "value": "4/1000011",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/basic/page_007.png"
+  ],
+  "question_id": "R04-REG-BASIC-2-4",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "6e87bf8930de7ed2816a2ac49d7644e716e94ea9a17daca4adee72dffd4819ea",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

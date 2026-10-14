@@ -1,0 +1,45 @@
+{
+  "stem": "標準気体と液体の密度比からLNG体積比。",
+  "conditions": {
+    "標準状態": "0℃1気圧、純CH4理想気体。",
+    "液体": "425kg/m³一定。"
+  },
+  "choices": {
+    "1": {
+      "value": "1/1200",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "1/1000",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "1/800",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "1/600",
+      "verdict": "適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "5": {
+      "value": "1/400",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/basic/page_019.png"
+  ],
+  "question_id": "H29-REG-BASIC-5-3",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "19",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "26a6e0c6229311cbca2426144bd34ccbb63f837abb27cb3bb7b04d2f42d87006",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

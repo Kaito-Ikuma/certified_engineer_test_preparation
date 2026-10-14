@@ -1,0 +1,46 @@
+{
+  "stem": "独立な引張力と圧縮力の差について、正の合力が閾値を超える確率を求める。",
+  "conditions": {
+    "判断方向": "最も適切な記述又は組合せを選ぶ",
+    "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+    "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+  },
+  "choices": {
+    "1": {
+      "value": "0.2%未満",
+      "verdict": "不適切",
+      "reason": "2.28%は0.2%未満ではない。"
+    },
+    "2": {
+      "value": "0.2%以上1%未満",
+      "verdict": "不適切",
+      "reason": "2.28%は上限1%を超える。"
+    },
+    "3": {
+      "value": "1%以上5%未満",
+      "verdict": "適切",
+      "reason": "z=2の上側確率2.28%がこの範囲に入る。"
+    },
+    "4": {
+      "value": "5%以上10%未満",
+      "verdict": "不適切",
+      "reason": "2.28%は下限5%より小さい。"
+    },
+    "5": {
+      "value": "10%以上",
+      "verdict": "不適切",
+      "reason": "2.28%は10%より小さい。"
+    }
+  },
+  "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/basic/page_002.png"
+  ],
+  "question_id": "R04-REG-BASIC-1-3",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "2",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "e711fe0d712d435ef5a3caad1dcce6a2b925478b427817dca2d11d0e50616a2f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

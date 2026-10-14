@@ -1,0 +1,46 @@
+{
+  "stem": "産業財産権に含まれない植物新品種の権利を選ぶ。",
+  "conditions": {
+    "判断対象": "広義知的財産・産業財産権・引用・営業秘密を区別する。",
+    "原典照合": "15問の原典画像について問題幹、否定、表の列順、全5候補を確認。",
+    "法の時点": "出題時の制度を保持し、説明の取得基準日は2026-10-12とする。"
+  },
+  "choices": {
+    "1": {
+      "value": "特許権",
+      "verdict": "対象範囲を検討",
+      "reason": "産業財産権の4種類に含まれる。"
+    },
+    "2": {
+      "value": "実用新案権",
+      "verdict": "対象範囲を検討",
+      "reason": "物品の形状等の考案を保護する4種類の一つである。"
+    },
+    "3": {
+      "value": "意匠権",
+      "verdict": "対象範囲を検討",
+      "reason": "デザインを保護する4種類の一つである。"
+    },
+    "4": {
+      "value": "商標権",
+      "verdict": "対象範囲を検討",
+      "reason": "出所を示す標識の4種類の一つである。"
+    },
+    "5": {
+      "value": "育成者権",
+      "verdict": "該当しない対象",
+      "reason": "植物新品種の育成者権は知的財産に関係するが、この4種類には入らない。"
+    }
+  },
+  "figures": "組合せ表の全5行を画像確認。原典の長文は独自要約へ変換し、正誤と選択肢の対応を保持する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/aptitude/page_006.png"
+  ],
+  "question_id": "R01-REG-APT-05",
+  "source_file": "sources/R01/aptitude.pdf",
+  "source_page": "6",
+  "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+  "raw_text_sha256": "8c00f9702fbb0b15deaf085333a2457400948aeb8bbe82e9703ac982c44e0857",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,211 @@
+{
+  "batch_id": "S7_050_volcano_resources",
+  "saved_at": "2026-10-13T09:42:23.937086+09:00",
+  "official_answers_consulted": false,
+  "records": [
+    {
+      "question_id": "H23-REG-APPLIED-23",
+      "answer_initial": "1",
+      "reason": "斑岩銅の鉱染と細脈",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-26",
+      "answer_initial": "2",
+      "reason": "低温地熱は非火山域にもある",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-27",
+      "answer_initial": "5",
+      "reason": "団塊の成長は百万年規模",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-25",
+      "answer_initial": "2",
+      "reason": "伸張する背弧と黒鉱",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-26",
+      "answer_initial": "4",
+      "reason": "他四肢の年代・石炭化順・原子比・植物が誤り。200度以下代表を留保",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-24",
+      "answer_initial": "3",
+      "reason": "油頁岩は細粒",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-25",
+      "answer_initial": "3",
+      "reason": "ハワイは玄武岩質",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-26",
+      "answer_initial": "5",
+      "reason": "中央海嶺は発散",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-29",
+      "answer_initial": "4",
+      "reason": "黒鉱は再結晶だけでない",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-31",
+      "answer_initial": "1",
+      "reason": "残留と溶脱元素を交換",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-28",
+      "answer_initial": "5",
+      "reason": "CH4は通常主要でない",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-29",
+      "answer_initial": "4",
+      "reason": "海嶺の全世界噴出量最大",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-31",
+      "answer_initial": "3",
+      "reason": "油頁岩は細粒",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-35",
+      "answer_initial": "2",
+      "reason": "水蒸気が大部分。灰と硫酸エアロゾルの違いを留保",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-23",
+      "answer_initial": "4",
+      "reason": "火炎状構造は堆積物変形",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-28",
+      "answer_initial": "1",
+      "reason": "早期AuAgは正マグマの主例でない。ウラン漂砂は古代例に限定",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-29",
+      "answer_initial": "3",
+      "reason": "玄武岩の組成を珪長質へ混同",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-29",
+      "answer_initial": "3",
+      "reason": "ハワイ流紋岩は誤り",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-23",
+      "answer_initial": "2",
+      "reason": "玄武岩のSiNaKの相対説明不適",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-22",
+      "answer_initial": "4",
+      "reason": "メタン主要は不適",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-23",
+      "answer_initial": "3",
+      "reason": "背弧へアルカリ通常増。水量の一律傾向は留保",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-24",
+      "answer_initial": "5",
+      "reason": "火砕流の低速度誤り",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-24",
+      "answer_initial": "3",
+      "reason": "パホイホイは玄武岩",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-26",
+      "answer_initial": "3",
+      "reason": "残留と溶脱が逆",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-20",
+      "answer_initial": "4",
+      "reason": "貯留層は割れ目に富む",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-26",
+      "answer_initial": "3",
+      "reason": "間欠爆発と連続噴泉を交換",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-24",
+      "answer_initial": "5",
+      "reason": "貫入岩型は一般低品位",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-23",
+      "answer_initial": "3",
+      "reason": "緑色片岩とグリーンタフ混同",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-25",
+      "answer_initial": "3",
+      "reason": "海嶺は減圧融解",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-24",
+      "answer_initial": "3",
+      "reason": "黒鉱をスカルンへ交換",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-25",
+      "answer_initial": "5",
+      "reason": "前弧に地震あり",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-20",
+      "answer_initial": "2",
+      "reason": "1200度の主要平衡ガスでCH4不適",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-25",
+      "answer_initial": "3",
+      "reason": "緑色片岩の誤り",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-26",
+      "answer_initial": "2",
+      "reason": "低温急加熱でなく上昇減圧",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7"
+    }
+  ]
+}

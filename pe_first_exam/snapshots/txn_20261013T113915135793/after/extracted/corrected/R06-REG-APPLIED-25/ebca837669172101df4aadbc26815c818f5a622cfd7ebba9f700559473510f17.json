@@ -1,0 +1,45 @@
+{
+  "stem": "海溝・前弧・火山弧・背弧と地震活動を整理する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "海溝・前弧・火山弧・背弧と地震活動を整理する。"
+  },
+  "choices": {
+    "1": {
+      "value": "海洋側に海溝",
+      "verdict": "代表的条件で適切",
+      "reason": "島弧海溝の基本配列では海溝が沈み込みの海洋側にある。"
+    },
+    "2": {
+      "value": "陸側へ前弧・火山弧・背弧",
+      "verdict": "代表的条件で適切",
+      "reason": "海溝から火山前線までの前弧、火山弧、その背後の背弧を順に読む。"
+    },
+    "3": {
+      "value": "背弧で海が形成され得る",
+      "verdict": "代表的条件で適切",
+      "reason": "伸張して背弧盆地・海が形成される場合がある。必ず拡大海盆を持つわけではない。"
+    },
+    "4": {
+      "value": "背後の海による島弧・陸弧の呼称",
+      "verdict": "条件・解釈を留保",
+      "reason": "過去問の基本図式は大陸から海で隔たる島弧と大陸縁の陸弧。海の有無だけで全遷移形態を排他的に分類する厳密定義には留保する。"
+    },
+    "5": {
+      "value": "前弧は地震活動も静穏",
+      "verdict": "不適切",
+      "reason": "沈み込み境界やスラブに関係する地震があり、火山が少ないことから地震も静穏とは言えない。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "原典4の島弧・陸弧を海の有無だけで定義する単純化と、前弧に火山が全くないという全称は留保。公式5の地震活動の誤りを保持。",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_008.png"
+  ],
+  "question_id": "R06-REG-APPLIED-25",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "3d6d05e8fc92491cb89e05064bf3d1db53fc668f1d5bfd99bca9406c69e4f6f6",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

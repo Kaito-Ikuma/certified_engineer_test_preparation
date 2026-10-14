@@ -1,0 +1,45 @@
+{
+  "stem": "下水処理の段階と環境対策。",
+  "conditions": {
+    "時点": "平成25年度に指定された資料・制度。",
+    "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "管理型の遮水・浸出水処理",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "活性汚泥は一次処理",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "3": {
+      "value": "緑化の表面温度と空調低減",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "土壌対策に掘削除去が多い",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "5": {
+      "value": "完全燃焼と排ガス急冷",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "当時土壌対策の掘削除去割合と施設の詳細法定仕様は追加照合。緑化の効果は気象・水・建物条件に依存。",
+  "evidence": [
+    "extracted/pages/H25/basic/page_021.png"
+  ],
+  "question_id": "H25-REG-BASIC-5-4",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "21",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "ee6ed100f5b09cb2f13f10feec01bfa94b2a49cd6bd4f30fcc8b2d26135d9f03",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

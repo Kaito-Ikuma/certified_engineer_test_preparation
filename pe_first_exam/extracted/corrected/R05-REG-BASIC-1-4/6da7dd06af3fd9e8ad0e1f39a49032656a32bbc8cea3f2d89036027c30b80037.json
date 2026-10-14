@@ -1,0 +1,46 @@
+{
+  "stem": "三要素のうち二つ以上が動けば成功する多数決系の信頼度の区間を求める。",
+  "conditions": {
+    "判断方向": "全候補を比較し最も適切な語又は数値・順位を選ぶ。",
+    "原典照合": "25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。",
+    "前提": "事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(0.90\\le R\\le1.00\\)",
+      "verdict": "不適合",
+      "reason": "導出値0.784と一致せず、本問の接続・条件を満たす数値ではない。"
+    },
+    "2": {
+      "value": "\\(0.85\\le R<0.90\\)",
+      "verdict": "不適合",
+      "reason": "導出値0.784と一致せず、本問の接続・条件を満たす数値ではない。"
+    },
+    "3": {
+      "value": "\\(0.80\\le R<0.85\\)",
+      "verdict": "不適合",
+      "reason": "導出値0.784と一致せず、本問の接続・条件を満たす数値ではない。"
+    },
+    "4": {
+      "value": "\\(0.75\\le R<0.80\\)",
+      "verdict": "適合（記載条件内）",
+      "reason": "導出値0.784に最も近い。"
+    },
+    "5": {
+      "value": "\\(0.70\\le R<0.75\\)",
+      "verdict": "不適合",
+      "reason": "導出値0.784と一致せず、本問の接続・条件を満たす数値ではない。"
+    }
+  },
+  "figures": "回路、FTA又は候補表を全て原典で照合。元図は転載せず、接続関係と値を独自に記述。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_003.png"
+  ],
+  "question_id": "R05-REG-BASIC-1-4",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "3",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "a29014947c847a6070fc46bfab73d08489322e21c721c327ba2af93beb3a5a3c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

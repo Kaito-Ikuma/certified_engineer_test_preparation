@@ -1,0 +1,28 @@
+{
+  "status": "committed",
+  "time": "2026-10-09T21:03:43+09:00",
+  "paths": [
+    "data/batch_changes/S7_007_thermodynamics_revision2_H29-REG-APPLIED-06_revision.json",
+    "data/batch_changes/S7_007_thermodynamics_revision2_R06-REG-APPLIED-06_revision.json",
+    "data/questions.csv",
+    "data/verification_records.csv",
+    "data/batch_changes/S7_007_thermodynamics_revision2.csv",
+    "extracted/logs/batches/S7_007_thermodynamics_revision2.json"
+  ],
+  "existed": {
+    "data/batch_changes/S7_007_thermodynamics_revision2_H29-REG-APPLIED-06_revision.json": false,
+    "data/batch_changes/S7_007_thermodynamics_revision2_R06-REG-APPLIED-06_revision.json": false,
+    "data/questions.csv": true,
+    "data/verification_records.csv": true,
+    "data/batch_changes/S7_007_thermodynamics_revision2.csv": false,
+    "extracted/logs/batches/S7_007_thermodynamics_revision2.json": false
+  },
+  "sha256": {
+    "data/batch_changes/S7_007_thermodynamics_revision2_H29-REG-APPLIED-06_revision.json": "93edc5d4de8d60ef34f1707e4463dcd006f3aade1f53b4bba1e3f09628c280f1",
+    "data/batch_changes/S7_007_thermodynamics_revision2_R06-REG-APPLIED-06_revision.json": "5102733a29aee46cfaa0b21ea3dc8bb4d38c15f8f19b9ab5276d31dbb978b14b",
+    "data/questions.csv": "80f7341f852134f52f669dac855ebe015d9e4eeb65adbdb6949129b9b6605672",
+    "data/verification_records.csv": "fe92e8f93703c9ef2de2ba16ce36fa17ca5a79b606eb44cca373ed98e7eea658",
+    "data/batch_changes/S7_007_thermodynamics_revision2.csv": "9c45f6cbda9d5f627b31224389eac4b03a04f575da9fc45ddf4540e21c63b74e",
+    "extracted/logs/batches/S7_007_thermodynamics_revision2.json": "57578970aa2184fcb565b0bf94d616cff480c975a72fb5175a348925c4cbab35"
+  }
+}

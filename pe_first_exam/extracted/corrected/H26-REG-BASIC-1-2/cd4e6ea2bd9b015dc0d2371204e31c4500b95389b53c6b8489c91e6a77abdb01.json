@@ -1,0 +1,48 @@
+{
+  "stem": "限界利益から必要な客席回転を求める。",
+  "conditions": {
+    "売上": "500円/人。",
+    "変動費": "200円/人。",
+    "固定費": "月50万円。",
+    "目標利益": "月100万円。",
+    "営業": "20日、50席。"
+  },
+  "choices": {
+    "1": {
+      "value": "2",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "2": {
+      "value": "3",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "3": {
+      "value": "4",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "4": {
+      "value": "5",
+      "verdict": "条件内で適切",
+      "reason": "解法の条件と結果を照合する。 計算結果と一致。"
+    },
+    "5": {
+      "value": "10",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/basic/page_001.png"
+  ],
+  "question_id": "H26-REG-BASIC-1-2",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "1",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "9271194e81fcebf3e9559a7dee0e84059e873a485c60834df100357fad4d9162",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,225 @@
+{
+  "selected_at": "2026-10-11T00:54:44.280396+09:00",
+  "questions": [
+    {
+      "question_id": "H23-REG-APPLIED-18",
+      "source_file": "sources/H23/17_applied_science.pdf",
+      "source_page": "6",
+      "question_text_file": "extracted/questions/H23-REG-APPLIED-18.txt",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "raw_text_sha256": "85b1b4cca6b9d716d19eac40835a4ecdd1336ecbec2ca7f67b29cb551c5116a2",
+      "image": "extracted/pages/H23/17_applied_science/page_006.png",
+      "image_sha256": "4db4e8f368134c7cd21b2366991b053e0f87d78c074c915d9db50b4fb7c701e0"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-19",
+      "source_file": "sources/H23/17_applied_science.pdf",
+      "source_page": "7",
+      "question_text_file": "extracted/questions/H23-REG-APPLIED-19.txt",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "raw_text_sha256": "7188b001c7e576a26f58cfdd1c1e10c405c2f5fc1e5f676c600b0a7d8196c984",
+      "image": "extracted/pages/H23/17_applied_science/page_007.png",
+      "image_sha256": "0048643e24983720a07322b040e758c1b3b875de511ac14079a0ad82ce3f8c12"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-22",
+      "source_file": "sources/H23/17_applied_science.pdf",
+      "source_page": "7",
+      "question_text_file": "extracted/questions/H23-REG-APPLIED-22.txt",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "raw_text_sha256": "3310b86940f59436e53c66d133563529d4a48c9a694552ddd5a96cfdd66373ec",
+      "image": "extracted/pages/H23/17_applied_science/page_007.png",
+      "image_sha256": "0048643e24983720a07322b040e758c1b3b875de511ac14079a0ad82ce3f8c12"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-33",
+      "source_file": "sources/H24/17_applied_science.pdf",
+      "source_page": "10",
+      "question_text_file": "extracted/questions/H24-REG-APPLIED-33.txt",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "raw_text_sha256": "15e367469e54df1adea636ad16123ff1fe7c6576dd919b992892269b11fa14ea",
+      "image": "extracted/pages/H24/17_applied_science/page_010.png",
+      "image_sha256": "3293521506e05f9d8f141593484b14c7577341a3d0b6c0189badb9779896a695"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-10",
+      "source_file": "sources/H25/17_applied_science.pdf",
+      "source_page": "5",
+      "question_text_file": "extracted/questions/H25-REG-APPLIED-10.txt",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "raw_text_sha256": "b1cfc23ffde98d96952f9871e5cca4eb76573b0a56675d847c4b340d6eca091f",
+      "image": "extracted/pages/H25/17_applied_science/page_005.png",
+      "image_sha256": "5d66df5b7cd822aabcef602434e309d984a4a2deec5e42894c6c50220cb0f8be"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-31",
+      "source_file": "sources/H25/17_applied_science.pdf",
+      "source_page": "11",
+      "question_text_file": "extracted/questions/H25-REG-APPLIED-31.txt",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "raw_text_sha256": "e6b6e9108bb9be032bece1130705137195d3e14fa880f5496ebd310891fffaf6",
+      "image": "extracted/pages/H25/17_applied_science/page_011.png",
+      "image_sha256": "54ec5ef57e455d90e9da35a038637ca13fe859bca509a22efc2ffca934d0cac1"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-18",
+      "source_file": "sources/H26/17_applied_science.pdf",
+      "source_page": "7",
+      "question_text_file": "extracted/questions/H26-REG-APPLIED-18.txt",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "raw_text_sha256": "1efb97e4f311f5da8c7866c3a1445d53cb61ff0e6eb48d024a3b2b4b8a1b0292",
+      "image": "extracted/pages/H26/17_applied_science/page_007.png",
+      "image_sha256": "5970bd1c5a811291fe0cd22668fd43730b1481bcd93700b115bf9b9df9a926c0"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-25",
+      "source_file": "sources/H26/17_applied_science.pdf",
+      "source_page": "11",
+      "question_text_file": "extracted/questions/H26-REG-APPLIED-25.txt",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "raw_text_sha256": "5299c8b3fe41cee39685017813e244531d2acc088e3f7ddca884bae5064db53c",
+      "image": "extracted/pages/H26/17_applied_science/page_011.png",
+      "image_sha256": "232789c2dce3d7584dbd2869c0ca0604359a2f97a46b529fe0a384c0b0481607"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-27",
+      "source_file": "sources/H26/17_applied_science.pdf",
+      "source_page": "11",
+      "question_text_file": "extracted/questions/H26-REG-APPLIED-27.txt",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "raw_text_sha256": "8bcdce0e224fd401204bfc0cebc7b48bbc7dc5461941e6b5f38cec7ebfb24d4e",
+      "image": "extracted/pages/H26/17_applied_science/page_011.png",
+      "image_sha256": "232789c2dce3d7584dbd2869c0ca0604359a2f97a46b529fe0a384c0b0481607"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-27",
+      "source_file": "sources/H27/17_applied_science.pdf",
+      "source_page": "10",
+      "question_text_file": "extracted/questions/H27-REG-APPLIED-27.txt",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "raw_text_sha256": "9e0011137b7c402e00d3347e940868efb86c6b06cee485ca21147fd7e78c5cac",
+      "image": "extracted/pages/H27/17_applied_science/page_010.png",
+      "image_sha256": "752b8714b9bf0ec9cae8e298543c60c798b79363827422dbaa2e90656f3f7107"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-27",
+      "source_file": "sources/H28/17_applied_science.pdf",
+      "source_page": "11",
+      "question_text_file": "extracted/questions/H28-REG-APPLIED-27.txt",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "raw_text_sha256": "fd2d786441c7b10c704d4d590bfb8fcfadf459541f2767bc20da7c65fcc6a70d",
+      "image": "extracted/pages/H28/17_applied_science/page_011.png",
+      "image_sha256": "76f6e36d7d5f71d0246dc6cd6489a3cb5b0b838c04da4113d07133584bd3ac91"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-20",
+      "source_file": "sources/H29/17_applied_science.pdf",
+      "source_page": "6",
+      "question_text_file": "extracted/questions/H29-REG-APPLIED-20.txt",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "raw_text_sha256": "3c1e7a1432e4c62641c584abf3d1c7f5f27f5609154516fcdc025e3366146bc0",
+      "image": "extracted/pages/H29/17_applied_science/page_006.png",
+      "image_sha256": "29230a9e37cc89bf86c7fe4c80ada953fdbc1e82647be60fd37da303d9244f03"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-28",
+      "source_file": "sources/H30/17_applied_science.pdf",
+      "source_page": "9",
+      "question_text_file": "extracted/questions/H30-REG-APPLIED-28.txt",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "raw_text_sha256": "6fbf3b2de5a9c3f5fcd33c7d5ab1b70f0a3000b7f0494e6dc1910ad3a63100d6",
+      "image": "extracted/pages/H30/17_applied_science/page_009.png",
+      "image_sha256": "336f868d28a542fbc030f4c89d900beca9b6d673f4d7c4a7572244736d95ec66"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-20",
+      "source_file": "sources/R01/17_applied_science.pdf",
+      "source_page": "6",
+      "question_text_file": "extracted/questions/R01-REG-APPLIED-20.txt",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "raw_text_sha256": "01cc191ab523e305f5d4bec1714c1b318979584450704e3927bc690f83f2ffc4",
+      "image": "extracted/pages/R01/17_applied_science/page_006.png",
+      "image_sha256": "45294f0496114b79da27cee8854915c03ff12d98421f40b0e023af5789b52dd1"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-18",
+      "source_file": "sources/R01_retest/17_applied_science.pdf",
+      "source_page": "6",
+      "question_text_file": "extracted/questions/R01-RET-APPLIED-18.txt",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "raw_text_sha256": "8d5e863d0971a9a57ba8d26dd59667f9bd8a49600229c489aeeaf98dd05b733a",
+      "image": "extracted/pages/R01_retest/17_applied_science/page_006.png",
+      "image_sha256": "622a4b73bf2869ac4fc3453aa998c0481f125f2c29d0598f05ccedbecae70f50"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-19",
+      "source_file": "sources/R02/17_applied_science.pdf",
+      "source_page": "7",
+      "question_text_file": "extracted/questions/R02-REG-APPLIED-19.txt",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "raw_text_sha256": "70dae6954b38bdb4ad213122d44882cedb001d8c58274d80540cbe70cef118bc",
+      "image": "extracted/pages/R02/17_applied_science/page_007.png",
+      "image_sha256": "71c9521c60e335ebc2676586b8ca54db34d846560b7bef12fbb99e4d11add3fd"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-18",
+      "source_file": "sources/R03/17_applied_science.pdf",
+      "source_page": "7",
+      "question_text_file": "extracted/questions/R03-REG-APPLIED-18.txt",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "raw_text_sha256": "0b3675c5a683222ba19aa7b3bbe96b3dcf58b567d56e4efba79326bba8853a1a",
+      "image": "extracted/pages/R03/17_applied_science/page_007.png",
+      "image_sha256": "fe39bfc2188f92e496e5605d34d175a9db148bd769738ed47622a5ef3a8839f3"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-19",
+      "source_file": "sources/R03/17_applied_science.pdf",
+      "source_page": "7",
+      "question_text_file": "extracted/questions/R03-REG-APPLIED-19.txt",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "raw_text_sha256": "76146a58f667be3ddf2e0a98959b74f449ad356659520d58b3bcc543f1ad7de2",
+      "image": "extracted/pages/R03/17_applied_science/page_007.png",
+      "image_sha256": "fe39bfc2188f92e496e5605d34d175a9db148bd769738ed47622a5ef3a8839f3"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-21",
+      "source_file": "sources/R03/17_applied_science.pdf",
+      "source_page": "8",
+      "question_text_file": "extracted/questions/R03-REG-APPLIED-21.txt",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "raw_text_sha256": "3d3b219b784ffd256cddc10f3645026df1b6a7f0eb3114d09f04a50889d73e28",
+      "image": "extracted/pages/R03/17_applied_science/page_008.png",
+      "image_sha256": "44ce9811d7ea5b998f775da46d19abaa3cf77b135f774c808f6a9c79482b0bdf"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-19",
+      "source_file": "sources/R04/17_applied_science.pdf",
+      "source_page": "6",
+      "question_text_file": "extracted/questions/R04-REG-APPLIED-19.txt",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "raw_text_sha256": "c00a0817039145531b001a93ccce5147ec7406a523d56f19f73dc4f9a252b1f0",
+      "image": "extracted/pages/R04/17_applied_science/page_006.png",
+      "image_sha256": "98ef709485743bea48eed9e4183bb4c2ecd84c1debb0540ba772282ac69faa88"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-20",
+      "source_file": "sources/R04/17_applied_science.pdf",
+      "source_page": "7",
+      "question_text_file": "extracted/questions/R04-REG-APPLIED-20.txt",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "raw_text_sha256": "3104846d61df5d8ea384d31cb7ac0636c278b0c9cc249622e2578c6718e255aa",
+      "image": "extracted/pages/R04/17_applied_science/page_007.png",
+      "image_sha256": "8c6ee032f99d811e22afb59b18fc2ab1a6bfd5b6fe0ec4dca928ac8145f8e1be"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-22",
+      "source_file": "sources/R06/17_applied_science.pdf",
+      "source_page": "7",
+      "question_text_file": "extracted/questions/R06-REG-APPLIED-22.txt",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "raw_text_sha256": "8afd56d0202db531100ee9a76804908e11b239c2975147aefe5572ab02bee6a4",
+      "image": "extracted/pages/R06/17_applied_science/page_007.png",
+      "image_sha256": "e2e1bba4171431391195c3f52b8f7e9dd972617f0be9966d5a0e9d9c44f16b47"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "stem": "線形抵抗を受ける落下の終端速度。",
+  "conditions": {
+    "質点": "m>0、g>0。",
+    "抵抗": "速さに比例、係数k>0、運動と反対。",
+    "範囲": "原典は浮力を別項として与えない。"
+  },
+  "choices": {
+    "1": {
+      "value": "mg/k",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "2": {
+      "value": "2mg/k",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 mg/k と異なる。"
+    },
+    "3": {
+      "value": "√(mg)/k",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 mg/k と異なる。"
+    },
+    "4": {
+      "value": "√(mg/k)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 mg/k と異なる。"
+    },
+    "5": {
+      "value": "√(2mg/k)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 mg/k と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_013.png"
+  ],
+  "question_id": "R01-REG-BASIC-3-3",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "13",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "405409256ac412840da8750974e77dfadc20c6965efcbdfc4a5b07a589c72982",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

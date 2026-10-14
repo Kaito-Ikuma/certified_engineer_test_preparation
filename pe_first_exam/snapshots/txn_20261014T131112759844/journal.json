@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-14T13:11:12+09:00",
+  "paths": [
+    "generated/questions/aptitude/02_engineering_ethics.tex"
+  ],
+  "existed": {
+    "generated/questions/aptitude/02_engineering_ethics.tex": true
+  },
+  "sha256": {
+    "generated/questions/aptitude/02_engineering_ethics.tex": "3306c961837268ddb64c9d57ea6a8bb4ee24c32c8ea39d4c3b729334da65ddcc"
+  }
+}

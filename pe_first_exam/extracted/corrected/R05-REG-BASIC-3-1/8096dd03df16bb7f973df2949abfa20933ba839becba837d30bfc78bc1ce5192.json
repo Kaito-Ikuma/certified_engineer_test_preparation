@@ -1,0 +1,45 @@
+{
+  "stem": "対角が全て1の下三角3行3列行列の逆行列を選ぶ。",
+  "conditions": {
+    "行列A": "行をセミコロンで区切って(1,0,0; a,1,0; b,c,1)。",
+    "候補表記": "同じく各行をセミコロンで区切る。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\((1,0,0;-a,1,0;ac+b,-c,1)\\)",
+      "verdict": "条件に不一致",
+      "reason": "第3行第1列の積を打ち消すにはac−bが必要である。"
+    },
+    "2": {
+      "value": "\\((1,0,0;a,1,0;ac-b,c,1)\\)",
+      "verdict": "条件に不一致",
+      "reason": "第2行第1列と第3行第2列の符号を逆にする必要がある。"
+    },
+    "3": {
+      "value": "\\((1,c,b;0,1,a;0,0,1)\\)",
+      "verdict": "条件に不一致",
+      "reason": "Aが下三角なので逆も下三角になる。転置に似た配置では積が単位行列にならない。"
+    },
+    "4": {
+      "value": "\\((1,0,0;-a,1,0;ac-b,-c,1)\\)",
+      "verdict": "条件に一致",
+      "reason": "下三角の積を計算すると対角1、下の非対角0になる。"
+    },
+    "5": {
+      "value": "\\((1,0,0;a,1,0;ac+b,c,1)\\)",
+      "verdict": "条件に不一致",
+      "reason": "第3行第1列の積を打ち消すにはac−bが必要である。第2行・第3行の符号も異なる。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_009.png"
+  ],
+  "question_id": "R05-REG-BASIC-3-1",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "9",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "8a044f49b96c9ff8c7b8d0d7eeffebb11479fcb9a694308644c8fc2f13f464af",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

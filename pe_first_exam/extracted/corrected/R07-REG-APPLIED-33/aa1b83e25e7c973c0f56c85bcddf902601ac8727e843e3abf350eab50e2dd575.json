@@ -1,0 +1,44 @@
+{
+  "stem": "正規重力と各補正を区別し、密度差によるブーゲー異常の符号を誤る記述を選ぶ。",
+  "conditions": {
+    "選択方向": "誤り又は最も不適切・関係の薄いものを1つ"
+  },
+  "choices": {
+    "1": {
+      "value": "正規重力は地球の質量・自転・形状から導く理論値",
+      "verdict": "適切",
+      "reason": "基準回転楕円体の外部重力ポテンシャルと自転による遠心ポテンシャルから定める。"
+    },
+    "2": {
+      "value": "ブーゲー補正は測点と海水準面の間の地殻物質の効果を除く",
+      "verdict": "適切",
+      "reason": "標高差だけでなく、その間の岩石質量の引力を平板等で近似して除く。"
+    },
+    "3": {
+      "value": "船・航空機の移動は遠心効果を変える",
+      "verdict": "適切",
+      "reason": "地球自転と観測機の相対運動により見掛加速度が変わるためエトベス補正が必要である。"
+    },
+    "4": {
+      "value": "フリーエア補正は高さの違いの影響を補正する",
+      "verdict": "適切",
+      "reason": "高さによる重力の鉛直勾配の影響をそろえる操作である。"
+    },
+    "5": {
+      "value": "高密度地域のブーゲー異常は小さく、低密度地域では大きくなる",
+      "verdict": "不適切",
+      "reason": "形状等を同条件にした基準密度との差では、密度の過剰は正、欠損は負の重力異常を生む。第5肢は基本的対応を逆にしている。"
+    }
+  },
+  "figures": "図なし。否定方向と全5肢を原典ページ画像で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_012.png"
+  ],
+  "question_id": "R07-REG-APPLIED-33",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "b02939c5cdfe0891713b992fd325e2342d8cbaecfc0c600dae9194a263f62dd3",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "発熱するアンモニア合成の温度・圧力・窒素追加・触媒の効果を判定する。",
+  "conditions": {
+    "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+    "成立条件": "\\(\\mathrm{N_2+3H_2\\rightleftharpoons2NH_3}+92\\,\\mathrm{kJ}\\)。窒素追加は温度・体積一定。気体の分圧を用いる理想気体近似。"
+  },
+  "choices": {
+    "1": {
+      "value": "発熱反応である",
+      "verdict": "適切",
+      "reason": "式の生成側の92 kJは反応式1回分の放熱を表す。"
+    },
+    "2": {
+      "value": "定温定積で窒素を加えると生成側へ進む",
+      "verdict": "適切",
+      "reason": "直後の \\(Q=p_{\\mathrm{NH_3}}^2/(p_{\\mathrm{N_2}}p_{\\mathrm{H_2}}^3)\\) が小さくなる。"
+    },
+    "3": {
+      "value": "平衡後の触媒追加で生成側へ移る",
+      "verdict": "不適切",
+      "reason": "触媒は平衡定数を変えず、正逆の反応を促進する。"
+    },
+    "4": {
+      "value": "鉄触媒のハーバー・ボッシュ法で製造する",
+      "verdict": "適切",
+      "reason": "鉄系触媒による工業合成である。実用温度は反応速度も考慮して選ぶ。"
+    },
+    "5": {
+      "value": "低温・高圧ほど生成に有利である",
+      "verdict": "適切",
+      "reason": "発熱方向は低温で平衡上有利となり、気体の化学量論数が4から2へ減る方向は圧縮で有利となる。"
+    }
+  },
+  "figures": "文字記述又は順序候補であり図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_007.png"
+  ],
+  "question_id": "H28-REG-APPLIED-18",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "5472f2249edcea03a57f00132ddefc4284ad9ead294a67a13bee7b47cffd66cf",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

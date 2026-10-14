@@ -1,0 +1,45 @@
+{
+  "stem": "ホイヘンス・重ね合わせ・レンツ・スネル・フェルマを区別する。",
+  "conditions": {
+    "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+    "前提": "地震探査で扱う弾性波の波面、線形性、屈折、波線の走時を対象とする。"
+  },
+  "choices": {
+    "1": {
+      "value": "ホイヘンスの原理",
+      "verdict": "適切",
+      "reason": "二次波で波面を構成する考え方であり、波動伝播の理解に関係する。"
+    },
+    "2": {
+      "value": "重ね合わせの原理",
+      "verdict": "条件付きで適切",
+      "reason": "線形波動では複数波の和を解として扱うことができる。大変形や非線形な破壊過程は同じ前提ではない。"
+    },
+    "3": {
+      "value": "レンツの法則",
+      "verdict": "不適切",
+      "reason": "電磁誘導の向きを磁束変化との関係から決める法則であり、地震波の反射・屈折の基本則とは異なる。"
+    },
+    "4": {
+      "value": "スネルの法則",
+      "verdict": "適切",
+      "reason": "境界の位相整合により角度と波速を結ぶ。地震波ではP波・S波へのモード変換を含む各波速で考える。"
+    },
+    "5": {
+      "value": "フェルマの原理",
+      "verdict": "適切",
+      "reason": "波線の走時が経路変分に対して停留する条件を用いる。最小という単語だけで複数経路の可能性を捨てない。"
+    }
+  },
+  "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+  "ambiguity": "重ね合わせは線形媒体に限る。スネルの法則は波種と境界条件を指定して用いる。",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_012.png"
+  ],
+  "question_id": "R07-REG-APPLIED-32",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "69d3a6cca1e84b7f69a07dc6eca40338932e5fe65b4c984e80ff0f63c428474d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

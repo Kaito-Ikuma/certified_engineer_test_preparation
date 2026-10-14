@@ -1,0 +1,46 @@
+{
+  "stem": "水と高温金属球を外界との熱交換なしで接触させ、共通の最終温度を求める。",
+  "conditions": {
+    "水": "100g、25°C、比熱4.2J/(g・K)",
+    "金属": "100g、80°C、比熱0.42J/(g・K)",
+    "無視するもの": "ビーカーへの伝熱と外界への熱損失。"
+  },
+  "choices": {
+    "1": {
+      "value": "約30°C",
+      "verdict": "条件に一致",
+      "reason": "水420J/Kと金属42J/Kの熱容量で重みを付けると30°Cになる。"
+    },
+    "2": {
+      "value": "約40°C",
+      "verdict": "条件に不一致",
+      "reason": "金属の熱容量は水の1/10であり、共通温度は水の初期温度にもっと近い。"
+    },
+    "3": {
+      "value": "約50°C",
+      "verdict": "条件に不一致",
+      "reason": "等質量でも比熱が異なるため単純平均ではない。"
+    },
+    "4": {
+      "value": "約60°C",
+      "verdict": "条件に不一致",
+      "reason": "水の大きな熱容量を無視している。"
+    },
+    "5": {
+      "value": "約70°C",
+      "verdict": "条件に不一致",
+      "reason": "水の大きな熱容量を無視している。"
+    }
+  },
+  "figures": "正誤方向、全条件・数値・単位、候補5肢を原典画像で確認。図なし。組合せ問題では表の全欄を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_003.png"
+  ],
+  "question_id": "H26-REG-APPLIED-06",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "666c74e9e8cba6fb1277f181a4c56662a5772e8c445821c5871ea4fb6b37c726",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

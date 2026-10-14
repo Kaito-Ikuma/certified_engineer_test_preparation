@@ -1,0 +1,45 @@
+{
+  "stem": "2入力がともに1のときだけ0を出す真理値表に合う論理式を選ぶ。",
+  "conditions": {
+    "入力順": "(A,B)=(0,0),(0,1),(1,0),(1,1)",
+    "出力": "1,1,1,0"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(A+B\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "ORは00で0となり指定表と異なる。"
+    },
+    "2": {
+      "value": "\\(\\overline A+\\overline B\\)",
+      "verdict": "条件に一致する候補",
+      "reason": "ド・モルガン則でANDの否定となり、11以外の全行で1となる。"
+    },
+    "3": {
+      "value": "\\(AB\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "ANDは11でのみ1となり、指定の否定と逆である。"
+    },
+    "4": {
+      "value": "\\(\\overline A B\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "01でしか1にならず、00や10の出力を再現しない。"
+    },
+    "5": {
+      "value": "\\(A\\overline B+\\overline A B\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "XORは00で0となり、その行が指定表と異なる。"
+    }
+  },
+  "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/basic/page_008.png"
+  ],
+  "question_id": "H28-REG-BASIC-2-2",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "a1f717f150a0e55f8ec4beb10f0caee382f9f0780977663fd7d9f629ed85ad2f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

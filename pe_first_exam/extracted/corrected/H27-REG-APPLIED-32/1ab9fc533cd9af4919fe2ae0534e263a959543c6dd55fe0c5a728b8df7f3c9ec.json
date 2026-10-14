@@ -1,0 +1,45 @@
+{
+  "stem": "上載岩石の密度と厚さからモホ面の静岩圧を求める。",
+  "conditions": {
+    "確認範囲": "問題幹、数値、単位、否定、全5候補を原典画像で照合した。",
+    "成立条件": "厚さ35 km、平均密度2.8×10^3 kg/m³、重力加速度9.8 m/s²。上載荷重のみを考え、間隙流体の影響はないという原典指定を使用する。"
+  },
+  "choices": {
+    "1": {
+      "value": "1 MPa",
+      "verdict": "不適切",
+      "reason": "9.604×10^8 Paより約3桁小さい。"
+    },
+    "2": {
+      "value": "10 MPa",
+      "verdict": "不適切",
+      "reason": "導出圧力より約2桁小さい。"
+    },
+    "3": {
+      "value": "100 MPa",
+      "verdict": "不適切",
+      "reason": "導出圧力0.9604 GPaより約1桁小さい。"
+    },
+    "4": {
+      "value": "1 GPa",
+      "verdict": "適切",
+      "reason": "9.604×10^8 Paを10^9 Paで割った0.9604 GPaに最も近い。"
+    },
+    "5": {
+      "value": "10 GPa",
+      "verdict": "不適切",
+      "reason": "導出圧力より約1桁大きい。"
+    }
+  },
+  "figures": "参照する図なし。プレート速度問題は5組の数値表を原典で確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_012.png"
+  ],
+  "question_id": "H27-REG-APPLIED-32",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "bef6c9413fd377c82bca818b231ca22a8942e327bc39439559821af3b7693ee9",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

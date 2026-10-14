@@ -1,0 +1,83 @@
+{
+  "time": "2026-10-11T00:21:37.035400+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_018_atmosphere",
+  "question_ids": [
+    "H23-REG-APPLIED-20",
+    "H24-REG-APPLIED-34",
+    "H26-REG-APPLIED-26",
+    "H27-REG-APPLIED-24",
+    "H27-REG-APPLIED-26",
+    "H28-REG-APPLIED-25",
+    "H28-REG-APPLIED-26",
+    "H29-REG-APPLIED-19",
+    "H29-REG-APPLIED-21",
+    "H30-REG-APPLIED-20",
+    "H30-REG-APPLIED-22",
+    "R01-REG-APPLIED-19",
+    "R01-REG-APPLIED-21",
+    "R01-REG-APPLIED-22",
+    "R01-RET-APPLIED-20",
+    "R01-RET-APPLIED-21",
+    "R02-REG-APPLIED-21",
+    "R02-REG-APPLIED-22",
+    "R04-REG-APPLIED-22",
+    "R05-REG-APPLIED-18",
+    "R05-REG-APPLIED-20",
+    "R06-REG-APPLIED-20",
+    "R07-REG-APPLIED-21"
+  ],
+  "source_images": 19,
+  "initial_independent_matches": 23,
+  "corrected_verified": 19,
+  "partial": 4,
+  "related_pairs_added": 10,
+  "related_pairs_total": 87,
+  "primary_references_added": 20,
+  "concepts_added": 7,
+  "concept_total": 131,
+  "canonical_counts": {
+    "recorded_at": "2026-10-11T00:21:37.035400+09:00",
+    "registered": 1270,
+    "classification_verified": 388,
+    "summary_verified": 350,
+    "corrected_verified": 328,
+    "corrected_partial": 22,
+    "solution_drafts": 350,
+    "solution_verified": 0,
+    "manual_required": 942,
+    "subject_drafts": {
+      "BASIC": 110,
+      "APT": 76,
+      "APPLIED": 164
+    }
+  },
+  "theory_sections_added": 18,
+  "labeled_theory_sections": 16,
+  "pdf": {
+    "pages": 545,
+    "bytes": 2625978,
+    "visual_review_pages": [
+      410,
+      411,
+      412,
+      413,
+      414,
+      419,
+      421,
+      422
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "内容追加。直前の24回帰成功を保持。初期監査・1270実TeXラベル監査成功。",
+  "risks": [
+    "R01-REG-APPLIED-19/R07-REG-APPLIED-21の原典「密度1/4」と標準モデル約0.34の差。",
+    "R02-REG-APPLIED-21の上層組成の具体的高度は一次数表未確認。",
+    "R02-REG-APPLIED-22の全球更新と地域枯渇、日本の河川流出/蒸発散比較の基準が未確定。",
+    "Astra未査読。920問の解説未作成。"
+  ],
+  "next": "S7_019情報15問：原典12画像と独立解答保存、公式全一致。理論・全肢解説へ続行。Checkpoint2未到達。"
+}

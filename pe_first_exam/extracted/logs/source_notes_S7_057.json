@@ -1,0 +1,26 @@
+[
+  {
+    "key": "analysis57_inglis",
+    "url": "https://ocw.mit.edu/courses/1-978-from-nano-to-macro-introduction-to-atomistic-modeling-techniques-january-iap-2007/913c87a27e36fb77600f394d7bc7022d_lec04.pdf",
+    "reading_scope": "公開PDFの16頁のInglis解項目を確認。65頁全読ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "analysis57_shm",
+    "url": "https://openstax.org/books/university-physics-volume-1/pages/15-1-simple-harmonic-motion",
+    "reading_scope": "本文の運動方程式と式15.11の振動数を確認。全巻読了ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "analysis57_resistors",
+    "url": "https://openstax.org/books/college-physics/pages/21-1-resistors-in-series-and-parallel",
+    "reading_scope": "本文の直列・並列条件と任意回路にはKirchhoff則を使う記述を確認。個別抵抗網の結果は原典図から独立計算。",
+    "full_source_read": false
+  },
+  {
+    "key": "analysis57_beam",
+    "url": "https://lampz.tugraz.at/~hadley/memm/mechanics/cbeam.php",
+    "reading_scope": "公開本文23行の境界条件、特性方程式、1.875と撓み式を確認。両端固定・座屈の表全体の確認ではない。",
+    "full_source_read": false
+  }
+]

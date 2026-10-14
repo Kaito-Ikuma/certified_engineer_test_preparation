@@ -1,0 +1,45 @@
+{
+  "stem": "10進11.5を二進数と16進数へ変換する。",
+  "conditions": {
+    "入力": "11.5",
+    "空欄順": "二進数／16進数"
+  },
+  "choices": {
+    "1": {
+      "value": "1011.1／B.8",
+      "verdict": "適切な解答候補",
+      "reason": "11=8+2+1、0.5=1/2であり、16進では11=B、0.5=8/16になる。"
+    },
+    "2": {
+      "value": "1011.0／C.8",
+      "verdict": "不適切な解答候補",
+      "reason": "整数12を表すCと、小数0を表す.0が誤りである。"
+    },
+    "3": {
+      "value": "1011.1／B.5",
+      "verdict": "不適切な解答候補",
+      "reason": "16進.5は5/16であり、十進0.5とは異なる。"
+    },
+    "4": {
+      "value": "1011.0／B.8",
+      "verdict": "不適切な解答候補",
+      "reason": "二進.0は小数0であり、0.5を失っている。"
+    },
+    "5": {
+      "value": "1011.1／C.5",
+      "verdict": "不適切な解答候補",
+      "reason": "整数C=12、小数.5=5/16の両方が異なる。"
+    }
+  },
+  "figures": "図なし。5肢の値または記述を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_007.png"
+  ],
+  "question_id": "R01-REG-BASIC-2-1",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "bcbbe4c945ee788623b3ea69e72846b9c6129c9dccf89e5b5a68c5e7f6a08999",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

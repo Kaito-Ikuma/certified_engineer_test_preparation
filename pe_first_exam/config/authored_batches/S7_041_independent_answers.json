@@ -1,0 +1,105 @@
+{
+  "time": "2026-10-12T13:46:53.044161+09:00",
+  "official_consulted": false,
+  "original_images_reviewed": 14,
+  "records": [
+    {
+      "question_id": "H23-REG-BASIC-4-4",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "source_page": "13",
+      "answer_initial": "4",
+      "reason": "自由電子、通常の結晶粒微細化、加工硬化、繰返し負荷による疲労。"
+    },
+    {
+      "question_id": "H24-REG-BASIC-4-3",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "source_page": "13",
+      "answer_initial": "2",
+      "reason": "理想無欠陥強度は実強度より大きい。欠陥・低温脆性・繰返し疲労を区別する。"
+    },
+    {
+      "question_id": "H26-REG-BASIC-4-3",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "source_page": "14",
+      "answer_initial": "5",
+      "reason": "小応力のフック則とヤング率、Mg45/W407GPaという原典値、通常の昇温軟化。"
+    },
+    {
+      "question_id": "H28-REG-BASIC-4-4",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "source_page": "18",
+      "answer_initial": "2",
+      "reason": "変形前の面積・標点距離で公称応力・公称ひずみ、初期線形弾性。"
+    },
+    {
+      "question_id": "H30-REG-BASIC-4-4",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "source_page": "16",
+      "answer_initial": "2",
+      "reason": "H23と同じ概念、選択肢順序が変わる。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-4-3",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "source_page": "16",
+      "answer_initial": "4",
+      "reason": "FeNaはBCC、AlCuはFCC、TiZnはHCP。HCP原始単位胞2と六角柱6を区別。"
+    },
+    {
+      "question_id": "R02-REG-BASIC-4-4",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "source_page": "17",
+      "answer_initial": "5",
+      "reason": "FCCは4原子、配位数12、面対角線4R=√2a。"
+    },
+    {
+      "question_id": "R03-REG-BASIC-4-3",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "source_page": "17",
+      "answer_initial": "2",
+      "reason": "フック、ヤング率、45/407、通常の温度上昇で低下。"
+    },
+    {
+      "question_id": "R04-REG-BASIC-4-3",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "source_page": "14",
+      "answer_initial": "1",
+      "reason": "片面Ni体積0.5×10^-5m3、質量0.0445kg。鋼2.37kgを含む質量百分率1.843%。Ni分類は日本の政策文脈。"
+    },
+    {
+      "question_id": "R04-REG-BASIC-4-4",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "source_page": "15",
+      "answer_initial": "1",
+      "reason": "変形前、公称応力、公称ひずみ、弾性。真ひずみは積分対数。"
+    },
+    {
+      "question_id": "R05-REG-BASIC-4-3",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "source_page": "13",
+      "answer_initial": "3",
+      "reason": "室温αFeはBCC強磁性、Coも強磁性、γへの変態で収縮。磁気転移と結晶変態を分ける。"
+    },
+    {
+      "question_id": "R06-REG-BASIC-4-3",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "source_page": "15",
+      "answer_initial": "3",
+      "reason": "原典3行はBCC/FCC/HCP/2でありOCRのFCC誤読を補正。HCP単位胞規約を留保。"
+    },
+    {
+      "question_id": "R06-REG-BASIC-4-4",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "source_page": "16",
+      "answer_initial": "2",
+      "reason": "比強度は引張強度/密度でありヤング率/密度は比剛性。水素脆化の物性変化という広い表現は留保。"
+    },
+    {
+      "question_id": "R07-REG-BASIC-4-3",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "source_page": "13",
+      "answer_initial": "3",
+      "reason": "通常の鋼の粒粗大化はHall–Petch強化を減らす。硫黄MnSと被削性、再結晶延性、Charpyを区別。"
+    }
+  ]
+}

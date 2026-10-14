@@ -1,0 +1,45 @@
+{
+  "stem": "褶曲の形態・部位・軸の姿勢を、貫入岩体の名称と区別する。",
+  "conditions": {
+    "判断方向": "最も関係が薄いもの。",
+    "原典照合": "全5肢、上下・平行直交・右左・時代・固結度と割合を画像照合。図なし。"
+  },
+  "choices": {
+    "1": {
+      "value": "アンチフォーム",
+      "verdict": "褶曲に関連",
+      "reason": "年代を使わずに上方へ凸である形態をいう。逆転層では背斜と一致しない場合がある。"
+    },
+    "2": {
+      "value": "ヒンジ線",
+      "verdict": "褶曲に関連",
+      "reason": "曲がりの強い部分を各断面で結ぶ線であり、褶曲の幾何を表す。"
+    },
+    "3": {
+      "value": "カルミネーション",
+      "verdict": "褶曲に関連",
+      "reason": "褶曲軸が延長方向に高まる部分であり、軸の三次元形態を表す。"
+    },
+    "4": {
+      "value": "シル",
+      "verdict": "最も薄い",
+      "reason": "地層等にほぼ平行な板状の貫入岩体である。貫入が周囲を変形させ得ても褶曲の部位や形式ではない。"
+    },
+    "5": {
+      "value": "キンクバンド",
+      "verdict": "褶曲に関連",
+      "reason": "翼部が比較的直線的で、狭い帯の境界で姿勢が急変する褶曲構造である。"
+    }
+  },
+  "figures": "設問固有図なし。原典の用語・否定・全5肢を確認。剪断の方位条件を推測で補わない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_010.png"
+  ],
+  "question_id": "R02-REG-APPLIED-27",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "ff8225217187074fb1ad3eb7b3c713ea0b9dfa46b856d82dfca6d6e096c489df",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

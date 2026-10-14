@@ -1,0 +1,45 @@
+{
+  "stem": "光子波長・特性X線と電波法の周波数定義を区別する。",
+  "conditions": {
+    "原典確認": "S7_051の11原典画像で13問の全五肢・指数・単位・否定を照合。",
+    "対象": "光子波長・特性X線と電波法の周波数定義を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "γ線の放出・吸収の起源",
+      "verdict": "代表的条件で適切",
+      "reason": "核・素粒子のエネルギー変化、対消滅・対生成等に関係する。核準位の特定値はここでは使わない。"
+    },
+    "2": {
+      "value": "赤外・可視・紫外の順で波長が短い",
+      "verdict": "代表的条件で適切",
+      "reason": "真空中でc=fλ、光子エネルギーE=hf。短波長側ほど高周波・高エネルギーとなる。"
+    },
+    "3": {
+      "value": "特性X線は通常連続スペクトル",
+      "verdict": "不適切",
+      "reason": "原子の内殻準位差に対応する線スペクトルが特徴。X線管全体の連続成分は電子の制動放射で、特性線と共存する。"
+    },
+    "4": {
+      "value": "マイクロ波は約1m以下で加熱・レーダー",
+      "verdict": "代表的条件で適切",
+      "reason": "用途とおおよその領域の記述。波長分類の境界規約と、法令での電波の定義を同一視しない。"
+    },
+    "5": {
+      "value": "電波法は3THz以下",
+      "verdict": "条件・語義を留保",
+      "reason": "e-Govで第二条の300万MHz以下を確認し、3THz以下へ換算できる。2023年施行版の直接取得は失敗したため当時版の時点照合は留保。"
+    }
+  },
+  "figures": "図表問題ではない。原典画像は照合用で転載しない。",
+  "ambiguity": "令和5年の法令施行版を直接取得できていない。取得できた2024年版の第二条だけを当時版確認済みと扱わず、時点照合を要査読に残す。",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_004.png"
+  ],
+  "question_id": "R05-REG-APPLIED-09",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "5ba5dd5ab529a62e4e1383f7007f66e5012184ab4e89ba0b991e1155ad961b20",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

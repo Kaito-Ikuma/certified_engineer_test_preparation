@@ -1,0 +1,2505 @@
+{
+  "batch_id": "S7_050_volcano_resources",
+  "reference_date": "2026-10-13",
+  "questions": [
+    {
+      "question_id": "H23-REG-APPLIED-23",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "斑岩銅・黒鉱・別子型・スカルンの生成場を比較する。",
+      "summary": "斑岩銅・黒鉱・別子型・スカルンの生成場を比較する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "斑岩銅・黒鉱・別子型・スカルンの生成場を比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "浅所貫入岩内外の鉱染・細脈",
+          "verdict": "代表的条件で適切",
+          "reason": "斑岩質岩体とその周辺に分散した硫化物と網状細脈を作り、大規模・低品位となる代表的な斑岩銅の産状。"
+        },
+        "2": {
+          "value": "珪長質海底火山の塊状硫化物",
+          "verdict": "不適切",
+          "reason": "火山性塊状硫化物鉱床、特に黒鉱型の説明。斑岩銅と生成位置・形態が異なる。"
+        },
+        "3": {
+          "value": "苦鉄質起源の変成岩中の層状硫化物",
+          "verdict": "不適切",
+          "reason": "別子型等の層状含銅硫化鉄鉱の説明に対応する。"
+        },
+        "4": {
+          "value": "炭酸塩岩の熱水交代",
+          "verdict": "不適切",
+          "reason": "接触交代・スカルン鉱床の説明で、斑岩銅の鉱染・細脈とは区別する。"
+        },
+        "5": {
+          "value": "縞状鉱でCu2+を酸化沈殿",
+          "verdict": "不適切",
+          "reason": "古い縞状鉄鉱の成因を銅へ置換している。鉄の酸化・沈殿を述べる場合と混同しない。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_007.png"
+      ],
+      "core_concept": "斑岩銅・黒鉱・別子型・スカルンの生成場を比較する。",
+      "required_knowledge": "斑岩銅は浅所の斑岩質貫入と熱水系に関係し、岩体内外の鉱染・網状細脈として形成されるので1。硫化物を含むという共通点だけで、海底の塊状鉱、変成した層状鉱、炭酸塩岩を交代したスカルンを統合しない。",
+      "solution": "斑岩銅は浅所の斑岩質貫入と熱水系に関係し、岩体内外の鉱染・網状細脈として形成されるので1。硫化物を含むという共通点だけで、海底の塊状鉱、変成した層状鉱、炭酸塩岩を交代したスカルンを統合しない。",
+      "answer_reason": "斑岩銅は浅所の斑岩質貫入と熱水系に関係し、岩体内外の鉱染・網状細脈として形成されるので1。硫化物を含むという共通点だけで、海底の塊状鉱、変成した層状鉱、炭酸塩岩を交代したスカルンを統合しない。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。斑岩銅の鉱染と細脈",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:ore:hydrothermal"
+      ],
+      "discipline_id": "geo_resources",
+      "concept_id": "ore50_porphyry",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：斑岩銅・黒鉱・別子型・スカルンの生成場を比較する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "ore50_porphyry_ref",
+        "ore50_magmatic_ref",
+        "ore50_besshi_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-26",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "地熱資源の利用域・貯留層・発電方式を比較する。",
+      "summary": "地熱資源の利用域・貯留層・発電方式を比較する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "地熱資源の利用域・貯留層・発電方式を比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "蒸気方式とバイナリー",
+          "verdict": "代表的条件で適切",
+          "reason": "蒸気でタービンを回す方式と、熱交換で低沸点の二次媒体を蒸発させる方式を区別する。"
+        },
+        "2": {
+          "value": "中・低温熱水の利用範囲",
+          "verdict": "不適切",
+          "reason": "温室・暖房・温泉等への直接利用は火山周辺だけに限定されない。"
+        },
+        "3": {
+          "value": "広域と局所の地温勾配",
+          "verdict": "条件・解釈を留保",
+          "reason": "放射性壊変・深部熱供給・火山等の熱源を考える。20–30、50–100℃/km以上は代表範囲で全地点の一定値ではない。"
+        },
+        "4": {
+          "value": "割れ目に富む貯留層",
+          "verdict": "代表的条件で適切",
+          "reason": "流体が集まり循環するために有効な透水経路が必要で、亀裂や断層が重要となる。"
+        },
+        "5": {
+          "value": "化学成分による温度推定",
+          "verdict": "代表的条件で適切",
+          "reason": "溶解平衡等の温度依存を利用する地化学温度計。冷却、混合、再平衡の影響は別に検討する。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "地温勾配と150℃区分は原典の代表値。全地域を固定した境界で分けず、具体地点の勾配・貯留温度と地化学平衡条件は追加照合対象。",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_008.png"
+      ],
+      "core_concept": "地熱資源の利用域・貯留層・発電方式を比較する。",
+      "required_knowledge": "地熱利用には高温蒸気による発電だけでなく、中低温熱水の直接利用やバイナリー発電がある。非火山地域の温水利用もあるため火山域への限定2を選ぶ。流体貯留と循環には割れ目等の透水性が重要。地化学温度計は平衡・混合等の仮定を確認して地下温度を推定する。",
+      "solution": "地熱利用には高温蒸気による発電だけでなく、中低温熱水の直接利用やバイナリー発電がある。非火山地域の温水利用もあるため火山域への限定2を選ぶ。流体貯留と循環には割れ目等の透水性が重要。地化学温度計は平衡・混合等の仮定を確認して地下温度を推定する。",
+      "answer_reason": "地熱利用には高温蒸気による発電だけでなく、中低温熱水の直接利用やバイナリー発電がある。非火山地域の温水利用もあるため火山域への限定2を選ぶ。流体貯留と循環には割れ目等の透水性が重要。地化学温度計は平衡・混合等の仮定を確認して地下温度を推定する。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。低温地熱は非火山域にもある",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:ore:geothermal"
+      ],
+      "discipline_id": "geo_resources",
+      "concept_id": "ore50_geothermal",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：地熱資源の利用域・貯留層・発電方式を比較する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "ore50_geothermal_ref",
+        "ore50_reservoir_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-27",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "マンガン団塊の組成・海底分布・成長時間を比較する。",
+      "summary": "マンガン団塊の組成・海底分布・成長時間を比較する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "マンガン団塊の組成・海底分布・成長時間を比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "Mn・Fe酸化物の黒色団塊",
+          "verdict": "代表的条件で適切",
+          "reason": "鉄・マンガン酸化物を主体に成長する団塊。原典の1mm以上は分類上の目安として保持する。"
+        },
+        "2": {
+          "value": "Cu・Ni・Coを1–2%含む場合",
+          "verdict": "条件・解釈を留保",
+          "reason": "これら金属を副成分として含む。原典の最大1–2%を全海域・全団塊の厳密上限とする根拠は未確認。"
+        },
+        "3": {
+          "value": "堆積の遅い深海底の表層",
+          "verdict": "代表的条件で適切",
+          "reason": "団塊の埋没が遅い場所で海水・間隙水から成長する代表的な産状。露岩を覆うクラストと区別する。"
+        },
+        "4": {
+          "value": "岩片や化石を核に成長",
+          "verdict": "代表的条件で適切",
+          "reason": "核を中心に層状に成長する場合がある。"
+        },
+        "5": {
+          "value": "数mm／1万年の成長",
+          "verdict": "不適切",
+          "reason": "代表値は百万年で1mm程度と極めて遅い。原典の万年は代表的な海水沈殿成長の時間尺度と合わない。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "副成分の最大1–2%という上限と粒径の全分類範囲は未確定。成長も海水起源・続成作用等で異なり、一つの代表率を全試料へ固定しない。",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_009.png"
+      ],
+      "core_concept": "マンガン団塊の組成・海底分布・成長時間を比較する。",
+      "required_knowledge": "団塊は核の周囲へ鉄・マンガン酸化物等がゆっくり堆積する。JOGMECの例は百万年で1mm程度で、5の数mm／1万年は時間尺度が大きく違う。海底に露出した団塊と岩盤上のクラストを区別し、成長率は起源・環境で変わる代表値として読む。",
+      "solution": "団塊は核の周囲へ鉄・マンガン酸化物等がゆっくり堆積する。JOGMECの例は百万年で1mm程度で、5の数mm／1万年は時間尺度が大きく違う。海底に露出した団塊と岩盤上のクラストを区別し、成長率は起源・環境で変わる代表値として読む。",
+      "answer_reason": "団塊は核の周囲へ鉄・マンガン酸化物等がゆっくり堆積する。JOGMECの例は百万年で1mm程度で、5の数mm／1万年は時間尺度が大きく違う。海底に露出した団塊と岩盤上のクラストを区別し、成長率は起源・環境で変わる代表値として読む。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。団塊の成長は百万年規模",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:ore:marine"
+      ],
+      "discipline_id": "geo_resources",
+      "concept_id": "ore50_nodule",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：マンガン団塊の組成・海底分布・成長時間を比較する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "ore50_nodule_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-25",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "stem": "収束・発散境界と黒鉱・斑岩銅の関係を照合する。",
+      "summary": "収束・発散境界と黒鉱・斑岩銅の関係を照合する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "収束・発散境界と黒鉱・斑岩銅の関係を照合する。"
+      },
+      "choices": {
+        "1": {
+          "value": "発散境界の島弧海溝",
+          "verdict": "不適切",
+          "reason": "島弧海溝系はプレート収束と沈み込みに関係する。発散は海嶺等の説明。"
+        },
+        "2": {
+          "value": "マリアナ型と黒鉱",
+          "verdict": "条件・解釈を留保",
+          "reason": "海洋性島弧や伸張する背弧の海底熱水活動に黒鉱型の潜在鉱床がある。マリアナ型の定義を固定しない限りこの肢を簡単に排除できない。"
+        },
+        "3": {
+          "value": "収束境界の中央海嶺",
+          "verdict": "不適切",
+          "reason": "新しい海洋地殻を作る中央海嶺は発散境界である。"
+        },
+        "4": {
+          "value": "マリアナ型と斑岩銅",
+          "verdict": "条件・解釈を留保",
+          "reason": "斑岩銅は収束縁の島弧・陸弧等に産する。公式は4だが、マリアナ型への特定と2との差を一次資料から一意に説明する確認は未完了。"
+        },
+        "5": {
+          "value": "収束境界に砂岩型ウラン",
+          "verdict": "不適切",
+          "reason": "砂岩中の流体移動と酸化還元境界等を使う分類であり、収束プレート境界だけを成立条件としない。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "初回2／公式4。正答原典p41画像も確認。海洋性島弧の斑岩銅と背弧海底の黒鉱型があり、肢2と4の排他性及びマリアナ型の当時定義は要査読。初回を公式へ合わせて置換しない。",
+      "evidence": [
+        "extracted/pages/H24/17_applied_science/page_008.png"
+      ],
+      "core_concept": "収束・発散境界と黒鉱・斑岩銅の関係を照合する。",
+      "required_knowledge": "1と3は収束・発散を交換している。5は堆積盆地の砂岩型ウランをプレート境界へ一対一対応させている。公式原典の平成24年度正答表41頁で4を再確認した。一方、黒鉱型の海底熱水活動は島弧・背弧にも見られ、初回独立2を排除する根拠が不足している。斑岩銅をアンデス型だけと断定することも避け、マリアナ型という用語と鉱床タイプの対応を査読に残す。",
+      "solution": "1と3は収束・発散を交換している。5は堆積盆地の砂岩型ウランをプレート境界へ一対一対応させている。公式原典の平成24年度正答表41頁で4を再確認した。一方、黒鉱型の海底熱水活動は島弧・背弧にも見られ、初回独立2を排除する根拠が不足している。斑岩銅をアンデス型だけと断定することも避け、マリアナ型という用語と鉱床タイプの対応を査読に残す。",
+      "answer_reason": "1と3は収束・発散を交換している。5は堆積盆地の砂岩型ウランをプレート境界へ一対一対応させている。公式原典の平成24年度正答表41頁で4を再確認した。一方、黒鉱型の海底熱水活動は島弧・背弧にも見られ、初回独立2を排除する根拠が不足している。斑岩銅をアンデス型だけと断定することも避け、マリアナ型という用語と鉱床タイプの対応を査読に残す。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。伸張する背弧と黒鉱",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:ore:tectonic"
+      ],
+      "discipline_id": "geo_resources",
+      "concept_id": "ore50_tectonic",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：収束・発散境界と黒鉱・斑岩銅の関係を照合する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "ore50_porphyry_ref",
+        "ore50_backarc_ref",
+        "usgs_plate_boundaries"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-26",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "stem": "石炭化の順序・原子比・時代と形成温度を比較する。",
+      "summary": "石炭化の順序・原子比・時代と形成温度を比較する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "石炭化の順序・原子比・時代と形成温度を比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "日本の主な石炭はジュラ系",
+          "verdict": "不適切",
+          "reason": "日本の代表的炭田には古第三系等が多い。少数の古い産出例を日本全体の主流としない。"
+        },
+        "2": {
+          "value": "亜瀝青・瀝青・褐炭の順で石炭化",
+          "verdict": "不適切",
+          "reason": "基本の低ランクからの順は褐炭→亜瀝青炭→瀝青炭→無煙炭で、褐炭の位置が逆。"
+        },
+        "3": {
+          "value": "石炭化でH/C・O/Cが増加",
+          "verdict": "不適切",
+          "reason": "脱水・脱炭酸・炭素濃集等で一般にはこれら比は減少する方向へ進む。"
+        },
+        "4": {
+          "value": "古生代石炭は一般に200℃以下",
+          "verdict": "条件・解釈を留保",
+          "reason": "石炭化は埋没熱史による。USGSの概説には150–200℃を超えない典型の説明があるが、高ランク・熱変成では200–300℃の例もある。年代だけで上限は定めない。"
+        },
+        "5": {
+          "value": "石炭紀の主起源を針葉樹",
+          "verdict": "不適切",
+          "reason": "石炭紀の代表的な湿地森林には大型のシダ植物等が多く、針葉樹だけを代表起源としない。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "公式4を保持。200℃以下は典型的石炭化の代表説明であり、原典の古生代という年代だけの条件から全炭田の熱史を確定できない。無煙炭等の高温例も一次資料で確認。",
+      "evidence": [
+        "extracted/pages/H24/17_applied_science/page_008.png"
+      ],
+      "core_concept": "石炭化の順序・原子比・時代と形成温度を比較する。",
+      "required_knowledge": "年代・ランク・植物・温度を別の軸で読む。日本の炭田年代を主にジュラ紀とする1、褐炭の位置を交換した2、H/C・O/Cを増加とする3、石炭紀の代表植生を針葉樹とする5は不適切。提示された相対比較では4を選ぶが、年代だけから石炭の最高到達温度を200℃以下と保証しない。",
+      "solution": "年代・ランク・植物・温度を別の軸で読む。日本の炭田年代を主にジュラ紀とする1、褐炭の位置を交換した2、H/C・O/Cを増加とする3、石炭紀の代表植生を針葉樹とする5は不適切。提示された相対比較では4を選ぶが、年代だけから石炭の最高到達温度を200℃以下と保証しない。",
+      "answer_reason": "年代・ランク・植物・温度を別の軸で読む。日本の炭田年代を主にジュラ紀とする1、褐炭の位置を交換した2、H/C・O/Cを増加とする3、石炭紀の代表植生を針葉樹とする5は不適切。提示された相対比較では4を選ぶが、年代だけから石炭の最高到達温度を200℃以下と保証しない。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。他四肢の年代・石炭化順・原子比・植物が誤り。200度以下代表を留保",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:ore:coal"
+      ],
+      "discipline_id": "geo_resources",
+      "concept_id": "ore50_coal",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：石炭化の順序・原子比・時代と形成温度を比較する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "ore50_coal_ref",
+        "ore50_coal_temp_ref",
+        "ore50_japan_coal_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-24",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "stem": "天然資源の鉱物・粒径・生成条件を対応させる。",
+      "summary": "天然資源の鉱物・粒径・生成条件を対応させる。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "天然資源の鉱物・粒径・生成条件を対応させる。"
+      },
+      "choices": {
+        "1": {
+          "value": "縞状鉄鉱の珪質層と鉄鉱物層",
+          "verdict": "代表的条件で適切",
+          "reason": "珪質物と鉄鉱物に富む層が交互に現れる。銅の鉱床と交換しない。"
+        },
+        "2": {
+          "value": "浅所斑岩と斑岩銅",
+          "verdict": "代表的条件で適切",
+          "reason": "花崗閃緑斑岩等に伴う熱水性の鉱染・網状細脈を作る。"
+        },
+        "3": {
+          "value": "粗粒堆積岩がオイルシェール",
+          "verdict": "不適切",
+          "reason": "ケロジェンを含む細粒堆積岩として扱う。粗粒という説明が不適切。"
+        },
+        "4": {
+          "value": "メタンハイドレートの温度圧力条件",
+          "verdict": "代表的条件で適切",
+          "reason": "水分子の構造にガス分子が取り込まれた水和物で、低温・高圧等の安定条件がある。単に凍結したメタンではない。"
+        },
+        "5": {
+          "value": "Al水酸化物がボーキサイト",
+          "verdict": "代表的条件で適切",
+          "reason": "Alの水酸化物・酸化水酸化物等を含む主要なAl鉱石。原岩が風化してAlが相対濃集する。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/17_applied_science/page_009.png"
+      ],
+      "core_concept": "天然資源の鉱物・粒径・生成条件を対応させる。",
+      "required_knowledge": "オイルシェールはケロジェン等を含む細粒堆積岩であり3の粗粒が誤り。縞状鉄鉱、斑岩銅、ガス水和物、風化で濃集したAl鉱石は生成機構が違う。メタンハイドレートのシャーベット状という見た目の表現を、水和物の結晶構造や相安定の定義と同一視しない。",
+      "solution": "オイルシェールはケロジェン等を含む細粒堆積岩であり3の粗粒が誤り。縞状鉄鉱、斑岩銅、ガス水和物、風化で濃集したAl鉱石は生成機構が違う。メタンハイドレートのシャーベット状という見た目の表現を、水和物の結晶構造や相安定の定義と同一視しない。",
+      "answer_reason": "オイルシェールはケロジェン等を含む細粒堆積岩であり3の粗粒が誤り。縞状鉄鉱、斑岩銅、ガス水和物、風化で濃集したAl鉱石は生成機構が違う。メタンハイドレートのシャーベット状という見た目の表現を、水和物の結晶構造や相安定の定義と同一視しない。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。油頁岩は細粒",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:ore:sedimentary"
+      ],
+      "discipline_id": "geo_resources",
+      "concept_id": "ore50_natural",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：天然資源の鉱物・粒径・生成条件を対応させる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "ore50_oilshale_ref",
+        "ore50_bauxite_ref",
+        "ore50_bif_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-31",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "天然資源の鉱物・粒径・生成条件を対応させる。",
+      "summary": "天然資源の鉱物・粒径・生成条件を対応させる。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "天然資源の鉱物・粒径・生成条件を対応させる。"
+      },
+      "choices": {
+        "1": {
+          "value": "縞状鉄鉱の珪質層と鉄鉱物層",
+          "verdict": "代表的条件で適切",
+          "reason": "珪質物と鉄鉱物に富む層が交互に現れる。銅の鉱床と交換しない。"
+        },
+        "2": {
+          "value": "浅所斑岩と斑岩銅",
+          "verdict": "代表的条件で適切",
+          "reason": "花崗閃緑斑岩等に伴う熱水性の鉱染・網状細脈を作る。"
+        },
+        "3": {
+          "value": "粗粒堆積岩がオイルシェール",
+          "verdict": "不適切",
+          "reason": "ケロジェンを含む細粒堆積岩として扱う。粗粒という説明が不適切。"
+        },
+        "4": {
+          "value": "メタンハイドレートの温度圧力条件",
+          "verdict": "代表的条件で適切",
+          "reason": "水分子の構造にガス分子が取り込まれた水和物で、低温・高圧等の安定条件がある。単に凍結したメタンではない。"
+        },
+        "5": {
+          "value": "Al水酸化物がボーキサイト",
+          "verdict": "代表的条件で適切",
+          "reason": "Alの水酸化物・酸化水酸化物等を含む主要なAl鉱石。原岩が風化してAlが相対濃集する。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_012.png"
+      ],
+      "core_concept": "天然資源の鉱物・粒径・生成条件を対応させる。",
+      "required_knowledge": "オイルシェールはケロジェン等を含む細粒堆積岩であり3の粗粒が誤り。縞状鉄鉱、斑岩銅、ガス水和物、風化で濃集したAl鉱石は生成機構が違う。メタンハイドレートのシャーベット状という見た目の表現を、水和物の結晶構造や相安定の定義と同一視しない。",
+      "solution": "オイルシェールはケロジェン等を含む細粒堆積岩であり3の粗粒が誤り。縞状鉄鉱、斑岩銅、ガス水和物、風化で濃集したAl鉱石は生成機構が違う。メタンハイドレートのシャーベット状という見た目の表現を、水和物の結晶構造や相安定の定義と同一視しない。",
+      "answer_reason": "オイルシェールはケロジェン等を含む細粒堆積岩であり3の粗粒が誤り。縞状鉄鉱、斑岩銅、ガス水和物、風化で濃集したAl鉱石は生成機構が違う。メタンハイドレートのシャーベット状という見た目の表現を、水和物の結晶構造や相安定の定義と同一視しない。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。油頁岩は細粒",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:ore:sedimentary"
+      ],
+      "discipline_id": "geo_resources",
+      "concept_id": "ore50_natural",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：天然資源の鉱物・粒径・生成条件を対応させる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "ore50_oilshale_ref",
+        "ore50_bauxite_ref",
+        "ore50_bif_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-25",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "stem": "ハワイ式とストロンボリ式・火砕流を区別する。",
+      "summary": "ハワイ式とストロンボリ式・火砕流を区別する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "ハワイ式とストロンボリ式・火砕流を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "間欠的な火山弾・スコリア放出",
+          "verdict": "代表的条件で適切",
+          "reason": "ストロンボリ式は比較的低粘性のマグマからガスが断続的に解放される小爆発を伴う。"
+        },
+        "2": {
+          "value": "高温ガスと火砕物の高速流下",
+          "verdict": "代表的条件で適切",
+          "reason": "火砕流は高温のガス・粒子混合流で、地表を高速に移動する。"
+        },
+        "3": {
+          "value": "低粘性流紋岩のハワイ式",
+          "verdict": "不適切",
+          "reason": "典型的なハワイ式は流動性に富む玄武岩質マグマの溶岩噴泉等。流紋岩へ交換した点が誤り。"
+        },
+        "4": {
+          "value": "外来水とマグマの爆発的相互作用",
+          "verdict": "代表的条件で適切",
+          "reason": "マグマ水蒸気爆発では急な熱交換・水の蒸発・破砕が関与する。マグマ由来の揮発性分だけの発泡と分ける。"
+        },
+        "5": {
+          "value": "高粘性溶岩のドーム",
+          "verdict": "代表的条件で適切",
+          "reason": "安山岩質～デイサイト質等の高粘性溶岩は火口近くに堆積してドームを作り得る。組成だけで全ての形を固定しない。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/17_applied_science/page_009.png"
+      ],
+      "core_concept": "ハワイ式とストロンボリ式・火砕流を区別する。",
+      "required_knowledge": "マグマの粘性とガス放出の仕方を対応させる。ハワイ式の代表は低粘性の玄武岩質で、流紋岩とした3が誤り。ストロンボリ式の間欠爆発、火砕流の高速なガス粒子混合、外来水との爆発、ドーム形成をそれぞれ別の現象として整理する。",
+      "solution": "マグマの粘性とガス放出の仕方を対応させる。ハワイ式の代表は低粘性の玄武岩質で、流紋岩とした3が誤り。ストロンボリ式の間欠爆発、火砕流の高速なガス粒子混合、外来水との爆発、ドーム形成をそれぞれ別の現象として整理する。",
+      "answer_reason": "マグマの粘性とガス放出の仕方を対応させる。ハワイ式の代表は低粘性の玄武岩質で、流紋岩とした3が誤り。ストロンボリ式の間欠爆発、火砕流の高速なガス粒子混合、外来水との爆発、ドーム形成をそれぞれ別の現象として整理する。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。ハワイは玄武岩質",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:styles"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_eruptions",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：ハワイ式とストロンボリ式・火砕流を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "jma_magma1999",
+        "vol50_styles_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-29",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "stem": "ハワイ式とストロンボリ式・火砕流を区別する。",
+      "summary": "ハワイ式とストロンボリ式・火砕流を区別する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "ハワイ式とストロンボリ式・火砕流を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "間欠的な火山弾・スコリア放出",
+          "verdict": "代表的条件で適切",
+          "reason": "ストロンボリ式は比較的低粘性のマグマからガスが断続的に解放される小爆発を伴う。"
+        },
+        "2": {
+          "value": "高温ガスと火砕物の高速流下",
+          "verdict": "代表的条件で適切",
+          "reason": "火砕流は高温のガス・粒子混合流で、地表を高速に移動する。"
+        },
+        "3": {
+          "value": "低粘性流紋岩のハワイ式",
+          "verdict": "不適切",
+          "reason": "典型的なハワイ式は流動性に富む玄武岩質マグマの溶岩噴泉等。流紋岩へ交換した点が誤り。"
+        },
+        "4": {
+          "value": "外来水とマグマの爆発的相互作用",
+          "verdict": "代表的条件で適切",
+          "reason": "マグマ水蒸気爆発では急な熱交換・水の蒸発・破砕が関与する。マグマ由来の揮発性分だけの発泡と分ける。"
+        },
+        "5": {
+          "value": "高粘性溶岩のドーム",
+          "verdict": "代表的条件で適切",
+          "reason": "安山岩質～デイサイト質等の高粘性溶岩は火口近くに堆積してドームを作り得る。組成だけで全ての形を固定しない。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/17_applied_science/page_010.png"
+      ],
+      "core_concept": "ハワイ式とストロンボリ式・火砕流を区別する。",
+      "required_knowledge": "マグマの粘性とガス放出の仕方を対応させる。ハワイ式の代表は低粘性の玄武岩質で、流紋岩とした3が誤り。ストロンボリ式の間欠爆発、火砕流の高速なガス粒子混合、外来水との爆発、ドーム形成をそれぞれ別の現象として整理する。",
+      "solution": "マグマの粘性とガス放出の仕方を対応させる。ハワイ式の代表は低粘性の玄武岩質で、流紋岩とした3が誤り。ストロンボリ式の間欠爆発、火砕流の高速なガス粒子混合、外来水との爆発、ドーム形成をそれぞれ別の現象として整理する。",
+      "answer_reason": "マグマの粘性とガス放出の仕方を対応させる。ハワイ式の代表は低粘性の玄武岩質で、流紋岩とした3が誤り。ストロンボリ式の間欠爆発、火砕流の高速なガス粒子混合、外来水との爆発、ドーム形成をそれぞれ別の現象として整理する。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。ハワイ流紋岩は誤り",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:styles"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_eruptions",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：ハワイ式とストロンボリ式・火砕流を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "jma_magma1999",
+        "vol50_styles_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-26",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "stem": "島弧沈み込み系と中央海嶺の用語を区別する。",
+      "summary": "島弧沈み込み系と中央海嶺の用語を区別する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "島弧沈み込み系と中央海嶺の用語を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "マントルウェッジ",
+          "verdict": "代表的条件で適切",
+          "reason": "沈み込むスラブの上のくさび状マントルで、流体供給と島弧マグマ生成に関係する。"
+        },
+        "2": {
+          "value": "背弧",
+          "verdict": "代表的条件で適切",
+          "reason": "火山弧の海溝と反対側で、伸張する背弧盆地等が形成され得る。"
+        },
+        "3": {
+          "value": "火山前線",
+          "verdict": "代表的条件で適切",
+          "reason": "島弧火山の分布の海溝側限界を示す線。海溝そのものと違う。"
+        },
+        "4": {
+          "value": "沈み込み帯",
+          "verdict": "代表的条件で適切",
+          "reason": "収束するプレートが地下へ沈み込む島弧活動の主要な生成場。"
+        },
+        "5": {
+          "value": "中央海嶺",
+          "verdict": "不適切",
+          "reason": "プレートが離れ、新しい海洋地殻を作る発散境界。島弧の直接構成用語ではない。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/17_applied_science/page_010.png"
+      ],
+      "core_concept": "島弧沈み込み系と中央海嶺の用語を区別する。",
+      "required_knowledge": "海溝から陸側へ前弧・火山弧・背弧を並べ、スラブとその上のマントルウェッジを考える。中央海嶺は発散境界であり島弧沈み込み系と直接の用語が違うので5。背弧海盆にも拡大軸があり得るが、地球規模の中央海嶺を島弧そのものへ交換しない。",
+      "solution": "海溝から陸側へ前弧・火山弧・背弧を並べ、スラブとその上のマントルウェッジを考える。中央海嶺は発散境界であり島弧沈み込み系と直接の用語が違うので5。背弧海盆にも拡大軸があり得るが、地球規模の中央海嶺を島弧そのものへ交換しない。",
+      "answer_reason": "海溝から陸側へ前弧・火山弧・背弧を並べ、スラブとその上のマントルウェッジを考える。中央海嶺は発散境界であり島弧沈み込み系と直接の用語が違うので5。背弧海盆にも拡大軸があり得るが、地球規模の中央海嶺を島弧そのものへ交換しない。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。中央海嶺は発散",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:arc"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_arc",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：島弧沈み込み系と中央海嶺の用語を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "usgs_plate_boundaries"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-29",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "黒鉱の鉱物・海底熱水成因と母岩を比較する。",
+      "summary": "黒鉱の鉱物・海底熱水成因と母岩を比較する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "黒鉱の鉱物・海底熱水成因と母岩を比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "ZnS・PbS・重晶石等の黒色塊状鉱",
+          "verdict": "代表的条件で適切",
+          "reason": "黒鉱の代表組合せは閃亜鉛鉱・方鉛鉱・黄鉄鉱・重晶石等。四面銅鉱等の副成分もある。"
+        },
+        "2": {
+          "value": "珪長質海底火山に関係",
+          "verdict": "代表的条件で適切",
+          "reason": "火山性塊状硫化物鉱床の一型で、海底熱水活動による鉱化を考える。"
+        },
+        "3": {
+          "value": "日本のグリーンタフ・西黒沢期",
+          "verdict": "条件・解釈を留保",
+          "reason": "東北日本の中新世グリーンタフ地域と秋田県北部は代表産地。限られるという厳密な年代全称は当時の分類と例外の照合が残る。"
+        },
+        "4": {
+          "value": "単なる火成岩周辺の再結晶",
+          "verdict": "不適切",
+          "reason": "これは接触変成の要点で、金属を運ぶ熱水の沈殿による黒鉱成因を説明しない。"
+        },
+        "5": {
+          "value": "キプロス型よりPb・Znに富む",
+          "verdict": "代表的条件で適切",
+          "reason": "珪長質に関係する黒鉱型と苦鉄質海洋地殻に関係するキプロス型の代表的組成差。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "原典の生成年代を西黒沢期に限る全称と全鉱物組合せの例外は追加照合。代表地域の記録を全黒鉱の唯一の産状へ一般化しない。",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_012.png"
+      ],
+      "core_concept": "黒鉱の鉱物・海底熱水成因と母岩を比較する。",
+      "required_knowledge": "黒鉱は金属を含む海底熱水と硫化物の沈殿に関係し、単なる熱による再結晶という4が不適切。グリーンタフは変質した火山岩・火山砕屑岩の地域的呼称で、緑色片岩という変成岩と取り違えない。",
+      "solution": "黒鉱は金属を含む海底熱水と硫化物の沈殿に関係し、単なる熱による再結晶という4が不適切。グリーンタフは変質した火山岩・火山砕屑岩の地域的呼称で、緑色片岩という変成岩と取り違えない。",
+      "answer_reason": "黒鉱は金属を含む海底熱水と硫化物の沈殿に関係し、単なる熱による再結晶という4が不適切。グリーンタフは変質した火山岩・火山砕屑岩の地域的呼称で、緑色片岩という変成岩と取り違えない。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。黒鉱は再結晶だけでない",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:ore:kuroko"
+      ],
+      "discipline_id": "geo_resources",
+      "concept_id": "ore50_kuroko",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：黒鉱の鉱物・海底熱水成因と母岩を比較する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "ore50_kuroko_ref",
+        "ore50_backarc_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-31",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "stem": "風化・堆積・マグマ・熱水・石油の濃集機構を比較する。",
+      "summary": "風化・堆積・マグマ・熱水・石油の濃集機構を比較する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "風化・堆積・マグマ・熱水・石油の濃集機構を比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "Al・Feを溶かしてNa・K・Ca・Mgを残留",
+          "verdict": "不適切",
+          "reason": "通常の強い風化残留では移動しやすい成分が溶脱し、Al・Fe等の難溶性成分が相対濃集する。列挙した方向が逆。"
+        },
+        "2": {
+          "value": "溶存成分沈殿又は粒子堆積",
+          "verdict": "代表的条件で適切",
+          "reason": "化学的な沈殿と物理的な運搬・分級による堆積鉱床の二つを含む。"
+        },
+        "3": {
+          "value": "硫化物メルト分離・結晶集積",
+          "verdict": "代表的条件で適切",
+          "reason": "マグマ内の液相不混和や結晶分化・集積で金属が濃集する正マグマ成因。"
+        },
+        "4": {
+          "value": "熱水中の元素の濃縮・沈殿",
+          "verdict": "代表的条件で適切",
+          "reason": "温度・圧力・酸化還元・pH等の変化で溶解度が変わり鉱化する。"
+        },
+        "5": {
+          "value": "石油のトラップ濃集",
+          "verdict": "代表的条件で適切",
+          "reason": "移動する炭化水素が貯留層と封じる構造へ集まる。根源岩での生成とトラップは別段階。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/17_applied_science/page_012.png"
+      ],
+      "core_concept": "風化・堆積・マグマ・熱水・石油の濃集機構を比較する。",
+      "required_knowledge": "岩石から何が移動し、何が残るかを追う。風化残留でAl・Feが全て溶出し、Na・K・Ca・Mgが残るという交換が誤りである。他の成因は、粒子や溶存成分の堆積、硫化物液の分離と結晶集積、熱水の沈殿、炭化水素の移動とトラップとして区別する。pH・酸化還元条件で元素の移動性が変わる例まで固定した順位にしない。",
+      "solution": "岩石から何が移動し、何が残るかを追う。風化残留でAl・Feが全て溶出し、Na・K・Ca・Mgが残るという交換が誤りである。他の成因は、粒子や溶存成分の堆積、硫化物液の分離と結晶集積、熱水の沈殿、炭化水素の移動とトラップとして区別する。pH・酸化還元条件で元素の移動性が変わる例まで固定した順位にしない。",
+      "answer_reason": "岩石から何が移動し、何が残るかを追う。風化残留でAl・Feが全て溶出し、Na・K・Ca・Mgが残るという交換が誤りである。他の成因は、粒子や溶存成分の堆積、硫化物液の分離と結晶集積、熱水の沈殿、炭化水素の移動とトラップとして区別する。pH・酸化還元条件で元素の移動性が変わる例まで固定した順位にしない。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。残留と溶脱元素を交換",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:ore:origins"
+      ],
+      "discipline_id": "geo_resources",
+      "concept_id": "ore50_origins",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：風化・堆積・マグマ・熱水・石油の濃集機構を比較する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "ore50_bauxite_ref",
+        "ore50_porphyry_ref",
+        "ore50_magmatic_ref",
+        "ore50_besshi_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-26",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "stem": "風化・堆積・マグマ・熱水・石油の濃集機構を比較する。",
+      "summary": "風化・堆積・マグマ・熱水・石油の濃集機構を比較する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "風化・堆積・マグマ・熱水・石油の濃集機構を比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "熱水中の元素の濃縮・沈殿",
+          "verdict": "代表的条件で適切",
+          "reason": "温度・圧力・酸化還元・pH等の変化で溶解度が変わり鉱化する。"
+        },
+        "2": {
+          "value": "硫化物メルト分離・結晶集積",
+          "verdict": "代表的条件で適切",
+          "reason": "マグマ内の液相不混和や結晶分化・集積で金属が濃集する正マグマ成因。"
+        },
+        "3": {
+          "value": "Al・Feを溶かしてNa・K・Ca・Mgを残留",
+          "verdict": "不適切",
+          "reason": "通常の強い風化残留では移動しやすい成分が溶脱し、Al・Fe等の難溶性成分が相対濃集する。列挙した方向が逆。"
+        },
+        "4": {
+          "value": "石油のトラップ濃集",
+          "verdict": "代表的条件で適切",
+          "reason": "移動する炭化水素が貯留層と封じる構造へ集まる。根源岩での生成とトラップは別段階。"
+        },
+        "5": {
+          "value": "溶存成分沈殿又は粒子堆積",
+          "verdict": "代表的条件で適切",
+          "reason": "化学的な沈殿と物理的な運搬・分級による堆積鉱床の二つを含む。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/17_applied_science/page_010.png"
+      ],
+      "core_concept": "風化・堆積・マグマ・熱水・石油の濃集機構を比較する。",
+      "required_knowledge": "岩石から何が移動し、何が残るかを追う。風化残留でAl・Feが全て溶出し、Na・K・Ca・Mgが残るという交換が誤りである。他の成因は、粒子や溶存成分の堆積、硫化物液の分離と結晶集積、熱水の沈殿、炭化水素の移動とトラップとして区別する。pH・酸化還元条件で元素の移動性が変わる例まで固定した順位にしない。",
+      "solution": "岩石から何が移動し、何が残るかを追う。風化残留でAl・Feが全て溶出し、Na・K・Ca・Mgが残るという交換が誤りである。他の成因は、粒子や溶存成分の堆積、硫化物液の分離と結晶集積、熱水の沈殿、炭化水素の移動とトラップとして区別する。pH・酸化還元条件で元素の移動性が変わる例まで固定した順位にしない。",
+      "answer_reason": "岩石から何が移動し、何が残るかを追う。風化残留でAl・Feが全て溶出し、Na・K・Ca・Mgが残るという交換が誤りである。他の成因は、粒子や溶存成分の堆積、硫化物液の分離と結晶集積、熱水の沈殿、炭化水素の移動とトラップとして区別する。pH・酸化還元条件で元素の移動性が変わる例まで固定した順位にしない。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。残留と溶脱が逆",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:ore:origins"
+      ],
+      "discipline_id": "geo_resources",
+      "concept_id": "ore50_origins",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：風化・堆積・マグマ・熱水・石油の濃集機構を比較する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "ore50_bauxite_ref",
+        "ore50_porphyry_ref",
+        "ore50_magmatic_ref",
+        "ore50_besshi_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-28",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "火山ガスの主要成分と温度・酸化還元条件を区別する。",
+      "summary": "火山ガスの主要成分と温度・酸化還元条件を区別する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "火山ガスの主要成分と温度・酸化還元条件を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "H2O",
+          "verdict": "代表的条件で適切",
+          "reason": "通常の火山ガスの最多成分は水蒸気であり、酸性有毒ガスが量の大部分という意味ではない。"
+        },
+        "2": {
+          "value": "CO2",
+          "verdict": "代表的条件で適切",
+          "reason": "マグマから放出される代表的な炭素ガス。水蒸気との量比は環境に依存する。"
+        },
+        "3": {
+          "value": "SO2",
+          "verdict": "代表的条件で適切",
+          "reason": "硫黄ガスの代表で酸化的な高温火山ガスに重要。冷却・熱水系では化学種や吸収が変わる。"
+        },
+        "4": {
+          "value": "H2S",
+          "verdict": "代表的条件で適切",
+          "reason": "硫黄の還元的な化学種であり、火山ガス・熱水系に含まれる。"
+        },
+        "5": {
+          "value": "CH4",
+          "verdict": "不適切",
+          "reason": "通常の高温マグマに由来する平均主要ガスの比較では適さない。低温・還元環境の存在を含め、厳密に常に零とする意味ではない。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "理論的平均と主要の厳密な濃度基準は未提示。特にR07の100気圧・1200℃平衡の定量表と酸化還元条件の照合が残る。通常の火山ガスの代表比較として説明し、CH4の全条件不在やH2の固定割合を主張しない。",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_011.png"
+      ],
+      "core_concept": "火山ガスの主要成分と温度・酸化還元条件を区別する。",
+      "required_knowledge": "水蒸気、CO2、硫黄ガス、水素ハロゲン化物等が通常の火山ガスの代表で、候補中ではCH4を選ぶ。高温マグマのガスと低温熱水・堆積物由来のガスを分ける。令和7年度は100気圧・1200℃・玄武岩質の平衡条件が原典にあり、平成28年度・令和元再試験へその条件を遡って追加しない。",
+      "solution": "水蒸気、CO2、硫黄ガス、水素ハロゲン化物等が通常の火山ガスの代表で、候補中ではCH4を選ぶ。高温マグマのガスと低温熱水・堆積物由来のガスを分ける。令和7年度は100気圧・1200℃・玄武岩質の平衡条件が原典にあり、平成28年度・令和元再試験へその条件を遡って追加しない。",
+      "answer_reason": "水蒸気、CO2、硫黄ガス、水素ハロゲン化物等が通常の火山ガスの代表で、候補中ではCH4を選ぶ。高温マグマのガスと低温熱水・堆積物由来のガスを分ける。令和7年度は100気圧・1200℃・玄武岩質の平衡条件が原典にあり、平成28年度・令和元再試験へその条件を遡って追加しない。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。CH4は通常主要でない",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:gases"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_gases",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：火山ガスの主要成分と温度・酸化還元条件を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "vol50_gas_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-22",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "stem": "火山ガスの主要成分と温度・酸化還元条件を区別する。",
+      "summary": "火山ガスの主要成分と温度・酸化還元条件を区別する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "火山ガスの主要成分と温度・酸化還元条件を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "CO2",
+          "verdict": "代表的条件で適切",
+          "reason": "マグマから放出される代表的な炭素ガス。水蒸気との量比は環境に依存する。"
+        },
+        "2": {
+          "value": "H2S",
+          "verdict": "代表的条件で適切",
+          "reason": "硫黄の還元的な化学種であり、火山ガス・熱水系に含まれる。"
+        },
+        "3": {
+          "value": "HCl",
+          "verdict": "代表的条件で適切",
+          "reason": "火山ガス中の代表的な水素ハロゲン化物。地下水への吸収で地表の濃度は変わり得る。"
+        },
+        "4": {
+          "value": "CH4",
+          "verdict": "不適切",
+          "reason": "通常の高温マグマに由来する平均主要ガスの比較では適さない。低温・還元環境の存在を含め、厳密に常に零とする意味ではない。"
+        },
+        "5": {
+          "value": "SO2",
+          "verdict": "代表的条件で適切",
+          "reason": "硫黄ガスの代表で酸化的な高温火山ガスに重要。冷却・熱水系では化学種や吸収が変わる。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "理論的平均と主要の厳密な濃度基準は未提示。特にR07の100気圧・1200℃平衡の定量表と酸化還元条件の照合が残る。通常の火山ガスの代表比較として説明し、CH4の全条件不在やH2の固定割合を主張しない。",
+      "evidence": [
+        "extracted/pages/R01_retest/17_applied_science/page_007.png"
+      ],
+      "core_concept": "火山ガスの主要成分と温度・酸化還元条件を区別する。",
+      "required_knowledge": "水蒸気、CO2、硫黄ガス、水素ハロゲン化物等が通常の火山ガスの代表で、候補中ではCH4を選ぶ。高温マグマのガスと低温熱水・堆積物由来のガスを分ける。令和7年度は100気圧・1200℃・玄武岩質の平衡条件が原典にあり、平成28年度・令和元再試験へその条件を遡って追加しない。",
+      "solution": "水蒸気、CO2、硫黄ガス、水素ハロゲン化物等が通常の火山ガスの代表で、候補中ではCH4を選ぶ。高温マグマのガスと低温熱水・堆積物由来のガスを分ける。令和7年度は100気圧・1200℃・玄武岩質の平衡条件が原典にあり、平成28年度・令和元再試験へその条件を遡って追加しない。",
+      "answer_reason": "水蒸気、CO2、硫黄ガス、水素ハロゲン化物等が通常の火山ガスの代表で、候補中ではCH4を選ぶ。高温マグマのガスと低温熱水・堆積物由来のガスを分ける。令和7年度は100気圧・1200℃・玄武岩質の平衡条件が原典にあり、平成28年度・令和元再試験へその条件を遡って追加しない。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。メタン主要は不適",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:gases"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_gases",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：火山ガスの主要成分と温度・酸化還元条件を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "vol50_gas_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-20",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "火山ガスの主要成分と温度・酸化還元条件を区別する。",
+      "summary": "火山ガスの主要成分と温度・酸化還元条件を区別する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "火山ガスの主要成分と温度・酸化還元条件を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "CO2",
+          "verdict": "代表的条件で適切",
+          "reason": "マグマから放出される代表的な炭素ガス。水蒸気との量比は環境に依存する。"
+        },
+        "2": {
+          "value": "CH4",
+          "verdict": "不適切",
+          "reason": "通常の高温マグマに由来する平均主要ガスの比較では適さない。低温・還元環境の存在を含め、厳密に常に零とする意味ではない。"
+        },
+        "3": {
+          "value": "H2",
+          "verdict": "条件・解釈を留保",
+          "reason": "高温ガスに含まれる還元的な水素種。量は温度・圧力だけでなく酸化還元・全体組成等にも依存する。"
+        },
+        "4": {
+          "value": "HCl",
+          "verdict": "代表的条件で適切",
+          "reason": "火山ガス中の代表的な水素ハロゲン化物。地下水への吸収で地表の濃度は変わり得る。"
+        },
+        "5": {
+          "value": "SO2",
+          "verdict": "代表的条件で適切",
+          "reason": "硫黄ガスの代表で酸化的な高温火山ガスに重要。冷却・熱水系では化学種や吸収が変わる。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "理論的平均と主要の厳密な濃度基準は未提示。特にR07の100気圧・1200℃平衡の定量表と酸化還元条件の照合が残る。通常の火山ガスの代表比較として説明し、CH4の全条件不在やH2の固定割合を主張しない。",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_007.png"
+      ],
+      "core_concept": "火山ガスの主要成分と温度・酸化還元条件を区別する。",
+      "required_knowledge": "水蒸気、CO2、硫黄ガス、水素ハロゲン化物等が通常の火山ガスの代表で、候補中ではCH4を選ぶ。高温マグマのガスと低温熱水・堆積物由来のガスを分ける。令和7年度は100気圧・1200℃・玄武岩質の平衡条件が原典にあり、平成28年度・令和元再試験へその条件を遡って追加しない。",
+      "solution": "水蒸気、CO2、硫黄ガス、水素ハロゲン化物等が通常の火山ガスの代表で、候補中ではCH4を選ぶ。高温マグマのガスと低温熱水・堆積物由来のガスを分ける。令和7年度は100気圧・1200℃・玄武岩質の平衡条件が原典にあり、平成28年度・令和元再試験へその条件を遡って追加しない。",
+      "answer_reason": "水蒸気、CO2、硫黄ガス、水素ハロゲン化物等が通常の火山ガスの代表で、候補中ではCH4を選ぶ。高温マグマのガスと低温熱水・堆積物由来のガスを分ける。令和7年度は100気圧・1200℃・玄武岩質の平衡条件が原典にあり、平成28年度・令和元再試験へその条件を遡って追加しない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。1200度の主要平衡ガスでCH4不適",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:gases"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_gases",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：火山ガスの主要成分と温度・酸化還元条件を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "vol50_gas_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-29",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "噴出物の全世界体積率と火山の個数を区別する。",
+      "summary": "噴出物の全世界体積率と火山の個数を区別する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "噴出物の全世界体積率と火山の個数を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "島弧・陸弧",
+          "verdict": "不適切",
+          "reason": "爆発的な陸上噴火が目立つが、全世界の体積噴出率の最大域ではない。"
+        },
+        "2": {
+          "value": "大陸地溝帯",
+          "verdict": "不適切",
+          "reason": "伸張に伴う火山活動はあるが、長大な海嶺系の地殻生産に比べて小さい。"
+        },
+        "3": {
+          "value": "縁海",
+          "verdict": "不適切",
+          "reason": "活動的な背弧海盆等もあるが全縁海が活動中の火山域というわけではない。"
+        },
+        "4": {
+          "value": "中央海嶺の軸",
+          "verdict": "代表的条件で適切",
+          "reason": "全世界の長大な拡大軸で連続的に海洋地殻を作り、USGS概説でも年噴出物の約4分の3と見積もる。"
+        },
+        "5": {
+          "value": "海山・火山島",
+          "verdict": "不適切",
+          "reason": "ハワイ等は大きな火山を作るが、個別の大型火山と全世界海嶺系の総量を比較する。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_012.png"
+      ],
+      "core_concept": "噴出物の全世界体積率と火山の個数を区別する。",
+      "required_knowledge": "単位はkm3／年で、火山の個数・噴火回数・陸上被害の大きさではない。海嶺拡大が作る全世界の新しい海洋地殻に対応する4が最大。USGSの約4分の3は代表的推計で、厳密な年度別観測値や未来の一定比率ではない。",
+      "solution": "単位はkm3／年で、火山の個数・噴火回数・陸上被害の大きさではない。海嶺拡大が作る全世界の新しい海洋地殻に対応する4が最大。USGSの約4分の3は代表的推計で、厳密な年度別観測値や未来の一定比率ではない。",
+      "answer_reason": "単位はkm3／年で、火山の個数・噴火回数・陸上被害の大きさではない。海嶺拡大が作る全世界の新しい海洋地殻に対応する4が最大。USGSの約4分の3は代表的推計で、厳密な年度別観測値や未来の一定比率ではない。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。海嶺の全世界噴出量最大",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:arc"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_volume",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：噴出物の全世界体積率と火山の個数を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "vol50_ridge_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-35",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "火山ガス・気候影響・火砕流・泥流・津波を比較する。",
+      "summary": "火山ガス・気候影響・火砕流・泥流・津波を比較する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "火山ガス・気候影響・火砕流・泥流・津波を比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "高い噴煙と灰による世界冷却",
+          "verdict": "条件・解釈を留保",
+          "reason": "高い噴煙と日射遮蔽はあり得るが、長距離・長期間の全球冷却は主にSO2由来の硫酸エアロゾル。火山灰だけの説明を一般化しない。"
+        },
+        "2": {
+          "value": "大部分が有害な酸性ガス",
+          "verdict": "不適切",
+          "reason": "量の大部分は通常水蒸気。少量の有害ガスの危険性と量の割合を混同している。"
+        },
+        "3": {
+          "value": "高温ガスと粒子の火砕流",
+          "verdict": "代表的条件で適切",
+          "reason": "ガスと火砕粒子の混合流が高速に移動する。"
+        },
+        "4": {
+          "value": "融雪・湖水等を取り込む火山泥流",
+          "verdict": "代表的条件で適切",
+          "reason": "水と火山砕屑物が混ざり、土石流状に流下する。噴火と同時以外の降雨でも発生し得る。"
+        },
+        "5": {
+          "value": "火山島噴火や海への岩屑で津波",
+          "verdict": "代表的条件で適切",
+          "reason": "水塊の急激な変位により津波を起こす場合がある。必ず発生するという全称ではない。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "公式2を保持。肢1の全球冷却を大量火山灰へ帰す説明には、灰の短期影響と硫酸エアロゾルの長期影響の区別が必要。噴煙20–40kmも代表範囲。",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_014.png"
+      ],
+      "core_concept": "火山ガス・気候影響・火砕流・泥流・津波を比較する。",
+      "required_knowledge": "火山ガスの量と有害性を分ける。通常最大成分は水蒸気なので2が誤り。火砕流はガス粒子、泥流は水粒子の混合、津波は海水の変位が中心である。1の気候説明は硫黄ガスから作る硫酸エアロゾルの長期的役割を補足し、灰だけで全球冷却を説明しない。",
+      "solution": "火山ガスの量と有害性を分ける。通常最大成分は水蒸気なので2が誤り。火砕流はガス粒子、泥流は水粒子の混合、津波は海水の変位が中心である。1の気候説明は硫黄ガスから作る硫酸エアロゾルの長期的役割を補足し、灰だけで全球冷却を説明しない。",
+      "answer_reason": "火山ガスの量と有害性を分ける。通常最大成分は水蒸気なので2が誤り。火砕流はガス粒子、泥流は水粒子の混合、津波は海水の変位が中心である。1の気候説明は硫黄ガスから作る硫酸エアロゾルの長期的役割を補足し、灰だけで全球冷却を説明しない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。水蒸気が大部分。灰と硫酸エアロゾルの違いを留保",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:hazards"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_hazards",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：火山ガス・気候影響・火砕流・泥流・津波を比較する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "vol50_gas_ref",
+        "vol50_climate_ref",
+        "volc_usgs_msh_flow"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-23",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "火山用語と軟堆積物の火炎状構造を区別する。",
+      "summary": "火山用語と軟堆積物の火炎状構造を区別する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "火山用語と軟堆積物の火炎状構造を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "カルデラ",
+          "verdict": "代表的条件で適切",
+          "reason": "マグマの大量放出等に伴う陥没などで生じる大きな凹地で、火山活動と関係する。"
+        },
+        "2": {
+          "value": "安山岩",
+          "verdict": "代表的条件で適切",
+          "reason": "島弧で代表的に見られる中間質火山岩。"
+        },
+        "3": {
+          "value": "アグルチネート",
+          "verdict": "代表的条件で適切",
+          "reason": "高温で放出された溶岩片等が付着・溶結してできる火砕岩。"
+        },
+        "4": {
+          "value": "火炎状構造",
+          "verdict": "不適切",
+          "reason": "未固結の軽い層が上の重い堆積物の間へ押し上げられた荷重変形などで生じ、火炎という形の名は噴火を意味しない。"
+        },
+        "5": {
+          "value": "マグマ水蒸気爆発",
+          "verdict": "代表的条件で適切",
+          "reason": "マグマと外来水の相互作用を伴う爆発的噴火。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_008.png"
+      ],
+      "core_concept": "火山用語と軟堆積物の火炎状構造を区別する。",
+      "required_knowledge": "火炎状構造の火炎は見た目の比喩であり、成因は未固結堆積物の変形である。火山活動の直接用語として最も弱い4を選ぶ。火砕堆積物でも変形構造ができ得るので、火山地域に絶対に存在しないという意味ではない。",
+      "solution": "火炎状構造の火炎は見た目の比喩であり、成因は未固結堆積物の変形である。火山活動の直接用語として最も弱い4を選ぶ。火砕堆積物でも変形構造ができ得るので、火山地域に絶対に存在しないという意味ではない。",
+      "answer_reason": "火炎状構造の火炎は見た目の比喩であり、成因は未固結堆積物の変形である。火山活動の直接用語として最も弱い4を選ぶ。火砕堆積物でも変形構造ができ得るので、火山地域に絶対に存在しないという意味ではない。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。火炎状構造は堆積物変形",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:terms"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_terms",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：火山用語と軟堆積物の火炎状構造を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "vol50_terms_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-28",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "正マグマ濃集・漂砂・熱水・風化・交代を比較する。",
+      "summary": "正マグマ濃集・漂砂・熱水・風化・交代を比較する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "正マグマ濃集・漂砂・熱水・風化・交代を比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "早期結晶する金・銀の正マグマ鉱",
+          "verdict": "公式の選択・一般化を留保",
+          "reason": "早期集積の代表はクロム・白金等。金銀鉱床は熱水等の成因が重要で、原典の例示が適切でない。 ただし原典は場合があるという存在命題で、全ての金銀マグマ成因を否定する論証にはならない。"
+        },
+        "2": {
+          "value": "金属を運ぶ熱水",
+          "verdict": "代表的条件で適切",
+          "reason": "亀裂中又は海底等で金属成分を沈殿させる。全熱水鉱床の流体をマグマ起源だけに限定しない。"
+        },
+        "3": {
+          "value": "ウラン鉱と砂金の漂砂濃集",
+          "verdict": "条件・解釈を留保",
+          "reason": "機械的な粒子の運搬・堆積による砂金は代表例。ウラニナイトの漂砂は酸素の少ない古い時代等の条件が必要で、砂岩中の溶存Uの酸化還元沈殿とは違う。"
+        },
+        "4": {
+          "value": "難溶物の風化残留",
+          "verdict": "代表的条件で適切",
+          "reason": "母岩の風化で移動しにくい成分が相対濃集し、ボーキサイト等となる。"
+        },
+        "5": {
+          "value": "石灰岩との接触交代",
+          "verdict": "代表的条件で適切",
+          "reason": "熱水等との反応でCaを含むケイ酸塩鉱物を作るスカルン成因。単なる再結晶と分ける。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "公式1を保持。原典3のウランを一般の現代河川での漂砂と読むと成立しにくい。古代石英礫岩の還元環境と砂岩型の化学沈殿を区別する必要がある。 原典1は金銀の早期結晶がある場合と述べるため、代表例がCr/Ptであるだけでは全可能性を排除できない。マグマ性PGE鉱床に自然金を含むモデルもあり、公式1の排他理由を要査読。",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_009.png"
+      ],
+      "core_concept": "正マグマ濃集・漂砂・熱水・風化・交代を比較する。",
+      "required_knowledge": "生成機構は正マグマの結晶・硫化物液集積、熱水の沈殿、粒子の漂砂、風化残留、母岩の化学的交代に分ける。早期に金銀を集積するという1を、クロム・白金等の代表例と区別して選ぶ。ウランの漂砂は酸化されにくい古代の環境等を条件とし、現代の河川で全ウラン鉱が砂金と同様に残ると説明しない。",
+      "solution": "生成機構は正マグマの結晶・硫化物液集積、熱水の沈殿、粒子の漂砂、風化残留、母岩の化学的交代に分ける。早期に金銀を集積するという1を、クロム・白金等の代表例と区別して選ぶ。ウランの漂砂は酸化されにくい古代の環境等を条件とし、現代の河川で全ウラン鉱が砂金と同様に残ると説明しない。",
+      "answer_reason": "生成機構は正マグマの結晶・硫化物液集積、熱水の沈殿、粒子の漂砂、風化残留、母岩の化学的交代に分ける。早期に金銀を集積するという1を、クロム・白金等の代表例と区別して選ぶ。ウランの漂砂は酸化されにくい古代の環境等を条件とし、現代の河川で全ウラン鉱が砂金と同様に残ると説明しない。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。早期AuAgは正マグマの主例でない。ウラン漂砂は古代例に限定",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:ore:origins"
+      ],
+      "discipline_id": "geo_resources",
+      "concept_id": "ore50_origins",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：正マグマ濃集・漂砂・熱水・風化・交代を比較する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "ore50_porphyry_ref",
+        "ore50_bauxite_ref",
+        "ore50_uranium_ref",
+        "ore50_magmatic_ref",
+        "ore50_besshi_ref",
+        "ore50_gold_exception_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-29",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "マグマの局所生成・部分溶融・組成・発泡を比較する。",
+      "summary": "マグマの局所生成・部分溶融・組成・発泡を比較する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "マグマの局所生成・部分溶融・組成・発泡を比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "地殻・マントルは通常固体",
+          "verdict": "代表的条件で適切",
+          "reason": "地下全体に液状マグマが遍在するわけではない。条件が固相線を越える局所で融解が始まる。"
+        },
+        "2": {
+          "value": "一部が融ける部分溶融",
+          "verdict": "代表的条件で適切",
+          "reason": "多成分の岩石では溶けやすい成分からメルトが生じ、残留固相と液相が共存する。"
+        },
+        "3": {
+          "value": "玄武岩質はSi・Na・Kに富む",
+          "verdict": "条件・解釈を留保",
+          "reason": "流紋岩等と比較する通常の分類では玄武岩はSiO2・アルカリが少ない側。ただしマントル原岩に比べれば不適合元素がメルトへ濃集するため、比較対象なしの富むは曖昧。"
+        },
+        "4": {
+          "value": "浮力上昇とマグマだまり",
+          "verdict": "条件・解釈を留保",
+          "reason": "通常メルトは周囲より低密度で上昇し得るが、貯留は中立浮力だけでなく応力・層境界・冷却等にも影響される。"
+        },
+        "5": {
+          "value": "減圧で揮発性分が分離し圧力が高まる",
+          "verdict": "条件・解釈を留保",
+          "reason": "減圧で溶解度が下がり気泡が生じ膨張する。閉塞等で過圧を作る場合はあるが、外圧低下からガスの絶対圧力が必ず上昇するとは限らない。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "公式H29=3/R01=2。富むの比較対象が原典に明記されないため、原岩に対するNa・K等の濃集と珪長質マグマに対する組成差を区別する。発泡の絶対圧力と浮力だけによる貯留の全称も留保。",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_010.png"
+      ],
+      "core_concept": "マグマの局所生成・部分溶融・組成・発泡を比較する。",
+      "required_knowledge": "地球内部の多くは固体で、固相線を越えた条件で部分溶融する。典型的なマントルの融解液は玄武岩質であり、流紋岩等と比較すればSiO2とアルカリが少ない側なので、原典でSi・Na・Kに富むとする肢を公式は選ぶ。ただし比較を原岩マントルへ変えると不適合元素の濃集があるため、比較対象を明示して説明する。気泡の膨張と圧力の単調増加を同一視せず、マグマ貯留も中立浮力だけで全てを説明しない。",
+      "solution": "地球内部の多くは固体で、固相線を越えた条件で部分溶融する。典型的なマントルの融解液は玄武岩質であり、流紋岩等と比較すればSiO2とアルカリが少ない側なので、原典でSi・Na・Kに富むとする肢を公式は選ぶ。ただし比較を原岩マントルへ変えると不適合元素の濃集があるため、比較対象を明示して説明する。気泡の膨張と圧力の単調増加を同一視せず、マグマ貯留も中立浮力だけで全てを説明しない。",
+      "answer_reason": "地球内部の多くは固体で、固相線を越えた条件で部分溶融する。典型的なマントルの融解液は玄武岩質であり、流紋岩等と比較すればSiO2とアルカリが少ない側なので、原典でSi・Na・Kに富むとする肢を公式は選ぶ。ただし比較を原岩マントルへ変えると不適合元素の濃集があるため、比較対象を明示して説明する。気泡の膨張と圧力の単調増加を同一視せず、マグマ貯留も中立浮力だけで全てを説明しない。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。玄武岩の組成を珪長質へ混同",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:melting"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_melting",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：マグマの局所生成・部分溶融・組成・発泡を比較する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "vol50_melt_ref",
+        "jma_magma1999",
+        "vol50_degassing_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-23",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "stem": "マグマの局所生成・部分溶融・組成・発泡を比較する。",
+      "summary": "マグマの局所生成・部分溶融・組成・発泡を比較する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "マグマの局所生成・部分溶融・組成・発泡を比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "減圧で揮発性分が分離し圧力が高まる",
+          "verdict": "条件・解釈を留保",
+          "reason": "減圧で溶解度が下がり気泡が生じ膨張する。閉塞等で過圧を作る場合はあるが、外圧低下からガスの絶対圧力が必ず上昇するとは限らない。"
+        },
+        "2": {
+          "value": "玄武岩質はSi・Na・Kに富む",
+          "verdict": "条件・解釈を留保",
+          "reason": "流紋岩等と比較する通常の分類では玄武岩はSiO2・アルカリが少ない側。ただしマントル原岩に比べれば不適合元素がメルトへ濃集するため、比較対象なしの富むは曖昧。"
+        },
+        "3": {
+          "value": "浮力上昇とマグマだまり",
+          "verdict": "条件・解釈を留保",
+          "reason": "通常メルトは周囲より低密度で上昇し得るが、貯留は中立浮力だけでなく応力・層境界・冷却等にも影響される。"
+        },
+        "4": {
+          "value": "一部が融ける部分溶融",
+          "verdict": "代表的条件で適切",
+          "reason": "多成分の岩石では溶けやすい成分からメルトが生じ、残留固相と液相が共存する。"
+        },
+        "5": {
+          "value": "地殻・マントルは通常固体",
+          "verdict": "代表的条件で適切",
+          "reason": "地下全体に液状マグマが遍在するわけではない。条件が固相線を越える局所で融解が始まる。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "公式H29=3/R01=2。富むの比較対象が原典に明記されないため、原岩に対するNa・K等の濃集と珪長質マグマに対する組成差を区別する。発泡の絶対圧力と浮力だけによる貯留の全称も留保。",
+      "evidence": [
+        "extracted/pages/R01/17_applied_science/page_008.png"
+      ],
+      "core_concept": "マグマの局所生成・部分溶融・組成・発泡を比較する。",
+      "required_knowledge": "地球内部の多くは固体で、固相線を越えた条件で部分溶融する。典型的なマントルの融解液は玄武岩質であり、流紋岩等と比較すればSiO2とアルカリが少ない側なので、原典でSi・Na・Kに富むとする肢を公式は選ぶ。ただし比較を原岩マントルへ変えると不適合元素の濃集があるため、比較対象を明示して説明する。気泡の膨張と圧力の単調増加を同一視せず、マグマ貯留も中立浮力だけで全てを説明しない。",
+      "solution": "地球内部の多くは固体で、固相線を越えた条件で部分溶融する。典型的なマントルの融解液は玄武岩質であり、流紋岩等と比較すればSiO2とアルカリが少ない側なので、原典でSi・Na・Kに富むとする肢を公式は選ぶ。ただし比較を原岩マントルへ変えると不適合元素の濃集があるため、比較対象を明示して説明する。気泡の膨張と圧力の単調増加を同一視せず、マグマ貯留も中立浮力だけで全てを説明しない。",
+      "answer_reason": "地球内部の多くは固体で、固相線を越えた条件で部分溶融する。典型的なマントルの融解液は玄武岩質であり、流紋岩等と比較すればSiO2とアルカリが少ない側なので、原典でSi・Na・Kに富むとする肢を公式は選ぶ。ただし比較を原岩マントルへ変えると不適合元素の濃集があるため、比較対象を明示して説明する。気泡の膨張と圧力の単調増加を同一視せず、マグマ貯留も中立浮力だけで全てを説明しない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。玄武岩のSiNaKの相対説明不適",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:melting"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_melting",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：マグマの局所生成・部分溶融・組成・発泡を比較する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "vol50_melt_ref",
+        "jma_magma1999",
+        "vol50_degassing_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-23",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "stem": "火山前線・背弧の組成傾向とマグマ温度を比較する。",
+      "summary": "火山前線・背弧の組成傾向とマグマ温度を比較する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "火山前線・背弧の組成傾向とマグマ温度を比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "マントル部分融解によるマグマ",
+          "verdict": "条件・解釈を留保",
+          "reason": "初生的な玄武岩質マグマの主要な生成経路。地殻の融解からもマグマが作られるので全種類の唯一の経路とはしない。"
+        },
+        "2": {
+          "value": "海嶺・ホットスポットは主に玄武岩質",
+          "verdict": "代表的条件で適切",
+          "reason": "代表的な初生噴出物は玄武岩質。分化した溶岩等の例外はある。"
+        },
+        "3": {
+          "value": "背弧へアルカリと水が系統的に低下",
+          "verdict": "不適切",
+          "reason": "島弧の代表的アルカリ濃度は背弧へ増す傾向で、アルカリと水を同方向の普遍則へ結び付けた記述は適切でない。水の傾向には別の検証が必要。"
+        },
+        "4": {
+          "value": "島弧にはシリカに富む分化マグマもある",
+          "verdict": "代表的条件で適切",
+          "reason": "安山岩・デイサイト・流紋岩等も噴出し、初生玄武岩だけではない。"
+        },
+        "5": {
+          "value": "玄武岩1000–1200℃・流紋岩700–900℃",
+          "verdict": "代表的条件で適切",
+          "reason": "JMAの1999年表にも記載された代表的な噴出温度範囲で、全噴火の厳密な境界ではない。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "公式3。背弧方向のアルカリと水の濃度は別の変数で、水まで一般に増加と改変しない。全マグマの上部マントル起源という全称と温度の全噴火への適用も留保。アルカリ傾向の原論文による追加照合が必要。",
+      "evidence": [
+        "extracted/pages/R01_retest/17_applied_science/page_008.png"
+      ],
+      "core_concept": "火山前線・背弧の組成傾向とマグマ温度を比較する。",
+      "required_knowledge": "火山前線の海溝と反対側へ進むと、玄武岩中のアルカリ濃度が一般に高まる傾向がある。原典3は小さくなるとするため不適切。ただし水の濃度を常にアルカリと同方向としない。GSJの東北日本弧の調査には含水量が背弧へ減る分布の報告があり、アルカリと水を分けて比較する。",
+      "solution": "火山前線の海溝と反対側へ進むと、玄武岩中のアルカリ濃度が一般に高まる傾向がある。原典3は小さくなるとするため不適切。ただし水の濃度を常にアルカリと同方向としない。GSJの東北日本弧の調査には含水量が背弧へ減る分布の報告があり、アルカリと水を分けて比較する。",
+      "answer_reason": "火山前線の海溝と反対側へ進むと、玄武岩中のアルカリ濃度が一般に高まる傾向がある。原典3は小さくなるとするため不適切。ただし水の濃度を常にアルカリと同方向としない。GSJの東北日本弧の調査には含水量が背弧へ減る分布の報告があり、アルカリと水を分けて比較する。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。背弧へアルカリ通常増。水量の一律傾向は留保",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:arc"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_arc",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：火山前線・背弧の組成傾向とマグマ温度を比較する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "vol50_melt_ref",
+        "jma_magma1999",
+        "vol50_arcwater_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-24",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "stem": "噴火現象を気体・水・溶岩・岩屑の移動へ分ける。",
+      "summary": "噴火現象を気体・水・溶岩・岩屑の移動へ分ける。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "噴火現象を気体・水・溶岩・岩屑の移動へ分ける。"
+      },
+      "choices": {
+        "1": {
+          "value": "液状マグマの流出",
+          "verdict": "代表的条件で適切",
+          "reason": "液体として流れ出て移動する溶岩流。気体粒子混合の火砕流と分ける。"
+        },
+        "2": {
+          "value": "ストロンボリの間欠爆発",
+          "verdict": "代表的条件で適切",
+          "reason": "比較的低粘性のマグマから気泡が断続的に放出される。"
+        },
+        "3": {
+          "value": "外来水の急な水蒸気化",
+          "verdict": "代表的条件で適切",
+          "reason": "マグマと水の急な熱交換で蒸気の膨張・破砕が生じ得る。"
+        },
+        "4": {
+          "value": "崩壊山体の岩屑なだれ",
+          "verdict": "代表的条件で適切",
+          "reason": "不安定な火山体が崩れ高速に移動する場合がある。"
+        },
+        "5": {
+          "value": "火砕流は時速数km以下",
+          "verdict": "不適切",
+          "reason": "一般的な火砕流は時速数十kmから100km以上等の高速で、ゆっくりした数km以下の流れという説明が不適切。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/17_applied_science/page_008.png"
+      ],
+      "core_concept": "噴火現象を気体・水・溶岩・岩屑の移動へ分ける。",
+      "required_knowledge": "流れる物質と速度を確認する。火砕流は高温ガスと火砕粒子の混合が高速に流下する現象であり5の低速度が誤り。外来水を含む爆発・泥流、液状溶岩、崩壊する岩屑の移動はそれぞれ異なる。",
+      "solution": "流れる物質と速度を確認する。火砕流は高温ガスと火砕粒子の混合が高速に流下する現象であり5の低速度が誤り。外来水を含む爆発・泥流、液状溶岩、崩壊する岩屑の移動はそれぞれ異なる。",
+      "answer_reason": "流れる物質と速度を確認する。火砕流は高温ガスと火砕粒子の混合が高速に流下する現象であり5の低速度が誤り。外来水を含む爆発・泥流、液状溶岩、崩壊する岩屑の移動はそれぞれ異なる。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。火砕流の低速度誤り",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:styles"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_eruptions",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：噴火現象を気体・水・溶岩・岩屑の移動へ分ける。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "jma_magma1999",
+        "volc_usgs_msh_flow"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-24",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "stem": "パホイホイ・アア・ブロックと溶岩形態を比較する。",
+      "summary": "パホイホイ・アア・ブロックと溶岩形態を比較する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "パホイホイ・アア・ブロックと溶岩形態を比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "厚さ／長さ1/8で流れとドームを分ける",
+          "verdict": "条件・解釈を留保",
+          "reason": "原典の形態分類の目安を保持する。普遍的な流体力学上の相転移閾値ではなく、測り方と分類文献の追加確認が必要。"
+        },
+        "2": {
+          "value": "粘性・冷却・流速で表面が変化",
+          "verdict": "代表的条件で適切",
+          "reason": "組成・温度・結晶量等が流動性と表面破砕へ影響する。"
+        },
+        "3": {
+          "value": "パホイホイは流紋岩質の急冷",
+          "verdict": "不適切",
+          "reason": "滑らか・縄状等の表面を持つパホイホイは代表的に流動性に富む玄武岩質溶岩。岩種を交換している。"
+        },
+        "4": {
+          "value": "アアは粗いクリンカー表面",
+          "verdict": "代表的条件で適切",
+          "reason": "相対的に高粘性・大きい変形速度等で表面が粗い破片となる。温度だけで状態を決めない。"
+        },
+        "5": {
+          "value": "ブロックは大きな平滑破断面の岩塊",
+          "verdict": "代表的条件で適切",
+          "reason": "高粘性の中間質～珪長質等で、アアの小さい粗いクリンカーと区別する表面形態。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "原典のアスペクト比1/8の分類出典・測定長さと、アアの低温・組成に関する全例の一般化は追加照合。パホイホイを単に急冷と定義しない。",
+      "evidence": [
+        "extracted/pages/R02/17_applied_science/page_009.png"
+      ],
+      "core_concept": "パホイホイ・アア・ブロックと溶岩形態を比較する。",
+      "required_knowledge": "パホイホイとアアは同じ玄武岩質でも流動・冷却・変形の条件で異なる形になり得る。パホイホイを流紋岩質へ置換した3が誤り。滑らかな流れ、粗いクリンカー、大きな岩塊の表面を岩種と別の形態軸として整理する。",
+      "solution": "パホイホイとアアは同じ玄武岩質でも流動・冷却・変形の条件で異なる形になり得る。パホイホイを流紋岩質へ置換した3が誤り。滑らかな流れ、粗いクリンカー、大きな岩塊の表面を岩種と別の形態軸として整理する。",
+      "answer_reason": "パホイホイとアアは同じ玄武岩質でも流動・冷却・変形の条件で異なる形になり得る。パホイホイを流紋岩質へ置換した3が誤り。滑らかな流れ、粗いクリンカー、大きな岩塊の表面を岩種と別の形態軸として整理する。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。パホイホイは玄武岩",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:lava"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_lava",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：パホイホイ・アア・ブロックと溶岩形態を比較する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "vol50_lava_ref",
+        "jma_magma1999"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-20",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "地熱貯留層の透水経路と温度利用を比較する。",
+      "summary": "地熱貯留層の透水経路と温度利用を比較する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "地熱貯留層の透水経路と温度利用を比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "広域と局所の地温勾配",
+          "verdict": "条件・解釈を留保",
+          "reason": "放射性壊変・深部熱供給・火山等の熱源を考える。20–30、50–100℃/km以上は代表範囲で全地点の一定値ではない。"
+        },
+        "2": {
+          "value": "非火山地域も低温利用の対象",
+          "verdict": "代表的条件で適切",
+          "reason": "地殻の広域熱等による熱水も利用でき、火山周辺だけに限定されない。"
+        },
+        "3": {
+          "value": "化学成分による温度推定",
+          "verdict": "代表的条件で適切",
+          "reason": "溶解平衡等の温度依存を利用する地化学温度計。冷却、混合、再平衡の影響は別に検討する。"
+        },
+        "4": {
+          "value": "割れ目に乏しい地熱貯留層",
+          "verdict": "不適切",
+          "reason": "通常の開発可能な熱水循環には割れ目等の透水経路が重要。原典H23の富んだを乏しいへ反転したもの。"
+        },
+        "5": {
+          "value": "蒸気方式とバイナリー",
+          "verdict": "代表的条件で適切",
+          "reason": "蒸気でタービンを回す方式と、熱交換で低沸点の二次媒体を蒸発させる方式を区別する。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "地温勾配の代表範囲と地化学温度計の平衡仮定は地域・化学種の条件を要する。原典の固定範囲を地球全域の厳密定数としない。",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_007.png"
+      ],
+      "core_concept": "地熱貯留層の透水経路と温度利用を比較する。",
+      "required_knowledge": "発電・直接利用の方式と、地下の熱・流体・透水性を分ける。通常の熱水貯留層は流体が移動する割れ目等を持ち、乏しいとした4を選ぶ。高温だが透水性不足の岩体の利用には別の技術と条件が必要で、通常の貯留層の定義と混同しない。",
+      "solution": "発電・直接利用の方式と、地下の熱・流体・透水性を分ける。通常の熱水貯留層は流体が移動する割れ目等を持ち、乏しいとした4を選ぶ。高温だが透水性不足の岩体の利用には別の技術と条件が必要で、通常の貯留層の定義と混同しない。",
+      "answer_reason": "発電・直接利用の方式と、地下の熱・流体・透水性を分ける。通常の熱水貯留層は流体が移動する割れ目等を持ち、乏しいとした4を選ぶ。高温だが透水性不足の岩体の利用には別の技術と条件が必要で、通常の貯留層の定義と混同しない。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。貯留層は割れ目に富む",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:ore:geothermal"
+      ],
+      "discipline_id": "geo_resources",
+      "concept_id": "ore50_geothermal",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：地熱貯留層の透水経路と温度利用を比較する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "ore50_geothermal_ref",
+        "ore50_reservoir_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-26",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "ストロンボリの間欠爆発と連続溶岩噴泉を区別する。",
+      "summary": "ストロンボリの間欠爆発と連続溶岩噴泉を区別する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "ストロンボリの間欠爆発と連続溶岩噴泉を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "時速数十から100km以上の火砕流",
+          "verdict": "代表的条件で適切",
+          "reason": "高温のガス粒子混合流の代表的高速移動。速度の全現象一律境界ではない。"
+        },
+        "2": {
+          "value": "液状溶岩流",
+          "verdict": "代表的条件で適切",
+          "reason": "破片の混合ではなく液体としてのマグマが流出する。"
+        },
+        "3": {
+          "value": "連続噴泉をストロンボリ式とする",
+          "verdict": "不適切",
+          "reason": "連続的な溶岩噴泉は代表的にハワイ式。ストロンボリは間欠的な爆発が特徴。"
+        },
+        "4": {
+          "value": "山体崩壊の岩屑なだれ",
+          "verdict": "代表的条件で適切",
+          "reason": "火山体の不安定部が崩れ高速に流下する。"
+        },
+        "5": {
+          "value": "外来水の相変化を伴う爆発",
+          "verdict": "代表的条件で適切",
+          "reason": "マグマ水蒸気爆発で急な熱交換・膨張等が起こる。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_009.png"
+      ],
+      "core_concept": "ストロンボリの間欠爆発と連続溶岩噴泉を区別する。",
+      "required_knowledge": "間欠か連続かを原典から読む。ストロンボリ式は気泡の解放による間欠的小爆発で、割れ目からの連続的噴泉とした3が誤り。平成・令和の似た五肢でも、誤りが岩種か速度か噴出様式かを確かめる。",
+      "solution": "間欠か連続かを原典から読む。ストロンボリ式は気泡の解放による間欠的小爆発で、割れ目からの連続的噴泉とした3が誤り。平成・令和の似た五肢でも、誤りが岩種か速度か噴出様式かを確かめる。",
+      "answer_reason": "間欠か連続かを原典から読む。ストロンボリ式は気泡の解放による間欠的小爆発で、割れ目からの連続的噴泉とした3が誤り。平成・令和の似た五肢でも、誤りが岩種か速度か噴出様式かを確かめる。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。間欠爆発と連続噴泉を交換",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:styles"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_eruptions",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：ストロンボリの間欠爆発と連続溶岩噴泉を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "jma_magma1999",
+        "vol50_styles_ref",
+        "volc_usgs_msh_flow"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-24",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "stem": "ウラン鉱床の母岩・年代・品位の分類を比較する。",
+      "summary": "ウラン鉱床の母岩・年代・品位の分類を比較する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "ウラン鉱床の母岩・年代・品位の分類を比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "古い基盤と砂岩の不整合近傍",
+          "verdict": "代表的条件で適切",
+          "reason": "不整合関連型の代表は原生代砂岩盆地と古い変成基盤の不整合をまたぐ熱水・流体鉱化。"
+        },
+        "2": {
+          "value": "4億年前以降の河川砂岩・礫岩",
+          "verdict": "条件・解釈を留保",
+          "reason": "顕生代の堆積盆地は砂岩型の代表だが、4億年を全砂岩型鉱床の唯一の年齢限界とする確認は未完了。"
+        },
+        "3": {
+          "value": "約23億年前以前の石英礫岩",
+          "verdict": "条件・解釈を留保",
+          "reason": "古い酸素の少ない環境でU鉱物等が漂砂濃集する代表的な古代石英礫岩型。年代は酸化環境と地域史の条件として扱う。"
+        },
+        "4": {
+          "value": "様々な時代の鉱脈型",
+          "verdict": "代表的条件で適切",
+          "reason": "亀裂等を切る流体の通路に脈状鉱体ができる形態で、特定時代だけに限定されない。"
+        },
+        "5": {
+          "value": "貫入岩型は他型より高品位",
+          "verdict": "不適切",
+          "reason": "一般に低品位で大規模な貫入岩関連資源があり、高品位を共通特徴としない。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "公式5を保持。4億年以降と23億年前以前等の厳密な分類時代境界・例外は原典の当時分類とIAEA原分類表の追加照合が必要。低品位資源の存在のみで全鉱床の一律平均品位を作らない。",
+      "evidence": [
+        "extracted/pages/R04/17_applied_science/page_008.png"
+      ],
+      "core_concept": "ウラン鉱床の母岩・年代・品位の分類を比較する。",
+      "required_knowledge": "ウラン濃集は母岩・流体・酸化還元と形態で分類する。貫入岩型には低～非常に低品位の大規模資源があり、全て高品位とした5を選ぶ。古い石英礫岩の漂砂、不整合近傍の流体、砂岩の還元帯、鉱脈の亀裂充填を区別する。品位と鉱量は別の評価量である。",
+      "solution": "ウラン濃集は母岩・流体・酸化還元と形態で分類する。貫入岩型には低～非常に低品位の大規模資源があり、全て高品位とした5を選ぶ。古い石英礫岩の漂砂、不整合近傍の流体、砂岩の還元帯、鉱脈の亀裂充填を区別する。品位と鉱量は別の評価量である。",
+      "answer_reason": "ウラン濃集は母岩・流体・酸化還元と形態で分類する。貫入岩型には低～非常に低品位の大規模資源があり、全て高品位とした5を選ぶ。古い石英礫岩の漂砂、不整合近傍の流体、砂岩の還元帯、鉱脈の亀裂充填を区別する。品位と鉱量は別の評価量である。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。貫入岩型は一般低品位",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:ore:uranium"
+      ],
+      "discipline_id": "geo_resources",
+      "concept_id": "ore50_uranium",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：ウラン鉱床の母岩・年代・品位の分類を比較する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "ore50_uranium_ref",
+        "ore50_intrusive_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-23",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "stem": "黒鉱のグリーンタフと緑色片岩を区別する。",
+      "summary": "黒鉱のグリーンタフと緑色片岩を区別する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "黒鉱のグリーンタフと緑色片岩を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "熱水鉱床の形態分類",
+          "verdict": "代表的条件で適切",
+          "reason": "鉱脈、塊状、スカルン、斑岩銅等の代表タイプを区別する。全分類が完全に排他的とはしない。"
+        },
+        "2": {
+          "value": "半深成岩と斑岩銅",
+          "verdict": "代表的条件で適切",
+          "reason": "浅所の斑岩質貫入岩とその熱水系に関係する。"
+        },
+        "3": {
+          "value": "黒鉱が東北の緑色片岩中",
+          "verdict": "不適切",
+          "reason": "黒鉱の代表は中新世グリーンタフの海底火山・火山砕屑岩地域。広域変成の緑色片岩と名称を交換している。"
+        },
+        "4": {
+          "value": "温度によるスカルン金属の傾向",
+          "verdict": "条件・解釈を留保",
+          "reason": "高温段階にW等、後期・遠方の低温段階にPb・Zn等の例がある。金属種を温度だけで一意決定する普遍則ではない。"
+        },
+        "5": {
+          "value": "裂け目を通る熱水の鉱脈",
+          "verdict": "代表的条件で適切",
+          "reason": "流体が運んだ成分が亀裂・断層沿いで沈殿し脈状となる。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "スカルン金属種を高温と中低温だけで固定する原典4の一般化は追加照合。全形態分類の完全排他性も主張しない。",
+      "evidence": [
+        "extracted/pages/R05/17_applied_science/page_008.png"
+      ],
+      "core_concept": "黒鉱のグリーンタフと緑色片岩を区別する。",
+      "required_knowledge": "黒鉱の母岩をグリーンタフと緑色片岩で取り違えた3を選ぶ。熱水成因が共通でも、斑岩銅の分散した細脈、鉱脈の通路、スカルンの化学交代、海底の黒鉱は位置と形態が違う。温度と金属種の対応は酸化還元・母岩・流体組成の条件も確認する。",
+      "solution": "黒鉱の母岩をグリーンタフと緑色片岩で取り違えた3を選ぶ。熱水成因が共通でも、斑岩銅の分散した細脈、鉱脈の通路、スカルンの化学交代、海底の黒鉱は位置と形態が違う。温度と金属種の対応は酸化還元・母岩・流体組成の条件も確認する。",
+      "answer_reason": "黒鉱の母岩をグリーンタフと緑色片岩で取り違えた3を選ぶ。熱水成因が共通でも、斑岩銅の分散した細脈、鉱脈の通路、スカルンの化学交代、海底の黒鉱は位置と形態が違う。温度と金属種の対応は酸化還元・母岩・流体組成の条件も確認する。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。緑色片岩とグリーンタフ混同",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:ore:kuroko"
+      ],
+      "discipline_id": "geo_resources",
+      "concept_id": "ore50_kuroko",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：黒鉱のグリーンタフと緑色片岩を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "ore50_kuroko_ref",
+        "ore50_skarn_ref",
+        "ore50_porphyry_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-25",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "stem": "減圧融解・含水固相線低下・部分融解を区別する。",
+      "summary": "減圧融解・含水固相線低下・部分融解を区別する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "減圧融解・含水固相線低下・部分融解を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "昇温又は減圧で融解",
+          "verdict": "代表的条件で適切",
+          "reason": "温度圧力経路が固相線を越えると融解が始まる。全圧力域で同一勾配の融点を仮定しない。"
+        },
+        "2": {
+          "value": "残留固相のある部分溶融",
+          "verdict": "代表的条件で適切",
+          "reason": "一部の成分が融け、他の固相が残る多成分岩石の挙動。"
+        },
+        "3": {
+          "value": "低温マントルの急な昇温が海嶺・ホットスポット成因",
+          "verdict": "不適切",
+          "reason": "代表的には高温マントルの上昇に伴う減圧が融解を促す。ホットスポットの熱異常はあるが、冷たい物質の急加熱だけという説明ではない。"
+        },
+        "4": {
+          "value": "スラブ由来水による固相線低下",
+          "verdict": "代表的条件で適切",
+          "reason": "沈み込む含水物質の脱水で流体が供給され、上のマントルの融解が促進される。"
+        },
+        "5": {
+          "value": "低密度メルトの浮力と貯留",
+          "verdict": "条件・解釈を留保",
+          "reason": "浮力は重要だが、貯留の位置は密度差だけでなく応力・構造・結晶化等に依存する。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "密度の釣合いだけで全マグマだまりを説明しない。R07原典1の融点は多成分岩石では固相線・液相線という範囲をもつ。公式R05=3/R07=2を保持して条件を補足。",
+      "evidence": [
+        "extracted/pages/R05/17_applied_science/page_009.png"
+      ],
+      "core_concept": "減圧融解・含水固相線低下・部分融解を区別する。",
+      "required_knowledge": "海嶺等では上昇するマントルが減圧され、温度圧力経路が固相線を越えて融解する。低温物質の急な昇温だけを原因とした肢を選ぶ。沈み込みでは含水物質の脱水流体が固相線を下げる。純物質の一つの融点とは違い、岩石の部分溶融では固相とメルトが共存する。浮力上昇と貯留には周囲の構造や応力も関係する。",
+      "solution": "海嶺等では上昇するマントルが減圧され、温度圧力経路が固相線を越えて融解する。低温物質の急な昇温だけを原因とした肢を選ぶ。沈み込みでは含水物質の脱水流体が固相線を下げる。純物質の一つの融点とは違い、岩石の部分溶融では固相とメルトが共存する。浮力上昇と貯留には周囲の構造や応力も関係する。",
+      "answer_reason": "海嶺等では上昇するマントルが減圧され、温度圧力経路が固相線を越えて融解する。低温物質の急な昇温だけを原因とした肢を選ぶ。沈み込みでは含水物質の脱水流体が固相線を下げる。純物質の一つの融点とは違い、岩石の部分溶融では固相とメルトが共存する。浮力上昇と貯留には周囲の構造や応力も関係する。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。海嶺は減圧融解",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:melting"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_melting",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：減圧融解・含水固相線低下・部分融解を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "vol50_melt_ref",
+        "vol50_subduction_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-26",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "減圧融解・含水固相線低下・部分融解を区別する。",
+      "summary": "減圧融解・含水固相線低下・部分融解を区別する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "減圧融解・含水固相線低下・部分融解を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "昇温又は減圧で融解",
+          "verdict": "代表的条件で適切",
+          "reason": "温度圧力経路が固相線を越えると融解が始まる。全圧力域で同一勾配の融点を仮定しない。"
+        },
+        "2": {
+          "value": "低温マントルの急な昇温が海嶺・ホットスポット成因",
+          "verdict": "不適切",
+          "reason": "代表的には高温マントルの上昇に伴う減圧が融解を促す。ホットスポットの熱異常はあるが、冷たい物質の急加熱だけという説明ではない。"
+        },
+        "3": {
+          "value": "スラブ由来水による固相線低下",
+          "verdict": "代表的条件で適切",
+          "reason": "沈み込む含水物質の脱水で流体が供給され、上のマントルの融解が促進される。"
+        },
+        "4": {
+          "value": "残留固相のある部分溶融",
+          "verdict": "代表的条件で適切",
+          "reason": "一部の成分が融け、他の固相が残る多成分岩石の挙動。"
+        },
+        "5": {
+          "value": "低密度メルトの浮力と貯留",
+          "verdict": "条件・解釈を留保",
+          "reason": "浮力は重要だが、貯留の位置は密度差だけでなく応力・構造・結晶化等に依存する。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "密度の釣合いだけで全マグマだまりを説明しない。R07原典1の融点は多成分岩石では固相線・液相線という範囲をもつ。公式R05=3/R07=2を保持して条件を補足。",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_010.png"
+      ],
+      "core_concept": "減圧融解・含水固相線低下・部分融解を区別する。",
+      "required_knowledge": "海嶺等では上昇するマントルが減圧され、温度圧力経路が固相線を越えて融解する。低温物質の急な昇温だけを原因とした肢を選ぶ。沈み込みでは含水物質の脱水流体が固相線を下げる。純物質の一つの融点とは違い、岩石の部分溶融では固相とメルトが共存する。浮力上昇と貯留には周囲の構造や応力も関係する。",
+      "solution": "海嶺等では上昇するマントルが減圧され、温度圧力経路が固相線を越えて融解する。低温物質の急な昇温だけを原因とした肢を選ぶ。沈み込みでは含水物質の脱水流体が固相線を下げる。純物質の一つの融点とは違い、岩石の部分溶融では固相とメルトが共存する。浮力上昇と貯留には周囲の構造や応力も関係する。",
+      "answer_reason": "海嶺等では上昇するマントルが減圧され、温度圧力経路が固相線を越えて融解する。低温物質の急な昇温だけを原因とした肢を選ぶ。沈み込みでは含水物質の脱水流体が固相線を下げる。純物質の一つの融点とは違い、岩石の部分溶融では固相とメルトが共存する。浮力上昇と貯留には周囲の構造や応力も関係する。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。低温急加熱でなく上昇減圧",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:melting"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_melting",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：減圧融解・含水固相線低下・部分融解を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "vol50_melt_ref",
+        "vol50_subduction_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-24",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "stem": "黒鉱と炭酸塩岩を交代するスカルンを区別する。",
+      "summary": "黒鉱と炭酸塩岩を交代するスカルンを区別する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "黒鉱と炭酸塩岩を交代するスカルンを区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "縞状鉄鉱の珪質層と鉄鉱物層",
+          "verdict": "代表的条件で適切",
+          "reason": "珪質物と鉄鉱物に富む層が交互に現れる。銅の鉱床と交換しない。"
+        },
+        "2": {
+          "value": "難溶鉱物の風化残留",
+          "verdict": "代表的条件で適切",
+          "reason": "風化に伴う移動しにくい成分の相対濃集をいう。"
+        },
+        "3": {
+          "value": "黒鉱が炭酸塩岩の交代で形成",
+          "verdict": "不適切",
+          "reason": "炭酸塩岩との化学反応はスカルンの説明。黒鉱は代表的に海底火山熱水の塊状硫化物である。"
+        },
+        "4": {
+          "value": "低品位大規模の斑岩銅",
+          "verdict": "代表的条件で適切",
+          "reason": "斑岩質貫入体とその周辺の鉱染・網状細脈を持つ代表タイプ。"
+        },
+        "5": {
+          "value": "海底熱水からの沈殿",
+          "verdict": "代表的条件で適切",
+          "reason": "海底火山・熱水活動で溶けた金属が化学条件の変化で沈殿する。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/17_applied_science/page_008.png"
+      ],
+      "core_concept": "黒鉱と炭酸塩岩を交代するスカルンを区別する。",
+      "required_knowledge": "3は黒鉱をスカルンの生成機構へ置換している。熱水が関与する点は共通でも、海底での硫化物沈殿と、炭酸塩岩を反応させCaケイ酸塩を作る交代は違う。鉱床名・母岩・鉱物・形態・成因を同時に対応させる。",
+      "solution": "3は黒鉱をスカルンの生成機構へ置換している。熱水が関与する点は共通でも、海底での硫化物沈殿と、炭酸塩岩を反応させCaケイ酸塩を作る交代は違う。鉱床名・母岩・鉱物・形態・成因を同時に対応させる。",
+      "answer_reason": "3は黒鉱をスカルンの生成機構へ置換している。熱水が関与する点は共通でも、海底での硫化物沈殿と、炭酸塩岩を反応させCaケイ酸塩を作る交代は違う。鉱床名・母岩・鉱物・形態・成因を同時に対応させる。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。黒鉱をスカルンへ交換",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:ore:kuroko"
+      ],
+      "discipline_id": "geo_resources",
+      "concept_id": "ore50_kuroko",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：黒鉱と炭酸塩岩を交代するスカルンを区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "ore50_kuroko_ref",
+        "ore50_porphyry_ref",
+        "ore50_bauxite_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-25",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "stem": "海溝・前弧・火山弧・背弧と地震活動を整理する。",
+      "summary": "海溝・前弧・火山弧・背弧と地震活動を整理する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "海溝・前弧・火山弧・背弧と地震活動を整理する。"
+      },
+      "choices": {
+        "1": {
+          "value": "海洋側に海溝",
+          "verdict": "代表的条件で適切",
+          "reason": "島弧海溝の基本配列では海溝が沈み込みの海洋側にある。"
+        },
+        "2": {
+          "value": "陸側へ前弧・火山弧・背弧",
+          "verdict": "代表的条件で適切",
+          "reason": "海溝から火山前線までの前弧、火山弧、その背後の背弧を順に読む。"
+        },
+        "3": {
+          "value": "背弧で海が形成され得る",
+          "verdict": "代表的条件で適切",
+          "reason": "伸張して背弧盆地・海が形成される場合がある。必ず拡大海盆を持つわけではない。"
+        },
+        "4": {
+          "value": "背後の海による島弧・陸弧の呼称",
+          "verdict": "条件・解釈を留保",
+          "reason": "過去問の基本図式は大陸から海で隔たる島弧と大陸縁の陸弧。海の有無だけで全遷移形態を排他的に分類する厳密定義には留保する。"
+        },
+        "5": {
+          "value": "前弧は地震活動も静穏",
+          "verdict": "不適切",
+          "reason": "沈み込み境界やスラブに関係する地震があり、火山が少ないことから地震も静穏とは言えない。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "原典4の島弧・陸弧を海の有無だけで定義する単純化と、前弧に火山が全くないという全称は留保。公式5の地震活動の誤りを保持。",
+      "evidence": [
+        "extracted/pages/R06/17_applied_science/page_008.png"
+      ],
+      "core_concept": "海溝・前弧・火山弧・背弧と地震活動を整理する。",
+      "required_knowledge": "沈み込むプレートを地下まで追うと、火山前線より海溝側でも地震が起きる。火山分布と地震分布の範囲を同一視した5が不適切。海溝→前弧→火山弧→背弧の配列を地表と断面で対応させる。",
+      "solution": "沈み込むプレートを地下まで追うと、火山前線より海溝側でも地震が起きる。火山分布と地震分布の範囲を同一視した5が不適切。海溝→前弧→火山弧→背弧の配列を地表と断面で対応させる。",
+      "answer_reason": "沈み込むプレートを地下まで追うと、火山前線より海溝側でも地震が起きる。火山分布と地震分布の範囲を同一視した5が不適切。海溝→前弧→火山弧→背弧の配列を地表と断面で対応させる。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。前弧に地震あり",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:volcano:arc"
+      ],
+      "discipline_id": "earth_volcano",
+      "concept_id": "vol50_arc",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：海溝・前弧・火山弧・背弧と地震活動を整理する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "4",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "usgs_plate_boundaries",
+        "vol50_subduction_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-25",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "正マグマ・黒鉱・別子型・スカルンの産状を比較する。",
+      "summary": "正マグマ・黒鉱・別子型・スカルンの産状を比較する。",
+      "conditions": {
+        "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+        "対象": "正マグマ・黒鉱・別子型・スカルンの産状を比較する。"
+      },
+      "choices": {
+        "1": {
+          "value": "通常より鉱物・元素が濃集した鉱床",
+          "verdict": "代表的条件で適切",
+          "reason": "原典では地質学上の濃集をいう。経済的に採掘できるかは品位・鉱量・価格・技術等を別に評価する。"
+        },
+        "2": {
+          "value": "Cr・Ptの早期結晶と集積",
+          "verdict": "代表的条件で適切",
+          "reason": "苦鉄質～超苦鉄質のマグマ系でクロム・白金族等が濃集する代表的な正マグマ鉱床。全鉱体が厳密に下部だけという意味ではない。"
+        },
+        "3": {
+          "value": "黒鉱を東北の緑色片岩中とする",
+          "verdict": "不適切",
+          "reason": "グリーンタフ地域の海底火山熱水に伴う黒鉱と、緑色片岩という変成岩を交換している。"
+        },
+        "4": {
+          "value": "海底熱水鉱が変成した層状含銅硫化鉄鉱",
+          "verdict": "代表的条件で適切",
+          "reason": "海洋地殻上の熱水性硫化物が付加・沈み込みと変成を経る別子型等の代表モデル。"
+        },
+        "5": {
+          "value": "炭酸塩との反応でCaケイ酸塩を作るスカルン",
+          "verdict": "代表的条件で適切",
+          "reason": "熱水による化学的交代で形成される。単なる熱だけの再結晶と分ける。"
+        }
+      },
+      "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_009.png"
+      ],
+      "core_concept": "正マグマ・黒鉱・別子型・スカルンの産状を比較する。",
+      "required_knowledge": "原典3の黒鉱の母岩が誤りで、緑色片岩ではなく代表的には中新世グリーンタフ地域である。2は正マグマ、4は変成を経た海底硫化物、5は炭酸塩岩の化学交代であり、同じ金属資源でも生成機構を別々に読む。",
+      "solution": "原典3の黒鉱の母岩が誤りで、緑色片岩ではなく代表的には中新世グリーンタフ地域である。2は正マグマ、4は変成を経た海底硫化物、5は炭酸塩岩の化学交代であり、同じ金属資源でも生成機構を別々に読む。",
+      "answer_reason": "原典3の黒鉱の母岩が誤りで、緑色片岩ではなく代表的には中新世グリーンタフ地域である。2は正マグマ、4は変成を経た海底硫化物、5は炭酸塩岩の化学交代であり、同じ金属資源でも生成機構を別々に読む。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回JSONを不変で保持。緑色片岩の誤り",
+      "learning_points": "地質環境・生成機構・物質の名称を対応させ、平均値と全称、典型例と例外、当時の分類と現在の知見を分ける。",
+      "theory_references": [
+        "theory:ore:origins"
+      ],
+      "discipline_id": "geo_resources",
+      "concept_id": "ore50_origins",
+      "cross_concepts": [],
+      "classification_reason": "全原典候補から主題を確認：正マグマ・黒鉱・別子型・スカルンの産状を比較する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "生成機構を名称と対応させ、条件と代表例の適用範囲を確認する。"
+      },
+      "citations": [
+        "ore50_kuroko_ref",
+        "ore50_porphyry_ref",
+        "ore50_skarn_ref",
+        "ore50_magmatic_ref",
+        "ore50_besshi_ref",
+        "ore50_besshi_ref"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

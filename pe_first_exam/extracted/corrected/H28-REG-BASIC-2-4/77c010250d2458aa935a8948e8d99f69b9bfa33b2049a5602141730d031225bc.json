@@ -1,0 +1,46 @@
+{
+  "stem": "ヒット率95%のキャッシュと主記憶の平均アクセス時間に最近の値を求める。",
+  "conditions": {
+    "ヒット総時間": "1.00ns",
+    "主記憶時間": "100ns",
+    "ヒット率": "0.95"
+  },
+  "choices": {
+    "1": {
+      "value": "0.05ns",
+      "verdict": "不適切",
+      "reason": "ミス率0.05という無次元数だけであり、アクセス時間になっていない。"
+    },
+    "2": {
+      "value": "0.95ns",
+      "verdict": "不適切",
+      "reason": "ヒット側0.95×1だけでミス側を忘れている。"
+    },
+    "3": {
+      "value": "5.00ns",
+      "verdict": "不適切",
+      "reason": "ミス側0.05×100だけでヒット側を忘れている。"
+    },
+    "4": {
+      "value": "5.95ns",
+      "verdict": "適切",
+      "reason": "ヒット/ミスの総時間を1/100nsとするモデルでは0.95+5=5.95ns。"
+    },
+    "5": {
+      "value": "95.0ns",
+      "verdict": "不適切",
+      "reason": "ヒット率を遅い主記憶に掛けており条件付き時間の対応が逆。"
+    }
+  },
+  "figures": "問題幹・全5肢・数値・単位・否定を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/basic/page_010.png"
+  ],
+  "question_id": "H28-REG-BASIC-2-4",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "10",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "f69195382e96b6b2c2b0474b7d0a693e5be1db2fbc1ae0daa49c12911df73006",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

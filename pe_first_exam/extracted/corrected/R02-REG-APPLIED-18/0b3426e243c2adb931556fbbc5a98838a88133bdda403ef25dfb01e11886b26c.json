@@ -1,0 +1,45 @@
+{
+  "stem": "骨格・立体・共鳴・酸性を分けて有機分子を比較する。",
+  "conditions": {
+    "判断対象": "骨格・立体・共鳴・酸性を分けて有機分子を比較する。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "過酸化ベンゾイル加熱でラジカル",
+      "verdict": "選ばない候補",
+      "reason": "O-O結合の均等開裂でラジカルを作る。"
+    },
+    "2": {
+      "value": "1,2ジメチルシクロプロパンにcis/trans",
+      "verdict": "選ばない候補",
+      "reason": "小環の同じ側と反対側の置換を回転だけでは重ねられず区別できる。"
+    },
+    "3": {
+      "value": "メチルシクロヘキサンに鏡像異性体",
+      "verdict": "選ぶ候補",
+      "reason": "メチル付炭素から環の左右へ進む結合経路が等価で、不斉中心にならない。椅子形の配座異性とは別。"
+    },
+    "4": {
+      "value": "アセチレンはエチレンより酸性",
+      "verdict": "選ばない候補",
+      "reason": "sp炭素のs性50%はsp2の33%より高く、共役塩基を安定化する。"
+    },
+    "5": {
+      "value": "ベンゼンは共鳴混成体",
+      "verdict": "選ばない候補",
+      "reason": "局在した二つの式は表現で、実分子の環へπ電子が非局在。混合物ではない。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_006.png"
+  ],
+  "question_id": "R02-REG-APPLIED-18",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "db578a8d6a23562199378067960a2011fc5724bc93332e1fec555f0e5a230c2c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "SP鉱体異常の符号と電気・弾性波探査を比較する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "SPは基準点に対する電位差であり、典型的な硫化鉱体上の負異常を考える。"
+  },
+  "choices": {
+    "1": {
+      "value": "鉱体があると地表電位が周囲より高い",
+      "verdict": "不適切",
+      "reason": "典型的な硫化鉱体探査は負の電位異常を利用し、周囲より高いという説明は逆である。酸化還元や流動の機構を特定する。"
+    },
+    "2": {
+      "value": "比抵抗垂直探査は電極間隔を広げ深さ分布を推定",
+      "verdict": "適切",
+      "reason": "配置間隔を変えて深度感度を変え、水平多層等のモデルを推定する。"
+    },
+    "3": {
+      "value": "AMTは自然磁場と地電流で深部比抵抗を推定",
+      "verdict": "条件付きで適切",
+      "reason": "電場磁場の周波数応答で表層レーダより深い領域へ感度を持つ。実深度は周波数・抵抗率・信号品質による。"
+    },
+    "4": {
+      "value": "弾性波tomographyは周囲の起振受振で伝播特性を画像化",
+      "verdict": "適切",
+      "reason": "多数経路走時などの逆解析で速度分布を求め、覆いの不足は分解能を制限する。"
+    },
+    "5": {
+      "value": "ダウンホールで地表起振・孔内受振の初動走時を測る",
+      "verdict": "適切",
+      "reason": "孔壁に結合した受振器の位置と走時から区間速度を推定する。経路と屈折の補正が必要である。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "SPの負異常は典型的鉱化機構と基準点による。AMTの深部は相対表現であり一定深度を保証しない。",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_009.png"
+  ],
+  "question_id": "H28-REG-APPLIED-22",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "942fe44bceef3ee06bdd1d8c5c948c72039561ca726593775430ab33410e31b9",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

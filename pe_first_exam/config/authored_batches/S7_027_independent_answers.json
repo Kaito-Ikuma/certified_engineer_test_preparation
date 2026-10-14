@@ -1,0 +1,92 @@
+{
+  "recorded_at": "2026-10-11T19:43:58+09:00",
+  "official_consulted": false,
+  "source_images_checked": 16,
+  "questions": [
+    {
+      "question_id": "H24-REG-BASIC-1-2",
+      "independent_answer": "5",
+      "reason": "高不静定の部分限界、破壊後非線形。ただし部材未破壊だけで全安全とはしない。"
+    },
+    {
+      "question_id": "H25-REG-BASIC-1-2",
+      "independent_answer": "5",
+      "reason": "引張/圧縮/座屈/安全率。"
+    },
+    {
+      "question_id": "H28-REG-BASIC-1-3",
+      "independent_answer": "4",
+      "reason": "同概念、配列変更で4。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-1-4",
+      "independent_answer": "5",
+      "reason": "伸び/弾性/塑性/引張強さ。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-1-6",
+      "independent_answer": "2",
+      "reason": "独立なら0.2×0.1×三角形面積2=.04。独立条件未記載で一般には決まらない。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-1-4",
+      "independent_answer": "5",
+      "reason": "小/越す/曲げ/座屈。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-1-5",
+      "independent_answer": "2",
+      "reason": "C=90/(1+4x)+10x、1+4x=6、x=1.25。"
+    },
+    {
+      "question_id": "R02-REG-BASIC-1-3",
+      "independent_answer": "3",
+      "reason": "誤誤正正正。エの破断強度と圧壊の用語精度は限定。"
+    },
+    {
+      "question_id": "R03-REG-BASIC-1-5",
+      "independent_answer": "5",
+      "reason": "Eulerπ²EI/L²、誤正誤誤。"
+    },
+    {
+      "question_id": "R04-REG-BASIC-1-1",
+      "independent_answer": "1",
+      "reason": "引張/高温/小E/応力集中大。D全形状全荷重の全称には限定。"
+    },
+    {
+      "question_id": "R04-REG-BASIC-1-4",
+      "independent_answer": "1",
+      "reason": "C=9/(1+x)+x、1+x=3、x=2。"
+    },
+    {
+      "question_id": "R04-REG-BASIC-1-5",
+      "independent_answer": "3",
+      "reason": "円σd^-3 δd^-4、矩形σh^-2。荷重/長さ/幅一定前提。"
+    },
+    {
+      "question_id": "R05-REG-BASIC-1-1",
+      "independent_answer": "5",
+      "reason": "比強度σ/ρ、CFRP高、価格/比強度比10.8017→10。"
+    },
+    {
+      "question_id": "R05-REG-BASIC-1-2",
+      "independent_answer": "4",
+      "reason": "小/越す/曲げ/座屈。"
+    },
+    {
+      "question_id": "R05-REG-BASIC-1-3",
+      "independent_answer": "3",
+      "reason": "伸び/弾性/塑性/公称最大引張強さ。"
+    },
+    {
+      "question_id": "R06-REG-BASIC-1-2",
+      "independent_answer": "2",
+      "reason": "使用/疲労/終局。"
+    },
+    {
+      "question_id": "R06-REG-BASIC-1-3",
+      "independent_answer": "1",
+      "reason": "円σd^-3 δd^-4。荷重長さE一定。"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "岩盤強度の直接試験と間接指標、圧密降伏を比較する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "岩石試験片の破壊強度と、割れ目を含む岩盤の状態及び土の圧密履歴を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "ハンマー打診音",
+      "verdict": "条件付きで適切",
+      "reason": "硬さ・風化・割れ目等の現地判別に用いるが、定量強度の直接測定ではなく観察者と条件に依存する。"
+    },
+    "2": {
+      "value": "一軸圧縮強度",
+      "verdict": "適切",
+      "reason": "試験片を側方無拘束で圧縮破壊させた最大応力であり、岩片材料の強度を直接評価する。岩盤の弱面は別である。"
+    },
+    "3": {
+      "value": "圧密降伏応力",
+      "verdict": "不適切",
+      "reason": "通常の土の圧密・応力履歴の指標であり、岩盤強度特性の比較では相対的に関係が薄い。弱岩の圧縮降伏との関連は否定しない。"
+    },
+    "4": {
+      "value": "RQD",
+      "verdict": "条件付きで適切",
+      "reason": "健全コアの所定長さ割合により割れ目による岩盤状態を表す。長さ品質指標そのものが一軸強度ではない。"
+    },
+    "5": {
+      "value": "弾性波速度",
+      "verdict": "条件付きで適切",
+      "reason": "弾性率、密度、割れ目、含水と関係し岩盤評価に使う。破壊強度との一意換算ではない。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "岩盤評価の相対比較である。RQD・打診・波速から強度を一意に決めず、弱岩の圧縮降伏の例外を保持。",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_009.png"
+  ],
+  "question_id": "R01-RET-APPLIED-27",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "c9b51e547fc5e8ab5d6cacb3de0e75dc284ae2b4d65e6fbd8f78c02e00279481",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

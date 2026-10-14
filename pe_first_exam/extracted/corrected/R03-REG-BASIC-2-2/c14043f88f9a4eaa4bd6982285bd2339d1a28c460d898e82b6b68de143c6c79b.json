@@ -1,0 +1,44 @@
+{
+  "stem": "入力が等しい2行の和を否定した式に等価な候補を選ぶ。",
+  "conditions": {
+    "対象式": "\\(\\overline{\\overline A\\overline B+AB}\\)"
+  },
+  "choices": {
+    "1": {
+      "value": "\\((A+B)\\overline{(A+B)}\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "命題とその否定の積で常に0である。"
+    },
+    "2": {
+      "value": "\\((A+B)(\\overline A+\\overline B)\\)",
+      "verdict": "条件に一致する候補",
+      "reason": "入力の少なくとも一方が1、かつ少なくとも一方が0という条件でありXORを表す。"
+    },
+    "3": {
+      "value": "\\((AB)(\\overline A\\overline B)\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "Aと否定Aが同時に必要となり常に0である。"
+    },
+    "4": {
+      "value": "\\((AB)\\overline{(AB)}\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "ABとその否定の積で常に0である。"
+    },
+    "5": {
+      "value": "\\((A+B)+(\\overline A+\\overline B)\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "A又は否定Aが含まれ常に1となり、00・11での指定出力0と異なる。"
+    }
+  },
+  "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/basic/page_006.png"
+  ],
+  "question_id": "R03-REG-BASIC-2-2",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "7e484e9b1318dc7ef90f3592380c602ff2f83480ad4bd702af25603365994321",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

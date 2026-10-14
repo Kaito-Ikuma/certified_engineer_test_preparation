@@ -1,0 +1,44 @@
+{
+  "stem": "地衡風、境界層、海陸風、ENSO、ロスビー波を時間・空間規模から比較する。",
+  "conditions": {
+    "方向": "最も不適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "地衡風は傾度力とコリオリ力が釣り合い等圧線沿い。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "摩擦が小さく加速度が相対的に小さい回転流の近似である。"
+    },
+    "2": {
+      "value": "地表から約1kmの乱流支配層は大気境界層。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "地表の摩擦・熱・水蒸気の交換が強く影響する層の代表厚さ。固定で1kmに鋭い境界があるとはしない。"
+    },
+    "3": {
+      "value": "海陸風は温度差による日変化の局地風。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "海と陸の加熱・冷却の差が水平気圧勾配を作る。"
+    },
+    "4": {
+      "value": "南方振動は熱帯太平洋の気圧の数十年規模東西振動。",
+      "verdict": "不適切",
+      "reason": "ENSOに伴う南方振動は数年規模で、数十年規模の変動とは区別する。"
+    },
+    "5": {
+      "value": "中緯度偏西風帯の波動はロスビー波。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "コリオリ係数の緯度変化が復元性を与える惑星波。中緯度の擾乱と熱輸送に関わる。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_007.png"
+  ],
+  "question_id": "H29-REG-APPLIED-21",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "8a144b1719d36149d53c74e9bc52c5d5eb6b95e40ecb7835864a0d165f6f7047",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

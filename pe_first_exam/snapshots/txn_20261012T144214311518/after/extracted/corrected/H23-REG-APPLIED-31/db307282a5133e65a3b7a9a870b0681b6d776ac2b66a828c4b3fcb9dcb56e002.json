@@ -1,0 +1,45 @@
+{
+  "stem": "孔内速度・電気・密度検層の水位条件を比較する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "速度検層は弾性波、電極検層は比抵抗、ガンマ密度検層は校正かさ密度である。"
+  },
+  "choices": {
+    "1": {
+      "value": "VSPで孔内に振源又は受振器を設置し反射波を測る",
+      "verdict": "条件付きで適切",
+      "reason": "通常の地表振源・孔内受振と逆VSPなどの構成を区別する。孔内深度と反射記録を結び地表反射探査の解釈を助ける。"
+    },
+    "2": {
+      "value": "ダウンホールは孔内水位以深だけに適用可能",
+      "verdict": "不適切",
+      "reason": "孔壁へ固定・密着した受振器なら水位のない部分でも測定できる。孔内水位以深だけという限定が誤りである。"
+    },
+    "3": {
+      "value": "サスペンションで孔内振源と複数受振器を用いる",
+      "verdict": "適切",
+      "reason": "孔内ゾンデの起振と受振点間の走時差により、孔軸に沿う地盤の区間速度を求める。水中のS波伝播を直接測るという意味ではない。"
+    },
+    "4": {
+      "value": "電極検層は孔内と地表の電極で比抵抗を測り裸孔を基本とする",
+      "verdict": "条件付きで適切",
+      "reason": "通常のnormal電極検層では導電孔内流体を介して地層へ電流を流す。金属ケーシングの影響を避ける。誘導検層等の別方式へこの条件をそのまま一般化しない。"
+    },
+    "5": {
+      "value": "ガンマ線散乱で孔壁周辺の密度を測り孔隙率を推定する",
+      "verdict": "適切",
+      "reason": "主にCompton散乱に関わる電子密度を校正してかさ密度を求める。粒子と流体の密度が既知なら孔隙率を推定できる。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "VSPの振源又は受振器は通常型と逆配置を含む。裸孔条件は電極検層の基本条件であり全検層へ拡張しない。",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_010.png"
+  ],
+  "question_id": "H23-REG-APPLIED-31",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "0f6556c513b3f275be2768c3d3ce55760f2ae7d6f2fdab72114e5d34bff7db4d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

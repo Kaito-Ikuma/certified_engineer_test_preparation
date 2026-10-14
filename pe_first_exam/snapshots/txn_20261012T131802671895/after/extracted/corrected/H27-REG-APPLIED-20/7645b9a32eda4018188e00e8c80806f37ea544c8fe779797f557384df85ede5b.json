@@ -1,0 +1,45 @@
+{
+  "stem": "重合回数・コヒーレンス・標本化・帯域通過・FFTを比較する。",
+  "conditions": {
+    "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+    "前提": "振幅S/N、周波数ごとの二信号の関係、理想フィルタを区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "スタックのS/Nが回数Nに比例する",
+      "verdict": "不適切",
+      "reason": "信号はN倍、雑音の振幅尺度は平方根N倍なので振幅S/Nは平方根N倍である。電力比ならN倍となるため比の定義を明示する。"
+    },
+    "2": {
+      "value": "コヒーレンスは二つの時系列の周波数ごとの類似を示す相関係数である",
+      "verdict": "適切",
+      "reason": "周波数別の結び付きであり、代表的な二乗コヒーレンスは相互スペクトルの絶対値二乗を自己スペクトルの積で割る。時間領域の遅れ別相関そのものとは区別する。"
+    },
+    "3": {
+      "value": "最高周波数の二倍以上で標本化すれば完全復元できる",
+      "verdict": "条件付きで適切",
+      "reason": "帯域制限・理想的標本と再構成を想定した説明である。最高周波数成分を含む場合の等号端点、量子化、有限長、雑音を無視できない。安全な条件はfs>2fmaxであり、境界では位相によって標本が全てゼロとなる例がある。"
+    },
+    "4": {
+      "value": "帯域通過は設定帯域を減衰させず、それ以外を遮断する",
+      "verdict": "条件付きで適切",
+      "reason": "理想帯域通過の定義として読む。実際の設計では通過帯域のリップル、遷移帯域、有限減衰を持つため完全遮断を一般保証しない。"
+    },
+    "5": {
+      "value": "FFTは二のべき乗の標本数で効率的である",
+      "verdict": "適切",
+      "reason": "radix-2では段数がlog2Nとなる。二のべき乗でなければ計算不能という意味ではなく、混合基数やBluestein法もある。"
+    }
+  },
+  "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+  "ambiguity": "S/Nの振幅・電力定義が省略される。標本化の等号端点と完全復元、理想帯域通過の実装上の限界を区別する。",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_007.png"
+  ],
+  "question_id": "H27-REG-APPLIED-20",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "5573ea90d3ddb0dda26f0c5d8e7c9a6dfef8cce940ece8f2434ab5c79c6d877c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

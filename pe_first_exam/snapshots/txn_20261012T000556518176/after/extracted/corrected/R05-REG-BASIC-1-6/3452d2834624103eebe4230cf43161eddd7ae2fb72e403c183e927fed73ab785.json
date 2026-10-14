@@ -1,0 +1,46 @@
+{
+  "stem": "ピアソン相関の線形性、端点、独立性、決定係数、因果の関係を区別する。",
+  "conditions": {
+    "判断方向": "最も適切な記述又は組合せを選ぶ",
+    "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+    "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+  },
+  "choices": {
+    "1": {
+      "value": "相関は常に-1<r<1",
+      "verdict": "不適切",
+      "reason": "完全な線形関係ではr=±1を取り得るため、厳密不等号で端点を除外できない。"
+    },
+    "2": {
+      "value": "rが0から1へ近づくほど直線関係になる",
+      "verdict": "適切",
+      "reason": "正の相関が1へ近づくほど、正傾斜の直線の周りに集まる程度が強まるという意味である。"
+    },
+    "3": {
+      "value": "r=0なら独立",
+      "verdict": "不適切",
+      "reason": "無相関は独立を含意しない。対称なXとY=X²では相関が0でもYはXに依存する。"
+    },
+    "4": {
+      "value": "決定係数は|r|",
+      "verdict": "不適切",
+      "reason": "切片あり一説明変数の最小二乗回帰ではR²=r²であり、|r|ではない。"
+    },
+    "5": {
+      "value": "相関絶対値で因果が変わる",
+      "verdict": "不適切",
+      "reason": "相関は線形関連の強さを表し、共通原因などの交絡があるため、因果の有無や方向を決めない。"
+    }
+  },
+  "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_004.png"
+  ],
+  "question_id": "R05-REG-BASIC-1-6",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "4",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "eb1bd40e6e96f587d4c1f7cb3e215e81099469239641c7e4fb6c0f97f02a6794",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

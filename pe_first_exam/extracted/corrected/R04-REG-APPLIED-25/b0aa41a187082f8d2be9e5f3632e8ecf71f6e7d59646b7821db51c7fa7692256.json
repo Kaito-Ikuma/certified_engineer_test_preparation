@@ -1,0 +1,45 @@
+{
+  "stem": "白亜紀試料に対し、放射性時計の時間範囲が短すぎる方法を選ぶ。",
+  "conditions": {
+    "対象": "白亜紀の地質試料。具体的鉱物は指定されていない。",
+    "方向": "測定方法として最も不適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "U-Pb法",
+      "verdict": "適切（条件付き）",
+      "reason": "白亜紀ジルコン等でU→Pbの二系列を使える。鉱物選択と初生Pb、Pb損失、継承核を検査する。"
+    },
+    "2": {
+      "value": "K-Ar法",
+      "verdict": "適切（条件付き）",
+      "reason": "40Kの長い半減期と蓄積した放射起源40Arを使う。K含有鉱物を含む適切な岩石を選び、Ar損失や過剰Arを検査する。"
+    },
+    "3": {
+      "value": "14C法",
+      "verdict": "不適切",
+      "reason": "白亜紀の数千万〜億年の時間は、約5730年という半減期を何千回も超える。測定可能な14Cは背景・汚染に支配され、直接年代時計として不適切。"
+    },
+    "4": {
+      "value": "Rb-Sr法",
+      "verdict": "適切（条件付き）",
+      "reason": "87Rb→87Srの比と複数の同源試料により初生Srを分ける。白亜紀の時間自体は適用候補だが、あらゆる試料に使えるとはしない。"
+    },
+    "5": {
+      "value": "フィッション・トラック法",
+      "verdict": "適切（条件付き）",
+      "reason": "アパタイト・ジルコン等で238U自発核分裂の損傷を測る。白亜紀の冷却・熱履歴を測れるが、形成年代と必ず一致するとはしない。"
+    }
+  },
+  "figures": "問題幹・5肢・否定・質量数・δ記号・標準名称・年度番号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_009.png"
+  ],
+  "question_id": "R04-REG-APPLIED-25",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "db222dbbf46880d5c0a5d418c1c750288945e46d77ec6d91435f93e2ebfe88e8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

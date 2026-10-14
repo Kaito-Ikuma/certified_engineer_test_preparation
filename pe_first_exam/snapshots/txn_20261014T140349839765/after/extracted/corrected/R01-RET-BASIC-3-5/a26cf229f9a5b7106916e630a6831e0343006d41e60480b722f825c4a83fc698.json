@@ -1,0 +1,45 @@
+{
+  "stem": "通常の熱伝導と機械的振動を区別。",
+  "conditions": {
+    "問": "最も適切な記述。",
+    "熱": "通常の伝導を扱う原典のモデル。"
+  },
+  "choices": {
+    "1": {
+      "value": "振動数は材料特性だけで定まる",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 通常の熱伝導の自由応答は振動しない と異なる。"
+    },
+    "2": {
+      "value": "気柱の境界は振動数に影響しない",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 通常の熱伝導の自由応答は振動しない と異なる。"
+    },
+    "3": {
+      "value": "振子の振動数は質量平方根に反比例",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 通常の熱伝導の自由応答は振動しない と異なる。"
+    },
+    "4": {
+      "value": "通常の熱伝導の自由応答は振動しない",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "5": {
+      "value": "薄板には一つのモードだけ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 通常の熱伝導の自由応答は振動しない と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "時間一階微分だけでは非振動性を証明できない。一階の連立回転方程式は振動し得る。正の拡散係数とLaplacianの固有値を含む通常モデルとして限定して査読する。",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_012.png"
+  ],
+  "question_id": "R01-RET-BASIC-3-5",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "12",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "2e0474a819aac3b5db24ff6ae856eee3c907db3502985e71e4868d43e9e3f6df",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

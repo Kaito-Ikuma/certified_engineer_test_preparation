@@ -1,0 +1,45 @@
+{
+  "stem": "黒鉱の鉱物・海底熱水成因と母岩を比較する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "黒鉱の鉱物・海底熱水成因と母岩を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "ZnS・PbS・重晶石等の黒色塊状鉱",
+      "verdict": "代表的条件で適切",
+      "reason": "黒鉱の代表組合せは閃亜鉛鉱・方鉛鉱・黄鉄鉱・重晶石等。四面銅鉱等の副成分もある。"
+    },
+    "2": {
+      "value": "珪長質海底火山に関係",
+      "verdict": "代表的条件で適切",
+      "reason": "火山性塊状硫化物鉱床の一型で、海底熱水活動による鉱化を考える。"
+    },
+    "3": {
+      "value": "日本のグリーンタフ・西黒沢期",
+      "verdict": "条件・解釈を留保",
+      "reason": "東北日本の中新世グリーンタフ地域と秋田県北部は代表産地。限られるという厳密な年代全称は当時の分類と例外の照合が残る。"
+    },
+    "4": {
+      "value": "単なる火成岩周辺の再結晶",
+      "verdict": "不適切",
+      "reason": "これは接触変成の要点で、金属を運ぶ熱水の沈殿による黒鉱成因を説明しない。"
+    },
+    "5": {
+      "value": "キプロス型よりPb・Znに富む",
+      "verdict": "代表的条件で適切",
+      "reason": "珪長質に関係する黒鉱型と苦鉄質海洋地殻に関係するキプロス型の代表的組成差。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "原典の生成年代を西黒沢期に限る全称と全鉱物組合せの例外は追加照合。代表地域の記録を全黒鉱の唯一の産状へ一般化しない。",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_012.png"
+  ],
+  "question_id": "H26-REG-APPLIED-29",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "e95a5cf6374114df67a7ced534eef3d012857557686f18e9ec28e52322321fdc",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

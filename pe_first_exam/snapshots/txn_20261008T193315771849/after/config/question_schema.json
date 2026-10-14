@@ -1,0 +1,526 @@
+{
+  "version": "1.0-review1",
+  "primary_key": "question_id",
+  "encoding": "UTF-8 with BOM",
+  "status": "active_registration_and_draft",
+  "canonical_table": "data/questions.csv",
+  "fields": [
+    {
+      "name": "question_id",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "year",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "era_year",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "exam_session",
+      "type": "string",
+      "empty_allowed": false,
+      "allowed_values": [
+        "REG",
+        "RET"
+      ]
+    },
+    {
+      "name": "subject",
+      "type": "string",
+      "empty_allowed": false,
+      "allowed_values": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ]
+    },
+    {
+      "name": "question_number",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "source_file",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "source_page",
+      "type": "integer_string",
+      "empty_allowed": false,
+      "minimum": 1
+    },
+    {
+      "name": "major_category",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "middle_category",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "minor_category",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "topic",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "subtopic",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "question_type",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "requires_calculation",
+      "type": "tri_state",
+      "empty_allowed": false,
+      "allowed_values": [
+        "true",
+        "false",
+        "unknown"
+      ]
+    },
+    {
+      "name": "requires_figure",
+      "type": "tri_state",
+      "empty_allowed": false,
+      "allowed_values": [
+        "true",
+        "false",
+        "unknown"
+      ]
+    },
+    {
+      "name": "requires_law",
+      "type": "tri_state",
+      "empty_allowed": false,
+      "allowed_values": [
+        "true",
+        "false",
+        "unknown"
+      ]
+    },
+    {
+      "name": "difficulty",
+      "type": "optional_integer_string",
+      "empty_allowed": true,
+      "allowed_values": [
+        "",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5"
+      ]
+    },
+    {
+      "name": "priority",
+      "type": "string",
+      "empty_allowed": true,
+      "allowed_values": [
+        "",
+        "S",
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "name": "official_answer",
+      "type": "string",
+      "empty_allowed": false,
+      "pattern": "[1-5](\\|[1-5])*|ALL"
+    },
+    {
+      "name": "answer_verified",
+      "type": "boolean_literal",
+      "empty_allowed": false,
+      "allowed_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "name": "question_summary",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "core_concept",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "required_knowledge",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "solution_summary",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "wrong_choice_summary",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "related_question_ids",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "tex_label",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "tex_file",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "status",
+      "type": "string",
+      "empty_allowed": false,
+      "allowed_values": [
+        "registered_initial",
+        "classified_initial",
+        "corrected",
+        "draft_written",
+        "explained_verified"
+      ]
+    },
+    {
+      "name": "needs_manual_verification",
+      "type": "boolean_literal",
+      "empty_allowed": false,
+      "allowed_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "name": "notes",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "astra_review_required",
+      "type": "boolean_literal",
+      "empty_allowed": false,
+      "allowed_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "name": "source_year_directory",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "source_page_end",
+      "type": "integer_string",
+      "empty_allowed": false,
+      "minimum": 1
+    },
+    {
+      "name": "printed_question_number",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "heading_text",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "heading_line_index",
+      "type": "integer_string",
+      "empty_allowed": false,
+      "minimum": 0
+    },
+    {
+      "name": "heading_bbox",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "boundary_verified",
+      "type": "boolean_literal",
+      "empty_allowed": false,
+      "allowed_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "name": "question_text_file",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "extraction_method",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "ocr_min_confidence",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "summary_verified",
+      "type": "boolean_literal",
+      "empty_allowed": false,
+      "allowed_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "name": "answer_kind",
+      "type": "string",
+      "empty_allowed": true,
+      "allowed_values": [
+        "single",
+        "multiple_accepted",
+        "all_awarded",
+        "official_note_required"
+      ]
+    },
+    {
+      "name": "answer_source_file",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "answer_source_page",
+      "type": "integer_string",
+      "empty_allowed": true,
+      "minimum": 1
+    },
+    {
+      "name": "classification_method",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "classification_confidence",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "classification_verified",
+      "type": "boolean_literal",
+      "empty_allowed": false,
+      "allowed_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "name": "source_sha256",
+      "type": "string",
+      "empty_allowed": false,
+      "pattern": "[a-f0-9]{64}"
+    },
+    {
+      "name": "raw_text_sha256",
+      "type": "string",
+      "empty_allowed": false,
+      "pattern": "[a-f0-9]{64}"
+    },
+    {
+      "name": "end_line_index",
+      "type": "integer_string",
+      "empty_allowed": false,
+      "minimum": 0
+    },
+    {
+      "name": "end_bbox",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "printed_number_observed",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "printed_number_expected",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "extraction_revision",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "summary_status",
+      "type": "string",
+      "empty_allowed": false,
+      "allowed_values": [
+        "placeholder",
+        "draft",
+        "verified",
+        "stale",
+        "pending"
+      ]
+    },
+    {
+      "name": "discipline_id",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "chapter_id",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "concept_id",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "classification_evidence",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "classification_candidates",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "taxonomy_version",
+      "type": "string",
+      "empty_allowed": false
+    },
+    {
+      "name": "topic_verified",
+      "type": "string",
+      "empty_allowed": false,
+      "allowed_values": [
+        "true",
+        "false"
+      ]
+    },
+    {
+      "name": "corrected_content_sha256",
+      "type": "string",
+      "empty_allowed": true,
+      "pattern": "[a-f0-9]{64}"
+    },
+    {
+      "name": "correction_status",
+      "type": "string",
+      "empty_allowed": false,
+      "allowed_values": [
+        "pending",
+        "partial",
+        "verified",
+        "stale"
+      ]
+    },
+    {
+      "name": "official_group",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "corrected_content_file",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "solution_review_status",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "source_reference_date",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "explanation_reference_date",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "explanation_citations",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "choice_reviews",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "answer_reason",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "learning_points",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "theory_references",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "authoring_batch",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "independent_answer",
+      "type": "string",
+      "empty_allowed": true
+    },
+    {
+      "name": "independent_solution_status",
+      "type": "string",
+      "empty_allowed": true
+    }
+  ],
+  "validator": "scripts/validate_schema.py",
+  "final_audit": "not_implemented",
+  "foreign_keys": {
+    "source_file": "source_files.path",
+    "answer_source_file": "source_files.path",
+    "discipline_id": "taxonomy.categories.id",
+    "concept_id": "concepts.concepts.id",
+    "related_question_ids": "questions.question_id"
+  },
+  "state_rules": {
+    "summary_verified": "hash-bound summary record + corrected content",
+    "classification_verified": "hash-bound classification record",
+    "needs_manual_verification_false": "hash-bound correction record",
+    "explained_verified": "correction, summary, solution evidence and nonempty explanations"
+  }
+}

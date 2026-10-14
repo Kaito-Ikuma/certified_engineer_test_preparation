@@ -1,0 +1,28 @@
+{
+  "time": "2026-10-14T14:32:55.253915+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_058_environment_history",
+  "canonical_counts": {
+    "registered": 1270,
+    "solution_drafts": 1210,
+    "corrected_verified": 756,
+    "corrected_partial": 454,
+    "classification_verified": 1219,
+    "manual_required": 514,
+    "subject_drafts": {
+      "BASIC": 410,
+      "APT": 240,
+      "APPLIED": 560
+    }
+  },
+  "source_images_actually_viewed": 21,
+  "source_reviewed_questions": 32,
+  "initial_matches": 32,
+  "new_concepts": 27,
+  "new_references": 13,
+  "pdf_manifest": "extracted/logs/S7_058_build_manifest.json",
+  "checkpoint2_reached": false,
+  "remaining_first_drafts": 60,
+  "next": "環境残り60問、頻度分析、共通理論と表示整理、真のCP2。"
+}

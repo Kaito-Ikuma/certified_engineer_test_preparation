@@ -1,0 +1,45 @@
+{
+  "stem": "年代時計のうち、宇宙線で生成される親核種を使う方法を選ぶ。",
+  "conditions": {
+    "方向": "宇宙線生成核種を利用する方法として最も適切。",
+    "対象": "同位体の標準・分別又は年代。番号・核種・旧標準名称を原典画像で確認。"
+  },
+  "choices": {
+    "1": {
+      "value": "U-Pb法",
+      "verdict": "該当しない",
+      "reason": "自然界の長寿命U核種の壊変を使い、通常の時計のUを宇宙線生成核種とはしない。"
+    },
+    "2": {
+      "value": "Rb-Sr法",
+      "verdict": "該当しない",
+      "reason": "長寿命87Rbの壊変を使い、宇宙線による生成時計ではない。"
+    },
+    "3": {
+      "value": "14C法",
+      "verdict": "該当する",
+      "reason": "大気14Nへ宇宙線の二次中性子が作用して14Cを作る。生物へ入った後の減衰を時計にする。"
+    },
+    "4": {
+      "value": "フィッション・トラック法",
+      "verdict": "該当しない",
+      "reason": "自然Uの自発核分裂の飛跡を使う。飛跡一般には宇宙線損傷もあるが、この年代法の時計はU核分裂。"
+    },
+    "5": {
+      "value": "熱ルミネッセンス法",
+      "verdict": "線量寄与と核種生成が別",
+      "reason": "放射線で生じた捕獲電荷の蓄積を発光として測る。宇宙線の線量寄与はあり得るが、宇宙線で作った核種の壊変比を用いる時計ではない。"
+    }
+  },
+  "figures": "問題幹・5肢・否定・質量数・δ記号・標準名称・年度番号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_010.png"
+  ],
+  "question_id": "H29-REG-APPLIED-30",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "86f343e25bd0a2ff1615f21f31ee3649306da7101929d24679db07f8cc527b7f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

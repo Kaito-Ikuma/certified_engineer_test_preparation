@@ -1,0 +1,45 @@
+{
+  "stem": "表面波のVsと磁気・tomography・地温の感度を比較する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "観測の空間覆い、密度差、温度差と、Rayleigh分散の主Vs感度を考える。"
+  },
+  "choices": {
+    "1": {
+      "value": "地上磁気探査で水平分解能数mの浅部調査",
+      "verdict": "条件付きで適切",
+      "reason": "細かい測点と近い対象で詳細調査が可能である。実分解能は深度、磁化、観測配置、ノイズによる。"
+    },
+    "2": {
+      "value": "Rayleigh波から20m程度までP波速度分布",
+      "verdict": "不適切",
+      "reason": "主推定対象はS波速度Vsである。深度の数値も測定波長・配置に依存する。"
+    },
+    "3": {
+      "value": "地下tomographyの構造像は測定幾何に依存",
+      "verdict": "適切",
+      "reason": "全方向から測れず、覆いのない方向・領域の分解は制限される。"
+    },
+    "4": {
+      "value": "密度差が大きい対象は重力で検出しやすい",
+      "verdict": "条件付きで適切",
+      "reason": "同じ形状・深度・ノイズ条件なら密度差が重力異常を増す。深い小対象との無条件比較ではない。"
+    },
+    "5": {
+      "value": "1m深地温で地熱温泉や地すべり地下水を調査",
+      "verdict": "条件付きで適切",
+      "reason": "流動水と平常地温の温度差を利用する。測温1mと地下水源の深度は別で、適期や地表環境の補正が必要である。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "磁気数m・表面波20mは設定依存、熱探査は温度差と季節・地況による。1mを水脈の上限深度としない。",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_013.png"
+  ],
+  "question_id": "R05-REG-APPLIED-35",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "13",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "d2aeb1c599405790d431ac92c2936cc5ec93bdee51bb00b23688c832dc25dce6",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

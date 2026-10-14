@@ -1,0 +1,34 @@
+{
+  "status": "committed",
+  "time": "2026-10-13T09:06:32+09:00",
+  "paths": [
+    "generated/questions/applied_science/physics_chemistry/05_optics.tex",
+    "generated/questions/applied_science/physics_chemistry/08_physical_chemistry.tex",
+    "generated/questions/applied_science/physics_chemistry/09_inorganic_chemistry.tex",
+    "generated/questions/applied_science/physics_chemistry/10_analytical_chemistry.tex",
+    "generated/questions/applied_science/physics_chemistry/12_organic_polymer.tex",
+    "generated/questions/applied_science/geology/07_hydrogeology.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/physics_chemistry/05_optics.tex": true,
+    "generated/questions/applied_science/physics_chemistry/08_physical_chemistry.tex": true,
+    "generated/questions/applied_science/physics_chemistry/09_inorganic_chemistry.tex": true,
+    "generated/questions/applied_science/physics_chemistry/10_analytical_chemistry.tex": true,
+    "generated/questions/applied_science/physics_chemistry/12_organic_polymer.tex": true,
+    "generated/questions/applied_science/geology/07_hydrogeology.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/physics_chemistry/05_optics.tex": "217d123f6305f793ae8eb280335d4ac5afc304874956c3dfc88da431755e089e",
+    "generated/questions/applied_science/physics_chemistry/08_physical_chemistry.tex": "61ff1175a5c2f46d385d856bced11acc07fde994195c7892cdd2d5478d9c85f0",
+    "generated/questions/applied_science/physics_chemistry/09_inorganic_chemistry.tex": "f21c3c37c0ae91a1516e075cf25f3194e5fa6690ff1992a19643d5fe152ae256",
+    "generated/questions/applied_science/physics_chemistry/10_analytical_chemistry.tex": "bf92edd2d5aa8330bbf1c745eb58b379809a37f6475de91d62db70e7bb8a7ced",
+    "generated/questions/applied_science/physics_chemistry/12_organic_polymer.tex": "48bb8f6b2d04d7ac02253d617871037f036d99770bb27bf0adc03f9ec3218acf",
+    "generated/questions/applied_science/geology/07_hydrogeology.tex": "d5331293c28ff40a0e3d1b86d34a38a80a2b9552f1594761661462e94fed4aea",
+    "generated/audit_summary.tex": "5d17d96b8659db1f6acb3572761c8fa95f73dd85f4be3944ce4d5ed585374c46",
+    "generated/frequency_tables.tex": "f0e9a0c50f8cba505793ac07a03730e5e436ee7d561d472bbd8bc9b096d20d7e"
+  }
+}

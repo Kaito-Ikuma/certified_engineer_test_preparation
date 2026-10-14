@@ -1,0 +1,45 @@
+{
+  "stem": "黒鉱のグリーンタフと緑色片岩を区別する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "黒鉱のグリーンタフと緑色片岩を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "熱水鉱床の形態分類",
+      "verdict": "代表的条件で適切",
+      "reason": "鉱脈、塊状、スカルン、斑岩銅等の代表タイプを区別する。全分類が完全に排他的とはしない。"
+    },
+    "2": {
+      "value": "半深成岩と斑岩銅",
+      "verdict": "代表的条件で適切",
+      "reason": "浅所の斑岩質貫入岩とその熱水系に関係する。"
+    },
+    "3": {
+      "value": "黒鉱が東北の緑色片岩中",
+      "verdict": "不適切",
+      "reason": "黒鉱の代表は中新世グリーンタフの海底火山・火山砕屑岩地域。広域変成の緑色片岩と名称を交換している。"
+    },
+    "4": {
+      "value": "温度によるスカルン金属の傾向",
+      "verdict": "条件・解釈を留保",
+      "reason": "高温段階にW等、後期・遠方の低温段階にPb・Zn等の例がある。金属種を温度だけで一意決定する普遍則ではない。"
+    },
+    "5": {
+      "value": "裂け目を通る熱水の鉱脈",
+      "verdict": "代表的条件で適切",
+      "reason": "流体が運んだ成分が亀裂・断層沿いで沈殿し脈状となる。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "スカルン金属種を高温と中低温だけで固定する原典4の一般化は追加照合。全形態分類の完全排他性も主張しない。",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_008.png"
+  ],
+  "question_id": "R05-REG-APPLIED-23",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "bc6dd8c8e1d6d6f4f6f7d1549e3a67e5f417d3839ee51a6b11ca954592fa1be7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

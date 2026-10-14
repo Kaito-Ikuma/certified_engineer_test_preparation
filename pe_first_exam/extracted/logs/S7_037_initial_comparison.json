@@ -1,0 +1,196 @@
+{
+  "time": "2026-10-12T08:26:44+09:00",
+  "initial_preserved": true,
+  "matches": 21,
+  "records": [
+    {
+      "question_id": "H23-REG-BASIC-3-1",
+      "answer_initial": "2",
+      "official_answer": "2",
+      "match": true,
+      "official_source": "sources/answers/H23_H30_official_answers.pdf",
+      "official_page": "1",
+      "official_sha256": "6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683"
+    },
+    {
+      "question_id": "H23-REG-BASIC-3-3",
+      "answer_initial": "5",
+      "official_answer": "5",
+      "match": true,
+      "official_source": "sources/answers/H23_H30_official_answers.pdf",
+      "official_page": "1",
+      "official_sha256": "6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683"
+    },
+    {
+      "question_id": "H24-REG-BASIC-3-1",
+      "answer_initial": "1",
+      "official_answer": "1",
+      "match": true,
+      "official_source": "sources/answers/H23_H30_official_answers.pdf",
+      "official_page": "23",
+      "official_sha256": "6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683"
+    },
+    {
+      "question_id": "H25-REG-BASIC-3-3",
+      "answer_initial": "1",
+      "official_answer": "1",
+      "match": true,
+      "official_source": "sources/answers/H23_H30_official_answers.pdf",
+      "official_page": "45",
+      "official_sha256": "6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683"
+    },
+    {
+      "question_id": "H26-REG-BASIC-3-2",
+      "answer_initial": "3",
+      "official_answer": "3",
+      "match": true,
+      "official_source": "sources/answers/H23_H30_official_answers.pdf",
+      "official_page": "67",
+      "official_sha256": "6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683"
+    },
+    {
+      "question_id": "H26-REG-BASIC-3-3",
+      "answer_initial": "5",
+      "official_answer": "5",
+      "match": true,
+      "official_source": "sources/answers/H23_H30_official_answers.pdf",
+      "official_page": "67",
+      "official_sha256": "6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683"
+    },
+    {
+      "question_id": "H27-REG-BASIC-3-1",
+      "answer_initial": "2",
+      "official_answer": "2",
+      "match": true,
+      "official_source": "sources/answers/H23_H30_official_answers.pdf",
+      "official_page": "89",
+      "official_sha256": "6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683"
+    },
+    {
+      "question_id": "H27-REG-BASIC-3-3",
+      "answer_initial": "1",
+      "official_answer": "1",
+      "match": true,
+      "official_source": "sources/answers/H23_H30_official_answers.pdf",
+      "official_page": "89",
+      "official_sha256": "6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683"
+    },
+    {
+      "question_id": "H28-REG-BASIC-3-3",
+      "answer_initial": "2",
+      "official_answer": "2",
+      "match": true,
+      "official_source": "sources/answers/H23_H30_official_answers.pdf",
+      "official_page": "111",
+      "official_sha256": "6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683"
+    },
+    {
+      "question_id": "H28-REG-BASIC-3-4",
+      "answer_initial": "5",
+      "official_answer": "5",
+      "match": true,
+      "official_source": "sources/answers/H23_H30_official_answers.pdf",
+      "official_page": "111",
+      "official_sha256": "6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683"
+    },
+    {
+      "question_id": "H29-REG-BASIC-3-3",
+      "answer_initial": "4",
+      "official_answer": "4",
+      "match": true,
+      "official_source": "sources/answers/H23_H30_official_answers.pdf",
+      "official_page": "133",
+      "official_sha256": "6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683"
+    },
+    {
+      "question_id": "H30-REG-BASIC-3-1",
+      "answer_initial": "1",
+      "official_answer": "1",
+      "match": true,
+      "official_source": "sources/answers/H23_H30_official_answers.pdf",
+      "official_page": "155",
+      "official_sha256": "6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683"
+    },
+    {
+      "question_id": "H30-REG-BASIC-3-4",
+      "answer_initial": "2",
+      "official_answer": "2",
+      "match": true,
+      "official_source": "sources/answers/H23_H30_official_answers.pdf",
+      "official_page": "155",
+      "official_sha256": "6c9ab4987ca4de9247a903b62c967baa6475fcb091ef179352400328e7dfc683"
+    },
+    {
+      "question_id": "R01-RET-BASIC-3-3",
+      "answer_initial": "5",
+      "official_answer": "5",
+      "match": true,
+      "official_source": "sources/R01_retest/official_answers.pdf",
+      "official_page": "1",
+      "official_sha256": "35b96947eff7028bfc52cf1da735ecb099e9ab8184404f8cd3487a4344ba480c"
+    },
+    {
+      "question_id": "R02-REG-BASIC-3-3",
+      "answer_initial": "3",
+      "official_answer": "3",
+      "match": true,
+      "official_source": "sources/R02/official_answers.pdf",
+      "official_page": "1",
+      "official_sha256": "e644203b51c66f94ed64226a3c8a7ba9d4aa5ea89f5ff83d03b9755555af51e4"
+    },
+    {
+      "question_id": "R02-REG-BASIC-3-4",
+      "answer_initial": "4",
+      "official_answer": "4",
+      "match": true,
+      "official_source": "sources/R02/official_answers.pdf",
+      "official_page": "1",
+      "official_sha256": "e644203b51c66f94ed64226a3c8a7ba9d4aa5ea89f5ff83d03b9755555af51e4"
+    },
+    {
+      "question_id": "R03-REG-BASIC-3-3",
+      "answer_initial": "1",
+      "official_answer": "1",
+      "match": true,
+      "official_source": "sources/R03/official_answers.pdf",
+      "official_page": "1",
+      "official_sha256": "d106ba663d0d096614617133ff8b080c440028a5cbfef67d7fffbd6c95cdb788"
+    },
+    {
+      "question_id": "R04-REG-BASIC-3-1",
+      "answer_initial": "4",
+      "official_answer": "4",
+      "match": true,
+      "official_source": "sources/R04/official_answers.pdf",
+      "official_page": "1",
+      "official_sha256": "ab8a4eec6917d59f061463bbe0ffc992d031d5f0c8e1f3e14c48a8ba285b7f86"
+    },
+    {
+      "question_id": "R04-REG-BASIC-3-3",
+      "answer_initial": "4",
+      "official_answer": "4",
+      "match": true,
+      "official_source": "sources/R04/official_answers.pdf",
+      "official_page": "1",
+      "official_sha256": "ab8a4eec6917d59f061463bbe0ffc992d031d5f0c8e1f3e14c48a8ba285b7f86"
+    },
+    {
+      "question_id": "R05-REG-BASIC-3-3",
+      "answer_initial": "1",
+      "official_answer": "1",
+      "match": true,
+      "official_source": "sources/R05/official_answers.pdf",
+      "official_page": "1",
+      "official_sha256": "950c64424ab22fe013affd4274f7be9227033b9e6f8162348364d86fa3a7455a"
+    },
+    {
+      "question_id": "R06-REG-BASIC-3-3",
+      "answer_initial": "5",
+      "official_answer": "5",
+      "match": true,
+      "official_source": "sources/R06/official_answers.pdf",
+      "official_page": "1",
+      "official_sha256": "256a6293b49f67f9849172e8cce6ad0219d8573a1b9ed34b322dea1b9dc91b14"
+    }
+  ]
+}

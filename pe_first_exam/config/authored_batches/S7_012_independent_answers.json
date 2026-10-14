@@ -1,0 +1,164 @@
+[
+  {
+    "question_id": "H23-REG-BASIC-4-2",
+    "independent_answer": "1",
+    "reason": "(436+243−2×432)/2=−92.5 kJ/mol;発生熱は+92.5",
+    "source_images_viewed": [
+      "extracted/pages/H23/basic/page_012.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H25-REG-BASIC-4-3",
+    "independent_answer": "4",
+    "reason": "比誘電率/電気抵抗/圧電体/電気抵抗",
+    "source_images_viewed": [
+      "extracted/pages/H25/basic/page_016.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H26-REG-BASIC-4-1",
+    "independent_answer": "1",
+    "reason": "反応エンタルピー−92.5 kJ/mol;原典発熱負",
+    "source_images_viewed": [
+      "extracted/pages/H26/basic/page_013.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H26-REG-BASIC-4-2",
+    "independent_answer": "2",
+    "reason": "モル濃度の分母は溶液体積;水1Lだけでは1mol/Lにならない",
+    "source_images_viewed": [
+      "extracted/pages/H26/basic/page_013.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H27-REG-BASIC-4-1",
+    "independent_answer": "4",
+    "reason": "炭素数/モル質量はC2H4の2/28が最大",
+    "source_images_viewed": [
+      "extracted/pages/H27/basic/page_012.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H27-REG-BASIC-4-2",
+    "independent_answer": "3",
+    "reason": "N+5,Cr+6,Mn+7,N+4,S+6;Mnが最大",
+    "source_images_viewed": [
+      "extracted/pages/H27/basic/page_012.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H28-REG-BASIC-4-2",
+    "independent_answer": "4",
+    "reason": "中性Clの電子17で等しい;CaとArの中性子20/22",
+    "source_images_viewed": [
+      "extracted/pages/H28/basic/page_017.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H30-REG-BASIC-4-1",
+    "independent_answer": "5",
+    "reason": "0.625,.342,.498,CuOなら.503/Cu2Oなら.252,.250 mol;5最小",
+    "source_images_viewed": [
+      "extracted/pages/H30/basic/page_015.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R01-REG-BASIC-4-1",
+    "independent_answer": "4",
+    "reason": "ア誤イ正ウ誤エ正;イエ=4",
+    "source_images_viewed": [
+      "extracted/pages/R01/basic/page_016.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R01-REG-BASIC-4-2",
+    "independent_answer": "5",
+    "reason": "ア誤イ誤ウ正エ正オ正=5",
+    "source_images_viewed": [
+      "extracted/pages/R01/basic/page_016.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R02-REG-BASIC-4-1",
+    "independent_answer": "2",
+    "reason": "C2H4の2/28が最大、順序違いで2",
+    "source_images_viewed": [
+      "extracted/pages/R02/basic/page_015.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R03-REG-BASIC-4-1",
+    "independent_answer": "3",
+    "reason": "ア誤イ誤ウ正エ正オ正=3",
+    "source_images_viewed": [
+      "extracted/pages/R03/basic/page_016.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R04-REG-BASIC-4-2",
+    "independent_answer": "4",
+    "reason": "S−2,Mn単体0,Mn+7,N−3,N+5;4最小",
+    "source_images_viewed": [
+      "extracted/pages/R04/basic/page_014.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R05-REG-BASIC-4-1",
+    "independent_answer": "3",
+    "reason": "中性Cl35/37の電子17同数=3",
+    "source_images_viewed": [
+      "extracted/pages/R05/basic/page_013.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R06-REG-BASIC-4-1",
+    "independent_answer": "1",
+    "reason": "ア正イ正ウ誤エ誤;アイ=1",
+    "source_images_viewed": [
+      "extracted/pages/R06/basic/page_015.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R06-REG-BASIC-4-2",
+    "independent_answer": "3",
+    "reason": "硫酸アンモニウムにSO4²−がある=3",
+    "source_images_viewed": [
+      "extracted/pages/R06/basic/page_015.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R07-REG-BASIC-4-1",
+    "independent_answer": "2",
+    "reason": "S+6,Mn+7,Cr+6,N+5,N+4;2最大",
+    "source_images_viewed": [
+      "extracted/pages/R07/basic/page_013.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R07-REG-BASIC-4-4",
+    "independent_answer": "5",
+    "reason": "100g基準で96.5/118.7,3/107.8,.5/63.5を合計で割る;95.8/3.28/.928=5",
+    "source_images_viewed": [
+      "extracted/pages/R07/basic/page_014.png"
+    ],
+    "official_answer_consulted": false
+  }
+]

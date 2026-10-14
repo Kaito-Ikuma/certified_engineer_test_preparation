@@ -1,0 +1,45 @@
+{
+  "stem": "要求性能・構造計画・構造詳細・照査の順序を選ぶ。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "要求性能・構造計画・構造詳細・照査の順序を選ぶ。"
+  },
+  "choices": {
+    "1": {
+      "value": "合理/使用性能/施工計画/詳細設計",
+      "verdict": "選ばない候補",
+      "reason": "性能対象と構造計画の段階が不一致。"
+    },
+    "2": {
+      "value": "不合理/使用性能/構造計画/構造詳細",
+      "verdict": "選ばない候補",
+      "reason": "合理性を逆にし要求性能を使用性能へ限定。"
+    },
+    "3": {
+      "value": "合理/要求性能/構造計画/構造詳細",
+      "verdict": "選ぶ候補",
+      "reason": "要求を設定し計画後に照査用構造詳細を設定。"
+    },
+    "4": {
+      "value": "不合理/要求性能/施工計画/詳細設計",
+      "verdict": "選ばない候補",
+      "reason": "合理性と計画の対象が不一致。"
+    },
+    "5": {
+      "value": "合理/要求性能/構造計画/詳細設計",
+      "verdict": "選ばない候補",
+      "reason": "詳細設計という工程名で構造詳細という設定情報を置換。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/basic/page_001.png"
+  ],
+  "question_id": "R07-REG-BASIC-1-1",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "1",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "0c26d380ae26a4bcaa0bd581f00e950b5f21a95c2ec46f4d902589ac25a3b44f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

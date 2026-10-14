@@ -1,0 +1,47 @@
+{
+  "stem": "燃焼生成物から元素量を保存して有機化合物を選ぶ。",
+  "conditions": {
+    "試料": "47mg",
+    "CO2": "132mg",
+    "H2O": "27mg",
+    "原子量": "C=12,H=1,O=16"
+  },
+  "choices": {
+    "1": {
+      "value": "トルエン",
+      "verdict": "選ばない候補",
+      "reason": "C7H8の原子数比が導出比に一致しない。"
+    },
+    "2": {
+      "value": "フェノール",
+      "verdict": "選ぶ候補",
+      "reason": "C6H6Oの原子数比が導出比に一致する。"
+    },
+    "3": {
+      "value": "安息香酸",
+      "verdict": "選ばない候補",
+      "reason": "C7H6O2の原子数比が導出比に一致しない。"
+    },
+    "4": {
+      "value": "テレフタル酸",
+      "verdict": "選ばない候補",
+      "reason": "C8H6O4の原子数比が導出比に一致しない。"
+    },
+    "5": {
+      "value": "サリチル酸",
+      "verdict": "選ばない候補",
+      "reason": "C7H6O3の原子数比が導出比に一致しない。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "原典は酸素を含むのに芳香族炭化水素と呼ぶ。炭化水素はC,Hのみで名称に疑義がある。数値と候補は保持し、C,H,O有機化合物として条件付きで解く。",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_004.png"
+  ],
+  "question_id": "R07-REG-APPLIED-12",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "d78633ba5b7fca276709275bee679d70029041d37e2a591971e7fba43e1e3135",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

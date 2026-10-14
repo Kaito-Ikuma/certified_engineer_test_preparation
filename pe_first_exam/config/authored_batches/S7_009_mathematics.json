@@ -1,0 +1,2031 @@
+{
+  "batch_id": "S7_009_mathematics",
+  "reference_date": "2026-10-09",
+  "scope": "基礎解析29問。原典21ページ画像の全式・符号・全5肢を確認。解答と理由を独立作成後に公式と照合。H28ヤコビアンの面積絶対値と領域の不足を部分校正。",
+  "questions": [
+    {
+      "question_id": "H23-REG-BASIC-3-5",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "三次元ベクトル場の指定点における発散を求める。",
+      "summary": "三次元ベクトル場の指定点における発散を求める。",
+      "conditions": {
+        "ベクトル": "\\(V=(\\sin(x+y+z),\\cos(x+y+z),z)\\)",
+        "点": "\\((2\\pi,0,0)\\)",
+        "定義": "\\(\\operatorname{div}V=\\partial_xV_x+\\partial_yV_y+\\partial_zV_z\\)"
+      },
+      "choices": {
+        "1": {
+          "value": "2",
+          "verdict": "条件に一致",
+          "reason": "成分ごとの対応する座標で微分した和2と一致する。"
+        },
+        "2": {
+          "value": "1",
+          "verdict": "条件に不一致",
+          "reason": "発散はcos(2π)−sin(2π)+1=2であり、この値とは一致しない。"
+        },
+        "3": {
+          "value": "0",
+          "verdict": "条件に不一致",
+          "reason": "発散はcos(2π)−sin(2π)+1=2であり、この値とは一致しない。"
+        },
+        "4": {
+          "value": "−1",
+          "verdict": "条件に不一致",
+          "reason": "発散はcos(2π)−sin(2π)+1=2であり、この値とは一致しない。"
+        },
+        "5": {
+          "value": "−2",
+          "verdict": "条件に不一致",
+          "reason": "発散はcos(2π)−sin(2π)+1=2であり、この値とは一致しない。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H23/basic/page_011.png",
+        "extracted/pages/H23/basic/page_012.png"
+      ],
+      "core_concept": "発散は対応成分の偏微分の和",
+      "required_knowledge": "三角関数の偏微分、直交座標、発散のスカラー性。",
+      "solution": "\\(\\operatorname{div}V=\\cos(x+y+z)-\\sin(x+y+z)+1\\)なので指定点では1−0+1=2である。1を選ぶ。先に座標を代入して定数を微分すると空間変化の情報が失われる。",
+      "independent_answer": "1",
+      "answer_reason": "\\(\\operatorname{div}V=\\cos(x+y+z)-\\sin(x+y+z)+1\\)なので指定点では1−0+1=2である。1を選ぶ。先に座標を代入して定数を微分すると空間変化の情報が失われる。",
+      "learning_points": "出力の型と条件を確認し、発散は対応成分の偏微分の和の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:divcurl"
+      ],
+      "discipline_id": "basic_3_9",
+      "concept_id": "concept_022",
+      "classification_reason": "原典画像で全条件と5肢を照合。発散は対応成分の偏微分の和を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [
+        "mit_vectorcalc2005"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-3-1",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "三次元ベクトル場の指定点における発散を求める。",
+      "summary": "三次元ベクトル場の指定点における発散を求める。",
+      "conditions": {
+        "ベクトル": "\\(V=(\\sin(x+y+z),\\cos(x+y+z),z)\\)",
+        "点": "\\((2\\pi,0,0)\\)",
+        "定義": "\\(\\operatorname{div}V=\\partial_xV_x+\\partial_yV_y+\\partial_zV_z\\)"
+      },
+      "choices": {
+        "1": {
+          "value": "−2",
+          "verdict": "条件に不一致",
+          "reason": "発散はcos(2π)−sin(2π)+1=2であり、この値とは一致しない。"
+        },
+        "2": {
+          "value": "−1",
+          "verdict": "条件に不一致",
+          "reason": "発散はcos(2π)−sin(2π)+1=2であり、この値とは一致しない。"
+        },
+        "3": {
+          "value": "0",
+          "verdict": "条件に不一致",
+          "reason": "発散はcos(2π)−sin(2π)+1=2であり、この値とは一致しない。"
+        },
+        "4": {
+          "value": "1",
+          "verdict": "条件に不一致",
+          "reason": "発散はcos(2π)−sin(2π)+1=2であり、この値とは一致しない。"
+        },
+        "5": {
+          "value": "2",
+          "verdict": "条件に一致",
+          "reason": "成分ごとの対応する座標で微分した和2と一致する。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/basic/page_012.png"
+      ],
+      "core_concept": "発散は対応成分の偏微分の和",
+      "required_knowledge": "三角関数の偏微分、直交座標、発散のスカラー性。",
+      "solution": "\\(\\operatorname{div}V=\\cos(x+y+z)-\\sin(x+y+z)+1\\)なので指定点では1−0+1=2である。5を選ぶ。先に座標を代入して定数を微分すると空間変化の情報が失われる。",
+      "independent_answer": "5",
+      "answer_reason": "\\(\\operatorname{div}V=\\cos(x+y+z)-\\sin(x+y+z)+1\\)なので指定点では1−0+1=2である。5を選ぶ。先に座標を代入して定数を微分すると空間変化の情報が失われる。",
+      "learning_points": "出力の型と条件を確認し、発散は対応成分の偏微分の和の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:divcurl"
+      ],
+      "discipline_id": "basic_3_9",
+      "concept_id": "concept_022",
+      "classification_reason": "原典画像で全条件と5肢を照合。発散は対応成分の偏微分の和を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [
+        "mit_vectorcalc2005"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-3-3",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "座標変換と偏微分の連鎖律で定義された2行2列行列の行列式を選ぶ。",
+      "summary": "座標変換と偏微分の連鎖律で定義された2行2列行列の行列式を選ぶ。",
+      "conditions": {
+        "変換": "\\(x=x(\\xi,\\eta),y=y(\\xi,\\eta)\\)",
+        "微分の向き": "(fξ,fη)の列=J(fx,fy)の列。",
+        "略記": "\\(a=x_\\xi,b=y_\\xi,c=x_\\eta,d=y_\\eta\\)"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(ad-bc\\)",
+          "verdict": "条件に一致",
+          "reason": "主対角積から反対角積を引いたものに一致する。"
+        },
+        "2": {
+          "value": "\\(ad+bc\\)",
+          "verdict": "条件に不一致",
+          "reason": "行列式の反対角積の符号が逆である。"
+        },
+        "3": {
+          "value": "\\(ac-bd\\)",
+          "verdict": "条件に不一致",
+          "reason": "同じ座標関数同士の積を取っており、主対角と反対角の組を違えている。"
+        },
+        "4": {
+          "value": "\\(ac+bd\\)",
+          "verdict": "条件に不一致",
+          "reason": "項の組合せも符号も行列式と合わない。"
+        },
+        "5": {
+          "value": "\\(bd-ac\\)",
+          "verdict": "条件に不一致",
+          "reason": "同じ座標関数の積の差であり、行列式ではない。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/basic/page_009.png"
+      ],
+      "core_concept": "連鎖律とヤコビ行列の向き",
+      "required_knowledge": "偏微分、行列と列ベクトル、2行2列行列式。",
+      "solution": "連鎖律で\\(f_\\xi=f_xx_\\xi+f_yy_\\xi\\)、\\(f_\\eta=f_xx_\\eta+f_yy_\\eta\\)となる。従ってJの行は(a,b)、(c,d)で、行列式はad−bc、1である。ここでは符号を持つ行列式を問い、積分の面積倍率ではない。",
+      "independent_answer": "1",
+      "answer_reason": "連鎖律で\\(f_\\xi=f_xx_\\xi+f_yy_\\xi\\)、\\(f_\\eta=f_xx_\\eta+f_yy_\\eta\\)となる。従ってJの行は(a,b)、(c,d)で、行列式はad−bc、1である。ここでは符号を持つ行列式を問い、積分の面積倍率ではない。",
+      "learning_points": "出力の型と条件を確認し、連鎖律とヤコビ行列の向きの定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:chain",
+        "theory:analysis:jacobian"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "concept_023",
+      "classification_reason": "原典画像で全条件と5肢を照合。連鎖律とヤコビ行列の向きを中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [
+        "mit_chain2007"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-3-4",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "二階導関数の格子点での差分近似を選ぶ。",
+      "summary": "二階導関数の格子点での差分近似を選ぶ。",
+      "conditions": {
+        "導関数": "\\(f''(x_i)\\)",
+        "格子幅": "\\(\\Delta\\)",
+        "格子": "等間隔、iは格子点の番号。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((f_{i+1}-f_i)/\\Delta\\)",
+          "verdict": "条件に不一致",
+          "reason": "一階前進差分であり、二階微分ではない。"
+        },
+        "2": {
+          "value": "\\((f_{i+1}+f_i)/\\Delta\\)",
+          "verdict": "条件に不一致",
+          "reason": "定数関数でもゼロにならず、差分の分子が和になっている。"
+        },
+        "3": {
+          "value": "\\((f_{i+1}-2f_i+f_{i-1})/(2\\Delta)\\)",
+          "verdict": "条件に不一致",
+          "reason": "二階差分の分子は合うが、分母は幅の二乗である。"
+        },
+        "4": {
+          "value": "\\((f_{i+1}-2f_i+f_{i-1})/\\Delta^2\\)",
+          "verdict": "条件に一致",
+          "reason": "テイラー展開で定数項と一階項が消え、二階微分が残る。"
+        },
+        "5": {
+          "value": "\\((f_{i+1}+2f_i+f_{i-1})/\\Delta^2\\)",
+          "verdict": "条件に不一致",
+          "reason": "中央項の符号が逆で、定数関数でもゼロにならない。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/basic/page_010.png"
+      ],
+      "core_concept": "テイラー展開による二階中心差分",
+      "required_knowledge": "微分次数、等間隔格子、打切り誤差、定数・一次関数での検算。",
+      "solution": "\\(f_{i+1}-2f_i+f_{i-1}=\\Delta^2f''(x_i)+O(\\Delta^4)\\)を用いる。従って分母を幅の二乗とした4が適切である。これは滑らかな関数の中心差分近似であり、一般の関数で厳密な恒等式ではない。",
+      "independent_answer": "4",
+      "answer_reason": "\\(f_{i+1}-2f_i+f_{i-1}=\\Delta^2f''(x_i)+O(\\Delta^4)\\)を用いる。従って分母を幅の二乗とした4が適切である。これは滑らかな関数の中心差分近似であり、一般の関数で厳密な恒等式ではない。",
+      "learning_points": "出力の型と条件を確認し、テイラー展開による二階中心差分の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:difference"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "concept_023",
+      "classification_reason": "原典画像で全条件と5肢を照合。テイラー展開による二階中心差分を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-3-1",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "二階導関数の格子点での差分近似を選ぶ。",
+      "summary": "二階導関数の格子点での差分近似を選ぶ。",
+      "conditions": {
+        "導関数": "\\(u''(x_i)\\)",
+        "格子幅": "\\(h\\)",
+        "格子": "等間隔、iは格子点の番号。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((u_{i+1}-u_i)/h\\)",
+          "verdict": "条件に不一致",
+          "reason": "一階前進差分であり、二階微分ではない。"
+        },
+        "2": {
+          "value": "\\((u_{i+1}+u_i)/h\\)",
+          "verdict": "条件に不一致",
+          "reason": "定数関数でもゼロにならず、差分の分子が和になっている。"
+        },
+        "3": {
+          "value": "\\((u_{i+1}-2u_i+u_{i-1})/(2h)\\)",
+          "verdict": "条件に不一致",
+          "reason": "二階差分の分子は合うが、分母は幅の二乗である。"
+        },
+        "4": {
+          "value": "\\((u_{i+1}+2u_i+u_{i-1})/h^2\\)",
+          "verdict": "条件に不一致",
+          "reason": "中央項の符号が逆で、定数関数でもゼロにならない。"
+        },
+        "5": {
+          "value": "\\((u_{i+1}-2u_i+u_{i-1})/h^2\\)",
+          "verdict": "条件に一致",
+          "reason": "テイラー展開で定数項と一階項が消え、二階微分が残る。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/basic/page_011.png"
+      ],
+      "core_concept": "テイラー展開による二階中心差分",
+      "required_knowledge": "微分次数、等間隔格子、打切り誤差、定数・一次関数での検算。",
+      "solution": "\\(u_{i+1}-2u_i+u_{i-1}=h^2u''(x_i)+O(h^4)\\)を用いる。従って分母を幅の二乗とした5が適切である。これは滑らかな関数の中心差分近似であり、一般の関数で厳密な恒等式ではない。",
+      "independent_answer": "5",
+      "answer_reason": "\\(u_{i+1}-2u_i+u_{i-1}=h^2u''(x_i)+O(h^4)\\)を用いる。従って分母を幅の二乗とした5が適切である。これは滑らかな関数の中心差分近似であり、一般の関数で厳密な恒等式ではない。",
+      "learning_points": "出力の型と条件を確認し、テイラー展開による二階中心差分の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:difference"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "concept_023",
+      "classification_reason": "原典画像で全条件と5肢を照合。テイラー展開による二階中心差分を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-3-4",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "正則な2行2列行列の逆行列を選ぶ。",
+      "summary": "正則な2行2列行列の逆行列を選ぶ。",
+      "conditions": {
+        "行列A": "行ごとに(a,b)、(c,d)。",
+        "条件": "\\(ad-bc\\neq0\\)",
+        "候補表記": "セミコロンで行を区切る。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((d,-b;-c,a)/(ad+bc)\\)",
+          "verdict": "条件に不一致",
+          "reason": "随伴行列の成分は合うが行列式の符号が違う。"
+        },
+        "2": {
+          "value": "\\((d,-c;-b,a)/(ad+bc)\\)",
+          "verdict": "条件に不一致",
+          "reason": "分母の符号と非対角成分の配置が違う。"
+        },
+        "3": {
+          "value": "\\((d,b;c,a)/(ad+bc)\\)",
+          "verdict": "条件に不一致",
+          "reason": "分母の符号と非対角成分の符号が違う。"
+        },
+        "4": {
+          "value": "\\((d,b;c,a)/(ad-bc)\\)",
+          "verdict": "条件に不一致",
+          "reason": "非対角成分の符号を反転していない。"
+        },
+        "5": {
+          "value": "\\((d,-b;-c,a)/(ad-bc)\\)",
+          "verdict": "条件に一致",
+          "reason": "積AA⁻¹が単位行列になる。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_013.png"
+      ],
+      "core_concept": "逆行列は掛けて単位行列になる写像",
+      "required_knowledge": "正則性、行列式、随伴行列、行列積。",
+      "solution": "逆行列は対角成分を交換し、非対角成分の符号を反転して、行列式ad−bcで割った5である。Aへ掛けると対角はad−bc、非対角は0になる。成分を単に転置する操作と取り違えない。",
+      "independent_answer": "5",
+      "answer_reason": "逆行列は対角成分を交換し、非対角成分の符号を反転して、行列式ad−bcで割った5である。Aへ掛けると対角はad−bc、非対角は0になる。成分を単に転置する操作と取り違えない。",
+      "learning_points": "出力の型と条件を確認し、逆行列は掛けて単位行列になる写像の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:inverse"
+      ],
+      "discipline_id": "basic_3_3",
+      "concept_id": "linear_algebra_inverse",
+      "classification_reason": "原典画像で全条件と5肢を照合。逆行列は掛けて単位行列になる写像を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [
+        "mit_inverse2007"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-3-6",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "二次元ベクトル場の指定点における回転の面外成分を求める。",
+      "summary": "二次元ベクトル場の指定点における回転の面外成分を求める。",
+      "conditions": {
+        "ベクトル": "\\(V=(x+y,x^2)\\)",
+        "点": "(2,3)",
+        "定義": "\\(\\operatorname{rot}V=\\partial_xV_y-\\partial_yV_x\\)"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((1,2x)\\)",
+          "verdict": "条件に不一致",
+          "reason": "原典のrotはスカラーであり、成分微分を並べた二成分の値ではない。"
+        },
+        "2": {
+          "value": "\\((1,4)\\)",
+          "verdict": "条件に不一致",
+          "reason": "微分の結果を並べただけで差を取っていない。"
+        },
+        "3": {
+          "value": "\\((1,6)\\)",
+          "verdict": "条件に不一致",
+          "reason": "第二成分をyで評価したような値であり、差を取っていない。"
+        },
+        "4": {
+          "value": "\\(3\\)",
+          "verdict": "条件に一致",
+          "reason": "2x−1をx=2で評価すると3である。"
+        },
+        "5": {
+          "value": "\\(5\\)",
+          "verdict": "条件に不一致",
+          "reason": "2x+1と足すのは回転の差の符号と合わない。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_014.png",
+        "extracted/pages/H25/basic/page_015.png"
+      ],
+      "core_concept": "二次元回転の向きとスカラー成分",
+      "required_knowledge": "偏微分、面外成分、差の順序。",
+      "solution": "\\(\\partial_xV_y=2x,\\partial_yV_x=1\\)なのでrot=2x−1、点(2,3)では3である。4を選ぶ。二次元のここでのrotは三次元回転ベクトルのz成分を表す。",
+      "independent_answer": "4",
+      "answer_reason": "\\(\\partial_xV_y=2x,\\partial_yV_x=1\\)なのでrot=2x−1、点(2,3)では3である。4を選ぶ。二次元のここでのrotは三次元回転ベクトルのz成分を表す。",
+      "learning_points": "出力の型と条件を確認し、二次元回転の向きとスカラー成分の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:divcurl"
+      ],
+      "discipline_id": "basic_3_9",
+      "concept_id": "concept_022",
+      "classification_reason": "原典画像で全条件と5肢を照合。二次元回転の向きとスカラー成分を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-3-1",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "平面上の全点で非圧縮性の連続の式を満たす流速場を選ぶ。",
+      "summary": "平面上の全点で非圧縮性の連続の式を満たす流速場を選ぶ。",
+      "conditions": {
+        "式": "\\(\\partial_xu+\\partial_yv=0\\)",
+        "量化": "特定の点だけでなく平面上の全ての点。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((x,y)\\)",
+          "verdict": "条件に不一致",
+          "reason": "発散は1+1=2である。"
+        },
+        "2": {
+          "value": "\\((x,-y)\\)",
+          "verdict": "条件に一致",
+          "reason": "発散は1−1=0で全点で成立する。"
+        },
+        "3": {
+          "value": "\\((xy,xy)\\)",
+          "verdict": "条件に不一致",
+          "reason": "発散はy+xであり恒等的には0でない。"
+        },
+        "4": {
+          "value": "\\((xy,-xy)\\)",
+          "verdict": "条件に不一致",
+          "reason": "発散はy−xで、直線y=x上に限る。"
+        },
+        "5": {
+          "value": "\\((x^2,-y^2)\\)",
+          "verdict": "条件に不一致",
+          "reason": "発散は2x−2yで、直線y=x上に限る。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/basic/page_009.png"
+      ],
+      "core_concept": "発散ゼロと非圧縮性の質量保存",
+      "required_knowledge": "流速成分、偏微分、恒等式と特定点での一致。",
+      "solution": "各候補の対応成分を微分して足すと2、0、x+y、y−x、2x−2yとなる。恒等的にゼロなのは2である。ある点でゼロになることと、領域全体で保存則を満たすこととを分ける。",
+      "independent_answer": "2",
+      "answer_reason": "各候補の対応成分を微分して足すと2、0、x+y、y−x、2x−2yとなる。恒等的にゼロなのは2である。ある点でゼロになることと、領域全体で保存則を満たすこととを分ける。",
+      "learning_points": "出力の型と条件を確認し、発散ゼロと非圧縮性の質量保存の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:divcurl"
+      ],
+      "discipline_id": "basic_3_9",
+      "concept_id": "concept_022",
+      "classification_reason": "原典画像で全条件と5肢を照合。発散ゼロと非圧縮性の質量保存を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-3-4",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "二次元ベクトルの内積の成分表示を選ぶ。",
+      "summary": "二次元ベクトルの内積の成分表示を選ぶ。",
+      "conditions": {
+        "ベクトル": "\\(a=(a_x,a_y),b=(b_x,b_y)\\)",
+        "座標": "直交座標の成分。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(a_xb_x+a_yb_y\\)",
+          "verdict": "条件に一致",
+          "reason": "同じ軸の成分積を足す内積に一致する。"
+        },
+        "2": {
+          "value": "\\(a_xb_y+a_yb_x\\)",
+          "verdict": "条件に不一致",
+          "reason": "異なる軸の成分を掛けており、内積ではない。"
+        },
+        "3": {
+          "value": "\\(a_xb_y-a_yb_x\\)",
+          "verdict": "条件に不一致",
+          "reason": "これは二次元外積に対応する面積の符号付き成分である。"
+        },
+        "4": {
+          "value": "\\((a_xb_x,a_yb_y)\\)",
+          "verdict": "条件に不一致",
+          "reason": "内積の結果はスカラーであり、成分の組ではない。"
+        },
+        "5": {
+          "value": "\\((a_xb_y,a_yb_x)\\)",
+          "verdict": "条件に不一致",
+          "reason": "内積の結果はスカラーであり、しかも成分の組合せが異なる。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/basic/page_010.png"
+      ],
+      "core_concept": "正規直交基底による内積",
+      "required_knowledge": "内積の双線形性、スカラーとベクトルの違い。",
+      "solution": "正規直交基底の異なる軸どうしの内積は0、同じ軸は1である。展開すると\\(a\\cdot b=a_xb_x+a_yb_y\\)となり1を選ぶ。内積は仕事や角度を表すスカラーである。",
+      "independent_answer": "1",
+      "answer_reason": "正規直交基底の異なる軸どうしの内積は0、同じ軸は1である。展開すると\\(a\\cdot b=a_xb_x+a_yb_y\\)となり1を選ぶ。内積は仕事や角度を表すスカラーである。",
+      "learning_points": "出力の型と条件を確認し、正規直交基底による内積の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:projection"
+      ],
+      "discipline_id": "basic_3_3",
+      "concept_id": "concept_022",
+      "classification_reason": "原典画像で全条件と5肢を照合。正規直交基底による内積を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-3-1",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "一次関数の区間−1〜1の積分を計算する式で、恒等的に使えないものを選ぶ。",
+      "summary": "一次関数の区間−1〜1の積分を計算する式で、恒等的に使えないものを選ぶ。",
+      "conditions": {
+        "関数": "\\(f(x)=ax+b\\)",
+        "区間": "\\([-1,1]\\)",
+        "方向": "最も不適切な計算式。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(2f(0)\\)",
+          "verdict": "正しい",
+          "reason": "2bとなり正しい。"
+        },
+        "2": {
+          "value": "\\(f(-1)+f(1)\\)",
+          "verdict": "正しい",
+          "reason": "奇関数のaxが相殺され、2bとなり正しい。"
+        },
+        "3": {
+          "value": "\\(\\frac14f(-1)+f(0)+\\frac14f(1)\\)",
+          "verdict": "一般には誤り",
+          "reason": "結果は3b/2であり、一般のbで積分値2bと違う。"
+        },
+        "4": {
+          "value": "\\(\\frac12f(-1)+f(0)+\\frac12f(1)\\)",
+          "verdict": "正しい",
+          "reason": "結果は2bで正しい。"
+        },
+        "5": {
+          "value": "\\(\\frac13f(-1)+\\frac43f(0)+\\frac13f(1)\\)",
+          "verdict": "正しい",
+          "reason": "重みの和は2であり奇関数部分は相殺され、2bで正しい。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/basic/page_012.png"
+      ],
+      "core_concept": "求積重みの和と多項式への正確さ",
+      "required_knowledge": "奇偶性、一次関数の積分、定数関数での検算。",
+      "solution": "積分は奇関数axの寄与が0なので2bである。左右対称の候補式に代入すると1/2/4/5は2b、3だけ3b/2となるため3を選ぶ。b=0の特殊な場合だけ一致しても恒等的な計算式ではない。",
+      "independent_answer": "3",
+      "answer_reason": "積分は奇関数axの寄与が0なので2bである。左右対称の候補式に代入すると1/2/4/5は2b、3だけ3b/2となるため3を選ぶ。b=0の特殊な場合だけ一致しても恒等的な計算式ではない。",
+      "learning_points": "出力の型と条件を確認し、求積重みの和と多項式への正確さの定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:quadrature"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "concept_023",
+      "classification_reason": "原典画像で全条件と5肢を照合。求積重みの和と多項式への正確さを中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-3-2",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "二重積分の変数変換に使うヤコビアンを計算する。",
+      "summary": "二重積分の変数変換に使うヤコビアンを計算する。",
+      "conditions": {
+        "変換": "\\(x=u+v,y=uv\\)",
+        "原典の式": "dxdyをJdudvへ置き換える。",
+        "領域": "変換領域でuとvの大小を指定していない。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(1\\)",
+          "verdict": "条件に不一致",
+          "reason": "微分行列の行列式は定数ではない。"
+        },
+        "2": {
+          "value": "\\(u+v\\)",
+          "verdict": "条件に不一致",
+          "reason": "行列式の二項を足している。"
+        },
+        "3": {
+          "value": "\\(u-v\\)",
+          "verdict": "条件に一致",
+          "reason": "符号付き行列式に一致。ただし面積要素では絶対値が必要である。"
+        },
+        "4": {
+          "value": "\\(1+uv\\)",
+          "verdict": "条件に不一致",
+          "reason": "微分した成分を使っていない。"
+        },
+        "5": {
+          "value": "\\(1-uv\\)",
+          "verdict": "条件に不一致",
+          "reason": "微分した成分を使っていない。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "原典は面積要素dxdy=Jdudvとするが、候補に|u−v|がなく、領域でu≥vなどの符号条件も指定しない。また変換はu,vの交換で同じx,yになる。符号付き行列式は3だが、積分の置換を成立させる領域/絶対値条件の不足を保持し部分校正とする。",
+      "evidence": [
+        "extracted/pages/H28/basic/page_012.png"
+      ],
+      "core_concept": "ヤコビアンの符号と面積倍率",
+      "required_knowledge": "行列式、面積要素、絶対値、一対一の変数変換。",
+      "solution": "微分行列の行は(1,1)、(v,u)で、その行列式はu−vである。符号付きヤコビアンとして3を独立選択する。ただし面積要素の倍率は|u−v|であり、原典の二重積分の式へそのまま代入するには符号又は向きの条件が必要となる。変換を一対一の枝へ制限する条件も確認が必要である。",
+      "independent_answer": "3",
+      "answer_reason": "微分行列の行は(1,1)、(v,u)で、その行列式はu−vである。符号付きヤコビアンとして3を独立選択する。ただし面積要素の倍率は|u−v|であり、原典の二重積分の式へそのまま代入するには符号又は向きの条件が必要となる。変換を一対一の枝へ制限する条件も確認が必要である。",
+      "learning_points": "出力の型と条件を確認し、ヤコビアンの符号と面積倍率の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:jacobian"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "concept_023",
+      "classification_reason": "原典画像で全条件と5肢を照合。ヤコビアンの符号と面積倍率を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [
+        "mit_jacobian2007"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-3-2",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "ベクトルAをBに平行・垂直に分解し、垂直成分Qを求める。",
+      "summary": "ベクトルAをBに平行・垂直に分解し、垂直成分Qを求める。",
+      "conditions": {
+        "ベクトル": "A=(6,5,4)、B=(1,2,−1)",
+        "分解": "A=P+Q、PはBに平行、QはBに垂直。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((1,1,3)\\)",
+          "verdict": "条件に不一致",
+          "reason": "Q·B=0だがA−Q=(5,4,1)がBの倍数でない。"
+        },
+        "2": {
+          "value": "\\((2,1,4)\\)",
+          "verdict": "条件に不一致",
+          "reason": "Q·B=0だがA−QがBの倍数でなく、分解条件を同時に満たさない。"
+        },
+        "3": {
+          "value": "\\((3,2,7)\\)",
+          "verdict": "条件に不一致",
+          "reason": "Q·B=0だがA−QがBの倍数でない。"
+        },
+        "4": {
+          "value": "\\((4,1,6)\\)",
+          "verdict": "条件に一致",
+          "reason": "A·B=12、B·B=6なのでP=2B、Q=A−2Bに一致する。"
+        },
+        "5": {
+          "value": "\\((5,-1,3)\\)",
+          "verdict": "条件に不一致",
+          "reason": "Q·B=0だがA−QがBの倍数でない。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/basic/page_011.png"
+      ],
+      "core_concept": "直交射影による平行・垂直成分",
+      "required_knowledge": "内積、非単位ベクトルへの射影、二条件の同時確認。",
+      "solution": "\\(P=\\frac{A\\cdot B}{B\\cdot B}B=2B=(2,4,-2)\\)、Q=A−P=(4,1,6)で4を選ぶ。Q·B=0だけで候補を選ぶと他にも残るので、差A−Qが平行という条件も確認する。",
+      "independent_answer": "4",
+      "answer_reason": "\\(P=\\frac{A\\cdot B}{B\\cdot B}B=2B=(2,4,-2)\\)、Q=A−P=(4,1,6)で4を選ぶ。Q·B=0だけで候補を選ぶと他にも残るので、差A−Qが平行という条件も確認する。",
+      "learning_points": "出力の型と条件を確認し、直交射影による平行・垂直成分の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:projection"
+      ],
+      "discipline_id": "basic_3_9",
+      "concept_id": "concept_022",
+      "classification_reason": "原典画像で全条件と5肢を照合。直交射影による平行・垂直成分を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-BASIC-3-2",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "二次元ベクトル場の指定点で発散と回転を求める。",
+      "summary": "二次元ベクトル場の指定点で発散と回転を求める。",
+      "conditions": {
+        "ベクトル": "\\(v=(u,v)=(-x^2+2xy,2xy-y^2)\\)",
+        "点": "(1,2)",
+        "定義": "\\(\\operatorname{div}v=\\partial_xu+\\partial_yv,\\operatorname{rot}v=\\partial_xv-\\partial_yu\\)"
+      },
+      "choices": {
+        "1": {
+          "value": "div=2／rot=−4",
+          "verdict": "条件に不一致",
+          "reason": "対応成分の発散は恒等的に0であり合わない。"
+        },
+        "2": {
+          "value": "div=0／rot=−2",
+          "verdict": "条件に不一致",
+          "reason": "発散は合うが回転の差の順序を逆にしている。"
+        },
+        "3": {
+          "value": "div=−2／rot=0",
+          "verdict": "条件に不一致",
+          "reason": "発散と回転の両方が合わない。"
+        },
+        "4": {
+          "value": "div=0／rot=2",
+          "verdict": "条件に一致",
+          "reason": "発散0、回転2(y−x)=2に一致する。"
+        },
+        "5": {
+          "value": "div=2／rot=4",
+          "verdict": "条件に不一致",
+          "reason": "発散と回転の両方が合わない。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/basic/page_011.png"
+      ],
+      "core_concept": "発散と回転の成分の取り方",
+      "required_knowledge": "二次元ベクトル場、偏微分、面外回転の符号。",
+      "solution": "\\(\\operatorname{div}v=(-2x+2y)+(2x-2y)=0\\)、\\(\\operatorname{rot}v=2y-2x\\)より点(1,2)で(0,2)の組、4である。同じ成分の微分の和と、交差成分の微分の差を区別する。",
+      "independent_answer": "4",
+      "answer_reason": "\\(\\operatorname{div}v=(-2x+2y)+(2x-2y)=0\\)、\\(\\operatorname{rot}v=2y-2x\\)より点(1,2)で(0,2)の組、4である。同じ成分の微分の和と、交差成分の微分の差を区別する。",
+      "learning_points": "出力の型と条件を確認し、発散と回転の成分の取り方の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:divcurl"
+      ],
+      "discipline_id": "basic_3_9",
+      "concept_id": "concept_022",
+      "classification_reason": "原典画像で全条件と5肢を照合。発散と回転の成分の取り方を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-BASIC-3-3",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "対角が全て1の下三角3行3列行列の逆行列を選ぶ。",
+      "summary": "対角が全て1の下三角3行3列行列の逆行列を選ぶ。",
+      "conditions": {
+        "行列A": "行をセミコロンで区切って(1,0,0; a,1,0; b,c,1)。",
+        "候補表記": "同じく各行をセミコロンで区切る。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((1,0,0;a,1,0;ac-b,c,1)\\)",
+          "verdict": "条件に不一致",
+          "reason": "第2行第1列と第3行第2列の符号を逆にする必要がある。"
+        },
+        "2": {
+          "value": "\\((1,0,0;-a,1,0;ac-b,-c,1)\\)",
+          "verdict": "条件に一致",
+          "reason": "下三角の積を計算すると対角1、下の非対角0になる。"
+        },
+        "3": {
+          "value": "\\((1,0,0;1-a,1,0;ac-b,1-c,1)\\)",
+          "verdict": "条件に不一致",
+          "reason": "第2行第1列と第3行第2列は−a、−cであり、余分な1がある。"
+        },
+        "4": {
+          "value": "\\((1,0,0;-a,1,0;ac+b,-c,1)\\)",
+          "verdict": "条件に不一致",
+          "reason": "第3行第1列の積を打ち消すにはac−bが必要である。"
+        },
+        "5": {
+          "value": "\\((1,0,0;a,1,0;ac+b,c,1)\\)",
+          "verdict": "条件に不一致",
+          "reason": "第3行第1列の積を打ち消すにはac−bが必要である。第2行・第3行の符号も異なる。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/basic/page_012.png"
+      ],
+      "core_concept": "三角行列の逆と順次消去",
+      "required_knowledge": "行列積、下三角行列、前進代入。",
+      "solution": "逆を下三角(1,0,0; p,1,0; q,r,1)とおき、Aとの積を単位行列へ合わせる。a+p=0、c+r=0、b+cp+q=0なのでp=−a、r=−c、q=ac−bとなる。2を選ぶ。非対角成分を全てただ符号反転するだけでは、第3行第1列の結合項acを落とす。",
+      "independent_answer": "2",
+      "answer_reason": "逆を下三角(1,0,0; p,1,0; q,r,1)とおき、Aとの積を単位行列へ合わせる。a+p=0、c+r=0、b+cp+q=0なのでp=−a、r=−c、q=ac−bとなる。2を選ぶ。非対角成分を全てただ符号反転するだけでは、第3行第1列の結合項acを落とす。",
+      "learning_points": "出力の型と条件を確認し、三角行列の逆と順次消去の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:inverse"
+      ],
+      "discipline_id": "basic_3_3",
+      "concept_id": "linear_algebra_inverse",
+      "classification_reason": "原典画像で全条件と5肢を照合。三角行列の逆と順次消去を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [
+        "mit_inverse2007"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-BASIC-3-1",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "stem": "対角が全て1の下三角3行3列行列の逆行列を選ぶ。",
+      "summary": "対角が全て1の下三角3行3列行列の逆行列を選ぶ。",
+      "conditions": {
+        "行列A": "行をセミコロンで区切って(1,0,0; a,1,0; b,c,1)。",
+        "候補表記": "同じく各行をセミコロンで区切る。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((1,0,0;-a,1,0;ac+b,-c,1)\\)",
+          "verdict": "条件に不一致",
+          "reason": "第3行第1列の積を打ち消すにはac−bが必要である。"
+        },
+        "2": {
+          "value": "\\((1,0,0;a,1,0;ac-b,c,1)\\)",
+          "verdict": "条件に不一致",
+          "reason": "第2行第1列と第3行第2列の符号を逆にする必要がある。"
+        },
+        "3": {
+          "value": "\\((1,c,b;0,1,a;0,0,1)\\)",
+          "verdict": "条件に不一致",
+          "reason": "Aが下三角なので逆も下三角になる。転置に似た配置では積が単位行列にならない。"
+        },
+        "4": {
+          "value": "\\((1,0,0;-a,1,0;ac-b,-c,1)\\)",
+          "verdict": "条件に一致",
+          "reason": "下三角の積を計算すると対角1、下の非対角0になる。"
+        },
+        "5": {
+          "value": "\\((1,0,0;a,1,0;ac+b,c,1)\\)",
+          "verdict": "条件に不一致",
+          "reason": "第3行第1列の積を打ち消すにはac−bが必要である。第2行・第3行の符号も異なる。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/basic/page_009.png"
+      ],
+      "core_concept": "三角行列の逆と順次消去",
+      "required_knowledge": "行列積、下三角行列、前進代入。",
+      "solution": "逆を下三角(1,0,0; p,1,0; q,r,1)とおき、Aとの積を単位行列へ合わせる。a+p=0、c+r=0、b+cp+q=0なのでp=−a、r=−c、q=ac−bとなる。4を選ぶ。非対角成分を全てただ符号反転するだけでは、第3行第1列の結合項acを落とす。",
+      "independent_answer": "4",
+      "answer_reason": "逆を下三角(1,0,0; p,1,0; q,r,1)とおき、Aとの積を単位行列へ合わせる。a+p=0、c+r=0、b+cp+q=0なのでp=−a、r=−c、q=ac−bとなる。4を選ぶ。非対角成分を全てただ符号反転するだけでは、第3行第1列の結合項acを落とす。",
+      "learning_points": "出力の型と条件を確認し、三角行列の逆と順次消去の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:inverse"
+      ],
+      "discipline_id": "basic_3_3",
+      "concept_id": "linear_algebra_inverse",
+      "classification_reason": "原典画像で全条件と5肢を照合。三角行列の逆と順次消去を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [
+        "mit_inverse2007"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-3-2",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "座標変換の連鎖律で定義された2行2列行列の行列式を選ぶ。",
+      "summary": "座標変換の連鎖律で定義された2行2列行列の行列式を選ぶ。",
+      "conditions": {
+        "変換": "\\(x=g(r,s),y=h(r,s),z=f(x,y)\\)",
+        "向き": "(zr,zs)の列=J(zx,zy)の列。",
+        "略記": "\\(a=x_r,b=y_r,c=x_s,d=y_s\\)"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(ac+bd\\)",
+          "verdict": "条件に不一致",
+          "reason": "同じ座標関数の微分を掛けた和で、行列式と異なる。"
+        },
+        "2": {
+          "value": "\\(ac-bd\\)",
+          "verdict": "条件に不一致",
+          "reason": "項の組合せが主対角・反対角ではない。"
+        },
+        "3": {
+          "value": "\\(bd-ac\\)",
+          "verdict": "条件に不一致",
+          "reason": "項の組合せが主対角・反対角ではない。"
+        },
+        "4": {
+          "value": "\\(ad+bc\\)",
+          "verdict": "条件に不一致",
+          "reason": "反対角積の符号が逆である。"
+        },
+        "5": {
+          "value": "\\(ad-bc\\)",
+          "verdict": "条件に一致",
+          "reason": "連鎖律でできる行(a,b)、(c,d)の行列式に一致する。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/basic/page_012.png"
+      ],
+      "core_concept": "連鎖律で定義された行列の行列式",
+      "required_knowledge": "偏微分、行列積、行列式、変数の順序。",
+      "solution": "偏微分の連鎖律によりJの行は(a,b)、(c,d)である。行列式ad−bcの5を選ぶ。微分ベクトルの順序を先に読み、以前の問題の正答番号を転用しない。",
+      "independent_answer": "5",
+      "answer_reason": "偏微分の連鎖律によりJの行は(a,b)、(c,d)である。行列式ad−bcの5を選ぶ。微分ベクトルの順序を先に読み、以前の問題の正答番号を転用しない。",
+      "learning_points": "出力の型と条件を確認し、連鎖律で定義された行列の行列式の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:chain",
+        "theory:analysis:jacobian"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "concept_023",
+      "classification_reason": "原典画像で全条件と5肢を照合。連鎖律で定義された行列の行列式を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [
+        "mit_chain2007"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-BASIC-3-1",
+      "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+      "stem": "微分方程式と一点の値から二階・三階導関数を求める。",
+      "summary": "微分方程式と一点の値から二階・三階導関数を求める。",
+      "conditions": {
+        "関係": "\\(f'(x)=1+f(x)^2\\)",
+        "初期値": "\\(f(0)=1\\)",
+        "求める量": "\\((f''(0),f'''(0))\\)"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((2,4)\\)",
+          "verdict": "条件に不一致",
+          "reason": "f′(0)=2だが二階導関数は2ff′=4である。"
+        },
+        "2": {
+          "value": "\\((2,6)\\)",
+          "verdict": "条件に不一致",
+          "reason": "二階導関数4に一致しない。"
+        },
+        "3": {
+          "value": "\\((2,8)\\)",
+          "verdict": "条件に不一致",
+          "reason": "二階導関数4に一致しない。"
+        },
+        "4": {
+          "value": "\\((4,12)\\)",
+          "verdict": "条件に不一致",
+          "reason": "二階は合うが三階では積の微分の両項を数えると16になる。"
+        },
+        "5": {
+          "value": "\\((4,16)\\)",
+          "verdict": "条件に一致",
+          "reason": "二階4、三階16に一致する。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/basic/page_011.png"
+      ],
+      "core_concept": "微分関係式の繰返し微分",
+      "required_knowledge": "積の微分、連鎖律、一点の初期条件。",
+      "solution": "\\(f'(0)=2,\\quad f''=2ff',\\quad f'''=2(f')^2+2ff''\\)よりf″(0)=4、f‴(0)=8+8=16となり5である。解fそのものを求める必要はなく、関係式を順に微分すればよい。",
+      "independent_answer": "5",
+      "answer_reason": "\\(f'(0)=2,\\quad f''=2ff',\\quad f'''=2(f')^2+2ff''\\)よりf″(0)=4、f‴(0)=8+8=16となり5である。解fそのものを求める必要はなく、関係式を順に微分すればよい。",
+      "learning_points": "出力の型と条件を確認し、微分関係式の繰返し微分の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:chain"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "concept_023",
+      "classification_reason": "原典画像で全条件と5肢を照合。微分関係式の繰返し微分を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-BASIC-3-4",
+      "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+      "stem": "指定のシンプソン公式で定積分を近似し、最も近い候補を選ぶ。",
+      "summary": "指定のシンプソン公式で定積分を近似し、最も近い候補を選ぶ。",
+      "conditions": {
+        "積分": "\\(\\int_{-1}^{1}\\frac{1}{x+3}\\,dx\\)",
+        "指定重み": "区間両端1/3、中点4/3。"
+      },
+      "choices": {
+        "1": {
+          "value": "0.653",
+          "verdict": "条件に不一致",
+          "reason": "シンプソン近似25/36≈0.69444との差は約0.04144。"
+        },
+        "2": {
+          "value": "0.663",
+          "verdict": "条件に不一致",
+          "reason": "差は約0.03144。"
+        },
+        "3": {
+          "value": "0.673",
+          "verdict": "条件に不一致",
+          "reason": "差は約0.02144。"
+        },
+        "4": {
+          "value": "0.683",
+          "verdict": "条件に不一致",
+          "reason": "差は約0.01144。"
+        },
+        "5": {
+          "value": "0.693",
+          "verdict": "条件に一致",
+          "reason": "差は約0.00144で最も小さい。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/basic/page_012.png"
+      ],
+      "core_concept": "指定求積法の近似値と厳密値",
+      "required_knowledge": "シンプソンの重み、3点の関数値、最近傍候補。",
+      "solution": "\\(S\\approx\\frac13\\frac12+\\frac43\\frac13+\\frac13\\frac14=\\frac{25}{36}\\approx0.69444\\)となり、最も近い0.693の5を選ぶ。厳密値はln2≈0.693147だが、指定手法の計算結果とは区別する。",
+      "independent_answer": "5",
+      "answer_reason": "\\(S\\approx\\frac13\\frac12+\\frac43\\frac13+\\frac13\\frac14=\\frac{25}{36}\\approx0.69444\\)となり、最も近い0.693の5を選ぶ。厳密値はln2≈0.693147だが、指定手法の計算結果とは区別する。",
+      "learning_points": "出力の型と条件を確認し、指定求積法の近似値と厳密値の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:quadrature"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "concept_023",
+      "classification_reason": "原典画像で全条件と5肢を照合。指定求積法の近似値と厳密値を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [
+        "nist_quadrature"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-BASIC-3-1",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "stem": "多項式ベクトル場の指定点における発散を求める。",
+      "summary": "多項式ベクトル場の指定点における発散を求める。",
+      "conditions": {
+        "ベクトル": "\\(V=(x,x^2y+yz^2,z^3)\\)",
+        "点": "(1,3,2)"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((-12,0,6)\\)",
+          "verdict": "条件に不一致",
+          "reason": "回転ベクトルの値であり発散ではない。"
+        },
+        "2": {
+          "value": "\\(18\\)",
+          "verdict": "条件に一致",
+          "reason": "対応微分の和1+5+12=18に一致する。"
+        },
+        "3": {
+          "value": "\\(24\\)",
+          "verdict": "条件に不一致",
+          "reason": "ベクトル場の成分値1+15+8を足した値であり、微分していない。"
+        },
+        "4": {
+          "value": "\\((1,15,8)\\)",
+          "verdict": "条件に不一致",
+          "reason": "微分前の成分値を並べたものである。"
+        },
+        "5": {
+          "value": "\\((1,5,12)\\)",
+          "verdict": "条件に不一致",
+          "reason": "対応微分を並べており、発散の和を取っていない。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/basic/page_011.png"
+      ],
+      "core_concept": "発散のスカラー性と微分後の評価",
+      "required_knowledge": "多項式の偏微分、微分する変数、スカラーとベクトル。",
+      "solution": "\\(\\operatorname{div}V=1+(x^2+z^2)+3z^2\\)で、指定点では1+5+12=18、2である。発散はスカラーであり、成分微分を並べた(1,5,12)を返す演算ではない。",
+      "independent_answer": "2",
+      "answer_reason": "\\(\\operatorname{div}V=1+(x^2+z^2)+3z^2\\)で、指定点では1+5+12=18、2である。発散はスカラーであり、成分微分を並べた(1,5,12)を返す演算ではない。",
+      "learning_points": "出力の型と条件を確認し、発散のスカラー性と微分後の評価の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:divcurl"
+      ],
+      "discipline_id": "basic_3_9",
+      "concept_id": "concept_022",
+      "classification_reason": "原典画像で全条件と5肢を照合。発散のスカラー性と微分後の評価を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-BASIC-3-2",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "stem": "二変数関数の指定点における最急勾配の長さを求める。",
+      "summary": "二変数関数の指定点における最急勾配の長さを求める。",
+      "conditions": {
+        "関数": "\\(f(x,y)=x^2+2xy+3y^2\\)",
+        "点": "(1,1)",
+        "求める量": "勾配ベクトルのユークリッドノルム。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(6\\)",
+          "verdict": "条件に不一致",
+          "reason": "偏微分してノルムを取ると4\\sqrt5となり一致しない。"
+        },
+        "2": {
+          "value": "\\((4,8)\\)",
+          "verdict": "条件に不一致",
+          "reason": "勾配ベクトルそのものであり長さではない。"
+        },
+        "3": {
+          "value": "\\(12\\)",
+          "verdict": "条件に不一致",
+          "reason": "偏微分してノルムを取ると4\\sqrt5となり一致しない。"
+        },
+        "4": {
+          "value": "\\(4\\sqrt5\\)",
+          "verdict": "条件に一致",
+          "reason": "勾配ベクトルの二乗和の平方根に一致する。"
+        },
+        "5": {
+          "value": "\\(\\sqrt2\\)",
+          "verdict": "条件に不一致",
+          "reason": "偏微分してノルムを取ると4\\sqrt5となり一致しない。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/basic/page_011.png"
+      ],
+      "core_concept": "勾配と最急上昇率のノルム",
+      "required_knowledge": "偏微分、方向微分、ユークリッドノルム。",
+      "solution": "勾配は\\(\\operatorname{grad}f=(2x+2y,2x+6y)\\)で、指定点では\\((4,8)\\)である。そのノルムは\\(4\\sqrt5\\)なので4を選ぶ。方向を表すベクトルと、最大方向微分の値である長さを分ける。",
+      "independent_answer": "4",
+      "answer_reason": "勾配は\\(\\operatorname{grad}f=(2x+2y,2x+6y)\\)で、指定点では\\((4,8)\\)である。そのノルムは\\(4\\sqrt5\\)なので4を選ぶ。方向を表すベクトルと、最大方向微分の値である長さを分ける。",
+      "learning_points": "出力の型と条件を確認し、勾配と最急上昇率のノルムの定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:gradient"
+      ],
+      "discipline_id": "basic_3_9",
+      "concept_id": "concept_022",
+      "classification_reason": "原典画像で全条件と5肢を照合。勾配と最急上昇率のノルムを中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-3-2",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "二変数関数の指定点における最急勾配の長さを求める。",
+      "summary": "二変数関数の指定点における最急勾配の長さを求める。",
+      "conditions": {
+        "関数": "\\(f(x,y)=2x^2+xy-y^2\\)",
+        "点": "(2,1)",
+        "求める量": "勾配ベクトルのユークリッドノルム。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(9\\)",
+          "verdict": "条件に一致",
+          "reason": "勾配ベクトルの二乗和の平方根に一致する。"
+        },
+        "2": {
+          "value": "\\(3\\)",
+          "verdict": "条件に不一致",
+          "reason": "偏微分してノルムを取ると9となり一致しない。"
+        },
+        "3": {
+          "value": "\\(\\sqrt5\\)",
+          "verdict": "条件に不一致",
+          "reason": "偏微分してノルムを取ると9となり一致しない。"
+        },
+        "4": {
+          "value": "\\((9,0)\\)",
+          "verdict": "条件に不一致",
+          "reason": "勾配ベクトルそのものであり長さではない。"
+        },
+        "5": {
+          "value": "\\(\\sqrt{26}\\)",
+          "verdict": "条件に不一致",
+          "reason": "偏微分してノルムを取ると9となり一致しない。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/basic/page_008.png"
+      ],
+      "core_concept": "勾配と最急上昇率のノルム",
+      "required_knowledge": "偏微分、方向微分、ユークリッドノルム。",
+      "solution": "勾配は\\(\\operatorname{grad}f=(4x+y,x-2y)\\)で、指定点では\\((9,0)\\)である。そのノルムは\\(9\\)なので1を選ぶ。方向を表すベクトルと、最大方向微分の値である長さを分ける。",
+      "independent_answer": "1",
+      "answer_reason": "勾配は\\(\\operatorname{grad}f=(4x+y,x-2y)\\)で、指定点では\\((9,0)\\)である。そのノルムは\\(9\\)なので1を選ぶ。方向を表すベクトルと、最大方向微分の値である長さを分ける。",
+      "learning_points": "出力の型と条件を確認し、勾配と最急上昇率のノルムの定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:gradient"
+      ],
+      "discipline_id": "basic_3_9",
+      "concept_id": "concept_022",
+      "classification_reason": "原典画像で全条件と5肢を照合。勾配と最急上昇率のノルムを中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-BASIC-3-1",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "stem": "三次元ベクトル場の指定点における回転ベクトルを求める。",
+      "summary": "三次元ベクトル場の指定点における回転ベクトルを求める。",
+      "conditions": {
+        "ベクトル": "\\(V=(y+z,x^2+y^2+z^2,z+2y)\\)",
+        "点": "(2,3,1)",
+        "座標": "右手系の三次元直交座標。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(7\\)",
+          "verdict": "条件に不一致",
+          "reason": "発散1+2y=7の値であり、回転ではない。"
+        },
+        "2": {
+          "value": "\\((0,6,1)\\)",
+          "verdict": "条件に不一致",
+          "reason": "回転の成分微分の組合せが違う。"
+        },
+        "3": {
+          "value": "\\(4\\)",
+          "verdict": "条件に不一致",
+          "reason": "回転はベクトルであり単一数ではない。"
+        },
+        "4": {
+          "value": "\\((0,1,3)\\)",
+          "verdict": "条件に一致",
+          "reason": "(2−2z,1,2x−1)の点での値に一致する。"
+        },
+        "5": {
+          "value": "\\((4,14,7)\\)",
+          "verdict": "条件に不一致",
+          "reason": "元のベクトル場の成分値であり微分していない。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/basic/page_011.png"
+      ],
+      "core_concept": "三次元回転ベクトルの成分",
+      "required_knowledge": "偏微分、右手系、交差微分の差、発散との違い。",
+      "solution": "\\(\\operatorname{rot}V=(\\partial_yV_z-\\partial_zV_y,\\partial_zV_x-\\partial_xV_z,\\partial_xV_y-\\partial_yV_x)=(2-2z,1,2x-1)\\)となる。点(2,3,1)で(0,1,3)、4を選ぶ。第2成分の差の順序も成分式から確認する。",
+      "independent_answer": "4",
+      "answer_reason": "\\(\\operatorname{rot}V=(\\partial_yV_z-\\partial_zV_y,\\partial_zV_x-\\partial_xV_z,\\partial_xV_y-\\partial_yV_x)=(2-2z,1,2x-1)\\)となる。点(2,3,1)で(0,1,3)、4を選ぶ。第2成分の差の順序も成分式から確認する。",
+      "learning_points": "出力の型と条件を確認し、三次元回転ベクトルの成分の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:divcurl"
+      ],
+      "discipline_id": "basic_3_9",
+      "concept_id": "concept_022",
+      "classification_reason": "原典画像で全条件と5肢を照合。三次元回転ベクトルの成分を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-BASIC-3-2",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "stem": "任意の三次以下の多項式を区間−1〜1で正確に積分する式を選ぶ。",
+      "summary": "任意の三次以下の多項式を区間−1〜1で正確に積分する式を選ぶ。",
+      "conditions": {
+        "関数": "\\(f(x)=ax^3+bx^2+cx+d\\)",
+        "係数": "a,b,c,dは任意の実数。",
+        "積分区間": "−1〜1。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(2f(0)\\)",
+          "verdict": "条件に不一致",
+          "reason": "2dでありbx²の積分2b/3が抜ける。"
+        },
+        "2": {
+          "value": "\\(f(-\\sqrt{1/3})+f(\\sqrt{1/3})\\)",
+          "verdict": "条件に一致",
+          "reason": "奇関数部分は相殺し、2b/3+2dに一致する二点ガウス求積である。"
+        },
+        "3": {
+          "value": "\\(f(-1)+f(1)\\)",
+          "verdict": "条件に不一致",
+          "reason": "2b+2dとなりbx²の係数が大きすぎる。"
+        },
+        "4": {
+          "value": "\\(\\frac12f(-\\sqrt{3/5})+\\frac89f(0)+\\frac12f(\\sqrt{3/5})\\)",
+          "verdict": "条件に不一致",
+          "reason": "定数の重み和が17/9で2に足りず、x²の係数も3/5で2/3と異なる。正しい三点ガウスの両端重み5/9とは違う。"
+        },
+        "5": {
+          "value": "\\(\\frac12f(-1)+f(0)+\\frac12f(1)\\)",
+          "verdict": "条件に不一致",
+          "reason": "b+2dとなりbx²の係数が合わない。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/basic/page_011.png"
+      ],
+      "core_concept": "求積公式の多項式モーメント条件",
+      "required_knowledge": "奇偶性、多項式の積分、二点ガウス求積、重みの検算。",
+      "solution": "対称区間では奇関数項の積分が0なので厳密値は2b/3+2dである。2では評価点の二乗が1/3なので\\(f(-1/\\sqrt3)+f(1/\\sqrt3)=2b/3+2d\\)となる。4はガウスの評価点に似ているが両端の重みが1/2であり、正しい求積式ではない。",
+      "independent_answer": "2",
+      "answer_reason": "対称区間では奇関数項の積分が0なので厳密値は2b/3+2dである。2では評価点の二乗が1/3なので\\(f(-1/\\sqrt3)+f(1/\\sqrt3)=2b/3+2d\\)となる。4はガウスの評価点に似ているが両端の重みが1/2であり、正しい求積式ではない。",
+      "learning_points": "出力の型と条件を確認し、求積公式の多項式モーメント条件の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:quadrature"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "concept_023",
+      "classification_reason": "原典画像で全条件と5肢を照合。求積公式の多項式モーメント条件を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [
+        "nist_quadrature"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-3-2",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "任意の三次元ベクトルに必ずしも成立しない恒等式を選ぶ。",
+      "summary": "任意の三次元ベクトルに必ずしも成立しない恒等式を選ぶ。",
+      "conditions": {
+        "ベクトル": "三次元直交座標の任意の実ベクトルa,b。",
+        "演算": "内積と外積を区別する。",
+        "方向": "全てのa,bで成立するとは限らないもの。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((a\\times b)\\cdot a=0\\)",
+          "verdict": "恒等的に正しい",
+          "reason": "外積はaへ垂直であり成立する。"
+        },
+        "2": {
+          "value": "\\(a\\times b=b\\times a\\)",
+          "verdict": "一般には誤り",
+          "reason": "外積は反交換的で、a×b=−b×aである。平行な場合のゼロを除き一般には成立しない。"
+        },
+        "3": {
+          "value": "\\(a\\cdot b=b\\cdot a\\)",
+          "verdict": "恒等的に正しい",
+          "reason": "実ベクトルの内積は交換的であり成立する。"
+        },
+        "4": {
+          "value": "\\(b\\cdot(a\\times b)=0\\)",
+          "verdict": "恒等的に正しい",
+          "reason": "外積はbへも垂直であり成立する。"
+        },
+        "5": {
+          "value": "\\(a\\times a=0\\)",
+          "verdict": "恒等的に正しい",
+          "reason": "同じベクトルの外積はゼロであり成立する。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/basic/page_010.png"
+      ],
+      "core_concept": "内積の交換性と外積の反交換性",
+      "required_knowledge": "外積の右手方向、垂直性、恒等式と反例。",
+      "solution": "a=(1,0,0)、b=(0,1,0)とするとa×b=(0,0,1)、b×a=(0,0,−1)である。2には反例がある。特殊な平行ベクトルで一致しても「任意」での恒等式にはならない。",
+      "independent_answer": "2",
+      "answer_reason": "a=(1,0,0)、b=(0,1,0)とするとa×b=(0,0,1)、b×a=(0,0,−1)である。2には反例がある。特殊な平行ベクトルで一致しても「任意」での恒等式にはならない。",
+      "learning_points": "出力の型と条件を確認し、内積の交換性と外積の反交換性の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:projection"
+      ],
+      "discipline_id": "basic_3_9",
+      "concept_id": "concept_022",
+      "classification_reason": "原典画像で全条件と5肢を照合。内積の交換性と外積の反交換性を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-BASIC-3-2",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "stem": "四分の一円領域でxの二重積分を求める。",
+      "summary": "四分の一円領域でxの二重積分を求める。",
+      "conditions": {
+        "領域": "\\(0\\le x\\le1,0\\le y\\le\\sqrt{1-x^2}\\)",
+        "積分": "\\(\\int\\int_R x\\,dxdy\\)"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(\\pi/3\\)",
+          "verdict": "条件に不一致",
+          "reason": "xを重みにした積分は円の角度や単なる面積と異なる。"
+        },
+        "2": {
+          "value": "\\(1/3\\)",
+          "verdict": "条件に一致",
+          "reason": "積分x√(1−x²)を0〜1で評価した1/3に一致する。"
+        },
+        "3": {
+          "value": "\\(\\pi/2\\)",
+          "verdict": "条件に不一致",
+          "reason": "半円の面積に相当し領域・被積分関数が違う。"
+        },
+        "4": {
+          "value": "\\(\\pi/4\\)",
+          "verdict": "条件に不一致",
+          "reason": "四分の一円の面積であり、xという重みを落としている。"
+        },
+        "5": {
+          "value": "\\(1/4\\)",
+          "verdict": "条件に不一致",
+          "reason": "同じ領域でのxの平均を単に1/πと仮定する根拠はない。積分で求めると1/3である。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/basic/page_009.png"
+      ],
+      "core_concept": "領域を読んだ累次積分と置換積分",
+      "required_knowledge": "四分の一円、積分順序、変数置換、面積と一次モーメント。",
+      "solution": "y方向に先に積分すると\\(\\int_0^1x\\sqrt{1-x^2}\\,dx\\)となる。t=1−x²、dt=−2xdxと置けば\\(\\frac12\\int_0^1\\sqrt t\\,dt=1/3\\)で2を選ぶ。領域面積π/4と重み付き積分を混同しない。",
+      "independent_answer": "2",
+      "answer_reason": "y方向に先に積分すると\\(\\int_0^1x\\sqrt{1-x^2}\\,dx\\)となる。t=1−x²、dt=−2xdxと置けば\\(\\frac12\\int_0^1\\sqrt t\\,dt=1/3\\)で2を選ぶ。領域面積π/4と重み付き積分を混同しない。",
+      "learning_points": "出力の型と条件を確認し、領域を読んだ累次積分と置換積分の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:jacobian",
+        "theory:analysis:quadrature"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "concept_023",
+      "classification_reason": "原典画像で全条件と5肢を照合。領域を読んだ累次積分と置換積分を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-BASIC-3-1",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "stem": "連鎖律で偏微分ベクトルを変換する2行2列行列を選ぶ。",
+      "summary": "連鎖律で偏微分ベクトルを変換する2行2列行列を選ぶ。",
+      "conditions": {
+        "関係": "\\(f=f(x,y),g=g(x,y),u=u(f,g)\\)",
+        "向き": "(ux,uy)の列=J(uf,ug)の列。",
+        "候補表記": "下付きは偏微分、セミコロンは行区切り。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((x_f,y_f;x_g,y_g)\\)",
+          "verdict": "条件に不一致",
+          "reason": "逆向きの座標関数の微分を使っている。"
+        },
+        "2": {
+          "value": "\\((f_x,f_y;g_x,g_y)\\)",
+          "verdict": "条件に不一致",
+          "reason": "行列を転置する必要があり、出力の各行がxとyになっていない。"
+        },
+        "3": {
+          "value": "\\((u_f,u_g;u_x,u_y)\\)",
+          "verdict": "条件に不一致",
+          "reason": "変換される関数uそのものの微分を係数としており、連鎖律の行列ではない。"
+        },
+        "4": {
+          "value": "\\((f_x,g_x;f_y,g_y)\\)",
+          "verdict": "条件に一致",
+          "reason": "ux=uf fx+ug gx、uy=uf fy+ug gyに一致する。"
+        },
+        "5": {
+          "value": "\\((x_f,x_g;y_f,y_g)\\)",
+          "verdict": "条件に不一致",
+          "reason": "逆向きの変換の係数であり、原典の向きとは違う。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/basic/page_010.png"
+      ],
+      "core_concept": "連鎖律の行列表示と転置",
+      "required_knowledge": "合成関数の微分、行列積、微分する変数の順序。",
+      "solution": "連鎖律を一行ずつ書くと\\(u_x=u_ff_x+u_gg_x,u_y=u_ff_y+u_gg_y\\)である。従ってJの行は(fx,gx)、(fy,gy)で4を選ぶ。ヤコビ行列という名前より、与えられた列ベクトルの掛け算を優先して向きを定める。",
+      "independent_answer": "4",
+      "answer_reason": "連鎖律を一行ずつ書くと\\(u_x=u_ff_x+u_gg_x,u_y=u_ff_y+u_gg_y\\)である。従ってJの行は(fx,gx)、(fy,gy)で4を選ぶ。ヤコビ行列という名前より、与えられた列ベクトルの掛け算を優先して向きを定める。",
+      "learning_points": "出力の型と条件を確認し、連鎖律の行列表示と転置の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:chain"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "concept_023",
+      "classification_reason": "原典画像で全条件と5肢を照合。連鎖律の行列表示と転置を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [
+        "mit_chain2007"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-BASIC-3-2",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "stem": "点aから単位ベクトルbの張る直線へ向かう垂線ベクトルを選ぶ。",
+      "summary": "点aから単位ベクトルbの張る直線へ向かう垂線ベクトルを選ぶ。",
+      "conditions": {
+        "始点": "aの終点。",
+        "終点": "原点を通りb方向の直線上の垂足。",
+        "条件": "\\(|b|=1\\)"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(a\\times b\\)",
+          "verdict": "条件に不一致",
+          "reason": "a,bの両方に垂直な向きであり、aから直線上の垂足への変位ではない。"
+        },
+        "2": {
+          "value": "\\((b\\cdot a)b-a\\)",
+          "verdict": "条件に一致",
+          "reason": "垂足の位置(b·a)bから始点aを引いたベクトルに一致する。"
+        },
+        "3": {
+          "value": "\\(b-a\\)",
+          "verdict": "条件に不一致",
+          "reason": "終点をbの端点に固定しており、その点が垂足である保証がない。"
+        },
+        "4": {
+          "value": "\\((b\\cdot a)b\\)",
+          "verdict": "条件に不一致",
+          "reason": "原点から垂足への位置ベクトルであり、始点aからの変位ではない。"
+        },
+        "5": {
+          "value": "\\(a\\times b-a\\)",
+          "verdict": "条件に不一致",
+          "reason": "終点a×bは一般にb方向の直線上にない。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/basic/page_010.png"
+      ],
+      "core_concept": "直線への射影と始点からの変位",
+      "required_knowledge": "単位方向ベクトル、内積、垂足、終点−始点。",
+      "solution": "垂足の位置は単位bへの射影\\(p=(a\\cdot b)b\\)である。求めるベクトルは始点aから終点pへのp−a、2である。その内積\\((p-a)\\cdot b=(a\\cdot b)|b|^2-a\\cdot b=0\\)で垂直性も検算できる。",
+      "independent_answer": "2",
+      "answer_reason": "垂足の位置は単位bへの射影\\(p=(a\\cdot b)b\\)である。求めるベクトルは始点aから終点pへのp−a、2である。その内積\\((p-a)\\cdot b=(a\\cdot b)|b|^2-a\\cdot b=0\\)で垂直性も検算できる。",
+      "learning_points": "出力の型と条件を確認し、直線への射影と始点からの変位の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:projection"
+      ],
+      "discipline_id": "basic_3_9",
+      "concept_id": "concept_022",
+      "classification_reason": "原典画像で全条件と5肢を照合。直線への射影と始点からの変位を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-3-1",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "パラメータを含む上三角行列の逆行列を選ぶ。",
+      "summary": "パラメータを含む上三角行列の逆行列を選ぶ。",
+      "conditions": {
+        "行列A": "\\((1,a,a^2;0,1,a;0,0,1)\\)",
+        "条件": "\\(a\\neq0\\)の実数。",
+        "表記": "セミコロンで行を区切る。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((1,-a,-a^2;0,1,-a;0,0,1)\\)",
+          "verdict": "条件に不一致",
+          "reason": "積の第1行第3列が−a²でゼロにならない。"
+        },
+        "2": {
+          "value": "\\((1,-a,0;0,1,-a;0,0,1)\\)",
+          "verdict": "条件に一致",
+          "reason": "上の非対角−aを打ち消し、第1行第3列も−a²+a²=0となる。"
+        },
+        "3": {
+          "value": "\\((1,a,0;0,1,a;0,0,1)\\)",
+          "verdict": "条件に不一致",
+          "reason": "第1行第2列と第2行第3列の符号が違う。"
+        },
+        "4": {
+          "value": "\\((1,0,-a^2;0,1,0;0,0,1)\\)",
+          "verdict": "条件に不一致",
+          "reason": "隣接する非対角aを打ち消す−aがない。"
+        },
+        "5": {
+          "value": "\\((1,-a,a^2;0,1,-a;0,0,1)\\)",
+          "verdict": "条件に不一致",
+          "reason": "積の第1行第3列がa²でゼロにならない。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/basic/page_008.png"
+      ],
+      "core_concept": "上三角行列の逆と結合項の相殺",
+      "required_knowledge": "行列積、正則性、上三角行列。",
+      "solution": "逆の第1行第2列と第2行第3列は−aである。第1行第3列をqとすると積のそこはq+a(−a)+a²=qなのでq=0、2を選ぶ。元のa²をそのまま符号反転すると結合項を二重に数える。",
+      "independent_answer": "2",
+      "answer_reason": "逆の第1行第2列と第2行第3列は−aである。第1行第3列をqとすると積のそこはq+a(−a)+a²=qなのでq=0、2を選ぶ。元のa²をそのまま符号反転すると結合項を二重に数える。",
+      "learning_points": "出力の型と条件を確認し、上三角行列の逆と結合項の相殺の定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:inverse"
+      ],
+      "discipline_id": "basic_3_3",
+      "concept_id": "linear_algebra_inverse",
+      "classification_reason": "原典画像で全条件と5肢を照合。上三角行列の逆と結合項の相殺を中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [
+        "mit_inverse2007"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-3-3",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "等間隔の3点を使うシンプソン法の式を選ぶ。",
+      "summary": "等間隔の3点を使うシンプソン法の式を選ぶ。",
+      "conditions": {
+        "点": "\\(b=a+h,c=a+2h,h>0\\)",
+        "区間": "aからc、全幅2h。",
+        "方式": "2次のニュートン・コーツ閉公式。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(\\frac h2(f(a)+f(c))\\)",
+          "verdict": "条件に不一致",
+          "reason": "全幅2hに対する台形則の半分であり、シンプソン法でもない。"
+        },
+        "2": {
+          "value": "\\(h(f(a)+f(c))\\)",
+          "verdict": "条件に不一致",
+          "reason": "これは全幅2hに対する台形則で、中点を使わない。"
+        },
+        "3": {
+          "value": "\\(\\frac h6(f(a)+4f(b)+f(c))\\)",
+          "verdict": "条件に不一致",
+          "reason": "重みの和がhとなり、定数関数の積分2hに足りない。"
+        },
+        "4": {
+          "value": "\\(\\frac h4(f(a)+4f(b)+f(c))\\)",
+          "verdict": "条件に不一致",
+          "reason": "重みの和が3h/2で、定数関数の積分2hに足りない。"
+        },
+        "5": {
+          "value": "\\(\\frac h3(f(a)+4f(b)+f(c))\\)",
+          "verdict": "条件に一致",
+          "reason": "両端1・中点4の重みへh/3を掛けるシンプソン法に一致する。"
+        }
+      },
+      "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。3点a,b,cが等間隔h、積分区間a〜cであることを曲線図で確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/basic/page_009.png"
+      ],
+      "core_concept": "区間幅の定義とシンプソン重み",
+      "required_knowledge": "二次補間、等間隔の3点、定数関数の検算。",
+      "solution": "3点を通る二次補間多項式を積分すると\\(\\frac h3[f(a)+4f(b)+f(c)]\\)となり5である。全幅は2hなので、全幅をHと書く別の表現なら係数H/6となる。記号の定義を読み替えずh/6を選ばない。",
+      "independent_answer": "5",
+      "answer_reason": "3点を通る二次補間多項式を積分すると\\(\\frac h3[f(a)+4f(b)+f(c)]\\)となり5である。全幅は2hなので、全幅をHと書く別の表現なら係数H/6となる。記号の定義を読み替えずh/6を選ばない。",
+      "learning_points": "出力の型と条件を確認し、区間幅の定義とシンプソン重みの定義から再計算する。",
+      "theory_references": [
+        "theory:analysis:quadrature"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "concept_023",
+      "classification_reason": "原典画像で全条件と5肢を照合。区間幅の定義とシンプソン重みを中心とする解析の問題である。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "1",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻には標準的な演算だが、成分の順序・求める量の型・変数変換の向きの確認を要する。"
+      },
+      "citations": [
+        "nist_quadrature"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

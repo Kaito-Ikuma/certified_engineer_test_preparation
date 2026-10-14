@@ -1,0 +1,45 @@
+{
+  "stem": "リサジュー図形、波の振動方向、衝撃波、縦横波の速さ、AMを判定する。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "範囲": "振動・波動の一般的説明。"
+  },
+  "choices": {
+    "1": {
+      "value": "垂直な単振動の合成軌道は一般にリサジュー図形という。",
+      "verdict": "適切",
+      "reason": "xとyの単振動の周波数比・位相差で軌道が変わる。比が有理なら閉曲線となる。"
+    },
+    "2": {
+      "value": "伝播方向と媒質の振動方向が一致する波を横波という。",
+      "verdict": "不適切",
+      "reason": "一致する波は縦波である。横波は伝播に垂直な振動を持つ。"
+    },
+    "3": {
+      "value": "衝撃波は媒質中を超音速で伝播する圧縮波である。",
+      "verdict": "適切",
+      "reason": "不連続な圧力等の変化を伴う圧縮の前面が、未擾乱側の小振幅音速を超えて進む。小振幅正弦波とは分ける。"
+    },
+    "4": {
+      "value": "一般に固体中の縦波は横波より速い。",
+      "verdict": "適切（一般的モデル）",
+      "reason": "安定な等方線形弾性体では縦波の復元力はK+4µ/3、横波はµなので、密度が同じなら縦波が速い。"
+    },
+    "5": {
+      "value": "AMは信号に応じて搬送波の振幅を変える方式である。",
+      "verdict": "適切",
+      "reason": "振幅包絡へ信号を入れる方式で、周波数を変えるFMと異なる。"
+    }
+  },
+  "figures": "原典の条件・数式・単位・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_002.png"
+  ],
+  "question_id": "R04-REG-APPLIED-05",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "12c80b227333a3892940cfb02ca7205f34c64161626a1ab8ed2db4a04cec5bea",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

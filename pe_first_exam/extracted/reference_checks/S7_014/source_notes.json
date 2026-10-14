@@ -1,0 +1,214 @@
+{
+  "checked_at": "2026-10-10T21:17:29+09:00",
+  "sources": [
+    {
+      "key": "gsj_rock_classification",
+      "author": "産総研地質調査総合センター",
+      "title": "岩石の分類",
+      "url": "https://www.gsj.jp/geology/fault-fold/formation/r-classification/r-classification.html"
+    },
+    {
+      "key": "gsj_igneous2021",
+      "author": "産総研地質調査総合センター",
+      "title": "斑れい岩類：その種類・成因と特徴",
+      "url": "https://www.gsj.jp/data/gcn/gsj_cn_vol10.no10_p235-241.pdf"
+    },
+    {
+      "key": "aist_crystal_colors",
+      "author": "産総研マルチマテリアル研究部門",
+      "title": "結晶構造ギャラリー：白雲母の色",
+      "url": "https://unit.aist.go.jp/mmri/ja/organization/db-nomura/crystal_gallery.html"
+    },
+    {
+      "key": "usgs_rock_thesaurus",
+      "author": "U.S. Geological Survey",
+      "title": "Lithologic classification of geologic map units",
+      "url": "https://apps.usgs.gov/thesaurus/thesaurus-full.php?thcode=4"
+    },
+    {
+      "key": "jma_magma1999",
+      "author": "気象庁",
+      "title": "地震・火山月報1999年5月：マグマの性質",
+      "url": "https://www.data.jma.go.jp/eqev/data/gaikyo/monthly/199905/monthly199905.pdf"
+    },
+    {
+      "key": "gsj_fuji_units",
+      "author": "産総研地質調査総合センター",
+      "title": "富士火山地質図第2版の凡例一覧",
+      "url": "https://gbank.gsj.jp/volcano/Act_Vol/fujisan/tbl/pdf/at1_pdf.pdf"
+    },
+    {
+      "key": "nelson_contact2011",
+      "author": "Stephen A. Nelson",
+      "title": "Contact Metamorphism (Tulane University)",
+      "url": "https://www2.tulane.edu/~sanelson/eens212/contactmeta.htm"
+    },
+    {
+      "key": "nelson_assemblages2011",
+      "author": "Stephen A. Nelson",
+      "title": "Metamorphic Mineral Assemblages (Tulane University)",
+      "url": "https://www2.tulane.edu/~sanelson/eens212/metaminerals.htm"
+    },
+    {
+      "key": "hokkaido_polymorph2012",
+      "author": "北海道大学地球惑星科学",
+      "title": "地学I 2012年第10回：高圧多形と準安定性",
+      "url": "https://www.ep.sci.hokudai.ac.jp/~keikei/chigaku1/arch2012/No10.pdf"
+    },
+    {
+      "key": "gsj_metamorphic_words",
+      "author": "産総研地質調査総合センター",
+      "title": "用語解説：変成岩",
+      "url": "https://gbank.gsj.jp/geowords/glossary/metamorphic.html"
+    },
+    {
+      "key": "nelson_regional2011",
+      "author": "Stephen A. Nelson",
+      "title": "Regional Metamorphism (Tulane University)",
+      "url": "https://www2.tulane.edu/~sanelson/eens212/regionalmetamorph.htm"
+    },
+    {
+      "key": "aist_awa2021",
+      "author": "産業技術総合研究所",
+      "title": "中央構造線が走る阿波池田地域の地質",
+      "url": "https://www.aist.go.jp/aist_j/press_release/pr2021/pr20210419_2/pr20210419_2.html"
+    },
+    {
+      "key": "tohoku_highpressure",
+      "author": "東北大学東北アジア研究センター",
+      "title": "日本海及びその周辺域の岩石",
+      "url": "https://www.cneas.tohoku.ac.jp/labs/geo/10oldpage/ishiwata/ISHKZHP/Japansea/Japansea.htm"
+    },
+    {
+      "key": "gsj_highpressure2016",
+      "author": "産総研地質調査総合センター",
+      "title": "九州の変成岩類と地質帯：GSJ地質ニュース5巻6号",
+      "url": "https://www.gsj.jp/data/gcn/gsj_cn_vol5.no6.pdf"
+    },
+    {
+      "key": "usgs_ash_density",
+      "author": "U.S. Geological Survey",
+      "title": "Volcanic Ash: Density and Hardness",
+      "url": "https://volcanoes.usgs.gov/volcanic_ash/density_hardness.html"
+    },
+    {
+      "key": "usgs_tephra_sizes",
+      "author": "U.S. Geological Survey",
+      "title": "Kilauea lava fountaining episode tephra clast sizes",
+      "url": "https://www.usgs.gov/media/images/kilauea-lava-fountaining-episode-tephra-clast-sizes"
+    },
+    {
+      "key": "usgs_pinatubo1996",
+      "author": "U.S. Geological Survey",
+      "title": "Fire and Mud: Pyroclastic-Flow Deposits (W. E. Scott and others)",
+      "url": "https://pubs.usgs.gov/pinatubo/wescott/"
+    },
+    {
+      "key": "usgs_tephra_fall",
+      "author": "U.S. Geological Survey",
+      "title": "Pre-1980 Tephra-Fall Deposits, Mount St. Helens: Introduction",
+      "url": "https://pubs.usgs.gov/pp/p1563/introduction.html"
+    },
+    {
+      "key": "usgs_bishop_tuff",
+      "author": "U.S. Geological Survey",
+      "title": "Bishop Tuff in Long Valley Caldera, California",
+      "url": "https://www.usgs.gov/volcanoes/long-valley-caldera/science/bishop-tuff-long-valley-caldera-california"
+    },
+    {
+      "key": "aist_accretion2026",
+      "author": "産業技術総合研究所",
+      "title": "ここにどうして蛇紋岩？",
+      "url": "https://www.aist.go.jp/aist_j/press_release/pr2026/pr20260724/pr20260724.html"
+    },
+    {
+      "key": "gsj_saganoseki1993",
+      "author": "産総研地質調査総合センター",
+      "title": "佐賀関地域の地質",
+      "url": "https://cdn.gsj.jp/ld/zfk/zfkdoc/0672/0672.html"
+    },
+    {
+      "key": "mlit_masa",
+      "author": "国土交通省中国地方整備局",
+      "title": "広島県に土砂災害が多いのはなぜ：花崗岩のマサ化",
+      "url": "https://www.cgr.mlit.go.jp/ootagawa/sand/west/page1/page1_04.html"
+    },
+    {
+      "key": "maff_shiras2017",
+      "author": "農林水産省",
+      "title": "シラス（火砕流堆積物）の特徴",
+      "url": "https://www.maff.go.jp/j/nousin/seko/gizyutu/attach/pdf/index-1.pdf"
+    },
+    {
+      "key": "gsj_shiras1957",
+      "author": "産総研地質調査総合センター",
+      "title": "霧島山地域の地質：シラス・水成シラス",
+      "url": "https://cdn.gsj.jp/ld/zfk/zfkdoc/0704/0704.html"
+    },
+    {
+      "key": "gsj_loess2002",
+      "author": "産総研地質調査総合センター",
+      "title": "関東平野の土壌中微量有害元素の地球化学的研究：土壌地球化学図の基礎研究（第3報）",
+      "url": "https://www.gsj.jp/data/bulletin/53_11_02.pdf"
+    },
+    {
+      "key": "loess2003",
+      "author": "東京地学協会",
+      "title": "風成塵・レス：地学雑誌112巻5号794--799頁",
+      "url": "https://www.jstage.jst.go.jp/article/jgeography1889/112/5/112_5_794/_pdf/-char/ja"
+    },
+    {
+      "key": "mlit_peat",
+      "author": "国土交通省北海道開発局札幌開発建設部",
+      "title": "泥炭地ってなに？",
+      "url": "https://www.hkd.mlit.go.jp/sp/sapporo_kitanougyou/kluhh4000000d6vw.html"
+    },
+    {
+      "key": "jseg_engineering_faq",
+      "author": "日本応用地質学会中国四国支部",
+      "title": "応用地質Q＆A中国四国版",
+      "url": "https://www.jseg.or.jp/chushikoku/faq/"
+    },
+    {
+      "key": "slaking1979",
+      "author": "農業土木学会",
+      "title": "スレーキング：農業土木学会誌47巻11号886頁",
+      "url": "https://www.jstage.jst.go.jp/article/jjsidre1965/47/11/47_11_886/_pdf"
+    },
+    {
+      "key": "slaking2006",
+      "author": "土木学会",
+      "title": "地下水質と空気供給状況を考慮した堆積性岩石の新しいスレーキング試験方法",
+      "url": "https://www.jstage.jst.go.jp/article/jscejc/62/2/62_2_335/_article/-char/ja"
+    },
+    {
+      "key": "kyoto_deep2018",
+      "author": "京都大学防災研究所",
+      "title": "九州の深層崩壊に関する資料：花崗岩・付加体の比較",
+      "url": "https://www.dpri.kyoto-u.ac.jp/web_j/publication/other/20180330_kyusyu.pdf"
+    },
+    {
+      "key": "sabo_deep2014",
+      "author": "砂防学会",
+      "title": "深層崩壊研究で思うこと",
+      "url": "https://www.jstage.jst.go.jp/article/sabo/66/6/66_1/_pdf"
+    },
+    {
+      "key": "jsce_swelling2010",
+      "author": "土木学会",
+      "title": "不撹乱粘土試料の一次元膨潤圧特性とその異方性",
+      "url": "https://www.jstage.jst.go.jp/article/jscejc/66/2/66_2_264/_pdf"
+    },
+    {
+      "key": "serpentinite_mechanics2003",
+      "author": "日本地すべり学会",
+      "title": "神居古潭帯に分布する蛇紋岩の不撹乱状態および再構成粘性土試料の力学特性",
+      "url": "https://www.jstage.jst.go.jp/article/jls2003/40/4/40_4_293/_article/-char/ja/"
+    }
+  ],
+  "limitations": [
+    "一次資料の本文・検索抜粋を照合。全参考PDFの全頁目視を意味しない。",
+    "付加体問題の公式1を支持する排他的根拠は未確定。",
+    "白雲母の原典有色分類と通常分類の不一致を保持。"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "海成泥岩の黄鉄鉱酸化・酸性排水・析出を区別する。",
+  "conditions": {
+    "原典照合": "22原典画像で25問の全五肢・数値・単位・否定を確認。",
+    "対象": "海成泥岩の黄鉄鉱酸化・酸性排水・析出を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "未酸化青黒泥岩と硫酸塩・石膏の盤膨れ",
+      "verdict": "代表的条件で適切",
+      "reason": "新鮮な還元状態の岩石が掘削後に水・酸素と反応し、硫酸塩が析出して結晶成長圧が生じ得る。未酸化のままで酸化反応が進むという矛盾した理解は避ける。"
+    },
+    "2": {
+      "value": "黄鉄鉱で酸性排水の可能性",
+      "verdict": "代表的条件で適切",
+      "reason": "酸素・水と反応すると硫酸イオンと酸を生む。反応量・緩衝能で実際の排水pHは変わる。"
+    },
+    "3": {
+      "value": "凝灰岩にすべり面",
+      "verdict": "代表的条件で適切",
+      "reason": "砂岩泥岩の間にある変質・軟化しやすい凝灰岩等が弱層となることがある。"
+    },
+    "4": {
+      "value": "すべり面が層理に平行",
+      "verdict": "代表的条件で適切",
+      "reason": "弱い層・連続する面の向きがすべりの経路に関係する。全すべり面が層理という限定ではない。"
+    },
+    "5": {
+      "value": "酸化フロントが地すべりを抑制",
+      "verdict": "不適切",
+      "reason": "酸化・溶解風化で結合が弱まり、すべりへつながり得るため、一方向の抑制とはしない。酸化生成物の間隙充填等がある場合も条件を分ける。"
+    }
+  },
+  "figures": "図表なしの五肢。原典画像は照合用で転載しない。",
+  "ambiguity": "酸化フロントにすべりが多いという頻度、泥岩の全岩種・全層序への一般化は未確定。未酸化試料の掘削後酸化と硫酸塩析出を時間順で補足。",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_010.png"
+  ],
+  "question_id": "R01-REG-APPLIED-29",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "7deda40efe54af6a21c699aec62a17b166bd139675bd7fe707dd228fa386398b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

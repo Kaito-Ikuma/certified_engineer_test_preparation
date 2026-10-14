@@ -1,0 +1,45 @@
+{
+  "stem": "動力・通信・化学・核の技術成果の順。",
+  "conditions": {
+    "時点": "平成30年度に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "ウエオイア",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "ウオアエイ",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "オウエアイ",
+      "verdict": "適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "4": {
+      "value": "オエウイア",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "5": {
+      "value": "アオウエイ",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "五項目の初出全原報は未取得。HaberとHahnの単独人物表記は共同の貢献の全体を示すとはしない。",
+  "evidence": [
+    "extracted/pages/H30/basic/page_020.png"
+  ],
+  "question_id": "H30-REG-BASIC-5-5",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "20",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "151dc6cba4d65df8c86f7dc30dc0e1e43b9090455ad4f89f1ece57dc12f107b9",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,43 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T10:29:55+09:00",
+  "paths": [
+    "data/batch_changes/S7_023_unit_math_revision_R05-REG-APPLIED-13_revision.json",
+    "extracted/corrected/R05-REG-APPLIED-13/7822dcf13ce87994c4925d8b384559e69a9e21c8ca712c451ed17f71c8518783.json",
+    "data/batch_changes/S7_023_unit_math_revision_R06-REG-APPLIED-16_revision.json",
+    "data/batch_changes/S7_023_unit_math_revision_H27-REG-APPLIED-05_revision.json",
+    "extracted/corrected/H27-REG-APPLIED-05/3cc19235c4a510fed9b60d27cebbe7932b0b090b0a5c1dd050e8fd84c2625c00.json",
+    "data/questions.csv",
+    "data/verification_records.csv",
+    "data/question_topics.csv",
+    "data/question_evaluations.csv",
+    "data/batch_changes/S7_023_unit_math_revision.csv",
+    "extracted/logs/batches/S7_023_unit_math_revision.json"
+  ],
+  "existed": {
+    "data/batch_changes/S7_023_unit_math_revision_R05-REG-APPLIED-13_revision.json": false,
+    "extracted/corrected/R05-REG-APPLIED-13/7822dcf13ce87994c4925d8b384559e69a9e21c8ca712c451ed17f71c8518783.json": false,
+    "data/batch_changes/S7_023_unit_math_revision_R06-REG-APPLIED-16_revision.json": false,
+    "data/batch_changes/S7_023_unit_math_revision_H27-REG-APPLIED-05_revision.json": false,
+    "extracted/corrected/H27-REG-APPLIED-05/3cc19235c4a510fed9b60d27cebbe7932b0b090b0a5c1dd050e8fd84c2625c00.json": false,
+    "data/questions.csv": true,
+    "data/verification_records.csv": true,
+    "data/question_topics.csv": true,
+    "data/question_evaluations.csv": true,
+    "data/batch_changes/S7_023_unit_math_revision.csv": false,
+    "extracted/logs/batches/S7_023_unit_math_revision.json": false
+  },
+  "sha256": {
+    "data/batch_changes/S7_023_unit_math_revision_R05-REG-APPLIED-13_revision.json": "621e944f5281ab9444ed2eb56ef987185a1a7588be4c3994be1534470852362e",
+    "extracted/corrected/R05-REG-APPLIED-13/7822dcf13ce87994c4925d8b384559e69a9e21c8ca712c451ed17f71c8518783.json": "7822dcf13ce87994c4925d8b384559e69a9e21c8ca712c451ed17f71c8518783",
+    "data/batch_changes/S7_023_unit_math_revision_R06-REG-APPLIED-16_revision.json": "da2e3b4b88ba9fa81a91db068529621bfbb90a22d48073f000e5292af5e63f0a",
+    "data/batch_changes/S7_023_unit_math_revision_H27-REG-APPLIED-05_revision.json": "83b628f996145d29f8bb6bfe6b64f4f6090fafd207a275cec6f914d2316de06e",
+    "extracted/corrected/H27-REG-APPLIED-05/3cc19235c4a510fed9b60d27cebbe7932b0b090b0a5c1dd050e8fd84c2625c00.json": "3cc19235c4a510fed9b60d27cebbe7932b0b090b0a5c1dd050e8fd84c2625c00",
+    "data/questions.csv": "6565834d64cb24027b37ac6dfaee00cba121bc5477bfa8dd1fc3a6b87cf0cb24",
+    "data/verification_records.csv": "0b528039fbe8d0c443909fc0cfb32674f48ed9de2cf8d26ac2244edfe988e7b4",
+    "data/question_topics.csv": "0b8c4ea4f94bf19e113ad8936377c72389c2c9167c82c6839b0fa050d3b3776b",
+    "data/question_evaluations.csv": "b86dfa8d9ded4b7799e4908f10a2e6db8d1e98e1caf97ac586d45f780b7432fc",
+    "data/batch_changes/S7_023_unit_math_revision.csv": "9c45f6cbda9d5f627b31224389eac4b03a04f575da9fc45ddf4540e21c63b74e",
+    "extracted/logs/batches/S7_023_unit_math_revision.json": "8644654ea844bb3ec69111a7c7c4dcfb4e82070c441156380d7902350d33f809"
+  }
+}

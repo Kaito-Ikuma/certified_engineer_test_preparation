@@ -1,0 +1,45 @@
+{
+  "stem": "結合次数・混成モデル・分子間相互作用を比較する。",
+  "conditions": {
+    "判断対象": "結合次数・混成モデル・分子間相互作用を比較する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "N2/O2/F2順に共有電子増で強い",
+      "verdict": "選ぶ候補",
+      "reason": "結合次数は3/2/1で逆。反結合性電子の占有も数える。"
+    },
+    "2": {
+      "value": "CH4/NH3/H2Oはsp3を反映",
+      "verdict": "選ばない候補",
+      "reason": "4電子領域のモデル。分子形は四面体/三角錐/折れ線と異なる。"
+    },
+    "3": {
+      "value": "NaClは静電引力と立方胞",
+      "verdict": "選ばない候補",
+      "reason": "NaCl型の慣用立方胞。"
+    },
+    "4": {
+      "value": "水はHの正電荷と水素結合で常温液体",
+      "verdict": "選ばない候補",
+      "reason": "通常の常圧条件で分子間水素結合が液体を安定化。"
+    },
+    "5": {
+      "value": "Ar/ナフタレンは分子性結晶",
+      "verdict": "選ばない候補",
+      "reason": "Arは単原子の分散力固体を広い分子性分類で含める用語。Ar分子や常温固体を意味しない。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "Arを分子性結晶と呼ぶ広義分類と単原子性を区別。水の常温液体は圧力等を要する。",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_005.png"
+  ],
+  "question_id": "R01-REG-APPLIED-17",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "d936a26fa2c1961953156680e89eeaa3d0654d400687cc15ba0a7e9b42368bad",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

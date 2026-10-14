@@ -1,0 +1,44 @@
+{
+  "stem": "大気密度の概数、界面の緯度差、主要成分の混合、オゾン分布と層序を比較する。",
+  "conditions": {
+    "方向": "最も不適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "10kmで質量密度は地表の約1/4。",
+      "verdict": "概数精度に疑義",
+      "reason": "原典は密度と記載。標準モデルで約0.414kg/m³対地表1.225、比約0.338となり1/4とは差がある。圧力比約0.26との混同があり得るが、原典を圧力へ改変しない。"
+    },
+    "2": {
+      "value": "対流圏界面は赤道より極域で高い。",
+      "verdict": "不適切",
+      "reason": "低緯度では深い対流と高温により界面は高い。逆にしたこの肢が明白な誤り。"
+    },
+    "3": {
+      "value": "N2/O2/Arの組成は数10kmまでほぼ一定。",
+      "verdict": "適切（主要成分）",
+      "reason": "均質圏の主要長寿命成分の混合比の概数。微量気体や水蒸気の分布は同じではない。"
+    },
+    "4": {
+      "value": "全オゾンの約10%が対流圏。",
+      "verdict": "適切（概数）",
+      "reason": "約90%成層圏という代表分布の補集合であり整合する。"
+    },
+    "5": {
+      "value": "下から対流圏・成層圏・中間圏・熱圏。",
+      "verdict": "適切",
+      "reason": "主として気温の鉛直勾配を基準とする区分である。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "肢1の10km密度1/4は標準モデル約0.34と差があり概数精度を査読待ち。原典の数値・密度という語は保持。",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_007.png"
+  ],
+  "question_id": "R07-REG-APPLIED-21",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "484df2a63f0f90f527125dfe2de269a199c1a02de812b27d4e7d96a0dd85532b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

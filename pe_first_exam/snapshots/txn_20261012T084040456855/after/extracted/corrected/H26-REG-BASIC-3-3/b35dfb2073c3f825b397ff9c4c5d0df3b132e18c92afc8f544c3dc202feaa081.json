@@ -1,0 +1,45 @@
+{
+  "stem": "Taylor展開で一階導関数に整合する差分式を判別する。",
+  "conditions": {
+    "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+    "成立条件": "正の等間隔Δ、格子番号i、必要な階数まで滑らかなf。有限幅の差分は導関数と恒等的に等しいとは限らず、Δ→0での整合性を判定する。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\((3f_i-4f_{i-1}+f_{i-2})/(2\\Delta)\\)",
+      "verdict": "適切",
+      "reason": "Taylor展開で定数と二次項が消え、一次項は2Δf′となる。二次精度の後退差分である。"
+    },
+    "2": {
+      "value": "\\((f_i-f_{i-1})/\\Delta\\)",
+      "verdict": "適切",
+      "reason": "一次精度の後退差分でありΔ→0でf′へ近づく。"
+    },
+    "3": {
+      "value": "\\((f_{i+1}-f_i)/\\Delta\\)",
+      "verdict": "適切",
+      "reason": "一次精度の前進差分であり一次導関数に整合する。"
+    },
+    "4": {
+      "value": "\\((f_{i+1}-f_{i-1})/(2\\Delta)\\)",
+      "verdict": "適切",
+      "reason": "対称点のTaylor展開を引くと2Δf′が残る。十分滑らかな関数では二次精度である。"
+    },
+    "5": {
+      "value": "\\((f_{i+1}-2f_i+f_{i-1})/\\Delta\\)",
+      "verdict": "不適切",
+      "reason": "分子はΔ²f″+高次項であり、Δで割るとΔf″となる。一次導関数へ収束しない。"
+    }
+  },
+  "figures": "図なし。数式と5候補を原本で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/basic/page_010.png"
+  ],
+  "question_id": "H26-REG-BASIC-3-3",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "10",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "f10664ccf149f315b1d3c21b197282a42f4d64219a30c7b1841aec5459f49187",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

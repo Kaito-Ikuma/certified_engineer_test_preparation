@@ -1,0 +1,176 @@
+[
+  {
+    "question_id": "H23-REG-BASIC-4-1",
+    "independent_answer": "2",
+    "official_answer": "2",
+    "matches": true
+  },
+  {
+    "question_id": "H24-REG-BASIC-4-1",
+    "independent_answer": "1",
+    "official_answer": "1",
+    "matches": true
+  },
+  {
+    "question_id": "H24-REG-BASIC-4-2",
+    "independent_answer": "3",
+    "official_answer": "3",
+    "matches": true
+  },
+  {
+    "question_id": "H24-REG-BASIC-4-4",
+    "independent_answer": "4",
+    "official_answer": "4",
+    "matches": true
+  },
+  {
+    "question_id": "H25-REG-BASIC-4-1",
+    "independent_answer": "2",
+    "official_answer": "2",
+    "matches": true
+  },
+  {
+    "question_id": "H25-REG-BASIC-4-2",
+    "independent_answer": "2",
+    "official_answer": "2",
+    "matches": true
+  },
+  {
+    "question_id": "H25-REG-BASIC-4-4",
+    "independent_answer": "3",
+    "official_answer": "3",
+    "matches": true
+  },
+  {
+    "question_id": "H25-REG-BASIC-4-6",
+    "independent_answer": "3",
+    "official_answer": "3",
+    "matches": true
+  },
+  {
+    "question_id": "H26-REG-BASIC-4-4",
+    "independent_answer": "4",
+    "official_answer": "4",
+    "matches": true
+  },
+  {
+    "question_id": "H27-REG-BASIC-4-3",
+    "independent_answer": "5",
+    "official_answer": "5",
+    "matches": true
+  },
+  {
+    "question_id": "H27-REG-BASIC-4-4",
+    "independent_answer": "1",
+    "official_answer": "1",
+    "matches": true
+  },
+  {
+    "question_id": "H28-REG-BASIC-4-1",
+    "independent_answer": "4",
+    "official_answer": "4",
+    "matches": true
+  },
+  {
+    "question_id": "H28-REG-BASIC-4-3",
+    "independent_answer": "3",
+    "official_answer": "3",
+    "matches": true
+  },
+  {
+    "question_id": "H29-REG-BASIC-4-1",
+    "independent_answer": "4",
+    "official_answer": "4",
+    "matches": true
+  },
+  {
+    "question_id": "H29-REG-BASIC-4-2",
+    "independent_answer": "5",
+    "official_answer": "5",
+    "matches": true
+  },
+  {
+    "question_id": "H29-REG-BASIC-4-4",
+    "independent_answer": "1",
+    "official_answer": "1",
+    "matches": true
+  },
+  {
+    "question_id": "H30-REG-BASIC-4-2",
+    "independent_answer": "5",
+    "official_answer": "5",
+    "matches": true
+  },
+  {
+    "question_id": "H30-REG-BASIC-4-3",
+    "independent_answer": "3",
+    "official_answer": "3",
+    "matches": true
+  },
+  {
+    "question_id": "R01-REG-BASIC-4-3",
+    "independent_answer": "4",
+    "official_answer": "4",
+    "matches": true
+  },
+  {
+    "question_id": "R01-RET-BASIC-4-3",
+    "independent_answer": "2",
+    "official_answer": "2",
+    "matches": true
+  },
+  {
+    "question_id": "R01-RET-BASIC-4-4",
+    "independent_answer": "4",
+    "official_answer": "4",
+    "matches": true
+  },
+  {
+    "question_id": "R02-REG-BASIC-4-2",
+    "independent_answer": "3",
+    "official_answer": "3",
+    "matches": true
+  },
+  {
+    "question_id": "R02-REG-BASIC-4-3",
+    "independent_answer": "4",
+    "official_answer": "4",
+    "matches": true
+  },
+  {
+    "question_id": "R02-REG-BASIC-4-5",
+    "independent_answer": "3",
+    "official_answer": "3",
+    "matches": true
+  },
+  {
+    "question_id": "R03-REG-BASIC-4-2",
+    "independent_answer": "4",
+    "official_answer": "4",
+    "matches": true
+  },
+  {
+    "question_id": "R03-REG-BASIC-4-4",
+    "independent_answer": "1",
+    "official_answer": "1",
+    "matches": true
+  },
+  {
+    "question_id": "R04-REG-BASIC-4-1",
+    "independent_answer": "2",
+    "official_answer": "2",
+    "matches": true
+  },
+  {
+    "question_id": "R05-REG-BASIC-4-4",
+    "independent_answer": "1",
+    "official_answer": "1",
+    "matches": true
+  },
+  {
+    "question_id": "R07-REG-BASIC-4-2",
+    "independent_answer": "3",
+    "official_answer": "3",
+    "matches": true
+  }
+]

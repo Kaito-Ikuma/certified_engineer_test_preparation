@@ -1,0 +1,45 @@
+{
+  "stem": "FeMnの溶存、火山地質ケイ酸、ORP、石灰岩反応と同位体緯度差を比較する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+  },
+  "choices": {
+    "1": {
+      "value": "河川水は地下水よりFeMnに富むことが多い。",
+      "verdict": "不適切",
+      "reason": "酸化的河川ではFeMn酸化物が析出し、還元地下水はFe2+・Mn2+が溶存し得る。一般の大小方向が逆である。"
+    },
+    "2": {
+      "value": "新生代火山系を流れる河川でケイ酸が高い傾向。",
+      "verdict": "適切（地質傾向）",
+      "reason": "火山性の反応しやすい物質からのケイ酸供給は高濃度へ寄与し得る。地質だけで全流域の濃度を固定しない。"
+    },
+    "3": {
+      "value": "大気共存水のORPは一般に正。",
+      "verdict": "適切（基準と条件）",
+      "reason": "酸素が供給される通常の天然水は酸化的で、電位は正側の傾向。電極基準・温度pH・混合電位を区別する。"
+    },
+    "4": {
+      "value": "石灰岩溶解でCa増・弱アルカリ・炭酸カルシウム型。",
+      "verdict": "反応は適切・名称疑義",
+      "reason": "石灰岩と炭酸の反応でCa・HCO3が増加する。原典の炭酸カルシウム型と通常のCa-HCO3名称を区別する。"
+    },
+    "5": {
+      "value": "降水酸素同位体値は赤道側で大きく極へ小さい。",
+      "verdict": "適切（一般傾向）",
+      "reason": "水蒸気の逐次凝結で重い同位体が除かれ、高緯度降水は相対的に低いδ18Oとなる一般傾向。局地気候等の例外もある。"
+    }
+  },
+  "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "原典は「炭酸カルシウム型」である。通常の主要溶存イオンによる名称はCa-HCO3（炭酸水素カルシウム）型で、CaCO3分子が主成分との理解は誤る。原典の名称を保持して部分校正。",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_006.png"
+  ],
+  "question_id": "R01-REG-APPLIED-20",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "01cc191ab523e305f5d4bec1714c1b318979584450704e3927bc690f83f2ffc4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

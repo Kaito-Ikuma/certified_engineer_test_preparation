@@ -1,0 +1,34 @@
+{
+  "status": "committed",
+  "time": "2026-10-12T02:00:17+09:00",
+  "paths": [
+    "data/batch_changes/S7_030_standard_name_revision1_H27-REG-BASIC-1-6_revision.json",
+    "extracted/corrected/H27-REG-BASIC-1-6/ba4300189bc164096452da5dd64fd6a31cf3dbe3c465123d48c41f0e15cf0b56.json",
+    "data/questions.csv",
+    "data/verification_records.csv",
+    "data/question_topics.csv",
+    "data/question_evaluations.csv",
+    "data/batch_changes/S7_030_standard_name_revision1.csv",
+    "extracted/logs/batches/S7_030_standard_name_revision1.json"
+  ],
+  "existed": {
+    "data/batch_changes/S7_030_standard_name_revision1_H27-REG-BASIC-1-6_revision.json": false,
+    "extracted/corrected/H27-REG-BASIC-1-6/ba4300189bc164096452da5dd64fd6a31cf3dbe3c465123d48c41f0e15cf0b56.json": false,
+    "data/questions.csv": true,
+    "data/verification_records.csv": true,
+    "data/question_topics.csv": true,
+    "data/question_evaluations.csv": true,
+    "data/batch_changes/S7_030_standard_name_revision1.csv": false,
+    "extracted/logs/batches/S7_030_standard_name_revision1.json": false
+  },
+  "sha256": {
+    "data/batch_changes/S7_030_standard_name_revision1_H27-REG-BASIC-1-6_revision.json": "abb1db5775ba773f222b7aa2cef80f42c409905e5406c9aedf9c22cac59aa57c",
+    "extracted/corrected/H27-REG-BASIC-1-6/ba4300189bc164096452da5dd64fd6a31cf3dbe3c465123d48c41f0e15cf0b56.json": "ba4300189bc164096452da5dd64fd6a31cf3dbe3c465123d48c41f0e15cf0b56",
+    "data/questions.csv": "b6ad383d9d091e99ad9c0891f3e5f1c52c2eedb9e0ff7d9327804a4ca9be1264",
+    "data/verification_records.csv": "5fb59c029a68235ac29ebbca881731431fdf31ab808be12ada0ed1a91f9eb629",
+    "data/question_topics.csv": "f583946088271d056556301d32fb27f8eac2f2950ba22995fe22839babd8a2a0",
+    "data/question_evaluations.csv": "d04d02af204de7bbff19616b7ac193e9613259a42058bed1acf0d83d6a06a43c",
+    "data/batch_changes/S7_030_standard_name_revision1.csv": "9c45f6cbda9d5f627b31224389eac4b03a04f575da9fc45ddf4540e21c63b74e",
+    "extracted/logs/batches/S7_030_standard_name_revision1.json": "199ab3f3605b4be6ee9e8dca7df2167d7c7804865aa3749dcdd0d691d18e0ab1"
+  }
+}

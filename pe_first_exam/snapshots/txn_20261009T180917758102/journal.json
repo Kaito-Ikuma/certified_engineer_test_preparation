@@ -1,0 +1,16 @@
+{
+  "status": "committed",
+  "time": "2026-10-09T18:09:17+09:00",
+  "paths": [
+    "extracted/logs/draft_build_manifest.json",
+    "extracted/logs/S7_pdf_visual_85/manifest.json"
+  ],
+  "existed": {
+    "extracted/logs/draft_build_manifest.json": true,
+    "extracted/logs/S7_pdf_visual_85/manifest.json": false
+  },
+  "sha256": {
+    "extracted/logs/draft_build_manifest.json": "45c506690c50f39541165f9087aab3ccd6327feebe5186f099adcc97db0d99ca",
+    "extracted/logs/S7_pdf_visual_85/manifest.json": "45c506690c50f39541165f9087aab3ccd6327feebe5186f099adcc97db0d99ca"
+  }
+}

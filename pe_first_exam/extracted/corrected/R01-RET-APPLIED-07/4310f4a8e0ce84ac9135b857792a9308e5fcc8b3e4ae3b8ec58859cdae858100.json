@@ -1,0 +1,45 @@
+{
+  "stem": "BCCの格子定数から最近接距離を求める。",
+  "conditions": {
+    "判断対象": "BCCの格子定数から最近接距離を求める。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "√3d/2",
+      "verdict": "選ぶ候補",
+      "reason": "体対角線の隅から体中心までの半分。"
+    },
+    "2": {
+      "value": "d/√2",
+      "verdict": "選ばない候補",
+      "reason": "FCCの関係。"
+    },
+    "3": {
+      "value": "√3d",
+      "verdict": "選ばない候補",
+      "reason": "体対角線全長で最近接の2倍。"
+    },
+    "4": {
+      "value": "√2d",
+      "verdict": "選ばない候補",
+      "reason": "面対角線全長。"
+    },
+    "5": {
+      "value": "d",
+      "verdict": "選ばない候補",
+      "reason": "隅どうしの胞辺で体中心はさらに近い。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_003.png"
+  ],
+  "question_id": "R01-RET-APPLIED-07",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "adf5611b441a28b99e9315d35b94b80853af86ae0d0d5170acdbe80a1d40959c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

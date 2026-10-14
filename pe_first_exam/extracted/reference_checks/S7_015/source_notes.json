@@ -1,0 +1,81 @@
+{
+  "checked_at": "2026-10-10T21:42:41+09:00",
+  "sources": [
+    {
+      "key": "os_doppler",
+      "title": "University Physics Volume 1, 17.7 The Doppler Effect",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/17-7-the-doppler-effect",
+      "checked_claim": "音源と観測者の速度を媒質に対して測り、波長と通過速度を区別する。"
+    },
+    {
+      "key": "os_sound",
+      "title": "University Physics Volume 1, 17.2 Speed of Sound",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/17-2-speed-of-sound",
+      "checked_claim": "復元力と密度、気体の温度依存、通常の流体音波と固体波を確認。"
+    },
+    {
+      "key": "os_superposition",
+      "title": "University Physics Volume 1, 16.5 Interference of Waves",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/16-5-interference-of-waves",
+      "checked_claim": "線形波の重ね合わせと相対位相の役割。"
+    },
+    {
+      "key": "os_lens",
+      "title": "University Physics Volume 3, 2.4 Thin Lenses",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/2-4-thin-lenses",
+      "checked_claim": "実像・虚像と符号、レンズ方程式、倍率、複数レンズ。"
+    },
+    {
+      "key": "os_thinfilm",
+      "title": "University Physics Volume 3, 3.4 Interference in Thin Films",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/3-4-interference-in-thin-films",
+      "checked_claim": "反射時のπ位相差と2ntの伝播位相を別々に足す。明環の次数の開始値は問題原典と別に確認。"
+    },
+    {
+      "key": "os_double",
+      "title": "University Physics Volume 3, 4.3 Double-Slit Diffraction",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/4-3-double-slit-diffraction",
+      "checked_claim": "複数スリットの干渉と単スリット包絡の区別。"
+    },
+    {
+      "key": "os_grating",
+      "title": "University Physics Volume 3, 4.4 Diffraction Gratings",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/4-4-diffraction-gratings",
+      "checked_claim": "主極大位置d sinθ=mλ。本数Nは主極大間隔ではなく幅・副極大と関係。"
+    },
+    {
+      "key": "os_fiber",
+      "title": "University Physics Volume 3, 1.4 Total Internal Reflection",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/1-4-total-internal-reflection",
+      "checked_claim": "高屈折率側から低屈折率側への全反射と光ファイバ。"
+    },
+    {
+      "key": "os_spectrum",
+      "title": "University Physics Volume 2, 16.5 The Electromagnetic Spectrum",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/16-5-the-electromagnetic-spectrum",
+      "checked_claim": "電磁波領域の波長・周波数の順序。"
+    },
+    {
+      "key": "os_photoelectric",
+      "title": "University Physics Volume 3, 6.2 Photoelectric Effect",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/6-2-photoelectric-effect",
+      "checked_claim": "光子エネルギーと仕事関数、閾値。"
+    },
+    {
+      "key": "os_matter",
+      "title": "University Physics Volume 3, 6.5 De Broglie’s Matter Waves",
+      "url": "https://openstax.org/books/university-physics-volume-3/pages/6-5-de-broglies-matter-waves",
+      "checked_claim": "電子線回折は物質波の証拠で、光子の粒子性とは対象が異なる。"
+    },
+    {
+      "key": "mit_optics2014",
+      "title": "Optics, Spring 2014: Lecture Notes",
+      "url": "https://ocw.mit.edu/courses/2-71-optics-spring-2014/pages/lecture-notes/",
+      "checked_claim": "幾何光学、波動光学、干渉の講義構成を参照。講義PDF全頁読了ではない。"
+    }
+  ],
+  "limitations": [
+    "ウェブ本文と検索抜粋を照合。講義PDFの全頁目視を意味しない。",
+    "複スリット暗線の括弧と明環次数の開始値は原典の疑義として保持。"
+  ]
+}

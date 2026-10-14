@@ -1,0 +1,116 @@
+{
+  "checked_at": "2026-10-11T19:27:56+09:00",
+  "sources": [
+    {
+      "key": "saf_ra2006",
+      "title": "危険性又は有害性等の調査等に関する指針について（2006年3月10日）",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb3050&dataType=1&pageNo=1",
+      "checked_claim": "公開本文の指針と解説：統括管理/職場参加、実施時期、軽微除外の限定、疲労、非数値化/行列/演算/グラフ、設計工学管理保護具順位、著しい不均衡と重大危害例外、暫定措置、記録を確認。"
+    },
+    {
+      "key": "saf_ra_effects",
+      "title": "リスクアセスメントとは・目的と効果",
+      "url": "https://www.mhlw.go.jp/content/11300000/kagaku2-2.pdf",
+      "checked_claim": "公開3頁の流れ、5効果、守るべき決め事の理由、職場全員参加の感受性を確認。専門家の分析一般の否定とリスト不一致を分ける。"
+    },
+    {
+      "key": "saf_guide51",
+      "title": "ISO/IEC Guide 51:2014: Safety aspects",
+      "url": "https://www.iso.org/standard/53940.html",
+      "checked_claim": "公式メタデータで2014版・2025再確認を確認。本文公開リンクの移転先fetchは403で未読。規格全文照合済みとはしない。"
+    },
+    {
+      "key": "saf_iso31000",
+      "title": "ISO 31000:2018: Risk management Guidelines",
+      "url": "https://www.iso.org/standard/65694.html",
+      "checked_claim": "公式公開説明・検索可視テキストで版2018、目的、特定分析評価対応・監視伝達を確認。規格有料本文全体は未読。"
+    },
+    {
+      "key": "saf_jis31010",
+      "title": "JIS Q 31010:2012 English preview",
+      "url": "https://webdesk.jsa.or.jp/preview/pre_jis_q_31010_000_000_2012_e_ed10_i4.pdf",
+      "checked_claim": "取得PDFの物理1頁画像を目視。対応はIEC/ISO31010:2009、Risk management—Risk assessment techniques。H28前文のISO31000対応と区別。5頁全規格の本文確認ではない。"
+    },
+    {
+      "key": "saf_aeha",
+      "title": "事業者の方へ：安全確保のための表示",
+      "url": "https://www.aeha.or.jp/safety/maker/",
+      "checked_claim": "公開ページで表示指針と危険/警告/注意の区分・第5版2020リンクを確認。ページ送り版は本文未読、2013出題当時の版未照合。"
+    },
+    {
+      "key": "saf_icrp103",
+      "title": "Publication 103: Free extract",
+      "url": "https://www.icrp.org/docs/ICRP_Publication_103-Annals_of_the_ICRP_37%282-4%29-Free_extract.pdf",
+      "checked_claim": "公開検索の主な変更(e)-(g)で低線量の線形応答を仮定する防護モデルを確認。全勧告の通読ではない。"
+    },
+    {
+      "key": "saf_icrpaedia",
+      "title": "Fundamental Principles of Radiological Protection",
+      "url": "https://www.icrpaedia.org/index.php/Fundamental_Principles_of_Radiological_Protection",
+      "checked_claim": "公式解説の103第203項の経済社会条件、線量/人数/確率、個人の制約と211項の3曝露状況の最適化を確認。"
+    },
+    {
+      "key": "saf_food2023",
+      "title": "食品中の汚染物質に係る基準値設定のための考え方（2023年12月11日）",
+      "url": "https://www.mhlw.go.jp/content/11121000/001177201.pdf",
+      "checked_claim": "公開3頁を読解。2008年方針とALARA、国内汚染/摂取の検討、国際基準と曝露の検証。2008年原方針全文は取得不能で未読。"
+    },
+    {
+      "key": "saf_fsc_psych",
+      "title": "食品のリスクコミュニケーションと心理学（2007年1月12日講義資料）",
+      "url": "https://www.fsc.go.jp/koukan/kouza190112/kouza190112_siryou2.pdf",
+      "checked_claim": "該当公開頁の自発性と便益、相互作用、専門家の判断を受入れさせることだけが目的でない、関係者参加・透明性を確認。三乗・1000倍という経験値を普遍則として教材化しない。"
+    },
+    {
+      "key": "saf_fsc_glossary",
+      "title": "用語集：リスクコミュニケーション",
+      "url": "https://www.fsc.go.jp/yougoshu/kensaku_comu.html",
+      "checked_claim": "公的用語集を確認、認識・意見・情報の交換として扱い、一方的説得や必ず合意する技術とはしない。"
+    },
+    {
+      "key": "saf_parliament2006",
+      "title": "Fifth Report: ALARP and Gross Disproportion（2006）",
+      "url": "https://publications.parliament.uk/pa/ld200506/ldselect/ldeconaf/183/18308.htm",
+      "checked_claim": "第61-64段落で許容不能/条件付き/広く受容の3水準、著しい不均衡の概念と倍率の一律未定義を確認。委員会によるHSEの説明・批評でありHSE規格本文ではない。"
+    },
+    {
+      "key": "saf_welfare",
+      "title": "社会福祉施設の労働災害防止資料：ヒヤリ・ハット活動",
+      "url": "https://www.mhlw.go.jp/file/06-Seisakujouhou-11300000-Roudoukijunkyokuanzeneiseibu/0000110463.pdf",
+      "checked_claim": "ローカル物理8-9/印刷44-45頁画像を目視。1:29:300と報告者を責めない/保護、早期改善、共有を確認。Heinrich原著の同一人330や数千の集計条件までは未確認。"
+    },
+    {
+      "key": "saf_4s",
+      "title": "職場のあんぜんサイト：4S",
+      "url": "https://anzeninfo.mhlw.go.jp/yougo/yougo61_1.html",
+      "checked_claim": "公開本文で整理・整頓・清掃・清潔、しつけを加えて5S、維持する活動を確認。"
+    },
+    {
+      "key": "saf_chem2016",
+      "title": "労働安全衛生法の改正について（ラベル・リスクアセスメント関係）",
+      "url": "https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000094015.html",
+      "checked_claim": "2014公布・2016June1施行、関連政省令/指針の時点を公式メタデータと本文で確認。"
+    },
+    {
+      "key": "saf_chemqa",
+      "title": "化学物質対策に関するQ&A（リスクアセスメント関係）",
+      "url": "https://www.mhlw.go.jp/stf/newpage_11389.html",
+      "checked_claim": "公開Q3-2〜3-6、Q4-1本文で指定対象、業種規模、一般消費者製品除外と業務用製品の別を確認。前コンテキストで濃度と実施契機も確認。全物質への無条件義務としない。"
+    },
+    {
+      "key": "saf_healthreport",
+      "title": "健康診断を実施しましょう",
+      "url": "https://jsite.mhlw.go.jp/gunma-roudoukyoku/hourei_seido_tetsuzuki/anzen_eisei/anzen17/kenkoushindan.html",
+      "checked_claim": "群馬労働局本文の健康診断実施後措置5で規則44/45/48の結果報告は常時50人以上、特殊健診は実施した全事業者を確認。一般の定期等と特殊の報告条件を区別。"
+    }
+  ],
+  "local_sha256": {
+    "ISO_Guide51.pdf": "529dcc8e97fd0049012915c09b8e3c38ccaabfa14056d63f0489b0be9eb9abcc",
+    "JIS_Q31010_preview.pdf": "34b3c655703772c7e0ea1d43d1b7fc42ca492d4c050fe1bfaf7d98777c3ba832",
+    "MHLW_welfare_safety.pdf": "f0aa149560b098d612798a41e5b62caeab37ece99e4420fe0a506fd79cc6188a"
+  },
+  "limitations": [
+    "ISO_Guide51.pdfは136Bの移転案内テキストでPDFではない。移転先ISO fetchは通常/承認済みネットワークとも403。全文を確認した根拠には使わない。",
+    "JSA表紙、MHLW物理8-9の計3画像を実目視。規格原文未取得や集計母集団疑義は各問に残す。"
+  ]
+}

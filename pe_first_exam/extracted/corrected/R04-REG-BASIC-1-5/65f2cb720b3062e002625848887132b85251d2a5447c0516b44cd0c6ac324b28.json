@@ -1,0 +1,46 @@
+{
+  "stem": "等分布荷重を受ける単純支持梁の断面寸法と、最大曲げ応力・たわみのべき依存性を導く。",
+  "conditions": {
+    "判断方向": "空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。",
+    "原典照合": "16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。",
+    "前提": "解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。"
+  },
+  "choices": {
+    "1": {
+      "value": "3・比例・4・3",
+      "verdict": "不適合",
+      "reason": "列2は反比例であり比例ではない。列4は2であり3ではない。"
+    },
+    "2": {
+      "value": "4・比例・3・2",
+      "verdict": "不適合",
+      "reason": "列1は3であり4ではない。列2は反比例であり比例ではない。列3は4であり3ではない。"
+    },
+    "3": {
+      "value": "3・反比例・4・2",
+      "verdict": "適合（前提内）",
+      "reason": "曲げ応力は断面係数Zの逆数、変位は断面二次モーメントIの逆数という二つの依存性に適合する。"
+    },
+    "4": {
+      "value": "4・反比例・3・3",
+      "verdict": "不適合",
+      "reason": "列1は3であり4ではない。列3は4であり3ではない。列4は2であり3ではない。"
+    },
+    "5": {
+      "value": "3・反比例・4・3",
+      "verdict": "不適合",
+      "reason": "列4は2であり3ではない。"
+    }
+  },
+  "figures": "原典の図又は表の各条件と記号を照合。元図は転載せず式と独自説明を用いる。",
+  "ambiguity": "径/高さを変える比較でq,L,E（矩形は幅b）を固定する前提が必要。自重のみでqが断面積に比例して変わる円梁なら応力はdの逆1乗、たわみは逆2乗となる。試験の通常の固定荷重解と区別。",
+  "evidence": [
+    "extracted/pages/R04/basic/page_003.png"
+  ],
+  "question_id": "R04-REG-BASIC-1-5",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "3",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "a5dd7767edf7da00d130ce7d5b3b6ad3f754dd552ec47072ac0ae8dcf2168a93",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

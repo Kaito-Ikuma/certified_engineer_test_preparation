@@ -1,0 +1,44 @@
+{
+  "stem": "形式文法で生成できる数値列を、符号と整数部分の規則から判断する。",
+  "conditions": {
+    "生成規則": "数値→整数/小数/整数小数、整数→数字列/符号数字列、小数→点数字列、数字列は非空"
+  },
+  "choices": {
+    "1": {
+      "value": "-19.1",
+      "verdict": "適切",
+      "reason": "符号-と数字列19が整数を生成し、小数.1と結合できる。"
+    },
+    "2": {
+      "value": ".52",
+      "verdict": "適切",
+      "reason": "小数点と非空数字列52で小数だけを生成できる。"
+    },
+    "3": {
+      "value": "-.37",
+      "verdict": "不適切",
+      "reason": "符号は整数の生成規則にだけ現れ、整数には必ず数字列が要る。整数桁のない-.37は生成不能。"
+    },
+    "4": {
+      "value": "4.35",
+      "verdict": "適切",
+      "reason": "整数4と小数.35の結合で生成できる。"
+    },
+    "5": {
+      "value": "-125",
+      "verdict": "適切",
+      "reason": "符号-と数字列125で整数を生成できる。"
+    }
+  },
+  "figures": "問題幹・全5肢・数値・単位・否定を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_009.png"
+  ],
+  "question_id": "R01-REG-BASIC-2-4",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "9",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "c608358885a3f3ec99cbd8974e0f5f65ca85fde5933da3ae419074c59da4c7ae",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

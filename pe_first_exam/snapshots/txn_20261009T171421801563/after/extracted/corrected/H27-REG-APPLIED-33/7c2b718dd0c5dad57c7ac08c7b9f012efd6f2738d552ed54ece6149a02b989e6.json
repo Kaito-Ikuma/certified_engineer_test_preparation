@@ -1,0 +1,44 @@
+{
+  "stem": "測位衛星の時刻信号で位置を求める衛星測位システム全般の略称を選ぶ。",
+  "conditions": {
+    "選択方向": "最も適切なもの"
+  },
+  "choices": {
+    "1": {
+      "value": "GALILEO",
+      "verdict": "不適切",
+      "reason": "欧州の個別システム名であり、全般の総称ではない。"
+    },
+    "2": {
+      "value": "GLONASS",
+      "verdict": "不適切",
+      "reason": "ロシアの個別システム名である。"
+    },
+    "3": {
+      "value": "GNSS",
+      "verdict": "適切",
+      "reason": "Global Navigation Satellite Systemの略で、衛星測位システムの総称に対応する。"
+    },
+    "4": {
+      "value": "GPS",
+      "verdict": "不適切",
+      "reason": "米国の個別システム名である。"
+    },
+    "5": {
+      "value": "QZSS",
+      "verdict": "不適切",
+      "reason": "日本の準天頂衛星システムである。GNSSに関連する地域的システムを含めた総称と、その一システムを区別する。"
+    }
+  },
+  "figures": "図なし。否定方向と全5肢を原典ページ画像で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_013.png"
+  ],
+  "question_id": "H27-REG-APPLIED-33",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "13",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "0c6fda49c4f8f6be8055eb096511fac9a1925a331aec7c1ffe0251e202d06e59",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

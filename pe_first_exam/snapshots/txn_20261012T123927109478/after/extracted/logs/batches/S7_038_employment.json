@@ -1,0 +1,21 @@
+{
+  "time": "2026-10-12T12:39:27+09:00",
+  "questions": [
+    "H24-REG-APT-03",
+    "H25-REG-APT-03",
+    "H25-REG-APT-04",
+    "H26-REG-APT-05",
+    "H27-REG-APT-11",
+    "H29-REG-APT-04",
+    "R04-REG-APT-05",
+    "H29-REG-APT-05",
+    "H30-REG-APT-12",
+    "R01-REG-APT-12",
+    "R02-REG-APT-13",
+    "R06-REG-APT-10",
+    "R07-REG-APT-15"
+  ],
+  "source_conditions_checked": 13,
+  "solution_drafts": 13,
+  "final_verification": false
+}

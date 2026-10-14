@@ -1,0 +1,45 @@
+{
+  "stem": "FTIRとフィッショントラックを区別する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "FTIRとフィッショントラックを区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "FTIR／フィッショントラック",
+      "verdict": "不適切",
+      "reason": "FTIRはFourier Transform Infrared。フィッショントラックは核分裂飛跡を用いる別方法。"
+    },
+    "2": {
+      "value": "EPMA／電子線マイクロアナライザー",
+      "verdict": "通常の条件で適切",
+      "reason": "Electron Probe Microanalyzerで局所に電子線を照射し特性X線等を測る。"
+    },
+    "3": {
+      "value": "GC/MS／ガスクロマトグラフ質量分析",
+      "verdict": "通常の条件で適切",
+      "reason": "GCで分離した成分をMSで測定する複合方法。"
+    },
+    "4": {
+      "value": "NAA／中性子放射化分析",
+      "verdict": "通常の条件で適切",
+      "reason": "Neutron Activation Analysis。中性子照射後に生じる放射性核種等の信号から元素を分析する。"
+    },
+    "5": {
+      "value": "XRF／蛍光X線",
+      "verdict": "通常の条件で適切",
+      "reason": "X-ray Fluorescenceである。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_006.png"
+  ],
+  "question_id": "R06-REG-APPLIED-19",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "dd54df590f50339e03b7da431772ad526e76c7f6839898f7bd3d9df84a928173",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

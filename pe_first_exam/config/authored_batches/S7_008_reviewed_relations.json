@@ -1,0 +1,72 @@
+{
+  "relations": [
+    {
+      "left_question_id": "H24-REG-APPLIED-24",
+      "right_question_id": "R01-RET-APPLIED-25",
+      "relation_type": "parameter_variant",
+      "shared_concept": "不透明鉱物と透過薄片",
+      "shared_method": "黄鉄鉱の不透明性を他の透過可能な候補と比較する",
+      "numerical_differences": "数値条件なし。鉱物名・観察条件・定義を全肢比較。",
+      "negation_differences": "最も一般的でない／最も不適切、又は最も同定困難という方向をそれぞれ照合。",
+      "choice_differences": "共通4鉱物を並べ替え、ジルコンを斜長石へ変更。黄鉄鉱の位置は1→3。透過指定がないことも両方で確認。",
+      "figure_differences": "両方図なし。",
+      "temporal_differences": "時点依存の法令・基準・観測値なし。",
+      "evidence": "両問題の原典ページ画像と全5肢を比較。S7_008の校正JSON・evidenceに追跡可能。自動類似度だけによる承認ではない。",
+      "approval_status": "verified",
+      "source_hash_left": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "source_hash_right": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "rubric_version": "1.0-review1"
+    },
+    {
+      "left_question_id": "H26-REG-APPLIED-28",
+      "right_question_id": "H29-REG-APPLIED-27",
+      "relation_type": "near_repeat",
+      "shared_concept": "花こう岩の構成鉱物",
+      "shared_method": "石英・2長石・黒雲母に対してかんらん石が一般的でないと判定",
+      "numerical_differences": "数値条件なし。鉱物名・観察条件・定義を全肢比較。",
+      "negation_differences": "最も一般的でない／最も不適切、又は最も同定困難という方向をそれぞれ照合。",
+      "choice_differences": "黒雲母、石英、カリ長石、かんらん石、斜長石という5候補と並びは一致。問いの表現の差だけで、正答4は一致。",
+      "figure_differences": "両方図なし。",
+      "temporal_differences": "時点依存の法令・基準・観測値なし。",
+      "evidence": "両問題の原典ページ画像と全5肢を比較。S7_008の校正JSON・evidenceに追跡可能。自動類似度だけによる承認ではない。",
+      "approval_status": "verified",
+      "source_hash_left": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "source_hash_right": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "rubric_version": "1.0-review1"
+    },
+    {
+      "left_question_id": "H25-REG-APPLIED-23",
+      "right_question_id": "R03-REG-APPLIED-25",
+      "relation_type": "same_concept",
+      "shared_concept": "造岩鉱物の光学的識別と劈開",
+      "shared_method": "オープン・クロスの性質を切断面とともに判定",
+      "numerical_differences": "数値条件なし。鉱物名・観察条件・定義を全肢比較。",
+      "negation_differences": "最も一般的でない／最も不適切、又は最も同定困難という方向をそれぞれ照合。",
+      "choice_differences": "H25は黒雲母の二方向劈開が誤り4、R03は石英の顕著な劈開が誤り4。同じ番号でも誤る対象が違う。他の肢は屈折率比較・斜長石累帯対輝石消光・角閃石多色性などで異なる。",
+      "figure_differences": "両方図なし。",
+      "temporal_differences": "時点依存の法令・基準・観測値なし。",
+      "evidence": "両問題の原典ページ画像と全5肢を比較。S7_008の校正JSON・evidenceに追跡可能。自動類似度だけによる承認ではない。",
+      "approval_status": "verified",
+      "source_hash_left": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "source_hash_right": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "rubric_version": "1.0-review1"
+    },
+    {
+      "left_question_id": "R03-REG-APPLIED-22",
+      "right_question_id": "R06-REG-APPLIED-23",
+      "relation_type": "same_concept",
+      "shared_concept": "多形と固溶体",
+      "shared_method": "組成が同じか、結晶構造の型が同じかの二軸で分類",
+      "numerical_differences": "数値条件なし。鉱物名・観察条件・定義を全肢比較。",
+      "negation_differences": "最も一般的でない／最も不適切、又は最も同定困難という方向をそれぞれ照合。",
+      "choice_differences": "R03は鉱物対を比較して曹長石/灰長石2を除外、R06は固溶体を多形と名付けた定義文2を否定。他の4候補と設問形式は異なる。",
+      "figure_differences": "両方図なし。",
+      "temporal_differences": "時点依存の法令・基準・観測値なし。",
+      "evidence": "両問題の原典ページ画像と全5肢を比較。S7_008の校正JSON・evidenceに追跡可能。自動類似度だけによる承認ではない。",
+      "approval_status": "verified",
+      "source_hash_left": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "source_hash_right": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "rubric_version": "1.0-review1"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "stem": "エレベータの状態遷移のガード条件。",
+  "conditions": {
+    "状態": "停止・上昇・下降のみ。扉・故障・別階呼出を除外。",
+    "a": "上昇自己遷移。",
+    "b": "上昇→停止。",
+    "c": "下降→停止。",
+    "d": "下降自己遷移。",
+    "e": "停止→下降。"
+  },
+  "choices": {
+    "1": {
+      "value": "= = = = =",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 < = = > > と異なる。"
+    },
+    "2": {
+      "value": "= > < = =",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 < = = > > と異なる。"
+    },
+    "3": {
+      "value": "< = = > >",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "= < > = =",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 < = = > > と異なる。"
+    },
+    "5": {
+      "value": "> = = < >",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 < = = > > と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/basic/page_007.png"
+  ],
+  "question_id": "H30-REG-BASIC-2-2",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "6c8b74e95e68566944d3e3a68237697285dd74df92905bd06e6153dc1c59ddb0",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

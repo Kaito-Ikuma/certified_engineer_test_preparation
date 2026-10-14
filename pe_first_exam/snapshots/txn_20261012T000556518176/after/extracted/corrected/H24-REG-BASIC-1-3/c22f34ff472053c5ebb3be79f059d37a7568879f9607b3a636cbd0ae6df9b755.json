@@ -1,0 +1,46 @@
+{
+  "stem": "要求品質の重みと対応の強さから、品質要素の重要度を積和で求める。",
+  "conditions": {
+    "判断方向": "最も適切な記述又は組合せを選ぶ",
+    "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+    "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+  },
+  "choices": {
+    "1": {
+      "value": "A>C>D",
+      "verdict": "不適切",
+      "reason": "C=53でA=49を上回るため、Aを先に置く順序は合わない。"
+    },
+    "2": {
+      "value": "A>D>C",
+      "verdict": "不適切",
+      "reason": "Cは三要素のうち最大であり、最後に置けない。"
+    },
+    "3": {
+      "value": "C>A>D",
+      "verdict": "適切",
+      "reason": "重み付き合計はC=53、A=49、D=46なのでこの順序となる。"
+    },
+    "4": {
+      "value": "C>D>A",
+      "verdict": "不適切",
+      "reason": "A=49はD=46より大きく、後二要素の順が逆である。"
+    },
+    "5": {
+      "value": "D>A>C",
+      "verdict": "不適切",
+      "reason": "D=46は最小であり、最初にはならない。"
+    }
+  },
+  "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/basic/page_003.png"
+  ],
+  "question_id": "H24-REG-BASIC-1-3",
+  "source_file": "sources/H24/basic.pdf",
+  "source_page": "3",
+  "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+  "raw_text_sha256": "b1586a69aa3aac37811adc9831cbb857cb2551d3ea4360c9118cbad192903381",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,44 @@
+{
+  "stem": "炭素貯留、地史的風化、生物代謝とCO2の吸収帯を比較する。",
+  "conditions": {
+    "方向": "最も適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "大気炭素全量は海洋と同程度。",
+      "verdict": "不適切",
+      "reason": "海洋の炭素貯留は大気よりはるかに多く、同程度ではない。"
+    },
+    "2": {
+      "value": "初期CO2は高く、減少に風化と光合成生物が関与。",
+      "verdict": "適切",
+      "reason": "地史的なCO2減少に風化と生物活動が関与する。光合成固定も呼吸で戻る部分と埋没する部分を区別する。"
+    },
+    "3": {
+      "value": "嫌気環境のメタン生成は光合成。",
+      "verdict": "不適切",
+      "reason": "嫌気条件は整合するがメタン生成は光合成ではない。水素とCO2、酢酸等の基質を使う代謝である。"
+    },
+    "4": {
+      "value": "CO2は紫外に幅広い吸収帯。",
+      "verdict": "不適切",
+      "reason": "主要な温室作用は赤外領域の吸収・放射である。紫外との取り違え。"
+    },
+    "5": {
+      "value": "土壌CO2が高いので風化のCO2除去が減速。",
+      "verdict": "不適切",
+      "reason": "土壌呼吸によるCO2供給は炭酸を作り化学的風化を促す。実際の速度は水流、表面積、温度、飽和度等にも依存する。"
+    }
+  },
+  "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_008.png"
+  ],
+  "question_id": "R03-REG-APPLIED-21",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "3d3b219b784ffd256cddc10f3645026df1b6a7f0eb3114d09f04a50889d73e28",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

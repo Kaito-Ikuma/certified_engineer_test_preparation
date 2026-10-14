@@ -1,0 +1,45 @@
+{
+  "stem": "複数のクリティカルパスの作業集合を求める。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "複数のクリティカルパスの作業集合を求める。"
+  },
+  "choices": {
+    "1": {
+      "value": "p,a1,a2,a3,b2,b3,f",
+      "verdict": "選ぶ候補",
+      "reason": "a3とb2の両枝を含みクリティカル作業の和集合。"
+    },
+    "2": {
+      "value": "p,c1,c2,c3,b3,f",
+      "verdict": "選ばない候補",
+      "reason": "c枝の終了47は合流55まで余裕8。"
+    },
+    "3": {
+      "value": "p,b1,b2,b3,f",
+      "verdict": "選ばない候補",
+      "reason": "b1終了25は合流33まで余裕8。"
+    },
+    "4": {
+      "value": "p,a1,a2,b2,b3,f",
+      "verdict": "選ばない候補",
+      "reason": "b2枝だけでa3枝のクリティカルを落とす。"
+    },
+    "5": {
+      "value": "p,a1,a2,a3,a4,f",
+      "verdict": "選ばない候補",
+      "reason": "a4は終了63で合流65まで余裕2。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/basic/page_002.png"
+  ],
+  "question_id": "H30-REG-BASIC-1-2",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "2",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "10953a7778ebeaa7ca51bed24e66d711dd0bcaa55c0767a1b137914649f00108",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

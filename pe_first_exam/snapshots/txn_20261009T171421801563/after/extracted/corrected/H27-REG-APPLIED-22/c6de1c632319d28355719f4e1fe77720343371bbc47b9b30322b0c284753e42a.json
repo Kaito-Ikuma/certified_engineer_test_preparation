@@ -1,0 +1,44 @@
+{
+  "stem": "地形、無限水平層、潮汐、ばねドリフト、緯度の重力効果から誤りを選ぶ。",
+  "conditions": {
+    "選択方向": "誤り又は最も不適切・関係の薄いものを1つ"
+  },
+  "choices": {
+    "1": {
+      "value": "山・谷の地形効果はともに重力を小さくする",
+      "verdict": "適切",
+      "reason": "測点高まで無限平板があるというブーゲー基準に対する地形効果として読む。測点より上の山の引力は上向き、谷は基準平板の下向き引力を欠くため、いずれも下向き重力を減らす。任意の山と谷の絶対重力を比較する命題ではない。"
+    },
+    "2": {
+      "value": "密度と厚さ一定の無限水平層は浅いほど重力が大きい",
+      "verdict": "不適切",
+      "reason": "無限平板の外部重力は2πGρtで深度に依存しない。有限の岩体では距離依存があるため、無限という条件が重要である。"
+    },
+    "3": {
+      "value": "月と太陽の引力による潮汐補正が必要である",
+      "verdict": "適切",
+      "reason": "月・太陽による時間変動を地下構造による異常と区別する必要がある。"
+    },
+    "4": {
+      "value": "ばねの時間変化を一定と近似し閉合誤差を各点へ配分する",
+      "verdict": "適切",
+      "reason": "同一点への戻り測定の閉合差から時間に比例するドリフトを近似して補正する操作を述べる。一定の伸びは測定区間のドリフトを一定率とする通常の近似として解釈し、あらゆる時間変化が必ず線形とはしない。"
+    },
+    "5": {
+      "value": "絶対重力と緯度から求めた正規重力との差をとるのが緯度補正である",
+      "verdict": "適切",
+      "reason": "緯度に依存する理論基準を差し引き、基準地球の変化を除く操作である。"
+    }
+  },
+  "figures": "図なし。否定方向と全5肢を原典ページ画像で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_008.png"
+  ],
+  "question_id": "H27-REG-APPLIED-22",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "5374724c90b3ba7eba2cb2348a2cbb5920b59b0e308aa6fe147dddbbceb58c89",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

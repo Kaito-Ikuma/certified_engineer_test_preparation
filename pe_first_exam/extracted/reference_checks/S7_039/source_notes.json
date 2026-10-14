@@ -1,0 +1,89 @@
+{
+  "checked_at": "2026-10-12T13:18:01+09:00",
+  "sources": [
+    {
+      "key": "mit_signals2010",
+      "url": "https://ocw.mit.edu/courses/6-011-introduction-to-communication-control-and-signal-processing-spring-2010/4599f6cff8a3890477f4c4986db032a2_MIT6_011S10_chap02.pdf",
+      "checked_claim": "本文のLTI畳み込みと帯域制限の標本化条件・理想再構成を確認。原典の線形性のみという省略と等号端点を区別する。"
+    },
+    {
+      "key": "mit_moving2012",
+      "url": "https://web.mit.edu/6.02/www/s2012/handouts/L13_slides.pdf",
+      "checked_claim": "移動平均の周波数応答と零点のスライドを確認。窓長Mと周期の一致で正弦波が消える例は本教材の独自導出。"
+    },
+    {
+      "key": "scipy_notch",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.iirnotch.html",
+      "checked_claim": "狭帯域阻止、有限幅、Qと阻止帯域の定義を現行公式文書で確認。過去問のAPI版についての主張はしない。"
+    },
+    {
+      "key": "scipy_fft",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.fft.fft.html",
+      "checked_claim": "DFTを効率化するFFT、二のべき乗と他の標本数への算法、有限標本の周波数順を確認。"
+    },
+    {
+      "key": "scipy_coherence",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.coherence.html",
+      "checked_claim": "相互スペクトル絶対値二乗を自己スペクトル積で割る二乗コヒーレンスの定義を確認。"
+    },
+    {
+      "key": "usgs_processing2000",
+      "url": "https://pubs.usgs.gov/of/2000/ofr-00-460/",
+      "checked_claim": "取得HTML本文の静補正・NMO・CMP重合・migrationを確認。本文の特定規格化を普遍的算術平均の定義とはせず、平方根則は独自の分散計算で導出する。"
+    },
+    {
+      "key": "usgs_refraction2013",
+      "url": "https://pubs.usgs.gov/of/2013/1102/of2013-1102_text.pdf",
+      "checked_claim": "取得65頁PDF本文の薄い層が初動に現れない例、低速度逆転との区別を確認。日本語のブラインド層の広狭を単一英語名へ固定しない。"
+    },
+    {
+      "key": "usgs_static2004",
+      "url": "https://www.usgs.gov/publications/accurate-elevation-and-normal-moveout-corrections-seismic-reflection-data-rugged",
+      "checked_claim": "出版物索引の要約で地形と風化低速度層による走時ずれへの静補正を確認。本文全文は取得していない。"
+    },
+    {
+      "key": "epa_seismic_reflection",
+      "url": "https://www.epa.gov/environmental-geophysics/seismic-reflection",
+      "checked_claim": "本文の波速・密度による音響インピーダンス、走時深度対応、NMOとmigrationを確認。厚さ分解能等の一律値は採用しない。"
+    },
+    {
+      "key": "stanford_downward2001",
+      "url": "https://sep.stanford.edu/sep/prof/waves/dwnc/paper_html/node9.html",
+      "checked_claim": "本文と2001-03-01の表示を確認。地震波動場を地下へ外挿する下方接続とmigrationの関係を確認。ポテンシャル場専用とした初回誤認を訂正する根拠。"
+    },
+    {
+      "key": "rigid_boom2019",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6864633/",
+      "checked_claim": "一次論文の検索収録で送受信コイルによる電磁誘導の原理を確認。本文再取得はchallenge、MDPIは403、機関リポジトリPDF URLはHTMLを返し全文読了ではない。"
+    },
+    {
+      "key": "usgs_equivalent2007",
+      "url": "https://pubs.usgs.gov/of/2007/1355/pdf/of07-1355.pdf",
+      "checked_claim": "取得PDFの印刷51頁USGS_MFDESIGNで磁気の双極子層・重力の密度層を等価層とする説明を確認。"
+    },
+    {
+      "key": "usgs_lateral_logging",
+      "url": "https://pubs.usgs.gov/circ/c891/geophysical.htm",
+      "checked_claim": "取得HTMLのNORMAL AND LATERAL LOGS節で電極間隔と配置、抵抗の測定を確認。"
+    },
+    {
+      "key": "pygimli_inversion",
+      "url": "https://www.pygimli.org/user-guide/inversion/",
+      "checked_claim": "公式本文5.1.1〜5.1.5と5.1.7。残差・正則化・共役勾配・遺伝的探索、誤差以下へ過適合しない説明を確認。"
+    }
+  ],
+  "local_sha256": {
+    "equivalent_layer.txt": "239b81ba69425d7d98f3ca72f2d73891688bee61871a1d55064d3863824b2fb7",
+    "equivalent_layer.pdf": "ffca9bc240f2256d72635ca242343f8cfe8e767e0db606fab64f2d0cb1adf331",
+    "usgs_processing.html": "12583b0774da2696e76fbf50aa89f78c5bee7f46936a2e1e9c95e2615ac8d49b",
+    "refraction.pdf": "f34965004a5ac9b56a3e641281617fe36931954a612964c25cf9e0a250ddd98f",
+    "refraction.txt": "6180801facffa0f8b425372174dfc4d3a8673ff8d5c9c602b78098e5e610d5f2",
+    "logging.html": "45b69d2ea1b06e91668fd69292cab85cd232bad19d4c84894629e84723d043c1",
+    "rigid_boom.pdf": "4681fa6e4303ecc351521fa1c7c836c9f3d6774b11725d39885ec3bf8ff16561"
+  },
+  "limitations": [
+    "rigid_boom.pdfは248バイトのHTML challengeでありPDFではない。成功取得と報告しない。",
+    "原典13実画像・17問を確認し公式前初回を保存。R01AP34初回5を訂正4と分離。",
+    "標本化端点、移動平均の周期消去反例、有限要素法の逆解析内利用は部分校正・査読待ち。"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "ダミー先行関係を含む工期短縮の最小費用を求める。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "ダミー先行関係を含む工期短縮の最小費用を求める。"
+  },
+  "choices": {
+    "1": {
+      "value": "a2 18万円",
+      "verdict": "選ばない候補",
+      "reason": "クリティカル上だがb3より高い。"
+    },
+    "2": {
+      "value": "a3 10万円",
+      "verdict": "選ばない候補",
+      "reason": "a3終了53はb2終了55より2日早く、短縮で工期不変。"
+    },
+    "3": {
+      "value": "b1 5万円",
+      "verdict": "選ばない候補",
+      "reason": "b1終了25はa2終了33より早く、b2の開始を早めない。"
+    },
+    "4": {
+      "value": "b3 15万円",
+      "verdict": "選ぶ候補",
+      "reason": "クリティカル作業を15万円で短縮でき最小。"
+    },
+    "5": {
+      "value": "c1 6万円",
+      "verdict": "選ばない候補",
+      "reason": "c3終了47はb2終了55より早く、短縮で工期不変。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/basic/page_004.png"
+  ],
+  "question_id": "H28-REG-BASIC-1-4",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "4",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "7b381752d44420802c06ec0ebf8b2bbd64ff9054c196deda7713ed91952ef557",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

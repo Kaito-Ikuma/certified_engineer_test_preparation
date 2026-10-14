@@ -1,0 +1,45 @@
+{
+  "stem": "平面応力と平面ひずみの拘束条件。",
+  "conditions": {
+    "薄板": "面内荷重。",
+    "長柱": "側面に長さ方向一様荷重。"
+  },
+  "choices": {
+    "1": {
+      "value": "薄板の面外応力無視=平面応力",
+      "verdict": "条件内で適切",
+      "reason": "自由表面と薄さから面外応力を小さいとする。"
+    },
+    "2": {
+      "value": "長柱の軸応力無視=平面ひずみ",
+      "verdict": "不適切",
+      "reason": "無視するのは軸ひずみ、軸応力はPoisson結合で残り得る。"
+    },
+    "3": {
+      "value": "長柱の軸ひずみ無視=平面応力",
+      "verdict": "不適切",
+      "reason": "その近似は平面ひずみ。"
+    },
+    "4": {
+      "value": "薄板の面外ひずみ無視=平面ひずみ",
+      "verdict": "不適切",
+      "reason": "薄板は面外変形を許し、通常面外ひずみは0でない。"
+    },
+    "5": {
+      "value": "長柱の軸応力無視=平面応力",
+      "verdict": "不適切",
+      "reason": "指定の長柱を軸方向変形の拘束モデルとして読むとひずみを無視。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "原典長柱の軸方向拘束は省略。平面ひずみの標準的適用を説明し、自由な端部・一様軸伸びがある一般化平面ひずみとは区別して査読。",
+  "evidence": [
+    "extracted/pages/R07/basic/page_003.png"
+  ],
+  "question_id": "R07-REG-BASIC-1-4",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "3",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "faf471cb14c309fa8b7971a65eae5b46b5ba4acfadb05fc9262ca4fa7f91425a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

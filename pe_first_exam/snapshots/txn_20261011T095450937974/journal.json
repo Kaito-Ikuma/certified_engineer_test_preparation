@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T09:54:50+09:00",
+  "paths": [
+    "generated/questions/applied_science/geophysics_geochemistry/08_geochemistry.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/geophysics_geochemistry/08_geochemistry.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/geophysics_geochemistry/08_geochemistry.tex": "7fea0cd5ac6177397b9a5ef7464e4ebefe98f77aad970c88f727d01ab32456ef"
+  }
+}

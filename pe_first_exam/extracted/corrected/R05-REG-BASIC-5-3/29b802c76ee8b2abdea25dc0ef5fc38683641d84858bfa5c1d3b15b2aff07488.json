@@ -1,0 +1,45 @@
+{
+  "stem": "太陽電池の国内生産品比率は毎年拡大ではない。",
+  "conditions": {
+    "原典": "全五肢と否定方向・組合せ表を画像確認。",
+    "資料時点": "令和5年度の指定資料・統計年を保持し、後年値に置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "導入量も国内生産品比率も2009〜2020毎年拡大",
+      "verdict": "不適切・選択対象",
+      "reason": "導入設備の増加と国内製品比率は独立。輸入増加に伴う国内比率低下を落とし、毎年拡大とするのが不適切。"
+    },
+    "2": {
+      "value": "2020原油中東90%以上でサウジ・UAE上位",
+      "verdict": "条件内で適切",
+      "reason": "原油の数量ベースの依存を読む。"
+    },
+    "3": {
+      "value": "LNGの80%以上が中東以外で豪州最大",
+      "verdict": "条件内で適切",
+      "reason": "原油とは異なる調達構成。LNGを原油と同じ中東依存としない。"
+    },
+    "4": {
+      "value": "2020末風力400万kW超と系統拡大",
+      "verdict": "条件内で適切",
+      "reason": "導入容量の単位kWと発電量kWhは違う。"
+    },
+    "5": {
+      "value": "地熱資源量は日本世界3位",
+      "verdict": "条件内で適切",
+      "reason": "資源量順位と実際の導入容量順位は別。"
+    }
+  },
+  "figures": "文章五肢を独自要約。",
+  "ambiguity": "2009〜2020国内生産比率の原表、当時の原油・LNG・風力・地熱数値を追加照合。",
+  "evidence": [
+    "extracted/pages/R05/basic/page_017.png"
+  ],
+  "question_id": "R05-REG-BASIC-5-3",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "1fd08af337294be0cdcd4018004bcad8b1ae96554440e1c365dc0f51dd1295af",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

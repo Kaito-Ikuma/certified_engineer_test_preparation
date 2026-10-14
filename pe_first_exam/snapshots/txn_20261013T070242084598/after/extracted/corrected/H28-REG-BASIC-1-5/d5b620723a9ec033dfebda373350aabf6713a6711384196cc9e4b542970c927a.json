@@ -1,0 +1,45 @@
+{
+  "stem": "台数の資源制約と利益を同時に比較する。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "台数の資源制約と利益を同時に比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "(5,3)",
+      "verdict": "選ばない候補",
+      "reason": "M2=11>9で不能。"
+    },
+    "2": {
+      "value": "(5,2)",
+      "verdict": "選ばない候補",
+      "reason": "M2=9で可能、利益20。"
+    },
+    "3": {
+      "value": "(4,3)",
+      "verdict": "選ばない候補",
+      "reason": "M2=10>9で不能。"
+    },
+    "4": {
+      "value": "(4,2)",
+      "verdict": "選ばない候補",
+      "reason": "M2=8で可能、利益18。"
+    },
+    "5": {
+      "value": "(3,3)",
+      "verdict": "選ぶ候補",
+      "reason": "M2=9,M3=6で可能、利益21が最大。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/basic/page_005.png"
+  ],
+  "question_id": "H28-REG-BASIC-1-5",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "5de25f358a17fd1ad9205691f814b7be78b9a0379b7e97fa6f6de3eec4234e82",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

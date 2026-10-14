@@ -1,0 +1,45 @@
+{
+  "stem": "減速比と動力保存から出力トルクを求める。",
+  "conditions": {
+    "速度比": "入力角速度/出力角速度=30。",
+    "効率": "ほぼ100%、滑りなし。"
+  },
+  "choices": {
+    "1": {
+      "value": "入力1→出力30/トルク等倍",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 入力30→出力1/トルク30倍 と異なる。"
+    },
+    "2": {
+      "value": "入力30→出力1/トルク等倍",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 入力30→出力1/トルク30倍 と異なる。"
+    },
+    "3": {
+      "value": "入力30→出力1/トルク30倍",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "入力1→出力30/トルク30倍",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 入力30→出力1/トルク30倍 と異なる。"
+    },
+    "5": {
+      "value": "入力30→出力1/トルク1/30",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 入力30→出力1/トルク30倍 と異なる。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_003.png"
+  ],
+  "question_id": "R06-REG-BASIC-1-4",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "3",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "254a5093117229d821446b9fd4f41238ea96bcb582fbbb381938e44907cade9b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,47 @@
+{
+  "stem": "強度と荷重が一様分布するモデルで、荷重が強度を超える確率と独立性の役割を検討する。",
+  "conditions": {
+    "判断方向": "空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。",
+    "原典照合": "16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。",
+    "前提": "解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。"
+  },
+  "choices": {
+    "1": {
+      "value": "0.02",
+      "verdict": "不適合",
+      "reason": "独立モデルの三角形面積をさらに半分にすると0.02となるが、その二重の半減は不要である。"
+    },
+    "2": {
+      "value": "0.04",
+      "verdict": "適合（前提内）",
+      "reason": "独立を仮定すれば支持矩形の面積50に対し破壊三角形面積2なので0.04となる。"
+    },
+    "3": {
+      "value": "0.08",
+      "verdict": "不適合",
+      "reason": "一辺2の正方形を全て破壊領域にすると0.08となる。対角線の半分だけが該当する。"
+    },
+    "4": {
+      "value": "0.10",
+      "verdict": "不適合",
+      "reason": "0.10は独立モデルの領域積分と一致しない。周辺分布だけで確率が決まる値でもない。"
+    },
+    "5": {
+      "value": "0.20",
+      "verdict": "不適合",
+      "reason": "強度の区間長5の逆数0.20は密度であり、破壊事象の確率ではない。"
+    }
+  },
+  "figures": "原典の図又は表の各条件と記号を照合。元図は転載せず式と独自説明を用いる。",
+  "ambiguity": "強度と荷重の独立性が原文に明記されない。周辺一様分布だけでは破壊確率を一意に決定できない。独立なら初回2/公式2、同じ周辺を持つ別結合で0又は2/15となる反例を保存する。",
+  "evidence": [
+    "extracted/pages/H29/basic/page_005.png",
+    "extracted/pages/H29/basic/page_006.png"
+  ],
+  "question_id": "H29-REG-BASIC-1-6",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "0330ffd50d57293c7a300bbcce2fdee7cbfb1e305807f00151f4e9699b4a87a1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

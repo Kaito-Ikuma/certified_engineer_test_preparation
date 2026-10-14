@@ -1,0 +1,152 @@
+{
+  "created_at": "2026-10-12T07:47:32+09:00",
+  "official_consulted": false,
+  "model": "GPT-6.1 Sol (user-declared)",
+  "images_reviewed": 11,
+  "records": [
+    {
+      "question_id": "H24-REG-APPLIED-14",
+      "source_file": "sources/H24/17_applied_science.pdf",
+      "source_page": "5",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "question_text_file": "extracted/questions/H24-REG-APPLIED-14.txt",
+      "discipline_id": "chem_physical",
+      "image": "extracted/pages/H24/17_applied_science/page_005.png",
+      "image_sha256": "b8a8239bdb70e1fdb500c5a4419bc39de02a47691439f7035d8e37fa97f2f256",
+      "independent_answer": "4",
+      "reason": "6×394+3×286+49=3271 kJ/mol、3300に最近。"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-17",
+      "source_file": "sources/H24/17_applied_science.pdf",
+      "source_page": "6",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "question_text_file": "extracted/questions/H24-REG-APPLIED-17.txt",
+      "discipline_id": "chem_physical",
+      "image": "extracted/pages/H24/17_applied_science/page_006.png",
+      "image_sha256": "6aee3a82ae49c9653e10a2300cb3dc364c7a0c7ef9e00b698bdbd9ad29e4b3dc",
+      "independent_answer": "4",
+      "reason": "白金ではなく炭素系負極でリチウムイオンを挿入、他4下線は整合。"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-11",
+      "source_file": "sources/H25/17_applied_science.pdf",
+      "source_page": "5",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "question_text_file": "extracted/questions/H25-REG-APPLIED-11.txt",
+      "discipline_id": "chem_physical",
+      "image": "extracted/pages/H25/17_applied_science/page_005.png",
+      "image_sha256": "5d66df5b7cd822aabcef602434e309d984a4a2deec5e42894c6c50220cb0f8be",
+      "independent_answer": "1",
+      "reason": "Mnは+7から+2へ低下。Na+不変、I−は0へ酸化、Mgは0から+2、Sは−2から0。"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-12",
+      "source_file": "sources/H25/17_applied_science.pdf",
+      "source_page": "5",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "question_text_file": "extracted/questions/H25-REG-APPLIED-12.txt",
+      "discipline_id": "chem_physical",
+      "image": "extracted/pages/H25/17_applied_science/page_005.png",
+      "image_sha256": "5d66df5b7cd822aabcef602434e309d984a4a2deec5e42894c6c50220cb0f8be",
+      "independent_answer": "4",
+      "reason": "Cu2+に2電子、1.27/63.5=0.02mol、Q=0.04×96500=3860C、t=720.15s=12分。"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-13",
+      "source_file": "sources/H26/17_applied_science.pdf",
+      "source_page": "5",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "question_text_file": "extracted/questions/H26-REG-APPLIED-13.txt",
+      "discipline_id": "chem_physical",
+      "image": "extracted/pages/H26/17_applied_science/page_005.png",
+      "image_sha256": "991ab93d35f4a4f44798128eae11edc70542fdc59fdd798b7edb34e3dfd0a20a",
+      "independent_answer": "4",
+      "reason": "1mol電子で硫酸98g減り水18g増える。溶液920g、酸202g、21.96%で22。"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-15",
+      "source_file": "sources/H26/17_applied_science.pdf",
+      "source_page": "6",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "question_text_file": "extracted/questions/H26-REG-APPLIED-15.txt",
+      "discipline_id": "chem_physical",
+      "image": "extracted/pages/H26/17_applied_science/page_006.png",
+      "image_sha256": "e14323acdc62ba42a499958ba530a33e4a319c8b6bc8ee6ba2321bebf69d52d9",
+      "independent_answer": "2",
+      "reason": "108+243/2+502−354−788=−410.5kJ/mol。"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-12",
+      "source_file": "sources/H28/17_applied_science.pdf",
+      "source_page": "5",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "question_text_file": "extracted/questions/H28-REG-APPLIED-12.txt",
+      "discipline_id": "chem_physical",
+      "image": "extracted/pages/H28/17_applied_science/page_005.png",
+      "image_sha256": "bb25174d047c81dc4381de06e345f9d1396c2e842ae246d0080934967bd20388",
+      "independent_answer": "4",
+      "reason": "3271kJ/molなので3300。"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-07",
+      "source_file": "sources/H29/17_applied_science.pdf",
+      "source_page": "3",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "question_text_file": "extracted/questions/H29-REG-APPLIED-07.txt",
+      "discipline_id": "physics_electro",
+      "image": "extracted/pages/H29/17_applied_science/page_003.png",
+      "image_sha256": "77c3b6621c7816b3f08dc3dae965c35830fde0474a2993ad2756be0dcd45b84d",
+      "independent_answer": "5",
+      "reason": "トムソンはIと温度勾配に比例して符号可逆、I²はジュール熱。4は材料・端点温度固定の開回路電圧。"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-12",
+      "source_file": "sources/R01_retest/17_applied_science.pdf",
+      "source_page": "5",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "question_text_file": "extracted/questions/R01-RET-APPLIED-12.txt",
+      "discipline_id": "chem_physical",
+      "image": "extracted/pages/R01_retest/17_applied_science/page_005.png",
+      "image_sha256": "b9bf9290ffa0c33d789f2a10f8018b0f4debf4f91033941271ccd7a51a872d6f",
+      "independent_answer": "4",
+      "reason": "0.5×3271=1635.5kJ、1650に最近。"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-06",
+      "source_file": "sources/R03/17_applied_science.pdf",
+      "source_page": "3",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "question_text_file": "extracted/questions/R03-REG-APPLIED-06.txt",
+      "discipline_id": "physics_electro",
+      "image": "extracted/pages/R03/17_applied_science/page_003.png",
+      "image_sha256": "b8a605d3a95aa6a05497ae76bc3c021cbb546c518a0718e05f6c82cf7f55fc0b",
+      "independent_answer": "2",
+      "reason": "カー効果は電気光学又は磁気光学で熱電現象ではない。"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-15",
+      "source_file": "sources/R04/17_applied_science.pdf",
+      "source_page": "5",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "question_text_file": "extracted/questions/R04-REG-APPLIED-15.txt",
+      "discipline_id": "chem_physical",
+      "image": "extracted/pages/R04/17_applied_science/page_005.png",
+      "image_sha256": "52b3e53bc9fd7fa2ef340b7367fc303d65444d0a01ac4df0bc319becbafe58fe",
+      "independent_answer": "3",
+      "reason": "ΔrG=−nFE、反応全平衡ならE=0、個別電極局所平衡と全反応平衡を区別。"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-10",
+      "source_file": "sources/R07/17_applied_science.pdf",
+      "source_page": "4",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "question_text_file": "extracted/questions/R07-REG-APPLIED-10.txt",
+      "discipline_id": "chem_physical",
+      "image": "extracted/pages/R07/17_applied_science/page_004.png",
+      "image_sha256": "4b5209e3afc82e9cc1ff68ef0ab0e206e258529eb886669b33ffc3a828ca0015",
+      "independent_answer": "1",
+      "reason": "R04と順序差、ΔrG無関係が1。"
+    }
+  ]
+}

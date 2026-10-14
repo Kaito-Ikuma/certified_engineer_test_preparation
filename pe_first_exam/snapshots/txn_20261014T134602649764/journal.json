@@ -1,0 +1,25 @@
+{
+  "status": "committed",
+  "time": "2026-10-14T13:46:02+09:00",
+  "paths": [
+    "generated/questions/basic/01_design_planning.tex",
+    "generated/questions/basic/02_information_logic.tex",
+    "generated/questions/basic/04_material_chemistry_biology.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/basic/01_design_planning.tex": true,
+    "generated/questions/basic/02_information_logic.tex": true,
+    "generated/questions/basic/04_material_chemistry_biology.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/basic/01_design_planning.tex": "de889dc9ce74f10297d8157012af650cc346c468d67ff6ac7df3560ee7a84dad",
+    "generated/questions/basic/02_information_logic.tex": "69a0531d59b58f45e808821210255b094ce25ddab1310432b0342eb084a4ae7d",
+    "generated/questions/basic/04_material_chemistry_biology.tex": "c2584e9795c43681ce0f5a8a8b5cea78a068b8ac7a2c91ffe903f0e390695797",
+    "generated/audit_summary.tex": "3c3efcd6705bdec2c7c2feade696ae34a0cd10d93378135648c747d70d307f29",
+    "generated/frequency_tables.tex": "322393bb84c2ce2ee4b573eca3c7cb7398618e8de06fcc839a5db192c41b438a"
+  }
+}

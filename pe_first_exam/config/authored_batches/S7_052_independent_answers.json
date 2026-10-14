@@ -1,0 +1,157 @@
+{
+  "batch_id": "S7_052_engineering",
+  "saved_at": "2026-10-13T12:01:32.693058+09:00",
+  "official_answers_consulted": false,
+  "records": [
+    {
+      "question_id": "H23-REG-APT-13",
+      "answer_initial": "3",
+      "reason": "専門職大学院は博士後期ではなく、性能設計も製作仕様へ固定しない。ア×ウ×で3。",
+      "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-33",
+      "answer_initial": "5",
+      "reason": "平板載荷は静的支持力。",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-34",
+      "answer_initial": "3",
+      "reason": "圧密は時間依存の体積変形。",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-28",
+      "answer_initial": "2",
+      "reason": "蛇紋岩の骨材適性は変質・強度等に注意。チャートASRも条件付き。",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-30",
+      "answer_initial": "5",
+      "reason": "黄鉄鉱酸化は酸性排水。",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-31",
+      "answer_initial": "5",
+      "reason": "N20以上は相対的に密な地盤。安全の絶対閾値ではない。",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-18",
+      "answer_initial": "3",
+      "reason": "酸化の赤黄褐色と還元の灰青を逆に記載。",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-28",
+      "answer_initial": "2",
+      "reason": "水質量/乾燥土質量。",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-30",
+      "answer_initial": "3",
+      "reason": "広域揚水沈下は被圧水頭低下と粘土圧密が重要。",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af"
+    },
+    {
+      "question_id": "H26-REG-APT-13",
+      "answer_initial": "5",
+      "reason": "住民・民間協働を全禁止ではない。",
+      "source_sha256": "5691e940fce3cbf9423bc99a96803c1c6273563931b76b91bdb9f2b67e6233d3"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-33",
+      "answer_initial": "2",
+      "reason": "流れ盤等はすべりに関係。",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-34",
+      "answer_initial": "1",
+      "reason": "圧密は時間依存の体積変形。",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-35",
+      "answer_initial": "5",
+      "reason": "N20以上は相対的に密な地盤。",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-24",
+      "answer_initial": "3",
+      "reason": "間隙率は水空気/全体積、体積含水率は水/全体積。",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-33",
+      "answer_initial": "1",
+      "reason": "平板載荷は静的支持力。",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-22",
+      "answer_initial": "2",
+      "reason": "直線近似でc=2.5×10⁴Pa、傾き約0.58で30度。",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-24",
+      "answer_initial": "3",
+      "reason": "砂質/粘性の代表比較を逆にした3。速度・破壊形式の全称には留保。",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-27",
+      "answer_initial": "1",
+      "reason": "圧密は時間依存の体積変形。",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71"
+    },
+    {
+      "question_id": "R01-REG-APT-08",
+      "answer_initial": "2",
+      "reason": "点検内容を全国一律に固定しない。",
+      "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-29",
+      "answer_initial": "5",
+      "reason": "黄鉄鉱酸化・溶解風化は地すべりを促進し得る。",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-26",
+      "answer_initial": "2",
+      "reason": "泥岩すべりは長期緩慢・反復もある。",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-28",
+      "answer_initial": "2",
+      "reason": "切羽天端・鏡の崩壊原因の構造と湧水。",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-29",
+      "answer_initial": "2",
+      "reason": "淘汰悪は均一粒砂より代表的リスクが小さい。全例の不液状化保証ではない。",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-27",
+      "answer_initial": "4",
+      "reason": "砂質/粘性の代表比較を逆にした4。",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-18",
+      "answer_initial": "5",
+      "reason": "移流は熱輸送を促進し、見掛け伝導率の一般的減少とするのは不適切。",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc"
+    }
+  ]
+}

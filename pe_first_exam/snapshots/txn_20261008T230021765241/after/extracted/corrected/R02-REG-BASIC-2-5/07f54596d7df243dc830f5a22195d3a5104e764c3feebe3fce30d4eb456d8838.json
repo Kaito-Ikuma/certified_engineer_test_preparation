@@ -1,0 +1,47 @@
+{
+  "stem": "11010101を上位桁から二進→十進変換する流れ図の途中値を求める。",
+  "conditions": {
+    "入力二進数": "11010101",
+    "初期値": "s←最上位ビット、i←次のビット位置。",
+    "反復": "i≥0ならs←2s+a_i、i←i-1。i<0で終了。",
+    "空欄": "上位4桁までを処理した後から最終更新直前までの値。"
+  },
+  "choices": {
+    "1": {
+      "value": "25／52／105",
+      "verdict": "不適切な解答候補",
+      "reason": "アは26であり25ではない。イは53であり52ではない。ウは106であり105ではない。"
+    },
+    "2": {
+      "value": "25／52／106",
+      "verdict": "不適切な解答候補",
+      "reason": "アは26であり25ではない。イは53であり52ではない。"
+    },
+    "3": {
+      "value": "26／52／105",
+      "verdict": "不適切な解答候補",
+      "reason": "イは53であり52ではない。ウは106であり105ではない。"
+    },
+    "4": {
+      "value": "26／53／105",
+      "verdict": "不適切な解答候補",
+      "reason": "ウは106であり105ではない。"
+    },
+    "5": {
+      "value": "26／53／106",
+      "verdict": "適切な解答候補",
+      "reason": "全更新値が漸化式s←2s+aᵢに一致する。"
+    }
+  },
+  "figures": "流れ図の初期化、分岐、添字、更新と終了条件を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/basic/page_009.png"
+  ],
+  "question_id": "R02-REG-BASIC-2-5",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "9",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "64d3d889fc3377f4ab201181119b4f8a55e748dfc8863d8eebf56ce3029c2ea8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

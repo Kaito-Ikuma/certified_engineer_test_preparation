@@ -1,0 +1,45 @@
+{
+  "stem": "過剰NaOHで再溶解する両性水酸化物。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典26画像で確認。",
+    "時点": "平成24年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "Cu2+",
+      "verdict": "不適切",
+      "reason": "Cu(OH)2を生じるが、通常の過剰NaOHによる再溶解に対応しない。"
+    },
+    "2": {
+      "value": "Ag+",
+      "verdict": "不適切",
+      "reason": "通常はAg2Oを生じる。Alと同じ両性の再溶解ではない。"
+    },
+    "3": {
+      "value": "Al3+",
+      "verdict": "条件内で適切",
+      "reason": "Al(OH)3を生じ、過剰OH−で[Al(OH)4]−となって溶解。"
+    },
+    "4": {
+      "value": "Mg2+",
+      "verdict": "不適切",
+      "reason": "Mg(OH)2の沈殿はこの過剰NaOHの条件では再溶解しない。"
+    },
+    "5": {
+      "value": "Fe3+",
+      "verdict": "不適切",
+      "reason": "Fe(OH)3の沈殿はこの通常条件では再溶解しない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/basic/page_012.png"
+  ],
+  "question_id": "H24-REG-BASIC-4-2",
+  "source_file": "sources/H24/basic.pdf",
+  "source_page": "12",
+  "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+  "raw_text_sha256": "f090309a05abab3dca3347e3fe5928eb2b32f11d9a5ae2419b93d0db24158fbe",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "電子配置の例外と周期表ブロックの定義を比較する。",
+  "conditions": {
+    "判断対象": "電子配置の例外と周期表ブロックの定義を比較する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "s/pは主族",
+      "verdict": "選ばない候補",
+      "reason": "通常のs/p主族分類。"
+    },
+    "2": {
+      "value": "dは遷移、12族を除く場合あり",
+      "verdict": "選ばない候補",
+      "reason": "遷移元素の定義とdblockの範囲を区別。"
+    },
+    "3": {
+      "value": "Cu4s1d10/Zn4s2d10だからsblock",
+      "verdict": "選ぶ候補",
+      "reason": "電子配置は正しくてもCu/Znの周期表位置はdblock。"
+    },
+    "4": {
+      "value": "lanthanoid/actinoid内部遷移",
+      "verdict": "選ばない候補",
+      "reason": "内部系列の代表分類。"
+    },
+    "5": {
+      "value": "fblockは1原子番号で必ずf1増でない",
+      "verdict": "選ばない候補",
+      "reason": "基底配置の例外を認める。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "主族/遷移元素の定義には12族の取扱い差。dblockの分類と区別する。",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_003.png"
+  ],
+  "question_id": "H30-REG-APPLIED-10",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "4692bc52cef8890118543631f0a0b69b469fd2a8c76db268a7e0952efd655c8d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

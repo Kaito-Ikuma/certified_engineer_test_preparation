@@ -1,0 +1,46 @@
+{
+  "stem": "安全率に依存する損害費用と対策費用の和を、定義域で最小化する。",
+  "conditions": {
+    "判断方向": "空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。",
+    "原典照合": "16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。",
+    "前提": "解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。"
+  },
+  "choices": {
+    "1": {
+      "value": "1.00",
+      "verdict": "不適合",
+      "reason": "与式に代入した総費用は約28億円であり、最小の候補より大きい。"
+    },
+    "2": {
+      "value": "1.25",
+      "verdict": "適合（前提内）",
+      "reason": "与式に代入した総費用は約27.5億円であり、連続域での停留点かつ最小である。"
+    },
+    "3": {
+      "value": "1.50",
+      "verdict": "不適合",
+      "reason": "与式に代入した総費用は約27.857142857億円であり、最小の候補より大きい。"
+    },
+    "4": {
+      "value": "1.75",
+      "verdict": "不適合",
+      "reason": "与式に代入した総費用は約28.75億円であり、最小の候補より大きい。"
+    },
+    "5": {
+      "value": "2.00",
+      "verdict": "不適合",
+      "reason": "与式に代入した総費用は約30億円であり、最小の候補より大きい。"
+    }
+  },
+  "figures": "設問固有図なし。全候補の順序を原典画像で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_005.png"
+  ],
+  "question_id": "R01-RET-BASIC-1-5",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "869ce52cf68825f7c936b7ccf6e46f49cd4f50371c7a1c2b748e14f1189cc4d0",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

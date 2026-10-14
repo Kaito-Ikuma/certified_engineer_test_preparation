@@ -1,0 +1,45 @@
+{
+  "stem": "二次元ベクトルの内積の成分表示を選ぶ。",
+  "conditions": {
+    "ベクトル": "\\(a=(a_x,a_y),b=(b_x,b_y)\\)",
+    "座標": "直交座標の成分。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(a_xb_x+a_yb_y\\)",
+      "verdict": "条件に一致",
+      "reason": "同じ軸の成分積を足す内積に一致する。"
+    },
+    "2": {
+      "value": "\\(a_xb_y+a_yb_x\\)",
+      "verdict": "条件に不一致",
+      "reason": "異なる軸の成分を掛けており、内積ではない。"
+    },
+    "3": {
+      "value": "\\(a_xb_y-a_yb_x\\)",
+      "verdict": "条件に不一致",
+      "reason": "これは二次元外積に対応する面積の符号付き成分である。"
+    },
+    "4": {
+      "value": "\\((a_xb_x,a_yb_y)\\)",
+      "verdict": "条件に不一致",
+      "reason": "内積の結果はスカラーであり、成分の組ではない。"
+    },
+    "5": {
+      "value": "\\((a_xb_y,a_yb_x)\\)",
+      "verdict": "条件に不一致",
+      "reason": "内積の結果はスカラーであり、しかも成分の組合せが異なる。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/basic/page_010.png"
+  ],
+  "question_id": "H26-REG-BASIC-3-4",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "10",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "a319bfba0465a31c4d9bd94035433a087c14846003617112e3e3bf2c44a16028",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

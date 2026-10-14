@@ -1,0 +1,45 @@
+{
+  "stem": "正逆横ずれ、撓曲、活動時期、地塁地溝、地表地震断層を判定する。",
+  "conditions": {
+    "判断方向": "最も不適切なもの。",
+    "原典照合": "全5肢、上下・平行直交・右左・時代・固結度と割合を画像照合。図なし。"
+  },
+  "choices": {
+    "1": {
+      "value": "変位成分で正・逆・横ずれ。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "変位の方向による運動学的区分である。斜めすべりは成分を合わせて記載する。"
+    },
+    "2": {
+      "value": "平坦層の限定域の折れ曲がりを単斜/撓曲。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "平坦な層がある帯で傾きを増す一方向の折れ曲がり形態である。背斜・向斜の一組と同じではない。"
+    },
+    "3": {
+      "value": "最近の地質時代に反復し今後の可能性のある活断層。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "過去の活動を認定し将来の再活動可能性を評価する。将来時期が決まる意味ではない。"
+    },
+    "4": {
+      "value": "両側が正断層で周囲より低い地帯を地塁という。",
+      "verdict": "不適切",
+      "reason": "低い地塊は地溝である。地塁は周囲より相対的に高く、名称が逆。"
+    },
+    "5": {
+      "value": "地震時に地表に現れる地表地震断層。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "地表で観察される直接変位を指す。地下の破壊面全体は震源断層であり、史料の有無は定義条件ではない。"
+    }
+  },
+  "figures": "設問固有図なし。原典の用語・否定・全5肢を確認。剪断の方位条件を推測で補わない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_011.png"
+  ],
+  "question_id": "R07-REG-APPLIED-29",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "234859919b7d6f99d14633f46d2e2a03b6275bedbdfd69219ec29263690c3bf6",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

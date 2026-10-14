@@ -1,0 +1,45 @@
+{
+  "stem": "火山ガスの主要成分と温度・酸化還元条件を区別する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "火山ガスの主要成分と温度・酸化還元条件を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "CO2",
+      "verdict": "代表的条件で適切",
+      "reason": "マグマから放出される代表的な炭素ガス。水蒸気との量比は環境に依存する。"
+    },
+    "2": {
+      "value": "H2S",
+      "verdict": "代表的条件で適切",
+      "reason": "硫黄の還元的な化学種であり、火山ガス・熱水系に含まれる。"
+    },
+    "3": {
+      "value": "HCl",
+      "verdict": "代表的条件で適切",
+      "reason": "火山ガス中の代表的な水素ハロゲン化物。地下水への吸収で地表の濃度は変わり得る。"
+    },
+    "4": {
+      "value": "CH4",
+      "verdict": "不適切",
+      "reason": "通常の高温マグマに由来する平均主要ガスの比較では適さない。低温・還元環境の存在を含め、厳密に常に零とする意味ではない。"
+    },
+    "5": {
+      "value": "SO2",
+      "verdict": "代表的条件で適切",
+      "reason": "硫黄ガスの代表で酸化的な高温火山ガスに重要。冷却・熱水系では化学種や吸収が変わる。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "理論的平均と主要の厳密な濃度基準は未提示。特にR07の100気圧・1200℃平衡の定量表と酸化還元条件の照合が残る。通常の火山ガスの代表比較として説明し、CH4の全条件不在やH2の固定割合を主張しない。",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_007.png"
+  ],
+  "question_id": "R01-RET-APPLIED-22",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "471366f9db183e05a1295313b1b83a96795a95bbf6128ed5c2e583e0e126cf16",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

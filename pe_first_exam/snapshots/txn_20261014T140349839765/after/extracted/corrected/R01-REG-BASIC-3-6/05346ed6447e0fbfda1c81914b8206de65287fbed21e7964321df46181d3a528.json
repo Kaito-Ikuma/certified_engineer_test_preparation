@@ -1,0 +1,46 @@
+{
+  "stem": "棒振子の質量慣性と重力トルク。",
+  "conditions": {
+    "棒": "一様細長棒、長さl、上端回転自由、重力g。",
+    "運動": "微小角振動、摩擦無視。"
+  },
+  "choices": {
+    "1": {
+      "value": "2π√(l/g)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 2π√(2l/(3g)) と異なる。"
+    },
+    "2": {
+      "value": "2π√(3l/(2g))",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 2π√(2l/(3g)) と異なる。"
+    },
+    "3": {
+      "value": "2π√(2l/(3g))",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "2π√(2g/(3l))",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 2π√(2l/(3g)) と異なる。"
+    },
+    "5": {
+      "value": "2π√(3g/(2l))",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 2π√(2l/(3g)) と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_015.png",
+    "extracted/pages/R01/basic/page_016.png"
+  ],
+  "question_id": "R01-REG-BASIC-3-6",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "15",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "d62664f713bb697e34bccbb1b6a3efc80330610721bce4e162adc805b1b83ffa",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

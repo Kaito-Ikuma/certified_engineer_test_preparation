@@ -1,0 +1,45 @@
+{
+  "stem": "AlのFCC立方胞の原子数・配位数・格子定数を求める。",
+  "conditions": {
+    "原典照合": "選択方向、空欄の列順、五候補の数値・結晶構造・語句を原典画像と照合。",
+    "前提": "室温常圧のAl、等半径の硬球モデル、通常のFCC立方胞を想定する。"
+  },
+  "choices": {
+    "1": {
+      "value": "2／12／a=4R/√3",
+      "verdict": "不適切",
+      "reason": "配位数のみ一致する。2原子と体対角線の接触式はBCC立方胞の値でありFCCに適用できない。"
+    },
+    "2": {
+      "value": "2／8／a=4R/√3",
+      "verdict": "不適切",
+      "reason": "BCCの原子数・配位数・体対角線接触の組合せであり、FCCのAlとは異なる。"
+    },
+    "3": {
+      "value": "4／12／a=4R/√3",
+      "verdict": "不適切",
+      "reason": "原子数と配位数は一致するがFCCの接触は面対角線であり√2a=4Rである。"
+    },
+    "4": {
+      "value": "4／8／a=2√2R",
+      "verdict": "不適切",
+      "reason": "原子数と格子定数は一致するが、FCC最近接配位数は8ではなく12である。"
+    },
+    "5": {
+      "value": "4／12／a=2√2R",
+      "verdict": "適切",
+      "reason": "FCC立方胞の共有分率、最近接原子数、面対角線の接触条件を全て満たす。"
+    }
+  },
+  "figures": "図なし。空欄組合せ表又は五つの文章の対応を画像で確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/basic/page_017.png"
+  ],
+  "question_id": "R02-REG-BASIC-4-4",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "af62c4de36d3b0b51965172fb2acf806f1c2062b1df86d2fa930707338c626d0",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

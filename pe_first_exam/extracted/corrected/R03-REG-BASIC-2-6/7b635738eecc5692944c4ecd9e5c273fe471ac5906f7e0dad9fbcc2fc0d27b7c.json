@@ -1,0 +1,48 @@
+{
+  "stem": "漸近上界の定義から多項式・対数・指数・二重指数の四記述を判定する。",
+  "conditions": {
+    "ア": "5n^3+1=O(n^3)",
+    "イ": "n log2 n=O(n^1.5)",
+    "ウ": "n^3 3^n=O(4^n)",
+    "エ": "2^(2^n)=O(10^(n^100))"
+  },
+  "choices": {
+    "1": {
+      "value": "正・誤・誤・誤",
+      "verdict": "不適切",
+      "reason": "対数と多項式、3/4の指数減衰を不適切に否定する。"
+    },
+    "2": {
+      "value": "正・正・誤・正",
+      "verdict": "不適切",
+      "reason": "ウは正でエは誤なので二か所が逆である。"
+    },
+    "3": {
+      "value": "正・正・正・誤",
+      "verdict": "適切",
+      "reason": "ア・イ・ウの比は有界で、エは発散する。"
+    },
+    "4": {
+      "value": "正・誤・正・誤",
+      "verdict": "不適切",
+      "reason": "イも正なので対数の成長を過大評価する。"
+    },
+    "5": {
+      "value": "誤・誤・誤・正",
+      "verdict": "不適切",
+      "reason": "四記述の判断が逆である。"
+    }
+  },
+  "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/basic/page_010.png",
+    "extracted/pages/R03/basic/page_011.png"
+  ],
+  "question_id": "R03-REG-BASIC-2-6",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "10",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "a2e2e7448be9daa68e07917c26854079122bbb6b624f9b11ea89e3fcd4987007",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,44 @@
+{
+  "stem": "入力一致の検出を否定した論理式を、等価な排他的論理和へ変形する。",
+  "conditions": {
+    "対象式": "\\(X=\\overline{\\overline A\\overline B+AB}\\)"
+  },
+  "choices": {
+    "1": {
+      "value": "\\((A+B)\\overline{(A+B)}\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "任意の命題とその否定の積なので常に0である。"
+    },
+    "2": {
+      "value": "\\((A+B)(\\overline A B)\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "否定AかつBのみを表し、A=1、B=0のXOR出力1を再現しない。"
+    },
+    "3": {
+      "value": "\\((AB)(\\overline A\\overline B)\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "Aと否定Aを同時に要求し、常に0である。"
+    },
+    "4": {
+      "value": "\\((AB)\\overline{(AB)}\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "命題ABとその否定の積で常に0である。"
+    },
+    "5": {
+      "value": "\\((A+B)\\overline{(AB)}\\)",
+      "verdict": "条件に一致する候補",
+      "reason": "ORが1かつANDが0という条件なので、入力が異なる2行でのみ1になり一致する。"
+    }
+  },
+  "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/basic/page_008.png"
+  ],
+  "question_id": "H30-REG-BASIC-2-4",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "a47f18f05548938a7397b8d8329b7876d551bdebdb6d2f621cdd94f76d9ff67f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

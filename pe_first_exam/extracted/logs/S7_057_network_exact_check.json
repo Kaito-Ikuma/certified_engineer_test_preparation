@@ -1,0 +1,10 @@
+{
+  "method": "原典の各辺をグラフ化し節点電位を有理数Gauss消去。1V端子電圧から1/I。",
+  "results": {
+    "square_grid": "3/2",
+    "ladder": "7/5",
+    "tetra_vertices": "1/2",
+    "tetra_vertex_mid": "5/8",
+    "tetra_opposite_mid": "3/4"
+  }
+}

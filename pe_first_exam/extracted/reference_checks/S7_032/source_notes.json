@@ -1,0 +1,111 @@
+{
+  "checked_at": "2026-10-12T07:08:51+09:00",
+  "sources": [
+    {
+      "key": "pl_statute",
+      "title": "製造物責任法",
+      "url": "https://laws.e-gov.go.jp/law/406AC0000000085",
+      "checked_claim": "1〜6条。現行条文と過去の時効規定を区別する。"
+    },
+    {
+      "key": "pl_qa",
+      "title": "製造物責任法の概要Q&A",
+      "url": "https://www.caa.go.jp/policies/policy/consumer_safety/other/pl_qa.html",
+      "checked_claim": "問3〜9、12〜22、24を確認。中古品の対象性と修理業者の責任を区別する。"
+    },
+    {
+      "key": "pl_definitions2018",
+      "title": "製造物責任法逐条解説：第2条定義（2018年9月）",
+      "url": "https://www.caa.go.jp/policies/policy/consumer_safety/other/product_liability_act_annotations/pdf/annotations_180907_0003.pdf",
+      "checked_claim": "物理1〜5頁（印刷2〜6頁）を画像確認。単なる冷凍・冷蔵、付合、中古品、再生品の境界。"
+    },
+    {
+      "key": "pl_time2018",
+      "title": "製造物責任法逐条解説：消滅時効（2018年9月）",
+      "url": "https://www.caa.go.jp/policies/policy/consumer_safety/other/product_liability_act_annotations/pdf/annotations_180907_0006.pdf",
+      "checked_claim": "改正後規定を原則として解説する資料であり、2018年の施行済み条文とは扱わない。"
+    },
+    {
+      "key": "pl_transition2020",
+      "title": "製造物責任法の一部改正について",
+      "url": "https://www.caa.go.jp/policies/policy/consumer_safety/other/product_liability_act_amendment/pdf/consumer_safety_cms206_200129_01.pdf",
+      "checked_claim": "2020年4月1日施行。生命身体侵害の短期期間を3年から5年へ変更し経過措置を定める。"
+    },
+    {
+      "key": "pl_nuclear_statute",
+      "title": "原子力損害の賠償に関する法律",
+      "url": "https://laws.e-gov.go.jp/law/336AC0000000147",
+      "checked_claim": "本則4条3項に製造物責任法の不適用を確認。"
+    },
+    {
+      "key": "pl_product_csr2016",
+      "title": "平成28年度製品安全人材育成研修：東京",
+      "url": "https://www.meti.go.jp/product_safety/producer/pdf/28fy_jinzai/28fy_tokyo.pdf",
+      "checked_claim": "官公庁検索索引で製品安全の社会的責任の例を確認。全文は403により取得できていない。"
+    }
+  ],
+  "local_files": [
+    {
+      "file": "extracted/reference_checks/S7_032/time.pdf",
+      "sha256": "0aa52d90e4cfae2f8eab104a97f1addfc1ce0d8e8928ed2bfe2b544d0160e971"
+    },
+    {
+      "file": "extracted/reference_checks/S7_032/pl.xml",
+      "sha256": "238add0efc48de4ba1b8ddaeba436a5b98be2362241d44b565ab78bff3cd98a7"
+    },
+    {
+      "file": "extracted/reference_checks/S7_032/definitions_page-04.png",
+      "sha256": "ebb5cd5ca60f0c436beac4c7b529bacad0f93e5d2ee3cb3a6ba37350810f5243"
+    },
+    {
+      "file": "extracted/reference_checks/S7_032/definitions_page-05.png",
+      "sha256": "e98a1e7c2187111a950dedb09d6f21076788095f7b49e79bc5737dde466700b7"
+    },
+    {
+      "file": "extracted/reference_checks/S7_032/definitions_page-02.png",
+      "sha256": "96143fa7bdbc5576405ee62ea3cfdab9e8329a1e38d277ac30938f2ef478f2d4"
+    },
+    {
+      "file": "extracted/reference_checks/S7_032/time.txt",
+      "sha256": "bd58ace0be86796f4eb1c4bdb266f9194c4e6e41c15dc87402a65f7e47823a2f"
+    },
+    {
+      "file": "extracted/reference_checks/S7_032/definitions_page-03.png",
+      "sha256": "b10759de996da82eba77e5bad1a039c1fdf14f51e96b042352b2fb1c15f2f6c3"
+    },
+    {
+      "file": "extracted/reference_checks/S7_032/definitions_page-01.png",
+      "sha256": "a32ce759a1d2a0c3b737fd170d57e84c8e7959bd84a8e0e774667e4451e29dc6"
+    },
+    {
+      "file": "extracted/reference_checks/S7_032/nuclear.xml",
+      "sha256": "c854493a5bf672e41ee55483b0c6f16dcf3cbe6cc004e99f4901cb861c189f9e"
+    },
+    {
+      "file": "extracted/reference_checks/S7_032/transition.txt",
+      "sha256": "32336be3f3f9e889478b629c91f34c52dab0df4ad9392adb27cb644d3422c844"
+    },
+    {
+      "file": "extracted/reference_checks/S7_032/definitions.txt",
+      "sha256": "a8fae97813165729fe8087121c04dbf10c6191f6d7481c1ecf3d043e4c7e8c75"
+    },
+    {
+      "file": "extracted/reference_checks/S7_032/qa.html",
+      "sha256": "cfbf33ce7b253d49c3682825c834056e59f5ddf5e9feea5179fe7180fe2d5681"
+    },
+    {
+      "file": "extracted/reference_checks/S7_032/transition.pdf",
+      "sha256": "bfb27f512dfc831591892bf22d29abd2590c241b968127a62c80e3054b277117"
+    },
+    {
+      "file": "extracted/reference_checks/S7_032/definitions.pdf",
+      "sha256": "c441cc142ba3c1e818cef6aca5ccb2925ba04aa81ce2ac97573a7d2e54d3a253"
+    }
+  ],
+  "limitations": [
+    "逐条解説の文字抽出には文字化けがあり、定義の物理1〜5頁は画像で確認した。",
+    "ISO26000原規格全文と研修資料全文は取得していない。CSRの規格引用は問題提示条件として保持する。",
+    "初回H25APT7は冷凍冷蔵を加工と誤判定した。原記録は保持し、画像で確認した逐条解説に基づく訂正を本文で明示する。"
+  ],
+  "additional_review": "transition.pdf物理1〜4頁を画像で確認。施行日、短期3→5年、生命身体侵害の経過措置、長期10年の時効明記と経過措置。nuclear.xml本則4条3項、pl.xml本則1〜6条を確認。"
+}

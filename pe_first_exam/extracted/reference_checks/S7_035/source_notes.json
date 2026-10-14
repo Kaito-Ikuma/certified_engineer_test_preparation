@@ -1,0 +1,88 @@
+{
+  "checked_at": "2026-10-12T08:00:29+09:00",
+  "sources": [
+    {
+      "key": "openstax_hess",
+      "url": "https://openstax.org/books/chemistry-2e/pages/5-3-enthalpy",
+      "checked_claim": "ヘスの法則、逆反応と係数倍の符号・倍率、生成エンタルピーの差を公式本文で確認。過去問固有の数値は原典で確認し独自に計算。"
+    },
+    {
+      "key": "openstax_born_haber",
+      "url": "https://openstax.org/books/chemistry-2e/pages/7-5-strengths-of-ionic-and-covalent-bonds",
+      "checked_claim": "格子解離と形成の符号慣習の相違、半分子の解離、電子獲得の方向を本文で確認。NaClの数値は過去問指定を用いる。"
+    },
+    {
+      "key": "openstax_batteries",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-5-batteries-and-fuel-cells",
+      "checked_claim": "鉛蓄電池の全放電反応と半反応、LiCoO2と炭素負極を公式本文で確認。過去問の濃度計算は独自の液相質量収支。"
+    },
+    {
+      "key": "openstax_cell_gibbs",
+      "url": "https://openstax.org/books/chemistry-2e/pages/17-4-potential-free-energy-and-equilibrium",
+      "checked_claim": "可逆起電力とギブズエネルギー、ネルンスト式、全反応平衡で起電力0を本文で確認。"
+    },
+    {
+      "key": "nobel_lithium2019",
+      "url": "https://www.nobelprize.org/uploads/2019/10/advanced-chemistryprize2019-2.pdf",
+      "checked_claim": "6〜9頁文字層でデンドライト、LiCoO2、吉野の石油コークス負極、後の黒鉛と界面の歴史を確認。初期材料を黒鉛と同一視しない。"
+    },
+    {
+      "key": "mit_redox2014",
+      "url": "https://ocw.mit.edu/courses/5-111sc-principles-of-chemical-science-fall-2014/7bfbd766cbfe78a2cf6b9a92b7e9b882_MIT5_111F14_Lecture25.pdf",
+      "checked_claim": "1〜2・4〜5・7〜9頁文字層で酸化数、半反応の保存、Q=Itと電子mol、アノード酸化・カソード還元を確認。穴埋めや電圧計を電流測定とする粗い記述は出典として転記しない。"
+    },
+    {
+      "key": "mit_thermoelectric2024",
+      "url": "https://ocw.mit.edu/courses/2-43-advanced-thermodynamics-spring-2024/mit2_43_s24_lec24.pdf",
+      "checked_claim": "12・14・18頁の画像を実見し、開回路熱電能の積分、ペルティエ熱、トムソン係数と電流一次項を確認。14頁の不等号の誤記を転載しない。"
+    },
+    {
+      "key": "mit_kerr_calendar2005",
+      "url": "https://ocw.mit.edu/courses/6-161-modern-optics-project-laboratory-fall-2005/pages/calendar/",
+      "checked_claim": "講義11の電気光学変調・複屈折・Kerr effectの分類を確認。熱電現象との分類の区別だけに使用し、係数値の出典としない。"
+    }
+  ],
+  "local_files": [
+    {
+      "file": "extracted/reference_checks/S7_035/thermoelectric_mit.txt",
+      "sha256": "2d44daaac87e7a2025a0eb483cb4d5283a902098759f3dd24b729d5ef3d02d31"
+    },
+    {
+      "file": "extracted/reference_checks/S7_035/mit_page_14.png",
+      "sha256": "63c0c48426da0773ac515d41518fee790c4cce7b955ba5960072d128cb0a083c"
+    },
+    {
+      "file": "extracted/reference_checks/S7_035/electrochem_mit.pdf",
+      "sha256": "567337f444173e7964858f5e692dd41dfe31e73f796a3f3a1063f876a1c8e50d"
+    },
+    {
+      "file": "extracted/reference_checks/S7_035/mit_page_12.png",
+      "sha256": "25c9bcdbc5661f328457531171900c580626ac93fd10513a42913bc38f2d977d"
+    },
+    {
+      "file": "extracted/reference_checks/S7_035/lithium_nobel.pdf",
+      "sha256": "cb9e084a92330e8a1afaed35698b00710ccfbe101c9d0f99c77541c5547b2b6b"
+    },
+    {
+      "file": "extracted/reference_checks/S7_035/electrochem_mit.txt",
+      "sha256": "aa224fca6c89f0afa7669d75b0e08ac11a57e30a0b145b3dfdfdca77819557ff"
+    },
+    {
+      "file": "extracted/reference_checks/S7_035/thermoelectric_mit.pdf",
+      "sha256": "cc981b5b058a88214bdefe97dace2b6955bb2726c4021c76d2bd3b1cf02bb6fb"
+    },
+    {
+      "file": "extracted/reference_checks/S7_035/lithium_nobel.txt",
+      "sha256": "06c1e8c2bccf143ace8e7a1f7e47520bcc71b0d9c89630b471b74072ec6860ba"
+    },
+    {
+      "file": "extracted/reference_checks/S7_035/mit_page_18.png",
+      "sha256": "87979a34d469a5fde5cd368a7d059c11f6deae9139f0d4afad5224a3a5192d3b"
+    }
+  ],
+  "limitations": [
+    "一部MITノートは穴埋め式。空欄を確認済みの印刷本文と扱わない。",
+    "MIT thermoelectric講義の本文数式は文字層だけで読めず、12・14・18頁の実画像で確認。",
+    "原典の電流効率、熱起電力の幾何条件、符号慣習、標準電位比較の限定を部分校正へ保持。"
+  ]
+}

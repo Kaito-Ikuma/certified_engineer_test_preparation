@@ -1,0 +1,45 @@
+{
+  "stem": "棒の線形応力―ひずみ関係について、法則・比例係数・横収縮比の名称の組合せを選ぶ。",
+  "conditions": {
+    "regime": "linear axial elasticity",
+    "ratio_wording": "原典は縦横ひずみの比率を文章で述べ、分数を明記しない。標準のポアソン比定義を解説で明示する。"
+  },
+  "choices": {
+    "1": {
+      "value": "フック・剛性・ポアソン",
+      "verdict": "不採用",
+      "reason": "軸方向の係数をせん断の剛性率と取り違えている。"
+    },
+    "2": {
+      "value": "フック・ヤング・ポアソン",
+      "verdict": "採用",
+      "reason": "フック・ヤング・ポアソンが対応する。"
+    },
+    "3": {
+      "value": "フック・ヤング・剛性",
+      "verdict": "不採用",
+      "reason": "剛性率はひずみ比ではなく応力の次元を持つ弾性係数である。"
+    },
+    "4": {
+      "value": "ガウス・ヤング・ポアソン",
+      "verdict": "不採用",
+      "reason": "ガウスの法則は軸応力とひずみの比例法則ではない。"
+    },
+    "5": {
+      "value": "ガウス・ヤング・剛性",
+      "verdict": "不採用",
+      "reason": "法則とひずみ比の名称がともに不適切である。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_001.png"
+  ],
+  "question_id": "H30-REG-APPLIED-02",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "23e7cdeeeb198a810d28e622ab6707f6d6ab4b0899b5cf378e608fc33423264f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

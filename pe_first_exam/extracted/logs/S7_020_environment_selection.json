@@ -1,0 +1,167 @@
+{
+  "selected_at": "2026-10-11T00:32:05.837404",
+  "questions": [
+    {
+      "question_id": "H23-REG-APT-14",
+      "source_file": "sources/H23/aptitude.pdf",
+      "source_page": "15",
+      "image": "extracted/pages/H23/aptitude/page_015.png",
+      "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+      "raw_text_sha256": "6f0beb67f7de72875b295cee3d02d2bdd86a14c4a1246bea763ba1c92a84cb9c",
+      "image_sha256": "0f1d802c3ba2fc73fdc696e9899b4689468d7dcf7420021afa4afd928b45cd23"
+    },
+    {
+      "question_id": "H24-REG-APT-05",
+      "source_file": "sources/H24/aptitude.pdf",
+      "source_page": "4",
+      "image": "extracted/pages/H24/aptitude/page_004.png",
+      "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+      "raw_text_sha256": "c4956f332bc188d48ba349d8d3310c4d7ad22da3d5428f8b8648e832ca6ee54c",
+      "image_sha256": "7f406c271681fc37adc45b0328126a82e90c322408bae3fac4c74435532bbdf0"
+    },
+    {
+      "question_id": "H25-REG-APT-11",
+      "source_file": "sources/H25/aptitude.pdf",
+      "source_page": "12",
+      "image": "extracted/pages/H25/aptitude/page_012.png",
+      "source_sha256": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+      "raw_text_sha256": "85895953eab06c407a846507876e92cfc21986ea6591eedd9ba5ed5254fe467b",
+      "image_sha256": "e181eb01ada7ce0a0dc3d8bce8b15de2de254b3d3cc6d63934d8c177d3100cbb"
+    },
+    {
+      "question_id": "H28-REG-APT-14",
+      "source_file": "sources/H28/aptitude.pdf",
+      "source_page": "14",
+      "image": "extracted/pages/H28/aptitude/page_014.png",
+      "source_sha256": "2960d5ff16afaa394186362bb969ee236511012ee2819db45847199af58b073c",
+      "raw_text_sha256": "dd9655ab92de1842cba6518b6249c88f4620820da1e93f5ee2ef2cb0f21a7b11",
+      "image_sha256": "817fa597387d91b46dac26919f580876c43756ec13314a5bbfa9b08b21099f2b"
+    },
+    {
+      "question_id": "H30-REG-APT-13",
+      "source_file": "sources/H30/aptitude.pdf",
+      "source_page": "13",
+      "image": "extracted/pages/H30/aptitude/page_013.png",
+      "source_sha256": "9b92cd3549fc1ad21636a544978f1385f63667ff6ac0112f81e553cf2ee4b1f5",
+      "raw_text_sha256": "f087f8644e217cbb08fbe5e8fea6fe30ba9a753790ffa99c57d66f497c8787ac",
+      "image_sha256": "ed724a93bd36393b4eb6203c9eda129d4da086e75d0cd48e7b3ab02ac6a76b8f"
+    },
+    {
+      "question_id": "R01-REG-APT-15",
+      "source_file": "sources/R01/aptitude.pdf",
+      "source_page": "14",
+      "image": "extracted/pages/R01/aptitude/page_014.png",
+      "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+      "raw_text_sha256": "8e10bf87fc852d07035af9a7e93f91f34c7d2a1f9b5a29dfac171a1e3d16f443",
+      "image_sha256": "4708841e18754abec8549a4ef9e51e73c0310561e760a51a0cea875f52b43511"
+    },
+    {
+      "question_id": "R01-RET-APT-11",
+      "source_file": "sources/R01_retest/aptitude.pdf",
+      "source_page": "12",
+      "image": "extracted/pages/R01_retest/aptitude/page_012.png",
+      "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+      "raw_text_sha256": "766fe05a86ddb304142dc0a5ad6edc76122a9fe6380bb62149699dc5e636f3a2",
+      "image_sha256": "8c647dd2fd8bf7b8790237216bff8d567befe30c7e14236c8ec9c44cda6a3738"
+    },
+    {
+      "question_id": "R01-RET-APT-13",
+      "source_file": "sources/R01_retest/aptitude.pdf",
+      "source_page": "14",
+      "image": "extracted/pages/R01_retest/aptitude/page_014.png",
+      "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+      "raw_text_sha256": "e0cb742caf2facf3b566052170349fcbdd38538cfb00a35adef61e8d64595c57",
+      "image_sha256": "ece63c823f81a54a961f3d7cb4767dd19fb27261ec5d394de1498898a17a53d6"
+    },
+    {
+      "question_id": "R01-RET-APT-14",
+      "source_file": "sources/R01_retest/aptitude.pdf",
+      "source_page": "15",
+      "image": "extracted/pages/R01_retest/aptitude/page_015.png",
+      "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+      "raw_text_sha256": "7129836cfb7955c52708481adb10230e3516f028f8be3348aa965bbac284bdbd",
+      "image_sha256": "e5c631a12ac0e70136aaf4c0a15a5f56466628f690cc35580f58109f8983320b"
+    },
+    {
+      "question_id": "R03-REG-APT-05",
+      "source_file": "sources/R03/aptitude.pdf",
+      "source_page": "5",
+      "image": "extracted/pages/R03/aptitude/page_005.png",
+      "source_sha256": "73f1426490c272bb33312654f07964404c16a78e9b0ff238c54eca8178d939df",
+      "raw_text_sha256": "c36bedc65d28985622e5ee9c64fb99ca7832b03184ba378bdbf4286d2ccb6d21",
+      "image_sha256": "74fac886d0ed2d84db07dc73a550346febcb1ba04c6051953d8fd9b81b18dcaa"
+    },
+    {
+      "question_id": "R03-REG-APT-11",
+      "source_file": "sources/R03/aptitude.pdf",
+      "source_page": "11",
+      "image": "extracted/pages/R03/aptitude/page_011.png",
+      "source_sha256": "73f1426490c272bb33312654f07964404c16a78e9b0ff238c54eca8178d939df",
+      "raw_text_sha256": "2a482ce96df8caa05ea2a7b2d3b726aca694f4809d394d14a6b2baae174f3968",
+      "image_sha256": "80ceba3a61ed382b19edcf92dafe497bde3e4ec173032893c849bcc22d8b5990"
+    },
+    {
+      "question_id": "R04-REG-APT-10",
+      "source_file": "sources/R04/aptitude.pdf",
+      "source_page": "9",
+      "image": "extracted/pages/R04/aptitude/page_009.png",
+      "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+      "raw_text_sha256": "9021a647f6b2dfd6c5ed330570537f7d7ae1171ae1a03952ab1a3771c42bf60a",
+      "image_sha256": "6f679718be5365f17d779277a609c96c3bf9129d30cc35e792f8c428d433b994"
+    },
+    {
+      "question_id": "R04-REG-APT-14",
+      "source_file": "sources/R04/aptitude.pdf",
+      "source_page": "13",
+      "image": "extracted/pages/R04/aptitude/page_013.png",
+      "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+      "raw_text_sha256": "0d9f3d6050c68399702c13d48249d3cbf72ac43c9f46c93455efb13e4597137a",
+      "image_sha256": "90780d3e0025606b19af53a5b534ebcbca1f14ec6f2e7df41ec931d06c574ee8"
+    },
+    {
+      "question_id": "R05-REG-APT-15",
+      "source_file": "sources/R05/aptitude.pdf",
+      "source_page": "15",
+      "image": "extracted/pages/R05/aptitude/page_015.png",
+      "source_sha256": "3dee8906ad8be46592986fef01028424243f7e515af04979667524eed1f0a915",
+      "raw_text_sha256": "dda8996d07aa1742ee5d3e4f9e5c475c851566857999162642c9e6decfbbb93b",
+      "image_sha256": "c8979b7bfa5e552fb136a285bd17aea0609bc913010a4b0fbe0deac11b63a5fd"
+    },
+    {
+      "question_id": "R06-REG-APT-02",
+      "source_file": "sources/R06/aptitude.pdf",
+      "source_page": "2",
+      "image": "extracted/pages/R06/aptitude/page_002.png",
+      "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+      "raw_text_sha256": "79cea632f6971188e014c015a5380bf5c2bc39e33d608a12a15dfe569b982333",
+      "image_sha256": "a7ecfc95296411731ad108199464b41411743d54ecd390ce9c93ee05feefb022"
+    },
+    {
+      "question_id": "R06-REG-APT-05",
+      "source_file": "sources/R06/aptitude.pdf",
+      "source_page": "5",
+      "image": "extracted/pages/R06/aptitude/page_005.png",
+      "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+      "raw_text_sha256": "46c59b6685e3504eb19ae372d216c167086eb5c857852077942c8e1f9e68c274",
+      "image_sha256": "aba27fd3f7ba8d06bf841df6065a7b9ea91f664f6fe490cffc6b87bbe93de0d1"
+    },
+    {
+      "question_id": "R06-REG-APT-06",
+      "source_file": "sources/R06/aptitude.pdf",
+      "source_page": "6",
+      "image": "extracted/pages/R06/aptitude/page_006.png",
+      "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+      "raw_text_sha256": "485d50a46282318fafb9a2f4a0bfa6befe8772b08bd94fc7cd64c091b9de1f5a",
+      "image_sha256": "664d1522a3f3964de142d87068ed73a3e8a473dbc57039508553a3bd6a47c061"
+    },
+    {
+      "question_id": "R07-REG-APT-10",
+      "source_file": "sources/R07/aptitude.pdf",
+      "source_page": "10",
+      "image": "extracted/pages/R07/aptitude/page_010.png",
+      "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+      "raw_text_sha256": "11af59a3cd29014502359aec89129b5c6f5d1ff7c1d8ef41b106bccc229c82b0",
+      "image_sha256": "2a8a70ad03f8705244180768defbeefb2e23da8ca1f08ff2d1d72cee531721b7"
+    }
+  ]
+}

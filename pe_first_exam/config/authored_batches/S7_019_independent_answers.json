@@ -1,0 +1,172 @@
+{
+  "batch_id": "S7_019_information",
+  "recorded_at": "2026-10-11T00:20:18.170215+09:00",
+  "official_answer_consulted": false,
+  "questions": [
+    {
+      "question_id": "H24-REG-BASIC-2-3",
+      "independent_answer": "4",
+      "reason": "遷移は対角1/2、非対角1/4。2日自己3/8、他5/16、極限1/3。肢4の1/4が誤り。",
+      "source_images_viewed": [
+        "extracted/pages/H24/basic/page_006.png"
+      ],
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "raw_text_sha256": "acdcdc29153cdd37c34a1a400d2438c109acf896e53f933183bc6b5d9bef05dd",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H24-REG-BASIC-2-4",
+      "independent_answer": "3",
+      "reason": "800×1024²/(10240×2×0.5)=81920頁。",
+      "source_images_viewed": [
+        "extracted/pages/H24/basic/page_006.png"
+      ],
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "raw_text_sha256": "f40096063b490c7b9eba6863e8d9e23bee41d33ed2b369549f40dfbabcd8a5ff",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H26-REG-BASIC-2-3",
+      "independent_answer": "4",
+      "reason": "元番号の全重み和176。肢変更差45,15,1,11,10のうち11だけmod11で0。肢2は画像で84を確認、OCR04を採用しない。",
+      "source_images_viewed": [
+        "extracted/pages/H26/basic/page_007.png"
+      ],
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "raw_text_sha256": "56a8c0a9de46f9031ad0f25e031860adc156fa2d1e73cbadbda2aed090c28da3",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H28-REG-BASIC-2-1",
+      "independent_answer": "4",
+      "reason": "2日曇→晴は5/16であり3/16でない。全自己3/8、極限1/3。",
+      "source_images_viewed": [
+        "extracted/pages/H28/basic/page_007.png"
+      ],
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "raw_text_sha256": "666d1c79d845af45e15979c1ac2b22806269dfcd952b9daa2ba0b6ae14068e87",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H28-REG-BASIC-2-4",
+      "independent_answer": "4",
+      "reason": "ヒット/ミス総時間を排他的に平均して0.95×1+0.05×100=5.95ns。逐次照合モデルでは6nsであり、いずれも最も近い肢4。",
+      "source_images_viewed": [
+        "extracted/pages/H28/basic/page_010.png"
+      ],
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "raw_text_sha256": "f69195382e96b6b2c2b0474b7d0a693e5be1db2fbc1ae0daa49c12911df73006",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H28-REG-BASIC-2-5",
+      "independent_answer": "4",
+      "reason": "偶数パリティは2個反転を検出できない。位置特定も不可、長さ制限なし。",
+      "source_images_viewed": [
+        "extracted/pages/H28/basic/page_010.png"
+      ],
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "raw_text_sha256": "2673a3f60abeacd73227b0de281785d68ed0ffa6f61561b2fcb2dd1286ed563f",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R01-REG-BASIC-2-4",
+      "independent_answer": "3",
+      "reason": "符号は整数部分にのみ付く。-.37は生成できず-0.37なら可。",
+      "source_images_viewed": [
+        "extracted/pages/R01/basic/page_009.png"
+      ],
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "raw_text_sha256": "c608358885a3f3ec99cbd8974e0f5f65ca85fde5933da3ae419074c59da4c7ae",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R02-REG-BASIC-2-1",
+      "independent_answer": "4",
+      "reason": "事前確率が未知でも適応/辞書型圧縮は可能。圧縮限界は平均符号長・一意復号条件で述べる。",
+      "source_images_viewed": [
+        "extracted/pages/R02/basic/page_007.png"
+      ],
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "raw_text_sha256": "9e31333da901decd50ff9e6a12197b70d710bc16bc9035b0592d227a942992d4",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R02-REG-BASIC-2-6",
+      "independent_answer": "5",
+      "reason": "排他的アクセスなら0.9×50+0.1×450=90ns、450/90=5。逐次モデル95ns・4.74でも候補5が最も近い。",
+      "source_images_viewed": [
+        "extracted/pages/R02/basic/page_010.png"
+      ],
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "raw_text_sha256": "34942938250b05b5f11a9472e0706005e28b3ce4655c4781380a467f5b089567",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R03-REG-BASIC-2-3",
+      "independent_answer": "2",
+      "reason": "5×10^9×0.5×8/(200×10^6×0.7)=142.857秒。",
+      "source_images_viewed": [
+        "extracted/pages/R03/basic/page_007.png"
+      ],
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "raw_text_sha256": "77328d1ea85a55d22afd97232775ad6963fccb4a185cdb1084df99e3223ddd7b",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R05-REG-BASIC-2-3",
+      "independent_answer": "5",
+      "reason": "978410334194の交互重み和101なのでX=9。",
+      "source_images_viewed": [
+        "extracted/pages/R05/basic/page_007.png"
+      ],
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "raw_text_sha256": "260ab2195378855a93f3d4947ef5c63b18f915a447b415faea85d87d29335ec4",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R05-REG-BASIC-2-4",
+      "independent_answer": "1",
+      "reason": "R02と肢順異なる。未知分布でも適応符号化可能という反例。",
+      "source_images_viewed": [
+        "extracted/pages/R05/basic/page_007.png"
+      ],
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "raw_text_sha256": "f0aed74155add1ae8903c79c3dc42d87ad2c79e50811ee98e0442bcfc39f18cf",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R06-REG-BASIC-2-4",
+      "independent_answer": "5",
+      "reason": "H28と4/5の肢を交換。2個反転を検出できない肢5。",
+      "source_images_viewed": [
+        "extracted/pages/R06/basic/page_007.png"
+      ],
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "raw_text_sha256": "ccb5bf239675d3ea69acf3f43ddc7f09db4aecba9fd04a42a039b666c4b3de30",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R07-REG-BASIC-2-2",
+      "independent_answer": "4",
+      "reason": "通信路に応じて情報源符号器を再設計しないのは分離原理。未知情報源分布への普遍符号化とは異なる。",
+      "source_images_viewed": [
+        "extracted/pages/R07/basic/page_005.png"
+      ],
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "raw_text_sha256": "0fd9a583d423e67af6991a585f68be3488e800f9c64418f1607a86550dfc70c0",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R07-REG-BASIC-2-5",
+      "independent_answer": "4",
+      "reason": "250×10^6×0.8×8/(100×10^6×25)=0.64。",
+      "source_images_viewed": [
+        "extracted/pages/R07/basic/page_007.png"
+      ],
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "raw_text_sha256": "e2c1579bda7402e724d7f7800f44e3838550ea0b959e1f1997e371da1bb1eb05",
+      "official_answer_consulted": false
+    }
+  ]
+}

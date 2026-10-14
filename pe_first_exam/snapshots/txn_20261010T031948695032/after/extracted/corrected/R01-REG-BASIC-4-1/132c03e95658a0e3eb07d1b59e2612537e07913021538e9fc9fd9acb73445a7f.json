@@ -1,0 +1,47 @@
+{
+  "stem": "ハロゲン原子・分子・ハロゲン化水素の4記述から、正しい2項の組を選ぶ。",
+  "conditions": {
+    "ア": "ア：水溶液中の酸の強さはHF>HCl>HBr>HI。",
+    "イ": "イ：原子の電気陰性度はF>Cl>Br>I。",
+    "ウ": "ウ：沸点はHF>HCl>HBr>HI。",
+    "エ": "エ：ハロゲン分子の酸化力はF2>Cl2>Br2>I2。"
+  },
+  "choices": {
+    "1": {
+      "value": "ア・イ",
+      "verdict": "条件に不一致",
+      "reason": "含まれるアが誤り。酸性度・H⁺濃度はHFを最大にできず、沸点ではHClが最小である。"
+    },
+    "2": {
+      "value": "ア・ウ",
+      "verdict": "条件に不一致",
+      "reason": "含まれるア・ウが誤り。酸性度・H⁺濃度はHFを最大にできず、沸点ではHClが最小である。"
+    },
+    "3": {
+      "value": "イ・ウ",
+      "verdict": "条件に不一致",
+      "reason": "含まれるウが誤り。酸性度・H⁺濃度はHFを最大にできず、沸点ではHClが最小である。"
+    },
+    "4": {
+      "value": "イ・エ",
+      "verdict": "条件に一致",
+      "reason": "両記述が正しい。"
+    },
+    "5": {
+      "value": "ウ・エ",
+      "verdict": "条件に不一致",
+      "reason": "含まれるウが誤り。酸性度・H⁺濃度はHFを最大にできず、沸点ではHClが最小である。"
+    }
+  },
+  "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_016.png"
+  ],
+  "question_id": "R01-REG-BASIC-4-1",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "16",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "ce94bf7c5cfd9605068004dcbe87c7e5bb22884338afc3712b26738e1d95cbfd",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

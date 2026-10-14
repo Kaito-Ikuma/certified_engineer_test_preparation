@@ -1,0 +1,45 @@
+{
+  "stem": "評価リスクと知覚リスクの隔たり。",
+  "conditions": {
+    "時点": "令和元年度再試験に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "科学評価と費用技術を含む管理",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "2": {
+      "value": "情報と意見の相互交換",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "3": {
+      "value": "評価と知覚に隔たりなし",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "4": {
+      "value": "規制科学が信頼性と波及評価",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "5": {
+      "value": "規制と合意形成を支援",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_020.png"
+  ],
+  "question_id": "R01-RET-BASIC-5-6",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "20",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "b5a3f288105c175a40729d7328aecffa0be9016bcbc93ccce4c3f76911c12d05",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

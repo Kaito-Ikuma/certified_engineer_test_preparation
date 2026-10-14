@@ -1,0 +1,81 @@
+{
+  "time": "2026-10-10T21:55:44+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_015_wave_optics",
+  "question_ids": [
+    "H23-REG-APPLIED-03",
+    "H25-REG-APPLIED-05",
+    "H23-REG-APPLIED-07",
+    "H26-REG-APPLIED-07",
+    "H24-REG-APPLIED-02",
+    "H24-REG-APPLIED-03",
+    "R02-REG-APPLIED-07",
+    "H24-REG-APPLIED-07",
+    "H25-REG-APPLIED-02",
+    "H29-REG-APPLIED-04",
+    "H27-REG-APPLIED-03",
+    "H28-REG-APPLIED-05",
+    "H30-REG-APPLIED-05",
+    "R01-REG-APPLIED-05",
+    "R05-REG-APPLIED-05",
+    "R01-RET-APPLIED-03",
+    "R02-REG-APPLIED-05",
+    "R03-REG-APPLIED-05",
+    "R04-REG-APPLIED-05",
+    "R06-REG-APPLIED-05",
+    "R07-REG-APPLIED-05"
+  ],
+  "source_images": 20,
+  "initial_independent_matches": 21,
+  "corrected_verified": 19,
+  "partial": 2,
+  "related_pairs_added": 8,
+  "related_pairs_total": 63,
+  "theory_sections": {
+    "wave": 9,
+    "optics": 10,
+    "modern": 2
+  },
+  "primary_references_added": 12,
+  "concepts_added": 9,
+  "canonical_counts": {
+    "recorded_at": "2026-10-10T21:48:36+09:00",
+    "registered": 1270,
+    "classification_verified": 326,
+    "summary_verified": 286,
+    "corrected_verified": 270,
+    "corrected_partial": 16,
+    "solution_drafts": 286,
+    "solution_verified": 0,
+    "manual_required": 1000,
+    "subject_drafts": {
+      "BASIC": 82,
+      "APT": 63,
+      "APPLIED": 141
+    }
+  },
+  "tests": "初期・実ラベル監査通過。内容のみ変更のためコード回帰を不要に反復せず、直近24件成功を保持。",
+  "pdf": {
+    "pages": 485,
+    "bytes": 2273814,
+    "visual_review_pages": [
+      260,
+      261,
+      320,
+      321,
+      329,
+      330,
+      332
+    ],
+    "log_undefined": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "risks": [
+    "H27AP03の複スリット全暗線と主極大間隔の区別。",
+    "R03AP05のm番目と零始まりの次数の解釈。",
+    "Astra未査読"
+  ],
+  "next": "S7_016適性13問。原典13頁・初回独立判断保存、12公式一致、H30APT14は全員正解。一次資料照合へ。Checkpoint2未到達。"
+}

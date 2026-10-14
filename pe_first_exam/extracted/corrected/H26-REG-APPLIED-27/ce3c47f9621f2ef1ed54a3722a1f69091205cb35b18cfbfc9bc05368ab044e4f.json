@@ -1,0 +1,44 @@
+{
+  "stem": "CO2吸収帯、風化、海洋貯留、地史的変化とメタン生成を比較する。",
+  "conditions": {
+    "方向": "最も適切なもの。"
+  },
+  "choices": {
+    "1": {
+      "value": "CO2は紫外に幅広い吸収帯。",
+      "verdict": "不適切",
+      "reason": "主要な温室作用は赤外領域の吸収・放射である。紫外との取り違え。"
+    },
+    "2": {
+      "value": "土壌CO2が高いので風化のCO2除去が減速。",
+      "verdict": "不適切",
+      "reason": "土壌呼吸によるCO2供給は炭酸を作り化学的風化を促す。実際の速度は水流、表面積、温度、飽和度等にも依存する。"
+    },
+    "3": {
+      "value": "大気炭素全量は海洋と同程度。",
+      "verdict": "不適切",
+      "reason": "海洋の炭素貯留は大気よりはるかに多く、同程度ではない。"
+    },
+    "4": {
+      "value": "初期CO2は高く、減少へ風化と光合成が作用。",
+      "verdict": "適切",
+      "reason": "地史的なCO2減少に風化と生物活動が関与する。光合成固定も呼吸で戻る部分と埋没する部分を区別する。"
+    },
+    "5": {
+      "value": "嫌気環境のメタン生成は光合成。",
+      "verdict": "不適切",
+      "reason": "嫌気条件は整合するがメタン生成は光合成ではない。水素とCO2、酢酸等の基質を使う代謝である。"
+    }
+  },
+  "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_011.png"
+  ],
+  "question_id": "H26-REG-APPLIED-27",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "8bcdce0e224fd401204bfc0cebc7b48bbc7dc5461941e6b5f38cec7ebfb24d4e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

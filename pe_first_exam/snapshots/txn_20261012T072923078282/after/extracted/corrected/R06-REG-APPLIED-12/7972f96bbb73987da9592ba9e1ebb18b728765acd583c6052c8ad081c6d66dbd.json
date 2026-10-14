@@ -1,0 +1,45 @@
+{
+  "stem": "ルイス・ブレンステッド・アレニウスの酸、pKa、塩素のオキソ酸の強さを比較する。",
+  "conditions": {
+    "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+    "成立条件": "酸解離定数は活量に基づく無次元量でありpKaはその負常用対数。HClOとHClO2は同じ中心元素で比較。"
+  },
+  "choices": {
+    "1": {
+      "value": "ルイス酸は電子対受容体",
+      "verdict": "適切",
+      "reason": "共有結合形成に電子対を受け取る。"
+    },
+    "2": {
+      "value": "ブレンステッド酸はプロトン供与体",
+      "verdict": "適切",
+      "reason": "相手の塩基にプロトンを渡す。"
+    },
+    "3": {
+      "value": "酸解離定数pKaが小さいほど強酸",
+      "verdict": "条件付きで適切",
+      "reason": "数値の大小関係はpKaについて正しい。pKaそのものを酸解離定数と呼ぶ点は不正確である。"
+    },
+    "4": {
+      "value": "アレニウス酸は水中で水素イオンを生じる",
+      "verdict": "適切",
+      "reason": "水溶液に限定した定義である。"
+    },
+    "5": {
+      "value": "次亜塩素酸は亜塩素酸より強い酸",
+      "verdict": "不適切",
+      "reason": "Purdueの表ではHOClのKaが2.9の10のマイナス8乗、HOClOが1.1の10のマイナス2乗であり、逆である。"
+    }
+  },
+  "figures": "文字記述又は順序候補であり図なし。",
+  "ambiguity": "3の原典表現は酸解離定数pKaである。pKaとKaを同一視する文を科学的に修正した原文として保存せず、用語の不正確さを注記する。",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_004.png"
+  ],
+  "question_id": "R06-REG-APPLIED-12",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "49ab3efe615610a8374156ec5f82208d595a805ce72382acafecd233be574b14",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

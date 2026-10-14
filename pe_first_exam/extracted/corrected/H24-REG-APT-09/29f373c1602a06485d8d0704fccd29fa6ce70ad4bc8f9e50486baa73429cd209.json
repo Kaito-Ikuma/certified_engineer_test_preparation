@@ -1,0 +1,46 @@
+{
+  "stem": "知的財産の趣旨、産業財産権の範囲、著作権の発生と公開利用を対応させる。",
+  "conditions": {
+    "判断対象": "広義知的財産・産業財産権・引用・営業秘密を区別する。",
+    "原典照合": "15問の原典画像について問題幹、否定、表の列順、全5候補を確認。",
+    "法の時点": "出題時の制度を保持し、説明の取得基準日は2026-10-12とする。"
+  },
+  "choices": {
+    "1": {
+      "value": "イ・イ・ロ",
+      "verdict": "不適切",
+      "reason": "第1群の株券の電子化を知的財産の成立説明とすることと、第3群の歌詞を自由変更する説明が不適切である。"
+    },
+    "2": {
+      "value": "ロ・イ・ハ",
+      "verdict": "独立判断で適切",
+      "reason": "創作への誘因、4種類の範囲、許諾等なく公開Webへ写真集の写真を載せる問題が対応する。"
+    },
+    "3": {
+      "value": "ロ・ロ・イ",
+      "verdict": "不適切",
+      "reason": "出版権を産業財産権とする第2群と、特許庁の審査で著作権が発生するとする第3群が違う。"
+    },
+    "4": {
+      "value": "ハ・ロ・イ",
+      "verdict": "不適切",
+      "reason": "特許の対象を表現、著作権の対象をアイデアへ逆転し、出版権の分類と著作権の発生も違う。"
+    },
+    "5": {
+      "value": "ハ・ハ・ハ",
+      "verdict": "不適切",
+      "reason": "最初の保護対象を逆転し、営業秘密・回路配置利用権を産業財産権に含める点も違う。"
+    }
+  },
+  "figures": "組合せ表の全5行を画像確認。原典の長文は独自要約へ変換し、正誤と選択肢の対応を保持する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/aptitude/page_008.png"
+  ],
+  "question_id": "H24-REG-APT-09",
+  "source_file": "sources/H24/aptitude.pdf",
+  "source_page": "8",
+  "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+  "raw_text_sha256": "0bf5678115235433afced27878e1c6e7cf98b195212cc80567aca626b5c6aa96",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

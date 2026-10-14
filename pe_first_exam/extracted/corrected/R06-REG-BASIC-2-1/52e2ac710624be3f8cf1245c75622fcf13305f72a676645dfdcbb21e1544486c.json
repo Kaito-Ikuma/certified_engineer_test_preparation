@@ -1,0 +1,45 @@
+{
+  "stem": "10進0.6を二進小数で小数点以下16桁まで表す。",
+  "conditions": {
+    "入力": "10進0.6",
+    "表示桁": "小数点以下16桁"
+  },
+  "choices": {
+    "1": {
+      "value": "0.1001100110011001",
+      "verdict": "適切な解答候補",
+      "reason": "0.6の反復2倍から得る1001100110011001に一致する。"
+    },
+    "2": {
+      "value": "0.1011001100110011",
+      "verdict": "不適切な解答候補",
+      "reason": "最初の3桁を101としているが、0.6では100となる。"
+    },
+    "3": {
+      "value": "0.1100000000000000",
+      "verdict": "不適切な解答候補",
+      "reason": "0.75の有限二進表現であり、0.6と異なる。"
+    },
+    "4": {
+      "value": "0.1100110011001100",
+      "verdict": "不適切な解答候補",
+      "reason": "先頭2桁が11なら0.75以上となり、0.6と合わない。"
+    },
+    "5": {
+      "value": "0.1110011001100110",
+      "verdict": "不適切な解答候補",
+      "reason": "先頭3桁が111なら0.875以上となり、0.6と合わない。"
+    }
+  },
+  "figures": "図なし。5肢の値または記述を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_006.png"
+  ],
+  "question_id": "R06-REG-BASIC-2-1",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "dd4a6ac79442b8e5b8f95cc210b63ecc66793e152f651689a9cf4439eb6ad4b4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

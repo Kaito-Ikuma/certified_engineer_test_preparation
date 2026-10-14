@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T23:45:21+09:00",
+  "paths": [
+    "data/similarity_candidates.csv"
+  ],
+  "existed": {
+    "data/similarity_candidates.csv": true
+  },
+  "sha256": {
+    "data/similarity_candidates.csv": "c4c06e8e67a620f79ae6e1d9a9fb22ca78ee4ab30312259915ee0159f71b60e3"
+  }
+}

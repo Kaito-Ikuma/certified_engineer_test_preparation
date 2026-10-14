@@ -1,0 +1,46 @@
+{
+  "stem": "座標変換と偏微分の連鎖律で定義された2行2列行列の行列式を選ぶ。",
+  "conditions": {
+    "変換": "\\(x=x(\\xi,\\eta),y=y(\\xi,\\eta)\\)",
+    "微分の向き": "(fξ,fη)の列=J(fx,fy)の列。",
+    "略記": "\\(a=x_\\xi,b=y_\\xi,c=x_\\eta,d=y_\\eta\\)"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(ad-bc\\)",
+      "verdict": "条件に一致",
+      "reason": "主対角積から反対角積を引いたものに一致する。"
+    },
+    "2": {
+      "value": "\\(ad+bc\\)",
+      "verdict": "条件に不一致",
+      "reason": "行列式の反対角積の符号が逆である。"
+    },
+    "3": {
+      "value": "\\(ac-bd\\)",
+      "verdict": "条件に不一致",
+      "reason": "同じ座標関数同士の積を取っており、主対角と反対角の組を違えている。"
+    },
+    "4": {
+      "value": "\\(ac+bd\\)",
+      "verdict": "条件に不一致",
+      "reason": "項の組合せも符号も行列式と合わない。"
+    },
+    "5": {
+      "value": "\\(bd-ac\\)",
+      "verdict": "条件に不一致",
+      "reason": "同じ座標関数の積の差であり、行列式ではない。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/basic/page_009.png"
+  ],
+  "question_id": "H24-REG-BASIC-3-3",
+  "source_file": "sources/H24/basic.pdf",
+  "source_page": "9",
+  "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+  "raw_text_sha256": "94d41418129c99d9766f5f41bde4ecac9b73d9e8ff38f554df93e636ff6c190d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

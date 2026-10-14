@@ -1,0 +1,46 @@
+{
+  "stem": "航空宇宙・玉掛け・薬品の安全率の代表値の順序を、用途の違いを含めて比較する。",
+  "conditions": {
+    "判断方向": "全候補を比較し最も適切な語又は数値・順位を選ぶ。",
+    "原典照合": "25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。",
+    "前提": "事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "ア>イ>ウ",
+      "verdict": "不適合",
+      "reason": "意図された代表値ではウが最も大きいので逆である。"
+    },
+    "2": {
+      "value": "イ>ウ>ア",
+      "verdict": "不適合",
+      "reason": "100のウは6のイより大きい。"
+    },
+    "3": {
+      "value": "ウ>ア>イ",
+      "verdict": "不適合",
+      "reason": "1.5のアは6のイより小さい。"
+    },
+    "4": {
+      "value": "ア>ウ>イ",
+      "verdict": "不適合",
+      "reason": "1.5のアを100のウより大きくする点が違う。"
+    },
+    "5": {
+      "value": "ウ>イ>ア",
+      "verdict": "適合（記載条件内）",
+      "reason": "限定した代表例100>6>1.5に一致する。"
+    }
+  },
+  "figures": "回路、FTA又は候補表を全て原典で照合。元図は転載せず、接続関係と値を独自に記述。",
+  "ambiguity": "アの航空機/ロケット、ウの摂取薬品の範囲が規準を特定しない。100>6>1.5は限定された代表例の順序として保持し普遍命題にしない。",
+  "evidence": [
+    "extracted/pages/H29/basic/page_001.png"
+  ],
+  "question_id": "H29-REG-BASIC-1-2",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "1",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "ab50a27008c3e75cb7390d3e8a6e85336e06354a59dbc126aa62f2a7a95fcb07",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,521 @@
+                                                                                                                           9 OCTOBE R 2019
+
+
+
+
+                                 Scientific Background on the Nobel Prize in Chemistry 2019
+
+
+                                          L I T H I U M - I O N B AT T E R I E S
+
+
+
+
+THE ROYAL SWEDISH ACADEMY OF SCIENCES has as its aim to promote the sciences and strengthen their influence in society.
+
+
+BOX 50005 (LILLA FRESCATIVÄGEN 4 A), SE-104 05 STOCKHOLM, SWEDEN
+                                                                                                     Nobel Prize ® and the Nobel Prize ® medal design mark
+TEL +46 8 673 95 00, KVA@KVA.SE  WWW.KVA.SE                                                           are registrated trademarks of the Nobel Foundation
+Lithium-Ion Batteries
+
+The Royal Swedish Academy of Sciences has decided to award John B. Goodenough,
+M. Stanley Whittingham, and Akira Yoshino the Nobel Prize in Chemistry 2019, for the
+development of lithium-ion batteries.
+
+Introduction
+
+Electrical energy powers our lives, whenever and wherever we need it, and can now be accessed
+with evermore ease and efficiency - even in the absence of nearby power outlets. We increasingly
+move in unbound and wireless ways, and enjoy high mobility in a potentially healthier local
+environment. This dramatic development has been made possible by efficient energy storage
+devices, where high-capacity batteries enable, for example, a variety of electrically-driven tools
+and vehicles. In principle, we all can enjoy the use of mobile phones, cameras, laptops, power
+tools, etc., relying on efficient batteries to power them. As a consequence of modern battery
+technology, electric vehicles are also becoming increasingly popular, and we are in the middle of
+a switch away from vehicles powered by fossil fuels. In addition, efficient energy storage is an
+important complement to fluctuating energy sources, such as wind and sunlight. With batteries,
+the supply-demand chain can thus be balanced over time, even in situations when no energy can
+be produced.
+
+
+To a large extent, these developments have been made possible by the lithium-ion battery. This
+type of battery has revolutionized the energy storage technology and enabled the mobile
+revolution. Through its high potential, and high energy density and capacity, this battery type has
+already contributed to improving our lives, and arguably will continue to do so in the years to
+come. However, battery development is very daunting and challenging in general, and perhaps
+particularly so when it comes to lithium-based cells. Ever since Alessandro Volta presented his
+famous “pile” around 1800,1 tremendous effort has been invested in the development of batteries.
+Many scientists and engineers, working in academia, industry, and even independently, have
+contributed to this development, realizing that the identification of solutions for efficient batteries
+is a highly difficult task. The development has thus been relatively sluggish and only very few
+efficient battery configurations have been successfully designed over the years. For example, we
+still rely on the lead–acid battery discovered in the mid-19th century.2,3 Nevertheless, due to
+several ground-breaking multidisciplinary scientific discoveries, encompassing electrochemistry,
+organic/inorganic chemistry, materials science, etc., these challenges could indeed be met, and
+the lithium-ion battery become a reality that essentially changed our world.
+
+
+
+
+1 (13)
+Background
+
+The working principle of a battery is relatively straightforward in its basic configuration
+(Figure 1). The cell is composed of two electrodes, each connected to an electric circuit, separated
+by an electrolyte that can accommodate charged species. Frequently, the electrodes are physically
+separated by a barrier material that prevents them from coming into physical contact with one
+another, which would cause the battery to short-circuit. In the discharge mode, when the battery
+serves to drive the electric current, an oxidation process takes place at the negative electrode
+(anode), resulting in electrons moving from the electrode through the circuit. A complementary
+reduction process takes place at the positive electrode (cathode), replenished by electrons from
+the circuit. The cell voltage largely depends on the potential difference of the electrodes, and the
+overall process is spontaneous. For rechargeable (secondary) batteries the process can be reversed
+and external electricity can be used to produce complementary redox reactions at the electrodes.
+This process is energy-dependent and non-spontaneous.
+
+
+
+
+Figure 1. Working principle of basic battery in the discharge mode (Galvanic element).
+Spontaneous redox processes at the electrodes result in electric current through the circuit. In the
+charge mode (electrolytic cell), electricity-driven redox processes take place at the electrodes
+resulting in reversal of the spontaneous process.
+
+
+The voltaic pile was made of alternating discs of two metals, one of which tin or zinc and the other
+copper or silver, separated by layers of cardboard or leather soaked in an aqueous electrolyte.1
+Each pair of metal discs and an electrolyte layer made up a battery cell, and the pile was composed
+of about 20 stacked cells. During operation, in the case of the Zn/Cu cell, the zinc metal acted as
+an anode, releasing electrons to the circuit and producing metal ions (oxidation), whereas the
+opposite electrode reaction was dependent on the working conditions. In the presence of air, the
+copper metal became partially oxidized to CuO, and reduction of CuO to Cu took place at the
+electrode. In the absence of air, the protons in the electrolyte were instead reduced to hydrogen
+
+
+
+
+2 (13)
+gas at the copper surface. The cell voltage was approximately 0.8–1.1 V, depending on air
+exposure.4 The voltaic pile was essentially a primary battery and not rechargeable. When
+connecting the poles of the whole device, Volta could demonstrate how the resulting current could
+generate a spark. After a demonstration of the discovery to Napoleon Bonaparte, the First Consul
+of the Cisalpine republic was so impressed that he immediately made Volta a count.5
+
+The ubiquitous lead–acid battery, still used as a starter battery in cars, was studied by
+Wilhelm J. Sinsteden as early as 1854 and demonstrated by Gaston Planté in 1859–1860.2–4,6 The
+battery has a working principle similar to the voltaic pile exposed to air, but was the first so called
+secondary battery that could be recharged. The term secondary was derived from early studies by
+Nicolas Gautherot, who in 1801 observed short secondary currents from disconnected wires used
+in electrochemical experiments.7 The lead–acid battery is based on two lead electrodes, at least
+one of which partially oxidized to lead oxide (PbO2), separated by a sulfuric acid-containing
+electrolyte. During discharge, oxidation takes place at the lead electrode (anode), producing
+electrons, protons, and lead sulfate (PbSO4), whereas the lead oxide is reduced to PbSO4 at the
+cathode. In this case, the cell potential is about 2 V, and a typical 12-V car battery is composed of
+six cells connected in series.
+
+Another milestone in battery development came in 1899, when Waldemar Jungner described the
+first nickel-iron (Ni-Fe) and nickel-cadmium (Ni-Cd) batteries.8,9 Shortly after, Thomas A. Edison
+also described such batteries.10 These alkaline batteries became predecessors to the later nickel-
+metal hydride (Ni-MH) battery, which was commercialized in 1989.
+
+
+Lithium
+
+By the mid-2oth century, the limited energy densities and capacities of the developed batteries
+inspired the search for better configurations, and lithium became a target. This metal, discovered
+by Johan August Arfwedson and named by him and Jöns Jakob Berzelius in 1817,11,12 was
+considered to have excellent properties to serve as a battery element (Figure 2). With atomic
+number 3, lithium is the lightest metal with a density of only 0.53 g/cm3. It also has a very low
+standard reduction potential (Li+/Li couple -3.05 V vs SHE), thus making it suitable for high-
+density, high-voltage battery cells. However, lithium is a relatively reactive metal, which has to be
+protected from water and air, for example. The taming of lithium was therefore of utmost
+importance for the battery development.
+
+
+
+
+3 (13)
+Figure 2. Lithium and the periodic table.
+
+
+Early studies regarding the electrochemistry of lithium occurred already in 1913 by
+Gilbert N. Lewis,13,14, but the interest in lithium for battery applications became most evident in
+the 1960s and 1970s. To use lithium, water and air had to be avoided, and non-aqueous
+electrolytes had to be developed. This was not trivial, and factors, such as inertness, melting point,
+redox stability, solubility of lithium ions and salts, ion/electron transfer rates, viscosity, etc., had
+to be considered. Studies of non-aqueous electrolytes were described in 1958, when
+William S. Harris, supervised by Charles C. Tobias, defended his Ph.D. thesis on the electroplating
+of different metals in different cyclic ester solvents (Figure 3).15 Of the solvents tested, propylene
+carbonate showed potential properties for electrochemical applications with alkali metals, and
+was, e.g., used in combination with lithium halides. This discovery was gradually accommodated
+by the community and carbonates have remained useful as electrolytes to this day. Around the
+same time, Y. Yao and J.T. Kummer studied ionic conductivity in solids, and showed that sodium
+ions can move at the same rate in solids as in salt melts.16 Kummer also proposed the use of this
+configuration for batteries in a patent from 1969.17 At the same time, John Newman developed a
+theory for ion transfer in electrochemical cells.18
+
+
+
+
+Figure 3. Carbonate solvents used for batteries.
+
+
+A conference held in Belgirate, Italy, arranged by Brian C. H. Steele in 1972 came to be particularly
+important to the development. This meeting gathered the leading battery scientists at the time,
+and solutions to taming lithium for energy storage devices were discussed. Of particular interest
+was the use of lithium ions as electrolyte components, preserving the stoichiometry in the
+proposed secondary batteries.
+
+
+
+
+4 (13)
+Intercalation cathodes
+
+At the time, it was assumed that metallic lithium should serve as the anode in the batteries and
+special focus was therefore put on identifying matching cathode materials. Following the studies
+on ionic conductivity in solids, materials with high reduction potential that were able to
+accommodate lithium ions at high transfer rates were of special interest. For this reason, a range
+of lithium-containing structures were studied, and the behavior of the materials upon alkali metal
+intercalation under reductive conditions was evaluated. This challenge was certainly not trivial,
+as these materials should ideally fulfil a range of prerequisites to enable subsequent, efficient
+incorporation in batteries.19 The materials should thus: 1) have accessible electronic band
+structures enabling a large, constant intercalation free energy change over the entire
+stoichiometry range; 2) be able to accommodate the guest ion over a wide stoichiometric range
+with minimal structural change (topotactic intercalation); 3) display high diffusivity of the alkali
+ion within the structure; 4) allow the intercalation reaction to proceed reversibly; 5) display good
+electronic conductivity; 6) be insoluble in the electrolyte, and display no co-intercalation of
+electrolyte components; and 7) be able to operate under close to ambient conditions.
+
+
+Of particular interest were the metal chalcogenides of the type MX2, as some of these became
+known to have layered structures with potential binding sites for lithium. One of the members of
+this family, titanium disulfide (TiS2) was shown to be able to host lithium ions by Walter Rüdorff
+in 1965.20 This structure was lamellar with TiS2 arranged in layers, between which lithium ions
+could become intercalated. Rüdorff could demonstrate chemical intercalation through the
+treatment of the materials with lithium dissolved in liquid ammonia, resulting in the structure
+Li0.6TiS2. The intercalation effect was further demonstrated by Jean Rouxel and coworkers,21 and
+by M. Stanley Whittingham and Fred Gamble,22 who could show that lithium can be
+chemically intercalated in the LixTiS2 material over the whole stoichiometric range (0 < x ≤ 1) with
+a small lattice expansion effect. The material was analogous to CdI2-NiAs, and the lithium ions
+progressively occupied the octahedral sites of the interlamellar spaces (van der Waals gaps).
+These promising studies inspired Whittingham to explore electrochemical intercalation in such
+materials,23 and as early as 1973 propose such materials as electrodes in batteries (with Exxon
+Research and Engineering Company).24 A working, rechargeable battery was subsequently
+demonstrated in 1976 (Figure 4).25
+
+
+
+
+5 (13)
+Figure 4. Lithium-based battery using LixTiS2 as the cathode.
+
+The battery cell was composed of lithium metal as the anode and TiS2 as the cathode, with LiPF6
+as the electrolyte in propylene carbonate as the solvent. A cell electromotive force (emf) of 2.5 V
+could be recorded, showing an initial current density of 10 mA/cm2, and the results indicated the
+single-phase reaction: x Li + TiS2 → LixTiS2. The reaction proceeded by intercalation of the lithium
+ions into the titanium disulfide lattice with an estimated diffusion coefficient of 10-7 cm2/s. The
+reverse process could furthermore be demonstrated, starting with the lithiated LiTiS2-electrode,
+showing complete reversibility. In a more applied example, TiS2 powder was mixed with Teflon
+and attached to a steel support surrounded by a polypropylene film and lithium metal. When
+immersed in a mixture of dimethoxyethane and tetrahydrofuran containing LiClO4, the cell was
+cycled at a low charge/discharge ratio for 1100 times without significant loss of reversibility.
+
+
+These results became the starting point for the development of commercial batteries, and large
+cells of up to 45 Wh were developed at Exxon.26 These cells initially used lithium as the anode,
+TiS2 as the cathode, and lithium perchlorate (LiClO4) in dioxolane as the solvent, but because the
+perchlorate proved unstable, it was later replaced by tetramethyl borate despite a less optimal
+lithium plating with this electrolyte.
+
+
+However, the reactive metallic lithium could not be completely tamed with this setup and lithium
+dendrites were formed at the metal surface upon repeated charge-discharge cycles (Figure 5). The
+dendrite growth could unfortunately be large enough to penetrate the separation layer and reach
+the opposite electrode, resulting in a short circuit and a potential fire hazard. The problem proved
+difficult to solve, and the commercial development of such batteries essentially came to a halt.
+
+
+
+
+6 (13)
+Figure 5. Formation of lithium whiskers/dendrites potentially leading to short-circuiting.
+
+
+In part for this reason, scientists turned their focus to alternative solutions and an “ion transfer
+cell” configuration (a.k.a. “rocking chair” cells),27 in which both electrodes can accommodate ions,
+was increasingly proposed.28 The principle of this type of cell had been demonstrated by Rüdorff
+in 1938, where hydrogen sulfate ions were electrochemically shuttled between two graphite
+electrodes.29 In this type of cell, metallic lithium is avoided and both electrodes are made from
+intercalation materials able to accommodate lithium ions. Ions also were well-known to become
+intercalated in carbon materials, such as graphite,30,31 and such materials appeared particularly
+attractive. Although the cell emf and the capacity of the intercalation electrode would be lower
+than for metallic lithium, the configuration would be considerably safer. The capacity of these
+materials was also attractive, as they were able to accommodate up to one lithium ion per six
+carbon atoms.
+
+
+However, reversible electrochemical lithium-ion intercalation in graphite proved not to be
+straightforward, and co-intercalation of the electrolyte components led to exfoliation and
+destruction of the electrodes. The materials could thus not be effectively used in the cells, and the
+quest for better materials or better electrolytes continued.
+
+In parallel with the anode development, better cathode materials were also sought after in order
+to acquire a higher cell emf in combination with anodes of higher potential than metallic lithium.
+A breakthrough came in 1979/1980 when John B. Goodenough and his co-workers at Oxford
+University, UK, discovered that LixCoO2, another intercalated metal chalcogenide of type MX2,
+could serve as a cathode material (Figure 6).32,33 The structure of the material was analogous to
+LixTiS2 with van der Waals gaps between the cobalt dioxide (CoO2) layers in which lithium ions
+could be bound without dramatic lattice expansion. Goodenough reasoned that when X in MX2
+is a small electronegative element, a resulting cation uptake process would be associated with a
+large negative free-energy change and a high cell voltage. With an X of oxygen, the situation was
+deemed especially promising, also given that lithium ions were proposed to be sufficiently mobile
+in close-packed oxygen arrays. The reasoning proved to be correct, and the CoO2 material showed
+a very high potential of ~4–5 V relative to Li+/Li and an approximate diffusion constant for
+lithium ions of about 5 × 10-9 cm2/s at room temperature. The electrochemical studies were
+
+
+
+
+7 (13)
+carried out in this case with an electrolyte composed of LiBF4 in propylene carbonate using
+lithium metal or Li0.1V2O5 as counter/reference electrodes.
+
+
+
+
+Figure 6. Lithium-based battery using LixCoO2 as the cathode.
+
+
+Carbonaceous anode materials - ion transfer cell batteries
+
+This discovery enabled the use of anode materials with higher potentials than lithium metal,
+furthering the search for suitable carbonaceous materials. Considering the difficulty of solving the
+problem of the electrochemical intercalation of graphite, other options were investigated instead.
+A breakthrough came in 1985,34,35 when a group led by Akira Yoshino at Asahi Kasei
+Corporation, Japan, identified that certain qualities of petroleum coke were stable under the
+required electrochemical conditions. Yoshino had initially made attempts with the relatively
+recently discovered conducting polymer poly(acetylene) as anode material, but soon turned his
+eye on vapor-phase–grown carbon fibers (VGCF) and eventually heat-treated petroleum coke.
+The latter material was known to contain a mixture of crystalline (graphitic) and non-crystalline
+domains, and the researchers could identify particularly stable, yet high-performing, qualities
+with specific degrees of crystallinity. The surrounding regions were assumed in this case to protect
+the crystalline domains from exfoliation, and lithium ions could be efficiently and repeatedly
+intercalated in the materials. Furthermore, the materials showed sufficiently low potential
+relative to Li+/Li (~0.5 V), while being able to accommodate a large amount of lithium ions.
+
+
+With these effective anode materials, Yoshino could develop an efficient, working lithium-ion
+battery based on the ion transfer cell configuration (Figure 7). The identified carbonaceous
+material was thus used as an anode and Goodenough’s LixCoO2 material (typically containing
+small amounts of tin) was used as a cathode. Separator layers composed of polyethylene or
+polypropylene were used, and the electrolyte was composed of LiClO4 in propylene carbonate. In
+order to test the new configuration's safety, Yoshino devised a testing unit by which a weight
+could be remotely dropped on the batteries. It could thus be shown that the newly developed
+
+
+
+8 (13)
+batteries were damaged without causing any fires or explosions, whereas batteries based on
+anodes of lithium metal reacted more violently.36
+
+
+
+
+Figure 7. Ion transfer cell lithium-ion battery configuration.
+
+These discoveries and developments ultimately led to the release of a commercial lithium battery
+in 1991.37 The battery was based on a petroleum coke–based anode material, LixCoO2 as the
+cathode, and a water-free electrolyte composed of LiPF6 in propylene carbonate. The charging
+voltage was high (up to 4.1 V), with a recorded energy density of ~80 Wh/kg or ~200 Wh/L.
+Compared to other batteries that were on the market at the time, the lithium battery quickly
+became very competitive and essentially paved the way for the upcoming mobile revolution.
+
+
+At around the same time, it was found that graphite could actually be used in combination with a
+suitable electrolyte composition.38 By using solvents containing ethylene carbonate, hitherto
+generally disregarded due its higher melting point, a solid electrolyte interphase (SEI)39 was
+formed at the surface of the graphite electrode during the charge/discharge cycle, thereby
+protecting the carbon material from exfoliation and further decomposition. This discovery was
+rapidly adopted by the community, and a next generation lithium-ion battery based on graphite
+as the anode material could be developed. With this anode material, batteries with charging
+voltages of 4.2 V were produced soon after, resulting in energy densities of ~400 Wh/L.
+
+The development of the lithium-ion battery did not stop with these seminal and important
+discoveries, but many improvements and alternatives have since been reported. For example, new
+cathode materials have continuously been identified for use in specific battery applications, and
+two such materials have originated from Goodenough’s group: the spinel material Li1-xMn2O4
+and the olivine material LixFePO4 (LFP).40,41 The latter material is limited by a somewhat lower
+
+
+
+
+9 (13)
+potential versus Li+/Li than LixCoO2, but has high stability and can be used at high charging rates.
+Several other electrode materials and electrolyte systems have also been discovered, leading to
+ever-improved energy storage materials for the benefit of society.
+
+
+Summary and Outlook
+
+The discoveries of John B. Goodenough, M. Stanley Whittingham, and Akira Yoshino
+have arguably had a tremendous impact on our world. The lithium-ion battery thus has been an
+important part of the mobile electronics revolution, as well as the ongoing switch from vehicles
+powered by fossil fuels to electrically-powered transportation. We have yet to see the overall
+consequences of this development, but efficient energy storage is a known prerequisite for many
+of the energy sources used to produce electricity. Over the past decades, this development has
+progressed rapidly, and we can expect many more important discoveries to come in battery
+technology. These future breakthroughs will undoubtedly lead to further improvements in our
+lives, not only for our convenience, but also with respect to global and local environments and,
+ultimately, the sustainability of our entire planet.
+
+
+
+
+Olof Ramström
+Professor of Chemistry
+Member of the Royal Swedish Academy of Sciences
+Member of the Nobel Committee for Chemistry
+
+
+
+
+References
+
+(1) Volta, A. On the Electricity Excited by the Mere Contact of Conducting Substances of Different
+Kinds. Philos. Trans. Royal Soc. 1800, 90, 403–431.
+
+(2) Planté, G. Nouvelle Pile Secondaire d’une Grande Puissance. Comptes Rendus Acad. Sci.
+1860.
+
+(3) Planté, G. The Storage of Electrical Energy: And Researches in the Effects Created by
+Currents Combining Quantity with High Tension; London: Whittaker, 1887.
+
+
+
+
+10 (13)
+(4) Placke, T.; Kloepsch, R.; Dühnen, S.; Winter, M. Lithium Ion, Lithium Metal, and Alternative
+Rechargeable Battery Technologies: The Odyssey for High Energy Density. J. Solid State
+Electrochem. 2017, 21 (7), 1939–1964.
+
+(5) Munro, J. Pioneers of Electricity; or, Short Lives of the Great Electricians; London: The
+Religious Tract Society, 1890.
+
+(6) Sinsteden, W. J. Versuche über den Grad der Continuität und die Stärke des Stroms eines
+grössern magneto-elektrischen Rotations. Ann. Phys. Chem. 1854, 92, 1–21.
+
+(7) Gautherot, N. Sur le galvanisme. Ann. Chim. 1801, 39, 203–210.
+
+(8) Jungner, E. W. Sätt att på elektrolytisk väg förstora ytan af sådana metaller, hvilkas
+syreföreningar äro kemiskt olösliga i alkaliska lösningar. Swedish patent no. 15567, 1901.
+
+(9) Jungner, E. W. Primärt eller sekundärt elektriskt element. Swedish patent no. 10177, 1899.
+
+(10) Edison, T. A. Reversible Galvanic Battery. US patent no. 692,507, 1902.
+
+(11) Arfwedson, J. A. Untersuchung einiger bei der Eisen-Grube von Utö vorkommenden Fossilien
+und von einem darin gefundenen neuen feuerfesten Alkali. J. Chem. Phys. 1818, 22, 93–117.
+
+(12) Berzelius, J. J. Ein neues mineralisches Alkali und ein neues Metall. J. Chem. Phys. 1817, 21,
+44–48.
+
+(13) Glaize, C.; Geniès, S. Lithium Batteries and Other Electrochemical Storage Systems; ISTE
+Ltd., 2013.
+
+(14) Lewis, G. N.; Keyes, F. G. The Potential of the Lithium Electrode. J. Am. Chem. Soc. 1913,
+35, 340–344.
+
+(15) Harris, W. S. Electrochemical Studies in Cyclic Esters; PhD thesis, University of California,
+Berkeley, 1958.
+
+(16) Yao, Y.-F. Y.; Kummer, J. T. Ion Exchange Properties of and Rates of Ionic Diffusion in Beta-
+Alumina. J. Inorg. Nucl. Chem. 1967, 29 (9), 2453–2475.
+
+(17) Kummer, J. T.; Neill, W. Thermo-Electric Generator. US patent No. 3,458,356, 1969.
+
+(18) Newman, J. Transport in Electrolytic Solutions. Adv. Electrochem. Electrochem. Eng. 1967,
+5, 87–135.
+
+(19) Whittingham, M. S. Chemistry of Intercalation Compounds: Metal Guests in Chalcogenide
+Hosts. Prog. Solid State Chem. 1978, 12 (1), 41–99.
+
+(20) Rüdorff, W. Chimia 1965, 19, 489.
+
+(21) Bichon, J.; Danot, M.; Rouxel, J. Systematique Structurale Pour Les Series d’intercalaires
+Mxtis2 (M= Li, Na, K, Rb, Cs). Comptes Rendus Acad. Sci., Ser. C, Sci. Chim. 1973, 276, 1283–
+1286.
+
+
+
+11 (13)
+(22) Whittingham, M. S.; Gamble, F. R. The Lithium Intercalates of the Transition Metal
+Dichalcogenides. Mater. Res. Bull. 1975, 10 (5), 363–371.
+
+(23) Whittingham, M. S. Electrointercalation in Transition-Metal Disulphides. J. Chem. Soc.,
+Chem. Commun. 1974, 328–329.
+
+(24) Whittingham, M. S. Batterie à Base de Chalcogénures. Belgian patent no. 819672, 1975.
+
+(25) Whittingham, M. S. Electrical Energy Storage and Intercalation Chemistry. Science 1976,
+192 (4244), 1126–1127.
+
+(26) Whittingham, M. S. History, Evolution, and Future Status of Energy Storage. Proc. IEEE
+2012, 100, 1518–1534.
+
+(27) Armand, M. B. Intercalation Electrodes. In Materials for Advanced Batteries. NATO Conf.
+Ser. (VI Mater. Sci.); Murphy, D. W., Broadhead, J., Steele, B. C. H., Eds.; Springer, Boston, MA,
+1980, 2, 145–161.
+
+(28) Armand, M.; Touzain, P. Graphite Intercalation Compounds as Cathode Materials. Mater.
+Sci. Eng. 1977, 31, 319–329.
+
+(29) Rüdorff, W.; Hofmann, U. Über Graphitsalze. Z. Anorg. Allg. Chem. 1938, 238, 1–50.
+
+(30) Schafhaeutl, C. Über die Verbindungen des Kohlenstoffes mit Silicium, Eisen und anderen
+Metallen, welche die verschiedenen Gallungen von Roheisen, Stahl und Schmiedeeisen bilden. J.
+Prakt. Chem. 1840, 3, 129.
+
+(31) Fredenhagen, K.; Cadenbach, G. Die Bindung von Kalium durch Kohlenstoff. Z. Anorg. Allg.
+Chem. 1926, 158, 249.
+
+(32) Goodenough, J. B.; Mizushima, K. Fast Ion Conductors. US patent no. 4,357,215, 1982.
+
+(33) Mizushima, K.; Jones, P. C.; Wiseman, P. J.; Goodenough, J. B. LixCoO2 (0<x<-1): A New
+Cathode Material for Batteries of High Energy Density. Mater. Res. Bull. 1980, 15 (6), 783–789.
+
+(34) Yoshino, A.; Sanechika, K.; Nakajima, T. Secondary Battery. US patent no. 4,668,595, May
+26, 1987.
+
+(35) Yoshino, A.; Sanechika, K.; Nakajima, T. Japanese patent no. 1989293, 1985.
+
+(36) Yoshino, A. The Birth of the Lithium-Ion Battery. Angew. Chem. Int. Ed. 2012, 51, 5798–
+5800.
+
+(37) Nishi, Y. The Development of Lithium Ion Secondary Batteries. Chem. Rec. 2001, 1, 406–
+413.
+
+(38) Fong, R.; Sacken, U. von; Dahn, J. R. Studies of Lithium Intercalation into Carbons Using
+Nonaqueous Electrochemical Cells. J. Electrochem. Soc. 1990, 137 (7), 2009–2013.
+
+
+
+
+12 (13)
+(39) Peled, E. The Electrochemical Behavior of Alkali and Alkaline Earth Metals in Nonaqueous
+Battery SystemsThe Solid Electrolyte Interphase Model. J. Electrochem. Soc. 1979, 126 (12),
+2047–2051.
+
+(40) Padhi, A. K.; Nanjundaswami, K. S.; Goodenough, J. B. Phospho-Olivines as Positive-
+Electrode Materials for Rechargeable Lithium Batteries. J. Electrochem. Soc. 1997, 144, 1188–
+1194.
+
+(41) Thackeray, M. M.; David, W. I. F.; Bruce, P. G.; Goodenough, J. B. Lithium Insertion into
+Manganese Spinels. Mater. Res. Bull. 1983, 18, 461–472.
+
+
+
+
+13 (13)
+

@@ -1,0 +1,46 @@
+{
+  "stem": "発明の定義、公益、産業上利用、新規性と公開の要件を対応させる。",
+  "conditions": {
+    "判断対象": "広義知的財産・産業財産権・引用・営業秘密を区別する。",
+    "原典照合": "15問の原典画像について問題幹、否定、表の列順、全5候補を確認。",
+    "法の時点": "出題時の制度を保持し、説明の取得基準日は2026-10-12とする。"
+  },
+  "choices": {
+    "1": {
+      "value": "誤・正・正・誤",
+      "verdict": "不適切",
+      "reason": "アの自然法則を利用した高度な技術的思想の創作は定義どおりで正である。"
+    },
+    "2": {
+      "value": "正・誤・正・正",
+      "verdict": "不適切",
+      "reason": "公益の除外を誤とし、出願前公開を必須にするエを正とする点が違う。"
+    },
+    "3": {
+      "value": "誤・正・誤・正",
+      "verdict": "不適切",
+      "reason": "発明の定義と産業上利用可能性を誤とし、公開を必須にする点も違う。"
+    },
+    "4": {
+      "value": "正・正・正・誤",
+      "verdict": "独立判断で適切",
+      "reason": "ア・イ・ウは要件に対応し、エの既発表を要求する文だけが誤である。"
+    },
+    "5": {
+      "value": "正・正・誤・誤",
+      "verdict": "不適切",
+      "reason": "産業上利用できることは要件なのでウは正である。"
+    }
+  },
+  "figures": "組合せ表の全5行を画像確認。原典の長文は独自要約へ変換し、正誤と選択肢の対応を保持する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/aptitude/page_008.png"
+  ],
+  "question_id": "R01-RET-APT-08",
+  "source_file": "sources/R01_retest/aptitude.pdf",
+  "source_page": "8",
+  "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+  "raw_text_sha256": "40e5801136e3c092574756feac7dab7559b45cf0100f60ed1b59faf3939ab053",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

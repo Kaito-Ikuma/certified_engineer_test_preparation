@@ -1,0 +1,45 @@
+{
+  "stem": "ダイヤモンドと石墨の関係に相当しない鉱物の組合せを選ぶ。",
+  "conditions": {
+    "関係": "化学組成が同じで結晶構造が異なる多形。",
+    "方向": "最も不適切な組合せ。"
+  },
+  "choices": {
+    "1": {
+      "value": "紅柱石／珪線石",
+      "verdict": "多形に該当",
+      "reason": "両者ともAl2SiO5で、結晶構造が異なる。"
+    },
+    "2": {
+      "value": "曹長石／灰長石",
+      "verdict": "多形に非該当",
+      "reason": "NaAlSi3O8とCaAl2Si2O8という異なる端成分であり、斜長石固溶体を作る。"
+    },
+    "3": {
+      "value": "方解石／あられ石",
+      "verdict": "多形に該当",
+      "reason": "両者ともCaCO3で、結晶構造が異なる。"
+    },
+    "4": {
+      "value": "石英／トリディマイト",
+      "verdict": "多形に該当",
+      "reason": "両者ともSiO2で、結晶構造が異なる。"
+    },
+    "5": {
+      "value": "閃亜鉛鉱／ウルツ鉱",
+      "verdict": "多形に該当",
+      "reason": "両者ともZnSで、結晶構造が異なる。"
+    }
+  },
+  "figures": "図なし。原典頁画像で選択方向、観察条件、鉱物名と全5肢を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_008.png"
+  ],
+  "question_id": "R03-REG-APPLIED-22",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "c7a816f72a99389d3ea09fdfb626971f7e6ef3a6be2b68e8958026c00815072b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

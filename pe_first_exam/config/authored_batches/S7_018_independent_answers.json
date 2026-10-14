@@ -1,0 +1,260 @@
+{
+  "batch_id": "S7_018_atmosphere",
+  "recorded_at": "2026-10-10T23:41:54+09:00",
+  "official_answer_consulted": false,
+  "questions": [
+    {
+      "question_id": "H23-REG-APPLIED-20",
+      "independent_answer": "4",
+      "reason": "大気の水量を全球降水率で割ると約8〜10日。10日が最近。",
+      "source_images_viewed": [
+        "extracted/pages/H23/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "raw_text_sha256": "3474e6fe8f4e3301a61acf2b34deec059dbfc2102d8914a69eff3a2b4d86a691",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H24-REG-APPLIED-34",
+      "independent_answer": "2",
+      "reason": "メタンは湿地・水田・反すう動物からも大きく発生し、採掘がほぼ全てとはいえない。",
+      "source_images_viewed": [
+        "extracted/pages/H24/17_applied_science/page_010.png"
+      ],
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "raw_text_sha256": "834e1fa726e39a3e1615a2a39002463e4c155caf313af528af8dd881750078eb",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H26-REG-APPLIED-26",
+      "independent_answer": "1",
+      "reason": "全球反射は約3割。他肢は太陽スペクトル、季節原因、測定高度、緯度収支が逆。",
+      "source_images_viewed": [
+        "extracted/pages/H26/17_applied_science/page_011.png"
+      ],
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "raw_text_sha256": "d6f6a0ddc550b893cddefae00e9d81ddfbe59e92dcc5bcc84df22b0c8e3b748e",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H27-REG-APPLIED-24",
+      "independent_answer": "4",
+      "reason": "日中の陸加熱で海風。ハドレーは低緯度、UV加熱は成層圏、北半球転向力は右、地衡風は等圧線平行。",
+      "source_images_viewed": [
+        "extracted/pages/H27/17_applied_science/page_009.png"
+      ],
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "raw_text_sha256": "f7e7c4b9c38d0a5c28efb5cca7071a31eab3454109c057e2ec9c1a678adb19a8",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H27-REG-APPLIED-26",
+      "independent_answer": "2",
+      "reason": "10^-3.3 mol/L=約501μmol/Lで30ではない。日本の当時平均pH分布は追加一次資料必要。",
+      "source_images_viewed": [
+        "extracted/pages/H27/17_applied_science/page_010.png"
+      ],
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "raw_text_sha256": "9660f219ec45f141f89dc4e5f04297d2996f7448a0c1863361aa203efa02e115",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H28-REG-APPLIED-25",
+      "independent_answer": "2",
+      "reason": "透水量係数T=Kb、比貯留率Ssと厚さの積は貯留係数。",
+      "source_images_viewed": [
+        "extracted/pages/H28/17_applied_science/page_010.png"
+      ],
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "raw_text_sha256": "137307f4537c7e6554155ad3d7fc1e7fec6cd2f7faf5a5f4446940c2c963fa76",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H28-REG-APPLIED-26",
+      "independent_answer": "1",
+      "reason": "1368×π×(6.370×10^6)^2=1.74×10^17 W。受光断面は円。",
+      "source_images_viewed": [
+        "extracted/pages/H28/17_applied_science/page_011.png"
+      ],
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "raw_text_sha256": "2af83ca52b2c97ce81fe2ad5ac167b29f44de3936d687116dc151bee3e7d9d10",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H29-REG-APPLIED-19",
+      "independent_answer": "4",
+      "reason": "氷床は貯留大・交換遅い。貯留量と輸送量を混同している。",
+      "source_images_viewed": [
+        "extracted/pages/H29/17_applied_science/page_006.png"
+      ],
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "raw_text_sha256": "4fea0875513a9b0b695ff1b0fa3d16e9b1e45929a48fd1e6e80aac77a6e45f88",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H29-REG-APPLIED-21",
+      "independent_answer": "4",
+      "reason": "ENSOは数年の変動で数十年の現象ではない。",
+      "source_images_viewed": [
+        "extracted/pages/H29/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "raw_text_sha256": "8a144b1719d36149d53c74e9bc52c5d5eb6b95e40ecb7835864a0d165f6f7047",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H30-REG-APPLIED-20",
+      "independent_answer": "4",
+      "reason": "乾燥大気はN2>O2>Ar>CO2。",
+      "source_images_viewed": [
+        "extracted/pages/H30/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "raw_text_sha256": "61d5529e61e172a9fa856a0d478e01b1d14c08541a33feda02daa09d4e27b43e",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H30-REG-APPLIED-22",
+      "independent_answer": "2",
+      "reason": "1368πR²=1.74×10^17 W。H28とは肢が1つずれる。",
+      "source_images_viewed": [
+        "extracted/pages/H30/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "raw_text_sha256": "90d313a00f5f713521cbef8e72ae143072c1f66583b83fdc866cd33066f483b1",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R01-REG-APPLIED-19",
+      "independent_answer": "4",
+      "reason": "50kmの温度極大はオゾンUV吸収。10km密度1/4は標準大気約0.34の粗い概数として疑義あり。",
+      "source_images_viewed": [
+        "extracted/pages/R01/17_applied_science/page_006.png"
+      ],
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "raw_text_sha256": "2fca050cbc4c36e31accb54f28dd8d0de9421f3c02cdb36aa81ac51cb31bc9d7",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R01-REG-APPLIED-21",
+      "independent_answer": "5",
+      "reason": "氷床の貯留大と輸送遅を区別。H29肢4が肢5へ移る。",
+      "source_images_viewed": [
+        "extracted/pages/R01/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "raw_text_sha256": "471315cb43b63d699f43e53314a652ef66612a39917f6ee3858280308c582c43",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R01-REG-APPLIED-22",
+      "independent_answer": "3",
+      "reason": "可視光が太陽放射のおよそ半分。季節は軸傾斜、反射約3割、太陽定数は上端。",
+      "source_images_viewed": [
+        "extracted/pages/R01/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "raw_text_sha256": "967ffe854439eef44aaa3b26af53abca501c045a827bc5d7f5161540eb4492b3",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R01-RET-APPLIED-20",
+      "independent_answer": "2",
+      "reason": "全球反射約31%×342=106 W/m²に最近107。",
+      "source_images_viewed": [
+        "extracted/pages/R01_retest/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "raw_text_sha256": "0a23aaaa78c70ac68a75298f408d7fb6cf27c098cdb8a875127c25c897844d00",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R01-RET-APPLIED-21",
+      "independent_answer": "2",
+      "reason": "対流圏標準気温減率6.5K/km。環境減率と乾燥断熱9.8、湿潤約数Kを区別。",
+      "source_images_viewed": [
+        "extracted/pages/R01_retest/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "raw_text_sha256": "ead7c1c46d32c7afe19d67b41810adccf39f0ec8af8c946b05d72cb4b701fc35",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R02-REG-APPLIED-21",
+      "independent_answer": "4",
+      "reason": "夜間は陸が冷え地表で陸→海。3の上層主要種は高度・太陽活動依存で詳細一次確認必要。",
+      "source_images_viewed": [
+        "extracted/pages/R02/17_applied_science/page_008.png"
+      ],
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "raw_text_sha256": "1aa5da3b13ab25186873c446b4b1b5f2e9fe9557d9b8467276c8a1d381d3088d",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R02-REG-APPLIED-22",
+      "independent_answer": "1",
+      "reason": "全球平均潜熱フラックス約80W/m²は入射平均342の約1/4で約1割ではない。淡水枯渇しないという肢4は局所資源枯渇もあるため表現の範囲に疑義。",
+      "source_images_viewed": [
+        "extracted/pages/R02/17_applied_science/page_008.png"
+      ],
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "raw_text_sha256": "eb0f012c512b0b0769abdc2770e74d6ae45f94df25fa8ad9d1f7c65af6b30c17",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R04-REG-APPLIED-22",
+      "independent_answer": "1",
+      "reason": "対流圏の代表減率は6.5K/km。R01再試験の肢順変更。",
+      "source_images_viewed": [
+        "extracted/pages/R04/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "raw_text_sha256": "97509ffd473a1cb2deda85bbf5b9ee277e9b9e4a548bde78a5436db26ce611fa",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R05-REG-APPLIED-18",
+      "independent_answer": "1",
+      "reason": "ArはCO2より多い。H30肢4が1へ移る。",
+      "source_images_viewed": [
+        "extracted/pages/R05/17_applied_science/page_006.png"
+      ],
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "raw_text_sha256": "3a7c5a242a1314638416ab50e7c1c5328c915ba317f0116f94cb8838ad8ef9c7",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R05-REG-APPLIED-20",
+      "independent_answer": "1",
+      "reason": "雨は海水のpHではなくCO2と酸・塩基成分で決まり、極域/海洋一般8以上は不適切。",
+      "source_images_viewed": [
+        "extracted/pages/R05/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "raw_text_sha256": "e5460471b0a38a03df96a32de5728b6c72a9e39546ae8b53b358f3924db1612e",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R06-REG-APPLIED-20",
+      "independent_answer": "3",
+      "reason": "反射は約31%。H26肢1が3へ移る。",
+      "source_images_viewed": [
+        "extracted/pages/R06/17_applied_science/page_006.png"
+      ],
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "raw_text_sha256": "434e371704dc34cff4061bacee25335792133f963e71d05c9a6dab8bd0ba1f14",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R07-REG-APPLIED-21",
+      "independent_answer": "2",
+      "reason": "対流圏界面は低緯度高・極域低。肢1の10km密度1/4は約0.34と差があり概数の許容範囲を要査読。",
+      "source_images_viewed": [
+        "extracted/pages/R07/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "raw_text_sha256": "484df2a63f0f90f527125dfe2de269a199c1a02de812b27d4e7d96a0dd85532b",
+      "official_answer_consulted": false
+    }
+  ]
+}

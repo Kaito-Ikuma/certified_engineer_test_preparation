@@ -1,0 +1,28 @@
+{
+  "time": "2026-10-14T14:14:32.609861+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_057_analysis_finish",
+  "canonical_counts": {
+    "registered": 1270,
+    "solution_drafts": 1178,
+    "corrected_verified": 746,
+    "corrected_partial": 432,
+    "classification_verified": 1190,
+    "manual_required": 524,
+    "subject_drafts": {
+      "BASIC": 378,
+      "APT": 240,
+      "APPLIED": 560
+    }
+  },
+  "source_images_actually_viewed": 55,
+  "source_reviewed_questions": 43,
+  "initial_matches": 43,
+  "new_concepts": 33,
+  "new_references": 4,
+  "pdf_manifest": "extracted/logs/S7_057_build_manifest.json",
+  "checkpoint2_reached": false,
+  "remaining_first_drafts": 92,
+  "next": "否定肢判定を改訂し次PDFで再確認。環境32+30+30問と頻度分析、真のCP2。"
+}

@@ -1,0 +1,46 @@
+{
+  "stem": "利得表の最適反応と支配戦略。",
+  "conditions": {
+    "行": "Aの定価60,65万円。",
+    "列": "Bの定価60,65万円。",
+    "利得(A,B)": "行A60：(12,13),(15,7)。行A65：(8,14),(10,10)。単位億円。"
+  },
+  "choices": {
+    "1": {
+      "value": "A60/B60",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "2": {
+      "value": "A60/B65",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 A60/B60 と異なる。"
+    },
+    "3": {
+      "value": "A65/B60",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 A60/B60 と異なる。"
+    },
+    "4": {
+      "value": "A65/B65",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 A60/B60 と異なる。"
+    },
+    "5": {
+      "value": "決まらない",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 A60/B60 と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/basic/page_003.png"
+  ],
+  "question_id": "H23-REG-BASIC-1-4",
+  "source_file": "sources/H23/basic.pdf",
+  "source_page": "3",
+  "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+  "raw_text_sha256": "c29c6b327d323be853afee43ba9f15b6988491a6469ac5ead67e9eb56984a766",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

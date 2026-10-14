@@ -1,0 +1,45 @@
+{
+  "stem": "褶曲の形態・部位・軸の姿勢を、貫入岩体の名称と区別する。",
+  "conditions": {
+    "判断方向": "最も関係が薄いもの。",
+    "原典照合": "全5肢、上下・平行直交・右左・時代・固結度と割合を画像照合。図なし。"
+  },
+  "choices": {
+    "1": {
+      "value": "キンクバンド",
+      "verdict": "褶曲に関連",
+      "reason": "翼部が比較的直線的で、狭い帯の境界で姿勢が急変する褶曲構造である。"
+    },
+    "2": {
+      "value": "背斜",
+      "verdict": "褶曲に関連",
+      "reason": "地層の年代が分かる場合、中心側に古い層が現れる背斜である。単に上に凸という形態だけのアンチフォームと区別する。"
+    },
+    "3": {
+      "value": "ヒンジ線",
+      "verdict": "褶曲に関連",
+      "reason": "曲がりの強い部分を各断面で結ぶ線であり、褶曲の幾何を表す。"
+    },
+    "4": {
+      "value": "プランジ角",
+      "verdict": "褶曲に関連",
+      "reason": "ヒンジ線等の線構造と水平面のなす角であり、褶曲軸の三次元姿勢に使う。"
+    },
+    "5": {
+      "value": "ラコリス",
+      "verdict": "最も薄い",
+      "reason": "層に沿う底と盛り上がった屋根をもつ貫入岩体である。上位層をドーム状に変形させても、それ自身は褶曲の幾何学用語ではない。"
+    }
+  },
+  "figures": "設問固有図なし。原典の用語・否定・全5肢を確認。剪断の方位条件を推測で補わない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_008.png"
+  ],
+  "question_id": "H25-REG-APPLIED-21",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "bcb39108e5536687e95184c800fa8f599cecd762fe9ab45e20638a6763ce9216",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

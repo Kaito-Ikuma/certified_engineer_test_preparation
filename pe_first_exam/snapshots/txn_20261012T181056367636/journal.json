@@ -1,0 +1,19 @@
+{
+  "status": "committed",
+  "time": "2026-10-12T18:10:56+09:00",
+  "paths": [
+    "generated/questions/aptitude/03_compliance_accountability.tex",
+    "generated/questions/aptitude/06_research_information_ethics.tex",
+    "generated/questions/aptitude/07_science_technology_society.tex"
+  ],
+  "existed": {
+    "generated/questions/aptitude/03_compliance_accountability.tex": true,
+    "generated/questions/aptitude/06_research_information_ethics.tex": true,
+    "generated/questions/aptitude/07_science_technology_society.tex": true
+  },
+  "sha256": {
+    "generated/questions/aptitude/03_compliance_accountability.tex": "3915a75e4b4ae4988a7578d86bc58fb27608d2df353e9dee21d52c71fbc7cc99",
+    "generated/questions/aptitude/06_research_information_ethics.tex": "36bf70855b8fe7d9308575664812d8ffa34fdfede8590cf6564e9c3cec7a9e7d",
+    "generated/questions/aptitude/07_science_technology_society.tex": "840fed24a2581cd7964b2fc591380130f8546fb68caa8b35e200e5d825f5a6d7"
+  }
+}

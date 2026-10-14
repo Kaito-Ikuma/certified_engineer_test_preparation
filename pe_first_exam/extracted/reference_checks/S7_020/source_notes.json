@@ -1,0 +1,214 @@
+{
+  "checked_at": "2026-10-11T00:52:27+09:00",
+  "sources": [
+    {
+      "key": "env_paris",
+      "title": "パリ協定の採択と日本の締結",
+      "url": "https://www.mofa.go.jp/mofaj/ila/et/page24_000810.html",
+      "checked_claim": "2015年12月12日採択、日本について2016年12月8日効力発生を公式本文で確認。原典の2016という年と採択を区別。"
+    },
+    {
+      "key": "env_circular_law",
+      "title": "循環型社会形成推進基本法・条文",
+      "url": "https://www.env.go.jp/recycle/low.html",
+      "checked_claim": "第2条の再使用/再生利用/熱回収、第5〜7条の優先と技術経済・環境負荷の例外を本文確認。"
+    },
+    {
+      "key": "env_circular_outline",
+      "title": "循環型社会形成推進基本法の概要",
+      "url": "https://www.env.go.jp/recycle/circul/kihonho/gaiyo.html",
+      "checked_claim": "公式公開本文で発生抑制から適正処分までの五段階を確認。"
+    },
+    {
+      "key": "env_waste2003",
+      "title": "引越時に発生する廃棄物の取扱いについて（2003年）",
+      "url": "https://www.env.go.jp/recycle/waste/hikkoshi/manual.html",
+      "checked_claim": "本文3.2及び4.1で排出者責任、委託による責任消滅でないこと、管理票で運搬処分の確認を照合。旧法の項番号を現在へ移さない。"
+    },
+    {
+      "key": "env_appliance",
+      "title": "家電リサイクル制度FAQ",
+      "url": "https://www.meti.go.jp/policy/it_policy/kaden_recycle/faq/faq.html",
+      "checked_claim": "公式検索本文Q4/Q5で過去販売又は同種買替、指定引取場所を確認。web本文取得失敗と区別。引取条件省略をH28疑義へ保持。"
+    },
+    {
+      "key": "env_appliance2024",
+      "title": "家電リサイクル法の制度と対象機器",
+      "url": "https://www.meti.go.jp/policy/it_policy/kaden_recycle/",
+      "checked_claim": "公式公開本文で有機ELを含む現在の4群を確認。2016年の機器一覧へ新制度を逆投影しない。"
+    },
+    {
+      "key": "env_pollution",
+      "title": "環境基準類型指定及び環境管理施策の現行制度について",
+      "url": "https://www.env.go.jp/council/content/i_07/900430154.pdf",
+      "checked_claim": "PDF物理1頁の環境基本法第2条3項抜粋で典型7公害を確認。e-Gov本文は0行で未取得、代用して読了としない。"
+    },
+    {
+      "key": "env_development",
+      "title": "平成4年環境白書：持続可能な開発",
+      "url": "https://www.env.go.jp/policy/hakusyo/h04/8265.html",
+      "checked_claim": "1987年WCED報告と世代間公平、将来能力の保持を本文確認。"
+    },
+    {
+      "key": "env_biodiversity",
+      "title": "平成8年環境白書：生物多様性とは",
+      "url": "https://www.env.go.jp/policy/hakusyo/h08/10009.html",
+      "checked_claim": "冒頭の遺伝子・種・生態系の3階層を本文確認。古い全種数などは教材へ利用しない。"
+    },
+    {
+      "key": "env_foodchain",
+      "title": "猛禽類ミサゴと食物連鎖による濃縮（2013年）",
+      "url": "https://chushikoku.env.go.jp/blog/2013/11/1209.html",
+      "checked_claim": "公式公開本文の捕食者での蓄積性化学物質の濃度上昇を確認。全物質が同様とはしない。"
+    },
+    {
+      "key": "env_accumulation",
+      "title": "ダイオキシン類挙動モデルハンドブック（平成16年）",
+      "url": "https://www.env.go.jp/air/tech/kyodomoderuhandbookH16.pdf",
+      "checked_claim": "公式公開検索本文で吸収・代謝・排出とBCFの関係を確認。全頁読了ではない。濃縮と毒性を別軸にする。"
+    },
+    {
+      "key": "env_zero2008",
+      "title": "企業のゼロエミッションの定義例（2008年）",
+      "url": "https://www.env.go.jp/chemi/kagaku/ecointernship/report/2008/symposium/pdf/symposium_murata.pdf",
+      "checked_claim": "公式掲載の公開表で埋立ゼロ・再資源化99%以上等の対象/基準差を確認。H23の企業数増加という時系列は未確認。"
+    },
+    {
+      "key": "env_offset2008",
+      "title": "G8環境大臣会合等におけるカーボンオフセット（2008年）",
+      "url": "https://www.env.go.jp/press/10008.html",
+      "checked_claim": "削減努力、残余排出認識、他所への削減投資という順と京都クレジットの利用例を確認。排出枠取引の制度自体と区別。"
+    },
+    {
+      "key": "env_neutral2011",
+      "title": "カーボンニュートラル認証基準の公表（2011年）",
+      "url": "https://www.env.go.jp/press/14187.html",
+      "checked_claim": "全量をオフセットするニュートラルと従来のオフセットを本文確認。認証制度の現行運用を主張しない。"
+    },
+    {
+      "key": "env_offset_guideline",
+      "title": "カーボンオフセットの取組に係る指針",
+      "url": "https://www.env.go.jp/earth/ondanka/mechanism/carbon_offset/guideline/guideline-info.pdf",
+      "checked_claim": "公式公開本文の削減困難量の全部又は一部を他所削減/吸収で埋め合わせる定義を確認。"
+    },
+    {
+      "key": "env_kyoto2005",
+      "title": "平成17年環境白書：京都議定書",
+      "url": "https://www.env.go.jp/policy/hakusyo/h17/21939.html",
+      "checked_claim": "CO2/CH4/N2O/HFC/PFC/SF6の当初6種類を本文確認。後年のNF3等を原典へ加えない。"
+    },
+    {
+      "key": "env_sdgs_agenda",
+      "title": "我々の世界を変革する：2030アジェンダ（2015年）",
+      "url": "https://www.mofa.go.jp/mofaj/files/000101402.pdf",
+      "checked_claim": "前文、段落4/5/20、目標5.4等を確認。物理6頁は能力強化・雇用・リーダーシップ・意思決定。全文を長大転載しない。"
+    },
+    {
+      "key": "env_sdgs_un",
+      "title": "Transforming our world: the 2030 Agenda",
+      "url": "https://sdgs.un.org/2030agenda",
+      "checked_claim": "原文前文のMDGs残課題・統合不可分・3側面・全stakeholderを確認。"
+    },
+    {
+      "key": "env_sdgs_binding",
+      "title": "United Nations sustainable development agenda",
+      "url": "https://www.un.org/sustainabledevelopment/development-agenda-retired/page/10/",
+      "checked_claim": "国連公式公開検索本文のnot legally bindingを確認。直接取得403。法的拘束力のある別の条約・国内法まで免除する説明ではない。"
+    },
+    {
+      "key": "env_sdgs2016",
+      "title": "持続可能な開発目標実施指針（2016年決定、2017年冊子）",
+      "url": "https://www.mofa.go.jp/mofaj/gaiko/oda/files/000252818.pdf",
+      "checked_claim": "PDF物理3頁に感染症/開発途上国/環境/17。原典候補3の感梁症という誤植と区別。"
+    },
+    {
+      "key": "env_sdgs_pamphlet",
+      "title": "持続可能な開発目標と日本の取組",
+      "url": "https://www.mofa.go.jp/mofaj/gaiko/oda/sdgs/pdf/SDGs_pamphlet.pdf",
+      "checked_claim": "公開本文で3側面・統合・普遍性を確認。人間の安全保障は別の外務省本文でも確認。"
+    },
+    {
+      "key": "env_humansecurity",
+      "title": "人間の安全保障をめぐる国際潮流",
+      "url": "https://www.mofa.go.jp/mofaj/gaiko/oda/bunya/security/index.html",
+      "checked_claim": "人々を対象とし包括・統合して脆弱な個人へ対応する概念を確認。"
+    },
+    {
+      "key": "env_biosafety_qa",
+      "title": "遺伝子組換えに関するQ&A：第二種使用等",
+      "url": "https://www.mext.go.jp/a_menu/lifescience/bioethics/mext_02733.html",
+      "checked_claim": "HTML本文取得44966bytes。問3-7実験衣の質問への回答は付着感染防止の必要措置、3-9動物拡散防止、3-11教育にも法適用、廃棄前不活化を確認。服装をすべての使用に一律の条文要件としない。"
+    },
+    {
+      "key": "env_biosafety_school",
+      "title": "高等学校などで遺伝子組換え実験を行う皆様へ",
+      "url": "https://www.mext.go.jp/content/20250411-mxt_life-000035635_1.pdf",
+      "checked_claim": "PDF2頁全本文を確認。2022年6月13日作成、2025年配置URL。P1拡散防止・不活化。2013年時点の制度と新資料の年を分ける。"
+    },
+    {
+      "key": "env_biosafety_law",
+      "title": "カルタヘナ法関連情報",
+      "url": "https://www.biodic.go.jp/bch/bch_2.html",
+      "checked_claim": "公式公開本文の第一種承認/第二種拡散防止を確認。"
+    },
+    {
+      "key": "env_renewable2022",
+      "title": "エネルギー白書2022：一次エネルギーの動向",
+      "url": "https://www.enecho.meti.go.jp/about/whitepaper/2022/html/2-1-3.html",
+      "checked_claim": "公式公開検索本文で自然界熱、ヒートポンプの仕事による熱移送を確認。web直接取得失敗。2021年の概念の背景に用い性能統計は使わない。"
+    },
+    {
+      "key": "env_hydrogen2015",
+      "title": "エネルギー白書2015：水素社会",
+      "url": "https://www.enecho.meti.go.jp/about/whitepaper/2015html/3-8-3.html",
+      "checked_claim": "公式公開本文で水素を二次エネルギー/輸送媒体と定義。原料・製造による排出は利用時排出と区別。"
+    },
+    {
+      "key": "env_biomass",
+      "title": "バイオマス熱利用",
+      "url": "https://www.enecho.meti.go.jp/category/saving_and_new/saiene/renewable/biomass/02.html",
+      "checked_claim": "公式公開検索本文で発酵メタン利用を確認。直接本文未取得。再生可能性と利用時GHGゼロは同義でない。"
+    },
+    {
+      "key": "env_toprunner2019",
+      "title": "トップランナー制度とLED照明（2019年）",
+      "url": "https://www.enecho.meti.go.jp/about/special/johoteikyo/shoene_led.html",
+      "checked_claim": "公式公開本文で商品化最良性能を基礎とする目標を確認。直接本文未取得。2024の法名は原本通り。"
+    },
+    {
+      "key": "env_planetary",
+      "title": "Planetary boundaries",
+      "url": "https://www.stockholmresilience.org/research/planetary-boundaries.html",
+      "checked_claim": "本文で境界超過は急激/不可逆的変化のリスクを増すが直ちに必ず発生とはしない。最新超過件数は試験解説に使わない。"
+    },
+    {
+      "key": "env_ar5",
+      "title": "Climate Change 2014: Synthesis Report",
+      "url": "https://www.ipcc.ch/site/assets/uploads/2018/02/SYR_AR5_FINAL_full.pdf",
+      "checked_claim": "公式公開検索本文2.2のall assessed emission scenariosを確認。本文PDF取得失敗。すべての想像可能な未来への普遍量化ではない。"
+    },
+    {
+      "key": "env_rain2017",
+      "title": "気候変動監視レポート2017 第2章",
+      "url": "https://www.data.jma.go.jp/cpdinfo/monitor/2017/pdf/ccmr2017_chap2.pdf",
+      "checked_claim": "PDF物理9頁の1901〜2017における100/200mm日数増加と1mm日数減少を確認。最新年の観測へ取り替えない。"
+    },
+    {
+      "key": "env_evac2021",
+      "title": "災害対策基本法改正関連資料（2021年）",
+      "url": "https://www.bousai.go.jp/taisaku/hisaisyagyousei/horei_tsuchi/pdf/siryo56.pdf",
+      "checked_claim": "物理26頁の旧準備/勧告/指示と新高齢者等避難/指示の対照、2021年5月20日から勧告廃止を確認。"
+    },
+    {
+      "key": "env_warning2026",
+      "title": "2026年5月29日から新たな防災気象情報を運用",
+      "url": "https://www.jma.go.jp/jma/press/2604/14b/20260414_taikeiseiri.html",
+      "checked_claim": "4月14日発表本文で名称に警戒レベル数字を付ける新運用を確認。市町村の避難情報と情報発表の主体を区別。"
+    }
+  ],
+  "limitations": [
+    "直接取得失敗と公式公開検索本文での限定確認を区別。",
+    "H23の企業数推移は未確認。H28引取条件、H30濃縮一般化、R03再エネGHG、R06不可逆の強い表現は疑義を保持。",
+    "R01再適性14は原典感梁症の誤植と公式全員得点。初回3の判断は保持する。"
+  ]
+}

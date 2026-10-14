@@ -1,0 +1,48 @@
+{
+  "stem": "高さ1 mから落とした球の反発係数が0.8のとき、2回目の跳ね返り高さを求める。",
+  "conditions": {
+    "initial_height_m": 1,
+    "restitution_coefficient": 0.8,
+    "floor": "stationary horizontal",
+    "air_resistance": "none",
+    "requested": "height after second rebound"
+  },
+  "choices": {
+    "1": {
+      "value": "30 cm",
+      "verdict": "不採用",
+      "reason": "40.96 cmとの近似距離が40 cmより大きい。"
+    },
+    "2": {
+      "value": "40 cm",
+      "verdict": "採用",
+      "reason": "40.96 cmに最も近い。"
+    },
+    "3": {
+      "value": "50 cm",
+      "verdict": "不採用",
+      "reason": "40.96 cmより大きく、2回の高さ倍率を満たさない。"
+    },
+    "4": {
+      "value": "60 cm",
+      "verdict": "不採用",
+      "reason": "1回目の64 cmに近く、求める2回目とは異なる。"
+    },
+    "5": {
+      "value": "80 cm",
+      "verdict": "不採用",
+      "reason": "速度比0.8を高さ比と取り違えた値である。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_001.png"
+  ],
+  "question_id": "R02-REG-APPLIED-01",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "ea74df497cbb9caf609fd93e0af06adfa331496abc64615ac6e886f59a105768",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

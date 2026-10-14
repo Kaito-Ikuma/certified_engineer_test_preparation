@@ -1,0 +1,46 @@
+{
+  "stem": "応力と強度の独立正規モデルで、強度が応力を下回る確率を比較する。",
+  "conditions": {
+    "判断方向": "最も適切な記述又は組合せを選ぶ",
+    "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+    "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+  },
+  "choices": {
+    "1": {
+      "value": "ウ→イ→エ→ア",
+      "verdict": "不適切",
+      "reason": "ウの次はイではなくアである。アの信頼性指標4/3はイの1より大きい。"
+    },
+    "2": {
+      "value": "ア→ウ→イ→エ",
+      "verdict": "不適切",
+      "reason": "ウの3/2はアの4/3より大きく、最小故障確率はウとなる。"
+    },
+    "3": {
+      "value": "ア→イ→ウ→エ",
+      "verdict": "不適切",
+      "reason": "ウをイより後に置くのが違い、ウは全ケース中で故障確率が最小となる。"
+    },
+    "4": {
+      "value": "ウ→ア→イ→エ",
+      "verdict": "適切",
+      "reason": "信頼性指標を大きい順に並べると3/2、4/3、1、1/√2で、故障確率はこの順に小さい。"
+    },
+    "5": {
+      "value": "ア→ウ→エ→イ",
+      "verdict": "不適切",
+      "reason": "ウが最初でないことと、エがイより後であることに反する。"
+    }
+  },
+  "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/basic/page_002.png"
+  ],
+  "question_id": "R02-REG-BASIC-1-2",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "2",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "27051719214686fe75b91df21d149fbbae76e53ecd246c45e8c205264f0cbe15",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

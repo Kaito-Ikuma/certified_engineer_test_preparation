@@ -1,0 +1,45 @@
+{
+  "stem": "IRの伸縮と変角を区別し分光法の対象を対応させる。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "IRの伸縮と変角を区別し分光法の対象を対応させる。"
+  },
+  "choices": {
+    "1": {
+      "value": "NMRは核スピンとラジオ波の共鳴",
+      "verdict": "通常の条件で適切",
+      "reason": "静磁場中でスピンを持つ核のエネルギー差に対応する高周波を用いる。"
+    },
+    "2": {
+      "value": "UV–Visは電子遷移",
+      "verdict": "通常の条件で適切",
+      "reason": "光子吸収で分子の電子状態を励起する。"
+    },
+    "3": {
+      "value": "強度と構造固有のモル吸光係数",
+      "verdict": "条件付き・解釈留保",
+      "reason": "εは化合物の構造に関係するが、波長・溶媒・温度・化学種状態等も指定する必要がある。"
+    },
+    "4": {
+      "value": "IRは伸縮運動のみ",
+      "verdict": "不適切",
+      "reason": "結合角を変える変角・曲げ振動等も双極子を変えれば吸収する。"
+    },
+    "5": {
+      "value": "同じ官能基は近い吸収領域",
+      "verdict": "通常の条件で適切",
+      "reason": "局所的な結合の力定数と換算質量が似るため。共役・水素結合・環境によるずれはある。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "モル吸光係数を構造だけの無条件定数とはしない。波長・溶媒・化学種等を指定する条件付きの説明として保持。",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_005.png"
+  ],
+  "question_id": "R07-REG-APPLIED-14",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "4410ca6e171bc157cabc15637c4a7d403f0babcd0d8ae9d64830ebc156586996",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

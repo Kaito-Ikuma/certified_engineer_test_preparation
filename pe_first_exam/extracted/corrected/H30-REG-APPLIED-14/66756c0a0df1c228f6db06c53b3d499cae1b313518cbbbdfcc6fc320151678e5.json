@@ -1,0 +1,45 @@
+{
+  "stem": "分子光吸収の選択則・光異性化・線幅を比較する。",
+  "conditions": {
+    "判断対象": "分子光吸収の選択則・光異性化・線幅を比較する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "CO2の振動は可視光を吸収して温室効果",
+      "verdict": "選ばない候補",
+      "reason": "温室効果の主要な振動吸収は赤外域。"
+    },
+    "2": {
+      "value": "IRは分極率変化で双極子変化ではない",
+      "verdict": "選ばない候補",
+      "reason": "IRは双極子変化、Ramanは分極率変化で取り違え。"
+    },
+    "3": {
+      "value": "11cisレチナールの光異性化で視覚",
+      "verdict": "選ぶ候補",
+      "reason": "視物質中の11cis→alltransの光反応に対応。"
+    },
+    "4": {
+      "value": "クロロフィル又はNADP+が光子で一重項励起",
+      "verdict": "選ばない候補",
+      "reason": "クロロフィルの励起と電子受容体NADP+を同列の光捕集体にしない。"
+    },
+    "5": {
+      "value": "分子運動や衝突で線幅は変わらない",
+      "verdict": "選ばない候補",
+      "reason": "Doppler幅・衝突幅等が存在する。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "視覚一次教科書の公開検索収録で光反応を確認。各分子全スペクトル・光合成全経路の本文確認は未完了。",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_005.png"
+  ],
+  "question_id": "H30-REG-APPLIED-14",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "f3d9013ac23d5f5c74c5d45376ce6044889d51709515df95bfe83b3ddf5af9bd",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

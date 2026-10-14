@@ -1,0 +1,47 @@
+{
+  "stem": "情報の出現数と情報・論理の共通部分から、論理を含まない件数の範囲を求める。",
+  "conditions": {
+    "全集合": "100万件",
+    "I": "情報を含む65万件",
+    "共通部分": "情報と論理の両方を含む55万件",
+    "求める量": "論理を含まない件数k。"
+  },
+  "choices": {
+    "1": {
+      "value": "10〜45万",
+      "verdict": "条件に一致する候補",
+      "reason": "情報を含み論理を含まない10万件に、情報を含まない35万件のうち0〜35万件が加わり、正確な範囲である。"
+    },
+    "2": {
+      "value": "10〜55万",
+      "verdict": "条件に一致しない候補",
+      "reason": "上限55万は、論理を含む55万件以上が既にあることに反する。"
+    },
+    "3": {
+      "value": "10〜65万",
+      "verdict": "条件に一致しない候補",
+      "reason": "上限65万は、論理を含む件数の既知下限55万を満たさない。"
+    },
+    "4": {
+      "value": "45〜65万",
+      "verdict": "条件に一致しない候補",
+      "reason": "下限45万は誤りであり、情報外の全35万件が論理を含むならk=10万である。"
+    },
+    "5": {
+      "value": "45〜90万",
+      "verdict": "条件に一致しない候補",
+      "reason": "上限90万と下限45万はいずれも既知の共通部分と情報のみの10万件から得る範囲に合わない。"
+    }
+  },
+  "figures": "問題幹・数値・記号・5肢を画像確認。図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_010.png"
+  ],
+  "question_id": "R01-RET-BASIC-2-5",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "10",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "0d823208d4a21d5c5bf92e29079b100d9ffbe98bb74ea5da2a7a1a8053a2787a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

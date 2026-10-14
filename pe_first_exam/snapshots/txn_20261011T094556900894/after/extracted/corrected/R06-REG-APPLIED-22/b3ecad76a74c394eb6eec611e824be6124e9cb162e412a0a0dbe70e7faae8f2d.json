@@ -1,0 +1,45 @@
+{
+  "stem": "土壌の酸化還元、炭酸塩析出、乾燥塩類、金属沈殿と粘土生成を比較する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+  },
+  "choices": {
+    "1": {
+      "value": "土壌有機物は還元型。",
+      "verdict": "適切（通常条件）",
+      "reason": "CO2に比べ有機炭素は還元されており、酸化で電子を供給できる。"
+    },
+    "2": {
+      "value": "石灰岩溶解地下水へ大気CO2が加わって鍾乳石・石筍形成。",
+      "verdict": "不適切",
+      "reason": "普通の石灰岩洞窟ではCO2の脱気でCaCO3が析出する。添加では炭酸が増して溶解側へ動くので方向が逆。"
+    },
+    "3": {
+      "value": "乾燥地で塩類が上昇・蒸発沈積。",
+      "verdict": "適切（通常条件）",
+      "reason": "毛管上昇と蒸発で溶存塩が濃縮される。原材料と飽和条件に応じ岩塩・石膏・炭酸塩等が析出する。"
+    },
+    "4": {
+      "value": "通常土壌pHでAl3+やFeは酸化物・オキシ水酸化物沈殿。",
+      "verdict": "適切（通常条件）",
+      "reason": "通常の酸化的・弱酸性〜中性土壌ではAl・Fe(III)の水酸化物等が溶解を制限する。強酸、錯体、還元Fe(II)などの例外を付す。"
+    },
+    "5": {
+      "value": "湿潤熱帯の強風化ではスメクタイトよりカオリナイト。",
+      "verdict": "適切（通常条件）",
+      "reason": "強い溶脱は塩基性陽イオンと一部Siを除き、カオリナイト等の比較的単純な相を残しやすい。気候だけで鉱物を一意に決めない。"
+    }
+  },
+  "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_007.png"
+  ],
+  "question_id": "R06-REG-APPLIED-22",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "8afd56d0202db531100ee9a76804908e11b239c2975147aefe5572ab02bee6a4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

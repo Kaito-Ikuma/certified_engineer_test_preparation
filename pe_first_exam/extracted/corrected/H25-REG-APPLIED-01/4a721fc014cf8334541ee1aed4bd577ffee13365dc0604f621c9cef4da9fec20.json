@@ -1,0 +1,46 @@
+{
+  "stem": "静止時に60.0 kgを示す体重計が、0.5 m/sで等速上昇するエレベーター内で示す値を求める。",
+  "conditions": {
+    "rest_reading_kg": 60.0,
+    "velocity_m_s": 0.5,
+    "motion": "constant upward speed"
+  },
+  "choices": {
+    "1": {
+      "value": "57.0 kg",
+      "verdict": "不採用",
+      "reason": "反力が減るのは下向き加速度がある場合で、この条件ではない。"
+    },
+    "2": {
+      "value": "60.0 kg",
+      "verdict": "採用",
+      "reason": "等速運動では加速度0なので反力は変わらない。"
+    },
+    "3": {
+      "value": "63.0 kg",
+      "verdict": "不採用",
+      "reason": "上向き速度を上向き加速度と混同している。"
+    },
+    "4": {
+      "value": "66.0 kg",
+      "verdict": "不採用",
+      "reason": "指定条件に反力を増やす加速度はない。"
+    },
+    "5": {
+      "value": "69.0 kg",
+      "verdict": "不採用",
+      "reason": "一定速度によって質量や反力が増えることはない。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_001.png"
+  ],
+  "question_id": "H25-REG-APPLIED-01",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "0ac343d09cd59b986df58bf238391909ff37a2ad986fc1500e8b55d7acf236bc",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

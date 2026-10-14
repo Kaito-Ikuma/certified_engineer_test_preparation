@@ -1,0 +1,151 @@
+{
+  "batch_id": "S7_048_design",
+  "saved_at": "2026-10-13T06:54:39.139881+09:00",
+  "official_answers_consulted": false,
+  "records": [
+    {
+      "question_id": "H23-REG-BASIC-1-2",
+      "answer_initial": "4",
+      "reason": "μ120/h、W3600/70=51.43秒。",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e"
+    },
+    {
+      "question_id": "H23-REG-BASIC-1-3",
+      "answer_initial": "3",
+      "reason": "B-E-F13日、E40がB45/F50より安い。",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e"
+    },
+    {
+      "question_id": "H24-REG-BASIC-1-4",
+      "answer_initial": "5",
+      "reason": "柔軟/直観/失敗/身体。",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533"
+    },
+    {
+      "question_id": "H25-REG-BASIC-1-3",
+      "answer_initial": "2",
+      "reason": "制約/目的/一次/近似。",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74"
+    },
+    {
+      "question_id": "H25-REG-BASIC-1-4",
+      "answer_initial": "4",
+      "reason": "B-E-F13日、F40がB45/E50より安い。",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74"
+    },
+    {
+      "question_id": "H25-REG-BASIC-1-5",
+      "answer_initial": "4",
+      "reason": "μ10/min、W1/4min=15秒。",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74"
+    },
+    {
+      "question_id": "H26-REG-BASIC-1-1",
+      "answer_initial": "5",
+      "reason": "柔軟/直観/失敗/身体。",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f"
+    },
+    {
+      "question_id": "H27-REG-BASIC-1-2",
+      "answer_initial": "4",
+      "reason": "50/120でW51.43秒。",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039"
+    },
+    {
+      "question_id": "H28-REG-BASIC-1-4",
+      "answer_initial": "4",
+      "reason": "p-a1-a2-b2-b3-f80日、b3の15がa2の18より安い。",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724"
+    },
+    {
+      "question_id": "H28-REG-BASIC-1-5",
+      "answer_initial": "5",
+      "reason": "x+2y≤9,y≤3、(3,3)21万円。",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724"
+    },
+    {
+      "question_id": "H28-REG-BASIC-1-6",
+      "answer_initial": "1",
+      "reason": "正誤正誤正。",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724"
+    },
+    {
+      "question_id": "H29-REG-BASIC-1-1",
+      "answer_initial": "5",
+      "reason": "μ90/h−λ60/h、120秒。",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb"
+    },
+    {
+      "question_id": "H30-REG-BASIC-1-2",
+      "answer_initial": "1",
+      "reason": "a3/b2がともに22日、両クリティカル枝の作業の和集合。",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f"
+    },
+    {
+      "question_id": "H30-REG-BASIC-1-3",
+      "answer_initial": "2",
+      "reason": "物理のみ誤、UD正、七原則BF名称誤。",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f"
+    },
+    {
+      "question_id": "H30-REG-BASIC-1-4",
+      "answer_initial": "2",
+      "reason": "(5,2)で1900、全制約満足。",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f"
+    },
+    {
+      "question_id": "R01-REG-BASIC-1-5",
+      "answer_initial": "2",
+      "reason": "μ90/h−40/h、72秒。",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35"
+    },
+    {
+      "question_id": "R01-RET-BASIC-1-4",
+      "answer_initial": "2",
+      "reason": "正正正誤、総余裕0。",
+      "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1"
+    },
+    {
+      "question_id": "R02-REG-BASIC-1-1",
+      "answer_initial": "3",
+      "reason": "ノーマライゼーション/環境/直感/ミス。",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e"
+    },
+    {
+      "question_id": "R02-REG-BASIC-1-4",
+      "answer_initial": "5",
+      "reason": "(6,3)、隣接頂点比較−1≤Δc≤2.5。",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e"
+    },
+    {
+      "question_id": "R03-REG-BASIC-1-1",
+      "answer_initial": "4",
+      "reason": "高い取っ手は低身長/車椅子利用を妨げる。",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663"
+    },
+    {
+      "question_id": "R03-REG-BASIC-1-6",
+      "answer_initial": "3",
+      "reason": "誤正誤正誤、第一角平面図は下。",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663"
+    },
+    {
+      "question_id": "R06-REG-BASIC-1-1",
+      "answer_initial": "1",
+      "reason": "柔軟/単純/寛大/身体。",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0"
+    },
+    {
+      "question_id": "R06-REG-BASIC-1-5",
+      "answer_initial": "4",
+      "reason": "(4,3)1800でB15と時間7が活性。",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0"
+    },
+    {
+      "question_id": "R07-REG-BASIC-1-1",
+      "answer_initial": "3",
+      "reason": "合理/要求/構造計画/構造詳細、最後の厳密用語は一次原典照合必要。",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0"
+    }
+  ]
+}

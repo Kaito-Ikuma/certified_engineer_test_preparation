@@ -1,0 +1,46 @@
+{
+  "stem": "PL法の目的・因果関係・開発危険・民法・海外制度から最も不適切な文を選ぶ。",
+  "conditions": {
+    "原典条件": "問題幹、否定、ア等の記号順、5選択肢と個数又は表の全行を原典16画像で確認した。",
+    "論理条件": "単一の不適切文。科学技術の認識不能は製造業者側が証明する。",
+    "法の時点": "出題時の制度を保持。現行取得基準日は2026-10-12。2020年施行の期間変更を別記する。"
+  },
+  "choices": {
+    "1": {
+      "value": "被害者保護等を目的とする",
+      "verdict": "適切",
+      "reason": "1条の趣旨である。"
+    },
+    "2": {
+      "value": "過失の有無にかかわらず因果関係を証明する",
+      "verdict": "適切",
+      "reason": "欠陥・損害の関係の証明は必要である。"
+    },
+    "3": {
+      "value": "認識不能の開発危険を証明すれば免責",
+      "verdict": "適切",
+      "reason": "4条1号の条件を述べる。"
+    },
+    "4": {
+      "value": "特段の定めがない責任は民法を適用",
+      "verdict": "適切",
+      "reason": "6条の補充規定である。"
+    },
+    "5": {
+      "value": "国際共通なので日本法だけでよい",
+      "verdict": "不適切",
+      "reason": "外国の対象や要件の違いを無視している。"
+    }
+  },
+  "figures": "文字表又は記述問題であり図なし。組合せの各行は原典画像の列順を保持する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/aptitude/page_006.png"
+  ],
+  "question_id": "R02-REG-APT-06",
+  "source_file": "sources/R02/aptitude.pdf",
+  "source_page": "6",
+  "source_sha256": "d0ca26aaeeba6d436d8ffa77a759056e7a194c0ac9fad61de2c84392999050bb",
+  "raw_text_sha256": "be712c2fc44ff0792fc315c0bc55e52692e38950f1212bbb4413ba8aff434e54",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,330 @@
+5.111 Lecture Summary #25                                       Friday, N ovember 7, 2014
+
+Reading for Today: Sections 13.1-13.12 in 5th ( 4th ed : 12.1-12.12)
+Reading For Lecture #26: 13.6-13.12 in 5th (4th ed : 12.6-12.12)
+Topic: I. Introd uction to Oxid ation -Red uction (Red ox) Reactions
+      II. Balancing Red ox Reactions
+      III. Electrochem ical Cells
+
+I. IN TROD UCTION TO OXID ATION -RED UCTION (RED OX) REACTION S
+Red ox reactions are a m ajor class of chem ical reactions in w hich there is an exchange of
+electrons from one species to another.
+
+For exam ple, 2Mg (s) + O 2 (g)  2MgO
+
+D efinitions
+
+Oxid ation:
+
+Red uction:
+
+Oxid izing agent:
+
+Red ucing agent:
+
+
+Guidelines for Assigning Oxidation N umbers
+
+1) In free elem ents, each atom has an oxid ation num ber of zero. Exam ple H 2
+
+2) For ions com posed of only one atom the oxid ation num ber is equal to the charge on the
+ion. Thus Li+1 has an oxid ation num ber of +1. Group 1 and group 2 m etals have oxid ation
+num bers of +1 and +2, respectively. Alum inum has an oxid ation nu m ber of +3 in all its
+com pound s.
+
+3) The oxid ation num ber of oxygen in m ost com pound s is -2. H ow ever, in peroxid es such as
+H 2O 2 and O 2 , oxygen has an oxid ation state of -1.
+              -2
+
+
+
+
+4) The oxid ation num ber of hyd rogen is +1, except w hen it is bond ed to m etals in binary
+com pound s, such as LiH , N aH , CaH 2. In these cases, its oxid ation num ber is -1.
+
+5) F has an oxid ation num ber of -1 in all its com pound s. Other halogens (Cl, Br, and I) have
+negative oxid ation num bers w hen they occu r as halid e ions in com pound s (Ex. N aCl).
+H ow ever, w hen com bined w ith oxygen (oxoacid s), they have positive oxid ation num bers
+(Ex. ClO -).
+
+
+
+                                                                                                   1
+6) In a neutral m olecule, the sum of the oxid ation num bers of all the atom s m ust be zero. In a
+polyatom ic ion, the sum of oxid ation num bers of all the elem ents in the ion m ust be equal to
+the net charge of the ion.
+
+
+
+
+                                                                                                  2
+Example N H 4+
+
+H is                         N is                         Sum is
+
+
+7) Oxid ation num bers d o not have to be integers. For exam ple, the oxid ation num ber of
+oxygen in superoxid e O 2-1 is
+
+
+
+Examples:
+
+Li2O                                                      PCl5
+
+
+H N O3                                                    N 2O
+
+
+
+
+D isproportionation Reactions
+A reactant elem ent in one oxid ation state is both oxid ized and red uced .
+
+N aClO  N aClO 3 + N aCl
+Write the half reactions and d eterm ine the changes in oxid ation state. N a + is a spectator ion
+so:
+
+         ClO -                      ClO 3-
+
+         ClO -                      Cl-
+
+
+
+
+                                                                                                     3
+II. BALAN CIN G RED OX REACTION S
+
+A. BALAN CE IN ACID IC SOLUTION
+
+Fe 2+ + Cr 2O 72-  Cr 3+ + Fe 3+
+
+
+(1) Write tw o unbalanced half reactions for oxidized and reduced species.
+
+
+Cr 2O 72-                            Cr 3+
+
+
+Fe 2+                                Fe 3+
+
+(2) Insert coefficients to make the number of atoms of all elements except oxygen and
+hydrogen equal on the tw o sides of each equation.
+
+             Cr 2O 72-  Cr 3+
+
+             Fe 2+  Fe 3+
+
+(3) Add H 2O to balance oxygen
+
+             Cr 2O 72-      2Cr 3+
+
+             Fe 2+  Fe 3+
+
+(4) Balance hydrogen w ith H +
+
+             Cr 2O 72-       2Cr 3+ + 7H 2O
+
+             Fe 2+  Fe 3+
+
+(5) Balance the charge by inserting electrons
+
+        14H + + Cr 2O 72-  2Cr 3+ + 7H 2O
+
+                Fe 2+       Fe 3+
+
+
+
+
+                                                                                        4
+(6) Multiply the half reactions so that the number of electrons give n off in the oxidation
+equals the number of electrons accepted in the reduction.
+
+6e - + 14H + + Cr 2O 72-  2Cr 3+ + 7H 2O
+
+                Fe 2+       Fe 3+ + e -
+
+
+(7) Add half reaction, make appropriate cancellations.
+
+6e - + 14H + + Cr 2O 72- + 6Fe 2+  2Cr 3+ + 7H 2O + 6Fe 3+ + 6e -
+
+
+
+
+B. BALAN CE IN BASIC SOLUTION .
+
+Fe 2+ + Cr 2O 72-  Cr 3+ + Fe 3+
+
+Follow steps (1-7) to get your answ er for acidic solution:
+
+14H + + Cr 2O 72- + 6Fe 2+  2Cr 3+ + 7H 2O + 6Fe 3+
+
+
+                                     -
+(8) Then "adjust pH" by adding OH to both sides to neutralize H +.
+
+14OH - + 14H + + Cr 2O 72- + 6Fe 2+  2Cr 3+ + 7H 2O + 6Fe 3+ + 14OH -
+
+OR
+
+14H 2O + Cr 2O 72- + 6Fe 2+  2Cr 3+ + 7H 2O + 6Fe 3+ + 14OH -
+
+CAN CEL
+     7
+14H 2O + Cr 2O 72- + 6Fe 2+  2Cr 3+ + 7H 2O + 6Fe 3+ + 14OH -
+
+
+Thus: 7H 2O + Cr 2O 72- + 6Fe 2+  2Cr 3+ + 6Fe 3+ + 14OH -
+
+
+Su m m ary
+
+                                                                                              5
+                           +       2-         2+          3+         3+
+Acid ic:         14H + Cr 2O 7 + 6Fe  2Cr + 6Fe + 7H 2O
+                               2-    2+    3+    3+      -
+Basic:          7H 2O + Cr 2O 7 + 6Fe  2Cr + 6Fe + 14OH
+Oxidation-reduction (redox) reactions are essential for photosynthesis, fuel cells, and life!
+Electrochemistry is the study of redox reactions at an electrode, including :
+
+      Obtaining electricity d irectly from a spontaneous (∆G        0) reaction.
+      Using an electric current to d rive a non -spontaneous (∆ G        0) reaction.
+
+
+
+III. ELECTROCHEMICAL CELLS: are d evices in w hich an electric current (a flow of
+electrons through a circuit) is either
+      prod uced by a spontaneous chem ical reaction (                              cell); or
+      used to bring about a non-spontaneous reaction (                              cell).
+Battery: a collection of galvanic cells joined in a series, so the voltage they prod uce is the sum
+of the voltages of each cell.
+
+Electrodes: Cond u ctors through w hich electrons can travel. Anod es and cathod es are tw o
+types of electrod es.
+
+Anode: Electrons produced from
+                     flow out of
+com partm ent through a w ire.
+
+Zn (s) is                           to
+Zn 2+ (aq) at the anod e
+
+Cathode: Electrons entering the
+com partm ent are consum ed in a
+                     reaction.
+
+Cu 2+ (aq) is                           to
+Cu(s) at the cathod e.
+
+The voltmeter m easures the flow of
+electrons (the electric current).
+
+N eutrality is m aintained by the flow
+of ions through the salt bridge.
+
+Overall, the electrochem ical cell m ay be represented by:
+
+
+Where p hase bound aries are represented by "| ", and the salt brid ge is represented by "| | "
+
+                                                                                                  6
+Another cell has utilizes the follow ing red ox reactions:
+
+Zn (s) →     Zn 2+ (aq) + 2e - and   Sn 4+ (aq) +2e - → Sn 2+ (aq)
+
+The reaction at the anod e is:
+
+
+The reaction at the cathod e is:                                     © W. H. Freeman & Co Ltd. All rights reserved.
+                                                                     This content is excluded from our Creative
+                                                                     Commons license. For more information, see
+                                                                     https://ocw.mit.edu/help/faq-fair-use/.
+The electrochem ical cell m ay be represented by:
+
+
+Faradays’ Law
+
+In the electrochem ical cell on page 1, Zn is consum ed and Cu is d ep osited . Farad ay’s Law
+states that Zn is consu m ed and Cu is d eposited in a quantity                               to
+the charge passed .
+
+
+Exam ple: H ow m uch Zn is consu m ed and how m uch Cu is d eposited if a current of 1.0 A
+flow s for 1.0 hours?
+
+Step1. Determ ine the am ount of charge that passed though the circu it.
+Q             =       I                              •               t
+m agnitud e           current                                        tim e in second s
+of charge in          in am peres (A)
+Coulom bs (C)                (am peres = coulom bs/ second )
+
+
+Q = 1.0 A • 3600 sec = 3600 C
+
+
+Step 2. Determ ine the num ber of m oles of electrons to w hich this charge is equivalent.
+Use Farad ay's constant 96,485 C/ m ol = 1 Farad ay ()
+
+
+3600 C        x           1 m ol      =      0.0373 m oles of electrons
+                      96,485 C
+Step 3. Calculate the num ber of moles of Zn consum ed and Cu d ep osited and convert to
+gram s.
+
+
+0.0373 m oles of e - passed   x       1 m ol Zn consum ed x          65.39 g             =         1.2 g
+                                      ?? m oles of e - passed         m ol
+                                                                                                                  7
+0.0373 m oles of e - passed   x   1 m ol Cu d eposited x    63.55 g   =   1.2 g
+                                  ?? m oles of e - passed    m ol
+
+
+
+
+                                                                                  8
+Electrod es (anod es, cathod es) are not alw ays consum ed or d eposited upon d uring
+electrochem ical experim ents. A Pt electrod e, w hich is                      , can be u sed .
+
+
+
+
+Anod e (oxid ation)                   Cathod e (red uction)
+Cr (aq)  Cr (aq) + e                 Cu (aq) + 2e  Cu (s)
+  2+           3+     -                 2+           -
+
+
+
+
+N otation for this type of cell is:
+
+       Pt (s) | Cr 2+ (aq) , Cr 3+ (aq) | | Cu 2+ (aq) | Cu (s)
+
+
+A H yd rogen Electrod e constructed w ith Pt is com m only used . Many red uction potentials are
+m easured against a Standard Hydrogen Electrode (S.H .E). The hyd rogen electrod e is
+d enoted :
+       H + (aq) | H 2 (g) | Pt (s)            w hen it acts as a cathod e (H + is red u ced ) and
+
+       Pt (s) | H 2 (g) | H + (aq)            w hen it acts as an anod e (                          ).
+
+
+Exam ple of cell using hyd rogen electrod e.
+
+
+
+
+                                                                                                    9
+MIT OpenCourseWare
+https://ocw.mit.edu
+
+
+
+
+5.111 Principles of Chemical Science
+Fall 2014
+
+
+
+For information about citing these materials or our Terms of Use, visit: https://ocw.mit.edu/terms.
+

@@ -1,0 +1,49 @@
+{
+  "stem": "施行令に列挙される生体特徴から、骨の振動特性という非列挙項目を区別する。",
+  "conditions": {
+    "原典確認": "問題幹と各記述の主体・否定・全称・表の5候補を保存原典画像で確認。",
+    "制度時点": "R06年度の原典表現を保持。現行資料の条番号や仕様を過去へ補わない。",
+    "各記述の判断": {
+      "列挙": "1指紋掌紋・2顔・3声・4歩行は該当、5の振動特性は列挙にない。"
+    },
+    "前提": "個人識別符号の生体分類は政令の列挙を確認する。生体認証に使えそうな特徴という一般論と、政令に定める分類は同じではない。"
+  },
+  "choices": {
+    "1": {
+      "value": "指紋又は掌紋",
+      "verdict": "記載あり",
+      "reason": "施行令の指紋・掌紋分類に対応する。"
+    },
+    "2": {
+      "value": "顔の骨格・皮膚・部位配置の容貌",
+      "verdict": "記載あり",
+      "reason": "顔の特徴分類に対応する。"
+    },
+    "3": {
+      "value": "発声時の声帯・声門・声道の変化",
+      "verdict": "記載あり",
+      "reason": "声の特徴分類に対応する。"
+    },
+    "4": {
+      "value": "歩行の姿勢・腕の動作・歩幅等",
+      "verdict": "記載あり",
+      "reason": "歩行の特徴分類に対応する。"
+    },
+    "5": {
+      "value": "骨振動による蝸牛への振動特性",
+      "verdict": "記載なし",
+      "reason": "政令の七生体分類にこの項目は列挙されていない。"
+    }
+  },
+  "figures": "図なし。記号組合せ又は語句組合せ・個数を原典と照合。",
+  "ambiguity": "出題当時の施行令版全文との差分は未照合。5の原典生理表現を肯定する説明ではなく、法令列挙の設問として扱う。",
+  "evidence": [
+    "extracted/pages/R06/aptitude/page_009.png"
+  ],
+  "question_id": "R06-REG-APT-09",
+  "source_file": "sources/R06/aptitude.pdf",
+  "source_page": "9",
+  "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+  "raw_text_sha256": "5f4c9d426d2e1a201303cbfda8a333c8713e205f1aafc8690da640de94266d8e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

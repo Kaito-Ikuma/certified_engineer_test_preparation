@@ -1,0 +1,44 @@
+{
+  "stem": "大気の層序、組成、密度低下、成層圏加熱と均質圏を比較する。",
+  "conditions": {
+    "方向": "最も不適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "下から対流圏・成層圏・中間圏・熱圏。",
+      "verdict": "適切",
+      "reason": "主として気温の鉛直勾配を基準とする区分である。"
+    },
+    "2": {
+      "value": "空気は体積でN2約8割、O2約2割。",
+      "verdict": "適切（概数）",
+      "reason": "端数の微量成分や水蒸気を除いた粗い概数として適切。"
+    },
+    "3": {
+      "value": "10kmで質量密度は地表の約1/4。",
+      "verdict": "概数精度に疑義",
+      "reason": "原典は密度と記載。標準モデルで約0.414kg/m³対地表1.225、比約0.338となり1/4とは差がある。圧力比約0.26との混同があり得るが、原典を圧力へ改変しない。"
+    },
+    "4": {
+      "value": "50km付近の温度極大はCO2赤外吸収による。",
+      "verdict": "不適切",
+      "reason": "代表的な成層圏界面の加熱はオゾンの紫外吸収。温室気体一般の赤外作用へ置換できない。"
+    },
+    "5": {
+      "value": "乾燥主要成分比は80km程度までほぼ一定。",
+      "verdict": "適切（主要乾燥成分）",
+      "reason": "乱流混合が分子拡散より強い均質圏の主要長寿命気体を指す。水蒸気・オゾン等まで一様とはしない。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "肢3の10km密度1/4と標準モデル約0.34に差。原典密度を圧力へ改変しない。概数の許容精度をAstra査読待ち。",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_006.png"
+  ],
+  "question_id": "R01-REG-APPLIED-19",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "2fca050cbc4c36e31accb54f28dd8d0de9421f3c02cdb36aa81ac51cb31bc9d7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

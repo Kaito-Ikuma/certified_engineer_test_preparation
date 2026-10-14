@@ -1,0 +1,45 @@
+{
+  "stem": "代替フロンのオゾン保護と温暖化対策を区別。",
+  "conditions": {
+    "原典": "全五肢と否定方向・組合せ表を画像確認。",
+    "資料時点": "令和3年度の指定資料・統計年を保持し、後年値に置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "RE100は使用電力100%再エネを目指す",
+      "verdict": "条件内で適切",
+      "reason": "目標は企業活動に使用する電力の再エネ化。全エネルギーを必ず電力だけで賄うという定義ではない。"
+    },
+    "2": {
+      "value": "代替フロン転換で温暖化対策も十分",
+      "verdict": "不適切・選択対象",
+      "reason": "HFC等にはオゾン層を破壊しなくても強い温室効果を持つものがあり、転換だけで十分とはいえない。"
+    },
+    "3": {
+      "value": "TCFDは投資判断に資する開示を促す",
+      "verdict": "条件内で適切",
+      "reason": "気候関連のリスク・機会を財務情報として示す取組。賛同機関数は2020時点の値として扱う。"
+    },
+    "4": {
+      "value": "自治体の2050実質ゼロ表明",
+      "verdict": "条件内で適切",
+      "reason": "ゼロカーボンシティは自治体の実質ゼロ目標表明を示す。"
+    },
+    "5": {
+      "value": "ZEH・ZEH-Mは年間一次エネルギー収支ゼロを目指す",
+      "verdict": "条件内で適切",
+      "reason": "断熱・高効率設備で需要を下げ再エネを導入する。設備導入だけ、又は瞬間ごとのゼロとは限らない。"
+    }
+  },
+  "figures": "文章五肢を独自要約。",
+  "ambiguity": "TCFDの2020賛同200以上の数、FSB構成、各制度の当時の定義全文は追加照合対象。",
+  "evidence": [
+    "extracted/pages/R03/basic/page_021.png"
+  ],
+  "question_id": "R03-REG-BASIC-5-1",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "21",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "19cf92dc22711cdb94faac913b44d349fe18b0b8495a66be5a707dffd77934c7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,44 @@
+{
+  "stem": "大循環、鉛直層序、大気組成、海陸風、地衡風の記述から適切なものを選ぶ。",
+  "conditions": {
+    "方向": "最も適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "赤道にモンスーン、極域にハドレー循環。",
+      "verdict": "不適切",
+      "reason": "ハドレーは低緯度の循環であり、極域への割当が違う。モンスーンを低緯度帯全体の基本循環へ一括置換しない。"
+    },
+    "2": {
+      "value": "中間圏オゾンUV加熱で80km温度極大。",
+      "verdict": "不適切",
+      "reason": "オゾン加熱の代表は成層圏で、約50kmに温度極大。中間圏では上方へ冷却し約80〜85kmで極小となる。"
+    },
+    "3": {
+      "value": "成層圏の主成分はO原子とHe。",
+      "verdict": "不適切",
+      "reason": "成層圏でも主成分はN2とO2。O原子・He優勢はさらに高い高度の拡散分離・解離と関係する。"
+    },
+    "4": {
+      "value": "日中は地表付近で海から陸へ海風。",
+      "verdict": "最適",
+      "reason": "日射で陸が海より速く暖まり地表で海→陸の循環を生じる。強い一般風がある場合は局地循環が明瞭でない。"
+    },
+    "5": {
+      "value": "北半球転向力は左向き、地衡風は等圧線直交。",
+      "verdict": "不適切",
+      "reason": "北半球の転向力は進行方向の右。地衡風は気圧傾度力と釣り合い等圧線にほぼ沿う。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_009.png"
+  ],
+  "question_id": "H27-REG-APPLIED-24",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "f7e7c4b9c38d0a5c28efb5cca7071a31eab3454109c057e2ec9c1a678adb19a8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

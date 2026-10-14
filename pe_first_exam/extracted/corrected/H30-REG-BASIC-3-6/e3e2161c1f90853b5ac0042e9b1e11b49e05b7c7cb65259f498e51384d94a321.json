@@ -1,0 +1,48 @@
+{
+  "stem": "SI接頭辞をそろえて軸伸びを計算。",
+  "conditions": {
+    "荷重N": "4000",
+    "長さmm": "2000",
+    "面積mm2": "100",
+    "弾性係数N/mm2": "200000"
+  },
+  "choices": {
+    "1": {
+      "value": ".004mm",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 .4mm と異なる。"
+    },
+    "2": {
+      "value": ".04mm",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 .4mm と異なる。"
+    },
+    "3": {
+      "value": ".4mm",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "4mm",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 .4mm と異なる。"
+    },
+    "5": {
+      "value": "40mm",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 .4mm と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/basic/page_014.png",
+    "extracted/pages/H30/basic/page_015.png"
+  ],
+  "question_id": "H30-REG-BASIC-3-6",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "ae8b532ef85072a4834ca69b520e8667b3fd78f3de5625626ab9cee0250493ce",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

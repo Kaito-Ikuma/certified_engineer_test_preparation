@@ -1,0 +1,45 @@
+{
+  "stem": "否定上線の範囲を守り、与えられた論理式と等価な候補を選ぶ。",
+  "conditions": {
+    "対象式": "\\(X=(\\overline A+B)\\overline{(A+\\overline B)}\\)",
+    "演算": "＋は論理和、積は論理積。第2候補は和全体と第2項の二重の否定線をもつ。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\((\\overline A+B)+(\\overline A B)\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "吸収律で否定A又はBとなり、A=B=0で1を返す。対象式は0である。"
+    },
+    "2": {
+      "value": "\\(\\overline{A\\overline B+\\overline{\\overline A B}}\\)",
+      "verdict": "条件に一致する候補",
+      "reason": "二重否定とド・モルガン則により否定AかつBへ簡約され、対象式と一致する。"
+    },
+    "3": {
+      "value": "\\((A\\overline B)(\\overline A B)\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "Aと否定Aの積が含まれ常に0である。A=0、B=1の対象値1を再現しない。"
+    },
+    "4": {
+      "value": "\\(\\overline{(\\overline A+B)+(\\overline A+B)}\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "同一項の和の否定なのでAかつ否定Bとなり、対象と逆の入力で1になる。"
+    },
+    "5": {
+      "value": "\\((A+\\overline B)(\\overline A+\\overline B)\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "分配・吸収で否定Bに簡約される。A=0、B=0で1だが対象は0である。"
+    }
+  },
+  "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/basic/page_006.png"
+  ],
+  "question_id": "H23-REG-BASIC-2-3",
+  "source_file": "sources/H23/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+  "raw_text_sha256": "0e6c1326a302783ea5d72c9d680af5d5286ab4558cf85d4771f8e53f0f48d15f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

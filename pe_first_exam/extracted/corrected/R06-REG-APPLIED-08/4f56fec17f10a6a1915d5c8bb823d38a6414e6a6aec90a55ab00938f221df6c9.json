@@ -1,0 +1,45 @@
+{
+  "stem": "副殻容量・半導体の担い手とGeの四面体結合を区別する。",
+  "conditions": {
+    "原典確認": "S7_051の11原典画像で13問の全五肢・指数・単位・否定を照合。",
+    "対象": "副殻容量・半導体の担い手とGeの四面体結合を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "電池で自由電子が正極側へ動く",
+      "verdict": "代表的条件で適切",
+      "reason": "電子の負電荷による平均ドリフトは通常の電流方向と反対。各電子の熱運動を含む瞬間的な全軌道が正極へ直線的に進むわけではない。"
+    },
+    "2": {
+      "value": "SiへBを添加するとp型",
+      "verdict": "代表的条件で適切",
+      "reason": "Bはアクセプターとして働き正孔が主要な担い手となる。結晶全体が単に正に帯電する意味ではない。"
+    },
+    "3": {
+      "value": "s・p・d・fの収容数2・6・10・14",
+      "verdict": "条件・語義を留保",
+      "reason": "同じ副殻に属する空間軌道の数1・3・5・7へ各2電子を入れた総容量。一個の空間軌道はどの種類も2電子なので原典の軌道という語を副殻群として説明する。"
+    },
+    "4": {
+      "value": "Geの4s²4p²がsp²でダイヤモンド構造",
+      "verdict": "不適切",
+      "reason": "原典の電子配置は4s²4p²でNISTにも一致。通常のGeは四面体の4近接結合を持つダイヤモンド型で、教科書的混成モデルはsp³。sp²の三角平面と取り違え。"
+    },
+    "5": {
+      "value": "Li・Naの不対スピンと常磁性",
+      "verdict": "条件・語義を留保",
+      "reason": "孤立原子のs電子の軌道角運動量ゼロとスピンを区別する。ただしバルク金属のPauli応答はFermi統計を含み、孤立原子のCurie則をそのまま使わない。"
+    }
+  },
+  "figures": "図表問題ではない。原典画像は照合用で転載しない。",
+  "ambiguity": "肢3の軌道という原典語は副殻群の総容量として条件を補う。肢5も孤立原子とバルク金属の常磁性機構が同じとはしない。",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_003.png"
+  ],
+  "question_id": "R06-REG-APPLIED-08",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "64617865c7df1bebfd27017e5b9c2d30a32dc97ee726ca34aca5148f3ef2679a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

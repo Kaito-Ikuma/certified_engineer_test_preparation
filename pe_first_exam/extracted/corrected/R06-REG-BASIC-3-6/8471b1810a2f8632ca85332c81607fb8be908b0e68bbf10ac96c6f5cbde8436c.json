@@ -1,0 +1,47 @@
+{
+  "stem": "交点接続を含む抵抗網の等電位を利用。",
+  "conditions": {
+    "各抵抗": "全八個1Ω。",
+    "図": "菱形外周四辺と上下・左右の中央接続四辺、交点に接続点。",
+    "端子": "左右a,b。"
+  },
+  "choices": {
+    "1": {
+      "value": "4/3Ω",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 2/3Ω と異なる。"
+    },
+    "2": {
+      "value": "1Ω",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 2/3Ω と異なる。"
+    },
+    "3": {
+      "value": "2/3Ω",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "1/3Ω",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 2/3Ω と異なる。"
+    },
+    "5": {
+      "value": "1/6Ω",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 2/3Ω と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_014.png",
+    "extracted/pages/R06/basic/page_015.png"
+  ],
+  "question_id": "R06-REG-BASIC-3-6",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "f1d4102f61f86656f157c38fe4dca265f746fe24d7eb0ba7f2ddfe50beaeb07c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

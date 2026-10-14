@@ -1,0 +1,373 @@
+                 UNITED STATES DEPARTMENT OF THE INTERIOR
+                             GEOLOGICAL SURVEY
+
+
+
+
+                      A TI-59 Calculator Program for
+             Computation of Schlumberger Resistivity Sounding
+           Curve for Models with as many as 25 Horizontal Layers
+                                    by
+                         Ahmed Samir M. El Kahwagy
+
+
+
+
+                        Open-File Report No. 81-160
+
+
+
+
+This report is preliminary and has not been reviewed for conformity with
+the U.S. Geological Survey editorial standards. Any use of trade names
+is for descriptive purposes only and does not imply endorsement by the USGS.
+
+
+Although this program has been extensively tested, the USGS cannot guarantee
+that it will give correct results in any or all particular applications.
+TITLE    Schlumberger Resistivity Sounding
+PROGRAMMER Ahmed Samir M. El Kahwagy*______          DATE   10/20/80
+Partitioning (Op 17) 2,3,9,8,9
+
+
+This program was developed to do rapid computation of theoretical Schlumberger
+resistivity sounding curves. It is based on the application of Ghosh's linear
+filter (Ghosh, 1971) to resistivity transforms calculated for a given earth model
+Haines and Campbell (1980) wrote a program for the computation of Schlumberger
+and Wenner sounding curves over structures with as many as 10 horizontal layers.
+Although it is generally not possible to visually recognize more than 8 layers
+on a field curve, the present program can be used to compute sounding curves
+from digitized electric logs provided the number of layers does not exceed 25.
+The input data consists of the thicknesses, the resistivities, and the number
+of layers (up to 25). The program will compute the apparent resistivities at
+the rate of 6 points per logarithmic cycle starting at abscissa value of AB/2
+of 1 and ending at 10,000. The computed apparent resistivities will be stored
+successively in registers 37 to 61. This represents the output of the program,
+and the contents of these registers can be recalled by the user.
+Note:   The dimensions of the computed electrode spacings (AB/2) and apparent
+        resistivities will correspond to those of the entered thicknesses and
+        resistivities, respectively.
+
+
+
+
+*Work done for the USGS on a grant from Aid to International Development while
+ on leave from the Geological Survey of Egypt.
+ The following is they wttput of computed apparent resistivities
+ for the above-mentioned illustrating example.
+
+
+
+ Computed          Stored
+ apparent            in
+ resistivities     registers
+                       .O, i'i   -   for AB/2=1
+241. 1431472
+217. 0136337           38
+179, 1268944           39
+  139= 846785           40
+113. 1147091            41
+100. 9726029            42
+96. 86244975            43       -   for AB/2=10
+ 95. 1592856            44
+93, 71288423            45
+91. 59566606            46
+86, 95311787            47
+76. 90352711            48
+61,51721231             49       -   for AB/2=100
+46. 82094031           p;n
+40. 00588464           51
+ 43, 1819453           52
+53. 71 142519          53
+68. 20108221           54
+                       trcr
+84, 45314038           J J       -   for AB/2=1000
+100. 9135405           56
+116. 0076031           57
+ 128. 363842           58
+137. 3269032           59
+ 143. 100719           60
+146. 4431868           61 -          for AB/2=10000
+References
+Ghosh, D. P., 1971* Inverse filter coefficients for computation of
+     apparent resistivity standard curves for a horizontally stratified
+     earth, Geophys. Prospect., 19, p, 769-775.
+^aines, D. N. and Campbell, D. L., 1980, Texas Instruments Model 59 Hand
+     Calculator Program to calculate theoritical Wenner and Schlumberger
+     vertical electrode soundings of a structure of up to 10 horizontal
+     layers, U.S. Geological Survey Open-File Report 80-190, 15 p.
+                                                  USEH INS I KUCTIONS
+STEP                         PROCEDURE                                        ENTER               PRESS                  DISPLAY
+      Clear memory
+      1                                                                                  2nd .CMs
+      Repartition
+ 2 Load
+-3T        Side 1 memory
+                   of Cardstorage- area -   -                                            2nd Op 17
+                                                                                      9 "THY                            239.89
+                                                                                              2nd Write                   2*.
+      Load Side 2 of Card
+ 4    Input layer parameters: starting with the
+      first layer, enter and store thicknesses                                                -
+      and resistivities as shov:n in the following
+      example of a 4-layer model:
+   -                      Thickness Resistivity
+     -First Layer              1          259                              T700253        STO      12              1.00259
+      Second Layer            46           94                             46.0009*1       STO      13             46.0009^
+          Third Layer            150           27      150.00027                          STO      14             150.00027
+          Fourth Layer           ~~"~         15°        0.00150                         JSTO      15               0.00150
+          There are 25 available registers, from no.
+          12 to no. 36 t for layer parameters entry.
+          The last input resistivity value represents
+          the resistivity of the infinitely thick
+          last layer.
+          Enter number of layers (N=4 for above example)                                                      4
+          Press A to start program                                                                            A
+          End of program is indicated by the display of 61
+          Press RCL followed by a register number from 37 to 61 to display successively
+          the computed apparent resistivities for AB/2 of 1, 1.46, 2.15, 3.16, 4.64, 6.81,
+          10, 14.6, ...., 10000.
+                                             Operating Restriction
+          The^values of layer resistivities should not be larger than 99999. A six
+          digit number v/ill be considered as a decimal fraction. Layer thicknesses can be
+          entered up to a 4-digit number.
+USER DEFINED KEYS             DATA REGISTERS (QSJO USD                                    LABELS (Op 08)
+
+* Starting of pronrai n                                    80        1.467799268          \M Gas] GU _ US _ l£«l _L«£J _
+B                                                          RN                             [S_[S1_I^_^1_^-E3_
+C                            12.-36 for input      82
+ D                                 layer parameter 83                filter               ISBRl    1 -1   IRSTI   L±J     15^1   GU
+
+                                                                                          EE1      rn     EE3     IK3     Cl     EI
+ E                                                         8< .coefficients
+ V                                                         85                             tm       na     in      fid     E3 .EHS
+ B'                                 (for recalling         8«                             EU1 (7FE1 O3 KJjjB KJB EEil
+ C'                          3 7 _g1 computed appar-                                      m| _ Hfl _ PB _Ei _ EE3 EX3
+ 0*
+                                    trerrt resi s ti v i t '8.                            023 _ £E3 _E3 _BS8 _OH -E3 -
+                             7a       TOO
+ r                           7»   100000                   8«-                            BSI_I21_
+
+ FLAGS       -   o   -   1        -    2           3         -   4            -   5       e               ?                      '
+                                                                                                                                     101 4366- J
+TITLE Schlumberger Resistivity Sounding                                               PAGE          5 OF
+                                                                                                                                 Ti Programmable
+PROGRAMMER.                                                                           .DATE                                       Coding Form
+[LOG CODE                 . KEY           COMMENTS               LOG JCODE            KEY               COMMENTS                 LC)C CODE                 KEY              COMMENTS
+  000        76           LBL         .. i. i                  U55          lU         1U
+                                                                                   SuwiWttfobtt *1 0                                        95            =
+  001        11              fi        Z>LCLK"U^               n^i^         n'-'    s '-        i i 1                                       42         STD
+                                      store no,- -^                         Q*     ^  Q         A1
+  002        42           STD                                                                       2                                       08          08
+  003        01              01       0(1 |a^ erS " 058                     32 XU               11 3                                        73         RC*                                         ;
+  004        43           RCL ~~~T*ax                       _. 059          43 RCL              114                                         08          08                                         :
+  005        79              79           AB/2.            - 060            0404.               11 5                                        22         INV
+  006        32           XIT                                  061          42 STD              11 6                                        59         INT
+  007        43           RCL. ~~~~T .                         062          03  03              11 7                                        65          x
+                                         mi rt »
+  008        80              30                                063          73 RC* $            11 8                                        43         RCL                ^
+  009        ' V>C    i   Xs             ASK                   064          05  05                 fc                           119         79            79               J
+  010         F,S            -r                                065          65  x                 ^                             120         95            =                3
+  Oil        43           RCL            ~ri"                  066          73 RC*                 §^                           12 1        42 STD
+  012        78              78            store               067          03  03                ->£                           122         10             10
+  013        9M 1              '                               068          95                        £                         12 3        69 DP                        ^
+  014        42           STD                                  069          44 SUM                 £>£                          124         38  38                       £
+  015        02              02 ^__                            070          10  10                 28                           125         43 RCL                       ^^
+  016        03              3                                 071          69 DP                 t;                            126         01  01                       ^
+  017        07              7                                 U- -?i .-,
+                                                                      £.
+                                                                            .-, .-,
+                                                                            £. 0
+                                                                                       .-, j-,
+                                                                                       £. -«
+                                                                                                   * *
+                                                                                                   M V
+                                                                                                                                4 . , "7
+                                                                                                                                l£.(
+                                                                                                                                            .1 . ,
+                                                                                                                                            4 £.
+                                                                                                                                                       i~- T n
+                                                                                                                                                       0 ! U
+                                                                                                                                                                           ^ tt ~~~ ~ i
+                                                                                                                                                                           V V C^wCTV.fCI'
+  018        42:          STD                                  073          69 DP  ' it!                             12 8                   00            00                      ^{V^e.
+  019        09              09         cie.<xv"               074          23  23    ^C:                            12 q^                  07
+                                                                                                                                            .? i
+                                                                                                                                                       T|C;7
+                                                                                                                                                       4*» i^
+                                                                                                                                                                            ^
+                                                                                                                                                                          ^ y\
+                                                                                                                                                                                        \AH<lv£
+                                                                                                                                                                                           J
+                                                                                                                                      ""    t~i i %       i i l""t         3»fc
+  020        25           CLR            ree^t«r               0«-5         4y RCL    ^   ]- ,                       lou                    uu          uu        p v           i
+  021        42           STD                                  076          05  05   .§:£ ^                          131                    01          01      ^ 1
+  022        10               10                               077          67  EQ   ^ -    *j-                      132                    35          35      "^^
+  023        71           SBR          -to recaU . n 7 fl                   nn
+                                                                             *
+                                                                                       nn          u
+                                                                                                   V/     *
+                                                                                                             .P   1 A
+                                                                                                                     i :- 3
+                                                                                                                        A
+                                                                                                                                            69         DP         £ '
+  024
+  025
+             01
+             05
+                             01
+                             05
+                                      awd Siror
+                                    . I IP,P<x*<th
+                                                               079
+                                                               080
+                                                                            85
+                                                                            69
+                                                                                       85
+                                                                                      DP
+                                                                                                            ^^       11 4
+                                                                                                          cjHtw^j 1:, 5
+                                                                                                                                            38
+                                                                                                                                            73
+                                                                                                                                                        38
+                                                                                                                                                       RC*
+                                                                                                                                                                  3 "^
+                                                                                                                                                                 _ \                                   C
+  026        4G ;         RCL     '                            081          25         25                 it1 y<T    i;i 6                  08          08      ^3 ^
+             r«'~
+  027             :
+              '-'i.          02            HAu
+                                                i              082          61        GTD                 <J0 °-55 137                      59         INT " S V
+              f- c
+  028             "t         X                                 083          00         00                            138                    42         STD       ^
+  029        45 :         RCL              A6/2             . 084           63         63          ^                 139                    11           11         - o
+  030        80              80                                085          43        RCL             sirore         140                    73         RC*     ^c
+  031        95              =                                 086          10         10            otf parent-     141                    08          08-    ^ ^
+,032         42           STD                                  n:-:7        72        RT*                    f 'u*Va 1*^2                   22         IHV            ^
+1 033        02              02      _                         083          04         04        _J^S '              143                    59         INT       ^^
+  034        77              Gh          LfcSi \~ov            089          Ob         6             U"mi"t of-      144                    65          x      4$ --g
+  035        y ij            u ij         yyi QW » ft RJ 2. 090             01         1           covwbaf^ion 145.                         43         RCL   m V* ~»
+  036        42              42          ..                    091          32        XJT        ___r                146                    79          79
+  037        69           DP             iV- Y\0) QO           092          43        RCL           i^f- ^r          147                    95          =
+  038        29              29         t* tf£X t              093          04         04          i. m a ,P         148                    42         STD
+  039        61           GTD                                  094          67         EQ         . ^ViL-            149                    07          07        *
+  040        00              00            ft&/Z               095          01         01           V s >r(7 n 150                          71         SBR    "-i«> a?v*p*te
+  041        20              20                                 096         03         03            \fh<jycvo       151                    01          01     teiwsfo/wis'
+  042        03              3                                  097         69        DP                         J   152                    62          62 ^^____
+  043        07              7                                  098         24         24          V>acK ^-*^        153                    97         3:57     <&creTvienf
+  044        42           STD                                   099         61        GTD          Coy\4mvi6         154                    00          00      Vv>. tff (ayvr'
+  045        03              03                                 100         00         00                            155                    01          01       j(> 2*v-0
+  046        42           STD                                   101         48         48                            156                    33          33       sWe-.
+  047        04              04                                 102         63        HOP                            157                    43         RCL       toravvsfcf.*,
+  048        25           CLR                                   103         91        R/S              p-            158                    10           10      ^ v\o }
+  049        08              8             store                104         00         0               4/            159                    72         ST*-     Cc^-kv\M.C,
+  050        01              1            first Piter 105                   01          1                                                             MERGED CODES
+                                                                                                                                    32 C3 E33           72 LSTO| E!3 83 (cfo] B33
+  051        42           STD                  rw,       c       106        01          1                                   .
+                                          Co^rpt|£Ki             -\ 1-1-7    c«c-       j.                                         '53 E3 E3            73 IHCI] C3  84 O 223
+  052
+  0~ S'"1    05              05                                   L J i*     ** ^                                                  i 54g23|^J            74|suw, E3               92' INV] [saw]
+     _i _«   *7'-         Ur L P.                    f           103         43 RCL
+                                                                                                                                           TEXAS INSTRUMENTS
+  054        **£          STD                        »           l uy        ui         ui                                                             INI OK » <> < A 1 1 U
+       Schlumberger Resistivity Sounding                                                        PAGE 6           OF
+                                                                                                                                         Tl Programmable
+                                                                                                                                               *"^       "\ /j-jf i
+PROGRAMMER.                                                                                 .DATE.                                        Coding Form                                       vT
+|LOC CODE      KEY        COMMENTS | | LOG CODE                                                 KEY            COMMENTS                  LOG CODE             KEY                COMMENTS
+160    09     09                                     215                  07                07 __,            "~~~"s
+                                                                                                                       «
+161    92. RTH . "             ,                     216                  O '
+               -t              1                     " 1 ?
+162    02     il               I.                    f- i t               54                >                                                        $-tor e in 'Registelrs
+163    65     x ~~ "        ^                        218                                IHV                      -         -.-.. .
+164    43 RCL' ~~                                    219                  49            PRD -
+165    11      11              SJ Sf                 220                  05             05
+                                                                                                                                     1           -    100.                                78
+166    65     x             ^ ^                      :'£i                 48            EXC .._                                  .               100000.                                  79
+167    43 RCL :_:           7 ?                      222                  05            STD "~
+              H2           *                 ^        'ILL--!                                                                             1.467799268                                     80
+168    02     '_' i_                *        v        . t-                42
+                                                                                                                                           <s> r 0. 0148                                  81
+169    35                                                                 10  10                                       t
+                                             ^       ;.-;.c-                                                                               "I    -0,0814                                  82
+170    95     "~                                     i « «.               92 RTH
+                                                                 3                                                                         'C     0.4018                                  83
+171    94 + /- ,                        "
+       *1* O                                                                                                                               £     -1.571ft                                 84
+172          IHV                    S^                          L                       .        .                                         *'       1.972                                 85
+173          LHX i.
+                                                                                                                                           0      J. 1854                                 86
+174    42 STD                                                   9
+                                                                                                                                           ^      0. 1064                                 87
+175    06      06 .                     c,       .              C
+17t.                                                                                                                                       ^     -J e 0499                                88
+       53                                                       1
+                                                                                                                                           ^ . 0. 0225                                    89
+177    53       I           <- "7^                              7
+178    ni      1            c> ^
+                            x. "S"                              3
+179    75                                                       4
+
+180    43 RCL               * ^                                 5
+
+181    06       06         Q^ ^                                 e
+182    54       >             -^                                7                                                                          2
+       55       4-                  n                           0                                                                          %                                     V-^__,
+
+
+
+184    53        '-                P*                           9                                                                          4
+
+185    01       i                  r                            0                                                                          5
+186    85       +               s                                ]                                                                         6
+187    42 RCL                   o                               c.                                                                         7
+188             06             ^i                               3                                                                          Q
+                                                                4
+189    54       >                                                     .                                                                    9                                          « \
+
+                                                                c
+190    54       >                to                                                                                                        0
+191    42 8TD                    5                              C                                                                          1                                                -
+
+
+
+192    fift     Oft   .          ir                             7                                                                          2
+193    65       x              <£                               6                                                                          3
+194    43 RCL                    £                              9                                                                          4
+                                                                                                                                           5-
+195    07       07               g                              C
+196    95       =              -r>                              1                                                                          P
+
+197    4 *.i~. STD                                              2                                                                          7
+198    06        06                ?J^                          3                                                                          t
+       O Cj                    ^"^                                                                                                         o
+199                                                             4
+
+200    43 RCL                  ^                                K
+                                                                          -             -                 -                                U
+                                                                                                                                                     -               -
+
+201    10  10                  VA                               6                                                                          1
+                                                                -                                                                          -s
+202    95  =                   *^                                                                                                          e.
+
+203    42 STD"'~               V                                i                                                                          3
+                                                                c.
+204    05  05....                                                                                                                          A
+
+205                                                             C                                                                          i
+
+206     Oil                    s!5                               1                                                                         (
+                                                                1'!                                                                        -
+207     85  +                   £                .
+208     43 RCL                   H                              :.
+209     06  06                   *>                             f,
+210     65  x                   u                               b                                                                                        MERGED COC>ES
+211     43 RCL                                                  t:                                                                       62 ca ea           72 ISTO] sea          83[Gl6] HH3
+                                                                                                                                         63 E3 O            73 [Hcij El
+212     10  10                                                  7
+                                                                              ...                                                        64 SC3 E3          74 |SUM| O            92|tNv) [SJIR]
+213     55  *                                                   1'.                 -       -         -                                         TEXAS INSTRUMENTS
+214     43 RCL                                                                                                                                            IN< OH I-OH A t 1 l>              .
+

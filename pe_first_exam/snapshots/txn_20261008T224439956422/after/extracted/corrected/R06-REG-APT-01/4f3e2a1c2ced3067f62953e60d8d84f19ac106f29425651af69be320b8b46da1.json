@@ -1,0 +1,58 @@
+{
+  "stem": "第4章の5空欄へ入る語を選ぶ。",
+  "conditions": {
+    "空欄順": [
+      "ア",
+      "イ",
+      "ウ",
+      "エ",
+      "オ"
+    ],
+    "正しい語句の照合": {
+      "ア": "義務",
+      "イ": "公益",
+      "ウ": "責務",
+      "エ": "技術部門",
+      "オ": "資質"
+    },
+    "出題時資料": ""
+  },
+  "choices": {
+    "1": {
+      "value": "責務／安全／義務／専門部門／能力",
+      "verdict": "不適切な解答候補",
+      "reason": "5語すべてが条文と異なる。"
+    },
+    "2": {
+      "value": "義務／安全／責務／技術部門／資質",
+      "verdict": "不適切な解答候補",
+      "reason": "イは安全だけでなく公益である。"
+    },
+    "3": {
+      "value": "責務／安全／義務／技術部門／能力",
+      "verdict": "不適切な解答候補",
+      "reason": "ア・イ・ウ・オが異なる。"
+    },
+    "4": {
+      "value": "義務／公益／責務／技術部門／資質",
+      "verdict": "適切な解答候補",
+      "reason": "秘密保持の義務、公益・資質向上の責務、登録の技術部門に一致する。"
+    },
+    "5": {
+      "value": "義務／公益／責務／専門部門／資質",
+      "verdict": "不適切な解答候補",
+      "reason": "エは専門部門ではなく技術部門である。"
+    }
+  },
+  "figures": "図なし。組合せ表または個数選択肢は原典画像で確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/aptitude/page_001.png"
+  ],
+  "question_id": "R06-REG-APT-01",
+  "source_file": "sources/R06/aptitude.pdf",
+  "source_page": "1",
+  "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+  "raw_text_sha256": "0a8197e62b3372d0e03b9f7741f808e94c38cb6c943b339aad9321ee69da4cc7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

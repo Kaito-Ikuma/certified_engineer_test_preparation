@@ -1,0 +1,44 @@
+{
+  "stem": "2つの積項にかかる否定を変形し、同じ論理関数を選ぶ。",
+  "conditions": {
+    "対象式": "\\(X=\\overline{(\\overline A\\overline B)}\\,\\overline{(\\overline A+B)}\\)"
+  },
+  "choices": {
+    "1": {
+      "value": "\\((A+B)(A\\overline B)\\)",
+      "verdict": "条件に一致する候補",
+      "reason": "対象の2つの否定をド・モルガン則で置き換えた式であり一致する。"
+    },
+    "2": {
+      "value": "\\((A+B)(\\overline A B)\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "否定AかつBとなり、A=1、B=0では0である。対象は1となる。"
+    },
+    "3": {
+      "value": "\\((\\overline A+B)(A\\overline B)\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "展開するとAと否定A又はBと否定Bが同時に必要となり、常に0である。"
+    },
+    "4": {
+      "value": "\\(\\overline A\\overline B+(A+\\overline B)\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "A又は否定Bへ簡約され、A=B=0でも1となる。対象は0である。"
+    },
+    "5": {
+      "value": "\\(\\overline A\\overline B+(\\overline A+B)\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "否定A又はBへ簡約され、A=1、B=0で0になる。対象は1である。"
+    }
+  },
+  "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/basic/page_008.png"
+  ],
+  "question_id": "H25-REG-BASIC-2-3",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "4f346dda82b593d67e60fc7d01c10391cfe782cba53ce7f6bc5ef48158eac495",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

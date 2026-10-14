@@ -1,0 +1,1760 @@
+{
+  "batch_id": "S7_046_atomic",
+  "reference_date": "2026-10-12",
+  "questions": [
+    {
+      "question_id": "H24-REG-APPLIED-05",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "stem": "FCCの最近接距離から格子定数を求める。",
+      "summary": "FCCの最近接距離から格子定数を求める。",
+      "conditions": {
+        "判断対象": "FCCの最近接距離から格子定数を求める。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "d",
+          "verdict": "選ばない候補",
+          "reason": "FCCの最近接距離は胞辺より短い。"
+        },
+        "2": {
+          "value": "√2d",
+          "verdict": "選ぶ候補",
+          "reason": "面対角線を半分にした距離d=a/√2からa=√2d。"
+        },
+        "3": {
+          "value": "d/√2",
+          "verdict": "選ばない候補",
+          "reason": "距離と格子定数を逆にした値。"
+        },
+        "4": {
+          "value": "2d/√3",
+          "verdict": "選ばない候補",
+          "reason": "BCCなら現れる関係でFCCではない。"
+        },
+        "5": {
+          "value": "√3d",
+          "verdict": "選ばない候補",
+          "reason": "FCCの面対角線の幾何に合わない。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/17_applied_science/page_002.png"
+      ],
+      "core_concept": "FCCの最近接距離から格子定数を求める。",
+      "required_knowledge": "FCCでは面対角線上の隅と面中心が最近接で、d=√2a/2。",
+      "solution": "FCCでは面対角線上の隅と面中心が最近接で、d=√2a/2。従ってa=√2dで2。面中心と隅のベクトル(a/2,a/2,0)の長さからも導ける。単位胞の原子数4と配位数12を、この距離式の係数として代入しない。",
+      "answer_reason": "FCCでは面対角線上の隅と面中心が最近接で、d=√2a/2。従ってa=√2dで2。面中心と隅のベクトル(a/2,a/2,0)の長さからも導ける。単位胞の原子数4と配位数12を、この距離式の係数として代入しない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。FCC a/√2が最近接dなのでa=√2d。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:geometry"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_crystal_geometry",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、FCCの最近接距離から格子定数を求める。を主題として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "openstax_crystals"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-07",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "FCCの最近接距離から格子定数を求める。",
+      "summary": "FCCの最近接距離から格子定数を求める。",
+      "conditions": {
+        "判断対象": "FCCの最近接距離から格子定数を求める。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "d",
+          "verdict": "選ばない候補",
+          "reason": "FCCの最近接距離は胞辺より短い。"
+        },
+        "2": {
+          "value": "√2d",
+          "verdict": "選ぶ候補",
+          "reason": "面対角線を半分にした距離d=a/√2からa=√2d。"
+        },
+        "3": {
+          "value": "d/√2",
+          "verdict": "選ばない候補",
+          "reason": "距離と格子定数を逆にした値。"
+        },
+        "4": {
+          "value": "2d/√3",
+          "verdict": "選ばない候補",
+          "reason": "BCCなら現れる関係でFCCではない。"
+        },
+        "5": {
+          "value": "√3d",
+          "verdict": "選ばない候補",
+          "reason": "FCCの面対角線の幾何に合わない。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_003.png"
+      ],
+      "core_concept": "FCCの最近接距離から格子定数を求める。",
+      "required_knowledge": "FCCでは面対角線上の隅と面中心が最近接で、d=√2a/2。",
+      "solution": "FCCでは面対角線上の隅と面中心が最近接で、d=√2a/2。従ってa=√2dで2。面中心と隅のベクトル(a/2,a/2,0)の長さからも導ける。単位胞の原子数4と配位数12を、この距離式の係数として代入しない。",
+      "answer_reason": "FCCでは面対角線上の隅と面中心が最近接で、d=√2a/2。従ってa=√2dで2。面中心と隅のベクトル(a/2,a/2,0)の長さからも導ける。単位胞の原子数4と配位数12を、この距離式の係数として代入しない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。FCC a=√2d。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:geometry"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_crystal_geometry",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、FCCの最近接距離から格子定数を求める。を主題として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "openstax_crystals"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-07",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "stem": "BCCの格子定数から最近接距離を求める。",
+      "summary": "BCCの格子定数から最近接距離を求める。",
+      "conditions": {
+        "判断対象": "BCCの格子定数から最近接距離を求める。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "√3d/2",
+          "verdict": "選ぶ候補",
+          "reason": "体対角線の隅から体中心までの半分。"
+        },
+        "2": {
+          "value": "d/√2",
+          "verdict": "選ばない候補",
+          "reason": "FCCの関係。"
+        },
+        "3": {
+          "value": "√3d",
+          "verdict": "選ばない候補",
+          "reason": "体対角線全長で最近接の2倍。"
+        },
+        "4": {
+          "value": "√2d",
+          "verdict": "選ばない候補",
+          "reason": "面対角線全長。"
+        },
+        "5": {
+          "value": "d",
+          "verdict": "選ばない候補",
+          "reason": "隅どうしの胞辺で体中心はさらに近い。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/17_applied_science/page_003.png"
+      ],
+      "core_concept": "BCCの格子定数から最近接距離を求める。",
+      "required_knowledge": "BCCの体中心(d/2,d/2,d/2)と隅(0,0,0)の距離は√3d/2で1。",
+      "solution": "BCCの体中心(d/2,d/2,d/2)と隅(0,0,0)の距離は√3d/2で1。FCCの面対角線と混同しない。ここで原典のdは格子定数であり、H24等のd=最近接距離と記号の役割が違う。",
+      "answer_reason": "BCCの体中心(d/2,d/2,d/2)と隅(0,0,0)の距離は√3d/2で1。FCCの面対角線と混同しない。ここで原典のdは格子定数であり、H24等のd=最近接距離と記号の役割が違う。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。BCC体対角半分√3d/2。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:geometry"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_crystal_geometry",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、BCCの格子定数から最近接距離を求める。を主題として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "openstax_crystals"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-14",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "BCCの胞原子数と体積から密度を求める。",
+      "summary": "BCCの胞原子数と体積から密度を求める。",
+      "conditions": {
+        "構造": "BCC",
+        "格子定数": "0.29nm",
+        "原子量": "52",
+        "指定NA": "6.0×10^23mol^-1",
+        "求める単位": "g/cm3"
+      },
+      "choices": {
+        "1": {
+          "value": "3.6g/cm3",
+          "verdict": "選ばない候補",
+          "reason": "胞原子数を1とした約半分の値。"
+        },
+        "2": {
+          "value": "7.1g/cm3",
+          "verdict": "選ぶ候補",
+          "reason": "2×52/(6.0×10^23×(2.9×10^-8)^3)=約7.11。"
+        },
+        "3": {
+          "value": "7.9g/cm3",
+          "verdict": "選ばない候補",
+          "reason": "指定量からの計算値より大きい。"
+        },
+        "4": {
+          "value": "10.1g/cm3",
+          "verdict": "選ばない候補",
+          "reason": "指定量からの計算値より大きい。"
+        },
+        "5": {
+          "value": "12.3g/cm3",
+          "verdict": "選ばない候補",
+          "reason": "指定量からの計算値より大きい。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_006.png"
+      ],
+      "core_concept": "BCCの胞原子数と体積から密度を求める。",
+      "required_knowledge": "BCC慣用立方胞では隅8×1/8と体中心1を合わせ2原子。",
+      "solution": "BCC慣用立方胞では隅8×1/8と体中心1を合わせ2原子。0.29nm=2.9×10^-8cmなので、ρ=(2×52g/mol)/(6.0×10^23mol^-1×(2.9×10^-8cm)^3)=7.11g/cm3、2。長さを立方する前に単位を変える。現在の定義定数へ置き換えず原典指定値を使う。",
+      "answer_reason": "BCC慣用立方胞では隅8×1/8と体中心1を合わせ2原子。0.29nm=2.9×10^-8cmなので、ρ=(2×52g/mol)/(6.0×10^23mol^-1×(2.9×10^-8cm)^3)=7.11g/cm3、2。長さを立方する前に単位を変える。現在の定義定数へ置き換えず原典指定値を使う。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。BCC胞2原子ρ=104/(6e23*(2.9e−8)^3)=7.1g/cm3。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:density"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_crystal_density",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、BCCの胞原子数と体積から密度を求める。を主題として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "openstax_crystals"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-12",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "stem": "FCCの胞質量をSI体積で割り密度を求める。",
+      "summary": "FCCの胞質量をSI体積で割り密度を求める。",
+      "conditions": {
+        "構造": "FCC",
+        "格子定数": "0.41nm",
+        "原子量": "197",
+        "指定NA": "6.0×10^23mol^-1",
+        "求める単位": "kg/m3"
+      },
+      "choices": {
+        "1": {
+          "value": "7.9×10^3kg/m3",
+          "verdict": "選ばない候補",
+          "reason": "計算密度に達しない。"
+        },
+        "2": {
+          "value": "1.2×10^4kg/m3",
+          "verdict": "選ばない候補",
+          "reason": "計算密度より小さい。"
+        },
+        "3": {
+          "value": "1.5×10^4kg/m3",
+          "verdict": "選ばない候補",
+          "reason": "計算密度より小さい。"
+        },
+        "4": {
+          "value": "1.9×10^4kg/m3",
+          "verdict": "選ぶ候補",
+          "reason": "胞原子数4とa=4.1×10^-10mから約1.91×10^4。"
+        },
+        "5": {
+          "value": "2.3×10^4kg/m3",
+          "verdict": "選ばない候補",
+          "reason": "計算密度より大きい。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/17_applied_science/page_004.png"
+      ],
+      "core_concept": "FCCの胞質量をSI体積で割り密度を求める。",
+      "required_knowledge": "FCC慣用胞の原子数は8×1/8+6×1/2=4。",
+      "solution": "FCC慣用胞の原子数は8×1/8+6×1/2=4。胞質量は4×0.197/(6.0×10^23)kg、体積は(4.1×10^-10)^3m3。ρ=1.9056×10^4kg/m3なので4。197g/molをkg/molへ直す。H26と同じ方法だが構造・単位・数値が異なる。",
+      "answer_reason": "FCC慣用胞の原子数は8×1/8+6×1/2=4。胞質量は4×0.197/(6.0×10^23)kg、体積は(4.1×10^-10)^3m3。ρ=1.9056×10^4kg/m3なので4。197g/molをkg/molへ直す。H26と同じ方法だが構造・単位・数値が異なる。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。FCC4原子ρ=4*.197/(6e23*(.41e−9)^3)=1.906e4kg/m3。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:density"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_crystal_density",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、FCCの胞質量をSI体積で割り密度を求める。を主題として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "openstax_crystals"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-11",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "分子極性と水素結合の供与・受容を判断する。",
+      "summary": "分子極性と水素結合の供与・受容を判断する。",
+      "conditions": {
+        "判断対象": "分子極性と水素結合の供与・受容を判断する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "極性の強い水素化合物に多い",
+          "verdict": "選ばない候補",
+          "reason": "典型的なN/O/Fに結合したH等を入口とする。"
+        },
+        "2": {
+          "value": "CH4は強極性で水素結合",
+          "verdict": "選ぶ候補",
+          "reason": "正四面体CH4の結合双極子は相殺し、強極性という前提が誤り。"
+        },
+        "3": {
+          "value": "水の沸点はH2Sより高い",
+          "verdict": "選ばない候補",
+          "reason": "水の分子間水素結合が高い沸点を説明する。"
+        },
+        "4": {
+          "value": "HFは高い電気陰性度に関係",
+          "verdict": "選ばない候補",
+          "reason": "HFの分極した結合と電子対による相互作用。"
+        },
+        "5": {
+          "value": "異種分子間にも水素結合",
+          "verdict": "選ばない候補",
+          "reason": "供与体と受容体が違う分子でも成立する。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_005.png"
+      ],
+      "core_concept": "分子極性と水素結合の供与・受容を判断する。",
+      "required_knowledge": "CH4は対称な正四面体で永久双極子がなく、極性が強いため水素結合を生じるという2が不適切。",
+      "solution": "CH4は対称な正四面体で永久双極子がなく、極性が強いため水素結合を生じるという2が不適切。水・HFの典型的水素結合や異種分子間の供与体/受容体を区別する。水素を含めば全て同等の水素結合が生じるという推論はできない。",
+      "answer_reason": "CH4は対称な正四面体で永久双極子がなく、極性が強いため水素結合を生じるという2が不適切。水・HFの典型的水素結合や異種分子間の供与体/受容体を区別する。水素を含めば全て同等の水素結合が生じるという推論はできない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。メタンは対称で永久双極子なく通常水素結合なし。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:interactions"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_intermolecular",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、分子極性と水素結合の供与・受容を判断する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "atomic_nonbond"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-09",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "stem": "NaClの配位数と硬球近似の距離を区別する。",
+      "summary": "NaClの配位数と硬球近似の距離を区別する。",
+      "conditions": {
+        "判断対象": "NaClの配位数と硬球近似の距離を区別する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "単位格子は立方体",
+          "verdict": "選ばない候補",
+          "reason": "慣用胞は立方。"
+        },
+        "2": {
+          "value": "静電引力による結晶",
+          "verdict": "選ばない候補",
+          "reason": "陽陰イオンの静電相互作用。"
+        },
+        "3": {
+          "value": "最近接Clは4個",
+          "verdict": "選ぶ候補",
+          "reason": "Naの周囲のClは上下左右前後の6個。"
+        },
+        "4": {
+          "value": "隣接Na/Clは全て接触",
+          "verdict": "選ばない候補",
+          "reason": "イオン半径による硬球近似の記述で、電子雲の厳密境界ではない。"
+        },
+        "5": {
+          "value": "最近接Na-Naは√2(rNa+rCl)",
+          "verdict": "選ばない候補",
+          "reason": "Na-Cl距離a/2=rNa+rClとNa-Na=a/√2から導く近似式。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "全隣接イオンが接するという記述はイオン半径の硬球近似。半径の定義・実結晶条件は原典で未指定。",
+      "evidence": [
+        "extracted/pages/H27/17_applied_science/page_004.png"
+      ],
+      "core_concept": "NaClの配位数と硬球近似の距離を区別する。",
+      "required_knowledge": "NaCl型は最近接異種イオンの配位数6で、4とする3が不適切。",
+      "solution": "NaCl型は最近接異種イオンの配位数6で、4とする3が不適切。陽陰それぞれのFCC副格子がずれて重なる。硬球接触を置くとa/2=rNa+rCl、同種最近接a/√2=√2(rNa+rCl)。格子の幾何と、半径の和を実距離とするモデル仮定を分ける。",
+      "answer_reason": "NaCl型は最近接異種イオンの配位数6で、4とする3が不適切。陽陰それぞれのFCC副格子がずれて重なる。硬球接触を置くとa/2=rNa+rCl、同種最近接a/√2=√2(rNa+rCl)。格子の幾何と、半径の和を実距離とするモデル仮定を分ける。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。NaClの異種最近接は6。接触は硬球模型。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:ionic"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_ionic_structures",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、NaClの配位数と硬球近似の距離を区別する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "openstax_crystals"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-11",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "stem": "飽和溶液質量を分母にした溶解度から析出量を求める。",
+      "summary": "飽和溶液質量を分母にした溶解度から析出量を求める。",
+      "conditions": {
+        "60℃溶質": "飽和溶液100g中52.2g",
+        "20℃溶質": "飽和溶液100g中24.0g",
+        "水の初期量": "47.8g"
+      },
+      "choices": {
+        "1": {
+          "value": "15.1g",
+          "verdict": "選ばない候補",
+          "reason": "冷却後の溶存量で析出量ではない。"
+        },
+        "2": {
+          "value": "24.0g",
+          "verdict": "選ばない候補",
+          "reason": "冷却前の水量を100gと誤認。"
+        },
+        "3": {
+          "value": "28.2g",
+          "verdict": "選ばない候補",
+          "reason": "52.2−24.0は溶液量が変わることを無視。"
+        },
+        "4": {
+          "value": "37.1g",
+          "verdict": "選ぶ候補",
+          "reason": "水47.8gを保持し溶存15.0947gを差し引く。"
+        },
+        "5": {
+          "value": "59.0g",
+          "verdict": "選ばない候補",
+          "reason": "初期溶質52.2gより大きく質量保存に反する。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "水の蒸発なし・析出結晶への水の取込みなしを置く物質収支。原典の分母は飽和溶液。",
+      "evidence": [
+        "extracted/pages/H27/17_applied_science/page_004.png"
+      ],
+      "core_concept": "飽和溶液質量を分母にした溶解度から析出量を求める。",
+      "required_knowledge": "原典の定義は100gの飽和水溶液中の溶質量。",
+      "solution": "原典の定義は100gの飽和水溶液中の溶質量。60℃の100gには溶質52.2g、水47.8gがある。蒸発を無視し20℃で溶質/水=24/76とすると残る溶質は47.8×24/76=15.0947g。析出52.2−15.0947=37.1053gで4。100g水当たりという通常の別定義へ読み替えない。",
+      "answer_reason": "原典の定義は100gの飽和水溶液中の溶質量。60℃の100gには溶質52.2g、水47.8gがある。蒸発を無視し20℃で溶質/水=24/76とすると残る溶質は47.8×24/76=15.0947g。析出52.2−15.0947=37.1053gで4。100g水当たりという通常の別定義へ読み替えない。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。水47.8保存、残る溶質=47.8×24/76、析出37.105g。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:solubility"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "atomic_solubility_mass",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、飽和溶液質量を分母にした溶解度から析出量を求める。を主題として分類。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-10",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "原子番号と質量数から同位体を定義する。",
+      "summary": "原子番号と質量数から同位体を定義する。",
+      "conditions": {
+        "判断対象": "原子番号と質量数から同位体を定義する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "硫黄の異なる単体",
+          "verdict": "選ばない候補",
+          "reason": "同素体の説明。"
+        },
+        "2": {
+          "value": "原子番号同一・質量数不同",
+          "verdict": "選ぶ候補",
+          "reason": "同じZ、違う中性子数N、A=Z+Nが異なる。"
+        },
+        "3": {
+          "value": "陽子と中性子の和が同じ",
+          "verdict": "選ばない候補",
+          "reason": "同じAの同重体でZ同一とは限らない。"
+        },
+        "4": {
+          "value": "周期表の同族",
+          "verdict": "選ばない候補",
+          "reason": "電子配置による化学的族の分類。"
+        },
+        "5": {
+          "value": "アルカン等の同族列",
+          "verdict": "選ばない候補",
+          "reason": "有機化合物の同族列で核種ではない。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_004.png"
+      ],
+      "core_concept": "原子番号と質量数から同位体を定義する。",
+      "required_knowledge": "同位体はZが等しくNが違う原子の組で、A=Z+Nは異なる。",
+      "solution": "同位体はZが等しくNが違う原子の組で、A=Z+Nは異なる。2。1は同素体、3は同重体、4は周期表の族、5は有機同族列。単体の結晶構造が違うことと核の中性子数が違うことを混同しない。",
+      "answer_reason": "同位体はZが等しくNが違う原子の組で、A=Z+Nは異なる。2。1は同素体、3は同重体、4は周期表の族、5は有機同族列。単体の結晶構造が違うことと核の中性子数が違うことを混同しない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。Z同じ、A異なる。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:isotopes"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "isotope_general",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、原子番号と質量数から同位体を定義する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "modern_mit_nuclear"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-14",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "炭素同素体の結合構造と導電性を比較する。",
+      "summary": "炭素同素体の結合構造と導電性を比較する。",
+      "conditions": {
+        "判断対象": "炭素同素体の結合構造と導電性を比較する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "ダイヤモンドは四面体結合で全鉱物中最高硬度",
+          "verdict": "選ばない候補",
+          "reason": "通常の鉱物のMohs尺度の最高位10。全人工材料・全荷重の絶対比較とはしない。"
+        },
+        "2": {
+          "value": "ダイヤモンドは共有結合結晶で電気をよく通す",
+          "verdict": "選ぶ候補",
+          "reason": "通常の純粋ダイヤモンドは大きなバンドギャップを持ち良導体ではない。ドープ材の例外と分ける。"
+        },
+        "3": {
+          "value": "黒鉛は六角網面で層間が弱い",
+          "verdict": "選ばない候補",
+          "reason": "層内の強い共有結合と層間相互作用を分ける。"
+        },
+        "4": {
+          "value": "CNTは単層又は多層同軸のナノ管",
+          "verdict": "選ばない候補",
+          "reason": "六角網面の管状構造。原典の同軸形状を保持。"
+        },
+        "5": {
+          "value": "CNTの直径・配列で導電性が変わる",
+          "verdict": "選ばない候補",
+          "reason": "巻き方のカイラリティと径が電子構造へ関係する。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "ダイヤモンドの硬度をMohs尺度・通常純結晶へ限定。ドーピング等の導電性例外を保持。",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_005.png"
+      ],
+      "core_concept": "炭素同素体の結合構造と導電性を比較する。",
+      "required_knowledge": "通常の純粋ダイヤモンドはsp3結合網で硬いが良導体ではない。",
+      "solution": "通常の純粋ダイヤモンドはsp3結合網で硬いが良導体ではない。共有結合なら導電性が高いとする候補2が不適切。黒鉛の層内/層間と、CNTの巻き方依存の電子構造を区別する。ホウ素ドープによる導電・超伝導ダイヤモンドの例外は通常純結晶の説明と別に扱う。",
+      "answer_reason": "通常の純粋ダイヤモンドはsp3結合網で硬いが良導体ではない。共有結合なら導電性が高いとする候補2が不適切。黒鉛の層内/層間と、CNTの巻き方依存の電子構造を区別する。ホウ素ドープによる導電・超伝導ダイヤモンドの例外は通常純結晶の説明と別に扱う。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。ダイヤモンド純粋結晶は広いギャップで電気絶縁。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:carbon"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "carbon_allotropes",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、炭素同素体の結合構造と導電性を比較する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "atomic_cnt",
+        "atomic_diamond"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-10",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "stem": "炭素同素体の結合構造と導電性を比較する。",
+      "summary": "炭素同素体の結合構造と導電性を比較する。",
+      "conditions": {
+        "判断対象": "炭素同素体の結合構造と導電性を比較する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "CNTは単層又は多層同軸のナノ管",
+          "verdict": "選ばない候補",
+          "reason": "六角網面の管状構造。原典の同軸形状を保持。"
+        },
+        "2": {
+          "value": "CNTの直径・配列で導電性が変わる",
+          "verdict": "選ばない候補",
+          "reason": "巻き方のカイラリティと径が電子構造へ関係する。"
+        },
+        "3": {
+          "value": "黒鉛は六角網面で層間が弱い",
+          "verdict": "選ばない候補",
+          "reason": "層内の強い共有結合と層間相互作用を分ける。"
+        },
+        "4": {
+          "value": "ダイヤモンドは四面体結合で全鉱物中最高硬度",
+          "verdict": "選ばない候補",
+          "reason": "通常の鉱物のMohs尺度の最高位10。全人工材料・全荷重の絶対比較とはしない。"
+        },
+        "5": {
+          "value": "ダイヤモンドは共有結合結晶で電気をよく通す",
+          "verdict": "選ぶ候補",
+          "reason": "通常の純粋ダイヤモンドは大きなバンドギャップを持ち良導体ではない。ドープ材の例外と分ける。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "ダイヤモンドの硬度をMohs尺度・通常純結晶へ限定。ドーピング等の導電性例外を保持。",
+      "evidence": [
+        "extracted/pages/R05/17_applied_science/page_004.png"
+      ],
+      "core_concept": "炭素同素体の結合構造と導電性を比較する。",
+      "required_knowledge": "通常の純粋ダイヤモンドはsp3結合網で硬いが良導体ではない。",
+      "solution": "通常の純粋ダイヤモンドはsp3結合網で硬いが良導体ではない。共有結合なら導電性が高いとする候補5が不適切。黒鉛の層内/層間と、CNTの巻き方依存の電子構造を区別する。ホウ素ドープによる導電・超伝導ダイヤモンドの例外は通常純結晶の説明と別に扱う。",
+      "answer_reason": "通常の純粋ダイヤモンドはsp3結合網で硬いが良導体ではない。共有結合なら導電性が高いとする候補5が不適切。黒鉛の層内/層間と、CNTの巻き方依存の電子構造を区別する。ホウ素ドープによる導電・超伝導ダイヤモンドの例外は通常純結晶の説明と別に扱う。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。通常純粋ダイヤモンド絶縁。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:carbon"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "carbon_allotropes",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、炭素同素体の結合構造と導電性を比較する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "atomic_cnt",
+        "atomic_diamond"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-11",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "結合多重度・分散力とLennard–Jonesの符号を確認する。",
+      "summary": "結合多重度・分散力とLennard–Jonesの符号を確認する。",
+      "conditions": {
+        "判断対象": "結合多重度・分散力とLennard–Jonesの符号を確認する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "炭素結合の多重度増で強く短くなる",
+          "verdict": "選ばない候補",
+          "reason": "代表的C-C/C=C/C≡Cの傾向。"
+        },
+        "2": {
+          "value": "Wの大凝集エネルギーは結合エネルギーでなく配位数だけ",
+          "verdict": "選ばない候補",
+          "reason": "配位数だけとの排他的説明に疑義。BCCの配位数8だけで凝集を保証できない。"
+        },
+        "3": {
+          "value": "CO2は電子対反発を避け直線",
+          "verdict": "選ばない候補",
+          "reason": "VSEPRでCまわり2電子領域は180度。"
+        },
+        "4": {
+          "value": "分散は瞬間双極子による",
+          "verdict": "選ばない候補",
+          "reason": "瞬間双極子が他分子へ双極子を誘起。"
+        },
+        "5": {
+          "value": "LJはr^-6反発とr^-12引力",
+          "verdict": "選ぶ候補",
+          "reason": "通常の12–6ポテンシャルの反発と引力が逆。力の指数もポテンシャルとは異なる。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "候補2は凝集エネルギーを配位数のみへ帰する排他的主張で疑義。候補5はポテンシャルと力の語も混在。公式5と科学的一意性を分けて査読。",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_004.png"
+      ],
+      "core_concept": "結合多重度・分散力とLennard–Jonesの符号を確認する。",
+      "required_knowledge": "通常U=4ε[(σ/r)^12−(σ/r)^6]で短距離反発が正のr^-12、引力が負のr^-6。",
+      "solution": "通常U=4ε[(σ/r)^12−(σ/r)^6]で短距離反発が正のr^-12、引力が負のr^-6。5は両者が逆なので独立初回も5。ただし力F=−dU/drでは指数13と7となり、原典の力という語も区別する。候補2のW凝集を配位数だけで説明する断定には別の疑義を残し、全他肢が科学的に無条件正しいとはしない。",
+      "answer_reason": "通常U=4ε[(σ/r)^12−(σ/r)^6]で短距離反発が正のr^-12、引力が負のr^-6。5は両者が逆なので独立初回も5。ただし力F=−dU/drでは指数13と7となり、原典の力という語も区別する。候補2のW凝集を配位数だけで説明する断定には別の疑義を残し、全他肢が科学的に無条件正しいとはしない。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。LJポテンシャル反発r−12引力r−6を逆にしている。W凝集を配位数だけで説明も疑義。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:interactions"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_intermolecular",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、結合多重度・分散力とLennard–Jonesの符号を確認する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "atomic_lj",
+        "atomic_nonbond"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-18",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "自然試料のδ値と元素ごとの基準尺度を比較する。",
+      "summary": "自然試料のδ値と元素ごとの基準尺度を比較する。",
+      "conditions": {
+        "判断対象": "自然試料のδ値と元素ごとの基準尺度を比較する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "海水δ18Oは0‰前後",
+          "verdict": "選ばない候補",
+          "reason": "VSMOW尺度の代表的海水を考える。地域・塩分差はある。"
+        },
+        "2": {
+          "value": "海成炭酸塩δ13Cは0‰前後",
+          "verdict": "選ばない候補",
+          "reason": "VPDB尺度の代表的海成炭酸塩。全地質時代・全生成物の保証ではない。"
+        },
+        "3": {
+          "value": "海水硫酸δ34Sは0‰前後",
+          "verdict": "選ぶ候補",
+          "reason": "海水硫酸由来NBS-127でも約+20.3‰とされ、0ではない。"
+        },
+        "4": {
+          "value": "海水塩化物δ37Clは0‰前後",
+          "verdict": "選ばない候補",
+          "reason": "標準海水塩化物尺度の基準近傍。"
+        },
+        "5": {
+          "value": "大気窒素δ15Nは0‰前後",
+          "verdict": "選ばない候補",
+          "reason": "大気N2を基準とする尺度の零点。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "自然試料の代表値は地域・時代・生成条件で変わる。全候補の厳密な分布未照合。NBS-127の旧CDT脚注を保持。",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_006.png"
+      ],
+      "core_concept": "自然試料のδ値と元素ごとの基準尺度を比較する。",
+      "required_knowledge": "δ=1000(R試料/R基準−1)で、‰を%へ誤読しない。",
+      "solution": "δ=1000(R試料/R基準−1)で、‰を%へ誤読しない。海水硫酸の硫黄はCDT/VCDTに対し約+20‰台で0ではなく3。IAEAの海水硫酸由来NBS-127は+20.3‰で旧CDTの脚注もある。これは全海水を同じ厳密数値へ固定する資料ではない。O/C/S/Cl/Nそれぞれの基準を区別する。",
+      "answer_reason": "δ=1000(R試料/R基準−1)で、‰を%へ誤読しない。海水硫酸の硫黄はCDT/VCDTに対し約+20‰台で0ではなく3。IAEAの海水硫酸由来NBS-127は+20.3‰で旧CDTの脚注もある。これは全海水を同じ厳密数値へ固定する資料ではない。O/C/S/Cl/Nそれぞれの基準を区別する。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。海水硫酸のδ34Sは約+21‰、ゼロでない。各基準は別。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:isotope:delta",
+        "theory:isotope:standards"
+      ],
+      "discipline_id": "earth_isotope",
+      "concept_id": "atomic_natural_delta",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、自然試料のδ値と元素ごとの基準尺度を比較する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "atomic_sulfate",
+        "iso_standards1995"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-09",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "stem": "格子振動の比熱・散乱と磁区の応答を区別する。",
+      "summary": "格子振動の比熱・散乱と磁区の応答を区別する。",
+      "conditions": {
+        "判断対象": "格子振動の比熱・散乱と磁区の応答を区別する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "Dulong–Petit則",
+          "verdict": "選ばない候補",
+          "reason": "高温の格子比熱3Rに対応。"
+        },
+        "2": {
+          "value": "Debye–Waller因子",
+          "verdict": "選ばない候補",
+          "reason": "原子の変位による散乱強度の減衰。"
+        },
+        "3": {
+          "value": "Debye温度",
+          "verdict": "選ばない候補",
+          "reason": "格子振動スペクトルの特徴温度。"
+        },
+        "4": {
+          "value": "Einstein比熱",
+          "verdict": "選ばない候補",
+          "reason": "量子調和振動子による格子比熱モデル。"
+        },
+        "5": {
+          "value": "Barkhausen効果",
+          "verdict": "選ぶ候補",
+          "reason": "磁区壁の不連続運動による磁化変化で、比較中は格子振動との関係が薄い。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/17_applied_science/page_003.png"
+      ],
+      "core_concept": "格子振動の比熱・散乱と磁区の応答を区別する。",
+      "required_knowledge": "1から4は格子の振動自由度又は熱変位を直接扱う。",
+      "solution": "1から4は格子の振動自由度又は熱変位を直接扱う。Barkhausen効果は磁区壁がピン止めを越えて不連続に動く磁化応答で5。磁性と格子が一切相互作用しないという断言へ広げない。高温3Rと低温で減る格子比熱は振動子の量子化の同じ枠組みで説明できる。",
+      "answer_reason": "1から4は格子の振動自由度又は熱変位を直接扱う。Barkhausen効果は磁区壁がピン止めを越えて不連続に動く磁化応答で5。磁性と格子が一切相互作用しないという断言へ広げない。高温3Rと低温で減る格子比熱は振動子の量子化の同じ枠組みで説明できる。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。Barkhausenは磁壁の不連続運動。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:phonon"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_lattice_vibrations",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、格子振動の比熱・散乱と磁区の応答を区別する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "atomic_phonon",
+        "atomic_barkhausen"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-14",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "stem": "分子光吸収の選択則・光異性化・線幅を比較する。",
+      "summary": "分子光吸収の選択則・光異性化・線幅を比較する。",
+      "conditions": {
+        "判断対象": "分子光吸収の選択則・光異性化・線幅を比較する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "CO2の振動は可視光を吸収して温室効果",
+          "verdict": "選ばない候補",
+          "reason": "温室効果の主要な振動吸収は赤外域。"
+        },
+        "2": {
+          "value": "IRは分極率変化で双極子変化ではない",
+          "verdict": "選ばない候補",
+          "reason": "IRは双極子変化、Ramanは分極率変化で取り違え。"
+        },
+        "3": {
+          "value": "11cisレチナールの光異性化で視覚",
+          "verdict": "選ぶ候補",
+          "reason": "視物質中の11cis→alltransの光反応に対応。"
+        },
+        "4": {
+          "value": "クロロフィル又はNADP+が光子で一重項励起",
+          "verdict": "選ばない候補",
+          "reason": "クロロフィルの励起と電子受容体NADP+を同列の光捕集体にしない。"
+        },
+        "5": {
+          "value": "分子運動や衝突で線幅は変わらない",
+          "verdict": "選ばない候補",
+          "reason": "Doppler幅・衝突幅等が存在する。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "視覚一次教科書の公開検索収録で光反応を確認。各分子全スペクトル・光合成全経路の本文確認は未完了。",
+      "evidence": [
+        "extracted/pages/H30/17_applied_science/page_005.png"
+      ],
+      "core_concept": "分子光吸収の選択則・光異性化・線幅を比較する。",
+      "required_knowledge": "視物質の11cisレチナールは可視光吸収後に異性化し信号へつながるので3。",
+      "solution": "視物質の11cisレチナールは可視光吸収後に異性化し信号へつながるので3。CO2の振動IR吸収、IRとRaman選択則、クロロフィルの励起とNADP+の電子受容、運動・衝突による線幅をそれぞれ別の物理機構として確認する。選択則は許容遷移を扱い、線幅が常に一定という保証ではない。",
+      "answer_reason": "視物質の11cisレチナールは可視光吸収後に異性化し信号へつながるので3。CO2の振動IR吸収、IRとRaman選択則、クロロフィルの励起とNADP+の電子受容、運動・衝突による線幅をそれぞれ別の物理機構として確認する。選択則は許容遷移を扱い、線幅が常に一定という保証ではない。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。11cisレチナールの光異性化。IRとRamanの選択則が逆。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:optical"
+      ],
+      "discipline_id": "physics_optics",
+      "concept_id": "atomic_optical_molecules",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、分子光吸収の選択則・光異性化・線幅を比較する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "atomic_retinal",
+        "atomic_ir_raman",
+        "atomic_linewidth",
+        "atomic_photosynthesis",
+        "atomic_ir_co2"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-14",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "stem": "空間軌道・スピンと結合対称性を区別する。",
+      "summary": "空間軌道・スピンと結合対称性を区別する。",
+      "conditions": {
+        "判断対象": "空間軌道・スピンと結合対称性を区別する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "σ/π/δ/φ等の結合",
+          "verdict": "選ぶ候補",
+          "reason": "公式はこの候補1。ただし2014年研究にはφ軌道相互作用があり、φの概念の不存在では説明できない。"
+        },
+        "2": {
+          "value": "H2OはAB2E2",
+          "verdict": "選ばない候補",
+          "reason": "O周囲は結合対2と孤立対2。"
+        },
+        "3": {
+          "value": "dを含む混成もある",
+          "verdict": "選ばない候補",
+          "reason": "d関与の形式的混成モデルはある。超原子価をd混成だけで実在説明するのは別問題。"
+        },
+        "4": {
+          "value": "水素はn,l,mだが多電子では加えてスピン",
+          "verdict": "選ばない候補",
+          "reason": "空間軌道は3量子数、電子状態は水素にもスピンがある。多電子にのみ追加する読みには疑義。"
+        },
+        "5": {
+          "value": "3p充填後は4s",
+          "verdict": "選ばない候補",
+          "reason": "中性原子の通常の構築順でAr後Kに4sが入る。全励起状態・イオンの順序とはしない。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "初回4/公式1の不一致。φ相互作用と純φ結合の分類、水素の空間軌道と電子状態、d混成近似の解釈を要査読。公式に合わせて不存在の説明を作らない。",
+      "evidence": [
+        "extracted/pages/R01/17_applied_science/page_004.png"
+      ],
+      "core_concept": "空間軌道・スピンと結合対称性を区別する。",
+      "required_knowledge": "独立初回は4、公式は1で不一致を保持。",
+      "solution": "独立初回は4、公式は1で不一致を保持。n,l,mは空間軌道、スピンは電子状態の属性で水素にも存在する。候補4を多電子にのみスピンがあると読むと問題がある。一方、σ/π/δ/φは軸まわりの軌道対称性に対応し、2014年のthorocene研究にはφ型軌道相互作用の実験的根拠がある。これを単純な二原子純φ結合の確立と同一視もしない。公式1の採点を表示しつつ、1の一意の不適切性は未解決としてAstraへ送る。",
+      "answer_reason": "独立初回は4、公式は1で不一致を保持。n,l,mは空間軌道、スピンは電子状態の属性で水素にも存在する。候補4を多電子にのみスピンがあると読むと問題がある。一方、σ/π/δ/φは軸まわりの軌道対称性に対応し、2014年のthorocene研究にはφ型軌道相互作用の実験的根拠がある。これを単純な二原子純φ結合の確立と同一視もしない。公式1の採点を表示しつつ、1の一意の不適切性は未解決としてAstraへ送る。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。スピンは水素にもあり、空間軌道とスピン状態を別にする。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:orbital"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_orbital_spin",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、空間軌道・スピンと結合対称性を区別する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "atomic_quantum",
+        "atomic_phi2014"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-17",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "stem": "結合次数・混成モデル・分子間相互作用を比較する。",
+      "summary": "結合次数・混成モデル・分子間相互作用を比較する。",
+      "conditions": {
+        "判断対象": "結合次数・混成モデル・分子間相互作用を比較する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "N2/O2/F2順に共有電子増で強い",
+          "verdict": "選ぶ候補",
+          "reason": "結合次数は3/2/1で逆。反結合性電子の占有も数える。"
+        },
+        "2": {
+          "value": "CH4/NH3/H2Oはsp3を反映",
+          "verdict": "選ばない候補",
+          "reason": "4電子領域のモデル。分子形は四面体/三角錐/折れ線と異なる。"
+        },
+        "3": {
+          "value": "NaClは静電引力と立方胞",
+          "verdict": "選ばない候補",
+          "reason": "NaCl型の慣用立方胞。"
+        },
+        "4": {
+          "value": "水はHの正電荷と水素結合で常温液体",
+          "verdict": "選ばない候補",
+          "reason": "通常の常圧条件で分子間水素結合が液体を安定化。"
+        },
+        "5": {
+          "value": "Ar/ナフタレンは分子性結晶",
+          "verdict": "選ばない候補",
+          "reason": "Arは単原子の分散力固体を広い分子性分類で含める用語。Ar分子や常温固体を意味しない。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "Arを分子性結晶と呼ぶ広義分類と単原子性を区別。水の常温液体は圧力等を要する。",
+      "evidence": [
+        "extracted/pages/R01/17_applied_science/page_005.png"
+      ],
+      "core_concept": "結合次数・混成モデル・分子間相互作用を比較する。",
+      "required_knowledge": "N2,O2,F2の結合次数は3,2,1で、共有する結合電子対が増えるという1は逆。",
+      "solution": "N2,O2,F2の結合次数は3,2,1で、共有する結合電子対が増えるという1は逆。sp3の電子対配置と実際の分子形は違い、NH3やH2Oを正四面体分子と呼ばない。Arの単原子固体を分子性の分類へ含める用語と、通常常圧で水が液体という状態条件を分ける。",
+      "answer_reason": "N2,O2,F2の結合次数は3,2,1で、共有する結合電子対が増えるという1は逆。sp3の電子対配置と実際の分子形は違い、NH3やH2Oを正四面体分子と呼ばない。Arの単原子固体を分子性の分類へ含める用語と、通常常圧で水が液体という状態条件を分ける。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。N2,O2,F2結合次数3,2,1で電子数増大・強くなるが逆。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:bonding"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_bond_order",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、結合次数・混成モデル・分子間相互作用を比較する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "atomic_nonbond"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-05",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "stem": "電子準位遷移の光素子と超伝導を比較する。",
+      "summary": "電子準位遷移の光素子と超伝導を比較する。",
+      "conditions": {
+        "判断対象": "電子準位遷移の光素子と超伝導を比較する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "LED",
+          "verdict": "選ばない候補",
+          "reason": "放射再結合で発光。"
+        },
+        "2": {
+          "value": "超伝導",
+          "verdict": "選ぶ候補",
+          "reason": "凝縮状態の電気磁気応答が中心。"
+        },
+        "3": {
+          "value": "太陽電池",
+          "verdict": "選ばない候補",
+          "reason": "光吸収でキャリア生成と分離。"
+        },
+        "4": {
+          "value": "半導体レーザ",
+          "verdict": "選ばない候補",
+          "reason": "誘導放出と共振器。"
+        },
+        "5": {
+          "value": "有機EL",
+          "verdict": "選ばない候補",
+          "reason": "有機層の電子励起の放射緩和。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/17_applied_science/page_003.png"
+      ],
+      "core_concept": "電子準位遷移の光素子と超伝導を比較する。",
+      "required_knowledge": "四つの光素子は電子励起・吸収・放出を利用する。",
+      "solution": "四つの光素子は電子励起・吸収・放出を利用する。超伝導の中心は凝縮した状態の電気磁気応答で2。超伝導も量子現象であり、準位やエネルギーギャップが無いという説明ではない。",
+      "answer_reason": "四つの光素子は電子励起・吸収・放出を利用する。超伝導の中心は凝縮した状態の電気磁気応答で2。超伝導も量子現象であり、準位やエネルギーギャップが無いという説明ではない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。超伝導は巨視的凝縮・秩序で単純光遷移用途ではない。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:modern:devices",
+        "theory:modern:superconduct"
+      ],
+      "discipline_id": "physics_modern",
+      "concept_id": "atomic_light_devices",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、電子準位遷移の光素子と超伝導を比較する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "modern_pv",
+        "modern_led",
+        "modern_oled",
+        "modern_laser",
+        "modern_superconduct"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-14",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "stem": "酸素基底状態の電子数とs軌道容量を確認する。",
+      "summary": "酸素基底状態の電子数とs軌道容量を確認する。",
+      "conditions": {
+        "判断対象": "酸素基底状態の電子数とs軌道容量を確認する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "1s1 2s3 2p4",
+          "verdict": "選ばない候補",
+          "reason": "2sに3電子は不可能。"
+        },
+        "2": {
+          "value": "1s2 2s2 2p4",
+          "verdict": "選ぶ候補",
+          "reason": "低い1s/2sを各2、2pを4で計8。"
+        },
+        "3": {
+          "value": "1s1 2s4 2p3",
+          "verdict": "選ばない候補",
+          "reason": "2sに4電子は不可能。"
+        },
+        "4": {
+          "value": "1s2 2s3 2p3",
+          "verdict": "選ばない候補",
+          "reason": "2sに3電子は不可能。"
+        },
+        "5": {
+          "value": "1s2 2s4 2p2",
+          "verdict": "選ばない候補",
+          "reason": "2sに4電子は不可能。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/17_applied_science/page_005.png"
+      ],
+      "core_concept": "酸素基底状態の電子数とs軌道容量を確認する。",
+      "required_knowledge": "酸素はZ=8で中性なら8電子。",
+      "solution": "酸素はZ=8で中性なら8電子。s副殻は1空間軌道に逆スピン2電子が最大で、基底配置1s2 2s2 2p4、2。候補は全て合計8でも、総数だけで判定できず容量とエネルギー順を確認する。",
+      "answer_reason": "酸素はZ=8で中性なら8電子。s副殻は1空間軌道に逆スピン2電子が最大で、基底配置1s2 2s2 2p4、2。候補は全て合計8でも、総数だけで判定できず容量とエネルギー順を確認する。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。O8電子1s2,2s2,2p4。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:orbital"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_electron_configuration",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、酸素基底状態の電子数とs軌道容量を確認する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "atomic_quantum",
+        "atomic_nist2019"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-10",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "stem": "原典の複数の誤りと全員正解の公式採点を保持する。",
+      "summary": "原典の複数の誤りと全員正解の公式採点を保持する。",
+      "conditions": {
+        "判断対象": "原典の複数の誤りと全員正解の公式採点を保持する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "Neは1s2 2s2 2p6",
+          "verdict": "公式採点は全員正解",
+          "reason": "中性Neの10電子配置。"
+        },
+        "2": {
+          "value": "Krは[Ar]4s2 3d10 4p6",
+          "verdict": "公式採点は全員正解",
+          "reason": "中性Krの36電子配置。記載順と容量を区別。"
+        },
+        "3": {
+          "value": "ZnよりZが1大きいCuは4sが1多い",
+          "verdict": "公式採点は全員正解",
+          "reason": "原典のCuを保持。Cu29はZn30より1小さく4sは1対2で少ない。"
+        },
+        "4": {
+          "value": "MgのIEはNaより大きい",
+          "verdict": "公式採点は全員正解",
+          "reason": "NIST値Mg7.6462eV>Na5.1391eV。"
+        },
+        "5": {
+          "value": "KrのIEはArより大きい",
+          "verdict": "公式採点は全員正解",
+          "reason": "NIST値Kr13.9996eV<Ar15.7596eVで逆。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "公式ALLを維持。初回3|5は公式前の独立判断として保持。原典の銅・原子番号・電子数を別元素へ変更しない。公式措置理由の全文は未取得。",
+      "evidence": [
+        "extracted/pages/R02/17_applied_science/page_004.png"
+      ],
+      "core_concept": "原典の複数の誤りと全員正解の公式採点を保持する。",
+      "required_knowledge": "独立初回は3|5、公式はALL（全員正解）。",
+      "solution": "独立初回は3|5、公式はALL（全員正解）。原典には実際に銅とあり、Gaへ黙って修正しない。Cuは29、Znは30で4s電子も1と2。さらにKrの第一IEはArより小さいため5も不適切。単一候補へ絞らず公式採点と二つの科学的誤りを併記する。公式の全員正解措置の理由文は未取得なので、理由を公式発表として捏造しない。",
+      "answer_reason": "独立初回は3|5、公式はALL（全員正解）。原典には実際に銅とあり、Gaへ黙って修正しない。Cuは29、Znは30で4s電子も1と2。さらにKrの第一IEはArより小さいため5も不適切。単一候補へ絞らず公式採点と二つの科学的誤りを併記する。公式の全員正解措置の理由文は未取得なので、理由を公式発表として捏造しない。",
+      "independent_answer": "3|5",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。3はCu29<Zn30かつ4s1<4s2で逆、5はKr第一IE<Arで逆。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:orbital"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_electron_configuration",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、原典の複数の誤りと全員正解の公式採点を保持する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "atomic_nist2019"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-08",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "結晶の配位数と塑性すべり条件を区別する。",
+      "summary": "結晶の配位数と塑性すべり条件を区別する。",
+      "conditions": {
+        "判断対象": "結晶の配位数と塑性すべり条件を区別する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "αFe/Cr/MoはBCCで充填約68%",
+          "verdict": "選ばない候補",
+          "reason": "BCC硬球充填率π√3/8≈0.680。"
+        },
+        "2": {
+          "value": "Al/Ni/CuはFCCで配位数8",
+          "verdict": "選ぶ候補",
+          "reason": "FCC最近接は12で8はBCC。"
+        },
+        "3": {
+          "value": "Mg/Zn/Cd/αTiはHCP",
+          "verdict": "選ばない候補",
+          "reason": "通常相の六方配列。Zn等の軸比を理想最密値へ固定しない。"
+        },
+        "4": {
+          "value": "分解剪断応力が臨界に達しすべる",
+          "verdict": "選ばない候補",
+          "reason": "τ=σcosφcosλのSchmid則に対応。"
+        },
+        "5": {
+          "value": "温度等で構造変化は同素変態",
+          "verdict": "選ばない候補",
+          "reason": "同元素の結晶構造が相条件で変わる。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "元素例は通常相を想定。HCPを全元素で理想最密軸比とする読みは避け、出題時全相条件は未指定。",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_003.png"
+      ],
+      "core_concept": "結晶の配位数と塑性すべり条件を区別する。",
+      "required_knowledge": "FCCの配位数12を8とした2が不適切。",
+      "solution": "FCCの配位数12を8とした2が不適切。BCCは8で充填68%。胞原子数BCC2/FCC4と最近接配位数8/12を混同しない。すべりは結晶面と方向へ分解した剪断応力で判断する。HCP元素例を全温度圧力や理想軸比の保証へ広げない。",
+      "answer_reason": "FCCの配位数12を8とした2が不適切。BCCは8で充填68%。胞原子数BCC2/FCC4と最近接配位数8/12を混同しない。すべりは結晶面と方向へ分解した剪断応力で判断する。HCP元素例を全温度圧力や理想軸比の保証へ広げない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。FCC配位数12で8はBCC。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:geometry",
+        "theory:material:crystals"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_crystal_geometry",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、結晶の配位数と塑性すべり条件を区別する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "openstax_crystals"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-14",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "NaClとCsClの格子・配位を比較する。",
+      "summary": "NaClとCsClの格子・配位を比較する。",
+      "conditions": {
+        "判断対象": "NaClとCsClの格子・配位を比較する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "O2/F2はσ分裂がπより大きい",
+          "verdict": "選ばない候補",
+          "reason": "指定2p軌道の重なりの向きの比較。"
+        },
+        "2": {
+          "value": "H2Oはsp3電子対で折れ線",
+          "verdict": "選ばない候補",
+          "reason": "結合対2と孤立対2のモデル。"
+        },
+        "3": {
+          "value": "NaClとCsClは同構造・同Madelung定数",
+          "verdict": "選ぶ候補",
+          "reason": "NaClはFCC基底で配位6、CsClは単純立方基底で配位8で異なる。"
+        },
+        "4": {
+          "value": "水素結合は多くの場合共有結合より弱い",
+          "verdict": "選ばない候補",
+          "reason": "典型的分子間水素結合の比較で、全化学種の普遍的上限とはしない。"
+        },
+        "5": {
+          "value": "分子性固体は一般に軟らかく低融点",
+          "verdict": "選ばない候補",
+          "reason": "相互作用の代表傾向で全分子固体の数値保証ではない。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "他候補は混成・典型結合強度・分子固体というモデル/一般傾向。全条件への無限定一般化は保持しない。",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_005.png"
+      ],
+      "core_concept": "NaClとCsClの格子・配位を比較する。",
+      "required_knowledge": "NaClは陽陰のFCC副格子を重ね配位6、CsClは単純立方の隅と異種の中心で配位8。",
+      "solution": "NaClは陽陰のFCC副格子を重ね配位6、CsClは単純立方の隅と異種の中心で配位8。異なる幾何なので同構造/同Madelung定数という3は不適切。CsClをBCC Bravais格子と呼ばない。異種イオンの中心は隅と並進で同等ではない。Madelung定数の数値暗記を使わず構造の相違から判断する。",
+      "answer_reason": "NaClは陽陰のFCC副格子を重ね配位6、CsClは単純立方の隅と異種の中心で配位8。異なる幾何なので同構造/同Madelung定数という3は不適切。CsClをBCC Bravais格子と呼ばない。異種イオンの中心は隅と並進で同等ではない。Madelung定数の数値暗記を使わず構造の相違から判断する。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。NaCl6配位fcc、CsCl8配位sc+基底で定数異なる。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:ionic"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_ionic_structures",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、NaClとCsClの格子・配位を比較する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "openstax_crystals"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-08",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "stem": "金属の通常相とアモルファスの長距離秩序を比較する。",
+      "summary": "金属の通常相とアモルファスの長距離秩序を比較する。",
+      "conditions": {
+        "判断対象": "金属の通常相とアモルファスの長距離秩序を比較する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "Al/Cu/NiはFCC",
+          "verdict": "選ばない候補",
+          "reason": "通常の常温常圧相。"
+        },
+        "2": {
+          "value": "W/Mo/NbはBCC",
+          "verdict": "選ばない候補",
+          "reason": "通常の常温常圧相。"
+        },
+        "3": {
+          "value": "Mg/Zn/YはHCP",
+          "verdict": "選ばない候補",
+          "reason": "通常の六方相。"
+        },
+        "4": {
+          "value": "Feは912℃で格子型変態",
+          "verdict": "選ばない候補",
+          "reason": "純FeのαBCC→γFCCの相変態。"
+        },
+        "5": {
+          "value": "アモルファスは規則的結晶格子",
+          "verdict": "選ぶ候補",
+          "reason": "長距離の周期的並進秩序を持たない。短距離秩序はあり得る。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "元素例の全相境界・出題時測定条件は未指定。912℃は通常圧純Feの代表構造変態値。",
+      "evidence": [
+        "extracted/pages/R04/17_applied_science/page_003.png"
+      ],
+      "core_concept": "金属の通常相とアモルファスの長距離秩序を比較する。",
+      "required_knowledge": "アモルファスは長距離の周期的結晶格子を持たないので5が不適切。",
+      "solution": "アモルファスは長距離の周期的結晶格子を持たないので5が不適切。完全に全原子が無相関という意味ではない。Feの912℃の構造変態と770℃付近の磁気転移は別である。元素例は通常相を想定し全温度圧力に固定しない。",
+      "answer_reason": "アモルファスは長距離の周期的結晶格子を持たないので5が不適切。完全に全原子が無相関という意味ではない。Feの912℃の構造変態と770℃付近の磁気転移は別である。元素例は通常相を想定し全温度圧力に固定しない。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。アモルファスは長距離の周期格子を持たない。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:geometry"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_crystal_geometry",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、金属の通常相とアモルファスの長距離秩序を比較する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "princeton_iron",
+        "princeton_tungsten",
+        "openstax_crystals"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-08",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "格子の並進対称性・Bravais種類と基底を区別する。",
+      "summary": "格子の並進対称性・Bravais種類と基底を区別する。",
+      "conditions": {
+        "判断対象": "格子の並進対称性・Bravais種類と基底を区別する。",
+        "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+      },
+      "choices": {
+        "1": {
+          "value": "3次元格子は並進対称",
+          "verdict": "選ばない候補",
+          "reason": "格子点は整数並進で互いに等価。"
+        },
+        "2": {
+          "value": "3次元Bravaisは8種",
+          "verdict": "選ぶ候補",
+          "reason": "3次元Bravais格子は14種類。"
+        },
+        "3": {
+          "value": "逆格子Wigner–Seitz胞はBrillouin域",
+          "verdict": "選ばない候補",
+          "reason": "逆格子点まわりのWigner–Seitz胞は第一Brillouin域。"
+        },
+        "4": {
+          "value": "diamondの隣接は4と12",
+          "verdict": "選ばない候補",
+          "reason": "四面体第一近接4と同じ副格子の第二近接12。"
+        },
+        "5": {
+          "value": "NaClはFCCに属す",
+          "verdict": "選ばない候補",
+          "reason": "FCC Bravais格子にNa/Clの基底が付く。"
+        }
+      },
+      "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_003.png"
+      ],
+      "core_concept": "格子の並進対称性・Bravais種類と基底を区別する。",
+      "required_knowledge": "3次元Bravais格子は14種類なので8とする2が不適切。",
+      "solution": "3次元Bravais格子は14種類なので8とする2が不適切。結晶は格子と基底で構成され、NaClの異種イオンやdiamondの二原子基底を格子点の種類として別カウントしない。逆格子で原点まわりのWigner–Seitz胞を第一Brillouin域と呼ぶ。胞原子数と第一/第二配位数は別。",
+      "answer_reason": "3次元Bravais格子は14種類なので8とする2が不適切。結晶は格子と基底で構成され、NaClの異種イオンやdiamondの二原子基底を格子点の種類として別カウントしない。逆格子で原点まわりのWigner–Seitz胞を第一Brillouin域と呼ぶ。胞原子数と第一/第二配位数は別。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前初回を不変JSONへ保存。3D Bravais14で8でない。",
+      "learning_points": "軌道と電子状態、格子と基底、単位胞原子数と配位数、定義の分母を区別して候補を全て評価する。",
+      "theory_references": [
+        "theory:atomic:geometry"
+      ],
+      "discipline_id": "chem_atomic",
+      "concept_id": "atomic_bravais",
+      "cross_concepts": [],
+      "classification_reason": "原典全5候補を比較し、格子の並進対称性・Bravais種類と基底を区別する。を主題として分類。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理の幾何・量子状態・保存則を化学構造の定義に対応させる。"
+      },
+      "citations": [
+        "atomic_bravais_ref",
+        "openstax_crystals"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

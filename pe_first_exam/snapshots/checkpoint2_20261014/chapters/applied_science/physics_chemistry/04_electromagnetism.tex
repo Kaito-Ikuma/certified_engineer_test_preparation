@@ -1,0 +1,144 @@
+\chapter{電磁気・物性}
+\section{電荷・場・回路をつなぐ}
+電磁気の問題では、電荷と電流が場を作る過程、場が電荷へ力を及ぼす過程、
+場に蓄えられるエネルギーを分けて整理する。
+回路は、導線と素子へ分布する場を端子電圧と電流で近似したモデルである。
+電荷一定か電圧一定か、静電平衡か時間変化する場か、直列か並列かを最初に確定する。
+この共通本文は静電場・容量・直流・磁場・誘導・RLCの27問に対応する初稿である。
+磁性・物性等の未執筆問題も一覧へ保持し、章全体の完成とはしない。
+
+\section{点電荷と電場}\label{theory:em:coulomb}
+真空中の点電荷間の力の大きさは
+\[
+ F=\frac{|q_1q_2|}{4\pi\varepsilon_0r^2},\qquad \mathbf F=q\mathbf E
+\]
+である。第一式は二つの電荷が作る相互作用、第二式の$\mathbf E$は対象電荷以外が作る場である。
+正電荷の力は電場と同じ方向、負電荷では逆方向になる。
+数値問題では電荷をC、距離をmへそろえ、最後にNになることを確かめる。
+同符号か異符号かは力の向きを決め、大きさを求める絶対値とは別に扱う。\autocite{mit_em02}
+
+\section{電位差と外力の仕事}\label{theory:em:potential}
+静電場では$\mathbf E=-\nabla V$であり、PからQへの移動で
+\[
+ V_Q-V_P=-\int_P^Q\mathbf E\cdot d\boldsymbol\ell,
+ \quad \Delta U=q(V_Q-V_P),\quad W_{\rm field}=-\Delta U
+\]
+となる。ゆっくり動かし、運動エネルギー変化を無視できるとき、外力の仕事は$W_{\rm ext}=\Delta U$である。
+電場方向へ負電荷を動かす場合、電位は下がるが$q<0$なので位置エネルギーは増える。
+したがって正の外力仕事と負の電位変化は矛盾しない。
+候補が正の電位差だけを示す場合には、大小差$|V_Q-V_P|$と、向きを定めた差を本文で明示する。
+時間変化する磁束のある回路では誘導電場が生じるため、静電位だけで全起電力を表せるとは限らない。\autocite{mit_em03}
+
+\section{ガウス法則と導体}\label{theory:em:gauss}
+真空中では$\int_S\mathbf E\cdot\mathbf n\,dS=Q/\varepsilon_0$である。
+一様帯電平面をまたぐ薄い柱を取ると、側面の寄与は0、両端面の寄与は各$EA$となるため
+$2EA=|\sigma|A/\varepsilon_0$、すなわち$E=|\sigma|/(2\varepsilon_0)$を得る。
+一枚の平面と、逆符号二枚の間で場を足した場合の係数を区別する。
+静電平衡の導体内部は$E=0$である。導体内部に場があれば自由電荷の移動が続くためである。
+孤立した球の外側にある逆二乗場を、導体内部へ延長しない。\autocite{mit_em04}
+
+\section{容量と接続}\label{theory:em:capacitor}
+容量は$C=Q/V$で、理想平行平板では$C=\varepsilon A/d$となる。
+容量の単位FはC/Vである。$Q$は片方の極板の電荷の大きさを表す。
+未充電のコンデンサーを直列接続すると、孤立した中間導体の正味電荷が0のまま保存されるため、
+各素子の電気量の大きさは等しくなる。その電圧を足すと$1/C_{\rm eq}=\sum 1/C_i$である。
+並列では電圧が共通なので電荷を足し、$C_{\rm eq}=\sum C_i$となる。
+抵抗の直列・並列とは逆の合成関係に見えるが、共通量と加算量から導けば暗記を必要としない。\autocite{mit_em05}
+
+\section{電場エネルギー}\label{theory:em:energy}
+固定形状の線形コンデンサーに微小電荷$dq$を運ぶ仕事は$dW=Vdq=(q/C)dq$である。
+0からQまで積分して
+\[
+ U=\int_0^Q\frac qC\,dq=\frac{Q^2}{2C}=\frac12CV^2
+\]
+を得る。$QV$では充電中の電圧変化を無視しており、2倍になる。
+エネルギーの数値計算で$\mu$を$10^{-6}$へ変換し、電圧の二乗に注意する。
+LC回路で用いる$LI^2/2$も場へ蓄えるエネルギーであり、抵抗で熱になる消費エネルギーとは違う。
+
+\section{分極・強誘電性・損失}\label{theory:em:dielectric}
+分極$\mathbf P$は単位体積あたりの電気双極子モーメントで、
+$\mathbf D=\varepsilon_0\mathbf E+\mathbf P$と表す。
+通常の誘電体で外場に応じて分極することと、強誘電体の自発分極を区別する。
+強誘電性は外部電場なしでも生じる分極と、電場によるその反転を特徴とする。
+交流で分極の応答に遅れや散逸があると、供給エネルギーの一部が熱となる誘電損失が生じる。
+電解コンデンサーの酸化アルミニウム・酸化タンタル膜は薄い絶縁層として使われる。
+誘電率が大きいことだけで、損失や耐電圧もよいとは判断しない。\autocite{mit_em05,mit_ferroelectric}
+
+\section{固定電荷での極板間引力}\label{theory:em:force}
+端効果のない一様な線形誘電体を仮定する。Q一定で間隔$d$を変えると
+\[
+ U(Q,d)=\frac{Q^2d}{2\varepsilon A},\qquad
+ F_{\rm attraction}=\left(\frac{\partial U}{\partial d}\right)_Q
+ =\frac{Q^2}{2\varepsilon A}
+\]
+である。これは引力の大きさであり、間隔を増やす方向の力成分は負になる。
+Qが一定なら間隔の変更だけでは引力は変わらないが、誘電率を5倍にすれば引力は1/5となる。
+容量が変更前と同じでも、間隔微分が同じとは限らない。
+電圧一定の場合は電源とのエネルギーの授受があるため、$CV^2/2$を固定Qの式と同じように微分しない。
+固定Vでの大きさは$\varepsilon AV^2/(2d^2)$である。条件を先に選ぶ必要がある。
+
+\section{直流と抵抗}\label{theory:em:dc}
+電流は断面を通る符号付き電荷の時間変化率$I=dQ/dt$で、1 A=1 C/sである。
+負の担い手の移動方向と電流方向は逆になる。電子に限らず、イオンも電流を運べる。
+オーム性導体では$V=IR$、電力は$P=VI=I^2R=V^2/R$となる。
+抵抗を並列につなぐと電圧が共通で$I=\sum V/R_i$より$1/R_{\rm eq}=\sum1/R_i$を得る。
+合成抵抗が最小の構成抵抗より小さいことも検算になる。\autocite{mit_em06,mit_em07}
+
+\section{抵抗率と担い手}\label{theory:em:resistivity}
+均一な棒の抵抗は$R=\rho L/A$で、材料の抵抗率と形状の寄与を分離する。
+金属では格子振動、不純物、欠陥等による散乱が抵抗へ寄与する。
+室温近傍の変化は$\rho(T)\simeq\rho(T_0)[1+\alpha(T-T_0)]$で近似することが多いが、全温度域の厳密な法則ではない。
+真性半導体では温度上昇で電子と正孔が熱励起され、担い手の増加が抵抗減少の主因となる。
+低温の金属での特定のべき則を、多くの導体についての一般則へ広げない。\autocite{mit_em06,mit_semiconductor}
+
+\section{電流による場と荷電粒子の運動}\label{theory:em:biot}\label{theory:em:lorentz}
+定常電流素片が作る磁束密度はビオ・サバールの法則
+$d\mathbf B=\mu_0I(d\boldsymbol\ell\times\hat{\mathbf r})/(4\pi r^2)$で与えられる。
+直線電流の周囲の場は円周方向へ向き、局所的に電流方向へ垂直になる。
+一方、場の中で動く粒子への磁気力は$q\mathbf v\times\mathbf B$である。
+その仕事率は$\mathbf F\cdot\mathbf v=0$なので速さを変えず、方向を変える。
+一様Bへ垂直な速度で入り、他の力がなければ円運動となり、半径は$mv/(|q|B)$である。
+場を作る法則と、その場から力を受ける法則を混同しない。\autocite{mit_em09,mit_lorentz}
+
+\section{ソレノイドと透磁率}\label{theory:em:solenoid}
+長いコイルの端部から離れた内部では、巻数密度$n=N/\ell$を使い$B=\mu nI$と近似する。
+全巻数Nをそのまま掛けると長さの次元が足りない。
+磁性体があるときは、出題で指定された線形範囲の$\mu=\mu_0\mu_r$を用いる。
+有限長の端部の場、材料の飽和や履歴はこの簡単な式の外にある。
+TからmTへの換算では$10^3$を掛ける。\autocite{mit_em09}
+
+\section{誘導とマクスウェル方程式}\label{theory:em:induction}\label{theory:em:maxwell}
+一巻きの磁束を$\Phi_B$とすると$\mathcal E=-N\,d\Phi_B/dt$である。
+負号は変化を妨げる向きであり、大きさの問題では$N|d\Phi_B/dt|$を使う。
+真電荷を自由電荷として扱う巨視的な表記では
+\begin{align*}
+ \nabla\cdot\mathbf D&=\rho_{\rm free},&\nabla\cdot\mathbf B&=0,\\
+ \nabla\times\mathbf E&=-\frac{\partial\mathbf B}{\partial t},&
+ \nabla\times\mathbf H&=\mathbf i+\frac{\partial\mathbf D}{\partial t}.
+\end{align*}
+磁束変化から電場を得る法則と、電束密度変化から変位電流を得る項を区別する。
+$\nabla\cdot\mathbf B=0$は、通常の電磁気学で磁気単極子を源としないことを表す。
+電荷保存は$\partial_t\rho+\nabla\cdot\mathbf i=0$で、流出を正とした総電荷変化には負号が付く。
+「出入り」を流入と流出の単なる和として扱わない。\autocite{mit_em10,mit_em13}
+
+\section{LC振動と直列共振}\label{theory:em:lc}\label{theory:em:rlc}
+無抵抗LC回路では$Q^2/(2C)+LI^2/2$が保存する。
+最大電流時はQ=0となり、初期にコンデンサーへ蓄えたエネルギーが全てコイルへ移る。
+交流電源で駆動する理想直列RLC回路では
+\[
+ Z=R+j\left(\omega L-\frac1{\omega C}\right),\quad
+ |Z|^2=R^2+\left(\omega L-\frac1{\omega C}\right)^2
+\]
+となる。括弧が0となる$f_0=1/(2\pi\sqrt{LC})$で$|Z|$は最小Rになる。
+抵抗で減衰する自由振動の周波数と、交流定常状態の電流共振を混同しない。
+L,CをSIへ直してから計算し、最後にHzをkHzへ換算する。\autocite{mit_em11,mit_em12}
+
+\section{場のエネルギー流}\label{theory:em:poynting}
+電磁場のエネルギー流密度は$\mathbf S=\mathbf E\times\mathbf H$、単位はW/m$^2$である。
+外積なのでE,H双方へ垂直であり、流れる方向と単位面積あたりの仕事率を同時に表す。
+力の向きや電荷の移動方向と同一視しない。
+電磁波だけでなく、回路へエネルギーが運ばれる記述にも使われる。\autocite{mit_em13}
+
+\input{chapters/applied_science/physics_chemistry/magnetic_response_theory.tex}
+\section{過去問での確認}
+\input{generated/questions/applied_science/physics_chemistry/04_electromagnetism.tex}

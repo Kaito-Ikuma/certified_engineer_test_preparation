@@ -1,0 +1,46 @@
+{
+  "stem": "実数の等式と不等式の2組について必要条件・十分条件を判定する。",
+  "conditions": {
+    "領域": "x,yは実数。",
+    "ア": "x²+y²=0はx=y=0であるための条件。",
+    "イ": "x+y>2はx>1又はy>1であるための条件。"
+  },
+  "choices": {
+    "1": {
+      "value": "ア必要十分／イ必要だが十分でない",
+      "verdict": "条件に一致しない候補",
+      "reason": "アは合うが、イの含意の向きが逆である。"
+    },
+    "2": {
+      "value": "ア必要十分／イ十分だが必要でない",
+      "verdict": "条件に一致する候補",
+      "reason": "実数平方の非負性でアは双方向に成立し、イは一方向のみ成立する。"
+    },
+    "3": {
+      "value": "ア十分だが必要でない／イ必要十分",
+      "verdict": "条件に一致しない候補",
+      "reason": "アも双方向に成立し、イは逆向きに成立しないので両欄が異なる。"
+    },
+    "4": {
+      "value": "ア十分だが必要でない／イ必要だが十分でない",
+      "verdict": "条件に一致しない候補",
+      "reason": "アは必要でもあり、イは十分側であるため両欄が異なる。"
+    },
+    "5": {
+      "value": "ア必要だが十分でない／イ十分だが必要でない",
+      "verdict": "条件に一致しない候補",
+      "reason": "イは合うが、アは十分でもある。"
+    }
+  },
+  "figures": "問題幹・数値・記号・5肢を画像確認。図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_006.png"
+  ],
+  "question_id": "R06-REG-BASIC-2-2",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "28817907f5fecedbda02b8be7c700e614aa73d1383a63f006ba172418244b836",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

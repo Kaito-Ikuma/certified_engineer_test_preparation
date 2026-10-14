@@ -1,0 +1,572 @@
+{
+  "version": "1.0-review1",
+  "categories": [
+    {
+      "id": "geo_exploration",
+      "subject": "APPLIED",
+      "major": "地質",
+      "middle": "物理探査",
+      "file": "chapters/applied_science/geology/10_geophysical_exploration.tex"
+    },
+    {
+      "id": "geo_resources",
+      "subject": "APPLIED",
+      "major": "地質",
+      "middle": "資源・鉱床",
+      "file": "chapters/applied_science/geology/09_resources_deposits.tex"
+    },
+    {
+      "id": "geo_engineering",
+      "subject": "APPLIED",
+      "major": "地質",
+      "middle": "応用地質・地盤",
+      "file": "chapters/applied_science/geology/08_engineering_geology.tex"
+    },
+    {
+      "id": "geo_groundwater",
+      "subject": "APPLIED",
+      "major": "地質",
+      "middle": "地下水",
+      "file": "chapters/applied_science/geology/07_hydrogeology.tex"
+    },
+    {
+      "id": "geo_stratigraphy",
+      "subject": "APPLIED",
+      "major": "地質",
+      "middle": "層序・古生物",
+      "file": "chapters/applied_science/geology/04_stratigraphy_paleontology.tex"
+    },
+    {
+      "id": "geo_structure",
+      "subject": "APPLIED",
+      "major": "地質",
+      "middle": "構造地質",
+      "file": "chapters/applied_science/geology/05_structural_geology.tex"
+    },
+    {
+      "id": "geo_sediment",
+      "subject": "APPLIED",
+      "major": "地質",
+      "middle": "堆積学",
+      "file": "chapters/applied_science/geology/03_sedimentology.tex"
+    },
+    {
+      "id": "geo_mineral",
+      "subject": "APPLIED",
+      "major": "地質",
+      "middle": "鉱物学",
+      "file": "chapters/applied_science/geology/01_mineralogy.tex"
+    },
+    {
+      "id": "geo_petrology",
+      "subject": "APPLIED",
+      "major": "地質",
+      "middle": "岩石学",
+      "file": "chapters/applied_science/geology/02_petrology.tex"
+    },
+    {
+      "id": "earth_isotope",
+      "subject": "APPLIED",
+      "major": "地球物理及び地球化学",
+      "middle": "同位体地球化学",
+      "file": "chapters/applied_science/geophysics_geochemistry/09_isotope_geochemistry.tex"
+    },
+    {
+      "id": "earth_volcano",
+      "subject": "APPLIED",
+      "major": "地球物理及び地球化学",
+      "middle": "火山・マグマ",
+      "file": "chapters/applied_science/geophysics_geochemistry/05_volcanology.tex"
+    },
+    {
+      "id": "earth_interior",
+      "subject": "APPLIED",
+      "major": "地球物理及び地球化学",
+      "middle": "地球内部・プレート",
+      "file": "chapters/applied_science/geophysics_geochemistry/02_earth_interior.tex"
+    },
+    {
+      "id": "earth_seismic",
+      "subject": "APPLIED",
+      "major": "地球物理及び地球化学",
+      "middle": "地震学",
+      "file": "chapters/applied_science/geophysics_geochemistry/01_seismology.tex"
+    },
+    {
+      "id": "earth_gravity",
+      "subject": "APPLIED",
+      "major": "地球物理及び地球化学",
+      "middle": "重力・測地",
+      "file": "chapters/applied_science/geophysics_geochemistry/03_gravity_geodesy.tex"
+    },
+    {
+      "id": "earth_magnet",
+      "subject": "APPLIED",
+      "major": "地球物理及び地球化学",
+      "middle": "地磁気",
+      "file": "chapters/applied_science/geophysics_geochemistry/04_geomagnetism.tex"
+    },
+    {
+      "id": "earth_weather",
+      "subject": "APPLIED",
+      "major": "地球物理及び地球化学",
+      "middle": "気象・大気",
+      "file": "chapters/applied_science/geophysics_geochemistry/06_meteorology_atmosphere.tex"
+    },
+    {
+      "id": "earth_ocean",
+      "subject": "APPLIED",
+      "major": "地球物理及び地球化学",
+      "middle": "海洋",
+      "file": "chapters/applied_science/geophysics_geochemistry/07_ocean.tex"
+    },
+    {
+      "id": "earth_chem",
+      "subject": "APPLIED",
+      "major": "地球物理及び地球化学",
+      "middle": "地球化学",
+      "file": "chapters/applied_science/geophysics_geochemistry/08_geochemistry.tex"
+    },
+    {
+      "id": "physics_units",
+      "subject": "APPLIED",
+      "major": "物理及び化学",
+      "middle": "単位・計測",
+      "file": "chapters/applied_science/physics_chemistry/11_other.tex"
+    },
+    {
+      "id": "physics_wave",
+      "subject": "APPLIED",
+      "major": "物理及び化学",
+      "middle": "振動・波動",
+      "file": "chapters/applied_science/physics_chemistry/02_oscillation_wave.tex"
+    },
+    {
+      "id": "physics_optics",
+      "subject": "APPLIED",
+      "major": "物理及び化学",
+      "middle": "光学",
+      "file": "chapters/applied_science/physics_chemistry/05_optics.tex"
+    },
+    {
+      "id": "physics_modern",
+      "subject": "APPLIED",
+      "major": "物理及び化学",
+      "middle": "現代物理・原子核",
+      "file": "chapters/applied_science/physics_chemistry/06_modern_physics.tex"
+    },
+    {
+      "id": "physics_thermo",
+      "subject": "APPLIED",
+      "major": "物理及び化学",
+      "middle": "熱力学",
+      "file": "chapters/applied_science/physics_chemistry/03_thermodynamics.tex"
+    },
+    {
+      "id": "physics_electro",
+      "subject": "APPLIED",
+      "major": "物理及び化学",
+      "middle": "電磁気・物性",
+      "file": "chapters/applied_science/physics_chemistry/04_electromagnetism.tex"
+    },
+    {
+      "id": "physics_mechanics",
+      "subject": "APPLIED",
+      "major": "物理及び化学",
+      "middle": "力学",
+      "file": "chapters/applied_science/physics_chemistry/01_mechanics.tex"
+    },
+    {
+      "id": "chem_analysis",
+      "subject": "APPLIED",
+      "major": "物理及び化学",
+      "middle": "分析化学",
+      "file": "chapters/applied_science/physics_chemistry/10_analytical_chemistry.tex"
+    },
+    {
+      "id": "chem_atomic",
+      "subject": "APPLIED",
+      "major": "物理及び化学",
+      "middle": "原子・分子・結晶",
+      "file": "chapters/applied_science/physics_chemistry/07_atomic_molecular.tex"
+    },
+    {
+      "id": "chem_organic",
+      "subject": "APPLIED",
+      "major": "物理及び化学",
+      "middle": "有機・高分子化学",
+      "file": "chapters/applied_science/physics_chemistry/12_organic_polymer.tex"
+    },
+    {
+      "id": "chem_inorganic",
+      "subject": "APPLIED",
+      "major": "物理及び化学",
+      "middle": "無機化学",
+      "file": "chapters/applied_science/physics_chemistry/09_inorganic_chemistry.tex"
+    },
+    {
+      "id": "chem_physical",
+      "subject": "APPLIED",
+      "major": "物理及び化学",
+      "middle": "物理化学",
+      "file": "chapters/applied_science/physics_chemistry/08_physical_chemistry.tex"
+    },
+    {
+      "id": "physics_materials",
+      "subject": "APPLIED",
+      "major": "物理及び化学",
+      "middle": "材料物性",
+      "file": "chapters/applied_science/physics_chemistry/13_material_properties.tex"
+    },
+    {
+      "id": "basic_1_0",
+      "subject": "BASIC",
+      "major": "設計・計画",
+      "middle": "信頼性設計",
+      "file": "chapters/basic/01_design_planning.tex"
+    },
+    {
+      "id": "basic_1_1",
+      "subject": "BASIC",
+      "major": "設計・計画",
+      "middle": "品質・統計設計",
+      "file": "chapters/basic/01_design_planning.tex"
+    },
+    {
+      "id": "basic_1_2",
+      "subject": "BASIC",
+      "major": "設計・計画",
+      "middle": "プロジェクト・最適化",
+      "file": "chapters/basic/01_design_planning.tex"
+    },
+    {
+      "id": "basic_1_3",
+      "subject": "BASIC",
+      "major": "設計・計画",
+      "middle": "安全・強度設計",
+      "file": "chapters/basic/01_design_planning.tex"
+    },
+    {
+      "id": "basic_1_4",
+      "subject": "BASIC",
+      "major": "設計・計画",
+      "middle": "設計原理・管理",
+      "file": "chapters/basic/01_design_planning.tex"
+    },
+    {
+      "id": "basic_1_5",
+      "subject": "BASIC",
+      "major": "設計・計画",
+      "middle": "最適化・経済性",
+      "file": "chapters/basic/01_design_planning.tex"
+    },
+    {
+      "id": "basic_1_6",
+      "subject": "BASIC",
+      "major": "設計・計画",
+      "middle": "力学設計",
+      "file": "chapters/basic/01_design_planning.tex"
+    },
+    {
+      "id": "basic_1_8",
+      "subject": "BASIC",
+      "major": "設計・計画",
+      "middle": "意思決定・最適化",
+      "file": "chapters/basic/01_design_planning.tex"
+    },
+    {
+      "id": "basic_1_9",
+      "subject": "BASIC",
+      "major": "設計・計画",
+      "middle": "設計の応用数学",
+      "file": "chapters/basic/01_design_planning.tex"
+    },
+    {
+      "id": "basic_1_10",
+      "subject": "BASIC",
+      "major": "設計・計画",
+      "middle": "製図",
+      "file": "chapters/basic/01_design_planning.tex"
+    },
+    {
+      "id": "basic_2_0",
+      "subject": "BASIC",
+      "major": "情報・論理",
+      "middle": "データ構造・形式言語",
+      "file": "chapters/basic/02_information_logic.tex"
+    },
+    {
+      "id": "basic_2_1",
+      "subject": "BASIC",
+      "major": "情報・論理",
+      "middle": "情報理論・符号・確率モデル",
+      "file": "chapters/basic/02_information_logic.tex"
+    },
+    {
+      "id": "basic_2_2",
+      "subject": "BASIC",
+      "major": "情報・論理",
+      "middle": "数値表現・誤差",
+      "file": "chapters/basic/02_information_logic.tex"
+    },
+    {
+      "id": "basic_2_3",
+      "subject": "BASIC",
+      "major": "情報・論理",
+      "middle": "ネットワーク",
+      "file": "chapters/basic/02_information_logic.tex"
+    },
+    {
+      "id": "basic_2_4",
+      "subject": "BASIC",
+      "major": "情報・論理",
+      "middle": "論理・離散数学",
+      "file": "chapters/basic/02_information_logic.tex"
+    },
+    {
+      "id": "basic_2_5",
+      "subject": "BASIC",
+      "major": "情報・論理",
+      "middle": "計算機アーキテクチャ",
+      "file": "chapters/basic/02_information_logic.tex"
+    },
+    {
+      "id": "basic_2_7",
+      "subject": "BASIC",
+      "major": "情報・論理",
+      "middle": "情報セキュリティ",
+      "file": "chapters/basic/02_information_logic.tex"
+    },
+    {
+      "id": "basic_2_8",
+      "subject": "BASIC",
+      "major": "情報・論理",
+      "middle": "アルゴリズム・計算量",
+      "file": "chapters/basic/02_information_logic.tex"
+    },
+    {
+      "id": "basic_2_10",
+      "subject": "BASIC",
+      "major": "情報・論理",
+      "middle": "言語・データ構造",
+      "file": "chapters/basic/02_information_logic.tex"
+    },
+    {
+      "id": "basic_2_15",
+      "subject": "BASIC",
+      "major": "情報・論理",
+      "middle": "状態遷移・形式モデル",
+      "file": "chapters/basic/02_information_logic.tex"
+    },
+    {
+      "id": "basic_2_16",
+      "subject": "BASIC",
+      "major": "情報・論理",
+      "middle": "データベース・AI",
+      "file": "chapters/basic/02_information_logic.tex"
+    },
+    {
+      "id": "basic_3_0",
+      "subject": "BASIC",
+      "major": "解析",
+      "middle": "振動・運動",
+      "file": "chapters/basic/03_analysis.tex"
+    },
+    {
+      "id": "basic_3_1",
+      "subject": "BASIC",
+      "major": "解析",
+      "middle": "計算力学",
+      "file": "chapters/basic/03_analysis.tex"
+    },
+    {
+      "id": "basic_3_2",
+      "subject": "BASIC",
+      "major": "解析",
+      "middle": "微積分・数値解析",
+      "file": "chapters/basic/03_analysis.tex"
+    },
+    {
+      "id": "basic_3_3",
+      "subject": "BASIC",
+      "major": "解析",
+      "middle": "線形代数・ベクトル",
+      "file": "chapters/basic/03_analysis.tex"
+    },
+    {
+      "id": "basic_3_4",
+      "subject": "BASIC",
+      "major": "解析",
+      "middle": "連続体・構造力学",
+      "file": "chapters/basic/03_analysis.tex"
+    },
+    {
+      "id": "basic_3_6",
+      "subject": "BASIC",
+      "major": "解析",
+      "middle": "物理モデル・回路",
+      "file": "chapters/basic/03_analysis.tex"
+    },
+    {
+      "id": "basic_3_7",
+      "subject": "BASIC",
+      "major": "解析",
+      "middle": "運動・エネルギー",
+      "file": "chapters/basic/03_analysis.tex"
+    },
+    {
+      "id": "basic_3_8",
+      "subject": "BASIC",
+      "major": "解析",
+      "middle": "確率・統計",
+      "file": "chapters/basic/03_analysis.tex"
+    },
+    {
+      "id": "basic_3_9",
+      "subject": "BASIC",
+      "major": "解析",
+      "middle": "ベクトル解析・幾何",
+      "file": "chapters/basic/03_analysis.tex"
+    },
+    {
+      "id": "basic_4_0",
+      "subject": "BASIC",
+      "major": "材料・化学・バイオ",
+      "middle": "生物・バイオ",
+      "file": "chapters/basic/04_material_chemistry_biology.tex"
+    },
+    {
+      "id": "basic_4_1",
+      "subject": "BASIC",
+      "major": "材料・化学・バイオ",
+      "middle": "材料・金属",
+      "file": "chapters/basic/04_material_chemistry_biology.tex"
+    },
+    {
+      "id": "basic_4_2",
+      "subject": "BASIC",
+      "major": "材料・化学・バイオ",
+      "middle": "原子・無機化学",
+      "file": "chapters/basic/04_material_chemistry_biology.tex"
+    },
+    {
+      "id": "basic_4_3",
+      "subject": "BASIC",
+      "major": "材料・化学・バイオ",
+      "middle": "物理化学・反応",
+      "file": "chapters/basic/04_material_chemistry_biology.tex"
+    },
+    {
+      "id": "basic_4_4",
+      "subject": "BASIC",
+      "major": "材料・化学・バイオ",
+      "middle": "化学・物質",
+      "file": "chapters/basic/04_material_chemistry_biology.tex"
+    },
+    {
+      "id": "basic_5_0",
+      "subject": "BASIC",
+      "major": "環境・エネルギー・技術",
+      "middle": "科学技術史・社会",
+      "file": "chapters/basic/05_environment_energy_technology.tex"
+    },
+    {
+      "id": "basic_5_1",
+      "subject": "BASIC",
+      "major": "環境・エネルギー・技術",
+      "middle": "環境・持続可能性",
+      "file": "chapters/basic/05_environment_energy_technology.tex"
+    },
+    {
+      "id": "basic_5_2",
+      "subject": "BASIC",
+      "major": "環境・エネルギー・技術",
+      "middle": "エネルギー",
+      "file": "chapters/basic/05_environment_energy_technology.tex"
+    },
+    {
+      "id": "basic_5_3",
+      "subject": "BASIC",
+      "major": "環境・エネルギー・技術",
+      "middle": "品質・統計・計測",
+      "file": "chapters/basic/05_environment_energy_technology.tex"
+    },
+    {
+      "id": "basic_5_4",
+      "subject": "BASIC",
+      "major": "環境・エネルギー・技術",
+      "middle": "環境・公害",
+      "file": "chapters/basic/05_environment_energy_technology.tex"
+    },
+    {
+      "id": "basic_5_6",
+      "subject": "BASIC",
+      "major": "環境・エネルギー・技術",
+      "middle": "知的財産・制度",
+      "file": "chapters/basic/05_environment_energy_technology.tex"
+    },
+    {
+      "id": "apt_0",
+      "subject": "APT",
+      "major": "技術士法・義務責務",
+      "middle": "技術士法・義務責務",
+      "file": "chapters/aptitude/01_engineer_act.tex"
+    },
+    {
+      "id": "apt_1",
+      "subject": "APT",
+      "major": "研究・情報倫理",
+      "middle": "研究・情報倫理",
+      "file": "chapters/aptitude/06_research_information_ethics.tex"
+    },
+    {
+      "id": "apt_2",
+      "subject": "APT",
+      "major": "環境・持続可能性",
+      "middle": "環境・持続可能性",
+      "file": "chapters/aptitude/05_environment_sustainability.tex"
+    },
+    {
+      "id": "apt_3",
+      "subject": "APT",
+      "major": "安全・リスク",
+      "middle": "安全・リスク",
+      "file": "chapters/aptitude/04_safety_risk.tex"
+    },
+    {
+      "id": "apt_4",
+      "subject": "APT",
+      "major": "コンプライアンス・説明責任",
+      "middle": "コンプライアンス・説明責任",
+      "file": "chapters/aptitude/03_compliance_accountability.tex"
+    },
+    {
+      "id": "apt_5",
+      "subject": "APT",
+      "major": "技術者倫理・意思決定",
+      "middle": "技術者倫理・意思決定",
+      "file": "chapters/aptitude/02_engineering_ethics.tex"
+    },
+    {
+      "id": "manual_78",
+      "subject": "APT",
+      "major": "コンプライアンス・説明責任",
+      "middle": "専門職・経営管理・内部統制",
+      "file": "chapters/aptitude/03_compliance_accountability.tex"
+    },
+    {
+      "id": "manual_79",
+      "subject": "APT",
+      "major": "安全・リスク",
+      "middle": "インフラ維持管理",
+      "file": "chapters/aptitude/04_safety_risk.tex"
+    },
+    {
+      "id": "manual_80",
+      "subject": "APT",
+      "major": "技術と社会・科学技術政策",
+      "middle": "AIと社会変革",
+      "file": "chapters/aptitude/07_science_technology_society.tex"
+    }
+  ]
+}

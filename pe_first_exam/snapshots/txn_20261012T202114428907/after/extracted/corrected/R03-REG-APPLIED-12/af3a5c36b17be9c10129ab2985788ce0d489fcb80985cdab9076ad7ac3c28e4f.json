@@ -1,0 +1,45 @@
+{
+  "stem": "物質ごとの密度・揮発性・反応性を比較する。",
+  "conditions": {
+    "判断対象": "物質ごとの密度・揮発性・反応性を比較する。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "ベンゼン揮発・有毒蒸気",
+      "verdict": "選ばない候補",
+      "reason": "蒸発して有害な暴露を起こし得る。"
+    },
+    "2": {
+      "value": "ニトロベンゼンは水より軽い",
+      "verdict": "選ぶ候補",
+      "reason": "公開ICSCの水=1に対する比重は約1.2で、軽いという記述が逆。"
+    },
+    "3": {
+      "value": "過酸化ベンゾイル加熱・摩擦で爆発分解",
+      "verdict": "選ばない候補",
+      "reason": "弱いO-O結合の分解と発熱・感度を持ち、爆発的分解の危険がある。必ず爆発するという無条件則ではない。"
+    },
+    "4": {
+      "value": "アクリル酸は重合しやすい",
+      "verdict": "選ばない候補",
+      "reason": "ビニル結合の重合で発熱し、条件・阻害剤の管理が必要。"
+    },
+    "5": {
+      "value": "ジエチルエーテル揮発・引火",
+      "verdict": "選ばない候補",
+      "reason": "低沸点有機溶媒で蒸気が燃えやすい。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "過酸化物の加熱・摩擦を全条件で必ず爆発するとの全称にしない。各候補の出題時SDS・全条件は未照合、公開ICSCの対象性状を参照。",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_005.png"
+  ],
+  "question_id": "R03-REG-APPLIED-12",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "a18649992b4ec675911aad7335f3d989c58a08ac1c1d539729be2f147400d2ba",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

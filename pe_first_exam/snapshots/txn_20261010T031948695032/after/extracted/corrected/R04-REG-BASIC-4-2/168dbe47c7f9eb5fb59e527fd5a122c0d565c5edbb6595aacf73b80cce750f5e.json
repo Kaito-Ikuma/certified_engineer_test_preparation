@@ -1,0 +1,45 @@
+{
+  "stem": "原典で下線を付けた原子の酸化数が最小の物質を選ぶ。",
+  "conditions": {
+    "対象": "各肢に元素名を添え、下線対象を明記。",
+    "規則": "この組ではH=+1、O=−2、単体=0。全原子の酸化数の総和は化学種の電荷。"
+  },
+  "choices": {
+    "1": {
+      "value": "H2SのS",
+      "verdict": "条件に不一致",
+      "reason": "H2SのSは酸化数-2。選択対象の最小値ではない。"
+    },
+    "2": {
+      "value": "単体Mn",
+      "verdict": "条件に不一致",
+      "reason": "単体Mnは酸化数0。選択対象の最小値ではない。"
+    },
+    "3": {
+      "value": "MnO4⁻のMn",
+      "verdict": "条件に不一致",
+      "reason": "MnO4⁻のMnは酸化数+7。選択対象の最小値ではない。"
+    },
+    "4": {
+      "value": "NH3のN",
+      "verdict": "条件に一致",
+      "reason": "NH3のNは酸化数-3。比較した最小値である。"
+    },
+    "5": {
+      "value": "HNO3のN",
+      "verdict": "条件に不一致",
+      "reason": "HNO3のNは酸化数+5。選択対象の最小値ではない。"
+    }
+  },
+  "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/basic/page_014.png"
+  ],
+  "question_id": "R04-REG-BASIC-4-2",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "d95d1ffb86fb4e451948edad8e29a439bd5a504d13109a575d349423470bfe2f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

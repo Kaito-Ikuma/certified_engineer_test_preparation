@@ -1,0 +1,45 @@
+{
+  "stem": "ミラージ、測線方向、S波屈折、反射曲線、相関雑音を比較する。",
+  "conditions": {
+    "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+    "前提": "CMPの通常の双曲線近似と小オフセットの局所二次近似を分ける。"
+  },
+  "choices": {
+    "1": {
+      "value": "連続的な深度増速構造をミラージュ構造と呼ぶ",
+      "verdict": "適切",
+      "reason": "速度層境界を持つ折れ線モデルでなく、曲がる波線の走時曲線になる連続勾配モデルである。"
+    },
+    "2": {
+      "value": "屈折測線を等高線とほぼ垂直で一定勾配に配置するのが望ましい",
+      "verdict": "条件付きで適切",
+      "reason": "地質構造と地形を評価しやすい代表的な測線設計である。全地形・全目的でその配置が唯一又は可能とはいえない。"
+    },
+    "3": {
+      "value": "土質のS波屈折を比較的平坦な地形で多く行う",
+      "verdict": "適切",
+      "reason": "起振と受振及び地形補正の制約を考えた通常の調査条件である。"
+    },
+    "4": {
+      "value": "多層CMPの反射走時は近似的に放物線となる",
+      "verdict": "条件付きで適切",
+      "reason": "通常は有効速度を用いる双曲線で近似する。小オフセットなら双曲線の二次展開は放物線となるため、その条件を除外せず公式判断と分ける。"
+    },
+    "5": {
+      "value": "CMP重合がランダムとコヒーレント雑音の抑制に貢献する",
+      "verdict": "条件付きで適切",
+      "reason": "適切なNMOで反射波をそろえ、異なるmoveoutの多重反射等は重合で弱められる。反射と同じmoveoutの相関雑音まで必ず消えるわけではない。"
+    }
+  },
+  "figures": "図なし。文章又は用語の五候補を画像照合。",
+  "ambiguity": "放物線は小オフセットの局所近似として成立する。公式4を一般走時式の比較として保持し範囲不足を残す。CMPによる相関雑音抑制もmoveoutの差に依存する。",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_011.png"
+  ],
+  "question_id": "R05-REG-APPLIED-32",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "6acaaa37130ffb0367a6ab84ee15c37d4bcd6093569cc8cf362fb19aa2ef97bf",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

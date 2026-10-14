@@ -1,0 +1,45 @@
+{
+  "stem": "電極による比抵抗測定とコイルによる電磁誘導を区別する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "電気的接触を持つ電極測定と送受信ループの誘導測定を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "接地抵抗",
+      "verdict": "適切",
+      "reason": "地盤へ電流を流す電極の接触抵抗が送信と測定条件へ影響する。"
+    },
+    "2": {
+      "value": "ウェンナー法",
+      "verdict": "適切",
+      "reason": "等間隔四電極の比抵抗配置である。"
+    },
+    "3": {
+      "value": "見掛け比抵抗",
+      "verdict": "適切",
+      "reason": "測ったV/Iへ配置の幾何係数を掛けた等価半空間の抵抗率である。"
+    },
+    "4": {
+      "value": "電極",
+      "verdict": "適切",
+      "reason": "電流印加と電位差測定に用いる。"
+    },
+    "5": {
+      "value": "ループ・ループ法",
+      "verdict": "不適切",
+      "reason": "送受信コイルから地盤の誘導電流応答を測る手法で、電極を使う直流比抵抗測定の用語ではない。比抵抗を推定する目的自体は共通する。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_007.png"
+  ],
+  "question_id": "H24-REG-APPLIED-20",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "9737cfabbe7f3825bc03067b0be404f5d940648ba536d81598e75fd3d6c450d7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

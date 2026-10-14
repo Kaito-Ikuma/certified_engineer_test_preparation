@@ -1,0 +1,82 @@
+{
+  "time": "2026-10-13T12:06:26.285946+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_051_electromagnetic",
+  "question_ids": [
+    "H23-REG-APPLIED-02",
+    "H26-REG-APPLIED-05",
+    "R01-REG-APPLIED-07",
+    "R05-REG-APPLIED-08",
+    "H27-REG-APPLIED-07",
+    "H29-REG-APPLIED-09",
+    "R06-REG-APPLIED-07",
+    "R01-REG-APPLIED-08",
+    "R03-REG-APPLIED-03",
+    "R05-REG-APPLIED-04",
+    "R05-REG-APPLIED-09",
+    "R06-REG-APPLIED-08",
+    "R07-REG-APPLIED-07"
+  ],
+  "source_images": 11,
+  "initial_independent_matches": 13,
+  "initial_discrepancies": 0,
+  "corrected_verified": 5,
+  "partial": 8,
+  "related_pairs_added": 3,
+  "related_pairs_total": 344,
+  "primary_references_added": 15,
+  "concepts_added": 8,
+  "concept_total": 432,
+  "canonical_counts": {
+    "recorded_at": "2026-10-13T12:06:26.285946+09:00",
+    "registered": 1270,
+    "classification_verified": 1014,
+    "summary_verified": 992,
+    "corrected_verified": 637,
+    "corrected_partial": 355,
+    "solution_drafts": 992,
+    "solution_verified": 0,
+    "manual_required": 633,
+    "subject_drafts": {
+      "BASIC": 276,
+      "APT": 178,
+      "APPLIED": 538
+    }
+  },
+  "pdf": {
+    "pages": 1138,
+    "bytes": 5652123,
+    "visual_review_pages": [
+      16,
+      17,
+      576,
+      577,
+      578,
+      597,
+      598,
+      599,
+      600,
+      601,
+      602,
+      603,
+      604,
+      605,
+      606,
+      613,
+      614,
+      645,
+      646,
+      1113
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draft、初期監査、1270ラベル監査、LuaLaTeX/Biber成功。20頁の実画像確認。",
+  "risks": [
+    "Astra未査読、278問未執筆、全章と頻出分析は未完成。",
+    "Curie則の範囲、Meissner条件、表皮効果、原典の副殻語義、分極の測定条件、2023年電波法施行版は部分校正として保持。"
+  ],
+  "next": "S7_052地盤・土壌・維持管理25問。22原典画像確認・公式前独立保存、25一致。全1270問・全章・頻出分析まで継続。"
+}

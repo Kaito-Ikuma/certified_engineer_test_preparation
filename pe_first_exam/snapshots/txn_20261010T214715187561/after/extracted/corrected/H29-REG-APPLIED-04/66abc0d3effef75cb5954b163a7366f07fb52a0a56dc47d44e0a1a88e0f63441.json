@@ -1,0 +1,45 @@
+{
+  "stem": "正弦進行波の位相から波長と位相速度の組合せを選ぶ。",
+  "conditions": {
+    "波": "\\(y=A\\sin(\\omega t-kx)\\)、A・ω・kは正。",
+    "方向": "波長λと伝播速度vの適切な組合せ。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(\\lambda=2\\pi/\\omega,\\ v=2\\pi\\omega/k\\)",
+      "verdict": "不適切",
+      "reason": "波長の分母は波数であり、角振動数ではない。速度に余分な2πもある。"
+    },
+    "2": {
+      "value": "\\(\\lambda=2\\pi/\\omega,\\ v=2\\pi k/\\omega\\)",
+      "verdict": "不適切",
+      "reason": "波長は角振動数の逆数ではない。速度は逆数に加えて2πが余分。"
+    },
+    "3": {
+      "value": "\\(\\lambda=2\\pi/k,\\ v=2\\pi\\omega/k\\)",
+      "verdict": "不適切",
+      "reason": "波長は正しいが位相速度に余分な2πを掛けている。"
+    },
+    "4": {
+      "value": "\\(\\lambda=2\\pi/k,\\ v=k/\\omega\\)",
+      "verdict": "不適切",
+      "reason": "k/ωは速度の逆数となり、速度の次元が違う。"
+    },
+    "5": {
+      "value": "\\(\\lambda=2\\pi/k,\\ v=\\omega/k\\)",
+      "verdict": "最適",
+      "reason": "空間位相が2π増える距離と位相一定の移動から導かれ、両方正しい。"
+    }
+  },
+  "figures": "原典の条件・数式・単位・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_002.png"
+  ],
+  "question_id": "H29-REG-APPLIED-04",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "c2123d3b622ea25ddc2541fc93210c3fefd3be7473618f30eafde6cb48a7f89a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

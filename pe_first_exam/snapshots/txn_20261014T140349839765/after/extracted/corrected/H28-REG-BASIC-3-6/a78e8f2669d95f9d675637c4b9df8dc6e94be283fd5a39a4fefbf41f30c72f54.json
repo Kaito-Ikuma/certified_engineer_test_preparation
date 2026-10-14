@@ -1,0 +1,46 @@
+{
+  "stem": "平行な棒の共通伸びから応力比を求める。",
+  "conditions": {
+    "棒": "等長L、A棒のAA,EAとB棒のAB,EB。",
+    "端": "剛体板で共通軸変位、原典の平行配置。"
+  },
+  "choices": {
+    "1": {
+      "value": "AAEA/(ABEB)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 EA/EB と異なる。"
+    },
+    "2": {
+      "value": "ABEB/(AAEA)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 EA/EB と異なる。"
+    },
+    "3": {
+      "value": "ABEA/(AAEB)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 EA/EB と異なる。"
+    },
+    "4": {
+      "value": "EA/EB",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "5": {
+      "value": "EB/EA",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 EA/EB と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/basic/page_016.png",
+    "extracted/pages/H28/basic/page_017.png"
+  ],
+  "question_id": "H28-REG-BASIC-3-6",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "16",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "be1af6d3ac2987618376ce61ae995b8ea8a9f1170ebde457315f87fb23fa35cf",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

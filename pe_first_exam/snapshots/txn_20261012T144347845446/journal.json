@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-12T14:43:47+09:00",
+  "paths": [
+    "generated/questions/applied_science/geology/10_geophysical_exploration.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/geology/10_geophysical_exploration.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/geology/10_geophysical_exploration.tex": "3a86292374de6d3682661961cecd02f8382edf1bb8c3645e0b89591424d77d55"
+  }
+}

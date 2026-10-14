@@ -1,0 +1,45 @@
+{
+  "stem": "感染予防と、感染後に改ざんされたシステムの復旧を区別する。",
+  "conditions": {
+    "方向": "最も適切なもの。",
+    "時点": "R01年度。現在の推奨を出題当時へ無条件に転用しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "短い単純なパスワード。",
+      "verdict": "不適切",
+      "reason": "推測が容易となる。記憶の容易さはパスワード管理等で扱い、短く単純という選択を安全策にしない。"
+    },
+    "2": {
+      "value": "性能のためウイルス対策不要。",
+      "verdict": "不適切",
+      "reason": "性能だけを理由に必要な防御を除外するのは不適切。適切な製品・設定・更新と多層防御を検討する。"
+    },
+    "3": {
+      "value": "実在の企業名なら添付を信用。",
+      "verdict": "不適切",
+      "reason": "表示名や企業名は偽装でき、正規アカウントも侵害され得る。内容・送信経路を確認する。"
+    },
+    "4": {
+      "value": "使わないポートも開く。",
+      "verdict": "不適切",
+      "reason": "不要な待受サービスを増やすと攻撃面が広がる。必要なポートと送信・受信を限定する。"
+    },
+    "5": {
+      "value": "システム改ざんによって完全修復が難しい感染もある。",
+      "verdict": "適切",
+      "reason": "マルウェアの検出・除去と破壊・改ざん済みデータの回復は別である。信頼できるバックアップや再構築を要することがある。"
+    }
+  },
+  "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_006.png"
+  ],
+  "question_id": "R01-RET-BASIC-2-1",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "a4098811ba7cf39b9c4224930f9562615b1f30a668d1d7283af92a86bf502697",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

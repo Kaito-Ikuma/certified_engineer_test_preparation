@@ -1,0 +1,3738 @@
+\section{アッカーマン関数と入れ子再帰}
+
+\subsection{令和7年度 問2-6}
+\label{q:r07-reg-basic-2-6}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} アッカーマン関数の二段の再帰を展開してA(2,2)を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{基底：} A(0,n)=\allowbreak{}n+1\par
+
+\noindent\textbf{零引数：} A(m+1,0)=\allowbreak{}A(m,1)\par
+
+\noindent\textbf{再帰：} A(m+1,n+1)=\allowbreak{}A(m,A(m+1,n))\par
+
+\paragraph{問われる核心} アッカーマン関数の二段の再帰を展開してA(2,2)を求める。
+
+\paragraph{必要知識} 非負整数の再帰基底と入れ子の引数評価。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} A(1,0)=\allowbreak{}A(0,1)=\allowbreak{}2、A(1,n+1)=\allowbreak{}A(0,A(1,n))=\allowbreak{}A(1,n)+1なのでA(1,n)=\allowbreak{}n+2。A(2,0)=\allowbreak{}A(1,1)=\allowbreak{}3、A(2,n+1)=\allowbreak{}A(1,A(2,n))=\allowbreak{}A(2,n)+2。したがってA(2,1)=\allowbreak{}5、A(2,2)=\allowbreak{}7、1である。内側再帰の結果を外側の引数へ渡す。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} 7。A(1,n)=\allowbreak{}n+2、A(2,n)=\allowbreak{}2n+3より7である。\par
+
+\noindent\textbf{2：不適切} 8。各再帰段の増分2と初期3を適用した7ではない。\par
+
+\noindent\textbf{3：不適切} 9。n=\allowbreak{}3のA(2,3)=\allowbreak{}9でありnを一つ多くしている。\par
+
+\noindent\textbf{4：不適切} 10。再帰の初期値又は増分の誤りである。\par
+
+\noindent\textbf{5：不適切} 11。A(2,4)=\allowbreak{}11であり二段多く展開している。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:discrete:recursion]{第\ref*{theory:discrete:recursion}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{走査の不変条件・分岐と素数判定}
+
+\subsection{平成24年度 問2-5}
+\label{q:h24-reg-basic-2-5}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 最小値と最大値の更新をelseで結んだ走査の不変条件と失敗例を判定する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断対象：} 0<a\_i<1000、min初期1000、max初期0、elseによる排他的更新。\par
+
+\noindent\textbf{原典確認：} 図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。\par
+
+\paragraph{問われる核心} 最小値と最大値の更新をelseで結んだ走査の不変条件と失敗例を判定する。
+
+\paragraph{必要知識} 0<a\_i<1000、min初期1000、max初期0、elseによる排他的更新。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} min=\allowbreak{}1000から、より小さい値を毎回取り込むため、minは走査済みの最小値である。max更新は最小更新をしなかったときだけ行う。例えば入力2,1では最小更新を続けてmax=\allowbreak{}0となるが、1,2ならmax=\allowbreak{}2となる。minは常に最小、maxは失敗する場合があり2である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} min常に最小・max常に最大でない。1,2の順ならmax=\allowbreak{}2となるので常に失敗ではない。\par
+
+\noindent\textbf{2：適切} min常に最小・max失敗する場合あり。minの更新は常に行われ、maxはelseで初回等を飛ばす場合がある。\par
+
+\noindent\textbf{3：不適切} min失敗の場合あり・max常に最大でない。minは各接頭列の最小を保持する。maxも成功例がある。\par
+
+\noindent\textbf{4：不適切} minもmaxも失敗の場合あり。minは常に正しいので前半が違う。\par
+
+\noindent\textbf{5：不適切} min失敗の場合あり・max常に最大。minは正しくmaxは失敗例があるので両方違う。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:discrete:invariants]{第\ref*{theory:discrete:invariants}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成29年度 問2-3}
+\label{q:h29-reg-basic-2-3}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 試し割りで素数を判定する流れ図の継続条件と割り切れ判定を決める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断対象：} 因子対の平方根境界、継続判定、割り切れの向き。\par
+
+\noindent\textbf{原典確認：} 図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。\par
+
+\paragraph{問われる核心} 試し割りで素数を判定する流れ図の継続条件と割り切れ判定を決める。
+
+\paragraph{必要知識} 因子対の平方根境界、継続判定、割り切れの向き。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 合成数N=\allowbreak{}uvでは片方の因子が√N以下である。I=\allowbreak{}2からI≤√Nの間にN\%I=\allowbreak{}0を調べ、真なら非素数、偽ならIを増やす。範囲を越えたら素数である。5となる。平方根が整数のときも含めるため≤が必要である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} I≥√N・IがNで割り切れる。継続範囲が逆で割り算の向きも逆である。\par
+
+\noindent\textbf{2：不適切} I≥√N・NがIで割り切れない。範囲と非素数へ進む判定が逆である。\par
+
+\noindent\textbf{3：不適切} I≥√N・NがIで割り切れる。範囲が逆でN=\allowbreak{}9等を正しく調べられない。\par
+
+\noindent\textbf{4：不適切} I≤√N・NがIで割り切れない。割り切れない時に非素数と出すので逆である。\par
+
+\noindent\textbf{5：適切} I≤√N・NがIで割り切れる。2から平方根まで調べ、割り切れるなら非素数である。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:discrete:invariants]{第\ref*{theory:discrete:invariants}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{漸近上界と増大の階層}
+
+\subsection{令和3年度 問2-6}
+\label{q:r03-reg-basic-2-6}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 漸近上界の定義から多項式・対数・指数・二重指数の四記述を判定する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ア：} 5n\textasciicircum{}3+1=\allowbreak{}O(n\textasciicircum{}3)\par
+
+\noindent\textbf{イ：} n log2 n=\allowbreak{}O(n\textasciicircum{}1.5)\par
+
+\noindent\textbf{ウ：} n\textasciicircum{}3 3\textasciicircum{}n=\allowbreak{}O(4\textasciicircum{}n)\par
+
+\noindent\textbf{エ：} 2\textasciicircum{}(2\textasciicircum{}n)=\allowbreak{}O(10\textasciicircum{}(n\textasciicircum{}100))\par
+
+\paragraph{問われる核心} 漸近上界の定義から多項式・対数・指数・二重指数の四記述を判定する。
+
+\paragraph{必要知識} Oは十分大きいnで定数倍に抑えられる上界である。対数・多項式・指数の比を調べる。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} アは(5nの3乗+1)/nの3乗≤6。イのlog2(n)/√nは0へ、ウのnの3乗×(3/4)のn乗も0へ収束する。エは2の(2のn乗)と10の(nの100乗)の比較で、比の対数は2のn乗ln2−nの100乗ln10となり正無限大へ発散する。従って正正正誤、3である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 正・誤・誤・誤。対数と多項式、3/4の指数減衰を不適切に否定する。\par
+
+\noindent\textbf{2：不適切} 正・正・誤・正。ウは正でエは誤なので二か所が逆である。\par
+
+\noindent\textbf{3：適切} 正・正・正・誤。ア・イ・ウの比は有界で、エは発散する。\par
+
+\noindent\textbf{4：不適切} 正・誤・正・誤。イも正なので対数の成長を過大評価する。\par
+
+\noindent\textbf{5：不適切} 誤・誤・誤・正。四記述の判断が逆である。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:discrete:asymptotic]{第\ref*{theory:discrete:asymptotic}節}
+
+\par 参考：\cite{mit_discrete2015}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{二分探索木・挿入順の祖先制約}
+
+\subsection{令和元年度 問2-2}
+\label{q:r01-reg-basic-2-2}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 同じ二分探索木を作る挿入順を、部分木の祖先が先に入る条件から選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断対象：} 二分探索木の大小分岐と親子の挿入先行。\par
+
+\noindent\textbf{原典確認：} 図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。\par
+
+\paragraph{問われる核心} 同じ二分探索木を作る挿入順を、部分木の祖先が先に入る条件から選ぶ。
+
+\paragraph{必要知識} 二分探索木の大小分岐と親子の挿入先行。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 原典の根8、左5、右12、5の左右3/7、7の左6、12の左10を保つ。挿入順は親を子より先にし、別枝は前後してよい。1だけが12より前に10を置かず、7より前に6を置かない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} 8,5,7,12,3,10,6。12を10より、7を6より先に入れ、根8と左根5も維持する。\par
+
+\noindent\textbf{2：不適切} 8,5,7,10,3,12,6。10が12より先なので右部分木の根が10になる。\par
+
+\noindent\textbf{3：不適切} 8,5,6,12,3,10,7。6が7より先なので5の右部分木の根が6になる。\par
+
+\noindent\textbf{4：不適切} 8,5,3,10,7,12,6。10が12より先なので右部分木が変わる。\par
+
+\noindent\textbf{5：不適切} 8,5,3,12,6,10,7。6が7より先なので左側部分木が変わる。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:discrete:bst]{第\ref*{theory:discrete:bst}節}
+
+\par 参考：\cite{princeton_bst}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{信頼性と故障}
+
+\subsection{平成30年度 問2-2}
+\label{q:h30-reg-basic-2-2}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\section{IP・通信}
+
+\subsection{令和元年度 問2-5}
+\label{q:r01-reg-basic-2-5}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和4年度 問2-4}
+\label{q:r04-reg-basic-2-4}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\section{論理式・命題}
+
+\subsection{平成23年度 問2-3}
+\label{q:h23-reg-basic-2-3}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 否定上線の範囲を守り、与えられた論理式と等価な候補を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{対象式：} \(X=(\overline A+B)\overline{(A+\overline B)}\)\par
+
+\noindent\textbf{演算：} ＋は論理和、積は論理積。第2候補は和全体と第2項の二重の否定線をもつ。\par
+
+\paragraph{問われる核心} 否定の作用範囲と論理等価
+
+\paragraph{必要知識} ド・モルガン則、吸収律、二重否定、真理値表。
+
+\paragraph{考え方（査読待ち初稿）} \(\overline{A+\overline B}=\overline A B\)なので対象は\((\overline A+B)\overline A B=\overline A B\)である。第2候補も\(\overline{A\overline B+(A+\overline B)}=\overline{A+\overline B}=\overline A B\)となる。上線を個々の項に移す前に、和全体を覆う線を確定する。
+
+\paragraph{正答を選ぶ理由} 対象と第2候補はともにA=\allowbreak{}0、B=\allowbreak{}1のときだけ1となる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致しない候補} \((\overline A+B)+(\overline A B)\)。吸収律で否定A又はBとなり、A=\allowbreak{}B=\allowbreak{}0で1を返す。対象式は0である。\par
+
+\noindent\textbf{2：条件に一致する候補} \(\overline{A\overline B+\overline{\overline A B}}\)。二重否定とド・モルガン則により否定AかつBへ簡約され、対象式と一致する。\par
+
+\noindent\textbf{3：条件に一致しない候補} \((A\overline B)(\overline A B)\)。Aと否定Aの積が含まれ常に0である。A=\allowbreak{}0、B=\allowbreak{}1の対象値1を再現しない。\par
+
+\noindent\textbf{4：条件に一致しない候補} \(\overline{(\overline A+B)+(\overline A+B)}\)。同一項の和の否定なのでAかつ否定Bとなり、対象と逆の入力で1になる。\par
+
+\noindent\textbf{5：条件に一致しない候補} \((A+\overline B)(\overline A+\overline B)\)。分配・吸収で否定Bに簡約される。A=\allowbreak{}0、B=\allowbreak{}0で1だが対象は0である。\par
+
+\paragraph{再利用する考え方} 定義と条件から否定の作用範囲と論理等価を構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:boolean]{第\ref*{theory:information:boolean}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成25年度 問2-3}
+\label{q:h25-reg-basic-2-3}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 2つの積項にかかる否定を変形し、同じ論理関数を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{対象式：} \(X=\overline{(\overline A\overline B)}\,\overline{(\overline A+B)}\)\par
+
+\paragraph{問われる核心} ド・モルガン変形と吸収
+
+\paragraph{必要知識} 積と和の否定、変数の否定、相補律、吸収律。
+
+\paragraph{考え方（査読待ち初稿）} \(\overline{\overline A\overline B}=A+B\)、\(\overline{\overline A+B}=A\overline B\)である。したがって\(X=(A+B)(A\overline B)=A\overline B\)。第1候補が最初の変形式と一致する。
+
+\paragraph{正答を選ぶ理由} 対象はA=\allowbreak{}1、B=\allowbreak{}0でのみ1となり、第1候補と一致する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致する候補} \((A+B)(A\overline B)\)。対象の2つの否定をド・モルガン則で置き換えた式であり一致する。\par
+
+\noindent\textbf{2：条件に一致しない候補} \((A+B)(\overline A B)\)。否定AかつBとなり、A=\allowbreak{}1、B=\allowbreak{}0では0である。対象は1となる。\par
+
+\noindent\textbf{3：条件に一致しない候補} \((\overline A+B)(A\overline B)\)。展開するとAと否定A又はBと否定Bが同時に必要となり、常に0である。\par
+
+\noindent\textbf{4：条件に一致しない候補} \(\overline A\overline B+(A+\overline B)\)。A又は否定Bへ簡約され、A=\allowbreak{}B=\allowbreak{}0でも1となる。対象は0である。\par
+
+\noindent\textbf{5：条件に一致しない候補} \(\overline A\overline B+(\overline A+B)\)。否定A又はBへ簡約され、A=\allowbreak{}1、B=\allowbreak{}0で0になる。対象は1である。\par
+
+\paragraph{再利用する考え方} 定義と条件からド・モルガン変形と吸収を構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:boolean]{第\ref*{theory:information:boolean}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成25年度 問2-4}
+\label{q:h25-reg-basic-2-4}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 全100万件中の2語の出現数から、一方のみを含む件数の可能範囲を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{全集合：} 100万件\par
+
+\noindent\textbf{L：} 論理を含む65万件\par
+
+\noindent\textbf{I：} 情報を含む55万件\par
+
+\noindent\textbf{求める量：} Lを含みIを含まない件数k。\par
+
+\paragraph{問われる核心} 集合の重なりの上下限
+
+\paragraph{必要知識} 包含排除、共通部分は小さい方以下、和集合は全集合以下。
+
+\paragraph{考え方（査読待ち初稿）} 重なりを\(t=|L\cap I|\)とおく。和集合が100万を超えないので\(t\ge65+55-100=20\)万、一方\(t\le55\)万である。\(k=65-t\)より\(10\le k\le45\)万となる。
+
+\paragraph{正答を選ぶ理由} 包含排除から重なりの両端20万・55万を求めるとkは10〜45万となる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致しない候補} 0〜35万。重なりは最大55万なのでkの最小値は10万であり、0まで許す範囲は不正確である。\par
+
+\noindent\textbf{2：条件に一致しない候補} 0〜45万。最大値45万は合うが、最小値は10万である。\par
+
+\noindent\textbf{3：条件に一致しない候補} 0〜65万。最小値も最大値も実際の可能範囲より広い。\par
+
+\noindent\textbf{4：条件に一致する候補} 10〜45万。重なり20〜55万に対して65万から差し引いた範囲10〜45万に一致する。\par
+
+\noindent\textbf{5：条件に一致しない候補} 10〜65万。最小値は合うが、重なりは少なくとも20万あり、最大値は45万となる。\par
+
+\paragraph{再利用する考え方} 定義と条件から集合の重なりの上下限を構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:sets]{第\ref*{theory:information:sets}節}
+
+\paragraph{関連問題} \hyperref[q:r01-ret-basic-2-5]{R01-RET-BASIC-2-5}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成27年度 問2-2}
+\label{q:h27-reg-basic-2-2}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 住民CとDの賛否規則を論理式へ変換し、必ず成り立つ記述を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{値：} 賛成1、反対0。住民は必ずどちらかを決める。\par
+
+\noindent\textbf{C：} AとBの両方が賛成のときだけ反対。\par
+
+\noindent\textbf{D：} AとCの両方が賛成のときだけ反対。\par
+
+\paragraph{問われる核心} 自然言語のNANDと含意
+
+\paragraph{必要知識} 論理積の否定、代入、吸収律、十分条件。
+
+\paragraph{考え方（査読待ち初稿）} \(C=\overline{AB}\)、\(D=\overline{AC}\)である。代入して\(D=\overline A+AB=\overline A+B\)となる。A,Bの入力00,01,10,11に対するDは1,1,0,1であり、B=\allowbreak{}1の2行では必ずD=\allowbreak{}1となる。
+
+\paragraph{正答を選ぶ理由} B=\allowbreak{}1を代入するとD=否定A又は1=\allowbreak{}1となる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致しない候補} Cの賛成はAとBがともに賛成のときだけ。A=\allowbreak{}B=\allowbreak{}1ならC=\allowbreak{}0であり規則と逆である。\par
+
+\noindent\textbf{2：条件に一致しない候補} Cの賛成はAとBの賛否が異なるときだけ。A=\allowbreak{}B=\allowbreak{}0でもC=\allowbreak{}1なので、異なるときだけという限定は誤りである。\par
+
+\noindent\textbf{3：条件に一致しない候補} Dの賛成はAとBがともに賛成のときだけ。A=\allowbreak{}B=\allowbreak{}0でもD=\allowbreak{}1となり、両者賛成のときだけではない。\par
+
+\noindent\textbf{4：条件に一致しない候補} Dの賛成はAとBの賛否が異なるときだけ。A=\allowbreak{}B=\allowbreak{}1でもD=\allowbreak{}1であり、異なるときだけではない。\par
+
+\noindent\textbf{5：条件に一致する候補} Bが賛成すれば必ずDも賛成。Dは否定A又はBに簡約されるので、B=\allowbreak{}1ならAにかかわらずD=\allowbreak{}1となる。\par
+
+\paragraph{再利用する考え方} 定義と条件から自然言語のNANDと含意を構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:boolean]{第\ref*{theory:information:boolean}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成28年度 問2-2}
+\label{q:h28-reg-basic-2-2}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 2入力がともに1のときだけ0を出す真理値表に合う論理式を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{入力順：} (A,B)=\allowbreak{}(0,0),(0,1),(1,0),(1,1)\par
+
+\noindent\textbf{出力：} 1,1,1,0\par
+
+\paragraph{問われる核心} 真理値表とNAND
+
+\paragraph{必要知識} AND・OR・NOT・XORの表、ド・モルガン則。
+
+\paragraph{考え方（査読待ち初稿）} 表の0の行が\(AB=1\)の唯一の行なので、対象は\(\overline{AB}=\overline A+\overline B\)である。第2候補を選ぶ。
+
+\paragraph{正答を選ぶ理由} 第2候補の出力1110が4行すべてで一致する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致しない候補} \(A+B\)。ORは00で0となり指定表と異なる。\par
+
+\noindent\textbf{2：条件に一致する候補} \(\overline A+\overline B\)。ド・モルガン則でANDの否定となり、11以外の全行で1となる。\par
+
+\noindent\textbf{3：条件に一致しない候補} \(AB\)。ANDは11でのみ1となり、指定の否定と逆である。\par
+
+\noindent\textbf{4：条件に一致しない候補} \(\overline A B\)。01でしか1にならず、00や10の出力を再現しない。\par
+
+\noindent\textbf{5：条件に一致しない候補} \(A\overline B+\overline A B\)。XORは00で0となり、その行が指定表と異なる。\par
+
+\paragraph{再利用する考え方} 定義と条件から真理値表とNANDを構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:boolean]{第\ref*{theory:information:boolean}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成29年度 問2-4}
+\label{q:h29-reg-basic-2-4}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 4・100・400によるうるう年規則を、条件と動作の決定表へ対応させる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{規則：} 4で割り切れ100で割り切れない、又は400で割り切れる年がうるう年。\par
+
+\noindent\textbf{表条件3行：} 4、100、400でそれぞれ割り切れるか。\par
+
+\noindent\textbf{4列：} (N,−,−)、(Y,N,−)、(Y,Y,N)、(Y,Y,Y)。全候補の条件部は一致。\par
+
+\noindent\textbf{動作行：} うるう年／平年の排他的2行。候補値は表のうるう年実行をY、平年実行をNへ符号化したもの。\par
+
+\noindent\textbf{表記：} 原典のX=実行、−=不実行。条件部の−は不要又は不可能。\par
+
+\paragraph{問われる核心} 含意制約のある決定表
+
+\paragraph{必要知識} 400の倍数⇒100の倍数⇒4の倍数、AND・OR・NOT、条件の不要欄、動作の排他。
+
+\paragraph{考え方（査読待ち初稿）} 400の倍数なら100と4の倍数でもある。実現する4条件列は「4で不可」「4で可・100で不可」「100で可・400で不可」「400で可」であり、判定は平年、うるう年、平年、うるう年の順になる。論理式は\(L=F_4\overline{F_{100}}+F_{400}\)である。4列すべてをこの順に照合する。
+
+\paragraph{正答を選ぶ理由} 4条件列の判定NYNYをすべて満たす表を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致しない候補} 4条件列でのうるう年判定：NYYY（Y=うるう年、N=平年）。1900年は平年であるがうるう年としている。\par
+
+\noindent\textbf{2：条件に一致しない候補} 4条件列でのうるう年判定：NNYY（Y=うるう年、N=平年）。2024年はうるう年であるが平年としている。1900年は平年であるがうるう年としている。\par
+
+\noindent\textbf{3：条件に一致する候補} 4条件列でのうるう年判定：NYNY（Y=うるう年、N=平年）。4つの有効な条件列がすべて規則に一致する。\par
+
+\noindent\textbf{4：条件に一致しない候補} 4条件列でのうるう年判定：NYNN（Y=うるう年、N=平年）。2000年はうるう年であるが平年としている。\par
+
+\noindent\textbf{5：条件に一致しない候補} 4条件列でのうるう年判定：NNNY（Y=うるう年、N=平年）。2024年はうるう年であるが平年としている。\par
+
+\paragraph{再利用する考え方} 定義と条件から含意制約のある決定表を構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:decision]{第\ref*{theory:information:decision}節}
+
+\paragraph{関連問題} \hyperref[q:r03-reg-basic-2-4]{R03-REG-BASIC-2-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成30年度 問2-4}
+\label{q:h30-reg-basic-2-4}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 入力一致の検出を否定した論理式を、等価な排他的論理和へ変形する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{対象式：} \(X=\overline{\overline A\overline B+AB}\)\par
+
+\paragraph{問われる核心} XNORの否定とXOR
+
+\paragraph{必要知識} 同値検出、排他的論理和、ド・モルガン則、相補律。
+
+\paragraph{考え方（査読待ち初稿）} 対象は\(\overline{\overline A\overline B+AB}\)である。括弧内は入力が等しいとき1なので、その否定はXORである。ド・モルガン則で\((A+B)(\overline A+\overline B)=(A+B)\overline{AB}\)とも表せる。
+
+\paragraph{正答を選ぶ理由} 第5候補の出力0110が対象のXORと一致する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致しない候補} \((A+B)\overline{(A+B)}\)。任意の命題とその否定の積なので常に0である。\par
+
+\noindent\textbf{2：条件に一致しない候補} \((A+B)(\overline A B)\)。否定AかつBのみを表し、A=\allowbreak{}1、B=\allowbreak{}0のXOR出力1を再現しない。\par
+
+\noindent\textbf{3：条件に一致しない候補} \((AB)(\overline A\overline B)\)。Aと否定Aを同時に要求し、常に0である。\par
+
+\noindent\textbf{4：条件に一致しない候補} \((AB)\overline{(AB)}\)。命題ABとその否定の積で常に0である。\par
+
+\noindent\textbf{5：条件に一致する候補} \((A+B)\overline{(AB)}\)。ORが1かつANDが0という条件なので、入力が異なる2行でのみ1になり一致する。\par
+
+\paragraph{再利用する考え方} 定義と条件からXNORの否定とXORを構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:boolean]{第\ref*{theory:information:boolean}節}
+
+\paragraph{関連問題} \hyperref[q:r03-reg-basic-2-2]{R03-REG-BASIC-2-2}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和元年度再試験 問2-5}
+\label{q:r01-ret-basic-2-5}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 情報の出現数と情報・論理の共通部分から、論理を含まない件数の範囲を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{全集合：} 100万件\par
+
+\noindent\textbf{I：} 情報を含む65万件\par
+
+\noindent\textbf{共通部分：} 情報と論理の両方を含む55万件\par
+
+\noindent\textbf{求める量：} 論理を含まない件数k。\par
+
+\paragraph{問われる核心} 集合の部分情報と補集合の範囲
+
+\paragraph{必要知識} 集合の差、既知共通部分、未知領域の上下限。
+
+\paragraph{考え方（査読待ち初稿）} 情報を含むが論理を含まない部分は65-55=\allowbreak{}10万件である。情報外の35万件は、すべて論理を含む場合から一切含まない場合までありうる。よってkは10万から10+35=\allowbreak{}45万までである。H25の2語それぞれの出現数の条件と取り違えない。
+
+\paragraph{正答を選ぶ理由} 必ず論理を含まない10万件と、残りの可変0〜35万件の和である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致する候補} 10〜45万。情報を含み論理を含まない10万件に、情報を含まない35万件のうち0〜35万件が加わり、正確な範囲である。\par
+
+\noindent\textbf{2：条件に一致しない候補} 10〜55万。上限55万は、論理を含む55万件以上が既にあることに反する。\par
+
+\noindent\textbf{3：条件に一致しない候補} 10〜65万。上限65万は、論理を含む件数の既知下限55万を満たさない。\par
+
+\noindent\textbf{4：条件に一致しない候補} 45〜65万。下限45万は誤りであり、情報外の全35万件が論理を含むならk=\allowbreak{}10万である。\par
+
+\noindent\textbf{5：条件に一致しない候補} 45〜90万。上限90万と下限45万はいずれも既知の共通部分と情報のみの10万件から得る範囲に合わない。\par
+
+\paragraph{再利用する考え方} 定義と条件から集合の部分情報と補集合の範囲を構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:sets]{第\ref*{theory:information:sets}節}
+
+\paragraph{関連問題} \hyperref[q:h25-reg-basic-2-4]{H25-REG-BASIC-2-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和元年度再試験 問2-6}
+\label{q:r01-ret-basic-2-6}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 4要素と2要素の直積から2要素集合へ送る写像の総数を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{集合：} A=\{a,b,c,d\}、B=\{α,β\}、C=\{0,1\}。\par
+
+\noindent\textbf{対象：} 任意の写像f:A×B→C。単射・全射などの追加制約なし。\par
+
+\paragraph{問われる核心} 直積と写像の個数
+
+\paragraph{必要知識} 積の法則、定義域の濃度、写像・単射・全射の区別。
+
+\paragraph{考え方（査読待ち初稿）} 定義域A×Bの要素数は4×2=\allowbreak{}8である。各入力の像を0か1から独立に選べるので、写像は2\textsuperscript{8}=256通りである。同じ像が何回使われてもよく、像として両方を使う義務もない。
+
+\paragraph{正答を選ぶ理由} 8入力について各2通りの選択を積の法則で数え、256となる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致しない候補} 32。2\textsuperscript{5}であり、独立に像を選ぶ8要素を5要素と誤って数えている。\par
+
+\noindent\textbf{2：条件に一致しない候補} 64。2\textsuperscript{6}であり、直積を4+2=\allowbreak{}6とする和の計数と混同している。\par
+
+\noindent\textbf{3：条件に一致しない候補} 128。2\textsuperscript{7}であり、直積の8個すべての像の選択を数えていない。\par
+
+\noindent\textbf{4：条件に一致する候補} 256。直積には4×2=\allowbreak{}8個あり、各要素に2通りの像を独立に選べるので2\textsuperscript{8}である。\par
+
+\noindent\textbf{5：条件に一致しない候補} 512。2\textsuperscript{9}であり、独立の入力を1個多く数えている。\par
+
+\paragraph{再利用する考え方} 定義と条件から直積と写像の個数を構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:sets]{第\ref*{theory:information:sets}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和2年度 問2-2}
+\label{q:r02-reg-basic-2-2}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 3入力の真理値表を満たす論理式を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{入力順：} 000,001,010,011,100,101,110,111\par
+
+\noindent\textbf{出力：} 0,1,0,0,0,1,1,1\par
+
+\paragraph{問われる核心} 条件による論理関数の分解
+
+\paragraph{必要知識} 真理値表、場合分け、選択回路、論理積の和。
+
+\paragraph{考え方（査読待ち初稿）} y=\allowbreak{}0の4行を見ると出力はzであり、y=\allowbreak{}1の4行では出力はxである。場合分けを\(f=\overline y z+yx\)と書けば、第3候補となる。選択入力yが0ならz、1ならxを選ぶ2入力選択回路と解釈できる。
+
+\paragraph{正答を選ぶ理由} 第3候補はyの両値でそれぞれ指定表を満たし、全8行に一致する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致しない候補} \(xy+z\)。011でz=\allowbreak{}1により1となるが、指定表は0である。\par
+
+\noindent\textbf{2：条件に一致しない候補} \(\overline x y+\overline y\overline z\)。000で否定yかつ否定zが1になり、指定表の0と異なる。\par
+
+\noindent\textbf{3：条件に一致する候補} \(xy+\overline y z\)。y=\allowbreak{}0ではz、y=\allowbreak{}1ではxを返す。全8行の指定表を再現する。\par
+
+\noindent\textbf{4：条件に一致しない候補} \(xy+\overline{xy}\)。命題又はその否定なので常に1であり、000等の0を再現しない。\par
+
+\noindent\textbf{5：条件に一致しない候補} \(xy+\overline x z\)。011で否定xかつzが1となるほか、101で0となり、指定表と一致しない。\par
+
+\paragraph{再利用する考え方} 定義と条件から条件による論理関数の分解を構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:boolean]{第\ref*{theory:information:boolean}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和3年度 問2-2}
+\label{q:r03-reg-basic-2-2}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 入力が等しい2行の和を否定した式に等価な候補を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{対象式：} \(\overline{\overline A\overline B+AB}\)\par
+
+\paragraph{問われる核心} 否定の作用範囲とXOR
+
+\paragraph{必要知識} ド・モルガン則、相補律、二重否定。
+
+\paragraph{考え方（査読待ち初稿）} 対象は\(\overline{\overline A\overline B+AB}\)である。括弧内は入力が等しいとき1なので、その否定はXORである。ド・モルガン則で\((A+B)(\overline A+\overline B)=(A+B)\overline{AB}\)とも表せる。
+
+\paragraph{正答を選ぶ理由} 第2候補だけが入力01・10で1、00・11で0となる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致しない候補} \((A+B)\overline{(A+B)}\)。命題とその否定の積で常に0である。\par
+
+\noindent\textbf{2：条件に一致する候補} \((A+B)(\overline A+\overline B)\)。入力の少なくとも一方が1、かつ少なくとも一方が0という条件でありXORを表す。\par
+
+\noindent\textbf{3：条件に一致しない候補} \((AB)(\overline A\overline B)\)。Aと否定Aが同時に必要となり常に0である。\par
+
+\noindent\textbf{4：条件に一致しない候補} \((AB)\overline{(AB)}\)。ABとその否定の積で常に0である。\par
+
+\noindent\textbf{5：条件に一致しない候補} \((A+B)+(\overline A+\overline B)\)。A又は否定Aが含まれ常に1となり、00・11での指定出力0と異なる。\par
+
+\paragraph{再利用する考え方} 定義と条件から否定の作用範囲とXORを構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:boolean]{第\ref*{theory:information:boolean}節}
+
+\paragraph{関連問題} \hyperref[q:h30-reg-basic-2-4]{H30-REG-BASIC-2-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和3年度 問2-4}
+\label{q:r03-reg-basic-2-4}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 4・100・400によるうるう年規則を、条件と動作の決定表へ対応させる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{規則：} 4で割り切れ100で割り切れない、又は400で割り切れる年がうるう年。\par
+
+\noindent\textbf{表条件3行：} 4、100、400でそれぞれ割り切れるか。\par
+
+\noindent\textbf{4列：} (N,−,−)、(Y,N,−)、(Y,Y,N)、(Y,Y,Y)。全候補の条件部は一致。\par
+
+\noindent\textbf{動作行：} うるう年／平年の排他的2行。候補値は表のうるう年実行をY、平年実行をNへ符号化したもの。\par
+
+\noindent\textbf{表記：} 原典のX=実行、−=不実行。条件部の−は不要又は不可能。\par
+
+\paragraph{問われる核心} 含意制約のある決定表
+
+\paragraph{必要知識} 400の倍数⇒100の倍数⇒4の倍数、AND・OR・NOT、条件の不要欄、動作の排他。
+
+\paragraph{考え方（査読待ち初稿）} 400の倍数なら100と4の倍数でもある。実現する4条件列は「4で不可」「4で可・100で不可」「100で可・400で不可」「400で可」であり、判定は平年、うるう年、平年、うるう年の順になる。論理式は\(L=F_4\overline{F_{100}}+F_{400}\)である。4列すべてをこの順に照合する。
+
+\paragraph{正答を選ぶ理由} 4条件列の判定NYNYをすべて満たす表を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致しない候補} 4条件列でのうるう年判定：NYYY（Y=うるう年、N=平年）。1900年は平年であるがうるう年としている。\par
+
+\noindent\textbf{2：条件に一致する候補} 4条件列でのうるう年判定：NYNY（Y=うるう年、N=平年）。4つの有効な条件列がすべて規則に一致する。\par
+
+\noindent\textbf{3：条件に一致しない候補} 4条件列でのうるう年判定：NNYY（Y=うるう年、N=平年）。2024年はうるう年であるが平年としている。1900年は平年であるがうるう年としている。\par
+
+\noindent\textbf{4：条件に一致しない候補} 4条件列でのうるう年判定：NYNN（Y=うるう年、N=平年）。2000年はうるう年であるが平年としている。\par
+
+\noindent\textbf{5：条件に一致しない候補} 4条件列でのうるう年判定：NNNY（Y=うるう年、N=平年）。2024年はうるう年であるが平年としている。\par
+
+\paragraph{再利用する考え方} 定義と条件から含意制約のある決定表を構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:decision]{第\ref*{theory:information:decision}節}
+
+\paragraph{関連問題} \hyperref[q:h29-reg-basic-2-4]{H29-REG-BASIC-2-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和5年度 問2-5}
+\label{q:r05-reg-basic-2-5}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 2つの8ビット列を含む反復XORと最後のANDの結果を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{A：} 01011101\par
+
+\noindent\textbf{B：} 10101101\par
+
+\noindent\textbf{演算：} \(C=(((A\oplus B)\oplus B)\oplus A)\cdot A\)\par
+
+\noindent\textbf{定義：} XORとANDは各桁で独立に作用する。\par
+
+\paragraph{問われる核心} XORの自己逆性とビット列演算
+
+\paragraph{必要知識} XORの交換・結合律、自己相殺、ANDとゼロ。
+
+\paragraph{考え方（査読待ち初稿）} XORの結合律と\(X\oplus X=0\)により、括弧内は\(A\oplus A\oplus B\oplus B=0\)である。最後に\(0\cdot A=0\)なので8ビットとも0になる。直接計算しても11110000→01011101→00000000→00000000となる。
+
+\paragraph{正答を選ぶ理由} 同じビット列を2回XORすると消え、最後のANDでもゼロ列が保たれる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致する候補} 00000000。XORで同じBと同じAがそれぞれ相殺され、ゼロ列とAのANDもゼロ列となる。\par
+
+\noindent\textbf{2：条件に一致しない候補} 11111111。全ビット1ではなく、括弧内はゼロ列となる。\par
+
+\noindent\textbf{3：条件に一致しない候補} 10101101。入力Bを残す候補だが、Bは2回XORされて消える。\par
+
+\noindent\textbf{4：条件に一致しない候補} 01011101。入力Aを残す候補だが、括弧内でAも2回XORされて消える。\par
+
+\noindent\textbf{5：条件に一致しない候補} 11110000。A XOR Bの途中結果であり、その後のBとAのXORを省略している。\par
+
+\paragraph{再利用する考え方} 定義と条件からXORの自己逆性とビット列演算を構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:boolean]{第\ref*{theory:information:boolean}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和5年度 問2-6}
+\label{q:r05-reg-basic-2-6}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 3部分集合の交差数と和集合の外側の数から全集合の元の個数を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{各集合：} |A|=300、|B|=180、|C|=120。\par
+
+\noindent\textbf{2集合交差：} |A∩B|=60、|A∩C|=40、|B∩C|=20。\par
+
+\noindent\textbf{3集合交差：} |A∩B∩C|=10。\par
+
+\noindent\textbf{外側：} A∪B∪Cの補集合の元は400個。\par
+
+\paragraph{問われる核心} 3集合の包含排除と補集合
+
+\paragraph{必要知識} 重複計数、3重交差の符号、全集合の分割。
+
+\paragraph{考え方（査読待ち初稿）} 3集合の和集合は\(|A\cup B\cup C|=300+180+120-60-40-20+10=490\)である。3重交差の元は最初3回足し、2重交差として3回引いているので最後に1回加える。外側400を加えて全集合は890個となる。
+
+\paragraph{正答を選ぶ理由} 包含排除で和集合490、補集合400と互いに排反な和をとり890となる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致しない候補} 600。300+180+120の単純和であり、交差と外側400を扱っていない。\par
+
+\noindent\textbf{2：条件に一致しない候補} 720。包含排除と外側を加えた890に一致しない。各領域の計数が必要である。\par
+
+\noindent\textbf{3：条件に一致しない候補} 730。包含排除の和集合490と外側400の和に一致しない。\par
+
+\noindent\textbf{4：条件に一致する候補} 890。600-(60+40+20)+10=\allowbreak{}490に外側400を加えた890に一致する。\par
+
+\noindent\textbf{5：条件に一致しない候補} 1000。各集合の単純和600と外側400を加え、重複110を除いていない。\par
+
+\paragraph{再利用する考え方} 定義と条件から3集合の包含排除と補集合を構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:sets]{第\ref*{theory:information:sets}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和6年度 問2-2}
+\label{q:r06-reg-basic-2-2}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 実数の等式と不等式の2組について必要条件・十分条件を判定する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{領域：} x,yは実数。\par
+
+\noindent\textbf{ア：} x\textsuperscript{2}+y\textsuperscript{2}=0はx=\allowbreak{}y=\allowbreak{}0であるための条件。\par
+
+\noindent\textbf{イ：} x+y>2はx>1又はy>1であるための条件。\par
+
+\paragraph{問われる核心} 必要条件・十分条件と対偶
+
+\paragraph{必要知識} 実数平方の非負性、含意の方向、対偶、反例。
+
+\paragraph{考え方（査読待ち初稿）} 実数平方は非負なので和が0なら両者0、逆も成り立つ。イでx≤1かつy≤1ならx+y≤2なので、対偶によりx+y>2ならx>1又はy>1となる。逆はx=\allowbreak{}2、y=-100で成立しない。したがってアは必要十分、イは十分だが必要でない。
+
+\paragraph{正答を選ぶ理由} アは同値、イは和が2より大きい条件から一方向に含意し逆向きに反例がある。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致しない候補} ア必要十分／イ必要だが十分でない。アは合うが、イの含意の向きが逆である。\par
+
+\noindent\textbf{2：条件に一致する候補} ア必要十分／イ十分だが必要でない。実数平方の非負性でアは双方向に成立し、イは一方向のみ成立する。\par
+
+\noindent\textbf{3：条件に一致しない候補} ア十分だが必要でない／イ必要十分。アも双方向に成立し、イは逆向きに成立しないので両欄が異なる。\par
+
+\noindent\textbf{4：条件に一致しない候補} ア十分だが必要でない／イ必要だが十分でない。アは必要でもあり、イは十分側であるため両欄が異なる。\par
+
+\noindent\textbf{5：条件に一致しない候補} ア必要だが十分でない／イ十分だが必要でない。イは合うが、アは十分でもある。\par
+
+\paragraph{再利用する考え方} 定義と条件から必要条件・十分条件と対偶を構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:implication]{第\ref*{theory:information:implication}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{キャッシュ・CPU}
+
+\subsection{平成23年度 問2-4}
+\label{q:h23-reg-basic-2-4}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成25年度 問2-6}
+\label{q:h25-reg-basic-2-6}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成28年度 問2-4}
+\label{q:h28-reg-basic-2-4}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} ヒット率95\%のキャッシュと主記憶の平均アクセス時間に最近の値を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ヒット総時間：} 1.00ns\par
+
+\noindent\textbf{主記憶時間：} 100ns\par
+
+\noindent\textbf{ヒット率：} 0.95\par
+
+\paragraph{問われる核心} キャッシュの条件付き時間と確率重み付き平均
+
+\paragraph{必要知識} キャッシュの条件付き時間と確率重み付き平均。ヒット確率hに対する期待時間は\(E[T]=hT_{\rm hit}+(1-h)T_{\rm miss}\)である。与えられた1ns/100nsをヒット/ミス総時間とする簡略モデルで5.95nsとなる。主記憶100nsを照合後の追加時間とする逐次モデルなら1+0.05×100=\allowbreak{}6nsであり、それでも候補4が最近。どちらの式も定義を付けて使い、実装一般の厳密時間を5.95nsに固定しない。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} ヒット確率hに対する期待時間は\(E[T]=hT_{\rm hit}+(1-h)T_{\rm miss}\)である。与えられた1ns/100nsをヒット/ミス総時間とする簡略モデルで5.95nsとなる。主記憶100nsを照合後の追加時間とする逐次モデルなら1+0.05×100=\allowbreak{}6nsであり、それでも候補4が最近。どちらの式も定義を付けて使い、実装一般の厳密時間を5.95nsに固定しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 0.05ns。ミス率0.05という無次元数だけであり、アクセス時間になっていない。\par
+
+\noindent\textbf{2：不適切} 0.95ns。ヒット側0.95×1だけでミス側を忘れている。\par
+
+\noindent\textbf{3：不適切} 5.00ns。ミス側0.05×100だけでヒット側を忘れている。\par
+
+\noindent\textbf{4：適切} 5.95ns。ヒット/ミスの総時間を1/100nsとするモデルでは0.95+5=\allowbreak{}5.95ns。\par
+
+\noindent\textbf{5：不適切} 95.0ns。ヒット率を遅い主記憶に掛けており条件付き時間の対応が逆。\par
+
+\paragraph{再利用する考え方} 符号化の目的、情報量と物理的データ長、条件付き時間と平均時間を区別する。キャッシュの条件付き時間と確率重み付き平均の定義と適用条件を確認する。
+
+\paragraph{共通理論} \hyperref[theory:information:cache]{第\ref*{theory:information:cache}節}
+
+\par 参考：\cite{info_cache}。
+
+\paragraph{関連問題} \hyperref[q:r02-reg-basic-2-6]{R02-REG-BASIC-2-6}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成29年度 問2-6}
+\label{q:h29-reg-basic-2-6}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和2年度 問2-6}
+\label{q:r02-reg-basic-2-6}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} キャッシュ平均時間と主記憶だけに対する速度比を組として求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{キャッシュ：} 50ns\par
+
+\noindent\textbf{主記憶：} 450ns\par
+
+\noindent\textbf{ヒット率：} 0.90\par
+
+\paragraph{問われる核心} キャッシュの平均時間と逆数としての速度比
+
+\paragraph{必要知識} キャッシュの平均時間と逆数としての速度比。ヒット/ミス総時間を50/450nsとする簡略モデルでは平均90ns。同じデータを呼ぶ速さは時間に反比例するので、主記憶単独450nsとの比は450/90=\allowbreak{}5である。ミス時に50ns照合後450nsを追加するモデルなら95ns・約4.74倍となり、それでも組の候補5が最も近い。主記憶時間を総時間か追加ペナルティか先に定義する。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} ヒット/ミス総時間を50/450nsとする簡略モデルでは平均90ns。同じデータを呼ぶ速さは時間に反比例するので、主記憶単独450nsとの比は450/90=\allowbreak{}5である。ミス時に50ns照合後450nsを追加するモデルなら95ns・約4.74倍となり、それでも組の候補5が最も近い。主記憶時間を総時間か追加ペナルティか先に定義する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 45ns/2倍。45nsはヒット側0.9×50だけで、ミス45nsが抜ける。速度比も450/90とは違う。\par
+
+\noindent\textbf{2：不適切} 60ns/2倍。ヒット/ミス重み付き平均90nsとは一致せず、450/60=\allowbreak{}7.5で2倍でもない。\par
+
+\noindent\textbf{3：不適切} 60ns/5倍。60nsは平均に合わず、450/60=\allowbreak{}7.5なので5倍とも整合しない。\par
+
+\noindent\textbf{4：不適切} 90ns/2倍。時間90nsは簡略モデルで合うが速度比は450/90=\allowbreak{}5、2ではない。\par
+
+\noindent\textbf{5：適切} 90ns/5倍。0.9×50+0.1×450=\allowbreak{}90ns、450/90=\allowbreak{}5倍の両方が一致する。\par
+
+\paragraph{再利用する考え方} 符号化の目的、情報量と物理的データ長、条件付き時間と平均時間を区別する。キャッシュの平均時間と逆数としての速度比の定義と適用条件を確認する。
+
+\paragraph{共通理論} \hyperref[theory:information:cache]{第\ref*{theory:information:cache}節}
+
+\par 参考：\cite{info_cache}。
+
+\paragraph{関連問題} \hyperref[q:h28-reg-basic-2-4]{H28-REG-BASIC-2-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{数値表現}
+
+\subsection{平成23年度 問2-1}
+\label{q:h23-reg-basic-2-1}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 32ビットのIPv4アドレスを上位から8ビットずつ10進表示へ変換する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ビット列：} 11000000101010000001111110101100\par
+
+\noindent\textbf{区切り：} 11000000|10101000|00011111|10101100\par
+
+\paragraph{問われる核心} 32ビットのIPv4アドレスを上位から8ビットずつ10進表示へ変換する。
+
+\paragraph{必要知識} 2進位取りと8ビット塊の順序。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 11000000=\allowbreak{}192、10101000=\allowbreak{}168、00011111=\allowbreak{}31、10101100=\allowbreak{}172である。原典32ビットをこの順に分割し192.168.31.172、4となる。ビットの順と表示基数を同時に変えない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 172.31.192.168。8ビット塊の前後を入れ替えている。\par
+
+\noindent\textbf{2：不適切} 172.31.168.192。前後の塊と中央の順序が違う。\par
+
+\noindent\textbf{3：不適切} 172.31.255.255。全ビット1の塊はなく255にはならない。\par
+
+\noindent\textbf{4：適切} 192.168.31.172。192、168、31、172を上位から並べている。\par
+
+\noindent\textbf{5：不適切} 192.168.172.31。最後の31と172が逆である。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:information:radix]{第\ref*{theory:information:radix}節}, \hyperref[theory:discrete:bitcount]{第\ref*{theory:discrete:bitcount}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成24年度 問2-1}
+\label{q:h24-reg-basic-2-1}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 数値表現と誤差に関する5記述から、最も適切なものを選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{仮定：} 選択肢5は10進7桁精度で100000.0と0.01を加算する。\par
+
+\paragraph{問われる核心} 有限精度計算で誤差を生む原因
+
+\paragraph{必要知識} 有効桁数、丸め、桁落ち、情報落ち、指数範囲。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 有限精度は固定・浮動のどちらでも誤差を生じ得る。浮動小数点には有限の指数範囲もある。4の「改善できることが多い」は仮数精度を増す効果として適切である。5は大小の加算で小さい量が失われる例である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切な解答候補} 浮動小数点では桁あふれ・桁不足はない。指数の範囲は有限であり、上限・下限の範囲超過がある。\par
+
+\noindent\textbf{2：不適切な解答候補} 桁落ちは乗算又は除算で生じる。近い数の減算又は逆符号の加算で有効桁が相殺される現象である。\par
+
+\noindent\textbf{3：不適切な解答候補} 固定小数点なら誤差はない。小数桁数が有限なら表現できない値があり、演算後の丸めもある。\par
+
+\noindent\textbf{4：適切な解答候補} 単精度の丸め誤差は倍精度により改善できることが多い。通常は仮数の桁数が増え、同じ計算の表現・丸め誤差を小さくできる。ただし常に完全に解消するという主張ではない。\par
+
+\noindent\textbf{5：不適切な解答候補} 10進7桁なら100000.0+0.01に誤差はない。正確な100000.01には8桁の有効数字が必要で、7桁では0.01が保持されない。\par
+
+\paragraph{再利用する考え方} 表現・演算の丸め、相殺による桁落ち、大小の加算による情報落ち、範囲超過を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:error]{第\ref*{theory:information:error}節}
+
+\par 参考：\cite{goldberg1991}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成25年度 問2-5}
+\label{q:h25-reg-basic-2-5}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 0.85を二進小数4桁で切り捨て、その値を半分にして再度4桁で切り捨てる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{初期値：} 10進0.85\par
+
+\noindent\textbf{演算：} 二進小数点以下5桁目以降を各段階で切捨て。初回の格納値を2で除する。\par
+
+\noindent\textbf{空欄順：} 初回の二進表現／除算後の二進表現／除算後の十進値\par
+
+\paragraph{問われる核心} 有限二進小数の量子化と演算順
+
+\paragraph{必要知識} 二進小数の位取り、切捨てによる量子化。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 初回は \(\lfloor16\times0.85\rfloor/16=13/16=(0.1101)_2\)。これを半分にすると13/32=\allowbreak{}(0.01101)\textsubscript{2}である。4桁に切り捨てると6/16=\allowbreak{}(0.0110)\textsubscript{2}=0.375になる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切な解答候補} 0.1101／0.0101／0.375。除算後の0110を0101としている。0101の値も0.3125であり提示の0.375に合わない。\par
+
+\noindent\textbf{2：適切な解答候補} 0.1101／0.0110／0.375。13/16を半分にし、6/16へ切り捨てる両段階と一致する。\par
+
+\noindent\textbf{3：不適切な解答候補} 0.1101／0.0110／0.425。0.425は元の0.85を正確に半分にした値であり、段階ごとの切捨てを無視している。\par
+
+\noindent\textbf{4：不適切な解答候補} 0.1010／0.0101／0.375。初回は1101であり1010ではない。除算後の0101も誤りである。\par
+
+\noindent\textbf{5：不適切な解答候補} 0.1010／0.0101／0.425。初回と除算後のビットが誤りで、0.425も切捨て後の値ではない。\par
+
+\paragraph{再利用する考え方} 位取りの基数と、小数の有限表現が可能かどうかを区別する。小数は2倍操作で上位桁から求める。
+
+\paragraph{共通理論} \hyperref[theory:information:radix]{第\ref*{theory:information:radix}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成27年度 問2-1}
+\label{q:h27-reg-basic-2-1}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 二進計算機で0.01を100回加え、正しいプログラムでも結果が1と一致しない原因を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{入力：} 10進0.01\par
+
+\noindent\textbf{繰返し：} 100回加算。プログラムの誤りはない。\par
+
+\paragraph{問われる核心} 進数依存の表現誤差と累積
+
+\paragraph{必要知識} 有限二進小数の条件、入力と演算の丸め。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 0.01=\allowbreak{}1/100の既約分母には5が残り、二進有限小数にはならない。格納値は近似であり、加算の結果も有限桁へ丸められるので、100回の累積値が数学的な1と一致しないことがある。誤差の符号や実際の値は形式・演算順に依存する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切な解答候補} 桁落ち。ほぼ等しい量を減算して有効桁が失われる状況ではない。\par
+
+\noindent\textbf{2：不適切な解答候補} 情報落ち。著しく桁の異なる量を加算して小さい量が消える原因を主題としていない。\par
+
+\noindent\textbf{3：不適切な解答候補} オーバーフロー。1付近の合計が通常の浮動小数点の上限を超える状況ではない。\par
+
+\noindent\textbf{4：不適切な解答候補} アンダーフロー。0.01は通常の浮動小数点の最小正数より十分大きい。\par
+
+\noindent\textbf{5：適切な解答候補} 丸め誤差。0.01は二進有限小数で表せず、入力表現と各加算の丸めが蓄積し得る。\par
+
+\paragraph{再利用する考え方} 表現・演算の丸め、相殺による桁落ち、大小の加算による情報落ち、範囲超過を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:error]{第\ref*{theory:information:error}節}
+
+\par 参考：\cite{goldberg1991}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成27年度 問2-3}
+\label{q:h27-reg-basic-2-3}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 10進0.1を二進小数で小数点以下16桁まで表す。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{入力：} 10進0.1\par
+
+\noindent\textbf{表示桁：} 小数点以下16桁\par
+
+\paragraph{問われる核心} 循環二進小数の生成
+
+\paragraph{必要知識} 小数の反復2倍法、分母と有限展開。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 小数を順に2倍し整数部を取り出す。0.1→0.2→0.4→0.8→1.6で最初の4桁は0001である。残り0.6から1.2、0.4、0.8、1.6と循環し、0011の反復が現れる。16桁は0001100110011001となる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切な解答候補} 0.0000011001100110。先頭の1が6桁目にあり、0.1の4桁目と合わない。\par
+
+\noindent\textbf{2：不適切な解答候補} 0.0000110011001100。先頭の1が5桁目で、0.1の表現を一桁右へずらした形である。\par
+
+\noindent\textbf{3：適切な解答候補} 0.0001100110011001。反復2倍の出力0001100110011001に一致する。\par
+
+\noindent\textbf{4：不適切な解答候補} 0.0011001100110011。先頭の1が3桁目で、0.1の表現を一桁左へずらした形である。\par
+
+\noindent\textbf{5：不適切な解答候補} 0.0110011001100110。先頭の1が2桁目で、0.1より大きい値である。\par
+
+\paragraph{再利用する考え方} 位取りの基数と、小数の有限表現が可能かどうかを区別する。小数は2倍操作で上位桁から求める。
+
+\paragraph{共通理論} \hyperref[theory:information:radix]{第\ref*{theory:information:radix}節}
+
+\paragraph{関連問題} \hyperref[q:r06-reg-basic-2-1]{R06-REG-BASIC-2-1}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成27年度 問2-4}
+\label{q:h27-reg-basic-2-4}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 10進表記で2 TBの記憶容量を、問題が定義する2進表記のTBへ換算する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{容量：} 2×10\textasciicircum{}12 B\par
+
+\noindent\textbf{単位：} 設問は10進1 TB=\allowbreak{}10\textasciicircum{}12 B、2進1 TB=\allowbreak{}2\textasciicircum{}40 Bと定義する。現行の明確な名称では後者は1 TiBである。\par
+
+\paragraph{問われる核心} 情報容量の接頭語と単位換算
+
+\paragraph{必要知識} TBとTiBの単位量、情報量保存。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 容量をバイトへ統一してから新単位で割る。\(2\times10^{12}/2^{40}=2(1000/1024)^4\simeq1.819\)であり、約1.8となる。原典の「2進のTB」を現在の用語で明確に区別すればTiBである。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切な解答候補} 1.8 TB。2×10\textasciicircum{}12/2\textasciicircum{}40≈1.819を小数1桁へ概算した値に一致する。\par
+
+\noindent\textbf{2：不適切な解答候補} 2.0 TB。2.0 TBは2×10\textasciicircum{}12/2\textasciicircum{}40≈1.819の概算と合わない。単位当たりの容量が大きくなるので数値は2より小さくなる。\par
+
+\noindent\textbf{3：不適切な解答候補} 2.1 TB。2.1 TBは2×10\textasciicircum{}12/2\textasciicircum{}40≈1.819の概算と合わない。単位当たりの容量が大きくなるので数値は2より小さくなる。\par
+
+\noindent\textbf{4：不適切な解答候補} 2.2 TB。2.2 TBは2×10\textasciicircum{}12/2\textasciicircum{}40≈1.819の概算と合わない。単位当たりの容量が大きくなるので数値は2より小さくなる。\par
+
+\noindent\textbf{5：不適切な解答候補} 2.3 TB。2.3 TBは2×10\textasciicircum{}12/2\textasciicircum{}40≈1.819の概算と合わない。単位当たりの容量が大きくなるので数値は2より小さくなる。\par
+
+\paragraph{再利用する考え方} 単位あたりのバイト数を先に定義し、容量の数値だけを比べない。
+
+\paragraph{共通理論} \hyperref[theory:information:capacity]{第\ref*{theory:information:capacity}節}
+
+\par 参考：\cite{nist_binary_prefix}。
+
+\paragraph{関連問題} \hyperref[q:r01-ret-basic-2-3]{R01-RET-BASIC-2-3}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成28年度 問2-3}
+\label{q:h28-reg-basic-2-3}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 11を例に、2で割った余りを配列へ格納する二進変換流れ図の分岐と更新を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{初期化：} I=-1、Nは自然数。\par
+
+\noindent\textbf{操作：} Nと0を比較。継続側でIを1増やしてA[I]へNを2で割った余りを保存し、Nを更新。終了側でA[I]からA[0]を逆順表示。\par
+
+\noindent\textbf{空欄順：} アは継続条件、イは終了条件、ウはNの更新。\par
+
+\paragraph{問われる核心} 整数商と余りによる基数変換
+
+\paragraph{必要知識} 除法の等式N=\allowbreak{}2q+r、0≤r<2、終端条件、配列の順序。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} Nを11→5→2→1→0と整数商で更新し、余りは1、1、0、1の順で得る。格納順は下位桁からなので逆順表示により1011となる。正のNで継続し、N=\allowbreak{}0で停止する。N=\allowbreak{}0を入力として許す実装ではゼロ表示の別処理が必要だが、例示の正の入力の空欄判定には影響しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切な解答候補} N>0／N=\allowbreak{}0／Nを2で割った商。正のNについて余りを保存し整数商へ更新、商0で終了する。\par
+
+\noindent\textbf{2：不適切な解答候補} N>0／N=\allowbreak{}0／Nを2で割った余り。余りをNへ戻すと桁の取り出しが進まず、余り1では停止しない。\par
+
+\noindent\textbf{3：不適切な解答候補} N=\allowbreak{}0／N>0／Nを2で割った商。初期値11が正の段階で終了し、桁を生成できない。\par
+
+\noindent\textbf{4：不適切な解答候補} N=\allowbreak{}0／N>0／Nを2で割った余り。分岐が逆であり、更新も桁を消去する商ではない。\par
+
+\noindent\textbf{5：不適切な解答候補} N>0／N=\allowbreak{}0／2N。Nを増加させるため正の入力で終了に近づかない。\par
+
+\paragraph{再利用する考え方} 位取りの基数と、小数の有限表現が可能かどうかを区別する。小数は2倍操作で上位桁から求める。
+
+\paragraph{共通理論} \hyperref[theory:information:radix]{第\ref*{theory:information:radix}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成29年度 問2-2}
+\label{q:h29-reg-basic-2-2}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 13.0を、符号1ビット・指数8ビット・仮数23ビットの指定浮動小数点形式へ変換する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{数値：} 13.0\par
+
+\noindent\textbf{表現：} 正規化値±2\textasciicircum{}a(1+x)、0≤x<1。指数はa+127、仮数はxの二進小数23桁。\par
+
+\noindent\textbf{原典の導入範囲：} 絶対値2\textasciicircum{}-126以上2\textasciicircum{}128未満。IEEE形式全体の表現可能範囲と完全には同一でないが、13.0には影響しない。\par
+
+\noindent\textbf{原典例：} -6.5=-2\textasciicircum{}2(1+0.625)、符号1、指数129。\par
+
+\noindent\textbf{空欄順：} 符号／指数／仮数\par
+
+\paragraph{問われる核心} 正規化と指数バイアス
+
+\paragraph{必要知識} 単精度の3欄、指数バイアス127、正規化先頭1の省略。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(13=8(1+0.625)=2^3(1+0.101_2)\)である。正なので符号0、指数欄は3+127=\allowbreak{}130=\allowbreak{}(10000010)\textsubscript{2}。仮数欄は先頭の暗黙の1を保存せず、0.625の小数桁101に0を20個加えた23ビットとなる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切な解答候補} 1／10000001／10010000000000000000000。13.0は正なので符号は0である。指数3へ127を加えると130で、10000010になる。0.625=\allowbreak{}(0.101)\textsubscript{2}なので仮数部は101の後に0が20個である。\par
+
+\noindent\textbf{2：不適切な解答候補} 1／10000010／10100000000000000000000。13.0は正なので符号は0である。\par
+
+\noindent\textbf{3：不適切な解答候補} 0／10000001／10100000000000000000000。指数3へ127を加えると130で、10000010になる。\par
+
+\noindent\textbf{4：適切な解答候補} 0／10000010／10100000000000000000000。符号・指数・仮数の3欄がすべて一致する。\par
+
+\noindent\textbf{5：不適切な解答候補} 0／10000001／10100000000000000000000。指数3へ127を加えると130で、10000010になる。\par
+
+\paragraph{再利用する考え方} 先頭の1を除く仮数部と、バイアスを加えた指数部を別々に作る。符号を最後まで追跡する。
+
+\paragraph{共通理論} \hyperref[theory:information:floating]{第\ref*{theory:information:floating}節}
+
+\par 参考：\cite{oracle_single}。
+
+\paragraph{関連問題} \hyperref[q:r01-ret-basic-2-4]{R01-RET-BASIC-2-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成30年度 問2-3}
+\label{q:h30-reg-basic-2-3}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 01011の5桁を固定して、2の補数と1の補数を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{対象二進数：} 01011\par
+
+\noindent\textbf{桁数：} 5\par
+
+\noindent\textbf{定義：} 2の補数は2\textasciicircum{}k-X、1の補数は(2\textasciicircum{}k-1)-X。\par
+
+\noindent\textbf{空欄順：} 2の補数／1の補数\par
+
+\paragraph{問われる核心} 桁数を固定した補数と負数表現
+
+\paragraph{必要知識} 基数の補数と基数から1を引いた補数、固定桁幅。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 01011の十進値は11である。2の補数は32-11=\allowbreak{}21、10101となる。1の補数は31-11=\allowbreak{}20、10100となる。後者は各ビットを反転し、前者はそこへ1を加えても得られる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切な解答候補} 11011／10100。2の補数は10101であり、11011ではない。\par
+
+\noindent\textbf{2：不適切な解答候補} 10101／11011。1の補数は10100であり、11011ではない。\par
+
+\noindent\textbf{3：適切な解答候補} 10101／10100。2の補数と1の補数がともに一致する。\par
+
+\noindent\textbf{4：不適切な解答候補} 10100／10101。2の補数は10101であり、10100ではない。1の補数は10100であり、10101ではない。\par
+
+\noindent\textbf{5：不適切な解答候補} 11011／11011。2の補数は10101であり、11011ではない。1の補数は10100であり、11011ではない。\par
+
+\paragraph{再利用する考え方} 桁数を固定してから補数を計算する。1の補数はビット反転、2の補数はさらに1を加える。
+
+\paragraph{共通理論} \hyperref[theory:information:complement]{第\ref*{theory:information:complement}節}
+
+\paragraph{関連問題} \hyperref[q:r02-reg-basic-2-4]{R02-REG-BASIC-2-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和元年度 問2-1}
+\label{q:r01-reg-basic-2-1}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 10進11.5を二進数と16進数へ変換する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{入力：} 11.5\par
+
+\noindent\textbf{空欄順：} 二進数／16進数\par
+
+\paragraph{問われる核心} 二進と16進の位取り対応
+
+\paragraph{必要知識} 基数の位取り、4ビットと16進1桁の対応。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 11=\allowbreak{}2\textsuperscript{3}+2+1より整数部1011、0.5=\allowbreak{}2\textsuperscript{-1}より小数部.1となる。16進整数11はBで、小数0.5を16倍すると8なのでB.8である。二進小数.1を.1000と4ビットにそろえて8へ変換してもよい。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切な解答候補} 1011.1／B.8。11=\allowbreak{}8+2+1、0.5=\allowbreak{}1/2であり、16進では11=\allowbreak{}B、0.5=\allowbreak{}8/16になる。\par
+
+\noindent\textbf{2：不適切な解答候補} 1011.0／C.8。整数12を表すCと、小数0を表す.0が誤りである。\par
+
+\noindent\textbf{3：不適切な解答候補} 1011.1／B.5。16進.5は5/16であり、十進0.5とは異なる。\par
+
+\noindent\textbf{4：不適切な解答候補} 1011.0／B.8。二進.0は小数0であり、0.5を失っている。\par
+
+\noindent\textbf{5：不適切な解答候補} 1011.1／C.5。整数C=\allowbreak{}12、小数.5=\allowbreak{}5/16の両方が異なる。\par
+
+\paragraph{再利用する考え方} 位取りの基数と、小数の有限表現が可能かどうかを区別する。小数は2倍操作で上位桁から求める。
+
+\paragraph{共通理論} \hyperref[theory:information:radix]{第\ref*{theory:information:radix}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和元年度再試験 問2-3}
+\label{q:r01-ret-basic-2-3}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 10進表記で2 TBの記憶容量を、問題が定義する2進表記のTBへ換算する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{容量：} 2×10\textasciicircum{}12 B\par
+
+\noindent\textbf{単位：} 設問は10進1 TB=\allowbreak{}10\textasciicircum{}12 B、2進1 TB=\allowbreak{}2\textasciicircum{}40 Bと定義する。現行の明確な名称では後者は1 TiBである。\par
+
+\paragraph{問われる核心} 情報容量の接頭語と単位換算
+
+\paragraph{必要知識} TBとTiBの単位量、情報量保存。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 容量をバイトへ統一してから新単位で割る。\(2\times10^{12}/2^{40}=2(1000/1024)^4\simeq1.819\)であり、約1.8となる。原典の「2進のTB」を現在の用語で明確に区別すればTiBである。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切な解答候補} 1.6 TB。1.6 TBは2×10\textasciicircum{}12/2\textasciicircum{}40≈1.819の概算と合わない。単位当たりの容量が大きくなるので数値は2より小さくなる。\par
+
+\noindent\textbf{2：適切な解答候補} 1.8 TB。2×10\textasciicircum{}12/2\textasciicircum{}40≈1.819を小数1桁へ概算した値に一致する。\par
+
+\noindent\textbf{3：不適切な解答候補} 2.0 TB。2.0 TBは2×10\textasciicircum{}12/2\textasciicircum{}40≈1.819の概算と合わない。単位当たりの容量が大きくなるので数値は2より小さくなる。\par
+
+\noindent\textbf{4：不適切な解答候補} 2.2 TB。2.2 TBは2×10\textasciicircum{}12/2\textasciicircum{}40≈1.819の概算と合わない。単位当たりの容量が大きくなるので数値は2より小さくなる。\par
+
+\noindent\textbf{5：不適切な解答候補} 2.4 TB。2.4 TBは2×10\textasciicircum{}12/2\textasciicircum{}40≈1.819の概算と合わない。単位当たりの容量が大きくなるので数値は2より小さくなる。\par
+
+\paragraph{再利用する考え方} 単位あたりのバイト数を先に定義し、容量の数値だけを比べない。
+
+\paragraph{共通理論} \hyperref[theory:information:capacity]{第\ref*{theory:information:capacity}節}
+
+\par 参考：\cite{nist_binary_prefix}。
+
+\paragraph{関連問題} \hyperref[q:h27-reg-basic-2-4]{H27-REG-BASIC-2-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和元年度再試験 問2-4}
+\label{q:r01-ret-basic-2-4}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 13.0を、符号1ビット・指数8ビット・仮数23ビットの指定浮動小数点形式へ変換する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{数値：} 13.0\par
+
+\noindent\textbf{表現：} 正規化値±2\textasciicircum{}a(1+x)、0≤x<1。指数はa+127、仮数はxの二進小数23桁。\par
+
+\noindent\textbf{原典の導入範囲：} 絶対値2\textasciicircum{}-126以上2\textasciicircum{}128未満。IEEE形式全体の表現可能範囲と完全には同一でないが、13.0には影響しない。\par
+
+\noindent\textbf{原典例：} -6.5=-2\textasciicircum{}2(1+0.625)、符号1、指数129。\par
+
+\noindent\textbf{空欄順：} 符号／指数／仮数\par
+
+\paragraph{問われる核心} 正規化と指数バイアス
+
+\paragraph{必要知識} 単精度の3欄、指数バイアス127、正規化先頭1の省略。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(13=8(1+0.625)=2^3(1+0.101_2)\)である。正なので符号0、指数欄は3+127=\allowbreak{}130=\allowbreak{}(10000010)\textsubscript{2}。仮数欄は先頭の暗黙の1を保存せず、0.625の小数桁101に0を20個加えた23ビットとなる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切な解答候補} 1／10000010／10100000000000000000000。13.0は正なので符号は0である。\par
+
+\noindent\textbf{2：不適切な解答候補} 1／10000001／10100000000000000000000。13.0は正なので符号は0である。指数3へ127を加えると130で、10000010になる。\par
+
+\noindent\textbf{3：不適切な解答候補} 0／10000001／10100000000000000000000。指数3へ127を加えると130で、10000010になる。\par
+
+\noindent\textbf{4：不適切な解答候補} 0／10000001／10100000000000000000000。指数3へ127を加えると130で、10000010になる。\par
+
+\noindent\textbf{5：適切な解答候補} 0／10000010／10100000000000000000000。符号・指数・仮数の3欄がすべて一致する。\par
+
+\paragraph{再利用する考え方} 先頭の1を除く仮数部と、バイアスを加えた指数部を別々に作る。符号を最後まで追跡する。
+
+\paragraph{共通理論} \hyperref[theory:information:floating]{第\ref*{theory:information:floating}節}
+
+\par 参考：\cite{oracle_single}。
+
+\paragraph{関連問題} \hyperref[q:h29-reg-basic-2-2]{H29-REG-BASIC-2-2}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和2年度 問2-4}
+\label{q:r02-reg-basic-2-4}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 100110の6桁を固定して、2の補数と1の補数を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{対象二進数：} 100110\par
+
+\noindent\textbf{桁数：} 6\par
+
+\noindent\textbf{定義：} 2の補数は2\textasciicircum{}k-X、1の補数は(2\textasciicircum{}k-1)-X。\par
+
+\noindent\textbf{空欄順：} 2の補数／1の補数\par
+
+\paragraph{問われる核心} 桁数を固定した補数と負数表現
+
+\paragraph{必要知識} 基数の補数と基数から1を引いた補数、固定桁幅。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 100110の十進値は38である。2の補数は64-38=\allowbreak{}26、011010となる。1の補数は63-38=\allowbreak{}25、011001となる。後者は各ビットを反転し、前者はそこへ1を加えても得られる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切な解答候補} 000110／000101。2の補数は011010であり、000110ではない。1の補数は011001であり、000101ではない。\par
+
+\noindent\textbf{2：適切な解答候補} 011010／011001。2の補数と1の補数がともに一致する。\par
+
+\noindent\textbf{3：不適切な解答候補} 000111／000110。2の補数は011010であり、000111ではない。1の補数は011001であり、000110ではない。\par
+
+\noindent\textbf{4：不適切な解答候補} 011001／011010。2の補数は011010であり、011001ではない。1の補数は011001であり、011010ではない。\par
+
+\noindent\textbf{5：不適切な解答候補} 011000／011001。2の補数は011010であり、011000ではない。\par
+
+\paragraph{再利用する考え方} 桁数を固定してから補数を計算する。1の補数はビット反転、2の補数はさらに1を加える。
+
+\paragraph{共通理論} \hyperref[theory:information:complement]{第\ref*{theory:information:complement}節}
+
+\paragraph{関連問題} \hyperref[q:h30-reg-basic-2-3]{H30-REG-BASIC-2-3}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和2年度 問2-5}
+\label{q:r02-reg-basic-2-5}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 11010101を上位桁から二進→十進変換する流れ図の途中値を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{入力二進数：} 11010101\par
+
+\noindent\textbf{初期値：} s←最上位ビット、i←次のビット位置。\par
+
+\noindent\textbf{反復：} i≥0ならs←2s+a\_i、i←i-1。i<0で終了。\par
+
+\noindent\textbf{空欄：} 上位4桁までを処理した後から最終更新直前までの値。\par
+
+\paragraph{問われる核心} 桁評価の漸化式とループ不変条件
+
+\paragraph{必要知識} 位置記数法、s←2s+a\_i、上位からの評価、添字の下降。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 上位から1ビット読むたび、既読の値を2倍して新しいビットを加える。更新列は1→3→6→13→26→53→106→213であり、空欄は26／53／106となる。最後だけでなく全段階の添字とビットを対応させる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切な解答候補} 25／52／105。アは26であり25ではない。イは53であり52ではない。ウは106であり105ではない。\par
+
+\noindent\textbf{2：不適切な解答候補} 25／52／106。アは26であり25ではない。イは53であり52ではない。\par
+
+\noindent\textbf{3：不適切な解答候補} 26／52／105。イは53であり52ではない。ウは106であり105ではない。\par
+
+\noindent\textbf{4：不適切な解答候補} 26／53／105。ウは106であり105ではない。\par
+
+\noindent\textbf{5：適切な解答候補} 26／53／106。全更新値が漸化式s←2s+a\textsubscript{i}に一致する。\par
+
+\paragraph{再利用する考え方} 各更新後の値が読了したビット列の値であるという不変条件を用い、最後の一致だけで途中を省略しない。
+
+\paragraph{共通理論} \hyperref[theory:information:horner]{第\ref*{theory:information:horner}節}
+
+\paragraph{関連問題} \hyperref[q:r04-reg-basic-2-5]{R04-REG-BASIC-2-5}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和4年度 問2-5}
+\label{q:r04-reg-basic-2-5}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 11001011を上位桁から二進→十進変換する流れ図の途中値を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{入力二進数：} 11001011\par
+
+\noindent\textbf{初期値：} s←最上位ビット、i←次のビット位置。\par
+
+\noindent\textbf{反復：} i≥0ならs←2s+a\_i、i←i-1。i<0で終了。\par
+
+\noindent\textbf{空欄：} 上位3桁までを処理した後から最終更新直前までの値。\par
+
+\paragraph{問われる核心} 桁評価の漸化式とループ不変条件
+
+\paragraph{必要知識} 位置記数法、s←2s+a\_i、上位からの評価、添字の下降。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 上位から1ビット読むたび、既読の値を2倍して新しいビットを加える。更新列は1→3→6→12→25→50→101→203であり、空欄は12／25／50／101となる。最後だけでなく全段階の添字とビットを対応させる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切な解答候補} 12／25／51／102。ウは50であり51ではない。エは101であり102ではない。\par
+
+\noindent\textbf{2：不適切な解答候補} 13／26／50／102。アは12であり13ではない。イは25であり26ではない。エは101であり102ではない。\par
+
+\noindent\textbf{3：不適切な解答候補} 13／26／52／101。アは12であり13ではない。イは25であり26ではない。ウは50であり52ではない。\par
+
+\noindent\textbf{4：不適切な解答候補} 13／25／50／101。アは12であり13ではない。\par
+
+\noindent\textbf{5：適切な解答候補} 12／25／50／101。全更新値が漸化式s←2s+a\textsubscript{i}に一致する。\par
+
+\paragraph{再利用する考え方} 各更新後の値が読了したビット列の値であるという不変条件を用い、最後の一致だけで途中を省略しない。
+
+\paragraph{共通理論} \hyperref[theory:information:horner]{第\ref*{theory:information:horner}節}
+
+\paragraph{関連問題} \hyperref[q:r02-reg-basic-2-5]{R02-REG-BASIC-2-5}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和6年度 問2-1}
+\label{q:r06-reg-basic-2-1}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 10進0.6を二進小数で小数点以下16桁まで表す。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{入力：} 10進0.6\par
+
+\noindent\textbf{表示桁：} 小数点以下16桁\par
+
+\paragraph{問われる核心} 循環二進小数と表示精度
+
+\paragraph{必要知識} 反復2倍法、剰余の循環。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 0.6を2倍して整数1、残り0.2から0、残り0.4から0、残り0.8から1、残り0.6へ戻る。したがって1001を反復し、小数16桁は1001100110011001となる。分母5は2の累乗ではないので展開は有限ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切な解答候補} 0.1001100110011001。0.6の反復2倍から得る1001100110011001に一致する。\par
+
+\noindent\textbf{2：不適切な解答候補} 0.1011001100110011。最初の3桁を101としているが、0.6では100となる。\par
+
+\noindent\textbf{3：不適切な解答候補} 0.1100000000000000。0.75の有限二進表現であり、0.6と異なる。\par
+
+\noindent\textbf{4：不適切な解答候補} 0.1100110011001100。先頭2桁が11なら0.75以上となり、0.6と合わない。\par
+
+\noindent\textbf{5：不適切な解答候補} 0.1110011001100110。先頭3桁が111なら0.875以上となり、0.6と合わない。\par
+
+\paragraph{再利用する考え方} 位取りの基数と、小数の有限表現が可能かどうかを区別する。小数は2倍操作で上位桁から求める。
+
+\paragraph{共通理論} \hyperref[theory:information:radix]{第\ref*{theory:information:radix}節}
+
+\paragraph{関連問題} \hyperref[q:h27-reg-basic-2-3]{H27-REG-BASIC-2-3}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{アルゴリズム・再帰}
+
+\subsection{平成24年度 問2-2}
+\label{q:h24-reg-basic-2-2}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 再帰的な生成規則が表す6文字の二進記号列を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{規則：} S ::= 01 | 0S1。|は生成規則の選択。\par
+
+\noindent\textbf{対象：} 整数への数値変換ではなく、0と1の列の生成。\par
+
+\paragraph{問われる核心} 再帰規則の不変量と形式言語
+
+\paragraph{必要知識} 基底ケース、再帰で両端に付ける操作、記号の個数・順序。
+
+\paragraph{考え方（査読待ち初稿）} 基底は01である。再帰適用1回で0011、2回で000111となる。生成されるのは0をn個続けた後に1をn個続ける列（n≥1）であり、6文字ならn=\allowbreak{}3なので000111である。
+
+\paragraph{正答を選ぶ理由} 長さ6で生成できる列は0\textsuperscript{3}1\textsuperscript{3}の000111のみである。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致しない候補} 000000。規則の基底01に1があり、1を含まない列は生成できない。\par
+
+\noindent\textbf{2：条件に一致する候補} 000111。S→0S1→00S11→000111と生成できる。\par
+
+\noindent\textbf{3：条件に一致しない候補} 001011。0と1は同数だが、1の後に0が出るため規則が作る順序に反する。\par
+
+\noindent\textbf{4：条件に一致しない候補} 010101。01の単なる繰返しは、0で囲んだ内側が再びSになる規則では作れない。\par
+
+\noindent\textbf{5：条件に一致しない候補} 011111。0と1の個数が異なり、両端へ1個ずつ付ける規則の不変量に反する。\par
+
+\paragraph{再利用する考え方} 定義と条件から再帰規則の不変量と形式言語を構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:grammar]{第\ref*{theory:information:grammar}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成26年度 問2-2}
+\label{q:h26-reg-basic-2-2}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} ユークリッド互除法の流れ図で、継続・終了条件と出力変数を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{入力：} A,Bは正の自然数。\par
+
+\noindent\textbf{反復：} R←AをBで割った余り。非零ならA←B、B←Rとして反復。\par
+
+\noindent\textbf{空欄：} アは出力への横分岐、イはA←B、B←Rへの下分岐。\par
+
+\noindent\textbf{候補順：} ア／イ／ウ\par
+
+\paragraph{問われる核心} 最大公約数を保存する反復と停止
+
+\paragraph{必要知識} 除法の等式、公約数の保存、余りの減少、終了時の出力。
+
+\paragraph{考え方（査読待ち初稿）} \(A=QB+R\)より共通の約数は組(A,B)と(B,R)で変わらない。余りが非零なら後者へ更新し、余り0ならBが最大公約数である。終了前にB←0と更新してはいけない。原典矢印上のア・イの位置を個別に読み、候補番号を年度間で流用しない。
+
+\paragraph{正答を選ぶ理由} 余り非零で更新、余り零で終了、出力はBという3条件を満たす。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致しない候補} R=\allowbreak{}0／R≠0／A。終了時の最大公約数はBであり、Aではない。AはBの倍数で、Rは0である。\par
+
+\noindent\textbf{2：条件に一致する候補} R=\allowbreak{}0／R≠0／B。非零で更新、零で終了しBを出力する正しい対応である。\par
+
+\noindent\textbf{3：条件に一致しない候補} R=\allowbreak{}0／R≠0／R。終了時の最大公約数はBであり、Rではない。AはBの倍数で、Rは0である。\par
+
+\noindent\textbf{4：条件に一致しない候補} R≠0／R=\allowbreak{}0／A。分岐が逆で、余り0で更新しB=\allowbreak{}0を作るか、非零の余りで途中終了する。終了時の最大公約数はBであり、Aではない。AはBの倍数で、Rは0である。\par
+
+\noindent\textbf{5：条件に一致しない候補} R≠0／R=\allowbreak{}0／B。分岐が逆で、余り0で更新しB=\allowbreak{}0を作るか、非零の余りで途中終了する。\par
+
+\paragraph{再利用する考え方} 定義と条件から最大公約数を保存する反復と停止を構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:euclid]{第\ref*{theory:information:euclid}節}
+
+\paragraph{関連問題} \hyperref[q:r05-reg-basic-2-2]{R05-REG-BASIC-2-2}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和4年度 問2-3}
+\label{q:r04-reg-basic-2-3}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和5年度 問2-2}
+\label{q:r05-reg-basic-2-2}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} ユークリッド互除法の流れ図で、継続・終了条件と出力変数を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{入力：} A,Bは正の自然数。\par
+
+\noindent\textbf{反復：} R←AをBで割った余り。非零ならA←B、B←Rとして反復。\par
+
+\noindent\textbf{空欄：} アは更新への下分岐、イは出力への横分岐。H26とはアとイの位置が逆。\par
+
+\noindent\textbf{候補順：} ア／イ／ウ\par
+
+\paragraph{問われる核心} 最大公約数を保存する反復と停止
+
+\paragraph{必要知識} 除法の等式、公約数の保存、余りの減少、終了時の出力。
+
+\paragraph{考え方（査読待ち初稿）} \(A=QB+R\)より共通の約数は組(A,B)と(B,R)で変わらない。余りが非零なら後者へ更新し、余り0ならBが最大公約数である。終了前にB←0と更新してはいけない。原典矢印上のア・イの位置を個別に読み、候補番号を年度間で流用しない。
+
+\paragraph{正答を選ぶ理由} 余り非零で更新、余り零で終了、出力はBという3条件を満たす。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致しない候補} R=\allowbreak{}0／R≠0／A。分岐が逆で、余り0で更新しB=\allowbreak{}0を作るか、非零の余りで途中終了する。終了時の最大公約数はBであり、Aではない。AはBの倍数で、Rは0である。\par
+
+\noindent\textbf{2：条件に一致しない候補} R≠0／R=\allowbreak{}0／A。終了時の最大公約数はBであり、Aではない。AはBの倍数で、Rは0である。\par
+
+\noindent\textbf{3：条件に一致しない候補} R=\allowbreak{}0／R≠0／B。分岐が逆で、余り0で更新しB=\allowbreak{}0を作るか、非零の余りで途中終了する。\par
+
+\noindent\textbf{4：条件に一致する候補} R≠0／R=\allowbreak{}0／B。非零で更新、零で終了しBを出力する正しい対応である。\par
+
+\noindent\textbf{5：条件に一致しない候補} R≠0／R=\allowbreak{}0／R。終了時の最大公約数はBであり、Rではない。AはBの倍数で、Rは0である。\par
+
+\paragraph{再利用する考え方} 定義と条件から最大公約数を保存する反復と停止を構成し、成立の証明と誤った候補の反例を区別する。
+
+\paragraph{共通理論} \hyperref[theory:information:euclid]{第\ref*{theory:information:euclid}節}
+
+\paragraph{関連問題} \hyperref[q:h26-reg-basic-2-2]{H26-REG-BASIC-2-2}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{形式言語・木}
+
+\subsection{平成26年度 問2-5}
+\label{q:h26-reg-basic-2-5}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 構文図の迂回と繰返し経路から生成できない文字列を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断対象：} 構文図の順方向・戻り・迂回を反復と空反復へ対応させる。\par
+
+\noindent\textbf{原典確認：} 図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。\par
+
+\paragraph{問われる核心} 構文図の迂回と繰返し経路から生成できない文字列を選ぶ。
+
+\paragraph{必要知識} 構文図の順方向・戻り・迂回を反復と空反復へ対応させる。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} Lを英字、Dを数字と書くと、下側の反復はLの後にDを1回以上通る単位、最後にはLを1回通る。上側で反復を飛ばすこともでき、言語は(LD+)の0回以上反復の後Lである。5は英字同士の連続を含みこの構文で生成できない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} a2b3c。a2とb3の二反復の後にcで終わる経路がある。\par
+
+\noindent\textbf{2：不適切} x98y。xの後に数字を二回通りyで終われる。\par
+
+\noindent\textbf{3：不適切} w。上側の迂回で最後の英字だけを通れる。\par
+
+\noindent\textbf{4：不適切} p5q。p5の一反復と最終qで生成できる。\par
+
+\noindent\textbf{5：適切} abc45fg。中間の連続英字ab等を通る経路がなく生成できない。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:information:grammar]{第\ref*{theory:information:grammar}節}, \hyperref[theory:discrete:syntax]{第\ref*{theory:discrete:syntax}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成29年度 問2-5}
+\label{q:h29-reg-basic-2-5}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和元年度 問2-4}
+\label{q:r01-reg-basic-2-4}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 形式文法で生成できる数値列を、符号と整数部分の規則から判断する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{生成規則：} 数値→整数/小数/整数小数、整数→数字列/符号数字列、小数→点数字列、数字列は非空\par
+
+\paragraph{問われる核心} 生成規則における符号の所属と非空数字列
+
+\paragraph{必要知識} 生成規則における符号の所属と非空数字列。根の数値は整数、小数、整数小数の3通りである。整数は数字列又は符号数字列、小数は点数字列であり、数字列は1桁から再帰的に長くできる。符号は単独で小数に付かないため-.37だけ生成不能で、-0.37なら生成できる。日常の数値表記の許容ではなく、提示規則だけを使う。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 根の数値は整数、小数、整数小数の3通りである。整数は数字列又は符号数字列、小数は点数字列であり、数字列は1桁から再帰的に長くできる。符号は単独で小数に付かないため-.37だけ生成不能で、-0.37なら生成できる。日常の数値表記の許容ではなく、提示規則だけを使う。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} -19.1。符号-と数字列19が整数を生成し、小数.1と結合できる。\par
+
+\noindent\textbf{2：適切} .52。小数点と非空数字列52で小数だけを生成できる。\par
+
+\noindent\textbf{3：不適切} -.37。符号は整数の生成規則にだけ現れ、整数には必ず数字列が要る。整数桁のない-.37は生成不能。\par
+
+\noindent\textbf{4：適切} 4.35。整数4と小数.35の結合で生成できる。\par
+
+\noindent\textbf{5：適切} -125。符号-と数字列125で整数を生成できる。\par
+
+\paragraph{再利用する考え方} 符号化の目的、情報量と物理的データ長、条件付き時間と平均時間を区別する。生成規則における符号の所属と非空数字列の定義と適用条件を確認する。
+
+\paragraph{共通理論} \hyperref[theory:information:grammar]{第\ref*{theory:information:grammar}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{暗号の安全性・再送防止・秘匿証明}
+
+\subsection{令和6年度 問2-6}
+\label{q:r06-reg-basic-2-6}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textbf{検討未確定：} 肢2の候補の有力性は個別方式・時点に依存する。肢3は秘密鍵非漏洩・真正公開鍵の条件、肢5は値の拘束・範囲・権限等を省き等式を取引正当性全体と括る。公式4・初回4を保持して限定前提を査読対象へ残す。
+
+\paragraph{問題の要旨} ハッシュ・耐量子暗号・署名・再送攻撃・ゼロ知識証明の保証を比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も不適切なもの。\par
+
+\noindent\textbf{時点：} R06年度。現在の推奨を出題当時へ無条件に転用しない。\par
+
+\paragraph{問われる核心} 暗号の機能と成立条件・計算量的安全性
+
+\paragraph{必要知識} ハッシュ族、耐衝突性、公開鍵署名、多要素、nonce、再送耐性、非対話ゼロ知識・範囲証明。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 4は認証要素の複数化とリプレイ耐性を同一視している。NISTは再送防止をnonce等による新鮮さの証明として説明する。固定秘密を繰り返す方式に別要素を加えたというだけで過去メッセージの再受付が不可能になるわけではない。5の秘匿等式は証明可能な関係と取引全体の正当性を分け、2も候補族と個別方式の破綻を分ける。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：標準的定義として適切} 固定出力ハッシュの安全性をパラメータ族の漸近性で定義。。実用の固定nビット出力と、パラメータkで変わる関数族の安全性を区別する。衝突自体は鳩の巣原理で存在し、効率的に見つけにくいという計算量の性質を要求する。\par
+
+\noindent\textbf{2：候補族として理解・時点留意} 格子・符号・多変数多項式等は耐量子暗号の候補。。問題族の研究候補としての説明であり全方式の安全を保証しない。2022年にRainbowには実用攻撃が報告され、2024年の初期標準化は格子・ハッシュ系である。多変数方式全てが破られたとする逆の全称も避ける。\par
+
+\noindent\textbf{3：適切（鍵保護等の前提）} 秘密鍵側だけが署名生成し誰でも検証。。署名者の秘密鍵が適切に保護され、検証者が真正な公開鍵と手続きを用いる前提で成立する。漏洩した秘密鍵での偽署名や鍵の置換を本人の意思の保証としない。\par
+
+\noindent\textbf{4：不適切} 多要素認証ならリプレイ攻撃を無効にする。。要素数とメッセージの新鮮さは別である。使い捨て値の一回受付・nonce/challenge・タイムスタンプ等を正しく検証して再利用を排除する必要がある。\par
+
+\noindent\textbf{5：等式証明は可能・全正当性に条件不足} X/Y/Zを秘密にしてZ=\allowbreak{}Y+Xの関係を証明。。コミットメントと適切な証明体系なら値を明かさず関係成立を示せる。ただし等式だけで取引の所有権・非負残高・承認等を全保証するものではなく範囲・権限などの別条件も必要である。\par
+
+\paragraph{再利用する考え方} 目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。
+
+\paragraph{共通理論} \hyperref[theory:network:hash]{第\ref*{theory:network:hash}節}, \hyperref[theory:network:keys]{第\ref*{theory:network:keys}節}, \hyperref[theory:network:factors]{第\ref*{theory:network:factors}節}, \hyperref[theory:network:replay]{第\ref*{theory:network:replay}節}, \hyperref[theory:network:zkp]{第\ref*{theory:network:zkp}節}
+
+\par 参考：\cite{net_hash,net_nist2017,net_signature,net_pq2024,net_pq2022,net_zkp2021}。
+
+\paragraph{関連問題} \hyperref[q:r03-reg-basic-2-1]{R03-REG-BASIC-2-1}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{データ容量・圧縮率・通信速度の単位換算}
+
+\subsection{平成24年度 問2-4}
+\label{q:h24-reg-basic-2-4}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 2バイト文字の新聞を半分に圧縮したとき、指定容量へ格納できる頁数を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{文字数/頁：} 10240\par
+
+\noindent\textbf{文字幅：} 2バイト\par
+
+\noindent\textbf{圧縮後/前：} 0.5\par
+
+\noindent\textbf{容量：} 800Mバイト、M=\allowbreak{}1024\textsuperscript{2}\par
+
+\paragraph{問われる核心} 指定単位と圧縮後データ長による容量計算
+
+\paragraph{必要知識} 指定単位と圧縮後データ長による容量計算。圧縮前1頁は10240×2=\allowbreak{}20480バイト、圧縮後は10240バイト。Mは明示的に1024\textsuperscript{2}なので全容量は838860800バイト。割ると81920頁となり3が最近。現行SIのM=\allowbreak{}10\textasciicircum{}6や実際の文字コードの可変幅を、この問題の指定へ持ち込まない。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 圧縮前1頁は10240×2=\allowbreak{}20480バイト、圧縮後は10240バイト。Mは明示的に1024\textsuperscript{2}なので全容量は838860800バイト。割ると81920頁となり3が最近。現行SIのM=\allowbreak{}10\textasciicircum{}6や実際の文字コードの可変幅を、この問題の指定へ持ち込まない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 約1万頁。約81920頁に対して約8分の1であり、ビットとバイトの8倍を誤って適用した規模である。\par
+
+\noindent\textbf{2：不適切} 約4万頁。圧縮後は1頁10240バイト。圧縮を無視すると40960頁だが指定条件に反する。\par
+
+\noindent\textbf{3：適切} 約8万頁。800×1024\textsuperscript{2}/10240=\allowbreak{}81920頁で、この候補が最近。\par
+
+\noindent\textbf{4：不適切} 約16万頁。81920頁の約2倍で、文字の2バイトと50\%圧縮を二重に消している。\par
+
+\noindent\textbf{5：不適切} 約32万頁。81920頁の約4倍で、与えられた容量/1頁容量の比とは合わない。\par
+
+\paragraph{再利用する考え方} 符号化の目的、情報量と物理的データ長、条件付き時間と平均時間を区別する。指定単位と圧縮後データ長による容量計算の定義と適用条件を確認する。
+
+\paragraph{共通理論} \hyperref[theory:information:transfer]{第\ref*{theory:information:transfer}節}
+
+\par 参考：\cite{info_deflate}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和3年度 問2-3}
+\label{q:r03-reg-basic-2-3}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 圧縮後データ量と有効通信速度から伝送秒数を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{元量：} 5GB、G=\allowbreak{}10\textasciicircum{}9\par
+
+\noindent\textbf{圧縮後/前：} 0.5\par
+
+\noindent\textbf{回線速度：} 200Mbps\par
+
+\noindent\textbf{利用率：} 0.70\par
+
+\paragraph{問われる核心} 伝送データ長と有効速度の単位換算
+
+\paragraph{必要知識} 伝送データ長と有効速度の単位換算。圧縮後は2.5×10\textasciicircum{}9バイト=20×10\textasciicircum{}9ビット。有効速度は200×10\textasciicircum{}6×0.70=\allowbreak{}140×10\textasciicircum{}6ビット/秒。比は約142.857秒、最近は143秒の2。G/Mは原典指定の10\textasciicircum{}9/10\textasciicircum{}6であり、1024の累乗ではない。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 圧縮後は2.5×10\textasciicircum{}9バイト=20×10\textasciicircum{}9ビット。有効速度は200×10\textasciicircum{}6×0.70=\allowbreak{}140×10\textasciicircum{}6ビット/秒。比は約142.857秒、最近は143秒の2。G/Mは原典指定の10\textasciicircum{}9/10\textasciicircum{}6であり、1024の累乗ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 286秒。5GBを圧縮せず計算すると約285.7秒になるが半分への圧縮を無視する。\par
+
+\noindent\textbf{2：適切} 143秒。20×10\textasciicircum{}9bit/(140×10\textasciicircum{}6bit/s)=\allowbreak{}142.857秒で最近。\par
+
+\noindent\textbf{3：不適切} 100秒。利用率70\%を忘れた20×10\textasciicircum{}9/(200×10\textasciicircum{}6)=\allowbreak{}100秒。\par
+
+\noindent\textbf{4：不適切} 18秒。圧縮後バイト量をビット量へ8倍しないと約17.86秒になる。\par
+
+\noindent\textbf{5：不適切} 13秒。利用率も8倍換算も忘れると12.5秒でこの規模になる。\par
+
+\paragraph{再利用する考え方} 符号化の目的、情報量と物理的データ長、条件付き時間と平均時間を区別する。伝送データ長と有効速度の単位換算の定義と適用条件を確認する。
+
+\paragraph{共通理論} \hyperref[theory:information:transfer]{第\ref*{theory:information:transfer}節}
+
+\par 参考：\cite{info_deflate}。
+
+\paragraph{関連問題} \hyperref[q:r07-reg-basic-2-5]{R07-REG-BASIC-2-5}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和7年度 問2-5}
+\label{q:r07-reg-basic-2-5}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 既知の圧縮率、通信速度と伝送時間から回線利用率を逆算する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{元量：} 250MB、M=\allowbreak{}10\textasciicircum{}6\par
+
+\noindent\textbf{圧縮後/前：} 0.8\par
+
+\noindent\textbf{回線速度：} 100Mbps\par
+
+\noindent\textbf{時間：} 25秒\par
+
+\paragraph{問われる核心} 通信時間式の逆算と圧縮率/利用率の区別
+
+\paragraph{必要知識} 通信時間式の逆算と圧縮率/利用率の区別。圧縮後は200×10\textasciicircum{}6バイト=1.6×10\textasciicircum{}9ビット。\(t=D/(v\eta)\)を\(\eta=D/(vt)\)へ解くと1.6×10\textasciicircum{}9/(100×10\textasciicircum{}6×25)=\allowbreak{}0.64となる。比は無次元で百分率64\%。0.8は圧縮率であり利用率そのものではない。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 圧縮後は200×10\textasciicircum{}6バイト=1.6×10\textasciicircum{}9ビット。\(t=D/(v\eta)\)を\(\eta=D/(vt)\)へ解くと1.6×10\textasciicircum{}9/(100×10\textasciicircum{}6×25)=\allowbreak{}0.64となる。比は無次元で百分率64\%。0.8は圧縮率であり利用率そのものではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 8\%。200Mバイトをそのまま100Mbit/sと25秒で割ると0.08となり、バイト/ビット換算が抜ける。\par
+
+\noindent\textbf{2：不適切} 10\%。与えられた圧縮後ビット量1.6Gbitに対し、250Mbitしか25秒で送れない値。\par
+
+\noindent\textbf{3：不適切} 16\%。1.6Gbitの4分の1しか25秒で送れず、時間と整合しない。\par
+
+\noindent\textbf{4：適切} 64\%。250×10\textasciicircum{}6×0.8×8/(100×10\textasciicircum{}6×25)=\allowbreak{}0.64で整合。\par
+
+\noindent\textbf{5：不適切} 80\%。圧縮前データを用いると0.80となるが、実際は0.8倍に圧縮して送る。\par
+
+\paragraph{再利用する考え方} 符号化の目的、情報量と物理的データ長、条件付き時間と平均時間を区別する。通信時間式の逆算と圧縮率/利用率の区別の定義と適用条件を確認する。
+
+\paragraph{共通理論} \hyperref[theory:information:transfer]{第\ref*{theory:information:transfer}節}
+
+\par 参考：\cite{info_deflate}。
+
+\paragraph{関連問題} \hyperref[q:r03-reg-basic-2-3]{R03-REG-BASIC-2-3}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{ビット列・積の法則と写像数}
+
+\subsection{平成25年度 問2-1}
+\label{q:h25-reg-basic-2-1}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 二値ランプの個数が4から8へ増えたときの状態数の倍率を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断対象：} 積の法則と二値状態の全組合せ。\par
+
+\noindent\textbf{原典確認：} 図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。\par
+
+\paragraph{問われる核心} 二値ランプの個数が4から8へ増えたときの状態数の倍率を求める。
+
+\paragraph{必要知識} 積の法則と二値状態の全組合せ。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 独立な二値の選択をn個並べると2のn乗通りである。8個なら256、4個なら16なので256/16=\allowbreak{}16、4である。ランプの種類が複数あっても設問の各位置の状態はON/OFFの二値である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 2倍。ランプ個数の比であって状態数の比ではない。\par
+
+\noindent\textbf{2：不適切} 4倍。2個増加の倍率であり今回は4個増える。\par
+
+\noindent\textbf{3：不適切} 8倍。3個増加の倍率である。\par
+
+\noindent\textbf{4：適切} 16倍。2の8乗を2の4乗で割ると16である。\par
+
+\noindent\textbf{5：不適切} 32倍。5個増加の倍率である。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:discrete:bitcount]{第\ref*{theory:discrete:bitcount}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成28年度 問2-6}
+\label{q:h28-reg-basic-2-6}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} IPv4とIPv6のビット長から表現可能なアドレス総数の倍率を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断対象：} nビットの全列2のn乗と、指数の差による状態数の比。\par
+
+\noindent\textbf{原典確認：} 図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。\par
+
+\paragraph{問われる核心} IPv4とIPv6のビット長から表現可能なアドレス総数の倍率を求める。
+
+\paragraph{必要知識} nビットの全列2のn乗と、指数の差による状態数の比。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} IPv4は4×8=\allowbreak{}32ビット、IPv6は8×16=\allowbreak{}128ビット。全ビット列数の比は2の128乗/2の32乗=2の96乗である。予約・用途による割当の割合でなく表現可能な全列を数える。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 2の8乗倍。IPv6とIPv4のビット長の差は96であり、この指数ではない。\par
+
+\noindent\textbf{2：不適切} 2の16乗倍。IPv6とIPv4のビット長の差は96であり、この指数ではない。\par
+
+\noindent\textbf{3：不適切} 2の32乗倍。IPv6とIPv4のビット長の差は96であり、この指数ではない。\par
+
+\noindent\textbf{4：不適切} 2の64乗倍。IPv6とIPv4のビット長の差は96であり、この指数ではない。\par
+
+\noindent\textbf{5：適切} 2の96乗倍。128−32=\allowbreak{}96ビットの差に対応する。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:discrete:bitcount]{第\ref*{theory:discrete:bitcount}節}
+
+\par 参考：\cite{rfc4291_addresses}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和4年度 問2-6}
+\label{q:r04-reg-basic-2-6}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} IPv4とIPv6のビット長から表現可能なアドレス総数の倍率を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断対象：} nビットの全列2のn乗と、指数の差による状態数の比。\par
+
+\noindent\textbf{原典確認：} 図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。\par
+
+\paragraph{問われる核心} IPv4とIPv6のビット長から表現可能なアドレス総数の倍率を求める。
+
+\paragraph{必要知識} nビットの全列2のn乗と、指数の差による状態数の比。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} IPv4は4×8=\allowbreak{}32ビット、IPv6は8×16=\allowbreak{}128ビット。全ビット列数の比は2の128乗/2の32乗=2の96乗である。予約・用途による割当の割合でなく表現可能な全列を数える。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 2の4乗倍。IPv6とIPv4のビット長の差は96であり、この指数ではない。\par
+
+\noindent\textbf{2：不適切} 2の16乗倍。IPv6とIPv4のビット長の差は96であり、この指数ではない。\par
+
+\noindent\textbf{3：不適切} 2の32乗倍。IPv6とIPv4のビット長の差は96であり、この指数ではない。\par
+
+\noindent\textbf{4：適切} 2の96乗倍。128−32=\allowbreak{}96ビットの差に対応する。\par
+
+\noindent\textbf{5：不適切} 2の128乗倍。IPv6とIPv4のビット長の差は96であり、この指数ではない。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:discrete:bitcount]{第\ref*{theory:discrete:bitcount}節}
+
+\par 参考：\cite{rfc4291_addresses}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和7年度 問2-1}
+\label{q:r07-reg-basic-2-1}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 直積集合を定義域とする全写像の数を積の法則で求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断対象：} 直積の要素数と有限集合間の全写像数。\par
+
+\noindent\textbf{原典確認：} 図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。\par
+
+\paragraph{問われる核心} 直積集合を定義域とする全写像の数を積の法則で求める。
+
+\paragraph{必要知識} 直積の要素数と有限集合間の全写像数。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} |A×B|=3×2=\allowbreak{}6である。各順序対の像をCの2要素から選ぶので、全写像は2の6乗=64、3である。単射・全射という条件はなく同じ像を複数の要素へ割り当ててよい。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 12。6×2は定義域と像の組の総数であり写像数ではない。\par
+
+\noindent\textbf{2：不適切} 36。6の2乗は方向を逆にした数え方である。\par
+
+\noindent\textbf{3：適切} 64。6要素の各像を独立に2択から選ぶ2の6乗である。\par
+
+\noindent\textbf{4：不適切} 81。3の4乗は今回の定義域と値域の要素数に合わない。\par
+
+\noindent\textbf{5：不適切} 128。2の7乗であり定義域要素を一つ多く数えている。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:discrete:mappings]{第\ref*{theory:discrete:mappings}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{文書特徴ベクトルのコサイン類似度}
+
+\subsection{令和元年度 問2-3}
+\label{q:r01-reg-basic-2-3}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 単語出現回数のベクトルを長さで正規化し、文書Aへ最も近い文書を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{定義：} \(d(X,Y)=1-\frac{X\cdot Y}{|X||Y|}\)\par
+
+\noindent\textbf{全18セル：} A(7,3,2)、B(2,3,0)、C(70,3,2)、D(21,9,6)、E(1,2,3)、F(7,30,20)。\par
+
+\noindent\textbf{対象：} 3単語だけの頻度ベクトル。原典は非零。\par
+
+\paragraph{問われる核心} 特徴ベクトルの方向とコサイン距離
+
+\paragraph{必要知識} 内積、ユークリッドノルム、正の比例、Cauchy-Schwarz、ゼロベクトルでは式未定義。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 距離は\(1-\frac{A\cdot X}{|A||X|}\)である。D=\allowbreak{}3Aなので内積186、ノルム積\(\sqrt{62}\sqrt{558}=186\)、距離0。他は正比例でなく距離が正となる。単語総数や成分差の大きさだけを比較しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不一致} B=\allowbreak{}(2,3,0)。原典の定義による距離は0.189860。非零のAと同じ向きではなく、Dの距離0より大きい。\par
+
+\noindent\textbf{2：不一致} C=\allowbreak{}(70,3,2)。原典の定義による距離は0.088622。非零のAと同じ向きではなく、Dの距離0より大きい。\par
+
+\noindent\textbf{3：適切} D=\allowbreak{}(21,9,6)。原典の定義による距離は0.000000。D=\allowbreak{}3Aで正の比例となり、内積/ノルム積が1になる。\par
+
+\noindent\textbf{4：不一致} E=\allowbreak{}(1,2,3)。原典の定義による距離は0.355098。非零のAと同じ向きではなく、Dの距離0より大きい。\par
+
+\noindent\textbf{5：不一致} F=\allowbreak{}(7,30,20)。原典の定義による距離は0.381056。非零のAと同じ向きではなく、Dの距離0より大きい。\par
+
+\paragraph{再利用する考え方} 目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。
+
+\paragraph{共通理論} \hyperref[theory:network:cosine]{第\ref*{theory:network:cosine}節}
+
+\par 参考：\cite{net_cosine}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\section{算術木・演算優先と後置記法}
+
+\subsection{平成27年度 問2-6}
+\label{q:h27-reg-basic-2-6}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 左右の部分木と根の演算から算術木を中置式へ読み戻す。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断対象：} 算術木の左右順と演算子の優先・結合。\par
+
+\noindent\textbf{原典確認：} 図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。\par
+
+\paragraph{問われる核心} 左右の部分木と根の演算から算術木を中置式へ読み戻す。
+
+\paragraph{必要知識} 算術木の左右順と演算子の優先・結合。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 根は減算、左の子は乗算3×2、右の子は減算5−1である。よって3×2−(5−1)、4。葉だけを左から並べると括弧で指定する構造を失う。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} (3−2)×(5−1)。根を掛算とする式で原典の減算根と違う。\par
+
+\noindent\textbf{2：不適切} 5−1−3×2。左と右の部分式が逆である。\par
+
+\noindent\textbf{3：不適切} 3×2−5−1。減算の左結合で(3×2−5)−1となり右部分木が違う。\par
+
+\noindent\textbf{4：適切} 3×2−(5−1)。左部分木3×2から右部分木5−1を引く構造に合う。\par
+
+\noindent\textbf{5：不適切} 3×2−5×1。右部分木は乗算でなく減算である。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:discrete:expression]{第\ref*{theory:discrete:expression}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成30年度 問2-5}
+\label{q:h30-reg-basic-2-5}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 乗除を加算より先に行う中置式を後置記法へ変換する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断対象：} 算術木の左・右・根の後行順走査と演算優先。\par
+
+\noindent\textbf{原典確認：} 図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。\par
+
+\paragraph{問われる核心} 乗除を加算より先に行う中置式を後置記法へ変換する。
+
+\paragraph{必要知識} 算術木の左・右・根の後行順走査と演算優先。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 対象はa×b+c÷dである。左部分式a×bはab×、右部分式c÷dはcd÷となる。両者を加える根を最後に置けばab×cd÷+、1である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} ab×cd÷+。左右の部分式ab×とcd÷を終えて根の+を出す。\par
+
+\noindent\textbf{2：不適切} ab×c÷d+。(a×b)÷c+dとなり除算の対象が違う。\par
+
+\noindent\textbf{3：不適切} abc×÷d+。a÷(b×c)+dとなり括りが違う。\par
+
+\noindent\textbf{4：不適切} abc+d÷×。a×((b+c)÷d)となり加算対象が違う。\par
+
+\noindent\textbf{5：不適切} abcd×÷+。a+b÷(c×d)となり根以下の構造が違う。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:discrete:expression]{第\ref*{theory:discrete:expression}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和3年度 問2-5}
+\label{q:r03-reg-basic-2-5}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 除算の優先を保って括弧内の中置式を逆ポーランド記法へ変換する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典式：} (A+B÷C)×(D−F)\par
+
+\noindent\textbf{OCR差：} 生OCRの(A+B−C)は原典に一致しない。÷を別校正へ記録。\par
+
+\paragraph{問われる核心} 除算の優先を保って括弧内の中置式を逆ポーランド記法へ変換する。
+
+\paragraph{必要知識} 演算子の優先順位と後行順走査。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 原典は(A+B÷C)×(D−F)である。左部分木はAとB÷Cを加えるのでABC÷+、右部分木はDF−。根の乗算を最後にしてABC÷+DF−×、1。OCRの減算らしい記号を採用せず原典の÷を保持する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} ABC÷+DF−×。B÷Cの後にAを足し、D−Fの後に掛ける順に合う。\par
+
+\noindent\textbf{2：不適切} AB+C÷DF−×。(A+B)÷Cへ括りを変えている。\par
+
+\noindent\textbf{3：不適切} ABC÷+D×F−。左式×Dの後でFを引いてしまう。\par
+
+\noindent\textbf{4：不適切} ×+A÷BC−DF。先頭の演算子は後置ではない。\par
+
+\noindent\textbf{5：不適切} AB+C÷D×F−。左の除算対象と最後の減算の括りが違う。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:discrete:expression]{第\ref*{theory:discrete:expression}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{拡張互除法の係数と行列積}
+
+\subsection{令和元年度再試験 問2-2}
+\label{q:r01-ret-basic-2-2}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 拡張ユークリッド互除法の行列積から最大公約数と指定係数を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断対象：} 割り算の余り、(0,1;1,−q)の行変換、Bézout係数。\par
+
+\noindent\textbf{原典確認：} 図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。\par
+
+\paragraph{問われる核心} 拡張ユークリッド互除法の行列積から最大公約数と指定係数を求める。
+
+\paragraph{必要知識} 割り算の余り、(0,1;1,−q)の行変換、Bézout係数。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 余り51,6,3,0からgcdは3。商1,1,8の変換行列を順に左から積むと(−1,2;9,−17)となる。指定第二行は9,−17で108×9−57×17=\allowbreak{}3、4である。5も線形和3を満たす別のBézout解だが、指定行列の第二行ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} (6, -1, 2)。指定する係数行又は最大公約数が違う。線形和は6となるが、gとの一致だけで指定行列の行とは限らない。\par
+
+\noindent\textbf{2：不適切} (6, 1, -2)。指定する係数行又は最大公約数が違う。線形和は-6となるが、gとの一致だけで指定行列の行とは限らない。\par
+
+\noindent\textbf{3：不適切} (6, 1, 2)。指定する係数行又は最大公約数が違う。線形和は222となるが、gとの一致だけで指定行列の行とは限らない。\par
+
+\noindent\textbf{4：適切} (3, 9, -17)。指定行列の第二行と最大公約数が全て一致する。\par
+
+\noindent\textbf{5：不適切} (3, -10, 19)。指定する係数行又は最大公約数が違う。線形和は3となるが、gとの一致だけで指定行列の行とは限らない。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:information:euclid]{第\ref*{theory:information:euclid}節}, \hyperref[theory:discrete:extended]{第\ref*{theory:discrete:extended}節}
+
+\par 参考：\cite{mit_discrete2015}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和6年度 問2-5}
+\label{q:r06-reg-basic-2-5}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 拡張ユークリッド互除法の行列積から最大公約数と指定係数を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断対象：} 割り算の余り、(0,1;1,−q)の行変換、Bézout係数。\par
+
+\noindent\textbf{原典確認：} 図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。\par
+
+\paragraph{問われる核心} 拡張ユークリッド互除法の行列積から最大公約数と指定係数を求める。
+
+\paragraph{必要知識} 割り算の余り、(0,1;1,−q)の行変換、Bézout係数。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 余り39,26,13,0からgcdは13。商1,1,1の変換T=\allowbreak{}(0,1;1,−1)に対しTの3乗=(−1,2;2,−3)。指定第二行2,−3は104×2−65×3=\allowbreak{}13で4である。5の−3,5も線形和13だが指定行ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} (5, 2, -3)。指定する係数行又は最大公約数が違う。線形和は13となるが、gとの一致だけで指定行列の行とは限らない。\par
+
+\noindent\textbf{2：不適切} (5, -3, 5)。指定する係数行又は最大公約数が違う。線形和は13となるが、gとの一致だけで指定行列の行とは限らない。\par
+
+\noindent\textbf{3：不適切} (8, 3, -3)。指定する係数行又は最大公約数が違う。線形和は117となるが、gとの一致だけで指定行列の行とは限らない。\par
+
+\noindent\textbf{4：適切} (13, 2, -3)。指定行列の第二行と最大公約数が全て一致する。\par
+
+\noindent\textbf{5：不適切} (13, -3, 5)。指定する係数行又は最大公約数が違う。線形和は13となるが、gとの一致だけで指定行列の行とは限らない。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:information:euclid]{第\ref*{theory:information:euclid}節}, \hyperref[theory:discrete:extended]{第\ref*{theory:discrete:extended}節}
+
+\par 参考：\cite{mit_discrete2015}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{情報理論・符号・誤り検出}
+
+\subsection{平成26年度 問2-3}
+\label{q:h26-reg-basic-2-3}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} ISBN-10の重み付き剰余条件を保つ数字の変更を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 正しい番号\par
+
+\paragraph{問われる核心} 重み付き検査数字と剰余による誤り検出
+
+\paragraph{必要知識} 重み付き検査数字と剰余による誤り検出。先頭9桁の和171に検査数字5を加えると176=\allowbreak{}16×11。変更後の全和を毎回計算するより、変更差が11の倍数か判定するとよい。候補差は45,15,1,11,10で、4だけ有効。これは検査数字規則に適合するという意味であり、番号が実際に出版物へ割り当て済みという保証ではない。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 先頭9桁の和171に検査数字5を加えると176=\allowbreak{}16×11。変更後の全和を毎回計算するより、変更差が11の倍数か判定するとよい。候補差は45,15,1,11,10で、4だけ有効。これは検査数字規則に適合するという意味であり、番号が実際に出版物へ割り当て済みという保証ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 第2桁0→5：95-70002-34-5。第2桁の重み9、差5で和が45増える。元和176に足した221は11の倍数でない。\par
+
+\noindent\textbf{2：不適切} 第8桁3→8：90-70002-84-5。重み3の桁が5増えるので和が15増える。191は11の倍数でない。OCRの04は画像の84へ校正する。\par
+
+\noindent\textbf{3：不適切} 検査数字5→6：90-70002-34-6。検査桁の重み1で和が177となり、余り1なので無効。\par
+
+\noindent\textbf{4：適切} 第8/9桁34→82：90-70002-82-5。重み3と2の変化は3×5+2×(-2)=\allowbreak{}11。全和187=\allowbreak{}17×11となり有効。\par
+
+\noindent\textbf{5：不適切} 第8/9桁34→56：90-70002-56-5。変化は3×2+2×2=\allowbreak{}10。186は余り10で無効。\par
+
+\paragraph{再利用する考え方} 符号化の目的、情報量と物理的データ長、条件付き時間と平均時間を区別する。重み付き検査数字と剰余による誤り検出の定義と適用条件を確認する。
+
+\paragraph{共通理論} \hyperref[theory:information:checksum]{第\ref*{theory:information:checksum}節}
+
+\par 参考：\cite{info_errors}。
+
+\paragraph{関連問題} \hyperref[q:r05-reg-basic-2-3]{R05-REG-BASIC-2-3}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成28年度 問2-5}
+\label{q:h28-reg-basic-2-5}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 偶数パリティ1ビットの付加による検出能力と、位置特定の可否を判断する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{元データ例：} 1010100\par
+
+\noindent\textbf{付加ビット：} 1の個数偶数なら0、奇数なら1\par
+
+\noindent\textbf{送信列例：} 10101001\par
+
+\paragraph{問われる核心} 偶数パリティの検出条件と訂正能力の区別
+
+\paragraph{必要知識} 偶数パリティの検出条件と訂正能力の区別。パリティを\(b=\sum_ix_i\pmod2\)と置くと、データとbの全和は偶数になる。誤りベクトルeを足した受信列の検査値は\(\sum_ie_i\pmod2\)であり、奇数個反転だけ検出できる。異なる2ビット反転は検出不能で、単一検査値から反転位置も決まらない。元1010100の1は3個、付加1で10101001の1が4個になることも画像確認した。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} パリティを\(b=\sum_ix_i\pmod2\)と置くと、データとbの全和は偶数になる。誤りベクトルeを足した受信列の検査値は\(\sum_ie_i\pmod2\)であり、奇数個反転だけ検出できる。異なる2ビット反転は検出不能で、単一検査値から反転位置も決まらない。元1010100の1は3個、付加1で10101001の1が4個になることも画像確認した。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 1ビット反転検出には元データ8ビット以下が必要。。長さに関係なく1回の反転で全体の1の個数の偶奇が変わる。8ビットという上限はない。\par
+
+\noindent\textbf{2：不適切} 1ビット反転検出には元データ2ビット以上が必要。。1ビットのデータにも付加でき、反転は検出できる。2ビットという下限はない。\par
+
+\noindent\textbf{3：不適切} 8ビットデータの1ビット反転位置が特定できる。。受信全体の偶奇だけでは、データ中の各位置やパリティ位置のどれが変わったか区別できない。\par
+
+\noindent\textbf{4：適切} 2ビット反転では誤りを検出できない。。異なる2ビットの反転は偶奇を2回反転するため元の偶数に戻る。検査値0でも元データ一致の保証はない。\par
+
+\noindent\textbf{5：不適切} データによって付加ビットを決められない。。任意の有限ビット列で1の個数は偶数か奇数のいずれかなので、一意に付加値が決まる。\par
+
+\paragraph{再利用する考え方} 符号化の目的、情報量と物理的データ長、条件付き時間と平均時間を区別する。偶数パリティの検出条件と訂正能力の区別の定義と適用条件を確認する。
+
+\paragraph{共通理論} \hyperref[theory:information:parity]{第\ref*{theory:information:parity}節}
+
+\par 参考：\cite{info_errors}。
+
+\paragraph{関連問題} \hyperref[q:r06-reg-basic-2-4]{R06-REG-BASIC-2-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和5年度 問2-3}
+\label{q:r05-reg-basic-2-3}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} ISBN-13の交互重み1/3の合同式から欠けた末尾検査数字を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{番号：} 978-4-103-34194-X\par
+
+\noindent\textbf{左から重み：} 1,3交互\par
+
+\noindent\textbf{合同式：} 全和mod10=\allowbreak{}0\par
+
+\paragraph{問われる核心} ISBN-13の検査数字と交互重みの合同式
+
+\paragraph{必要知識} ISBN-13の検査数字と交互重みの合同式。原典の番号は978-4-103-34194-Xで、Xは末尾桁である。左から1/3交互の重みを掛けると9+21+8+12+1+0+3+9+4+3+9+12=\allowbreak{}101。\(101+X\equiv0\pmod{10}\)を満たす0〜9は9であり5が適切。ISBN-10の重み10〜1、法11とは異なる規則である。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 原典の番号は978-4-103-34194-Xで、Xは末尾桁である。左から1/3交互の重みを掛けると9+21+8+12+1+0+3+9+4+3+9+12=\allowbreak{}101。\(101+X\equiv0\pmod{10}\)を満たす0〜9は9であり5が適切。ISBN-10の重み10〜1、法11とは異なる規則である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 1。101+1=\allowbreak{}102はmod10で2。\par
+
+\noindent\textbf{2：不適切} 3。101+3=\allowbreak{}104はmod10で4。\par
+
+\noindent\textbf{3：不適切} 5。101+5=\allowbreak{}106はmod10で6。\par
+
+\noindent\textbf{4：不適切} 7。101+7=\allowbreak{}108はmod10で8。\par
+
+\noindent\textbf{5：適切} 9。101+9=\allowbreak{}110はmod10で0となる。\par
+
+\paragraph{再利用する考え方} 符号化の目的、情報量と物理的データ長、条件付き時間と平均時間を区別する。ISBN-13の検査数字と交互重みの合同式の定義と適用条件を確認する。
+
+\paragraph{共通理論} \hyperref[theory:information:checksum]{第\ref*{theory:information:checksum}節}
+
+\par 参考：\cite{info_isbn}。
+
+\paragraph{関連問題} \hyperref[q:h26-reg-basic-2-3]{H26-REG-BASIC-2-3}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和6年度 問2-4}
+\label{q:r06-reg-basic-2-4}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 偶数パリティ1ビットの付加による検出能力と、位置特定の可否を判断する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{元データ例：} 1010100\par
+
+\noindent\textbf{付加ビット：} 1の個数偶数なら0、奇数なら1\par
+
+\noindent\textbf{送信列例：} 10101001\par
+
+\paragraph{問われる核心} 偶数パリティの検出条件と訂正能力の区別
+
+\paragraph{必要知識} 偶数パリティの検出条件と訂正能力の区別。パリティを\(b=\sum_ix_i\pmod2\)と置くと、データとbの全和は偶数になる。誤りベクトルeを足した受信列の検査値は\(\sum_ie_i\pmod2\)であり、奇数個反転だけ検出できる。異なる2ビット反転は検出不能で、単一検査値から反転位置も決まらない。元1010100の1は3個、付加1で10101001の1が4個になることも画像確認した。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} パリティを\(b=\sum_ix_i\pmod2\)と置くと、データとbの全和は偶数になる。誤りベクトルeを足した受信列の検査値は\(\sum_ie_i\pmod2\)であり、奇数個反転だけ検出できる。異なる2ビット反転は検出不能で、単一検査値から反転位置も決まらない。元1010100の1は3個、付加1で10101001の1が4個になることも画像確認した。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 1ビット反転検出には元データ8ビット以下が必要。。長さに関係なく1回の反転で全体の1の個数の偶奇が変わる。8ビットという上限はない。\par
+
+\noindent\textbf{2：不適切} 1ビット反転検出には元データ2ビット以上が必要。。1ビットのデータにも付加でき、反転は検出できる。2ビットという下限はない。\par
+
+\noindent\textbf{3：不適切} 8ビットデータの1ビット反転位置が特定できる。。受信全体の偶奇だけでは、データ中の各位置やパリティ位置のどれが変わったか区別できない。\par
+
+\noindent\textbf{4：不適切} データによって付加ビットを決められない。。任意の有限ビット列で1の個数は偶数か奇数のいずれかなので、一意に付加値が決まる。\par
+
+\noindent\textbf{5：適切} 2ビット反転では誤りを検出できない。。異なる2ビットの反転は偶奇を2回反転するため元の偶数に戻る。検査値0でも元データ一致の保証はない。\par
+
+\paragraph{再利用する考え方} 符号化の目的、情報量と物理的データ長、条件付き時間と平均時間を区別する。偶数パリティの検出条件と訂正能力の区別の定義と適用条件を確認する。
+
+\paragraph{共通理論} \hyperref[theory:information:parity]{第\ref*{theory:information:parity}節}
+
+\par 参考：\cite{info_errors}。
+
+\paragraph{関連問題} \hyperref[q:h28-reg-basic-2-5]{H28-REG-BASIC-2-5}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{有限マルコフ連鎖の遷移と定常分布}
+
+\subsection{平成24年度 問2-3}
+\label{q:h24-reg-basic-2-3}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 3状態の天気遷移図から2日後の条件付き確率と長期極限を判定する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も不適切\par
+
+\paragraph{問われる核心} 有限マルコフ連鎖の経路和・行列累乗・定常分布
+
+\paragraph{必要知識} 有限マルコフ連鎖の経路和・行列累乗・定常分布。状態を晴・曇・雨と並べると遷移行列は対角1/2、非対角1/4である。2日後は\((P^2)_{ij}=\sum_kP_{ik}P_{kj}\)から自己3/8、異なる状態5/16。定常分布は(1/3,1/3,1/3)であり、全要素正のため初期天気によらず収束する。肢4の1/4が誤りである。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 状態を晴・曇・雨と並べると遷移行列は対角1/2、非対角1/4である。2日後は\((P^2)_{ij}=\sum_kP_{ik}P_{kj}\)から自己3/8、異なる状態5/16。定常分布は(1/3,1/3,1/3)であり、全要素正のため初期天気によらず収束する。肢4の1/4が誤りである。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} 晴→2日後雨5/16。晴→晴→雨、晴→曇→雨、晴→雨→雨の排他的3経路を足すと1/8+1/16+1/8=\allowbreak{}5/16。\par
+
+\noindent\textbf{2：適切} 曇→2日後曇3/8。曇→曇→曇、曇→雨→曇、曇→晴→曇を足すと1/4+1/16+1/16=\allowbreak{}3/8。\par
+
+\noindent\textbf{3：適切} 雨→2日後曇5/16。自己遷移を一方の時刻に含む2経路と、晴を経る経路で5/16。\par
+
+\noindent\textbf{4：不適切} 雨→2日後雨1/4。自己遷移を2回行う経路だけなら1/4だが、他の2状態を経て戻る1/16ずつを忘れている。合計3/8。\par
+
+\noindent\textbf{5：適切} 初日雨から遠い将来の雨確率1/3。全ての1日遷移が正で、対称な行列の定常分布は一様。有限既約・非周期の連鎖でこの分布へ収束する。\par
+
+\paragraph{再利用する考え方} 符号化の目的、情報量と物理的データ長、条件付き時間と平均時間を区別する。有限マルコフ連鎖の経路和・行列累乗・定常分布の定義と適用条件を確認する。
+
+\paragraph{共通理論} \hyperref[theory:information:markov]{第\ref*{theory:information:markov}節}
+
+\par 参考：\cite{info_markov}。
+
+\paragraph{関連問題} \hyperref[q:h28-reg-basic-2-1]{H28-REG-BASIC-2-1}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成28年度 問2-1}
+\label{q:h28-reg-basic-2-1}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 同じ3状態の天気遷移図で、2日後確率の異なる記述を検証する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も不適切\par
+
+\paragraph{問われる核心} 有限マルコフ連鎖の経路和・行列累乗・定常分布
+
+\paragraph{必要知識} 有限マルコフ連鎖の経路和・行列累乗・定常分布。状態を晴・曇・雨と並べると遷移行列は対角1/2、非対角1/4である。2日後は\((P^2)_{ij}=\sum_kP_{ik}P_{kj}\)から自己3/8、異なる状態5/16。定常分布は(1/3,1/3,1/3)であり、全要素正のため初期天気によらず収束する。肢4の曇→晴3/16が不適切である。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 状態を晴・曇・雨と並べると遷移行列は対角1/2、非対角1/4である。2日後は\((P^2)_{ij}=\sum_kP_{ik}P_{kj}\)から自己3/8、異なる状態5/16。定常分布は(1/3,1/3,1/3)であり、全要素正のため初期天気によらず収束する。肢4の曇→晴3/16が不適切である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} 雨→雨3/8。雨→雨→雨1/4、雨→曇→雨1/16、雨→晴→雨1/16の合計3/8。\par
+
+\noindent\textbf{2：適切} 晴→2日後雨5/16。晴→晴→雨、晴→曇→雨、晴→雨→雨の排他的3経路を足すと1/8+1/16+1/8=\allowbreak{}5/16。\par
+
+\noindent\textbf{3：適切} 曇→2日後曇3/8。曇→曇→曇、曇→雨→曇、曇→晴→曇を足すと1/4+1/16+1/16=\allowbreak{}3/8。\par
+
+\noindent\textbf{4：不適切} 曇→晴3/16。曇→曇→晴1/8、曇→雨→晴1/16、曇→晴→晴1/8の和は5/16。3/16ではない。\par
+
+\noindent\textbf{5：適切} 初日雨から遠い将来の雨確率1/3。全ての1日遷移が正で、対称な行列の定常分布は一様。有限既約・非周期の連鎖でこの分布へ収束する。\par
+
+\paragraph{再利用する考え方} 符号化の目的、情報量と物理的データ長、条件付き時間と平均時間を区別する。有限マルコフ連鎖の経路和・行列累乗・定常分布の定義と適用条件を確認する。
+
+\paragraph{共通理論} \hyperref[theory:information:markov]{第\ref*{theory:information:markov}節}
+
+\par 参考：\cite{info_markov}。
+
+\paragraph{関連問題} \hyperref[q:h24-reg-basic-2-3]{H24-REG-BASIC-2-3}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{最短経路とボトルネック経路}
+
+\subsection{平成23年度 問2-2}
+\label{q:h23-reg-basic-2-2}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 通信ネットワークの辺遅延を足し、AからFへの最短経路の所要値を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最短遅延。\par
+
+\noindent\textbf{原典の全辺：} AB=\allowbreak{}1、AC=\allowbreak{}2、BC=\allowbreak{}3、BD=\allowbreak{}1、BE=\allowbreak{}2、CE=\allowbreak{}4、CF=\allowbreak{}4、DF=\allowbreak{}4、EF=\allowbreak{}2。図の接続方向に従う。\par
+
+\noindent\textbf{単位：} 原典が指定しない時間単位をms等と補わない。\par
+
+\paragraph{問われる核心} 非負重みグラフの最短距離
+
+\paragraph{必要知識} 辺重みの加算、緩和、Dijkstra、経由点の接続を図から読む。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 非負の辺遅延を加算する。AからB=\allowbreak{}1、C=\allowbreak{}2、D=\allowbreak{}2、E=\allowbreak{}3、F=\allowbreak{}5と確定し、A-B-E-F=\allowbreak{}1+2+2を得る。各辺の幅の最小を評価するボトルネック問題とは異なる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不一致} 1。最短でもA-B-E-Fの5を要する。単一の辺ABの1を総時間と取り違えている。\par
+
+\noindent\textbf{2：適切} 5。A-B-E-Fの遅延は1+2+2=\allowbreak{}5。距離の確定でこれより短い経路がないと検証できる。\par
+
+\noindent\textbf{3：不一致} 6。A-C-F=\allowbreak{}2+4やA-B-D-F=\allowbreak{}1+1+4は6だが、経路が存在することは最短性を保証しない。\par
+
+\noindent\textbf{4：不一致} 8。より短い5の経路がある。図の辺を全て通る問題でも最長経路でもない。\par
+
+\noindent\textbf{5：不一致} 10。5の経路と比較して大きい。総辺数や全遅延の合計を使わない。\par
+
+\paragraph{再利用する考え方} 目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。
+
+\paragraph{共通理論} \hyperref[theory:network:shortest]{第\ref*{theory:network:shortest}節}, \hyperref[theory:network:bottleneck]{第\ref*{theory:network:bottleneck}節}
+
+\par 参考：\cite{net_dijkstra}。
+
+\paragraph{関連問題} \hyperref[q:h26-reg-basic-2-6]{H26-REG-BASIC-2-6}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成25年度 問2-2}
+\label{q:h25-reg-basic-2-2}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 道路距離の最短施設への登録を、同距離で複数登録する条件も含めて数える。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{全辺：} Au2、uB2、uv3、AB1、Ax3、Bx3、Bw4、xw3、vw2、vC6、wC4、xC3。\par
+
+\noindent\textbf{利用者：} u,v,w,x各1人。同距離なら全施設へ登録。\par
+
+\paragraph{問われる核心} 道路距離の最短施設への登録を、同距離で複数登録する条件も含めて数える。
+
+\paragraph{必要知識} 重み付き道路網の最短距離と同点の複数登録。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 各利用者から施設A,B,Cへの最短距離を求める。uは(2,2,8)、vは(5,5,6)、wは(5,4,4)、xは(3,3,3)である。したがってu,vはA/B、wはB/C、xは全施設へ登録され、a=\allowbreak{}3,b=\allowbreak{}4,c=\allowbreak{}2。5である。最短距離の同点を一施設だけへ割り当てない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} a>b>c。Bの人数がAより多いので逆である。\par
+
+\noindent\textbf{2：不適切} a=\allowbreak{}b>c。A3とB4は等しくない。\par
+
+\noindent\textbf{3：不適切} a=\allowbreak{}b=\allowbreak{}c。三施設の人数は3,4,2で異なる。\par
+
+\noindent\textbf{4：不適切} b>a=\allowbreak{}c。A3とC2は等しくない。\par
+
+\noindent\textbf{5：適切} b>a>c。B4>A3>C2である。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:network:shortest]{第\ref*{theory:network:shortest}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{平成26年度 問2-6}
+\label{q:h26-reg-basic-2-6}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 道路網で通行できる車高の最大値を、各経路の最小車高制限から求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 車高最大。\par
+
+\noindent\textbf{位置名：} 以下の節点名は解説の独自呼称。A、U=左上、V=上中央、W=右上、R=右中、L=左中、P=内左下、D=左下、E=下中央、C=中央、Q=内右下、B。\par
+
+\noindent\textbf{全辺の車高制限：} AU8、AL9、UV4、UP3、VW9、WR7、RB6、LP2、LD6、PC6、PE6、DE7、CV5、CR3、CQ9、QB4、EQ5。\par
+
+\noindent\textbf{実現経路：} A-L-D-E-P-C-V-W-R-Bの最小5。\par
+
+\paragraph{問われる核心} 経路の最小車高制限を最大化するボトルネック
+
+\paragraph{必要知識} max-min経路、閾値での到達可能性、図の交点と道路接続。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 経路の通行可能車高は車高制限の最小、答えはそれを経路全体について最大化した値である。車高5の接続経路を示し、車高6以上の辺だけ残すと分断されることを確認するので最大値5。遅延の総和最小化を使わない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：最大でない} 3。車高5まで通る経路があり最大でない。単一の車高制限3の道路を避ける経路も存在する。\par
+
+\noindent\textbf{2：最大でない} 4。車高制限4以下の道を通らなくても車高5の経路がある。最初に見つけた経路の車高制限を最大としない。\par
+
+\noindent\textbf{3：適切} 5。図のAから左中・左下・下中央・内左下・中央・上中央・上右・右中・Bへの経路の最小車高制限は5である。\par
+
+\noindent\textbf{4：通行経路なし} 6。車高6以上だけを残すとA側とB側が接続しない。経路全体の最小車高制限が車高を制限する。\par
+
+\noindent\textbf{5：通行経路なし} 7。車高7以上の経路がないことは6以上で既に分断されることからも分かる。最大制限の一辺だけでは判断できない。\par
+
+\paragraph{再利用する考え方} 目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。
+
+\paragraph{共通理論} \hyperref[theory:network:bottleneck]{第\ref*{theory:network:bottleneck}節}, \hyperref[theory:network:shortest]{第\ref*{theory:network:shortest}節}
+
+\par 参考：\cite{net_dijkstra}。
+
+\paragraph{関連問題} \hyperref[q:h23-reg-basic-2-2]{H23-REG-BASIC-2-2}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{動的経路制御の情報共有と次ホップ}
+
+\subsection{令和6年度 問2-3}
+\label{q:r06-reg-basic-2-3}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} リンクステートと距離ベクトルの保持情報・経路計算を比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も不適切なもの。\par
+
+\noindent\textbf{時点：} R06年度。現在の推奨を出題当時へ無条件に転用しない。\par
+
+\paragraph{問われる核心} トポロジ共有と距離の分散更新
+
+\paragraph{必要知識} 次ホップ、経路表、SPF、Bellman-Ford、OSPF、RIP、適用範囲。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 2が保持情報を同一視している。リンクステートは範囲内のリンク情報、距離ベクトルは宛先までの隣接経由距離を更新する。\(d_i(t)=\min_j\{c_{ij}+d_j(t)\}\)で次ホップを選べるので全接続図が必須ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切（記述の条件内）} 経路表を参照して次ホップへ転送。。動的ルーティングが構築した経路表を用いた次ホップ転送の説明として妥当。実装には静的経路や転送用FIBもあるが、問題が説明する動的経路制御を否定しない。\par
+
+\noindent\textbf{2：不適切} どちらもネットワークトポロジを把握。。距離ベクトルの節点は隣接節点の宛先距離を利用するのでネットワーク全体の詳細トポロジを必ず保持するわけではない。\par
+
+\noindent\textbf{3：適切（記述の条件内）} リンク情報を広告し最短経路計算。。リンクステートは領域内のリンク状態を共有してSPF等を計算する。全インターネットの全接続を各ルータが保持する意味ではない。\par
+
+\noindent\textbf{4：適切（記述の条件内）} 宛先距離を伝搬し最短となる次ホップ決定。。隣接経由コストと隣接節点からの距離を足して比較する。Bellman-Ford型の分散更新である。\par
+
+\noindent\textbf{5：適切（記述の条件内）} OSPF/IS-ISはリンク状態、RIPは距離ベクトル。。代表例の対応は妥当。BGPのパスベクトル等もあり、全プロトコルを厳密に2種だけへ封じる分類ではない。\par
+
+\paragraph{再利用する考え方} 目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。
+
+\paragraph{共通理論} \hyperref[theory:network:routing]{第\ref*{theory:network:routing}節}, \hyperref[theory:network:shortest]{第\ref*{theory:network:shortest}節}
+
+\par 参考：\cite{net_ospf,net_rip}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{パスワード運用・端末・認証要素}
+
+\subsection{平成23年度 問2-5}
+\label{q:h23-reg-basic-2-5}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textbf{検討未確定：} 選択肢2は公開鍵の真正性確認・認証済み保護通信という条件を省く。方式を用いるだけで全漏洩が防げると一般化しない。初回2・公式2を保持。
+
+\paragraph{問題の要旨} パスワードの伝送・保管・端末入力・推測攻撃の対策を比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も適切なもの。\par
+
+\noindent\textbf{時点：} H23年度。現在の推奨を出題当時へ無条件に転用しない。\par
+
+\paragraph{問われる核心} 認証秘密の各ライフサイクルの脅威
+
+\paragraph{必要知識} 安全な暗号通信、信頼した公開鍵、平文保存、辞書攻撃、キーロガー、WEP。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 2は安全に認証した暗号通信でパスワード伝送を保護する意図として選ぶ。保管の平文露出、端末の入力監視、予測可能な列、WEPの弱点は別に残る。公開鍵の認証とプロトコル条件を本文で補い、原典の方式名だけの保証は未確定として保持する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} WEP無線LANなら覚えやすい単語パスワードを安全に利用。。WEPには既知の弱点があり安全を保証しない。無線区間の暗号と端末・Webサービスの安全性も別である。\par
+
+\noindent\textbf{2：意図として適切・条件不足} 公開鍵暗号でパスワード伝送時の漏洩を防ぐ。。適切に鍵を認証して構成した暗号通信なら伝送中の秘匿に寄与する。ただし公開鍵という方式名だけで偽サーバへの入力や中間者攻撃を防ぐ保証はない。\par
+
+\noindent\textbf{3：不適切} 忘れたとき通知できるようサーバにパスワードをそのまま保存。。ファイルを読める者へ認証秘密が露出する。サーバ側は適切なソルトと計算コストを伴うパスワードハッシュ等で検証する。\par
+
+\noindent\textbf{4：不適切} 長いパスワードなら公共端末で安全。。共有端末のキーロガー等は入力そのものを読むため文字数だけでは防げない。長さは推測耐性の要素である。\par
+
+\noindent\textbf{5：不適切} asdfghjkなら辞書攻撃に強い。。キーボード配列上の連続列は推測候補になり得る。辞書攻撃の候補は自然言語の辞書語だけとは限らない。\par
+
+\paragraph{再利用する考え方} 目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。
+
+\paragraph{共通理論} \hyperref[theory:network:password]{第\ref*{theory:network:password}節}, \hyperref[theory:network:tls]{第\ref*{theory:network:tls}節}, \hyperref[theory:network:wireless]{第\ref*{theory:network:wireless}節}
+
+\par 参考：\cite{net_nist2017,net_nist2025,net_wep}。
+
+\paragraph{関連問題} \hyperref[q:r05-reg-basic-2-1]{R05-REG-BASIC-2-1}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成29年度 問2-1}
+\label{q:h29-reg-basic-2-1}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textbf{検討未確定：} 肢4の機械的な定期変更推奨は2017年6月NIST指針と一致しない。公式1・初回1を保持し、当時の国内出題根拠と排他性を査読対象にする。
+
+\paragraph{問題の要旨} 差出人・更新・パスワード・外部媒体に関する基本防御を判断する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も不適切なもの。\par
+
+\noindent\textbf{時点：} H29年度。現在の推奨を出題当時へ無条件に転用しない。\par
+
+\paragraph{問われる核心} 送信者を装う攻撃と認証秘密の運用
+
+\paragraph{必要知識} なりすまし、アカウント侵害、パッチ、マルウェア対策、定期変更と侵害時変更。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 差出人アドレスで添付安全を決める1が不適切。2・3・5は脅威低減の基本策である。4の周期変更について当時の推奨を追加査読する。2017年に既に存在するNIST指針を踏まえ、他肢全てを無条件正しいとは断定しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 知人のアドレスからなら添付を直ちに開く。。表示アドレスの偽装や知人アカウントの侵害があり、本人らしさだけでは添付の安全性を判断できない。\par
+
+\noindent\textbf{2：適切} 端末とサーバへウイルス対策。。適切に運用・更新した対策は感染リスク低減に寄与する。対策ソフトだけで全感染や損害を消せるわけではない。\par
+
+\noindent\textbf{3：適切} 脆弱性更新を確認しパッチ適用。。脆弱性の修正を適時に適用して既知の侵入経路を減らす。業務環境では影響確認と運用管理も必要である。\par
+
+\noindent\textbf{4：再利用回避は適切・周期変更に疑義} 定期的に変更し以前のパスワードは再利用しない。。再利用の回避は妥当だが、機械的な周期変更の一般推奨には疑義がある。NISTの2017年6月版は侵害証拠がない恣意的な定期変更を推奨しない。出題時の資料の採用範囲は未確定。\par
+
+\noindent\textbf{5：適切} 出所不明のプログラム・USBを使用しない。。由来不明の実行コードや媒体による感染を避ける対策である。USBという規格自体が常に悪性という意味ではない。\par
+
+\paragraph{再利用する考え方} 目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。
+
+\paragraph{共通理論} \hyperref[theory:network:password]{第\ref*{theory:network:password}節}, \hyperref[theory:network:malware]{第\ref*{theory:network:malware}節}, \hyperref[theory:network:targeted]{第\ref*{theory:network:targeted}節}
+
+\par 参考：\cite{net_nist2017,net_target2020,net_ipa_account}。
+
+\paragraph{関連問題} \hyperref[q:h30-reg-basic-2-1]{H30-REG-BASIC-2-1}, \hyperref[q:r01-ret-basic-2-1]{R01-RET-BASIC-2-1}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成30年度 問2-1}
+\label{q:h30-reg-basic-2-1}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textbf{検討未確定：} 原典2はSSL/TLSと一括表記し版・暗号設定を省く。SSLv3禁止は出題前の2015年であり、SSLを安全として一般推奨できない。総称としての出題意図と字義を区別し公式4を保持。
+
+\paragraph{問題の要旨} 境界防御・保護通信・IoT・パスワード再利用・無線接続先を評価する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も不適切なもの。\par
+
+\noindent\textbf{時点：} H30年度。現在の推奨を出題当時へ無条件に転用しない。\par
+
+\paragraph{問われる核心} 攻撃面とパスワード漏洩の横展開
+
+\paragraph{必要知識} 境界防御、認証したTLS、IoT接続、資格情報再利用、無線AP。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 4は認証情報の漏洩を横展開するため不適切。各防御は対応する脅威を限定して評価する。原典2のSSLという名称はそのまま校正条件へ記録し、安全なTLSの意味と廃止済みSSLを区別する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切（限定防御）} ファイアウォールを利用。。許可通信を制御して不正アクセス等を減らす。許可通信内の攻撃や端末からの持出しまで単独で全防止するものではない。\par
+
+\noindent\textbf{2：TLS意図で適切・SSL版に疑義} SSL/TLSのような暗号通信を確認。。適切なTLSと相手認証が必要である。原典のSSL/TLSを時代の総称として保持するが、SSLv3は2015年RFC7568で禁止されており、SSLを現行でも安全と読み替えない。\par
+
+\noindent\textbf{3：適切（停止可能な機器）} 常時不要なIoTは使用後電源オフ。。常時使わず停止してよい機器について接続時間を減らす策である。継続監視や安全機能を必要とする装置を一律停止する指示ではない。\par
+
+\noindent\textbf{4：不適切} 忘れないため複数サービスで同じパスワード。。一つのサービスの漏洩情報が他サービスの認証へ悪用される。サービスごとの独自の強いパスワードが必要である。\par
+
+\noindent\textbf{5：適切} 意図しない無線AP接続を確認。。偽・無許可APへの自動接続を避ける。接続先確認に加え適切な暗号通信等も必要である。\par
+
+\paragraph{再利用する考え方} 目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。
+
+\paragraph{共通理論} \hyperref[theory:network:password]{第\ref*{theory:network:password}節}, \hyperref[theory:network:tls]{第\ref*{theory:network:tls}節}, \hyperref[theory:network:wireless]{第\ref*{theory:network:wireless}節}
+
+\par 参考：\cite{net_ssl2015,net_ipa_account,net_wep}。
+
+\paragraph{関連問題} \hyperref[q:h29-reg-basic-2-1]{H29-REG-BASIC-2-1}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和5年度 問2-1}
+\label{q:r05-reg-basic-2-1}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} パスワード変更、PIN、生体、段階数と要素数、旧無線暗号を評価する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も適切なもの。\par
+
+\noindent\textbf{時点：} R05年度。現在の推奨を出題当時へ無条件に転用しない。\par
+
+\paragraph{問われる核心} 認証要素・試行制限・秘密の更新
+
+\paragraph{必要知識} 知識/所持/生体、二段階と多要素、PINのローカル検証、レート制限、漏洩時変更。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 1が漏洩時変更と恣意的な定期変更を区別する。2〜5は用途・試行制限、確率的な生体照合、認証要素、既知の暗号弱点を無視している。NIST2017と現行2025の表現強度は時点を明記して分ける。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} 複雑で独自のパスワードなら侵害事案なしの定期変更は基本不要。。機械的な周期変更と侵害時の変更を区別する。漏洩の疑いがあれば迅速に変更し、使い回しを避ける。サービス規程や長さ・予測可能性も重要。\par
+
+\noindent\textbf{2：不適切} 4〜6桁PINは総当たりされるので使うべきでない。。PINを端末内で検証し試行を制限する場合等がある。桁数だけでオンライン無制限攻撃と同一視し全用途を禁止しない。\par
+
+\noindent\textbf{3：不適切} 生体認証は本人がいなければ必ず失敗。。生体照合は確率的で、他人受入れや提示攻撃もある。固有の情報だから本人の存在を数学的に保証するわけではない。\par
+
+\noindent\textbf{4：不適切} 二段階一要素は一段階二要素より安全。。段階は手続の回数、要素は知識・所持・生体等の種類であり違う。知識を2回入力しても2要素にはならない。段階数のみで安全性の順序は決まらない。\par
+
+\noindent\textbf{5：不適切} 古いWEP対応機器は買換えまで安全。。WEPに既知の弱点があり、古い機器という理由で安全性が復活しない。買換えまでの運用も適切な代替・停止等を検討する。\par
+
+\paragraph{再利用する考え方} 目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。
+
+\paragraph{共通理論} \hyperref[theory:network:password]{第\ref*{theory:network:password}節}, \hyperref[theory:network:factors]{第\ref*{theory:network:factors}節}, \hyperref[theory:network:wireless]{第\ref*{theory:network:wireless}節}
+
+\par 参考：\cite{net_nist2017,net_nist2025,net_wep}。
+
+\paragraph{関連問題} \hyperref[q:h23-reg-basic-2-5]{H23-REG-BASIC-2-5}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{公開鍵暗号・署名・PKIの鍵の役割}
+
+\subsection{平成27年度 問2-5}
+\label{q:h27-reg-basic-2-5}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 公開鍵基盤・電子署名・端末・無線暗号の役割を区別する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も適切なもの。\par
+
+\noindent\textbf{時点：} H27年度。現在の推奨を出題当時へ無条件に転用しない。\par
+
+\paragraph{問われる核心} 公開鍵の役割と証明書の信頼
+
+\paragraph{必要知識} 公開鍵暗号、秘密鍵、署名生成と検証、CA証明書検証、WEP。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 2がPKIの主体と公開鍵の結び付けを説明する。公開鍵で秘密を隠す暗号化と、秘密鍵で生成し公開鍵で検証する署名は目的・鍵の向きが違う。端末や無線の絶対安全という断定を排除する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 公開鍵だけが必要。。対となる秘密鍵が復号や署名生成に必要である。公開する鍵と保護する鍵を分ける。\par
+
+\noindent\textbf{2：適切} 認証局で公開鍵の所有者を保証。。CAが主体と公開鍵の対応へ署名し、利用者が証明書の署名・有効期限・信頼経路等を検証する仕組みである。保証範囲は証明書の検証条件内である。\par
+
+\noindent\textbf{3：不適切} スマートフォンは感染しない。。OSの違いによって無条件免疫にはならない。不正アプリ、脆弱性、権限悪用等への対策が必要である。\par
+
+\noindent\textbf{4：不適切} 公開鍵でダイジェストを暗号化して署名。。署名生成には秘密鍵を用い公開鍵で検証する。全署名方式を単純な「秘密鍵で暗号化」と表すのも不正確である。\par
+
+\noindent\textbf{5：不適切} WEPなら完全に盗聴を防ぐ。。WEPは既知の攻撃がある。暗号を導入した事実だけで完全な秘匿を保証しない。\par
+
+\paragraph{再利用する考え方} 目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。
+
+\paragraph{共通理論} \hyperref[theory:network:keys]{第\ref*{theory:network:keys}節}, \hyperref[theory:network:pki]{第\ref*{theory:network:pki}節}, \hyperref[theory:network:wireless]{第\ref*{theory:network:wireless}節}
+
+\par 参考：\cite{net_pki,net_signature,net_wep}。
+
+\paragraph{関連問題} \hyperref[q:r03-reg-basic-2-1]{R03-REG-BASIC-2-1}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和3年度 問2-1}
+\label{q:r03-reg-basic-2-1}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 公開鍵暗号・証明書・署名の鍵の役割と無線の推奨を比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も適切なもの。\par
+
+\noindent\textbf{時点：} R03年度。現在の推奨を出題当時へ無条件に転用しない。\par
+
+\paragraph{問われる核心} 暗号化・署名・証明書の分離
+
+\paragraph{必要知識} 公開鍵暗号の復号者、署名者と検証者、CA、WEP、端末感染。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 1が秘匿のための公開鍵暗号を説明する。署名は秘密鍵で作り公開鍵で検証し、CAの証明は公開鍵の対応である。同じ鍵対でも暗号化と署名を一つの手順へ統合しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} 公開鍵で暗号化し秘密鍵で復号。。公開鍵暗号で受信者へ秘匿する基本の鍵の向きである。実用通信では鍵確立と共通鍵暗号を組み合わせる場合もある。\par
+
+\noindent\textbf{2：不適切} CAはユーザと秘密鍵を結び付ける。。証明書が公開鍵と主体の対応を結び付ける。秘密鍵を第三者へ公開・配付して所有者を証明する仕組みではない。\par
+
+\noindent\textbf{3：不適切} スマートフォン感染の報告はない。。不正アプリ・端末脆弱性等に対する対策を不要にはできない。報告がないという原典の前提も保持できない。\par
+
+\noindent\textbf{4：不適切} 公開鍵で署名生成し秘密鍵で検証。。逆である。秘密鍵で生成し対応公開鍵で検証する。検証者に秘密鍵を配らない。\par
+
+\noindent\textbf{5：不適切} 現在の無線LANではWEPを推奨。。WEPは既知の弱い無線暗号であり出題時の安全な推奨としない。現在でもWEPを安全と教えない。\par
+
+\paragraph{再利用する考え方} 目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。
+
+\paragraph{共通理論} \hyperref[theory:network:keys]{第\ref*{theory:network:keys}節}, \hyperref[theory:network:pki]{第\ref*{theory:network:pki}節}, \hyperref[theory:network:wireless]{第\ref*{theory:network:wireless}節}
+
+\par 参考：\cite{net_pki,net_signature,net_wep}。
+
+\paragraph{関連問題} \hyperref[q:h27-reg-basic-2-5]{H27-REG-BASIC-2-5}, \hyperref[q:r06-reg-basic-2-6]{R06-REG-BASIC-2-6}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{包除原理・補集合と多重共通部分}
+
+\subsection{平成30年度 問2-6}
+\label{q:h30-reg-basic-2-6}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 三集合の包除原理から和集合の補集合の要素数を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{数値：} |U|900、|A|300、|B|180、|C|128、|A∩B|60、|A∩C|43、|B∩C|26、三重9。\par
+
+\noindent\textbf{対象：} 上線はA∪B∪C全体の補集合である。\par
+
+\paragraph{問われる核心} 三集合の包除原理から和集合の補集合の要素数を求める。
+
+\paragraph{必要知識} 三集合の重複補正と補集合の分母。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 和集合の数は300+180+128−60−43−26+9=\allowbreak{}488である。原典では和集合全体へ上線が付いており、その補集合を問う。全体900から引いて412、2となる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 385。与えた交差数の包除と全体900からの差引きに合わない。\par
+
+\noindent\textbf{2：適切} 412。和集合488の補集合は900−488=\allowbreak{}412である。\par
+
+\noindent\textbf{3：不適切} 420。三重交差等の補正を正しく扱った412とは異なる。\par
+
+\noindent\textbf{4：不適切} 480。三重交差の加算を落とした等の誤りであり412ではない。\par
+
+\noindent\textbf{5：不適切} 488。488は和集合の数であり問う補集合ではない。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:information:sets]{第\ref*{theory:information:sets}節}, \hyperref[theory:discrete:inclusion]{第\ref*{theory:discrete:inclusion}節}
+
+\par 参考：\cite{mit_discrete2015}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和4年度 問2-2}
+\label{q:r04-reg-basic-2-2}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 四集合の包除原理から四重共通部分の要素数を逆算する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断対象：} 四集合の包除と二重6・三重4の数え上げ。\par
+
+\noindent\textbf{原典確認：} 図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。\par
+
+\paragraph{問われる核心} 四集合の包除原理から四重共通部分の要素数を逆算する。
+
+\paragraph{必要知識} 四集合の包除と二重6・三重4の数え上げ。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 単集合は4通り、二重は6通り、三重は4通りなので、和集合16=\allowbreak{}4×11−6×7+4×4−x=\allowbreak{}18−x。x=\allowbreak{}2、3である。各交差が同じ値でも、一つだけ引いたり足したりせず組合せ数を掛ける。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 8。三重共通部分の一つ4より大きく包含条件にも反する。\par
+
+\noindent\textbf{2：不適切} 4。包除式では和集合14となり条件16と違う。\par
+
+\noindent\textbf{3：適切} 2。44−42+16−2=\allowbreak{}16で条件に合う。\par
+
+\noindent\textbf{4：不適切} 1。包除式で和集合17となる。\par
+
+\noindent\textbf{5：不適切} 0。包除式で和集合18となる。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:discrete:inclusion]{第\ref*{theory:discrete:inclusion}節}
+
+\par 参考：\cite{mit_discrete2015}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{可逆性・圧縮限界・普遍性と情報源通信路分離}
+
+\subsection{令和2年度 問2-1}
+\label{q:r02-reg-basic-2-1}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 可逆/非可逆圧縮、代表形式、未知情報源への圧縮可能性と圧縮限界を比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も不適切\par
+
+\paragraph{問われる核心} 可逆性・平均符号長の限界と普遍的/適応的圧縮
+
+\paragraph{必要知識} 可逆性・平均符号長の限界と普遍的/適応的圧縮。事前分布の既知性と、観測データから規則を構成することを区別する。DEFLATEの反復列への参照や動的符号表は、入力から圧縮表現を作れる具体例である。未知だから圧縮不能という肢が不適切。限界は一意復号や平均長の条件付きであり、特定の短い列にエントロピー平均下限を機械的に適用しない。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 事前分布の既知性と、観測データから規則を構成することを区別する。DEFLATEの反復列への参照や動的符号表は、入力から圧縮表現を作れる具体例である。未知だから圧縮不能という肢が不適切。限界は一意復号や平均長の条件付きであり、特定の短い列にエントロピー平均下限を機械的に適用しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} 可逆圧縮は完全復元しテキスト等で多用。。元ビット列を一意に復元する性質が可逆の定義である。文字1つの変更が意味を変えるテキストでは重要。\par
+
+\noindent\textbf{2：適切} 非可逆圧縮は完全復元しない場合があり音声・映像等で多用。。知覚上許せる情報損失を利用してデータ量を減らす。全ての音声/映像が非可逆という断定ではない。\par
+
+\noindent\textbf{3：適切} JPEGは静止画、MPEGは動画の代表的圧縮方式。。代表用途として正しい。JPEG/MPEGは複数の方式・規格を持つ名称であり、全方式を一律に可逆/非可逆とは扱わない。\par
+
+\noindent\textbf{4：不適切} 情報源の事前知識がなければデータ圧縮できない。。データから頻度を学ぶ適応方式や繰り返しを辞書へ写す方式が反例。真の生起確率を事前に与える必要はない。\par
+
+\noindent\textbf{5：適切} 可逆圧縮には方式では超えられない限界がある。。一意復号可能な符号の平均長はエントロピーで制約され、全ての入力を必ず短くする単射も作れない。個別列が必ず同じ下限長という意味ではない。\par
+
+\paragraph{再利用する考え方} 符号化の目的、情報量と物理的データ長、条件付き時間と平均時間を区別する。可逆性・平均符号長の限界と普遍的/適応的圧縮の定義と適用条件を確認する。
+
+\paragraph{共通理論} \hyperref[theory:information:compression]{第\ref*{theory:information:compression}節}, \hyperref[theory:information:entropy]{第\ref*{theory:information:entropy}節}, \hyperref[theory:information:universal]{第\ref*{theory:information:universal}節}
+
+\par 参考：\cite{info_deflate,info_lossless,info_universal,info_jpeg,info_mpeg}。
+
+\paragraph{関連問題} \hyperref[q:r05-reg-basic-2-4]{R05-REG-BASIC-2-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和5年度 問2-4}
+\label{q:r05-reg-basic-2-4}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 可逆/非可逆圧縮、代表形式、未知情報源への圧縮可能性と圧縮限界を比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も不適切\par
+
+\paragraph{問われる核心} 可逆性・平均符号長の限界と普遍的/適応的圧縮
+
+\paragraph{必要知識} 可逆性・平均符号長の限界と普遍的/適応的圧縮。事前分布の既知性と、観測データから規則を構成することを区別する。DEFLATEの反復列への参照や動的符号表は、入力から圧縮表現を作れる具体例である。未知だから圧縮不能という肢が不適切。限界は一意復号や平均長の条件付きであり、特定の短い列にエントロピー平均下限を機械的に適用しない。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 事前分布の既知性と、観測データから規則を構成することを区別する。DEFLATEの反復列への参照や動的符号表は、入力から圧縮表現を作れる具体例である。未知だから圧縮不能という肢が不適切。限界は一意復号や平均長の条件付きであり、特定の短い列にエントロピー平均下限を機械的に適用しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 情報源の事前知識がなければデータ圧縮できない。。データから頻度を学ぶ適応方式や繰り返しを辞書へ写す方式が反例。真の生起確率を事前に与える必要はない。\par
+
+\noindent\textbf{2：適切} 可逆圧縮には方式では超えられない限界がある。。一意復号可能な符号の平均長はエントロピーで制約され、全ての入力を必ず短くする単射も作れない。個別列が必ず同じ下限長という意味ではない。\par
+
+\noindent\textbf{3：適切} 非可逆圧縮は完全復元しない場合があり音声・映像等で多用。。知覚上許せる情報損失を利用してデータ量を減らす。全ての音声/映像が非可逆という断定ではない。\par
+
+\noindent\textbf{4：適切} 可逆圧縮は完全復元しテキスト等で多用。。元ビット列を一意に復元する性質が可逆の定義である。文字1つの変更が意味を変えるテキストでは重要。\par
+
+\noindent\textbf{5：適切} JPEGは静止画、MPEGは動画の代表的圧縮方式。。代表用途として正しい。JPEG/MPEGは複数の方式・規格を持つ名称であり、全方式を一律に可逆/非可逆とは扱わない。\par
+
+\paragraph{再利用する考え方} 符号化の目的、情報量と物理的データ長、条件付き時間と平均時間を区別する。可逆性・平均符号長の限界と普遍的/適応的圧縮の定義と適用条件を確認する。
+
+\paragraph{共通理論} \hyperref[theory:information:compression]{第\ref*{theory:information:compression}節}, \hyperref[theory:information:entropy]{第\ref*{theory:information:entropy}節}, \hyperref[theory:information:universal]{第\ref*{theory:information:universal}節}
+
+\par 参考：\cite{info_deflate,info_lossless,info_universal,info_jpeg,info_mpeg}。
+
+\paragraph{関連問題} \hyperref[q:r02-reg-basic-2-1]{R02-REG-BASIC-2-1}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和7年度 問2-2}
+\label{q:r07-reg-basic-2-2}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 情報源符号化、通信路符号化、分離原理、普遍符号化、多元情報理論を区別する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も不適切\par
+
+\noindent\textbf{モデルの範囲：} 単一情報源・単一入力単一出力通信路と多元系を区別\par
+
+\paragraph{問われる核心} 情報源/通信路符号化の目的と分離/普遍性の条件
+
+\paragraph{必要知識} 情報源/通信路符号化の目的と分離/普遍性の条件。圧縮は情報源の冗長性を減らし、通信路符号化は雑音に耐える制御された冗長性を加える。定常無記憶な点対点モデルで十分長いブロックを使うなどの条件では両設計を分離できる。一方、普遍符号化は事前に真の情報源分布を知らない場合に対応する考えである。4はこの名称を取り違える。通信路容量との整合や有限遅延での性能まで無視できるわけではない。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 圧縮は情報源の冗長性を減らし、通信路符号化は雑音に耐える制御された冗長性を加える。定常無記憶な点対点モデルで十分長いブロックを使うなどの条件では両設計を分離できる。一方、普遍符号化は事前に真の情報源分布を知らない場合に対応する考えである。4はこの名称を取り違える。通信路容量との整合や有限遅延での性能まで無視できるわけではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} 情報源系列から通信路入力への変換が符号化、受信から元系列等への変換が復号化。。通信系における符号器/復号器の基本的役割を述べる。非可逆では元に近い系列へ復元する場合もある。\par
+
+\noindent\textbf{2：適切} 雑音なしで情報源長を固定し通信路入力長を小さくする課題が情報源符号化。。既定の情報を短い符号列へ表す圧縮の課題である。\par
+
+\noindent\textbf{3：適切} 一様な無記憶情報源で通信路入力長を固定し情報源長/伝送レートを増す課題が通信路符号化。。固定長の通信路利用で送れるメッセージ数を増し、誤り確率を抑える通信路符号化の課題である。\par
+
+\noindent\textbf{4：不適切} 情報源符号化で通信路の確率特性を逐一考慮しない扱いがユニバーサル符号化。。標準的な情報源と通信路の分離原理の話である。普遍符号化は情報源分布などが未知なクラスに対応する概念であり、通信路特性を考慮しないという定義ではない。\par
+
+\noindent\textbf{5：適切} 相関した複数情報源や複数通信路の圧縮/伝送を多元情報理論で扱う。。複数利用者・相関情報源のモデルを扱う一般的な分野説明である。分離が多元モデルで常に最適という追加主張はない。\par
+
+\paragraph{再利用する考え方} 符号化の目的、情報量と物理的データ長、条件付き時間と平均時間を区別する。情報源/通信路符号化の目的と分離/普遍性の条件の定義と適用条件を確認する。
+
+\paragraph{共通理論} \hyperref[theory:information:separation]{第\ref*{theory:information:separation}節}, \hyperref[theory:information:universal]{第\ref*{theory:information:universal}節}, \hyperref[theory:information:entropy]{第\ref*{theory:information:entropy}節}
+
+\par 参考：\cite{info_separation,info_universal,info_lossless}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{スタック・データ構造}
+
+\subsection{平成26年度 問2-4}
+\label{q:h26-reg-basic-2-4}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理7頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 空スタックへ指定された8操作を実行し、最後のPOPの値を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{initial\_stack：} empty\par
+
+\noindent\textbf{operations：} ['PUSH 1', 'PUSH 2', 'PUSH 3', 'POP', 'PUSH 4', 'PUSH 5', 'POP', 'POP']\par
+
+\paragraph{問われる核心} データ構造・形式言語
+
+\paragraph{必要知識} LIFO、PUSH/POP、状態追跡
+
+\paragraph{考え方（査読待ち初稿）} スタックを底から上へ記録する。操作後は [1]→[1,2]→[1,2,3]→[1,2]→[1,2,4]→[1,2,4,5]→[1,2,4]→[1,2]。最後のPOPで取り出す値は4なので選択肢④。
+
+\paragraph{他の選択肢（査読待ち初稿）} ①1と②2は最後のPOP後も残る。③3は4番目の操作で、⑤5は7番目の操作で取り出される。途中のPOPと最後のPOPを混同しない。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和元年度 問2-6}
+\label{q:r01-reg-basic-2-6}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} スタック操作の途中状態を追って最後のPOPの戻り値を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{判断対象：} 後入れ先出し、PUSH/POPの状態と戻り値。\par
+
+\noindent\textbf{原典確認：} 図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。\par
+
+\paragraph{問われる核心} スタック操作の途中状態を追って最後のPOPの戻り値を求める。
+
+\paragraph{必要知識} 後入れ先出し、PUSH/POPの状態と戻り値。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 底から[1,2,3,4]となりPOPで4と3を除く。[1,2]へ5をPUSHし、POPで5、最後のPOPで2が返る。残る1と最後に返った2を区別し2を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 1。1は最後にスタックへ残る底の値である。\par
+
+\noindent\textbf{2：適切} 2。取り出し列4,3,5,2の最後である。\par
+
+\noindent\textbf{3：不適切} 3。2回目のPOPで既に取り出されている。\par
+
+\noindent\textbf{4：不適切} 4。1回目のPOPの値である。\par
+
+\noindent\textbf{5：不適切} 5。最後から2回目のPOPの値である。\par
+
+\paragraph{再利用する考え方} 定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。
+
+\paragraph{共通理論} \hyperref[theory:discrete:stack]{第\ref*{theory:discrete:stack}節}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{標的型攻撃の多層防御・報告・復旧}
+
+\subsection{令和元年度再試験 問2-1}
+\label{q:r01-ret-basic-2-1}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 感染予防と、感染後に改ざんされたシステムの復旧を区別する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も適切なもの。\par
+
+\noindent\textbf{時点：} R01年度。現在の推奨を出題当時へ無条件に転用しない。\par
+
+\paragraph{問われる核心} 検知・除去・復旧は別の工程
+
+\paragraph{必要知識} マルウェア、最小権限・攻撃面、信頼したバックアップ、なりすまし。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 5が感染除去と既発生の改ざんからの回復を区別する。検知ソフトを導入したという事実だけでファイルの原状復帰を保証しない。1〜4は予防に逆行する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 短い単純なパスワード。。推測が容易となる。記憶の容易さはパスワード管理等で扱い、短く単純という選択を安全策にしない。\par
+
+\noindent\textbf{2：不適切} 性能のためウイルス対策不要。。性能だけを理由に必要な防御を除外するのは不適切。適切な製品・設定・更新と多層防御を検討する。\par
+
+\noindent\textbf{3：不適切} 実在の企業名なら添付を信用。。表示名や企業名は偽装でき、正規アカウントも侵害され得る。内容・送信経路を確認する。\par
+
+\noindent\textbf{4：不適切} 使わないポートも開く。。不要な待受サービスを増やすと攻撃面が広がる。必要なポートと送信・受信を限定する。\par
+
+\noindent\textbf{5：適切} システム改ざんによって完全修復が難しい感染もある。。マルウェアの検出・除去と破壊・改ざん済みデータの回復は別である。信頼できるバックアップや再構築を要することがある。\par
+
+\paragraph{再利用する考え方} 目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。
+
+\paragraph{共通理論} \hyperref[theory:network:malware]{第\ref*{theory:network:malware}節}, \hyperref[theory:network:targeted]{第\ref*{theory:network:targeted}節}, \hyperref[theory:network:password]{第\ref*{theory:network:password}節}
+
+\par 参考：\cite{net_target2020,net_ipa_account}。
+
+\paragraph{関連問題} \hyperref[q:h29-reg-basic-2-1]{H29-REG-BASIC-2-1}, \hyperref[q:r07-reg-basic-2-4]{R07-REG-BASIC-2-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和2年度 問2-3}
+\label{q:r02-reg-basic-2-3}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 標的型攻撃の入口・多層防御・連絡・実行制御・訓練を判断する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も不適切なもの。\par
+
+\noindent\textbf{時点：} R02年度。現在の推奨を出題当時へ無条件に転用しない。\par
+
+\paragraph{問われる核心} 正規サービスの悪用と多層防御
+
+\paragraph{必要知識} URLと実ファイルの違い、入口・内部・出口、実行許可、組織的報告。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 1はサービス名の正規性と格納ファイルの安全性を混同している。IPA白書2020は正規オンラインストレージのURLからウイルスを取得させる攻撃を記録する。メール境界検査に加えて端末・実行制限・連絡・教育を組み合わせる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 正規オンラインストレージを確認しメールゲートウェイで検知。。正規のサービスにも攻撃者は悪性ファイルを置ける。本文にURLだけ載る場合、メール内容の検査だけでリンク先の実体を常に検査・検知できない。\par
+
+\noindent\textbf{2：適切（記述の条件内）} 複数対策の多層防御。。入口・端末・ネットワーク・運用等を組み合わせ、単独策が破られた場合も被害低減を図る。\par
+
+\noindent\textbf{3：適切（記述の条件内）} 組織内の連絡窓口を周知。。受信・誤操作時に早期報告できる既知の窓口は調査・封じ込めへつながる。\par
+
+\noindent\textbf{4：適切（記述の条件内）} 実行可能ファイルの制限。。許可した実行対象へ限定することで悪性実行の経路を減らす。万能検知ではなく業務許可の設計・更新が必要。\par
+
+\noindent\textbf{5：適切（記述の条件内）} 模擬メールの定期訓練。。利用者が不審メールを認識・報告する練習となる。組織の承認・個人の扱い・連絡手順を含む適切な訓練として行う。\par
+
+\paragraph{再利用する考え方} 目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。
+
+\paragraph{共通理論} \hyperref[theory:network:targeted]{第\ref*{theory:network:targeted}節}, \hyperref[theory:network:malware]{第\ref*{theory:network:malware}節}, \hyperref[theory:network:sandbox]{第\ref*{theory:network:sandbox}節}
+
+\par 参考：\cite{net_target2020,net_target2023}。
+
+\paragraph{関連問題} \hyperref[q:r07-reg-basic-2-4]{R07-REG-BASIC-2-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和4年度 問2-1}
+\label{q:r04-reg-basic-2-1}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理5頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textbf{検討未確定：} 肢3は比較する端末管理・運用・利用者条件を省き「オフィスより危険性が高まる」とする。一般的な留意事項と普遍的比較命題を区別し、公式1・初回1を保持。
+
+\paragraph{問題の要旨} テレワーク時の会議参加制御・VPN・人的攻撃・連絡体制を判断する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も不適切なもの。\par
+
+\noindent\textbf{時点：} R04年度。現在の推奨を出題当時へ無条件に転用しない。\par
+
+\paragraph{問われる核心} 通信路の秘匿と会議参加認証の違い
+
+\paragraph{必要知識} 認可・認証、待機室、脆弱性管理、ショルダーサーフィン、連絡手順。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 1は案内の秘匿と参加認証の混同である。IPAの2020年Web会議資料は安全配付と参加者確認・認証を併記する。3は運用条件に依存するリスク説明としてのみ理解し、無条件の相対リスク命題は査読対象へ残す。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 安全な経路で会議URLを送れば意図しない参加を防げる。。案内の安全な配付だけでなく参加者認証・待機室等が必要。正規参加者からの流出や共有などもありURL送付だけで十分とはいえない。\par
+
+\noindent\textbf{2：適切} VPN製品の脆弱性情報を常に収集。。対策適用・接続管理のための情報収集が重要である。収集だけで修正済みとはならない。\par
+
+\noindent\textbf{3：条件付きの傾向・全称未確定} オフィスよりフィッシング被害リスクが高まる。。相談・監視・端末管理が弱まる運用では危険性が増し得る。一律に全テレワークの危険度が全オフィスより高いとはいえず、原典に比較条件がない。\par
+
+\noindent\textbf{4：適切} 第三者の多い場所での業務を避ける。。のぞき見・盗聴等の機会を減らす。接続暗号化は周囲からの視聴や会話聴取を防ぐものではない。\par
+
+\noindent\textbf{5：適切} 連絡先不明はインシデントの被害拡大へつながる。。遅れた報告・封じ込めにより攻撃継続や拡大の可能性がある。事前に連絡先と手順を確認する。\par
+
+\paragraph{再利用する考え方} 目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。
+
+\paragraph{共通理論} \hyperref[theory:network:telework]{第\ref*{theory:network:telework}節}, \hyperref[theory:network:tls]{第\ref*{theory:network:tls}節}, \hyperref[theory:network:targeted]{第\ref*{theory:network:targeted}節}
+
+\par 参考：\cite{net_meeting2020,net_telework}。
+
+\paragraph{関連問題} \hyperref[q:r07-reg-basic-2-4]{R07-REG-BASIC-2-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和7年度 問2-4}
+\label{q:r07-reg-basic-2-4}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 多層防御・連絡・実行制御・知見共有と、外部解析への送信リスクを比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も不適切なもの。\par
+
+\noindent\textbf{時点：} R07年度。現在の推奨を出題当時へ無条件に転用しない。\par
+
+\paragraph{問われる核心} 標的型防御と検査先への情報開示
+
+\paragraph{必要知識} 多層防御、許可リスト、窓口、攻撃指標、外部解析の情報取扱い。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 5は検知のための送信それ自体が機密流出の経路となる。IPA白書2023の公開該当記述もオンライン検査・サンドボックスへのアップロードによる意図しない漏洩を警告する。承認された閉域解析等と無差別な外部投入を区別する。組織間の4の手口共有は、機密を管理した共有である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切（記述の条件内）} 複数策を多層的に組合せ。。異なる地点・仕組みの防御を組み合わせて侵入・実行・被害拡大を減らす。多数の同じ製品を置くだけでは独立した防御にならない。\par
+
+\noindent\textbf{2：適切（記述の条件内）} 不審メールの組織内窓口を周知。。早期の情報収集と対応へつなぐ。利用者が勝手に危険ファイルを他者へ転送する指示ではない。\par
+
+\noindent\textbf{3：適切（記述の条件内）} 実行可能ファイルを制限。。業務に必要な許可対象へ限定することで悪性コード実行を減らす。署名・パス・ハッシュ等の運用条件を管理する。\par
+
+\noindent\textbf{4：適切（記述の条件内）} 攻撃手口を組織間で共有。。攻撃指標・手口の適切な共有は他組織の検知へ役立つ。機密内容や個人情報をそのまま公開する意味ではない。\par
+
+\noindent\textbf{5：不適切} オンラインの検査・サンドボックスへ添付を積極投入。。公開の解析サービスは提出ファイルを保持・共有する場合があり、機密添付を送ると情報漏洩を起こし得る。利用規約・契約・組織の承認・対象情報の性質を確認せず積極投入するのは不適切。\par
+
+\paragraph{再利用する考え方} 目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。
+
+\paragraph{共通理論} \hyperref[theory:network:targeted]{第\ref*{theory:network:targeted}節}, \hyperref[theory:network:sandbox]{第\ref*{theory:network:sandbox}節}
+
+\par 参考：\cite{net_target2020,net_target2023}。
+
+\paragraph{関連問題} \hyperref[q:r01-ret-basic-2-1]{R01-RET-BASIC-2-1}, \hyperref[q:r02-reg-basic-2-3]{R02-REG-BASIC-2-3}, \hyperref[q:r04-reg-basic-2-1]{R04-REG-BASIC-2-1}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{TCPの窓・ACK・輻輳制御}
+
+\subsection{令和7年度 問2-3}
+\label{q:r07-reg-basic-2-3}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理6頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textbf{検討未確定：} 原典1は出題前2001年のECN、2はRFC5681/6928の初期窓、5はFlightSizeと閾値下限を省く。旧来の1MSS基本模型の意図と2025年TCP全体の命題を区別する。初回3・公式3を保持、他肢の無条件適切性は未確定。
+
+\paragraph{問題の要旨} TCPのACK単位・RTT単位の窓増加と損失時制御を比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{方向：} 最も不適切なもの。\par
+
+\noindent\textbf{時点：} R07年度。現在の推奨を出題当時へ無条件に転用しない。\par
+
+\paragraph{問われる核心} 窓増加の単位・ECN・損失窓
+
+\paragraph{必要知識} cwndとrwnd、MSS、RTT、ACK、Reno、ECN、FlightSize、初期窓と損失窓。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 3の時間尺度が誤っている。1RTTで窓W分のセグメントがACKされ各ACKで1MSS増える理想模型なら\(W_{n+1}\simeq2W_n\)である。輻輳回避は\(W_{n+1}\simeq W_n+\mathrm{MSS}\)の加算増加と区別する。遅延ACK・累積ACK・ABC等で係数は変わる。1・2・5の普遍性は出題時点に既存RFCとも合わないため、公式3を保持しながら原典疑義を明示する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：旧模型限定・ECNに疑義} ネットワーク層以下から混雑情報は直接得られない。。損失やACKを用いる旧来の説明に限れば理解できるが、ECNではIPヘッダのCEとTCPのECE等で明示的に混雑を通知する。直接情報なしを現行TCP全般へ広げない。\par
+
+\noindent\textbf{2：旧模型限定・初期窓に疑義} 開始時cwnd=\allowbreak{}1MSS。。基本模型の初期値としては使えるが、RFC5681はMSSに応じ2〜4MSSの初期上限を許し、実験的RFC6928は任意のIW10も扱う。常に1MSSではない。\par
+
+\noindent\textbf{3：不適切} ACKごと+MSSなのでスロースタートは線形。。ACKが1セグメントごと返る模型では窓内のACK数も増えるので1RTTあたり概ね倍増となる。ACK回数に対する線形と時間に対する指数的増加を取り違えている。\par
+
+\noindent\textbf{4：Reno型として適切} 輻輳回避は概ね1RTTあたり+1MSS。。Reno型の加算増加におけるRTT単位の説明として妥当。全ての現行TCP輻輳アルゴリズムをこの式へ固定しない。\par
+
+\noindent\textbf{5：模型意図・FlightSizeと下限に疑義} タイムアウトで閾値=cwnd/2、cwnd=\allowbreak{}1MSS。。基本模型では意図を理解できるがRFC5681の閾値上限はmax(FlightSize/2,2SMSS)。未確認データ量とcwndは別で、下限もある。タイムアウトで損失窓へ戻す点は妥当。\par
+
+\paragraph{再利用する考え方} 目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。
+
+\paragraph{共通理論} \hyperref[theory:network:tcp]{第\ref*{theory:network:tcp}節}, \hyperref[theory:network:ecn]{第\ref*{theory:network:ecn}節}
+
+\par 参考：\cite{net_tcp2009,net_ecn2001,net_iw2013}。
+
+\par 難易度 3（校準初稿）、優先度未評価。

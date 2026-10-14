@@ -1,0 +1,50 @@
+{
+  "stem": "産業廃棄物フローを物質収支で検算。",
+  "conditions": {
+    "排出": "379百万t。",
+    "中間処理": "290。",
+    "直接再生": "83。",
+    "処理後再生": "124。",
+    "処理後最終処分": "7。",
+    "全再生": "207。",
+    "全最終処分": "13。"
+  },
+  "choices": {
+    "1": {
+      "value": "直接再利用83で約40%",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "再利用207で55%・処分の16倍",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "処理後124で直接の1.5倍",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "減量159で42%",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "5": {
+      "value": "直接処分60で16%",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/basic/page_021.png"
+  ],
+  "question_id": "H28-REG-BASIC-5-1",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "21",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "ba81de562bc9b7bf861b49ddd04703651acc2831e6b0c95d374d08ce4fcb7a99",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

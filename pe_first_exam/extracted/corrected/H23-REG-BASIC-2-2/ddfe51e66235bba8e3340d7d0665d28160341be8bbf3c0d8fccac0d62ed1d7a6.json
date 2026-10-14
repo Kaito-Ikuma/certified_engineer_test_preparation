@@ -1,0 +1,46 @@
+{
+  "stem": "通信ネットワークの辺遅延を足し、AからFへの最短経路の所要値を求める。",
+  "conditions": {
+    "方向": "最短遅延。",
+    "原典の全辺": "AB=1、AC=2、BC=3、BD=1、BE=2、CE=4、CF=4、DF=4、EF=2。図の接続方向に従う。",
+    "単位": "原典が指定しない時間単位をms等と補わない。"
+  },
+  "choices": {
+    "1": {
+      "value": "1",
+      "verdict": "不一致",
+      "reason": "最短でもA-B-E-Fの5を要する。単一の辺ABの1を総時間と取り違えている。"
+    },
+    "2": {
+      "value": "5",
+      "verdict": "適切",
+      "reason": "A-B-E-Fの遅延は1+2+2=5。距離の確定でこれより短い経路がないと検証できる。"
+    },
+    "3": {
+      "value": "6",
+      "verdict": "不一致",
+      "reason": "A-C-F=2+4やA-B-D-F=1+1+4は6だが、経路が存在することは最短性を保証しない。"
+    },
+    "4": {
+      "value": "8",
+      "verdict": "不一致",
+      "reason": "より短い5の経路がある。図の辺を全て通る問題でも最長経路でもない。"
+    },
+    "5": {
+      "value": "10",
+      "verdict": "不一致",
+      "reason": "5の経路と比較して大きい。総辺数や全遅延の合計を使わない。"
+    }
+  },
+  "figures": "原典6頂点9辺と全重みを画像照合。独自の辺リストとして記録し原典図を転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/basic/page_005.png"
+  ],
+  "question_id": "H23-REG-BASIC-2-2",
+  "source_file": "sources/H23/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+  "raw_text_sha256": "6afd8e9953be808c39d59e0a9a3baa6310743f2809a692638f84b09dbfcfed33",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

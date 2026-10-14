@@ -1,0 +1,46 @@
+{
+  "stem": "微分方程式と一点の値から二階・三階導関数を求める。",
+  "conditions": {
+    "関係": "\\(f'(x)=1+f(x)^2\\)",
+    "初期値": "\\(f(0)=1\\)",
+    "求める量": "\\((f''(0),f'''(0))\\)"
+  },
+  "choices": {
+    "1": {
+      "value": "\\((2,4)\\)",
+      "verdict": "条件に不一致",
+      "reason": "f′(0)=2だが二階導関数は2ff′=4である。"
+    },
+    "2": {
+      "value": "\\((2,6)\\)",
+      "verdict": "条件に不一致",
+      "reason": "二階導関数4に一致しない。"
+    },
+    "3": {
+      "value": "\\((2,8)\\)",
+      "verdict": "条件に不一致",
+      "reason": "二階導関数4に一致しない。"
+    },
+    "4": {
+      "value": "\\((4,12)\\)",
+      "verdict": "条件に不一致",
+      "reason": "二階は合うが三階では積の微分の両項を数えると16になる。"
+    },
+    "5": {
+      "value": "\\((4,16)\\)",
+      "verdict": "条件に一致",
+      "reason": "二階4、三階16に一致する。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_011.png"
+  ],
+  "question_id": "R01-RET-BASIC-3-1",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "11",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "226f2994c5b671985cf54fe8f1fb8ac24fdc30cd2147d357822b9d256ba05be7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

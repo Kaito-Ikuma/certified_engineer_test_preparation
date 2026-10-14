@@ -1,0 +1,45 @@
+{
+  "stem": "断層面の記録・断層岩・横ずれ盆地を、浮力等による貫入構造と区別する。",
+  "conditions": {
+    "判断方向": "最も関係が薄いもの。",
+    "原典照合": "全5肢、上下・平行直交・右左・時代・固結度と割合を画像照合。図なし。"
+  },
+  "choices": {
+    "1": {
+      "value": "鏡肌",
+      "verdict": "直接関連",
+      "reason": "すべりと研磨で形成される平滑な断層面である。"
+    },
+    "2": {
+      "value": "破砕岩",
+      "verdict": "直接関連",
+      "reason": "断層帯の粒子破砕に伴う岩石である。"
+    },
+    "3": {
+      "value": "条線",
+      "verdict": "直接関連",
+      "reason": "すべりの軸方向を記録する傷・線状構造である。向きの正負は別の指標が必要。"
+    },
+    "4": {
+      "value": "プルアパート構造",
+      "verdict": "運動に関連",
+      "reason": "横ずれ断層の開く屈曲・ステップ等で形成される伸張性の盆地構造である。"
+    },
+    "5": {
+      "value": "ダイアピール",
+      "verdict": "最も薄い",
+      "reason": "低密度等の塑性物質が周囲を変形させて上昇する構造であり、断層の直接の組織・すべり記録ではない。断層と共存する場合を否定しない。"
+    }
+  },
+  "figures": "設問固有図なし。原典の用語・否定・全5肢を確認。剪断の方位条件を推測で補わない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_008.png"
+  ],
+  "question_id": "H25-REG-APPLIED-20",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "d4e5193dd43849c12b942976fa258fb70899877aa65e7c88b844a9091be270f1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

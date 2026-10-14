@@ -1,0 +1,46 @@
+{
+  "stem": "Sn–Ag–Cu合金の質量分率をモル分率へ換算する。",
+  "conditions": {
+    "質量分率": "Sn96.5%、Ag3.00%、Cu0.500%。",
+    "原子量": "Sn118.7、Ag107.8、Cu63.5。",
+    "候補の並び": "Sn／Ag／Cuのモル分率%。"
+  },
+  "choices": {
+    "1": {
+      "value": "97.0／2.74／0.269",
+      "verdict": "条件に不一致",
+      "reason": "各質量を原子量で割って正規化した組と違い、特にCuが小さすぎる。"
+    },
+    "2": {
+      "value": "97.0／2.34／0.662",
+      "verdict": "条件に不一致",
+      "reason": "正規化したAg約3.28%、Cu約0.928%と合わない。"
+    },
+    "3": {
+      "value": "96.5／3.00／0.500",
+      "verdict": "条件に不一致",
+      "reason": "質量分率をそのまま書いており原子量の差が反映されない。"
+    },
+    "4": {
+      "value": "95.8／3.82／0.375",
+      "verdict": "条件に不一致",
+      "reason": "Snは合うがAgとCuのモル比が与えられた質量/原子量と合わない。"
+    },
+    "5": {
+      "value": "95.8／3.28／0.928",
+      "verdict": "条件に一致",
+      "reason": "各成分の物質量を合計で割った95.8%、3.28%、0.928%に一致する。"
+    }
+  },
+  "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/basic/page_014.png"
+  ],
+  "question_id": "R07-REG-BASIC-4-4",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "3144fa689a8ef9031117090098dbdae6317dcfb67cac2ae4f5229317d8605ba1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

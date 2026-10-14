@@ -1,0 +1,21 @@
+{
+  "time": "2026-10-09T21:18:07+09:00",
+  "questions": [
+    "H24-REG-APPLIED-24",
+    "R01-RET-APPLIED-25",
+    "H25-REG-APPLIED-22",
+    "H25-REG-APPLIED-23",
+    "H26-REG-APPLIED-28",
+    "H29-REG-APPLIED-27",
+    "H27-REG-APPLIED-30",
+    "H30-REG-APPLIED-31",
+    "R01-REG-APPLIED-26",
+    "R03-REG-APPLIED-22",
+    "R03-REG-APPLIED-25",
+    "R04-REG-APPLIED-23",
+    "R06-REG-APPLIED-23"
+  ],
+  "source_conditions_checked": 13,
+  "solution_drafts": 13,
+  "final_verification": false
+}

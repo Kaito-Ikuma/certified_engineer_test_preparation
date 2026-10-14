@@ -1,0 +1,45 @@
+{
+  "stem": "二価の銅イオンの析出量から必要電荷と通電時間を求める。",
+  "conditions": {
+    "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+    "成立条件": "電流5.36 A、Cu 1.27 g、モル質量63.5 g/mol、F=96500 C/mol。全電流が電気分解に使われるという原典指定により電流効率1とする。"
+  },
+  "choices": {
+    "1": {
+      "value": "2分",
+      "verdict": "不適切",
+      "reason": "必要電荷3860 Cに対し5.36×120=643.2 Cしか流れない。"
+    },
+    "2": {
+      "value": "6分",
+      "verdict": "不適切",
+      "reason": "1929.6 Cであり、Cu2+に2電子が必要なことを無視するとこの時間に近付く。"
+    },
+    "3": {
+      "value": "10分",
+      "verdict": "不適切",
+      "reason": "3216 Cであり、指定析出量に必要な3860 Cより不足する。"
+    },
+    "4": {
+      "value": "12分",
+      "verdict": "適切",
+      "reason": "3859.2 Cとなり丸めた必要電荷と一致する。"
+    },
+    "5": {
+      "value": "20分",
+      "verdict": "不適切",
+      "reason": "6432 Cとなり、指定析出量に必要な電荷より大きい。"
+    }
+  },
+  "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_005.png"
+  ],
+  "question_id": "H25-REG-APPLIED-12",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "fc5ac89f41f78c1ce79fab83938882cc0be629ca484cdc8f9c485f1ad1f08f1a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

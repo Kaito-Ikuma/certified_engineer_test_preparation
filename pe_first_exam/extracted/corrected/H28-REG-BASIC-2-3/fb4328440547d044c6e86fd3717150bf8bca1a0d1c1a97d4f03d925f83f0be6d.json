@@ -1,0 +1,46 @@
+{
+  "stem": "11を例に、2で割った余りを配列へ格納する二進変換流れ図の分岐と更新を選ぶ。",
+  "conditions": {
+    "初期化": "I=-1、Nは自然数。",
+    "操作": "Nと0を比較。継続側でIを1増やしてA[I]へNを2で割った余りを保存し、Nを更新。終了側でA[I]からA[0]を逆順表示。",
+    "空欄順": "アは継続条件、イは終了条件、ウはNの更新。"
+  },
+  "choices": {
+    "1": {
+      "value": "N>0／N=0／Nを2で割った商",
+      "verdict": "適切な解答候補",
+      "reason": "正のNについて余りを保存し整数商へ更新、商0で終了する。"
+    },
+    "2": {
+      "value": "N>0／N=0／Nを2で割った余り",
+      "verdict": "不適切な解答候補",
+      "reason": "余りをNへ戻すと桁の取り出しが進まず、余り1では停止しない。"
+    },
+    "3": {
+      "value": "N=0／N>0／Nを2で割った商",
+      "verdict": "不適切な解答候補",
+      "reason": "初期値11が正の段階で終了し、桁を生成できない。"
+    },
+    "4": {
+      "value": "N=0／N>0／Nを2で割った余り",
+      "verdict": "不適切な解答候補",
+      "reason": "分岐が逆であり、更新も桁を消去する商ではない。"
+    },
+    "5": {
+      "value": "N>0／N=0／2N",
+      "verdict": "不適切な解答候補",
+      "reason": "Nを増加させるため正の入力で終了に近づかない。"
+    }
+  },
+  "figures": "流れ図の初期化、分岐、添字、更新と終了条件を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/basic/page_009.png"
+  ],
+  "question_id": "H28-REG-BASIC-2-3",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "9",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "fbae505ec93ebe0ecda4c21cb029956c81113f19988022348ee1b9c172777dde",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

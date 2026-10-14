@@ -1,0 +1,2297 @@
+{
+  "batch_id": "S7_058_environment_history",
+  "reference_date": "2026-10-14",
+  "questions": [
+    {
+      "question_id": "H23-REG-BASIC-5-1",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "2008年度の温室効果ガスと国際枠組。",
+      "summary": "2008年度の温室効果ガスと国際枠組。",
+      "conditions": {
+        "時点": "平成23年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "CO2が九割以上",
+          "verdict": "適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "2": {
+          "value": "産業の次は家庭",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "条約の濃度安定は2050期限",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "1997パリ議定書",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "2009途上国に基準年削減数値義務",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "当時白書の全ガス内訳・部門図と2009合意の条文の追加照合が必要。CO2九割以上は当時確定値公表表の検索本文でも確認。",
+      "evidence": [
+        "extracted/pages/H23/basic/page_015.png"
+      ],
+      "core_concept": "2008年度の温室効果ガスと国際枠組。",
+      "required_knowledge": "CO2換算、部門の定義、条約と議定書、採択年。",
+      "solution": "CO2換算の2008年度総量の九割以上がCO2で、1。部門別では家庭が第二位という組合せが違う。UNFCCCの究極目的に2050という一律期限はなく、1997採択は京都議定書。2009コペンハーゲンの合意を全途上国に法的数量削減義務を課す議定書と扱わない。",
+      "answer_reason": "CO2換算の2008年度総量の九割以上がCO2で、1。部門別では家庭が第二位という組合せが違う。UNFCCCの究極目的に2050という一律期限はなく、1997採択は京都議定書。2009コペンハーゲンの合意を全途上国に法的数量削減義務を課す議定書と扱わない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。2008CO2換算でCO2九割以上。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "CO2換算、部門の定義、条約と議定書、採択年。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:climate"
+      ],
+      "discipline_id": "basic_5_1",
+      "concept_id": "env58_climate",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：2008年度の温室効果ガスと国際枠組。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env58_ghg2008"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H23-REG-BASIC-5-2",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "排出抑制から適正処分までの優先順。",
+      "summary": "排出抑制から適正処分までの優先順。",
+      "conditions": {
+        "時点": "平成23年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "生活環境/再資源化/適正処理/半分",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "公衆衛生/再使用/適正処分/半分",
+          "verdict": "適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "3": {
+          "value": "生活環境/再資源化/適正処分/1/3",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "公衆衛生/再資源化/適正処理/1/3",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "生活環境/再使用/適正埋立/1/3",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "取得した2001資料は基本方針案と施策実績であり、2010白書の引用箇所全文の一致は追加照合。",
+      "evidence": [
+        "extracted/pages/H23/basic/page_016.png"
+      ],
+      "core_concept": "排出抑制から適正処分までの優先順。",
+      "required_knowledge": "3R、循環利用と処分、基準年度と目標年度。",
+      "solution": "旧来の廃棄物行政の公衆衛生と公害対策に、循環型社会形成が加わる。優先は排出抑制→再使用→再生利用→熱回収→残るものの適正処分。2001基本方針の最終処分目標は1997基準の概ね半分なので2。処分を埋立の一方式だけへ狭めない。",
+      "answer_reason": "旧来の廃棄物行政の公衆衛生と公害対策に、循環型社会形成が加わる。優先は排出抑制→再使用→再生利用→熱回収→残るものの適正処分。2001基本方針の最終処分目標は1997基準の概ね半分なので2。処分を埋立の一方式だけへ狭めない。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。公衆衛生、再使用、適正処分、半分。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "3R、循環利用と処分、基準年度と目標年度。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:wasteorder"
+      ],
+      "discipline_id": "basic_5_1",
+      "concept_id": "env58_wasteorder",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：排出抑制から適正処分までの優先順。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env_circular_law",
+        "env58_wastegoal"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H23-REG-BASIC-5-3",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "気液の同質量比較からLNGの体積比。",
+      "summary": "気液の同質量比較からLNGの体積比。",
+      "conditions": {
+        "気体": "0℃1気圧、純CH4の理想気体。",
+        "液体": "密度425kg/m³一定とする原典モデル。"
+      },
+      "choices": {
+        "1": {
+          "value": "1/400",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "1/600",
+          "verdict": "適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "3": {
+          "value": "1/800",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "1/1000",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "1/1200",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H23/basic/page_016.png"
+      ],
+      "core_concept": "気液の同質量比較からLNGの体積比。",
+      "required_knowledge": "理想気体モル体積、分子量、密度と体積、単位。",
+      "solution": "同じ物質量を比べる。0℃1気圧で1molの理想気体は約22.4L、メタン質量16g。液体体積は0.016kg/(425kg/m³)=3.76×10^-5m³、気体は.0224m³。比は.00168≈1/595なので最も近い1/600。密度比ρgas/ρliquidでも同じ。冷却の温度条件を気体標準状態と混同しない。",
+      "answer_reason": "同じ物質量を比べる。0℃1気圧で1molの理想気体は約22.4L、メタン質量16g。液体体積は0.016kg/(425kg/m³)=3.76×10^-5m³、気体は.0224m³。比は.00168≈1/595なので最も近い1/600。密度比ρgas/ρliquidでも同じ。冷却の温度条件を気体標準状態と混同しない。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。気体密度.016/.0224≈.714、体積比.714/425≈1/595。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "理想気体モル体積、分子量、密度と体積、単位。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:lng"
+      ],
+      "discipline_id": "basic_5_2",
+      "concept_id": "env58_lng",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：気液の同質量比較からLNGの体積比。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H23-REG-BASIC-5-5",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "人物と業績：放射能とラジウムを区別。",
+      "summary": "人物と業績：放射能とラジウムを区別。",
+      "conditions": {
+        "時点": "平成23年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "Galileo/天体望遠鏡で観測",
+          "verdict": "条件内で適切",
+          "reason": "望遠鏡の発明者そのものとする記述ではなく観測への利用。"
+        },
+        "2": {
+          "value": "Huygens/振子時計",
+          "verdict": "条件内で適切",
+          "reason": "振子を時間標準にする時計。"
+        },
+        "3": {
+          "value": "Arkwright/水力紡績機",
+          "verdict": "条件内で適切",
+          "reason": "産業革命の水力紡績機。"
+        },
+        "4": {
+          "value": "Becquerel/ラジウム発見",
+          "verdict": "不適切・選択対象",
+          "reason": "放射能の発見とラジウム発見を取り違える。"
+        },
+        "5": {
+          "value": "Eastman/写真用フィルム乾板",
+          "verdict": "条件内で適切",
+          "reason": "乾板と柔軟な写真フィルムの開発・商業化という原典の代表表現。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "原典は「アントワーヌ・ベクレル」と記載し人名が曖昧。放射能発見者Henri Becquerelとの対応を区別。Eastmanの「フィルム乾板」も乾板とロールフィルムをまとめた表現であり、原典を厳密な発明年表に一般化しない。",
+      "evidence": [
+        "extracted/pages/H23/basic/page_017.png"
+      ],
+      "core_concept": "人物と業績：放射能とラジウムを区別。",
+      "required_knowledge": "放射能現象と元素発見、発明と改良・普及の区別。",
+      "solution": "ラジウムとポロニウムの発見は1898年のキュリー夫妻の仕事。Henri Becquerelは1896年ウランの自然放射を見いだしたので4が誤り。Galileoは望遠鏡を改良して天体観測へ用いた。Huygensの振子時計、Arkwrightの水力紡績、Eastmanの写真材料・乾板の工業化という他の対応は、出題の代表的業績の範囲で扱う。",
+      "answer_reason": "ラジウムとポロニウムの発見は1898年のキュリー夫妻の仕事。Henri Becquerelは1896年ウランの自然放射を見いだしたので4が誤り。Galileoは望遠鏡を改良して天体観測へ用いた。Huygensの振子時計、Arkwrightの水力紡績、Eastmanの写真材料・乾板の工業化という他の対応は、出題の代表的業績の範囲で扱う。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。ラジウムはキュリー夫妻、Becquerelは放射能。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "放射能現象と元素発見、発明と改良・普及の区別。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:historypairs"
+      ],
+      "discipline_id": "basic_5_0",
+      "concept_id": "env58_historypairs",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：人物と業績：放射能とラジウムを区別。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env58_curie"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-5-6",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "人物と業績：放射能とラジウムを区別。",
+      "summary": "人物と業績：放射能とラジウムを区別。",
+      "conditions": {
+        "時点": "平成27年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "Galileo/天体望遠鏡で観測",
+          "verdict": "条件内で適切",
+          "reason": "望遠鏡の発明者そのものとする記述ではなく観測への利用。"
+        },
+        "2": {
+          "value": "Huygens/振子時計",
+          "verdict": "条件内で適切",
+          "reason": "振子を時間標準にする時計。"
+        },
+        "3": {
+          "value": "Arkwright/水力紡績機",
+          "verdict": "条件内で適切",
+          "reason": "産業革命の水力紡績機。"
+        },
+        "4": {
+          "value": "Becquerel/ラジウム発見",
+          "verdict": "不適切・選択対象",
+          "reason": "放射能の発見とラジウム発見を取り違える。"
+        },
+        "5": {
+          "value": "Eastman/写真用フィルム乾板",
+          "verdict": "条件内で適切",
+          "reason": "乾板と柔軟な写真フィルムの開発・商業化という原典の代表表現。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "原典は「アントワーヌ・ベクレル」と記載し人名が曖昧。放射能発見者Henri Becquerelとの対応を区別。Eastmanの「フィルム乾板」も乾板とロールフィルムをまとめた表現であり、原典を厳密な発明年表に一般化しない。",
+      "evidence": [
+        "extracted/pages/H27/basic/page_018.png"
+      ],
+      "core_concept": "人物と業績：放射能とラジウムを区別。",
+      "required_knowledge": "放射能現象と元素発見、発明と改良・普及の区別。",
+      "solution": "ラジウムとポロニウムの発見は1898年のキュリー夫妻の仕事。Henri Becquerelは1896年ウランの自然放射を見いだしたので4が誤り。Galileoは望遠鏡を改良して天体観測へ用いた。Huygensの振子時計、Arkwrightの水力紡績、Eastmanの写真材料・乾板の工業化という他の対応は、出題の代表的業績の範囲で扱う。",
+      "answer_reason": "ラジウムとポロニウムの発見は1898年のキュリー夫妻の仕事。Henri Becquerelは1896年ウランの自然放射を見いだしたので4が誤り。Galileoは望遠鏡を改良して天体観測へ用いた。Huygensの振子時計、Arkwrightの水力紡績、Eastmanの写真材料・乾板の工業化という他の対応は、出題の代表的業績の範囲で扱う。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。Becquerel/radiumの誤対応。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "放射能現象と元素発見、発明と改良・普及の区別。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:historypairs"
+      ],
+      "discipline_id": "basic_5_0",
+      "concept_id": "env58_historypairs",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：人物と業績：放射能とラジウムを区別。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env58_curie"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-5-1",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "リサイクル制度の対象と責任主体。",
+      "summary": "リサイクル制度の対象と責任主体。",
+      "conditions": {
+        "時点": "平成24年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "基本法は再生利用最優先",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "容器三品目の全費用を販売者",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "家電小売の引取・製造者への引渡し",
+          "verdict": "適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "4": {
+          "value": "全建設工事の発注者が分別再資源化",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "再利用なら有害物輸出規制なし",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "出題時点の建設規模・バーゼル条約対象と例外は追加の法令履歴照合。現行FAQだけで全過去条文の確定とはしない。",
+      "evidence": [
+        "extracted/pages/H24/basic/page_015.png"
+      ],
+      "core_concept": "リサイクル制度の対象と責任主体。",
+      "required_knowledge": "法の目的、対象条件、排出者・自治体・小売・製造者の役割。",
+      "solution": "3が家電リサイクル法の小売業者の役割に対応。基本法はまず発生抑制。容器包装は三品目のみではなく、分別収集と再商品化の役割・費用も異なる。建設は規模等の対象条件があり全工事・発注者への実施義務という全称が違う。バーゼルは再利用目的の有害廃棄物でも規制を受け、条約成立の背景の輸送方向も逆。",
+      "answer_reason": "3が家電リサイクル法の小売業者の役割に対応。基本法はまず発生抑制。容器包装は三品目のみではなく、分別収集と再商品化の役割・費用も異なる。建設は規模等の対象条件があり全工事・発注者への実施義務という全称が違う。バーゼルは再利用目的の有害廃棄物でも規制を受け、条約成立の背景の輸送方向も逆。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。家電小売に引取・引渡し義務。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "法の目的、対象条件、排出者・自治体・小売・製造者の役割。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:recyclelaw"
+      ],
+      "discipline_id": "basic_5_6",
+      "concept_id": "env58_recyclelaw",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：リサイクル制度の対象と責任主体。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env_circular_law",
+        "env_appliance"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-5-2",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "発熱量は指定表と単位質量で比較。",
+      "summary": "発熱量は指定表と単位質量で比較。",
+      "conditions": {
+        "時点": "平成24年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "A>B>C>D",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "A>B>D>C",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "B>C>D>A",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "C>A>B>D",
+          "verdict": "適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "5": {
+          "value": "C>A>D>B",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "2005年度指定表の全四値を同じ定義で取得する作業は未完了。2023改訂資料の歴史表を補助参照し、後年値へ置換しない。",
+      "evidence": [
+        "extracted/pages/H24/basic/page_015.png"
+      ],
+      "core_concept": "発熱量は指定表と単位質量で比較。",
+      "required_knowledge": "高位・低位発熱量、単位、燃料品種、密度換算。",
+      "solution": "指定された燃料種の質量当たり発熱量は天然ガスCが最大、原油A、輸入原料炭B、廃材Dの順なので4。天然ガスの表が体積単位なら密度でMJ/kgへ換算する。液体のMJ/Lを質量当たり値へ直接並べない。",
+      "answer_reason": "指定された燃料種の質量当たり発熱量は天然ガスCが最大、原油A、輸入原料炭B、廃材Dの順なので4。天然ガスの表が体積単位なら密度でMJ/kgへ換算する。液体のMJ/Lを質量当たり値へ直接並べない。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。単位質量で天然ガス>石油>石炭>木材。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "高位・低位発熱量、単位、燃料品種、密度換算。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:heating"
+      ],
+      "discipline_id": "basic_5_2",
+      "concept_id": "env58_heating",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：発熱量は指定表と単位質量で比較。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env58_heating"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-5-3",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "2010年の電源比とガス技術を分ける。",
+      "summary": "2010年の電源比とガス技術を分ける。",
+      "conditions": {
+        "時点": "平成24年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "30/再熱再生/タイトサンド",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "30/コンバインド/シェール",
+          "verdict": "適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "3": {
+          "value": "30/コンバインド/タイトサンド",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "20/再熱再生/シェール",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "20/コンバインド/シェール",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "一般電気事業用という分母の2010年度原表と2005以降の米国生産統計は追加取得。現行の全発電量比率と混同しない。",
+      "evidence": [
+        "extracted/pages/H24/basic/page_016.png"
+      ],
+      "core_concept": "2010年の電源比とガス技術を分ける。",
+      "required_knowledge": "歴史的電源構成、複合サイクル、非在来型天然ガス。",
+      "solution": "2010年度の原子力比率は約30%。天然ガスのコンバインドサイクルはガスタービンと排熱による蒸気タービンを組み合わせる。米国で増産が注目された非在来ガスはシェールガス。三語の組合せ2。",
+      "answer_reason": "2010年度の原子力比率は約30%。天然ガスのコンバインドサイクルはガスタービンと排熱による蒸気タービンを組み合わせる。米国で増産が注目された非在来ガスはシェールガス。三語の組合せ2。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。2010原子力約30、複合、シェール。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "歴史的電源構成、複合サイクル、非在来型天然ガス。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:energy2010"
+      ],
+      "discipline_id": "basic_5_2",
+      "concept_id": "env58_energy2010",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：2010年の電源比とガス技術を分ける。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-5-5",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "産業革命の改良・工場化と担い手。",
+      "summary": "産業革命の改良・工場化と担い手。",
+      "conditions": {
+        "時点": "平成24年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "既存技術の改良の積重ね",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "機械化で大工場へ",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "娯楽自動機構から転用もある",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "大学研究者主導の産学協同例が多い",
+          "verdict": "不適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "5": {
+          "value": "労働と児童労働が社会問題",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "からくりからの転用という肢3の個別史料は追加照合。一般論を特定発明の確定年表に拡大しない。",
+      "evidence": [
+        "extracted/pages/H24/basic/page_017.png"
+      ],
+      "core_concept": "産業革命の改良・工場化と担い手。",
+      "required_knowledge": "発明、改良、普及、研究組織と生産制度。",
+      "solution": "産業革命期の代表的機械は職人・発明家・事業者の改良と事業化で広まり、当時の欧州大学研究者が開発を主導した例が多いという4は不適切。新規性だけでなく既存機構の組合せ、工場制度、生産と社会への影響も見る。Wattと大学との接点のような個別事例は、全体を大学主導とする証明ではない。",
+      "answer_reason": "産業革命期の代表的機械は職人・発明家・事業者の改良と事業化で広まり、当時の欧州大学研究者が開発を主導した例が多いという4は不適切。新規性だけでなく既存機構の組合せ、工場制度、生産と社会への影響も見る。Wattと大学との接点のような個別事例は、全体を大学主導とする証明ではない。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。産業革命を大学主導へ一般化するのが不適切。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "発明、改良、普及、研究組織と生産制度。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:industrial"
+      ],
+      "discipline_id": "basic_5_0",
+      "concept_id": "env58_industrial",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：産業革命の改良・工場化と担い手。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env58_steam"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-5-1",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "2012年石油統計の対象範囲を固定。",
+      "summary": "2012年石油統計の対象範囲を固定。",
+      "conditions": {
+        "時点": "平成25年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "93/マラッカ/クウェート/21",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "93/ホルムズ/サウジ/42",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "83/マラッカ/サウジ/42",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "83/ホルムズ/クウェート/42",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "83/ホルムズ/サウジ/21",
+          "verdict": "適切・選択対象",
+          "reason": "判定と一致する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "2012暦年の財務省四項目原表を全て取得していない。取得白書は2013年度83.6%とサウジ首位を支持する補助で、指定年の確定証跡とは区別する。",
+      "evidence": [
+        "extracted/pages/H25/basic/page_019.png"
+      ],
+      "core_concept": "2012年石油統計の対象範囲を固定。",
+      "required_knowledge": "暦年と年度、数量と金額、統計品目、輸送経路。",
+      "solution": "2012年の指定統計では中東依存度約83%、主要経路ホルムズ海峡、最大輸入先サウジアラビア、原油と石油製品の総輸入額比約21%で5。数量の依存度と金額比は別であり、石炭・LNGを含む鉱物性燃料全体の比と原油・製品だけの比も違う。",
+      "answer_reason": "2012年の指定統計では中東依存度約83%、主要経路ホルムズ海峡、最大輸入先サウジアラビア、原油と石油製品の総輸入額比約21%で5。数量の依存度と金額比は別であり、石炭・LNGを含む鉱物性燃料全体の比と原油・製品だけの比も違う。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。2012中東83、ホルムズ、サウジ、原油製品21。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "暦年と年度、数量と金額、統計品目、輸送経路。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:oil2012"
+      ],
+      "discipline_id": "basic_5_2",
+      "concept_id": "env58_oil2012",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：2012年石油統計の対象範囲を固定。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env58_oil"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-5-2",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "暖房と自動車のCO2排出量を比較。",
+      "summary": "暖房と自動車のCO2排出量を比較。",
+      "conditions": {
+        "電力": "500W、3h/日×50日、.42kg-CO2/kWh。",
+        "車": "10km/L、200km、2.32kg-CO2/L。"
+      },
+      "choices": {
+        "1": {
+          "value": "1:3",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "2:3",
+          "verdict": "適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "3": {
+          "value": "1:1",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "3:2",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "3:1",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_019.png"
+      ],
+      "core_concept": "暖房と自動車のCO2排出量を比較。",
+      "required_knowledge": "エネルギー=電力×時間、燃料使用量、排出係数。",
+      "solution": "暖房は.5kW×3h×50=75kWh、排出31.5kg。自動車は200/10=20L、排出46.4kg。比31.5/46.4≈.679で2:3に最も近い。WをkWへ直してから時間を掛ける。",
+      "answer_reason": "暖房は.5kW×3h×50=75kWh、排出31.5kg。自動車は200/10=20L、排出46.4kg。比31.5/46.4≈.679で2:3に最も近い。WをkWへ直してから時間を掛ける。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。A31.5kg B46.4kg≈2:3。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "エネルギー=電力×時間、燃料使用量、排出係数。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:co2"
+      ],
+      "discipline_id": "basic_5_2",
+      "concept_id": "env58_co2",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：暖房と自動車のCO2排出量を比較。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-5-3",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "気候緩和と適応、LCAの境界。",
+      "summary": "気候緩和と適応、LCAの境界。",
+      "conditions": {
+        "時点": "平成25年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "環境基準は維持が望ましい",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "CDMは京都の認証削減",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "CFPは全過程CO2換算",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "適応は排出削減で原因抑制",
+          "verdict": "不適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "5": {
+          "value": "LCAは資源から廃棄まで評価",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "CDMとCFPの出題当時規則全文は未取得。定義の独立判断と条文・規格の確定は分ける。",
+      "evidence": [
+        "extracted/pages/H25/basic/page_020.png"
+      ],
+      "core_concept": "気候緩和と適応、LCAの境界。",
+      "required_knowledge": "緩和・適応、機能単位とシステム境界、環境基準。",
+      "solution": "排出削減や吸収を通じて原因を減らすのが緩和。影響に対して被害を減らす対策が適応なので4が取り違え。CFPは温室効果ガスのCO2換算に着目し、LCAはより広い環境影響の評価。環境基準は環境の望ましい状態で、個別工場の排出許容値と同じではない。",
+      "answer_reason": "排出削減や吸収を通じて原因を減らすのが緩和。影響に対して被害を減らす対策が適応なので4が取り違え。CFPは温室効果ガスのCO2換算に着目し、LCAはより広い環境影響の評価。環境基準は環境の望ましい状態で、個別工場の排出許容値と同じではない。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。削減は緩和、影響備え適応。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "緩和・適応、機能単位とシステム境界、環境基準。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:lca"
+      ],
+      "discipline_id": "basic_5_1",
+      "concept_id": "env58_lca",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：気候緩和と適応、LCAの境界。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env58_pmstandard"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-5-4",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "下水処理の段階と環境対策。",
+      "summary": "下水処理の段階と環境対策。",
+      "conditions": {
+        "時点": "平成25年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "管理型の遮水・浸出水処理",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "活性汚泥は一次処理",
+          "verdict": "不適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "3": {
+          "value": "緑化の表面温度と空調低減",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "土壌対策に掘削除去が多い",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "完全燃焼と排ガス急冷",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "当時土壌対策の掘削除去割合と施設の詳細法定仕様は追加照合。緑化の効果は気象・水・建物条件に依存。",
+      "evidence": [
+        "extracted/pages/H25/basic/page_021.png"
+      ],
+      "core_concept": "下水処理の段階と環境対策。",
+      "required_knowledge": "一次・二次・高度処理、物理と生物反応、汚染経路。",
+      "solution": "活性汚泥による生物処理は一般に二次処理。一次は沈殿等の物理処理であり、2が不適切。管理型処分場は浸出水等による汚染を防ぐ。緑化は遮蔽・蒸発散、ダイオキシン対策は燃焼と再合成防止の工程を分けて説明する。",
+      "answer_reason": "活性汚泥による生物処理は一般に二次処理。一次は沈殿等の物理処理であり、2が不適切。管理型処分場は浸出水等による汚染を防ぐ。緑化は遮蔽・蒸発散、ダイオキシン対策は燃焼と再合成防止の工程を分けて説明する。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。活性汚泥は二次。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "一次・二次・高度処理、物理と生物反応、汚染経路。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:treatment"
+      ],
+      "discipline_id": "basic_5_4",
+      "concept_id": "env58_treatment",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：下水処理の段階と環境対策。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-5-5",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "科学と社会をつなぐ双方向の対話。",
+      "summary": "科学と社会をつなぐ双方向の対話。",
+      "conditions": {
+        "四文の順序": "ア=社会理解、イ=科学技術間だけ、ウ=双方向、エ=媒体へ技術使用",
+        "問": "適切な二文。"
+      },
+      "choices": {
+        "1": {
+          "value": "ア イ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "ア ウ",
+          "verdict": "適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "3": {
+          "value": "イ ウ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "イ エ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "ウ エ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_022.png"
+      ],
+      "core_concept": "科学と社会をつなぐ双方向の対話。",
+      "required_knowledge": "専門家と社会、理解と対話、情報発信と相互学習。",
+      "solution": "社会・国民の期待や考えを専門家自身が理解することと、専門家・非専門家間の双方向性が適切。基礎科学と応用技術の内部連携だけをこの領域全体の定義にはできず、媒体制作へ技術を使うことや科学者へ任せることも、社会と対話するという目的の代替ではない。原典の列順で組合せを選ぶ。",
+      "answer_reason": "社会・国民の期待や考えを専門家自身が理解することと、専門家・非専門家間の双方向性が適切。基礎科学と応用技術の内部連携だけをこの領域全体の定義にはできず、媒体制作へ技術を使うことや科学者へ任せることも、社会と対話するという目的の代替ではない。原典の列順で組合せを選ぶ。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。アウ双方向。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "専門家と社会、理解と対話、情報発信と相互学習。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:communication"
+      ],
+      "discipline_id": "basic_5_0",
+      "concept_id": "env58_communication",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：科学と社会をつなぐ双方向の対話。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env58_communication"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-5-5",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "科学と社会をつなぐ双方向の対話。",
+      "summary": "科学と社会をつなぐ双方向の対話。",
+      "conditions": {
+        "四文の順序": "ア=科学技術間だけ、イ=科学者に制作委任、ウ=社会理解、エ=双方向",
+        "問": "適切な二文。"
+      },
+      "choices": {
+        "1": {
+          "value": "ア イ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "ア ウ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "イ ウ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "イ エ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "ウ エ",
+          "verdict": "適切・選択対象",
+          "reason": "判定と一致する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/basic/page_024.png"
+      ],
+      "core_concept": "科学と社会をつなぐ双方向の対話。",
+      "required_knowledge": "専門家と社会、理解と対話、情報発信と相互学習。",
+      "solution": "社会・国民の期待や考えを専門家自身が理解することと、専門家・非専門家間の双方向性が適切。基礎科学と応用技術の内部連携だけをこの領域全体の定義にはできず、媒体制作へ技術を使うことや科学者へ任せることも、社会と対話するという目的の代替ではない。原典の列順で組合せを選ぶ。",
+      "answer_reason": "社会・国民の期待や考えを専門家自身が理解することと、専門家・非専門家間の双方向性が適切。基礎科学と応用技術の内部連携だけをこの領域全体の定義にはできず、媒体制作へ技術を使うことや科学者へ任せることも、社会と対話するという目的の代替ではない。原典の列順で組合せを選ぶ。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。ウエ双方向。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "専門家と社会、理解と対話、情報発信と相互学習。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:communication"
+      ],
+      "discipline_id": "basic_5_0",
+      "concept_id": "env58_communication",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：科学と社会をつなぐ双方向の対話。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env58_communication"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-5-6",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "発表・発明を古い順へ並べる。",
+      "summary": "発表・発明を古い順へ並べる。",
+      "conditions": {
+        "時点": "平成25年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "エア イオウ",
+          "verdict": "適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "2": {
+          "value": "アイエウオ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "エアイウオ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "アエオイウ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "アイエオウ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "全五業績の初出一次史料は未取得。特にハレー彗星の「発見」は周期性の同定を指す出題表現として留保。",
+      "evidence": [
+        "extracted/pages/H25/basic/page_022.png"
+      ],
+      "core_concept": "発表・発明を古い順へ並べる。",
+      "required_knowledge": "科学史の世紀区分、業績の段階、順序制約。",
+      "solution": "ハレーの周期彗星の予測・同定が18世紀初頭、Wattの蒸気機関改良が18世紀後半、Darwin–Wallaceの自然選択発表が1858、一般相対論が1915、Fukuiのフロンティア理論が1952。エ→ア→イ→オ→ウで1。発見と理論発表、特許と実用化のどの段階をいうかも確認する。",
+      "answer_reason": "ハレーの周期彗星の予測・同定が18世紀初頭、Wattの蒸気機関改良が18世紀後半、Darwin–Wallaceの自然選択発表が1858、一般相対論が1915、Fukuiのフロンティア理論が1952。エ→ア→イ→オ→ウで1。発見と理論発表、特許と実用化のどの段階をいうかも確認する。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。Halley1705<Watt1769<Darwin1858<Einstein1915<Fukui1952。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "科学史の世紀区分、業績の段階、順序制約。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:historyorder"
+      ],
+      "discipline_id": "basic_5_0",
+      "concept_id": "env58_historyorder",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：発表・発明を古い順へ並べる。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env58_steam"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-5-1",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "粒径範囲と大気汚染の生成経路。",
+      "summary": "粒径範囲と大気汚染の生成経路。",
+      "conditions": {
+        "時点": "平成26年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "PM2.5は2.5μm付近だけ",
+          "verdict": "不適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "2": {
+          "value": "SO2は燃料中S由来",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "NO2は燃焼と光化学前駆物質",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "光化学オキシダントはNOxとVOCの光反応",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "COは不完全燃焼でメタン寿命にも影響",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "COによるメタン寿命の化学過程と各健康影響は追加一次資料照合。肺沈着と粒径の関係を2.5μm一値へ固定しない。",
+      "evidence": [
+        "extracted/pages/H26/basic/page_016.png"
+      ],
+      "core_concept": "粒径範囲と大気汚染の生成経路。",
+      "required_knowledge": "大きさの範囲と測定、一次・二次汚染物質、生成と除去。",
+      "solution": "PM2.5は概ね粒径2.5μm以下の微小粒子で、2.5付近だけに限定する1が誤り。規格上は2.5μmを50%分離する装置で採取するという測定定義もある。SO2は硫黄、NOxとVOCは二次生成、COは不完全燃焼とヘモグロビンの結合。COによるOH消費はメタン除去に影響する。",
+      "answer_reason": "PM2.5は概ね粒径2.5μm以下の微小粒子で、2.5付近だけに限定する1が誤り。規格上は2.5μmを50%分離する装置で採取するという測定定義もある。SO2は硫黄、NOxとVOCは二次生成、COは不完全燃焼とヘモグロビンの結合。COによるOH消費はメタン除去に影響する。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。PM2.5は2.5以下で付近だけではない。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "大きさの範囲と測定、一次・二次汚染物質、生成と除去。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:air"
+      ],
+      "discipline_id": "basic_5_4",
+      "concept_id": "env58_air",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：粒径範囲と大気汚染の生成経路。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env58_pmstandard",
+        "env58_pm25"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-5-2",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "環境会計と評価・報告・監査を区別。",
+      "summary": "環境会計と評価・報告・監査を区別。",
+      "conditions": {
+        "時点": "平成26年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "LCAは設備更新時のみ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "環境報告書は設備の自治体届出",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "グリーン購入は生物資源優先のみ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "環境監査は税務処理のみ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "環境会計は費用効果を金額物量で",
+          "verdict": "適切・選択対象",
+          "reason": "判定と一致する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/basic/page_016.png"
+      ],
+      "core_concept": "環境会計と評価・報告・監査を区別。",
+      "required_knowledge": "対象、評価目的、会計単位、環境管理手段。",
+      "solution": "環境会計はコストと効果を認識して、貨幣単位又は物量単位で定量化・伝達する仕組みで5。LCAは設備の更新周期だけでなく製品等の全過程。環境報告は社会への情報開示、グリーン購入は必要性と環境負荷、環境監査は環境管理の点検であり、税務監査だけではない。",
+      "answer_reason": "環境会計はコストと効果を認識して、貨幣単位又は物量単位で定量化・伝達する仕組みで5。LCAは設備の更新周期だけでなく製品等の全過程。環境報告は社会への情報開示、グリーン購入は必要性と環境負荷、環境監査は環境管理の点検であり、税務監査だけではない。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。環境会計費用効果金額物量。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "対象、評価目的、会計単位、環境管理手段。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:accounting"
+      ],
+      "discipline_id": "basic_5_1",
+      "concept_id": "env58_accounting",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：環境会計と評価・報告・監査を区別。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env58_accounting"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-5-3",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "2012開始のFITの原則と拒否事由。",
+      "summary": "2012開始のFITの原則と拒否事由。",
+      "conditions": {
+        "時点": "平成26年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "五種類の再エネ",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "大臣が年度価格設定",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "電力量に応じ賦課",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "地域負担差を調整",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "接続は一切拒否不可",
+          "verdict": "不適切・選択対象",
+          "reason": "判定と一致する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "2013METI資料の検索本文で正当拒否事由を確認したがPDF全文取得は失敗。出題時価格決定と対象水力条件の詳細、法令履歴は追加照合。",
+      "evidence": [
+        "extracted/pages/H26/basic/page_017.png"
+      ],
+      "core_concept": "2012開始のFITの原則と拒否事由。",
+      "required_knowledge": "固定価格、買取と接続、賦課金、例外。",
+      "solution": "正当な理由がある場合まで接続拒否を一切できないとする5は誤り。2012開始の対象は太陽光・風力・水力・地熱・バイオマスで、調達価格の設定、使用量に応じた賦課、費用調整という仕組みを区別する。例外を削って無条件義務にしない。",
+      "answer_reason": "正当な理由がある場合まで接続拒否を一切できないとする5は誤り。2012開始の対象は太陽光・風力・水力・地熱・バイオマスで、調達価格の設定、使用量に応じた賦課、費用調整という仕組みを区別する。例外を削って無条件義務にしない。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。接続拒否には正当理由の例外。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "固定価格、買取と接続、賦課金、例外。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:fit"
+      ],
+      "discipline_id": "basic_5_6",
+      "concept_id": "env58_fit",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：2012開始のFITの原則と拒否事由。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env58_fit2013"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-5-4",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "資源量と太陽光面積の桁を比較。",
+      "summary": "資源量と太陽光面積の桁を比較。",
+      "conditions": {
+        "時点": "平成26年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "石炭埋蔵エネルギーが石油超",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "石油確認埋蔵量は危機時より増",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "海水Uは1億t超",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "100km²太陽光が日本需要超",
+          "verdict": "不適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "5": {
+          "value": "全球の光合成固定が人類需要超",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "概算の日射・需要は桁比較であり厳密な上限証明ではない。石炭石油の指定時点埋蔵量、海水U総量、全球純生産と人類エネルギーの各原表は追加照合。初回記録の昼夜連続1kW仮定を解説では日照条件を示す概算へ改めた。",
+      "evidence": [
+        "extracted/pages/H26/basic/page_017.png"
+      ],
+      "core_concept": "資源量と太陽光面積の桁を比較。",
+      "required_knowledge": "面積換算、電力とエネルギー、存在量と可採埋蔵量。",
+      "solution": "100km²=10^8m²。例えば1kW/m²を昼間平均12h/日、効率を非現実的に100%としても年約438TWhで、当時の日本の年間電力需要約1000TWhに届かない。現実には夜間・天候・入射角・変換損失でさらに小さいので4。資源の存在量と経済的に採れる確認埋蔵量も同じではなく、後者は探鉱・価格・技術で増え得る。",
+      "answer_reason": "100km²=10^8m²。例えば1kW/m²を昼間平均12h/日、効率を非現実的に100%としても年約438TWhで、当時の日本の年間電力需要約1000TWhに届かない。現実には夜間・天候・入射角・変換損失でさらに小さいので4。資源の存在量と経済的に採れる確認埋蔵量も同じではなく、後者は探鉱・価格・技術で増え得る。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。100km2の上限1kW/m2×8760h≈876TWhも国内約1000TWh未満。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "面積換算、電力とエネルギー、存在量と可採埋蔵量。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:resource"
+      ],
+      "discipline_id": "basic_5_2",
+      "concept_id": "env58_resource",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：資源量と太陽光面積の桁を比較。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-5-5",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "専門職責任は職務規定だけでは尽くせない。",
+      "summary": "専門職責任は職務規定だけでは尽くせない。",
+      "conditions": {
+        "時点": "平成26年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "職業で規範が異なる場合",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "力量外を引受けない",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "明文規定なしなら責任なし",
+          "verdict": "不適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "4": {
+          "value": "行動規範は変化",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "専門知識は高い基準",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/basic/page_017.png"
+      ],
+      "core_concept": "専門職責任は職務規定だけでは尽くせない。",
+      "required_knowledge": "力量、公益、説明責任、法と倫理の範囲。",
+      "solution": "規定に明示がないことを責任免除の根拠とする3が不適切。専門職は力量の範囲、安全・公益、説明と結果への責任を考える。依頼業務が力量を超える場合、能力ある者との協働や適切な引継ぎを含め、無能力のまま責任を引き受けることを避ける。",
+      "answer_reason": "規定に明示がないことを責任免除の根拠とする3が不適切。専門職は力量の範囲、安全・公益、説明と結果への責任を考える。依頼業務が力量を超える場合、能力ある者との協働や適切な引継ぎを含め、無能力のまま責任を引き受けることを避ける。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。規定なしも責任が残る。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "力量、公益、説明責任、法と倫理の範囲。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:ethics"
+      ],
+      "discipline_id": "basic_5_0",
+      "concept_id": "env58_ethics",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：専門職責任は職務規定だけでは尽くせない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "ipej_ethics2011"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-5-6",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "観測・動力・検出・高分子の技術史。",
+      "summary": "観測・動力・検出・高分子の技術史。",
+      "conditions": {
+        "時点": "平成26年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "イアウオエ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "イウアオエ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "イアウエオ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "ウアイオエ",
+          "verdict": "適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "5": {
+          "value": "ウイアエオ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "Galileo・Wilsonの初出史料は追加照合。ACSの1935生産選定と1939商業化を分ける。",
+      "evidence": [
+        "extracted/pages/H26/basic/page_018.png"
+      ],
+      "core_concept": "観測・動力・検出・高分子の技術史。",
+      "required_knowledge": "改良と新機構、検出技術、合成と商業化。",
+      "solution": "Galileoの望遠鏡観測が1609年頃、Newcomen機関1712、Wattの改良特許1769、Wilson霧箱は20世紀初頭、Carothersのナイロンは1930年代。ウ→ア→イ→オ→エの4。ナイロンの合成・生産選定と1939の商業化を同一年にせず、霧箱より後という比較に必要な範囲で扱う。",
+      "answer_reason": "Galileoの望遠鏡観測が1609年頃、Newcomen機関1712、Wattの改良特許1769、Wilson霧箱は20世紀初頭、Carothersのナイロンは1930年代。ウ→ア→イ→オ→エの4。ナイロンの合成・生産選定と1939の商業化を同一年にせず、霧箱より後という比較に必要な範囲で扱う。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。Galileo1609<Newcomen1712<Watt1769<Wilson1911<nylon1935。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "改良と新機構、検出技術、合成と商業化。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:historyorder"
+      ],
+      "discipline_id": "basic_5_0",
+      "concept_id": "env58_historyorder",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：観測・動力・検出・高分子の技術史。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env58_steam",
+        "env58_nylon"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-5-1",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "廃棄物用語の略称と対象。",
+      "summary": "廃棄物用語の略称と対象。",
+      "conditions": {
+        "時点": "平成27年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "RDFはごみ固形化燃料",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "E-wasteはほぼ全て再資源化できるエコ廃物",
+          "verdict": "不適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "3": {
+          "value": "バイオマスは化石除く生物資源",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "産廃は事業由来の法定20種類",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "硫酸ピッチは強酸性油泥",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "当時のRDF添加法・産廃業種条件・硫酸ピッチのガス生成に関する技術資料を追加照合。全RDFが同一添加処方という一般化をしない。",
+      "evidence": [
+        "extracted/pages/H27/basic/page_015.png"
+      ],
+      "core_concept": "廃棄物用語の略称と対象。",
+      "required_knowledge": "略称、法定分類、処理特性と有害性。",
+      "solution": "E-wasteはelectrical/electronic waste、廃電気電子機器。環境に良い又はほぼ全量再資源化可能という定義ではなく2が誤り。RDFは可燃廃物の加工燃料、バイオマスは化石資源を除く。産業廃棄物は事業活動由来なら全てという分類でなく法定種類と業種条件を確認する。",
+      "answer_reason": "E-wasteはelectrical/electronic waste、廃電気電子機器。環境に良い又はほぼ全量再資源化可能という定義ではなく2が誤り。RDFは可燃廃物の加工燃料、バイオマスは化石資源を除く。産業廃棄物は事業活動由来なら全てという分類でなく法定種類と業種条件を確認する。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。E-waste電子電気。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "略称、法定分類、処理特性と有害性。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:wasteterm"
+      ],
+      "discipline_id": "basic_5_1",
+      "concept_id": "env58_wasteterm",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：廃棄物用語の略称と対象。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-5-2",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "温対法の排出抑制と吸収作用。",
+      "summary": "温対法の排出抑制と吸収作用。",
+      "conditions": {
+        "時点": "平成27年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "森林吸収の保全に言及なし",
+          "verdict": "不適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "2": {
+          "value": "対象七種の温室効果ガス",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "一定規模事業所別の算定報告",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "知事が推進員委嘱とセンター指定",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "少なくとも三年ごと計画検討",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "2015施行時の全五条項を履歴条文で一括確認する作業は未完了。現行の2050目標を当時条文へ追加しない。",
+      "evidence": [
+        "extracted/pages/H27/basic/page_015.png"
+      ],
+      "core_concept": "温対法の排出抑制と吸収作用。",
+      "required_knowledge": "目的規定、吸収と排出、政令対象、計画。",
+      "solution": "目的は排出抑制だけでなく吸収作用の保全・強化も含む。言及しないという1が誤り。対象ガス、算定報告の主体・規模、地方推進体制、計画見直しは別の制度事項なので、吸収と排出の二側面を軸に確認する。",
+      "answer_reason": "目的は排出抑制だけでなく吸収作用の保全・強化も含む。言及しないという1が誤り。対象ガス、算定報告の主体・規模、地方推進体制、計画見直しは別の制度事項なので、吸収と排出の二側面を軸に確認する。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。目的は吸収作用保全も含む。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "目的規定、吸収と排出、政令対象、計画。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:warminglaw"
+      ],
+      "discipline_id": "basic_5_6",
+      "concept_id": "env58_warminglaw",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：温対法の排出抑制と吸収作用。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-5-3",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "利用人数と時間を含めた一人当たり排出。",
+      "summary": "利用人数と時間を含めた一人当たり排出。",
+      "conditions": {
+        "a": "10km/L、100km、3人、2.32kg/L。",
+        "b": "8000kW、200km/h、500km、1000人、.47kg/kWh。",
+        "c": "500W、4h/日、50日、4人、.47kg/kWh。"
+      },
+      "choices": {
+        "1": {
+          "value": "a>b>c",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "a>c>b",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "b>a>c",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "c>a>b",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "c>b>a",
+          "verdict": "適切・選択対象",
+          "reason": "判定と一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/basic/page_016.png"
+      ],
+      "core_concept": "利用人数と時間を含めた一人当たり排出。",
+      "required_knowledge": "排出係数、乗車人数、走行時間、総量と原単位。",
+      "solution": "aは100/10×2.32/3=7.73kg/人。bは500/200=2.5h、8000×2.5×.47/1000=9.4kg/人。cは.5×4×50×.47/4=11.75kg/人。c>b>aの5。総量の大小ではなく人数で割った量を比べる。",
+      "answer_reason": "aは100/10×2.32/3=7.73kg/人。bは500/200=2.5h、8000×2.5×.47/1000=9.4kg/人。cは.5×4×50×.47/4=11.75kg/人。c>b>aの5。総量の大小ではなく人数で割った量を比べる。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。a7.73 b9.4 c11.75kgでc>b>a。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "排出係数、乗車人数、走行時間、総量と原単位。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:co2"
+      ],
+      "discipline_id": "basic_5_2",
+      "concept_id": "env58_co2",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：利用人数と時間を含めた一人当たり排出。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-5-4",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "2011年一人当たり一次エネルギー。",
+      "summary": "2011年一人当たり一次エネルギー。",
+      "conditions": {
+        "時点": "平成27年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "独日/米加/韓露",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "韓露/独日/米加",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "韓露/米加/独日",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "米加/独日/韓露",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "米加/韓露/独日",
+          "verdict": "適切・選択対象",
+          "reason": "判定と一致する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "IEAの指定2011年国別原表は未取得。現行データページを当時値の照合証跡にはせず、Astraの追加確認対象に残す。",
+      "evidence": [
+        "extracted/pages/H27/basic/page_017.png"
+      ],
+      "core_concept": "2011年一人当たり一次エネルギー。",
+      "required_knowledge": "一次エネルギー、石油換算、人口当たり、年次比較。",
+      "solution": "原典の2011年指標では米加が7toe以上、韓露約5toe、独日約4toeで5。1toe≈42GJを使い、国全体の総量と人口当たりを混同しない。世界1.9、中国2.0という同じ年・同じ指標で比較する。",
+      "answer_reason": "原典の2011年指標では米加が7toe以上、韓露約5toe、独日約4toeで5。1toe≈42GJを使い、国全体の総量と人口当たりを混同しない。世界1.9、中国2.0という同じ年・同じ指標で比較する。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。米加7以上、韓露5、独日4。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "一次エネルギー、石油換算、人口当たり、年次比較。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:energycapita"
+      ],
+      "discipline_id": "basic_5_2",
+      "concept_id": "env58_energycapita",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：2011年一人当たり一次エネルギー。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-5-5",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "知的財産の範囲は特許発明より広い。",
+      "summary": "知的財産の範囲は特許発明より広い。",
+      "conditions": {
+        "時点": "平成27年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "特許は発明保護利用と産業発達",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "発明は自然法則利用の高度技術思想",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "知財は自然法則利用のものだけ",
+          "verdict": "不適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "4": {
+          "value": "基本法は創造保護活用の基本事項",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "国に施策策定実施責務",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/basic/page_017.png"
+      ],
+      "core_concept": "知的財産の範囲は特許発明より広い。",
+      "required_knowledge": "発明、知的財産、産業財産権、基本法の責務。",
+      "solution": "特許法の発明は自然法則を利用した高度な技術的思想。知的財産基本法の知財は著作物・商標・商号・営業秘密なども含むので、自然法則利用へ限定する3が不適切。法律名とその定義の範囲を別々に確認する。",
+      "answer_reason": "特許法の発明は自然法則を利用した高度な技術的思想。知的財産基本法の知財は著作物・商標・商号・営業秘密なども含むので、自然法則利用へ限定する3が不適切。法律名とその定義の範囲を別々に確認する。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。知財は著作物営業秘密も含む。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "発明、知的財産、産業財産権、基本法の責務。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:ip"
+      ],
+      "discipline_id": "basic_5_6",
+      "concept_id": "env58_ip",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：知的財産の範囲は特許発明より広い。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "ip_patent_statute",
+        "ip_broad_scope"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-5-1",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "産業廃棄物フローを物質収支で検算。",
+      "summary": "産業廃棄物フローを物質収支で検算。",
+      "conditions": {
+        "排出": "379百万t。",
+        "中間処理": "290。",
+        "直接再生": "83。",
+        "処理後再生": "124。",
+        "処理後最終処分": "7。",
+        "全再生": "207。",
+        "全最終処分": "13。"
+      },
+      "choices": {
+        "1": {
+          "value": "直接再利用83で約40%",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "再利用207で55%・処分の16倍",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "処理後124で直接の1.5倍",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "減量159で42%",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "直接処分60で16%",
+          "verdict": "不適切・選択対象",
+          "reason": "判定と一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/basic/page_021.png"
+      ],
+      "core_concept": "産業廃棄物フローを物質収支で検算。",
+      "required_knowledge": "分岐の収支、直接と処理後、百分率と比率。",
+      "solution": "単位百万t。中間処理290は再利用124、処理後処分7、減量159へ分かれる。総処分13から直接処分は13−7=6で、60ではないので5。総排出も83+290+6=379、最終の207+159+13=379で一致。83/207≈.40、207/379≈.55、207/13≈16、124/83≈1.5、159/379≈.42。",
+      "answer_reason": "単位百万t。中間処理290は再利用124、処理後処分7、減量159へ分かれる。総処分13から直接処分は13−7=6で、60ではないので5。総排出も83+290+6=379、最終の207+159+13=379で一致。83/207≈.40、207/379≈.55、207/13≈16、124/83≈1.5、159/379≈.42。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。直接処分13−7=6で60ではない。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "分岐の収支、直接と処理後、百分率と比率。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:balance"
+      ],
+      "discipline_id": "basic_5_1",
+      "concept_id": "env58_balance",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：産業廃棄物フローを物質収支で検算。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-5-2",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "生物多様性条約と外来種防除。",
+      "summary": "生物多様性条約と外来種防除。",
+      "conditions": {
+        "時点": "平成28年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "組換え生物の議定書",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "1992署名開放・1993発効",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "保全・持続利用・利益配分",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "外来種に重大影響の例",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "日本は動物愛護で駆除禁止",
+          "verdict": "不適切・選択対象",
+          "reason": "判定と一致する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "1992・1993と議定書、当時の外来生物法の防除条項の一次本文を追加照合。動物愛護上の配慮が不要という意味にはしない。",
+      "evidence": [
+        "extracted/pages/H28/basic/page_022.png"
+      ],
+      "core_concept": "生物多様性条約と外来種防除。",
+      "required_knowledge": "条約目的、署名と発効、外来種と防除。",
+      "solution": "外来種による生態系被害の防止には防除制度があり、一律に駆除を禁止する5が誤り。CBDの三目的は保全、持続可能な利用、遺伝資源の利益の公正衡平配分。組換え生物の扱いはCartagena議定書であり、遺伝資源の利益配分のNagoya議定書と混同しない。",
+      "answer_reason": "外来種による生態系被害の防止には防除制度があり、一律に駆除を禁止する5が誤り。CBDの三目的は保全、持続可能な利用、遺伝資源の利益の公正衡平配分。組換え生物の扱いはCartagena議定書であり、遺伝資源の利益配分のNagoya議定書と混同しない。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。外来種防除禁止ではない。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "条約目的、署名と発効、外来種と防除。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:biodiversity"
+      ],
+      "discipline_id": "basic_5_1",
+      "concept_id": "env58_biodiversity",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：生物多様性条約と外来種防除。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-5-3",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "複合発電の高温側から低温側への順。",
+      "summary": "複合発電の高温側から低温側への順。",
+      "conditions": {
+        "時点": "平成28年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "一次使切・二次充電",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "EDLC急速・長サイクル",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "先に蒸気タービン次に廃熱ガスタービン",
+          "verdict": "不適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "4": {
+          "value": "燃料電池は水電解の逆",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "揚水は位置エネルギーに貯蔵",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/basic/page_022.png"
+      ],
+      "core_concept": "複合発電の高温側から低温側への順。",
+      "required_knowledge": "温度段階、電気化学、静電蓄積、エネルギー変換。",
+      "solution": "コンバインドは燃焼ガスでガスタービンを回し、その高温排熱から蒸気を作って蒸気タービンへ進む。逆順の3が不適切。二次電池は再充電、EDLCは界面で蓄える。揚水は発電を消費側から切り離して電気を水の位置エネルギーへ変換する貯蔵で、発電時だけの効率を往復効率としない。",
+      "answer_reason": "コンバインドは燃焼ガスでガスタービンを回し、その高温排熱から蒸気を作って蒸気タービンへ進む。逆順の3が不適切。二次電池は再充電、EDLCは界面で蓄える。揚水は発電を消費側から切り離して電気を水の位置エネルギーへ変換する貯蔵で、発電時だけの効率を往復効率としない。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。ガスタービン先、廃熱蒸気。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "温度段階、電気化学、静電蓄積、エネルギー変換。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:generation"
+      ],
+      "discipline_id": "basic_5_2",
+      "concept_id": "env58_generation",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：複合発電の高温側から低温側への順。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-5-4",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "2015年策定の2030電源見通しを読む。",
+      "summary": "2015年策定の2030電源見通しを読む。",
+      "conditions": {
+        "時点": "平成28年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "石油25–27%",
+          "verdict": "不適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "2": {
+          "value": "再エネ22–24%",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "原子力20–22%",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "自給率約25%と準国産",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "5": {
+          "value": "省エネで最終消費低下",
+          "verdict": "条件内で適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "2015公開関連資料の検索と白書骨子を参照。策定7月の最終PDFの全図表照合は未了で後工程に残す。",
+      "evidence": [
+        "extracted/pages/H28/basic/page_023.png"
+      ],
+      "core_concept": "2015年策定の2030電源見通しを読む。",
+      "required_knowledge": "策定年と目標年、電源構成と自給率、見通し。",
+      "solution": "2015の見通しの2030構成は、25–27%がLNGで石油は約3%。従って1が不適切。再エネ22–24%、原子力20–22%と、需給の省エネ・自給率目標は当時見通しの範囲。2030を対象とする後年改訂計画の比率をこの問題へ遡及しない。",
+      "answer_reason": "2015の見通しの2030構成は、25–27%がLNGで石油は約3%。従って1が不適切。再エネ22–24%、原子力20–22%と、需給の省エネ・自給率目標は当時見通しの範囲。2030を対象とする後年改訂計画の比率をこの問題へ遡及しない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。2015の2030石油3%、25–27はLNG。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "策定年と目標年、電源構成と自給率、見通し。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:energymix2015"
+      ],
+      "discipline_id": "basic_5_2",
+      "concept_id": "env58_energymix2015",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：2015年策定の2030電源見通しを読む。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env58_mix2015"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-5-6",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "電気・化学・電子の代表的業績の順序。",
+      "summary": "電気・化学・電子の代表的業績の順序。",
+      "conditions": {
+        "時点": "平成28年度に指定された資料・制度。",
+        "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "アイウエオ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "2": {
+          "value": "アイウオエ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "3": {
+          "value": "ウイアオエ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        },
+        "4": {
+          "value": "ウアイオエ",
+          "verdict": "適切・選択対象",
+          "reason": "判定と一致する。"
+        },
+        "5": {
+          "value": "ウイアエオ",
+          "verdict": "不適切",
+          "reason": "式・定義・対応の独立判定と一致しない。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "雷の実験・三極管・トランジスタ各原報と特許の一次史料は追加照合。三人の貢献を同一作業に単純化しない。",
+      "evidence": [
+        "extracted/pages/H28/basic/page_024.png"
+      ],
+      "core_concept": "電気・化学・電子の代表的業績の順序。",
+      "required_knowledge": "周期律、放射性元素、電子管と半導体、年代順。",
+      "solution": "雷の電気的性質のFranklinが18世紀、Mendeleevの周期律1869、Curie夫妻の新元素1898、De Forestの三極管1906頃、トランジスタ1947。ウ→ア→イ→オ→エの4。電子管から半導体素子への世紀をまたぐ発展と、発見・発明・商用普及の段階を分ける。",
+      "answer_reason": "雷の電気的性質のFranklinが18世紀、Mendeleevの周期律1869、Curie夫妻の新元素1898、De Forestの三極管1906頃、トランジスタ1947。ウ→ア→イ→オ→エの4。電子管から半導体素子への世紀をまたぐ発展と、発見・発明・商用普及の段階を分ける。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。Franklin1752<Mendeleev1869<Curie1898<triode1906<transistor1947。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "周期律、放射性元素、電子管と半導体、年代順。 指定年度・対象範囲・単位・否定を先に固定し、他年度の番号や現行値を転用しない。",
+      "theory_references": [
+        "theory:env:historyorder"
+      ],
+      "discipline_id": "basic_5_0",
+      "concept_id": "env58_historyorder",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：電気・化学・電子の代表的業績の順序。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "原典時点の定義・統計範囲・制度主体・因果と単位を照合する。"
+      },
+      "citations": [
+        "env58_curie"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

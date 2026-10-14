@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-12T02:00:31+09:00",
+  "paths": [
+    "generated/questions/basic/01_design_planning.tex"
+  ],
+  "existed": {
+    "generated/questions/basic/01_design_planning.tex": true
+  },
+  "sha256": {
+    "generated/questions/basic/01_design_planning.tex": "d103a57f338f1ea4a5724a13852332c3f5ef781c61a278d49d48871ce0a92989"
+  }
+}

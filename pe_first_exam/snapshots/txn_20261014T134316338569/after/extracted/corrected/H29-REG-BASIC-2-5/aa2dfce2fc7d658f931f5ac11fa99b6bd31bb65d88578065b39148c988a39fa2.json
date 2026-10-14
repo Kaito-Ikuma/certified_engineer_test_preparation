@@ -1,0 +1,44 @@
+{
+  "stem": "再帰文法の生成列の不変条件。",
+  "conditions": {
+    "規則": "S::=01 | 0 S 1。"
+  },
+  "choices": {
+    "1": {
+      "value": "111110",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 000111 と異なる。"
+    },
+    "2": {
+      "value": "111000",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 000111 と異なる。"
+    },
+    "3": {
+      "value": "101010",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 000111 と異なる。"
+    },
+    "4": {
+      "value": "000111",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "5": {
+      "value": "000001",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 000111 と異なる。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/basic/page_010.png"
+  ],
+  "question_id": "H29-REG-BASIC-2-5",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "10",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "7e01ad3e1c740619c822b0547f835c160ed50d23cbf6c46de0e4a31c6363433e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

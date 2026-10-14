@@ -1,0 +1,45 @@
+{
+  "stem": "高分子の種類とセルロースの水への難溶性を判断する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "高分子の種類とセルロースの水への難溶性を判断する。"
+  },
+  "choices": {
+    "1": {
+      "value": "PEの熱可塑性",
+      "verdict": "通常の条件で適切",
+      "reason": "通常のポリエチレンは鎖状高分子で、加熱して軟化させ成形できる。架橋した材料の性質まで一律に拡張しない。"
+    },
+    "2": {
+      "value": "ナイロンは合成高分子",
+      "verdict": "通常の条件で適切",
+      "reason": "ポリアミドの代表例で、合成で作られる。"
+    },
+    "3": {
+      "value": "二種以上のモノマーによる共重合体",
+      "verdict": "通常の条件で適切",
+      "reason": "化学的に異なるモノマーを同じ高分子鎖へ取り込んだ場合をいう。単なる二種ポリマーの混合とは異なる。"
+    },
+    "4": {
+      "value": "タンパク質にペプチド結合",
+      "verdict": "通常の条件で適切",
+      "reason": "アミノ酸残基を結ぶ主鎖のアミド結合である。"
+    },
+    "5": {
+      "value": "セルロースはOH多数で水に易溶",
+      "verdict": "不適切",
+      "reason": "OHは水と相互作用できるが、鎖間相互作用・結晶性等が溶解を妨げる。通常のセルロースは水に難溶。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_004.png"
+  ],
+  "question_id": "R07-REG-APPLIED-11",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "b6ee38d657779ee2e9a0c43e3a7a8d1b427515182a18b6984701d27693fe98df",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

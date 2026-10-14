@@ -1,0 +1,45 @@
+{
+  "stem": "オクタン価の標準と芳香族のアンチノック性を比較する。",
+  "conditions": {
+    "判断対象": "オクタン価の標準と芳香族のアンチノック性を比較する。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "nヘプタン/イソオクタン標準",
+      "verdict": "選ばない候補",
+      "reason": "0と100の標準物質を正しく示す。"
+    },
+    "2": {
+      "value": "直鎖は炭素数が少ないほど高い",
+      "verdict": "選ばない候補",
+      "reason": "同族列の代表傾向であり混合燃料の全性質を炭素数だけで保証しない。"
+    },
+    "3": {
+      "value": "100超はイソオクタンに四エチル鉛",
+      "verdict": "選ばない候補",
+      "reason": "歴史的100超の尺度の記述。出題当時規格本文は未照合。"
+    },
+    "4": {
+      "value": "芳香族は低くほぼ負",
+      "verdict": "選ぶ候補",
+      "reason": "芳香族は一般に高いオクタン価へ寄与し、負が一般ではない。"
+    },
+    "5": {
+      "value": "同等標準のイソオクタン体積率",
+      "verdict": "選ばない候補",
+      "reason": "0–100の標準混合物の定義である。100超へ百分率をそのまま延ばさない。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "100超の出題当時測定規格全文と直鎖同族列全数値は未照合。0–100の体積百分率の説明を100超へ無条件拡張しない。",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_005.png"
+  ],
+  "question_id": "H23-REG-APPLIED-14",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "210d74c4bda3247a14a968547b0d515441740897a3a366809a4c94611cc51b35",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "2006年指針の調査対象、疲労の付加影響、優先措置と重大危害への暫定措置を確認する。",
+  "conditions": {
+    "判断方向": "各肢の理由に記録。組合せ・個数問題では記述の真偽と回答番号を区別する。",
+    "原典照合": "全5候補、表の列順、否定、条件、規格番号、法令時点を23原典画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "ア〜エ：×○○○",
+      "verdict": "不一致",
+      "reason": "アの特定、見積り、優先度、措置、記録の定義を否定する点が違う。"
+    },
+    "2": {
+      "value": "○×○○",
+      "verdict": "不一致",
+      "reason": "イは明らかに軽微しか予想されない場合の限定で除外できるため、×ではない。平坦という名称だけで全通路を除外しない。"
+    },
+    "3": {
+      "value": "○○×○",
+      "verdict": "不一致",
+      "reason": "ウの疲労等の影響考慮は指針8にあるため×ではない。"
+    },
+    "4": {
+      "value": "○○○×",
+      "verdict": "不一致",
+      "reason": "エの高順位対策、著しい不合理性の例外と、重大リスクの暫定措置の即時実施は指針10にあり×ではない。"
+    },
+    "5": {
+      "value": "○○○○",
+      "verdict": "適切な組合せ",
+      "reason": "アからエまで2006年指針の定義と条件に対応する。"
+    }
+  },
+  "figures": "設問固有図なし。組合せ表がある問題では全候補の記号順を画像照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/aptitude/page_013.png"
+  ],
+  "question_id": "R06-REG-APT-13",
+  "source_file": "sources/R06/aptitude.pdf",
+  "source_page": "13",
+  "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+  "raw_text_sha256": "b96269ccec08f0f693a39f8bd0731f04526d9ab345136e17c885231fb30bcf83",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

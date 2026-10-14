@@ -1,0 +1,45 @@
+{
+  "stem": "ラムサール条約の対象は湿地。",
+  "conditions": {
+    "原典": "全五肢と否定方向・組合せ表を画像確認。",
+    "資料時点": "令和6年度の指定資料・統計年を保持し、後年値に置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "ラムサールは重要森林の保全",
+      "verdict": "不適切・選択対象",
+      "reason": "重要な湿地の保全と賢明な利用を目的とし、森林一般に置換するのは不適切。"
+    },
+    "2": {
+      "value": "ワシントンは希少野生種の国際取引規制",
+      "verdict": "条件内で適切",
+      "reason": "CITESは種の国際取引を管理する。"
+    },
+    "3": {
+      "value": "モントリオールはODSの生産消費規制",
+      "verdict": "条件内で適切",
+      "reason": "オゾン層破壊物質を対象とする枠組み。後の改正で対象は広がる。"
+    },
+    "4": {
+      "value": "バーゼルは有害廃棄物の越境移動・処分",
+      "verdict": "条件内で適切",
+      "reason": "国境を越える有害廃棄物等の管理。"
+    },
+    "5": {
+      "value": "名古屋は遺伝資源取得と利益配分",
+      "verdict": "条件内で適切",
+      "reason": "ABSは取得機会と利用利益の公正衡平な配分。"
+    }
+  },
+  "figures": "文章五肢を独自要約。",
+  "ambiguity": "各条約・議定書本文の定義と適用範囲の逐条確認は追加査読対象。",
+  "evidence": [
+    "extracted/pages/R06/basic/page_017.png"
+  ],
+  "question_id": "R06-REG-BASIC-5-1",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "ca7441fb1ade4bf053749c988495fead8e2f60a69c698f667139474cbf552f7e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

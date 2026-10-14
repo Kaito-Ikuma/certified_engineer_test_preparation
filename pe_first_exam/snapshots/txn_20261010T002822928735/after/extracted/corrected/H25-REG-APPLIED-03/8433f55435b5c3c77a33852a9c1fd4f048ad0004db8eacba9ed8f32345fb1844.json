@@ -1,0 +1,46 @@
+{
+  "stem": "静電場の閉曲面積分の法則名と、無限一様帯電平面の電場の大きさを選ぶ。",
+  "conditions": {
+    "式": "\\(\\int_S E_n\\,dS=Q/\\varepsilon_0\\)",
+    "平面": "面電荷密度σ。両側に等しい大きさで逆向きの垂直電場。",
+    "組合せ": "法則名／電場の大きさ。"
+  },
+  "choices": {
+    "1": {
+      "value": "ガウス／\\(|\\sigma|/\\varepsilon_0\\)",
+      "verdict": "条件に不一致",
+      "reason": "法則名は合うが、両面から出る電束の係数2が抜ける。"
+    },
+    "2": {
+      "value": "ガウス／\\(|\\sigma|/(2\\varepsilon_0)\\)",
+      "verdict": "条件に一致",
+      "reason": "ガウス法則を薄い柱へ適用した2EA=|σ|A/ε0に一致する。"
+    },
+    "3": {
+      "value": "ガウス／\\(2|\\sigma|/\\varepsilon_0\\)",
+      "verdict": "条件に不一致",
+      "reason": "両面の電束を足すと電場は半分になり、2倍ではない。"
+    },
+    "4": {
+      "value": "クーロン／\\(|\\sigma|/\\varepsilon_0\\)",
+      "verdict": "条件に不一致",
+      "reason": "原典の閉曲面積分はガウス法則で、電場の値も2倍である。"
+    },
+    "5": {
+      "value": "クーロン／\\(|\\sigma|/(2\\varepsilon_0)\\)",
+      "verdict": "条件に不一致",
+      "reason": "電場値は合うが提示された法則名と違う。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_002.png"
+  ],
+  "question_id": "H25-REG-APPLIED-03",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "b841fe76a3e79098d11263e37d195016591519179202a30fddb02c72ba7d2bf5",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

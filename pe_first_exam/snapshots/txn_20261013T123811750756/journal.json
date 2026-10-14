@@ -1,0 +1,16 @@
+{
+  "status": "committed",
+  "time": "2026-10-13T12:38:11+09:00",
+  "paths": [
+    "generated/questions/aptitude/03_compliance_accountability.tex",
+    "generated/questions/aptitude/04_safety_risk.tex"
+  ],
+  "existed": {
+    "generated/questions/aptitude/03_compliance_accountability.tex": true,
+    "generated/questions/aptitude/04_safety_risk.tex": true
+  },
+  "sha256": {
+    "generated/questions/aptitude/03_compliance_accountability.tex": "6b36330896db44a8440482c1c1da4a40c898d09508edc7c1621ac45ff2bd5c28",
+    "generated/questions/aptitude/04_safety_risk.tex": "47d409767cda9fc5d48ee56d1144b5fa1522a229d45a1a1627d8ebaef93dc354"
+  }
+}

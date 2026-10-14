@@ -1,0 +1,175 @@
+{
+  "batch_id": "S7_049_analysis",
+  "saved_at": "2026-10-13T07:11:49.009884+09:00",
+  "official_answers_consulted": false,
+  "records": [
+    {
+      "question_id": "H24-REG-APPLIED-16",
+      "answer_initial": "5",
+      "reason": "XRF特性線で多元素。",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-27",
+      "answer_initial": "4",
+      "reason": "ESRは電子スピン。",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-35",
+      "answer_initial": "1",
+      "reason": "全水の淡水約2.5〜3%。",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-15",
+      "answer_initial": "1",
+      "reason": "NMRは通常観測で物理分画ではない。",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-16",
+      "answer_initial": "1|3",
+      "reason": "GPC保持校正と浸透圧数平均の双方適切。",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-29",
+      "answer_initial": "1",
+      "reason": "降雨>浸透能はHorton型、飽和地表流の定義違い。",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-12",
+      "answer_initial": "1",
+      "reason": "ギ酸脱水はCOと水。",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-16",
+      "answer_initial": "1",
+      "reason": "触媒RNAもある。画像2は水酸でなくカルボキシル。",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-13",
+      "answer_initial": "2",
+      "reason": "CaCO3は純水難溶、CO2で溶解促進。",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-16",
+      "answer_initial": "1",
+      "reason": "NMR通常非分離。",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-12",
+      "answer_initial": "5",
+      "reason": "気体浮力で温圧湿度影響。",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-12",
+      "answer_initial": "5",
+      "reason": "凍結軌道近似IE≈−ε。",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-13",
+      "answer_initial": "2",
+      "reason": "HPLCはPerformanceでPrecisionではない。",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-15",
+      "answer_initial": "1",
+      "reason": "リボザイム例外。",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-18",
+      "answer_initial": "1",
+      "reason": "共沸で気液組成一致。",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-12",
+      "answer_initial": "4",
+      "reason": "NMRに候補順変更。",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-29",
+      "answer_initial": "1|5",
+      "reason": "Darcy被圧でも成立は正しい。5は扇状地の代表傾向。onlyの字は原典になし。",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-11",
+      "answer_initial": "5",
+      "reason": "浮力環境変化。",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-12",
+      "answer_initial": "3",
+      "reason": "レチナール光異性。",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-17",
+      "answer_initial": "4",
+      "reason": "共沸で気液一致。",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-16",
+      "answer_initial": "3",
+      "reason": "XPS化学シフトに感度。",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-15",
+      "answer_initial": "2",
+      "reason": "IR曲げ振動も。",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-22",
+      "answer_initial": "4",
+      "reason": "内標準はピーク分離必要。ただし検出器1の全称もMSでは不適切。",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-14",
+      "answer_initial": "4",
+      "reason": "HPLC Performance。",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-19",
+      "answer_initial": "1",
+      "reason": "FTIRはFourier Transform Infrared。",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-11",
+      "answer_initial": "5",
+      "reason": "セルロース水難溶。",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-14",
+      "answer_initial": "4",
+      "reason": "IR伸縮のみ誤。",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-19",
+      "answer_initial": "4",
+      "reason": "S=Ss×b、体積と面積を逆。",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7"
+    }
+  ]
+}

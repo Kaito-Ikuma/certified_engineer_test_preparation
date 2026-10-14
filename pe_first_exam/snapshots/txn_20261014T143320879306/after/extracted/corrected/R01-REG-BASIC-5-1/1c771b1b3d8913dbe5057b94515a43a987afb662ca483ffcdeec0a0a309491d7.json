@@ -1,0 +1,45 @@
+{
+  "stem": "工業型から都市型の汚染と二次生成。",
+  "conditions": {
+    "時点": "令和元年度に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "SOx/Ox/SPM/CO2",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "NOx/Ox/CO2/SPM",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "SOx/NOx/SPM/Ox",
+      "verdict": "適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "4": {
+      "value": "NOx/SOx/CO2/Ox",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "5": {
+      "value": "SOx/NOx/SPM/CO2",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_019.png"
+  ],
+  "question_id": "R01-REG-BASIC-5-1",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "19",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "3e3094fe23e70c7b7be553658a08523e363d6b4d7a11bdd67a09d10da1957951",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

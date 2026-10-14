@@ -1,0 +1,46 @@
+{
+  "stem": "2枚の凸レンズの中間虚像を次の物体として、第二レンズの焦点距離を求める。",
+  "conditions": {
+    "第一レンズ": "焦点距離15 cm、物体は手前6 cm。",
+    "第二レンズ": "第一より20 cm後方、最終像は第二より後方60 cm。",
+    "方向": "第二レンズの焦点距離。"
+  },
+  "choices": {
+    "1": {
+      "value": "9 cm",
+      "verdict": "不適切",
+      "reason": "30 cmと60 cmに対し1/f=1/30+1/60が成立しない。"
+    },
+    "2": {
+      "value": "18 cm",
+      "verdict": "不適切",
+      "reason": "中間像を第一レンズ後方にある実像とみなすと物体距離を誤る。正しい値20 cmとは一致しない。"
+    },
+    "3": {
+      "value": "20 cm",
+      "verdict": "最適",
+      "reason": "第二レンズから見た物体距離30 cm、実像60 cmを満たす。"
+    },
+    "4": {
+      "value": "21 cm",
+      "verdict": "不適切",
+      "reason": "正しい物体・像距離をレンズ式へ入れた20 cmと一致しない。"
+    },
+    "5": {
+      "value": "26 cm",
+      "verdict": "不適切",
+      "reason": "第一レンズの物体距離6 cmをそのまま第二レンズへ使う等の距離基準の混同ではないか確認する。正しい20 cmとは一致しない。"
+    }
+  },
+  "figures": "原典の条件・数式・単位・全5肢を実画像確認。原典の配置図又は5候補表を照合し、独自説明で位置と符号を区別。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_002.png"
+  ],
+  "question_id": "H28-REG-APPLIED-05",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "4245c1336da7e4adca243b3701a6954732788e3c7b324948982d7dd26b585c1a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "2010原子力比と複合サイクル・シェール。",
+  "conditions": {
+    "時点": "令和2年度に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "30/コンバインド/シェール",
+      "verdict": "適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "2": {
+      "value": "20/コンバインド/シェール",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "20/再熱再生/シェール",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "30/コンバインド/タイトサンド",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "5": {
+      "value": "30/再熱再生/タイトサンド",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "2010の指定分母の原表と米国由来輸入の開始資料は未取得。H24と同じ番号でないことを確認済み。",
+  "evidence": [
+    "extracted/pages/R02/basic/page_021.png"
+  ],
+  "question_id": "R02-REG-BASIC-5-4",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "21",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "fb993f4a0f2ccabf9be230b550bdfaa337ae42668078d6f2cf652a39187e604f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

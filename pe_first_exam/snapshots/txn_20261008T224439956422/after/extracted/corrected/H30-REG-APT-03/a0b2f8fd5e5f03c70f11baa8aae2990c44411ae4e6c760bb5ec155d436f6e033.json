@@ -1,0 +1,56 @@
+{
+  "stem": "平成29年4月のCPDガイドライン第3版の4空欄を選ぶ。",
+  "conditions": {
+    "空欄順": [
+      "ア",
+      "イ",
+      "ウ",
+      "エ"
+    ],
+    "正しい語句の照合": {
+      "ア": "継続研鑚",
+      "イ": "専門家",
+      "ウ": "立場",
+      "エ": "記録"
+    },
+    "出題時資料": "出題指定の第3版2.2節で確認する。"
+  },
+  "choices": {
+    "1": {
+      "value": "継続学習／技術者／環境／記録",
+      "verdict": "不適切な解答候補",
+      "reason": "ア・イ・ウが出題指定資料と異なる。"
+    },
+    "2": {
+      "value": "継続学習／専門家／環境／記載",
+      "verdict": "不適切な解答候補",
+      "reason": "ア・ウ・エが異なる。"
+    },
+    "3": {
+      "value": "継続研鑚／専門家／立場／記録",
+      "verdict": "適切な解答候補",
+      "reason": "第3版2.2節の語句に一致する。"
+    },
+    "4": {
+      "value": "継続学習／技術者／環境／記載",
+      "verdict": "不適切な解答候補",
+      "reason": "ア・イ・ウ・エが異なる。"
+    },
+    "5": {
+      "value": "継続研鑚／専門家／立場／記載",
+      "verdict": "不適切な解答候補",
+      "reason": "エは記載ではなく記録である。"
+    }
+  },
+  "figures": "図なし。組合せ表または個数選択肢は原典画像で確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/aptitude/page_003.png"
+  ],
+  "question_id": "H30-REG-APT-03",
+  "source_file": "sources/H30/aptitude.pdf",
+  "source_page": "3",
+  "source_sha256": "9b92cd3549fc1ad21636a544978f1385f63667ff6ac0112f81e553cf2ee4b1f5",
+  "raw_text_sha256": "c67c9c5de3db5d40395d5cea25ffbc242139d72316b6f51e82aee8a32ab6edba",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

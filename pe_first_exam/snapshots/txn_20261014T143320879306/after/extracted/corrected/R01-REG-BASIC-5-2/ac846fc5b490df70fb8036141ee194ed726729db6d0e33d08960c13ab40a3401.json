@@ -1,0 +1,45 @@
+{
+  "stem": "排出原因を減らす緩和と影響への適応。",
+  "conditions": {
+    "時点": "令和元年度に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "JCMは貢献定量化と目標活用",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "2": {
+      "value": "適応は原因のガス排出削減",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "3": {
+      "value": "CFP全過程CO2換算",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "4": {
+      "value": "LCA全段階影響評価",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "5": {
+      "value": "環境基準は望ましい状態",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "JCMの2019運用ルール全文とCFP規格は追加照合。",
+  "evidence": [
+    "extracted/pages/R01/basic/page_020.png"
+  ],
+  "question_id": "R01-REG-BASIC-5-2",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "20",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "dc7c27b3a7c242bc06b8c48993775e028b4127b2e2ff5e5545cd71908da2648a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

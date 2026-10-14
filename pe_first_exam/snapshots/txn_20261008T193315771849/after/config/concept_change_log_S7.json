@@ -1,0 +1,12 @@
+{
+  "time": "2026-10-08T19:33:15+09:00",
+  "change": "Five physics-mechanics concepts added; existing IDs and taxonomy assignments retained",
+  "added_ids": [
+    "newton_dynamics",
+    "mechanical_energy",
+    "buoyancy",
+    "bernoulli",
+    "impact"
+  ],
+  "reason": "Source review found buoyancy, energy, Newton dynamics and impact wrongly tagged as circuits/orbits or left unresolved; Pitot principle also needs explicit concept"
+}

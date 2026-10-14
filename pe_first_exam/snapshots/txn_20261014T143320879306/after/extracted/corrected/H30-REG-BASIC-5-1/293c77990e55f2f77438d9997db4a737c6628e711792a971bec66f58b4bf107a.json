@@ -1,0 +1,45 @@
+{
+  "stem": "SDGsの対象は先進国も含む。",
+  "conditions": {
+    "時点": "平成30年度に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "2015の2030アジェンダ中核",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "2": {
+      "value": "途上国だけの目標",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "3": {
+      "value": "17ゴール169ターゲット",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "4": {
+      "value": "多様主体の連携",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "5": {
+      "value": "日本2016実施指針",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/basic/page_018.png"
+  ],
+  "question_id": "H30-REG-BASIC-5-1",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "18",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "7f3a3e122e2cca37ef3b9e9d19278619071c06e73e064dceba9bc3e4b1d364ae",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

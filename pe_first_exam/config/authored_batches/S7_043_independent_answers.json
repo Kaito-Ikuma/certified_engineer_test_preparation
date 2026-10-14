@@ -1,0 +1,133 @@
+{
+  "time": "2026-10-12T14:46:51+09:00",
+  "official_consulted": false,
+  "original_images_reviewed": 18,
+  "records": [
+    {
+      "question_id": "H23-REG-APT-02",
+      "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+      "source_page": "3",
+      "answer_initial": "3",
+      "reason": "社会理解のためのデータ改変は不正。正直・評価・説明・相互批判・利益相反は適切。"
+    },
+    {
+      "question_id": "H23-REG-APT-03",
+      "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+      "source_page": "3",
+      "answer_initial": "5",
+      "reason": "ア○イ×ウ×エ○。公正試験、犯罪は身体財産害だけでない、自己責任で他者公正を侵害不可、倫理必要。"
+    },
+    {
+      "question_id": "H23-REG-APT-07",
+      "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+      "source_page": "8",
+      "answer_initial": "5",
+      "reason": "ア家族生存なら対象、イ公開情報対象、ウ識別画像対象、エ運送封筒内容取扱でないなら直接責任なし。エは契約・委託条件疑義。"
+    },
+    {
+      "question_id": "H23-REG-APT-10",
+      "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+      "source_page": "11",
+      "answer_initial": "3",
+      "reason": "暗黙知/形式知/CIA機密完全可用。冒頭ISO27000年表記は別疑義。"
+    },
+    {
+      "question_id": "H24-REG-APT-04",
+      "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+      "source_page": "3",
+      "answer_initial": "2",
+      "reason": "ア○イ×ウ○エ×。複数DB総個人数、照合容易番号、識別画像。5000制度当時。"
+    },
+    {
+      "question_id": "H26-REG-APT-04",
+      "source_sha256": "5691e940fce3cbf9423bc99a96803c1c6273563931b76b91bdb9f2b67e6233d3",
+      "source_page": "4",
+      "answer_initial": "4",
+      "reason": "ア○イ×ウ○エ○。避難例外は必要限度、名簿第三者同意原則例外注意。"
+    },
+    {
+      "question_id": "R01-REG-APT-04",
+      "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+      "source_page": "5",
+      "answer_initial": "1",
+      "reason": "七生体特徴いずれも識別符号、除外0。変換要件を前提。"
+    },
+    {
+      "question_id": "R01-RET-APT-15",
+      "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+      "source_page": "16",
+      "answer_initial": "1",
+      "reason": "全四記述妥当。不適切0。社会誘導・多様性・プライバシー・デバイド。"
+    },
+    {
+      "question_id": "R03-REG-APT-03",
+      "source_sha256": "73f1426490c272bb33312654f07964404c16a78e9b0ff238c54eca8178d939df",
+      "source_page": "3",
+      "answer_initial": "1",
+      "reason": "ア〜エ全○。双方向理解、利益相反、研究説明、守秘両立。"
+    },
+    {
+      "question_id": "R03-REG-APT-04",
+      "source_sha256": "73f1426490c272bb33312654f07964404c16a78e9b0ff238c54eca8178d939df",
+      "source_page": "4",
+      "answer_initial": "2",
+      "reason": "学内手続で部品主要要素と判定。公知ではない非公開打合せ、持出品、自作対象。"
+    },
+    {
+      "question_id": "R03-REG-APT-06",
+      "source_sha256": "73f1426490c272bb33312654f07964404c16a78e9b0ff238c54eca8178d939df",
+      "source_page": "6",
+      "answer_initial": "1",
+      "reason": "列挙十原則はAI利活用原則として全て該当すると思われる。利用者限定と事業利用者区別は原典要確認。"
+    },
+    {
+      "question_id": "R03-REG-APT-14",
+      "source_sha256": "73f1426490c272bb33312654f07964404c16a78e9b0ff238c54eca8178d939df",
+      "source_page": "14",
+      "answer_initial": "2",
+      "reason": "ア×イ○ウ×エ×。本人照会対応必要連絡は黙示同意範囲、謝罪無断第三者・目的外求人・CC漏洩不適切。"
+    },
+    {
+      "question_id": "R04-REG-APT-08",
+      "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+      "source_page": "7",
+      "answer_initial": "2",
+      "reason": "ア×イ×ウ×エ○。少量国内購入可非免除、古判定・紹介信頼審査省略不可、出荷照合。"
+    },
+    {
+      "question_id": "R04-REG-APT-13",
+      "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+      "source_page": "12",
+      "answer_initial": "3",
+      "reason": "ア○イ×ウ○エ○オ○。可用性と完全性が逆。他は方針と継続改善。"
+    },
+    {
+      "question_id": "R05-REG-APT-12",
+      "source_sha256": "3dee8906ad8be46592986fef01028424243f7e515af04979667524eed1f0a915",
+      "source_page": "12",
+      "answer_initial": "4",
+      "reason": "国内非居住者への技術も確認対象。特許最小必要例外の出題時点要確認。"
+    },
+    {
+      "question_id": "R06-REG-APT-09",
+      "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+      "source_page": "9",
+      "answer_initial": "5",
+      "reason": "骨伝導特徴は令の七生体分類にない。他四は列挙。定義の医学不正確も補わない。"
+    },
+    {
+      "question_id": "R07-REG-APT-05",
+      "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+      "source_page": "5",
+      "answer_initial": "1",
+      "reason": "ア×イ○ウ○エ○オ×。ポリシーとISMSの名称交換。"
+    },
+    {
+      "question_id": "R07-REG-APT-07",
+      "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+      "source_page": "7",
+      "answer_initial": "1",
+      "reason": "知識/高付加価値化/医療/対話の組合せ。白書原典追加照合。"
+    }
+  ]
+}

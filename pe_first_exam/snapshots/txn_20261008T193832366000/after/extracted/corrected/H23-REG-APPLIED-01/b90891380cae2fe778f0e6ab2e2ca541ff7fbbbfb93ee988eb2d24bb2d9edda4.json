@@ -1,0 +1,48 @@
+{
+  "stem": "30度の斜面を下る質量2 kgの物体について、動摩擦を含めた加速度を求める。",
+  "conditions": {
+    "mass_kg": 2,
+    "angle_deg": 30,
+    "kinetic_friction": "\\(\\sqrt{3}/6\\)",
+    "gravity": "g",
+    "air_resistance": "ignored"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(g/2\\)",
+      "verdict": "不採用",
+      "reason": "摩擦を無視した値である。"
+    },
+    "2": {
+      "value": "\\(g/3\\)",
+      "verdict": "不採用",
+      "reason": "指定された摩擦項を差し引いたg/4と一致しない。"
+    },
+    "3": {
+      "value": "\\(g/4\\)",
+      "verdict": "採用",
+      "reason": "斜面重力g/2から摩擦による減速g/4を差し引いた値である。"
+    },
+    "4": {
+      "value": "\\(g/\\sqrt{3}\\)",
+      "verdict": "不採用",
+      "reason": "摩擦がなくても最大g/2であり、この値はそれを超える。"
+    },
+    "5": {
+      "value": "\\(g/\\sqrt{6}\\)",
+      "verdict": "不採用",
+      "reason": "指定条件のg/4より大きく、運動方程式を満たさない。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_001.png"
+  ],
+  "question_id": "H23-REG-APPLIED-01",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "619f2bce5b2fe289e28996e5a2f0582d220062cab56810b996cfd8d41e2c94b5",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

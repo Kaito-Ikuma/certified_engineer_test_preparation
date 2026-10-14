@@ -1,0 +1,44 @@
+{
+  "stem": "重力・磁気探査の基準面、磁化特性、移動観測補正と、別の観測分野の語を区別する。",
+  "conditions": {
+    "選択方向": "誤り又は最も不適切・関係の薄いものを1つ"
+  },
+  "choices": {
+    "1": {
+      "value": "ケーニヒスベルガー比",
+      "verdict": "適切",
+      "reason": "自然残留磁化の大きさと現在の場による誘導磁化の大きさの比であり、磁気異常の解釈に関係する。"
+    },
+    "2": {
+      "value": "ジオイド",
+      "verdict": "適切",
+      "reason": "基準となる重力等ポテンシャル面であり、重力場と標高の基準に関係する。"
+    },
+    "3": {
+      "value": "AE（アコースティック・エミッション）",
+      "verdict": "不適切",
+      "reason": "微小破壊等に伴う過渡的な弾性波の放出・計測である。岩石研究にも用いるが、重力や磁化の測定とは異なる物理量を扱う。"
+    },
+    "4": {
+      "value": "キュリー温度",
+      "verdict": "適切",
+      "reason": "強磁性・フェリ磁性の自発磁化が消失する温度に対応し、磁性鉱物や磁気探査の解釈に関係する。"
+    },
+    "5": {
+      "value": "エトベス補正",
+      "verdict": "適切",
+      "reason": "移動観測系の運動に伴う見掛重力の差を補正する。"
+    }
+  },
+  "figures": "図なし。否定方向と全5肢を原典ページ画像で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_012.png"
+  ],
+  "question_id": "R06-REG-APPLIED-34",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "b734651f8807e83993b98c3ee6342fb85c071c6b13080a3f186053e91d5f0a02",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

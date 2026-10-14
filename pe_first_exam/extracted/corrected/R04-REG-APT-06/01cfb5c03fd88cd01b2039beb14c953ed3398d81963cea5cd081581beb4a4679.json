@@ -1,0 +1,45 @@
+{
+  "stem": "ALARPの適用領域・著しい不均衡と、設計の優先順位を判定する。",
+  "conditions": {
+    "判断方向": "各肢の理由に記録。組合せ・個数問題では記述の真偽と回答番号を区別する。",
+    "原典照合": "全5候補、表の列順、否定、条件、規格番号、法令時点を23原典画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "残留リスクまで反復し確認・文書化。",
+      "verdict": "適切（条件内）",
+      "reason": "評価と対策を反復し、最終的に残る危険の根拠を確認して記録する。"
+    },
+    "2": {
+      "value": "合理的に実行可能な限り低く。",
+      "verdict": "適切（条件内）",
+      "reason": "略語は単に数学的絶対最小値を求める意味ではなく、合理的実行可能性を含む。"
+    },
+    "3": {
+      "value": "適用水準で合理的に可能な低減を行う。",
+      "verdict": "適切（条件内）",
+      "reason": "条件付で許容する領域で更なる合理的低減を検討する。"
+    },
+    "4": {
+      "value": "追加低減が不能又は著しく不釣合いなら許容。",
+      "verdict": "適切（条件内）",
+      "reason": "適用領域内で合理的に可能な措置が残っていないことを根拠とする。どの高リスクも費用だけで許容できる意味ではない。"
+    },
+    "5": {
+      "value": "設計、防護、情報の3方策に順位なし。",
+      "verdict": "不適切",
+      "reason": "本質的設計を先に検討し、防護、情報へ続く順位がある。"
+    }
+  },
+  "figures": "設問固有図なし。組合せ表がある問題では全候補の記号順を画像照合。",
+  "ambiguity": "Guide51全文の該当条項は未取得であり、規格本文への全5肢の直接照合は保留。公開一次資料で階層とALARP水準の原理を確認。",
+  "evidence": [
+    "extracted/pages/R04/aptitude/page_005.png"
+  ],
+  "question_id": "R04-REG-APT-06",
+  "source_file": "sources/R04/aptitude.pdf",
+  "source_page": "5",
+  "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+  "raw_text_sha256": "f3ee20208d7831e0f724d59830ace32b8d14738d28f4c528f1b37686efcd83b8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

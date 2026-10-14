@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-12T20:22:52+09:00",
+  "paths": [
+    "generated/questions/applied_science/physics_chemistry/12_organic_polymer.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/physics_chemistry/12_organic_polymer.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/physics_chemistry/12_organic_polymer.tex": "b2cdb3bd8d08b49beac71284f886012e6463bd9803a2dfa867020833432b2b18"
+  }
+}

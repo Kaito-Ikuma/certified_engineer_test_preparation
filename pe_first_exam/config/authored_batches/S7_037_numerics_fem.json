@@ -1,0 +1,1544 @@
+{
+  "batch_id": "S7_037_numerics_fem",
+  "reference_date": "2026-10-12",
+  "questions": [
+    {
+      "question_id": "H23-REG-BASIC-3-1",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "4節点双一次四角形要素の変位・ひずみ・応力の連続性を区別する。",
+      "summary": "4節点双一次四角形要素の変位・ひずみ・応力の連続性を区別する。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "線形弾性・平面ひずみ。4節点アイソパラメトリック要素の適合する変位法、非退化の形状と共有節点を前提とする。"
+      },
+      "choices": {
+        "1": {
+          "value": "隣接要素の辺で応力は不連続",
+          "verdict": "条件付きで適切",
+          "reason": "変位の一次微分は要素ごとであり、一般に応力の跳びが許される。一様ひずみのパッチでは一致もするため、常に不連続という全称ではない。"
+        },
+        "2": {
+          "value": "各要素内の応力は一定",
+          "verdict": "不適切",
+          "reason": "双一次変位を微分しても交差項から位置依存が残る。3節点一次三角形の一定ひずみ性と混同している。"
+        },
+        "3": {
+          "value": "精度は要素形状に影響される",
+          "verdict": "適切",
+          "reason": "写像のJacobianと補間誤差が形状に関係し、強い歪みや退化で精度が悪化し得る。"
+        },
+        "4": {
+          "value": "辺上の変位は隣接要素間で連続",
+          "verdict": "条件付きで適切",
+          "reason": "同じ辺の節点変位を共有する適合Q4では辺上の一次補間も一致する。非適合接続や接触面を含む一般論へ拡張しない。"
+        },
+        "5": {
+          "value": "精度は要素分割の細かさに影響される",
+          "verdict": "適切",
+          "reason": "離散空間の解像度が変位や応力の近似誤差に影響する。細かさだけで全誤差を評価できるわけではない。"
+        }
+      },
+      "figures": "図なし。数式と5候補を原本で照合。",
+      "ambiguity": "非正答肢1の不連続は一般的挙動である。全ての応力場で跳ぶという全称には反例がある。",
+      "evidence": [
+        "extracted/pages/H23/basic/page_008.png"
+      ],
+      "core_concept": "4節点双一次四角形要素の変位・ひずみ・応力の連続性を区別する。",
+      "required_knowledge": "線形弾性・平面ひずみ。4節点アイソパラメトリック要素の適合する変位法、非退化の形状と共有節点を前提とする。",
+      "solution": "双一次補間にはxyの交差項があり、例えば長方形で \\(u=a+bx+cy+dxy\\) なら \\(\\partial_xu=b+dy\\) となる。要素内ひずみは一般に位置で変化する。均質な線形弾性では応力も変わるため、要素内一定という2が不適切である。共有節点を結ぶ辺で変位は連続でも、その微分の連続までは要求されない。",
+      "answer_reason": "双一次補間にはxyの交差項があり、例えば長方形で \\(u=a+bx+cy+dxy\\) なら \\(\\partial_xu=b+dy\\) となる。要素内ひずみは一般に位置で変化する。均質な線形弾性では応力も変わるため、要素内一定という2が不適切である。共有節点を結ぶ辺で変位は連続でも、その微分の連続までは要求されない。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前に保存した初回解答を保持。双一次Q4は要素内でひずみ・応力が一般に変化する。界面応力の常時不連続は全称注意。",
+      "learning_points": "変位の次数から微分の次数へ進み、変位の連続と応力の連続を別にする。",
+      "theory_references": [
+        "theory:fem:q4",
+        "theory:fem:continuity"
+      ],
+      "discipline_id": "basic_3_1",
+      "concept_id": "fem_interpolation_continuity",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。変位の次数から微分の次数へ進み、変位の連続と応力の連続を別にする。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "mit_roy_fea1999"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H23-REG-BASIC-3-3",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "層に平行・垂直な熱伝導から有効熱伝導率を求める。",
+      "summary": "層に平行・垂直な熱伝導から有効熱伝導率を求める。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "図の二つの水平層、厚さl1,l2、異なる熱伝導率k1,k2、指定2面の異なる温度T1,T2、その他断熱、界面温度連続。定常・接触熱抵抗なしのFourier伝導モデルである。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(k_x=(k_1l_2+k_2l_1)/L\\)、\\(k_y=(k_1l_1+k_2l_2)/L\\)",
+          "verdict": "不適切",
+          "reason": "xの材料と厚さの組が入れ替わり、yも直列の熱抵抗の和ではなく算術平均になっている。"
+        },
+        "2": {
+          "value": "\\(k_x=L/(l_2/k_1+l_1/k_2)\\)、\\(k_y=(k_1l_2+k_2l_1)/L\\)",
+          "verdict": "不適切",
+          "reason": "平行なxに調和型を用い、両式の厚さの重みも材料と逆になっている。"
+        },
+        "3": {
+          "value": "\\(k_x=(k_1l_1+k_2l_2)/L\\)、\\(k_y=L/(l_2/k_1+l_1/k_2)\\)",
+          "verdict": "条件付きで適切",
+          "reason": "xは正しいがyの厚さが逆である。l1=l2の特殊値では5と一致するが、一般式としては誤りである。"
+        },
+        "4": {
+          "value": "\\(k_x=L/(l_2/k_1+l_1/k_2)\\)、\\(k_y=(k_1l_1+k_2l_2)/L\\)",
+          "verdict": "不適切",
+          "reason": "xで誤った直列型、yで並列型を用いており、熱流と温度差の足し方を取り違える。"
+        },
+        "5": {
+          "value": "\\(k_x=(k_1l_1+k_2l_2)/L\\)、\\(k_y=L/(l_1/k_1+l_2/k_2)\\)",
+          "verdict": "適切",
+          "reason": "L=l1+l2。平行な層の熱流和と垂直な層の温度差和からそれぞれ導ける。"
+        }
+      },
+      "figures": "図を確認：上層k1・l1、下層k2・l2。xは層に平行、yは垂直。二つの境界温度設定を原図で確認。",
+      "ambiguity": "原典の平均熱伝導率は定常伝導を想定するが時間条件は明示的でない。等厚時3と5は同じ値になる。一般のl1,l2に対する式の識別として公式5を保持する。",
+      "evidence": [
+        "extracted/pages/H23/basic/page_010.png"
+      ],
+      "core_concept": "層に平行・垂直な熱伝導から有効熱伝導率を求める。",
+      "required_knowledge": "図の二つの水平層、厚さl1,l2、異なる熱伝導率k1,k2、指定2面の異なる温度T1,T2、その他断熱、界面温度連続。定常・接触熱抵抗なしのFourier伝導モデルである。",
+      "solution": "層に平行なx方向では各層の温度勾配が同じで、熱流を足すと \\(k_x=(k_1l_1+k_2l_2)/(l_1+l_2)\\)。垂直なy方向では同じ熱流が各層を通り、温度差を足すと \\(k_y=(l_1+l_2)/(l_1/k_1+l_2/k_2)\\) となる。両式を一般の厚さに対して満たす5を選ぶ。",
+      "answer_reason": "層に平行なx方向では各層の温度勾配が同じで、熱流を足すと \\(k_x=(k_1l_1+k_2l_2)/(l_1+l_2)\\)。垂直なy方向では同じ熱流が各層を通り、温度差を足すと \\(k_y=(l_1+l_2)/(l_1/k_1+l_2/k_2)\\) となる。両式を一般の厚さに対して満たす5を選ぶ。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前に保存した初回解答を保持。x方向は並列で厚さ重み算術平均、y方向は直列で調和平均。一般式として5。等厚時3と5一致の退化条件を残す。",
+      "learning_points": "伝導方向を先に決め、並列では熱流、直列では温度差を足す。算術平均と調和平均の重みを材料へ対応させる。",
+      "theory_references": [
+        "theory:fem:thermal"
+      ],
+      "discipline_id": "basic_3_1",
+      "concept_id": "layered_thermal_conductivity",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。伝導方向を先に決め、並列では熱流、直列では温度差を足す。算術平均と調和平均の重みを材料へ対応させる。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "openstax_thermal_conduction"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-3-1",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "線形弾性解析のメッシュ依存と局所応力の安全側保証を判定する。",
+      "summary": "線形弾性解析のメッシュ依存と局所応力の安全側保証を判定する。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "材料は線形弾性。適合・非退化の要素と境界条件を想定する。応力の変化率と大きさ、エネルギー誤差と一点応力を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "粗い分割なら常に変形は小さく応力は高いため安全側",
+          "verdict": "不適切",
+          "reason": "変位法の剛性傾向があっても局所応力の上限保証にはならない。応力集中を粗い分割で過小評価することもあり、全称の安全側判定が誤りである。"
+        },
+        "2": {
+          "value": "複数の要素分割で結果を比較する",
+          "verdict": "適切",
+          "reason": "変位・反力・注目する応力をメッシュを変えて比較し、離散化の影響を調べる。"
+        },
+        "3": {
+          "value": "ある荷重で妥当な分割でも別荷重で妥当とは限らない",
+          "verdict": "適切",
+          "reason": "荷重が変わると高勾配の位置や変形モードが変わるため、解像度の確認をやり直す必要がある。"
+        },
+        "4": {
+          "value": "応力変化が小さい部分は絶対値によらず分割影響が小さい",
+          "verdict": "条件付きで適切",
+          "reason": "空間変化を解像するという典型的な判断である。ただし周囲の誤差や不良形状、評価する絶対誤差まで保証しない。"
+        },
+        "5": {
+          "value": "応力変化の大きい部分を細分する",
+          "verdict": "適切",
+          "reason": "応力集中や勾配の大きい領域を解像する局所的な細分化である。特異点のピーク値が有限に収束するとは限らない。"
+        }
+      },
+      "figures": "図なし。数式と5候補を原本で照合。",
+      "ambiguity": "非正答肢の勾配と細分化は通常条件での目安であり、全形状・全境界条件の精度保証ではない。",
+      "evidence": [
+        "extracted/pages/H24/basic/page_008.png"
+      ],
+      "core_concept": "線形弾性解析のメッシュ依存と局所応力の安全側保証を判定する。",
+      "required_knowledge": "材料は線形弾性。適合・非退化の要素と境界条件を想定する。応力の変化率と大きさ、エネルギー誤差と一点応力を区別する。",
+      "solution": "有限要素法の変位と応力は異なる近似量である。変位から微分して求める局所応力には、粗い分割で常に高くなるという保証はない。応力集中を解像できず低く見積もることもある。したがって常に安全側という1が不適切である。複数の分割と荷重ケースで目的とする量を比較する。",
+      "answer_reason": "有限要素法の変位と応力は異なる近似量である。変位から微分して求める局所応力には、粗い分割で常に高くなるという保証はない。応力集中を解像できず低く見積もることもある。したがって常に安全側という1が不適切である。複数の分割と荷重ケースで目的とする量を比較する。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前に保存した初回解答を保持。粗い格子の応力が常に高く安全側という保証はない。",
+      "learning_points": "粗い分割の硬さから一点応力の上下を断定しない。評価量ごとに収束を確認し、特異点と通常の集中を区別する。",
+      "theory_references": [
+        "theory:fem:mesh",
+        "theory:fem:continuity"
+      ],
+      "discipline_id": "basic_3_1",
+      "concept_id": "fem_mesh_convergence",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。粗い分割の硬さから一点応力の上下を断定しない。評価量ごとに収束を確認し、特異点と通常の集中を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "mit_roy_fea1999"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-3-3",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "線形弾性解析のメッシュ依存と局所応力の安全側保証を判定する。",
+      "summary": "線形弾性解析のメッシュ依存と局所応力の安全側保証を判定する。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "材料は線形弾性。適合・非退化の要素と境界条件を想定する。応力の変化率と大きさ、エネルギー誤差と一点応力を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "応力変化の大きい部分を細分する",
+          "verdict": "適切",
+          "reason": "応力集中や勾配の大きい領域を解像する局所的な細分化である。特異点のピーク値が有限に収束するとは限らない。"
+        },
+        "2": {
+          "value": "応力変化が小さい部分は絶対値によらず分割影響が小さい",
+          "verdict": "条件付きで適切",
+          "reason": "空間変化を解像するという典型的な判断である。ただし周囲の誤差や不良形状、評価する絶対誤差まで保証しない。"
+        },
+        "3": {
+          "value": "複数の要素分割で結果を比較する",
+          "verdict": "適切",
+          "reason": "変位・反力・注目する応力をメッシュを変えて比較し、離散化の影響を調べる。"
+        },
+        "4": {
+          "value": "粗い分割なら常に変形は小さく応力は高いため安全側",
+          "verdict": "不適切",
+          "reason": "変位法の剛性傾向があっても局所応力の上限保証にはならない。応力集中を粗い分割で過小評価することもあり、全称の安全側判定が誤りである。"
+        },
+        "5": {
+          "value": "ある荷重で妥当な分割でも別荷重で妥当とは限らない",
+          "verdict": "適切",
+          "reason": "荷重が変わると高勾配の位置や変形モードが変わるため、解像度の確認をやり直す必要がある。"
+        }
+      },
+      "figures": "図なし。数式と5候補を原本で照合。",
+      "ambiguity": "非正答肢の勾配と細分化は通常条件での目安であり、全形状・全境界条件の精度保証ではない。",
+      "evidence": [
+        "extracted/pages/H29/basic/page_011.png"
+      ],
+      "core_concept": "線形弾性解析のメッシュ依存と局所応力の安全側保証を判定する。",
+      "required_knowledge": "材料は線形弾性。適合・非退化の要素と境界条件を想定する。応力の変化率と大きさ、エネルギー誤差と一点応力を区別する。",
+      "solution": "有限要素法の変位と応力は異なる近似量である。変位から微分して求める局所応力には、粗い分割で常に高くなるという保証はない。応力集中を解像できず低く見積もることもある。したがって常に安全側という4が不適切である。複数の分割と荷重ケースで目的とする量を比較する。",
+      "answer_reason": "有限要素法の変位と応力は異なる近似量である。変位から微分して求める局所応力には、粗い分割で常に高くなるという保証はない。応力集中を解像できず低く見積もることもある。したがって常に安全側という4が不適切である。複数の分割と荷重ケースで目的とする量を比較する。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前に保存した初回解答を保持。粗い格子が常に応力高値で安全側という4が不適切。",
+      "learning_points": "粗い分割の硬さから一点応力の上下を断定しない。評価量ごとに収束を確認し、特異点と通常の集中を区別する。",
+      "theory_references": [
+        "theory:fem:mesh",
+        "theory:fem:continuity"
+      ],
+      "discipline_id": "basic_3_1",
+      "concept_id": "fem_mesh_convergence",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。粗い分割の硬さから一点応力の上下を断定しない。評価量ごとに収束を確認し、特異点と通常の集中を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "mit_roy_fea1999"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-3-3",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "三角形の重心の面積座標を求める。",
+      "summary": "三角形の重心の面積座標を求める。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "非退化三角形IJK。AIはPJK、AJはPKI、AKはPIJの面積。Pは重心であり内心や外心ではない。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((1/3,1/3,1/3)\\)",
+          "verdict": "適切",
+          "reason": "三つが等面積で和も1である。"
+        },
+        "2": {
+          "value": "\\((1/\\sqrt3,1/\\sqrt3,1/\\sqrt3)\\)",
+          "verdict": "不適切",
+          "reason": "和が√3で1でなく、面積の比を長さの比の平方根と混ぜる。"
+        },
+        "3": {
+          "value": "\\((1/2,1/2,1/2)\\)",
+          "verdict": "不適切",
+          "reason": "和が3/2になる。辺の中点の場合は一つが0となる。"
+        },
+        "4": {
+          "value": "\\((2/\\sqrt3,2/\\sqrt3,2/\\sqrt3)\\)",
+          "verdict": "不適切",
+          "reason": "和が2√3であり面積の分割を満たさない。"
+        },
+        "5": {
+          "value": "\\((2/3,2/3,2/3)\\)",
+          "verdict": "不適切",
+          "reason": "和が2になる。重心が中線を2:1に分ける長さの比は面積座標の値そのものではない。"
+        }
+      },
+      "figures": "図を確認：Iは上、Jは左下、Kは右下。Pを囲むAI,AJ,AKはそれぞれ向かい辺JK,KI,IJの面積。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_012.png"
+      ],
+      "core_concept": "三角形の重心の面積座標を求める。",
+      "required_knowledge": "非退化三角形IJK。AIはPJK、AJはPKI、AKはPIJの面積。Pは重心であり内心や外心ではない。",
+      "solution": "重心Pは三頂点の座標平均である。中線によって三角形は6等面積に分かれ、Pと一辺の作る3つの三角形は各2片を含む。したがって \\(A_I/A=A_J/A=A_K/A=1/3\\) であり1である。面積座標の和が1という確認も使える。",
+      "answer_reason": "重心Pは三頂点の座標平均である。中線によって三角形は6等面積に分かれ、Pと一辺の作る3つの三角形は各2片を含む。したがって \\(A_I/A=A_J/A=A_K/A=1/3\\) であり1である。面積座標の和が1という確認も使える。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前に保存した初回解答を保持。重心が三小三角形を等面積に分けるため各1/3。",
+      "learning_points": "面積座標を向かい辺の小三角形へ対応させ、非負と和1を最初に確認する。",
+      "theory_references": [
+        "theory:fem:area"
+      ],
+      "discipline_id": "basic_3_1",
+      "concept_id": "triangle_area_coordinates",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。面積座標を向かい辺の小三角形へ対応させ、非負と和1を最初に確認する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "mit_roy_fea1999"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-3-2",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "数値誤差の種類と、それに対応する精度改善策を判定する。",
+      "summary": "数値誤差の種類と、それに対応する精度改善策を判定する。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "同じ問題と評価量で精度を比較する。高次化と細分化の効果は解の正則性・健全な要素・十分な数値積分を要する。"
+      },
+      "choices": {
+        "1": {
+          "value": "解の変化が大きい場所を細分する",
+          "verdict": "条件付きで適切",
+          "reason": "高勾配を解像するh改良である。形状の健全性や特異点に注意し、モデル誤差は細分だけで消えない。"
+        },
+        "2": {
+          "value": "高次要素へ変更する",
+          "verdict": "条件付きで適切",
+          "reason": "滑らかな解をより高次の補間で近似するp改良である。解の正則性、写像、積分が適切な条件で有効である。"
+        },
+        "3": {
+          "value": "反復回数が多いので収束判定条件を緩める",
+          "verdict": "不適切",
+          "reason": "停止閾値を大きくすると未収束のまま停止しやすくなり、許容する反復誤差を増やす。速く終わることと精度向上を混同する。"
+        },
+        "4": {
+          "value": "強く歪んだ要素を避ける",
+          "verdict": "適切",
+          "reason": "写像の退化や誤差増幅を抑えるための形状改善である。細分の数だけでなく形を確認する。"
+        },
+        "5": {
+          "value": "丸め誤差を減らすため単精度から倍精度へ変更する",
+          "verdict": "条件付きで適切",
+          "reason": "仮数の精度を増やして丸め誤差を小さくし得る。打切り・モデル誤差が消えることや誤差ゼロを保証するものではない。"
+        }
+      },
+      "figures": "図なし。数式と5候補を原本で照合。",
+      "ambiguity": "高次要素や倍精度は通常の改善策であり、あらゆる解・実装の精度向上を無条件に保証しない。",
+      "evidence": [
+        "extracted/pages/H26/basic/page_009.png"
+      ],
+      "core_concept": "数値誤差の種類と、それに対応する精度改善策を判定する。",
+      "required_knowledge": "同じ問題と評価量で精度を比較する。高次化と細分化の効果は解の正則性・健全な要素・十分な数値積分を要する。",
+      "solution": "数値解析には離散化誤差、反復停止による誤差、丸め誤差がある。細分・高次化・良好な要素形状・演算精度の増加はそれぞれ対応する誤差を改善し得る。一方、反復の停止条件を緩めると大きい誤差を許容して早く止めるため、精度向上という目的に対して不適切である。",
+      "answer_reason": "数値解析には離散化誤差、反復停止による誤差、丸め誤差がある。細分・高次化・良好な要素形状・演算精度の増加はそれぞれ対応する誤差を改善し得る。一方、反復の停止条件を緩めると大きい誤差を許容して早く止めるため、精度向上という目的に対して不適切である。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前に保存した初回解答を保持。反復停止条件を緩めても精度は向上しない。",
+      "learning_points": "誤差の原因を特定してから、h・p・反復閾値・有限精度のどれを変更するか決める。",
+      "theory_references": [
+        "theory:numerics:errors",
+        "theory:numerics:newton",
+        "theory:fem:mesh"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "numerical_accuracy",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。誤差の原因を特定してから、h・p・反復閾値・有限精度のどれを変更するか決める。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "mit_roy_fea1999",
+        "goldberg1991",
+        "nist_newton"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-BASIC-3-3",
+      "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+      "stem": "数値誤差の種類と、それに対応する精度改善策を判定する。",
+      "summary": "数値誤差の種類と、それに対応する精度改善策を判定する。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "同じ問題と評価量で精度を比較する。高次化と細分化の効果は解の正則性・健全な要素・十分な数値積分を要する。"
+      },
+      "choices": {
+        "1": {
+          "value": "強く歪んだ要素を避ける",
+          "verdict": "適切",
+          "reason": "写像の退化や誤差増幅を抑えるための形状改善である。細分の数だけでなく形を確認する。"
+        },
+        "2": {
+          "value": "高次要素へ変更する",
+          "verdict": "条件付きで適切",
+          "reason": "滑らかな解をより高次の補間で近似するp改良である。解の正則性、写像、積分が適切な条件で有効である。"
+        },
+        "3": {
+          "value": "解の変化が大きい場所を細分する",
+          "verdict": "条件付きで適切",
+          "reason": "高勾配を解像するh改良である。形状の健全性や特異点に注意し、モデル誤差は細分だけで消えない。"
+        },
+        "4": {
+          "value": "丸め誤差を減らすため単精度から倍精度へ変更する",
+          "verdict": "条件付きで適切",
+          "reason": "仮数の精度を増やして丸め誤差を小さくし得る。打切り・モデル誤差が消えることや誤差ゼロを保証するものではない。"
+        },
+        "5": {
+          "value": "反復回数が多いので収束判定条件を緩める",
+          "verdict": "不適切",
+          "reason": "停止閾値を大きくすると未収束のまま停止しやすくなり、許容する反復誤差を増やす。速く終わることと精度向上を混同する。"
+        }
+      },
+      "figures": "図なし。数式と5候補を原本で照合。",
+      "ambiguity": "高次要素や倍精度は通常の改善策であり、あらゆる解・実装の精度向上を無条件に保証しない。",
+      "evidence": [
+        "extracted/pages/R01_retest/basic/page_011.png"
+      ],
+      "core_concept": "数値誤差の種類と、それに対応する精度改善策を判定する。",
+      "required_knowledge": "同じ問題と評価量で精度を比較する。高次化と細分化の効果は解の正則性・健全な要素・十分な数値積分を要する。",
+      "solution": "数値解析には離散化誤差、反復停止による誤差、丸め誤差がある。細分・高次化・良好な要素形状・演算精度の増加はそれぞれ対応する誤差を改善し得る。一方、反復の停止条件を緩めると大きい誤差を許容して早く止めるため、精度向上という目的に対して不適切である。",
+      "answer_reason": "数値解析には離散化誤差、反復停止による誤差、丸め誤差がある。細分・高次化・良好な要素形状・演算精度の増加はそれぞれ対応する誤差を改善し得る。一方、反復の停止条件を緩めると大きい誤差を許容して早く止めるため、精度向上という目的に対して不適切である。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前に保存した初回解答を保持。停止閾値を緩める5は精度向上と逆。",
+      "learning_points": "誤差の原因を特定してから、h・p・反復閾値・有限精度のどれを変更するか決める。",
+      "theory_references": [
+        "theory:numerics:errors",
+        "theory:numerics:newton",
+        "theory:fem:mesh"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "numerical_accuracy",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。誤差の原因を特定してから、h・p・反復閾値・有限精度のどれを変更するか決める。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "mit_roy_fea1999",
+        "goldberg1991",
+        "nist_newton"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-3-3",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "数値誤差の種類と、それに対応する精度改善策を判定する。",
+      "summary": "数値誤差の種類と、それに対応する精度改善策を判定する。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "同じ問題と評価量で精度を比較する。高次化と細分化の効果は解の正則性・健全な要素・十分な数値積分を要する。"
+      },
+      "choices": {
+        "1": {
+          "value": "丸め誤差を減らすため単精度から倍精度へ変更する",
+          "verdict": "条件付きで適切",
+          "reason": "仮数の精度を増やして丸め誤差を小さくし得る。打切り・モデル誤差が消えることや誤差ゼロを保証するものではない。"
+        },
+        "2": {
+          "value": "高次要素へ変更する",
+          "verdict": "条件付きで適切",
+          "reason": "滑らかな解をより高次の補間で近似するp改良である。解の正則性、写像、積分が適切な条件で有効である。"
+        },
+        "3": {
+          "value": "強く歪んだ要素を避ける",
+          "verdict": "適切",
+          "reason": "写像の退化や誤差増幅を抑えるための形状改善である。細分の数だけでなく形を確認する。"
+        },
+        "4": {
+          "value": "反復回数が多いので収束判定条件を緩める",
+          "verdict": "不適切",
+          "reason": "停止閾値を大きくすると未収束のまま停止しやすくなり、許容する反復誤差を増やす。速く終わることと精度向上を混同する。"
+        },
+        "5": {
+          "value": "解の変化が大きい場所を細分する",
+          "verdict": "条件付きで適切",
+          "reason": "高勾配を解像するh改良である。形状の健全性や特異点に注意し、モデル誤差は細分だけで消えない。"
+        }
+      },
+      "figures": "図なし。数式と5候補を原本で照合。",
+      "ambiguity": "高次要素や倍精度は通常の改善策であり、あらゆる解・実装の精度向上を無条件に保証しない。",
+      "evidence": [
+        "extracted/pages/R04/basic/page_011.png"
+      ],
+      "core_concept": "数値誤差の種類と、それに対応する精度改善策を判定する。",
+      "required_knowledge": "同じ問題と評価量で精度を比較する。高次化と細分化の効果は解の正則性・健全な要素・十分な数値積分を要する。",
+      "solution": "数値解析には離散化誤差、反復停止による誤差、丸め誤差がある。細分・高次化・良好な要素形状・演算精度の増加はそれぞれ対応する誤差を改善し得る。一方、反復の停止条件を緩めると大きい誤差を許容して早く止めるため、精度向上という目的に対して不適切である。",
+      "answer_reason": "数値解析には離散化誤差、反復停止による誤差、丸め誤差がある。細分・高次化・良好な要素形状・演算精度の増加はそれぞれ対応する誤差を改善し得る。一方、反復の停止条件を緩めると大きい誤差を許容して早く止めるため、精度向上という目的に対して不適切である。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前に保存した初回解答を保持。4の反復停止条件緩和は精度向上にならない。",
+      "learning_points": "誤差の原因を特定してから、h・p・反復閾値・有限精度のどれを変更するか決める。",
+      "theory_references": [
+        "theory:numerics:errors",
+        "theory:numerics:newton",
+        "theory:fem:mesh"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "numerical_accuracy",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。誤差の原因を特定してから、h・p・反復閾値・有限精度のどれを変更するか決める。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "mit_roy_fea1999",
+        "goldberg1991",
+        "nist_newton"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-3-3",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "Taylor展開で一階導関数に整合する差分式を判別する。",
+      "summary": "Taylor展開で一階導関数に整合する差分式を判別する。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "正の等間隔Δ、格子番号i、必要な階数まで滑らかなf。有限幅の差分は導関数と恒等的に等しいとは限らず、Δ→0での整合性を判定する。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((3f_i-4f_{i-1}+f_{i-2})/(2\\Delta)\\)",
+          "verdict": "適切",
+          "reason": "Taylor展開で定数と二次項が消え、一次項は2Δf′となる。二次精度の後退差分である。"
+        },
+        "2": {
+          "value": "\\((f_i-f_{i-1})/\\Delta\\)",
+          "verdict": "適切",
+          "reason": "一次精度の後退差分でありΔ→0でf′へ近づく。"
+        },
+        "3": {
+          "value": "\\((f_{i+1}-f_i)/\\Delta\\)",
+          "verdict": "適切",
+          "reason": "一次精度の前進差分であり一次導関数に整合する。"
+        },
+        "4": {
+          "value": "\\((f_{i+1}-f_{i-1})/(2\\Delta)\\)",
+          "verdict": "適切",
+          "reason": "対称点のTaylor展開を引くと2Δf′が残る。十分滑らかな関数では二次精度である。"
+        },
+        "5": {
+          "value": "\\((f_{i+1}-2f_i+f_{i-1})/\\Delta\\)",
+          "verdict": "不適切",
+          "reason": "分子はΔ²f″+高次項であり、Δで割るとΔf″となる。一次導関数へ収束しない。"
+        }
+      },
+      "figures": "図なし。数式と5候補を原本で照合。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/basic/page_010.png"
+      ],
+      "core_concept": "Taylor展開で一階導関数に整合する差分式を判別する。",
+      "required_knowledge": "正の等間隔Δ、格子番号i、必要な階数まで滑らかなf。有限幅の差分は導関数と恒等的に等しいとは限らず、Δ→0での整合性を判定する。",
+      "solution": "等間隔のTaylor展開 \\(f_{i\\pm1}=f_i\\pm\\Delta f_i^\\prime+\\Delta^2f_i^{\\prime\\prime}/2+\\cdots\\) を用いる。左右を引けば一階、足して2fを引けば二階の項が残る。候補5は二階差分をΔで割っておりΔf″となる式なので、一階導関数の差分として誤りである。",
+      "answer_reason": "等間隔のTaylor展開 \\(f_{i\\pm1}=f_i\\pm\\Delta f_i^\\prime+\\Delta^2f_i^{\\prime\\prime}/2+\\cdots\\) を用いる。左右を引けば一階、足して2fを引けば二階の項が残る。候補5は二階差分をΔで割っておりΔf″となる式なので、一階導関数の差分として誤りである。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前に保存した初回解答を保持。5の二階差分をΔで割る式は一階導関数に整合しない。",
+      "learning_points": "分子の打消し次数と分母のΔの次数を確認する。f=xやf=x²を入れるだけでも一階と二階を区別できる。",
+      "theory_references": [
+        "theory:numerics:diff"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "finite_difference_consistency",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。分子の打消し次数と分母のΔの次数を確認する。f=xやf=x²を入れるだけでも一階と二階を区別できる。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "nist_differentiation"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-3-1",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "Taylor展開で一階導関数に整合する差分式を判別する。",
+      "summary": "Taylor展開で一階導関数に整合する差分式を判別する。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "正の等間隔Δ、格子番号i、必要な階数まで滑らかなf。有限幅の差分は導関数と恒等的に等しいとは限らず、Δ→0での整合性を判定する。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((f_{i+1}-f_i)/\\Delta\\)",
+          "verdict": "適切",
+          "reason": "一次精度の前進差分であり一次導関数に整合する。"
+        },
+        "2": {
+          "value": "\\((3f_i-4f_{i-1}+f_{i-2})/(2\\Delta)\\)",
+          "verdict": "適切",
+          "reason": "Taylor展開で定数と二次項が消え、一次項は2Δf′となる。二次精度の後退差分である。"
+        },
+        "3": {
+          "value": "\\((f_{i+1}-f_{i-1})/(2\\Delta)\\)",
+          "verdict": "適切",
+          "reason": "対称点のTaylor展開を引くと2Δf′が残る。十分滑らかな関数では二次精度である。"
+        },
+        "4": {
+          "value": "\\((f_{i+1}-2f_i+f_{i-1})/\\Delta^2\\)",
+          "verdict": "不適切",
+          "reason": "これは二階導関数f″に整合する中心差分であり、求める一階導関数とは次数と次元が異なる。"
+        },
+        "5": {
+          "value": "\\((f_i-f_{i-1})/\\Delta\\)",
+          "verdict": "適切",
+          "reason": "一次精度の後退差分でありΔ→0でf′へ近づく。"
+        }
+      },
+      "figures": "図なし。数式と5候補を原本で照合。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/basic/page_010.png"
+      ],
+      "core_concept": "Taylor展開で一階導関数に整合する差分式を判別する。",
+      "required_knowledge": "正の等間隔Δ、格子番号i、必要な階数まで滑らかなf。有限幅の差分は導関数と恒等的に等しいとは限らず、Δ→0での整合性を判定する。",
+      "solution": "等間隔のTaylor展開 \\(f_{i\\pm1}=f_i\\pm\\Delta f_i^\\prime+\\Delta^2f_i^{\\prime\\prime}/2+\\cdots\\) を用いる。左右を引けば一階、足して2fを引けば二階の項が残る。候補4はΔ²で割った二階導関数の式なので、一階導関数の差分として誤りである。",
+      "answer_reason": "等間隔のTaylor展開 \\(f_{i\\pm1}=f_i\\pm\\Delta f_i^\\prime+\\Delta^2f_i^{\\prime\\prime}/2+\\cdots\\) を用いる。左右を引けば一階、足して2fを引けば二階の項が残る。候補4はΔ²で割った二階導関数の式なので、一階導関数の差分として誤りである。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前に保存した初回解答を保持。4は二階微分用Δ^2、一次微分用ではない。",
+      "learning_points": "分子の打消し次数と分母のΔの次数を確認する。f=xやf=x²を入れるだけでも一階と二階を区別できる。",
+      "theory_references": [
+        "theory:numerics:diff"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "finite_difference_consistency",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。分子の打消し次数と分母のΔの次数を確認する。f=xやf=x²を入れるだけでも一階と二階を区別できる。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "nist_differentiation"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-3-1",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "3点を通る二次補間多項式から指定点の値を求める。",
+      "summary": "3点を通る二次補間多項式から指定点の値を求める。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "f(-1)=2、f(0)=2、f(2)=8。二次以下の補間多項式による近似値であり、未知の元関数のf(1)を厳密に保証する問題ではない。"
+      },
+      "choices": {
+        "1": {
+          "value": "3",
+          "verdict": "不適切",
+          "reason": "二次補間p(1)=4と違う。0と2だけを用いる一次補間でも5であり、この値は条件を満たさない。"
+        },
+        "2": {
+          "value": "4",
+          "verdict": "適切",
+          "reason": "三つの点を通るp=x²+x+2のx=1の値である。"
+        },
+        "3": {
+          "value": "5",
+          "verdict": "不適切",
+          "reason": "0と2の間の直線補間では5になるが、-1の点を同時に満たせず二次補間と異なる。"
+        },
+        "4": {
+          "value": "6",
+          "verdict": "不適切",
+          "reason": "p(1)=4より2大きく、得られた二次係数の代入結果ではない。"
+        },
+        "5": {
+          "value": "7",
+          "verdict": "不適切",
+          "reason": "p(1)=4より3大きい。p(2)=8という端点値へ単純な等差を当てはめない。"
+        }
+      },
+      "figures": "図なし。数式と5候補を原本で照合。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/basic/page_008.png"
+      ],
+      "core_concept": "3点を通る二次補間多項式から指定点の値を求める。",
+      "required_knowledge": "f(-1)=2、f(0)=2、f(2)=8。二次以下の補間多項式による近似値であり、未知の元関数のf(1)を厳密に保証する問題ではない。",
+      "solution": "\\(p(x)=ax^2+bx+c\\) と置く。p(0)=2からc=2、p(-1)=2からa=b、p(2)=8から4a+2b=6なのでa=b=1。従って \\(p(1)=1+1+2=4\\) で2である。既知3点へ代入して係数を検算する。",
+      "answer_reason": "\\(p(x)=ax^2+bx+c\\) と置く。p(0)=2からc=2、p(-1)=2からa=b、p(2)=8から4a+2b=6なのでa=b=1。従って \\(p(1)=1+1+2=4\\) で2である。既知3点へ代入して係数を検算する。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前に保存した初回解答を保持。補間多項式x^2+x+2、f(1)=4。",
+      "learning_points": "3個の係数を3条件で決める。補間値と元関数の真値を区別する。",
+      "theory_references": [
+        "theory:numerics:interpolation"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "polynomial_interpolation",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。3個の係数を3条件で決める。補間値と元関数の真値を区別する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "nist_interpolation"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-3-3",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "桁落ち・モデル誤差・打切り誤差・有限要素近似の違いを判定する。",
+      "summary": "桁落ち・モデル誤差・打切り誤差・有限要素近似の違いを判定する。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "数学的な実数演算と有限桁の浮動小数点演算を分ける。安定で健全な要素分割と滑らかな関数を通常の精度比較の条件にする。"
+      },
+      "choices": {
+        "1": {
+          "value": "近接する2数の減算で桁落ちを生じることがある",
+          "verdict": "適切",
+          "reason": "大きい共通部分が消えると、入力値に既に含まれた丸め誤差が小さい差に対して増幅され得る。近接数の減算が必ず新しい誤差を作るという主張ではない。"
+        },
+        "2": {
+          "value": "非線形現象を線形化しても線形方程式を厳密に解けば誤差はない",
+          "verdict": "不適切",
+          "reason": "線形化のモデル誤差は線形方程式の解法誤差と別である。近似モデルを厳密に解いても元の現象とのずれは残る。"
+        },
+        "3": {
+          "value": "差分化のTaylor打切り誤差は格子幅によらずほぼ一定",
+          "verdict": "不適切",
+          "reason": "省略する項は格子幅のべきに比例する。十分滑らかな場合、前進差分なら一次、中心差分なら二次の幅依存がある。"
+        },
+        "4": {
+          "value": "FEMの分割を細かくすると近似誤差が大きくなる",
+          "verdict": "不適切",
+          "reason": "健全な要素と安定な定式化の通常条件では細分化は離散化誤差を減らす方向である。悪い形状や有限精度の問題を一般則にしない。"
+        },
+        "5": {
+          "value": "誤差は物理法則で決まりアルゴリズムを変えても減らない",
+          "verdict": "不適切",
+          "reason": "離散化・反復・丸め誤差は計算法に依存する。モデル誤差と分ければ手法の改善で減らせる誤差がある。"
+        }
+      },
+      "figures": "図なし。数式と5候補を原本で照合。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/basic/page_009.png"
+      ],
+      "core_concept": "桁落ち・モデル誤差・打切り誤差・有限要素近似の違いを判定する。",
+      "required_knowledge": "数学的な実数演算と有限桁の浮動小数点演算を分ける。安定で健全な要素分割と滑らかな関数を通常の精度比較の条件にする。",
+      "solution": "近い二数の差では値に含まれる有限精度の誤差が相対的に目立つ桁落ちを生じることがある。この存在をいう1が適切である。一方、線形化の近似、格子の打切り、演算の丸めは異なる誤差であり、一つを改善して他の全誤差が消えるとはいえない。",
+      "answer_reason": "近い二数の差では値に含まれる有限精度の誤差が相対的に目立つ桁落ちを生じることがある。この存在をいう1が適切である。一方、線形化の近似、格子の打切り、演算の丸めは異なる誤差であり、一つを改善して他の全誤差が消えるとはいえない。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前に保存した初回解答を保持。近接二数の減算で既存の丸め誤差が相対的に増幅される桁落ちがある。",
+      "learning_points": "近い差の相対誤差と大きな大小差での情報落ちを分け、誤差の発生場所を追う。",
+      "theory_references": [
+        "theory:numerics:errors",
+        "theory:numerics:floating",
+        "theory:numerics:diff"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "numerical_accuracy",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。近い差の相対誤差と大きな大小差での情報落ちを分け、誤差の発生場所を追う。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "goldberg1991",
+        "nist_differentiation",
+        "mit_roy_fea1999"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-BASIC-3-3",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "stem": "桁落ち・モデル誤差・打切り誤差・有限要素近似の違いを判定する。",
+      "summary": "桁落ち・モデル誤差・打切り誤差・有限要素近似の違いを判定する。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "数学的な実数演算と有限桁の浮動小数点演算を分ける。安定で健全な要素分割と滑らかな関数を通常の精度比較の条件にする。"
+      },
+      "choices": {
+        "1": {
+          "value": "FEMの分割を細かくすると近似誤差が大きくなる",
+          "verdict": "不適切",
+          "reason": "健全な要素と安定な定式化の通常条件では細分化は離散化誤差を減らす方向である。悪い形状や有限精度の問題を一般則にしない。"
+        },
+        "2": {
+          "value": "誤差は物理法則で決まりアルゴリズムを変えても減らない",
+          "verdict": "不適切",
+          "reason": "離散化・反復・丸め誤差は計算法に依存する。モデル誤差と分ければ手法の改善で減らせる誤差がある。"
+        },
+        "3": {
+          "value": "近接する2数の減算で桁落ちを生じることがある",
+          "verdict": "適切",
+          "reason": "大きい共通部分が消えると、入力値に既に含まれた丸め誤差が小さい差に対して増幅され得る。近接数の減算が必ず新しい誤差を作るという主張ではない。"
+        },
+        "4": {
+          "value": "差分化のTaylor打切り誤差は格子幅によらずほぼ一定",
+          "verdict": "不適切",
+          "reason": "省略する項は格子幅のべきに比例する。十分滑らかな場合、前進差分なら一次、中心差分なら二次の幅依存がある。"
+        },
+        "5": {
+          "value": "非線形現象を線形化しても線形方程式を厳密に解けば誤差はない",
+          "verdict": "不適切",
+          "reason": "線形化のモデル誤差は線形方程式の解法誤差と別である。近似モデルを厳密に解いても元の現象とのずれは残る。"
+        }
+      },
+      "figures": "図なし。数式と5候補を原本で照合。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/basic/page_011.png"
+      ],
+      "core_concept": "桁落ち・モデル誤差・打切り誤差・有限要素近似の違いを判定する。",
+      "required_knowledge": "数学的な実数演算と有限桁の浮動小数点演算を分ける。安定で健全な要素分割と滑らかな関数を通常の精度比較の条件にする。",
+      "solution": "近い二数の差では値に含まれる有限精度の誤差が相対的に目立つ桁落ちを生じることがある。この存在をいう3が適切である。一方、線形化の近似、格子の打切り、演算の丸めは異なる誤差であり、一つを改善して他の全誤差が消えるとはいえない。",
+      "answer_reason": "近い二数の差では値に含まれる有限精度の誤差が相対的に目立つ桁落ちを生じることがある。この存在をいう3が適切である。一方、線形化の近似、格子の打切り、演算の丸めは異なる誤差であり、一つを改善して他の全誤差が消えるとはいえない。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前に保存した初回解答を保持。桁落ちを生じることがある3が適切。",
+      "learning_points": "近い差の相対誤差と大きな大小差での情報落ちを分け、誤差の発生場所を追う。",
+      "theory_references": [
+        "theory:numerics:errors",
+        "theory:numerics:floating",
+        "theory:numerics:diff"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "numerical_accuracy",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。近い差の相対誤差と大きな大小差での情報落ちを分け、誤差の発生場所を追う。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "goldberg1991",
+        "nist_differentiation",
+        "mit_roy_fea1999"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-3-3",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "双一次形状関数を展開し定数・一次・交差項の係数を読む。",
+      "summary": "双一次形状関数を展開し定数・一次・交差項の係数を読む。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "N1=(1−ξ)(1−η)/4、N2=(1+ξ)(1−η)/4、N3=(1+ξ)(1+η)/4、N4=(1−ξ)(1+η)/4。係数は行ベクトル、a0=(1,1,1,1)/4。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(4a_1=(-1,1,1,-1),4a_2=(-1,-1,1,1),4a_3=(1,1,1,1)\\)",
+          "verdict": "不適切",
+          "reason": "二つの一次項は合うが交差項は積の符号(+,-,+,-)である。候補の交差項の和は4になりΣNi=1にも反する。"
+        },
+        "2": {
+          "value": "\\(4a_1=(-1,1,1,-1),4a_2=(-1,-1,1,1),4a_3=(1,-1,1,-1)\\)",
+          "verdict": "適切",
+          "reason": "各括弧の符号を展開した係数と一致し、非定数項の成分和も全て0である。"
+        },
+        "3": {
+          "value": "\\(4a_1=4a_2=4a_3=(1,1,1,1)\\)",
+          "verdict": "不適切",
+          "reason": "N1の一次係数がともに負という条件を満たさない。非定数項の和も0にならない。"
+        },
+        "4": {
+          "value": "\\(4a_1=(1,-1,1,-1),4a_2=(-1,-1,1,1),4a_3=(1,1,1,-1)\\)",
+          "verdict": "不適切",
+          "reason": "N1,N2のξ係数が逆であり、交差項のN2の符号も誤る。η係数だけは合っている。"
+        },
+        "5": {
+          "value": "\\(4a_1=(-1,-1,1,1),4a_2=(-1,1,1,-1),4a_3=(1,-1,1,-1)\\)",
+          "verdict": "不適切",
+          "reason": "交差項は合うがξとηの係数ベクトルを交換している。例えばN2のξ係数は正でη係数は負である。"
+        }
+      },
+      "figures": "図なし。数式と5候補を原本で照合。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/basic/page_013.png"
+      ],
+      "core_concept": "双一次形状関数を展開し定数・一次・交差項の係数を読む。",
+      "required_knowledge": "N1=(1−ξ)(1−η)/4、N2=(1+ξ)(1−η)/4、N3=(1+ξ)(1+η)/4、N4=(1−ξ)(1+η)/4。係数は行ベクトル、a0=(1,1,1,1)/4。",
+      "solution": "各 \\(N_i=(1\\pm\\xi)(1\\pm\\eta)/4\\) を展開する。ξ項の符号は(-,+,+,-)、η項は(-,-,+,+)、ξη項は二つの符号の積なので(+,-,+,-)である。いずれも1/4倍し、これを組み合わせる2が適切である。全形状関数の和が1なので三つの非定数係数ベクトルの成分和は0となる。",
+      "answer_reason": "各 \\(N_i=(1\\pm\\xi)(1\\pm\\eta)/4\\) を展開する。ξ項の符号は(-,+,+,-)、η項は(-,-,+,+)、ξη項は二つの符号の積なので(+,-,+,-)である。いずれも1/4倍し、これを組み合わせる2が適切である。全形状関数の和が1なので三つの非定数係数ベクトルの成分和は0となる。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前に保存した初回解答を保持。展開してa1=(-1,1,1,-1)/4、a2=(-1,-1,1,1)/4、a3=(1,-1,1,-1)/4。",
+      "learning_points": "二つの括弧の符号を別に読み、交差項はその積にする。係数和0を独立の検算に使う。",
+      "theory_references": [
+        "theory:fem:q4"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "bilinear_shape_expansion",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。二つの括弧の符号を別に読み、交差項はその積にする。係数和0を独立の検算に使う。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "mit_roy_fea1999"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-3-4",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "三角領域で一次関数の重積分を計算する。",
+      "summary": "三角領域で一次関数の重積分を計算する。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "a>0、直線x=0,y=0,x+y=aで囲む三角領域。f=x+y、a=2、原典の積分順はxを先に積分する。"
+      },
+      "choices": {
+        "1": {
+          "value": "3/8",
+          "verdict": "不適切",
+          "reason": "正しい8/3の逆数であり、積分で領域面積を逆に割る操作はない。"
+        },
+        "2": {
+          "value": "1/2",
+          "verdict": "不適切",
+          "reason": "導出値8/3と一致しない。三角形の面積公式の1/2だけでは被積分関数もaの値も反映しない。"
+        },
+        "3": {
+          "value": "1",
+          "verdict": "不適切",
+          "reason": "領域を単位面積として扱う値ではなく、a=2の面積は2である。平均のx+yも1ではない。"
+        },
+        "4": {
+          "value": "2",
+          "verdict": "不適切",
+          "reason": "a=2の領域面積は2だが、被積分関数を常に1に置き換えてはならない。"
+        },
+        "5": {
+          "value": "8/3",
+          "verdict": "適切",
+          "reason": "xの積分後の(a²−y²)/2をyについて積分し、a=2を入れた値である。"
+        }
+      },
+      "figures": "図なし。数式と5候補を原本で照合。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/basic/page_014.png"
+      ],
+      "core_concept": "三角領域で一次関数の重積分を計算する。",
+      "required_knowledge": "a>0、直線x=0,y=0,x+y=aで囲む三角領域。f=x+y、a=2、原典の積分順はxを先に積分する。",
+      "solution": "\\(0\\le y\\le a,0\\le x\\le a-y\\) において \\(\\int_0^{a-y}(x+y)dx=(a^2-y^2)/2\\)。従って \\(\\int_0^a(a^2-y^2)/2\\,dy=a^3/3\\)。a=2なら8/3で5である。領域面積a²/2と重心での値2a/3の積でも同じ値を得る。",
+      "answer_reason": "\\(0\\le y\\le a,0\\le x\\le a-y\\) において \\(\\int_0^{a-y}(x+y)dx=(a^2-y^2)/2\\)。従って \\(\\int_0^a(a^2-y^2)/2\\,dy=a^3/3\\)。a=2なら8/3で5である。領域面積a²/2と重心での値2a/3の積でも同じ値を得る。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前に保存した初回解答を保持。積分0からaの(x+y)dxdy=a^3/3=8/3。",
+      "learning_points": "斜めの境界から内側積分の上限を決める。定数領域の面積と一次関数の積分を分ける。",
+      "theory_references": [
+        "theory:numerics:integration"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "triangle_double_integral",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。斜めの境界から内側積分の上限を決める。定数領域の面積と一次関数の積分を分ける。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "nist_quadrature"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-BASIC-3-1",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "一次関数を正確に積分する重みの条件を判定する。",
+      "summary": "一次関数を正確に積分する重みの条件を判定する。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "f=ax+b、積分区間[-1,1]。一般の一次関数に対する公式の正確さを比較し、偶然特定のbで等しくなることとは区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(f(-1)/4+f(0)+f(1)/4\\)",
+          "verdict": "不適切",
+          "reason": "重みの和は3/2なので3b/2になる。b=0では一致するが一般の一次関数に正確な公式ではない。"
+        },
+        "2": {
+          "value": "\\(f(-1)/2+f(0)+f(1)/2\\)",
+          "verdict": "適切",
+          "reason": "重み和2、端点対称で一次モーメント0である。間隔1の合成台形則に対応する。"
+        },
+        "3": {
+          "value": "\\(f(-1)/3+4f(0)/3+f(1)/3\\)",
+          "verdict": "適切",
+          "reason": "重み和2かつ一次モーメント0であり2bとなる。Simpson則でも一次関数は正確である。"
+        },
+        "4": {
+          "value": "\\(f(-1)+f(1)\\)",
+          "verdict": "適切",
+          "reason": "端点の一次項が打ち消し合い2bとなる。幅2の台形則である。"
+        },
+        "5": {
+          "value": "\\(2f(0)\\)",
+          "verdict": "適切",
+          "reason": "原点ではf(0)=bなので2bとなる。対称区間の中点則で一次項を正しく打ち消す。"
+        }
+      },
+      "figures": "図なし。数式と5候補を原本で照合。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/basic/page_011.png"
+      ],
+      "core_concept": "一次関数を正確に積分する重みの条件を判定する。",
+      "required_knowledge": "f=ax+b、積分区間[-1,1]。一般の一次関数に対する公式の正確さを比較し、偶然特定のbで等しくなることとは区別する。",
+      "solution": "\\(f(-1)=-a+b,f(0)=b,f(1)=a+b\\) であり、真の積分は \\(\\int_{-1}^1(ax+b)dx=2b\\)。対称な端点重みならaの項は消える。候補1では定数項の重み和が1/4+1+1/4=3/2なので3b/2となり、一般のbに対する積分式でない。2〜5は全て2bである。",
+      "answer_reason": "\\(f(-1)=-a+b,f(0)=b,f(1)=a+b\\) であり、真の積分は \\(\\int_{-1}^1(ax+b)dx=2b\\)。対称な端点重みならaの項は消える。候補1では定数項の重み和が1/4+1+1/4=3/2なので3b/2となり、一般のbに対する積分式でない。2〜5は全て2bである。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前に保存した初回解答を保持。真の積分2bに対して1は3b/2、他は2b。一般式で1不適切。b=0では退化。",
+      "learning_points": "1とxを積分して重みの零次・一次モーメントを確認すれば、一般の一次関数に対する正確さが分かる。",
+      "theory_references": [
+        "theory:numerics:quadrature"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "quadrature_weight_moments",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。1とxを積分して重みの零次・一次モーメントを確認すれば、一般の一次関数に対する正確さが分かる。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "nist_quadrature"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-BASIC-3-4",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "Newton法の接線更新とフローチャートの終了分岐を対応させる。",
+      "summary": "Newton法の接線更新とフローチャートの終了分岐を対応させる。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "f′(xn)≠0、ε>0。原図は現在xnを出力し、更新はNO側にある。局所収束には初期値と滑らかさが必要であり、実装では残差・最大反復数・有限精度停滞も確認する。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(\\Delta x=ff^\\prime,\\ |\\Delta x|<\\varepsilon\\)",
+          "verdict": "不適切",
+          "reason": "停止の向きは合うが傾きで掛ける積になっており、接線の根から得る比でない。"
+        },
+        "2": {
+          "value": "\\(\\Delta x=f/f^\\prime,\\ |\\Delta x|<\\varepsilon\\)",
+          "verdict": "条件付きで適切",
+          "reason": "図の減算更新によりx次=x−f/f′となる。増分の絶対値が小さいとき終了する判定である。実装には残差の確認も要する。"
+        },
+        "3": {
+          "value": "\\(\\Delta x=f^\\prime/f,\\ |\\Delta x|<\\varepsilon\\)",
+          "verdict": "不適切",
+          "reason": "分子分母が逆であり、接線で予測する横方向距離にならない。"
+        },
+        "4": {
+          "value": "\\(\\Delta x=ff^\\prime,\\ |\\Delta x|>\\varepsilon\\)",
+          "verdict": "不適切",
+          "reason": "傾きとの積も誤り、YES終了する条件の大小も逆である。"
+        },
+        "5": {
+          "value": "\\(\\Delta x=f/f^\\prime,\\ |\\Delta x|>\\varepsilon\\)",
+          "verdict": "不適切",
+          "reason": "減算更新の比は合うが大きい補正で停止し小さい補正で続ける逆の条件である。"
+        }
+      },
+      "figures": "図を確認：初期値と閾値→fとf′→増分→判定。YESがxn出力と終了、NOがxn+1=xn−Δxとn増加へ戻る。",
+      "ambiguity": "原図は増分だけの収束判定であり、残差・f′=0・最大反復数の処理が省略される。式の穴埋めとして公式を保持し、一般の収束保証とはしない。",
+      "evidence": [
+        "extracted/pages/H30/basic/page_013.png"
+      ],
+      "core_concept": "Newton法の接線更新とフローチャートの終了分岐を対応させる。",
+      "required_knowledge": "f′(xn)≠0、ε>0。原図は現在xnを出力し、更新はNO側にある。局所収束には初期値と滑らかさが必要であり、実装では残差・最大反復数・有限精度停滞も確認する。",
+      "solution": "接線近似 \\(0\\simeq f(x_n)+f^\\prime(x_n)(x_{n+1}-x_n)\\) から \\(x_{n+1}=x_n-f(x_n)/f^\\prime(x_n)\\) を得る。図の更新は減算なのでΔx=f/f′である。YESが出力と終了、NOが更新へ戻るため、停止の判定は|Δx|<εである。組合せ2を選ぶ。",
+      "answer_reason": "接線近似 \\(0\\simeq f(x_n)+f^\\prime(x_n)(x_{n+1}-x_n)\\) から \\(x_{n+1}=x_n-f(x_n)/f^\\prime(x_n)\\) を得る。図の更新は減算なのでΔx=f/f′である。YESが出力と終了、NOが更新へ戻るため、停止の判定は|Δx|<εである。組合せ2を選ぶ。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前に保存した初回解答を保持。図がx次=x-ΔxなのでΔx=f/fprime、YES終了なので絶対値小条件。",
+      "learning_points": "Δxの符号だけを暗記せず、加算か減算かを式全体で読む。停止枝のYES/NOを先に確認する。",
+      "theory_references": [
+        "theory:numerics:newton"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "newton_iteration_flow",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。Δxの符号だけを暗記せず、加算か減算かを式全体で読む。停止枝のYES/NOを先に確認する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "nist_newton"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-BASIC-3-3",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "stem": "Newton法の接線更新とフローチャートの終了分岐を対応させる。",
+      "summary": "Newton法の接線更新とフローチャートの終了分岐を対応させる。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "f′(xn)≠0、ε>0。原図は現在xnを出力し、更新はNO側にある。局所収束には初期値と滑らかさが必要であり、実装では残差・最大反復数・有限精度停滞も確認する。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(\\Delta x=-ff^\\prime,\\ |\\Delta x|<\\varepsilon\\)",
+          "verdict": "不適切",
+          "reason": "停止の向きは合うが傾きで割らず掛けている。接線の零点へ進む増分にならない。"
+        },
+        "2": {
+          "value": "\\(\\Delta x=-f^\\prime/f,\\ |\\Delta x|>\\varepsilon\\)",
+          "verdict": "不適切",
+          "reason": "比が逆で、さらに大きい増分のとき終了する。更新式と停止条件の両方が誤る。"
+        },
+        "3": {
+          "value": "\\(\\Delta x=-f^\\prime/f,\\ |\\Delta x|<\\varepsilon\\)",
+          "verdict": "不適切",
+          "reason": "停止条件は合うが分子分母が逆である。根に近づきfが小さくなると比が大きくなり得る。"
+        },
+        "4": {
+          "value": "\\(\\Delta x=-f/f^\\prime,\\ |\\Delta x|>\\varepsilon\\)",
+          "verdict": "不適切",
+          "reason": "加算更新の増分は合うが、YES終了の条件が逆である。小さい増分で反復する判定になる。"
+        },
+        "5": {
+          "value": "\\(\\Delta x=-f/f^\\prime,\\ |\\Delta x|<\\varepsilon\\)",
+          "verdict": "条件付きで適切",
+          "reason": "図の加算更新によりx次=x−f/f′となり、小さい増分のときYESで終了する。ただし増分が小さいことだけで残差の小ささを保証しない。"
+        }
+      },
+      "figures": "図を確認：初期値と閾値→fとf′→増分→判定。YESがxn出力と終了、NOがxn+1=xn+Δxとn増加へ戻る。",
+      "ambiguity": "原図は増分だけの収束判定であり、残差・f′=0・最大反復数の処理が省略される。式の穴埋めとして公式を保持し、一般の収束保証とはしない。",
+      "evidence": [
+        "extracted/pages/R06/basic/page_011.png"
+      ],
+      "core_concept": "Newton法の接線更新とフローチャートの終了分岐を対応させる。",
+      "required_knowledge": "f′(xn)≠0、ε>0。原図は現在xnを出力し、更新はNO側にある。局所収束には初期値と滑らかさが必要であり、実装では残差・最大反復数・有限精度停滞も確認する。",
+      "solution": "接線近似 \\(0\\simeq f(x_n)+f^\\prime(x_n)(x_{n+1}-x_n)\\) から \\(x_{n+1}=x_n-f(x_n)/f^\\prime(x_n)\\) を得る。図の更新は加算なのでΔx=−f/f′である。YESが出力と終了、NOが更新へ戻るため、停止の判定は|Δx|<εである。組合せ5を選ぶ。",
+      "answer_reason": "接線近似 \\(0\\simeq f(x_n)+f^\\prime(x_n)(x_{n+1}-x_n)\\) から \\(x_{n+1}=x_n-f(x_n)/f^\\prime(x_n)\\) を得る。図の更新は加算なのでΔx=−f/f′である。YESが出力と終了、NOが更新へ戻るため、停止の判定は|Δx|<εである。組合せ5を選ぶ。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前に保存した初回解答を保持。図の更新x次=x+ΔxよりΔx=-f/fprime、YES終了なので|Δx|<epsの5。",
+      "learning_points": "Δxの符号だけを暗記せず、加算か減算かを式全体で読む。停止枝のYES/NOを先に確認する。",
+      "theory_references": [
+        "theory:numerics:newton"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "newton_iteration_flow",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。Δxの符号だけを暗記せず、加算か減算かを式全体で読む。停止枝のYES/NOを先に確認する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "nist_newton"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-BASIC-3-4",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "stem": "3:4:5三角形の内心と外心の面積座標を求める。",
+      "summary": "3:4:5三角形の内心と外心の面積座標を求める。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "面積SA,SB,SCはPBC,PCA,PABに対応する。辺の比AB:BC:CA=3:4:5。内心・外心を重心と区別し、辺上の外心も座標定義に含む。"
+      },
+      "choices": {
+        "1": {
+          "value": "内心\\((1/4,1/5,1/3)\\)、外心\\((1/2,0,1/2)\\)",
+          "verdict": "不適切",
+          "reason": "外心は合うが内心は辺長の逆数を並べている。和は47/60で1でない。"
+        },
+        "2": {
+          "value": "内心\\((1/4,1/5,1/3)\\)、外心\\((1/3,1/3,1/3)\\)",
+          "verdict": "不適切",
+          "reason": "内心の正規化と向かい辺対応が誤り、外心も重心の座標になっている。"
+        },
+        "3": {
+          "value": "内心\\((1/3,1/3,1/3)\\)、外心\\((1/2,0,1/2)\\)",
+          "verdict": "不適切",
+          "reason": "外心は合うが内心を重心と同一視している。3:4:5は正三角形でないため内心の座標は等しくない。"
+        },
+        "4": {
+          "value": "内心\\((1/3,5/12,1/4)\\)、外心\\((1/2,0,1/2)\\)",
+          "verdict": "適切",
+          "reason": "内心は向かい辺の4:5:3を正規化し、外心は斜辺AC中点の座標である。"
+        },
+        "5": {
+          "value": "内心\\((1/3,5/12,1/4)\\)、外心\\((1/3,1/3,1/3)\\)",
+          "verdict": "不適切",
+          "reason": "内心は合うが外心が重心になっている。直角三角形の外心は斜辺の中点である。"
+        }
+      },
+      "figures": "図を確認：上A、左下B、右下C。SAはBC側、SBはCA側、SCはAB側。概念図の見た目で直角位置を推測せず辺長比からBの直角を求める。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/basic/page_012.png"
+      ],
+      "core_concept": "3:4:5三角形の内心と外心の面積座標を求める。",
+      "required_knowledge": "面積SA,SB,SCはPBC,PCA,PABに対応する。辺の比AB:BC:CA=3:4:5。内心・外心を重心と区別し、辺上の外心も座標定義に含む。",
+      "solution": "内心の各辺からの距離は同じrなので、小三角形の面積は向かい辺に比例する。Aに対応するBC=4、Bに対応するCA=5、Cに対応するAB=3より \\((L_A,L_B,L_C)=(4,5,3)/12=(1/3,5/12,1/4)\\)。3²+4²=5²なのでBが直角、外心は斜辺ACの中点で \\((1/2,0,1/2)\\)。両方を満たす4である。",
+      "answer_reason": "内心の各辺からの距離は同じrなので、小三角形の面積は向かい辺に比例する。Aに対応するBC=4、Bに対応するCA=5、Cに対応するAB=3より \\((L_A,L_B,L_C)=(4,5,3)/12=(1/3,5/12,1/4)\\)。3²+4²=5²なのでBが直角、外心は斜辺ACの中点で \\((1/2,0,1/2)\\)。両方を満たす4である。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前に保存した初回解答を保持。内心面積比は向かい辺BC:CA:AB=4:5:3→(1/3,5/12,1/4)。外心は斜辺AC中点→(1/2,0,1/2)。",
+      "learning_points": "内心の面積は辺長×共通距離/2で求める。番号順に辺長を置かず、各頂点の向かい辺を確認する。",
+      "theory_references": [
+        "theory:fem:area"
+      ],
+      "discipline_id": "basic_3_1",
+      "concept_id": "triangle_area_coordinates",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。内心の面積は辺長×共通距離/2で求める。番号順に辺長を置かず、各頂点の向かい辺を確認する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "mit_roy_fea1999"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-BASIC-3-3",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "stem": "3節点・6節点三角形と4節点四角形のひずみの次数を比較する。",
+      "summary": "3節点・6節点三角形と4節点四角形のひずみの次数を比較する。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "線形弾性の2次元変位法。アは3節点一次三角形、イは辺中点を含む6節点二次三角形、ウは4節点アイソパラメトリック四辺形。非退化の要素を想定する。"
+      },
+      "choices": {
+        "1": {
+          "value": "ア",
+          "verdict": "適切",
+          "reason": "一次変位の微分が定数となる一定ひずみ三角形である。"
+        },
+        "2": {
+          "value": "イ",
+          "verdict": "不適切",
+          "reason": "二次変位の微分は一般に一次関数となり、任意の節点変位に対して一定ではない。"
+        },
+        "3": {
+          "value": "ウ",
+          "verdict": "不適切",
+          "reason": "双一次変位や非線形写像の微分は一般に位置で変わる。特定の一様変位場は再現できるが要素全体の一般的特性ではない。"
+        },
+        "4": {
+          "value": "アとイ",
+          "verdict": "不適切",
+          "reason": "アは一定であるがイの二次補間まで常に一定とはいえない。"
+        },
+        "5": {
+          "value": "アとウ",
+          "verdict": "不適切",
+          "reason": "アは一定であるがウは交差項や写像の影響を含み、一般に一様ひずみではない。"
+        }
+      },
+      "figures": "図を確認：アは頂点3節点、イは頂点と辺中点の6節点、ウは四隅4節点の歪んだ四辺形である。",
+      "ambiguity": "実現した変位場が一次ならイやウにも一様ひずみの例がある。原典は要素の一般的補間特性を尋ねると読み、公式1を保持する。",
+      "evidence": [
+        "extracted/pages/R03/basic/page_012.png"
+      ],
+      "core_concept": "3節点・6節点三角形と4節点四角形のひずみの次数を比較する。",
+      "required_knowledge": "線形弾性の2次元変位法。アは3節点一次三角形、イは辺中点を含む6節点二次三角形、ウは4節点アイソパラメトリック四辺形。非退化の要素を想定する。",
+      "solution": "3節点一次三角形では変位が \\(u=a+bx+cy,v=d+ex+fy\\) と表される。微分で求めるひずみは \\(\\varepsilon_x=b,\\varepsilon_y=f,\\gamma_{xy}=c+e\\) と要素内で一定である。6節点三角形の二次補間や4節点四角形の双一次補間では一般に位置依存が残る。任意の節点変位に対して一定という要素特性をもつアだけを選ぶ1である。",
+      "answer_reason": "3節点一次三角形では変位が \\(u=a+bx+cy,v=d+ex+fy\\) と表される。微分で求めるひずみは \\(\\varepsilon_x=b,\\varepsilon_y=f,\\gamma_{xy}=c+e\\) と要素内で一定である。6節点三角形の二次補間や4節点四角形の双一次補間では一般に位置依存が残る。任意の節点変位に対して一定という要素特性をもつアだけを選ぶ1である。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前に保存した初回解答を保持。3節点一次三角形Aのみ一般に一様ひずみ。高次やQ4でも特殊変位場なら一様なので一般性に注意。",
+      "learning_points": "節点数だけでなく補間次数と空間微分を結ぶ。高次要素でも特別な一次変位場は表現できることと、常時一定ひずみという性質を分ける。",
+      "theory_references": [
+        "theory:fem:triangle",
+        "theory:fem:q4"
+      ],
+      "discipline_id": "basic_3_1",
+      "concept_id": "constant_strain_triangle",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。節点数だけでなく補間次数と空間微分を結ぶ。高次要素でも特別な一次変位場は表現できることと、常時一定ひずみという性質を分ける。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "2",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "mit_roy_fea1999"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-BASIC-3-3",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "stem": "有限精度の等価式・桁落ち・情報落ち・線形方程式の解法を区別する。",
+      "summary": "有限精度の等価式・桁落ち・情報落ち・線形方程式の解法を区別する。",
+      "conditions": {
+        "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+        "成立条件": "計算機の浮動小数点演算を対象にする。有限の仮数・丸め・評価順序を考え、連立方程式は解が存在する適切な系を想定する。"
+      },
+      "choices": {
+        "1": {
+          "value": "数学的に等価な複数式ならどれで計算しても結果は等しい",
+          "verdict": "不適切",
+          "reason": "有限精度では丸める箇所と大きさが変わる。代数上の等価性はビット単位の一致や同じ誤差を保証しない。"
+        },
+        "2": {
+          "value": "絶対値の近い2数の加減算で桁落ちを生じることがある",
+          "verdict": "適切",
+          "reason": "近い正数の減算又は符号が逆の加算で大きな共通部分が消え、入力誤差が相対的に目立ち得る。"
+        },
+        "3": {
+          "value": "絶対値が大きく異なる加減算で情報落ちを生じることがある",
+          "verdict": "適切",
+          "reason": "指数を合わせると小さい側の有効な桁が保持範囲外に落ちることがある。小さい数の寄与が消える現象である。"
+        },
+        "4": {
+          "value": "逆行列を計算せず連立方程式の解を求められる",
+          "verdict": "適切",
+          "reason": "消去法やLU分解でAx=bを解ける。逆行列を明示的に求めて掛ける必要はない。"
+        },
+        "5": {
+          "value": "FEMを細分すると一般に近似誤差は小さくなる",
+          "verdict": "条件付きで適切",
+          "reason": "安定・適合な近似と健全な要素での通常の離散化傾向である。悪い形状、特異点の一点値、丸めやモデル誤差まで単調に減るとはいえない。"
+        }
+      },
+      "figures": "図なし。数式と5候補を原本で照合。",
+      "ambiguity": "メッシュ細分化の一般傾向には健全な形状・定式化と適切な誤差尺度を要する。特異点の最大応力へ無条件に拡張しない。",
+      "evidence": [
+        "extracted/pages/R05/basic/page_010.png"
+      ],
+      "core_concept": "有限精度の等価式・桁落ち・情報落ち・線形方程式の解法を区別する。",
+      "required_knowledge": "計算機の浮動小数点演算を対象にする。有限の仮数・丸め・評価順序を考え、連立方程式は解が存在する適切な系を想定する。",
+      "solution": "実数上で等価な式も、有限精度では各演算で丸めるため結果が違う場合がある。例えば倍精度程度では \\((10^{16}+1)-10^{16}=0\\) となり得るが、先に1を分離した等価式の値は1である。常に結果が等しくなるという1が不適切である。誤差を抑える式変形と、逆行列を形成しない連立方程式解法を区別する。",
+      "answer_reason": "実数上で等価な式も、有限精度では各演算で丸めるため結果が違う場合がある。例えば倍精度程度では \\((10^{16}+1)-10^{16}=0\\) となり得るが、先に1を分離した等価式の値は1である。常に結果が等しくなるという1が不適切である。誤差を抑える式変形と、逆行列を形成しない連立方程式解法を区別する。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前に保存した初回解答を保持。数学上の等価式が浮動小数点でも常に同値とは限らない1。",
+      "learning_points": "同じ数学式でも計算順序を比較し、相対誤差を増幅する差や消える小量を避ける。",
+      "theory_references": [
+        "theory:numerics:floating",
+        "theory:fem:mesh"
+      ],
+      "discipline_id": "basic_3_2",
+      "concept_id": "floating_expression_stability",
+      "cross_concepts": [],
+      "classification_reason": "原典が中心に問う数値手法又は要素の補間特性により分類する。同じ数学式でも計算順序を比較し、相対誤差を増幅する差や消える小量を避ける。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻のTaylor展開・微積分・線形弾性を使う。有限精度又は要素補間の成立条件を対応させる。"
+      },
+      "citations": [
+        "goldberg1991",
+        "mit_roy_fea1999"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "checked_at": "2026-10-12T12:37:33+09:00",
+  "sources": [
+    {
+      "key": "employment_power2012",
+      "url": "https://www.mhlw.go.jp/stf/shingi/2r98520000021hkd-att/2r98520000021hlu.pdf",
+      "checked_claim": "印刷4〜6頁で顧客等の脚注、専門知識を含む優位性、適正指導の除外と六類型を確認。"
+    },
+    {
+      "key": "employment_power_current",
+      "url": "https://www.mhlw.go.jp/content/11900000/001701369.pdf",
+      "checked_claim": "物理1〜2頁の三要素、知識への依存、適正な指導の除外を確認。出題時の法条番号へ遡及しない。"
+    },
+    {
+      "key": "employment_sexual_current",
+      "url": "https://www.mhlw.go.jp/content/11900000/001701366.pdf",
+      "checked_claim": "物理1〜3頁の二類型、同性、派遣、患者家族等の行為者、措置義務を確認。"
+    },
+    {
+      "key": "employment_sexual2018",
+      "url": "https://www.mhlw.go.jp/content/11900000/000474784.pdf",
+      "checked_claim": "当時の措置義務と妊婦の業務調整の相談を確認。物理17頁の配慮例は強要と区別。条番号は現在と異なる。"
+    },
+    {
+      "key": "employment_sexual2006",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb3219&dataType=1&pageNo=1",
+      "checked_claim": "派遣先を事業主とみなす取扱いの本文を確認。掲載本文は後年の改正を含むため2006年原版と同一とは扱わない。"
+    },
+    {
+      "key": "employment_discretion2014",
+      "url": "https://jsite.mhlw.go.jp/tokyo-roudoukyoku/content/contents/000501876.pdf",
+      "checked_claim": "物理2頁の全19業務、3〜6頁の説明を実画像で確認。技術士業務の列挙なし。H25との版差は査読対象。"
+    },
+    {
+      "key": "employment_discretion_current",
+      "url": "https://www.check-roudou.mhlw.go.jp/study/roudousya_tayou_senmon.html",
+      "checked_claim": "20業務の全列挙、2024年4月の追加、本人同意と撤回の要件を確認。"
+    },
+    {
+      "key": "employment_industrial_physician",
+      "url": "https://jsite.mhlw.go.jp/tokyo-roudoukyoku/hourei_seido_tetsuzuki/anzen_eisei/a-kanri.html",
+      "checked_claim": "産業医節で50人以上の選任、規模別人数と専属の要件を確認。その他の巡視頻度の古い説明は利用しない。"
+    },
+    {
+      "key": "employment_labor_three",
+      "url": "https://jsite.mhlw.go.jp/tokyo-roudoukyoku/news_topics/kyoku_oshirase/shingikai_gijiroku/shingikai/_120488.html",
+      "checked_claim": "伝統的な労働三法の三法名を確認。委員の労調法の機能評価は教材へ採用しない。"
+    },
+    {
+      "key": "employment_overtime",
+      "url": "https://www.check-roudou.mhlw.go.jp/study/roudousya_jikangai.html",
+      "checked_claim": "36協定の締結と届出、対象範囲を確認。現在の上限値をH25へ無条件に遡及しない。"
+    },
+    {
+      "key": "employment_hours2017",
+      "url": "https://jsite.mhlw.go.jp/nagano-roudoukyoku/hourei_seido_tetsuzuki/roudoukijun_keiyaku/roudoujikan-guideline.html",
+      "checked_claim": "本文で指揮命令下の時間、命令された学習、客観的記録と把握責務を確認。"
+    },
+    {
+      "key": "employment_manager2008",
+      "url": "https://www.mhlw.go.jp/bunya/roudoukijun/dl/kanri.pdf",
+      "checked_claim": "物理4頁で深夜割増と年休の適用、名称だけで決まらない実態を確認。"
+    },
+    {
+      "key": "employment_reform2018",
+      "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tc3655&dataType=1&pageNo=1",
+      "checked_claim": "冒頭の清算期間1〜3か月への延長、施行日2019年4月1日、残業上限の趣旨を確認。"
+    },
+    {
+      "key": "employment_worklife2010",
+      "url": "https://wwwa.cao.go.jp/wlb/research/kouritsu/pdf/3point10jissen-1.pdf",
+      "checked_claim": "物理3〜5頁の十項目と会議の目的・到達点を確認。第2版チェックリスト2010年9月発行も確認。強引な意思決定を一般則としない。"
+    },
+    {
+      "key": "employment_maternity_current",
+      "url": "https://www.mhlw.go.jp/content/11900000/000563060.pdf",
+      "checked_claim": "物理8頁の産前請求・産後原則と例外、物理3頁の個別母性健康管理措置を確認。現在の給付金等は過去問へ転記しない。"
+    },
+    {
+      "key": "employment_maternity2014",
+      "url": "https://www.mhlw.go.jp/file/05-Shingikai-12601000-Seisakutoukatsukan-Sanjikanshitsu_Shakaihoshoutantou/0000063777.pdf",
+      "checked_claim": "物理14〜15頁で雇用形態を問わない産休と請求条件を確認。育休の旧要件や年金の議論は使用しない。"
+    },
+    {
+      "key": "employment_telework2020",
+      "url": "https://www.mhlw.go.jp/wp/hakusyo/kousei/19-2/dl/all.pdf",
+      "checked_claim": "物理178頁（印刷178頁）の平成30年指針概要で勤務場所、時間把握、中抜け、移動中の指揮命令作業を確認。"
+    },
+    {
+      "key": "employment_telework_current",
+      "url": "https://www.mhlw.go.jp/content/000759469.pdf",
+      "checked_claim": "物理10〜13頁で労働時間把握、中抜け、就業場所間の移動、長時間化対策を確認。"
+    },
+    {
+      "key": "employment_paidleave",
+      "url": "https://work-holiday.mhlw.go.jp/kyuuka-sokushin/jigyousya.html",
+      "checked_claim": "年10日付与対象、年5日の取得、本人取得と計画付与の算入、意見聴取を確認。"
+    },
+    {
+      "key": "employment_alternative2008",
+      "url": "https://www.mhlw.go.jp/topics/2008/12/dl/tp1216-1l-02.pdf",
+      "checked_claim": "代替休暇の労使協定・本人意思、引上げ分を換算する説明と数値例を確認。2008年改正の原理のみ使用。"
+    }
+  ],
+  "local_files": [
+    {
+      "file": "extracted/reference_checks/S7_038/discretion_02.png",
+      "sha256": "f37bf69f804afe91a31893fed18d6c7298e4621cc12ab81f26e8e66498036012"
+    },
+    {
+      "file": "extracted/reference_checks/S7_038/discretion_03.png",
+      "sha256": "04469ff00066a1bac0c6ccb96a767488e6e93f814d19c9b2e64bec3849e4e699"
+    },
+    {
+      "file": "extracted/reference_checks/S7_038/discretion_06.png",
+      "sha256": "36f8f73a48d2e748d13aadea5933eefc179d0a1f7f6b85805ec0aa416390bb7e"
+    },
+    {
+      "file": "extracted/reference_checks/S7_038/discretion_04.png",
+      "sha256": "ec467f7757091e65485965e1b2c1f8d990e87051088b5873fd59729eb4124e03"
+    },
+    {
+      "file": "extracted/reference_checks/S7_038/discretion_05.png",
+      "sha256": "4bf7f22da3731361ed7c851d3000512778b95b086600b22afdc2c0cb2ac34433"
+    },
+    {
+      "file": "extracted/reference_checks/S7_038/discretion_H26.pdf",
+      "sha256": "01b4692b872bfb53b744fcb6e96407a44d3b753b9f92eae884a4fed276146252"
+    },
+    {
+      "file": "extracted/reference_checks/S7_038/worklife2014.pdf",
+      "sha256": "776ef9aacd82a77df0eab07afb6cabedb76e216a6844e9b81ec0eafffecb869f"
+    },
+    {
+      "file": "extracted/reference_checks/S7_038/worklife2014.txt",
+      "sha256": "f2414d9869d9f6082830711ea4766451f91e20a3fd7f05ee82635f57263cb537"
+    }
+  ],
+  "limitations": [
+    "H25APT04初回3は誤認で、19業務の原一覧から5に訂正。初回ファイルを変更しない。",
+    "旧テレワークPDF000545678はHTTP404。代わりに令和2年白書の指針概要を本文確認。",
+    "検索で業務改善資料と表示された0000056246は、取得すると平成25年の保健師育休資料であり主張に対応しない。worklife2014.pdfという暫定保存名の資料は引用に使用せず、内閣府の十の実践を確認した。",
+    "2026年10月1日版の法条番号や措置を過去年へ遡及適用しない。過去の全告示改正履歴を完了済みとはしない。",
+    "六問は全称・省略条件・初回不一致を部分校正として保持。"
+  ]
+}

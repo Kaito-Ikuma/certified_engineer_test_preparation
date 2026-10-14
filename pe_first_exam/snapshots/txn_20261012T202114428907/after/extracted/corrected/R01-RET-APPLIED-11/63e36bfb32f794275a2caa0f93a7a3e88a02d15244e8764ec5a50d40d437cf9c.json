@@ -1,0 +1,45 @@
+{
+  "stem": "C4からC6アルカンの骨格異性体を重複せず列挙する。",
+  "conditions": {
+    "判断対象": "C4からC6アルカンの骨格異性体を重複せず列挙する。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "1/2/3",
+      "verdict": "選ばない候補",
+      "reason": "三つとも骨格数を少なく数えている。"
+    },
+    "2": {
+      "value": "1/3/4",
+      "verdict": "選ばない候補",
+      "reason": "C4とC6を少なく数える。"
+    },
+    "3": {
+      "value": "2/3/4",
+      "verdict": "選ばない候補",
+      "reason": "C6は5であって4ではない。"
+    },
+    "4": {
+      "value": "2/3/5",
+      "verdict": "選ぶ候補",
+      "reason": "C4=2,C5=3,C6=5の全対応。"
+    },
+    "5": {
+      "value": "3/4/5",
+      "verdict": "選ばない候補",
+      "reason": "C4とC5を一つずつ多く数える。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_004.png"
+  ],
+  "question_id": "R01-RET-APPLIED-11",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "6b5272bef846d37a788695858d1a8ebd3600a4021b10150a29e7c3d0787f5565",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

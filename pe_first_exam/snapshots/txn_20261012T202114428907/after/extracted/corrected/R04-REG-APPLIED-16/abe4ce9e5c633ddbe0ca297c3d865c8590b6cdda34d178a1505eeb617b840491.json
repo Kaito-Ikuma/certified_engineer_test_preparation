@@ -1,0 +1,45 @@
+{
+  "stem": "ミセル形成の濃度条件から単量体の存在を判定する。",
+  "conditions": {
+    "判断対象": "ミセル形成の濃度条件から単量体の存在を判定する。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "水油界面エネルギー低下",
+      "verdict": "選ばない候補",
+      "reason": "界面吸着による典型作用。"
+    },
+    "2": {
+      "value": "脂質は天然界面活性剤",
+      "verdict": "選ばない候補",
+      "reason": "リン脂質等の両親媒性脂質を代表とする。全脂質全称に留保。"
+    },
+    "3": {
+      "value": "乳化・消毒・帯電防止にも利用",
+      "verdict": "選ばない候補",
+      "reason": "目的に適した種類を選ぶ利用。"
+    },
+    "4": {
+      "value": "常に会合し単量体は存在しない",
+      "verdict": "選ぶ候補",
+      "reason": "CMC未満で単量体が存在するので常に/ないが誤り。"
+    },
+    "5": {
+      "value": "親水/疎水部を持つ",
+      "verdict": "選ばない候補",
+      "reason": "両親媒性の基本構造。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "脂質全般を界面活性剤とする原典の全称に留保。CMCと単量体の説明は溶媒・温度・濃度の条件を要する。",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_005.png"
+  ],
+  "question_id": "R04-REG-APPLIED-16",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "6a7e0029d587716b95f21586fbd303f4258528046bb24934b231d549fca4ca98",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,205 @@
+{
+  "batch_id": "S7_020_environment",
+  "recorded_at": "2026-10-11T00:38:38.063914+09:00",
+  "official_answer_consulted": false,
+  "questions": [
+    {
+      "question_id": "H23-REG-APT-14",
+      "independent_answer": "5",
+      "reason": "排出権取引の説明をオフセットとする5が誤り。他は持続可能性・多様性・生物濃縮の概念。ゼロエミッションの企業動向は追加一次資料確認を要する。",
+      "source_images_viewed": [
+        "extracted/pages/H23/aptitude/page_015.png"
+      ],
+      "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+      "raw_text_sha256": "6f0beb67f7de72875b295cee3d02d2bdd86a14c4a1246bea763ba1c92a84cb9c",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H24-REG-APT-05",
+      "independent_answer": "3",
+      "reason": "原則は発生抑制、再使用、再生利用、熱回収、適正処分の順。",
+      "source_images_viewed": [
+        "extracted/pages/H24/aptitude/page_004.png"
+      ],
+      "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+      "raw_text_sha256": "c4956f332bc188d48ba349d8d3310c4d7ad22da3d5428f8b8648e832ca6ee54c",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H25-REG-APT-11",
+      "independent_answer": "3",
+      "reason": "第二種の拡散防止措置は必要。組換え魚の無審査放流不可、教育目的も適用除外でない。処分時不活化も必要。OXXO。",
+      "source_images_viewed": [
+        "extracted/pages/H25/aptitude/page_012.png"
+      ],
+      "source_sha256": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+      "raw_text_sha256": "85895953eab06c407a846507876e92cfc21986ea6591eedd9ba5ed5254fe467b",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H28-REG-APT-14",
+      "independent_answer": "5",
+      "reason": "基本法、排出者責任、委託時管理票、家電4群と費用負担は正しい。小売引取義務の販売・買替条件は省略されており追加条文確認が必要。OOOOの候補5。",
+      "source_images_viewed": [
+        "extracted/pages/H28/aptitude/page_014.png"
+      ],
+      "source_sha256": "2960d5ff16afaa394186362bb969ee236511012ee2819db45847199af58b073c",
+      "raw_text_sha256": "dd9655ab92de1842cba6518b6249c88f4620820da1e93f5ee2ef2cb0f21a7b11",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H30-REG-APT-13",
+      "independent_answer": "5",
+      "reason": "ゼロエミッション、必要でない物質の生物濃縮、多様性3階層、将来を損なわない開発の4記述は設問意図上正しい。濃縮を一律に異常・有害とする表現は要注意。OOOO。",
+      "source_images_viewed": [
+        "extracted/pages/H30/aptitude/page_013.png"
+      ],
+      "source_sha256": "9b92cd3549fc1ad21636a544978f1385f63667ff6ac0112f81e553cf2ee4b1f5",
+      "raw_text_sha256": "f087f8644e217cbb08fbe5e8fea6fe30ba9a753790ffa99c57d66f497c8787ac",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R01-REG-APT-15",
+      "independent_answer": "5",
+      "reason": "SDG正しいイウエキの4件。ア開発途上だけ、オ大企業だけ、カ環境だけは誤り。",
+      "source_images_viewed": [
+        "extracted/pages/R01/aptitude/page_014.png"
+      ],
+      "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+      "raw_text_sha256": "8e10bf87fc852d07035af9a7e93f91f34c7d2a1f9b5a29dfac171a1e3d16f443",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R01-RET-APT-11",
+      "independent_answer": "1",
+      "reason": "XOXX。温室効果ガスは3種に限定されない。低炭素社会の考え方は適切。残り2つはoffsetとneutralの全部/一部・状態/取組を逆にした。",
+      "source_images_viewed": [
+        "extracted/pages/R01_retest/aptitude/page_012.png"
+      ],
+      "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+      "raw_text_sha256": "766fe05a86ddb304142dc0a5ad6edc76122a9fe6380bb62149699dc5e636f3a2",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R01-RET-APT-13",
+      "independent_answer": "1",
+      "reason": "不適切0件。地図、段階避難、避難所経路、家族連絡、経験者の地域行動は適切。ただし出題2019再試の避難勧告制度と現在を分ける。AR5の全球シナリオ主張は追加原典確認する。",
+      "source_images_viewed": [
+        "extracted/pages/R01_retest/aptitude/page_014.png"
+      ],
+      "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+      "raw_text_sha256": "e0cb742caf2facf3b566052170349fcbdd38538cfb00a35adef61e8d64595c57",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R01-RET-APT-14",
+      "independent_answer": "3",
+      "reason": "2016指針の欄は感染症、開発途上国、環境、17。",
+      "source_images_viewed": [
+        "extracted/pages/R01_retest/aptitude/page_015.png"
+      ],
+      "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+      "raw_text_sha256": "7129836cfb7955c52708481adb10230e3516f028f8be3348aa965bbac284bdbd",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R03-REG-APT-05",
+      "independent_answer": "4",
+      "reason": "OXOX。2015国連全会一致、誰も取り残さないは正しい。法的義務付けと現在からのforecastingの優先は誤り。",
+      "source_images_viewed": [
+        "extracted/pages/R03/aptitude/page_005.png"
+      ],
+      "source_sha256": "73f1426490c272bb33312654f07964404c16a78e9b0ff238c54eca8178d939df",
+      "raw_text_sha256": "c36bedc65d28985622e5ee9c64fb99ca7832b03184ba378bdbf4286d2ccb6d21",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R03-REG-APT-11",
+      "independent_answer": "3",
+      "reason": "XOOOX。石炭非再生、空気熱HP、二次水素、潮汐は適切。バイオガスを非再生とするのは誤り。再エネの利用に温室ガスが全く出ないという幹の一般化は疑義。",
+      "source_images_viewed": [
+        "extracted/pages/R03/aptitude/page_011.png"
+      ],
+      "source_sha256": "73f1426490c272bb33312654f07964404c16a78e9b0ff238c54eca8178d939df",
+      "raw_text_sha256": "2a482ce96df8caa05ea2a7b2d3b726aca694f4809d394d14a6b2baae174f3968",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R04-REG-APT-10",
+      "independent_answer": "4",
+      "reason": "OOXX。循環社会/循環資源の定義は正しい。再生利用の説明が再使用と入替、優先順も入替。",
+      "source_images_viewed": [
+        "extracted/pages/R04/aptitude/page_009.png"
+      ],
+      "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+      "raw_text_sha256": "9021a647f6b2dfd6c5ed330570537f7d7ae1171ae1a03952ab1a3771c42bf60a",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R04-REG-APT-14",
+      "independent_answer": "3",
+      "reason": "XOOOOOX。先進国限定と環境限定が誤り。MDGs残課題、3側面、取り残さない、人権ジェンダー、stakeholderは正しい。原本全7セル照合。",
+      "source_images_viewed": [
+        "extracted/pages/R04/aptitude/page_013.png"
+      ],
+      "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+      "raw_text_sha256": "0d9f3d6050c68399702c13d48249d3cbf72ac43c9f46c93455efb13e4597137a",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R05-REG-APT-15",
+      "independent_answer": "3",
+      "reason": "典型7公害は大気水質土壌騒音振動地盤沈下悪臭であり廃棄物投棄は列挙の一項目でない。",
+      "source_images_viewed": [
+        "extracted/pages/R05/aptitude/page_015.png"
+      ],
+      "source_sha256": "3dee8906ad8be46592986fef01028424243f7e515af04979667524eed1f0a915",
+      "raw_text_sha256": "dda8996d07aa1742ee5d3e4f9e5c475c851566857999162642c9e6decfbbb93b",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R06-REG-APT-02",
+      "independent_answer": "5",
+      "reason": "アempowerment、イ雇用、ウleadership、エ意思決定。careはこの段落の空欄にない。",
+      "source_images_viewed": [
+        "extracted/pages/R06/aptitude/page_002.png"
+      ],
+      "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+      "raw_text_sha256": "79cea632f6971188e014c015a5380bf5c2bc39e33d608a12a15dfe569b982333",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R06-REG-APT-05",
+      "independent_answer": "5",
+      "reason": "XOOX。アはオフセット、エはニュートラルの定義。イ地球限界とウトップランナーは設問意図上正しい。ただし境界超過で回復不可が必ず起こると読むと強過ぎる。",
+      "source_images_viewed": [
+        "extracted/pages/R06/aptitude/page_005.png"
+      ],
+      "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+      "raw_text_sha256": "46c59b6685e3504eb19ae372d216c167086eb5c857852077942c8e1f9e68c274",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R06-REG-APT-06",
+      "independent_answer": "2",
+      "reason": "ア経済、イ統合、ウ普遍、エ安全。平和はこの文中空欄にない。",
+      "source_images_viewed": [
+        "extracted/pages/R06/aptitude/page_006.png"
+      ],
+      "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+      "raw_text_sha256": "485d50a46282318fafb9a2f4a0bfa6befe8772b08bd94fc7cd64c091b9de1f5a",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R07-REG-APT-10",
+      "independent_answer": "3",
+      "reason": "適切アとエの2件。イは再使用、ウは再生利用の定義を逆にする。オも再生利用と再使用の優先が逆。",
+      "source_images_viewed": [
+        "extracted/pages/R07/aptitude/page_010.png"
+      ],
+      "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+      "raw_text_sha256": "11af59a3cd29014502359aec89129b5c6f5d1ff7c1d8ef41b106bccc229c82b0",
+      "official_answer_consulted": false
+    }
+  ]
+}

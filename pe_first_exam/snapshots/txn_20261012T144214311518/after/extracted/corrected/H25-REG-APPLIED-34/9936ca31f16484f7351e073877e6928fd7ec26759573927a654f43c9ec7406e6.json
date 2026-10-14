@@ -1,0 +1,45 @@
+{
+  "stem": "四電極法で接触抵抗の電圧降下を分離する理由を選ぶ。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "電流注入電極と高入力抵抗の電位測定電極を分ける。電位電極電流は十分小さい。"
+  },
+  "choices": {
+    "1": {
+      "value": "電磁カップリングを小さくする",
+      "verdict": "不適切",
+      "reason": "電磁誘導の結合はケーブル配置・周波数等にも依存し、四電極化の主要な理由ではない。"
+    },
+    "2": {
+      "value": "測定電圧を大きくする",
+      "verdict": "不適切",
+      "reason": "Vは電極幾何と地盤応答で決まり、電極を分けることだけで増大しない。"
+    },
+    "3": {
+      "value": "接地抵抗の影響を軽減する",
+      "verdict": "適切",
+      "reason": "電流端子の接触電圧降下を電位差観測から分け、電位端子の小電流によりその接触降下も抑える。"
+    },
+    "4": {
+      "value": "地形の影響を無視する",
+      "verdict": "不適切",
+      "reason": "地形は電流分布を変えるため、別電位電極でも順モデルの地形補正が必要である。"
+    },
+    "5": {
+      "value": "探査深度を大きくする",
+      "verdict": "不適切",
+      "reason": "深度感度は配列と間隔等で決まり、電極端子を分ける理由そのものではない。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_012.png"
+  ],
+  "question_id": "H25-REG-APPLIED-34",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "556f802cdc506ff02d7a58e635c7231aa1a32d3e4e7c14e4c320e1af41977383",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

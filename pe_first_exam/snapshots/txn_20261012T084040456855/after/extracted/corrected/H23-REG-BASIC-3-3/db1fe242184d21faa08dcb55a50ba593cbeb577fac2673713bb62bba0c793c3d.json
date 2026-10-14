@@ -1,0 +1,45 @@
+{
+  "stem": "層に平行・垂直な熱伝導から有効熱伝導率を求める。",
+  "conditions": {
+    "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+    "成立条件": "図の二つの水平層、厚さl1,l2、異なる熱伝導率k1,k2、指定2面の異なる温度T1,T2、その他断熱、界面温度連続。定常・接触熱抵抗なしのFourier伝導モデルである。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(k_x=(k_1l_2+k_2l_1)/L\\)、\\(k_y=(k_1l_1+k_2l_2)/L\\)",
+      "verdict": "不適切",
+      "reason": "xの材料と厚さの組が入れ替わり、yも直列の熱抵抗の和ではなく算術平均になっている。"
+    },
+    "2": {
+      "value": "\\(k_x=L/(l_2/k_1+l_1/k_2)\\)、\\(k_y=(k_1l_2+k_2l_1)/L\\)",
+      "verdict": "不適切",
+      "reason": "平行なxに調和型を用い、両式の厚さの重みも材料と逆になっている。"
+    },
+    "3": {
+      "value": "\\(k_x=(k_1l_1+k_2l_2)/L\\)、\\(k_y=L/(l_2/k_1+l_1/k_2)\\)",
+      "verdict": "条件付きで適切",
+      "reason": "xは正しいがyの厚さが逆である。l1=l2の特殊値では5と一致するが、一般式としては誤りである。"
+    },
+    "4": {
+      "value": "\\(k_x=L/(l_2/k_1+l_1/k_2)\\)、\\(k_y=(k_1l_1+k_2l_2)/L\\)",
+      "verdict": "不適切",
+      "reason": "xで誤った直列型、yで並列型を用いており、熱流と温度差の足し方を取り違える。"
+    },
+    "5": {
+      "value": "\\(k_x=(k_1l_1+k_2l_2)/L\\)、\\(k_y=L/(l_1/k_1+l_2/k_2)\\)",
+      "verdict": "適切",
+      "reason": "L=l1+l2。平行な層の熱流和と垂直な層の温度差和からそれぞれ導ける。"
+    }
+  },
+  "figures": "図を確認：上層k1・l1、下層k2・l2。xは層に平行、yは垂直。二つの境界温度設定を原図で確認。",
+  "ambiguity": "原典の平均熱伝導率は定常伝導を想定するが時間条件は明示的でない。等厚時3と5は同じ値になる。一般のl1,l2に対する式の識別として公式5を保持する。",
+  "evidence": [
+    "extracted/pages/H23/basic/page_010.png"
+  ],
+  "question_id": "H23-REG-BASIC-3-3",
+  "source_file": "sources/H23/basic.pdf",
+  "source_page": "10",
+  "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+  "raw_text_sha256": "f2e92c97cd9f5209b5fe9e67fce71c33dbb82bbfe80ad454326e0b1dccec1dfd",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

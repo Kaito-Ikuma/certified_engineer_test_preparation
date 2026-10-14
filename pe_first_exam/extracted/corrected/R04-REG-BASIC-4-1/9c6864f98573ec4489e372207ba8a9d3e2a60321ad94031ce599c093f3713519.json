@@ -1,0 +1,46 @@
+{
+  "stem": "酸の強さ、同濃度pH、ガス発生を区別する。",
+  "conditions": {
+    "条件": "原典の常圧又は常温・常圧。",
+    "濃度": "塩酸・酢酸各0.1 mol/L。",
+    "アンモニア生成": "塩化アンモニウムとCa(OH)2の混合物を加熱"
+  },
+  "choices": {
+    "1": {
+      "value": "酢酸＞炭酸＞フェノールの酸性度",
+      "verdict": "条件内で適切",
+      "reason": "水溶液の通常の比較ではこの順。炭酸は第一解離と、溶存CO2を含む見かけの扱いを区別する。"
+    },
+    "2": {
+      "value": "同濃度の塩酸と酢酸のpHが等しい",
+      "verdict": "不適切",
+      "reason": "塩酸は強酸、酢酸は弱酸。同じ分析濃度でも水素イオン濃度は等しくならない。"
+    },
+    "3": {
+      "value": "Na/K/Ca/Baの水酸化物は水で強塩基性",
+      "verdict": "条件内で適切",
+      "reason": "溶けた部分は強塩基として作用する。溶解度がすべて同じという意味ではない。"
+    },
+    "4": {
+      "value": "炭酸カルシウムと希塩酸からCO2",
+      "verdict": "条件内で適切",
+      "reason": "炭酸イオンへの酸の作用でCO2と水を生じる。"
+    },
+    "5": {
+      "value": "塩化アンモニウムとCa(OH)2の混合物を加熱からNH3",
+      "verdict": "条件内で適切",
+      "reason": "アンモニウムイオンからプロトンを取りアンモニアを生じる。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "炭酸の見かけの解離と強塩基の溶解度の限定を保持。すべての条件で同じ酸性度や溶解度を保証しない。",
+  "evidence": [
+    "extracted/pages/R04/basic/page_014.png"
+  ],
+  "question_id": "R04-REG-BASIC-4-1",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "f3efe8d96c6a98af2f23ae00cbd463d27cdcdd5df3074058f0f8bc9ed6f5e707",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,44 @@
+{
+  "stem": "小さな電流素片が作る磁場を与える法則名を選ぶ。",
+  "conditions": {
+    "対象": "定常電流の微小素片が作る磁場。"
+  },
+  "choices": {
+    "1": {
+      "value": "プランクの法則",
+      "verdict": "条件に不一致",
+      "reason": "黒体の熱放射スペクトルの法則である。"
+    },
+    "2": {
+      "value": "クーロンの法則",
+      "verdict": "条件に不一致",
+      "reason": "点電荷の静電気力を与え、電流素片の磁場ではない。"
+    },
+    "3": {
+      "value": "ファラデーの誘導法則",
+      "verdict": "条件に不一致",
+      "reason": "磁束の時間変化による誘導起電力を与える。"
+    },
+    "4": {
+      "value": "ビオ・サバールの法則",
+      "verdict": "条件に一致",
+      "reason": "定常電流素片Idℓから磁束密度dBを与える法則である。"
+    },
+    "5": {
+      "value": "キュリー・ワイスの法則",
+      "verdict": "条件に不一致",
+      "reason": "磁性体の磁化率の温度依存を扱う。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_001.png"
+  ],
+  "question_id": "R04-REG-APPLIED-03",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "4767ca920b78d17115121f2833c805af5f61676df05749bafffc57483d6454d5",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

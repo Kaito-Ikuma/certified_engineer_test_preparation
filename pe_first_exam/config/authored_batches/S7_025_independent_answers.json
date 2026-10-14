@@ -1,0 +1,108 @@
+{
+  "recorded_at": "2026-10-11T10:47:23.205362+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "official_answers_consulted": false,
+  "source_images_reviewed": 15,
+  "questions": [
+    {
+      "question_id": "H25-REG-APPLIED-20",
+      "independent_answer": "5",
+      "reason": "ダイアピルは密度差等による貫入であり、断層の直接構造ではない。関連が皆無とはしない。"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-21",
+      "independent_answer": "5",
+      "reason": "ラコリスは火成岩貫入体である。背斜、ヒンジ線、プランジ、キンクは褶曲用語。"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-35",
+      "independent_answer": "2",
+      "reason": "震源断層は地下の破壊面、地表地震断層は地表の変位であり肢2は逆。"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-23",
+      "independent_answer": "5",
+      "reason": "磁気探査を候補5とする。実際の利用もあり、他手法との相対的関連は一次資料で要確認。"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-26",
+      "independent_answer": "5",
+      "reason": "落ち込む地塊は地溝であり地塁ではない。地震断層を歴史記録に限定する肢には定義疑義。"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-31",
+      "independent_answer": "2",
+      "reason": "カタクレーサイトの細分類は基質割合であり固結程度ではない。他肢の塑性流動と剪断方向は要確認。"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-30",
+      "independent_answer": "2",
+      "reason": "雁行配列と共役断層は異なる。"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-27",
+      "independent_answer": "4",
+      "reason": "シルは層に平行な貫入体である。"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-30",
+      "independent_answer": "3",
+      "reason": "真の傾斜は走向に直交する鉛直断面で測る。線構造の走向表現は要確認。"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-27",
+      "independent_answer": "5",
+      "reason": "右横ずれのミ型配置を誤り候補5とする。観察方位と杉型との対応は一次資料で要確認。"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-29",
+      "independent_answer": "5",
+      "reason": "リストリック断層は一般に地表で急傾斜、深部で緩傾斜となる。"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-30",
+      "independent_answer": "2",
+      "reason": "領家帯は高温低圧型である。プレート速度の参照系は未確定。"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-31",
+      "independent_answer": "4",
+      "reason": "モレーンは氷河による堆積地形である。"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-27",
+      "independent_answer": "4",
+      "reason": "カタクレーサイトの細分類は基質割合による。剪断指標の方位条件は要確認。"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-28",
+      "independent_answer": "2",
+      "reason": "A、B、Cの平均変位速度区分が一桁大きい。通常Aは1〜10m/千年。"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-29",
+      "independent_answer": "1",
+      "reason": "ラコリスは貫入岩体である。"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-28",
+      "independent_answer": "5",
+      "reason": "地下の震源断層と地表地震断層の対応が逆である。"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-29",
+      "independent_answer": "3",
+      "reason": "座屈褶曲は層に平行な圧縮による。他形式の形成説明の一般化は要確認。"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-29",
+      "independent_answer": "4",
+      "reason": "下がる地塊は地溝であり、地塁は相対的に高い。"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-30",
+      "independent_answer": "5",
+      "reason": "ダイアピルは浮力等による塑性物質の上昇構造であり断層用語とは異なる。"
+    }
+  ]
+}

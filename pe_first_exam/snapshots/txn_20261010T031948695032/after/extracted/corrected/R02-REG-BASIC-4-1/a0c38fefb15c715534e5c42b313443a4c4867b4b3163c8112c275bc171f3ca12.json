@@ -1,0 +1,45 @@
+{
+  "stem": "5物質をそれぞれ同じ質量だけ完全燃焼させ、CO2発生量が最大のものを選ぶ。",
+  "conditions": {
+    "条件": "CO2と水への完全燃焼。同質量。",
+    "原子量": "H=1、C=12、O=16。"
+  },
+  "choices": {
+    "1": {
+      "value": "メタン CH4",
+      "verdict": "条件に不一致",
+      "reason": "1 g当たりのCO2は1/16=0.06250 molである。エチレンの2/28より小さい。"
+    },
+    "2": {
+      "value": "エチレン C2H4",
+      "verdict": "条件に一致",
+      "reason": "1 g当たりのCO2は2/28=0.07143 molである。5物質で最大。"
+    },
+    "3": {
+      "value": "エタン C2H6",
+      "verdict": "条件に不一致",
+      "reason": "1 g当たりのCO2は2/30=0.06667 molである。エチレンの2/28より小さい。"
+    },
+    "4": {
+      "value": "メタノール CH4O",
+      "verdict": "条件に不一致",
+      "reason": "1 g当たりのCO2は1/32=0.03125 molである。エチレンの2/28より小さい。"
+    },
+    "5": {
+      "value": "エタノール C2H6O",
+      "verdict": "条件に不一致",
+      "reason": "1 g当たりのCO2は2/46=0.04348 molである。エチレンの2/28より小さい。"
+    }
+  },
+  "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/basic/page_015.png"
+  ],
+  "question_id": "R02-REG-BASIC-4-1",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "15",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "4b585b4bdff2d81c5fcde7efa9b98ca8ab547f294e2d2c4ba67c268a61525bda",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

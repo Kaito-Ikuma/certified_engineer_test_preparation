@@ -1,0 +1,86 @@
+{
+  "batch_id": "S7_021_geochemistry_revision1",
+  "reference_date": "2026-10-11",
+  "scope": "PDFで長い化学反応式を含む必要知識段落が36.8ptはみ出した。必要知識を前提・概念へ整理し、解法中の反応式を独立表示へ変更する。原典、初回解答、全5肢判断、公式正答を保持。",
+  "questions": [
+    {
+      "question_id": "R06-REG-APPLIED-22",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "stem": "土壌の酸化還元、炭酸塩析出、乾燥塩類、金属沈殿と粘土生成を比較する。",
+      "summary": "土壌の酸化還元、炭酸塩析出、乾燥塩類、金属沈殿と粘土生成を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+      },
+      "choices": {
+        "1": {
+          "value": "土壌有機物は還元型。",
+          "verdict": "適切（通常条件）",
+          "reason": "CO2に比べ有機炭素は還元されており、酸化で電子を供給できる。"
+        },
+        "2": {
+          "value": "石灰岩溶解地下水へ大気CO2が加わって鍾乳石・石筍形成。",
+          "verdict": "不適切",
+          "reason": "普通の石灰岩洞窟ではCO2の脱気でCaCO3が析出する。添加では炭酸が増して溶解側へ動くので方向が逆。"
+        },
+        "3": {
+          "value": "乾燥地で塩類が上昇・蒸発沈積。",
+          "verdict": "適切（通常条件）",
+          "reason": "毛管上昇と蒸発で溶存塩が濃縮される。原材料と飽和条件に応じ岩塩・石膏・炭酸塩等が析出する。"
+        },
+        "4": {
+          "value": "通常土壌pHでAl3+やFeは酸化物・オキシ水酸化物沈殿。",
+          "verdict": "適切（通常条件）",
+          "reason": "通常の酸化的・弱酸性〜中性土壌ではAl・Fe(III)の水酸化物等が溶解を制限する。強酸、錯体、還元Fe(II)などの例外を付す。"
+        },
+        "5": {
+          "value": "湿潤熱帯の強風化ではスメクタイトよりカオリナイト。",
+          "verdict": "適切（通常条件）",
+          "reason": "強い溶脱は塩基性陽イオンと一部Siを除き、カオリナイト等の比較的単純な相を残しやすい。気候だけで鉱物を一意に決めない。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/17_applied_science/page_007.png"
+      ],
+      "core_concept": "化学的風化・炭酸平衡と土壌の二次鉱物",
+      "required_knowledge": "炭酸と炭酸水素イオンの平衡、CO2脱気による方解石析出、毛管上昇と蒸発濃縮、Al・Feの酸化状態と溶解度、溶脱と二次粘土鉱物。",
+      "solution": "2のCO2添加が逆である。\\[\\mathrm{CaCO_3+CO_2+H_2O\\rightleftharpoons Ca^{2+}+2HCO_3^-}\\]においてCO2を失うと左へ進み方解石を析出する。溶解、沈殿、蒸発濃縮、酸化還元、強溶脱の作用をそれぞれ区別して他肢を通常条件で判断する。",
+      "independent_answer": "2",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。鍾乳石石筍は地下水CO2の脱気によるCaCO3析出でCO2添加は逆。1有機物還元剤、3乾燥塩集積、4FeAl水酸化物、5強溶脱カオリナイトは条件付で整合。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "2のCO2添加が逆である。\\[\\mathrm{CaCO_3+CO_2+H_2O\\rightleftharpoons Ca^{2+}+2HCO_3^-}\\]においてCO2を失うと左へ進み方解石を析出する。溶解、沈殿、蒸発濃縮、酸化還元、強溶脱の作用をそれぞれ区別して他肢を通常条件で判断する。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。化学的風化・炭酸平衡と土壌の二次鉱物を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:carbonate",
+        "theory:geochemistry:weathering",
+        "theory:geochemistry:redox"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "water_mineral_equilibrium",
+      "classification_reason": "原典全肢の中心は化学的風化・炭酸平衡と土壌の二次鉱物であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_cave",
+        "gc_clays",
+        "gc_hem",
+        "gc_redox"
+      ],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "b3ecad76a74c394eb6eec611e824be6124e9cb162e412a0a0dbe70e7faae8f2d",
+      "revision_of_batch": "S7_021_geochemistry",
+      "revision_reason": "PDFで長い化学反応式を含む必要知識段落が36.8ptはみ出した。必要知識を前提・概念へ整理し、解法中の反応式を独立表示へ変更する。原典、初回解答、全5肢判断、公式正答を保持。"
+    }
+  ]
+}

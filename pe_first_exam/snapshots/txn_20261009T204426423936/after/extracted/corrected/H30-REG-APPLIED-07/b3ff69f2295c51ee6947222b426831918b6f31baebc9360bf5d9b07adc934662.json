@@ -1,0 +1,44 @@
+{
+  "stem": "室温での熱伝導率を4材料について大きい順に並べる。",
+  "conditions": {
+    "条件": "室温で通常のバルク材料の代表的な熱伝導率を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "ダイヤモンド→銅→鉄鋼→板ガラス",
+      "verdict": "条件に一致",
+      "reason": "代表的な室温の大小関係に一致する。"
+    },
+    "2": {
+      "value": "ダイヤモンド→鉄鋼→銅→板ガラス",
+      "verdict": "条件に不一致",
+      "reason": "鉄鋼と銅が逆である。"
+    },
+    "3": {
+      "value": "銅→鉄鋼→ダイヤモンド→板ガラス",
+      "verdict": "条件に不一致",
+      "reason": "高品質のバルクダイヤモンドを金属より下に置いている。"
+    },
+    "4": {
+      "value": "銅→鉄鋼→板ガラス→ダイヤモンド",
+      "verdict": "条件に不一致",
+      "reason": "バルクダイヤモンドを最小にしている。"
+    },
+    "5": {
+      "value": "銅→ダイヤモンド→鉄鋼→板ガラス",
+      "verdict": "条件に不一致",
+      "reason": "バルクダイヤモンドと銅が逆である。"
+    }
+  },
+  "figures": "正誤方向、全条件・数値・単位、候補5肢を原典画像で確認。図なし。組合せ問題では表の全欄を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_003.png"
+  ],
+  "question_id": "H30-REG-APPLIED-07",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "64e343734fd39d0ccdd1005331e7fd239c02dcb3ffe30cfbec9e7f3bd80ec240",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

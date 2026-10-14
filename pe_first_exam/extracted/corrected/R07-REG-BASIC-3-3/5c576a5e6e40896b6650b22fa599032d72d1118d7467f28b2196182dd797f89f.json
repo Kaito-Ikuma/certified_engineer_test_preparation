@@ -1,0 +1,46 @@
+{
+  "stem": "等間隔の3点を使うシンプソン法の式を選ぶ。",
+  "conditions": {
+    "点": "\\(b=a+h,c=a+2h,h>0\\)",
+    "区間": "aからc、全幅2h。",
+    "方式": "2次のニュートン・コーツ閉公式。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(\\frac h2(f(a)+f(c))\\)",
+      "verdict": "条件に不一致",
+      "reason": "全幅2hに対する台形則の半分であり、シンプソン法でもない。"
+    },
+    "2": {
+      "value": "\\(h(f(a)+f(c))\\)",
+      "verdict": "条件に不一致",
+      "reason": "これは全幅2hに対する台形則で、中点を使わない。"
+    },
+    "3": {
+      "value": "\\(\\frac h6(f(a)+4f(b)+f(c))\\)",
+      "verdict": "条件に不一致",
+      "reason": "重みの和がhとなり、定数関数の積分2hに足りない。"
+    },
+    "4": {
+      "value": "\\(\\frac h4(f(a)+4f(b)+f(c))\\)",
+      "verdict": "条件に不一致",
+      "reason": "重みの和が3h/2で、定数関数の積分2hに足りない。"
+    },
+    "5": {
+      "value": "\\(\\frac h3(f(a)+4f(b)+f(c))\\)",
+      "verdict": "条件に一致",
+      "reason": "両端1・中点4の重みへh/3を掛けるシンプソン法に一致する。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。3点a,b,cが等間隔h、積分区間a〜cであることを曲線図で確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/basic/page_009.png"
+  ],
+  "question_id": "R07-REG-BASIC-3-3",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "9",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "39c4aae4154f4635cc597514a19461f49119a80a437ec4cffa94994c3e6e7c19",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

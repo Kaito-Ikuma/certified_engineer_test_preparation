@@ -1,0 +1,46 @@
+{
+  "stem": "焦点内の物体を凸レンズで見たときの像の位置・向き・実虚を求める。",
+  "conditions": {
+    "レンズ": "焦点距離15 cmの凸レンズ。",
+    "物体": "レンズ手前10 cm。",
+    "方向": "像位置と実虚・向きの組合せ。"
+  },
+  "choices": {
+    "1": {
+      "value": "手前15 cmに正立虚像。",
+      "verdict": "不適切",
+      "reason": "正立虚像という性質は合うが、像距離の大きさは30 cm。"
+    },
+    "2": {
+      "value": "手前15 cmに倒立実像。",
+      "verdict": "不適切",
+      "reason": "像の距離、倒立、実像の全てが焦点内物体の像と異なる。"
+    },
+    "3": {
+      "value": "後方6 cmに倒立虚像。",
+      "verdict": "不適切",
+      "reason": "光線の延長は物体側へ交わるので、位置・向き・6 cmの距離が不整合。"
+    },
+    "4": {
+      "value": "後方30 cmに倒立実像。",
+      "verdict": "不適切",
+      "reason": "30 cmという大きさのみ合い、物体側という位置と正立虚像という性質が逆。"
+    },
+    "5": {
+      "value": "手前30 cmに正立虚像。",
+      "verdict": "最適",
+      "reason": "b=-30 cm、倍率−b/a=3なので物体側30 cmの正立虚像。"
+    }
+  },
+  "figures": "原典の条件・数式・単位・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_002.png"
+  ],
+  "question_id": "R06-REG-APPLIED-05",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "edbfa89fe8e302ae334155bb3b6e5c8a60fffb14ea0d2803ab5e98764b0a6494",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

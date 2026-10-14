@@ -1,0 +1,15 @@
+{
+  "corrections": [
+    {
+      "question_id": "H25-REG-APT-05",
+      "initial_reason_error": "初回説明がISO26000との取り違え。答え3は同じだがその説明は無効。",
+      "correct_reason": "原典ISO12100。信頼性・リスクアセスメント・本質的安全は正、使用上の情報を落とす2方策限定が誤。O O X O。"
+    },
+    {
+      "question_id": "H26-REG-APT-11",
+      "initial_reason_error": "初回説明が食品の用量評価との取り違え。答え1は同じだがその説明は無効。",
+      "correct_reason": "原典はリスクアナリシスの関係者。評価を科学的な評価担当が行い、管理を行政等が行う。ア逆転がX、他4文O。"
+    }
+  ],
+  "retention": "初回JSONを改変せず、正答一致を初回説明の正しさと同一視しない。"
+}

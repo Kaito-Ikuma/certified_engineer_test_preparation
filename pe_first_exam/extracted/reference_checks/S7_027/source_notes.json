@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-10-11T22:41:14+09:00",
+  "sources": [
+    {
+      "key": "struct_mit_beam",
+      "title": "Euler-Bernoulli Beams: Bending, Buckling, and Vibration (MIT 2004)",
+      "url": "https://ocw.mit.edu/courses/2-002-mechanics-and-materials-ii-spring-2004/bc25a56b5a91ad29ca5c7419616686f7_lec2.pdf",
+      "checked_claim": "公開PDFの線形梁仮定、荷重/長さ、断面のひずみ、断面力、自重q=ρAg、端部拘束、座屈のEI/L2依存、共振の周波数の本文を確認。数式の画像読みと独自導出を併用する。"
+    },
+    {
+      "key": "struct_mit_buckling",
+      "title": "Buckling of Beams (MIT 2021)",
+      "url": "https://ocw.mit.edu/courses/16-001-unified-engineering-materials-and-structures-fall-2021/mit16_001_f21_lec33lec34lec35.pdf",
+      "checked_claim": "49頁資料の導入、初期不整/偏心、弾性臨界荷重、細長比と圧壊/遷移/座屈の条件を確認。全章通読とはしない。"
+    },
+    {
+      "key": "struct_mlit_limit",
+      "title": "空港土木施設設計要領（構造設計編）令和3年4月改訂",
+      "url": "https://www.mlit.go.jp/koku/content/sekkeiyouryou_kouzou_R3.4kaitei.pdf",
+      "checked_claim": "2.3.1の終局/使用/疲労/修復、疲労を終局に含める場合もあるが本基準では別、2.3.2の性能照査、3.1の作用分類と自重を実本文で確認。全151頁の規準適合を確認したとはしない。"
+    },
+    {
+      "key": "struct_nims_data",
+      "title": "NIMS構造材料データシートの発行について（2020年4月1日）",
+      "url": "https://www.nims.go.jp/press/2020/04/lecian00000bax6x-att/202004010.pdf",
+      "checked_claim": "公開説明の高温荷重下の時間依存塑性変形、疲労の繰返し荷重/ひずみ、平均引張応力の試験条件を確認。各データシート本体や特定材料の寿命全域を確認したものではない。"
+    },
+    {
+      "key": "struct_nasa_mean",
+      "title": "Fatigue Failure Analysis (2018)",
+      "url": "https://ntrs.nasa.gov/api/citations/20180002396/downloads/20180002396.pdf",
+      "checked_claim": "NASAの公開疲労解析の平均応力・振幅・修正Goodmanの適用例を確認。普遍材料法則やすべての塑性域に同じ寿命式を適用しない。"
+    },
+    {
+      "key": "struct_mlit_glossary",
+      "title": "用語集：比例限度・疲労・疲労設計",
+      "url": "https://www.cbr.mlit.go.jp/chubumc/data/glossary/",
+      "checked_claim": "項目205-207の線形比例条件と静的破壊応力未満の繰返し損傷、供用期間累積照査の公的用語を確認。"
+    }
+  ],
+  "limitations": [
+    "数学的最適化と同時分布の反例は所与条件から独自導出。規準の全文適合・材料価格相場の検証ではない。"
+  ]
+}

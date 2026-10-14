@@ -1,0 +1,45 @@
+{
+  "stem": "一次可逆反応、反応性衝突、溶解度積、連鎖反応、熱暴走を比較する。",
+  "conditions": {
+    "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+    "成立条件": "1のAとBの可逆反応は双方一次。2はClとNOClの衝突。3は \\(\\mathrm{Mg(OH)_2}\\)。4は連鎖開始・伝播・停止。5は発熱と温度上昇の正帰還。"
+  },
+  "choices": {
+    "1": {
+      "value": "一次正逆反応の速度定数比が平衡定数",
+      "verdict": "適切",
+      "reason": "平衡で \\(k_f[A]=k_r[B]\\) なので濃度基準の \\(K=[B]/[A]=k_f/k_r\\) となる。"
+    },
+    "2": {
+      "value": "十分なエネルギーの衝突でも必ず反応するとは限らない",
+      "verdict": "適切",
+      "reason": "分子の向きや反応経路にも依存する。"
+    },
+    "3": {
+      "value": "水酸化マグネシウムの溶解度はpHに依存しない",
+      "verdict": "不適切",
+      "reason": "共通イオン効果を通じて水酸化物イオンの活量が溶解量を変える。"
+    },
+    "4": {
+      "value": "連鎖反応は開始・伝播・停止を含む",
+      "verdict": "適切",
+      "reason": "反応性中間体の生成、再生、消滅を区別する。"
+    },
+    "5": {
+      "value": "発熱が速度を上げて熱爆発を起こし得る",
+      "verdict": "適切",
+      "reason": "発熱と除熱の釣合いが失われると温度上昇と反応加速が循環する。"
+    }
+  },
+  "figures": "文字記述又は順序候補であり図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_004.png"
+  ],
+  "question_id": "H29-REG-APPLIED-13",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "f115da43b96a92ee19539e627053b3385efdbaddae4b0d2365c6dc25c265058f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

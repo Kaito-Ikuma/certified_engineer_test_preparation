@@ -1,0 +1,44 @@
+{
+  "stem": "物理探査の観測対象と装置を比較し、海上音波探査の受振器を誤って説明した記述を選ぶ。",
+  "conditions": {
+    "選択方向": "誤り又は最も不適切・関係の薄いものを1つ"
+  },
+  "choices": {
+    "1": {
+      "value": "磁気から鉄類の有無と概略位置を探るが、細かな形状や製品種類は判別できない",
+      "verdict": "適切",
+      "reason": "通常の磁気異常だけでは磁化・形状・深度が非一意であり、細かな製品識別までは確定できないという探査上の限界を述べる。現代の補助情報を用いる識別可能性全般を否定する命題とは解さない。"
+    },
+    "2": {
+      "value": "MTは自然の地磁気・地電流から深部比抵抗を探る",
+      "verdict": "適切",
+      "reason": "自然変動の水平電場・磁場の応答から電気抵抗率を推定する方法である。"
+    },
+    "3": {
+      "value": "相対重力計は吊った錘のばね伸びを利用する",
+      "verdict": "適切",
+      "reason": "ばね定数と伸びの変化から重力の差を測る。絶対値を直接定める落下式とは区別する。"
+    },
+    "4": {
+      "value": "地中レーダは概ね10 MHz以上の電磁波で極浅部を探る",
+      "verdict": "適切",
+      "reason": "原典が述べる通常の浅部レーダの周波数帯と原理に対応する。到達深度は周波数だけでなく導電率や減衰にも依存する。"
+    },
+    "5": {
+      "value": "ストリーマケーブルには防水加工した速度計を多数入れる",
+      "verdict": "不適切",
+      "reason": "水中音波を測る受振器は通常ハイドロフォンであり、圧力変動を検出する。地上用速度計の防水化と同一ではない。"
+    }
+  },
+  "figures": "図なし。否定方向と全5肢を原典ページ画像で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_010.png"
+  ],
+  "question_id": "H23-REG-APPLIED-29",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "1d365116bada99927fc1144a660dfb444765e5477de92523afd8ad433916c661",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

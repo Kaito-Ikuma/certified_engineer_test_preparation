@@ -1,0 +1,50 @@
+{
+  "stem": "体積V、密度αの物体を密度βの静止水に完全に浸したときの浮力の大きさを求める。",
+  "conditions": {
+    "object_volume": "V",
+    "object_density": "alpha",
+    "water_density": "beta",
+    "immersion": "complete",
+    "deformation": "none",
+    "flow": "none",
+    "gravity": "g"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(\\alpha Vg\\)",
+      "verdict": "不採用",
+      "reason": "物体自身の重力であり浮力ではない。"
+    },
+    "2": {
+      "value": "\\(\\beta Vg\\)",
+      "verdict": "採用",
+      "reason": "排除した水の重量であり浮力に等しい。"
+    },
+    "3": {
+      "value": "\\(|\\alpha-\\beta|Vg\\)",
+      "verdict": "不採用",
+      "reason": "重力と浮力の差の大きさであり、浮力そのものではない。"
+    },
+    "4": {
+      "value": "\\((\\alpha+\\beta)Vg\\)",
+      "verdict": "不採用",
+      "reason": "重力と浮力の大きさの和であり、作用する浮力の定義ではない。"
+    },
+    "5": {
+      "value": "\\(\\alpha\\beta Vg\\)",
+      "verdict": "不採用",
+      "reason": "密度を二つ掛けており力の次元にもならない。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_001.png"
+  ],
+  "question_id": "H26-REG-APPLIED-03",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "f344399561cc79fafbaa1bd46fcc3570c8f355ff98ff2c3670f8f3636f157697",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

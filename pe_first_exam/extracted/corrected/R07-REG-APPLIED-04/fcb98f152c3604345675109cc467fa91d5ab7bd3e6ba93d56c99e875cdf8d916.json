@@ -1,0 +1,49 @@
+{
+  "stem": "磁性体で満たしたソレノイド内部の磁束密度を計算する。",
+  "conditions": {
+    "長さ": "40 cm=0.40 m",
+    "全巻数": "150",
+    "比透磁率": "100",
+    "電流": "1.5 A",
+    "磁気定数": "\\(4\\pi\\times10^{-7}\\) T·m/A",
+    "モデル": "長いソレノイドの内部近似。比透磁率は与えられた値を使用。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(2.8\\times10^{-3}\\) mT",
+      "verdict": "条件に不一致",
+      "reason": "与えられた透磁率・巻数密度では約70.7 mTであり一致しない。"
+    },
+    "2": {
+      "value": "\\(1.4\\times10^{-1}\\) mT",
+      "verdict": "条件に不一致",
+      "reason": "透磁率と巻数密度を含めた70.7 mTと一致しない。"
+    },
+    "3": {
+      "value": "\\(1.1\\times10^1\\) mT",
+      "verdict": "条件に不一致",
+      "reason": "約70.7 mTより小さく、全巻数を単位長さ巻数へ換算する必要がある。"
+    },
+    "4": {
+      "value": "\\(7.1\\times10^1\\) mT",
+      "verdict": "条件に一致",
+      "reason": "B=μ0μr(N/ℓ)Iから約70.7 mTで最も近い。"
+    },
+    "5": {
+      "value": "\\(1.1\\times10^2\\) mT",
+      "verdict": "条件に不一致",
+      "reason": "同じ計算では約70.7 mTで110 mTではない。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_002.png"
+  ],
+  "question_id": "R07-REG-APPLIED-04",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "ff59a22ca962e2efeb268a56cd49c1f0d4ad2ef601e4aa333b1a0e91cd756bbf",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "生物多様性保全と外来種防除。",
+  "conditions": {
+    "時点": "令和2年度に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "組換え生物の国際枠組",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "2": {
+      "value": "外来種が在来種に影響",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "3": {
+      "value": "駆除は動物愛護で禁止",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "4": {
+      "value": "1992署名開放1993発効",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "5": {
+      "value": "保全持続利用利益配分",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "出題時の防除条項とCBD全三目的の原条文照合は追加確認。",
+  "evidence": [
+    "extracted/pages/R02/basic/page_020.png"
+  ],
+  "question_id": "R02-REG-BASIC-5-2",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "20",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "18dcca7c4d6e6c1bb407c81559e1884384ddb3fcc13b9bb39cae13f6cee9958d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

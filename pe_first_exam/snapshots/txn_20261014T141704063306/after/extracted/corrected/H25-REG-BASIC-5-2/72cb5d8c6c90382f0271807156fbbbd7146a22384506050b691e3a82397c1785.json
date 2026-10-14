@@ -1,0 +1,45 @@
+{
+  "stem": "暖房と自動車のCO2排出量を比較。",
+  "conditions": {
+    "電力": "500W、3h/日×50日、.42kg-CO2/kWh。",
+    "車": "10km/L、200km、2.32kg-CO2/L。"
+  },
+  "choices": {
+    "1": {
+      "value": "1:3",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "2:3",
+      "verdict": "適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "3": {
+      "value": "1:1",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "3:2",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "5": {
+      "value": "3:1",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/basic/page_019.png"
+  ],
+  "question_id": "H25-REG-BASIC-5-2",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "19",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "2574390fd0c370a5c58a15a9ca4e32926eb4a64bcbfb38966aeda9fbbb3cae20",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "継続研鑽は通常業務だけで自動完了しない。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+    "時点": "令和4年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "OOOO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OOOX と異なる。"
+    },
+    "2": {
+      "value": "XOXO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OOOX と異なる。"
+    },
+    "3": {
+      "value": "OXOO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OOOX と異なる。"
+    },
+    "4": {
+      "value": "OXOX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OOOX と異なる。"
+    },
+    "5": {
+      "value": "OOOX",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "2017版と登録体系を補足。2022の全改訂史・区分別換算条件は査読対象。現在の分類・制度を当時へ遡及しない。",
+  "evidence": [
+    "extracted/pages/R04/aptitude/page_014.png"
+  ],
+  "question_id": "R04-REG-APT-15",
+  "source_file": "sources/R04/aptitude.pdf",
+  "source_page": "14",
+  "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+  "raw_text_sha256": "3a1a1228b34e79db9add6360d3007481cee5f8c9deeef4fd961c4d643f4425b3",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

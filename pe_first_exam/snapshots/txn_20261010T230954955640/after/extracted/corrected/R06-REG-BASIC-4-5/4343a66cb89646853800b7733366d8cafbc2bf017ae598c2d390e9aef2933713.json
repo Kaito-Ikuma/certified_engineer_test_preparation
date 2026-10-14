@@ -1,0 +1,45 @@
+{
+  "stem": "DNAの塩基、逆平行と複製方向、二重らせん配置、メチル化による発現記憶を判定する。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "モデル": "二重らせん、DNAポリメラーゼによる通常の伸長。"
+  },
+  "choices": {
+    "1": {
+      "value": "DNAの4塩基はA・C・G・U。",
+      "verdict": "不適切",
+      "reason": "通常のDNAはUでなくTである。RNAの塩基と取り違える。"
+    },
+    "2": {
+      "value": "逆平行2鎖を塩基間水素結合がつなぐ。",
+      "verdict": "適切",
+      "reason": "二重らせんモデルでは相補塩基間水素結合が会合へ寄与し、鎖は逆向き。スタッキングも寄与する。"
+    },
+    "3": {
+      "value": "DNAポリメラーゼの新生鎖は\\(5'\\to3'\\)へ伸長する。",
+      "verdict": "適切",
+      "reason": "DNAポリメラーゼはプライマーの自由な3端へヌクレオチドを付けるので、新生鎖は5→3へ伸びる。"
+    },
+    "4": {
+      "value": "二重らせんで塩基は内側、糖リン酸主鎖は外側。",
+      "verdict": "適切（二重らせん）",
+      "reason": "原典が述べる二重らせんの配置である。一本鎖DNAまで全て二重らせんであるとは読まない。"
+    },
+    "5": {
+      "value": "脊椎動物細胞のDNAメチル化は発現パターンを子孫細胞へ伝える機構となる。",
+      "verdict": "適切（細胞分裂での機構）",
+      "reason": "配列自体を変えずに発現状態に関わり、分裂後の維持へ寄与するエピジェネティックな機構である。個々の印が全て無条件に維持されるとはしない。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_016.png"
+  ],
+  "question_id": "R06-REG-BASIC-4-5",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "16",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "97bedf527c782c44317eaa324f257e62b83e7e346dab4b5c1a174a6b8161b85b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

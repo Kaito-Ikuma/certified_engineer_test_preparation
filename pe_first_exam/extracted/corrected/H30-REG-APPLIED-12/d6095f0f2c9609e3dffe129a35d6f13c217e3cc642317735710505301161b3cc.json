@@ -1,0 +1,45 @@
+{
+  "stem": "電子励起の発光・解離とKoopmans近似を比較する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "電子励起の発光・解離とKoopmans近似を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "無放射減衰後の発光をりん光とする",
+      "verdict": "不適切",
+      "reason": "発光の区別は減衰だけでなく始終の電子状態・スピン多重度で決まる。通常の一重項からの蛍光にも振動緩和は先行する。"
+    },
+    "2": {
+      "value": "系間交差後の通常発光を蛍光とする",
+      "verdict": "不適切",
+      "reason": "通常の一重項励起から三重項への系間交差を経る発光はりん光の説明である。遅延蛍光等までこの略記から断定しない。"
+    },
+    "3": {
+      "value": "自身の解離極限以上の分解を前期解離とする",
+      "verdict": "不適切",
+      "reason": "前期解離は離散的な状態が別の解離性状態との結合で非放射解離する場合を扱い、単にその状態の解離極限を超える直接解離と同一でない。"
+    },
+    "4": {
+      "value": "電子と核が同程度の速度で動く",
+      "verdict": "不適切",
+      "reason": "核は重く電子遷移の時間に大きく動けない。垂直遷移と振動波動関数の重なりが振動構造を与える。"
+    },
+    "5": {
+      "value": "イオン化エネルギーを軌道エネルギーの負号で見積もる",
+      "verdict": "条件付き・解釈留保",
+      "reason": "凍結軌道のHartree–Fock近似でIE≈−εi。電子除去後の軌道緩和・電子相関などは近似に含まれない。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "公式5は凍結軌道Hartree–Fockの適用条件つき。固体の全観測スペクトルへの厳密適用とはせず、りん光／遅延蛍光の例外も保持。",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_004.png"
+  ],
+  "question_id": "H30-REG-APPLIED-12",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "dca431be30da0215e22f2c11e75e7860389785d7139394a0ef40b79e3257b677",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

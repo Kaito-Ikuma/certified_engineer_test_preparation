@@ -1,0 +1,46 @@
+{
+  "stem": "四要素の直並列系と同じ信頼度を持つ三要素直列系の、単体信頼度を逆算する。",
+  "conditions": {
+    "判断方向": "全候補を比較し最も適切な語又は数値・順位を選ぶ。",
+    "原典照合": "25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。",
+    "前提": "事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "0.87",
+      "verdict": "不適合",
+      "reason": "導出値0.9290521と一致せず、本問の接続・条件を満たす数値ではない。"
+    },
+    "2": {
+      "value": "0.90",
+      "verdict": "不適合",
+      "reason": "導出値0.9290521と一致せず、本問の接続・条件を満たす数値ではない。"
+    },
+    "3": {
+      "value": "0.93",
+      "verdict": "適合（記載条件内）",
+      "reason": "導出値0.9290521に最も近い。"
+    },
+    "4": {
+      "value": "0.96",
+      "verdict": "不適合",
+      "reason": "導出値0.9290521と一致せず、本問の接続・条件を満たす数値ではない。"
+    },
+    "5": {
+      "value": "0.99",
+      "verdict": "不適合",
+      "reason": "導出値0.9290521と一致せず、本問の接続・条件を満たす数値ではない。"
+    }
+  },
+  "figures": "回路、FTA又は候補表を全て原典で照合。元図は転載せず、接続関係と値を独自に記述。",
+  "ambiguity": "原典は要素/路線の独立を明記しない。周辺信頼度だけでは結合確率が決まらず、積の式は独立モデルを補った条件付き解である。公式正答と独立初回を保持する。",
+  "evidence": [
+    "extracted/pages/H26/basic/page_003.png"
+  ],
+  "question_id": "H26-REG-BASIC-1-4",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "3",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "f87f3da354abb486c7bf2e79d0dbdd564272c9ae5170538f6762ea2fdcc60889",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,19 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T00:00:59+09:00",
+  "paths": [
+    "generated/questions/applied_science/geophysics_geochemistry/06_meteorology_atmosphere.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/geophysics_geochemistry/06_meteorology_atmosphere.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/geophysics_geochemistry/06_meteorology_atmosphere.tex": "31e108276602a6c655717fe6749ebf76d8a86f4bd9e7e3e218bff4e7bd0298e4",
+    "generated/audit_summary.tex": "5922b89e5601de138d95bd5b073ca263cd11cf2b7471a75395773586deea227d",
+    "generated/frequency_tables.tex": "61ef891e7c920e1b0cfca3b788342c020a7984f1fd58ae5d5fcc5ae63c4c1d8c"
+  }
+}

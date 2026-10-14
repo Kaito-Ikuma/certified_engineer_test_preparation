@@ -1,0 +1,45 @@
+{
+  "stem": "指定のシンプソン公式で定積分を近似し、最も近い候補を選ぶ。",
+  "conditions": {
+    "積分": "\\(\\int_{-1}^{1}\\frac{1}{x+3}\\,dx\\)",
+    "指定重み": "区間両端1/3、中点4/3。"
+  },
+  "choices": {
+    "1": {
+      "value": "0.653",
+      "verdict": "条件に不一致",
+      "reason": "シンプソン近似25/36≈0.69444との差は約0.04144。"
+    },
+    "2": {
+      "value": "0.663",
+      "verdict": "条件に不一致",
+      "reason": "差は約0.03144。"
+    },
+    "3": {
+      "value": "0.673",
+      "verdict": "条件に不一致",
+      "reason": "差は約0.02144。"
+    },
+    "4": {
+      "value": "0.683",
+      "verdict": "条件に不一致",
+      "reason": "差は約0.01144。"
+    },
+    "5": {
+      "value": "0.693",
+      "verdict": "条件に一致",
+      "reason": "差は約0.00144で最も小さい。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_012.png"
+  ],
+  "question_id": "R01-RET-BASIC-3-4",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "12",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "1e4701b1670a8762d135a15f65287e597cf8f02df96d47035ee92ba5d87863aa",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

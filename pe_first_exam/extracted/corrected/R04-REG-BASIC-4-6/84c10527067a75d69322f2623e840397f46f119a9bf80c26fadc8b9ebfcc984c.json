@@ -1,0 +1,44 @@
+{
+  "stem": "DNA一方の鎖のGとAの割合から相補鎖の和と単独割合を求める。",
+  "conditions": {
+    "条件": "一方の鎖G25、A15パーセント。"
+  },
+  "choices": {
+    "1": {
+      "value": "同じ鎖C+T=40パーセント。",
+      "verdict": "不適切",
+      "reason": "同じ鎖の残りは100−25−15=60。"
+    },
+    "2": {
+      "value": "同じ鎖G+C=90パーセント。",
+      "verdict": "不適切",
+      "reason": "G25なのでC65が必要だが、C+T60かつ非負に反する。単に未決定ではなく不可能。"
+    },
+    "3": {
+      "value": "相補鎖T=25パーセント。",
+      "verdict": "不適切",
+      "reason": "相補鎖Tは元のA15に等しい。G25と対応しない。"
+    },
+    "4": {
+      "value": "相補鎖C+T=50パーセント。",
+      "verdict": "不適切",
+      "reason": "相補鎖C25、T15で和40。"
+    },
+    "5": {
+      "value": "相補鎖G+A=60パーセント。",
+      "verdict": "最適",
+      "reason": "相補鎖G+Aは元のC+Tなので60。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/basic/page_016.png"
+  ],
+  "question_id": "R04-REG-BASIC-4-6",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "16",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "8d3c60d1022a69937b664ec830f07e84fdd548b13d113ec058fd960e70e62563",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

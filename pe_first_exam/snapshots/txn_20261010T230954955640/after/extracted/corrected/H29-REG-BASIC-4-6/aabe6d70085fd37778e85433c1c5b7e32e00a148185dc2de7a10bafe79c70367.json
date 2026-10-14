@@ -1,0 +1,44 @@
+{
+  "stem": "PCRの酵素、組換えインスリンの時点、電気泳動、制限酵素、ゲノムとcDNAを判定する。",
+  "conditions": {
+    "方向": "最も適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "PCRの反復熱変性のため耐熱性DNAポリメラーゼを使う。",
+      "verdict": "最適",
+      "reason": "温度サイクルの変性段階にも耐える酵素を利用し、各回に酵素を加え直す必要を避ける。"
+    },
+    "2": {
+      "value": "大腸菌による組換えインスリン合成の成功は1990年代後半。",
+      "verdict": "不適切",
+      "reason": "組換えヒトインスリンは1978年の製法開発、1982年の米承認であり、1990年代後半ではない。"
+    },
+    "3": {
+      "value": "DNAはゲル電気泳動で陰極へ移動する。",
+      "verdict": "不適切",
+      "reason": "通常の緩衝液でDNAのリン酸骨格は負に帯電するため陽極へ進む。"
+    },
+    "4": {
+      "value": "EcoRIの6塩基認識で切断後は全て正確に\\(4^6\\)塩基対。",
+      "verdict": "不適切",
+      "reason": "独立・等確率の4塩基というランダムモデルで認識配列の出現確率は1/4096にすぎず、各断片の長さを固定しない。実ゲノムの塩基偏り・配列相関も別である。"
+    },
+    "5": {
+      "value": "ヒトゲノムの全クローンが肝臓RNA由来cDNAライブラリにある。",
+      "verdict": "不適切",
+      "reason": "ゲノムは非転写領域・イントロン等も含む。cDNAは採取RNAから作り、その組織・時点で発現していない遺伝子も欠け得る。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/basic/page_017.png"
+  ],
+  "question_id": "H29-REG-BASIC-4-6",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "f096f46e36d1dbd97eeac06b2a83461ad1f2c6617b9da80148f9409e39f8ef2b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

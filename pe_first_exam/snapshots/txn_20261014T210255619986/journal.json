@@ -1,0 +1,31 @@
+{
+  "status": "committed",
+  "time": "2026-10-14T21:02:55+09:00",
+  "paths": [
+    "data/batch_changes/S7_059_revision1_R02-REG-BASIC-5-5_revision.json",
+    "data/questions.csv",
+    "data/verification_records.csv",
+    "data/question_topics.csv",
+    "data/question_evaluations.csv",
+    "data/batch_changes/S7_059_revision1.csv",
+    "extracted/logs/batches/S7_059_revision1.json"
+  ],
+  "existed": {
+    "data/batch_changes/S7_059_revision1_R02-REG-BASIC-5-5_revision.json": false,
+    "data/questions.csv": true,
+    "data/verification_records.csv": true,
+    "data/question_topics.csv": true,
+    "data/question_evaluations.csv": true,
+    "data/batch_changes/S7_059_revision1.csv": false,
+    "extracted/logs/batches/S7_059_revision1.json": false
+  },
+  "sha256": {
+    "data/batch_changes/S7_059_revision1_R02-REG-BASIC-5-5_revision.json": "46899c62085e64706e1529b86f250743c33e26e19e4f9230637687b9a8a95afe",
+    "data/questions.csv": "6adf219a28d0f8b0a608137bfe0a75348f8a31cea02b2dde618be3e0b2b4ea82",
+    "data/verification_records.csv": "e01f94ad16f8dd08aa8c821eebc93c4f7dbe2315b7daed86819b1d177f4a7cb6",
+    "data/question_topics.csv": "26a11ad1e61f645be2d4c8f60cc4f200b03d77f4f24026d067092d931d4c71d7",
+    "data/question_evaluations.csv": "5bbb1eb97c219a6490877ffd476d118e68af7914e92cdf6500e8395118160777",
+    "data/batch_changes/S7_059_revision1.csv": "9c45f6cbda9d5f627b31224389eac4b03a04f575da9fc45ddf4540e21c63b74e",
+    "extracted/logs/batches/S7_059_revision1.json": "fdd52524c5b78cca250327a05a2980a9edc903c222e60d4be670a81afef25547"
+  }
+}

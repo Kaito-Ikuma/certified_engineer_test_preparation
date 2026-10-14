@@ -1,0 +1,45 @@
+{
+  "checked_at": "2026-10-12T08:40:24+09:00",
+  "sources": [
+    {
+      "key": "mit_roy_fea1999",
+      "url": "https://ocw.mit.edu/courses/3-11-mechanics-of-materials-fall-1999/812a432c72099369788f78fb344eb047_MIT3_11F99_fea.pdf",
+      "checked_claim": "MIT講義資料。表紙の日付2001-02-28を確認。変位補間、ひずみと応力、剛性行列、高勾配の細分化の本文を確認。Q4・面積座標の具体的導出は本教材の独自計算である。"
+    },
+    {
+      "key": "nist_newton",
+      "url": "https://dlmf.nist.gov/3.8",
+      "checked_claim": "Newton反復式3.8.4、単根近傍の二次収束、初期値への依存を確認。ステップ幅だけで停止する設問の実務上の不足を区別する。"
+    },
+    {
+      "key": "nist_differentiation",
+      "url": "https://dlmf.nist.gov/3.4",
+      "checked_claim": "補間多項式の微分による差分と余項の節を確認。過去問の各差分のTaylor展開・次数判定は独自に計算する。"
+    },
+    {
+      "key": "nist_interpolation",
+      "url": "https://dlmf.nist.gov/3.3",
+      "checked_claim": "相異なる節点に対する補間多項式の一意性、Lagrange基底と誤差項を確認。3点の係数は本教材で独自に導出する。"
+    },
+    {
+      "key": "openstax_thermal_conduction",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/1-6-mechanisms-of-heat-transfer",
+      "checked_claim": "定常平板の熱伝導式1.9とFourier式を確認。二層の並列・直列の有効値は熱流及び温度差の加算から独自に導出する。"
+    },
+    {
+      "key": "goldberg1991",
+      "url": "https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html",
+      "checked_claim": "Cancellation節の入力の丸め誤差が近い差で増幅する説明を確認。差の演算そのものが常に誤差を新生するという断定はしない。"
+    },
+    {
+      "key": "nist_quadrature",
+      "url": "https://dlmf.nist.gov/3.5",
+      "checked_claim": "台形則と滑らかな関数の余項を確認。重みのモーメント検算を独自に導出する。"
+    }
+  ],
+  "limitations": [
+    "原典画像21問を確認し公式前の独立解答を別ファイルに保存。",
+    "11問の条件不足や全称表現を部分校正として保持する。",
+    "本文の式は原典と一次資料を参照した独自導出であり、資料の図は転載しない。"
+  ]
+}

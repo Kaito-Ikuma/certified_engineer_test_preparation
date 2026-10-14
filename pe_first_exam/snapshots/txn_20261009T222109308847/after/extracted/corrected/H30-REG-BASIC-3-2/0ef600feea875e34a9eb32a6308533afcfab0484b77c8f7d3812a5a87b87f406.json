@@ -1,0 +1,46 @@
+{
+  "stem": "二次元ベクトル場の指定点で発散と回転を求める。",
+  "conditions": {
+    "ベクトル": "\\(v=(u,v)=(-x^2+2xy,2xy-y^2)\\)",
+    "点": "(1,2)",
+    "定義": "\\(\\operatorname{div}v=\\partial_xu+\\partial_yv,\\operatorname{rot}v=\\partial_xv-\\partial_yu\\)"
+  },
+  "choices": {
+    "1": {
+      "value": "div=2／rot=−4",
+      "verdict": "条件に不一致",
+      "reason": "対応成分の発散は恒等的に0であり合わない。"
+    },
+    "2": {
+      "value": "div=0／rot=−2",
+      "verdict": "条件に不一致",
+      "reason": "発散は合うが回転の差の順序を逆にしている。"
+    },
+    "3": {
+      "value": "div=−2／rot=0",
+      "verdict": "条件に不一致",
+      "reason": "発散と回転の両方が合わない。"
+    },
+    "4": {
+      "value": "div=0／rot=2",
+      "verdict": "条件に一致",
+      "reason": "発散0、回転2(y−x)=2に一致する。"
+    },
+    "5": {
+      "value": "div=2／rot=4",
+      "verdict": "条件に不一致",
+      "reason": "発散と回転の両方が合わない。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/basic/page_011.png"
+  ],
+  "question_id": "H30-REG-BASIC-3-2",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "11",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "539c27283e34141014dd5f85f8ea41ae36b4a379c11d8b6b6042228905ad3d3e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

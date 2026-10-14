@@ -1,0 +1,46 @@
+{
+  "stem": "任意の三次元ベクトルに必ずしも成立しない恒等式を選ぶ。",
+  "conditions": {
+    "ベクトル": "三次元直交座標の任意の実ベクトルa,b。",
+    "演算": "内積と外積を区別する。",
+    "方向": "全てのa,bで成立するとは限らないもの。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\((a\\times b)\\cdot a=0\\)",
+      "verdict": "恒等的に正しい",
+      "reason": "外積はaへ垂直であり成立する。"
+    },
+    "2": {
+      "value": "\\(a\\times b=b\\times a\\)",
+      "verdict": "一般には誤り",
+      "reason": "外積は反交換的で、a×b=−b×aである。平行な場合のゼロを除き一般には成立しない。"
+    },
+    "3": {
+      "value": "\\(a\\cdot b=b\\cdot a\\)",
+      "verdict": "恒等的に正しい",
+      "reason": "実ベクトルの内積は交換的であり成立する。"
+    },
+    "4": {
+      "value": "\\(b\\cdot(a\\times b)=0\\)",
+      "verdict": "恒等的に正しい",
+      "reason": "外積はbへも垂直であり成立する。"
+    },
+    "5": {
+      "value": "\\(a\\times a=0\\)",
+      "verdict": "恒等的に正しい",
+      "reason": "同じベクトルの外積はゼロであり成立する。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/basic/page_010.png"
+  ],
+  "question_id": "R04-REG-BASIC-3-2",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "10",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "656b5306e3357ade0267a66d4c725a605aac2fbec58f6845f975ac838574ebac",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

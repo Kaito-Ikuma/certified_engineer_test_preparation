@@ -1,0 +1,47 @@
+{
+  "stem": "内部告発の根拠確認、組織手段、同僚の支持、上司への異議、解決策、理解者の6項目で適切な数を求める。",
+  "conditions": {
+    "方向": "適切なものの数。6/5/4/3/2。",
+    "構成": "ア〜カの6項目。",
+    "限定": "上司への通知は適当な場合。法的保護要件の全体を問う問題ではない。",
+    "時点": "令和2年。2022年以降の改正を出題当時の要件として加えない。"
+  },
+  "choices": {
+    "1": {
+      "value": "6項目",
+      "verdict": "選択対象",
+      "reason": "6項目とも、慎重に根拠を確かめ是正を進める行動である。"
+    },
+    "2": {
+      "value": "5項目",
+      "verdict": "選択対象ではない",
+      "reason": "適切な項目を一つ除外している。"
+    },
+    "3": {
+      "value": "4項目",
+      "verdict": "選択対象ではない",
+      "reason": "適切な項目を二つ除外している。"
+    },
+    "4": {
+      "value": "3項目",
+      "verdict": "選択対象ではない",
+      "reason": "適切な項目を三つ除外している。"
+    },
+    "5": {
+      "value": "2項目",
+      "verdict": "選択対象ではない",
+      "reason": "適切な項目を四つ除外している。"
+    }
+  },
+  "figures": "原典の設問・全5肢・否定・時点を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/aptitude/page_015.png"
+  ],
+  "question_id": "R02-REG-APT-15",
+  "source_file": "sources/R02/aptitude.pdf",
+  "source_page": "15",
+  "source_sha256": "d0ca26aaeeba6d436d8ffa77a759056e7a194c0ac9fad61de2c84392999050bb",
+  "raw_text_sha256": "5ec9400dce48522e88674837e839b004de0da3bf2d41ca5400a04d058e790465",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

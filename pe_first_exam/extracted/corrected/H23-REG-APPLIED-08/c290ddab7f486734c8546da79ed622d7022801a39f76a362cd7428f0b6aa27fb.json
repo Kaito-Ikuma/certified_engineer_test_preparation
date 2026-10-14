@@ -1,0 +1,45 @@
+{
+  "stem": "充電したコンデンサーに蓄えられるエネルギーを計算する。",
+  "conditions": {
+    "容量": "2.0 μF",
+    "電圧": "300 V"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(9.0\\times10^{-3}\\) J",
+      "verdict": "条件に不一致",
+      "reason": "正しい値0.09 Jの1/10である。"
+    },
+    "2": {
+      "value": "\\(1.8\\times10^{-2}\\) J",
+      "verdict": "条件に不一致",
+      "reason": "正しい値0.09 Jの1/5である。"
+    },
+    "3": {
+      "value": "\\(9.0\\times10^{-2}\\) J",
+      "verdict": "条件に一致",
+      "reason": "容量を2.0×10⁻⁶ Fへ換算したCV²/2に一致する。"
+    },
+    "4": {
+      "value": "\\(1.8\\times10^{-1}\\) J",
+      "verdict": "条件に不一致",
+      "reason": "CV²とするとこの値になるが、充電中の電圧上昇を積分する係数1/2がない。"
+    },
+    "5": {
+      "value": "\\(9.0\\times10^{-1}\\) J",
+      "verdict": "条件に不一致",
+      "reason": "正しい値の10倍で、接頭語又は指数の扱いが違う。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_003.png"
+  ],
+  "question_id": "H23-REG-APPLIED-08",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "06576ec5a5e6c9fff879212d6368a17c4e39b21a86ed6fa762dcf37d2210ee6a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

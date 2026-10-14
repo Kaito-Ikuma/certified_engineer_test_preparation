@@ -1,0 +1,156 @@
+[
+  {
+    "question_id": "H23-REG-APT-05",
+    "source_file": "sources/H23/aptitude.pdf",
+    "source_page": "6",
+    "source_page_end": "6",
+    "question_text_file": "extracted/questions/H23-REG-APT-05.txt"
+  },
+  {
+    "question_id": "H23-REG-APT-06",
+    "source_file": "sources/H23/aptitude.pdf",
+    "source_page": "7",
+    "source_page_end": "7",
+    "question_text_file": "extracted/questions/H23-REG-APT-06.txt"
+  },
+  {
+    "question_id": "H23-REG-APT-12",
+    "source_file": "sources/H23/aptitude.pdf",
+    "source_page": "13",
+    "source_page_end": "13",
+    "question_text_file": "extracted/questions/H23-REG-APT-12.txt"
+  },
+  {
+    "question_id": "H24-REG-APT-10",
+    "source_file": "sources/H24/aptitude.pdf",
+    "source_page": "9",
+    "source_page_end": "9",
+    "question_text_file": "extracted/questions/H24-REG-APT-10.txt"
+  },
+  {
+    "question_id": "H24-REG-APT-11",
+    "source_file": "sources/H24/aptitude.pdf",
+    "source_page": "10",
+    "source_page_end": "10",
+    "question_text_file": "extracted/questions/H24-REG-APT-11.txt"
+  },
+  {
+    "question_id": "H25-REG-APT-09",
+    "source_file": "sources/H25/aptitude.pdf",
+    "source_page": "10",
+    "source_page_end": "10",
+    "question_text_file": "extracted/questions/H25-REG-APT-09.txt"
+  },
+  {
+    "question_id": "H26-REG-APT-10",
+    "source_file": "sources/H26/aptitude.pdf",
+    "source_page": "10",
+    "source_page_end": "10",
+    "question_text_file": "extracted/questions/H26-REG-APT-10.txt"
+  },
+  {
+    "question_id": "H26-REG-APT-15",
+    "source_file": "sources/H26/aptitude.pdf",
+    "source_page": "15",
+    "source_page_end": "15",
+    "question_text_file": "extracted/questions/H26-REG-APT-15.txt"
+  },
+  {
+    "question_id": "H28-REG-APT-08",
+    "source_file": "sources/H28/aptitude.pdf",
+    "source_page": "8",
+    "source_page_end": "8",
+    "question_text_file": "extracted/questions/H28-REG-APT-08.txt"
+  },
+  {
+    "question_id": "H29-REG-APT-12",
+    "source_file": "sources/H29/aptitude.pdf",
+    "source_page": "11",
+    "source_page_end": "11",
+    "question_text_file": "extracted/questions/H29-REG-APT-12.txt"
+  },
+  {
+    "question_id": "H30-REG-APT-11",
+    "source_file": "sources/H30/aptitude.pdf",
+    "source_page": "11",
+    "source_page_end": "11",
+    "question_text_file": "extracted/questions/H30-REG-APT-11.txt"
+  },
+  {
+    "question_id": "R01-RET-APT-12",
+    "source_file": "sources/R01_retest/aptitude.pdf",
+    "source_page": "13",
+    "source_page_end": "13",
+    "question_text_file": "extracted/questions/R01-RET-APT-12.txt"
+  },
+  {
+    "question_id": "R02-REG-APT-07",
+    "source_file": "sources/R02/aptitude.pdf",
+    "source_page": "7",
+    "source_page_end": "8",
+    "question_text_file": "extracted/questions/R02-REG-APT-07.txt"
+  },
+  {
+    "question_id": "R03-REG-APT-10",
+    "source_file": "sources/R03/aptitude.pdf",
+    "source_page": "10",
+    "source_page_end": "10",
+    "question_text_file": "extracted/questions/R03-REG-APT-10.txt"
+  },
+  {
+    "question_id": "R03-REG-APT-12",
+    "source_file": "sources/R03/aptitude.pdf",
+    "source_page": "12",
+    "source_page_end": "12",
+    "question_text_file": "extracted/questions/R03-REG-APT-12.txt"
+  },
+  {
+    "question_id": "R03-REG-APT-15",
+    "source_file": "sources/R03/aptitude.pdf",
+    "source_page": "15",
+    "source_page_end": "15",
+    "question_text_file": "extracted/questions/R03-REG-APT-15.txt"
+  },
+  {
+    "question_id": "R04-REG-APT-06",
+    "source_file": "sources/R04/aptitude.pdf",
+    "source_page": "5",
+    "source_page_end": "5",
+    "question_text_file": "extracted/questions/R04-REG-APT-06.txt"
+  },
+  {
+    "question_id": "R05-REG-APT-08",
+    "source_file": "sources/R05/aptitude.pdf",
+    "source_page": "8",
+    "source_page_end": "8",
+    "question_text_file": "extracted/questions/R05-REG-APT-08.txt"
+  },
+  {
+    "question_id": "R05-REG-APT-14",
+    "source_file": "sources/R05/aptitude.pdf",
+    "source_page": "14",
+    "source_page_end": "14",
+    "question_text_file": "extracted/questions/R05-REG-APT-14.txt"
+  },
+  {
+    "question_id": "R06-REG-APT-07",
+    "source_file": "sources/R06/aptitude.pdf",
+    "source_page": "7",
+    "source_page_end": "7",
+    "question_text_file": "extracted/questions/R06-REG-APT-07.txt"
+  },
+  {
+    "question_id": "R06-REG-APT-13",
+    "source_file": "sources/R06/aptitude.pdf",
+    "source_page": "13",
+    "source_page_end": "13",
+    "question_text_file": "extracted/questions/R06-REG-APT-13.txt"
+  },
+  {
+    "question_id": "R07-REG-APT-14",
+    "source_file": "sources/R07/aptitude.pdf",
+    "source_page": "14",
+    "source_page_end": "14",
+    "question_text_file": "extracted/questions/R07-REG-APT-14.txt"
+  }
+]

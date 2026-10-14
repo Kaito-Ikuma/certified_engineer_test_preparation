@@ -1,0 +1,45 @@
+{
+  "stem": "令和元年度試験当時の日本周辺の偏角の方向と地域差から適切な記述を選ぶ。",
+  "conditions": {
+    "判断時点": "2019年度試験当時。最新2026年の偏角を遡及して代用しない。",
+    "裏付け資料": "国土地理院2015.0年磁気図、元期2015年1月1日、2016年12月作成。"
+  },
+  "choices": {
+    "1": {
+      "value": "全般的に北ほど偏角が小さい",
+      "verdict": "不適切",
+      "reason": "当時の2015.0年磁気図では沖縄本島付近約5度西偏に対し、北海道では概ね9〜10度西偏であり、北ほど小さいという傾向と合わない。"
+    },
+    "2": {
+      "value": "沖縄本島の偏角は約5度",
+      "verdict": "適切",
+      "reason": "当時参照可能な国土地理院の2015.0年磁気図で、沖縄本島付近は約5度の西偏を示す。概略値として適切である。"
+    },
+    "3": {
+      "value": "真北から東へ偏っている",
+      "verdict": "不適切",
+      "reason": "日本周辺は西偏であり、東西が逆である。偏角の符号規約と方位を区別する。"
+    },
+    "4": {
+      "value": "同じ経度なら偏角は同じ",
+      "verdict": "不適切",
+      "reason": "磁場は経度だけでは決まらず、同じ経度でも緯度に伴って偏角が異なる。"
+    },
+    "5": {
+      "value": "同じ緯度なら偏角は同じ",
+      "verdict": "不適切",
+      "reason": "非軸対称な磁場があるため同緯度でも経度によって変わる。"
+    }
+  },
+  "figures": "図なし。否定方向と全5肢を原典ページ画像で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_009.png"
+  ],
+  "question_id": "R01-REG-APPLIED-27",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "1df7eb4894782083215942accbbb9ff61c90e6e4e245d50ef0c7bbb32c5fdef2",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

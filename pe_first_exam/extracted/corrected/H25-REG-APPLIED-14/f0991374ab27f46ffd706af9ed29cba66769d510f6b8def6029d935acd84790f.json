@@ -1,0 +1,45 @@
+{
+  "stem": "石油化学原料の留分位置と反応生成物を対応させる。",
+  "conditions": {
+    "判断対象": "石油化学原料の留分位置と反応生成物を対応させる。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "ナフサは軽油より高沸点",
+      "verdict": "選ぶ候補",
+      "reason": "ナフサは軽質で軽油より低沸点。"
+    },
+    "2": {
+      "value": "ナフサ熱分解からエチレン",
+      "verdict": "選ばない候補",
+      "reason": "二重結合を持つ主要基礎製品。"
+    },
+    "3": {
+      "value": "エチレン酸化からエチレンオキシド",
+      "verdict": "選ばない候補",
+      "reason": "環状エーテルの酸化生成物。"
+    },
+    "4": {
+      "value": "1,3ブタジエンは合成ゴム原料",
+      "verdict": "選ばない候補",
+      "reason": "ジエンの重合をゴムへ利用。"
+    },
+    "5": {
+      "value": "pキシレン酸化からPET原料酸",
+      "verdict": "選ばない候補",
+      "reason": "テレフタル酸をエチレングリコールとポリエステルへ。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_006.png"
+  ],
+  "question_id": "H25-REG-APPLIED-14",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "5619344c35d509a010b65d51c37c3d9c3fea56ef62a3f15c7898dbb9877a5491",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

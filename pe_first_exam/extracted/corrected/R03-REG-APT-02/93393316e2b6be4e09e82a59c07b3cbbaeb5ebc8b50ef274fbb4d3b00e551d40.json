@@ -1,0 +1,45 @@
+{
+  "stem": "倫理上の公衆は専門的な同意の条件から捉える。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+    "時点": "令和3年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "国家や社会を形成する一般の人々",
+      "verdict": "不適切",
+      "reason": "日常語としては使えるが、ここで問う専門知識と意思決定の条件を特定しない。"
+    },
+    "2": {
+      "value": "背景を異にする多数の組織されていない人々",
+      "verdict": "不適切",
+      "reason": "集団の背景と組織化だけでは、影響と情報に基づく同意の条件を説明しない。"
+    },
+    "3": {
+      "value": "専門職としての技術業についていない人々",
+      "verdict": "不適切",
+      "reason": "職業区分だけでは、その技術的影響について十分な情報を得て同意できるかを説明しない。"
+    },
+    "4": {
+      "value": "十分な情報に基づく同意ができない人々",
+      "verdict": "条件内で適切",
+      "reason": "専門的な技術の影響に対し、知識や情報の不足から自律的判断が難しい立場を捉える。"
+    },
+    "5": {
+      "value": "広い地域に散在しメディアを通じ世論を形成する人々",
+      "verdict": "不適切",
+      "reason": "世論形成の説明であり、技術的影響への informed consent の条件ではない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "原典の公衆モデルをすべての法令や辞書の定義として扱わない。出典モデル原著の全章照合は未完。",
+  "evidence": [
+    "extracted/pages/R03/aptitude/page_002.png"
+  ],
+  "question_id": "R03-REG-APT-02",
+  "source_file": "sources/R03/aptitude.pdf",
+  "source_page": "2",
+  "source_sha256": "73f1426490c272bb33312654f07964404c16a78e9b0ff238c54eca8178d939df",
+  "raw_text_sha256": "b5cf510b4ddd2a86a59418eff5d6e73633ead1c86e2a430bac18bbeafef5b061",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

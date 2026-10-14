@@ -1,0 +1,54 @@
+{
+  "stem": "空スタックへ指定された8操作を実行し、最後のPOPの値を求める。",
+  "conditions": {
+    "initial_stack": "empty",
+    "operations": [
+      "PUSH 1",
+      "PUSH 2",
+      "PUSH 3",
+      "POP",
+      "PUSH 4",
+      "PUSH 5",
+      "POP",
+      "POP"
+    ]
+  },
+  "choices": {
+    "1": {
+      "value": "1",
+      "verdict": "不適切",
+      "reason": "最終POP後も底に残る。"
+    },
+    "2": {
+      "value": "2",
+      "verdict": "不適切",
+      "reason": "最終POP後もスタックに残る。"
+    },
+    "3": {
+      "value": "3",
+      "verdict": "不適切",
+      "reason": "先のPOPですでに取り出される。"
+    },
+    "4": {
+      "value": "4",
+      "verdict": "適切・選択対象",
+      "reason": "5をPOPした後の頂上4を最後にPOPする。"
+    },
+    "5": {
+      "value": "5",
+      "verdict": "不適切",
+      "reason": "最後より一つ前のPOPで取り出される。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/basic/page_007.png"
+  ],
+  "question_id": "H26-REG-BASIC-2-4",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "96b115988b3b2f5b59903756d10088f66ab44cda3aa1551a87f3d2a4f8d8a2f2",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

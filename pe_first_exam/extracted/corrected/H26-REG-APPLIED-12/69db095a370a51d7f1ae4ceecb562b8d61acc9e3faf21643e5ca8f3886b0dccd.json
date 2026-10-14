@@ -1,0 +1,45 @@
+{
+  "stem": "Alの両性・不動態・塩と製錬を比較する。",
+  "conditions": {
+    "判断対象": "Alの両性・不動態・塩と製錬を比較する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "酸と反応するが塩基とは反応しない",
+      "verdict": "選ぶ候補",
+      "reason": "Alは強塩基とも反応し1が誤り。"
+    },
+    "2": {
+      "value": "濃硝酸で酸化膜・不動態",
+      "verdict": "選ばない候補",
+      "reason": "通常の濃硝酸で表面保護が起きるという条件付き説明。"
+    },
+    "3": {
+      "value": "ジュラルミンはAl主成分",
+      "verdict": "選ばない候補",
+      "reason": "Alを基材とする合金分類。"
+    },
+    "4": {
+      "value": "Al硫酸塩/K硫酸塩からミョウバン",
+      "verdict": "選ばない候補",
+      "reason": "KAl(SO4)2・12H2Oという複塩。"
+    },
+    "5": {
+      "value": "ボーキサイト/アルミナ/氷晶石電解",
+      "verdict": "選ばない候補",
+      "reason": "アルミナを溶融塩に溶かして還元する。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "濃硝酸の温度・濃度・表面条件、ミョウバン結晶化条件は未指定。原典の代表工程を全条件の保証にしない。",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_005.png"
+  ],
+  "question_id": "H26-REG-APPLIED-12",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "949230a736475dc980dc28f7083b70c13fdb740b9992dc02967ca915084fe2a8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

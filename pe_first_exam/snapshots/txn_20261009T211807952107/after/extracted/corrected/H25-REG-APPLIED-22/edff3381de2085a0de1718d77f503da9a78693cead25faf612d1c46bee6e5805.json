@@ -1,0 +1,45 @@
+{
+  "stem": "比重2.85以上という重鉱物の定義を使い、重鉱物に分類されないものを選ぶ。",
+  "conditions": {
+    "境界": "原典は重鉱物を比重2.85以上と定義する。",
+    "方向": "重鉱物に分類されないもの。"
+  },
+  "choices": {
+    "1": {
+      "value": "黒雲母",
+      "verdict": "組成次第で境界をまたぐ",
+      "reason": "黒雲母の密度は2.7〜3.3g/cm³と報告され、2.85を下回る組成もある。一律の分類には留保が必要である。"
+    },
+    "2": {
+      "value": "かんらん石",
+      "verdict": "重鉱物に該当",
+      "reason": "Mg端成分のフォルステライトでも密度約3.275g/cm³であり、境界より高い。"
+    },
+    "3": {
+      "value": "石英",
+      "verdict": "明確に軽鉱物",
+      "reason": "石英の代表密度約2.65g/cm³は境界より低い。"
+    },
+    "4": {
+      "value": "普通輝石",
+      "verdict": "重鉱物に該当",
+      "reason": "普通輝石の報告密度3.19〜3.56g/cm³は境界より高い。"
+    },
+    "5": {
+      "value": "磁鉄鉱",
+      "verdict": "重鉱物に該当",
+      "reason": "磁鉄鉱の代表密度約5.175g/cm³は境界より高い。"
+    }
+  },
+  "figures": "図なし。原典頁画像で選択方向、観察条件、鉱物名と全5肢を確認。",
+  "ambiguity": "原典は黒雲母の組成又は代表密度を指定しない。MSA Handbookの黒雲母密度2.7〜3.3g/cm³は設問境界2.85をまたぐため、1を一律に重鉱物とする根拠が不足する。独立選択は最も明確に境界未満の石英3。選択肢の単一性に関する疑義を残し部分校正とする。",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_009.png"
+  ],
+  "question_id": "H25-REG-APPLIED-22",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "c89b085f4068d6b86b431d8ee08a8acda4ba3e7da5adfeb4e060fa6e7c80091f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

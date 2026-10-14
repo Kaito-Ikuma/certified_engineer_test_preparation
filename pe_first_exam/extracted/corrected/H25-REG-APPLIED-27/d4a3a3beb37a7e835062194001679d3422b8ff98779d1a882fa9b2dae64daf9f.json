@@ -1,0 +1,45 @@
+{
+  "stem": "U-Pb年代測定に適する鉱物を、Uの取り込み・初生Pb・閉鎖性から選ぶ。",
+  "conditions": {
+    "方向": "U-Pbに最も適した鉱物。",
+    "対象": "同位体の標準・分別又は年代。番号・核種・旧標準名称を原典画像で確認。"
+  },
+  "choices": {
+    "1": {
+      "value": "黒雲母",
+      "verdict": "代表試料ではない",
+      "reason": "Kを含む雲母でK-ArやRb-Srの対象になり得るが、提示中のU-Pbの代表試料ではない。"
+    },
+    "2": {
+      "value": "ジルコン",
+      "verdict": "最適",
+      "reason": "ZrSiO4中でUがZr位置へ取り込まれ、通常初生Pbは少ない。抵抗性が高くU-Pb年代に適する。継承核・Pb損失・共通Pbは別途検査する。"
+    },
+    "3": {
+      "value": "白雲母",
+      "verdict": "代表試料ではない",
+      "reason": "Kを含む雲母でK-ArやRb-Sr等に利用するが、U-Pbの代表的選択肢はジルコンである。"
+    },
+    "4": {
+      "value": "海緑石",
+      "verdict": "代表試料ではない",
+      "reason": "Kを含む堆積性鉱物でK-Ar等の候補になり得る。生成・変質条件を要し、提示中のU-Pb最適鉱物ではない。"
+    },
+    "5": {
+      "value": "カリ長石",
+      "verdict": "代表試料ではない",
+      "reason": "Kに富む長石で初生Pbを含み得る。Uを集めるジルコンのようなU-Pbの代表鉱物ではない。"
+    }
+  },
+  "figures": "問題幹・5肢・否定・質量数・δ記号・標準名称・年度番号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_010.png"
+  ],
+  "question_id": "H25-REG-APPLIED-27",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "644fe31a05f8fe564798093b2ea630112ccfeb581dba93e8960f3c0bf8e2b58d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

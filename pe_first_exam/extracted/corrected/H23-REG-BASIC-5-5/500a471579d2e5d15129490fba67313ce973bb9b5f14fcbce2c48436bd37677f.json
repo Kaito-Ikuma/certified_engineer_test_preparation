@@ -1,0 +1,45 @@
+{
+  "stem": "人物と業績：放射能とラジウムを区別。",
+  "conditions": {
+    "時点": "平成23年度に指定された資料・制度。",
+    "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "Galileo/天体望遠鏡で観測",
+      "verdict": "条件内で適切",
+      "reason": "望遠鏡の発明者そのものとする記述ではなく観測への利用。"
+    },
+    "2": {
+      "value": "Huygens/振子時計",
+      "verdict": "条件内で適切",
+      "reason": "振子を時間標準にする時計。"
+    },
+    "3": {
+      "value": "Arkwright/水力紡績機",
+      "verdict": "条件内で適切",
+      "reason": "産業革命の水力紡績機。"
+    },
+    "4": {
+      "value": "Becquerel/ラジウム発見",
+      "verdict": "不適切・選択対象",
+      "reason": "放射能の発見とラジウム発見を取り違える。"
+    },
+    "5": {
+      "value": "Eastman/写真用フィルム乾板",
+      "verdict": "条件内で適切",
+      "reason": "乾板と柔軟な写真フィルムの開発・商業化という原典の代表表現。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "原典は「アントワーヌ・ベクレル」と記載し人名が曖昧。放射能発見者Henri Becquerelとの対応を区別。Eastmanの「フィルム乾板」も乾板とロールフィルムをまとめた表現であり、原典を厳密な発明年表に一般化しない。",
+  "evidence": [
+    "extracted/pages/H23/basic/page_017.png"
+  ],
+  "question_id": "H23-REG-BASIC-5-5",
+  "source_file": "sources/H23/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+  "raw_text_sha256": "f02f5bc55fe06b1d07bae6367b409810092c3bfe41e8e9759599c1c9cf6796e7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

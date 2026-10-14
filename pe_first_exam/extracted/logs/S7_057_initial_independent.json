@@ -1,0 +1,220 @@
+{
+  "scope": "保存原典55画像と本文を確認して初回解を記録。選択情報に公式メタデータが含まれるため盲検とは呼ばない。",
+  "records": [
+    {
+      "question_id": "H23-REG-BASIC-3-2",
+      "independent_answer": "1",
+      "reason": "Inglis楕円孔端：(0,(1+2a/b)σ,0)、a>b。"
+    },
+    {
+      "question_id": "H23-REG-BASIC-3-4",
+      "independent_answer": "3",
+      "reason": "固有値1.875<π<4.730。"
+    },
+    {
+      "question_id": "H24-REG-BASIC-3-5",
+      "independent_answer": "4",
+      "reason": "剛性比3:1、反力とも負。"
+    },
+    {
+      "question_id": "H25-REG-BASIC-3-1",
+      "independent_answer": "5",
+      "reason": "三次元Hooke則εx=(σx−ν(σy+σz))/E。"
+    },
+    {
+      "question_id": "H25-REG-BASIC-3-2",
+      "independent_answer": "3",
+      "reason": "断面二次モーメントbh³/12、c最小。"
+    },
+    {
+      "question_id": "H25-REG-BASIC-3-5",
+      "independent_answer": "2",
+      "reason": "P=EAδ/l、U=EAδ²/(2l)。"
+    },
+    {
+      "question_id": "H26-REG-BASIC-3-5",
+      "independent_answer": "2",
+      "reason": "並列2k、直列k/2、両壁2k。"
+    },
+    {
+      "question_id": "H26-REG-BASIC-3-6",
+      "independent_answer": "2",
+      "reason": "左右剛性比2:1。"
+    },
+    {
+      "question_id": "H27-REG-BASIC-3-2",
+      "independent_answer": "2",
+      "reason": "勾配(2−2xy,−x²)=(4,−1)。"
+    },
+    {
+      "question_id": "H27-REG-BASIC-3-4",
+      "independent_answer": "3",
+      "reason": "垂直軸定理Iz=Ix+Iy。"
+    },
+    {
+      "question_id": "H27-REG-BASIC-3-5",
+      "independent_answer": "3",
+      "reason": "左右剛性合計2S(E1+E2)/l。"
+    },
+    {
+      "question_id": "H27-REG-BASIC-3-6",
+      "independent_answer": "4",
+      "reason": "撓み比からa³/d³=8。"
+    },
+    {
+      "question_id": "H28-REG-BASIC-3-5",
+      "independent_answer": "1",
+      "reason": "片持ち<単純支持<両端固定。"
+    },
+    {
+      "question_id": "H28-REG-BASIC-3-6",
+      "independent_answer": "4",
+      "reason": "共通歪みからσA/σB=EA/EB。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-3-4",
+      "independent_answer": "2",
+      "reason": "網目Ra=r,Rb=3r/2,Rc=7r/5。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-3-5",
+      "independent_answer": "3",
+      "reason": "水平力釣合と伸びからδ1/δ2=A2/A1。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-3-6",
+      "independent_answer": "5",
+      "reason": "曲げ方向の高さ3乗、c最小。"
+    },
+    {
+      "question_id": "H30-REG-BASIC-3-5",
+      "independent_answer": "3",
+      "reason": "Π二階微分k>0、最小を最大とする肢が誤。"
+    },
+    {
+      "question_id": "H30-REG-BASIC-3-6",
+      "independent_answer": "3",
+      "reason": "単位換算PL/EA=.4mm。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-3-3",
+      "independent_answer": "1",
+      "reason": "線形抵抗終端mg/k。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-3-4",
+      "independent_answer": "4",
+      "reason": "体積歪みの係数1−2ν=0。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-3-5",
+      "independent_answer": "4",
+      "reason": "U=P²l/(2EA)。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-3-6",
+      "independent_answer": "3",
+      "reason": "物理振子I=Ml²/3、T=2π√(2l/3g)。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-3-2",
+      "independent_answer": "2",
+      "reason": "法線(1,2,−1)、射影A−2n。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-3-5",
+      "independent_answer": "4",
+      "reason": "通常の熱伝導の固有モードは減衰する。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-3-6",
+      "independent_answer": "2",
+      "reason": "楕円端の自由表面と応力集中。"
+    },
+    {
+      "question_id": "R02-REG-BASIC-3-5",
+      "independent_answer": "1",
+      "reason": "重力は平衡位置のみ変更しω=√k/m共通。"
+    },
+    {
+      "question_id": "R02-REG-BASIC-3-6",
+      "independent_answer": "5",
+      "reason": "連続式とBernoulliで平方比。"
+    },
+    {
+      "question_id": "R03-REG-BASIC-3-4",
+      "independent_answer": "3",
+      "reason": "−EαΔT=−4MPa。"
+    },
+    {
+      "question_id": "R03-REG-BASIC-3-5",
+      "independent_answer": "4",
+      "reason": "自然長からの伸びmg/k+aを二乗。"
+    },
+    {
+      "question_id": "R03-REG-BASIC-3-6",
+      "independent_answer": "5",
+      "reason": "面積一次モーメントから4a/(3π)。"
+    },
+    {
+      "question_id": "R04-REG-BASIC-3-4",
+      "independent_answer": "2",
+      "reason": "水平力釣合N1/N2=1/√3。"
+    },
+    {
+      "question_id": "R04-REG-BASIC-3-5",
+      "independent_answer": "3",
+      "reason": "トルクIΔω/T。"
+    },
+    {
+      "question_id": "R04-REG-BASIC-3-6",
+      "independent_answer": "5",
+      "reason": "有効剛性2T/L、質量長さ倍で周波数半分。"
+    },
+    {
+      "question_id": "R05-REG-BASIC-3-4",
+      "independent_answer": "5",
+      "reason": "PL/EA=.20mm。"
+    },
+    {
+      "question_id": "R05-REG-BASIC-3-5",
+      "independent_answer": "2",
+      "reason": "出力トルクの1/n、反射慣性の比だけ使わない。"
+    },
+    {
+      "question_id": "R05-REG-BASIC-3-6",
+      "independent_answer": "3",
+      "reason": "梯子7r/5、格子3r/2、菱形r。"
+    },
+    {
+      "question_id": "R06-REG-BASIC-3-4",
+      "independent_answer": "3",
+      "reason": "Euler有効長.699L,L,2L。"
+    },
+    {
+      "question_id": "R06-REG-BASIC-3-5",
+      "independent_answer": "3",
+      "reason": "cのみ直列k/2。"
+    },
+    {
+      "question_id": "R06-REG-BASIC-3-6",
+      "independent_answer": "3",
+      "reason": "中央と上下同電位、2Ω三枝並列。"
+    },
+    {
+      "question_id": "R07-REG-BASIC-3-4",
+      "independent_answer": "2",
+      "reason": "左右剛性比4:1、負反力。"
+    },
+    {
+      "question_id": "R07-REG-BASIC-3-5",
+      "independent_answer": "5",
+      "reason": "正四面体頂点R/2、頂点対辺中点5R/8、対辺中点3R/4。"
+    },
+    {
+      "question_id": "R07-REG-BASIC-3-6",
+      "independent_answer": "1",
+      "reason": "起電力BLv、制動B²L²v/R、Mgと釣合。"
+    }
+  ]
+}

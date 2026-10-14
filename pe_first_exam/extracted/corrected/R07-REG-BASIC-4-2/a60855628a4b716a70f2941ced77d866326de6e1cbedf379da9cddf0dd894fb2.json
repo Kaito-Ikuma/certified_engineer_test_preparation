@@ -1,0 +1,48 @@
+{
+  "stem": "希薄水溶液での酸性度を四組比較。",
+  "conditions": {
+    "条件": "希薄水溶液。",
+    "ア": "HF>HClの主張。",
+    "イ": "CF3COOH>CH3COOH。",
+    "ウ": "エタノール<酢酸。",
+    "エ": "フェノール<エタノールの主張。"
+  },
+  "choices": {
+    "1": {
+      "value": "ア イ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 イ ウ と異なる。"
+    },
+    "2": {
+      "value": "ア ウ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 イ ウ と異なる。"
+    },
+    "3": {
+      "value": "イ ウ",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "イ エ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 イ ウ と異なる。"
+    },
+    "5": {
+      "value": "ウ エ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 イ ウ と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/basic/page_013.png"
+  ],
+  "question_id": "R07-REG-BASIC-4-2",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "13",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "0696e689f06c1a379b38f4fcd150344863a0f526530ba0cc3029a73ba0aedd5f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

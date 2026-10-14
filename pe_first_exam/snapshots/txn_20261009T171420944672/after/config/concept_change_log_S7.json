@@ -1,0 +1,32 @@
+[
+  {
+    "time": "2026-10-08T19:33:15+09:00",
+    "change": "Five physics-mechanics concepts added; existing IDs and taxonomy assignments retained",
+    "added_ids": [
+      "newton_dynamics",
+      "mechanical_energy",
+      "buoyancy",
+      "bernoulli",
+      "impact"
+    ],
+    "reason": "Source review found buoyancy, energy, Newton dynamics and impact wrongly tagged as circuits/orbits or left unresolved; Pitot principle also needs explicit concept"
+  },
+  {
+    "time": "2026-10-09T17:14:20+09:00",
+    "added_ids": [
+      "cpd",
+      "competency"
+    ],
+    "change": "Two aptitude concepts added during S7_002; retrospectively logged",
+    "reason": "Source-image reviewed CPD guidelines and competency questions require distinct concepts within existing apt_0"
+  },
+  {
+    "time": "2026-10-09T17:14:20+09:00",
+    "added_ids": [
+      "gnss",
+      "geomagnetic_declination"
+    ],
+    "change": "Two narrowly scoped geophysical concepts added during S7_004",
+    "reason": "GNSS aggregate-name and historical declination questions are outside exploration-method concepts; existing taxonomy unchanged"
+  }
+]

@@ -1,0 +1,45 @@
+{
+  "stem": "気液の同質量比較からLNGの体積比。",
+  "conditions": {
+    "気体": "0℃1気圧、純CH4の理想気体。",
+    "液体": "密度425kg/m³一定とする原典モデル。"
+  },
+  "choices": {
+    "1": {
+      "value": "1/400",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "1/600",
+      "verdict": "適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "3": {
+      "value": "1/800",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "1/1000",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "5": {
+      "value": "1/1200",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/basic/page_016.png"
+  ],
+  "question_id": "H23-REG-BASIC-5-3",
+  "source_file": "sources/H23/basic.pdf",
+  "source_page": "16",
+  "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+  "raw_text_sha256": "e4f4c2833825359705cee994d9a18df61f1d7aea8012956e7521e3f39a5edaf3",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

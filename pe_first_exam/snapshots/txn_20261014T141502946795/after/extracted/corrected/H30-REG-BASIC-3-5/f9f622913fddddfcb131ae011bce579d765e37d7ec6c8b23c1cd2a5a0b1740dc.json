@@ -1,0 +1,46 @@
+{
+  "stem": "安定平衡のポテンシャルは最小。",
+  "conditions": {
+    "系": "鉛直ばねk、質点m、重力g。",
+    "座標": "自然長位置から下向きをu>0。",
+    "問": "不適切な記述を一つ。"
+  },
+  "choices": {
+    "1": {
+      "value": "ばねポテンシャルはku²/2",
+      "verdict": "条件内で適切",
+      "reason": "自然長からの伸びで正しい。"
+    },
+    "2": {
+      "value": "重力ポテンシャルは−mgu",
+      "verdict": "条件内で適切",
+      "reason": "下向き座標で重力ポテンシャルは負。"
+    },
+    "3": {
+      "value": "平衡で全ポテンシャル最大",
+      "verdict": "不適切・選択対象",
+      "reason": "二階微分k>0なので最小であり、最大という主張が誤り。"
+    },
+    "4": {
+      "value": "平衡変位mg/k",
+      "verdict": "条件内で適切",
+      "reason": "停留条件ku−mg=0。"
+    },
+    "5": {
+      "value": "エネルギーの極値が保守系FEMの基礎",
+      "verdict": "条件内で適切",
+      "reason": "保守系等の条件下のエネルギー停留原理に対応。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/basic/page_014.png"
+  ],
+  "question_id": "H30-REG-BASIC-3-5",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "d596507938a4ef906c28581cf6271e1149e0b7297695ebeccc2366dbe0c918b1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

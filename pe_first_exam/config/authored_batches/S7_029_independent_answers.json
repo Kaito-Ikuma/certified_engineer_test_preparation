@@ -1,0 +1,97 @@
+{
+  "recorded_at": "2026-10-11T23:19:09.819280+09:00",
+  "official_consulted": false,
+  "source_images_checked": 15,
+  "questions": [
+    {
+      "question_id": "H23-REG-APPLIED-25",
+      "independent_answer": "5",
+      "reason": "蛇行に急勾配・変動大・粗粒負荷を割り当てるのは網状との混同。デルタ海退限定と逆級化の全称は要限定。"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-35",
+      "independent_answer": "3",
+      "reason": "XRFは元素組成であり内部構造の直接観察ではない。粘土懸濁伝導度の条件要確認。"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-29",
+      "independent_answer": "3",
+      "reason": "マイロナイトは剪断変形岩。粘板岩は堆積原岩の低度変成なので関係がある。"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-34",
+      "independent_answer": "3",
+      "reason": "花粉は海成にも運ばれ保存される。淡水のみは誤り。鍵層と火山灰最確の一般化は要限定。"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-25",
+      "independent_answer": "5",
+      "reason": "蛇行に網状の一般的特徴を割り当てる。"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-25",
+      "independent_answer": "2",
+      "reason": "ヘリンボーンは潮流など相反二方向であり蛇行の代表でない。"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-25",
+      "independent_answer": "5",
+      "reason": "火砕流は地形を反映し単純な長円とは限らず、降下堆積分布との混同。大規模/カルデラの一般化も要確認。"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-28",
+      "independent_answer": "2",
+      "reason": "未固結時の荷重・液状化変形の火炎構造。"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-29",
+      "independent_answer": "1",
+      "reason": "羽毛状は節理破断面の伝播であり層の上下指標でない。"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-31",
+      "independent_answer": "4",
+      "reason": "テフラは火山砕屑物で溶岩と分ける。他は局地/水域/外観/年代を不当に除外。"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-30",
+      "independent_answer": "2",
+      "reason": "波の反復・流向反転で複雑な構造。非地震3例と保存一般論は一次資料要確認。"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-28",
+      "independent_answer": "1",
+      "reason": "潮汐の相反流でヘリンボーン。蛇行河川主相ではない。"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-30",
+      "independent_answer": "3",
+      "reason": "蛇行と網状の特徴を混同。"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-31",
+      "independent_answer": "2",
+      "reason": "ハンモックは波浪の振動/複合流で一方向の代表でない。"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-30",
+      "independent_answer": "3",
+      "reason": "火炎構造が未固結変形。"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-31",
+      "independent_answer": "4",
+      "reason": "組合せは堆積相アソシエーション、シーケンスとは区別。"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-27",
+      "independent_answer": "3",
+      "reason": "ヘリンボーンは反転する潮流など。"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-28",
+      "independent_answer": "1",
+      "reason": "不整合面は侵食・非堆積期間後の面で下位堆積直後とは限らない。"
+    }
+  ]
+}

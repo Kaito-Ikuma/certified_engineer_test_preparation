@@ -1,0 +1,45 @@
+{
+  "stem": "活断層の平均変位速度による活動度と、地震規模・地域形態を区別する。",
+  "conditions": {
+    "判断方向": "最も不適切なもの。",
+    "原典照合": "全5肢、上下・平行直交・右左・時代・固結度と割合を画像照合。図なし。"
+  },
+  "choices": {
+    "1": {
+      "value": "最近の地質時代に反復活動し将来も推定される活断層。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "過去履歴と将来活動可能性の定義である。特定の発生日を意味しない。"
+    },
+    "2": {
+      "value": "Aは10m/千年以上、Bは1〜10、Cは1未満。",
+      "verdict": "不適切",
+      "reason": "地震本部の活動度Aは1以上10未満、Bは0.1以上1未満、Cは0.01以上0.1未満m/千年である。原典の区切りは一桁大きい。"
+    },
+    "3": {
+      "value": "東北は南北走向の逆断層が多い。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "圧縮場と関係する地域的傾向であり、東北の全断層がこの姿勢・型に限定される意味ではない。"
+    },
+    "4": {
+      "value": "地震に伴い地表に現れる地震断層。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "地表変位の定義である。地下の震源断層全体と一対一に一致するとは限らない。"
+    },
+    "5": {
+      "value": "規模が大きいほど断層長・変位量が大きい傾向。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "大きな破壊面積やすべり量と規模の関係による統計的傾向である。個別地震の長さ・変位が規模だけで厳密決定されるわけではない。"
+    }
+  },
+  "figures": "設問固有図なし。原典の用語・否定・全5肢を確認。剪断の方位条件を推測で補わない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_010.png"
+  ],
+  "question_id": "R05-REG-APPLIED-28",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "85be1069b27f3dc660eccbaa16b5201f5491cea9dcda9d0879f932433d5fe1b8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

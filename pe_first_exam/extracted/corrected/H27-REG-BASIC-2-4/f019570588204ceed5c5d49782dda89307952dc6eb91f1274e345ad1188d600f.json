@@ -1,0 +1,45 @@
+{
+  "stem": "10進表記で2 TBの記憶容量を、問題が定義する2進表記のTBへ換算する。",
+  "conditions": {
+    "容量": "2×10^12 B",
+    "単位": "設問は10進1 TB=10^12 B、2進1 TB=2^40 Bと定義する。現行の明確な名称では後者は1 TiBである。"
+  },
+  "choices": {
+    "1": {
+      "value": "1.8 TB",
+      "verdict": "適切な解答候補",
+      "reason": "2×10^12/2^40≈1.819を小数1桁へ概算した値に一致する。"
+    },
+    "2": {
+      "value": "2.0 TB",
+      "verdict": "不適切な解答候補",
+      "reason": "2.0 TBは2×10^12/2^40≈1.819の概算と合わない。単位当たりの容量が大きくなるので数値は2より小さくなる。"
+    },
+    "3": {
+      "value": "2.1 TB",
+      "verdict": "不適切な解答候補",
+      "reason": "2.1 TBは2×10^12/2^40≈1.819の概算と合わない。単位当たりの容量が大きくなるので数値は2より小さくなる。"
+    },
+    "4": {
+      "value": "2.2 TB",
+      "verdict": "不適切な解答候補",
+      "reason": "2.2 TBは2×10^12/2^40≈1.819の概算と合わない。単位当たりの容量が大きくなるので数値は2より小さくなる。"
+    },
+    "5": {
+      "value": "2.3 TB",
+      "verdict": "不適切な解答候補",
+      "reason": "2.3 TBは2×10^12/2^40≈1.819の概算と合わない。単位当たりの容量が大きくなるので数値は2より小さくなる。"
+    }
+  },
+  "figures": "図なし。5肢の値または記述を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/basic/page_006.png"
+  ],
+  "question_id": "H27-REG-BASIC-2-4",
+  "source_file": "sources/H27/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+  "raw_text_sha256": "e3657c8affce8b530998b44de53c815130ecdee000c59428ec7d4530d3f2c98c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

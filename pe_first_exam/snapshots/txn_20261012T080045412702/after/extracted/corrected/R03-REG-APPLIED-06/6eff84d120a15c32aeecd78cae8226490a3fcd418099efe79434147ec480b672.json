@@ -1,0 +1,45 @@
+{
+  "stem": "熱電現象の名称から光学現象を区別する。",
+  "conditions": {
+    "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+    "成立条件": "最も不適切な用語を選ぶ。カー効果には電気光学と磁気光学の用法があるが、いずれもこの熱電効果の名称ではない。"
+  },
+  "choices": {
+    "1": {
+      "value": "ゼーベック効果",
+      "verdict": "適切",
+      "reason": "温度差により起電力が生じる熱電現象である。"
+    },
+    "2": {
+      "value": "カー効果",
+      "verdict": "不適切",
+      "reason": "光の屈折・偏光に関わる名称であり、温度差と電流の相互作用を表す熱電効果ではない。"
+    },
+    "3": {
+      "value": "ペルティエ効果",
+      "verdict": "適切",
+      "reason": "異種材料接合部を流れる電流に伴う吸放熱である。"
+    },
+    "4": {
+      "value": "トムソン効果",
+      "verdict": "適切",
+      "reason": "温度勾配を持つ材料内の電流に伴う可逆的な吸放熱である。"
+    },
+    "5": {
+      "value": "熱起電力",
+      "verdict": "適切",
+      "reason": "温度差による起電力そのものを表す用語である。"
+    }
+  },
+  "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_003.png"
+  ],
+  "question_id": "R03-REG-APPLIED-06",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "3bf4fd623d33036b1f914bd7433cca101ad8d78bdef40be482a66fadf61428a1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

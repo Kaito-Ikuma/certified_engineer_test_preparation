@@ -1,0 +1,46 @@
+{
+  "stem": "独立正規寸法の和と差の分布を、平均と分散に分けて表す。",
+  "conditions": {
+    "判断方向": "最も適切な記述又は組合せを選ぶ",
+    "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+    "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+  },
+  "choices": {
+    "1": {
+      "value": "和は平均和/分散和、すき間も平均和/分散和",
+      "verdict": "不適切",
+      "reason": "接続長さは合うが、すき間の平均は内径から外径を引く。"
+    },
+    "2": {
+      "value": "和は平均和/分散和、すき間は平均差/分散差",
+      "verdict": "不適切",
+      "reason": "すき間の平均は合うが、差の分散を引いてはいけない。"
+    },
+    "3": {
+      "value": "和は平均和/分散和、すき間は平均差/分散和",
+      "verdict": "適切",
+      "reason": "和の平均はμA1+μA2、すき間の平均はμB2-μB1で、どちらも独立成分の分散を足す。"
+    },
+    "4": {
+      "value": "和は平均和/分散差、すき間は平均差/分散差",
+      "verdict": "不適切",
+      "reason": "独立な和でも差でも分散差にはならない。"
+    },
+    "5": {
+      "value": "和は平均和/分散差、すき間は平均和/分散差",
+      "verdict": "不適切",
+      "reason": "接続長さの分散と、すき間の平均・分散の両方が違う。"
+    }
+  },
+  "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_005.png"
+  ],
+  "question_id": "R06-REG-BASIC-1-6",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "0a407d27034306bffdece30fcade741e7dc5a6d5390e8881f29733c7228f2852",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

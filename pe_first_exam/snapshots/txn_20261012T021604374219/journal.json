@@ -1,0 +1,22 @@
+{
+  "status": "committed",
+  "time": "2026-10-12T02:16:04+09:00",
+  "paths": [
+    "generated/questions/aptitude/03_compliance_accountability.tex",
+    "generated/questions/aptitude/06_research_information_ethics.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/aptitude/03_compliance_accountability.tex": true,
+    "generated/questions/aptitude/06_research_information_ethics.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/aptitude/03_compliance_accountability.tex": "bcca8cc080d95f231061d2520a7ed9ea4c257d043d24599608024e19c85885b0",
+    "generated/questions/aptitude/06_research_information_ethics.tex": "15658f8541c03e22342894bdcfed95a6acb7fa4d6d8ed1e7ec96f04b87e2a5c8",
+    "generated/audit_summary.tex": "a61354b1aaea7f518b773c6aaf34dbd570cbc360c8f3cb51e251ae7be7072047",
+    "generated/frequency_tables.tex": "38f5607d6c74ae63db5775498681396879c74cbc1e9234b507e6ae7e6bf652bb"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "偏光顕微鏡による造岩鉱物の識別の記述から、最も不適切なものを選ぶ。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "観察": "通常の薄片・適切な切断面。"
+  },
+  "choices": {
+    "1": {
+      "value": "黒雲母は強い多色性を示し劈開線に平行な直消光をする",
+      "verdict": "通常の特徴として正しい",
+      "reason": "黒雲母は吸収異方性が強く、底面劈開線を消光方向の目安にできる。晶系の厳密な光学方位では小角のずれがあり得る。"
+    },
+    "2": {
+      "value": "斜方輝石は直消光、普通輝石は斜消光する",
+      "verdict": "通常の特徴として正しい",
+      "reason": "識別の基本特徴に合う。切断面による見掛け角の違いは確認が必要である。"
+    },
+    "3": {
+      "value": "普通角閃石は高屈折率で強い多色性を示す",
+      "verdict": "通常の特徴として正しい",
+      "reason": "普通角閃石の屈折率・多色性を併用する特徴に合う。"
+    },
+    "4": {
+      "value": "石英は顕著な劈開を持ち、波動消光することがある",
+      "verdict": "前半が誤り",
+      "reason": "石英の劈開は通常顕著でない。波動消光し得るという後半だけは正しい。"
+    },
+    "5": {
+      "value": "かんらん石は直消光し劈開に乏しい",
+      "verdict": "通常の特徴として正しい",
+      "reason": "かんらん石の通常の特徴に合う。劈開が絶対に存在しないという意味ではない。"
+    }
+  },
+  "figures": "図なし。原典頁画像で選択方向、観察条件、鉱物名と全5肢を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_009.png"
+  ],
+  "question_id": "R03-REG-APPLIED-25",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "76353995bc9aa4dc25371552afd7af0ed856f5eee219523fd996cc2845bb06a3",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

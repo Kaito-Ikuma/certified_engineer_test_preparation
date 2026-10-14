@@ -1,0 +1,46 @@
+{
+  "stem": "秘密情報のアクセス、相互確認、表示、配置、暗号・閲覧制限、紙削減の6記述で不適切な数を求める。",
+  "conditions": {
+    "方向": "不適切な記述の数。候補0/1/2/3/4。",
+    "構成": "ア〜カの6項目。",
+    "限定": "オは外部では閲覧できないように設定する対策。暗号自体の万能性や外部送信の許可ではない。"
+  },
+  "choices": {
+    "1": {
+      "value": "0項目",
+      "verdict": "選択対象ではない",
+      "reason": "単独作業を可能な限り推奨するイが不適切なので0ではない。"
+    },
+    "2": {
+      "value": "1項目",
+      "verdict": "選択対象",
+      "reason": "イだけが不適切であり1項目となる。"
+    },
+    "3": {
+      "value": "2項目",
+      "verdict": "選択対象ではない",
+      "reason": "イに加えて他の適切な対策も否定すると数え過ぎとなる。"
+    },
+    "4": {
+      "value": "3項目",
+      "verdict": "選択対象ではない",
+      "reason": "アクセス権の設定・表示・配置・適切な閲覧制限・紙削減の全てを危険低減策として区別すれば3ではない。"
+    },
+    "5": {
+      "value": "4項目",
+      "verdict": "選択対象ではない",
+      "reason": "適切な対策まで不適切に数えている。秘密保護と一人作業の推奨を混同しない。"
+    }
+  },
+  "figures": "原典の設問・全5肢・否定・時点を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/aptitude/page_010.png"
+  ],
+  "question_id": "R01-REG-APT-09",
+  "source_file": "sources/R01/aptitude.pdf",
+  "source_page": "10",
+  "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+  "raw_text_sha256": "0faa1ac2b8581ad6a56aab7e259194a0ca0b780ee4bb731874a2aff8f45154df",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

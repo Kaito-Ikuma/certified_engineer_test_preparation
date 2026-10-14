@@ -1,0 +1,45 @@
+{
+  "stem": "電気・電磁法の比抵抗単位と測定配置を比較する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "抵抗率ρ=RA/LなのでΩmである。電極電流と誘導電流を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "直流又は低周波交替直流の電場から比抵抗分布を推定",
+      "verdict": "適切",
+      "reason": "極性切替を含む低周波電流と電位差の測定を地盤モデルへ逆解析する。"
+    },
+    "2": {
+      "value": "電磁検層はコイル誘導、低比抵抗層に適する",
+      "verdict": "条件付きで適切",
+      "reason": "導電率が高い地層は誘導二次場を生みやすい。ただし誘導数・装置校正・孔状態にも依存し全範囲で精度増大とはしない。"
+    },
+    "3": {
+      "value": "人工又は自然磁場変動から比抵抗分布を効率的に測る",
+      "verdict": "条件付きで適切",
+      "reason": "電磁誘導応答は電気物性へ関係する。効率と面積は方式・機器に依存する。"
+    },
+    "4": {
+      "value": "比抵抗の単位はΩ・m³",
+      "verdict": "不適切",
+      "reason": "抵抗率は電流密度と電場の比例係数でΩmである。体積の単位を掛けると次元が違う。"
+    },
+    "5": {
+      "value": "領域を囲む電極から二次元・三次元比抵抗tomography",
+      "verdict": "適切",
+      "reason": "多方向・多数電流配置の電位データを逆解析して比抵抗分布を推定する。覆い方により分解できる構造が変わる。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "低比抵抗層の誘導検層精度と迅速広域性は装置条件による。Ω・m³の原典上付き3を画像照合。",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_010.png"
+  ],
+  "question_id": "H26-REG-APPLIED-23",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "48ed4e2551131557909a6f6de3ed297f20e04ff9050ad6224214285eab3794a2",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

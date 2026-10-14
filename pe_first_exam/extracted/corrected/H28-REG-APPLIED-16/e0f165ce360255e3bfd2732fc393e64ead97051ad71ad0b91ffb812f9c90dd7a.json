@@ -1,0 +1,45 @@
+{
+  "stem": "成分の分離とNMRによる観測を区別する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "成分の分離とNMRによる観測を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "核磁気共鳴",
+      "verdict": "不適切",
+      "reason": "共鳴周波数・化学シフト等を観測して構造を分析する。通常の装置は混合物を成分別に回収する分離器ではない。"
+    },
+    "2": {
+      "value": "質量分析",
+      "verdict": "条件付き・解釈留保",
+      "reason": "イオンを質量電荷比で選別して測定する装置内の分離を含む。一方、元の中性混合物を大量に分取する手法とは異なる。"
+    },
+    "3": {
+      "value": "遠心分離",
+      "verdict": "通常の条件で適切",
+      "reason": "回転場で密度・大きさに応じた沈降速度差を利用する。"
+    },
+    "4": {
+      "value": "電気泳動",
+      "verdict": "通常の条件で適切",
+      "reason": "電荷と抵抗に依存する移動度差を利用して成分を分ける。"
+    },
+    "5": {
+      "value": "高速液体クロマトグラフィー",
+      "verdict": "通常の条件で適切",
+      "reason": "固定相と移動相への分配等により保持時間が異なる成分を分ける。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "質量分析でのイオン選別と、中性試料の調製・分取という分離の意味は同一でない。原典の広い成分分離の比較として公式のNMR選択を説明する。",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_006.png"
+  ],
+  "question_id": "H28-REG-APPLIED-16",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "a64eec3a20028edb92efd5ec8ad858146adaa89f4f76d51d09e682b526c2ce07",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

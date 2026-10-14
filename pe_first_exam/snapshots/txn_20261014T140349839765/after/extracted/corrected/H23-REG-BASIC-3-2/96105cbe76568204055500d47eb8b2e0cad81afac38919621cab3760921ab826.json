@@ -1,0 +1,46 @@
+{
+  "stem": "楕円孔端で自由表面と応力集中を併用。",
+  "conditions": {
+    "孔": "x方向半軸a、y方向半軸b、a>b。",
+    "荷重": "遠方y方向一様引張σ>0。",
+    "地点": "A=(a,0)、列順σx,σy,τxy。"
+  },
+  "choices": {
+    "1": {
+      "value": "(0,>3σ,0)",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "2": {
+      "value": "(>0,>3σ,0)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。"
+    },
+    "3": {
+      "value": "(0,>3σ,>0)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。"
+    },
+    "4": {
+      "value": "(0,<3σ,0)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。"
+    },
+    "5": {
+      "value": "(>0,<3σ,0)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "Inglis式は十分広い等方線形弾性板の理想化。有限幅・塑性・鋭い亀裂先端へそのまま数値を外挿しない。",
+  "evidence": [
+    "extracted/pages/H23/basic/page_009.png"
+  ],
+  "question_id": "H23-REG-BASIC-3-2",
+  "source_file": "sources/H23/basic.pdf",
+  "source_page": "9",
+  "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+  "raw_text_sha256": "240091ab0ce2a267173580cce5696508090ac935e1e2eca2eb2e56d4a6b656f3",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

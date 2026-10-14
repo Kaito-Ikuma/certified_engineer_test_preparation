@@ -1,0 +1,11 @@
+{
+  "question_id": "R06-REG-APT-12",
+  "initial_answer": "2",
+  "revised_answer": "3",
+  "initial_record_sha256": "db77f664734e6e8094ed042c8a836d9d312d9620a48681e6a26ac1e2a21f7be8",
+  "official_answer_consulted_before_revision": true,
+  "reason": "初回は図の新旧を誤判定した。JISC現行マーク画像を実際に表示し、原典左の横並びJISが現行であることを独立に照合した。したがってカは誤り。正項ア・イ・エ・オの4つ、選択肢3。公式に合わせて図を補うことはせず、初回記録を保持する。",
+  "primary_source": "https://www.jisc.go.jp/newjis/image/newJISmk.jpg",
+  "local_source": "extracted/reference_checks/S7_013/jisc_current_mark.jpg",
+  "primary_image_sha256": "44b97b16572ea68735144cd84711b3fa631bf970bedc7e98a5f5b34643fd0851"
+}

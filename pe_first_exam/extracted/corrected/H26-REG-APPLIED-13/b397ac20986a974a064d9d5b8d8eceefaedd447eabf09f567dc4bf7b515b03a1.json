@@ -1,0 +1,45 @@
+{
+  "stem": "鉛蓄電池の放電反応から、硫酸量と電解液量の両方を更新して濃度を求める。",
+  "conditions": {
+    "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+    "成立条件": "30質量%の電解液1000 g、100 A、965 s、F=96500 C/mol。使用後を放電と読み、全電荷が主反応へ使われ、外部との液交換や蒸発がないモデルを用いる。"
+  },
+  "choices": {
+    "1": {
+      "value": "11%",
+      "verdict": "不適切",
+      "reason": "電子1 molに対する硫酸消費量1 molと水生成量1 molを使った質量収支に合わない。"
+    },
+    "2": {
+      "value": "16%",
+      "verdict": "不適切",
+      "reason": "硫酸の減少と水の生成を合わせた最終質量920 gに対する202 gの比ではない。"
+    },
+    "3": {
+      "value": "20%",
+      "verdict": "不適切",
+      "reason": "202/1000を約20%とするのは電解液全質量を初期値のまま固定する誤りである。"
+    },
+    "4": {
+      "value": "22%",
+      "verdict": "適切",
+      "reason": "硫酸202 gを最終電解液920 gで割った約21.96%に最も近い。"
+    },
+    "5": {
+      "value": "25%",
+      "verdict": "不適切",
+      "reason": "反応による硫酸消費98 gを反映した最終比率より大きい。"
+    }
+  },
+  "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+  "ambiguity": "電流効率と外部の水損失を原典は明示しない。「使用後」を放電と解釈した主反応のみのモデルで公式4と一致する。充電や副反応を含む一般条件へ広げない。",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_005.png"
+  ],
+  "question_id": "H26-REG-APPLIED-13",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "24c2263ac306a498e7cc807e8ee091a7d30402cd57e153e04da3f4263bcdd06c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

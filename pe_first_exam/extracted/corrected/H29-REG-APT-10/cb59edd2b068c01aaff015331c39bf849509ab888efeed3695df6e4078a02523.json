@@ -1,0 +1,46 @@
+{
+  "stem": "特許、実用新案、意匠、著作権、営業秘密を広義の知的財産へ分類する。",
+  "conditions": {
+    "判断対象": "広義知的財産・産業財産権・引用・営業秘密を区別する。",
+    "原典照合": "15問の原典画像について問題幹、否定、表の列順、全5候補を確認。",
+    "法の時点": "出題時の制度を保持し、説明の取得基準日は2026-10-12とする。"
+  },
+  "choices": {
+    "1": {
+      "value": "正・正・正・正・正",
+      "verdict": "独立判断で適切",
+      "reason": "5対象はいずれも知的財産の保護体系に入る。"
+    },
+    "2": {
+      "value": "正・正・正・正・誤",
+      "verdict": "不適切",
+      "reason": "営業秘密も法律上保護される利益を含む広い定義に入る。"
+    },
+    "3": {
+      "value": "正・正・正・誤・正",
+      "verdict": "不適切",
+      "reason": "著作権は産業財産権ではないが知的財産である。"
+    },
+    "4": {
+      "value": "正・正・誤・正・正",
+      "verdict": "不適切",
+      "reason": "意匠権はデザインを保護する知的財産である。"
+    },
+    "5": {
+      "value": "正・誤・正・正・正",
+      "verdict": "不適切",
+      "reason": "実用新案権は考案を保護する知的財産である。"
+    }
+  },
+  "figures": "組合せ表の全5行を画像確認。原典の長文は独自要約へ変換し、正誤と選択肢の対応を保持する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/aptitude/page_010.png"
+  ],
+  "question_id": "H29-REG-APT-10",
+  "source_file": "sources/H29/aptitude.pdf",
+  "source_page": "10",
+  "source_sha256": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+  "raw_text_sha256": "0ee3c4191a0e3fa4f3871161a6251ad775349c76fb7f96e6b928874be2ac8010",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

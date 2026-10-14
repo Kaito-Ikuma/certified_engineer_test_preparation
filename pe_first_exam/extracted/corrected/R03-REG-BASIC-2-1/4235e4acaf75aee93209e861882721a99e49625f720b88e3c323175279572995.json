@@ -1,0 +1,45 @@
+{
+  "stem": "公開鍵暗号・証明書・署名の鍵の役割と無線の推奨を比較する。",
+  "conditions": {
+    "方向": "最も適切なもの。",
+    "時点": "R03年度。現在の推奨を出題当時へ無条件に転用しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "公開鍵で暗号化し秘密鍵で復号。",
+      "verdict": "適切",
+      "reason": "公開鍵暗号で受信者へ秘匿する基本の鍵の向きである。実用通信では鍵確立と共通鍵暗号を組み合わせる場合もある。"
+    },
+    "2": {
+      "value": "CAはユーザと秘密鍵を結び付ける。",
+      "verdict": "不適切",
+      "reason": "証明書が公開鍵と主体の対応を結び付ける。秘密鍵を第三者へ公開・配付して所有者を証明する仕組みではない。"
+    },
+    "3": {
+      "value": "スマートフォン感染の報告はない。",
+      "verdict": "不適切",
+      "reason": "不正アプリ・端末脆弱性等に対する対策を不要にはできない。報告がないという原典の前提も保持できない。"
+    },
+    "4": {
+      "value": "公開鍵で署名生成し秘密鍵で検証。",
+      "verdict": "不適切",
+      "reason": "逆である。秘密鍵で生成し対応公開鍵で検証する。検証者に秘密鍵を配らない。"
+    },
+    "5": {
+      "value": "現在の無線LANではWEPを推奨。",
+      "verdict": "不適切",
+      "reason": "WEPは既知の弱い無線暗号であり出題時の安全な推奨としない。現在でもWEPを安全と教えない。"
+    }
+  },
+  "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/basic/page_006.png"
+  ],
+  "question_id": "R03-REG-BASIC-2-1",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "ef311edcd7957d0c34692c27e57d1e5e8994876b4dcd1a33431cf9d1010d8847",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

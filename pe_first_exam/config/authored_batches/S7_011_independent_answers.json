@@ -1,0 +1,245 @@
+[
+  {
+    "question_id": "H23-REG-APPLIED-08",
+    "independent_answer": "3",
+    "reason": "CV²/2=0.09 J",
+    "source_images_viewed": [
+      "extracted/pages/H23/17_applied_science/page_003.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H24-REG-APPLIED-04",
+    "independent_answer": "3",
+    "reason": "(1/10+1/5)⁻¹=10/3 Ω",
+    "source_images_viewed": [
+      "extracted/pages/H24/17_applied_science/page_001.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H24-REG-APPLIED-06",
+    "independent_answer": "3",
+    "reason": "kq1q2/r²=0.30 N",
+    "source_images_viewed": [
+      "extracted/pages/H24/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H25-REG-APPLIED-03",
+    "independent_answer": "2",
+    "reason": "ガウス法則、2EA=|σ|A/ε0",
+    "source_images_viewed": [
+      "extracted/pages/H25/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H26-REG-APPLIED-02",
+    "independent_answer": "3",
+    "reason": "並列は10/3 Ω",
+    "source_images_viewed": [
+      "extracted/pages/H26/17_applied_science/page_001.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H26-REG-APPLIED-04",
+    "independent_answer": "4",
+    "reason": "外力80 J=qΔV;ΔV=−40 V;|E|=400 V/m",
+    "source_images_viewed": [
+      "extracted/pages/H26/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H27-REG-APPLIED-02",
+    "independent_answer": "3",
+    "reason": "N|ΔΦ|/Δt=1 V",
+    "source_images_viewed": [
+      "extracted/pages/H27/17_applied_science/page_001.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H28-REG-APPLIED-03",
+    "independent_answer": "3",
+    "reason": "div B=0は磁気単極子の不在",
+    "source_images_viewed": [
+      "extracted/pages/H28/17_applied_science/page_001.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H28-REG-APPLIED-04",
+    "independent_answer": "2",
+    "reason": "誘電分極と強誘電性を区別",
+    "source_images_viewed": [
+      "extracted/pages/H28/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H29-REG-APPLIED-02",
+    "independent_answer": "1",
+    "reason": "C=εA/dはεとともに増加",
+    "source_images_viewed": [
+      "extracted/pages/H29/17_applied_science/page_001.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H29-REG-APPLIED-03",
+    "independent_answer": "3",
+    "reason": "1/(2π√LC)=15.915 kHz",
+    "source_images_viewed": [
+      "extracted/pages/H29/17_applied_science/page_001.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H30-REG-APPLIED-03",
+    "independent_answer": "3",
+    "reason": "R=ρL/A、断面積へ反比例",
+    "source_images_viewed": [
+      "extracted/pages/H30/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H30-REG-APPLIED-04",
+    "independent_answer": "3",
+    "reason": "定常電流素片の磁場はビオ・サバール",
+    "source_images_viewed": [
+      "extracted/pages/H30/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R01-REG-APPLIED-03",
+    "independent_answer": "5",
+    "reason": "電荷／負／垂直／C/s",
+    "source_images_viewed": [
+      "extracted/pages/R01/17_applied_science/page_001.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R01-REG-APPLIED-04",
+    "independent_answer": "3",
+    "reason": "誘導は磁束の変化、原典③は電束",
+    "source_images_viewed": [
+      "extracted/pages/R01/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R01-RET-APPLIED-06",
+    "independent_answer": "4",
+    "reason": "抵抗率は一般に温度二乗に比例しない",
+    "source_images_viewed": [
+      "extracted/pages/R01_retest/17_applied_science/page_003.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R01-RET-APPLIED-08",
+    "independent_answer": "3",
+    "reason": "外力80 J=qΔV;ΔV=−40 V;|E|=200 V/m",
+    "source_images_viewed": [
+      "extracted/pages/R01_retest/17_applied_science/page_003.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R02-REG-APPLIED-03",
+    "independent_answer": "1",
+    "reason": "分極を強誘電性と呼ぶのが誤り",
+    "source_images_viewed": [
+      "extracted/pages/R02/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R02-REG-APPLIED-04",
+    "independent_answer": "1",
+    "reason": "1/(2π√LC)=1.5915 kHz",
+    "source_images_viewed": [
+      "extracted/pages/R02/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R03-REG-APPLIED-04",
+    "independent_answer": "2",
+    "reason": "磁気単極子の不在",
+    "source_images_viewed": [
+      "extracted/pages/R03/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R04-REG-APPLIED-03",
+    "independent_answer": "4",
+    "reason": "ビオ・サバール法則",
+    "source_images_viewed": [
+      "extracted/pages/R04/17_applied_science/page_001.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R04-REG-APPLIED-04",
+    "independent_answer": "3",
+    "reason": "初期CV²/2=2.5e−9 Jが全てコイルへ",
+    "source_images_viewed": [
+      "extracted/pages/R04/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R05-REG-APPLIED-03",
+    "independent_answer": "2",
+    "reason": "Q一定でF=Q²/(2εA)、ε5倍でF0/5",
+    "source_images_viewed": [
+      "extracted/pages/R05/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R06-REG-APPLIED-03",
+    "independent_answer": "1",
+    "reason": "1/(2π√LC)=3.1831 kHz",
+    "source_images_viewed": [
+      "extracted/pages/R06/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R06-REG-APPLIED-04",
+    "independent_answer": "2",
+    "reason": "静電平衡導体内部E=0",
+    "source_images_viewed": [
+      "extracted/pages/R06/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R07-REG-APPLIED-03",
+    "independent_answer": "3",
+    "reason": "εの増大で容量が減るは誤り",
+    "source_images_viewed": [
+      "extracted/pages/R07/17_applied_science/page_001.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R07-REG-APPLIED-04",
+    "independent_answer": "4",
+    "reason": "μ0μr(N/ℓ)I=0.0706858 T=70.6858 mT",
+    "source_images_viewed": [
+      "extracted/pages/R07/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  }
+]

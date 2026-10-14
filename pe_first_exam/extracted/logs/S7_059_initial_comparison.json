@@ -1,0 +1,215 @@
+{
+  "records": [
+    {
+      "question_id": "H29-REG-BASIC-5-1",
+      "initial": "1",
+      "official": "1",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "H29-REG-BASIC-5-2",
+      "initial": "1",
+      "official": "1",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "H29-REG-BASIC-5-3",
+      "initial": "4",
+      "official": "4",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "H29-REG-BASIC-5-4",
+      "initial": "2",
+      "official": "2",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "H29-REG-BASIC-5-5",
+      "initial": "2",
+      "official": "2",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "H29-REG-BASIC-5-6",
+      "initial": "5",
+      "official": "5",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "H30-REG-BASIC-5-1",
+      "initial": "2",
+      "official": "2",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "H30-REG-BASIC-5-2",
+      "initial": "3",
+      "official": "3",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "H30-REG-BASIC-5-3",
+      "initial": "3",
+      "official": "3",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "H30-REG-BASIC-5-4",
+      "initial": "4",
+      "official": "4",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "H30-REG-BASIC-5-5",
+      "initial": "3",
+      "official": "3",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "H30-REG-BASIC-5-6",
+      "initial": "5",
+      "official": "5",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R01-REG-BASIC-5-1",
+      "initial": "3",
+      "official": "3",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R01-REG-BASIC-5-2",
+      "initial": "2",
+      "official": "2",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R01-REG-BASIC-5-3",
+      "initial": "3",
+      "official": "3",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R01-REG-BASIC-5-4",
+      "initial": "4",
+      "official": "4",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R01-REG-BASIC-5-5",
+      "initial": "2",
+      "official": "2",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R01-REG-BASIC-5-6",
+      "initial": "5",
+      "official": "5",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R01-RET-BASIC-5-1",
+      "initial": "1",
+      "official": "1",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R01-RET-BASIC-5-2",
+      "initial": "1",
+      "official": "1",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R01-RET-BASIC-5-3",
+      "initial": "3",
+      "official": "3",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R01-RET-BASIC-5-4",
+      "initial": "3",
+      "official": "3",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R01-RET-BASIC-5-5",
+      "initial": "4",
+      "official": "4",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R01-RET-BASIC-5-6",
+      "initial": "3",
+      "official": "3",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R02-REG-BASIC-5-1",
+      "initial": "2",
+      "official": "2",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R02-REG-BASIC-5-2",
+      "initial": "3",
+      "official": "3",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R02-REG-BASIC-5-3",
+      "initial": "4",
+      "official": "4",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R02-REG-BASIC-5-4",
+      "initial": "1",
+      "official": "1",
+      "match": true,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R02-REG-BASIC-5-5",
+      "initial": "4",
+      "official": "4|3",
+      "match": false,
+      "accepted_member": true
+    },
+    {
+      "question_id": "R02-REG-BASIC-5-6",
+      "initial": "1",
+      "official": "1",
+      "match": true,
+      "accepted_member": true
+    }
+  ],
+  "note": "初回matchは文字列完全一致。R02-5-5は特殊複数正答4|3で独立解4が含まれる。複数を単一へ潰さない。"
+}

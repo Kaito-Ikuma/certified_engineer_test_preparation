@@ -1,0 +1,45 @@
+{
+  "stem": "固定した基準プレートに対する日本付近の二つの海洋プレートの速度の桁を比較する。",
+  "conditions": {
+    "確認範囲": "問題幹、数値、単位、否定、全5候補を原典画像で照合した。",
+    "成立条件": "原典は北アメリカプレート固定を明記する。剛体プレートの相対角速度と地点の位置から速度が決まるため、地点と運動モデルの省略を残す。"
+  },
+  "choices": {
+    "1": {
+      "value": "太平洋6.5 mm/年、フィリピン海2 mm/年",
+      "verdict": "不適切",
+      "reason": "両方が代表的cm/年の運動より一桁程度小さい。"
+    },
+    "2": {
+      "value": "太平洋8 mm/年、フィリピン海7 mm/年",
+      "verdict": "不適切",
+      "reason": "mm/年とcm/年の違いにより代表的な沈み込み速度に達しない。"
+    },
+    "3": {
+      "value": "太平洋2.5 cm/年、フィリピン海1.5 cm/年",
+      "verdict": "不適切",
+      "reason": "両方とも日本付近の代表的速度より小さい組である。"
+    },
+    "4": {
+      "value": "太平洋3 cm/年、フィリピン海8.5 cm/年",
+      "verdict": "不適切",
+      "reason": "太平洋の方が大きい代表比較が逆になっている。"
+    },
+    "5": {
+      "value": "太平洋9 cm/年、フィリピン海4.5 cm/年",
+      "verdict": "条件付きで適切",
+      "reason": "代表的な大きさと大小関係に対応する。原典にない地点・モデルを補って精密値としない。"
+    }
+  },
+  "figures": "参照する図なし。プレート速度問題は5組の数値表を原典で確認。",
+  "ambiguity": "北アメリカ固定は明記されるが比較地点とオイラー極モデルは不明である。大学の解説は日本列島に対する代表速度であり、原典の参照系の厳密な数値検証は未完了である。",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_010.png"
+  ],
+  "question_id": "R01-REG-APPLIED-30",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "4dfa401542082301365a8848fc5fef62d9bcba7de8d664516b4984fad7e00704",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

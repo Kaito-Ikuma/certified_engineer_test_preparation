@@ -1,0 +1,45 @@
+{
+  "stem": "安息香酸と等モルの強塩基を混合し、生成塩の加水分解でpHを計算する。",
+  "conditions": {
+    "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+    "成立条件": "\\(K_a=10^{-4}\\,\\mathrm{mol\\,dm^{-3}}\\)、\\(K_w=10^{-14}\\,\\mathrm{mol^2\\,dm^{-6}}\\)。体積加成、濃度で平衡式を扱う理想溶液近似、加水分解量が1 mol/dm3に比べ十分小さいこと。"
+  },
+  "choices": {
+    "1": {
+      "value": "7",
+      "verdict": "不適切",
+      "reason": "等モル中和は過剰酸塩基を消すが、弱酸の塩の加水分解を消さない。"
+    },
+    "2": {
+      "value": "8",
+      "verdict": "不適切",
+      "reason": "加水分解の平方根から得たpOH=5と対応しない。"
+    },
+    "3": {
+      "value": "9",
+      "verdict": "適切",
+      "reason": "水酸化物イオン濃度が約10のマイナス5乗なので対応する。"
+    },
+    "4": {
+      "value": "10",
+      "verdict": "不適切",
+      "reason": "形式濃度1とKbの積の平方根を取った結果と対応しない。"
+    },
+    "5": {
+      "value": "14",
+      "verdict": "不適切",
+      "reason": "未反応の1 mol/dm3強塩基が残る場合ではない。"
+    }
+  },
+  "figures": "文字記述又は順序候補であり図なし。",
+  "ambiguity": "形式濃度1 mol/dm3の塩溶液に活量係数1を用いる計算上の近似を明示する。原典は温度・活量係数・実在溶液の調製可能性を指定しないため、実測pHの断定とは区別する。",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_006.png"
+  ],
+  "question_id": "H30-REG-APPLIED-17",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "ad799840116ab2179afffa61619d4f731f0aa9bab911c87d9f41c219cee8fa07",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

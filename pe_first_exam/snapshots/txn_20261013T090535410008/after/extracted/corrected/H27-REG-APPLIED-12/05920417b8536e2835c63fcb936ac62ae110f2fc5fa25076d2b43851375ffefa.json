@@ -1,0 +1,45 @@
+{
+  "stem": "無機気体の生成物を反応式で確認する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "無機気体の生成物を反応式で確認する。"
+  },
+  "choices": {
+    "1": {
+      "value": "ギ酸の濃硫酸脱水でCO2",
+      "verdict": "不適切",
+      "reason": "脱水生成物はCOと水。CO2への変更では酸素・水素の収支が合わない。"
+    },
+    "2": {
+      "value": "NaClと濃硫酸でHCl",
+      "verdict": "通常の条件で適切",
+      "reason": "不揮発性の酸により塩化物から塩化水素を発生させる。温度・当量で硫酸塩の組成は変わる。"
+    },
+    "3": {
+      "value": "Znと希硫酸でH2",
+      "verdict": "通常の条件で適切",
+      "reason": "Znが酸化されH+が還元される。硫酸の濃度を濃硫酸へ置き換えない。"
+    },
+    "4": {
+      "value": "MnO2と濃塩酸でCl2",
+      "verdict": "通常の条件で適切",
+      "reason": "Mn(IV)を還元しCl−を酸化する。MnO2+4HCl→MnCl2+Cl2+2H2O。"
+    },
+    "5": {
+      "value": "Cuと濃硝酸でNO2",
+      "verdict": "通常の条件で適切",
+      "reason": "酸化性酸でCuが溶け、濃硝酸では代表的にNO2を生じる。希硝酸の代表生成物NOと区別する。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_005.png"
+  ],
+  "question_id": "H27-REG-APPLIED-12",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "25778f925f04622813a83ddefb4a27d1e1ad1e42fae89904aca035ba2d92c96e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

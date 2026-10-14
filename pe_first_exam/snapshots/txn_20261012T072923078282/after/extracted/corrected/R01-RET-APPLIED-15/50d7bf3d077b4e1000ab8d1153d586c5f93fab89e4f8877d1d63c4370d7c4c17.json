@@ -1,0 +1,45 @@
+{
+  "stem": "活性化障壁・動的平衡・触媒選択性と、速度と平衡位置の独立性を問う。",
+  "conditions": {
+    "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+    "成立条件": "温度・圧力一定。同じ反応物と生成物について平衡と速度を比較する。活性化エネルギーは問題の反応経路上の障壁模型として読む。"
+  },
+  "choices": {
+    "1": {
+      "value": "反応物から遷移状態への差が障壁",
+      "verdict": "適切",
+      "reason": "指定した反応経路のエネルギー障壁を説明する。経験的アレニウス量と無条件に同一視しない。"
+    },
+    "2": {
+      "value": "平衡では正逆反応速度が等しい",
+      "verdict": "適切",
+      "reason": "濃度の正味変化が0でも各方向の反応は進む。"
+    },
+    "3": {
+      "value": "触媒は低い障壁の経路を与える",
+      "verdict": "適切",
+      "reason": "同じ反応の別経路を通じて速度を上げる。"
+    },
+    "4": {
+      "value": "触媒は選択性を持つ",
+      "verdict": "適切",
+      "reason": "競合経路の相対速度を変え得る。"
+    },
+    "5": {
+      "value": "速度増大で定温定圧の平衡位置が変わる",
+      "verdict": "不適切",
+      "reason": "速度は平衡への到達時間に関わり、平衡位置は自由エネルギーで決まる。"
+    }
+  },
+  "figures": "文字記述又は順序候補であり図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_006.png"
+  ],
+  "question_id": "R01-RET-APPLIED-15",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "fa0a669fb0c1f72d80fd8cfd83b94f113d7127fe76b5359833c6a39bd8620b74",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

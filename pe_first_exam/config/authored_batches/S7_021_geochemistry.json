@@ -1,0 +1,1632 @@
+{
+  "batch_id": "S7_021_geochemistry",
+  "reference_date": "2026-10-11",
+  "scope": "地球化学22問。原典19画像と全5肢を照合、公式参照前初回保存。21一意一致・H27初回4|5と公式5。原典の名称・分母・例外を疑義に保持。",
+  "questions": [
+    {
+      "question_id": "H23-REG-APPLIED-18",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "汚濁量を表す水質指標と、水の起源を追う同位体比を区別する。",
+      "summary": "汚濁量を表す水質指標と、水の起源を追う同位体比を区別する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+      },
+      "choices": {
+        "1": {
+          "value": "大腸菌群数",
+          "verdict": "適切（通常条件）",
+          "reason": "当時の衛生汚濁の指標である。菌数を物質濃度や発生源の同位体指標と混ぜない。"
+        },
+        "2": {
+          "value": "生物化学的酸素要求量BOD",
+          "verdict": "適切（通常条件）",
+          "reason": "微生物分解に必要な酸素量で、分解可能な有機負荷を反映する。全有機物量そのものではない。"
+        },
+        "3": {
+          "value": "全窒素",
+          "verdict": "適切（通常条件）",
+          "reason": "富栄養化に関与する窒素成分の総量を追う。"
+        },
+        "4": {
+          "value": "浮遊物質SS",
+          "verdict": "適切（通常条件）",
+          "reason": "水に浮遊する粒子量を追う。溶存量とは区別する。"
+        },
+        "5": {
+          "value": "水素同位体比",
+          "verdict": "不適切",
+          "reason": "蒸発・降水・混合等による水の起源と履歴を追うトレーサーであり、一般的な汚濁量の直接尺度ではない。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_006.png"
+      ],
+      "core_concept": "水質指標と起源トレーサーの用途",
+      "required_knowledge": "水質指標と起源トレーサーの用途。汚濁を評価する量と水の由来を同定する量は用途が異なる。1〜4は衛生・有機負荷・栄養塩・粒子の水質指標で、5が最も不適切である。同位体が汚染研究に利用できないという意味ではなく、単独の比を汚濁負荷へ変換できないという区別である。",
+      "solution": "汚濁を評価する量と水の由来を同定する量は用途が異なる。1〜4は衛生・有機負荷・栄養塩・粒子の水質指標で、5が最も不適切である。同位体が汚染研究に利用できないという意味ではなく、単独の比を汚濁負荷へ変換できないという区別である。",
+      "independent_answer": "5",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。大腸菌群、BOD、窒素、SSは汚濁の指標。水素同位体は起源・循環の追跡で汚濁量の直接指標ではない。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "汚濁を評価する量と水の由来を同定する量は用途が異なる。1〜4は衛生・有機負荷・栄養塩・粒子の水質指標で、5が最も不適切である。同位体が汚染研究に利用できないという意味ではなく、単独の比を汚濁負荷へ変換できないという区別である。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。水質指標と起源トレーサーの用途を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:indicators",
+        "theory:geochemistry:isotope"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "water_quality_indicators",
+      "classification_reason": "原典全肢の中心は水質指標と起源トレーサーの用途であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_hem",
+        "gc_meteoric"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-19",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "炭素の貯留量、自然温室効果、生物過程と地史的風化を比較する。",
+      "summary": "炭素の貯留量、自然温室効果、生物過程と地史的風化を比較する。",
+      "conditions": {
+        "方向": "正しいもの。",
+        "対象": "初期大気・現在の自然温室効果・炭素貯留と循環。"
+      },
+      "choices": {
+        "1": {
+          "value": "初期CO2は現在より低い。",
+          "verdict": "不適切",
+          "reason": "初期大気のCO2は現在より高かったとする地史的な理解と逆である。初期という語の全時代の精密濃度を固定しない。"
+        },
+        "2": {
+          "value": "最大の温室効果はCO2、次いで水蒸気。",
+          "verdict": "不適切",
+          "reason": "自然の温室効果では水蒸気の寄与が大きい。人為的な追加放射強制力のランキングを現在大気の全温室効果と混ぜている。"
+        },
+        "3": {
+          "value": "風化によるCO2除去は重要で、光合成・分解・呼吸で長期に均衡。",
+          "verdict": "意図上適切・収支範囲疑義",
+          "reason": "風化による炭素固定と生物の吸収・呼吸・分解は重要である。ただし遅い循環の収支は火山・堆積・有機炭素埋没等も含み、3作用だけで任意時点の均衡が保証されるわけではない。"
+        },
+        "4": {
+          "value": "酸化環境でメタン生成。",
+          "verdict": "不適切",
+          "reason": "メタン生成微生物は通常嫌気的な条件で活動する。酸化的な条件でのメタン酸化と生成を区別する。"
+        },
+        "5": {
+          "value": "大気炭素は海洋炭素の半分。",
+          "verdict": "不適切",
+          "reason": "海洋の溶存無機炭素等は大気炭素よりはるかに大きい。大気が海洋の半分という量関係ではない。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "正答の風化・生物循環の重要性は支持されるが、「光合成、有機物分解、呼吸によって長期にバランス」という原典の収支範囲は不十分。火山・堆積・埋没も必要で、人為擾乱下の現在大気は定常でない。原典を修正せず部分校正。",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_007.png"
+      ],
+      "core_concept": "炭素の速い生物循環と遅い岩石循環",
+      "required_knowledge": "炭素の速い生物循環と遅い岩石循環。設問が意図する3は風化と生物活動の重要性であり、初回・公式とも3である。他の候補は初期濃度、水蒸気の役割、メタン生成の酸化還元条件、海洋の大きな貯留量に反する。ただし風化の収支を生物3作用だけで閉じない。短い生物循環と火山・堆積を含む遅い循環を分け、現在の炭素増加を隠す定常仮定にも用いない。",
+      "solution": "設問が意図する3は風化と生物活動の重要性であり、初回・公式とも3である。他の候補は初期濃度、水蒸気の役割、メタン生成の酸化還元条件、海洋の大きな貯留量に反する。ただし風化の収支を生物3作用だけで閉じない。短い生物循環と火山・堆積を含む遅い循環を分け、現在の炭素増加を隠す定常仮定にも用いない。",
+      "independent_answer": "3",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。初期CO2低濃度は逆、水蒸気の自然温室寄与が大、メタン生成は嫌気、海洋炭素量は大気よりはるかに大。3は風化と生物循環の重要性だが風化収支を光合成等だけで完全に均衡させる因果表現は注意。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "設問が意図する3は風化と生物活動の重要性であり、初回・公式とも3である。他の候補は初期濃度、水蒸気の役割、メタン生成の酸化還元条件、海洋の大きな貯留量に反する。ただし風化の収支を生物3作用だけで閉じない。短い生物循環と火山・堆積を含む遅い循環を分け、現在の炭素増加を隠す定常仮定にも用いない。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。炭素の速い生物循環と遅い岩石循環を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:carbon",
+        "theory:geochemistry:weathering"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "carbon_geochemical_cycle",
+      "classification_reason": "原典全肢の中心は炭素の速い生物循環と遅い岩石循環であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_carbon",
+        "atm_noaa_ghg"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-22",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "提示された陸上の水貯留の中で最大のものを選ぶ。",
+      "summary": "提示された陸上の水貯留の中で最大のものを選ぶ。",
+      "conditions": {
+        "方向": "最も貯留量が大きいもの。",
+        "対象": "湖沼・河川・湿地・地下・土壌の5貯留。"
+      },
+      "choices": {
+        "1": {
+          "value": "湖沼水",
+          "verdict": "最大でない",
+          "reason": "USGS表の全湖沼は約17.6万km3で、地下水より小さい。"
+        },
+        "2": {
+          "value": "河川水",
+          "verdict": "最大でない",
+          "reason": "河川の瞬時貯留は約2120km3である。大きい年間輸送量と区別する。"
+        },
+        "3": {
+          "value": "湿地の水",
+          "verdict": "最大でない",
+          "reason": "湿地の貯留は約11470km3で地下水より小さい。"
+        },
+        "4": {
+          "value": "地下水",
+          "verdict": "最大",
+          "reason": "全地下水約2340万km3、淡水地下水だけでも約1053万km3で提示中最大。"
+        },
+        "5": {
+          "value": "土壌水",
+          "verdict": "最大でない",
+          "reason": "土壌水約16500km3は地下水より小さい。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_007.png"
+      ],
+      "core_concept": "水の貯留量と対象集合",
+      "required_knowledge": "水の貯留量と対象集合。示された5形態では地下水4が最大である。氷河や海洋は候補にない。水の量をストックとして比較し、流量や取り出せる資源量のランキングへ移さない。",
+      "solution": "示された5形態では地下水4が最大である。氷河や海洋は候補にない。水の量をストックとして比較し、流量や取り出せる資源量のランキングへ移さない。",
+      "independent_answer": "4",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。提示5貯留のうち地下水が最大。湖河湿地土壌はいずれも小さい。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "示された5形態では地下水4が最大である。氷河や海洋は候補にない。水の量をストックとして比較し、流量や取り出せる資源量のランキングへ移さない。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。水の貯留量と対象集合を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:reservoir"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "water_budget_residence",
+      "classification_reason": "原典全肢の中心は水の貯留量と対象集合であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_water"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-33",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "stem": "地下水の鉄沈殿、鉱山酸性水、日本のケイ酸、採水pHと世界河川のイオン源を判定する。",
+      "summary": "地下水の鉄沈殿、鉱山酸性水、日本のケイ酸、採水pHと世界河川のイオン源を判定する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+      },
+      "choices": {
+        "1": {
+          "value": "低酸素地下水の湧出に伴い鉄が酸化して茶褐色沈殿。",
+          "verdict": "適切（通常条件）",
+          "reason": "還元的な地下でFe(II)が溶存し、湧出後に酸素を得るとFe(III)の水酸化物等が沈殿する。茶褐色沈殿を地下の酸化状態と同一視しない。"
+        },
+        "2": {
+          "value": "硫化鉱物酸化で硫酸増加・pH低下。",
+          "verdict": "適切（通常条件）",
+          "reason": "硫化鉱物の酸化は硫酸と酸を生成する。炭酸塩等の中和能でpHの結果は変わるが、酸性鉱山排水の典型的原因である。"
+        },
+        "3": {
+          "value": "日本の平均河川は世界より溶存ケイ酸が高い。",
+          "verdict": "適切（通常条件）",
+          "reason": "1970年一次論文の表4は、日本の蒸発残渣74.8mg/L・SiO2比26.84%、世界100mg/L・11.67%であり、濃度へ戻すと約20.1対11.7mg/Lである。古い集計の傾向であって全河川の普遍命題ではない。"
+        },
+        "4": {
+          "value": "現場の非攪拌水は室内放置水よりpH低い傾向。",
+          "verdict": "適切（通常条件）",
+          "reason": "地下水は土壌CO2を多く溶かしている場合があり、採取・攪拌による脱気で炭酸平衡が動きpHが上がる。CO2過飽和という条件を付し、鉄酸化等で逆の変化もあり得るため現場測定を優先する。"
+        },
+        "5": {
+          "value": "世界河川の大半はNaCl主成分・海塩が主供給源。",
+          "verdict": "不適切",
+          "reason": "河川の平均的な主要イオンはCa・HCO3等の岩石風化に依存する。海塩NaClは雨・沿岸・混合で重要だが世界河川の大半を一律に海塩支配とできない。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/17_applied_science/page_010.png"
+      ],
+      "core_concept": "陸水の組成を決める供給源と採水後の反応",
+      "required_knowledge": "陸水の組成を決める供給源と採水後の反応。風化、酸化還元、脱気、海塩を別の過程として読む。岩石との反応によるCa-HCO3系を落としてNaCl起源に限定する5が不適切である。日本と世界のケイ酸濃度は集計時期・SiとSiO2の表示基準を添える。",
+      "solution": "風化、酸化還元、脱気、海塩を別の過程として読む。岩石との反応によるCa-HCO3系を落としてNaCl起源に限定する5が不適切である。日本と世界のケイ酸濃度は集計時期・SiとSiO2の表示基準を添える。",
+      "independent_answer": "5",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。世界平均は風化由来Ca・HCO3が重要。低酸素地下水鉄の酸化沈殿、硫化物の酸性排水、珪酸傾向、CO2脱気でpH上昇は整合。日本平均比較は一次統計要確認。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "風化、酸化還元、脱気、海塩を別の過程として読む。岩石との反応によるCa-HCO3系を落としてNaCl起源に限定する5が不適切である。日本と世界のケイ酸濃度は集計時期・SiとSiO2の表示基準を添える。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。陸水の組成を決める供給源と採水後の反応を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:river",
+        "theory:geochemistry:redox",
+        "theory:geochemistry:carbonate",
+        "theory:geochemistry:sampling"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "river_water_chemistry",
+      "classification_reason": "原典全肢の中心は陸水の組成を決める供給源と採水後の反応であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_river1970",
+        "gc_hem",
+        "gc_redox",
+        "gc_mine"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-10",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "stem": "地殻元素の存在度の5組の大小を比較する。",
+      "summary": "地殻元素の存在度の5組の大小を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+      },
+      "choices": {
+        "1": {
+          "value": "O > Si",
+          "verdict": "適切（通常条件）",
+          "reason": "代表質量存在度46.60%対27.72%で成立。"
+        },
+        "2": {
+          "value": "Si > Ti",
+          "verdict": "適切（通常条件）",
+          "reason": "27.72%対0.44%で成立。"
+        },
+        "3": {
+          "value": "Al > Cu",
+          "verdict": "適切（通常条件）",
+          "reason": "Al8.13%は微量のCuより多い。"
+        },
+        "4": {
+          "value": "Cl > K",
+          "verdict": "不適切",
+          "reason": "Cl0.020%はK2.59%よりはるかに少なく逆である。"
+        },
+        "5": {
+          "value": "Ti > Mn",
+          "verdict": "適切（通常条件）",
+          "reason": "Ti0.44%はMn0.100%より多い。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/17_applied_science/page_005.png"
+      ],
+      "core_concept": "地殻組成・質量存在度と微量元素",
+      "required_knowledge": "地殻組成・質量存在度と微量元素。地殻という対象と質量存在度の基準を置くと、Cl>Kという4だけが逆である。大気・海水や地球全体の組成を代用しない。代表表の精密小数はモデル依存であるが、この大小比較は頑健である。",
+      "solution": "地殻という対象と質量存在度の基準を置くと、Cl>Kという4だけが逆である。大気・海水や地球全体の組成を代用しない。代表表の精密小数はモデル依存であるが、この大小比較は頑健である。",
+      "independent_answer": "4",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。地殻O>Si>Al、KはClより多い。Si>Ti、Al>Cu、Ti>Mnも整合。存在度の質量／原子数基準を要確認。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "地殻という対象と質量存在度の基準を置くと、Cl>Kという4だけが逆である。大気・海水や地球全体の組成を代用しない。代表表の精密小数はモデル依存であるが、この大小比較は頑健である。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。地殻組成・質量存在度と微量元素を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:crust"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "crust_abundance",
+      "classification_reason": "原典全肢の中心は地殻組成・質量存在度と微量元素であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_crust",
+        "gc_hem"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-31",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "stem": "希薄化、石灰岩反応、蒸発濃縮、水素酸素同位体と酸性河川の起源を比較する。",
+      "summary": "希薄化、石灰岩反応、蒸発濃縮、水素酸素同位体と酸性河川の起源を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+      },
+      "choices": {
+        "1": {
+          "value": "日本は多雨急流・低蒸発濃縮で成分が一般に希薄。",
+          "verdict": "適切（一般傾向）",
+          "reason": "古い平均比較は支持する。流域地質・汚染・温泉混合等により例外がある。"
+        },
+        "2": {
+          "value": "石灰岩溶解で弱アルカリ性・Ca増加・炭酸カルシウム型。",
+          "verdict": "溶解は適切・名称疑義",
+          "reason": "炭酸を含む水に石灰岩が溶けるとCaとHCO3が増す。「炭酸カルシウム型」という原本の呼び方と溶存種を区別する。"
+        },
+        "3": {
+          "value": "乾燥蒸発や河口で塩が濃くなり海水組成へ近づく傾向。",
+          "verdict": "適切（濃縮混合傾向）",
+          "reason": "濃縮・海水混合は塩類濃度を上げる。ただし蒸発だけで全イオン比が海水へ必ず一致するわけではない。"
+        },
+        "4": {
+          "value": "HとOの同位体比はおおむね反比例。",
+          "verdict": "不適切",
+          "reason": "天水のδ2Hとδ18Oは正の相関で、代表線はδ2H=8δ18O+10。反比例ではない。海水起源の水蒸気が分別するという説明と区別する。"
+        },
+        "5": {
+          "value": "火山・酸性降雨・鉱山排水が酸性水源。",
+          "verdict": "適切",
+          "reason": "これらは酸を供給する代表過程である。pHの結果は流域の中和反応にも依存する。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "原典は「炭酸カルシウム型」である。通常の主要溶存イオンによる名称はCa-HCO3（炭酸水素カルシウム）型で、CaCO3分子が主成分との理解は誤る。原典の名称を保持して部分校正。",
+      "evidence": [
+        "extracted/pages/H25/17_applied_science/page_011.png"
+      ],
+      "core_concept": "陸水の反応・濃縮と同位体による水の起源",
+      "required_knowledge": "陸水の反応・濃縮と同位体による水の起源。重い同位体の分別がHとOで連動するため、天水線は正の相関を持つ。反比例とする4が不適切である。Ca-HCO3型の名称、蒸発濃縮と海水混合の違いを補足し、原典の全記述を無条件の一般法則へしない。",
+      "solution": "重い同位体の分別がHとOで連動するため、天水線は正の相関を持つ。反比例とする4が不適切である。Ca-HCO3型の名称、蒸発濃縮と海水混合の違いを補足し、原典の全記述を無条件の一般法則へしない。",
+      "independent_answer": "4",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。水素酸素同位体比は天水線の正の相関で反比例ではない。1希薄傾向、3塩濃縮混合、5酸性源は妥当。2原典の炭酸カルシウム型は普通のCa-HCO3型と区別する必要がある。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "重い同位体の分別がHとOで連動するため、天水線は正の相関を持つ。反比例とする4が不適切である。Ca-HCO3型の名称、蒸発濃縮と海水混合の違いを補足し、原典の全記述を無条件の一般法則へしない。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。陸水の反応・濃縮と同位体による水の起源を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:river",
+        "theory:geochemistry:carbonate",
+        "theory:geochemistry:isotope"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "river_water_chemistry",
+      "classification_reason": "原典全肢の中心は陸水の反応・濃縮と同位体による水の起源であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_river1970",
+        "gc_hem",
+        "gc_meteoric"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-18",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "CCSの回収と地中貯留に直接つながる技術・場所を比較する。",
+      "summary": "CCSの回収と地中貯留に直接つながる技術・場所を比較する。",
+      "conditions": {
+        "方向": "関係性が最も薄いもの。",
+        "対象": "CCS（Carbon dioxide Capture and Storage）。"
+      },
+      "choices": {
+        "1": {
+          "value": "帯水層",
+          "verdict": "直接関係",
+          "reason": "深部塩水帯水層は貯留候補である。圧力、封じ込め、漏えい等を評価する。"
+        },
+        "2": {
+          "value": "EOR",
+          "verdict": "CO2-EORで関係",
+          "reason": "CO2を用いるEORは石油増進回収とCO2貯留に結び付く。他のEORまで同一ではない。"
+        },
+        "3": {
+          "value": "モノエタノールアミン吸収法",
+          "verdict": "直接関係",
+          "reason": "MEAの反応吸収はCO2回収の代表方式である。"
+        },
+        "4": {
+          "value": "界面活性剤",
+          "verdict": "提示中で最も薄い",
+          "reason": "界面活性剤は油回収等に使われるが、提示中ではCO2分離・貯留そのものとの直接関係が薄い。全く関係がないと断定しない。"
+        },
+        "5": {
+          "value": "膜分離",
+          "verdict": "直接関係",
+          "reason": "選択透過する膜でCO2を分離回収できる。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_007.png"
+      ],
+      "core_concept": "CO2回収・利用・地中貯留の工程",
+      "required_knowledge": "CO2回収・利用・地中貯留の工程。CCSを回収と貯留に分けると、アミン・膜は回収、帯水層は貯留、CO2-EORは利用と貯留に接続する。界面活性剤4が相対的に最も関係が薄い。原典の「薄い」を「無関係」に強めず、EORの種類も区別する。",
+      "solution": "CCSを回収と貯留に分けると、アミン・膜は回収、帯水層は貯留、CO2-EORは利用と貯留に接続する。界面活性剤4が相対的に最も関係が薄い。原典の「薄い」を「無関係」に強めず、EORの種類も区別する。",
+      "independent_answer": "4",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。帯水層貯留、CO2-EOR、アミン回収、膜回収は直接関係。界面活性剤は他EORなどに使うが提示中でCO2回収貯留との直接性が薄い。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "CCSを回収と貯留に分けると、アミン・膜は回収、帯水層は貯留、CO2-EORは利用と貯留に接続する。界面活性剤4が相対的に最も関係が薄い。原典の「薄い」を「無関係」に強めず、EORの種類も区別する。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。CO2回収・利用・地中貯留の工程を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:ccs"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "ccs",
+      "classification_reason": "原典全肢の中心はCO2回収・利用・地中貯留の工程であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_ccs",
+        "gc_capture",
+        "gc_mea"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-25",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "全球水量の概数・分母と、河川水と大気水の貯留量を比較する。",
+      "summary": "全球水量の概数・分母と、河川水と大気水の貯留量を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+      },
+      "choices": {
+        "1": {
+          "value": "総量約14億km3",
+          "verdict": "適切（概数）",
+          "reason": "1386000000km3という代表表を約14億km3へ丸めており妥当。"
+        },
+        "2": {
+          "value": "海水約97%",
+          "verdict": "適切（概数）",
+          "reason": "海水96.54%を約97%へ丸めている。"
+        },
+        "3": {
+          "value": "陸水の雪氷約70%",
+          "verdict": "分母疑義",
+          "reason": "淡水分母の氷は68.7%で約70%。陸水に塩性地下水まで含めるなら同じ割合でない。"
+        },
+        "4": {
+          "value": "湖沼は地下水より少ない。",
+          "verdict": "適切",
+          "reason": "湖沼全体176400km3は全地下水23400000km3より小さい。"
+        },
+        "5": {
+          "value": "河川水は大気水蒸気より多い。",
+          "verdict": "不適切",
+          "reason": "河川2120km3は大気12900km3より小さい。年間流出量をストックへ代入しない。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "原典の陸水に対する雪氷約70%は、淡水貯留を分母にすれば68.7%という代表表と合う。海洋以外の全水（塩性地下水等を含む）を陸水とすると約50%に変わるため分母疑義を保持。",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_011.png"
+      ],
+      "core_concept": "全球水貯留・概数と割合の分母",
+      "required_knowledge": "全球水貯留・概数と割合の分母。同じ貯留量で比較すると河川2120と大気12900km3であり、多いとする5が不適切である。他の割合は丸めと分母を確認する。雪氷約70%は淡水分母の説明として示し、原典の陸水という広い語は疑義を残す。",
+      "solution": "同じ貯留量で比較すると河川2120と大気12900km3であり、多いとする5が不適切である。他の割合は丸めと分母を確認する。雪氷約70%は淡水分母の説明として示し、原典の陸水という広い語は疑義を残す。",
+      "independent_answer": "5",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。総量14億km3、海97%、雪氷約70%は淡水分母での概数。地下水>湖、河川水<大気水。陸水の分母は塩性地下水も含むか注意。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "同じ貯留量で比較すると河川2120と大気12900km3であり、多いとする5が不適切である。他の割合は丸めと分母を確認する。雪氷約70%は淡水分母の説明として示し、原典の陸水という広い語は疑義を残す。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。全球水貯留・概数と割合の分母を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:reservoir"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "water_budget_residence",
+      "classification_reason": "原典全肢の中心は全球水貯留・概数と割合の分母であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_water"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-27",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "CO2吸収帯、風化、海洋貯留、地史的変化とメタン生成を比較する。",
+      "summary": "CO2吸収帯、風化、海洋貯留、地史的変化とメタン生成を比較する。",
+      "conditions": {
+        "方向": "最も適切なもの。"
+      },
+      "choices": {
+        "1": {
+          "value": "CO2は紫外に幅広い吸収帯。",
+          "verdict": "不適切",
+          "reason": "主要な温室作用は赤外領域の吸収・放射である。紫外との取り違え。"
+        },
+        "2": {
+          "value": "土壌CO2が高いので風化のCO2除去が減速。",
+          "verdict": "不適切",
+          "reason": "土壌呼吸によるCO2供給は炭酸を作り化学的風化を促す。実際の速度は水流、表面積、温度、飽和度等にも依存する。"
+        },
+        "3": {
+          "value": "大気炭素全量は海洋と同程度。",
+          "verdict": "不適切",
+          "reason": "海洋の炭素貯留は大気よりはるかに多く、同程度ではない。"
+        },
+        "4": {
+          "value": "初期CO2は高く、減少へ風化と光合成が作用。",
+          "verdict": "適切",
+          "reason": "地史的なCO2減少に風化と生物活動が関与する。光合成固定も呼吸で戻る部分と埋没する部分を区別する。"
+        },
+        "5": {
+          "value": "嫌気環境のメタン生成は光合成。",
+          "verdict": "不適切",
+          "reason": "嫌気条件は整合するがメタン生成は光合成ではない。水素とCO2、酢酸等の基質を使う代謝である。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_011.png"
+      ],
+      "core_concept": "炭素循環の貯留・風化・微生物代謝",
+      "required_knowledge": "炭素循環の貯留・風化・微生物代謝。紫外を赤外、減速を促進、同程度を海洋の大きな貯留、光合成を嫌気代謝へそれぞれ区別する。地史的な風化と光合成の作用を述べる4が最も適切である。生物が吸ったCO2が全量恒久貯留するわけではない。",
+      "solution": "紫外を赤外、減速を促進、同程度を海洋の大きな貯留、光合成を嫌気代謝へそれぞれ区別する。地史的な風化と光合成の作用を述べる4が最も適切である。生物が吸ったCO2が全量恒久貯留するわけではない。",
+      "independent_answer": "4",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。CO2吸収は赤外、土壌CO2は風化を促進、海洋炭素は大気より大、メタン生成は光合成でない。4は地史的な風化と光合成の作用。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "紫外を赤外、減速を促進、同程度を海洋の大きな貯留、光合成を嫌気代謝へそれぞれ区別する。地史的な風化と光合成の作用を述べる4が最も適切である。生物が吸ったCO2が全量恒久貯留するわけではない。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。炭素循環の貯留・風化・微生物代謝を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:carbon",
+        "theory:geochemistry:weathering",
+        "theory:geochemistry:redox"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "carbon_geochemical_cycle",
+      "classification_reason": "原典全肢の中心は炭素循環の貯留・風化・微生物代謝であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_carbon",
+        "atm_noaa_ghg",
+        "gc_redox"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-27",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "stem": "ケイ酸供給、生物取り込み、硫化物反応、還元地下水と海洋反応を比較する。",
+      "summary": "ケイ酸供給、生物取り込み、硫化物反応、還元地下水と海洋反応を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+      },
+      "choices": {
+        "1": {
+          "value": "日本の平均河川は世界より溶存ケイ酸が高い。",
+          "verdict": "適切（集計傾向）",
+          "reason": "1970年一次論文の表4は、日本の蒸発残渣74.8mg/L・SiO2比26.84%、世界100mg/L・11.67%であり、濃度へ戻すと約20.1対11.7mg/Lである。古い集計の傾向であって全河川の普遍命題ではない。"
+        },
+        "2": {
+          "value": "硫化物に富む底質なら硫酸カルシウム型河川水。",
+          "verdict": "条件付き・省略疑義",
+          "reason": "硫化物が酸化されれば硫酸が生じ、酸によりCa鉱物が溶ければCa-SO4型を形成し得る。ただし硫化物の存在だけでは酸素・Ca供給を保証しない。"
+        },
+        "3": {
+          "value": "低酸素地下水は酸化反応でO2を消耗し還元的。",
+          "verdict": "適切（反応条件）",
+          "reason": "供給O2が少なく還元性成分と反応すると地下水の還元状態が進み、FeMn等の形態が変わる。"
+        },
+        "4": {
+          "value": "アルミノケイ酸塩の海洋供給で海水pH低下。",
+          "verdict": "逆風化条件で成立・省略疑義",
+          "reason": "海洋の粘土生成（逆風化）はアルカリ度を消費してCO2を生成し、pHを下げ得る。陸上のケイ酸塩風化による酸消費とは別過程である。原典が反応条件を省いており供給だけで必ず低下とは断定できない。"
+        },
+        "5": {
+          "value": "ケイ藻でケイ素が放出され河川濃度が上がる場合。",
+          "verdict": "意図上不適切・生活史範囲疑義",
+          "reason": "生きた珪藻はケイ酸を取り込み殻を作るので、成長を濃度上昇の機構とするなら逆である。ただし死後殻の溶解はケイ酸を再供給し得るため、「ことがある」という原典の広い表現は一律に誤りと確定できない。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "初回4|5と公式5を保持。肢2はCaと酸化条件、4は海洋逆風化条件、5は成長による取り込みと死後殻溶解の区別を省略。「ことがある」を原典通り保持し一意な科学的誤り肢の確定は査読待ち。",
+      "evidence": [
+        "extracted/pages/H27/17_applied_science/page_010.png"
+      ],
+      "core_concept": "生物によるケイ酸取り込みと溶解・逆風化",
+      "required_knowledge": "生物によるケイ酸取り込みと溶解・逆風化。公式は5だが初回は4|5であった。珪藻成長では水からケイ酸を除くため意図上の誤答理由は説明できる。一方、死後殻の溶解放出と海洋逆風化の反応条件まで含めると、原典の省略された条件が重要である。公式から原典5を「成長時に」と改変せず、各肢の条件と未解決を保つ。",
+      "solution": "公式は5だが初回は4|5であった。珪藻成長では水からケイ酸を除くため意図上の誤答理由は説明できる。一方、死後殻の溶解放出と海洋逆風化の反応条件まで含めると、原典の省略された条件が重要である。公式から原典5を「成長時に」と改変せず、各肢の条件と未解決を保つ。",
+      "independent_answer": "4|5",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。初回判定未確定。4は単純風化だと酸消費だが海洋逆風化ならpH低下を説明できる可能性があり原典の意図要確認。5も珪藻吸収と遺骸の溶解放出を区別する必要がある。2の硫酸カルシウム型はCa供給条件を欠く。公式は未参照で4または5を保留。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "公式は5だが初回は4|5であった。珪藻成長では水からケイ酸を除くため意図上の誤答理由は説明できる。一方、死後殻の溶解放出と海洋逆風化の反応条件まで含めると、原典の省略された条件が重要である。公式から原典5を「成長時に」と改変せず、各肢の条件と未解決を保つ。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。生物によるケイ酸取り込みと溶解・逆風化を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:silica",
+        "theory:geochemistry:river",
+        "theory:geochemistry:redox"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "river_water_chemistry",
+      "classification_reason": "原典全肢の中心は生物によるケイ酸取り込みと溶解・逆風化であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_river1970",
+        "gc_hem",
+        "gc_diatom",
+        "gc_reverse"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-27",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "自然温室効果、初期大気、メタン条件、風化と炭素貯留を判定する。",
+      "summary": "自然温室効果、初期大気、メタン条件、風化と炭素貯留を判定する。",
+      "conditions": {
+        "方向": "最も適切なもの。"
+      },
+      "choices": {
+        "1": {
+          "value": "初期CO2は現在より低い。",
+          "verdict": "不適切",
+          "reason": "初期大気のCO2は現在より高かったとする地史的な理解と逆である。初期という語の全時代の精密濃度を固定しない。"
+        },
+        "2": {
+          "value": "最大の温室効果はCO2で水蒸気が次。",
+          "verdict": "不適切",
+          "reason": "自然の温室効果では水蒸気の寄与が大きい。人為的な追加放射強制力のランキングを現在大気の全温室効果と混ぜている。"
+        },
+        "3": {
+          "value": "メタンは酸化環境で生成。",
+          "verdict": "不適切",
+          "reason": "メタン生成微生物は通常嫌気的な条件で活動する。酸化的な条件でのメタン酸化と生成を区別する。"
+        },
+        "4": {
+          "value": "風化によるCO2除去は重要で、光合成・分解・呼吸で長期に均衡。",
+          "verdict": "意図上適切・収支範囲疑義",
+          "reason": "風化による炭素固定と生物の吸収・呼吸・分解は重要である。ただし遅い循環の収支は火山・堆積・有機炭素埋没等も含み、3作用だけで任意時点の均衡が保証されるわけではない。"
+        },
+        "5": {
+          "value": "大気Cは海洋Cの半分。",
+          "verdict": "不適切",
+          "reason": "海洋の溶存無機炭素等は大気炭素よりはるかに大きい。大気が海洋の半分という量関係ではない。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "正答の風化・生物循環の重要性は支持されるが、「光合成、有機物分解、呼吸によって長期にバランス」という原典の収支範囲は不十分。火山・堆積・埋没も必要で、人為擾乱下の現在大気は定常でない。原典を修正せず部分校正。",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_011.png"
+      ],
+      "core_concept": "速い生物循環と遅い炭素循環の収支範囲",
+      "required_knowledge": "速い生物循環と遅い炭素循環の収支範囲。初回・公式とも4であり、地史と生物過程を扱う意図で選ぶ。ただし遅い炭素循環は火山・堆積・埋没も含み、生物3作用だけで風化流束まで均衡するという説明にはしない。H23問19と同じ文言群だが正答位置と問いの方向を原典で再照合した。",
+      "solution": "初回・公式とも4であり、地史と生物過程を扱う意図で選ぶ。ただし遅い炭素循環は火山・堆積・埋没も含み、生物3作用だけで風化流束まで均衡するという説明にはしない。H23問19と同じ文言群だが正答位置と問いの方向を原典で再照合した。",
+      "independent_answer": "4",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。1初期CO2濃度逆、2最大水蒸気、3メタンは還元、5海洋が圧倒的に大きい。4風化・生物循環は妥当だが収支均衡の範囲注意。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "初回・公式とも4であり、地史と生物過程を扱う意図で選ぶ。ただし遅い炭素循環は火山・堆積・埋没も含み、生物3作用だけで風化流束まで均衡するという説明にはしない。H23問19と同じ文言群だが正答位置と問いの方向を原典で再照合した。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。速い生物循環と遅い炭素循環の収支範囲を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:carbon",
+        "theory:geochemistry:weathering"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "carbon_geochemical_cycle",
+      "classification_reason": "原典全肢の中心は速い生物循環と遅い炭素循環の収支範囲であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_carbon",
+        "atm_noaa_ghg"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-20",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "海塩支配の一般化、硫化物酸化、ケイ酸濃度、脱気pH、鉄沈殿を比較する。",
+      "summary": "海塩支配の一般化、硫化物酸化、ケイ酸濃度、脱気pH、鉄沈殿を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+      },
+      "choices": {
+        "1": {
+          "value": "世界河川の大半はNaCl主成分・海塩起源。",
+          "verdict": "不適切",
+          "reason": "河川の平均的な主要イオンはCa・HCO3等の岩石風化に依存する。海塩NaClは雨・沿岸・混合で重要だが世界河川の大半を一律に海塩支配とできない。"
+        },
+        "2": {
+          "value": "硫化鉱物酸化で硫酸増・pH低下。",
+          "verdict": "適切（通常条件）",
+          "reason": "硫化鉱物の酸化は硫酸と酸を生成する。炭酸塩等の中和能でpHの結果は変わるが、酸性鉱山排水の典型的原因である。"
+        },
+        "3": {
+          "value": "日本平均河川ケイ酸は世界より高い。",
+          "verdict": "適切（通常条件）",
+          "reason": "1970年一次論文の表4は、日本の蒸発残渣74.8mg/L・SiO2比26.84%、世界100mg/L・11.67%であり、濃度へ戻すと約20.1対11.7mg/Lである。古い集計の傾向であって全河川の普遍命題ではない。"
+        },
+        "4": {
+          "value": "非攪拌地下水pHは攪拌水より低い傾向。",
+          "verdict": "適切（通常条件）",
+          "reason": "地下水は土壌CO2を多く溶かしている場合があり、採取・攪拌による脱気で炭酸平衡が動きpHが上がる。CO2過飽和という条件を付し、鉄酸化等で逆の変化もあり得るため現場測定を優先する。"
+        },
+        "5": {
+          "value": "低酸素地下水湧出で鉄の酸化沈殿。",
+          "verdict": "適切（通常条件）",
+          "reason": "還元的な地下でFe(II)が溶存し、湧出後に酸素を得るとFe(III)の水酸化物等が沈殿する。茶褐色沈殿を地下の酸化状態と同一視しない。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_006.png"
+      ],
+      "core_concept": "主要イオンの供給と採水後の化学反応",
+      "required_knowledge": "主要イオンの供給と採水後の化学反応。風化由来Ca-HCO3等を無視して世界の河川を海塩NaClに限定する1が不適切である。採水後のpH変化を地質の違いと混ぜず、CO2脱気の条件として考える。鉄は地下の溶存Fe(II)と地表沈殿Fe(III)を区別する。",
+      "solution": "風化由来Ca-HCO3等を無視して世界の河川を海塩NaClに限定する1が不適切である。採水後のpH変化を地質の違いと混ぜず、CO2脱気の条件として考える。鉄は地下の溶存Fe(II)と地表沈殿Fe(III)を区別する。",
+      "independent_answer": "1",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。海塩NaClが世界河川大半の主成分との一般化が誤り。硫化物酸化、珪酸、CO2脱気pH、Fe酸化沈殿は妥当。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "風化由来Ca-HCO3等を無視して世界の河川を海塩NaClに限定する1が不適切である。採水後のpH変化を地質の違いと混ぜず、CO2脱気の条件として考える。鉄は地下の溶存Fe(II)と地表沈殿Fe(III)を区別する。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。主要イオンの供給と採水後の化学反応を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:river",
+        "theory:geochemistry:carbonate",
+        "theory:geochemistry:sampling",
+        "theory:geochemistry:redox"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "river_water_chemistry",
+      "classification_reason": "原典全肢の中心は主要イオンの供給と採水後の化学反応であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_river1970",
+        "gc_hem",
+        "gc_redox",
+        "gc_mine"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-28",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "stem": "自然ヒ素、水道基準の単位、単体の有害性と岩石・鉱物での存在を比較する。",
+      "summary": "自然ヒ素、水道基準の単位、単体の有害性と岩石・鉱物での存在を比較する。",
+      "conditions": {
+        "方向": "最も不適切。",
+        "時点": "2018年出題。2004施行表・2026年閲覧現行表を区別。",
+        "単位": "原典肢2はg/Lでありmg/Lへ校正しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "鉱物由来無機ヒ素が温泉・地下水へ溶出。",
+          "verdict": "適切",
+          "reason": "鉱物反応や酸化還元・吸着の変化によって自然由来の無機ヒ素が溶出する場合がある。"
+        },
+        "2": {
+          "value": "水道基準は0.01g/L以下。",
+          "verdict": "不適切（単位1000倍）",
+          "reason": "2004施行表と現行表ともヒ素量0.01mg/Lで、0.01g/Lは10mg/L、1000倍の単位誤りである。"
+        },
+        "3": {
+          "value": "半導体用金属ヒ素に毒性はない。",
+          "verdict": "無毒の断言に疑義",
+          "reason": "単体は溶解・取り込みが化合物と異なるが、NIOSHは金属ヒ素も有害性と曝露制限の対象として示す。無毒という絶対命題を教材の安全根拠にしない。"
+        },
+        "4": {
+          "value": "揮発性のため火成・変成岩にはあまり含まれない。",
+          "verdict": "比較と因果は要確認",
+          "reason": "ヒ素は岩石中に微量含まれ火山ガスにも存在する。岩種ごとの含有量、鉱化、揮発移動を分ける必要があり、原典の因果・比較範囲は追加確認が必要である。"
+        },
+        "5": {
+          "value": "地表の水環境で亜ヒ酸塩・ヒ酸塩鉱物が形成。",
+          "verdict": "適切（形態による）",
+          "reason": "酸化数III・Vに応じた亜ヒ酸塩・ヒ酸塩等の形態と二次鉱物があり、水と鉱物の反応に関わる。溶存種と固相鉱物を混ぜない。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "肢2の単位誤りは確認。肢3「金属ヒ素に毒性はない」は無条件に支持できず、肢4の岩種量比較と揮発性の因果は一次定量未確認。2018原典を科学的に正しい文へ修正せず疑義保持。",
+      "evidence": [
+        "extracted/pages/H30/17_applied_science/page_009.png"
+      ],
+      "core_concept": "自然ヒ素の形態と濃度単位・基準の時点",
+      "required_knowledge": "自然ヒ素の形態と濃度単位・基準の時点。公式2・初回2を保持する。水道基準0.01mg/Lに対し原典は0.01g/Lであり1000倍違うため、2の不適切さは独立に確認できる。ただし3の無毒という断言は現在の一次有害性資料で支持できず、4の岩種比較も未確定である。正答だけが合ったことを全肢の科学的妥当性へ昇格させない。",
+      "solution": "公式2・初回2を保持する。水道基準0.01mg/Lに対し原典は0.01g/Lであり1000倍違うため、2の不適切さは独立に確認できる。ただし3の無毒という断言は現在の一次有害性資料で支持できず、4の岩種比較も未確定である。正答だけが合ったことを全肢の科学的妥当性へ昇格させない。",
+      "independent_answer": "2",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。0.01g/Lは0.01mg/Lと1000倍違い明確な誤り。1自然鉱物溶出と5ヒ酸塩生成は整合。3金属ヒ素無毒、4岩石中少量の揮発性因果は要一次検証。最も不適切は2と仮判定。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "公式2・初回2を保持する。水道基準0.01mg/Lに対し原典は0.01g/Lであり1000倍違うため、2の不適切さは独立に確認できる。ただし3の無毒という断言は現在の一次有害性資料で支持できず、4の岩種比較も未確定である。正答だけが合ったことを全肢の科学的妥当性へ昇格させない。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。自然ヒ素の形態と濃度単位・基準の時点を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:arsenic",
+        "theory:geochemistry:redox"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "water_quality_indicators",
+      "classification_reason": "原典全肢の中心は自然ヒ素の形態と濃度単位・基準の時点であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_hem",
+        "gc_arsenic2004",
+        "gc_arsenic_current",
+        "gc_arsenic_hazard"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-20",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "stem": "FeMnの溶存、火山地質ケイ酸、ORP、石灰岩反応と同位体緯度差を比較する。",
+      "summary": "FeMnの溶存、火山地質ケイ酸、ORP、石灰岩反応と同位体緯度差を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+      },
+      "choices": {
+        "1": {
+          "value": "河川水は地下水よりFeMnに富むことが多い。",
+          "verdict": "不適切",
+          "reason": "酸化的河川ではFeMn酸化物が析出し、還元地下水はFe2+・Mn2+が溶存し得る。一般の大小方向が逆である。"
+        },
+        "2": {
+          "value": "新生代火山系を流れる河川でケイ酸が高い傾向。",
+          "verdict": "適切（地質傾向）",
+          "reason": "火山性の反応しやすい物質からのケイ酸供給は高濃度へ寄与し得る。地質だけで全流域の濃度を固定しない。"
+        },
+        "3": {
+          "value": "大気共存水のORPは一般に正。",
+          "verdict": "適切（基準と条件）",
+          "reason": "酸素が供給される通常の天然水は酸化的で、電位は正側の傾向。電極基準・温度pH・混合電位を区別する。"
+        },
+        "4": {
+          "value": "石灰岩溶解でCa増・弱アルカリ・炭酸カルシウム型。",
+          "verdict": "反応は適切・名称疑義",
+          "reason": "石灰岩と炭酸の反応でCa・HCO3が増加する。原典の炭酸カルシウム型と通常のCa-HCO3名称を区別する。"
+        },
+        "5": {
+          "value": "降水酸素同位体値は赤道側で大きく極へ小さい。",
+          "verdict": "適切（一般傾向）",
+          "reason": "水蒸気の逐次凝結で重い同位体が除かれ、高緯度降水は相対的に低いδ18Oとなる一般傾向。局地気候等の例外もある。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "原典は「炭酸カルシウム型」である。通常の主要溶存イオンによる名称はCa-HCO3（炭酸水素カルシウム）型で、CaCO3分子が主成分との理解は誤る。原典の名称を保持して部分校正。",
+      "evidence": [
+        "extracted/pages/R01/17_applied_science/page_006.png"
+      ],
+      "core_concept": "自然水の酸化還元・地質と溶存組成",
+      "required_knowledge": "自然水の酸化還元・地質と溶存組成。溶存FeMnを考えると河川と還元地下水の大小を逆にした1が不適切である。粒子を含む全濃度と溶存濃度も区別する。4の水質名称は原典を保持して疑義とし、炭酸平衡の溶存種はCa2+・HCO3-と説明する。",
+      "solution": "溶存FeMnを考えると河川と還元地下水の大小を逆にした1が不適切である。粒子を含む全濃度と溶存濃度も区別する。4の水質名称は原典を保持して疑義とし、炭酸平衡の溶存種はCa2+・HCO3-と説明する。",
+      "independent_answer": "1",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。還元地下水が溶存FeMnを保持し河川酸化で沈殿するので1の大小が逆。2火山系珪酸、3酸化ORP正、5緯度同位体低下は概ね整合。4Ca-HCO3型の原典名称疑義。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "溶存FeMnを考えると河川と還元地下水の大小を逆にした1が不適切である。粒子を含む全濃度と溶存濃度も区別する。4の水質名称は原典を保持して疑義とし、炭酸平衡の溶存種はCa2+・HCO3-と説明する。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。自然水の酸化還元・地質と溶存組成を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:river",
+        "theory:geochemistry:redox",
+        "theory:geochemistry:carbonate",
+        "theory:geochemistry:isotope"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "river_water_chemistry",
+      "classification_reason": "原典全肢の中心は自然水の酸化還元・地質と溶存組成であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_hem",
+        "gc_river1970",
+        "gc_redox",
+        "gc_meteoric"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-18",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "stem": "全球水の割合と地下・湖・河・大気の貯留を比較する。",
+      "summary": "全球水の割合と地下・湖・河・大気の貯留を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+      },
+      "choices": {
+        "1": {
+          "value": "総量約14億km3",
+          "verdict": "適切（概数）",
+          "reason": "1386000000km3という代表表を約14億km3へ丸めており妥当。"
+        },
+        "2": {
+          "value": "海水約97%",
+          "verdict": "適切（概数）",
+          "reason": "海水96.54%を約97%へ丸めている。"
+        },
+        "3": {
+          "value": "陸水中雪氷約70%",
+          "verdict": "分母疑義",
+          "reason": "淡水分母の氷は68.7%で約70%。陸水に塩性地下水まで含めるなら同じ割合でない。"
+        },
+        "4": {
+          "value": "河川水は大気の水蒸気より多い。",
+          "verdict": "不適切",
+          "reason": "河川2120km3は大気12900km3より小さい。年間流出量をストックへ代入しない。"
+        },
+        "5": {
+          "value": "淡水湖は地下水より少ない。",
+          "verdict": "適切",
+          "reason": "淡水湖91000km3は淡水地下水10530000km3より小さく、全地下水と比較しても小さい。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "原典の陸水に対する雪氷約70%は、淡水貯留を分母にすれば68.7%という代表表と合う。海洋以外の全水（塩性地下水等を含む）を陸水とすると約50%に変わるため分母疑義を保持。",
+      "evidence": [
+        "extracted/pages/R01_retest/17_applied_science/page_006.png"
+      ],
+      "core_concept": "水貯留の分母と湖沼の淡水限定",
+      "required_knowledge": "水貯留の分母と湖沼の淡水限定。河川2120km3は大気12900km3より小さいため4が不適切。H26問25から候補順が変わり、湖沼に淡水という限定もあるので番号を転用しない。雪氷70%の分母は淡水なら整合するが陸水という原語の範囲疑義を残す。",
+      "solution": "河川2120km3は大気12900km3より小さいため4が不適切。H26問25から候補順が変わり、湖沼に淡水という限定もあるので番号を転用しない。雪氷70%の分母は淡水なら整合するが陸水という原語の範囲疑義を残す。",
+      "independent_answer": "4",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。河川水ストックは大気水蒸気より小さい。他は概数と貯留比較。陸水70%の分母注意。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "河川2120km3は大気12900km3より小さいため4が不適切。H26問25から候補順が変わり、湖沼に淡水という限定もあるので番号を転用しない。雪氷70%の分母は淡水なら整合するが陸水という原語の範囲疑義を残す。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。水貯留の分母と湖沼の淡水限定を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:reservoir"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "water_budget_residence",
+      "classification_reason": "原典全肢の中心は水貯留の分母と湖沼の淡水限定であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_water"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-19",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "stem": "固定・硝化・脱窒と、無機炭素を使う独立栄養を区別する。",
+      "summary": "固定・硝化・脱窒と、無機炭素を使う独立栄養を区別する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+      },
+      "choices": {
+        "1": {
+          "value": "嫌気硝酸呼吸で硝酸を還元しN2O・N2生成。",
+          "verdict": "適切（脱窒過程）",
+          "reason": "硝酸を電子受容体とする脱窒でN2O等を経てN2となる。中間生成物の量は条件で変わる。"
+        },
+        "2": {
+          "value": "アンモニア→亜硝酸→硝酸は硝化。",
+          "verdict": "適切",
+          "reason": "酸化数を上げる硝化の二段階である。代表の独立栄養硝化生物は無機酸化のエネルギーで炭素を固定する。"
+        },
+        "3": {
+          "value": "雷・燃焼NOxは非生物的窒素固定。",
+          "verdict": "固定源を分ける条件付き",
+          "reason": "雷や高温の熱的NOxはN2から反応性窒素を作る非生物固定である。ただし燃料に既に含まれた窒素の放出まで全て新規N2固定とすることはできない。"
+        },
+        "4": {
+          "value": "固定細菌・藍藻はN2からアミノ酸合成。",
+          "verdict": "適切（還元と同化）",
+          "reason": "窒素固定ではN2をまず還元してアンモニアを得て、アミノ酸へ同化する。生成物と最初の酵素反応を区別する。"
+        },
+        "5": {
+          "value": "化学合成生物は脱窒のエネルギーでCO2から有機物合成。",
+          "verdict": "意図上不適切・自養脱窒の例外",
+          "reason": "従属栄養脱窒を念頭にした設問意図では硝化との混同である。しかし1989年一次研究は嫌気条件で硫黄を電子供与体、HCO3-を炭素源とする自養脱窒菌を集積しているので、脱窒と無機炭素固定の結合は実在し一律に否定できない。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "公式5を保持。自養脱窒の一次実験例があるため肢5を全化学合成生物で否定できない。肢3も燃料窒素由来NOxとN2の新規固定を区別する範囲疑義。意図と科学的適用範囲を分けて査読待ち。",
+      "evidence": [
+        "extracted/pages/R02/17_applied_science/page_007.png"
+      ],
+      "core_concept": "窒素反応の電子収支と炭素源の独立な分類",
+      "required_knowledge": "窒素反応の電子収支と炭素源の独立な分類。公式5と初回5は一致するが、硝化と従属栄養脱窒という教科書的な対照だけでは5を普遍的誤りとできない。硫黄自養脱窒では無機電子供与体の酸化と硝酸還元がエネルギーを供給し、無機炭素を同化する。電子供与体・受容体・炭素源を別軸にして、原典と科学的例外を併記する。",
+      "solution": "公式5と初回5は一致するが、硝化と従属栄養脱窒という教科書的な対照だけでは5を普遍的誤りとできない。硫黄自養脱窒では無機電子供与体の酸化と硝酸還元がエネルギーを供給し、無機炭素を同化する。電子供与体・受容体・炭素源を別軸にして、原典と科学的例外を併記する。",
+      "independent_answer": "5",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。意図上は硝化独立栄養と脱窒従属栄養の取り違え5。1嫌気脱窒2硝化3雷等NOx4生物固定は整合。ただし硫黄自養脱窒によるCO2固定が存在するので5一律否定は不可、3燃料窒素の再排出は分子N2の新規固定ではない。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "公式5と初回5は一致するが、硝化と従属栄養脱窒という教科書的な対照だけでは5を普遍的誤りとできない。硫黄自養脱窒では無機電子供与体の酸化と硝酸還元がエネルギーを供給し、無機炭素を同化する。電子供与体・受容体・炭素源を別軸にして、原典と科学的例外を併記する。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。窒素反応の電子収支と炭素源の独立な分類を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:nitrogen",
+        "theory:geochemistry:redox"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "nitrogen_geochemical_cycle",
+      "classification_reason": "原典全肢の中心は窒素反応の電子収支と炭素源の独立な分類であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_sulfur_denit",
+        "gc_redox",
+        "gc_hem"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-18",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "分子拡散、機械分散、縦横の分散長と野外の尺度を比較する。",
+      "summary": "分子拡散、機械分散、縦横の分散長と野外の尺度を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+      },
+      "choices": {
+        "1": {
+          "value": "分子の不規則運動が分子拡散。",
+          "verdict": "適切（通常条件）",
+          "reason": "不規則な熱運動に基づく濃度の平滑化である。"
+        },
+        "2": {
+          "value": "濃度勾配に比例する速度で分子拡散。",
+          "verdict": "適切（通常条件）",
+          "reason": "Fick則は拡散流束\\(J=-D_m\\partial C/\\partial x\\)を与える。「速度」は流束として解釈し、正味の分子流速との同一視を避ける。"
+        },
+        "3": {
+          "value": "不均質な間隙構造で流動中の溶質集団が広がる。",
+          "verdict": "適切（通常条件）",
+          "reason": "流速・経路の差を平均化した見かけの広がりで、静止水の分子拡散とは区別する。"
+        },
+        "4": {
+          "value": "横分散長は通常縦より小さい。",
+          "verdict": "適切（通常条件）",
+          "reason": "流れ方向の速度差が大きく、通常は\\(\\alpha_T<\\alpha_L\\)である。媒体構造に依存する経験傾向。"
+        },
+        "5": {
+          "value": "野外分散長は室内よりはるかに小さい。",
+          "verdict": "不適切",
+          "reason": "野外は大きな不均質性を含み一般に大きい側の傾向がある。1992年59現場の研究は尺度傾向と大きな散らばりを示し、普遍直線は否定する。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_007.png"
+      ],
+      "core_concept": "移流拡散・機械分散と尺度依存",
+      "required_knowledge": "移流拡散・機械分散と尺度依存。5の野外がはるかに小さいという一般化が逆である。\\(D_L=\\alpha_L|v|+D_m^\\ast\\)と置けば、分子拡散係数は面積/時間、分散長は長さであり別の量である。流れの平均速度に比例する機械分散と静止状態にもある分子拡散を分け、現場尺度への外挿を検証する。",
+      "solution": "5の野外がはるかに小さいという一般化が逆である。\\(D_L=\\alpha_L|v|+D_m^\\ast\\)と置けば、分子拡散係数は面積/時間、分散長は長さであり別の量である。流れの平均速度に比例する機械分散と静止状態にもある分子拡散を分け、現場尺度への外挿を検証する。",
+      "independent_answer": "5",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。機械分散は速度経路差、横<縦が通常、野外マクロ不均質で室内より大。分子拡散Fick流束が濃度勾配比例で2の速度は流束の意味に注意。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "5の野外がはるかに小さいという一般化が逆である。\\(D_L=\\alpha_L|v|+D_m^\\ast\\)と置けば、分子拡散係数は面積/時間、分散長は長さであり別の量である。流れの平均速度に比例する機械分散と静止状態にもある分子拡散を分け、現場尺度への外挿を検証する。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。移流拡散・機械分散と尺度依存を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:transport"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "groundwater_transport",
+      "classification_reason": "原典全肢の中心は移流拡散・機械分散と尺度依存であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_dispersion",
+        "gc_hem"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-19",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "天然水のイオン量・温度と電気伝導率、抵抗率と残留物を比較する。",
+      "summary": "天然水のイオン量・温度と電気伝導率、抵抗率と残留物を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+      },
+      "choices": {
+        "1": {
+          "value": "伝導率で溶存イオン量を大まかに比較。",
+          "verdict": "適切（通常条件）",
+          "reason": "イオン濃度と移動度に依存するので概略指標になる。中性有機物等の全溶存量の直接測定ではない。"
+        },
+        "2": {
+          "value": "温度が上がると伝導率低下。",
+          "verdict": "不適切",
+          "reason": "同一試料・通常温度では温度上昇でイオン移動度が増し伝導率は上がる。25℃への温度補正値と生の温度依存を分ける。"
+        },
+        "3": {
+          "value": "通常海水→河川→雨の順で低下。",
+          "verdict": "適切（通常条件）",
+          "reason": "塩類濃度の一般傾向に沿う。汚染・温泉・酸性水等の例外があり試料名だけで固定しない。"
+        },
+        "4": {
+          "value": "1cm立方体の対面間に対応する電気抵抗率の逆数。",
+          "verdict": "適切（通常条件）",
+          "reason": "伝導率\\(\\kappa=1/\\rho=\\ell/(RA)\\)。\\(\\ell=1\\,\\mathrm{cm},A=1\\,\\mathrm{cm}^2\\)で測定抵抗Rの逆数の数値に対応するが単位はS/cm。抵抗と抵抗率の量を混ぜない。"
+        },
+        "5": {
+          "value": "同じ組成比で濃度が違えば蒸発残留物と密接に関係。",
+          "verdict": "適切（通常条件）",
+          "reason": "同じ組成・温度・希薄条件なら比例的に変化する。ただし異なるイオン組成の試料を一つの係数で換算しない。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_007.png"
+      ],
+      "core_concept": "イオンの伝導・抵抗率と温度補正",
+      "required_knowledge": "イオンの伝導・抵抗率と温度補正。通常の天然水の電気伝導率は温度上昇で増すので2が不適切。\\(\\kappa=\\sum_i \\lambda_i c_i\\)という希薄な加算近似では、イオン種別の伝導寄与と濃度の双方が必要である。比較時は温度を揃え、25℃換算値か実測温度の値かを明記する。",
+      "solution": "通常の天然水の電気伝導率は温度上昇で増すので2が不適切。\\(\\kappa=\\sum_i \\lambda_i c_i\\)という希薄な加算近似では、イオン種別の伝導寄与と濃度の双方が必要である。比較時は温度を揃え、25℃換算値か実測温度の値かを明記する。",
+      "independent_answer": "2",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。温度上昇でイオン移動性増し伝導率上昇。海>河>雨、量概比較と同組成時TDS相関は妥当。4抵抗率の逆数で単位注意。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "通常の天然水の電気伝導率は温度上昇で増すので2が不適切。\\(\\kappa=\\sum_i \\lambda_i c_i\\)という希薄な加算近似では、イオン種別の伝導寄与と濃度の双方が必要である。比較時は温度を揃え、25℃換算値か実測温度の値かを明記する。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。イオンの伝導・抵抗率と温度補正を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:conductivity"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "water_conductivity",
+      "classification_reason": "原典全肢の中心はイオンの伝導・抵抗率と温度補正であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_hem",
+        "gc_conductance",
+        "gc_conductance1994"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-21",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "炭素貯留、地史的風化、生物代謝とCO2の吸収帯を比較する。",
+      "summary": "炭素貯留、地史的風化、生物代謝とCO2の吸収帯を比較する。",
+      "conditions": {
+        "方向": "最も適切。"
+      },
+      "choices": {
+        "1": {
+          "value": "大気炭素全量は海洋と同程度。",
+          "verdict": "不適切",
+          "reason": "海洋の炭素貯留は大気よりはるかに多く、同程度ではない。"
+        },
+        "2": {
+          "value": "初期CO2は高く、減少に風化と光合成生物が関与。",
+          "verdict": "適切",
+          "reason": "地史的なCO2減少に風化と生物活動が関与する。光合成固定も呼吸で戻る部分と埋没する部分を区別する。"
+        },
+        "3": {
+          "value": "嫌気環境のメタン生成は光合成。",
+          "verdict": "不適切",
+          "reason": "嫌気条件は整合するがメタン生成は光合成ではない。水素とCO2、酢酸等の基質を使う代謝である。"
+        },
+        "4": {
+          "value": "CO2は紫外に幅広い吸収帯。",
+          "verdict": "不適切",
+          "reason": "主要な温室作用は赤外領域の吸収・放射である。紫外との取り違え。"
+        },
+        "5": {
+          "value": "土壌CO2が高いので風化のCO2除去が減速。",
+          "verdict": "不適切",
+          "reason": "土壌呼吸によるCO2供給は炭酸を作り化学的風化を促す。実際の速度は水流、表面積、温度、飽和度等にも依存する。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_008.png"
+      ],
+      "core_concept": "貯留・反応・放射を区別する炭素循環",
+      "required_knowledge": "貯留・反応・放射を区別する炭素循環。地史的な濃度減少への複数の関与を述べる2が適切。海洋と大気を同量にせず、メタン生成を光合成にせず、紫外と赤外を取り違えず、土壌CO2による炭酸供給の風化促進を理解する。風化速度・炭素埋没の時間尺度も意識する。",
+      "solution": "地史的な濃度減少への複数の関与を述べる2が適切。海洋と大気を同量にせず、メタン生成を光合成にせず、紫外と赤外を取り違えず、土壌CO2による炭酸供給の風化促進を理解する。風化速度・炭素埋没の時間尺度も意識する。",
+      "independent_answer": "2",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。海洋Cは大、メタンは非光合成、CO2赤外吸収、土壌CO2風化促進。2初期CO2低下に風化と生物活動が関与。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "地史的な濃度減少への複数の関与を述べる2が適切。海洋と大気を同量にせず、メタン生成を光合成にせず、紫外と赤外を取り違えず、土壌CO2による炭酸供給の風化促進を理解する。風化速度・炭素埋没の時間尺度も意識する。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。貯留・反応・放射を区別する炭素循環を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:carbon",
+        "theory:geochemistry:weathering",
+        "theory:geochemistry:redox"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "carbon_geochemical_cycle",
+      "classification_reason": "原典全肢の中心は貯留・反応・放射を区別する炭素循環であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_carbon",
+        "atm_noaa_ghg",
+        "gc_redox"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-19",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "stem": "電子授受、基準電極、有酸素水のEhと地下・火山水の状態を比較する。",
+      "summary": "電子授受、基準電極、有酸素水のEhと地下・火山水の状態を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+      },
+      "choices": {
+        "1": {
+          "value": "還元剤が電子供与、酸化剤が受容。",
+          "verdict": "適切",
+          "reason": "還元剤自身は酸化され、酸化剤自身は還元される。"
+        },
+        "2": {
+          "value": "標準水素電極0を基準とした電位をEhと表す。",
+          "verdict": "適切（基準指定）",
+          "reason": "比較には同じ基準電極へ換算する。ORP計の表示を無換算でEhと混ぜない。"
+        },
+        "3": {
+          "value": "pH7・25℃の有酸素水Ehは約-250mV。",
+          "verdict": "不適切",
+          "reason": "酸素還元境界は\\(E_h=1.229-0.05916\\,\\mathrm{pH}+0.01479\\log_{10}p_{O_2}\\)V（25℃、水活量1）。空気0.21・pH7で約+0.805V、-0.250Vは還元側であり方向が違う。実測値は混合電位で理想境界と一致しなくてもよい。"
+        },
+        "4": {
+          "value": "深部をゆっくり通る水はO2を失い還元状態へ。",
+          "verdict": "反応条件を付す",
+          "reason": "長い滞留中の酸化可能な有機物や鉱物との反応でO2を消費し得る。単に時間が長いだけで反応物なしに酸素が消えるという保存則違反の説明にしない。"
+        },
+        "5": {
+          "value": "火山温泉湧水はSO2・H2S等と反応し普通はO2なし。",
+          "verdict": "通常の還元熱水・混合注意",
+          "reason": "熱水は還元性ガス等と反応して酸素が乏しい場合が多い。湧出後の空気混合などを含め全温泉が永遠に無酸素とはしない。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "肢4の酸素減少は酸化可能な物質と反応する条件、5は還元ガス・空気混合の条件が必要。原典の省略を無条件の保証として教えず部分校正。",
+      "evidence": [
+        "extracted/pages/R04/17_applied_science/page_006.png"
+      ],
+      "core_concept": "酸化還元電位・電極基準と自然水の電子受容体",
+      "required_knowledge": "酸化還元電位・電極基準と自然水の電子受容体。有酸素水のEhを-250mVとする3が不適切。Nernst式の酸素/水境界はpH7・空気下で約+805mVを与え、還元側の符号との違いを確かめられる。ただし実測Ehは複数反応・電極応答を含む。4と5の一般傾向は物質の供給・反応・混合条件を付して説明する。",
+      "solution": "有酸素水のEhを-250mVとする3が不適切。Nernst式の酸素/水境界はpH7・空気下で約+805mVを与え、還元側の符号との違いを確かめられる。ただし実測Ehは複数反応・電極応答を含む。4と5の一般傾向は物質の供給・反応・混合条件を付して説明する。",
+      "independent_answer": "3",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。有酸素中性水のEhは正側、-250mVは還元。1電子移動2SHE基準は正しい。4酸素消耗は還元物質との反応条件必要、5火山温泉の全て無酸素は一般化注意。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "有酸素水のEhを-250mVとする3が不適切。Nernst式の酸素/水境界はpH7・空気下で約+805mVを与え、還元側の符号との違いを確かめられる。ただし実測Ehは複数反応・電極応答を含む。4と5の一般傾向は物質の供給・反応・混合条件を付して説明する。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。酸化還元電位・電極基準と自然水の電子受容体を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:redox"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "natural_water_redox",
+      "classification_reason": "原典全肢の中心は酸化還元電位・電極基準と自然水の電子受容体であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_hem",
+        "gc_redox",
+        "gc_redox2009"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-20",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "stem": "活量係数の理論、イオン強度、溶解平衡、風化系列と速度を区別する。",
+      "summary": "活量係数の理論、イオン強度、溶解平衡、風化系列と速度を区別する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+      },
+      "choices": {
+        "1": {
+          "value": "Debye-Huckelは造岩鉱物の風化抵抗推定モデル。",
+          "verdict": "不適切",
+          "reason": "Debye-Huckelは希薄溶液の静電相互作用と活量係数を扱う。風化抵抗系列そのもののモデルではない。"
+        },
+        "2": {
+          "value": "各イオン濃度からイオン強度を計算。",
+          "verdict": "適切",
+          "reason": "価数zと濃度cを用いて\\(I=\\frac12\\sum_i c_i z_i^2\\)。価数の二乗を落とさず濃度基準を揃える。"
+        },
+        "3": {
+          "value": "溶解の最終平衡濃度が溶解度。",
+          "verdict": "成立条件に疑義",
+          "reason": "固定温度・圧力・化学条件で残存固相と平衡に達した飽和濃度である。固相が全部溶けた場合や流動開放系はその濃度が溶解度とは限らない。"
+        },
+        "4": {
+          "value": "風化抵抗はかんらん石→輝石→黒雲母→石英の順。",
+          "verdict": "適切（経験系列）",
+          "reason": "地表で高温形成鉱物が相対的に不安定な通常の風化系列の一部である。粒径や欠陥、流体条件で実際の速度は変わる。"
+        },
+        "5": {
+          "value": "方解石はケイ酸塩鉱物より溶解が速い。",
+          "verdict": "適切（通常反応条件）",
+          "reason": "通常の炭酸を含む地表水では方解石は比較的速く溶ける。平衡に近いと速度は小さく、全温度・pH・鉱物に普遍とはしない。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "肢3は残存固相・固定条件での飽和平衡を必要とする。少量全溶解・開放流動を含めれば原典の無条件な最終平衡説明は成立しないため条件疑義を保持。",
+      "evidence": [
+        "extracted/pages/R04/17_applied_science/page_007.png"
+      ],
+      "core_concept": "溶解の平衡・活量と反応速度の分離",
+      "required_knowledge": "溶解の平衡・活量と反応速度の分離。1は理論の対象を取り違えている。Debye-Huckelはイオン強度から活量係数を近似する理論で、活量による平衡計算へ接続する。平衡でどこまで溶けるかと、そこへ至る速度、風化抵抗という経験系列を別の概念として整理する。",
+      "solution": "1は理論の対象を取り違えている。Debye-Huckelはイオン強度から活量係数を近似する理論で、活量による平衡計算へ接続する。平衡でどこまで溶けるかと、そこへ至る速度、風化抵抗という経験系列を別の概念として整理する。",
+      "independent_answer": "1",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。Debye-Huckelはイオン活量係数とイオン強度の理論。2I=sum(cz2)/2、4風化系列、5方解石速いは通常整合。3閉鎖一定条件と残存固相が必要で全量溶解なら飽和平衡に達しない。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "1は理論の対象を取り違えている。Debye-Huckelはイオン強度から活量係数を近似する理論で、活量による平衡計算へ接続する。平衡でどこまで溶けるかと、そこへ至る速度、風化抵抗という経験系列を別の概念として整理する。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。溶解の平衡・活量と反応速度の分離を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:activity",
+        "theory:geochemistry:equilibrium",
+        "theory:geochemistry:weathering"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "water_mineral_equilibrium",
+      "classification_reason": "原典全肢の中心は溶解の平衡・活量と反応速度の分離であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_debye",
+        "gc_hem",
+        "gc_clays"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-22",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "stem": "土壌の酸化還元、炭酸塩析出、乾燥塩類、金属沈殿と粘土生成を比較する。",
+      "summary": "土壌の酸化還元、炭酸塩析出、乾燥塩類、金属沈殿と粘土生成を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+      },
+      "choices": {
+        "1": {
+          "value": "土壌有機物は還元型。",
+          "verdict": "適切（通常条件）",
+          "reason": "CO2に比べ有機炭素は還元されており、酸化で電子を供給できる。"
+        },
+        "2": {
+          "value": "石灰岩溶解地下水へ大気CO2が加わって鍾乳石・石筍形成。",
+          "verdict": "不適切",
+          "reason": "普通の石灰岩洞窟ではCO2の脱気でCaCO3が析出する。添加では炭酸が増して溶解側へ動くので方向が逆。"
+        },
+        "3": {
+          "value": "乾燥地で塩類が上昇・蒸発沈積。",
+          "verdict": "適切（通常条件）",
+          "reason": "毛管上昇と蒸発で溶存塩が濃縮される。原材料と飽和条件に応じ岩塩・石膏・炭酸塩等が析出する。"
+        },
+        "4": {
+          "value": "通常土壌pHでAl3+やFeは酸化物・オキシ水酸化物沈殿。",
+          "verdict": "適切（通常条件）",
+          "reason": "通常の酸化的・弱酸性〜中性土壌ではAl・Fe(III)の水酸化物等が溶解を制限する。強酸、錯体、還元Fe(II)などの例外を付す。"
+        },
+        "5": {
+          "value": "湿潤熱帯の強風化ではスメクタイトよりカオリナイト。",
+          "verdict": "適切（通常条件）",
+          "reason": "強い溶脱は塩基性陽イオンと一部Siを除き、カオリナイト等の比較的単純な相を残しやすい。気候だけで鉱物を一意に決めない。"
+        }
+      },
+      "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/17_applied_science/page_007.png"
+      ],
+      "core_concept": "化学的風化・炭酸平衡と土壌の二次鉱物",
+      "required_knowledge": "化学的風化・炭酸平衡と土壌の二次鉱物。2のCO2添加が逆である。\\(\\mathrm{CaCO_3+CO_2+H_2O\\rightleftharpoons Ca^{2+}+2HCO_3^-}\\)においてCO2を失うと左へ進み方解石を析出する。溶解、沈殿、蒸発濃縮、酸化還元、強溶脱の作用をそれぞれ区別して他肢を通常条件で判断する。",
+      "solution": "2のCO2添加が逆である。\\(\\mathrm{CaCO_3+CO_2+H_2O\\rightleftharpoons Ca^{2+}+2HCO_3^-}\\)においてCO2を失うと左へ進み方解石を析出する。溶解、沈殿、蒸発濃縮、酸化還元、強溶脱の作用をそれぞれ区別して他肢を通常条件で判断する。",
+      "independent_answer": "2",
+      "independent_solution_note": "S7_021_independent_answers.jsonへ公式参照前の判断を保存。鍾乳石石筍は地下水CO2の脱気によるCaCO3析出でCO2添加は逆。1有機物還元剤、3乾燥塩集積、4FeAl水酸化物、5強溶脱カオリナイトは条件付で整合。 後続の一次検証は初回を上書きせず、適用条件・疑義を追加する。",
+      "answer_reason": "2のCO2添加が逆である。\\(\\mathrm{CaCO_3+CO_2+H_2O\\rightleftharpoons Ca^{2+}+2HCO_3^-}\\)においてCO2を失うと左へ進み方解石を析出する。溶解、沈殿、蒸発濃縮、酸化還元、強溶脱の作用をそれぞれ区別して他肢を通常条件で判断する。",
+      "learning_points": "物質の貯留量・輸送速度・化学形態を分け、系の境界と反応の前提を確かめる。化学的風化・炭酸平衡と土壌の二次鉱物を収支・平衡・反応速度のどのモデルで扱うか選ぶ。",
+      "theory_references": [
+        "theory:geochemistry:carbonate",
+        "theory:geochemistry:weathering",
+        "theory:geochemistry:redox"
+      ],
+      "discipline_id": "earth_chem",
+      "concept_id": "water_mineral_equilibrium",
+      "classification_reason": "原典全肢の中心は化学的風化・炭酸平衡と土壌の二次鉱物であり、単なる元素名や一肢の帯水層から主分類を決めない。地球表層の化学組成・循環へ主分類を合わせる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻読者が水質・地球化学の新規概念を学び、複数の物質形態・条件を区別して判断する。単位・指数の短い比較を含むが数学的負荷は小さい。"
+      },
+      "citations": [
+        "gc_cave",
+        "gc_clays",
+        "gc_hem",
+        "gc_redox"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

@@ -1,0 +1,1508 @@
+{
+  "batch_id": "S7_044_discrete_algorithms",
+  "reference_date": "2026-10-12",
+  "questions": [
+    {
+      "question_id": "H23-REG-BASIC-2-1",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "32ビットのIPv4アドレスを上位から8ビットずつ10進表示へ変換する。",
+      "summary": "32ビットのIPv4アドレスを上位から8ビットずつ10進表示へ変換する。",
+      "conditions": {
+        "ビット列": "11000000101010000001111110101100",
+        "区切り": "11000000|10101000|00011111|10101100"
+      },
+      "choices": {
+        "1": {
+          "value": "172.31.192.168",
+          "verdict": "不適切",
+          "reason": "8ビット塊の前後を入れ替えている。"
+        },
+        "2": {
+          "value": "172.31.168.192",
+          "verdict": "不適切",
+          "reason": "前後の塊と中央の順序が違う。"
+        },
+        "3": {
+          "value": "172.31.255.255",
+          "verdict": "不適切",
+          "reason": "全ビット1の塊はなく255にはならない。"
+        },
+        "4": {
+          "value": "192.168.31.172",
+          "verdict": "適切",
+          "reason": "192、168、31、172を上位から並べている。"
+        },
+        "5": {
+          "value": "192.168.172.31",
+          "verdict": "不適切",
+          "reason": "最後の31と172が逆である。"
+        }
+      },
+      "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H23/basic/page_005.png"
+      ],
+      "core_concept": "32ビットのIPv4アドレスを上位から8ビットずつ10進表示へ変換する。",
+      "required_knowledge": "2進位取りと8ビット塊の順序。",
+      "solution": "11000000=192、10101000=168、00011111=31、10101100=172である。原典32ビットをこの順に分割し192.168.31.172、4となる。ビットの順と表示基数を同時に変えない。",
+      "answer_reason": "11000000=192、10101000=168、00011111=31、10101100=172である。原典32ビットをこの順に分割し192.168.31.172、4となる。ビットの順と表示基数を同時に変えない。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。8bit順に192,168,31,172。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:information:radix",
+        "theory:discrete:bitcount"
+      ],
+      "discipline_id": "basic_2_2",
+      "concept_id": "concept_019",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は2進位取りと8ビット塊の順序。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。定義から短い計算又は反例を構成する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-2-5",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "最小値と最大値の更新をelseで結んだ走査の不変条件と失敗例を判定する。",
+      "summary": "最小値と最大値の更新をelseで結んだ走査の不変条件と失敗例を判定する。",
+      "conditions": {
+        "判断対象": "0<a_i<1000、min初期1000、max初期0、elseによる排他的更新。",
+        "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+      },
+      "choices": {
+        "1": {
+          "value": "min常に最小・max常に最大でない",
+          "verdict": "不適切",
+          "reason": "1,2の順ならmax=2となるので常に失敗ではない。"
+        },
+        "2": {
+          "value": "min常に最小・max失敗する場合あり",
+          "verdict": "適切",
+          "reason": "minの更新は常に行われ、maxはelseで初回等を飛ばす場合がある。"
+        },
+        "3": {
+          "value": "min失敗の場合あり・max常に最大でない",
+          "verdict": "不適切",
+          "reason": "minは各接頭列の最小を保持する。maxも成功例がある。"
+        },
+        "4": {
+          "value": "minもmaxも失敗の場合あり",
+          "verdict": "不適切",
+          "reason": "minは常に正しいので前半が違う。"
+        },
+        "5": {
+          "value": "min失敗の場合あり・max常に最大",
+          "verdict": "不適切",
+          "reason": "minは正しくmaxは失敗例があるので両方違う。"
+        }
+      },
+      "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/basic/page_007.png",
+        "extracted/pages/H24/basic/page_008.png"
+      ],
+      "core_concept": "最小値と最大値の更新をelseで結んだ走査の不変条件と失敗例を判定する。",
+      "required_knowledge": "0<a_i<1000、min初期1000、max初期0、elseによる排他的更新。",
+      "solution": "min=1000から、より小さい値を毎回取り込むため、minは走査済みの最小値である。max更新は最小更新をしなかったときだけ行う。例えば入力2,1では最小更新を続けてmax=0となるが、1,2ならmax=2となる。minは常に最小、maxは失敗する場合があり2である。",
+      "answer_reason": "min=1000から、より小さい値を毎回取り込むため、minは走査済みの最小値である。max更新は最小更新をしなかったときだけ行う。例えば入力2,1では最小更新を続けてmax=0となるが、1,2ならmax=2となる。minは常に最小、maxは失敗する場合があり2である。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。min不変条件は成立、maxは最初の最大値をelseで見落とす場合。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:discrete:invariants"
+      ],
+      "discipline_id": "basic_2_8",
+      "concept_id": "algorithm_scan_invariants",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は0<a_i<1000、min初期1000、max初期0、elseによる排他的更新。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。定義から短い計算又は反例を構成する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-2-1",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "二値ランプの個数が4から8へ増えたときの状態数の倍率を求める。",
+      "summary": "二値ランプの個数が4から8へ増えたときの状態数の倍率を求める。",
+      "conditions": {
+        "判断対象": "積の法則と二値状態の全組合せ。",
+        "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+      },
+      "choices": {
+        "1": {
+          "value": "2倍",
+          "verdict": "不適切",
+          "reason": "ランプ個数の比であって状態数の比ではない。"
+        },
+        "2": {
+          "value": "4倍",
+          "verdict": "不適切",
+          "reason": "2個増加の倍率であり今回は4個増える。"
+        },
+        "3": {
+          "value": "8倍",
+          "verdict": "不適切",
+          "reason": "3個増加の倍率である。"
+        },
+        "4": {
+          "value": "16倍",
+          "verdict": "適切",
+          "reason": "2の8乗を2の4乗で割ると16である。"
+        },
+        "5": {
+          "value": "32倍",
+          "verdict": "不適切",
+          "reason": "5個増加の倍率である。"
+        }
+      },
+      "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_006.png"
+      ],
+      "core_concept": "二値ランプの個数が4から8へ増えたときの状態数の倍率を求める。",
+      "required_knowledge": "積の法則と二値状態の全組合せ。",
+      "solution": "独立な二値の選択をn個並べると2のn乗通りである。8個なら256、4個なら16なので256/16=16、4である。ランプの種類が複数あっても設問の各位置の状態はON/OFFの二値である。",
+      "answer_reason": "独立な二値の選択をn個並べると2のn乗通りである。8個なら256、4個なら16なので256/16=16、4である。ランプの種類が複数あっても設問の各位置の状態はON/OFFの二値である。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。2の8乗/2の4乗=16。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:discrete:bitcount"
+      ],
+      "discipline_id": "basic_2_2",
+      "concept_id": "discrete_state_counts",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は積の法則と二値状態の全組合せ。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。定義から短い計算又は反例を構成する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-2-2",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "道路距離の最短施設への登録を、同距離で複数登録する条件も含めて数える。",
+      "summary": "道路距離の最短施設への登録を、同距離で複数登録する条件も含めて数える。",
+      "conditions": {
+        "全辺": "Au2、uB2、uv3、AB1、Ax3、Bx3、Bw4、xw3、vw2、vC6、wC4、xC3。",
+        "利用者": "u,v,w,x各1人。同距離なら全施設へ登録。"
+      },
+      "choices": {
+        "1": {
+          "value": "a>b>c",
+          "verdict": "不適切",
+          "reason": "Bの人数がAより多いので逆である。"
+        },
+        "2": {
+          "value": "a=b>c",
+          "verdict": "不適切",
+          "reason": "A3とB4は等しくない。"
+        },
+        "3": {
+          "value": "a=b=c",
+          "verdict": "不適切",
+          "reason": "三施設の人数は3,4,2で異なる。"
+        },
+        "4": {
+          "value": "b>a=c",
+          "verdict": "不適切",
+          "reason": "A3とC2は等しくない。"
+        },
+        "5": {
+          "value": "b>a>c",
+          "verdict": "適切",
+          "reason": "B4>A3>C2である。"
+        }
+      },
+      "figures": "原典の木・道路接続・構文経路・矢印を画像確認。教材では独自の構造表現で説明し原図転載なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_007.png"
+      ],
+      "core_concept": "道路距離の最短施設への登録を、同距離で複数登録する条件も含めて数える。",
+      "required_knowledge": "重み付き道路網の最短距離と同点の複数登録。",
+      "solution": "各利用者から施設A,B,Cへの最短距離を求める。uは(2,2,8)、vは(5,5,6)、wは(5,4,4)、xは(3,3,3)である。したがってu,vはA/B、wはB/C、xは全施設へ登録され、a=3,b=4,c=2。5である。最短距離の同点を一施設だけへ割り当てない。",
+      "answer_reason": "各利用者から施設A,B,Cへの最短距離を求める。uは(2,2,8)、vは(5,5,6)、wは(5,4,4)、xは(3,3,3)である。したがってu,vはA/B、wはB/C、xは全施設へ登録され、a=3,b=4,c=2。5である。最短距離の同点を一施設だけへ割り当てない。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。u:A/B各2、v:A/B各5、w:B/C各4、x:A/B/C各3。3,4,2。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:network:shortest"
+      ],
+      "discipline_id": "basic_2_8",
+      "concept_id": "network_path",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は重み付き道路網の最短距離と同点の複数登録。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。複数段の図・式・状態の追跡を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-2-1",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "二機械の部品加工を、機械順と部品順の二種類の先行制約でアロー図へ割り当てる。",
+      "summary": "二機械の部品加工を、機械順と部品順の二種類の先行制約でアロー図へ割り当てる。",
+      "conditions": {
+        "判断対象": "機械ごとのp→q→rと部品ごとのA→Bという先行制約。",
+        "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+      },
+      "choices": {
+        "1": {
+          "value": "Aq,Bp,Ar,Bq",
+          "verdict": "適切",
+          "reason": "A列とB列の先行順、AqからBqのダミー制約に合う。"
+        },
+        "2": {
+          "value": "Aq,Bp,Bq,Ar",
+          "verdict": "不適切",
+          "reason": "BqとArを入れ替えたためBpとBqの先行を保証できない。"
+        },
+        "3": {
+          "value": "Aq,Ar,Bp,Bq",
+          "verdict": "不適切",
+          "reason": "ApからArがAqと並行になりA機械の順序に反する。"
+        },
+        "4": {
+          "value": "Bp,Aq,Bq,Ar",
+          "verdict": "不適切",
+          "reason": "Aqが終了していなくてもBpの後にBqを開始でき、部品qのA→B順を保証しない。"
+        },
+        "5": {
+          "value": "Bp,Aq,Ar,Bq",
+          "verdict": "不適切",
+          "reason": "Aqが終了していなくてもBpの後にArを開始でき、A機械のq→r順を保証しない。"
+        }
+      },
+      "figures": "原典の木・道路接続・構文経路・矢印を画像確認。教材では独自の構造表現で説明し原図転載なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/basic/page_005.png"
+      ],
+      "core_concept": "二機械の部品加工を、機械順と部品順の二種類の先行制約でアロー図へ割り当てる。",
+      "required_knowledge": "機械ごとのp→q→rと部品ごとのA→Bという先行制約。",
+      "solution": "Apの後にAqとBpが並行し、Aqの後にAr、AqとBpの両方が終わった後にBqを開始する。ArとBqの両方が終わってBrが始まる。よってアAq・イBp・ウAr・エBq、1である。ダミーは時間を要する実加工でなく先行関係を追加する。",
+      "answer_reason": "Apの後にAqとBpが並行し、Aqの後にAr、AqとBpの両方が終わった後にBqを開始する。ArとBqの両方が終わってBrが始まる。よってアAq・イBp・ウAr・エBq、1である。ダミーは時間を要する実加工でなく先行関係を追加する。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。AqとBp並行、ArとBq並行、dummyはAq→Bq。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:discrete:precedence"
+      ],
+      "discipline_id": "basic_1_2",
+      "concept_id": "concept_012",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は機械ごとのp→q→rと部品ごとのA→Bという先行制約。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "3",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。複数段の図・式・状態の追跡を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-2-5",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "構文図の迂回と繰返し経路から生成できない文字列を選ぶ。",
+      "summary": "構文図の迂回と繰返し経路から生成できない文字列を選ぶ。",
+      "conditions": {
+        "判断対象": "構文図の順方向・戻り・迂回を反復と空反復へ対応させる。",
+        "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+      },
+      "choices": {
+        "1": {
+          "value": "a2b3c",
+          "verdict": "不適切",
+          "reason": "a2とb3の二反復の後にcで終わる経路がある。"
+        },
+        "2": {
+          "value": "x98y",
+          "verdict": "不適切",
+          "reason": "xの後に数字を二回通りyで終われる。"
+        },
+        "3": {
+          "value": "w",
+          "verdict": "不適切",
+          "reason": "上側の迂回で最後の英字だけを通れる。"
+        },
+        "4": {
+          "value": "p5q",
+          "verdict": "不適切",
+          "reason": "p5の一反復と最終qで生成できる。"
+        },
+        "5": {
+          "value": "abc45fg",
+          "verdict": "適切",
+          "reason": "中間の連続英字ab等を通る経路がなく生成できない。"
+        }
+      },
+      "figures": "原典の木・道路接続・構文経路・矢印を画像確認。教材では独自の構造表現で説明し原図転載なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/basic/page_008.png"
+      ],
+      "core_concept": "構文図の迂回と繰返し経路から生成できない文字列を選ぶ。",
+      "required_knowledge": "構文図の順方向・戻り・迂回を反復と空反復へ対応させる。",
+      "solution": "Lを英字、Dを数字と書くと、下側の反復はLの後にDを1回以上通る単位、最後にはLを1回通る。上側で反復を飛ばすこともでき、言語は(LD+)の0回以上反復の後Lである。5は英字同士の連続を含みこの構文で生成できない。",
+      "answer_reason": "Lを英字、Dを数字と書くと、下側の反復はLの後にDを1回以上通る単位、最後にはLを1回通る。上側で反復を飛ばすこともでき、言語は(LD+)の0回以上反復の後Lである。5は英字同士の連続を含みこの構文で生成できない。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。(英字 数字1回以上)0回以上の後、最終英字1個。abc45fg不可。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:information:grammar",
+        "theory:discrete:syntax"
+      ],
+      "discipline_id": "basic_2_0",
+      "concept_id": "concept_021",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は構文図の順方向・戻り・迂回を反復と空反復へ対応させる。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。定義から短い計算又は反例を構成する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-2-6",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "左右の部分木と根の演算から算術木を中置式へ読み戻す。",
+      "summary": "左右の部分木と根の演算から算術木を中置式へ読み戻す。",
+      "conditions": {
+        "判断対象": "算術木の左右順と演算子の優先・結合。",
+        "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+      },
+      "choices": {
+        "1": {
+          "value": "(3−2)×(5−1)",
+          "verdict": "不適切",
+          "reason": "根を掛算とする式で原典の減算根と違う。"
+        },
+        "2": {
+          "value": "5−1−3×2",
+          "verdict": "不適切",
+          "reason": "左と右の部分式が逆である。"
+        },
+        "3": {
+          "value": "3×2−5−1",
+          "verdict": "不適切",
+          "reason": "減算の左結合で(3×2−5)−1となり右部分木が違う。"
+        },
+        "4": {
+          "value": "3×2−(5−1)",
+          "verdict": "適切",
+          "reason": "左部分木3×2から右部分木5−1を引く構造に合う。"
+        },
+        "5": {
+          "value": "3×2−5×1",
+          "verdict": "不適切",
+          "reason": "右部分木は乗算でなく減算である。"
+        }
+      },
+      "figures": "原典の木・道路接続・構文経路・矢印を画像確認。教材では独自の構造表現で説明し原図転載なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/basic/page_007.png",
+        "extracted/pages/H27/basic/page_008.png"
+      ],
+      "core_concept": "左右の部分木と根の演算から算術木を中置式へ読み戻す。",
+      "required_knowledge": "算術木の左右順と演算子の優先・結合。",
+      "solution": "根は減算、左の子は乗算3×2、右の子は減算5−1である。よって3×2−(5−1)、4。葉だけを左から並べると括弧で指定する構造を失う。",
+      "answer_reason": "根は減算、左の子は乗算3×2、右の子は減算5−1である。よって3×2−(5−1)、4。葉だけを左から並べると括弧で指定する構造を失う。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。根減算、左3×2、右5−1。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:discrete:expression"
+      ],
+      "discipline_id": "basic_2_0",
+      "concept_id": "expression_tree_postorder",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は算術木の左右順と演算子の優先・結合。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。定義から短い計算又は反例を構成する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-2-6",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "IPv4とIPv6のビット長から表現可能なアドレス総数の倍率を求める。",
+      "summary": "IPv4とIPv6のビット長から表現可能なアドレス総数の倍率を求める。",
+      "conditions": {
+        "判断対象": "nビットの全列2のn乗と、指数の差による状態数の比。",
+        "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+      },
+      "choices": {
+        "1": {
+          "value": "2の8乗倍",
+          "verdict": "不適切",
+          "reason": "IPv6とIPv4のビット長の差は96であり、この指数ではない。"
+        },
+        "2": {
+          "value": "2の16乗倍",
+          "verdict": "不適切",
+          "reason": "IPv6とIPv4のビット長の差は96であり、この指数ではない。"
+        },
+        "3": {
+          "value": "2の32乗倍",
+          "verdict": "不適切",
+          "reason": "IPv6とIPv4のビット長の差は96であり、この指数ではない。"
+        },
+        "4": {
+          "value": "2の64乗倍",
+          "verdict": "不適切",
+          "reason": "IPv6とIPv4のビット長の差は96であり、この指数ではない。"
+        },
+        "5": {
+          "value": "2の96乗倍",
+          "verdict": "適切",
+          "reason": "128−32=96ビットの差に対応する。"
+        }
+      },
+      "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/basic/page_011.png",
+        "extracted/pages/H28/basic/page_012.png"
+      ],
+      "core_concept": "IPv4とIPv6のビット長から表現可能なアドレス総数の倍率を求める。",
+      "required_knowledge": "nビットの全列2のn乗と、指数の差による状態数の比。",
+      "solution": "IPv4は4×8=32ビット、IPv6は8×16=128ビット。全ビット列数の比は2の128乗/2の32乗=2の96乗である。予約・用途による割当の割合でなく表現可能な全列を数える。",
+      "answer_reason": "IPv4は4×8=32ビット、IPv6は8×16=128ビット。全ビット列数の比は2の128乗/2の32乗=2の96乗である。予約・用途による割当の割合でなく表現可能な全列を数える。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。128−32=96bit増、2の96乗。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:discrete:bitcount"
+      ],
+      "discipline_id": "basic_2_2",
+      "concept_id": "discrete_state_counts",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心はnビットの全列2のn乗と、指数の差による状態数の比。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。定義から短い計算又は反例を構成する。"
+      },
+      "citations": [
+        "rfc4291_addresses"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-2-6",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "IPv4とIPv6のビット長から表現可能なアドレス総数の倍率を求める。",
+      "summary": "IPv4とIPv6のビット長から表現可能なアドレス総数の倍率を求める。",
+      "conditions": {
+        "判断対象": "nビットの全列2のn乗と、指数の差による状態数の比。",
+        "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+      },
+      "choices": {
+        "1": {
+          "value": "2の4乗倍",
+          "verdict": "不適切",
+          "reason": "IPv6とIPv4のビット長の差は96であり、この指数ではない。"
+        },
+        "2": {
+          "value": "2の16乗倍",
+          "verdict": "不適切",
+          "reason": "IPv6とIPv4のビット長の差は96であり、この指数ではない。"
+        },
+        "3": {
+          "value": "2の32乗倍",
+          "verdict": "不適切",
+          "reason": "IPv6とIPv4のビット長の差は96であり、この指数ではない。"
+        },
+        "4": {
+          "value": "2の96乗倍",
+          "verdict": "適切",
+          "reason": "128−32=96ビットの差に対応する。"
+        },
+        "5": {
+          "value": "2の128乗倍",
+          "verdict": "不適切",
+          "reason": "IPv6とIPv4のビット長の差は96であり、この指数ではない。"
+        }
+      },
+      "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/basic/page_009.png",
+        "extracted/pages/R04/basic/page_010.png"
+      ],
+      "core_concept": "IPv4とIPv6のビット長から表現可能なアドレス総数の倍率を求める。",
+      "required_knowledge": "nビットの全列2のn乗と、指数の差による状態数の比。",
+      "solution": "IPv4は4×8=32ビット、IPv6は8×16=128ビット。全ビット列数の比は2の128乗/2の32乗=2の96乗である。予約・用途による割当の割合でなく表現可能な全列を数える。",
+      "answer_reason": "IPv4は4×8=32ビット、IPv6は8×16=128ビット。全ビット列数の比は2の128乗/2の32乗=2の96乗である。予約・用途による割当の割合でなく表現可能な全列を数える。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。2の128乗/2の32乗=2の96乗。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:discrete:bitcount"
+      ],
+      "discipline_id": "basic_2_2",
+      "concept_id": "discrete_state_counts",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心はnビットの全列2のn乗と、指数の差による状態数の比。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。定義から短い計算又は反例を構成する。"
+      },
+      "citations": [
+        "rfc4291_addresses"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-2-3",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "試し割りで素数を判定する流れ図の継続条件と割り切れ判定を決める。",
+      "summary": "試し割りで素数を判定する流れ図の継続条件と割り切れ判定を決める。",
+      "conditions": {
+        "判断対象": "因子対の平方根境界、継続判定、割り切れの向き。",
+        "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+      },
+      "choices": {
+        "1": {
+          "value": "I≥√N・IがNで割り切れる",
+          "verdict": "不適切",
+          "reason": "継続範囲が逆で割り算の向きも逆である。"
+        },
+        "2": {
+          "value": "I≥√N・NがIで割り切れない",
+          "verdict": "不適切",
+          "reason": "範囲と非素数へ進む判定が逆である。"
+        },
+        "3": {
+          "value": "I≥√N・NがIで割り切れる",
+          "verdict": "不適切",
+          "reason": "範囲が逆でN=9等を正しく調べられない。"
+        },
+        "4": {
+          "value": "I≤√N・NがIで割り切れない",
+          "verdict": "不適切",
+          "reason": "割り切れない時に非素数と出すので逆である。"
+        },
+        "5": {
+          "value": "I≤√N・NがIで割り切れる",
+          "verdict": "適切",
+          "reason": "2から平方根まで調べ、割り切れるなら非素数である。"
+        }
+      },
+      "figures": "原典の木・道路接続・構文経路・矢印を画像確認。教材では独自の構造表現で説明し原図転載なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/basic/page_008.png"
+      ],
+      "core_concept": "試し割りで素数を判定する流れ図の継続条件と割り切れ判定を決める。",
+      "required_knowledge": "因子対の平方根境界、継続判定、割り切れの向き。",
+      "solution": "合成数N=uvでは片方の因子が√N以下である。I=2からI≤√Nの間にN%I=0を調べ、真なら非素数、偽ならIを増やす。範囲を越えたら素数である。5となる。平方根が整数のときも含めるため≤が必要である。",
+      "answer_reason": "合成数N=uvでは片方の因子が√N以下である。I=2からI≤√Nの間にN%I=0を調べ、真なら非素数、偽ならIを増やす。範囲を越えたら素数である。5となる。平方根が整数のときも含めるため≤が必要である。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。I≤√Nを継続し、N%I=0で非素数。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:discrete:invariants"
+      ],
+      "discipline_id": "basic_2_8",
+      "concept_id": "algorithm_scan_invariants",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は因子対の平方根境界、継続判定、割り切れの向き。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。定義から短い計算又は反例を構成する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-BASIC-2-5",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "乗除を加算より先に行う中置式を後置記法へ変換する。",
+      "summary": "乗除を加算より先に行う中置式を後置記法へ変換する。",
+      "conditions": {
+        "判断対象": "算術木の左・右・根の後行順走査と演算優先。",
+        "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+      },
+      "choices": {
+        "1": {
+          "value": "ab×cd÷+",
+          "verdict": "適切",
+          "reason": "左右の部分式ab×とcd÷を終えて根の+を出す。"
+        },
+        "2": {
+          "value": "ab×c÷d+",
+          "verdict": "不適切",
+          "reason": "(a×b)÷c+dとなり除算の対象が違う。"
+        },
+        "3": {
+          "value": "abc×÷d+",
+          "verdict": "不適切",
+          "reason": "a÷(b×c)+dとなり括りが違う。"
+        },
+        "4": {
+          "value": "abc+d÷×",
+          "verdict": "不適切",
+          "reason": "a×((b+c)÷d)となり加算対象が違う。"
+        },
+        "5": {
+          "value": "abcd×÷+",
+          "verdict": "不適切",
+          "reason": "a+b÷(c×d)となり根以下の構造が違う。"
+        }
+      },
+      "figures": "原典の木・道路接続・構文経路・矢印を画像確認。教材では独自の構造表現で説明し原図転載なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/basic/page_009.png"
+      ],
+      "core_concept": "乗除を加算より先に行う中置式を後置記法へ変換する。",
+      "required_knowledge": "算術木の左・右・根の後行順走査と演算優先。",
+      "solution": "対象はa×b+c÷dである。左部分式a×bはab×、右部分式c÷dはcd÷となる。両者を加える根を最後に置けばab×cd÷+、1である。",
+      "answer_reason": "対象はa×b+c÷dである。左部分式a×bはab×、右部分式c÷dはcd÷となる。両者を加える根を最後に置けばab×cd÷+、1である。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。a×b+c÷dのpostorder ab×cd÷+。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:discrete:expression"
+      ],
+      "discipline_id": "basic_2_0",
+      "concept_id": "expression_tree_postorder",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は算術木の左・右・根の後行順走査と演算優先。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。定義から短い計算又は反例を構成する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-BASIC-2-6",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "三集合の包除原理から和集合の補集合の要素数を求める。",
+      "summary": "三集合の包除原理から和集合の補集合の要素数を求める。",
+      "conditions": {
+        "数値": "|U|900、|A|300、|B|180、|C|128、|A∩B|60、|A∩C|43、|B∩C|26、三重9。",
+        "対象": "上線はA∪B∪C全体の補集合である。"
+      },
+      "choices": {
+        "1": {
+          "value": "385",
+          "verdict": "不適切",
+          "reason": "与えた交差数の包除と全体900からの差引きに合わない。"
+        },
+        "2": {
+          "value": "412",
+          "verdict": "適切",
+          "reason": "和集合488の補集合は900−488=412である。"
+        },
+        "3": {
+          "value": "420",
+          "verdict": "不適切",
+          "reason": "三重交差等の補正を正しく扱った412とは異なる。"
+        },
+        "4": {
+          "value": "480",
+          "verdict": "不適切",
+          "reason": "三重交差の加算を落とした等の誤りであり412ではない。"
+        },
+        "5": {
+          "value": "488",
+          "verdict": "不適切",
+          "reason": "488は和集合の数であり問う補集合ではない。"
+        }
+      },
+      "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/basic/page_010.png",
+        "extracted/pages/H30/basic/page_011.png"
+      ],
+      "core_concept": "三集合の包除原理から和集合の補集合の要素数を求める。",
+      "required_knowledge": "三集合の重複補正と補集合の分母。",
+      "solution": "和集合の数は300+180+128−60−43−26+9=488である。原典では和集合全体へ上線が付いており、その補集合を問う。全体900から引いて412、2となる。",
+      "answer_reason": "和集合の数は300+180+128−60−43−26+9=488である。原典では和集合全体へ上線が付いており、その補集合を問う。全体900から引いて412、2となる。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。和集合488、全体900から引き412。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:information:sets",
+        "theory:discrete:inclusion"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "set_inclusion_exclusion",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は三集合の重複補正と補集合の分母。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。定義から短い計算又は反例を構成する。"
+      },
+      "citations": [
+        "mit_discrete2015"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-2-2",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "同じ二分探索木を作る挿入順を、部分木の祖先が先に入る条件から選ぶ。",
+      "summary": "同じ二分探索木を作る挿入順を、部分木の祖先が先に入る条件から選ぶ。",
+      "conditions": {
+        "判断対象": "二分探索木の大小分岐と親子の挿入先行。",
+        "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+      },
+      "choices": {
+        "1": {
+          "value": "8,5,7,12,3,10,6",
+          "verdict": "適切",
+          "reason": "12を10より、7を6より先に入れ、根8と左根5も維持する。"
+        },
+        "2": {
+          "value": "8,5,7,10,3,12,6",
+          "verdict": "不適切",
+          "reason": "10が12より先なので右部分木の根が10になる。"
+        },
+        "3": {
+          "value": "8,5,6,12,3,10,7",
+          "verdict": "不適切",
+          "reason": "6が7より先なので5の右部分木の根が6になる。"
+        },
+        "4": {
+          "value": "8,5,3,10,7,12,6",
+          "verdict": "不適切",
+          "reason": "10が12より先なので右部分木が変わる。"
+        },
+        "5": {
+          "value": "8,5,3,12,6,10,7",
+          "verdict": "不適切",
+          "reason": "6が7より先なので左側部分木が変わる。"
+        }
+      },
+      "figures": "原典の木・道路接続・構文経路・矢印を画像確認。教材では独自の構造表現で説明し原図転載なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/basic/page_008.png"
+      ],
+      "core_concept": "同じ二分探索木を作る挿入順を、部分木の祖先が先に入る条件から選ぶ。",
+      "required_knowledge": "二分探索木の大小分岐と親子の挿入先行。",
+      "solution": "原典の根8、左5、右12、5の左右3/7、7の左6、12の左10を保つ。挿入順は親を子より先にし、別枝は前後してよい。1だけが12より前に10を置かず、7より前に6を置かない。",
+      "answer_reason": "原典の根8、左5、右12、5の左右3/7、7の左6、12の左10を保つ。挿入順は親を子より先にし、別枝は前後してよい。1だけが12より前に10を置かず、7より前に6を置かない。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。12が10より先、7が6より先。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:discrete:bst"
+      ],
+      "discipline_id": "basic_2_0",
+      "concept_id": "binary_search_tree_order",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は二分探索木の大小分岐と親子の挿入先行。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。定義から短い計算又は反例を構成する。"
+      },
+      "citations": [
+        "princeton_bst"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-2-6",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "スタック操作の途中状態を追って最後のPOPの戻り値を求める。",
+      "summary": "スタック操作の途中状態を追って最後のPOPの戻り値を求める。",
+      "conditions": {
+        "判断対象": "後入れ先出し、PUSH/POPの状態と戻り値。",
+        "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+      },
+      "choices": {
+        "1": {
+          "value": "1",
+          "verdict": "不適切",
+          "reason": "1は最後にスタックへ残る底の値である。"
+        },
+        "2": {
+          "value": "2",
+          "verdict": "適切",
+          "reason": "取り出し列4,3,5,2の最後である。"
+        },
+        "3": {
+          "value": "3",
+          "verdict": "不適切",
+          "reason": "2回目のPOPで既に取り出されている。"
+        },
+        "4": {
+          "value": "4",
+          "verdict": "不適切",
+          "reason": "1回目のPOPの値である。"
+        },
+        "5": {
+          "value": "5",
+          "verdict": "不適切",
+          "reason": "最後から2回目のPOPの値である。"
+        }
+      },
+      "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/basic/page_011.png",
+        "extracted/pages/R01/basic/page_012.png"
+      ],
+      "core_concept": "スタック操作の途中状態を追って最後のPOPの戻り値を求める。",
+      "required_knowledge": "後入れ先出し、PUSH/POPの状態と戻り値。",
+      "solution": "底から[1,2,3,4]となりPOPで4と3を除く。[1,2]へ5をPUSHし、POPで5、最後のPOPで2が返る。残る1と最後に返った2を区別し2を選ぶ。",
+      "answer_reason": "底から[1,2,3,4]となりPOPで4と3を除く。[1,2]へ5をPUSHし、POPで5、最後のPOPで2が返る。残る1と最後に返った2を区別し2を選ぶ。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。取り出す順4,3,5,2。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:discrete:stack"
+      ],
+      "discipline_id": "basic_2_0",
+      "concept_id": "stack",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は後入れ先出し、PUSH/POPの状態と戻り値。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。定義から短い計算又は反例を構成する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-BASIC-2-2",
+      "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+      "stem": "拡張ユークリッド互除法の行列積から最大公約数と指定係数を求める。",
+      "summary": "拡張ユークリッド互除法の行列積から最大公約数と指定係数を求める。",
+      "conditions": {
+        "判断対象": "割り算の余り、(0,1;1,−q)の行変換、Bézout係数。",
+        "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+      },
+      "choices": {
+        "1": {
+          "value": "(6, -1, 2)",
+          "verdict": "不適切",
+          "reason": "指定する係数行又は最大公約数が違う。線形和は6となるが、gとの一致だけで指定行列の行とは限らない。"
+        },
+        "2": {
+          "value": "(6, 1, -2)",
+          "verdict": "不適切",
+          "reason": "指定する係数行又は最大公約数が違う。線形和は-6となるが、gとの一致だけで指定行列の行とは限らない。"
+        },
+        "3": {
+          "value": "(6, 1, 2)",
+          "verdict": "不適切",
+          "reason": "指定する係数行又は最大公約数が違う。線形和は222となるが、gとの一致だけで指定行列の行とは限らない。"
+        },
+        "4": {
+          "value": "(3, 9, -17)",
+          "verdict": "適切",
+          "reason": "指定行列の第二行と最大公約数が全て一致する。"
+        },
+        "5": {
+          "value": "(3, -10, 19)",
+          "verdict": "不適切",
+          "reason": "指定する係数行又は最大公約数が違う。線形和は3となるが、gとの一致だけで指定行列の行とは限らない。"
+        }
+      },
+      "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/basic/page_007.png"
+      ],
+      "core_concept": "拡張ユークリッド互除法の行列積から最大公約数と指定係数を求める。",
+      "required_knowledge": "割り算の余り、(0,1;1,−q)の行変換、Bézout係数。",
+      "solution": "余り51,6,3,0からgcdは3。商1,1,8の変換行列を順に左から積むと(−1,2;9,−17)となる。指定第二行は9,−17で108×9−57×17=3、4である。5も線形和3を満たす別のBézout解だが、指定行列の第二行ではない。",
+      "answer_reason": "余り51,6,3,0からgcdは3。商1,1,8の変換行列を順に左から積むと(−1,2;9,−17)となる。指定第二行は9,−17で108×9−57×17=3、4である。5も線形和3を満たす別のBézout解だが、指定行列の第二行ではない。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。gcd3、第二行9,−17、972−969=3。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:information:euclid",
+        "theory:discrete:extended"
+      ],
+      "discipline_id": "basic_2_8",
+      "concept_id": "extended_euclid_matrix",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は割り算の余り、(0,1;1,−q)の行変換、Bézout係数。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。複数段の図・式・状態の追跡を要する。"
+      },
+      "citations": [
+        "mit_discrete2015"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-BASIC-2-5",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "stem": "拡張ユークリッド互除法の行列積から最大公約数と指定係数を求める。",
+      "summary": "拡張ユークリッド互除法の行列積から最大公約数と指定係数を求める。",
+      "conditions": {
+        "判断対象": "割り算の余り、(0,1;1,−q)の行変換、Bézout係数。",
+        "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+      },
+      "choices": {
+        "1": {
+          "value": "(5, 2, -3)",
+          "verdict": "不適切",
+          "reason": "指定する係数行又は最大公約数が違う。線形和は13となるが、gとの一致だけで指定行列の行とは限らない。"
+        },
+        "2": {
+          "value": "(5, -3, 5)",
+          "verdict": "不適切",
+          "reason": "指定する係数行又は最大公約数が違う。線形和は13となるが、gとの一致だけで指定行列の行とは限らない。"
+        },
+        "3": {
+          "value": "(8, 3, -3)",
+          "verdict": "不適切",
+          "reason": "指定する係数行又は最大公約数が違う。線形和は117となるが、gとの一致だけで指定行列の行とは限らない。"
+        },
+        "4": {
+          "value": "(13, 2, -3)",
+          "verdict": "適切",
+          "reason": "指定行列の第二行と最大公約数が全て一致する。"
+        },
+        "5": {
+          "value": "(13, -3, 5)",
+          "verdict": "不適切",
+          "reason": "指定する係数行又は最大公約数が違う。線形和は13となるが、gとの一致だけで指定行列の行とは限らない。"
+        }
+      },
+      "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/basic/page_008.png"
+      ],
+      "core_concept": "拡張ユークリッド互除法の行列積から最大公約数と指定係数を求める。",
+      "required_knowledge": "割り算の余り、(0,1;1,−q)の行変換、Bézout係数。",
+      "solution": "余り39,26,13,0からgcdは13。商1,1,1の変換T=(0,1;1,−1)に対しTの3乗=(−1,2;2,−3)。指定第二行2,−3は104×2−65×3=13で4である。5の−3,5も線形和13だが指定行ではない。",
+      "answer_reason": "余り39,26,13,0からgcdは13。商1,1,1の変換T=(0,1;1,−1)に対しTの3乗=(−1,2;2,−3)。指定第二行2,−3は104×2−65×3=13で4である。5の−3,5も線形和13だが指定行ではない。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。gcd13、行列第二行2,−3、208−195=13。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:information:euclid",
+        "theory:discrete:extended"
+      ],
+      "discipline_id": "basic_2_8",
+      "concept_id": "extended_euclid_matrix",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は割り算の余り、(0,1;1,−q)の行変換、Bézout係数。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。複数段の図・式・状態の追跡を要する。"
+      },
+      "citations": [
+        "mit_discrete2015"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-BASIC-2-5",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "stem": "除算の優先を保って括弧内の中置式を逆ポーランド記法へ変換する。",
+      "summary": "除算の優先を保って括弧内の中置式を逆ポーランド記法へ変換する。",
+      "conditions": {
+        "原典式": "(A+B÷C)×(D−F)",
+        "OCR差": "生OCRの(A+B−C)は原典に一致しない。÷を別校正へ記録。"
+      },
+      "choices": {
+        "1": {
+          "value": "ABC÷+DF−×",
+          "verdict": "適切",
+          "reason": "B÷Cの後にAを足し、D−Fの後に掛ける順に合う。"
+        },
+        "2": {
+          "value": "AB+C÷DF−×",
+          "verdict": "不適切",
+          "reason": "(A+B)÷Cへ括りを変えている。"
+        },
+        "3": {
+          "value": "ABC÷+D×F−",
+          "verdict": "不適切",
+          "reason": "左式×Dの後でFを引いてしまう。"
+        },
+        "4": {
+          "value": "×+A÷BC−DF",
+          "verdict": "不適切",
+          "reason": "先頭の演算子は後置ではない。"
+        },
+        "5": {
+          "value": "AB+C÷D×F−",
+          "verdict": "不適切",
+          "reason": "左の除算対象と最後の減算の括りが違う。"
+        }
+      },
+      "figures": "原典の木・道路接続・構文経路・矢印を画像確認。教材では独自の構造表現で説明し原図転載なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/basic/page_009.png"
+      ],
+      "core_concept": "除算の優先を保って括弧内の中置式を逆ポーランド記法へ変換する。",
+      "required_knowledge": "演算子の優先順位と後行順走査。",
+      "solution": "原典は(A+B÷C)×(D−F)である。左部分木はAとB÷Cを加えるのでABC÷+、右部分木はDF−。根の乗算を最後にしてABC÷+DF−×、1。OCRの減算らしい記号を採用せず原典の÷を保持する。",
+      "answer_reason": "原典は(A+B÷C)×(D−F)である。左部分木はAとB÷Cを加えるのでABC÷+、右部分木はDF−。根の乗算を最後にしてABC÷+DF−×、1。OCRの減算らしい記号を採用せず原典の÷を保持する。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。原典(A+B÷C)×(D−F)、ABC÷+DF−×。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:discrete:expression"
+      ],
+      "discipline_id": "basic_2_0",
+      "concept_id": "expression_tree_postorder",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は演算子の優先順位と後行順走査。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。定義から短い計算又は反例を構成する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-BASIC-2-6",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "stem": "漸近上界の定義から多項式・対数・指数・二重指数の四記述を判定する。",
+      "summary": "漸近上界の定義から多項式・対数・指数・二重指数の四記述を判定する。",
+      "conditions": {
+        "ア": "5n^3+1=O(n^3)",
+        "イ": "n log2 n=O(n^1.5)",
+        "ウ": "n^3 3^n=O(4^n)",
+        "エ": "2^(2^n)=O(10^(n^100))"
+      },
+      "choices": {
+        "1": {
+          "value": "正・誤・誤・誤",
+          "verdict": "不適切",
+          "reason": "対数と多項式、3/4の指数減衰を不適切に否定する。"
+        },
+        "2": {
+          "value": "正・正・誤・正",
+          "verdict": "不適切",
+          "reason": "ウは正でエは誤なので二か所が逆である。"
+        },
+        "3": {
+          "value": "正・正・正・誤",
+          "verdict": "適切",
+          "reason": "ア・イ・ウの比は有界で、エは発散する。"
+        },
+        "4": {
+          "value": "正・誤・正・誤",
+          "verdict": "不適切",
+          "reason": "イも正なので対数の成長を過大評価する。"
+        },
+        "5": {
+          "value": "誤・誤・誤・正",
+          "verdict": "不適切",
+          "reason": "四記述の判断が逆である。"
+        }
+      },
+      "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/basic/page_010.png",
+        "extracted/pages/R03/basic/page_011.png"
+      ],
+      "core_concept": "漸近上界の定義から多項式・対数・指数・二重指数の四記述を判定する。",
+      "required_knowledge": "Oは十分大きいnで定数倍に抑えられる上界である。対数・多項式・指数の比を調べる。",
+      "solution": "アは(5nの3乗+1)/nの3乗≤6。イのlog2(n)/√nは0へ、ウのnの3乗×(3/4)のn乗も0へ収束する。エは2の(2のn乗)と10の(nの100乗)の比較で、比の対数は2のn乗ln2−nの100乗ln10となり正無限大へ発散する。従って正正正誤、3である。",
+      "answer_reason": "アは(5nの3乗+1)/nの3乗≤6。イのlog2(n)/√nは0へ、ウのnの3乗×(3/4)のn乗も0へ収束する。エは2の(2のn乗)と10の(nの100乗)の比較で、比の対数は2のn乗ln2−nの100乗ln10となり正無限大へ発散する。従って正正正誤、3である。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。ア正イ正ウ正エ誤。二重指数2の2のn乗が10のn100乗を越える。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:discrete:asymptotic"
+      ],
+      "discipline_id": "basic_2_8",
+      "concept_id": "asymptotic_growth_order",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心はOは十分大きいnで定数倍に抑えられる上界である。対数・多項式・指数の比を調べる。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。複数段の図・式・状態の追跡を要する。"
+      },
+      "citations": [
+        "mit_discrete2015"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-2-2",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "四集合の包除原理から四重共通部分の要素数を逆算する。",
+      "summary": "四集合の包除原理から四重共通部分の要素数を逆算する。",
+      "conditions": {
+        "判断対象": "四集合の包除と二重6・三重4の数え上げ。",
+        "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+      },
+      "choices": {
+        "1": {
+          "value": "8",
+          "verdict": "不適切",
+          "reason": "三重共通部分の一つ4より大きく包含条件にも反する。"
+        },
+        "2": {
+          "value": "4",
+          "verdict": "不適切",
+          "reason": "包除式では和集合14となり条件16と違う。"
+        },
+        "3": {
+          "value": "2",
+          "verdict": "適切",
+          "reason": "44−42+16−2=16で条件に合う。"
+        },
+        "4": {
+          "value": "1",
+          "verdict": "不適切",
+          "reason": "包除式で和集合17となる。"
+        },
+        "5": {
+          "value": "0",
+          "verdict": "不適切",
+          "reason": "包除式で和集合18となる。"
+        }
+      },
+      "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/basic/page_005.png"
+      ],
+      "core_concept": "四集合の包除原理から四重共通部分の要素数を逆算する。",
+      "required_knowledge": "四集合の包除と二重6・三重4の数え上げ。",
+      "solution": "単集合は4通り、二重は6通り、三重は4通りなので、和集合16=4×11−6×7+4×4−x=18−x。x=2、3である。各交差が同じ値でも、一つだけ引いたり足したりせず組合せ数を掛ける。",
+      "answer_reason": "単集合は4通り、二重は6通り、三重は4通りなので、和集合16=4×11−6×7+4×4−x=18−x。x=2、3である。各交差が同じ値でも、一つだけ引いたり足したりせず組合せ数を掛ける。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。16=44−42+16−x、x=2。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:discrete:inclusion"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "set_inclusion_exclusion",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は四集合の包除と二重6・三重4の数え上げ。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。定義から短い計算又は反例を構成する。"
+      },
+      "citations": [
+        "mit_discrete2015"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-2-1",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "直積集合を定義域とする全写像の数を積の法則で求める。",
+      "summary": "直積集合を定義域とする全写像の数を積の法則で求める。",
+      "conditions": {
+        "判断対象": "直積の要素数と有限集合間の全写像数。",
+        "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+      },
+      "choices": {
+        "1": {
+          "value": "12",
+          "verdict": "不適切",
+          "reason": "6×2は定義域と像の組の総数であり写像数ではない。"
+        },
+        "2": {
+          "value": "36",
+          "verdict": "不適切",
+          "reason": "6の2乗は方向を逆にした数え方である。"
+        },
+        "3": {
+          "value": "64",
+          "verdict": "適切",
+          "reason": "6要素の各像を独立に2択から選ぶ2の6乗である。"
+        },
+        "4": {
+          "value": "81",
+          "verdict": "不適切",
+          "reason": "3の4乗は今回の定義域と値域の要素数に合わない。"
+        },
+        "5": {
+          "value": "128",
+          "verdict": "不適切",
+          "reason": "2の7乗であり定義域要素を一つ多く数えている。"
+        }
+      },
+      "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/basic/page_005.png"
+      ],
+      "core_concept": "直積集合を定義域とする全写像の数を積の法則で求める。",
+      "required_knowledge": "直積の要素数と有限集合間の全写像数。",
+      "solution": "|A×B|=3×2=6である。各順序対の像をCの2要素から選ぶので、全写像は2の6乗=64、3である。単射・全射という条件はなく同じ像を複数の要素へ割り当ててよい。",
+      "answer_reason": "|A×B|=3×2=6である。各順序対の像をCの2要素から選ぶので、全写像は2の6乗=64、3である。単射・全射という条件はなく同じ像を複数の要素へ割り当ててよい。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。直積6要素の各像は2択、2の6乗64。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:discrete:mappings"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "discrete_state_counts",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は直積の要素数と有限集合間の全写像数。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。定義から短い計算又は反例を構成する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-2-6",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "アッカーマン関数の二段の再帰を展開してA(2,2)を求める。",
+      "summary": "アッカーマン関数の二段の再帰を展開してA(2,2)を求める。",
+      "conditions": {
+        "基底": "A(0,n)=n+1",
+        "零引数": "A(m+1,0)=A(m,1)",
+        "再帰": "A(m+1,n+1)=A(m,A(m+1,n))"
+      },
+      "choices": {
+        "1": {
+          "value": "7",
+          "verdict": "適切",
+          "reason": "A(1,n)=n+2、A(2,n)=2n+3より7である。"
+        },
+        "2": {
+          "value": "8",
+          "verdict": "不適切",
+          "reason": "各再帰段の増分2と初期3を適用した7ではない。"
+        },
+        "3": {
+          "value": "9",
+          "verdict": "不適切",
+          "reason": "n=3のA(2,3)=9でありnを一つ多くしている。"
+        },
+        "4": {
+          "value": "10",
+          "verdict": "不適切",
+          "reason": "再帰の初期値又は増分の誤りである。"
+        },
+        "5": {
+          "value": "11",
+          "verdict": "不適切",
+          "reason": "A(2,4)=11であり二段多く展開している。"
+        }
+      },
+      "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/basic/page_007.png",
+        "extracted/pages/R07/basic/page_008.png"
+      ],
+      "core_concept": "アッカーマン関数の二段の再帰を展開してA(2,2)を求める。",
+      "required_knowledge": "非負整数の再帰基底と入れ子の引数評価。",
+      "solution": "A(1,0)=A(0,1)=2、A(1,n+1)=A(0,A(1,n))=A(1,n)+1なのでA(1,n)=n+2。A(2,0)=A(1,1)=3、A(2,n+1)=A(1,A(2,n))=A(2,n)+2。したがってA(2,1)=5、A(2,2)=7、1である。内側再帰の結果を外側の引数へ渡す。",
+      "answer_reason": "A(1,0)=A(0,1)=2、A(1,n+1)=A(0,A(1,n))=A(1,n)+1なのでA(1,n)=n+2。A(2,0)=A(1,1)=3、A(2,n+1)=A(1,A(2,n))=A(2,n)+2。したがってA(2,1)=5、A(2,2)=7、1である。内側再帰の結果を外側の引数へ渡す。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回21解答を不変JSONに保存。A1,n=n+2、A2,n=2n+3、A2,2=7。",
+      "learning_points": "定義した対象量、演算順序、保存条件を固定し、途中状態と候補の違いを比較する。",
+      "theory_references": [
+        "theory:discrete:recursion"
+      ],
+      "discipline_id": "basic_2_8",
+      "concept_id": "ackermann_recursion",
+      "cross_concepts": [],
+      "classification_reason": "原典の中心は非負整数の再帰基底と入れ子の引数評価。である。一般語の一致でなく実際の解法から学習分野を判断する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻に既知の数学と新しいデータ表現を対応させる。複数段の図・式・状態の追跡を要する。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

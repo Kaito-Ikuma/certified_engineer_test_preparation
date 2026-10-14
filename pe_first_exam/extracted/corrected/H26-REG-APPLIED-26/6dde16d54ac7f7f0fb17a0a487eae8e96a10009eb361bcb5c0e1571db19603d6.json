@@ -1,0 +1,44 @@
+{
+  "stem": "地球の反射率、太陽放射帯域、季節原因、太陽定数と緯度間の熱収支を判定する。",
+  "conditions": {
+    "方向": "最も適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "入射の約31%が雲・大気・地表で反射散乱され宇宙へ戻る。",
+      "verdict": "最適",
+      "reason": "問題で採る全球平均反射率約3割の代表値と合う。時間・雲・地表で変化するので正確な不変定数ではない。"
+    },
+    "2": {
+      "value": "太陽放射の約半分はガンマ線・X線。",
+      "verdict": "不適切",
+      "reason": "太陽放射の主な帯域は可視・近赤外であり、高エネルギー放射が半分ではない。"
+    },
+    "3": {
+      "value": "地球太陽距離の変化が四季の原因。",
+      "verdict": "不適切",
+      "reason": "地軸の傾きで太陽高度と日長が変わることが主因であり、南北半球の季節は逆になる。"
+    },
+    "4": {
+      "value": "大気下端の太陽垂直面の受光を太陽定数という。",
+      "verdict": "不適切",
+      "reason": "大気の吸収散乱の影響を除いた大気上端で、太陽光に垂直な単位面積あたりの放射束で定義する。"
+    },
+    "5": {
+      "value": "吸収日射の緯度差は小さく、高緯度の放出が低緯度より大きい。",
+      "verdict": "不適切",
+      "reason": "低緯度の日射吸収は大きく、正味収支の緯度差を大気・海洋の熱輸送が補う。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_011.png"
+  ],
+  "question_id": "H26-REG-APPLIED-26",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "d6f6a0ddc550b893cddefae00e9d81ddfbe59e92dcc5bcc84df22b0c8e3b748e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

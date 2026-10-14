@@ -1,0 +1,45 @@
+{
+  "stem": "気体の水溶性・酸塩基・酸化還元を比較する。",
+  "conditions": {
+    "判断対象": "気体の水溶性・酸塩基・酸化還元を比較する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "H2は最軽量で難溶",
+      "verdict": "選ばない候補",
+      "reason": "通常の中性分子気体の同温同圧比較。"
+    },
+    "2": {
+      "value": "Cl2は黄緑・酸化・漂白",
+      "verdict": "選ばない候補",
+      "reason": "水中HOCl等の酸化作用。"
+    },
+    "3": {
+      "value": "NH3は易溶アルカリ/Haber–Bosch",
+      "verdict": "選ばない候補",
+      "reason": "NH3の塩基性とN2/H2の合成。歴史の初めての範囲は留保。"
+    },
+    "4": {
+      "value": "CO2で石灰水白濁/過剰で溶解",
+      "verdict": "選ばない候補",
+      "reason": "CaCO3生成後に炭酸水素イオンを伴って溶解する。"
+    },
+    "5": {
+      "value": "H2Sは腐卵臭・酸化性・硫化物沈殿",
+      "verdict": "選ぶ候補",
+      "reason": "通常の反応比較ではH2Sは還元剤、酸化性という語が不適切。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "最軽量は通常分子気体の同温同圧比較。NH3工業合成史の初めてという全称・全気体性状の原典当時全文は未照合。",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_005.png"
+  ],
+  "question_id": "H23-REG-APPLIED-13",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "8dc9a276b7942c4a8092e69cd9eb8310afadf308dd256c46c38554b72aa775ea",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

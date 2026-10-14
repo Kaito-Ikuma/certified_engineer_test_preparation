@@ -1,0 +1,45 @@
+{
+  "stem": "フィルタ・差分・共役勾配・平滑化とラテラル検層を区別する。",
+  "conditions": {
+    "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+    "前提": "数値処理又はモデル拘束と、孔内で物理量を測る配置を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "リニアフィルタ",
+      "verdict": "適切",
+      "reason": "入力の和と定数倍に対して同じ関係を保つ信号処理であり、畳み込み等の数値計算で実装できる。"
+    },
+    "2": {
+      "value": "ラテラル法",
+      "verdict": "不適切",
+      "reason": "USGSの電気検層資料では電極間隔と配置で定義されるlateral logとして確認できる。数値解法の算法を指す語ではない。"
+    },
+    "3": {
+      "value": "差分法",
+      "verdict": "適切",
+      "reason": "微分演算を格子値の差へ置き換えて支配方程式の近似解を求める数値法である。"
+    },
+    "4": {
+      "value": "共役勾配法",
+      "verdict": "適切",
+      "reason": "大型の連立系や最小化を反復して解く数値算法である。"
+    },
+    "5": {
+      "value": "平滑化拘束",
+      "verdict": "適切",
+      "reason": "隣接するモデル値の差などを罰することで、逆解の不要な振動を抑える数値的な条件である。"
+    }
+  },
+  "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_012.png"
+  ],
+  "question_id": "R01-REG-APPLIED-35",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "4caa7279c0decdc0468abd85288b4eecc9472e66bc34b364a3db7e0dd51392b8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

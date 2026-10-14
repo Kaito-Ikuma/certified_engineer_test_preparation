@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-09T21:03:56+09:00",
+  "paths": [
+    "generated/questions/applied_science/physics_chemistry/03_thermodynamics.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/physics_chemistry/03_thermodynamics.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/physics_chemistry/03_thermodynamics.tex": "65a5fb292ff1e039161b50320953e70b30be93ab49be7b52e3aa1f8ae2c7fb46"
+  }
+}

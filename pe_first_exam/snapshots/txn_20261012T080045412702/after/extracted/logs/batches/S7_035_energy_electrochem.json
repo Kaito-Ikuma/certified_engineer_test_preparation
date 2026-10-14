@@ -1,0 +1,20 @@
+{
+  "time": "2026-10-12T08:00:45+09:00",
+  "questions": [
+    "H24-REG-APPLIED-14",
+    "H28-REG-APPLIED-12",
+    "R01-RET-APPLIED-12",
+    "H24-REG-APPLIED-17",
+    "H25-REG-APPLIED-11",
+    "H25-REG-APPLIED-12",
+    "H26-REG-APPLIED-13",
+    "H26-REG-APPLIED-15",
+    "H29-REG-APPLIED-07",
+    "R03-REG-APPLIED-06",
+    "R04-REG-APPLIED-15",
+    "R07-REG-APPLIED-10"
+  ],
+  "source_conditions_checked": 12,
+  "solution_drafts": 12,
+  "final_verification": false
+}

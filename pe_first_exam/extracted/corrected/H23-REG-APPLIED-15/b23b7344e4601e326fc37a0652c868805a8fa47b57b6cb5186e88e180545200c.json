@@ -1,0 +1,45 @@
+{
+  "stem": "18炭素の飽和脂肪酸を縮合構造式で数える。",
+  "conditions": {
+    "判断対象": "18炭素の飽和脂肪酸を縮合構造式で数える。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "CH3(CH2)14COOH",
+      "verdict": "選ばない候補",
+      "reason": "16炭素の飽和酸。"
+    },
+    "2": {
+      "value": "CH3(CH2)16COOH",
+      "verdict": "選ぶ候補",
+      "reason": "1+16+1=18炭素で飽和。"
+    },
+    "3": {
+      "value": "CH3(CH2)18COOH",
+      "verdict": "選ばない候補",
+      "reason": "20炭素の飽和酸。"
+    },
+    "4": {
+      "value": "CH3(CH2)7CH=CH(CH2)7COOH",
+      "verdict": "選ばない候補",
+      "reason": "18炭素だが二重結合1個。"
+    },
+    "5": {
+      "value": "CH3(CH2)4CH=CHCH2CH=CH(CH2)7COOH",
+      "verdict": "選ばない候補",
+      "reason": "18炭素だが二重結合2個。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_006.png"
+  ],
+  "question_id": "H23-REG-APPLIED-15",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "660dc97acb9afa2ef0300de84262daa97b569987f1bcd6fbd967c88fbe9117d0",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

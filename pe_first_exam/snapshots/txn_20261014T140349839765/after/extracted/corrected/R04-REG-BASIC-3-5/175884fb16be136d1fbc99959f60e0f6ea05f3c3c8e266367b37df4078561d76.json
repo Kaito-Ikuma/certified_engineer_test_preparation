@@ -1,0 +1,45 @@
+{
+  "stem": "角速度変化から慣性トルク。",
+  "conditions": {
+    "円盤": "慣性モーメントI。",
+    "操作": "角速度ω1からω2へ時間Tで一定角加速度。"
+  },
+  "choices": {
+    "1": {
+      "value": "IΔω",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 IΔω/T と異なる。"
+    },
+    "2": {
+      "value": "IΔωT",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 IΔω/T と異なる。"
+    },
+    "3": {
+      "value": "IΔω/T",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "I(ω2²−ω1²)/2",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 IΔω/T と異なる。"
+    },
+    "5": {
+      "value": "I(ω2²−ω1²)T",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 IΔω/T と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/basic/page_012.png"
+  ],
+  "question_id": "R04-REG-BASIC-3-5",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "12",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "6e3e6faed747d5a416818b2988677a21bb08dce3f6f8f56ef6980c0398bb1eed",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "屈折法の主用途と強震動のS波モデルを区別する。",
+  "conditions": {
+    "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+    "前提": "通常のP波屈折による地山の硬軟・割れ目・風化等の評価を主用途として比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "ダムの基礎岩盤の評価",
+      "verdict": "適切",
+      "reason": "風化・破砕・硬軟の構造を把握する通常の地山評価に関係する。"
+    },
+    "2": {
+      "value": "強震動予測や耐震設計",
+      "verdict": "条件付きで適切",
+      "reason": "P波屈折の代表的な主用途の比較では公式の選択対象である。S波屈折等の応用と地下モデルの補助情報としての役割はあり、全く利用できないという意味ではない。"
+    },
+    "3": {
+      "value": "のり面勾配等の土構造物の基礎調査",
+      "verdict": "適切",
+      "reason": "風化帯や基盤等の地質評価を補助する。速度だけで設計勾配を機械的に決定しない。"
+    },
+    "4": {
+      "value": "不安定土塊の工学的判断",
+      "verdict": "適切",
+      "reason": "土塊・基盤の速度構造が地質状態の判断を助ける。力学強度や地下水等の他情報も要する。"
+    },
+    "5": {
+      "value": "トンネル沿いの地山評価",
+      "verdict": "適切",
+      "reason": "岩盤の風化・破砕帯等の分布を速度情報から把握する代表的用途である。"
+    }
+  },
+  "figures": "図なし。文章又は用語の五候補を画像照合。",
+  "ambiguity": "屈折法にはS波もあり、強震動に寄与する地下情報を得る可能性はある。通常のP波地山調査の主用途という比較を明示し、用途の絶対排除をしない。",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_011.png"
+  ],
+  "question_id": "R02-REG-APPLIED-32",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "d2d5f6b1346568b451958e7692eb6614a2e0d43494694f706bd5ce25a723a4c4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

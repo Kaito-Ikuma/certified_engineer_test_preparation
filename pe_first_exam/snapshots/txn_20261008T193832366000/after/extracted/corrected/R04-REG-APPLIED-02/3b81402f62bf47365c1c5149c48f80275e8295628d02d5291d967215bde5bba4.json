@@ -1,0 +1,45 @@
+{
+  "stem": "慣性、質量、力と加速度、鉛直投射の最高点に関する5記述から不適切なものを判定する。",
+  "conditions": {
+    "selection": "most inappropriate",
+    "mechanics": "Newtonian, fixed mass; gravity during vertical projection"
+  },
+  "choices": {
+    "1": {
+      "value": "合力0なら速度は保たれる",
+      "verdict": "不採用",
+      "reason": "慣性の法則を述べており正しい。"
+    },
+    "2": {
+      "value": "無重力でも質量の違いは測定できる",
+      "verdict": "不採用",
+      "reason": "同じ力による加速度や振動など慣性に基づく方法で質量を比べられる。"
+    },
+    "3": {
+      "value": "同じ質量なら力2倍で加速度2倍",
+      "verdict": "不採用",
+      "reason": "質量一定という通常の前提でF=maから正しい。"
+    },
+    "4": {
+      "value": "合力と加速度は同方向",
+      "verdict": "不採用",
+      "reason": "正の質量を持つ物体の運動方程式から正しい。"
+    },
+    "5": {
+      "value": "鉛直投射の最高点で力が釣り合う",
+      "verdict": "採用",
+      "reason": "速度0は加速度0を意味しない。最高点でも重力は下向きに作用する。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_001.png"
+  ],
+  "question_id": "R04-REG-APPLIED-02",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "c62aef97802938bd1daf85ba5293871189924cebfb55ba37f2c02346085fca60",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

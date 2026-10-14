@@ -1,0 +1,48 @@
+{
+  "stem": "球形の地球の表面近くから水平に発射した物体が地表へ落ちないための最小速度を求める。",
+  "conditions": {
+    "Earth_radius": "R",
+    "surface_gravity": "g",
+    "projectile_mass": "m",
+    "launch": "tangent, just above surface",
+    "air_resistance": "none"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(\\sqrt{gR}\\)",
+      "verdict": "採用",
+      "reason": "円軌道を保つ向心加速度gを与える最小値。"
+    },
+    "2": {
+      "value": "\\(2\\pi\\sqrt{gR}\\)",
+      "verdict": "不採用",
+      "reason": "周期や角周波数の2πを速度へ余分に掛けている。最小値ではない。"
+    },
+    "3": {
+      "value": "\\(\\sqrt{gR}/(2\\pi)\\)",
+      "verdict": "不採用",
+      "reason": "向心加速度がg/(4π²)となり足りない。"
+    },
+    "4": {
+      "value": "\\(m\\sqrt{gR}\\)",
+      "verdict": "不採用",
+      "reason": "発射物の質量が入り、速度の次元も満たさない。"
+    },
+    "5": {
+      "value": "\\(\\sqrt{gR}/m\\)",
+      "verdict": "不採用",
+      "reason": "発射物の質量が入り、速度の次元も満たさない。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_001.png"
+  ],
+  "question_id": "H26-REG-APPLIED-01",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "f4f83f421070d5b0d48d77ae8821c79ff765237b576de82c96589ec71204ec24",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

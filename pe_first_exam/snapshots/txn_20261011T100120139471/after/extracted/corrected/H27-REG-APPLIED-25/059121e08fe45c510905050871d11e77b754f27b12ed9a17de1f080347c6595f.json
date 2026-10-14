@@ -1,0 +1,45 @@
+{
+  "stem": "水の同位体比の基準と天水線の軸、核実験トリチウムと分別を比較する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "同位体の標準・分別又は年代。番号・核種・旧標準名称を原典画像で確認。"
+  },
+  "choices": {
+    "1": {
+      "value": "各種同位体から土壌水・地下水・流出水の滞留を推定。",
+      "verdict": "適切（条件付き）",
+      "reason": "放射性同位体の壊変、安定同位体の入力変動と混合モデルを組み合わせ、適切な条件で滞留を推定できる。安定比だけが単調な年齢時計になるわけではない。"
+    },
+    "2": {
+      "value": "H/Oのδは標準比からの千分偏差、標準平均海水等。",
+      "verdict": "適切（条件付き）",
+      "reason": "δ=(R/Rstd−1)×1000である。原典旧SMOW名称をVSMOW-SLAP尺度とその実現物質へ接続する。"
+    },
+    "3": {
+      "value": "δ18O対δ17Oを天水線と呼ぶ。",
+      "verdict": "不適切",
+      "reason": "天水線は水素δD（δ2H）と酸素δ18Oの関係である。酸素17/18の相関には別の意味があり、それを天水線と呼ばない。"
+    },
+    "4": {
+      "value": "1952年以降核実験トリチウム増加から地下水涵養を推定。",
+      "verdict": "適切（条件付き）",
+      "reason": "核実験が作った1950年代以降の入力履歴を使う。減衰と混合を補正し、同じトリチウム濃度に複数涵養年が対応し得る。"
+    },
+    "5": {
+      "value": "蒸発凝縮の分別でδD・δ18Oが変わる。",
+      "verdict": "適切（条件付き）",
+      "reason": "質量差による平衡・速度論的分別が蒸発凝縮の履歴を残す。混合・蒸発線と地域天水線を分ける。"
+    }
+  },
+  "figures": "問題幹・5肢・否定・質量数・δ記号・標準名称・年度番号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_010.png"
+  ],
+  "question_id": "H27-REG-APPLIED-25",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "d893baa75266fe45a05c53d9e6bdae271bf59c3bd3f68290191b680b50f32189",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

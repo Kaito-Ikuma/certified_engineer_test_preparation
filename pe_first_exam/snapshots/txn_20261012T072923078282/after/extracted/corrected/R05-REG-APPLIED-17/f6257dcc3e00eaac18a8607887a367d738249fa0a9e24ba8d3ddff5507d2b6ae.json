@@ -1,0 +1,45 @@
+{
+  "stem": "一定温度・圧力のAとBの可逆反応で、実際の反応ギブズエネルギーと標準量を区別する。",
+  "conditions": {
+    "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+    "成立条件": "定温定圧の \\(\\mathrm{A\\rightleftharpoons B}\\)。標準生成ギブズエネルギーの差と実際の組成による反応量を区別する。濃度比で活量比を近似する条件を明記する。"
+  },
+  "choices": {
+    "1": {
+      "value": "一定温度なら濃度比が変わっても反応量は一定",
+      "verdict": "不適切",
+      "reason": "標準反応量と異なり、実際の反応量は反応商に依存する。"
+    },
+    "2": {
+      "value": "反応ギブズエネルギー負なら正方向へ進む",
+      "verdict": "適切",
+      "reason": "定温定圧で正方向の反応進行が系のギブズエネルギーを低下させる。"
+    },
+    "3": {
+      "value": "平衡定数は標準生成ギブズエネルギーから求まる",
+      "verdict": "適切",
+      "reason": "標準反応量を求めて指数式に代入する。"
+    },
+    "4": {
+      "value": "標準生成量から反応標準量を求める",
+      "verdict": "適切",
+      "reason": "生成物の標準生成ギブズエネルギーの和から反応物の和を化学量論係数付きで引く。"
+    },
+    "5": {
+      "value": "平衡では反応ギブズエネルギーが0",
+      "verdict": "適切",
+      "reason": "反応進行度に関するギブズエネルギーの微分が0となる。"
+    }
+  },
+  "figures": "文字記述又は順序候補であり図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_006.png"
+  ],
+  "question_id": "R05-REG-APPLIED-17",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "6e773cf818c0bba6b2528a02d50909bfa893f55dbfd056ce214b75f4965545d9",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

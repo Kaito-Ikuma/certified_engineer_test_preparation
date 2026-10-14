@@ -1,0 +1,45 @@
+{
+  "stem": "旧制度の外部通報要件を四つの条件で照合する。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+    "時点": "平成24年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "OXOO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+    },
+    "2": {
+      "value": "OOXO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+    },
+    "3": {
+      "value": "OOOO",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "OOOX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+    },
+    "5": {
+      "value": "XOOO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "2012施行版の全条文逐条対照は未実施。改正前ハンドブックと2017旧FAQで枠組みを確認。4条件を必要十分な全リストへ拡張しない。",
+  "evidence": [
+    "extracted/pages/H24/aptitude/page_007.png"
+  ],
+  "question_id": "H24-REG-APT-08",
+  "source_file": "sources/H24/aptitude.pdf",
+  "source_page": "7",
+  "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+  "raw_text_sha256": "0d854c286f0aaeba97a822d083c143622ace1df8d0f7ab6ac6e28879ee267fe0",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

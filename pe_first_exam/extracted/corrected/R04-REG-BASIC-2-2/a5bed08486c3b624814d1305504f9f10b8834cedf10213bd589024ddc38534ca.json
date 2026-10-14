@@ -1,0 +1,45 @@
+{
+  "stem": "四集合の包除原理から四重共通部分の要素数を逆算する。",
+  "conditions": {
+    "判断対象": "四集合の包除と二重6・三重4の数え上げ。",
+    "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+  },
+  "choices": {
+    "1": {
+      "value": "8",
+      "verdict": "不適切",
+      "reason": "三重共通部分の一つ4より大きく包含条件にも反する。"
+    },
+    "2": {
+      "value": "4",
+      "verdict": "不適切",
+      "reason": "包除式では和集合14となり条件16と違う。"
+    },
+    "3": {
+      "value": "2",
+      "verdict": "適切",
+      "reason": "44−42+16−2=16で条件に合う。"
+    },
+    "4": {
+      "value": "1",
+      "verdict": "不適切",
+      "reason": "包除式で和集合17となる。"
+    },
+    "5": {
+      "value": "0",
+      "verdict": "不適切",
+      "reason": "包除式で和集合18となる。"
+    }
+  },
+  "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/basic/page_005.png"
+  ],
+  "question_id": "R04-REG-BASIC-2-2",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "0d03d861d8a50914ccff39c5c2fe90380c018beead27509dcb0beb0d0b7dfa66",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

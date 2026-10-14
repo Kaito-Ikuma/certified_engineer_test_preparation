@@ -1,0 +1,45 @@
+{
+  "stem": "4種類の塩基の3文字列64通りと標準20アミノ酸の個数の違いを説明する。",
+  "conditions": {
+    "方向": "64対20の説明として最も適切。",
+    "範囲": "標準遺伝暗号。特殊な再符号化・ミトコンドリアの例外を一般表へ混ぜない。"
+  },
+  "choices": {
+    "1": {
+      "value": "コドンの第1塩基は通常遺伝情報として意味を持たない。",
+      "verdict": "不適切",
+      "reason": "第1位置の変化はアミノ酸を変え得る。第3位置の縮重も全コドンで無意味ということではない。"
+    },
+    "2": {
+      "value": "進化で残る44コドンが遺伝子から消えた。",
+      "verdict": "不適切",
+      "reason": "同義コドンは現在の遺伝子でも使用される。存在しないという説明は違う。"
+    },
+    "3": {
+      "value": "残る44コドンの多くも同じ20アミノ酸へ対応し、1種に複数コドンがある。",
+      "verdict": "最適",
+      "reason": "標準遺伝暗号の縮重であり、多対一の対応を表す。61がアミノ酸、3が終止なので44全てをアミノ酸へ割り当てたとは言わない。"
+    },
+    "4": {
+      "value": "転写で配列が変わり1アミノ酸1コドンへ収束する。",
+      "verdict": "不適切",
+      "reason": "通常の転写は相補配列を作り、同義コドンを全て1個へ書き換える過程ではない。"
+    },
+    "5": {
+      "value": "残る44コドンはアミノ酸の修飾体へ用いられる。",
+      "verdict": "不適切",
+      "reason": "翻訳後の修飾等を専用の44コドンで指定する仕組みではない。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_015.png"
+  ],
+  "question_id": "R01-RET-BASIC-4-5",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "15",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "bb0a039b4b4ee9ae805f6873a0adbcdf98284845c030815828075bd9ebc1c529",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

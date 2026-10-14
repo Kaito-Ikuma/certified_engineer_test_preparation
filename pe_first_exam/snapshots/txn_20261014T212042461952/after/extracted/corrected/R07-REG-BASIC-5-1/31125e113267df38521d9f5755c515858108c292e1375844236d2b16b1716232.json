@@ -1,0 +1,45 @@
+{
+  "stem": "2024には藻場吸収量を国連へ報告済み。",
+  "conditions": {
+    "原典": "全五肢と否定方向・組合せ表を画像確認。",
+    "資料時点": "令和7年度の指定資料・統計年を保持し、後年値に置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "衛星で全球GHG濃度を継続観測",
+      "verdict": "条件内で適切",
+      "reason": "衛星は広域の濃度観測を行う。排出量を各地点で直接計量するという説明ではない。"
+    },
+    "2": {
+      "value": "一定量以上排出する事業者の年度報告",
+      "verdict": "条件内で適切",
+      "reason": "算定・報告・公表制度は排出量の把握と公表を扱う。"
+    },
+    "3": {
+      "value": "HFCにも強い温室効果があり回収処理",
+      "verdict": "条件内で適切",
+      "reason": "オゾン層を破壊しないことと温室効果が小さいことは同義でない。"
+    },
+    "4": {
+      "value": "2030以降新築にZEH・ZEB水準を目指す",
+      "verdict": "条件内で適切",
+      "reason": "省エネルギー性能の水準と、全建物が毎時ゼロであることは違う。"
+    },
+    "5": {
+      "value": "ブルーカーボン吸収を国連に未報告",
+      "verdict": "不適切・選択対象",
+      "reason": "2024年4月に海草・海藻藻場の吸収量を合わせて国連へ報告したため未報告は不適切。"
+    }
+  },
+  "figures": "文章五肢を独自要約。",
+  "ambiguity": "報告済みの藻場範囲は確認。他4肢の当時法令要件とZEH・ZEB目標全文の照合は追加対象。",
+  "evidence": [
+    "extracted/pages/R07/basic/page_015.png"
+  ],
+  "question_id": "R07-REG-BASIC-5-1",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "15",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "96f4db019d1a111e034001eec91c9c48b963f2a3a625d780366ecc75bd856217",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

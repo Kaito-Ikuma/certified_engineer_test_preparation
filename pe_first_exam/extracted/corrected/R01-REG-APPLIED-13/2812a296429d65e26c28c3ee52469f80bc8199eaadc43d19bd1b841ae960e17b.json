@@ -1,0 +1,47 @@
+{
+  "stem": "燃焼生成物から元素量を保存して有機化合物を選ぶ。",
+  "conditions": {
+    "試料": "61mg",
+    "CO2": "154mg",
+    "H2O": "27mg",
+    "原子量": "C=12,H=1,O=16"
+  },
+  "choices": {
+    "1": {
+      "value": "トルエン",
+      "verdict": "選ばない候補",
+      "reason": "C7H8の原子数比が導出比に一致しない。"
+    },
+    "2": {
+      "value": "フェノール",
+      "verdict": "選ばない候補",
+      "reason": "C6H6Oの原子数比が導出比に一致しない。"
+    },
+    "3": {
+      "value": "安息香酸",
+      "verdict": "選ぶ候補",
+      "reason": "C7H6O2の原子数比が導出比に一致する。"
+    },
+    "4": {
+      "value": "テレフタル酸",
+      "verdict": "選ばない候補",
+      "reason": "C8H6O4の原子数比が導出比に一致しない。"
+    },
+    "5": {
+      "value": "サリチル酸",
+      "verdict": "選ばない候補",
+      "reason": "C7H6O3の原子数比が導出比に一致しない。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_004.png"
+  ],
+  "question_id": "R01-REG-APPLIED-13",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "c6c4384c649bedae6b7405ffe0649e0f905ca62350cb766d1415c715131aab9a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

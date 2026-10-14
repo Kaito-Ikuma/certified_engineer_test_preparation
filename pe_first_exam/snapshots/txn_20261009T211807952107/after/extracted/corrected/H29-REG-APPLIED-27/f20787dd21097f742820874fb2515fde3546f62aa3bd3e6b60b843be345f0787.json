@@ -1,0 +1,44 @@
+{
+  "stem": "花こう岩を構成する鉱物として最も一般的でないものを選ぶ。",
+  "conditions": {
+    "方向": "条件に最も該当する鉱物を選ぶ。"
+  },
+  "choices": {
+    "1": {
+      "value": "黒雲母",
+      "verdict": "条件に不一致",
+      "reason": "花こう岩に含まれる代表的な有色鉱物である。"
+    },
+    "2": {
+      "value": "石英",
+      "verdict": "条件に不一致",
+      "reason": "花こう岩の主要な構成鉱物である。"
+    },
+    "3": {
+      "value": "カリ長石",
+      "verdict": "条件に不一致",
+      "reason": "花こう岩の主要な構成鉱物である。"
+    },
+    "4": {
+      "value": "かんらん石",
+      "verdict": "条件に一致",
+      "reason": "かんらん石は通常、苦鉄質・超苦鉄質岩を特徴付け、石英に富む一般的な花こう岩の主成分ではない。"
+    },
+    "5": {
+      "value": "斜長石",
+      "verdict": "条件に不一致",
+      "reason": "花こう岩の主要な構成鉱物である。"
+    }
+  },
+  "figures": "図なし。原典頁画像で選択方向、観察条件、鉱物名と全5肢を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_009.png"
+  ],
+  "question_id": "H29-REG-APPLIED-27",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "4b861b269c58414450e1ea320dccb8767de19d3d8442e3ada2382b5994c6caea",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

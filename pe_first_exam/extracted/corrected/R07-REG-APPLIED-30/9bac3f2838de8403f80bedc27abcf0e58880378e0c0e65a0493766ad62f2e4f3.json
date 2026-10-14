@@ -1,0 +1,45 @@
+{
+  "stem": "横ずれ盆地、すべりの記録、断層岩と塑性物質の上昇構造を区別する。",
+  "conditions": {
+    "判断方向": "最も関係が薄いもの。",
+    "原典照合": "全5肢、上下・平行直交・右左・時代・固結度と割合を画像照合。図なし。"
+  },
+  "choices": {
+    "1": {
+      "value": "プルアパート構造",
+      "verdict": "運動に関連",
+      "reason": "横ずれの伸張性ステップ等により形成される盆地構造である。"
+    },
+    "2": {
+      "value": "条線",
+      "verdict": "直接関連",
+      "reason": "断層のすべりの軸を表す線状記録である。"
+    },
+    "3": {
+      "value": "カタクレーサイト",
+      "verdict": "直接関連",
+      "reason": "主に脆性破砕により細粒化し固結した断層岩である。"
+    },
+    "4": {
+      "value": "鏡肌",
+      "verdict": "直接関連",
+      "reason": "研磨による滑らかな断層面の記録である。"
+    },
+    "5": {
+      "value": "ダイアピール",
+      "verdict": "最も薄い",
+      "reason": "塑性物質が浮力や差応力等で上昇する貫入構造である。断層で位置が制御される場合でも名称の中心はすべり・破砕ではない。"
+    }
+  },
+  "figures": "設問固有図なし。原典の用語・否定・全5肢を確認。剪断の方位条件を推測で補わない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_011.png"
+  ],
+  "question_id": "R07-REG-APPLIED-30",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "b13e5b0a6665de7804d565ce290a63863c89078d9766b817e4d98b2b391dd5b3",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

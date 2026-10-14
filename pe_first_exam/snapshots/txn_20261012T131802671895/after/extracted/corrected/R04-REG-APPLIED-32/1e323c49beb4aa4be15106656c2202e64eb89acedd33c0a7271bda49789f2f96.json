@@ -1,0 +1,45 @@
+{
+  "stem": "深度走時・migration・静補正・CMPとブーゲー補正を区別する。",
+  "conditions": {
+    "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+    "前提": "走時・反射波形の処理と重力の質量補正を分ける。"
+  },
+  "choices": {
+    "1": {
+      "value": "深度走時",
+      "verdict": "適切",
+      "reason": "速度モデルと深度から伝播時間を対応させる地震探査の量である。"
+    },
+    "2": {
+      "value": "マイグレーション",
+      "verdict": "適切",
+      "reason": "傾斜面や回折の見掛け位置を地下の適切な位置へ再配置する画像化処理である。観測時間を一律定数で換算するだけの処理ではない。"
+    },
+    "3": {
+      "value": "ブーゲー補正",
+      "verdict": "不適切",
+      "reason": "測点と基準面の間の質量が重力へ及ぼす効果を補正する重力探査の処理である。地震波走時に対する静補正ではない。"
+    },
+    "4": {
+      "value": "静補正",
+      "verdict": "適切",
+      "reason": "地形や表層低速度層などによる走時ずれを一定の時間シフトとしてそろえる処理である。重力の地形・Bouguer補正と観測量が異なる。"
+    },
+    "5": {
+      "value": "CMP重合",
+      "verdict": "適切",
+      "reason": "共通中点の記録を集め、NMO等の走時差を整えて重ねる。単に未補正の任意波形を足す方法ではない。"
+    }
+  },
+  "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_011.png"
+  ],
+  "question_id": "R04-REG-APPLIED-32",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "7752fcf354ac6ce083274d376855a54d149a78dffa4c43735c570dfd3a2496a9",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

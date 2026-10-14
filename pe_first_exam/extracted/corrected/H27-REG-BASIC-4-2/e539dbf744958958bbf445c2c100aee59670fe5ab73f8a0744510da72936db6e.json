@@ -1,0 +1,45 @@
+{
+  "stem": "原典で下線を付けた原子の酸化数が最大の物質を選ぶ。",
+  "conditions": {
+    "対象": "各肢に元素名を添え、下線対象を明記。",
+    "規則": "この組ではH=+1、O=−2、単体=0。全原子の酸化数の総和は化学種の電荷。"
+  },
+  "choices": {
+    "1": {
+      "value": "HNO3のN",
+      "verdict": "条件に不一致",
+      "reason": "HNO3のNは酸化数+5。選択対象の最大値ではない。"
+    },
+    "2": {
+      "value": "Cr2O7²⁻のCr",
+      "verdict": "条件に不一致",
+      "reason": "Cr2O7²⁻のCrは酸化数+6。選択対象の最大値ではない。"
+    },
+    "3": {
+      "value": "MnO4⁻のMn",
+      "verdict": "条件に一致",
+      "reason": "MnO4⁻のMnは酸化数+7。比較した最大値である。"
+    },
+    "4": {
+      "value": "NO2のN",
+      "verdict": "条件に不一致",
+      "reason": "NO2のNは酸化数+4。選択対象の最大値ではない。"
+    },
+    "5": {
+      "value": "H2SO4のS",
+      "verdict": "条件に不一致",
+      "reason": "H2SO4のSは酸化数+6。選択対象の最大値ではない。"
+    }
+  },
+  "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/basic/page_012.png"
+  ],
+  "question_id": "H27-REG-BASIC-4-2",
+  "source_file": "sources/H27/basic.pdf",
+  "source_page": "12",
+  "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+  "raw_text_sha256": "b36454bd72985c5a45d72b3038edfaebe465ddcde21c361e1102870aa48b1dd4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

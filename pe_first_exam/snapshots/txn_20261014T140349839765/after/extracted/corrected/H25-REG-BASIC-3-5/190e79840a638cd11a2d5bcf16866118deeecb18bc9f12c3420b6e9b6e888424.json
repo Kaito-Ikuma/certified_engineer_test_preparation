@@ -1,0 +1,45 @@
+{
+  "stem": "軸伸びと弾性エネルギーの二分の一。",
+  "conditions": {
+    "棒": "長さl、断面積A、E一定。",
+    "伸び": "軸伸びδ、弾性域の準静的負荷。"
+  },
+  "choices": {
+    "1": {
+      "value": "P=EAδ/l,U=EAδ²/l",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 P=EAδ/l,U=EAδ²/(2l) と異なる。"
+    },
+    "2": {
+      "value": "P=EAδ/l,U=EAδ²/(2l)",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "3": {
+      "value": "P=EAδ/(2l),U=EAδ²/l",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 P=EAδ/l,U=EAδ²/(2l) と異なる。"
+    },
+    "4": {
+      "value": "P=EAδ/(2l),U=EAδ²/(2l)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 P=EAδ/l,U=EAδ²/(2l) と異なる。"
+    },
+    "5": {
+      "value": "P=EAδ/(2l),U=EAδ²/(4l)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 P=EAδ/l,U=EAδ²/(2l) と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/basic/page_013.png"
+  ],
+  "question_id": "H25-REG-BASIC-3-5",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "13",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "32aa934420384c5e2229b72105d8d675c1fafa1a7c2c786615d4625751d41008",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

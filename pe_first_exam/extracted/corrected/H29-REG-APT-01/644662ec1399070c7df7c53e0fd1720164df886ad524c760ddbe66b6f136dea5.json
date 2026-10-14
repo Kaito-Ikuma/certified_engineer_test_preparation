@@ -1,0 +1,63 @@
+{
+  "stem": "第4章の7空欄へ入る語を選ぶ。",
+  "conditions": {
+    "空欄順": [
+      "ア",
+      "イ",
+      "ウ",
+      "エ",
+      "オ",
+      "カ",
+      "キ"
+    ],
+    "正しい語句の照合": {
+      "ア": "不名誉",
+      "イ": "義務",
+      "ウ": "盗用",
+      "エ": "公益",
+      "オ": "責務",
+      "カ": "技術部門",
+      "キ": "資質"
+    },
+    "出題時資料": ""
+  },
+  "choices": {
+    "1": {
+      "value": "不名誉／義務／盗用／安全／責務／技術部門／能力",
+      "verdict": "不適切な解答候補",
+      "reason": "エは公益、キは資質である。"
+    },
+    "2": {
+      "value": "信用失墜／責務／盗作／公益／義務／技術部門／資質",
+      "verdict": "不適切な解答候補",
+      "reason": "アは不名誉、イは義務、ウは盗用、オは責務である。"
+    },
+    "3": {
+      "value": "不名誉／義務／盗用／公益／責務／技術部門／資質",
+      "verdict": "適切な解答候補",
+      "reason": "見出し、守秘の禁止行為、名称表示の登録区分に一致する。"
+    },
+    "4": {
+      "value": "不名誉／責務／盗作／公益／義務／専門部門／資質",
+      "verdict": "不適切な解答候補",
+      "reason": "イ・ウ・オ・カが条文の語句と異なる。"
+    },
+    "5": {
+      "value": "信用失墜／義務／盗作／安全／責務／専門部門／能力",
+      "verdict": "不適切な解答候補",
+      "reason": "ア・ウ・エ・カ・キが条文と異なる。"
+    }
+  },
+  "figures": "図なし。組合せ表または個数選択肢は原典画像で確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/aptitude/page_001.png",
+    "extracted/pages/H29/aptitude/page_002.png"
+  ],
+  "question_id": "H29-REG-APT-01",
+  "source_file": "sources/H29/aptitude.pdf",
+  "source_page": "1",
+  "source_sha256": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+  "raw_text_sha256": "496f0ea4acc3eafb12b1f3f988ef2d95419412684b8bfed3d6cd30073439f001",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

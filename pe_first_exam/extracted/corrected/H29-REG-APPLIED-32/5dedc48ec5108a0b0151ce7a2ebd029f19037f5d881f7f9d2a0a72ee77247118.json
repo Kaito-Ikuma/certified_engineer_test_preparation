@@ -1,0 +1,45 @@
+{
+  "stem": "Archieの孔隙水伝導条件と地下水・SP解釈を比較する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "孔隙水だけで電流が流れ、骨格と表面伝導を無視できる場合にArchieを使う。"
+  },
+  "choices": {
+    "1": {
+      "value": "囲む電極の比抵抗tomographyで二次元・三次元分布",
+      "verdict": "適切",
+      "reason": "多数配置電位差を逆解析し、覆いとモデル制約の範囲で分布を求める。"
+    },
+    "2": {
+      "value": "CSAMT近接場は小間隔・高比抵抗で生じやすい",
+      "verdict": "適切",
+      "reason": "同一周波数でδ∝√ρとなるので、距離/δが小さくなる方向である。"
+    },
+    "3": {
+      "value": "平野礫帯水層は高抵抗、山地裂帯変質帯は低抵抗",
+      "verdict": "条件付きで適切",
+      "reason": "粘土層との比較や含水割れ目・変質粘土の対比として典型的である。塩分、空隙率、乾燥、母岩で変わる。"
+    },
+    "4": {
+      "value": "孔隙水比抵抗が高い場合にArchieを精度よく適用",
+      "verdict": "不適切",
+      "reason": "孔隙水以外の導電を無視できることが必要で、高抵抗水だけで精度は保証できない。表面伝導の相対的重要性が増す。"
+    },
+    "5": {
+      "value": "鉱体頂部は負異常、地熱対流は正異常",
+      "verdict": "条件付きで適切",
+      "reason": "典型鉱化機構と上昇流の特定条件の傾向である。熱電・化学・流動電位と基準点に依存し、全地熱地点の正符号を保証しない。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "高比抵抗水でも絶縁清浄骨格でArchieは成立し得る。礫層・割れ目・地熱SPの符号の全称は留保する。",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_011.png"
+  ],
+  "question_id": "H29-REG-APPLIED-32",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "00b10edacad29d40aeeab537b1d9f912987510496d9ec098ff844520492ecb41",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

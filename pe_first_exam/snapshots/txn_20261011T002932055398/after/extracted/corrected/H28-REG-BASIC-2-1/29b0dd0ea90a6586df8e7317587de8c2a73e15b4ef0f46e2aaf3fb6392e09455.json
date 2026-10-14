@@ -1,0 +1,44 @@
+{
+  "stem": "同じ3状態の天気遷移図で、2日後確率の異なる記述を検証する。",
+  "conditions": {
+    "方向": "最も不適切"
+  },
+  "choices": {
+    "1": {
+      "value": "雨→雨3/8",
+      "verdict": "適切",
+      "reason": "雨→雨→雨1/4、雨→曇→雨1/16、雨→晴→雨1/16の合計3/8。"
+    },
+    "2": {
+      "value": "晴→2日後雨5/16",
+      "verdict": "適切",
+      "reason": "晴→晴→雨、晴→曇→雨、晴→雨→雨の排他的3経路を足すと1/8+1/16+1/8=5/16。"
+    },
+    "3": {
+      "value": "曇→2日後曇3/8",
+      "verdict": "適切",
+      "reason": "曇→曇→曇、曇→雨→曇、曇→晴→曇を足すと1/4+1/16+1/16=3/8。"
+    },
+    "4": {
+      "value": "曇→晴3/16",
+      "verdict": "不適切",
+      "reason": "曇→曇→晴1/8、曇→雨→晴1/16、曇→晴→晴1/8の和は5/16。3/16ではない。"
+    },
+    "5": {
+      "value": "初日雨から遠い将来の雨確率1/3",
+      "verdict": "適切",
+      "reason": "全ての1日遷移が正で、対称な行列の定常分布は一様。有限既約・非周期の連鎖でこの分布へ収束する。"
+    }
+  },
+  "figures": "問題幹・全5肢・数値・単位・否定を原典画像照合。自己3本1/2と他6本1/4を両年度で別々に照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/basic/page_007.png"
+  ],
+  "question_id": "H28-REG-BASIC-2-1",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "666d1c79d845af45e15979c1ac2b22806269dfcd952b9daa2ba0b6ae14068e87",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

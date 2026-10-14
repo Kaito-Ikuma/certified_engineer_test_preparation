@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-09T21:19:20+09:00",
+  "paths": [
+    "generated/questions/applied_science/geology/01_mineralogy.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/geology/01_mineralogy.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/geology/01_mineralogy.tex": "291c9b3d82a6e91df45e8ec48a7a8f29f13812496762f838ecc8be2552966513"
+  }
+}

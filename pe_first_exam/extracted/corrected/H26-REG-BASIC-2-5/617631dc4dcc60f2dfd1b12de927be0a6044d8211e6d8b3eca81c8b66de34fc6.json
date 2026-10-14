@@ -1,0 +1,45 @@
+{
+  "stem": "構文図の迂回と繰返し経路から生成できない文字列を選ぶ。",
+  "conditions": {
+    "判断対象": "構文図の順方向・戻り・迂回を反復と空反復へ対応させる。",
+    "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+  },
+  "choices": {
+    "1": {
+      "value": "a2b3c",
+      "verdict": "不適切",
+      "reason": "a2とb3の二反復の後にcで終わる経路がある。"
+    },
+    "2": {
+      "value": "x98y",
+      "verdict": "不適切",
+      "reason": "xの後に数字を二回通りyで終われる。"
+    },
+    "3": {
+      "value": "w",
+      "verdict": "不適切",
+      "reason": "上側の迂回で最後の英字だけを通れる。"
+    },
+    "4": {
+      "value": "p5q",
+      "verdict": "不適切",
+      "reason": "p5の一反復と最終qで生成できる。"
+    },
+    "5": {
+      "value": "abc45fg",
+      "verdict": "適切",
+      "reason": "中間の連続英字ab等を通る経路がなく生成できない。"
+    }
+  },
+  "figures": "原典の木・道路接続・構文経路・矢印を画像確認。教材では独自の構造表現で説明し原図転載なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/basic/page_008.png"
+  ],
+  "question_id": "H26-REG-BASIC-2-5",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "23dd0ed12545107dec56cd15b5aeffd16a9afc125e7d1adb350fac13153b25a9",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

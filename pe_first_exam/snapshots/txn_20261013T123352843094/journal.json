@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-13T12:33:52+09:00",
+  "paths": [
+    "generated/questions/applied_science/geology/08_engineering_geology.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/geology/08_engineering_geology.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/geology/08_engineering_geology.tex": "39d60ba4c21457122797e50c39a94b636260240b83be0e1ac79ebb1a667411fa"
+  }
+}

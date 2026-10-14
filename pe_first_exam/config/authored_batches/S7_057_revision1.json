@@ -1,0 +1,82 @@
+{
+  "batch_id": "S7_057_revision1",
+  "reference_date": "2026-10-14",
+  "questions": [
+    {
+      "question_id": "H30-REG-BASIC-3-5",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "安定平衡のポテンシャルは最小。",
+      "summary": "安定平衡のポテンシャルは最小。",
+      "conditions": {
+        "系": "鉛直ばねk、質点m、重力g。",
+        "座標": "自然長位置から下向きをu>0。",
+        "問": "不適切な記述を一つ。"
+      },
+      "choices": {
+        "1": {
+          "value": "ばねポテンシャルはku²/2",
+          "verdict": "条件内で適切",
+          "reason": "自然長からの伸びで正しい。"
+        },
+        "2": {
+          "value": "重力ポテンシャルは−mgu",
+          "verdict": "条件内で適切",
+          "reason": "下向き座標で重力ポテンシャルは負。"
+        },
+        "3": {
+          "value": "平衡で全ポテンシャル最大",
+          "verdict": "不適切・選択対象",
+          "reason": "二階微分k>0なので最小であり、最大という主張が誤り。"
+        },
+        "4": {
+          "value": "平衡変位mg/k",
+          "verdict": "条件内で適切",
+          "reason": "停留条件ku−mg=0。"
+        },
+        "5": {
+          "value": "エネルギーの極値が保守系FEMの基礎",
+          "verdict": "条件内で適切",
+          "reason": "保守系等の条件下のエネルギー停留原理に対応。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/basic/page_014.png"
+      ],
+      "core_concept": "安定平衡のポテンシャルは最小。",
+      "required_knowledge": "ポテンシャル、停留と安定性、座標の符号。",
+      "solution": "自然長から下向きuとしてΠ=ku²/2−mgu。Πprime=ku−mg=0でu=mg/k、Πsecond=k>0なので最小。最大とする3が不適切。他の式は同じ座標と基準で整合する。有限要素のエネルギー原理も保守系等の適用条件があり、あらゆる非保存力の問題へ無条件に一般化しない。",
+      "answer_reason": "自然長から下向きuとしてΠ=ku²/2−mgu。Πprime=ku−mg=0でu=mg/k、Πsecond=k>0なので最小。最大とする3が不適切。他の式は同じ座標と基準で整合する。有限要素のエネルギー原理も保守系等の適用条件があり、あらゆる非保存力の問題へ無条件に一般化しない。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。Π二階微分k>0、最小を最大とする肢が誤。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "ポテンシャル、停留と安定性、座標の符号。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。",
+      "theory_references": [
+        "theory:analysis:potential"
+      ],
+      "discipline_id": "basic_3_7",
+      "concept_id": "finish57_potential",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：安定平衡のポテンシャルは最小。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "2",
+        "difficulty": "3",
+        "difficulty_reason": "原典の支持・接続・幾何を式へ変換し、単位・符号・極限で検算する。"
+      },
+      "citations": [
+        "analysis57_shm"
+      ],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "79afb6ddd920abfaf898411b54de1a0ed523e9a890409edfb1580ad2edd97b74",
+      "revision_of_batch": "S7_057_analysis_finish",
+      "revision_reason": "PDF目視で否定肢の適不適見出し反転を発見。公式正答3・独立解・数式を保ったまま各肢の真偽と選択方向を訂正。"
+    }
+  ]
+}

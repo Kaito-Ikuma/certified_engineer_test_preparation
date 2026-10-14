@@ -1,0 +1,7 @@
+{
+  "question_labels": 1270,
+  "errors": [
+    "unresolved reference theory:discrete:syntax"
+  ],
+  "scope": "source labels/references only, not final content/compile sign-off"
+}

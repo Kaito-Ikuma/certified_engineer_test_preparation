@@ -1,0 +1,45 @@
+{
+  "stem": "電子準位遷移の光素子と超伝導を比較する。",
+  "conditions": {
+    "判断対象": "電子準位遷移の光素子と超伝導を比較する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "LED",
+      "verdict": "選ばない候補",
+      "reason": "放射再結合で発光。"
+    },
+    "2": {
+      "value": "超伝導",
+      "verdict": "選ぶ候補",
+      "reason": "凝縮状態の電気磁気応答が中心。"
+    },
+    "3": {
+      "value": "太陽電池",
+      "verdict": "選ばない候補",
+      "reason": "光吸収でキャリア生成と分離。"
+    },
+    "4": {
+      "value": "半導体レーザ",
+      "verdict": "選ばない候補",
+      "reason": "誘導放出と共振器。"
+    },
+    "5": {
+      "value": "有機EL",
+      "verdict": "選ばない候補",
+      "reason": "有機層の電子励起の放射緩和。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_003.png"
+  ],
+  "question_id": "R01-RET-APPLIED-05",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "3ba3ef5aa7691410101dac57fa37387232b50c0bf4484e10efee44a34540511c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

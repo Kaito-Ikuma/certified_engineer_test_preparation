@@ -1,0 +1,47 @@
+{
+  "stem": "既知の圧縮率、通信速度と伝送時間から回線利用率を逆算する。",
+  "conditions": {
+    "元量": "250MB、M=10^6",
+    "圧縮後/前": "0.8",
+    "回線速度": "100Mbps",
+    "時間": "25秒"
+  },
+  "choices": {
+    "1": {
+      "value": "8%",
+      "verdict": "不適切",
+      "reason": "200Mバイトをそのまま100Mbit/sと25秒で割ると0.08となり、バイト/ビット換算が抜ける。"
+    },
+    "2": {
+      "value": "10%",
+      "verdict": "不適切",
+      "reason": "与えられた圧縮後ビット量1.6Gbitに対し、250Mbitしか25秒で送れない値。"
+    },
+    "3": {
+      "value": "16%",
+      "verdict": "不適切",
+      "reason": "1.6Gbitの4分の1しか25秒で送れず、時間と整合しない。"
+    },
+    "4": {
+      "value": "64%",
+      "verdict": "適切",
+      "reason": "250×10^6×0.8×8/(100×10^6×25)=0.64で整合。"
+    },
+    "5": {
+      "value": "80%",
+      "verdict": "不適切",
+      "reason": "圧縮前データを用いると0.80となるが、実際は0.8倍に圧縮して送る。"
+    }
+  },
+  "figures": "問題幹・全5肢・数値・単位・否定を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/basic/page_007.png"
+  ],
+  "question_id": "R07-REG-BASIC-2-5",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "e2c1579bda7402e724d7f7800f44e3838550ea0b959e1f1997e371da1bb1eb05",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

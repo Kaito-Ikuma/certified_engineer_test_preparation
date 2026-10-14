@@ -1,0 +1,22 @@
+{
+  "status": "committed",
+  "time": "2026-10-10T21:18:41+09:00",
+  "paths": [
+    "generated/questions/applied_science/geology/02_petrology.tex",
+    "generated/questions/applied_science/geology/08_engineering_geology.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/geology/02_petrology.tex": true,
+    "generated/questions/applied_science/geology/08_engineering_geology.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/geology/02_petrology.tex": "fd4fc78b31cc628f86c37b30b15f2253ea4c496a0be38a2c2429c6c188bf988a",
+    "generated/questions/applied_science/geology/08_engineering_geology.tex": "58031ca9eb83dc51bbbad2f0dabeabadb3d01d1565c0d4876cfea475b8ddbb8f",
+    "generated/audit_summary.tex": "6814ce6a16fe5aeeecbab218f5bef5046721a294f719fb9da0ee17be6ff27d7e",
+    "generated/frequency_tables.tex": "5e10bc61ae4a99cbb43d70b8b555ade294c2ae75d9979b1ae9e562d9966a5a10"
+  }
+}

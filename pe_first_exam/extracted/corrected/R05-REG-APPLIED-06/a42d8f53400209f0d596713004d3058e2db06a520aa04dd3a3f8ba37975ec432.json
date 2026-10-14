@@ -1,0 +1,45 @@
+{
+  "stem": "相転移の次数、熱力学量、強磁性、過冷却の記述から最も不適切なものを選ぶ。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "対象": "融解・気化と連続相転移の通常の分類。"
+  },
+  "choices": {
+    "1": {
+      "value": "融解と気化は一次相転移である",
+      "verdict": "臨界点から離れた相共存で正しい",
+      "reason": "融解・気化は潜熱を伴う通常の一次転移である。液気臨界点で相の区別がなくなる場合は別である。"
+    },
+    "2": {
+      "value": "一次相転移ではエントロピーが不連続に変わる",
+      "verdict": "正しい",
+      "reason": "潜熱Lと転移温度Tにより\\(\\Delta S=L/T\\)でエントロピーの跳びがある。"
+    },
+    "3": {
+      "value": "二次相転移では熱容量は連続に変わる",
+      "verdict": "誤り",
+      "reason": "二次転移ではギブズエネルギーの一階微分は連続でも、比熱のような二階微分に跳びや発散が出る。"
+    },
+    "4": {
+      "value": "鉄の強磁性から常磁性への転移は二次相転移である",
+      "verdict": "通常の零磁場のキュリー転移として正しい",
+      "reason": "磁化という秩序変数が零磁場で連続に消える転移であり、比熱には異常が現れる。"
+    },
+    "5": {
+      "value": "液体や気体を平衡転移温度より冷やしても相変化しない過冷却がある",
+      "verdict": "正しい",
+      "reason": "新相の核生成の障壁などで準安定状態が続く。平衡の共存温度そのものが変わったとの意味ではない。"
+    }
+  },
+  "figures": "正誤方向、全条件・数値・単位、候補5肢を原典画像で確認。図なし。組合せ問題では表の全欄を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_003.png"
+  ],
+  "question_id": "R05-REG-APPLIED-06",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "bf5c0b36c6c4c5ac60137d6cbfa9a6cd609196c3810fefa5631360b19602fd4f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

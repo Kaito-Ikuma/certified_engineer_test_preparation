@@ -1,0 +1,45 @@
+{
+  "stem": "複合発電の高温側から低温側への順。",
+  "conditions": {
+    "時点": "平成28年度に指定された資料・制度。",
+    "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "一次使切・二次充電",
+      "verdict": "条件内で適切",
+      "reason": "原典の条件内では適切な記述であり、不適切なものを選ぶ問の選択対象ではない。"
+    },
+    "2": {
+      "value": "EDLC急速・長サイクル",
+      "verdict": "条件内で適切",
+      "reason": "原典の条件内では適切な記述であり、不適切なものを選ぶ問の選択対象ではない。"
+    },
+    "3": {
+      "value": "先に蒸気タービン次に廃熱ガスタービン",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "4": {
+      "value": "燃料電池は水電解の逆",
+      "verdict": "条件内で適切",
+      "reason": "原典の条件内では適切な記述であり、不適切なものを選ぶ問の選択対象ではない。"
+    },
+    "5": {
+      "value": "揚水は位置エネルギーに貯蔵",
+      "verdict": "条件内で適切",
+      "reason": "原典の条件内では適切な記述であり、不適切なものを選ぶ問の選択対象ではない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/basic/page_022.png"
+  ],
+  "question_id": "H28-REG-BASIC-5-3",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "22",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "0dc42b92ac755019aba27ccb77c09c09da8c84adef46fd5139d0eb7741064b28",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,44 @@
+{
+  "stem": "10 Ωと5 Ωを並列接続した合成抵抗を選ぶ。",
+  "conditions": {
+    "接続": "同じ二端子間へ並列に接続。"
+  },
+  "choices": {
+    "1": {
+      "value": "約0.2 Ω",
+      "verdict": "条件に不一致",
+      "reason": "0.2は5 Ωの逆数だが単位はSで、抵抗ではない。"
+    },
+    "2": {
+      "value": "約1.5 Ω",
+      "verdict": "条件に不一致",
+      "reason": "逆数の和を逆に戻した10/3 Ωと違う。"
+    },
+    "3": {
+      "value": "約3.3 Ω",
+      "verdict": "条件に一致",
+      "reason": "共通電圧で各電流を足した等価抵抗10/3 Ωに最も近い。"
+    },
+    "4": {
+      "value": "約7.5 Ω",
+      "verdict": "条件に不一致",
+      "reason": "合成抵抗が小さい方の5 Ωを超えており並列の性質に反する。"
+    },
+    "5": {
+      "value": "約15 Ω",
+      "verdict": "条件に不一致",
+      "reason": "10+5は直列接続の場合である。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_001.png"
+  ],
+  "question_id": "H26-REG-APPLIED-02",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "615b1f4b4f2acf1b965d4d8d28e701dded45f8d30236b673b715d724254a2be3",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,151 @@
+{
+  "saved_at": "2026-10-12T22:56:00+09:00",
+  "official_answers_consulted_before_initial": false,
+  "original_images_reviewed": 22,
+  "records": [
+    {
+      "question_id": "H23-REG-APPLIED-11",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "answer_initial": "4",
+      "reason": "単体気体放電色。He外殻2、軽い希ガス高反応は逆。"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-13",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "answer_initial": "5",
+      "reason": "H2Sは還元剤。石灰水過剰CO2は炭酸水素塩。"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-17",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "answer_initial": "1",
+      "reason": "NaとCaMg硬度イオンの交換。"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-12",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "answer_initial": "4",
+      "reason": "LiからCsへ通常融点低下、IE低下と半径増。"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-13",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "answer_initial": "4",
+      "reason": "ZnOH2少量NH3沈殿/過剰tetraammine溶解。ZnS酸性濃度留保。"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-12",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "answer_initial": "1",
+      "reason": "Al両性で塩基と反応。濃硝酸不動態条件留保。"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-24",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "answer_initial": "2",
+      "reason": "源水岩石環境水質。全水頭和、θ水/全体積、自由水面は不圧。"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-10",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "answer_initial": "4",
+      "reason": "H23と全五命題一致、放電色。"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-23",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "answer_initial": "3",
+      "reason": "含水比は水/乾燥固体、全湿潤質量でない。8日数値留保。"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-11",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "answer_initial": "5",
+      "reason": "通常希薄水溶液のHF弱酸。他3強酸。"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-08",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "answer_initial": "5",
+      "reason": "希土類にd電子1ずつの単調増加なし。f中心とScYの範囲留保。"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-10",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "answer_initial": "4",
+      "reason": "NaClとCsCl違う配位6/8。Hbの近似配位留保。"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-10",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "answer_initial": "3",
+      "reason": "CuZn配置正しいがdblockをsblockとする推論誤り。"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-09",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "answer_initial": "3",
+      "reason": "HFはSiO2除去etch、成膜逆。PTFE生成融点全条件留保。"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-16",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "answer_initial": "2",
+      "reason": "希ガス通常単原子、He2例外で5不可。"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-14",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "answer_initial": "4",
+      "reason": "SiC/borides形成可能。無機酸不溶HF混酸例外。"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-13",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "answer_initial": "1",
+      "reason": "毒性と酸強度別、通常HF水溶液弱酸。"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-13",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "answer_initial": "1",
+      "reason": "青色GaN系nitride、GaAs通常青色不可。モータ不可欠全称留保。"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-12",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "answer_initial": "5",
+      "reason": "Re75>Ta73。Nb41>Ga31,Pm61<Dy66,B5<P15,I53>Kr36。"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-09",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "answer_initial": "5",
+      "reason": "R02の並替えSi炭素ホウ素結合可能。"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-13",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "answer_initial": "5",
+      "reason": "Mo5周期対Ir6周期。"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-15",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "answer_initial": "2",
+      "reason": "Th90actinoid。他Sm62Nd60Pm61Ho67lanthanoids。"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-16",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "answer_initial": "5",
+      "reason": "ハロゲンカルコゲン水素Hδ+、Hδ−逆。BH3単量体寿命など留保。"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-17",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "answer_initial": "3",
+      "reason": "H28ハロゲン並替えHF含む全強酸誤り。"
+    }
+  ]
+}

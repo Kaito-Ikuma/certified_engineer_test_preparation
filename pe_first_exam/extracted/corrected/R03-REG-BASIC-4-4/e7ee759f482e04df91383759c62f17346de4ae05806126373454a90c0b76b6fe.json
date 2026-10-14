@@ -1,0 +1,47 @@
+{
+  "stem": "鉄鉱石から鉄への還元と必要質量。",
+  "conditions": {
+    "原料": "Fe2O3、石灰石、コークス。",
+    "生成量": "Fe1000kg。",
+    "原子量": "Fe56、O16。",
+    "理想化": "鉄鉱石と銑鉄に不純物なし。"
+  },
+  "choices": {
+    "1": {
+      "value": "Al・高炉・還元・1429kg",
+      "verdict": "条件内で適切",
+      "reason": "元素順位、製錬法、酸化数の方向、質量収支が全て対応。"
+    },
+    "2": {
+      "value": "Al・電炉・還元・2857kg",
+      "verdict": "不適切",
+      "reason": "指定の鉱石とコークスは高炉。160/112の倍率であり2倍の質量ではない。"
+    },
+    "3": {
+      "value": "Al・高炉・酸化・2857kg",
+      "verdict": "不適切",
+      "reason": "Fe3+からFe0は還元。質量倍率も誤り。"
+    },
+    "4": {
+      "value": "Cu・電炉・酸化・2857kg",
+      "verdict": "不適切",
+      "reason": "地殻順位、炉、酸化還元、質量の各条件が異なる。"
+    },
+    "5": {
+      "value": "Cu・高炉・還元・1429kg",
+      "verdict": "不適切",
+      "reason": "地殻の順位の空欄はAlでありCuではない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/basic/page_018.png"
+  ],
+  "question_id": "R03-REG-BASIC-4-4",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "18",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "445f5c45866ca92406e3c95b74ab591d0952e5fd1c9d7ac8f53a73983774a8fb",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

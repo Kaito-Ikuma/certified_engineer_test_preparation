@@ -1,0 +1,78 @@
+{
+  "time": "2026-10-12T07:06:03+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_031_intellectual_property",
+  "question_ids": [
+    "H23-REG-APT-09",
+    "H24-REG-APT-09",
+    "H25-REG-APT-13",
+    "H26-REG-APT-14",
+    "H29-REG-APT-10",
+    "H30-REG-APT-06",
+    "H30-REG-APT-07",
+    "R01-REG-APT-05",
+    "R01-RET-APT-08",
+    "R01-RET-APT-09",
+    "R02-REG-APT-04",
+    "R02-REG-APT-05",
+    "R03-REG-APT-07",
+    "R03-REG-APT-13",
+    "R07-REG-APT-08"
+  ],
+  "source_images": 15,
+  "initial_independent_matches": 14,
+  "corrected_verified": 10,
+  "partial": 5,
+  "related_pairs_added": 8,
+  "related_pairs_total": 192,
+  "primary_references_added": 9,
+  "concepts_added": 7,
+  "concept_total": 228,
+  "canonical_counts": {
+    "recorded_at": "2026-10-12T07:06:03+09:00",
+    "registered": 1270,
+    "classification_verified": 619,
+    "summary_verified": 585,
+    "corrected_verified": 466,
+    "corrected_partial": 119,
+    "solution_drafts": 585,
+    "solution_verified": 0,
+    "manual_required": 804,
+    "subject_drafts": {
+      "BASIC": 196,
+      "APT": 131,
+      "APPLIED": 258
+    }
+  },
+  "theory_note": "知的財産の範囲・産業財産権・著作権・引用・営業秘密・新規性例外・非享受利用の共通理論。",
+  "pdf": {
+    "pages": 787,
+    "bytes": 3925091,
+    "visual_review_pages": [
+      308,
+      309,
+      310,
+      311,
+      312,
+      321,
+      322,
+      323,
+      327,
+      329,
+      330,
+      331,
+      771,
+      772
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draft・初期・1270ラベル監査成功。LuaLaTeX再生成成功、14実画像を確認。直近25回帰成功後、今回は教材内容のみの変更。",
+  "risks": [
+    "5部分校正。2013/2014年著作権法全文、漏洩件数、顧客名簿の秘密三要件を保持。R03APT7は初回4・公式5。",
+    "Astra未査読、685問未執筆、最終監査未実装。"
+  ],
+  "next": "S7_032製造物責任・製品安全16問。16原典画像と公式前初回を保存し14一致、H24APT7/H25APT7不一致を一次資料で検討。全1270問・全章・頻出分析まで続行。"
+}

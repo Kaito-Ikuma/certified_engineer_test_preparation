@@ -1,0 +1,45 @@
+{
+  "stem": "三相の体積から間隙率と体積含水率を組み立てる。",
+  "conditions": {
+    "原典照合": "H28原典10頁で組合せ表全行を確認。",
+    "記号": "Vs固相、Vw水、Va空気、V=Vs+Vw+Va。候補の百分率係数100は共通。"
+  },
+  "choices": {
+    "1": {
+      "value": "A=(Vw+Va)/V、B=Vw/Vs",
+      "verdict": "不適切",
+      "reason": "Aは間隙率だがBの分母が固相で、全体積の体積含水率ではない。"
+    },
+    "2": {
+      "value": "A=(Vw+Va)/V、B=Vw/(Vw+Va)",
+      "verdict": "不適切",
+      "reason": "Bは飽和度。"
+    },
+    "3": {
+      "value": "A=(Vw+Va)/V、B=Vw/V",
+      "verdict": "代表的条件で適切",
+      "reason": "間隙率も体積含水率も全体積V=Vs+Vw+Vaが分母。Aの分子は水と空気、Bの分子は水。"
+    },
+    "4": {
+      "value": "A=(Vw+Va)/Vs、B=Vw/(Vw+Va)",
+      "verdict": "不適切",
+      "reason": "Aは間隙比、Bは飽和度で両方違う。"
+    },
+    "5": {
+      "value": "A=(Vw+Va)/Vs、B=Vw/V",
+      "verdict": "不適切",
+      "reason": "Bは正しいがAは間隙比。"
+    }
+  },
+  "figures": "原典の組合せ表又は測定表を独自に要約。元画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_010.png"
+  ],
+  "question_id": "H28-REG-APPLIED-24",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "8597c3b68a0497cb6649d84ec866b0283cda272c1ad5853b5a15ef450a2a0325",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

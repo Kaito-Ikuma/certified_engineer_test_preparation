@@ -1,0 +1,45 @@
+{
+  "stem": "偏光顕微鏡で使う用語の説明から最も不適切なものを選ぶ。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "区別": "オープンニコルは検光子を外し、クロスニコルは偏光子と検光子を直交させる。"
+  },
+  "choices": {
+    "1": {
+      "value": "オープンニコルのベッケ線は隣接する鉱物の屈折率比較に使う",
+      "verdict": "正しい",
+      "reason": "焦点をずらしたときの明るい境界線の移動を利用して屈折率の高低を比べる。"
+    },
+    "2": {
+      "value": "クロスニコルの干渉色は複屈折で生じる",
+      "verdict": "正しい",
+      "reason": "異なる固有偏光の光路差が、検光子で合成される際の波長依存強度を生む。"
+    },
+    "3": {
+      "value": "クロスニコルで鉱物が暗くなる状態を消光という",
+      "verdict": "正しい",
+      "reason": "透過強度が小さくなり暗く見える状態である。"
+    },
+    "4": {
+      "value": "クロスニコルで回転により鉱物の色が変わる性質を多色性という",
+      "verdict": "誤り",
+      "reason": "多色性はオープンニコルで偏光方向に応じ吸収色が変わる現象である。クロスでの干渉色変化と混同している。"
+    },
+    "5": {
+      "value": "双晶の結晶部分はクロスニコルで2つ以上の異なる色を示し得る",
+      "verdict": "観察方位によって正しい",
+      "reason": "双晶ドメインは一定の関係で異なる方位を持ち、同じ回転角でも消光や色が異なり得る。常に全方位で色が異なるとは限らない。"
+    }
+  },
+  "figures": "図なし。原典頁画像で選択方向、観察条件、鉱物名と全5肢を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_009.png"
+  ],
+  "question_id": "R01-REG-APPLIED-26",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "c148082b57d416e7999345e3f5443195e4506e3133037c5ef6bbbd39d3e0703f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

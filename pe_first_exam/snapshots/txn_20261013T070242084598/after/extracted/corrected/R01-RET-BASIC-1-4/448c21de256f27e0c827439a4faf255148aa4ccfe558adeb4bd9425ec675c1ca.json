@@ -1,0 +1,45 @@
+{
+  "stem": "PERTの最早・最遅時刻と工期短縮を判断する。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "PERTの最早・最遅時刻と工期短縮を判断する。"
+  },
+  "choices": {
+    "1": {
+      "value": "誤正正誤",
+      "verdict": "選ばない候補",
+      "reason": "先行関係を矢線とノードで表すアを誤にする。"
+    },
+    "2": {
+      "value": "正正正誤",
+      "verdict": "選ぶ候補",
+      "reason": "ア〜ウ正、非クリティカル短縮を必須とするエは誤。"
+    },
+    "3": {
+      "value": "正誤誤誤",
+      "verdict": "選ばない候補",
+      "reason": "総余裕0を否定しクリティカル遅延も否定する。"
+    },
+    "4": {
+      "value": "誤誤誤正",
+      "verdict": "選ばない候補",
+      "reason": "ア〜ウを否定しエを正とする逆。"
+    },
+    "5": {
+      "value": "誤正正正",
+      "verdict": "選ばない候補",
+      "reason": "先行関係と非クリティカル短縮の二点が誤。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_004.png"
+  ],
+  "question_id": "R01-RET-BASIC-1-4",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "4",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "32c38e9dbaeab86b39c764ec906569d4fb951a5bea736c6cc4b17a30fdabf649",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

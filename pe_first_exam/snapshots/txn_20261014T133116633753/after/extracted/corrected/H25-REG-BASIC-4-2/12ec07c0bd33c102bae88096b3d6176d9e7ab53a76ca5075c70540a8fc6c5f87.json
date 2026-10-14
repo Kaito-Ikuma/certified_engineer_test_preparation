@@ -1,0 +1,46 @@
+{
+  "stem": "中和当量と残る酸・塩基、塩の加水分解。",
+  "conditions": {
+    "各体積": "すべて1 L。",
+    "濃度": "H2SO4 1.0、NaOH 2.0、HCl 1.0、アンモニア水2.0、酢酸1.0 mol/L。",
+    "注記": "原典NH4OH表記を、実際の水中のNH3/NH4+/OH−の平衡と区別。"
+  },
+  "choices": {
+    "1": {
+      "value": "硫酸とNaOH",
+      "verdict": "不適切",
+      "reason": "酸2当量と塩基2当量が中和し硫酸ナトリウムとなる。通常の中性近似又は硫酸イオンの弱い塩基性で扱い、酸性の組合せではない。"
+    },
+    "2": {
+      "value": "硫酸とアンモニア",
+      "verdict": "条件内で適切",
+      "reason": "H2SO4 1molとNH3 2molから硫酸アンモニウム。NH4+の酸性が支配する。"
+    },
+    "3": {
+      "value": "NaOHと塩酸",
+      "verdict": "不適切",
+      "reason": "塩基2molに酸1molなのでOH−が過剰。"
+    },
+    "4": {
+      "value": "NaOHと酢酸",
+      "verdict": "不適切",
+      "reason": "塩基2molに酸1molなのでOH−が過剰。"
+    },
+    "5": {
+      "value": "アンモニアと酢酸",
+      "verdict": "不適切",
+      "reason": "NH3 2molに酢酸1mol。NH3とNH4+が残り塩基性の緩衝系。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/basic/page_015.png"
+  ],
+  "question_id": "H25-REG-BASIC-4-2",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "15",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "80b3675b22234fce5a084f4740a56685783386edc629e4198bb0602af26aff62",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

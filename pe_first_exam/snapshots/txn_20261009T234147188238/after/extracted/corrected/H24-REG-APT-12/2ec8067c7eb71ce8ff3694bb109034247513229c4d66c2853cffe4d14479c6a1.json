@@ -1,0 +1,45 @@
+{
+  "stem": "企業の社会的責任に関わる活動の捉え方について、最も不適切なものを選ぶ。",
+  "conditions": {
+    "用語": "CSRは企業の社会的責任、CSVは共有価値の創出。",
+    "時点": "平成24年度の設問。CSVは2011年の提案を背景とする。"
+  },
+  "choices": {
+    "1": {
+      "value": "災害時に社員へ交通費を支給してボランティアとして派遣するのはCSRの一環となり得る。",
+      "verdict": "適切",
+      "reason": "社員の参加を支援して被災社会へ貢献する活動は、社会的責任の一つの取組となる。"
+    },
+    "2": {
+      "value": "社会貢献の結果売上が上がれば販売促進と見なされ、CSRにはなり得ない。",
+      "verdict": "不適切",
+      "reason": "社会的効果と企業の経済的効果は両立し得る。売上増加だけを理由にCSRから排除できない。"
+    },
+    "3": {
+      "value": "国内販売量に応じ海外経済支援へ資金提供するのはCSRの一環となり得る。",
+      "verdict": "適切",
+      "reason": "受益地域が販売地域と一致しなければならないという条件はない。"
+    },
+    "4": {
+      "value": "自社製品の廃棄物を有償回収・再資源化して削減するのはCSRの一環となり得る。",
+      "verdict": "適切",
+      "reason": "料金を取ること自体は廃棄物削減の社会的効果を否定しない。"
+    },
+    "5": {
+      "value": "受動的な対応にとどまらず企業戦略として共有価値の創出へ取り組む考え方が提唱される。",
+      "verdict": "適切",
+      "reason": "社会課題への対応と競争力を結び付けるCSVの提案は出題時点に存在する。ただしCSVとCSRを同一の定義にしない。"
+    }
+  },
+  "figures": "原典画像で問題幹、条件、正誤の向き、全5肢、組合せ表の全セルを確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/aptitude/page_010.png"
+  ],
+  "question_id": "H24-REG-APT-12",
+  "source_file": "sources/H24/aptitude.pdf",
+  "source_page": "10",
+  "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+  "raw_text_sha256": "9e3666ed338696902b7d7424bd5e0111546a13ea4935ebb65657a3a9f3793454",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

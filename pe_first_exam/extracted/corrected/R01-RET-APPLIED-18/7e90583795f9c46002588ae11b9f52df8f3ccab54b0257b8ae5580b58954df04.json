@@ -1,0 +1,45 @@
+{
+  "stem": "全球水の割合と地下・湖・河・大気の貯留を比較する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+  },
+  "choices": {
+    "1": {
+      "value": "総量約14億km3",
+      "verdict": "適切（概数）",
+      "reason": "1386000000km3という代表表を約14億km3へ丸めており妥当。"
+    },
+    "2": {
+      "value": "海水約97%",
+      "verdict": "適切（概数）",
+      "reason": "海水96.54%を約97%へ丸めている。"
+    },
+    "3": {
+      "value": "陸水中雪氷約70%",
+      "verdict": "分母疑義",
+      "reason": "淡水分母の氷は68.7%で約70%。陸水に塩性地下水まで含めるなら同じ割合でない。"
+    },
+    "4": {
+      "value": "河川水は大気の水蒸気より多い。",
+      "verdict": "不適切",
+      "reason": "河川2120km3は大気12900km3より小さい。年間流出量をストックへ代入しない。"
+    },
+    "5": {
+      "value": "淡水湖は地下水より少ない。",
+      "verdict": "適切",
+      "reason": "淡水湖91000km3は淡水地下水10530000km3より小さく、全地下水と比較しても小さい。"
+    }
+  },
+  "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "原典の陸水に対する雪氷約70%は、淡水貯留を分母にすれば68.7%という代表表と合う。海洋以外の全水（塩性地下水等を含む）を陸水とすると約50%に変わるため分母疑義を保持。",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_006.png"
+  ],
+  "question_id": "R01-RET-APPLIED-18",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "8d5e863d0971a9a57ba8d26dd59667f9bd8a49600229c489aeeaf98dd05b733a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

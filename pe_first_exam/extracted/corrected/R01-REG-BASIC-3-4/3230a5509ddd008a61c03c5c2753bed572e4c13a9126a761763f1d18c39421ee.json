@@ -1,0 +1,45 @@
+{
+  "stem": "非圧縮条件を体積ひずみから読む。",
+  "conditions": {
+    "材料": "等方線形弾性、微小ひずみ。",
+    "要件": "任意の応力状態でも体積変化なし。"
+  },
+  "choices": {
+    "1": {
+      "value": "0",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 0.5 と異なる。"
+    },
+    "2": {
+      "value": "0.1",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 0.5 と異なる。"
+    },
+    "3": {
+      "value": "0.2",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 0.5 と異なる。"
+    },
+    "4": {
+      "value": "0.5",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "5": {
+      "value": "1",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 0.5 と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "ν=0.5は非圧縮極限。K=E/[3(1−2ν)]は発散し、有限の体積弾性係数をもつ通常の構成則に数値代入して扱わない。",
+  "evidence": [
+    "extracted/pages/R01/basic/page_013.png"
+  ],
+  "question_id": "R01-REG-BASIC-3-4",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "13",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "0daebdebdc7bb8af567def76a28d7205e9f7827f23f750b7cfeb7e351c612242",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

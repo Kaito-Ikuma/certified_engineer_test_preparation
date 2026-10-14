@@ -1,0 +1,45 @@
+{
+  "stem": "薄板の垂直軸定理で慣性モーメントを比較。",
+  "conditions": {
+    "薄板": "一様な長方形、x方向a、y方向2a。",
+    "軸": "重心を通る直交三軸、zは面外。"
+  },
+  "choices": {
+    "1": {
+      "value": "Ixのみ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Izのみ と異なる。"
+    },
+    "2": {
+      "value": "Iyのみ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Izのみ と異なる。"
+    },
+    "3": {
+      "value": "Izのみ",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "Ix,Iy",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Izのみ と異なる。"
+    },
+    "5": {
+      "value": "Ix,Iz",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Izのみ と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/basic/page_009.png"
+  ],
+  "question_id": "H27-REG-BASIC-3-4",
+  "source_file": "sources/H27/basic.pdf",
+  "source_page": "9",
+  "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+  "raw_text_sha256": "75a9fbbc548c2aba7577e2690a6ec0914ea1f66fbd14bc935eb263d10ce6e132",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

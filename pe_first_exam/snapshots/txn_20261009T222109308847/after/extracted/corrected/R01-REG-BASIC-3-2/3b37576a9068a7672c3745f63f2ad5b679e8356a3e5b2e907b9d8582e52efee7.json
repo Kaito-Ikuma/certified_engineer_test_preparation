@@ -1,0 +1,46 @@
+{
+  "stem": "座標変換の連鎖律で定義された2行2列行列の行列式を選ぶ。",
+  "conditions": {
+    "変換": "\\(x=g(r,s),y=h(r,s),z=f(x,y)\\)",
+    "向き": "(zr,zs)の列=J(zx,zy)の列。",
+    "略記": "\\(a=x_r,b=y_r,c=x_s,d=y_s\\)"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(ac+bd\\)",
+      "verdict": "条件に不一致",
+      "reason": "同じ座標関数の微分を掛けた和で、行列式と異なる。"
+    },
+    "2": {
+      "value": "\\(ac-bd\\)",
+      "verdict": "条件に不一致",
+      "reason": "項の組合せが主対角・反対角ではない。"
+    },
+    "3": {
+      "value": "\\(bd-ac\\)",
+      "verdict": "条件に不一致",
+      "reason": "項の組合せが主対角・反対角ではない。"
+    },
+    "4": {
+      "value": "\\(ad+bc\\)",
+      "verdict": "条件に不一致",
+      "reason": "反対角積の符号が逆である。"
+    },
+    "5": {
+      "value": "\\(ad-bc\\)",
+      "verdict": "条件に一致",
+      "reason": "連鎖律でできる行(a,b)、(c,d)の行列式に一致する。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_012.png"
+  ],
+  "question_id": "R01-REG-BASIC-3-2",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "12",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "b629f30e33d286aad62797daf4bf99101ecb1cfa559b03927e37fe87774b0542",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

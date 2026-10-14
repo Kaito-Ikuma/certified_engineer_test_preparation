@@ -1,0 +1,45 @@
+{
+  "stem": "空間軌道・スピンと結合対称性を区別する。",
+  "conditions": {
+    "判断対象": "空間軌道・スピンと結合対称性を区別する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "σ/π/δ/φ等の結合",
+      "verdict": "選ぶ候補",
+      "reason": "公式はこの候補1。ただし2014年研究にはφ軌道相互作用があり、φの概念の不存在では説明できない。"
+    },
+    "2": {
+      "value": "H2OはAB2E2",
+      "verdict": "選ばない候補",
+      "reason": "O周囲は結合対2と孤立対2。"
+    },
+    "3": {
+      "value": "dを含む混成もある",
+      "verdict": "選ばない候補",
+      "reason": "d関与の形式的混成モデルはある。超原子価をd混成だけで実在説明するのは別問題。"
+    },
+    "4": {
+      "value": "水素はn,l,mだが多電子では加えてスピン",
+      "verdict": "選ばない候補",
+      "reason": "空間軌道は3量子数、電子状態は水素にもスピンがある。多電子にのみ追加する読みには疑義。"
+    },
+    "5": {
+      "value": "3p充填後は4s",
+      "verdict": "選ばない候補",
+      "reason": "中性原子の通常の構築順でAr後Kに4sが入る。全励起状態・イオンの順序とはしない。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "初回4/公式1の不一致。φ相互作用と純φ結合の分類、水素の空間軌道と電子状態、d混成近似の解釈を要査読。公式に合わせて不存在の説明を作らない。",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_004.png"
+  ],
+  "question_id": "R01-REG-APPLIED-14",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "99abc76ec27ba8d559766be591d6737332a7036d59a36daa3e8b0012b7797fec",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,44 @@
+{
+  "stem": "大循環、成層圏加熱、上層組成、海陸風と地衡風の記述を比較する。",
+  "conditions": {
+    "方向": "最も不適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "低緯度ハドレー、中緯度フェレル、高緯度極循環。",
+      "verdict": "適切（平均模式）",
+      "reason": "緯度帯に対応する帯状平均循環の基本模式である。瞬時の風を3つの閉じた固定セルだけで表さない。"
+    },
+    "2": {
+      "value": "成層圏オゾンUV吸収で約50km温度極大。",
+      "verdict": "適切",
+      "reason": "層序とオゾンの放射作用が整合する。"
+    },
+    "3": {
+      "value": "80kmまでほぼ一定、170km超でO原子、1000km付近でHe主要。",
+      "verdict": "数値高度は要確認",
+      "reason": "均質圏から上方の解離と拡散分離の定性的説明は合う。優勢成分が切り替わる高度は太陽活動等に依存し、この2数値の一次数表検証は未完了。"
+    },
+    "4": {
+      "value": "夜間は地表で海から陸へ海風。",
+      "verdict": "不適切",
+      "reason": "夜間は陸が速く冷え、基本の地表循環は陸→海の陸風。"
+    },
+    "5": {
+      "value": "傾度力と転向力の釣合いで等圧線沿いの地衡風。",
+      "verdict": "適切（近似条件）",
+      "reason": "摩擦・加速度が小さく赤道から離れた条件での理論風である。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "肢3の170km超O・1000km付近He主要の数値高度は一次数表未確認。原典の数字は保持し部分校正。",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_008.png"
+  ],
+  "question_id": "R02-REG-APPLIED-21",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "1aa5da3b13ab25186873c446b4b1b5f2e9fe9557d9b8467276c8a1d381d3088d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "ユニバーサルデザインの柔軟性・単純性・寛容・省力を選ぶ。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "ユニバーサルデザインの柔軟性・単純性・寛容・省力を選ぶ。"
+  },
+  "choices": {
+    "1": {
+      "value": "柔軟/単純/寛大/身体",
+      "verdict": "選ぶ候補",
+      "reason": "四つが七原則に対応。"
+    },
+    "2": {
+      "value": "限定/単純/厳格/精神",
+      "verdict": "選ばない候補",
+      "reason": "利用者限定、ミスへの厳格、精神的努力が不適合。"
+    },
+    "3": {
+      "value": "柔軟/単純/厳格/身体",
+      "verdict": "選ばない候補",
+      "reason": "ミスへの厳格だけが原則と逆。"
+    },
+    "4": {
+      "value": "限定/複雑/厳格/身体",
+      "verdict": "選ばない候補",
+      "reason": "限定・複雑・厳格が逆。"
+    },
+    "5": {
+      "value": "柔軟/複雑/寛大/精神",
+      "verdict": "選ばない候補",
+      "reason": "複雑性と精神的努力が不一致。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_001.png"
+  ],
+  "question_id": "R06-REG-BASIC-1-1",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "1",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "361e72564cc4cb535248ac9a6cba86e8812732f71b2c0c5adf71da86bde377a3",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

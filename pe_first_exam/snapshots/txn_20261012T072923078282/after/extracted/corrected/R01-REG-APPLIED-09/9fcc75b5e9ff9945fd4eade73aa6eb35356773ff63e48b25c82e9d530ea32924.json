@@ -1,0 +1,45 @@
+{
+  "stem": "フッ化水素の物性・ガラスへの反応・危険性と、酸解離の強さを区別する。",
+  "conditions": {
+    "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+    "成立条件": "他のハロゲン化水素との比較。純液体の誘電性と水溶液の酸解離は別。単独のHFと他の酸化剤を併用する系を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "他のハロゲン化水素より沸点が高い",
+      "verdict": "適切",
+      "reason": "分子間水素結合による会合が寄与する。"
+    },
+    "2": {
+      "value": "液体HFは大きな誘電率を持つ",
+      "verdict": "解釈未解決",
+      "reason": "定性的な候補として初回は適切としたが、温度条件付きの定量一次資料の照合が残る。"
+    },
+    "3": {
+      "value": "ガラスと反応するが金・白金とは反応しない",
+      "verdict": "条件付きで適切",
+      "reason": "ガラス腐食はNIOSHで確認できる。金・白金の非反応性を他の酸化剤との混合条件まで一般化しない。"
+    },
+    "4": {
+      "value": "水溶液は空気中で発煙する",
+      "verdict": "条件付きで適切",
+      "reason": "NIOSHは濃度40パーセント超の発煙を説明する。濃度を指定しない全水溶液への全称とは読まない。"
+    },
+    "5": {
+      "value": "強い毒性を持つ強酸である",
+      "verdict": "不適切",
+      "reason": "毒性・腐食性は強いが、通常の希薄水溶液における解離は弱酸の分類である。"
+    }
+  },
+  "figures": "文字記述又は順序候補であり図なし。",
+  "ambiguity": "純液体HFの誘電率と単独HFの金・白金非反応性について条件付き一次資料の全文確認が残る。発煙も濃度条件を要する。初回5と公式5の一致だけで全肢校正完了としない。",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_003.png"
+  ],
+  "question_id": "R01-REG-APPLIED-09",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "3c27e2725b03baefc3e7b9d68e4045d58c8ec771f65428efe7aeabf19b56c943",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

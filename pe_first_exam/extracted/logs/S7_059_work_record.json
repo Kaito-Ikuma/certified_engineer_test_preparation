@@ -1,0 +1,27 @@
+{
+  "time": "2026-10-14T21:16:59.197084+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "canonical_counts": {
+    "registered": 1270,
+    "solution_drafts": 1240,
+    "corrected_verified": 767,
+    "corrected_partial": 473,
+    "classification_verified": 1246,
+    "manual_required": 503,
+    "subject_drafts": {
+      "BASIC": 440,
+      "APT": 240,
+      "APPLIED": 560
+    }
+  },
+  "source_images_actually_viewed": 18,
+  "source_reviewed_questions": 30,
+  "initial_set_matches": 29,
+  "accepted_member_matches": 1,
+  "new_concepts": 16,
+  "new_references": 9,
+  "pdf_manifest": "extracted/logs/S7_059_build_manifest.json",
+  "checkpoint2_reached": false,
+  "remaining_first_drafts": 30
+}

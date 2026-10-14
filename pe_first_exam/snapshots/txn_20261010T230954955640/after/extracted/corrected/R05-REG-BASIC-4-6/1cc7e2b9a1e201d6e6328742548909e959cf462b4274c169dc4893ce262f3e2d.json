@@ -1,0 +1,44 @@
+{
+  "stem": "PCRの3段階、プライマーの産物への組込みと耐熱性を判定する。",
+  "conditions": {
+    "方向": "最も適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "アニーリング温度を上げすぎると非特異的会合が増える。",
+      "verdict": "不適切",
+      "reason": "通常、非特異的な会合は温度が低すぎる場合に増え、高すぎると標的との会合も減り増幅が低下する。製品と配列ごとの条件を確認する。"
+    },
+    "2": {
+      "value": "増幅する配列が長いほど伸長時間を短くする。",
+      "verdict": "不適切",
+      "reason": "同じ伸長速度なら長い領域を合成するにはより長い時間が必要である。"
+    },
+    "3": {
+      "value": "生成DNAにプライマーの配列は含まれない。",
+      "verdict": "不適切",
+      "reason": "ポリメラーゼはプライマーの3端から伸長し、プライマー自身は産物の一部に残る。"
+    },
+    "4": {
+      "value": "低い耐熱性のDNAポリメラーゼがPCRに適する。",
+      "verdict": "不適切",
+      "reason": "反復加熱に耐える必要があり、一般には高い耐熱性を用いる。"
+    },
+    "5": {
+      "value": "熱で二重鎖の水素結合を解き一本鎖へ解離させる。",
+      "verdict": "最適",
+      "reason": "鎖間の塩基対会合を解く熱変性の説明として適切。糖リン酸主鎖の切断や、安定化が水素結合だけとの説明へ拡張しない。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_015.png"
+  ],
+  "question_id": "R05-REG-BASIC-4-6",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "15",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "cf5c846b3d5512662339fdba5302ac7d5dd85821d9099e13ced956f39930da3d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

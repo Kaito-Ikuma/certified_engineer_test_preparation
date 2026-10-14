@@ -1,0 +1,46 @@
+{
+  "stem": "最小値と最大値の更新をelseで結んだ走査の不変条件と失敗例を判定する。",
+  "conditions": {
+    "判断対象": "0<a_i<1000、min初期1000、max初期0、elseによる排他的更新。",
+    "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+  },
+  "choices": {
+    "1": {
+      "value": "min常に最小・max常に最大でない",
+      "verdict": "不適切",
+      "reason": "1,2の順ならmax=2となるので常に失敗ではない。"
+    },
+    "2": {
+      "value": "min常に最小・max失敗する場合あり",
+      "verdict": "適切",
+      "reason": "minの更新は常に行われ、maxはelseで初回等を飛ばす場合がある。"
+    },
+    "3": {
+      "value": "min失敗の場合あり・max常に最大でない",
+      "verdict": "不適切",
+      "reason": "minは各接頭列の最小を保持する。maxも成功例がある。"
+    },
+    "4": {
+      "value": "minもmaxも失敗の場合あり",
+      "verdict": "不適切",
+      "reason": "minは常に正しいので前半が違う。"
+    },
+    "5": {
+      "value": "min失敗の場合あり・max常に最大",
+      "verdict": "不適切",
+      "reason": "minは正しくmaxは失敗例があるので両方違う。"
+    }
+  },
+  "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/basic/page_007.png",
+    "extracted/pages/H24/basic/page_008.png"
+  ],
+  "question_id": "H24-REG-BASIC-2-5",
+  "source_file": "sources/H24/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+  "raw_text_sha256": "5d63e976a5691d30289760b8ab9ab251970f05249d1c63f029888bdf84e6ecec",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

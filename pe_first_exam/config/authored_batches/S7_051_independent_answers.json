@@ -1,0 +1,85 @@
+{
+  "batch_id": "S7_051_electromagnetic",
+  "saved_at": "2026-10-13T11:48:13.260169+09:00",
+  "official_answers_consulted": false,
+  "records": [
+    {
+      "question_id": "H23-REG-APPLIED-02",
+      "answer_initial": "1",
+      "reason": "Wiedemann–Franzは主に熱・電気輸送の関係。",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-05",
+      "answer_initial": "5",
+      "reason": "原典の10²〜10⁴Ωcmは金属の典型値から大幅に外れる。",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-07",
+      "answer_initial": "5",
+      "reason": "局在磁気モーメントのCurie常磁性ではχ=C/T。",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-09",
+      "answer_initial": "2",
+      "reason": "Néel温度より高温で反強磁性秩序が失われる。",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-07",
+      "answer_initial": "3",
+      "reason": "原典の10²〜10⁴Ωmは金属の典型値から大幅に外れる。",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-08",
+      "answer_initial": "5",
+      "reason": "Pauli常磁性は伝導電子のスピンに由来。",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-03",
+      "answer_initial": "1",
+      "reason": "誘電加熱の主対象は誘電体。表皮深さを厳密にゼロとする肢には留保。",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-04",
+      "answer_initial": "3",
+      "reason": "理想変圧器はE2/E1=N2/N1。",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-08",
+      "answer_initial": "4",
+      "reason": "原典の1〜10²Ωmは金属の典型値から大幅に外れる。",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-09",
+      "answer_initial": "3",
+      "reason": "特性X線は線スペクトル。",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-07",
+      "answer_initial": "3",
+      "reason": "Néel温度より高温で反強磁性秩序が失われる。",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-08",
+      "answer_initial": "4",
+      "reason": "Geのダイヤモンド構造はsp³モデル。軌道と副殻の語義に留保。",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-07",
+      "answer_initial": "3",
+      "reason": "圧電体がすべて強誘電体であるとは限らない。",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7"
+    }
+  ]
+}

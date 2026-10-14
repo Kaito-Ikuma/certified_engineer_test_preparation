@@ -1,0 +1,45 @@
+{
+  "stem": "部門別エネルギーの歴史的推移。",
+  "conditions": {
+    "時点": "令和2年度に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "最終消費2005ピーク後減",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "2": {
+      "value": "産業業務全体は省エネで同程度",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "3": {
+      "value": "GDP当たり日本は世界平均未満",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "4": {
+      "value": "家庭は震災後も継続増加",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "5": {
+      "value": "旅客2002ピーク後燃費等で減",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "原典が参照する版のピーク年2005・2002と全五グラフの原表は未取得。後年の統計遡及改訂と区別して追加照合。",
+  "evidence": [
+    "extracted/pages/R02/basic/page_020.png"
+  ],
+  "question_id": "R02-REG-BASIC-5-3",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "20",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "ac65aa161764f6bfd424d2f243caba68da3dfcf33a332b0c2dfd14487c43319d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

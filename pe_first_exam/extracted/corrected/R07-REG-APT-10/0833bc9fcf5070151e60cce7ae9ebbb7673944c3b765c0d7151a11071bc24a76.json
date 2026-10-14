@@ -1,0 +1,49 @@
+{
+  "stem": "循環資源、再使用、再生利用、熱回収、優先順位の5記述の適切数を求める。",
+  "conditions": {
+    "方向": "適切な記述の数。",
+    "ア": "有価無価を問わない廃棄物等のうち有用なものを循環資源とする。○：法の対象を有価品だけに限定しない。",
+    "イ": "製品/部品として使うことを再生利用とする。×：再使用の定義。修理して利用することも再使用。",
+    "ウ": "原材料として利用することを再使用とする。×：再生利用の定義。",
+    "エ": "燃焼可能な資源を熱を得ることへ使う熱回収。○：材料回収とは利用形態が異なる。",
+    "オ": "抑制→再生利用→再使用→熱回収→処分。×：一般順位の再使用と再生利用が逆。"
+  },
+  "choices": {
+    "1": {
+      "value": "4",
+      "verdict": "整合しない",
+      "reason": "3誤りがあるため4件ではない。"
+    },
+    "2": {
+      "value": "3",
+      "verdict": "整合しない",
+      "reason": "イウオを誤りとすると適切2件であり3件ではない。"
+    },
+    "3": {
+      "value": "2",
+      "verdict": "整合する",
+      "reason": "アとエの2件で一致。"
+    },
+    "4": {
+      "value": "1",
+      "verdict": "整合しない",
+      "reason": "正しいアエのどちらかを取り落とす。"
+    },
+    "5": {
+      "value": "0",
+      "verdict": "整合しない",
+      "reason": "アエは法の定義と一致し0件ではない。"
+    }
+  },
+  "figures": "問題幹・全5肢・否定・文字・数値・時点を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/aptitude/page_010.png"
+  ],
+  "question_id": "R07-REG-APT-10",
+  "source_file": "sources/R07/aptitude.pdf",
+  "source_page": "10",
+  "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+  "raw_text_sha256": "11af59a3cd29014502359aec89129b5c6f5d1ff7c1d8ef41b106bccc229c82b0",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

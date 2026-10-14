@@ -1,0 +1,44 @@
+{
+  "stem": "結合双極子のベクトル和と分子極性。",
+  "conditions": {
+    "対象": "中性分子の通常構造の極性。"
+  },
+  "choices": {
+    "1": {
+      "value": "CO2",
+      "verdict": "不適切",
+      "reason": "直線対称で二つのC=O双極子が相殺。"
+    },
+    "2": {
+      "value": "ジエチルエーテル",
+      "verdict": "条件内で適切",
+      "reason": "Oの周りが折れ曲がり、C-O結合の双極子は相殺しない。"
+    },
+    "3": {
+      "value": "CH4",
+      "verdict": "不適切",
+      "reason": "正四面体対称で相殺。"
+    },
+    "4": {
+      "value": "BF3",
+      "verdict": "不適切",
+      "reason": "平面三角形対称で相殺。"
+    },
+    "5": {
+      "value": "CCl4",
+      "verdict": "不適切",
+      "reason": "正四面体対称で相殺。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_014.png"
+  ],
+  "question_id": "R01-RET-BASIC-4-1",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "ec4361aa5a2681d5d79c053b838411843619ee6d188f94e54774bccf885133bb",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

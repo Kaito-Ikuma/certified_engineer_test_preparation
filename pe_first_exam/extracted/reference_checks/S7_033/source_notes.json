@@ -1,0 +1,82 @@
+{
+  "checked_at": "2026-10-12T07:29:22+09:00",
+  "sources": [
+    {
+      "key": "iupac_greenbook2012",
+      "title": "Quantities, Units and Symbols in Physical Chemistry, third edition, second printing",
+      "url": "https://iupac.org/wp-content/uploads/2019/05/IUPAC-GB3-2012-2ndPrinting-PDFsearchable.pdf",
+      "checked_claim": "印刷58・61・63〜65頁の定義表と注記を文字層で確認。印刷64〜65頁（物理78〜79頁）は画像でも確認。"
+    },
+    {
+      "key": "mit_kinetics2013",
+      "title": "Atmospheric Chemistry: Lecture 2, Chemical Kinetics",
+      "url": "https://ocw.mit.edu/courses/1-84j-atmospheric-chemistry-fall-2013/2ad7eaba000b770595a604bdb6a6f310_MIT1_84JF13_Lec2_kinetics1.pdf",
+      "checked_claim": "速度式、障壁模型、衝突模型、遷移状態模型を確認。模型の省略は本文で区別する。"
+    },
+    {
+      "key": "mit_buffer2008",
+      "title": "Principles of Chemical Science: Lecture 23 transcript",
+      "url": "https://ocw.mit.edu/courses/5-111-principles-of-chemical-science-fall-2008/48fccce09a655f756fadde73892f57c1_5-111F08-L23.pdf",
+      "checked_claim": "弱酸塩基の共役対、血液の緩衝、濃度と緩衝容量、中和後の全体積について該当段落を確認。"
+    },
+    {
+      "key": "iupac_catalyst",
+      "title": "Gold Book: catalyst",
+      "url": "https://goldbook.iupac.org/terms/view/C00876",
+      "checked_claim": "本文の直接取得は403。公式検索索引に表示された定義の範囲で、速度増大・標準ギブズエネルギー不変・負触媒を用いない用語方針を確認。"
+    },
+    {
+      "key": "niosh_hf",
+      "title": "Hydrogen Fluoride / Hydrofluoric Acid: Systemic Agent",
+      "url": "https://www.cdc.gov/niosh/ershdb/emergencyresponsecard_29750030.html",
+      "checked_claim": "公式本文のdescriptionで弱酸と有害性、ガラス腐食、40パーセント超水溶液の発煙を確認。医療解説には使用しない。"
+    }
+  ],
+  "local_files": [
+    {
+      "file": "extracted/reference_checks/S7_033/greenbook.pdf",
+      "sha256": "6076dbf045427d68c6cdda3d5632223a69b5d14fd7304f5cb50ce4519d3aefde"
+    },
+    {
+      "file": "extracted/reference_checks/S7_033/greenbook_searchable.txt",
+      "sha256": "caa9d987d8b3c077ac8a93deb7ebda18d5ac7bbc009b5e8a55952ae3e8193706"
+    },
+    {
+      "file": "extracted/reference_checks/S7_033/buffer_mit.pdf",
+      "sha256": "03e6311b91b576914080de8edb11a615c34a4d0acabeca77666d9bef7f23b25a"
+    },
+    {
+      "file": "extracted/reference_checks/S7_033/greenbook_searchable.pdf",
+      "sha256": "dc9cf52d6cf333d58ba48546baba0e8f99d6650895daa886caf1543eea8352ed"
+    },
+    {
+      "file": "extracted/reference_checks/S7_033/buffer_mit.txt",
+      "sha256": "c609ddaa2876ff47b067baa179a4aedc9e91649a3dd4b22dfe9461b6a98ebf45"
+    },
+    {
+      "file": "extracted/reference_checks/S7_033/greenbook.txt",
+      "sha256": "5d3ecc89ef5be0396a7521c0bd30e866f47afc62df8de68d0b6ba6db94b78047"
+    },
+    {
+      "file": "extracted/reference_checks/S7_033/kinetics_mit.pdf",
+      "sha256": "1540af9f87b79eb1f028aaff0a146ac8f388ba0c0b43d0eb8e0c1db422121bec"
+    },
+    {
+      "file": "extracted/reference_checks/S7_033/kinetics_mit.txt",
+      "sha256": "d3e0f9ab0fb63a0b81fc5999132657f636d30d07ebb7d1c8dfa02fb2b62e96b5"
+    },
+    {
+      "file": "extracted/reference_checks/S7_033/greenbook_check-078.png",
+      "sha256": "8634be860b0b3b7202661b264e9c63c909ae262d6cc8c1b697a76855741bcfaf"
+    },
+    {
+      "file": "extracted/reference_checks/S7_033/greenbook_check-079.png",
+      "sha256": "9332f19fc7c081d57e3a35dacec403152dd76a7c29cf0d7771dbbe1aebd27a0f"
+    }
+  ],
+  "limitations": [
+    "QMUL版Green Bookの文字層は文字化けしたため、IUPAC公式の検索可能版に切り替えた。",
+    "Gold Book各項目と1996年速度論資料の直接取得は403等で失敗。全文取得済みと扱わない。",
+    "R02応用13の反応速度比と公式2の一意性、HF物性の一部、負触媒・pKa等の原典用語、模型の適用条件は個別の部分校正に残す。"
+  ]
+}

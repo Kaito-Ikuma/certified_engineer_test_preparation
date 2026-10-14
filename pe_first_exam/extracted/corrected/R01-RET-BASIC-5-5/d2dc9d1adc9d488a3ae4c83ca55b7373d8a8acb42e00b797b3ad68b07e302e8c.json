@@ -1,0 +1,45 @@
+{
+  "stem": "同じ年表でも元の選択順へ戻す。",
+  "conditions": {
+    "時点": "令和元年度再試験に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "アイエウオ",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "エアイウオ",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "アエオイウ",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "エアイオウ",
+      "verdict": "適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "5": {
+      "value": "アイエオウ",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "初出史料の全五項目照合は未完了。原典の彗星「発見」は周期性の同定として留保。",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_019.png"
+  ],
+  "question_id": "R01-RET-BASIC-5-5",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "19",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "b7282f96a6ed4f1725f81cd6c559da525af9a0b9dd45b8e3257ce0b5128abcbf",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

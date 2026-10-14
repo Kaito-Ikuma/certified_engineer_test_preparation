@@ -1,0 +1,44 @@
+{
+  "stem": "乾燥大気の主要成分の量順と、微量温室気体の発生・季節変動を判定する。",
+  "conditions": {
+    "方向": "最も不適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "ArはN2・O2・CO2の次に多い。",
+      "verdict": "不適切",
+      "reason": "乾燥大気の量順はN2、O2、Ar、CO2。Ar約0.93%はCO2の約0.04%より大きい。"
+    },
+    "2": {
+      "value": "CH4は嫌気的条件で生成する温室気体で近年増加。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "生物起源の生成は酸素の乏しい環境で起こる。源は多様で、ここでいう増加は問題出題の近年に関する。"
+    },
+    "3": {
+      "value": "N2は安定で全球の混合比がほぼ一様。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "よく混合された下層大気の乾燥混合比の代表。局所的な反応が全くないという意味ではない。"
+    },
+    "4": {
+      "value": "O2は原始大気に乏しく地史で増加。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "酸素発生型光合成等と地球表層の酸化還元過程の長期変化に関係する。現在の組成を原始大気へ遡及しない。"
+    },
+    "5": {
+      "value": "CO2は光合成・呼吸で季節変動。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "特に北半球の植生季節活動が観測曲線へ現れる。長期人為増加とは別成分。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_006.png"
+  ],
+  "question_id": "R05-REG-APPLIED-18",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "3a7c5a242a1314638416ab50e7c1c5328c915ba317f0116f94cb8838ad8ef9c7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

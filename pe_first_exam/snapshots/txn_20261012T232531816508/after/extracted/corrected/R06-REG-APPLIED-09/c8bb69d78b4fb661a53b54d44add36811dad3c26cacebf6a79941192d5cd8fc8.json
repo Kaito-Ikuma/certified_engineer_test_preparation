@@ -1,0 +1,45 @@
+{
+  "stem": "Siの通常性状と炭化物・ホウ化物形成を比較する。",
+  "conditions": {
+    "判断対象": "Siの通常性状と炭化物・ホウ化物形成を比較する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "SiO2/ケイ酸塩で地殻に多い",
+      "verdict": "選ばない候補",
+      "reason": "元素Siの単体ではなく化合物の分布。"
+    },
+    "2": {
+      "value": "高純度Siは半導体材料",
+      "verdict": "選ばない候補",
+      "reason": "通常の電子材料用途。"
+    },
+    "3": {
+      "value": "高純度Siは水/無機酸に不溶",
+      "verdict": "選ばない候補",
+      "reason": "通常の非酸化性酸の代表耐性。酸化剤とHFを組合せたエッチングなどに例外。"
+    },
+    "4": {
+      "value": "Siにはdiamond構造",
+      "verdict": "選ばない候補",
+      "reason": "通常結晶Siは四面体結合のdiamond型。"
+    },
+    "5": {
+      "value": "高温でもC/Bと直接結合しない",
+      "verdict": "選ぶ候補",
+      "reason": "SiCとSiB6等の化合物が存在し無結合の全称は誤り。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "水/無機酸不溶の全称には混酸等の例外。純度・酸種・温度・表面条件未指定。公式誤りと他候補の一般化疑義を分ける。",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_003.png"
+  ],
+  "question_id": "R06-REG-APPLIED-09",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "818ce1553a3180f30769059904b5d0200240e98c1705efedbd3f41d2552b1c4e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

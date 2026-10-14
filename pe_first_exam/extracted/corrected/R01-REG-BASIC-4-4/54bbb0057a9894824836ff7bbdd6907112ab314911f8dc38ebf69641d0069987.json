@@ -1,0 +1,44 @@
+{
+  "stem": "化学物質の製法・特性・用途。",
+  "conditions": {
+    "原典": "五肢の前半と後半をともに判定。"
+  },
+  "choices": {
+    "1": {
+      "value": "炭酸NaはHaber-Bosch製造",
+      "verdict": "不適切",
+      "reason": "Haber-Boschはアンモニア合成。炭酸Naの代表はSolvay法。"
+    },
+    "2": {
+      "value": "黄リンは毒性少ない",
+      "verdict": "不適切",
+      "reason": "黄リンは強い毒性がある。空気中発火と水中保管は毒性の低さの根拠でない。"
+    },
+    "3": {
+      "value": "TiO2の一部は光触媒用途",
+      "verdict": "条件内で適切",
+      "reason": "光を受けて表面で反応を促し、抗菌・防汚等へ使われる。"
+    },
+    "4": {
+      "value": "黒鉛は極めて硬く導電性悪い",
+      "verdict": "不適切",
+      "reason": "層状構造で軟らかく、電気を伝える。ダイヤモンドと混同。"
+    },
+    "5": {
+      "value": "Pbは鉛電池正極、PbOガラス",
+      "verdict": "不適切",
+      "reason": "放電時の負極がPb、正極活物質はPbO2。後半のガラス用途と合わせても肢全体は誤。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "黄リンの毒性分類とSolvayの詳細一次資料は追加照合対象。TiO2の組成・結晶相・照射条件により光触媒性能が異なる。",
+  "evidence": [
+    "extracted/pages/R01/basic/page_017.png"
+  ],
+  "question_id": "R01-REG-BASIC-4-4",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "7f82e0954f1f3e67d5d78c2c61c95a6adbbe3df372c9260f5507cf7685b0e49d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

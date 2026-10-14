@@ -1,0 +1,45 @@
+{
+  "stem": "探査の時間差・環境振動と表面波のS波速度を比較する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "Rayleigh波の分散は主にVs分布へ関係し、時間差調査は同じ測定条件を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "重力補正で密度構造による異常のみ抽出",
+      "verdict": "条件付きで適切",
+      "reason": "潮汐・標高・地形等の寄与を補正し地下密度異常を解釈する。補正誤差や地域背景が完全に消えるという保証ではない。"
+    },
+    "2": {
+      "value": "GPRは数m浅部の埋設物空洞遺跡に多用",
+      "verdict": "適切",
+      "reason": "典型的な浅部の利用であり、媒質・装置によってより深い例もある。"
+    },
+    "3": {
+      "value": "time lapseは繰返し探査差から地下変化を推定",
+      "verdict": "適切",
+      "reason": "同じ条件の反復観測で変化を見る。装置ドリフトや位置・気象差も区別する。"
+    },
+    "4": {
+      "value": "環境振動は感覚補正の振動レベルとJIS計器を使う",
+      "verdict": "条件付きで適切",
+      "reason": "人の周波数感度を補正した加速度レベルで評価する。出題時と現在の規格版、計器性能の全文は追加照合対象である。"
+    },
+    "5": {
+      "value": "表面波分散から主にP波速度構造を推定",
+      "verdict": "不適切",
+      "reason": "通常の表面波法の主推定物性はS波速度Vsである。P波速度は感度を持つ他パラメータとして扱う。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "JISの規格本文と出題時/現行版差は未照合。重力ののみは処理目的と読み、残差誤差がないとはしない。",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_011.png"
+  ],
+  "question_id": "R01-REG-APPLIED-32",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "465235757955222df7c7703fc2ddc53e1730c2a24f3f4fdcb3c45043d43b70a0",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

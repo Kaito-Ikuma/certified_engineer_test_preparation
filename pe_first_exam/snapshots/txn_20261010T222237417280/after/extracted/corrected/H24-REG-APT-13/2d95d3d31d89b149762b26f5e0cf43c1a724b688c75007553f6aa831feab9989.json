@@ -1,0 +1,46 @@
+{
+  "stem": "特定非営利活動法人の公益目的、収益・報酬、競争、会社員の参加を4記述で判定する。",
+  "conditions": {
+    "方向": "ア〜エの正誤組合せ。",
+    "時点": "平成24年、2012年4月施行の改正後。",
+    "限定": "イは法人の目的と利益分配の制限の文脈。無報酬や全ての個人への便益禁止へ拡張しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "ア○・イ○・ウ○・エ×",
+      "verdict": "選択対象ではない",
+      "reason": "ウを適切とするのが誤り。活動分野の法定と営利企業の競争保護のための制限は別である。"
+    },
+    "2": {
+      "value": "ア×・イ○・ウ○・エ×",
+      "verdict": "選択対象ではない",
+      "reason": "アを誤り、ウを正しいとした点が逆。2012年4月以降は20分野である。"
+    },
+    "3": {
+      "value": "ア○・イ○・ウ×・エ×",
+      "verdict": "選択対象",
+      "reason": "公益目的と報酬の区別に基づくア・イの肯定、ウ・エの否定が一致する。"
+    },
+    "4": {
+      "value": "ア○・イ○・ウ×・エ○",
+      "verdict": "選択対象ではない",
+      "reason": "エを適切とするのが誤り。営利企業の社員であること自体は参加を禁ずる理由にならない。"
+    },
+    "5": {
+      "value": "ア○・イ×・ウ×・エ×",
+      "verdict": "選択対象ではない",
+      "reason": "イを否定した点が誤り。支障のないその他の事業と、役職員への適法な報酬は可能。"
+    }
+  },
+  "figures": "原典の設問・全5肢・否定・時点を実画像確認。組合せ候補表の全セルを照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/aptitude/page_011.png"
+  ],
+  "question_id": "H24-REG-APT-13",
+  "source_file": "sources/H24/aptitude.pdf",
+  "source_page": "11",
+  "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+  "raw_text_sha256": "53f57bdb9754c240b671eabb4c7370f9e2546a523fac2a477f56f7c3de46f214",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

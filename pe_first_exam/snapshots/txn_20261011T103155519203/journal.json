@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T10:31:55+09:00",
+  "paths": [
+    "generated/questions/applied_science/physics_chemistry/11_other.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/physics_chemistry/11_other.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/physics_chemistry/11_other.tex": "d803622759fdb61148d9f1c9df4b3f2e2e7a8ce3c0abe2b9138c229c31b940da"
+  }
+}

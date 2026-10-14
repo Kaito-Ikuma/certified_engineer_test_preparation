@@ -1,0 +1,45 @@
+{
+  "stem": "自然試料のδ値と元素ごとの基準尺度を比較する。",
+  "conditions": {
+    "判断対象": "自然試料のδ値と元素ごとの基準尺度を比較する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "海水δ18Oは0‰前後",
+      "verdict": "選ばない候補",
+      "reason": "VSMOW尺度の代表的海水を考える。地域・塩分差はある。"
+    },
+    "2": {
+      "value": "海成炭酸塩δ13Cは0‰前後",
+      "verdict": "選ばない候補",
+      "reason": "VPDB尺度の代表的海成炭酸塩。全地質時代・全生成物の保証ではない。"
+    },
+    "3": {
+      "value": "海水硫酸δ34Sは0‰前後",
+      "verdict": "選ぶ候補",
+      "reason": "海水硫酸由来NBS-127でも約+20.3‰とされ、0ではない。"
+    },
+    "4": {
+      "value": "海水塩化物δ37Clは0‰前後",
+      "verdict": "選ばない候補",
+      "reason": "標準海水塩化物尺度の基準近傍。"
+    },
+    "5": {
+      "value": "大気窒素δ15Nは0‰前後",
+      "verdict": "選ばない候補",
+      "reason": "大気N2を基準とする尺度の零点。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "自然試料の代表値は地域・時代・生成条件で変わる。全候補の厳密な分布未照合。NBS-127の旧CDT脚注を保持。",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_006.png"
+  ],
+  "question_id": "H29-REG-APPLIED-18",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "d9a10081090a83486ce4327e4274c20f7bdf41c68849e229e3cb892130282757",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

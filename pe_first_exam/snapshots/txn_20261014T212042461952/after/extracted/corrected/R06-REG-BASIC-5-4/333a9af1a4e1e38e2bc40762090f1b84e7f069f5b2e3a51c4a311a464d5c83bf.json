@@ -1,0 +1,45 @@
+{
+  "stem": "2022一次供給の再エネ・水力・未活用比。",
+  "conditions": {
+    "原典": "全五肢と否定方向・組合せ表を画像確認。",
+    "資料時点": "令和6年度の指定資料・統計年を保持し、後年値に置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "0.5%",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 14% と異なる。"
+    },
+    "2": {
+      "value": "2%",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 14% と異なる。"
+    },
+    "3": {
+      "value": "7%",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 14% と異なる。"
+    },
+    "4": {
+      "value": "14%",
+      "verdict": "適切・選択対象",
+      "reason": "独立に求めた組合せ 14% と一致する。"
+    },
+    "5": {
+      "value": "28%",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ 14% と異なる。"
+    }
+  },
+  "figures": "図の数値又は組合せ表を独自要約。原典画像は確認用のみ。",
+  "ambiguity": "2022確報の数値表から指定三区分を実際に合算する追加再計算が必要。原表索引と再エネ説明を確認した範囲。",
+  "evidence": [
+    "extracted/pages/R06/basic/page_019.png"
+  ],
+  "question_id": "R06-REG-BASIC-5-4",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "19",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "0077d4e54ab67555d6a282d03127ad940b0882c07709c5e26007d2e1998a7e5a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

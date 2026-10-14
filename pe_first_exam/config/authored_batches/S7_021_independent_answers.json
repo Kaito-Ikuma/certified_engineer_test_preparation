@@ -1,0 +1,271 @@
+{
+  "batch_id": "S7_021_geochemistry",
+  "recorded_at": "2026-10-11T01:01:49.818178+09:00",
+  "official_answer_consulted": false,
+  "questions": [
+    {
+      "question_id": "H23-REG-APPLIED-18",
+      "independent_answer": "5",
+      "reason": "大腸菌群、BOD、窒素、SSは汚濁の指標。水素同位体は起源・循環の追跡で汚濁量の直接指標ではない。",
+      "source_images_viewed": [
+        "extracted/pages/H23/17_applied_science/page_006.png"
+      ],
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "raw_text_sha256": "85b1b4cca6b9d716d19eac40835a4ecdd1336ecbec2ca7f67b29cb551c5116a2",
+      "image_sha256": "4db4e8f368134c7cd21b2366991b053e0f87d78c074c915d9db50b4fb7c701e0",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H23-REG-APPLIED-19",
+      "independent_answer": "3",
+      "reason": "初期CO2低濃度は逆、水蒸気の自然温室寄与が大、メタン生成は嫌気、海洋炭素量は大気よりはるかに大。3は風化と生物循環の重要性だが風化収支を光合成等だけで完全に均衡させる因果表現は注意。",
+      "source_images_viewed": [
+        "extracted/pages/H23/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "raw_text_sha256": "7188b001c7e576a26f58cfdd1c1e10c405c2f5fc1e5f676c600b0a7d8196c984",
+      "image_sha256": "0048643e24983720a07322b040e758c1b3b875de511ac14079a0ad82ce3f8c12",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H23-REG-APPLIED-22",
+      "independent_answer": "4",
+      "reason": "提示5貯留のうち地下水が最大。湖河湿地土壌はいずれも小さい。",
+      "source_images_viewed": [
+        "extracted/pages/H23/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "raw_text_sha256": "3310b86940f59436e53c66d133563529d4a48c9a694552ddd5a96cfdd66373ec",
+      "image_sha256": "0048643e24983720a07322b040e758c1b3b875de511ac14079a0ad82ce3f8c12",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H24-REG-APPLIED-33",
+      "independent_answer": "5",
+      "reason": "世界平均は風化由来Ca・HCO3が重要。低酸素地下水鉄の酸化沈殿、硫化物の酸性排水、珪酸傾向、CO2脱気でpH上昇は整合。日本平均比較は一次統計要確認。",
+      "source_images_viewed": [
+        "extracted/pages/H24/17_applied_science/page_010.png"
+      ],
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "raw_text_sha256": "15e367469e54df1adea636ad16123ff1fe7c6576dd919b992892269b11fa14ea",
+      "image_sha256": "3293521506e05f9d8f141593484b14c7577341a3d0b6c0189badb9779896a695",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H25-REG-APPLIED-10",
+      "independent_answer": "4",
+      "reason": "地殻O>Si>Al、KはClより多い。Si>Ti、Al>Cu、Ti>Mnも整合。存在度の質量／原子数基準を要確認。",
+      "source_images_viewed": [
+        "extracted/pages/H25/17_applied_science/page_005.png"
+      ],
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "raw_text_sha256": "b1cfc23ffde98d96952f9871e5cca4eb76573b0a56675d847c4b340d6eca091f",
+      "image_sha256": "5d66df5b7cd822aabcef602434e309d984a4a2deec5e42894c6c50220cb0f8be",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H25-REG-APPLIED-31",
+      "independent_answer": "4",
+      "reason": "水素酸素同位体比は天水線の正の相関で反比例ではない。1希薄傾向、3塩濃縮混合、5酸性源は妥当。2原典の炭酸カルシウム型は普通のCa-HCO3型と区別する必要がある。",
+      "source_images_viewed": [
+        "extracted/pages/H25/17_applied_science/page_011.png"
+      ],
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "raw_text_sha256": "e6b6e9108bb9be032bece1130705137195d3e14fa880f5496ebd310891fffaf6",
+      "image_sha256": "54ec5ef57e455d90e9da35a038637ca13fe859bca509a22efc2ffca934d0cac1",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H26-REG-APPLIED-18",
+      "independent_answer": "4",
+      "reason": "帯水層貯留、CO2-EOR、アミン回収、膜回収は直接関係。界面活性剤は他EORなどに使うが提示中でCO2回収貯留との直接性が薄い。",
+      "source_images_viewed": [
+        "extracted/pages/H26/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "raw_text_sha256": "1efb97e4f311f5da8c7866c3a1445d53cb61ff0e6eb48d024a3b2b4b8a1b0292",
+      "image_sha256": "5970bd1c5a811291fe0cd22668fd43730b1481bcd93700b115bf9b9df9a926c0",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H26-REG-APPLIED-25",
+      "independent_answer": "5",
+      "reason": "総量14億km3、海97%、雪氷約70%は淡水分母での概数。地下水>湖、河川水<大気水。陸水の分母は塩性地下水も含むか注意。",
+      "source_images_viewed": [
+        "extracted/pages/H26/17_applied_science/page_011.png"
+      ],
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "raw_text_sha256": "5299c8b3fe41cee39685017813e244531d2acc088e3f7ddca884bae5064db53c",
+      "image_sha256": "232789c2dce3d7584dbd2869c0ca0604359a2f97a46b529fe0a384c0b0481607",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H26-REG-APPLIED-27",
+      "independent_answer": "4",
+      "reason": "CO2吸収は赤外、土壌CO2は風化を促進、海洋炭素は大気より大、メタン生成は光合成でない。4は地史的な風化と光合成の作用。",
+      "source_images_viewed": [
+        "extracted/pages/H26/17_applied_science/page_011.png"
+      ],
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "raw_text_sha256": "8bcdce0e224fd401204bfc0cebc7b48bbc7dc5461941e6b5f38cec7ebfb24d4e",
+      "image_sha256": "232789c2dce3d7584dbd2869c0ca0604359a2f97a46b529fe0a384c0b0481607",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H27-REG-APPLIED-27",
+      "independent_answer": "4|5",
+      "reason": "初回判定未確定。4は単純風化だと酸消費だが海洋逆風化ならpH低下を説明できる可能性があり原典の意図要確認。5も珪藻吸収と遺骸の溶解放出を区別する必要がある。2の硫酸カルシウム型はCa供給条件を欠く。公式は未参照で4または5を保留。",
+      "source_images_viewed": [
+        "extracted/pages/H27/17_applied_science/page_010.png"
+      ],
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "raw_text_sha256": "9e0011137b7c402e00d3347e940868efb86c6b06cee485ca21147fd7e78c5cac",
+      "image_sha256": "752b8714b9bf0ec9cae8e298543c60c798b79363827422dbaa2e90656f3f7107",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H28-REG-APPLIED-27",
+      "independent_answer": "4",
+      "reason": "1初期CO2濃度逆、2最大水蒸気、3メタンは還元、5海洋が圧倒的に大きい。4風化・生物循環は妥当だが収支均衡の範囲注意。",
+      "source_images_viewed": [
+        "extracted/pages/H28/17_applied_science/page_011.png"
+      ],
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "raw_text_sha256": "fd2d786441c7b10c704d4d590bfb8fcfadf459541f2767bc20da7c65fcc6a70d",
+      "image_sha256": "76f6e36d7d5f71d0246dc6cd6489a3cb5b0b838c04da4113d07133584bd3ac91",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H29-REG-APPLIED-20",
+      "independent_answer": "1",
+      "reason": "海塩NaClが世界河川大半の主成分との一般化が誤り。硫化物酸化、珪酸、CO2脱気pH、Fe酸化沈殿は妥当。",
+      "source_images_viewed": [
+        "extracted/pages/H29/17_applied_science/page_006.png"
+      ],
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "raw_text_sha256": "3c1e7a1432e4c62641c584abf3d1c7f5f27f5609154516fcdc025e3366146bc0",
+      "image_sha256": "29230a9e37cc89bf86c7fe4c80ada953fdbc1e82647be60fd37da303d9244f03",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "H30-REG-APPLIED-28",
+      "independent_answer": "2",
+      "reason": "0.01g/Lは0.01mg/Lと1000倍違い明確な誤り。1自然鉱物溶出と5ヒ酸塩生成は整合。3金属ヒ素無毒、4岩石中少量の揮発性因果は要一次検証。最も不適切は2と仮判定。",
+      "source_images_viewed": [
+        "extracted/pages/H30/17_applied_science/page_009.png"
+      ],
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "raw_text_sha256": "6fbf3b2de5a9c3f5fcd33c7d5ab1b70f0a3000b7f0494e6dc1910ad3a63100d6",
+      "image_sha256": "336f868d28a542fbc030f4c89d900beca9b6d673f4d7c4a7572244736d95ec66",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R01-REG-APPLIED-20",
+      "independent_answer": "1",
+      "reason": "還元地下水が溶存FeMnを保持し河川酸化で沈殿するので1の大小が逆。2火山系珪酸、3酸化ORP正、5緯度同位体低下は概ね整合。4Ca-HCO3型の原典名称疑義。",
+      "source_images_viewed": [
+        "extracted/pages/R01/17_applied_science/page_006.png"
+      ],
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "raw_text_sha256": "01cc191ab523e305f5d4bec1714c1b318979584450704e3927bc690f83f2ffc4",
+      "image_sha256": "45294f0496114b79da27cee8854915c03ff12d98421f40b0e023af5789b52dd1",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R01-RET-APPLIED-18",
+      "independent_answer": "4",
+      "reason": "河川水ストックは大気水蒸気より小さい。他は概数と貯留比較。陸水70%の分母注意。",
+      "source_images_viewed": [
+        "extracted/pages/R01_retest/17_applied_science/page_006.png"
+      ],
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "raw_text_sha256": "8d5e863d0971a9a57ba8d26dd59667f9bd8a49600229c489aeeaf98dd05b733a",
+      "image_sha256": "622a4b73bf2869ac4fc3453aa998c0481f125f2c29d0598f05ccedbecae70f50",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R02-REG-APPLIED-19",
+      "independent_answer": "5",
+      "reason": "意図上は硝化独立栄養と脱窒従属栄養の取り違え5。1嫌気脱窒2硝化3雷等NOx4生物固定は整合。ただし硫黄自養脱窒によるCO2固定が存在するので5一律否定は不可、3燃料窒素の再排出は分子N2の新規固定ではない。",
+      "source_images_viewed": [
+        "extracted/pages/R02/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "raw_text_sha256": "70dae6954b38bdb4ad213122d44882cedb001d8c58274d80540cbe70cef118bc",
+      "image_sha256": "71c9521c60e335ebc2676586b8ca54db34d846560b7bef12fbb99e4d11add3fd",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R03-REG-APPLIED-18",
+      "independent_answer": "5",
+      "reason": "機械分散は速度経路差、横<縦が通常、野外マクロ不均質で室内より大。分子拡散Fick流束が濃度勾配比例で2の速度は流束の意味に注意。",
+      "source_images_viewed": [
+        "extracted/pages/R03/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "raw_text_sha256": "0b3675c5a683222ba19aa7b3bbe96b3dcf58b567d56e4efba79326bba8853a1a",
+      "image_sha256": "fe39bfc2188f92e496e5605d34d175a9db148bd769738ed47622a5ef3a8839f3",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R03-REG-APPLIED-19",
+      "independent_answer": "2",
+      "reason": "温度上昇でイオン移動性増し伝導率上昇。海>河>雨、量概比較と同組成時TDS相関は妥当。4抵抗率の逆数で単位注意。",
+      "source_images_viewed": [
+        "extracted/pages/R03/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "raw_text_sha256": "76146a58f667be3ddf2e0a98959b74f449ad356659520d58b3bcc543f1ad7de2",
+      "image_sha256": "fe39bfc2188f92e496e5605d34d175a9db148bd769738ed47622a5ef3a8839f3",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R03-REG-APPLIED-21",
+      "independent_answer": "2",
+      "reason": "海洋Cは大、メタンは非光合成、CO2赤外吸収、土壌CO2風化促進。2初期CO2低下に風化と生物活動が関与。",
+      "source_images_viewed": [
+        "extracted/pages/R03/17_applied_science/page_008.png"
+      ],
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "raw_text_sha256": "3d3b219b784ffd256cddc10f3645026df1b6a7f0eb3114d09f04a50889d73e28",
+      "image_sha256": "44ce9811d7ea5b998f775da46d19abaa3cf77b135f774c808f6a9c79482b0bdf",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R04-REG-APPLIED-19",
+      "independent_answer": "3",
+      "reason": "有酸素中性水のEhは正側、-250mVは還元。1電子移動2SHE基準は正しい。4酸素消耗は還元物質との反応条件必要、5火山温泉の全て無酸素は一般化注意。",
+      "source_images_viewed": [
+        "extracted/pages/R04/17_applied_science/page_006.png"
+      ],
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "raw_text_sha256": "c00a0817039145531b001a93ccce5147ec7406a523d56f19f73dc4f9a252b1f0",
+      "image_sha256": "98ef709485743bea48eed9e4183bb4c2ecd84c1debb0540ba772282ac69faa88",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R04-REG-APPLIED-20",
+      "independent_answer": "1",
+      "reason": "Debye-Huckelはイオン活量係数とイオン強度の理論。2I=sum(cz2)/2、4風化系列、5方解石速いは通常整合。3閉鎖一定条件と残存固相が必要で全量溶解なら飽和平衡に達しない。",
+      "source_images_viewed": [
+        "extracted/pages/R04/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "raw_text_sha256": "3104846d61df5d8ea384d31cb7ac0636c278b0c9cc249622e2578c6718e255aa",
+      "image_sha256": "8c6ee032f99d811e22afb59b18fc2ab1a6bfd5b6fe0ec4dca928ac8145f8e1be",
+      "official_answer_consulted": false
+    },
+    {
+      "question_id": "R06-REG-APPLIED-22",
+      "independent_answer": "2",
+      "reason": "鍾乳石石筍は地下水CO2の脱気によるCaCO3析出でCO2添加は逆。1有機物還元剤、3乾燥塩集積、4FeAl水酸化物、5強溶脱カオリナイトは条件付で整合。",
+      "source_images_viewed": [
+        "extracted/pages/R06/17_applied_science/page_007.png"
+      ],
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "raw_text_sha256": "8afd56d0202db531100ee9a76804908e11b239c2975147aefe5572ab02bee6a4",
+      "image_sha256": "e2e1bba4171431391195c3f52b8f7e9dd972617f0be9966d5a0e9d9c44f16b47",
+      "official_answer_consulted": false
+    }
+  ]
+}

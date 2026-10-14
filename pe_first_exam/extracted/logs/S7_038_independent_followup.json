@@ -1,0 +1,12 @@
+{
+  "time": "2026-10-12T12:29:27+09:00",
+  "question_id": "H25-REG-APT-04",
+  "answer_initial_preserved": "3",
+  "answer_after_primary_check": "5",
+  "reason": "初回は技術士業務が専門業務型裁量労働制の19業務に含まれると誤認。東京労働局H26.3資料の物理2頁全19業務と物理3〜6頁の説明を画像確認し、技術士資格自体を対象とする規定がないことを確認。技術士が研究開発等の対象業務へ従事する場合と資格そのものを区別する。",
+  "primary_file": "extracted/reference_checks/S7_038/discretion_H26.pdf",
+  "sha256": "01b4692b872bfb53b744fcb6e96407a44d3b753b9f92eae884a4fed276146252",
+  "primary_date": "2014-03",
+  "current_check": "2024-04から20業務。技術士業務自体は20業務にもない。厚労省現行解説を確認。",
+  "status": "source_based_correction_draft_pending_astra"
+}

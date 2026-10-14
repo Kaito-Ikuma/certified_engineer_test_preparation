@@ -1,0 +1,45 @@
+{
+  "stem": "Néel温度・反磁場の形状依存・元素の磁性を照合する。",
+  "conditions": {
+    "原典確認": "S7_051の11原典画像で13問の全五肢・指数・単位・否定を照合。",
+    "対象": "Néel温度・反磁場の形状依存・元素の磁性を照合する。"
+  },
+  "choices": {
+    "1": {
+      "value": "常磁性磁化率が温度とともに増加",
+      "verdict": "不適切",
+      "reason": "局在モーメントのCurie領域ではχ=C/Tで、絶対温度の上昇に対して減少する。伝導電子のPauli常磁性の弱い温度依存と混同しない。"
+    },
+    "2": {
+      "value": "黒鉛は磁場中で全く力を受けない",
+      "verdict": "不適切",
+      "reason": "黒鉛は反磁性を持ち、不均一な磁場で力を受け得る。一様な理想場では正味の並進力がゼロでも、全条件で力がないという記述は誤り。"
+    },
+    "3": {
+      "value": "反強磁性から常磁性へのNéel温度",
+      "verdict": "代表的条件で適切",
+      "reason": "反平行の長距離秩序が失われる温度。強磁性のCurie温度とは区別する。"
+    },
+    "4": {
+      "value": "Fe・Mn・Niが単体強磁性",
+      "verdict": "不適切",
+      "reason": "通常の室温の代表的強磁性元素はFe・Co・Ni。原典のMnをCoと読み替えない。Mnの相・温度依存は別に扱う。"
+    },
+    "5": {
+      "value": "反磁場が形状に依存しない",
+      "verdict": "不適切",
+      "reason": "磁化で生じる反磁場は試料形状と磁化分布に依存する。均一磁化した楕円体でHd=−NMと表せる。"
+    }
+  },
+  "figures": "図表問題ではない。原典画像は照合用で転載しない。",
+  "ambiguity": "元素の分類は通常の室温・安定相を想定する。常磁性の全モデルへの逆温度則の一般化、黒鉛の一様場と勾配場の混同を避ける。",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_003.png"
+  ],
+  "question_id": "R06-REG-APPLIED-07",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "c4ef7e082f04a5439b298fa922e9530d53b695a25698cd0e3cc29d57e15f2a65",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,28 @@
+{
+  "images": [
+    "extracted/pages/R03/basic/page_021.png",
+    "extracted/pages/R03/basic/page_022.png",
+    "extracted/pages/R03/basic/page_023.png",
+    "extracted/pages/R03/basic/page_024.png",
+    "extracted/pages/R03/basic/page_025.png",
+    "extracted/pages/R03/basic/page_026.png",
+    "extracted/pages/R04/basic/page_017.png",
+    "extracted/pages/R04/basic/page_018.png",
+    "extracted/pages/R04/basic/page_019.png",
+    "extracted/pages/R04/basic/page_020.png",
+    "extracted/pages/R05/basic/page_016.png",
+    "extracted/pages/R05/basic/page_017.png",
+    "extracted/pages/R05/basic/page_018.png",
+    "extracted/pages/R06/basic/page_017.png",
+    "extracted/pages/R06/basic/page_018.png",
+    "extracted/pages/R06/basic/page_019.png",
+    "extracted/pages/R06/basic/page_020.png",
+    "extracted/pages/R07/basic/page_015.png",
+    "extracted/pages/R07/basic/page_016.png",
+    "extracted/pages/R07/basic/page_017.png",
+    "extracted/pages/R07/basic/page_018.png",
+    "extracted/pages/R07/basic/page_019.png"
+  ],
+  "actually_viewed": true,
+  "scope": "全22枚をview_imageで実表示し、五肢・図・表・否定方向を確認"
+}

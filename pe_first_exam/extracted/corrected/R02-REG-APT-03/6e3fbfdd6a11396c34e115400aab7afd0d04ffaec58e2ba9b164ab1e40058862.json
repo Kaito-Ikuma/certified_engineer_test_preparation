@@ -1,0 +1,48 @@
+{
+  "stem": "兼業変更、競争相手の査読、配偶者名義の株式、公的設備の企業利用の利益相反管理を判定する。",
+  "conditions": {
+    "判断順": "記述アから順に○=適切、×=不適切。",
+    "ア": "水曜日に許可された有償兼業について土曜の技術会議参加が必要となり、大学COI委員会へ相談した。",
+    "イ": "自己の研究と競争関係にある論文の公正な査読に不安があるため辞退した。",
+    "ウ": "公的資金で評価した企業の未公開株を少額で配偶者名義にて買い、COI委員会への相談を省いた。",
+    "エ": "大学の兼業許可を得て設立した企業が公的資金の研究設備を無償利用する必要が生じ、事前に大学COI委員会へ相談した。"
+  },
+  "choices": {
+    "1": {
+      "value": "○○○○",
+      "verdict": "問の条件に一致しない候補",
+      "reason": "記述ウの判定が逆である。独立判定は○○×○となる。"
+    },
+    "2": {
+      "value": "○○○×",
+      "verdict": "問の条件に一致しない候補",
+      "reason": "記述ウ・エの判定が逆である。独立判定は○○×○となる。"
+    },
+    "3": {
+      "value": "○○×○",
+      "verdict": "問の条件に一致する候補",
+      "reason": "全記述の判定○○×○に一致する。"
+    },
+    "4": {
+      "value": "○×○○",
+      "verdict": "問の条件に一致しない候補",
+      "reason": "記述イ・ウの判定が逆である。独立判定は○○×○となる。"
+    },
+    "5": {
+      "value": "×○○○",
+      "verdict": "問の条件に一致しない候補",
+      "reason": "記述ア・ウの判定が逆である。独立判定は○○×○となる。"
+    }
+  },
+  "figures": "正誤の方向、全記述、5候補の全欄を原典画像確認。組合せ表以外に図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/aptitude/page_003.png"
+  ],
+  "question_id": "R02-REG-APT-03",
+  "source_file": "sources/R02/aptitude.pdf",
+  "source_page": "3",
+  "source_sha256": "d0ca26aaeeba6d436d8ffa77a759056e7a194c0ac9fad61de2c84392999050bb",
+  "raw_text_sha256": "b158652e79cfabc4fcb303e543e024bcc2066face11a035f253209a27b07ce61",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

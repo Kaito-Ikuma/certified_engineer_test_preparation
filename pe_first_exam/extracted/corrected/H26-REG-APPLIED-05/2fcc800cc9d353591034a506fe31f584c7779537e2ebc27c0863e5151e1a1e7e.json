@@ -1,0 +1,45 @@
+{
+  "stem": "金属抵抗の形状・温度依存と抵抗率の桁を照合する。",
+  "conditions": {
+    "原典確認": "S7_051の11原典画像で13問の全五肢・指数・単位・否定を照合。",
+    "対象": "金属抵抗の形状・温度依存と抵抗率の桁を照合する。"
+  },
+  "choices": {
+    "1": {
+      "value": "300Kと100Kの抵抗",
+      "verdict": "代表的条件で適切",
+      "reason": "通常の金属では格子振動による散乱が高温ほど増え、室温側の抵抗が大きい。相転移や異常な材料を含む全温度の保証ではない。"
+    },
+    "2": {
+      "value": "不純物・格子欠陥と残留抵抗",
+      "verdict": "代表的条件で適切",
+      "reason": "低温で格子振動の寄与が減っても不純物・欠陥による散乱は残る。組成・構造による寄与を考える。"
+    },
+    "3": {
+      "value": "一定断面でRが長さに比例",
+      "verdict": "代表的条件で適切",
+      "reason": "均一な導線はR=ρL/A。同じ材料・温度・断面積を保つ条件が必要。"
+    },
+    "4": {
+      "value": "電流が電位差に比例",
+      "verdict": "代表的条件で適切",
+      "reason": "オーム性・温度一定ならI=V/R。自己加熱でRが変わる高電圧域まで無条件には広げない。"
+    },
+    "5": {
+      "value": "室温の金属が10²〜10⁴Ωcm",
+      "verdict": "不適切",
+      "reason": "原典は正の指数でΩcm。Cuの代表値1.68×10⁻⁸Ωmは1.68×10⁻⁶Ωcm。元の範囲は1〜100Ωmに相当し、金属の典型抵抗率から大きく外れる。"
+    }
+  },
+  "figures": "図表問題ではない。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_002.png"
+  ],
+  "question_id": "H26-REG-APPLIED-05",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "e10ac19f162e215bd6cf5de08630416b84dc0ddd82fff58b98240b4c48a82d57",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

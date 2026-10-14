@@ -1,0 +1,45 @@
+{
+  "stem": "格子振動の比熱・散乱と磁区の応答を区別する。",
+  "conditions": {
+    "判断対象": "格子振動の比熱・散乱と磁区の応答を区別する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "Dulong–Petit則",
+      "verdict": "選ばない候補",
+      "reason": "高温の格子比熱3Rに対応。"
+    },
+    "2": {
+      "value": "Debye–Waller因子",
+      "verdict": "選ばない候補",
+      "reason": "原子の変位による散乱強度の減衰。"
+    },
+    "3": {
+      "value": "Debye温度",
+      "verdict": "選ばない候補",
+      "reason": "格子振動スペクトルの特徴温度。"
+    },
+    "4": {
+      "value": "Einstein比熱",
+      "verdict": "選ばない候補",
+      "reason": "量子調和振動子による格子比熱モデル。"
+    },
+    "5": {
+      "value": "Barkhausen効果",
+      "verdict": "選ぶ候補",
+      "reason": "磁区壁の不連続運動による磁化変化で、比較中は格子振動との関係が薄い。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_003.png"
+  ],
+  "question_id": "H30-REG-APPLIED-09",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "4631a0b30242a1f32b3122a1e634bc16e73381b6933f3a0f9893ffaf40cafdbb",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

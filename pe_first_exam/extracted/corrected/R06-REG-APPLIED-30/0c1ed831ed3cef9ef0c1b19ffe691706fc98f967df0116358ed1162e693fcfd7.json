@@ -1,0 +1,46 @@
+{
+  "stem": "堆積中にできる構造と、その後の未固結段階に変形してできる構造を区別する。",
+  "conditions": {
+    "判断方向": "堆積後の未固結段階の二次構造を選ぶ",
+    "原典照合": "15原典画像で18問の問題幹、全5肢、否定、専門語、化学式、候補順を確認。",
+    "適用条件": "流れと構造の典型対応は一意成因を保証しない。用語、時間間隙、保存、試料処理の条件を個別に示す。"
+  },
+  "choices": {
+    "1": {
+      "value": "葉理",
+      "verdict": "非該当・不適切",
+      "reason": "堆積粒子の層状配列を記録する初生構造である。後から変形した葉理という別概念と区別する。"
+    },
+    "2": {
+      "value": "級化層理",
+      "verdict": "非該当・不適切",
+      "reason": "堆積中の粒径の時間変化を記録する初生構造である。"
+    },
+    "3": {
+      "value": "火炎構造",
+      "verdict": "該当・適切",
+      "reason": "砂泥の荷重差や流動化による、堆積後の未固結変形の二次構造である。"
+    },
+    "4": {
+      "value": "リップル",
+      "verdict": "非該当・不適切",
+      "reason": "堆積しながら流れが床形を作る初生構造である。"
+    },
+    "5": {
+      "value": "流痕",
+      "verdict": "非該当・不適切",
+      "reason": "流れが堆積面を侵食する初生構造である。"
+    }
+  },
+  "figures": "設問固有の図なし。全候補・専門語・化学式を原典で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_010.png"
+  ],
+  "question_id": "R06-REG-APPLIED-30",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "2733bf2b3cf98a4bf538d288d38f107d415d9b16a64305fb498f64a53c2c8d52",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

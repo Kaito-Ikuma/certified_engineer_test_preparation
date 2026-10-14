@@ -1,0 +1,45 @@
+{
+  "stem": "直積集合を定義域とする全写像の数を積の法則で求める。",
+  "conditions": {
+    "判断対象": "直積の要素数と有限集合間の全写像数。",
+    "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+  },
+  "choices": {
+    "1": {
+      "value": "12",
+      "verdict": "不適切",
+      "reason": "6×2は定義域と像の組の総数であり写像数ではない。"
+    },
+    "2": {
+      "value": "36",
+      "verdict": "不適切",
+      "reason": "6の2乗は方向を逆にした数え方である。"
+    },
+    "3": {
+      "value": "64",
+      "verdict": "適切",
+      "reason": "6要素の各像を独立に2択から選ぶ2の6乗である。"
+    },
+    "4": {
+      "value": "81",
+      "verdict": "不適切",
+      "reason": "3の4乗は今回の定義域と値域の要素数に合わない。"
+    },
+    "5": {
+      "value": "128",
+      "verdict": "不適切",
+      "reason": "2の7乗であり定義域要素を一つ多く数えている。"
+    }
+  },
+  "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/basic/page_005.png"
+  ],
+  "question_id": "R07-REG-BASIC-2-1",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "004bc3320cbf643d505ea7ea7a4d472ca9152382061ec188510ab840c6ca6f5e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

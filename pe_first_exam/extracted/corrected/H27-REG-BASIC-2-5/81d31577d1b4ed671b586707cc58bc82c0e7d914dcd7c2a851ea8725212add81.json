@@ -1,0 +1,45 @@
+{
+  "stem": "公開鍵基盤・電子署名・端末・無線暗号の役割を区別する。",
+  "conditions": {
+    "方向": "最も適切なもの。",
+    "時点": "H27年度。現在の推奨を出題当時へ無条件に転用しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "公開鍵だけが必要。",
+      "verdict": "不適切",
+      "reason": "対となる秘密鍵が復号や署名生成に必要である。公開する鍵と保護する鍵を分ける。"
+    },
+    "2": {
+      "value": "認証局で公開鍵の所有者を保証。",
+      "verdict": "適切",
+      "reason": "CAが主体と公開鍵の対応へ署名し、利用者が証明書の署名・有効期限・信頼経路等を検証する仕組みである。保証範囲は証明書の検証条件内である。"
+    },
+    "3": {
+      "value": "スマートフォンは感染しない。",
+      "verdict": "不適切",
+      "reason": "OSの違いによって無条件免疫にはならない。不正アプリ、脆弱性、権限悪用等への対策が必要である。"
+    },
+    "4": {
+      "value": "公開鍵でダイジェストを暗号化して署名。",
+      "verdict": "不適切",
+      "reason": "署名生成には秘密鍵を用い公開鍵で検証する。全署名方式を単純な「秘密鍵で暗号化」と表すのも不正確である。"
+    },
+    "5": {
+      "value": "WEPなら完全に盗聴を防ぐ。",
+      "verdict": "不適切",
+      "reason": "WEPは既知の攻撃がある。暗号を導入した事実だけで完全な秘匿を保証しない。"
+    }
+  },
+  "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/basic/page_006.png"
+  ],
+  "question_id": "H27-REG-BASIC-2-5",
+  "source_file": "sources/H27/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+  "raw_text_sha256": "a35ba1d68193a348c835022965ec6fff59060ba4776899567d466b3182bb7cfe",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

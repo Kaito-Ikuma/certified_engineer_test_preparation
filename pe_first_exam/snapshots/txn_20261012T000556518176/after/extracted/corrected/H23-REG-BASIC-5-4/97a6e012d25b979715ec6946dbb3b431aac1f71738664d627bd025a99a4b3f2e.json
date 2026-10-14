@@ -1,0 +1,46 @@
+{
+  "stem": "独立な製品質量の標本平均と総質量について、平均と標準偏差を求める。",
+  "conditions": {
+    "判断方向": "最も適切な記述又は組合せを選ぶ",
+    "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+    "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+  },
+  "choices": {
+    "1": {
+      "value": "平均20・偏差4・合計400・偏差10",
+      "verdict": "不適切",
+      "reason": "Aの標本平均の期待値は80gであり、標本数で平均を割らない。総質量の期待値も800gである。"
+    },
+    "2": {
+      "value": "平均80・偏差4・合計800・偏差7",
+      "verdict": "不適切",
+      "reason": "平均の偏差は4gではなく2gである。合計の偏差も標準偏差をそのまま足した7gではなく10gである。"
+    },
+    "3": {
+      "value": "平均80・偏差2・合計800・偏差10",
+      "verdict": "適切",
+      "reason": "Aの4個平均の偏差は4/2=2g、合計の分散は4×16+4×9=100g²なので10gである。"
+    },
+    "4": {
+      "value": "平均20・偏差2・合計400・偏差7",
+      "verdict": "不適切",
+      "reason": "平均と総質量の期待値がともに違い、合計の偏差も違う。"
+    },
+    "5": {
+      "value": "平均80・偏差2・合計800・偏差7",
+      "verdict": "不適切",
+      "reason": "平均部分は合うが、合計の標準偏差は7gではない。独立成分の分散を足して最後に平方根を取る。"
+    }
+  },
+  "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/basic/page_017.png"
+  ],
+  "question_id": "H23-REG-BASIC-5-4",
+  "source_file": "sources/H23/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+  "raw_text_sha256": "b542e19e1fb4c2ed754399615805331ec9194b6aad08cddf89f431b035c94cc7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

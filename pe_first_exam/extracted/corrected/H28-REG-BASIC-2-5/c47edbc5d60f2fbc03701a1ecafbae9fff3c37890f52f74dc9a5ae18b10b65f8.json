@@ -1,0 +1,46 @@
+{
+  "stem": "偶数パリティ1ビットの付加による検出能力と、位置特定の可否を判断する。",
+  "conditions": {
+    "元データ例": "1010100",
+    "付加ビット": "1の個数偶数なら0、奇数なら1",
+    "送信列例": "10101001"
+  },
+  "choices": {
+    "1": {
+      "value": "1ビット反転検出には元データ8ビット以下が必要。",
+      "verdict": "不適切",
+      "reason": "長さに関係なく1回の反転で全体の1の個数の偶奇が変わる。8ビットという上限はない。"
+    },
+    "2": {
+      "value": "1ビット反転検出には元データ2ビット以上が必要。",
+      "verdict": "不適切",
+      "reason": "1ビットのデータにも付加でき、反転は検出できる。2ビットという下限はない。"
+    },
+    "3": {
+      "value": "8ビットデータの1ビット反転位置が特定できる。",
+      "verdict": "不適切",
+      "reason": "受信全体の偶奇だけでは、データ中の各位置やパリティ位置のどれが変わったか区別できない。"
+    },
+    "4": {
+      "value": "2ビット反転では誤りを検出できない。",
+      "verdict": "適切",
+      "reason": "異なる2ビットの反転は偶奇を2回反転するため元の偶数に戻る。検査値0でも元データ一致の保証はない。"
+    },
+    "5": {
+      "value": "データによって付加ビットを決められない。",
+      "verdict": "不適切",
+      "reason": "任意の有限ビット列で1の個数は偶数か奇数のいずれかなので、一意に付加値が決まる。"
+    }
+  },
+  "figures": "問題幹・全5肢・数値・単位・否定を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/basic/page_010.png"
+  ],
+  "question_id": "H28-REG-BASIC-2-5",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "10",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "2673a3f60abeacd73227b0de281785d68ed0ffa6f61561b2fcb2dd1286ed563f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

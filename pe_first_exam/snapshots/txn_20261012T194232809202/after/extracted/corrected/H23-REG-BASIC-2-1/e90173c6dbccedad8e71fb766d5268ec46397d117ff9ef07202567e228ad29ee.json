@@ -1,0 +1,45 @@
+{
+  "stem": "32ビットのIPv4アドレスを上位から8ビットずつ10進表示へ変換する。",
+  "conditions": {
+    "ビット列": "11000000101010000001111110101100",
+    "区切り": "11000000|10101000|00011111|10101100"
+  },
+  "choices": {
+    "1": {
+      "value": "172.31.192.168",
+      "verdict": "不適切",
+      "reason": "8ビット塊の前後を入れ替えている。"
+    },
+    "2": {
+      "value": "172.31.168.192",
+      "verdict": "不適切",
+      "reason": "前後の塊と中央の順序が違う。"
+    },
+    "3": {
+      "value": "172.31.255.255",
+      "verdict": "不適切",
+      "reason": "全ビット1の塊はなく255にはならない。"
+    },
+    "4": {
+      "value": "192.168.31.172",
+      "verdict": "適切",
+      "reason": "192、168、31、172を上位から並べている。"
+    },
+    "5": {
+      "value": "192.168.172.31",
+      "verdict": "不適切",
+      "reason": "最後の31と172が逆である。"
+    }
+  },
+  "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/basic/page_005.png"
+  ],
+  "question_id": "H23-REG-BASIC-2-1",
+  "source_file": "sources/H23/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+  "raw_text_sha256": "2e4205d7f4d71afcc09f3eca39e74c36f5c91ba7b47d6cf4afee6834ec818e47",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

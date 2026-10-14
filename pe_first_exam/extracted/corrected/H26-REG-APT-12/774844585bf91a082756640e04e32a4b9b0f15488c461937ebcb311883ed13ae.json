@@ -1,0 +1,45 @@
+{
+  "stem": "組織の社会的責任と大学の不正対応。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+    "時点": "平成26年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "企業の社会的責任を積極的に果たす",
+      "verdict": "条件内で適切",
+      "reason": "規則の最低限だけでなく社会との信頼関係を含む。"
+    },
+    "2": {
+      "value": "大学の試験不正は注意だけで単位処分なしが一般",
+      "verdict": "不適切",
+      "reason": "大学でも学則等に基づく懲戒や科目の成績措置がある。注意のみを一般化できない。"
+    },
+    "3": {
+      "value": "学問の自由と組織の健全性を両立",
+      "verdict": "条件内で適切",
+      "reason": "自由は不正な評価や責任の不存在を意味しない。"
+    },
+    "4": {
+      "value": "ISO26000は持続可能な発展へ貢献",
+      "verdict": "条件内で適切",
+      "reason": "認証要求ではなく社会的責任の手引である。"
+    },
+    "5": {
+      "value": "国連グローバル・コンパクトの四分野",
+      "verdict": "条件内で適切",
+      "reason": "人権、労働、環境、腐敗防止という対象分野を区別する。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "大学の個別規程は一般的な反例であり、全大学・2014年の処分分布の統計を確認したものではない。",
+  "evidence": [
+    "extracted/pages/H26/aptitude/page_012.png"
+  ],
+  "question_id": "H26-REG-APT-12",
+  "source_file": "sources/H26/aptitude.pdf",
+  "source_page": "12",
+  "source_sha256": "5691e940fce3cbf9423bc99a96803c1c6273563931b76b91bdb9f2b67e6233d3",
+  "raw_text_sha256": "99cd70d2438432821f7c30d0aa1b16343ccf4fa9436dea591093a55c5c5d48c3",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

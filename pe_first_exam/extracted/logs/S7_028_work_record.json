@@ -1,0 +1,82 @@
+{
+  "time": "2026-10-11T23:24:25+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_028_reliability_maintenance",
+  "question_ids": [
+    "H23-REG-BASIC-1-1",
+    "H23-REG-BASIC-1-5",
+    "H24-REG-BASIC-1-1",
+    "H25-REG-BASIC-1-1",
+    "H26-REG-BASIC-1-4",
+    "H26-REG-BASIC-1-5",
+    "H27-REG-BASIC-1-1",
+    "H27-REG-BASIC-1-3",
+    "H27-REG-BASIC-1-4",
+    "H28-REG-BASIC-1-1",
+    "H29-REG-BASIC-1-2",
+    "H30-REG-BASIC-1-1",
+    "H30-REG-BASIC-1-6",
+    "R01-RET-BASIC-1-2",
+    "R01-RET-BASIC-1-3",
+    "R01-RET-BASIC-1-6",
+    "R02-REG-BASIC-1-6",
+    "R03-REG-BASIC-1-2",
+    "R03-REG-BASIC-1-4",
+    "R05-REG-BASIC-1-4",
+    "R05-REG-BASIC-1-5",
+    "R07-REG-BASIC-1-3"
+  ],
+  "source_images": 25,
+  "initial_independent_matches": 22,
+  "corrected_verified": 9,
+  "partial": 13,
+  "related_pairs_added": 8,
+  "related_pairs_total": 168,
+  "primary_references_added": 14,
+  "concepts_added": 9,
+  "concept_total": 201,
+  "canonical_counts": {
+    "recorded_at": "2026-10-11T23:24:25+09:00",
+    "registered": 1270,
+    "classification_verified": 570,
+    "summary_verified": 536,
+    "corrected_verified": 436,
+    "corrected_partial": 100,
+    "solution_drafts": 536,
+    "solution_verified": 0,
+    "manual_required": 834,
+    "subject_drafts": {
+      "BASIC": 180,
+      "APT": 116,
+      "APPLIED": 240
+    }
+  },
+  "theory_note": "信頼度・独立性・直並列・多数決・FTA・修復系・保全・安全率の範囲・製造物責任・双対と多目的設計の共通理論17節。",
+  "pdf": {
+    "pages": 737,
+    "bytes": 3671195,
+    "visual_review_pages": [
+      34,
+      35,
+      36,
+      37,
+      43,
+      48,
+      51,
+      54,
+      57,
+      61,
+      715
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draftと初期・1270ラベル監査成功。標準chooseを数式ホワイトリストへ追加、input拒否の既存回帰を保持。24回帰成功（22.087秒）。LuaLaTeX最終ビルド成功。",
+  "risks": [
+    "13部分校正。独立性・零根・法令履歴・代表安全率・弱パレートの条件を明示。",
+    "Astra未査読、734問未執筆、最終監査未実装。"
+  ],
+  "next": "S7_029堆積・層序18問。15原典画像と公式前18初回解答保存済み。全1270問と全章・頻出分析まで継続。"
+}

@@ -1,0 +1,47 @@
+{
+  "stem": "故障前後と保全時期の決定基準から、予防・事後・状態監視・時間計画の保全を対応させる。",
+  "conditions": {
+    "判断方向": "全候補を比較し最も適切な語又は数値・順位を選ぶ。",
+    "原典照合": "25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。",
+    "前提": "事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "予防・事後・劣化基準・状態監視・経時",
+      "verdict": "不適合",
+      "reason": "第3欄は時間計画であり劣化基準ではない。第4欄は定期であり状態監視ではない。"
+    },
+    "2": {
+      "value": "状態監視・経時・時間計画・定期・予防",
+      "verdict": "不適合",
+      "reason": "第1欄は予防であり状態監視ではない。第2欄は事後であり経時ではない。第5欄は経時であり予防ではない。"
+    },
+    "3": {
+      "value": "状態監視・事後・劣化基準・定期・経時",
+      "verdict": "不適合",
+      "reason": "第1欄は予防であり状態監視ではない。第3欄は時間計画であり劣化基準ではない。"
+    },
+    "4": {
+      "value": "定期・経時・時間計画・状態監視・事後",
+      "verdict": "不適合",
+      "reason": "第1欄は予防であり定期ではない。第2欄は事後であり経時ではない。第4欄は定期であり状態監視ではない。第5欄は経時であり事後ではない。"
+    },
+    "5": {
+      "value": "予防・事後・時間計画・定期・経時",
+      "verdict": "適合（記載条件内）",
+      "reason": "故障前/後、保全時期の判断基準、定期と経時の対応が一致する。"
+    }
+  },
+  "figures": "回路、FTA又は候補表を全て原典で照合。元図は転載せず、接続関係と値を独自に記述。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_005.png",
+    "extracted/pages/R01_retest/basic/page_006.png"
+  ],
+  "question_id": "R01-RET-BASIC-1-6",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "8bb091dd56c8ce558ce4de7d6ffe6f93f323face3c62ded9d15586721e02f568",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

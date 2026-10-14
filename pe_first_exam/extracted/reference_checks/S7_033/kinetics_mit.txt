@@ -1,0 +1,216 @@
+                                                                        9/9/13
+
+
+
+
+       1.84/12.807 Lecture 2, 9/9/13:
+      Kinetcs of bimolecular reactons
+
+                     - Lifetmes, kinetcs basics
+                          - Actvaton energy
+                           - Collision theory
+                      - Transiton State Theory
+                     - Experimental techniques
+
+
+
+
+                   Lifetme, concentraton
+   Atmosphere: set of compartments that are well-mixed
+
+                               producton: Px
+   transport in:                  loss: Lx             transport out:
+       Fin                                                 Fout
+                        x
+
+                        emission: Ex   depositon: Ox
+
+
+
+
+[Note: Additional material is discussed here during lecture.]
+
+
+
+
+                                                                            1
+                                                                                                                                  9/9/13
+
+
+
+
+                                    Basic concepts in kinetcs
+
+
+
+Complex reactons:                                    CH4 + 202 → C02 + 2H20
+                                                     rate = -d[CH4]/dt = d[C02]/dt = k [CH4]m [02]n
+
+
+Elementary reactons:                                 0(10) + H20 → 0H + 0H
+                                                     rate = -d[0(10)]/dt = k [0(10)] [H20]
+
+
+Elementary unimolecular rxns:                        H00N02 → H02 + N02
+                                                     rate = -d[H00N02]/dt = k [H00N02]
+                                                     [H00N02]t = [H00N02]0 e-kt
+
+
+
+
+        Temperature-dependence of reactons
+
+                     Arrhenius Equaton (1889): k(T) = A e -Ea/RT
+                                         ln(k) = -Ea/RT + ln(A)
+                            -12
+                30x10
+
+                            28
+
+
+                            26
+                                                       0H + C4H10
+                            24
+          k (cm3/molec/s)
+
+
+
+
+                            22
+
+
+
+                            20
+
+
+
+                            18
+
+
+
+
+                            16
+
+
+
+
+                                  3.0   3.2   3.4    3.6   3.8    4.0   4.2   4.4
+
+                                                    1000/T (K)                 Talukdar et al, Int. J. Chem. Kin. 26:973 (1994)
+
+
+
+
+                                                                                                                                      2
+                                                                                                                         9/9/13
+
+
+
+
+                               Actvaton energy
+
+Reacton coordinate: 0nly systems with              Maxwell-Boltzmann Distributon: 0istributon
+enough energy (E�Ea) can react                     of energies (velocites, etc.) at a given T
+
+
+
+
+                                                     htp://hyperphysics.phy-astr.gsu.edu/hbase/kinetc/kintem.html
+                                 © C. R. Nave. All rights reserved. This content is excluded from our Creative Commons
+                                 license. For more information, see http://ocw.mit.edu/help/faq-fair-use/.
+
+
+
+
+                         0nline kinetcs databases
+
+
+IUPAC: Evaluated kinetc and photochemical data
+htp://www.iupac-kinetc.ch.cam.ac.uk/
+
+
+
+JPL/NASA: Chemical Kinetcs and Photochemical 0ata for Use in Atmospheric Studies
+htp://jpldataeval.jpl.nasa.gov/
+
+
+
+NIST Chemical Kinetcs 0atabase on the Web
+htp://kinetcs.nist.gov/kinetcs/index.jsp
+Note: NOT an evaluaton!
+                                                                                          9/9/13
+
+
+
+
+           Hard-sphere collision theory
+
+                            rb                                  B
+
+                            ra
+                   A
+
+
+
+
+[Note: Additional material is discussed here during lecture.]
+
+
+
+
+                 Transiton state theory
+                       �sed to predict rates o� molecules
+
+
+        [AB�]                            Thermodynamic derivaton:
+                                         Treat the transiton state as a �real compound�
+
+
+
+
+                          �or a more thorough treatment, see
+Steinfeld, �rancisco and Hase, Chemical Kinetcs and Dynamics (Prentce Hall 1998)
+                 Pilling and Seakins, Reacton Kinetcs (0xford 1997)
+
+
+
+
+                                                                                              5
+                                                                9/9/13
+
+
+
+
+            What have we lef out?
+
+          � Pressure e�ects (next lecture)
+
+          � 0etails of TST
+
+          � �uantum e�ects (tunneling)
+
+          � �Pre-reactve� complexes
+
+          � Ion-molecule, ion-ion reactons
+
+
+[Note: Additional material is discussed here during lecture.]
+
+
+
+
+                                                                    5
+0,72SHQ&RXUVH:DUH
+KWWSRFZPLWHGX
+
+
+
+
+---$WPRVSKHULF&KHPLVWU\
+)DOO
+
+
+
+
+)RULQIRUPDWLRQDERXWFLWLQJWKHVHPDWHULDOVRURXU7HUPVRI8VHYLVLWKWWSRFZPLWHGXWHUPV
+

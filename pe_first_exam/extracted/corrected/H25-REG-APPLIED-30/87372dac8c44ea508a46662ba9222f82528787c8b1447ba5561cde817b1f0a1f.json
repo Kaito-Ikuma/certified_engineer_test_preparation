@@ -1,0 +1,45 @@
+{
+  "stem": "揚水による水圧低下と粘土層の圧密沈下をつなぐ。",
+  "conditions": {
+    "原典照合": "22原典画像で25問の全五肢・数値・単位・否定を確認。",
+    "対象": "揚水による水圧低下と粘土層の圧密沈下をつなぐ。"
+  },
+  "choices": {
+    "1": {
+      "value": "構造物浮き上がり・道路変形・埋設破損",
+      "verdict": "代表的条件で適切",
+      "reason": "周囲の地盤が沈むと杭等に支えられた構造物が相対的に浮き上がった状態となり、道路・埋設物へ被害が生じる。"
+    },
+    "2": {
+      "value": "帯水層に接する粘土も圧密収縮",
+      "verdict": "代表的条件で適切",
+      "reason": "揚水で水頭・間隙水圧が低下し、同じ全応力のもとで土粒子骨格の有効応力が増加する。"
+    },
+    "3": {
+      "value": "主に不圧地下水位の変動",
+      "verdict": "不適切",
+      "reason": "広域の揚水沈下では被圧帯水層の水頭低下と隣接する粘土層の圧密が重要。不圧水位だけへ限定しない。"
+    },
+    "4": {
+      "value": "低平地の浸水・冠水危険増大",
+      "verdict": "代表的条件で適切",
+      "reason": "標高が低下し排水勾配や治水の条件が悪化し、二次的被害のリスクを高める。"
+    },
+    "5": {
+      "value": "帯水層深度ごとの観測井",
+      "verdict": "代表的条件で適切",
+      "reason": "水頭が異なる層を区別して観測する。複数帯水層をつなぐ井戸の混合水位だけでは各層を評価できない。"
+    }
+  },
+  "figures": "図表なしの五肢。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_011.png"
+  ],
+  "question_id": "H25-REG-APPLIED-30",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "7dded945cda7fb8858f1b1e43688d511f3f893cf40bcdc9f5097e61412baf4da",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

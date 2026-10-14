@@ -1,0 +1,45 @@
+{
+  "stem": "リチウムイオン電池の材料と、金属リチウム負極の課題を5下線部で判定する。",
+  "conditions": {
+    "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+    "成立条件": "原典の下線4はOCRの「自金」でなく「白金」である。標準電極電位は通常の水溶液系還元電位の基準、負極は放電時の役割として読む。"
+  },
+  "choices": {
+    "1": {
+      "value": "卑な",
+      "verdict": "適切",
+      "reason": "通常の標準還元電位でLi+/Liは非常に負である。金属リチウムを酸化させる高電圧電池の負極としての性質につながる。"
+    },
+    "2": {
+      "value": "小さい",
+      "verdict": "適切",
+      "reason": "リチウムは金属元素で最も小さいモル質量を持つ。1 molあたりの移動電子数と合わせて質量当たり容量を考える。"
+    },
+    "3": {
+      "value": "負極",
+      "verdict": "適切",
+      "reason": "放電時にリチウムを酸化させ、電子を外部へ供給する側である。"
+    },
+    "4": {
+      "value": "白金",
+      "verdict": "不適切",
+      "reason": "この実用化経路の負極は炭素系材料であり、白金ではない。白金の不活性電極としての別の用途と混同しない。"
+    },
+    "5": {
+      "value": "コバルト酸リチウム",
+      "verdict": "適切",
+      "reason": "LiCoO2はリチウムイオンの出入りを利用する実用正極材料である。"
+    }
+  },
+  "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+  "ambiguity": "「最も卑」は電極反応・溶媒・標準状態を原典が明記しない。通常の水溶液標準還元電位の比較として扱い、全溶媒系への全称とはしない。",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_006.png"
+  ],
+  "question_id": "H24-REG-APPLIED-17",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "406c9ed508bcc42011d98d6798713dcc15becd277bfea8f2b0ac4e10424a84f8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "key": "env59_epr",
+    "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2016/09/extended-producer-responsibility_g1g6742c/9789264256385-en.pdf",
+    "reading_scope": "検索本文の製品責任を使用後段階へ広げる定義を確認。全書の読了ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env59_ndc",
+    "url": "https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs",
+    "reading_scope": "公式検索本文で五年ごとの提出を確認。同機関のIntroduction to Mitigation検索で緩和との対応を確認。協定全条文未読。",
+    "full_source_read": false
+  },
+  {
+    "key": "env59_energy2019",
+    "url": "https://www.enecho.meti.go.jp/about/whitepaper/2019html/2-1-3.html",
+    "reading_scope": "公式検索本文の2017中東約87%を確認。家庭部門要因は同庁2019年度統計PDF検索を補助に用いた。全表・全四石油統計の確定ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env59_lawrence",
+    "url": "https://www.nobelprize.org/prizes/physics/1939/ceremony-speech/",
+    "reading_scope": "公式検索本文の1930初期サイクロトロンとLawrenceらを確認。全授賞演説読了ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env59_smart",
+    "url": "https://www.enecho.meti.go.jp/category/saving_and_new/saving/general/what/index.html",
+    "reading_scope": "検索本文の計測器の遠隔検針等とHEMSの利用を確認。全機器仕様を確認したものではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env59_jenner",
+    "url": "https://www.who.int/news-room/feature-stories/detail/smallpox-vaccines",
+    "reading_scope": "WHO公式検索本文のJenner1796を確認。個別接種原記録や医学助言の用途ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env59_ecodrr",
+    "url": "https://www.env.go.jp/policy/hakusyo/r01/html/hj19010204.html",
+    "reading_scope": "公式検索本文の緩和・適応と生態系を活用するEco-DRRを確認。白書全章読了ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "env59_plastic",
+    "url": "https://plastic-circulation.env.go.jp/about/senryaku",
+    "reading_scope": "公式本文索引で2019年5月31日と3R+Renewableを確認。原典R02の6月との差異を留保。2017輸出原表未読。",
+    "full_source_read": false
+  },
+  {
+    "key": "env59_juse",
+    "url": "https://www.juse.or.jp/faq_knowledge/knowledge/index.html",
+    "reading_scope": "公式検索本文で1950Deming講義と統計的手法の普及を確認。同団体資料で1929の個別統計利用も確認し、戦前利用ゼロとはしない。",
+    "full_source_read": false
+  }
+]

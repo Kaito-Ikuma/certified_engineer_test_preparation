@@ -1,0 +1,45 @@
+{
+  "stem": "水素化物の電荷・分極と多中心結合を比較する。",
+  "conditions": {
+    "判断対象": "水素化物の電荷・分極と多中心結合を比較する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "Hは外殻1/希ガスに1不足",
+      "verdict": "選ばない候補",
+      "reason": "H1s1はHe1s2へ1不足。Na等との共通点と独自性。"
+    },
+    "2": {
+      "value": "NaH/CaH2はイオン性",
+      "verdict": "選ばない候補",
+      "reason": "電気陽性金属とのH−を含む塩型。"
+    },
+    "3": {
+      "value": "遷移金属間隙で不定比水素化物",
+      "verdict": "選ばない候補",
+      "reason": "格子の間隙占有率で組成が変わる系がある。"
+    },
+    "4": {
+      "value": "B2H6は最小安定ホウ素水素化物で3中心",
+      "verdict": "選ばない候補",
+      "reason": "通常持続する中性boraneの代表。BH3単量体の特殊条件存在と区別。"
+    },
+    "5": {
+      "value": "ハロゲン/カルコゲンではHが負に分極",
+      "verdict": "選ぶ候補",
+      "reason": "F/O等がHより電気陰性度大でHは通常正に分極、符号が逆。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "B2H6最小安定の通常条件とBH3の特殊な単量体・配位付加体を区別。全遷移金属水素化物を不定比にしない。",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_006.png"
+  ],
+  "question_id": "R07-REG-APPLIED-16",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "f54619bcb7483d7603c0651d4c366d82a9db92d442aff43473371fbb7bf6c677",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "環境会計の定義と他手法の誤対応。",
+  "conditions": {
+    "時点": "平成30年度に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "グリーン購入はバイオマスのみ",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "環境報告は設備の自治体届出",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "会計は費用効果を金額物量",
+      "verdict": "適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "4": {
+      "value": "環境監査は税務監査",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "5": {
+      "value": "LCAは設備の更新周期",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/basic/page_018.png"
+  ],
+  "question_id": "H30-REG-BASIC-5-2",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "18",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "c894c4b7a561947b275d464b58f4a3364d340e8d422a6b6ee9841e4a16a6cbe2",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

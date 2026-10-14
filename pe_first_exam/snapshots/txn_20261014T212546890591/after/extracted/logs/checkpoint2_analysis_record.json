@@ -1,0 +1,15 @@
+{
+  "time": "2026-10-14T21:25:46+09:00",
+  "questions": 1270,
+  "middle_groups": 80,
+  "approved_relation_pairs": 374,
+  "relation_counts": {
+    "near_repeat": 137,
+    "parameter_variant": 35,
+    "same_concept": 171,
+    "same_method": 31
+  },
+  "prediction_performed": false,
+  "learning_time_evaluated": false,
+  "status": "first_draft_pending_astra"
+}

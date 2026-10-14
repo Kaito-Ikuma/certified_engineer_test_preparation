@@ -1,0 +1,46 @@
+{
+  "stem": "単色光の第一回折明線の角度から回折格子1 mm当たりの本数を求める。",
+  "conditions": {
+    "光": "格子へ垂直に入射、波長650 nm。",
+    "回折": "第一明線30度。",
+    "方向": "1 mm当たりの格子本数に最も近い値。"
+  },
+  "choices": {
+    "1": {
+      "value": "33 本/mm",
+      "verdict": "不適切",
+      "reason": "格子間隔の逆数と第一次数の条件を満たさず、正しい約769本/mmから遠い。"
+    },
+    "2": {
+      "value": "65 本/mm",
+      "verdict": "不適切",
+      "reason": "nmからmmへの変換と、間隔の逆数を確認する。正しい本数とは一桁以上違う。"
+    },
+    "3": {
+      "value": "130 本/mm",
+      "verdict": "不適切",
+      "reason": "間隔1300 nmを単なる整数の本数へ読み替えていないか確認する。正しい約769本/mmではない。"
+    },
+    "4": {
+      "value": "390 本/mm",
+      "verdict": "不適切",
+      "reason": "sin30°の因子を逆に扱う等の誤りで、本数がほぼ半分になっている。"
+    },
+    "5": {
+      "value": "770 本/mm",
+      "verdict": "最適",
+      "reason": "d=1.3 µmに対して1 mm/d≈769本/mmで最も近い。"
+    }
+  },
+  "figures": "原典の条件・数式・単位・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_002.png"
+  ],
+  "question_id": "R02-REG-APPLIED-05",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "b153635701c157fbdda507615b4425310bed33b4a885336c3b54756a98728b89",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

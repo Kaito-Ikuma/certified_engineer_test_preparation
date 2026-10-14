@@ -1,0 +1,54 @@
+{
+  "stem": "年齢・能力・言語等の多様性に配慮するユニバーサルデザインの7原則から、趣旨の違う記述の数を求める。",
+  "conditions": {
+    "方向": "七原則と趣旨が異なる記述の数。候補0/1/2/3/4。",
+    "7記述": {
+      "ア": "公平な利用",
+      "イ": "利用方法の柔軟性",
+      "ウ": "単純で直観的な使用",
+      "エ": "必要な情報の認知",
+      "オ": "エラーの害を抑える設計",
+      "カ": "少ない身体的努力",
+      "キ": "接近・使用の寸法と空間"
+    },
+    "時点": "原典の国際イベント開催予定は令和2年出題当時の背景。現在の予定へ流用しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "0項目",
+      "verdict": "選択対象",
+      "reason": "列挙された7項目は全て原則の趣旨に対応し、異なるものは0。"
+    },
+    "2": {
+      "value": "1項目",
+      "verdict": "選択対象ではない",
+      "reason": "一つの原則を除外する根拠がない。"
+    },
+    "3": {
+      "value": "2項目",
+      "verdict": "選択対象ではない",
+      "reason": "二つの原則を除外する根拠がない。"
+    },
+    "4": {
+      "value": "3項目",
+      "verdict": "選択対象ではない",
+      "reason": "三つの原則を除外する根拠がない。"
+    },
+    "5": {
+      "value": "4項目",
+      "verdict": "選択対象ではない",
+      "reason": "四つの原則を除外する根拠がない。"
+    }
+  },
+  "figures": "原典の設問・全5肢・否定・時点を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/aptitude/page_011.png"
+  ],
+  "question_id": "R02-REG-APT-11",
+  "source_file": "sources/R02/aptitude.pdf",
+  "source_page": "11",
+  "source_sha256": "d0ca26aaeeba6d436d8ffa77a759056e7a194c0ac9fad61de2c84392999050bb",
+  "raw_text_sha256": "0da3769cfc9889c219e7e5dd17e1f7d9fabc5487b6b99100857b43ff9f737633",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

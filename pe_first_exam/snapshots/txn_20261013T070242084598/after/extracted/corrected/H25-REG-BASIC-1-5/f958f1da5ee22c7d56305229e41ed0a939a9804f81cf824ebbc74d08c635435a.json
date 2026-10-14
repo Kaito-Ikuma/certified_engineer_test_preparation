@@ -1,0 +1,45 @@
+{
+  "stem": "単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "単一窓口M/M/1の待ちと処理を含む平均滞在時間を求める。"
+  },
+  "choices": {
+    "1": {
+      "value": "6秒",
+      "verdict": "選ばない候補",
+      "reason": "6秒は計算した滞在時間15.0秒と異なる。"
+    },
+    "2": {
+      "value": "9秒",
+      "verdict": "選ばない候補",
+      "reason": "9秒は計算した滞在時間15.0秒と異なる。"
+    },
+    "3": {
+      "value": "12秒",
+      "verdict": "選ばない候補",
+      "reason": "12秒は計算した滞在時間15.0秒と異なる。"
+    },
+    "4": {
+      "value": "15秒",
+      "verdict": "選ぶ候補",
+      "reason": "系内滞在時間15.0秒に最も近い。"
+    },
+    "5": {
+      "value": "18秒",
+      "verdict": "選ばない候補",
+      "reason": "18秒は計算した滞在時間15.0秒と異なる。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "原典の待ち行列長ρ/(1−ρ)は標準用語では系内人数Lで、待ちのみのLqとは異なる。ただし原典のL×平均処理時間はL/μ=ρ/(μ−λ)=Wqとなり計算法は一致する。名称の不整合だけを保持。",
+  "evidence": [
+    "extracted/pages/H25/basic/page_005.png"
+  ],
+  "question_id": "H25-REG-BASIC-1-5",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "5",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "18cd359d35f1b192a6a81f119be2cc88ba88fbf298956167fce4e13bc69a1e43",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

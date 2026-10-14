@@ -1,0 +1,49 @@
+{
+  "stem": "ISO・IEC・JISの名称、認証、審査、図の新旧の6説明について適切なものの数を選ぶ。",
+  "conditions": {
+    "ア": "ISOは電気・通信・電子技術分野を除く産業分野の国際規格を作る。",
+    "イ": "IECは電気・電子技術の国際規格を作る。",
+    "ウ": "2019年に産業標準化法→工業標準化法、日本産業規格→日本工業規格と改称した。",
+    "エ": "国登録の民間第三者機関の適合性審査と認証でJISマークを表示できる。",
+    "オ": "登録認証機関は少なくとも3年ごと・必要時臨時に審査し、国も必要に応じ立入検査する。",
+    "カ": "図の左を旧、右を現行JISマークと説明している。"
+  },
+  "choices": {
+    "1": {
+      "value": "6",
+      "verdict": "設問条件に不一致",
+      "reason": "ウは改称方向が逆、カは図の新旧が逆なので6項ではない。"
+    },
+    "2": {
+      "value": "5",
+      "verdict": "設問条件に不一致",
+      "reason": "初回の独立判断ではカを正として5項としたが、JISC公式現行図と実画像を照合しカも誤りと確定した。"
+    },
+    "3": {
+      "value": "4",
+      "verdict": "設問条件に一致",
+      "reason": "ア・イ・エ・オの4項が適切である。"
+    },
+    "4": {
+      "value": "3",
+      "verdict": "設問条件に不一致",
+      "reason": "名称と図以外の4項は適切なので3項ではない。"
+    },
+    "5": {
+      "value": "2",
+      "verdict": "設問条件に不一致",
+      "reason": "ウとカが誤りであり、適切なのは2項ではなく4項である。"
+    }
+  },
+  "figures": "原典画像で問題幹・条件・否定・全5肢と全組合せセルを確認。JISマークは左が現行、右が旧であり、本文の説明と逆。公式機関の画像とも照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/aptitude/page_012.png"
+  ],
+  "question_id": "R06-REG-APT-12",
+  "source_file": "sources/R06/aptitude.pdf",
+  "source_page": "12",
+  "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+  "raw_text_sha256": "f74efaa25dcc8c8cb7654336d62d352b052bae74200e4287dab762c31f13490c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

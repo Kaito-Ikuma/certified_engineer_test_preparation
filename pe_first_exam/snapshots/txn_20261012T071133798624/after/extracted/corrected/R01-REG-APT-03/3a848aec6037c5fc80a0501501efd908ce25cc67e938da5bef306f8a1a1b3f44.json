@@ -1,0 +1,46 @@
+{
+  "stem": "8事故でPL法の賠償責任に該当しない事例の数を求める。",
+  "conditions": {
+    "原典条件": "問題幹、否定、ア等の記号順、5選択肢と個数又は表の全行を原典16画像で確認した。",
+    "論理条件": "対象外数候補8、7、6、5、4。製造欠陥と後の保守ミスを分ける。",
+    "法の時点": "出題時の制度を保持。現行取得基準日は2026-10-12。2020年施行の期間変更を別記する。"
+  },
+  "choices": {
+    "1": {
+      "value": "8件",
+      "verdict": "個数を比較",
+      "reason": "各記述の判断理由は解法のとおりである。提示する8件は合計5件と異なる。"
+    },
+    "2": {
+      "value": "7件",
+      "verdict": "個数を比較",
+      "reason": "各記述の判断理由は解法のとおりである。提示する7件は合計5件と異なる。"
+    },
+    "3": {
+      "value": "6件",
+      "verdict": "個数を比較",
+      "reason": "各記述の判断理由は解法のとおりである。提示する6件は合計5件と異なる。"
+    },
+    "4": {
+      "value": "5件",
+      "verdict": "個数を比較",
+      "reason": "各記述の判断理由は解法のとおりである。合計5件と一致する。"
+    },
+    "5": {
+      "value": "4件",
+      "verdict": "個数を比較",
+      "reason": "各記述の判断理由は解法のとおりである。提示する4件は合計5件と異なる。"
+    }
+  },
+  "figures": "文字表又は記述問題であり図なし。組合せの各行は原典画像の列順を保持する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/aptitude/page_004.png"
+  ],
+  "question_id": "R01-REG-APT-03",
+  "source_file": "sources/R01/aptitude.pdf",
+  "source_page": "4",
+  "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+  "raw_text_sha256": "73578e2b4cf1ba1489a5089fc2cab835e54c3b8b83304db5f21dad60443279a7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

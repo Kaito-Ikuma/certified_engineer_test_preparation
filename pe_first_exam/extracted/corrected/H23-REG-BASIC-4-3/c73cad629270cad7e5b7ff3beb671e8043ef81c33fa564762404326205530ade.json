@@ -1,0 +1,45 @@
+{
+  "stem": "放射線の実体・遮蔽と照射による変化。",
+  "conditions": {
+    "比較": "同じ厚さ、コンクリート密度2.35g/cm3。",
+    "原典β": "電子の流れとして記述。"
+  },
+  "choices": {
+    "1": {
+      "value": "ア イ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 イ ウ と異なる。"
+    },
+    "2": {
+      "value": "ア ウ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 イ ウ と異なる。"
+    },
+    "3": {
+      "value": "ア エ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 イ ウ と異なる。"
+    },
+    "4": {
+      "value": "イ ウ",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "5": {
+      "value": "イ エ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 イ ウ と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "βには陽電子を放出するβ+もある。原典の電子という通常のβ−表現を全βの定義へ広げない。γ遮蔽は光子エネルギーと材料の減衰係数を含む。",
+  "evidence": [
+    "extracted/pages/H23/basic/page_012.png"
+  ],
+  "question_id": "H23-REG-BASIC-4-3",
+  "source_file": "sources/H23/basic.pdf",
+  "source_page": "12",
+  "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+  "raw_text_sha256": "187c06544c38275cfc0fe3128bf3dfdf6b3ee42f881669e778a2a2977bae7807",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,49 @@
+{
+  "stem": "誠実な研究の誤り、私費研究、言語の異なる重複発表、共著論文の翻訳利用を判定する。",
+  "conditions": {
+    "判断順": "記述アから順に○=適切、×=不適切。",
+    "ア": "適切な方法で正当に得た研究成果が結果的に誤りでも、ガイドライン公表後は不正行為となった。",
+    "イ": "個人の資金と労力で研究・公表するならガイドラインの内容を考慮する必要がない。",
+    "ウ": "同一成果を日本語と英語で別の学会に発表すれば二重投稿にはならない。",
+    "エ": "AとBの共著英語論文の一部を、Aが単独日本語書籍に翻訳利用する前にBへ相談して了解を得た。"
+  },
+  "choices": {
+    "1": {
+      "value": "×○×○",
+      "verdict": "問の条件に一致しない候補",
+      "reason": "記述イの判定が逆である。独立判定は×××○となる。"
+    },
+    "2": {
+      "value": "×××○",
+      "verdict": "問の条件に一致する候補",
+      "reason": "全記述の判定×××○に一致する。"
+    },
+    "3": {
+      "value": "○××○",
+      "verdict": "問の条件に一致しない候補",
+      "reason": "記述アの判定が逆である。独立判定は×××○となる。"
+    },
+    "4": {
+      "value": "○○○×",
+      "verdict": "問の条件に一致しない候補",
+      "reason": "記述ア・イ・ウ・エの判定が逆である。独立判定は×××○となる。"
+    },
+    "5": {
+      "value": "××○○",
+      "verdict": "問の条件に一致しない候補",
+      "reason": "記述ウの判定が逆である。独立判定は×××○となる。"
+    }
+  },
+  "figures": "正誤の方向、全記述、5候補の全欄を原典画像確認。組合せ表以外に図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/aptitude/page_010.png",
+    "extracted/pages/R01_retest/aptitude/page_011.png"
+  ],
+  "question_id": "R01-RET-APT-10",
+  "source_file": "sources/R01_retest/aptitude.pdf",
+  "source_page": "10",
+  "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+  "raw_text_sha256": "a881bb7b41d81437dd22e65b9d6054f3d47fa77849222c7c3b18d6193faf2569",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

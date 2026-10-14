@@ -1,0 +1,897 @@
+{
+  "batch_id": "S7_035_energy_electrochem",
+  "reference_date": "2026-10-12",
+  "questions": [
+    {
+      "question_id": "H24-REG-APPLIED-14",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "stem": "熱化学方程式を組み合わせ、指定量の液体ベンゼンの完全燃焼熱を求める。",
+      "summary": "熱化学方程式を組み合わせ、指定量の液体ベンゼンの完全燃焼熱を求める。",
+      "conditions": {
+        "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+        "成立条件": "原典の水は液体、炭素は黒鉛、ベンゼンは液体。式に付く熱量の符号を反応エンタルピーへ変換し、指定物質量を最後に掛ける。"
+      },
+      "choices": {
+        "1": {
+          "value": "900 kJ",
+          "verdict": "不適切",
+          "reason": "生成物のCO2六つと水三つの寄与を合計した値より大きく不足する。"
+        },
+        "2": {
+          "value": "1700 kJ",
+          "verdict": "不適切",
+          "reason": "炭素と水素の両方の酸化による発熱を正しく合計した値に達しない。"
+        },
+        "3": {
+          "value": "2500 kJ",
+          "verdict": "不適切",
+          "reason": "生成物と反応物のエンタルピー差から求めた値より小さい。"
+        },
+        "4": {
+          "value": "3300 kJ",
+          "verdict": "適切",
+          "reason": "原典指定の量の放出熱量に最も近い。"
+        },
+        "5": {
+          "value": "4100 kJ",
+          "verdict": "不適切",
+          "reason": "原典の反応係数と指定物質量から求めた値より大きい。"
+        }
+      },
+      "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/17_applied_science/page_005.png"
+      ],
+      "core_concept": "熱化学方程式を組み合わせ、指定量の液体ベンゼンの完全燃焼熱を求める。",
+      "required_knowledge": "原典の水は液体、炭素は黒鉛、ベンゼンは液体。式に付く熱量の符号を反応エンタルピーへ変換し、指定物質量を最後に掛ける。",
+      "solution": "ベンゼンの生成式の右辺にある−49 kJは吸熱を表し、生成エンタルピーは+49 kJ/molである。燃焼式は \\(\\mathrm{C_6H_6(l)}+(15/2)\\mathrm{O_2(g)}\\to6\\mathrm{CO_2(g)}+3\\mathrm{H_2O(l)}\\)。ヘスの法則で \\(\\Delta H=6(-394)+3(-286)-49=-3271\\,\\mathrm{kJ\\,mol^{-1}}\\) となる。1 molの放出熱量は3271 kJであり、最も近い3300 kJの4を選ぶ。",
+      "answer_reason": "ベンゼンの生成式の右辺にある−49 kJは吸熱を表し、生成エンタルピーは+49 kJ/molである。燃焼式は \\(\\mathrm{C_6H_6(l)}+(15/2)\\mathrm{O_2(g)}\\to6\\mathrm{CO_2(g)}+3\\mathrm{H_2O(l)}\\)。ヘスの法則で \\(\\Delta H=6(-394)+3(-286)-49=-3271\\,\\mathrm{kJ\\,mol^{-1}}\\) となる。1 molの放出熱量は3271 kJであり、最も近い3300 kJの4を選ぶ。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式正答を参照する前に保存した初回解答を保持する。6×394+3×286+49=3271 kJ/mol、3300に最近。",
+      "learning_points": "反応を逆にするとエンタルピーの符号が逆転し、係数倍すると熱量も同じ倍率になる。放出熱量の正値と負の反応エンタルピーを区別する。",
+      "theory_references": [
+        "theory:electrochem:hess",
+        "theory:electrochem:heat_sign",
+        "theory:electrochem:combustion"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "hess_thermochemistry",
+      "cross_concepts": [],
+      "classification_reason": "反応量・電荷・自由エネルギー又は熱電現象を決める関係式を中心に分類する。反応を逆にするとエンタルピーの符号が逆転し、係数倍すると熱量も同じ倍率になる。放出熱量の正値と負の反応エンタルピーを区別する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻の電荷保存・状態量の理解を利用し、化学反応の係数と材料知識を追加する。鉛蓄電池は電解液の分母質量まで更新するため三段階の計算となる。"
+      },
+      "citations": [
+        "openstax_hess"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-12",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "熱化学方程式を組み合わせ、指定量の液体ベンゼンの完全燃焼熱を求める。",
+      "summary": "熱化学方程式を組み合わせ、指定量の液体ベンゼンの完全燃焼熱を求める。",
+      "conditions": {
+        "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+        "成立条件": "原典の水は液体、炭素は黒鉛、ベンゼンは液体。式に付く熱量の符号を反応エンタルピーへ変換し、指定物質量を最後に掛ける。"
+      },
+      "choices": {
+        "1": {
+          "value": "900 kJ",
+          "verdict": "不適切",
+          "reason": "生成物のCO2六つと水三つの寄与を合計した値より大きく不足する。"
+        },
+        "2": {
+          "value": "1700 kJ",
+          "verdict": "不適切",
+          "reason": "炭素と水素の両方の酸化による発熱を正しく合計した値に達しない。"
+        },
+        "3": {
+          "value": "2500 kJ",
+          "verdict": "不適切",
+          "reason": "生成物と反応物のエンタルピー差から求めた値より小さい。"
+        },
+        "4": {
+          "value": "3300 kJ",
+          "verdict": "適切",
+          "reason": "原典指定の量の放出熱量に最も近い。"
+        },
+        "5": {
+          "value": "4100 kJ",
+          "verdict": "不適切",
+          "reason": "原典の反応係数と指定物質量から求めた値より大きい。"
+        }
+      },
+      "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_005.png"
+      ],
+      "core_concept": "熱化学方程式を組み合わせ、指定量の液体ベンゼンの完全燃焼熱を求める。",
+      "required_knowledge": "原典の水は液体、炭素は黒鉛、ベンゼンは液体。式に付く熱量の符号を反応エンタルピーへ変換し、指定物質量を最後に掛ける。",
+      "solution": "ベンゼンの生成式の右辺にある−49 kJは吸熱を表し、生成エンタルピーは+49 kJ/molである。燃焼式は \\(\\mathrm{C_6H_6(l)}+(15/2)\\mathrm{O_2(g)}\\to6\\mathrm{CO_2(g)}+3\\mathrm{H_2O(l)}\\)。ヘスの法則で \\(\\Delta H=6(-394)+3(-286)-49=-3271\\,\\mathrm{kJ\\,mol^{-1}}\\) となる。1 molの放出熱量は3271 kJであり、最も近い3300 kJの4を選ぶ。",
+      "answer_reason": "ベンゼンの生成式の右辺にある−49 kJは吸熱を表し、生成エンタルピーは+49 kJ/molである。燃焼式は \\(\\mathrm{C_6H_6(l)}+(15/2)\\mathrm{O_2(g)}\\to6\\mathrm{CO_2(g)}+3\\mathrm{H_2O(l)}\\)。ヘスの法則で \\(\\Delta H=6(-394)+3(-286)-49=-3271\\,\\mathrm{kJ\\,mol^{-1}}\\) となる。1 molの放出熱量は3271 kJであり、最も近い3300 kJの4を選ぶ。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式正答を参照する前に保存した初回解答を保持する。3271kJ/molなので3300。",
+      "learning_points": "反応を逆にするとエンタルピーの符号が逆転し、係数倍すると熱量も同じ倍率になる。放出熱量の正値と負の反応エンタルピーを区別する。",
+      "theory_references": [
+        "theory:electrochem:hess",
+        "theory:electrochem:heat_sign",
+        "theory:electrochem:combustion"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "hess_thermochemistry",
+      "cross_concepts": [],
+      "classification_reason": "反応量・電荷・自由エネルギー又は熱電現象を決める関係式を中心に分類する。反応を逆にするとエンタルピーの符号が逆転し、係数倍すると熱量も同じ倍率になる。放出熱量の正値と負の反応エンタルピーを区別する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻の電荷保存・状態量の理解を利用し、化学反応の係数と材料知識を追加する。鉛蓄電池は電解液の分母質量まで更新するため三段階の計算となる。"
+      },
+      "citations": [
+        "openstax_hess"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-12",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "stem": "熱化学方程式を組み合わせ、指定量の液体ベンゼンの完全燃焼熱を求める。",
+      "summary": "熱化学方程式を組み合わせ、指定量の液体ベンゼンの完全燃焼熱を求める。",
+      "conditions": {
+        "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+        "成立条件": "原典の水は液体、炭素は黒鉛、ベンゼンは液体。式に付く熱量の符号を反応エンタルピーへ変換し、指定物質量を最後に掛ける。"
+      },
+      "choices": {
+        "1": {
+          "value": "450 kJ",
+          "verdict": "不適切",
+          "reason": "生成物のCO2六つと水三つの寄与を合計した値より大きく不足する。"
+        },
+        "2": {
+          "value": "850 kJ",
+          "verdict": "不適切",
+          "reason": "炭素と水素の両方の酸化による発熱を正しく合計した値に達しない。"
+        },
+        "3": {
+          "value": "1250 kJ",
+          "verdict": "不適切",
+          "reason": "生成物と反応物のエンタルピー差から求めた値より小さい。"
+        },
+        "4": {
+          "value": "1650 kJ",
+          "verdict": "適切",
+          "reason": "原典指定の量の放出熱量に最も近い。"
+        },
+        "5": {
+          "value": "2050 kJ",
+          "verdict": "不適切",
+          "reason": "原典の反応係数と指定物質量から求めた値より大きい。"
+        }
+      },
+      "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/17_applied_science/page_005.png"
+      ],
+      "core_concept": "熱化学方程式を組み合わせ、指定量の液体ベンゼンの完全燃焼熱を求める。",
+      "required_knowledge": "原典の水は液体、炭素は黒鉛、ベンゼンは液体。式に付く熱量の符号を反応エンタルピーへ変換し、指定物質量を最後に掛ける。",
+      "solution": "ベンゼンの生成式の右辺にある−49 kJは吸熱を表し、生成エンタルピーは+49 kJ/molである。燃焼式は \\(\\mathrm{C_6H_6(l)}+(15/2)\\mathrm{O_2(g)}\\to6\\mathrm{CO_2(g)}+3\\mathrm{H_2O(l)}\\)。ヘスの法則で \\(\\Delta H=6(-394)+3(-286)-49=-3271\\,\\mathrm{kJ\\,mol^{-1}}\\) となる。0.5 molでは放出熱量が \\(0.5\\times3271=1635.5\\,\\mathrm{kJ}\\) なので1650 kJの4を選ぶ。",
+      "answer_reason": "ベンゼンの生成式の右辺にある−49 kJは吸熱を表し、生成エンタルピーは+49 kJ/molである。燃焼式は \\(\\mathrm{C_6H_6(l)}+(15/2)\\mathrm{O_2(g)}\\to6\\mathrm{CO_2(g)}+3\\mathrm{H_2O(l)}\\)。ヘスの法則で \\(\\Delta H=6(-394)+3(-286)-49=-3271\\,\\mathrm{kJ\\,mol^{-1}}\\) となる。0.5 molでは放出熱量が \\(0.5\\times3271=1635.5\\,\\mathrm{kJ}\\) なので1650 kJの4を選ぶ。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式正答を参照する前に保存した初回解答を保持する。0.5×3271=1635.5kJ、1650に最近。",
+      "learning_points": "反応を逆にするとエンタルピーの符号が逆転し、係数倍すると熱量も同じ倍率になる。放出熱量の正値と負の反応エンタルピーを区別する。",
+      "theory_references": [
+        "theory:electrochem:hess",
+        "theory:electrochem:heat_sign",
+        "theory:electrochem:combustion"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "hess_thermochemistry",
+      "cross_concepts": [],
+      "classification_reason": "反応量・電荷・自由エネルギー又は熱電現象を決める関係式を中心に分類する。反応を逆にするとエンタルピーの符号が逆転し、係数倍すると熱量も同じ倍率になる。放出熱量の正値と負の反応エンタルピーを区別する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻の電荷保存・状態量の理解を利用し、化学反応の係数と材料知識を追加する。鉛蓄電池は電解液の分母質量まで更新するため三段階の計算となる。"
+      },
+      "citations": [
+        "openstax_hess"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-17",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "stem": "リチウムイオン電池の材料と、金属リチウム負極の課題を5下線部で判定する。",
+      "summary": "リチウムイオン電池の材料と、金属リチウム負極の課題を5下線部で判定する。",
+      "conditions": {
+        "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+        "成立条件": "原典の下線4はOCRの「自金」でなく「白金」である。標準電極電位は通常の水溶液系還元電位の基準、負極は放電時の役割として読む。"
+      },
+      "choices": {
+        "1": {
+          "value": "卑な",
+          "verdict": "適切",
+          "reason": "通常の標準還元電位でLi+/Liは非常に負である。金属リチウムを酸化させる高電圧電池の負極としての性質につながる。"
+        },
+        "2": {
+          "value": "小さい",
+          "verdict": "適切",
+          "reason": "リチウムは金属元素で最も小さいモル質量を持つ。1 molあたりの移動電子数と合わせて質量当たり容量を考える。"
+        },
+        "3": {
+          "value": "負極",
+          "verdict": "適切",
+          "reason": "放電時にリチウムを酸化させ、電子を外部へ供給する側である。"
+        },
+        "4": {
+          "value": "白金",
+          "verdict": "不適切",
+          "reason": "この実用化経路の負極は炭素系材料であり、白金ではない。白金の不活性電極としての別の用途と混同しない。"
+        },
+        "5": {
+          "value": "コバルト酸リチウム",
+          "verdict": "適切",
+          "reason": "LiCoO2はリチウムイオンの出入りを利用する実用正極材料である。"
+        }
+      },
+      "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+      "ambiguity": "「最も卑」は電極反応・溶媒・標準状態を原典が明記しない。通常の水溶液標準還元電位の比較として扱い、全溶媒系への全称とはしない。",
+      "evidence": [
+        "extracted/pages/H24/17_applied_science/page_006.png"
+      ],
+      "core_concept": "リチウムイオン電池の材料と、金属リチウム負極の課題を5下線部で判定する。",
+      "required_knowledge": "原典の下線4はOCRの「自金」でなく「白金」である。標準電極電位は通常の水溶液系還元電位の基準、負極は放電時の役割として読む。",
+      "solution": "金属リチウムの析出によるデンドライトは内部短絡を起こし得る。実用化で負極にはリチウムイオンを取り込む炭素系材料が採用され、白金という下線4が不適切である。初期の石油コークスと後の黒鉛を歴史上同一材料としない。正極のコバルト酸リチウムはLiCoO2である。",
+      "answer_reason": "金属リチウムの析出によるデンドライトは内部短絡を起こし得る。実用化で負極にはリチウムイオンを取り込む炭素系材料が採用され、白金という下線4が不適切である。初期の石油コークスと後の黒鉛を歴史上同一材料としない。正極のコバルト酸リチウムはLiCoO2である。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式正答を参照する前に保存した初回解答を保持する。白金ではなく炭素系負極でリチウムイオンを挿入、他4下線は整合。",
+      "learning_points": "高い標準電位差だけで実用電池は決まらない。可逆にイオンを取り込むホスト、電解液、界面、短絡の抑制を合わせて読む。",
+      "theory_references": [
+        "theory:electrochem:lithium",
+        "theory:electrochem:electrodes"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "lithium_intercalation",
+      "cross_concepts": [],
+      "classification_reason": "反応量・電荷・自由エネルギー又は熱電現象を決める関係式を中心に分類する。高い標準電位差だけで実用電池は決まらない。可逆にイオンを取り込むホスト、電解液、界面、短絡の抑制を合わせて読む。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻の電荷保存・状態量の理解を利用し、化学反応の係数と材料知識を追加する。鉛蓄電池は電解液の分母質量まで更新するため三段階の計算となる。"
+      },
+      "citations": [
+        "nobel_lithium2019",
+        "openstax_batteries"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-11",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "stem": "反応前後の酸化数を求め、還元に当たる変化を選ぶ。",
+      "summary": "反応前後の酸化数を求め、還元に当たる変化を選ぶ。",
+      "conditions": {
+        "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+        "成立条件": "単体の酸化数は0、単原子イオンは電荷に等しい。この問題の通常の酸化物でOは−2、H2SでHは+1である。式は変化の概略であって全反応の釣合い式ではない。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(\\mathrm{MnO_4^-}\\to\\mathrm{Mn^{2+}}\\)",
+          "verdict": "適切",
+          "reason": "Mnは+7から+2へ低下し還元である。"
+        },
+        "2": {
+          "value": "NaCl→NaOH",
+          "verdict": "不適切",
+          "reason": "Naは両側とも+1であり、Naの還元ではない。ClはCl−として別に移るなど全反応の収支が省略された表示である。"
+        },
+        "3": {
+          "value": "\\(2\\mathrm{I^-}\\to\\mathrm{I_2}\\)",
+          "verdict": "不適切",
+          "reason": "Iは−1から0へ増加し、2電子を放出する酸化である。"
+        },
+        "4": {
+          "value": "Mg→MgCl2",
+          "verdict": "不適切",
+          "reason": "Mgは0から+2へ増加し酸化である。"
+        },
+        "5": {
+          "value": "H2S→S",
+          "verdict": "不適切",
+          "reason": "Sは−2から0へ増加し酸化である。"
+        }
+      },
+      "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/17_applied_science/page_005.png"
+      ],
+      "core_concept": "反応前後の酸化数を求め、還元に当たる変化を選ぶ。",
+      "required_knowledge": "単体の酸化数は0、単原子イオンは電荷に等しい。この問題の通常の酸化物でOは−2、H2SでHは+1である。式は変化の概略であって全反応の釣合い式ではない。",
+      "solution": "\\(\\mathrm{MnO_4^-}\\) ではMnの酸化数が \\(x+4(-2)=-1\\) より+7である。\\(\\mathrm{Mn^{2+}}\\) では+2なので5電子を受け取る還元であり1を選ぶ。他の変化は酸化数不変又は増加である。",
+      "answer_reason": "\\(\\mathrm{MnO_4^-}\\) ではMnの酸化数が \\(x+4(-2)=-1\\) より+7である。\\(\\mathrm{Mn^{2+}}\\) では+2なので5電子を受け取る還元であり1を選ぶ。他の変化は酸化数不変又は増加である。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式正答を参照する前に保存した初回解答を保持する。Mnは+7から+2へ低下。Na+不変、I−は0へ酸化、Mgは0から+2、Sは−2から0。",
+      "learning_points": "酸素の付加だけで判定せず、対象元素の酸化数と電子の受け渡しを追う。酸化数は形式的な電荷であり、共有結合内の実電荷そのものではない。",
+      "theory_references": [
+        "theory:electrochem:oxidation_number",
+        "theory:electrochem:half_reaction"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "redox_electron_balance",
+      "cross_concepts": [],
+      "classification_reason": "反応量・電荷・自由エネルギー又は熱電現象を決める関係式を中心に分類する。酸素の付加だけで判定せず、対象元素の酸化数と電子の受け渡しを追う。酸化数は形式的な電荷であり、共有結合内の実電荷そのものではない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻の電荷保存・状態量の理解を利用し、化学反応の係数と材料知識を追加する。鉛蓄電池は電解液の分母質量まで更新するため三段階の計算となる。"
+      },
+      "citations": [
+        "mit_redox2014"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-12",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "stem": "二価の銅イオンの析出量から必要電荷と通電時間を求める。",
+      "summary": "二価の銅イオンの析出量から必要電荷と通電時間を求める。",
+      "conditions": {
+        "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+        "成立条件": "電流5.36 A、Cu 1.27 g、モル質量63.5 g/mol、F=96500 C/mol。全電流が電気分解に使われるという原典指定により電流効率1とする。"
+      },
+      "choices": {
+        "1": {
+          "value": "2分",
+          "verdict": "不適切",
+          "reason": "必要電荷3860 Cに対し5.36×120=643.2 Cしか流れない。"
+        },
+        "2": {
+          "value": "6分",
+          "verdict": "不適切",
+          "reason": "1929.6 Cであり、Cu2+に2電子が必要なことを無視するとこの時間に近付く。"
+        },
+        "3": {
+          "value": "10分",
+          "verdict": "不適切",
+          "reason": "3216 Cであり、指定析出量に必要な3860 Cより不足する。"
+        },
+        "4": {
+          "value": "12分",
+          "verdict": "適切",
+          "reason": "3859.2 Cとなり丸めた必要電荷と一致する。"
+        },
+        "5": {
+          "value": "20分",
+          "verdict": "不適切",
+          "reason": "6432 Cとなり、指定析出量に必要な電荷より大きい。"
+        }
+      },
+      "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/17_applied_science/page_005.png"
+      ],
+      "core_concept": "二価の銅イオンの析出量から必要電荷と通電時間を求める。",
+      "required_knowledge": "電流5.36 A、Cu 1.27 g、モル質量63.5 g/mol、F=96500 C/mol。全電流が電気分解に使われるという原典指定により電流効率1とする。",
+      "solution": "析出した銅は \\(1.27/63.5=0.0200\\,\\mathrm{mol}\\)。\\(\\mathrm{Cu^{2+}}+2e^-\\to\\mathrm{Cu}\\) に必要な電子は0.0400 molである。\\(Q=n_eF=0.0400\\times96500=3860\\,\\mathrm C\\)、\\(t=Q/I=3860/5.36=720.15\\,\\mathrm s\\) である。60で割ると約12.0分となり4を選ぶ。",
+      "answer_reason": "析出した銅は \\(1.27/63.5=0.0200\\,\\mathrm{mol}\\)。\\(\\mathrm{Cu^{2+}}+2e^-\\to\\mathrm{Cu}\\) に必要な電子は0.0400 molである。\\(Q=n_eF=0.0400\\times96500=3860\\,\\mathrm C\\)、\\(t=Q/I=3860/5.36=720.15\\,\\mathrm s\\) である。60で割ると約12.0分となり4を選ぶ。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式正答を参照する前に保存した初回解答を保持する。Cu2+に2電子、1.27/63.5=0.02mol、Q=0.04×96500=3860C、t=720.15s=12分。",
+      "learning_points": "物質量→電子量→電荷→秒→分の順に単位をつないで計算する。Fを銅1 molの電荷とせず電子1 molの電荷として使う。",
+      "theory_references": [
+        "theory:electrochem:faraday",
+        "theory:electrochem:copper"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "faraday_electrolysis",
+      "cross_concepts": [],
+      "classification_reason": "反応量・電荷・自由エネルギー又は熱電現象を決める関係式を中心に分類する。物質量→電子量→電荷→秒→分の順に単位をつないで計算する。Fを銅1 molの電荷とせず電子1 molの電荷として使う。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻の電荷保存・状態量の理解を利用し、化学反応の係数と材料知識を追加する。鉛蓄電池は電解液の分母質量まで更新するため三段階の計算となる。"
+      },
+      "citations": [
+        "mit_redox2014"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-13",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "鉛蓄電池の放電反応から、硫酸量と電解液量の両方を更新して濃度を求める。",
+      "summary": "鉛蓄電池の放電反応から、硫酸量と電解液量の両方を更新して濃度を求める。",
+      "conditions": {
+        "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+        "成立条件": "30質量%の電解液1000 g、100 A、965 s、F=96500 C/mol。使用後を放電と読み、全電荷が主反応へ使われ、外部との液交換や蒸発がないモデルを用いる。"
+      },
+      "choices": {
+        "1": {
+          "value": "11%",
+          "verdict": "不適切",
+          "reason": "電子1 molに対する硫酸消費量1 molと水生成量1 molを使った質量収支に合わない。"
+        },
+        "2": {
+          "value": "16%",
+          "verdict": "不適切",
+          "reason": "硫酸の減少と水の生成を合わせた最終質量920 gに対する202 gの比ではない。"
+        },
+        "3": {
+          "value": "20%",
+          "verdict": "不適切",
+          "reason": "202/1000を約20%とするのは電解液全質量を初期値のまま固定する誤りである。"
+        },
+        "4": {
+          "value": "22%",
+          "verdict": "適切",
+          "reason": "硫酸202 gを最終電解液920 gで割った約21.96%に最も近い。"
+        },
+        "5": {
+          "value": "25%",
+          "verdict": "不適切",
+          "reason": "反応による硫酸消費98 gを反映した最終比率より大きい。"
+        }
+      },
+      "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+      "ambiguity": "電流効率と外部の水損失を原典は明示しない。「使用後」を放電と解釈した主反応のみのモデルで公式4と一致する。充電や副反応を含む一般条件へ広げない。",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_005.png"
+      ],
+      "core_concept": "鉛蓄電池の放電反応から、硫酸量と電解液量の両方を更新して濃度を求める。",
+      "required_knowledge": "30質量%の電解液1000 g、100 A、965 s、F=96500 C/mol。使用後を放電と読み、全電荷が主反応へ使われ、外部との液交換や蒸発がないモデルを用いる。",
+      "solution": "放電の全反応は \\(\\mathrm{Pb+PbO_2+2H_2SO_4\\to2PbSO_4+2H_2O}\\) で、2 molの電子に対し硫酸2 molを消費し水2 molを生成する。通過電子は \\(100\\times965/96500=1.00\\,\\mathrm{mol}\\)。硫酸98 gが減り水18 gが増える。硫酸は \\(300-98=202\\,\\mathrm g\\)、電解液全体は \\(1000-98+18=920\\,\\mathrm g\\) となる。質量百分率 \\(100\\times202/920=21.96\\%\\) に最も近い22%の4を選ぶ。",
+      "answer_reason": "放電の全反応は \\(\\mathrm{Pb+PbO_2+2H_2SO_4\\to2PbSO_4+2H_2O}\\) で、2 molの電子に対し硫酸2 molを消費し水2 molを生成する。通過電子は \\(100\\times965/96500=1.00\\,\\mathrm{mol}\\)。硫酸98 gが減り水18 gが増える。硫酸は \\(300-98=202\\,\\mathrm g\\)、電解液全体は \\(1000-98+18=920\\,\\mathrm g\\) となる。質量百分率 \\(100\\times202/920=21.96\\%\\) に最も近い22%の4を選ぶ。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式正答を参照する前に保存した初回解答を保持する。1mol電子で硫酸98g減り水18g増える。溶液920g、酸202g、21.96%で22。",
+      "learning_points": "電極上の固体PbSO4へ移る質量は液相の分母から除く。硫酸が水になるという言い換えだけで分母を1000 gのまま保たない。",
+      "theory_references": [
+        "theory:electrochem:lead",
+        "theory:electrochem:solution_mass",
+        "theory:electrochem:faraday"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "lead_battery_mass_balance",
+      "cross_concepts": [],
+      "classification_reason": "反応量・電荷・自由エネルギー又は熱電現象を決める関係式を中心に分類する。電極上の固体PbSO4へ移る質量は液相の分母から除く。硫酸が水になるという言い換えだけで分母を1000 gのまま保たない。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻の電荷保存・状態量の理解を利用し、化学反応の係数と材料知識を追加する。鉛蓄電池は電解液の分母質量まで更新するため三段階の計算となる。"
+      },
+      "citations": [
+        "openstax_batteries",
+        "mit_redox2014"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-15",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "ボルン・ハーバーサイクルの各過程に符号を付けてNaClの生成エンタルピーを求める。",
+      "summary": "ボルン・ハーバーサイクルの各過程に符号を付けてNaClの生成エンタルピーを求める。",
+      "conditions": {
+        "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+        "成立条件": "原典の電子親和力354と格子エネルギー788は正の大きさとして与えられている。電子獲得と結晶生成はエンタルピー低下であり負符号、Cl原子1 molにはCl2を半mol解離する。"
+      },
+      "choices": {
+        "1": {
+          "value": "−289 kJ/mol",
+          "verdict": "不適切",
+          "reason": "Cl2の解離熱243を半分にせず全量使うと−289になる。NaCl 1 molに必要なCl原子は1 molである。"
+        },
+        "2": {
+          "value": "−411 kJ/mol",
+          "verdict": "適切",
+          "reason": "半molの塩素分子解離と吸熱・発熱の方向をすべて反映する。"
+        },
+        "3": {
+          "value": "−471 kJ/mol",
+          "verdict": "不適切",
+          "reason": "指定された5過程のエンタルピー和−410.5と合わない。"
+        },
+        "4": {
+          "value": "−597 kJ/mol",
+          "verdict": "不適切",
+          "reason": "原典の昇華、イオン化、半解離、電子獲得、格子形成の和と合わない。"
+        },
+        "5": {
+          "value": "−1166 kJ/mol",
+          "verdict": "不適切",
+          "reason": "吸熱の昇華・イオン化・解離を含めた生成エンタルピーより過剰な負値である。"
+        }
+      },
+      "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+      "ambiguity": "原典は「生成熱」を負の候補で表す一方、他の熱量は正の大きさで与える。現代的な生成エンタルピーと熱化学式の右辺の発熱量の符号を区別して説明する。",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_006.png"
+      ],
+      "core_concept": "ボルン・ハーバーサイクルの各過程に符号を付けてNaClの生成エンタルピーを求める。",
+      "required_knowledge": "原典の電子親和力354と格子エネルギー788は正の大きさとして与えられている。電子獲得と結晶生成はエンタルピー低下であり負符号、Cl原子1 molにはCl2を半mol解離する。",
+      "solution": "Na(s)の昇華+108、Na(g)のイオン化+502、Cl2(g)半molの解離+243/2、Cl(g)の電子獲得−354、気体イオンからNaCl(s)の生成−788を加える。\\(108+502+121.5-354-788=-410.5\\,\\mathrm{kJ\\,mol^{-1}}\\)。最も近い−411 kJ/molの2を選ぶ。",
+      "answer_reason": "Na(s)の昇華+108、Na(g)のイオン化+502、Cl2(g)半molの解離+243/2、Cl(g)の電子獲得−354、気体イオンからNaCl(s)の生成−788を加える。\\(108+502+121.5-354-788=-410.5\\,\\mathrm{kJ\\,mol^{-1}}\\)。最も近い−411 kJ/molの2を選ぶ。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式正答を参照する前に保存した初回解答を保持する。108+243/2+502−354−788=−410.5kJ/mol。",
+      "learning_points": "電子親和力と格子エネルギーは文献で符号慣習が異なる。名称だけに符号を割り当てず、反応方向を書いてから足す。",
+      "theory_references": [
+        "theory:electrochem:born_haber",
+        "theory:electrochem:heat_sign"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "born_haber_cycle",
+      "cross_concepts": [],
+      "classification_reason": "反応量・電荷・自由エネルギー又は熱電現象を決める関係式を中心に分類する。電子親和力と格子エネルギーは文献で符号慣習が異なる。名称だけに符号を割り当てず、反応方向を書いてから足す。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "2",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻の電荷保存・状態量の理解を利用し、化学反応の係数と材料知識を追加する。鉛蓄電池は電解液の分母質量まで更新するため三段階の計算となる。"
+      },
+      "citations": [
+        "openstax_born_haber"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-07",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "ゼーベック・ペルティエ・トムソン効果を、温度依存と電流依存で区別する。",
+      "summary": "ゼーベック・ペルティエ・トムソン効果を、温度依存と電流依存で区別する。",
+      "conditions": {
+        "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+        "成立条件": "熱起電力は開回路で同じ材料・同じ両端温度を比較する。端点温度と材料を固定した熱起電力と、負荷を接続した端子電圧を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "ゼーベック効果は温度差測定に利用",
+          "verdict": "適切",
+          "reason": "異種材料の接点温度差から生じる起電力を熱電対の測温に用いる。"
+        },
+        "2": {
+          "value": "ペルティエ効果は熱電冷却に応用",
+          "verdict": "適切",
+          "reason": "異種材料の接合部で電流方向に応じて吸熱又は発熱が起こる。"
+        },
+        "3": {
+          "value": "熱電能は温度依存",
+          "verdict": "適切",
+          "reason": "ゼーベック係数S(T)は一般に材料と温度に依存し、一定値とするのは限定した温度範囲の近似である。"
+        },
+        "4": {
+          "value": "熱起電力は長さや太さに無関係",
+          "verdict": "条件付きで適切",
+          "reason": "材料と端点温度を固定した開回路の起電力には幾何形状が直接入らない。電気抵抗や負荷時の端子電圧、温度分布まで形状に依存しないという意味ではない。"
+        },
+        "5": {
+          "value": "トムソン熱は電流の2乗に比例",
+          "verdict": "不適切",
+          "reason": "トムソン熱は電流と温度勾配に一次で可逆である。二乗依存はジュール熱の特徴である。"
+        }
+      },
+      "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+      "ambiguity": "候補4は材料・端点温度・開回路を省略している。起電力と負荷時の端子電圧の区別を付し、一般に形状が無関係とはしない。",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_003.png"
+      ],
+      "core_concept": "ゼーベック・ペルティエ・トムソン効果を、温度依存と電流依存で区別する。",
+      "required_knowledge": "熱起電力は開回路で同じ材料・同じ両端温度を比較する。端点温度と材料を固定した熱起電力と、負荷を接続した端子電圧を区別する。",
+      "solution": "温度勾配を持つ導体のトムソン熱は電流に一次であり、電流反転で吸熱と発熱が入れ替わる。\\(I^2R\\) に従い電流反転で符号が変わらないのはジュール熱である。したがって5が不適切である。開回路の熱起電力は材料と端点温度が同じなら熱電能の温度積分で決まり、長さ・断面積を含まない。",
+      "answer_reason": "温度勾配を持つ導体のトムソン熱は電流に一次であり、電流反転で吸熱と発熱が入れ替わる。\\(I^2R\\) に従い電流反転で符号が変わらないのはジュール熱である。したがって5が不適切である。開回路の熱起電力は材料と端点温度が同じなら熱電能の温度積分で決まり、長さ・断面積を含まない。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式正答を参照する前に保存した初回解答を保持する。トムソンはIと温度勾配に比例して符号可逆、I²はジュール熱。4は材料・端点温度固定の開回路電圧。",
+      "learning_points": "接合部のペルティエ熱、単一導体内のトムソン熱、散逸によるジュール熱の場所と電流反転時の符号を比べる。",
+      "theory_references": [
+        "theory:electrochem:seebeck",
+        "theory:electrochem:peltier",
+        "theory:electrochem:thomson",
+        "theory:electrochem:joule"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "thermoelectric_effects",
+      "cross_concepts": [],
+      "classification_reason": "反応量・電荷・自由エネルギー又は熱電現象を決める関係式を中心に分類する。接合部のペルティエ熱、単一導体内のトムソン熱、散逸によるジュール熱の場所と電流反転時の符号を比べる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻の電荷保存・状態量の理解を利用し、化学反応の係数と材料知識を追加する。鉛蓄電池は電解液の分母質量まで更新するため三段階の計算となる。"
+      },
+      "citations": [
+        "mit_thermoelectric2024"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-06",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "stem": "熱電現象の名称から光学現象を区別する。",
+      "summary": "熱電現象の名称から光学現象を区別する。",
+      "conditions": {
+        "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+        "成立条件": "最も不適切な用語を選ぶ。カー効果には電気光学と磁気光学の用法があるが、いずれもこの熱電効果の名称ではない。"
+      },
+      "choices": {
+        "1": {
+          "value": "ゼーベック効果",
+          "verdict": "適切",
+          "reason": "温度差により起電力が生じる熱電現象である。"
+        },
+        "2": {
+          "value": "カー効果",
+          "verdict": "不適切",
+          "reason": "光の屈折・偏光に関わる名称であり、温度差と電流の相互作用を表す熱電効果ではない。"
+        },
+        "3": {
+          "value": "ペルティエ効果",
+          "verdict": "適切",
+          "reason": "異種材料接合部を流れる電流に伴う吸放熱である。"
+        },
+        "4": {
+          "value": "トムソン効果",
+          "verdict": "適切",
+          "reason": "温度勾配を持つ材料内の電流に伴う可逆的な吸放熱である。"
+        },
+        "5": {
+          "value": "熱起電力",
+          "verdict": "適切",
+          "reason": "温度差による起電力そのものを表す用語である。"
+        }
+      },
+      "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/17_applied_science/page_003.png"
+      ],
+      "core_concept": "熱電現象の名称から光学現象を区別する。",
+      "required_knowledge": "最も不適切な用語を選ぶ。カー効果には電気光学と磁気光学の用法があるが、いずれもこの熱電効果の名称ではない。",
+      "solution": "ゼーベック、ペルティエ、トムソンと熱起電力はいずれも熱と電気の結合に関わる。カー効果は電場による複屈折又は磁気光学的な偏光変化などの光学現象の名称であり、列挙された熱電現象と区別して2を選ぶ。",
+      "answer_reason": "ゼーベック、ペルティエ、トムソンと熱起電力はいずれも熱と電気の結合に関わる。カー効果は電場による複屈折又は磁気光学的な偏光変化などの光学現象の名称であり、列挙された熱電現象と区別して2を選ぶ。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式正答を参照する前に保存した初回解答を保持する。カー効果は電気光学又は磁気光学で熱電現象ではない。",
+      "learning_points": "似た人名の効果を、外部の原因と観測量で分類する。熱電は温度・電流・熱流、カー効果は電磁場と光学応答である。",
+      "theory_references": [
+        "theory:electrochem:seebeck",
+        "theory:electrochem:peltier",
+        "theory:electrochem:thomson",
+        "theory:electrochem:kerr"
+      ],
+      "discipline_id": "physics_electro",
+      "concept_id": "thermoelectric_effects",
+      "cross_concepts": [],
+      "classification_reason": "反応量・電荷・自由エネルギー又は熱電現象を決める関係式を中心に分類する。似た人名の効果を、外部の原因と観測量で分類する。熱電は温度・電流・熱流、カー効果は電磁場と光学応答である。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻の電荷保存・状態量の理解を利用し、化学反応の係数と材料知識を追加する。鉛蓄電池は電解液の分母質量まで更新するため三段階の計算となる。"
+      },
+      "citations": [
+        "mit_thermoelectric2024",
+        "mit_kerr_calendar2005"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-15",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "stem": "電池の可逆起電力と反応ギブズエネルギー、平衡、標準電極電位の関係を判定する。",
+      "summary": "電池の可逆起電力と反応ギブズエネルギー、平衡、標準電極電位の関係を判定する。",
+      "conditions": {
+        "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+        "成立条件": "可逆・開回路の起電力を扱う。標準電極電位は共通の還元電位表で比較し、全反応の平衡と個別界面の平衡を分ける。"
+      },
+      "choices": {
+        "1": {
+          "value": "酸化電極をアノード、還元電極をカソードと呼ぶ",
+          "verdict": "適切",
+          "reason": "反応による定義である。放電電池と電気分解では正負の対応が異なっても、酸化・還元による名称は変わらない。"
+        },
+        "2": {
+          "value": "電池反応全体が化学平衡なら電位差0",
+          "verdict": "適切",
+          "reason": "全反応の \\(\\Delta_rG=0\\) から \\(E=0\\)。個別電極界面が局所平衡である開回路状態だけとは区別する。"
+        },
+        "3": {
+          "value": "電池起電力は反応ギブズエネルギーと無関係",
+          "verdict": "不適切",
+          "reason": "可逆起電力は \\(\\Delta_rG=-nFE\\) で結ばれる。nは釣合い全反応で移動する電子のmol数である。"
+        },
+        "4": {
+          "value": "標準水素電極を0とする基準",
+          "verdict": "適切",
+          "reason": "標準電極電位はこの参照電極に対する相対値として表す。単独電極の絶対電位を直接測定する意味ではない。"
+        },
+        "5": {
+          "value": "標準電池電位は両標準電極電位の差",
+          "verdict": "適切",
+          "reason": "双方を還元電位として \\(E^\\circ=E^\\circ_{\\mathrm{cathode}}-E^\\circ_{\\mathrm{anode}}\\)。反応の係数倍で電位を倍にしない。"
+        }
+      },
+      "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/17_applied_science/page_005.png"
+      ],
+      "core_concept": "電池の可逆起電力と反応ギブズエネルギー、平衡、標準電極電位の関係を判定する。",
+      "required_knowledge": "可逆・開回路の起電力を扱う。標準電極電位は共通の還元電位表で比較し、全反応の平衡と個別界面の平衡を分ける。",
+      "solution": "反応1 molの進行で外部へ運ばれる電荷はnFであり、可逆に取り出す電気仕事の最大値は \\(-\\Delta_rG\\) である。したがって \\(\\Delta_rG=-nFE\\) であり、無関係とする3が不適切である。全電池反応の化学平衡ではE=0となるが、個々の電極が局所平衡の開回路電池で起電力が0とは限らない。",
+      "answer_reason": "反応1 molの進行で外部へ運ばれる電荷はnFであり、可逆に取り出す電気仕事の最大値は \\(-\\Delta_rG\\) である。したがって \\(\\Delta_rG=-nFE\\) であり、無関係とする3が不適切である。全電池反応の化学平衡ではE=0となるが、個々の電極が局所平衡の開回路電池で起電力が0とは限らない。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式正答を参照する前に保存した初回解答を保持する。ΔrG=−nFE、反応全平衡ならE=0、個別電極局所平衡と全反応平衡を区別。",
+      "learning_points": "起電力は示強量である。反応式を倍にすると反応エネルギーと電子数が共に倍になり、Eは変わらない。",
+      "theory_references": [
+        "theory:electrochem:gibbs",
+        "theory:electrochem:nernst",
+        "theory:electrochem:electrodes"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "electrochemical_gibbs",
+      "cross_concepts": [],
+      "classification_reason": "反応量・電荷・自由エネルギー又は熱電現象を決める関係式を中心に分類する。起電力は示強量である。反応式を倍にすると反応エネルギーと電子数が共に倍になり、Eは変わらない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻の電荷保存・状態量の理解を利用し、化学反応の係数と材料知識を追加する。鉛蓄電池は電解液の分母質量まで更新するため三段階の計算となる。"
+      },
+      "citations": [
+        "openstax_cell_gibbs",
+        "mit_redox2014"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-10",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "電池の可逆起電力と反応ギブズエネルギー、平衡、標準電極電位の関係を判定する。",
+      "summary": "電池の可逆起電力と反応ギブズエネルギー、平衡、標準電極電位の関係を判定する。",
+      "conditions": {
+        "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+        "成立条件": "可逆・開回路の起電力を扱う。標準電極電位は共通の還元電位表で比較し、全反応の平衡と個別界面の平衡を分ける。"
+      },
+      "choices": {
+        "1": {
+          "value": "電池起電力は反応ギブズエネルギーと無関係",
+          "verdict": "不適切",
+          "reason": "可逆起電力は \\(\\Delta_rG=-nFE\\) で結ばれる。nは釣合い全反応で移動する電子のmol数である。"
+        },
+        "2": {
+          "value": "電池反応全体が化学平衡なら電位差0",
+          "verdict": "適切",
+          "reason": "全反応の \\(\\Delta_rG=0\\) から \\(E=0\\)。個別電極界面が局所平衡である開回路状態だけとは区別する。"
+        },
+        "3": {
+          "value": "酸化電極をアノード、還元電極をカソードと呼ぶ",
+          "verdict": "適切",
+          "reason": "反応による定義である。放電電池と電気分解では正負の対応が異なっても、酸化・還元による名称は変わらない。"
+        },
+        "4": {
+          "value": "標準水素電極を0とする基準",
+          "verdict": "適切",
+          "reason": "標準電極電位はこの参照電極に対する相対値として表す。単独電極の絶対電位を直接測定する意味ではない。"
+        },
+        "5": {
+          "value": "標準電池電位は両標準電極電位の差",
+          "verdict": "適切",
+          "reason": "双方を還元電位として \\(E^\\circ=E^\\circ_{\\mathrm{cathode}}-E^\\circ_{\\mathrm{anode}}\\)。反応の係数倍で電位を倍にしない。"
+        }
+      },
+      "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_004.png"
+      ],
+      "core_concept": "電池の可逆起電力と反応ギブズエネルギー、平衡、標準電極電位の関係を判定する。",
+      "required_knowledge": "可逆・開回路の起電力を扱う。標準電極電位は共通の還元電位表で比較し、全反応の平衡と個別界面の平衡を分ける。",
+      "solution": "反応1 molの進行で外部へ運ばれる電荷はnFであり、可逆に取り出す電気仕事の最大値は \\(-\\Delta_rG\\) である。したがって \\(\\Delta_rG=-nFE\\) であり、無関係とする1が不適切である。全電池反応の化学平衡ではE=0となるが、個々の電極が局所平衡の開回路電池で起電力が0とは限らない。",
+      "answer_reason": "反応1 molの進行で外部へ運ばれる電荷はnFであり、可逆に取り出す電気仕事の最大値は \\(-\\Delta_rG\\) である。したがって \\(\\Delta_rG=-nFE\\) であり、無関係とする1が不適切である。全電池反応の化学平衡ではE=0となるが、個々の電極が局所平衡の開回路電池で起電力が0とは限らない。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式正答を参照する前に保存した初回解答を保持する。R04と順序差、ΔrG無関係が1。",
+      "learning_points": "起電力は示強量である。反応式を倍にすると反応エネルギーと電子数が共に倍になり、Eは変わらない。",
+      "theory_references": [
+        "theory:electrochem:gibbs",
+        "theory:electrochem:nernst",
+        "theory:electrochem:electrodes"
+      ],
+      "discipline_id": "chem_physical",
+      "concept_id": "electrochemical_gibbs",
+      "cross_concepts": [],
+      "classification_reason": "反応量・電荷・自由エネルギー又は熱電現象を決める関係式を中心に分類する。起電力は示強量である。反応式を倍にすると反応エネルギーと電子数が共に倍になり、Eは変わらない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻の電荷保存・状態量の理解を利用し、化学反応の係数と材料知識を追加する。鉛蓄電池は電解液の分母質量まで更新するため三段階の計算となる。"
+      },
+      "citations": [
+        "openstax_cell_gibbs",
+        "mit_redox2014"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

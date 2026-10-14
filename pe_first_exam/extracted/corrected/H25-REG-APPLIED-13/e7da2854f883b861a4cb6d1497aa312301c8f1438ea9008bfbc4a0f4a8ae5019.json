@@ -1,0 +1,45 @@
+{
+  "stem": "金属イオンの沈殿・錯体と反応条件を確認する。",
+  "conditions": {
+    "判断対象": "金属イオンの沈殿・錯体と反応条件を確認する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "BaSO4黒色沈殿",
+      "verdict": "選ばない候補",
+      "reason": "BaSO4の通常沈殿は白色。"
+    },
+    "2": {
+      "value": "AgCl白沈殿が日光で溶解",
+      "verdict": "選ばない候補",
+      "reason": "光分解で銀等を生じ暗色化し、溶解とは異なる。"
+    },
+    "3": {
+      "value": "酸性ZnにH2Sで白沈殿",
+      "verdict": "選ばない候補",
+      "reason": "ZnS白色はあり得るが、酸性の程度・濃度で析出が変わる。"
+    },
+    "4": {
+      "value": "Znに少量NH3で白沈殿/過剰で溶解",
+      "verdict": "選ぶ候補",
+      "reason": "Zn(OH)2沈殿と過剰NH3のammine錯体で溶解。"
+    },
+    "5": {
+      "value": "Fe濃硝酸でH2と溶解",
+      "verdict": "選ばない候補",
+      "reason": "通常濃硝酸はFeを不動態化。酸化性酸からH2発生とも説明できない。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "酸性ZnSの析出はpH・濃度に依存し3の一律排除をしない。濃硝酸Feの温度・濃度・表面状態も未指定。",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_006.png"
+  ],
+  "question_id": "H25-REG-APPLIED-13",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "a3d8f1ac6fcf7a7311269c267c8e533b8e9bf48fc0668e314c2fadab02560d73",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

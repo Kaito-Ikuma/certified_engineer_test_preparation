@@ -1,0 +1,45 @@
+{
+  "stem": "応用が科学的発見より先行する例。",
+  "conditions": {
+    "時点": "令和元年度に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "核分裂後に原子力発電",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "2": {
+      "value": "ウイルス発見後に種痘",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "3": {
+      "value": "望遠鏡後に土星環確認",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "4": {
+      "value": "量子力学後にトランジスタ",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "5": {
+      "value": "電磁波確認後にレーダー",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "他の四組の初出原報・開発年を全て取得したわけではない。土星の環は観測と環構造の解釈を分ける。",
+  "evidence": [
+    "extracted/pages/R01/basic/page_021.png"
+  ],
+  "question_id": "R01-REG-BASIC-5-5",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "21",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "aab4cc3102b910ee8ba36c409cce891805852a7bb0047868bb39b321f545ac17",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

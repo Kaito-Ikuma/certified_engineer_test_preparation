@@ -1,0 +1,45 @@
+{
+  "stem": "多元素同時分析に向く方法を比較する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "多元素同時分析に向く方法を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "酸化還元滴定",
+      "verdict": "不適切",
+      "reason": "当量関係を使う濃度測定で、複数元素の特性線を一度に識別する方法ではない。"
+    },
+    "2": {
+      "value": "赤外吸収",
+      "verdict": "不適切",
+      "reason": "主に振動と官能基を調べる。通常の多元素同時定量の第一選択ではない。"
+    },
+    "3": {
+      "value": "キレート滴定",
+      "verdict": "不適切",
+      "reason": "金属イオンと錯形成する試薬の当量を使い、各元素を同時に独立識別する方式ではない。"
+    },
+    "4": {
+      "value": "吸光光度",
+      "verdict": "不適切",
+      "reason": "特定の吸収帯や呈色反応を用いる。ここでの全元素比較ではXRFが適する。"
+    },
+    "5": {
+      "value": "蛍光X線",
+      "verdict": "通常の条件で適切",
+      "reason": "元素ごとの内殻遷移エネルギーを分け、複数の元素の信号を一分析で得られる。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_005.png"
+  ],
+  "question_id": "H24-REG-APPLIED-16",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "5fb2d6125a080f2cd7796fe227ebb3ecf1ed612922b92291c28107717b357d8d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

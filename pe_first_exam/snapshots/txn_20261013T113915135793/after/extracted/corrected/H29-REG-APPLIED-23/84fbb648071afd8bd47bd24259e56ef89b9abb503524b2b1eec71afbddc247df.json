@@ -1,0 +1,45 @@
+{
+  "stem": "火山用語と軟堆積物の火炎状構造を区別する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "火山用語と軟堆積物の火炎状構造を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "カルデラ",
+      "verdict": "代表的条件で適切",
+      "reason": "マグマの大量放出等に伴う陥没などで生じる大きな凹地で、火山活動と関係する。"
+    },
+    "2": {
+      "value": "安山岩",
+      "verdict": "代表的条件で適切",
+      "reason": "島弧で代表的に見られる中間質火山岩。"
+    },
+    "3": {
+      "value": "アグルチネート",
+      "verdict": "代表的条件で適切",
+      "reason": "高温で放出された溶岩片等が付着・溶結してできる火砕岩。"
+    },
+    "4": {
+      "value": "火炎状構造",
+      "verdict": "不適切",
+      "reason": "未固結の軽い層が上の重い堆積物の間へ押し上げられた荷重変形などで生じ、火炎という形の名は噴火を意味しない。"
+    },
+    "5": {
+      "value": "マグマ水蒸気爆発",
+      "verdict": "代表的条件で適切",
+      "reason": "マグマと外来水の相互作用を伴う爆発的噴火。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_008.png"
+  ],
+  "question_id": "H29-REG-APPLIED-23",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "5ba890318b4b32a16e61f2b1fe0524c92b908a6852ff33118568147998c17e9a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

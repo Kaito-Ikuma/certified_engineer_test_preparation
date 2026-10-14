@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-10-11T11:04:26.375973+09:00",
+  "registered": 1270,
+  "classification_verified": 510,
+  "summary_verified": 475,
+  "corrected_verified": 414,
+  "corrected_partial": 61,
+  "solution_drafts": 475,
+  "solution_verified": 0,
+  "manual_required": 856,
+  "subject_drafts": {
+    "BASIC": 141,
+    "APT": 94,
+    "APPLIED": 240
+  }
+}

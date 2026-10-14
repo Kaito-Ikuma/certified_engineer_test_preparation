@@ -1,0 +1,45 @@
+{
+  "stem": "環境会計と評価・報告・監査を区別。",
+  "conditions": {
+    "時点": "平成26年度に指定された資料・制度。",
+    "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "LCAは設備更新時のみ",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "環境報告書は設備の自治体届出",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "グリーン購入は生物資源優先のみ",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "環境監査は税務処理のみ",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "5": {
+      "value": "環境会計は費用効果を金額物量で",
+      "verdict": "適切・選択対象",
+      "reason": "判定と一致する。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/basic/page_016.png"
+  ],
+  "question_id": "H26-REG-BASIC-5-2",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "16",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "d6518683007bbeb2f886a5abde0b05d916651b06bb91d36709a79c34d041f65d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

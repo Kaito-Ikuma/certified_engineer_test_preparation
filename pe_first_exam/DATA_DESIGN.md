@@ -54,6 +54,21 @@ question_relations.csvで同概念、同解法、条件違い、近似再出題�
 ## 統計・教材・監査
 topic_statistics.csvは16試験回と15年度の頻度を分け、全登録の暫定数と確認済み部分集合を並べる。未知の難易度を0にしない。少数の確認済み集合を全頻度の推定と読まない。
 TeXの手書き章とgenerated/questionsのCSV所有ブロックを分ける。再生成は手書き本文を上書きしない。
-作業版PDFは全問登録索引と5問の解説初稿を含む。全問解説完成・Checkpoint 2条件達成を意味しない。
+S7開始時の作業版PDFは全問登録索引と5問の解説初稿を含んだ。最新処理数はREADME・SOL_PROGRESSとCSVで確認する。全問解説完成・Checkpoint 2条件達成を意味しない。
 初期監査は件数・集合・正答・原典ハッシュ・スキーマ・参照・派生ビューを検査する。最終監査は未実装のため明示失敗する。make all、audit_completeness.py --finalが成功を出すことはない。
 将来の最終条件は校正・全解説・誤答説明・参照／ラベル一意・引用・入力とPDFのビルド一致・専門査読証跡を束ねる。ラベルだけ／古いPDF／未解決参照を成功としない。
+
+## S7執筆情報（既存設計の追加列）
+
+questions.csvのchoice_reviewsは全5肢のvalue/verdict/reasonをJSONで持つ。answer_reason、learning_points、theory_references、authoring_batch、independent_answer、independent_solution_statusを追加した。公式と独立解答の相違はdiscrepancy_pendingで保存し、公式正答を保持する。原典照合はextracted/correctedの不変JSONとcontent/source/payloadハッシュへ結び付ける。classification/summary/correctionの検証と解説初稿の状態を別にする。
+
+入力の任意列independent_solution_noteは、初回独立解答と追加原典確認による改訂の経緯をindependent_solution証跡のnotesへ保存する。公式照合前の初回記録は上書きせず、改訂理由と追加一次資料を別に保持する。公式一致はAstra査読完了を意味しない。
+
+同じ解法がsolution_summaryとanswer_reasonに格納されている場合、表示だけを共通段落にまとめる。CSVの両列は保持する。手書き共通理論と問題固有生成ブロックを分離し、図・表の原典は転載せず独自の条件表現と検討を生成する。明示的な原典比較をした関係のみpublish_reviewed_relations.pyで登録する。類似スコアは承認根拠にしない。
+
+### 執筆済み内容の明示的改訂（S7）
+
+別バッチで既存の執筆を改訂する場合は、入力に`revision_of_content_sha256`、`revision_of_batch`、`revision_reason`を必須とする。現行の内容ハッシュと執筆バッチが一致しない改訂は公開前に拒否する。旧校正JSONは不変で保持し、旧行を`data/batch_changes/*_revision.json`へ保存する。更新対象の旧証跡を失効させ、新しい内容に結び付いた証跡を追加する。境界確認など対象外の証跡は保持する。同一バッチの再実行は同一内容に限り冪等であり、修正は必ず新しい改訂バッチとして作成する。改訂後も解説はAstra査読待ちの初稿である。
+
+
+S7_059以降：独立解答と公式集合が同一ならmatches_official_draft、公式answer_kind=multipleで独立の一肢が受理集合に含まれる場合はaccepted_official_member_draftとする。受理された一肢の解を全複数正答の独立確認に拡大しない。原公式集合と注記、独立解、部分校正の留保を全て保持し、集合に含まれない答えはdiscrepancy_pending。5件の回帰検証を追加。

@@ -1,0 +1,47 @@
+{
+  "stem": "張力の小振動剛性と長さ・質量の比。",
+  "conditions": {
+    "a": "全長2L、中央質量m。",
+    "b": "全長4L、中央質量2m。",
+    "共通": "一定張力T、原典の弦に直交する微小変位、他方向の変位無視。"
+  },
+  "choices": {
+    "1": {
+      "value": "1:1",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 2:1 と異なる。"
+    },
+    "2": {
+      "value": "1:√2",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 2:1 と異なる。"
+    },
+    "3": {
+      "value": "1:2",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 2:1 と異なる。"
+    },
+    "4": {
+      "value": "√2:1",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 2:1 と異なる。"
+    },
+    "5": {
+      "value": "2:1",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/basic/page_013.png",
+    "extracted/pages/R04/basic/page_014.png"
+  ],
+  "question_id": "R04-REG-BASIC-3-6",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "13",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "75038d06db87c2215e3d3346ac23aaec61d33b794389a7a4c0252573938433fe",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

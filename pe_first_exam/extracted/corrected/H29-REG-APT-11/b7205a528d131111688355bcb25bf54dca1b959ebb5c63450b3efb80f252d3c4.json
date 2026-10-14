@@ -1,0 +1,45 @@
+{
+  "stem": "ISO26000の七原則と技術の重要性を区別。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+    "時点": "平成29年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "ステークホルダーの利害の尊重",
+      "verdict": "条件内で適切",
+      "reason": "七原則に含まれる。社会的影響を受ける者の利害を検討する。"
+    },
+    "2": {
+      "value": "法の支配の尊重",
+      "verdict": "条件内で適切",
+      "reason": "七原則に含まれる。組織の独自ルールだけで法を置き換えない。"
+    },
+    "3": {
+      "value": "国際行動規範の尊重",
+      "verdict": "条件内で適切",
+      "reason": "七原則に含まれる。国内の慣行だけへ限定しない。"
+    },
+    "4": {
+      "value": "人権の尊重",
+      "verdict": "条件内で適切",
+      "reason": "七原則に含まれる。人権は中核主題にも関係する。"
+    },
+    "5": {
+      "value": "技術・ノウハウの重要性",
+      "verdict": "不適切",
+      "reason": "技術が不要という意味ではなく、七原則の名称として挙げられていない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/aptitude/page_011.png"
+  ],
+  "question_id": "H29-REG-APT-11",
+  "source_file": "sources/H29/aptitude.pdf",
+  "source_page": "11",
+  "source_sha256": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+  "raw_text_sha256": "f3fccce980c46ef667fb06b83d82d1b8f8d2b4267fc50b41b259237a2c5d1fee",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

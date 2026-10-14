@@ -1,0 +1,46 @@
+{
+  "stem": "キャッシュ平均時間と主記憶だけに対する速度比を組として求める。",
+  "conditions": {
+    "キャッシュ": "50ns",
+    "主記憶": "450ns",
+    "ヒット率": "0.90"
+  },
+  "choices": {
+    "1": {
+      "value": "45ns/2倍",
+      "verdict": "不適切",
+      "reason": "45nsはヒット側0.9×50だけで、ミス45nsが抜ける。速度比も450/90とは違う。"
+    },
+    "2": {
+      "value": "60ns/2倍",
+      "verdict": "不適切",
+      "reason": "ヒット/ミス重み付き平均90nsとは一致せず、450/60=7.5で2倍でもない。"
+    },
+    "3": {
+      "value": "60ns/5倍",
+      "verdict": "不適切",
+      "reason": "60nsは平均に合わず、450/60=7.5なので5倍とも整合しない。"
+    },
+    "4": {
+      "value": "90ns/2倍",
+      "verdict": "不適切",
+      "reason": "時間90nsは簡略モデルで合うが速度比は450/90=5、2ではない。"
+    },
+    "5": {
+      "value": "90ns/5倍",
+      "verdict": "適切",
+      "reason": "0.9×50+0.1×450=90ns、450/90=5倍の両方が一致する。"
+    }
+  },
+  "figures": "問題幹・全5肢・数値・単位・否定を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/basic/page_010.png"
+  ],
+  "question_id": "R02-REG-BASIC-2-6",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "10",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "34942938250b05b5f11a9472e0706005e28b3ce4655c4781380a467f5b089567",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

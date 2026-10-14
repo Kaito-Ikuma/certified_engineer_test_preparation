@@ -1,0 +1,89 @@
+{
+  "batch_id": "S7_054_revision1",
+  "reference_date": "2026-10-14",
+  "questions": [
+    {
+      "question_id": "R01-RET-APT-04",
+      "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+      "stem": "構造の危険を隠さず関係者の安全へつなぐ。",
+      "summary": "構造の危険を隠さず関係者の安全へつなぐ。",
+      "conditions": {
+        "状況": "使用中の建物と周辺の何千人もの人々、構造計算の誤り、補強に3か月、暴風時の監視と避難が可能。",
+        "争点": "混乱を恐れて入居者へ知らせないことの妥当性。",
+        "主体": "Aは構造設計者、Bは市の担当技術者。Bを市の名称としない。",
+        "ア": "Aが守秘を理由に依頼人の不公表方針へ従う。",
+        "イ": "Aが安全を優先して依頼人を説得。",
+        "ウ": "Bが混乱を恐れて不公表方針へ従う。",
+        "エ": "Bが公衆の安全を優先して依頼人を説得。",
+        "オ": "Bが関係者の知る権利を重視して依頼人を説得。"
+      },
+      "choices": {
+        "1": {
+          "value": "XOXOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "OXOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOXOO と異なる。"
+        },
+        "3": {
+          "value": "OOXOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOXOO と異なる。"
+        },
+        "4": {
+          "value": "XXOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOXOO と異なる。"
+        },
+        "5": {
+          "value": "OOXXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOXOO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "倫理事例の判断であり、すべての秘密情報を即時公開する一般的な法的義務へ置き換えない。実際の緊急性・通報先は個別に評価する。",
+      "evidence": [
+        "extracted/pages/R01_retest/aptitude/page_004.png",
+        "extracted/pages/R01_retest/aptitude/page_005.png"
+      ],
+      "core_concept": "構造の危険を隠さず関係者の安全へつなぐ。",
+      "required_knowledge": "公衆の安全、誤りの是正、避難・監視計画、依頼者への働きかけ、必要な情報開示。",
+      "solution": "アはAが守秘を理由に依頼人の不公表方針へ従うため不適切。Aは既に依頼人へ計算の見落としを報告している。イはAが公衆の安全を優先して依頼人を説得するため適切。ウは市の担当技術者Bが混乱を懸念して不公表に従うため不適切。エはBが公衆の安全を優先して、オはBが従業員・周辺住民の知る権利を重視して、いずれも依頼人を説得するため適切。XOXOOの1。実現可能な避難計画にも関係者が必要な情報を得ることが重要で、無制限の秘密公開の一般論にはしない。",
+      "answer_reason": "アはAが守秘を理由に依頼人の不公表方針へ従うため不適切。Aは既に依頼人へ計算の見落としを報告している。イはAが公衆の安全を優先して依頼人を説得するため適切。ウは市の担当技術者Bが混乱を懸念して不公表に従うため不適切。エはBが公衆の安全を優先して、オはBが従業員・周辺住民の知る権利を重視して、いずれも依頼人を説得するため適切。XOXOOの1。実現可能な避難計画にも関係者が必要な情報を得ることが重要で、無制限の秘密公開の一般論にはしない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。XOXOO：依頼者への追従より公衆安全と説明の説得。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "公衆の安全、誤りの是正、避難・監視計画、依頼者への働きかけ、必要な情報開示。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:disclosure"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_disclosurecase",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：構造の危険を隠さず関係者の安全へつなぐ。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "ipej_ethics2011",
+        "scu_ethics_framework"
+      ],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "d1cdbb65701fea35c43b572db5e4ec68344351f82d8945740116bf3dcd9312fb",
+      "revision_of_batch": "S7_054_aptitude_finish",
+      "revision_reason": "市の担当技術者BをB市とした誤表現と、設計者Aが既に依頼者へ報告した事実を保持するよう事例の各行動を具体化。"
+    }
+  ]
+}

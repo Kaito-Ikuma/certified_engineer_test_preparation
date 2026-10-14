@@ -1,0 +1,45 @@
+{
+  "stem": "職場の状態・行動、経験的事故比、報告保護、4Sと化学情報を判断する。",
+  "conditions": {
+    "判断方向": "各肢の理由に記録。組合せ・個数問題では記述の真偽と回答番号を区別する。",
+    "原典照合": "全5候補、表の列順、否定、条件、規格番号、法令時点を23原典画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "ア〜オ：○○○××",
+      "verdict": "不一致",
+      "reason": "SDSの一般的役割であるオを否定する点が違う。"
+    },
+    "2": {
+      "value": "○○××○",
+      "verdict": "不一致",
+      "reason": "報告者を責めないウを否定する点が違う。"
+    },
+    "3": {
+      "value": "×××○○",
+      "verdict": "不一致",
+      "reason": "適切なア・ウ・オを否定し、誤るエを肯定する。"
+    },
+    "4": {
+      "value": "○○○×○",
+      "verdict": "初回・公式一致、経験比条件保留",
+      "reason": "アは状態と行動、イは伝統的経験比、ウは報告保護、エは洗浄を入れた誤り、オはSDSの情報伝達機能で○○○×○。"
+    },
+    "5": {
+      "value": "×××○×",
+      "verdict": "不一致",
+      "reason": "状態・行動と報告保護を否定し4Sの誤った列挙を肯定する。"
+    }
+  },
+  "figures": "設問固有図なし。組合せ表がある問題では全候補の記号順を画像照合。",
+  "ambiguity": "イの「同じ人間330件」「背後の数千」の経験集計の原著・母集団条件は未照合。厚労省資料で1:29:300と非難しない活動を確認したが、全個人の普遍則とはしない。",
+  "evidence": [
+    "extracted/pages/R06/aptitude/page_007.png"
+  ],
+  "question_id": "R06-REG-APT-07",
+  "source_file": "sources/R06/aptitude.pdf",
+  "source_page": "7",
+  "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+  "raw_text_sha256": "b2cbd09b2bc16538566bad8c43ee3494128a66d2ebf349aecdb8bea8a54e84bc",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

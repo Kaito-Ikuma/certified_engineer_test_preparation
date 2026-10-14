@@ -1,0 +1,47 @@
+{
+  "stem": "四面体の端子位置で合成抵抗は変わる。",
+  "conditions": {
+    "構造": "正四面体六辺、各辺同材料・同長L・同断面。",
+    "a": "二頂点。",
+    "b": "頂点とその対辺中点。",
+    "c": "互いに向かい合う二辺の中点。"
+  },
+  "choices": {
+    "1": {
+      "value": "Rb<Rc<Ra",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Ra<Rb<Rc と異なる。"
+    },
+    "2": {
+      "value": "Ra<Rc<Rb",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Ra<Rb<Rc と異なる。"
+    },
+    "3": {
+      "value": "Rc<Ra<Rb",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Ra<Rb<Rc と異なる。"
+    },
+    "4": {
+      "value": "Rc<Rb<Ra",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Ra<Rb<Rc と異なる。"
+    },
+    "5": {
+      "value": "Ra<Rb<Rc",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/basic/page_011.png"
+  ],
+  "question_id": "R07-REG-BASIC-3-5",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "11",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "e92b244f971bf2b929393bb7c10774bf6afeb79dc74793637ab54583ec4b3144",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

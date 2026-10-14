@@ -1,0 +1,45 @@
+{
+  "stem": "天然資源の鉱物・粒径・生成条件を対応させる。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "天然資源の鉱物・粒径・生成条件を対応させる。"
+  },
+  "choices": {
+    "1": {
+      "value": "縞状鉄鉱の珪質層と鉄鉱物層",
+      "verdict": "代表的条件で適切",
+      "reason": "珪質物と鉄鉱物に富む層が交互に現れる。銅の鉱床と交換しない。"
+    },
+    "2": {
+      "value": "浅所斑岩と斑岩銅",
+      "verdict": "代表的条件で適切",
+      "reason": "花崗閃緑斑岩等に伴う熱水性の鉱染・網状細脈を作る。"
+    },
+    "3": {
+      "value": "粗粒堆積岩がオイルシェール",
+      "verdict": "不適切",
+      "reason": "ケロジェンを含む細粒堆積岩として扱う。粗粒という説明が不適切。"
+    },
+    "4": {
+      "value": "メタンハイドレートの温度圧力条件",
+      "verdict": "代表的条件で適切",
+      "reason": "水分子の構造にガス分子が取り込まれた水和物で、低温・高圧等の安定条件がある。単に凍結したメタンではない。"
+    },
+    "5": {
+      "value": "Al水酸化物がボーキサイト",
+      "verdict": "代表的条件で適切",
+      "reason": "Alの水酸化物・酸化水酸化物等を含む主要なAl鉱石。原岩が風化してAlが相対濃集する。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_012.png"
+  ],
+  "question_id": "H28-REG-APPLIED-31",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "9d2cb4a76b7a9edf5bc9bc88a60a2d3b7ff0f1bcf298928506be0a2076773d0a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

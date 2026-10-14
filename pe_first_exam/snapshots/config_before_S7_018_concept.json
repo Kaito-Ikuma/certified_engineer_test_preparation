@@ -1,0 +1,1312 @@
+{
+  "version": "1.10-S7-concept-additions",
+  "concepts": [
+    {
+      "id": "universal_design",
+      "label": "ユニバーサルデザイン",
+      "pattern": "ユニバーサルデザイン",
+      "subjects": [
+        "BASIC",
+        "APT"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "japan_geology",
+      "label": "日本列島の地質構造",
+      "pattern": "日本列島の地質構造",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "geo_structure"
+      ]
+    },
+    {
+      "id": "qualitative_analysis",
+      "label": "陽イオンの系統分析",
+      "pattern": "陽イオン.*分析|混合水溶液の分析",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "chem_analysis"
+      ]
+    },
+    {
+      "id": "isotope_general",
+      "label": "同位体の基礎",
+      "pattern": "同位体",
+      "subjects": [
+        "APPLIED",
+        "BASIC"
+      ],
+      "disciplines": [
+        "chem_atomic",
+        "basic_4_2"
+      ]
+    },
+    {
+      "id": "isotope_standards",
+      "label": "同位体標準試料",
+      "pattern": "SMOW|PDB|CDT|同位体.*標準",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "earth_isotope"
+      ]
+    },
+    {
+      "id": "radiometric_dating",
+      "label": "放射年代測定",
+      "pattern": "年代測定|年代.*決定|年代を測定|U.Pb|K.Ar|Rb.Sr|放射性炭素",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "earth_isotope"
+      ]
+    },
+    {
+      "id": "carbon_allotropes",
+      "label": "炭素同素体の構造と物性",
+      "pattern": "炭素だけでできた|グラファイト|カーボンナノ",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "chem_atomic",
+        "chem_inorganic"
+      ]
+    },
+    {
+      "id": "ccs",
+      "label": "二酸化炭素回収・貯留",
+      "pattern": "CCS|Carbon dioxide Capture",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "earth_chem"
+      ]
+    },
+    {
+      "id": "stack",
+      "label": "スタック・データ構造",
+      "pattern": "スタック|PUSH|POP",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "information_codes",
+      "label": "情報理論・符号・誤り検出",
+      "pattern": "情報理論|ISBN|パリティ|伝送誤り",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "history_policy",
+      "label": "科学技術史・政策の経緯",
+      "pattern": "年代|基本計画|技術史|科学史",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_5_0"
+      ]
+    },
+    {
+      "id": "standards_ethics",
+      "label": "社会的責任・安全の標準",
+      "pattern": "ISO|国際標準|国際規格",
+      "subjects": [
+        "APT"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "numerical_accuracy",
+      "label": "数値解析・誤差",
+      "pattern": "数値解析|丸め誤差|桁落ち",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "vibration",
+      "label": "力学系の固有振動",
+      "pattern": "固有振動|ばね|バネ",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "strengthening",
+      "label": "金属の強化機構",
+      "pattern": "金属の強化|加工硬化|固溶強化|析出強化",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "physics_materials"
+      ]
+    },
+    {
+      "id": "concept_000",
+      "label": "地震・弾性波探査",
+      "pattern": "地震探査|弾性波.*探査|屈折法|反射法",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "geo_exploration"
+      ]
+    },
+    {
+      "id": "concept_001",
+      "label": "重力・磁気探査",
+      "pattern": "重力探査|磁気探査",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "geo_exploration"
+      ]
+    },
+    {
+      "id": "concept_002",
+      "label": "電気・電磁探査",
+      "pattern": "電気.*探査|電磁探査|比抵抗法",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "geo_exploration"
+      ]
+    },
+    {
+      "id": "concept_003",
+      "label": "ボーリング・検層",
+      "pattern": "ボーリング|検層|VSP|ダウンホール",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "geo_exploration"
+      ]
+    },
+    {
+      "id": "concept_004",
+      "label": "表面波・微動探査",
+      "pattern": "表面波|微動",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "geo_exploration"
+      ]
+    },
+    {
+      "id": "concept_005",
+      "label": "探査データ処理・逆解析",
+      "pattern": "データ.*処理|数値解析|インバージョン|逆解析",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "geo_exploration"
+      ]
+    },
+    {
+      "id": "concept_006",
+      "label": "地中レーダ",
+      "pattern": "地中レーダ",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "geo_exploration"
+      ]
+    },
+    {
+      "id": "concept_008",
+      "label": "安定同位体・水循環",
+      "pattern": "同位体",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "earth_isotope"
+      ]
+    },
+    {
+      "id": "concept_009",
+      "label": "構造物の強度・安全率",
+      "pattern": "安全率|安全係数|許容応力",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_010",
+      "label": "信頼性と故障",
+      "pattern": "信頼|借頼|言頼|故障",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_011",
+      "label": "待ち行列",
+      "pattern": "ATM|待ち行列|ポアソン|到着率",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_012",
+      "label": "工程管理・PERT",
+      "pattern": "PERT|プロジェクト|作業リスト|アロー",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_013",
+      "label": "最適化・意思決定",
+      "pattern": "最適化|線形計画|利益|利得|デシジョン",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_014",
+      "label": "品質管理・統計",
+      "pattern": "検査|品質|標準偏差|検定|相関係数",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_015",
+      "label": "暗号・認証・攻撃対策",
+      "pattern": "セキュリティ|パスワード|暗号|攻撃",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_016",
+      "label": "IP・通信",
+      "pattern": "\\bIP\\b|IPv4|IPV4|TCP|ネットワーク|通信",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_017",
+      "label": "論理式・命題",
+      "pattern": "論理|真理値|必要.*条件",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_018",
+      "label": "キャッシュ・CPU",
+      "pattern": "キャッシュ|CPU|クロック",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_019",
+      "label": "数値表現",
+      "pattern": "進数|浮動|ビット|精度",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_020",
+      "label": "アルゴリズム・再帰",
+      "pattern": "アルゴリズム|プログラム|アッカーマン",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_021",
+      "label": "形式言語・木",
+      "pattern": "構文|文字列|数値列|算術木",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_022",
+      "label": "ベクトル・微分演算",
+      "pattern": "ベクトル|div|rot|勾配",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_023",
+      "label": "微積分・求積",
+      "pattern": "積分|導関数|微分",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_024",
+      "label": "有限要素法",
+      "pattern": "有限要素",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_025",
+      "label": "材料の応力・変形",
+      "pattern": "応力|ひずみ|歪|荷重|断面|はり|弾性",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_026",
+      "label": "生物・遺伝",
+      "pattern": "DNA|RNA|遺伝|生体|クローン|タンパク",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_027",
+      "label": "環境法・循環・持続可能性",
+      "pattern": "循環|環境|廃棄|温暖|SDG",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_028",
+      "label": "科学技術史",
+      "pattern": "科学史|技術史|業績|革命",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_029",
+      "label": "技術士の義務・責務",
+      "pattern": "技術士法|信用失墜|資質向上|秘密保持",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_030",
+      "label": "公益・説明責任",
+      "pattern": "公衆|説明責任|公益",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_031",
+      "label": "知的財産",
+      "pattern": "知的財産|特許|産業財産",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_032",
+      "label": "安全・リスク評価",
+      "pattern": "安全|リスク",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_033",
+      "label": "研究・情報倫理",
+      "pattern": "研究|捏造|盗用|個人情報",
+      "subjects": [
+        "BASIC",
+        "APT",
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_034",
+      "label": "ばね・振り子",
+      "pattern": "ばね|振り子|ひも.*錘",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_035",
+      "label": "摩擦・力のつり合い",
+      "pattern": "摩擦|斜面",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_036",
+      "label": "軌道・万有引力",
+      "pattern": "初速度|静止衛星",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_037",
+      "label": "静電場・容量",
+      "pattern": "コンデンサ|電界|静電|電荷",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_038",
+      "label": "電磁誘導・磁性",
+      "pattern": "コイル|ソレノイド|磁性|磁場|磁気",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_039",
+      "label": "回路・抵抗",
+      "pattern": "抵抗|回路",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_040",
+      "label": "波動・音",
+      "pattern": "正弦波|音|振動",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_041",
+      "label": "光学・レンズ",
+      "pattern": "レンズ|光の|スリット|回折格子",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_042",
+      "label": "熱力学・熱機関",
+      "pattern": "カルノー|ピストン|熱力学|比熱|熱伝導",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_043",
+      "label": "単位系・換算",
+      "pattern": "単位|SI",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_044",
+      "label": "原子核・放射線",
+      "pattern": "原子核|半減期|放射線|吸収線量",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_045",
+      "label": "化学平衡・反応",
+      "pattern": "平衡|反応|触媒",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_046",
+      "label": "相平衡・溶液",
+      "pattern": "蒸気圧|溶液|凝固|沸点|溶解",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_047",
+      "label": "電気化学",
+      "pattern": "電池|電極",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_048",
+      "label": "結晶・分子構造",
+      "pattern": "結晶|格子|電子配置|結合",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_049",
+      "label": "有機・高分子",
+      "pattern": "高分子|ナイロン|樹脂|界面活性剤|ベンゼン|メタン",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_050",
+      "label": "分析・分離",
+      "pattern": "分析|蒸留|分離|スペクトル",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_051",
+      "label": "鉱物・岩石",
+      "pattern": "鉱物|岩石|変成岩",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_052",
+      "label": "堆積相・構造",
+      "pattern": "堆積|推積",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_053",
+      "label": "地質構造",
+      "pattern": "断層|褶曲",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_054",
+      "label": "地球内部・プレート",
+      "pattern": "地球.*内部|マントル|プレート|地殻",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_055",
+      "label": "火山・マグマ",
+      "pattern": "火山|水山|マグマ",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_056",
+      "label": "資源・鉱床",
+      "pattern": "鉱床|地熱資源",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_057",
+      "label": "地盤・斜面災害",
+      "pattern": "液状化|地盤|地すべり|山崩れ|トンネル",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_058",
+      "label": "地下水・水理",
+      "pattern": "地下水|帯水層|水理",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "concept_059",
+      "label": "大気・海洋・物質循環",
+      "pattern": "大気|海洋|海水|水循環|炭素循環|陸水",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": []
+    },
+    {
+      "id": "newton_dynamics",
+      "label": "運動方程式と慣性",
+      "pattern": "加速度|慣性|体重計",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "physics_mechanics"
+      ]
+    },
+    {
+      "id": "mechanical_energy",
+      "label": "力学的エネルギー保存",
+      "pattern": "位置エネルギー|運動エネルギー|落下",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "physics_mechanics"
+      ]
+    },
+    {
+      "id": "buoyancy",
+      "label": "浮力と静水圧",
+      "pattern": "浮力|水中.*浸",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "physics_mechanics"
+      ]
+    },
+    {
+      "id": "bernoulli",
+      "label": "流体のエネルギーとピトー管",
+      "pattern": "ピトー|ベルヌーイ",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "physics_mechanics"
+      ]
+    },
+    {
+      "id": "impact",
+      "label": "衝突と反発係数",
+      "pattern": "反発係数|衝突",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "physics_mechanics"
+      ]
+    },
+    {
+      "id": "cpd",
+      "label": "CPD・継続研鑚",
+      "pattern": "CPD|継続研|継続学習",
+      "subjects": [
+        "APT"
+      ],
+      "disciplines": [
+        "apt_0"
+      ]
+    },
+    {
+      "id": "competency",
+      "label": "技術士のコンピテンシー",
+      "pattern": "資質能力|コンピテンシー",
+      "subjects": [
+        "APT"
+      ],
+      "disciplines": [
+        "apt_0"
+      ]
+    },
+    {
+      "id": "gnss",
+      "label": "GNSS・衛星測位",
+      "pattern": "GNSS|GPS|衛星測位|測位衛星",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "earth_gravity"
+      ]
+    },
+    {
+      "id": "geomagnetic_declination",
+      "label": "地磁気偏角",
+      "pattern": "偏角|磁北",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "earth_magnet"
+      ]
+    },
+    {
+      "id": "linear_algebra_inverse",
+      "label": "線形代数・逆行列",
+      "pattern": "逆行列|随伴行列",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_3_3"
+      ]
+    },
+    {
+      "id": "engineering_ethics",
+      "label": "倫理原理・意思決定・組織倫理",
+      "pattern": "倫理原理|倫理的意思決定|エシックス|倫理プログラム|志向倫理|道徳的自律",
+      "subjects": [
+        "APT"
+      ],
+      "disciplines": [
+        "apt_5"
+      ]
+    },
+    {
+      "id": "basic_stoichiometry",
+      "label": "化学量論・反応収率",
+      "pattern": "完全燃焼|物質量",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_2"
+      ]
+    },
+    {
+      "id": "basic_oxidation",
+      "label": "酸化数・電子配分",
+      "pattern": "酸化数|酸化還元",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_2"
+      ]
+    },
+    {
+      "id": "basic_composition",
+      "label": "濃度・組成の分率",
+      "pattern": "モル分率|質量分率|濃度",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_2"
+      ]
+    },
+    {
+      "id": "basic_halogen",
+      "label": "ハロゲンの物性・酸化力・酸性度",
+      "pattern": "ハロゲン|ハロゲン化水素",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_2"
+      ]
+    },
+    {
+      "id": "basic_ceramics",
+      "label": "機能性電子セラミックス",
+      "pattern": "バリスタ|サーミスタ|圧電体",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_1"
+      ]
+    },
+    {
+      "id": "basic_reaction_enthalpy",
+      "label": "結合エネルギー・反応熱",
+      "pattern": "結合エネルギー|反応熱",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_2"
+      ]
+    },
+    {
+      "id": "fair_trade",
+      "label": "公正取引・競争法・金融市場",
+      "pattern": "談合|カルテル|インサイダー|相場操縦",
+      "subjects": [
+        "APT"
+      ],
+      "disciplines": [
+        "apt_4"
+      ]
+    },
+    {
+      "id": "whistleblower",
+      "label": "公益通報者保護と通報経路",
+      "pattern": "公益通報|内部告発",
+      "subjects": [
+        "APT"
+      ],
+      "disciplines": [
+        "apt_4"
+      ]
+    },
+    {
+      "id": "igneous_assemblage",
+      "label": "火成岩組成・鉱物組合せ",
+      "pattern": "火成岩|玄武岩|花崗岩|はんれい岩",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "geo_petrology"
+      ]
+    },
+    {
+      "id": "metamorphic_equilibrium",
+      "label": "変成作用・鉱物組合せ・組織",
+      "pattern": "変成|片岩|片麻岩|ホルンフェルス",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "geo_petrology"
+      ]
+    },
+    {
+      "id": "pyroclastic_deposit",
+      "label": "火山砕屑物・堆積構造",
+      "pattern": "火山砕屑|火砕流|軽石|アグルチネート",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "geo_petrology"
+      ]
+    },
+    {
+      "id": "accretion_rocks",
+      "label": "付加体の構成岩・形成過程",
+      "pattern": "付加体",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "geo_petrology",
+        "geo_engineering"
+      ]
+    },
+    {
+      "id": "soil_origin",
+      "label": "特殊土の母材・成因",
+      "pattern": "土壌|まさ土|しらす|泥炭|黄土",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "geo_engineering"
+      ]
+    },
+    {
+      "id": "rock_weathering",
+      "label": "岩石風化・変質・スレーキング",
+      "pattern": "風化|変質|スレーキング",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "geo_engineering"
+      ]
+    },
+    {
+      "id": "wave_kinematics",
+      "label": "進行波の位相・波長・角振動数",
+      "pattern": "正弦波|位相速度",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "physics_wave"
+      ]
+    },
+    {
+      "id": "acoustic_propagation",
+      "label": "音波・弾性波・媒質の復元力",
+      "pattern": "音速|縦波|横波|衝撃波",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "physics_wave"
+      ]
+    },
+    {
+      "id": "acoustic_doppler",
+      "label": "音源運動・ドップラー・反射音",
+      "pattern": "ドップラー|音源|反射音",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "physics_wave"
+      ]
+    },
+    {
+      "id": "acoustic_interference",
+      "label": "音の経路差・位相差・干渉",
+      "pattern": "スピーカ|経路差",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "physics_wave"
+      ]
+    },
+    {
+      "id": "thin_lens",
+      "label": "薄レンズの実像・虚像と符号",
+      "pattern": "凸レンズ|焦点距離",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "physics_optics"
+      ]
+    },
+    {
+      "id": "optical_diffraction",
+      "label": "光の干渉・回折格子",
+      "pattern": "スリット|回折格子",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "physics_optics"
+      ]
+    },
+    {
+      "id": "thinfilm_interference",
+      "label": "薄膜反射位相・ニュートンリング",
+      "pattern": "ニュートンリング|明環",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "physics_optics"
+      ]
+    },
+    {
+      "id": "photon_matter_wave",
+      "label": "光子の量子性・電子の物質波",
+      "pattern": "光電効果|電子線回折",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "physics_modern"
+      ]
+    },
+    {
+      "id": "em_spectrum",
+      "label": "電磁波領域・光子エネルギー",
+      "pattern": "赤外線|紫外線|可視光線|ガンマ線",
+      "subjects": [
+        "APPLIED"
+      ],
+      "disciplines": [
+        "physics_optics",
+        "physics_em"
+      ]
+    },
+    {
+      "id": "npo_activity",
+      "label": "非営利活動の公益目的・事業収入と報酬",
+      "pattern": "NPO|特定非営利",
+      "subjects": [
+        "APT"
+      ],
+      "disciplines": [
+        "apt_5"
+      ]
+    },
+    {
+      "id": "work_life_balance",
+      "label": "仕事と生活の調和・多様な働き方",
+      "pattern": "ワーク・ライフ|仕事と生活",
+      "subjects": [
+        "APT"
+      ],
+      "disciplines": [
+        "apt_5"
+      ]
+    },
+    {
+      "id": "secret_management",
+      "label": "秘密情報の接近制御・相互確認と持出し防止",
+      "pattern": "単独作業|秘密情報",
+      "subjects": [
+        "APT"
+      ],
+      "disciplines": [
+        "apt_1",
+        "apt_4"
+      ]
+    },
+    {
+      "id": "international_registration",
+      "label": "教育認定・国内登録・国際称号と業務資格",
+      "pattern": "JABEE|APEC|IPEA",
+      "subjects": [
+        "APT"
+      ],
+      "disciplines": [
+        "apt_0"
+      ]
+    },
+    {
+      "id": "accident_learning",
+      "label": "事故機構・設計運用と個別責任の区別",
+      "pattern": "失敗事例|事故原因|刑事裁判",
+      "subjects": [
+        "APT"
+      ],
+      "disciplines": [
+        "apt_3"
+      ]
+    },
+    {
+      "id": "cell_composition",
+      "label": "細胞組成の分母と代表値",
+      "pattern": "細胞.*組成",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_0"
+      ]
+    },
+    {
+      "id": "membrane_fluidity",
+      "label": "膜脂質の充填と流動性",
+      "pattern": "生体膜|飽和脂肪酸",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_0"
+      ]
+    },
+    {
+      "id": "amino_acids",
+      "label": "アミノ酸の共通骨格・側鎖・立体配置と必須性",
+      "pattern": "アミノ酸",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_0"
+      ]
+    },
+    {
+      "id": "protein_structure",
+      "label": "タンパク質の配列・折畳み・電荷",
+      "pattern": "タンパク質.*構造|等電点",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_0"
+      ]
+    },
+    {
+      "id": "dna_structure",
+      "label": "DNAの相補性・主鎖・複製方向",
+      "pattern": "相補鎖|二重らせん",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_0"
+      ]
+    },
+    {
+      "id": "dna_denaturation",
+      "label": "DNAの融解・再会合と紫外吸収",
+      "pattern": "DNA.*変性",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_0"
+      ]
+    },
+    {
+      "id": "genetic_code",
+      "label": "遺伝暗号の縮重と読み枠",
+      "pattern": "コドン",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_0"
+      ]
+    },
+    {
+      "id": "molecular_biology_techniques",
+      "label": "PCR・制限酵素・電気泳動・DNAライブラリ",
+      "pattern": "PCR|組換えDNA|組換え技術",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_0"
+      ]
+    },
+    {
+      "id": "cloning",
+      "label": "植物の再分化と体細胞核移植",
+      "pattern": "クローン",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_0"
+      ]
+    },
+    {
+      "id": "genetic_mutation",
+      "label": "塩基変化の種類と遺伝子発現への効果",
+      "pattern": "突然変異",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_0"
+      ]
+    },
+    {
+      "id": "enzyme_catalysis",
+      "label": "酵素の基質特異性・障壁・温度条件",
+      "pattern": "酵素|アミラーゼ|リパーゼ",
+      "subjects": [
+        "BASIC"
+      ],
+      "disciplines": [
+        "basic_4_0"
+      ]
+    }
+  ]
+}

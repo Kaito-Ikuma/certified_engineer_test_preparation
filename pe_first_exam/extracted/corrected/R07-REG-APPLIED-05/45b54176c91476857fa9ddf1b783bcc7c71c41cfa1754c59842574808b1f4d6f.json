@@ -1,0 +1,46 @@
+{
+  "stem": "周期Tと波長λで書かれた正弦波の位相速度と角振動数を求める。",
+  "conditions": {
+    "波": "\\(y=A\\sin\\{2\\pi(t/T-x/\\lambda)\\}\\)。A,T,λは正。",
+    "方向": "伝播速度vと角振動数ωの適切な組合せ。",
+    "候補5": "角振動数は2πλT（原画像照合、OCR誤認を採用しない）。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(v=2\\pi/\\lambda,\\ \\omega=\\lambda/T\\)",
+      "verdict": "不適切",
+      "reason": "速度と角振動数の双方の次元が異なる。"
+    },
+    "2": {
+      "value": "\\(v=\\lambda T,\\ \\omega=2\\pi/\\lambda\\)",
+      "verdict": "不適切",
+      "reason": "速度は周期で割る量であり積ではない。角振動数も空間の波数ではない。"
+    },
+    "3": {
+      "value": "\\(v=2\\pi\\lambda/T,\\ \\omega=2\\pi/T\\)",
+      "verdict": "不適切",
+      "reason": "角振動数は正しいが、位相速度に余分な2πがある。"
+    },
+    "4": {
+      "value": "\\(v=\\lambda/T,\\ \\omega=2\\pi/T\\)",
+      "verdict": "最適",
+      "reason": "位相一定の微分と時間位相係数を両方満たす。"
+    },
+    "5": {
+      "value": "\\(v=\\lambda/T,\\ \\omega=2\\pi\\lambda T\\)",
+      "verdict": "不適切",
+      "reason": "速度は正しいが角振動数に波長と周期を掛け、次元が異なる。"
+    }
+  },
+  "figures": "原典の条件・数式・単位・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_002.png"
+  ],
+  "question_id": "R07-REG-APPLIED-05",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "0dae4c8c95d65acf8b162967037295261e351ebd97239a9aa05236776e266e19",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

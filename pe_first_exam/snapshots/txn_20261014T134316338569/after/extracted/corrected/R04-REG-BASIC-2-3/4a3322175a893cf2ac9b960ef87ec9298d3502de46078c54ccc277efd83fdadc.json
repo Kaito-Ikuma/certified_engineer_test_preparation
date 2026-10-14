@@ -1,0 +1,46 @@
+{
+  "stem": "LRUで参照履歴を更新する。",
+  "conditions": {
+    "容量": "3ページ、初期空。",
+    "参照": "2,1,1,2,3,4,1,3,4。",
+    "時間": "ヒットH、外部M。原典例はミスに追加Hを計上しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "7M+2H",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 5M+4H と異なる。"
+    },
+    "2": {
+      "value": "6M+3H",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 5M+4H と異なる。"
+    },
+    "3": {
+      "value": "5M+4H",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "4M+5H",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 5M+4H と異なる。"
+    },
+    "5": {
+      "value": "3M+6H",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 5M+4H と異なる。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/basic/page_006.png"
+  ],
+  "question_id": "R04-REG-BASIC-2-3",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "cbf74b2c58218c5eb6bdcce1cfb6943b3bf6cf7173368e8af89a1682d6b19c04",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

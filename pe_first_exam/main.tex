@@ -1,22 +1,27 @@
 \documentclass[a4paper,10pt,openany]{ltjsbook}
 \usepackage[haranoaji]{luatexja-preset}
 \usepackage[margin=22mm]{geometry}
-\usepackage{amsmath,amssymb,longtable,booktabs,tcolorbox}
+\usepackage{amsmath,amssymb,longtable,booktabs,tcolorbox,needspace}
 \usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
 \addbibresource{references.bib}
+\usepackage{xurl}
 \usepackage[hidelinks]{hyperref}
 \hypersetup{pdftitle={技術士第一次試験 過去問体系化 作業版},pdfauthor={技術士第一次試験対策プロジェクト}}
 \setcounter{tocdepth}{1}
 \setcounter{secnumdepth}{1}
-\title{技術士第一次試験\\過去問体系化\par\large 作業版：登録・分類・一部解説初稿}
+\makeatletter
+\renewcommand{\@pnumwidth}{2.6em}
+\renewcommand{\@tocrmarg}{3.6em}
+\makeatother
+\title{技術士第一次試験\\過去問体系化\par\large Checkpoint 2：全問解説・本文初稿}
 \author{基礎・適性・応用理学／平成23年度〜令和7年度・令和元年度再試験}
-\date{2026年10月8日}
+\date{2026年10月14日}
 \begin{document}
 \maketitle
 \frontmatter
 \chapter*{この作業版の状態}
-全1,270問の原典と公式正答を登録し、分類体系の修正と一部問題の独自解説を進めている。
-未校正・未執筆の項目はその状態を表示する。本文中の解説例もAstra査読前の初稿である。
+全1,270問の原典と公式正答を登録し、三科目の独自解説と共通理論、頻度分析の初稿を収録した。
+条件や解釈の未確定事項は個別に表示する。全ての解説はAstra査読前の初稿である。
 このPDFは完成教材の認定や、全問のOCR・解答の確認を意味しない。
 \tableofcontents
 \mainmatter

@@ -1,0 +1,45 @@
+{
+  "stem": "地下水の鉄沈殿、鉱山酸性水、日本のケイ酸、採水pHと世界河川のイオン源を判定する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+  },
+  "choices": {
+    "1": {
+      "value": "低酸素地下水の湧出に伴い鉄が酸化して茶褐色沈殿。",
+      "verdict": "適切（通常条件）",
+      "reason": "還元的な地下でFe(II)が溶存し、湧出後に酸素を得るとFe(III)の水酸化物等が沈殿する。茶褐色沈殿を地下の酸化状態と同一視しない。"
+    },
+    "2": {
+      "value": "硫化鉱物酸化で硫酸増加・pH低下。",
+      "verdict": "適切（通常条件）",
+      "reason": "硫化鉱物の酸化は硫酸と酸を生成する。炭酸塩等の中和能でpHの結果は変わるが、酸性鉱山排水の典型的原因である。"
+    },
+    "3": {
+      "value": "日本の平均河川は世界より溶存ケイ酸が高い。",
+      "verdict": "適切（通常条件）",
+      "reason": "1970年一次論文の表4は、日本の蒸発残渣74.8mg/L・SiO2比26.84%、世界100mg/L・11.67%であり、濃度へ戻すと約20.1対11.7mg/Lである。古い集計の傾向であって全河川の普遍命題ではない。"
+    },
+    "4": {
+      "value": "現場の非攪拌水は室内放置水よりpH低い傾向。",
+      "verdict": "適切（通常条件）",
+      "reason": "地下水は土壌CO2を多く溶かしている場合があり、採取・攪拌による脱気で炭酸平衡が動きpHが上がる。CO2過飽和という条件を付し、鉄酸化等で逆の変化もあり得るため現場測定を優先する。"
+    },
+    "5": {
+      "value": "世界河川の大半はNaCl主成分・海塩が主供給源。",
+      "verdict": "不適切",
+      "reason": "河川の平均的な主要イオンはCa・HCO3等の岩石風化に依存する。海塩NaClは雨・沿岸・混合で重要だが世界河川の大半を一律に海塩支配とできない。"
+    }
+  },
+  "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_010.png"
+  ],
+  "question_id": "H24-REG-APPLIED-33",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "15e367469e54df1adea636ad16123ff1fe7c6576dd919b992892269b11fa14ea",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

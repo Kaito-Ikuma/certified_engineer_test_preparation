@@ -1,0 +1,45 @@
+{
+  "stem": "圧力の慣用単位をPaへ換算し、最も遠い係数を選ぶ。",
+  "conditions": {
+    "方向": "圧力換算として最も遠い値。",
+    "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(1\\mathrm{atm}=1.01325\\times10^5\\mathrm{Pa}\\)",
+      "verdict": "適切",
+      "reason": "標準気圧の定義係数である。実際の当地大気圧が常にこの値とはしない。"
+    },
+    "2": {
+      "value": "\\(1\\mathrm{bar}=10^5\\mathrm{Pa}\\)",
+      "verdict": "適切",
+      "reason": "barは10^5Paの単位定義である。"
+    },
+    "3": {
+      "value": "\\(1\\mathrm{kgf\\,cm^{-2}}=9.80665\\times10^2\\mathrm{Pa}\\)",
+      "verdict": "不適切",
+      "reason": "kgfは標準重力9.80665m/s²で1kgに働く力9.80665N。cm²=10^-4m²で割ると9.80665e4Pa、原典は100分の1である。"
+    },
+    "4": {
+      "value": "\\(1\\mathrm{mmHg}=133.322\\mathrm{Pa}\\)",
+      "verdict": "適切",
+      "reason": "通常の水銀柱換算は133.322Pa程度、液柱の実測は密度・温度・重力条件を持つ。"
+    },
+    "5": {
+      "value": "\\(1\\mathrm{psi}=6.894757\\times10^3\\mathrm{Pa}\\)",
+      "verdict": "適切",
+      "reason": "psiはlbf/in²で約6894.757Pa。NIST通常換算と一致する有効桁である。"
+    }
+  },
+  "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_005.png"
+  ],
+  "question_id": "R06-REG-APPLIED-16",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "69dafe2c143fceded61f0c5ba94751b9ecb5b29018200c6c0489e2c777be374a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "公共責任と不都合な事実の扱い。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+    "時点": "平成28年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "OXXX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OXOX と異なる。"
+    },
+    "2": {
+      "value": "OXOO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OXOX と異なる。"
+    },
+    "3": {
+      "value": "XXOX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OXOX と異なる。"
+    },
+    "4": {
+      "value": "OOOX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OXOX と異なる。"
+    },
+    "5": {
+      "value": "OXOX",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/aptitude/page_009.png"
+  ],
+  "question_id": "H28-REG-APT-09",
+  "source_file": "sources/H28/aptitude.pdf",
+  "source_page": "9",
+  "source_sha256": "2960d5ff16afaa394186362bb969ee236511012ee2819db45847199af58b073c",
+  "raw_text_sha256": "eeb95de9921033973a8d36d58d3eded1ab9d05521aed4bd82767202f8422a740",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

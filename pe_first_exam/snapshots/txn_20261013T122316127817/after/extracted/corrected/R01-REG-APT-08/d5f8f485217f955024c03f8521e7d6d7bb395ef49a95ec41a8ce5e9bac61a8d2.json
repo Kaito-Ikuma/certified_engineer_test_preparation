@@ -1,0 +1,45 @@
+{
+  "stem": "2014年行動計画のメンテナンスサイクルと施設別条件を読む。",
+  "conditions": {
+    "原典照合": "22原典画像で25問の全五肢・数値・単位・否定を確認。",
+    "対象": "2014年行動計画のメンテナンスサイクルと施設別条件を読む。"
+  },
+  "choices": {
+    "1": {
+      "value": "点検診断・措置・記録のサイクル",
+      "verdict": "代表的条件で適切",
+      "reason": "施設状態を点検・診断し、必要な措置を行い記録して次周期に反映する。"
+    },
+    "2": {
+      "value": "頻度・内容を全国一律",
+      "verdict": "不適切",
+      "reason": "全施設・全分野へ一つの頻度と内容を固定する記述は不適切。施設特性・状態・重要度等を考えて基準を整える。分野内の最低基準や統一した健全度尺度と混同しない。"
+    },
+    "3": {
+      "value": "劣化損傷・構造諸元を継続収集",
+      "verdict": "代表的条件で適切",
+      "reason": "繰返し点検で最新の状態を記録し、過去に欠けた情報も補う。"
+    },
+    "4": {
+      "value": "ロボット・非破壊検査・ICTで高度化",
+      "verdict": "代表的条件で適切",
+      "reason": "診断を支える技術で効率と精度の改善を図る。新技術の適用範囲・限界を確認する。"
+    },
+    "5": {
+      "value": "業務別能力・民間資格の認定仕組み",
+      "verdict": "代表的条件で適切",
+      "reason": "施設分野・業務別に必要能力を明確にし、人材の質と担い手を確保する。資格名の存在だけで全業務を担当可能とはしない。"
+    }
+  },
+  "figures": "図表なしの五肢。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/aptitude/page_009.png"
+  ],
+  "question_id": "R01-REG-APT-08",
+  "source_file": "sources/R01/aptitude.pdf",
+  "source_page": "9",
+  "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+  "raw_text_sha256": "fb914cec7e51f48d4a53d56768c991a5fe779919abd9cad614a4021f77252361",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

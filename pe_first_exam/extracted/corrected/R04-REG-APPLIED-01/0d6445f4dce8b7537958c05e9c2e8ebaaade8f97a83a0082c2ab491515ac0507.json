@@ -1,0 +1,49 @@
+{
+  "stem": "ばね定数100 N/mのばねを0.10 m縮めて質量1.0 kgの物体を放し、自然長での速さを求める。",
+  "conditions": {
+    "spring_N_m": 100,
+    "mass_kg": 1.0,
+    "compression_m": 0.1,
+    "initial_speed": 0,
+    "surface": "smooth horizontal",
+    "air_resistance": "none"
+  },
+  "choices": {
+    "1": {
+      "value": "0.1 m/s",
+      "verdict": "不採用",
+      "reason": "指定条件によるエネルギー0.5 Jを満たす速度ではない。"
+    },
+    "2": {
+      "value": "0.5 m/s",
+      "verdict": "不採用",
+      "reason": "運動エネルギー0.125 Jで、初期弾性エネルギー0.5 Jに足りない。"
+    },
+    "3": {
+      "value": "1.0 m/s",
+      "verdict": "採用",
+      "reason": "運動エネルギー0.5 Jで初期弾性エネルギーに一致する。"
+    },
+    "4": {
+      "value": "5.0 m/s",
+      "verdict": "不採用",
+      "reason": "初期エネルギーを超える。"
+    },
+    "5": {
+      "value": "10 m/s",
+      "verdict": "不採用",
+      "reason": "初期エネルギーを超える。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_001.png"
+  ],
+  "question_id": "R04-REG-APPLIED-01",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "2323056f65ecb958a0aaa6bc4d4be472bb19250848251866ca7d3beda6e6768d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

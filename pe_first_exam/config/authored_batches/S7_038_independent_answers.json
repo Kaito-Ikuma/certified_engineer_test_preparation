@@ -1,0 +1,98 @@
+{
+  "time": "2026-10-12T08:45:28+09:00",
+  "official_consulted": false,
+  "original_images_reviewed": 13,
+  "records": [
+    {
+      "question_id": "H24-REG-APT-03",
+      "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+      "source_page": "2",
+      "answer_initial": "2",
+      "reason": "ア・イ・ウは○、派遣を一律に除外するエは×。"
+    },
+    {
+      "question_id": "H25-REG-APT-03",
+      "source_sha256": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+      "source_page": "4",
+      "answer_initial": "4",
+      "reason": "専門知識による優位性を除外するイだけ×。アウエは○。"
+    },
+    {
+      "question_id": "H25-REG-APT-04",
+      "source_sha256": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+      "source_page": "5",
+      "answer_initial": "3",
+      "reason": "労働三法、36協定、産業医、当時の19業務の裁量労働はすべて○。技術士業務は当時対象。"
+    },
+    {
+      "question_id": "H26-REG-APT-05",
+      "source_sha256": "5691e940fce3cbf9423bc99a96803c1c6273563931b76b91bdb9f2b67e6233d3",
+      "source_page": "5",
+      "answer_initial": "4",
+      "reason": "適正範囲内でも個人の不満だけでパワハラとする4が不適切。"
+    },
+    {
+      "question_id": "H27-REG-APT-11",
+      "source_sha256": "2965cecde9e4c31c06a94192bf7a750346fbf85d07d37943d58a3fa15d15ebeb",
+      "source_page": "11",
+      "answer_initial": "5",
+      "reason": "意思表示必須と専門知識除外が×、適正指導と行為者範囲は○。×○○×。"
+    },
+    {
+      "question_id": "H29-REG-APT-04",
+      "source_sha256": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+      "source_page": "4",
+      "answer_initial": "5",
+      "reason": "アとカのみ×。イウエオキの5個は適切。"
+    },
+    {
+      "question_id": "H29-REG-APT-05",
+      "source_sha256": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+      "source_page": "5",
+      "answer_initial": "3",
+      "reason": "命令学習を労働時間除外するアと管理監督者の深夜年休除外イは×、ウエオ○。"
+    },
+    {
+      "question_id": "H30-REG-APT-12",
+      "source_sha256": "9b92cd3549fc1ad21636a544978f1385f63667ff6ac0112f81e553cf2ee4b1f5",
+      "source_page": "12",
+      "answer_initial": "1",
+      "reason": "十項目すべて通常の業務改善策なので不適切0。ただし必ず結論という全称は留保。"
+    },
+    {
+      "question_id": "R01-REG-APT-12",
+      "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+      "source_page": "13",
+      "answer_initial": "1",
+      "reason": "同性セクハラ○、努力目標・産休雇用限定・個別措置不可・産前必須は×。"
+    },
+    {
+      "question_id": "R02-REG-APT-13",
+      "source_sha256": "d0ca26aaeeba6d436d8ffa77a759056e7a194c0ac9fad61de2c84392999050bb",
+      "source_page": "13",
+      "answer_initial": "4",
+      "reason": "場所明示○、把握責務なし×、自由中抜け○、指揮命令下移動作業○。"
+    },
+    {
+      "question_id": "R04-REG-APT-05",
+      "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+      "source_page": "4",
+      "answer_initial": "4",
+      "reason": "アイウエオカキは○×○○×○×で適切4個。"
+    },
+    {
+      "question_id": "R06-REG-APT-10",
+      "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+      "source_page": "10",
+      "answer_initial": "3",
+      "reason": "アイウエオは×○○○×。"
+    },
+    {
+      "question_id": "R07-REG-APT-15",
+      "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+      "source_page": "15",
+      "answer_initial": "2",
+      "reason": "年5日取得○、上限緩和×、10時間当たり1日代休×、フレックス清算延長○。"
+    }
+  ]
+}

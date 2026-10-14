@@ -1,0 +1,25 @@
+{
+  "status": "committed",
+  "time": "2026-10-14T21:32:21+09:00",
+  "paths": [
+    "generated/questions/basic/02_information_logic.tex",
+    "generated/questions/basic/03_analysis.tex",
+    "generated/questions/aptitude/02_engineering_ethics.tex",
+    "generated/questions/applied_science/physics_chemistry/10_analytical_chemistry.tex",
+    "generated/questions/applied_science/physics_chemistry/13_material_properties.tex"
+  ],
+  "existed": {
+    "generated/questions/basic/02_information_logic.tex": true,
+    "generated/questions/basic/03_analysis.tex": true,
+    "generated/questions/aptitude/02_engineering_ethics.tex": true,
+    "generated/questions/applied_science/physics_chemistry/10_analytical_chemistry.tex": true,
+    "generated/questions/applied_science/physics_chemistry/13_material_properties.tex": true
+  },
+  "sha256": {
+    "generated/questions/basic/02_information_logic.tex": "3422cb5932620915f504d2475a45ada642f6b026452d15abe12c873a48d4ac32",
+    "generated/questions/basic/03_analysis.tex": "06545818b3b72657915b952d933faad9256d5b86dd6cedd503837bdd923e9783",
+    "generated/questions/aptitude/02_engineering_ethics.tex": "b4d2f57fff791960e90c5fa400ee1d92c497438b506471face3b2c53971688e7",
+    "generated/questions/applied_science/physics_chemistry/10_analytical_chemistry.tex": "cdc14c040e34fe8033e0d8397f1305935ebe0fe15dd89513f10c83ce436abafc",
+    "generated/questions/applied_science/physics_chemistry/13_material_properties.tex": "7bdbb19e7f785fc16c936b35210c3c79576c242b0a7edf473149ade5f382317c"
+  }
+}

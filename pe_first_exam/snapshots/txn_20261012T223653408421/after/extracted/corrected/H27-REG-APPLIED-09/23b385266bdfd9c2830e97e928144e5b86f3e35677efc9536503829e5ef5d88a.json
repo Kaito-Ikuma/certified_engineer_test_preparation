@@ -1,0 +1,45 @@
+{
+  "stem": "NaClの配位数と硬球近似の距離を区別する。",
+  "conditions": {
+    "判断対象": "NaClの配位数と硬球近似の距離を区別する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "単位格子は立方体",
+      "verdict": "選ばない候補",
+      "reason": "慣用胞は立方。"
+    },
+    "2": {
+      "value": "静電引力による結晶",
+      "verdict": "選ばない候補",
+      "reason": "陽陰イオンの静電相互作用。"
+    },
+    "3": {
+      "value": "最近接Clは4個",
+      "verdict": "選ぶ候補",
+      "reason": "Naの周囲のClは上下左右前後の6個。"
+    },
+    "4": {
+      "value": "隣接Na/Clは全て接触",
+      "verdict": "選ばない候補",
+      "reason": "イオン半径による硬球近似の記述で、電子雲の厳密境界ではない。"
+    },
+    "5": {
+      "value": "最近接Na-Naは√2(rNa+rCl)",
+      "verdict": "選ばない候補",
+      "reason": "Na-Cl距離a/2=rNa+rClとNa-Na=a/√2から導く近似式。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "全隣接イオンが接するという記述はイオン半径の硬球近似。半径の定義・実結晶条件は原典で未指定。",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_004.png"
+  ],
+  "question_id": "H27-REG-APPLIED-09",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "447fbe95a421b20b78adde57529efaf91b6f8408fafdcb9ac7294da9464a4721",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

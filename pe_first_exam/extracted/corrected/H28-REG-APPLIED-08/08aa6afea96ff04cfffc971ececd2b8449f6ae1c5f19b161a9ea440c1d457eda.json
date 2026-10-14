@@ -1,0 +1,46 @@
+{
+  "stem": "高温・低温の2熱源で作動する熱機関の最大効率を、機関名と式の組合せで選ぶ。",
+  "conditions": {
+    "温度": "絶対温度\\(T_H>T_L>0\\)。",
+    "効率": "外部へ行う仕事／高温熱源から吸収する熱。",
+    "空欄": "アは最大効率を与える熱機関名、イはその効率。"
+  },
+  "choices": {
+    "1": {
+      "value": "カルノー／\\((T_H-T_L)/(T_H+T_L)\\)",
+      "verdict": "条件に不一致",
+      "reason": "機関名は合うが効率の分母は吸熱源の絶対温度であり、温度の和ではない。"
+    },
+    "2": {
+      "value": "フェルマー／\\((T_H-T_L)/(T_H+T_L)\\)",
+      "verdict": "条件に不一致",
+      "reason": "機関名と分母の両方が違う。"
+    },
+    "3": {
+      "value": "カルノー／\\(T_H/(T_H+T_L)\\)",
+      "verdict": "条件に不一致",
+      "reason": "低温源が高温源に近づくと効率は0へ向かうべきであり、この式はその条件を満たさない。"
+    },
+    "4": {
+      "value": "フェルマー／\\((T_H-T_L)/T_H\\)",
+      "verdict": "条件に不一致",
+      "reason": "効率式は合うが機関名が違う。"
+    },
+    "5": {
+      "value": "カルノー／\\((T_H-T_L)/T_H\\)",
+      "verdict": "条件に一致",
+      "reason": "可逆なカルノー機関とその効率に一致する。"
+    }
+  },
+  "figures": "正誤方向、全条件・数値・単位、候補5肢を原典画像で確認。図なし。組合せ問題では表の全欄を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_003.png"
+  ],
+  "question_id": "H28-REG-APPLIED-08",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "229bdc0686c2b5551fc30d14d7feb20a06395b80361e37ab03f326587eb6a153",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

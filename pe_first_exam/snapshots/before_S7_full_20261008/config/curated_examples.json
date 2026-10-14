@@ -1,0 +1,197 @@
+{
+  "version": "1.0-review1",
+  "examples": [
+    {
+      "question_id": "H26-REG-BASIC-2-4",
+      "stem": "後入れ先出しのスタックに、空の状態から PUSH 1, PUSH 2, PUSH 3, POP, PUSH 4, PUSH 5, POP, POP を行う。最後に取り出される整数を選ぶ。",
+      "conditions": {
+        "initial_stack": "empty",
+        "operations": [
+          "PUSH 1",
+          "PUSH 2",
+          "PUSH 3",
+          "POP",
+          "PUSH 4",
+          "PUSH 5",
+          "POP",
+          "POP"
+        ]
+      },
+      "choices": {
+        "1": "1",
+        "2": "2",
+        "3": "3",
+        "4": "4",
+        "5": "5"
+      },
+      "figures": [],
+      "summary": "空スタックへ指定された8操作を実行し、最後のPOPの値を求める。",
+      "required_knowledge": "LIFO、PUSH/POP、状態追跡",
+      "solution": "スタックを底から上へ記録する。操作後は [1]→[1,2]→[1,2,3]→[1,2]→[1,2,4]→[1,2,4,5]→[1,2,4]→[1,2]。最後のPOPで取り出す値は4なので選択肢④。",
+      "wrong_choices": "①1と②2は最後のPOP後も残る。③3は4番目の操作で、⑤5は7番目の操作で取り出される。途中のPOPと最後のPOPを混同しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "LIFOという新規情報概念を一つ理解し、短い操作列を直接追跡する。"
+      },
+      "ambiguity": "",
+      "citations": [],
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f"
+    },
+    {
+      "question_id": "H24-REG-BASIC-3-2",
+      "stem": "同じばね定数kのばね2本と同じ質量mの質点からなるa,b,cの系について、最小の固有振動数をもつものを選ぶ。図のaは並列ばね、bは直列ばね、cは左右の固定壁に一本ずつのばねを接続した質点である。",
+      "conditions": {
+        "spring_constants": "k,k",
+        "mass": "m",
+        "a": "two parallel springs between left wall and mass",
+        "b": "two springs in series between left wall and mass",
+        "c": "mass between two fixed walls, one spring on each side"
+      },
+      "choices": {
+        "1": "a",
+        "2": "b",
+        "3": "c",
+        "4": "aとb",
+        "5": "bとc"
+      },
+      "figures": [
+        {
+          "page": 8,
+          "description": "a並列、b直列、c左右固定壁。原典図の接続を確認。"
+        }
+      ],
+      "summary": "ばね接続から有効剛性を求め、3系の固有振動数を比較する。",
+      "required_knowledge": "ばねの直列・並列合成、微小変位の復元力、固有角振動数",
+      "solution": "aでは復元力が2kxなので有効剛性2k。bでは変形量が加算され1/keff=1/k+1/k、よってkeff=k/2。cも左右の復元力が同方向に合計され2kx。質量が同じため固有角振動数はsqrt(keff/m)で比較でき、bのみ最小。正答②。",
+      "wrong_choices": "①aと③cはいずれも有効剛性2k。④は最小でないaを、⑤は最小でないcを含む。cの左右の力は打ち消し合わず、変位に対して同じ復元方向に働く。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "既知の力学だが、図の接続を読んで有効剛性を比較する二段の判断がある。"
+      },
+      "ambiguity": "",
+      "citations": [],
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-16",
+      "stem": "手順I〜IVで、①〜⑤の陽イオンを含む混合水溶液の分析を行った。手順IVでろ別されるイオンを選ぶ。",
+      "conditions": {
+        "I": "塩酸を滴下し沈殿をろ別",
+        "II": "Iのろ液中でチオアセトアミドCH3CSNH2の加水分解を行い、生成した沈殿をろ別",
+        "III": "IIのろ液中へアンモニア水を滴下し、生成した沈殿をろ別",
+        "IV": "IIIのろ液中へ硫化水素を滴下し、生成した沈殿をろ別"
+      },
+      "choices": {
+        "1": "Na+",
+        "2": "Ag+",
+        "3": "Cu2+",
+        "4": "Zn2+",
+        "5": "Fe3+"
+      },
+      "figures": [],
+      "summary": "塩化物、酸性下の硫化物、水酸化物を順に除いたろ液から、最後に硫化物として分離する陽イオンを特定する。",
+      "required_knowledge": "系統的定性分析、溶解度積、硫化水素の酸解離、pHと沈殿選択性",
+      "solution": "手順IでAg+をAgClとして除く。手順IIの酸性条件でCu2+が難溶性の硫化物となる。手順IIIでFe3+を水酸化物として除く。アンモニア性のろ液に硫化水素を加える手順IVではZn2+をZnSとして分離するので④。Na+はこれらの分離後も水溶液に残る。これは出題された古典的系統分析の条件に基づく説明で、実験条件一般への無条件な適用はしない。",
+      "wrong_choices": "①Na+はこの操作列での沈殿対象でない。②Ag+はI、③Cu2+はII、⑤Fe3+はIIIで先に除かれる。IとIVの取り違えは正答を変えるため、原典のローマ数字を必ず確認する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻者には新規の系統分析知識が必要で、既に除かれたイオンを段階的に追跡する。"
+      },
+      "ambiguity": "",
+      "citations": [
+        "qualitative_stanford"
+      ],
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-08",
+      "stem": "金属の強化方法に関する5つの記述から、最も不適切なものを選ぶ。",
+      "conditions": {},
+      "choices": {
+        "1": "加工硬化とは、塑性変形領域でひずみを増加させると、変形に要する応力が増加し硬化することである。",
+        "2": "溶媒原子の格子に溶質原子が均一に混じる固溶体合金は純金属より硬化する。これを固溶強化という。",
+        "3": "合金元素の固溶限の温度変化を利用した強化法を析出強化という。",
+        "4": "結晶粒微細化により降伏強さを高め、強じん化できる。",
+        "5": "焼入れとは鋼をオーステナイト化したのち臨界冷却速度以上で冷却して生じるバウシンガー変態を利用した硬化法である。"
+      },
+      "figures": [],
+      "summary": "金属の強化機構を識別し、焼入れに関する変態名の誤りを見抜く。",
+      "required_knowledge": "転位、加工硬化、固溶・析出・粒界強化、マルテンサイト変態",
+      "solution": "鋼の焼入れ硬化で中心となるのはマルテンサイト変態である。⑤の「バウシンガー変態」は原典の誤答として保存し、解説中で正しい用語と区別する。したがって公式正答は⑤。",
+      "wrong_choices": "①は塑性加工による硬化、②は固溶による強化、③は温度依存の固溶限を利用する析出強化、④は結晶粒微細化の効果を述べる。転位運動を妨げる強化と、相変態を使う焼入れを対応付けて整理する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "式計算はないが材料分野の複数の専門語と機構の対応を知る必要がある。"
+      },
+      "ambiguity": "",
+      "citations": [
+        "martensite_cambridge"
+      ],
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4"
+    },
+    {
+      "question_id": "H23-REG-APT-11",
+      "stem": "ISO26000の制定と社会的責任に関わる5つの記述から不適切なものを選ぶ。",
+      "conditions": {
+        "standard": "ISO26000",
+        "exam_reference_year": "2011"
+      },
+      "choices": {
+        "1": "政府を除くすべての種類の組織を対象に制定されたとする記述。",
+        "2": "政府、産業界、労働者、消費者、NPO等が日本の検討へ参加したとする記述。",
+        "3": "ISO9000やISO14000と同様に要求事項を示した認証規格で、認証機関の認証により国際的信用を得られるとする記述。",
+        "4": "7中核主題を列挙し、説明責任、透明性、倫理的行動、利害尊重、法の支配、国際行動規範尊重を原則として列挙する記述。",
+        "5": "国連グローバル・コンパクトとの関係と国連との連携を述べる記述。"
+      },
+      "figures": [],
+      "summary": "社会的責任の手引きと認証規格の区別を問う。公式正答③を保持し、他の記述の解釈上の疑義を別に残す。",
+      "required_knowledge": "社会的責任、要求事項とガイダンス、認証の適用範囲",
+      "solution": "ISO26000は社会的責任に関するガイダンスであり、認証のための要求事項を規定した規格ではない。③がこの性格を誤っているため公式正答は③。ISOの一次資料でも認証用途ではないことを確認した。",
+      "wrong_choices": "他肢をすべて無条件に正しいと説明しない。①の政府除外の表現、④の原則の列挙範囲には一次資料との照合を要する疑義が残る。②⑤の歴史的な参加・連携の詳細も当時資料の確認を後工程に残す。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "ISO規格の性格という新規知識に加え、出題表現と一次資料の区別が必要。正答理由と他肢の疑義は別評価。"
+      },
+      "ambiguity": "①政府除外、④原則列挙、②⑤歴史的経緯を要再確認。要旨のみ校正済みで全文の校正完了ではない。",
+      "citations": [
+        "iso26000"
+      ],
+      "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0"
+    }
+  ]
+}

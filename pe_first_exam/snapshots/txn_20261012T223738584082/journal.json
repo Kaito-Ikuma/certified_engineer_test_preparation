@@ -1,0 +1,31 @@
+{
+  "status": "committed",
+  "time": "2026-10-12T22:37:38+09:00",
+  "paths": [
+    "generated/questions/applied_science/physics_chemistry/05_optics.tex",
+    "generated/questions/applied_science/physics_chemistry/06_modern_physics.tex",
+    "generated/questions/applied_science/physics_chemistry/07_atomic_molecular.tex",
+    "generated/questions/applied_science/physics_chemistry/08_physical_chemistry.tex",
+    "generated/questions/applied_science/geophysics_geochemistry/09_isotope_geochemistry.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/physics_chemistry/05_optics.tex": true,
+    "generated/questions/applied_science/physics_chemistry/06_modern_physics.tex": true,
+    "generated/questions/applied_science/physics_chemistry/07_atomic_molecular.tex": true,
+    "generated/questions/applied_science/physics_chemistry/08_physical_chemistry.tex": true,
+    "generated/questions/applied_science/geophysics_geochemistry/09_isotope_geochemistry.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/physics_chemistry/05_optics.tex": "636ce19c24c77fb31035d7a0ef123931f3c79111f7ad79e88f63ca4f8f90b7c5",
+    "generated/questions/applied_science/physics_chemistry/06_modern_physics.tex": "0f781baa15d3c7280fc8b1e2fa0c862d22f12ffe561493401b92c959e5398428",
+    "generated/questions/applied_science/physics_chemistry/07_atomic_molecular.tex": "5420ae38c4542773a2d0a4d117f60563dc1ed40ab6ef593c1d90dc2e0cb95d61",
+    "generated/questions/applied_science/physics_chemistry/08_physical_chemistry.tex": "65573fa23b8c287a5273c6abcc1f0ac4a3827df6c0d49e673601a6c2abcf5a4f",
+    "generated/questions/applied_science/geophysics_geochemistry/09_isotope_geochemistry.tex": "c492fa44335bfd181d1045593041e1e947e9b9e2321e393a9347c125e0ff91fa",
+    "generated/audit_summary.tex": "982301a5f9e9bc68570abf748f8e68d7ffab216f4fd52f7600667f69c85f92e6",
+    "generated/frequency_tables.tex": "04fc9fe9f42b40b28c71eab61e5f31fee9e7ec5cec73d30786217a4c7f70912c"
+  }
+}

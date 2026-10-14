@@ -1,0 +1,145 @@
+{
+  "reference_date": "2026-10-12",
+  "references": [
+    {
+      "key": "inorganic_noble_ref",
+      "author": "OpenStax",
+      "title": "Chemistry 2e 18.12: Noble Gases",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-12-occurrence-preparation-and-properties-of-the-noble-gases",
+      "scope": "本文の単体・沸点・低圧放電・Xe化合物を確認。"
+    },
+    {
+      "key": "inorganic_halogen_ref",
+      "author": "OpenStax",
+      "title": "Chemistry 2e 18.11: Halogens",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-11-occurrence-preparation-and-properties-of-halogens",
+      "scope": "本文の二原子単体・状態・反応性と水溶性を確認。"
+    },
+    {
+      "key": "inorganic_hydrogen_ref",
+      "author": "OpenStax",
+      "title": "Chemistry 2e 18.5: Hydrogen",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-5-occurrence-preparation-and-compounds-of-hydrogen",
+      "scope": "本文の金属とのH負イオンと非金属との正の酸化状態を確認。全水素化物の条件は未照合。"
+    },
+    {
+      "key": "inorganic_periodic_ref",
+      "author": "OpenStax",
+      "title": "Chemistry 2e 18.1: Periodicity",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-1-periodicity",
+      "scope": "周期表配置の本文を確認。本文の12族の独自取扱いをCu/Znのブロック判定には用いない。"
+    },
+    {
+      "key": "inorganic_alkali",
+      "author": "Royal Society of Chemistry",
+      "title": "Periodic Table: Alkali Metal Data",
+      "url": "https://periodic-table.rsc.org/element/3/lithium",
+      "scope": "Li融点180.50℃、Cs28.5℃を確認。Na/K/Rbの元素ページも閲覧。供給統計等は使用しない。"
+    },
+    {
+      "key": "inorganic_al_ref",
+      "author": "OpenStax",
+      "title": "Chemistry 2e 18.2: Representative Metals",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-2-occurrence-and-preparation-of-the-representative-metals",
+      "scope": "本文のボーキサイト・アルミン酸・氷晶石電解工程を確認。全条件不動態は未確定。"
+    },
+    {
+      "key": "inorganic_metalloid_ref",
+      "author": "OpenStax",
+      "title": "Chemistry 2e 18.3: Metalloids",
+      "url": "https://openstax.org/books/chemistry-2e/pages/18-3-structure-and-general-properties-of-the-metalloids",
+      "scope": "本文のSiCl4構造とSiO2のHF反応・ホウ素化合物を確認。全同素体を一律に扱わない。"
+    },
+    {
+      "key": "inorganic_zinc_ref",
+      "author": "Cambridge International Examinations",
+      "title": "November 2013 Chemistry 9701 Paper 33: Qualitative Analysis Notes",
+      "url": "https://www.cambridgeinternational.org/Images/195974-november-2013-question-paper-33.pdf",
+      "scope": "公式試験付表の公開検索収録でZn2+とNH3の白色沈殿・過剰溶解を確認。全文読了ではない。"
+    },
+    {
+      "key": "inorganic_zeolite",
+      "author": "USGS",
+      "title": "2019 Minerals Yearbook: Zeolites",
+      "url": "https://pubs.usgs.gov/myb/vol1/2019/myb1-2019-zeolites.pdf",
+      "scope": "公開検索収録の交換可能陽イオンを確認。現在の生産量を過去年へ置換しない。"
+    },
+    {
+      "key": "inorganic_sic",
+      "author": "OpenStax",
+      "title": "Chemistry 2e 10.5: The Solid State of Matter",
+      "url": "https://openstax.org/books/chemistry-2e/pages/10-5-the-solid-state-of-matter",
+      "scope": "公開検索本文のSiC共有結合網を確認。"
+    },
+    {
+      "key": "inorganic_sib6",
+      "author": "NIMS Materials Data Repository",
+      "title": "Reactive Consolidation of Hafnium Diboride with Silicon Hexaboride",
+      "url": "https://mdr.nims.go.jp/datasets/d78cb88f-09b7-4004-a193-837c7886fd97?locale=en",
+      "scope": "研究データ公開要旨のSiB6存在を確認。過去問当時の全反応経路を確認したとはしない。"
+    },
+    {
+      "key": "inorganic_hf_etch",
+      "author": "US EPA",
+      "title": "Semiconductor Manufacturing: Air Emissions",
+      "url": "https://www.epa.gov/sites/default/files/2015-08/documents/ii06.pdf",
+      "scope": "公開検索本文でHF等の湿式エッチングによる膜除去を確認。全製造条件は未照合。"
+    },
+    {
+      "key": "inorganic_ptfe",
+      "author": "Original research authors",
+      "title": "Melting Kinetics of Nascent Poly(tetrafluoroethylene) Powder",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7240677/",
+      "scope": "原研究の公開検索収録で新生材約345℃と再結晶材約327℃を確認。全グレード製法の読了ではない。"
+    },
+    {
+      "key": "inorganic_heme",
+      "author": "MIT OpenCourseWare",
+      "title": "5.112 Principles of Chemical Science: December 12 Lecture",
+      "url": "https://ocw.mit.edu/courses/5-112-principles-of-chemical-science-fall-2005/56be94d7daca180659c5b38d3bc483f7_574875.pdf",
+      "scope": "PDFの五配位と酸素結合後の六配位の説明を確認。完全理想角度を主張しない。"
+    },
+    {
+      "key": "inorganic_blueled",
+      "author": "Nobel Foundation",
+      "title": "The Nobel Prize in Physics 2014: Popular Information",
+      "url": "https://www.nobelprize.org/uploads/2018/06/popular-physicsprize2014.pdf",
+      "scope": "公開検索本文のGaNによる青色LEDを確認。"
+    },
+    {
+      "key": "inorganic_rareuses",
+      "author": "JOGMEC",
+      "title": "レアメタル需要と用途の説明資料",
+      "url": "https://mric.jogmec.go.jp/kouenkai_index/2008/briefing_080227_3.pdf",
+      "scope": "2008公開資料の検索収録でITO需要を確認。他の全用途・全方式の不可欠性は未確定。"
+    },
+    {
+      "key": "inorganic_searesources",
+      "author": "資源エネルギー庁",
+      "title": "エネルギー白書2017: 資源開発",
+      "url": "https://www.enecho.meti.go.jp/about/whitepaper/2017html/3-1-3.html",
+      "scope": "公開検索本文の熱水鉱床とレアアース泥を確認。Co調査の国際海域記述をEEZの証明へ転用しない。"
+    },
+    {
+      "key": "inorganic_waterchem",
+      "author": "USGS",
+      "title": "Study and Interpretation of the Chemical Characteristics of Natural Water",
+      "url": "https://www.usgs.gov/publications/study-and-interpretation-chemical-characteristics-natural-water-0",
+      "scope": "1970報告公開要旨の水質の地質・気候・生物・人為作用を確認。"
+    },
+    {
+      "key": "inorganic_hydro_ref",
+      "author": "USGS",
+      "title": "Water Movement Through Thick Unsaturated Zones, Southwestern Kansas, 2000–2001",
+      "url": "https://pubs.usgs.gov/wri/wrir03-4171/",
+      "scope": "公開検索本文の含水量・間隙率・Darcy動水勾配を確認。直接HTMLは閲覧エラー、全文読了ではない。"
+    },
+    {
+      "key": "inorganic_waterbudget",
+      "author": "USGS",
+      "title": "Water Budgets: Foundations for Effective Water-Resources and Environmental Management",
+      "url": "https://water.usgs.gov/watercensus/AdHocComm/Background/WaterBudgets-FoundationsforEffectiveWater-ResourcesandEnvironmentalManagement.pdf",
+      "scope": "公開検索収録で大気約10日と河川16–26日の例を確認。原典約8日を改変しない。"
+    }
+  ]
+}

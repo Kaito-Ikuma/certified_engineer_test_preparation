@@ -1,0 +1,44 @@
+{
+  "stem": "標準反応ギブズエネルギーの関係式。",
+  "conditions": {
+    "指定": "標準反応エンタルピーと標準反応エントロピーを用い、Tは絶対温度。"
+  },
+  "choices": {
+    "1": {
+      "value": "H−S",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 H−TS と異なる。"
+    },
+    "2": {
+      "value": "H−TS",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "3": {
+      "value": "H−T²S",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 H−TS と異なる。"
+    },
+    "4": {
+      "value": "TH−S",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 H−TS と異なる。"
+    },
+    "5": {
+      "value": "T²H−S",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 H−TS と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_014.png"
+  ],
+  "question_id": "R01-RET-BASIC-4-3",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "9e963c1b0618e5d8d6370d2d0aea8482b5d3f9abefa9207b3c5603e661a0bd84",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

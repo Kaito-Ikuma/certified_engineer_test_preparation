@@ -1,0 +1,114 @@
+{
+  "checked_at": "2026-10-12T18:09:24+09:00",
+  "sources": [
+    {
+      "key": "scj_code2006",
+      "url": "https://www.scj.go.jp/ja/info/kohyo/pdf/kohyo-20-s3.pdf",
+      "checked_claim": "取得PDFの印刷3--4頁、正直・相互評価・中立説明・改ざん禁止・利益相反を確認。2013年版とは区別。"
+    },
+    {
+      "key": "privacy_general",
+      "url": "https://www.ppc.go.jp/personalinfo/legal/guidelines_tsusoku/",
+      "checked_claim": "定義・本人同意・政令第1条の七生体特徴の該当箇所を確認。現行条番号を2011--2021年へ遡及しない。"
+    },
+    {
+      "key": "privacy_consent2017",
+      "url": "https://www.ppc.go.jp/files/pdf/290210_siryou3-2.pdf",
+      "checked_claim": "検索収録Q1-57の黙示同意は個別具体判断という説明を確認。カード照会の個別事例の直接資料ではない。"
+    },
+    {
+      "key": "privacy_consent_current",
+      "url": "https://www.ppc.go.jp/all_faq_index/faq1-q1-61/",
+      "checked_claim": "公開短文全文を確認。明示に限られず黙示同意は個別具体の判断である。調査依頼だけで第三者提供への同意を推定しない。"
+    },
+    {
+      "key": "privacy_delivery",
+      "url": "https://www.ppc.go.jp/personalinfo/faq/APPI_QA/",
+      "checked_claim": "Q7-34--35の宛名情報の委託と封入物の中身の取扱いの違いを確認。安全管理義務は残る。現行資料で当時版全文照合の代わりとはしない。"
+    },
+    {
+      "key": "privacy_small2017",
+      "url": "https://www.pref.kochi.lg.jp/doc/2017090700114/",
+      "checked_claim": "2017年9月21日告知本文を確認。2017年5月30日施行で5000人以下の適用除外を廃止。旧制度の複数DB計数の全文までは確認していない。"
+    },
+    {
+      "key": "privacy_evacuation2013",
+      "url": "https://www.bousai.go.jp/taisaku/hisaisyagyousei/youengosya/",
+      "checked_claim": "2013年改正と2013年8月指針の成立を確認。名簿作成と提供を分離。"
+    },
+    {
+      "key": "privacy_evacuation_scope",
+      "url": "https://www.bousai.go.jp/taisaku/hisaisyagyousei/pdf/sanko2-02.pdf",
+      "checked_claim": "検索収録の発災又は発生のおそれと必要範囲、平時同意原則を確認。2020年度の集計を2014年の値として採用しない。"
+    },
+    {
+      "key": "export_overview",
+      "url": "https://www.meti.go.jp/policy/anpo/gaiyou.html",
+      "checked_claim": "官庁の制度目的と外為法に基づく管理を確認。現在ページを旧法の仕様そのものへ置換しない。"
+    },
+    {
+      "key": "export_cases",
+      "url": "https://www.meti.go.jp/policy/anpo/daigaku/jireishu.pdf",
+      "checked_claim": "検索収録19頁のロボット内蔵センサーの部分品特例と学内部署の確認を読んだ。PDF直接取得は403、全文読了ではない。"
+    },
+    {
+      "key": "export_scope2022",
+      "url": "https://www.meti.go.jp/policy/anpo/law_document/minashi/meikakukanitsuite.pdf",
+      "checked_claim": "検索収録の外国為替令17条と公知・基礎科学例外を確認。直接取得403。2022年明確化の資料を2021年の規則へ遡及しない。"
+    },
+    {
+      "key": "export_current_updates",
+      "url": "https://www.meti.go.jp/policy/anpo/index.html",
+      "checked_claim": "2025年10月9日施行の補完的規制見直しの案内を確認。旧問題の対象地域や条件へ現行版を補わない。"
+    },
+    {
+      "key": "ai_use2019",
+      "url": "https://www.soumu.go.jp/main_content/000637097.pdf",
+      "checked_claim": "取得PDF印刷5--6・9--10頁の対象者・十原則・目的文脈に応じた選定・ソフトローを確認。透明性は全ソース公開義務ではない。"
+    },
+    {
+      "key": "ai_society2017",
+      "url": "https://www8.cao.go.jp/cstp/tyousakai/ai/summary/aisociety_jp.pdf",
+      "checked_claim": "取得PDF印刷11・13--15・17--18頁を実画像で確認。六論点、感情誘導、価値多様性、個人情報と萎縮、技術デバイドを確認。文字層の化けを画像で補った。"
+    },
+    {
+      "key": "mext_ai_whitepaper2024",
+      "url": "https://www.mext.go.jp/b_menu/hakusho/html/hpaa202401/1421221_00002.html",
+      "checked_claim": "HTMLの対象本文を確認。知識集約・高付加価値化・医療・対話型の四空欄に対応する。2024年記述を現在の予測へ拡張しない。"
+    },
+    {
+      "key": "jaist_knowledge",
+      "url": "https://www.jaist.ac.jp/ks/labs/umemoto/sake_km.html",
+      "checked_claim": "大学研究室の著者による本文2--3節を確認。暗黙知と形式知・SECIの相互作用の説明。"
+    },
+    {
+      "key": "iso27000_2009",
+      "url": "https://www.iso.org/standard/41933.html",
+      "checked_claim": "初版2009年5月という公開書誌を確認。規格全条項は未取得。現在の公開書誌は27000:2026後継版を案内する。"
+    },
+    {
+      "key": "singapore2010",
+      "url": "https://www.jsps.go.jp/file/storage/general/j-kousei/data/singapore_statement_JP.pdf",
+      "checked_claim": "2頁の4原則と責任を確認。説明責任・守秘・利益相反開示を含む。規制法令ではない。"
+    }
+  ],
+  "local_sources": [
+    {
+      "path": "extracted/reference_checks/S7_043/ai2017.pdf",
+      "sha256": "63ed0bcf90110dbf26a1f720a8df061ad31dbdabd95c810b37aa8bea8fff27b8"
+    },
+    {
+      "path": "extracted/reference_checks/S7_043/scj2006.pdf",
+      "sha256": "2603ce03b2404a9828ef5a39f78bc11a1163097b618722bc5008ec5112fd90d6"
+    },
+    {
+      "path": "extracted/reference_checks/S7_043/ai2019.pdf",
+      "sha256": "d2ea53d2667faa01dc5f2be0833cff5ce3d9ab80b15491abe9dfc6055ff58455"
+    }
+  ],
+  "limitations": [
+    "出題当時の法令版は全条項照合済みではない。",
+    "R03APT14初回2と公式5の相違は黙示同意の条件として査読対象へ残す。",
+    "特許必要最小限例外は当時条文直接未確認。"
+  ]
+}

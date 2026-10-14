@@ -1,0 +1,103 @@
+{
+  "recorded_at": "2026-10-11T10:13:00.713458+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "official_answers_consulted": false,
+  "source_images_reviewed": 18,
+  "questions": [
+    {
+      "question_id": "H23-REG-APPLIED-06",
+      "independent_answer": "3",
+      "reason": "Tの電流指数は-1であり-2ではない。導入の6基本単位列挙は光度cdを欠く。"
+    },
+    {
+      "question_id": "H23-REG-APPLIED-10",
+      "independent_answer": "2",
+      "reason": "熱中性子で核分裂する通常の天然U核種は235U。238Uは高速中性子なら核分裂、熱中性子は主に捕獲。β安定について質量最小との全称に疑義。"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-04",
+      "independent_answer": "5",
+      "reason": "V=W/A、長さ指数2であり1ではない。"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-07",
+      "independent_answer": "5",
+      "reason": "同じ速さならp=γmvで質量比に比例、λ=h/p、電子>陽子>α。"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-09",
+      "independent_answer": "2",
+      "reason": "90/30=3半減期、2^-3=1/8。肢は1/6,1/8,1/9,1/16,1/18。"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-04",
+      "independent_answer": "4",
+      "reason": "W=J/s、長さ指数2。導入は光度cdを欠く。"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-05",
+      "independent_answer": "2",
+      "reason": "hc/(e×35000)=3.5357e-11 m。"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-06",
+      "independent_answer": "5",
+      "reason": "ア吸収線量、イGy、ウ等価線量、エSv。"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-06",
+      "independent_answer": "4",
+      "reason": "2016当時Kは凝固点でなく水三重点273.16K。"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-09",
+      "independent_answer": "3",
+      "reason": "2^(-30/8)=.074325に最も近い.07。"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-05",
+      "independent_answer": "4",
+      "reason": "V=J/C=Nm/C、N/Cは電場。出題当時Kは水三重点。"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-01",
+      "independent_answer": "1",
+      "reason": "2019改定後kgはh固定、原器ではない。水三重点は約.01Cだが定義値の厳密さに注意。"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-09",
+      "independent_answer": "2",
+      "reason": "kgはプランクhで定義、重力Gではない。"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-09",
+      "independent_answer": "1",
+      "reason": "cdは単色540THzの発光効率683lm/W。黒体定義ではない。"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-09",
+      "independent_answer": "2",
+      "reason": "2^(-30/9)=.0992126に最も近い.10。"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-07",
+      "independent_answer": "4",
+      "reason": "超伝導は巨視的量子凝縮の現象。ほかは光吸収/放出に電子励起が関与。光との相互作用皆無の断言ではない。"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-13",
+      "independent_answer": "5",
+      "reason": "Ω=V/AのA指数-2。St=cm²/s=1e-4m²/s。"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-16",
+      "independent_answer": "3",
+      "reason": "kgf/cm²=9.80665N/1e-4m²=9.80665e4Pa。原典指数2は100分の1。"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-09",
+      "independent_answer": "3",
+      "reason": "kgはhによる定義。Gではない。"
+    }
+  ]
+}

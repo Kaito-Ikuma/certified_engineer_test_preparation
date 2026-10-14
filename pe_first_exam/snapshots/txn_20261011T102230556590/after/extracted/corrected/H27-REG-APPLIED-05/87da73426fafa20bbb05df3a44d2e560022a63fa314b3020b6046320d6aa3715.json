@@ -1,0 +1,48 @@
+{
+  "stem": "加速電子の運動エネルギーから連続X線の最短波長を求める。",
+  "conditions": {
+    "方向": "最短波長に最も近い値。",
+    "加速電圧": "35kV",
+    "h": "\\(6.6\\times10^{-34}\\mathrm{J\\,s}\\)",
+    "e": "\\(1.6\\times10^{-19}\\mathrm C\\)",
+    "c": "\\(3.0\\times10^8\\mathrm{m/s}\\)"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(2.6\\times10^{-11}\\mathrm m\\)",
+      "verdict": "不一致",
+      "reason": "求めた3.5357e-11mより小さく、本条件の電子エネルギー限界を超える。"
+    },
+    "2": {
+      "value": "\\(3.5\\times10^{-11}\\mathrm m\\)",
+      "verdict": "最も近い",
+      "reason": "3.5357e-11mへ最も近い提示値。"
+    },
+    "3": {
+      "value": "\\(3.9\\times10^{-11}\\mathrm m\\)",
+      "verdict": "不一致",
+      "reason": "限界より長い波長の光子は放出され得るが最短値として2より遠い。"
+    },
+    "4": {
+      "value": "\\(9.1\\times10^{-11}\\mathrm m\\)",
+      "verdict": "不一致",
+      "reason": "連続線にこの波長が存在し得ることと最短端であることは別、算出値から遠い。"
+    },
+    "5": {
+      "value": "\\(9.9\\times10^{-11}\\mathrm m\\)",
+      "verdict": "不一致",
+      "reason": "この値も最短端ではなく、eVを全て一光子へ与える上限と一致しない。"
+    }
+  },
+  "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_002.png"
+  ],
+  "question_id": "H27-REG-APPLIED-05",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "52cb116c85c5ce7daee919b68bcb665a2668f6bc223c8a90904232a01cc342c9",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

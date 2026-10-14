@@ -1,0 +1,4063 @@
+\section{双一次形状関数の展開}
+
+\subsection{平成28年度 問3-3}
+\label{q:h28-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 双一次形状関数を展開し定数・一次・交差項の係数を読む。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} N1=\allowbreak{}(1−ξ)(1−η)/4、N2=\allowbreak{}(1+ξ)(1−η)/4、N3=\allowbreak{}(1+ξ)(1+η)/4、N4=\allowbreak{}(1−ξ)(1+η)/4。係数は行ベクトル、a0=\allowbreak{}(1,1,1,1)/4。\par
+
+\paragraph{問われる核心} 双一次形状関数を展開し定数・一次・交差項の係数を読む。
+
+\paragraph{必要知識} N1=\allowbreak{}(1−ξ)(1−η)/4、N2=\allowbreak{}(1+ξ)(1−η)/4、N3=\allowbreak{}(1+ξ)(1+η)/4、N4=\allowbreak{}(1−ξ)(1+η)/4。係数は行ベクトル、a0=\allowbreak{}(1,1,1,1)/4。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 各 \(N_i=(1\pm\xi)(1\pm\eta)/4\) を展開する。ξ項の符号は(-,+,+,-)、η項は(-,-,+,+)、ξη項は二つの符号の積なので(+,-,+,-)である。いずれも1/4倍し、これを組み合わせる2が適切である。全形状関数の和が1なので三つの非定数係数ベクトルの成分和は0となる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} \(4a_1=(-1,1,1,-1),4a_2=(-1,-1,1,1),4a_3=(1,1,1,1)\)。二つの一次項は合うが交差項は積の符号(+,-,+,-)である。候補の交差項の和は4になりΣNi=\allowbreak{}1にも反する。\par
+
+\noindent\textbf{2：適切} \(4a_1=(-1,1,1,-1),4a_2=(-1,-1,1,1),4a_3=(1,-1,1,-1)\)。各括弧の符号を展開した係数と一致し、非定数項の成分和も全て0である。\par
+
+\noindent\textbf{3：不適切} \(4a_1=4a_2=4a_3=(1,1,1,1)\)。N1の一次係数がともに負という条件を満たさない。非定数項の和も0にならない。\par
+
+\noindent\textbf{4：不適切} \(4a_1=(1,-1,1,-1),4a_2=(-1,-1,1,1),4a_3=(1,1,1,-1)\)。N1,N2のξ係数が逆であり、交差項のN2の符号も誤る。η係数だけは合っている。\par
+
+\noindent\textbf{5：不適切} \(4a_1=(-1,-1,1,1),4a_2=(-1,1,1,-1),4a_3=(1,-1,1,-1)\)。交差項は合うがξとηの係数ベクトルを交換している。例えばN2のξ係数は正でη係数は負である。\par
+
+\paragraph{再利用する考え方} 二つの括弧の符号を別に読み、交差項はその積にする。係数和0を独立の検算に使う。
+
+\paragraph{共通理論} \hyperref[theory:fem:q4]{第\ref*{theory:fem:q4}節}
+
+\par 参考：\cite{mit_roy_fea1999}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{ベクトル・微分演算}
+
+\subsection{平成23年度 問3-5}
+\label{q:h23-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 三次元ベクトル場の指定点における発散を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} \(V=(\sin(x+y+z),\cos(x+y+z),z)\)\par
+
+\noindent\textbf{点：} \((2\pi,0,0)\)\par
+
+\noindent\textbf{定義：} \(\operatorname{div}V=\partial_xV_x+\partial_yV_y+\partial_zV_z\)\par
+
+\paragraph{問われる核心} 発散は対応成分の偏微分の和
+
+\paragraph{必要知識} 三角関数の偏微分、直交座標、発散のスカラー性。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(\operatorname{div}V=\cos(x+y+z)-\sin(x+y+z)+1\)なので指定点では1−0+1=\allowbreak{}2である。1を選ぶ。先に座標を代入して定数を微分すると空間変化の情報が失われる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致} 2。成分ごとの対応する座標で微分した和2と一致する。\par
+
+\noindent\textbf{2：条件に不一致} 1。発散はcos(2π)−sin(2π)+1=\allowbreak{}2であり、この値とは一致しない。\par
+
+\noindent\textbf{3：条件に不一致} 0。発散はcos(2π)−sin(2π)+1=\allowbreak{}2であり、この値とは一致しない。\par
+
+\noindent\textbf{4：条件に不一致} −1。発散はcos(2π)−sin(2π)+1=\allowbreak{}2であり、この値とは一致しない。\par
+
+\noindent\textbf{5：条件に不一致} −2。発散はcos(2π)−sin(2π)+1=\allowbreak{}2であり、この値とは一致しない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、発散は対応成分の偏微分の和の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:divcurl]{第\ref*{theory:analysis:divcurl}節}
+
+\par 参考：\cite{mit_vectorcalc2005}。
+
+\paragraph{関連問題} \hyperref[q:r01-reg-basic-3-1]{R01-REG-BASIC-3-1}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成25年度 問3-6}
+\label{q:h25-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 二次元ベクトル場の指定点における回転の面外成分を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} \(V=(x+y,x^2)\)\par
+
+\noindent\textbf{点：} (2,3)\par
+
+\noindent\textbf{定義：} \(\operatorname{rot}V=\partial_xV_y-\partial_yV_x\)\par
+
+\paragraph{問われる核心} 二次元回転の向きとスカラー成分
+
+\paragraph{必要知識} 偏微分、面外成分、差の順序。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(\partial_xV_y=2x,\partial_yV_x=1\)なのでrot=\allowbreak{}2x−1、点(2,3)では3である。4を選ぶ。二次元のここでのrotは三次元回転ベクトルのz成分を表す。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((1,2x)\)。原典のrotはスカラーであり、成分微分を並べた二成分の値ではない。\par
+
+\noindent\textbf{2：条件に不一致} \((1,4)\)。微分の結果を並べただけで差を取っていない。\par
+
+\noindent\textbf{3：条件に不一致} \((1,6)\)。第二成分をyで評価したような値であり、差を取っていない。\par
+
+\noindent\textbf{4：条件に一致} \(3\)。2x−1をx=\allowbreak{}2で評価すると3である。\par
+
+\noindent\textbf{5：条件に不一致} \(5\)。2x+1と足すのは回転の差の符号と合わない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、二次元回転の向きとスカラー成分の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:divcurl]{第\ref*{theory:analysis:divcurl}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成26年度 問3-1}
+\label{q:h26-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 平面上の全点で非圧縮性の連続の式を満たす流速場を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{式：} \(\partial_xu+\partial_yv=0\)\par
+
+\noindent\textbf{量化：} 特定の点だけでなく平面上の全ての点。\par
+
+\paragraph{問われる核心} 発散ゼロと非圧縮性の質量保存
+
+\paragraph{必要知識} 流速成分、偏微分、恒等式と特定点での一致。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 各候補の対応成分を微分して足すと2、0、x+y、y−x、2x−2yとなる。恒等的にゼロなのは2である。ある点でゼロになることと、領域全体で保存則を満たすこととを分ける。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((x,y)\)。発散は1+1=\allowbreak{}2である。\par
+
+\noindent\textbf{2：条件に一致} \((x,-y)\)。発散は1−1=\allowbreak{}0で全点で成立する。\par
+
+\noindent\textbf{3：条件に不一致} \((xy,xy)\)。発散はy+xであり恒等的には0でない。\par
+
+\noindent\textbf{4：条件に不一致} \((xy,-xy)\)。発散はy−xで、直線y=\allowbreak{}x上に限る。\par
+
+\noindent\textbf{5：条件に不一致} \((x^2,-y^2)\)。発散は2x−2yで、直線y=\allowbreak{}x上に限る。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、発散ゼロと非圧縮性の質量保存の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:divcurl]{第\ref*{theory:analysis:divcurl}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成26年度 問3-4}
+\label{q:h26-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 二次元ベクトルの内積の成分表示を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} \(a=(a_x,a_y),b=(b_x,b_y)\)\par
+
+\noindent\textbf{座標：} 直交座標の成分。\par
+
+\paragraph{問われる核心} 正規直交基底による内積
+
+\paragraph{必要知識} 内積の双線形性、スカラーとベクトルの違い。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 正規直交基底の異なる軸どうしの内積は0、同じ軸は1である。展開すると\(a\cdot b=a_xb_x+a_yb_y\)となり1を選ぶ。内積は仕事や角度を表すスカラーである。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致} \(a_xb_x+a_yb_y\)。同じ軸の成分積を足す内積に一致する。\par
+
+\noindent\textbf{2：条件に不一致} \(a_xb_y+a_yb_x\)。異なる軸の成分を掛けており、内積ではない。\par
+
+\noindent\textbf{3：条件に不一致} \(a_xb_y-a_yb_x\)。これは二次元外積に対応する面積の符号付き成分である。\par
+
+\noindent\textbf{4：条件に不一致} \((a_xb_x,a_yb_y)\)。内積の結果はスカラーであり、成分の組ではない。\par
+
+\noindent\textbf{5：条件に不一致} \((a_xb_y,a_yb_x)\)。内積の結果はスカラーであり、しかも成分の組合せが異なる。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、正規直交基底による内積の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:projection]{第\ref*{theory:analysis:projection}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成29年度 問3-2}
+\label{q:h29-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} ベクトルAをBに平行・垂直に分解し、垂直成分Qを求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} A=\allowbreak{}(6,5,4)、B=\allowbreak{}(1,2,−1)\par
+
+\noindent\textbf{分解：} A=\allowbreak{}P+Q、PはBに平行、QはBに垂直。\par
+
+\paragraph{問われる核心} 直交射影による平行・垂直成分
+
+\paragraph{必要知識} 内積、非単位ベクトルへの射影、二条件の同時確認。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(P=\frac{A\cdot B}{B\cdot B}B=2B=(2,4,-2)\)、Q=\allowbreak{}A−P=\allowbreak{}(4,1,6)で4を選ぶ。Q·B=\allowbreak{}0だけで候補を選ぶと他にも残るので、差A−Qが平行という条件も確認する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((1,1,3)\)。Q·B=\allowbreak{}0だがA−Q=\allowbreak{}(5,4,1)がBの倍数でない。\par
+
+\noindent\textbf{2：条件に不一致} \((2,1,4)\)。Q·B=\allowbreak{}0だがA−QがBの倍数でなく、分解条件を同時に満たさない。\par
+
+\noindent\textbf{3：条件に不一致} \((3,2,7)\)。Q·B=\allowbreak{}0だがA−QがBの倍数でない。\par
+
+\noindent\textbf{4：条件に一致} \((4,1,6)\)。A·B=\allowbreak{}12、B·B=\allowbreak{}6なのでP=\allowbreak{}2B、Q=\allowbreak{}A−2Bに一致する。\par
+
+\noindent\textbf{5：条件に不一致} \((5,-1,3)\)。Q·B=\allowbreak{}0だがA−QがBの倍数でない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、直交射影による平行・垂直成分の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:projection]{第\ref*{theory:analysis:projection}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成30年度 問3-2}
+\label{q:h30-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 二次元ベクトル場の指定点で発散と回転を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} \(v=(u,v)=(-x^2+2xy,2xy-y^2)\)\par
+
+\noindent\textbf{点：} (1,2)\par
+
+\noindent\textbf{定義：} \(\operatorname{div}v=\partial_xu+\partial_yv,\operatorname{rot}v=\partial_xv-\partial_yu\)\par
+
+\paragraph{問われる核心} 発散と回転の成分の取り方
+
+\paragraph{必要知識} 二次元ベクトル場、偏微分、面外回転の符号。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(\operatorname{div}v=(-2x+2y)+(2x-2y)=0\)、\(\operatorname{rot}v=2y-2x\)より点(1,2)で(0,2)の組、4である。同じ成分の微分の和と、交差成分の微分の差を区別する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} div=\allowbreak{}2／rot=−4。対応成分の発散は恒等的に0であり合わない。\par
+
+\noindent\textbf{2：条件に不一致} div=\allowbreak{}0／rot=−2。発散は合うが回転の差の順序を逆にしている。\par
+
+\noindent\textbf{3：条件に不一致} div=−2／rot=\allowbreak{}0。発散と回転の両方が合わない。\par
+
+\noindent\textbf{4：条件に一致} div=\allowbreak{}0／rot=\allowbreak{}2。発散0、回転2(y−x)=\allowbreak{}2に一致する。\par
+
+\noindent\textbf{5：条件に不一致} div=\allowbreak{}2／rot=\allowbreak{}4。発散と回転の両方が合わない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、発散と回転の成分の取り方の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:divcurl]{第\ref*{theory:analysis:divcurl}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和元年度 問3-1}
+\label{q:r01-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 三次元ベクトル場の指定点における発散を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} \(V=(\sin(x+y+z),\cos(x+y+z),z)\)\par
+
+\noindent\textbf{点：} \((2\pi,0,0)\)\par
+
+\noindent\textbf{定義：} \(\operatorname{div}V=\partial_xV_x+\partial_yV_y+\partial_zV_z\)\par
+
+\paragraph{問われる核心} 発散は対応成分の偏微分の和
+
+\paragraph{必要知識} 三角関数の偏微分、直交座標、発散のスカラー性。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(\operatorname{div}V=\cos(x+y+z)-\sin(x+y+z)+1\)なので指定点では1−0+1=\allowbreak{}2である。5を選ぶ。先に座標を代入して定数を微分すると空間変化の情報が失われる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} −2。発散はcos(2π)−sin(2π)+1=\allowbreak{}2であり、この値とは一致しない。\par
+
+\noindent\textbf{2：条件に不一致} −1。発散はcos(2π)−sin(2π)+1=\allowbreak{}2であり、この値とは一致しない。\par
+
+\noindent\textbf{3：条件に不一致} 0。発散はcos(2π)−sin(2π)+1=\allowbreak{}2であり、この値とは一致しない。\par
+
+\noindent\textbf{4：条件に不一致} 1。発散はcos(2π)−sin(2π)+1=\allowbreak{}2であり、この値とは一致しない。\par
+
+\noindent\textbf{5：条件に一致} 2。成分ごとの対応する座標で微分した和2と一致する。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、発散は対応成分の偏微分の和の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:divcurl]{第\ref*{theory:analysis:divcurl}節}
+
+\par 参考：\cite{mit_vectorcalc2005}。
+
+\paragraph{関連問題} \hyperref[q:h23-reg-basic-3-5]{H23-REG-BASIC-3-5}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和2年度 問3-1}
+\label{q:r02-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 多項式ベクトル場の指定点における発散を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} \(V=(x,x^2y+yz^2,z^3)\)\par
+
+\noindent\textbf{点：} (1,3,2)\par
+
+\paragraph{問われる核心} 発散のスカラー性と微分後の評価
+
+\paragraph{必要知識} 多項式の偏微分、微分する変数、スカラーとベクトル。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(\operatorname{div}V=1+(x^2+z^2)+3z^2\)で、指定点では1+5+12=\allowbreak{}18、2である。発散はスカラーであり、成分微分を並べた(1,5,12)を返す演算ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((-12,0,6)\)。回転ベクトルの値であり発散ではない。\par
+
+\noindent\textbf{2：条件に一致} \(18\)。対応微分の和1+5+12=\allowbreak{}18に一致する。\par
+
+\noindent\textbf{3：条件に不一致} \(24\)。ベクトル場の成分値1+15+8を足した値であり、微分していない。\par
+
+\noindent\textbf{4：条件に不一致} \((1,15,8)\)。微分前の成分値を並べたものである。\par
+
+\noindent\textbf{5：条件に不一致} \((1,5,12)\)。対応微分を並べており、発散の和を取っていない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、発散のスカラー性と微分後の評価の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:divcurl]{第\ref*{theory:analysis:divcurl}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和2年度 問3-2}
+\label{q:r02-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 二変数関数の指定点における最急勾配の長さを求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{関数：} \(f(x,y)=x^2+2xy+3y^2\)\par
+
+\noindent\textbf{点：} (1,1)\par
+
+\noindent\textbf{求める量：} 勾配ベクトルのユークリッドノルム。\par
+
+\paragraph{問われる核心} 勾配と最急上昇率のノルム
+
+\paragraph{必要知識} 偏微分、方向微分、ユークリッドノルム。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 勾配は\(\operatorname{grad}f=(2x+2y,2x+6y)\)で、指定点では\((4,8)\)である。そのノルムは\(4\sqrt5\)なので4を選ぶ。方向を表すベクトルと、最大方向微分の値である長さを分ける。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \(6\)。偏微分してノルムを取ると4\textbackslash{}sqrt5となり一致しない。\par
+
+\noindent\textbf{2：条件に不一致} \((4,8)\)。勾配ベクトルそのものであり長さではない。\par
+
+\noindent\textbf{3：条件に不一致} \(12\)。偏微分してノルムを取ると4\textbackslash{}sqrt5となり一致しない。\par
+
+\noindent\textbf{4：条件に一致} \(4\sqrt5\)。勾配ベクトルの二乗和の平方根に一致する。\par
+
+\noindent\textbf{5：条件に不一致} \(\sqrt2\)。偏微分してノルムを取ると4\textbackslash{}sqrt5となり一致しない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、勾配と最急上昇率のノルムの定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:gradient]{第\ref*{theory:analysis:gradient}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和3年度 問3-1}
+\label{q:r03-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 三次元ベクトル場の指定点における回転ベクトルを求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} \(V=(y+z,x^2+y^2+z^2,z+2y)\)\par
+
+\noindent\textbf{点：} (2,3,1)\par
+
+\noindent\textbf{座標：} 右手系の三次元直交座標。\par
+
+\paragraph{問われる核心} 三次元回転ベクトルの成分
+
+\paragraph{必要知識} 偏微分、右手系、交差微分の差、発散との違い。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(\operatorname{rot}V=(\partial_yV_z-\partial_zV_y,\partial_zV_x-\partial_xV_z,\partial_xV_y-\partial_yV_x)=(2-2z,1,2x-1)\)となる。点(2,3,1)で(0,1,3)、4を選ぶ。第2成分の差の順序も成分式から確認する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \(7\)。発散1+2y=\allowbreak{}7の値であり、回転ではない。\par
+
+\noindent\textbf{2：条件に不一致} \((0,6,1)\)。回転の成分微分の組合せが違う。\par
+
+\noindent\textbf{3：条件に不一致} \(4\)。回転はベクトルであり単一数ではない。\par
+
+\noindent\textbf{4：条件に一致} \((0,1,3)\)。(2−2z,1,2x−1)の点での値に一致する。\par
+
+\noindent\textbf{5：条件に不一致} \((4,14,7)\)。元のベクトル場の成分値であり微分していない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、三次元回転ベクトルの成分の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:divcurl]{第\ref*{theory:analysis:divcurl}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和4年度 問3-2}
+\label{q:r04-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 任意の三次元ベクトルに必ずしも成立しない恒等式を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} 三次元直交座標の任意の実ベクトルa,b。\par
+
+\noindent\textbf{演算：} 内積と外積を区別する。\par
+
+\noindent\textbf{方向：} 全てのa,bで成立するとは限らないもの。\par
+
+\paragraph{問われる核心} 内積の交換性と外積の反交換性
+
+\paragraph{必要知識} 外積の右手方向、垂直性、恒等式と反例。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} a=\allowbreak{}(1,0,0)、b=\allowbreak{}(0,1,0)とするとa×b=\allowbreak{}(0,0,1)、b×a=\allowbreak{}(0,0,−1)である。2には反例がある。特殊な平行ベクトルで一致しても「任意」での恒等式にはならない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：恒等的に正しい} \((a\times b)\cdot a=0\)。外積はaへ垂直であり成立する。\par
+
+\noindent\textbf{2：一般には誤り} \(a\times b=b\times a\)。外積は反交換的で、a×b=−b×aである。平行な場合のゼロを除き一般には成立しない。\par
+
+\noindent\textbf{3：恒等的に正しい} \(a\cdot b=b\cdot a\)。実ベクトルの内積は交換的であり成立する。\par
+
+\noindent\textbf{4：恒等的に正しい} \(b\cdot(a\times b)=0\)。外積はbへも垂直であり成立する。\par
+
+\noindent\textbf{5：恒等的に正しい} \(a\times a=0\)。同じベクトルの外積はゼロであり成立する。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、内積の交換性と外積の反交換性の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:projection]{第\ref*{theory:analysis:projection}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和6年度 問3-2}
+\label{q:r06-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 点aから単位ベクトルbの張る直線へ向かう垂線ベクトルを選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{始点：} aの終点。\par
+
+\noindent\textbf{終点：} 原点を通りb方向の直線上の垂足。\par
+
+\noindent\textbf{条件：} \(|b|=1\)\par
+
+\paragraph{問われる核心} 直線への射影と始点からの変位
+
+\paragraph{必要知識} 単位方向ベクトル、内積、垂足、終点−始点。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 垂足の位置は単位bへの射影\(p=(a\cdot b)b\)である。求めるベクトルは始点aから終点pへのp−a、2である。その内積\((p-a)\cdot b=(a\cdot b)|b|^2-a\cdot b=0\)で垂直性も検算できる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \(a\times b\)。a,bの両方に垂直な向きであり、aから直線上の垂足への変位ではない。\par
+
+\noindent\textbf{2：条件に一致} \((b\cdot a)b-a\)。垂足の位置(b·a)bから始点aを引いたベクトルに一致する。\par
+
+\noindent\textbf{3：条件に不一致} \(b-a\)。終点をbの端点に固定しており、その点が垂足である保証がない。\par
+
+\noindent\textbf{4：条件に不一致} \((b\cdot a)b\)。原点から垂足への位置ベクトルであり、始点aからの変位ではない。\par
+
+\noindent\textbf{5：条件に不一致} \(a\times b-a\)。終点a×bは一般にb方向の直線上にない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、直線への射影と始点からの変位の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:projection]{第\ref*{theory:analysis:projection}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和7年度 問3-2}
+\label{q:r07-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 二変数関数の指定点における最急勾配の長さを求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{関数：} \(f(x,y)=2x^2+xy-y^2\)\par
+
+\noindent\textbf{点：} (2,1)\par
+
+\noindent\textbf{求める量：} 勾配ベクトルのユークリッドノルム。\par
+
+\paragraph{問われる核心} 勾配と最急上昇率のノルム
+
+\paragraph{必要知識} 偏微分、方向微分、ユークリッドノルム。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 勾配は\(\operatorname{grad}f=(4x+y,x-2y)\)で、指定点では\((9,0)\)である。そのノルムは\(9\)なので1を選ぶ。方向を表すベクトルと、最大方向微分の値である長さを分ける。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致} \(9\)。勾配ベクトルの二乗和の平方根に一致する。\par
+
+\noindent\textbf{2：条件に不一致} \(3\)。偏微分してノルムを取ると9となり一致しない。\par
+
+\noindent\textbf{3：条件に不一致} \(\sqrt5\)。偏微分してノルムを取ると9となり一致しない。\par
+
+\noindent\textbf{4：条件に不一致} \((9,0)\)。勾配ベクトルそのものであり長さではない。\par
+
+\noindent\textbf{5：条件に不一致} \(\sqrt{26}\)。偏微分してノルムを取ると9となり一致しない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、勾配と最急上昇率のノルムの定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:gradient]{第\ref*{theory:analysis:gradient}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\section{微積分・求積}
+
+\subsection{平成24年度 問3-3}
+\label{q:h24-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 座標変換と偏微分の連鎖律で定義された2行2列行列の行列式を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{変換：} \(x=x(\xi,\eta),y=y(\xi,\eta)\)\par
+
+\noindent\textbf{微分の向き：} (fξ,fη)の列=J(fx,fy)の列。\par
+
+\noindent\textbf{略記：} \(a=x_\xi,b=y_\xi,c=x_\eta,d=y_\eta\)\par
+
+\paragraph{問われる核心} 連鎖律とヤコビ行列の向き
+
+\paragraph{必要知識} 偏微分、行列と列ベクトル、2行2列行列式。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 連鎖律で\(f_\xi=f_xx_\xi+f_yy_\xi\)、\(f_\eta=f_xx_\eta+f_yy_\eta\)となる。従ってJの行は(a,b)、(c,d)で、行列式はad−bc、1である。ここでは符号を持つ行列式を問い、積分の面積倍率ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致} \(ad-bc\)。主対角積から反対角積を引いたものに一致する。\par
+
+\noindent\textbf{2：条件に不一致} \(ad+bc\)。行列式の反対角積の符号が逆である。\par
+
+\noindent\textbf{3：条件に不一致} \(ac-bd\)。同じ座標関数同士の積を取っており、主対角と反対角の組を違えている。\par
+
+\noindent\textbf{4：条件に不一致} \(ac+bd\)。項の組合せも符号も行列式と合わない。\par
+
+\noindent\textbf{5：条件に不一致} \(bd-ac\)。同じ座標関数の積の差であり、行列式ではない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、連鎖律とヤコビ行列の向きの定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:chain]{第\ref*{theory:analysis:chain}節}, \hyperref[theory:analysis:jacobian]{第\ref*{theory:analysis:jacobian}節}
+
+\par 参考：\cite{mit_chain2007}。
+
+\paragraph{関連問題} \hyperref[q:r01-reg-basic-3-2]{R01-REG-BASIC-3-2}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成24年度 問3-4}
+\label{q:h24-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 二階導関数の格子点での差分近似を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{導関数：} \(f''(x_i)\)\par
+
+\noindent\textbf{格子幅：} \(\Delta\)\par
+
+\noindent\textbf{格子：} 等間隔、iは格子点の番号。\par
+
+\paragraph{問われる核心} テイラー展開による二階中心差分
+
+\paragraph{必要知識} 微分次数、等間隔格子、打切り誤差、定数・一次関数での検算。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(f_{i+1}-2f_i+f_{i-1}=\Delta^2f''(x_i)+O(\Delta^4)\)を用いる。従って分母を幅の二乗とした4が適切である。これは滑らかな関数の中心差分近似であり、一般の関数で厳密な恒等式ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((f_{i+1}-f_i)/\Delta\)。一階前進差分であり、二階微分ではない。\par
+
+\noindent\textbf{2：条件に不一致} \((f_{i+1}+f_i)/\Delta\)。定数関数でもゼロにならず、差分の分子が和になっている。\par
+
+\noindent\textbf{3：条件に不一致} \((f_{i+1}-2f_i+f_{i-1})/(2\Delta)\)。二階差分の分子は合うが、分母は幅の二乗である。\par
+
+\noindent\textbf{4：条件に一致} \((f_{i+1}-2f_i+f_{i-1})/\Delta^2\)。テイラー展開で定数項と一階項が消え、二階微分が残る。\par
+
+\noindent\textbf{5：条件に不一致} \((f_{i+1}+2f_i+f_{i-1})/\Delta^2\)。中央項の符号が逆で、定数関数でもゼロにならない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、テイラー展開による二階中心差分の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:difference]{第\ref*{theory:analysis:difference}節}
+
+\paragraph{関連問題} \hyperref[q:h29-reg-basic-3-1]{H29-REG-BASIC-3-1}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成28年度 問3-1}
+\label{q:h28-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 一次関数の区間−1〜1の積分を計算する式で、恒等的に使えないものを選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{関数：} \(f(x)=ax+b\)\par
+
+\noindent\textbf{区間：} \([-1,1]\)\par
+
+\noindent\textbf{方向：} 最も不適切な計算式。\par
+
+\paragraph{問われる核心} 求積重みの和と多項式への正確さ
+
+\paragraph{必要知識} 奇偶性、一次関数の積分、定数関数での検算。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 積分は奇関数axの寄与が0なので2bである。左右対称の候補式に代入すると1/2/4/5は2b、3だけ3b/2となるため3を選ぶ。b=\allowbreak{}0の特殊な場合だけ一致しても恒等的な計算式ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：正しい} \(2f(0)\)。2bとなり正しい。\par
+
+\noindent\textbf{2：正しい} \(f(-1)+f(1)\)。奇関数のaxが相殺され、2bとなり正しい。\par
+
+\noindent\textbf{3：一般には誤り} \(\frac14f(-1)+f(0)+\frac14f(1)\)。結果は3b/2であり、一般のbで積分値2bと違う。\par
+
+\noindent\textbf{4：正しい} \(\frac12f(-1)+f(0)+\frac12f(1)\)。結果は2bで正しい。\par
+
+\noindent\textbf{5：正しい} \(\frac13f(-1)+\frac43f(0)+\frac13f(1)\)。重みの和は2であり奇関数部分は相殺され、2bで正しい。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、求積重みの和と多項式への正確さの定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:quadrature]{第\ref*{theory:analysis:quadrature}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成28年度 問3-2}
+\label{q:h28-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textbf{検討未確定：} 原典は面積要素dxdy=\allowbreak{}Jdudvとするが、候補に|u−v|がなく、領域でu≥vなどの符号条件も指定しない。また変換はu,vの交換で同じx,yになる。符号付き行列式は3だが、積分の置換を成立させる領域/絶対値条件の不足を保持し部分校正とする。
+
+\paragraph{問題の要旨} 二重積分の変数変換に使うヤコビアンを計算する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{変換：} \(x=u+v,y=uv\)\par
+
+\noindent\textbf{原典の式：} dxdyをJdudvへ置き換える。\par
+
+\noindent\textbf{領域：} 変換領域でuとvの大小を指定していない。\par
+
+\paragraph{問われる核心} ヤコビアンの符号と面積倍率
+
+\paragraph{必要知識} 行列式、面積要素、絶対値、一対一の変数変換。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 微分行列の行は(1,1)、(v,u)で、その行列式はu−vである。符号付きヤコビアンとして3を独立選択する。ただし面積要素の倍率は|u−v|であり、原典の二重積分の式へそのまま代入するには符号又は向きの条件が必要となる。変換を一対一の枝へ制限する条件も確認が必要である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \(1\)。微分行列の行列式は定数ではない。\par
+
+\noindent\textbf{2：条件に不一致} \(u+v\)。行列式の二項を足している。\par
+
+\noindent\textbf{3：条件に一致} \(u-v\)。符号付き行列式に一致。ただし面積要素では絶対値が必要である。\par
+
+\noindent\textbf{4：条件に不一致} \(1+uv\)。微分した成分を使っていない。\par
+
+\noindent\textbf{5：条件に不一致} \(1-uv\)。微分した成分を使っていない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、ヤコビアンの符号と面積倍率の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:jacobian]{第\ref*{theory:analysis:jacobian}節}
+
+\par 参考：\cite{mit_jacobian2007}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成29年度 問3-1}
+\label{q:h29-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 二階導関数の格子点での差分近似を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{導関数：} \(u''(x_i)\)\par
+
+\noindent\textbf{格子幅：} \(h\)\par
+
+\noindent\textbf{格子：} 等間隔、iは格子点の番号。\par
+
+\paragraph{問われる核心} テイラー展開による二階中心差分
+
+\paragraph{必要知識} 微分次数、等間隔格子、打切り誤差、定数・一次関数での検算。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(u_{i+1}-2u_i+u_{i-1}=h^2u''(x_i)+O(h^4)\)を用いる。従って分母を幅の二乗とした5が適切である。これは滑らかな関数の中心差分近似であり、一般の関数で厳密な恒等式ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((u_{i+1}-u_i)/h\)。一階前進差分であり、二階微分ではない。\par
+
+\noindent\textbf{2：条件に不一致} \((u_{i+1}+u_i)/h\)。定数関数でもゼロにならず、差分の分子が和になっている。\par
+
+\noindent\textbf{3：条件に不一致} \((u_{i+1}-2u_i+u_{i-1})/(2h)\)。二階差分の分子は合うが、分母は幅の二乗である。\par
+
+\noindent\textbf{4：条件に不一致} \((u_{i+1}+2u_i+u_{i-1})/h^2\)。中央項の符号が逆で、定数関数でもゼロにならない。\par
+
+\noindent\textbf{5：条件に一致} \((u_{i+1}-2u_i+u_{i-1})/h^2\)。テイラー展開で定数項と一階項が消え、二階微分が残る。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、テイラー展開による二階中心差分の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:difference]{第\ref*{theory:analysis:difference}節}
+
+\paragraph{関連問題} \hyperref[q:h24-reg-basic-3-4]{H24-REG-BASIC-3-4}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和元年度 問3-2}
+\label{q:r01-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 座標変換の連鎖律で定義された2行2列行列の行列式を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{変換：} \(x=g(r,s),y=h(r,s),z=f(x,y)\)\par
+
+\noindent\textbf{向き：} (zr,zs)の列=J(zx,zy)の列。\par
+
+\noindent\textbf{略記：} \(a=x_r,b=y_r,c=x_s,d=y_s\)\par
+
+\paragraph{問われる核心} 連鎖律で定義された行列の行列式
+
+\paragraph{必要知識} 偏微分、行列積、行列式、変数の順序。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 偏微分の連鎖律によりJの行は(a,b)、(c,d)である。行列式ad−bcの5を選ぶ。微分ベクトルの順序を先に読み、以前の問題の正答番号を転用しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \(ac+bd\)。同じ座標関数の微分を掛けた和で、行列式と異なる。\par
+
+\noindent\textbf{2：条件に不一致} \(ac-bd\)。項の組合せが主対角・反対角ではない。\par
+
+\noindent\textbf{3：条件に不一致} \(bd-ac\)。項の組合せが主対角・反対角ではない。\par
+
+\noindent\textbf{4：条件に不一致} \(ad+bc\)。反対角積の符号が逆である。\par
+
+\noindent\textbf{5：条件に一致} \(ad-bc\)。連鎖律でできる行(a,b)、(c,d)の行列式に一致する。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、連鎖律で定義された行列の行列式の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:chain]{第\ref*{theory:analysis:chain}節}, \hyperref[theory:analysis:jacobian]{第\ref*{theory:analysis:jacobian}節}
+
+\par 参考：\cite{mit_chain2007}。
+
+\paragraph{関連問題} \hyperref[q:h24-reg-basic-3-3]{H24-REG-BASIC-3-3}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和元年度再試験 問3-1}
+\label{q:r01-ret-basic-3-1}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 微分方程式と一点の値から二階・三階導関数を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{関係：} \(f'(x)=1+f(x)^2\)\par
+
+\noindent\textbf{初期値：} \(f(0)=1\)\par
+
+\noindent\textbf{求める量：} \((f''(0),f'''(0))\)\par
+
+\paragraph{問われる核心} 微分関係式の繰返し微分
+
+\paragraph{必要知識} 積の微分、連鎖律、一点の初期条件。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(f'(0)=2,\quad f''=2ff',\quad f'''=2(f')^2+2ff''\)よりf\ensuremath{''}(0)=\allowbreak{}4、f\ensuremath{'''}(0)=\allowbreak{}8+8=\allowbreak{}16となり5である。解fそのものを求める必要はなく、関係式を順に微分すればよい。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((2,4)\)。f\ensuremath{'}(0)=\allowbreak{}2だが二階導関数は2ff\ensuremath{'}=4である。\par
+
+\noindent\textbf{2：条件に不一致} \((2,6)\)。二階導関数4に一致しない。\par
+
+\noindent\textbf{3：条件に不一致} \((2,8)\)。二階導関数4に一致しない。\par
+
+\noindent\textbf{4：条件に不一致} \((4,12)\)。二階は合うが三階では積の微分の両項を数えると16になる。\par
+
+\noindent\textbf{5：条件に一致} \((4,16)\)。二階4、三階16に一致する。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、微分関係式の繰返し微分の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:chain]{第\ref*{theory:analysis:chain}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和元年度再試験 問3-4}
+\label{q:r01-ret-basic-3-4}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 指定のシンプソン公式で定積分を近似し、最も近い候補を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{積分：} \(\int_{-1}^{1}\frac{1}{x+3}\,dx\)\par
+
+\noindent\textbf{指定重み：} 区間両端1/3、中点4/3。\par
+
+\paragraph{問われる核心} 指定求積法の近似値と厳密値
+
+\paragraph{必要知識} シンプソンの重み、3点の関数値、最近傍候補。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(S\approx\frac13\frac12+\frac43\frac13+\frac13\frac14=\frac{25}{36}\approx0.69444\)となり、最も近い0.693の5を選ぶ。厳密値はln2≈0.693147だが、指定手法の計算結果とは区別する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} 0.653。シンプソン近似25/36≈0.69444との差は約0.04144。\par
+
+\noindent\textbf{2：条件に不一致} 0.663。差は約0.03144。\par
+
+\noindent\textbf{3：条件に不一致} 0.673。差は約0.02144。\par
+
+\noindent\textbf{4：条件に不一致} 0.683。差は約0.01144。\par
+
+\noindent\textbf{5：条件に一致} 0.693。差は約0.00144で最も小さい。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、指定求積法の近似値と厳密値の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:quadrature]{第\ref*{theory:analysis:quadrature}節}
+
+\par 参考：\cite{nist_quadrature}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和3年度 問3-2}
+\label{q:r03-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 任意の三次以下の多項式を区間−1〜1で正確に積分する式を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{関数：} \(f(x)=ax^3+bx^2+cx+d\)\par
+
+\noindent\textbf{係数：} a,b,c,dは任意の実数。\par
+
+\noindent\textbf{積分区間：} −1〜1。\par
+
+\paragraph{問われる核心} 求積公式の多項式モーメント条件
+
+\paragraph{必要知識} 奇偶性、多項式の積分、二点ガウス求積、重みの検算。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 対称区間では奇関数項の積分が0なので厳密値は2b/3+2dである。2では評価点の二乗が1/3なので\(f(-1/\sqrt3)+f(1/\sqrt3)=2b/3+2d\)となる。4はガウスの評価点に似ているが両端の重みが1/2であり、正しい求積式ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \(2f(0)\)。2dでありbx\textsuperscript{2}の積分2b/3が抜ける。\par
+
+\noindent\textbf{2：条件に一致} \(f(-\sqrt{1/3})+f(\sqrt{1/3})\)。奇関数部分は相殺し、2b/3+2dに一致する二点ガウス求積である。\par
+
+\noindent\textbf{3：条件に不一致} \(f(-1)+f(1)\)。2b+2dとなりbx\textsuperscript{2}の係数が大きすぎる。\par
+
+\noindent\textbf{4：条件に不一致} \(\frac12f(-\sqrt{3/5})+\frac89f(0)+\frac12f(\sqrt{3/5})\)。定数の重み和が17/9で2に足りず、x\textsuperscript{2}の係数も3/5で2/3と異なる。正しい三点ガウスの両端重み5/9とは違う。\par
+
+\noindent\textbf{5：条件に不一致} \(\frac12f(-1)+f(0)+\frac12f(1)\)。b+2dとなりbx\textsuperscript{2}の係数が合わない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、求積公式の多項式モーメント条件の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:quadrature]{第\ref*{theory:analysis:quadrature}節}
+
+\par 参考：\cite{nist_quadrature}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和5年度 問3-2}
+\label{q:r05-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 四分の一円領域でxの二重積分を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{領域：} \(0\le x\le1,0\le y\le\sqrt{1-x^2}\)\par
+
+\noindent\textbf{積分：} \(\int\int_R x\,dxdy\)\par
+
+\paragraph{問われる核心} 領域を読んだ累次積分と置換積分
+
+\paragraph{必要知識} 四分の一円、積分順序、変数置換、面積と一次モーメント。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} y方向に先に積分すると\(\int_0^1x\sqrt{1-x^2}\,dx\)となる。t=\allowbreak{}1−x\textsuperscript{2}、dt=−2xdxと置けば\(\frac12\int_0^1\sqrt t\,dt=1/3\)で2を選ぶ。領域面積π/4と重み付き積分を混同しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \(\pi/3\)。xを重みにした積分は円の角度や単なる面積と異なる。\par
+
+\noindent\textbf{2：条件に一致} \(1/3\)。積分x√(1−x\textsuperscript{2})を0〜1で評価した1/3に一致する。\par
+
+\noindent\textbf{3：条件に不一致} \(\pi/2\)。半円の面積に相当し領域・被積分関数が違う。\par
+
+\noindent\textbf{4：条件に不一致} \(\pi/4\)。四分の一円の面積であり、xという重みを落としている。\par
+
+\noindent\textbf{5：条件に不一致} \(1/4\)。同じ領域でのxの平均を単に1/πと仮定する根拠はない。積分で求めると1/3である。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、領域を読んだ累次積分と置換積分の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:jacobian]{第\ref*{theory:analysis:jacobian}節}, \hyperref[theory:analysis:quadrature]{第\ref*{theory:analysis:quadrature}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和6年度 問3-1}
+\label{q:r06-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 連鎖律で偏微分ベクトルを変換する2行2列行列を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{関係：} \(f=f(x,y),g=g(x,y),u=u(f,g)\)\par
+
+\noindent\textbf{向き：} (ux,uy)の列=J(uf,ug)の列。\par
+
+\noindent\textbf{候補表記：} 下付きは偏微分、セミコロンは行区切り。\par
+
+\paragraph{問われる核心} 連鎖律の行列表示と転置
+
+\paragraph{必要知識} 合成関数の微分、行列積、微分する変数の順序。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 連鎖律を一行ずつ書くと\(u_x=u_ff_x+u_gg_x,u_y=u_ff_y+u_gg_y\)である。従ってJの行は(fx,gx)、(fy,gy)で4を選ぶ。ヤコビ行列という名前より、与えられた列ベクトルの掛け算を優先して向きを定める。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((x_f,y_f;x_g,y_g)\)。逆向きの座標関数の微分を使っている。\par
+
+\noindent\textbf{2：条件に不一致} \((f_x,f_y;g_x,g_y)\)。行列を転置する必要があり、出力の各行がxとyになっていない。\par
+
+\noindent\textbf{3：条件に不一致} \((u_f,u_g;u_x,u_y)\)。変換される関数uそのものの微分を係数としており、連鎖律の行列ではない。\par
+
+\noindent\textbf{4：条件に一致} \((f_x,g_x;f_y,g_y)\)。ux=\allowbreak{}uf fx+ug gx、uy=\allowbreak{}uf fy+ug gyに一致する。\par
+
+\noindent\textbf{5：条件に不一致} \((x_f,x_g;y_f,y_g)\)。逆向きの変換の係数であり、原典の向きとは違う。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、連鎖律の行列表示と転置の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:chain]{第\ref*{theory:analysis:chain}節}
+
+\par 参考：\cite{mit_chain2007}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和7年度 問3-3}
+\label{q:r07-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 等間隔の3点を使うシンプソン法の式を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{点：} \(b=a+h,c=a+2h,h>0\)\par
+
+\noindent\textbf{区間：} aからc、全幅2h。\par
+
+\noindent\textbf{方式：} 2次のニュートン・コーツ閉公式。\par
+
+\paragraph{問われる核心} 区間幅の定義とシンプソン重み
+
+\paragraph{必要知識} 二次補間、等間隔の3点、定数関数の検算。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 3点を通る二次補間多項式を積分すると\(\frac h3[f(a)+4f(b)+f(c)]\)となり5である。全幅は2hなので、全幅をHと書く別の表現なら係数H/6となる。記号の定義を読み替えずh/6を選ばない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \(\frac h2(f(a)+f(c))\)。全幅2hに対する台形則の半分であり、シンプソン法でもない。\par
+
+\noindent\textbf{2：条件に不一致} \(h(f(a)+f(c))\)。これは全幅2hに対する台形則で、中点を使わない。\par
+
+\noindent\textbf{3：条件に不一致} \(\frac h6(f(a)+4f(b)+f(c))\)。重みの和がhとなり、定数関数の積分2hに足りない。\par
+
+\noindent\textbf{4：条件に不一致} \(\frac h4(f(a)+4f(b)+f(c))\)。重みの和が3h/2で、定数関数の積分2hに足りない。\par
+
+\noindent\textbf{5：条件に一致} \(\frac h3(f(a)+4f(b)+f(c))\)。両端1・中点4の重みへh/3を掛けるシンプソン法に一致する。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、区間幅の定義とシンプソン重みの定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:quadrature]{第\ref*{theory:analysis:quadrature}節}
+
+\par 参考：\cite{nist_quadrature}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\section{一定ひずみ三角形}
+
+\subsection{令和3年度 問3-3}
+\label{q:r03-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textbf{検討未確定：} 実現した変位場が一次ならイやウにも一様ひずみの例がある。原典は要素の一般的補間特性を尋ねると読み、公式1を保持する。
+
+\paragraph{問題の要旨} 3節点・6節点三角形と4節点四角形のひずみの次数を比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} 線形弾性の2次元変位法。アは3節点一次三角形、イは辺中点を含む6節点二次三角形、ウは4節点アイソパラメトリック四辺形。非退化の要素を想定する。\par
+
+\paragraph{問われる核心} 3節点・6節点三角形と4節点四角形のひずみの次数を比較する。
+
+\paragraph{必要知識} 線形弾性の2次元変位法。アは3節点一次三角形、イは辺中点を含む6節点二次三角形、ウは4節点アイソパラメトリック四辺形。非退化の要素を想定する。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 3節点一次三角形では変位が \(u=a+bx+cy,v=d+ex+fy\) と表される。微分で求めるひずみは \(\varepsilon_x=b,\varepsilon_y=f,\gamma_{xy}=c+e\) と要素内で一定である。6節点三角形の二次補間や4節点四角形の双一次補間では一般に位置依存が残る。任意の節点変位に対して一定という要素特性をもつアだけを選ぶ1である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} ア。一次変位の微分が定数となる一定ひずみ三角形である。\par
+
+\noindent\textbf{2：不適切} イ。二次変位の微分は一般に一次関数となり、任意の節点変位に対して一定ではない。\par
+
+\noindent\textbf{3：不適切} ウ。双一次変位や非線形写像の微分は一般に位置で変わる。特定の一様変位場は再現できるが要素全体の一般的特性ではない。\par
+
+\noindent\textbf{4：不適切} アとイ。アは一定であるがイの二次補間まで常に一定とはいえない。\par
+
+\noindent\textbf{5：不適切} アとウ。アは一定であるがウは交差項や写像の影響を含み、一般に一様ひずみではない。\par
+
+\paragraph{再利用する考え方} 節点数だけでなく補間次数と空間微分を結ぶ。高次要素でも特別な一次変位場は表現できることと、常時一定ひずみという性質を分ける。
+
+\paragraph{共通理論} \hyperref[theory:fem:triangle]{第\ref*{theory:fem:triangle}節}, \hyperref[theory:fem:q4]{第\ref*{theory:fem:q4}節}
+
+\par 参考：\cite{mit_roy_fea1999}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{要素補間・変位と応力の連続性}
+
+\subsection{平成23年度 問3-1}
+\label{q:h23-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textbf{検討未確定：} 非正答肢1の不連続は一般的挙動である。全ての応力場で跳ぶという全称には反例がある。
+
+\paragraph{問題の要旨} 4節点双一次四角形要素の変位・ひずみ・応力の連続性を区別する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} 線形弾性・平面ひずみ。4節点アイソパラメトリック要素の適合する変位法、非退化の形状と共有節点を前提とする。\par
+
+\paragraph{問われる核心} 4節点双一次四角形要素の変位・ひずみ・応力の連続性を区別する。
+
+\paragraph{必要知識} 線形弾性・平面ひずみ。4節点アイソパラメトリック要素の適合する変位法、非退化の形状と共有節点を前提とする。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 双一次補間にはxyの交差項があり、例えば長方形で \(u=a+bx+cy+dxy\) なら \(\partial_xu=b+dy\) となる。要素内ひずみは一般に位置で変化する。均質な線形弾性では応力も変わるため、要素内一定という2が不適切である。共有節点を結ぶ辺で変位は連続でも、その微分の連続までは要求されない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件付きで適切} 隣接要素の辺で応力は不連続。変位の一次微分は要素ごとであり、一般に応力の跳びが許される。一様ひずみのパッチでは一致もするため、常に不連続という全称ではない。\par
+
+\noindent\textbf{2：不適切} 各要素内の応力は一定。双一次変位を微分しても交差項から位置依存が残る。3節点一次三角形の一定ひずみ性と混同している。\par
+
+\noindent\textbf{3：適切} 精度は要素形状に影響される。写像のJacobianと補間誤差が形状に関係し、強い歪みや退化で精度が悪化し得る。\par
+
+\noindent\textbf{4：条件付きで適切} 辺上の変位は隣接要素間で連続。同じ辺の節点変位を共有する適合Q4では辺上の一次補間も一致する。非適合接続や接触面を含む一般論へ拡張しない。\par
+
+\noindent\textbf{5：適切} 精度は要素分割の細かさに影響される。離散空間の解像度が変位や応力の近似誤差に影響する。細かさだけで全誤差を評価できるわけではない。\par
+
+\paragraph{再利用する考え方} 変位の次数から微分の次数へ進み、変位の連続と応力の連続を別にする。
+
+\paragraph{共通理論} \hyperref[theory:fem:q4]{第\ref*{theory:fem:q4}節}, \hyperref[theory:fem:continuity]{第\ref*{theory:fem:continuity}節}
+
+\par 参考：\cite{mit_roy_fea1999}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\section{有限要素のメッシュ収束}
+
+\subsection{平成24年度 問3-1}
+\label{q:h24-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textbf{検討未確定：} 非正答肢の勾配と細分化は通常条件での目安であり、全形状・全境界条件の精度保証ではない。
+
+\paragraph{問題の要旨} 線形弾性解析のメッシュ依存と局所応力の安全側保証を判定する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} 材料は線形弾性。適合・非退化の要素と境界条件を想定する。応力の変化率と大きさ、エネルギー誤差と一点応力を区別する。\par
+
+\paragraph{問われる核心} 線形弾性解析のメッシュ依存と局所応力の安全側保証を判定する。
+
+\paragraph{必要知識} 材料は線形弾性。適合・非退化の要素と境界条件を想定する。応力の変化率と大きさ、エネルギー誤差と一点応力を区別する。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 有限要素法の変位と応力は異なる近似量である。変位から微分して求める局所応力には、粗い分割で常に高くなるという保証はない。応力集中を解像できず低く見積もることもある。したがって常に安全側という1が不適切である。複数の分割と荷重ケースで目的とする量を比較する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 粗い分割なら常に変形は小さく応力は高いため安全側。変位法の剛性傾向があっても局所応力の上限保証にはならない。応力集中を粗い分割で過小評価することもあり、全称の安全側判定が誤りである。\par
+
+\noindent\textbf{2：適切} 複数の要素分割で結果を比較する。変位・反力・注目する応力をメッシュを変えて比較し、離散化の影響を調べる。\par
+
+\noindent\textbf{3：適切} ある荷重で妥当な分割でも別荷重で妥当とは限らない。荷重が変わると高勾配の位置や変形モードが変わるため、解像度の確認をやり直す必要がある。\par
+
+\noindent\textbf{4：条件付きで適切} 応力変化が小さい部分は絶対値によらず分割影響が小さい。空間変化を解像するという典型的な判断である。ただし周囲の誤差や不良形状、評価する絶対誤差まで保証しない。\par
+
+\noindent\textbf{5：適切} 応力変化の大きい部分を細分する。応力集中や勾配の大きい領域を解像する局所的な細分化である。特異点のピーク値が有限に収束するとは限らない。\par
+
+\paragraph{再利用する考え方} 粗い分割の硬さから一点応力の上下を断定しない。評価量ごとに収束を確認し、特異点と通常の集中を区別する。
+
+\paragraph{共通理論} \hyperref[theory:fem:mesh]{第\ref*{theory:fem:mesh}節}, \hyperref[theory:fem:continuity]{第\ref*{theory:fem:continuity}節}
+
+\par 参考：\cite{mit_roy_fea1999}。
+
+\paragraph{関連問題} \hyperref[q:h29-reg-basic-3-3]{H29-REG-BASIC-3-3}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成29年度 問3-3}
+\label{q:h29-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textbf{検討未確定：} 非正答肢の勾配と細分化は通常条件での目安であり、全形状・全境界条件の精度保証ではない。
+
+\paragraph{問題の要旨} 線形弾性解析のメッシュ依存と局所応力の安全側保証を判定する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} 材料は線形弾性。適合・非退化の要素と境界条件を想定する。応力の変化率と大きさ、エネルギー誤差と一点応力を区別する。\par
+
+\paragraph{問われる核心} 線形弾性解析のメッシュ依存と局所応力の安全側保証を判定する。
+
+\paragraph{必要知識} 材料は線形弾性。適合・非退化の要素と境界条件を想定する。応力の変化率と大きさ、エネルギー誤差と一点応力を区別する。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 有限要素法の変位と応力は異なる近似量である。変位から微分して求める局所応力には、粗い分割で常に高くなるという保証はない。応力集中を解像できず低く見積もることもある。したがって常に安全側という4が不適切である。複数の分割と荷重ケースで目的とする量を比較する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} 応力変化の大きい部分を細分する。応力集中や勾配の大きい領域を解像する局所的な細分化である。特異点のピーク値が有限に収束するとは限らない。\par
+
+\noindent\textbf{2：条件付きで適切} 応力変化が小さい部分は絶対値によらず分割影響が小さい。空間変化を解像するという典型的な判断である。ただし周囲の誤差や不良形状、評価する絶対誤差まで保証しない。\par
+
+\noindent\textbf{3：適切} 複数の要素分割で結果を比較する。変位・反力・注目する応力をメッシュを変えて比較し、離散化の影響を調べる。\par
+
+\noindent\textbf{4：不適切} 粗い分割なら常に変形は小さく応力は高いため安全側。変位法の剛性傾向があっても局所応力の上限保証にはならない。応力集中を粗い分割で過小評価することもあり、全称の安全側判定が誤りである。\par
+
+\noindent\textbf{5：適切} ある荷重で妥当な分割でも別荷重で妥当とは限らない。荷重が変わると高勾配の位置や変形モードが変わるため、解像度の確認をやり直す必要がある。\par
+
+\paragraph{再利用する考え方} 粗い分割の硬さから一点応力の上下を断定しない。評価量ごとに収束を確認し、特異点と通常の集中を区別する。
+
+\paragraph{共通理論} \hyperref[theory:fem:mesh]{第\ref*{theory:fem:mesh}節}, \hyperref[theory:fem:continuity]{第\ref*{theory:fem:continuity}節}
+
+\par 参考：\cite{mit_roy_fea1999}。
+
+\paragraph{関連問題} \hyperref[q:h24-reg-basic-3-1]{H24-REG-BASIC-3-1}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\section{軸伸びと弾性エネルギーの二分の一}
+
+\subsection{平成25年度 問3-5}
+\label{q:h25-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 軸伸びと弾性エネルギーの二分の一。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{棒：} 長さl、断面積A、E一定。\par
+
+\noindent\textbf{伸び：} 軸伸びδ、弾性域の準静的負荷。\par
+
+\paragraph{問われる核心} 軸伸びと弾性エネルギーの二分の一。
+
+\paragraph{必要知識} 応力・ひずみ、力変位線図、弾性ひずみエネルギー。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} ε=δ/l、σ=Eε、P=\allowbreak{}Aσ=EAδ/l。線形に力を増す仕事U=∫0\textasciicircum{}δ(EA/l)x dx=\allowbreak{}EAδ\textsuperscript{2}/(2l)=\allowbreak{}Pδ/2。最終荷重Pを全行程に掛けたPδでは仕事を二倍に数える。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} P=\allowbreak{}EAδ/l,U=\allowbreak{}EAδ\textsuperscript{2}/l。各文又は定義の判定を先に行う。並びが判定 P=\allowbreak{}EAδ/l,U=\allowbreak{}EAδ\textsuperscript{2}/(2l) と異なる。\par
+
+\noindent\textbf{2：条件内で適切} P=\allowbreak{}EAδ/l,U=\allowbreak{}EAδ\textsuperscript{2}/(2l)。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{3：不適切} P=\allowbreak{}EAδ/(2l),U=\allowbreak{}EAδ\textsuperscript{2}/l。各文又は定義の判定を先に行う。並びが判定 P=\allowbreak{}EAδ/l,U=\allowbreak{}EAδ\textsuperscript{2}/(2l) と異なる。\par
+
+\noindent\textbf{4：不適切} P=\allowbreak{}EAδ/(2l),U=\allowbreak{}EAδ\textsuperscript{2}/(2l)。各文又は定義の判定を先に行う。並びが判定 P=\allowbreak{}EAδ/l,U=\allowbreak{}EAδ\textsuperscript{2}/(2l) と異なる。\par
+
+\noindent\textbf{5：不適切} P=\allowbreak{}EAδ/(2l),U=\allowbreak{}EAδ\textsuperscript{2}/(4l)。各文又は定義の判定を先に行う。並びが判定 P=\allowbreak{}EAδ/l,U=\allowbreak{}EAδ\textsuperscript{2}/(2l) と異なる。\par
+
+\paragraph{再利用する考え方} 応力・ひずみ、力変位線図、弾性ひずみエネルギー。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:axialenergy]{第\ref*{theory:analysis:axialenergy}節}
+
+\par 参考：\cite{mit_material_elastic2000}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和元年度 問3-5}
+\label{q:r01-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 荷重表示で棒のひずみエネルギー。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{棒：} 長さl、断面A、E、弾性域で軸荷重P。\par
+
+\paragraph{問われる核心} 荷重表示で棒のひずみエネルギー。
+
+\paragraph{必要知識} 軸剛性、力変位面積、エネルギー単位。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 軸伸びδ=Pl/(EA)をU=\allowbreak{}Pδ/2へ代入するとP\textsuperscript{2}l/(2EA)。単位はN·mである。UがPに一次比例する候補は線形ばねのエネルギーの二次依存と整合しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} Pl。各文又は定義の判定を先に行う。並びが判定 P\textsuperscript{2}l/(2EA) と異なる。\par
+
+\noindent\textbf{2：不適切} Pl/E。各文又は定義の判定を先に行う。並びが判定 P\textsuperscript{2}l/(2EA) と異なる。\par
+
+\noindent\textbf{3：不適切} Pl\textsuperscript{2}/A。各文又は定義の判定を先に行う。並びが判定 P\textsuperscript{2}l/(2EA) と異なる。\par
+
+\noindent\textbf{4：条件内で適切} P\textsuperscript{2}l/(2EA)。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{5：不適切} P\textsuperscript{2}/(2EA\textsuperscript{2})。各文又は定義の判定を先に行う。並びが判定 P\textsuperscript{2}l/(2EA) と異なる。\par
+
+\paragraph{再利用する考え方} 軸剛性、力変位面積、エネルギー単位。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:axialenergy]{第\ref*{theory:analysis:axialenergy}節}
+
+\par 参考：\cite{mit_material_elastic2000}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{梁の固有振動数は支持条件から比較}
+
+\subsection{平成23年度 問3-4}
+\label{q:h23-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textbf{検討未確定：} 一様細長梁・線形小振動の標準モデル。せん断変形・回転慣性を含む短い梁へ厳密な値を一般化しない。
+
+\paragraph{問題の要旨} 梁の固有振動数は支持条件から比較。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{a：} 両端単純支持。\par
+
+\noindent\textbf{b：} 片持ち。\par
+
+\noindent\textbf{c：} 両端固定。\par
+
+\noindent\textbf{共通：} 同じ長さ・材質・断面、最も低い曲げモード。\par
+
+\paragraph{問われる核心} 梁の固有振動数は支持条件から比較。
+
+\paragraph{必要知識} 曲げ振動、変位と回転の境界条件、固有値。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 一様Euler–Bernoulli梁のω1=β1\textsuperscript{2}√(EI/(ρA))/L\textsuperscript{2}。同じ梁なら共通係数が消える。片持ちbはβ1≈1.875、単純支持aはπ、両端固定cは≈4.730なのでfb<fa<fc。固定端を増やすと拘束が強くなるが、名称だけで判断せず境界条件の固有値を比較する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} fa<fb<fc。各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。\par
+
+\noindent\textbf{2：不適切} fa<fc<fb。各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。\par
+
+\noindent\textbf{3：条件内で適切} fb<fa<fc。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{4：不適切} fb<fc<fa。各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。\par
+
+\noindent\textbf{5：不適切} fc<fa<fb。各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。\par
+
+\paragraph{再利用する考え方} 曲げ振動、変位と回転の境界条件、固有値。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:beamfreq]{第\ref*{theory:analysis:beamfreq}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{平成28年度 問3-5}
+\label{q:h28-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理15頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textbf{検討未確定：} 一様細長梁・線形小振動の標準モデル。せん断変形・回転慣性を含む短い梁へ厳密な値を一般化しない。
+
+\paragraph{問題の要旨} 梁の固有振動数は支持条件から比較。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{a：} 両端単純支持。\par
+
+\noindent\textbf{b：} 片持ち。\par
+
+\noindent\textbf{c：} 両端固定。\par
+
+\noindent\textbf{共通：} 同じ長さ・材質・断面、最も低い曲げモード。\par
+
+\paragraph{問われる核心} 梁の固有振動数は支持条件から比較。
+
+\paragraph{必要知識} 曲げ振動、変位と回転の境界条件、固有値。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 一様Euler–Bernoulli梁のω1=β1\textsuperscript{2}√(EI/(ρA))/L\textsuperscript{2}。同じ梁なら共通係数が消える。片持ちbはβ1≈1.875、単純支持aはπ、両端固定cは≈4.730なのでfb<fa<fc。固定端を増やすと拘束が強くなるが、名称だけで判断せず境界条件の固有値を比較する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件内で適切} fb<fa<fc。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{2：不適切} fa<fc<fb。各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。\par
+
+\noindent\textbf{3：不適切} fa<fb<fc。各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。\par
+
+\noindent\textbf{4：不適切} fb<fc<fa。各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。\par
+
+\noindent\textbf{5：不適切} fc<fa<fb。各文又は定義の判定を先に行う。並びが判定 fb<fa<fc と異なる。\par
+
+\paragraph{再利用する考え方} 曲げ振動、変位と回転の境界条件、固有値。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:beamfreq]{第\ref*{theory:analysis:beamfreq}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{連続式とBernoulliで管内速度を求める}
+
+\subsection{令和2年度 問3-6}
+\label{q:r02-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 連続式とBernoulliで管内速度を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{管：} 水平、a断面Aaからb断面Abへ、密度ρ。\par
+
+\noindent\textbf{モデル：} 非圧縮・非粘性、定常として流線のエネルギー損失を無視。\par
+
+\paragraph{問われる核心} 連続式とBernoulliで管内速度を求める。
+
+\paragraph{必要知識} 質量保存、圧力エネルギー、Bernoulli、面積比。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 非圧縮の連続式Aa va=\allowbreak{}Ab vbからva=\allowbreak{}(Ab/Aa)vb。同じ高さのBernoulli式pa+ρva\textsuperscript{2}/2=\allowbreak{}pb+ρvb\textsuperscript{2}/2へ代入する。pa−pb=ρvb\textsuperscript{2}[1−(Ab/Aa)\textsuperscript{2}]/2を解くと5。面積比は速度へ一次で入り、速度エネルギーへ代入すると二乗になる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} (Ab/Aa)√((pb−pa)/ρ)。各文又は定義の判定を先に行う。並びが判定 √(2(pa−pb)/ρ)/√(1−(Ab/Aa)\textsuperscript{2}) と異なる。\par
+
+\noindent\textbf{2：不適切} (Aa/Ab)√((pa−pb)/ρ)。各文又は定義の判定を先に行う。並びが判定 √(2(pa−pb)/ρ)/√(1−(Ab/Aa)\textsuperscript{2}) と異なる。\par
+
+\noindent\textbf{3：不適切} √(2(pb−pa)/ρ)/√(1−Ab/Aa)。各文又は定義の判定を先に行う。並びが判定 √(2(pa−pb)/ρ)/√(1−(Ab/Aa)\textsuperscript{2}) と異なる。\par
+
+\noindent\textbf{4：不適切} √(2(pa−pb)/ρ)/(1−Ab/Aa)。各文又は定義の判定を先に行う。並びが判定 √(2(pa−pb)/ρ)/√(1−(Ab/Aa)\textsuperscript{2}) と異なる。\par
+
+\noindent\textbf{5：条件内で適切} √(2(pa−pb)/ρ)/√(1−(Ab/Aa)\textsuperscript{2})。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\paragraph{再利用する考え方} 質量保存、圧力エネルギー、Bernoulli、面積比。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:bernoulli]{第\ref*{theory:analysis:bernoulli}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{Euler座屈の有効長で支持条件を比較}
+
+\subsection{令和6年度 問3-4}
+\label{q:r06-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textbf{検討未確定：} 真直・線形弾性の理想柱の比較。初期不整・残留応力・短柱の圧壊を含む実設計荷重としては使わない。
+
+\paragraph{問題の要旨} Euler座屈の有効長で支持条件を比較。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{a：} 両端ピン。\par
+
+\noindent\textbf{b：} 一端固定・他端ピン。\par
+
+\noindent\textbf{c：} 一端固定・他端自由。\par
+
+\noindent\textbf{共通：} 同じL,E,I、理想的細長柱、軸圧縮。\par
+
+\paragraph{問われる核心} Euler座屈の有効長で支持条件を比較。
+
+\paragraph{必要知識} Euler座屈、有効長、支持境界。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 臨界荷重Pcr=π\textsuperscript{2}EI/(KL)\textsuperscript{2}。a両端ピンはK=\allowbreak{}1、b固定・ピンはK≈0.699、c片持ちはK=\allowbreak{}2。EIとLは同じなので有効長が短いほど臨界荷重が大きく、Pb>Pa>Pc。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} Pa>Pb>Pc。各文又は定義の判定を先に行う。並びが判定 Pb>Pa>Pc と異なる。\par
+
+\noindent\textbf{2：不適切} Pa>Pc>Pb。各文又は定義の判定を先に行う。並びが判定 Pb>Pa>Pc と異なる。\par
+
+\noindent\textbf{3：条件内で適切} Pb>Pa>Pc。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{4：不適切} Pb>Pc>Pa。各文又は定義の判定を先に行う。並びが判定 Pb>Pa>Pc と異なる。\par
+
+\noindent\textbf{5：不適切} Pc>Pa>Pb。各文又は定義の判定を先に行う。並びが判定 Pb>Pa>Pc と異なる。\par
+
+\paragraph{再利用する考え方} Euler座屈、有効長、支持境界。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:buckling]{第\ref*{theory:analysis:buckling}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{等しい片持ち撓みから形状比を求める}
+
+\subsection{平成27年度 問3-6}
+\label{q:h27-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 等しい片持ち撓みから形状比を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{梁1：} 長さl、正方形一辺l/4。\par
+
+\noindent\textbf{梁2：} 長さa、断面幅l/32、高さd。\par
+
+\noindent\textbf{共通：} 同じE、先端荷重P、片持ち梁、等しい先端撓み。\par
+
+\paragraph{問われる核心} 等しい片持ち撓みから形状比を求める。
+
+\paragraph{必要知識} 梁撓み、曲げ軸、断面二次モーメント、次元。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 先端荷重撓みδ=PL\textsuperscript{3}/(3EI)。梁1の正方形断面はI1=\allowbreak{}(l/4)\textasciicircum{}4/12=\allowbreak{}l\textsuperscript{4}/3072。梁2は幅l/32、高さdなのでI2=\allowbreak{}ld\textsuperscript{3}/384。等しい撓みからl\textsuperscript{3}/I1=\allowbreak{}a\textsuperscript{3}/I2、a\textsuperscript{3}/d\textsuperscript{3}=8、a/d=\allowbreak{}2。長さの積adは無次元の形状比とならない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} ad=\allowbreak{}0.5。各文又は定義の判定を先に行う。並びが判定 a/d=\allowbreak{}2 と異なる。\par
+
+\noindent\textbf{2：不適切} ad=\allowbreak{}2.5。各文又は定義の判定を先に行う。並びが判定 a/d=\allowbreak{}2 と異なる。\par
+
+\noindent\textbf{3：不適切} a/d=\allowbreak{}0.5。各文又は定義の判定を先に行う。並びが判定 a/d=\allowbreak{}2 と異なる。\par
+
+\noindent\textbf{4：条件内で適切} a/d=\allowbreak{}2。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{5：不適切} a/d=\allowbreak{}2.5。各文又は定義の判定を先に行う。並びが判定 a/d=\allowbreak{}2 と異なる。\par
+
+\paragraph{再利用する考え方} 梁撓み、曲げ軸、断面二次モーメント、次元。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:cantilever]{第\ref*{theory:analysis:cantilever}節}
+
+\par 参考：\cite{struct_mit_beam}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{四分円の重心を面積一次モーメントで求める}
+
+\subsection{令和3年度 問3-6}
+\label{q:r03-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理15頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 四分円の重心を面積一次モーメントで求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{領域：} 第一象限、半径aの一様な四分円面。\par
+
+\noindent\textbf{問：} 面積重心のx,y座標。\par
+
+\paragraph{問われる核心} 四分円の重心を面積一次モーメントで求める。
+
+\paragraph{必要知識} 面積重心、対称性、一次モーメント。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 第一象限の半径aの四分円は対称性でxbar=\allowbreak{}ybar。面積A=πa\textsuperscript{2}/4、∫x dA=∫0\textasciicircum{}a x√(a\textsuperscript{2}−x\textsuperscript{2})dx=\allowbreak{}a\textsuperscript{3}/3。割るとxbar=\allowbreak{}4a/(3π)、同じくybar。弧だけの重心とは違い、面積全体を積分する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} (√3a/4,√3a/4)。各文又は定義の判定を先に行う。並びが判定 (4a/(3π),4a/(3π)) と異なる。\par
+
+\noindent\textbf{2：不適切} (a/2,a/2)。各文又は定義の判定を先に行う。並びが判定 (4a/(3π),4a/(3π)) と異なる。\par
+
+\noindent\textbf{3：不適切} (a/√2,a/√2)。各文又は定義の判定を先に行う。並びが判定 (4a/(3π),4a/(3π)) と異なる。\par
+
+\noindent\textbf{4：不適切} (3a/(4π),3a/(4π))。各文又は定義の判定を先に行う。並びが判定 (4a/(3π),4a/(3π)) と異なる。\par
+
+\noindent\textbf{5：条件内で適切} (4a/(3π),4a/(3π))。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\paragraph{再利用する考え方} 面積重心、対称性、一次モーメント。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:centroid]{第\ref*{theory:analysis:centroid}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{異材両端固定棒の荷重点剛性}
+
+\subsection{平成27年度 問3-5}
+\label{q:h27-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 異材両端固定棒の荷重点剛性。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{棒：} 全長l、各区間l/2、断面積S一定、左E1・右E2。\par
+
+\noindent\textbf{支持：} 両端固定、中央に軸方向P。\par
+
+\paragraph{問われる核心} 異材両端固定棒の荷重点剛性。
+
+\paragraph{必要知識} 異材の軸剛性、適合と釣合、極限検算。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 荷重点の左右はそれぞれl/2なので軸剛性は2SE1/lと2SE2/l。変位δに対し一方の伸びと他方の縮みがともに復元力を作る。P=[2S(E1+E2)/l]δ、従ってδ=Pl/[2S(E1+E2)]。E1=\allowbreak{}E2にしても分母が0にならず、均質な両端固定棒へ戻る。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} Pl/(2SE1)。各文又は定義の判定を先に行う。並びが判定 Pl/[2S(E1+E2)] と異なる。\par
+
+\noindent\textbf{2：不適切} Pl/(2SE2)。各文又は定義の判定を先に行う。並びが判定 Pl/[2S(E1+E2)] と異なる。\par
+
+\noindent\textbf{3：条件内で適切} Pl/[2S(E1+E2)]。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{4：不適切} 3Pl/[2S(2E1+E2)]。各文又は定義の判定を先に行う。並びが判定 Pl/[2S(E1+E2)] と異なる。\par
+
+\noindent\textbf{5：不適切} Pl/[2S(E1−E2)]。各文又は定義の判定を先に行う。並びが判定 Pl/[2S(E1+E2)] と異なる。\par
+
+\paragraph{再利用する考え方} 異材の軸剛性、適合と釣合、極限検算。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:compositebar]{第\ref*{theory:analysis:compositebar}節}
+
+\par 参考：\cite{mit_material_elastic2000}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{SI接頭辞をそろえて軸伸びを計算}
+
+\subsection{平成30年度 問3-6}
+\label{q:h30-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} SI接頭辞をそろえて軸伸びを計算。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{荷重N：} 4000\par
+
+\noindent\textbf{長さmm：} 2000\par
+
+\noindent\textbf{面積mm2：} 100\par
+
+\noindent\textbf{弾性係数N/mm2：} 200000\par
+
+\paragraph{問われる核心} SI接頭辞をそろえて軸伸びを計算。
+
+\paragraph{必要知識} 軸伸び、応力単位、接頭辞と長さ単位。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} NとmmにそろえるとP=\allowbreak{}4000 N、L=\allowbreak{}2000 mm、A=\allowbreak{}100 mm\textsuperscript{2}、E=\allowbreak{}200000 N/mm\textsuperscript{2}。δ=PL/(EA)=\allowbreak{}0.4 mm。GPaをN/mm\textsuperscript{2}にすると1GPa=\allowbreak{}1000N/mm\textsuperscript{2}。長さだけmに残すと1000倍の誤差が生じる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} .004mm。各文又は定義の判定を先に行う。並びが判定 .4mm と異なる。\par
+
+\noindent\textbf{2：不適切} .04mm。各文又は定義の判定を先に行う。並びが判定 .4mm と異なる。\par
+
+\noindent\textbf{3：条件内で適切} .4mm。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{4：不適切} 4mm。各文又は定義の判定を先に行う。並びが判定 .4mm と異なる。\par
+
+\noindent\textbf{5：不適切} 40mm。各文又は定義の判定を先に行う。並びが判定 .4mm と異なる。\par
+
+\paragraph{再利用する考え方} 軸伸び、応力単位、接頭辞と長さ単位。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:extension]{第\ref*{theory:analysis:extension}節}
+
+\par 参考：\cite{mit_material_elastic2000}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和5年度 問3-4}
+\label{q:r05-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} SI接頭辞をそろえて軸伸びを計算。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{荷重N：} 2000\par
+
+\noindent\textbf{長さmm：} 2400\par
+
+\noindent\textbf{面積mm2：} 120\par
+
+\noindent\textbf{弾性係数N/mm2：} 200000\par
+
+\paragraph{問われる核心} SI接頭辞をそろえて軸伸びを計算。
+
+\paragraph{必要知識} 軸伸び、応力単位、接頭辞と長さ単位。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} NとmmにそろえるとP=\allowbreak{}2000 N、L=\allowbreak{}2400 mm、A=\allowbreak{}120 mm\textsuperscript{2}、E=\allowbreak{}200000 N/mm\textsuperscript{2}。δ=PL/(EA)=\allowbreak{}0.2 mm。GPaをN/mm\textsuperscript{2}にすると1GPa=\allowbreak{}1000N/mm\textsuperscript{2}。長さだけmに残すと1000倍の誤差が生じる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} .010mm。各文又は定義の判定を先に行う。並びが判定 .20mm と異なる。\par
+
+\noindent\textbf{2：不適切} .020mm。各文又は定義の判定を先に行う。並びが判定 .20mm と異なる。\par
+
+\noindent\textbf{3：不適切} .050mm。各文又は定義の判定を先に行う。並びが判定 .20mm と異なる。\par
+
+\noindent\textbf{4：不適切} .10mm。各文又は定義の判定を先に行う。並びが判定 .20mm と異なる。\par
+
+\noindent\textbf{5：条件内で適切} .20mm。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\paragraph{再利用する考え方} 軸伸び、応力単位、接頭辞と長さ単位。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:extension]{第\ref*{theory:analysis:extension}節}
+
+\par 参考：\cite{mit_material_elastic2000}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{両端固定棒の荷重点変位から反力を求める}
+
+\subsection{平成24年度 問3-5}
+\label{q:h24-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 両端固定棒の荷重点変位から反力を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{支持：} 両端固定、荷重点の左長さ：右長さ=1:3。\par
+
+\noindent\textbf{材料：} 一様E,A、微小軸変形。\par
+
+\noindent\textbf{符号：} Pは右向き、両反力も右向きを正として記入。\par
+
+\paragraph{問われる核心} 両端固定棒の荷重点変位から反力を求める。
+
+\paragraph{必要知識} 軸剛性EA/l、変形適合、不静定棒、力の符号。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 荷重点の右向き変位をuと置く。左区間の伸びuと右区間の縮みuから、反力はPA=−EAu/lleft、PB=−EAu/lright。釣合PA+PB+P=\allowbreak{}0と合わせる。左右剛性比3:1なのでPA=−3P/4、PB=−P/4。短い区間の反力が大きく、どちらも図の正方向に対して負。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} (0,−P)。各文又は定義の判定を先に行う。並びが判定 (−3P/4,−P/4) と異なる。\par
+
+\noindent\textbf{2：不適切} (−P/4,−3P/4)。各文又は定義の判定を先に行う。並びが判定 (−3P/4,−P/4) と異なる。\par
+
+\noindent\textbf{3：不適切} (−P/2,−P/2)。各文又は定義の判定を先に行う。並びが判定 (−3P/4,−P/4) と異なる。\par
+
+\noindent\textbf{4：条件内で適切} (−3P/4,−P/4)。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{5：不適切} (−P,0)。各文又は定義の判定を先に行う。並びが判定 (−3P/4,−P/4) と異なる。\par
+
+\paragraph{再利用する考え方} 軸剛性EA/l、変形適合、不静定棒、力の符号。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:fixedbar]{第\ref*{theory:analysis:fixedbar}節}
+
+\par 参考：\cite{mit_material_elastic2000}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{平成26年度 問3-6}
+\label{q:h26-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 両端固定棒の荷重点変位から反力を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{支持：} 両端固定、荷重点の左長さ：右長さ=1:2。\par
+
+\noindent\textbf{材料：} 一様E,A、微小軸変形。\par
+
+\noindent\textbf{符号：} Pは右向き、両反力も右向きを正として記入。\par
+
+\paragraph{問われる核心} 両端固定棒の荷重点変位から反力を求める。
+
+\paragraph{必要知識} 軸剛性EA/l、変形適合、不静定棒、力の符号。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 荷重点の右向き変位をuと置く。左区間の伸びuと右区間の縮みuから、反力はPA=−EAu/lleft、PB=−EAu/lright。釣合PA+PB+P=\allowbreak{}0と合わせる。左右剛性比2:1なのでPA=−2P/3、PB=−P/3。短い区間の反力が大きく、どちらも図の正方向に対して負。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} (−P,0)。各文又は定義の判定を先に行う。並びが判定 (−2P/3,−P/3) と異なる。\par
+
+\noindent\textbf{2：条件内で適切} (−2P/3,−P/3)。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{3：不適切} (−P/2,−P/2)。各文又は定義の判定を先に行う。並びが判定 (−2P/3,−P/3) と異なる。\par
+
+\noindent\textbf{4：不適切} (−P/3,−2P/3)。各文又は定義の判定を先に行う。並びが判定 (−2P/3,−P/3) と異なる。\par
+
+\noindent\textbf{5：不適切} (0,−P)。各文又は定義の判定を先に行う。並びが判定 (−2P/3,−P/3) と異なる。\par
+
+\paragraph{再利用する考え方} 軸剛性EA/l、変形適合、不静定棒、力の符号。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:fixedbar]{第\ref*{theory:analysis:fixedbar}節}
+
+\par 参考：\cite{mit_material_elastic2000}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和7年度 問3-4}
+\label{q:r07-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 両端固定棒の荷重点変位から反力を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{支持：} 両端固定、荷重点の左長さ：右長さ=1:4。\par
+
+\noindent\textbf{材料：} 一様E,A、微小軸変形。\par
+
+\noindent\textbf{符号：} Pは右向き、両反力も右向きを正として記入。\par
+
+\paragraph{問われる核心} 両端固定棒の荷重点変位から反力を求める。
+
+\paragraph{必要知識} 軸剛性EA/l、変形適合、不静定棒、力の符号。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 荷重点の右向き変位をuと置く。左区間の伸びuと右区間の縮みuから、反力はPA=−EAu/lleft、PB=−EAu/lright。釣合PA+PB+P=\allowbreak{}0と合わせる。左右剛性比4:1なのでPA=−4P/5、PB=−P/5。短い区間の反力が大きく、どちらも図の正方向に対して負。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} (−P,0)。各文又は定義の判定を先に行う。並びが判定 (−4P/5,−P/5) と異なる。\par
+
+\noindent\textbf{2：条件内で適切} (−4P/5,−P/5)。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{3：不適切} (−P/2,−P/2)。各文又は定義の判定を先に行う。並びが判定 (−4P/5,−P/5) と異なる。\par
+
+\noindent\textbf{4：不適切} (−P/5,−4P/5)。各文又は定義の判定を先に行う。並びが判定 (−4P/5,−P/5) と異なる。\par
+
+\noindent\textbf{5：不適切} (0,−P)。各文又は定義の判定を先に行う。並びが判定 (−4P/5,−P/5) と異なる。\par
+
+\paragraph{再利用する考え方} 軸剛性EA/l、変形適合、不静定棒、力の符号。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:fixedbar]{第\ref*{theory:analysis:fixedbar}節}
+
+\par 参考：\cite{mit_material_elastic2000}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{減速機を介した円盤加速の入力トルク}
+
+\subsection{令和5年度 問3-5}
+\label{q:r05-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 減速機を介した円盤加速の入力トルク。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{減速：} 入力角速度:出力角速度=n:1。\par
+
+\noindent\textbf{円盤：} 出力に慣性I、ω1→ω2を時間T。\par
+
+\noindent\textbf{効率：} 1、損失無視。\par
+
+\paragraph{問われる核心} 減速機を介した円盤加速の入力トルク。
+
+\paragraph{必要知識} 動力保存、反射慣性、角加速度の基準。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 出力円盤の角加速度はΔω/Tで、出力トルクIΔω/T。入力/出力角速度比n、効率1なので入力トルクは出力の1/n。入力側換算慣性I/n\textsuperscript{2}を使う場合も入力角加速度はnΔω/Tであり、積はIΔω/(nT)になる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} IΔω/(n\textsuperscript{2}T)。各文又は定義の判定を先に行う。並びが判定 IΔω/(nT) と異なる。\par
+
+\noindent\textbf{2：条件内で適切} IΔω/(nT)。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{3：不適切} IΔω/T。各文又は定義の判定を先に行う。並びが判定 IΔω/(nT) と異なる。\par
+
+\noindent\textbf{4：不適切} nIΔω/T。各文又は定義の判定を先に行う。並びが判定 IΔω/(nT) と異なる。\par
+
+\noindent\textbf{5：不適切} n\textsuperscript{2}IΔω/T。各文又は定義の判定を先に行う。並びが判定 IΔω/(nT) と異なる。\par
+
+\paragraph{再利用する考え方} 動力保存、反射慣性、角加速度の基準。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:geartorque]{第\ref*{theory:analysis:geartorque}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{偏微分で勾配を作ってから座標を代入}
+
+\subsection{平成27年度 問3-2}
+\label{q:h27-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 偏微分で勾配を作ってから座標を代入。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{関数：} ψ(x,y)=\allowbreak{}2x−x\textsuperscript{2}y。\par
+
+\noindent\textbf{点：} (1,−1)。\par
+
+\paragraph{問われる核心} 偏微分で勾配を作ってから座標を代入。
+
+\paragraph{必要知識} 偏微分、勾配、ベクトルとノルム。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} ψ=2x−x\textsuperscript{2}yの勾配は(∂ψ/∂x,∂ψ/∂y)=\allowbreak{}(2−2xy,−x\textsuperscript{2})。x=\allowbreak{}1,y=−1を入れると(4,−1)。√17はこのベクトルの大きさであって勾配そのものではない。先に点の値を代入してψを定数にすると微分情報が失われる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} (1,−4)。各文又は定義の判定を先に行う。並びが判定 (4,−1) と異なる。\par
+
+\noindent\textbf{2：条件内で適切} (4,−1)。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{3：不適切} √17。各文又は定義の判定を先に行う。並びが判定 (4,−1) と異なる。\par
+
+\noindent\textbf{4：不適切} 3。各文又は定義の判定を先に行う。並びが判定 (4,−1) と異なる。\par
+
+\noindent\textbf{5：不適切} −3。各文又は定義の判定を先に行う。並びが判定 (4,−1) と異なる。\par
+
+\paragraph{再利用する考え方} 偏微分、勾配、ベクトルとノルム。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:gradient]{第\ref*{theory:analysis:gradient}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{通常の熱伝導と機械的振動を区別}
+
+\subsection{令和元年度再試験 問3-5}
+\label{q:r01-ret-basic-3-5}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textbf{検討未確定：} 時間一階微分だけでは非振動性を証明できない。一階の連立回転方程式は振動し得る。正の拡散係数とLaplacianの固有値を含む通常モデルとして限定して査読する。
+
+\paragraph{問題の要旨} 通常の熱伝導と機械的振動を区別。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{問：} 最も適切な記述。\par
+
+\noindent\textbf{熱：} 通常の伝導を扱う原典のモデル。\par
+
+\paragraph{問われる核心} 通常の熱伝導と機械的振動を区別。
+
+\paragraph{必要知識} 時間微分、安定な熱拡散、モード、境界条件。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 通常のFourier熱伝導∂T/∂t=κ∇\textsuperscript{2}T、κ>0では適切な固定温度又は断熱境界下の固有モードはe\textasciicircum{}(−κλt)で減衰し、慣性復元力による自由振動と異なる。材料だけでは形状・支持を落とし、気柱の開閉境界も重要。小振幅単振子の周期は質量によらず、薄板には複数モードがある。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 振動数は材料特性だけで定まる。各文又は定義の判定を先に行う。並びが判定 通常の熱伝導の自由応答は振動しない と異なる。\par
+
+\noindent\textbf{2：不適切} 気柱の境界は振動数に影響しない。各文又は定義の判定を先に行う。並びが判定 通常の熱伝導の自由応答は振動しない と異なる。\par
+
+\noindent\textbf{3：不適切} 振子の振動数は質量平方根に反比例。各文又は定義の判定を先に行う。並びが判定 通常の熱伝導の自由応答は振動しない と異なる。\par
+
+\noindent\textbf{4：条件内で適切} 通常の熱伝導の自由応答は振動しない。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{5：不適切} 薄板には一つのモードだけ。各文又は定義の判定を先に行う。並びが判定 通常の熱伝導の自由応答は振動しない と異なる。\par
+
+\paragraph{再利用する考え方} 時間微分、安定な熱拡散、モード、境界条件。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:heat]{第\ref*{theory:analysis:heat}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{三次元Hooke則のPoisson結合}
+
+\subsection{平成25年度 問3-1}
+\label{q:h25-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 三次元Hooke則のPoisson結合。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{材料：} 均質等方の線形弾性体。\par
+
+\noindent\textbf{記号：} 垂直応力σx,σy,σz、E、Poisson比ν。\par
+
+\paragraph{問われる核心} 三次元Hooke則のPoisson結合。
+
+\paragraph{必要知識} 三次元構成則、横収縮、応力とひずみの次元。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} x方向の引張応力はσx/Eの正ひずみを作る。y,z方向の引張は横収縮を通じて各−νσ/Eを加えるのでεx=[σx−ν(σy+σz)]/E。弾性係数を掛けるとひずみが無次元にならず、横応力の符号を正にすると収縮の向きも逆になる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} Eσx。各文又は定義の判定を先に行う。並びが判定 (σx−ν(σy+σz))/E と異なる。\par
+
+\noindent\textbf{2：不適切} E(σx+ν(σy+σz))。各文又は定義の判定を先に行う。並びが判定 (σx−ν(σy+σz))/E と異なる。\par
+
+\noindent\textbf{3：不適切} E(σx−ν(σy+σz))。各文又は定義の判定を先に行う。並びが判定 (σx−ν(σy+σz))/E と異なる。\par
+
+\noindent\textbf{4：不適切} (σx+ν(σy+σz))/E。各文又は定義の判定を先に行う。並びが判定 (σx−ν(σy+σz))/E と異なる。\par
+
+\noindent\textbf{5：条件内で適切} (σx−ν(σy+σz))/E。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\paragraph{再利用する考え方} 三次元構成則、横収縮、応力とひずみの次元。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:hooke]{第\ref*{theory:analysis:hooke}節}
+
+\par 参考：\cite{mit_material_elastic2000}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{非圧縮条件を体積ひずみから読む}
+
+\subsection{令和元年度 問3-4}
+\label{q:r01-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textbf{検討未確定：} ν=0.5は非圧縮極限。K=\allowbreak{}E/[3(1−2ν)]は発散し、有限の体積弾性係数をもつ通常の構成則に数値代入して扱わない。
+
+\paragraph{問題の要旨} 非圧縮条件を体積ひずみから読む。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{材料：} 等方線形弾性、微小ひずみ。\par
+
+\noindent\textbf{要件：} 任意の応力状態でも体積変化なし。\par
+
+\paragraph{問われる核心} 非圧縮条件を体積ひずみから読む。
+
+\paragraph{必要知識} 体積ひずみ、Hooke則、Poisson比。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 体積ひずみの一次近似はεx+εy+εz=\allowbreak{}(1−2ν)(σx+σy+σz)/E。任意の垂直応力に対して0とする非圧縮条件には1−2ν=0、ν=0.5が必要。特定の応力で和が0になる条件だけでは非圧縮材料を定義できない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 0。各文又は定義の判定を先に行う。並びが判定 0.5 と異なる。\par
+
+\noindent\textbf{2：不適切} 0.1。各文又は定義の判定を先に行う。並びが判定 0.5 と異なる。\par
+
+\noindent\textbf{3：不適切} 0.2。各文又は定義の判定を先に行う。並びが判定 0.5 と異なる。\par
+
+\noindent\textbf{4：条件内で適切} 0.5。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{5：不適切} 1。各文又は定義の判定を先に行う。並びが判定 0.5 と異なる。\par
+
+\paragraph{再利用する考え方} 体積ひずみ、Hooke則、Poisson比。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:incompressible]{第\ref*{theory:analysis:incompressible}節}
+
+\par 参考：\cite{mit_material_elastic2000}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{薄板の垂直軸定理で慣性モーメントを比較}
+
+\subsection{平成27年度 問3-4}
+\label{q:h27-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 薄板の垂直軸定理で慣性モーメントを比較。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{薄板：} 一様な長方形、x方向a、y方向2a。\par
+
+\noindent\textbf{軸：} 重心を通る直交三軸、zは面外。\par
+
+\paragraph{問われる核心} 薄板の垂直軸定理で慣性モーメントを比較。
+
+\paragraph{必要知識} 質量慣性モーメント、垂直軸定理、重心軸。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 重心を通る面内x軸はIx=\allowbreak{}M(2a)\textsuperscript{2}/12=\allowbreak{}Ma\textsuperscript{2}/3、y軸はIy=\allowbreak{}Ma\textsuperscript{2}/12。面外z軸には垂直軸定理Iz=\allowbreak{}Ix+Iy=\allowbreak{}5Ma\textsuperscript{2}/12を用いる。Ix>Iyでも和のIzがさらに大きいのでzのみ。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} Ixのみ。各文又は定義の判定を先に行う。並びが判定 Izのみ と異なる。\par
+
+\noindent\textbf{2：不適切} Iyのみ。各文又は定義の判定を先に行う。並びが判定 Izのみ と異なる。\par
+
+\noindent\textbf{3：条件内で適切} Izのみ。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{4：不適切} Ix,Iy。各文又は定義の判定を先に行う。並びが判定 Izのみ と異なる。\par
+
+\noindent\textbf{5：不適切} Ix,Iz。各文又は定義の判定を先に行う。並びが判定 Izのみ と異なる。\par
+
+\paragraph{再利用する考え方} 質量慣性モーメント、垂直軸定理、重心軸。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:inertia]{第\ref*{theory:analysis:inertia}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{楕円孔端で自由表面と応力集中を併用}
+
+\subsection{平成23年度 問3-2}
+\label{q:h23-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textbf{検討未確定：} Inglis式は十分広い等方線形弾性板の理想化。有限幅・塑性・鋭い亀裂先端へそのまま数値を外挿しない。
+
+\paragraph{問題の要旨} 楕円孔端で自由表面と応力集中を併用。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{孔：} x方向半軸a、y方向半軸b、a>b。\par
+
+\noindent\textbf{荷重：} 遠方y方向一様引張σ>0。\par
+
+\noindent\textbf{地点：} A=\allowbreak{}(a,0)、列順σx,σy,τxy。\par
+
+\paragraph{問われる核心} 楕円孔端で自由表面と応力集中を併用。
+
+\paragraph{必要知識} 自由表面の応力ベクトル、法線と接線、楕円孔の応力集中。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} A(a,0)の孔縁の法線はx方向。外力を受けない孔面なのでσx=τxy=\allowbreak{}0。一方、接線方向のσyは自由表面でも消えない。Inglis解σy=\allowbreak{}(1+2a/b)σでa>bなので3σより大きい。三成分の順を元表に戻す。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件内で適切} (0,>3σ,0)。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{2：不適切} (>0,>3σ,0)。各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。\par
+
+\noindent\textbf{3：不適切} (0,>3σ,>0)。各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。\par
+
+\noindent\textbf{4：不適切} (0,<3σ,0)。各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。\par
+
+\noindent\textbf{5：不適切} (>0,<3σ,0)。各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。\par
+
+\paragraph{再利用する考え方} 自由表面の応力ベクトル、法線と接線、楕円孔の応力集中。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:inglis]{第\ref*{theory:analysis:inglis}節}
+
+\par 参考：\cite{analysis57_inglis}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和元年度再試験 問3-6}
+\label{q:r01-ret-basic-3-6}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textbf{検討未確定：} Inglis式は十分広い等方線形弾性板の理想化。有限幅・塑性・鋭い亀裂先端へそのまま数値を外挿しない。
+
+\paragraph{問題の要旨} 楕円孔端で自由表面と応力集中を併用。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{孔：} x方向半軸a、y方向半軸b、a>b。\par
+
+\noindent\textbf{荷重：} 遠方y方向一様引張σ>0。\par
+
+\noindent\textbf{地点：} A=\allowbreak{}(a,0)、列順σx,σy,τxy。\par
+
+\paragraph{問われる核心} 楕円孔端で自由表面と応力集中を併用。
+
+\paragraph{必要知識} 自由表面の応力ベクトル、法線と接線、楕円孔の応力集中。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} A(a,0)の孔縁の法線はx方向。外力を受けない孔面なのでσx=τxy=\allowbreak{}0。一方、接線方向のσyは自由表面でも消えない。Inglis解σy=\allowbreak{}(1+2a/b)σでa>bなので3σより大きい。三成分の順を元表に戻す。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} (0,<3σ,0)。各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。\par
+
+\noindent\textbf{2：条件内で適切} (0,>3σ,0)。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{3：不適切} (0,>3σ,>0)。各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。\par
+
+\noindent\textbf{4：不適切} (>0,<3σ,0)。各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。\par
+
+\noindent\textbf{5：不適切} (>0,>3σ,0)。各文又は定義の判定を先に行う。並びが判定 (0,>3σ,0) と異なる。\par
+
+\paragraph{再利用する考え方} 自由表面の応力ベクトル、法線と接線、楕円孔の応力集中。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:inglis]{第\ref*{theory:analysis:inglis}節}
+
+\par 参考：\cite{analysis57_inglis}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{運動起電力と磁気制動から終端速度}
+
+\subsection{令和7年度 問3-6}
+\label{q:r07-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 運動起電力と磁気制動から終端速度。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{回路：} レール間隔L、抵抗R、棒・レールの抵抗無視。\par
+
+\noindent\textbf{磁場：} 面に垂直で一様B。\par
+
+\noindent\textbf{駆動：} 滑車と糸で質量Mが落下、摩擦無視、定常速度。\par
+
+\paragraph{問われる核心} 運動起電力と磁気制動から終端速度。
+
+\paragraph{必要知識} 運動起電力、Lenz則、磁気力、終端釣合。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 棒の起電力ε=BLv、回路電流I=ε/R。棒に働く磁気力F=\allowbreak{}IBL=\allowbreak{}B\textsuperscript{2}L\textsuperscript{2}v/RはLenz則で運動を妨げる。終端速度ではつり下げ質量の張力Mgと釣合うのでv=\allowbreak{}MgR/(BL)\textsuperscript{2}。回路抵抗を増すと制動電流が減り、速度は増える。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件内で適切} MgR/(BL)\textsuperscript{2}。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{2：不適切} (BL)\textsuperscript{2}/(MgR)。各文又は定義の判定を先に行う。並びが判定 MgR/(BL)\textsuperscript{2} と異なる。\par
+
+\noindent\textbf{3：不適切} MgR/(BL)。各文又は定義の判定を先に行う。並びが判定 MgR/(BL)\textsuperscript{2} と異なる。\par
+
+\noindent\textbf{4：不適切} BLR/(Mg)。各文又は定義の判定を先に行う。並びが判定 MgR/(BL)\textsuperscript{2} と異なる。\par
+
+\noindent\textbf{5：不適切} Mg/(BLR)。各文又は定義の判定を先に行う。並びが判定 MgR/(BL)\textsuperscript{2} と異なる。\par
+
+\paragraph{再利用する考え方} 運動起電力、Lenz則、磁気力、終端釣合。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:motional]{第\ref*{theory:analysis:motional}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{対称性と節点方程式で抵抗網を比較}
+
+\subsection{平成29年度 問3-4}
+\label{q:h29-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 対称性と節点方程式で抵抗網を比較。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{配線：} a菱形5辺、b3×3節点格子、c2×3節点梯子\par
+
+\noindent\textbf{端子：} 原典で示す対角頂点A,B。\par
+
+\noindent\textbf{各辺：} 長さL、同材料・同断面。交点の接続を原典で確認。\par
+
+\paragraph{問われる核心} 対称性と節点方程式で抵抗網を比較。
+
+\paragraph{必要知識} Ohm則、Kirchhoff則、等電位、グラフ。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 同長同断面の各辺をrとする。菱形は上下節点が同電位で中央の辺に電流が流れず、2rの二枝並列でr。3×3節点格子の対角端子は3r/2、2×3梯子の対角端子は7r/5。後二者は分岐があるので図の見た目で直列化せず、端子1Vで各内部節点にΣ(Vi−Vj)/r=\allowbreak{}0を立てる。有理数消去による別検算を保存。r<7r/5<3r/2を当該a,b,cへ戻す。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} Ra<Rb<Rc。各文又は定義の判定を先に行う。並びが判定 Ra<Rc<Rb と異なる。\par
+
+\noindent\textbf{2：条件内で適切} Ra<Rc<Rb。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{3：不適切} Rc<Ra<Rb。各文又は定義の判定を先に行う。並びが判定 Ra<Rc<Rb と異なる。\par
+
+\noindent\textbf{4：不適切} Rc<Rb<Ra。各文又は定義の判定を先に行う。並びが判定 Ra<Rc<Rb と異なる。\par
+
+\noindent\textbf{5：不適切} Rb<Ra<Rc。各文又は定義の判定を先に行う。並びが判定 Ra<Rc<Rb と異なる。\par
+
+\paragraph{再利用する考え方} Ohm則、Kirchhoff則、等電位、グラフ。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:network]{第\ref*{theory:analysis:network}節}
+
+\par 参考：\cite{analysis57_resistors}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和5年度 問3-6}
+\label{q:r05-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 対称性と節点方程式で抵抗網を比較。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{配線：} a2×3節点梯子、b3×3節点格子、c菱形5辺\par
+
+\noindent\textbf{端子：} 原典で示す対角頂点A,B。\par
+
+\noindent\textbf{各辺：} 長さL、同材料・同断面。交点の接続を原典で確認。\par
+
+\paragraph{問われる核心} 対称性と節点方程式で抵抗網を比較。
+
+\paragraph{必要知識} Ohm則、Kirchhoff則、等電位、グラフ。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 同長同断面の各辺をrとする。菱形は上下節点が同電位で中央の辺に電流が流れず、2rの二枝並列でr。3×3節点格子の対角端子は3r/2、2×3梯子の対角端子は7r/5。後二者は分岐があるので図の見た目で直列化せず、端子1Vで各内部節点にΣ(Vi−Vj)/r=\allowbreak{}0を立てる。有理数消去による別検算を保存。r<7r/5<3r/2を当該a,b,cへ戻す。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} Ra<Rb<Rc。各文又は定義の判定を先に行う。並びが判定 Rc<Ra<Rb と異なる。\par
+
+\noindent\textbf{2：不適切} Ra<Rc<Rb。各文又は定義の判定を先に行う。並びが判定 Rc<Ra<Rb と異なる。\par
+
+\noindent\textbf{3：条件内で適切} Rc<Ra<Rb。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{4：不適切} Rc<Rb<Ra。各文又は定義の判定を先に行う。並びが判定 Rc<Ra<Rb と異なる。\par
+
+\noindent\textbf{5：不適切} Rb<Ra<Rc。各文又は定義の判定を先に行う。並びが判定 Rc<Ra<Rb と異なる。\par
+
+\paragraph{再利用する考え方} Ohm則、Kirchhoff則、等電位、グラフ。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:network]{第\ref*{theory:analysis:network}節}
+
+\par 参考：\cite{analysis57_resistors}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和6年度 問3-6}
+\label{q:r06-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 交点接続を含む抵抗網の等電位を利用。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{各抵抗：} 全八個1Ω。\par
+
+\noindent\textbf{図：} 菱形外周四辺と上下・左右の中央接続四辺、交点に接続点。\par
+
+\noindent\textbf{端子：} 左右a,b。\par
+
+\paragraph{問われる核心} 交点接続を含む抵抗網の等電位を利用。
+
+\paragraph{必要知識} 等電位、節点接続、並列合成。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} a,b端子の中央に対する対称性から上、下、中央接続点が同電位。これらを結ぶ二抵抗には電流が流れない。残るaからbへの上・中央・下の三枝はそれぞれ1Ω+1Ω=2Ω、並列で2/3Ω。中央の黒点は交差線の接続を示し、未接続の交差へ読み替えない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 4/3Ω。各文又は定義の判定を先に行う。並びが判定 2/3Ω と異なる。\par
+
+\noindent\textbf{2：不適切} 1Ω。各文又は定義の判定を先に行う。並びが判定 2/3Ω と異なる。\par
+
+\noindent\textbf{3：条件内で適切} 2/3Ω。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{4：不適切} 1/3Ω。各文又は定義の判定を先に行う。並びが判定 2/3Ω と異なる。\par
+
+\noindent\textbf{5：不適切} 1/6Ω。各文又は定義の判定を先に行う。並びが判定 2/3Ω と異なる。\par
+
+\paragraph{再利用する考え方} 等電位、節点接続、並列合成。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:network]{第\ref*{theory:analysis:network}節}
+
+\par 参考：\cite{analysis57_resistors}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{平行な棒の共通伸びから応力比を求める}
+
+\subsection{平成28年度 問3-6}
+\label{q:h28-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理16頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 平行な棒の共通伸びから応力比を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{棒：} 等長L、A棒のAA,EAとB棒のAB,EB。\par
+
+\noindent\textbf{端：} 剛体板で共通軸変位、原典の平行配置。\par
+
+\paragraph{問われる核心} 平行な棒の共通伸びから応力比を求める。
+
+\paragraph{必要知識} 共通ひずみ、応力と軸力の区別。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 両棒は等しい長さLで剛体端板に接続され、端板の回転が拘束されるため伸びδが共通。εA=εB=δ/Lで、σA/σB=\allowbreak{}EA/EB。軸力の比ならNA/NB=\allowbreak{}AAEA/(ABEB)だが、問は応力なので断面積は消える。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} AAEA/(ABEB)。各文又は定義の判定を先に行う。並びが判定 EA/EB と異なる。\par
+
+\noindent\textbf{2：不適切} ABEB/(AAEA)。各文又は定義の判定を先に行う。並びが判定 EA/EB と異なる。\par
+
+\noindent\textbf{3：不適切} ABEA/(AAEB)。各文又は定義の判定を先に行う。並びが判定 EA/EB と異なる。\par
+
+\noindent\textbf{4：条件内で適切} EA/EB。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{5：不適切} EB/EA。各文又は定義の判定を先に行う。並びが判定 EA/EB と異なる。\par
+
+\paragraph{再利用する考え方} 共通ひずみ、応力と軸力の区別。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:parallelbar]{第\ref*{theory:analysis:parallelbar}節}
+
+\par 参考：\cite{mit_material_elastic2000}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{棒振子の質量慣性と重力トルク}
+
+\subsection{令和元年度 問3-6}
+\label{q:r01-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理15頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 棒振子の質量慣性と重力トルク。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{棒：} 一様細長棒、長さl、上端回転自由、重力g。\par
+
+\noindent\textbf{運動：} 微小角振動、摩擦無視。\par
+
+\paragraph{問われる核心} 棒振子の質量慣性と重力トルク。
+
+\paragraph{必要知識} 物理振子、慣性モーメント、線形化。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 上端を支点とする一様棒のI=\allowbreak{}Ml\textsuperscript{2}/3、重心距離l/2。小振幅ではIθsecond=−Mg(l/2)θなのでω\textsuperscript{2}=3g/(2l)、T=\allowbreak{}2π√(2l/(3g))。全質量を棒端に集める単振子の式を使わない。質量は約分される。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 2π√(l/g)。各文又は定義の判定を先に行う。並びが判定 2π√(2l/(3g)) と異なる。\par
+
+\noindent\textbf{2：不適切} 2π√(3l/(2g))。各文又は定義の判定を先に行う。並びが判定 2π√(2l/(3g)) と異なる。\par
+
+\noindent\textbf{3：条件内で適切} 2π√(2l/(3g))。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{4：不適切} 2π√(2g/(3l))。各文又は定義の判定を先に行う。並びが判定 2π√(2l/(3g)) と異なる。\par
+
+\noindent\textbf{5：不適切} 2π√(3g/(2l))。各文又は定義の判定を先に行う。並びが判定 2π√(2l/(3g)) と異なる。\par
+
+\paragraph{再利用する考え方} 物理振子、慣性モーメント、線形化。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:pendulum]{第\ref*{theory:analysis:pendulum}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{安定平衡のポテンシャルは最小}
+
+\subsection{平成30年度 問3-5}
+\label{q:h30-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 安定平衡のポテンシャルは最小。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{系：} 鉛直ばねk、質点m、重力g。\par
+
+\noindent\textbf{座標：} 自然長位置から下向きをu>0。\par
+
+\noindent\textbf{問：} 不適切な記述を一つ。\par
+
+\paragraph{問われる核心} 安定平衡のポテンシャルは最小。
+
+\paragraph{必要知識} ポテンシャル、停留と安定性、座標の符号。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 自然長から下向きuとしてΠ=ku\textsuperscript{2}/2−mgu。Πprime=\allowbreak{}ku−mg=\allowbreak{}0でu=\allowbreak{}mg/k、Πsecond=\allowbreak{}k>0なので最小。最大とする3が不適切。他の式は同じ座標と基準で整合する。有限要素のエネルギー原理も保守系等の適用条件があり、あらゆる非保存力の問題へ無条件に一般化しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件内で適切} ばねポテンシャルはku\textsuperscript{2}/2。自然長からの伸びで正しい。\par
+
+\noindent\textbf{2：条件内で適切} 重力ポテンシャルは−mgu。下向き座標で重力ポテンシャルは負。\par
+
+\noindent\textbf{3：不適切・選択対象} 平衡で全ポテンシャル最大。二階微分k>0なので最小であり、最大という主張が誤り。\par
+
+\noindent\textbf{4：条件内で適切} 平衡変位mg/k。停留条件ku−mg=\allowbreak{}0。\par
+
+\noindent\textbf{5：条件内で適切} エネルギーの極値が保守系FEMの基礎。保守系等の条件下のエネルギー停留原理に対応。\par
+
+\paragraph{再利用する考え方} ポテンシャル、停留と安定性、座標の符号。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:potential]{第\ref*{theory:analysis:potential}節}
+
+\par 参考：\cite{analysis57_shm}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{平面への垂足を法線方向射影で求める}
+
+\subsection{令和元年度再試験 問3-2}
+\label{q:r01-ret-basic-3-2}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 平面への垂足を法線方向射影で求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{点：} A=\allowbreak{}(6,5,4)。\par
+
+\noindent\textbf{平面：} x+2y−z=\allowbreak{}0。\par
+
+\paragraph{問われる核心} 平面への垂足を法線方向射影で求める。
+
+\paragraph{必要知識} 法線、内積、正射影、二条件による検算。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 法線n=\allowbreak{}(1,2,−1)、A=\allowbreak{}(6,5,4)、n·A=\allowbreak{}12、n·n=\allowbreak{}6。垂足H=\allowbreak{}A−[12/6]n=\allowbreak{}(4,1,6)。4+2×1−6=\allowbreak{}0で平面上にあり、A−H=\allowbreak{}(2,4,−2)=\allowbreak{}2nで垂直も確認できる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} (1,1,3)。各文又は定義の判定を先に行う。並びが判定 (4,1,6) と異なる。\par
+
+\noindent\textbf{2：条件内で適切} (4,1,6)。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{3：不適切} (3,2,7)。各文又は定義の判定を先に行う。並びが判定 (4,1,6) と異なる。\par
+
+\noindent\textbf{4：不適切} (2,1,4)。各文又は定義の判定を先に行う。並びが判定 (4,1,6) と異なる。\par
+
+\noindent\textbf{5：不適切} (5,3,5)。各文又は定義の判定を先に行う。並びが判定 (4,1,6) と異なる。\par
+
+\paragraph{再利用する考え方} 法線、内積、正射影、二条件による検算。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:projection]{第\ref*{theory:analysis:projection}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{同面積でも曲げ方向の断面高さが効く}
+
+\subsection{平成25年度 問3-2}
+\label{q:h25-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 同面積でも曲げ方向の断面高さが効く。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{断面：} a:幅z=\allowbreak{}d・高さy=\allowbreak{}4d、b:2d×2d、c:幅z=\allowbreak{}4d・高さy=\allowbreak{}d。\par
+
+\noindent\textbf{共通：} 同じE、梁長さ、支持、荷重、断面積4d\textsuperscript{2}。\par
+
+\noindent\textbf{曲げ：} xy面内。\par
+
+\paragraph{問われる核心} 同面積でも曲げ方向の断面高さが効く。
+
+\paragraph{必要知識} 断面二次モーメント、曲げ軸、曲げ剛性、撓み。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} xy面内の曲げではz軸回りIz=\allowbreak{}bh\textsuperscript{3}/12。aは幅d×高さ4dで16d\textsuperscript{4}/3、bは2d×2dで4d\textsuperscript{4}/3、cは幅4d×高さdでd\textsuperscript{4}/3。cの曲げ剛性EIが最小なので撓みが最大。面積はいずれも4d\textsuperscript{2}でも、曲げでは高さの三乗を使う。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} aのみ。各文又は定義の判定を先に行う。並びが判定 cのみ と異なる。\par
+
+\noindent\textbf{2：不適切} bのみ。各文又は定義の判定を先に行う。並びが判定 cのみ と異なる。\par
+
+\noindent\textbf{3：条件内で適切} cのみ。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{4：不適切} a,b。各文又は定義の判定を先に行う。並びが判定 cのみ と異なる。\par
+
+\noindent\textbf{5：不適切} b,c。各文又は定義の判定を先に行う。並びが判定 cのみ と異なる。\par
+
+\paragraph{再利用する考え方} 断面二次モーメント、曲げ軸、曲げ剛性、撓み。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:section]{第\ref*{theory:analysis:section}節}
+
+\par 参考：\cite{struct_mit_beam}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{平成29年度 問3-6}
+\label{q:h29-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 同面積でも曲げ方向の断面高さが効く。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{断面：} a:幅z=\allowbreak{}d・高さy=\allowbreak{}4d、b:2d×2d、c:幅z=\allowbreak{}4d・高さy=\allowbreak{}d。\par
+
+\noindent\textbf{共通：} 同じE、梁長さ、支持、荷重、断面積4d\textsuperscript{2}。\par
+
+\noindent\textbf{曲げ：} xy面内。\par
+
+\paragraph{問われる核心} 同面積でも曲げ方向の断面高さが効く。
+
+\paragraph{必要知識} 断面二次モーメント、曲げ軸、曲げ剛性、撓み。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} xy面内の曲げではz軸回りIz=\allowbreak{}bh\textsuperscript{3}/12。aは幅d×高さ4dで16d\textsuperscript{4}/3、bは2d×2dで4d\textsuperscript{4}/3、cは幅4d×高さdでd\textsuperscript{4}/3。cの曲げ剛性EIが最小なので撓みが最大。面積はいずれも4d\textsuperscript{2}でも、曲げでは高さの三乗を使う。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} a,b。各文又は定義の判定を先に行う。並びが判定 cのみ と異なる。\par
+
+\noindent\textbf{2：不適切} b,c。各文又は定義の判定を先に行う。並びが判定 cのみ と異なる。\par
+
+\noindent\textbf{3：不適切} aのみ。各文又は定義の判定を先に行う。並びが判定 cのみ と異なる。\par
+
+\noindent\textbf{4：不適切} bのみ。各文又は定義の判定を先に行う。並びが判定 cのみ と異なる。\par
+
+\noindent\textbf{5：条件内で適切} cのみ。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\paragraph{再利用する考え方} 断面二次モーメント、曲げ軸、曲げ剛性、撓み。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:section]{第\ref*{theory:analysis:section}節}
+
+\par 参考：\cite{struct_mit_beam}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{ばねの並列・直列と両側支持を区別}
+
+\subsection{平成26年度 問3-5}
+\label{q:h26-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} ばねの並列・直列と両側支持を区別。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{配置：} a並列、b直列、c左右の壁\par
+
+\noindent\textbf{共通：} ばね二本ともk、質点m、ばね質量・摩擦・減衰を無視。\par
+
+\paragraph{問われる核心} ばねの並列・直列と両側支持を区別。
+
+\paragraph{必要知識} 等価ばね定数、復元力の符号、角振動数。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 並列では同変位の力が加わりkeff=\allowbreak{}2k。直列では同じ力に対する伸びが加わりkeff=\allowbreak{}k/2。質点の両側を壁へつなぐ二本は、右へ動かすと左の伸びと右の縮みがともに左向き復元力を作り2k。ω=√(keff/m)が最小なのは直列。配置のa,b,cが年度で入れ替わるので番号を転用しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} a。各文又は定義の判定を先に行う。並びが判定 b と異なる。\par
+
+\noindent\textbf{2：条件内で適切} b。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{3：不適切} c。各文又は定義の判定を先に行う。並びが判定 b と異なる。\par
+
+\noindent\textbf{4：不適切} a,b。各文又は定義の判定を先に行う。並びが判定 b と異なる。\par
+
+\noindent\textbf{5：不適切} b,c。各文又は定義の判定を先に行う。並びが判定 b と異なる。\par
+
+\paragraph{再利用する考え方} 等価ばね定数、復元力の符号、角振動数。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:spring]{第\ref*{theory:analysis:spring}節}
+
+\par 参考：\cite{analysis57_shm}。
+
+\paragraph{関連問題} \hyperref[q:h24-reg-basic-3-2]{H24-REG-BASIC-3-2}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\subsection{令和6年度 問3-5}
+\label{q:r06-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} ばねの並列・直列と両側支持を区別。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{配置：} a並列、b左右の壁、c直列\par
+
+\noindent\textbf{共通：} ばね二本ともk、質点m、ばね質量・摩擦・減衰を無視。\par
+
+\paragraph{問われる核心} ばねの並列・直列と両側支持を区別。
+
+\paragraph{必要知識} 等価ばね定数、復元力の符号、角振動数。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 並列では同変位の力が加わりkeff=\allowbreak{}2k。直列では同じ力に対する伸びが加わりkeff=\allowbreak{}k/2。質点の両側を壁へつなぐ二本は、右へ動かすと左の伸びと右の縮みがともに左向き復元力を作り2k。ω=√(keff/m)が最小なのは直列。配置のa,b,cが年度で入れ替わるので番号を転用しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} a。各文又は定義の判定を先に行う。並びが判定 c と異なる。\par
+
+\noindent\textbf{2：不適切} b。各文又は定義の判定を先に行う。並びが判定 c と異なる。\par
+
+\noindent\textbf{3：条件内で適切} c。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{4：不適切} a,b。各文又は定義の判定を先に行う。並びが判定 c と異なる。\par
+
+\noindent\textbf{5：不適切} b,c。各文又は定義の判定を先に行う。並びが判定 c と異なる。\par
+
+\paragraph{再利用する考え方} 等価ばね定数、復元力の符号、角振動数。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:spring]{第\ref*{theory:analysis:spring}節}
+
+\par 参考：\cite{analysis57_shm}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{傾斜と重力は平衡位置を変える}
+
+\subsection{令和2年度 問3-5}
+\label{q:r02-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 傾斜と重力は平衡位置を変える。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{A：} 水平。\par
+
+\noindent\textbf{B：} 45°の滑らかな斜面。\par
+
+\noindent\textbf{C：} 鉛直。\par
+
+\noindent\textbf{共通：} 質点m、同じばねk、摩擦無視、ばね軸方向運動。\par
+
+\paragraph{問われる核心} 傾斜と重力は平衡位置を変える。
+
+\paragraph{必要知識} 平衡位置、一定外力、線形ばね振動。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 運動方向をばね軸に取り、平衡位置からの変位xを使う。重力成分は平衡条件に吸収され、どの配置もm xsecond=−kx。ω=√(k/m)なので三者同じ。鉛直で伸びが大きいことを振動数の違いへ直結させない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件内で適切} A=\allowbreak{}B=\allowbreak{}C。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{2：不適切} A>B>C。各文又は定義の判定を先に行う。並びが判定 A=\allowbreak{}B=\allowbreak{}C と異なる。\par
+
+\noindent\textbf{3：不適切} A<B<C。各文又は定義の判定を先に行う。並びが判定 A=\allowbreak{}B=\allowbreak{}C と異なる。\par
+
+\noindent\textbf{4：不適切} A=\allowbreak{}C>B。各文又は定義の判定を先に行う。並びが判定 A=\allowbreak{}B=\allowbreak{}C と異なる。\par
+
+\noindent\textbf{5：不適切} A=\allowbreak{}C<B。各文又は定義の判定を先に行う。並びが判定 A=\allowbreak{}B=\allowbreak{}C と異なる。\par
+
+\paragraph{再利用する考え方} 平衡位置、一定外力、線形ばね振動。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:springgravity]{第\ref*{theory:analysis:springgravity}節}
+
+\par 参考：\cite{analysis57_shm}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{張力の小振動剛性と長さ・質量の比}
+
+\subsection{令和4年度 問3-6}
+\label{q:r04-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 張力の小振動剛性と長さ・質量の比。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{a：} 全長2L、中央質量m。\par
+
+\noindent\textbf{b：} 全長4L、中央質量2m。\par
+
+\noindent\textbf{共通：} 一定張力T、原典の弦に直交する微小変位、他方向の変位無視。\par
+
+\paragraph{問われる核心} 張力の小振動剛性と長さ・質量の比。
+
+\paragraph{必要知識} 張力の成分、小角近似、等価剛性。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} aの各半長Lで中央変位xが小さいと各張力の横成分はTx/L、合計2Tx/L。ωa\textsuperscript{2}=2T/(mL)。bは各半長2L、質量2mでωb\textsuperscript{2}=2T/[(2m)(2L)]=T/(2mL)。二乗比4なのでωa:ωb=\allowbreak{}2:1。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 1:1。各文又は定義の判定を先に行う。並びが判定 2:1 と異なる。\par
+
+\noindent\textbf{2：不適切} 1:√2。各文又は定義の判定を先に行う。並びが判定 2:1 と異なる。\par
+
+\noindent\textbf{3：不適切} 1:2。各文又は定義の判定を先に行う。並びが判定 2:1 と異なる。\par
+
+\noindent\textbf{4：不適切} √2:1。各文又は定義の判定を先に行う。並びが判定 2:1 と異なる。\par
+
+\noindent\textbf{5：条件内で適切} 2:1。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\paragraph{再利用する考え方} 張力の成分、小角近似、等価剛性。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:stringmass]{第\ref*{theory:analysis:stringmass}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{線形抵抗を受ける落下の終端速度}
+
+\subsection{令和元年度 問3-3}
+\label{q:r01-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 線形抵抗を受ける落下の終端速度。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{質点：} m>0、g>0。\par
+
+\noindent\textbf{抵抗：} 速さに比例、係数k>0、運動と反対。\par
+
+\noindent\textbf{範囲：} 原典は浮力を別項として与えない。\par
+
+\paragraph{問われる核心} 線形抵抗を受ける落下の終端速度。
+
+\paragraph{必要知識} 運動方程式、終端速度、一次微分方程式。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 下向き正でm dv/dt=\allowbreak{}mg−kv。定常状態dv/dt=\allowbreak{}0からv∞=mg/k。解v=\allowbreak{}mg/k+(v0−mg/k)e\textasciicircum{}(−kt/m)もこの極限に収束する。速度の二乗に比例する抵抗なら平方根になるが、原典はkvなので使わない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件内で適切} mg/k。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{2：不適切} 2mg/k。各文又は定義の判定を先に行う。並びが判定 mg/k と異なる。\par
+
+\noindent\textbf{3：不適切} √(mg)/k。各文又は定義の判定を先に行う。並びが判定 mg/k と異なる。\par
+
+\noindent\textbf{4：不適切} √(mg/k)。各文又は定義の判定を先に行う。並びが判定 mg/k と異なる。\par
+
+\noindent\textbf{5：不適切} √(2mg/k)。各文又は定義の判定を先に行う。並びが判定 mg/k と異なる。\par
+
+\paragraph{再利用する考え方} 運動方程式、終端速度、一次微分方程式。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:terminal]{第\ref*{theory:analysis:terminal}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{四面体の端子位置で合成抵抗は変わる}
+
+\subsection{令和7年度 問3-5}
+\label{q:r07-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 四面体の端子位置で合成抵抗は変わる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{構造：} 正四面体六辺、各辺同材料・同長L・同断面。\par
+
+\noindent\textbf{a：} 二頂点。\par
+
+\noindent\textbf{b：} 頂点とその対辺中点。\par
+
+\noindent\textbf{c：} 互いに向かい合う二辺の中点。\par
+
+\paragraph{問われる核心} 四面体の端子位置で合成抵抗は変わる。
+
+\paragraph{必要知識} 対称な等電位群、中点での辺分割、直並列。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 一辺全体の抵抗をRとする。aは頂点間で直接Rと、残る二頂点を同電位にまとめた経路Rとの並列からR/2。bは頂点と対辺中点。対辺の両頂点をまとめると端子からそこまでR/2と3R/2の並列で3R/8、その節点から中点までR/4を足し5R/8。cは向かい合う二辺中点で各端のR/4と二頂点群間の四辺並列R/4を直列にし3R/4。従ってRa<Rb<Rc。節点方程式の有理数検算も一致する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} Rb<Rc<Ra。各文又は定義の判定を先に行う。並びが判定 Ra<Rb<Rc と異なる。\par
+
+\noindent\textbf{2：不適切} Ra<Rc<Rb。各文又は定義の判定を先に行う。並びが判定 Ra<Rb<Rc と異なる。\par
+
+\noindent\textbf{3：不適切} Rc<Ra<Rb。各文又は定義の判定を先に行う。並びが判定 Ra<Rb<Rc と異なる。\par
+
+\noindent\textbf{4：不適切} Rc<Rb<Ra。各文又は定義の判定を先に行う。並びが判定 Ra<Rb<Rc と異なる。\par
+
+\noindent\textbf{5：条件内で適切} Ra<Rb<Rc。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\paragraph{再利用する考え方} 対称な等電位群、中点での辺分割、直並列。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:tetra]{第\ref*{theory:analysis:tetra}節}
+
+\par 参考：\cite{analysis57_resistors}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{固定棒の熱ひずみを圧縮応力が相殺}
+
+\subsection{令和3年度 問3-4}
+\label{q:r03-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 固定棒の熱ひずみを圧縮応力が相殺。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{材料：} E=\allowbreak{}2.0×10\textsuperscript{3}MPa、α=1.0×10\textasciicircum{}-4/K。\par
+
+\noindent\textbf{拘束：} 両端固定、温度20K上昇。\par
+
+\paragraph{問われる核心} 固定棒の熱ひずみを圧縮応力が相殺。
+
+\paragraph{必要知識} 熱ひずみ、適合、応力の符号。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 自由な熱ひずみαΔTに機械ひずみσ/Eを加え、両端固定の全ひずみ0とする。σ=−EαΔT=−(2.0×10\textsuperscript{3}MPa)×(1.0×10\textasciicircum{}-4/K)×20K=−4MPa。温度上昇を妨げるので圧縮。Eを鋼の代表値へ置き換えず原典の2.0×10\textsuperscript{3}MPaを使う。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 2MPa引張。各文又は定義の判定を先に行う。並びが判定 4MPa圧縮 と異なる。\par
+
+\noindent\textbf{2：不適切} 4MPa引張。各文又は定義の判定を先に行う。並びが判定 4MPa圧縮 と異なる。\par
+
+\noindent\textbf{3：条件内で適切} 4MPa圧縮。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{4：不適切} 8MPa引張。各文又は定義の判定を先に行う。並びが判定 4MPa圧縮 と異なる。\par
+
+\noindent\textbf{5：不適切} 8MPa圧縮。各文又は定義の判定を先に行う。並びが判定 4MPa圧縮 と異なる。\par
+
+\paragraph{再利用する考え方} 熱ひずみ、適合、応力の符号。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:thermal]{第\ref*{theory:analysis:thermal}節}
+
+\par 参考：\cite{mit_material_elastic2000}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{角速度変化から慣性トルク}
+
+\subsection{令和4年度 問3-5}
+\label{q:r04-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 角速度変化から慣性トルク。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{円盤：} 慣性モーメントI。\par
+
+\noindent\textbf{操作：} 角速度ω1からω2へ時間Tで一定角加速度。\par
+
+\paragraph{問われる核心} 角速度変化から慣性トルク。
+
+\paragraph{必要知識} 角加速度、回転運動方程式、次元。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 一定角加速度α=(ω2−ω1)/T=Δω/T。運動方程式τ=Iαなので3。角速度の二乗差は回転運動エネルギーの差に関係し、所要トルクと単位も異なる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} IΔω。各文又は定義の判定を先に行う。並びが判定 IΔω/T と異なる。\par
+
+\noindent\textbf{2：不適切} IΔωT。各文又は定義の判定を先に行う。並びが判定 IΔω/T と異なる。\par
+
+\noindent\textbf{3：条件内で適切} IΔω/T。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{4：不適切} I(ω2\textsuperscript{2}−ω1\textsuperscript{2})/2。各文又は定義の判定を先に行う。並びが判定 IΔω/T と異なる。\par
+
+\noindent\textbf{5：不適切} I(ω2\textsuperscript{2}−ω1\textsuperscript{2})T。各文又は定義の判定を先に行う。並びが判定 IΔω/T と異なる。\par
+
+\paragraph{再利用する考え方} 角加速度、回転運動方程式、次元。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:torque]{第\ref*{theory:analysis:torque}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{トラスの軸力比と軸伸び比を分ける}
+
+\subsection{平成29年度 問3-5}
+\label{q:h29-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} トラスの軸力比と軸伸び比を分ける。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{形状：} A,C間の棒1は水平30°、B,C間の棒2は60°。A,B同じ水平高さ。\par
+
+\noindent\textbf{材料：} E共通、断面A1,A2、Cへ下向きP、ピン接合。\par
+
+\paragraph{問われる核心} トラスの軸力比と軸伸び比を分ける。
+
+\paragraph{必要知識} 節点釣合、三角形の幾何、棒伸び。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 節点Cの水平釣合からN1cos30°=N2cos60°、N1/N2=\allowbreak{}1/√3。幾何からl1/l2=√3。棒伸びδi=\allowbreak{}Ni li/(EAi)なのでδ1/δ2=\allowbreak{}(1/√3)×√3×A2/A1=\allowbreak{}A2/A1。軸力比だけを答えにしない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} A1/A2。各文又は定義の判定を先に行う。並びが判定 A2/A1 と異なる。\par
+
+\noindent\textbf{2：不適切} √3A1/(2A2)。各文又は定義の判定を先に行う。並びが判定 A2/A1 と異なる。\par
+
+\noindent\textbf{3：条件内で適切} A2/A1。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{4：不適切} √3A2/(2A1)。各文又は定義の判定を先に行う。並びが判定 A2/A1 と異なる。\par
+
+\noindent\textbf{5：不適切} √3A2/A1。各文又は定義の判定を先に行う。並びが判定 A2/A1 と異なる。\par
+
+\paragraph{再利用する考え方} 節点釣合、三角形の幾何、棒伸び。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:truss]{第\ref*{theory:analysis:truss}節}
+
+\par 参考：\cite{mit_material_elastic2000}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{節点の水平釣合からトラス軸力比}
+
+\subsection{令和4年度 問3-4}
+\label{q:r04-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 節点の水平釣合からトラス軸力比。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{形状：} 棒1水平30°、棒2水平60°、Cに鉛直P。\par
+
+\noindent\textbf{接合：} ピン節点の二力部材。\par
+
+\paragraph{問われる核心} 節点の水平釣合からトラス軸力比。
+
+\paragraph{必要知識} 二力部材、水平釣合、力の分解。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 荷重Pは鉛直なのでCの水平力和は0。N1cos30°=N2cos60°からN1/N2=\allowbreak{}(1/2)/(√3/2)=\allowbreak{}1/√3。棒の長さや断面積は、この静定トラスの力の釣合による比には不要。伸び比を問う別問題と混同しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 1/2。各文又は定義の判定を先に行う。並びが判定 1/√3 と異なる。\par
+
+\noindent\textbf{2：条件内で適切} 1/√3。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{3：不適切} 1。各文又は定義の判定を先に行う。並びが判定 1/√3 と異なる。\par
+
+\noindent\textbf{4：不適切} √3。各文又は定義の判定を先に行う。並びが判定 1/√3 と異なる。\par
+
+\noindent\textbf{5：不適切} 2。各文又は定義の判定を先に行う。並びが判定 1/√3 と異なる。\par
+
+\paragraph{再利用する考え方} 二力部材、水平釣合、力の分解。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:trussforce]{第\ref*{theory:analysis:trussforce}節}
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{ばねの全エネルギーは自然長から測る}
+
+\subsection{令和3年度 問3-5}
+\label{q:r03-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} ばねの全エネルギーは自然長から測る。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{系：} 鉛直ばねk、質点m、振幅a、g。\par
+
+\noindent\textbf{問：} 最下端でのばね自身の弾性エネルギー。\par
+
+\paragraph{問われる核心} ばねの全エネルギーは自然長から測る。
+
+\paragraph{必要知識} 自然長、平衡位置、基準の違うエネルギー。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 静止時の自然長からの伸びはmg/k。下端振幅位置ではさらにa伸びるのでばね単体のひずみエネルギーU=\allowbreak{}k(mg/k+a)\textsuperscript{2}/2。平衡位置を中心とする振動エネルギーka\textsuperscript{2}/2とは別の量。平衡時との差ならka\textsuperscript{2}/2+mgaであり、問われた全量ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 0。各文又は定義の判定を先に行う。並びが判定 k(mg/k+a)\textsuperscript{2}/2 と異なる。\par
+
+\noindent\textbf{2：不適切} ka\textsuperscript{2}/2。各文又は定義の判定を先に行う。並びが判定 k(mg/k+a)\textsuperscript{2}/2 と異なる。\par
+
+\noindent\textbf{3：不適切} ka\textsuperscript{2}/2−mga。各文又は定義の判定を先に行う。並びが判定 k(mg/k+a)\textsuperscript{2}/2 と異なる。\par
+
+\noindent\textbf{4：条件内で適切} k(mg/k+a)\textsuperscript{2}/2。各文又は定義の判定を先に行う。全項目が一致する。\par
+
+\noindent\textbf{5：不適切} ka\textsuperscript{2}/2+mga。各文又は定義の判定を先に行う。並びが判定 k(mg/k+a)\textsuperscript{2}/2 と異なる。\par
+
+\paragraph{再利用する考え方} 自然長、平衡位置、基準の違うエネルギー。 支持・接続・符号を原典図から確定し、式の成立条件を先に点検する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:verticalenergy]{第\ref*{theory:analysis:verticalenergy}節}
+
+\par 参考：\cite{analysis57_shm}。
+
+\par 難易度 3（校準初稿）、優先度未評価。
+
+\section{差分式の整合性}
+
+\subsection{平成26年度 問3-3}
+\label{q:h26-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} Taylor展開で一階導関数に整合する差分式を判別する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} 正の等間隔Δ、格子番号i、必要な階数まで滑らかなf。有限幅の差分は導関数と恒等的に等しいとは限らず、Δ→0での整合性を判定する。\par
+
+\paragraph{問われる核心} Taylor展開で一階導関数に整合する差分式を判別する。
+
+\paragraph{必要知識} 正の等間隔Δ、格子番号i、必要な階数まで滑らかなf。有限幅の差分は導関数と恒等的に等しいとは限らず、Δ→0での整合性を判定する。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 等間隔のTaylor展開 \(f_{i\pm1}=f_i\pm\Delta f_i^\prime+\Delta^2f_i^{\prime\prime}/2+\cdots\) を用いる。左右を引けば一階、足して2fを引けば二階の項が残る。候補5は二階差分をΔで割っておりΔf\ensuremath{''}となる式なので、一階導関数の差分として誤りである。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} \((3f_i-4f_{i-1}+f_{i-2})/(2\Delta)\)。Taylor展開で定数と二次項が消え、一次項は2Δf\ensuremath{'}となる。二次精度の後退差分である。\par
+
+\noindent\textbf{2：適切} \((f_i-f_{i-1})/\Delta\)。一次精度の後退差分でありΔ→0でf\ensuremath{'}へ近づく。\par
+
+\noindent\textbf{3：適切} \((f_{i+1}-f_i)/\Delta\)。一次精度の前進差分であり一次導関数に整合する。\par
+
+\noindent\textbf{4：適切} \((f_{i+1}-f_{i-1})/(2\Delta)\)。対称点のTaylor展開を引くと2Δf\ensuremath{'}が残る。十分滑らかな関数では二次精度である。\par
+
+\noindent\textbf{5：不適切} \((f_{i+1}-2f_i+f_{i-1})/\Delta\)。分子はΔ\textsuperscript{2}f\ensuremath{''}+高次項であり、Δで割るとΔf\ensuremath{''}となる。一次導関数へ収束しない。\par
+
+\paragraph{再利用する考え方} 分子の打消し次数と分母のΔの次数を確認する。f=\allowbreak{}xやf=\allowbreak{}x\textsuperscript{2}を入れるだけでも一階と二階を区別できる。
+
+\paragraph{共通理論} \hyperref[theory:numerics:diff]{第\ref*{theory:numerics:diff}節}
+
+\par 参考：\cite{nist_differentiation}。
+
+\paragraph{関連問題} \hyperref[q:r04-reg-basic-3-1]{R04-REG-BASIC-3-1}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和4年度 問3-1}
+\label{q:r04-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} Taylor展開で一階導関数に整合する差分式を判別する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} 正の等間隔Δ、格子番号i、必要な階数まで滑らかなf。有限幅の差分は導関数と恒等的に等しいとは限らず、Δ→0での整合性を判定する。\par
+
+\paragraph{問われる核心} Taylor展開で一階導関数に整合する差分式を判別する。
+
+\paragraph{必要知識} 正の等間隔Δ、格子番号i、必要な階数まで滑らかなf。有限幅の差分は導関数と恒等的に等しいとは限らず、Δ→0での整合性を判定する。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 等間隔のTaylor展開 \(f_{i\pm1}=f_i\pm\Delta f_i^\prime+\Delta^2f_i^{\prime\prime}/2+\cdots\) を用いる。左右を引けば一階、足して2fを引けば二階の項が残る。候補4はΔ\textsuperscript{2}で割った二階導関数の式なので、一階導関数の差分として誤りである。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} \((f_{i+1}-f_i)/\Delta\)。一次精度の前進差分であり一次導関数に整合する。\par
+
+\noindent\textbf{2：適切} \((3f_i-4f_{i-1}+f_{i-2})/(2\Delta)\)。Taylor展開で定数と二次項が消え、一次項は2Δf\ensuremath{'}となる。二次精度の後退差分である。\par
+
+\noindent\textbf{3：適切} \((f_{i+1}-f_{i-1})/(2\Delta)\)。対称点のTaylor展開を引くと2Δf\ensuremath{'}が残る。十分滑らかな関数では二次精度である。\par
+
+\noindent\textbf{4：不適切} \((f_{i+1}-2f_i+f_{i-1})/\Delta^2\)。これは二階導関数f\ensuremath{''}に整合する中心差分であり、求める一階導関数とは次数と次元が異なる。\par
+
+\noindent\textbf{5：適切} \((f_i-f_{i-1})/\Delta\)。一次精度の後退差分でありΔ→0でf\ensuremath{'}へ近づく。\par
+
+\paragraph{再利用する考え方} 分子の打消し次数と分母のΔの次数を確認する。f=\allowbreak{}xやf=\allowbreak{}x\textsuperscript{2}を入れるだけでも一階と二階を区別できる。
+
+\paragraph{共通理論} \hyperref[theory:numerics:diff]{第\ref*{theory:numerics:diff}節}
+
+\par 参考：\cite{nist_differentiation}。
+
+\paragraph{関連問題} \hyperref[q:h26-reg-basic-3-3]{H26-REG-BASIC-3-3}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{等価式と有限精度の安定性}
+
+\subsection{令和5年度 問3-3}
+\label{q:r05-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textbf{検討未確定：} メッシュ細分化の一般傾向には健全な形状・定式化と適切な誤差尺度を要する。特異点の最大応力へ無条件に拡張しない。
+
+\paragraph{問題の要旨} 有限精度の等価式・桁落ち・情報落ち・線形方程式の解法を区別する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} 計算機の浮動小数点演算を対象にする。有限の仮数・丸め・評価順序を考え、連立方程式は解が存在する適切な系を想定する。\par
+
+\paragraph{問われる核心} 有限精度の等価式・桁落ち・情報落ち・線形方程式の解法を区別する。
+
+\paragraph{必要知識} 計算機の浮動小数点演算を対象にする。有限の仮数・丸め・評価順序を考え、連立方程式は解が存在する適切な系を想定する。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 実数上で等価な式も、有限精度では各演算で丸めるため結果が違う場合がある。例えば倍精度程度では \((10^{16}+1)-10^{16}=0\) となり得るが、先に1を分離した等価式の値は1である。常に結果が等しくなるという1が不適切である。誤差を抑える式変形と、逆行列を形成しない連立方程式解法を区別する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 数学的に等価な複数式ならどれで計算しても結果は等しい。有限精度では丸める箇所と大きさが変わる。代数上の等価性はビット単位の一致や同じ誤差を保証しない。\par
+
+\noindent\textbf{2：適切} 絶対値の近い2数の加減算で桁落ちを生じることがある。近い正数の減算又は符号が逆の加算で大きな共通部分が消え、入力誤差が相対的に目立ち得る。\par
+
+\noindent\textbf{3：適切} 絶対値が大きく異なる加減算で情報落ちを生じることがある。指数を合わせると小さい側の有効な桁が保持範囲外に落ちることがある。小さい数の寄与が消える現象である。\par
+
+\noindent\textbf{4：適切} 逆行列を計算せず連立方程式の解を求められる。消去法やLU分解でAx=\allowbreak{}bを解ける。逆行列を明示的に求めて掛ける必要はない。\par
+
+\noindent\textbf{5：条件付きで適切} FEMを細分すると一般に近似誤差は小さくなる。安定・適合な近似と健全な要素での通常の離散化傾向である。悪い形状、特異点の一点値、丸めやモデル誤差まで単調に減るとはいえない。\par
+
+\paragraph{再利用する考え方} 同じ数学式でも計算順序を比較し、相対誤差を増幅する差や消える小量を避ける。
+
+\paragraph{共通理論} \hyperref[theory:numerics:floating]{第\ref*{theory:numerics:floating}節}, \hyperref[theory:fem:mesh]{第\ref*{theory:fem:mesh}節}
+
+\par 参考：\cite{goldberg1991,mit_roy_fea1999}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\section{二層材料の有効熱伝導率}
+
+\subsection{平成23年度 問3-3}
+\label{q:h23-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textbf{検討未確定：} 原典の平均熱伝導率は定常伝導を想定するが時間条件は明示的でない。等厚時3と5は同じ値になる。一般のl1,l2に対する式の識別として公式5を保持する。
+
+\paragraph{問題の要旨} 層に平行・垂直な熱伝導から有効熱伝導率を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} 図の二つの水平層、厚さl1,l2、異なる熱伝導率k1,k2、指定2面の異なる温度T1,T2、その他断熱、界面温度連続。定常・接触熱抵抗なしのFourier伝導モデルである。\par
+
+\paragraph{問われる核心} 層に平行・垂直な熱伝導から有効熱伝導率を求める。
+
+\paragraph{必要知識} 図の二つの水平層、厚さl1,l2、異なる熱伝導率k1,k2、指定2面の異なる温度T1,T2、その他断熱、界面温度連続。定常・接触熱抵抗なしのFourier伝導モデルである。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 層に平行なx方向では各層の温度勾配が同じで、熱流を足すと \(k_x=(k_1l_1+k_2l_2)/(l_1+l_2)\)。垂直なy方向では同じ熱流が各層を通り、温度差を足すと \(k_y=(l_1+l_2)/(l_1/k_1+l_2/k_2)\) となる。両式を一般の厚さに対して満たす5を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} \(k_x=(k_1l_2+k_2l_1)/L\)、\(k_y=(k_1l_1+k_2l_2)/L\)。xの材料と厚さの組が入れ替わり、yも直列の熱抵抗の和ではなく算術平均になっている。\par
+
+\noindent\textbf{2：不適切} \(k_x=L/(l_2/k_1+l_1/k_2)\)、\(k_y=(k_1l_2+k_2l_1)/L\)。平行なxに調和型を用い、両式の厚さの重みも材料と逆になっている。\par
+
+\noindent\textbf{3：条件付きで適切} \(k_x=(k_1l_1+k_2l_2)/L\)、\(k_y=L/(l_2/k_1+l_1/k_2)\)。xは正しいがyの厚さが逆である。l1=\allowbreak{}l2の特殊値では5と一致するが、一般式としては誤りである。\par
+
+\noindent\textbf{4：不適切} \(k_x=L/(l_2/k_1+l_1/k_2)\)、\(k_y=(k_1l_1+k_2l_2)/L\)。xで誤った直列型、yで並列型を用いており、熱流と温度差の足し方を取り違える。\par
+
+\noindent\textbf{5：適切} \(k_x=(k_1l_1+k_2l_2)/L\)、\(k_y=L/(l_1/k_1+l_2/k_2)\)。L=\allowbreak{}l1+l2。平行な層の熱流和と垂直な層の温度差和からそれぞれ導ける。\par
+
+\paragraph{再利用する考え方} 伝導方向を先に決め、並列では熱流、直列では温度差を足す。算術平均と調和平均の重みを材料へ対応させる。
+
+\paragraph{共通理論} \hyperref[theory:fem:thermal]{第\ref*{theory:fem:thermal}節}
+
+\par 参考：\cite{openstax_thermal_conduction}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{線形代数・逆行列}
+
+\subsection{平成25年度 問3-4}
+\label{q:h25-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 正則な2行2列行列の逆行列を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{行列A：} 行ごとに(a,b)、(c,d)。\par
+
+\noindent\textbf{条件：} \(ad-bc\neq0\)\par
+
+\noindent\textbf{候補表記：} セミコロンで行を区切る。\par
+
+\paragraph{問われる核心} 逆行列は掛けて単位行列になる写像
+
+\paragraph{必要知識} 正則性、行列式、随伴行列、行列積。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 逆行列は対角成分を交換し、非対角成分の符号を反転して、行列式ad−bcで割った5である。Aへ掛けると対角はad−bc、非対角は0になる。成分を単に転置する操作と取り違えない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((d,-b;-c,a)/(ad+bc)\)。随伴行列の成分は合うが行列式の符号が違う。\par
+
+\noindent\textbf{2：条件に不一致} \((d,-c;-b,a)/(ad+bc)\)。分母の符号と非対角成分の配置が違う。\par
+
+\noindent\textbf{3：条件に不一致} \((d,b;c,a)/(ad+bc)\)。分母の符号と非対角成分の符号が違う。\par
+
+\noindent\textbf{4：条件に不一致} \((d,b;c,a)/(ad-bc)\)。非対角成分の符号を反転していない。\par
+
+\noindent\textbf{5：条件に一致} \((d,-b;-c,a)/(ad-bc)\)。積AA\textsuperscript{-1}が単位行列になる。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、逆行列は掛けて単位行列になる写像の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:inverse]{第\ref*{theory:analysis:inverse}節}
+
+\par 参考：\cite{mit_inverse2007}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成30年度 問3-3}
+\label{q:h30-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 対角が全て1の下三角3行3列行列の逆行列を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{行列A：} 行をセミコロンで区切って(1,0,0; a,1,0; b,c,1)。\par
+
+\noindent\textbf{候補表記：} 同じく各行をセミコロンで区切る。\par
+
+\paragraph{問われる核心} 三角行列の逆と順次消去
+
+\paragraph{必要知識} 行列積、下三角行列、前進代入。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 逆を下三角(1,0,0; p,1,0; q,r,1)とおき、Aとの積を単位行列へ合わせる。a+p=\allowbreak{}0、c+r=\allowbreak{}0、b+cp+q=\allowbreak{}0なのでp=−a、r=−c、q=\allowbreak{}ac−bとなる。2を選ぶ。非対角成分を全てただ符号反転するだけでは、第3行第1列の結合項acを落とす。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((1,0,0;a,1,0;ac-b,c,1)\)。第2行第1列と第3行第2列の符号を逆にする必要がある。\par
+
+\noindent\textbf{2：条件に一致} \((1,0,0;-a,1,0;ac-b,-c,1)\)。下三角の積を計算すると対角1、下の非対角0になる。\par
+
+\noindent\textbf{3：条件に不一致} \((1,0,0;1-a,1,0;ac-b,1-c,1)\)。第2行第1列と第3行第2列は−a、−cであり、余分な1がある。\par
+
+\noindent\textbf{4：条件に不一致} \((1,0,0;-a,1,0;ac+b,-c,1)\)。第3行第1列の積を打ち消すにはac−bが必要である。\par
+
+\noindent\textbf{5：条件に不一致} \((1,0,0;a,1,0;ac+b,c,1)\)。第3行第1列の積を打ち消すにはac−bが必要である。第2行・第3行の符号も異なる。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、三角行列の逆と順次消去の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:inverse]{第\ref*{theory:analysis:inverse}節}
+
+\par 参考：\cite{mit_inverse2007}。
+
+\paragraph{関連問題} \hyperref[q:r05-reg-basic-3-1]{R05-REG-BASIC-3-1}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和5年度 問3-1}
+\label{q:r05-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 対角が全て1の下三角3行3列行列の逆行列を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{行列A：} 行をセミコロンで区切って(1,0,0; a,1,0; b,c,1)。\par
+
+\noindent\textbf{候補表記：} 同じく各行をセミコロンで区切る。\par
+
+\paragraph{問われる核心} 三角行列の逆と順次消去
+
+\paragraph{必要知識} 行列積、下三角行列、前進代入。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 逆を下三角(1,0,0; p,1,0; q,r,1)とおき、Aとの積を単位行列へ合わせる。a+p=\allowbreak{}0、c+r=\allowbreak{}0、b+cp+q=\allowbreak{}0なのでp=−a、r=−c、q=\allowbreak{}ac−bとなる。4を選ぶ。非対角成分を全てただ符号反転するだけでは、第3行第1列の結合項acを落とす。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((1,0,0;-a,1,0;ac+b,-c,1)\)。第3行第1列の積を打ち消すにはac−bが必要である。\par
+
+\noindent\textbf{2：条件に不一致} \((1,0,0;a,1,0;ac-b,c,1)\)。第2行第1列と第3行第2列の符号を逆にする必要がある。\par
+
+\noindent\textbf{3：条件に不一致} \((1,c,b;0,1,a;0,0,1)\)。Aが下三角なので逆も下三角になる。転置に似た配置では積が単位行列にならない。\par
+
+\noindent\textbf{4：条件に一致} \((1,0,0;-a,1,0;ac-b,-c,1)\)。下三角の積を計算すると対角1、下の非対角0になる。\par
+
+\noindent\textbf{5：条件に不一致} \((1,0,0;a,1,0;ac+b,c,1)\)。第3行第1列の積を打ち消すにはac−bが必要である。第2行・第3行の符号も異なる。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、三角行列の逆と順次消去の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:inverse]{第\ref*{theory:analysis:inverse}節}
+
+\par 参考：\cite{mit_inverse2007}。
+
+\paragraph{関連問題} \hyperref[q:h30-reg-basic-3-3]{H30-REG-BASIC-3-3}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和7年度 問3-1}
+\label{q:r07-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} パラメータを含む上三角行列の逆行列を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{行列A：} \((1,a,a^2;0,1,a;0,0,1)\)\par
+
+\noindent\textbf{条件：} \(a\neq0\)の実数。\par
+
+\noindent\textbf{表記：} セミコロンで行を区切る。\par
+
+\paragraph{問われる核心} 上三角行列の逆と結合項の相殺
+
+\paragraph{必要知識} 行列積、正則性、上三角行列。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 逆の第1行第2列と第2行第3列は−aである。第1行第3列をqとすると積のそこはq+a(−a)+a\textsuperscript{2}=qなのでq=\allowbreak{}0、2を選ぶ。元のa\textsuperscript{2}をそのまま符号反転すると結合項を二重に数える。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((1,-a,-a^2;0,1,-a;0,0,1)\)。積の第1行第3列が−a\textsuperscript{2}でゼロにならない。\par
+
+\noindent\textbf{2：条件に一致} \((1,-a,0;0,1,-a;0,0,1)\)。上の非対角−aを打ち消し、第1行第3列も−a\textsuperscript{2}+a\textsuperscript{2}=0となる。\par
+
+\noindent\textbf{3：条件に不一致} \((1,a,0;0,1,a;0,0,1)\)。第1行第2列と第2行第3列の符号が違う。\par
+
+\noindent\textbf{4：条件に不一致} \((1,0,-a^2;0,1,0;0,0,1)\)。隣接する非対角aを打ち消す−aがない。\par
+
+\noindent\textbf{5：条件に不一致} \((1,-a,a^2;0,1,-a;0,0,1)\)。積の第1行第3列がa\textsuperscript{2}でゼロにならない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、上三角行列の逆と結合項の相殺の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:inverse]{第\ref*{theory:analysis:inverse}節}
+
+\par 参考：\cite{mit_inverse2007}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\section{Newton反復と停止判定}
+
+\subsection{平成30年度 問3-4}
+\label{q:h30-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textbf{検討未確定：} 原図は増分だけの収束判定であり、残差・f\ensuremath{'}=0・最大反復数の処理が省略される。式の穴埋めとして公式を保持し、一般の収束保証とはしない。
+
+\paragraph{問題の要旨} Newton法の接線更新とフローチャートの終了分岐を対応させる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} f\ensuremath{'}(xn)≠0、ε>0。原図は現在xnを出力し、更新はNO側にある。局所収束には初期値と滑らかさが必要であり、実装では残差・最大反復数・有限精度停滞も確認する。\par
+
+\paragraph{問われる核心} Newton法の接線更新とフローチャートの終了分岐を対応させる。
+
+\paragraph{必要知識} f\ensuremath{'}(xn)≠0、ε>0。原図は現在xnを出力し、更新はNO側にある。局所収束には初期値と滑らかさが必要であり、実装では残差・最大反復数・有限精度停滞も確認する。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 接線近似 \(0\simeq f(x_n)+f^\prime(x_n)(x_{n+1}-x_n)\) から \(x_{n+1}=x_n-f(x_n)/f^\prime(x_n)\) を得る。図の更新は減算なのでΔx=\allowbreak{}f/f\ensuremath{'}である。YESが出力と終了、NOが更新へ戻るため、停止の判定は|Δx|<εである。組合せ2を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} \(\Delta x=ff^\prime,\ |\Delta x|<\varepsilon\)。停止の向きは合うが傾きで掛ける積になっており、接線の根から得る比でない。\par
+
+\noindent\textbf{2：条件付きで適切} \(\Delta x=f/f^\prime,\ |\Delta x|<\varepsilon\)。図の減算更新によりx次=x−f/f\ensuremath{'}となる。増分の絶対値が小さいとき終了する判定である。実装には残差の確認も要する。\par
+
+\noindent\textbf{3：不適切} \(\Delta x=f^\prime/f,\ |\Delta x|<\varepsilon\)。分子分母が逆であり、接線で予測する横方向距離にならない。\par
+
+\noindent\textbf{4：不適切} \(\Delta x=ff^\prime,\ |\Delta x|>\varepsilon\)。傾きとの積も誤り、YES終了する条件の大小も逆である。\par
+
+\noindent\textbf{5：不適切} \(\Delta x=f/f^\prime,\ |\Delta x|>\varepsilon\)。減算更新の比は合うが大きい補正で停止し小さい補正で続ける逆の条件である。\par
+
+\paragraph{再利用する考え方} Δxの符号だけを暗記せず、加算か減算かを式全体で読む。停止枝のYES/NOを先に確認する。
+
+\paragraph{共通理論} \hyperref[theory:numerics:newton]{第\ref*{theory:numerics:newton}節}
+
+\par 参考：\cite{nist_newton}。
+
+\paragraph{関連問題} \hyperref[q:r06-reg-basic-3-3]{R06-REG-BASIC-3-3}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和6年度 問3-3}
+\label{q:r06-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textbf{検討未確定：} 原図は増分だけの収束判定であり、残差・f\ensuremath{'}=0・最大反復数の処理が省略される。式の穴埋めとして公式を保持し、一般の収束保証とはしない。
+
+\paragraph{問題の要旨} Newton法の接線更新とフローチャートの終了分岐を対応させる。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} f\ensuremath{'}(xn)≠0、ε>0。原図は現在xnを出力し、更新はNO側にある。局所収束には初期値と滑らかさが必要であり、実装では残差・最大反復数・有限精度停滞も確認する。\par
+
+\paragraph{問われる核心} Newton法の接線更新とフローチャートの終了分岐を対応させる。
+
+\paragraph{必要知識} f\ensuremath{'}(xn)≠0、ε>0。原図は現在xnを出力し、更新はNO側にある。局所収束には初期値と滑らかさが必要であり、実装では残差・最大反復数・有限精度停滞も確認する。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 接線近似 \(0\simeq f(x_n)+f^\prime(x_n)(x_{n+1}-x_n)\) から \(x_{n+1}=x_n-f(x_n)/f^\prime(x_n)\) を得る。図の更新は加算なのでΔx=−f/f\ensuremath{'}である。YESが出力と終了、NOが更新へ戻るため、停止の判定は|Δx|<εである。組合せ5を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} \(\Delta x=-ff^\prime,\ |\Delta x|<\varepsilon\)。停止の向きは合うが傾きで割らず掛けている。接線の零点へ進む増分にならない。\par
+
+\noindent\textbf{2：不適切} \(\Delta x=-f^\prime/f,\ |\Delta x|>\varepsilon\)。比が逆で、さらに大きい増分のとき終了する。更新式と停止条件の両方が誤る。\par
+
+\noindent\textbf{3：不適切} \(\Delta x=-f^\prime/f,\ |\Delta x|<\varepsilon\)。停止条件は合うが分子分母が逆である。根に近づきfが小さくなると比が大きくなり得る。\par
+
+\noindent\textbf{4：不適切} \(\Delta x=-f/f^\prime,\ |\Delta x|>\varepsilon\)。加算更新の増分は合うが、YES終了の条件が逆である。小さい増分で反復する判定になる。\par
+
+\noindent\textbf{5：条件付きで適切} \(\Delta x=-f/f^\prime,\ |\Delta x|<\varepsilon\)。図の加算更新によりx次=x−f/f\ensuremath{'}となり、小さい増分のときYESで終了する。ただし増分が小さいことだけで残差の小ささを保証しない。\par
+
+\paragraph{再利用する考え方} Δxの符号だけを暗記せず、加算か減算かを式全体で読む。停止枝のYES/NOを先に確認する。
+
+\paragraph{共通理論} \hyperref[theory:numerics:newton]{第\ref*{theory:numerics:newton}節}
+
+\par 参考：\cite{nist_newton}。
+
+\paragraph{関連問題} \hyperref[q:h30-reg-basic-3-4]{H30-REG-BASIC-3-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{数値解析・誤差}
+
+\subsection{平成26年度 問3-2}
+\label{q:h26-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textbf{検討未確定：} 高次要素や倍精度は通常の改善策であり、あらゆる解・実装の精度向上を無条件に保証しない。
+
+\paragraph{問題の要旨} 数値誤差の種類と、それに対応する精度改善策を判定する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} 同じ問題と評価量で精度を比較する。高次化と細分化の効果は解の正則性・健全な要素・十分な数値積分を要する。\par
+
+\paragraph{問われる核心} 数値誤差の種類と、それに対応する精度改善策を判定する。
+
+\paragraph{必要知識} 同じ問題と評価量で精度を比較する。高次化と細分化の効果は解の正則性・健全な要素・十分な数値積分を要する。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 数値解析には離散化誤差、反復停止による誤差、丸め誤差がある。細分・高次化・良好な要素形状・演算精度の増加はそれぞれ対応する誤差を改善し得る。一方、反復の停止条件を緩めると大きい誤差を許容して早く止めるため、精度向上という目的に対して不適切である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件付きで適切} 解の変化が大きい場所を細分する。高勾配を解像するh改良である。形状の健全性や特異点に注意し、モデル誤差は細分だけで消えない。\par
+
+\noindent\textbf{2：条件付きで適切} 高次要素へ変更する。滑らかな解をより高次の補間で近似するp改良である。解の正則性、写像、積分が適切な条件で有効である。\par
+
+\noindent\textbf{3：不適切} 反復回数が多いので収束判定条件を緩める。停止閾値を大きくすると未収束のまま停止しやすくなり、許容する反復誤差を増やす。速く終わることと精度向上を混同する。\par
+
+\noindent\textbf{4：適切} 強く歪んだ要素を避ける。写像の退化や誤差増幅を抑えるための形状改善である。細分の数だけでなく形を確認する。\par
+
+\noindent\textbf{5：条件付きで適切} 丸め誤差を減らすため単精度から倍精度へ変更する。仮数の精度を増やして丸め誤差を小さくし得る。打切り・モデル誤差が消えることや誤差ゼロを保証するものではない。\par
+
+\paragraph{再利用する考え方} 誤差の原因を特定してから、h・p・反復閾値・有限精度のどれを変更するか決める。
+
+\paragraph{共通理論} \hyperref[theory:numerics:errors]{第\ref*{theory:numerics:errors}節}, \hyperref[theory:numerics:newton]{第\ref*{theory:numerics:newton}節}, \hyperref[theory:fem:mesh]{第\ref*{theory:fem:mesh}節}
+
+\par 参考：\cite{mit_roy_fea1999,goldberg1991,nist_newton}。
+
+\paragraph{関連問題} \hyperref[q:r01-ret-basic-3-3]{R01-RET-BASIC-3-3}, \hyperref[q:r04-reg-basic-3-3]{R04-REG-BASIC-3-3}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成27年度 問3-3}
+\label{q:h27-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 桁落ち・モデル誤差・打切り誤差・有限要素近似の違いを判定する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} 数学的な実数演算と有限桁の浮動小数点演算を分ける。安定で健全な要素分割と滑らかな関数を通常の精度比較の条件にする。\par
+
+\paragraph{問われる核心} 桁落ち・モデル誤差・打切り誤差・有限要素近似の違いを判定する。
+
+\paragraph{必要知識} 数学的な実数演算と有限桁の浮動小数点演算を分ける。安定で健全な要素分割と滑らかな関数を通常の精度比較の条件にする。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 近い二数の差では値に含まれる有限精度の誤差が相対的に目立つ桁落ちを生じることがある。この存在をいう1が適切である。一方、線形化の近似、格子の打切り、演算の丸めは異なる誤差であり、一つを改善して他の全誤差が消えるとはいえない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} 近接する2数の減算で桁落ちを生じることがある。大きい共通部分が消えると、入力値に既に含まれた丸め誤差が小さい差に対して増幅され得る。近接数の減算が必ず新しい誤差を作るという主張ではない。\par
+
+\noindent\textbf{2：不適切} 非線形現象を線形化しても線形方程式を厳密に解けば誤差はない。線形化のモデル誤差は線形方程式の解法誤差と別である。近似モデルを厳密に解いても元の現象とのずれは残る。\par
+
+\noindent\textbf{3：不適切} 差分化のTaylor打切り誤差は格子幅によらずほぼ一定。省略する項は格子幅のべきに比例する。十分滑らかな場合、前進差分なら一次、中心差分なら二次の幅依存がある。\par
+
+\noindent\textbf{4：不適切} FEMの分割を細かくすると近似誤差が大きくなる。健全な要素と安定な定式化の通常条件では細分化は離散化誤差を減らす方向である。悪い形状や有限精度の問題を一般則にしない。\par
+
+\noindent\textbf{5：不適切} 誤差は物理法則で決まりアルゴリズムを変えても減らない。離散化・反復・丸め誤差は計算法に依存する。モデル誤差と分ければ手法の改善で減らせる誤差がある。\par
+
+\paragraph{再利用する考え方} 近い差の相対誤差と大きな大小差での情報落ちを分け、誤差の発生場所を追う。
+
+\paragraph{共通理論} \hyperref[theory:numerics:errors]{第\ref*{theory:numerics:errors}節}, \hyperref[theory:numerics:floating]{第\ref*{theory:numerics:floating}節}, \hyperref[theory:numerics:diff]{第\ref*{theory:numerics:diff}節}
+
+\par 参考：\cite{goldberg1991,nist_differentiation,mit_roy_fea1999}。
+
+\paragraph{関連問題} \hyperref[q:r02-reg-basic-3-3]{R02-REG-BASIC-3-3}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和元年度再試験 問3-3}
+\label{q:r01-ret-basic-3-3}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textbf{検討未確定：} 高次要素や倍精度は通常の改善策であり、あらゆる解・実装の精度向上を無条件に保証しない。
+
+\paragraph{問題の要旨} 数値誤差の種類と、それに対応する精度改善策を判定する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} 同じ問題と評価量で精度を比較する。高次化と細分化の効果は解の正則性・健全な要素・十分な数値積分を要する。\par
+
+\paragraph{問われる核心} 数値誤差の種類と、それに対応する精度改善策を判定する。
+
+\paragraph{必要知識} 同じ問題と評価量で精度を比較する。高次化と細分化の効果は解の正則性・健全な要素・十分な数値積分を要する。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 数値解析には離散化誤差、反復停止による誤差、丸め誤差がある。細分・高次化・良好な要素形状・演算精度の増加はそれぞれ対応する誤差を改善し得る。一方、反復の停止条件を緩めると大きい誤差を許容して早く止めるため、精度向上という目的に対して不適切である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} 強く歪んだ要素を避ける。写像の退化や誤差増幅を抑えるための形状改善である。細分の数だけでなく形を確認する。\par
+
+\noindent\textbf{2：条件付きで適切} 高次要素へ変更する。滑らかな解をより高次の補間で近似するp改良である。解の正則性、写像、積分が適切な条件で有効である。\par
+
+\noindent\textbf{3：条件付きで適切} 解の変化が大きい場所を細分する。高勾配を解像するh改良である。形状の健全性や特異点に注意し、モデル誤差は細分だけで消えない。\par
+
+\noindent\textbf{4：条件付きで適切} 丸め誤差を減らすため単精度から倍精度へ変更する。仮数の精度を増やして丸め誤差を小さくし得る。打切り・モデル誤差が消えることや誤差ゼロを保証するものではない。\par
+
+\noindent\textbf{5：不適切} 反復回数が多いので収束判定条件を緩める。停止閾値を大きくすると未収束のまま停止しやすくなり、許容する反復誤差を増やす。速く終わることと精度向上を混同する。\par
+
+\paragraph{再利用する考え方} 誤差の原因を特定してから、h・p・反復閾値・有限精度のどれを変更するか決める。
+
+\paragraph{共通理論} \hyperref[theory:numerics:errors]{第\ref*{theory:numerics:errors}節}, \hyperref[theory:numerics:newton]{第\ref*{theory:numerics:newton}節}, \hyperref[theory:fem:mesh]{第\ref*{theory:fem:mesh}節}
+
+\par 参考：\cite{mit_roy_fea1999,goldberg1991,nist_newton}。
+
+\paragraph{関連問題} \hyperref[q:h26-reg-basic-3-2]{H26-REG-BASIC-3-2}, \hyperref[q:r04-reg-basic-3-3]{R04-REG-BASIC-3-3}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和2年度 問3-3}
+\label{q:r02-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 桁落ち・モデル誤差・打切り誤差・有限要素近似の違いを判定する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} 数学的な実数演算と有限桁の浮動小数点演算を分ける。安定で健全な要素分割と滑らかな関数を通常の精度比較の条件にする。\par
+
+\paragraph{問われる核心} 桁落ち・モデル誤差・打切り誤差・有限要素近似の違いを判定する。
+
+\paragraph{必要知識} 数学的な実数演算と有限桁の浮動小数点演算を分ける。安定で健全な要素分割と滑らかな関数を通常の精度比較の条件にする。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 近い二数の差では値に含まれる有限精度の誤差が相対的に目立つ桁落ちを生じることがある。この存在をいう3が適切である。一方、線形化の近似、格子の打切り、演算の丸めは異なる誤差であり、一つを改善して他の全誤差が消えるとはいえない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} FEMの分割を細かくすると近似誤差が大きくなる。健全な要素と安定な定式化の通常条件では細分化は離散化誤差を減らす方向である。悪い形状や有限精度の問題を一般則にしない。\par
+
+\noindent\textbf{2：不適切} 誤差は物理法則で決まりアルゴリズムを変えても減らない。離散化・反復・丸め誤差は計算法に依存する。モデル誤差と分ければ手法の改善で減らせる誤差がある。\par
+
+\noindent\textbf{3：適切} 近接する2数の減算で桁落ちを生じることがある。大きい共通部分が消えると、入力値に既に含まれた丸め誤差が小さい差に対して増幅され得る。近接数の減算が必ず新しい誤差を作るという主張ではない。\par
+
+\noindent\textbf{4：不適切} 差分化のTaylor打切り誤差は格子幅によらずほぼ一定。省略する項は格子幅のべきに比例する。十分滑らかな場合、前進差分なら一次、中心差分なら二次の幅依存がある。\par
+
+\noindent\textbf{5：不適切} 非線形現象を線形化しても線形方程式を厳密に解けば誤差はない。線形化のモデル誤差は線形方程式の解法誤差と別である。近似モデルを厳密に解いても元の現象とのずれは残る。\par
+
+\paragraph{再利用する考え方} 近い差の相対誤差と大きな大小差での情報落ちを分け、誤差の発生場所を追う。
+
+\paragraph{共通理論} \hyperref[theory:numerics:errors]{第\ref*{theory:numerics:errors}節}, \hyperref[theory:numerics:floating]{第\ref*{theory:numerics:floating}節}, \hyperref[theory:numerics:diff]{第\ref*{theory:numerics:diff}節}
+
+\par 参考：\cite{goldberg1991,nist_differentiation,mit_roy_fea1999}。
+
+\paragraph{関連問題} \hyperref[q:h27-reg-basic-3-3]{H27-REG-BASIC-3-3}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和4年度 問3-3}
+\label{q:r04-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textbf{検討未確定：} 高次要素や倍精度は通常の改善策であり、あらゆる解・実装の精度向上を無条件に保証しない。
+
+\paragraph{問題の要旨} 数値誤差の種類と、それに対応する精度改善策を判定する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} 同じ問題と評価量で精度を比較する。高次化と細分化の効果は解の正則性・健全な要素・十分な数値積分を要する。\par
+
+\paragraph{問われる核心} 数値誤差の種類と、それに対応する精度改善策を判定する。
+
+\paragraph{必要知識} 同じ問題と評価量で精度を比較する。高次化と細分化の効果は解の正則性・健全な要素・十分な数値積分を要する。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 数値解析には離散化誤差、反復停止による誤差、丸め誤差がある。細分・高次化・良好な要素形状・演算精度の増加はそれぞれ対応する誤差を改善し得る。一方、反復の停止条件を緩めると大きい誤差を許容して早く止めるため、精度向上という目的に対して不適切である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件付きで適切} 丸め誤差を減らすため単精度から倍精度へ変更する。仮数の精度を増やして丸め誤差を小さくし得る。打切り・モデル誤差が消えることや誤差ゼロを保証するものではない。\par
+
+\noindent\textbf{2：条件付きで適切} 高次要素へ変更する。滑らかな解をより高次の補間で近似するp改良である。解の正則性、写像、積分が適切な条件で有効である。\par
+
+\noindent\textbf{3：適切} 強く歪んだ要素を避ける。写像の退化や誤差増幅を抑えるための形状改善である。細分の数だけでなく形を確認する。\par
+
+\noindent\textbf{4：不適切} 反復回数が多いので収束判定条件を緩める。停止閾値を大きくすると未収束のまま停止しやすくなり、許容する反復誤差を増やす。速く終わることと精度向上を混同する。\par
+
+\noindent\textbf{5：条件付きで適切} 解の変化が大きい場所を細分する。高勾配を解像するh改良である。形状の健全性や特異点に注意し、モデル誤差は細分だけで消えない。\par
+
+\paragraph{再利用する考え方} 誤差の原因を特定してから、h・p・反復閾値・有限精度のどれを変更するか決める。
+
+\paragraph{共通理論} \hyperref[theory:numerics:errors]{第\ref*{theory:numerics:errors}節}, \hyperref[theory:numerics:newton]{第\ref*{theory:numerics:newton}節}, \hyperref[theory:fem:mesh]{第\ref*{theory:fem:mesh}節}
+
+\par 参考：\cite{mit_roy_fea1999,goldberg1991,nist_newton}。
+
+\paragraph{関連問題} \hyperref[q:h26-reg-basic-3-2]{H26-REG-BASIC-3-2}, \hyperref[q:r01-ret-basic-3-3]{R01-RET-BASIC-3-3}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\section{多項式補間}
+
+\subsection{平成27年度 問3-1}
+\label{q:h27-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 3点を通る二次補間多項式から指定点の値を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} f(-1)=\allowbreak{}2、f(0)=\allowbreak{}2、f(2)=\allowbreak{}8。二次以下の補間多項式による近似値であり、未知の元関数のf(1)を厳密に保証する問題ではない。\par
+
+\paragraph{問われる核心} 3点を通る二次補間多項式から指定点の値を求める。
+
+\paragraph{必要知識} f(-1)=\allowbreak{}2、f(0)=\allowbreak{}2、f(2)=\allowbreak{}8。二次以下の補間多項式による近似値であり、未知の元関数のf(1)を厳密に保証する問題ではない。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(p(x)=ax^2+bx+c\) と置く。p(0)=\allowbreak{}2からc=\allowbreak{}2、p(-1)=\allowbreak{}2からa=\allowbreak{}b、p(2)=\allowbreak{}8から4a+2b=\allowbreak{}6なのでa=\allowbreak{}b=\allowbreak{}1。従って \(p(1)=1+1+2=4\) で2である。既知3点へ代入して係数を検算する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 3。二次補間p(1)=\allowbreak{}4と違う。0と2だけを用いる一次補間でも5であり、この値は条件を満たさない。\par
+
+\noindent\textbf{2：適切} 4。三つの点を通るp=\allowbreak{}x\textsuperscript{2}+x+2のx=\allowbreak{}1の値である。\par
+
+\noindent\textbf{3：不適切} 5。0と2の間の直線補間では5になるが、-1の点を同時に満たせず二次補間と異なる。\par
+
+\noindent\textbf{4：不適切} 6。p(1)=\allowbreak{}4より2大きく、得られた二次係数の代入結果ではない。\par
+
+\noindent\textbf{5：不適切} 7。p(1)=\allowbreak{}4より3大きい。p(2)=\allowbreak{}8という端点値へ単純な等差を当てはめない。\par
+
+\paragraph{再利用する考え方} 3個の係数を3条件で決める。補間値と元関数の真値を区別する。
+
+\paragraph{共通理論} \hyperref[theory:numerics:interpolation]{第\ref*{theory:numerics:interpolation}節}
+
+\par 参考：\cite{nist_interpolation}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{求積の重みとモーメント条件}
+
+\subsection{平成30年度 問3-1}
+\label{q:h30-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 一次関数を正確に積分する重みの条件を判定する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} f=\allowbreak{}ax+b、積分区間[-1,1]。一般の一次関数に対する公式の正確さを比較し、偶然特定のbで等しくなることとは区別する。\par
+
+\paragraph{問われる核心} 一次関数を正確に積分する重みの条件を判定する。
+
+\paragraph{必要知識} f=\allowbreak{}ax+b、積分区間[-1,1]。一般の一次関数に対する公式の正確さを比較し、偶然特定のbで等しくなることとは区別する。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(f(-1)=-a+b,f(0)=b,f(1)=a+b\) であり、真の積分は \(\int_{-1}^1(ax+b)dx=2b\)。対称な端点重みならaの項は消える。候補1では定数項の重み和が1/4+1+1/4=\allowbreak{}3/2なので3b/2となり、一般のbに対する積分式でない。2〜5は全て2bである。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} \(f(-1)/4+f(0)+f(1)/4\)。重みの和は3/2なので3b/2になる。b=\allowbreak{}0では一致するが一般の一次関数に正確な公式ではない。\par
+
+\noindent\textbf{2：適切} \(f(-1)/2+f(0)+f(1)/2\)。重み和2、端点対称で一次モーメント0である。間隔1の合成台形則に対応する。\par
+
+\noindent\textbf{3：適切} \(f(-1)/3+4f(0)/3+f(1)/3\)。重み和2かつ一次モーメント0であり2bとなる。Simpson則でも一次関数は正確である。\par
+
+\noindent\textbf{4：適切} \(f(-1)+f(1)\)。端点の一次項が打ち消し合い2bとなる。幅2の台形則である。\par
+
+\noindent\textbf{5：適切} \(2f(0)\)。原点ではf(0)=\allowbreak{}bなので2bとなる。対称区間の中点則で一次項を正しく打ち消す。\par
+
+\paragraph{再利用する考え方} 1とxを積分して重みの零次・一次モーメントを確認すれば、一般の一次関数に対する正確さが分かる。
+
+\paragraph{共通理論} \hyperref[theory:numerics:quadrature]{第\ref*{theory:numerics:quadrature}節}
+
+\par 参考：\cite{nist_quadrature}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{三角形の面積座標}
+
+\subsection{平成25年度 問3-3}
+\label{q:h25-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 三角形の重心の面積座標を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} 非退化三角形IJK。AIはPJK、AJはPKI、AKはPIJの面積。Pは重心であり内心や外心ではない。\par
+
+\paragraph{問われる核心} 三角形の重心の面積座標を求める。
+
+\paragraph{必要知識} 非退化三角形IJK。AIはPJK、AJはPKI、AKはPIJの面積。Pは重心であり内心や外心ではない。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 重心Pは三頂点の座標平均である。中線によって三角形は6等面積に分かれ、Pと一辺の作る3つの三角形は各2片を含む。したがって \(A_I/A=A_J/A=A_K/A=1/3\) であり1である。面積座標の和が1という確認も使える。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：適切} \((1/3,1/3,1/3)\)。三つが等面積で和も1である。\par
+
+\noindent\textbf{2：不適切} \((1/\sqrt3,1/\sqrt3,1/\sqrt3)\)。和が√3で1でなく、面積の比を長さの比の平方根と混ぜる。\par
+
+\noindent\textbf{3：不適切} \((1/2,1/2,1/2)\)。和が3/2になる。辺の中点の場合は一つが0となる。\par
+
+\noindent\textbf{4：不適切} \((2/\sqrt3,2/\sqrt3,2/\sqrt3)\)。和が2√3であり面積の分割を満たさない。\par
+
+\noindent\textbf{5：不適切} \((2/3,2/3,2/3)\)。和が2になる。重心が中線を2:1に分ける長さの比は面積座標の値そのものではない。\par
+
+\paragraph{再利用する考え方} 面積座標を向かい辺の小三角形へ対応させ、非負と和1を最初に確認する。
+
+\paragraph{共通理論} \hyperref[theory:fem:area]{第\ref*{theory:fem:area}節}
+
+\par 参考：\cite{mit_roy_fea1999}。
+
+\paragraph{関連問題} \hyperref[q:r02-reg-basic-3-4]{R02-REG-BASIC-3-4}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{令和2年度 問3-4}
+\label{q:r02-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 3:4:5三角形の内心と外心の面積座標を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} 面積SA,SB,SCはPBC,PCA,PABに対応する。辺の比AB:BC:CA=\allowbreak{}3:4:5。内心・外心を重心と区別し、辺上の外心も座標定義に含む。\par
+
+\paragraph{問われる核心} 3:4:5三角形の内心と外心の面積座標を求める。
+
+\paragraph{必要知識} 面積SA,SB,SCはPBC,PCA,PABに対応する。辺の比AB:BC:CA=\allowbreak{}3:4:5。内心・外心を重心と区別し、辺上の外心も座標定義に含む。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 内心の各辺からの距離は同じrなので、小三角形の面積は向かい辺に比例する。Aに対応するBC=\allowbreak{}4、Bに対応するCA=\allowbreak{}5、Cに対応するAB=\allowbreak{}3より \((L_A,L_B,L_C)=(4,5,3)/12=(1/3,5/12,1/4)\)。3\textsuperscript{2}+4\textsuperscript{2}=5\textsuperscript{2}なのでBが直角、外心は斜辺ACの中点で \((1/2,0,1/2)\)。両方を満たす4である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 内心\((1/4,1/5,1/3)\)、外心\((1/2,0,1/2)\)。外心は合うが内心は辺長の逆数を並べている。和は47/60で1でない。\par
+
+\noindent\textbf{2：不適切} 内心\((1/4,1/5,1/3)\)、外心\((1/3,1/3,1/3)\)。内心の正規化と向かい辺対応が誤り、外心も重心の座標になっている。\par
+
+\noindent\textbf{3：不適切} 内心\((1/3,1/3,1/3)\)、外心\((1/2,0,1/2)\)。外心は合うが内心を重心と同一視している。3:4:5は正三角形でないため内心の座標は等しくない。\par
+
+\noindent\textbf{4：適切} 内心\((1/3,5/12,1/4)\)、外心\((1/2,0,1/2)\)。内心は向かい辺の4:5:3を正規化し、外心は斜辺AC中点の座標である。\par
+
+\noindent\textbf{5：不適切} 内心\((1/3,5/12,1/4)\)、外心\((1/3,1/3,1/3)\)。内心は合うが外心が重心になっている。直角三角形の外心は斜辺の中点である。\par
+
+\paragraph{再利用する考え方} 内心の面積は辺長×共通距離/2で求める。番号順に辺長を置かず、各頂点の向かい辺を確認する。
+
+\paragraph{共通理論} \hyperref[theory:fem:area]{第\ref*{theory:fem:area}節}
+
+\par 参考：\cite{mit_roy_fea1999}。
+
+\paragraph{関連問題} \hyperref[q:h25-reg-basic-3-3]{H25-REG-BASIC-3-3}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{三角領域の重積分}
+
+\subsection{平成28年度 問3-4}
+\label{q:h28-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 三角領域で一次関数の重積分を計算する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{原典確認：} 全5候補の符号・分母・添字・否定を原典画像で照合した。\par
+
+\noindent\textbf{成立条件：} a>0、直線x=\allowbreak{}0,y=\allowbreak{}0,x+y=\allowbreak{}aで囲む三角領域。f=\allowbreak{}x+y、a=\allowbreak{}2、原典の積分順はxを先に積分する。\par
+
+\paragraph{問われる核心} 三角領域で一次関数の重積分を計算する。
+
+\paragraph{必要知識} a>0、直線x=\allowbreak{}0,y=\allowbreak{}0,x+y=\allowbreak{}aで囲む三角領域。f=\allowbreak{}x+y、a=\allowbreak{}2、原典の積分順はxを先に積分する。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(0\le y\le a,0\le x\le a-y\) において \(\int_0^{a-y}(x+y)dx=(a^2-y^2)/2\)。従って \(\int_0^a(a^2-y^2)/2\,dy=a^3/3\)。a=\allowbreak{}2なら8/3で5である。領域面積a\textsuperscript{2}/2と重心での値2a/3の積でも同じ値を得る。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：不適切} 3/8。正しい8/3の逆数であり、積分で領域面積を逆に割る操作はない。\par
+
+\noindent\textbf{2：不適切} 1/2。導出値8/3と一致しない。三角形の面積公式の1/2だけでは被積分関数もaの値も反映しない。\par
+
+\noindent\textbf{3：不適切} 1。領域を単位面積として扱う値ではなく、a=\allowbreak{}2の面積は2である。平均のx+yも1ではない。\par
+
+\noindent\textbf{4：不適切} 2。a=\allowbreak{}2の領域面積は2だが、被積分関数を常に1に置き換えてはならない。\par
+
+\noindent\textbf{5：適切} 8/3。xの積分後の(a\textsuperscript{2}−y\textsuperscript{2})/2をyについて積分し、a=\allowbreak{}2を入れた値である。\par
+
+\paragraph{再利用する考え方} 斜めの境界から内側積分の上限を決める。定数領域の面積と一次関数の積分を分ける。
+
+\paragraph{共通理論} \hyperref[theory:numerics:integration]{第\ref*{theory:numerics:integration}節}
+
+\par 参考：\cite{nist_quadrature}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\section{力学系の固有振動}
+
+\subsection{平成24年度 問3-2}
+\label{q:h24-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} ばね接続から有効剛性を求め、3系の固有振動数を比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{spring\_constants：} k,k\par
+
+\noindent\textbf{mass：} m\par
+
+\noindent\textbf{a：} two parallel springs between left wall and mass\par
+
+\noindent\textbf{b：} two springs in series between left wall and mass\par
+
+\noindent\textbf{c：} mass between two fixed walls, one spring on each side\par
+
+\paragraph{問われる核心} 振動・運動
+
+\paragraph{必要知識} ばねの直列・並列合成、微小変位の復元力、固有角振動数
+
+\paragraph{考え方（査読待ち初稿）} aでは復元力が2kxなので有効剛性2k。bでは変形量が加算され1/keff=\allowbreak{}1/k+1/k、よってkeff=\allowbreak{}k/2。cも左右の復元力が同方向に合計され2kx。質量が同じため固有角振動数はsqrt(keff/m)で比較でき、bのみ最小。正答②。
+
+\paragraph{他の選択肢（査読待ち初稿）} ①aと③cはいずれも有効剛性2k。④は最小でないaを、⑤は最小でないcを含む。cの左右の力は打ち消し合わず、変位に対して同じ復元方向に働く。
+
+\paragraph{関連問題} \hyperref[q:h26-reg-basic-3-5]{H26-REG-BASIC-3-5}
+
+\par 難易度 2（校準初稿）、優先度未評価。

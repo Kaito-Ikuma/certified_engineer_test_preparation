@@ -1,0 +1,46 @@
+{
+  "stem": "独立な末端故障事象のFTAで、下位ゲートから最上位事象の発生確率を求める。",
+  "conditions": {
+    "判断方向": "全候補を比較し最も適切な語又は数値・順位を選ぶ。",
+    "原典照合": "25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。",
+    "前提": "事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "0.036",
+      "verdict": "適合（記載条件内）",
+      "reason": "導出値0.035584に最も近い。"
+    },
+    "2": {
+      "value": "0.038",
+      "verdict": "不適合",
+      "reason": "導出値0.035584と一致せず、本問の接続・条件を満たす数値ではない。"
+    },
+    "3": {
+      "value": "0.233",
+      "verdict": "不適合",
+      "reason": "導出値0.035584と一致せず、本問の接続・条件を満たす数値ではない。"
+    },
+    "4": {
+      "value": "0.641",
+      "verdict": "不適合",
+      "reason": "導出値0.035584と一致せず、本問の接続・条件を満たす数値ではない。"
+    },
+    "5": {
+      "value": "0.804",
+      "verdict": "不適合",
+      "reason": "導出値0.035584と一致せず、本問の接続・条件を満たす数値ではない。"
+    }
+  },
+  "figures": "回路、FTA又は候補表を全て原典で照合。元図は転載せず、接続関係と値を独自に記述。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_003.png"
+  ],
+  "question_id": "R01-RET-BASIC-1-3",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "3",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "d8c375f164dd1ae17e066d9dc59bce8b1dd1c44621f3fc4cf38aff2fddcd2b9f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

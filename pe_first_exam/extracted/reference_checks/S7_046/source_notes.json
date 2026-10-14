@@ -1,0 +1,122 @@
+{
+  "reference_date": "2026-10-12",
+  "references": [
+    {
+      "key": "atomic_quantum",
+      "author": "OpenStax / Rice University",
+      "title": "Chemistry 2e 6.3: Development of Quantum Theory",
+      "url": "https://openstax.org/books/chemistry-2e/pages/6-3-development-of-quantum-theory",
+      "scope": "本文の空間軌道3量子数と全電子のスピン、Pauli原理を確認。"
+    },
+    {
+      "key": "atomic_phi2014",
+      "author": "Stefan G. Minasian and others",
+      "title": "New evidence for 5f covalency in actinocenes determined from carbon K-edge XAS and electronic structure theory",
+      "url": "https://laro.lanl.gov/esploro/outputs/journalArticle/New-evidence-for-5f-covalency-in/9916369894203761",
+      "scope": "2014年原研究の著者研究所公開要旨を読了。thoroceneのphi軌道相互作用を確認。単純二原子の純phi結合の証明とはしない。出版社全文は403。DOI 10.1039/c3sc52030g。"
+    },
+    {
+      "key": "atomic_nist2019",
+      "author": "NIST",
+      "title": "Periodic Table: Atomic Properties of the Elements, July 2019",
+      "url": "https://www.nist.gov/system/files/documents/2019/12/10/nist_periodictable_july2019.pdf",
+      "scope": "PDF1頁を実画像で確認。O/Ne/Kr/Cu/Znの電子配置、Na/Mg/Ar/Krの原子番号・第一イオン化エネルギーを使用。定義定数を過去問指定値へ置換しない。"
+    },
+    {
+      "key": "atomic_nonbond",
+      "author": "John McMurry / OpenStax",
+      "title": "Organic Chemistry 2.12: Noncovalent Interactions between Molecules",
+      "url": "https://openstax.org/books/organic-chemistry/pages/2-12-noncovalent-interactions-between-molecules",
+      "scope": "本文の瞬間双極子・誘起双極子と水素結合の供与受容を確認。代表的N/Oの説明を全水素結合の定義上限にしない。"
+    },
+    {
+      "key": "atomic_lj",
+      "author": "OpenStax / Rice University",
+      "title": "University Physics Volume 1, 15.2: Energy in Simple Harmonic Motion",
+      "url": "https://openstax.org/books/university-physics-volume-1/pages/15-2-energy-in-simple-harmonic-motion",
+      "scope": "公開検索収録の12–6ポテンシャルの符号を確認。力の指数13/7は独自微分。"
+    },
+    {
+      "key": "atomic_cnt",
+      "author": "Satoshi Ishii and Yoshihiko Takano / NIMS",
+      "title": "Development of Carbon Nanotubes with High Electrical Conductivity",
+      "url": "https://www.nims.go.jp/NFM/NIMS-NOW/NIMSNOW_2007V05No05P08E_HighConductiveCarbonNanotube.pdf",
+      "scope": "2007冊子1頁文字層全文を読了。巻き方による導電/半導体とホウ素ドープを確認。図の数値を読み取っていない。"
+    },
+    {
+      "key": "atomic_diamond",
+      "author": "NIMS",
+      "title": "Ultra-wide Bandgap Semiconductors Group",
+      "url": "https://www.nims.go.jp/electr-opt/UWBG_e.html",
+      "scope": "公式研究紹介の検索収録で5.5eVのギャップを確認。半導体化技術と通常純結晶を区別。"
+    },
+    {
+      "key": "atomic_sulfate",
+      "author": "IAEA",
+      "title": "Reference Materials: NBS-127",
+      "url": "https://analytical-reference-materials.iaea.org/nbs-127",
+      "scope": "公開本文の海水硫酸由来BaSO4とdelta34S約+20.3‰、旧CDT脚注を確認。全海水の厳密定数ではない。"
+    },
+    {
+      "key": "atomic_bravais_ref",
+      "author": "International Union of Crystallography",
+      "title": "Nomenclature for crystal families, Bravais-lattice types and arithmetic classes",
+      "url": "https://www.iucr.org/who-we-are/commissions/commission-on-crystallographic-nomenclature/published-reports/bravais",
+      "scope": "1984受理の委員会報告公開要旨で3次元14種類を確認。"
+    },
+    {
+      "key": "atomic_phonon",
+      "author": "MIT OpenCourseWare",
+      "title": "5.62 Lecture Summary 21: Thermodynamics of Solids, Einstein and Debye Models",
+      "url": "https://ocw.mit.edu/courses/5-62-physical-chemistry-ii-spring-2008/3a7d85a0544e4f24a16ae196566108b7_21_562ln08.pdf",
+      "scope": "PDF2頁の格子正規振動、公開検索収録のEinstein/Debyeと低温比熱を確認。全数式の文字層は乱れている。"
+    },
+    {
+      "key": "atomic_barkhausen",
+      "author": "Pierre Cizeau and Stefano Zapperi and Gianfranco Durin and H. Eugene Stanley",
+      "title": "Dynamics of a ferromagnetic domain wall and the Barkhausen effect",
+      "url": "https://arxiv.org/abs/cond-mat/9709300",
+      "scope": "1997年原研究の要旨を読了。駆動磁区壁と不連続応答を確認。全本文の指数検証をしたとはしない。"
+    },
+    {
+      "key": "atomic_retinal",
+      "author": "Olaf Strauss / Webvision",
+      "title": "The Retinal Pigment Epithelium",
+      "url": "https://www.ncbi.nlm.nih.gov/books/NBK54392/",
+      "scope": "公開検索収録の11cisレチナールと光子による活性化・異性化を確認。直接閲覧はCAPTCHAで、全章読了ではない。"
+    },
+    {
+      "key": "atomic_ir_raman",
+      "author": "MIT OpenCourseWare",
+      "title": "3.014 Materials Laboratory: Network Glasses",
+      "url": "https://ocw.mit.edu/courses/3-014-materials-laboratory-fall-2006/4ec2a53dc99af235b1ec00f19d4a9b6e_g3_ntwrkglasses.pdf",
+      "scope": "PDF15頁のIR双極子変化とRaman分極率を確認。後続の実験操作や仮想準位の表現は使用しない。"
+    },
+    {
+      "key": "atomic_linewidth",
+      "author": "NIST",
+      "title": "MATS Summary",
+      "url": "https://pages.nist.gov/MATS/MATS%20Summary.html",
+      "scope": "公開本文の温度・質量依存Doppler幅と衝突半幅を確認。"
+    },
+    {
+      "key": "atomic_photosynthesis",
+      "author": "OpenStax / Rice University",
+      "title": "Concepts of Biology 5.2: The Light-Dependent Reactions of Photosynthesis",
+      "url": "https://openstax.org/books/concepts-biology/pages/5-2-the-light-dependent-reactions-of-photosynthesis",
+      "scope": "公開検索本文でクロロフィル光吸収とNADPからNADPHへの電子受容を確認。"
+    },
+    {
+      "key": "atomic_ir_co2",
+      "author": "NASA",
+      "title": "Climate and Earth’s Energy Budget",
+      "url": "https://science.nasa.gov/earth/earth-observatory/climate-and-earths-energy-budget/",
+      "scope": "公開検索本文でCO2の熱赤外吸収と可視付近の入射太陽光を区別。"
+    }
+  ],
+  "nist_visual": "extracted/reference_checks/S7_046_nist_periodic.png",
+  "retained_discrepancies": [
+    "R01-REG-APPLIED-14",
+    "R02-REG-APPLIED-10"
+  ]
+}

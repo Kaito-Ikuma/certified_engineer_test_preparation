@@ -1,0 +1,49 @@
+{
+  "stem": "ヒーターで1molの水を一定外圧で全て水蒸気にしたとき、水が外部へ行う仕事を求める。",
+  "conditions": {
+    "系": "断熱シリンダー内の1molの水と、加熱用ヒーター。",
+    "温度": "506K",
+    "外圧": "0.1MPa一定",
+    "仮定": "液体体積を無視、水蒸気は理想気体。",
+    "気体定数": "8.3J/(mol・K)",
+    "求める量": "水が外部へ行う仕事の正の大きさ。"
+  },
+  "choices": {
+    "1": {
+      "value": "830J",
+      "verdict": "条件に不一致",
+      "reason": "外圧×体積増加=nRTに対して桁又は値が合わない。"
+    },
+    "2": {
+      "value": "2240J",
+      "verdict": "条件に不一致",
+      "reason": "外圧×体積増加=nRTに対して桁又は値が合わない。"
+    },
+    "3": {
+      "value": "4200J",
+      "verdict": "条件に一致",
+      "reason": "理想蒸気のpV=nRTに一致する。"
+    },
+    "4": {
+      "value": "8300J",
+      "verdict": "条件に不一致",
+      "reason": "外圧×体積増加=nRTに対して桁又は値が合わない。"
+    },
+    "5": {
+      "value": "22400J",
+      "verdict": "条件に不一致",
+      "reason": "外圧×体積増加=nRTに対して桁又は値が合わない。"
+    }
+  },
+  "figures": "正誤方向、全条件・数値・単位、候補5肢を原典画像で確認。図なし。組合せ問題では表の全欄を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_002.png"
+  ],
+  "question_id": "R06-REG-APPLIED-06",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "7906a8e1dba31dd2cc918ca3a79c8046e0a0d70cc9ff512c5d82afc0a570f7c2",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

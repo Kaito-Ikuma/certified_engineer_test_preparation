@@ -1,0 +1,2488 @@
+{
+  "batch_id": "S7_054_aptitude_finish",
+  "reference_date": "2026-10-14",
+  "questions": [
+    {
+      "question_id": "H24-REG-APT-15",
+      "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+      "stem": "期待と異なる測定結果の検証と相談。",
+      "summary": "期待と異なる測定結果の検証と相談。",
+      "conditions": {
+        "状況": "企業Cの期待と違う夜間自動測定、装置故障、再測定不能、報告期限。",
+        "判断": "データの妥当性が未確定であり、期待との差だけでは除外理由にならない。"
+      },
+      "choices": {
+        "1": {
+          "value": "未確認の新データを期限に合わせ提出",
+          "verdict": "不適切",
+          "reason": "検証できていないデータの条件と不確かさを確認せず、期限だけで結論を急ぐ。"
+        },
+        "2": {
+          "value": "新データを除外して従来の予測どおり報告",
+          "verdict": "不適切",
+          "reason": "期待と違うこと自体は除外の科学的理由にならない。"
+        },
+        "3": {
+          "value": "予測から作った値を実測として報告",
+          "verdict": "不適切",
+          "reason": "予測値と観測値を偽って同一視する。"
+        },
+        "4": {
+          "value": "将来の契約を優先して新データを伏せる",
+          "verdict": "不適切",
+          "reason": "事業上の都合を研究結果の取捨選択の根拠にしている。"
+        },
+        "5": {
+          "value": "装置の修理見通しを調べ教授と協議",
+          "verdict": "条件内で適切",
+          "reason": "再測定の可能性、納期、データ品質を整理して判断し、結論の限界を伝える。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/aptitude/page_013.png"
+      ],
+      "core_concept": "期待と異なる測定結果の検証と相談。",
+      "required_knowledge": "生データの保存、測定の妥当性、予測と実測の区別、期限と説明責任。",
+      "solution": "翌朝の装置故障により直ちに再測定できない。新しい自動記録が予測と違うだけで捏造や無効と決めず、装置と測定条件の検証、修理・再測定の見通しを調べて教授へ相談する5。締切を理由に都合のよい値を作らない。",
+      "answer_reason": "翌朝の装置故障により直ちに再測定できない。新しい自動記録が予測と違うだけで捏造や無効と決めず、装置と測定条件の検証、修理・再測定の見通しを調べて教授へ相談する5。締切を理由に都合のよい値を作らない。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。装置不具合の見通しと未確認データを整理し相談。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "生データの保存、測定の妥当性、予測と実測の区別、期限と説明責任。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:research:validation"
+      ],
+      "discipline_id": "apt_1",
+      "concept_id": "eth54_data",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：期待と異なる測定結果の検証と相談。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "scj_code2013",
+        "mext_misconduct2014"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APT-02",
+      "source_sha256": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+      "stem": "雇用者・顧客への誠実さと公共への責任。",
+      "summary": "雇用者・顧客への誠実さと公共への責任。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "平成25年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "XOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOXO と異なる。"
+        },
+        "2": {
+          "value": "OXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOXO と異なる。"
+        },
+        "3": {
+          "value": "OOXO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "OOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOXO と異なる。"
+        },
+        "5": {
+          "value": "OOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOXO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/aptitude/page_003.png"
+      ],
+      "core_concept": "雇用者・顧客への誠実さと公共への責任。",
+      "required_knowledge": "専門職の複数の責任、公共安全、雇用者と顧客、研鑽と交流。",
+      "solution": "アの法定責任を超える公共への責任、イの人材育成、エの継続研鑽と外部の専門的交流は適切。ウの「雇用者に対してのみ誠実」は顧客・公衆への責任を消すため誤。OOXOの3。",
+      "answer_reason": "アの法定責任を超える公共への責任、イの人材育成、エの継続研鑽と外部の専門的交流は適切。ウの「雇用者に対してのみ誠実」は顧客・公衆への責任を消すため誤。OOXOの3。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。公衆への責務と育成研鑽は正、雇用主のみへの誠実は誤。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "専門職の複数の責任、公共安全、雇用者と顧客、研鑽と交流。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:public"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_public",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：雇用者・顧客への誠実さと公共への責任。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "ipej_ethics2011"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APT-14",
+      "source_sha256": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+      "stem": "予防的取組の十二の視点を点検する。",
+      "summary": "予防的取組の十二の視点を点検する。",
+      "conditions": {
+        "ア": "無知と不確実性も認識する。既知の確率だけに限定しない。",
+        "イ": "早期警告後の長期的監視と研究により遅発影響を調べる。",
+        "ウ": "知識の盲点と欠落を明確化し減らす。",
+        "エ": "学際的な学びの障壁を減らす。",
+        "オ": "実世界の使用条件を評価へ反映する。",
+        "カ": "主張される利益とリスクの双方を精査する。",
+        "キ": "代替手段も比較し技術の多様性・適応性を確保する。",
+        "ク": "専門知だけでなく生活者・地域の経験も用いる。",
+        "ケ": "異なる集団の価値と受容を考慮する。",
+        "コ": "広く情報を得つつ規制側の独立性を保つ。",
+        "サ": "知識と行動を妨げる制度的障壁を減らす。",
+        "シ": "合理的懸念があれば被害低減へ動き、分析だけで判断を延ばさない。"
+      },
+      "choices": {
+        "1": {
+          "value": "0件",
+          "verdict": "条件内で適切",
+          "reason": "ア〜シの12件はすべて予防的取組を支える。 集計と一致する。"
+        },
+        "2": {
+          "value": "1件",
+          "verdict": "不適切",
+          "reason": "ア〜シの12件はすべて予防的取組を支える。 判定を先に行った集計と一致しない。"
+        },
+        "3": {
+          "value": "2件",
+          "verdict": "不適切",
+          "reason": "ア〜シの12件はすべて予防的取組を支える。 判定を先に行った集計と一致しない。"
+        },
+        "4": {
+          "value": "3件",
+          "verdict": "不適切",
+          "reason": "ア〜シの12件はすべて予防的取組を支える。 判定を先に行った集計と一致しない。"
+        },
+        "5": {
+          "value": "4件",
+          "verdict": "不適切",
+          "reason": "ア〜シの12件はすべて予防的取組を支える。 判定を先に行った集計と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "原典前文の「リオ宣言を批准」は画像にも存在。宣言と条約の批准を混同しない。前文のEU・サミット交渉史の全体は追加照合対象。",
+      "evidence": [
+        "extracted/pages/H25/aptitude/page_015.png",
+        "extracted/pages/H25/aptitude/page_016.png"
+      ],
+      "core_concept": "予防的取組の十二の視点を点検する。",
+      "required_knowledge": "予防的取組、科学的不確実性、費用対効果、複数の知識と価値、独立性。",
+      "solution": "各項目の判断は確認条件に示す。無知・長期監視・学際性・現実条件・利益と代替案・市民参加・規制の独立・行動の障壁を点検する12件は適切で、不適切0件の1。完全な科学的確実性がないだけで合理的な低減策を無期限に延期しない。",
+      "answer_reason": "各項目の判断は確認条件に示す。無知・長期監視・学際性・現実条件・利益と代替案・市民参加・規制の独立・行動の障壁を点検する12件は適切で、不適切0件の1。完全な科学的確実性がないだけで合理的な低減策を無期限に延期しない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。12項目すべて予防的判断の学びを支える。前文の批准は原典の表現疑義。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "予防的取組、科学的不確実性、費用対効果、複数の知識と価値、独立性。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:safety:precaution"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "eth54_precaution",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：予防的取組の十二の視点を点検する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "eth54_eea",
+        "eth54_rio"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APT-15",
+      "source_sha256": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+      "stem": "功利・正義・義務の三つの倫理視点。",
+      "summary": "功利・正義・義務の三つの倫理視点。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "平成25年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "a c b",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 b c a と異なる。"
+        },
+        "2": {
+          "value": "b a c",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 b c a と異なる。"
+        },
+        "3": {
+          "value": "b c a",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "c a b",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 b c a と異なる。"
+        },
+        "5": {
+          "value": "c b a",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 b c a と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/aptitude/page_017.png"
+      ],
+      "core_concept": "功利・正義・義務の三つの倫理視点。",
+      "required_knowledge": "功利主義、分配の正義、義務と普遍化。",
+      "solution": "功利主義は結果の総利益を検討するb、正義の倫理は公平と弱い立場の権利を問うc、義務の倫理は普遍化できる行為規則を問うa。よってb c aの3。利益の合計だけで個人の権利が自動的に消えるとはしない。",
+      "answer_reason": "功利主義は結果の総利益を検討するb、正義の倫理は公平と弱い立場の権利を問うc、義務の倫理は普遍化できる行為規則を問うa。よってb c aの3。利益の合計だけで個人の権利が自動的に消えるとはしない。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。利益総量=b、公平分配=c、普遍的義務=a。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "功利主義、分配の正義、義務と普遍化。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:principles"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_principles",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：功利・正義・義務の三つの倫理視点。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "scu_ethics_framework"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APT-12",
+      "source_sha256": "5691e940fce3cbf9423bc99a96803c1c6273563931b76b91bdb9f2b67e6233d3",
+      "stem": "組織の社会的責任と大学の不正対応。",
+      "summary": "組織の社会的責任と大学の不正対応。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "平成26年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "企業の社会的責任を積極的に果たす",
+          "verdict": "条件内で適切",
+          "reason": "規則の最低限だけでなく社会との信頼関係を含む。"
+        },
+        "2": {
+          "value": "大学の試験不正は注意だけで単位処分なしが一般",
+          "verdict": "不適切",
+          "reason": "大学でも学則等に基づく懲戒や科目の成績措置がある。注意のみを一般化できない。"
+        },
+        "3": {
+          "value": "学問の自由と組織の健全性を両立",
+          "verdict": "条件内で適切",
+          "reason": "自由は不正な評価や責任の不存在を意味しない。"
+        },
+        "4": {
+          "value": "ISO26000は持続可能な発展へ貢献",
+          "verdict": "条件内で適切",
+          "reason": "認証要求ではなく社会的責任の手引である。"
+        },
+        "5": {
+          "value": "国連グローバル・コンパクトの四分野",
+          "verdict": "条件内で適切",
+          "reason": "人権、労働、環境、腐敗防止という対象分野を区別する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "大学の個別規程は一般的な反例であり、全大学・2014年の処分分布の統計を確認したものではない。",
+      "evidence": [
+        "extracted/pages/H26/aptitude/page_012.png"
+      ],
+      "core_concept": "組織の社会的責任と大学の不正対応。",
+      "required_knowledge": "大学の規程と不正対応、組織の説明責任、社会的責任の規格と自発的原則。",
+      "solution": "不適切2。大学の不正行為も教育・組織の公正を損ない、規程に応じた処分の対象となる。企業の責任、学問の自由、ISOの手引、国連の四分野は対象と性格を分けて理解する。",
+      "answer_reason": "不適切2。大学の不正行為も教育・組織の公正を損ない、規程に応じた処分の対象となる。企業の責任、学問の自由、ISOの手引、国連の四分野は対象と性格を分けて理解する。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。カンニングで単位等の処分なしが一般は否定。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "大学の規程と不正対応、組織の説明責任、社会的責任の規格と自発的原則。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:csr"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_sr",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：組織の社会的責任と大学の不正対応。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "iso26000",
+        "eth54_globalcompact",
+        "eth54_university"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APT-04",
+      "source_sha256": "2965cecde9e4c31c06a94192bf7a750346fbf85d07d37943d58a3fa15d15ebeb",
+      "stem": "法令の空白も公衆への配慮をなくさない。",
+      "summary": "法令の空白も公衆への配慮をなくさない。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "平成27年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "OOXX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XXOO と異なる。"
+        },
+        "2": {
+          "value": "XOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XXOO と異なる。"
+        },
+        "3": {
+          "value": "XXOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "OOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XXOO と異なる。"
+        },
+        "5": {
+          "value": "XXOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XXOO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/aptitude/page_004.png"
+      ],
+      "core_concept": "法令の空白も公衆への配慮をなくさない。",
+      "required_knowledge": "法の最低基準と倫理、事実の隠蔽、公共責任、適法な改善提案。",
+      "solution": "アの法にないなら安全を考えなくてよい、イの不都合な知見を隠す、はいずれも誤。ウの法令の有無によらない公衆への責任と、エの合理性を欠く法令の改善を相談する行動は適切。XXOOの3。",
+      "answer_reason": "アの法にないなら安全を考えなくてよい、イの不都合な知見を隠す、はいずれも誤。ウの法令の有無によらない公衆への責任と、エの合理性を欠く法令の改善を相談する行動は適切。XXOOの3。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。XXOO：法の隙間で安全犠牲と隠蔽優先を否定。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "法の最低基準と倫理、事実の隠蔽、公共責任、適法な改善提案。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:public"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_public",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：法令の空白も公衆への配慮をなくさない。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "ipej_ethics2011"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APT-05",
+      "source_sha256": "2965cecde9e4c31c06a94192bf7a750346fbf85d07d37943d58a3fa15d15ebeb",
+      "stem": "倫理綱領・社会規範・専門職の責任。",
+      "summary": "倫理綱領・社会規範・専門職の責任。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "平成27年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "XOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "2": {
+          "value": "OXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "3": {
+          "value": "OOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "4": {
+          "value": "OOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "5": {
+          "value": "OOOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/aptitude/page_005.png"
+      ],
+      "core_concept": "倫理綱領・社会規範・専門職の責任。",
+      "required_knowledge": "団体規範の効力、社会規範の種類、公衆の安全、法令遵守を含む倫理。",
+      "solution": "綱領の会員上の効力は所属団体に関係するが、非会員だから法や契約上の責任までなくなるとはしない。法律、契約、手順、綱領、慣習は規範の異なる形であり、専門職の公衆優先と広いコンプライアンスも適切。OOOOの5。",
+      "answer_reason": "綱領の会員上の効力は所属団体に関係するが、非会員だから法や契約上の責任までなくなるとはしない。法律、契約、手順、綱領、慣習は規範の異なる形であり、専門職の公衆優先と広いコンプライアンスも適切。OOOOの5。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。4文すべて正。ただし団体綱領の強制と他の責任を分ける。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "団体規範の効力、社会規範の種類、公衆の安全、法令遵守を含む倫理。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:code"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_norms",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：倫理綱領・社会規範・専門職の責任。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "ipej_ethics2011"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APT-07",
+      "source_sha256": "2965cecde9e4c31c06a94192bf7a750346fbf85d07d37943d58a3fa15d15ebeb",
+      "stem": "2014研究不正ガイドラインの組織責任と行政措置。",
+      "summary": "2014研究不正ガイドラインの組織責任と行政措置。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "平成27年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "ガイドラインは行政措置の根拠ではない",
+          "verdict": "不適切",
+          "reason": "管理条件、間接経費削減、配分停止等の措置を規定している。"
+        },
+        "2": {
+          "value": "管理条件未履行に間接経費等の措置",
+          "verdict": "条件内で適切",
+          "reason": "段階と条件を満たして研究機関への措置が行われる。自動的な全資金停止とはしない。"
+        },
+        "3": {
+          "value": "学生や研究支援者も倫理教育の対象",
+          "verdict": "条件内で適切",
+          "reason": "研究者本人だけでなく研究に関わる者への教育を組織的に整える。"
+        },
+        "4": {
+          "value": "競争的資金以外を含む省の予算による研究",
+          "verdict": "条件内で適切",
+          "reason": "当該ガイドラインの適用範囲は競争的資金という名称だけで区切らない。"
+        },
+        "5": {
+          "value": "機関として責任ある不正防止体制",
+          "verdict": "条件内で適切",
+          "reason": "個人への処分に加えて組織の対応・管理責任を問う。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "検索本文で措置を確認。当時全文の各選択肢への逐条対応、適用範囲のすべての例外は追加照合対象。",
+      "evidence": [
+        "extracted/pages/H27/aptitude/page_007.png"
+      ],
+      "core_concept": "2014研究不正ガイドラインの組織責任と行政措置。",
+      "required_knowledge": "研究倫理教育、適用範囲、機関への措置、管理条件と配分機関。",
+      "solution": "不適切1。平成26年ガイドラインは研究機関に管理条件を付し、履行されない場合の間接経費削減・配分停止を段階的に示す。個人の不正と機関の予防・調査体制は別の責任である。",
+      "answer_reason": "不適切1。平成26年ガイドラインは研究機関に管理条件を付し、履行されない場合の間接経費削減・配分停止を段階的に示す。個人の不正と機関の予防・調査体制は別の責任である。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。新ガイドラインが行政措置の根拠にならないは誤。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "研究倫理教育、適用範囲、機関への措置、管理条件と配分機関。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:research:guideline2014"
+      ],
+      "discipline_id": "apt_1",
+      "concept_id": "eth54_guideline",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：2014研究不正ガイドラインの組織責任と行政措置。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "mext_misconduct2014"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APT-14",
+      "source_sha256": "2965cecde9e4c31c06a94192bf7a750346fbf85d07d37943d58a3fa15d15ebeb",
+      "stem": "リスク対話は情報の検証可能性も必要。",
+      "summary": "リスク対話は情報の検証可能性も必要。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "平成27年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "ハザードとアウトレージの認知モデル",
+          "verdict": "条件内で適切",
+          "reason": "感情・公平性・信頼の要素を含む認知モデル。異単位の物理量を足す計算式ではない。"
+        },
+        "2": {
+          "value": "情報や決定権の非対称性を考慮",
+          "verdict": "条件内で適切",
+          "reason": "発信側と当事者の条件の違いを調べる。"
+        },
+        "3": {
+          "value": "統治者と当事者でリスクの視点が違う",
+          "verdict": "条件内で適切",
+          "reason": "集団の確率的管理と本人の一回の経験の双方を考える。"
+        },
+        "4": {
+          "value": "中立的な媒介者と専門家の役割",
+          "verdict": "条件内で適切",
+          "reason": "利害の異なる者の対話を支え、専門知識だけで価値判断を押しつけない。"
+        },
+        "5": {
+          "value": "検証可能性は不要",
+          "verdict": "不適切",
+          "reason": "不確かな情報ほど根拠を調べられることが重要。分かりやすさを理由に検証を捨てない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "参照PDFは2014年資料の案と検討資料を含む。原典の採用版全体との対照と簡潔さの条件は追加照合。認知モデルを普遍的な数値式にしない。",
+      "evidence": [
+        "extracted/pages/H27/aptitude/page_014.png",
+        "extracted/pages/H27/aptitude/page_015.png"
+      ],
+      "core_concept": "リスク対話は情報の検証可能性も必要。",
+      "required_knowledge": "リスク認知、ハザード、アウトレージ、非対称性、媒介者、検証可能性。",
+      "solution": "不適切5。対話は一方向の説得ではなく、当事者と管理側の視点・権限・知識の違いを調整する。公開情報の検証可能性と複数の根拠が信頼を支える。",
+      "answer_reason": "不適切5。対話は一方向の説得ではなく、当事者と管理側の視点・権限・知識の違いを調整する。公開情報の検証可能性と複数の根拠が信頼を支える。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。検証可能性のための情報公開不要が誤。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "リスク認知、ハザード、アウトレージ、非対称性、媒介者、検証可能性。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:safety:riskdialogue"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "eth54_riskcomm",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：リスク対話は情報の検証可能性も必要。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "eth54_riskcomm"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APT-03",
+      "source_sha256": "2960d5ff16afaa394186362bb969ee236511012ee2819db45847199af58b073c",
+      "stem": "倫理綱領の公共優先・誠実・研鑽・知財。",
+      "summary": "倫理綱領の公共優先・誠実・研鑽・知財。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "平成28年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "OOOOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "XOOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOOO と異なる。"
+        },
+        "3": {
+          "value": "OXOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOOO と異なる。"
+        },
+        "4": {
+          "value": "OOXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOOO と異なる。"
+        },
+        "5": {
+          "value": "OOOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOOO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/aptitude/page_003.png"
+      ],
+      "core_concept": "倫理綱領の公共優先・誠実・研鑽・知財。",
+      "required_knowledge": "倫理綱領の対象、客観性、説明責任、継続研鑽、知的財産。",
+      "solution": "公衆優先、事実・知識・良心による判断、継続研鑽、説明責任、他者の知的財産の尊重はすべて技術者倫理に適合する。OOOOOの1。専門職の信頼を能力だけで説明しない。",
+      "answer_reason": "公衆優先、事実・知識・良心による判断、継続研鑽、説明責任、他者の知的財産の尊重はすべて技術者倫理に適合する。OOOOOの1。専門職の信頼を能力だけで説明しない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。5文すべて倫理綱領に含む一般原則。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "倫理綱領の対象、客観性、説明責任、継続研鑽、知的財産。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:code"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_code",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：倫理綱領の公共優先・誠実・研鑽・知財。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "ipej_ethics2011"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APT-09",
+      "source_sha256": "2960d5ff16afaa394186362bb969ee236511012ee2819db45847199af58b073c",
+      "stem": "公共責任と不都合な事実の扱い。",
+      "summary": "公共責任と不都合な事実の扱い。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "平成28年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "OXXX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOX と異なる。"
+        },
+        "2": {
+          "value": "OXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOX と異なる。"
+        },
+        "3": {
+          "value": "XXOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOX と異なる。"
+        },
+        "4": {
+          "value": "OOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOX と異なる。"
+        },
+        "5": {
+          "value": "OXOX",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/aptitude/page_009.png"
+      ],
+      "core_concept": "公共責任と不都合な事実の扱い。",
+      "required_knowledge": "法律と倫理、事実の報告、安全配慮、制度の改善。",
+      "solution": "アの法定責任を超える公共配慮は正。イの法令の空白を理由に安全配慮を省くことは誤。ウの必要な法令の改善に向けた相談は正。エの不都合な知見の隠蔽は誤。OXOXの5。",
+      "answer_reason": "アの法定責任を超える公共配慮は正。イの法令の空白を理由に安全配慮を省くことは誤。ウの必要な法令の改善に向けた相談は正。エの不都合な知見の隠蔽は誤。OXOXの5。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。OXOX：規制外でも公衆安全、法改正意見正、安全犠牲・隠蔽誤。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "法律と倫理、事実の報告、安全配慮、制度の改善。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:public"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_public",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：公共責任と不都合な事実の扱い。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "ipej_ethics2011"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APT-10",
+      "source_sha256": "2960d5ff16afaa394186362bb969ee236511012ee2819db45847199af58b073c",
+      "stem": "旧公益通報保護法の目的の四語。",
+      "summary": "旧公益通報保護法の目的の四語。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "平成28年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "公益通報・訓戒・法規制の順守・持続的な成長",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 公益通報・解雇・法令の規定の遵守・健全な発展 と異なる。"
+        },
+        "2": {
+          "value": "内部通報・訓戒・法令の規定の遵守・健全な発展",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 公益通報・解雇・法令の規定の遵守・健全な発展 と異なる。"
+        },
+        "3": {
+          "value": "公益通報・訓戒・法令の規定の遵守・持続的な成長",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 公益通報・解雇・法令の規定の遵守・健全な発展 と異なる。"
+        },
+        "4": {
+          "value": "内部通報・解雇・法規制の順守・持続的な成長",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 公益通報・解雇・法令の規定の遵守・健全な発展 と異なる。"
+        },
+        "5": {
+          "value": "公益通報・解雇・法令の規定の遵守・健全な発展",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "原典掲載の2013改正表記と旧法本文を保持。2016施行版の全条文逐語対照は未完。",
+      "evidence": [
+        "extracted/pages/H28/aptitude/page_010.png"
+      ],
+      "core_concept": "旧公益通報保護法の目的の四語。",
+      "required_knowledge": "旧法第1条の目的と用語、解雇等の保護、対象事実・通報先。",
+      "solution": "目的条文の対象は公益通報、保護の柱は解雇の無効等、促すものは法令の規定の遵守、結びは国民生活の安定及び社会経済の健全な発展。四語が揃う5。一般的な内部告発と法定公益通報を同一にしない。",
+      "answer_reason": "目的条文の対象は公益通報、保護の柱は解雇の無効等、促すものは法令の規定の遵守、結びは国民生活の安定及び社会経済の健全な発展。四語が揃う5。一般的な内部告発と法定公益通報を同一にしない。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。公益通報・解雇・法令の規定の遵守・健全な発展。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "旧法第1条の目的と用語、解雇等の保護、対象事実・通報先。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:compliance:whistleblower"
+      ],
+      "discipline_id": "apt_4",
+      "concept_id": "eth54_whistlepurpose",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：旧公益通報保護法の目的の四語。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "caa_handbook_pre2022"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APT-12",
+      "source_sha256": "2960d5ff16afaa394186362bb969ee236511012ee2819db45847199af58b073c",
+      "stem": "客観的な投稿と依頼者との関係の開示。",
+      "summary": "客観的な投稿と依頼者との関係の開示。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "平成28年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "関係者だから投稿を必ず控える",
+          "verdict": "不適切",
+          "reason": "関係があること自体から発言禁止を導かない。"
+        },
+        "2": {
+          "value": "関係者だから必ず擁護記事を出す",
+          "verdict": "不適切",
+          "reason": "依頼者への誠実さは一方的な宣伝の義務ではない。"
+        },
+        "3": {
+          "value": "学協会の有識者に必ず代筆を頼む",
+          "verdict": "不適切",
+          "reason": "第三者の起用だけでは本人の利益関係の説明を代替しない。"
+        },
+        "4": {
+          "value": "会社の広報担当者に必ず代筆を頼む",
+          "verdict": "不適切",
+          "reason": "広報への委任は客観性と関係開示の要件を消さない。"
+        },
+        "5": {
+          "value": "真実を客観的に示し会社との関係を開示",
+          "verdict": "条件内で適切",
+          "reason": "読者が主張と利害関係を併せて評価できるようにする。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/aptitude/page_012.png"
+      ],
+      "core_concept": "客観的な投稿と依頼者との関係の開示。",
+      "required_knowledge": "利益相反、真実性、客観性、公共への説明、依頼者との関係。",
+      "solution": "最も適切5。廃棄物処理をめぐる誤解を正す記事でも、都合のよい事実だけを選ばず、B社のコンサルタントという関係を示す。発言の内容の真実性と発言者の立場は別々に確認する。",
+      "answer_reason": "最も適切5。廃棄物処理をめぐる誤解を正す記事でも、都合のよい事実だけを選ばず、B社のコンサルタントという関係を示す。発言の内容の真実性と発言者の立場は別々に確認する。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。客観的真実と依頼会社との関係の開示を組み合わせる。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "利益相反、真実性、客観性、公共への説明、依頼者との関係。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:disclosure"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_conflict",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：客観的な投稿と依頼者との関係の開示。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "ipej_ethics2011",
+        "scu_ethics_framework"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APT-11",
+      "source_sha256": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+      "stem": "ISO26000の七原則と技術の重要性を区別。",
+      "summary": "ISO26000の七原則と技術の重要性を区別。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "平成29年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "ステークホルダーの利害の尊重",
+          "verdict": "条件内で適切",
+          "reason": "七原則に含まれる。社会的影響を受ける者の利害を検討する。"
+        },
+        "2": {
+          "value": "法の支配の尊重",
+          "verdict": "条件内で適切",
+          "reason": "七原則に含まれる。組織の独自ルールだけで法を置き換えない。"
+        },
+        "3": {
+          "value": "国際行動規範の尊重",
+          "verdict": "条件内で適切",
+          "reason": "七原則に含まれる。国内の慣行だけへ限定しない。"
+        },
+        "4": {
+          "value": "人権の尊重",
+          "verdict": "条件内で適切",
+          "reason": "七原則に含まれる。人権は中核主題にも関係する。"
+        },
+        "5": {
+          "value": "技術・ノウハウの重要性",
+          "verdict": "不適切",
+          "reason": "技術が不要という意味ではなく、七原則の名称として挙げられていない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/aptitude/page_011.png"
+      ],
+      "core_concept": "ISO26000の七原則と技術の重要性を区別。",
+      "required_knowledge": "説明責任、透明性、倫理的行動、ステークホルダーの利害の尊重、法の支配の尊重、国際行動規範の尊重、人権の尊重。",
+      "solution": "七原則に該当しない5。説明責任、透明性、倫理的行動、ステークホルダーの利害の尊重、法の支配の尊重、国際行動規範の尊重、人権の尊重。中核主題の七つと混同しない。重要な活動であっても規格の原則の見出しになるとは限らない。",
+      "answer_reason": "七原則に該当しない5。説明責任、透明性、倫理的行動、ステークホルダーの利害の尊重、法の支配の尊重、国際行動規範の尊重、人権の尊重。中核主題の七つと混同しない。重要な活動であっても規格の原則の見出しになるとは限らない。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。技術ノウハウは七原則の見出しではない。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "説明責任、透明性、倫理的行動、ステークホルダーの利害の尊重、法の支配の尊重、国際行動規範の尊重、人権の尊重。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:iso"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_iso",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：ISO26000の七原則と技術の重要性を区別。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "eth54_iso_brochure",
+        "iso26000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-APT-10",
+      "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+      "stem": "技術情報と説明・記録の六つの行動。",
+      "summary": "技術情報と説明・記録の六つの行動。",
+      "conditions": {
+        "ア": "業務中の技術情報を友人へ話す。公開情報なら評価が変わり得る。",
+        "イ": "相手が専門知識を持たないとして仕様変更を説明しない。",
+        "ウ": "依頼者が求めなくても重要なリスクを説明する。",
+        "エ": "不要な専有情報の記憶媒体を家庭のゴミ箱へ捨てる。",
+        "オ": "パスワードと施錠によるアクセス管理。これだけで全対策が完成するとはしない。",
+        "カ": "顧客の使用製品に関する質問へ十分なデータを持たず記憶で答える。"
+      },
+      "choices": {
+        "1": {
+          "value": "2件",
+          "verdict": "不適切",
+          "reason": "不適切はア・イ・エ・カの4件。 判定を先に行った集計と一致しない。"
+        },
+        "2": {
+          "value": "3件",
+          "verdict": "不適切",
+          "reason": "不適切はア・イ・エ・カの4件。 判定を先に行った集計と一致しない。"
+        },
+        "3": {
+          "value": "4件",
+          "verdict": "条件内で適切",
+          "reason": "不適切はア・イ・エ・カの4件。 集計と一致する。"
+        },
+        "4": {
+          "value": "5件",
+          "verdict": "不適切",
+          "reason": "不適切はア・イ・エ・カの4件。 判定を先に行った集計と一致しない。"
+        },
+        "5": {
+          "value": "6件",
+          "verdict": "不適切",
+          "reason": "不適切はア・イ・エ・カの4件。 判定を先に行った集計と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "アの技術情報の非公開性・守秘対象は前提を補い過ぎない。公開情報の会話まで禁止しない。カも記憶を使うこと自体を捏造とせず、情報が十分でないのに不確かさを確認せず回答する条件で判断する。",
+      "evidence": [
+        "extracted/pages/R01/aptitude/page_011.png"
+      ],
+      "core_concept": "技術情報と説明・記録の六つの行動。",
+      "required_knowledge": "守秘の範囲、仕様変更の説明、重要リスク、データ保存、アクセス制御。",
+      "solution": "アは現在の業務の技術的内容を友人へ話す、イは仕様変更を専門知識のない顧客へ説明しない、エは専有情報入りの記憶媒体を家庭のゴミ箱へ捨てる、カは十分なデータを持たずに記憶で顧客の問い合わせに答えるため、設問では不適切4件の3。ウの重要リスクの説明とオの個人情報のパスワード・施錠管理は適切。",
+      "answer_reason": "アは現在の業務の技術的内容を友人へ話す、イは仕様変更を専門知識のない顧客へ説明しない、エは専有情報入りの記憶媒体を家庭のゴミ箱へ捨てる、カは十分なデータを持たずに記憶で顧客の問い合わせに答えるため、設問では不適切4件の3。ウの重要リスクの説明とオの個人情報のパスワード・施錠管理は適切。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。ア・イ・エ・カが不適切4。アの技術内容は非公開の想定を留保。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "守秘の範囲、仕様変更の説明、重要リスク、データ保存、アクセス制御。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:research:validation"
+      ],
+      "discipline_id": "apt_1",
+      "concept_id": "eth54_information",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：技術情報と説明・記録の六つの行動。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "ipej_ethics2011",
+        "scj_code2013"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-APT-13",
+      "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+      "stem": "BCPの対象と策定状況、平時の効果。",
+      "summary": "BCPの対象と策定状況、平時の効果。",
+      "conditions": {
+        "ア": "事業継続と目標復旧を計画する。",
+        "イ": "自然災害に限定。",
+        "ウ": "大企業・中堅企業ともほぼ100%とする。",
+        "エ": "平時の利点をすべて否定。"
+      },
+      "choices": {
+        "1": {
+          "value": "0件",
+          "verdict": "不適切",
+          "reason": "不適切はイ・ウ・エ。 判定を先に行った集計と一致しない。"
+        },
+        "2": {
+          "value": "1件",
+          "verdict": "不適切",
+          "reason": "不適切はイ・ウ・エ。 判定を先に行った集計と一致しない。"
+        },
+        "3": {
+          "value": "2件",
+          "verdict": "不適切",
+          "reason": "不適切はイ・ウ・エ。 判定を先に行った集計と一致しない。"
+        },
+        "4": {
+          "value": "3件",
+          "verdict": "条件内で適切",
+          "reason": "不適切はイ・ウ・エ。 集計と一致する。"
+        },
+        "5": {
+          "value": "4件",
+          "verdict": "不適切",
+          "reason": "不適切はイ・ウ・エ。 判定を先に行った集計と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "2019試験後の調査値を当時へ遡及しない。2018実態調査の対象・分母の全照合は査読対象。",
+      "evidence": [
+        "extracted/pages/R01/aptitude/page_013.png"
+      ],
+      "core_concept": "BCPの対象と策定状況、平時の効果。",
+      "required_knowledge": "BCPとBCM、原因と事業中断の影響、企業規模別の調査、平時の改善。",
+      "solution": "アの重要事業の継続・早期復旧は正。イの自然災害だけという限定は、感染症・事故・供給途絶等を落とす。ウの大企業と中堅企業のほぼ全てが策定済みという記述は当時の実態と異なる。エの平時にメリットがないも誤。3件の4。",
+      "answer_reason": "アの重要事業の継続・早期復旧は正。イの自然災害だけという限定は、感染症・事故・供給途絶等を落とす。ウの大企業と中堅企業のほぼ全てが策定済みという記述は当時の実態と異なる。エの平時にメリットがないも誤。3件の4。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。自然災害のみ・ほぼ100％・平常時無益の3誤り。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "BCPとBCM、原因と事業中断の影響、企業規模別の調査、平時の改善。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:safety:bcp"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "eth54_bcp",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：BCPの対象と策定状況、平時の効果。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "eth54_bcp2013",
+        "eth54_bcp_survey2018"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APT-04",
+      "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+      "stem": "構造の危険を隠さず関係者の安全へつなぐ。",
+      "summary": "構造の危険を隠さず関係者の安全へつなぐ。",
+      "conditions": {
+        "状況": "使用中の建物と周辺の何千人もの人々、構造計算の誤り、補強に3か月、暴風時の監視と避難が可能。",
+        "争点": "混乱を恐れて入居者へ知らせないことの妥当性。"
+      },
+      "choices": {
+        "1": {
+          "value": "XOXOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "OXOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOXOO と異なる。"
+        },
+        "3": {
+          "value": "OOXOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOXOO と異なる。"
+        },
+        "4": {
+          "value": "XXOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOXOO と異なる。"
+        },
+        "5": {
+          "value": "OOXXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOXOO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "倫理事例の判断であり、すべての秘密情報を即時公開する一般的な法的義務へ置き換えない。実際の緊急性・通報先は個別に評価する。",
+      "evidence": [
+        "extracted/pages/R01_retest/aptitude/page_004.png",
+        "extracted/pages/R01_retest/aptitude/page_005.png"
+      ],
+      "core_concept": "構造の危険を隠さず関係者の安全へつなぐ。",
+      "required_knowledge": "公衆の安全、誤りの是正、避難・監視計画、依頼者への働きかけ、必要な情報開示。",
+      "solution": "アのAが計算ミスを秘匿すること、ウのB市が混乱を理由に情報を伏せることは不適切。イの安全確保への努力、エの関係者への適切な説明を説得する対応、オの十分な情報による対処は適切でXOXOOの1。危険を知らせることと無制限に秘密を公開することは分ける。",
+      "answer_reason": "アのAが計算ミスを秘匿すること、ウのB市が混乱を理由に情報を伏せることは不適切。イの安全確保への努力、エの関係者への適切な説明を説得する対応、オの十分な情報による対処は適切でXOXOOの1。危険を知らせることと無制限に秘密を公開することは分ける。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。XOXOO：依頼者への追従より公衆安全と説明の説得。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "公衆の安全、誤りの是正、避難・監視計画、依頼者への働きかけ、必要な情報開示。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:disclosure"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_disclosurecase",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：構造の危険を隠さず関係者の安全へつなぐ。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "ipej_ethics2011",
+        "scu_ethics_framework"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-APT-09",
+      "source_sha256": "d0ca26aaeeba6d436d8ffa77a759056e7a194c0ac9fad61de2c84392999050bb",
+      "stem": "重要事業を優先する継続計画。",
+      "summary": "重要事業を優先する継続計画。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和2年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "XOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXXO と異なる。"
+        },
+        "2": {
+          "value": "XXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXXO と異なる。"
+        },
+        "3": {
+          "value": "OXXO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "OOXX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXXO と異なる。"
+        },
+        "5": {
+          "value": "XOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXXO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "企業の普及率に関する全調査本文と当該設問の母集団は追加照合。ほぼ全てという一般化を後年の数値で否定しない。",
+      "evidence": [
+        "extracted/pages/R02/aptitude/page_009.png"
+      ],
+      "core_concept": "重要事業を優先する継続計画。",
+      "required_knowledge": "事業影響度分析、重要業務、目標復旧時間、共通原因による障害。",
+      "solution": "アの突発事象と徐々に進行する事象への備えは正。イのほぼ全企業で策定済みは誤。ウの再開が容易な業務だけを優先する方針は、重要事業と影響度を見ないため誤。エの同時被災しにくいバックアップは正。OXXOの3。",
+      "answer_reason": "アの突発事象と徐々に進行する事象への備えは正。イのほぼ全企業で策定済みは誤。ウの再開が容易な業務だけを優先する方針は、重要事業と影響度を見ないため誤。エの同時被災しにくいバックアップは正。OXXOの3。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。OXXO：全策定と着手しやすい順を否定し、中核業務・遠隔バックアップ。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "事業影響度分析、重要業務、目標復旧時間、共通原因による障害。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:safety:bcp"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "eth54_bcp",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：重要事業を優先する継続計画。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "eth54_bcp2013"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-APT-10",
+      "source_sha256": "d0ca26aaeeba6d436d8ffa77a759056e7a194c0ac9fad61de2c84392999050bb",
+      "stem": "地域のエネルギー管理・熱電併給・ZEH。",
+      "summary": "地域のエネルギー管理・熱電併給・ZEH。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和2年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "OOOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "XOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "3": {
+          "value": "OXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "4": {
+          "value": "OOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "5": {
+          "value": "OOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "2020原典のZEHの総称表現を保持。2018定義の対象用途と評価境界を限定し、CEMSを含む当時の全公的定義の逐語対照は追加照合。",
+      "evidence": [
+        "extracted/pages/R02/aptitude/page_010.png"
+      ],
+      "core_concept": "地域のエネルギー管理・熱電併給・ZEH。",
+      "required_knowledge": "再生可能資源、Community Energy Management System、熱電併給、年間一次エネルギー収支。",
+      "solution": "アの再生可能エネルギーの例、イの地域全体のCEMS、ウの電力と熱を同時に利用するコージェネレーション、エの年間の正味エネルギー収支をゼロ以下へ近づけるZEHは適切で1。ZEHは各瞬間の購入電力ゼロや、家電を含む全エネルギーを無条件にゼロとすることではない。",
+      "answer_reason": "アの再生可能エネルギーの例、イの地域全体のCEMS、ウの電力と熱を同時に利用するコージェネレーション、エの年間の正味エネルギー収支をゼロ以下へ近づけるZEHは適切で1。ZEHは各瞬間の購入電力ゼロや、家電を含む全エネルギーを無条件にゼロとすることではない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。再エネ・CEMS・コジェネ・ZEH4文全正。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "再生可能資源、Community Energy Management System、熱電併給、年間一次エネルギー収支。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:sustainability:energyterms"
+      ],
+      "discipline_id": "apt_2",
+      "concept_id": "eth54_energy",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：地域のエネルギー管理・熱電併給・ZEH。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "eth54_cogen2018",
+        "eth54_zeh2018"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APT-02",
+      "source_sha256": "73f1426490c272bb33312654f07964404c16a78e9b0ff238c54eca8178d939df",
+      "stem": "倫理上の公衆は専門的な同意の条件から捉える。",
+      "summary": "倫理上の公衆は専門的な同意の条件から捉える。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和3年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "国家や社会を形成する一般の人々",
+          "verdict": "不適切",
+          "reason": "日常語としては使えるが、ここで問う専門知識と意思決定の条件を特定しない。"
+        },
+        "2": {
+          "value": "背景を異にする多数の組織されていない人々",
+          "verdict": "不適切",
+          "reason": "集団の背景と組織化だけでは、影響と情報に基づく同意の条件を説明しない。"
+        },
+        "3": {
+          "value": "専門職としての技術業についていない人々",
+          "verdict": "不適切",
+          "reason": "職業区分だけでは、その技術的影響について十分な情報を得て同意できるかを説明しない。"
+        },
+        "4": {
+          "value": "十分な情報に基づく同意ができない人々",
+          "verdict": "条件内で適切",
+          "reason": "専門的な技術の影響に対し、知識や情報の不足から自律的判断が難しい立場を捉える。"
+        },
+        "5": {
+          "value": "広い地域に散在しメディアを通じ世論を形成する人々",
+          "verdict": "不適切",
+          "reason": "世論形成の説明であり、技術的影響への informed consent の条件ではない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "原典の公衆モデルをすべての法令や辞書の定義として扱わない。出典モデル原著の全章照合は未完。",
+      "evidence": [
+        "extracted/pages/R03/aptitude/page_002.png"
+      ],
+      "core_concept": "倫理上の公衆は専門的な同意の条件から捉える。",
+      "required_knowledge": "公衆、情報に基づく同意、専門知識の非対称性、説明責任。",
+      "solution": "設問の倫理的モデルでは、専門的な影響について十分な情報を得て同意することが難しい人々という4を選ぶ。能力や人格の優劣ではなく、技術知識と判断条件の非対称性を表す。",
+      "answer_reason": "設問の倫理的モデルでは、専門的な影響について十分な情報を得て同意することが難しい人々という4を選ぶ。能力や人格の優劣ではなく、技術知識と判断条件の非対称性を表す。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。公衆の倫理モデルは十分な同意を与えられない人。全法律定義ではない。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "公衆、情報に基づく同意、専門知識の非対称性、説明責任。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:public"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_publicmodel",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：倫理上の公衆は専門的な同意の条件から捉える。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "scu_ethics_framework",
+        "ipej_ethics2011"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-APT-09",
+      "source_sha256": "73f1426490c272bb33312654f07964404c16a78e9b0ff238c54eca8178d939df",
+      "stem": "多様性を性別以外にも広げて考える。",
+      "summary": "多様性を性別以外にも広げて考える。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和3年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "0件",
+          "verdict": "条件内で適切",
+          "reason": "性別・年齢・人種・国籍・障害・性的指向・宗教等・価値観・経験・働き方の10項目はいずれも多様性の対象。 集計と一致する。"
+        },
+        "2": {
+          "value": "1件",
+          "verdict": "不適切",
+          "reason": "性別・年齢・人種・国籍・障害・性的指向・宗教等・価値観・経験・働き方の10項目はいずれも多様性の対象。 判定を先に行った集計と一致しない。"
+        },
+        "3": {
+          "value": "2件",
+          "verdict": "不適切",
+          "reason": "性別・年齢・人種・国籍・障害・性的指向・宗教等・価値観・経験・働き方の10項目はいずれも多様性の対象。 判定を先に行った集計と一致しない。"
+        },
+        "4": {
+          "value": "3件",
+          "verdict": "不適切",
+          "reason": "性別・年齢・人種・国籍・障害・性的指向・宗教等・価値観・経験・働き方の10項目はいずれも多様性の対象。 判定を先に行った集計と一致しない。"
+        },
+        "5": {
+          "value": "4件",
+          "verdict": "不適切",
+          "reason": "性別・年齢・人種・国籍・障害・性的指向・宗教等・価値観・経験・働き方の10項目はいずれも多様性の対象。 判定を先に行った集計と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "2025宣言は概念の補足であり2021に公布済みだったとしない。十項目の当時の出典全体と定義境界は査読対象。",
+      "evidence": [
+        "extracted/pages/R03/aptitude/page_009.png"
+      ],
+      "core_concept": "多様性を性別以外にも広げて考える。",
+      "required_knowledge": "属性と経験の多様性、公平な機会、参加を支える環境。",
+      "solution": "挙げられた10項目を性別や国籍だけへ限定せず、すべて多様性を考える視点として扱う。該当しない0件の1。異なる価値観を尊重することは、差別や危害を与える行動の無条件容認ではない。",
+      "answer_reason": "挙げられた10項目を性別や国籍だけへ限定せず、すべて多様性を考える視点として扱う。該当しない0件の1。異なる価値観を尊重することは、差別や危害を与える行動の無条件容認ではない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。10属性全部多様性の対象で不適切0。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "属性と経験の多様性、公平な機会、参加を支える環境。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:diversity"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_diversity",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：多様性を性別以外にも広げて考える。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "eth54_dei2025"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APT-02",
+      "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+      "stem": "PDCAの計画・実施・点検・処置。",
+      "summary": "PDCAの計画・実施・点検・処置。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和4年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "計画・点検・実施・処置",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 計画・実施・点検・処置 と異なる。"
+        },
+        "2": {
+          "value": "計画・点検・処置・実施",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 計画・実施・点検・処置 と異なる。"
+        },
+        "3": {
+          "value": "計画・実施・処置・点検",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 計画・実施・点検・処置 と異なる。"
+        },
+        "4": {
+          "value": "計画・実施・点検・処置",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "5": {
+          "value": "計画・処置・点検・実施",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 計画・実施・点検・処置 と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/aptitude/page_002.png"
+      ],
+      "core_concept": "PDCAの計画・実施・点検・処置。",
+      "required_knowledge": "PDCA、評価と改善、結果の確認、次の計画への反映。",
+      "solution": "Planで計画、Doで実施、Checkで結果を点検、Actで是正や次の改善へ反映する。順序が一致する4。点検結果を得る前の処置と、実施前の評価の種類を混同しない。",
+      "answer_reason": "Planで計画、Doで実施、Checkで結果を点検、Actで是正や次の改善へ反映する。順序が一致する4。点検結果を得る前の処置と、実施前の評価の種類を混同しない。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。計画・実施・点検・処置。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "PDCA、評価と改善、結果の確認、次の計画への反映。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:management:pdca"
+      ],
+      "discipline_id": "manual_78",
+      "concept_id": "eth54_pdca",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：PDCAの計画・実施・点検・処置。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "eth54_pdca2017"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APT-03",
+      "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+      "stem": "社会的責任の七原則の名称。",
+      "summary": "社会的責任の七原則の名称。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和4年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "透明性",
+          "verdict": "条件内で適切",
+          "reason": "七原則に含まれる。影響の説明可能性を支える。"
+        },
+        "2": {
+          "value": "法の支配の尊重",
+          "verdict": "条件内で適切",
+          "reason": "七原則に含まれる。適法性を基本として考える。"
+        },
+        "3": {
+          "value": "技術継承",
+          "verdict": "不適切",
+          "reason": "重要な取組ではあるが七原則の見出しではない。"
+        },
+        "4": {
+          "value": "説明責任",
+          "verdict": "条件内で適切",
+          "reason": "七原則に含まれる。影響と判断を説明する。"
+        },
+        "5": {
+          "value": "ステークホルダーの利害の尊重",
+          "verdict": "条件内で適切",
+          "reason": "七原則に含まれる。関係者の利害を考慮する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/aptitude/page_002.png"
+      ],
+      "core_concept": "社会的責任の七原則の名称。",
+      "required_knowledge": "説明責任、透明性、倫理的行動、ステークホルダーの利害の尊重、法の支配の尊重、国際行動規範の尊重、人権の尊重。",
+      "solution": "七原則に該当しない3。説明責任、透明性、倫理的行動、ステークホルダーの利害の尊重、法の支配の尊重、国際行動規範の尊重、人権の尊重。技術継承の重要性を否定する問題ではない。",
+      "answer_reason": "七原則に該当しない3。説明責任、透明性、倫理的行動、ステークホルダーの利害の尊重、法の支配の尊重、国際行動規範の尊重、人権の尊重。技術継承の重要性を否定する問題ではない。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。技術継承は七原則の見出しではない。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "説明責任、透明性、倫理的行動、ステークホルダーの利害の尊重、法の支配の尊重、国際行動規範の尊重、人権の尊重。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:iso"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_iso",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：社会的責任の七原則の名称。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "eth54_iso_brochure"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APT-04",
+      "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+      "stem": "Society5.0の歴史的位置と人間中心の目的。",
+      "summary": "Society5.0の歴史的位置と人間中心の目的。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和4年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "狩猟・農耕・社会・人間・持続可能",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "農耕・狩猟・社会・人間・持続可能",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 狩猟・農耕・社会・人間・持続可能 と異なる。"
+        },
+        "3": {
+          "value": "狩猟・農耕・社会・人間・即応",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 狩猟・農耕・社会・人間・持続可能 と異なる。"
+        },
+        "4": {
+          "value": "農耕・狩猟・技術・自然・即応",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 狩猟・農耕・社会・人間・持続可能 と異なる。"
+        },
+        "5": {
+          "value": "狩猟・農耕・技術・自然・即応",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 狩猟・農耕・社会・人間・持続可能 と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/aptitude/page_003.png"
+      ],
+      "core_concept": "Society5.0の歴史的位置と人間中心の目的。",
+      "required_knowledge": "社会の五段階、サイバー空間と現実空間、人間中心、経済と社会的課題、持続可能性。",
+      "solution": "狩猟社会1.0、農耕社会2.0、工業社会3.0、情報社会4.0に続く5.0である。技術を融合する目的は経済発展と社会的課題の解決の両立で、人間中心を核に持続可能な社会を目指す。五語の組合せを選び、2021計画の背景を後年の新計画へ置き換えない。",
+      "answer_reason": "狩猟社会1.0、農耕社会2.0、工業社会3.0、情報社会4.0に続く5.0である。技術を融合する目的は経済発展と社会的課題の解決の両立で、人間中心を核に持続可能な社会を目指す。五語の組合せを選び、2021計画の背景を後年の新計画へ置き換えない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。狩猟・農耕・社会・人間・持続可能。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "社会の五段階、サイバー空間と現実空間、人間中心、経済と社会的課題、持続可能性。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:society:five"
+      ],
+      "discipline_id": "manual_80",
+      "concept_id": "eth54_society",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：Society5.0の歴史的位置と人間中心の目的。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "eth54_society2021"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APT-09",
+      "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+      "stem": "Society5.0の歴史的位置と人間中心の目的。",
+      "summary": "Society5.0の歴史的位置と人間中心の目的。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和7年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "狩猟・農耕・社会・人間・即応",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 狩猟・農耕・社会・人間・持続可能 と異なる。"
+        },
+        "2": {
+          "value": "農耕・狩猟・技術・自然・持続可能",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 狩猟・農耕・社会・人間・持続可能 と異なる。"
+        },
+        "3": {
+          "value": "農耕・狩猟・社会・自然・即応",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 狩猟・農耕・社会・人間・持続可能 と異なる。"
+        },
+        "4": {
+          "value": "狩猟・農耕・社会・人間・持続可能",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "5": {
+          "value": "狩猟・農耕・技術・人間・持続可能",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 狩猟・農耕・社会・人間・持続可能 と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/aptitude/page_009.png"
+      ],
+      "core_concept": "Society5.0の歴史的位置と人間中心の目的。",
+      "required_knowledge": "社会の五段階、サイバー空間と現実空間、人間中心、経済と社会的課題、持続可能性。",
+      "solution": "狩猟社会1.0、農耕社会2.0、工業社会3.0、情報社会4.0に続く5.0である。技術を融合する目的は経済発展と社会的課題の解決の両立で、人間中心を核に持続可能な社会を目指す。五語の組合せを選び、2021計画の背景を後年の新計画へ置き換えない。",
+      "answer_reason": "狩猟社会1.0、農耕社会2.0、工業社会3.0、情報社会4.0に続く5.0である。技術を融合する目的は経済発展と社会的課題の解決の両立で、人間中心を核に持続可能な社会を目指す。五語の組合せを選び、2021計画の背景を後年の新計画へ置き換えない。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。狩猟・農耕・社会・人間・持続可能の4。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "社会の五段階、サイバー空間と現実空間、人間中心、経済と社会的課題、持続可能性。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:society:five"
+      ],
+      "discipline_id": "manual_80",
+      "concept_id": "eth54_society",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：Society5.0の歴史的位置と人間中心の目的。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "eth54_society2021"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APT-07",
+      "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+      "stem": "功利・権利・黄金律・健康の判断語。",
+      "summary": "功利・権利・黄金律・健康の判断語。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和4年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "最大幸福・多数派の権利・自分の望むことを人にせよ・身分",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 最大幸福・個人の権利・自分の望むことを人にせよ・健康 と異なる。"
+        },
+        "2": {
+          "value": "最大利潤・個人の権利・人が望むことを自分にせよ・健康",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 最大幸福・個人の権利・自分の望むことを人にせよ・健康 と異なる。"
+        },
+        "3": {
+          "value": "最大幸福・個人の権利・自分の望むことを人にせよ・健康",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "最大利潤・多数派の権利・人が望むことを自分にせよ・健康",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 最大幸福・個人の権利・自分の望むことを人にせよ・健康 と異なる。"
+        },
+        "5": {
+          "value": "最大幸福・個人の権利・人が望むことを自分にせよ・身分",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 最大幸福・個人の権利・自分の望むことを人にせよ・健康 と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/aptitude/page_006.png"
+      ],
+      "core_concept": "功利・権利・黄金律・健康の判断語。",
+      "required_knowledge": "功利主義、個人の権利、相互性の黄金律、公衆の安全・健康・福利。",
+      "solution": "功利の判断は最大幸福、権利の判断は個人の権利、黄金律は自分が望む扱いを他者にも行う発想、公衆の優先対象は安全・健康・福利である。四語が揃う3。黄金律の適用でも相手の事情と価値観を確認する。",
+      "answer_reason": "功利の判断は最大幸福、権利の判断は個人の権利、黄金律は自分が望む扱いを他者にも行う発想、公衆の優先対象は安全・健康・福利である。四語が揃う3。黄金律の適用でも相手の事情と価値観を確認する。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。最大幸福・個人の権利・自分の望むことを人に・健康。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "功利主義、個人の権利、相互性の黄金律、公衆の安全・健康・福利。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:principles"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_principles",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：功利・権利・黄金律・健康の判断語。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "scu_ethics_framework",
+        "ipej_ethics2011"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APT-15",
+      "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+      "stem": "継続研鑽は通常業務だけで自動完了しない。",
+      "summary": "継続研鑽は通常業務だけで自動完了しない。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和4年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "OOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOX と異なる。"
+        },
+        "2": {
+          "value": "XOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOX と異なる。"
+        },
+        "3": {
+          "value": "OXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOX と異なる。"
+        },
+        "4": {
+          "value": "OXOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOX と異なる。"
+        },
+        "5": {
+          "value": "OOOX",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "2017版と登録体系を補足。2022の全改訂史・区分別換算条件は査読対象。現在の分類・制度を当時へ遡及しない。",
+      "evidence": [
+        "extracted/pages/R04/aptitude/page_014.png"
+      ],
+      "core_concept": "継続研鑽は通常業務だけで自動完了しない。",
+      "required_knowledge": "CPDの実績と証明、当時の四区分、学協会ごとの条件、実務と能力向上。",
+      "solution": "アは学協会によって研鑽の確認や資格継続条件があるという限定なので正。イの当時の参加・発信・実務・自己学習の四区分、ウの記録と証明も正。エの通常業務を行うだけですべてのCPD要件を満たすという全称は誤でOOOXの5。",
+      "answer_reason": "アは学協会によって研鑽の確認や資格継続条件があるという限定なので正。イの当時の参加・発信・実務・自己学習の四区分、ウの記録と証明も正。エの通常業務を行うだけですべてのCPD要件を満たすという全称は誤でOOOXの5。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。CPD記録・学習は必要、日常業務だけで全要件は満たさない。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "CPDの実績と証明、当時の四区分、学協会ごとの条件、実務と能力向上。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:profession:cpd"
+      ],
+      "discipline_id": "apt_0",
+      "concept_id": "eth54_cpd",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：継続研鑽は通常業務だけで自動完了しない。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "cpd_v3",
+        "cpd_versions",
+        "cpd_new2021"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-APT-05",
+      "source_sha256": "3dee8906ad8be46592986fef01028424243f7e515af04979667524eed1f0a915",
+      "stem": "2023コンピテンシーの八つのキーワード。",
+      "summary": "2023コンピテンシーの八つのキーワード。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和5年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "0件",
+          "verdict": "条件内で適切",
+          "reason": "専門的学識、問題解決、マネジメント、評価、コミュニケーション、リーダーシップ、技術者倫理、継続研さんの8項目はすべて2023版のキーワード。 集計と一致する。"
+        },
+        "2": {
+          "value": "1件",
+          "verdict": "不適切",
+          "reason": "専門的学識、問題解決、マネジメント、評価、コミュニケーション、リーダーシップ、技術者倫理、継続研さんの8項目はすべて2023版のキーワード。 判定を先に行った集計と一致しない。"
+        },
+        "3": {
+          "value": "2件",
+          "verdict": "不適切",
+          "reason": "専門的学識、問題解決、マネジメント、評価、コミュニケーション、リーダーシップ、技術者倫理、継続研さんの8項目はすべて2023版のキーワード。 判定を先に行った集計と一致しない。"
+        },
+        "4": {
+          "value": "3件",
+          "verdict": "不適切",
+          "reason": "専門的学識、問題解決、マネジメント、評価、コミュニケーション、リーダーシップ、技術者倫理、継続研さんの8項目はすべて2023版のキーワード。 判定を先に行った集計と一致しない。"
+        },
+        "5": {
+          "value": "4件",
+          "verdict": "不適切",
+          "reason": "専門的学識、問題解決、マネジメント、評価、コミュニケーション、リーダーシップ、技術者倫理、継続研さんの8項目はすべて2023版のキーワード。 判定を先に行った集計と一致しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/aptitude/page_005.png"
+      ],
+      "core_concept": "2023コンピテンシーの八つのキーワード。",
+      "required_knowledge": "2021IEA GA&PC第4版、2023技術士コンピテンシー、継続研さんと能力維持。",
+      "solution": "8項目はいずれも2023年1月改訂に含まれるため、誤り0件の1。2014版の七つのキーワードに継続研さんが追加された。コミュニケーションとリーダーシップはこの2023資料では独立した項目である。35歳程度という前文の期待を法的な受験年齢制限へ変えない。",
+      "answer_reason": "8項目はいずれも2023年1月改訂に含まれるため、誤り0件の1。2014版の七つのキーワードに継続研さんが追加された。コミュニケーションとリーダーシップはこの2023資料では独立した項目である。35歳程度という前文の期待を法的な受験年齢制限へ変えない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。八コンピテンシー全部対象で誤0。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "2021IEA GA&PC第4版、2023技術士コンピテンシー、継続研さんと能力維持。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:profession:competency2023"
+      ],
+      "discipline_id": "apt_0",
+      "concept_id": "eth54_competency",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：2023コンピテンシーの八つのキーワード。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "eth54_competency2023"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-APT-10",
+      "source_sha256": "3dee8906ad8be46592986fef01028424243f7e515af04979667524eed1f0a915",
+      "stem": "BCMの改善と非常時の法令遵守。",
+      "summary": "BCMの改善と非常時の法令遵守。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和5年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "OOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOO と異なる。"
+        },
+        "2": {
+          "value": "XOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOO と異なる。"
+        },
+        "3": {
+          "value": "OXOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "OOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOO と異なる。"
+        },
+        "5": {
+          "value": "OOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/aptitude/page_010.png"
+      ],
+      "core_concept": "BCMの改善と非常時の法令遵守。",
+      "required_knowledge": "BCPとBCM、経営者、点検・改善、地域、法令と契約の条件。",
+      "solution": "アの経営者の責任、ウの事業環境の変化に応じた継続改善、エの地域の復旧・復興への関与は正。イの非常時には法令等をすべて守らなくてよいという包括的免除は誤。OXOOの3。個別の緊急措置の法的条件と全法令を無視することは別。",
+      "answer_reason": "アの経営者の責任、ウの事業環境の変化に応じた継続改善、エの地域の復旧・復興への関与は正。イの非常時には法令等をすべて守らなくてよいという包括的免除は誤。OXOOの3。個別の緊急措置の法的条件と全法令を無視することは別。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。OXOO：災害でも全法令遵守不要にはならない。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "BCPとBCM、経営者、点検・改善、地域、法令と契約の条件。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:safety:bcp"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "eth54_bcp",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：BCMの改善と非常時の法令遵守。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "eth54_bcp2021"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-APT-04",
+      "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+      "stem": "社会的責任の目的・規範・多様性・透明性・人権。",
+      "summary": "社会的責任の目的・規範・多様性・透明性・人権。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和6年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "持続可能な発展・国際行動規範・多様性・透明性・人権の尊重",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "公共の福祉・国内法・多様性・機密性・公共の福祉",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 持続可能な発展・国際行動規範・多様性・透明性・人権の尊重 と異なる。"
+        },
+        "3": {
+          "value": "持続可能な発展・国際行動規範・独自性・透明性・人権の尊重",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 持続可能な発展・国際行動規範・多様性・透明性・人権の尊重 と異なる。"
+        },
+        "4": {
+          "value": "公共の福祉・国内法・独自性・機密性・公共の福祉",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 持続可能な発展・国際行動規範・多様性・透明性・人権の尊重 と異なる。"
+        },
+        "5": {
+          "value": "持続可能な発展・国際行動規範・多様性・機密性・人権の尊重",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 持続可能な発展・国際行動規範・多様性・透明性・人権の尊重 と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "ISO公式要旨と七原則図を確認。JIS Z26000:2012の全翻訳本文の逐語照合は未完。",
+      "evidence": [
+        "extracted/pages/R06/aptitude/page_004.png"
+      ],
+      "core_concept": "社会的責任の目的・規範・多様性・透明性・人権。",
+      "required_knowledge": "社会的責任の目標、法令を基礎とする行動、国際規範と多様性、七原則。",
+      "solution": "目標は持続可能な発展、国際行動規範との整合を保って各種の多様性を考慮し、七原則の透明性と人権の尊重を読む。五語が揃う1。透明性は個人情報・正当な秘密まで無制限に公開する意味ではない。",
+      "answer_reason": "目標は持続可能な発展、国際行動規範との整合を保って各種の多様性を考慮し、七原則の透明性と人権の尊重を読む。五語が揃う1。透明性は個人情報・正当な秘密まで無制限に公開する意味ではない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。持続可能発展・国際行動規範・多様性・透明性・人権。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "社会的責任の目標、法令を基礎とする行動、国際規範と多様性、七原則。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:iso"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_iso",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：社会的責任の目的・規範・多様性・透明性・人権。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "iso26000",
+        "eth54_iso_brochure"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-APT-11",
+      "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+      "stem": "2023倫理綱領の五つの行動。",
+      "summary": "2023倫理綱領の五つの行動。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和6年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "1件",
+          "verdict": "不適切",
+          "reason": "客観的リスク評価、負の影響の低減、正当な秘密の管理、現地文化の尊重、次世代育成はいずれも指針に含まれる。 判定を先に行った集計と一致しない。"
+        },
+        "2": {
+          "value": "2件",
+          "verdict": "不適切",
+          "reason": "客観的リスク評価、負の影響の低減、正当な秘密の管理、現地文化の尊重、次世代育成はいずれも指針に含まれる。 判定を先に行った集計と一致しない。"
+        },
+        "3": {
+          "value": "3件",
+          "verdict": "不適切",
+          "reason": "客観的リスク評価、負の影響の低減、正当な秘密の管理、現地文化の尊重、次世代育成はいずれも指針に含まれる。 判定を先に行った集計と一致しない。"
+        },
+        "4": {
+          "value": "4件",
+          "verdict": "不適切",
+          "reason": "客観的リスク評価、負の影響の低減、正当な秘密の管理、現地文化の尊重、次世代育成はいずれも指針に含まれる。 判定を先に行った集計と一致しない。"
+        },
+        "5": {
+          "value": "5件",
+          "verdict": "条件内で適切",
+          "reason": "客観的リスク評価、負の影響の低減、正当な秘密の管理、現地文化の尊重、次世代育成はいずれも指針に含まれる。 集計と一致する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/aptitude/page_011.png"
+      ],
+      "core_concept": "2023倫理綱領の五つの行動。",
+      "required_knowledge": "2023綱領の指針、公共安全、持続可能性、秘密の対象、文化、人材育成。",
+      "solution": "5件すべて該当して5。リスクを根拠に検証し、環境・経済・社会への負の影響を減らし、正当な守秘と文化への尊重、人材育成を両立する。守秘を理由に公衆への責任まで消さない。",
+      "answer_reason": "5件すべて該当して5。リスクを根拠に検証し、環境・経済・社会への負の影響を減らし、正当な守秘と文化への尊重、人材育成を両立する。守秘を理由に公衆への責任まで消さない。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。五記述すべて2023指針に対応。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "2023綱領の指針、公共安全、持続可能性、秘密の対象、文化、人材育成。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:code"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_code2023",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：2023倫理綱領の五つの行動。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "ipej_ethics2023"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APT-02",
+      "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+      "stem": "2007プロフェッション宣言の三つの責任。",
+      "summary": "2007プロフェッション宣言の三つの責任。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和7年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "技術・顧客・守秘義務・社会",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "技術・所属企業・基準・公衆",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 技術・顧客・守秘義務・社会 と異なる。"
+        },
+        "3": {
+          "value": "行動・顧客・基準・社会",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 技術・顧客・守秘義務・社会 と異なる。"
+        },
+        "4": {
+          "value": "行動・所属企業・守秘義務・公衆",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 技術・顧客・守秘義務・社会 と異なる。"
+        },
+        "5": {
+          "value": "技術・顧客・基準・社会",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 技術・顧客・守秘義務・社会 と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/aptitude/page_002.png"
+      ],
+      "core_concept": "2007プロフェッション宣言の三つの責任。",
+      "required_knowledge": "2007宣言、技術への責任、顧客と守秘義務、社会と公益。",
+      "solution": "自らの技術の向上に対する責任、守秘義務を守りつつ顧客へ誠実に履行する責任、社会・環境への影響と公益への責任を読む。四語が揃う1。顧客と社会の双方を考える点を残す。",
+      "answer_reason": "自らの技術の向上に対する責任、守秘義務を守りつつ顧客へ誠実に履行する責任、社会・環境への影響と公益への責任を読む。四語が揃う1。顧客と社会の双方を考える点を残す。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。技術・顧客・守秘義務・社会。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "2007宣言、技術への責任、顧客と守秘義務、社会と公益。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:profession:declaration"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_profession",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：2007プロフェッション宣言の三つの責任。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "eth54_profession2007"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APT-04",
+      "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+      "stem": "協働の力を借りて確信の持てる業務を行う。",
+      "summary": "協働の力を借りて確信の持てる業務を行う。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和7年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "公衆へ危害がある場合の代替案",
+          "verdict": "条件内で適切",
+          "reason": "客観的評価と改善により適切な解決を図る。"
+        },
+        "2": {
+          "value": "環境・経済・社会の負の影響の低減",
+          "verdict": "条件内で適切",
+          "reason": "持続可能な社会への責任に沿う。"
+        },
+        "3": {
+          "value": "協業が必要でも他者へ依頼しない",
+          "verdict": "不適切",
+          "reason": "自分と協業者の力量を生かす考え方に反し、必要な専門性を得る機会を捨てる。"
+        },
+        "4": {
+          "value": "業務地域の文化を尊重",
+          "verdict": "条件内で適切",
+          "reason": "国・地域の慣行や生活様式、宗教等を理解する。"
+        },
+        "5": {
+          "value": "社会に貢献する技術者を育成",
+          "verdict": "条件内で適切",
+          "reason": "継続研鑽と人材育成の指針に沿う。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/aptitude/page_004.png"
+      ],
+      "core_concept": "協働の力を借りて確信の持てる業務を行う。",
+      "required_knowledge": "専門能力の限界、協働、代替案、持続可能性、文化と人材育成。",
+      "solution": "不適切3。自分一人の能力だけで業務を抱え込むことを有能性としない。必要に応じて協業者の力を借り、責任と役割を明確にして確信の持てる範囲で行う。",
+      "answer_reason": "不適切3。自分一人の能力だけで業務を抱え込むことを有能性としない。必要に応じて協業者の力を借り、責任と役割を明確にして確信の持てる範囲で行う。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。必要な協業・助力を求めない3が誤。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "専門能力の限界、協働、代替案、持続可能性、文化と人材育成。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:code"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_code2023",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：協働の力を借りて確信の持てる業務を行う。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "ipej_ethics2023"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APT-06",
+      "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+      "stem": "DEIの多様性・公平性・包摂性。",
+      "summary": "DEIの多様性・公平性・包摂性。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+        "時点": "令和7年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "XOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "2": {
+          "value": "OXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "3": {
+          "value": "OOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "4": {
+          "value": "OOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "5": {
+          "value": "OOOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/aptitude/page_006.png"
+      ],
+      "core_concept": "DEIの多様性・公平性・包摂性。",
+      "required_knowledge": "Diversity、Equity、Inclusion、個別の条件への支援と能力発揮。",
+      "solution": "アの宣言の目的、イの属性・知識・経験・専門性等の多様性、ウの一人ひとりの特性に応じた公平な環境・道具、エの違いを包摂して能力を発揮し新たな価値を作ること、はいずれも正で5。公平性は全員へ同じ道具を配ることだけではない。",
+      "answer_reason": "アの宣言の目的、イの属性・知識・経験・専門性等の多様性、ウの一人ひとりの特性に応じた公平な環境・道具、エの違いを包摂して能力を発揮し新たな価値を作ること、はいずれも正で5。公平性は全員へ同じ道具を配ることだけではない。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。多様性、公平な環境、包摂の4文全正。 選択情報には公式メタデータも存在し、完全盲検とはしない。",
+      "learning_points": "Diversity、Equity、Inclusion、個別の条件への支援と能力発揮。 設問の否定・全称・基準年を確かめ、根拠と評価範囲を分けて判断する。",
+      "theory_references": [
+        "theory:ethics:diversity"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "eth54_dei",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：DEIの多様性・公平性・包摂性。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "eth54_dei2025"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

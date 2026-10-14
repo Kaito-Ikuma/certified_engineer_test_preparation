@@ -1,0 +1,46 @@
+{
+  "stem": "二変数関数の指定点における最急勾配の長さを求める。",
+  "conditions": {
+    "関数": "\\(f(x,y)=x^2+2xy+3y^2\\)",
+    "点": "(1,1)",
+    "求める量": "勾配ベクトルのユークリッドノルム。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(6\\)",
+      "verdict": "条件に不一致",
+      "reason": "偏微分してノルムを取ると4\\sqrt5となり一致しない。"
+    },
+    "2": {
+      "value": "\\((4,8)\\)",
+      "verdict": "条件に不一致",
+      "reason": "勾配ベクトルそのものであり長さではない。"
+    },
+    "3": {
+      "value": "\\(12\\)",
+      "verdict": "条件に不一致",
+      "reason": "偏微分してノルムを取ると4\\sqrt5となり一致しない。"
+    },
+    "4": {
+      "value": "\\(4\\sqrt5\\)",
+      "verdict": "条件に一致",
+      "reason": "勾配ベクトルの二乗和の平方根に一致する。"
+    },
+    "5": {
+      "value": "\\(\\sqrt2\\)",
+      "verdict": "条件に不一致",
+      "reason": "偏微分してノルムを取ると4\\sqrt5となり一致しない。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/basic/page_011.png"
+  ],
+  "question_id": "R02-REG-BASIC-3-2",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "11",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "480c7ba9e76a9a7ec826241b51fa87c565a936f91bbb3491a5e0beb9e8d77c8a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

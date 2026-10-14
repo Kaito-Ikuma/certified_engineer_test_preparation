@@ -1,0 +1,48 @@
+{
+  "stem": "電子セラミックス4種の利用特性・材料名の組合せを選ぶ。",
+  "conditions": {
+    "A": "BaTiO3の大きな何をコンデンサーへ利用するか。",
+    "B": "サーミスタの温度で大きく変わる量。",
+    "C": "ひずみにより電圧を生む材料。",
+    "D": "バリスタの印加電圧で大きく変わる量。",
+    "並び": "A／B／C／D"
+  },
+  "choices": {
+    "1": {
+      "value": "導電率／電気抵抗／圧電体／体積",
+      "verdict": "条件に不一致",
+      "reason": "BとCは合うが、コンデンサーは高比誘電率を利用し、バリスタは体積変化を機能としていない。"
+    },
+    "2": {
+      "value": "導電率／熱膨張係数／放電体／電気抵抗",
+      "verdict": "条件に不一致",
+      "reason": "AとBは違い、機械的ひずみからの電圧発生も放電体の説明ではない。"
+    },
+    "3": {
+      "value": "比誘電率／電気抵抗／放電体／体積",
+      "verdict": "条件に不一致",
+      "reason": "AとBは合うが、ひずみと電気応答は圧電体、バリスタは電気抵抗の変化である。"
+    },
+    "4": {
+      "value": "比誘電率／電気抵抗／圧電体／電気抵抗",
+      "verdict": "条件に一致",
+      "reason": "4項とも対応する。誘電・温度依存抵抗・圧電・非線形抵抗を区別できている。"
+    },
+    "5": {
+      "value": "比誘電率／熱膨張係数／圧電体／体積",
+      "verdict": "条件に不一致",
+      "reason": "AとCは合うが、温度で変わる抵抗と電圧で変わる抵抗を取り違える。"
+    }
+  },
+  "figures": "原典画像で全条件・下線対象原子・核種表記・全5肢と組合せ順を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/basic/page_016.png"
+  ],
+  "question_id": "H25-REG-BASIC-4-3",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "16",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "e938c5d780802a7d98448aec16ce3b57fcbcbd3ef9e6f9b9e168f4e642181c57",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

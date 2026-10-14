@@ -1,0 +1,160 @@
+{
+  "checked_at": "2026-10-11T09:38:41+09:00",
+  "sources": [
+    {
+      "key": "gc_water",
+      "title": "Where Is Earth's Water?",
+      "url": "https://www.usgs.gov/water-science-school/science/where-earths-water?items_per_page=6&page=0&qt-science%3Acenter_objects=0",
+      "checked_claim": "公式公開本文の貯留表。総量1386000000km3、海96.54%、淡水分母氷68.7%、河2120・大気12900・全地下水23400000km3。塩性地下水を含む陸水と淡水の分母を区別。"
+    },
+    {
+      "key": "gc_hem",
+      "title": "Study and Interpretation of the Chemical Characteristics of Natural Water, third edition",
+      "url": "https://pubs.usgs.gov/wsp/wsp2254/pdf/wsp2254a.pdf",
+      "checked_claim": "原本PDF取得・全テキスト抽出。物理45頁珪藻はケイ酸を取り込む、64頁Ca-HCO3水の呼称、各イオンの溶解・酸化還元・沈殿・伝導率。対象箇所を検索して確認した。原本全頁を通読したという意味ではない。"
+    },
+    {
+      "key": "gc_river1970",
+      "title": "元素の地球化学的収支からみた沿岸海洋",
+      "url": "https://www.jstage.jst.go.jp/article/engankaiyo/8/2/8_22/_pdf/-char/ja",
+      "checked_claim": "1970論文原本PDF取得。物理3頁／誌面24頁の表4を画像確認。小林1960とLivingstone1963比較：蒸発残渣74.8対100mg/L、SiO2比26.84対11.67%。積は20.07632対11.67mg/L。火山地質等を説明。時期・集計対象を付す。"
+    },
+    {
+      "key": "gc_debye",
+      "title": "Debye--Huckel equation",
+      "url": "https://goldbook.iupac.org/terms/view/D01534",
+      "checked_claim": "公式公開本文。活量係数・イオン強度・価数・温度定数の式。風化抵抗の直接推定モデルではない。単一イオン活量の慣例も区別。"
+    },
+    {
+      "key": "gc_redox",
+      "title": "Oxidation/Reduction (Redox)",
+      "url": "https://www.usgs.gov/mission-areas/water-resources/science/oxidationreduction-redox?page=1",
+      "checked_claim": "公式公開本文。酸素の供給と、無酸素時の硝酸・Mn・Fe・硫酸・CO2電子受容順序、溶存FeMn生成を確認。酸素不在を全ての地質条件へ無条件に一般化しない。"
+    },
+    {
+      "key": "gc_redox2009",
+      "title": "Redox Conditions in Selected Principal Aquifers of the United States",
+      "url": "https://pubs.usgs.gov/publication/fs20093041",
+      "checked_claim": "2009一次報告の公式要旨。溶存Mn2+・Fe2+・H2S・CH4と酸化還元による移動性変化。"
+    },
+    {
+      "key": "gc_mine",
+      "title": "Coal Extraction: Environmental Prediction",
+      "url": "https://pubs.usgs.gov/fs/fs073-02/fs073-02.html",
+      "checked_claim": "公式公開本文。黄鉄鉱酸化が酸性鉱山排水の主要因。ただし岩石の中和能と動力学によって排水が異なる。"
+    },
+    {
+      "key": "gc_mine2015",
+      "title": "Hydrogeochemistry and Microbiology of Mine Drainage: An Update",
+      "url": "https://www.usgs.gov/publications/hydrogeochemistry-and-microbiology-mine-drainage-update",
+      "checked_claim": "2015原著の公式要旨。酸性だけでなく中性・塩性排水も存在し、炭酸塩・水酸化物等の中和と二次沈殿を区別。"
+    },
+    {
+      "key": "gc_carbon",
+      "title": "The Carbon Cycle",
+      "url": "https://science.nasa.gov/earth/earth-observatory/the-carbon-cycle/",
+      "checked_claim": "2011解説の公式公開本文。遅い風化・堆積・火山と速い生物循環を分離、平衡再調整は長期である。過去の排出量を現在値として転用しない。"
+    },
+    {
+      "key": "gc_crust",
+      "title": "Composition of the Earth's Crust",
+      "url": "https://pubs.usgs.gov/pp/0440d/report.pdf",
+      "checked_claim": "公式公開PDFの表18、D13頁。質量%O46.60Si27.72Al8.13K2.59Ti0.44Mn0.100Cl0.020。比較は試料・基準が異なっても頑健だが全地球の存在度へ拡張しない。"
+    },
+    {
+      "key": "gc_meteoric",
+      "title": "Isotope Methods for Dating Old Groundwater",
+      "url": "https://www-pub.iaea.org/MTCD/Publications/PDF/TE-1723_web.pdf",
+      "checked_claim": "公式公開本文の4頁式2。δ2H=8δ18O+10、局地線の傾き切片・蒸発の逸脱を明記。全陸水の同位体絶対比が厳密な比例という意味ではない。"
+    },
+    {
+      "key": "gc_conductance",
+      "title": "Chapter A6.3. Specific Conductance",
+      "url": "https://pubs.usgs.gov/publication/tm9A6.3",
+      "checked_claim": "公式書誌・要旨とHemの本文を併用。伝導率の科学的基礎、25℃補正、校正と現場測定を区別。"
+    },
+    {
+      "key": "gc_conductance1994",
+      "title": "Collecting and Processing Stream Water Samples",
+      "url": "https://water.usgs.gov/nawqa/pnsp/pubs/ofr94-455/sw-t.html",
+      "checked_claim": "公式公開本文。電気抵抗の逆数と伝導度、25℃に標準化した比伝導度、溶存量組成依存。"
+    },
+    {
+      "key": "gc_dispersion",
+      "title": "A Critical Review of Data on Field-Scale Dispersion in Aquifers",
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/92wr00607",
+      "checked_claim": "1992原著の出版社公開要旨。59現場、縦分散長と観測尺度に傾向があるが普遍直線不可。横分散データの限界も明記。"
+    },
+    {
+      "key": "gc_sulfur_denit",
+      "title": "硫黄脱窒菌の集積と単体硫黄への馴養",
+      "url": "https://www.jstage.jst.go.jp/article/jswe1978/12/7/12_7_431/_article/-char/ja",
+      "checked_claim": "1989原著の公式公開要旨。HCO3-無機炭素源とS2O3還元硫黄、完全嫌気で集積。直接openはCache miss、検索公開要旨で限定確認。著者名は未確定のため暫定団体表記へ置換する。"
+    },
+    {
+      "key": "gc_diatom",
+      "title": "Direct Evidence of the Molecular Basis for Biological Silicon Transport",
+      "url": "https://www.nature.com/articles/ncomms11926",
+      "checked_claim": "2016原著公開本文。珪藻のケイ酸取り込みと輸送体を実験。成長・死後殻溶解を分ける。著者詳細は未照合なので団体著者を用いる。"
+    },
+    {
+      "key": "gc_reverse",
+      "title": "Rapid Transformation of Biogenic Silica to Authigenic Clay: Mechanisms and Geochemical Constraints",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12571068/",
+      "checked_claim": "2025原著の公開本文。逆風化はカチオン・アルカリ度消費しCO2生成。H27原典4の意図を証明した資料とはせず、単純風化と逆風化を区別する後年の科学補足とする。"
+    },
+    {
+      "key": "gc_arsenic2004",
+      "title": "水質基準の円滑な施行について：平成16年4月1日施行基準",
+      "url": "https://www.mhlw.go.jp/topics/2004/bukyoku/kenkou/1-4.html",
+      "checked_claim": "公式公開表7。ヒ素量0.01mg/L。2018前の基準と現在の表を別確認。"
+    },
+    {
+      "key": "gc_arsenic_current",
+      "title": "水質基準項目と基準値",
+      "url": "https://www.env.go.jp/water/water_supply/kijun/kijunchi.html",
+      "checked_claim": "2026-10-11閲覧の公式公開表。ヒ素量0.01mg/L。表全体の項目数・他成分変更を2018へ遡及しない。"
+    },
+    {
+      "key": "gc_arsenic_hazard",
+      "title": "Pocket Guide to Chemical Hazards: Arsenic",
+      "url": "https://www.cdc.gov/niosh/npg/npgd0038.html",
+      "checked_claim": "公式公開本文に金属CAS7440-38-2、As単体と曝露限度・発がん注意を記載。「金属ヒ素に毒性はない」を無条件に支持しない。医療助言を提供する用途ではない。"
+    },
+    {
+      "key": "gc_cave",
+      "title": "Geology of Wind Cave National Park",
+      "url": "https://www.usgs.gov/geology-and-ecology-of-national-parks/geology-wind-cave-national-park",
+      "checked_claim": "公式公開本文。滴下時CO2を失って方解石堆積、鍾乳石・石筍形成。"
+    },
+    {
+      "key": "gc_clays",
+      "title": "Environmental Characteristics of Clays and Clay Mineral Deposits",
+      "url": "https://pubs.usgs.gov/info/clays/",
+      "checked_claim": "公式公開本文。岩種、水岩比、温度、有機物、期間、風化帯上部カオリナイトと下部複雑粘土を説明。気候だけで全試料の鉱物を決めない。"
+    },
+    {
+      "key": "gc_ccs",
+      "title": "Carbon Capture, Utilization and Storage",
+      "url": "https://www.energy.gov/carbon-capture-utilization-storage",
+      "checked_claim": "公式公開本文。塩水帯水層・油ガス層等の貯留と流動圧力化学変化の予測。"
+    },
+    {
+      "key": "gc_capture",
+      "title": "Point Source Carbon Capture",
+      "url": "https://netl.doe.gov/carbon-management/carbon-capture",
+      "checked_claim": "公式公開本文。膜・溶媒・吸着・化学ループとアミン系。単にEORに使う全技術がCCSと同程度に直結するとは扱わない。"
+    },
+    {
+      "key": "gc_mea",
+      "title": "Regenerable Non-Aqueous Basic Immobilized Amine Slurries",
+      "url": "https://www.netl.doe.gov/node/5718",
+      "checked_claim": "公式公開本文。従来比較基準のMEA吸収を確認。"
+    }
+  ],
+  "limitations": [
+    "検索公開本文・要旨と原本PDF確認を明示的に区別。",
+    "H27水質は珪藻の成長と殻溶解、逆風化の説明範囲を要査読。",
+    "H30の金属ヒ素無毒、R02化学合成と脱窒、Ca-HCO3名称と陸水の分母の疑義を保持。"
+  ]
+}

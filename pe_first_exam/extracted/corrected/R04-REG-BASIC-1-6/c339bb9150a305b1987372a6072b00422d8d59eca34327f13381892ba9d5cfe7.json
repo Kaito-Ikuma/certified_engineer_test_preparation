@@ -1,0 +1,47 @@
+{
+  "stem": "便益の期待値から建設費を引く。",
+  "conditions": {
+    "確率": "a.7,b.2,c.1。",
+    "便益(abc)": "ア(5,4,4)、イ(5,4,7)、ウ(3,6,7)、エ(6,5,3)、オ(7,4,5)。",
+    "費用": "ア3、イ3、ウ3、エ4、オ6、額は億円。"
+  },
+  "choices": {
+    "1": {
+      "value": "ア",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 イ と異なる。"
+    },
+    "2": {
+      "value": "イ",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "3": {
+      "value": "ウ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 イ と異なる。"
+    },
+    "4": {
+      "value": "エ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 イ と異なる。"
+    },
+    "5": {
+      "value": "オ",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 イ と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/basic/page_004.png",
+    "extracted/pages/R04/basic/page_005.png"
+  ],
+  "question_id": "R04-REG-BASIC-1-6",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "4",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "eddc00f3b6f3fc4c194e881ae3181b98a3254ac2756901b4c6acb50057b4e8aa",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

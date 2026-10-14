@@ -1,0 +1,45 @@
+{
+  "stem": "高分子の結合・熱応答・生分解性を別軸で比較する。",
+  "conditions": {
+    "判断対象": "高分子の結合・熱応答・生分解性を別軸で比較する。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "タンパク質はアミノ酸の生体高分子",
+      "verdict": "選ばない候補",
+      "reason": "アミノ酸残基がアミド結合でつながる生体高分子。"
+    },
+    "2": {
+      "value": "ナイロンはジカルボン酸/ジアミンのポリアミド",
+      "verdict": "選ばない候補",
+      "reason": "ナイロン66なら二官能原料の縮合が対応するが、全ナイロンの定義ではなくナイロン6はラクタム開環。"
+    },
+    "3": {
+      "value": "PLAは生分解性",
+      "verdict": "選ばない候補",
+      "reason": "代表的生分解性ポリエステル。ただし環境条件を伴う。"
+    },
+    "4": {
+      "value": "PVCは熱硬化性",
+      "verdict": "選ぶ候補",
+      "reason": "通常PVCは熱可塑性で熱硬化性ではない。"
+    },
+    "5": {
+      "value": "PETは熱可塑性",
+      "verdict": "選ばない候補",
+      "reason": "通常PETは熱可塑性ポリエステル。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "ナイロン全般をジカルボン酸/ジアミン由来へ限定する候補はナイロン6等に当てはまらない。公式PVC肢の説明と別に原典の一般化疑義を残す。",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_006.png"
+  ],
+  "question_id": "H28-REG-APPLIED-17",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "812756d6758644a63bc865078d4bb413a5135f533dd92eb55e8957860199751f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

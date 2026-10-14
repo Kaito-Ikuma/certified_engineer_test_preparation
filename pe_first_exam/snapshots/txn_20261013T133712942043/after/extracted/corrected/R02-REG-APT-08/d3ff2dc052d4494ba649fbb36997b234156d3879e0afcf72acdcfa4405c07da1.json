@@ -1,0 +1,45 @@
+{
+  "stem": "ヒューマンエラーを生む12の要因を結果からたどる。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+    "時点": "令和2年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "該当しない0項目",
+      "verdict": "条件内で適切",
+      "reason": "列挙は全てヒューマンエラー発生要因の分類例に対応するので、原典の用語法では0。"
+    },
+    "2": {
+      "value": "1項目",
+      "verdict": "不適切",
+      "reason": "疲労や高齢化を単なる行為でないとして一つだけ除外すると、原典が使う要因分類と合わない。"
+    },
+    "3": {
+      "value": "2項目",
+      "verdict": "不適切",
+      "reason": "心身機能低下・疲労等はエラーを生む条件として分類へ含まれる。行為の誤りとその条件は概念上分ける。"
+    },
+    "4": {
+      "value": "3項目",
+      "verdict": "不適切",
+      "reason": "連絡不足や集団の条件も作業者を取り巻く要因で、個人のミスだけに狭めない。"
+    },
+    "5": {
+      "value": "4項目",
+      "verdict": "不適切",
+      "reason": "12項目の分類例と対応し、4項目除外の根拠はない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "原典の9割以上という数値は統計母集団・集計法が未確認。疲労等を行為そのものと呼ぶ定義ではなく、原因分類として扱う。原典の該当しないの語義をAstra対象に保持。",
+  "evidence": [
+    "extracted/pages/R02/aptitude/page_008.png"
+  ],
+  "question_id": "R02-REG-APT-08",
+  "source_file": "sources/R02/aptitude.pdf",
+  "source_page": "8",
+  "source_sha256": "d0ca26aaeeba6d436d8ffa77a759056e7a194c0ac9fad61de2c84392999050bb",
+  "raw_text_sha256": "28cd96fbb87925ceeadba0e4cfbee371489119d87c3d16701f878814ec2095fb",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

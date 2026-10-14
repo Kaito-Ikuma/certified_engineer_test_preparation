@@ -1,0 +1,45 @@
+{
+  "stem": "境界防御・保護通信・IoT・パスワード再利用・無線接続先を評価する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "時点": "H30年度。現在の推奨を出題当時へ無条件に転用しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "ファイアウォールを利用。",
+      "verdict": "適切（限定防御）",
+      "reason": "許可通信を制御して不正アクセス等を減らす。許可通信内の攻撃や端末からの持出しまで単独で全防止するものではない。"
+    },
+    "2": {
+      "value": "SSL/TLSのような暗号通信を確認。",
+      "verdict": "TLS意図で適切・SSL版に疑義",
+      "reason": "適切なTLSと相手認証が必要である。原典のSSL/TLSを時代の総称として保持するが、SSLv3は2015年RFC7568で禁止されており、SSLを現行でも安全と読み替えない。"
+    },
+    "3": {
+      "value": "常時不要なIoTは使用後電源オフ。",
+      "verdict": "適切（停止可能な機器）",
+      "reason": "常時使わず停止してよい機器について接続時間を減らす策である。継続監視や安全機能を必要とする装置を一律停止する指示ではない。"
+    },
+    "4": {
+      "value": "忘れないため複数サービスで同じパスワード。",
+      "verdict": "不適切",
+      "reason": "一つのサービスの漏洩情報が他サービスの認証へ悪用される。サービスごとの独自の強いパスワードが必要である。"
+    },
+    "5": {
+      "value": "意図しない無線AP接続を確認。",
+      "verdict": "適切",
+      "reason": "偽・無許可APへの自動接続を避ける。接続先確認に加え適切な暗号通信等も必要である。"
+    }
+  },
+  "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+  "ambiguity": "原典2はSSL/TLSと一括表記し版・暗号設定を省く。SSLv3禁止は出題前の2015年であり、SSLを安全として一般推奨できない。総称としての出題意図と字義を区別し公式4を保持。",
+  "evidence": [
+    "extracted/pages/H30/basic/page_006.png"
+  ],
+  "question_id": "H30-REG-BASIC-2-1",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "3f7be47e049fa930b1533b3e1ee731b0ac5e5b3f65643b65ff93c44cfec94a7d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

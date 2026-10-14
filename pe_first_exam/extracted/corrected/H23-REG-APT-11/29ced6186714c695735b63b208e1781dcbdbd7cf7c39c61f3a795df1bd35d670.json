@@ -1,0 +1,45 @@
+{
+  "stem": "社会的責任の手引きと認証規格の区別を問う。公式正答③を保持し、他の記述の解釈上の疑義を別に残す。",
+  "conditions": {
+    "standard": "ISO26000",
+    "exam_reference_year": "2011"
+  },
+  "choices": {
+    "1": {
+      "value": "政府を除く全種類組織",
+      "verdict": "不適切・独立選択",
+      "reason": "ISOは全種類の組織を対象と説明する。政府の一律除外には疑義があり3だけで検討を閉じない。"
+    },
+    "2": {
+      "value": "国内の多様な関係者が検討参加",
+      "verdict": "記述と範囲を確認",
+      "reason": "官民・労働・消費者等の参加という多様な関係者の合意形成を扱う。国内参加詳細の当時資料は追加照合。"
+    },
+    "3": {
+      "value": "ISO26000は認証要求事項規格",
+      "verdict": "不適切・独立選択",
+      "reason": "ガイダンスであり認証用要求事項ではないので不適切。"
+    },
+    "4": {
+      "value": "七中核主題と原則の列挙",
+      "verdict": "記述と範囲を確認",
+      "reason": "中核主題と原則は異なる七項目。原典の原則列挙は人権の尊重を欠くため、網羅列挙と読むか例示と読むかを留保。"
+    },
+    "5": {
+      "value": "国連グローバルコンパクトとの連携",
+      "verdict": "記述と範囲を確認",
+      "reason": "連携と規格認証は別。国連の任意参加枠組みとISOガイダンスの当時協力記録は追加確認。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "1の政府除外、4の原則の列挙、2・5の当時参加・連携記録を査読。独立1|3と公式3の相違を保持。",
+  "evidence": [
+    "extracted/pages/H23/aptitude/page_012.png"
+  ],
+  "question_id": "H23-REG-APT-11",
+  "source_file": "sources/H23/aptitude.pdf",
+  "source_page": "12",
+  "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+  "raw_text_sha256": "1d5cd1e937014f8e56ce05c2358e46cf50025b0a98bb91ac74949366a3e3434d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

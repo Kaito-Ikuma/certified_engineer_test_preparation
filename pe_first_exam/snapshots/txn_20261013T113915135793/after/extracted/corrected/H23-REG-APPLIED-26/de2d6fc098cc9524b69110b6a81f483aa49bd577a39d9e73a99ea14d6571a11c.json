@@ -1,0 +1,45 @@
+{
+  "stem": "地熱資源の利用域・貯留層・発電方式を比較する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "地熱資源の利用域・貯留層・発電方式を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "蒸気方式とバイナリー",
+      "verdict": "代表的条件で適切",
+      "reason": "蒸気でタービンを回す方式と、熱交換で低沸点の二次媒体を蒸発させる方式を区別する。"
+    },
+    "2": {
+      "value": "中・低温熱水の利用範囲",
+      "verdict": "不適切",
+      "reason": "温室・暖房・温泉等への直接利用は火山周辺だけに限定されない。"
+    },
+    "3": {
+      "value": "広域と局所の地温勾配",
+      "verdict": "条件・解釈を留保",
+      "reason": "放射性壊変・深部熱供給・火山等の熱源を考える。20–30、50–100℃/km以上は代表範囲で全地点の一定値ではない。"
+    },
+    "4": {
+      "value": "割れ目に富む貯留層",
+      "verdict": "代表的条件で適切",
+      "reason": "流体が集まり循環するために有効な透水経路が必要で、亀裂や断層が重要となる。"
+    },
+    "5": {
+      "value": "化学成分による温度推定",
+      "verdict": "代表的条件で適切",
+      "reason": "溶解平衡等の温度依存を利用する地化学温度計。冷却、混合、再平衡の影響は別に検討する。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "地温勾配と150℃区分は原典の代表値。全地域を固定した境界で分けず、具体地点の勾配・貯留温度と地化学平衡条件は追加照合対象。",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_008.png"
+  ],
+  "question_id": "H23-REG-APPLIED-26",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "cc85af7117ad5d20a1c17f82b5419ef154fb7ed63eb42707c4c3c4499d0d794f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

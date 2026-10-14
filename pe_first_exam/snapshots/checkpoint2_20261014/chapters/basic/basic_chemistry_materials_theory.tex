@@ -1,0 +1,69 @@
+\section{水中の酸性度を共役塩基から考える}
+\label{theory:basicchem:acid}
+酸の強さは水中でプロトンを渡す平衡であり、分析濃度そのものではない。強酸の希薄溶液ではほぼ完全解離、弱酸では部分解離となる。単プロトン弱酸の分析濃度を\(c\)、解離定数を\(K_a\)とし、解離が十分小さければ\([\mathrm H^+]\simeq\sqrt{K_ac}\)である。水の自己解離が支配するほどの希薄条件や活量の影響を無視できない高濃度にはそのまま使わない。
+共役塩基の安定化から構造の影響を読む。カルボキシラートの共鳴と電子求引基は解離を助け、CF3COOHは酢酸より強い。フェノキシドは共鳴安定化するためフェノールはエタノールより強い。HFとHClの比較では結合切断と溶媒和も入り、電気陰性度だけでは順位が決まらない\autocite{purdue_acid_strength,yale_hydrohalic}。炭酸の第一解離と溶存CO2を含む見かけの定義を分ける。
+
+\section{生成エンタルピーの差として反応熱を計算する}
+\label{theory:basicchem:hess}
+エンタルピーは状態量なので、実際の反応経路によらず始状態と終状態の差で決まる。生成エンタルピーを用いると
+\begin{equation}\Delta_r H^\circ=\sum_{\mathrm{products}}\nu_i\Delta_fH_i^\circ-\sum_{\mathrm{reactants}}\nu_i\Delta_fH_i^\circ.\end{equation}
+係数と相を指定して足す。原典が生成時の放出熱を正の大きさで示す場合は、対応する生成エンタルピーを負に読み替える。液体水と水蒸気では値が違い、反応熱が小さい差で決まる設問では発熱・吸熱まで変わり得る\autocite{openstax_hess}。単位は指定反応式を一回進める基準か、生成物1 mol当たりかを明記する。
+
+\section{沈殿した後に溶ける両性水酸化物}
+\label{theory:basicchem:amphoteric}
+Al3+にOH−を加えるとAl(OH)3が沈殿し、さらに過剰OH−でヒドロキソ錯イオンを作って溶ける。
+\begin{equation}\mathrm{Al^{3+}+3OH^-\to Al(OH)_3},\qquad
+\mathrm{Al(OH)_3+OH^-\rightleftharpoons[Al(OH)_4]^-}.\end{equation}
+酸にも塩基にも反応する両性と、任意の沈殿が過剰試薬で溶けることは同じでない。添加剤がNaOHかアンモニアかを確認し、錯形成の条件を取り違えない\autocite{chem55_ampho}。
+
+\section{熱伝導を担い手・散乱・空隙へ分ける}
+\label{theory:basicchem:thermal}
+通常の金属の熱輸送は自由電子の寄与が大きく、絶縁性結晶では格子振動が主要な担い手となる。合金化や構造の乱れは散乱を増す一般的傾向を持つ。低い熱伝導率の空隙を増せば通常は有効熱伝導率が低下する。ただし気孔中の対流・放射が重要な高温条件や配向の違いは別に検討する。
+高分子の輸送も結晶化率だけでなく鎖の配向・界面・温度に依存する。結晶質と非晶質の通常比較を、任意の異組成間の順位へ広げない\autocite{aist_metal_thermal,openstax_thermal_conduction,chem55_polymer}。
+
+\section{平衡収率と反応速度を分ける}
+\label{theory:basicchem:equilibrium}
+発熱のアンモニア合成\(\mathrm{N_2+3H_2\rightleftharpoons2NH_3}\)では、低温が生成側の平衡に有利である。体積を減らして圧力を上げると、気体4 molから2 molとなる生成側へ移る。温度は平衡定数を変え、圧縮は分圧と反応商を変える\autocite{chem55_equilibrium}。
+触媒は平衡へ達する速度を変えるが平衡定数を変えない。低温による収率の増大と速度低下は別の効果なので、工業条件は両方と設備条件を考えて選ぶ。
+
+\section{中和後に残るものからpHを判断する}
+\label{theory:basicchem:neutralization}
+体積と濃度から物質量を求め、放出・受容できるプロトンの当量を比較する。酸と塩基が当量でも、できた塩の溶液が必ず中性になるわけではない。弱塩基の共役酸NH4+は水へプロトンを渡して酸性を示す\autocite{chem55_hydrolysis}。
+硫酸1 molとNaOH2 molは硫酸ナトリウムとなり、通常の中性近似又は硫酸イオンの弱い塩基性で扱う。硫酸1 molとNH3 2 molでは硫酸アンモニウムとなりNH4+の酸性が支配する。強塩基が過剰ならそのOH−を先に扱い、NH3とNH4+が共存する場合は緩衝系を考える。体積加算の近似は精密な濃度計算と区別する。
+
+\section{腐食を環境と表面状態から判断する}
+\label{theory:basicchem:corrosion}
+腐食は材料と環境の反応で進む。イオン化傾向が大きくても、Alの強固な酸化膜のように反応を抑える不動態があれば通常の環境で耐食性を示す。ステンレスのCrによる不動態も同じ考え方だが、塩化物は孔食・すきま腐食を引き起こし得る\autocite{chem55_corrosion,stainless_definition2022}。海水用途は鋼種・温度・流動・形状等を合わせて選ぶ。
+応力腐食割れは特定の材料・環境と引張応力の組合せで起こり、通常の引張強さより低い応力でも破壊し得る。水素脆化は水素侵入・拡散・欠陥との相互作用に関係する\autocite{nims_hydrogen2024}。これらを単なる均一減肉やすべての材料の性質へまとめない。
+
+\section{金属資源の存在量と製錬反応}
+\label{theory:basicchem:metallurgy}
+地殻の存在量と工業生産量は違う。Alは地殻中で最も多い金属だが、金属生産量の順位をそこから直接決めない。反応性の高いAlは溶融塩中の酸化物を電解して得る\autocite{chem55_crust}。Tiの代表的なクロール法はTiCl4をMgで還元する\autocite{chem55_kroll}。
+高炉では鉱石をコークス由来のCO等で還元し、石灰石等で不要成分を分離する\autocite{chem55_iron}。理想化した純粋Fe2O3から純粋Feを得る質量収支は、式量160のうちFeが112なので\(w_{\mathrm{ore}}=(160/112)w_{\mathrm{Fe}}\)。実操業では鉱石品位・歩留まり・銑鉄中の炭素を別に扱う。埋蔵量を生産量で割った可採年数は特定時点の指標であり、不変の枯渇期限ではない。
+
+\section{密度・抵抗率・融点を独立に並べる}
+\label{theory:basicchem:properties}
+密度は単位体積当たり質量、抵抗率は形状を除いた電気輸送の指標、融点は指定圧力での相転移温度である。純金属の通常値では密度はCu\(>\)Fe\(>\)Al、20℃付近の抵抗率はFe\(>\)Al\(>\)Cu、融点はFe\(>\)Cu\(>\)Alとなる\autocite{openstax_resistivity,chem55_properties,chem55_properties_al,chem55_properties_fe}。三つの順位を一つの「金属の強さ」へ置き換えない。記号表の割当は年度ごとに戻して照合する。
+
+\section{沸点上昇は溶質粒子数を数える}
+\label{theory:basicchem:colligative}
+不揮発性溶質を溶かすと蒸気圧が下がり、同じ外圧へ達するには温度を上げる必要がある。希薄な理想溶液の近似では\(\Delta T_b=K_b i b\)。\(b\)は溶媒1 kg当たりの溶質式単位の物質量、\(i\)は溶解後の有効粒子数の倍率である\autocite{chem55_colligative}。
+同じ質量モル濃度なら、理想的な完全解離モデルの尿素等は1、NaClは2、CaCl2は3の粒子に対応する。実溶液の活量やイオン間相互作用により厳密な倍率からずれる。100℃を基準とする水の沸点は1気圧の条件付きであり、外圧が違えば純水の基準温度も変わる。
+
+\section{材料名から代表的構成元素を読む}
+\label{theory:basicchem:elements}
+乾電池の代表的負極Zn、シリカ光ファイバーのSi、Al-Cu系ジュラルミンのCu、代表的な磁石のFeを用途と対応させる\autocite{chem55_fiber,chem55_duralumin,openstax_magnetism}。Liイオン電池ではCoを含む正極材料が代表例となるが、Coを含まない正極もあり、全電池共通の必要元素ではない\autocite{openstax_batteries}。材料の例と全称命題を区別し、正極と負極を読み分ける。
+
+\section{ギブズエネルギーの単位をそろえる}
+\label{theory:basicchem:gibbs}
+\begin{equation}G=H-TS,\qquad\Delta_rG^\circ=\Delta_rH^\circ-T\Delta_rS^\circ.\end{equation}
+\(T\)は絶対温度で、エントロピーの単位はエネルギー/温度である。したがって\(TS\)と\(H\)は同じ単位になる\autocite{chem55_gibbs}。一定温度・圧力での反応の駆動力を考えるとき、標準反応量と実際の組成での反応量を分け、後者には反応商の項が入る。
+
+\section{結合の前後から有機反応を分類する}
+\label{theory:basicchem:organic}
+付加は多重結合に試薬が加わり、脱離は小分子が抜けて多重結合等ができ、置換は一つの原子団が別の原子団へ変わる\autocite{chem55_organic}。アルコールのOHからBrへの変換は置換、アルコールから水が抜ける反応は脱離、アルケンへのHBrは付加となる。カルボン酸からエステルへの変換はアシル基の置換として扱え、同時に縮合という観点でも呼べる。触媒名だけでなく、失われた結合と形成した結合を追う。
+
+\section{反応の分類と反応が進む条件を分ける}
+\label{theory:basicchem:redox}
+酸化数の増加は酸化、減少は還元で、同一反応では両者を伴う。単体は0、通常の酸化物でOは−2、通常の酸や水でHは+1として電荷収支を取り、例外を確認する\autocite{iupac_oxidation_state}。
+反応式の全元素で酸化数が不変ならその式は酸化還元ではない。ただし式が原子数と電荷を保存することは、その反応が指定条件で進むことの十分条件ではない。形式的な塩の交換式では溶解平衡や沈殿の駆動力を別に調べる。

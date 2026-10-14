@@ -1,0 +1,45 @@
+{
+  "stem": "CCSの回収と地中貯留に直接つながる技術・場所を比較する。",
+  "conditions": {
+    "方向": "関係性が最も薄いもの。",
+    "対象": "CCS（Carbon dioxide Capture and Storage）。"
+  },
+  "choices": {
+    "1": {
+      "value": "帯水層",
+      "verdict": "直接関係",
+      "reason": "深部塩水帯水層は貯留候補である。圧力、封じ込め、漏えい等を評価する。"
+    },
+    "2": {
+      "value": "EOR",
+      "verdict": "CO2-EORで関係",
+      "reason": "CO2を用いるEORは石油増進回収とCO2貯留に結び付く。他のEORまで同一ではない。"
+    },
+    "3": {
+      "value": "モノエタノールアミン吸収法",
+      "verdict": "直接関係",
+      "reason": "MEAの反応吸収はCO2回収の代表方式である。"
+    },
+    "4": {
+      "value": "界面活性剤",
+      "verdict": "提示中で最も薄い",
+      "reason": "界面活性剤は油回収等に使われるが、提示中ではCO2分離・貯留そのものとの直接関係が薄い。全く関係がないと断定しない。"
+    },
+    "5": {
+      "value": "膜分離",
+      "verdict": "直接関係",
+      "reason": "選択透過する膜でCO2を分離回収できる。"
+    }
+  },
+  "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_007.png"
+  ],
+  "question_id": "H26-REG-APPLIED-18",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "1efb97e4f311f5da8c7866c3a1445d53cb61ff0e6eb48d024a3b2b4b8a1b0292",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

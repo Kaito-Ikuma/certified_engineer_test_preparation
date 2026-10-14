@@ -1,0 +1,46 @@
+{
+  "stem": "PL法の目的・立証・対象・誤使用・開発危険から不適切な記述を選ぶ。",
+  "conditions": {
+    "原典条件": "問題幹、否定、ア等の記号順、5選択肢と個数又は表の全行を原典16画像で確認した。",
+    "論理条件": "最も不適切な候補。品質の欠陥は安全性に関わる範囲で理解する。",
+    "法の時点": "出題時の制度を保持。現行取得基準日は2026-10-12。2020年施行の期間変更を別記する。"
+  },
+  "choices": {
+    "1": {
+      "value": "法は被害者保護等を目的とする",
+      "verdict": "適切",
+      "reason": "1条の趣旨である。"
+    },
+    "2": {
+      "value": "欠陥と損害の関係を立証する",
+      "verdict": "適切",
+      "reason": "過失立証不要の要点は適切だが、以前の契約責任等を一括否定しない。"
+    },
+    "3": {
+      "value": "対象は製造加工動産である",
+      "verdict": "適切",
+      "reason": "2条1項の定義である。"
+    },
+    "4": {
+      "value": "予見可能な誤使用にも安全確保が必要",
+      "verdict": "適切",
+      "reason": "通常予見される使用形態を総合判断する。品質一般とは区別する。"
+    },
+    "5": {
+      "value": "認識不能でも責任を免れない",
+      "verdict": "不適切",
+      "reason": "4条の免責条件を無視している。"
+    }
+  },
+  "figures": "文字表又は記述問題であり図なし。組合せの各行は原典画像の列順を保持する。",
+  "ambiguity": "2は施行前の救済を709条で代表し、契約責任等を省略している。4の品質上の欠陥は安全性に関わるものと読む。文の省略範囲を査読事項に保持する。",
+  "evidence": [
+    "extracted/pages/H29/aptitude/page_008.png"
+  ],
+  "question_id": "H29-REG-APT-08",
+  "source_file": "sources/H29/aptitude.pdf",
+  "source_page": "8",
+  "source_sha256": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+  "raw_text_sha256": "34c2f253d8027133fde84a1aba239fcfb0a816bc3134085b06a8b04b58e04532",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

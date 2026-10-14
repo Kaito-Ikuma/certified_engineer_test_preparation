@@ -1,0 +1,45 @@
+{
+  "stem": "電磁気の基本法則の説明で、最も不適切なものを選ぶ。",
+  "conditions": {
+    "注意": "③の原典は二箇所とも電束と記す。磁束へ書き換えて読まない。",
+    "方向": "最も不適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "閉曲面を貫く電束は内部の真電荷の量に等しく、電場のガウス法則である。",
+      "verdict": "適切",
+      "reason": "Dの閉曲面電束を内部真電荷へ対応させる説明である。"
+    },
+    "2": {
+      "value": "ビオ・サバールの法則は定常電流が作る磁場を決める。",
+      "verdict": "適切",
+      "reason": "電流素片から場を積分する定常磁場の法則である。"
+    },
+    "3": {
+      "value": "閉回路を貫く電束が変化すると、電束変化を妨げる起電力が生じることをファラデーの法則という。",
+      "verdict": "不適切",
+      "reason": "誘導起電力は磁束の変化に対応する。電束変化はアンペール・マクスウェルの変位電流側の量である。"
+    },
+    "4": {
+      "value": "領域の総電荷の時間変化は閉曲面を通じた電荷の正味の出入りと対応し、電気量保存を表す。",
+      "verdict": "適切",
+      "reason": "外向き電流を正に取ればdQ/dt=−∫i·n dSである。原典の出入りは符号付きの正味量として読む。"
+    },
+    "5": {
+      "value": "マクスウェル方程式は電磁場の基本方程式で19世紀に提出された。",
+      "verdict": "適切",
+      "reason": "マクスウェルが19世紀に電磁気の法則をまとめたという説明に合う。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_002.png"
+  ],
+  "question_id": "R01-REG-APPLIED-04",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "d620ff8febe41e514a374679f873ccc13e676fa6e6a0b783d394091746d114ca",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

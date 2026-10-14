@@ -1,0 +1,28 @@
+{
+  "status": "committed",
+  "time": "2026-10-13T12:24:45+09:00",
+  "paths": [
+    "generated/questions/aptitude/03_compliance_accountability.tex",
+    "generated/questions/aptitude/04_safety_risk.tex",
+    "generated/questions/applied_science/geology/01_mineralogy.tex",
+    "generated/questions/applied_science/geology/08_engineering_geology.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/aptitude/03_compliance_accountability.tex": true,
+    "generated/questions/aptitude/04_safety_risk.tex": true,
+    "generated/questions/applied_science/geology/01_mineralogy.tex": true,
+    "generated/questions/applied_science/geology/08_engineering_geology.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/aptitude/03_compliance_accountability.tex": "5917d05eaf5d9b6f0ac3e7eb169fb9d6804c1060c03e5b7d0f700017897081d3",
+    "generated/questions/aptitude/04_safety_risk.tex": "87dd7c36d5693a7be93a90668ce36bac9d7188cf5ca2e6ae732540890938e189",
+    "generated/questions/applied_science/geology/01_mineralogy.tex": "d91c19d35e9ffbc4384edf21e6ce72f2a72972fad65cfad94a1fbbb97670d387",
+    "generated/questions/applied_science/geology/08_engineering_geology.tex": "ef47393fc8d91096f2a5375563d70b064d11cbdc3083767a684e8c99f76bb169",
+    "generated/audit_summary.tex": "65b9f22fe10fd0a14250d11c212ce6fdb6cfc6adaf3a7c2d17034646924474a7",
+    "generated/frequency_tables.tex": "604ce2846aee67fa22573cf0e68dc6d3cd24387e79a65ee0ee1fab1f9bfca57e"
+  }
+}

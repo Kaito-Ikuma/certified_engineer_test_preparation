@@ -1,0 +1,45 @@
+{
+  "stem": "変成岩の形成要因、変成帯、高圧多形について不適切な記述を選ぶ。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "一般的な岩石分類・形成過程。"
+  },
+  "choices": {
+    "1": {
+      "value": "火成岩・堆積岩・変成岩のいずれも原岩となる。",
+      "verdict": "適切（一般的分類）",
+      "reason": "既存の変成岩が再び違う条件を受ける複変成もある。"
+    },
+    "2": {
+      "value": "固体中の新鉱物形成と外力による変形が変成作用の要素である。",
+      "verdict": "適切（一般的分類）",
+      "reason": "再結晶・反応と変形を区別する。ただし接触変成などで顕著な変形を必須とはしない。"
+    },
+    "3": {
+      "value": "鉱物組合せは岩石の化学組成によらず温度・圧力のみで決まる。",
+      "verdict": "不適切",
+      "reason": "温度・圧力に加えて全岩組成・流体組成等が必要である。元素が存在しなければその元素を要する鉱物はできない。"
+    },
+    "4": {
+      "value": "西南日本の高圧型変成帯は北から蓮華・周防・三波川の順に分布する。",
+      "verdict": "適切（一般的分類）",
+      "reason": "原画像では蓮華・周防・三波川でありOCRの進華等を採用しない。高圧帯の典型的配置をいう。"
+    },
+    "5": {
+      "value": "コース石・ダイヤモンドは石英・石墨のそれぞれ高圧多形である。",
+      "verdict": "適切（一般的分類）",
+      "reason": "同じ化学組成でも結晶構造が違い、高圧側ではより稠密な構造が安定となる。コース石はSiO2、両炭素鉱物はCである。"
+    }
+  },
+  "figures": "原典の問題幹・否定・鉱物名・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_008.png"
+  ],
+  "question_id": "R01-REG-APPLIED-24",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "a8d39b1501d5262f47d8098f75758a7c9d1b06fe057f49cee849c60a18cc53e2",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

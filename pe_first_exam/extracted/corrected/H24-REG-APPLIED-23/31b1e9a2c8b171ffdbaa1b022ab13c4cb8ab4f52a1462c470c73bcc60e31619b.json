@@ -1,0 +1,45 @@
+{
+  "stem": "地震探査の走時・反射用語と重力補正を区別する。",
+  "conditions": {
+    "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+    "前提": "地震探査は波の走時・波形、重力探査は加速度の異常を測る。"
+  },
+  "choices": {
+    "1": {
+      "value": "原点走時",
+      "verdict": "適切",
+      "reason": "屈折波の走時直線を距離ゼロへ外挿した切片である。直線の傾きと合わせて層厚等を推定する。実測した距離ゼロの初動時刻とは同一視しない。"
+    },
+    "2": {
+      "value": "ブラインド層",
+      "verdict": "適切",
+      "reason": "屈折法の初動走時に現れにくい層である。薄い中間層が初動を与えない場合や低速度層を区別し、用語の範囲は資料により異なる。"
+    },
+    "3": {
+      "value": "音響インピーダンス",
+      "verdict": "適切",
+      "reason": "垂直入射の簡単なモデルではZ=ρVであり、境界両側の差が反射振幅を支配する。重力で用いる密度そのものだけとは異なる。"
+    },
+    "4": {
+      "value": "ブーゲー補正",
+      "verdict": "不適切",
+      "reason": "測点と基準面の間の質量が重力へ及ぼす効果を補正する重力探査の処理である。地震波走時に対する静補正ではない。"
+    },
+    "5": {
+      "value": "静補正",
+      "verdict": "適切",
+      "reason": "地形や表層低速度層などによる走時ずれを一定の時間シフトとしてそろえる処理である。重力の地形・Bouguer補正と観測量が異なる。"
+    }
+  },
+  "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_007.png"
+  ],
+  "question_id": "H24-REG-APPLIED-23",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "ce9d0503081b405122a81503b88177129a40978b6079f7edb4173448c4457b4b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

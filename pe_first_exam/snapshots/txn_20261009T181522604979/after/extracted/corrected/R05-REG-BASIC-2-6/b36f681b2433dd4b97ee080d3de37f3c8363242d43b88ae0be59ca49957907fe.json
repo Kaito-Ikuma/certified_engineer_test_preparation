@@ -1,0 +1,48 @@
+{
+  "stem": "3部分集合の交差数と和集合の外側の数から全集合の元の個数を求める。",
+  "conditions": {
+    "各集合": "|A|=300、|B|=180、|C|=120。",
+    "2集合交差": "|A∩B|=60、|A∩C|=40、|B∩C|=20。",
+    "3集合交差": "|A∩B∩C|=10。",
+    "外側": "A∪B∪Cの補集合の元は400個。"
+  },
+  "choices": {
+    "1": {
+      "value": "600",
+      "verdict": "条件に一致しない候補",
+      "reason": "300+180+120の単純和であり、交差と外側400を扱っていない。"
+    },
+    "2": {
+      "value": "720",
+      "verdict": "条件に一致しない候補",
+      "reason": "包含排除と外側を加えた890に一致しない。各領域の計数が必要である。"
+    },
+    "3": {
+      "value": "730",
+      "verdict": "条件に一致しない候補",
+      "reason": "包含排除の和集合490と外側400の和に一致しない。"
+    },
+    "4": {
+      "value": "890",
+      "verdict": "条件に一致する候補",
+      "reason": "600-(60+40+20)+10=490に外側400を加えた890に一致する。"
+    },
+    "5": {
+      "value": "1000",
+      "verdict": "条件に一致しない候補",
+      "reason": "各集合の単純和600と外側400を加え、重複110を除いていない。"
+    }
+  },
+  "figures": "問題幹・数値・記号・5肢を画像確認。図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_008.png",
+    "extracted/pages/R05/basic/page_009.png"
+  ],
+  "question_id": "R05-REG-BASIC-2-6",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "4c798c0dd49c49fa4bd2739da18425b77c29a30a3fbe7351ba0890506167e44d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

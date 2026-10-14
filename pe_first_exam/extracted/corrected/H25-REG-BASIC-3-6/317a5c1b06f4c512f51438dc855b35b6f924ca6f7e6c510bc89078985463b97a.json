@@ -1,0 +1,47 @@
+{
+  "stem": "二次元ベクトル場の指定点における回転の面外成分を求める。",
+  "conditions": {
+    "ベクトル": "\\(V=(x+y,x^2)\\)",
+    "点": "(2,3)",
+    "定義": "\\(\\operatorname{rot}V=\\partial_xV_y-\\partial_yV_x\\)"
+  },
+  "choices": {
+    "1": {
+      "value": "\\((1,2x)\\)",
+      "verdict": "条件に不一致",
+      "reason": "原典のrotはスカラーであり、成分微分を並べた二成分の値ではない。"
+    },
+    "2": {
+      "value": "\\((1,4)\\)",
+      "verdict": "条件に不一致",
+      "reason": "微分の結果を並べただけで差を取っていない。"
+    },
+    "3": {
+      "value": "\\((1,6)\\)",
+      "verdict": "条件に不一致",
+      "reason": "第二成分をyで評価したような値であり、差を取っていない。"
+    },
+    "4": {
+      "value": "\\(3\\)",
+      "verdict": "条件に一致",
+      "reason": "2x−1をx=2で評価すると3である。"
+    },
+    "5": {
+      "value": "\\(5\\)",
+      "verdict": "条件に不一致",
+      "reason": "2x+1と足すのは回転の差の符号と合わない。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/basic/page_014.png",
+    "extracted/pages/H25/basic/page_015.png"
+  ],
+  "question_id": "H25-REG-BASIC-3-6",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "14",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "4b923e88449fe79ed2344f5f759a8a8ef22114dfaaf867af904f681e04dc1687",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

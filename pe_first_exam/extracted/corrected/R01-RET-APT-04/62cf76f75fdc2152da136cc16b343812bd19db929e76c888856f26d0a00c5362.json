@@ -1,0 +1,52 @@
+{
+  "stem": "構造の危険を隠さず関係者の安全へつなぐ。",
+  "conditions": {
+    "状況": "使用中の建物と周辺の何千人もの人々、構造計算の誤り、補強に3か月、暴風時の監視と避難が可能。",
+    "争点": "混乱を恐れて入居者へ知らせないことの妥当性。",
+    "主体": "Aは構造設計者、Bは市の担当技術者。Bを市の名称としない。",
+    "ア": "Aが守秘を理由に依頼人の不公表方針へ従う。",
+    "イ": "Aが安全を優先して依頼人を説得。",
+    "ウ": "Bが混乱を恐れて不公表方針へ従う。",
+    "エ": "Bが公衆の安全を優先して依頼人を説得。",
+    "オ": "Bが関係者の知る権利を重視して依頼人を説得。"
+  },
+  "choices": {
+    "1": {
+      "value": "XOXOO",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "2": {
+      "value": "OXOXO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 XOXOO と異なる。"
+    },
+    "3": {
+      "value": "OOXOX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 XOXOO と異なる。"
+    },
+    "4": {
+      "value": "XXOOO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 XOXOO と異なる。"
+    },
+    "5": {
+      "value": "OOXXO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 XOXOO と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "倫理事例の判断であり、すべての秘密情報を即時公開する一般的な法的義務へ置き換えない。実際の緊急性・通報先は個別に評価する。",
+  "evidence": [
+    "extracted/pages/R01_retest/aptitude/page_004.png",
+    "extracted/pages/R01_retest/aptitude/page_005.png"
+  ],
+  "question_id": "R01-RET-APT-04",
+  "source_file": "sources/R01_retest/aptitude.pdf",
+  "source_page": "4",
+  "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+  "raw_text_sha256": "1deec4115461a355e36426e509d1207df9fb6af37250464c710dbbb1efe2a798",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

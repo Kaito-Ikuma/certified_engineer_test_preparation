@@ -1,0 +1,45 @@
+{
+  "stem": "収束・発散境界と黒鉱・斑岩銅の関係を照合する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "収束・発散境界と黒鉱・斑岩銅の関係を照合する。"
+  },
+  "choices": {
+    "1": {
+      "value": "発散境界の島弧海溝",
+      "verdict": "不適切",
+      "reason": "島弧海溝系はプレート収束と沈み込みに関係する。発散は海嶺等の説明。"
+    },
+    "2": {
+      "value": "マリアナ型と黒鉱",
+      "verdict": "条件・解釈を留保",
+      "reason": "海洋性島弧や伸張する背弧の海底熱水活動に黒鉱型の潜在鉱床がある。マリアナ型の定義を固定しない限りこの肢を簡単に排除できない。"
+    },
+    "3": {
+      "value": "収束境界の中央海嶺",
+      "verdict": "不適切",
+      "reason": "新しい海洋地殻を作る中央海嶺は発散境界である。"
+    },
+    "4": {
+      "value": "マリアナ型と斑岩銅",
+      "verdict": "条件・解釈を留保",
+      "reason": "斑岩銅は収束縁の島弧・陸弧等に産する。公式は4だが、マリアナ型への特定と2との差を一次資料から一意に説明する確認は未完了。"
+    },
+    "5": {
+      "value": "収束境界に砂岩型ウラン",
+      "verdict": "不適切",
+      "reason": "砂岩中の流体移動と酸化還元境界等を使う分類であり、収束プレート境界だけを成立条件としない。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "初回2／公式4。正答原典p41画像も確認。海洋性島弧の斑岩銅と背弧海底の黒鉱型があり、肢2と4の排他性及びマリアナ型の当時定義は要査読。初回を公式へ合わせて置換しない。",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_008.png"
+  ],
+  "question_id": "H24-REG-APPLIED-25",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "e0a32481bc816292f7d4e888017954a54ac2889d355f441723e3b491aa82a6ee",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

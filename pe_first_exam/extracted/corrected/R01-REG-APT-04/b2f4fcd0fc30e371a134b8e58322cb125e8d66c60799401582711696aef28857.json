@@ -1,0 +1,47 @@
+{
+  "stem": "身体特徴を変換した個人識別符号の七分類を判定する。",
+  "conditions": {
+    "原典確認": "問題幹と各記述の主体・否定・全称・表の5候補を保存原典画像で確認。",
+    "制度時点": "R01年度の原典表現を保持。現行資料の条番号や仕様を過去へ補わない。",
+    "各記述の判断": "ア：DNA；イ：顔；ウ：虹彩；エ：声；オ：歩行；カ：静脈；キ：指紋・掌紋",
+    "前提": "政令のDNA・顔・虹彩・声・歩行・静脈・指紋掌紋に対応する。生の特徴全てではなく、電子計算機向けに変換され識別に足りる基準を満たす符号という前提である。"
+  },
+  "choices": {
+    "1": {
+      "value": "0",
+      "verdict": "適切",
+      "reason": "含まれないなものは0個であり、一致する。"
+    },
+    "2": {
+      "value": "1",
+      "verdict": "不適切",
+      "reason": "含まれないなものは0個であり、この個数とは一致しない。"
+    },
+    "3": {
+      "value": "2",
+      "verdict": "不適切",
+      "reason": "含まれないなものは0個であり、この個数とは一致しない。"
+    },
+    "4": {
+      "value": "3",
+      "verdict": "不適切",
+      "reason": "含まれないなものは0個であり、この個数とは一致しない。"
+    },
+    "5": {
+      "value": "4",
+      "verdict": "不適切",
+      "reason": "含まれないなものは0個であり、この個数とは一致しない。"
+    }
+  },
+  "figures": "図なし。記号組合せ又は語句組合せ・個数を原典と照合。",
+  "ambiguity": "現在の公開通則の列挙を確認。令和元年の施行令版の逐条差分までは未照合である。",
+  "evidence": [
+    "extracted/pages/R01/aptitude/page_005.png"
+  ],
+  "question_id": "R01-REG-APT-04",
+  "source_file": "sources/R01/aptitude.pdf",
+  "source_page": "5",
+  "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+  "raw_text_sha256": "17976ce3cbd6f8ddd6b52ad931fb725a972a31945697f068baa8c211d45b7b76",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

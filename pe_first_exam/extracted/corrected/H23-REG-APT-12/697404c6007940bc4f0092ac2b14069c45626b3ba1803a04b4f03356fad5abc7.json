@@ -1,0 +1,45 @@
+{
+  "stem": "同じ定量形式でも認知が一致するとは限らず、リスク認識の心理・社会条件を考慮する。",
+  "conditions": {
+    "判断方向": "各肢の理由に記録。組合せ・個数問題では記述の真偽と回答番号を区別する。",
+    "原典照合": "全5候補、表の列順、否定、条件、規格番号、法令時点を23原典画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "誤り0個",
+      "verdict": "不一致",
+      "reason": "カの「認知バイアスがあっても同じ結論」が誤りなので0個ではない。"
+    },
+    "2": {
+      "value": "誤り1個",
+      "verdict": "初回・公式一致、全称に限定",
+      "reason": "カのみを誤りとした初回判定である。積の形式が同じでも確率・被害の主観的評価が違えば結論は変わる。"
+    },
+    "3": {
+      "value": "誤り2個",
+      "verdict": "不一致",
+      "reason": "ア〜オ・キを一般的な傾向や可能性として読むと、二つ目の明確な誤りはない。"
+    },
+    "4": {
+      "value": "誤り3個",
+      "verdict": "不一致",
+      "reason": "三つの誤りを特定できない。直近の危険、本人の選択、思い出しやすさ、提示枠は認知に影響し得る。"
+    },
+    "5": {
+      "value": "誤り4個",
+      "verdict": "不一致",
+      "reason": "四つの誤りを特定できない。社会的条件や価値を無視して客観値だけで認知を予測しない。"
+    }
+  },
+  "figures": "設問固有図なし。組合せ表がある問題では全候補の記号順を画像照合。",
+  "ambiguity": "アの市民の理解不能、ウの特定個人の認知、キの損失枠の一律優位は一般的可能性・傾向に限定。全状況に成立することは一次資料で未確定。",
+  "evidence": [
+    "extracted/pages/H23/aptitude/page_013.png"
+  ],
+  "question_id": "H23-REG-APT-12",
+  "source_file": "sources/H23/aptitude.pdf",
+  "source_page": "13",
+  "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+  "raw_text_sha256": "9076c8763d6173f8c80d004b5b03ca0a5cdedd683e3cc2bc34c141b9b9dcb0da",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

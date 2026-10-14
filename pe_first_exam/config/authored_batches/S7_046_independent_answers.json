@@ -1,0 +1,151 @@
+{
+  "saved_at": "2026-10-12T22:10:29+09:00",
+  "official_answers_consulted_before_initial": false,
+  "original_images_reviewed": 22,
+  "records": [
+    {
+      "question_id": "H24-REG-APPLIED-05",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "answer_initial": "2",
+      "reason": "FCC a/√2が最近接dなのでa=√2d。"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-11",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "answer_initial": "2",
+      "reason": "メタンは対称で永久双極子なく通常水素結合なし。"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-14",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "answer_initial": "2",
+      "reason": "BCC胞2原子ρ=104/(6e23*(2.9e−8)^3)=7.1g/cm3。"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-09",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "answer_initial": "3",
+      "reason": "NaClの異種最近接は6。接触は硬球模型。"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-11",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "answer_initial": "4",
+      "reason": "水47.8保存、残る溶質=47.8×24/76、析出37.105g。"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-07",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "answer_initial": "2",
+      "reason": "FCC a=√2d。"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-10",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "answer_initial": "2",
+      "reason": "Z同じ、A異なる。"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-14",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "answer_initial": "2",
+      "reason": "ダイヤモンド純粋結晶は広いギャップで電気絶縁。"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-11",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "answer_initial": "5",
+      "reason": "LJポテンシャル反発r−12引力r−6を逆にしている。W凝集を配位数だけで説明も疑義。"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-18",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "answer_initial": "3",
+      "reason": "海水硫酸のδ34Sは約+21‰、ゼロでない。各基準は別。"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-09",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "answer_initial": "5",
+      "reason": "Barkhausenは磁壁の不連続運動。"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-14",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "answer_initial": "3",
+      "reason": "11cisレチナールの光異性化。IRとRamanの選択則が逆。"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-14",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "answer_initial": "4",
+      "reason": "スピンは水素にもあり、空間軌道とスピン状態を別にする。"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-17",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "answer_initial": "1",
+      "reason": "N2,O2,F2結合次数3,2,1で電子数増大・強くなるが逆。"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-05",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "answer_initial": "2",
+      "reason": "超伝導は巨視的凝縮・秩序で単純光遷移用途ではない。"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-07",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "answer_initial": "1",
+      "reason": "BCC体対角半分√3d/2。"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-14",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "answer_initial": "2",
+      "reason": "O8電子1s2,2s2,2p4。"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-10",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "answer_initial": "3|5",
+      "reason": "3はCu29<Zn30かつ4s1<4s2で逆、5はKr第一IE<Arで逆。"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-08",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "answer_initial": "2",
+      "reason": "FCC配位数12で8はBCC。"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-14",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "answer_initial": "3",
+      "reason": "NaCl6配位fcc、CsCl8配位sc+基底で定数異なる。"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-08",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "answer_initial": "5",
+      "reason": "アモルファスは長距離の周期格子を持たない。"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-12",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "answer_initial": "4",
+      "reason": "FCC4原子ρ=4*.197/(6e23*(.41e−9)^3)=1.906e4kg/m3。"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-10",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "answer_initial": "5",
+      "reason": "通常純粋ダイヤモンド絶縁。"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-08",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "answer_initial": "2",
+      "reason": "3D Bravais14で8でない。"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "石油留分の分解・改質・選択酸化を製品へ対応させる。",
+  "conditions": {
+    "判断対象": "石油留分の分解・改質・選択酸化を製品へ対応させる。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "固体酸の接触分解で高オクタンガソリン",
+      "verdict": "選ばない候補",
+      "reason": "大きな分子の切断でガソリン原料へ。"
+    },
+    "2": {
+      "value": "白金/固体酸改質で芳香族",
+      "verdict": "選ばない候補",
+      "reason": "芳香族化と異性化などによる改質。"
+    },
+    "3": {
+      "value": "ナフサ熱分解でパラフィンガス",
+      "verdict": "選ぶ候補",
+      "reason": "主目的のエチレン等は二重結合のあるオレフィンであり語が違う。"
+    },
+    "4": {
+      "value": "完全酸化を避け選択部分酸化",
+      "verdict": "選ばない候補",
+      "reason": "目的有機化合物を残すため選択性が必要。"
+    },
+    "5": {
+      "value": "合成ガスはCO/H2",
+      "verdict": "選ばない候補",
+      "reason": "メタノール等の原料となる混合ガス。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "原典の750℃を全装置の固定温度としない。水蒸気改質と酸素による部分酸化は別反応で、全工程条件・当時触媒仕様の全文照合は未完了。",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_006.png"
+  ],
+  "question_id": "H24-REG-APPLIED-18",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "7b81b7e0be6a719facd1881d940dc09c4d19ae835706b24cdb210b28986d1c9c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

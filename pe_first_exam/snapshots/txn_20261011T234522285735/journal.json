@@ -1,0 +1,28 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T23:45:22+09:00",
+  "paths": [
+    "generated/questions/applied_science/geophysics_geochemistry/05_volcanology.tex",
+    "generated/questions/applied_science/geology/02_petrology.tex",
+    "generated/questions/applied_science/geology/03_sedimentology.tex",
+    "generated/questions/applied_science/geology/04_stratigraphy_paleontology.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/geophysics_geochemistry/05_volcanology.tex": true,
+    "generated/questions/applied_science/geology/02_petrology.tex": true,
+    "generated/questions/applied_science/geology/03_sedimentology.tex": true,
+    "generated/questions/applied_science/geology/04_stratigraphy_paleontology.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/geophysics_geochemistry/05_volcanology.tex": "b5aacb5d31d70b2f0002d9ab5ec1e14fd7ef6dd4e46a1b240244048e5f022b44",
+    "generated/questions/applied_science/geology/02_petrology.tex": "4f6194459ede488ca53cec29d3a24de24b74aa28b03081747eefe07ff371e6a4",
+    "generated/questions/applied_science/geology/03_sedimentology.tex": "6fcc7ca93e6bb6308de181d432be58d77f549e04788e960ca8c6d761941df708",
+    "generated/questions/applied_science/geology/04_stratigraphy_paleontology.tex": "c93e6b465bc0a2bab68553c6772cdb48791d8fbc328a3f3a91a033abc4a3cf12",
+    "generated/audit_summary.tex": "e0a9d6689aed01e00297193ed9ded0d26c929c27644d39243886ad6e57ed22f6",
+    "generated/frequency_tables.tex": "8c6c9d3ee1e556d72ac4448c2f587285b0885bffd7fe506b80139124b38b528e"
+  }
+}

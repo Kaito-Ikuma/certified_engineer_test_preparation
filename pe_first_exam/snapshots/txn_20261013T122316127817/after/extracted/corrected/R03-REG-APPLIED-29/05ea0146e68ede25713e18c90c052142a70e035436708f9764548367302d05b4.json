@@ -1,0 +1,45 @@
+{
+  "stem": "液状化しやすい飽和・粒度・密度の条件を比べる。",
+  "conditions": {
+    "原典照合": "22原典画像で25問の全五肢・数値・単位・否定を確認。",
+    "対象": "液状化しやすい飽和・粒度・密度の条件を比べる。"
+  },
+  "choices": {
+    "1": {
+      "value": "高い地下水位",
+      "verdict": "代表的条件で適切",
+      "reason": "浅い飽和砂層が揺れを受ける条件を作る。水位だけで粒度・密度・揺れを省略しない。"
+    },
+    "2": {
+      "value": "淘汰の悪い堆積物",
+      "verdict": "条件・全称を留保",
+      "reason": "均一粒径の緩い飽和砂と比べれば典型条件から離れる。ただし細粒分の種類・密度・組成によって液状化し得るため、淘汰だけで全例の発生を否定しない。"
+    },
+    "3": {
+      "value": "N値10以下",
+      "verdict": "代表的条件で適切",
+      "reason": "低い貫入抵抗は緩い砂の代表的な指標。粘性土の低N値と飽和砂の液状化機構を同一視しない。"
+    },
+    "4": {
+      "value": "埋立地・旧河道",
+      "verdict": "代表的条件で適切",
+      "reason": "若く緩い砂質堆積物や高い地下水位がある場所ではリスクが高まり得る。名称だけで全地点を判定しない。"
+    },
+    "5": {
+      "value": "砂丘・浜堤列の間の低地",
+      "verdict": "代表的条件で適切",
+      "reason": "地下水が浅く飽和した砂質地盤が分布し得る。高い砂丘そのものと列間低地を区別する。"
+    }
+  },
+  "figures": "図表なしの五肢。原典画像は照合用で転載しない。",
+  "ambiguity": "N20を全地震動・全土層の不液状化保証へ使わない。R03の淘汰の悪さも唯一の排他的条件ではなく、原典は代表的な相対比較として保持。",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_010.png"
+  ],
+  "question_id": "R03-REG-APPLIED-29",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "636a1a2005ab729b598eb789eb6e7c5c05f0988035be42e63452b921e351c2ed",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

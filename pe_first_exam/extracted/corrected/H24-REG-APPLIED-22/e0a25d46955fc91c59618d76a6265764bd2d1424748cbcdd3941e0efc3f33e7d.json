@@ -1,0 +1,45 @@
+{
+  "stem": "孔内弾性波速度測定とnormal電気検層を区別する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "振源・受振器の位置と直接観測する物性を対応させる。"
+  },
+  "choices": {
+    "1": {
+      "value": "ダウンホール法",
+      "verdict": "適切",
+      "reason": "地表起振、孔内受振で到達走時から速度を求める。"
+    },
+    "2": {
+      "value": "ノルマル法",
+      "verdict": "不適切",
+      "reason": "電極の間隔を定めて孔周辺の見掛比抵抗を測り、弾性波速度を直接測る方法ではない。"
+    },
+    "3": {
+      "value": "アップホール法",
+      "verdict": "適切",
+      "reason": "孔内起振、地表受振で弾性波走時を測る。"
+    },
+    "4": {
+      "value": "VSP法",
+      "verdict": "適切",
+      "reason": "孔内受振等の波形と深度を用い、速度と反射構造を対応させる。"
+    },
+    "5": {
+      "value": "サスペンション法",
+      "verdict": "適切",
+      "reason": "孔内振源と複数受振器の到達時間差から区間速度を求める。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_007.png"
+  ],
+  "question_id": "H24-REG-APPLIED-22",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "a4ea0f2259d0ea23f3e6efa784804c4c938076aaa79f33d12b997393779c2f64",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

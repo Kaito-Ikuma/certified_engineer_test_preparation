@@ -1,0 +1,45 @@
+{
+  "stem": "2020産業廃棄物フローの再生比は約53%。",
+  "conditions": {
+    "単位": "百万トン。",
+    "原図": "2020年度の概算値。減量を再生や処分へ加えない。"
+  },
+  "choices": {
+    "1": {
+      "value": "直接再生77は再生199の約40%",
+      "verdict": "条件内で適切",
+      "reason": "77/199≈38.7%。約40%に整合。"
+    },
+    "2": {
+      "value": "中間後再生122は処理293の約40%",
+      "verdict": "条件内で適切",
+      "reason": "122/293≈41.6%。概算40%に整合。"
+    },
+    "3": {
+      "value": "減量166は排出374の約45%",
+      "verdict": "条件内で適切",
+      "reason": "293−122−5=166、166/374≈44.4%。"
+    },
+    "4": {
+      "value": "直接最終4は排出374の約1%",
+      "verdict": "条件内で適切",
+      "reason": "9−5=4、4/374≈1.07%。"
+    },
+    "5": {
+      "value": "再生199は排出374の約20%・最終9の約22倍",
+      "verdict": "不適切・選択対象",
+      "reason": "199/374≈53.2%であり20%ではない。199/9≈22.1倍の後半が正しくても一肢全体は不適切。"
+    }
+  },
+  "figures": "図の数値又は組合せ表を独自要約。原典画像は確認用のみ。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_018.png"
+  ],
+  "question_id": "R06-REG-BASIC-5-2",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "18",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "ee39feab5aa18a28bf9170b3ebb93d9b0e8787e5206b2ba69cefaf049a0baa7a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

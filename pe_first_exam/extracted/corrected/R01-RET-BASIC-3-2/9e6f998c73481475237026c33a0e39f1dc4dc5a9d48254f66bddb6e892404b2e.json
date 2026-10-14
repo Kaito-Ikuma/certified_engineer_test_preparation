@@ -1,0 +1,45 @@
+{
+  "stem": "平面への垂足を法線方向射影で求める。",
+  "conditions": {
+    "点": "A=(6,5,4)。",
+    "平面": "x+2y−z=0。"
+  },
+  "choices": {
+    "1": {
+      "value": "(1,1,3)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 (4,1,6) と異なる。"
+    },
+    "2": {
+      "value": "(4,1,6)",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "3": {
+      "value": "(3,2,7)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 (4,1,6) と異なる。"
+    },
+    "4": {
+      "value": "(2,1,4)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 (4,1,6) と異なる。"
+    },
+    "5": {
+      "value": "(5,3,5)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 (4,1,6) と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_011.png"
+  ],
+  "question_id": "R01-RET-BASIC-3-2",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "11",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "0264d2fcfd01dd533d36fdb226804ec254e5f89e16d845963a76e50bd0293e26",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

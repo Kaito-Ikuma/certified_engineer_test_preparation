@@ -1,0 +1,45 @@
+{
+  "stem": "材料と共有ライン制約から最大利益を求める。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "材料と共有ライン制約から最大利益を求める。"
+  },
+  "choices": {
+    "1": {
+      "value": "1980万円",
+      "verdict": "選ばない候補",
+      "reason": "ライン制約を落とした交点利益で実行不能。"
+    },
+    "2": {
+      "value": "1900万円",
+      "verdict": "選ぶ候補",
+      "reason": "(5,2)の利益300×5+200×2。"
+    },
+    "3": {
+      "value": "1000万円",
+      "verdict": "選ばない候補",
+      "reason": "可能でも最適利益より低い。"
+    },
+    "4": {
+      "value": "1800万円",
+      "verdict": "選ばない候補",
+      "reason": "製品1だけ6kgの利益、混合生産より低い。"
+    },
+    "5": {
+      "value": "1700万円",
+      "verdict": "選ばない候補",
+      "reason": "最適利益より低い。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/basic/page_004.png"
+  ],
+  "question_id": "H30-REG-BASIC-1-4",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "4",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "880643834c43feab54f8840f7de3f694dd970ade742ac25a9df0489278744f9f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

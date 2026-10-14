@@ -1,0 +1,45 @@
+{
+  "stem": "ランタノイドとアクチノイドを区別する。",
+  "conditions": {
+    "判断対象": "ランタノイドとアクチノイドを区別する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "Sm",
+      "verdict": "選ばない候補",
+      "reason": "Sm62はlanthanoid。"
+    },
+    "2": {
+      "value": "Th",
+      "verdict": "選ぶ候補",
+      "reason": "Th90はactinoidで提示系列に属さない。"
+    },
+    "3": {
+      "value": "Nd",
+      "verdict": "選ばない候補",
+      "reason": "Nd60はlanthanoid。"
+    },
+    "4": {
+      "value": "Pm",
+      "verdict": "選ばない候補",
+      "reason": "Pm61は放射性だがlanthanoid。"
+    },
+    "5": {
+      "value": "Ho",
+      "verdict": "選ばない候補",
+      "reason": "Ho67はlanthanoid。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_005.png"
+  ],
+  "question_id": "R07-REG-APPLIED-15",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "4cf7239278631dd03a3177b396c617cc660108ae951c170d1a3feb4bc27edcad",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

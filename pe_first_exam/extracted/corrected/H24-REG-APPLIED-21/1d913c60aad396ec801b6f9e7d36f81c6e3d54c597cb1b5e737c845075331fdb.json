@@ -1,0 +1,45 @@
+{
+  "stem": "GPRの深度・周波数・分解能と調査配置を比較する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "低損失非磁性媒質でv≈c/√εr、波長λ=v/f、パルス帯域Bに対する距離分解はおよそv/(2B)である。導電率等が到達深度を制限する。"
+  },
+  "choices": {
+    "1": {
+      "value": "地表型と孔内型のレーダがある",
+      "verdict": "適切",
+      "reason": "地表からの反射と孔内アンテナによる反射・透過などの構成がある。"
+    },
+    "2": {
+      "value": "周波数は探査深度と分解能へ関係",
+      "verdict": "適切",
+      "reason": "波長・帯域と吸収が分解と到達深度を制限する。"
+    },
+    "3": {
+      "value": "一般に深度が増しても分解能は低下しない",
+      "verdict": "不適切",
+      "reason": "深部の低周波化や減衰・ビーム拡がりが分解と検出を難しくする。非低下の一般保証は不適切である。"
+    },
+    "4": {
+      "value": "直線埋設物へできる限り直角の測線",
+      "verdict": "適切",
+      "reason": "横切る測線で位置の変化と点状反射の走時を捉えやすくする。未知方位では複数方位を測る。"
+    },
+    "5": {
+      "value": "高分解能なので路面下空洞に利用",
+      "verdict": "適切",
+      "reason": "浅部の空洞境界の電気特性差と十分な波長・信号品質を使う。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "固定波形の理想鉛直分解能は深度そのものだけで単調低下するわけではない。実地の交換条件と検出限界を区別。",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_007.png"
+  ],
+  "question_id": "H24-REG-APPLIED-21",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "35b262dc638240e70df363150fa65429641da793c9e79b4a0af796c9d5cc320a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

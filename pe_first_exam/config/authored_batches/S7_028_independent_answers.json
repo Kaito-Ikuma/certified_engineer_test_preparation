@@ -1,0 +1,117 @@
+{
+  "recorded_at": "2026-10-11T22:47:53.047485+09:00",
+  "official_consulted": false,
+  "source_images_checked": 25,
+  "questions": [
+    {
+      "question_id": "H23-REG-BASIC-1-1",
+      "independent_answer": "2",
+      "reason": "独立なら直列.48と直結並列、x=1-.2/.52=.61538。独立明記なし。"
+    },
+    {
+      "question_id": "H23-REG-BASIC-1-5",
+      "independent_answer": "4",
+      "reason": "代表値1.5/6/100/4を意図と読む。ただし各業種・主索係数4の原規定要確認。"
+    },
+    {
+      "question_id": "H24-REG-BASIC-1-1",
+      "independent_answer": "4",
+      "reason": "独立なら((.9並列.8)直列.5)並列.7、1-.51*.3=.8474。"
+    },
+    {
+      "question_id": "H25-REG-BASIC-1-1",
+      "independent_answer": "3",
+      "reason": "製造物/欠陥/被害者/安全性。"
+    },
+    {
+      "question_id": "H26-REG-BASIC-1-4",
+      "independent_answer": "3",
+      "reason": "独立なら.9²*.99=.8019=x³、x=.928。"
+    },
+    {
+      "question_id": "H26-REG-BASIC-1-5",
+      "independent_answer": "1",
+      "reason": "予防/事後/状態監視/定期/経時。"
+    },
+    {
+      "question_id": "H27-REG-BASIC-1-1",
+      "independent_answer": "5",
+      "reason": ".81<.9<.99。独立明記。"
+    },
+    {
+      "question_id": "H27-REG-BASIC-1-3",
+      "independent_answer": "5",
+      "reason": "極限/n、通常2以上、フック、FL/(EA)の荷重比例。"
+    },
+    {
+      "question_id": "H27-REG-BASIC-1-4",
+      "independent_answer": "3",
+      "reason": "製造物/欠陥/被害者/安全性。"
+    },
+    {
+      "question_id": "H28-REG-BASIC-1-1",
+      "independent_answer": "4",
+      "reason": "独立なら.81(2x-x²)=.95x²、正根x1.62/1.76でR約.805。x0も等しいため前提不足。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-1-2",
+      "independent_answer": "5",
+      "reason": "代表100>6>1.5。薬品全称や航空/ロケット範囲要限定。"
+    },
+    {
+      "question_id": "H30-REG-BASIC-1-1",
+      "independent_answer": "3",
+      "reason": "独立なら.9025(2x-x²)=x³、X>0よりx²+.9025x-1.805=0、R約.901。"
+    },
+    {
+      "question_id": "H30-REG-BASIC-1-6",
+      "independent_answer": "4",
+      "reason": "製造物/欠陥/被害者/安全性。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-1-2",
+      "independent_answer": "3",
+      "reason": "シンプレックス/双対/トレードオフ/パレート。ただし全目的同時改善不可は弱パレートの条件。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-1-3",
+      "independent_answer": "1",
+      "reason": "左(OR .1 .1 OR AND .2 .2)=.2224、右AND .4 .4=.16、最上AND=.035584。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-1-6",
+      "independent_answer": "5",
+      "reason": "予防/事後/時間計画/定期/経時。"
+    },
+    {
+      "question_id": "R02-REG-BASIC-1-6",
+      "independent_answer": "3",
+      "reason": ".95(1-.3^n)≥.94、n3=.92435、n4=.942305。"
+    },
+    {
+      "question_id": "R03-REG-BASIC-1-2",
+      "independent_answer": "2",
+      "reason": "A.916/B.926/C.956/D.776/E.846、C>B>A>E>D。"
+    },
+    {
+      "question_id": "R03-REG-BASIC-1-4",
+      "independent_answer": "3",
+      "reason": "正常運転A/総周期(A+B)。"
+    },
+    {
+      "question_id": "R05-REG-BASIC-1-4",
+      "independent_answer": "4",
+      "reason": "3*.7²*.3+.7³=.784、.75以上.8未満。"
+    },
+    {
+      "question_id": "R05-REG-BASIC-1-5",
+      "independent_answer": "1",
+      "reason": "フェールセーフ/フェールソフト/フールプルーフ/フォールトトレランス。"
+    },
+    {
+      "question_id": "R07-REG-BASIC-1-3",
+      "independent_answer": "2",
+      "reason": "基準強さ/n、引張強さ2以上、疲労限度1.3～2.0。代表値の適用範囲要確認。"
+    }
+  ]
+}

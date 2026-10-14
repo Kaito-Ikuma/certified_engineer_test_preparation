@@ -1,0 +1,45 @@
+{
+  "stem": "パリ協定の削減目標は緩和に対応。",
+  "conditions": {
+    "時点": "平成29年度に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "五年ごと削減目標で適応を推進",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "2": {
+      "value": "2℃十分下方と1.5℃努力",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "3": {
+      "value": "情報の専門家レビュー",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "4": {
+      "value": "市場メカニズムの利用",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "5": {
+      "value": "森林減少・劣化抑制の支援",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "取得UNFCCCはNDC五年と緩和の公式説明。協定2・5・6・13条の本文全体を通して照合する作業は未完了。",
+  "evidence": [
+    "extracted/pages/H29/basic/page_018.png"
+  ],
+  "question_id": "H29-REG-BASIC-5-2",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "18",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "0b1697df6bb13c9fa36a1698aa90f5a5db62545f51817d7c10145f0e5e3623da",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

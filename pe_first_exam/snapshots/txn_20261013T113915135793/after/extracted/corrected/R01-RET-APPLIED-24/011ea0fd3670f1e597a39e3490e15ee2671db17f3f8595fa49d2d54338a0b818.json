@@ -1,0 +1,45 @@
+{
+  "stem": "噴火現象を気体・水・溶岩・岩屑の移動へ分ける。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "噴火現象を気体・水・溶岩・岩屑の移動へ分ける。"
+  },
+  "choices": {
+    "1": {
+      "value": "液状マグマの流出",
+      "verdict": "代表的条件で適切",
+      "reason": "液体として流れ出て移動する溶岩流。気体粒子混合の火砕流と分ける。"
+    },
+    "2": {
+      "value": "ストロンボリの間欠爆発",
+      "verdict": "代表的条件で適切",
+      "reason": "比較的低粘性のマグマから気泡が断続的に放出される。"
+    },
+    "3": {
+      "value": "外来水の急な水蒸気化",
+      "verdict": "代表的条件で適切",
+      "reason": "マグマと水の急な熱交換で蒸気の膨張・破砕が生じ得る。"
+    },
+    "4": {
+      "value": "崩壊山体の岩屑なだれ",
+      "verdict": "代表的条件で適切",
+      "reason": "不安定な火山体が崩れ高速に移動する場合がある。"
+    },
+    "5": {
+      "value": "火砕流は時速数km以下",
+      "verdict": "不適切",
+      "reason": "一般的な火砕流は時速数十kmから100km以上等の高速で、ゆっくりした数km以下の流れという説明が不適切。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_008.png"
+  ],
+  "question_id": "R01-RET-APPLIED-24",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "3624a4f17b6ca0e03922514e18b3e68a24de059fe60acf20a23670b8428c8dfd",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "question_id": "H24-REG-APT-02",
+    "independent_answer": "3"
+  },
+  {
+    "question_id": "H24-REG-APT-12",
+    "independent_answer": "2"
+  },
+  {
+    "question_id": "H25-REG-APT-12",
+    "independent_answer": "5"
+  },
+  {
+    "question_id": "H27-REG-APT-06",
+    "independent_answer": "3"
+  },
+  {
+    "question_id": "H29-REG-APT-03",
+    "independent_answer": "3"
+  },
+  {
+    "question_id": "H29-REG-APT-07",
+    "independent_answer": "4"
+  },
+  {
+    "question_id": "H29-REG-APT-15",
+    "independent_answer": "2"
+  },
+  {
+    "question_id": "H30-REG-APT-15",
+    "independent_answer": "4"
+  },
+  {
+    "question_id": "R01-RET-APT-03",
+    "independent_answer": "1"
+  },
+  {
+    "question_id": "R02-REG-APT-02",
+    "independent_answer": "2"
+  },
+  {
+    "question_id": "R05-REG-APT-11",
+    "independent_answer": "2"
+  },
+  {
+    "question_id": "R07-REG-APT-03",
+    "independent_answer": "5"
+  }
+]

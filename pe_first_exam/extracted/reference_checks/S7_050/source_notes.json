@@ -1,0 +1,215 @@
+{
+  "reference_date": "2026-10-13",
+  "references": [
+    {
+      "key": "ore50_porphyry_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Porphyry Copper Deposit Model",
+      "url": "https://pubs.usgs.gov/sir/2010/5090/w/pdf/sir2010-5090-W.pdf",
+      "scope": "検索本文の海洋性島弧・大陸弧の収束環境と貫入体・鉱化形態を確認。全232頁の通読や全データ集の確認ではない。"
+    },
+    {
+      "key": "ore50_backarc_ref",
+      "author": "産総研地質調査総合センター",
+      "title": "海底火山と金属資源のパンフレット",
+      "url": "https://www.gsj.jp/data/pamphlet/kazan_panf_j.pdf",
+      "scope": "検索本文の火山フロント・背弧リフトと黒鉱型の潜在鉱床の対応を確認。H24のマリアナ型という当時定義の排他性は未確定。"
+    },
+    {
+      "key": "ore50_bauxite_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Geology and Resources of Aluminum: Professional Paper 1076-B",
+      "url": "https://pubs.usgs.gov/pp/1076b/report.pdf",
+      "scope": "検索本文B26のAl保持と他成分溶脱による風化成因を確認。"
+    },
+    {
+      "key": "ore50_coal_ref",
+      "author": "U.S. Geological Survey",
+      "title": "What are the types of coal?",
+      "url": "https://www.usgs.gov/faqs/what-are-types-coal",
+      "scope": "検索本文の石炭化と褐炭・亜瀝青・瀝青・無煙炭の分類を確認。"
+    },
+    {
+      "key": "ore50_coal_temp_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Alaska Coal Geology Resources and Coalbed Methane Potential",
+      "url": "https://pubs.usgs.gov/dds/dds-077/dds77text.html",
+      "scope": "検索本文の代表石炭化温度150–200度を確認。古生代全炭田の唯一の上限にはしない。USGS OF1992-568の200–300度地域例も検索本文で確認。"
+    },
+    {
+      "key": "ore50_japan_coal_ref",
+      "author": "産総研地質調査総合センター",
+      "title": "GSJ地質ニュース10巻11号の日本の炭田年代",
+      "url": "https://www.gsj.jp/data/gcn/gsj_cn_vol10.no11_p282-293.pdf",
+      "scope": "検索本文の古第三紀の炭田が多いという説明を確認。2021年資料をH24当時の原分類表として引用しない。"
+    },
+    {
+      "key": "ore50_geothermal_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Geothermal Energy: Circular 1249",
+      "url": "https://pubs.usgs.gov/circ/2004/c1249/c1249.pdf",
+      "scope": "検索本文のバイナリー・中低温熱水の利用と非火山地域の温水系を確認。"
+    },
+    {
+      "key": "ore50_intrusive_ref",
+      "author": "International Atomic Energy Agency",
+      "title": "Unconventional resources in IAEA Uranium DEPOsit Database: URAM 2018",
+      "url": "https://conferences.iaea.org/event/146/contributions/5173/",
+      "scope": "検索本文の低・非常に低品位の大規模資源と貫入岩関連型の存在を確認。全U鉱床の平均品位の出典とはしない。"
+    },
+    {
+      "key": "ore50_kuroko_ref",
+      "author": "地質調査所",
+      "title": "地質調査所報告208: 黒鉱の構成鉱物",
+      "url": "https://www.gsj.jp/data/rep-gsj/No208.pdf",
+      "scope": "検索本文の閃亜鉛鉱・方鉛鉱・黄鉄鉱・黄銅鉱・四面銅鉱・重晶石等の組合せを確認。母岩のグリーンタフはGSJ2008年4月資料を別途確認。"
+    },
+    {
+      "key": "ore50_nodule_ref",
+      "author": "JOGMEC",
+      "title": "海洋鉱物資源の概要: マンガン団塊",
+      "url": "https://www.jogmec.go.jp/activities/metal/technology-development/marine-resources/overview/manganese-nodulum.html",
+      "scope": "検索収録本文の核を中心とした成長と百万年で1mm程度を確認。直接HTMLはナビ主体でfind成長速度なし、全文取得と報告しない。"
+    },
+    {
+      "key": "ore50_oilshale_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Oil shale: Open-File Report 1987-628",
+      "url": "https://pubs.usgs.gov/of/1987/0628/report.pdf",
+      "scope": "検索本文の細粒堆積岩・ケロジェンの定義を確認。"
+    },
+    {
+      "key": "ore50_reservoir_ref",
+      "author": "JOGMEC",
+      "title": "地熱資源の探し方2",
+      "url": "https://www.jogmec.go.jp/about/publish/jogmec-news/jogmec-news_71_02.html",
+      "scope": "検索本文の断層等の割れ目とキャップロックで構成する地熱貯留層を確認。"
+    },
+    {
+      "key": "ore50_skarn_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Tungsten: Grades and Tonnages of Some Deposits",
+      "url": "https://pubs.usgs.gov/bul/1877/report.pdf",
+      "scope": "検索本文の高温garnet-pyroxene-scheelite交代段階を確認。全金属種の温度だけによる排他分類には使わない。"
+    },
+    {
+      "key": "ore50_uranium_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Geology and concepts of genesis of important types of uranium deposits",
+      "url": "https://www.usgs.gov/publications/geology-and-concepts-genesis-important-types-uranium-deposits",
+      "scope": "検索本文の先カンブリア石英礫岩・原生代不整合・顕生代砂岩の代表分類を確認。4億年と23億年の全例境界は未確定。"
+    },
+    {
+      "key": "vol50_arcwater_ref",
+      "author": "産総研地質調査総合センター",
+      "title": "第23回GSJシンポジウム: プログラムと研究発表",
+      "url": "https://www.gsj.jp/researches/gsj-symposium/sympo23/sympo23-program.html",
+      "scope": "検索収録の東北日本弧での含水量が前弧から背弧へ減少する分布という発表文を確認。直接HTMLのfindでは見つからず全文取得済みとはしない。アルカリと水の傾向を同一化しない。"
+    },
+    {
+      "key": "vol50_climate_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Volcano Watch: When Thunderstorms Get Down and Dirty",
+      "url": "https://www.usgs.gov/observatories/hvo/news/volcano-watch-when-thunderstorms-get-down-and-dirty",
+      "scope": "2007年3月8日の本文11–15で灰の沈降とSO2由来硫酸エアロゾルの長期冷却を確認。末尾の当時活動情報は教材へ使用しない。"
+    },
+    {
+      "key": "vol50_degassing_ref",
+      "author": "産総研地質調査総合センター",
+      "title": "薩摩硫黄島: 詳細版の火山ガスとメルト包有物",
+      "url": "https://gbank.gsj.jp/volcano/Act_Vol/satsumaioujima/vr/f.html",
+      "scope": "検索本文の低圧脱ガスと水・CO2の溶解度差を確認。外圧低下時のガス絶対圧力単調増加の根拠にはしない。"
+    },
+    {
+      "key": "vol50_gas_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Volcanic gases can be harmful to health vegetation and infrastructure",
+      "url": "https://www.usgs.gov/programs/VHP/volcanic-gases-can-be-harmful-health-vegetation-and-infrastructure",
+      "scope": "検索本文の水蒸気主成分・CO2・SO2・H2S・水素ハロゲン化物を確認。H2はUSGS1993年ガス説明本文も検索確認。100気圧1200度の平衡定量表は未取得。"
+    },
+    {
+      "key": "vol50_lava_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Transition of basaltic lava from pahoehoe to aa: Field observations and key factors",
+      "url": "https://www.usgs.gov/publications/transition-basaltic-lava-pahoehoe-aa-kilauea-volcano-hawaii-field-observations-and-key",
+      "scope": "原著論文メタデータの玄武岩質パホイホイとアアの比較を確認。USGS用語集検索本文も確認。原著全文や1/8分類出典は未確認。"
+    },
+    {
+      "key": "vol50_melt_ref",
+      "author": "Massachusetts Institute of Technology",
+      "title": "Petrology 12.109: Lecture notes October 25 2005",
+      "url": "https://ocw.mit.edu/courses/12-109-petrology-fall-2005/450fca4d1a48a25384849b10794e496e_Oct25notes.pdf",
+      "scope": "本文17–28の初生部分溶融・組成差、34–49の海嶺減圧融解とNa等の相対濃集を確認。講義の数値例と末尾の単純密度説明は転載しない。"
+    },
+    {
+      "key": "vol50_ridge_ref",
+      "author": "U.S. Geological Survey",
+      "title": "This Dynamic Earth: Plate tectonics and people",
+      "url": "https://pubs.usgs.gov/gip/dynamic/tectonics.html",
+      "scope": "検索本文の年噴出物の約4分の3が拡大海嶺起源という代表推計を確認。現時点の毎年厳密比率とはしない。"
+    },
+    {
+      "key": "vol50_styles_ref",
+      "author": "防災科学技術研究所",
+      "title": "一家に1枚: 火山",
+      "url": "https://www.bosai.go.jp/poster-earth/volcano/",
+      "scope": "検索本文の間欠爆発ストロンボリと連続噴泉ハワイを確認。図の見た目を確認したとはしない。"
+    },
+    {
+      "key": "vol50_subduction_ref",
+      "author": "U.S. National Park Service",
+      "title": "Lava Beds National Monument: Geology",
+      "url": "https://home.nps.gov/labe/learn/nature/geology.htm",
+      "scope": "検索本文の沈み込みでの水供給と融解温度低下を確認。"
+    },
+    {
+      "key": "vol50_terms_ref",
+      "author": "産総研地質調査総合センター",
+      "title": "一般向けウェブページ用地質用語の解説: 公開資料561",
+      "url": "https://www.gsj.jp/data/openfile/no0561/gsj_openfile_561.html",
+      "scope": "検索本文の未固結層の荷重変形による火炎構造を確認。火山地域に絶対にないという根拠にはしない。"
+    },
+    {
+      "key": "ore50_magmatic_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Stratiform chromite deposit model",
+      "url": "https://www.usgs.gov/publications/stratiform-chromite-deposit-model",
+      "scope": "検索本文の層状貫入体の分化・クロム鉱床と白金族元素を確認。"
+    },
+    {
+      "key": "ore50_gold_exception_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Descriptive model of Alaskan PGE",
+      "url": "https://pubs.usgs.gov/bul/b1693/html/bull4cdh.htm",
+      "scope": "検索本文のマグマ成因の鉱床に自然金を含む鉱物組合せを確認。金銀の早期結晶の全例不存在を主張しない。"
+    },
+    {
+      "key": "ore50_besshi_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Professional Paper 1765 Chapter 7: Besshi deposits",
+      "url": "https://pubs.usgs.gov/pp/1765/chapter_7/p1765_chapter_7.pdf",
+      "scope": "検索本文の三波川帯の別子型鉱床と変成相を確認。全海底鉱床の唯一の変成経路を定めない。"
+    },
+    {
+      "key": "ore50_bif_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Descriptive model of Superior Fe",
+      "url": "https://pubs.usgs.gov/bul/b1693/html/bull971h.htm",
+      "scope": "検索本文の珪質層と鉄に富む層の互層を確認。"
+    }
+  ],
+  "additional_checks": [
+    {
+      "url": "https://www.gsj.jp/data/chishitsunews/08_04_11.pdf",
+      "scope": "検索本文の黒鉱と背弧の成因、グリーンタフとの対応。"
+    },
+    {
+      "url": "https://pubs.usgs.gov/of/1992/0568/report.pdf",
+      "scope": "検索本文の石炭化200–300度地域例。"
+    },
+    {
+      "url": "https://www.usgs.gov/publications/volcanic-gases-create-air-pollution-island-hawaii",
+      "scope": "検索本文の水蒸気・CO2・硫黄ガスと少量H2。"
+    }
+  ]
+}

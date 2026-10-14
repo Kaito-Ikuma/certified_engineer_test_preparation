@@ -1,0 +1,46 @@
+{
+  "stem": "通常使用、繰返し荷重、最大耐荷性能の三つの要求を限界状態へ対応させる。",
+  "conditions": {
+    "判断方向": "空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。",
+    "原典照合": "16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。",
+    "前提": "解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。"
+  },
+  "choices": {
+    "1": {
+      "value": "使用・終局・疲労",
+      "verdict": "不適合",
+      "reason": "Bの繰返し荷重は疲労、Cの最大耐荷は終局であり入れ替わっている。"
+    },
+    "2": {
+      "value": "使用・疲労・終局",
+      "verdict": "適合（前提内）",
+      "reason": "Aは通常の機能・快適性等の使用限界、Bは疲労、Cは終局であり対応する。"
+    },
+    "3": {
+      "value": "終局・疲労・使用",
+      "verdict": "不適合",
+      "reason": "Aは使用、Cは終局なので逆転している。"
+    },
+    "4": {
+      "value": "疲労・使用・終局",
+      "verdict": "不適合",
+      "reason": "Aは使用、Bは繰返しの疲労なので逆転している。"
+    },
+    "5": {
+      "value": "疲労・終局・使用",
+      "verdict": "不適合",
+      "reason": "三項目とも用途との対応が一致しない。"
+    }
+  },
+  "figures": "設問固有図なし。全候補の順序を原典画像で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_002.png"
+  ],
+  "question_id": "R06-REG-BASIC-1-2",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "2",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "aad6e2331aeee3f712661ac42b0005dbcd80ed0be4f68cc6b9eb8fe8ecfba2b4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

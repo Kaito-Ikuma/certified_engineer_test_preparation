@@ -1,0 +1,104 @@
+[
+  {
+    "key": "chem55_hydrolysis",
+    "url": "https://openstax.org/books/chemistry-2e/pages/14-4-hydrolysis-of-salts",
+    "reading_scope": "アンモニウムイオンの酸性と不活性な塩化物イオンの本文を確認。全章読了ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "chem55_ampho",
+    "url": "https://chem.washington.edu/lecture-demos/amphoteric-nature-aluminum-hydroxide",
+    "reading_scope": "公開実演手順の酸・NaOHによる水酸化物の溶解を確認。",
+    "full_source_read": false
+  },
+  {
+    "key": "chem55_corrosion",
+    "url": "https://worldstainless.org/about-stainless/properties/corrosion-properties/",
+    "reading_scope": "公式技術解説の塩化物による局部腐食の記述を確認。リンク先の全冊子は未読。",
+    "full_source_read": false
+  },
+  {
+    "key": "chem55_polymer",
+    "url": "https://arxiv.org/abs/1805.06163",
+    "reading_scope": "著者の公開要旨を読んだ。材料構造に依存する熱輸送の参考。24頁全文と全条件の検証ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "chem55_equilibrium",
+    "url": "https://openstax.org/books/chemistry-2e/pages/13-3-shifting-equilibria-le-chateliers-principle",
+    "reading_scope": "圧力と気体モル数の本文を確認。温度効果は原典発熱条件から独立に判断。全章読了ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "chem55_stoich",
+    "url": "https://openstax.org/books/chemistry-2e/pages/4-3-reaction-stoichiometry",
+    "reading_scope": "出版社の反応化学量論節を参照。グルコースの原典係数から収支を独立に計算した。",
+    "full_source_read": false
+  },
+  {
+    "key": "chem55_kroll",
+    "url": "https://www.toho-titanium.co.jp/about/",
+    "reading_scope": "公式検索本文のTiCl4とMgによるクロール法を確認。2015資源・価格統計の照合ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "chem55_crust",
+    "url": "https://periodic-table.rsc.org/element/13/aluminium",
+    "reading_scope": "地殻中で最多の金属Alと溶融塩電解の公開本文を確認。原典時点の生産統計は別の未解決項目。",
+    "full_source_read": false
+  },
+  {
+    "key": "chem55_properties",
+    "url": "https://periodic-table.rsc.org/element/29/copper",
+    "reading_scope": "Fact boxの密度8.96と融点1084.62℃を確認。",
+    "full_source_read": false
+  },
+  {
+    "key": "chem55_properties_al",
+    "url": "https://periodic-table.rsc.org/element/13/aluminium",
+    "reading_scope": "公開検索Fact boxの密度2.70と融点660.323℃を確認。",
+    "full_source_read": false
+  },
+  {
+    "key": "chem55_properties_fe",
+    "url": "https://periodic-table.rsc.org/element/26/iron",
+    "reading_scope": "公開検索Fact boxの密度7.87と融点1538℃を確認。",
+    "full_source_read": false
+  },
+  {
+    "key": "chem55_colligative",
+    "url": "https://openstax.org/books/chemistry-2e/pages/11-4-colligative-properties",
+    "reading_scope": "沸点上昇の本文・式と1気圧の水の表を確認。電解質は理想的粒子数による試験モデルと実測を区別。",
+    "full_source_read": false
+  },
+  {
+    "key": "chem55_fiber",
+    "url": "https://www.corning.com/worldwide/en/innovation/materials-science/glass/periodic-table-elements/silicon.html",
+    "reading_scope": "メーカー公開検索本文のシリカと光ファイバーを参照。全製品がシリカであるとの一般化には使わない。",
+    "full_source_read": false
+  },
+  {
+    "key": "chem55_duralumin",
+    "url": "https://www.aluminum.or.jp/fields/kenchiku/kenzai/guide/b/",
+    "reading_scope": "表3のAl-Cu系と2017・2024ジュラルミンを本文確認。規格全文読了ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "chem55_gibbs",
+    "url": "https://openstax.org/books/chemistry-atoms-first/pages/12-4-free-energy",
+    "reading_scope": "本文のG=H-TSと標準反応量の式12.33を確認。全章読了ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "chem55_organic",
+    "url": "https://openstax.org/books/organic-chemistry/pages/6-1-kinds-of-organic-reactions",
+    "reading_scope": "出版社公開本文の付加・脱離・置換の定義と例を確認。エステル交換・加水分解の分類を反応の逆方向にも用いる。",
+    "full_source_read": false
+  },
+  {
+    "key": "chem55_iron",
+    "url": "https://www.nipponsteel.com/company/tour/process01.html",
+    "reading_scope": "メーカー公開本文のコークス・還元ガスと高炉の説明を確認。原典の理想質量収支は別に独立計算。",
+    "full_source_read": false
+  }
+]

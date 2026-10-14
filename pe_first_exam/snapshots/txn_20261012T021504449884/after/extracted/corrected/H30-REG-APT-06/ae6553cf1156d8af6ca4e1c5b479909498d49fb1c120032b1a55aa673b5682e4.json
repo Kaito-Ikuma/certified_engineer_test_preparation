@@ -1,0 +1,46 @@
+{
+  "stem": "九つの保護対象のうち、広義の知的財産権に含まれない数を求める。",
+  "conditions": {
+    "判断対象": "広義知的財産・産業財産権・引用・営業秘密を区別する。",
+    "原典照合": "15問の原典画像について問題幹、否定、表の列順、全5候補を確認。",
+    "法の時点": "出題時の制度を保持し、説明の取得基準日は2026-10-12とする。"
+  },
+  "choices": {
+    "1": {
+      "value": "0個",
+      "verdict": "独立判断で適切",
+      "reason": "特許、実用新案、意匠、著作権、回路配置、育成者、営業秘密、商標、商号はいずれも広い体系に入る。"
+    },
+    "2": {
+      "value": "1個",
+      "verdict": "不適切",
+      "reason": "範囲外の対象はなく、一つを除く判断は合わない。"
+    },
+    "3": {
+      "value": "2個",
+      "verdict": "不適切",
+      "reason": "4種類の産業財産権だけを対象にする問題ではない。二つを除く根拠はない。"
+    },
+    "4": {
+      "value": "3個",
+      "verdict": "不適切",
+      "reason": "営業秘密・商号等も法律上の保護利益として含むため、三つを除かない。"
+    },
+    "5": {
+      "value": "4個",
+      "verdict": "不適切",
+      "reason": "9対象のうち四つを除く分類は、原典の広い問いと合わない。"
+    }
+  },
+  "figures": "組合せ表の全5行を画像確認。原典の長文は独自要約へ変換し、正誤と選択肢の対応を保持する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/aptitude/page_006.png"
+  ],
+  "question_id": "H30-REG-APT-06",
+  "source_file": "sources/H30/aptitude.pdf",
+  "source_page": "6",
+  "source_sha256": "9b92cd3549fc1ad21636a544978f1385f63667ff6ac0112f81e553cf2ee4b1f5",
+  "raw_text_sha256": "1a14e639203d864b5b1aba10a8d405081f6965299aaa050acb16e5e546ecb564",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

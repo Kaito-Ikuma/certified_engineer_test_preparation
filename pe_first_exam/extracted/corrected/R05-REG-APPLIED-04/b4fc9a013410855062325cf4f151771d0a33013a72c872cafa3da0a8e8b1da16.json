@@ -1,0 +1,45 @@
+{
+  "stem": "RLC共振・ソレノイド・理想変圧器の巻数比を照合する。",
+  "conditions": {
+    "原典確認": "S7_051の11原典画像で13問の全五肢・指数・単位・否定を照合。",
+    "対象": "RLC共振・ソレノイド・理想変圧器の巻数比を照合する。"
+  },
+  "choices": {
+    "1": {
+      "value": "直列RLCのf=1/(2π√LC)",
+      "verdict": "代表的条件で適切",
+      "reason": "交流電源で駆動する直列回路の電流共振ではωL=1/(ωC)。抵抗で減衰する自由振動周波数とは別である。"
+    },
+    "2": {
+      "value": "ソレノイドBが巻数密度nに比例",
+      "verdict": "代表的条件で適切",
+      "reason": "長く端効果が小さい、電流・透磁率一定のモデルでB=μnI。飽和域でμを一定としない。"
+    },
+    "3": {
+      "value": "E2=(N1/N2)E1",
+      "verdict": "不適切",
+      "reason": "理想変圧器は同じ時間変化磁束を共有し、E2/E1=N2/N1。原典は分子分母が逆。電圧の最大値同士でも同じ巻数比になる。"
+    },
+    "4": {
+      "value": "弱い磁化が外場と同じ向きなら常磁性",
+      "verdict": "代表的条件で適切",
+      "reason": "通常の線形応答で小さな正の磁化率を持つ。外場なしの自発磁化を持つ強磁性と分ける。"
+    },
+    "5": {
+      "value": "Fe・Ni・Co等の強磁性体をコアに利用",
+      "verdict": "代表的条件で適切",
+      "reason": "代表的な強磁性元素で磁束を集中できる。実際の交流コアの選定では透磁率だけでなく保磁力・渦電流損・周波数を考える。"
+    }
+  },
+  "figures": "図表問題ではない。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_002.png"
+  ],
+  "question_id": "R05-REG-APPLIED-04",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "e2f3a12f5082c7cc477a2cbfaba176be79b1ac0380c61d86e379564054ae9e43",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

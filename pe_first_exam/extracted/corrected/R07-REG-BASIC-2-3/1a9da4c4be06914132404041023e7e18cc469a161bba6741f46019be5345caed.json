@@ -1,0 +1,45 @@
+{
+  "stem": "TCPのACK単位・RTT単位の窓増加と損失時制御を比較する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "時点": "R07年度。現在の推奨を出題当時へ無条件に転用しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "ネットワーク層以下から混雑情報は直接得られない。",
+      "verdict": "旧模型限定・ECNに疑義",
+      "reason": "損失やACKを用いる旧来の説明に限れば理解できるが、ECNではIPヘッダのCEとTCPのECE等で明示的に混雑を通知する。直接情報なしを現行TCP全般へ広げない。"
+    },
+    "2": {
+      "value": "開始時cwnd=1MSS。",
+      "verdict": "旧模型限定・初期窓に疑義",
+      "reason": "基本模型の初期値としては使えるが、RFC5681はMSSに応じ2〜4MSSの初期上限を許し、実験的RFC6928は任意のIW10も扱う。常に1MSSではない。"
+    },
+    "3": {
+      "value": "ACKごと+MSSなのでスロースタートは線形。",
+      "verdict": "不適切",
+      "reason": "ACKが1セグメントごと返る模型では窓内のACK数も増えるので1RTTあたり概ね倍増となる。ACK回数に対する線形と時間に対する指数的増加を取り違えている。"
+    },
+    "4": {
+      "value": "輻輳回避は概ね1RTTあたり+1MSS。",
+      "verdict": "Reno型として適切",
+      "reason": "Reno型の加算増加におけるRTT単位の説明として妥当。全ての現行TCP輻輳アルゴリズムをこの式へ固定しない。"
+    },
+    "5": {
+      "value": "タイムアウトで閾値=cwnd/2、cwnd=1MSS。",
+      "verdict": "模型意図・FlightSizeと下限に疑義",
+      "reason": "基本模型では意図を理解できるがRFC5681の閾値上限はmax(FlightSize/2,2SMSS)。未確認データ量とcwndは別で、下限もある。タイムアウトで損失窓へ戻す点は妥当。"
+    }
+  },
+  "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+  "ambiguity": "原典1は出題前2001年のECN、2はRFC5681/6928の初期窓、5はFlightSizeと閾値下限を省く。旧来の1MSS基本模型の意図と2025年TCP全体の命題を区別する。初回3・公式3を保持、他肢の無条件適切性は未確定。",
+  "evidence": [
+    "extracted/pages/R07/basic/page_006.png"
+  ],
+  "question_id": "R07-REG-BASIC-2-3",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "dbb2cf52c5b6844902db82c7b4515b45820fcee32bc57f4d27c31dd8297c0410",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

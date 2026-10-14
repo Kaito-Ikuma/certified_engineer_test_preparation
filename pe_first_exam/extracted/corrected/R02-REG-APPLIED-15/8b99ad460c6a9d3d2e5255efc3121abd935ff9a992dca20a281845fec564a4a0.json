@@ -1,0 +1,45 @@
+{
+  "stem": "界面吸着と溶液中の単量体・会合体を区別する。",
+  "conditions": {
+    "判断対象": "界面吸着と溶液中の単量体・会合体を区別する。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "親水/疎水部分を持つ",
+      "verdict": "選ばない候補",
+      "reason": "両親媒性の構造。"
+    },
+    "2": {
+      "value": "界面以外の濃度は無視できる",
+      "verdict": "選ぶ候補",
+      "reason": "吸着選択性があってもバルクの単量体やミセル濃度は無視できない。"
+    },
+    "3": {
+      "value": "脂質は天然界面活性物質",
+      "verdict": "選ばない候補",
+      "reason": "リン脂質等の両親媒性脂質に当てはまる代表的説明。全脂質一律ではない。"
+    },
+    "4": {
+      "value": "水油の界面エネルギー低下",
+      "verdict": "選ばない候補",
+      "reason": "界面へ配向して張力を下げる。"
+    },
+    "5": {
+      "value": "洗剤以外にも乳化・消毒・帯電防止",
+      "verdict": "選ばない候補",
+      "reason": "構造や電荷に応じた利用がある。全剤が全用途を持つとはしない。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "原典の脂質全般という表現はリン脂質などへ限定して説明。全脂質の強い界面活性を保証しない。",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_005.png"
+  ],
+  "question_id": "R02-REG-APPLIED-15",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "c887cf43670f544d9fb6847fa4f4aecd771b23188806be7df60534bf92ad3e0a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

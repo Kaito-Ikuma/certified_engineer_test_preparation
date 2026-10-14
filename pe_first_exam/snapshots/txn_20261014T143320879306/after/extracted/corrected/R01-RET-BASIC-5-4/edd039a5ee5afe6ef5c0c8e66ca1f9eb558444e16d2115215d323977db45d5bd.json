@@ -1,0 +1,45 @@
+{
+  "stem": "一次供給の再エネ比率を境界に合わせる。",
+  "conditions": {
+    "時点": "令和元年度再試験に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "44%",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "22%",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "11%",
+      "verdict": "適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "4": {
+      "value": "2%",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "5": {
+      "value": "0.5%",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "再試験の本文には内訳がないため通常試験の2017内訳を補助として使った。総合エネルギー統計指定版の原表は追加取得。",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_019.png"
+  ],
+  "question_id": "R01-RET-BASIC-5-4",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "19",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "b67288e68645a41a5b0ddd0cf2f6560cb59c5cf2c2b5392175c84befeff292b7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,24 @@
+{
+  "time": "2026-10-12T07:11:10+09:00",
+  "questions": [
+    "H23-REG-APT-08",
+    "H24-REG-APT-07",
+    "H25-REG-APT-07",
+    "H26-REG-APT-07",
+    "H28-REG-APT-07",
+    "H29-REG-APT-08",
+    "H30-REG-APT-09",
+    "R01-REG-APT-03",
+    "R01-RET-APT-07",
+    "R02-REG-APT-06",
+    "R02-REG-APT-12",
+    "R03-REG-APT-08",
+    "R04-REG-APT-11",
+    "R05-REG-APT-06",
+    "R06-REG-APT-14",
+    "R07-REG-APT-12"
+  ],
+  "source_conditions_checked": 16,
+  "solution_drafts": 16,
+  "final_verification": false
+}

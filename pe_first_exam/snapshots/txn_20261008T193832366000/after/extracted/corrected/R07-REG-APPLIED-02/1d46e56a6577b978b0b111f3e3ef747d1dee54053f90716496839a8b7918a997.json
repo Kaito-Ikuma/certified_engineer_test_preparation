@@ -1,0 +1,47 @@
+{
+  "stem": "質量0.80 kgを鉛直ばねにつるすと4.9 cm伸びた。平衡位置から引いて放す単振動の周期を求める。",
+  "conditions": {
+    "mass_kg": 0.8,
+    "static_extension_m": 0.049,
+    "g_m_s2": 9.8,
+    "spring_mass": "light"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(4.4\\times10^{-1}\\) s",
+      "verdict": "採用",
+      "reason": "導出した周期に最も近い。角周波数と周期を区別して2πを含める。"
+    },
+    "2": {
+      "value": "\\(8.9\\times10^{-1}\\) s",
+      "verdict": "不採用",
+      "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+    },
+    "3": {
+      "value": "1.0 s",
+      "verdict": "不採用",
+      "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+    },
+    "4": {
+      "value": "1.8 s",
+      "verdict": "不採用",
+      "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+    },
+    "5": {
+      "value": "2.0 s",
+      "verdict": "不採用",
+      "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_001.png"
+  ],
+  "question_id": "R07-REG-APPLIED-02",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "ef26535a64b71696e5f84b09825c0243d66e1f8b383cda4824175904c6b62361",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

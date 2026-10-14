@@ -1,0 +1,45 @@
+{
+  "stem": "逆問題の最適化・正則化と有限要素離散化を区別する。",
+  "conditions": {
+    "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+    "前提": "モデル更新算法と順モデル計算の離散化を区別する。ただし順モデルは逆問題を構成する内部計算でもある。"
+  },
+  "choices": {
+    "1": {
+      "value": "マルカート法",
+      "verdict": "適切",
+      "reason": "非線形最小二乗の更新を減衰項で安定化するLevenberg–Marquardt型の算法である。"
+    },
+    "2": {
+      "value": "遺伝的アルゴリズム",
+      "verdict": "適切",
+      "reason": "モデル候補の集団を評価・選択・変化させて目的関数を探索する最適化法である。大域的最良解を常に保証するわけではない。"
+    },
+    "3": {
+      "value": "正則化法",
+      "verdict": "適切",
+      "reason": "データだけで決まりにくいモデルへ滑らかさや大きさ等の制約を加え、逆問題の不安定性を抑える。"
+    },
+    "4": {
+      "value": "共役勾配法",
+      "verdict": "適切",
+      "reason": "線形化された最小二乗等の連立系又は非線形目的関数の探索に用いる。対称正定値系のCGと非線形CGを区別する。"
+    },
+    "5": {
+      "value": "有限要素法",
+      "verdict": "条件付きで適切",
+      "reason": "直接の最適化・正則化の名称ではなく支配方程式の離散化であるため公式はこれを選ぶ。しかし順モデルや感度計算として逆解析へ用いることができ、無関係という絶対判断は誤りである。"
+    }
+  },
+  "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+  "ambiguity": "設問のインバージョンに関係するという広い語には有限要素順モデルも含められる。公式5を算法の直接的役割の比較として保持し、FEMを逆解析から排除しない。",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_012.png"
+  ],
+  "question_id": "H30-REG-APPLIED-35",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "ed746053f5e7b3cf28377c74d603f12c8f03569d2fa855c7fe711dadc28de55a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,46 @@
+{
+  "stem": "製作図の角法・寸法・公差・検査を区別。",
+  "conditions": {
+    "列順": "幾何公差/寸法/はめあい/角法/表題",
+    "O/X": "正/誤。",
+    "原典": "全五行を画像から転記。"
+  },
+  "choices": {
+    "1": {
+      "value": "XOOXO",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "2": {
+      "value": "XOOOX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。"
+    },
+    "3": {
+      "value": "OXOXO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。"
+    },
+    "4": {
+      "value": "OOXOX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。"
+    },
+    "5": {
+      "value": "XXXOO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 XOOXO と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/basic/page_004.png"
+  ],
+  "question_id": "H29-REG-BASIC-1-5",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "4",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "75fc1f5bfc67acd9651e2dfd240f7e87585a3df6694cd134ffc8c749703d28cd",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

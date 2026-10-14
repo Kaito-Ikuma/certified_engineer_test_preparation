@@ -1,0 +1,55 @@
+{
+  "relations": [
+    {
+      "left_question_id": "R01-REG-APT-09",
+      "right_question_id": "R05-REG-APT-02",
+      "relation_type": "same_concept",
+      "shared_concept": "秘密情報の接近制御と相互確認",
+      "shared_method": "各対策のアクセス・持出し・気付きへの効果を判定",
+      "numerical_differences": "計算の数値条件なし。候補の項目数・組合せはchoice_differencesに記録。",
+      "negation_differences": "不適切な項目数対最も不適切な対策。",
+      "choice_differences": "6記述から不適切数0/1/2/3/4を選ぶ前者は1項目の2。後者は5対策から単独作業の3を選ぶ。分類・表示・配置の趣旨は共通、暗号/ID・紙削減対コピー制限で技術的項目が異なる。",
+      "figure_differences": "両原典を実画像確認。設問固有図なし。組合せ表又は項目数候補も全5肢照合。",
+      "temporal_differences": "令和元年と令和5年。現行2024版を両出題当時の法律義務へ流用しない。",
+      "evidence": "S7_016原典全13問の画像と初回独立判断を保存。主題・条件・否定・時点を比較。関係承認は一方の判決資料未確認を解消するものではない。",
+      "approval_status": "verified",
+      "source_hash_left": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+      "source_hash_right": "3dee8906ad8be46592986fef01028424243f7e515af04979667524eed1f0a915",
+      "rubric_version": "1.0-review1"
+    },
+    {
+      "left_question_id": "H25-REG-APT-06",
+      "right_question_id": "R01-REG-APT-14",
+      "relation_type": "same_concept",
+      "shared_concept": "ISO26000の対象と社会的責任の原則",
+      "shared_method": "ガイダンス・対象・原則を不要な限定と区別",
+      "numerical_differences": "計算の数値条件なし。候補の項目数・組合せはchoice_differencesに記録。",
+      "negation_differences": "正誤組合せ対最も不適切。",
+      "choice_differences": "前者は4記述の正誤を5行から選び×○××の5。後者は7原則に関する5記述から政府意向を加えた4を選ぶ。設問条件は同一でなく同じ規格の別論点。",
+      "figure_differences": "両原典を実画像確認。設問固有図なし。組合せ表又は項目数候補も全5肢照合。",
+      "temporal_differences": "ISO26000:2010が共通。後者はJIS Z26000:2012にも言及。現在の背景を出題時の記述へ上書きしない。",
+      "evidence": "S7_016原典全13問の画像と初回独立判断を保存。主題・条件・否定・時点を比較。関係承認は一方の判決資料未確認を解消するものではない。",
+      "approval_status": "verified",
+      "source_hash_left": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+      "source_hash_right": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+      "rubric_version": "1.0-review1"
+    },
+    {
+      "left_question_id": "H30-REG-APT-14",
+      "right_question_id": "R05-REG-APT-09",
+      "relation_type": "same_concept",
+      "shared_concept": "事故機構・組織の改善と個別の刑事責任",
+      "shared_method": "物理的事象、調査による推定、被告人の判決を分離",
+      "numerical_differences": "計算の数値条件なし。候補の項目数・組合せはchoice_differencesに記録。",
+      "negation_differences": "実際の判決と異なるもの対事故の事実と異なるもの。",
+      "choice_differences": "5事故の集合は共通、H30は刑事判決で初回2|5対公式ALL、不起訴の不適格注記あり。R05は技術的事実でエレベーター破断落下4が誤り。H30の1/3/4判決は一次資料未確認。",
+      "figure_differences": "両原典を実画像確認。設問固有図なし。組合せ表又は項目数候補も全5肢照合。",
+      "temporal_differences": "平成30年と令和5年で参照時点と判断軸が異なる。後年の経緯からH30当時の判決を補わない。",
+      "evidence": "S7_016原典全13問の画像と初回独立判断を保存。主題・条件・否定・時点を比較。関係承認は一方の判決資料未確認を解消するものではない。",
+      "approval_status": "verified",
+      "source_hash_left": "9b92cd3549fc1ad21636a544978f1385f63667ff6ac0112f81e553cf2ee4b1f5",
+      "source_hash_right": "3dee8906ad8be46592986fef01028424243f7e515af04979667524eed1f0a915",
+      "rubric_version": "1.0-review1"
+    }
+  ]
+}

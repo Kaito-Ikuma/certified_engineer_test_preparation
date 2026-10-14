@@ -1,0 +1,45 @@
+{
+  "stem": "改定前のSI基本単位の定義から、温度基準の取り違えを見つける。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "秒：Cs133超微細構造遷移に対応する放射の周期。",
+      "verdict": "適切",
+      "reason": "出題当時はCs133基底状態の二超微細準位間の放射9192631770周期を秒とした。現行も同じ周波数定数を固定する。"
+    },
+    "2": {
+      "value": "m：定めた時間に真空を進む光の距離。",
+      "verdict": "適切",
+      "reason": "真空光速cを299792458m/sに固定し、秒との関係からmを定義する。"
+    },
+    "3": {
+      "value": "kg：国際キログラム原器の質量。",
+      "verdict": "適切",
+      "reason": "2016当時のkgは原器定義で適切。2019-05-20後はh固定となり原器は定義ではない。"
+    },
+    "4": {
+      "value": "K：水の凝固点を基準。",
+      "verdict": "不適切",
+      "reason": "2019改定前のKは同位体組成を規定した水三重点の熱力学温度の1/273.16。通常圧凝固点とは異なる。現在はボルツマン定数kを固定する。"
+    },
+    "5": {
+      "value": "mol：.012kgの12C中の原子数と同数の要素粒子を含む物質量。",
+      "verdict": "適切",
+      "reason": "2016当時のmolはこの炭素12基準で適切。現在はNAを固定し、12gの12Cを定義文として使わない。"
+    }
+  },
+  "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_002.png"
+  ],
+  "question_id": "H28-REG-APPLIED-06",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "4d1d96cdf0cf8b8ba6d1328c48ec5bd44e4555f6cecc8dd309552da22af0cd95",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

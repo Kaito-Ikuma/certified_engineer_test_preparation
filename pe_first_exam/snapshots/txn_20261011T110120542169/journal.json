@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T11:01:20+09:00",
+  "paths": [
+    "generated/questions/applied_science/geology/05_structural_geology.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/geology/05_structural_geology.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/geology/05_structural_geology.tex": "913a5d01d40a9cd5aa88d062ee3cd9472c5c89f4068826ee003634d648d06b1b"
+  }
+}

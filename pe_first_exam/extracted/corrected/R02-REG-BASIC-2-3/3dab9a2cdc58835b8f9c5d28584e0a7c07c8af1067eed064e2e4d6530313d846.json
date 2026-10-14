@@ -1,0 +1,45 @@
+{
+  "stem": "標的型攻撃の入口・多層防御・連絡・実行制御・訓練を判断する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "時点": "R02年度。現在の推奨を出題当時へ無条件に転用しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "正規オンラインストレージを確認しメールゲートウェイで検知。",
+      "verdict": "不適切",
+      "reason": "正規のサービスにも攻撃者は悪性ファイルを置ける。本文にURLだけ載る場合、メール内容の検査だけでリンク先の実体を常に検査・検知できない。"
+    },
+    "2": {
+      "value": "複数対策の多層防御。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "入口・端末・ネットワーク・運用等を組み合わせ、単独策が破られた場合も被害低減を図る。"
+    },
+    "3": {
+      "value": "組織内の連絡窓口を周知。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "受信・誤操作時に早期報告できる既知の窓口は調査・封じ込めへつながる。"
+    },
+    "4": {
+      "value": "実行可能ファイルの制限。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "許可した実行対象へ限定することで悪性実行の経路を減らす。万能検知ではなく業務許可の設計・更新が必要。"
+    },
+    "5": {
+      "value": "模擬メールの定期訓練。",
+      "verdict": "適切（記述の条件内）",
+      "reason": "利用者が不審メールを認識・報告する練習となる。組織の承認・個人の扱い・連絡手順を含む適切な訓練として行う。"
+    }
+  },
+  "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/basic/page_008.png"
+  ],
+  "question_id": "R02-REG-BASIC-2-3",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "be165a2c55af6c11de1bf9aa4ff4d9b541ba9bf54f3fa307634fcb2fff293f03",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

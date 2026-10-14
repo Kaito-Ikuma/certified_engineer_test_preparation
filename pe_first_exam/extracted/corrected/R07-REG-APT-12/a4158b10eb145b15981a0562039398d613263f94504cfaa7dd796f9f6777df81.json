@@ -1,0 +1,46 @@
+{
+  "stem": "PL法の対象・欠陥・OEM・時効・民法の5文から不適切なものを選ぶ。",
+  "conditions": {
+    "原典条件": "問題幹、否定、ア等の記号順、5選択肢と個数又は表の全行を原典16画像で確認した。",
+    "論理条件": "最も不適切な単一文。OEMは製造業者表示とみなされる場合という条件付き。",
+    "法の時点": "出題時の制度を保持。現行取得基準日は2026-10-12。2020年施行の期間変更を別記する。"
+  },
+  "choices": {
+    "1": {
+      "value": "製造加工動産が対象で無体物等は除く",
+      "verdict": "適切",
+      "reason": "2条1項の対象条件に対応する。"
+    },
+    "2": {
+      "value": "通常の安全性の欠如を欠陥とする",
+      "verdict": "適切",
+      "reason": "品質一般から安全性に関係するものを区別する。"
+    },
+    "3": {
+      "value": "製造業者表示とみなされるOEM先は対象",
+      "verdict": "適切",
+      "reason": "2条3項の表示者に該当する条件を明示している。"
+    },
+    "4": {
+      "value": "請求権には時効がない",
+      "verdict": "不適切",
+      "reason": "5条に短期と長期の期間制限がある。"
+    },
+    "5": {
+      "value": "特段の規定がない責任は民法による",
+      "verdict": "適切",
+      "reason": "6条が補充適用を定める。"
+    }
+  },
+  "figures": "文字表又は記述問題であり図なし。組合せの各行は原典画像の列順を保持する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/aptitude/page_012.png"
+  ],
+  "question_id": "R07-REG-APT-12",
+  "source_file": "sources/R07/aptitude.pdf",
+  "source_page": "12",
+  "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+  "raw_text_sha256": "d193bbc4a9b8c82db5a5e389d3454e9751e4c5118c63313abf407089fb5e13f8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

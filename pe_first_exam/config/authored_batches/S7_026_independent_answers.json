@@ -1,0 +1,118 @@
+{
+  "recorded_at": "2026-10-11T11:06:17.050872+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "official_answers_consulted": false,
+  "source_images_reviewed": 23,
+  "questions": [
+    {
+      "question_id": "H23-REG-APT-05",
+      "independent_answer": "4",
+      "reason": "許容リスクは社会・技術と変化。日本の絶対安全との対比は一般化要確認。"
+    },
+    {
+      "question_id": "H23-REG-APT-06",
+      "independent_answer": "4",
+      "reason": "現場参加とトップ統括は別。"
+    },
+    {
+      "question_id": "H23-REG-APT-12",
+      "independent_answer": "2",
+      "reason": "カのみ誤り。認知バイアスで同結論は保証できない。"
+    },
+    {
+      "question_id": "H24-REG-APT-10",
+      "independent_answer": "1",
+      "reason": "OOOO。設計外力超過リスクを想定。"
+    },
+    {
+      "question_id": "H24-REG-APT-11",
+      "independent_answer": "3",
+      "reason": "確率と損失の積だけに限定しない。1996年JIS史は要確認。"
+    },
+    {
+      "question_id": "H25-REG-APT-09",
+      "independent_answer": "5",
+      "reason": "合理的予見可能な誤使用も表示対象。海外の別基準と安全義務は別。"
+    },
+    {
+      "question_id": "H26-REG-APT-10",
+      "independent_answer": "4",
+      "reason": "OXOO。被害の説明不要というイが誤り。"
+    },
+    {
+      "question_id": "H26-REG-APT-15",
+      "independent_answer": "3",
+      "reason": "費用と社会要因を無視するのは最適化に反する。"
+    },
+    {
+      "question_id": "H28-REG-APT-08",
+      "independent_answer": "4",
+      "reason": "従来の確率・結果の組合せは新定義と矛盾しない。原典Q31010は標準番号疑義。"
+    },
+    {
+      "question_id": "H29-REG-APT-12",
+      "independent_answer": "3",
+      "reason": "許容水準固定が誤り。分析のみで自動低減はしない。"
+    },
+    {
+      "question_id": "H30-REG-APT-11",
+      "independent_answer": "3",
+      "reason": "管理的対策を保護具より先。化学物質の義務対象範囲と法/省令は要確認。"
+    },
+    {
+      "question_id": "R01-RET-APT-12",
+      "independent_answer": "2",
+      "reason": "エだけ誤り、3方策に順序。ALARPの適用領域は限定。"
+    },
+    {
+      "question_id": "R02-REG-APT-07",
+      "independent_answer": "4",
+      "reason": "見積り、評価、残留リスク、妥当性確認及び文書化。"
+    },
+    {
+      "question_id": "R03-REG-APT-10",
+      "independent_answer": "3",
+      "reason": "ア・イ・ウの3誤り候補。英語併記だけでは使用者の言語を保証しないが輸入国未指定は疑義。"
+    },
+    {
+      "question_id": "R03-REG-APT-12",
+      "independent_answer": "3",
+      "reason": "ア・イ・エ・カ・キの5適切候補。ウは重大災害消滅を保証できず、オは清潔をしつけに変更。化学対象範囲要確認。"
+    },
+    {
+      "question_id": "R03-REG-APT-15",
+      "independent_answer": "3",
+      "reason": "OOOXX候補。エは低減できなかった理由と発生要因を取り違え、オの専門家分析自体は可能で文言疑義。"
+    },
+    {
+      "question_id": "R04-REG-APT-06",
+      "independent_answer": "5",
+      "reason": "本質安全、防護、情報の優先順位あり。"
+    },
+    {
+      "question_id": "R05-REG-APT-08",
+      "independent_answer": "2",
+      "reason": "特定、分析、評価、対応。図のアセスメント境界を確認。"
+    },
+    {
+      "question_id": "R05-REG-APT-14",
+      "independent_answer": "3",
+      "reason": "予算超過だけで安全対策を省略できない。あらゆるリスクALARPという肢2は適用範囲疑義。"
+    },
+    {
+      "question_id": "R06-REG-APT-07",
+      "independent_answer": "4",
+      "reason": "OOOXO候補。4Sは整理整頓清掃清潔、洗浄ではない。ハインリッヒは経験比で同じ人間の全称でない。"
+    },
+    {
+      "question_id": "R06-REG-APT-13",
+      "independent_answer": "5",
+      "reason": "OOOO候補。平坦通路除外は明らかに軽微の限定、疲労考慮、重篤リスクには暫定措置。"
+    },
+    {
+      "question_id": "R07-REG-APT-14",
+      "independent_answer": "2",
+      "reason": "gross disproportionの条件を2が示す。無条件許容・賠償額・予算都合は違う。冒頭受容=広く受容の等号疑義。"
+    }
+  ]
+}

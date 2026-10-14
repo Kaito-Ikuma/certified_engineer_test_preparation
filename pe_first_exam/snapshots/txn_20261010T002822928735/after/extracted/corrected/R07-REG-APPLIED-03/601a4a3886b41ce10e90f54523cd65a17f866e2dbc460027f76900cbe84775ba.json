@@ -1,0 +1,45 @@
+{
+  "stem": "平行平板コンデンサーの容量と直列接続について、最も不適切なものを選ぶ。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "モデル": "平板の端効果を無視。容量比較では形状を固定。直列の2個は初め未充電。"
+  },
+  "choices": {
+    "1": {
+      "value": "極板面積に比例して容量は増える。",
+      "verdict": "適切",
+      "reason": "面積Aが増えるとCも同じ割合で増える。"
+    },
+    "2": {
+      "value": "極板間距離を小さくすると容量は増える。",
+      "verdict": "適切",
+      "reason": "分母dが小さくなるとCが増える。"
+    },
+    "3": {
+      "value": "比誘電率の大きな物質を極板間へ入れると容量は減少する。",
+      "verdict": "不適切",
+      "reason": "C=εA/dなので同じ形状では誘電率の増加で容量は増え、減少しない。"
+    },
+    "4": {
+      "value": "未充電の2個を直列につないで電圧を加えると等しい電気量が蓄えられる。",
+      "verdict": "適切",
+      "reason": "漏れのない直列回路で中間導体が初めに中性なら、電荷保存で対向極板の電荷の大きさは等しい。"
+    },
+    "5": {
+      "value": "電気量が同じなら容量の小さい方が大きな電位差を持つ。",
+      "verdict": "適切",
+      "reason": "V=Q/CなのでQ一定ではCが小さいほどVが大きい。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_001.png"
+  ],
+  "question_id": "R07-REG-APPLIED-03",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "18a5875be685789b08e5ed1253ee09883749a8b8712b395dd5a796e9582d0944",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

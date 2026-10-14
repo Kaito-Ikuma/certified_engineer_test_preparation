@@ -1,3 +1,11 @@
 $pdf_mode = 4;
 $lualatex = 'lualatex -interaction=nonstopmode -halt-on-error -file-line-error %O %S';
 $out_dir = 'build';
+# Keep Biber's packed Perl runtime separate from macOS's disposable shared cache.
+# A partially removed shared cache can lack unicore/version and abort without
+# a useful message in main.blg.
+use Cwd qw(abs_path);
+mkdir "$out_dir/biber_runtime_S7_026_absolute" unless -d "$out_dir/biber_runtime_S7_026_absolute";
+# PAR requires an existing absolute directory; a relative value can fall back
+# to the broken macOS shared cache while Biber reports an empty output as done.
+$ENV{PAR_TMPDIR} = abs_path("$out_dir/biber_runtime_S7_026_absolute");

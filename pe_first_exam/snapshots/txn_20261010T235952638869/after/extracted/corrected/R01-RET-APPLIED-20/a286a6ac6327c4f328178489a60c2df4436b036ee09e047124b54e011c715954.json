@@ -1,0 +1,45 @@
+{
+  "stem": "指定された全球平均入射342W/m²に対し、反射散乱で宇宙へ戻る放射束を選ぶ。",
+  "conditions": {
+    "方向": "最も適切。",
+    "指定": "大気上端の平均342W/m²。宇宙へ戻る反射散乱の和。"
+  },
+  "choices": {
+    "1": {
+      "value": "68W/m²",
+      "verdict": "不適切",
+      "reason": "入射の約20%で代表約31%より小さい。"
+    },
+    "2": {
+      "value": "107W/m²",
+      "verdict": "最適",
+      "reason": "107/342=約0.313で約31%の全球反射と合う。"
+    },
+    "3": {
+      "value": "137W/m²",
+      "verdict": "不適切",
+      "reason": "約40%で問題の全球代表反射率より大きい。"
+    },
+    "4": {
+      "value": "171W/m²",
+      "verdict": "不適切",
+      "reason": "約50%で問題の全球代表反射率より大きい。"
+    },
+    "5": {
+      "value": "205W/m²",
+      "verdict": "不適切",
+      "reason": "約60%で反射を過大評価している。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_007.png"
+  ],
+  "question_id": "R01-RET-APPLIED-20",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "0a23aaaa78c70ac68a75298f408d7fb6cf27c098cdb8a875127c25c897844d00",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

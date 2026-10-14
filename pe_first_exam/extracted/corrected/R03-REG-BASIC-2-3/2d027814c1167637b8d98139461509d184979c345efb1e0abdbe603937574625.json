@@ -1,0 +1,47 @@
+{
+  "stem": "圧縮後データ量と有効通信速度から伝送秒数を求める。",
+  "conditions": {
+    "元量": "5GB、G=10^9",
+    "圧縮後/前": "0.5",
+    "回線速度": "200Mbps",
+    "利用率": "0.70"
+  },
+  "choices": {
+    "1": {
+      "value": "286秒",
+      "verdict": "不適切",
+      "reason": "5GBを圧縮せず計算すると約285.7秒になるが半分への圧縮を無視する。"
+    },
+    "2": {
+      "value": "143秒",
+      "verdict": "適切",
+      "reason": "20×10^9bit/(140×10^6bit/s)=142.857秒で最近。"
+    },
+    "3": {
+      "value": "100秒",
+      "verdict": "不適切",
+      "reason": "利用率70%を忘れた20×10^9/(200×10^6)=100秒。"
+    },
+    "4": {
+      "value": "18秒",
+      "verdict": "不適切",
+      "reason": "圧縮後バイト量をビット量へ8倍しないと約17.86秒になる。"
+    },
+    "5": {
+      "value": "13秒",
+      "verdict": "不適切",
+      "reason": "利用率も8倍換算も忘れると12.5秒でこの規模になる。"
+    }
+  },
+  "figures": "問題幹・全5肢・数値・単位・否定を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/basic/page_007.png"
+  ],
+  "question_id": "R03-REG-BASIC-2-3",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "77328d1ea85a55d22afd97232775ad6963fccb4a185cdb1084df99e3223ddd7b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

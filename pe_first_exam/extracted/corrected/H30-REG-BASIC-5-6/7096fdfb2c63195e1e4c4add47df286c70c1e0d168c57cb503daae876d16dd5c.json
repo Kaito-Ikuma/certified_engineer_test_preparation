@@ -1,0 +1,45 @@
+{
+  "stem": "倫理責任は明文化の有無だけでは決まらない。",
+  "conditions": {
+    "時点": "平成30年度に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "専門家は高い基準",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "2": {
+      "value": "職業で規範相違",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "3": {
+      "value": "力量超え仕事を引受けない",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "4": {
+      "value": "規範は変わる",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "5": {
+      "value": "規定なしなら責任なし",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/basic/page_020.png"
+  ],
+  "question_id": "H30-REG-BASIC-5-6",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "20",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "b89374e9422066fbf759c9cf9b2b3d9491e6893a305aa4b15ee892023e811290",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

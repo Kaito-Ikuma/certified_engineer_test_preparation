@@ -1,0 +1,45 @@
+{
+  "stem": "ばね式重力計・MT・GPR・海上音波の観測を比較する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "ばね伸びの比較による重力差と、絶対加速度の時間長さ測定を分ける。"
+  },
+  "choices": {
+    "1": {
+      "value": "磁気探査で鉄の概略位置は測れるが細形状種類は判別できない",
+      "verdict": "条件付きで適切",
+      "reason": "磁化と形状・深度の非一意性があるため磁気だけで製品種を一意に識別しない。追加観測で形状推定ができないという絶対禁止ではない。"
+    },
+    "2": {
+      "value": "MTは自然磁場と地電流から深部比抵抗を探査",
+      "verdict": "適切",
+      "reason": "電磁応答のインピーダンスと周波数から比抵抗モデルを求める。"
+    },
+    "3": {
+      "value": "ばね伸びの装置は絶対重力計",
+      "verdict": "不適切",
+      "reason": "標準点や基準との重力差を測る相対方式であり絶対方式と取り違える。"
+    },
+    "4": {
+      "value": "GPRは透過反射屈折を使い中心周波数10MHz程度以上",
+      "verdict": "条件付きで適切",
+      "reason": "通常のGPRの高周波帯の説明である。10MHzは厳密な全装置・全媒質の境界ではない。"
+    },
+    "5": {
+      "value": "海上ストリーマ受振器はハイドロフォン",
+      "verdict": "適切",
+      "reason": "水中の音圧変動を受信する素子を曳航ケーブルへ多数配置する。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "磁気単独の非一意性を形状推定の絶対不可能性にしない。GPRの10MHzは典型的分類目安である。",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_011.png"
+  ],
+  "question_id": "H29-REG-APPLIED-33",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "c921d4e1d0f0f6453a73945143baab52586723d3a1a0be70da41dd033f1dc09a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

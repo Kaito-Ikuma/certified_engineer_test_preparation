@@ -1,0 +1,45 @@
+{
+  "stem": "酸素基底状態の電子数とs軌道容量を確認する。",
+  "conditions": {
+    "判断対象": "酸素基底状態の電子数とs軌道容量を確認する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "1s1 2s3 2p4",
+      "verdict": "選ばない候補",
+      "reason": "2sに3電子は不可能。"
+    },
+    "2": {
+      "value": "1s2 2s2 2p4",
+      "verdict": "選ぶ候補",
+      "reason": "低い1s/2sを各2、2pを4で計8。"
+    },
+    "3": {
+      "value": "1s1 2s4 2p3",
+      "verdict": "選ばない候補",
+      "reason": "2sに4電子は不可能。"
+    },
+    "4": {
+      "value": "1s2 2s3 2p3",
+      "verdict": "選ばない候補",
+      "reason": "2sに3電子は不可能。"
+    },
+    "5": {
+      "value": "1s2 2s4 2p2",
+      "verdict": "選ばない候補",
+      "reason": "2sに4電子は不可能。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_005.png"
+  ],
+  "question_id": "R01-RET-APPLIED-14",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "196515315b4a1455692f365da4922e4e403183ca1bb90b0bff719ff736305763",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

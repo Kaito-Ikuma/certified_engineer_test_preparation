@@ -1,0 +1,87 @@
+{
+  "checked_at": "2026-10-12T02:15:03+09:00",
+  "sources": [
+    {
+      "key": "ip_copyright_statute",
+      "title": "著作権法：取得条文",
+      "url": "https://laws.e-gov.go.jp/law/345AC0000000048",
+      "checked_claim": "2条、13条、17〜20条、23条、30条の4、32条、47条の6、48条を確認。過去の43条と現在の翻訳規定の条番号を混同しない。"
+    },
+    {
+      "key": "ip_patent_statute",
+      "title": "特許法：取得条文",
+      "url": "https://laws.e-gov.go.jp/law/334AC0000000121",
+      "checked_claim": "1条、2条、29条、30条、32条を確認。発明該当性・産業上利用可能性・新規性・公序良俗を分ける。"
+    },
+    {
+      "key": "ip_unfair_statute",
+      "title": "不正競争防止法：営業秘密の定義",
+      "url": "https://laws.e-gov.go.jp/law/405AC0000000047",
+      "checked_claim": "本則2条6項で三要件を確認。資料名や会社内の作成という事情のみでは成立しない。"
+    },
+    {
+      "key": "ip_industrial_four",
+      "title": "産業財産権について",
+      "url": "https://www.jpo.go.jp/system/patent/gaiyo/seidogaiyo/chizai01.html",
+      "checked_claim": "前段でWeb本文を確認した特許・実用新案・意匠・商標の4種類。再取得は403。"
+    },
+    {
+      "key": "ip_broad_scope",
+      "title": "知的財産権について",
+      "url": "https://www.jpo.go.jp/system/patent/gaiyo/seidogaiyo/chizai02.html",
+      "checked_claim": "官公庁の検索索引本文で広い定義、商号、営業秘密を確認。ページの再取得は403であり全文取得とはしない。"
+    },
+    {
+      "key": "ip_secret_handbook2017",
+      "title": "秘密情報の保護ハンドブック（2017年版）",
+      "url": "https://www.meti.go.jp/policy/economy/chizai/chiteki/pdf/1706tradesec.pdf",
+      "checked_claim": "検索索引の該当箇所で三要件、未利用情報の有用性、反社会的情報の除外を確認。全PDFを取得・閲読したとはしない。"
+    },
+    {
+      "key": "ip_secret_commentary2018",
+      "title": "不正競争防止法逐条解説：定義規定（2018年）",
+      "url": "https://www.meti.go.jp/policy/economy/chizai/chiteki/pdf/20181129chikujyokaisetsur.pdf",
+      "checked_claim": "検索索引の有用性の節で失敗実験情報と反社会的行為の区別を確認。全文取得なし。"
+    },
+    {
+      "key": "ip_novelty_grace2018",
+      "title": "発明の新規性喪失の例外期間の延長",
+      "url": "https://www.jpo.go.jp/system/laws/rule/guideline/patent/hatumei_reigai_encho.html",
+      "checked_claim": "検索索引で2018年6月9日施行、6か月から1年、出願と公開日の経過措置を確認。公開済みであること自体を積極要件にしない。"
+    },
+    {
+      "key": "ip_flexible2019",
+      "title": "柔軟な権利制限規定に関する説明資料（2019年10月24日）",
+      "url": "https://www.bunka.go.jp/seisaku/chosakuken/hokaisei/h30_hokaisei/pdf/r1406693_17.pdf",
+      "checked_claim": "83物理頁中13〜21頁の本文を確認。6事例、享受目的併存、必要限度、不当利益侵害、3DCGの表現承継、検索結果表示の境界。"
+    }
+  ],
+  "local_files": [
+    {
+      "file": "extracted/reference_checks/S7_031/S7_031_copyright.xml",
+      "sha256": "175e7c3bda1de44a747713629b9ef613258ef2fca202438e70ad611b4a014169"
+    },
+    {
+      "file": "extracted/reference_checks/S7_031/S7_031_patent.xml",
+      "sha256": "41f163f5d7f7e3fe16a189870a77f4e88a7aae2e8dc408ecfb149dd4661f028c"
+    },
+    {
+      "file": "extracted/reference_checks/S7_031/S7_031_unfair.xml",
+      "sha256": "ae4245557f066cc90fa9a408b45ca650eab8cfc41005a8dd8121f376e15b267f"
+    },
+    {
+      "file": "extracted/reference_checks/S7_031/S7_031_flexible2019.pdf",
+      "sha256": "7bee245313a03ac1e9be4b88deb1bb41ebc2048c8c6e66b7be333cf83f673f26"
+    },
+    {
+      "file": "extracted/reference_checks/S7_031/S7_031_flexible2019.txt",
+      "sha256": "747c990691c6c36e89f29a35a66ded13d2a607bb97fe4d04ad3bd3916097e2e5"
+    }
+  ],
+  "limitations": [
+    "2013・2014年の著作権法版全文は取得していない。既存九州大学2015年資料URLは404。該当二問は当時条文の版照合を未完として保持する。",
+    "2018年のサイバー攻撃漏洩の急増を示す当時の定量系列は未確認。",
+    "経済産業省PDF取得は403。官公庁の索引に見える該当段落と取得済み法令条文を分ける。",
+    "API取得条文は現行理解の補助であり、過去版全文の代用ではない。"
+  ]
+}

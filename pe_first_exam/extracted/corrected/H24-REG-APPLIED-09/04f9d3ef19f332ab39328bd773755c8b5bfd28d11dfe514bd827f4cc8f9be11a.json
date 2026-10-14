@@ -1,0 +1,46 @@
+{
+  "stem": "ピトー管の速度測定で使う原理と、差を測る二種類の圧力を対応付ける。",
+  "conditions": {
+    "requested": "principle; pressure B; pressure C",
+    "measurement": "tube parallel to flow",
+    "source_description": "total pressure is static plus dynamic pressure"
+  },
+  "choices": {
+    "1": {
+      "value": "ベルヌーイ・総圧・静圧",
+      "verdict": "採用",
+      "reason": "ベルヌーイにより総圧から静圧を引いて動圧を得る。"
+    },
+    "2": {
+      "value": "ベルヌーイ・静圧・動圧",
+      "verdict": "不採用",
+      "reason": "静圧と動圧の差を直接測るという組合せは測定原理と異なる。"
+    },
+    "3": {
+      "value": "ベルヌーイ・総圧・動圧",
+      "verdict": "不採用",
+      "reason": "総圧から動圧を引くと静圧になり、目的の差ではない。"
+    },
+    "4": {
+      "value": "ストークス・総圧・静圧",
+      "verdict": "不採用",
+      "reason": "ストークスの法則は粘性抵抗の法則であり、この原理ではない。"
+    },
+    "5": {
+      "value": "ストークス・静圧・動圧",
+      "verdict": "不採用",
+      "reason": "原理と圧力の組合せがいずれも不適切。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_003.png"
+  ],
+  "question_id": "H24-REG-APPLIED-09",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "6989deb79176e07e42110c5ca0db79dbc45ce1613bb4c7609239276cb7466ad2",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

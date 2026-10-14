@@ -1,0 +1,76 @@
+{
+  "checked_at": "2026-10-12T13:39:53+09:00",
+  "sources": [
+    {
+      "key": "jica_refraction2015",
+      "url": "https://openjicareport.jica.go.jp/pdf/12231320_01.pdf",
+      "checked_claim": "取得PDF表紙2015年3月、印刷3-51〜3-52頁の萩原はぎとり法・トモグラフィ比較、直接波と屈折波、往復走時・原点走時の整合を本文確認。"
+    },
+    {
+      "key": "epa_surfacewaves",
+      "url": "https://www.epa.gov/environmental-geophysics/surface-wave-methods",
+      "checked_claim": "本文の分散曲線・水平層のS波逆解析・波長と深度感度・高次モード及び横方向不均質の限界を確認。"
+    },
+    {
+      "key": "xia_rayleigh1999",
+      "url": "https://www.usgs.gov/publications/estimation-near-surface-shear-wave-velocity-inversion-rayleigh-waves",
+      "checked_claim": "USGS一次論文要約でP波・S波・密度・層厚の依存、5Hz超のS波の強い感度、反復逆解析を確認。全文取得や全周波数での感度順位の保証とはしない。"
+    },
+    {
+      "key": "coastal_reflection2016",
+      "url": "https://www.enecho.meti.go.jp/category/electricity_and_gas/nuclear/rw/library/2016/28fy_enngannbu.pdf",
+      "checked_claim": "一次報告の検索収録で浅層反射の最大オフセットと探査深度の目安を確認。原URL再取得は403であり全文・原図の読了ではない。目安を普遍的な必要条件へ拡張しない。"
+    },
+    {
+      "key": "seg_vertical_resolution",
+      "url": "https://wiki.seg.org/wiki/Vertical_resolution",
+      "checked_claim": "掲載専門書の検索収録で四分の一波長の目安は上下面反射の分離であり存在検出と異なる点を確認。再取得は403。"
+    },
+    {
+      "key": "seg_lateral_resolution",
+      "url": "https://wiki.seg.org/wiki/Lateral_resolution",
+      "checked_claim": "掲載専門書の検索収録で半波長の第一Fresnel zoneと横方向分解能、Ricker1953のwavelet論文への参照を確認。本文再取得は未達。"
+    },
+    {
+      "key": "moe_surface2004",
+      "url": "https://www.env.go.jp/water/report/h17-10/full.pdf",
+      "checked_claim": "表紙2004年3月と物理57頁の表面波探査概要を確認。S波分散・一次元から二次元・通常20m程度という対象を読み、普遍的限界とはしない。"
+    },
+    {
+      "key": "segj_integrated2017",
+      "url": "https://segj.or.jp/publication/pdf/IntegratedReport.pdf",
+      "checked_claim": "一次報告の検索収録の対象別手法表を確認。トンネル・ダム・斜面の評価と強震動用S波構造を区別。keyの2017は検索時の識別名で書誌年月確定ではない。本文再取得未達。"
+    },
+    {
+      "key": "japansea_spac2017",
+      "url": "https://www.eri.u-tokyo.ac.jp/project/Japan_Sea/JSH29Report/PDF3/21_H29JSPJ-C3.3.2.pdf",
+      "checked_claim": "本文のSPACによるRayleigh分散とS波モデル、強震動用モデルを確認。印刷361頁の検索収録で空間aliasingの最小波長を確認。全87頁の全文読了とはしない。"
+    },
+    {
+      "key": "array_limits2002",
+      "url": "https://iwate-u.repo.nii.ac.jp/record/9867/files/bt-v55n5p363-373.pdf",
+      "checked_claim": "一次論文の検索収録で数値実験及び実測のF-KとSPAC最大波長比較と条件依存を確認。PDF再取得503。題名・著者の確定と全文照合は査読対象として保持。"
+    },
+    {
+      "key": "epa_seismic_refraction",
+      "url": "https://www.epa.gov/environmental-geophysics/seismic-refraction",
+      "checked_claim": "本文のP波主体とS波例、初動・臨界屈折の増速条件・薄層と低速度層・飽和状態によるP波速度差の実例を確認。"
+    }
+  ],
+  "local_sources": [
+    {
+      "path": "extracted/reference_checks/S7_039/jica_refraction.pdf",
+      "sha256": "467d974d116006bc7e4fb0eab3f003661bb2c15e2cea37536e3e6792ce4e559d"
+    },
+    {
+      "path": "extracted/reference_checks/S7_039/refraction.pdf",
+      "sha256": "f34965004a5ac9b56a3e641281617fe36931954a612964c25cf9e0a250ddd98f"
+    }
+  ],
+  "limitations": [
+    "15問14原典画像と公式前初回を保存し15一致。",
+    "反射の放物線局所近似は独自Taylor導出として保持。",
+    "PDF取得未達の一次検索収録を全文読了と呼ばない。",
+    "array_limits2002の題名・著者と当該全文照合を未確定として追跡する。"
+  ]
+}

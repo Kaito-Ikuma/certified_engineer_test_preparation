@@ -1,0 +1,46 @@
+{
+  "stem": "減速機を介した円盤加速の入力トルク。",
+  "conditions": {
+    "減速": "入力角速度:出力角速度=n:1。",
+    "円盤": "出力に慣性I、ω1→ω2を時間T。",
+    "効率": "1、損失無視。"
+  },
+  "choices": {
+    "1": {
+      "value": "IΔω/(n²T)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 IΔω/(nT) と異なる。"
+    },
+    "2": {
+      "value": "IΔω/(nT)",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "3": {
+      "value": "IΔω/T",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 IΔω/(nT) と異なる。"
+    },
+    "4": {
+      "value": "nIΔω/T",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 IΔω/(nT) と異なる。"
+    },
+    "5": {
+      "value": "n²IΔω/T",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 IΔω/(nT) と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_011.png"
+  ],
+  "question_id": "R05-REG-BASIC-3-5",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "11",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "e219ba20732aac676c0ecd146e586254dfb8a2fd4433068025de0401926eb819",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

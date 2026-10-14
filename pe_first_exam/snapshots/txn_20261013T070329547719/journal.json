@@ -1,0 +1,19 @@
+{
+  "status": "committed",
+  "time": "2026-10-13T07:03:29+09:00",
+  "paths": [
+    "generated/questions/basic/01_design_planning.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/basic/01_design_planning.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/basic/01_design_planning.tex": "faa4ab4c383c7b4d06e9fc9e994e4da861b456140474f9539e26aef12d0d7996",
+    "generated/audit_summary.tex": "6a90a2d0842022e70e222b2e1872760feb687e6ef477e013fcf5ece1f48e3b84",
+    "generated/frequency_tables.tex": "532db1db7ea870bfa9f5f33a1ac93495503a6ba761f6a5e5d3b14e82f4f27ee1"
+  }
+}

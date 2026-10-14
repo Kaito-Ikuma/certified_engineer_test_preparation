@@ -1,0 +1,45 @@
+{
+  "stem": "専門職責任は職務規定だけでは尽くせない。",
+  "conditions": {
+    "時点": "平成26年度に指定された資料・制度。",
+    "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "職業で規範が異なる場合",
+      "verdict": "条件内で適切",
+      "reason": "原典の条件内では適切な記述であり、不適切なものを選ぶ問の選択対象ではない。"
+    },
+    "2": {
+      "value": "力量外を引受けない",
+      "verdict": "条件内で適切",
+      "reason": "原典の条件内では適切な記述であり、不適切なものを選ぶ問の選択対象ではない。"
+    },
+    "3": {
+      "value": "明文規定なしなら責任なし",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "4": {
+      "value": "行動規範は変化",
+      "verdict": "条件内で適切",
+      "reason": "原典の条件内では適切な記述であり、不適切なものを選ぶ問の選択対象ではない。"
+    },
+    "5": {
+      "value": "専門知識は高い基準",
+      "verdict": "条件内で適切",
+      "reason": "原典の条件内では適切な記述であり、不適切なものを選ぶ問の選択対象ではない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/basic/page_017.png"
+  ],
+  "question_id": "H26-REG-BASIC-5-5",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "2f5d934d1772a6f41fedbfb86974310cebb422240d6a62e7a53cbc4b77671b19",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

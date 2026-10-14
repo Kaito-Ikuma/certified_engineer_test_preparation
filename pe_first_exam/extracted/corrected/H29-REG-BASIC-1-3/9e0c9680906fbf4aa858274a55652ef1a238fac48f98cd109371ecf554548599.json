@@ -1,0 +1,48 @@
+{
+  "stem": "決定と確率分岐を後ろから評価する。",
+  "conditions": {
+    "状態": "S1 .6、S2 .1、S3 .3。",
+    "S1": "A1=(5,.5;7,.5)、A2=8。",
+    "S2": "A1=(8,.6;10,.4)、A2=12。",
+    "S3": "3。",
+    "恒久": "6.5、額は全て億円。"
+  },
+  "choices": {
+    "1": {
+      "value": "4.5 状況対応",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 5.4 状況対応 と異なる。"
+    },
+    "2": {
+      "value": "5.4 状況対応",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "3": {
+      "value": "5.7 状況対応",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 5.4 状況対応 と異なる。"
+    },
+    "4": {
+      "value": "6.6 恒久",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 5.4 状況対応 と異なる。"
+    },
+    "5": {
+      "value": "6.9 恒久",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 5.4 状況対応 と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/basic/page_002.png"
+  ],
+  "question_id": "H29-REG-BASIC-1-3",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "2",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "2ea390e8ccd9bdf629f90f6c585a6ea0a8d48457f05f439cc8c8ca114f92d02c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,44 @@
+{
+  "stem": "水蒸気柱・降水、帯水層係数、氷晶過程、宙水、海陸水収支を比較する。",
+  "conditions": {
+    "方向": "最も不適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "日降水量は可降水量を超えることがある。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "可降水量はある時点の柱の貯留で、日降水は時間積分した流量。横からの水蒸気補給があるので上限とはならない。"
+    },
+    "2": {
+      "value": "透水量係数は比貯留率と厚さの積。",
+      "verdict": "不適切",
+      "reason": "T=KbでKは透水係数。Ss bは被圧帯水層の貯留係数で、流れやすさとは別量。"
+    },
+    "3": {
+      "value": "氷晶過程を経る冷たい雨は中緯度降雨に多い。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "氷粒子の成長後の融解が雨となる。地上の雨温度が冷たいという命名ではない。"
+    },
+    "4": {
+      "value": "不飽和帯の低透水層の上に宙水が形成されることがある。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "透水性の小さい層が下方への排水を制限し、局所的な地下水面を作り得る。"
+    },
+    "5": {
+      "value": "海洋は蒸発超過、陸域は降水超過。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "長期・全球平均では海洋から陸へ水蒸気が移り、陸から河川等で戻る。個々の地点の常時の関係ではない。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_010.png"
+  ],
+  "question_id": "H28-REG-APPLIED-25",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "137307f4537c7e6554155ad3d7fc1e7fec6cd2f7faf5a5f4446940c2c963fa76",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

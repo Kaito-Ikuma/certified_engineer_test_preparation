@@ -1,0 +1,45 @@
+{
+  "stem": "緩衝溶液の定義、血液、式、酸塩基対の調製条件を判定する。",
+  "conditions": {
+    "確認範囲": "問題幹、否定、全5肢、数式、数値、単位を原典画像で確認した。",
+    "成立条件": "最も不適切な文。緩衝は有限量の酸塩基添加に対する変化の小ささであり、pH完全不変ではない。弱塩基の強酸による部分中和。"
+  },
+  "choices": {
+    "1": {
+      "value": "少量の強酸強塩基添加でpHが大きく変わらない",
+      "verdict": "適切",
+      "reason": "緩衝容量内での性質である。"
+    },
+    "2": {
+      "value": "血液のpH7.4維持に緩衝は関与しない",
+      "verdict": "不適切",
+      "reason": "重炭酸系やタンパク等の酸塩基対が関与する。"
+    },
+    "3": {
+      "value": "ヘンダーソン・ハッセルバルヒ式でpHを求める",
+      "verdict": "条件付きで適切",
+      "reason": "活量比の式は平衡から導かれる。濃度比や混合時の物質量比に置換するには近似条件が必要である。"
+    },
+    "4": {
+      "value": "弱酸とその共役塩基の塩で調製",
+      "verdict": "適切",
+      "reason": "両成分が有効量存在するように調製する。"
+    },
+    "5": {
+      "value": "弱塩基と強酸で緩衝溶液を作る",
+      "verdict": "条件付きで適切",
+      "reason": "部分中和で弱塩基と共役酸の両方を残す。強酸過剰では一般に緩衝溶液にならない。"
+    }
+  },
+  "figures": "文字記述又は順序候補であり図なし。",
+  "ambiguity": "5は混合比を指定しない。部分中和という成立条件を注記し、一律に全混合比で適切とは扱わない。",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_006.png"
+  ],
+  "question_id": "R03-REG-APPLIED-17",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "4997e7eeddf4e564d3f5eac5f99b69bd5bc356fa1bb0320ca1017e95718fc299",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

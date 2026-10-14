@@ -1,0 +1,45 @@
+{
+  "stem": "2012年石油統計の対象範囲を固定。",
+  "conditions": {
+    "時点": "平成25年度に指定された資料・制度。",
+    "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "93/マラッカ/クウェート/21",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "93/ホルムズ/サウジ/42",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "83/マラッカ/サウジ/42",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "83/ホルムズ/クウェート/42",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "5": {
+      "value": "83/ホルムズ/サウジ/21",
+      "verdict": "適切・選択対象",
+      "reason": "判定と一致する。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "2012暦年の財務省四項目原表を全て取得していない。取得白書は2013年度83.6%とサウジ首位を支持する補助で、指定年の確定証跡とは区別する。",
+  "evidence": [
+    "extracted/pages/H25/basic/page_019.png"
+  ],
+  "question_id": "H25-REG-BASIC-5-1",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "19",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "67c182fe3d41c9cded17766a0c57539f52f0fe2d9216d31d694dd37c13b0c4bf",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

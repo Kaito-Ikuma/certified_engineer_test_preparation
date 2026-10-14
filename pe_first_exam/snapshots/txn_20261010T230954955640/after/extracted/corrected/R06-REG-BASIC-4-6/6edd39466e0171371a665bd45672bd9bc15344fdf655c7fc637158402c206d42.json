@@ -1,0 +1,44 @@
+{
+  "stem": "タンパク質の配列決定、疎水側鎖の分布、立体配置、共有結合の分類を判定する。",
+  "conditions": {
+    "方向": "最も適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "非極性の側鎖はタンパク質表面に多い。",
+      "verdict": "不適切（通常の水溶性球状）",
+      "reason": "通常の水溶性球状タンパク質では非極性側鎖は内側へ偏り、水との接触を減らす。膜タンパク質の脂質に接する面等の例外は区別する。"
+    },
+    "2": {
+      "value": "タンパク質のアミノ酸はほとんどD体。",
+      "verdict": "不適切",
+      "reason": "リボソームで合成する標準タンパク質は主にL、グリシンは不斉を持たない。"
+    },
+    "3": {
+      "value": "標準アミノ酸はペプチドという非共有結合で連結する。",
+      "verdict": "不適切",
+      "reason": "ペプチド結合はカルボキシ基とアミノ基に由来する共有結合である。"
+    },
+    "4": {
+      "value": "アミノ酸配列は核酸の塩基配列に規定される。",
+      "verdict": "適切",
+      "reason": "一次構造はアミノ酸配列であり、翻訳される核酸の配列に規定される。"
+    },
+    "5": {
+      "value": "非共有結合として静電・水素・疎水相互作用・ジスルフィド結合が重要。",
+      "verdict": "不適切",
+      "reason": "ジスルフィド結合は2個のCys側鎖のS-S共有結合であり、非共有という分類が誤り。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_016.png"
+  ],
+  "question_id": "R06-REG-BASIC-4-6",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "16",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "57785e0a9a4ac9087b9e3b4967c2b07b6300ecba1abb739bb63e2d56a7343781",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

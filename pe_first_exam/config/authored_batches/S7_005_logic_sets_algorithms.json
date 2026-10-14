@@ -1,0 +1,1250 @@
+{
+  "batch_id": "S7_005_logic_sets_algorithms",
+  "reference_date": "2026-10-09",
+  "scope": "18問。否定上線、真理値表8行、決定表全候補、集合値、互除法の分岐矢印を原典画像確認して独立に解答を構築。",
+  "questions": [
+    {
+      "question_id": "H23-REG-BASIC-2-3",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "否定上線の範囲を守り、与えられた論理式と等価な候補を選ぶ。",
+      "conditions": {
+        "対象式": "\\(X=(\\overline A+B)\\overline{(A+\\overline B)}\\)",
+        "演算": "＋は論理和、積は論理積。第2候補は和全体と第2項の二重の否定線をもつ。"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((\\overline A+B)+(\\overline A B)\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "吸収律で否定A又はBとなり、A=B=0で1を返す。対象式は0である。"
+        },
+        "2": {
+          "value": "\\(\\overline{A\\overline B+\\overline{\\overline A B}}\\)",
+          "verdict": "条件に一致する候補",
+          "reason": "二重否定とド・モルガン則により否定AかつBへ簡約され、対象式と一致する。"
+        },
+        "3": {
+          "value": "\\((A\\overline B)(\\overline A B)\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "Aと否定Aの積が含まれ常に0である。A=0、B=1の対象値1を再現しない。"
+        },
+        "4": {
+          "value": "\\(\\overline{(\\overline A+B)+(\\overline A+B)}\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "同一項の和の否定なのでAかつ否定Bとなり、対象と逆の入力で1になる。"
+        },
+        "5": {
+          "value": "\\((A+\\overline B)(\\overline A+\\overline B)\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "分配・吸収で否定Bに簡約される。A=0、B=0で1だが対象は0である。"
+        }
+      },
+      "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H23/basic/page_006.png"
+      ],
+      "summary": "否定上線の範囲を守り、与えられた論理式と等価な候補を選ぶ。",
+      "core_concept": "否定の作用範囲と論理等価",
+      "required_knowledge": "ド・モルガン則、吸収律、二重否定、真理値表。",
+      "solution": "\\(\\overline{A+\\overline B}=\\overline A B\\)なので対象は\\((\\overline A+B)\\overline A B=\\overline A B\\)である。第2候補も\\(\\overline{A\\overline B+(A+\\overline B)}=\\overline{A+\\overline B}=\\overline A B\\)となる。上線を個々の項に移す前に、和全体を覆う線を確定する。",
+      "independent_answer": "2",
+      "answer_reason": "対象と第2候補はともにA=0、B=1のときだけ1となる。",
+      "learning_points": "定義と条件から否定の作用範囲と論理等価を構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:boolean"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "concept_017",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心は否定の作用範囲と論理等価であり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-2-3",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "2つの積項にかかる否定を変形し、同じ論理関数を選ぶ。",
+      "conditions": {
+        "対象式": "\\(X=\\overline{(\\overline A\\overline B)}\\,\\overline{(\\overline A+B)}\\)"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((A+B)(A\\overline B)\\)",
+          "verdict": "条件に一致する候補",
+          "reason": "対象の2つの否定をド・モルガン則で置き換えた式であり一致する。"
+        },
+        "2": {
+          "value": "\\((A+B)(\\overline A B)\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "否定AかつBとなり、A=1、B=0では0である。対象は1となる。"
+        },
+        "3": {
+          "value": "\\((\\overline A+B)(A\\overline B)\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "展開するとAと否定A又はBと否定Bが同時に必要となり、常に0である。"
+        },
+        "4": {
+          "value": "\\(\\overline A\\overline B+(A+\\overline B)\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "A又は否定Bへ簡約され、A=B=0でも1となる。対象は0である。"
+        },
+        "5": {
+          "value": "\\(\\overline A\\overline B+(\\overline A+B)\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "否定A又はBへ簡約され、A=1、B=0で0になる。対象は1である。"
+        }
+      },
+      "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_008.png"
+      ],
+      "summary": "2つの積項にかかる否定を変形し、同じ論理関数を選ぶ。",
+      "core_concept": "ド・モルガン変形と吸収",
+      "required_knowledge": "積と和の否定、変数の否定、相補律、吸収律。",
+      "solution": "\\(\\overline{\\overline A\\overline B}=A+B\\)、\\(\\overline{\\overline A+B}=A\\overline B\\)である。したがって\\(X=(A+B)(A\\overline B)=A\\overline B\\)。第1候補が最初の変形式と一致する。",
+      "independent_answer": "1",
+      "answer_reason": "対象はA=1、B=0でのみ1となり、第1候補と一致する。",
+      "learning_points": "定義と条件からド・モルガン変形と吸収を構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:boolean"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "concept_017",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心はド・モルガン変形と吸収であり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-BASIC-2-2",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "stem": "2入力がともに1のときだけ0を出す真理値表に合う論理式を選ぶ。",
+      "conditions": {
+        "入力順": "(A,B)=(0,0),(0,1),(1,0),(1,1)",
+        "出力": "1,1,1,0"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(A+B\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "ORは00で0となり指定表と異なる。"
+        },
+        "2": {
+          "value": "\\(\\overline A+\\overline B\\)",
+          "verdict": "条件に一致する候補",
+          "reason": "ド・モルガン則でANDの否定となり、11以外の全行で1となる。"
+        },
+        "3": {
+          "value": "\\(AB\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "ANDは11でのみ1となり、指定の否定と逆である。"
+        },
+        "4": {
+          "value": "\\(\\overline A B\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "01でしか1にならず、00や10の出力を再現しない。"
+        },
+        "5": {
+          "value": "\\(A\\overline B+\\overline A B\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "XORは00で0となり、その行が指定表と異なる。"
+        }
+      },
+      "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/basic/page_008.png"
+      ],
+      "summary": "2入力がともに1のときだけ0を出す真理値表に合う論理式を選ぶ。",
+      "core_concept": "真理値表とNAND",
+      "required_knowledge": "AND・OR・NOT・XORの表、ド・モルガン則。",
+      "solution": "表の0の行が\\(AB=1\\)の唯一の行なので、対象は\\(\\overline{AB}=\\overline A+\\overline B\\)である。第2候補を選ぶ。",
+      "independent_answer": "2",
+      "answer_reason": "第2候補の出力1110が4行すべてで一致する。",
+      "learning_points": "定義と条件から真理値表とNANDを構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:boolean"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "concept_017",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心は真理値表とNANDであり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-BASIC-2-4",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "入力一致の検出を否定した論理式を、等価な排他的論理和へ変形する。",
+      "conditions": {
+        "対象式": "\\(X=\\overline{\\overline A\\overline B+AB}\\)"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((A+B)\\overline{(A+B)}\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "任意の命題とその否定の積なので常に0である。"
+        },
+        "2": {
+          "value": "\\((A+B)(\\overline A B)\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "否定AかつBのみを表し、A=1、B=0のXOR出力1を再現しない。"
+        },
+        "3": {
+          "value": "\\((AB)(\\overline A\\overline B)\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "Aと否定Aを同時に要求し、常に0である。"
+        },
+        "4": {
+          "value": "\\((AB)\\overline{(AB)}\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "命題ABとその否定の積で常に0である。"
+        },
+        "5": {
+          "value": "\\((A+B)\\overline{(AB)}\\)",
+          "verdict": "条件に一致する候補",
+          "reason": "ORが1かつANDが0という条件なので、入力が異なる2行でのみ1になり一致する。"
+        }
+      },
+      "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/basic/page_008.png"
+      ],
+      "summary": "入力一致の検出を否定した論理式を、等価な排他的論理和へ変形する。",
+      "core_concept": "XNORの否定とXOR",
+      "required_knowledge": "同値検出、排他的論理和、ド・モルガン則、相補律。",
+      "solution": "対象は\\(\\overline{\\overline A\\overline B+AB}\\)である。括弧内は入力が等しいとき1なので、その否定はXORである。ド・モルガン則で\\((A+B)(\\overline A+\\overline B)=(A+B)\\overline{AB}\\)とも表せる。",
+      "independent_answer": "5",
+      "answer_reason": "第5候補の出力0110が対象のXORと一致する。",
+      "learning_points": "定義と条件からXNORの否定とXORを構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:boolean"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "concept_017",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心はXNORの否定とXORであり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-BASIC-2-2",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "stem": "入力が等しい2行の和を否定した式に等価な候補を選ぶ。",
+      "conditions": {
+        "対象式": "\\(\\overline{\\overline A\\overline B+AB}\\)"
+      },
+      "choices": {
+        "1": {
+          "value": "\\((A+B)\\overline{(A+B)}\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "命題とその否定の積で常に0である。"
+        },
+        "2": {
+          "value": "\\((A+B)(\\overline A+\\overline B)\\)",
+          "verdict": "条件に一致する候補",
+          "reason": "入力の少なくとも一方が1、かつ少なくとも一方が0という条件でありXORを表す。"
+        },
+        "3": {
+          "value": "\\((AB)(\\overline A\\overline B)\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "Aと否定Aが同時に必要となり常に0である。"
+        },
+        "4": {
+          "value": "\\((AB)\\overline{(AB)}\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "ABとその否定の積で常に0である。"
+        },
+        "5": {
+          "value": "\\((A+B)+(\\overline A+\\overline B)\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "A又は否定Aが含まれ常に1となり、00・11での指定出力0と異なる。"
+        }
+      },
+      "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/basic/page_006.png"
+      ],
+      "summary": "入力が等しい2行の和を否定した式に等価な候補を選ぶ。",
+      "core_concept": "否定の作用範囲とXOR",
+      "required_knowledge": "ド・モルガン則、相補律、二重否定。",
+      "solution": "対象は\\(\\overline{\\overline A\\overline B+AB}\\)である。括弧内は入力が等しいとき1なので、その否定はXORである。ド・モルガン則で\\((A+B)(\\overline A+\\overline B)=(A+B)\\overline{AB}\\)とも表せる。",
+      "independent_answer": "2",
+      "answer_reason": "第2候補だけが入力01・10で1、00・11で0となる。",
+      "learning_points": "定義と条件から否定の作用範囲とXORを構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:boolean"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "concept_017",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心は否定の作用範囲とXORであり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-BASIC-2-2",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "stem": "3入力の真理値表を満たす論理式を選ぶ。",
+      "conditions": {
+        "入力順": "000,001,010,011,100,101,110,111",
+        "出力": "0,1,0,0,0,1,1,1"
+      },
+      "choices": {
+        "1": {
+          "value": "\\(xy+z\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "011でz=1により1となるが、指定表は0である。"
+        },
+        "2": {
+          "value": "\\(\\overline x y+\\overline y\\overline z\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "000で否定yかつ否定zが1になり、指定表の0と異なる。"
+        },
+        "3": {
+          "value": "\\(xy+\\overline y z\\)",
+          "verdict": "条件に一致する候補",
+          "reason": "y=0ではz、y=1ではxを返す。全8行の指定表を再現する。"
+        },
+        "4": {
+          "value": "\\(xy+\\overline{xy}\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "命題又はその否定なので常に1であり、000等の0を再現しない。"
+        },
+        "5": {
+          "value": "\\(xy+\\overline x z\\)",
+          "verdict": "条件に一致しない候補",
+          "reason": "011で否定xかつzが1となるほか、101で0となり、指定表と一致しない。"
+        }
+      },
+      "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/basic/page_007.png"
+      ],
+      "summary": "3入力の真理値表を満たす論理式を選ぶ。",
+      "core_concept": "条件による論理関数の分解",
+      "required_knowledge": "真理値表、場合分け、選択回路、論理積の和。",
+      "solution": "y=0の4行を見ると出力はzであり、y=1の4行では出力はxである。場合分けを\\(f=\\overline y z+yx\\)と書けば、第3候補となる。選択入力yが0ならz、1ならxを選ぶ2入力選択回路と解釈できる。",
+      "independent_answer": "3",
+      "answer_reason": "第3候補はyの両値でそれぞれ指定表を満たし、全8行に一致する。",
+      "learning_points": "定義と条件から条件による論理関数の分解を構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:boolean"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "concept_017",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心は条件による論理関数の分解であり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-2-2",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "住民CとDの賛否規則を論理式へ変換し、必ず成り立つ記述を選ぶ。",
+      "conditions": {
+        "値": "賛成1、反対0。住民は必ずどちらかを決める。",
+        "C": "AとBの両方が賛成のときだけ反対。",
+        "D": "AとCの両方が賛成のときだけ反対。"
+      },
+      "choices": {
+        "1": {
+          "value": "Cの賛成はAとBがともに賛成のときだけ",
+          "verdict": "条件に一致しない候補",
+          "reason": "A=B=1ならC=0であり規則と逆である。"
+        },
+        "2": {
+          "value": "Cの賛成はAとBの賛否が異なるときだけ",
+          "verdict": "条件に一致しない候補",
+          "reason": "A=B=0でもC=1なので、異なるときだけという限定は誤りである。"
+        },
+        "3": {
+          "value": "Dの賛成はAとBがともに賛成のときだけ",
+          "verdict": "条件に一致しない候補",
+          "reason": "A=B=0でもD=1となり、両者賛成のときだけではない。"
+        },
+        "4": {
+          "value": "Dの賛成はAとBの賛否が異なるときだけ",
+          "verdict": "条件に一致しない候補",
+          "reason": "A=B=1でもD=1であり、異なるときだけではない。"
+        },
+        "5": {
+          "value": "Bが賛成すれば必ずDも賛成",
+          "verdict": "条件に一致する候補",
+          "reason": "Dは否定A又はBに簡約されるので、B=1ならAにかかわらずD=1となる。"
+        }
+      },
+      "figures": "問題幹・数値・記号・5肢を画像確認。図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/basic/page_005.png"
+      ],
+      "summary": "住民CとDの賛否規則を論理式へ変換し、必ず成り立つ記述を選ぶ。",
+      "core_concept": "自然言語のNANDと含意",
+      "required_knowledge": "論理積の否定、代入、吸収律、十分条件。",
+      "solution": "\\(C=\\overline{AB}\\)、\\(D=\\overline{AC}\\)である。代入して\\(D=\\overline A+AB=\\overline A+B\\)となる。A,Bの入力00,01,10,11に対するDは1,1,0,1であり、B=1の2行では必ずD=1となる。",
+      "independent_answer": "5",
+      "answer_reason": "B=1を代入するとD=否定A又は1=1となる。",
+      "learning_points": "定義と条件から自然言語のNANDと含意を構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:boolean"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "concept_017",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心は自然言語のNANDと含意であり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-BASIC-2-5",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "stem": "2つの8ビット列を含む反復XORと最後のANDの結果を求める。",
+      "conditions": {
+        "A": "01011101",
+        "B": "10101101",
+        "演算": "\\(C=(((A\\oplus B)\\oplus B)\\oplus A)\\cdot A\\)",
+        "定義": "XORとANDは各桁で独立に作用する。"
+      },
+      "choices": {
+        "1": {
+          "value": "00000000",
+          "verdict": "条件に一致する候補",
+          "reason": "XORで同じBと同じAがそれぞれ相殺され、ゼロ列とAのANDもゼロ列となる。"
+        },
+        "2": {
+          "value": "11111111",
+          "verdict": "条件に一致しない候補",
+          "reason": "全ビット1ではなく、括弧内はゼロ列となる。"
+        },
+        "3": {
+          "value": "10101101",
+          "verdict": "条件に一致しない候補",
+          "reason": "入力Bを残す候補だが、Bは2回XORされて消える。"
+        },
+        "4": {
+          "value": "01011101",
+          "verdict": "条件に一致しない候補",
+          "reason": "入力Aを残す候補だが、括弧内でAも2回XORされて消える。"
+        },
+        "5": {
+          "value": "11110000",
+          "verdict": "条件に一致しない候補",
+          "reason": "A XOR Bの途中結果であり、その後のBとAのXORを省略している。"
+        }
+      },
+      "figures": "問題幹・数値・記号・5肢を画像確認。図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/basic/page_008.png"
+      ],
+      "summary": "2つの8ビット列を含む反復XORと最後のANDの結果を求める。",
+      "core_concept": "XORの自己逆性とビット列演算",
+      "required_knowledge": "XORの交換・結合律、自己相殺、ANDとゼロ。",
+      "solution": "XORの結合律と\\(X\\oplus X=0\\)により、括弧内は\\(A\\oplus A\\oplus B\\oplus B=0\\)である。最後に\\(0\\cdot A=0\\)なので8ビットとも0になる。直接計算しても11110000→01011101→00000000→00000000となる。",
+      "independent_answer": "1",
+      "answer_reason": "同じビット列を2回XORすると消え、最後のANDでもゼロ列が保たれる。",
+      "learning_points": "定義と条件からXORの自己逆性とビット列演算を構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:boolean"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "concept_017",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心はXORの自己逆性とビット列演算であり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-BASIC-2-2",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "stem": "実数の等式と不等式の2組について必要条件・十分条件を判定する。",
+      "conditions": {
+        "領域": "x,yは実数。",
+        "ア": "x²+y²=0はx=y=0であるための条件。",
+        "イ": "x+y>2はx>1又はy>1であるための条件。"
+      },
+      "choices": {
+        "1": {
+          "value": "ア必要十分／イ必要だが十分でない",
+          "verdict": "条件に一致しない候補",
+          "reason": "アは合うが、イの含意の向きが逆である。"
+        },
+        "2": {
+          "value": "ア必要十分／イ十分だが必要でない",
+          "verdict": "条件に一致する候補",
+          "reason": "実数平方の非負性でアは双方向に成立し、イは一方向のみ成立する。"
+        },
+        "3": {
+          "value": "ア十分だが必要でない／イ必要十分",
+          "verdict": "条件に一致しない候補",
+          "reason": "アも双方向に成立し、イは逆向きに成立しないので両欄が異なる。"
+        },
+        "4": {
+          "value": "ア十分だが必要でない／イ必要だが十分でない",
+          "verdict": "条件に一致しない候補",
+          "reason": "アは必要でもあり、イは十分側であるため両欄が異なる。"
+        },
+        "5": {
+          "value": "ア必要だが十分でない／イ十分だが必要でない",
+          "verdict": "条件に一致しない候補",
+          "reason": "イは合うが、アは十分でもある。"
+        }
+      },
+      "figures": "問題幹・数値・記号・5肢を画像確認。図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/basic/page_006.png"
+      ],
+      "summary": "実数の等式と不等式の2組について必要条件・十分条件を判定する。",
+      "core_concept": "必要条件・十分条件と対偶",
+      "required_knowledge": "実数平方の非負性、含意の方向、対偶、反例。",
+      "solution": "実数平方は非負なので和が0なら両者0、逆も成り立つ。イでx≤1かつy≤1ならx+y≤2なので、対偶によりx+y>2ならx>1又はy>1となる。逆はx=2、y=-100で成立しない。したがってアは必要十分、イは十分だが必要でない。",
+      "independent_answer": "2",
+      "answer_reason": "アは同値、イは和が2より大きい条件から一方向に含意し逆向きに反例がある。",
+      "learning_points": "定義と条件から必要条件・十分条件と対偶を構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:implication"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "concept_017",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心は必要条件・十分条件と対偶であり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-BASIC-2-4",
+      "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+      "stem": "全100万件中の2語の出現数から、一方のみを含む件数の可能範囲を求める。",
+      "conditions": {
+        "全集合": "100万件",
+        "L": "論理を含む65万件",
+        "I": "情報を含む55万件",
+        "求める量": "Lを含みIを含まない件数k。"
+      },
+      "choices": {
+        "1": {
+          "value": "0〜35万",
+          "verdict": "条件に一致しない候補",
+          "reason": "重なりは最大55万なのでkの最小値は10万であり、0まで許す範囲は不正確である。"
+        },
+        "2": {
+          "value": "0〜45万",
+          "verdict": "条件に一致しない候補",
+          "reason": "最大値45万は合うが、最小値は10万である。"
+        },
+        "3": {
+          "value": "0〜65万",
+          "verdict": "条件に一致しない候補",
+          "reason": "最小値も最大値も実際の可能範囲より広い。"
+        },
+        "4": {
+          "value": "10〜45万",
+          "verdict": "条件に一致する候補",
+          "reason": "重なり20〜55万に対して65万から差し引いた範囲10〜45万に一致する。"
+        },
+        "5": {
+          "value": "10〜65万",
+          "verdict": "条件に一致しない候補",
+          "reason": "最小値は合うが、重なりは少なくとも20万あり、最大値は45万となる。"
+        }
+      },
+      "figures": "問題幹・数値・記号・5肢を画像確認。図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H25/basic/page_008.png"
+      ],
+      "summary": "全100万件中の2語の出現数から、一方のみを含む件数の可能範囲を求める。",
+      "core_concept": "集合の重なりの上下限",
+      "required_knowledge": "包含排除、共通部分は小さい方以下、和集合は全集合以下。",
+      "solution": "重なりを\\(t=|L\\cap I|\\)とおく。和集合が100万を超えないので\\(t\\ge65+55-100=20\\)万、一方\\(t\\le55\\)万である。\\(k=65-t\\)より\\(10\\le k\\le45\\)万となる。",
+      "independent_answer": "4",
+      "answer_reason": "包含排除から重なりの両端20万・55万を求めるとkは10〜45万となる。",
+      "learning_points": "定義と条件から集合の重なりの上下限を構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:sets"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "concept_017",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心は集合の重なりの上下限であり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-BASIC-2-5",
+      "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+      "stem": "情報の出現数と情報・論理の共通部分から、論理を含まない件数の範囲を求める。",
+      "conditions": {
+        "全集合": "100万件",
+        "I": "情報を含む65万件",
+        "共通部分": "情報と論理の両方を含む55万件",
+        "求める量": "論理を含まない件数k。"
+      },
+      "choices": {
+        "1": {
+          "value": "10〜45万",
+          "verdict": "条件に一致する候補",
+          "reason": "情報を含み論理を含まない10万件に、情報を含まない35万件のうち0〜35万件が加わり、正確な範囲である。"
+        },
+        "2": {
+          "value": "10〜55万",
+          "verdict": "条件に一致しない候補",
+          "reason": "上限55万は、論理を含む55万件以上が既にあることに反する。"
+        },
+        "3": {
+          "value": "10〜65万",
+          "verdict": "条件に一致しない候補",
+          "reason": "上限65万は、論理を含む件数の既知下限55万を満たさない。"
+        },
+        "4": {
+          "value": "45〜65万",
+          "verdict": "条件に一致しない候補",
+          "reason": "下限45万は誤りであり、情報外の全35万件が論理を含むならk=10万である。"
+        },
+        "5": {
+          "value": "45〜90万",
+          "verdict": "条件に一致しない候補",
+          "reason": "上限90万と下限45万はいずれも既知の共通部分と情報のみの10万件から得る範囲に合わない。"
+        }
+      },
+      "figures": "問題幹・数値・記号・5肢を画像確認。図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/basic/page_010.png"
+      ],
+      "summary": "情報の出現数と情報・論理の共通部分から、論理を含まない件数の範囲を求める。",
+      "core_concept": "集合の部分情報と補集合の範囲",
+      "required_knowledge": "集合の差、既知共通部分、未知領域の上下限。",
+      "solution": "情報を含むが論理を含まない部分は65-55=10万件である。情報外の35万件は、すべて論理を含む場合から一切含まない場合までありうる。よってkは10万から10+35=45万までである。H25の2語それぞれの出現数の条件と取り違えない。",
+      "independent_answer": "1",
+      "answer_reason": "必ず論理を含まない10万件と、残りの可変0〜35万件の和である。",
+      "learning_points": "定義と条件から集合の部分情報と補集合の範囲を構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:sets"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "concept_017",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心は集合の部分情報と補集合の範囲であり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-BASIC-2-6",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "stem": "3部分集合の交差数と和集合の外側の数から全集合の元の個数を求める。",
+      "conditions": {
+        "各集合": "|A|=300、|B|=180、|C|=120。",
+        "2集合交差": "|A∩B|=60、|A∩C|=40、|B∩C|=20。",
+        "3集合交差": "|A∩B∩C|=10。",
+        "外側": "A∪B∪Cの補集合の元は400個。"
+      },
+      "choices": {
+        "1": {
+          "value": "600",
+          "verdict": "条件に一致しない候補",
+          "reason": "300+180+120の単純和であり、交差と外側400を扱っていない。"
+        },
+        "2": {
+          "value": "720",
+          "verdict": "条件に一致しない候補",
+          "reason": "包含排除と外側を加えた890に一致しない。各領域の計数が必要である。"
+        },
+        "3": {
+          "value": "730",
+          "verdict": "条件に一致しない候補",
+          "reason": "包含排除の和集合490と外側400の和に一致しない。"
+        },
+        "4": {
+          "value": "890",
+          "verdict": "条件に一致する候補",
+          "reason": "600-(60+40+20)+10=490に外側400を加えた890に一致する。"
+        },
+        "5": {
+          "value": "1000",
+          "verdict": "条件に一致しない候補",
+          "reason": "各集合の単純和600と外側400を加え、重複110を除いていない。"
+        }
+      },
+      "figures": "問題幹・数値・記号・5肢を画像確認。図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/basic/page_008.png",
+        "extracted/pages/R05/basic/page_009.png"
+      ],
+      "summary": "3部分集合の交差数と和集合の外側の数から全集合の元の個数を求める。",
+      "core_concept": "3集合の包含排除と補集合",
+      "required_knowledge": "重複計数、3重交差の符号、全集合の分割。",
+      "solution": "3集合の和集合は\\(|A\\cup B\\cup C|=300+180+120-60-40-20+10=490\\)である。3重交差の元は最初3回足し、2重交差として3回引いているので最後に1回加える。外側400を加えて全集合は890個となる。",
+      "independent_answer": "4",
+      "answer_reason": "包含排除で和集合490、補集合400と互いに排反な和をとり890となる。",
+      "learning_points": "定義と条件から3集合の包含排除と補集合を構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:sets"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "concept_017",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心は3集合の包含排除と補集合であり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-BASIC-2-6",
+      "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+      "stem": "4要素と2要素の直積から2要素集合へ送る写像の総数を求める。",
+      "conditions": {
+        "集合": "A={a,b,c,d}、B={α,β}、C={0,1}。",
+        "対象": "任意の写像f:A×B→C。単射・全射などの追加制約なし。"
+      },
+      "choices": {
+        "1": {
+          "value": "32",
+          "verdict": "条件に一致しない候補",
+          "reason": "2⁵であり、独立に像を選ぶ8要素を5要素と誤って数えている。"
+        },
+        "2": {
+          "value": "64",
+          "verdict": "条件に一致しない候補",
+          "reason": "2⁶であり、直積を4+2=6とする和の計数と混同している。"
+        },
+        "3": {
+          "value": "128",
+          "verdict": "条件に一致しない候補",
+          "reason": "2⁷であり、直積の8個すべての像の選択を数えていない。"
+        },
+        "4": {
+          "value": "256",
+          "verdict": "条件に一致する候補",
+          "reason": "直積には4×2=8個あり、各要素に2通りの像を独立に選べるので2⁸である。"
+        },
+        "5": {
+          "value": "512",
+          "verdict": "条件に一致しない候補",
+          "reason": "2⁹であり、独立の入力を1個多く数えている。"
+        }
+      },
+      "figures": "問題幹・数値・記号・5肢を画像確認。図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/basic/page_010.png",
+        "extracted/pages/R01_retest/basic/page_011.png"
+      ],
+      "summary": "4要素と2要素の直積から2要素集合へ送る写像の総数を求める。",
+      "core_concept": "直積と写像の個数",
+      "required_knowledge": "積の法則、定義域の濃度、写像・単射・全射の区別。",
+      "solution": "定義域A×Bの要素数は4×2=8である。各入力の像を0か1から独立に選べるので、写像は2⁸=256通りである。同じ像が何回使われてもよく、像として両方を使う義務もない。",
+      "independent_answer": "4",
+      "answer_reason": "8入力について各2通りの選択を積の法則で数え、256となる。",
+      "learning_points": "定義と条件から直積と写像の個数を構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:sets"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "concept_017",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心は直積と写像の個数であり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-2-4",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "4・100・400によるうるう年規則を、条件と動作の決定表へ対応させる。",
+      "conditions": {
+        "規則": "4で割り切れ100で割り切れない、又は400で割り切れる年がうるう年。",
+        "表条件3行": "4、100、400でそれぞれ割り切れるか。",
+        "4列": "(N,−,−)、(Y,N,−)、(Y,Y,N)、(Y,Y,Y)。全候補の条件部は一致。",
+        "動作行": "うるう年／平年の排他的2行。候補値は表のうるう年実行をY、平年実行をNへ符号化したもの。",
+        "表記": "原典のX=実行、−=不実行。条件部の−は不要又は不可能。"
+      },
+      "choices": {
+        "1": {
+          "value": "4条件列でのうるう年判定：NYYY（Y=うるう年、N=平年）",
+          "verdict": "条件に一致しない候補",
+          "reason": "1900年は平年であるがうるう年としている。"
+        },
+        "2": {
+          "value": "4条件列でのうるう年判定：NNYY（Y=うるう年、N=平年）",
+          "verdict": "条件に一致しない候補",
+          "reason": "2024年はうるう年であるが平年としている。1900年は平年であるがうるう年としている。"
+        },
+        "3": {
+          "value": "4条件列でのうるう年判定：NYNY（Y=うるう年、N=平年）",
+          "verdict": "条件に一致する候補",
+          "reason": "4つの有効な条件列がすべて規則に一致する。"
+        },
+        "4": {
+          "value": "4条件列でのうるう年判定：NYNN（Y=うるう年、N=平年）",
+          "verdict": "条件に一致しない候補",
+          "reason": "2000年はうるう年であるが平年としている。"
+        },
+        "5": {
+          "value": "4条件列でのうるう年判定：NNNY（Y=うるう年、N=平年）",
+          "verdict": "条件に一致しない候補",
+          "reason": "2024年はうるう年であるが平年としている。"
+        }
+      },
+      "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/basic/page_009.png"
+      ],
+      "summary": "4・100・400によるうるう年規則を、条件と動作の決定表へ対応させる。",
+      "core_concept": "含意制約のある決定表",
+      "required_knowledge": "400の倍数⇒100の倍数⇒4の倍数、AND・OR・NOT、条件の不要欄、動作の排他。",
+      "solution": "400の倍数なら100と4の倍数でもある。実現する4条件列は「4で不可」「4で可・100で不可」「100で可・400で不可」「400で可」であり、判定は平年、うるう年、平年、うるう年の順になる。論理式は\\(L=F_4\\overline{F_{100}}+F_{400}\\)である。4列すべてをこの順に照合する。",
+      "independent_answer": "3",
+      "answer_reason": "4条件列の判定NYNYをすべて満たす表を選ぶ。",
+      "learning_points": "定義と条件から含意制約のある決定表を構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:decision"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "concept_017",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心は含意制約のある決定表であり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-BASIC-2-4",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "stem": "4・100・400によるうるう年規則を、条件と動作の決定表へ対応させる。",
+      "conditions": {
+        "規則": "4で割り切れ100で割り切れない、又は400で割り切れる年がうるう年。",
+        "表条件3行": "4、100、400でそれぞれ割り切れるか。",
+        "4列": "(N,−,−)、(Y,N,−)、(Y,Y,N)、(Y,Y,Y)。全候補の条件部は一致。",
+        "動作行": "うるう年／平年の排他的2行。候補値は表のうるう年実行をY、平年実行をNへ符号化したもの。",
+        "表記": "原典のX=実行、−=不実行。条件部の−は不要又は不可能。"
+      },
+      "choices": {
+        "1": {
+          "value": "4条件列でのうるう年判定：NYYY（Y=うるう年、N=平年）",
+          "verdict": "条件に一致しない候補",
+          "reason": "1900年は平年であるがうるう年としている。"
+        },
+        "2": {
+          "value": "4条件列でのうるう年判定：NYNY（Y=うるう年、N=平年）",
+          "verdict": "条件に一致する候補",
+          "reason": "4つの有効な条件列がすべて規則に一致する。"
+        },
+        "3": {
+          "value": "4条件列でのうるう年判定：NNYY（Y=うるう年、N=平年）",
+          "verdict": "条件に一致しない候補",
+          "reason": "2024年はうるう年であるが平年としている。1900年は平年であるがうるう年としている。"
+        },
+        "4": {
+          "value": "4条件列でのうるう年判定：NYNN（Y=うるう年、N=平年）",
+          "verdict": "条件に一致しない候補",
+          "reason": "2000年はうるう年であるが平年としている。"
+        },
+        "5": {
+          "value": "4条件列でのうるう年判定：NNNY（Y=うるう年、N=平年）",
+          "verdict": "条件に一致しない候補",
+          "reason": "2024年はうるう年であるが平年としている。"
+        }
+      },
+      "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/basic/page_008.png"
+      ],
+      "summary": "4・100・400によるうるう年規則を、条件と動作の決定表へ対応させる。",
+      "core_concept": "含意制約のある決定表",
+      "required_knowledge": "400の倍数⇒100の倍数⇒4の倍数、AND・OR・NOT、条件の不要欄、動作の排他。",
+      "solution": "400の倍数なら100と4の倍数でもある。実現する4条件列は「4で不可」「4で可・100で不可」「100で可・400で不可」「400で可」であり、判定は平年、うるう年、平年、うるう年の順になる。論理式は\\(L=F_4\\overline{F_{100}}+F_{400}\\)である。4列すべてをこの順に照合する。",
+      "independent_answer": "2",
+      "answer_reason": "4条件列の判定NYNYをすべて満たす表を選ぶ。",
+      "learning_points": "定義と条件から含意制約のある決定表を構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:decision"
+      ],
+      "discipline_id": "basic_2_4",
+      "concept_id": "concept_017",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心は含意制約のある決定表であり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-BASIC-2-2",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "再帰的な生成規則が表す6文字の二進記号列を選ぶ。",
+      "conditions": {
+        "規則": "S ::= 01 | 0S1。|は生成規則の選択。",
+        "対象": "整数への数値変換ではなく、0と1の列の生成。"
+      },
+      "choices": {
+        "1": {
+          "value": "000000",
+          "verdict": "条件に一致しない候補",
+          "reason": "規則の基底01に1があり、1を含まない列は生成できない。"
+        },
+        "2": {
+          "value": "000111",
+          "verdict": "条件に一致する候補",
+          "reason": "S→0S1→00S11→000111と生成できる。"
+        },
+        "3": {
+          "value": "001011",
+          "verdict": "条件に一致しない候補",
+          "reason": "0と1は同数だが、1の後に0が出るため規則が作る順序に反する。"
+        },
+        "4": {
+          "value": "010101",
+          "verdict": "条件に一致しない候補",
+          "reason": "01の単なる繰返しは、0で囲んだ内側が再びSになる規則では作れない。"
+        },
+        "5": {
+          "value": "011111",
+          "verdict": "条件に一致しない候補",
+          "reason": "0と1の個数が異なり、両端へ1個ずつ付ける規則の不変量に反する。"
+        }
+      },
+      "figures": "問題幹・数値・記号・5肢を画像確認。図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/basic/page_005.png"
+      ],
+      "summary": "再帰的な生成規則が表す6文字の二進記号列を選ぶ。",
+      "core_concept": "再帰規則の不変量と形式言語",
+      "required_knowledge": "基底ケース、再帰で両端に付ける操作、記号の個数・順序。",
+      "solution": "基底は01である。再帰適用1回で0011、2回で000111となる。生成されるのは0をn個続けた後に1をn個続ける列（n≥1）であり、6文字ならn=3なので000111である。",
+      "independent_answer": "2",
+      "answer_reason": "長さ6で生成できる列は0³1³の000111のみである。",
+      "learning_points": "定義と条件から再帰規則の不変量と形式言語を構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:grammar"
+      ],
+      "discipline_id": "basic_2_0",
+      "concept_id": "concept_020",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心は再帰規則の不変量と形式言語であり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-2-2",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "ユークリッド互除法の流れ図で、継続・終了条件と出力変数を選ぶ。",
+      "conditions": {
+        "入力": "A,Bは正の自然数。",
+        "反復": "R←AをBで割った余り。非零ならA←B、B←Rとして反復。",
+        "空欄": "アは出力への横分岐、イはA←B、B←Rへの下分岐。",
+        "候補順": "ア／イ／ウ"
+      },
+      "choices": {
+        "1": {
+          "value": "R=0／R≠0／A",
+          "verdict": "条件に一致しない候補",
+          "reason": "終了時の最大公約数はBであり、Aではない。AはBの倍数で、Rは0である。"
+        },
+        "2": {
+          "value": "R=0／R≠0／B",
+          "verdict": "条件に一致する候補",
+          "reason": "非零で更新、零で終了しBを出力する正しい対応である。"
+        },
+        "3": {
+          "value": "R=0／R≠0／R",
+          "verdict": "条件に一致しない候補",
+          "reason": "終了時の最大公約数はBであり、Rではない。AはBの倍数で、Rは0である。"
+        },
+        "4": {
+          "value": "R≠0／R=0／A",
+          "verdict": "条件に一致しない候補",
+          "reason": "分岐が逆で、余り0で更新しB=0を作るか、非零の余りで途中終了する。終了時の最大公約数はBであり、Aではない。AはBの倍数で、Rは0である。"
+        },
+        "5": {
+          "value": "R≠0／R=0／B",
+          "verdict": "条件に一致しない候補",
+          "reason": "分岐が逆で、余り0で更新しB=0を作るか、非零の余りで途中終了する。"
+        }
+      },
+      "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/basic/page_006.png"
+      ],
+      "summary": "ユークリッド互除法の流れ図で、継続・終了条件と出力変数を選ぶ。",
+      "core_concept": "最大公約数を保存する反復と停止",
+      "required_knowledge": "除法の等式、公約数の保存、余りの減少、終了時の出力。",
+      "solution": "\\(A=QB+R\\)より共通の約数は組(A,B)と(B,R)で変わらない。余りが非零なら後者へ更新し、余り0ならBが最大公約数である。終了前にB←0と更新してはいけない。原典矢印上のア・イの位置を個別に読み、候補番号を年度間で流用しない。",
+      "independent_answer": "2",
+      "answer_reason": "余り非零で更新、余り零で終了、出力はBという3条件を満たす。",
+      "learning_points": "定義と条件から最大公約数を保存する反復と停止を構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:euclid"
+      ],
+      "discipline_id": "basic_2_8",
+      "concept_id": "concept_020",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心は最大公約数を保存する反復と停止であり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-BASIC-2-2",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "stem": "ユークリッド互除法の流れ図で、継続・終了条件と出力変数を選ぶ。",
+      "conditions": {
+        "入力": "A,Bは正の自然数。",
+        "反復": "R←AをBで割った余り。非零ならA←B、B←Rとして反復。",
+        "空欄": "アは更新への下分岐、イは出力への横分岐。H26とはアとイの位置が逆。",
+        "候補順": "ア／イ／ウ"
+      },
+      "choices": {
+        "1": {
+          "value": "R=0／R≠0／A",
+          "verdict": "条件に一致しない候補",
+          "reason": "分岐が逆で、余り0で更新しB=0を作るか、非零の余りで途中終了する。終了時の最大公約数はBであり、Aではない。AはBの倍数で、Rは0である。"
+        },
+        "2": {
+          "value": "R≠0／R=0／A",
+          "verdict": "条件に一致しない候補",
+          "reason": "終了時の最大公約数はBであり、Aではない。AはBの倍数で、Rは0である。"
+        },
+        "3": {
+          "value": "R=0／R≠0／B",
+          "verdict": "条件に一致しない候補",
+          "reason": "分岐が逆で、余り0で更新しB=0を作るか、非零の余りで途中終了する。"
+        },
+        "4": {
+          "value": "R≠0／R=0／B",
+          "verdict": "条件に一致する候補",
+          "reason": "非零で更新、零で終了しBを出力する正しい対応である。"
+        },
+        "5": {
+          "value": "R≠0／R=0／R",
+          "verdict": "条件に一致しない候補",
+          "reason": "終了時の最大公約数はBであり、Rではない。AはBの倍数で、Rは0である。"
+        }
+      },
+      "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/basic/page_006.png"
+      ],
+      "summary": "ユークリッド互除法の流れ図で、継続・終了条件と出力変数を選ぶ。",
+      "core_concept": "最大公約数を保存する反復と停止",
+      "required_knowledge": "除法の等式、公約数の保存、余りの減少、終了時の出力。",
+      "solution": "\\(A=QB+R\\)より共通の約数は組(A,B)と(B,R)で変わらない。余りが非零なら後者へ更新し、余り0ならBが最大公約数である。終了前にB←0と更新してはいけない。原典矢印上のア・イの位置を個別に読み、候補番号を年度間で流用しない。",
+      "independent_answer": "4",
+      "answer_reason": "余り非零で更新、余り零で終了、出力はBという3条件を満たす。",
+      "learning_points": "定義と条件から最大公約数を保存する反復と停止を構成し、成立の証明と誤った候補の反例を区別する。",
+      "theory_references": [
+        "theory:information:euclid"
+      ],
+      "discipline_id": "basic_2_8",
+      "concept_id": "concept_020",
+      "classification_reason": "原典の否定範囲・条件・全5肢を画像照合。核心は最大公約数を保存する反復と停止であり、用語の混入ではなく解法に従って分類する。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "数学の素養により原理は既習だが、ブール演算の記号、表の空欄と分岐を正確に読む必要がある。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

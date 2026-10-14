@@ -1,0 +1,45 @@
+{
+  "stem": "2015年策定の2030電源見通しを読む。",
+  "conditions": {
+    "時点": "平成28年度に指定された資料・制度。",
+    "照合": "原典21画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "石油25–27%",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "2": {
+      "value": "再エネ22–24%",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "原子力20–22%",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "自給率約25%と準国産",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "5": {
+      "value": "省エネで最終消費低下",
+      "verdict": "条件内で適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "2015公開関連資料の検索と白書骨子を参照。策定7月の最終PDFの全図表照合は未了で後工程に残す。",
+  "evidence": [
+    "extracted/pages/H28/basic/page_023.png"
+  ],
+  "question_id": "H28-REG-BASIC-5-4",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "23",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "93533146c2ef3db0a6edd095bafb8d71712313787894ac148749acddb86a3021",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,44 @@
+{
+  "stem": "流紋岩・安山岩・玄武岩に共通する主要な造岩鉱物を選ぶ。",
+  "conditions": {
+    "方向": "条件に最も該当する鉱物を選ぶ。"
+  },
+  "choices": {
+    "1": {
+      "value": "石英",
+      "verdict": "条件に不一致",
+      "reason": "石英は流紋岩などで一般的だが、通常の玄武岩に共通する主要鉱物ではない。"
+    },
+    "2": {
+      "value": "斜長石",
+      "verdict": "条件に一致",
+      "reason": "Na側からCa側まで組成が変わる斜長石は、珪長質から苦鉄質まで広く出現する。"
+    },
+    "3": {
+      "value": "黒雲母",
+      "verdict": "条件に不一致",
+      "reason": "黒雲母は一般的な玄武岩に共通する主要鉱物ではない。"
+    },
+    "4": {
+      "value": "輝石",
+      "verdict": "条件に不一致",
+      "reason": "輝石は苦鉄質〜中性岩で一般的だが、通常の流紋岩に共通する主要鉱物とはいえない。"
+    },
+    "5": {
+      "value": "かんらん石",
+      "verdict": "条件に不一致",
+      "reason": "かんらん石は苦鉄質岩側で特徴的で、流紋岩には一般的でない。"
+    }
+  },
+  "figures": "図なし。原典頁画像で選択方向、観察条件、鉱物名と全5肢を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_011.png"
+  ],
+  "question_id": "H27-REG-APPLIED-30",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "1c14ca37ec41a59b80702ef45cd7fc81aba9492ab794577ff0efad25960ab16d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

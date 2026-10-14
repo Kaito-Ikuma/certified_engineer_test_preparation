@@ -1,0 +1,47 @@
+{
+  "stem": "01011の5桁を固定して、2の補数と1の補数を求める。",
+  "conditions": {
+    "対象二進数": "01011",
+    "桁数": 5,
+    "定義": "2の補数は2^k-X、1の補数は(2^k-1)-X。",
+    "空欄順": "2の補数／1の補数"
+  },
+  "choices": {
+    "1": {
+      "value": "11011／10100",
+      "verdict": "不適切な解答候補",
+      "reason": "2の補数は10101であり、11011ではない。"
+    },
+    "2": {
+      "value": "10101／11011",
+      "verdict": "不適切な解答候補",
+      "reason": "1の補数は10100であり、11011ではない。"
+    },
+    "3": {
+      "value": "10101／10100",
+      "verdict": "適切な解答候補",
+      "reason": "2の補数と1の補数がともに一致する。"
+    },
+    "4": {
+      "value": "10100／10101",
+      "verdict": "不適切な解答候補",
+      "reason": "2の補数は10101であり、10100ではない。1の補数は10100であり、10101ではない。"
+    },
+    "5": {
+      "value": "11011／11011",
+      "verdict": "不適切な解答候補",
+      "reason": "2の補数は10101であり、11011ではない。1の補数は10100であり、11011ではない。"
+    }
+  },
+  "figures": "図なし。5肢の値または記述を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/basic/page_008.png"
+  ],
+  "question_id": "H30-REG-BASIC-2-3",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "40e5b16d93dcaa979336ba8370ed0ecb36173938d86c5d6c19730c2083dd593c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

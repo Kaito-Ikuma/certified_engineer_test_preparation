@@ -1,0 +1,16 @@
+{
+  "status": "committed",
+  "time": "2026-10-10T21:08:41+09:00",
+  "paths": [
+    "data/unresolved.csv",
+    "extracted/logs/audit_metrics.json"
+  ],
+  "existed": {
+    "data/unresolved.csv": true,
+    "extracted/logs/audit_metrics.json": true
+  },
+  "sha256": {
+    "data/unresolved.csv": "50d73b749918ff12da4af4e0c49d5dbb2487ca35700881022fc00e06f2c26104",
+    "extracted/logs/audit_metrics.json": "429a6e084e137e1ab6f85f0f5e32a4c75d2985584cd65af63830a44ab53b22d4"
+  }
+}

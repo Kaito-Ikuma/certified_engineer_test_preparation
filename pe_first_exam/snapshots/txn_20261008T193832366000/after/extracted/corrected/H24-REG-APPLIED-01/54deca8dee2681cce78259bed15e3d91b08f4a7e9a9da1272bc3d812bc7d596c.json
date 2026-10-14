@@ -1,0 +1,48 @@
+{
+  "stem": "摩擦のない曲面を静止状態から10 m下った質量0.1 kgの物体の速さを求める。",
+  "conditions": {
+    "mass_kg": 0.1,
+    "height_drop_m": 10,
+    "g_m_s2": 9.8,
+    "initial_speed": 0,
+    "friction": "none"
+  },
+  "choices": {
+    "1": {
+      "value": "7 m/s",
+      "verdict": "不採用",
+      "reason": "必要な運動エネルギーの1/4しか持たない。"
+    },
+    "2": {
+      "value": "10 m/s",
+      "verdict": "不採用",
+      "reason": "v²=100であり、指定された2gh=196と一致しない。"
+    },
+    "3": {
+      "value": "14 m/s",
+      "verdict": "採用",
+      "reason": "v²=196=2ghを満たす。"
+    },
+    "4": {
+      "value": "20 m/s",
+      "verdict": "不採用",
+      "reason": "指定された落差で得られる運動エネルギーより大きい。"
+    },
+    "5": {
+      "value": "28 m/s",
+      "verdict": "不採用",
+      "reason": "必要速度の2倍で、エネルギーは4倍となり保存則を満たさない。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_001.png"
+  ],
+  "question_id": "H24-REG-APPLIED-01",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "d5b0a773933d57e739978d735a0cabad51970ca7c3875aa031ca1c908548a9d9",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

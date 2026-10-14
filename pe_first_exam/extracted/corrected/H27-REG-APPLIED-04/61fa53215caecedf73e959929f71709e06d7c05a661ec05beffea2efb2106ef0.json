@@ -1,0 +1,45 @@
+{
+  "stem": "電荷・力・圧力・仕事率・抵抗の基本単位指数を確認する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(\\mathrm{C=s\\,A}\\)",
+      "verdict": "適切",
+      "reason": "電荷Q=ItよりC=Asである。"
+    },
+    "2": {
+      "value": "\\(\\mathrm{N=m\\,kg\\,s^{-2}}\\)",
+      "verdict": "適切",
+      "reason": "力F=maからN=\\(\\mathrm{kg\\,m\\,s^{-2}}\\)である。"
+    },
+    "3": {
+      "value": "\\(\\mathrm{Pa=m^{-1}kg\\,s^{-2}}\\)",
+      "verdict": "適切",
+      "reason": "圧力p=F/SからPa=\\(\\mathrm{kg\\,m^{-1}s^{-2}}\\)である。"
+    },
+    "4": {
+      "value": "\\(\\mathrm{W=m\\,kg\\,s^{-3}}\\)",
+      "verdict": "不適切",
+      "reason": "仕事率はエネルギーを時間で割りW=\\(\\mathrm{kg\\,m^2s^{-3}}\\)である。原典は長さ指数1であり、仕事の移動距離が一つ不足する。"
+    },
+    "5": {
+      "value": "\\(\\Omega=\\mathrm{m^2kg\\,s^{-3}A^{-2}}\\)",
+      "verdict": "適切",
+      "reason": "抵抗R=V/IからΩ=\\(\\mathrm{kg\\,m^2s^{-3}A^{-2}}\\)である。"
+    }
+  },
+  "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+  "ambiguity": "原典の導入は6基本単位だけを列挙し、光度のcdを欠いてその他全部を組立できるとする。SIは出題時も7基本単位である。選択肢内の指数誤りは特定できるが導入の全称を正しい記述として校正完了にしない。",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_002.png"
+  ],
+  "question_id": "H27-REG-APPLIED-04",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "1bc354c2238e9e72c70cf3ff6c8d1ed396cedc9a67dacc639a09445a8109d852",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

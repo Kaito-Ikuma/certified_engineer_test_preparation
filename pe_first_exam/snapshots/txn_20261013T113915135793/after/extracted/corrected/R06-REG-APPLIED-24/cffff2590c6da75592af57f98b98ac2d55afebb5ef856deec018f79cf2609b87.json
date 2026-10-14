@@ -1,0 +1,45 @@
+{
+  "stem": "黒鉱と炭酸塩岩を交代するスカルンを区別する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "黒鉱と炭酸塩岩を交代するスカルンを区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "縞状鉄鉱の珪質層と鉄鉱物層",
+      "verdict": "代表的条件で適切",
+      "reason": "珪質物と鉄鉱物に富む層が交互に現れる。銅の鉱床と交換しない。"
+    },
+    "2": {
+      "value": "難溶鉱物の風化残留",
+      "verdict": "代表的条件で適切",
+      "reason": "風化に伴う移動しにくい成分の相対濃集をいう。"
+    },
+    "3": {
+      "value": "黒鉱が炭酸塩岩の交代で形成",
+      "verdict": "不適切",
+      "reason": "炭酸塩岩との化学反応はスカルンの説明。黒鉱は代表的に海底火山熱水の塊状硫化物である。"
+    },
+    "4": {
+      "value": "低品位大規模の斑岩銅",
+      "verdict": "代表的条件で適切",
+      "reason": "斑岩質貫入体とその周辺の鉱染・網状細脈を持つ代表タイプ。"
+    },
+    "5": {
+      "value": "海底熱水からの沈殿",
+      "verdict": "代表的条件で適切",
+      "reason": "海底火山・熱水活動で溶けた金属が化学条件の変化で沈殿する。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_008.png"
+  ],
+  "question_id": "R06-REG-APPLIED-24",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "415e26a0fd7ed575564b3445327684c1e3e12c2e50a2f0752bfb0b83e6d0681b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

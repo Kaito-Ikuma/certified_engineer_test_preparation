@@ -1,0 +1,45 @@
+{
+  "stem": "F-K/SPAC、S波逆解析、水平層、能動起振、最短波長を比較する。",
+  "conditions": {
+    "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+    "前提": "微動のRayleigh位相速度は複数の物性へ依存するが、主にS波速度構造に強い感度を持つ。"
+  },
+  "choices": {
+    "1": {
+      "value": "同じアレイサイズでF-Kの最大波長はSPACより短い",
+      "verdict": "条件付きで適切",
+      "reason": "通常の解析性能の比較であり、実験論文の条件ではSPACがより長波長まで推定した。配置・波の入射・ノイズ・推定算法に依存するため全ての実装に無条件の大小関係を課さない。"
+    },
+    "2": {
+      "value": "観測位相速度に近いP波速度構造モデルを作る",
+      "verdict": "不適切",
+      "reason": "対象とする主な未知量をP波へ取り違える。分散はP波にも依存するが、通常はS波構造を推定し他の物性を別条件で拘束する。"
+    },
+    "3": {
+      "value": "水平多層構造を仮定して表面波から地下構造を推定する",
+      "verdict": "条件付きで適切",
+      "reason": "通常の一次元分散逆解析のモデルである。横方向変化が強い場所や他の多次元算法まで常に水平層であるとはいえない。"
+    },
+    "4": {
+      "value": "人工地表加振の表面波で一次元地下モデルを推定する",
+      "verdict": "適切",
+      "reason": "通常の浅層能動表面波探査の説明であり、周波数・波長ごとの速度を地盤の深度構造に結ぶ。"
+    },
+    "5": {
+      "value": "推定位相速度の最短波長は空間aliasingに制約される",
+      "verdict": "適切",
+      "reason": "波長に対し測点が粗いと異なる空間波数が区別できなくなる。長波長側の位相差の小ささ・有限開口の制約とは区別する。"
+    }
+  },
+  "figures": "図なし。文章又は用語の五候補を画像照合。",
+  "ambiguity": "P波速度・密度・層厚の影響もゼロでない。F-K/SPACの最大波長比較と水平層モデルは通常の解析条件の範囲で読む。",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_011.png"
+  ],
+  "question_id": "R06-REG-APPLIED-33",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "cfe6d3909a546e43be2fd94cfc2dfd32fa09b227aecff728ea6a5496da1cc615",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

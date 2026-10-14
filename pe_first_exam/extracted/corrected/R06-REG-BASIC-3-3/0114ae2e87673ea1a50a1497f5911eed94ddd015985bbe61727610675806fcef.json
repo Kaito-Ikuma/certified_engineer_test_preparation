@@ -1,0 +1,45 @@
+{
+  "stem": "Newton法の接線更新とフローチャートの終了分岐を対応させる。",
+  "conditions": {
+    "原典確認": "全5候補の符号・分母・添字・否定を原典画像で照合した。",
+    "成立条件": "f′(xn)≠0、ε>0。原図は現在xnを出力し、更新はNO側にある。局所収束には初期値と滑らかさが必要であり、実装では残差・最大反復数・有限精度停滞も確認する。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(\\Delta x=-ff^\\prime,\\ |\\Delta x|<\\varepsilon\\)",
+      "verdict": "不適切",
+      "reason": "停止の向きは合うが傾きで割らず掛けている。接線の零点へ進む増分にならない。"
+    },
+    "2": {
+      "value": "\\(\\Delta x=-f^\\prime/f,\\ |\\Delta x|>\\varepsilon\\)",
+      "verdict": "不適切",
+      "reason": "比が逆で、さらに大きい増分のとき終了する。更新式と停止条件の両方が誤る。"
+    },
+    "3": {
+      "value": "\\(\\Delta x=-f^\\prime/f,\\ |\\Delta x|<\\varepsilon\\)",
+      "verdict": "不適切",
+      "reason": "停止条件は合うが分子分母が逆である。根に近づきfが小さくなると比が大きくなり得る。"
+    },
+    "4": {
+      "value": "\\(\\Delta x=-f/f^\\prime,\\ |\\Delta x|>\\varepsilon\\)",
+      "verdict": "不適切",
+      "reason": "加算更新の増分は合うが、YES終了の条件が逆である。小さい増分で反復する判定になる。"
+    },
+    "5": {
+      "value": "\\(\\Delta x=-f/f^\\prime,\\ |\\Delta x|<\\varepsilon\\)",
+      "verdict": "条件付きで適切",
+      "reason": "図の加算更新によりx次=x−f/f′となり、小さい増分のときYESで終了する。ただし増分が小さいことだけで残差の小ささを保証しない。"
+    }
+  },
+  "figures": "図を確認：初期値と閾値→fとf′→増分→判定。YESがxn出力と終了、NOがxn+1=xn+Δxとn増加へ戻る。",
+  "ambiguity": "原図は増分だけの収束判定であり、残差・f′=0・最大反復数の処理が省略される。式の穴埋めとして公式を保持し、一般の収束保証とはしない。",
+  "evidence": [
+    "extracted/pages/R06/basic/page_011.png"
+  ],
+  "question_id": "R06-REG-BASIC-3-3",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "11",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "d3fbb2e10960b8673c0e9a06357e1f89de25127a10f8369487195d335818e54e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

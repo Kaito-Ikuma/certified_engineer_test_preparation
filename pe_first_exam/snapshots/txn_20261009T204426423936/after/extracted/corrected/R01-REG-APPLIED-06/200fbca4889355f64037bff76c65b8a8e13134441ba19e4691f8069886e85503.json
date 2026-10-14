@@ -1,0 +1,44 @@
+{
+  "stem": "熱伝導、計測、熱起電力の記述から最も不適切なものを選ぶ。",
+  "conditions": {
+    "方向": "最も不適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "ピラニ真空計は吸着による気体圧力の変化で熱伝導率を求める",
+      "verdict": "誤り",
+      "reason": "ピラニ計は加熱フィラメントから気体へ逃げる熱の圧力依存性を、抵抗や加熱電力で読み圧力へ換算する。吸着を測って熱伝導率を求める説明ではない。"
+    },
+    "2": {
+      "value": "固体の熱伝導はフォノンによるエネルギー移動を伴う",
+      "verdict": "正しい",
+      "reason": "結晶格子の振動励起がエネルギーを運ぶ。金属では伝導電子の寄与もあるので、唯一の担体とは考えない。"
+    },
+    "3": {
+      "value": "Alの熱伝導率はFeより大きい",
+      "verdict": "通常の室温材料で正しい",
+      "reason": "産総研の室温付近のデータではAlは226〜237、Feは72〜80.4W/(m・K)程度であり大小が合う。"
+    },
+    "4": {
+      "value": "異種金属の接合部の温度差は導線方向の電場を生む熱起電力に関係する",
+      "verdict": "正しい",
+      "reason": "ゼーベック効果である。異種材料の温度依存する熱電能の差を利用する。"
+    },
+    "5": {
+      "value": "フーリエの法則では熱流密度が温度勾配の大きさに比例する",
+      "verdict": "線形等方近似で正しい",
+      "reason": "熱は温度が下がる方向へ流れるのでベクトルとしては温度勾配と逆向きである。"
+    }
+  },
+  "figures": "正誤方向、全条件・数値・単位、候補5肢を原典画像で確認。図なし。組合せ問題では表の全欄を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_002.png"
+  ],
+  "question_id": "R01-REG-APPLIED-06",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "cbe44e9971760cf8610f8f08f6c0a24cb19073bab198eaedb0b594989b2eb0ab",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

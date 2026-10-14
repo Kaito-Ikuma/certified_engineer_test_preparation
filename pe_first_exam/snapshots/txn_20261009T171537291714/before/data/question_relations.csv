@@ -1,0 +1,2 @@
+﻿left_question_id,right_question_id,relation_type,shared_concept,shared_method,numerical_differences,negation_differences,choice_differences,figure_differences,temporal_differences,evidence,approval_status,source_hash_left,source_hash_right,rubric_version
+H24-REG-BASIC-3-2,H26-REG-BASIC-3-5,near_repeat,力学系の固有振動,有効剛性の直列・並列合成,"同じk,m",いずれも最小の系を選ぶ,"a,b,c,aとb,bとcの対応は同じ。のみの語の有無。","a並列,b直列,c両側固定。接続は一致。",なし,両原典領域画像を比較,verified,f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533,4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f,1.0-review1

@@ -1,0 +1,45 @@
+{
+  "stem": "電極検層の孔内流体と各検層の信号を対応させる。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "速度検層は弾性波、電極検層は比抵抗、ガンマ密度検層は校正かさ密度である。"
+  },
+  "choices": {
+    "1": {
+      "value": "ダウンホールで地表起振・孔内受振の初動走時を測る",
+      "verdict": "適切",
+      "reason": "孔壁に結合した受振器の位置と走時から区間速度を推定する。経路と屈折の補正が必要である。"
+    },
+    "2": {
+      "value": "サスペンションで孔内振源と複数受振器を用いる",
+      "verdict": "適切",
+      "reason": "孔内ゾンデの起振と受振点間の走時差により、孔軸に沿う地盤の区間速度を求める。水中のS波伝播を直接測るという意味ではない。"
+    },
+    "3": {
+      "value": "ガンマ線散乱で孔壁周辺の密度を測り孔隙率を推定する",
+      "verdict": "適切",
+      "reason": "主にCompton散乱に関わる電子密度を校正してかさ密度を求める。粒子と流体の密度が既知なら孔隙率を推定できる。"
+    },
+    "4": {
+      "value": "電極検層で孔内水の有無は問題とならない",
+      "verdict": "不適切",
+      "reason": "電極から地層へ電流を流す導電接触が必要で、孔内流体は電流経路と測定値に影響する。電磁誘導検層との混同である。"
+    },
+    "5": {
+      "value": "VSPで孔内に振源又は受振器を設置し反射波を測る",
+      "verdict": "条件付きで適切",
+      "reason": "通常の地表振源・孔内受振と逆VSPなどの構成を区別する。孔内深度と反射記録を結び地表反射探査の解釈を助ける。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "VSPに通常型と逆配置があり、電極検層と誘導検層の条件を区別する。ガンマ密度の孔壁・孔内流体補正も保持。",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_012.png"
+  ],
+  "question_id": "R05-REG-APPLIED-34",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "f55cbf3dbf980fe7db379c706e052e0d0a1e98806cf9ff13c3f00c79fc715ab6",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

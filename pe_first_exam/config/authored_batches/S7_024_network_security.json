@@ -1,0 +1,1238 @@
+{
+  "batch_id": "S7_024_network_security",
+  "reference_date": "2026-10-11",
+  "questions": [
+    {
+      "question_id": "H23-REG-BASIC-2-2",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "通信ネットワークの辺遅延を足し、AからFへの最短経路の所要値を求める。",
+      "summary": "通信ネットワークの辺遅延を足し、AからFへの最短経路の所要値を求める。",
+      "conditions": {
+        "方向": "最短遅延。",
+        "原典の全辺": "AB=1、AC=2、BC=3、BD=1、BE=2、CE=4、CF=4、DF=4、EF=2。図の接続方向に従う。",
+        "単位": "原典が指定しない時間単位をms等と補わない。"
+      },
+      "choices": {
+        "1": {
+          "value": "1",
+          "verdict": "不一致",
+          "reason": "最短でもA-B-E-Fの5を要する。単一の辺ABの1を総時間と取り違えている。"
+        },
+        "2": {
+          "value": "5",
+          "verdict": "適切",
+          "reason": "A-B-E-Fの遅延は1+2+2=5。距離の確定でこれより短い経路がないと検証できる。"
+        },
+        "3": {
+          "value": "6",
+          "verdict": "不一致",
+          "reason": "A-C-F=2+4やA-B-D-F=1+1+4は6だが、経路が存在することは最短性を保証しない。"
+        },
+        "4": {
+          "value": "8",
+          "verdict": "不一致",
+          "reason": "より短い5の経路がある。図の辺を全て通る問題でも最長経路でもない。"
+        },
+        "5": {
+          "value": "10",
+          "verdict": "不一致",
+          "reason": "5の経路と比較して大きい。総辺数や全遅延の合計を使わない。"
+        }
+      },
+      "figures": "原典6頂点9辺と全重みを画像照合。独自の辺リストとして記録し原典図を転載しない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H23/basic/page_005.png"
+      ],
+      "core_concept": "非負重みグラフの最短距離",
+      "required_knowledge": "辺重みの加算、緩和、Dijkstra、経由点の接続を図から読む。",
+      "solution": "非負の辺遅延を加算する。AからB=1、C=2、D=2、E=3、F=5と確定し、A-B-E-F=1+2+2を得る。各辺の幅の最小を評価するボトルネック問題とは異なる。",
+      "independent_answer": "2",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。辺和の最小はA-B-E-F=1+2+2=5。初回を保持して限定条件を検討。",
+      "answer_reason": "非負の辺遅延を加算する。AからB=1、C=2、D=2、E=3、F=5と確定し、A-B-E-F=1+2+2を得る。各辺の幅の最小を評価するボトルネック問題とは異なる。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:shortest",
+        "theory:network:bottleneck"
+      ],
+      "discipline_id": "basic_2_8",
+      "concept_id": "network_path",
+      "cross_concepts": [],
+      "classification_reason": "中心は非負重みグラフの最短距離である。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "3",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者に対しグラフの目的量・接続又はベクトルの正規化を読み計算する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_dijkstra"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H23-REG-BASIC-2-5",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "stem": "パスワードの伝送・保管・端末入力・推測攻撃の対策を比較する。",
+      "summary": "パスワードの伝送・保管・端末入力・推測攻撃の対策を比較する。",
+      "conditions": {
+        "方向": "最も適切なもの。",
+        "時点": "H23年度。現在の推奨を出題当時へ無条件に転用しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "WEP無線LANなら覚えやすい単語パスワードを安全に利用。",
+          "verdict": "不適切",
+          "reason": "WEPには既知の弱点があり安全を保証しない。無線区間の暗号と端末・Webサービスの安全性も別である。"
+        },
+        "2": {
+          "value": "公開鍵暗号でパスワード伝送時の漏洩を防ぐ。",
+          "verdict": "意図として適切・条件不足",
+          "reason": "適切に鍵を認証して構成した暗号通信なら伝送中の秘匿に寄与する。ただし公開鍵という方式名だけで偽サーバへの入力や中間者攻撃を防ぐ保証はない。"
+        },
+        "3": {
+          "value": "忘れたとき通知できるようサーバにパスワードをそのまま保存。",
+          "verdict": "不適切",
+          "reason": "ファイルを読める者へ認証秘密が露出する。サーバ側は適切なソルトと計算コストを伴うパスワードハッシュ等で検証する。"
+        },
+        "4": {
+          "value": "長いパスワードなら公共端末で安全。",
+          "verdict": "不適切",
+          "reason": "共有端末のキーロガー等は入力そのものを読むため文字数だけでは防げない。長さは推測耐性の要素である。"
+        },
+        "5": {
+          "value": "asdfghjkなら辞書攻撃に強い。",
+          "verdict": "不適切",
+          "reason": "キーボード配列上の連続列は推測候補になり得る。辞書攻撃の候補は自然言語の辞書語だけとは限らない。"
+        }
+      },
+      "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+      "ambiguity": "選択肢2は公開鍵の真正性確認・認証済み保護通信という条件を省く。方式を用いるだけで全漏洩が防げると一般化しない。初回2・公式2を保持。",
+      "evidence": [
+        "extracted/pages/H23/basic/page_007.png",
+        "extracted/pages/H23/basic/page_008.png"
+      ],
+      "core_concept": "認証秘密の各ライフサイクルの脅威",
+      "required_knowledge": "安全な暗号通信、信頼した公開鍵、平文保存、辞書攻撃、キーロガー、WEP。",
+      "solution": "2は安全に認証した暗号通信でパスワード伝送を保護する意図として選ぶ。保管の平文露出、端末の入力監視、予測可能な列、WEPの弱点は別に残る。公開鍵の認証とプロトコル条件を本文で補い、原典の方式名だけの保証は未確定として保持する。",
+      "independent_answer": "2",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。公開鍵方式を適切に認証された保護通信で使う肢2。方式名だけでは認証は保証しない。初回を保持して限定条件を検討。",
+      "answer_reason": "2は安全に認証した暗号通信でパスワード伝送を保護する意図として選ぶ。保管の平文露出、端末の入力監視、予測可能な列、WEPの弱点は別に残る。公開鍵の認証とプロトコル条件を本文で補い、原典の方式名だけの保証は未確定として保持する。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:password",
+        "theory:network:tls",
+        "theory:network:wireless"
+      ],
+      "discipline_id": "basic_2_7",
+      "concept_id": "password_lifecycle",
+      "cross_concepts": [
+        "concept_015"
+      ],
+      "classification_reason": "中心は認証秘密の各ライフサイクルの脅威である。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者に対し暗号の鍵の役割・認証要素・具体的脅威と対策の保証範囲を区別する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_nist2017",
+        "net_nist2025",
+        "net_wep"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-BASIC-2-6",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "道路網で通行できる車高の最大値を、各経路の最小車高制限から求める。",
+      "summary": "道路網で通行できる車高の最大値を、各経路の最小車高制限から求める。",
+      "conditions": {
+        "方向": "車高最大。",
+        "位置名": "以下の節点名は解説の独自呼称。A、U=左上、V=上中央、W=右上、R=右中、L=左中、P=内左下、D=左下、E=下中央、C=中央、Q=内右下、B。",
+        "全辺の車高制限": "AU8、AL9、UV4、UP3、VW9、WR7、RB6、LP2、LD6、PC6、PE6、DE7、CV5、CR3、CQ9、QB4、EQ5。",
+        "実現経路": "A-L-D-E-P-C-V-W-R-Bの最小5。"
+      },
+      "choices": {
+        "1": {
+          "value": "3",
+          "verdict": "最大でない",
+          "reason": "車高5まで通る経路があり最大でない。単一の車高制限3の道路を避ける経路も存在する。"
+        },
+        "2": {
+          "value": "4",
+          "verdict": "最大でない",
+          "reason": "車高制限4以下の道を通らなくても車高5の経路がある。最初に見つけた経路の幅を最大としない。"
+        },
+        "3": {
+          "value": "5",
+          "verdict": "適切",
+          "reason": "図のAから左中・左下・下中央・内左下・中央・上中央・上右・右中・Bへの経路の最小車高制限は5である。"
+        },
+        "4": {
+          "value": "6",
+          "verdict": "通行経路なし",
+          "reason": "車高6以上だけを残すとA側とB側が接続しない。経路全体の最小車高制限が車高を制限する。"
+        },
+        "5": {
+          "value": "7",
+          "verdict": "通行経路なし",
+          "reason": "車高7以上の経路がないことは6以上で既に分断されることからも分かる。最大制限の一辺だけでは判断できない。"
+        }
+      },
+      "figures": "全12節点17辺・車高制限と非接続交差を原典画像で確認。位置名は独自説明用、原典図転載なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/basic/page_008.png",
+        "extracted/pages/H26/basic/page_009.png"
+      ],
+      "core_concept": "経路の最小車高制限を最大化するボトルネック",
+      "required_knowledge": "max-min経路、閾値での到達可能性、図の交点と道路接続。",
+      "solution": "経路の通行可能車高は車高制限の最小、答えはそれを経路全体について最大化した値である。車高5の接続経路を示し、車高6以上の辺だけ残すと分断されることを確認するので最大値5。遅延の総和最小化を使わない。",
+      "independent_answer": "3",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。道幅の経路最小を最大化し5。6以上では分断される。初回の道幅という呼称は原典の車高制限の誤記であり、数値・経路・初回3は保持して車高へ校正。初回を保持して限定条件を検討。",
+      "answer_reason": "経路の通行可能車高は車高制限の最小、答えはそれを経路全体について最大化した値である。車高5の接続経路を示し、車高6以上の辺だけ残すと分断されることを確認するので最大値5。遅延の総和最小化を使わない。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:bottleneck",
+        "theory:network:shortest"
+      ],
+      "discipline_id": "basic_2_8",
+      "concept_id": "network_path",
+      "cross_concepts": [],
+      "classification_reason": "中心は経路の最小車高制限を最大化するボトルネックである。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "3",
+        "calculation_load": "0",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者に対しグラフの目的量・接続又はベクトルの正規化を読み計算する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_dijkstra"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-BASIC-2-5",
+      "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+      "stem": "公開鍵基盤・電子署名・端末・無線暗号の役割を区別する。",
+      "summary": "公開鍵基盤・電子署名・端末・無線暗号の役割を区別する。",
+      "conditions": {
+        "方向": "最も適切なもの。",
+        "時点": "H27年度。現在の推奨を出題当時へ無条件に転用しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "公開鍵だけが必要。",
+          "verdict": "不適切",
+          "reason": "対となる秘密鍵が復号や署名生成に必要である。公開する鍵と保護する鍵を分ける。"
+        },
+        "2": {
+          "value": "認証局で公開鍵の所有者を保証。",
+          "verdict": "適切",
+          "reason": "CAが主体と公開鍵の対応へ署名し、利用者が証明書の署名・有効期限・信頼経路等を検証する仕組みである。保証範囲は証明書の検証条件内である。"
+        },
+        "3": {
+          "value": "スマートフォンは感染しない。",
+          "verdict": "不適切",
+          "reason": "OSの違いによって無条件免疫にはならない。不正アプリ、脆弱性、権限悪用等への対策が必要である。"
+        },
+        "4": {
+          "value": "公開鍵でダイジェストを暗号化して署名。",
+          "verdict": "不適切",
+          "reason": "署名生成には秘密鍵を用い公開鍵で検証する。全署名方式を単純な「秘密鍵で暗号化」と表すのも不正確である。"
+        },
+        "5": {
+          "value": "WEPなら完全に盗聴を防ぐ。",
+          "verdict": "不適切",
+          "reason": "WEPは既知の攻撃がある。暗号を導入した事実だけで完全な秘匿を保証しない。"
+        }
+      },
+      "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H27/basic/page_006.png"
+      ],
+      "core_concept": "公開鍵の役割と証明書の信頼",
+      "required_knowledge": "公開鍵暗号、秘密鍵、署名生成と検証、CA証明書検証、WEP。",
+      "solution": "2がPKIの主体と公開鍵の結び付けを説明する。公開鍵で秘密を隠す暗号化と、秘密鍵で生成し公開鍵で検証する署名は目的・鍵の向きが違う。端末や無線の絶対安全という断定を排除する。",
+      "independent_answer": "2",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。認証局は公開鍵と所有者を結び付ける。署名は秘密鍵で生成し公開鍵で検証。初回を保持して限定条件を検討。",
+      "answer_reason": "2がPKIの主体と公開鍵の結び付けを説明する。公開鍵で秘密を隠す暗号化と、秘密鍵で生成し公開鍵で検証する署名は目的・鍵の向きが違う。端末や無線の絶対安全という断定を排除する。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:keys",
+        "theory:network:pki",
+        "theory:network:wireless"
+      ],
+      "discipline_id": "basic_2_7",
+      "concept_id": "public_key_identity",
+      "cross_concepts": [
+        "concept_015"
+      ],
+      "classification_reason": "中心は公開鍵の役割と証明書の信頼である。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者に対し暗号の鍵の役割・認証要素・具体的脅威と対策の保証範囲を区別する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_pki",
+        "net_signature",
+        "net_wep"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-BASIC-2-1",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "stem": "差出人・更新・パスワード・外部媒体に関する基本防御を判断する。",
+      "summary": "差出人・更新・パスワード・外部媒体に関する基本防御を判断する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "時点": "H29年度。現在の推奨を出題当時へ無条件に転用しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "知人のアドレスからなら添付を直ちに開く。",
+          "verdict": "不適切",
+          "reason": "表示アドレスの偽装や知人アカウントの侵害があり、本人らしさだけでは添付の安全性を判断できない。"
+        },
+        "2": {
+          "value": "端末とサーバへウイルス対策。",
+          "verdict": "適切",
+          "reason": "適切に運用・更新した対策は感染リスク低減に寄与する。対策ソフトだけで全感染や損害を消せるわけではない。"
+        },
+        "3": {
+          "value": "脆弱性更新を確認しパッチ適用。",
+          "verdict": "適切",
+          "reason": "脆弱性の修正を適時に適用して既知の侵入経路を減らす。業務環境では影響確認と運用管理も必要である。"
+        },
+        "4": {
+          "value": "定期的に変更し以前のパスワードは再利用しない。",
+          "verdict": "再利用回避は適切・周期変更に疑義",
+          "reason": "再利用の回避は妥当だが、機械的な周期変更の一般推奨には疑義がある。NISTの2017年6月版は侵害証拠がない恣意的な定期変更を推奨しない。出題時の資料の採用範囲は未確定。"
+        },
+        "5": {
+          "value": "出所不明のプログラム・USBを使用しない。",
+          "verdict": "適切",
+          "reason": "由来不明の実行コードや媒体による感染を避ける対策である。USBという規格自体が常に悪性という意味ではない。"
+        }
+      },
+      "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+      "ambiguity": "肢4の機械的な定期変更推奨は2017年6月NIST指針と一致しない。公式1・初回1を保持し、当時の国内出題根拠と排他性を査読対象にする。",
+      "evidence": [
+        "extracted/pages/H29/basic/page_006.png"
+      ],
+      "core_concept": "送信者を装う攻撃と認証秘密の運用",
+      "required_knowledge": "なりすまし、アカウント侵害、パッチ、マルウェア対策、定期変更と侵害時変更。",
+      "solution": "差出人アドレスで添付安全を決める1が不適切。2・3・5は脅威低減の基本策である。4の周期変更について当時の推奨を追加査読する。2017年に既に存在するNIST指針を踏まえ、他肢全てを無条件正しいとは断定しない。",
+      "independent_answer": "1",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。知人送信者でも添付は無条件安全でない。定期変更の推奨には時点上の疑義。初回を保持して限定条件を検討。",
+      "answer_reason": "差出人アドレスで添付安全を決める1が不適切。2・3・5は脅威低減の基本策である。4の周期変更について当時の推奨を追加査読する。2017年に既に存在するNIST指針を踏まえ、他肢全てを無条件正しいとは断定しない。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:password",
+        "theory:network:malware",
+        "theory:network:targeted"
+      ],
+      "discipline_id": "basic_2_7",
+      "concept_id": "password_lifecycle",
+      "cross_concepts": [
+        "concept_015"
+      ],
+      "classification_reason": "中心は送信者を装う攻撃と認証秘密の運用である。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者に対し暗号の鍵の役割・認証要素・具体的脅威と対策の保証範囲を区別する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_nist2017",
+        "net_target2020",
+        "net_ipa_account"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-BASIC-2-1",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "stem": "境界防御・保護通信・IoT・パスワード再利用・無線接続先を評価する。",
+      "summary": "境界防御・保護通信・IoT・パスワード再利用・無線接続先を評価する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "時点": "H30年度。現在の推奨を出題当時へ無条件に転用しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "ファイアウォールを利用。",
+          "verdict": "適切（限定防御）",
+          "reason": "許可通信を制御して不正アクセス等を減らす。許可通信内の攻撃や端末からの持出しまで単独で全防止するものではない。"
+        },
+        "2": {
+          "value": "SSL/TLSのような暗号通信を確認。",
+          "verdict": "TLS意図で適切・SSL版に疑義",
+          "reason": "適切なTLSと相手認証が必要である。原典のSSL/TLSを時代の総称として保持するが、SSLv3は2015年RFC7568で禁止されており、SSLを現行でも安全と読み替えない。"
+        },
+        "3": {
+          "value": "常時不要なIoTは使用後電源オフ。",
+          "verdict": "適切（停止可能な機器）",
+          "reason": "常時使わず停止してよい機器について接続時間を減らす策である。継続監視や安全機能を必要とする装置を一律停止する指示ではない。"
+        },
+        "4": {
+          "value": "忘れないため複数サービスで同じパスワード。",
+          "verdict": "不適切",
+          "reason": "一つのサービスの漏洩情報が他サービスの認証へ悪用される。サービスごとの独自の強いパスワードが必要である。"
+        },
+        "5": {
+          "value": "意図しない無線AP接続を確認。",
+          "verdict": "適切",
+          "reason": "偽・無許可APへの自動接続を避ける。接続先確認に加え適切な暗号通信等も必要である。"
+        }
+      },
+      "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+      "ambiguity": "原典2はSSL/TLSと一括表記し版・暗号設定を省く。SSLv3禁止は出題前の2015年であり、SSLを安全として一般推奨できない。総称としての出題意図と字義を区別し公式4を保持。",
+      "evidence": [
+        "extracted/pages/H30/basic/page_006.png"
+      ],
+      "core_concept": "攻撃面とパスワード漏洩の横展開",
+      "required_knowledge": "境界防御、認証したTLS、IoT接続、資格情報再利用、無線AP。",
+      "solution": "4は認証情報の漏洩を横展開するため不適切。各防御は対応する脅威を限定して評価する。原典2のSSLという名称はそのまま校正条件へ記録し、安全なTLSの意味と廃止済みSSLを区別する。",
+      "independent_answer": "4",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。別サービスの同一パスワード再利用は漏洩を連鎖する。SSLを現行推奨しない。初回を保持して限定条件を検討。",
+      "answer_reason": "4は認証情報の漏洩を横展開するため不適切。各防御は対応する脅威を限定して評価する。原典2のSSLという名称はそのまま校正条件へ記録し、安全なTLSの意味と廃止済みSSLを区別する。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:password",
+        "theory:network:tls",
+        "theory:network:wireless"
+      ],
+      "discipline_id": "basic_2_7",
+      "concept_id": "password_lifecycle",
+      "cross_concepts": [
+        "concept_015"
+      ],
+      "classification_reason": "中心は攻撃面とパスワード漏洩の横展開である。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者に対し暗号の鍵の役割・認証要素・具体的脅威と対策の保証範囲を区別する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_ssl2015",
+        "net_ipa_account",
+        "net_wep"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-BASIC-2-3",
+      "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "stem": "単語出現回数のベクトルを長さで正規化し、文書Aへ最も近い文書を選ぶ。",
+      "summary": "単語出現回数のベクトルを長さで正規化し、文書Aへ最も近い文書を選ぶ。",
+      "conditions": {
+        "定義": "\\(d(X,Y)=1-\\frac{X\\cdot Y}{|X||Y|}\\)",
+        "全18セル": "A(7,3,2)、B(2,3,0)、C(70,3,2)、D(21,9,6)、E(1,2,3)、F(7,30,20)。",
+        "対象": "3単語だけの頻度ベクトル。原典は非零。"
+      },
+      "choices": {
+        "1": {
+          "value": "B=(2,3,0)",
+          "verdict": "不一致",
+          "reason": "原典の定義による距離は0.189860。非零のAと同じ向きではなく、Dの距離0より大きい。"
+        },
+        "2": {
+          "value": "C=(70,3,2)",
+          "verdict": "不一致",
+          "reason": "原典の定義による距離は0.088622。非零のAと同じ向きではなく、Dの距離0より大きい。"
+        },
+        "3": {
+          "value": "D=(21,9,6)",
+          "verdict": "適切",
+          "reason": "原典の定義による距離は0.000000。D=3Aで正の比例となり、内積/ノルム積が1になる。"
+        },
+        "4": {
+          "value": "E=(1,2,3)",
+          "verdict": "不一致",
+          "reason": "原典の定義による距離は0.355098。非零のAと同じ向きではなく、Dの距離0より大きい。"
+        },
+        "5": {
+          "value": "F=(7,30,20)",
+          "verdict": "不一致",
+          "reason": "原典の定義による距離は0.381056。非零のAと同じ向きではなく、Dの距離0より大きい。"
+        }
+      },
+      "figures": "3単語×6文書の18セル、内積・ノルム・距離式と文書B〜Fの5肢を画像照合。OCRの欠落・列ずれを確定表へ混ぜない。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/basic/page_009.png"
+      ],
+      "core_concept": "特徴ベクトルの方向とコサイン距離",
+      "required_knowledge": "内積、ユークリッドノルム、正の比例、Cauchy-Schwarz、ゼロベクトルでは式未定義。",
+      "solution": "距離は\\(1-\\frac{A\\cdot X}{|A||X|}\\)である。D=3Aなので内積186、ノルム積\\(\\sqrt{62}\\sqrt{558}=186\\)、距離0。他は正比例でなく距離が正となる。単語総数や成分差の大きさだけを比較しない。",
+      "independent_answer": "3",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。D=(21,9,6)=3(7,3,2)なのでコサイン距離0。初回を保持して限定条件を検討。",
+      "answer_reason": "距離は\\(1-\\frac{A\\cdot X}{|A||X|}\\)である。D=3Aなので内積186、ノルム積\\(\\sqrt{62}\\sqrt{558}=186\\)、距離0。他は正比例でなく距離が正となる。単語総数や成分差の大きさだけを比較しない。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:cosine"
+      ],
+      "discipline_id": "basic_2_16",
+      "concept_id": "document_cosine",
+      "cross_concepts": [],
+      "classification_reason": "中心は特徴ベクトルの方向とコサイン距離である。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "0",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "2",
+        "difficulty": "1",
+        "difficulty_reason": "物理専攻者に対しグラフの目的量・接続又はベクトルの正規化を読み計算する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_cosine"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-BASIC-2-1",
+      "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+      "stem": "感染予防と、感染後に改ざんされたシステムの復旧を区別する。",
+      "summary": "感染予防と、感染後に改ざんされたシステムの復旧を区別する。",
+      "conditions": {
+        "方向": "最も適切なもの。",
+        "時点": "R01年度。現在の推奨を出題当時へ無条件に転用しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "短い単純なパスワード。",
+          "verdict": "不適切",
+          "reason": "推測が容易となる。記憶の容易さはパスワード管理等で扱い、短く単純という選択を安全策にしない。"
+        },
+        "2": {
+          "value": "性能のためウイルス対策不要。",
+          "verdict": "不適切",
+          "reason": "性能だけを理由に必要な防御を除外するのは不適切。適切な製品・設定・更新と多層防御を検討する。"
+        },
+        "3": {
+          "value": "実在の企業名なら添付を信用。",
+          "verdict": "不適切",
+          "reason": "表示名や企業名は偽装でき、正規アカウントも侵害され得る。内容・送信経路を確認する。"
+        },
+        "4": {
+          "value": "使わないポートも開く。",
+          "verdict": "不適切",
+          "reason": "不要な待受サービスを増やすと攻撃面が広がる。必要なポートと送信・受信を限定する。"
+        },
+        "5": {
+          "value": "システム改ざんによって完全修復が難しい感染もある。",
+          "verdict": "適切",
+          "reason": "マルウェアの検出・除去と破壊・改ざん済みデータの回復は別である。信頼できるバックアップや再構築を要することがある。"
+        }
+      },
+      "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01_retest/basic/page_006.png"
+      ],
+      "core_concept": "検知・除去・復旧は別の工程",
+      "required_knowledge": "マルウェア、最小権限・攻撃面、信頼したバックアップ、なりすまし。",
+      "solution": "5が感染除去と既発生の改ざんからの回復を区別する。検知ソフトを導入したという事実だけでファイルの原状復帰を保証しない。1〜4は予防に逆行する。",
+      "independent_answer": "5",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。マルウェア除去だけで破壊済み情報を全復旧はできない。初回を保持して限定条件を検討。",
+      "answer_reason": "5が感染除去と既発生の改ざんからの回復を区別する。検知ソフトを導入したという事実だけでファイルの原状復帰を保証しない。1〜4は予防に逆行する。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:malware",
+        "theory:network:targeted",
+        "theory:network:password"
+      ],
+      "discipline_id": "basic_2_7",
+      "concept_id": "targeted_defense",
+      "cross_concepts": [
+        "concept_015"
+      ],
+      "classification_reason": "中心は検知・除去・復旧は別の工程である。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者に対し暗号の鍵の役割・認証要素・具体的脅威と対策の保証範囲を区別する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_target2020",
+        "net_ipa_account"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-BASIC-2-3",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "stem": "標的型攻撃の入口・多層防御・連絡・実行制御・訓練を判断する。",
+      "summary": "標的型攻撃の入口・多層防御・連絡・実行制御・訓練を判断する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "時点": "R02年度。現在の推奨を出題当時へ無条件に転用しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "正規オンラインストレージを確認しメールゲートウェイで検知。",
+          "verdict": "不適切",
+          "reason": "正規のサービスにも攻撃者は悪性ファイルを置ける。本文にURLだけ載る場合、メール内容の検査だけでリンク先の実体を常に検査・検知できない。"
+        },
+        "2": {
+          "value": "複数対策の多層防御。",
+          "verdict": "適切（記述の条件内）",
+          "reason": "入口・端末・ネットワーク・運用等を組み合わせ、単独策が破られた場合も被害低減を図る。"
+        },
+        "3": {
+          "value": "組織内の連絡窓口を周知。",
+          "verdict": "適切（記述の条件内）",
+          "reason": "受信・誤操作時に早期報告できる既知の窓口は調査・封じ込めへつながる。"
+        },
+        "4": {
+          "value": "実行可能ファイルの制限。",
+          "verdict": "適切（記述の条件内）",
+          "reason": "許可した実行対象へ限定することで悪性実行の経路を減らす。万能検知ではなく業務許可の設計・更新が必要。"
+        },
+        "5": {
+          "value": "模擬メールの定期訓練。",
+          "verdict": "適切（記述の条件内）",
+          "reason": "利用者が不審メールを認識・報告する練習となる。組織の承認・個人の扱い・連絡手順を含む適切な訓練として行う。"
+        }
+      },
+      "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/basic/page_008.png"
+      ],
+      "core_concept": "正規サービスの悪用と多層防御",
+      "required_knowledge": "URLと実ファイルの違い、入口・内部・出口、実行許可、組織的報告。",
+      "solution": "1はサービス名の正規性と格納ファイルの安全性を混同している。IPA白書2020は正規オンラインストレージのURLからウイルスを取得させる攻撃を記録する。メール境界検査に加えて端末・実行制限・連絡・教育を組み合わせる。",
+      "independent_answer": "1",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。正規ストレージのリンク先にも悪性ファイルを置け、メール検査だけでは排除できない。初回を保持して限定条件を検討。",
+      "answer_reason": "1はサービス名の正規性と格納ファイルの安全性を混同している。IPA白書2020は正規オンラインストレージのURLからウイルスを取得させる攻撃を記録する。メール境界検査に加えて端末・実行制限・連絡・教育を組み合わせる。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:targeted",
+        "theory:network:malware",
+        "theory:network:sandbox"
+      ],
+      "discipline_id": "basic_2_7",
+      "concept_id": "targeted_defense",
+      "cross_concepts": [
+        "concept_015"
+      ],
+      "classification_reason": "中心は正規サービスの悪用と多層防御である。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者に対し暗号の鍵の役割・認証要素・具体的脅威と対策の保証範囲を区別する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_target2020",
+        "net_target2023"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R03-REG-BASIC-2-1",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "stem": "公開鍵暗号・証明書・署名の鍵の役割と無線の推奨を比較する。",
+      "summary": "公開鍵暗号・証明書・署名の鍵の役割と無線の推奨を比較する。",
+      "conditions": {
+        "方向": "最も適切なもの。",
+        "時点": "R03年度。現在の推奨を出題当時へ無条件に転用しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "公開鍵で暗号化し秘密鍵で復号。",
+          "verdict": "適切",
+          "reason": "公開鍵暗号で受信者へ秘匿する基本の鍵の向きである。実用通信では鍵確立と共通鍵暗号を組み合わせる場合もある。"
+        },
+        "2": {
+          "value": "CAはユーザと秘密鍵を結び付ける。",
+          "verdict": "不適切",
+          "reason": "証明書が公開鍵と主体の対応を結び付ける。秘密鍵を第三者へ公開・配付して所有者を証明する仕組みではない。"
+        },
+        "3": {
+          "value": "スマートフォン感染の報告はない。",
+          "verdict": "不適切",
+          "reason": "不正アプリ・端末脆弱性等に対する対策を不要にはできない。報告がないという原典の前提も保持できない。"
+        },
+        "4": {
+          "value": "公開鍵で署名生成し秘密鍵で検証。",
+          "verdict": "不適切",
+          "reason": "逆である。秘密鍵で生成し対応公開鍵で検証する。検証者に秘密鍵を配らない。"
+        },
+        "5": {
+          "value": "現在の無線LANではWEPを推奨。",
+          "verdict": "不適切",
+          "reason": "WEPは既知の弱い無線暗号であり出題時の安全な推奨としない。現在でもWEPを安全と教えない。"
+        }
+      },
+      "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R03/basic/page_006.png"
+      ],
+      "core_concept": "暗号化・署名・証明書の分離",
+      "required_knowledge": "公開鍵暗号の復号者、署名者と検証者、CA、WEP、端末感染。",
+      "solution": "1が秘匿のための公開鍵暗号を説明する。署名は秘密鍵で作り公開鍵で検証し、CAの証明は公開鍵の対応である。同じ鍵対でも暗号化と署名を一つの手順へ統合しない。",
+      "independent_answer": "1",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。公開鍵暗号は公開鍵で暗号化、秘密鍵で復号。初回を保持して限定条件を検討。",
+      "answer_reason": "1が秘匿のための公開鍵暗号を説明する。署名は秘密鍵で作り公開鍵で検証し、CAの証明は公開鍵の対応である。同じ鍵対でも暗号化と署名を一つの手順へ統合しない。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:keys",
+        "theory:network:pki",
+        "theory:network:wireless"
+      ],
+      "discipline_id": "basic_2_7",
+      "concept_id": "public_key_identity",
+      "cross_concepts": [
+        "concept_015"
+      ],
+      "classification_reason": "中心は暗号化・署名・証明書の分離である。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者に対し暗号の鍵の役割・認証要素・具体的脅威と対策の保証範囲を区別する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_pki",
+        "net_signature",
+        "net_wep"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-BASIC-2-1",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "stem": "テレワーク時の会議参加制御・VPN・人的攻撃・連絡体制を判断する。",
+      "summary": "テレワーク時の会議参加制御・VPN・人的攻撃・連絡体制を判断する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "時点": "R04年度。現在の推奨を出題当時へ無条件に転用しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "安全な経路で会議URLを送れば意図しない参加を防げる。",
+          "verdict": "不適切",
+          "reason": "案内の安全な配付だけでなく参加者認証・待機室等が必要。正規参加者からの流出や共有などもありURL送付だけで十分とはいえない。"
+        },
+        "2": {
+          "value": "VPN製品の脆弱性情報を常に収集。",
+          "verdict": "適切",
+          "reason": "対策適用・接続管理のための情報収集が重要である。収集だけで修正済みとはならない。"
+        },
+        "3": {
+          "value": "オフィスよりフィッシング被害リスクが高まる。",
+          "verdict": "条件付きの傾向・全称未確定",
+          "reason": "相談・監視・端末管理が弱まる運用では危険性が増し得る。一律に全テレワークの危険度が全オフィスより高いとはいえず、原典に比較条件がない。"
+        },
+        "4": {
+          "value": "第三者の多い場所での業務を避ける。",
+          "verdict": "適切",
+          "reason": "のぞき見・盗聴等の機会を減らす。接続暗号化は周囲からの視聴や会話聴取を防ぐものではない。"
+        },
+        "5": {
+          "value": "連絡先不明はインシデントの被害拡大へつながる。",
+          "verdict": "適切",
+          "reason": "遅れた報告・封じ込めにより攻撃継続や拡大の可能性がある。事前に連絡先と手順を確認する。"
+        }
+      },
+      "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+      "ambiguity": "肢3は比較する端末管理・運用・利用者条件を省き「オフィスより危険性が高まる」とする。一般的な留意事項と普遍的比較命題を区別し、公式1・初回1を保持。",
+      "evidence": [
+        "extracted/pages/R04/basic/page_005.png"
+      ],
+      "core_concept": "通信路の秘匿と会議参加認証の違い",
+      "required_knowledge": "認可・認証、待機室、脆弱性管理、ショルダーサーフィン、連絡手順。",
+      "solution": "1は案内の秘匿と参加認証の混同である。IPAの2020年Web会議資料は安全配付と参加者確認・認証を併記する。3は運用条件に依存するリスク説明としてのみ理解し、無条件の相対リスク命題は査読対象へ残す。",
+      "independent_answer": "1",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。会議URLを安全に伝える対策だけでは会議への不正アクセスを全防止できない。初回を保持して限定条件を検討。",
+      "answer_reason": "1は案内の秘匿と参加認証の混同である。IPAの2020年Web会議資料は安全配付と参加者確認・認証を併記する。3は運用条件に依存するリスク説明としてのみ理解し、無条件の相対リスク命題は査読対象へ残す。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:telework",
+        "theory:network:tls",
+        "theory:network:targeted"
+      ],
+      "discipline_id": "basic_2_7",
+      "concept_id": "targeted_defense",
+      "cross_concepts": [
+        "concept_015"
+      ],
+      "classification_reason": "中心は通信路の秘匿と会議参加認証の違いである。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者に対し暗号の鍵の役割・認証要素・具体的脅威と対策の保証範囲を区別する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_meeting2020",
+        "net_telework"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-BASIC-2-1",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "stem": "パスワード変更、PIN、生体、段階数と要素数、旧無線暗号を評価する。",
+      "summary": "パスワード変更、PIN、生体、段階数と要素数、旧無線暗号を評価する。",
+      "conditions": {
+        "方向": "最も適切なもの。",
+        "時点": "R05年度。現在の推奨を出題当時へ無条件に転用しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "複雑で独自のパスワードなら侵害事案なしの定期変更は基本不要。",
+          "verdict": "適切",
+          "reason": "機械的な周期変更と侵害時の変更を区別する。漏洩の疑いがあれば迅速に変更し、使い回しを避ける。サービス規程や長さ・予測可能性も重要。"
+        },
+        "2": {
+          "value": "4〜6桁PINは総当たりされるので使うべきでない。",
+          "verdict": "不適切",
+          "reason": "PINを端末内で検証し試行を制限する場合等がある。桁数だけでオンライン無制限攻撃と同一視し全用途を禁止しない。"
+        },
+        "3": {
+          "value": "生体認証は本人がいなければ必ず失敗。",
+          "verdict": "不適切",
+          "reason": "生体照合は確率的で、他人受入れや提示攻撃もある。固有の情報だから本人の存在を数学的に保証するわけではない。"
+        },
+        "4": {
+          "value": "二段階一要素は一段階二要素より安全。",
+          "verdict": "不適切",
+          "reason": "段階は手続の回数、要素は知識・所持・生体等の種類であり違う。知識を2回入力しても2要素にはならない。段階数のみで安全性の順序は決まらない。"
+        },
+        "5": {
+          "value": "古いWEP対応機器は買換えまで安全。",
+          "verdict": "不適切",
+          "reason": "WEPに既知の弱点があり、古い機器という理由で安全性が復活しない。買換えまでの運用も適切な代替・停止等を検討する。"
+        }
+      },
+      "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/basic/page_005.png"
+      ],
+      "core_concept": "認証要素・試行制限・秘密の更新",
+      "required_knowledge": "知識/所持/生体、二段階と多要素、PINのローカル検証、レート制限、漏洩時変更。",
+      "solution": "1が漏洩時変更と恣意的な定期変更を区別する。2〜5は用途・試行制限、確率的な生体照合、認証要素、既知の暗号弱点を無視している。NIST2017と現行2025の表現強度は時点を明記して分ける。",
+      "independent_answer": "1",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。侵害兆候がなければ機械的な定期変更でなく長い独自パスワード。初回を保持して限定条件を検討。",
+      "answer_reason": "1が漏洩時変更と恣意的な定期変更を区別する。2〜5は用途・試行制限、確率的な生体照合、認証要素、既知の暗号弱点を無視している。NIST2017と現行2025の表現強度は時点を明記して分ける。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:password",
+        "theory:network:factors",
+        "theory:network:wireless"
+      ],
+      "discipline_id": "basic_2_7",
+      "concept_id": "password_lifecycle",
+      "cross_concepts": [
+        "concept_015"
+      ],
+      "classification_reason": "中心は認証要素・試行制限・秘密の更新である。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者に対し暗号の鍵の役割・認証要素・具体的脅威と対策の保証範囲を区別する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_nist2017",
+        "net_nist2025",
+        "net_wep"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-BASIC-2-3",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "stem": "リンクステートと距離ベクトルの保持情報・経路計算を比較する。",
+      "summary": "リンクステートと距離ベクトルの保持情報・経路計算を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "時点": "R06年度。現在の推奨を出題当時へ無条件に転用しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "経路表を参照して次ホップへ転送。",
+          "verdict": "適切（記述の条件内）",
+          "reason": "動的ルーティングが構築した経路表を用いた次ホップ転送の説明として妥当。実装には静的経路や転送用FIBもあるが、問題が説明する動的経路制御を否定しない。"
+        },
+        "2": {
+          "value": "どちらもネットワークトポロジを把握。",
+          "verdict": "不適切",
+          "reason": "距離ベクトルの節点は隣接節点の宛先距離を利用するのでネットワーク全体の詳細トポロジを必ず保持するわけではない。"
+        },
+        "3": {
+          "value": "リンク情報を広告し最短経路計算。",
+          "verdict": "適切（記述の条件内）",
+          "reason": "リンクステートは領域内のリンク状態を共有してSPF等を計算する。全インターネットの全接続を各ルータが保持する意味ではない。"
+        },
+        "4": {
+          "value": "宛先距離を伝搬し最短となる次ホップ決定。",
+          "verdict": "適切（記述の条件内）",
+          "reason": "隣接経由コストと隣接節点からの距離を足して比較する。Bellman-Ford型の分散更新である。"
+        },
+        "5": {
+          "value": "OSPF/IS-ISはリンク状態、RIPは距離ベクトル。",
+          "verdict": "適切（記述の条件内）",
+          "reason": "代表例の対応は妥当。BGPのパスベクトル等もあり、全プロトコルを厳密に2種だけへ封じる分類ではない。"
+        }
+      },
+      "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R06/basic/page_007.png"
+      ],
+      "core_concept": "トポロジ共有と距離の分散更新",
+      "required_knowledge": "次ホップ、経路表、SPF、Bellman-Ford、OSPF、RIP、適用範囲。",
+      "solution": "2が保持情報を同一視している。リンクステートは範囲内のリンク情報、距離ベクトルは宛先までの隣接経由距離を更新する。\\(d_i(t)=\\min_j\\{c_{ij}+d_j(t)\\}\\)で次ホップを選べるので全接続図が必須ではない。",
+      "independent_answer": "2",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。全リンク情報で経路計算するのはリンクステート、距離ベクトルは隣接情報。初回を保持して限定条件を検討。",
+      "answer_reason": "2が保持情報を同一視している。リンクステートは範囲内のリンク情報、距離ベクトルは宛先までの隣接経由距離を更新する。\\(d_i(t)=\\min_j\\{c_{ij}+d_j(t)\\}\\)で次ホップを選べるので全接続図が必須ではない。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:routing",
+        "theory:network:shortest"
+      ],
+      "discipline_id": "basic_2_3",
+      "concept_id": "network_routing",
+      "cross_concepts": [],
+      "classification_reason": "中心はトポロジ共有と距離の分散更新である。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者に対し暗号の鍵の役割・認証要素・具体的脅威と対策の保証範囲を区別する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_ospf",
+        "net_rip"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R06-REG-BASIC-2-6",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "stem": "ハッシュ・耐量子暗号・署名・再送攻撃・ゼロ知識証明の保証を比較する。",
+      "summary": "ハッシュ・耐量子暗号・署名・再送攻撃・ゼロ知識証明の保証を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "時点": "R06年度。現在の推奨を出題当時へ無条件に転用しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "固定出力ハッシュの安全性をパラメータ族の漸近性で定義。",
+          "verdict": "標準的定義として適切",
+          "reason": "実用の固定nビット出力と、パラメータkで変わる関数族の安全性を区別する。衝突自体は鳩の巣原理で存在し、効率的に見つけにくいという計算量の性質を要求する。"
+        },
+        "2": {
+          "value": "格子・符号・多変数多項式等は耐量子暗号の候補。",
+          "verdict": "候補族として理解・時点留意",
+          "reason": "問題族の研究候補としての説明であり全方式の安全を保証しない。2022年にRainbowには実用攻撃が報告され、2024年の初期標準化は格子・ハッシュ系である。多変数方式全てが破られたとする逆の全称も避ける。"
+        },
+        "3": {
+          "value": "秘密鍵側だけが署名生成し誰でも検証。",
+          "verdict": "適切（鍵保護等の前提）",
+          "reason": "署名者の秘密鍵が適切に保護され、検証者が真正な公開鍵と手続きを用いる前提で成立する。漏洩した秘密鍵での偽署名や鍵の置換を本人の意思の保証としない。"
+        },
+        "4": {
+          "value": "多要素認証ならリプレイ攻撃を無効にする。",
+          "verdict": "不適切",
+          "reason": "要素数とメッセージの新鮮さは別である。使い捨て値の一回受付・nonce/challenge・タイムスタンプ等を正しく検証して再利用を排除する必要がある。"
+        },
+        "5": {
+          "value": "X/Y/Zを秘密にしてZ=Y+Xの関係を証明。",
+          "verdict": "等式証明は可能・全正当性に条件不足",
+          "reason": "コミットメントと適切な証明体系なら値を明かさず関係成立を示せる。ただし等式だけで取引の所有権・非負残高・承認等を全保証するものではなく範囲・権限などの別条件も必要である。"
+        }
+      },
+      "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+      "ambiguity": "肢2の候補の有力性は個別方式・時点に依存する。肢3は秘密鍵非漏洩・真正公開鍵の条件、肢5は値の拘束・範囲・権限等を省き等式を取引正当性全体と括る。公式4・初回4を保持して限定前提を査読対象へ残す。",
+      "evidence": [
+        "extracted/pages/R06/basic/page_009.png",
+        "extracted/pages/R06/basic/page_010.png"
+      ],
+      "core_concept": "暗号の機能と成立条件・計算量的安全性",
+      "required_knowledge": "ハッシュ族、耐衝突性、公開鍵署名、多要素、nonce、再送耐性、非対話ゼロ知識・範囲証明。",
+      "solution": "4は認証要素の複数化とリプレイ耐性を同一視している。NISTは再送防止をnonce等による新鮮さの証明として説明する。固定秘密を繰り返す方式に別要素を加えたというだけで過去メッセージの再受付が不可能になるわけではない。5の秘匿等式は証明可能な関係と取引全体の正当性を分け、2も候補族と個別方式の破綻を分ける。",
+      "independent_answer": "4",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。多要素であるだけではリプレイ防止を保証しない。原典の対策の断定に疑義を保持。初回を保持して限定条件を検討。",
+      "answer_reason": "4は認証要素の複数化とリプレイ耐性を同一視している。NISTは再送防止をnonce等による新鮮さの証明として説明する。固定秘密を繰り返す方式に別要素を加えたというだけで過去メッセージの再受付が不可能になるわけではない。5の秘匿等式は証明可能な関係と取引全体の正当性を分け、2も候補族と個別方式の破綻を分ける。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:hash",
+        "theory:network:keys",
+        "theory:network:factors",
+        "theory:network:replay",
+        "theory:network:zkp"
+      ],
+      "discipline_id": "basic_2_7",
+      "concept_id": "cryptographic_guarantees",
+      "cross_concepts": [
+        "concept_015"
+      ],
+      "classification_reason": "中心は暗号の機能と成立条件・計算量的安全性である。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "3",
+        "reasoning_steps": "3",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻者に対し暗号の鍵の役割・認証要素・具体的脅威と対策の保証範囲を区別する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_hash",
+        "net_nist2017",
+        "net_signature",
+        "net_pq2024",
+        "net_pq2022",
+        "net_zkp2021"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-2-3",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "TCPのACK単位・RTT単位の窓増加と損失時制御を比較する。",
+      "summary": "TCPのACK単位・RTT単位の窓増加と損失時制御を比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "時点": "R07年度。現在の推奨を出題当時へ無条件に転用しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "ネットワーク層以下から混雑情報は直接得られない。",
+          "verdict": "旧模型限定・ECNに疑義",
+          "reason": "損失やACKを用いる旧来の説明に限れば理解できるが、ECNではIPヘッダのCEとTCPのECE等で明示的に混雑を通知する。直接情報なしを現行TCP全般へ広げない。"
+        },
+        "2": {
+          "value": "開始時cwnd=1MSS。",
+          "verdict": "旧模型限定・初期窓に疑義",
+          "reason": "基本模型の初期値としては使えるが、RFC5681はMSSに応じ2〜4MSSの初期上限を許し、実験的RFC6928は任意のIW10も扱う。常に1MSSではない。"
+        },
+        "3": {
+          "value": "ACKごと+MSSなのでスロースタートは線形。",
+          "verdict": "不適切",
+          "reason": "ACKが1セグメントごと返る模型では窓内のACK数も増えるので1RTTあたり概ね倍増となる。ACK回数に対する線形と時間に対する指数的増加を取り違えている。"
+        },
+        "4": {
+          "value": "輻輳回避は概ね1RTTあたり+1MSS。",
+          "verdict": "Reno型として適切",
+          "reason": "Reno型の加算増加におけるRTT単位の説明として妥当。全ての現行TCP輻輳アルゴリズムをこの式へ固定しない。"
+        },
+        "5": {
+          "value": "タイムアウトで閾値=cwnd/2、cwnd=1MSS。",
+          "verdict": "模型意図・FlightSizeと下限に疑義",
+          "reason": "基本模型では意図を理解できるがRFC5681の閾値上限はmax(FlightSize/2,2SMSS)。未確認データ量とcwndは別で、下限もある。タイムアウトで損失窓へ戻す点は妥当。"
+        }
+      },
+      "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+      "ambiguity": "原典1は出題前2001年のECN、2はRFC5681/6928の初期窓、5はFlightSizeと閾値下限を省く。旧来の1MSS基本模型の意図と2025年TCP全体の命題を区別する。初回3・公式3を保持、他肢の無条件適切性は未確定。",
+      "evidence": [
+        "extracted/pages/R07/basic/page_006.png"
+      ],
+      "core_concept": "窓増加の単位・ECN・損失窓",
+      "required_knowledge": "cwndとrwnd、MSS、RTT、ACK、Reno、ECN、FlightSize、初期窓と損失窓。",
+      "solution": "3の時間尺度が誤っている。1RTTで窓W分のセグメントがACKされ各ACKで1MSS増える理想模型なら\\(W_{n+1}\\simeq2W_n\\)である。輻輳回避は\\(W_{n+1}\\simeq W_n+\\mathrm{MSS}\\)の加算増加と区別する。遅延ACK・累積ACK・ABC等で係数は変わる。1・2・5の普遍性は出題時点に既存RFCとも合わないため、公式3を保持しながら原典疑義を明示する。",
+      "independent_answer": "3",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。ACKごとに増えるとRTTあたり概ね倍増で指数的である。ECN・現行初期窓・FlightSizeについて他肢にも疑義。初回を保持して限定条件を検討。",
+      "answer_reason": "3の時間尺度が誤っている。1RTTで窓W分のセグメントがACKされ各ACKで1MSS増える理想模型なら\\(W_{n+1}\\simeq2W_n\\)である。輻輳回避は\\(W_{n+1}\\simeq W_n+\\mathrm{MSS}\\)の加算増加と区別する。遅延ACK・累積ACK・ABC等で係数は変わる。1・2・5の普遍性は出題時点に既存RFCとも合わないため、公式3を保持しながら原典疑義を明示する。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:tcp",
+        "theory:network:ecn"
+      ],
+      "discipline_id": "basic_2_3",
+      "concept_id": "tcp_congestion",
+      "cross_concepts": [],
+      "classification_reason": "中心は窓増加の単位・ECN・損失窓である。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "true",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "3",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻者に対しグラフの目的量・接続又はベクトルの正規化を読み計算する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_tcp2009",
+        "net_ecn2001",
+        "net_iw2013"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-BASIC-2-4",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "stem": "多層防御・連絡・実行制御・知見共有と、外部解析への送信リスクを比較する。",
+      "summary": "多層防御・連絡・実行制御・知見共有と、外部解析への送信リスクを比較する。",
+      "conditions": {
+        "方向": "最も不適切なもの。",
+        "時点": "R07年度。現在の推奨を出題当時へ無条件に転用しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "複数策を多層的に組合せ。",
+          "verdict": "適切（記述の条件内）",
+          "reason": "異なる地点・仕組みの防御を組み合わせて侵入・実行・被害拡大を減らす。多数の同じ製品を置くだけでは独立した防御にならない。"
+        },
+        "2": {
+          "value": "不審メールの組織内窓口を周知。",
+          "verdict": "適切（記述の条件内）",
+          "reason": "早期の情報収集と対応へつなぐ。利用者が勝手に危険ファイルを他者へ転送する指示ではない。"
+        },
+        "3": {
+          "value": "実行可能ファイルを制限。",
+          "verdict": "適切（記述の条件内）",
+          "reason": "業務に必要な許可対象へ限定することで悪性コード実行を減らす。署名・パス・ハッシュ等の運用条件を管理する。"
+        },
+        "4": {
+          "value": "攻撃手口を組織間で共有。",
+          "verdict": "適切（記述の条件内）",
+          "reason": "攻撃指標・手口の適切な共有は他組織の検知へ役立つ。機密内容や個人情報をそのまま公開する意味ではない。"
+        },
+        "5": {
+          "value": "オンラインの検査・サンドボックスへ添付を積極投入。",
+          "verdict": "不適切",
+          "reason": "公開の解析サービスは提出ファイルを保持・共有する場合があり、機密添付を送ると情報漏洩を起こし得る。利用規約・契約・組織の承認・対象情報の性質を確認せず積極投入するのは不適切。"
+        }
+      },
+      "figures": "全5候補・否定・保証範囲・数値を原典画像で確認。設問固有図なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R07/basic/page_006.png"
+      ],
+      "core_concept": "標的型防御と検査先への情報開示",
+      "required_knowledge": "多層防御、許可リスト、窓口、攻撃指標、外部解析の情報取扱い。",
+      "solution": "5は検知のための送信それ自体が機密流出の経路となる。IPA白書2023の公開該当記述もオンライン検査・サンドボックスへのアップロードによる意図しない漏洩を警告する。承認された閉域解析等と無差別な外部投入を区別する。組織間の4の手口共有は、機密を管理した共有である。",
+      "independent_answer": "5",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。外部オンライン解析へ添付を無差別送信すると機密漏洩する。承認・取扱基準が必要。初回を保持して限定条件を検討。",
+      "answer_reason": "5は検知のための送信それ自体が機密流出の経路となる。IPA白書2023の公開該当記述もオンライン検査・サンドボックスへのアップロードによる意図しない漏洩を警告する。承認された閉域解析等と無差別な外部投入を区別する。組織間の4の手口共有は、機密を管理した共有である。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:targeted",
+        "theory:network:sandbox"
+      ],
+      "discipline_id": "basic_2_7",
+      "concept_id": "targeted_defense",
+      "cross_concepts": [
+        "concept_015"
+      ],
+      "classification_reason": "中心は標的型防御と検査先への情報開示である。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "1",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者に対し暗号の鍵の役割・認証要素・具体的脅威と対策の保証範囲を区別する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_target2020",
+        "net_target2023"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

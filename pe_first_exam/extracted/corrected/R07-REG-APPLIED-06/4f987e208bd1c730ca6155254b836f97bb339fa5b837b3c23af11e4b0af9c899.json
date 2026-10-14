@@ -1,0 +1,49 @@
+{
+  "stem": "理想気体を定圧・定積で4段階に変化させ、第3段階の外部からの仕事を求める。",
+  "conditions": {
+    "初期": "\\(p_0=5.0\\times10^3\\,\\mathrm{Pa},V_0=120\\,\\mathrm{m}^3,T_0=27\\,{}^\\circ\\mathrm{C}\\)。",
+    "第1段階": "定圧で227°Cへ加熱。",
+    "第2段階": "定積で27°Cへ冷却。",
+    "第3段階": "定圧で−73°Cへ冷却。",
+    "第4段階": "定積で27°Cへ加熱。",
+    "求める量": "第3段階で気体へされる仕事。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(2\\times10^5\\,\\mathrm{J}\\)",
+      "verdict": "条件に一致",
+      "reason": "nR=初期pV/Tと圧縮温度幅100Kの積に一致する。"
+    },
+    "2": {
+      "value": "\\(5\\times10^5\\,\\mathrm{J}\\)",
+      "verdict": "条件に不一致",
+      "reason": "原典の圧力の指数と圧縮温度幅を用いた結果と合わない。"
+    },
+    "3": {
+      "value": "\\(1\\times10^6\\,\\mathrm{J}\\)",
+      "verdict": "条件に不一致",
+      "reason": "計算値の5倍であり、段階の温度と圧力を区別していない。"
+    },
+    "4": {
+      "value": "\\(2\\times10^6\\,\\mathrm{J}\\)",
+      "verdict": "条件に不一致",
+      "reason": "計算値より1桁大きい。初期圧力の指数は3である。"
+    },
+    "5": {
+      "value": "\\(5\\times10^6\\,\\mathrm{J}\\)",
+      "verdict": "条件に不一致",
+      "reason": "圧力の指数又は体積変化の計算が一致しない。"
+    }
+  },
+  "figures": "正誤方向、全条件・数値・単位、候補5肢を原典画像で確認。図なし。組合せ問題では表の全欄を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_003.png"
+  ],
+  "question_id": "R07-REG-APPLIED-06",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "18449ddce1a270daac431647c199da608cc301765ad055bf5dba7546c9ad0b02",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,47 @@
+{
+  "stem": "傾斜と重力は平衡位置を変える。",
+  "conditions": {
+    "A": "水平。",
+    "B": "45°の滑らかな斜面。",
+    "C": "鉛直。",
+    "共通": "質点m、同じばねk、摩擦無視、ばね軸方向運動。"
+  },
+  "choices": {
+    "1": {
+      "value": "A=B=C",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "2": {
+      "value": "A>B>C",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 A=B=C と異なる。"
+    },
+    "3": {
+      "value": "A<B<C",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 A=B=C と異なる。"
+    },
+    "4": {
+      "value": "A=C>B",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 A=B=C と異なる。"
+    },
+    "5": {
+      "value": "A=C<B",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 A=B=C と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/basic/page_013.png"
+  ],
+  "question_id": "R02-REG-BASIC-3-5",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "13",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "2ff09087020eee4ffbc04191e4fdfb356e6a95118c287a9778842f32af0eb21f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

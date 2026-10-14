@@ -1,0 +1,19 @@
+{
+  "status": "committed",
+  "time": "2026-10-12T13:41:01+09:00",
+  "paths": [
+    "generated/questions/applied_science/geology/10_geophysical_exploration.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/geology/10_geophysical_exploration.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/geology/10_geophysical_exploration.tex": "8393dbf2a1f6fd2177396d94cdc986273ed66473fed6919483f5540cc3a6296e",
+    "generated/audit_summary.tex": "48013b3d8b71b6edca23e0d84828af3d5f8af9829464d1a2ff4c9d096fd78350",
+    "generated/frequency_tables.tex": "54be6f0b7c72d1b36780a06a6559bb3c42ad2eb36e2bc6059558a4d9996afaf6"
+  }
+}

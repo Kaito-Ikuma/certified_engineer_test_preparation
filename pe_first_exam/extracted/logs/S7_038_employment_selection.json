@@ -1,0 +1,110 @@
+{
+  "time": "2026-10-12T08:44:14+09:00",
+  "official_consulted": false,
+  "records": [
+    {
+      "question_id": "H24-REG-APT-03",
+      "source_file": "sources/H24/aptitude.pdf",
+      "source_page": "2",
+      "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+      "question_text_file": "extracted/questions/H24-REG-APT-03.txt",
+      "discipline_id": "apt_2"
+    },
+    {
+      "question_id": "H25-REG-APT-03",
+      "source_file": "sources/H25/aptitude.pdf",
+      "source_page": "4",
+      "source_sha256": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+      "question_text_file": "extracted/questions/H25-REG-APT-03.txt",
+      "discipline_id": "apt_2"
+    },
+    {
+      "question_id": "H25-REG-APT-04",
+      "source_file": "sources/H25/aptitude.pdf",
+      "source_page": "5",
+      "source_sha256": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+      "question_text_file": "extracted/questions/H25-REG-APT-04.txt",
+      "discipline_id": "apt_3"
+    },
+    {
+      "question_id": "H26-REG-APT-05",
+      "source_file": "sources/H26/aptitude.pdf",
+      "source_page": "5",
+      "source_sha256": "5691e940fce3cbf9423bc99a96803c1c6273563931b76b91bdb9f2b67e6233d3",
+      "question_text_file": "extracted/questions/H26-REG-APT-05.txt",
+      "discipline_id": "apt_2"
+    },
+    {
+      "question_id": "H27-REG-APT-11",
+      "source_file": "sources/H27/aptitude.pdf",
+      "source_page": "11",
+      "source_sha256": "2965cecde9e4c31c06a94192bf7a750346fbf85d07d37943d58a3fa15d15ebeb",
+      "question_text_file": "extracted/questions/H27-REG-APT-11.txt",
+      "discipline_id": "apt_2"
+    },
+    {
+      "question_id": "H29-REG-APT-04",
+      "source_file": "sources/H29/aptitude.pdf",
+      "source_page": "4",
+      "source_sha256": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+      "question_text_file": "extracted/questions/H29-REG-APT-04.txt",
+      "discipline_id": "apt_2"
+    },
+    {
+      "question_id": "H29-REG-APT-05",
+      "source_file": "sources/H29/aptitude.pdf",
+      "source_page": "5",
+      "source_sha256": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+      "question_text_file": "extracted/questions/H29-REG-APT-05.txt",
+      "discipline_id": "apt_3"
+    },
+    {
+      "question_id": "H30-REG-APT-12",
+      "source_file": "sources/H30/aptitude.pdf",
+      "source_page": "12",
+      "source_sha256": "9b92cd3549fc1ad21636a544978f1385f63667ff6ac0112f81e553cf2ee4b1f5",
+      "question_text_file": "extracted/questions/H30-REG-APT-12.txt",
+      "discipline_id": "apt_1"
+    },
+    {
+      "question_id": "R01-REG-APT-12",
+      "source_file": "sources/R01/aptitude.pdf",
+      "source_page": "13",
+      "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+      "question_text_file": "extracted/questions/R01-REG-APT-12.txt",
+      "discipline_id": "apt_3"
+    },
+    {
+      "question_id": "R02-REG-APT-13",
+      "source_file": "sources/R02/aptitude.pdf",
+      "source_page": "13",
+      "source_sha256": "d0ca26aaeeba6d436d8ffa77a759056e7a194c0ac9fad61de2c84392999050bb",
+      "question_text_file": "extracted/questions/R02-REG-APT-13.txt",
+      "discipline_id": "apt_3"
+    },
+    {
+      "question_id": "R04-REG-APT-05",
+      "source_file": "sources/R04/aptitude.pdf",
+      "source_page": "4",
+      "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+      "question_text_file": "extracted/questions/R04-REG-APT-05.txt",
+      "discipline_id": "apt_3"
+    },
+    {
+      "question_id": "R06-REG-APT-10",
+      "source_file": "sources/R06/aptitude.pdf",
+      "source_page": "10",
+      "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+      "question_text_file": "extracted/questions/R06-REG-APT-10.txt",
+      "discipline_id": "apt_2"
+    },
+    {
+      "question_id": "R07-REG-APT-15",
+      "source_file": "sources/R07/aptitude.pdf",
+      "source_page": "15",
+      "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+      "question_text_file": "extracted/questions/R07-REG-APT-15.txt",
+      "discipline_id": "apt_3"
+    }
+  ]
+}

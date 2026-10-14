@@ -1,0 +1,27 @@
+{
+  "time": "2026-10-12T07:45:07+09:00",
+  "questions": [
+    "H24-REG-APPLIED-11",
+    "H24-REG-APPLIED-13",
+    "H27-REG-APPLIED-17",
+    "H29-REG-APPLIED-14",
+    "R01-REG-APPLIED-10",
+    "R04-REG-APPLIED-14",
+    "H27-REG-APPLIED-15",
+    "R07-REG-APPLIED-18",
+    "H30-REG-APPLIED-08",
+    "H26-REG-APPLIED-10",
+    "R01-REG-APPLIED-16",
+    "R02-REG-APPLIED-16",
+    "R06-REG-APPLIED-10",
+    "R03-REG-APPLIED-11",
+    "R03-REG-APPLIED-15",
+    "R05-REG-APPLIED-16",
+    "R01-RET-APPLIED-10",
+    "R06-REG-APPLIED-15",
+    "R06-REG-APPLIED-11"
+  ],
+  "source_conditions_checked": 19,
+  "solution_drafts": 19,
+  "final_verification": false
+}

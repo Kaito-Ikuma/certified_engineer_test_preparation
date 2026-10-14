@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-10-11T00:27:22+09:00",
+  "sources": [
+    {
+      "key": "info_markov",
+      "title": "Stochastic Processes I, Lecture 5 (2013)",
+      "url": "https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/f5784e4facf3de690210d17c97358eba_MIT18_S096F13_lecnote5.pdf",
+      "checked_claim": "PDF物理3〜5頁の遷移・累乗・定常と全要素正の収束を照合。資料は列ベクトル、本教材は行ベクトルを定義して使う。試験行列の固有値計算は独立導出。"
+    },
+    {
+      "key": "info_errors",
+      "title": "Information and Entropy, Chapter 4: Errors (2008)",
+      "url": "https://ocw.mit.edu/courses/6-050j-information-and-entropy-spring-2008/71667aa5e13663096278c6617fca34e5_MIT6_050JS08_chapter4.pdf",
+      "checked_claim": "PDF物理4頁の偶数パリティ・奇数反転検出・偶数不能・位置不能を照合。教材の剰余式と具体候補計算は独立に作成。"
+    },
+    {
+      "key": "info_cache",
+      "title": "Memory Hierarchy and Caches Worksheet (2017)",
+      "url": "https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/b71446c5273c385dfcc4e50f00a26b6a_caches_answers.pdf",
+      "checked_claim": "PDF冒頭のAMAT=HitTime+MissRatio*MissPenaltyと局所性を確認。試験の排他的総時間モデルとの定義差を併記する。数値解答は自分で期待値から計算。"
+    },
+    {
+      "key": "info_isbn",
+      "title": "ISBN Users Manual (2012), Appendix 1",
+      "url": "https://www.isbn-international.org/sites/default/files/ISBN%20Manual%202012%20-corr.pdf",
+      "checked_claim": "PDF物理27頁の1/3交互重みとmod10を本文抽出で照合。13桁が2007年以降の方式であり、H26問題指定の旧10桁式と区別。割当保証と算術条件を分ける。"
+    },
+    {
+      "key": "info_deflate",
+      "title": "RFC 1951: DEFLATE Compressed Data Format Specification version 1.3",
+      "url": "https://www.rfc-editor.org/rfc/rfc1951",
+      "checked_claim": "本文のLZ77/Huffman、反復列参照、動的木と全入力を圧縮不能という計数議論を確認。原文の転載なし。"
+    },
+    {
+      "key": "info_universal",
+      "title": "Information Theory, Chapter 9: Universal Compression (2016)",
+      "url": "https://ocw.mit.edu/courses/6-441-information-theory-spring-2016/18b243d5e475579b7434260214ad9a25_MIT6_441S16_chapter_9.pdf",
+      "checked_claim": "PDF冒頭の分布非指定の構成・情報源クラスへ同時漸近最適という意味を確認。高度な全証明読了ではない。"
+    },
+    {
+      "key": "info_separation",
+      "title": "Information Theory, Chapter 20: Source-Channel Separation (2016)",
+      "url": "https://ocw.mit.edu/courses/6-441-information-theory-spring-2016/dfddd4345fee8dd49420be583be2b952_MIT6_441S16_chapter_20.pdf",
+      "checked_claim": "点対点・定常無記憶・長ブロックの情報源/通信路分離を照合。有限遅延と多元系へ無条件拡張しない。"
+    },
+    {
+      "key": "info_lossless",
+      "title": "Information Theory, Chapter 6: Variable-length Lossless Compression (2016)",
+      "url": "https://ocw.mit.edu/courses/6-441-information-theory-spring-2016/67d8e68cd8fda55366e3f9f0a9465c17_MIT6_441S16_chapter_6.pdf",
+      "checked_claim": "PDF物理11〜12頁のKraft/一意復号/平均符号長のエントロピー下限を確認。個別列の長さの絶対下限と誤読しない。"
+    },
+    {
+      "key": "info_jpeg",
+      "title": "JPEG 1",
+      "url": "https://jpeg.org/jpeg/",
+      "checked_claim": "公式本文で静止画規格のDCT損失圧縮に加え可逆方式も含むことを照合。代表用途と全規格の性質を分ける。"
+    },
+    {
+      "key": "info_mpeg",
+      "title": "WG 4: MPEG Video Coding",
+      "url": "https://www.mpeg.org/structure/video-coding/",
+      "checked_claim": "公式ページ/公開検索本文で動画圧縮の規格策定を確認。新規格の最新性能値は教材に使用しない。"
+    }
+  ],
+  "limitations": [
+    "理論資料は該当節の確認であり全ページ読了とはしない。",
+    "ISBN-10は試験原典で明示された式から独立計算。ISBN-13資料で旧方式を代用しない。",
+    "キャッシュ主記憶時間の総時間/追加時間の定義差と候補の最近値を明記。"
+  ]
+}

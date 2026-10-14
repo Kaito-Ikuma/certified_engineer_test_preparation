@@ -1,0 +1,44 @@
+{
+  "stem": "コロイドの分離・光散乱・移動と状態。",
+  "conditions": {
+    "対象": "原典の通常の液体中コロイドの用語。"
+  },
+  "choices": {
+    "1": {
+      "value": "電解質で疎水コロイド凝析",
+      "verdict": "条件内で適切",
+      "reason": "粒子間の反発が弱まり集合・沈殿。"
+    },
+    "2": {
+      "value": "半透膜で透析",
+      "verdict": "条件内で適切",
+      "reason": "小さい分子・イオンを透過させコロイド粒子と分離。"
+    },
+    "3": {
+      "value": "光路が見えるTyndall",
+      "verdict": "条件内で適切",
+      "reason": "粒子による光散乱。"
+    },
+    "4": {
+      "value": "直流電場で電気泳動",
+      "verdict": "条件内で適切",
+      "reason": "荷電粒子が電場に応じ移動。"
+    },
+    "5": {
+      "value": "流動しない状態がゾル",
+      "verdict": "不適切",
+      "reason": "流動性のある分散系がゾル、網目等によって流動しにくい状態がゲル。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_013.png"
+  ],
+  "question_id": "R05-REG-BASIC-4-2",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "13",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "98f3616110b4b9e7ed9f9bf4bba7e72044eb84488662bb356fb846c2d2d1df7e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

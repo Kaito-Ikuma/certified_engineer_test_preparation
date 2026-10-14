@@ -1,0 +1,45 @@
+{
+  "stem": "重力・速度検層・屈折法と起伏地の反射法の制約を比較する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "地形起伏は走時・観測配置へ影響し、浅層反射法では静補正や起振受振条件を整える。"
+  },
+  "choices": {
+    "1": {
+      "value": "重力分布から地下密度構造を推定",
+      "verdict": "適切",
+      "reason": "重力異常に対して密度と形状のモデルを作り逆解析する。"
+    },
+    "2": {
+      "value": "単孔で波速の深さ分布を求める速度検層",
+      "verdict": "適切",
+      "reason": "地表又は孔内起振と孔内受振の走時を用いる。"
+    },
+    "3": {
+      "value": "屈折波から地下速度構造を解析",
+      "verdict": "条件付きで適切",
+      "reason": "通常は速い下層の境界を進み戻る臨界屈折波の初動等を使う。任意の低速度層まで検出できるわけではない。"
+    },
+    "4": {
+      "value": "下方増速で速度比大きいほど分割と厚さ精度が良い",
+      "verdict": "条件付きで適切",
+      "reason": "層走時勾配の差が明瞭になり識別しやすい傾向である。隠れ層、薄層、配置、ノイズによる精度制限もある。"
+    },
+    "5": {
+      "value": "浅層反射法は急峻で凹凸の多い場所へ適用される",
+      "verdict": "不適切",
+      "reason": "通常の適用上は地形起伏が観測と補正の障害となり、適性を積極的に示す一般記述は不適切である。実施そのものが絶対不可能とはしない。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "地形起伏があれば反射法は絶対不可とはしない。速度比だけから層厚精度を保証せず、隠れ層と観測条件を保持。",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_012.png"
+  ],
+  "question_id": "H25-REG-APPLIED-33",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "d115af14d26fb3802d144a85635968017be036b07d9ccb4e84ddf54b7a11bcb9",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

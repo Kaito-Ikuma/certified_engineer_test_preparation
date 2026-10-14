@@ -1,0 +1,31 @@
+{
+  "status": "committed",
+  "time": "2026-10-14T21:23:35+09:00",
+  "paths": [
+    "generated/questions/basic/02_information_logic.tex",
+    "generated/questions/basic/05_environment_energy_technology.tex",
+    "generated/questions/aptitude/01_engineer_act.tex",
+    "generated/questions/aptitude/02_engineering_ethics.tex",
+    "generated/questions/applied_science/physics_chemistry/01_mechanics.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/basic/02_information_logic.tex": true,
+    "generated/questions/basic/05_environment_energy_technology.tex": true,
+    "generated/questions/aptitude/01_engineer_act.tex": true,
+    "generated/questions/aptitude/02_engineering_ethics.tex": true,
+    "generated/questions/applied_science/physics_chemistry/01_mechanics.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/basic/02_information_logic.tex": "5f334bc29c6bfa58f4086f10dba8837ec11fab9065b5f76d18bdc02a59097dc3",
+    "generated/questions/basic/05_environment_energy_technology.tex": "75a0d81e689af69c448cfdf74424ecf9c474c619405e419c37ba77f1cb76c742",
+    "generated/questions/aptitude/01_engineer_act.tex": "5cad990c6b908d7e27eb14d9c9d4061976359d0eeff9d7cd36f67c6414ae03e5",
+    "generated/questions/aptitude/02_engineering_ethics.tex": "ae433991a88e2e57ae65bacb0281e44348f771bc0aeecc74c015d02a9ce1a5aa",
+    "generated/questions/applied_science/physics_chemistry/01_mechanics.tex": "df42a7f835f9239f012f08717d9be2ae24ceaf5b178f73456f7bbe6131f2ddfe",
+    "generated/audit_summary.tex": "355cd1c7db45c1969fb2c23a390a1e687fb4c359ea5daf1c02bdbd6b8f2b7780",
+    "generated/frequency_tables.tex": "ba96d496c93d867e4da3a40ec0ef51ef1034420232f058e84878081346fc5559"
+  }
+}

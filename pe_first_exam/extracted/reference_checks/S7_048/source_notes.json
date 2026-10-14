@@ -1,0 +1,32 @@
+{
+  "references": [
+    {
+      "key": "design48_queue_ref",
+      "author": "Stanley B. Gershwin / MIT OpenCourseWare",
+      "title": "2.854 Markov Processes and Queues",
+      "url": "https://ocw.mit.edu/courses/2-854-introduction-to-manufacturing-systems-fall-2016/5d3e9532c2ff6e156d48e41f9bd9576f_MIT2_854F16_Queueing.pdf",
+      "scope": "PDF61〜68頁のM/M/1仮定・定常ρ<1・系内人数・Little則とWを文字層で確認。全102頁読了ではない。"
+    },
+    {
+      "key": "design48_ud",
+      "author": "NC State University Center for Universal Design",
+      "title": "The Principles of Universal Design, Version 2.0, April 1997",
+      "url": "https://design.ncsu.edu/research/center-for-universal-design/",
+      "scope": "公開本文の1997七原則と定義を確認。単独Maceの著作ではなく10名の作業班。歴史の全経路は未照合。"
+    },
+    {
+      "key": "design48_iso",
+      "author": "International Organization for Standardization",
+      "title": "ISO 5456-2:1996, Technical Drawings: Orthographic Representations",
+      "url": "https://www.iso.org/obp/ui?_escaped_fragment_=iso:std:iso:5456:-2:ed-1:v1:en",
+      "scope": "公開目次と前書き・適用範囲を読了。第一角・第三角の節名とISO国際性を確認。有料技術節の全図は未閲覧。"
+    },
+    {
+      "key": "design48_mlit",
+      "author": "国土交通省",
+      "title": "空港土木施設の設置基準・同解説: 構造設計の基本（2021改訂）",
+      "url": "https://www.mlit.go.jp/koku/content/sekkeiyouryou_kouzou_R3.4kaitei.pdf",
+      "scope": "公開検索本文の要求性能照査と構造詳細の設定を確認。構造詳細は部材寸法・材料等の情報。全151頁読了ではない。"
+    }
+  ]
+}

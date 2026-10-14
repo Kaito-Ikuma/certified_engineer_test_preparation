@@ -1,0 +1,28 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T11:04:26+09:00",
+  "paths": [
+    "extracted/logs/S7_025_work_record.json",
+    "extracted/logs/S7_current_counts.json",
+    "extracted/logs/draft_build_manifest.json",
+    "README.md",
+    "handoff/SOL_PROGRESS_S7.md",
+    "WORKLOG.md"
+  ],
+  "existed": {
+    "extracted/logs/S7_025_work_record.json": false,
+    "extracted/logs/S7_current_counts.json": true,
+    "extracted/logs/draft_build_manifest.json": true,
+    "README.md": true,
+    "handoff/SOL_PROGRESS_S7.md": true,
+    "WORKLOG.md": true
+  },
+  "sha256": {
+    "extracted/logs/S7_025_work_record.json": "9bdf6b446200ca3c8dc1ae4d994b18997cc8db37b3f684022abacbf8f67569ce",
+    "extracted/logs/S7_current_counts.json": "2afd7e97ed5b76927f0df995c45938dfffde7eb2eb0955d2f808daa67c9c3012",
+    "extracted/logs/draft_build_manifest.json": "a1b4420202e353dbf4a0af66a53aa38159211f0fb326ca0ded63c415af442fd3",
+    "README.md": "416b697fd47441d80daa54184d3d74b09d9bf2f953a9aceac95c1be53641daee",
+    "handoff/SOL_PROGRESS_S7.md": "16ed8a72702412af6f9340937f8e7e9ee6cc87e1446301b5a213c0d542f68185",
+    "WORKLOG.md": "f07b72ab8b8990aaac0c9322508301378fdf0dae8034d844c30edb710dcdf61b"
+  }
+}

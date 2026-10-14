@@ -1,0 +1,45 @@
+{
+  "stem": "改定前の温度基準と電位・角度の単位関係を比較する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "Kは水三重点で定義。",
+      "verdict": "適切",
+      "reason": "2019改定前のKは同位体組成を規定した水三重点の熱力学温度の1/273.16。通常圧凝固点とは異なる。現在はボルツマン定数kを固定する。"
+    },
+    "2": {
+      "value": "水三重点は.01℃。",
+      "verdict": "適切",
+      "reason": "2017の旧定義では三重点273.16KとCelsiusの273.15Kオフセットから.01℃。定義水組成条件を持つ。"
+    },
+    "3": {
+      "value": "1C=As。",
+      "verdict": "適切",
+      "reason": "電荷Q=ItよりC=Asである。"
+    },
+    "4": {
+      "value": "1V=1N C^-1。",
+      "verdict": "不適切",
+      "reason": "N/Cは電場の次元である。VはJ/C=Nm/Cなので長さが一つ不足する。"
+    },
+    "5": {
+      "value": "平面角はradで無次元。",
+      "verdict": "適切",
+      "reason": "平面角は弧長/半径で次元1、単位radを用いる。radは角度の意味を残す記号であり、角度でない任意の比と区別する。"
+    }
+  },
+  "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_002.png"
+  ],
+  "question_id": "H29-REG-APPLIED-05",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "c80e7dac35bacd11386c21c98bf1f26ed1b1b364a2d7b51996b982f73878aad7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

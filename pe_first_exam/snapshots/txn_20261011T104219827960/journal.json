@@ -1,0 +1,34 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T10:42:19+09:00",
+  "paths": [
+    "data/batch_changes/S7_024_height_terminology_revision_H26-REG-BASIC-2-6_revision.json",
+    "extracted/corrected/H26-REG-BASIC-2-6/f77d1dacd017590c489dfee6ed973fe5b2d5f4de9a82825c562c4de349146951.json",
+    "data/questions.csv",
+    "data/verification_records.csv",
+    "data/question_topics.csv",
+    "data/question_evaluations.csv",
+    "data/batch_changes/S7_024_height_terminology_revision.csv",
+    "extracted/logs/batches/S7_024_height_terminology_revision.json"
+  ],
+  "existed": {
+    "data/batch_changes/S7_024_height_terminology_revision_H26-REG-BASIC-2-6_revision.json": false,
+    "extracted/corrected/H26-REG-BASIC-2-6/f77d1dacd017590c489dfee6ed973fe5b2d5f4de9a82825c562c4de349146951.json": false,
+    "data/questions.csv": true,
+    "data/verification_records.csv": true,
+    "data/question_topics.csv": true,
+    "data/question_evaluations.csv": true,
+    "data/batch_changes/S7_024_height_terminology_revision.csv": false,
+    "extracted/logs/batches/S7_024_height_terminology_revision.json": false
+  },
+  "sha256": {
+    "data/batch_changes/S7_024_height_terminology_revision_H26-REG-BASIC-2-6_revision.json": "4ee4f66b510e35be5268a330a5a01afbe20004f52f3ced82927c8bb120b325ab",
+    "extracted/corrected/H26-REG-BASIC-2-6/f77d1dacd017590c489dfee6ed973fe5b2d5f4de9a82825c562c4de349146951.json": "f77d1dacd017590c489dfee6ed973fe5b2d5f4de9a82825c562c4de349146951",
+    "data/questions.csv": "b0a6bf665fada536ea135bef2eabbdd3ad5bc33b4f3fbbe6f1b69c4aa7df8bd4",
+    "data/verification_records.csv": "ac45be16f561cacc393f0d3dab6f2bdfc6bb929b3216c9720dfde254d3a90595",
+    "data/question_topics.csv": "f13e2fb19ce88c08128c5e08f62fae4e2519fcefa8146c0b6af4d518953ba571",
+    "data/question_evaluations.csv": "58efac3aaf5472bedddee437581af3105f6535795c07c845c629eb57fd71d86b",
+    "data/batch_changes/S7_024_height_terminology_revision.csv": "9c45f6cbda9d5f627b31224389eac4b03a04f575da9fc45ddf4540e21c63b74e",
+    "extracted/logs/batches/S7_024_height_terminology_revision.json": "66f693e9b0b0d232f5a6627f8686653915670480f30c58872f40b2b75c1e2f0c"
+  }
+}

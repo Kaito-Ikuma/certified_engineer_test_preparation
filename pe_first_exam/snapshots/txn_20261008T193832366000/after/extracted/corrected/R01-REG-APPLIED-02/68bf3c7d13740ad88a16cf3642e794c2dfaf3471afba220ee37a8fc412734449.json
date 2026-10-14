@@ -1,0 +1,47 @@
+{
+  "stem": "直径10 mmの丸棒に20 N mのねじりモーメントを加えたときの最大せん断応力を求める。",
+  "conditions": {
+    "diameter_mm": 10,
+    "torque_N_m": 20,
+    "section": "solid circular bar",
+    "model": "elastic circular-shaft torsion"
+  },
+  "choices": {
+    "1": {
+      "value": "50 MPa",
+      "verdict": "不採用",
+      "reason": "計算値101.9 MPaより大幅に小さい。"
+    },
+    "2": {
+      "value": "100 MPa",
+      "verdict": "採用",
+      "reason": "101.9 MPaに最も近い。"
+    },
+    "3": {
+      "value": "150 MPa",
+      "verdict": "不採用",
+      "reason": "計算値より約48 MPa大きい。"
+    },
+    "4": {
+      "value": "200 MPa",
+      "verdict": "不採用",
+      "reason": "計算値のほぼ2倍となる。"
+    },
+    "5": {
+      "value": "250 MPa",
+      "verdict": "不採用",
+      "reason": "計算値より大幅に大きい。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_001.png"
+  ],
+  "question_id": "R01-REG-APPLIED-02",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "8e7308731f30b829174d640f5855a9d5d7281434e3d223818077df108c825598",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

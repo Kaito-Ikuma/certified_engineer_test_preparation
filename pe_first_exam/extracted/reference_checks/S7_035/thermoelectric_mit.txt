@@ -1,0 +1,202 @@
+2.43 ADVANCED THERMODYNAMICS
+                    Spring Term 2024
+                      LECTURE 24
+
+                Room 3-442
+      Tuesday, May 7, 2:30pm - 4:30pm
+
+       Instructor: Gian Paolo Beretta
+             beretta@mit.edu
+               Room 3-351d
+
+
+
+
+       © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics   Slide 24.01
+Onsager nonequilibrium cross effects and the Curie symmetry principle
+
+
+
+
+                    © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics   Slide 24.02
+ Only a fraction of JE is q″ in a “heat&diffusion” interaction
+
+
+If constituents carry electric charge
+
+
+
+   Use                     and (*)
+
+
+rewrite as qʺ =
+
+  Therefore
+
+                                                              (*) Partial charge flux due to the
+                                                              diffusion of component i:
+                                                              (*) Total charge flux (current density):
+
+
+
+
+                           © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics           Slide 24.03
+Relation between   independent diffusive fluxes in heat&diffusion interactions
+
+
+
+
+                             © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics   Slide 24.04
+Electromagnetic radiation: a carrier of energy and entropy
+
+
+
+
+        G.P. Beretta and E.P. Gyftopoulos, Electromagnetic Radiation: A Carrier of Energy
+        and Entropy, Journal of Energy Resources Technology, Vol. 137, 021005 (2015).
+
+                          © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics     Slide 24.05
+σ in terms of relative diffusive fluxes and forces
+
+
+
+
+           © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics   Slide 24.06
+      Nonequilibrium in
+heat, mass, and charge transfer
+
+     Thermo-electric effects
+
+
+
+
+ © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics   Slide 24.07
+Thermoelectric effects in solid conductors
+
+
+
+
+     © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics   Slide 24.08
+Thermoelectric effects in solid conductors
+
+
+
+
+     © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics   Slide 24.09
+Thermoelectric effects in solid conductors
+
+
+
+
+     © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics   Slide 24.10
+Thermoelectric effects in solid conductors
+
+
+
+
+     © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics   Slide 24.11
+Seeebeck effect and the thermocouple
+                                T2, f2               Metal A           T1, f1   Copper
+                             Hot                                               T1=T4=TLAB    V
+                             junction           Metal B       Metal A T 4, f 4   Copper
+                                                                                        Voltmeter
+                                                    T3, f3    Cold (reference) junction
+
+
+
+
+                                                                      Figures by Nanite from Wikipedia
+      © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics                       Slide 24.12
+Seebeck effect and the thermoelectric generator
+   Hot junction                                         Cold junction
+
+
+
+
+            © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics   Slide 24.13
+               Peltier effect
+
+              Material A                                        Material B
+
+
+
+
+© 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics                Slide 24.14
+Thermocouple, thermoelectric generator, and Peltier cell
+
+
+
+
+        Figure 1 from C.B. Vining, Nature 413, 577 (2001).
+
+
+                      © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics   Slide 24.15
+Second law efficiency of the thermoelectric generator
+
+
+
+
+             © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics   Slide 24.16
+Second law efficiency of the thermoelectric generator
+
+
+
+
+             © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics   Slide 24.17
+Thomson heating/cooling effect vs Joule heating
+
+
+
+
+          © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics   Slide 24.18
+          Cross effects in charge and spin current transport
+
+
+
+
+Adapted from figure 1 of S. Meyer et al., Nature Materials 16, 977 (2017)
+
+                                    © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics   Slide 24.19
+                                          Spin-Seebeck effect
+
+
+
+
+Figure 1 from K. Uchida et al., Nature 455, 778 (2008)
+
+                                     © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics   Slide 24.20
+                                                         Image Credits
+Slide 5:
+Figure 3 and equations © The American Society of Mechanical Engineers. All rights reserved. This content is excluded from our Creative
+Commons license. For more information, see https://ocw.mit.edu/help/faq-fair-use.
+Slide 12:
+•   Image showing thermocouple reference functions for nickel-alloy types E, J, K, M, N, and T is in the public domain.
+•   Image showing thermocouple characteristics at low temperatures is in the public domain.
+Slide 15:
+Image showing thermocouple, thermoelectric generator, and Peltier cell © Springer Nature Limited. All rights reserved. This content is excluded
+from our Creative Commons license. For more information, see https://ocw.mit.edu/help/faq-fair-use.
+Slide 19:
+Image showing cross effects in charge and spin current transport © Springer Nature Limited. All rights reserved. This content is excluded from
+our Creative Commons license. For more information, see https://ocw.mit.edu/help/faq-fair-use.
+Slide 20:
+Image showing spin-Seebeck effect © Springer Nature Limited. All rights reserved. This content is excluded from our Creative Commons
+license. For more information, see https://ocw.mit.edu/help/faq-fair-use.
+
+
+
+
+                                             © 2024 Gian Paolo Beretta   @MIT 2.43 Advanced Thermodynamics                 Lecture 24.image credits
+MIT OpenCourseWare
+https://ocw.mit.edu
+
+
+
+
+2.43 Advanced Thermodynamics
+Spring 2024
+
+
+
+
+For information about citing these materials or our Terms of Use, visit: https://ocw.mit.edu/terms.
+

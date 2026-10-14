@@ -1,0 +1,45 @@
+{
+  "stem": "特許と基本法の定義、国の責務。",
+  "conditions": {
+    "時点": "令和元年度に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "発明は自然法則利用高度思想",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "2": {
+      "value": "特許保護利用と産業",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "3": {
+      "value": "知財には商標商号も",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "4": {
+      "value": "基本法は創造保護活用",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "5": {
+      "value": "国は施策責務なし",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/basic/page_022.png"
+  ],
+  "question_id": "R01-REG-BASIC-5-6",
+  "source_file": "sources/R01/basic.pdf",
+  "source_page": "22",
+  "source_sha256": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+  "raw_text_sha256": "1d0e4676bf27ecbfb5783ff9fb9eda908658c40326bfe6f7e02120ee61c5daf3",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

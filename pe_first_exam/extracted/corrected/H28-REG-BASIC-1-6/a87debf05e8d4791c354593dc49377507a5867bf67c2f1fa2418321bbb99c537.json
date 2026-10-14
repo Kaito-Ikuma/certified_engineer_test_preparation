@@ -1,0 +1,45 @@
+{
+  "stem": "設計の調和・簡素化・分割・機能独立性を判断する。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "設計の調和・簡素化・分割・機能独立性を判断する。"
+  },
+  "choices": {
+    "1": {
+      "value": "正誤正誤正",
+      "verdict": "選ぶ候補",
+      "reason": "調和と分割・ばらつきを認め複雑最善・低独立最善を否定。"
+    },
+    "2": {
+      "value": "誤正正正正",
+      "verdict": "選ばない候補",
+      "reason": "調和を否定し複雑・低独立を肯定。"
+    },
+    "3": {
+      "value": "誤正正誤誤",
+      "verdict": "選ばない候補",
+      "reason": "調和とばらつきを否定し複雑を肯定。"
+    },
+    "4": {
+      "value": "正正誤正正",
+      "verdict": "選ばない候補",
+      "reason": "複雑・低独立を肯定し分割を否定。"
+    },
+    "5": {
+      "value": "誤誤誤正誤",
+      "verdict": "選ばない候補",
+      "reason": "分割・ばらつきを否定し低独立を肯定。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "原典の調和という原理の特定原著は未照合。代表設計方針を全系の最適性定理へ拡張しない。",
+  "evidence": [
+    "extracted/pages/H28/basic/page_006.png"
+  ],
+  "question_id": "H28-REG-BASIC-1-6",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "9f8c6dcf490174f34799988ae42affc13a5b8c53bae2cbb84900e637f7c4c983",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,44 @@
+{
+  "stem": "対流圏の質量・気温減率・界面高度と成層圏温度、オゾンの分布を判定する。",
+  "conditions": {
+    "方向": "最も不適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "対流圏の気温減率は3℃/km。",
+      "verdict": "不適切",
+      "reason": "標準的な対流圏環境減率は約6.5K/km。乾燥断熱9.8K/kmや湿潤断熱・実際の逆転層と区別する。"
+    },
+    "2": {
+      "value": "オゾンの約9割は成層圏。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "全球オゾン鉛直分布の代表値。地表オゾン汚染の存在を否定しない。"
+    },
+    "3": {
+      "value": "成層圏では高度とともに気温上昇。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "オゾン吸収による加熱が上方の温度増加を作る。成層圏の下部がほぼ等温の場合を無視した厳密な全高度単調則ではない。"
+    },
+    "4": {
+      "value": "対流圏界面は低緯度で高く高緯度で低い。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "低緯度の高い温度と深い対流により界面は高くなる。"
+    },
+    "5": {
+      "value": "対流圏質量は気圏の約3/4。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "大気質量が下層へ集中する代表的な全球概数。界面の緯度・季節差で厳密値は変わる。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_007.png"
+  ],
+  "question_id": "R04-REG-APPLIED-22",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "97509ffd473a1cb2deda85bbf5b9ee277e9b9e4a548bde78a5436db26ce611fa",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

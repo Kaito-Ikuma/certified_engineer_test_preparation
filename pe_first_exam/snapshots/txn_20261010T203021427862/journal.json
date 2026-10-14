@@ -1,0 +1,22 @@
+{
+  "status": "committed",
+  "time": "2026-10-10T20:30:21+09:00",
+  "paths": [
+    "generated/questions/aptitude/02_engineering_ethics.tex",
+    "generated/questions/aptitude/03_compliance_accountability.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/aptitude/02_engineering_ethics.tex": true,
+    "generated/questions/aptitude/03_compliance_accountability.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/aptitude/02_engineering_ethics.tex": "7202b8a1832a43fce905048adfc7c8ff2d7e4322725aba9862c49c488dca0b25",
+    "generated/questions/aptitude/03_compliance_accountability.tex": "96c03cbdea3830a725099b8287b81f861f3091ee6526dcfddcd133ebae282135",
+    "generated/audit_summary.tex": "3273fa1f26a68dd45277632813a1dd96eb578845eca5d17d937993de09b024b3",
+    "generated/frequency_tables.tex": "8508d49f526c424303335493896ae7b9ba24c507f04ffd0421333c0d4035787b"
+  }
+}

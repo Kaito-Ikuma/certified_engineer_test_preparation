@@ -1,0 +1,12 @@
+{
+  "time": "2026-10-09T18:38:42+09:00",
+  "counts": {
+    "classification_verified": 146,
+    "summary_verified": 103,
+    "corrected": 100,
+    "partial": 3,
+    "drafts": 103,
+    "manual": 1170
+  },
+  "solution_verified": 0
+}

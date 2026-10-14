@@ -1,0 +1,45 @@
+{
+  "stem": "緩和・適応とEco-DRRの共便益。",
+  "conditions": {
+    "時点": "令和元年度再試験に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "緩和/適応/生態系/生物多様性",
+      "verdict": "適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "2": {
+      "value": "削減/対応/生態系/地域資源",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "3": {
+      "value": "緩和/適応/地域人材/地域資源",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "緩和/対応/生態系/生物多様性",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "5": {
+      "value": "削減/対応/地域人材/地域資源",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/basic/page_017.png"
+  ],
+  "question_id": "R01-RET-BASIC-5-1",
+  "source_file": "sources/R01_retest/basic.pdf",
+  "source_page": "17",
+  "source_sha256": "ff01fe1eeadf5ffab6f93110c6e4a138079454088dc4c2ed72ce6e31c32f38a1",
+  "raw_text_sha256": "541e09f02063aebefa2f2a864143a818b2fc2ea22af65f46d2b54f0afc5a6175",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

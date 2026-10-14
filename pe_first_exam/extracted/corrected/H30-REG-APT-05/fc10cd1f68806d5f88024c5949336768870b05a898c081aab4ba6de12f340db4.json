@@ -1,0 +1,48 @@
+{
+  "stem": "工学系学会の行動規範の前文に入る5語の組を選ぶ。",
+  "conditions": {
+    "A": "未来につながる社会の性質。",
+    "B": "未来世代の権利。",
+    "C・D": "人類・社会に貢献すべき対象。",
+    "E": "専門家が協力する相手の見識。",
+    "並び": "A／B／C／D／E。電気学会2007年行動規範の前文に対応。"
+  },
+  "choices": {
+    "1": {
+      "value": "持続／生存／安全／健康／同様",
+      "verdict": "設問条件に不一致",
+      "reason": "Eは同じ見識の人だけではなく、多様な見識の人々である。"
+    },
+    "2": {
+      "value": "持続／幸福／安定／安心／同様",
+      "verdict": "設問条件に不一致",
+      "reason": "B・C・D・Eが前文の保護対象・協力の意味と違う。"
+    },
+    "3": {
+      "value": "進歩／幸福／安定／安心／同様",
+      "verdict": "設問条件に不一致",
+      "reason": "5語とも対応しない。技術進歩だけでは持続可能性を保証できない。"
+    },
+    "4": {
+      "value": "持続／生存／安全／健康／多様",
+      "verdict": "設問条件に一致",
+      "reason": "持続可能性、未来世代の生存、安全・健康、多様な見識との協同が対応する。"
+    },
+    "5": {
+      "value": "進歩／幸福／安全／安心／多様",
+      "verdict": "設問条件に不一致",
+      "reason": "C・Eは合うが、A・B・Dが違う。"
+    }
+  },
+  "figures": "原典画像で問題幹・条件・否定・全5肢と全組合せセルを確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/aptitude/page_005.png"
+  ],
+  "question_id": "H30-REG-APT-05",
+  "source_file": "sources/H30/aptitude.pdf",
+  "source_page": "5",
+  "source_sha256": "9b92cd3549fc1ad21636a544978f1385f63667ff6ac0112f81e553cf2ee4b1f5",
+  "raw_text_sha256": "55fe5d1495decd562ee1de6b412b71a7902c6139f2e4e24bf9b43da14c713f27",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

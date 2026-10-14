@@ -1,0 +1,45 @@
+{
+  "stem": "内殻光電子の化学シフトと核・電子スピンを比較する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "内殻光電子の化学シフトと核・電子スピンを比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "ESRと不対電子",
+      "verdict": "通常の条件で適切",
+      "reason": "不対電子の磁気共鳴を測る。"
+    },
+    "2": {
+      "value": "13Cはスピン1/2でNMR対象",
+      "verdict": "通常の条件で適切",
+      "reason": "13Cは核スピン1/2を持つ。豊富な12Cは核スピン0なので同じ測定対象ではない。"
+    },
+    "3": {
+      "value": "XPSは結合状態に鈍感で化学分析不向き",
+      "verdict": "不適切",
+      "reason": "周辺結合状態による内殻結合エネルギーの化学シフトを測定でき、元素と化学状態の分析に用いられる。"
+    },
+    "4": {
+      "value": "Ramanで振動・回転を調べる",
+      "verdict": "通常の条件で適切",
+      "reason": "非弾性散乱の周波数差が振動・回転遷移に対応する。"
+    },
+    "5": {
+      "value": "吸収端より短いX線でXRF",
+      "verdict": "通常の条件で適切",
+      "reason": "光子エネルギーが内殻電離の閾値を超えると空孔が作られ、その後の遷移から特性X線を放射し得る。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_006.png"
+  ],
+  "question_id": "R03-REG-APPLIED-16",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "11e3875d2ad349e7a9ddb2a2dabb8753d35b73afcf76dab11b326d6c7bd0eb64",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

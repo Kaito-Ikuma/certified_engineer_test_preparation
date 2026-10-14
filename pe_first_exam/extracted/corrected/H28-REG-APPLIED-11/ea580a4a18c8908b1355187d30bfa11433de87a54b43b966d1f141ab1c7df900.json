@@ -1,0 +1,45 @@
+{
+  "stem": "ハロゲン単体の状態・酸化力とHFの酸強度を比較する。",
+  "conditions": {
+    "判断対象": "ハロゲン単体の状態・酸化力とHFの酸強度を比較する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "四単体は二原子分子で有毒",
+      "verdict": "選ばない候補",
+      "reason": "F2,Cl2,Br2,I2の分子単体と有害性。"
+    },
+    "2": {
+      "value": "F2/Cl2気体、Br2液体、I2固体",
+      "verdict": "選ばない候補",
+      "reason": "常温常圧の代表状態。"
+    },
+    "3": {
+      "value": "F2は水と激しく反応、I2は難溶",
+      "verdict": "選ばない候補",
+      "reason": "F2の酸化性とI2水への低溶解度。"
+    },
+    "4": {
+      "value": "酸化力F2>Cl2>Br2>I2",
+      "verdict": "選ばない候補",
+      "reason": "標準的な水溶液の酸化還元比較。"
+    },
+    "5": {
+      "value": "HF/HCl/HBr/HIは全強酸",
+      "verdict": "選ぶ候補",
+      "reason": "通常希薄水溶液のHFは弱酸で、毒性と酸強度は別。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "HFの酸強度は希薄水溶液の通常分類。濃厚系の活量・溶媒依存を全条件へ拡張しない。",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_004.png"
+  ],
+  "question_id": "H28-REG-APPLIED-11",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "97c1ea6b4fbf78b991d8847315eb69202f284fad72be6308c12d5e091229aaa1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

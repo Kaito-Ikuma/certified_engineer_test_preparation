@@ -1,0 +1,31 @@
+{
+  "status": "committed",
+  "time": "2026-10-10T22:22:51+09:00",
+  "paths": [
+    "generated/questions/aptitude/01_engineer_act.tex",
+    "generated/questions/aptitude/02_engineering_ethics.tex",
+    "generated/questions/aptitude/03_compliance_accountability.tex",
+    "generated/questions/aptitude/04_safety_risk.tex",
+    "generated/questions/aptitude/06_research_information_ethics.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/aptitude/01_engineer_act.tex": true,
+    "generated/questions/aptitude/02_engineering_ethics.tex": true,
+    "generated/questions/aptitude/03_compliance_accountability.tex": true,
+    "generated/questions/aptitude/04_safety_risk.tex": true,
+    "generated/questions/aptitude/06_research_information_ethics.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/aptitude/01_engineer_act.tex": "92dc25d9c296f368fdee72aa65ed2ca335f3bcd1a95cc2bfb20c5566dbab9164",
+    "generated/questions/aptitude/02_engineering_ethics.tex": "45f8efd59b4202d191b82dbb03f2c3f7a4118dfee32e71600b064f16abfb83db",
+    "generated/questions/aptitude/03_compliance_accountability.tex": "66a20fb62698a7f6cb8a9ea890b103727ffc630f6c3b0c31c3d257486b287507",
+    "generated/questions/aptitude/04_safety_risk.tex": "6d986c6ca312fd79706027419ae612ddb372ed4ec6b43ed28baec17432c25cc6",
+    "generated/questions/aptitude/06_research_information_ethics.tex": "71a4326540fe6d55a118f8d0efb941a0dd3a945eb3b41e3e87df7772a24b5517",
+    "generated/audit_summary.tex": "a8be407e28020b1ad7b515f245d8803edfa668f58bcd3619b3a928ad7e12604e",
+    "generated/frequency_tables.tex": "3a71082a2e85139cd89b628495985012829510eeff455bed50983f8cc7d1528e"
+  }
+}

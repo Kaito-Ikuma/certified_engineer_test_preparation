@@ -1,0 +1,45 @@
+{
+  "stem": "火山ガスの主要成分と温度・酸化還元条件を区別する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "火山ガスの主要成分と温度・酸化還元条件を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "H2O",
+      "verdict": "代表的条件で適切",
+      "reason": "通常の火山ガスの最多成分は水蒸気であり、酸性有毒ガスが量の大部分という意味ではない。"
+    },
+    "2": {
+      "value": "CO2",
+      "verdict": "代表的条件で適切",
+      "reason": "マグマから放出される代表的な炭素ガス。水蒸気との量比は環境に依存する。"
+    },
+    "3": {
+      "value": "SO2",
+      "verdict": "代表的条件で適切",
+      "reason": "硫黄ガスの代表で酸化的な高温火山ガスに重要。冷却・熱水系では化学種や吸収が変わる。"
+    },
+    "4": {
+      "value": "H2S",
+      "verdict": "代表的条件で適切",
+      "reason": "硫黄の還元的な化学種であり、火山ガス・熱水系に含まれる。"
+    },
+    "5": {
+      "value": "CH4",
+      "verdict": "不適切",
+      "reason": "通常の高温マグマに由来する平均主要ガスの比較では適さない。低温・還元環境の存在を含め、厳密に常に零とする意味ではない。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "理論的平均と主要の厳密な濃度基準は未提示。特にR07の100気圧・1200℃平衡の定量表と酸化還元条件の照合が残る。通常の火山ガスの代表比較として説明し、CH4の全条件不在やH2の固定割合を主張しない。",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_011.png"
+  ],
+  "question_id": "H28-REG-APPLIED-28",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "9d0e9689e33ae83ce62983c6eaba0f6e058d713a5aec8990bab3e7c946d8a8b1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

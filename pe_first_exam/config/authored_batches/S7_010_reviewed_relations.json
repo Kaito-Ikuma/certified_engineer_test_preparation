@@ -1,0 +1,38 @@
+{
+  "relations": [
+    {
+      "left_question_id": "H24-REG-APT-02",
+      "right_question_id": "R02-REG-APT-02",
+      "relation_type": "same_concept",
+      "shared_concept": "技術専門職の倫理綱領",
+      "shared_method": "公衆・誠実性・人格尊重・育成と不正な例外を区別",
+      "numerical_differences": "数値計算なし。対比の行数・数える対象が異なる場合は肢差へ明記。",
+      "negation_differences": "最も不適切な記述の選択対同じ方向、又は不適切対比の件数対阻害し得る要因の件数。原典の否定・方向を直接確認。",
+      "choice_differences": "H24は無条件の全面公開3、R02は顧客要求によるデータ変更2が不適切。人格尊重と育成の肢は共通。R02は品質と不正防止の環境も問う。",
+      "figure_differences": "両方図なし。全5肢の限定と例外を比較。",
+      "temporal_differences": "H24とR02は2023年改訂前。H29/R07は倫理判断の概念比較で法律の時点を同一と仮定しない。",
+      "evidence": "両年の原典画像を確認し、S7_010校正JSONの条件・全5肢と比較。",
+      "approval_status": "verified",
+      "source_hash_left": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+      "source_hash_right": "d0ca26aaeeba6d436d8ffa77a759056e7a194c0ac9fad61de2c84392999050bb",
+      "rubric_version": "1.0-review1"
+    },
+    {
+      "left_question_id": "H29-REG-APT-15",
+      "right_question_id": "R07-REG-APT-03",
+      "relation_type": "same_concept",
+      "shared_concept": "道徳的自律と判断の阻害要因",
+      "shared_method": "情報・視野・権威・集団の吟味不足を判断",
+      "numerical_differences": "数値計算なし。対比の行数・数える対象が異なる場合は肢差へ明記。",
+      "negation_differences": "最も不適切な記述の選択対同じ方向、又は不適切対比の件数対阻害し得る要因の件数。原典の否定・方向を直接確認。",
+      "choice_differences": "H29は促進/阻害の7対比から逆のキ1件を選び正答2。R07は5阻害要因を全て数え正答5。原典の表形式、導入例、数える対象は異なる。",
+      "figure_differences": "模式図なし。H29は7行の対比表、R07は5記述と件数候補。全セル又は全記述を照合。",
+      "temporal_differences": "H24とR02は2023年改訂前。H29/R07は倫理判断の概念比較で法律の時点を同一と仮定しない。",
+      "evidence": "両年の原典画像を確認し、S7_010校正JSONの条件・全5肢と比較。",
+      "approval_status": "verified",
+      "source_hash_left": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+      "source_hash_right": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+      "rubric_version": "1.0-review1"
+    }
+  ]
+}

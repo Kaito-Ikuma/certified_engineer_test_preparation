@@ -1,0 +1,74 @@
+{
+  "time": "2026-10-10T07:06:11+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_012_basic_chemistry",
+  "question_ids": [
+    "H23-REG-BASIC-4-2",
+    "H26-REG-BASIC-4-1",
+    "H25-REG-BASIC-4-3",
+    "H26-REG-BASIC-4-2",
+    "H27-REG-BASIC-4-1",
+    "R02-REG-BASIC-4-1",
+    "H27-REG-BASIC-4-2",
+    "R04-REG-BASIC-4-2",
+    "R07-REG-BASIC-4-1",
+    "H28-REG-BASIC-4-2",
+    "R05-REG-BASIC-4-1",
+    "H30-REG-BASIC-4-1",
+    "R01-REG-BASIC-4-1",
+    "R06-REG-BASIC-4-1",
+    "R01-REG-BASIC-4-2",
+    "R03-REG-BASIC-4-1",
+    "R06-REG-BASIC-4-2",
+    "R07-REG-BASIC-4-4"
+  ],
+  "source_images": 14,
+  "independent_matches": 18,
+  "corrected_verified": 16,
+  "partial": 2,
+  "related_pairs_added": 6,
+  "related_pairs_total": 44,
+  "theory_sections": 13,
+  "primary_references_added": 17,
+  "concepts_added": 6,
+  "canonical_counts": {
+    "recorded_at": "2026-10-10T07:06:11+09:00",
+    "registered": 1270,
+    "classification_verified": 275,
+    "summary_verified": 234,
+    "corrected_verified": 224,
+    "corrected_partial": 10,
+    "solution_drafts": 234,
+    "solution_verified": 0,
+    "manual_required": 1046,
+    "subject_drafts": {
+      "BASIC": 82,
+      "APT": 49,
+      "APPLIED": 103
+    }
+  },
+  "tests": "初期監査・実TeXラベル監査通過。コード変更なし、直前24回帰通過から不要反復なし。",
+  "pdf": {
+    "pages": 432,
+    "bytes": 1971130,
+    "visual_review_pages": [
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      116,
+      124
+    ],
+    "log_undefined": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "risks": [
+    "⑤はppmの基準と溶液密度が未指定。1 mg/L≈質量1 ppmという希薄水溶液近似の範囲はAstra確認。独立の選択2と公式2は一致する。",
+    "④のCu酸化生成物が未指定。CuO想定0.503 mol、Cu2O想定0.2516 molで、どちらでも⑤0.250 molが最小。反応条件の欠落はAstraで確認。"
+  ],
+  "next": "S7_013コンプライアンス等14問。原典6頁確認済み、独立解答記録・公式比較は未実施。Checkpoint2未到達。"
+}

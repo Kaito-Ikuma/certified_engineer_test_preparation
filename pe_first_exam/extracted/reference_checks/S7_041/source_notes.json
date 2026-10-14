@@ -1,0 +1,172 @@
+{
+  "checked_at": "2026-10-12T14:04:47+09:00",
+  "sources": [
+    {
+      "key": "mit_material_elastic2000",
+      "url": "https://ocw.mit.edu/courses/3-11-mechanics-of-materials-fall-1999/e8b60e8a1efb6e7275372cc77f23ae9b_MIT3_11F99_elas_1.pdf",
+      "checked_claim": "表紙2000年1月21日。単軸応力・公称ひずみ・Hooke則と強度対剛性の本文を確認。"
+    },
+    {
+      "key": "mit_material_stressstrain2001",
+      "url": "https://ocw.mit.edu/courses/3-11-mechanics-of-materials-fall-1999/d4ea545640f151bb66e6d8bc0ba55ed4_MIT3_11F99_ss.pdf",
+      "checked_claim": "2001年8月23日。本文1--6頁の公称応力/ひずみ、現在面積と対数ひずみ、弾性と塑性を確認。全15頁の読了とはしない。"
+    },
+    {
+      "key": "mit_material_dislocations2001",
+      "url": "https://ocw.mit.edu/courses/3-11-mechanics-of-materials-fall-1999/339d0d74796cc35538c78bbed818b629_MIT3_11F99_dn.pdf",
+      "checked_claim": "本文の転位移動、加工硬化、粒界障害、焼なまし・再結晶、Hall--Petch式を確認。単位胞と原子数の導出は教材独自である。"
+    },
+    {
+      "key": "mit_material_fracture2001",
+      "url": "https://ocw.mit.edu/courses/3-11-mechanics-of-materials-fall-1999/e5bca953e1dbd0cd0376f0f77033dc0d_MIT3_11F99_frac.pdf",
+      "checked_claim": "2001年6月14日。き裂とGriffithエネルギーの本文、Cometの窓周辺リベット孔の説明を確認。全事故の起点の保証とはしない。"
+    },
+    {
+      "key": "mit_material_fatigue2001",
+      "url": "https://ocw.mit.edu/courses/3-11-mechanics-of-materials-fall-1999/f678e01017186c53d45845ad93c07938_MIT3_11F99_fatigue.pdf",
+      "checked_claim": "2001年5月1日。冒頭とS--N本文で繰返し損傷、き裂成長、疲労限度の材料依存を確認。"
+    },
+    {
+      "key": "mit_material_atomistic2001",
+      "url": "https://ocw.mit.edu/courses/3-11-mechanics-of-materials-fall-1999/47b8bb075c947c20da6f30ac2fbb0719_MIT3_11F99_elas_2.pdf",
+      "checked_claim": "本文の金属共通電子と結合ポテンシャル曲率、熱膨張、ゴムの異なる温度応答を確認。key年は教材識別名で表紙の年月を未確定とする。"
+    },
+    {
+      "key": "princeton_magnesium",
+      "url": "https://www.princeton.edu/~maelabs/mae324/glos324/magnesium.htm",
+      "checked_claim": "本文のE=45GPaとHCPを確認。代表値であり材種・温度・方位の全てを保証しない。"
+    },
+    {
+      "key": "princeton_tungsten",
+      "url": "https://www.princeton.edu/~maelabs/mae324/glos324/tungsten.htm",
+      "checked_claim": "本文のE=407GPaとBCCを確認。近接距離の誤植と熱膨張率の単位表記は採用しない。"
+    },
+    {
+      "key": "cambridge_unitcell",
+      "url": "https://www.doitpoms.ac.uk/tlplib/crystallography3/unit_cell.php",
+      "checked_claim": "一次大学教材の検索収録で原始/非原始胞・角/面の共有分率を確認。再取得403であり当日全文取得ではない。"
+    },
+    {
+      "key": "princeton_hcp",
+      "url": "https://www.princeton.edu/~maelabs/mae324/glos324/hcp.htm",
+      "checked_claim": "本文で六方格子に二原子基底、ABAB積層を確認。六角柱6原子との対応は共有分率から独自導出する。"
+    },
+    {
+      "key": "princeton_iron",
+      "url": "https://www.princeton.edu/~maelabs/mae324/glos324/iron.htm",
+      "checked_claim": "室温BCC、加熱FCC変態を本文確認。教材の910°Cは丸められた値であり精密な変態温度は独立資料と区別。"
+    },
+    {
+      "key": "princeton_aluminum",
+      "url": "https://www.princeton.edu/~maelabs/mae324/glos324/aluminum.htm",
+      "checked_claim": "室温FCCを本文確認。basis of one Ni atomという誤記をAlの原子種へ転載しない。"
+    },
+    {
+      "key": "princeton_copper",
+      "url": "https://www.princeton.edu/~maelabs/mae324/glos324/copper.htm",
+      "checked_claim": "本文のCuのFCCを確認。"
+    },
+    {
+      "key": "princeton_sodium",
+      "url": "https://www.princeton.edu/~maelabs/mae324/glos324/sodium.htm",
+      "checked_claim": "本文のNaのBCCを確認。OpenStaxの無温度指定HCP例示と同一視しない。"
+    },
+    {
+      "key": "princeton_titanium",
+      "url": "https://www.princeton.edu/~maelabs/mae324/glos324/titanium.htm",
+      "checked_claim": "室温TiのHCPを確認。本文の高温変態温度や合金強度の数値は採用しない。"
+    },
+    {
+      "key": "princeton_zinc",
+      "url": "https://www.princeton.edu/~maelabs/mae324/glos324/zinc.htm",
+      "checked_claim": "室温ZnのHCPを本文確認。"
+    },
+    {
+      "key": "openstax_crystals",
+      "url": "https://openstax.org/books/chemistry-2e/pages/10-6-lattice-structures-in-crystalline-solids",
+      "checked_claim": "本文のBCC2/FCC4と最近接配位数8/12、面対角線4Rを確認。Naの無温度指定HCP例示は室温Naへ採用しない。原典図の転載はしない。"
+    },
+    {
+      "key": "openstax_magnetism",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/12-7-magnetism-in-matter",
+      "checked_claim": "本文でFe、Co、Niの強磁性と磁区の役割を確認。全元素・全温度の同一分類にしない。"
+    },
+    {
+      "key": "iron_curie1954",
+      "url": "https://doi.org/10.1088/0370-1298/67/3/308",
+      "checked_claim": "一次論文要約の鉄のCurie温度1043Kを検索収録で確認。再取得cache missであり全文読了ではない。約770°Cへの換算は教材独自。著者書誌は追加照合対象。"
+    },
+    {
+      "key": "iron_transform2023",
+      "url": "https://link.springer.com/article/10.1007/s11663-023-02939-6",
+      "checked_claim": "2023年オンライン/2024年巻。本文の912°C平衡温度、α→γ収縮と逆変態膨張の実験説明を確認。特定試料の歪みを全純鉄の定数へ採用しない。"
+    },
+    {
+      "key": "jogmec_nickel2014",
+      "url": "https://www.jogmec.go.jp/content/300376600.pdf",
+      "checked_claim": "2014年3月、取得PDFの印刷6--7頁注4：日本のNiレアメタルと国際的ベースメタルの分類差を確認。めっき質量は原典値から独自計算。"
+    },
+    {
+      "key": "nist_fracture_history2010",
+      "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=901550",
+      "checked_claim": "Dental Materials26(2010)135--147。取得PDF136頁のLiberty/Cometと破壊力学・欠陥の歴史説明を確認。事故報告原本の全照合とはしない。"
+    },
+    {
+      "key": "stainless_definition2022",
+      "url": "https://www.worldstainless.org/files/issf/non-image-files/PDF/Structural/january2022_MSC_Stainless_Steel_Article.pdf",
+      "checked_claim": "印刷19頁のCr最低10.5質量パーセントとC最大1.2質量パーセントを確認。出題の10未満という十分条件を逆命題にしない。"
+    },
+    {
+      "key": "openstax_resistivity",
+      "url": "https://openstax.org/books/university-physics-volume-2/pages/9-3-resistivity-and-resistance",
+      "checked_claim": "本文表9.1の20°CにおけるCu1.68/Au2.44/Fe9.71×10^-8Ωmを確認。純度と温度が変わる比較へ外挿しない。"
+    },
+    {
+      "key": "nims_hydrogen2024",
+      "url": "https://www.nims.go.jp/rcsm/research/research-results/2401/details.html",
+      "checked_claim": "2024Topic1本文の水素による脆化・機械特性と粒界破壊を確認。物性変化全般を水素脆化と定義しない。"
+    },
+    {
+      "key": "nims_diamond2007",
+      "url": "https://archive.nims.go.jp/eng/publicity/publication/nims-accomplishments/hdfqf1000000betd-att/NIMS21_en.pdf",
+      "checked_claim": "一次研究機関冊子の検索収録でdiamond cutting toolを確認。本文再取得timeoutであり全冊子読了ではない。key年は検索識別、正確な発行年は未確定。"
+    },
+    {
+      "key": "sulfur_machinability2004",
+      "url": "https://www.jstage.jst.go.jp/article/denkiseiko/75/1/75_1_35/_pdf",
+      "checked_claim": "電気製鋼75(2004)35--42。取得PDFの0.5S実験と本文MnS・形態・酸素・組織・工具寿命/粗さの条件を確認。出題の0.3対0.005の直接実験とはしない。"
+    },
+    {
+      "key": "nist_charpy",
+      "url": "https://www.nist.gov/programs-projects/charpy-machine-verification-program",
+      "checked_claim": "本文の高負荷速度と吸収エネルギーによる間接的衝撃靭性測定を確認。破壊靭性KICの直接測定とはしない。"
+    },
+    {
+      "key": "hall_petch_limits2020",
+      "url": "https://link.springer.com/article/10.1007/s10853-019-04160-w",
+      "checked_claim": "2019年オンライン/2020年巻。本文の通常Hall--Petch式とナノ領域の変形機構・硬度換算・加工条件を確認。逆Hall--Petchの全材料での保証はせず、実験証拠の未確定という著者の結論も保持。"
+    }
+  ],
+  "local_sources": [
+    {
+      "path": "extracted/reference_checks/S7_041/nist_fracture.pdf",
+      "sha256": "0773bb1bc23f8e07cf10bf46624c4219ab0eb3a5108f4c4ea2f7ba41061b46c2"
+    },
+    {
+      "path": "extracted/reference_checks/S7_041/jogmec.pdf",
+      "sha256": "ee1969cb5cc2e3bce4eb06c9bca71bab1f725516021c1f5f4241f215c3292b8a"
+    },
+    {
+      "path": "extracted/reference_checks/S7_041/sulfur.pdf",
+      "sha256": "acc2547b2ba3bd9f16604ad7148f3fe07febf00212694f68fc5e7d868881d387"
+    }
+  ],
+  "limitations": [
+    "14原典画像と公式前初回14一致。",
+    "13問の適用条件・歴史・単位胞規約を部分校正で保持。",
+    "原典の百分率計算・FCC幾何は独自導出。",
+    "原始胞の格子点数と原子基底、通常の胞の原子数を区別。",
+    "OpenStaxのNa例示、PrincetonのAl原子種誤記をそのまま採用しない。",
+    "Curie論文・Cambridge・NIMS21の検索収録を当日全文読了とはしない。"
+  ]
+}

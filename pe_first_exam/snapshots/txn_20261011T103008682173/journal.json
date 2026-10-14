@@ -1,0 +1,16 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T10:30:08+09:00",
+  "paths": [
+    "generated/questions/applied_science/physics_chemistry/06_modern_physics.tex",
+    "generated/questions/applied_science/physics_chemistry/11_other.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/physics_chemistry/06_modern_physics.tex": true,
+    "generated/questions/applied_science/physics_chemistry/11_other.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/physics_chemistry/06_modern_physics.tex": "f3f045005f593a245dec9dfd0cb0d9b3523272ea0f1f3051e2bb175489e0dc27",
+    "generated/questions/applied_science/physics_chemistry/11_other.tex": "dd7ce42930ca732dd74d9a3081f229c389ffec170abbda15316efe20dc109f6c"
+  }
+}

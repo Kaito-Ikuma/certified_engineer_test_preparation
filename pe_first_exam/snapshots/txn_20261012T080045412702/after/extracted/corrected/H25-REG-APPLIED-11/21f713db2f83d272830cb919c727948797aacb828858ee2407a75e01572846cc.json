@@ -1,0 +1,45 @@
+{
+  "stem": "反応前後の酸化数を求め、還元に当たる変化を選ぶ。",
+  "conditions": {
+    "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+    "成立条件": "単体の酸化数は0、単原子イオンは電荷に等しい。この問題の通常の酸化物でOは−2、H2SでHは+1である。式は変化の概略であって全反応の釣合い式ではない。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(\\mathrm{MnO_4^-}\\to\\mathrm{Mn^{2+}}\\)",
+      "verdict": "適切",
+      "reason": "Mnは+7から+2へ低下し還元である。"
+    },
+    "2": {
+      "value": "NaCl→NaOH",
+      "verdict": "不適切",
+      "reason": "Naは両側とも+1であり、Naの還元ではない。ClはCl−として別に移るなど全反応の収支が省略された表示である。"
+    },
+    "3": {
+      "value": "\\(2\\mathrm{I^-}\\to\\mathrm{I_2}\\)",
+      "verdict": "不適切",
+      "reason": "Iは−1から0へ増加し、2電子を放出する酸化である。"
+    },
+    "4": {
+      "value": "Mg→MgCl2",
+      "verdict": "不適切",
+      "reason": "Mgは0から+2へ増加し酸化である。"
+    },
+    "5": {
+      "value": "H2S→S",
+      "verdict": "不適切",
+      "reason": "Sは−2から0へ増加し酸化である。"
+    }
+  },
+  "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_005.png"
+  ],
+  "question_id": "H25-REG-APPLIED-11",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "d2020a5876d92b6605795f8a1127f44f292525555f3fefdfbe83f5b31f909ca6",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

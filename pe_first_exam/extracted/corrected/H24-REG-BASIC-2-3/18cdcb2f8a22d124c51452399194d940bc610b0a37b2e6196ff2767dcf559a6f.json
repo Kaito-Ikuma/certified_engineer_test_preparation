@@ -1,0 +1,44 @@
+{
+  "stem": "3状態の天気遷移図から2日後の条件付き確率と長期極限を判定する。",
+  "conditions": {
+    "方向": "最も不適切"
+  },
+  "choices": {
+    "1": {
+      "value": "晴→2日後雨5/16",
+      "verdict": "適切",
+      "reason": "晴→晴→雨、晴→曇→雨、晴→雨→雨の排他的3経路を足すと1/8+1/16+1/8=5/16。"
+    },
+    "2": {
+      "value": "曇→2日後曇3/8",
+      "verdict": "適切",
+      "reason": "曇→曇→曇、曇→雨→曇、曇→晴→曇を足すと1/4+1/16+1/16=3/8。"
+    },
+    "3": {
+      "value": "雨→2日後曇5/16",
+      "verdict": "適切",
+      "reason": "自己遷移を一方の時刻に含む2経路と、晴を経る経路で5/16。"
+    },
+    "4": {
+      "value": "雨→2日後雨1/4",
+      "verdict": "不適切",
+      "reason": "自己遷移を2回行う経路だけなら1/4だが、他の2状態を経て戻る1/16ずつを忘れている。合計3/8。"
+    },
+    "5": {
+      "value": "初日雨から遠い将来の雨確率1/3",
+      "verdict": "適切",
+      "reason": "全ての1日遷移が正で、対称な行列の定常分布は一様。有限既約・非周期の連鎖でこの分布へ収束する。"
+    }
+  },
+  "figures": "問題幹・全5肢・数値・単位・否定を原典画像照合。3頂点の自己ループ1/2、6本の他状態への矢印1/4を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/basic/page_006.png"
+  ],
+  "question_id": "H24-REG-BASIC-2-3",
+  "source_file": "sources/H24/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+  "raw_text_sha256": "acdcdc29153cdd37c34a1a400d2438c109acf896e53f933183bc6b5d9bef05dd",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

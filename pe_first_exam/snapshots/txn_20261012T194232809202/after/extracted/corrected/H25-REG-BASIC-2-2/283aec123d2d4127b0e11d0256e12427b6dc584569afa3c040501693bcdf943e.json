@@ -1,0 +1,45 @@
+{
+  "stem": "道路距離の最短施設への登録を、同距離で複数登録する条件も含めて数える。",
+  "conditions": {
+    "全辺": "Au2、uB2、uv3、AB1、Ax3、Bx3、Bw4、xw3、vw2、vC6、wC4、xC3。",
+    "利用者": "u,v,w,x各1人。同距離なら全施設へ登録。"
+  },
+  "choices": {
+    "1": {
+      "value": "a>b>c",
+      "verdict": "不適切",
+      "reason": "Bの人数がAより多いので逆である。"
+    },
+    "2": {
+      "value": "a=b>c",
+      "verdict": "不適切",
+      "reason": "A3とB4は等しくない。"
+    },
+    "3": {
+      "value": "a=b=c",
+      "verdict": "不適切",
+      "reason": "三施設の人数は3,4,2で異なる。"
+    },
+    "4": {
+      "value": "b>a=c",
+      "verdict": "不適切",
+      "reason": "A3とC2は等しくない。"
+    },
+    "5": {
+      "value": "b>a>c",
+      "verdict": "適切",
+      "reason": "B4>A3>C2である。"
+    }
+  },
+  "figures": "原典の木・道路接続・構文経路・矢印を画像確認。教材では独自の構造表現で説明し原図転載なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/basic/page_007.png"
+  ],
+  "question_id": "H25-REG-BASIC-2-2",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "6a8e823dd484b7a7bad9012ef8dc706680d28bb862dc9cdf24ed1dcebcf366c9",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

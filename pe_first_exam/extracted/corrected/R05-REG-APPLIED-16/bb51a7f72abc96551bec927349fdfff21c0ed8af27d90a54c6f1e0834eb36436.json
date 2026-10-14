@@ -1,0 +1,45 @@
+{
+  "stem": "剛体密閉容器の平均密度を固定した加熱と、臨界点への到達条件を検討する。",
+  "conditions": {
+    "確認範囲": "問題幹、条件、否定、数値、単位、全5肢を原典画像で照合した。",
+    "成立条件": "変形しない閉じた容器、加熱、平均密度一定。臨界密度322 kg/m3、臨界温度647.096 KはIAPWS-95の参照定数である。"
+  },
+  "choices": {
+    "1": {
+      "value": "加熱した蒸気の密度は液体の密度に一致することがない",
+      "verdict": "不適切",
+      "reason": "平均密度を臨界密度に設定した加熱が反例となる。任意密閉容器での一致を主張する必要はない。"
+    },
+    "2": {
+      "value": "ファンデルワールス式は分子間相互作用を考慮",
+      "verdict": "適切",
+      "reason": "分子間引力のa項を持つ。排除体積のb項も理想気体との差となる。"
+    },
+    "3": {
+      "value": "ギブズエネルギーは定圧条件の自由エネルギー",
+      "verdict": "条件付きで適切",
+      "reason": "圧力を自然変数とする \\(G=U+pV-TS\\) である。自発変化や極小の判定には温度も一定、閉じた系で非体積仕事がない等の条件が必要である。"
+    },
+    "4": {
+      "value": "気液固が同時に平衡共存する点は三重点",
+      "verdict": "適切",
+      "reason": "一成分三相共存の定義である。"
+    },
+    "5": {
+      "value": "気液平衡では化学ポテンシャルが等しい",
+      "verdict": "適切",
+      "reason": "相間の物質移動が全ギブズエネルギーを低下させない条件である。"
+    }
+  },
+  "figures": "図なし。全5候補は文字又は温度値である。",
+  "ambiguity": "平均密度・初期充填率が原典で指定されない。気相密度の単調上昇や任意容器の臨界到達を断定せず、臨界密度を持つ反例として公式1を説明する。",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_006.png"
+  ],
+  "question_id": "R05-REG-APPLIED-16",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "56c0c08d3ee31898841552d4ed0d23a254013b5c8a1c806719d344f677c680d5",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

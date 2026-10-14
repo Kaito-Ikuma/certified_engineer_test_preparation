@@ -1,0 +1,1835 @@
+{
+  "batch_id": "S7_053_safety_consumer",
+  "reference_date": "2026-10-13",
+  "questions": [
+    {
+      "question_id": "H24-REG-APT-06",
+      "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+      "stem": "GHSは危険有害性の分類と伝達を調和する。",
+      "summary": "GHSは危険有害性の分類と伝達を調和する。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "平成24年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "XOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "2": {
+          "value": "OXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "3": {
+          "value": "OOOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "OOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "5": {
+          "value": "OOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "当時のJISの全規格本文と全優先規則の版照合は未実施。H24公示と旧GHS案内で枠組みを確認し、細目はAstra対象。",
+      "evidence": [
+        "extracted/pages/H24/aptitude/page_005.png"
+      ],
+      "core_concept": "GHSは危険有害性の分類と伝達を調和する。",
+      "required_knowledge": "分類クラス・区分、ラベルとSDS、注意喚起語と絵表示、追加の法定情報。",
+      "solution": "アは分類基準と表示の共通化、イは国内法による追加表示、ウは絵表示・注意喚起語、エは複数のラベル要素の優先規則を述べ、4文とも正で3。危険有害性の分類を、その物質のあらゆる使用条件でのリスク計算と同一視しない。",
+      "answer_reason": "アは分類基準と表示の共通化、イは国内法による追加表示、ウは絵表示・注意喚起語、エは複数のラベル要素の優先規則を述べ、4文とも正で3。危険有害性の分類を、その物質のあらゆる使用条件でのリスク計算と同一視しない。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。GHSは危険有害性の分類と伝達の国際調和。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:safety:ghs"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "saf53_ghs",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：GHSは危険有害性の分類と伝達を調和する。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_ghs_old",
+        "saf53_ghs_notice"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APT-08",
+      "source_sha256": "5691e940fce3cbf9423bc99a96803c1c6273563931b76b91bdb9f2b67e6233d3",
+      "stem": "GHSラベルに国内の法定事項を追加できる。",
+      "summary": "GHSラベルに国内の法定事項を追加できる。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "平成26年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "OXXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOO と異なる。"
+        },
+        "2": {
+          "value": "XOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOO と異なる。"
+        },
+        "3": {
+          "value": "OXOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "OOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOO と異なる。"
+        },
+        "5": {
+          "value": "OOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "当時のJIS規格全文の版照合は未実施。国内法の追加表示と更新の原則の範囲を確認した部分校正。",
+      "evidence": [
+        "extracted/pages/H26/aptitude/page_008.png"
+      ],
+      "core_concept": "GHSラベルに国内の法定事項を追加できる。",
+      "required_knowledge": "ラベル要素、供給者識別、新知見、JISと国内法の役割。",
+      "solution": "アの物質名・供給者・危険有害性、ウの絵表示、エの新知見に応じた更新は正。イの国内法の追加表示を認めないという否定が誤なのでO X O Oの3。GHSは国内の別の表示義務を消すものではない。",
+      "answer_reason": "アの物質名・供給者・危険有害性、ウの絵表示、エの新知見に応じた更新は正。イの国内法の追加表示を認めないという否定が誤なのでO X O Oの3。GHSは国内の別の表示義務を消すものではない。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。GHSと各国内法を対応させ、一つの農薬法に限定しない。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:safety:ghs"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "saf53_ghs",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：GHSラベルに国内の法定事項を追加できる。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_ghs_old",
+        "saf53_ghs_notice"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APT-05",
+      "source_sha256": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+      "stem": "ISO12100のリスク低減は使用上の情報も含む。",
+      "summary": "ISO12100のリスク低減は使用上の情報も含む。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "平成25年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "XOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOXO と異なる。"
+        },
+        "2": {
+          "value": "OXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOXO と異なる。"
+        },
+        "3": {
+          "value": "OOXO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "OOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOXO と異なる。"
+        },
+        "5": {
+          "value": "OOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOXO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "2007厚労省指針で方策を確認。原典が挙げる2003年ISO12100の全定義原文は未通読。初回説明のISO26000との取り違えをfollowupに記録し、正答一致だけでその説明を正当化しない。",
+      "evidence": [
+        "extracted/pages/H25/aptitude/page_006.png"
+      ],
+      "core_concept": "ISO12100のリスク低減は使用上の情報も含む。",
+      "required_knowledge": "信頼性と安全性、リスク分析と評価、本質的安全→安全防護・付加保護→使用上の情報。",
+      "solution": "指定された機能を期間・条件内で果たす信頼性は正。危険源の同定、リスク見積り、評価を含むアセスメントも正。ウは本質的安全と防護の2方策へ限定して使用上の情報を落とすので誤。本質的安全はガードを追加する前に設計上の危険を減らすためエは正。O O X Oの3。",
+      "answer_reason": "指定された機能を期間・条件内で果たす信頼性は正。危険源の同定、リスク見積り、評価を含むアセスメントも正。ウは本質的安全と防護の2方策へ限定して使用上の情報を落とすので誤。本質的安全はガードを追加する前に設計上の危険を減らすためエは正。O O X Oの3。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。ISO26000は指針、認証要求ではない。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:safety:machine"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "saf53_machine",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：ISO12100のリスク低減は使用上の情報も含む。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_machine2007"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APT-08",
+      "source_sha256": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+      "stem": "リコールと安全規制・PL責任を分ける。",
+      "summary": "リコールと安全規制・PL責任を分ける。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "平成25年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "経年劣化による事故も対象",
+          "verdict": "条件内で適切",
+          "reason": "設計時の欠陥に限らず、使用で劣化し重大な危害を生む製品も是正の対象になり得る。"
+        },
+        "2": {
+          "value": "医薬品は品質管理法があるためリコール対象外",
+          "verdict": "不適切",
+          "reason": "医薬品にも回収制度がある。他の安全規制があることは回収が不要である根拠ではない。消安法の対象外と、医薬品制度での回収を区別する。"
+        },
+        "3": {
+          "value": "全対象を追跡回収できる場合の報告・社告",
+          "verdict": "条件・時点を留保",
+          "reason": "行政への報告と広く知らせる社告の要否は別。全対象が確実に捕捉され危害を防げる場合を前提に、当時のリコール手引きと照合する。"
+        },
+        "4": {
+          "value": "表示誤りもリコール対象となり得る",
+          "verdict": "条件内で適切",
+          "reason": "危害を防ぐ注意事項や成分等の表示誤りは、実体の故障がなくても是正の対象となり得る。"
+        },
+        "5": {
+          "value": "回収が直ちにPL責任を意味しない",
+          "verdict": "条件内で適切",
+          "reason": "回収判断と損害賠償の成立は別。PL責任では欠陥・損害・因果関係と対象等を検討する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "2010リコール手引き直接取得は未成功。H25の全対象追跡時の社告省略の細条件は未確定で、後年手引きだけで当時の全文を確認済みにしない。",
+      "evidence": [
+        "extracted/pages/H25/aptitude/page_009.png"
+      ],
+      "core_concept": "リコールと安全規制・PL責任を分ける。",
+      "required_knowledge": "回収・修理等の是正、対象製品の追跡、行政報告、危害防止と民事責任。",
+      "solution": "誤り2は医薬品の品質管理制度から回収の不存在を導いた飛躍。回収は危害防止の是正で、事故がまだ起きていなくても対象となり得る。設計・劣化・表示を検討し、行政報告、購入者への連絡、社告、PL賠償を別の要件として扱う。",
+      "answer_reason": "誤り2は医薬品の品質管理制度から回収の不存在を導いた飛躍。回収は危害防止の是正で、事故がまだ起きていなくても対象となり得る。設計・劣化・表示を検討し、行政報告、購入者への連絡、社告、PL賠償を別の要件として扱う。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。医薬品等を消安法の生活用製品と一括しない。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:safety:recall"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "saf53_recall",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：リコールと安全規制・PL責任を分ける。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_recall2010",
+        "saf53_medicine_recall",
+        "pl_statute",
+        "pl_qa"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APT-13",
+      "source_sha256": "2965cecde9e4c31c06a94192bf7a750346fbf85d07d37943d58a3fa15d15ebeb",
+      "stem": "リコールと安全規制・PL責任を分ける。",
+      "summary": "リコールと安全規制・PL責任を分ける。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "平成27年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "経年劣化による事故も対象",
+          "verdict": "条件内で適切",
+          "reason": "設計時の欠陥に限らず、使用で劣化し重大な危害を生む製品も是正の対象になり得る。"
+        },
+        "2": {
+          "value": "医薬品は品質管理法があるためリコール対象外",
+          "verdict": "不適切",
+          "reason": "医薬品にも回収制度がある。他の安全規制があることは回収が不要である根拠ではない。消安法の対象外と、医薬品制度での回収を区別する。"
+        },
+        "3": {
+          "value": "全対象が回収済みでも行政への報告が必要",
+          "verdict": "条件内で適切",
+          "reason": "回収したことと所管機関への報告義務は別。報告の目的は対象把握や再発防止にもある。"
+        },
+        "4": {
+          "value": "表示誤りもリコール対象となり得る",
+          "verdict": "条件内で適切",
+          "reason": "危害を防ぐ注意事項や成分等の表示誤りは、実体の故障がなくても是正の対象となり得る。"
+        },
+        "5": {
+          "value": "回収が直ちにPL責任を意味しない",
+          "verdict": "条件内で適切",
+          "reason": "回収判断と損害賠償の成立は別。PL責任では欠陥・損害・因果関係と対象等を検討する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "2010リコール手引き直接取得は未成功。H25の全対象追跡時の社告省略の細条件は未確定で、後年手引きだけで当時の全文を確認済みにしない。",
+      "evidence": [
+        "extracted/pages/H27/aptitude/page_013.png"
+      ],
+      "core_concept": "リコールと安全規制・PL責任を分ける。",
+      "required_knowledge": "回収・修理等の是正、対象製品の追跡、行政報告、危害防止と民事責任。",
+      "solution": "誤り2は医薬品の品質管理制度から回収の不存在を導いた飛躍。回収は危害防止の是正で、事故がまだ起きていなくても対象となり得る。設計・劣化・表示を検討し、行政報告、購入者への連絡、社告、PL賠償を別の要件として扱う。",
+      "answer_reason": "誤り2は医薬品の品質管理制度から回収の不存在を導いた飛躍。回収は危害防止の是正で、事故がまだ起きていなくても対象となり得る。設計・劣化・表示を検討し、行政報告、購入者への連絡、社告、PL賠償を別の要件として扱う。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。消安法と医薬品法の対象を分ける。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:safety:recall"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "saf53_recall",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：リコールと安全規制・PL責任を分ける。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_recall2010",
+        "saf53_medicine_recall",
+        "pl_statute",
+        "pl_qa"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H25-REG-APT-10",
+      "source_sha256": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+      "stem": "食品表示は期限・原産国・アレルギーを別に読む。",
+      "summary": "食品表示は期限・原産国・アレルギーを別に読む。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "平成25年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "XOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "2": {
+          "value": "OXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "3": {
+          "value": "OOOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "OOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "5": {
+          "value": "OOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "2013年は食品表示法公布と2015年施行を分ける。原料原産地の当時の全品目・特定原材料の指定を網羅照合していないため部分校正。最新の一律対象や品目数を補わない。",
+      "evidence": [
+        "extracted/pages/H25/aptitude/page_011.png"
+      ],
+      "core_concept": "食品表示は期限・原産国・アレルギーを別に読む。",
+      "required_knowledge": "賞味期限と消費期限、未開封・保存条件、最終加工国と原料原産地、当時の表示法体系。",
+      "solution": "アは輸入加工食品の最終加工国と国内加工品の原料原産地の条件を分ける。イの賞味期限は期待される品質、エの消費期限は安全性を欠くおそれがない期間で、保存条件が前提。ウは特定原材料の義務表示と見直しである。4文正の3だが、品目・対象原料・アレルゲン数は当時制度で照合する。",
+      "answer_reason": "アは輸入加工食品の最終加工国と国内加工品の原料原産地の条件を分ける。イの賞味期限は期待される品質、エの消費期限は安全性を欠くおそれがない期間で、保存条件が前提。ウは特定原材料の義務表示と見直しである。4文正の3だが、品目・対象原料・アレルゲン数は当時制度で照合する。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。食品表示四目的をすべて肯定。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:compliance:foodlabel"
+      ],
+      "discipline_id": "apt_4",
+      "concept_id": "saf53_food_label",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：食品表示は期限・原産国・アレルギーを別に読む。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_food_notice",
+        "saf53_food_loss2013",
+        "saf53_food_expiry"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APT-11",
+      "source_sha256": "5691e940fce3cbf9423bc99a96803c1c6273563931b76b91bdb9f2b67e6233d3",
+      "stem": "食品リスクの科学的評価と管理・対話の役割を分ける。",
+      "summary": "食品リスクの科学的評価と管理・対話の役割を分ける。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "平成26年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "XOOOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "OXXOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOOO と異なる。"
+        },
+        "3": {
+          "value": "OOXOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOOO と異なる。"
+        },
+        "4": {
+          "value": "OXOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOOO と異なる。"
+        },
+        "5": {
+          "value": "XOOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XOOOO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "当時の全関係者文言の逐語照合は未実施。初回説明が用量評価と取り違えた事実をfollowupに保持し、改めて原典の役割逆転を説明。",
+      "evidence": [
+        "extracted/pages/H26/aptitude/page_011.png",
+        "extracted/pages/H26/aptitude/page_012.png"
+      ],
+      "core_concept": "食品リスクの科学的評価と管理・対話の役割を分ける。",
+      "required_knowledge": "評価と管理の機能分担、リスクアナリシスの3要素、行政・事業者・消費者・専門家の相互作用。",
+      "solution": "アはリスク評価を行政・事業者、管理を科学者中心とした役割逆転なので誤。科学的な健康影響の評価と、施策を検討・実施する管理を分ける。国・自治体の情報と対話の場、事業者の連携、消費者の参加、科学者の説明というイ〜オは正で1。対話は一方向の説得や安心の宣言だけではない。",
+      "answer_reason": "アはリスク評価を行政・事業者、管理を科学者中心とした役割逆転なので誤。科学的な健康影響の評価と、施策を検討・実施する管理を分ける。国・自治体の情報と対話の場、事業者の連携、消費者の参加、科学者の説明というイ〜オは正で1。対話は一方向の説得や安心の宣言だけではない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。用量・曝露による食品リスク。多いほど害がないは誤り。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:safety:foodroles"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "saf53_food_roles",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：食品リスクの科学的評価と管理・対話の役割を分ける。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_food_roles2007",
+        "saf_fsc_psych",
+        "saf_fsc_glossary"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APT-09",
+      "source_sha256": "5691e940fce3cbf9423bc99a96803c1c6273563931b76b91bdb9f2b67e6233d3",
+      "stem": "不実証広告の根拠資料提出は自由な任意回答ではない。",
+      "summary": "不実証広告の根拠資料提出は自由な任意回答ではない。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "平成26年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "表示は広告・品質・価格等の消費者への情報",
+          "verdict": "条件内で適切",
+          "reason": "顧客を誘引する商品・サービスの内容や取引条件の表示を対象とする。"
+        },
+        "2": {
+          "value": "根拠のない著しい効果・優良性表示",
+          "verdict": "条件内で適切",
+          "reason": "表示内容と実際の品質等の差が優良誤認の問題になる。裏付けのない効果主張は不実証広告規制の対象。"
+        },
+        "3": {
+          "value": "他社比較を根拠なく著しく優良に表示",
+          "verdict": "条件内で適切",
+          "reason": "比較広告でも主張する解像度等に対応する客観的根拠が必要。比較という形式だけでは許されない。"
+        },
+        "4": {
+          "value": "求められた資料を出すかは自由",
+          "verdict": "不適切",
+          "reason": "所定の資料提出要求へ合理的根拠を提出しなければ、不当表示とみなす制度上の効果がある。回答を自由に拒否して同じ地位を保てる制度ではない。"
+        },
+        "5": {
+          "value": "自社試験でも認められる方法が必要",
+          "verdict": "条件内で適切",
+          "reason": "自社実施を一律排除しないが、妥当な方法と表示性能との対応が必要。都合のよい独自条件だけでは根拠にならない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "2014年施行条番号と処分手続を現在の条番号へ置き換えない。2016年公式説明で根拠の要件を確認したが2014全条文対照は未実施。",
+      "evidence": [
+        "extracted/pages/H26/aptitude/page_009.png"
+      ],
+      "core_concept": "不実証広告の根拠資料提出は自由な任意回答ではない。",
+      "required_knowledge": "優良誤認、表示と裏付け資料の対応、資料提出要求、不提出の制度上の効果。",
+      "solution": "不適切4。客観的な根拠資料を求める仕組みは、効果表示を検証可能にするためである。自社試験か第三者試験かだけで決めず、方法、条件、評価量と実際の表示との対応を確かめる。",
+      "answer_reason": "不適切4。客観的な根拠資料を求める仕組みは、効果表示を検証可能にするためである。自社試験か第三者試験かだけで決めず、方法、条件、評価量と実際の表示との対応を確かめる。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。合理的根拠資料の要求を自由に拒否できない。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:compliance:adevidence"
+      ],
+      "discipline_id": "apt_4",
+      "concept_id": "saf53_ad_evidence",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：不実証広告の根拠資料提出は自由な任意回答ではない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_ad2016",
+        "saf53_ad_overview"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APT-15",
+      "source_sha256": "2960d5ff16afaa394186362bb969ee236511012ee2819db45847199af58b073c",
+      "stem": "専門家の特異な見解だけで効果の実証を免れない。",
+      "summary": "専門家の特異な見解だけで効果の実証を免れない。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "平成28年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "客観性と表示との対応の2要件",
+          "verdict": "条件内で適切",
+          "reason": "資料自体が客観的であることと、示した効果・条件が広告主張へ対応することは別の要件。"
+        },
+        "2": {
+          "value": "試験調査又は専門家見解・学術文献",
+          "verdict": "条件内で適切",
+          "reason": "いずれも表示を裏付ける客観性等の要件内で使う。名称が論文なら自動的に通るわけではない。"
+        },
+        "3": {
+          "value": "特異な見解・新分野なら試験実証不要",
+          "verdict": "不適切",
+          "reason": "一般に認められていない見解をそのまま客観的実証とみなす飛躍。一般的根拠がない場合は妥当な試験・調査等で実証を要する。"
+        },
+        "4": {
+          "value": "経験則も専門的文献等で確認",
+          "verdict": "条件内で適切",
+          "reason": "長期の言い伝えだけでは表示の客観的根拠としない。存在を確認する専門的な裏付けが必要。"
+        },
+        "5": {
+          "value": "実証内容と表示効果の適切な対応",
+          "verdict": "条件内で適切",
+          "reason": "別成分や別条件の研究があるだけでは当該製品の効果を証明しない。対象・条件・結果を比較する。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "2016公式資料の検索本文で要件を確認。PDF全冊20MBの直接web取得はサイズ制限で未通読。特異見解の細項目を全条文確認済みにしない。",
+      "evidence": [
+        "extracted/pages/H28/aptitude/page_015.png",
+        "extracted/pages/H28/aptitude/page_016.png"
+      ],
+      "core_concept": "専門家の特異な見解だけで効果の実証を免れない。",
+      "required_knowledge": "客観的実証、一般に認められた方法・見解、提出期限原則15日、表示と証拠の対応。",
+      "solution": "不適切3。専門家の資格と主張の客観性を同一視しない。独自の優れた技術で既存の一般的文献がない場合でも、表示効果を妥当な試験で検証する課題は残る。表示の条件を原資料の試験条件へ戻して読む。",
+      "answer_reason": "不適切3。専門家の資格と主張の客観性を同一視しない。独自の優れた技術で既存の一般的文献がない場合でも、表示効果を妥当な試験で検証する課題は残る。表示の条件を原資料の試験条件へ戻して読む。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。合理的根拠は一般に認められた方法と対応性が要る。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:compliance:adevidence"
+      ],
+      "discipline_id": "apt_4",
+      "concept_id": "saf53_ad_evidence",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：専門家の特異な見解だけで効果の実証を免れない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_ad2016"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APT-05",
+      "source_sha256": "2960d5ff16afaa394186362bb969ee236511012ee2819db45847199af58b073c",
+      "stem": "くい工事の記録不正と構造安全を個別に検証する。",
+      "summary": "くい工事の記録不正と構造安全を個別に検証する。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "平成28年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "OOOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOXX と異なる。"
+        },
+        "2": {
+          "value": "OXOXX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOXX と異なる。"
+        },
+        "3": {
+          "value": "XOOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOXX と異なる。"
+        },
+        "4": {
+          "value": "OOOXX",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "5": {
+          "value": "XOXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOXX と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "2015中間報告の公開概要と本文該当枠組みを確認。全41頁の事案・技術措置を通読した確認ではない。",
+      "evidence": [
+        "extracted/pages/H28/aptitude/page_005.png"
+      ],
+      "core_concept": "くい工事の記録不正と構造安全を個別に検証する。",
+      "required_knowledge": "施工記録の真正性、現地条件との照合、元請の統括と下請の専門判断、異常時の手順。",
+      "solution": "アの記録不正を直ちに構造不安全と断定しない点は、放置してよいという意味ではない。迅速に実際の支持層到達・安全性を確認し、不正の是正も行う。イの組織風土とウの元請・下請の責任体制は正。エの現場条件を無視した設計図優先、オのハード改善から人的ルール不要を導く主張は誤。O O O X Xの4。",
+      "answer_reason": "アの記録不正を直ちに構造不安全と断定しない点は、放置してよいという意味ではない。迅速に実際の支持層到達・安全性を確認し、不正の是正も行う。イの組織風土とウの元請・下請の責任体制は正。エの現場条件を無視した設計図優先、オのハード改善から人的ルール不要を導く主張は誤。O O O X Xの4。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。記録・通常対応・組織圧力は肯定。管理不知と不要緊急否定。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:safety:quality"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "saf53_quality",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：くい工事の記録不正と構造安全を個別に検証する。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_pile2015"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-APT-07",
+      "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+      "stem": "品質不正を個人だけへ帰して組織要因を消さない。",
+      "summary": "品質不正を個人だけへ帰して組織要因を消さない。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "令和元年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "XOOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XXOXO と異なる。"
+        },
+        "2": {
+          "value": "XXXXX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XXOXO と異なる。"
+        },
+        "3": {
+          "value": "XOOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XXOXO と異なる。"
+        },
+        "4": {
+          "value": "OOOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 XXOXO と異なる。"
+        },
+        "5": {
+          "value": "XXOXO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "2020官庁白書の2017年以降の複数事案記述で背景を確認。2019設問の全事案別調査報告の照合は未実施。",
+      "evidence": [
+        "extracted/pages/R01/aptitude/page_008.png"
+      ],
+      "core_concept": "品質不正を個人だけへ帰して組織要因を消さない。",
+      "required_knowledge": "記録の真正性、経営の優先順位、独立した検査・内部監査、部門間の責任と情報。",
+      "solution": "アの他社の教訓は参考にならない、イの単発に限定、エの倫理活動があるから個人だけの問題という3文が誤。トップの判断・圧力と責任分担・他部門への配慮は組織条件に関わるのでウ・オは正。X X O X Oの5。個人の行為の責任を消すのではなく、行為を生む仕組みも改善する。",
+      "answer_reason": "アの他社の教訓は参考にならない、イの単発に限定、エの倫理活動があるから個人だけの問題という3文が誤。トップの判断・圧力と責任分担・他部門への配慮は組織条件に関わるのでウ・オは正。X X O X Oの5。個人の行為の責任を消すのではなく、行為を生む仕組みも改善する。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。X X O X O：他社の教訓と組織的要因を認める。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:safety:quality"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "saf53_quality",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：品質不正を個人だけへ帰して組織要因を消さない。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_quality2020",
+        "saf53_pile2015"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APT-13",
+      "source_sha256": "2960d5ff16afaa394186362bb969ee236511012ee2819db45847199af58b073c",
+      "stem": "完全性は正確さ、可用性は必要な時に使える性質。",
+      "summary": "完全性は正確さ、可用性は必要な時に使える性質。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "平成28年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "XOOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOOO と異なる。"
+        },
+        "2": {
+          "value": "XXOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOOO と異なる。"
+        },
+        "3": {
+          "value": "OOXOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOOO と異なる。"
+        },
+        "4": {
+          "value": "OXOOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "5": {
+          "value": "OOXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOOO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H28/aptitude/page_013.png"
+      ],
+      "core_concept": "完全性は正確さ、可用性は必要な時に使える性質。",
+      "required_knowledge": "機密性・完全性・可用性、PDCA、事故の初動・分析・復旧・予防。",
+      "solution": "アのCIA、ウの方針と改善、エの全員の教育、オの事故対応と見直しは正。イが可用性を正確さ・改ざん防止という完全性の意味へ取り違えているので誤、4。秘密を守るだけでは、正しい情報が必要時に使えることを保証しない。",
+      "answer_reason": "アのCIA、ウの方針と改善、エの全員の教育、オの事故対応と見直しは正。イが可用性を正確さ・改ざん防止という完全性の意味へ取り違えているので誤、4。秘密を守るだけでは、正しい情報が必要時に使えることを保証しない。",
+      "independent_answer": "4",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。システムに依存せず人的判断を残す。チェック省略は否定。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:research:security"
+      ],
+      "discipline_id": "apt_1",
+      "concept_id": "saf53_security",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：完全性は正確さ、可用性は必要な時に使える性質。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_ipa_cia"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APT-06",
+      "source_sha256": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+      "stem": "不審な依頼は既知の担当窓口へ速やかに報告する。",
+      "summary": "不審な依頼は既知の担当窓口へ速やかに報告する。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "平成29年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "社内担当部署へ報告",
+          "verdict": "条件内で適切",
+          "reason": "既知の社内経路で疑いを共有すれば、担当者が他の受信者への影響と真偽を確認できる。メール内の連絡先を信用の根拠にしない。"
+        },
+        "2": {
+          "value": "メール記載の担当者へ連絡",
+          "verdict": "不適切",
+          "reason": "不審なメッセージが示した窓口も攻撃者の可能性があり、独立確認にならない。"
+        },
+        "3": {
+          "value": "再度違和感が出るまで待つ",
+          "verdict": "不適切",
+          "reason": "既に異常を認めているのに情報共有を遅らせる。担当部署で確認する機会を失う。"
+        },
+        "4": {
+          "value": "そのまま回答",
+          "verdict": "不適切",
+          "reason": "依頼の真偽が未確認で、添付操作や情報の提供が危害を広げ得る。"
+        },
+        "5": {
+          "value": "自部署だけへ伝えて待つ",
+          "verdict": "不適切",
+          "reason": "専門担当部署へ届かず、組織全体の対応や情報共有を遅らせる。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H29/aptitude/page_006.png"
+      ],
+      "core_concept": "不審な依頼は既知の担当窓口へ速やかに報告する。",
+      "required_knowledge": "送信者の表示と認証の区別、独立した連絡経路、早期報告、情報共有と被害拡大防止。",
+      "solution": "適切1。毎年の時期と異なる依頼は攻撃の確定証拠ではないが、確認へ進む合理的な兆候である。メールの送信名や記載窓口ではなく、平常から把握している社内担当へ報告し、専門部署が組織の対応を判断する。",
+      "answer_reason": "適切1。毎年の時期と異なる依頼は攻撃の確定証拠ではないが、確認へ進む合理的な兆候である。メールの送信名や記載窓口ではなく、平常から把握している社内担当へ報告し、専門部署が組織の対応を判断する。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。怪しいメールのリンクではなく既知の社内窓口へ報告。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:research:security"
+      ],
+      "discipline_id": "apt_1",
+      "concept_id": "saf53_security",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：不審な依頼は既知の担当窓口へ速やかに報告する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_ipa_mail"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APT-09",
+      "source_sha256": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+      "stem": "重大製品事故の調査を理由に報告を遅らせない。",
+      "summary": "重大製品事故の調査を理由に報告を遅らせない。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "平成29年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "任意収集から法定報告への制度変更",
+          "verdict": "条件内で適切",
+          "reason": "重大事故の情報を行政が把握して再発防止へ使うため法定報告制度が導入された。法全体の創設年と事故報告改正年を分ける。"
+        },
+        "2": {
+          "value": "一般消費者用を基本とし他法の対象を除外",
+          "verdict": "条件・時点を留保",
+          "reason": "消費生活用の範囲と政令等による除外を確認する。他法で安全性が担保されるという一般説明だけから全除外を列挙したものとは扱わない。"
+        },
+        "3": {
+          "value": "分析が済めば期限を超えてもよい",
+          "verdict": "不適切",
+          "reason": "不明点のある段階でも所定期限内の報告が必要。調査の完成を期限延長の根拠にしない。"
+        },
+        "4": {
+          "value": "特定保守製品9品目",
+          "verdict": "条件・時点を留保",
+          "reason": "2017年当時の指定を述べる。2021年の対象見直し等を遡及せず、現在の品目数と区別する。"
+        },
+        "5": {
+          "value": "設計標準使用期間・点検期間を設定",
+          "verdict": "条件内で適切",
+          "reason": "長期使用に伴う劣化に対して点検の情報と期間を整える。耐用の無条件保証や点検だけで全危険が消える意味ではない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "2017年当時の全除外品目の逐条対照は未実施。9品目から後年の対象変更を区別する資料を確認した部分校正。",
+      "evidence": [
+        "extracted/pages/H29/aptitude/page_009.png"
+      ],
+      "core_concept": "重大製品事故の調査を理由に報告を遅らせない。",
+      "required_knowledge": "重大製品事故の報告と公表、消費生活用の範囲、長期使用の点検、出題時の指定数。",
+      "solution": "不適切3。事故の原因と製品起因の判断を調べつつ、報告に必要な事実と未確定事項を区別して期限内に伝える。調査中は何も知らせなくてよいという制度ではない。原典の9品目は当時の指定として扱う。",
+      "answer_reason": "不適切3。事故の原因と製品起因の判断を調べつつ、報告に必要な事実と未確定事項を区別して期限内に伝える。調査中は何も知らせなくてよいという制度ではない。原典の9品目は当時の指定として扱う。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。事故原因調査を理由に報告期限を延期しない。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:safety:productaccident"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "saf53_product_accident",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：重大製品事故の調査を理由に報告を遅らせない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_products2012",
+        "saf53_oldnine"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-APT-10",
+      "source_sha256": "9b92cd3549fc1ad21636a544978f1385f63667ff6ac0112f81e553cf2ee4b1f5",
+      "stem": "事故報告10日と公表の運用を別の時計で読む。",
+      "summary": "事故報告10日と公表の運用を別の時計で読む。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "平成30年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "XOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "2": {
+          "value": "OXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "3": {
+          "value": "OOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "4": {
+          "value": "OOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "5": {
+          "value": "OOOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "原典の1週間を法定の全案件絶対期限としない。知った日算入は取得2023手引きで確認したが2018施行版の当該府令全文は未照合。2009の制度施行と法改正時点も原典表現と分けて査読。",
+      "evidence": [
+        "extracted/pages/H30/aptitude/page_010.png"
+      ],
+      "core_concept": "事故報告10日と公表の運用を別の時計で読む。",
+      "required_knowledge": "重大事故の類型、事故発生と知った日の差、事業者の報告と行政の公表、通常の安全性。",
+      "solution": "アの死亡・火災・CO中毒・後遺障害・治療30日以上、イの製造輸入側の報告、ウの公表、エの通常の安全性は原典の趣旨で全正5。報告は知った日を含む10日、公表は報告受理後の原則1週間等で起点が違う。2013公表フローはガス石油機器や製品起因が疑われるものを直ちに公表し、他の段階を原則1週間とする。",
+      "answer_reason": "アの死亡・火災・CO中毒・後遺障害・治療30日以上、イの製造輸入側の報告、ウの公表、エの通常の安全性は原典の趣旨で全正5。報告は知った日を含む10日、公表は報告受理後の原則1週間等で起点が違う。2013公表フローはガス石油機器や製品起因が疑われるものを直ちに公表し、他の段階を原則1週間とする。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。重大事故・10日・公表運用・通常安全性を肯定。ただし知った日算入と1週間運用は後で当時版確認。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:safety:productaccident"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "saf53_product_accident",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：事故報告10日と公表の運用を別の時計で読む。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_products2012",
+        "saf53_productflow2013",
+        "saf53_products2023"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-APT-06",
+      "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+      "stem": "システム安全は環境・物・人を含み回復も考える。",
+      "summary": "システム安全は環境・物・人を含み回復も考える。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "令和元年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "BAAAB",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "BBBBA",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 BAAAB と異なる。"
+        },
+        "3": {
+          "value": "AAABA",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 BAAAB と異なる。"
+        },
+        "4": {
+          "value": "ABAAB",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 BAAAB と異なる。"
+        },
+        "5": {
+          "value": "BAABA",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 BAAAB と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "機能安全の電子機器・付加という原典表現は一般規格の全範囲を尽くさない。安全工学・レジリエンスの当時用語源を全条照合していないため部分校正。",
+      "evidence": [
+        "extracted/pages/R01/aptitude/page_007.png"
+      ],
+      "core_concept": "システム安全は環境・物・人を含み回復も考える。",
+      "required_knowledge": "システムの境界、機能安全と制御、本質的安全・残留リスク、レジリエンス。",
+      "solution": "アはハードだけではないB。イは安全のための装置の機能が正しく働くA。ウは製造側が安全を図り、残留リスクを全て使用者へ渡すとはしないA。エは使用者・作業者両方の危害を扱うA。オは予防と回復力を扱うB。B A A A Bの1。原典の機能安全の対比は安全機能の目的で読み、制御装置を全て安全機能と呼ばない。",
+      "answer_reason": "アはハードだけではないB。イは安全のための装置の機能が正しく働くA。ウは製造側が安全を図り、残留リスクを全て使用者へ渡すとはしないA。エは使用者・作業者両方の危害を扱うA。オは予防と回復力を扱うB。B A A A Bの1。原典の機能安全の対比は安全機能の目的で読み、制御装置を全て安全機能と呼ばない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。B A A A B：システム総合、安全機能、製造側対応、一般安全、回復。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:safety:machine"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "saf53_machine",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：システム安全は環境・物・人を含み回復も考える。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_machine2007",
+        "saf_guide51"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-APT-11",
+      "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+      "stem": "変更時のリスク調査と明らかな軽微作業の例外。",
+      "summary": "変更時のリスク調査と明らかな軽微作業の例外。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "令和元年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "OXXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOO と異なる。"
+        },
+        "2": {
+          "value": "OXOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "3": {
+          "value": "OOXX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOO と異なる。"
+        },
+        "4": {
+          "value": "OOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOO と異なる。"
+        },
+        "5": {
+          "value": "XXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXOO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/aptitude/page_012.png"
+      ],
+      "core_concept": "変更時のリスク調査と明らかな軽微作業の例外。",
+      "required_knowledge": "危険源同定、変更管理、予見可能性、重篤度と可能性、ALARPと著しい不均衡。",
+      "solution": "アは建設物・材料・手順等が変わる時の再評価で正。イは明らかに軽微な負傷等しか予想されない歩行まで絶対除外不可としたため誤。ウの疲労の付加影響とエのALARPは正、2。明らかな軽微の例外を、不明な危険を調べなくてよい理由へ使わない。ALARPは安ければ十分という原則ではない。",
+      "answer_reason": "アは建設物・材料・手順等が変わる時の再評価で正。イは明らかに軽微な負傷等しか予想されない歩行まで絶対除外不可としたため誤。ウの疲労の付加影響とエのALARPは正、2。明らかな軽微の例外を、不明な危険を調べなくてよい理由へ使わない。ALARPは安ければ十分という原則ではない。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。O X O O：明らかな軽微な行動は調査除外可。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:safety:workplace"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "saf53_workplace",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：変更時のリスク調査と明らかな軽微作業の例外。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_workplace2006",
+        "saf_parliament2006"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-APT-08",
+      "source_sha256": "d0ca26aaeeba6d436d8ffa77a759056e7a194c0ac9fad61de2c84392999050bb",
+      "stem": "ヒューマンエラーを生む12の要因を結果からたどる。",
+      "summary": "ヒューマンエラーを生む12の要因を結果からたどる。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "令和2年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "該当しない0項目",
+          "verdict": "条件内で適切",
+          "reason": "列挙は全てヒューマンエラー発生要因の分類例に対応するので、原典の用語法では0。"
+        },
+        "2": {
+          "value": "1項目",
+          "verdict": "不適切",
+          "reason": "疲労や高齢化を単なる行為でないとして一つだけ除外すると、原典が使う要因分類と合わない。"
+        },
+        "3": {
+          "value": "2項目",
+          "verdict": "不適切",
+          "reason": "心身機能低下・疲労等はエラーを生む条件として分類へ含まれる。行為の誤りとその条件は概念上分ける。"
+        },
+        "4": {
+          "value": "3項目",
+          "verdict": "不適切",
+          "reason": "連絡不足や集団の条件も作業者を取り巻く要因で、個人のミスだけに狭めない。"
+        },
+        "5": {
+          "value": "4項目",
+          "verdict": "不適切",
+          "reason": "12項目の分類例と対応し、4項目除外の根拠はない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "原典の9割以上という数値は統計母集団・集計法が未確認。疲労等を行為そのものと呼ぶ定義ではなく、原因分類として扱う。原典の該当しないの語義をAstra対象に保持。",
+      "evidence": [
+        "extracted/pages/R02/aptitude/page_008.png"
+      ],
+      "core_concept": "ヒューマンエラーを生む12の要因を結果からたどる。",
+      "required_knowledge": "エラーの行為と発生要因、認知・判断・操作、設備・作業手順・連絡・負荷・組織。",
+      "solution": "原典はエラーの発生要因を広く扱い、全12項目が該当する0の1。知識、注意、意思伝達、組織風土、近道行動、状況への反射、パニック、錯覚、心身機能、疲労、単調作業を別に調べる。誤操作という結果と、その前の条件を区別して対策を考える。",
+      "answer_reason": "原典はエラーの発生要因を広く扱い、全12項目が該当する0の1。知識、注意、意思伝達、組織風土、近道行動、状況への反射、パニック、錯覚、心身機能、疲労、単調作業を別に調べる。誤操作という結果と、その前の条件を区別して対策を考える。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。12分類はすべてヒューマンエラーに関わる原因区分。語義は別途留保。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:safety:human"
+      ],
+      "discipline_id": "apt_3",
+      "concept_id": "saf53_human",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：ヒューマンエラーを生む12の要因を結果からたどる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_human12"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-APT-14",
+      "source_sha256": "d0ca26aaeeba6d436d8ffa77a759056e7a194c0ac9fad61de2c84392999050bb",
+      "stem": "GMOの生物多様性審査と食品安全審査を分ける。",
+      "summary": "GMOの生物多様性審査と食品安全審査を分ける。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "令和2年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "OOOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "2": {
+          "value": "OOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "3": {
+          "value": "OOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "4": {
+          "value": "OXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "5": {
+          "value": "XOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "2020当時の食品添加物の全例外と認定手続を網羅していない。未審査の全てを全技術・全品目へ広げず、規格基準の対象と手続の適用範囲を査読対象とする。2024後の行政所管変更を遡及しない。",
+      "evidence": [
+        "extracted/pages/R02/aptitude/page_014.png"
+      ],
+      "core_concept": "GMOの生物多様性審査と食品安全審査を分ける。",
+      "required_knowledge": "組換え形質、環境への拡散と生物多様性、食品衛生法上の審査、食品安全委員会の健康影響評価。",
+      "solution": "新しい形質の便益と生態系への影響を検討するア、カルタヘナ法の規制を述べるイ、食品の審査を述べるウ・エはいずれも正、1。環境での生物多様性影響と、食べた時の健康影響は別の評価対象であり、一方の承認だけで他方を不要としない。",
+      "answer_reason": "新しい形質の便益と生態系への影響を検討するア、カルタヘナ法の規制を述べるイ、食品の審査を述べるウ・エはいずれも正、1。環境での生物多様性影響と、食べた時の健康影響は別の評価対象であり、一方の承認だけで他方を不要としない。",
+      "independent_answer": "1",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。GMO生態・規制・食品安全審査は4文すべて肯定。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:sustainability:gmo"
+      ],
+      "discipline_id": "apt_2",
+      "concept_id": "saf53_gmo",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：GMOの生物多様性審査と食品安全審査を分ける。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_cartagena",
+        "saf53_gmo_food2004",
+        "saf53_gmo_standards2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-APT-08",
+      "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+      "stem": "旧制度の外部通報要件を四つの条件で照合する。",
+      "summary": "旧制度の外部通報要件を四つの条件で照合する。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "平成24年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "OXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "2": {
+          "value": "OOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "3": {
+          "value": "OOOO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "OOOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        },
+        "5": {
+          "value": "XOOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "2012施行版の全条文逐条対照は未実施。改正前ハンドブックと2017旧FAQで枠組みを確認。4条件を必要十分な全リストへ拡張しない。",
+      "evidence": [
+        "extracted/pages/H24/aptitude/page_007.png"
+      ],
+      "core_concept": "旧制度の外部通報要件を四つの条件で照合する。",
+      "required_knowledge": "2022以前の対象者・対象事実、内部・行政・外部の保護要件、相当な理由、20日通知。",
+      "solution": "不利益のおそれ、証拠隠滅のおそれ、正当な理由のない通報禁止要求、書面で内部通報した後20日以内に調査通知がないという4項目はいずれも旧制度の外部通報の追加要件に対応し3。ただしこれらだけで全ての保護要件を尽くさない。対象事実と相当な理由、不正目的でないこと、通報先も確認する。",
+      "answer_reason": "不利益のおそれ、証拠隠滅のおそれ、正当な理由のない通報禁止要求、書面で内部通報した後20日以内に調査通知がないという4項目はいずれも旧制度の外部通報の追加要件に対応し3。ただしこれらだけで全ての保護要件を尽くさない。対象事実と相当な理由、不正目的でないこと、通報先も確認する。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。労働者・不正目的でない・対象事実・通報先要件。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:compliance:whistleblower"
+      ],
+      "discipline_id": "apt_4",
+      "concept_id": "saf53_whistle",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：旧制度の外部通報要件を四つの条件で照合する。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "caa_handbook_pre2022",
+        "saf53_whistle_oldfaq"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APT-09",
+      "source_sha256": "2965cecde9e4c31c06a94192bf7a750346fbf85d07d37943d58a3fa15d15ebeb",
+      "stem": "公益通報でも他人の正当な利益への配慮が要る。",
+      "summary": "公益通報でも他人の正当な利益への配慮が要る。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "平成27年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "生命・消費者・環境等に関する対象事実",
+          "verdict": "条件内で適切",
+          "reason": "対象法令で定める違法行為等の範囲で判断する。全ての非倫理的行為が自動的に法定対象となるわけではない。"
+        },
+        "2": {
+          "value": "別表の対象法令",
+          "verdict": "条件・時点を留保",
+          "reason": "別表と政令で定める法令を合わせる。原典の別表だけの略記を全対象法令が別表本文だけに直接列挙されるという意味へ広げない。"
+        },
+        "3": {
+          "value": "公益のためなら第三者の利益への注意不要",
+          "verdict": "不適切",
+          "reason": "公益通報者保護法は他人の正当な利益や公共の利益を害さないよう努めることも定める。無関係な個人情報を無制限に公開してよいという制度ではない。"
+        },
+        "4": {
+          "value": "内部と行政で保護要件が違う",
+          "verdict": "条件内で適切",
+          "reason": "旧制度では内部の思料と、行政への通報に要る相当な理由を分ける。後年追加された書面提出等の経路を遡及しない。"
+        },
+        "5": {
+          "value": "外部通報の相当な理由と追加要件",
+          "verdict": "条件・時点を留保",
+          "reason": "解雇・証拠隠滅・調査通知・急迫危険は代表条件。原典は通報禁止要求等の条件を省略しており、完全な排他的列挙と解釈しない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "2の別表略記と5の追加要件省略を留保。2015施行版の逐条対照は未実施で、代表列挙を完全文としない。",
+      "evidence": [
+        "extracted/pages/H27/aptitude/page_009.png"
+      ],
+      "core_concept": "公益通報でも他人の正当な利益への配慮が要る。",
+      "required_knowledge": "通報と権利保護、別表・政令、通報先別要件、外部通報と他者の正当な利益。",
+      "solution": "不適切3。公益のための通報と、その伝達に伴う他者の権利への配慮は両立する。必要な事実を適切な窓口へ伝え、目的外の情報拡散を避ける。保護要件は当時制度を使い、対象法令の別表・政令と外部通報の条件の省略を留保する。",
+      "answer_reason": "不適切3。公益のための通報と、その伝達に伴う他者の権利への配慮は両立する。必要な事実を適切な窓口へ伝え、目的外の情報拡散を避ける。保護要件は当時制度を使い、対象法令の別表・政令と外部通報の条件の省略を留保する。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。保護された公益通報を理由とする解雇は無効。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:compliance:whistleblower"
+      ],
+      "discipline_id": "apt_4",
+      "concept_id": "saf53_whistle",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：公益通報でも他人の正当な利益への配慮が要る。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "caa_handbook_pre2022",
+        "saf53_whistle_oldfaq"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-RET-APT-05",
+      "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+      "stem": "倫理的な警笛鳴らしの段階・証拠・改善見込み。",
+      "summary": "倫理的な警笛鳴らしの段階・証拠・改善見込み。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "令和元年度再試験の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "XOXO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXXO と異なる。"
+        },
+        "2": {
+          "value": "OXOX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXXO と異なる。"
+        },
+        "3": {
+          "value": "OXXO",
+          "verdict": "条件内で適切",
+          "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+        },
+        "4": {
+          "value": "XXOO",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXXO と異なる。"
+        },
+        "5": {
+          "value": "OOXX",
+          "verdict": "不適切",
+          "reason": "各文又は定義の判定を先に行う。並びが判定 OXXO と異なる。"
+        }
+      },
+      "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+      "ambiguity": "倫理モデルの条件は実際の全緊急事態の手順を固定する法律ではない。直接の原著全章は未通読。急迫危険では別の法定経路と対応を検討する。",
+      "evidence": [
+        "extracted/pages/R01_retest/aptitude/page_005.png"
+      ],
+      "core_concept": "倫理的な警笛鳴らしの段階・証拠・改善見込み。",
+      "required_knowledge": "深刻な危害、内部の段階、客観的証拠、改善効果、個人の危険と公益。",
+      "solution": "アは深刻な危害を認識した段階の内部報告で正。イは上司が反応しないだけで他の内部経路を検討せず即座に外へという飛躍、ウは客観的証拠を持たず外部告発義務を断定して誤。エは公表で必要な改善が見込める理由を求め正、3。これは倫理枠組みの比較で、法定保護の要件と一つにしない。",
+      "answer_reason": "アは深刻な危害を認識した段階の内部報告で正。イは上司が反応しないだけで他の内部経路を検討せず即座に外へという飛躍、ウは客観的証拠を持たず外部告発義務を断定して誤。エは公表で必要な改善が見込める理由を求め正、3。これは倫理枠組みの比較で、法定保護の要件と一つにしない。",
+      "independent_answer": "3",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。O X X O：倫理枠組みは内部の段階と証拠・改善見込を要求。法定保護とは分ける。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:ethics:whistle_conditions"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "saf53_ethic_whistle",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：倫理的な警笛鳴らしの段階・証拠・改善見込み。",
+      "calculation": "false",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "1",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "muroran_ethics_cases"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-APT-03",
+      "source_sha256": "3dee8906ad8be46592986fef01028424243f7e515af04979667524eed1f0a915",
+      "stem": "公益通報の対象者から公務員を除外しない。",
+      "summary": "公益通報の対象者から公務員を除外しない。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "令和5年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "全法律ではなく指定された対象法令",
+          "verdict": "条件内で適切",
+          "reason": "別表・政令で定める利益保護の対象法律等を確認する。単に望ましくない行為だけで対象とはしない。"
+        },
+        "2": {
+          "value": "公務員は適用対象外",
+          "verdict": "不適切",
+          "reason": "公務員も保護の対象。国家・地方公務員の勤務法があることから公益通報保護を全面的に除外しない。"
+        },
+        "3": {
+          "value": "公益通報を理由とする解雇・不利益禁止",
+          "verdict": "条件内で適切",
+          "reason": "法定の要件を満たす公益通報に対する保護である。全ての申出が自動的に公益通報に当たるとはしない。"
+        },
+        "4": {
+          "value": "降格・減給・退職強要等の不利益",
+          "verdict": "条件内で適切",
+          "reason": "名目だけでなく実質的に通報を理由として不利益を課すかを検討する。"
+        },
+        "5": {
+          "value": "通報を理由とした損害賠償請求の制限",
+          "verdict": "条件内で適切",
+          "reason": "2020改正・2022施行で、公益通報により生じた損害を理由とする賠償請求を制限する。無関係な行為の責任まで消す規定ではない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "原典の改正年表現は画像のまま保持し、解説で施行との区別を注記。2023施行版全条文の対照と当時FAQ版の範囲はAstraで追加確認。",
+      "evidence": [
+        "extracted/pages/R05/aptitude/page_003.png"
+      ],
+      "core_concept": "公益通報の対象者から公務員を除外しない。",
+      "required_knowledge": "法定対象者、公益通報と不正目的、対象事実・通報先、2020改正と2022施行。",
+      "solution": "不適切2。公務員も含むという対象者の定義を先に確認する。原典前文の2022年改正は、2020年成立・公布、2022年6月1日施行との時点の違いを注記する。解雇無効等は法定の公益通報要件内であり、全内部告発の無条件保護ではない。",
+      "answer_reason": "不適切2。公務員も含むという対象者の定義を先に確認する。原典前文の2022年改正は、2020年成立・公布、2022年6月1日施行との時点の違いを注記する。解雇無効等は法定の公益通報要件内であり、全内部告発の無条件保護ではない。",
+      "independent_answer": "2",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。公務員は除外されない。2020改正2022施行と原典年表示の相違を留保。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:compliance:whistleblower"
+      ],
+      "discipline_id": "apt_4",
+      "concept_id": "saf53_whistle",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：公益通報の対象者から公務員を除外しない。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "caa_amend2020",
+        "caa_current_faq",
+        "saf53_whistle_oldpublic"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APT-13",
+      "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+      "stem": "通報先別保護と小規模事業者の努力義務を区別する。",
+      "summary": "通報先別保護と小規模事業者の努力義務を区別する。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "令和7年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "刑罰・過料へつながる対象事実",
+          "verdict": "条件内で適切",
+          "reason": "2022施行制度は対象法令の犯罪・過料対象行為等を扱う。対象法律の指定を前提に判断する。"
+        },
+        "2": {
+          "value": "内部・行政・その他外部の通報先",
+          "verdict": "条件内で適切",
+          "reason": "通報先によって保護要件が異なる。窓口の名前だけで全要件が同一とはしない。"
+        },
+        "3": {
+          "value": "法定人数以下の体制整備は努力義務",
+          "verdict": "条件内で適切",
+          "reason": "2022施行制度では常時使用する労働者300人以下は努力義務。対象人数の算定と体制整備の義務を、通報者自身の保護から分ける。"
+        },
+        "4": {
+          "value": "被害防止に必要なその他外部",
+          "verdict": "条件内で適切",
+          "reason": "報道機関・消費者団体等も対象となり得るが、その者への通報が被害防止に必要と認められる条件を確認する。"
+        },
+        "5": {
+          "value": "労働者に公務員を含まない",
+          "verdict": "不適切",
+          "reason": "派遣・パート等と同様、公務員も法の対象者へ含まれる。公務員法の存在は除外の理由にならない。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "原典の令和4年改正・施行は2020改正・2022施行と区別。2025試験日に有効な各下位法令の全版対照は未実施。",
+      "evidence": [
+        "extracted/pages/R07/aptitude/page_013.png"
+      ],
+      "core_concept": "通報先別保護と小規模事業者の努力義務を区別する。",
+      "required_knowledge": "対象者と労働者数、指定従事者と体制整備、対象事実、通報先別要件。",
+      "solution": "不適切5。体制整備の義務か努力義務かと、各通報者が保護されるかは別の問いである。対象事実・通報先・保護要件を順に照合する。原典が指す2022施行版を保ち、2025成立や2026施行の改正を先取りしない。",
+      "answer_reason": "不適切5。体制整備の義務か努力義務かと、各通報者が保護されるかは別の問いである。対象事実・通報先・保護要件を順に照合する。原典が指す2022施行版を保ち、2025成立や2026施行の改正を先取りしない。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。公務員も労働者に含む。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:compliance:whistleblower"
+      ],
+      "discipline_id": "apt_4",
+      "concept_id": "saf53_whistle",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：通報先別保護と小規模事業者の努力義務を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "true",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "caa_amend2020",
+        "caa_current_faq",
+        "saf53_whistle_oldpublic"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R05-REG-APT-13",
+      "source_sha256": "3dee8906ad8be46592986fef01028424243f7e515af04979667524eed1f0a915",
+      "stem": "2021行動計画の七項目と人材施策の内容を分ける。",
+      "summary": "2021行動計画の七項目と人材施策の内容を分ける。",
+      "conditions": {
+        "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+        "時点": "令和5年度の本文表現を保持。後の制度改正を遡及しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "予算管理",
+          "verdict": "条件内で適切",
+          "reason": "維持更新費用の見通しと財政支援等を扱う独立項目に含まれる。"
+        },
+        "2": {
+          "value": "体制の構築",
+          "verdict": "条件内で適切",
+          "reason": "担い手・役割分担・支援等の体制を整える独立項目に含まれる。"
+        },
+        "3": {
+          "value": "新技術の開発・導入",
+          "verdict": "条件内で適切",
+          "reason": "点検・維持更新の技術と適用の評価を扱う独立項目に含まれる。"
+        },
+        "4": {
+          "value": "情報基盤の整備と活用",
+          "verdict": "条件内で適切",
+          "reason": "施設情報の蓄積・更新と利用を扱う独立項目に含まれる。"
+        },
+        "5": {
+          "value": "技術継承の取組",
+          "verdict": "不適切",
+          "reason": "重要性の否定ではなく、原典が問う七つの独立見出しとして列挙されていない。体制・人材の中の内容との区別が必要。"
+        }
+      },
+      "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R05/aptitude/page_013.png"
+      ],
+      "core_concept": "2021行動計画の七項目と人材施策の内容を分ける。",
+      "required_knowledge": "計画の章・対象期間、七項目の見出しと内包する施策、維持管理のサイクル。",
+      "solution": "該当しない5。2021年6月18日の第2次計画Ⅵの七項目は、個別施設計画、点検診断・修繕更新、予算管理、体制、新技術、情報基盤、基準類である。前章の現状課題には法令等の項目もあるため、章を取り違えない。技術継承が施策として不要という答えではない。",
+      "answer_reason": "該当しない5。2021年6月18日の第2次計画Ⅵの七項目は、個別施設計画、点検診断・修繕更新、予算管理、体制、新技術、情報基盤、基準類である。前章の現状課題には法令等の項目もあるため、章を取り違えない。技術継承が施策として不要という答えではない。",
+      "independent_answer": "5",
+      "independent_solution_note": "初回JSONと公式比較JSONを保存。技術継承は大事だが七項目の独立見出しと区別。 初回説明の取り違え2件は別followupに保持。",
+      "learning_points": "対象・責任主体・時点・要件を分け、文の否定と「全て」「不要」の範囲を点検する。知識を当てはめる前に何を証明する資料かを確かめる。",
+      "theory_references": [
+        "theory:safety:maintenance2021"
+      ],
+      "discipline_id": "manual_79",
+      "concept_id": "saf53_maintenance2021",
+      "cross_concepts": [],
+      "classification_reason": "原典の主題と全候補を照合：2021行動計画の七項目と人材施策の内容を分ける。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "定義と制度の時点を照合し、組織的な対応と全称表現を区別する。"
+      },
+      "citations": [
+        "saf53_infra2021"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

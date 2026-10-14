@@ -1,0 +1,45 @@
+{
+  "stem": "乗除を加算より先に行う中置式を後置記法へ変換する。",
+  "conditions": {
+    "判断対象": "算術木の左・右・根の後行順走査と演算優先。",
+    "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+  },
+  "choices": {
+    "1": {
+      "value": "ab×cd÷+",
+      "verdict": "適切",
+      "reason": "左右の部分式ab×とcd÷を終えて根の+を出す。"
+    },
+    "2": {
+      "value": "ab×c÷d+",
+      "verdict": "不適切",
+      "reason": "(a×b)÷c+dとなり除算の対象が違う。"
+    },
+    "3": {
+      "value": "abc×÷d+",
+      "verdict": "不適切",
+      "reason": "a÷(b×c)+dとなり括りが違う。"
+    },
+    "4": {
+      "value": "abc+d÷×",
+      "verdict": "不適切",
+      "reason": "a×((b+c)÷d)となり加算対象が違う。"
+    },
+    "5": {
+      "value": "abcd×÷+",
+      "verdict": "不適切",
+      "reason": "a+b÷(c×d)となり根以下の構造が違う。"
+    }
+  },
+  "figures": "原典の木・道路接続・構文経路・矢印を画像確認。教材では独自の構造表現で説明し原図転載なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/basic/page_009.png"
+  ],
+  "question_id": "H30-REG-BASIC-2-5",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "9",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "72f7233ef9c414bee4a5cf04d8fb0ca40a2f761ad7c55f4b9cf707b0dd430611",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

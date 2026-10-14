@@ -1,0 +1,44 @@
+{
+  "stem": "大気微量成分の発生源、温室効果、成層圏オゾンへの作用を比較する。",
+  "conditions": {
+    "方向": "最も不適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "N2Oは温室効果とオゾン破壊に関与。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "N2Oから生成されるNO等がオゾンの触媒反応へ関わり、赤外吸収も持つ。"
+    },
+    "2": {
+      "value": "メタンは湿地・水田・反すう動物の寄与が小さく採掘由来がほぼ全て。",
+      "verdict": "不適切",
+      "reason": "嫌気的な微生物過程や家畜・水田なども重要な源で、化石燃料採掘だけに限定できない。"
+    },
+    "3": {
+      "value": "CO2は季節変動を伴い長期増加。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "原典当時の観測と整合。季節周期の上へ長期増加が重なる。"
+    },
+    "4": {
+      "value": "CFC11/12は安定で輸送後、成層圏でUV分解しClを放出。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "対流圏で壊れにくい性質が成層圏への輸送を可能にし、UVで遊離した塩素が反応へ関与する。"
+    },
+    "5": {
+      "value": "成層圏オゾンは有害UVを吸収し大気を加熱。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "オゾンの吸収が成層圏の正の温度勾配を作る要因である。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_010.png"
+  ],
+  "question_id": "H24-REG-APPLIED-34",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "834e1fa726e39a3e1615a2a39002463e4c155caf313af528af8dd881750078eb",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

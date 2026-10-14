@@ -1,0 +1,45 @@
+{
+  "stem": "社会的責任の七原則の名称。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+    "時点": "令和4年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "透明性",
+      "verdict": "条件内で適切",
+      "reason": "七原則に含まれる。影響の説明可能性を支える。"
+    },
+    "2": {
+      "value": "法の支配の尊重",
+      "verdict": "条件内で適切",
+      "reason": "七原則に含まれる。適法性を基本として考える。"
+    },
+    "3": {
+      "value": "技術継承",
+      "verdict": "不適切",
+      "reason": "重要な取組ではあるが七原則の見出しではない。"
+    },
+    "4": {
+      "value": "説明責任",
+      "verdict": "条件内で適切",
+      "reason": "七原則に含まれる。影響と判断を説明する。"
+    },
+    "5": {
+      "value": "ステークホルダーの利害の尊重",
+      "verdict": "条件内で適切",
+      "reason": "七原則に含まれる。関係者の利害を考慮する。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/aptitude/page_002.png"
+  ],
+  "question_id": "R04-REG-APT-03",
+  "source_file": "sources/R04/aptitude.pdf",
+  "source_page": "2",
+  "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+  "raw_text_sha256": "71e257ead8facf011f0fb2cf1f117c6214f074f7a5d60587977ac063a1f6b838",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

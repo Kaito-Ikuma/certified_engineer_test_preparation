@@ -1,0 +1,32 @@
+[
+  {
+    "key": "finish56_eoq",
+    "url": "https://live.ocw.mit.edu/courses/2-854-introduction-to-manufacturing-systems-fall-2016/6c8fec8f99bcf7059b73b82e96d43901_MIT2_854F16_Inventory.pdf",
+    "reading_scope": "公開検索のEOQ微分式を確認。原典の指定費用と需要から独立計算。全講義読了ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "finish56_convex",
+    "url": "https://www.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf",
+    "reading_scope": "著者の公開教科書・講義の凸最適化定義と局所大域の枠組みを参照。全書読了ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "finish56_radiation",
+    "url": "https://atomica.jaea.go.jp/data/detail/dat_detail_08-01-02-06.html",
+    "reading_scope": "公開検索本文のαの飛程とγ遮蔽の材料・光子エネルギー依存を参照。全文精読ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "finish56_titania",
+    "url": "https://www.aist.go.jp/aist_j/press_release/pr2002/pr20020115_1/pr20020115_1.html",
+    "reading_scope": "研究機関公開本文のTiO2と抗菌・防汚等の用途を検索確認。全結晶相の性能保証ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "finish56_polarity",
+    "url": "https://openstax.org/books/chemistry-2e/pages/7-6-molecular-structure-and-polarity",
+    "reading_scope": "出版社公開説明の分子形と結合極性による分子極性を参照。全章読了ではない。",
+    "full_source_read": false
+  }
+]

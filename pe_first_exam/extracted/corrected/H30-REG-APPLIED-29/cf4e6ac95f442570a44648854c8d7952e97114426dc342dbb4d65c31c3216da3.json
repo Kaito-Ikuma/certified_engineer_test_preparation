@@ -1,0 +1,45 @@
+{
+  "stem": "ハワイ式とストロンボリ式・火砕流を区別する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "ハワイ式とストロンボリ式・火砕流を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "間欠的な火山弾・スコリア放出",
+      "verdict": "代表的条件で適切",
+      "reason": "ストロンボリ式は比較的低粘性のマグマからガスが断続的に解放される小爆発を伴う。"
+    },
+    "2": {
+      "value": "高温ガスと火砕物の高速流下",
+      "verdict": "代表的条件で適切",
+      "reason": "火砕流は高温のガス・粒子混合流で、地表を高速に移動する。"
+    },
+    "3": {
+      "value": "低粘性流紋岩のハワイ式",
+      "verdict": "不適切",
+      "reason": "典型的なハワイ式は流動性に富む玄武岩質マグマの溶岩噴泉等。流紋岩へ交換した点が誤り。"
+    },
+    "4": {
+      "value": "外来水とマグマの爆発的相互作用",
+      "verdict": "代表的条件で適切",
+      "reason": "マグマ水蒸気爆発では急な熱交換・水の蒸発・破砕が関与する。マグマ由来の揮発性分だけの発泡と分ける。"
+    },
+    "5": {
+      "value": "高粘性溶岩のドーム",
+      "verdict": "代表的条件で適切",
+      "reason": "安山岩質～デイサイト質等の高粘性溶岩は火口近くに堆積してドームを作り得る。組成だけで全ての形を固定しない。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_010.png"
+  ],
+  "question_id": "H30-REG-APPLIED-29",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "5b0ae810b0ae6b66e6af4731ac6a2561ab2a0164f89f84e428eb1ef567f91573",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

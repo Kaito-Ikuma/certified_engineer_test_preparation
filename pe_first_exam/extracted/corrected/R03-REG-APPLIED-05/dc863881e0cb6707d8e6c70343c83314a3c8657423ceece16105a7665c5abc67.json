@@ -1,0 +1,46 @@
+{
+  "stem": "空気層の反射ニュートンリングで明環半径と曲率半径・波長・次数を対応させる。",
+  "conditions": {
+    "配置": "曲率半径Rの平凸レンズを凸面下に平面ガラスへ置く。接点Oから距離x。",
+    "光": "上から垂直な単色光、波長λ。反射で同心円状の縞を観察。",
+    "方向": "原文はOからm番目の明環。次数の開始値は明示なし。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(2x^2/R=m\\lambda\\)",
+      "verdict": "不適切",
+      "reason": "曲面の幾何による往復空気層の厚さはx²/Rで、2x²/Rではない。整数倍も反射明環に対応しない。"
+    },
+    "2": {
+      "value": "\\(2x^2/R=(m+1/2)\\lambda\\)",
+      "verdict": "不適切",
+      "reason": "半整数は反射明環の条件だが、幾何の係数が2倍。"
+    },
+    "3": {
+      "value": "\\(x^2/R=(m+1/2)\\lambda\\)",
+      "verdict": "最適",
+      "reason": "mを0,1,2,…とする干渉次数なら正しい。ただし原典のm番目の数え始めは明示されない。"
+    },
+    "4": {
+      "value": "\\(x^2/R=m\\lambda\\)",
+      "verdict": "不適切",
+      "reason": "片方の反射のみ位相反転するため、整数倍は反射暗環の条件となる。"
+    },
+    "5": {
+      "value": "\\(x^2/(2R)=(m+1/2)\\lambda\\)",
+      "verdict": "不適切",
+      "reason": "x²/(2R)は片道の厚さtであり、明環の位相条件には往復2tを使う。"
+    }
+  },
+  "figures": "原典の条件・数式・単位・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "独立3・公式3一致。ただし3はm=0始まりの干渉次数で成立。m番目を1始まりの序数と読むならm−1/2が必要で候補なし。開始値を原典所与として補わず部分校正。Astraで反射/透過と位相反転も確認。",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_002.png"
+  ],
+  "question_id": "R03-REG-APPLIED-05",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "e9e171360df364d832800908b197232b541b38e9045118c4c0b03de9d791b6a4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

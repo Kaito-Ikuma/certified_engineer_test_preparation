@@ -1,0 +1,83 @@
+{
+  "time": "2026-10-12T08:45:28+09:00",
+  "records": [
+    {
+      "question_id": "H24-REG-APT-03",
+      "initial": "2",
+      "official": "2",
+      "match": true
+    },
+    {
+      "question_id": "H25-REG-APT-03",
+      "initial": "4",
+      "official": "4",
+      "match": true
+    },
+    {
+      "question_id": "H25-REG-APT-04",
+      "initial": "3",
+      "official": "5",
+      "match": false
+    },
+    {
+      "question_id": "H26-REG-APT-05",
+      "initial": "4",
+      "official": "4",
+      "match": true
+    },
+    {
+      "question_id": "H27-REG-APT-11",
+      "initial": "5",
+      "official": "5",
+      "match": true
+    },
+    {
+      "question_id": "H29-REG-APT-04",
+      "initial": "5",
+      "official": "5",
+      "match": true
+    },
+    {
+      "question_id": "H29-REG-APT-05",
+      "initial": "3",
+      "official": "3",
+      "match": true
+    },
+    {
+      "question_id": "H30-REG-APT-12",
+      "initial": "1",
+      "official": "1",
+      "match": true
+    },
+    {
+      "question_id": "R01-REG-APT-12",
+      "initial": "1",
+      "official": "1",
+      "match": true
+    },
+    {
+      "question_id": "R02-REG-APT-13",
+      "initial": "4",
+      "official": "4",
+      "match": true
+    },
+    {
+      "question_id": "R04-REG-APT-05",
+      "initial": "4",
+      "official": "4",
+      "match": true
+    },
+    {
+      "question_id": "R06-REG-APT-10",
+      "initial": "3",
+      "official": "3",
+      "match": true
+    },
+    {
+      "question_id": "R07-REG-APT-15",
+      "initial": "2",
+      "official": "2",
+      "match": true
+    }
+  ]
+}

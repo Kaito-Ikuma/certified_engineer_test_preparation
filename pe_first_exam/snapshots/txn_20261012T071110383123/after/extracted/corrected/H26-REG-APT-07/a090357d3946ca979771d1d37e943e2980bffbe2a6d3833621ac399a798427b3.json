@@ -1,0 +1,46 @@
+{
+  "stem": "PL法の5記述から開発危険の免責を否定する文を選ぶ。",
+  "conditions": {
+    "原典条件": "問題幹、否定、ア等の記号順、5選択肢と個数又は表の全行を原典16画像で確認した。",
+    "論理条件": "最も不適切な単一候補を選ぶ。",
+    "法の時点": "出題時の制度を保持。現行取得基準日は2026-10-12。2020年施行の期間変更を別記する。"
+  },
+  "choices": {
+    "1": {
+      "value": "製造又は加工された動産であり、不動産は除く",
+      "verdict": "適切",
+      "reason": "2条1項の定義である。"
+    },
+    "2": {
+      "value": "製造加工と輸入の事業者を含む",
+      "verdict": "適切",
+      "reason": "輸入者も2条3項1号の対象となる。"
+    },
+    "3": {
+      "value": "通常の安全性の不足が欠陥である",
+      "verdict": "適切",
+      "reason": "安全と無関係な品質不良は区別する。"
+    },
+    "4": {
+      "value": "認識不能でも免責されない",
+      "verdict": "不適切",
+      "reason": "4条1号は所定の証明による開発危険の免責を定める。"
+    },
+    "5": {
+      "value": "過失立証は不要で欠陥を立証する",
+      "verdict": "適切",
+      "reason": "制度変化は正しいが、損害と因果関係を省略している。"
+    }
+  },
+  "figures": "文字表又は記述問題であり図なし。組合せの各行は原典画像の列順を保持する。",
+  "ambiguity": "5の欠陥存在だけで請求できるという省略には損害と因果関係の条件を補う必要がある。公式4と初回4は保持する。",
+  "evidence": [
+    "extracted/pages/H26/aptitude/page_007.png"
+  ],
+  "question_id": "H26-REG-APT-07",
+  "source_file": "sources/H26/aptitude.pdf",
+  "source_page": "7",
+  "source_sha256": "5691e940fce3cbf9423bc99a96803c1c6273563931b76b91bdb9f2b67e6233d3",
+  "raw_text_sha256": "c75693f922bea174c6ef30c2afdb121951e5ad3ba38912236b28dcf9f1e7a470",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,86 @@
+{
+  "time": "2026-10-11T10:33:52.460310+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_023_modern_units",
+  "question_ids": [
+    "H23-REG-APPLIED-06",
+    "H25-REG-APPLIED-04",
+    "H27-REG-APPLIED-04",
+    "R05-REG-APPLIED-13",
+    "R06-REG-APPLIED-16",
+    "H28-REG-APPLIED-06",
+    "H29-REG-APPLIED-05",
+    "R01-RET-APPLIED-01",
+    "R02-REG-APPLIED-09",
+    "R03-REG-APPLIED-09",
+    "R07-REG-APPLIED-09",
+    "H23-REG-APPLIED-10",
+    "H25-REG-APPLIED-07",
+    "H27-REG-APPLIED-05",
+    "H26-REG-APPLIED-09",
+    "H28-REG-APPLIED-09",
+    "R04-REG-APPLIED-09",
+    "H27-REG-APPLIED-06",
+    "R05-REG-APPLIED-07"
+  ],
+  "source_images": 18,
+  "initial_independent_matches": 19,
+  "corrected_verified": 15,
+  "partial": 4,
+  "related_pairs_added": 9,
+  "related_pairs_total": 127,
+  "primary_references_added": 18,
+  "concepts_added": 3,
+  "concept_total": 155,
+  "canonical_counts": {
+    "recorded_at": "2026-10-11T10:33:52.460310+09:00",
+    "registered": 1270,
+    "classification_verified": 475,
+    "summary_verified": 439,
+    "corrected_verified": 391,
+    "corrected_partial": 48,
+    "solution_drafts": 439,
+    "solution_verified": 0,
+    "manual_required": 879,
+    "subject_drafts": {
+      "BASIC": 125,
+      "APT": 94,
+      "APPLIED": 220
+    }
+  },
+  "theory_sections": 23,
+  "labeled_theory_sections": 21,
+  "pdf": {
+    "pages": 643,
+    "bytes": 3170329,
+    "visual_review_pages": [
+      406,
+      407,
+      408,
+      409,
+      414,
+      415,
+      436,
+      437,
+      438,
+      441,
+      445
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draft・1270ラベル監査・24回帰テスト成功。propto許容と既存安全性試験を確認。",
+  "revisions": [
+    "単位記号の波括弧明示3問では欠落警告は解消しなかった。履歴保持。",
+    "mathmathrm内OmegaのLM roman U+000Aを分離し3問を追加ハッシュ束縛改訂。最終欠落0。"
+  ],
+  "risks": [
+    "H23/H27のSI導入はcdを欠く。",
+    "H23核問のbeta安定への全称と内部被曝の条件を保持。",
+    "R01再試験の改定後三重点は厳密定義でなく最良推定。",
+    "Astra未査読。831問未執筆、最終監査未実装。"
+  ],
+  "next": "S7_024ネットワーク・情報セキュリティ16問を続行。18原典画像確認・公式前独立解答保存済み、全16公式一致。全1270問と全章初稿・頻出分析まで継続。"
+}

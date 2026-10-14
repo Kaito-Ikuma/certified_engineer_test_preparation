@@ -1,0 +1,45 @@
+{
+  "stem": "汚濁量を表す水質指標と、水の起源を追う同位体比を区別する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "地球表層の自然水・岩石・元素循環。各肢の条件は独自要約として保持。"
+  },
+  "choices": {
+    "1": {
+      "value": "大腸菌群数",
+      "verdict": "適切（通常条件）",
+      "reason": "当時の衛生汚濁の指標である。菌数を物質濃度や発生源の同位体指標と混ぜない。"
+    },
+    "2": {
+      "value": "生物化学的酸素要求量BOD",
+      "verdict": "適切（通常条件）",
+      "reason": "微生物分解に必要な酸素量で、分解可能な有機負荷を反映する。全有機物量そのものではない。"
+    },
+    "3": {
+      "value": "全窒素",
+      "verdict": "適切（通常条件）",
+      "reason": "富栄養化に関与する窒素成分の総量を追う。"
+    },
+    "4": {
+      "value": "浮遊物質SS",
+      "verdict": "適切（通常条件）",
+      "reason": "水に浮遊する粒子量を追う。溶存量とは区別する。"
+    },
+    "5": {
+      "value": "水素同位体比",
+      "verdict": "不適切",
+      "reason": "蒸発・降水・混合等による水の起源と履歴を追うトレーサーであり、一般的な汚濁量の直接尺度ではない。"
+    }
+  },
+  "figures": "設問幹・全5肢・否定・数字・単位・化学記号を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_006.png"
+  ],
+  "question_id": "H23-REG-APPLIED-18",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "85b1b4cca6b9d716d19eac40835a4ecdd1336ecbec2ca7f67b29cb551c5116a2",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

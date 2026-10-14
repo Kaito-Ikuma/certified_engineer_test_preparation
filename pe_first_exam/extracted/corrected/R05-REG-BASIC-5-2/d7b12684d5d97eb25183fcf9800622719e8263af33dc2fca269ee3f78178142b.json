@@ -1,0 +1,45 @@
+{
+  "stem": "PM2.5は2.5μm付近だけではない。",
+  "conditions": {
+    "原典": "全五肢と否定方向・組合せ表を画像確認。",
+    "資料時点": "令和5年度の指定資料・統計年を保持し、後年値に置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "SO2は硫黄燃料燃焼と酸性雨",
+      "verdict": "条件内で適切",
+      "reason": "発生源の硫黄と反応生成物を対応。"
+    },
+    "2": {
+      "value": "NOが酸化しNO2となる",
+      "verdict": "条件内で適切",
+      "reason": "燃焼で生じたNOの大気酸化はNO2の生成経路。"
+    },
+    "3": {
+      "value": "COは不完全燃焼・酸素運搬阻害",
+      "verdict": "条件内で適切",
+      "reason": "COがヘモグロビンと結合して酸素運搬を妨げる。"
+    },
+    "4": {
+      "value": "光化学オキシダントはNOx・VOC等から二次生成",
+      "verdict": "条件内で適切",
+      "reason": "日射下の化学反応で生じる酸化性物質の総称。"
+    },
+    "5": {
+      "value": "PM2.5は粒径2.5μm付近のみ",
+      "verdict": "不適切・選択対象",
+      "reason": "微小粒子の区分は2.5μm以下側の粒径範囲であり、その近傍だけではない。実測は分粒特性で定義される。"
+    }
+  },
+  "figures": "文章五肢を独自要約。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_016.png"
+  ],
+  "question_id": "R05-REG-BASIC-5-2",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "16",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "82972da4ac98f1435a7e3f69889dafb5db7b1acb679dc55ef81de3dc5e837c04",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

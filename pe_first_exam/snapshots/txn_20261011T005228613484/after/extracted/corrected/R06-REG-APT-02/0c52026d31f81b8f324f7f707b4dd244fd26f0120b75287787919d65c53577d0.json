@@ -1,0 +1,45 @@
+{
+  "stem": "2030アジェンダのジェンダー段落の4空欄に入らない語を選ぶ。",
+  "conditions": {
+    "並び": "ア能力強化（エンパワーメント）・イ雇用・ウリーダーシップ・エ意思決定。",
+    "方向": "4空欄のいずれにも入らない語。"
+  },
+  "choices": {
+    "1": {
+      "value": "雇用",
+      "verdict": "イに対応",
+      "reason": "イに入り、働く機会の平等を示す。"
+    },
+    "2": {
+      "value": "リーダーシップ",
+      "verdict": "ウに対応",
+      "reason": "ウに入り、指導的役割へ参画する機会。"
+    },
+    "3": {
+      "value": "意思決定",
+      "verdict": "エに対応",
+      "reason": "エに入り、決定過程で同等の機会。"
+    },
+    "4": {
+      "value": "エンパワーメント",
+      "verdict": "アに対応",
+      "reason": "アに入り、女性女児の能力強化。外務省仮訳は能力強化と表す。"
+    },
+    "5": {
+      "value": "ケア",
+      "verdict": "どれにも入らない",
+      "reason": "この段落の4空欄には入らない。ただし目標5.4は無償のケア/家事労働を扱い、SDGs全体でケアが無関係という結論ではない。"
+    }
+  },
+  "figures": "問題幹・全5肢・否定・文字・数値・時点を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/aptitude/page_002.png"
+  ],
+  "question_id": "R06-REG-APT-02",
+  "source_file": "sources/R06/aptitude.pdf",
+  "source_page": "2",
+  "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+  "raw_text_sha256": "79cea632f6971188e014c015a5380bf5c2bc39e33d608a12a15dfe569b982333",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

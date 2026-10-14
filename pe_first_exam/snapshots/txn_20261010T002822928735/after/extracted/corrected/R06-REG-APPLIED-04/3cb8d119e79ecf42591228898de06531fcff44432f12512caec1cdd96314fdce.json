@@ -1,0 +1,46 @@
+{
+  "stem": "静電場、磁場中の運動、誘導、エネルギー流の説明で最も不適切なものを選ぶ。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "導体": "孤立導体球を帯電させた静電平衡。",
+    "運動": "磁場に垂直な初速度、磁場以外の力なし。"
+  },
+  "choices": {
+    "1": {
+      "value": "点電荷間の力は距離の二乗に反比例する。",
+      "verdict": "適切",
+      "reason": "クーロン力の逆二乗則に一致する。"
+    },
+    "2": {
+      "value": "帯電導体球の内部電場は中心からの距離の二乗に反比例する。",
+      "verdict": "不適切",
+      "reason": "静電平衡の導体内部はE=0である。逆二乗場は孤立球の外側の説明である。"
+    },
+    "3": {
+      "value": "磁場に垂直な速度を持つ荷電粒子は、速度に垂直な力で円運動する。",
+      "verdict": "適切",
+      "reason": "qv×Bは速度へ垂直で速さを変えず、向きを変える。"
+    },
+    "4": {
+      "value": "起電力の大きさは回路を貫く磁束の時間変化率に比例する。",
+      "verdict": "適切",
+      "reason": "ファラデーの法則の大きさに一致する。"
+    },
+    "5": {
+      "value": "ポインティングベクトルはエネルギー流の密度で、電場・磁場に垂直である。",
+      "verdict": "適切",
+      "reason": "S=E×Hでエネルギー流密度W/m²を表し、外積なので双方へ垂直である。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_002.png"
+  ],
+  "question_id": "R06-REG-APPLIED-04",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "809c536c611e25e1513ed31f62fa73509d4ea600c148e5a8c9c71608e837904b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

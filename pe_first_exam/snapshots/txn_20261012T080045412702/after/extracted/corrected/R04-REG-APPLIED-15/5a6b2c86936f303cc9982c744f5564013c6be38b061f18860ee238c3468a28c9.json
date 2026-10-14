@@ -1,0 +1,45 @@
+{
+  "stem": "電池の可逆起電力と反応ギブズエネルギー、平衡、標準電極電位の関係を判定する。",
+  "conditions": {
+    "確認範囲": "問題幹、数値、式、否定、全5候補を原典画像で照合した。",
+    "成立条件": "可逆・開回路の起電力を扱う。標準電極電位は共通の還元電位表で比較し、全反応の平衡と個別界面の平衡を分ける。"
+  },
+  "choices": {
+    "1": {
+      "value": "酸化電極をアノード、還元電極をカソードと呼ぶ",
+      "verdict": "適切",
+      "reason": "反応による定義である。放電電池と電気分解では正負の対応が異なっても、酸化・還元による名称は変わらない。"
+    },
+    "2": {
+      "value": "電池反応全体が化学平衡なら電位差0",
+      "verdict": "適切",
+      "reason": "全反応の \\(\\Delta_rG=0\\) から \\(E=0\\)。個別電極界面が局所平衡である開回路状態だけとは区別する。"
+    },
+    "3": {
+      "value": "電池起電力は反応ギブズエネルギーと無関係",
+      "verdict": "不適切",
+      "reason": "可逆起電力は \\(\\Delta_rG=-nFE\\) で結ばれる。nは釣合い全反応で移動する電子のmol数である。"
+    },
+    "4": {
+      "value": "標準水素電極を0とする基準",
+      "verdict": "適切",
+      "reason": "標準電極電位はこの参照電極に対する相対値として表す。単独電極の絶対電位を直接測定する意味ではない。"
+    },
+    "5": {
+      "value": "標準電池電位は両標準電極電位の差",
+      "verdict": "適切",
+      "reason": "双方を還元電位として \\(E^\\circ=E^\\circ_{\\mathrm{cathode}}-E^\\circ_{\\mathrm{anode}}\\)。反応の係数倍で電位を倍にしない。"
+    }
+  },
+  "figures": "図なし。リチウム電池の問題は本文の5下線部から選択する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/17_applied_science/page_005.png"
+  ],
+  "question_id": "R04-REG-APPLIED-15",
+  "source_file": "sources/R04/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+  "raw_text_sha256": "7b72ca035c732cbe50a9a23183f489a3ae49900eefc1d0cd9a406189df1fb347",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,48 @@
+{
+  "stem": "電流の定義、向き、磁場、単位の4空欄の組合せを選ぶ。",
+  "conditions": {
+    "A": "電流が表す何の流れか。",
+    "B": "電流方向と逆に移動するAの符号。",
+    "C": "電流方向に対する、直線電流の周囲の磁場方向。",
+    "D": "アンペアの表現。",
+    "並び": "A／B／C／D。"
+  },
+  "choices": {
+    "1": {
+      "value": "原子／負／垂直／C/s",
+      "verdict": "条件に不一致",
+      "reason": "電流は一般に電荷の流れで、原子に限定されない。"
+    },
+    "2": {
+      "value": "電子／正／垂直／C/s",
+      "verdict": "条件に不一致",
+      "reason": "電子は負であり、正の電子が逆方向へ進むという表現は合わない。"
+    },
+    "3": {
+      "value": "イオン／正／平行／C/m²",
+      "verdict": "条件に不一致",
+      "reason": "正電荷の移動方向は電流方向と同じで、磁場と単位も違う。"
+    },
+    "4": {
+      "value": "電荷／負／平行／C/m²",
+      "verdict": "条件に不一致",
+      "reason": "最初の二語は合うが、直線電流の磁場は周方向で電流へ垂直、単位はC/sである。"
+    },
+    "5": {
+      "value": "電荷／負／垂直／C/s",
+      "verdict": "条件に一致",
+      "reason": "電荷の流れ、負の移動と逆向き、垂直、C/sの4条件が全て合う。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01/17_applied_science/page_001.png"
+  ],
+  "question_id": "R01-REG-APPLIED-03",
+  "source_file": "sources/R01/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+  "raw_text_sha256": "8786a722f8b578050322aafe21fd16a867558b6bba788d17e0a075c718c639f4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

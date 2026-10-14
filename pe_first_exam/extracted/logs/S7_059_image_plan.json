@@ -1,0 +1,23 @@
+{
+  "images": [
+    "extracted/pages/H29/basic/page_018.png",
+    "extracted/pages/H29/basic/page_019.png",
+    "extracted/pages/H29/basic/page_020.png",
+    "extracted/pages/H30/basic/page_018.png",
+    "extracted/pages/H30/basic/page_019.png",
+    "extracted/pages/H30/basic/page_020.png",
+    "extracted/pages/R01/basic/page_019.png",
+    "extracted/pages/R01/basic/page_020.png",
+    "extracted/pages/R01/basic/page_021.png",
+    "extracted/pages/R01/basic/page_022.png",
+    "extracted/pages/R01_retest/basic/page_017.png",
+    "extracted/pages/R01_retest/basic/page_018.png",
+    "extracted/pages/R01_retest/basic/page_019.png",
+    "extracted/pages/R01_retest/basic/page_020.png",
+    "extracted/pages/R02/basic/page_019.png",
+    "extracted/pages/R02/basic/page_020.png",
+    "extracted/pages/R02/basic/page_021.png",
+    "extracted/pages/R02/basic/page_022.png"
+  ],
+  "actually_viewed": true
+}

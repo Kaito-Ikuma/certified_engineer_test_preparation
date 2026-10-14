@@ -1,0 +1,191 @@
+[
+  {
+    "key": "saf53_ghs_old",
+    "title": "改正労働安全衛生法（GHS関係）情報",
+    "url": "https://www.mhlw.go.jp/topics/bukyoku/roudou/ghs/index.html",
+    "reading_scope": "検索本文でJIS Z7251:2006/2010とモデルラベル・MSDSを確認。当時の全規格本文は未取得。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_ghs_notice",
+    "title": "化学物質等の表示通知促進指針：平成24年3月29日",
+    "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb8209&dataType=1&pageNo=1",
+    "reading_scope": "検索本文のH24公示・Z7253と危険有害性分類の枠組みを確認。全JIS細目の通読ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_machine2007",
+    "title": "機械の包括的な安全基準に関する指針：2007年7月31日",
+    "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb3487&dataType=1&pageNo=1",
+    "reading_scope": "公開検索本文で本質的安全・安全防護・使用上の情報・製造使用側の役割を確認。2003 ISO規格全文の確認ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_recall2010",
+    "title": "リコールハンドブック2010",
+    "url": "https://www.meti.go.jp/committee/materials2/downloadfiles/g100525a04j01.pdf",
+    "reading_scope": "当時版候補URLの直接web取得は失敗。H25全追跡時の社告省略の厳密な細条件を追加照合対象として残す。取得済み全文と扱わない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_medicine_recall",
+    "title": "医薬品等の回収に関する情報",
+    "url": "https://www.info.pmda.go.jp/kaisyuu/menu.html?guid=ON",
+    "reading_scope": "公開検索本文で2012年度以降の医薬品回収を確認。消安法対象除外と薬事制度の回収不存在を混同しない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_food_notice",
+    "title": "食品表示関連通知：2009期限・2013アレルギー通知",
+    "url": "https://www.caa.go.jp/policies/policy/food_labeling/information/notice/",
+    "reading_scope": "公式索引で2009期限・2013年9月20日アレルギー通知を確認。当時の全対象品目・各通知本文は未通読。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_food_loss2013",
+    "title": "食品ロスについて知る・学ぶ",
+    "url": "https://www.caa.go.jp/policies/policy/consumer_policy/information/food_loss/education/",
+    "reading_scope": "検索本文の2013年4月18日公表と期限見直し関連案内を確認。全時点の期限設定方法の逐条照合ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_food_expiry",
+    "title": "食品の期限表示に関する情報",
+    "url": "https://www.caa.go.jp/policies/policy/food_labeling/food_sanitation/expiration_date/",
+    "reading_scope": "期限の科学的・合理的設定と旧資料へのリンクを確認。2015以降の食品表示基準を2013設問へ遡及しない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_food_roles2007",
+    "title": "リスク管理機関と食品安全委員会の役割：2007年Q＆A",
+    "url": "https://www.fsc.go.jp/fsciis/questionAndAnswer/show/mob07001000005",
+    "reading_scope": "官庁の公開検索本文で科学的評価と管理行政の独立性を確認。各役割の全原典文言の逐語照合ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_ad2016",
+    "title": "不実証広告規制の説明：2016年資料",
+    "url": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/pdf/fair_labeling_160801_0001.pdf",
+    "reading_scope": "検索本文の客観性・表示対応・一般的専門家見解・原則15日を確認。20MB PDF直接web取得はサイズ制限で失敗、全冊通読ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_ad_overview",
+    "title": "表示規制の概要",
+    "url": "https://www.caa.go.jp/policies/policy/representation/fair_labeling/representation_regulation/",
+    "reading_scope": "公開説明で優良誤認・資料要求・不提出の効果を確認。現行7条等の番号を2014原典へそのまま置換しない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_pile2015",
+    "title": "基礎ぐい工事問題に関する対策委員会：2015年中間報告",
+    "url": "https://www.mlit.go.jp/common/001114887.pdf",
+    "reading_scope": "2015年12月25日公表ページと公式概要の責任・記録・支持層到達を確認。41頁全事案の通読ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_quality2020",
+    "title": "2020年ものづくり白書：製造業の企業変革",
+    "url": "https://www.meti.go.jp/report/whitepaper/mono/2020/honbun_html/honbun/101031_2.html",
+    "reading_scope": "検索本文で2017年以降の複数品質不正と部門間連携の課題を確認。2019の全個別事案の調査原報告を代替しない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_ipa_cia",
+    "title": "中小企業の情報セキュリティ対策ガイドライン第3.1版",
+    "url": "https://www.ipa.go.jp/security/guide/sme/ug65p90000019cbk-att/000055520.pdf",
+    "reading_scope": "公式検索本文でCIAの資産評価を確認。定義を補足する資料で、2016年の版を確認済みと主張しない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_ipa_mail",
+    "title": "組織における標的型攻撃メール訓練：2017年7月31日",
+    "url": "https://www.ipa.go.jp/security/anshin/attention/2017/mgdayori20170731.html",
+    "reading_scope": "2017公式本文の検索収録で報告から対応の体制と訓練目的を確認。送信者名だけで信用しない判断を補足。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_products2012",
+    "title": "製品安全に関する事業者ハンドブック：2012年",
+    "url": "https://www.meti.go.jp/product_safety/producer/jigyouhandbook.pdf",
+    "reading_scope": "検索本文で重大事故の5類型・30日・10日報告を確認。直接web取得403、全文通読ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_oldnine",
+    "title": "長期使用製品安全点検制度の見直し：2021年3月",
+    "url": "https://www.meti.go.jp/shingikai/shokeishin/seihin_anzen/pdf/018_06_01.pdf",
+    "reading_scope": "公式資料検索収録で従来9品目と制度の見直しを確認。2017の指定を現行指定へ改変しない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_productflow2013",
+    "title": "重大製品事故の公表までのフロー図：2013年3月6日",
+    "url": "https://www.caa.go.jp/policies/policy/consumer_safety/centralization_of_accident_information/product_accident_committee/pdf/130306_shiryo3.pdf",
+    "reading_scope": "検索本文のガス石油機器・製品起因の疑いと直ちに／原則1週間の段階を確認。法定全案件一律期限としない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_products2023",
+    "title": "重大製品事故報告制度の事業者用ハンドブック",
+    "url": "https://www.meti.go.jp/product_safety/producer/guideline/file/handbook_1.pdf",
+    "reading_scope": "検索本文の知った日を含む10日を確認。2018当時施行版の府令全文の代用ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_workplace2006",
+    "title": "危険性又は有害性等の調査等に関する指針：2006年3月10日",
+    "url": "https://www.mhlw.go.jp/web/t_doc?dataId=00tb3050&dataType=1&pageNo=1",
+    "reading_scope": "取得本文351–408の変更時・平坦歩行の明らかに軽微な例外・疲労、106の治療不要と偶然軽微の区別、271のALARPを確認。全添付図の確認ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_human12",
+    "title": "ヒューマンファクターとヒューマンエラー：教育本文",
+    "url": "https://www.tokubetu.or.jp/text_shokuan/part9/text_shokuan9-1.html",
+    "reading_scope": "本文199–223の12の発生要因を確認。9割以上の統計母集団はこの資料でも確認していない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_cartagena",
+    "title": "カルタヘナ法とは",
+    "url": "https://www.maff.go.jp/j/syouan/nouan/carta/about/",
+    "reading_scope": "公式検索本文の2003公布2004施行と第一種・第二種、生物多様性評価を確認。全生物の承認を保証するものではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_gmo_food2004",
+    "title": "遺伝子組換え食品Q＆A",
+    "url": "https://www.mhlw.go.jp/topics/idenshi/qa/qa.html",
+    "reading_scope": "旧公式検索本文で食品安全委員会の評価と審査の法的義務化を確認。2024以降の所管変更を2020へ遡及しない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_gmo_standards2000",
+    "title": "組換え食品安全性審査：規格基準告示",
+    "url": "https://www.mhlw.go.jp/topics/idenshi/anzen/kokuji.html",
+    "reading_scope": "告示検索本文の組換え微生物利用食品等の審査公表条件を確認。全例外・手続を網羅した照合ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_whistle_oldfaq",
+    "title": "民間事業者向けQ＆A：平成29年2月版",
+    "url": "https://www.caa.go.jp/policies/policy/consumer_partnerships/whisleblower_protection_system/faq/private",
+    "reading_scope": "旧制度FAQ検索収録の20日・不正目的を確認。2012/2015施行版全文の対照ではない。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_whistle_oldpublic",
+    "title": "公益通報者保護法の概要：2020年2月",
+    "url": "https://www.caa.go.jp/policies/policy/consumer_system/whisleblower_protection_system/pr/pdf/pr_200221_0001.pdf",
+    "reading_scope": "2020旧制度公式説明の労働者に公務員を含む記載を確認。改正後版の全条文は別資料と照合対象。",
+    "full_source_read": false
+  },
+  {
+    "key": "saf53_infra2021",
+    "title": "インフラ長寿命化計画第2次：2021年6月18日",
+    "url": "https://www.mlit.go.jp/report/press/content/001409546.pdf",
+    "reading_scope": "実際のPDF目次Ⅵの七項目と対象期間、本文の予算管理を確認。Ⅴの現状課題の八項目とは区別。全77頁通読ではない。",
+    "full_source_read": false
+  }
+]

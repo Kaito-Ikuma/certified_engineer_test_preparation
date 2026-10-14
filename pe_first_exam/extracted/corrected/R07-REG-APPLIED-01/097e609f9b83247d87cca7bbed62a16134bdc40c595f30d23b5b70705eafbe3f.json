@@ -1,0 +1,49 @@
+{
+  "stem": "45度で滑り始める物体を30度の斜面で上向きに動かし始めるための力を求める。",
+  "conditions": {
+    "mass_kg": 5,
+    "critical_angle_deg": 45,
+    "test_angle_deg": 30,
+    "applied_force_direction": "parallel uphill",
+    "g_in_source": 9.8,
+    "calculation_assumption_g": 9.8
+  },
+  "choices": {
+    "1": {
+      "value": "15 N",
+      "verdict": "不採用",
+      "reason": "上向き始動に必要な力は約66.9 Nであり、この値は対応しない。"
+    },
+    "2": {
+      "value": "33 N",
+      "verdict": "不採用",
+      "reason": "上向き始動に必要な力は約66.9 Nであり、この値は対応しない。"
+    },
+    "3": {
+      "value": "67 N",
+      "verdict": "採用",
+      "reason": "約66.9 Nに最も近い。下向きの重力成分と最大静止摩擦力を足す。"
+    },
+    "4": {
+      "value": "\\(13\\times10^1\\) N",
+      "verdict": "不採用",
+      "reason": "上向き始動に必要な力は約66.9 Nであり、この値は対応しない。"
+    },
+    "5": {
+      "value": "\\(20\\times10^1\\) N",
+      "verdict": "不採用",
+      "reason": "上向き始動に必要な力は約66.9 Nであり、この値は対応しない。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_001.png"
+  ],
+  "question_id": "R07-REG-APPLIED-01",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "a2e4a1b6f03644cf03c314e627bc8e84bb3d5122c70a7c050defbb3f1ddd4980",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

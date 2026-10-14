@@ -1,0 +1,46 @@
+{
+  "stem": "七つの権利から産業財産権でない三つの組合せを選ぶ。",
+  "conditions": {
+    "判断対象": "広義知的財産・産業財産権・引用・営業秘密を区別する。",
+    "原典照合": "15問の原典画像について問題幹、否定、表の列順、全5候補を確認。",
+    "法の時点": "出題時の制度を保持し、説明の取得基準日は2026-10-12とする。"
+  },
+  "choices": {
+    "1": {
+      "value": "ア・オ・カ",
+      "verdict": "不適切",
+      "reason": "アの特許とカの実用新案は含まれるので、除外対象の組合せではない。"
+    },
+    "2": {
+      "value": "ア・ウ・キ",
+      "verdict": "不適切",
+      "reason": "アの特許とウの意匠が含まれるため不適切である。"
+    },
+    "3": {
+      "value": "イ・ウ・エ",
+      "verdict": "不適切",
+      "reason": "ウの意匠とエの商標が含まれるため不適切である。"
+    },
+    "4": {
+      "value": "イ・オ・キ",
+      "verdict": "独立判断で適切",
+      "reason": "イの著作権、オの回路配置利用権、キの育成者権は全て4種類の外である。"
+    },
+    "5": {
+      "value": "オ・カ・キ",
+      "verdict": "不適切",
+      "reason": "カの実用新案を除外する点が違う。"
+    }
+  },
+  "figures": "組合せ表の全5行を画像確認。原典の長文は独自要約へ変換し、正誤と選択肢の対応を保持する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/aptitude/page_008.png"
+  ],
+  "question_id": "R07-REG-APT-08",
+  "source_file": "sources/R07/aptitude.pdf",
+  "source_page": "8",
+  "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+  "raw_text_sha256": "0c5901e1c9464ef23419fa67be25a09439a865566f4035610dc3fe27b5162d2e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "噴出物の全世界体積率と火山の個数を区別する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "噴出物の全世界体積率と火山の個数を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "島弧・陸弧",
+      "verdict": "不適切",
+      "reason": "爆発的な陸上噴火が目立つが、全世界の体積噴出率の最大域ではない。"
+    },
+    "2": {
+      "value": "大陸地溝帯",
+      "verdict": "不適切",
+      "reason": "伸張に伴う火山活動はあるが、長大な海嶺系の地殻生産に比べて小さい。"
+    },
+    "3": {
+      "value": "縁海",
+      "verdict": "不適切",
+      "reason": "活動的な背弧海盆等もあるが全縁海が活動中の火山域というわけではない。"
+    },
+    "4": {
+      "value": "中央海嶺の軸",
+      "verdict": "代表的条件で適切",
+      "reason": "全世界の長大な拡大軸で連続的に海洋地殻を作り、USGS概説でも年噴出物の約4分の3と見積もる。"
+    },
+    "5": {
+      "value": "海山・火山島",
+      "verdict": "不適切",
+      "reason": "ハワイ等は大きな火山を作るが、個別の大型火山と全世界海嶺系の総量を比較する。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_012.png"
+  ],
+  "question_id": "H28-REG-APPLIED-29",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "f66d3b0bdeb5213f69da5b8ba3f8f0d7975d69dd68962ae8d699a008e355239f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

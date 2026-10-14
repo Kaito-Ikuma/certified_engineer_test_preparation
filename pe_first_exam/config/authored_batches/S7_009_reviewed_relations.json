@@ -1,0 +1,72 @@
+{
+  "relations": [
+    {
+      "left_question_id": "H23-REG-BASIC-3-5",
+      "right_question_id": "R01-REG-BASIC-3-1",
+      "relation_type": "near_repeat",
+      "shared_concept": "発散",
+      "shared_method": "対応座標の偏微分を加算",
+      "numerical_differences": "ベクトル場と点(2π,0,0)は一致。",
+      "negation_differences": "どちらも正しい式又は計算結果を選ぶ。同一の演算方向を確認。",
+      "choice_differences": "候補2,1,0,−1,−2が逆順。正答1→5。",
+      "figure_differences": "両方に固有の図なし。式の符号と成分を全て画像確認。",
+      "temporal_differences": "時点依存の制度・規格・観測値なし。",
+      "evidence": "両問題の原典画像とS7_009の全5肢・校正JSONを直接比較。",
+      "approval_status": "verified",
+      "source_hash_left": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "source_hash_right": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "rubric_version": "1.0-review1"
+    },
+    {
+      "left_question_id": "H24-REG-BASIC-3-4",
+      "right_question_id": "H29-REG-BASIC-3-1",
+      "relation_type": "near_repeat",
+      "shared_concept": "二階中心差分",
+      "shared_method": "テイラー展開の対称差を使用",
+      "numerical_differences": "関数f→u、刻みΔx→h。左右の等間隔という条件は一致。",
+      "negation_differences": "どちらも正しい式又は計算結果を選ぶ。同一の演算方向を確認。",
+      "choice_differences": "同じ式を並べ替え正答4→5。分母が刻み一乗の誤答式も画像比較。",
+      "figure_differences": "両方に固有の図なし。式の符号と成分を全て画像確認。",
+      "temporal_differences": "時点依存の制度・規格・観測値なし。",
+      "evidence": "両問題の原典画像とS7_009の全5肢・校正JSONを直接比較。",
+      "approval_status": "verified",
+      "source_hash_left": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "source_hash_right": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "rubric_version": "1.0-review1"
+    },
+    {
+      "left_question_id": "H24-REG-BASIC-3-3",
+      "right_question_id": "R01-REG-BASIC-3-2",
+      "relation_type": "parameter_variant",
+      "shared_concept": "ヤコビアン",
+      "shared_method": "行列の向きを確認してad−bcを計算",
+      "numerical_differences": "座標ξ,η→r,s。a,b,c,dの微分割当は一致。",
+      "negation_differences": "どちらも正しい式又は計算結果を選ぶ。同一の演算方向を確認。",
+      "choice_differences": "5候補の順と一部の積の組合せが異なり、ad−bcは1→5。",
+      "figure_differences": "両方に固有の図なし。式の符号と成分を全て画像確認。",
+      "temporal_differences": "時点依存の制度・規格・観測値なし。",
+      "evidence": "両問題の原典画像とS7_009の全5肢・校正JSONを直接比較。",
+      "approval_status": "verified",
+      "source_hash_left": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "source_hash_right": "16a6a4e172686af088c67b14a13b438493f2a896fe2fd70188e7633fc1092e35",
+      "rubric_version": "1.0-review1"
+    },
+    {
+      "left_question_id": "H30-REG-BASIC-3-3",
+      "right_question_id": "R05-REG-BASIC-3-1",
+      "relation_type": "near_repeat",
+      "shared_concept": "単位下三角の逆行列",
+      "shared_method": "行列積から−a,−c,ac−bを導く",
+      "numerical_differences": "元の3×3行列の全成分とa,b,cは一致。",
+      "negation_differences": "どちらも正しい式又は計算結果を選ぶ。同一の演算方向を確認。",
+      "choice_differences": "候補の順と誤答成分が異なり、正答2→4。全行全列を比較。",
+      "figure_differences": "両方に固有の図なし。式の符号と成分を全て画像確認。",
+      "temporal_differences": "時点依存の制度・規格・観測値なし。",
+      "evidence": "両問題の原典画像とS7_009の全5肢・校正JSONを直接比較。",
+      "approval_status": "verified",
+      "source_hash_left": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "source_hash_right": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "rubric_version": "1.0-review1"
+    }
+  ]
+}

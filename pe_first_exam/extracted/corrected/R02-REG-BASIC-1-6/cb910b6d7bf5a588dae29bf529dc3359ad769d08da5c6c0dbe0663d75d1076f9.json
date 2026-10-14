@@ -1,0 +1,47 @@
+{
+  "stem": "同じ部品の並列数を増やし、直列部品を含む系で要求信頼度を初めて満たす個数を求める。",
+  "conditions": {
+    "判断方向": "全候補を比較し最も適切な語又は数値・順位を選ぶ。",
+    "原典照合": "25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。",
+    "前提": "事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "2",
+      "verdict": "不適合",
+      "reason": "導出値最小n=4と一致せず、本問の接続・条件を満たす数値ではない。"
+    },
+    "2": {
+      "value": "3",
+      "verdict": "不適合",
+      "reason": "導出値最小n=4と一致せず、本問の接続・条件を満たす数値ではない。"
+    },
+    "3": {
+      "value": "4",
+      "verdict": "適合（記載条件内）",
+      "reason": "導出値最小n=4に最も近い。"
+    },
+    "4": {
+      "value": "5",
+      "verdict": "不適合",
+      "reason": "導出値最小n=4と一致せず、本問の接続・条件を満たす数値ではない。"
+    },
+    "5": {
+      "value": "nをいくつにしても信頼度0.94以上にならない",
+      "verdict": "不適合",
+      "reason": "導出値最小n=4と一致せず、本問の接続・条件を満たす数値ではない。"
+    }
+  },
+  "figures": "回路、FTA又は候補表を全て原典で照合。元図は転載せず、接続関係と値を独自に記述。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/basic/page_006.png",
+    "extracted/pages/R02/basic/page_007.png"
+  ],
+  "question_id": "R02-REG-BASIC-1-6",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "b855f3558df2f97211c9528b1ab15653d40d7ff4126049d08f644b1cfb1afdcd",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,44 @@
+{
+  "stem": "循環資源の五段階の処理優先順位を比較する。",
+  "conditions": {
+    "方向": "最も適切な順"
+  },
+  "choices": {
+    "1": {
+      "value": "再使用→発生抑制→再生利用→熱回収→適正処分",
+      "verdict": "整合しない",
+      "reason": "発生を避ける段階が再使用より後になっている。"
+    },
+    "2": {
+      "value": "発生抑制→再使用→再生利用→適正処分→熱回収",
+      "verdict": "整合しない",
+      "reason": "熱回収可能なものを先に適正処分とする順が逆。"
+    },
+    "3": {
+      "value": "発生抑制→再使用→再生利用→熱回収→適正処分",
+      "verdict": "整合する",
+      "reason": "発生を避け、形を保ち、材料を回収し、熱利用し、残りを処分する一般順位に一致。"
+    },
+    "4": {
+      "value": "再使用→再生利用→発生抑制→熱回収→適正処分",
+      "verdict": "整合しない",
+      "reason": "発生抑制を既に発生した資源の利用より後に置く。"
+    },
+    "5": {
+      "value": "再生利用→再使用→発生抑制→適正処分→熱回収",
+      "verdict": "整合しない",
+      "reason": "発生抑制・再使用・再生利用の順と熱回収/処分の順の双方が逆。"
+    }
+  },
+  "figures": "問題幹・全5肢・否定・文字・数値・時点を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/aptitude/page_004.png"
+  ],
+  "question_id": "H24-REG-APT-05",
+  "source_file": "sources/H24/aptitude.pdf",
+  "source_page": "4",
+  "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+  "raw_text_sha256": "c4956f332bc188d48ba349d8d3310c4d7ad22da3d5428f8b8648e832ca6ee54c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

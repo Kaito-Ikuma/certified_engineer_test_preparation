@@ -1,0 +1,45 @@
+{
+  "stem": "地震探査を重力・磁気・電気・放射能探査から観測量で選ぶ。",
+  "conditions": {
+    "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+    "前提": "最も適切な説明を選ぶ。弾性波の人工震源と地下からの応答を対象とする。"
+  },
+  "choices": {
+    "1": {
+      "value": "ブーゲー異常で基盤・褶曲・断層を考察する",
+      "verdict": "不適切",
+      "reason": "密度差による重力探査であり弾性波の走時・波形を直接測る地震探査ではない。"
+    },
+    "2": {
+      "value": "磁性鉱床・堆積盆地・地殻熱構造を調べる",
+      "verdict": "不適切",
+      "reason": "磁気異常や磁化の性質を使う探査の説明である。"
+    },
+    "3": {
+      "value": "電気的構造と深度別の比抵抗を知る",
+      "verdict": "不適切",
+      "reason": "電気・電磁応答から導電率又は比抵抗を推定する説明である。"
+    },
+    "4": {
+      "value": "人工起振で弾性波を地下へ送り資源・土木調査に用いる",
+      "verdict": "適切",
+      "reason": "地震探査の震源と観測量に対応する。海上のエアガンなど場所ごとに装置は異なる。"
+    },
+    "5": {
+      "value": "U・Th・K等の放射性元素を探査する",
+      "verdict": "不適切",
+      "reason": "放射能探査の観測対象であり弾性波とは異なる。天然核種のガンマ線等を利用する。"
+    }
+  },
+  "figures": "図なし。文章又は用語の五候補を画像照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_011.png"
+  ],
+  "question_id": "R01-RET-APPLIED-32",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "7adf3ee758fd5f4989f102fc0fefade21593cacc599a4841b9cd52522f7e648f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

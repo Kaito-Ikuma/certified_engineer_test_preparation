@@ -1,0 +1,45 @@
+{
+  "stem": "Wenner式・ArchieとMT式の透磁率・誘電率を照合する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "見掛比抵抗ρa=2πaV/Iとρa=|Ex/Hy|²/(ωµ)を使い、µは透磁率とする。"
+  },
+  "choices": {
+    "1": {
+      "value": "Wennerのρa=2πaV/I",
+      "verdict": "適切",
+      "reason": "等間隔aの四電極を均質半空間の点電極として配置した幾何係数2πaである。"
+    },
+    "2": {
+      "value": "粘土の含水岩はArchie予測より低比抵抗",
+      "verdict": "条件付きで適切",
+      "reason": "粘土表面の追加導電がある場合、孔隙水のみのモデルより伝導が増える。全試料の固定差ではない。"
+    },
+    "3": {
+      "value": "MT式のµを真空の誘電率と定義する",
+      "verdict": "不適切",
+      "reason": "E/HからΩを持つインピーダンスを作りωµで割る。µはH/mの透磁率でありF/mの誘電率ではない。"
+    },
+    "4": {
+      "value": "TEMはループ又は接地両端電流源で深部探査",
+      "verdict": "適切",
+      "reason": "磁気ループ方式だけでなく接地電流源の時間領域応答を測る構成もある。"
+    },
+    "5": {
+      "value": "VLFは3〜30kHzの既存局で送信条件を制御できない",
+      "verdict": "条件付きで適切",
+      "reason": "既存通信送信局を利用する受信探査では局の位置・周波数・運用を調査者が任意には設定できない。専用人工源の別方式を含めない。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "原典は真空の誘電率をµと定義していることを画像確認。粘土の表面伝導と既存VLF局の条件を保持。",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_009.png"
+  ],
+  "question_id": "H28-REG-APPLIED-23",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "aaa4d66cfb796d6d8fc98f43b5a1ae4214a0ae465c087e8c5f2c2c7ee47d10f0",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

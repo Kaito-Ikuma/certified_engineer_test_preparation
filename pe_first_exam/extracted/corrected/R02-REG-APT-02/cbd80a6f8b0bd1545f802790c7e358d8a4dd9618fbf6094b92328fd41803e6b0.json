@@ -1,0 +1,44 @@
+{
+  "stem": "学協会の倫理規程に沿う技術者の行動について、最も不適切な記述を選ぶ。",
+  "conditions": {
+    "方向": "最も不適切な記述。"
+  },
+  "choices": {
+    "1": {
+      "value": "品質・信頼性・安全・環境への責任を持ち、公衆の安全・健康・福祉を最優先する。",
+      "verdict": "適切",
+      "reason": "専門職が負う技術的責任と公衆への優先的な配慮に沿う。"
+    },
+    "2": {
+      "value": "研究・調査の記録を厳正に扱い不正をしないが、顧客から要求があれば多少のデータ修正をしてよい。",
+      "verdict": "不適切",
+      "reason": "顧客の望む結論に合わせた変更を正当化する例外はない。客観的な誤記訂正や妥当な処理とは区別する。"
+    },
+    "3": {
+      "value": "属性による差別をせず、人権と人格を尊重する。",
+      "verdict": "適切",
+      "reason": "人格尊重と公平な取扱いに沿う。"
+    },
+    "4": {
+      "value": "不正を防ぐ公正な環境の維持も責務とし、所属組織や技術者コミュニティの環境改善へ参加する。",
+      "verdict": "適切",
+      "reason": "不正防止を個人の心掛けだけに任せず、職務・研究環境を改善する責任を認めている。"
+    },
+    "5": {
+      "value": "知識と経験を次世代の技術者・研究者の指導育成へ生かす。",
+      "verdict": "適切",
+      "reason": "人材育成と知識継承の責務に沿う。"
+    }
+  },
+  "figures": "原典画像で問題幹、条件、正誤の向き、全5肢、組合せ表の全セルを確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/aptitude/page_002.png"
+  ],
+  "question_id": "R02-REG-APT-02",
+  "source_file": "sources/R02/aptitude.pdf",
+  "source_page": "2",
+  "source_sha256": "d0ca26aaeeba6d436d8ffa77a759056e7a194c0ac9fad61de2c84392999050bb",
+  "raw_text_sha256": "1520fcf30ae7be1cb7a131de502ab6e658c46644ca5d833f774e6d29609535e8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

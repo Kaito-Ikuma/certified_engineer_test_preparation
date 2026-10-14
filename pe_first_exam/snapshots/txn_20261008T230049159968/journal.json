@@ -1,0 +1,28 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T23:00:49+09:00",
+  "paths": [
+    "generated/questions/basic/02_information_logic.tex",
+    "generated/questions/aptitude/01_engineer_act.tex",
+    "generated/questions/aptitude/02_engineering_ethics.tex",
+    "generated/questions/applied_science/physics_chemistry/01_mechanics.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/basic/02_information_logic.tex": true,
+    "generated/questions/aptitude/01_engineer_act.tex": true,
+    "generated/questions/aptitude/02_engineering_ethics.tex": true,
+    "generated/questions/applied_science/physics_chemistry/01_mechanics.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/basic/02_information_logic.tex": "7d2ccf639fc508006902f204fbbd6ac1d2ab995ee0da74cc11f4dcbd2009e770",
+    "generated/questions/aptitude/01_engineer_act.tex": "4d67ae6ffe705f432c0f54fefc91a665b768f11cfd4e1def7b8c998df95ca0c9",
+    "generated/questions/aptitude/02_engineering_ethics.tex": "cf493bf91ccda7ecb4ad21492cb934aca4ab3881e82744fe1f19ffb155582f33",
+    "generated/questions/applied_science/physics_chemistry/01_mechanics.tex": "b543eef8ee0a9213d33070132b717efc284c6924b3f8b1f9282add298303872f",
+    "generated/audit_summary.tex": "674bb0950a8f3a193f99633d37d7db2e039d10c28089122c72f7f28d619a179a",
+    "generated/frequency_tables.tex": "70fa1b467f7b7a5eb1aabf168a57c2431235fe972766934bf19229dc083b4e13"
+  }
+}

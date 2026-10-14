@@ -1,0 +1,45 @@
+{
+  "stem": "人物の業績とサイクロトロンの発明者。",
+  "conditions": {
+    "時点": "平成29年度に指定された資料・制度。",
+    "照合": "原典18画像で否定・五肢・組合せ表を確認。後年値で置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "Volta電堆",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "2": {
+      "value": "Flemingリゾチームとペニシリン",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "3": {
+      "value": "RöntgenX線",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "4": {
+      "value": "Mendel遺伝法則",
+      "verdict": "条件内で適切",
+      "reason": "条件内で適切な記述であり、不適切な記述を選ぶ対象ではない。"
+    },
+    "5": {
+      "value": "Edisonサイクロトロン",
+      "verdict": "不適切・選択対象",
+      "reason": "判定と一致する。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "Lawrenceの公式授賞説明を確認。他の四人の全原報は未取得で業績対応は一次史料追加照合を要する。",
+  "evidence": [
+    "extracted/pages/H29/basic/page_020.png"
+  ],
+  "question_id": "H29-REG-BASIC-5-6",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "20",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "cd0ec9964903694d36cb70ff347e81a013b5412f797b637249e353d4aec235da",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

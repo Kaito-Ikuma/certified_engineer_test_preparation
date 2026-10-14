@@ -1,0 +1,191 @@
+[
+  {
+    "question_id": "H23-REG-APPLIED-03",
+    "independent_answer": "2",
+    "reason": "後退音源。440×340/(340+4)=434.884 Hz、435の2。",
+    "source_images_viewed": [
+      "extracted/pages/H23/17_applied_science/page_001.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H23-REG-APPLIED-07",
+    "independent_answer": "2",
+    "reason": "焦点外は反対向き実像、内は同じ向き虚像。物体が近付くと実像は遠くへ。表2。",
+    "source_images_viewed": [
+      "extracted/pages/H23/17_applied_science/page_003.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H24-REG-APPLIED-02",
+    "independent_answer": "4",
+    "reason": "海水の音速は空気より大きく、逆の4が誤り。",
+    "source_images_viewed": [
+      "extracted/pages/H24/17_applied_science/page_001.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H24-REG-APPLIED-03",
+    "independent_answer": "1",
+    "reason": "波長は赤外・可視・紫外・γの順、1。",
+    "source_images_viewed": [
+      "extracted/pages/H24/17_applied_science/page_001.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H24-REG-APPLIED-07",
+    "independent_answer": "2",
+    "reason": "電子線回折は電子の波動性であり、光の粒子性と最も関係が薄い2。",
+    "source_images_viewed": [
+      "extracted/pages/H24/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H25-REG-APPLIED-02",
+    "independent_answer": "3",
+    "reason": "λ=2π/k、v=ω/kで3。",
+    "source_images_viewed": [
+      "extracted/pages/H25/17_applied_science/page_001.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H25-REG-APPLIED-05",
+    "independent_answer": "2",
+    "reason": "後退音源のf=434.884 Hzで2。",
+    "source_images_viewed": [
+      "extracted/pages/H25/17_applied_science/page_003.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H26-REG-APPLIED-07",
+    "independent_answer": "2",
+    "reason": "焦点外実像反転、内虚像正立、物体が近付くと実像遠ざかるため表2。",
+    "source_images_viewed": [
+      "extracted/pages/H26/17_applied_science/page_003.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H27-REG-APPLIED-03",
+    "independent_answer": "1",
+    "reason": "主極大間隔Lλ/dを増すならdを狭くする1。複スリットの暗線を全て数える場合のN依存は留意。",
+    "source_images_viewed": [
+      "extracted/pages/H27/17_applied_science/page_001.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H28-REG-APPLIED-05",
+    "independent_answer": "3",
+    "reason": "第一像b1=-10 cm、第二物体距離30 cm、像60 cmなのでf2=20 cmの3。",
+    "source_images_viewed": [
+      "extracted/pages/H28/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H29-REG-APPLIED-04",
+    "independent_answer": "5",
+    "reason": "λ=2π/k、v=ω/kで5。",
+    "source_images_viewed": [
+      "extracted/pages/H29/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "H30-REG-APPLIED-05",
+    "independent_answer": "2",
+    "reason": "初期D0=(340+20)×3/2=540 m、戻った時点D1=540-60=480 mの2。",
+    "source_images_viewed": [
+      "extracted/pages/H30/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R01-REG-APPLIED-05",
+    "independent_answer": "2",
+    "reason": "原画像の正面距離3.3 m、スピーカ間隔2 m。Δ=sqrt(3.3²+2²)-3.3。最初の極小f=340/(2Δ)≈304 Hz、310の2。次の次数は候補外。",
+    "source_images_viewed": [
+      "extracted/pages/R01/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R01-RET-APPLIED-03",
+    "independent_answer": "5",
+    "reason": "光ファイバはコアの屈折率がクラッドより高く、逆の5。",
+    "source_images_viewed": [
+      "extracted/pages/R01_retest/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R02-REG-APPLIED-05",
+    "independent_answer": "5",
+    "reason": "格子d=650 nm/sin30°=1300 nm、1 mmの本数≈769で770の5。",
+    "source_images_viewed": [
+      "extracted/pages/R02/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R02-REG-APPLIED-07",
+    "independent_answer": "4",
+    "reason": "光子E=hc/λなので高エネルギーからγ・紫外・可視・赤外、4。",
+    "source_images_viewed": [
+      "extracted/pages/R02/17_applied_science/page_003.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R03-REG-APPLIED-05",
+    "independent_answer": "3",
+    "reason": "反射明環は2t=(n+1/2)λ、t=x²/(2R)なのでx²/R=(n+1/2)λの3。ただしm番目を1から数えるならm-1/2となり該当肢なし。m=0始まりの条件は原文にない。",
+    "source_images_viewed": [
+      "extracted/pages/R03/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R04-REG-APPLIED-05",
+    "independent_answer": "2",
+    "reason": "振動方向が伝播方向と平行なら縦波。横波とする2が誤り。",
+    "source_images_viewed": [
+      "extracted/pages/R04/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R05-REG-APPLIED-05",
+    "independent_answer": "3",
+    "reason": "Δ=sqrt(4²+2.4²)-4、f=340/(2Δ)≈256 Hzで260の3。次の次数は候補外。",
+    "source_images_viewed": [
+      "extracted/pages/R05/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R06-REG-APPLIED-05",
+    "independent_answer": "5",
+    "reason": "1/15=1/10+1/b、b=-30 cm、倍率3の正立虚像、物体側30 cmの5。",
+    "source_images_viewed": [
+      "extracted/pages/R06/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  },
+  {
+    "question_id": "R07-REG-APPLIED-05",
+    "independent_answer": "4",
+    "reason": "位相一定からv=λ/T、時間位相係数ω=2π/T、4。",
+    "source_images_viewed": [
+      "extracted/pages/R07/17_applied_science/page_002.png"
+    ],
+    "official_answer_consulted": false
+  }
+]

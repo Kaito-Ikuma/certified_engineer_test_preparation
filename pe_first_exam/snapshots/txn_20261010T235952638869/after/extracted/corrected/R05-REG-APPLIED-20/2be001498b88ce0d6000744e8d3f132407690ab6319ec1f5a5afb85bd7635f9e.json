@@ -1,0 +1,44 @@
+{
+  "stem": "降水pHの地域差、対数比、炭酸平衡、中和と酸性沈着の影響を判定する。",
+  "conditions": {
+    "方向": "最も不適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "海洋上・極域の降水はpH8以上が多い。",
+      "verdict": "不適切",
+      "reason": "海水の弱アルカリ性を降水へ移せない。雨のpHはCO2と酸性/中和成分で決まり、場所名だけで一般に8以上としない。"
+    },
+    "2": {
+      "value": "pH5はpH6の10倍のH+。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "10^-5/10^-6=10。対数尺度の比較である。"
+    },
+    "3": {
+      "value": "大気CO2と平衡する水は約pH5.6。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "25℃付近の希薄水の代表的目安。CO2分圧や温度、他の溶質が変われば同じ値ではない。"
+    },
+    "4": {
+      "value": "乾燥地でNH3等中和によりpH7近くなる場合が多い。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "アンモニア・土壌由来アルカリ成分は酸を中和する。全乾燥地で必ず7の保証ではない。"
+    },
+    "5": {
+      "value": "酸性雨は森林・魚類・歴史建造物へ被害を起こす。",
+      "verdict": "適切（条件付き概数）",
+      "reason": "酸性沈着による水・土壌の変化と鉱物・金属への作用が生態系と構造物へ影響する。"
+    }
+  },
+  "figures": "問題幹・全5肢・正誤方向・高度・割合・単位を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_007.png"
+  ],
+  "question_id": "R05-REG-APPLIED-20",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "e5460471b0a38a03df96a32de5728b6c72a9e39546ae8b53b358f3924db1612e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

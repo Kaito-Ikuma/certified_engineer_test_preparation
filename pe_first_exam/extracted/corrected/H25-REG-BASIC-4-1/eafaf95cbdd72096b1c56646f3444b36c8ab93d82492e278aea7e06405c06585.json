@@ -1,0 +1,45 @@
+{
+  "stem": "発熱のアンモニア合成の平衡条件。",
+  "conditions": {
+    "式": "N2(g)+3H2(g)=2NH3(g)+92 kJ。",
+    "数量": "原料気体4molに対し生成物2mol。"
+  },
+  "choices": {
+    "1": {
+      "value": "高温・高圧",
+      "verdict": "不適切",
+      "reason": "圧力の作用は有利だが、高温は平衡を吸熱の分解側へ。"
+    },
+    "2": {
+      "value": "低温・高圧",
+      "verdict": "条件内で適切",
+      "reason": "発熱の生成側へ低温が有利。気体4→2molのため高圧も有利。"
+    },
+    "3": {
+      "value": "高温・低圧",
+      "verdict": "不適切",
+      "reason": "温度・圧力とも生成側に不利。"
+    },
+    "4": {
+      "value": "低温・低圧",
+      "verdict": "不適切",
+      "reason": "低温は有利だが低圧は気体モル数の多い原料側へ。"
+    },
+    "5": {
+      "value": "変化なし",
+      "verdict": "不適切",
+      "reason": "温度は平衡定数、圧力は気体の平衡組成へ影響する。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "温度と圧力が平衡に及ぼす方向を扱う問題。原典の「できるだけ」等を、速度・相変化・非理想性を無視した実装指示にしない。",
+  "evidence": [
+    "extracted/pages/H25/basic/page_015.png"
+  ],
+  "question_id": "H25-REG-BASIC-4-1",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "15",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "3870bd9921919c7b6369659b12a91123334b9f6b420a0f12cc22497df12640d8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

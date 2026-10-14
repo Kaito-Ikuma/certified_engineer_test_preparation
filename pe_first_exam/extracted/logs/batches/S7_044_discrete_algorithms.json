@@ -1,0 +1,29 @@
+{
+  "time": "2026-10-12T19:42:32+09:00",
+  "questions": [
+    "H23-REG-BASIC-2-1",
+    "H24-REG-BASIC-2-5",
+    "H25-REG-BASIC-2-1",
+    "H25-REG-BASIC-2-2",
+    "H26-REG-BASIC-2-1",
+    "H26-REG-BASIC-2-5",
+    "H27-REG-BASIC-2-6",
+    "H28-REG-BASIC-2-6",
+    "R04-REG-BASIC-2-6",
+    "H29-REG-BASIC-2-3",
+    "H30-REG-BASIC-2-5",
+    "H30-REG-BASIC-2-6",
+    "R01-REG-BASIC-2-2",
+    "R01-REG-BASIC-2-6",
+    "R01-RET-BASIC-2-2",
+    "R06-REG-BASIC-2-5",
+    "R03-REG-BASIC-2-5",
+    "R03-REG-BASIC-2-6",
+    "R04-REG-BASIC-2-2",
+    "R07-REG-BASIC-2-1",
+    "R07-REG-BASIC-2-6"
+  ],
+  "source_conditions_checked": 21,
+  "solution_drafts": 21,
+  "final_verification": false
+}

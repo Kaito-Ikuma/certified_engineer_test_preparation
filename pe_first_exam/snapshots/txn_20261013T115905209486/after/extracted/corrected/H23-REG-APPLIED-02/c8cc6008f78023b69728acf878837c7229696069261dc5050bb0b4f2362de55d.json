@@ -1,0 +1,45 @@
+{
+  "stem": "磁性の測定・模型と熱電輸送則の役割を区別する。",
+  "conditions": {
+    "原典確認": "S7_051の11原典画像で13問の全五肢・指数・単位・否定を照合。",
+    "対象": "磁性の測定・模型と熱電輸送則の役割を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "Wiedemann–Franz則",
+      "verdict": "不適切",
+      "reason": "金属の熱伝導率と電気伝導率の関係が中心。磁性との相対比較では最も関係が薄い。磁場の影響を受けないという意味ではない。"
+    },
+    "2": {
+      "value": "Slater–Pauling曲線",
+      "verdict": "代表的条件で適切",
+      "reason": "合金の電子数・組成と磁気モーメントの関係を表す。"
+    },
+    "3": {
+      "value": "Curie則",
+      "verdict": "代表的条件で適切",
+      "reason": "局在磁気モーメントの常磁性磁化率と温度の関係。"
+    },
+    "4": {
+      "value": "Ising模型",
+      "verdict": "代表的条件で適切",
+      "reason": "離散的なスピン変数と相互作用で磁気秩序・相転移を扱う模型。"
+    },
+    "5": {
+      "value": "中性子回折",
+      "verdict": "代表的条件で適切",
+      "reason": "中性子の磁気モーメントによる散乱で磁気秩序を調べられる。結晶構造の回折にも使われる。"
+    }
+  },
+  "figures": "図表問題ではない。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_001.png"
+  ],
+  "question_id": "H23-REG-APPLIED-02",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "6f47dc242f15eca53b849afae54d3316bb505f961cda0f1059a95f60bca6296a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

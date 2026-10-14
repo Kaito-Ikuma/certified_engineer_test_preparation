@@ -1,0 +1,45 @@
+{
+  "stem": "純物質の蒸発と沸騰を区別し、平衡と相変化熱の関係を判定する。",
+  "conditions": {
+    "確認範囲": "問題幹、条件、否定、数値、単位、全5肢を原典画像で照合した。",
+    "成立条件": "純物質の気液相変化。平衡で \\(\\Delta S_{\\mathrm{vap}}=\\Delta H_{\\mathrm{vap}}/T\\)、同じ端点間の逆変化でエンタルピー差の符号が逆になる。クラウジウス＝クラペイロン式は蒸気を理想気体とし液体体積を無視する近似。"
+  },
+  "choices": {
+    "1": {
+      "value": "蒸気圧の温度依存性はクラウジウス＝クラペイロン式で表す",
+      "verdict": "条件付きで適切",
+      "reason": "液相体積を無視し蒸気を理想気体とする近似である。より一般的な関係はクラペイロン式であり、積分時は潜熱一定などの追加仮定が必要となる。"
+    },
+    "2": {
+      "value": "蒸発エントロピーは蒸発エンタルピーと気化温度で表せる",
+      "verdict": "適切",
+      "reason": "平衡での可逆相変化に対し、エントロピー変化は潜熱を絶対温度で割った量である。"
+    },
+    "3": {
+      "value": "平衡気液の化学ポテンシャルは等しい",
+      "verdict": "適切",
+      "reason": "相間の物質移動に対する自由エネルギー変化が0である。"
+    },
+    "4": {
+      "value": "蒸発・凝縮エンタルピーは等大逆符号",
+      "verdict": "適切",
+      "reason": "同じ温度・圧力の端点を逆向きに結ぶ場合の状態関数差である。"
+    },
+    "5": {
+      "value": "沸点に満たない液体は気化しない",
+      "verdict": "不適切",
+      "reason": "蒸発は表面から起こり、沸騰の開始条件を必要としない。"
+    }
+  },
+  "figures": "図なし。全5候補は文字又は温度値である。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_004.png"
+  ],
+  "question_id": "R03-REG-APPLIED-11",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "f00786b208a3f25bc8491a8a3d80f22e4e3fe1025c55c12eb8c3b846ed64de27",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

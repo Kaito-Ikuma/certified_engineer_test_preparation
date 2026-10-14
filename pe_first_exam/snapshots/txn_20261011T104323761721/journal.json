@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-11T10:43:23+09:00",
+  "paths": [
+    "generated/questions/basic/02_information_logic.tex"
+  ],
+  "existed": {
+    "generated/questions/basic/02_information_logic.tex": true
+  },
+  "sha256": {
+    "generated/questions/basic/02_information_logic.tex": "f06dd52a9caaf19af1dcf11d6dadef05fe3411883fbfa440978dfed6141efb76"
+  }
+}

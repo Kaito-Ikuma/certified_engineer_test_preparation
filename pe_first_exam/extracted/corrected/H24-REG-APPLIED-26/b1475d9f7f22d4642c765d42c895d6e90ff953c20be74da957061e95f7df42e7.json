@@ -1,0 +1,45 @@
+{
+  "stem": "石炭化の順序・原子比・時代と形成温度を比較する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "石炭化の順序・原子比・時代と形成温度を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "日本の主な石炭はジュラ系",
+      "verdict": "不適切",
+      "reason": "日本の代表的炭田には古第三系等が多い。少数の古い産出例を日本全体の主流としない。"
+    },
+    "2": {
+      "value": "亜瀝青・瀝青・褐炭の順で石炭化",
+      "verdict": "不適切",
+      "reason": "基本の低ランクからの順は褐炭→亜瀝青炭→瀝青炭→無煙炭で、褐炭の位置が逆。"
+    },
+    "3": {
+      "value": "石炭化でH/C・O/Cが増加",
+      "verdict": "不適切",
+      "reason": "脱水・脱炭酸・炭素濃集等で一般にはこれら比は減少する方向へ進む。"
+    },
+    "4": {
+      "value": "古生代石炭は一般に200℃以下",
+      "verdict": "条件・解釈を留保",
+      "reason": "石炭化は埋没熱史による。USGSの概説には150–200℃を超えない典型の説明があるが、高ランク・熱変成では200–300℃の例もある。年代だけで上限は定めない。"
+    },
+    "5": {
+      "value": "石炭紀の主起源を針葉樹",
+      "verdict": "不適切",
+      "reason": "石炭紀の代表的な湿地森林には大型のシダ植物等が多く、針葉樹だけを代表起源としない。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "公式4を保持。200℃以下は典型的石炭化の代表説明であり、原典の古生代という年代だけの条件から全炭田の熱史を確定できない。無煙炭等の高温例も一次資料で確認。",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_008.png"
+  ],
+  "question_id": "H24-REG-APPLIED-26",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "af4dc74ab4e644cbad9e07163f59e402b7be9d054c9d225adf776af1bd406ebc",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

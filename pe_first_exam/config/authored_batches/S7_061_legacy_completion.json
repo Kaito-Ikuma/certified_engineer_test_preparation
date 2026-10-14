@@ -1,0 +1,395 @@
+{
+  "batch_id": "S7_061_legacy_completion",
+  "reference_date": "2026-10-14",
+  "questions": [
+    {
+      "question_id": "H23-REG-APT-11",
+      "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+      "stem": "社会的責任の手引きと認証規格の区別を問う。公式正答③を保持し、他の記述の解釈上の疑義を別に残す。",
+      "summary": "社会的責任の手引きと認証規格の区別を問う。公式正答③を保持し、他の記述の解釈上の疑義を別に残す。",
+      "conditions": {
+        "standard": "ISO26000",
+        "exam_reference_year": "2011"
+      },
+      "choices": {
+        "1": {
+          "value": "政府を除く全種類組織",
+          "verdict": "不適切・独立選択",
+          "reason": "ISOは全種類の組織を対象と説明する。政府の一律除外には疑義があり3だけで検討を閉じない。"
+        },
+        "2": {
+          "value": "国内の多様な関係者が検討参加",
+          "verdict": "記述と範囲を確認",
+          "reason": "官民・労働・消費者等の参加という多様な関係者の合意形成を扱う。国内参加詳細の当時資料は追加照合。"
+        },
+        "3": {
+          "value": "ISO26000は認証要求事項規格",
+          "verdict": "不適切・独立選択",
+          "reason": "ガイダンスであり認証用要求事項ではないので不適切。"
+        },
+        "4": {
+          "value": "七中核主題と原則の列挙",
+          "verdict": "記述と範囲を確認",
+          "reason": "中核主題と原則は異なる七項目。原典の原則列挙は人権の尊重を欠くため、網羅列挙と読むか例示と読むかを留保。"
+        },
+        "5": {
+          "value": "国連グローバルコンパクトとの連携",
+          "verdict": "記述と範囲を確認",
+          "reason": "連携と規格認証は別。国連の任意参加枠組みとISOガイダンスの当時協力記録は追加確認。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "1の政府除外、4の原則の列挙、2・5の当時参加・連携記録を査読。独立1|3と公式3の相違を保持。",
+      "evidence": [
+        "extracted/pages/H23/aptitude/page_012.png"
+      ],
+      "core_concept": "技術者倫理・意思決定",
+      "required_knowledge": "社会的責任、要求事項とガイダンス、認証の適用範囲",
+      "solution": "原典再確認の独立判断は1|3。公式3を維持する。3の認証規格という説明は誤り。1の政府除外もISOの全種類の組織という説明と整合しない。4は七主題と原則を分け、列挙の網羅性に留保する。以前の3の初稿は履歴保存し、公式を独立解で上書きしない。",
+      "answer_reason": "原典再確認の独立判断は1|3。公式3を維持する。3の認証規格という説明は誤り。1の政府除外もISOの全種類の組織という説明と整合しない。4は七主題と原則を分け、列挙の網羅性に留保する。以前の3の初稿は履歴保存し、公式を独立解で上書きしない。",
+      "independent_answer": "1|3",
+      "independent_solution_note": "CP2最終監査で5原典画像を再閲覧。旧初稿を保持して五肢と理論参照を補足。公式は既存DBで閲覧可能、完全盲検ではない。",
+      "learning_points": "社会的責任、要求事項とガイダンス、認証の適用範囲",
+      "theory_references": [
+        "theory:ethics:iso"
+      ],
+      "discipline_id": "apt_5",
+      "concept_id": "standards_ethics",
+      "cross_concepts": [],
+      "classification_reason": "原典再確認で旧主分類を維持し、五肢検討を補完。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "五肢・操作順・成立条件を照合した校準初稿。"
+      },
+      "citations": [
+        "iso26000",
+        "iso26000_project2010",
+        "iso_gri2014"
+      ],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "862c60b06b7c169648d5c05ec39778660fa046f1392d3d15457c33c30dfa5e2e",
+      "revision_of_batch": "",
+      "revision_reason": "初期5問の五肢別検討・理論参照・独立判断を原典再確認に基づき補完。"
+    },
+    {
+      "question_id": "H24-REG-BASIC-3-2",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "stem": "ばね接続から有効剛性を求め、3系の固有振動数を比較する。",
+      "summary": "ばね接続から有効剛性を求め、3系の固有振動数を比較する。",
+      "conditions": {
+        "spring_constants": "k,k",
+        "mass": "m",
+        "a": "two parallel springs between left wall and mass",
+        "b": "two springs in series between left wall and mass",
+        "c": "mass between two fixed walls, one spring on each side"
+      },
+      "choices": {
+        "1": {
+          "value": "a",
+          "verdict": "不適切",
+          "reason": "並列二本の剛性2kで最小ではない。"
+        },
+        "2": {
+          "value": "b",
+          "verdict": "適切・選択対象",
+          "reason": "直列二本の剛性k/2で最小。"
+        },
+        "3": {
+          "value": "c",
+          "verdict": "不適切",
+          "reason": "両側ばねの復元力は合計2kxで最小ではない。"
+        },
+        "4": {
+          "value": "aとb",
+          "verdict": "不適切",
+          "reason": "aが最小でないため組合せは不適切。"
+        },
+        "5": {
+          "value": "bとc",
+          "verdict": "不適切",
+          "reason": "cが最小でないため組合せは不適切。"
+        }
+      },
+      "figures": [
+        {
+          "page": 8,
+          "description": "a並列、b直列、c左右固定壁。原典図の接続を確認。"
+        }
+      ],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/basic/page_008.png"
+      ],
+      "core_concept": "振動・運動",
+      "required_knowledge": "ばねの直列・並列合成、微小変位の復元力、固有角振動数",
+      "solution": "aでは復元力が2kxなので有効剛性2k。bでは変形量が加算され1/keff=1/k+1/k、よってkeff=k/2。cも左右の復元力が同方向に合計され2kx。質量が同じため固有角振動数はsqrt(keff/m)で比較でき、bのみ最小。正答②。",
+      "answer_reason": "aでは復元力が2kxなので有効剛性2k。bでは変形量が加算され1/keff=1/k+1/k、よってkeff=k/2。cも左右の復元力が同方向に合計され2kx。質量が同じため固有角振動数はsqrt(keff/m)で比較でき、bのみ最小。正答②。",
+      "independent_answer": "2",
+      "independent_solution_note": "CP2最終監査で5原典画像を再閲覧。旧初稿を保持して五肢と理論参照を補足。公式は既存DBで閲覧可能、完全盲検ではない。",
+      "learning_points": "ばねの直列・並列合成、微小変位の復元力、固有角振動数",
+      "theory_references": [
+        "theory:analysis:spring"
+      ],
+      "discipline_id": "basic_3_0",
+      "concept_id": "vibration",
+      "cross_concepts": [],
+      "classification_reason": "原典再確認で旧主分類を維持し、五肢検討を補完。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "1",
+        "figure_reading": "1",
+        "difficulty": "2",
+        "difficulty_reason": "五肢・操作順・成立条件を照合した校準初稿。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "3734a0084ce88344863334f254c5adfd7338af65b92dc5fa7d780b63abc375a4",
+      "revision_of_batch": "",
+      "revision_reason": "初期5問の五肢別検討・理論参照・独立判断を原典再確認に基づき補完。"
+    },
+    {
+      "question_id": "H26-REG-BASIC-2-4",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "空スタックへ指定された8操作を実行し、最後のPOPの値を求める。",
+      "summary": "空スタックへ指定された8操作を実行し、最後のPOPの値を求める。",
+      "conditions": {
+        "initial_stack": "empty",
+        "operations": [
+          "PUSH 1",
+          "PUSH 2",
+          "PUSH 3",
+          "POP",
+          "PUSH 4",
+          "PUSH 5",
+          "POP",
+          "POP"
+        ]
+      },
+      "choices": {
+        "1": {
+          "value": "1",
+          "verdict": "不適切",
+          "reason": "最終POP後も底に残る。"
+        },
+        "2": {
+          "value": "2",
+          "verdict": "不適切",
+          "reason": "最終POP後もスタックに残る。"
+        },
+        "3": {
+          "value": "3",
+          "verdict": "不適切",
+          "reason": "先のPOPですでに取り出される。"
+        },
+        "4": {
+          "value": "4",
+          "verdict": "適切・選択対象",
+          "reason": "5をPOPした後の頂上4を最後にPOPする。"
+        },
+        "5": {
+          "value": "5",
+          "verdict": "不適切",
+          "reason": "最後より一つ前のPOPで取り出される。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/basic/page_007.png"
+      ],
+      "core_concept": "データ構造・形式言語",
+      "required_knowledge": "LIFO、PUSH/POP、状態追跡",
+      "solution": "スタックを底から上へ記録する。操作後は [1]→[1,2]→[1,2,3]→[1,2]→[1,2,4]→[1,2,4,5]→[1,2,4]→[1,2]。最後のPOPで取り出す値は4なので選択肢④。",
+      "answer_reason": "スタックを底から上へ記録する。操作後は [1]→[1,2]→[1,2,3]→[1,2]→[1,2,4]→[1,2,4,5]→[1,2,4]→[1,2]。最後のPOPで取り出す値は4なので選択肢④。",
+      "independent_answer": "4",
+      "independent_solution_note": "CP2最終監査で5原典画像を再閲覧。旧初稿を保持して五肢と理論参照を補足。公式は既存DBで閲覧可能、完全盲検ではない。",
+      "learning_points": "LIFO、PUSH/POP、状態追跡",
+      "theory_references": [
+        "theory:discrete:stack"
+      ],
+      "discipline_id": "basic_2_0",
+      "concept_id": "stack",
+      "cross_concepts": [],
+      "classification_reason": "原典再確認で旧主分類を維持し、五肢検討を補完。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "五肢・操作順・成立条件を照合した校準初稿。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "021f65eb4497ec0ef58ce979e53dc3b33bb31972d183586214be13503d9e2e22",
+      "revision_of_batch": "",
+      "revision_reason": "初期5問の五肢別検討・理論参照・独立判断を原典再確認に基づき補完。"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-16",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "塩化物、酸性下の硫化物、水酸化物を順に除いたろ液から、最後に硫化物として分離する陽イオンを特定する。",
+      "summary": "塩化物、酸性下の硫化物、水酸化物を順に除いたろ液から、最後に硫化物として分離する陽イオンを特定する。",
+      "conditions": {
+        "I": "塩酸を滴下し沈殿をろ別",
+        "II": "Iのろ液中でチオアセトアミドCH3CSNH2の加水分解を行い、生成した沈殿をろ別",
+        "III": "IIのろ液中へアンモニア水を滴下し、生成した沈殿をろ別",
+        "IV": "IIIのろ液中へ硫化水素を滴下し、生成した沈殿をろ別"
+      },
+      "choices": {
+        "1": {
+          "value": "Na+",
+          "verdict": "不適切",
+          "reason": "操作I〜IVでの難溶沈殿として分離されず水溶液に残る。"
+        },
+        "2": {
+          "value": "Ag+",
+          "verdict": "不適切",
+          "reason": "Iの塩酸でAgClとして先に除く。"
+        },
+        "3": {
+          "value": "Cu2+",
+          "verdict": "不適切",
+          "reason": "IIの酸性硫化物の段階で先に除く。"
+        },
+        "4": {
+          "value": "Zn2+",
+          "verdict": "適切・選択対象",
+          "reason": "III後のアンモニア性ろ液にH2Sを加えるIVでZnSとして分離。"
+        },
+        "5": {
+          "value": "Fe3+",
+          "verdict": "不適切",
+          "reason": "IIIで水酸化物として先に除く。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "酸性度・濃度・錯形成の条件は出題の操作列に依存し一般条件へ無限定に拡張しない。",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_007.png"
+      ],
+      "core_concept": "分析化学",
+      "required_knowledge": "系統的定性分析、溶解度積、硫化水素の酸解離、pHと沈殿選択性",
+      "solution": "手順IでAg+をAgClとして除く。手順IIの酸性条件でCu2+が難溶性の硫化物となる。手順IIIでFe3+を水酸化物として除く。アンモニア性のろ液に硫化水素を加える手順IVではZn2+をZnSとして分離するので④。Na+はこれらの分離後も水溶液に残る。これは出題された古典的系統分析の条件に基づく説明で、実験条件一般への無条件な適用はしない。",
+      "answer_reason": "手順IでAg+をAgClとして除く。手順IIの酸性条件でCu2+が難溶性の硫化物となる。手順IIIでFe3+を水酸化物として除く。アンモニア性のろ液に硫化水素を加える手順IVではZn2+をZnSとして分離するので④。Na+はこれらの分離後も水溶液に残る。これは出題された古典的系統分析の条件に基づく説明で、実験条件一般への無条件な適用はしない。",
+      "independent_answer": "4",
+      "independent_solution_note": "CP2最終監査で5原典画像を再閲覧。旧初稿を保持して五肢と理論参照を補足。公式は既存DBで閲覧可能、完全盲検ではない。",
+      "learning_points": "系統的定性分析、溶解度積、硫化水素の酸解離、pHと沈殿選択性",
+      "theory_references": [
+        "theory:analytical:separation"
+      ],
+      "discipline_id": "chem_analysis",
+      "concept_id": "qualitative_analysis",
+      "cross_concepts": [],
+      "classification_reason": "原典再確認で旧主分類を維持し、五肢検討を補完。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "五肢・操作順・成立条件を照合した校準初稿。"
+      },
+      "citations": [
+        "qualitative_stanford"
+      ],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "89b398b9447eaeae9fa189ab5b238e2aa63abd1dda0e28076bbcb80d082545b1",
+      "revision_of_batch": "",
+      "revision_reason": "初期5問の五肢別検討・理論参照・独立判断を原典再確認に基づき補完。"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-08",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "stem": "金属の強化機構を識別し、焼入れに関する変態名の誤りを見抜く。",
+      "summary": "金属の強化機構を識別し、焼入れに関する変態名の誤りを見抜く。",
+      "conditions": {
+        "原典": "指定頁を実画像で再確認。"
+      },
+      "choices": {
+        "1": {
+          "value": "加工硬化",
+          "verdict": "記述と範囲を確認",
+          "reason": "塑性変形に伴う転位等により変形抵抗が増す。"
+        },
+        "2": {
+          "value": "固溶強化",
+          "verdict": "記述と範囲を確認",
+          "reason": "溶質原子が格子・転位へ影響し強化する。"
+        },
+        "3": {
+          "value": "析出強化",
+          "verdict": "記述と範囲を確認",
+          "reason": "固溶限の温度依存を利用した析出が転位運動を妨げる。"
+        },
+        "4": {
+          "value": "結晶粒微細化",
+          "verdict": "記述と範囲を確認",
+          "reason": "粒界が転位の移動を妨げ通常降伏強さが増す。極端な粒径や温度まで無限定にしない。"
+        },
+        "5": {
+          "value": "焼入れはバウシンガー変態",
+          "verdict": "不適切・独立選択",
+          "reason": "焼入れ硬化はマルテンサイト変態。Bauschingerは逆方向の降伏挙動に関する効果で焼入れ変態名ではない。"
+        }
+      },
+      "figures": [],
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R02/17_applied_science/page_003.png"
+      ],
+      "core_concept": "材料物性",
+      "required_knowledge": "転位、加工硬化、固溶・析出・粒界強化、マルテンサイト変態",
+      "solution": "鋼の焼入れ硬化で中心となるのはマルテンサイト変態である。⑤の「バウシンガー変態」は原典の誤答として保存し、解説中で正しい用語と区別する。したがって公式正答は⑤。",
+      "answer_reason": "鋼の焼入れ硬化で中心となるのはマルテンサイト変態である。⑤の「バウシンガー変態」は原典の誤答として保存し、解説中で正しい用語と区別する。したがって公式正答は⑤。",
+      "independent_answer": "5",
+      "independent_solution_note": "CP2最終監査で5原典画像を再閲覧。旧初稿を保持して五肢と理論参照を補足。公式は既存DBで閲覧可能、完全盲検ではない。",
+      "learning_points": "転位、加工硬化、固溶・析出・粒界強化、マルテンサイト変態",
+      "theory_references": [
+        "theory:material:strengthening"
+      ],
+      "discipline_id": "physics_materials",
+      "concept_id": "strengthening",
+      "cross_concepts": [],
+      "classification_reason": "原典再確認で旧主分類を維持し、五肢検討を補完。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "2",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "五肢・操作順・成立条件を照合した校準初稿。"
+      },
+      "citations": [],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "602a665698d868ce83dac482bab55bfc089ffab808bb83dc1ab09b25d230f9ff",
+      "revision_of_batch": "",
+      "revision_reason": "初期5問の五肢別検討・理論参照・独立判断を原典再確認に基づき補完。"
+    }
+  ]
+}

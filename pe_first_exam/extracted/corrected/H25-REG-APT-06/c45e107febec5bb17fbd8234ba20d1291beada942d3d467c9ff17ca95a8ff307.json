@@ -1,0 +1,46 @@
+{
+  "stem": "ISO26000の適用対象、持続可能な発展、利害関係者、認証用途を4記述で判定する。",
+  "conditions": {
+    "方向": "ア〜エの正誤組合せ。",
+    "時点": "2010年発行のISO26000、平成25年度。",
+    "対象": "組織の社会的責任。個人の責任一般を否定する設問ではない。"
+  },
+  "choices": {
+    "1": {
+      "value": "ア○・イ○・ウ×・エ×",
+      "verdict": "選択対象ではない",
+      "reason": "イ・ウ・エは合うが、アは組織と公人個人を並列の適用対象とする点が誤り。"
+    },
+    "2": {
+      "value": "ア○・イ×・ウ×・エ○",
+      "verdict": "選択対象ではない",
+      "reason": "ア・イ・エの判断が誤り。発展への貢献は目的で、認証用ではない。"
+    },
+    "3": {
+      "value": "ア×・イ×・ウ○・エ○",
+      "verdict": "選択対象ではない",
+      "reason": "ア以外が誤り。株主のみへの限定、外部認証用という位置付けはいずれも違う。"
+    },
+    "4": {
+      "value": "ア×・イ○・ウ×・エ○",
+      "verdict": "選択対象ではない",
+      "reason": "ア・イ・ウは合うが、エの認証用という肯定が誤り。"
+    },
+    "5": {
+      "value": "ア×・イ○・ウ×・エ×",
+      "verdict": "選択対象",
+      "reason": "対象は組織、目的は持続可能な発展への貢献、株主限定でも認証用でもないという判断が全て一致。"
+    }
+  },
+  "figures": "原典の設問・全5肢・否定・時点を実画像確認。組合せ候補表の全セルを照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/aptitude/page_007.png"
+  ],
+  "question_id": "H25-REG-APT-06",
+  "source_file": "sources/H25/aptitude.pdf",
+  "source_page": "7",
+  "source_sha256": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+  "raw_text_sha256": "eda64012d788554edcec90cb51859ff4debd3c9fe7029e6c8a685771fe7e5ff4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

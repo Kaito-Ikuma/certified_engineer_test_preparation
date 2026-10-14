@@ -1,0 +1,47 @@
+{
+  "stem": "ヘスの法則で五つの反応の発熱・吸熱を判定。",
+  "conditions": {
+    "温度圧力": "25°C、1気圧。",
+    "CO": "黒鉛+1/2 O2→CO+111 kJ。",
+    "CO2": "黒鉛+O2→CO2+394 kJ。",
+    "水": "H2+1/2 O2→H2O(液)+286 kJ。"
+  },
+  "choices": {
+    "1": {
+      "value": "CO+H2→C+H2O(液)",
+      "verdict": "条件内で適切",
+      "reason": "ΔH=-286-(-111)=-175 kJ、発熱。"
+    },
+    "2": {
+      "value": "CO+H2O(液)→H2+CO2",
+      "verdict": "不適切",
+      "reason": "ΔH=-394-(-111-286)=+3 kJ、吸熱。水は液体。"
+    },
+    "3": {
+      "value": "CO2→CO+1/2 O2",
+      "verdict": "不適切",
+      "reason": "ΔH=-111-(-394)=+283 kJ、吸熱。"
+    },
+    "4": {
+      "value": "C+CO2→2CO",
+      "verdict": "不適切",
+      "reason": "ΔH=2(-111)-(-394)=+172 kJ、吸熱。"
+    },
+    "5": {
+      "value": "C+2H2O(液)→2H2+CO2",
+      "verdict": "不適切",
+      "reason": "ΔH=-394-2(-286)=+178 kJ、吸熱。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/basic/page_012.png"
+  ],
+  "question_id": "H24-REG-BASIC-4-1",
+  "source_file": "sources/H24/basic.pdf",
+  "source_page": "12",
+  "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+  "raw_text_sha256": "f3727b6dd95324ba0c8436e2c9cdd2c5e6bb769f173df3eb0b5ad1c7b89d244e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

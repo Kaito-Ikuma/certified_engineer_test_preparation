@@ -1,0 +1,16 @@
+{
+  "status": "committed",
+  "time": "2026-10-12T00:08:10+09:00",
+  "paths": [
+    "data/questions.csv",
+    "data/question_relations.csv"
+  ],
+  "existed": {
+    "data/questions.csv": true,
+    "data/question_relations.csv": true
+  },
+  "sha256": {
+    "data/questions.csv": "64bdfa4e2b804e31b81e92baabb899275d8b9b0e40f20bc12818da15188e294a",
+    "data/question_relations.csv": "a5b1cc0ea3eb38252574fd487f66b1f573612e81c8d700af401acad5e6e08d6b"
+  }
+}

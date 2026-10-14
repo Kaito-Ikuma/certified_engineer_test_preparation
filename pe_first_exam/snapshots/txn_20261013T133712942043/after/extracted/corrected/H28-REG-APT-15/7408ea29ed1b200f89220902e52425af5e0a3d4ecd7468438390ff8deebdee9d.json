@@ -1,0 +1,46 @@
+{
+  "stem": "専門家の特異な見解だけで効果の実証を免れない。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+    "時点": "平成28年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "客観性と表示との対応の2要件",
+      "verdict": "条件内で適切",
+      "reason": "資料自体が客観的であることと、示した効果・条件が広告主張へ対応することは別の要件。"
+    },
+    "2": {
+      "value": "試験調査又は専門家見解・学術文献",
+      "verdict": "条件内で適切",
+      "reason": "いずれも表示を裏付ける客観性等の要件内で使う。名称が論文なら自動的に通るわけではない。"
+    },
+    "3": {
+      "value": "特異な見解・新分野なら試験実証不要",
+      "verdict": "不適切",
+      "reason": "一般に認められていない見解をそのまま客観的実証とみなす飛躍。一般的根拠がない場合は妥当な試験・調査等で実証を要する。"
+    },
+    "4": {
+      "value": "経験則も専門的文献等で確認",
+      "verdict": "条件内で適切",
+      "reason": "長期の言い伝えだけでは表示の客観的根拠としない。存在を確認する専門的な裏付けが必要。"
+    },
+    "5": {
+      "value": "実証内容と表示効果の適切な対応",
+      "verdict": "条件内で適切",
+      "reason": "別成分や別条件の研究があるだけでは当該製品の効果を証明しない。対象・条件・結果を比較する。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "2016公式資料の検索本文で要件を確認。PDF全冊20MBの直接web取得はサイズ制限で未通読。特異見解の細項目を全条文確認済みにしない。",
+  "evidence": [
+    "extracted/pages/H28/aptitude/page_015.png",
+    "extracted/pages/H28/aptitude/page_016.png"
+  ],
+  "question_id": "H28-REG-APT-15",
+  "source_file": "sources/H28/aptitude.pdf",
+  "source_page": "15",
+  "source_sha256": "2960d5ff16afaa394186362bb969ee236511012ee2819db45847199af58b073c",
+  "raw_text_sha256": "d51d85df56177320c6980a74dc341b5a8e8a60085ae0ce9ef38c26afecaafdbc",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

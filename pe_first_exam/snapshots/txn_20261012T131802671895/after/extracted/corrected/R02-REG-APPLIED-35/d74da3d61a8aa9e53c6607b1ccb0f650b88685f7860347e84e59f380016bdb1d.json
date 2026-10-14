@@ -1,0 +1,45 @@
+{
+  "stem": "弾性波の伝播原理とポテンシャル場の等価層を区別する。",
+  "conditions": {
+    "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+    "前提": "線形で相反的な媒体における波動の重ね合わせ・波面構成・伝播経路を対象とする。"
+  },
+  "choices": {
+    "1": {
+      "value": "フェルマの原理",
+      "verdict": "適切",
+      "reason": "波線経路に対する走時の停留条件を述べる。あらゆる経路が絶対的最短時間になるという一般化は避ける。"
+    },
+    "2": {
+      "value": "等価層の原理",
+      "verdict": "不適切",
+      "reason": "重力・磁気の場を等価な密度又は双極子の層で表す考え方である。弾性波の波面や伝播経路を定める基本則とは異なる。"
+    },
+    "3": {
+      "value": "相反原理",
+      "verdict": "適切",
+      "reason": "相反性が成立する線形媒体では震源と受振点を交換した応答が対応する。媒体や成分の条件を保つ必要がある。"
+    },
+    "4": {
+      "value": "ホイヘンスの原理",
+      "verdict": "適切",
+      "reason": "波面上の点からの二次波の構成で次の波面を考える。地震波の伝播・画像化の理解に関係する。"
+    },
+    "5": {
+      "value": "重ね合わせの原理",
+      "verdict": "条件付きで適切",
+      "reason": "線形の波動方程式では解の線形結合も解となる。破壊を伴う大きな非線形変形へ無条件に適用しない。"
+    }
+  },
+  "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+  "ambiguity": "相反性と重ね合わせは媒体・線形性の条件付きである。等価層は異なる分野で使われる語でもあるため、ポテンシャル場の基本的用法と波動伝播の原理を区別する。",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_012.png"
+  ],
+  "question_id": "R02-REG-APPLIED-35",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "9e413bad7a0b589a8dd773c1dd9bd7a065d5ee8d9b094110d23be108aaaca2cf",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

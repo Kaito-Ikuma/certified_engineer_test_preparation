@@ -1,0 +1,48 @@
+{
+  "stem": "長さ2.0 mのひもにつけた質量5.0 kgのおもりの、小角単振り子の周期を求める。",
+  "conditions": {
+    "length_m": 2.0,
+    "mass_kg": 5.0,
+    "g_m_s2": 9.8,
+    "angle": "small",
+    "bob_size": "negligible"
+  },
+  "choices": {
+    "1": {
+      "value": "2.8 s",
+      "verdict": "採用",
+      "reason": "導出した周期に最も近い。角周波数と周期を区別して2πを含める。"
+    },
+    "2": {
+      "value": "3.3 s",
+      "verdict": "不採用",
+      "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+    },
+    "3": {
+      "value": "4.0 s",
+      "verdict": "不採用",
+      "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+    },
+    "4": {
+      "value": "6.6 s",
+      "verdict": "不採用",
+      "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+    },
+    "5": {
+      "value": "12.2 s",
+      "verdict": "不採用",
+      "reason": "指定条件を振動周期式へ代入した値と一致しない。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_001.png"
+  ],
+  "question_id": "R05-REG-APPLIED-02",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "2fca4ce0716901c94e3db306947782747412c79cc965d5f9376c5c1f57fe829e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

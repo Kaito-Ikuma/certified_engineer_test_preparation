@@ -1,0 +1,49 @@
+{
+  "stem": "知的財産のうち創作物に関する5例の正誤の組を選ぶ。",
+  "conditions": {
+    "ア": "発明（特許法）。",
+    "イ": "考案（実用新案法）。",
+    "ウ": "意匠（意匠法）。",
+    "エ": "著作物（著作権法）。",
+    "オ": "営業秘密（不正競争防止法）。",
+    "並び": "ア／イ／ウ／エ／オ。「産業財産権」の数ではなく創作物の区分。"
+  },
+  "choices": {
+    "1": {
+      "value": "正／誤／正／正／正",
+      "verdict": "設問条件に不一致",
+      "reason": "イの正誤が違う。各記述の定義・条件を先に判定してから表に対応させる。"
+    },
+    "2": {
+      "value": "正／正／誤／正／正",
+      "verdict": "設問条件に不一致",
+      "reason": "ウの正誤が違う。各記述の定義・条件を先に判定してから表に対応させる。"
+    },
+    "3": {
+      "value": "正／正／正／誤／正",
+      "verdict": "設問条件に不一致",
+      "reason": "エの正誤が違う。各記述の定義・条件を先に判定してから表に対応させる。"
+    },
+    "4": {
+      "value": "正／正／正／正／誤",
+      "verdict": "設問条件に不一致",
+      "reason": "オの正誤が違う。各記述の定義・条件を先に判定してから表に対応させる。"
+    },
+    "5": {
+      "value": "正／正／正／正／正",
+      "verdict": "設問条件に一致",
+      "reason": "全項の判断に一致する。"
+    }
+  },
+  "figures": "原典画像で問題幹・条件・否定・全5肢と全組合せセルを確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R04/aptitude/page_008.png"
+  ],
+  "question_id": "R04-REG-APT-09",
+  "source_file": "sources/R04/aptitude.pdf",
+  "source_page": "8",
+  "source_sha256": "31ad55d14368b8e1d8333241b5e862b185c566924cf207e7027ee1a9cc8ea93f",
+  "raw_text_sha256": "d35f37b8405d9d9abb7e31e798f9992728711c25df978eb3200a8b3668b3ab9d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

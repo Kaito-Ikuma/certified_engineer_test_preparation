@@ -1,0 +1,47 @@
+{
+  "stem": "M/M/1の系内時間と待ち時間を分ける。",
+  "conditions": {
+    "到着": "36人/時間。",
+    "処理": "平均50秒/人、指数分布。",
+    "窓口": "1、Poisson到着。",
+    "問": "並んでから処理終了まで。"
+  },
+  "choices": {
+    "1": {
+      "value": "0",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "2": {
+      "value": "25",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "3": {
+      "value": "50",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "4": {
+      "value": "75",
+      "verdict": "不適切",
+      "reason": "解法の条件と結果を照合する。 計算結果に一致しない。"
+    },
+    "5": {
+      "value": "100",
+      "verdict": "条件内で適切",
+      "reason": "解法の条件と結果を照合する。 計算結果と一致。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/basic/page_003.png"
+  ],
+  "question_id": "R07-REG-BASIC-1-5",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "3",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "058d7d0b16bea4ec1f410ed1813f9ab4fd32f4cb56598093876b936751c69fe5",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

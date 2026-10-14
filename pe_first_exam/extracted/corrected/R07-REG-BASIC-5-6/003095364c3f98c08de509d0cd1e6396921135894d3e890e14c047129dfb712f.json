@@ -1,0 +1,45 @@
+{
+  "stem": "第2〜6期の社会・ELSI・復興・Society・総合知。",
+  "conditions": {
+    "原典": "全五肢と否定方向・組合せ表を画像確認。",
+    "資料時点": "令和7年度の指定資料・統計年を保持し、後年値に置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "イアウオエ",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ イアオエウ と異なる。"
+    },
+    "2": {
+      "value": "アウエオイ",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ イアオエウ と異なる。"
+    },
+    "3": {
+      "value": "アイオウエ",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ イアオエウ と異なる。"
+    },
+    "4": {
+      "value": "イアオエウ",
+      "verdict": "適切・選択対象",
+      "reason": "独立に求めた組合せ イアオエウ と一致する。"
+    },
+    "5": {
+      "value": "アイオエウ",
+      "verdict": "不適切",
+      "reason": "独立に求めた組合せ イアオエウ と異なる。"
+    }
+  },
+  "figures": "図の数値又は組合せ表を独自要約。原典画像は確認用のみ。",
+  "ambiguity": "2・3期主要句の一次索引を確認。4〜6期原本文の該当段落と2020改正・施行日を追加査読。",
+  "evidence": [
+    "extracted/pages/R07/basic/page_019.png"
+  ],
+  "question_id": "R07-REG-BASIC-5-6",
+  "source_file": "sources/R07/basic.pdf",
+  "source_page": "19",
+  "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+  "raw_text_sha256": "06a33d38319b721e03dcb851561d32f036da010c7e613786ce1c3eed7b640382",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

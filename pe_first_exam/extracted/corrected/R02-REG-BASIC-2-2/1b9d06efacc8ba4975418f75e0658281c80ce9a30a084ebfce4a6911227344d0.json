@@ -1,0 +1,45 @@
+{
+  "stem": "3入力の真理値表を満たす論理式を選ぶ。",
+  "conditions": {
+    "入力順": "000,001,010,011,100,101,110,111",
+    "出力": "0,1,0,0,0,1,1,1"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(xy+z\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "011でz=1により1となるが、指定表は0である。"
+    },
+    "2": {
+      "value": "\\(\\overline x y+\\overline y\\overline z\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "000で否定yかつ否定zが1になり、指定表の0と異なる。"
+    },
+    "3": {
+      "value": "\\(xy+\\overline y z\\)",
+      "verdict": "条件に一致する候補",
+      "reason": "y=0ではz、y=1ではxを返す。全8行の指定表を再現する。"
+    },
+    "4": {
+      "value": "\\(xy+\\overline{xy}\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "命題又はその否定なので常に1であり、000等の0を再現しない。"
+    },
+    "5": {
+      "value": "\\(xy+\\overline x z\\)",
+      "verdict": "条件に一致しない候補",
+      "reason": "011で否定xかつzが1となるほか、101で0となり、指定表と一致しない。"
+    }
+  },
+  "figures": "論理否定の上線の範囲、表の全セル、分岐矢印・空欄位置、5肢を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/basic/page_007.png"
+  ],
+  "question_id": "R02-REG-BASIC-2-2",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "b466e665f2b9200417220f5edc34873a9096a5490a5333a137fcfc33c37dad37",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

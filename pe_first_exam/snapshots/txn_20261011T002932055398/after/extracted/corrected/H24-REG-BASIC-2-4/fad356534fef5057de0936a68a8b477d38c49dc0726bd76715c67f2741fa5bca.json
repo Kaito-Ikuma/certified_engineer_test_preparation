@@ -1,0 +1,47 @@
+{
+  "stem": "2バイト文字の新聞を半分に圧縮したとき、指定容量へ格納できる頁数を求める。",
+  "conditions": {
+    "文字数/頁": "10240",
+    "文字幅": "2バイト",
+    "圧縮後/前": "0.5",
+    "容量": "800Mバイト、M=1024²"
+  },
+  "choices": {
+    "1": {
+      "value": "約1万頁",
+      "verdict": "不適切",
+      "reason": "約81920頁に対して約8分の1であり、ビットとバイトの8倍を誤って適用した規模である。"
+    },
+    "2": {
+      "value": "約4万頁",
+      "verdict": "不適切",
+      "reason": "圧縮後は1頁10240バイト。圧縮を無視すると40960頁だが指定条件に反する。"
+    },
+    "3": {
+      "value": "約8万頁",
+      "verdict": "適切",
+      "reason": "800×1024²/10240=81920頁で、この候補が最近。"
+    },
+    "4": {
+      "value": "約16万頁",
+      "verdict": "不適切",
+      "reason": "81920頁の約2倍で、文字の2バイトと50%圧縮を二重に消している。"
+    },
+    "5": {
+      "value": "約32万頁",
+      "verdict": "不適切",
+      "reason": "81920頁の約4倍で、与えられた容量/1頁容量の比とは合わない。"
+    }
+  },
+  "figures": "問題幹・全5肢・数値・単位・否定を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/basic/page_006.png"
+  ],
+  "question_id": "H24-REG-BASIC-2-4",
+  "source_file": "sources/H24/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+  "raw_text_sha256": "f40096063b490c7b9eba6863e8d9e23bee41d33ed2b369549f40dfbabcd8a5ff",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

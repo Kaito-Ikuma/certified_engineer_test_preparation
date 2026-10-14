@@ -1,0 +1,45 @@
+{
+  "stem": "BCMの改善と非常時の法令遵守。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+    "時点": "令和5年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "OOOO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OXOO と異なる。"
+    },
+    "2": {
+      "value": "XOOO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OXOO と異なる。"
+    },
+    "3": {
+      "value": "OXOO",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "OOXO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OXOO と異なる。"
+    },
+    "5": {
+      "value": "OOOX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OXOO と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/aptitude/page_010.png"
+  ],
+  "question_id": "R05-REG-APT-10",
+  "source_file": "sources/R05/aptitude.pdf",
+  "source_page": "10",
+  "source_sha256": "3dee8906ad8be46592986fef01028424243f7e515af04979667524eed1f0a915",
+  "raw_text_sha256": "adfe992c5075f5c62a0eba6151b88ec3024e592a4f7e637b358370a5118ab0bf",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

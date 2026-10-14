@@ -1,0 +1,1827 @@
+\section{待ち行列}
+
+\subsection{令和元年度 問3-4}
+\label{q:r01-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\section{ベクトル・微分演算}
+
+\subsection{平成23年度 問3-5}
+\label{q:h23-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 三次元ベクトル場の指定点における発散を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} \(V=(\sin(x+y+z),\cos(x+y+z),z)\)\par
+
+\noindent\textbf{点：} \((2\pi,0,0)\)\par
+
+\noindent\textbf{定義：} \(\operatorname{div}V=\partial_xV_x+\partial_yV_y+\partial_zV_z\)\par
+
+\paragraph{問われる核心} 発散は対応成分の偏微分の和
+
+\paragraph{必要知識} 三角関数の偏微分、直交座標、発散のスカラー性。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(\operatorname{div}V=\cos(x+y+z)-\sin(x+y+z)+1\)なので指定点では1−0+1=\allowbreak{}2である。1を選ぶ。先に座標を代入して定数を微分すると空間変化の情報が失われる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致} 2。成分ごとの対応する座標で微分した和2と一致する。\par
+
+\noindent\textbf{2：条件に不一致} 1。発散はcos(2π)−sin(2π)+1=\allowbreak{}2であり、この値とは一致しない。\par
+
+\noindent\textbf{3：条件に不一致} 0。発散はcos(2π)−sin(2π)+1=\allowbreak{}2であり、この値とは一致しない。\par
+
+\noindent\textbf{4：条件に不一致} −1。発散はcos(2π)−sin(2π)+1=\allowbreak{}2であり、この値とは一致しない。\par
+
+\noindent\textbf{5：条件に不一致} −2。発散はcos(2π)−sin(2π)+1=\allowbreak{}2であり、この値とは一致しない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、発散は対応成分の偏微分の和の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:divcurl]{第\ref*{theory:analysis:divcurl}節}
+
+\par 参考：\cite{mit_vectorcalc2005}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成25年度 問3-6}
+\label{q:h25-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 二次元ベクトル場の指定点における回転の面外成分を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} \(V=(x+y,x^2)\)\par
+
+\noindent\textbf{点：} (2,3)\par
+
+\noindent\textbf{定義：} \(\operatorname{rot}V=\partial_xV_y-\partial_yV_x\)\par
+
+\paragraph{問われる核心} 二次元回転の向きとスカラー成分
+
+\paragraph{必要知識} 偏微分、面外成分、差の順序。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(\partial_xV_y=2x,\partial_yV_x=1\)なのでrot=\allowbreak{}2x−1、点(2,3)では3である。4を選ぶ。二次元のここでのrotは三次元回転ベクトルのz成分を表す。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((1,2x)\)。原典のrotはスカラーであり、成分微分を並べた二成分の値ではない。\par
+
+\noindent\textbf{2：条件に不一致} \((1,4)\)。微分の結果を並べただけで差を取っていない。\par
+
+\noindent\textbf{3：条件に不一致} \((1,6)\)。第二成分をyで評価したような値であり、差を取っていない。\par
+
+\noindent\textbf{4：条件に一致} \(3\)。2x−1をx=\allowbreak{}2で評価すると3である。\par
+
+\noindent\textbf{5：条件に不一致} \(5\)。2x+1と足すのは回転の差の符号と合わない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、二次元回転の向きとスカラー成分の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:divcurl]{第\ref*{theory:analysis:divcurl}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成26年度 問3-1}
+\label{q:h26-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 平面上の全点で非圧縮性の連続の式を満たす流速場を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{式：} \(\partial_xu+\partial_yv=0\)\par
+
+\noindent\textbf{量化：} 特定の点だけでなく平面上の全ての点。\par
+
+\paragraph{問われる核心} 発散ゼロと非圧縮性の質量保存
+
+\paragraph{必要知識} 流速成分、偏微分、恒等式と特定点での一致。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 各候補の対応成分を微分して足すと2、0、x+y、y−x、2x−2yとなる。恒等的にゼロなのは2である。ある点でゼロになることと、領域全体で保存則を満たすこととを分ける。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((x,y)\)。発散は1+1=\allowbreak{}2である。\par
+
+\noindent\textbf{2：条件に一致} \((x,-y)\)。発散は1−1=\allowbreak{}0で全点で成立する。\par
+
+\noindent\textbf{3：条件に不一致} \((xy,xy)\)。発散はy+xであり恒等的には0でない。\par
+
+\noindent\textbf{4：条件に不一致} \((xy,-xy)\)。発散はy−xで、直線y=\allowbreak{}x上に限る。\par
+
+\noindent\textbf{5：条件に不一致} \((x^2,-y^2)\)。発散は2x−2yで、直線y=\allowbreak{}x上に限る。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、発散ゼロと非圧縮性の質量保存の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:divcurl]{第\ref*{theory:analysis:divcurl}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成26年度 問3-4}
+\label{q:h26-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 二次元ベクトルの内積の成分表示を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} \(a=(a_x,a_y),b=(b_x,b_y)\)\par
+
+\noindent\textbf{座標：} 直交座標の成分。\par
+
+\paragraph{問われる核心} 正規直交基底による内積
+
+\paragraph{必要知識} 内積の双線形性、スカラーとベクトルの違い。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 正規直交基底の異なる軸どうしの内積は0、同じ軸は1である。展開すると\(a\cdot b=a_xb_x+a_yb_y\)となり1を選ぶ。内積は仕事や角度を表すスカラーである。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致} \(a_xb_x+a_yb_y\)。同じ軸の成分積を足す内積に一致する。\par
+
+\noindent\textbf{2：条件に不一致} \(a_xb_y+a_yb_x\)。異なる軸の成分を掛けており、内積ではない。\par
+
+\noindent\textbf{3：条件に不一致} \(a_xb_y-a_yb_x\)。これは二次元外積に対応する面積の符号付き成分である。\par
+
+\noindent\textbf{4：条件に不一致} \((a_xb_x,a_yb_y)\)。内積の結果はスカラーであり、成分の組ではない。\par
+
+\noindent\textbf{5：条件に不一致} \((a_xb_y,a_yb_x)\)。内積の結果はスカラーであり、しかも成分の組合せが異なる。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、正規直交基底による内積の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:projection]{第\ref*{theory:analysis:projection}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成28年度 問3-3}
+\label{q:h28-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成29年度 問3-2}
+\label{q:h29-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} ベクトルAをBに平行・垂直に分解し、垂直成分Qを求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} A=\allowbreak{}(6,5,4)、B=\allowbreak{}(1,2,−1)\par
+
+\noindent\textbf{分解：} A=\allowbreak{}P+Q、PはBに平行、QはBに垂直。\par
+
+\paragraph{問われる核心} 直交射影による平行・垂直成分
+
+\paragraph{必要知識} 内積、非単位ベクトルへの射影、二条件の同時確認。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(P=\frac{A\cdot B}{B\cdot B}B=2B=(2,4,-2)\)、Q=\allowbreak{}A−P=\allowbreak{}(4,1,6)で4を選ぶ。Q·B=\allowbreak{}0だけで候補を選ぶと他にも残るので、差A−Qが平行という条件も確認する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((1,1,3)\)。Q·B=\allowbreak{}0だがA−Q=\allowbreak{}(5,4,1)がBの倍数でない。\par
+
+\noindent\textbf{2：条件に不一致} \((2,1,4)\)。Q·B=\allowbreak{}0だがA−QがBの倍数でなく、分解条件を同時に満たさない。\par
+
+\noindent\textbf{3：条件に不一致} \((3,2,7)\)。Q·B=\allowbreak{}0だがA−QがBの倍数でない。\par
+
+\noindent\textbf{4：条件に一致} \((4,1,6)\)。A·B=\allowbreak{}12、B·B=\allowbreak{}6なのでP=\allowbreak{}2B、Q=\allowbreak{}A−2Bに一致する。\par
+
+\noindent\textbf{5：条件に不一致} \((5,-1,3)\)。Q·B=\allowbreak{}0だがA−QがBの倍数でない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、直交射影による平行・垂直成分の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:projection]{第\ref*{theory:analysis:projection}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成30年度 問3-2}
+\label{q:h30-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 二次元ベクトル場の指定点で発散と回転を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} \(v=(u,v)=(-x^2+2xy,2xy-y^2)\)\par
+
+\noindent\textbf{点：} (1,2)\par
+
+\noindent\textbf{定義：} \(\operatorname{div}v=\partial_xu+\partial_yv,\operatorname{rot}v=\partial_xv-\partial_yu\)\par
+
+\paragraph{問われる核心} 発散と回転の成分の取り方
+
+\paragraph{必要知識} 二次元ベクトル場、偏微分、面外回転の符号。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(\operatorname{div}v=(-2x+2y)+(2x-2y)=0\)、\(\operatorname{rot}v=2y-2x\)より点(1,2)で(0,2)の組、4である。同じ成分の微分の和と、交差成分の微分の差を区別する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} div=\allowbreak{}2／rot=−4。対応成分の発散は恒等的に0であり合わない。\par
+
+\noindent\textbf{2：条件に不一致} div=\allowbreak{}0／rot=−2。発散は合うが回転の差の順序を逆にしている。\par
+
+\noindent\textbf{3：条件に不一致} div=−2／rot=\allowbreak{}0。発散と回転の両方が合わない。\par
+
+\noindent\textbf{4：条件に一致} div=\allowbreak{}0／rot=\allowbreak{}2。発散0、回転2(y−x)=\allowbreak{}2に一致する。\par
+
+\noindent\textbf{5：条件に不一致} div=\allowbreak{}2／rot=\allowbreak{}4。発散と回転の両方が合わない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、発散と回転の成分の取り方の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:divcurl]{第\ref*{theory:analysis:divcurl}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和元年度 問3-1}
+\label{q:r01-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 三次元ベクトル場の指定点における発散を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} \(V=(\sin(x+y+z),\cos(x+y+z),z)\)\par
+
+\noindent\textbf{点：} \((2\pi,0,0)\)\par
+
+\noindent\textbf{定義：} \(\operatorname{div}V=\partial_xV_x+\partial_yV_y+\partial_zV_z\)\par
+
+\paragraph{問われる核心} 発散は対応成分の偏微分の和
+
+\paragraph{必要知識} 三角関数の偏微分、直交座標、発散のスカラー性。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(\operatorname{div}V=\cos(x+y+z)-\sin(x+y+z)+1\)なので指定点では1−0+1=\allowbreak{}2である。5を選ぶ。先に座標を代入して定数を微分すると空間変化の情報が失われる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} −2。発散はcos(2π)−sin(2π)+1=\allowbreak{}2であり、この値とは一致しない。\par
+
+\noindent\textbf{2：条件に不一致} −1。発散はcos(2π)−sin(2π)+1=\allowbreak{}2であり、この値とは一致しない。\par
+
+\noindent\textbf{3：条件に不一致} 0。発散はcos(2π)−sin(2π)+1=\allowbreak{}2であり、この値とは一致しない。\par
+
+\noindent\textbf{4：条件に不一致} 1。発散はcos(2π)−sin(2π)+1=\allowbreak{}2であり、この値とは一致しない。\par
+
+\noindent\textbf{5：条件に一致} 2。成分ごとの対応する座標で微分した和2と一致する。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、発散は対応成分の偏微分の和の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:divcurl]{第\ref*{theory:analysis:divcurl}節}
+
+\par 参考：\cite{mit_vectorcalc2005}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和2年度 問3-1}
+\label{q:r02-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 多項式ベクトル場の指定点における発散を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} \(V=(x,x^2y+yz^2,z^3)\)\par
+
+\noindent\textbf{点：} (1,3,2)\par
+
+\paragraph{問われる核心} 発散のスカラー性と微分後の評価
+
+\paragraph{必要知識} 多項式の偏微分、微分する変数、スカラーとベクトル。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(\operatorname{div}V=1+(x^2+z^2)+3z^2\)で、指定点では1+5+12=\allowbreak{}18、2である。発散はスカラーであり、成分微分を並べた(1,5,12)を返す演算ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((-12,0,6)\)。回転ベクトルの値であり発散ではない。\par
+
+\noindent\textbf{2：条件に一致} \(18\)。対応微分の和1+5+12=\allowbreak{}18に一致する。\par
+
+\noindent\textbf{3：条件に不一致} \(24\)。ベクトル場の成分値1+15+8を足した値であり、微分していない。\par
+
+\noindent\textbf{4：条件に不一致} \((1,15,8)\)。微分前の成分値を並べたものである。\par
+
+\noindent\textbf{5：条件に不一致} \((1,5,12)\)。対応微分を並べており、発散の和を取っていない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、発散のスカラー性と微分後の評価の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:divcurl]{第\ref*{theory:analysis:divcurl}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和2年度 問3-2}
+\label{q:r02-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 二変数関数の指定点における最急勾配の長さを求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{関数：} \(f(x,y)=x^2+2xy+3y^2\)\par
+
+\noindent\textbf{点：} (1,1)\par
+
+\noindent\textbf{求める量：} 勾配ベクトルのユークリッドノルム。\par
+
+\paragraph{問われる核心} 勾配と最急上昇率のノルム
+
+\paragraph{必要知識} 偏微分、方向微分、ユークリッドノルム。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 勾配は\(\operatorname{grad}f=(2x+2y,2x+6y)\)で、指定点では\((4,8)\)である。そのノルムは\(4\sqrt5\)なので4を選ぶ。方向を表すベクトルと、最大方向微分の値である長さを分ける。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \(6\)。偏微分してノルムを取ると4\textbackslash{}sqrt5となり一致しない。\par
+
+\noindent\textbf{2：条件に不一致} \((4,8)\)。勾配ベクトルそのものであり長さではない。\par
+
+\noindent\textbf{3：条件に不一致} \(12\)。偏微分してノルムを取ると4\textbackslash{}sqrt5となり一致しない。\par
+
+\noindent\textbf{4：条件に一致} \(4\sqrt5\)。勾配ベクトルの二乗和の平方根に一致する。\par
+
+\noindent\textbf{5：条件に不一致} \(\sqrt2\)。偏微分してノルムを取ると4\textbackslash{}sqrt5となり一致しない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、勾配と最急上昇率のノルムの定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:gradient]{第\ref*{theory:analysis:gradient}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和3年度 問3-1}
+\label{q:r03-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 三次元ベクトル場の指定点における回転ベクトルを求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} \(V=(y+z,x^2+y^2+z^2,z+2y)\)\par
+
+\noindent\textbf{点：} (2,3,1)\par
+
+\noindent\textbf{座標：} 右手系の三次元直交座標。\par
+
+\paragraph{問われる核心} 三次元回転ベクトルの成分
+
+\paragraph{必要知識} 偏微分、右手系、交差微分の差、発散との違い。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(\operatorname{rot}V=(\partial_yV_z-\partial_zV_y,\partial_zV_x-\partial_xV_z,\partial_xV_y-\partial_yV_x)=(2-2z,1,2x-1)\)となる。点(2,3,1)で(0,1,3)、4を選ぶ。第2成分の差の順序も成分式から確認する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \(7\)。発散1+2y=\allowbreak{}7の値であり、回転ではない。\par
+
+\noindent\textbf{2：条件に不一致} \((0,6,1)\)。回転の成分微分の組合せが違う。\par
+
+\noindent\textbf{3：条件に不一致} \(4\)。回転はベクトルであり単一数ではない。\par
+
+\noindent\textbf{4：条件に一致} \((0,1,3)\)。(2−2z,1,2x−1)の点での値に一致する。\par
+
+\noindent\textbf{5：条件に不一致} \((4,14,7)\)。元のベクトル場の成分値であり微分していない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、三次元回転ベクトルの成分の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:divcurl]{第\ref*{theory:analysis:divcurl}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和4年度 問3-2}
+\label{q:r04-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 任意の三次元ベクトルに必ずしも成立しない恒等式を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{ベクトル：} 三次元直交座標の任意の実ベクトルa,b。\par
+
+\noindent\textbf{演算：} 内積と外積を区別する。\par
+
+\noindent\textbf{方向：} 全てのa,bで成立するとは限らないもの。\par
+
+\paragraph{問われる核心} 内積の交換性と外積の反交換性
+
+\paragraph{必要知識} 外積の右手方向、垂直性、恒等式と反例。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} a=\allowbreak{}(1,0,0)、b=\allowbreak{}(0,1,0)とするとa×b=\allowbreak{}(0,0,1)、b×a=\allowbreak{}(0,0,−1)である。2には反例がある。特殊な平行ベクトルで一致しても「任意」での恒等式にはならない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：恒等的に正しい} \((a\times b)\cdot a=0\)。外積はaへ垂直であり成立する。\par
+
+\noindent\textbf{2：一般には誤り} \(a\times b=b\times a\)。外積は反交換的で、a×b=−b×aである。平行な場合のゼロを除き一般には成立しない。\par
+
+\noindent\textbf{3：恒等的に正しい} \(a\cdot b=b\cdot a\)。実ベクトルの内積は交換的であり成立する。\par
+
+\noindent\textbf{4：恒等的に正しい} \(b\cdot(a\times b)=0\)。外積はbへも垂直であり成立する。\par
+
+\noindent\textbf{5：恒等的に正しい} \(a\times a=0\)。同じベクトルの外積はゼロであり成立する。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、内積の交換性と外積の反交換性の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:projection]{第\ref*{theory:analysis:projection}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和6年度 問3-2}
+\label{q:r06-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 点aから単位ベクトルbの張る直線へ向かう垂線ベクトルを選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{始点：} aの終点。\par
+
+\noindent\textbf{終点：} 原点を通りb方向の直線上の垂足。\par
+
+\noindent\textbf{条件：} \(|b|=1\)\par
+
+\paragraph{問われる核心} 直線への射影と始点からの変位
+
+\paragraph{必要知識} 単位方向ベクトル、内積、垂足、終点−始点。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 垂足の位置は単位bへの射影\(p=(a\cdot b)b\)である。求めるベクトルは始点aから終点pへのp−a、2である。その内積\((p-a)\cdot b=(a\cdot b)|b|^2-a\cdot b=0\)で垂直性も検算できる。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \(a\times b\)。a,bの両方に垂直な向きであり、aから直線上の垂足への変位ではない。\par
+
+\noindent\textbf{2：条件に一致} \((b\cdot a)b-a\)。垂足の位置(b·a)bから始点aを引いたベクトルに一致する。\par
+
+\noindent\textbf{3：条件に不一致} \(b-a\)。終点をbの端点に固定しており、その点が垂足である保証がない。\par
+
+\noindent\textbf{4：条件に不一致} \((b\cdot a)b\)。原点から垂足への位置ベクトルであり、始点aからの変位ではない。\par
+
+\noindent\textbf{5：条件に不一致} \(a\times b-a\)。終点a×bは一般にb方向の直線上にない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、直線への射影と始点からの変位の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:projection]{第\ref*{theory:analysis:projection}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和7年度 問3-2}
+\label{q:r07-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 二変数関数の指定点における最急勾配の長さを求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{関数：} \(f(x,y)=2x^2+xy-y^2\)\par
+
+\noindent\textbf{点：} (2,1)\par
+
+\noindent\textbf{求める量：} 勾配ベクトルのユークリッドノルム。\par
+
+\paragraph{問われる核心} 勾配と最急上昇率のノルム
+
+\paragraph{必要知識} 偏微分、方向微分、ユークリッドノルム。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 勾配は\(\operatorname{grad}f=(4x+y,x-2y)\)で、指定点では\((9,0)\)である。そのノルムは\(9\)なので1を選ぶ。方向を表すベクトルと、最大方向微分の値である長さを分ける。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致} \(9\)。勾配ベクトルの二乗和の平方根に一致する。\par
+
+\noindent\textbf{2：条件に不一致} \(3\)。偏微分してノルムを取ると9となり一致しない。\par
+
+\noindent\textbf{3：条件に不一致} \(\sqrt5\)。偏微分してノルムを取ると9となり一致しない。\par
+
+\noindent\textbf{4：条件に不一致} \((9,0)\)。勾配ベクトルそのものであり長さではない。\par
+
+\noindent\textbf{5：条件に不一致} \(\sqrt{26}\)。偏微分してノルムを取ると9となり一致しない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、勾配と最急上昇率のノルムの定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:gradient]{第\ref*{theory:analysis:gradient}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\section{微積分・求積}
+
+\subsection{平成24年度 問3-3}
+\label{q:h24-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 1（single）。
+
+\paragraph{問題の要旨} 座標変換と偏微分の連鎖律で定義された2行2列行列の行列式を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{変換：} \(x=x(\xi,\eta),y=y(\xi,\eta)\)\par
+
+\noindent\textbf{微分の向き：} (fξ,fη)の列=J(fx,fy)の列。\par
+
+\noindent\textbf{略記：} \(a=x_\xi,b=y_\xi,c=x_\eta,d=y_\eta\)\par
+
+\paragraph{問われる核心} 連鎖律とヤコビ行列の向き
+
+\paragraph{必要知識} 偏微分、行列と列ベクトル、2行2列行列式。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 連鎖律で\(f_\xi=f_xx_\xi+f_yy_\xi\)、\(f_\eta=f_xx_\eta+f_yy_\eta\)となる。従ってJの行は(a,b)、(c,d)で、行列式はad−bc、1である。ここでは符号を持つ行列式を問い、積分の面積倍率ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に一致} \(ad-bc\)。主対角積から反対角積を引いたものに一致する。\par
+
+\noindent\textbf{2：条件に不一致} \(ad+bc\)。行列式の反対角積の符号が逆である。\par
+
+\noindent\textbf{3：条件に不一致} \(ac-bd\)。同じ座標関数同士の積を取っており、主対角と反対角の組を違えている。\par
+
+\noindent\textbf{4：条件に不一致} \(ac+bd\)。項の組合せも符号も行列式と合わない。\par
+
+\noindent\textbf{5：条件に不一致} \(bd-ac\)。同じ座標関数の積の差であり、行列式ではない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、連鎖律とヤコビ行列の向きの定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:chain]{第\ref*{theory:analysis:chain}節}, \hyperref[theory:analysis:jacobian]{第\ref*{theory:analysis:jacobian}節}
+
+\par 参考：\cite{mit_chain2007}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成24年度 問3-4}
+\label{q:h24-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 二階導関数の格子点での差分近似を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{導関数：} \(f''(x_i)\)\par
+
+\noindent\textbf{格子幅：} \(\Delta\)\par
+
+\noindent\textbf{格子：} 等間隔、iは格子点の番号。\par
+
+\paragraph{問われる核心} テイラー展開による二階中心差分
+
+\paragraph{必要知識} 微分次数、等間隔格子、打切り誤差、定数・一次関数での検算。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(f_{i+1}-2f_i+f_{i-1}=\Delta^2f''(x_i)+O(\Delta^4)\)を用いる。従って分母を幅の二乗とした4が適切である。これは滑らかな関数の中心差分近似であり、一般の関数で厳密な恒等式ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((f_{i+1}-f_i)/\Delta\)。一階前進差分であり、二階微分ではない。\par
+
+\noindent\textbf{2：条件に不一致} \((f_{i+1}+f_i)/\Delta\)。定数関数でもゼロにならず、差分の分子が和になっている。\par
+
+\noindent\textbf{3：条件に不一致} \((f_{i+1}-2f_i+f_{i-1})/(2\Delta)\)。二階差分の分子は合うが、分母は幅の二乗である。\par
+
+\noindent\textbf{4：条件に一致} \((f_{i+1}-2f_i+f_{i-1})/\Delta^2\)。テイラー展開で定数項と一階項が消え、二階微分が残る。\par
+
+\noindent\textbf{5：条件に不一致} \((f_{i+1}+2f_i+f_{i-1})/\Delta^2\)。中央項の符号が逆で、定数関数でもゼロにならない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、テイラー展開による二階中心差分の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:difference]{第\ref*{theory:analysis:difference}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成26年度 問3-3}
+\label{q:h26-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成28年度 問3-1}
+\label{q:h28-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 3（single）。
+
+\paragraph{問題の要旨} 一次関数の区間−1〜1の積分を計算する式で、恒等的に使えないものを選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{関数：} \(f(x)=ax+b\)\par
+
+\noindent\textbf{区間：} \([-1,1]\)\par
+
+\noindent\textbf{方向：} 最も不適切な計算式。\par
+
+\paragraph{問われる核心} 求積重みの和と多項式への正確さ
+
+\paragraph{必要知識} 奇偶性、一次関数の積分、定数関数での検算。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 積分は奇関数axの寄与が0なので2bである。左右対称の候補式に代入すると1/2/4/5は2b、3だけ3b/2となるため3を選ぶ。b=\allowbreak{}0の特殊な場合だけ一致しても恒等的な計算式ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：正しい} \(2f(0)\)。2bとなり正しい。\par
+
+\noindent\textbf{2：正しい} \(f(-1)+f(1)\)。奇関数のaxが相殺され、2bとなり正しい。\par
+
+\noindent\textbf{3：一般には誤り} \(\frac14f(-1)+f(0)+\frac14f(1)\)。結果は3b/2であり、一般のbで積分値2bと違う。\par
+
+\noindent\textbf{4：正しい} \(\frac12f(-1)+f(0)+\frac12f(1)\)。結果は2bで正しい。\par
+
+\noindent\textbf{5：正しい} \(\frac13f(-1)+\frac43f(0)+\frac13f(1)\)。重みの和は2であり奇関数部分は相殺され、2bで正しい。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、求積重みの和と多項式への正確さの定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:quadrature]{第\ref*{theory:analysis:quadrature}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成28年度 問3-2}
+\label{q:h28-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textbf{検討未確定：} 原典は面積要素dxdy=\allowbreak{}Jdudvとするが、候補に|u−v|がなく、領域でu≥vなどの符号条件も指定しない。また変換はu,vの交換で同じx,yになる。符号付き行列式は3だが、積分の置換を成立させる領域/絶対値条件の不足を保持し部分校正とする。
+
+\paragraph{問題の要旨} 二重積分の変数変換に使うヤコビアンを計算する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{変換：} \(x=u+v,y=uv\)\par
+
+\noindent\textbf{原典の式：} dxdyをJdudvへ置き換える。\par
+
+\noindent\textbf{領域：} 変換領域でuとvの大小を指定していない。\par
+
+\paragraph{問われる核心} ヤコビアンの符号と面積倍率
+
+\paragraph{必要知識} 行列式、面積要素、絶対値、一対一の変数変換。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 微分行列の行は(1,1)、(v,u)で、その行列式はu−vである。符号付きヤコビアンとして3を独立選択する。ただし面積要素の倍率は|u−v|であり、原典の二重積分の式へそのまま代入するには符号又は向きの条件が必要となる。変換を一対一の枝へ制限する条件も確認が必要である。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \(1\)。微分行列の行列式は定数ではない。\par
+
+\noindent\textbf{2：条件に不一致} \(u+v\)。行列式の二項を足している。\par
+
+\noindent\textbf{3：条件に一致} \(u-v\)。符号付き行列式に一致。ただし面積要素では絶対値が必要である。\par
+
+\noindent\textbf{4：条件に不一致} \(1+uv\)。微分した成分を使っていない。\par
+
+\noindent\textbf{5：条件に不一致} \(1-uv\)。微分した成分を使っていない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、ヤコビアンの符号と面積倍率の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:jacobian]{第\ref*{theory:analysis:jacobian}節}
+
+\par 参考：\cite{mit_jacobian2007}。
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成28年度 問3-4}
+\label{q:h28-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成29年度 問3-1}
+\label{q:h29-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 二階導関数の格子点での差分近似を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{導関数：} \(u''(x_i)\)\par
+
+\noindent\textbf{格子幅：} \(h\)\par
+
+\noindent\textbf{格子：} 等間隔、iは格子点の番号。\par
+
+\paragraph{問われる核心} テイラー展開による二階中心差分
+
+\paragraph{必要知識} 微分次数、等間隔格子、打切り誤差、定数・一次関数での検算。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(u_{i+1}-2u_i+u_{i-1}=h^2u''(x_i)+O(h^4)\)を用いる。従って分母を幅の二乗とした5が適切である。これは滑らかな関数の中心差分近似であり、一般の関数で厳密な恒等式ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((u_{i+1}-u_i)/h\)。一階前進差分であり、二階微分ではない。\par
+
+\noindent\textbf{2：条件に不一致} \((u_{i+1}+u_i)/h\)。定数関数でもゼロにならず、差分の分子が和になっている。\par
+
+\noindent\textbf{3：条件に不一致} \((u_{i+1}-2u_i+u_{i-1})/(2h)\)。二階差分の分子は合うが、分母は幅の二乗である。\par
+
+\noindent\textbf{4：条件に不一致} \((u_{i+1}+2u_i+u_{i-1})/h^2\)。中央項の符号が逆で、定数関数でもゼロにならない。\par
+
+\noindent\textbf{5：条件に一致} \((u_{i+1}-2u_i+u_{i-1})/h^2\)。テイラー展開で定数項と一階項が消え、二階微分が残る。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、テイラー展開による二階中心差分の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:difference]{第\ref*{theory:analysis:difference}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和元年度 問3-2}
+\label{q:r01-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 座標変換の連鎖律で定義された2行2列行列の行列式を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{変換：} \(x=g(r,s),y=h(r,s),z=f(x,y)\)\par
+
+\noindent\textbf{向き：} (zr,zs)の列=J(zx,zy)の列。\par
+
+\noindent\textbf{略記：} \(a=x_r,b=y_r,c=x_s,d=y_s\)\par
+
+\paragraph{問われる核心} 連鎖律で定義された行列の行列式
+
+\paragraph{必要知識} 偏微分、行列積、行列式、変数の順序。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 偏微分の連鎖律によりJの行は(a,b)、(c,d)である。行列式ad−bcの5を選ぶ。微分ベクトルの順序を先に読み、以前の問題の正答番号を転用しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \(ac+bd\)。同じ座標関数の微分を掛けた和で、行列式と異なる。\par
+
+\noindent\textbf{2：条件に不一致} \(ac-bd\)。項の組合せが主対角・反対角ではない。\par
+
+\noindent\textbf{3：条件に不一致} \(bd-ac\)。項の組合せが主対角・反対角ではない。\par
+
+\noindent\textbf{4：条件に不一致} \(ad+bc\)。反対角積の符号が逆である。\par
+
+\noindent\textbf{5：条件に一致} \(ad-bc\)。連鎖律でできる行(a,b)、(c,d)の行列式に一致する。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、連鎖律で定義された行列の行列式の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:chain]{第\ref*{theory:analysis:chain}節}, \hyperref[theory:analysis:jacobian]{第\ref*{theory:analysis:jacobian}節}
+
+\par 参考：\cite{mit_chain2007}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和元年度再試験 問3-1}
+\label{q:r01-ret-basic-3-1}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 微分方程式と一点の値から二階・三階導関数を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{関係：} \(f'(x)=1+f(x)^2\)\par
+
+\noindent\textbf{初期値：} \(f(0)=1\)\par
+
+\noindent\textbf{求める量：} \((f''(0),f'''(0))\)\par
+
+\paragraph{問われる核心} 微分関係式の繰返し微分
+
+\paragraph{必要知識} 積の微分、連鎖律、一点の初期条件。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(f'(0)=2,\quad f''=2ff',\quad f'''=2(f')^2+2ff''\)よりf″(0)=\allowbreak{}4、f‴(0)=\allowbreak{}8+8=\allowbreak{}16となり5である。解fそのものを求める必要はなく、関係式を順に微分すればよい。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((2,4)\)。f′(0)=\allowbreak{}2だが二階導関数は2ff′=4である。\par
+
+\noindent\textbf{2：条件に不一致} \((2,6)\)。二階導関数4に一致しない。\par
+
+\noindent\textbf{3：条件に不一致} \((2,8)\)。二階導関数4に一致しない。\par
+
+\noindent\textbf{4：条件に不一致} \((4,12)\)。二階は合うが三階では積の微分の両項を数えると16になる。\par
+
+\noindent\textbf{5：条件に一致} \((4,16)\)。二階4、三階16に一致する。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、微分関係式の繰返し微分の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:chain]{第\ref*{theory:analysis:chain}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和元年度再試験 問3-4}
+\label{q:r01-ret-basic-3-4}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 指定のシンプソン公式で定積分を近似し、最も近い候補を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{積分：} \(\int_{-1}^{1}\frac{1}{x+3}\,dx\)\par
+
+\noindent\textbf{指定重み：} 区間両端1/3、中点4/3。\par
+
+\paragraph{問われる核心} 指定求積法の近似値と厳密値
+
+\paragraph{必要知識} シンプソンの重み、3点の関数値、最近傍候補。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} \(S\approx\frac13\frac12+\frac43\frac13+\frac13\frac14=\frac{25}{36}\approx0.69444\)となり、最も近い0.693の5を選ぶ。厳密値はln2≈0.693147だが、指定手法の計算結果とは区別する。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} 0.653。シンプソン近似25/36≈0.69444との差は約0.04144。\par
+
+\noindent\textbf{2：条件に不一致} 0.663。差は約0.03144。\par
+
+\noindent\textbf{3：条件に不一致} 0.673。差は約0.02144。\par
+
+\noindent\textbf{4：条件に不一致} 0.683。差は約0.01144。\par
+
+\noindent\textbf{5：条件に一致} 0.693。差は約0.00144で最も小さい。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、指定求積法の近似値と厳密値の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:quadrature]{第\ref*{theory:analysis:quadrature}節}
+
+\par 参考：\cite{nist_quadrature}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和3年度 問3-2}
+\label{q:r03-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 任意の三次以下の多項式を区間−1〜1で正確に積分する式を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{関数：} \(f(x)=ax^3+bx^2+cx+d\)\par
+
+\noindent\textbf{係数：} a,b,c,dは任意の実数。\par
+
+\noindent\textbf{積分区間：} −1〜1。\par
+
+\paragraph{問われる核心} 求積公式の多項式モーメント条件
+
+\paragraph{必要知識} 奇偶性、多項式の積分、二点ガウス求積、重みの検算。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 対称区間では奇関数項の積分が0なので厳密値は2b/3+2dである。2では評価点の二乗が1/3なので\(f(-1/\sqrt3)+f(1/\sqrt3)=2b/3+2d\)となる。4はガウスの評価点に似ているが両端の重みが1/2であり、正しい求積式ではない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \(2f(0)\)。2dでありbx\textsuperscript{2}の積分2b/3が抜ける。\par
+
+\noindent\textbf{2：条件に一致} \(f(-\sqrt{1/3})+f(\sqrt{1/3})\)。奇関数部分は相殺し、2b/3+2dに一致する二点ガウス求積である。\par
+
+\noindent\textbf{3：条件に不一致} \(f(-1)+f(1)\)。2b+2dとなりbx\textsuperscript{2}の係数が大きすぎる。\par
+
+\noindent\textbf{4：条件に不一致} \(\frac12f(-\sqrt{3/5})+\frac89f(0)+\frac12f(\sqrt{3/5})\)。定数の重み和が17/9で2に足りず、x\textsuperscript{2}の係数も3/5で2/3と異なる。正しい三点ガウスの両端重み5/9とは違う。\par
+
+\noindent\textbf{5：条件に不一致} \(\frac12f(-1)+f(0)+\frac12f(1)\)。b+2dとなりbx\textsuperscript{2}の係数が合わない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、求積公式の多項式モーメント条件の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:quadrature]{第\ref*{theory:analysis:quadrature}節}
+
+\par 参考：\cite{nist_quadrature}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和4年度 問3-1}
+\label{q:r04-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和5年度 問3-2}
+\label{q:r05-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 四分の一円領域でxの二重積分を求める。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{領域：} \(0\le x\le1,0\le y\le\sqrt{1-x^2}\)\par
+
+\noindent\textbf{積分：} \(\int\int_R x\,dxdy\)\par
+
+\paragraph{問われる核心} 領域を読んだ累次積分と置換積分
+
+\paragraph{必要知識} 四分の一円、積分順序、変数置換、面積と一次モーメント。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} y方向に先に積分すると\(\int_0^1x\sqrt{1-x^2}\,dx\)となる。t=\allowbreak{}1−x\textsuperscript{2}、dt=−2xdxと置けば\(\frac12\int_0^1\sqrt t\,dt=1/3\)で2を選ぶ。領域面積π/4と重み付き積分を混同しない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \(\pi/3\)。xを重みにした積分は円の角度や単なる面積と異なる。\par
+
+\noindent\textbf{2：条件に一致} \(1/3\)。積分x√(1−x\textsuperscript{2})を0〜1で評価した1/3に一致する。\par
+
+\noindent\textbf{3：条件に不一致} \(\pi/2\)。半円の面積に相当し領域・被積分関数が違う。\par
+
+\noindent\textbf{4：条件に不一致} \(\pi/4\)。四分の一円の面積であり、xという重みを落としている。\par
+
+\noindent\textbf{5：条件に不一致} \(1/4\)。同じ領域でのxの平均を単に1/πと仮定する根拠はない。積分で求めると1/3である。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、領域を読んだ累次積分と置換積分の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:jacobian]{第\ref*{theory:analysis:jacobian}節}, \hyperref[theory:analysis:quadrature]{第\ref*{theory:analysis:quadrature}節}
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和6年度 問3-1}
+\label{q:r06-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 連鎖律で偏微分ベクトルを変換する2行2列行列を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{関係：} \(f=f(x,y),g=g(x,y),u=u(f,g)\)\par
+
+\noindent\textbf{向き：} (ux,uy)の列=J(uf,ug)の列。\par
+
+\noindent\textbf{候補表記：} 下付きは偏微分、セミコロンは行区切り。\par
+
+\paragraph{問われる核心} 連鎖律の行列表示と転置
+
+\paragraph{必要知識} 合成関数の微分、行列積、微分する変数の順序。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 連鎖律を一行ずつ書くと\(u_x=u_ff_x+u_gg_x,u_y=u_ff_y+u_gg_y\)である。従ってJの行は(fx,gx)、(fy,gy)で4を選ぶ。ヤコビ行列という名前より、与えられた列ベクトルの掛け算を優先して向きを定める。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((x_f,y_f;x_g,y_g)\)。逆向きの座標関数の微分を使っている。\par
+
+\noindent\textbf{2：条件に不一致} \((f_x,f_y;g_x,g_y)\)。行列を転置する必要があり、出力の各行がxとyになっていない。\par
+
+\noindent\textbf{3：条件に不一致} \((u_f,u_g;u_x,u_y)\)。変換される関数uそのものの微分を係数としており、連鎖律の行列ではない。\par
+
+\noindent\textbf{4：条件に一致} \((f_x,g_x;f_y,g_y)\)。ux=\allowbreak{}uf fx+ug gx、uy=\allowbreak{}uf fy+ug gyに一致する。\par
+
+\noindent\textbf{5：条件に不一致} \((x_f,x_g;y_f,y_g)\)。逆向きの変換の係数であり、原典の向きとは違う。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、連鎖律の行列表示と転置の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:chain]{第\ref*{theory:analysis:chain}節}
+
+\par 参考：\cite{mit_chain2007}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和7年度 問3-3}
+\label{q:r07-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 等間隔の3点を使うシンプソン法の式を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{点：} \(b=a+h,c=a+2h,h>0\)\par
+
+\noindent\textbf{区間：} aからc、全幅2h。\par
+
+\noindent\textbf{方式：} 2次のニュートン・コーツ閉公式。\par
+
+\paragraph{問われる核心} 区間幅の定義とシンプソン重み
+
+\paragraph{必要知識} 二次補間、等間隔の3点、定数関数の検算。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 3点を通る二次補間多項式を積分すると\(\frac h3[f(a)+4f(b)+f(c)]\)となり5である。全幅は2hなので、全幅をHと書く別の表現なら係数H/6となる。記号の定義を読み替えずh/6を選ばない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \(\frac h2(f(a)+f(c))\)。全幅2hに対する台形則の半分であり、シンプソン法でもない。\par
+
+\noindent\textbf{2：条件に不一致} \(h(f(a)+f(c))\)。これは全幅2hに対する台形則で、中点を使わない。\par
+
+\noindent\textbf{3：条件に不一致} \(\frac h6(f(a)+4f(b)+f(c))\)。重みの和がhとなり、定数関数の積分2hに足りない。\par
+
+\noindent\textbf{4：条件に不一致} \(\frac h4(f(a)+4f(b)+f(c))\)。重みの和が3h/2で、定数関数の積分2hに足りない。\par
+
+\noindent\textbf{5：条件に一致} \(\frac h3(f(a)+4f(b)+f(c))\)。両端1・中点4の重みへh/3を掛けるシンプソン法に一致する。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、区間幅の定義とシンプソン重みの定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:quadrature]{第\ref*{theory:analysis:quadrature}節}
+
+\par 参考：\cite{nist_quadrature}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\section{有限要素法}
+
+\subsection{平成23年度 問3-1}
+\label{q:h23-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成24年度 問3-1}
+\label{q:h24-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成25年度 問3-3}
+\label{q:h25-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成29年度 問3-3}
+\label{q:h29-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和2年度 問3-4}
+\label{q:r02-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和3年度 問3-3}
+\label{q:r03-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\section{材料の応力・変形}
+
+\subsection{平成23年度 問3-2}
+\label{q:h23-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成24年度 問3-5}
+\label{q:h24-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成25年度 問3-1}
+\label{q:h25-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成25年度 問3-5}
+\label{q:h25-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成26年度 問3-6}
+\label{q:h26-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成27年度 問3-5}
+\label{q:h27-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成27年度 問3-6}
+\label{q:h27-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成28年度 問3-6}
+\label{q:h28-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理16頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成29年度 問3-5}
+\label{q:h29-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成30年度 問3-6}
+\label{q:h30-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和元年度 問3-5}
+\label{q:r01-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和元年度再試験 問3-6}
+\label{q:r01-ret-basic-3-6}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和2年度 問3-6}
+\label{q:r02-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和3年度 問3-4}
+\label{q:r03-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和4年度 問3-4}
+\label{q:r04-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和5年度 問3-4}
+\label{q:r05-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和6年度 問3-4}
+\label{q:r06-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和7年度 問3-4}
+\label{q:r07-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\section{線形代数・逆行列}
+
+\subsection{平成25年度 問3-4}
+\label{q:h25-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 5（single）。
+
+\paragraph{問題の要旨} 正則な2行2列行列の逆行列を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{行列A：} 行ごとに(a,b)、(c,d)。\par
+
+\noindent\textbf{条件：} \(ad-bc\neq0\)\par
+
+\noindent\textbf{候補表記：} セミコロンで行を区切る。\par
+
+\paragraph{問われる核心} 逆行列は掛けて単位行列になる写像
+
+\paragraph{必要知識} 正則性、行列式、随伴行列、行列積。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 逆行列は対角成分を交換し、非対角成分の符号を反転して、行列式ad−bcで割った5である。Aへ掛けると対角はad−bc、非対角は0になる。成分を単に転置する操作と取り違えない。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((d,-b;-c,a)/(ad+bc)\)。随伴行列の成分は合うが行列式の符号が違う。\par
+
+\noindent\textbf{2：条件に不一致} \((d,-c;-b,a)/(ad+bc)\)。分母の符号と非対角成分の配置が違う。\par
+
+\noindent\textbf{3：条件に不一致} \((d,b;c,a)/(ad+bc)\)。分母の符号と非対角成分の符号が違う。\par
+
+\noindent\textbf{4：条件に不一致} \((d,b;c,a)/(ad-bc)\)。非対角成分の符号を反転していない。\par
+
+\noindent\textbf{5：条件に一致} \((d,-b;-c,a)/(ad-bc)\)。積AA\textsuperscript{-1}が単位行列になる。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、逆行列は掛けて単位行列になる写像の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:inverse]{第\ref*{theory:analysis:inverse}節}
+
+\par 参考：\cite{mit_inverse2007}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{平成30年度 問3-3}
+\label{q:h30-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} 対角が全て1の下三角3行3列行列の逆行列を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{行列A：} 行をセミコロンで区切って(1,0,0; a,1,0; b,c,1)。\par
+
+\noindent\textbf{候補表記：} 同じく各行をセミコロンで区切る。\par
+
+\paragraph{問われる核心} 三角行列の逆と順次消去
+
+\paragraph{必要知識} 行列積、下三角行列、前進代入。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 逆を下三角(1,0,0; p,1,0; q,r,1)とおき、Aとの積を単位行列へ合わせる。a+p=\allowbreak{}0、c+r=\allowbreak{}0、b+cp+q=\allowbreak{}0なのでp=−a、r=−c、q=\allowbreak{}ac−bとなる。2を選ぶ。非対角成分を全てただ符号反転するだけでは、第3行第1列の結合項acを落とす。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((1,0,0;a,1,0;ac-b,c,1)\)。第2行第1列と第3行第2列の符号を逆にする必要がある。\par
+
+\noindent\textbf{2：条件に一致} \((1,0,0;-a,1,0;ac-b,-c,1)\)。下三角の積を計算すると対角1、下の非対角0になる。\par
+
+\noindent\textbf{3：条件に不一致} \((1,0,0;1-a,1,0;ac-b,1-c,1)\)。第2行第1列と第3行第2列は−a、−cであり、余分な1がある。\par
+
+\noindent\textbf{4：条件に不一致} \((1,0,0;-a,1,0;ac+b,-c,1)\)。第3行第1列の積を打ち消すにはac−bが必要である。\par
+
+\noindent\textbf{5：条件に不一致} \((1,0,0;a,1,0;ac+b,c,1)\)。第3行第1列の積を打ち消すにはac−bが必要である。第2行・第3行の符号も異なる。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、三角行列の逆と順次消去の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:inverse]{第\ref*{theory:analysis:inverse}節}
+
+\par 参考：\cite{mit_inverse2007}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和5年度 問3-1}
+\label{q:r05-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 4（single）。
+
+\paragraph{問題の要旨} 対角が全て1の下三角3行3列行列の逆行列を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{行列A：} 行をセミコロンで区切って(1,0,0; a,1,0; b,c,1)。\par
+
+\noindent\textbf{候補表記：} 同じく各行をセミコロンで区切る。\par
+
+\paragraph{問われる核心} 三角行列の逆と順次消去
+
+\paragraph{必要知識} 行列積、下三角行列、前進代入。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 逆を下三角(1,0,0; p,1,0; q,r,1)とおき、Aとの積を単位行列へ合わせる。a+p=\allowbreak{}0、c+r=\allowbreak{}0、b+cp+q=\allowbreak{}0なのでp=−a、r=−c、q=\allowbreak{}ac−bとなる。4を選ぶ。非対角成分を全てただ符号反転するだけでは、第3行第1列の結合項acを落とす。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((1,0,0;-a,1,0;ac+b,-c,1)\)。第3行第1列の積を打ち消すにはac−bが必要である。\par
+
+\noindent\textbf{2：条件に不一致} \((1,0,0;a,1,0;ac-b,c,1)\)。第2行第1列と第3行第2列の符号を逆にする必要がある。\par
+
+\noindent\textbf{3：条件に不一致} \((1,c,b;0,1,a;0,0,1)\)。Aが下三角なので逆も下三角になる。転置に似た配置では積が単位行列にならない。\par
+
+\noindent\textbf{4：条件に一致} \((1,0,0;-a,1,0;ac-b,-c,1)\)。下三角の積を計算すると対角1、下の非対角0になる。\par
+
+\noindent\textbf{5：条件に不一致} \((1,0,0;a,1,0;ac+b,c,1)\)。第3行第1列の積を打ち消すにはac−bが必要である。第2行・第3行の符号も異なる。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、三角行列の逆と順次消去の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:inverse]{第\ref*{theory:analysis:inverse}節}
+
+\par 参考：\cite{mit_inverse2007}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\subsection{令和7年度 問3-1}
+\label{q:r07-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} パラメータを含む上三角行列の逆行列を選ぶ。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{行列A：} \((1,a,a^2;0,1,a;0,0,1)\)\par
+
+\noindent\textbf{条件：} \(a\neq0\)の実数。\par
+
+\noindent\textbf{表記：} セミコロンで行を区切る。\par
+
+\paragraph{問われる核心} 上三角行列の逆と結合項の相殺
+
+\paragraph{必要知識} 行列積、正則性、上三角行列。
+
+\paragraph{考え方・正答を選ぶ理由（査読待ち初稿）} 逆の第1行第2列と第2行第3列は−aである。第1行第3列をqとすると積のそこはq+a(−a)+a\textsuperscript{2}=qなのでq=\allowbreak{}0、2を選ぶ。元のa\textsuperscript{2}をそのまま符号反転すると結合項を二重に数える。
+
+\Needspace{4\baselineskip}\paragraph{選択肢の検討（査読待ち初稿）}\mbox{}\par
+
+\noindent\textbf{1：条件に不一致} \((1,-a,-a^2;0,1,-a;0,0,1)\)。積の第1行第3列が−a\textsuperscript{2}でゼロにならない。\par
+
+\noindent\textbf{2：条件に一致} \((1,-a,0;0,1,-a;0,0,1)\)。上の非対角−aを打ち消し、第1行第3列も−a\textsuperscript{2}+a\textsuperscript{2}=0となる。\par
+
+\noindent\textbf{3：条件に不一致} \((1,a,0;0,1,a;0,0,1)\)。第1行第2列と第2行第3列の符号が違う。\par
+
+\noindent\textbf{4：条件に不一致} \((1,0,-a^2;0,1,0;0,0,1)\)。隣接する非対角aを打ち消す−aがない。\par
+
+\noindent\textbf{5：条件に不一致} \((1,-a,a^2;0,1,-a;0,0,1)\)。積の第1行第3列がa\textsuperscript{2}でゼロにならない。\par
+
+\paragraph{再利用する考え方} 出力の型と条件を確認し、上三角行列の逆と結合項の相殺の定義から再計算する。
+
+\paragraph{共通理論} \hyperref[theory:analysis:inverse]{第\ref*{theory:analysis:inverse}節}
+
+\par 参考：\cite{mit_inverse2007}。
+
+\par 難易度 1（校準初稿）、優先度未評価。
+
+\section{数値解析・誤差}
+
+\subsection{平成26年度 問3-2}
+\label{q:h26-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成27年度 問3-3}
+\label{q:h27-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和元年度再試験 問3-3}
+\label{q:r01-ret-basic-3-3}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和2年度 問3-3}
+\label{q:r02-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和4年度 問3-3}
+\label{q:r04-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和5年度 問3-3}
+\label{q:r05-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\section{力学系の固有振動}
+
+\subsection{平成23年度 問3-4}
+\label{q:h23-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成24年度 問3-2}
+\label{q:h24-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/H24/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 2（single）。
+
+\paragraph{問題の要旨} ばね接続から有効剛性を求め、3系の固有振動数を比較する。
+
+\Needspace{4\baselineskip}\paragraph{確認した条件・記述（独自要約）}\mbox{}\par
+
+\noindent\textbf{spring\_constants：} k,k\par
+
+\noindent\textbf{mass：} m\par
+
+\noindent\textbf{a：} two parallel springs between left wall and mass\par
+
+\noindent\textbf{b：} two springs in series between left wall and mass\par
+
+\noindent\textbf{c：} mass between two fixed walls, one spring on each side\par
+
+\paragraph{問われる核心} 振動・運動
+
+\paragraph{必要知識} ばねの直列・並列合成、微小変位の復元力、固有角振動数
+
+\paragraph{考え方（査読待ち初稿）} aでは復元力が2kxなので有効剛性2k。bでは変形量が加算され1/keff=\allowbreak{}1/k+1/k、よってkeff=\allowbreak{}k/2。cも左右の復元力が同方向に合計され2kx。質量が同じため固有角振動数はsqrt(keff/m)で比較でき、bのみ最小。正答②。
+
+\paragraph{他の選択肢（査読待ち初稿）} ①aと③cはいずれも有効剛性2k。④は最小でないaを、⑤は最小でないcを含む。cの左右の力は打ち消し合わず、変位に対して同じ復元方向に働く。
+
+\paragraph{関連問題} \hyperref[q:h26-reg-basic-3-5]{H26-REG-BASIC-3-5}
+
+\par 難易度 2（校準初稿）、優先度未評価。
+
+\subsection{平成25年度 問3-2}
+\label{q:h25-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/H25/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成26年度 問3-5}
+\label{q:h26-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/H26/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成28年度 問3-5}
+\label{q:h28-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/H28/basic.pdf、PDF物理15頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成29年度 問3-6}
+\label{q:h29-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成30年度 問3-5}
+\label{q:h30-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和元年度再試験 問3-5}
+\label{q:r01-ret-basic-3-5}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和2年度 問3-5}
+\label{q:r02-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/R02/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和3年度 問3-5}
+\label{q:r03-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 4（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和4年度 問3-6}
+\label{q:r04-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和6年度 問3-5}
+\label{q:r06-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\section{未確定}
+
+\subsection{平成23年度 問3-3}
+\label{q:h23-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/H23/basic.pdf、PDF物理10頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成27年度 問3-1}
+\label{q:h27-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成27年度 問3-2}
+\label{q:h27-reg-basic-3-2}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理8頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成27年度 問3-4}
+\label{q:h27-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/H27/basic.pdf、PDF物理9頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成29年度 問3-4}
+\label{q:h29-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/H29/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成30年度 問3-1}
+\label{q:h30-reg-basic-3-1}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{平成30年度 問3-4}
+\label{q:h30-reg-basic-3-4}
+
+\noindent\textbf{原典：} sources/H30/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和元年度 問3-3}
+\label{q:r01-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理13頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和元年度 問3-6}
+\label{q:r01-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/R01/basic.pdf、PDF物理15頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和元年度再試験 問3-2}
+\label{q:r01-ret-basic-3-2}
+
+\noindent\textbf{原典：} sources/R01\_retest/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和3年度 問3-6}
+\label{q:r03-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/R03/basic.pdf、PDF物理15頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和4年度 問3-5}
+\label{q:r04-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/R04/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和5年度 問3-5}
+\label{q:r05-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 2（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和5年度 問3-6}
+\label{q:r05-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/R05/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和6年度 問3-3}
+\label{q:r06-reg-basic-3-3}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和6年度 問3-6}
+\label{q:r06-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/R06/basic.pdf、PDF物理14頁。
+
+\textbf{公式正答：} 3（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和7年度 問3-5}
+\label{q:r07-reg-basic-3-5}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理11頁。
+
+\textbf{公式正答：} 5（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}
+
+\subsection{令和7年度 問3-6}
+\label{q:r07-reg-basic-3-6}
+
+\noindent\textbf{原典：} sources/R07/basic.pdf、PDF物理12頁。
+
+\textbf{公式正答：} 1（single）。
+
+\par\textit{原典本文の校正と独自解説は未作成。分類のみの登録項目。}

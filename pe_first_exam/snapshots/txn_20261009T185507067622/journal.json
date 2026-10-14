@@ -1,0 +1,19 @@
+{
+  "status": "committed",
+  "time": "2026-10-09T18:55:07+09:00",
+  "paths": [
+    "data/review_queue.csv",
+    "data/review_coverage.csv",
+    "data/review_strata.csv"
+  ],
+  "existed": {
+    "data/review_queue.csv": true,
+    "data/review_coverage.csv": true,
+    "data/review_strata.csv": true
+  },
+  "sha256": {
+    "data/review_queue.csv": "1e834c8cef577fdf10d3802de4990b19ae2c20b24dcf73372dc6afe3948c1537",
+    "data/review_coverage.csv": "a59410a9c5e5cefcef3e6381959e7972c866b4c929e0f7b053a36fc440ef5b67",
+    "data/review_strata.csv": "aa91bc142b9846f29a528ad042782eab19aa0ea00c800cd01a597965544332bf"
+  }
+}

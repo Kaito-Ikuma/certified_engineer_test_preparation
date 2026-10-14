@@ -1,0 +1,45 @@
+{
+  "stem": "溶質粒子数と沸点上昇。",
+  "conditions": {
+    "量": "各0.10mol溶質、溶媒純水1.0kg。",
+    "濃度": "各0.10mol/kg。"
+  },
+  "choices": {
+    "1": {
+      "value": "すべて100°Cより低い",
+      "verdict": "不適切",
+      "reason": "不揮発性溶質による沸点上昇の向きと逆。"
+    },
+    "2": {
+      "value": "すべて高く同じ値",
+      "verdict": "不適切",
+      "reason": "分析濃度が同じでも電離後の粒子数が異なる。"
+    },
+    "3": {
+      "value": "NaClが最低",
+      "verdict": "不適切",
+      "reason": "粒子数約2のNaClは非電解質のグルコースより上昇が大きい。"
+    },
+    "4": {
+      "value": "グルコースが最高",
+      "verdict": "不適切",
+      "reason": "電離せず粒子数1のグルコースが最小の上昇。"
+    },
+    "5": {
+      "value": "CaCl2が最高",
+      "verdict": "条件内で適切",
+      "reason": "理想的な電離でCa2+とCl−2個、粒子数3に相当。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "100°Cの比較には純水の沸点100°Cとなる圧力を前提とする。実溶液の非理想性を無視した厳密なi=整数の断定にはしない。",
+  "evidence": [
+    "extracted/pages/H29/basic/page_015.png"
+  ],
+  "question_id": "H29-REG-BASIC-4-2",
+  "source_file": "sources/H29/basic.pdf",
+  "source_page": "15",
+  "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+  "raw_text_sha256": "fb8da357d0e8e3956164362e927709829ca81d20396876f823cad2fbd5add2e6",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

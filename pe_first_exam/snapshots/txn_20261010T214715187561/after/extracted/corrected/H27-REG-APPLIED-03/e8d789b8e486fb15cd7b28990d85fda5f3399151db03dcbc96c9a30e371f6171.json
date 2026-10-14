@@ -1,0 +1,45 @@
+{
+  "stem": "複スリットによる干渉縞の間隔を広げる変更を選ぶ。",
+  "conditions": {
+    "配置": "スリット間隔d、本数N、強度I、波長λ、スクリーン距離L。",
+    "方向": "明線（もしくは暗線）の相互間隔を広げる変更。"
+  },
+  "choices": {
+    "1": {
+      "value": "スリット間隔dを狭くする。",
+      "verdict": "最適",
+      "reason": "主極大間隔Lλ/dはdを小さくすると広がる。"
+    },
+    "2": {
+      "value": "スリットの本数Nを増やす。",
+      "verdict": "不適切",
+      "reason": "本数は主極大を狭く強くし、その間に副極大・暗線を増やすが、主極大同士の角間隔は変えない。"
+    },
+    "3": {
+      "value": "スクリーンまでの距離Lを短くする。",
+      "verdict": "不適切",
+      "reason": "Lを短くするとスクリーン上の主極大間隔は狭くなる。"
+    },
+    "4": {
+      "value": "入射光の強度Iを強くする。",
+      "verdict": "不適切",
+      "reason": "線形領域では強度は明るさを変え、位相の極大位置を変えない。"
+    },
+    "5": {
+      "value": "単色光の波長λを短くする。",
+      "verdict": "不適切",
+      "reason": "波長を短くすると主極大間隔は狭くなる。"
+    }
+  },
+  "figures": "原典の条件・数式・単位・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "公式・独立解答1一致。複スリットN>2では主極大間に副極大・N−1個の暗線があり、全暗線の隣接間隔を主極大間隔と同一にできない。原典の括弧書きの範囲をAstraで確認。",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_001.png"
+  ],
+  "question_id": "H27-REG-APPLIED-03",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "65d10f84c7cf01323a4254911a727c5a594d886a6a70f76634bcd77c40226525",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

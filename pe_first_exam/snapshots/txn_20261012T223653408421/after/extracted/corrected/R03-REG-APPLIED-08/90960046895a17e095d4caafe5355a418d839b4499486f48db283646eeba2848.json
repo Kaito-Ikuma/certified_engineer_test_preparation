@@ -1,0 +1,45 @@
+{
+  "stem": "結晶の配位数と塑性すべり条件を区別する。",
+  "conditions": {
+    "判断対象": "結晶の配位数と塑性すべり条件を区別する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "αFe/Cr/MoはBCCで充填約68%",
+      "verdict": "選ばない候補",
+      "reason": "BCC硬球充填率π√3/8≈0.680。"
+    },
+    "2": {
+      "value": "Al/Ni/CuはFCCで配位数8",
+      "verdict": "選ぶ候補",
+      "reason": "FCC最近接は12で8はBCC。"
+    },
+    "3": {
+      "value": "Mg/Zn/Cd/αTiはHCP",
+      "verdict": "選ばない候補",
+      "reason": "通常相の六方配列。Zn等の軸比を理想最密値へ固定しない。"
+    },
+    "4": {
+      "value": "分解剪断応力が臨界に達しすべる",
+      "verdict": "選ばない候補",
+      "reason": "τ=σcosφcosλのSchmid則に対応。"
+    },
+    "5": {
+      "value": "温度等で構造変化は同素変態",
+      "verdict": "選ばない候補",
+      "reason": "同元素の結晶構造が相条件で変わる。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "元素例は通常相を想定。HCPを全元素で理想最密軸比とする読みは避け、出題時全相条件は未指定。",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_003.png"
+  ],
+  "question_id": "R03-REG-APPLIED-08",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "f54e6a67648c13911a2a400b4fd78a66cef658b880c91db16f3e55805f6ee01a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

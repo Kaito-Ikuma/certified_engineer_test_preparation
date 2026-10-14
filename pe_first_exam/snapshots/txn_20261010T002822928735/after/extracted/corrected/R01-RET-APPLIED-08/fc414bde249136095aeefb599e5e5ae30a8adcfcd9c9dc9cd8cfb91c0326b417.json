@@ -1,0 +1,48 @@
+{
+  "stem": "負電荷を電場方向へゆっくり動かす外力の仕事から、電位差と電場の大きさを選ぶ。",
+  "conditions": {
+    "電荷": "−2 C",
+    "移動": "PからQ。電場の方向と移動方向は同じ。",
+    "外力の仕事": "80 J。ゆっくり移動し運動エネルギー変化を無視。",
+    "距離": "0.2 m",
+    "候補の順": "電位差／電場。電位差は候補に合わせ大きさを表す。"
+  },
+  "choices": {
+    "1": {
+      "value": "160 V／32 V·C",
+      "verdict": "条件に不一致",
+      "reason": "外力80 Jを電荷の絶対値2 Cで割ると40 Vであり、160 Vではない。"
+    },
+    "2": {
+      "value": "160 V／800 V/m",
+      "verdict": "条件に不一致",
+      "reason": "電位差の大きさは40 Vで、電場も200 V/mである。"
+    },
+    "3": {
+      "value": "40 V／200 V/m",
+      "verdict": "条件に一致",
+      "reason": "電位差の大きさ40 V、電場の大きさ200 V/mで両単位も合う。"
+    },
+    "4": {
+      "value": "40 V／400 V/m",
+      "verdict": "条件に不一致",
+      "reason": "40 Vは合うが距離は0.2 mなので電場は200 V/mである。"
+    },
+    "5": {
+      "value": "40 V／8 V·C",
+      "verdict": "条件に不一致",
+      "reason": "V·CはJに等しく、電場の単位V/mではない。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_003.png"
+  ],
+  "question_id": "R01-RET-APPLIED-08",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "20a5ae23bd2fc140d3db317924d9efa9c9689891ecbe78b59bfbd5bf4abcb6d8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

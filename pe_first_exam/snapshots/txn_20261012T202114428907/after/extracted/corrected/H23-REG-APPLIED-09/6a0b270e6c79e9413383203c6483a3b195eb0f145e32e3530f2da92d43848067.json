@@ -1,0 +1,45 @@
+{
+  "stem": "架橋による熱硬化と鎖の流動による熱可塑を区別する。",
+  "conditions": {
+    "判断対象": "架橋による熱硬化と鎖の流動による熱可塑を区別する。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "フェノール・ホルムアルデヒド",
+      "verdict": "選ぶ候補",
+      "reason": "三次元架橋網を作り硬化後は再溶融しない。"
+    },
+    "2": {
+      "value": "ポリスチレン",
+      "verdict": "選ばない候補",
+      "reason": "通常のPSは熱可塑。"
+    },
+    "3": {
+      "value": "PVC",
+      "verdict": "選ばない候補",
+      "reason": "通常のPVCは熱可塑。"
+    },
+    "4": {
+      "value": "PMMA",
+      "verdict": "選ばない候補",
+      "reason": "通常のPMMAは熱可塑。"
+    },
+    "5": {
+      "value": "PVDC",
+      "verdict": "選ばない候補",
+      "reason": "通常のPVDCは熱可塑。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/17_applied_science/page_004.png"
+  ],
+  "question_id": "H23-REG-APPLIED-09",
+  "source_file": "sources/H23/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+  "raw_text_sha256": "7789dc5fb1a6ac35ad57412c4635dc1dfa17c1b2cd6e9220349bb31e0c40dfa6",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

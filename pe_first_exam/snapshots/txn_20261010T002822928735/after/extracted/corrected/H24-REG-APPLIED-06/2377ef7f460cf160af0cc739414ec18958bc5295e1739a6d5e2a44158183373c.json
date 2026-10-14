@@ -1,0 +1,46 @@
+{
+  "stem": "真空中の2点電荷間の静電気力の大きさを求める。",
+  "conditions": {
+    "電荷": "+2.0×10⁻⁶ C、+1.5×10⁻⁶ C",
+    "距離": "0.30 m",
+    "係数": "9.0×10⁹ N·m²/C²"
+  },
+  "choices": {
+    "1": {
+      "value": "0.10 N",
+      "verdict": "条件に不一致",
+      "reason": "距離の逆二乗で評価した0.30 Nに一致しない。"
+    },
+    "2": {
+      "value": "0.15 N",
+      "verdict": "条件に不一致",
+      "reason": "0.30 Nの半分であり、クーロン力へ1/2を掛ける理由がない。"
+    },
+    "3": {
+      "value": "0.30 N",
+      "verdict": "条件に一致",
+      "reason": "電荷の積と距離の逆二乗から0.30 Nとなる。"
+    },
+    "4": {
+      "value": "1.0 N",
+      "verdict": "条件に不一致",
+      "reason": "与えられた電荷と距離では0.30 Nである。"
+    },
+    "5": {
+      "value": "3.0 N",
+      "verdict": "条件に不一致",
+      "reason": "正しい値の10倍である。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_002.png"
+  ],
+  "question_id": "H24-REG-APPLIED-06",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "dd3646ccf30e4dda1045bcf46a193b76d031d1e3473c596e74419836986aaf3f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

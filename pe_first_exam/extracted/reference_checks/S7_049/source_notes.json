@@ -1,0 +1,212 @@
+{
+  "reference_date": "2026-10-13",
+  "scope": "実際に読んだ本文・検索本文の範囲を個別記録。全文読了の主張なし。",
+  "references": [
+    {
+      "key": "analysis49_rna_ref",
+      "author": "Nobel Foundation",
+      "title": "Chemistry 1989 award ceremony speech",
+      "url": "https://www.nobelprize.org/prizes/chemistry/1989/ceremony-speech/",
+      "scope": "検索本文の触媒RNA・RNase P・自己スプライシングの段落確認。直接HTML取得エラーのため全講演全文確認とはしない。"
+    },
+    {
+      "key": "analysis49_amino_ref",
+      "author": "OpenStax",
+      "title": "Organic Chemistry 26.1 Structures of Amino Acids",
+      "url": "https://openstax.org/books/organic-chemistry/pages/26-1-structures-of-amino-acids",
+      "scope": "構造説明本文のアミノ基・カルボキシ基・双性イオンを確認。全表は確認対象外。"
+    },
+    {
+      "key": "analysis49_gpc_ref",
+      "author": "Shimadzu Corporation",
+      "title": "Measurement of Molecular Weight by using GPC method",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/analysis-basics/basic/55/55intro.html",
+      "scope": "GPC保持の標準校正と表1の数平均分子量・浸透圧及び分子量実例を確認。"
+    },
+    {
+      "key": "analysis49_chrom_ref",
+      "author": "Shimadzu Scientific Instruments",
+      "title": "Basics and Fundamentals of Gas Chromatography: Analysis Results",
+      "url": "https://www.ssi.shimadzu.com/service-support/technical-support/analysis-basics/fundamentals/results.html",
+      "scope": "本文の定性・絶対検量線・内標準・標準添加及びFPD硫黄応答の二乗関係を確認。"
+    },
+    {
+      "key": "analysis49_library_ref",
+      "author": "Shimadzu Corporation",
+      "title": "Mass Spectral Library Search",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/gas-chromatograph-mass-spectrometry/analysis-results/library/library.html",
+      "scope": "検索本文の質量スペクトルによるライブラリ同定を確認。保持時間単独の同定保証には使わない。"
+    },
+    {
+      "key": "analysis49_ms_ref",
+      "author": "Shimadzu Scientific Instruments",
+      "title": "Mass Analyzers",
+      "url": "https://www.ssi.shimadzu.com/service-support/technical-support/analysis-basics/fundamental/mass_analyzers.html",
+      "scope": "検索本文の質量電荷比によるイオン選別を確認。中性試料を分取する装置の説明には使わない。"
+    },
+    {
+      "key": "analysis49_hplc_ref",
+      "author": "Shimadzu Scientific Instruments",
+      "title": "HPLC Basics",
+      "url": "https://www.ssi.shimadzu.com/service-support/faq/liquid-chromatography/knowledge-base/hplc-basics/index.html",
+      "scope": "検索本文のHigh Performance名称とMS検出器の存在を確認。"
+    },
+    {
+      "key": "analysis49_xps_ref",
+      "author": "JEOL Ltd.",
+      "title": "X-ray photoelectron spectroscopy",
+      "url": "https://www.jeol.com/words/emterms/20121023.013400.php",
+      "scope": "検索本文の内殻結合エネルギーと化学シフトを確認。"
+    },
+    {
+      "key": "analysis49_sxes_ref",
+      "author": "JEOL Ltd.",
+      "title": "Soft X-ray emission spectrometer",
+      "url": "https://www.jeol.com/words/semterms/20170527.212359.php",
+      "scope": "検索本文の高分解能X線発光による結合状態解析を確認。すべての通常XRF装置が分解可能とはしない。"
+    },
+    {
+      "key": "analysis49_epma_ref",
+      "author": "JEOL Ltd.",
+      "title": "Electron probe microanalyzer",
+      "url": "https://www.jeol.com/words/emterms/20121023.071458.php",
+      "scope": "検索本文の局所電子線照射・特性X線分析を確認。"
+    },
+    {
+      "key": "analysis49_thermo_ref",
+      "author": "National Bureau of Standards",
+      "title": "Liquid-in-glass thermometer calibration guidance",
+      "url": "https://www.nist.gov/system/files/documents/2017/04/28/nbsir-79-1776.pdf",
+      "scope": "検索本文の全浸没と部分浸没の校正・露出水銀柱条件を確認。全文通読とはしない。"
+    },
+    {
+      "key": "analysis49_buoy_ref",
+      "author": "National Institute of Standards and Technology",
+      "title": "Calibration Facilities: Fluid Characterization Group",
+      "url": "https://www.nist.gov/mml/acmd/fluid-characterization-group/calibration-facilities",
+      "scope": "検索本文の温度・圧力・相対湿度からの空気密度及び浮力補正を確認。"
+    },
+    {
+      "key": "analysis49_fresh_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Freshwater resource distribution: Fact Sheet 2010-3106",
+      "url": "https://pubs.usgs.gov/fs/2010/3106/pdf/FS10-3106.pdf",
+      "scope": "検索本文の全地球水に占める淡水約2.5パーセントを確認。将来推計は引用しない。"
+    },
+    {
+      "key": "analysis49_darcy_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Techniques of Water-Resources Investigations 3-B2: groundwater hydraulics",
+      "url": "https://pubs.usgs.gov/twri/twri3-b2/pdf/TWRI_3-B2.pdf",
+      "scope": "検索本文Part IIのDarcy流束、固有透過度と流体依存Kを確認。全文通読とはしない。"
+    },
+    {
+      "key": "analysis49_storage_ref",
+      "author": "U.S. Geological Survey",
+      "title": "ModelMuse: Data sets required by MODFLOW",
+      "url": "https://water.usgs.gov/nrp/gwsoftware/ModelMuse/Help/data_sets_required_by_modflow.htm",
+      "scope": "検索本文の被圧貯留係数と比貯留率・層厚の積を確認。"
+    },
+    {
+      "key": "analysis49_runoff_ref",
+      "author": "U.S. Geological Survey",
+      "title": "Water-Resources Investigations Report 1999-4242: runoff mechanisms",
+      "url": "https://pubs.usgs.gov/wri/1999/4242/report.pdf",
+      "scope": "検索本文の浸透能超過Horton型と飽和型の区別を確認。図の見た目の確認は含まない。"
+    },
+    {
+      "key": "analysis49_koop_ref",
+      "author": "Massachusetts Institute of Technology",
+      "title": "Electrical Optical and Magnetic Properties of Materials: lecture 10",
+      "url": "https://ocw.mit.edu/courses/3-23-electrical-optical-and-magnetic-properties-of-materials-fall-2007/1e9c164a3efff4ba9655846180155a5c_clean10.pdf",
+      "scope": "検索本文KoopmansとHartree-Fock凍結軌道を確認。講義サイト2007とPDFヘッダ2006は統一しない。"
+    },
+    {
+      "key": "analysis49_pred_ref",
+      "author": "International Union of Pure and Applied Chemistry",
+      "title": "Gold Book: predissociation",
+      "url": "https://goldbook.iupac.org/terms/view/P04808",
+      "scope": "検索結果の用語定義を確認。直接取得エラーのため全文取得済みとはしない。"
+    },
+    {
+      "key": "analysis49_ir_ref",
+      "author": "OpenStax",
+      "title": "Organic Chemistry 12.7 Interpreting Infrared Spectra",
+      "url": "https://openstax.org/books/organic-chemistry/pages/12-7-interpreting-infrared-spectra",
+      "scope": "本文冒頭の伸縮・変角振動と官能基の近似吸収領域を確認。全図・全表は引用対象外。"
+    },
+    {
+      "key": "analysis49_cellulose_ref",
+      "author": "Sigma-Aldrich",
+      "title": "Cellulose fibrous medium C6288",
+      "url": "https://www.sigmaaldrich.com/CI/en/product/sigma/c6288",
+      "scope": "検索本文のセルロースの水不溶性を確認。鎖間水素結合の構造はOpenStax 25.9本文を追加確認。"
+    },
+    {
+      "key": "analysis49_co_ref",
+      "author": "Ohio State University",
+      "title": "Chemistry and Biochemistry Demonstration Lab: Main Group Elements",
+      "url": "https://u.osu.edu/cbcdemolab/demos-2/demos-by-topic/main-group-elements/",
+      "scope": "検索本文のギ酸・濃硫酸からCOと水の生成を確認。実演手順は転載しない。"
+    },
+    {
+      "key": "analysis49_gypsum_ref",
+      "author": "USG Corporation",
+      "title": "Gypsum misconceptions white paper",
+      "url": "https://qa.usg.com/content/dam/USG_Marketing_Communications/united_states/product_promotional_materials/finished_assets/usg-gypsum-misconceptions-white-paper-en-IG1847.pdf",
+      "scope": "検索本文の半水石膏から二水石膏への水和を確認。混練硬化は同社IG503の本文で追加確認。"
+    },
+    {
+      "key": "analysis49_esr_ref",
+      "author": "JEOL Ltd.",
+      "title": "Electron Spin Resonance Spectrometer: Instrument Basics",
+      "url": "https://www.jeol.com/products/science/esr.php",
+      "scope": "検索本文のESRとEPRの正式名、不対電子、静磁場とマイクロ波の機構を確認。"
+    },
+    {
+      "key": "analysis49_naa_ref",
+      "author": "International Atomic Energy Agency",
+      "title": "Neutron Activation Analysis: TECDOC-1401",
+      "url": "https://pub.iaea.org/MTCD/Publications/PDF/te_1401_web.pdf",
+      "scope": "検索本文の中性子照射による多元素分析の定義のみ確認。"
+    },
+    {
+      "key": "analysis49_xrf_ref",
+      "author": "Shimadzu Corporation",
+      "title": "The best technique for elemental analysis",
+      "url": "https://www.shimadzu-webapp.eu/magazine/issue-2014-1_en/the-best-technique-for-elemental-analysis/",
+      "scope": "検索本文の内殻電子電離・特性X線と同時多元素分析を確認。2014年の装置説明をH24当時の型式と断定しない。"
+    },
+    {
+      "key": "analysis49_beer_ref",
+      "author": "Shimadzu Corporation",
+      "title": "The Structure of a Spectrophotometer",
+      "url": "https://www.shimadzu.com/an/service-support/technical-support/uv/overview/structure.html",
+      "scope": "検索本文のLambert-Beer則・濃度と吸光度の比例を確認。"
+    },
+    {
+      "key": "analysis49_maldi_ref",
+      "author": "Shimadzu Corporation",
+      "title": "MALDI-Based Instruments and Solutions",
+      "url": "https://www.shimadzu.com/an/products/maldi/index.html",
+      "scope": "本文のMALDI正式名とマトリックス・レーザーによる脱離イオン化を確認。"
+    },
+    {
+      "key": "analysis49_cars_ref",
+      "author": "National Bureau of Standards",
+      "title": "Technical activities 1980: Center for Analytical Chemistry",
+      "url": "https://nvlpubs.nist.gov/nistpubs/Legacy/IR/nbsir80-2164.pdf",
+      "scope": "検索本文のCARS正式名coherent anti-Stokes Raman spectroscopyを確認。全文通読とはしない。"
+    }
+  ],
+  "additional_checks": [
+    {
+      "url": "https://openstax.org/books/organic-chemistry/pages/25-9-polysaccharides-and-their-synthesis",
+      "scope": "本文25–40のセルロース構造・鎖間水素結合を確認。"
+    },
+    {
+      "url": "https://pubs.usgs.gov/pp/1401d/report.pdf",
+      "scope": "検索本文D29のS=Ss mと単位体積の定義を確認。"
+    }
+  ]
+}

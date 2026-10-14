@@ -1,0 +1,45 @@
+{
+  "stem": "アミノ酸の官能基と触媒RNAの例外を確認する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "アミノ酸の官能基と触媒RNAの例外を確認する。"
+  },
+  "choices": {
+    "1": {
+      "value": "酵素はすべてタンパク質",
+      "verdict": "条件付き・解釈留保",
+      "reason": "タンパク質酵素が多数を占めるが触媒RNAであるリボザイムもある。すべてという全称は1989年以前の発見に照らしても成立しない。"
+    },
+    "2": {
+      "value": "アミノ基と水酸基がアミノ酸の定義",
+      "verdict": "不適切",
+      "reason": "必要な組合せはアミノ基とカルボキシ基。側鎖にOHを持つセリン等の例はあるが、全アミノ酸の要件ではない。カルボキシ基内のOHを遊離アルコール性水酸基と同一視しない。"
+    },
+    "3": {
+      "value": "アミノ酸がペプチド結合で連なるタンパク質",
+      "verdict": "通常の条件で適切",
+      "reason": "カルボキシ基とアミノ基の縮合に対応するアミド結合で主鎖を形成する。"
+    },
+    "4": {
+      "value": "等電点の差で電気泳動分離",
+      "verdict": "通常の条件で適切",
+      "reason": "pH勾配で正味電荷がゼロになるpIへ集中させる等電点電気泳動がある。"
+    },
+    "5": {
+      "value": "高次構造変化による変性と活性喪失",
+      "verdict": "条件付き・解釈留保",
+      "reason": "通常の変性の要点は主として二次・三次等の構造変化。全て不可逆、必ず全活性喪失、ペプチド鎖の分解という一般化はしない。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "公式単一正答は官能基の誤りH27=2/H30=5。酵素全称の肢1にもリボザイムの反例がある。H27初回理由で画像の水酸基をカルボキシ基と読み違えたが、再照合で水酸基を確認。初回JSONは不変で本文に訂正を明示。変性の活性喪失の一般化も留保。",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_006.png"
+  ],
+  "question_id": "H27-REG-APPLIED-16",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "cc88a7f0b62a96641e67ade826d43e5e5e283bc04d0295d739ed27acac20a658",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,85 @@
+{
+  "batch_id": "S7_024_height_terminology_revision",
+  "reference_date": "2026-10-11",
+  "questions": [
+    {
+      "question_id": "H26-REG-BASIC-2-6",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "stem": "道路網で通行できる車高の最大値を、各経路の最小車高制限から求める。",
+      "summary": "道路網で通行できる車高の最大値を、各経路の最小車高制限から求める。",
+      "conditions": {
+        "方向": "車高最大。",
+        "位置名": "以下の節点名は解説の独自呼称。A、U=左上、V=上中央、W=右上、R=右中、L=左中、P=内左下、D=左下、E=下中央、C=中央、Q=内右下、B。",
+        "全辺の車高制限": "AU8、AL9、UV4、UP3、VW9、WR7、RB6、LP2、LD6、PC6、PE6、DE7、CV5、CR3、CQ9、QB4、EQ5。",
+        "実現経路": "A-L-D-E-P-C-V-W-R-Bの最小5。"
+      },
+      "choices": {
+        "1": {
+          "value": "3",
+          "verdict": "最大でない",
+          "reason": "車高5まで通る経路があり最大でない。単一の車高制限3の道路を避ける経路も存在する。"
+        },
+        "2": {
+          "value": "4",
+          "verdict": "最大でない",
+          "reason": "車高制限4以下の道を通らなくても車高5の経路がある。最初に見つけた経路の車高制限を最大としない。"
+        },
+        "3": {
+          "value": "5",
+          "verdict": "適切",
+          "reason": "図のAから左中・左下・下中央・内左下・中央・上中央・上右・右中・Bへの経路の最小車高制限は5である。"
+        },
+        "4": {
+          "value": "6",
+          "verdict": "通行経路なし",
+          "reason": "車高6以上だけを残すとA側とB側が接続しない。経路全体の最小車高制限が車高を制限する。"
+        },
+        "5": {
+          "value": "7",
+          "verdict": "通行経路なし",
+          "reason": "車高7以上の経路がないことは6以上で既に分断されることからも分かる。最大制限の一辺だけでは判断できない。"
+        }
+      },
+      "figures": "全12節点17辺・車高制限と非接続交差を原典画像で確認。位置名は独自説明用、原典図転載なし。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H26/basic/page_008.png",
+        "extracted/pages/H26/basic/page_009.png"
+      ],
+      "core_concept": "経路の最小車高制限を最大化するボトルネック",
+      "required_knowledge": "max-min経路、閾値での到達可能性、図の交点と道路接続。",
+      "solution": "経路の通行可能車高は車高制限の最小、答えはそれを経路全体について最大化した値である。車高5の接続経路を示し、車高6以上の辺だけ残すと分断されることを確認するので最大値5。遅延の総和最小化を使わない。",
+      "independent_answer": "3",
+      "independent_solution_note": "18原典画像を確認してS7_024_independent_answers.jsonへ公式前の初回16解答を保存。道幅の経路最小を最大化し5。6以上では分断される。初回の道幅という呼称は原典の車高制限の誤記であり、数値・経路・初回3は保持して車高へ校正。初回を保持して限定条件を検討。",
+      "answer_reason": "経路の通行可能車高は車高制限の最小、答えはそれを経路全体について最大化した値である。車高5の接続経路を示し、車高6以上の辺だけ残すと分断されることを確認するので最大値5。遅延の総和最小化を使わない。",
+      "learning_points": "目的量・脅威・成立条件を定めてから手段を選ぶ。秘匿、改ざん検出、主体認証、再送防止、復旧は別の性質であり、方式名だけで全てを保証しない。",
+      "theory_references": [
+        "theory:network:bottleneck",
+        "theory:network:shortest"
+      ],
+      "discipline_id": "basic_2_8",
+      "concept_id": "network_path",
+      "cross_concepts": [],
+      "classification_reason": "中心は経路の最小車高制限を最大化するボトルネックである。通信の経路・輻輳、文書特徴量の類似、認証・攻撃防御を区別し、語としてネットワークが出るだけで経路問題へ分類しない。",
+      "calculation": "true",
+      "figure": "true",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "3",
+        "calculation_load": "0",
+        "figure_reading": "2",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻者に対しグラフの目的量・接続又はベクトルの正規化を読み計算する。原典の省略・時点疑義は難易度から分離する。"
+      },
+      "citations": [
+        "net_dijkstra"
+      ],
+      "foundationality": "high",
+      "transferability": "high",
+      "revision_of_content_sha256": "0b2534c218a1cad48f3c39b32aad3b31de99c359a952e9cc9d086300e4c5c196",
+      "revision_of_batch": "S7_024_network_security",
+      "revision_reason": "原典の車高制限の校正後、肢2の解説に残った幅という呼称も車高制限へ統一する。値・経路・初回・公式は保持。"
+    }
+  ]
+}

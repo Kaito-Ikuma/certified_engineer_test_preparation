@@ -1,0 +1,47 @@
+{
+  "stem": "塩化物、酸性下の硫化物、水酸化物を順に除いたろ液から、最後に硫化物として分離する陽イオンを特定する。",
+  "conditions": {
+    "I": "塩酸を滴下し沈殿をろ別",
+    "II": "Iのろ液中でチオアセトアミドCH3CSNH2の加水分解を行い、生成した沈殿をろ別",
+    "III": "IIのろ液中へアンモニア水を滴下し、生成した沈殿をろ別",
+    "IV": "IIIのろ液中へ硫化水素を滴下し、生成した沈殿をろ別"
+  },
+  "choices": {
+    "1": {
+      "value": "Na+",
+      "verdict": "不適切",
+      "reason": "操作I〜IVでの難溶沈殿として分離されず水溶液に残る。"
+    },
+    "2": {
+      "value": "Ag+",
+      "verdict": "不適切",
+      "reason": "Iの塩酸でAgClとして先に除く。"
+    },
+    "3": {
+      "value": "Cu2+",
+      "verdict": "不適切",
+      "reason": "IIの酸性硫化物の段階で先に除く。"
+    },
+    "4": {
+      "value": "Zn2+",
+      "verdict": "適切・選択対象",
+      "reason": "III後のアンモニア性ろ液にH2Sを加えるIVでZnSとして分離。"
+    },
+    "5": {
+      "value": "Fe3+",
+      "verdict": "不適切",
+      "reason": "IIIで水酸化物として先に除く。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "酸性度・濃度・錯形成の条件は出題の操作列に依存し一般条件へ無限定に拡張しない。",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_007.png"
+  ],
+  "question_id": "H26-REG-APPLIED-16",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "0f9aa2a018afa2623ab24a224e1ba9d37496431877eb56d6c20e13a0d88774af",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

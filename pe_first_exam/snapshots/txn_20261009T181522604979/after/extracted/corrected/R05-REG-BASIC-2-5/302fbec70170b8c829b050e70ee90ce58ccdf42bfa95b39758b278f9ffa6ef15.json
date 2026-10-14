@@ -1,0 +1,47 @@
+{
+  "stem": "2つの8ビット列を含む反復XORと最後のANDの結果を求める。",
+  "conditions": {
+    "A": "01011101",
+    "B": "10101101",
+    "演算": "\\(C=(((A\\oplus B)\\oplus B)\\oplus A)\\cdot A\\)",
+    "定義": "XORとANDは各桁で独立に作用する。"
+  },
+  "choices": {
+    "1": {
+      "value": "00000000",
+      "verdict": "条件に一致する候補",
+      "reason": "XORで同じBと同じAがそれぞれ相殺され、ゼロ列とAのANDもゼロ列となる。"
+    },
+    "2": {
+      "value": "11111111",
+      "verdict": "条件に一致しない候補",
+      "reason": "全ビット1ではなく、括弧内はゼロ列となる。"
+    },
+    "3": {
+      "value": "10101101",
+      "verdict": "条件に一致しない候補",
+      "reason": "入力Bを残す候補だが、Bは2回XORされて消える。"
+    },
+    "4": {
+      "value": "01011101",
+      "verdict": "条件に一致しない候補",
+      "reason": "入力Aを残す候補だが、括弧内でAも2回XORされて消える。"
+    },
+    "5": {
+      "value": "11110000",
+      "verdict": "条件に一致しない候補",
+      "reason": "A XOR Bの途中結果であり、その後のBとAのXORを省略している。"
+    }
+  },
+  "figures": "問題幹・数値・記号・5肢を画像確認。図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/basic/page_008.png"
+  ],
+  "question_id": "R05-REG-BASIC-2-5",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "8",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "12f5c3c8cb499f0f9870ea8f6d31b1a1b13dec9bbfecfc925bdaa5feee4dbd76",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "食品表示は期限・原産国・アレルギーを別に読む。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+    "時点": "平成25年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "XOOO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+    },
+    "2": {
+      "value": "OXOO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+    },
+    "3": {
+      "value": "OOOO",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "OOXO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+    },
+    "5": {
+      "value": "OOOX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OOOO と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "2013年は食品表示法公布と2015年施行を分ける。原料原産地の当時の全品目・特定原材料の指定を網羅照合していないため部分校正。最新の一律対象や品目数を補わない。",
+  "evidence": [
+    "extracted/pages/H25/aptitude/page_011.png"
+  ],
+  "question_id": "H25-REG-APT-10",
+  "source_file": "sources/H25/aptitude.pdf",
+  "source_page": "11",
+  "source_sha256": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+  "raw_text_sha256": "24d07d57a59455b7377fc4cad5dd26712f754a390d398b21954cbe520a95a993",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

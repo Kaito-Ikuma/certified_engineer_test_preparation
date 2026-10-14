@@ -1,0 +1,44 @@
+{
+  "stem": "DNA変性で解ける鎖間会合と残る主鎖結合、主鎖単位とGC含量を区別する。",
+  "conditions": {
+    "空欄": "ア〜エ。熱又は強アルカリで変性し、各鎖の基本構造は残る。"
+  },
+  "choices": {
+    "1": {
+      "value": "ジスルフィド／ヌクレオチド／ホスホジエステル／C",
+      "verdict": "不適切",
+      "reason": "主鎖単位とCは合うが、DNA塩基間はジスルフィド結合ではない。"
+    },
+    "2": {
+      "value": "ジスルフィド／アミノ酸／水素／U",
+      "verdict": "不適切",
+      "reason": "塩基間・核酸単位・主鎖結合・Gの相手を全て取り違える。"
+    },
+    "3": {
+      "value": "水素／ヌクレオチド／ホスホジエステル／C",
+      "verdict": "最適",
+      "reason": "2鎖間の水素結合と各鎖内のヌクレオチドをつなぐ共有結合を正しく区別し、GCにも整合する。"
+    },
+    "4": {
+      "value": "水素／アミノ酸／ジスルフィド／U",
+      "verdict": "不適切",
+      "reason": "鎖間は合うがアミノ酸とジスルフィドはタンパク質の概念であり、DNAのGの相手はC。"
+    },
+    "5": {
+      "value": "ホスホジエステル／ヌクレオチド／ジスルフィド／C",
+      "verdict": "不適切",
+      "reason": "主鎖ホスホジエステルと塩基間水素結合を逆にし、残る主鎖をジスルフィドとした点も誤り。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。空欄と5行の候補表を個別に照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/basic/page_020.png"
+  ],
+  "question_id": "H28-REG-BASIC-4-6",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "20",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "234c3dbc45bd9058a72d969cda6f3d63b6c7fcbc59fc4b6ce2669fdbc9dddacc",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

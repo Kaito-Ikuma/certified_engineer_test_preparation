@@ -1,0 +1,25 @@
+{
+  "status": "committed",
+  "time": "2026-10-10T21:48:33+09:00",
+  "paths": [
+    "generated/questions/applied_science/physics_chemistry/02_oscillation_wave.tex",
+    "generated/questions/applied_science/physics_chemistry/05_optics.tex",
+    "generated/questions/applied_science/physics_chemistry/06_modern_physics.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/physics_chemistry/02_oscillation_wave.tex": true,
+    "generated/questions/applied_science/physics_chemistry/05_optics.tex": true,
+    "generated/questions/applied_science/physics_chemistry/06_modern_physics.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/physics_chemistry/02_oscillation_wave.tex": "318304307af549d7f4b748a551e6416aed6b0d7bc0bfa96f4415615156757c35",
+    "generated/questions/applied_science/physics_chemistry/05_optics.tex": "3e7e8bd060ba0f38d5fe60e49e99f7576d78fabbfff3b3ec6d1fc109bd8313b8",
+    "generated/questions/applied_science/physics_chemistry/06_modern_physics.tex": "b3949ff2a30c9ae6f4c63bd757e1cdf3c43c919d1416363a93a07ab99b7e777d",
+    "generated/audit_summary.tex": "d120db751868455d4d1c389eab246ca1e2ae6e91da9449253d211f7a22d4409b",
+    "generated/frequency_tables.tex": "b63a32437811c0035f2b93fc34d9e1292bdfd0782a3bcfbb8d7b6e7583c28284"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "ワクチンの実践はウイルス発見に先行。",
+  "conditions": {
+    "原典": "全五肢と否定方向・組合せ表を画像確認。",
+    "資料時点": "令和5年度の指定資料・統計年を保持し、後年値に置換しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "望遠鏡後に土星の環確認",
+      "verdict": "条件内で適切",
+      "reason": "観測手段が天体の新しい知識を生む例。"
+    },
+    "2": {
+      "value": "量子力学後にトランジスター",
+      "verdict": "条件内で適切",
+      "reason": "20世紀前半の理論と1947の素子発明の順。"
+    },
+    "3": {
+      "value": "電磁波確認後にレーダー",
+      "verdict": "条件内で適切",
+      "reason": "Hertzの確認とその後の電波応用の順。"
+    },
+    "4": {
+      "value": "核分裂発見後に原子力発電",
+      "verdict": "条件内で適切",
+      "reason": "1938核分裂の後に発電利用へ進む。"
+    },
+    "5": {
+      "value": "ウイルス発見後にワクチン接種開始",
+      "verdict": "不適切・選択対象",
+      "reason": "Jennerの種痘1796はウイルス研究の19世紀末より先。病原体の詳細理解前にも技術が発達した。"
+    }
+  },
+  "figures": "文章五肢を独自要約。",
+  "ambiguity": "土星環の解釈・レーダー・発電開始の基準年は各一次史料へ追加照合。",
+  "evidence": [
+    "extracted/pages/R05/basic/page_018.png"
+  ],
+  "question_id": "R05-REG-BASIC-5-6",
+  "source_file": "sources/R05/basic.pdf",
+  "source_page": "18",
+  "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+  "raw_text_sha256": "b474f22aab47b4d8bb215bf8ee1cfc572c99b8713d7416f5d151fa461e52d6a9",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

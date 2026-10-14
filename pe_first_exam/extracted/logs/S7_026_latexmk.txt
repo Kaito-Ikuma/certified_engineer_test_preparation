@@ -1,0 +1,101 @@
+Rc files read:
+  latexmkrc
+Latexmk: This is Latexmk, John Collins, 31 Jan. 2024. Version 4.83.
+Latexmk: applying rule 'biber build/main'...
+Rule 'biber build/main':  Reasons for rerun
+Changed files or newly in use/created:
+  build/main.bcf
+
+------------
+Run number 1 of rule 'biber build/main'
+------------
+------------
+Running 'biber  "build/main.bcf"'
+------------
+INFO - This is Biber 2.19
+INFO - Logfile is 'build/main.blg'
+INFO - Reading 'build/main.bcf'
+INFO - Found 398 citekeys in bib section 0
+INFO - Processing section 0
+INFO - Looking for bibtex file 'references.bib' for section 0
+INFO - LaTeX decoding ...
+INFO - Found BibTeX data source 'references.bib'
+INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+INFO - No sort tailoring available for locale 'en-US'
+INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+INFO - Output to build/main.bbl
+Latexmk: Found biber source file(s) [build/main.bcf, references.bib]
+Latexmk: applying rule 'lualatex'...
+Rule 'lualatex':  Reasons for rerun
+Changed files or newly in use/created:
+  build/main.aux
+  build/main.bbl
+  build/main.out
+  build/main.toc
+
+------------
+Run number 1 of rule 'lualatex'
+------------
+------------
+Running 'lualatex -interaction=nonstopmode -halt-on-error -file-line-error  -recorder -output-directory="build"  "main.tex"'
+------------
+This is LuaHBTeX, Version 1.18.0 (TeX Live 2024) 
+ restricted system commands enabled.
+(./main.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-02-20>
+
+
+luaotfload | load : FATAL ERROR
+luaotfload | load :   × Failed to load "fontloader" module "basics-gen".
+luaotfload | load :   × Error message:
+luaotfload | load :     × "...024/texmf-dist/tex/luatex/luaotfload/luaotfload-init.lua:301: system : no writeable cache path, quiting".
+
+stack traceback:
+	...ive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload.lua:200: in local 'load_fontloader_module'
+	...024/texmf-dist/tex/luatex/luaotfload/luaotfload-init.lua:303: in upvalue 'init_main'
+	...024/texmf-dist/tex/luatex/luaotfload/luaotfload-init.lua:590: in function 'luaotfload-init.lua'
+	...ive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload.lua:322: in field 'main'
+	[\directlua]:1: in main chunk
+
+...024/texmf-dist/tex/luatex/luaotfload/luaotfload-init.lua:301: system : no wr
+iteable cache path, quiting
+stack traceback:
+	[C]: in function 'error'
+	...024/texmf-dist/tex/luatex/luaotfload/luaotfload-init.lua:301: in function '
+os.exit'
+	...ive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload.lua:203: in local 'loa
+d_fontloader_module'
+	...024/texmf-dist/tex/luatex/luaotfload/luaotfload-init.lua:303: in upvalue 'i
+nit_main'
+	...024/texmf-dist/tex/luatex/luaotfload/luaotfload-init.lua:590: in function '
+luaotfload-init.lua'
+	...ive/2024/texmf-dist/tex/luatex/luaotfload/luaotfload.lua:322: in field 'mai
+n'
+	[\directlua]:1: in main chunk.
+<everyjob> ...ring \\def\string \\encodingdefault{OT1}')end }
+                                                  \let \f@encoding \encoding...
+
+l.1 
+  \documentclass[a4paper,10pt,openany]{ltjsbook}
+ 275 words of node memory still in use:
+   1 hlist, 1 dir, 39 glue_spec nodes
+   avail lists: 2:12,3:3,4:1
+./main.tex:1:  ==> Fatal error occurred, no output PDF file produced!
+Transcript written on main.log.
+Latexmk: Sometimes, the -f option can be used to get latexmk
+  to try to force complete processing.
+  But normally, you will need to correct the file(s) that caused the
+  error, and then rerun latexmk.
+  In some cases, it is best to clean out generated files before rerunning
+  latexmk after you've corrected the files.
+Latexmk: Getting log file 'build/main.log'
+Latexmk: Examining 'build/main.fls'
+Latexmk: Examining 'build/main.log'
+Latexmk: Errors, so I did not complete making targets
+Collected error summary (may duplicate other messages):
+  lualatex: Command for 'lualatex' gave return code 1
+      Refer to 'build/main.log' and/or above output for details
+

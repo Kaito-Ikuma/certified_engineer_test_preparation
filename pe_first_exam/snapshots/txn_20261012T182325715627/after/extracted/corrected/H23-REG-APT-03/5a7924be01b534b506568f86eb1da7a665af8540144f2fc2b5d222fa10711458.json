@@ -1,0 +1,48 @@
+{
+  "stem": "通信技術を用いた入試不正を、公正な比較条件と倫理・法の関係から評価する。",
+  "conditions": {
+    "原典確認": "問題幹と各記述の主体・否定・全称・表の5候補を保存原典画像で確認。",
+    "制度時点": "H23年度の原典表現を保持。現行資料の条番号や仕様を過去へ補わない。",
+    "各記述の判断": "ア：○：共通条件の公正を維持する必要がある。；イ：×：業務や信用に対する犯罪もあり得る。；ウ：×：本人がリスクを負うだけでは他者への不公正を解消しない。；エ：○：新技術への法整備と倫理観の育成が必要である。",
+    "前提": "試験の成績は共通条件で比較する指標である。条件を破った得点は比較可能性を壊す。法が保護する利益は身体や物に限られない。"
+  },
+  "choices": {
+    "1": {
+      "value": "×・○・○・×",
+      "verdict": "不適切",
+      "reason": "記述ア・イ・ウ・エの真偽が逆である。"
+    },
+    "2": {
+      "value": "○・○・×・○",
+      "verdict": "不適切",
+      "reason": "記述イの真偽が逆である。"
+    },
+    "3": {
+      "value": "○・○・○・○",
+      "verdict": "不適切",
+      "reason": "記述イ・ウの真偽が逆である。"
+    },
+    "4": {
+      "value": "○・×・○・×",
+      "verdict": "不適切",
+      "reason": "記述ウ・エの真偽が逆である。"
+    },
+    "5": {
+      "value": "○・×・×・○",
+      "verdict": "適切",
+      "reason": "各記述の判断と全て一致する。"
+    }
+  },
+  "figures": "図なし。記号組合せ又は語句組合せ・個数を原典と照合。",
+  "ambiguity": "原典注記の刑法233条は2011年の懲役表現を保持する。具体的な事件の判決と現行刑罰条文全体は未照合であり、逮捕から有罪を補わない。",
+  "evidence": [
+    "extracted/pages/H23/aptitude/page_003.png",
+    "extracted/pages/H23/aptitude/page_004.png"
+  ],
+  "question_id": "H23-REG-APT-03",
+  "source_file": "sources/H23/aptitude.pdf",
+  "source_page": "3",
+  "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+  "raw_text_sha256": "ff14103ac119b545d03361751b8ef2fbe177ccfefabe29fc58c9c29e9c305144",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

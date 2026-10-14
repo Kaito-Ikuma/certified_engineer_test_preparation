@@ -1,0 +1,45 @@
+{
+  "stem": "電束密度・磁束密度を用いた電磁気の法則で、最も不適切なものを選ぶ。",
+  "conditions": {
+    "記号": "E=電場、D=電束密度、H=磁場、B=磁束密度、ρ=真電荷密度、i=伝導電流密度。",
+    "方向": "最も不適切な記述。"
+  },
+  "choices": {
+    "1": {
+      "value": "閉曲面を貫く電束は、内部にある真電荷の総量に等しい。",
+      "verdict": "適切",
+      "reason": "Dの閉曲面電束は自由電荷、原典の真電荷の総量に等しい。束縛電荷まで含むEの式と区別する。"
+    },
+    "2": {
+      "value": "\\(\\operatorname{rot}E=-\\partial B/\\partial t\\)は時間変化する磁束密度が電場を誘導する法則である。",
+      "verdict": "適切",
+      "reason": "ファラデーの法則の局所形で、負号は向きを表す。"
+    },
+    "3": {
+      "value": "\\(\\operatorname{div}B=0\\)は磁気単極子の存在を反映する。",
+      "verdict": "不適切",
+      "reason": "発散0は磁気単極子による湧き出し・吸込みがないという通常の電磁気学の式であり、存在と逆である。"
+    },
+    "4": {
+      "value": "\\(\\operatorname{rot}H=i+\\partial D/\\partial t\\)で\\(\\partial D/\\partial t\\)は変位電流密度である。",
+      "verdict": "適切",
+      "reason": "伝導電流に加える変位電流の項を正しく述べる。"
+    },
+    "5": {
+      "value": "磁場のガウス法則は時間変化する磁場にも成立する。",
+      "verdict": "適切",
+      "reason": "div B=0は静磁場だけの制限ではなく、マクスウェル方程式の一つである。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_001.png"
+  ],
+  "question_id": "H28-REG-APPLIED-03",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "ed72e00a29a3a46b3ca711829299f32ae4abacb461c5bf326dd262370a95ff5b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,46 @@
+{
+  "stem": "コイルを貫く磁束が一定速度で変わるときの誘導起電力の大きさを求める。",
+  "conditions": {
+    "巻数": "2000",
+    "磁束変化": "各巻きを貫く磁束が20秒で0.01 Wb変化。",
+    "速度": "一定の割合。1 Wb=1 V·s。"
+  },
+  "choices": {
+    "1": {
+      "value": "0.10 V",
+      "verdict": "条件に不一致",
+      "reason": "2000×0.01/20=1 Vと違う。"
+    },
+    "2": {
+      "value": "0.50 V",
+      "verdict": "条件に不一致",
+      "reason": "正しい値の1/2であり余分な係数がある。"
+    },
+    "3": {
+      "value": "1.0 V",
+      "verdict": "条件に一致",
+      "reason": "巻数×各巻きの磁束変化率に一致する。"
+    },
+    "4": {
+      "value": "2.5 V",
+      "verdict": "条件に不一致",
+      "reason": "磁束変化の時間20 sで割った1 Vと違う。"
+    },
+    "5": {
+      "value": "5.0 V",
+      "verdict": "条件に不一致",
+      "reason": "与えられた変化率では1 Vである。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_001.png"
+  ],
+  "question_id": "H27-REG-APPLIED-02",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "7ddac81b824caccce9c89bcb71447700e7ab8be3db2d045a766dc4ac2b174328",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

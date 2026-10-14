@@ -1,0 +1,45 @@
+{
+  "stem": "材料係数変更後の最大利益を求める。",
+  "conditions": {
+    "原典確認": "24保存原典画像の表・矢印・否定・全候補を照合。",
+    "対象": "材料係数変更後の最大利益を求める。"
+  },
+  "choices": {
+    "1": {
+      "value": "1200万円",
+      "verdict": "選ばない候補",
+      "reason": "最適利益より低い。"
+    },
+    "2": {
+      "value": "1500万円",
+      "verdict": "選ばない候補",
+      "reason": "製品1だけ5kgの利益。"
+    },
+    "3": {
+      "value": "1600万円",
+      "verdict": "選ばない候補",
+      "reason": "(2,5)の利益で最適より低い。"
+    },
+    "4": {
+      "value": "1800万円",
+      "verdict": "選ぶ候補",
+      "reason": "(4,3)で材料B15、時間7、利益1800。"
+    },
+    "5": {
+      "value": "1920万円",
+      "verdict": "選ばない候補",
+      "reason": "材料二式交点の利益だが時間7.8で不能。"
+    }
+  },
+  "figures": "表・矢印の構造は独自の式と時刻計算で説明。原典画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_004.png"
+  ],
+  "question_id": "R06-REG-BASIC-1-5",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "4",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "9c7838d2d295057c80ac17a528478fc23687d2f3e945a54dc07a3931816693e7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

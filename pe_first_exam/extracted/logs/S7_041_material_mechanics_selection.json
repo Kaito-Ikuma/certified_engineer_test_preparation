@@ -1,0 +1,118 @@
+{
+  "time": "2026-10-12T13:41:28.595204+09:00",
+  "official_consulted": false,
+  "records": [
+    {
+      "question_id": "H23-REG-BASIC-4-4",
+      "source_file": "sources/H23/basic.pdf",
+      "source_page": "13",
+      "source_sha256": "1e64b36209561a13cf9dd9f8c01cf7071db3267b8b102e73b3fe440909e41c0e",
+      "question_text_file": "extracted/questions/H23-REG-BASIC-4-4.txt",
+      "discipline_id": "basic_4_1"
+    },
+    {
+      "question_id": "H24-REG-BASIC-4-3",
+      "source_file": "sources/H24/basic.pdf",
+      "source_page": "13",
+      "source_sha256": "f98ff93a2f9786d6144689fc173409b2b7244582ad65e51ddf4c161920e6d533",
+      "question_text_file": "extracted/questions/H24-REG-BASIC-4-3.txt",
+      "discipline_id": "basic_4_1"
+    },
+    {
+      "question_id": "H26-REG-BASIC-4-3",
+      "source_file": "sources/H26/basic.pdf",
+      "source_page": "14",
+      "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+      "question_text_file": "extracted/questions/H26-REG-BASIC-4-3.txt",
+      "discipline_id": "basic_4_1"
+    },
+    {
+      "question_id": "H28-REG-BASIC-4-4",
+      "source_file": "sources/H28/basic.pdf",
+      "source_page": "18",
+      "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+      "question_text_file": "extracted/questions/H28-REG-BASIC-4-4.txt",
+      "discipline_id": "basic_4_1"
+    },
+    {
+      "question_id": "H30-REG-BASIC-4-4",
+      "source_file": "sources/H30/basic.pdf",
+      "source_page": "16",
+      "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+      "question_text_file": "extracted/questions/H30-REG-BASIC-4-4.txt",
+      "discipline_id": "basic_4_1"
+    },
+    {
+      "question_id": "H29-REG-BASIC-4-3",
+      "source_file": "sources/H29/basic.pdf",
+      "source_page": "16",
+      "source_sha256": "44af5abdd64f1e4abbd8daae537c8da12de87fef792e54288f8f2578a974d7bb",
+      "question_text_file": "extracted/questions/H29-REG-BASIC-4-3.txt",
+      "discipline_id": "basic_4_1"
+    },
+    {
+      "question_id": "R02-REG-BASIC-4-4",
+      "source_file": "sources/R02/basic.pdf",
+      "source_page": "17",
+      "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+      "question_text_file": "extracted/questions/R02-REG-BASIC-4-4.txt",
+      "discipline_id": "basic_4_1"
+    },
+    {
+      "question_id": "R03-REG-BASIC-4-3",
+      "source_file": "sources/R03/basic.pdf",
+      "source_page": "17",
+      "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+      "question_text_file": "extracted/questions/R03-REG-BASIC-4-3.txt",
+      "discipline_id": "basic_4_1"
+    },
+    {
+      "question_id": "R04-REG-BASIC-4-3",
+      "source_file": "sources/R04/basic.pdf",
+      "source_page": "14",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "question_text_file": "extracted/questions/R04-REG-BASIC-4-3.txt",
+      "discipline_id": "basic_4_1"
+    },
+    {
+      "question_id": "R04-REG-BASIC-4-4",
+      "source_file": "sources/R04/basic.pdf",
+      "source_page": "15",
+      "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+      "question_text_file": "extracted/questions/R04-REG-BASIC-4-4.txt",
+      "discipline_id": "basic_4_1"
+    },
+    {
+      "question_id": "R05-REG-BASIC-4-3",
+      "source_file": "sources/R05/basic.pdf",
+      "source_page": "13",
+      "source_sha256": "9df5a374254562b3196d52784e2f533959dfd80f914a41e3e65a488b93270c10",
+      "question_text_file": "extracted/questions/R05-REG-BASIC-4-3.txt",
+      "discipline_id": "basic_4_1"
+    },
+    {
+      "question_id": "R06-REG-BASIC-4-3",
+      "source_file": "sources/R06/basic.pdf",
+      "source_page": "15",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "question_text_file": "extracted/questions/R06-REG-BASIC-4-3.txt",
+      "discipline_id": "basic_4_1"
+    },
+    {
+      "question_id": "R06-REG-BASIC-4-4",
+      "source_file": "sources/R06/basic.pdf",
+      "source_page": "16",
+      "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+      "question_text_file": "extracted/questions/R06-REG-BASIC-4-4.txt",
+      "discipline_id": "basic_4_1"
+    },
+    {
+      "question_id": "R07-REG-BASIC-4-3",
+      "source_file": "sources/R07/basic.pdf",
+      "source_page": "13",
+      "source_sha256": "cc4720f1b8335558003467735e01982cb72aebbdeddf06ccbb4ee5891aa164d0",
+      "question_text_file": "extracted/questions/R07-REG-BASIC-4-3.txt",
+      "discipline_id": "basic_4_1"
+    }
+  ]
+}

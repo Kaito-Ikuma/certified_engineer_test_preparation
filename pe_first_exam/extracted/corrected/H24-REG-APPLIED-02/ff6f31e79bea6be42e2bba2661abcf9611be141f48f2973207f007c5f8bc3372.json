@@ -1,0 +1,45 @@
+{
+  "stem": "音の伝播、温度依存、流体の振動方向と固体の波速を判定する。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "範囲": "通常の音波。固体の比較は一般的な等方弾性体。"
+  },
+  "choices": {
+    "1": {
+      "value": "真空中では音は伝わらない。",
+      "verdict": "適切",
+      "reason": "音は媒質の圧縮・変位の伝播であり、真空にはその媒質がない。"
+    },
+    "2": {
+      "value": "空気の温度が高いほど音速は大きい。",
+      "verdict": "適切",
+      "reason": "理想気体の\\(c=\\sqrt{\\gamma RT/M}\\)では絶対温度の平方根に比例する。組成等を同じとして比較する。"
+    },
+    "3": {
+      "value": "流体中を伝わる音は縦波である。",
+      "verdict": "適切",
+      "reason": "静的せん断弾性を持たない流体では、通常の体積音波は圧縮の縦波となる。表面波とは区別。"
+    },
+    "4": {
+      "value": "海水中の音速は空気中より小さい。",
+      "verdict": "不適切",
+      "reason": "海水では概ね1500 m/s、空気では概ね340 m/sであり比較方向が逆。状態により変わるがこの大小は通常逆転しない。"
+    },
+    "5": {
+      "value": "一般に固体中の縦波は横波より速い。",
+      "verdict": "適切（一般的モデル）",
+      "reason": "安定な等方線形弾性体で\\(c_P^2-c_S^2=(K+\\mu/3)/\\rho>0\\)である。異方性媒質の全方向をこの式だけで扱わない。"
+    }
+  },
+  "figures": "原典の条件・数式・単位・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/17_applied_science/page_001.png"
+  ],
+  "question_id": "H24-REG-APPLIED-02",
+  "source_file": "sources/H24/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+  "raw_text_sha256": "dea32484e32481867d2f856b69acbc25d295356502ad5d61e7972e8bd56ddf42",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

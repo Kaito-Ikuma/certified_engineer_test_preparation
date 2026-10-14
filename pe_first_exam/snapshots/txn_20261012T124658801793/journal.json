@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-12T12:46:58+09:00",
+  "paths": [
+    "generated/questions/aptitude/03_compliance_accountability.tex"
+  ],
+  "existed": {
+    "generated/questions/aptitude/03_compliance_accountability.tex": true
+  },
+  "sha256": {
+    "generated/questions/aptitude/03_compliance_accountability.tex": "eea58b32fe91e40c44f0d5b6158d8732f733033fb27cb1508f820e2d382bb375"
+  }
+}

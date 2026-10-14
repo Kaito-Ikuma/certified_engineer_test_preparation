@@ -1,0 +1,45 @@
+{
+  "stem": "ばねの並列・直列と両側支持を区別。",
+  "conditions": {
+    "配置": "a並列、b左右の壁、c直列",
+    "共通": "ばね二本ともk、質点m、ばね質量・摩擦・減衰を無視。"
+  },
+  "choices": {
+    "1": {
+      "value": "a",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 c と異なる。"
+    },
+    "2": {
+      "value": "b",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 c と異なる。"
+    },
+    "3": {
+      "value": "c",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "a,b",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 c と異なる。"
+    },
+    "5": {
+      "value": "b,c",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 c と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/basic/page_013.png"
+  ],
+  "question_id": "R06-REG-BASIC-3-5",
+  "source_file": "sources/R06/basic.pdf",
+  "source_page": "13",
+  "source_sha256": "f4c593ee3d3afee341f56d1049c2ebf60e39b3141457cba2b112b7ac6a72a7b0",
+  "raw_text_sha256": "7b44ff6f4479c6fb87ba584589977bf5c9fa4330af9ba489c3310a76d6e85ab1",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

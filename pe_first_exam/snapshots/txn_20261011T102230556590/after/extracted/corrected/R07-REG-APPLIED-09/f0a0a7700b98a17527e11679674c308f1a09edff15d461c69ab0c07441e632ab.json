@@ -1,0 +1,45 @@
+{
+  "stem": "現行SIの基本単位と定義定数の対応を判定する。",
+  "conditions": {
+    "方向": "最も不適切なもの。",
+    "対象": "SIの定義・換算。定義の時点と指数を全肢画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "mは真空光速で定義。",
+      "verdict": "適切",
+      "reason": "真空光速cを299792458m/sに固定し、秒との関係からmを定義する。"
+    },
+    "2": {
+      "value": "Aは素電荷で定義。",
+      "verdict": "適切",
+      "reason": "素電荷e=1.602176634e-19Cを固定する。C=Asなので秒と電荷の関係でAを定義する。"
+    },
+    "3": {
+      "value": "kgは重力定数で定義。",
+      "verdict": "不適切",
+      "reason": "プランク定数h=6.62607015e-34Jsを固定する。Js=kg m²/sなのでmとsの既定義と結びkgを定義する。重力定数Gを固定しない。原典の重力Gとの対応が誤り。"
+    },
+    "4": {
+      "value": "molはアボガドロ定数で定義。",
+      "verdict": "適切",
+      "reason": "NA=6.02214076e23mol^-1を固定し、1molが含む指定要素粒子数を定める。粒子の種類を明示する。"
+    },
+    "5": {
+      "value": "cdは単色放射で定義。",
+      "verdict": "適切",
+      "reason": "540THzの単色放射の視感効果度Kcd=683lm/Wを固定する。光度は方向当たりの量で、現在は黒体温度を定義基準としない。"
+    }
+  },
+  "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_003.png"
+  ],
+  "question_id": "R07-REG-APPLIED-09",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "3",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "b6cb255795d4a491f7c9e6b3d148d6fca055dbf87bf6f06fc1bec66646d58638",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,44 @@
+{
+  "stem": "可逆/非可逆圧縮、代表形式、未知情報源への圧縮可能性と圧縮限界を比較する。",
+  "conditions": {
+    "方向": "最も不適切"
+  },
+  "choices": {
+    "1": {
+      "value": "可逆圧縮は完全復元しテキスト等で多用。",
+      "verdict": "適切",
+      "reason": "元ビット列を一意に復元する性質が可逆の定義である。文字1つの変更が意味を変えるテキストでは重要。"
+    },
+    "2": {
+      "value": "非可逆圧縮は完全復元しない場合があり音声・映像等で多用。",
+      "verdict": "適切",
+      "reason": "知覚上許せる情報損失を利用してデータ量を減らす。全ての音声/映像が非可逆という断定ではない。"
+    },
+    "3": {
+      "value": "JPEGは静止画、MPEGは動画の代表的圧縮方式。",
+      "verdict": "適切",
+      "reason": "代表用途として正しい。JPEG/MPEGは複数の方式・規格を持つ名称であり、全方式を一律に可逆/非可逆とは扱わない。"
+    },
+    "4": {
+      "value": "情報源の事前知識がなければデータ圧縮できない。",
+      "verdict": "不適切",
+      "reason": "データから頻度を学ぶ適応方式や繰り返しを辞書へ写す方式が反例。真の生起確率を事前に与える必要はない。"
+    },
+    "5": {
+      "value": "可逆圧縮には方式では超えられない限界がある。",
+      "verdict": "適切",
+      "reason": "一意復号可能な符号の平均長はエントロピーで制約され、全ての入力を必ず短くする単射も作れない。個別列が必ず同じ下限長という意味ではない。"
+    }
+  },
+  "figures": "問題幹・全5肢・数値・単位・否定を原典画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/basic/page_007.png"
+  ],
+  "question_id": "R02-REG-BASIC-2-1",
+  "source_file": "sources/R02/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "991f7e5b10bca35301f04cdcc6664ffc908d1bea59a7118bffef9cf90e7f2e9e",
+  "raw_text_sha256": "9e31333da901decd50ff9e6a12197b70d710bc16bc9035b0592d227a942992d4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

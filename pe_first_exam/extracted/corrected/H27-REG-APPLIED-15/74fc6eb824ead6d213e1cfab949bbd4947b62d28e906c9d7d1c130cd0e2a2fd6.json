@@ -1,0 +1,45 @@
+{
+  "stem": "蒸留の装置・操作・気液平衡を表す5用語の直接性を比較する。",
+  "conditions": {
+    "確認範囲": "問題幹、条件、否定、数値、単位、全5肢を原典画像で照合した。",
+    "成立条件": "最も関係が薄い用語を選ぶ。反応平衡定数と相分配の気液平衡比を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "平衡定数",
+      "verdict": "解釈未解決",
+      "reason": "化学反応の平衡定数という意味なら他候補より直接性が低いが、蒸留の気液平衡比 \\(K_i=y_i/x_i\\) もK値と呼ばれるため、関係がないとは断定できない。"
+    },
+    "2": {
+      "value": "理論段数",
+      "verdict": "適切",
+      "reason": "各段で気液が平衡に達する理想化に必要な接触段数であり、精留塔の分離能力を表す。"
+    },
+    "3": {
+      "value": "相対揮発度",
+      "verdict": "適切",
+      "reason": "2成分の気液平衡比の比であり、蒸留の分離の容易さを表す。"
+    },
+    "4": {
+      "value": "還流",
+      "verdict": "適切",
+      "reason": "凝縮した塔頂液の一部を塔へ戻し、上昇蒸気と接触させる。"
+    },
+    "5": {
+      "value": "充填塔",
+      "verdict": "適切",
+      "reason": "充填物の表面で液体と蒸気を接触させる装置であり、蒸留に使用する。"
+    }
+  },
+  "figures": "図なし。全5候補は文字又は温度値である。",
+  "ambiguity": "平衡定数の意味を原典は限定しない。気液平衡比にもK値があり、他肢より関係が薄いことの一意な根拠はAstra査読へ残す。",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_005.png"
+  ],
+  "question_id": "H27-REG-APPLIED-15",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "5",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "6d06fe5500737f5858254109bfb6ee6e7fcbf165688e49826ea5d7443b87bc5a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

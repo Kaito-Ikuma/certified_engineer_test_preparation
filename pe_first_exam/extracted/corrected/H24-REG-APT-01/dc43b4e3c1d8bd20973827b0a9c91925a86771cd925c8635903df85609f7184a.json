@@ -1,0 +1,44 @@
+{
+  "stem": "第4章の規定に照らして最も不適切な記述を選ぶ。",
+  "conditions": {
+    "条文範囲": "第44～47条の2。"
+  },
+  "choices": {
+    "1": {
+      "value": "信用失墜・集団の不名誉となる行為を禁止",
+      "verdict": "不適切な解答候補",
+      "reason": "第44条の内容であり適切である。"
+    },
+    "2": {
+      "value": "正当な理由なしに業務上の秘密を漏らし又は盗用しない。資格を失った後も同じ",
+      "verdict": "不適切な解答候補",
+      "reason": "第45条は資格喪失後の存続も定め、適切である。"
+    },
+    "3": {
+      "value": "公共の安全・環境その他公益を害さない努力",
+      "verdict": "不適切な解答候補",
+      "reason": "第45条の2の公益確保の責務であり適切である。"
+    },
+    "4": {
+      "value": "名称表示では登録部門を明示し未登録部門を表示しない",
+      "verdict": "不適切な解答候補",
+      "reason": "第46条の名称表示時の条件に一致する。"
+    },
+    "5": {
+      "value": "登録部門の力量は十分なので、それ以外だけの知識技能を向上させる",
+      "verdict": "適切な解答候補",
+      "reason": "第47条の2はその業務に関する知識技能の向上を求める。取得した専門部門の学習も続けるので不適切である。"
+    }
+  },
+  "figures": "図なし。組合せ表または個数選択肢は原典画像で確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H24/aptitude/page_001.png"
+  ],
+  "question_id": "H24-REG-APT-01",
+  "source_file": "sources/H24/aptitude.pdf",
+  "source_page": "1",
+  "source_sha256": "be4f05f20edd03b61562c0bad7495bcfdfa1951d005048c79f26e59292a8f188",
+  "raw_text_sha256": "a7418245884ed9f36f62c960e3995fb8e619f71bc74015fcd2413273ccf2c47f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

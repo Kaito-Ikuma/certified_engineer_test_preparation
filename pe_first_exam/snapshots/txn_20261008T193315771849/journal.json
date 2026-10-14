@@ -1,0 +1,19 @@
+{
+  "status": "committed",
+  "time": "2026-10-08T19:33:15+09:00",
+  "paths": [
+    "config/concepts.json",
+    "config/question_schema.json",
+    "config/concept_change_log_S7.json"
+  ],
+  "existed": {
+    "config/concepts.json": true,
+    "config/question_schema.json": true,
+    "config/concept_change_log_S7.json": false
+  },
+  "sha256": {
+    "config/concepts.json": "f12db757cd2a4678198dcc453a90866afc826f4c544fbc2a560100a47f03de0b",
+    "config/question_schema.json": "99b378659c1e3f745d07d97ef853a8f80e163b001f4136e378b89028fcc53a31",
+    "config/concept_change_log_S7.json": "6a4bb829fad12081feacb2f5d3059e2243c70a98c08e616745b5bd232d5d6d13"
+  }
+}

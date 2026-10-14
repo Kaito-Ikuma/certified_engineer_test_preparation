@@ -1,0 +1,46 @@
+{
+  "stem": "一次関数の区間−1〜1の積分を計算する式で、恒等的に使えないものを選ぶ。",
+  "conditions": {
+    "関数": "\\(f(x)=ax+b\\)",
+    "区間": "\\([-1,1]\\)",
+    "方向": "最も不適切な計算式。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(2f(0)\\)",
+      "verdict": "正しい",
+      "reason": "2bとなり正しい。"
+    },
+    "2": {
+      "value": "\\(f(-1)+f(1)\\)",
+      "verdict": "正しい",
+      "reason": "奇関数のaxが相殺され、2bとなり正しい。"
+    },
+    "3": {
+      "value": "\\(\\frac14f(-1)+f(0)+\\frac14f(1)\\)",
+      "verdict": "一般には誤り",
+      "reason": "結果は3b/2であり、一般のbで積分値2bと違う。"
+    },
+    "4": {
+      "value": "\\(\\frac12f(-1)+f(0)+\\frac12f(1)\\)",
+      "verdict": "正しい",
+      "reason": "結果は2bで正しい。"
+    },
+    "5": {
+      "value": "\\(\\frac13f(-1)+\\frac43f(0)+\\frac13f(1)\\)",
+      "verdict": "正しい",
+      "reason": "重みの和は2であり奇関数部分は相殺され、2bで正しい。"
+    }
+  },
+  "figures": "原典画像で微分の次数、成分、符号、積分範囲、全5候補を確認。設問固有の図なし。数式・行列は全行全列を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/basic/page_012.png"
+  ],
+  "question_id": "H28-REG-BASIC-3-1",
+  "source_file": "sources/H28/basic.pdf",
+  "source_page": "12",
+  "source_sha256": "baf501c88349587471f9aceb24093b82108c1bfa0f7ecd0f7e57e14d01cf4724",
+  "raw_text_sha256": "6978f1cbbd597a1fd9c77d9a3b8875bfb8dfa29b60a76cdc699c28f9fbfb6540",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

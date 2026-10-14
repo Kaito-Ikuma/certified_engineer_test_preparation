@@ -1,0 +1,71 @@
+{
+  "time": "2026-10-10T22:56:19+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_016_ethics_institutions",
+  "question_ids": [
+    "H24-REG-APT-13",
+    "H25-REG-APT-06",
+    "H26-REG-APT-06",
+    "H27-REG-APT-03",
+    "H27-REG-APT-15",
+    "H30-REG-APT-04",
+    "H30-REG-APT-14",
+    "R01-REG-APT-09",
+    "R01-REG-APT-14",
+    "R02-REG-APT-11",
+    "R02-REG-APT-15",
+    "R05-REG-APT-02",
+    "R05-REG-APT-09"
+  ],
+  "source_images": 13,
+  "initial_independent_matches": 12,
+  "corrected_verified": 12,
+  "partial": 1,
+  "reclassifications": 7,
+  "related_pairs_added": 3,
+  "related_pairs_total": 66,
+  "primary_references_added": 22,
+  "concepts_added": 5,
+  "canonical_counts": {
+    "recorded_at": "2026-10-10T22:27:07+09:00",
+    "registered": 1270,
+    "classification_verified": 337,
+    "summary_verified": 299,
+    "corrected_verified": 282,
+    "corrected_partial": 17,
+    "solution_drafts": 299,
+    "solution_verified": 0,
+    "manual_required": 988,
+    "subject_drafts": {
+      "BASIC": 82,
+      "APT": 76,
+      "APPLIED": 141
+    }
+  },
+  "theory_chapters_added_or_expanded": 5,
+  "pdf": {
+    "pages": 500,
+    "bytes": 2373237,
+    "visual_review_pages": [
+      148,
+      189,
+      192,
+      196,
+      210,
+      212,
+      213,
+      233
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "初期監査・1270個の実TeXラベル監査通過。内容変更のみで直近24コード回帰成功を保持。",
+  "risks": [
+    "H30APT14の1・3・4の個別刑事判決は一次資料未確認。初回2|5と公式ALLを区別して保持。",
+    "METI2024全文とISO2019関連PDFは403で未読。公式機関公開の確認できた資料の範囲に限定。",
+    "Astra未査読"
+  ],
+  "next": "S7_017生物28問を原典画像から独立解答して執筆。Checkpoint2未到達。"
+}

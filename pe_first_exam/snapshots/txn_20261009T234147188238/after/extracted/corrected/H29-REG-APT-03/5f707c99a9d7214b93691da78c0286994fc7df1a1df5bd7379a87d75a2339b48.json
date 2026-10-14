@@ -1,0 +1,45 @@
+{
+  "stem": "納期を短縮し原価を下げる工程変更の提案を検討する際、4事項の優先順位を選ぶ。",
+  "conditions": {
+    "状況": "材料の納入不足で遅延が生じ、納入業者が工程の一部変更を条件に早く安く納入できると提案。",
+    "表の順": "1番→2番→3番→4番。"
+  },
+  "choices": {
+    "1": {
+      "value": "納期→原価→品質→安全",
+      "verdict": "設問条件に不一致",
+      "reason": "納期と費用を守るため安全と品質の確認を後回しにしている。"
+    },
+    "2": {
+      "value": "安全→原価→品質→納期",
+      "verdict": "設問条件に不一致",
+      "reason": "安全を先にする点はよいが、仕様・性能へ関わる品質より原価を先にしている。"
+    },
+    "3": {
+      "value": "安全→品質→納期→原価",
+      "verdict": "設問条件に一致",
+      "reason": "この提案の条件ではまず安全と必要品質を確保し、残る実行可能な案の納期と費用を検討する。"
+    },
+    "4": {
+      "value": "品質→納期→安全→原価",
+      "verdict": "設問条件に不一致",
+      "reason": "安全を納期より下にしている。"
+    },
+    "5": {
+      "value": "品質→安全→原価→納期",
+      "verdict": "設問条件に不一致",
+      "reason": "品質を安全より先にし、残る二事項もこの候補比較での適切な順序と異なる。"
+    }
+  },
+  "figures": "原典画像で問題幹、条件、正誤の向き、全5肢、組合せ表の全セルを確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/aptitude/page_003.png"
+  ],
+  "question_id": "H29-REG-APT-03",
+  "source_file": "sources/H29/aptitude.pdf",
+  "source_page": "3",
+  "source_sha256": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+  "raw_text_sha256": "ea964b4bc280fab6b0f926c112545b752ec77c1ec5da2d535732454f39fdf90c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

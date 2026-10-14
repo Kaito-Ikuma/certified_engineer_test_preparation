@@ -1,0 +1,212 @@
+[
+  {
+    "question_id": "R03-REG-BASIC-5-1",
+    "independent_answer": "2",
+    "official_answer": "2",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R03-REG-BASIC-5-2",
+    "independent_answer": "5",
+    "official_answer": "5",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R03-REG-BASIC-5-3",
+    "independent_answer": "1",
+    "official_answer": "1",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R03-REG-BASIC-5-4",
+    "independent_answer": "2",
+    "official_answer": "2",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R03-REG-BASIC-5-5",
+    "independent_answer": "4",
+    "official_answer": "4",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R03-REG-BASIC-5-6",
+    "independent_answer": "4",
+    "official_answer": "4",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R04-REG-BASIC-5-1",
+    "independent_answer": "2",
+    "official_answer": "2",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R04-REG-BASIC-5-2",
+    "independent_answer": "1",
+    "official_answer": "1",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R04-REG-BASIC-5-3",
+    "independent_answer": "1",
+    "official_answer": "1",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R04-REG-BASIC-5-4",
+    "independent_answer": "5",
+    "official_answer": "5",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R04-REG-BASIC-5-5",
+    "independent_answer": "5",
+    "official_answer": "5",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R04-REG-BASIC-5-6",
+    "independent_answer": "3",
+    "official_answer": "3",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R05-REG-BASIC-5-1",
+    "independent_answer": "3",
+    "official_answer": "3",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R05-REG-BASIC-5-2",
+    "independent_answer": "5",
+    "official_answer": "5",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R05-REG-BASIC-5-3",
+    "independent_answer": "1",
+    "official_answer": "1",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R05-REG-BASIC-5-4",
+    "independent_answer": "2",
+    "official_answer": "2",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R05-REG-BASIC-5-5",
+    "independent_answer": "1",
+    "official_answer": "1",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R05-REG-BASIC-5-6",
+    "independent_answer": "5",
+    "official_answer": "5",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R06-REG-BASIC-5-1",
+    "independent_answer": "1",
+    "official_answer": "1",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R06-REG-BASIC-5-2",
+    "independent_answer": "5",
+    "official_answer": "5",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R06-REG-BASIC-5-3",
+    "independent_answer": "2",
+    "official_answer": "2",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R06-REG-BASIC-5-4",
+    "independent_answer": "4",
+    "official_answer": "4",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R06-REG-BASIC-5-5",
+    "independent_answer": "3",
+    "official_answer": "3",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R06-REG-BASIC-5-6",
+    "independent_answer": "2",
+    "official_answer": "2",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R07-REG-BASIC-5-1",
+    "independent_answer": "5",
+    "official_answer": "5",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R07-REG-BASIC-5-2",
+    "independent_answer": "3",
+    "official_answer": "3",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R07-REG-BASIC-5-3",
+    "independent_answer": "4",
+    "official_answer": "4",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R07-REG-BASIC-5-4",
+    "independent_answer": "2",
+    "official_answer": "2",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R07-REG-BASIC-5-5",
+    "independent_answer": "2",
+    "official_answer": "2",
+    "answer_kind": "single",
+    "equal": true
+  },
+  {
+    "question_id": "R07-REG-BASIC-5-6",
+    "independent_answer": "4",
+    "official_answer": "4",
+    "answer_kind": "single",
+    "equal": true
+  }
+]

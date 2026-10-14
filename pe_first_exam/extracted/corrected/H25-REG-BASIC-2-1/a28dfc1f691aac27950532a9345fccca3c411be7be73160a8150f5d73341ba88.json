@@ -1,0 +1,45 @@
+{
+  "stem": "二値ランプの個数が4から8へ増えたときの状態数の倍率を求める。",
+  "conditions": {
+    "判断対象": "積の法則と二値状態の全組合せ。",
+    "原典確認": "図・式・全5候補を29保存画像で確認。rawの数式欠落と演算子誤認は別校正JSONで扱う。"
+  },
+  "choices": {
+    "1": {
+      "value": "2倍",
+      "verdict": "不適切",
+      "reason": "ランプ個数の比であって状態数の比ではない。"
+    },
+    "2": {
+      "value": "4倍",
+      "verdict": "不適切",
+      "reason": "2個増加の倍率であり今回は4個増える。"
+    },
+    "3": {
+      "value": "8倍",
+      "verdict": "不適切",
+      "reason": "3個増加の倍率である。"
+    },
+    "4": {
+      "value": "16倍",
+      "verdict": "適切",
+      "reason": "2の8乗を2の4乗で割ると16である。"
+    },
+    "5": {
+      "value": "32倍",
+      "verdict": "不適切",
+      "reason": "5個増加の倍率である。"
+    }
+  },
+  "figures": "設問固有図なし。5候補と指数・記号を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/basic/page_006.png"
+  ],
+  "question_id": "H25-REG-BASIC-2-1",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "6",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "2e4d77753c034743722221014d87be286a798c64368ac9dd6e097472882d8b58",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

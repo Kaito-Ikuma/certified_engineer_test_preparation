@@ -1,0 +1,46 @@
+{
+  "stem": "OEM表示・無体物・不動産・未加工物の4記述を組合せに対応させる。",
+  "conditions": {
+    "原典条件": "問題幹、否定、ア等の記号順、5選択肢と個数又は表の全行を原典16画像で確認した。",
+    "論理条件": "列順ア・イ・ウ・エ。OEMの条件付該当性。",
+    "法の時点": "出題時の制度を保持。現行取得基準日は2026-10-12。2020年施行の期間変更を別記する。"
+  },
+  "choices": {
+    "1": {
+      "value": "正・正・正・誤",
+      "verdict": "組合せが不一致",
+      "reason": "各記述の判定はFTTTである。原典の列順で[1, 4]列目が異なる。"
+    },
+    "2": {
+      "value": "正・正・誤・正",
+      "verdict": "組合せが不一致",
+      "reason": "各記述の判定はFTTTである。原典の列順で[1, 3]列目が異なる。"
+    },
+    "3": {
+      "value": "正・誤・正・正",
+      "verdict": "組合せが不一致",
+      "reason": "各記述の判定はFTTTである。原典の列順で[1, 2]列目が異なる。"
+    },
+    "4": {
+      "value": "正・正・正・正",
+      "verdict": "組合せが不一致",
+      "reason": "各記述の判定はFTTTである。原典の列順で[1]列目が異なる。"
+    },
+    "5": {
+      "value": "誤・正・正・正",
+      "verdict": "適切な組合せ",
+      "reason": "各記述の判定はFTTTである。全ての列が一致する。"
+    }
+  },
+  "figures": "文字表又は記述問題であり図なし。組合せの各行は原典画像の列順を保持する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/aptitude/page_007.png"
+  ],
+  "question_id": "H28-REG-APT-07",
+  "source_file": "sources/H28/aptitude.pdf",
+  "source_page": "7",
+  "source_sha256": "2960d5ff16afaa394186362bb969ee236511012ee2819db45847199af58b073c",
+  "raw_text_sha256": "fcefcc38a084725ad746ca485d279e5f04617b34db0a72158dbe411adcae880c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,85 @@
+{
+  "time": "2026-10-11T09:57:09+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_021_geochemistry",
+  "question_ids": [
+    "H23-REG-APPLIED-18",
+    "H23-REG-APPLIED-19",
+    "H23-REG-APPLIED-22",
+    "H24-REG-APPLIED-33",
+    "H25-REG-APPLIED-10",
+    "H25-REG-APPLIED-31",
+    "H26-REG-APPLIED-18",
+    "H26-REG-APPLIED-25",
+    "H26-REG-APPLIED-27",
+    "H27-REG-APPLIED-27",
+    "H28-REG-APPLIED-27",
+    "H29-REG-APPLIED-20",
+    "H30-REG-APPLIED-28",
+    "R01-REG-APPLIED-20",
+    "R01-RET-APPLIED-18",
+    "R02-REG-APPLIED-19",
+    "R03-REG-APPLIED-18",
+    "R03-REG-APPLIED-19",
+    "R03-REG-APPLIED-21",
+    "R04-REG-APPLIED-19",
+    "R04-REG-APPLIED-20",
+    "R06-REG-APPLIED-22"
+  ],
+  "source_images": 19,
+  "initial_independent_matches": 21,
+  "corrected_verified": 11,
+  "partial": 11,
+  "related_pairs_added": 9,
+  "related_pairs_total": 109,
+  "primary_references_added": 25,
+  "concepts_added": 9,
+  "concept_total": 149,
+  "canonical_counts": {
+    "recorded_at": "2026-10-11T09:57:09+09:00",
+    "registered": 1270,
+    "classification_verified": 441,
+    "summary_verified": 405,
+    "corrected_verified": 366,
+    "corrected_partial": 39,
+    "solution_drafts": 405,
+    "solution_verified": 0,
+    "manual_required": 904,
+    "subject_drafts": {
+      "BASIC": 125,
+      "APT": 94,
+      "APPLIED": 186
+    }
+  },
+  "theory_sections_added": 21,
+  "labeled_theory_sections": 20,
+  "pdf": {
+    "pages": 606,
+    "bytes": 2968172,
+    "visual_review_pages": [
+      470,
+      472,
+      473,
+      474,
+      475,
+      483,
+      486,
+      492,
+      494
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draft・初期監査・1270ラベル監査成功、24回帰20.267秒成功。平衡矢印の許可と拒否回帰追加。Biber専用キャッシュで欠損Unicodeデータから復旧。",
+  "revisions": [
+    "S7_021_geochemistry_revision1：R06問22の必要知識を整理し反応式を別行表示。原典と初回解答を保持。"
+  ],
+  "risks": [
+    "H27問27初回4|5と公式5、珪藻成長と殻溶解・逆風化条件を保持。",
+    "炭酸カルシウム型の名称、陸水分母、長期炭素収支、金属ヒ素無毒、脱窒独立栄養の科学的例外、Eh条件・鉱物飽和条件を疑義11問として保持。",
+    "Astra未査読。865問未執筆。最終監査未実装。"
+  ],
+  "next": "S7_022同位体地球化学15問。15原典画像確認・公式前初回保存済、15公式一致。標準の歴史名称とCl36核反応は追加検討。全1270問と全章初稿・頻出分析まで続行。"
+}

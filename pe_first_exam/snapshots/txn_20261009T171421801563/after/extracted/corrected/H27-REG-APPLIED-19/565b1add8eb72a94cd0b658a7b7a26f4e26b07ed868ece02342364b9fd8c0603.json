@@ -1,0 +1,44 @@
+{
+  "stem": "放射能・地温・電磁・レーダ・重力探査の推定対象を比べ、CSAMTの物性を誤る記述を選ぶ。",
+  "conditions": {
+    "選択方向": "誤り又は最も不適切・関係の薄いものを1つ"
+  },
+  "choices": {
+    "1": {
+      "value": "放射能探査は主にガンマ線強度から断層等の地質情報を得る",
+      "verdict": "適切",
+      "reason": "天然放射性核種の分布や移動の差を地質情報として利用する。ガンマ線の減衰により観測は主に表層からの寄与であり、深部核種をそのまま透視する意味ではない。"
+    },
+    "2": {
+      "value": "地温探査は温泉・地熱・地下水等の調査に用いる",
+      "verdict": "適切",
+      "reason": "温度分布と熱の移流・伝導を手掛かりに熱水・地下水等を探る。"
+    },
+    "3": {
+      "value": "CSAMTは遠方人工源の直交水平電場・磁場から磁化率を得る",
+      "verdict": "不適切",
+      "reason": "主要な推定対象は比抵抗である。水平電場と磁場の比を磁化率そのものと取り違えている。"
+    },
+    "4": {
+      "value": "レーダは誘電率や導電率の違う境界の電磁反射を捉える",
+      "verdict": "適切",
+      "reason": "電気特性の差が波の伝播と反射を変えることを利用する。"
+    },
+    "5": {
+      "value": "重力は密度構造を求め、標高精度が重要である",
+      "verdict": "適切",
+      "reason": "標高1 mの誤差は標準鉛直勾配で約0.3086 mGalに相当し、微小重力異常の解釈を妨げる。"
+    }
+  },
+  "figures": "図なし。否定方向と全5肢を原典ページ画像で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/17_applied_science/page_007.png"
+  ],
+  "question_id": "H27-REG-APPLIED-19",
+  "source_file": "sources/H27/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+  "raw_text_sha256": "34a836cc0974169fd904b35c5df74af044e76485293f793ec456c6f7afe76fa5",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,47 @@
+{
+  "stem": "BCPの対象と策定状況、平時の効果。",
+  "conditions": {
+    "ア": "事業継続と目標復旧を計画する。",
+    "イ": "自然災害に限定。",
+    "ウ": "大企業・中堅企業ともほぼ100%とする。",
+    "エ": "平時の利点をすべて否定。"
+  },
+  "choices": {
+    "1": {
+      "value": "0件",
+      "verdict": "不適切",
+      "reason": "不適切はイ・ウ・エ。 判定を先に行った集計と一致しない。"
+    },
+    "2": {
+      "value": "1件",
+      "verdict": "不適切",
+      "reason": "不適切はイ・ウ・エ。 判定を先に行った集計と一致しない。"
+    },
+    "3": {
+      "value": "2件",
+      "verdict": "不適切",
+      "reason": "不適切はイ・ウ・エ。 判定を先に行った集計と一致しない。"
+    },
+    "4": {
+      "value": "3件",
+      "verdict": "条件内で適切",
+      "reason": "不適切はイ・ウ・エ。 集計と一致する。"
+    },
+    "5": {
+      "value": "4件",
+      "verdict": "不適切",
+      "reason": "不適切はイ・ウ・エ。 判定を先に行った集計と一致しない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "2019試験後の調査値を当時へ遡及しない。2018実態調査の対象・分母の全照合は査読対象。",
+  "evidence": [
+    "extracted/pages/R01/aptitude/page_013.png"
+  ],
+  "question_id": "R01-REG-APT-13",
+  "source_file": "sources/R01/aptitude.pdf",
+  "source_page": "13",
+  "source_sha256": "a0f8541b67b5f11803f4c0b0064d2d69e8486f21e7ece77f2121ef9a9063383f",
+  "raw_text_sha256": "6f54c5cb1b11107f9cac6c6d16ded54fd232293bebc263381b86b9dd664a6402",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,45 @@
+{
+  "stem": "設計軽量化の優先、ALARPの費用条件、使用国で理解できる警告と保守情報を検討する。",
+  "conditions": {
+    "判断方向": "各肢の理由に記録。組合せ・個数問題では記述の真偽と回答番号を区別する。",
+    "原典照合": "全5候補、表の列順、否定、条件、規格番号、法令時点を23原典画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "誤り1個",
+      "verdict": "不足",
+      "reason": "アは意匠優先で設計対策を省略、イは僅かな予算超過だけで省略し、少なくとも二つ誤る。"
+    },
+    "2": {
+      "value": "誤り2個",
+      "verdict": "不足",
+      "reason": "アとイだけでは、ウの使用国への情報という問題を落とす。"
+    },
+    "3": {
+      "value": "誤り3個",
+      "verdict": "初回・公式一致、ウの条件疑義",
+      "reason": "初回はア・イ・ウが誤りで3個。エは危険源と危害・結果、オは意思決定と誤使用回避、カは保守方法と訓練・保護具の情報として適切。"
+    },
+    "4": {
+      "value": "誤り4個",
+      "verdict": "過剰",
+      "reason": "エ・オ・カに第四の明確な誤りはない。"
+    },
+    "5": {
+      "value": "誤り5個",
+      "verdict": "過剰",
+      "reason": "エ・オ・カを一律に否定する根拠はない。"
+    }
+  },
+  "figures": "設問固有図なし。組合せ表がある問題では全候補の記号順を画像照合。",
+  "ambiguity": "ウの輸入国が未指定で英語が公用語又は適切な場合がある。Guide51の言語条項全文を未取得。ウの無条件な誤り認定には疑義を残し公式3・初回3を保持。",
+  "evidence": [
+    "extracted/pages/R03/aptitude/page_010.png"
+  ],
+  "question_id": "R03-REG-APT-10",
+  "source_file": "sources/R03/aptitude.pdf",
+  "source_page": "10",
+  "source_sha256": "73f1426490c272bb33312654f07964404c16a78e9b0ff238c54eca8178d939df",
+  "raw_text_sha256": "9eb8f58c319fb292f98fbbb8239282be0e37bb5a7d02b5aa68a702fc027c18af",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

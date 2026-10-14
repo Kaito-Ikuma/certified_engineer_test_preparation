@@ -1,0 +1,45 @@
+{
+  "stem": "火成岩の造岩鉱物と結晶構造に関する5記述のうち、最も不適切なものを選ぶ。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "主語": "原典は火成岩。OCRの別語へ置き換えない。"
+  },
+  "choices": {
+    "1": {
+      "value": "火成岩の主要な造岩鉱物はSiO4四面体を骨格とするケイ酸塩である",
+      "verdict": "主要鉱物について正しい",
+      "reason": "主要なケイ酸塩造岩鉱物を述べている。副成分を含む全鉱物という主張ではない。"
+    },
+    "2": {
+      "value": "結晶構造が同じで組成が連続的に変わる鉱物を多形という",
+      "verdict": "誤り",
+      "reason": "構造の型を保ち組成が変わるものは固溶体である。多形は同じ組成に異なる結晶構造が対応する。"
+    },
+    "3": {
+      "value": "黒雲母はSiO4四面体の層状構造を持ち、層間の結合が弱いため劈開が明瞭である",
+      "verdict": "正しい",
+      "reason": "四面体層を含む複合層と層間の結合の差が、底面劈開を生む。"
+    },
+    "4": {
+      "value": "玄武岩質マグマが冷えると、有色鉱物の中では融点が高いかんらん石が最初に晶出する",
+      "verdict": "通常の結晶化系列で正しい",
+      "reason": "通常のボーエン系列でかんらん石は高温側の初期鉱物である。実際の晶出は圧力・含水量・組成にも依存する。"
+    },
+    "5": {
+      "value": "かんらん石・普通輝石・普通角閃石・黒雲母・石英の中では石英の比重が最も小さい",
+      "verdict": "代表的物性で正しい",
+      "reason": "石英は約2.65で、候補の普通の有色鉱物より小さい。黒雲母の密度幅にも留意するが下端約2.7は石英より大きい。"
+    }
+  },
+  "figures": "図なし。原典頁画像で選択方向、観察条件、鉱物名と全5肢を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/17_applied_science/page_008.png"
+  ],
+  "question_id": "R06-REG-APPLIED-23",
+  "source_file": "sources/R06/17_applied_science.pdf",
+  "source_page": "8",
+  "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+  "raw_text_sha256": "3eaab25600239851d784327e863d75ab2b5171fe63cef88a89c4bcd83e26a3d3",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

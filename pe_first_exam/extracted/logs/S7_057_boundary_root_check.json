@@ -1,0 +1,6 @@
+{
+  "fixed_fixed_beam_beta1": 4.730040744862704,
+  "fixed_pinned_column_root": 4.493409457909063,
+  "fixed_pinned_K": 0.6991556596428413,
+  "method": "標準境界条件から得た特性方程式coshβ cosβ=1、tan z=zの非零最小根を二分法で検算。"
+}

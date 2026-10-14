@@ -1,0 +1,45 @@
+{
+  "stem": "比貯留率と貯留係数の次元と厚さ依存を確認する。",
+  "conditions": {
+    "原典確認": "S7_049の26原典画像で全五肢・否定・添字を確認。",
+    "対象": "比貯留率と貯留係数の次元と厚さ依存を確認する。"
+  },
+  "choices": {
+    "1": {
+      "value": "空気侵入の負圧水頭",
+      "verdict": "通常の条件で適切",
+      "reason": "飽和から吸引を増して空気が入る閾値。正の吸引量として表す別の符号規約と区別する。"
+    },
+    "2": {
+      "value": "透水係数は媒体固有だけではない",
+      "verdict": "通常の条件で適切",
+      "reason": "K=kρg/μで、流体の密度と粘性の影響も含む。"
+    },
+    "3": {
+      "value": "含水比は水質量／乾燥固相質量",
+      "verdict": "通常の条件で適切",
+      "reason": "通常百分率で表す。体積含水率や湿潤総質量を分母とする割合とは異なる。"
+    },
+    "4": {
+      "value": "単位体積の貯留係数を厚さ倍して比貯留率",
+      "verdict": "不適切",
+      "reason": "単位体積・単位水頭の量は比貯留率Ss。厚さを掛けて無次元貯留係数S=Ss bとなり、名前と関係が逆。"
+    },
+    "5": {
+      "value": "透水量係数はKと厚さの積",
+      "verdict": "通常の条件で適切",
+      "reason": "一定Kの水平帯水層でT=Kb。SI次元は面積／時間である。"
+    }
+  },
+  "figures": "図はない。原典画像は確認用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_007.png"
+  ],
+  "question_id": "R07-REG-APPLIED-19",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "046291d2ed5e7e75663040a3371a53b07dcf0f571c0b5d017a0c3df18b9e0216",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

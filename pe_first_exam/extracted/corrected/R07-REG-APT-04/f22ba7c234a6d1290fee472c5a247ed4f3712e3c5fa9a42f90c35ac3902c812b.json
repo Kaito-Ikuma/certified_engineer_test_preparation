@@ -1,0 +1,45 @@
+{
+  "stem": "協働の力を借りて確信の持てる業務を行う。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+    "時点": "令和7年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "公衆へ危害がある場合の代替案",
+      "verdict": "条件内で適切",
+      "reason": "客観的評価と改善により適切な解決を図る。"
+    },
+    "2": {
+      "value": "環境・経済・社会の負の影響の低減",
+      "verdict": "条件内で適切",
+      "reason": "持続可能な社会への責任に沿う。"
+    },
+    "3": {
+      "value": "協業が必要でも他者へ依頼しない",
+      "verdict": "不適切",
+      "reason": "自分と協業者の力量を生かす考え方に反し、必要な専門性を得る機会を捨てる。"
+    },
+    "4": {
+      "value": "業務地域の文化を尊重",
+      "verdict": "条件内で適切",
+      "reason": "国・地域の慣行や生活様式、宗教等を理解する。"
+    },
+    "5": {
+      "value": "社会に貢献する技術者を育成",
+      "verdict": "条件内で適切",
+      "reason": "継続研鑽と人材育成の指針に沿う。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/aptitude/page_004.png"
+  ],
+  "question_id": "R07-REG-APT-04",
+  "source_file": "sources/R07/aptitude.pdf",
+  "source_page": "4",
+  "source_sha256": "d1f4732eb7aecad4dfe345ff06152ba2b6499dc7f74b33905f214d86e0686d7f",
+  "raw_text_sha256": "fbb0e7f2c313e7d4805429df0a0e6e54848a60fd3c692dbe7af09f6a9fbdf1f4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

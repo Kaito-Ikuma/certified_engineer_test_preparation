@@ -1,0 +1,45 @@
+{
+  "stem": "異材両端固定棒の荷重点剛性。",
+  "conditions": {
+    "棒": "全長l、各区間l/2、断面積S一定、左E1・右E2。",
+    "支持": "両端固定、中央に軸方向P。"
+  },
+  "choices": {
+    "1": {
+      "value": "Pl/(2SE1)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Pl/[2S(E1+E2)] と異なる。"
+    },
+    "2": {
+      "value": "Pl/(2SE2)",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Pl/[2S(E1+E2)] と異なる。"
+    },
+    "3": {
+      "value": "Pl/[2S(E1+E2)]",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "3Pl/[2S(2E1+E2)]",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Pl/[2S(E1+E2)] と異なる。"
+    },
+    "5": {
+      "value": "Pl/[2S(E1−E2)]",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 Pl/[2S(E1+E2)] と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H27/basic/page_010.png"
+  ],
+  "question_id": "H27-REG-BASIC-3-5",
+  "source_file": "sources/H27/basic.pdf",
+  "source_page": "10",
+  "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+  "raw_text_sha256": "d4faaac414c81fd99c1e16f1adef12e252ea0e6787976a0a6d05863d1a784118",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,1323 @@
+{
+  "batch_id": "S7_039_geophysical_data",
+  "reference_date": "2026-10-12",
+  "questions": [
+    {
+      "question_id": "H23-REG-APPLIED-28",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "stem": "空間フィルタ・平均・インパルス応答・低域通過・標本化を区別する。",
+      "summary": "空間フィルタ・平均・インパルス応答・低域通過・標本化を区別する。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "通常の二次元画像と時系列を対象とする。低域は低周波数すなわち長周期である。"
+      },
+      "choices": {
+        "1": {
+          "value": "空間フィルタを二次元画像のエッジ・平滑化・差分に用いる",
+          "verdict": "適切",
+          "reason": "二次元データに対し空間方向の重み付けや差分を行う。一次元・三次元にも拡張でき、二次元しか扱えないという意味ではない。"
+        },
+        "2": {
+          "value": "注目点付近の移動平均でランダム成分を除去する",
+          "verdict": "条件付きで適切",
+          "reason": "独立で平均ゼロの雑音をM点平均すれば分散は1/Mに減る。有限Mで雑音が厳密にゼロになる保証はない。中央窓以外に因果的な後方窓もある。"
+        },
+        "3": {
+          "value": "線形システムのインパルス応答を重ねて任意入力への応答を求める",
+          "verdict": "条件付きで適切",
+          "reason": "線形性により各時刻のインパルスへの応答を重ねることはできる。単一の応答を時間移動する畳み込み表現には時不変性も必要であり、時変系には二時刻の応答を用いる。"
+        },
+        "4": {
+          "value": "低域通過は短周期を残し長周期を減衰させる",
+          "verdict": "不適切",
+          "reason": "周期Tと周波数fは逆数の関係である。低周波数は長周期なので、記述の通過側と減衰側は逆である。"
+        },
+        "5": {
+          "value": "一周期二標本未満では元データを再構成できない",
+          "verdict": "条件付きで適切",
+          "reason": "一般の帯域制限信号を一意に再構成するにはスペクトルの重なりを避ける標本化が必要である。特別な事前情報を持つ信号まで一律に不可能とする定理ではなく、最高周波数と標本化間隔を明示して読む。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "移動平均の除去は低減であり完全除去ではない。線形性だけで単一応答の畳み込みは保証しない。標本化の原文は一周期と間隔を混ぜた表現であるため、帯域と最高周波数を明示して条件付きで読む。",
+      "evidence": [
+        "extracted/pages/H23/17_applied_science/page_009.png"
+      ],
+      "core_concept": "空間フィルタ・平均・インパルス応答・低域通過・標本化を区別する。",
+      "required_knowledge": "通常の二次元画像と時系列を対象とする。低域は低周波数すなわち長周期である。",
+      "solution": "4は低域通過の役割を逆にしている。長周期成分を残し、短周期成分を減衰させるのが低域通過である。他の説明は典型的処理として読むが、完全除去と畳み込みの省略条件を残す。",
+      "answer_reason": "4は低域通過の役割を逆にしている。長周期成分を残し、短周期成分を減衰させるのが低域通過である。他の説明は典型的処理として読むが、完全除去と畳み込みの省略条件を残す。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回を保持。低域通過の短周期・長周期の役割が逆。線形性だけと時不変性、標本化の端点・帯域制限は別途留保する。",
+      "learning_points": "フィルタの名称を周波数で定義してから周期へ変換する。",
+      "theory_references": [
+        "theory:exploration:filters",
+        "theory:exploration:lti",
+        "theory:exploration:sampling"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_filter_types",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。フィルタの名称を周波数で定義してから周期へ変換する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。省略条件と他分野でも用いる手法の境界を考えるため知識名だけでは足りない。"
+      },
+      "citations": [
+        "mit_signals2010",
+        "mit_moving2012",
+        "scipy_notch",
+        "scipy_fft",
+        "usgs_processing2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-19",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "stem": "相互相関・重合・移動平均・FFT・ノッチの目的を対応させる。",
+      "summary": "相互相関・重合・移動平均・FFT・ノッチの目的を対応させる。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "二つの時系列の相関、複数記録の平均化、DFT、狭帯域阻止を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "相互相関から二波形の類似と時間遅れを検出する",
+          "verdict": "適切",
+          "reason": "一方の波形をずらして積の和又は平均を求め、相関の極大から遅れを推定する。極大が常に唯一とは限らず、周期性・雑音に注意する。"
+        },
+        "2": {
+          "value": "複数記録の重合でランダム雑音を抑える",
+          "verdict": "条件付きで適切",
+          "reason": "信号の位相をそろえ、雑音が独立又は無相関なら振幅S/Nは回数の平方根だけ改善する。相関雑音や未補正の走時差がある場合は同じ効果を保証しない。"
+        },
+        "3": {
+          "value": "注目点付近の移動平均でランダム成分を除去する",
+          "verdict": "条件付きで適切",
+          "reason": "独立で平均ゼロの雑音をM点平均すれば分散は1/Mに減る。有限Mで雑音が厳密にゼロになる保証はない。中央窓以外に因果的な後方窓もある。"
+        },
+        "4": {
+          "value": "FFTで離散時系列のフーリエ係数を高速に計算する",
+          "verdict": "適切",
+          "reason": "FFTはDFTと異なる変換ではなく、DFTを効率よく計算する算法である。標本化によるaliasingを自動的に取り除く算法ではない。"
+        },
+        "5": {
+          "value": "ノッチで指定周波数成分だけを通過させる",
+          "verdict": "不適切",
+          "reason": "ノッチは狭帯域阻止である。通過と遮断を逆にしており、帯域通過の説明と取り違えている。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "移動平均でランダム成分を除去するとは統計的な低減の意味である。信号まで平均化で弱める場合と、相関雑音が残る場合を区別する。",
+      "evidence": [
+        "extracted/pages/H24/17_applied_science/page_007.png"
+      ],
+      "core_concept": "相互相関・重合・移動平均・FFT・ノッチの目的を対応させる。",
+      "required_knowledge": "二つの時系列の相関、複数記録の平均化、DFT、狭帯域阻止を区別する。",
+      "solution": "5が不適切である。ノッチは特定周波数の周囲を阻止するものであり、その周波数だけを通過させる説明は逆である。ランダム雑音の抑制は統計的効果であり有限平均での完全消失ではない。",
+      "answer_reason": "5が不適切である。ノッチは特定周波数の周囲を阻止するものであり、その周波数だけを通過させる説明は逆である。ランダム雑音の抑制は統計的効果であり有限平均での完全消失ではない。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回を保持。ノッチは指定帯域を阻止する。指定周波数だけ通過は逆。",
+      "learning_points": "名称ではなく保持する成分と抑える成分を書く。",
+      "theory_references": [
+        "theory:exploration:filters",
+        "theory:exploration:correlation",
+        "theory:exploration:stack",
+        "theory:exploration:fft"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_filter_types",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。名称ではなく保持する成分と抑える成分を書く。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。省略条件と他分野でも用いる手法の境界を考えるため知識名だけでは足りない。"
+      },
+      "citations": [
+        "mit_signals2010",
+        "mit_moving2012",
+        "scipy_notch",
+        "scipy_fft",
+        "usgs_processing2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-35",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "stem": "相互相関・重合・移動平均・FFT・ノッチの目的を対応させる。",
+      "summary": "相互相関・重合・移動平均・FFT・ノッチの目的を対応させる。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "二つの時系列の相関、複数記録の平均化、DFT、狭帯域阻止を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "相互相関から二波形の類似と時間遅れを検出する",
+          "verdict": "適切",
+          "reason": "一方の波形をずらして積の和又は平均を求め、相関の極大から遅れを推定する。極大が常に唯一とは限らず、周期性・雑音に注意する。"
+        },
+        "2": {
+          "value": "複数記録の重合でランダム雑音を抑える",
+          "verdict": "条件付きで適切",
+          "reason": "信号の位相をそろえ、雑音が独立又は無相関なら振幅S/Nは回数の平方根だけ改善する。相関雑音や未補正の走時差がある場合は同じ効果を保証しない。"
+        },
+        "3": {
+          "value": "注目点付近の移動平均でランダム成分を除去する",
+          "verdict": "条件付きで適切",
+          "reason": "独立で平均ゼロの雑音をM点平均すれば分散は1/Mに減る。有限Mで雑音が厳密にゼロになる保証はない。中央窓以外に因果的な後方窓もある。"
+        },
+        "4": {
+          "value": "FFTで離散時系列のフーリエ係数を高速に計算する",
+          "verdict": "適切",
+          "reason": "FFTはDFTと異なる変換ではなく、DFTを効率よく計算する算法である。標本化によるaliasingを自動的に取り除く算法ではない。"
+        },
+        "5": {
+          "value": "ノッチで指定周波数成分だけを通過させる",
+          "verdict": "不適切",
+          "reason": "ノッチは狭帯域阻止である。通過と遮断を逆にしており、帯域通過の説明と取り違えている。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "移動平均でランダム成分を除去するとは統計的な低減の意味である。信号まで平均化で弱める場合と、相関雑音が残る場合を区別する。",
+      "evidence": [
+        "extracted/pages/H29/17_applied_science/page_012.png"
+      ],
+      "core_concept": "相互相関・重合・移動平均・FFT・ノッチの目的を対応させる。",
+      "required_knowledge": "二つの時系列の相関、複数記録の平均化、DFT、狭帯域阻止を区別する。",
+      "solution": "5が不適切である。ノッチは特定周波数の周囲を阻止するものであり、その周波数だけを通過させる説明は逆である。ランダム雑音の抑制は統計的効果であり有限平均での完全消失ではない。",
+      "answer_reason": "5が不適切である。ノッチは特定周波数の周囲を阻止するものであり、その周波数だけを通過させる説明は逆である。ランダム雑音の抑制は統計的効果であり有限平均での完全消失ではない。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回を保持。ノッチの通過と遮断を逆にしている。",
+      "learning_points": "名称ではなく保持する成分と抑える成分を書く。",
+      "theory_references": [
+        "theory:exploration:filters",
+        "theory:exploration:correlation",
+        "theory:exploration:stack",
+        "theory:exploration:fft"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_filter_types",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。名称ではなく保持する成分と抑える成分を書く。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。省略条件と他分野でも用いる手法の境界を考えるため知識名だけでは足りない。"
+      },
+      "citations": [
+        "mit_signals2010",
+        "mit_moving2012",
+        "scipy_notch",
+        "scipy_fft",
+        "usgs_processing2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-21",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "stem": "S/Nの平方根則・群設置・ADC・ノッチ・逆解析を区別する。",
+      "summary": "S/Nの平方根則・群設置・ADC・ノッチ・逆解析を区別する。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "同じ信号に独立同分散の雑音が重なる場合の振幅S/Nを考える。ADCの標本化周波数は信号帯域に対して設定する。"
+      },
+      "choices": {
+        "1": {
+          "value": "重合のS/N改善が回数の平方根に比例する",
+          "verdict": "条件付きで適切",
+          "reason": "同一位相信号はN倍、独立雑音の標準偏差は平方根N倍なので比は平方根N倍となる。"
+        },
+        "2": {
+          "value": "複数センサーの出力を群として結合し雑音を低減する",
+          "verdict": "条件付きで適切",
+          "reason": "独立雑音の平均化に加え、センサーの間隔と入射方向に応じた空間フィルタ効果を利用する。対象の反射波を強めるには位相・配置が適切でなければならない。"
+        },
+        "3": {
+          "value": "ADCの標本化周波数を信号の最高周波数と同じにする",
+          "verdict": "不適切",
+          "reason": "一般の信号に必要なNyquist条件を満たさずaliasingを起こす。同じ周波数にするのは正しい一般的設定ではない。"
+        },
+        "4": {
+          "value": "ノッチで特定の周波数成分を遮断する",
+          "verdict": "適切",
+          "reason": "狭い阻止帯域で商用電源などの周期的な混入を抑える。指定帯域だけを通過させるフィルタではない。実装には有限の帯域幅と位相応答がある。"
+        },
+        "5": {
+          "value": "モデルの理論値と観測値の差を非線形最小二乗等で小さくする",
+          "verdict": "適切",
+          "reason": "順モデルF(m)の残差を目的関数にして地下物性を更新する代表的な逆解析である。線形問題や他のノルムもあり、非線形最小二乗だけが唯一の方法ではない。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "平方根則は振幅S/Nと無相関雑音・同位相信号の条件付きであり、群設置も方向・間隔に依存する。",
+      "evidence": [
+        "extracted/pages/H26/17_applied_science/page_009.png"
+      ],
+      "core_concept": "S/Nの平方根則・群設置・ADC・ノッチ・逆解析を区別する。",
+      "required_knowledge": "同じ信号に独立同分散の雑音が重なる場合の振幅S/Nを考える。ADCの標本化周波数は信号帯域に対して設定する。",
+      "solution": "3が不適切である。標本化周波数を最高周波数と同じにすると、一般には異なる連続信号が同じ標本を与える。帯域制限を前提に二倍を超える周波数を用いる。他の候補は代表的な処理を説明する。",
+      "answer_reason": "3が不適切である。標本化周波数を最高周波数と同じにすると、一般には異なる連続信号が同じ標本を与える。帯域制限を前提に二倍を超える周波数を用いる。他の候補は代表的な処理を説明する。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回を保持。ADCの標本化周波数を最高周波数と同じにはできない。",
+      "learning_points": "雑音を振幅で測るか電力で測るかを先に固定する。",
+      "theory_references": [
+        "theory:exploration:stack",
+        "theory:exploration:sampling",
+        "theory:exploration:inverse"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_stack_snr",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。雑音を振幅で測るか電力で測るかを先に固定する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。省略条件と他分野でも用いる手法の境界を考えるため知識名だけでは足りない。"
+      },
+      "citations": [
+        "mit_signals2010",
+        "mit_moving2012",
+        "scipy_notch",
+        "scipy_fft",
+        "usgs_processing2000",
+        "pygimli_inversion"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-20",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "stem": "重合回数・コヒーレンス・標本化・帯域通過・FFTを比較する。",
+      "summary": "重合回数・コヒーレンス・標本化・帯域通過・FFTを比較する。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "振幅S/N、周波数ごとの二信号の関係、理想フィルタを区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "スタックのS/Nが回数Nに比例する",
+          "verdict": "不適切",
+          "reason": "信号はN倍、雑音の振幅尺度は平方根N倍なので振幅S/Nは平方根N倍である。電力比ならN倍となるため比の定義を明示する。"
+        },
+        "2": {
+          "value": "コヒーレンスは二つの時系列の周波数ごとの類似を示す相関係数である",
+          "verdict": "適切",
+          "reason": "周波数別の結び付きであり、代表的な二乗コヒーレンスは相互スペクトルの絶対値二乗を自己スペクトルの積で割る。時間領域の遅れ別相関そのものとは区別する。"
+        },
+        "3": {
+          "value": "最高周波数の二倍以上で標本化すれば完全復元できる",
+          "verdict": "条件付きで適切",
+          "reason": "帯域制限・理想的標本と再構成を想定した説明である。最高周波数成分を含む場合の等号端点、量子化、有限長、雑音を無視できない。安全な条件はfs>2fmaxであり、境界では位相によって標本が全てゼロとなる例がある。"
+        },
+        "4": {
+          "value": "帯域通過は設定帯域を減衰させず、それ以外を遮断する",
+          "verdict": "条件付きで適切",
+          "reason": "理想帯域通過の定義として読む。実際の設計では通過帯域のリップル、遷移帯域、有限減衰を持つため完全遮断を一般保証しない。"
+        },
+        "5": {
+          "value": "FFTは二のべき乗の標本数で効率的である",
+          "verdict": "適切",
+          "reason": "radix-2では段数がlog2Nとなる。二のべき乗でなければ計算不能という意味ではなく、混合基数やBluestein法もある。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "S/Nの振幅・電力定義が省略される。標本化の等号端点と完全復元、理想帯域通過の実装上の限界を区別する。",
+      "evidence": [
+        "extracted/pages/H27/17_applied_science/page_007.png"
+      ],
+      "core_concept": "重合回数・コヒーレンス・標本化・帯域通過・FFTを比較する。",
+      "required_knowledge": "振幅S/N、周波数ごとの二信号の関係、理想フィルタを区別する。",
+      "solution": "1が不適切である。振幅S/Nは独立雑音のとき平方根N倍であり、N倍ではない。コヒーレンスは相互スペクトルを両信号の自己スペクトルで規格化して比較する。",
+      "answer_reason": "1が不適切である。振幅S/Nは独立雑音のとき平方根N倍であり、N倍ではない。コヒーレンスは相互スペクトルを両信号の自己スペクトルで規格化して比較する。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回を保持。独立雑音の振幅S/N向上は加算回数の平方根でありN倍ではない。",
+      "learning_points": "振幅比と電力比、理想定義と実装の差を明示する。",
+      "theory_references": [
+        "theory:exploration:stack",
+        "theory:exploration:correlation",
+        "theory:exploration:sampling",
+        "theory:exploration:fft"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_stack_snr",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。振幅比と電力比、理想定義と実装の差を明示する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。省略条件と他分野でも用いる手法の境界を考えるため知識名だけでは足りない。"
+      },
+      "citations": [
+        "mit_signals2010",
+        "mit_moving2012",
+        "scipy_notch",
+        "scipy_fft",
+        "usgs_processing2000",
+        "scipy_coherence"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-20",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "stem": "移動平均と周期雑音除去の関係を検討する。",
+      "summary": "移動平均と周期雑音除去の関係を検討する。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "通常の移動平均は平滑化を行うが、窓長に応じた周波数応答の零点を持つ。"
+      },
+      "choices": {
+        "1": {
+          "value": "空間フィルタを二次元画像のエッジ・平滑化・差分に用いる",
+          "verdict": "適切",
+          "reason": "二次元データに対し空間方向の重み付けや差分を行う。一次元・三次元にも拡張でき、二次元しか扱えないという意味ではない。"
+        },
+        "2": {
+          "value": "移動平均は時系列の周期的雑音を除去するために用いる",
+          "verdict": "条件付きで適切",
+          "reason": "M点等重み平均の周波数応答はsin(Mω/2)/(M sin(ω/2))に位相因子を掛けたものである。ω=2πk/Mの非DC成分は消えるため、窓長を周期へ合わせる反例がある。一般に任意の周期雑音が消えるとは限らない。"
+        },
+        "3": {
+          "value": "線形システムのインパルス応答を重ねて任意入力への応答を求める",
+          "verdict": "条件付きで適切",
+          "reason": "線形性により各時刻のインパルスへの応答を重ねることはできる。単一の応答を時間移動する畳み込み表現には時不変性も必要であり、時変系には二時刻の応答を用いる。"
+        },
+        "4": {
+          "value": "低域通過で高周波を減衰させ低周波を通す",
+          "verdict": "条件付きで適切",
+          "reason": "低域通過の基本的な役割である。無減衰という文言は理想通過帯域のモデルであり、実装の位相・リップルは別に確認する。"
+        },
+        "5": {
+          "value": "一周期二標本未満では元データを再構成できない",
+          "verdict": "条件付きで適切",
+          "reason": "一般の帯域制限信号を一意に再構成するにはスペクトルの重なりを避ける標本化が必要である。特別な事前情報を持つ信号まで一律に不可能とする定理ではなく、最高周波数と標本化間隔を明示して読む。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "2には周期と窓長を合わせれば除去できる具体的反例がある。公式2を保持するが、数学的に周期雑音除去が不可能とは説明しない。3の時不変性と5の帯域・端点条件も省略される。",
+      "evidence": [
+        "extracted/pages/H28/17_applied_science/page_008.png"
+      ],
+      "core_concept": "移動平均と周期雑音除去の関係を検討する。",
+      "required_knowledge": "通常の移動平均は平滑化を行うが、窓長に応じた周波数応答の零点を持つ。",
+      "solution": "公式は2であり、一般的な移動平均を周期雑音専用の選択除去と説明する意図を不適切と読んでいる。しかし周期と窓長が一致する正弦波は移動平均で厳密に消せる。したがって周期雑音を除去できないという一般則へ書き換えず、原典の曖昧さを残す。",
+      "answer_reason": "公式は2であり、一般的な移動平均を周期雑音専用の選択除去と説明する意図を不適切と読んでいる。しかし周期と窓長が一致する正弦波は移動平均で厳密に消せる。したがって周期雑音を除去できないという一般則へ書き換えず、原典の曖昧さを残す。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回を保持。一般的な移動平均と周期雑音の選択除去を混同している。ただし周期と窓長が一致すれば除去可能であり疑義を残す。",
+      "learning_points": "移動平均の効果を目的名で決めず、入力周波数と窓長の応答を計算する。",
+      "theory_references": [
+        "theory:exploration:moving",
+        "theory:exploration:lti",
+        "theory:exploration:sampling"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_moving_average",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。移動平均の効果を目的名で決めず、入力周波数と窓長の応答を計算する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。省略条件と他分野でも用いる手法の境界を考えるため知識名だけでは足りない。"
+      },
+      "citations": [
+        "mit_signals2010",
+        "mit_moving2012",
+        "scipy_notch",
+        "scipy_fft",
+        "usgs_processing2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-34",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "stem": "重合のS/N指数と電源雑音・群設置・標本化・逆解析を照合する。",
+      "summary": "重合のS/N指数と電源雑音・群設置・標本化・逆解析を照合する。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "振幅S/Nは同一位相信号と独立雑音を想定する。"
+      },
+      "choices": {
+        "1": {
+          "value": "スタックのS/N改善が回数Nの二乗に比例する",
+          "verdict": "不適切",
+          "reason": "信号の振幅Nに対して雑音の標準偏差は平方根Nである。振幅比も電力比もNの二乗とはならない。"
+        },
+        "2": {
+          "value": "複数センサーの出力を群として結合し雑音を低減する",
+          "verdict": "条件付きで適切",
+          "reason": "独立雑音の平均化に加え、センサーの間隔と入射方向に応じた空間フィルタ効果を利用する。対象の反射波を強めるには位相・配置が適切でなければならない。"
+        },
+        "3": {
+          "value": "ノッチで特定の周波数成分を遮断する",
+          "verdict": "適切",
+          "reason": "狭い阻止帯域で商用電源などの周期的な混入を抑える。指定帯域だけを通過させるフィルタではない。実装には有限の帯域幅と位相応答がある。"
+        },
+        "4": {
+          "value": "最高周波数の二倍以上で標本化すれば完全復元できる",
+          "verdict": "条件付きで適切",
+          "reason": "帯域制限・理想的標本と再構成を想定した説明である。最高周波数成分を含む場合の等号端点、量子化、有限長、雑音を無視できない。安全な条件はfs>2fmaxであり、境界では位相によって標本が全てゼロとなる例がある。"
+        },
+        "5": {
+          "value": "モデルの理論値と観測値の差を非線形最小二乗等で小さくする",
+          "verdict": "適切",
+          "reason": "順モデルF(m)の残差を目的関数にして地下物性を更新する代表的な逆解析である。線形問題や他のノルムもあり、非線形最小二乗だけが唯一の方法ではない。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "群設置と平方根則は雑音相関・信号整列に依存し、標本化の等号と帯域制限を省略して完全復元を保証できない。",
+      "evidence": [
+        "extracted/pages/H30/17_applied_science/page_011.png"
+      ],
+      "core_concept": "重合のS/N指数と電源雑音・群設置・標本化・逆解析を照合する。",
+      "required_knowledge": "振幅S/Nは同一位相信号と独立雑音を想定する。",
+      "solution": "1が不適切である。平方根Nの向上をNの二乗とする誤りである。電力S/NでもN倍でありNの二乗にはならない。周期雑音には狭帯域阻止、物性推定には順モデルの残差最小化を対応させる。",
+      "answer_reason": "1が不適切である。平方根Nの向上をNの二乗とする誤りである。電力S/NでもN倍でありNの二乗にはならない。周期雑音には狭帯域阻止、物性推定には順モデルの残差最小化を対応させる。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回を保持。スタックの振幅S/N改善はNの平方根でありNの二乗ではない。",
+      "learning_points": "加算した信号と雑音を別々に計算して指数の誤りを検出する。",
+      "theory_references": [
+        "theory:exploration:stack",
+        "theory:exploration:filters",
+        "theory:exploration:inverse"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_stack_snr",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。加算した信号と雑音を別々に計算して指数の誤りを検出する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。省略条件と他分野でも用いる手法の境界を考えるため知識名だけでは足りない。"
+      },
+      "citations": [
+        "mit_signals2010",
+        "mit_moving2012",
+        "scipy_notch",
+        "scipy_fft",
+        "usgs_processing2000",
+        "pygimli_inversion"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-33",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "stem": "モデル更新・ノッチ・受振器群・標本化・垂直重合を区別する。",
+      "summary": "モデル更新・ノッチ・受振器群・標本化・垂直重合を区別する。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "同一起振点の反復で対象反射の位相をそろえる。群配置は対象波と妨害波の空間応答を考える。"
+      },
+      "choices": {
+        "1": {
+          "value": "モデルの理論値と観測値の差を非線形最小二乗等で小さくする",
+          "verdict": "適切",
+          "reason": "順モデルF(m)の残差を目的関数にして地下物性を更新する代表的な逆解析である。線形問題や他のノルムもあり、非線形最小二乗だけが唯一の方法ではない。"
+        },
+        "2": {
+          "value": "ノッチで特定の周波数成分を遮断する",
+          "verdict": "適切",
+          "reason": "狭い阻止帯域で商用電源などの周期的な混入を抑える。指定帯域だけを通過させるフィルタではない。実装には有限の帯域幅と位相応答がある。"
+        },
+        "3": {
+          "value": "受振器群で表面波を抑え反射波を強めランダム雑音を減らす",
+          "verdict": "条件付きで適切",
+          "reason": "複数受振器の結合には空間応答があり、反射と表面波の見掛け速度・波長に応じた選別を行える。配列が悪ければ必要信号も弱まるため無条件ではない。"
+        },
+        "4": {
+          "value": "最高周波数の二倍以上で標本化すれば完全復元できる",
+          "verdict": "条件付きで適切",
+          "reason": "帯域制限・理想的標本と再構成を想定した説明である。最高周波数成分を含む場合の等号端点、量子化、有限長、雑音を無視できない。安全な条件はfs>2fmaxであり、境界では位相によって標本が全てゼロとなる例がある。"
+        },
+        "5": {
+          "value": "垂直スタックのS/Nが回数Nの二乗に比例する",
+          "verdict": "不適切",
+          "reason": "独立同分散雑音の振幅S/N改善は平方根N倍である。Nの二乗は信号電力だけの増加を雑音の増加と比較せず取り出した誤りである。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "完全復元の等号端点・帯域制限、群配置の方向と間隔を要する。表面波抑制を独立雑音の平方根則だけで説明しない。",
+      "evidence": [
+        "extracted/pages/R04/17_applied_science/page_011.png"
+      ],
+      "core_concept": "モデル更新・ノッチ・受振器群・標本化・垂直重合を区別する。",
+      "required_knowledge": "同一起振点の反復で対象反射の位相をそろえる。群配置は対象波と妨害波の空間応答を考える。",
+      "solution": "5が不適切である。垂直重合の振幅S/Nは理論上平方根N倍でありNの二乗ではない。表面波は反射波に対する妨害波となるが、空間的に相関した波なので独立ランダム雑音の平均化と同じ説明だけでは足りない。",
+      "answer_reason": "5が不適切である。垂直重合の振幅S/Nは理論上平方根N倍でありNの二乗ではない。表面波は反射波に対する妨害波となるが、空間的に相関した波なので独立ランダム雑音の平均化と同じ説明だけでは足りない。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回を保持。バーティカルスタックの独立雑音S/N改善はNの平方根でありNの二乗ではない。",
+      "learning_points": "信号の種類、統計的相関、配列の空間応答を分ける。",
+      "theory_references": [
+        "theory:exploration:stack",
+        "theory:exploration:filters",
+        "theory:exploration:inverse"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_stack_snr",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。信号の種類、統計的相関、配列の空間応答を分ける。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。省略条件と他分野でも用いる手法の境界を考えるため知識名だけでは足りない。"
+      },
+      "citations": [
+        "mit_signals2010",
+        "mit_moving2012",
+        "scipy_notch",
+        "scipy_fft",
+        "usgs_processing2000",
+        "pygimli_inversion"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-31",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "順問題と逆問題、対象依存の雑音、標本化と重合を区別する。",
+      "summary": "順問題と逆問題、対象依存の雑音、標本化と重合を区別する。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "地下モデルからデータを予測するのが順問題、観測データから地下を推定するのが逆問題である。"
+      },
+      "choices": {
+        "1": {
+          "value": "地下推定の解析が順問題、データを得る計測が逆問題である",
+          "verdict": "不適切",
+          "reason": "F(m)でモデルからデータを計算するのが順問題である。与えたデータからmを推定するのが逆問題であり、原典の役割は逆転している。"
+        },
+        "2": {
+          "value": "入力信号によって発生した表面波でも解析対象でなければ雑音である",
+          "verdict": "適切",
+          "reason": "ノイズは対象に対する不要成分の呼び方である。表面波探査では信号となる同じ波が、反射法では相関した妨害波となり得る。"
+        },
+        "3": {
+          "value": "最高周波数の二倍以上で標本化すれば完全復元できる",
+          "verdict": "条件付きで適切",
+          "reason": "帯域制限・理想的標本と再構成を想定した説明である。最高周波数成分を含む場合の等号端点、量子化、有限長、雑音を無視できない。安全な条件はfs>2fmaxであり、境界では位相によって標本が全てゼロとなる例がある。"
+        },
+        "4": {
+          "value": "ノッチで特定の周波数成分を遮断する",
+          "verdict": "適切",
+          "reason": "狭い阻止帯域で商用電源などの周期的な混入を抑える。指定帯域だけを通過させるフィルタではない。実装には有限の帯域幅と位相応答がある。"
+        },
+        "5": {
+          "value": "重合によるランダム雑音に対するS/Nが回数の平方根になる",
+          "verdict": "条件付きで適切",
+          "reason": "同一信号の位相と振幅がそろい、雑音が無相関・平均ゼロ・同分散なら成り立つ。一般には元のS/Nに平方根Nを掛ける改善倍率を意味する。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "標本化の等号端点と帯域制限、理想再構成の条件が省略される。S/Nの平方根は改善倍率であり、元のS/Nが常に1ではない。",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_011.png"
+      ],
+      "core_concept": "順問題と逆問題、対象依存の雑音、標本化と重合を区別する。",
+      "required_knowledge": "地下モデルからデータを予測するのが順問題、観測データから地下を推定するのが逆問題である。",
+      "solution": "1が不適切である。地下構造を求める解析を順問題、計測を逆問題とする対応が逆である。計測そのものはデータ取得であり、順問題とはモデルからデータを計算する写像を指す。",
+      "answer_reason": "1が不適切である。地下構造を求める解析を順問題、計測を逆問題とする対応が逆である。計測そのものはデータ取得であり、順問題とはモデルからデータを計算する写像を指す。",
+      "independent_answer": "1",
+      "independent_solution_note": "公式前の初回を保持。地下モデルからデータを予測するのが順問題、データから地下を推定するのが逆問題。",
+      "learning_points": "ノイズをランダムに限らず目的から定義し、写像の向きで順逆を区別する。",
+      "theory_references": [
+        "theory:exploration:inverse",
+        "theory:exploration:stack",
+        "theory:exploration:sampling"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_forward_inverse",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。ノイズをランダムに限らず目的から定義し、写像の向きで順逆を区別する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。省略条件と他分野でも用いる手法の境界を考えるため知識名だけでは足りない。"
+      },
+      "citations": [
+        "mit_signals2010",
+        "mit_moving2012",
+        "scipy_notch",
+        "scipy_fft",
+        "usgs_processing2000",
+        "pygimli_inversion"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H24-REG-APPLIED-23",
+      "source_sha256": "8c39f6ab34dbcaf90624ffb1f69f0d9653b5c38bdc3bc6255be9d57d266272cf",
+      "stem": "地震探査の走時・反射用語と重力補正を区別する。",
+      "summary": "地震探査の走時・反射用語と重力補正を区別する。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "地震探査は波の走時・波形、重力探査は加速度の異常を測る。"
+      },
+      "choices": {
+        "1": {
+          "value": "原点走時",
+          "verdict": "適切",
+          "reason": "屈折波の走時直線を距離ゼロへ外挿した切片である。直線の傾きと合わせて層厚等を推定する。実測した距離ゼロの初動時刻とは同一視しない。"
+        },
+        "2": {
+          "value": "ブラインド層",
+          "verdict": "適切",
+          "reason": "屈折法の初動走時に現れにくい層である。薄い中間層が初動を与えない場合や低速度層を区別し、用語の範囲は資料により異なる。"
+        },
+        "3": {
+          "value": "音響インピーダンス",
+          "verdict": "適切",
+          "reason": "垂直入射の簡単なモデルではZ=ρVであり、境界両側の差が反射振幅を支配する。重力で用いる密度そのものだけとは異なる。"
+        },
+        "4": {
+          "value": "ブーゲー補正",
+          "verdict": "不適切",
+          "reason": "測点と基準面の間の質量が重力へ及ぼす効果を補正する重力探査の処理である。地震波走時に対する静補正ではない。"
+        },
+        "5": {
+          "value": "静補正",
+          "verdict": "適切",
+          "reason": "地形や表層低速度層などによる走時ずれを一定の時間シフトとしてそろえる処理である。重力の地形・Bouguer補正と観測量が異なる。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H24/17_applied_science/page_007.png"
+      ],
+      "core_concept": "地震探査の走時・反射用語と重力補正を区別する。",
+      "required_knowledge": "地震探査は波の走時・波形、重力探査は加速度の異常を測る。",
+      "solution": "4のブーゲー補正が不適切である。地震探査に関係する四つは、屈折波の走時切片、初動に現れにくい層、反射を支配するインピーダンス、地形や表層に由来する静的走時ずれに対応する。",
+      "answer_reason": "4のブーゲー補正が不適切である。地震探査に関係する四つは、屈折波の走時切片、初動に現れにくい層、反射を支配するインピーダンス、地形や表層に由来する静的走時ずれに対応する。",
+      "independent_answer": "4",
+      "independent_solution_note": "公式前の初回を保持。ブーゲー補正は重力探査の質量補正である。",
+      "learning_points": "処理名だけでなく何を補正し、単位は何かを問う。",
+      "theory_references": [
+        "theory:exploration:seismicterms",
+        "theory:gravity:corrections"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_seismic_terms",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。処理名だけでなく何を補正し、単位は何かを問う。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。観測量と処理の目的を照合して選ぶ。"
+      },
+      "citations": [
+        "usgs_refraction2013",
+        "epa_seismic_reflection",
+        "usgs_static2004",
+        "usgs_processing2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-33",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "stem": "地震探査の走時・反射用語と重力補正を区別する。",
+      "summary": "地震探査の走時・反射用語と重力補正を区別する。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "地震探査は波の走時・波形、重力探査は加速度の異常を測る。"
+      },
+      "choices": {
+        "1": {
+          "value": "原点走時",
+          "verdict": "適切",
+          "reason": "屈折波の走時直線を距離ゼロへ外挿した切片である。直線の傾きと合わせて層厚等を推定する。実測した距離ゼロの初動時刻とは同一視しない。"
+        },
+        "2": {
+          "value": "ブラインド層",
+          "verdict": "適切",
+          "reason": "屈折法の初動走時に現れにくい層である。薄い中間層が初動を与えない場合や低速度層を区別し、用語の範囲は資料により異なる。"
+        },
+        "3": {
+          "value": "音響インピーダンス",
+          "verdict": "適切",
+          "reason": "垂直入射の簡単なモデルではZ=ρVであり、境界両側の差が反射振幅を支配する。重力で用いる密度そのものだけとは異なる。"
+        },
+        "4": {
+          "value": "静補正",
+          "verdict": "適切",
+          "reason": "地形や表層低速度層などによる走時ずれを一定の時間シフトとしてそろえる処理である。重力の地形・Bouguer補正と観測量が異なる。"
+        },
+        "5": {
+          "value": "ブーゲー補正",
+          "verdict": "不適切",
+          "reason": "測点と基準面の間の質量が重力へ及ぼす効果を補正する重力探査の処理である。地震波走時に対する静補正ではない。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/H30/17_applied_science/page_011.png"
+      ],
+      "core_concept": "地震探査の走時・反射用語と重力補正を区別する。",
+      "required_knowledge": "地震探査は波の走時・波形、重力探査は加速度の異常を測る。",
+      "solution": "5のブーゲー補正が不適切である。地震探査に関係する四つは、屈折波の走時切片、初動に現れにくい層、反射を支配するインピーダンス、地形や表層に由来する静的走時ずれに対応する。",
+      "answer_reason": "5のブーゲー補正が不適切である。地震探査に関係する四つは、屈折波の走時切片、初動に現れにくい層、反射を支配するインピーダンス、地形や表層に由来する静的走時ずれに対応する。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回を保持。ブーゲー補正は重力探査である。",
+      "learning_points": "処理名だけでなく何を補正し、単位は何かを問う。",
+      "theory_references": [
+        "theory:exploration:seismicterms",
+        "theory:gravity:corrections"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_seismic_terms",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。処理名だけでなく何を補正し、単位は何かを問う。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。観測量と処理の目的を照合して選ぶ。"
+      },
+      "citations": [
+        "usgs_refraction2013",
+        "epa_seismic_reflection",
+        "usgs_static2004",
+        "usgs_processing2000"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-34",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "stem": "静補正・深度走時・CMP・リジッドブーム・下方接続を区別する。",
+      "summary": "静補正・深度走時・CMP・リジッドブーム・下方接続を区別する。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "原典の4はリジットブームシステム、5は下方接続と表記される。下方接続を重力・磁気にしか使わない手法と限定しない。"
+      },
+      "choices": {
+        "1": {
+          "value": "静補正",
+          "verdict": "適切",
+          "reason": "地形や表層低速度層などによる走時ずれを一定の時間シフトとしてそろえる処理である。重力の地形・Bouguer補正と観測量が異なる。"
+        },
+        "2": {
+          "value": "深度走時",
+          "verdict": "適切",
+          "reason": "速度モデルと対応する深度での伝播時間を結ぶ量であり、地震探査の時間・深度対応に用いる。"
+        },
+        "3": {
+          "value": "CMP重合",
+          "verdict": "適切",
+          "reason": "共通中点の反射記録を集め、走時差を補正して重ねる反射法の処理である。強い傾斜や不均質では中点が同じ反射点を意味するとは限らない。"
+        },
+        "4": {
+          "value": "リジットブームシステム",
+          "verdict": "不適切",
+          "reason": "原典表記を保存する。rigid-boom EMIの一次論文では一次磁場と導体の二次磁場を送受信コイルで扱う電磁計測として記述される。地震波の走時処理ではない。"
+        },
+        "5": {
+          "value": "下方接続",
+          "verdict": "適切",
+          "reason": "地震波動場を深部へ外挿してmigration画像を得る方法に関係する。重力・磁気のポテンシャル場にも下方接続があるため、名前の共通性だけで地震分野から除外しない。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "初回独立5対公式4を保持し資料確認後の訂正4を別記する。rigid-boom論文は検索収録の当該原理を確認し、PDF取得は403及びHTML challengeで未達である。日本語表記と装置体系の最終照合を査読対象とする。",
+      "evidence": [
+        "extracted/pages/R01/17_applied_science/page_012.png"
+      ],
+      "core_concept": "静補正・深度走時・CMP・リジッドブーム・下方接続を区別する。",
+      "required_knowledge": "原典の4はリジットブームシステム、5は下方接続と表記される。下方接続を重力・磁気にしか使わない手法と限定しない。",
+      "solution": "公式4である。初回5は下方接続をポテンシャル場だけに限定した誤認であった。Stanfordの波動下方接続とmigrationの説明を確認すると、地下へ波動場を外挿する処理も地震探査に関係する。リジッドブームEMIは送受信コイルを用いる電磁誘導計測の配置であり、地震データ処理の他四項目と異なる。",
+      "answer_reason": "公式4である。初回5は下方接続をポテンシャル場だけに限定した誤認であった。Stanfordの波動下方接続とmigrationの説明を確認すると、地下へ波動場を外挿する処理も地震探査に関係する。リジッドブームEMIは送受信コイルを用いる電磁誘導計測の配置であり、地震データ処理の他四項目と異なる。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回を保持。原典表記は下方接続。潜在場の下方接続・下方継続を想定した選択と推定するが、用語及びリジットブームの一次資料照合が必要。 初回の用語誤認はextracted/logs/S7_039_independent_followup.jsonに別記する。",
+      "learning_points": "同じ数学的処理が複数の物理分野で使われることを許し、計測装置の物理原理を確認する。",
+      "theory_references": [
+        "theory:exploration:seismicterms",
+        "theory:exploration:continuation",
+        "theory:exploration:electromagnetic"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_seismic_terms",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。同じ数学的処理が複数の物理分野で使われることを許し、計測装置の物理原理を確認する。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。省略条件と他分野でも用いる手法の境界を考えるため知識名だけでは足りない。"
+      },
+      "citations": [
+        "usgs_refraction2013",
+        "epa_seismic_reflection",
+        "usgs_static2004",
+        "usgs_processing2000",
+        "stanford_downward2001",
+        "rigid_boom2019"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-32",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "stem": "深度走時・migration・静補正・CMPとブーゲー補正を区別する。",
+      "summary": "深度走時・migration・静補正・CMPとブーゲー補正を区別する。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "走時・反射波形の処理と重力の質量補正を分ける。"
+      },
+      "choices": {
+        "1": {
+          "value": "深度走時",
+          "verdict": "適切",
+          "reason": "速度モデルと深度から伝播時間を対応させる地震探査の量である。"
+        },
+        "2": {
+          "value": "マイグレーション",
+          "verdict": "適切",
+          "reason": "傾斜面や回折の見掛け位置を地下の適切な位置へ再配置する画像化処理である。観測時間を一律定数で換算するだけの処理ではない。"
+        },
+        "3": {
+          "value": "ブーゲー補正",
+          "verdict": "不適切",
+          "reason": "測点と基準面の間の質量が重力へ及ぼす効果を補正する重力探査の処理である。地震波走時に対する静補正ではない。"
+        },
+        "4": {
+          "value": "静補正",
+          "verdict": "適切",
+          "reason": "地形や表層低速度層などによる走時ずれを一定の時間シフトとしてそろえる処理である。重力の地形・Bouguer補正と観測量が異なる。"
+        },
+        "5": {
+          "value": "CMP重合",
+          "verdict": "適切",
+          "reason": "共通中点の記録を集め、NMO等の走時差を整えて重ねる。単に未補正の任意波形を足す方法ではない。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R04/17_applied_science/page_011.png"
+      ],
+      "core_concept": "深度走時・migration・静補正・CMPとブーゲー補正を区別する。",
+      "required_knowledge": "走時・反射波形の処理と重力の質量補正を分ける。",
+      "solution": "3のブーゲー補正が不適切である。migrationは反射・回折記録を地下の反射位置へ戻す処理であり、波動場を下方接続する方法もある。",
+      "answer_reason": "3のブーゲー補正が不適切である。migrationは反射・回折記録を地下の反射位置へ戻す処理であり、波動場を下方接続する方法もある。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回を保持。ブーゲー補正は重力探査に属する。",
+      "learning_points": "同じ補正という語でも観測量と誤差の原因を分ける。",
+      "theory_references": [
+        "theory:exploration:seismicterms",
+        "theory:exploration:continuation",
+        "theory:gravity:corrections"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_seismic_terms",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。同じ補正という語でも観測量と誤差の原因を分ける。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。観測量と処理の目的を照合して選ぶ。"
+      },
+      "citations": [
+        "usgs_refraction2013",
+        "epa_seismic_reflection",
+        "usgs_static2004",
+        "usgs_processing2000",
+        "stanford_downward2001"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-35",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "stem": "弾性波の伝播原理とポテンシャル場の等価層を区別する。",
+      "summary": "弾性波の伝播原理とポテンシャル場の等価層を区別する。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "線形で相反的な媒体における波動の重ね合わせ・波面構成・伝播経路を対象とする。"
+      },
+      "choices": {
+        "1": {
+          "value": "フェルマの原理",
+          "verdict": "適切",
+          "reason": "波線経路に対する走時の停留条件を述べる。あらゆる経路が絶対的最短時間になるという一般化は避ける。"
+        },
+        "2": {
+          "value": "等価層の原理",
+          "verdict": "不適切",
+          "reason": "重力・磁気の場を等価な密度又は双極子の層で表す考え方である。弾性波の波面や伝播経路を定める基本則とは異なる。"
+        },
+        "3": {
+          "value": "相反原理",
+          "verdict": "適切",
+          "reason": "相反性が成立する線形媒体では震源と受振点を交換した応答が対応する。媒体や成分の条件を保つ必要がある。"
+        },
+        "4": {
+          "value": "ホイヘンスの原理",
+          "verdict": "適切",
+          "reason": "波面上の点からの二次波の構成で次の波面を考える。地震波の伝播・画像化の理解に関係する。"
+        },
+        "5": {
+          "value": "重ね合わせの原理",
+          "verdict": "条件付きで適切",
+          "reason": "線形の波動方程式では解の線形結合も解となる。破壊を伴う大きな非線形変形へ無条件に適用しない。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "相反性と重ね合わせは媒体・線形性の条件付きである。等価層は異なる分野で使われる語でもあるため、ポテンシャル場の基本的用法と波動伝播の原理を区別する。",
+      "evidence": [
+        "extracted/pages/R02/17_applied_science/page_012.png"
+      ],
+      "core_concept": "弾性波の伝播原理とポテンシャル場の等価層を区別する。",
+      "required_knowledge": "線形で相反的な媒体における波動の重ね合わせ・波面構成・伝播経路を対象とする。",
+      "solution": "2の等価層の原理が不適切である。USGSの等価層は重力の密度層や磁気の双極子層でポテンシャル場を表現するものとして確認できる。これは地震波伝播を記述する基本原理の四項目とは役割が異なる。",
+      "answer_reason": "2の等価層の原理が不適切である。USGSの等価層は重力の密度層や磁気の双極子層でポテンシャル場を表現するものとして確認できる。これは地震波伝播を記述する基本原理の四項目とは役割が異なる。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回を保持。等価層はポテンシャル場などの表現に関する概念であり波動伝播の基本原理との関係が薄い。一次資料の用語範囲を要確認。",
+      "learning_points": "原理の名前を、場の表現・波面・経路・線形性・相反性という役割へ対応させる。",
+      "theory_references": [
+        "theory:exploration:principles"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_wave_principles",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。原理の名前を、場の表現・波面・経路・線形性・相反性という役割へ対応させる。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。省略条件と他分野でも用いる手法の境界を考えるため知識名だけでは足りない。"
+      },
+      "citations": [
+        "usgs_equivalent2007",
+        "stanford_downward2001",
+        "mit_signals2010"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-32",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "stem": "ホイヘンス・重ね合わせ・レンツ・スネル・フェルマを区別する。",
+      "summary": "ホイヘンス・重ね合わせ・レンツ・スネル・フェルマを区別する。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "地震探査で扱う弾性波の波面、線形性、屈折、波線の走時を対象とする。"
+      },
+      "choices": {
+        "1": {
+          "value": "ホイヘンスの原理",
+          "verdict": "適切",
+          "reason": "二次波で波面を構成する考え方であり、波動伝播の理解に関係する。"
+        },
+        "2": {
+          "value": "重ね合わせの原理",
+          "verdict": "条件付きで適切",
+          "reason": "線形波動では複数波の和を解として扱うことができる。大変形や非線形な破壊過程は同じ前提ではない。"
+        },
+        "3": {
+          "value": "レンツの法則",
+          "verdict": "不適切",
+          "reason": "電磁誘導の向きを磁束変化との関係から決める法則であり、地震波の反射・屈折の基本則とは異なる。"
+        },
+        "4": {
+          "value": "スネルの法則",
+          "verdict": "適切",
+          "reason": "境界の位相整合により角度と波速を結ぶ。地震波ではP波・S波へのモード変換を含む各波速で考える。"
+        },
+        "5": {
+          "value": "フェルマの原理",
+          "verdict": "適切",
+          "reason": "波線の走時が経路変分に対して停留する条件を用いる。最小という単語だけで複数経路の可能性を捨てない。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "重ね合わせは線形媒体に限る。スネルの法則は波種と境界条件を指定して用いる。",
+      "evidence": [
+        "extracted/pages/R07/17_applied_science/page_012.png"
+      ],
+      "core_concept": "ホイヘンス・重ね合わせ・レンツ・スネル・フェルマを区別する。",
+      "required_knowledge": "地震探査で扱う弾性波の波面、線形性、屈折、波線の走時を対象とする。",
+      "solution": "3のレンツの法則は電磁誘導が磁束変化を妨げる向きに生じることを表す。電磁探査には関係するが、他四項目のような弾性波伝播の基本則ではない。",
+      "answer_reason": "3のレンツの法則は電磁誘導が磁束変化を妨げる向きに生じることを表す。電磁探査には関係するが、他四項目のような弾性波伝播の基本則ではない。",
+      "independent_answer": "3",
+      "independent_solution_note": "公式前の初回を保持。レンツの法則は電磁誘導の向きに関する法則であり地震波伝播の基本則ではない。",
+      "learning_points": "電磁気の誘導と弾性波の伝播を、扱う物理量から分ける。",
+      "theory_references": [
+        "theory:exploration:principles",
+        "theory:optics:refraction"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_wave_principles",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。電磁気の誘導と弾性波の伝播を、扱う物理量から分ける。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。省略条件と他分野でも用いる手法の境界を考えるため知識名だけでは足りない。"
+      },
+      "citations": [
+        "mit_signals2010",
+        "stanford_downward2001",
+        "epa_seismic_reflection"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "H30-REG-APPLIED-35",
+      "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+      "stem": "逆問題の最適化・正則化と有限要素離散化を区別する。",
+      "summary": "逆問題の最適化・正則化と有限要素離散化を区別する。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "モデル更新算法と順モデル計算の離散化を区別する。ただし順モデルは逆問題を構成する内部計算でもある。"
+      },
+      "choices": {
+        "1": {
+          "value": "マルカート法",
+          "verdict": "適切",
+          "reason": "非線形最小二乗の更新を減衰項で安定化するLevenberg–Marquardt型の算法である。"
+        },
+        "2": {
+          "value": "遺伝的アルゴリズム",
+          "verdict": "適切",
+          "reason": "モデル候補の集団を評価・選択・変化させて目的関数を探索する最適化法である。大域的最良解を常に保証するわけではない。"
+        },
+        "3": {
+          "value": "正則化法",
+          "verdict": "適切",
+          "reason": "データだけで決まりにくいモデルへ滑らかさや大きさ等の制約を加え、逆問題の不安定性を抑える。"
+        },
+        "4": {
+          "value": "共役勾配法",
+          "verdict": "適切",
+          "reason": "線形化された最小二乗等の連立系又は非線形目的関数の探索に用いる。対称正定値系のCGと非線形CGを区別する。"
+        },
+        "5": {
+          "value": "有限要素法",
+          "verdict": "条件付きで適切",
+          "reason": "直接の最適化・正則化の名称ではなく支配方程式の離散化であるため公式はこれを選ぶ。しかし順モデルや感度計算として逆解析へ用いることができ、無関係という絶対判断は誤りである。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "設問のインバージョンに関係するという広い語には有限要素順モデルも含められる。公式5を算法の直接的役割の比較として保持し、FEMを逆解析から排除しない。",
+      "evidence": [
+        "extracted/pages/H30/17_applied_science/page_012.png"
+      ],
+      "core_concept": "逆問題の最適化・正則化と有限要素離散化を区別する。",
+      "required_knowledge": "モデル更新算法と順モデル計算の離散化を区別する。ただし順モデルは逆問題を構成する内部計算でもある。",
+      "solution": "公式5は、他四項目が最適化又は逆解の安定化を直接担うのに対し、有限要素法が主に支配方程式の離散化を担うという比較による。ただしFEMで順問題を計算する逆解析は広くある。インバージョンにFEMが関係しないと断定しない。",
+      "answer_reason": "公式5は、他四項目が最適化又は逆解の安定化を直接担うのに対し、有限要素法が主に支配方程式の離散化を担うという比較による。ただしFEMで順問題を計算する逆解析は広くある。インバージョンにFEMが関係しないと断定しない。",
+      "independent_answer": "5",
+      "independent_solution_note": "公式前の初回を保持。有限要素法は通常順問題の離散化。逆問題の内部にも用いるためインバージョンと無関係とは断言しない。",
+      "learning_points": "目的関数、モデル更新、物理場の数値計算の三つの役割を別々に問う。",
+      "theory_references": [
+        "theory:exploration:inverse",
+        "theory:fem:background"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_inverse_methods",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。目的関数、モデル更新、物理場の数値計算の三つの役割を別々に問う。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "3",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。省略条件と他分野でも用いる手法の境界を考えるため知識名だけでは足りない。"
+      },
+      "citations": [
+        "pygimli_inversion",
+        "mit_roy_fea1999"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    },
+    {
+      "question_id": "R01-REG-APPLIED-35",
+      "source_sha256": "39ccb18daa385ce2461322f7c1d651a6fb3f7563b03da42c3c17784daeaff2a4",
+      "stem": "フィルタ・差分・共役勾配・平滑化とラテラル検層を区別する。",
+      "summary": "フィルタ・差分・共役勾配・平滑化とラテラル検層を区別する。",
+      "conditions": {
+        "原典照合": "否定の対象、指数、周波数と周期、五つの候補の列順を原典画像で照合。",
+        "前提": "数値処理又はモデル拘束と、孔内で物理量を測る配置を区別する。"
+      },
+      "choices": {
+        "1": {
+          "value": "リニアフィルタ",
+          "verdict": "適切",
+          "reason": "入力の和と定数倍に対して同じ関係を保つ信号処理であり、畳み込み等の数値計算で実装できる。"
+        },
+        "2": {
+          "value": "ラテラル法",
+          "verdict": "不適切",
+          "reason": "USGSの電気検層資料では電極間隔と配置で定義されるlateral logとして確認できる。数値解法の算法を指す語ではない。"
+        },
+        "3": {
+          "value": "差分法",
+          "verdict": "適切",
+          "reason": "微分演算を格子値の差へ置き換えて支配方程式の近似解を求める数値法である。"
+        },
+        "4": {
+          "value": "共役勾配法",
+          "verdict": "適切",
+          "reason": "大型の連立系や最小化を反復して解く数値算法である。"
+        },
+        "5": {
+          "value": "平滑化拘束",
+          "verdict": "適切",
+          "reason": "隣接するモデル値の差などを罰することで、逆解の不要な振動を抑える数値的な条件である。"
+        }
+      },
+      "figures": "図表なし。五つの文章又は用語を原典画像で確認。",
+      "ambiguity": "",
+      "evidence": [
+        "extracted/pages/R01/17_applied_science/page_012.png"
+      ],
+      "core_concept": "フィルタ・差分・共役勾配・平滑化とラテラル検層を区別する。",
+      "required_knowledge": "数値処理又はモデル拘束と、孔内で物理量を測る配置を区別する。",
+      "solution": "2が不適切である。ラテラル法は電極配置を用いる電気検層の測定方式である。他四項目は信号処理、方程式の離散化、最適化、解への拘束を担う。",
+      "answer_reason": "2が不適切である。ラテラル法は電極配置を用いる電気検層の測定方式である。他四項目は信号処理、方程式の離散化、最適化、解への拘束を担う。",
+      "independent_answer": "2",
+      "independent_solution_note": "公式前の初回を保持。ラテラル法は電気検層の測定方式であり数値処理アルゴリズムとは異なる。",
+      "learning_points": "測定の幾何配置とデータ取得後の計算を分ける。",
+      "theory_references": [
+        "theory:exploration:inverse",
+        "theory:exploration:seismicterms"
+      ],
+      "discipline_id": "geo_exploration",
+      "concept_id": "exploration_inverse_methods",
+      "cross_concepts": [],
+      "classification_reason": "原典は物理探査の観測・データ処理・地下推定を対象とする。自然地震の発生機構ではなく物理探査へ配置する。測定の幾何配置とデータ取得後の計算を分ける。",
+      "calculation": "false",
+      "figure": "false",
+      "law": "false",
+      "evaluation": {
+        "knowledge_novelty": "1",
+        "reasoning_steps": "2",
+        "calculation_load": "0",
+        "figure_reading": "0",
+        "difficulty": "2",
+        "difficulty_reason": "物理専攻の波動・信号処理を探査へ応用する。観測量と処理の目的を照合して選ぶ。"
+      },
+      "citations": [
+        "usgs_lateral_logging",
+        "pygimli_inversion",
+        "mit_signals2010"
+      ],
+      "foundationality": "high",
+      "transferability": "high"
+    }
+  ]
+}

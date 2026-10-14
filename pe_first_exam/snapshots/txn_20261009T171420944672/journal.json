@@ -1,0 +1,16 @@
+{
+  "status": "committed",
+  "time": "2026-10-09T17:14:20+09:00",
+  "paths": [
+    "config/concepts.json",
+    "config/concept_change_log_S7.json"
+  ],
+  "existed": {
+    "config/concepts.json": true,
+    "config/concept_change_log_S7.json": true
+  },
+  "sha256": {
+    "config/concepts.json": "e4f1186ba7b39b08470c7bc6269551b6c4b2d178d43568180bb4209f05629977",
+    "config/concept_change_log_S7.json": "8f1c92eb8b511f76d5ffbfa752d9004a0dc0e7f03bd92ebb88b5a4861a643aac"
+  }
+}

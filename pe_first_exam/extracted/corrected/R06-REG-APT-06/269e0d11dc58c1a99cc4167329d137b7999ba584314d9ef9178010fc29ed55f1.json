@@ -1,0 +1,45 @@
+{
+  "stem": "SDGsの3側面、統合性、普遍性、人間の安全保障の4空欄に入らない語を選ぶ。",
+  "conditions": {
+    "方向": "指定4空欄のどれにも入らない。",
+    "並び": "ア経済・イ統合・ウ普遍・エ安全。"
+  },
+  "choices": {
+    "1": {
+      "value": "安全",
+      "verdict": "エに対応",
+      "reason": "エの人間の安全保障を構成する。"
+    },
+    "2": {
+      "value": "平和",
+      "verdict": "空欄にない",
+      "reason": "この4空欄には入らない。平和はSDG16や前文の重要事項であり、SDGsの対象外という意味ではない。"
+    },
+    "3": {
+      "value": "経済",
+      "verdict": "アに対応",
+      "reason": "アに入り社会・経済・環境の3側面を成す。"
+    },
+    "4": {
+      "value": "普遍",
+      "verdict": "ウに対応",
+      "reason": "ウに入りすべての国の目標という普遍性。"
+    },
+    "5": {
+      "value": "統合",
+      "verdict": "イに対応",
+      "reason": "イに入り相互関係のある目標を統合的に解決する。"
+    }
+  },
+  "figures": "問題幹・全5肢・否定・文字・数値・時点を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R06/aptitude/page_006.png"
+  ],
+  "question_id": "R06-REG-APT-06",
+  "source_file": "sources/R06/aptitude.pdf",
+  "source_page": "6",
+  "source_sha256": "8c5879fd8a535352bed4295a0de6e1040a41dca0e33c439728953cf6e0c5ec0b",
+  "raw_text_sha256": "485d50a46282318fafb9a2f4a0bfa6befe8772b08bd94fc7cd64c091b9de1f5a",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

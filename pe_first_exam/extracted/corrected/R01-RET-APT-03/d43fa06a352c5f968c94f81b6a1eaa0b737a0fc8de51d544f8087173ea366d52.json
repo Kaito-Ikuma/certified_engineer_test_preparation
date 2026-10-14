@@ -1,0 +1,49 @@
+{
+  "stem": "倫理規程・行動規範を制定する狙いに、5記述が含まれるかを判定する。",
+  "conditions": {
+    "ア": "一般社会と組織との契約について明確に意思表示する。",
+    "イ": "組織のメンバーの目指す理想を表す。",
+    "ウ": "倫理的行動の実践的な指針を示す。",
+    "エ": "将来のメンバーの教育に使う。",
+    "オ": "組織自体の在り方を議論する機会を与える。",
+    "並び": "ア・イ・ウ・エ・オの順で○/×。"
+  },
+  "choices": {
+    "1": {
+      "value": "○○○○○",
+      "verdict": "設問条件に一致",
+      "reason": "5項目とも社会への説明、理想、実践、教育、組織の自己点検という目的に含まれる。"
+    },
+    "2": {
+      "value": "○○○○×",
+      "verdict": "設問条件に不一致",
+      "reason": "制定の議論は組織の在り方を点検する機会でもあり、オを除外できない。"
+    },
+    "3": {
+      "value": "○×○○○",
+      "verdict": "設問条件に不一致",
+      "reason": "望ましい理想を表明するイを除外できない。"
+    },
+    "4": {
+      "value": "○○×○○",
+      "verdict": "設問条件に不一致",
+      "reason": "行動の実践的指針を示すウを除外できない。"
+    },
+    "5": {
+      "value": "○○○×○",
+      "verdict": "設問条件に不一致",
+      "reason": "新たなメンバーを教育するエを除外できない。"
+    }
+  },
+  "figures": "原典画像で問題幹、条件、正誤の向き、全5肢、組合せ表の全セルを確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/aptitude/page_003.png"
+  ],
+  "question_id": "R01-RET-APT-03",
+  "source_file": "sources/R01_retest/aptitude.pdf",
+  "source_page": "3",
+  "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+  "raw_text_sha256": "b661777889d31e0955525a790a3a8f186738171bf59b5b34909a3a703410c4c6",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

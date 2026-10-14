@@ -1,0 +1,45 @@
+{
+  "stem": "ストロンボリの間欠爆発と連続溶岩噴泉を区別する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "ストロンボリの間欠爆発と連続溶岩噴泉を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "時速数十から100km以上の火砕流",
+      "verdict": "代表的条件で適切",
+      "reason": "高温のガス粒子混合流の代表的高速移動。速度の全現象一律境界ではない。"
+    },
+    "2": {
+      "value": "液状溶岩流",
+      "verdict": "代表的条件で適切",
+      "reason": "破片の混合ではなく液体としてのマグマが流出する。"
+    },
+    "3": {
+      "value": "連続噴泉をストロンボリ式とする",
+      "verdict": "不適切",
+      "reason": "連続的な溶岩噴泉は代表的にハワイ式。ストロンボリは間欠的な爆発が特徴。"
+    },
+    "4": {
+      "value": "山体崩壊の岩屑なだれ",
+      "verdict": "代表的条件で適切",
+      "reason": "火山体の不安定部が崩れ高速に流下する。"
+    },
+    "5": {
+      "value": "外来水の相変化を伴う爆発",
+      "verdict": "代表的条件で適切",
+      "reason": "マグマ水蒸気爆発で急な熱交換・膨張等が起こる。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_009.png"
+  ],
+  "question_id": "R03-REG-APPLIED-26",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "08829cabac49d6522a8b4050819f850149e19ad2174e183ddb672b7ee35781c8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,44 @@
+{
+  "stem": "重力・磁気探査の基準面、磁化特性、移動観測補正と、別の観測分野の語を区別する。",
+  "conditions": {
+    "選択方向": "誤り又は最も不適切・関係の薄いものを1つ"
+  },
+  "choices": {
+    "1": {
+      "value": "ジオイド",
+      "verdict": "適切",
+      "reason": "基準となる重力等ポテンシャル面であり、重力場と標高の基準に関係する。"
+    },
+    "2": {
+      "value": "ケーニヒスベルガー比",
+      "verdict": "適切",
+      "reason": "自然残留磁化の大きさと現在の場による誘導磁化の大きさの比であり、磁気異常の解釈に関係する。"
+    },
+    "3": {
+      "value": "プランク関数",
+      "verdict": "不適切",
+      "reason": "熱平衡放射のスペクトルを記述する関数であり、この候補群では重力・磁気探査の基本量に当たらない。"
+    },
+    "4": {
+      "value": "キュリー温度",
+      "verdict": "適切",
+      "reason": "強磁性・フェリ磁性の自発磁化が消失する温度に対応し、磁性鉱物や磁気探査の解釈に関係する。"
+    },
+    "5": {
+      "value": "エトベス補正",
+      "verdict": "適切",
+      "reason": "移動観測系の運動に伴う見掛重力の差を補正する。"
+    }
+  },
+  "figures": "図なし。否定方向と全5肢を原典ページ画像で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_011.png"
+  ],
+  "question_id": "H30-REG-APPLIED-32",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "11",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "aae28e405ba96899b4c8e4a42babe0f90e984f62fa3e67836fa25997fe20dd29",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

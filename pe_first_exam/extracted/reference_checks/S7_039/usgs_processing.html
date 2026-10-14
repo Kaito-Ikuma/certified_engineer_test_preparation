@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>USGS Open-File Report 00-460: Reprocessing of Multi-channel Seismic-Reflection Data Collected in the Beaufort Sea</title>
+<meta name="Description" content="Reprocessing of Multi-channel Seismic-Reflection Data Collected in the Beaufort Sea" />
+<meta name="author" content="Agena, W.F., Lee, M.W., and Hart, P.E." />
+<meta name="Keywords" content="geological survey, usgs, geology, geologic, hazards, earthquake, seismic, global, assessment" />
+<meta name="publisher" content="U.S. Geological Survey (USGS)" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Version" content="2.0" />
+<!-- Posting Metadata -->
+<meta name="Originating PSC" content="Your PSC" />
+<meta name="Originating Poster" content="Your Name" />
+<!-- End Posting Metadata -->
+<link href="/style/common.css" rel="stylesheet" type="text/css" />
+<link href="/style/custom_pub2.0.css" rel="stylesheet" type="text/css" />
+   <script async type="text/javascript" src="https://www2.usgs.gov/scripts/analytics/usgs-analytics.js"></script>
+
+</head>
+<body>
+<!-- Accessibility Link to Skip to Contents Anchor -->
+<p class="off-left"><a href="#content">Skip Links</a></p>
+<!-- BEGIN USGS Header Template -->
+<div id="usgscolorband">
+  <div id="usgsbanner">
+    <div id="usgsidentifier"><a href="https://www.usgs.gov/"><img src="/images/header_graphic_usgsIdentifier_white.jpg" alt="USGS - science for a changing world" title="U.S. Geological Survey Home Page" width="178" height="72" /></a></div>
+    <div id="usgsccsabox">
+      <div id="usgsccsa"> <br />
+        <a href="https://www.usgs.gov/">USGS Home</a> <a href="https://answers.usgs.gov/">Contact USGS</a> <a href="https://www.usgs.gov/search/">Search USGS</a> </div>
+    </div>
+  </div>
+</div>
+<!-- Series Name and Number as Site Title -->
+<div id="usgstitle">
+<p>Open-File Report 00–460</p>
+</div>
+<!-- END USGS Header Template -->
+<!-- Bookmark -->
+<div class="breadCrumb">&gt;&gt; <a href="http://pubs.usgs.gov/" title="USGS Publications Warehouse">Pubs Warehouse</a> &gt; OFR 00-460</div>
+<!-- Anchor for Acessibility Skip Links to Content -->
+<a name="content" id="content"></a>
+
+<!-- If applicable: Message for superceded reports-->
+<p class="superceded"><span style="color:#b72525;">Notice:</span> This USGS Publication supercedes Open-File Report 00-436.</p>
+
+<!-- If applicable: Cooperator or Association. Do not add line breaks to this field
+<h3 class="pubCoop">Secondary Identification and /or Statement of Cooperation</h3>-->
+<!-- Title -->
+<h1>Reprocessing of Multi-channel Seismic-Reflection Data Collected in the Beaufort Sea</h1>
+<!-- Author or Editor -->
+<h4>By Agena, W.F.<sup>1</sup>, Lee, M.W.<sup>1</sup>, and Hart, P.E.<sup>2</sup></h4>
+
+<hr>
+
+<p><strong>Download Data from CDROM</strong><br />
+<a href="Disc1/">Seismic Data Inventory, Disc 1 Stacked SEF-Y DATA</a><br />
+<a href="Disc2/">Seismic Data Inventory, Disc 2 Migrated SEG-Y DATA</a></p>
+
+<hr>
+
+<table>
+  <tr>
+    <td id="leftContent"><!-- Begin Abstract Area -->
+      <div id="abstract">
+
+<h3 style="margin-top: 5px;">Abstract</h3>
+<p>Contained on this set of two CD-ROMs are stacked and migrated multi-channel seismic-reflection data for 65 lines recorded in the Beaufort Sea by the United States Geological Survey in 1977. All data were reprocessed by the USGS using updated processing methods resulting in improved interpretability. Each of the two CD-ROMs contains the following files: 1) 65 files containing the digital seismic data in standard, SEG-Y format; 2) 1 file containing navigation data for the 65 lines in standard SEG-P1 format; 3) an ASCII text file with cross-reference information for relating the sequential trace numbers on each line to cdp numbers and shotpoint numbers; 4) 2 small scale graphic images (stacked and migrated) of a segment of line 722 in Adobe Acrobat (R) PDF format; 5) a graphic image of the location map, generated from the navigation file; 6) PlotSeis, an  MS-DOS Application that allows PC users to interactively view the  SEG-Y files; 7) a PlotSeis documentation file; and 8) an explanation of the processing used to create the final seismic sections (this document).</p>
+
+
+<h3 style="margin-top: 5px;">Data Acquisition</h3>
+
+<p>These data were collected in the Beaufort and Chukchi Sea regions from August through October of 1977 aboard the USGS research vessel Samuel P. Lee. These CD-ROMs contain only the reprocessed data from the Beaufort Sea. A CD-ROM publication containing the reprocessed data from the Chukchi Sea is in preparation. The recording system used was a Globe Universal Sciences (GUS) model 4200 recording 24 channels at a 2-millisecond sample rate. A tuned array of five air-guns totaling 1326 cubic inches was used as the seismic energy source and was fired at 50-meter intervals. The receiver array consisted of 24 groups of hydrophones spaced at 100-meter intervals for a total array length of 2400 meters. Recording lengths varied between 6 and 7 seconds sub-seafloor with deep-water recording delays implemented over the continental slope and rise. Positioning of the survey was achieved using a Marconi integrated satellite-doppler sonar navigation system. <a href="images/Figure1.pdf">Figure 1</a> is a map of the tracklines of the survey area.</p>
+
+
+
+
+<h3 style="margin-top: 5px;">Data Processing</h3>
+<p>All data were reprocessed using the ProMAXâ seismic data processing system using methodologies described by Yilmaz (1987). Processing sequences and parameters used by Leinbach and others (1987), Lee and others (1998), and Miller and others (2000), provided us with a useful starting point for designing the processing sequence used for this data set. The following is a summary of the objectives and parameters of our processing sequence.</p>
+
+
+<p><strong>Geometry Definition</strong></p>
+<p>All data were previously demultiplexed and resampled to 4-ms by Grantz and others (1982) and only needed to have a geometry definition applied prior to sorting the data into Common Midpoint (CMP) order. Defining the source and hydrophone locations, station numbers, distance between stations, and distance between shots is necessary to correctly describe the recording geometry.</p>
+
+
+
+<p><strong>Static Corrections</strong></p>
+<p>Typically in marine surveys, time delays are introduced into the recording system, particularly over deep water in order to conserve recording media. In processing the data, static corrections are necessary to account for these time delays.</p>
+
+
+
+<p><strong>Automatic Gain Control</strong></p>
+<p>Some form of gain recovery is typically applied to raw field data to compensate for the effects on amplitude by wavefront divergence and the Earth’s usual attenuation properties. Because one of the primary goals of our study was structural rather than stratigraphic interpretation, preserving relative amplitudes was not a primary concern. Therefore, we opted to use a simple automatic gain control function using a 350-millisecond sliding time gate.</p>
+
+
+
+<p><strong>Deconvolution (Pre-Stack)</strong></p>
+<p>To increase temporal resolution and sometimes, to remove the effects of multiples, deconvolution is applied before stack. In our processing, we employed a single-window, minimum-phase spiking deconvolution with a 160-millisecond operator length with good results.</p>
+
+
+<p><strong>Velocity Analysis and NMO Corrections</strong></p>
+<p>Conventional velocity analysis panels, which included semblances, gathers, and constant velocity stacks, were used to estimate optimum stacking velocities. Analyses were generated at 100 CMP intervals. Results from the velocity analyses were then used to apply normal moveout (NMO) corrections to the data.</p>
+
+
+
+<p><strong>Trace Weighting</strong></p>
+<p>A simple technique used to suppress multiples is to apply a weighting function to traces within a CMP, prior to stacking. We applied a weighting factor based on the absolute offset of the trace. By doing this, we amplify the effects of differential moveout between primaries and multiples, thereby decreasing the contribution of multiples to the stacked output.</p>
+
+
+
+<p><strong>Stack (12-Fold)</strong></p>
+<p>The objective of horizontal stacking is to reduce the effects of random signals or enhance the signal-to-noise ratio. Our processing included the application of a straight mean value CMP stack, where values at a given time are summed and then divided by the square root of the number of values. This survey had a nominal 12-fold coverage.</p>
+
+
+
+<p><strong>Post-Stack Deconvolution and Wavelet Processing</strong></p>
+<p>Following the CMP stack there still remained some reverberatory energy. To minimize this noise we implemented a second-zero crossing deconvolution using a single window with an 180-millisecond operator. This is a type of predictive deconvolution where the second-zero crossing of the auto-correlation function of the trace is used as the predictive “gap”. Prior to the application of the second-zero crossing deconvolution, we applied automatic gain control using a 1000-millisecond sliding gate. Additionally, to further increase temporal resolution, we applied wavelet processing using the variable norm deconvolution method described by Gray (1979). For each line, careful wavelet analysis was performed and a single operator derived from the optimum parameters was applied to the entire line.</p>
+
+
+
+<p><strong>F-K Migration</strong></p>
+<p>The objective of migration is to move (migrate) data from an observed point of reference to a point of actual origin. Implemented ideally, this procedure essentially collapses diffractions to a single point, and spatially orients dipping events to their correct position. These data were migrated using the Stolt wave-number frequency (F-K) method with velocity models derived from our stacking velocities. Shown in Figures 2 and 3 is a segment of line 722 before (<a href="images/Figure2.pdf">Figure 2</a>) and after (<a href="images/Figure3.pdf">Figure 3</a>) F-K migration.</p>
+
+
+
+<p><strong>Data Output</strong></p>
+<p>Following migration, the data were stored in the industry standard SEG-Y format (Barry and others, 1975). In order to fit all the data onto two CD-ROMS the data were written in 2-byte integer form rather than the usual 4-byte IBMâ real. Shotpoint numbers were written into trace headers using a 4-byte integer word starting at byte 181.</p>
+
+
+
+
+<h3 style="margin-top: 5px;">Summary and Conclusion</h3>
+<p>The processing methodology described here resulted in seismic profiles with increased temporal and spatial resolution, which should facilitate more accurate interpretation of the data. Writing these data to CD-ROM provided two-fold benefits over older methods. Firstly, the data are in a compact, easy-to-use format allowing quick, random access and the ability to easily load the data onto a computer interpretation workstation.  Secondly, the data are now on an archival medium that is much more stable than the previously used magnetic tape, thus ensuring a longer lifespan.</p>
+
+
+
+
+<h3 style="margin-top: 5px;">Disclaimer</h3>
+<p>This Compact Disk (CD) publication was prepared by an agency of the United States Government. Neither the United States Government nor any agency thereof nor any of their employees makes any warranty, expressed or implied, or assumes any legal responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed in this report or represents that its use would not infringe privately owned rights. Reference therein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise does not necessarily constitute or imply its endorsement, recommendation, or favoring by the United States Government or any agency thereof.</p>
+
+<p>Although all data and software published on this CD-ROM have been used by the USGS, no warranty, expressed or implied, is made by the USGS as to the accuracy of the data and related materials and(or) the functioning of the software. The act of distribution shall not constitute any such warranty, and no responsibility is assumed by the USGS in the use of these data, software, or related materials.</p>
+
+
+
+
+<h3 style="margin-top: 5px;">System Requirements</h3>
+<p>This disc will operate on any hardware platform capable of reading the ISO 9660 standard.  The seismic data files are disc images of the SEG-Y format (Barry and others, 1975).  The display programs and other software packages can access the data files directly from the CD-ROM. Technical information is contained in files in ASCII text format, MS-WORD97 format and Internet format.  Graphics files are contained in Adobe Acrobat® PDF format. Minimum hardware/software requirements are as follows:</p>
+
+<p>All platforms: CD-ROM drive with ISO 9660 software driver, software capable of reading SEG-Y format data files, ASCII text files, and PDF-format graphics files. Technical information can also be accessed by software capable of reading MS-WORD97 format or Internet format files.</p>
+
+<p>IBM-compatible P/C: To use the display software: 640K main memory, hard (fixed) disk, monochrome monitor, EGA/VGA/SVGA graphics, MS or PC-DOS 3.1 or higher.  The following display software is provided: An IBM P/C compatible seismic display program, PLOTSEIS.EXE (Zihlman 1996), is included on this disc for the purpose of displaying the SEG-Y data files. Users should follow the installation/operating instructions contained in the documentation file PLOTSEIS.TXT.  To run PLOTSEIS directly from the CD-ROM, it may be necessary to specifically type the path name without a backslash character.  For example, if the drive letter is Z, the default path will appear, as “Z:\”, but you should type “Z:” only.  Thereafter a menu of files will appear on the screen.  You can then select a “.sgy” file and display the traces on the screen. No display software is provided for any other systems.</p>
+
+
+
+
+<h3 style="margin-top: 5px;">Figures</h3>
+<p><a href="images/Figure1.pdf">Figure 1.</a> Digital image in Adobe Acrobat® PDF format containing tracklines of the Beaufort Sea seismic survey.<br />
+<a href="images/Figure2.pdf">Figure 2.</a> Digital image in Adobe Acrobat® format of an unmigrated stacked segment of line 722.<br />
+<a href="images/Figure3.pdf">Figure 3.</a> Digital image in Adobe Acrobat® format of a stacked segment of line 722 after migration.</p>
+
+
+
+
+
+
+<h3 style="margin-top: 5px;">References</h3>
+<p>Barry, K.M., Cavers, D.A., and Kneale, C.W., 1975, Recommended standards for digital tape formats: Geophysics, v. 40, p. 344-352.<br /><br />
+
+Grantz, Arthur, May, S.D., Mann, D.M., 1982, Tracklines of multichannel seismic-reflection data collected in the Beaufort and Chukchi Seas in 1977 for which demultiplexed field tapes are available from the U.S. Geological Survey: U.S. Geological Survey Open-File Report OF82-0651, 1 over-size sheet, scale 1:500,000.<br /><br />
+
+Gray, W.C., 1979, Variable norm deconvolution: Palo Alto, CA, Stanford University Ph.D. Thesis, p.101.<br /><br />
+
+Lee, Myung W., Agena, Warren F., Grow, John A., and Miller, John J., 1998, Seismic processing and velocity analysis in The ANWR Assessment Team, The Oil and Gas Resource Potential of the 1002 Area, Arctic National Wildlife Refuge, Alaska: U.S. Geological Survey Open-File report OF98-34, CDROM, p. SP1-SP32.<br /><br />
+
+Leinbach, W. James, Miller, John J., and Lee, Myung W., 1987, Seismic reflection data processing in Bird, Kenneth J. and Magoon, Leslie B., eds., Arctic National Wildlife Refuge, northeastern Alaska: U.S. Geological Survey Bulletin 1778, p. 225-233.<br /><br />
+
+Miller, John J., Agena, Warren F., Lee, Myung W., Zihlman, Frederick N., Grow, John A., Taylor, David J., Killgore, Michelle, and Oliver, Harold L., 2000, Regional Seismic Lines Reprocessed Using Post-stack Processing Techniques: National Petroleum Reserve – Alaska: U.S. Geological Survey Open-File Report OF00-286, CDROM<br /><br />
+
+Yilmaz, Ozdogan, 1987, Seismic data processing: Society of Exploration Geophysics- Investigations in Geophysics, V.2, 526 p.<br /><br />
+
+Zihlman, F.N., 1996, PLOTSEIS, A DOS display program for SEG-Y formatted seismic data:  U.S. Geological Survey Open-File Report 95-516, 7p., 1 - 3/1/2" disk.</p>
+
+<p>This report is preliminary and has not been reviewed for conformity with the U.S. Geological Survey editorial standards or with the North American Stratigraphic Code. Any use of trade names is for descriptive purposes only and does not imply endorsement by the U.S. Government.</p> 
+
+</div>
+</td>
+</tr>
+</table>
+
+<hr>
+
+<p>U.S. DEPARTMENT OF THE INTERIOR<br />
+U.S. GEOLOGICAL SURVEY</p>
+
+<p><sup>1</sup> U.S. GeologicalSurvey, MS 939, Box 25046, DFC, Denver, Colorado 80225<br />
+<sup>2</sup> U.S. Geological Survey, MS 999, 345 Middlefield Rd, Menlo Park, CA  94025</p>
+
+<!-- BEGIN Your USGS Footer -->
+
+<!-- BEGIN USGS Footer Template -->
+      <div id="usgsfooter">
+         <p id="usgsfooterbar">
+            <a href="http://www.usgs.gov/laws/accessibility.html" title="Accessibility Policy (Section 508)">Accessibility</a>
+            <a href="http://www.usgs.gov/foia/" title="Freedom of Information Act">FOIA</a>
+            <a href="http://www.usgs.gov/laws/privacy.html" title="Privacy policies of the U.S. Geological Survey.">Privacy</a>
+            <a href="http://www.usgs.gov/laws/policies_notices.html" title="Policies and notices that govern information posted on USGS Web sites.">Policies and Notices</a>
+	 </p>
+	 <p id="usgsfootertext">
+            <a href="http://www.takepride.gov/"><img src="/images/footer_graphic_takePride.jpg" alt="Take Pride in America logo" title="Take Pride in America Home Page" width="60" height="58" /></a>
+            <a href="http://usa.gov/"><img src="/images/footer_graphic_usagov.jpg" alt="USA.gov logo" title="USAGov: Government Made Easy" width="90" height="26" /></a>
+            <a href="http://www.doi.gov/" title="U.S. Department of the Interior">U.S. Department of the Interior</a> |
+            <a href="http://www.usgs.gov/" title="U.S. Geological Survey">U.S. Geological Survey</a><br />
+           	URL: <em>http://pubsdata.usgs.gov/pubs/of/2000/ofr-00-460/index.html</em><br />
+            Page Contact Information: <a href="https://pubs.usgs.gov/contact">GS Pubs Web Contact</a><br />
+           	Page Last Modified: Thursday, 13-Jun-2024 12:37:44 EDT
+         </p>
+      </div>
+<!-- END USGS Footer Template -->
+
+<!-- END USGS Footer -->
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a493261a7af39a32',t:'MTc5MTc3NzExNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

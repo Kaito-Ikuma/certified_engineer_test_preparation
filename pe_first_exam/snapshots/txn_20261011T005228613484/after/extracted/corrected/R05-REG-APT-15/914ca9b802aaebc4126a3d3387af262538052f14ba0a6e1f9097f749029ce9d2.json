@@ -1,0 +1,44 @@
+{
+  "stem": "環境基本法の典型7公害として列挙されないものを選ぶ。",
+  "conditions": {
+    "方向": "列挙されないもの"
+  },
+  "choices": {
+    "1": {
+      "value": "騒音",
+      "verdict": "列挙される",
+      "reason": "第2条3項に列挙される。"
+    },
+    "2": {
+      "value": "地盤の沈下",
+      "verdict": "条件付きで列挙される",
+      "reason": "法は鉱物掘採のための土地掘削によるものを除く条件で列挙する。"
+    },
+    "3": {
+      "value": "廃棄物投棄",
+      "verdict": "列挙されない",
+      "reason": "それ自体は7項目の列挙名称ではない。投棄が水質・土壌等の公害を生む場合や別法違反となることを否定しない。"
+    },
+    "4": {
+      "value": "悪臭",
+      "verdict": "列挙される",
+      "reason": "第2条3項に列挙される。"
+    },
+    "5": {
+      "value": "振動",
+      "verdict": "列挙される",
+      "reason": "第2条3項に列挙される。"
+    }
+  },
+  "figures": "問題幹・全5肢・否定・文字・数値・時点を原典画像で照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/aptitude/page_015.png"
+  ],
+  "question_id": "R05-REG-APT-15",
+  "source_file": "sources/R05/aptitude.pdf",
+  "source_page": "15",
+  "source_sha256": "3dee8906ad8be46592986fef01028424243f7e515af04979667524eed1f0a915",
+  "raw_text_sha256": "dda8996d07aa1742ee5d3e4f9e5c475c851566857999162642c9e6decfbbb93b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

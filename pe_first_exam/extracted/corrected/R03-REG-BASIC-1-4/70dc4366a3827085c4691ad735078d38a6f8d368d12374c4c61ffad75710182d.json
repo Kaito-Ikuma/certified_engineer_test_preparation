@@ -1,0 +1,46 @@
+{
+  "stem": "平均運転時間と平均修復時間から、修復可能な装置の長期の稼働割合を導く。",
+  "conditions": {
+    "判断方向": "全候補を比較し最も適切な語又は数値・順位を選ぶ。",
+    "原典照合": "25原典画像で22問の全候補、回路接続、FTAゲート、表の列順、数値・不等号を確認。",
+    "前提": "事象の独立性、非零根、修復モデル、法令時点と規準適用範囲は解法と疑義欄に区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(A/(A-B)\\)",
+      "verdict": "不適合",
+      "reason": "周期は差ではなく運転と修復の和であり、B>0なら1を超える場合もある。"
+    },
+    "2": {
+      "value": "\\(B/(A-B)\\)",
+      "verdict": "不適合",
+      "reason": "周期の分母と、稼働時間の分子がともに違う。"
+    },
+    "3": {
+      "value": "\\(A/(A+B)\\)",
+      "verdict": "適合（記載条件内）",
+      "reason": "平均運転時間Aを、運転と修復の平均周期A+Bで割った稼働割合である。"
+    },
+    "4": {
+      "value": "\\(B/(A+B)\\)",
+      "verdict": "不適合",
+      "reason": "同じ二状態モデルでは非稼働率である。"
+    },
+    "5": {
+      "value": "\\(A/B\\)",
+      "verdict": "不適合",
+      "reason": "運転/修復の比は稼働の全時間割合ではなく1を超え得る。"
+    }
+  },
+  "figures": "設問固有の図なし。数式・全候補を原典画像で照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/basic/page_003.png"
+  ],
+  "question_id": "R03-REG-BASIC-1-4",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "3",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "c6afed6182ca6e0f76b3922fc90b921f5ce85859d162e8b1ec4b343871e57f4b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

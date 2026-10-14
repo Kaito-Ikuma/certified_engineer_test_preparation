@@ -1,0 +1,46 @@
+{
+  "stem": "PL法の立証・対象・自損・輸入者・欠陥の5記述を正誤表に対応させる。",
+  "conditions": {
+    "原典条件": "問題幹、否定、ア等の記号順、5選択肢と個数又は表の全行を原典16画像で確認した。",
+    "論理条件": "原典列順ア・イ・ウ・エ・オ。単体ソフトと組込み製品、輸入と単なる販売、品質と安全を分ける。",
+    "法の時点": "出題時の制度を保持。現行取得基準日は2026-10-12。2020年施行の期間変更を別記する。"
+  },
+  "choices": {
+    "1": {
+      "value": "正・正・誤・誤・正",
+      "verdict": "組合せが不一致",
+      "reason": "各記述の判定はFFFFTである。原典の列順で[1, 2]列目が異なる。"
+    },
+    "2": {
+      "value": "誤・誤・正・誤・正",
+      "verdict": "組合せが不一致",
+      "reason": "各記述の判定はFFFFTである。原典の列順で[3]列目が異なる。"
+    },
+    "3": {
+      "value": "正・誤・誤・誤・正",
+      "verdict": "組合せが不一致",
+      "reason": "各記述の判定はFFFFTである。原典の列順で[1]列目が異なる。"
+    },
+    "4": {
+      "value": "誤・正・正・誤・誤",
+      "verdict": "組合せが不一致",
+      "reason": "各記述の判定はFFFFTである。原典の列順で[2, 3, 5]列目が異なる。"
+    },
+    "5": {
+      "value": "誤・誤・誤・誤・正",
+      "verdict": "適切な組合せ",
+      "reason": "各記述の判定はFFFFTである。全ての列が一致する。"
+    }
+  },
+  "figures": "文字表又は記述問題であり図なし。組合せの各行は原典画像の列順を保持する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H23/aptitude/page_009.png"
+  ],
+  "question_id": "H23-REG-APT-08",
+  "source_file": "sources/H23/aptitude.pdf",
+  "source_page": "9",
+  "source_sha256": "5edeacf9cde01f7f01ec563fbe9efeeb39a966d7d419b326b6f185ca3c88b9d0",
+  "raw_text_sha256": "762945788b4ad78797cc24c32c7849dece1ceee0cd4d63da285e3d45699298a6",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,46 @@
+{
+  "stem": "2019年施行の非享受目的の利用に該当する六事例の数を求める。",
+  "conditions": {
+    "判断対象": "広義知的財産・産業財産権・引用・営業秘密を区別する。",
+    "原典照合": "15問の原典画像について問題幹、否定、表の列順、全5候補を確認。",
+    "法の時点": "出題時の制度を保持し、説明の取得基準日は2026-10-12とする。"
+  },
+  "choices": {
+    "1": {
+      "value": "2事例",
+      "verdict": "不適切",
+      "reason": "AI、解析、性能試験、表記調査、場所再現、検索の全6例が該当例であり2ではない。"
+    },
+    "2": {
+      "value": "3事例",
+      "verdict": "不適切",
+      "reason": "目的を表現の鑑賞と混同して三例を外す根拠はない。"
+    },
+    "3": {
+      "value": "4事例",
+      "verdict": "不適切",
+      "reason": "場所の3DCGと検索も非享受の例になり得るため、四例に限定しない。"
+    },
+    "4": {
+      "value": "5事例",
+      "verdict": "不適切",
+      "reason": "六例中一つを常に除く判断は文化庁の例示に対応しない。"
+    },
+    "5": {
+      "value": "6事例",
+      "verdict": "独立判断で適切",
+      "reason": "原典と同じ六例が2019年文化庁資料にあり、条件を満たす非享受利用の例として6となる。"
+    }
+  },
+  "figures": "組合せ表の全5行を画像確認。原典の長文は独自要約へ変換し、正誤と選択肢の対応を保持する。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/aptitude/page_009.png"
+  ],
+  "question_id": "R01-RET-APT-09",
+  "source_file": "sources/R01_retest/aptitude.pdf",
+  "source_page": "9",
+  "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+  "raw_text_sha256": "41df30739cbc7158914d2702251de82e831a0d804f1d663add701d6ab33a0882",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

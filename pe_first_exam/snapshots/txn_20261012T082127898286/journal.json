@@ -1,0 +1,25 @@
+{
+  "status": "committed",
+  "time": "2026-10-12T08:21:27+09:00",
+  "paths": [
+    "generated/questions/applied_science/geophysics_geochemistry/01_seismology.tex",
+    "generated/questions/applied_science/geophysics_geochemistry/02_earth_interior.tex",
+    "generated/questions/applied_science/geophysics_geochemistry/07_ocean.tex",
+    "generated/audit_summary.tex",
+    "generated/frequency_tables.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/geophysics_geochemistry/01_seismology.tex": true,
+    "generated/questions/applied_science/geophysics_geochemistry/02_earth_interior.tex": true,
+    "generated/questions/applied_science/geophysics_geochemistry/07_ocean.tex": true,
+    "generated/audit_summary.tex": true,
+    "generated/frequency_tables.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/geophysics_geochemistry/01_seismology.tex": "7491ecc32b6af751c986ab21bf112492cdc23d973b891ad50ab2e3ef45fce3af",
+    "generated/questions/applied_science/geophysics_geochemistry/02_earth_interior.tex": "10a18ee49cfeb407394473105a904735842eaa0dbd4a3b65067e7ca32c28bef2",
+    "generated/questions/applied_science/geophysics_geochemistry/07_ocean.tex": "12a1a53ab6f978e145ebf5c2b67d142eedff6ae9353d8a78758388ffdeefe84e",
+    "generated/audit_summary.tex": "08dedc6cd76f8de65d47a0b1ba37a1889d14e2be36f978720ea141c3522e8d65",
+    "generated/frequency_tables.tex": "28525a2292625f1357a5484a66920efffc77a0b1c74daba9f44e6c5ca783cebd"
+  }
+}

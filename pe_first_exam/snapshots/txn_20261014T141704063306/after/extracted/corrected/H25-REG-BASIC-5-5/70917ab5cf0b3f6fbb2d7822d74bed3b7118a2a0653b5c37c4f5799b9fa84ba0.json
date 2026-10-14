@@ -1,0 +1,45 @@
+{
+  "stem": "科学と社会をつなぐ双方向の対話。",
+  "conditions": {
+    "四文の順序": "ア=社会理解、イ=科学技術間だけ、ウ=双方向、エ=媒体へ技術使用",
+    "問": "適切な二文。"
+  },
+  "choices": {
+    "1": {
+      "value": "ア イ",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "2": {
+      "value": "ア ウ",
+      "verdict": "適切・選択対象",
+      "reason": "判定と一致する。"
+    },
+    "3": {
+      "value": "イ ウ",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "4": {
+      "value": "イ エ",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    },
+    "5": {
+      "value": "ウ エ",
+      "verdict": "不適切",
+      "reason": "式・定義・対応の独立判定と一致しない。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H25/basic/page_022.png"
+  ],
+  "question_id": "H25-REG-BASIC-5-5",
+  "source_file": "sources/H25/basic.pdf",
+  "source_page": "22",
+  "source_sha256": "20f3dee6674342d80b085979efa0b843c276ad96e0062def058bf8112723cf74",
+  "raw_text_sha256": "11d79c606320067769c0a2362e87104993977a3e1cfc14d9e31ba9e6b16c9d22",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

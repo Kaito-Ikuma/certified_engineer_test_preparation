@@ -1,0 +1,13 @@
+{
+  "time": "2026-10-12T13:18:01+09:00",
+  "question_id": "R01-REG-APPLIED-34",
+  "initial_answer_preserved": "5",
+  "official_answer": "4",
+  "followup_answer": "4",
+  "reason": "下方接続をポテンシャル場専用とした初回誤認。Stanford本文では地震波動場の地下外挿からmigrationを行う。rigid-boom EMI論文の一次検索収録は送受信コイルと導体の二次磁場を扱い、電磁探査の配置と分かる。",
+  "sources": [
+    "stanford_downward2001",
+    "rigid_boom2019"
+  ],
+  "limitation": "rigid-boom論文全文PDFは取得できていない。初回5を改変せず当該検索収録の範囲を明示して最終査読を残す。"
+}

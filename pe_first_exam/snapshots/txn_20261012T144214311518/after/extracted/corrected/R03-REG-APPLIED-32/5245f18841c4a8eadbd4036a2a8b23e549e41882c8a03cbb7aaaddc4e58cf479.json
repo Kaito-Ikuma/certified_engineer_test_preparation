@@ -1,0 +1,45 @@
+{
+  "stem": "比抵抗の深度感度と自然電位法の逆解析限界を比較する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "SPは自然電位差の分布を直接測り、源の深度には機構・形状・抵抗率のモデルが必要である。"
+  },
+  "choices": {
+    "1": {
+      "value": "IPは印加電流の分極応答、硫化鉱物探査に用いる",
+      "verdict": "適切",
+      "reason": "金属・電解質界面等の分極で電位の時間減衰や周波数位相が生じ、鉱床や環境調査に使われる。"
+    },
+    "2": {
+      "value": "垂直探査は水平多層の鉛直比抵抗を推定",
+      "verdict": "適切",
+      "reason": "電極間隔を変えて深度感度を変化させ、WennerやSchlumberger等の配置で層モデルを推定する。"
+    },
+    "3": {
+      "value": "水平探査は特定深さの水平比抵抗変化を調べる",
+      "verdict": "条件付きで適切",
+      "reason": "固定間隔等で感度深度をおおむねそろえ横方向を調べる。ただし有限体積の重み付き応答で一点の厳密深度だけを測らない。"
+    },
+    "4": {
+      "value": "SPから地下水や鉱床の深さを探査解析し簡単安全に測る",
+      "verdict": "条件付きで適切",
+      "reason": "自然電位分布の簡単な受動測定はできるが、深度は非一意で源モデルや他データが必要である。深度解析が全く不可能とも言えず、この候補の否定範囲は未確定である。"
+    },
+    "5": {
+      "value": "多電極の直流電位から比抵抗tomography",
+      "verdict": "適切",
+      "reason": "多数の注入・受信対の応答を順モデルへ合わせて比抵抗分布を推定する。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "4にはモデル依存の深度推定が可能という反例がある。公式4を保持するが「SPで深度解析はできない」という誤解を教えない。3の特定深さも有限感度体積の近似。",
+  "evidence": [
+    "extracted/pages/R03/17_applied_science/page_012.png"
+  ],
+  "question_id": "R03-REG-APPLIED-32",
+  "source_file": "sources/R03/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+  "raw_text_sha256": "ab8fb134aaf3e0c7bd58a4c0ac8678f73196f5790a5b1f95cad38e77b0f71e2f",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

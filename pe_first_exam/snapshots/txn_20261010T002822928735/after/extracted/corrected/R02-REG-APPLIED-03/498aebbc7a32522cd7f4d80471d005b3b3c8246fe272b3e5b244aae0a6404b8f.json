@@ -1,0 +1,45 @@
+{
+  "stem": "誘電体とコンデンサーについて、最も不適切な説明を選ぶ。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "モデル": "容量の比例関係は一様誘電体と平行平板の近似。"
+  },
+  "choices": {
+    "1": {
+      "value": "絶縁体を電場へ置いて電気双極子モーメントを持つことを強誘電性という。",
+      "verdict": "不適切",
+      "reason": "これは一般的な誘電分極である。強誘電性は外部電場なしの自発分極とその反転を特徴とする。"
+    },
+    "2": {
+      "value": "交流電場で電気エネルギーの一部が熱となることを誘電損失という。",
+      "verdict": "適切",
+      "reason": "分極の応答に損失があると電場からのエネルギーが熱へ散逸する。"
+    },
+    "3": {
+      "value": "可動電極の対向面積を変えると容量が変化する。",
+      "verdict": "適切",
+      "reason": "端効果を無視するとC=εA/dであり対向面積Aに依存する。"
+    },
+    "4": {
+      "value": "誘電体として酸化アルミニウムや酸化タンタルが使われる。",
+      "verdict": "適切",
+      "reason": "金属酸化物の薄い絶縁層を使う電解コンデンサーの例である。"
+    },
+    "5": {
+      "value": "平行平板容量は誘電率に比例し、誘電体の厚さへ反比例する。",
+      "verdict": "適切",
+      "reason": "誘電体が一様に隙間を満たす平行平板近似ではC=εA/dである。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_002.png"
+  ],
+  "question_id": "R02-REG-APPLIED-03",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "1d38719707172e6674e6e914d0f2a39f22cf25de4b07b6f40acac6fff5cfe518",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,28 @@
+{
+  "time": "2026-10-14T14:00:39.157620+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_056_design_information_finish",
+  "canonical_counts": {
+    "registered": 1270,
+    "solution_drafts": 1135,
+    "corrected_verified": 710,
+    "corrected_partial": 425,
+    "classification_verified": 1156,
+    "manual_required": 560,
+    "subject_drafts": {
+      "BASIC": 335,
+      "APT": 240,
+      "APPLIED": 560
+    }
+  },
+  "source_images_actually_viewed": 33,
+  "source_reviewed_questions": 30,
+  "initial_matches": 30,
+  "new_concepts": 24,
+  "new_references": 5,
+  "pdf_manifest": "extracted/logs/S7_056_build_manifest.json",
+  "checkpoint2_reached": false,
+  "remaining_first_drafts": 135,
+  "next": "解析43問を執筆、環境92問、頻度分析と真のCheckpoint2。"
+}

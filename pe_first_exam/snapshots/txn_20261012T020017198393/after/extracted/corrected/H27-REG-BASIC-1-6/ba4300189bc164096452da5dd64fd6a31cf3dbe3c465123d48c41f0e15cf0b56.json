@@ -1,0 +1,46 @@
+{
+  "stem": "ISO 9001:2008を背景とするPDCAの順序を対応させる。",
+  "conditions": {
+    "判断方向": "最も適切な記述又は組合せを選ぶ",
+    "原典照合": "14原典画像で16問の条件、数値、単位、表の列と全5候補を確認。",
+    "モデル": "独立性、正規性、一定発生率などの前提を個別に保持する。"
+  },
+  "choices": {
+    "1": {
+      "value": "Plan Act Check Do",
+      "verdict": "不適切",
+      "reason": "実施前に改善を置き、実施を最後にする順序になっている。"
+    },
+    "2": {
+      "value": "Plan Act Do Check",
+      "verdict": "不適切",
+      "reason": "実施より前に改善を置き、確認後に次の改善へ戻る対応がない。"
+    },
+    "3": {
+      "value": "Plan Check Act Do",
+      "verdict": "不適切",
+      "reason": "計画の後に実施がなく確認へ進み、実施が最後になっている。"
+    },
+    "4": {
+      "value": "Plan Do Act Check",
+      "verdict": "不適切",
+      "reason": "実施結果を確認する前に改善段階を置いている。"
+    },
+    "5": {
+      "value": "Plan Do Check Act",
+      "verdict": "適切",
+      "reason": "計画・実施・確認・改善の順で、結果を次の計画に反映する。"
+    }
+  },
+  "figures": "品質表・確率表・組合せ表を原典画像と照合。図表は独自の要約と計算へ変換する。",
+  "ambiguity": "ISO公式の2008実施ガイダンスでPDCA名称を確認したが、設問が参照するISO 9001:2008 と JIS Q 9001:2008の規格本文全体は未取得。現在版の説明を過去版の条文へ無条件に代用しない。",
+  "evidence": [
+    "extracted/pages/H27/basic/page_004.png"
+  ],
+  "question_id": "H27-REG-BASIC-1-6",
+  "source_file": "sources/H27/basic.pdf",
+  "source_page": "4",
+  "source_sha256": "cfa427e716c21b364ae9cbe3c9c2f693ceecebb38b7a0962b05bd13c883b2039",
+  "raw_text_sha256": "fb6f143a6626728b36d47df1fd0edcae05d7bd961c161899031ac94935fa80c8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,47 @@
+{
+  "stem": "直列RLC回路のインピーダンスの大きさが最小となる交流周波数を求める。",
+  "conditions": {
+    "抵抗": "100 Ω",
+    "インダクタンス": "1 mH",
+    "容量": "0.1 μF",
+    "接続": "抵抗・コイル・コンデンサーを直列。理想的な周波数一定素子の定常交流。"
+  },
+  "choices": {
+    "1": {
+      "value": "1 kHz",
+      "verdict": "条件に不一致",
+      "reason": "SIへ換算した共振周波数は約15.9155 kHzであり、この候補より離れる。"
+    },
+    "2": {
+      "value": "5.1 kHz",
+      "verdict": "条件に不一致",
+      "reason": "SIへ換算した共振周波数は約15.9155 kHzであり、この候補より離れる。"
+    },
+    "3": {
+      "value": "16 kHz",
+      "verdict": "条件に一致",
+      "reason": "リアクタンスが相殺する約15.9155 kHzに最も近い。"
+    },
+    "4": {
+      "value": "100 kHz",
+      "verdict": "条件に不一致",
+      "reason": "SIへ換算した共振周波数は約15.9155 kHzであり、この候補より離れる。"
+    },
+    "5": {
+      "value": "630 kHz",
+      "verdict": "条件に不一致",
+      "reason": "SIへ換算した共振周波数は約15.9155 kHzであり、この候補より離れる。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/17_applied_science/page_001.png"
+  ],
+  "question_id": "H29-REG-APPLIED-03",
+  "source_file": "sources/H29/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+  "raw_text_sha256": "c1bc5543eb1fe24bf91a4552c3ef483c8c4e946aad028737a643833450661cfe",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

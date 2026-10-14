@@ -1,0 +1,45 @@
+{
+  "stem": "屈折法の増速前提と地下水・風化・波種・初動を区別する。",
+  "conditions": {
+    "原典照合": "五候補の順序、最適切と不適切の方向、波種、深度目安、曲線名、最長と最短を原典画像で照合。",
+    "前提": "通常の地盤の等方弾性を想定し、臨界屈折の層状解釈とP波の飽和依存を区別する。"
+  },
+  "choices": {
+    "1": {
+      "value": "通常の屈折法で深部ほど速度が高いと仮定する",
+      "verdict": "条件付きで適切",
+      "reason": "臨界屈折の層状モデルの前提である。あらゆる地下構造が必ず増速するという自然法則ではない。"
+    },
+    "2": {
+      "value": "同じ岩種でも浅部速度の違いが風化・変質・割れ目の違いを反映する",
+      "verdict": "適切",
+      "reason": "弾性係数、接触状態、空隙等の変化が速度へ影響する。同じ岩種なら一定速度とは限らない。"
+    },
+    "3": {
+      "value": "土質のP波速度は地下水の有無に左右されない",
+      "verdict": "不適切",
+      "reason": "空隙流体と飽和状態が圧縮性に影響するため無関係という断定は誤りである。"
+    },
+    "4": {
+      "value": "P波速度は常にS波速度より大きい",
+      "verdict": "条件付きで適切",
+      "reason": "安定な等方弾性体ではVP²=(K+4G/3)/ρ、VS²=G/ρよりVP>VSである。異方性のモードや流体のS波不存在まで常に二つの速度を比較できるわけではない。"
+    },
+    "5": {
+      "value": "解析に初動走時のみを用いる",
+      "verdict": "条件付きで適切",
+      "reason": "通常の屈折初動解析の説明である。反射・全波形等を含める別の解析まで禁止する意味ではない。"
+    }
+  },
+  "figures": "図なし。文章又は用語の五候補を画像照合。",
+  "ambiguity": "P>Sは安定な等方弾性体の条件、増速と初動のみは通常の屈折法の枠組みである。異方性や他の解析を無条件に排除しない。",
+  "evidence": [
+    "extracted/pages/H25/17_applied_science/page_012.png"
+  ],
+  "question_id": "H25-REG-APPLIED-32",
+  "source_file": "sources/H25/17_applied_science.pdf",
+  "source_page": "12",
+  "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+  "raw_text_sha256": "fea36448af6fb0a67a479a04f36b20edffb8b8b5bff4d75f94fb5858663baf41",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

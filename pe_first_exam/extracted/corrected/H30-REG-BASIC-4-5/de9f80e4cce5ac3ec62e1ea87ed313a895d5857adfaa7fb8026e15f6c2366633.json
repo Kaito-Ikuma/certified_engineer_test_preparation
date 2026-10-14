@@ -1,0 +1,45 @@
+{
+  "stem": "細胞の元素組成・水と有機物の質量比を、原子数割合と区別して比較する。",
+  "conditions": {
+    "方向": "最も不適切。",
+    "比較": "細菌の水、細胞の原子数、動物細胞有機成分の重量。"
+  },
+  "choices": {
+    "1": {
+      "value": "細菌細胞の総重量約70パーセントは水。",
+      "verdict": "適切（代表値）",
+      "reason": "水を含む全体の代表的な質量比である。乾燥重量と混同しない。"
+    },
+    "2": {
+      "value": "原子数99パーセントはH・O・N・C。",
+      "verdict": "適切（代表値）",
+      "reason": "典型的な細胞における原子個数の概数である。質量99パーセントとは違う。"
+    },
+    "3": {
+      "value": "生物の元素組成はよく似ており、原子数のHは60パーセント以上。",
+      "verdict": "適切（近似）",
+      "reason": "原子数では軽いHの数が多い。代表的な組成の近似であり、全生物の厳密に同じ割合を保証する式ではない。"
+    },
+    "4": {
+      "value": "主な有機小分子は糖・アミノ酸・脂肪酸・ヌクレオチド。",
+      "verdict": "適切",
+      "reason": "高分子の部品・反応成分としての主な4群である。"
+    },
+    "5": {
+      "value": "動物細胞の有機物の重量比で核酸が最大。",
+      "verdict": "不適切",
+      "reason": "通常の動物細胞の有機成分ではタンパク質の重量が大きい。核酸が最大という比較が違う。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/basic/page_016.png"
+  ],
+  "question_id": "H30-REG-BASIC-4-5",
+  "source_file": "sources/H30/basic.pdf",
+  "source_page": "16",
+  "source_sha256": "c6963164384b53726843ecdf2f2a6bff7e7ca6e8a39d19faeceeaaa298548f9f",
+  "raw_text_sha256": "3ca569ff9b29e345af3a2ebbd5101b07f92ed2a7895487c8a6768505bee8202b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

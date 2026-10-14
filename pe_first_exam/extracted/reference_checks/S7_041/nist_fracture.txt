@@ -1,0 +1,906 @@
+                                              d e n t a l m a t e r i a l s 2 6 ( 2 0 1 0 ) 135–147
+
+
+
+                                            available at www.sciencedirect.com
+
+
+
+
+                              journal homepage: www.intl.elsevierhealth.com/journals/dema
+
+
+
+Review
+
+A practical and systematic review of Weibull statistics for
+reporting strengths of dental materials
+
+Janet B. Quinn, George D. Quinn ∗
+ADAF Paffenbarger Research Center, National Institute of Standards and Technology, Gaithersburg, MD, USA
+
+
+
+a r t i c l e       i n f o                 a b s t r a c t
+
+Article history:                            Objectives. To review the history, theory and current applications of Weibull analyses sufﬁ-
+Received 24 July 2009                       cient to make informed decisions regarding practical use of the analysis in dental material
+Received in revised form                    strength testing.
+9 September 2009                            Data. References are made to examples in the engineering and dental literature, but this
+Accepted 11 September 2009                  paper also includes illustrative analyses of Weibull plots, fractographic interpretations, and
+                                            Weibull distribution parameters obtained for a dense alumina, two feldspathic porcelains,
+                                            and a zirconia.
+Keywords:                                   Sources. Informational sources include Weibull’s original articles, later articles speciﬁc to
+Weibull                                     applications and theoretical foundations of Weibull analysis, texts on statistics and fracture
+Review                                      mechanics and the international standards literature.
+Weibull standards                           Study selection. The chosen Weibull analyses are used to illustrate technique, the importance
+Flaw population                             of ﬂaw size distributions, physical meaning of Weibull parameters and concepts of “equiva-
+Extreme value distribution                  lent volumes” to compare measured strengths obtained from different test conﬁgurations.
+Strength distribution                       Conclusions. Weibull analysis has a strong theoretical basis and can be of particular value
+Characteristic strength                     in dental applications, primarily because of test specimen size limitations and the use of
+Strength comparison                         different test conﬁgurations. Also endemic to dental materials, however, is increased dif-
+Equivalent volume                           ﬁculty in satisfying application requirements, such as conﬁrming fracture origin type and
+Equivalent area                             diligence in obtaining quality strength data.
+Alumina                                               © 2009 Academy of Dental Materials. Published by Elsevier Ltd. All rights reserved.
+Zirconia
+Porcelain
+Weibull modulus
+Strength scaling
+Maximum likelihood
+Linear regression
+
+
+
+
+ ∗
+   Corresponding author at: ADAF, Stop 854-6, National Institute of Standards and Technology, Gaithersburg, MD 20899, USA.
+Tel.: +1 301 975 5765.
+    E-mail address: george.quinn@nist.gov (G.D. Quinn).
+0109-5641/$ – see front matter © 2009 Academy of Dental Materials. Published by Elsevier Ltd. All rights reserved.
+doi:10.1016/j.dental.2009.09.006
+136                                                                                  d e n t a l m a t e r i a l s 2 6 ( 2 0 1 0 ) 135–147
+
+
+
+
+Contents
+
+ 1.   Introduction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .     136
+      1.1. Background: brittle failure prediction, fracture mechanics and ﬂaws . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                                                 136
+      1.2. Extreme value distributions of “largest ﬂaws” . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                     137
+      1.3. The Weibull distribution . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                            137
+ 2.   Considerations for using Weibull statistics for dental materials . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                                 139
+ 3.   Experimental examples and discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                         140
+      3.1. Example 1: alumina 3- and 4-point ﬂexure tests . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                          141
+      3.2. 3-Point and 4-point ﬂexural strength comparisons using equivalent volumes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                                                               141
+      3.3. Example 2: comparison of two porcelains using different sized ﬂexure bars . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                                                           142
+      3.4. Example 3: Deviations from a unimodal strength distribution in a zirconia . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                                                         143
+      3.5. Additional considerations and assumptions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                                                       143
+ 4.   Conclusion. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .    144
+      Acknowledgements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .                 144
+       Appendix A . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .      144
+      References . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   146
+
+
+
+
+1.        Introduction                                                                                                             demonstrated the inapplicability of ductile strength testing
+                                                                                                                                   analyses to brittle failure prediction. Such disasters spurred
+This paper reviews Weibull statistics in order to facilitate                                                                       the development of the science of fracture mechanics in order
+informed decisions regarding practical use of the analysis as it                                                                   to understand the conditions of failure through crack growth
+applies to dental material strength testing. Weibull statistics                                                                    rather than by ductile mechanisms [7].
+are commonly used in the engineering community, but to a                                                                              In the early 1920s, Grifﬁth postulated that crack exten-
+somewhat lesser extent in the dental ﬁeld where applicability                                                                      sion in brittle materials occurs when there is sufﬁcient elastic
+has been questioned [1,2]. A possible confusing factor is that                                                                     strain energy in the vicinity of a growing crack to form two new
+Waloddi Weibull originally presented his analyses partially                                                                        surfaces [8]. In the 1950s Irwin built on Grifﬁth’s work to asso-
+on empirical grounds; published theoretical conﬁrmation was                                                                        ciate crack extension with an “energy release rate” [9]. This led
+not available until many years later. Even as a theoretical basis                                                                  to a new parameter, KIc —fracture toughness, or resistance to
+was being constructed, Weibull, as an engineer, seemed more                                                                        crack growth. Irwin’s approach enabled strength predictions
+concerned with what worked [3,4]. In order to assess applica-                                                                      based on fracture toughness calculations that relate crack
+bility to the speciﬁc ﬁeld of dental material strength testing, it                                                                 extension to the sizes of preexisting cracks or “ﬂaws” within
+is helpful to start with a brief history and overview of basic                                                                     a material. For the most common case of a small ﬂaw in a far
+concepts of extreme value theory, fracture mechanics, and                                                                          ﬁeld tensile stress ﬁeld, modern fracture mechanics relates
+ﬂaw populations as they pertain to the theoretical foundation                                                                      the applied fracture stress at the fracture origin,  f , to a ﬂaw
+of Weibull analysis.                                                                                                               size, c [7]:
+
+1.1.   Background: brittle failure prediction, fracture                                                                                       KIc
+                                                                                                                                   f =        √                                                                                                           (1)
+mechanics and ﬂaws                                                                                                                           Y c
+
+It is often noted that dental restorative ceramics and compos-                                                                     where Y is a dimensionless, material-independent constant,
+ites, while popular in terms of esthetics and biocompatibility,                                                                    related to the ﬂaw shape, location and stress conﬁguration
+are susceptible to brittle fracture. This type of failure is partic-                                                               and is called the stress intensity shape factor. “Flaws” are not
+ularly difﬁcult to predict. Imminent brittle fracture is seldom                                                                    necessarily inadvertent defects or blemishes in a material. No
+preceded by warning, such as visible deformation, nor do                                                                           material is perfectly homogenous, and all contain some sort
+seemingly identical brittle components appear to break at                                                                          of discontinuities on some scale. These discontinuities might
+the same applied stress. Ductile materials deform to evenly                                                                        be pores, inclusions, distributed microcracks associated with
+distribute stresses throughout a region, but in stiff, brit-                                                                       grain boundaries or phase changes during processing, regions
+tle materials, stress concentrations at specimen geometry                                                                          of dislocations or slight variations of chemistry, or many other
+changes, cracks, surface irregularities, pores and other intrin-                                                                   possible variants and combinations. They could also be sur-
+sic ﬂaws are not relieved. Hence the design methodologies and                                                                      face distributed ﬂaws such as grinding cracks. Flaws in this
+test methods for ductile materials are unsuitable for brittle                                                                      sense are intrinsic to the material or the way it was shaped
+materials and different test methods and design approaches                                                                         or processed, and are distributed in some way throughout the
+are needed.                                                                                                                        material surface or volume. It can be seen from the equation
+    A series of catastrophic events, often epitomized by the Lib-                                                                  that the smallest strengths are associated with the largest ﬂaw
+erty ship [5] and Comet airplane [6] disasters, spectacularly                                                                      sizes.
+                                             d e n t a l m a t e r i a l s 2 6 ( 2 0 1 0 ) 135–147                                        137
+
+
+    The idea of failure being associated with a largest ﬂaw,                 extreme value distribution. The “largest ﬂaw” population is
+or “weakest link theory”, is not recent. Leonardo DaVinci is                 not expected to be a symmetric distribution, whether or not
+reputed to have conducted tests circa 1500 involving baskets                 the parent population is Gaussian as in Fig. 1 example.
+suspended by different lengths of wire of nominally identical                    Suppose now that larger-sized test specimens of the same
+diameter [10]. DaVinci gradually ﬁlled the baskets with sand                 material are tested. Each of these physically larger test spec-
+and noted the baskets suspended by shorter wires could hold                  imens contains more ﬂaws than each of the smaller test
+more sand, an outcome that is expected if it is assumed that                 specimens in the previous thought experiment. Since a larger
+there is a lower probability of encountering a large ﬂaw in a                test specimen contains more ﬂaws, it is more likely to con-
+shorter wire. DaVinci did not know exactly where a particular                tain a very large ﬂaw corresponding to the far right portion
+wire would break, but he recommended that multiple tests be                  of the tail in Fig. 1 parent population. If many larger-sized
+done for each wire length, suggesting that there was a statis-               test specimens are withdrawn, their “largest ﬂaw” distribution
+tical variation in the strengths and failure locations of wires              will be weighted further to the right within the parent popula-
+of a the same length. Since DaVinci’s time, much progress has                tion tail than the previous “largest ﬂaw” distribution of smaller
+been made both in our ability to identify critical ﬂaw proper-               test specimens. The “largest ﬂaw” distributions “march to the
+ties and in reﬁning predictions based on weakest link theory                 right” as the physical sizes of the test specimen increase.
+and statistical failure probabilities.                                           One result of “largest ﬂaw” distributions that depend on the
+                                                                             physical size of test specimens is that strength distributions,
+1.2.    Extreme value distributions of “largest ﬂaws”                        which are based on ﬂaw sizes, will similarly depend on test
+                                                                             specimen size. Strength distributions will inversely “march”
+Suppose a material has a ﬂaw size distribution such as the nor-              left or right in accordance with “largest ﬂaw” distributions in
+mal, or Gaussian, distribution illustrated in Fig. 1. Although               a mathematically predictable fashion. Also, strength distribu-
+the ﬂaws have different sizes, suppose they are all of the                   tions would not be expected to be symmetric if the “largest
+same general type that initiate failure. Finally, suppose that               ﬂaw” distributions are not symmetric.
+small material test specimens are withdrawn from this par-                       Currently, many data in the dental literature are simply
+ent population. Each test specimen will contain a discrete ﬂaw               reported in terms of mean values with standard deviations
+population based on the parent distribution, and the largest                 calculated by assuming symmetric, normal strength distri-
+ﬂaw within the highly stressed regions of each test specimen                 butions about an average. This assumption can still yield
+will precipitate failure if uniform tension is applied.                      insight into material strengths and strength ranges. In fact,
+    If one is very unlucky, a randomly withdrawn material test               the assumed normal strength distribution may not greatly dif-
+specimen will contain an unusually large ﬂaw, at the very end                fer from an extreme value distribution in providing strength
+of the tail at the right of the parent distribution in Fig. 1. The           estimates of similarly sized and stressed test pieces. Unfor-
+test specimen will be very weak. If one is very fortunate, how-              tunately, such predictions only hold for the speciﬁc test
+ever, the largest ﬂaw in a random material test specimen will                specimen size and shape in the particular test conﬁguration
+not be far into the tail. This specimen will be relatively strong.           under laboratory conditions. As will be shown, besides more
+If many random test specimens are withdrawn, most of them                    accurately characterizing material strength, extreme value
+will contain a largest ﬂaw that is somewhere within the parent               statistics are a powerful tool that yield parameters that can
+population tail of large ﬂaws. The “largest ﬂaw” distribution                be used to relate test strength data to expected strengths for
+might look like the shaded portion of Fig. 1.                                different stress conﬁgurations, different test specimen sizes,
+    The distribution of “largest ﬂaws” of many withdrawn test                and different testing conditions.
+specimens from a parent population is an example of an
+                                                                             1.3.       The Weibull distribution
+
+                                                                             Returning to Fig. 1, it can be seen that the parent distribu-
+                                                                             tion tail at the right is much more important than the rest of
+                                                                             the parent distribution containing smaller ﬂaws. Since small
+                                                                             ﬂaws in the test specimens do not precipitate failure, it does
+                                                                             not matter how small these ﬂaws are or how their sizes are
+                                                                             distributed. The left side of the total ﬂaw distribution in Fig. 1
+                                                                             has very little bearing on the “largest ﬂaw” distribution.
+                                                                                 The original total ﬂaw population does not have to be nor-
+                                                                             mal or symmetric to result in an extreme value distribution
+                                                                             shaped similar to the shaded portion in the ﬁgure. The right
+                                                                             side of the parent ﬂaw distribution, the tail of large ﬂaws,
+                                                                             dominates the shape of the “largest ﬂaw” distribution. This
+                                                                             is because only one very large ﬂaw in a test specimen is neces-
+Fig. 1 – Total ﬂaw distribution in a material (curved line).                 sary to be counted as “the largest ﬂaw”, but if the largest ﬂaw
+Withdrawing multiple test pieces from the total ﬂaw                          is relatively small, all the other ﬂaws in the test specimen have
+population and collecting the largest ﬂaw from each test                     to be smaller. The distribution is thus skewed to the right as
+piece results in a different distribution of “largest ﬂaws”                  in Fig. 1, following the parent distribution tail. Extreme value
+(shaded area).                                                               distributions in general “follow the tail” [11]. Focusing only on
+138                                                 d e n t a l m a t e r i a l s 2 6 ( 2 0 1 0 ) 135–147
+
+
+
+the tails allows simple, generalized parametric functions to be                  ditions and, mostly, good empirical ﬁt. The parameter symbols
+used in extreme value statistical models. Such models have                       and form of the extreme value functions are usually writ-
+been deﬁned to accommodate underlying distribution tails                         ten differently for reliability analyses. In the speciﬁc case of
+that deviate considerably from the Gaussian shape in Fig. 1                      Weibull fracture strength analysis, the cumulative probabil-
+example.                                                                         ity function is written such that the probability of failure, Pf ,
+   There are three commonly recognized families of extreme                       increases with the fracture stress variable, :
+value distributions [11–13] where G(x) is the probability distri-
+butions function for an outcome being less than x for a sample
+                                                                                                     −  m 
+                                                                                                                 u
+                                                                                 Pf = 1 − exp −                                                 (2)
+set of n independent measurements:                                                                          
+
+Type I. Gumbel         G(x) = exp(−exp−(x−)/ )     for all x
+                                                                                 This is known as the Weibull three parameter strength dis-
+                                                    −
+                                                                                 tribution. The threshold stress parameter,  u , represents a
+                                    = exp(−((x − )/) ) for x ≥ 
+Type II.   Fréchet :     G(x)                                                    minimum stress below which a test specimen will not break.
+                                    = 0 otherwise
+                                                                                 The scale parameter or characteristic strength,   , is depen-
+                                                     
+                                                                                 dent on the stress conﬁguration and test specimen size.
+                                     = exp(−(( − x)/) ) for x ≤               The distribution shape parameter, m, is the Weibull modu-
+Type III. Weibull :       G(x)
+                                     = 1 otherwise                               lus. This is the equation form that Weibull presented in his
+                                                                                 original publications, directly derived from weakest link the-
+where , (>0), and (>0) are the location, scale and shape
+                                                                                 ory [3]. He was conservative and disclaimed any theoretical
+parameters, respectively.
+                                                                                 basis, not because of misgivings concerning extreme value or
+    Fisher and Tippet [12] are credited [11,13] with deﬁning the
+                                                                                 weakest link theory, which was well established by then, but
+extreme value distributions in 1928, when they showed there
+                                                                                 because he perceived it was “hopeless to expect a theoreti-
+could only be the three types. Some graphical examples of
+                                                                                 cal basis for distribution functions of random variables such
+the probability density functions of the three types of extreme
+                                                                                 as strength properties”. Since Weibull’s initial publications in
+value distributions are shown in Fig. 2.
+                                                                                 1939 and 1951, however, the science of fracture mechanics
+    All three extreme value distributions have a theoretical
+                                                                                 has enabled determinations of quantitative functional rela-
+basis for characterizing phenomena founded on weakest link
+                                                                                 tionships between strength and ﬂaws in brittle materials, as
+theory. For strength dependency on an underlying material
+                                                                                 exempliﬁed in Eq. (1).
+ﬂaw distribution, the goodness-of-ﬁt of any of the extreme
+                                                                                     By 1977, Jayatilaka and Trustrum [16] used fracture
+value distributions depends on the shape of the ﬂaw distribu-
+                                                                                 mechanics to develop a general expression for the failure
+tion tail. In this regard, Type III, or the Weibull distribution, is
+                                                                                 probability using several general ﬂaw size distributions sug-
+usually considered the best choice because it is bounded (the
+                                                                                 gested by experimental work. They coupled these ﬂaw size
+lowest possible fracture strength is zero), the parameters allow
+                                                                                 distributions with the fracture mechanics criterion, Eq. (1),
+comparatively greater shape ﬂexibility, it can provide reason-
+                                                                                 and integrated the risk of breakage over component volumes
+ably accurate failure forecasts with small numbers of test
+                                                                                 and then derived a number of different strength distributions
+specimens and it provides a simple and useful graphical plot
+                                                                                 [16,17]. Their derivations are too lengthy to repeat here and the
+[4,14]. In what has been hailed as his “hallmark paper” in 1951
+                                                                                 reader is encouraged to review their exposition in the original
+[15], Weibull based the wide applicability of the distribution on
+                                                                                 references. They showed that the right side tail of many par-
+functional simplicity, satisfaction of necessary boundary con-
+                                                                                 ent ﬂaw size distributions such as shown in Fig. 1 often can
+                                                                                 be modeled by a simple power law function: f(c) = constant c−n
+                                                                                 where c is the ﬂaw size. In such cases, the resulting strength
+                                                                                 distribution is the Weibull distribution with m = 2n − 2. Danzer
+                                                                                 et al. [18–20] have done similar derivations with more gen-
+                                                                                 eralized ﬂaw size distributions and have reached the same
+                                                                                 conclusions. Subsequent work, including painstaking mea-
+                                                                                 surement of ﬂaw sizes and constructing distributions, has
+                                                                                 conﬁrmed the power law function for the distribution of large
+                                                                                 crack sizes and hence the theoretical basis for the Weibull
+                                                                                 approach [21–23]. In other words, a reasonable power law
+                                                                                 distribution for large ﬂaw sizes, classical fracture mechanics
+                                                                                 analysis, and weakest link theory lead directly to the Weibull
+                                                                                 strength distribution.
+                                                                                     Today’s engineers routinely utilize Weibull statistics for
+                                                                                 characterizing failure of brittle materials. Numerous and
+Fig. 2 – Probability density functions for the three extreme                     diverse studies in the engineering literature report data in
+value distributions, arbitrarily placed along the abscissa (x)                   terms of Weibull parameters where the strengths are related
+axis for easier shape comparison. Both the Weibull and                           to fractographically determined ﬂaw types and sizes [24–26].
+Gumbel functions have demonstrated good ﬁts for                                  Such studies substantiate the existence of ﬂaw distributions
+strengths of brittle materials, but a theoretical basis has                      that lead to strength distributions that can be modeled by
+been demonstrated for the Weibull distribution.                                  Weibull statistics for a wide range of materials. As noted ear-
+                                              d e n t a l m a t e r i a l s 2 6 ( 2 0 1 0 ) 135–147                                       139
+
+
+lier, fractographic examinations are becoming more common                     govern the strength distribution. If, however, some test speci-
+in relating ﬂaw types and sizes to strengths of dental restora-               mens break from microcracks, and other test specimens break
+tion materials [27–29]. While this shows that characterizing                  from pores, the strength distributions resulting from the dif-
+ﬂaw populations in dental materials is possible, this does not                ferent ﬂaw populations overlap and an associated extreme
+prove it is easy or possible in every case. Many dental mate-                 value distribution cannot be modeled by one single ﬂaw size
+rials have rough microstructures, where it can be particularly                distribution tail. In this case, the Weibull strength distribu-
+difﬁcult to identify fractographic features [30,31]. Also, it is not          tion would not be expected to appear smoothly continuous.
+unusual to have multiple ﬂaw types present which complicate                   If many test specimens are tested and enough of them break
+the Weibull analysis.                                                         from either ﬂaw population, parts of two distinct Weibull dis-
+    Major standards organizations throughout the world have                   tributions may be discernable. Censored statistical analyses
+published speciﬁc guidelines for reporting ceramic strength in                must be used in such cases [32]. Bends or kinks in a Weibull
+terms of Weibull parameters, including ASTM (C1239) [32], the                 distribution function are often indicative of fracture resulting
+Japanese Industrial Standards Organization (JIS R1625) [33],                  from multiple ﬂaw types.
+the European Committee for Standardization (CEN ENV 843)                          Thus, lack of a good Weibull ﬁt is suggestive of an inconsis-
+[34], and the International Organization for Standards (ISO                   tent underlying ﬂaw population, assuming the material was
+20501) [35]. These standards are very similar and use the iden-               tested properly and failed in a brittle manner. Conversely, a
+tical Maximum Likelihood Estimation analysis to calculate the                 good Weibull ﬁt is sometimes taken as indicative of a sin-
+Weibull parameters. A newly revised (2008) Ceramic Material                   gle, dominant ﬂaw type and conﬁrmation of adequate care
+for Dentistry standard (ISO 6872) [36] is the sole exception and              in testing procedures. Unless material familiarity and previ-
+uses a simpler linear regression calculation in an informative                ous testing dictates otherwise, it is prudent to verify the cause
+annex.                                                                        of fracture initiation. This is often done fractographically and
+    Since many brittle materials used in structural engineer-                 is encouraged, and in cases required, by the standards for
+ing are also used in restorative dentistry, are Weibull analyses              Weibull analyses [32–35]. There even are guidelines and formal
+appropriate for ceramic dental materials? To answer this, the                 standards for fractographic analysis that have been prepared
+speciﬁc underlying assumptions and conditions inherent in                     with Weibull analysis in mind [31,38].
+applying Weibull statistics must be examined.                                     Another consideration in using Weibull statistics is the
+                                                                              increased number of test specimens that might be needed to
+                                                                              characterize an entire strength distribution rather than sim-
+2.      Considerations for using Weibull                                      ply estimate a mean strength value. The optimal number of
+statistics for dental materials                                               test specimens depends on many variables, including mate-
+                                                                              rial and testing costs, the values of the distribution parameters
+A good data set is required for any credible property determi-                and the desired precision for an intended application. Help-
+nation, and it can be deduced from the previous paragraphs                    ful calculations and tables to make such decisions can be
+that diligence in test specimen preparation and testing proce-                found in the previously cited standards. In the absence of
+dures is particularly important when using Weibull statistics.                speciﬁc requirements, a general rule-of-thumb is that approx-
+Test specimens breaking from inconsistent machining or han-                   imately 30 test specimens provide adequate Weibull strength
+dling, or haphazard alignment, are not representative of a                    distribution parameters, with more test specimens contribut-
+speciﬁc ﬂaw population, and do not contribute to a valid data                 ing little towards better uncertainty estimates [39–41]. More
+set for Weibull analysis. A materials advisory board committee                information regarding optimal test specimen numbers, as well
+in 1980 [37] concluded that: “Ceramic strength data must meet                 as reasons why Weibull distributions are so often observed
+stringent quality demands if they are to be used to determine                 in material testing practice are discussed by Danzer et al.
+the failure probability of a stressed component. Statistical                  [19]. They also detail conditions necessary to obtain a Weibull
+fracture theory is based on the premise that specimen-to-                     distribution and suggest alternative statistical approaches
+specimen variability of strength is an intrinsic property of the              for analyzing strength data for materials that do not satisfy
+ceramic, reﬂecting its ﬂaw population and not unassignable                    these conditions, such as materials with unusual or highly
+measurement errors. Ceramic strength data must be essen-                      mixed ﬂaw distributions. In this sense, Weibull analysis can
+tially free of experimental error.” Even with meticulous test                 be regarded as a special, simple case of a broader statistical
+implementation, however, it is the stipulation of a single ﬂaw                approach for analyzing strength data [18–20]. Indeed, Danzer
+population that seems to cause the most difﬁculty in using                    now uses the expression “Weibull material” as one with a sin-
+Weibull statistics in dental material strength testing.                       gle ﬂaw type whose size distribution ﬁts a power law function
+    In Eq. (1), the parameter Y distinguishes different types of              on the right side tail.
+ﬂaws as well as different test specimen test conﬁgurations.                       The previous paragraphs highlight some of the assump-
+A blunt ﬂaw, such as a pore, is more benign than a sharp                      tions and difﬁculties in utilizing Weibull statistics in
+ﬂaw, such as a microcrack. A material under load may break                    characterizing strength measurements of dental materials.
+from a sharp ﬂaw but not break from a blunt ﬂaw of a similar                  What are the beneﬁts?
+size. Suppose a material contains the two ﬂaw types, small                        It was initially noted that extreme value statistics can be
+microcracks and large pores. Each ﬂaw type has its own dis-                   used to predict changes in distributions according to the phys-
+tribution. If all the test specimens break from microcracks,                  ical size of the individual test specimens. This is one of the
+or all the test specimens break from pores, then either the                   strongest virtues of the Weibull model and what distinguishes
+microcrack size distribution or the pore size distribution will               it from other distributions. In practical terms, this means that
+140                                             d e n t a l m a t e r i a l s 2 6 ( 2 0 1 0 ) 135–147
+
+
+
+                                                                             Weibull statistics to calculate corresponding strengths for dif-
+                                                                             ferent test specimen sizes, test specimen shapes and stress
+                                                                             conﬁgurations is particularly appealing for use in the dental
+                                                                             ﬁeld where sample sizes and testing conﬁgurations are fre-
+                                                                             quently different.
+                                                                                Identiﬁcation and quantization of different ﬂaw popula-
+                                                                             tions can explain strength differences and ultimately lead to
+                                                                             improved materials. Such approaches can, for example, iso-
+                                                                             late the effects of grinding media and surface treatments, or
+                                                                             determine whether strength might be improved by reducing
+                                                                             porosity. Most important of all, determination of the domi-
+                                                                             nant ﬂaw populations, the effects of stress conﬁgurations and
+                                                                             physical size are all necessary for correlations to clinical com-
+                                                                             ponents.
+Fig. 3 – A computer generated simulation showing the
+spread in failure locations (the dots) for 50 ﬂexural strength
+bars loaded in 3-point loading as a function of Weibull                      3.         Experimental examples and discussion
+modulus. The arced lines show loci of constant tensile
+stresses. Fracture origins cluster around the highest
+                                                                             As noted above in Eq. (2), three parameters were used to deﬁne
+stressed areas for materials with large Weibull moduli, but
+                                                                             the previously introduced extreme value functions, but only
+can occur over a broad region for materials with low
+                                                                             two Weibull parameters are generally reported for strengths.
+Weibull moduli (from Johnson and Tucker [42]).
+                                                                             The two-parameter Weibull distribution is obtained by setting
+                                                                              u = 0, although the three parameter form is not uncommon.
+                                                                             When the three parameter Weibull distribution is used, the
+strength values for one test specimen size may be “scaled”                   lower strength bound,  u , might represent a lower strength
+to expected strength values for different sized test speci-                  limit for a data set. This is analogous to a data set that may
+mens. This strength scaling permits comparison of strengths                  have been previously proof-tested or inspected to eliminate
+of structures with stress gradients such as bend bars or ﬂexed               ﬂaws over a certain size. The lower bound strength could
+disks. Examples of strength scaling are shown later in this                  also correspond to a physical limit to a crack size. It is very
+paper. So far we have assumed that all ﬂaws in a body are                    risky to assume a ﬁnite threshold strength exists without
+exposed to the same tensile stresses, but in bodies with stress              careful screening or nondestructive evaluation. Hence, the
+gradients, some large ﬂaws may be in a low tensile stress                    two-parameter form is most commonly used for simplicity.
+or compression region and will not cause fracture. Fracture                      Setting  u to zero in Eq. (2) and taking the double logarithm
+occurs where there is a critically loaded ﬂaw that has a size,               of the resulting two-parameter Weibull distribution yields:
+c, and shape factor Y, and a local stress, , combination such                                   m 
+that the critical fracture toughness, KIc , is reached in accor-             Pf = 1 − exp −
+                                                                                                        
+dance with eq. (1).1 Fig. 3 by Johnson and Tucker [42] illustrates
+how fracture origin sites may be scattered in a 3-point bend                                     m
+bar. For materials with low Weibull moduli (i.e., the ﬂaw sizes              ln(1 − Pf ) = −
+                                                                                                  
+are quite variable) fracture can occur from a large portion of
+the test specimen. On the other hand, the origin sites are con-
+centrated to only the highest stressed regions if the Weibull
+                                                                                   
+                                                                                          1
+modulus is large, since the ﬂaw sizes are all similar.                       ln ln                      = m ln  − m ln                    (3)
+                                                                                        1 − Pf
+    The validity of the Weibull approach can be tested by its
+ability to scale strengths for a particular specimen size to                 The reason the double logarithm of the Weibull equation is
+another size or testing conﬁguration. A review of ceramic ﬂex-               used in strength analysis is the ease of accessing information.
+ural strength data [43] tabulated a number of studies wherein                Appendix A shows how Eq. (3) yields the Weibull parameters
+ceramic strength scaling by Weibull analysis was successful                  in a simple graphical representation of the data with a slope of
+over a size range as much as four orders of magnitude in                     the Weibull modulus, m. Fig. 4 shows an example for alumina.
+volume or area! Strength scaling is done by the concept of                   One can perform a simple linear regression analysis to get the
+an “equivalent” volume or area under stress, discussed in a                  Weibull parameters, but many analysts prefer the maximum
+following section. Whether equivalent volumes or equivalent                  likelihood estimation approach as discussed in Appendix. The
+areas are used depends on whether fracture initiates from vol-               characteristic strength,   , is a location parameter; a large  
+ume ﬂaws or surface ﬂaws within the stressed region.2 Using                  shifts the data to the right, while a small   shifts the data
+                                                                             to the left. The characteristic strength is the strength value,
+  1
+                                                                             , at Pf = 63.2%, when the left side of Eq. (3) = 0. Thus reported
+    For simplicity, we ignore rising R-curve behavior whereby
+                                                                             Weibull characteristic strength values (Pf = 63.2%) are slightly
+fracture resistance changes with crack size and we also ignore
+environmentally assisted slow crack growth.                                  greater than the mean strength values (Pf = 50%).
+  2
+    In rare instances, strength is controlled by edge origin sites,              The double logarithm of the reciprocal (1 − Pf ) on the left
+and strength scales with the effective edge lengths.                         side of Eq. (3) explains the unusual interval spacing of the
+                                               d e n t a l m a t e r i a l s 2 6 ( 2 0 1 0 ) 135–147                                          141
+
+
+                                                                               be assigned to each datum according to
+
+
+                                                                                            i − 0.5
+                                                                               Pf (i ) =                                                       (4)
+                                                                                               N
+
+
+                                                                               Although there are other formulations to assign failure prob-
+                                                                               abilities, the one shown in Eq. (4) is widely used and has
+                                                                               negligible bias as discussed in Appendix.
+                                                                                   Since the fracture stress and the associated Pf for each
+                                                                               datum are now known, a graph may be constructed using the
+                                                                               left side of Eq. (3) on the ordinate and ln() on the abscissa. This
+                                                                               comprises Fig. 4, where the 3-point ﬂexure bar data (squares)
+                                                                               are at the right, at higher strengths, than the 4-point ﬂexure
+                                                                               bar data (circles). There are two common approaches to ﬁt a
+                                                                               line through the data: linear regression analysis and maxi-
+                                                                               mum likelihood estimation analysis [45–48]. The pros and cons
+                                                                               of each analysis are described in more detail in the Appendix,
+                                                                               but, as mentioned above, most world standards use the latter.
+Fig. 4 – Weibull plots of alumina bars broken in ﬂexure                        The MLE analysis was used for the Weibull parameter esti-
+using 3-point () and 4-point () test conﬁgurations. The                      mates in Fig. 4 and Table 1. The strength difference for the
+bars broken in 3-point ﬂexure broke at greater stresses. The                   same material seems large, but this is to be expected accord-
+parallel shift to the right of the whole distribution is                       ing to weakest link theory, as more material is under higher
+predicted by Weibull theory. The Weibull parameters and                        stress in the 4-point conﬁguration, with a higher probability
+ﬁtted lines are from maximum likelihood analysis.                              of containing a larger ﬂaw.
+                                                                                   It can be seen from Fig. 4 that the slopes (Weibull moduli)
+                                                                               indicate the strength distribution widths. The similar slopes
+                                                                               suggest that the same ﬂaw types were active in both specimen
+Pf labels on the ordinate (y) axis of the Weibull graph. Two                   sets and this indeed was veriﬁed by fractographic analysis.
+examples are used in this section to illustrate the previous                   The wriggles in the curves are not unusual and are common
+concepts. The example in Appendix A also illustrates some of                   in small size sample sets. A high modulus, or steep slope, is
+these topics.                                                                  associated with a narrow strength distribution. This is usu-
+                                                                               ally desirable, as materials with high Weibull moduli are more
+3.1.      Example 1: alumina 3- and 4-point ﬂexure tests                       predictable and less likely to break at a stress much lower
+                                                                               than a mean value. The characteristic strength, or Weibull
+This ﬁrst example illustrates strength differences in polycrys-                scale parameter   , indicates the distribution location along
+talline alumina bars tested in 3-point and 4-point ﬂexure. The                 the abscissa (x) axis, and is expected to move according to
+bar sizes were all 3 mm × 4 mm × 50 mm. The 3-point ﬂexure                     test specimen size or the amount of material that is highly
+test specimens had 40 mm outer spans, and the 4-point ﬂex-                     stressed. Thus, the distributions for 3- and 4-point ﬂexure are
+ure test specimens had 40 mm outer spans and 20 mm inner                       expected to have the same shape (m value), but move to the
+spans. Stresses were calculated by the formulae [44]:                          right (higher   value) as test specimen sizes or stressed vol-
+                                                                               umes decrease. This is directly analogous to the “march” of
+          3PL                                                                  the “largest ﬂaw” distribution presented in a previous section.
+3-pt =        for the 3-point ﬂexure tests
+          2bd2                                                                 It was also stated in previous sections that such measured
+                                                                               strength changes due to differences in test specimen size and
+                                                                               conﬁguration can be quantitatively predicted using Weibull
+          3PL                                                                  parameters. This can be accomplished through the concept of
+4-pt =        for the 1/4-point, 4-point ﬂexure conﬁguration
+          4bd2                                                                 equivalent areas or volumes.
+
+where P is the break load, L is the outer span length, b is the
+test specimen width, and d is the test specimen height. The                    3.2.    3-Point and 4-point ﬂexural strength comparisons
+1/4-point qualiﬁer for the 4-point conﬁguration means that                     using equivalent volumes
+the inner loading rollers are located inward by 1/4L from the
+outer loading rollers.                                                         Fractographic analysis of the ﬂexure test specimens graphed
+     For each of the two test conﬁgurations, the stress values                 in Fig. 4 determined the predominant ﬂaw type was volume-
+were ranked in ascending order, i = 1, 2, 3, . . ., N, where N is the          distributed porosity or agglomerates associated with porosity.
+total number of test specimens and i is the ith datum. Thus,                   Inclusions caused fracture in some test specimens, and the
+the lowest stress for each conﬁguration represents the ﬁrst                    ﬂaw mix probably contributed to some of the wriggles in Fig. 4
+value (i = 1), the next lowest stress value is the second datum                data. Since the ﬂaws were volume distributed, we will com-
+(i = 2), etc., and the highest stress is represented by the Nth                pare the two data sets using an equivalent volume approach.
+datum. This enables a ranked probability of failure, Pf ( i ), to             In the Weibull weakest link model, the size-strength relation-
+142                                            d e n t a l m a t e r i a l s 2 6 ( 2 0 1 0 ) 135–147
+
+
+
+
+ Table 1 – Strength tests with different ﬂexural conﬁgurations and maximum likelihood estimates of the Weibull
+ parameters.
+ Material (number            Flexure test type              Mean strength               Weibull char. strength,              Weibull modulus, m (90%
+ of specimens)                                                (std. dev.)                 (90% conf. interval)                 conf. interval)
+ Alumina (32)           4-point, 40 mm × 20 mm spans          364(45) MPa                  383(370–396) MPa                          9.6 (7.3–11.7)
+ Alumina (30)           3-point, 40 mm span                   444(51) MPa                  467(449–485) MPa                          8.8 (6.6–10.7)
+ Porcelain 1 (27)       4-point, 20 mm × 40 mm spans           84.7 (5.3) MPa               87.1 (85.4–88.8) MPa                    18.5 (13.6–22.7)
+ Porcelain 2 (26)       4-point, 10 mm × 20 mm spans          112(8) MPa                   115(113–118) MPa                         18.0 (13.1–22.2)
+
+ship can be expressed [43,46–48]:                                           for parts or test specimens that have stress gradients, i.e., the
+                                                                            stress varies with position within the body.
+1
+        V 1/m
+         E2                                                                     Equations for effective volumes and effective areas may be
+   =                                                               (5)
+2      VE1                                                                 determined from knowledge of the stress state, or looked up
+                                                                            in the literature for common conﬁgurations, such as ﬂexure of
+where m is the Weibull modulus,  1 and  2 are the mean (or                rectangular bars [49] or round rods [50]. For the ﬂexure bars in
+median or characteristic) strengths of test specimens of type 1             Fig. 4, the effective volumes can be calculated:
+and 2 which may have different sizes and stress distributions,
+and VE1 and VE2 are the associated effective volumes. (Effective            VE of the 1/4-point 4-point ﬂexure test specimen
+areas may be substituted for the effective volumes in Eq. (5)
+for surface ﬂaws, such as machining damage.) A unimodal ﬂaw                        (Lo bd)(m + 2)
+                                                                               =                 2
+population that is uniformly distributed throughout the vol-                        [4(m + 1) ]
+ume and a Weibull two-parameter distribution are assumed.                                                                                 (Lo bd)
+                                                                            VE of the 3-point ﬂexure test specimens =                               2
+    The effective volume approach is illustrated in Fig. 5. In the                                                                      [2(m + 1) ]
+simplest case of direct uniform tension, VE is the test speci-              where Lo is the outer span length, b is the test specimen width,
+men volume, V. Many test specimens or components such as                    d is the test specimen height, and m is the Weibull modulus.
+ﬂexural loaded rods or bars have stress gradients and VE < V.               In other words, the effective volumes are equal to the spec-
+Sometimes the relationship between the two is expressed as                  imen volume (Lo bd) within the loading span multiplied by a
+VE = KV, where K is called the loading factor and is dimension-             dimensionless term including the Weibull modulus. The latter
+less and V is the total volume within the outer loading points.             term takes into account the stress gradient, but also reﬂects
+As shown in Fig. 5, VE is the volume of a hypothetical tensile              the inﬂuence of the variability in ﬂaw sizes. The portions of
+test specimen, which when subjected to the stress  max , has               the test specimen that lie beyond the ﬁxture outer span are
+the same probability of fracture as the ﬂexure test specimen                unstressed and do not contribute to the effective volumes.
+stressed at  max . In other words, a ﬂexure bar of volume V                The same is true of the portions stressed in compression. In
+is equivalent to a tensile test specimen of size VE . K is 1 for            our example, the ﬂexure bars all have the same outer span
+an ideally loaded tension specimen. K is typically less than 1              length of 40 mm, and same height and width of 3 and 4 mm,
+                                                                            respectively. The ratio of effective volumes is thus
+                                                                             VE4−pt   m+2
+                                                                                    =
+                                                                             VE3−pt    2
+
+                                                                            This can be substituted into Eq. (5) to yield a simple expression
+                                                                            for determining the expected strength ratio for the 3- and 4-
+                                                                            point ﬂexure test conﬁgurations:
+                                                                                                        1/m              m + 2 1/m
+                                                                                                VE4−pt
+                                                                            3-pt = 4-pt                      = 4-pt
+                                                                                                VE3−pt                      2
+
+                                                                            Using an average m of 9.2, the 3-point strengths should be 1.206
+                                                                            times the 4-point strengths, in excellent agreement with the
+                                                                            experimentally determined ratio of 1.216. In other words, the
+                                                                            3-point strengths are 21% stronger than the 4-point strengths,
+                                                                            in good agreement with the prediction. This example demon-
+                                                                            strates how the Weibull function can be utilized to predict the
+Fig. 5 – The concept of equivalent volume.  x shows the                    scaling of strengths to other conﬁgurations.
+direction of the tensile stresses. Only part of the total
+volume, V, of the ﬂexure specimen on the left is in tension.                3.3.     Example 2: comparison of two porcelains using
+Only a smaller fraction of this region (depicted by the                     different sized ﬂexure bars
+shaded area) is exposed to large tension stresses. An
+equivalent direct tension specimen with the same effective                  In this second example, the strengths of two different porce-
+volume, VE , is shown on the right. How much of the ﬂexure                  lains, Porcelain 1 and Porcelain 2 are compared. Both are
+specimen volume should be counted depends on the                            feldspathic porcelains containing well-dispersed crystallites
+Weibull modulus.                                                            of similar sizes. The porcelains differ, however, in crystalline
+                                           d e n t a l m a t e r i a l s 2 6 ( 2 0 1 0 ) 135–147                                                   143
+
+
+                                                                           volume ratio is simply:
+
+                                                                           VE small span        20 mm
+                                                                                            =         = 0.5
+                                                                            VE large span       40 mm
+
+                                                                           The Weibull modulus of Porcelain 2 is 18.0. Thus, from Eq. (4):
+
+                                                                                                 20 1/18
+                                                                           P2 large span =                  P2 small span = 0.96P2 small span
+                                                                                                   40
+
+                                                                           The expected strength of Porcelain 2, if the test specimens
+                                                                           were longer and tested with 40 mm spans, is only 4% less.
+                                                                           The small difference is due to the large Weibull modulus so
+                                                                           that the effective volumes are not vastly different. Although
+                                                                           Weibull scaling predicts a 4% difference in strength if Porce-
+                                                                           lain 2 was tested with longer spans, the measured difference in
+                                                                           strengths of the two porcelains would be much greater—about
+                                                                           25%. Utilizing the tables in Ref. [41] and ASTM C1239 [32],
+                                                                           the high moduli and adequate numbers of test specimens
+                                                                           for both conﬁgurations result in 90% conﬁdence bounds that
+                                                                           are sufﬁciently narrow to indicate the porcelain strengths are
+Fig. 6 – Weibull plots of two feldspathic porcelains tested in             statistically signiﬁcantly different. Porcelain 2 has a higher
+different conﬁgurations. The Weibull parameters are from                   calculated strength than Porcelain 1 for a similar test conﬁgu-
+maximum likelihood analysis. The Weibull moduli are                        ration.
+similar, and the specimens tested with the shorter span
+broke at higher stresses. Is this difference expected if the               3.4.    Example 3: Deviations from a unimodal strength
+two materials have similar strengths?                                      distribution in a zirconia
+
+                                                                           Fig. 7 shows an example where a single Weibull distribution is
+                                                                           a poor ﬁt. Thirty nine commercial 3Y-TZP zirconia bend bars
+volume content and crystalline phases, and were obtained                   of size 3 mm × 4 mm × 45 mm were tested on 20 mm × 40 mm
+from different manufacturers. Porcelain 1 and Porcelain 2                  4-point ﬁxtures. Fractographic analysis was done on every test
+both had cross-sections of 3 mm × 4 mm and both were tested                specimen and revealed that most of the strength limiting ﬂaws
+in 1/4-point, 4-point ﬂexure. The Porcelain 2 test specimens               were volume-distributed pores between 10 and 20 ␮m in diam-
+were shorter than the Porcelain 1 test specimens, however,                 eter. The six weakest specimens broke from unusually large
+and were tested using shorter spans. Porcelain 2 was tested                ﬂaws such as compositional inhomogeneities, inclusions, and
+with a 20 mm outer span and 10 mm inner span. The longer                   gross pores, so it is not surprising that the strength trend
+Porcelain 1 test specimens were tested with the same ﬁx-                   is irregular. A proper analysis of this data set would require
+ture design, but with a 40 mm outer span and 20 mm inner                   the use of censored statistical analyses as described in [32].
+span.                                                                      In this example, the low strength tail of the distribution was
+    As in the previous example, the data were ranked and each              readily apparent since a large number of test specimens were
+datum was assigned a failure probability and then graphed                  available. Had only 10 or 15 specimens been broken, then it
+using Eq. (3). The results are shown in Fig. 6 and Table 1.                is possible that only one or two weak specimens would have
+The slopes are very similar (18.5 and 18.0), and the shorter               been revealed and the low strength problem not detected.
+test specimens had higher strengths, as would be expected
+from weakest link theory. Are the test specimens truly com-                3.5.       Additional considerations and assumptions
+parable in terms of strength? If Porcelain 2 were tested in
+40 mm × 20 mm ﬁxtures instead of the smaller 20 mm × 10 mm                 The previous examples demonstrate some of the problems
+ﬁxtures, would the strengths be similar to Porcelain 1?                    and advantages of using Weibull statistics. A single ﬂaw
+    Fractographic examination of the materials plotted in Fig. 6           population is assumed and should be veriﬁed, test speci-
+indicated that the two porcelains generally failed from intrin-            men numbers should be sufﬁcient to determine the Weibull
+sic ﬂaws that were volume distributed. Once again we return                parameters within acceptable conﬁdence bounds, and the
+to Eq. (5). In this case we need the effective volume ratio for            calculations and results are more cumbersome than simple
+longer and shorter test specimens tested in 4-point ﬂexure.                determination of a mean stress value. On the other hand, it
+Again using the equation for 1/4 4-point ﬂexure:                           was possible to quantitatively compare expected strengths
+                                                                           for the different materials and test conﬁgurations, as well as
+       (Lo bd)(m + 2)                                                      peruse the plots for an idea of the comparative distribution
+VE =             2
+        [4(m + 1) ]                                                        widths.
+                                                                              As a ﬁnal note, it should be mentioned that all the test
+Since all the quantities in the previous equation are the same             specimens were tested using self-aligning ﬁxtures with rollers,
+for the two porcelains except the span lengths, the effective              such as shown in Fig. 8. The elastic bands in the ﬁgure apply
+144                                            d e n t a l m a t e r i a l s 2 6 ( 2 0 1 0 ) 135–147
+
+
+
+                                                                            ports. Signiﬁcant errors can also result from misalignment,
+                                                                            especially if the bars are not of constant geometry or ﬂat and
+                                                                            parallel [43,54,55]. No amount of statistical manipulation can
+                                                                            compensate for indiscriminate test procedures.
+
+
+
+                                                                            4.         Conclusion
+
+                                                                            There is a strong theoretical foundation for Weibull statisti-
+                                                                            cal analysis of strength data based on extreme value theory,
+                                                                            fracture mechanics, and demonstrated ﬂaw size distributions.
+                                                                            However, awareness of the conditions and limitations inher-
+                                                                            ent in Weibull analyses, especially those pertaining to existing
+                                                                            ﬂaw populations and quality of data, is important for mean-
+                                                                            ingful application and interpretation. A great deal of useful
+                                                                            information is available through Weibull analysis. Among
+                                                                            the most useful applications are comparisons of strength
+                                                                            values and ranges for different stress conﬁgurations, which
+                                                                            were demonstrated in Section 3 for several dental materi-
+                                                                            als.
+Fig. 7 – Flexural strength of 3Y-TZP zirconia bend bars. The
+maximum likelihood ﬁtted line is a poor ﬁt to the
+distribution. Although most specimens had pore origins                      Acknowledgements
+like the one shown on the upper insert, the six weakest
+test specimens had atypical ﬂaws such as the one shown                      This report was made possible by a grant from NIH, R01-
+on the lower left.                                                          DE17983, and the people and facilities at the National Institute
+                                                                            of Standards and Technology and the ADAF Paffenbarger
+                                                                            Research Center.
+enough force to keep the rollers in place while allowing them
+to rotate when a ﬂexure load is applied. The allowed rotation
+is quite important, for the supports and load points will be                Appendix A.
+subject to a frictional force if the rollers are not free to roll.
+The errors due to friction are signiﬁcant, but almost always                How to prepare a Weibull strength distribution graph
+ignored in the dental literature, where frictionless load points                The following example utilizes ﬁctitious data in order to
+are assumed in the calculations. Experimental differences in                demonstrate how a Weibull strength distribution graph is
+failure stress using rigid knife edges as compared to roller-type           prepared. Suppose that ﬁve test specimens produce strength
+contact points have been measured higher than 11% [51–53].                  outcomes of: 255, 300, 330, 295, and 315 MPa. More than 5 data
+The frictional force prevents the load points from rolling apart,           are advisable for most conditions and this small sample set
+and superimposes a compressive force on the tensile face                    is for illustrative purposes only. The ﬁrst step is to order the
+of the test specimen. Thus, the error results in apparently                 data from lowest to highest strengths as shown in the second
+“stronger” test specimens than would result from rolling sup-               column of Table A1.
+                                                                                The natural logarithms of the stresses are computed and
+                                                                            shown in the third column. These values will be plotted along
+                                                                            the horizontal axis of a Weibull graph.
+                                                                                Next, a cumulative probability of fracture, Pf , is estimated
+                                                                            and assigned to each datum. A commonly used estimator that
+                                                                            has low bias when used with linear regression analyses is
+                                                                            Pf = (i − 0.5)/n, where i is the ith datum and n is the total num-
+                                                                            ber of data points. This is the estimator used in the main text.
+                                                                            Many studies (e.g. [A1–A4,45]) have shown that for n > 20, this
+                                                                            estimator produces the least biased estimates of the Weibull
+                                                                            parameters. Using the estimator for the ﬁrst (i = 1) data point
+                                                                            out of n = 5 total points, Pf is estimated to be 0.10% or 10% as
+                                                                            shown in the fourth column of Table A1. This means that if
+                                                                            many test specimens were broken, it is estimated that 10% of
+                                                                            all outcomes would be weaker than the specimen that broke
+Fig. 8 – The elastic bands in this 3-point semi-articulating                at a stress of 255 MPa. 90% would be stronger.
+ﬁxture enable the outer rollers to turn in order to alleviate                   The next step is to compute the double natural logarithm
+frictional forces, which can be a signiﬁcant source of error                of [1/(1 − Pf )] in accordance with Eq. (3) in the main body of the
+in ﬂexural tests.                                                           paper. This is listed in the last column of the table.
+                                                d e n t a l m a t e r i a l s 2 6 ( 2 0 1 0 ) 135–147                                           145
+
+
+ Table A1 – Example data set for 5 test specimens.
+ i                  Strength (MPa)                         X = ln(strength)                         Pf = (i − 0.5)/n         Y = ln ln [1/(1 − Pf )]
+ 1                       255                                      5.5413                                  0.10                   −2.2504
+ 2                       295                                      5.6870                                  0.30                   −1.0309
+ 3                       300                                      5.7038                                  0.50                   −0.3665
+ 4                       315                                      5.7526                                  0.70                    0.1856
+ 5                       330                                      5.7991                                  0.90                    0.8240
+
+
+
+    A graph is prepared with X = ln(strength) plotted on the hor-                   The Weibull modulus and characteristic strength from lin-
+izontal axis, and Y = ln ln[1/(1 − Pf )] on the vertical axis. Fig. A1          ear regression analysis are adequate for many cases, but it
+shows a graph with these two axes shown on the right and                        should be borne in mind that these are estimates. The con-
+top sides. For convenience, the axes are often labeled with                     ﬁdence bounds or uncertainties on these estimates may be
+the values of fracture stress and Pf , as shown along the left                  obtained from the literature. In general, estimates of the char-
+and bottom sides of the graph. Note how the values of these                     acteristic strength quickly converge to population values as
+parameters are not simply and evenly distributed along the                      the number of specimens is increased to ten or more. On the
+axes, but stretched according to the logarithmic and double                     other hand, Weibull modulus estimates can be quite variable
+logarithmic functions.                                                          for a sample set with only a small number of test specimens or
+    Finally, a line is ﬁtted through the data. Linear regres-                   if the data do not fall on a single line. Therefore, it is common
+sion (LR) analysis is commonly used since it is the easiest to                  to require no fewer than ten test specimens and preferably 30
+understand and can be done with a hand calculator, a simple                     to obtain good estimates of the Weibull modulus.
+spreadsheet, or many common graphics software programs.                             The literature includes many papers suggesting new and
+The usual procedure is to regress the ln ln[1/(1 − Pf )] values                 improved Pf estimators for linear regression analyses. There
+onto ln(fracture stress), or in other words, to minimize the                    are far too many to list here. Usually Monte Carlo simula-
+vertical deviations in the graph. The slope of the line is the                  tions with an assumed Weibull distribution generate many
+Weibull modulus, m. The characteristic strength,   , is the                   small data sets which are analyzed in turn by the chosen
+value of stress for which ln ln[1/(1 − Pf )] is zero, or Pf = 63.2%. It         linear regression scheme. Scatter in the computed Weibull
+is analogous to the median strength, except that the latter is                  parameters as well as bias trends (the parameters on average
+at Pf = 50%. The Weibull modulus and characteristic strength                    do not match the assumed parent distribution) are analyzed
+from the linear regression analysis are shown on the right                      and compared to results when using the usual Pf = (i − 0.5)/n
+of the line in Fig. A1. (Users should be cautioned that some                    estimator. Ideally, the results should have low scatter (tight
+algorithms and computer programs regress the opposite way,                      conﬁdence bounds) and negligible bias. Some of the proposed
+so that horizontal deviations are minimized. Different Weibull                  estimators are quite implausible, however. For example, one
+parameter estimates are obtained.)                                              study suggested the use of Pf = (i − 0.999)/(n + 1000) [A5]. So
+                                                                                for a set of 30 specimens, this estimator suggests the ﬁrst
+                                                                                strength datum corresponds to a Pf = 1.0 × 10−4 %, and, for the
+                                                                                last datum, a Pf = 28%. It is unreasonable to assume that the
+                                                                                weakest data point of a set of 30 specimens gives useful infor-
+                                                                                mation about a probability of fracture of one part in 10,000.
+                                                                                With the traditional Pf = (i − .5)/n, one obtains far more plausi-
+                                                                                ble estimates of 1.7% and 98.3%. These numbers mean that one
+                                                                                might expect only 1.7% of additional test strengths would be
+                                                                                weaker than the ﬁrst datum and 98.3% would be weaker than
+                                                                                the strongest recorded test outcome. Two subsequent papers
+                                                                                showed that dramatic correction factors for bias had to be used
+                                                                                when using the Pf = (i − 0.999)/(n + 1000) estimator [A6,A7]. For
+                                                                                most Weibull analyses, it is not necessary to resort to such
+                                                                                exotic probability estimators and, as stated above, leading
+                                                                                researchers [45–48,A1–A4] have concluded that for n > 20, the
+                                                                                Pf = (i − .5)/n estimator gives parameters estimates with small
+                                                                                bias and reasonable conﬁdence limits. Users should be cau-
+                                                                                tious with smaller sample sets than 10, however, since bias in
+                                                                                the Weibull modulus can be 5% or more [45,A1–A4,A8,A9].
+                                                                                    An important and common alternative analysis to ﬁt the
+                                                                                data is the Maximum Likelihood Estimation (MLE) approach.
+                                                                                It is a more advanced analysis that is preferred by many
+                                                                                statisticians since the 90% or 95% conﬁdence intervals on the
+Fig. A1 – Weibull graph for the Table A1 data set. The linear                   estimates of the Weibull parameters are appreciably tighter
+regression and maximum likelihood estimator lines and                           than those from linear regression [42,45,A4,A5,A9]. Further-
+Weibull parameter estimates are shown for comparison.                           more, it is not necessary to use a probability estimator for Pf .
+146                                               d e n t a l m a t e r i a l s 2 6 ( 2 0 1 0 ) 135–147
+
+
+
+For these reasons, MLE is incorporated into the comprehensive                  references
+Weibull standards for analysis of strength data [32–35] which
+all give identical Weibull parameter estimates and conﬁdence
+bounds for a particular data set. MLE analysis is strongly pre-                 [1] Yeung C, Darvell BW. Fracture statistics of brittle
+ferred for design. MLE analysis, which is explained well in                         materials—parametric model validity. J Dent Res 2006;85.
+Ref. [46], estimates the Weibull parameters by maximizing                           Spec Iss B, Abstr. No. 1966.
+a likelihood function. The MLE analysis is usually described                    [2] Quinn GD, Quinn JB. Are Weibull statistics appropriate for
+                                                                                    dental materials? J Dent Res 2005;84 (Spec Iss A), Abstr. No.
+in mathematical terms (e.g. [45–48]), but a simpliﬁed descrip-
+                                                                                    1463.
+tion of how it works is as follows. A ﬁrst estimate, or “guess”                 [3] Weibull W. A statistical theory of the strength of materials.
+is made of the Weibull parameters and, for each actual test                         Royal Inst for Eng Res, Stockholm 1939;151:1–45.
+strength outcome, a probability of occurrence is calculated.                    [4] Abernethy RB. An overview of Weibull analysis. In: The new
+For a given test set of say n = 30 strengths, the probabilities are                 Weibull handbook. 5th ed. North Palm Beach, FL: Robert B.
+summed. Another slightly different Weibull distribution, with                       Abernethy; 2006.
+                                                                                [5] Bannerman DB, Young RT. Some improvements resulting
+different modulus and characteristic strength, is then tried
+                                                                                    from studies of welded ship failures. Weld J
+and the probabilities are also summed. The Weibull param-
+                                                                                    1946;25(3):223–36.
+eters are iteratively adjusted until the optimum, or “most                      [6] Wells AA. Conditions for fast fracture in aluminum alloys
+likely,” parameters are found to ﬁt the actual test data. This                      with particular reference to the Comet failures, vol. 129.
+iterative analysis is typically done with a computer program.3                      BWRA Research Board, RB; 1955.
+The MLE estimate for the characteristic strength has negli-                     [7] Anderson TL. Fracture Mechanics. 2nd ed. New York, NY:
+gible bias, but a small correction factor is usually applied to                     CRC Press; 1995.
+                                                                                [8] Grifﬁth AA. The phenomenon of rupture and ﬂow in solids.
+correct or “unbias” the Weibull modulus estimate [32–35,41].
+                                                                                    Philos Trans R Soc 1921;A221:163–98.
+Users of MLE programs should check whether or not the cal-                      [9] Irwin GR. Onset of fast crack propagation in high strength
+culated moduli are corrected for bias. A MLE ﬁtted line is also                     steel and aluminum alloys. In: Proceedings of the Sagamore
+shown in Fig. A1. In this example, the Weibull MLE and LR                           Research Conference, vol. 2. Syracuse University Press; 1956,
+parameter estimates are similar. This is commonly the case                          289–305.
+for the characteristic strength, but MLE and LR estimates of                   [10] Lund JR, Byrne JP. Leonardo DaVinci’s tensile strength tests:
+the Weibull modulus usually differ. Linear regression analy-                        implications for the discovery of engineering mechanics.
+                                                                                    Civil Eng Environ Syst 2000;00:1–8.
+ses usually “chase the lowest strength data points” whereas
+                                                                               [11] Kotz S, Nadarajian S. Extreme value distributions: theory
+MLE seems to “chase the highest strength data points” [48].                         and applications. London: Imperial College Press; 2000.
+One might ask: which is better? The answer is that each gives                  [12] Fisher RA, Tippet LH. Limiting forms of the frequency
+reasonable estimates of the Weibull modulus, but, since the                         distribution of the largest or smallest member of a sample.
+conﬁdence intervals for the MLE estimates are tighter, statis-                      Proc Camb Phil Soc 1928;24:180–90.
+ticians and designers prefer MLE. For more details on the MLE                  [13] Ledermann W, Lloyd E, Vajda S, Alexander C. Extreme value
+                                                                                    theory, chapter 14 in Handbook of Applicable Mathematics.
+analysis, the reader should consult Refs. [41,46] or the Weibull
+                                                                                    New York: Wiley; 1980.
+strength standards [32–35]. With the sole exception of the
+                                                                               [14] NIST/SEMATECH e-Handbook of statistical methods,
+short annex in the Dental Standard ISO 6782:2008 [36] (which                        http://www.itl.nist.gov/div898/handbook/, June 2007.
+has no information on conﬁdence bounds), all other standards                   [15] Weibull W. A statistical distribution function of wide
+specify strength data analysis by MLE and include instructions                      applicability. J Appl Mech 1951;(September):293–7.
+on how to determine the conﬁdence bounds.                                      [16] Jayatilaka ADES, Trustrum K. Statistical approach to brittle
+    There are many reasons why strength data may deviate                            fracture. J Mater Sci 1977;12:1426–30.
+                                                                               [17] Trustrum K, Jayatilaka ADeS. Applicability of Weibull
+from a straight line when plotted as shown above. A non-zero
+                                                                                    analysis for brittle materials. J Mater Sci 1983;18:
+threshold strength may cause the trend to curve downward                            2765–70.
+at lower strengths. Bends or wriggles in the trend may be a                    [18] Danzer R. A general strength distribution function for brittle
+consequence of small sample sizes (e.g. for n ≤ 10) or may be                       materials. J Eur Ceram Soc 1992;10:461–72.
+manifestations of multiple ﬂaw populations. More advanced                      [19] Danzer R, Lube T, Supanic P, Damani R. Fracture of ceramics.
+analyses for bimodal strength distributions are available (e.g.                     Adv Eng Mater 2008;10(4):275–98.
+censored statistical analysis as speciﬁed in ASTM C 1239 [32]                  [20] Lu C, Danzer R, Fischer FD. Fracture statistics of brittle
+                                                                                    materials: Weibull or normal distribution. Phys Rev E
+or ISO 20501 [35]). Fractographic analysis may help determine
+                                                                                    2002;65, article 067102.
+the cause of bends or wriggles in a data set.                                  [21] Abe H, Naito M, Hotta T, Shinohara N, Uematsu K. Flaw size
+                                                                                    distribution in high quality alumina. J Am Ceram Soc
+                                                                                    2003;86(6):1019–21.
+  3
+    The actual calculation used by most programs uses a more                   [22] Bakas MP, Greenhut VA, Niesz DE, Quinn GD, McCauley JW,
+efﬁcient scheme. The likelihood function is the mathematical                        Wereszczak AA, et al. Anomalous defects and dynamic
+product of the probability density function values for a series of                  failure of armor ceramics. Int J Appl Ceram Tech
+experimental strength values. This product (actually the natural                    2004;1(2):211–8.
+logarithm of the product for mathematical convenience) is                      [23] Zhang Y, Inoue N, Uchida N, Uematsu K. Characterization of
+differentiated twice, once with respect to m, and once with                         processing pores and their relevance to the strength of
+respect to   . The two differential equations are set equal to zero               alumina ceramics. J Mater Res 1999;14(8):3370–4.
+to ﬁnd the maximum, i.e., the maximum likelihood. The two                      [24] Flashner F, Zewi IG, Kenig S. Fractography and Weibull
+nonlinear equations are then are solved iteratively to obtain the                   distribution relationship in optical ﬁbres. Fibre Sci Tech
+maximum likelihood parameter estimates.                                             1983;19(4):311–5.
+                                             d e n t a l m a t e r i a l s 2 6 ( 2 0 1 0 ) 135–147                                         147
+
+
+[25] Dusza J, Steen M. Fractography and fracture mechanics                   [44] ASTM C1161. Standard test method for ﬂexural strength of
+     property assessment of advanced structural ceramics. Inter                   advanced ceramics at ambient temperature. West
+     Mater Rev 1999;44(5):165–216.                                                Conshohocken, PA, USA: ASTM Int; 2002.
+[26] Boyce BL, Grazier MJ, Buchheit TE, Shaw MJ. Strength                    [45] Trustrum K, Jayatilaka ADeS. On estimating the Weibull
+     distributions in polycrystalline silicon MEMS. J                             modulus for a brittle material. J Mater Sci 1979;14:1080–4.
+     Microelectromech Syst 2007;16(2):179–90.                                [46] Wachtman JB, Cannon WR, Mattewson MJ. Mechanical
+[27] Della Bona A, Mecholsky JJ, Anusavice KJ. Fracture behavior                  properties of ceramics. 2nd ed. NY: Wiley; 2009.
+     of lithia disilicate- and leucite-based ceramics. Dent Mater            [47] Munz D, Fett T. Ceramics, mechanical properties, failure
+     2004;20(10):956–62.                                                          behavior, materials selection. Berlin: Springer-Verlag; 2001.
+[28] Wolf WD, Vaidya KJ, Falter Francis L. Mechanical properties             [48] Davies DGS. The statistical approach to engineering design
+     and failure analysis of alumina-glass dental composites. J                   in ceramics. Proc Br Ceram Soc 1973;22:429–52.
+     Am Ceram Soc 1996;79(7):1769–76.                                        [49] Quinn GD. Weibull strength scaling for standardized
+[29] Lüthy H, Filser F, Loeffel O, Schumacher M, Gauckler LJ,                     rectangular ﬂexure specimens. J Am Ceram Soc
+     Hammerle CHF. Strength and reliability of four-unit                          2003;86(3):508–10.
+     all-ceramic posterior bridges. Dent Mater 2005;21:930–7.                [50] Quinn GD. Weibull effective volumes and surfaces for
+[30] Rice RW. Ceramic fracture features, observations,                            cylindrical rods loaded in ﬂexure. J Am Ceram Soc
+     mechanisms, and uses. In: Mecholsky Jr JJ, Powell Jr SR,                     2003;86(3):475–9.
+     editors. Fractography of ceramic and metal failures. West               [51] Newnham RC. Strength tests for brittle materials. Proc Br
+     Conshohocken, PA: ASTM STP 827, ASTM Int; 1984. p. 5–103.                    Ceram Soc 1975;25:281–93.
+[31] Quinn GD. Fractography of ceramics and glasses. NIST                    [52] Weil NA. Studies of brittle behavior of ceramic materials.
+     Recommended Practice Guide, Sp. Pub. 960-16. Gaithersburg,                   U.S. Air Force technical report ASD TR 61-628, Part II: 38–42,
+     MD: U.S. Dept. of Commerce; 2007.                                            Wright Paterson Air Force Base, Dayton, OH, 1962.
+[32] ASTM C1239. Standard practice for reporting strength data               [53] Quinn GD. Twisting and friction errors in ﬂexure testing.
+     and estimating Weibull distribution parameters for                           Ceram Eng Sci Proc 1992;13(7–8):319–30.
+     advanced ceramics. West Conshohocken, PA, USA: ASTM                     [54] Baratta FI, Quinn GD, Matthews WT. Errors associated with
+     Int.; 1995.                                                                  ﬂexure testing of brittle materials. MTL TR 87-35.
+[33] JIS R1625. Weibull statistics of strength data for ﬁne                       Watertown, MA: U.S. Army Materials Technology Laboratory;
+     ceramics. Tokyo, Japan: Japanese Industrial Standards                        1987.
+     Association; 1996.                                                      [55] Hoagland RG, Marschall CW, Duckworth WH. Reduction of
+[34] BS EN 843-5. Advanced technical ceramics–Mechanical                          errors in ceramic bend tests. J Am Ceram Soc
+     properties of monolithic ceramics at room temperature. Part                  1976;59(5–6):189–92.
+     5: Statistical analysis. London, UK: British Standard
+     Institute; 2006.
+                                                                             Appendix references
+[35] ISO 20501. Weibull statistics for strength data. Geneva,
+     Switzerland: International Organization for Standards; 2003.
+[36] ISO 6872. Dentistry–ceramic materials. Geneva, Switzerland:
+     International Organization for Standards; 2008.                        [A1] Bergman B. On the estimation of the Weibull modulus. J
+[37] Reliability of Ceramics for Heat Engine Applications,                       Mater Sci Lett 1984;3:689–92.
+     National Materials Advisory Board Report 357, National                 [A2] Sullivan JD, Lauzen PH. Experimental probability estimators
+     Academy of Sciences, Washington, DC (1980).                                 for Weibull plots. J Mater Sci Lett 1986;15:1245–7.
+[38] ASTM C 1322. Standard practice for fractography and                    [A3] Steen M, Sinnema S, Bressers J. Statistical analysis of bend
+     characterization of fracture origins in advanced ceramics.                  strength data according to different evaluation methods. J Eur
+     West Conshohocken, PA: ASTM Int; 1996.                                      Ceram Soc 1992;9:437–45.
+[39] Ritter JE, Bandyopadhyay N, Jakus K. Statistical                       [A4] Langlois R. Estimation of Weibull parameters. J Mater Sci Lett
+     reproducibility of the dynamic and static fatigue                           1991;10:1049–51.
+     experiments. Ceram Bull 1981;60(8):798–806.                            [A5] Gong J. A new probability index for estimating Weibull
+[40] Johnson CA, Tucker WT. Advanced statistical concepts of                     modulus for ceramics with the least-square method. J Mater
+     fracture in brittle materials, in Ceramic Technology for                    Sci Lett 2000;19:827–9.
+     Advanced Heat Engines Project, semiannual progress report              [A6] Wu D, Jiang H. Comment on: a new probability index for
+     for October 1990 through March 1991, Oak Ridge National                     estimating Weibull modulus for ceramics with the
+     Laboratories Report TM-11859, 1991; pp. 268–82.                             least-square method. J Mater Sci Lett 2003;22:1745–6.
+[41] Thoman DR, Bain LJ, Antle CE. Inferences on the parameters             [A7] Griggs JA, Zhang Y. Determining the conﬁdence intervals of
+     of the Weibull distribution. Technometrics 1969;11(3):445–60.               Weibull parameters estimated using a more precise
+[42] Johnson CA, Tucker WT. Advanced statistical concepts of                     probability estimator. J Mater Sci Lett 2003;22:1771–3.
+     fracture in brittle materials. In: Proceedings of the                  [A8] Tiryaklioglu M. An unbiased probability estimator to
+     twenty-third automotive development contractor’s                            determine Weibull modulus by the linear regression method.
+     coordination meeting, Report P-165, vol. 1086. 1956. p. 265–9.              J Mater Sci 2006;41:5011–3.
+[43] Quinn GD, Morrell R. Design-data for engineering                       [A9] Khalili K, Kromp K. Statistical properties of Weibull
+     ceramics—a review of the ﬂexure test. J Am Ceram Soc                        estimators. J Mater Sci 1991;26:6741–52.
+     1991;74(9):2037–66.
+

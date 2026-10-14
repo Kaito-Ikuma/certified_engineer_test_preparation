@@ -1,0 +1,50 @@
+{
+  "stem": "微小な軸引張りを受ける金属棒の弾性係数・性質・ポアソン比と、体積変化の符号を判定する。",
+  "conditions": {
+    "axial_strain": "positive and small",
+    "lateral_strain": "negative",
+    "poisson_range": [
+      0.1,
+      0.45
+    ],
+    "unloading": "returns to zero strain"
+  },
+  "choices": {
+    "1": {
+      "value": "剛性・線形弾性・ヤング・減少",
+      "verdict": "不採用",
+      "reason": "係数とひずみ比の名称が不適切で、体積の符号も異なる。"
+    },
+    "2": {
+      "value": "ヤング・線形塑性・剛性・増加",
+      "verdict": "不採用",
+      "reason": "除荷で戻る条件は塑性ではなく弾性であり、Cも不適切。"
+    },
+    "3": {
+      "value": "ヤング・線形弾性・ポアソン・減少",
+      "verdict": "不採用",
+      "reason": "A/B/Cはよいが体積変化の符号が逆である。"
+    },
+    "4": {
+      "value": "ヤング・線形塑性・ポアソン・減少",
+      "verdict": "不採用",
+      "reason": "Bと体積変化の符号が不適切。"
+    },
+    "5": {
+      "value": "ヤング・線形弾性・ポアソン・増加",
+      "verdict": "採用",
+      "reason": "ヤング・線形弾性・ポアソン・体積増加が全条件と一致する。"
+    }
+  },
+  "figures": [],
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_001.png"
+  ],
+  "question_id": "R05-REG-APPLIED-01",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "1",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "ac20480dca99b5fad07eaa0413cd545533d5f26c728d2448172fe96cf75ffcf4",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

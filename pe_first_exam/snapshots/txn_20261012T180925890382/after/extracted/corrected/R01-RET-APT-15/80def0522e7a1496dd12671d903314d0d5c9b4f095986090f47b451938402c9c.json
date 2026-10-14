@@ -1,0 +1,52 @@
+{
+  "stem": "AIの感情誘導・価値評価・データ保護・技術格差を2017年の六論点から判定する。",
+  "conditions": {
+    "原典確認": "問題幹と各記述の主体・否定・全称・表の5候補を保存原典画像で確認。",
+    "制度時点": "R01年度の原典表現を保持。現行資料の条番号や仕様を過去へ補わない。",
+    "各記述の判断": {
+      "ア": "○：本人が気付かない感情等の誘導は倫理課題である。",
+      "イ": "○：生産性と創作価値の多様性を考える必要がある。",
+      "ウ": "○：プライバシー保護と利活用の過度な萎縮防止を両立させる。",
+      "エ": "○：AIリテラシーの差によるデバイドが起こり得る。"
+    },
+    "前提": "2017年報告書は倫理・法・経済・教育・社会・研究開発の六観点で便益と課題を検討する。社会の価値と機械の精度は別であり、利用できる能力の格差も課題となる。"
+  },
+  "choices": {
+    "1": {
+      "value": "0",
+      "verdict": "適切",
+      "reason": "不適切なものは0個であり、一致する。"
+    },
+    "2": {
+      "value": "1",
+      "verdict": "不適切",
+      "reason": "不適切なものは0個であり、この個数とは一致しない。"
+    },
+    "3": {
+      "value": "2",
+      "verdict": "不適切",
+      "reason": "不適切なものは0個であり、この個数とは一致しない。"
+    },
+    "4": {
+      "value": "3",
+      "verdict": "不適切",
+      "reason": "不適切なものは0個であり、この個数とは一致しない。"
+    },
+    "5": {
+      "value": "4",
+      "verdict": "不適切",
+      "reason": "不適切なものは0個であり、この個数とは一致しない。"
+    }
+  },
+  "figures": "図なし。記号組合せ又は語句組合せ・個数を原典と照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/aptitude/page_016.png"
+  ],
+  "question_id": "R01-RET-APT-15",
+  "source_file": "sources/R01_retest/aptitude.pdf",
+  "source_page": "16",
+  "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+  "raw_text_sha256": "fe230d158a7e107b40071c7fdd8770c79d7074828cb1ea680d9712b4c1b5e8f0",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

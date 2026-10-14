@@ -1,0 +1,769 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en">
+
+<head>
+
+<link rel="apple-touch-icon" href="https://algs4.cs.princeton.edu/apple-touch-icon.png"></link>
+<link rel="shortcut icon"    href="https://algs4.cs.princeton.edu/favicon.ico"></link>
+
+<!--
+<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+-->
+
+<link rel="stylesheet" href="https://algs4.cs.princeton.edu/css/algs4.css" type="text/css" media="screen"></link>
+
+<!--
+<meta name="google-site-verification" content="nYspbl5bNBQrNZKguiAAFTMVM7sq2P1WQYc8Oi6Okl0" />
+<meta name="msvalidate.01" content="D4B7F6DF793EFF34DE96F611C2A367A5" />
+-->
+
+<!-- IE HACKS -->
+<!--[if IE]>
+<style type="text/css" media="screen">
+ #menu ul li {float: left; width: 100%;}
+</style>
+<![endif]-->
+<!--[if lt IE 7]>
+<style type="text/css" media="screen">
+body {
+behavior: url(/csshover.htc);
+} 
+#menu ul li {float: left; width: 100%;}
+#menu ul li a {height: 1%;} 
+
+#menu a, #menu h2 {
+font: bold 0.9em/1.5em arial, helvetica, sans-serif;
+} 
+
+</style>
+<![endif]-->
+
+
+
+<title>
+Binary Search Trees</title>
+
+<META HTTP-EQUIV="Content-Type" content="text/html; charset=iso-8859-1">
+<META NAME="AUTHOR" CONTENT="Robert Sedgewick and Kevin Wayne">
+<META NAME="KEYWORDS" CONTENT="Binary Search Trees,Algorithms,4th edition,data structures,Java,intro,introduction,Sedgewick,Wayne">
+<META NAME="DESCRIPTION" CONTENT="The textbook Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne surveys the most important algorithms and data structures in use today. The broad perspective taken makes it an appropriate introduction to the field.">
+<META NAME="TITLE" CONTENT="Binary Search Trees. Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne.">
+<META NAME="ROBOTS" CONTENT="INDEX,FOLLOW">
+
+<!-- <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script type='text/javascript' src='/media/swfobject.js'></script>
+
+<!--
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10811519-2', 'auto');
+  ga('send', 'pageview');
+</script>
+-->
+
+</head>
+
+<body>
+
+<div id = "menu">
+<div align="center">
+<a class = picture href = "https://algs4.cs.princeton.edu">
+<img src="https://algs4.cs.princeton.edu/cover.png" width=189 height=236 border=0 alt = "Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne">
+</a>  
+</div>
+
+
+
+
+
+<ul>
+  <li><a class = title href = "https://algs4.cs.princeton.edu">Algorithms, 4th edition</a>
+
+<ul>
+
+
+      <li> <a href = "/10fundamentals">1.&nbsp;&nbsp;Fundamentals</a>
+        <ul>
+          <li> <a href = "/11model">1.1&nbsp;&nbsp;Programming Model</a>
+          <li> <a href = "/12oop">1.2&nbsp;&nbsp;Data Abstraction</a>
+          <li> <a href = "/13stacks">1.3&nbsp;&nbsp;Stacks and Queues</a>
+          <li> <a href = "/14analysis">1.4&nbsp;&nbsp;Analysis of Algorithms</a>
+          <li> <a href = "/15uf">1.5&nbsp;&nbsp;Case Study: Union-Find</a>
+        </ul>
+
+      <li> <a href = "/20sorting">2.&nbsp;&nbsp;Sorting</a>
+        <ul>
+          <li> <a href = "/21elementary">2.1&nbsp;&nbsp;Elementary Sorts</a>
+          <li> <a href = "/22mergesort">2.2&nbsp;&nbsp;Mergesort</a>
+          <li> <a href = "/23quicksort">2.3&nbsp;&nbsp;Quicksort</a>
+          <li> <a href = "/24pq">2.4&nbsp;&nbsp;Priority Queues</a>
+          <li> <a href = "/25applications">2.5&nbsp;&nbsp;Sorting Applications</a>
+        </ul>
+
+      <li> <a href = "/30searching">3.&nbsp;&nbsp;Searching</a>
+        <ul>
+          <li> <a href = "/31elementary">3.1&nbsp;&nbsp;Symbol Tables</a>
+          <li> <a href = "/32bst">3.2&nbsp;&nbsp;Binary Search Trees</a>
+          <li> <a href = "/33balanced">3.3&nbsp;&nbsp;Balanced Search Trees</a>
+          <li> <a href = "/34hash">3.4&nbsp;&nbsp;Hash Tables</a>
+          <li> <a href = "/35applications">3.5&nbsp;&nbsp;Searching Applications</a>
+        </ul>
+
+      <li> <a href = "/40graphs">4.&nbsp;&nbsp;Graphs</a>
+        <ul>
+          <li> <a href = "/41graph">4.1&nbsp;&nbsp;Undirected Graphs</a>
+          <li> <a href = "/42digraph">4.2&nbsp;&nbsp;Directed Graphs</a>
+          <li> <a href = "/43mst">4.3&nbsp;&nbsp;Minimum Spanning Trees</a>
+          <li> <a href = "/44sp">4.4&nbsp;&nbsp;Shortest Paths</a>
+        </ul>
+
+      <li> <a href = "/50strings">5.&nbsp;&nbsp;Strings</a>
+        <ul>
+          <li> <a href = "/51radix">5.1&nbsp;&nbsp;String Sorts</a>
+          <li> <a href = "/52trie">5.2&nbsp;&nbsp;Tries</a>
+          <li> <a href = "/53substring">5.3&nbsp;&nbsp;Substring Search</a>
+          <li> <a href = "/54regexp">5.4&nbsp;&nbsp;Regular Expressions</a>
+          <li> <a href = "/55compression">5.5&nbsp;&nbsp;Data Compression</a>
+        </ul>
+
+      <li> <a href = "/60context">6.&nbsp;&nbsp;Context</a>
+        <ul>
+          <li> <a href = "/61event">6.1&nbsp;&nbsp;Event-Driven Simulation</a>
+          <li> <a href = "/62btree">6.2&nbsp;&nbsp;B-trees</a>
+          <li> <a href = "/63suffix">6.3&nbsp;&nbsp;Suffix Arrays</a>
+          <li> <a href = "/64maxflow">6.4&nbsp;&nbsp;Maxflow</a>
+          <li> <a href = "/65reductions">6.5&nbsp;&nbsp;Reductions</a>
+          <li> <a href = "/66intractability">6.6&nbsp;&nbsp;Intractability</a>
+        </ul>
+    </ul>
+
+
+
+
+<li><a class = title> Related Booksites</a>
+<table width = 100% border = 0 cellspacing = 0 cellpadding = 0>
+<tr>
+<td align = center>
+<a class = booksite href = "https://introcs.cs.princeton.edu">
+   <img src = "https://introcs.cs.princeton.edu/java/cover.png"
+        width = 80 height = 108 border=0
+        alt = "Introduction to Programming in Java
+               by Robert Sedgewick and Kevin Wayne">
+</a>
+<td align = center>
+<a class = booksite href = "https://aofa.cs.princeton.edu">
+   <img src = "https://algs4.cs.princeton.edu/cover-analysis-of-algorithms.png"
+        width = 81 height = 108 border=0
+        alt = "An Introduction to the Analysis of Algorithms by Robert Sedgewick and Philippe Flajolet">
+</a>
+</tr>
+</table>
+
+<li><a class = title>Web Resources</a>
+
+  <ul>
+      <li> <a href = "/faq">FAQ</a>
+      <li> <a href = "https://introcs.cs.princeton.edu/java/data">Data</a>
+      <li> <a href = "/code">Code</a>
+      <li> <a href = "/errata">Errata</a>
+      <li> <a href = "/lectures">Lectures</a>
+      <li> <a href = "/cheatsheet">Cheatsheet</a>
+      <li> <a href = "/references">References</a>
+      <li> <a href = "https://www.coursera.org/learn/algorithms-part1" target="_blank">Coursera MOOCs</a>
+        <ul>
+          <li> <a href = "https://www.coursera.org/learn/algorithms-part1" target="_blank">Algorithms, Part I</a>
+          <li> <a href = "https://www.coursera.org/learn/algorithms-part2" target="_blank">Algorithms, Part II</a>
+        </ul>
+      <li> <a href = "https://www.cubits.ai/collections/115" target="_blank">Certificate Courses</a>
+        <ul>
+          <li> <a href = "https://www.cubits.ai/collections/115" target="_blank">Algorithms, Part I</a>
+          <li> <a href = "https://www.cubits.ai/collections/117" target="_blank">Algorithms, Part II</a>
+        </ul>
+
+      <li> <a href = "https://www.coursera.org/learn/algorithms-part1/" target="_blank">Online Course</a>
+      <li> <a href = "https://introcs.cs.princeton.edu/java/assignments">Programming Assignments</a>
+  </ul>
+
+</ul>
+</ul>
+
+<p><br>
+
+<!--
+<script>
+  (function() {
+    var cx = '005649317310637734940:s7fqljvxwfs';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox-only></gcse:searchbox-only>
+
+<p><br>
+-->
+
+
+
+
+</div>
+
+
+<div id = "content">
+<H1>3.2 &nbsp; Binary Search Trees</H1>
+
+<!-- REDO EXERICSE NUMBERINGS -->
+
+<p><br>
+
+We examine a symbol-table implementation that combines the 
+flexibility of insertion in linked lists with the efficiency
+of search in an ordered array.
+Specifically, using two links per node
+leads to an efficient symbol-table implementation based
+on the binary search tree data structure, which qualifies as one of the most fundamental
+algorithms in computer science.
+
+<p><b>Definition.</b> A <em>binary search tree</em> (BST) is a binary 
+tree where each node has a <tt>Comparable</tt> key
+(and an associated value) and satisfies the restriction 
+that the key in any node is larger than the keys in all
+nodes in that node's left subtree and smaller than the keys
+in all nodes in that node's right subtree.
+
+<p>
+<blockquote>
+<TABLE BORDER = 0 CELLPADDING =2 CELLSPACING = 0>
+<tr>
+<td><IMG SRC="images/binary-tree-anatomy.png" alt = "Anatomy of a binary tree">
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+<td><IMG SRC="images/bst-anatomy.png" alt = "Anatomy of a binary search tree">
+</tr>
+</table>
+</blockquote>
+
+<p><br>
+
+
+<p><h2>Basic implementation.</h2>
+Program <a href = "BST.java.html">BST.java</a> implements
+the ordered symbol-table API using a binary search tree.
+We define a inner private class to define nodes in BST.
+Each node contains a key, a value, a left link, a right link, and a node count.
+The left link points to a BST for 
+items with smaller keys, and the right link points to a BST for items with
+larger keys. The instance variable <tt>N</tt> gives the node count
+in the subtree rooted at the node. This field facilitates the implementation
+of various ordered symbol-table operations, as you will see. 
+
+<p>
+<center>
+<IMG SRC="images/bst-subtree-count.png"  alt = "Subtree counts in a BST">
+</center>
+
+
+<ul>
+<p><li><em>Search.</em>
+A recursive algorithm to search for a key in a BST
+follows immediately from the recursive structure: If the tree is 
+empty, we have a search miss; if the search key is equal to the key at the root, we have a 
+search hit. Otherwise, we search (recursively) in the appropriate subtree.
+The recursive <tt>get()</tt> method implements this algorithm directly.
+It takes a node (root of a subtree) as 
+first argument and a key as second argument, starting
+with the root of the tree and the search key.
+
+<p>
+<center>
+<IMG SRC="images/bst-search.png"  alt = "Search in a BST">
+</center>
+
+
+<p><li><em>Insert.</em>
+Insert is not much more difficult to implement than search.
+Indeed, a search for a key not in the tree ends 
+at a null link, and all that we need to do is replace that link with a
+new node containing the key.
+The recursive <tt>put()</tt> method
+accomplishes this task using logic similar to that we used for the
+recursive search: If the tree is empty, we return a new node
+containing the key and value; if the search key is less 
+than the key at the root, we set the left link to the result
+of inserting the key into the left subtree; otherwise,
+we set the right link to the result of inserting the key into the right subtree.
+
+<p>
+<center>
+<IMG SRC="images/bst-insert.png"  alt = "Insert in a BST">
+</center>
+
+</ul>
+
+
+<p><h2>Analysis.</h2>
+The running times of algorithms on binary search trees depend on the 
+shapes of the trees, which, in turn, depends on the order in which keys are inserted.
+
+<p>
+<blockquote>
+<TABLE BORDER = 0 CELLPADDING =2 CELLSPACING = 0>
+<tr>
+<td><IMG SRC="images/bst-best.png" alt = "Best case for BST">
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+<td><IMG SRC="images/bst-typical.png" alt = "Typical case for BST">
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+<td><IMG SRC="images/bst-worst.png" alt = "Worst case for BST">
+</tr>
+</table>
+</blockquote>
+
+It is reasonable, for many applications, to use the following 
+simple model: We assume that the keys are (uniformly) random, or,
+equivalently, that they are inserted in random order.
+
+<p><h3>Proposition.</h3> Search hits in a BST built from N random keys
+requires ~ 2 ln N (about 1.39 lg N) compares on the average.
+
+<p><h3>Proposition.</h3> Insertion and search misses in a BST built
+from N random keys requires ~ 2 ln N (about 1.39 lg N) compares on the average.
+
+
+<p>
+The visualization below shows the result of inserting 255 keys in a BST in random order.
+It displays the number of keys (N),
+the maximum number of nodes on a path from the root to a leaf (max),
+the average number of nodes on a path from the root to a leaf (avg),
+the average number of nodes on a path from the root to a leaf in a perfectly 
+balanced BST (opt).
+
+
+<p>
+<blockquote>
+<video controls="controls" width="630"
+       name="Insert 255 keys in a BST in random order"
+       poster="media/bst-255random.jpg"
+       src="media/bst-255random.mov">
+Your browser does not support the video tag.
+</video>
+</blockquote>
+
+<!--
+<p><b>Property C.</b> [Bruce Reed]
+The expected height of a random BST is &alpha; ln n - &beta; ln ln n + O(1),
+where &alpha; = 4.3111 (solution to &alpha; ln ((2e) / &alpha;) = 1)
+and &beta; = 1.953 (3/2  &alpha; / (&alpha; - 1) ).
+Variance of height = O(1).
+This is also equal to number of levels of recursion when applying
+quicksort to random permutation of 1..n.
+-->
+
+
+
+<p><br>
+<p><h2>Order-based methods and deletion.</h2>
+An important reason that BSTs are widely used is that
+they allow us to keep the keys <em>in order</em>. 
+As such, they can serve as the basis for implementing the
+numerous methods in our ordered symbol-table API.
+
+<ul>
+<p><li><em>Minimum and maximum.</em>
+If the left link of the root is null, the smallest key in a BST is the key at the root;
+if the left link is not null, the smallest key in the BST is
+the smallest key in the subtree rooted at the node referenced by the left link.
+Finding the maximum key is similar, moving to the right instead of to the left.
+
+<p><li><em>Floor and ceiling.</em>
+If a given key key is less than the key at the root of a BST, then the 
+floor of key (the largest key in the BST less than or equal to key)
+<em>must</em> be in the left subtree.
+If key is greater than the key at the root, then the floor of key <em>could</em>
+be in the right subtree, but only if there is a key smaller than or equal to key
+in the right subtree; 
+if not (or if key is equal to the key at the root) then the key at the root
+is the floor of key.
+Finding the ceiling is similar, interchanging right and left.
+
+<p><li><em>Selection.</em>
+Suppose that we seek the key of rank <em>k</em>
+(the key such that precisely <em>k</em> other keys in the BST are smaller).
+If the number of keys <em>t</em> in the left subtree is larger than <em>k</em>,
+we look (recursively) for the key of rank <tt>k</tt> in the left subtree;
+if <em>t</em> is equal to <em>k</em>, we return the key at the root;
+and if <em>t</em> is smaller than <em>k</em>, we look (recursively) for the 
+key of rank <em>k - t - 1</em> in the right subtree.
+
+<p>
+<blockquote>
+<TABLE BORDER = 0 CELLPADDING =2 CELLSPACING = 0>
+<tr>
+<td><IMG SRC="images/bst-floor.png" alt = "Floor in a BST">
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+<td><IMG SRC="images/bst-select.png" alt = "Selection in a BST">
+</tr>
+</table>
+</blockquote>
+
+
+<p><li><em>Rank.</em>
+If the given key is equal to the key at the root, we return the number of keys
+<em>t</em> in the left subtree; if the given key is less than the key at the root,
+we return the rank of the key in the left 
+subtree; and if the given key is larger than the key
+at the root, we return <em>t</em> plus one (to count the key at the root)
+plus the rank of the key in the right subtree.
+
+<p><li><em>Delete the minimum and maximum.</em>
+For delete the minimum, we go left 
+until finding a node that that has a null left link and then replace
+the link to that node by its right link.
+The symmetric method works for delete the maximum.
+
+<p><li><em>Delete.</em>
+We can proceed in a similar manner to delete any node that has one child (or no children), 
+but what can we do to delete a node that has two children?
+We are left with two links, but have a place in the parent node for only one of them.
+An answer to this dilemma, first proposed by T. Hibbard in 1962,
+is to delete a node x by replacing it with its <em>successor</em>. 
+Because <tt>x</tt> has a right child, its successor is the node with the smallest
+key in its right subtree.
+The replacement preserves order in the tree because there are no keys between <tt>x.key</tt>
+and the successor's key.
+We accomplish the task of replacing <t>x</tt> by its successor in four (!) easy steps:
+
+<ul>
+<p><li> Save a link to the node to be deleted in <tt>t</tt>
+<p><li> Set <tt>x</tt> to point to its successor <tt>min(t.right)</tt>.
+<p><li> Set the right link of <tt>x</tt> (which is supposed to point to the
+BST containing all the keys larger than <tt>x.key</tt>) to <tt>deleteMin(t.right)</tt>,
+the link to the BST containing all the keys that are larger than <tt>x.key</tt> after the deletion.
+<p><li> Set the left link of <tt>x</tt> (which was null) to <tt>t.left</tt>
+(all the keys that are less than both the deleted key and its successor).
+</ul>
+
+<p>
+<blockquote>
+<TABLE BORDER = 0 CELLPADDING =2 CELLSPACING = 0>
+<tr>
+<td><IMG SRC="images/bst-deletemin.png" alt = "Delete the min in a BST">
+<td>
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;
+<td><IMG SRC="images/bst-delete.png" alt = "Hibbard deletion in a BST">
+</tr>
+</table>
+</blockquote>
+
+
+While this method does the job, it has a flaw that might cause
+performance problems in some practical 
+situations. The problem is that the choice of using the successor is arbitrary
+and not symmetric. Why not use the predecessor?
+
+<!--
+<p>
+One alternative is a symmetric version of Hibbard's rule.
+Conjecture to yield BST with O(log N) average time per operation.
+[Reference: The Effects of Updates in Binary Search Trees by
+Joseph Culberson.]
+-->
+
+
+<p><br>
+<blockquote>
+<p>
+<em>Each BST contains 150 nodes. We then repeatedly delete (via Hibbard deletion)
+and insert keys at random. The BST becomes skewed toward the left.</em>
+<p>
+
+<p>
+<blockquote>
+<video controls="controls" width="630"
+       name="Insert 150 keys into a BST then repeatedly delete and reinsert"
+       poster="media/jibbard-150random.jpg"
+       src="media/hibbard-150random.mov">
+Your browser does not support the video tag.
+</video>
+</blockquote>
+
+<p<br>
+<p><li><em>Range search.</em>
+To implement the <tt>keys()</tt> method that returns the keys in a given range,
+we begin with a basic recursive BST traversal method, known as <em>inorder</em> traversal.
+To illustrate the method, we 
+consider the task of printing all the keys in a BST in order. To do so, print all the keys in 
+the left subtree (which are less than the key at the root by
+definition of BSTs),
+then print the key at the root, then print all the keys in the right subtree,
+(which are greater than the key at the root by definition of BSTs).
+
+<blockquote>
+<table>
+<TR><TD><pre>
+private void print(Node x) {
+   if (x == null) return;
+   print(x.left);
+   StdOut.println(x.key);
+   print(x.right);
+}
+</pre></td></tr>
+</table>
+</blockquote>
+
+<p>
+To implement the two-argument <tt>keys()</tt> method,
+we modify this code to add each key that is in the range to a <tt>Queue</tt>, and to 
+skip the recursive calls for subtrees that cannot contain keys in the range.
+
+</ul>
+
+
+
+<p><h3>Proposition.</h3>
+Search, insertion, finding the minimum, finding the maximum, floor, ceiling, 
+rank, select, delete the minimum, delete the maximum, delete, and range count operations all 
+take time proportional to the height of the tree, in the worst case.
+
+
+<p><br>
+
+<H4>Exercises</H4>
+
+<ol>
+
+
+<!--
+<li>
+Draw the BST that results when you insert the keys
+<blockquote>
+<table>
+<TR><TD><pre>
+E A S Y Q U E S T I O N
+</pre></td></tr>
+</table>
+</blockquote>
+<p>
+in that order (associating the value i with the ith key,
+as per the convention in the text) into an initially empty tree.
+How many compares are needed to build the tree?
+-->
+
+<a name = "Ex3.2.3"></a>
+<li value = 3>
+Give five orderings of the keys
+<tt>A X C S E R H</tt> that, when inserted into an initially
+empty BST, produce the <em>best-case</em> tree.
+
+<p><em>Solution.</em>
+Any sequence that inserts H first;
+C before A and E; S before R and X.
+
+
+<a name = "Ex3.2.6"></a>
+<li value = 6>
+Add to <a href = "BST.java.html">BST.java</a>
+a method <tt>height()</tt> that computes the height of the tree.
+Develop two implementations: a recursive method
+(which takes linear time and space proportional to the height),
+and method like <tt>size()</tt> that 
+adds a field to each node in the tree
+(and takes linear space and constant time per query).
+
+
+<a name = "Ex3.2.10"></a>
+<li value = 10>
+Write a test client <a href = "TestBST.java.html">TestBST.java</a>
+for use in testing the implementations of 
+<tt>min()</tt>,
+<tt>max()</tt>,
+<tt>floor()</tt>,
+<tt>ceiling()</tt>,
+<tt>select()</tt>,
+<tt>rank()</tt>,
+<tt>deleteMin()</tt>,
+<tt>deleteMax()</tt>, and
+<tt>keys()</tt> that 
+are given in the text.
+
+<a name = "Ex3.2.13"></a>
+<li value = 13>
+Give nonrecursive implementations of <tt>get()</tt>, <tt>put()</tt>, and
+<tt>keys()</tt> for BST.
+
+<p><em>Solution:</em>  <a href = "NonrecursiveBST.java.html">NonrecursiveBST.java</a>
+
+<!--
+<a name = "Ex3.2.21"></a>
+<li value = 21>
+Add to <a href = "BST.java.html">BST.java</a> a method 
+<tt>randomKey()</tt> that returns a random key from the symbol table
+in time proportional to the tree height, in the worst case.
+-->
+
+</ol>
+
+
+
+
+<H4>Creative Problems</H4>
+<ol>
+
+<a name = "Ex3.2.25"></a>
+<li value = 25><b>Perfect balance.</b>
+Write a program <a href = "PerfectBalance.java.html">PerfectBalance.java</a>
+that inserts a set of keys into an initially empty
+BST such that the tree produced is equivalent to binary search,
+in the sense that the sequence of compares done in the
+search for any key in the BST is the same as the sequence of 
+compares used by binary search for the same set of keys.
+
+<p><em>Hint</em>: Put the median at the root and recursively
+build the left and right subtree.
+
+
+<a name = "Ex3.2.31"></a>
+<li value = 31><b>Certification.</b>
+Write a method <tt>isBST()</tt> in <a href = "BST.java.html">BST.java</a>
+that takes a <tt>Node</tt> as argument and returns <tt>true</tt> if the
+argument node is the root of a binary search tree, <tt>false</tt> otherwise.
+
+<a name = "Ex3.2.32"></a>
+<li value = 32><b>Subtree count check.</b>
+Write a recursive method <tt>isSizeConsistent()</tt> in <a href = "BST.java.html">BST.java</a>
+that takes a <tt>Node</tt> as argument and returns <tt>true</tt> if the
+subtree count field <tt>N</tt> is consistent in the data structure rooted at
+that node, <tt>false</tt> otherwise.
+
+<a name = "Ex3.2.33"></a>
+<li value = 33><b>Select/rank check.</b>
+Write a method <tt>isRankConsistent()</tt> in <a href = "BST.java.html">BST.java</a>
+that checks, for all <tt>i</tt> from <tt>0</tt> to <tt>size() - 1</tt>,
+whether <tt>i</tt> is equal to <tt>rank(select(i))</tt> and, for all keys
+in the BST, whether <tt>key</tt> is equal to <tt>select(rank(key))</tt>.
+
+</ol>
+
+
+
+<H4>Web Exercises</H4>
+<ol>
+
+<li><b>The great tree-list recursion problem</b>.
+A binary search tree and a circular doubly linked list are conceptually built
+from the same type of nodes - a data field and two references to other nodes.
+Given a binary search tree, rearrange the references so that it
+becomes a circular doubly-linked list (in sorted order).
+Nick Parlante describes this as
+<a href = "http://cslibrary.stanford.edu/109/TreeListRecursion.html">
+one of the neatest recursive pointer problems ever devised</a>.
+<em>Hint</em>: create a circularly linked list A from the left subtree,
+a circularly linked list B from the right subtree, and make the root
+a one node circularly linked list. Them merge the three lists.
+
+
+<li><b>BST reconstruction.</b>
+Given the preorder traversal of a BST (not including null nodes),
+reconstruct the tree.
+
+<li>
+True or false.
+Given a BST, let x be a leaf node, and let y be its parent.
+Then either (i) the key of y is the smallest key in the BST
+larger than the key of x or (ii)  the key of y is the largest
+key in the BST smaller than the key of x.
+<em>Answer</em>: true.
+
+<li>
+True or false.
+Let x be a BST node. The next largest key (successor of x)
+can be found by traversing up the tree toward the root
+until encountering a node with a non-empty right subtree
+(possibly x itself); then finding the minimum key
+in the right subtree (by following its rightmost path).
+
+
+<li><b>Tree traversal with constant extra memory.</b>
+Describe how to perform an inorder tree traversal with constant extra memory (e.g.,
+no function call stack).
+<p><em>Hint</em>: on the way down the tree, make the child node point back to the 
+parent (and reverse it on the way up the tree).
+
+<li><b>Reverse a BST.</b>
+Given a standard BST (where each key is greater than the keys in its left subtree and smaller
+than the keys in its right subtree), design a linear-time algorithm to transform it into a 
+reverese BST (where each key is smaller than the keys in its left subtree and greater
+than the keys in its right subtree). The resulting tree shape should be symmetric to the
+original one.
+
+<li><b>Level-order traversal reconstruction of a BST.</b>
+Given a sequence of keys, design a linear-time algorithm to
+determine whether it is the level-order traversal of some BST (and construct the BST itself).
+
+<li><b>Find two swapped keys in a BST.</b>
+Given a BST in which two keys in two nodes have been swapped, find the two keys.
+
+<p><em>Solution.</em> Consider the inorder traversal a[] of the BST.
+There are two cases to consider. Suppose there is only one index p such that a[p] > a[p+1].
+Then swap the keys a[p] and a[p+1].
+Otherwise, there are two indices p and q such a[p] > a[p+1] and a[q] > a[q+1].
+Let's assume p < q. Then, swap the keys a[p] and a[q+1].
+</ol>
+
+
+
+
+<br><br>
+<p class = footer>
+<em>Last modified on March 19, 2021.</em><br><br>
+Copyright &copy; 2000&ndash;2025
+<a href = "https://www.cs.princeton.edu/~rs" class = footer>Robert Sedgewick</a>
+and
+<a href = "https://www.cs.princeton.edu/~wayne" class = footer>Kevin Wayne</a>.
+All rights reserved.
+</div>
+
+
+
+
+<!--
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10811519-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+-->
+
+</body>
+
+</html>
+
+ 

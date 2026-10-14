@@ -1,0 +1,13 @@
+{
+  "status": "committed",
+  "time": "2026-10-10T00:30:05+09:00",
+  "paths": [
+    "generated/questions/applied_science/physics_chemistry/04_electromagnetism.tex"
+  ],
+  "existed": {
+    "generated/questions/applied_science/physics_chemistry/04_electromagnetism.tex": true
+  },
+  "sha256": {
+    "generated/questions/applied_science/physics_chemistry/04_electromagnetism.tex": "c671cd14b7e976945c88aab036ca0c2f170482c6d13e340be9467e4580746388"
+  }
+}

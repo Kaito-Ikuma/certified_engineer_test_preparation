@@ -1,0 +1,49 @@
+{
+  "stem": "理想気体の定圧・定積4段階変化のうち、第3段階で外部からされる仕事を求める。",
+  "conditions": {
+    "初期": "\\(p_0=2.0\\times10^5\\,\\mathrm{Pa},V_0=100\\,\\mathrm{m}^3,T_0=27\\,{}^\\circ\\mathrm{C}\\)。",
+    "第1段階": "定圧で327°Cへ加熱。",
+    "第2段階": "定積で27°Cへ冷却。",
+    "第3段階": "定圧で−123°Cへ冷却。",
+    "第4段階": "定積で27°Cへ加熱。",
+    "求める量": "第3段階で気体へされる仕事。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(1\\times10^6\\,\\mathrm{J}\\)",
+      "verdict": "条件に不一致",
+      "reason": "圧縮仕事の計算値より1桁小さい。"
+    },
+    "2": {
+      "value": "\\(2\\times10^6\\,\\mathrm{J}\\)",
+      "verdict": "条件に不一致",
+      "reason": "圧縮の温度幅と気体量の両方を反映していない。"
+    },
+    "3": {
+      "value": "\\(5\\times10^6\\,\\mathrm{J}\\)",
+      "verdict": "条件に不一致",
+      "reason": "第3段階の体積差100m³と圧力10^5Paの積の半分である。"
+    },
+    "4": {
+      "value": "\\(1\\times10^7\\,\\mathrm{J}\\)",
+      "verdict": "条件に一致",
+      "reason": "圧力10^5Pa×減少体積100m³に一致する。"
+    },
+    "5": {
+      "value": "\\(2\\times10^7\\,\\mathrm{J}\\)",
+      "verdict": "条件に不一致",
+      "reason": "第3段階へ初期圧力2×10^5Paをそのまま使った値である。"
+    }
+  },
+  "figures": "正誤方向、全条件・数値・単位、候補5肢を原典画像で確認。図なし。組合せ問題では表の全欄を確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R02/17_applied_science/page_002.png"
+  ],
+  "question_id": "R02-REG-APPLIED-06",
+  "source_file": "sources/R02/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+  "raw_text_sha256": "6fe7f5b23382896f4ab066a5dee9ca0a62f6e9ee4e9a829442f582de8710d96c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

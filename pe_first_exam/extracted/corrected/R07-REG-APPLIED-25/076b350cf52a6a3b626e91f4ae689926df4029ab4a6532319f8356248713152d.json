@@ -1,0 +1,45 @@
+{
+  "stem": "正マグマ・黒鉱・別子型・スカルンの産状を比較する。",
+  "conditions": {
+    "原典確認": "S7_050の29原典画像で34問の全五肢・否定・数値を照合。",
+    "対象": "正マグマ・黒鉱・別子型・スカルンの産状を比較する。"
+  },
+  "choices": {
+    "1": {
+      "value": "通常より鉱物・元素が濃集した鉱床",
+      "verdict": "代表的条件で適切",
+      "reason": "原典では地質学上の濃集をいう。経済的に採掘できるかは品位・鉱量・価格・技術等を別に評価する。"
+    },
+    "2": {
+      "value": "Cr・Ptの早期結晶と集積",
+      "verdict": "代表的条件で適切",
+      "reason": "苦鉄質～超苦鉄質のマグマ系でクロム・白金族等が濃集する代表的な正マグマ鉱床。全鉱体が厳密に下部だけという意味ではない。"
+    },
+    "3": {
+      "value": "黒鉱を東北の緑色片岩中とする",
+      "verdict": "不適切",
+      "reason": "グリーンタフ地域の海底火山熱水に伴う黒鉱と、緑色片岩という変成岩を交換している。"
+    },
+    "4": {
+      "value": "海底熱水鉱が変成した層状含銅硫化鉄鉱",
+      "verdict": "代表的条件で適切",
+      "reason": "海洋地殻上の熱水性硫化物が付加・沈み込みと変成を経る別子型等の代表モデル。"
+    },
+    "5": {
+      "value": "炭酸塩との反応でCaケイ酸塩を作るスカルン",
+      "verdict": "代表的条件で適切",
+      "reason": "熱水による化学的交代で形成される。単なる熱だけの再結晶と分ける。"
+    }
+  },
+  "figures": "今回の34問には図表はない。原典画像は照合用で転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R07/17_applied_science/page_009.png"
+  ],
+  "question_id": "R07-REG-APPLIED-25",
+  "source_file": "sources/R07/17_applied_science.pdf",
+  "source_page": "9",
+  "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+  "raw_text_sha256": "1459b8e24b435b335f4c7f4ee22d806935f64394c54abfe1efdaf60ff62f828e",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

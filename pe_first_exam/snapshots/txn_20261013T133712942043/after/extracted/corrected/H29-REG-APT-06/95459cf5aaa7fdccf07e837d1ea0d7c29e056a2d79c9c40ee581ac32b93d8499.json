@@ -1,0 +1,45 @@
+{
+  "stem": "不審な依頼は既知の担当窓口へ速やかに報告する。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+    "時点": "平成29年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "社内担当部署へ報告",
+      "verdict": "条件内で適切",
+      "reason": "既知の社内経路で疑いを共有すれば、担当者が他の受信者への影響と真偽を確認できる。メール内の連絡先を信用の根拠にしない。"
+    },
+    "2": {
+      "value": "メール記載の担当者へ連絡",
+      "verdict": "不適切",
+      "reason": "不審なメッセージが示した窓口も攻撃者の可能性があり、独立確認にならない。"
+    },
+    "3": {
+      "value": "再度違和感が出るまで待つ",
+      "verdict": "不適切",
+      "reason": "既に異常を認めているのに情報共有を遅らせる。担当部署で確認する機会を失う。"
+    },
+    "4": {
+      "value": "そのまま回答",
+      "verdict": "不適切",
+      "reason": "依頼の真偽が未確認で、添付操作や情報の提供が危害を広げ得る。"
+    },
+    "5": {
+      "value": "自部署だけへ伝えて待つ",
+      "verdict": "不適切",
+      "reason": "専門担当部署へ届かず、組織全体の対応や情報共有を遅らせる。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H29/aptitude/page_006.png"
+  ],
+  "question_id": "H29-REG-APT-06",
+  "source_file": "sources/H29/aptitude.pdf",
+  "source_page": "6",
+  "source_sha256": "4014afcc66cec6978c2bc161d9e296dbf5de68ccf2420af006416ab3cca99ce0",
+  "raw_text_sha256": "45f8959dcc19f331b70413e74c61efdc1f261f919c7a7bb0b91979e3d7999728",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

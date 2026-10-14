@@ -1,0 +1,44 @@
+{
+  "stem": "塩基置換・挿入・欠失の翻訳への効果と潜性形質、変異誘発を判定する。",
+  "conditions": {
+    "方向": "最も適切。"
+  },
+  "choices": {
+    "1": {
+      "value": "途中の終止コドンへの置換を中立突然変異という。",
+      "verdict": "不適切",
+      "reason": "早期終止はナンセンス変異であり、中立という呼び方は影響・選択上の別軸である。"
+    },
+    "2": {
+      "value": "1塩基挿入で読み枠がずれアミノ酸配列が大きく変わる可能性が高い。",
+      "verdict": "最適",
+      "reason": "通常の翻訳領域に1塩基が入り、3の倍数でないため以降の読み枠がずれる。全ての非翻訳領域の挿入まで同じ効果とはしない。"
+    },
+    "3": {
+      "value": "鎌状赤血球のGlu→Valは1塩基欠失による。",
+      "verdict": "不適切",
+      "reason": "代表的なHbSはHBBの塩基置換で、欠失によるフレームずれとは違う。"
+    },
+    "4": {
+      "value": "潜性形質の発現は相同染色体の一方の変異だけでよい。",
+      "verdict": "不適切",
+      "reason": "常染色体の通常の二倍体・完全潜性というモデルでは、正常な対立遺伝子が一方にあれば形質は隠れ、両方の影響を考える。半接合等は別条件。"
+    },
+    "5": {
+      "value": "X線・UV・化学物質で遺伝子変異は起こりにくい。",
+      "verdict": "不適切",
+      "reason": "放射線・UVや特定の化学物質はDNA損傷・変異の誘発源となる。全ての化学物質が一律に変異原という意味ではない。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/basic/page_020.png"
+  ],
+  "question_id": "R03-REG-BASIC-4-6",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "20",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "9eb09550213a1a6ee20cfd3d9e317221dd604bb24bef1652fcd4994ac02499cc",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

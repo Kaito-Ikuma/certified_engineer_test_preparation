@@ -1,0 +1,77 @@
+{
+  "time": "2026-10-11T22:53:32+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_027_structural_design",
+  "question_ids": [
+    "H24-REG-BASIC-1-2",
+    "H25-REG-BASIC-1-2",
+    "H28-REG-BASIC-1-3",
+    "H29-REG-BASIC-1-4",
+    "H29-REG-BASIC-1-6",
+    "R01-REG-BASIC-1-4",
+    "R01-RET-BASIC-1-5",
+    "R02-REG-BASIC-1-3",
+    "R03-REG-BASIC-1-5",
+    "R04-REG-BASIC-1-1",
+    "R04-REG-BASIC-1-4",
+    "R04-REG-BASIC-1-5",
+    "R05-REG-BASIC-1-1",
+    "R05-REG-BASIC-1-2",
+    "R05-REG-BASIC-1-3",
+    "R06-REG-BASIC-1-2",
+    "R06-REG-BASIC-1-3"
+  ],
+  "source_images": 16,
+  "initial_independent_matches": 17,
+  "corrected_verified": 10,
+  "partial": 7,
+  "related_pairs_added": 8,
+  "related_pairs_total": 160,
+  "primary_references_added": 6,
+  "concepts_added": 9,
+  "concept_total": 192,
+  "canonical_counts": {
+    "recorded_at": "2026-10-11T22:53:32+09:00",
+    "registered": 1270,
+    "classification_verified": 548,
+    "summary_verified": 514,
+    "corrected_verified": 427,
+    "corrected_partial": 87,
+    "solution_drafts": 514,
+    "solution_verified": 0,
+    "manual_required": 843,
+    "subject_drafts": {
+      "BASIC": 158,
+      "APT": 116,
+      "APPLIED": 240
+    }
+  },
+  "theory_note": "設計・計画章の構造設計の背景、材料試験、許容応力、限界状態、梁、座屈、疲労、クリープ、確率、最適化を共通理論として執筆。",
+  "pdf": {
+    "pages": 717,
+    "bytes": 3568976,
+    "visual_review_pages": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      42,
+      43,
+      49,
+      53,
+      54,
+      696
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draftと初期・1270ラベル監査成功。数式ホワイトリストに標準prime/simを追加し、禁止inputの拒否を保持。24回帰成功（20.608秒）。LuaLaTeX最終ビルド成功。",
+  "risks": [
+    "7部分校正。独立性、初期断面積、固定荷重、材料圧縮破損、高不静定の全体安全の条件を明示。",
+    "Astra未査読、756問未執筆、最終監査未実装。"
+  ],
+  "next": "S7_028信頼性・保全・設計安全22問。25原典画像と公式前22初回解答保存済み。全1270問と全章・頻出分析まで継続。"
+}

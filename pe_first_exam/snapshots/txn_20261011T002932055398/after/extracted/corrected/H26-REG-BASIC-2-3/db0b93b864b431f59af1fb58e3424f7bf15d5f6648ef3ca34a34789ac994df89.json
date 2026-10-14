@@ -1,0 +1,44 @@
+{
+  "stem": "ISBN-10の重み付き剰余条件を保つ数字の変更を選ぶ。",
+  "conditions": {
+    "方向": "正しい番号"
+  },
+  "choices": {
+    "1": {
+      "value": "第2桁0→5：95-70002-34-5",
+      "verdict": "不適切",
+      "reason": "第2桁の重み9、差5で和が45増える。元和176に足した221は11の倍数でない。"
+    },
+    "2": {
+      "value": "第8桁3→8：90-70002-84-5",
+      "verdict": "不適切",
+      "reason": "重み3の桁が5増えるので和が15増える。191は11の倍数でない。OCRの04は画像の84へ校正する。"
+    },
+    "3": {
+      "value": "検査数字5→6：90-70002-34-6",
+      "verdict": "不適切",
+      "reason": "検査桁の重み1で和が177となり、余り1なので無効。"
+    },
+    "4": {
+      "value": "第8/9桁34→82：90-70002-82-5",
+      "verdict": "適切",
+      "reason": "重み3と2の変化は3×5+2×(-2)=11。全和187=17×11となり有効。"
+    },
+    "5": {
+      "value": "第8/9桁34→56：90-70002-56-5",
+      "verdict": "不適切",
+      "reason": "変化は3×2+2×2=10。186は余り10で無効。"
+    }
+  },
+  "figures": "問題幹・全5肢・数値・単位・否定を原典画像照合。ISBN数字9,0,7,0,0,0,2,3,4、重み10〜2、積171と全5変更を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/basic/page_007.png"
+  ],
+  "question_id": "H26-REG-BASIC-2-3",
+  "source_file": "sources/H26/basic.pdf",
+  "source_page": "7",
+  "source_sha256": "4c0e2df34ffb080a320049d9af5cde5e4b962e71b38dc497c1c3432ddc2ecb2f",
+  "raw_text_sha256": "56a8c0a9de46f9031ad0f25e031860adc156fa2d1e73cbadbda2aed090c28da3",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

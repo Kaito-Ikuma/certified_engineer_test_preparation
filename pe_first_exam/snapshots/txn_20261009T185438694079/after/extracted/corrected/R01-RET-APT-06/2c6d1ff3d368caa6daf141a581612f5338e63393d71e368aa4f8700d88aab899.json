@@ -1,0 +1,48 @@
+{
+  "stem": "科学者の範囲・誠実さ・両義的利用・研究環境の責任を判定する。",
+  "conditions": {
+    "判断順": "記述アから順に○=適切、×=不適切。",
+    "ア": "科学者は所属にかかわらず全学術分野の研究者や科学知識の利活用を行う専門職を含む。",
+    "イ": "正直・誠実に行動し、専門能力の維持向上と知識の正確さの提示に努める。",
+    "ウ": "意図に反し悪用され得ても、社会へ貢献すると判断すれば速やかに研究・公表を積極的に行う。",
+    "エ": "公正な研究環境の維持と不正抑止の教育啓発に継続して取り組む責任がある。"
+  },
+  "choices": {
+    "1": {
+      "value": "○○○○",
+      "verdict": "問の条件に一致しない候補",
+      "reason": "記述ウの判定が逆である。独立判定は○○×○となる。"
+    },
+    "2": {
+      "value": "×○○○",
+      "verdict": "問の条件に一致しない候補",
+      "reason": "記述ア・ウの判定が逆である。独立判定は○○×○となる。"
+    },
+    "3": {
+      "value": "○×○○",
+      "verdict": "問の条件に一致しない候補",
+      "reason": "記述イ・ウの判定が逆である。独立判定は○○×○となる。"
+    },
+    "4": {
+      "value": "○○×○",
+      "verdict": "問の条件に一致する候補",
+      "reason": "全記述の判定○○×○に一致する。"
+    },
+    "5": {
+      "value": "○○○×",
+      "verdict": "問の条件に一致しない候補",
+      "reason": "記述ウ・エの判定が逆である。独立判定は○○×○となる。"
+    }
+  },
+  "figures": "正誤の方向、全記述、5候補の全欄を原典画像確認。組合せ表以外に図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/aptitude/page_006.png"
+  ],
+  "question_id": "R01-RET-APT-06",
+  "source_file": "sources/R01_retest/aptitude.pdf",
+  "source_page": "6",
+  "source_sha256": "56da927ec2c460bf1710b16ece3a590e279afa1fd05638decbf4e9fac09ff5b0",
+  "raw_text_sha256": "97236af54248dabdc4ad2a3d8a1164c9d57c36966699976eda54259cafc20c6d",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

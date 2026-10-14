@@ -1,0 +1,45 @@
+{
+  "stem": "原子番号と質量数から同位体を定義する。",
+  "conditions": {
+    "判断対象": "原子番号と質量数から同位体を定義する。",
+    "原典確認": "全5候補・指数・否定・記号を保存原典22頁画像と照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "硫黄の異なる単体",
+      "verdict": "選ばない候補",
+      "reason": "同素体の説明。"
+    },
+    "2": {
+      "value": "原子番号同一・質量数不同",
+      "verdict": "選ぶ候補",
+      "reason": "同じZ、違う中性子数N、A=Z+Nが異なる。"
+    },
+    "3": {
+      "value": "陽子と中性子の和が同じ",
+      "verdict": "選ばない候補",
+      "reason": "同じAの同重体でZ同一とは限らない。"
+    },
+    "4": {
+      "value": "周期表の同族",
+      "verdict": "選ばない候補",
+      "reason": "電子配置による化学的族の分類。"
+    },
+    "5": {
+      "value": "アルカン等の同族列",
+      "verdict": "選ばない候補",
+      "reason": "有機化合物の同族列で核種ではない。"
+    }
+  },
+  "figures": "原典の数式・候補表を確認。原典画像を転載せず独自の計算と構造説明を記載。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_004.png"
+  ],
+  "question_id": "H28-REG-APPLIED-10",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "eb9128953300646f9fcd95a6783b755939e5716af7f919e01ab74c64a4181459",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

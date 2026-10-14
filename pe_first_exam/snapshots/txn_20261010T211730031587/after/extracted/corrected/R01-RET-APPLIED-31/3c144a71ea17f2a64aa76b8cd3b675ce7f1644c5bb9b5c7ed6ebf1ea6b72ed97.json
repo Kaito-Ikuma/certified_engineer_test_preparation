@@ -1,0 +1,45 @@
+{
+  "stem": "付加体へ取り込まれる典型的な岩石群から、最も関係の薄いものを選ぶ。",
+  "conditions": {
+    "方向": "付加体の構成岩として最も関係のないもの。",
+    "範囲": "典型的な付加構成岩と後の貫入岩を区別。"
+  },
+  "choices": {
+    "1": {
+      "value": "玄武岩",
+      "verdict": "構成岩となり得る",
+      "reason": "海洋地殻・海山などの火山岩が沈み込み時に付加され得る。"
+    },
+    "2": {
+      "value": "泥岩",
+      "verdict": "構成岩となり得る",
+      "reason": "海溝などに運ばれる細粒砕屑堆積物が構成物となる。"
+    },
+    "3": {
+      "value": "チャート",
+      "verdict": "構成岩となり得る",
+      "reason": "海洋プレート上の遠洋性珪質堆積物として運搬・付加され得る。"
+    },
+    "4": {
+      "value": "花崗岩",
+      "verdict": "最も関係が薄い",
+      "reason": "一般に地下の珪長質マグマの結晶化で形成され、海洋プレートの層序を剥ぎ取る付加物の典型ではない。付加後の花崗岩貫入まで否定しない。"
+    },
+    "5": {
+      "value": "石灰岩",
+      "verdict": "構成岩となり得る",
+      "reason": "海山上の浅海生物起源の炭酸塩岩などが付加体へ取り込まれ得る。"
+    }
+  },
+  "figures": "原典の問題幹・否定・鉱物名・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_010.png"
+  ],
+  "question_id": "R01-RET-APPLIED-31",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "10",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "f4d278bfe50ed104a78740c040ac98ca6e71c7fe3ab61daeb83b25b06e300cfe",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

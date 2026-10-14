@@ -1,0 +1,46 @@
+{
+  "stem": "疲労の平均応力、クリープ温度、曲げ剛性と応力集中を区別する。",
+  "conditions": {
+    "判断方向": "空欄の適切な語・数値又は正誤の組合せ。全候補の順序は各肢に記録。",
+    "原典照合": "16原典画像で17問の全候補、図、数値、不等号、表の列順を確認。",
+    "前提": "解法に記録した弾性範囲、荷重条件、幾何、独立性を明示する。"
+  },
+  "choices": {
+    "1": {
+      "value": "引張・高い・小さい・高い",
+      "verdict": "適合（前提内）",
+      "reason": "振幅等を固定した通常の金属疲労モデルでは引張平均応力が不利、高温でクリープ、小Eで大変位、急変部で局所応力が高い。"
+    },
+    "2": {
+      "value": "引張・高い・大きい・小さい",
+      "verdict": "不適合",
+      "reason": "同じ荷重と幾何では変位はEの逆数であり、小Eが大変位である。応力集中は局所上昇を表す。"
+    },
+    "3": {
+      "value": "圧縮・高い・小さい・小さい",
+      "verdict": "不適合",
+      "reason": "一般的平均応力モデルの不利側は引張であり、応力集中を局所低下とはしない。"
+    },
+    "4": {
+      "value": "圧縮・高強度・小さい・高い",
+      "verdict": "不適合",
+      "reason": "Aは引張側、Bは高温である。高強度を温度条件の代わりにはできない。"
+    },
+    "5": {
+      "value": "引張・高強度・大きい・高い",
+      "verdict": "不適合",
+      "reason": "クリープのBは高温であり、曲げ変位のCは小さいEである。"
+    }
+  },
+  "figures": "設問固有図なし。全候補の順序を原典画像で照合。",
+  "ambiguity": "疲労の平均応力依存は振幅等の同条件比較を要する。急変部の局所von Mises値は荷重/形状/拘束に依存し、常に上がる全称の証明ではない。公式/初回1を維持し条件を限定。",
+  "evidence": [
+    "extracted/pages/R04/basic/page_001.png"
+  ],
+  "question_id": "R04-REG-BASIC-1-1",
+  "source_file": "sources/R04/basic.pdf",
+  "source_page": "1",
+  "source_sha256": "c3c7c952edd678caa75ca38aa9ff98ec7e731ec57df733eba954420bea5af0ca",
+  "raw_text_sha256": "7d294dd9770827731cf0bdb4fb34db5fbc61260115df24bb017eaea1f1dca21c",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

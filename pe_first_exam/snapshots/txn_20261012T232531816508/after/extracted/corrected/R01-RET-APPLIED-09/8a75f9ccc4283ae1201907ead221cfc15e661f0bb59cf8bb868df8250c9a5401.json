@@ -1,0 +1,45 @@
+{
+  "stem": "HFの酸化膜除去とPTFEの原料・加工を比較する。",
+  "conditions": {
+    "判断対象": "HFの酸化膜除去とPTFEの原料・加工を比較する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "FはPauling EN最大",
+      "verdict": "選ばない候補",
+      "reason": "指定尺度でFが最大。"
+    },
+    "2": {
+      "value": "HFはホタル石由来",
+      "verdict": "選ばない候補",
+      "reason": "CaF2からHFを製造。"
+    },
+    "3": {
+      "value": "HFはウェハSiO2膜生成",
+      "verdict": "選ぶ候補",
+      "reason": "HFはSiO2をエッチして除去するので生成とは逆。"
+    },
+    "4": {
+      "value": "TFE重合でPTFE",
+      "verdict": "選ばない候補",
+      "reason": "CF2=CF2の付加重合。"
+    },
+    "5": {
+      "value": "PTFE融点327℃・特殊成形",
+      "verdict": "選ばない候補",
+      "reason": "再結晶材の代表融点で、新生材などの熱履歴差を保持。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "PTFEの原料製造・全グレード加工の出題当時本文は未照合。初回と再結晶で融解温度が異なり得る。",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_004.png"
+  ],
+  "question_id": "R01-RET-APPLIED-09",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "7cf112c7ace8df9f0784f95584b5877d8024cb7b34b2d51af545b6ef8ac50b32",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.5">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; Linear Combinations of Random Variables – STAT 505 | Applied Multivariate Statistical Analysis</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./Lesson03.html" rel="next">
+<link href="./Lesson01.html" rel="prev">
+<link href="./assets/psulion.png" rel="icon" type="image/png">
+<script src="site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-832852b6563d68d88ceb798efa7195d4.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-cc03a45504bcebdf2e36fbb04c837120.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-832852b6563d68d88ceb798efa7195d4.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-820ad78afb39d2936213694e666ca25b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-cf34d0883637a3f9457a67ee14b6c61f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-820ad78afb39d2936213694e666ca25b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/language-name/language-name.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1T0E5FPL48"></script>
+
+<script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-1T0E5FPL48', { 'anonymize_ip': true});
+</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"express",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  ,
+"language":"en"
+  });
+});
+</script> 
+  
+<script>
+  window.addEventListener('load', function() {
+    document.getElementById("cc-nb-text").innerHTML = "We use cookies and other tracking technologies to improve your browsing experience on our website, to analyze our website traffic, and to understand where our visitors are coming from.";
+  });
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="sas-ods.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">STAT 505 | Applied Multivariate Statistical Analysis</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="https://science.psu.edu/stat"> 
+<span class="menu-text">Department of Statistics</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Lesson00.html">Lessons</a></li><li class="breadcrumb-item"><a href="./Lesson02.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Linear Combinations of Random Variables</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="https://science.psu.edu/" class="sidebar-logo-link">
+      <img src="./PSU_Ecosshield.png" alt="Penn State Eberly College of Science" class="sidebar-logo light-content py-0 d-lg-inline d-none">
+      <img src="./PSU_Ecosshield.png" alt="Penn State Eberly College of Science" class="sidebar-logo dark-content py-0 d-lg-inline d-none">
+      </a>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About this course</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lessons</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lesson00.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">0: Matrices and Vectors</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lesson01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Measures of Central Tendency, Dispersion and Association</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lesson02.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Linear Combinations of Random Variables</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lesson03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Graphical Display of Multivariate Data</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lesson04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Multivariate Normal Distribution</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lesson05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Sample Mean Vector and Sample Correlation and Related Inference Problems</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lesson06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Multivariate Conditional Distribution and Partial Correlation</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lesson07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Inferences Regarding Multivariate Population Mean</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lesson08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Multivariate Analysis of Variance (MANOVA)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lesson09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Repeated Measures Analysis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lesson10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Discriminant Analysis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lesson11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Principal Components Analysis (PCA)</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lesson12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Factor Analysis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lesson13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Canonical Correlation Analysis</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Lesson14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Cluster Analysis</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Resources</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./example_index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SAS Programs</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">In this lesson</h2>
+   
+  <ul>
+  <li><a href="#examples-of-linear-combinations" id="toc-examples-of-linear-combinations" class="nav-link active" data-scroll-target="#examples-of-linear-combinations"><span class="header-section-number">2.1</span> Examples of Linear Combinations</a></li>
+  <li><a href="#measures-of-central-tendency" id="toc-measures-of-central-tendency" class="nav-link" data-scroll-target="#measures-of-central-tendency"><span class="header-section-number">2.2</span> Measures of Central Tendency</a></li>
+  <li><a href="#population-variance" id="toc-population-variance" class="nav-link" data-scroll-target="#population-variance"><span class="header-section-number">2.3</span> Population Variance</a></li>
+  <li><a href="#population-covariance" id="toc-population-covariance" class="nav-link" data-scroll-target="#population-covariance"><span class="header-section-number">2.4</span> Population Covariance</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">2.5</span> Summary</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Lesson00.html">Lessons</a></li><li class="breadcrumb-item"><a href="./Lesson02.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Linear Combinations of Random Variables</span></a></li></ol></nav>
+<div class="quarto-title">
+<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Linear Combinations of Random Variables</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+  <div class="quarto-categories">
+    <div class="quarto-category">Sample mean</div>
+    <div class="quarto-category">Sample variance</div>
+    <div class="quarto-category">Linear combination</div>
+    <div class="quarto-category">Random Variables</div>
+    <div class="quarto-category">Central Tendancy</div>
+    <div class="quarto-category">Population Variance</div>
+    <div class="quarto-category">Population Covariance</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2 unnumbered unlisted">
+<h2 class="unnumbered unlisted anchored" data-anchor-id="overview">Overview</h2>
+<p>This lesson is concerned with linear combinations or if you would like <strong>linear transformations</strong> of the variables. Mathematically linear combinations can be expressed as shown in the expression below:</p>
+<p><span class="math display">\[
+Y = c_1X_1 +c_2X_2 +\dots + c_pX_p = \sum_{j=1}^{p}c_jX_j = \mathbf{c}'\mathbf{X}
+\]</span></p>
+<p>Here what we have is a set of coefficients <span class="math inline">\(c_{1}\)</span> through <span class="math inline">\(c_{p}\)</span> that is multiplied bycorresponding variables <span class="math inline">\(X_{1}\)</span> through <span class="math inline">\(X_{p}\)</span>. So, in the first term, we have <span class="math inline">\(c_{1}\)</span> times <span class="math inline">\(X_{1}\)</span> which is added to <span class="math inline">\(c_{2}\)</span> times <span class="math inline">\(X_{2}\)</span> and so on up to the variable <span class="math inline">\(X_{p}\)</span>. Mathematically this is expressed as the sum of <span class="math inline">\(j = 1, ... , p\)</span> of the terms <span class="math inline">\(c_{j}\)</span> times <span class="math inline">\(X_{j}\)</span>. The random variables <span class="math inline">\(X_{1}\)</span> through <span class="math inline">\(X_{p}\)</span> are collected into a column vector <code>X</code> and the coefficient <span class="math inline">\(c_{1}\)</span> to <span class="math inline">\(c_{p}\)</span> are collected into a column vector <strong>c</strong>. Hence, the linear combination can be expressed as <span class="math inline">\(\mathbf{c}'\mathbf{X}\)</span>.</p>
+<p>The selection of the coefficients <span class="math inline">\(c_{1}\)</span> through <span class="math inline">\(c_{p}\)</span> is very much dependent on the application of interest and what kinds of scientific questions we would like to address.</p>
+<p>Later on in this course, when we learn about multivariate data reduction techniques, the interpretation of linear combinations will be of great importance.</p>
+<section id="objectives" class="level3 unnumbered unlisted objectiveblock">
+<h3 class="unnumbered unlisted anchored" data-anchor-id="objectives"><i class="bi bi-check2-circle"></i>Objectives</h3>
+<p>Upon completion of this lesson, you should be able to:</p>
+<ol type="1">
+<li>Interpret the meaning of a specified linear combination;</li>
+<li>Compute the sample mean and variance of a linear combination from the sample means, variances, and covariances of the individual variables.</li>
+</ol>
+</section>
+</section>
+<section id="examples-of-linear-combinations" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="examples-of-linear-combinations"><span class="header-section-number">2.1</span> Examples of Linear Combinations</h2>
+<div id="exm-example-2-1" class="theorem example">
+<p><span class="theorem-title"><strong>Example 2.1 (Women’s Health Survey (Linear Combinations))</strong></span> The Women’s Health Survey data contains observations for the following variables:</p>
+<ul>
+<li><span class="math inline">\(X_{1}\)</span> calcium (mg)</li>
+<li><span class="math inline">\(X_{2}\)</span> iron (mg)</li>
+<li><span class="math inline">\(X_{3}\)</span> protein(g)</li>
+<li><span class="math inline">\(X_{4}\)</span> vitamin A(μg)</li>
+<li><span class="math inline">\(X_{5}\)</span> vitamin C(mg)</li>
+</ul>
+<p>In addition to addressing questions about the individual nutritional component, we may wish to address questions about certain combinations of these components. For instance, we might want to ask what is the total intake of vitamins A and C (in mg). We note that in this case, Vitamin A is measured in micrograms while Vitamin C is measured in milligrams. There are a thousand micrograms per milligram so the total intake of the two vitamins, <span class="math inline">\(Y\)</span>, can be expressed as the following:</p>
+<p><span class="math display">\[
+Y = 0.001 X _ { 4 } + X _ { 5 }
+\]</span></p>
+<p>In this case, our coefficients <span class="math inline">\(c_{1}\)</span> , <span class="math inline">\(c_{2}\)</span> and <span class="math inline">\(c_{3}\)</span> are all equal to 0 since the variables <span class="math inline">\(X_{1}\)</span>, <span class="math inline">\(X_{2}\)</span> and <span class="math inline">\(X_{3}\)</span> do not appear in this expression. In addition, <span class="math inline">\(c_{4}\)</span> is equal to 0.001 since each microgram of vitamin A is equal to 0.001 milligrams of vitamin A. In summary, we have</p>
+<p><span class="math display">\[
+c_{1}=c_{2}=c_{3}=0,c_{4}=0.001,c_{5}=1
+\]</span></p>
+</div>
+<div id="exm-example-2-2" class="theorem example">
+<p><span class="theorem-title"><strong>Example 2.2 (Monthly Employment Data)</strong></span> Another example where we might be interested in linear combinations is in the Monthly Employment Data. Here we have observations on 6 variables:</p>
+<ul>
+<li><span class="math inline">\(X_{1}\)</span> Number people laid off or fired</li>
+<li><span class="math inline">\(X_{2}\)</span> Number of people resigning</li>
+<li><span class="math inline">\(X_{3}\)</span> Number of people retiring</li>
+<li><span class="math inline">\(X_{4}\)</span> Number of jobs created</li>
+<li><span class="math inline">\(X_{5}\)</span> Number of people hired</li>
+<li><span class="math inline">\(X_{6}\)</span> Number of people entering the workforce</li>
+</ul>
+<section id="net-employment-decrease" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="net-employment-decrease">Net employment decrease:</h4>
+<p>In looking at the net job increase, which is equal to the number of jobs created, minus the number of jobs lost.</p>
+<p><span class="math display">\[
+Y = X_{4}-X_{1}-X_{2}-X_{3}
+\]</span></p>
+<p>In this case, we have the number of jobs created, (<span class="math inline">\(X_{4}\)</span>), minus the number of people laid off or fired, (<span class="math inline">\(X_{1}\)</span>), minus the number of people resigning, (<span class="math inline">\(X_{2}\)</span>), minus the number of people retired, (<span class="math inline">\(X_{3}\)</span>). These are all of the people that have left their jobs for whatever reason.</p>
+<p>In this case</p>
+<p><span class="math display">\[
+c_{1}=c_{2}=c_{3}=-1\text{ and }c_{4}=1
+\]</span></p>
+<p>Because variables 5 and 6 are not included in this expression,</p>
+<p><span class="math display">\[
+c_{5}=c_{6}=0
+\]</span></p>
+</section>
+<section id="net-employment-increase" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="net-employment-increase">Net employment increase:</h4>
+<p>In a similar fashion, net employment increase is equal to the number of people hired, (<span class="math inline">\(X_{5}\)</span>), minus the number of people laid off or fired, (<span class="math inline">\(X_{1}\)</span>), minus the number of people resigning, (<span class="math inline">\(X_{2}\)</span>), minus the number of people retired, (<span class="math inline">\(X_{3}\)</span>).</p>
+<p><span class="math display">\[
+Y=X_{5}-X_{1}-X_{2}-X_{3}
+\]</span></p>
+<p>In this case</p>
+<p><span class="math display">\[
+c_{1}=c_{2}=c_{3}=-1,c_{4}=c_{6}=0,\text{ and }c_{5}=1
+\]</span></p>
+</section>
+<section id="net-unemployment-increase" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="net-unemployment-increase">Net unemployment increase:</h4>
+<p>Net unemployment increase is going to be equal to the number of people laid off or fired, (<span class="math inline">\(X_{1}\)</span>), plus the number of people resigning, (<span class="math inline">\(X_{2}\)</span>), plus the number of people entering the workforce, (<span class="math inline">\(X_{6}\)</span>), minus the number of people hired, (<span class="math inline">\(X_{5}\)</span>).</p>
+<p><span class="math display">\[
+Y=X_{1}+X_{2}+X_{6}-X_{5}
+\]</span></p>
+</section>
+<section id="unfilled-jobs" class="level4 unnumbered unlisted">
+<h4 class="unnumbered unlisted anchored" data-anchor-id="unfilled-jobs">Unfilled jobs:</h4>
+<p>Finally, if we wanted to ask about the number of jobs that went unfilled, this is simply equal to the number of jobs created, (<span class="math inline">\(X_{4}\)</span>), minus the number of people hired, (<span class="math inline">\(X_{5}\)</span>).</p>
+<p><span class="math display">\[
+Y=X_{4}-X_{5}
+\]</span></p>
+<p>In other applications, of course, other linear combinations would be of interest.</p>
+</section>
+</div>
+</section>
+<section id="measures-of-central-tendency" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="measures-of-central-tendency"><span class="header-section-number">2.2</span> Measures of Central Tendency</h2>
+<section id="overview-1" class="level3 unnumbered unlisted">
+<h3 class="unnumbered unlisted anchored" data-anchor-id="overview-1">Overview</h3>
+<p>Because linear combinations are functions of random quantities, they also are random vectors, and hence have population means and variances. Moreover, if you are looking at several linear combinations, they will have covariances and correlations as well.</p>
+<p>Therefore we are interested in knowing:</p>
+<ul>
+<li>What is the population mean of <span class="math inline">\(Y\)</span>?</li>
+<li>What is the population variance of <span class="math inline">\(Y\)</span>?</li>
+<li>What is the population covariance between two linear combinations <span class="math inline">\(Y_{1}\)</span> and <span class="math inline">\(Y_{2}\)</span>?</li>
+</ul>
+</section>
+<section id="population-mean" class="level3 unnumbered unlisted">
+<h3 class="unnumbered unlisted anchored" data-anchor-id="population-mean">Population Mean</h3>
+<p>The population mean of a linear combination is equal to the same linear combination of the population means of the component variables. If</p>
+<p><span class="math display">\[
+Y = c_1X_1 + c_2X_2 +\dots c_pX_p =\sum_{j=1}^{p}c_jX_j = \mathbf{c}'\mathbf{X}
+\]</span></p>
+<p>then</p>
+<p><span class="math display">\[
+E(Y) = c_1 \mu_1 +c_2\mu_2 +\dots + c_p\mu_p = \sum_{j=1}^{p}c_j\mu_j = \mathbf{c}'\mathbf{\mu}
+\]</span></p>
+<p>Mathematically you express this as the sum of <span class="math inline">\(j = 1\)</span> to <span class="math inline">\(p\)</span> of <span class="math inline">\(c_{j}\)</span> times the corresponding mean of the <span class="math inline">\(j_{th}\)</span> variable. If the coefficient c’s are collected into a vector <strong>c</strong> and the mean <span class="math inline">\(\mu\)</span> are collected into a mean vector <span class="math inline">\(\mu\)</span> you can express this as <strong>c</strong> transpose times <span class="math inline">\(\mu\)</span>.</p>
+<p>We can estimate the population mean by replacing the population means with the corresponding sample means; that is replace all of the <span class="math inline">\(\mu\)</span>’s with <span class="math inline">\(\bar{x}\)</span>’s so that <span class="math inline">\(\bar{y}\)</span> equals <span class="math inline">\(c_{1}\)</span> times <span class="math inline">\(\bar{x}_{1}\)</span> plus <span class="math inline">\(c_{2}\)</span> times <span class="math inline">\(\bar{x}_{2}\)</span> and so on…</p>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><span class="fs-4"><strong>Population mean of a linear combination</strong></span></p>
+<p><span class="math display">\[
+\bar{y} = c_1\bar{x}_1 + c_2\bar{x}_2 + \dots + c_p\bar{x}_p = \sum_{j=1}^{p}c_j\bar{x}_j = \mathbf{c}'\mathbf{\bar{x}}
+\]</span></p>
+</div>
+</div>
+</div>
+<div id="exm-example-2-3" class="theorem example">
+<p><span class="theorem-title"><strong>Example 2.3 (Women’s Health Survey (Population Mean))</strong></span> The following table shows the sample means for each of the five nutritional components that we computed in the previous lesson.</p>
+<table class="w-auto table-sm mx-auto row-header small caption-top table">
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th style="text-align: center;">Mean</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Calcium</td>
+<td style="text-align: center;">624.0 mg</td>
+</tr>
+<tr class="even">
+<td>Iron</td>
+<td style="text-align: center;">11.1 mg</td>
+</tr>
+<tr class="odd">
+<td>Protein</td>
+<td style="text-align: center;">65.8 g</td>
+</tr>
+<tr class="even">
+<td>Vitamin A</td>
+<td style="text-align: center;">839.6 μg</td>
+</tr>
+<tr class="odd">
+<td>Vitamin C</td>
+<td style="text-align: center;">78.9 mg</td>
+</tr>
+</tbody>
+</table>
+<p>If, as previously, we define <span class="math inline">\(Y\)</span> to be the total intake of vitamins A and C (in mg) or:</p>
+<p><span class="math display">\[
+Y=0.001X_{4}+X_{5}
+\]</span></p>
+<p>Then we can work out the estimated mean intake of the two vitamins as follows:</p>
+<p><span class="math display">\[
+\bar{y}=0.001 \bar{x}_4 +\bar{x}_5 = 0.001 \times 839.6 + 78.9248 = 0.8396 + 78.9248 = 79.7680 \text{mg}
+\]</span></p>
+</div>
+</section>
+</section>
+<section id="population-variance" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="population-variance"><span class="header-section-number">2.3</span> Population Variance</h2>
+<p>Linear combinations not only have a population mean but they also have a population variance. The population variance of a linear combination is expressed as the following double sum of <span class="math inline">\(j=1\)</span> to <span class="math inline">\(p\)</span> and <span class="math inline">\(k=1\)</span> to <span class="math inline">\(p\)</span> over all pairs of variables.</p>
+<p><span class="math display">\[
+var(Y) =\sum_{j=1}^{p}\sum_{k=1}^{p}c_jc_k\sigma_{jk}= c ^ { \prime } \Sigma c
+\]</span></p>
+<p>In each term within the double sum, the product of the paired coefficients <span class="math inline">\(c_{j}\)</span> times <span class="math inline">\(c_{k}\)</span> is multiplied by the covariance between the <span class="math inline">\(j^{th}\)</span> and <span class="math inline">\(k^{th}\)</span> variables. If <span class="math inline">\(\Sigma\)</span> is the variance-covariance matrix of <span class="math inline">\(\mathbf{X}\)</span>, then <span class="math inline">\(Var(Y) = c ^ { \prime } \Sigma c\)</span> .</p>
+<p>Expressions of vectors and matrices of this form are called <strong>quadratic form’s</strong>.</p>
+<p>When using this expression, the covariance between the variables and itself, or <span class="math inline">\(\sigma_{jj}\)</span> is simply equal to the variance of the <span class="math inline">\(j^{th}\)</span> variable, or <span class="math inline">\(\sigma_{j}^{2}\)</span>.</p>
+<p><span class="math display">\[
+\sigma_{jj} = \sigma^2_j
+\]</span></p>
+<p>The variance of the random variable y can be estimated by the sample variances or <span class="math inline">\(s\)</span> squared <span class="math inline">\(Y\)</span>. This is obtained by substituting the sample variances and covariances for the population variances and covariances as shown in the expression below.</p>
+<p><span class="math display">\[
+s^2_Y = \sum_{j=1}^{p}\sum_{k=1}^{p}c_jc_ks_{jk} =c ^ { \prime } S c
+\]</span></p>
+<p>A simplified calculation can be found below. This involves two terms.</p>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><span class="fs-4"><strong>Population variance of linear combinations</strong></span></p>
+<p><span class="math display">\[
+s^2_Y = \sum_{j=1}^{p}c^2_j s^2_j +2\sum_{j&lt;k}c_jc_ks_{jk}
+\]</span></p>
+</div>
+</div>
+</div>
+<p>The first term involves summing over all the variables. Here we take the squared coefficients and multiply them by their respective variances. In the second term, we sum over all unique pairs of variables <span class="math inline">\(j\)</span> less than <span class="math inline">\(k\)</span>. Again take the product of <span class="math inline">\(c_{j}\)</span> times <span class="math inline">\(c_{k}\)</span> times the covariances between variables <span class="math inline">\(j\)</span> and <span class="math inline">\(k\)</span>. Since each unique pair appears twice in the original expression, we must multiply the sum by 2.</p>
+<div id="exm-example-2-4" class="theorem example">
+<p><span class="theorem-title"><strong>Example 2.4 (Women’s Health Survey (Population Variance))</strong></span> Looking at the Women’s Nutrition survey data we obtained the following variance/covariance matrix as shown below from the previous lesson.</p>
+<p><span class="math display">\[S = \left(\begin{array}{`RRRRR`}157829.4 &amp; 940.1 &amp; 6075.8 &amp; 102411.1 &amp; 6701.6 \\ 940.1 &amp; 35.8 &amp; 114.1 &amp; 2383.2 &amp; 137.7 \\ 6075.8 &amp; 114.1 &amp; 934.9 &amp; 7330.1 &amp; 477.2 \\ 102411.1 &amp; 2383.2 &amp; 7330.1 &amp; 2668452.4 &amp; 22063.3 \\ 6701.6 &amp; 137.7 &amp; 477.2 &amp; 22063.3 &amp; 5416.3 \end{array}\right)\]</span></p>
+<p>If we wanted to take a look at the total intake of vitamins A and C (in mg) remember we defined this earlier as:</p>
+<p><span class="math display">\[Y=0.001X_{4}+X_{5}\]</span></p>
+<p>Therefore the sample variance of <span class="math inline">\(Y\)</span> is equal to <span class="math inline">\((0.001)^{2}\)</span> times the variance for <span class="math inline">\(X_{4}\)</span>, plus the variance for <span class="math inline">\(X_{5}\)</span>, plus 2 times 0.001 times the covariance between <span class="math inline">\(X_{4}\)</span> and <span class="math inline">\(X_{5}\)</span>. The next few lines carry out the mathematical calculations using these values.</p>
+<p><span class="math display">\[
+\begin{align}
+s^2_Y &amp;= 0.001^2s^2_4 + s^2_5 + 2 \times 0.001s_{45}\\ &amp;= 0.000001 \times 2668452.4 + 5416.3 + 0.002 \times 22063.3\\ &amp;= 2.7 + 5416.3 + 44.1 \\ &amp;= 5463.1
+\end{align}
+\]</span></p>
+</div>
+</section>
+<section id="population-covariance" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="population-covariance"><span class="header-section-number">2.4</span> Population Covariance</h2>
+<p>Sometimes we are interested in more than one linear combination or variable. In this case, we may be interested in the association between those two linear combinations. More specifically, we can consider the covariance between two linear combinations of the data.</p>
+<p>Consider the pair of linear combinations:</p>
+<p><span class="math display">\[
+Y_1 = \sum_{j=1}^{p}c_jX_j \quad \text{and} \quad Y_2 = \sum_{k=1}^{p}d_kX_k
+\]</span></p>
+<p>Here <span class="math inline">\(Y_{1}\)</span> and <span class="math inline">\(Y_{2}\)</span> are two distinct linear combinations. Both variables <span class="math inline">\(Y_{1}\)</span> and <span class="math inline">\(Y_{2}\)</span> are going to be random and so they will be potentially correlated. We can assess the association between these variables using the covariance as the two vectors c and d are distinct.</p>
+<p>The population covariance between <span class="math inline">\(Y_{1}\)</span> and <span class="math inline">\(Y_{2}\)</span> is obtained by summing over all pairs of variables. We then multiply respective coefficients from the two linear combinations as <span class="math inline">\(d_{j}\)</span> times <span class="math inline">\(d_{k}\)</span> times the covariances between j and k.</p>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><span class="fs-4"><strong>Population Covariance between two linear combinations</strong></span></p>
+<p><span class="math display">\[
+cov(Y_1, Y_2) = \sum_{j=1}^{p}\sum_{k=1}^{p}c_jd_k\sigma_{jk}
+\]</span></p>
+</div>
+</div>
+</div>
+<p>We can then estimate the population covariance by using the sample covariance. This is obtained by simply substituting the sample covariances between the pairs of variables for the population covariances between the pairs of variables.</p>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><span class="fs-4"><strong>Sample Covariance between two linear combinations</strong></span></p>
+<p><span class="math display">\[
+s_{Y_1,Y_2}= \sum_{j=1}^{p}\sum_{k=1}^{p}c_jd_ks_{jk}
+\]</span></p>
+</div>
+</div>
+</div>
+<section id="correlation" class="level3 unnumbered unlisted">
+<h3 class="unnumbered unlisted anchored" data-anchor-id="correlation">Correlation</h3>
+<p>The population correlation between variables <span class="math inline">\(Y_{1}\)</span> and <span class="math inline">\(Y_{2}\)</span> can be obtained by using the usual formula of the covariance between <span class="math inline">\(Y_{1}\)</span> and <span class="math inline">\(Y_{2}\)</span> divided by the standard deviation for the two variables as shown below.</p>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><span class="fs-4"><strong>Population Correlation between two linear combinations</strong></span></p>
+<p><span class="math display">\[
+\rho_{Y_1,Y_2} = \dfrac{\sigma_{Y_1,Y_2}}{\sigma_{Y_1}\sigma_{Y_2}}
+\]</span></p>
+</div>
+</div>
+</div>
+<p>This population correlation is estimated by the sample correlation where we simply substitute the sample quantities for the population quantities below</p>
+<div class="callout callout-style-simple callout-note no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><span class="fs-4"><strong>Sample Correlation between two linear combinations</strong></span></p>
+<p><span class="math display">\[
+r_{Y_1,Y_2} = \dfrac{s_{Y_1, Y_2}}{s_{Y_1}s_{Y_2}}
+\]</span></p>
+</div>
+</div>
+</div>
+<div id="exm-example-2-5" class="theorem example">
+<p><span class="theorem-title"><strong>Example 2.5 (Women’s Health Survey (Pop. Covariance and Correlation))</strong></span> Here is the matrix of the data as was shown previously.</p>
+<p><span class="math display">\[
+S = \left(\begin{array}{`RRRRR`}157829.4 &amp; 940.1 &amp; 6075.8 &amp; 102411.1 &amp; 6701.6 \\ 940.1 &amp; 35.8 &amp; 114.1 &amp; 2383.2 &amp; 137.7 \\ 6075.8 &amp; 114.1 &amp; 934.9 &amp; 7330.1 &amp; 477.2 \\ 102411.1 &amp; 2383.2 &amp; 7330.1 &amp; 2668452.4 &amp; 22063.3 \\ 6701.6 &amp; 137.7 &amp; 477.2 &amp; 22063.3 &amp; 5416.3 \end{array}\right)
+\]</span></p>
+<p>We may wish to define the total intake of vitamins A and C in mg as before.</p>
+<p><span class="math display">\[
+Y_{1}=0.001X_{4}+X_{5}
+\]</span></p>
+<p>and we may also want to take a look at the total intake of calcium and iron:</p>
+<p><span class="math display">\[
+Y_{2}=X_{1}+X_{2}
+\]</span></p>
+<p>Then the sample covariance between <span class="math inline">\(Y_{1}\)</span> and <span class="math inline">\(Y_{2}\)</span> can then be obtained by looking at the covariances between each pair of the component variables time the respective coefficients. So in this case we are looking at pairing <span class="math inline">\(X_{1}\)</span> and <span class="math inline">\(X_{4}\)</span>, <span class="math inline">\(X_{1}\)</span> and <span class="math inline">\(X_{5}\)</span>, <span class="math inline">\(X_{2}\)</span> and <span class="math inline">\(X_{4}\)</span>, and <span class="math inline">\(X_{2}\)</span> and <span class="math inline">\(X_{5}\)</span>. You will notice that in the expression below <span class="math inline">\(s_{41}\)</span>, <span class="math inline">\(s_{42}\)</span>, <span class="math inline">\(s_{51}\)</span> and <span class="math inline">\(s_{52}\)</span> all appear. The variables are taken from the matrix above and substituted into the expression and the math is carried out below.</p>
+<p><span class="math display">\[
+\begin{align}
+s_{Y_1, Y_2} &amp; = 0.001s_{41} + 0.001s_{42} + s_{51}+s_{52}\\&amp; = 0.001 \times 102411.1 + 0.001 \times 2383.2 + 6701.6 +137.7\\ &amp; = 102.4 + 2.4 + 6701.6 + 137.7\\ &amp; = 6944.1
+\end{align}
+\]</span></p>
+<p>You should be able at this point to be able to confirm that the sample variance of <span class="math inline">\(Y_{2}\)</span> is 159,745.4 as shown below:</p>
+<p><span class="math display">\[
+\begin{align}
+s^2_{Y_2} &amp; = s_{11}+s_{22}+2s_{12}\\ &amp; = 157829.4 + 35.8 + 2 \times 940.1\\ &amp; = 157829.4 + 35.8 + 1880.2 \\ &amp; = 159745.4
+\end{align}
+\]</span></p>
+<p>And, if we care to obtain the sample correlation between <span class="math inline">\(Y_{1}\)</span> and <span class="math inline">\(Y_{2}\)</span>, we take the sample covariance that we just obtained and divide it by the square root of the product of the two component variances, 5463.1, for <span class="math inline">\(Y_{1}\)</span>, which we obtained earlier, and 159745.4, which we just obtained above. Following this math through, we end up with a correlation of about 0.235 as shown below.</p>
+<p><span class="math display">\[
+\begin{align}
+r_{Y_1,Y_2} &amp;= \dfrac{s_{Y_1, Y_2}}{s_{Y_1}s_{Y_2}}\\ &amp;= \dfrac{6944.1}{\sqrt{5463.1 \times 159745.4}}\\&amp;=0.235
+\end{align}
+\]</span></p>
+</div>
+</section>
+</section>
+<section id="summary" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="summary"><span class="header-section-number">2.5</span> Summary</h2>
+<p>In this lesson we learned about:</p>
+<ul>
+<li>The definition of a linear combination of random variables;</li>
+<li>Expressions of the population mean and variance of a linear combination and the covariance between two linear combinations;</li>
+<li>How to compute the sample mean of a linear combination from the sample means of the component variables;</li>
+<li>How to compute the sample variance of a linear combination from the sample variances and covariances of the component variables;</li>
+<li>How to compute the sample covariance and correlation between two linear combinations from the sample covariances of the component variables.</li>
+</ul>
+
+
+<!-- -->
+
+</section>
+
+</main> <!-- /main -->
+<!--<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const toc = document.getElementById('TOC');
+    const navbarCollapse = document.getElementById('navbarCollapse');
+    const menuButton = document.querySelector('.navbar-toggler');
+
+    // Function to move TOC to navbar on small screens
+    function handleTOCDisplay() {
+        if (window.innerWidth < 768) {
+            if (!navbarCollapse.contains(toc)) {
+                navbarCollapse.appendChild(toc); // Move TOC into the navbar
+            }
+        } else {
+            if (toc.parentNode !== document.getElementById('quarto-margin-sidebar')) {
+                document.getElementById('quarto-margin-sidebar').appendChild(toc); // Move TOC back to original location
+            }
+        }
+    }
+
+    // Initial check on page load
+    handleTOCDisplay();
+
+    // Check when resizing the window
+    window.addEventListener('resize', handleTOCDisplay);
+
+    // Toggle TOC visibility when navbar is expanded on small screens
+    menuButton.addEventListener('click', function() {
+        if (window.innerWidth < 768) {
+            toc.classList.toggle('toc-active'); // Toggle visibility of the TOC in the navbar
+        }
+    });
+});
+</script>-->
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const toc = document.getElementById('TOC'); // TOC element
+    const activeLesson = document.querySelector('.sidebar-item .sidebar-link.active'); // Active lesson link
+    const originalTocParent = toc.parentElement; // Store original TOC location
+
+    // Create a container for the TOC in the sidebar
+    const nestedTocContainer = document.createElement('ul');
+    nestedTocContainer.className = 'sidebar-toc-nested list-unstyled';
+
+    // Function to move the TOC into the sidebar
+    function moveTocToSidebar() {
+        if (!toc || !activeLesson) return;
+        while (toc.firstChild) {
+            nestedTocContainer.appendChild(toc.firstChild);
+        }
+        const parentItem = activeLesson.closest('.sidebar-item');
+        parentItem.appendChild(nestedTocContainer);
+        toc.style.display = 'none'; // Hide the original TOC container
+    }
+
+    // Function to restore the TOC to its original location
+    function restoreTocToOriginalLocation() {
+        if (nestedTocContainer.parentNode) {
+            while (nestedTocContainer.firstChild) {
+                toc.appendChild(nestedTocContainer.firstChild);
+            }
+            nestedTocContainer.remove(); // Remove the container
+            toc.style.display = ''; // Show the original TOC container
+        }
+    }
+
+    // Function to handle screen width changes
+    function handleScreenResize() {
+        if (window.innerWidth < 768) {
+            moveTocToSidebar();
+        } else {
+            restoreTocToOriginalLocation();
+        }
+    }
+
+    // Initial check and event listener for resize
+    handleScreenResize();
+    window.addEventListener('resize', handleScreenResize);
+});
+
+</script>
+<!---function to make the first column th instead of td when using markdown tables..just add .row-header as your class below the table!---->
+
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const tables = document.querySelectorAll('table.row-header');
+        
+        tables.forEach(table => {
+            const rows = table.querySelectorAll('tr');
+            
+            rows.forEach(row => {
+                const firstCell = row.cells[0];
+                if (firstCell && firstCell.tagName === 'TD') {
+                    const th = document.createElement('th');
+                    th.innerHTML = firstCell.innerHTML;
+                    th.setAttribute('scope', 'row');
+                    // Copy the inline style from the original td
+                    if (firstCell.style.textAlign) {
+                        th.style.textAlign = firstCell.style.textAlign;
+                    }
+                    row.replaceChild(th, firstCell);
+                }
+            });
+        });
+    });
+  
+  // removes automatic col groups from table with more than 10 columns which causes the table to go full width and ignores the w-auto class
+  document.querySelectorAll('table.w-auto colgroup').forEach(colgroup => colgroup.remove());
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll('div[id^="exm-"]');
+
+    elements.forEach((element) => {
+      const theoremTitle = element.querySelector('.theorem-title');
+      // Use the Quarto-generated id (e.g. "exm-muscleexample") directly
+      const anchorId = element.id;
+
+      if (theoremTitle && anchorId) {
+        const anchor = document.createElement('a');
+        anchor.href = `#${anchorId}`;
+        anchor.className = 'anchor';
+        anchor.setAttribute('aria-label', `Link to ${theoremTitle.textContent.trim()}`);
+        anchor.innerHTML = '<i class="bi bi-link-45deg" aria-hidden="true"></i>';
+        theoremTitle.appendChild(anchor);
+        // No need to reassign element.id — it's already correct
+      }
+    });
+  });
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".theorem-title").forEach(t => {
+    t.setAttribute("role", "heading");
+
+    let level = 4; // fallback
+    const section = t.closest("section");
+
+    if (section) {
+      const heading = section.querySelector(":scope > h1, :scope > h2, :scope > h3, :scope > h4, :scope > h5, :scope > h6");
+      if (heading) {
+        level = Math.min(Number(heading.tagName[1]) + 1, 6);
+      }
+    }
+
+    t.setAttribute("aria-level", String(level));
+  });
+});
+</script>
+<style>
+  #mas-popup,
+  #mas-popup * {
+    box-sizing: border-box;
+  }
+
+  #mas-popup {
+    --mas-navy: #001e44;
+    --mas-blue: #1e407c;
+    --mas-sky: #96bee6;
+
+    position: fixed;
+    right: max(1.25rem, env(safe-area-inset-right));
+    bottom: max(1.25rem, env(safe-area-inset-bottom));
+    z-index: 1055;
+
+    width: min(25rem, calc(100vw - 2rem));
+    padding: 1.45rem 1.5rem 1.5rem 1.8rem;
+    overflow: hidden;
+
+    border: 1px solid rgba(0, 30, 68, 0.14);
+    border-radius: 0.75rem;
+    background: #ffffff;
+    color: #16243a;
+
+    box-shadow:
+      0 1.25rem 3.5rem rgba(0, 30, 68, 0.2),
+      0 0.2rem 0.7rem rgba(0, 30, 68, 0.08);
+
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+
+    animation: mas-popup-in 320ms cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+
+  #mas-popup[hidden] {
+    display: none;
+  }
+
+  /* Blue accent along the left side */
+  #mas-popup::before {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: 0.35rem;
+    background: linear-gradient(
+      180deg,
+      var(--mas-sky),
+      var(--mas-blue)
+    );
+    content: "";
+  }
+
+  #mas-popup-kicker {
+    margin: 0 3rem 0.55rem 0;
+    color: var(--mas-blue);
+    font-size: 0.69rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+
+  #mas-popup h2#mas-popup-title {
+    margin: 1rem 2.5rem 0.65rem 0 !important; 
+    max-width: 19rem;
+    margin: 0 2.5rem 0.65rem 0 !important;
+    color: var(--mas-navy);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.55rem;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    line-height: 1.18 !important;
+  }
+
+  #mas-popup-description {
+    max-width: 21rem;
+    margin: 0 0 1.15rem;
+    color: #46586e;
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  #mas-popup-cta {
+    display: inline-flex;
+    min-height: 2.75rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+
+    padding: 0.7rem 1rem;
+    border: 2px solid var(--mas-navy);
+    border-radius: 0.35rem;
+    background: var(--mas-navy);
+    color: #ffffff;
+
+    font-size: 0.88rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition:
+      background-color 160ms ease,
+      border-color 160ms ease,
+      transform 160ms ease;
+  }
+
+  #mas-popup-cta:hover,
+  #mas-popup-cta:focus-visible {
+    border-color: var(--mas-blue);
+    background: var(--mas-blue);
+    color: #ffffff;
+    transform: translateY(-1px);
+  }
+
+  #mas-popup-cta-arrow {
+    font-size: 1.1rem;
+    transition: transform 160ms ease;
+  }
+
+  #mas-popup-cta:hover #mas-popup-cta-arrow,
+  #mas-popup-cta:focus-visible #mas-popup-cta-arrow {
+    transform: translateX(0.18rem);
+  }
+
+  #mas-popup-close {
+    position: absolute;
+    top: 0.65rem;
+    right: 0.65rem;
+
+    display: grid;
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    place-items: center;
+
+    border: 0;
+    border-radius: 50%;
+    background: transparent;
+    color: #485b72;
+
+    font: inherit;
+    font-size: 1.55rem;
+    line-height: 1;
+
+    cursor: pointer;
+  }
+
+  #mas-popup-close:hover,
+  #mas-popup-close:focus-visible {
+    background: #edf2f7;
+    color: var(--mas-navy);
+  }
+
+  #mas-popup :focus-visible {
+    outline: 3px solid var(--mas-sky);
+    outline-offset: 3px;
+  }
+
+  @keyframes mas-popup-in {
+    from {
+      opacity: 0;
+      transform: translateY(1rem) scale(0.98);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @media (max-width: 520px) {
+    #mas-popup {
+      right: max(0.75rem, env(safe-area-inset-right));
+      bottom: max(0.75rem, env(safe-area-inset-bottom));
+      width: calc(100vw - 1.5rem);
+      padding: 1.25rem 1.25rem 1.3rem 1.55rem;
+    }
+
+    #mas-popup-title {
+      max-width: 17rem;
+      font-size: 1.4rem;
+    }
+
+    #mas-popup-cta {
+      width: 100%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #mas-popup {
+      animation: none;
+    }
+
+    #mas-popup-cta,
+    #mas-popup-cta-arrow {
+      transition: none;
+    }
+  }
+</style>
+
+<aside id="mas-popup" role="region" aria-labelledby="mas-popup-title" aria-describedby="mas-popup-description" aria-live="polite" hidden="">
+  <button id="mas-popup-close" type="button" aria-label="Close this message">
+    <span aria-hidden="true">×</span>
+  </button>
+
+  <p id="mas-popup-kicker">
+    Online master’s program
+  </p>
+
+  <h2 id="mas-popup-title">
+    Take your statistics skills further
+  </h2>
+
+  <p id="mas-popup-description">
+    Explore Penn State’s online Master of Applied Statistics program.
+  </p>
+
+  <a id="mas-popup-cta" href="https://science.psu.edu/stat/graduate-programs/master-of-applied-statistics">
+    Explore the program
+    <span id="mas-popup-cta-arrow" aria-hidden="true">→</span>
+  </a>
+</aside>
+
+<script>
+  (() => {
+    const storageKey = "stat501-mas-popup-dismissed-v2";
+
+    // Show the popup after 15 seconds.
+    const showDelay = 15000;
+
+    // After closing it, hide it for 30 days.
+    const dismissalDays = 30;
+
+    const popup = document.getElementById("mas-popup");
+    const closeButton = document.getElementById("mas-popup-close");
+    const cta = document.getElementById("mas-popup-cta");
+
+    if (!popup || !closeButton || !cta) return;
+
+    let dismissalActive = false;
+
+    try {
+      const dismissedUntil = Number(
+        localStorage.getItem(storageKey)
+      );
+
+      dismissalActive =
+        Number.isFinite(dismissedUntil) &&
+        Date.now() < dismissedUntil;
+    } catch (error) {
+      // The popup still works if browser storage is unavailable.
+    }
+
+    if (dismissalActive) return;
+
+    const rememberDismissal = () => {
+      try {
+        const millisecondsPerDay = 24 * 60 * 60 * 1000;
+        const dismissedUntil =
+          Date.now() + dismissalDays * millisecondsPerDay;
+
+        localStorage.setItem(
+          storageKey,
+          String(dismissedUntil)
+        );
+      } catch (error) {
+        // Closing still works if browser storage is unavailable.
+      }
+    };
+
+    const showTimer = window.setTimeout(() => {
+      popup.hidden = false;
+    }, showDelay);
+
+    const dismissPopup = () => {
+      window.clearTimeout(showTimer);
+      popup.hidden = true;
+      rememberDismissal();
+    };
+
+    closeButton.addEventListener("click", dismissPopup);
+
+    // Prevent the popup from appearing again after someone uses the CTA.
+    cta.addEventListener("click", rememberDismissal);
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !popup.hidden) {
+        dismissPopup();
+      }
+    });
+  })();
+</script>
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+    const viewSource = window.document.getElementById('quarto-view-source') ||
+                       window.document.getElementById('quarto-code-tools-source');
+    if (viewSource) {
+      const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
+      viewSource.addEventListener("click", function(e) {
+        if (sourceUrl) {
+          // rstudio viewer pane
+          if (/\bcapabilities=\b/.test(window.location)) {
+            window.open(sourceUrl);
+          } else {
+            window.location.href = sourceUrl;
+          }
+        } else {
+          const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
+          modal.show();
+        }
+        return false;
+      });
+    }
+    function toggleCodeHandler(show) {
+      return function(e) {
+        const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
+        for (let i=0; i<detailsSrc.length; i++) {
+          const details = detailsSrc[i].parentElement;
+          if (show) {
+            details.open = true;
+          } else {
+            details.removeAttribute("open");
+          }
+        }
+        const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
+        const fromCls = show ? "hidden" : "unhidden";
+        const toCls = show ? "unhidden" : "hidden";
+        for (let i=0; i<cellCodeDivs.length; i++) {
+          const codeDiv = cellCodeDivs[i];
+          if (codeDiv.classList.contains(fromCls)) {
+            codeDiv.classList.remove(fromCls);
+            codeDiv.classList.add(toCls);
+          } 
+        }
+        return false;
+      }
+    }
+    const hideAllCode = window.document.getElementById("quarto-hide-all-code");
+    if (hideAllCode) {
+      hideAllCode.addEventListener("click", toggleCodeHandler(false));
+    }
+    const showAllCode = window.document.getElementById("quarto-show-all-code");
+    if (showAllCode) {
+      showAllCode.addEventListener("click", toggleCodeHandler(true));
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./Lesson01.html" class="pagination-link" aria-label="Measures of Central Tendency, Dispersion and Association">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Measures of Central Tendency, Dispersion and Association</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./Lesson03.html" class="pagination-link" aria-label="Graphical Display of Multivariate Data">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Graphical Display of Multivariate Data</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
+<div class="codeblock-with-label markdown">
+<style>.codeblock-with-label pre.lang-label-1::before { content: "Markdown"; }</style>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown lang-label-1 code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> [Sample mean, Sample variance, Linear combination, Random Variables, Central Tendancy, Population Variance, Population Covariance] # Add your categories here</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">image:</span><span class="co"> /assets/L2card.png # change the image path </span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu"># Linear Combinations of Random Variables</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overview {.unnumbered .unlisted}</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>This lesson is concerned with linear combinations or if you would like **linear transformations** of the variables. Mathematically linear combinations can be expressed as shown in the expression below:</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Y = c_1X_1 +c_2X_2 +\dots + c_pX_p = \sum_{j=1}^{p}c_jX_j = \mathbf{c}'\mathbf{X}</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>Here what we have is a set of coefficients $c_{1}$ through $c_{p}$ that is multiplied bycorresponding variables $X_{1}$ through $X_{p}$. So, in the first term, we have $c_{1}$ times $X_{1}$ which is added to $c_{2}$ times $X_{2}$ and so on up to the variable $X_{p}$. Mathematically this is expressed as the sum of $j = 1, ... , p$ of the terms $c_{j}$ times $X_{j}$. The random variables $X_{1}$ through $X_{p}$ are collected into a column vector <span class="in">`X`</span> and the coefficient $c_{1}$ to $c_{p}$ are collected into a column vector **c**. Hence, the linear combination can be expressed as $\mathbf{c}'\mathbf{X}$.</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>The selection of the coefficients $c_{1}$ through $c_{p}$ is very much dependent on the application of interest and what kinds of scientific questions we would like to address.</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>Later on in this course, when we learn about multivariate data reduction techniques, the interpretation of linear combinations will be of great importance.</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>::: {.objectiveblock}  </span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">### &lt;i class="bi bi-check2-circle"&gt;&lt;/i&gt;Objectives {.unnumbered  .unlisted}  </span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Upon completion of this lesson, you should be able to:  </span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Interpret the meaning of a specified linear combination;</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Compute the sample mean and variance of a linear combination from the sample means, variances, and covariances of the individual variables.</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="fu">## Examples of Linear Combinations</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>::: {#exm-example-2-1}</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Women’s Health Survey (Linear Combinations)</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>The Women's Health Survey data contains observations for the following variables:</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>$X_{1}$ calcium (mg)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>$X_{2}$ iron (mg)</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>$X_{3}$ protein(g)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>$X_{4}$ vitamin A(μg)</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>$X_{5}$ vitamin C(mg)</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>In addition to addressing questions about the individual nutritional component, we may wish to address questions about certain combinations of these components. For instance, we might want to ask what is the total intake of vitamins A and C (in mg). We note that in this case, Vitamin A is measured in micrograms while Vitamin C is measured in milligrams. There are a thousand micrograms per milligram so the total intake of the two vitamins,  $Y$, can be expressed as the following:</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>Y = 0.001 X _ { 4 } + X _ { 5 }</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>In this case, our coefficients $c_{1}$ , $c_{2}$ and $c_{3}$ are all equal to 0 since the variables $X_{1}$, $X_{2}$ and $X_{3}$ do not appear in this expression. In addition, $c_{4}$ is equal to 0.001 since each microgram of vitamin A is equal to 0.001 milligrams of vitamin A. In summary, we have</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>c_{1}=c_{2}=c_{3}=0,c_{4}=0.001,c_{5}=1</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>::: {#exm-example-2-2}</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Monthly Employment Data</span></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>Another example where we might be interested in linear combinations is in the Monthly Employment Data. Here we have observations on 6 variables:</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>$X_{1}$ Number people laid off or fired</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>$X_{2}$ Number of people resigning</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>$X_{3}$ Number of people retiring</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>$X_{4}$ Number of jobs created</span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>$X_{5}$ Number of people hired</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>$X_{6}$ Number of people entering the workforce</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Net employment decrease: {.unnumbered .unlisted}</span></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>In looking at the net job increase, which is equal to the number of jobs created, minus the number of jobs lost.</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a>Y = X_{4}-X_{1}-X_{2}-X_{3}</span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>In this case, we have the number of jobs created, ($X_{4}$), minus the number of people laid off or fired, ($X_{1}$), minus the number of people resigning, ($X_{2}$), minus the number of people retired, ($X_{3}$). These are all of the people that have left their jobs for whatever reason.</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>In this case</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a>c_{1}=c_{2}=c_{3}=-1\text{ and }c_{4}=1</span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>Because variables 5 and 6 are not included in this expression,</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a>c_{5}=c_{6}=0</span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Net employment increase: {.unnumbered .unlisted}</span></span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>In a similar fashion, net employment increase is equal to the number of people hired, ($X_{5}$), minus the number of people laid off or fired, ($X_{1}$), minus the number of people resigning, ($X_{2}$), minus the number of people retired, ($X_{3}$).</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a>Y=X_{5}-X_{1}-X_{2}-X_{3}</span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>In this case</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a>c_{1}=c_{2}=c_{3}=-1,c_{4}=c_{6}=0,\text{ and }c_{5}=1</span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Net unemployment increase: {.unnumbered .unlisted}</span></span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a>Net unemployment increase is going to be equal to the number of people laid off or fired, ($X_{1}$), plus the number of people resigning, ($X_{2}$), plus the number of people entering the workforce, ($X_{6}$), minus the number of people hired, ($X_{5}$).</span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a>Y=X_{1}+X_{2}+X_{6}-X_{5}</span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-112"><a href="#cb1-112" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Unfilled jobs: {.unnumbered .unlisted}</span></span>
+<span id="cb1-113"><a href="#cb1-113" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-114"><a href="#cb1-114" aria-hidden="true" tabindex="-1"></a>Finally, if we wanted to ask about the number of jobs that went unfilled, this is simply equal to the number of jobs created, ($X_{4}$), minus the number of people hired, ($X_{5}$).</span>
+<span id="cb1-115"><a href="#cb1-115" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>Y=X_{4}-X_{5}</span>
+<span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>In other applications, of course, other linear combinations would be of interest.</span>
+<span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-123"><a href="#cb1-123" aria-hidden="true" tabindex="-1"></a><span class="fu">## Measures of Central Tendency</span></span>
+<span id="cb1-124"><a href="#cb1-124" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-125"><a href="#cb1-125" aria-hidden="true" tabindex="-1"></a><span class="fu">### Overview {.unnumbered .unlisted}</span></span>
+<span id="cb1-126"><a href="#cb1-126" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-127"><a href="#cb1-127" aria-hidden="true" tabindex="-1"></a>Because linear combinations are functions of random quantities, they also are random vectors, and hence have population means and variances. Moreover, if you are looking at several linear combinations, they will have covariances and correlations as well.</span>
+<span id="cb1-128"><a href="#cb1-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-129"><a href="#cb1-129" aria-hidden="true" tabindex="-1"></a>Therefore we are interested in knowing:</span>
+<span id="cb1-130"><a href="#cb1-130" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-131"><a href="#cb1-131" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>What is the population mean of $Y$?</span>
+<span id="cb1-132"><a href="#cb1-132" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>What is the population variance of $Y$?</span>
+<span id="cb1-133"><a href="#cb1-133" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>What is the population covariance between two linear combinations $Y_{1}$ and $Y_{2}$?</span>
+<span id="cb1-134"><a href="#cb1-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-135"><a href="#cb1-135" aria-hidden="true" tabindex="-1"></a><span class="fu">### Population Mean {.unnumbered .unlisted}</span></span>
+<span id="cb1-136"><a href="#cb1-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-137"><a href="#cb1-137" aria-hidden="true" tabindex="-1"></a>The population mean of a linear combination is equal to the same linear combination of the population means of the component variables. If</span>
+<span id="cb1-138"><a href="#cb1-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-139"><a href="#cb1-139" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-140"><a href="#cb1-140" aria-hidden="true" tabindex="-1"></a>Y = c_1X_1 + c_2X_2 +\dots c_pX_p =\sum_{j=1}^{p}c_jX_j = \mathbf{c}'\mathbf{X}</span>
+<span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>then</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>E(Y) = c_1 \mu_1 +c_2\mu_2 +\dots + c_p\mu_p = \sum_{j=1}^{p}c_j\mu_j = \mathbf{c}'\mathbf{\mu}</span>
+<span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>Mathematically you express this as the sum of $j = 1$ to $p$ of $c_{j}$ times the corresponding mean of the $j_{th}$ variable. If the coefficient c's are collected into a vector **c** and the mean $\mu$ are collected into a mean vector $\mu$ you can express this as **c** transpose times $\mu$.</span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>We can estimate the population mean by replacing the population means with the corresponding sample means; that is replace all of the $\mu$'s with $\bar{x}$'s so that $\bar{y}$ equals $c_{1}$ times $\bar{x}_{1}$ plus $c_{2}$ times $\bar{x}_{2}$ and so on...</span>
+<span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="minimal"}</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**Population mean of a linear combination**</span><span class="co">]</span>{.fs-4}</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>\bar{y} = c_1\bar{x}_1 + c_2\bar{x}_2 + \dots + c_p\bar{x}_p = \sum_{j=1}^{p}c_j\bar{x}_j = \mathbf{c}'\mathbf{\bar{x}}</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>::: {#exm-example-2-3}</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Women’s Health Survey (Population Mean)</span></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>The following table shows the sample means for each of the five nutritional components that we computed in the previous lesson.</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Variable <span class="pp">|</span> Mean <span class="pp">|</span></span>
+<span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a><span class="pp">| ---</span> <span class="pp">|:---:</span> <span class="pp">|</span></span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Calcium <span class="pp">|</span> 624.0 mg <span class="pp">|</span></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Iron <span class="pp">|</span> 11.1 mg <span class="pp">|</span></span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Protein <span class="pp">|</span> 65.8 g <span class="pp">|</span></span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Vitamin A <span class="pp">|</span> 839.6 μg <span class="pp">|</span></span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a><span class="pp">|</span> Vitamin C <span class="pp">|</span> 78.9 mg <span class="pp">|</span></span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>: {.w-auto .table-sm .mx-auto .row-header}</span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>If, as previously, we define  $Y$ to be the total intake of vitamins A and C (in mg) or:</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>Y=0.001X_{4}+X_{5}</span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>Then we can work out the estimated mean intake of the two vitamins as follows:</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>\bar{y}=0.001 \bar{x}_4 +\bar{x}_5 = 0.001 \times 839.6 + 78.9248 = 0.8396 + 78.9248 = 79.7680 \text{mg}</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a><span class="fu">## Population Variance</span></span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>Linear combinations not only have a population mean but they also have a population variance. The population variance of a linear combination is expressed as the following double sum of  $j=1$ to  $p$ and  $k=1$ to  $p$ over all pairs of variables.</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>var(Y) =\sum_{j=1}^{p}\sum_{k=1}^{p}c_jc_k\sigma_{jk}= c ^ { \prime } \Sigma c</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>In each term within the double sum, the product of the paired coefficients $c_{j}$ times $c_{k}$ is multiplied by the covariance between the $j^{th}$ and $k^{th}$ variables. If $\Sigma$ is the variance-covariance matrix of $\mathbf{X}$, then $Var(Y) = c ^ { \prime } \Sigma c$ .</span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>Expressions of vectors and matrices of this form are called **quadratic form's**.</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>When using this expression, the covariance between the variables and itself, or $\sigma_{jj}$ is simply equal to the variance of the $j^{th}$ variable, or $\sigma_{j}^{2}$.</span>
+<span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>\sigma_{jj} = \sigma^2_j</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>The variance of the random variable y can be estimated by the sample variances or  $s$ squared  $Y$. This is obtained by substituting the sample variances and covariances for the population variances and covariances as shown in the expression below.</span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>s^2_Y = \sum_{j=1}^{p}\sum_{k=1}^{p}c_jc_ks_{jk} =c ^ { \prime } S c</span>
+<span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>A simplified calculation can be found below. This involves two terms.</span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="minimal"}</span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**Population variance of linear combinations**</span><span class="co">]</span>{.fs-4}</span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>s^2_Y = \sum_{j=1}^{p}c^2_j s^2_j +2\sum_{j&lt;k}c_jc_ks_{jk}</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>The first term involves summing over all the variables. Here we take the squared coefficients and multiply them by their respective variances. In the second term, we sum over all unique pairs of variables  $j$ less than  $k$. Again take the product of $c_{j}$ times $c_{k}$ times the covariances between variables  $j$ and  $k$. Since each unique pair appears twice in the original expression, we must multiply the sum by 2.</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>::: {#exm-example-2-4}</span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Women’s Health Survey (Population Variance)</span></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>Looking at the Women's Nutrition survey data we obtained the following variance/covariance matrix as shown below from the previous lesson.</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>$$S = \left(\begin{array}{<span class="in">`RRRRR`</span>}157829.4 &amp; 940.1 &amp; 6075.8 &amp; 102411.1 &amp; 6701.6 <span class="sc">\\</span> 940.1 &amp; 35.8 &amp; 114.1 &amp; 2383.2 &amp; 137.7 <span class="sc">\\</span> 6075.8 &amp; 114.1 &amp; 934.9 &amp; 7330.1 &amp; 477.2 <span class="sc">\\</span> 102411.1 &amp; 2383.2 &amp; 7330.1 &amp; 2668452.4 &amp; 22063.3 <span class="sc">\\</span> 6701.6 &amp; 137.7 &amp; 477.2 &amp; 22063.3 &amp; 5416.3 \end{array}\right)$$</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>If we wanted to take a look at the total intake of vitamins A and C (in mg) remember we defined this earlier as:</span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>$$Y=0.001X_{4}+X_{5}$$</span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>Therefore the sample variance of $Y$ is equal to $(0.001)^{2}$ times the variance for $X_{4}$, plus the variance for $X_{5}$, plus 2 times 0.001 times the covariance between $X_{4}$ and $X_{5}$. The next few lines carry out the mathematical calculations using these values.</span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>\begin{align} </span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>s^2_Y &amp;= 0.001^2s^2_4 + s^2_5 + 2 \times 0.001s_{45}<span class="sc">\\</span> &amp;= 0.000001 \times 2668452.4 + 5416.3 + 0.002 \times 22063.3<span class="sc">\\</span> &amp;= 2.7 + 5416.3 + 44.1 <span class="sc">\\</span> &amp;= 5463.1 </span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a><span class="fu">## Population Covariance</span></span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>Sometimes we are interested in more than one linear combination or variable. In this case, we may be interested in the association between those two linear combinations. More specifically, we can consider the covariance between two linear combinations of the data.</span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>Consider the pair of linear combinations:</span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>Y_1 = \sum_{j=1}^{p}c_jX_j \quad \text{and} \quad Y_2 = \sum_{k=1}^{p}d_kX_k</span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>Here $Y_{1}$ and $Y_{2}$ are two distinct linear combinations. Both variables $Y_{1}$ and $Y_{2}$ are going to be random and so they will be potentially correlated. We can assess the association between these variables using the covariance as the two vectors c and d are distinct.</span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>The population covariance between $Y_{1}$ and $Y_{2}$ is obtained by summing over all pairs of variables. We then multiply respective coefficients from the two linear combinations as $d_{j}$ times $d_{k}$ times the covariances between j and k.</span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="minimal"}</span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**Population Covariance between two linear combinations**</span><span class="co">]</span>{.fs-4}</span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>cov(Y_1, Y_2) = \sum_{j=1}^{p}\sum_{k=1}^{p}c_jd_k\sigma_{jk}</span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>We can then estimate the population covariance by using the sample covariance. This is obtained by simply substituting the sample covariances between the pairs of variables for the population covariances between the pairs of variables.</span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="minimal"}</span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**Sample Covariance between two linear combinations**</span><span class="co">]</span>{.fs-4}</span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>s_{Y_1,Y_2}= \sum_{j=1}^{p}\sum_{k=1}^{p}c_jd_ks_{jk}</span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a><span class="fu">### Correlation {.unnumbered .unlisted}</span></span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>The population correlation between variables $Y_{1}$ and $Y_{2}$ can be obtained by using the usual formula of the covariance between $Y_{1}$ and $Y_{2}$ divided by the standard deviation for the two variables as shown below.</span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="minimal"}</span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**Population Correlation between two linear combinations**</span><span class="co">]</span>{.fs-4}</span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>\rho_{Y_1,Y_2} = \dfrac{\sigma_{Y_1,Y_2}}{\sigma_{Y_1}\sigma_{Y_2}}</span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a>This population correlation is estimated by the sample correlation where we simply substitute the sample quantities for the population quantities below</span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a>::: {.callout-note appearance="minimal"}</span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">**Sample Correlation between two linear combinations**</span><span class="co">]</span>{.fs-4}</span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>r_{Y_1,Y_2} = \dfrac{s_{Y_1, Y_2}}{s_{Y_1}s_{Y_2}}</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>::: {#exm-example-2-5}</span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Women’s Health Survey (Pop. Covariance and Correlation)</span></span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>Here is the matrix of the data as was shown previously.</span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>S = \left(\begin{array}{<span class="in">`RRRRR`</span>}157829.4 &amp; 940.1 &amp; 6075.8 &amp; 102411.1 &amp; 6701.6 <span class="sc">\\</span> 940.1 &amp; 35.8 &amp; 114.1 &amp; 2383.2 &amp; 137.7 <span class="sc">\\</span> 6075.8 &amp; 114.1 &amp; 934.9 &amp; 7330.1 &amp; 477.2 <span class="sc">\\</span> 102411.1 &amp; 2383.2 &amp; 7330.1 &amp; 2668452.4 &amp; 22063.3 <span class="sc">\\</span> 6701.6 &amp; 137.7 &amp; 477.2 &amp; 22063.3 &amp; 5416.3 \end{array}\right)</span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>We may wish to define the total intake of vitamins A and C in mg as before.</span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a>Y_{1}=0.001X_{4}+X_{5}</span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a>and we may also want to take a look at the total intake of calcium and iron:</span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>Y_{2}=X_{1}+X_{2}</span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>Then the sample covariance between $Y_{1}$ and $Y_{2}$ can then be obtained by looking at the covariances between each pair of the component variables time the respective coefficients. So in this case we are looking at pairing $X_{1}$ and $X_{4}$, $X_{1}$ and $X_{5}$, $X_{2}$ and $X_{4}$, and $X_{2}$ and $X_{5}$. You will notice that in the expression below $s_{41}$, $s_{42}$, $s_{51}$ and $s_{52}$ all appear. The variables are taken from the matrix above and substituted into the expression and the math is carried out below.</span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>\begin{align} </span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a>s_{Y_1, Y_2} &amp; = 0.001s_{41} + 0.001s_{42} + s_{51}+s_{52}<span class="sc">\\</span>&amp; = 0.001 \times 102411.1 + 0.001 \times 2383.2 + 6701.6 +137.7<span class="sc">\\</span> &amp; = 102.4 + 2.4 + 6701.6 + 137.7<span class="sc">\\</span> &amp; = 6944.1 </span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a>You should be able at this point to be able to confirm that the sample variance of $Y_{2}$ is 159,745.4 as shown below:</span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>\begin{align} </span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>s^2_{Y_2} &amp; = s_{11}+s_{22}+2s_{12}<span class="sc">\\</span> &amp; = 157829.4 + 35.8 + 2 \times 940.1<span class="sc">\\</span> &amp; = 157829.4 + 35.8 + 1880.2 <span class="sc">\\</span> &amp; = 159745.4 </span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a>And, if we care to obtain the sample correlation between $Y_{1}$ and $Y_{2}$, we take the sample covariance that we just obtained and divide it by the square root of the product of the two component variances, 5463.1, for $Y_{1}$, which we obtained earlier, and 159745.4, which we just obtained above. Following this math through, we end up with a correlation of about 0.235 as shown below.</span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a>\begin{align} </span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a>r_{Y_1,Y_2} &amp;= \dfrac{s_{Y_1, Y_2}}{s_{Y_1}s_{Y_2}}<span class="sc">\\</span> &amp;= \dfrac{6944.1}{\sqrt{5463.1 \times 159745.4}}<span class="sc">\\</span>&amp;=0.235 </span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a>\end{align}</span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a><span class="fu">## Summary</span></span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a>In this lesson we learned about:</span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>The definition of a linear combination of random variables;</span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Expressions of the population mean and variance of a linear combination and the covariance between two linear combinations;</span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>How to compute the sample mean of a linear combination from the sample means of the component variables;</span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>How to compute the sample variance of a linear combination from the sample variances and covariances of the component variables;</span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>How to compute the sample covariance and correlation between two linear combinations from the sample covariances of the component variables.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+</div>
+</div></div></div></div></div>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> license.<br><br> <img src="assets/by-nc.svg" class="img-fluid" alt="BYNC"></p>
+</div>   
+    <div class="nav-footer-center">
+<p><a href="https://oer.psu.edu/">OPEN.ED@PSU</a></p>
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+<a href="https://www.psu.edu/web-privacy-statement/">Privacy</a> | <a href="https://www.psu.edu/accessibilitystatement/">Accessibility</a> | <a href="https://www.psu.edu/copyright-information/">Copyright</a> <br> <a href="https://www.psu.edu/">The Pennsylvania State University</a> © <span id="copyright-year"></span> | <br> <a href="https://forms.office.com/r/GbC8H0pZhm">Leave Us Feedback</a>
+<script>
+document.getElementById("copyright-year").textContent = new Date().getFullYear();
+</script>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

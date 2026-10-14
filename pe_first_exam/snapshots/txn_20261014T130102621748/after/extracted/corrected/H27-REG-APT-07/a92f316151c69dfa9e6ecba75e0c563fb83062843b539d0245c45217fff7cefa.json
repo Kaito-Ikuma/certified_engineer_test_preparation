@@ -1,0 +1,45 @@
+{
+  "stem": "2014研究不正ガイドラインの組織責任と行政措置。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典36画像で確認。",
+    "時点": "平成27年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "ガイドラインは行政措置の根拠ではない",
+      "verdict": "不適切",
+      "reason": "管理条件、間接経費削減、配分停止等の措置を規定している。"
+    },
+    "2": {
+      "value": "管理条件未履行に間接経費等の措置",
+      "verdict": "条件内で適切",
+      "reason": "段階と条件を満たして研究機関への措置が行われる。自動的な全資金停止とはしない。"
+    },
+    "3": {
+      "value": "学生や研究支援者も倫理教育の対象",
+      "verdict": "条件内で適切",
+      "reason": "研究者本人だけでなく研究に関わる者への教育を組織的に整える。"
+    },
+    "4": {
+      "value": "競争的資金以外を含む省の予算による研究",
+      "verdict": "条件内で適切",
+      "reason": "当該ガイドラインの適用範囲は競争的資金という名称だけで区切らない。"
+    },
+    "5": {
+      "value": "機関として責任ある不正防止体制",
+      "verdict": "条件内で適切",
+      "reason": "個人への処分に加えて組織の対応・管理責任を問う。"
+    }
+  },
+  "figures": "文章の五肢。元画像は転載せず照合用に保存。",
+  "ambiguity": "検索本文で措置を確認。当時全文の各選択肢への逐条対応、適用範囲のすべての例外は追加照合対象。",
+  "evidence": [
+    "extracted/pages/H27/aptitude/page_007.png"
+  ],
+  "question_id": "H27-REG-APT-07",
+  "source_file": "sources/H27/aptitude.pdf",
+  "source_page": "7",
+  "source_sha256": "2965cecde9e4c31c06a94192bf7a750346fbf85d07d37943d58a3fa15d15ebeb",
+  "raw_text_sha256": "2a78efd3d4982c6ee05c792b04277cd4602a2caf4ef486fdc47c46c4d72d89b7",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

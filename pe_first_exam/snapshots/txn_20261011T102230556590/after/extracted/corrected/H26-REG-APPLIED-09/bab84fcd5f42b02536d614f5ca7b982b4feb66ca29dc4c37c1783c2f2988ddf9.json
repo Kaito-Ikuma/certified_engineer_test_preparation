@@ -1,0 +1,47 @@
+{
+  "stem": "半減期と経過時間の比から残存する親核種の割合を求める。",
+  "conditions": {
+    "方向": "最も適切。",
+    "半減期": "30年",
+    "経過時間": "90年",
+    "対象": "元の放射性核種の残存量、生成等なし。"
+  },
+  "choices": {
+    "1": {
+      "value": "1/6",
+      "verdict": "不一致",
+      "reason": "N/N0=2^(-t/T)で得る0.125と比較すると1/6は大きすぎる。 時間の比を線形に割るのではない。"
+    },
+    "2": {
+      "value": "1/8",
+      "verdict": "適切",
+      "reason": "計算結果と一致する。"
+    },
+    "3": {
+      "value": "1/9",
+      "verdict": "不一致",
+      "reason": "N/N0=2^(-t/T)で得る0.125と比較すると1/9は小さすぎる。 時間の比を線形に割るのではない。"
+    },
+    "4": {
+      "value": "1/16",
+      "verdict": "不一致",
+      "reason": "N/N0=2^(-t/T)で得る0.125と比較すると1/16は小さすぎる。 時間の比を線形に割るのではない。"
+    },
+    "5": {
+      "value": "1/18",
+      "verdict": "不一致",
+      "reason": "N/N0=2^(-t/T)で得る0.125と比較すると1/18は小さすぎる。 時間の比を線形に割るのではない。"
+    }
+  },
+  "figures": "問題幹・全5候補・単位指数・負号・核種・時点を画像照合。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_004.png"
+  ],
+  "question_id": "H26-REG-APPLIED-09",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "4",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "5a9a136b56c08b6be3311fe3b1b77e75e1d53b7812647b9846f209ce4ce05a8b",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

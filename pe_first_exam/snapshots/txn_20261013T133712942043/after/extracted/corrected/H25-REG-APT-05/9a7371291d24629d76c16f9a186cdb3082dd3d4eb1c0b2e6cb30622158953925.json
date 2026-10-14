@@ -1,0 +1,45 @@
+{
+  "stem": "ISO12100のリスク低減は使用上の情報も含む。",
+  "conditions": {
+    "原典": "問題文・否定・全五候補と組合せ表を保存原典27画像で確認。",
+    "時点": "平成25年度の本文表現を保持。後の制度改正を遡及しない。"
+  },
+  "choices": {
+    "1": {
+      "value": "XOOO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OOXO と異なる。"
+    },
+    "2": {
+      "value": "OXOO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OOXO と異なる。"
+    },
+    "3": {
+      "value": "OOXO",
+      "verdict": "条件内で適切",
+      "reason": "各文又は定義の判定を先に行う。全項目が一致する。"
+    },
+    "4": {
+      "value": "OOOX",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OOXO と異なる。"
+    },
+    "5": {
+      "value": "OOOO",
+      "verdict": "不適切",
+      "reason": "各文又は定義の判定を先に行う。並びが判定 OOXO と異なる。"
+    }
+  },
+  "figures": "原典組合せ表の各行を独自要約。元画像は転載せず照合用に保存。",
+  "ambiguity": "2007厚労省指針で方策を確認。原典が挙げる2003年ISO12100の全定義原文は未通読。初回説明のISO26000との取り違えをfollowupに記録し、正答一致だけでその説明を正当化しない。",
+  "evidence": [
+    "extracted/pages/H25/aptitude/page_006.png"
+  ],
+  "question_id": "H25-REG-APT-05",
+  "source_file": "sources/H25/aptitude.pdf",
+  "source_page": "6",
+  "source_sha256": "dfe1929d9e92bd20858580cbef556579c81ecc182af8db51c4d525ad461c523e",
+  "raw_text_sha256": "5c1cfa0049ebcdfe529be5db25fdb3aa1692d16fd7c007216c7c3cb4c910bf08",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

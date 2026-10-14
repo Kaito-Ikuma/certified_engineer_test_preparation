@@ -1,0 +1,150 @@
+{
+  "scope": "原典全候補から初回判断を保存し、明示的な公式比較は次の処理。選択情報には公式メタデータもあり完全盲検ではない。",
+  "records": [
+    {
+      "question_id": "H23-REG-BASIC-4-1",
+      "independent_answer": "2",
+      "reason": "塩酸強酸と酢酸弱酸では同じ濃度でも水素イオン濃度が異なる。"
+    },
+    {
+      "question_id": "H24-REG-BASIC-4-1",
+      "independent_answer": "1",
+      "reason": "生成エンタルピー差は1が-175、2が+3、3が+283、4が+172、5が+178kJ。"
+    },
+    {
+      "question_id": "H24-REG-BASIC-4-2",
+      "independent_answer": "3",
+      "reason": "Al水酸化物の両性による過剰OHで錯イオンとして再溶解。"
+    },
+    {
+      "question_id": "H24-REG-BASIC-4-4",
+      "independent_answer": "4",
+      "reason": "気孔率増加は一般的に熱伝導を下げる。"
+    },
+    {
+      "question_id": "H25-REG-BASIC-4-1",
+      "independent_answer": "2",
+      "reason": "発熱で気体4mol→2mol、低温高圧が平衡を生成側へ。"
+    },
+    {
+      "question_id": "H25-REG-BASIC-4-2",
+      "independent_answer": "2",
+      "reason": "硫酸2酸当量とNH3 2塩基当量で硫酸アンモニウム、酸性。"
+    },
+    {
+      "question_id": "H25-REG-BASIC-4-4",
+      "independent_answer": "3",
+      "reason": "不動態があっても塩化物中の局部腐食に注意し海水適性を一律に断定しない。"
+    },
+    {
+      "question_id": "H25-REG-BASIC-4-6",
+      "independent_answer": "3",
+      "reason": "6x=3よりx=.5、6x+2y=7よりy=2、比1:4。"
+    },
+    {
+      "question_id": "H26-REG-BASIC-4-4",
+      "independent_answer": "4",
+      "reason": "気孔率増大により熱伝導率増大とする向きが逆。"
+    },
+    {
+      "question_id": "H27-REG-BASIC-4-3",
+      "independent_answer": "5",
+      "reason": "96/27と4/63.5のモル比、98.26/1.74at%。"
+    },
+    {
+      "question_id": "H27-REG-BASIC-4-4",
+      "independent_answer": "1",
+      "reason": "Al/Fe/Zn/Mg/Ti、地殻存在・還元法とKroll法から。"
+    },
+    {
+      "question_id": "H28-REG-BASIC-4-1",
+      "independent_answer": "4",
+      "reason": "低温高圧が平衡収率を上げる。"
+    },
+    {
+      "question_id": "H28-REG-BASIC-4-3",
+      "independent_answer": "3",
+      "reason": "密度CuFeAl、抵抗FeAlCu、融点FeCuAl、イオア。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-4-1",
+      "independent_answer": "4",
+      "reason": "過剰NaOHでAl水酸化物が再溶解。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-4-2",
+      "independent_answer": "5",
+      "reason": "粒子数3のCaCl2が最大沸点上昇。"
+    },
+    {
+      "question_id": "H29-REG-BASIC-4-4",
+      "independent_answer": "1",
+      "reason": "乾電池負極Zn、ファイバーSi、ジュラルミンCu、磁石Fe。"
+    },
+    {
+      "question_id": "H30-REG-BASIC-4-2",
+      "independent_answer": "5",
+      "reason": "同濃度塩酸と酢酸のpHは異なる。"
+    },
+    {
+      "question_id": "H30-REG-BASIC-4-3",
+      "independent_answer": "3",
+      "reason": "Alの酸化物による不動態、局部腐食あり、Crがステンレス基本。"
+    },
+    {
+      "question_id": "R01-REG-BASIC-4-3",
+      "independent_answer": "4",
+      "reason": "95.5/27と4.5/63.5のモル分率98.04/1.96%。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-4-3",
+      "independent_answer": "2",
+      "reason": "G=H-TSの標準反応量。"
+    },
+    {
+      "question_id": "R01-RET-BASIC-4-4",
+      "independent_answer": "4",
+      "reason": "正極Co/光Si/ジュラルCu/磁石Fe。全リチウム正極ではない。"
+    },
+    {
+      "question_id": "R02-REG-BASIC-4-2",
+      "independent_answer": "3",
+      "reason": "aアルコールOH置換、dカルボン酸エステル化の置換。b脱離c付加。"
+    },
+    {
+      "question_id": "R02-REG-BASIC-4-3",
+      "independent_answer": "4",
+      "reason": "密度CuFeAl、抵抗FeAlCu、融点FeCuAl、ウイア。"
+    },
+    {
+      "question_id": "R02-REG-BASIC-4-5",
+      "independent_answer": "3",
+      "reason": "6x=2,x=1/3,y=2、CO2=6x+2y=6mol。"
+    },
+    {
+      "question_id": "R03-REG-BASIC-4-2",
+      "independent_answer": "4",
+      "reason": "NaClとCaCO3の交換式で全原子の酸化数不変。実際の反応進行とは別。"
+    },
+    {
+      "question_id": "R03-REG-BASIC-4-4",
+      "independent_answer": "1",
+      "reason": "Al高炉還元、Fe2O3の160/112倍から1429kg。"
+    },
+    {
+      "question_id": "R04-REG-BASIC-4-1",
+      "independent_answer": "2",
+      "reason": "塩酸強酸と酢酸弱酸で同濃度pH不同。"
+    },
+    {
+      "question_id": "R05-REG-BASIC-4-4",
+      "independent_answer": "1",
+      "reason": "Al不動態、ステンレスCu5%ではない、環境依存と局部腐食。"
+    },
+    {
+      "question_id": "R07-REG-BASIC-4-2",
+      "independent_answer": "3",
+      "reason": "HF<HCl、CF3COOH>酢酸、エタノール<酢酸、フェノール>エタノール、イウ。"
+    }
+  ]
+}

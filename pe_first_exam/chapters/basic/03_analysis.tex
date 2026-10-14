@@ -1,5 +1,147 @@
 \chapter{解析}
-\noindent 分野解説は執筆中。以下は登録問題と校正済み例の作業用一覧。
+\section{背景：物理モデルを計算できる形へ移す}
+解析では、実際の現象を場・ベクトル・方程式として表し、解の性質や近似の誤差を調べる。流れの保存則には発散、局所的な循環には回転、温度やポテンシャルの変化には勾配を用いる。座標変換は形の複雑な領域を計算しやすくし、行列は連立方程式や変換をまとめる。数値解析では連続な微分・積分を有限個の値から計算する。
+
+物理専攻の読者には数学そのものより、\emph{何を入力して何を返す演算か、条件はどこで使うか}の確認が重要である。勾配はベクトル、勾配の長さと発散はスカラー、三次元の回転はベクトルである。微分前に点を代入しない。変換の向きと行・列の順序を、問題の式に合わせて読む。
+
+\section{内積・外積と直交射影}
+\label{theory:analysis:projection}
+正規直交基底では$a\cdot b=\sum_i a_i b_i$であり、内積はスカラーとなる。仕事$F\cdot\Delta x$は変位方向の力成分を取り出す例である。三次元の外積$a\times b$は両者に垂直で、向きは右手系で定まり、$a\times b=-b\times a$である。平行な場合はゼロだが、それだけを根拠に交換的とはいえない。
+
+$a$を非零の$b$に平行な$p$と垂直な$q$に分けるとき、$p=tb$、$q=a-tb$とおく。$q\cdot b=0$から
+\[
+ t=\frac{a\cdot b}{b\cdot b},\qquad
+ p=\frac{a\cdot b}{b\cdot b}b,\qquad q=a-p
+\]
+となる。$b$が単位ベクトルなら分母は1である。$q\cdot b=0$だけで候補を選ぶと、$a-q$が$b$の倍数でない候補も残る。二条件を同時に満たす必要がある。
+
+原点を通る直線への垂足の\emph{位置}は$p$であり、点$a$から垂足へ向かう\emph{変位}は$p-a$である。始点と終点を逆にすると符号が反転する。これは、点から面・線への最短距離や力の成分分解にも使える。
+
+\section{勾配と最急上昇率}
+\label{theory:analysis:gradient}
+スカラー場$f$の小さな変化は$df=\nabla f\cdot dx$で表せる。単位方向$e$への方向微分は$\nabla f\cdot e$であり、コーシー・シュワルツの不等式から
+\[
+ \nabla f\cdot e\le |\nabla f|\,|e|=|\nabla f|
+\]
+となる。$\nabla f\neq0$なら$e=\nabla f/|\nabla f|$で等号が成立し、勾配方向が最急上昇、勾配のノルムがその上昇率である。勾配と方向微分の対応は大学講義の整理とも一致する\parencite{mit_chain2007}。
+
+二変数なら$\nabla f=(f_x,f_y)$、$|\nabla f|=\sqrt{f_x^2+f_y^2}$である。求める量が「長さ」なら成分の組を答えず平方根まで取る。$\nabla f=0$の点では一次の方向微分が全方向で0であり、極値の性質には二階微分などが必要となる。
+
+\section{発散と回転：保存と循環}
+\label{theory:analysis:divcurl}
+右手系の直交座標でベクトル場$V=(V_x,V_y,V_z)$に対し
+\[
+ \nabla\cdot V=\frac{\partial V_x}{\partial x}
+ +\frac{\partial V_y}{\partial y}+\frac{\partial V_z}{\partial z},
+\]
+\[
+ \nabla\times V=
+ \left(\frac{\partial V_z}{\partial y}-\frac{\partial V_y}{\partial z},
+ \frac{\partial V_x}{\partial z}-\frac{\partial V_z}{\partial x},
+ \frac{\partial V_y}{\partial x}-\frac{\partial V_x}{\partial y}\right).
+\]
+発散は成分と同じ軸の微分を\emph{足す}。回転は別の軸の微分を\emph{引く}。これらの出力の型と座標依存性は材料工学の数学講義でも明示される\parencite{mit_vectorcalc2005}。上式は直交するデカルト座標の成分式であり、円柱・球座標へ無変更で使わない。
+
+発散定理により、小体積から外向きに出る流束の総量を体積で割った極限が発散になる。流速を$u$とすると質量保存は
+\[
+ \partial_t\rho+\nabla\cdot(\rho u)=0.
+\]
+密度が流れに沿って不変な非圧縮性条件では$\nabla\cdot u=0$となる。「平面の全ての点で成立」という設問では、式がある曲線上でだけゼロになる候補を除く。
+
+二次元の$V=(u,v)$を三次元へ$(u,v,0)$と埋め込むと回転の面外成分は$\partial_xv-\partial_yu$となる。過去問がこのスカラーをrotと定義した場合は、その定義に従う。三次元での回転ベクトルや発散と取り違えない。
+
+\section{連鎖律：ヤコビ行列の向きを式から決める}
+\label{theory:analysis:chain}
+$x=x(r,s),y=y(r,s)$と$f=f(x,y)$に対し、全微分へ代入すると
+\[
+ df=f_x(x_rdr+x_sds)+f_y(y_rdr+y_sds)
+\]
+である。$dr,ds$の係数を比べれば
+\[
+ \begin{pmatrix}f_r\\f_s\end{pmatrix}
+ =\begin{pmatrix}x_r&y_r\\x_s&y_s\end{pmatrix}
+ \begin{pmatrix}f_x\\f_y\end{pmatrix}.
+\]
+一方、$f=f(x,y),g=g(x,y)$を変数とする$u(f,g)$なら
+\[
+ \begin{pmatrix}u_x\\u_y\end{pmatrix}
+ =\begin{pmatrix}f_x&g_x\\f_y&g_y\end{pmatrix}
+ \begin{pmatrix}u_f\\u_g\end{pmatrix}.
+\]
+ヤコビ行列という語だけから配置を決めず、各行がどの微分を返すかを確認する。連鎖律は微分記号を分数として無条件に約分する操作ではない\parencite{mit_chain2007}。
+
+関係式$f'=1+f^2$と$f(0)$から高階導関数を求める場合も、連鎖律と積の微分を順に使う。解$f$を全区間で求めることと、一点の導関数を求めることは別の仕事である。
+
+\section{行列式と面積要素の変数変換}
+\label{theory:analysis:jacobian}
+局所的に微分可能で正則な変換$(u,v)\mapsto(x,y)$では、小長方形が平行四辺形へ写り、その面積倍率は行列式の\emph{絶対値}になる。従って
+\[
+ dxdy=\left|\det\frac{\partial(x,y)}{\partial(u,v)}\right|dudv.
+\]
+向き付きの行列式と、負にならない面積の倍率を分ける。MITの変数変換講義でも面積で絶対値が必要な理由をこの幾何から説明する\parencite{mit_jacobian2007}。
+
+例えば$x=u+v,y=uv$の微分行列は$\left(\begin{smallmatrix}1&1\\v&u\end{smallmatrix}\right)$で、行列式は$u-v$、面積倍率は$|u-v|$である。また$u,v$を交換すると同じ$x,y$になるため、積分の置換には一対一となる枝を選ぶか重複を数える処理が必要である。平成28年度の設問では符号付き行列式の候補はあるが、面積要素へ用いる符号・領域条件が不足するため疑義を保持する。
+
+累次積分では領域も先に読む。$0\le x\le1,0\le y\le\sqrt{1-x^2}$は四分の一円である。被積分関数が$x$なら、まず$y$について積分して$\int_0^1x\sqrt{1-x^2}\,dx$とできる。被積分関数1の領域面積と、$x$の重みを持つ一次モーメントは異なる。
+
+\section{逆行列：積で確かめ、三角構造を使う}
+\label{theory:analysis:inverse}
+逆行列は$AA^{-1}=A^{-1}A=I$を満たす行列である。小さい行列の随伴行列による計算と、一般の連立方程式としての意味は大学講義に整理される\parencite{mit_inverse2007}。2行2列なら
+\[
+ \begin{pmatrix}a&b\\c&d\end{pmatrix}^{-1}
+ =\frac{1}{ad-bc}\begin{pmatrix}d&-b\\-c&a\end{pmatrix},
+ \qquad ad-bc\neq0.
+\]
+非対角成分の符号だけでなく、分母の符号も確認する。
+
+単位下三角行列では逆も同じ形とおき、積の非対角成分を順に0へ合わせれば
+\[
+ \begin{pmatrix}1&0&0\\a&1&0\\b&c&1\end{pmatrix}^{-1}
+ =\begin{pmatrix}1&0&0\\-a&1&0\\ac-b&-c&1\end{pmatrix}.
+\]
+第3行第1列には二段の結合項$ac$が現れる。上三角の問題でも同じように、掛け算の全経路を足す。元の非対角成分を一律に符号反転するだけでは逆にならない。
+
+実際の大規模な線形方程式$Ax=b$では、逆行列を明示的に作る代わりに分解と代入で$x$を求めることが多い。ここでの小行列の計算は写像と検算を理解するために位置付ける。
+
+\section{数値微分：テイラー展開で次数と誤差を読む}
+\label{theory:analysis:difference}
+等間隔の$x_i$、幅$h>0$に対して、滑らかな関数の展開は
+\[
+ f_{i\pm1}=f_i\pm hf_i'+\frac{h^2}{2}f_i''
+ \pm\frac{h^3}{6}f_i'''+\frac{h^4}{24}f_i^{(4)}+\cdots.
+\]
+差を取ると一階中心差分、和から中央を引くと二階中心差分となる。
+\[
+ f_i'=\frac{f_{i+1}-f_{i-1}}{2h}+O(h^2),\qquad
+ f_i''=\frac{f_{i+1}-2f_i+f_{i-1}}{h^2}+O(h^2).
+\]
+前進・後退の一階差分は通常$O(h)$、三点の片側一階差分$(3f_i-4f_{i-1}+f_{i-2})/(2h)$は$O(h^2)$である。名称を知らなくても定数・一次・二次関数を入れれば、多くの誤った候補を除ける。二階微分の分母は長さの二乗であり、次元も検算になる。
+
+幅を小さくすると打切り誤差は減るが、近い値の差を小さい幅で割るため丸め誤差の影響は強くなり得る。数値微分の「正しい差分式」は滑らかな関数に対する近似であり、有限の幅で任意の関数へ恒等的に正確という意味ではない。
+
+\section{数値積分：補間とモーメント条件}
+\label{theory:analysis:quadrature}
+求積式を$\sum_jw_jf(x_j)$とすると、多項式$1,x,x^2,\ldots$へ正確となるための条件は
+\[
+ \sum_jw_jx_j^k=\int_a^b x^k\,dx
+\]
+である。定数関数には重み和が区間幅となる必要がある。対称区間では奇関数部分は相殺されるため、偶数次数の条件を確認しやすい。これは式の係数を暗記するだけでなく、似た誤答式を検証する方法となる。
+
+$a,b,c$が等間隔$h$の三点なら、二次補間多項式を積分するシンプソン法は
+\[
+ \int_a^cf(x)\,dx\approx\frac h3[f(a)+4f(b)+f(c)].
+\]
+全幅を$H=c-a=2h$と書けば係数は$H/6$である。記号の定義を取り違えない。滑らかな関数の一パネル誤差は$-h^5f^{(4)}(\xi)/90$であり、三次以下の多項式には正確となる\parencite{nist_quadrature}。
+
+等間隔に縛られず、区間$[-1,1]$の二点を$\pm t$、等しい重みを$w$とすると、定数と二次のモーメント条件から$2w=2$、$2wt^2=2/3$となる。従って$w=1,t=1/\sqrt3$である。奇数次数は対称性で相殺されるので三次以下に正確な二点ガウス求積
+\[
+ \int_{-1}^1f(x)\,dx=f(-1/\sqrt3)+f(1/\sqrt3)
+ \quad (\deg f\le3)
+\]
+が得られる。評価点が正しくても重みが違えば別の式である。
+
+近似手法が指定された問題では、その手法で計算した値を答える。例えば$f(x)=1/(x+3)$を$[-1,1]$で一パネルのシンプソン法にかけると$25/36\approx0.69444$であり、厳密値$\ln2\approx0.693147$と違う。両者に最も近い候補が同じでも、導出を置き換えない。
+
 \section{固有振動：復元力のモデル化}
 \subsection{背景}
 支持条件や接続を変えると、同じ材質・同じ部品でも振動特性は変わる。まず変位に対する復元力を求め、慣性との組合せを考える。
@@ -14,4 +156,8 @@
 $M\ddot{q}+Kq=0$から$(K-\omega^2M)\phi=0$が得られる。
 ただし過去問の主題がばね・はりの振動比較なら主分類は振動・力学とし、一般化固有値問題は横断参照とする。
 
+
+\input{chapters/basic/numerical_methods_theory.tex}
+\input{chapters/basic/finite_element_theory.tex}
+\input{chapters/basic/mechanical_analysis_finish_theory.tex}
 \input{generated/questions/basic/03_analysis.tex}

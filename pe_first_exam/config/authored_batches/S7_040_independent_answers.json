@@ -1,0 +1,112 @@
+{
+  "time": "2026-10-12T13:21:56+09:00",
+  "official_consulted": false,
+  "original_images_reviewed": 14,
+  "records": [
+    {
+      "question_id": "H23-REG-APPLIED-32",
+      "source_sha256": "2b0dc18fabedc4d36875fef15341fef8cb1c438966c16a0a454ecc959a111ec7",
+      "source_page": "11",
+      "answer_initial": "3",
+      "reason": "はぎとり法は屈折初動に基づく手法であり反射波へそのまま対応させない。反射オフセットの目安と全走時の条件は留保。"
+    },
+    {
+      "question_id": "H25-REG-APPLIED-32",
+      "source_sha256": "cc773a4a46fe704647dee37466957cefee5d9aa704e58efaa727112bdca558af",
+      "source_page": "12",
+      "answer_initial": "3",
+      "reason": "P波速度は飽和状態に左右される。深部増速・等方弾性のP>S・初動解析は条件付き。"
+    },
+    {
+      "question_id": "H26-REG-APPLIED-20",
+      "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+      "source_page": "8",
+      "answer_initial": "1",
+      "reason": "反射法の必要最大オフセットを探査深度の二倍へ固定する説明が不適切と考える。quarter wavelengthは分離と検出の差を留保。"
+    },
+    {
+      "question_id": "H27-REG-APPLIED-21",
+      "source_sha256": "3ca4b0c90c7d7abed1816dcaf95b3f4cb35f4fd4f3fd5df98e7f546c76f9bd80",
+      "source_page": "8",
+      "answer_initial": "1",
+      "reason": "通常の能動表面波を深度100mまでとする一律目安が疑わしい。測線長・波長次第で深度が変わるため単一上限は保証しない。"
+    },
+    {
+      "question_id": "H28-REG-APPLIED-21",
+      "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+      "source_page": "8",
+      "answer_initial": "1",
+      "reason": "水平単一反射境界の走時は双曲線。ただし小オフセットではTaylor展開で放物線近似できるため原典の近似という語を疑義として残す。"
+    },
+    {
+      "question_id": "H29-REG-APPLIED-34",
+      "source_sha256": "eb431b8fd381cafe477aa310c399adf23d8206be93df934fc8a96b1d95493215",
+      "source_page": "12",
+      "answer_initial": "3",
+      "reason": "はぎとり法は反射ではなく屈折法の解析。"
+    },
+    {
+      "question_id": "R01-RET-APPLIED-32",
+      "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+      "source_page": "11",
+      "answer_initial": "4",
+      "reason": "弾性波の人工起振と走時・反射を用いる探査である。他は重力・磁気・電気・放射能。"
+    },
+    {
+      "question_id": "R02-REG-APPLIED-32",
+      "source_sha256": "77815a698d8af17a95d31e83b2e2a02ac148b87c498e172428b5d98ab317dbe4",
+      "source_page": "11",
+      "answer_initial": "2",
+      "reason": "主としてのり面・ダム・トンネル等のP波速度による地山評価。強震動や耐震にはS波構造等を要しP波屈折を主用途としない。ただし応用可能性は否定しない。"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-33",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "source_page": "12",
+      "answer_initial": "1",
+      "reason": "intercept timeは屈折走時の切片であり反射分解能の基準と異なる。"
+    },
+    {
+      "question_id": "R03-REG-APPLIED-34",
+      "source_sha256": "5840c901467acdd4397bcad0e3671ed601f10569f9941764fbcce32fe92f836d",
+      "source_page": "13",
+      "answer_initial": "2",
+      "reason": "土質のS波屈折は比較的平坦な地形条件が典型。急峻が主条件とする説明は逆。"
+    },
+    {
+      "question_id": "R04-REG-APPLIED-34",
+      "source_sha256": "6ff7a090401932b140f95a604c89ec63d9ff98b0b4588f30a68d2583f0c96785",
+      "source_page": "12",
+      "answer_initial": "1",
+      "reason": "空間aliasingは一般に短波長の限界であり最長ではない。F-KとSPACの比較は解析・配置条件付き。"
+    },
+    {
+      "question_id": "R05-REG-APPLIED-32",
+      "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+      "source_page": "11",
+      "answer_initial": "4",
+      "reason": "多層CMPの通常近似は双曲線。小オフセットで放物線も局所近似なので無条件の誤りにしない。"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-32",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "source_page": "11",
+      "answer_initial": "1",
+      "reason": "速度境界は風化・割れ目・飽和等で変わるため地質境界との良い一致を一般保証しない。"
+    },
+    {
+      "question_id": "R06-REG-APPLIED-33",
+      "source_sha256": "97c92fd33e85ea8199e0c00eb41ae6ffb3acc59fe2e6f15a101a2459a9048ffc",
+      "source_page": "11",
+      "answer_initial": "2",
+      "reason": "微動のRayleigh分散から主にS波速度モデルを推定しP波のみではない。P波・密度の影響もゼロではない。"
+    },
+    {
+      "question_id": "R07-REG-APPLIED-35",
+      "source_sha256": "a927f2cf2645208890cc672cc749178179f46a09e69ffd95c431dc35bf6c2cd7",
+      "source_page": "13",
+      "answer_initial": "2",
+      "reason": "Rayleigh位相速度の感度は一般にS波速度に強くP波より弱い。半無限均質非分散の例もある。"
+    }
+  ]
+}

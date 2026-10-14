@@ -1,0 +1,44 @@
+{
+  "stem": "アミノ酸の共通基、疎水側鎖、CysとMetに含まれる元素を3空欄へ対応させる。",
+  "conditions": {
+    "空欄": "ア〜ウ。Cys2側鎖間の共有結合に言及。"
+  },
+  "choices": {
+    "1": {
+      "value": "カルボキシ基／疎水／S",
+      "verdict": "最適",
+      "reason": "共通基、Ile/Pheの非極性R、Cys/Metの硫黄が全て一致。"
+    },
+    "2": {
+      "value": "ヒドロキシ基／疎水／S",
+      "verdict": "不適切",
+      "reason": "RによってはOHを持つが、全アミノ酸の共通基はカルボキシである。"
+    },
+    "3": {
+      "value": "カルボキシ基／親水／S",
+      "verdict": "不適切",
+      "reason": "Ile/PheのRは炭化水素で疎水性である。"
+    },
+    "4": {
+      "value": "カルボキシ基／親水／N",
+      "verdict": "不適切",
+      "reason": "疎水性と側鎖の硫黄を取り違えている。アミノ基のNは側鎖共通元素という意味ではない。"
+    },
+    "5": {
+      "value": "ヒドロキシ基／親水／N",
+      "verdict": "不適切",
+      "reason": "共通基、側鎖極性、Cys/Metの特徴的元素の3項目が違う。"
+    }
+  },
+  "figures": "問題幹・数値・全5肢・否定と比較対象を原典画像確認。空欄と5行の候補表を個別に照合。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R03/basic/page_019.png"
+  ],
+  "question_id": "R03-REG-BASIC-4-5",
+  "source_file": "sources/R03/basic.pdf",
+  "source_page": "19",
+  "source_sha256": "6c3fbf635de45d7d5853328f4c8edeb0d6cde618e06eaf71fdd12c414bfec663",
+  "raw_text_sha256": "da9cb9e612eefbd48537ba4a93706694b00c180c39efbba6bc9d9027ceb8d0c8",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

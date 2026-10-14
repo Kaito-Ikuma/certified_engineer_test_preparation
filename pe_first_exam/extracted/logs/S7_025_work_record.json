@@ -1,0 +1,81 @@
+{
+  "time": "2026-10-11T11:04:26.375973+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_025_structural_geology",
+  "question_ids": [
+    "H25-REG-APPLIED-20",
+    "H25-REG-APPLIED-21",
+    "H26-REG-APPLIED-35",
+    "H30-REG-APPLIED-23",
+    "H30-REG-APPLIED-26",
+    "R01-REG-APPLIED-31",
+    "R01-RET-APPLIED-30",
+    "R02-REG-APPLIED-27",
+    "R02-REG-APPLIED-30",
+    "R03-REG-APPLIED-27",
+    "R04-REG-APPLIED-29",
+    "R04-REG-APPLIED-30",
+    "R04-REG-APPLIED-31",
+    "R05-REG-APPLIED-27",
+    "R05-REG-APPLIED-28",
+    "R05-REG-APPLIED-29",
+    "R06-REG-APPLIED-28",
+    "R06-REG-APPLIED-29",
+    "R07-REG-APPLIED-29",
+    "R07-REG-APPLIED-30"
+  ],
+  "source_images": 15,
+  "initial_independent_matches": 19,
+  "corrected_verified": 13,
+  "partial": 7,
+  "related_pairs_added": 8,
+  "related_pairs_total": 144,
+  "primary_references_added": 16,
+  "concepts_added": 8,
+  "concept_total": 171,
+  "canonical_counts": {
+    "recorded_at": "2026-10-11T11:04:26.375973+09:00",
+    "registered": 1270,
+    "classification_verified": 510,
+    "summary_verified": 475,
+    "corrected_verified": 414,
+    "corrected_partial": 61,
+    "solution_drafts": 475,
+    "solution_verified": 0,
+    "manual_required": 856,
+    "subject_drafts": {
+      "BASIC": 141,
+      "APT": 94,
+      "APPLIED": 240
+    }
+  },
+  "theory_sections": 20,
+  "labeled_theory_sections": 16,
+  "pdf": {
+    "pages": 678,
+    "bytes": 3377699,
+    "visual_review_pages": [
+      582,
+      583,
+      584,
+      585,
+      587,
+      589,
+      591,
+      596,
+      599,
+      600
+    ],
+    "undefined_references": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "tests": "make draft・1270ラベル監査成功。内容追加のみ。24回帰はS7_023で実施済み。",
+  "revisions": [],
+  "risks": [
+    "H30問23の初回5/公式4不一致、地震断層の歴史記録条件、雁行配列の方位と亀裂種類、島弧速度の参照系、キンク・スランプ形成の量的/全称条件を7部分校正で保持。",
+    "Astra未査読。795問未執筆、最終監査未実装。"
+  ],
+  "next": "S7_026適性の安全・リスクを原典から確認。全1270問と全章初稿・頻出分析まで継続。"
+}

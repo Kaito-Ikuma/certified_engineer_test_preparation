@@ -1,0 +1,45 @@
+{
+  "stem": "電気・電磁現象と地震反射のNMO補正を区別する。",
+  "conditions": {
+    "原典照合": "29問21原典画像で否定、全五候補、数式・上付き単位・観測対象を照合。",
+    "前提": "NMOは反射走時のoffset依存を補正する地震探査処理である。"
+  },
+  "choices": {
+    "1": {
+      "value": "NMO補正",
+      "verdict": "不適切",
+      "reason": "normal moveoutは震源受振器の距離による反射走時差を補正する。電磁現象の名称ではない。"
+    },
+    "2": {
+      "value": "表皮効果",
+      "verdict": "適切",
+      "reason": "導電媒質内の周期電磁場の減衰と深度感度へ関係する。"
+    },
+    "3": {
+      "value": "ニアフィールド効果",
+      "verdict": "適切",
+      "reason": "有限送信源からの近距離場が平面波近似と異なることをいう。"
+    },
+    "4": {
+      "value": "IP効果",
+      "verdict": "適切",
+      "reason": "電流による地下界面の分極で減衰・位相が変わる。"
+    },
+    "5": {
+      "value": "シューマン共振",
+      "verdict": "適切",
+      "reason": "地球と電離層の電磁共振であり、自然MTの電場磁場記録にも現れる。"
+    }
+  },
+  "figures": "図なし。H28問23のWenner式とMT式及びH26/R03の単位指数を画像確認。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H28/17_applied_science/page_007.png"
+  ],
+  "question_id": "H28-REG-APPLIED-19",
+  "source_file": "sources/H28/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "fbfe3faa5942dc31bae0936c1cd2beeef00df0d19ba91f6b852c9bece0462d37",
+  "raw_text_sha256": "b9534fafff1c4d9a974f3472fa5b29101180395f890c28f5fd94ebd6326b0f01",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

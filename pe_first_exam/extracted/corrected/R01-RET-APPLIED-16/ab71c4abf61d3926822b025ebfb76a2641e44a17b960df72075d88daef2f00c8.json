@@ -1,0 +1,45 @@
+{
+  "stem": "希ガスの単原子性とHeの電子例外を確認する。",
+  "conditions": {
+    "判断対象": "希ガスの単原子性とHeの電子例外を確認する。",
+    "原典確認": "22原典頁画像で五候補・否定・化学式を照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "空気中は化合物",
+      "verdict": "選ばない候補",
+      "reason": "通常空気は単体。"
+    },
+    "2": {
+      "value": "1原子分子からなる",
+      "verdict": "選ぶ候補",
+      "reason": "通常の単体気体は単原子で2が適切。"
+    },
+    "3": {
+      "value": "常温常圧で気体と液体",
+      "verdict": "選ばない候補",
+      "reason": "出題範囲の通常単体は気体。"
+    },
+    "4": {
+      "value": "軽いほど低沸点・高反応",
+      "verdict": "選ばない候補",
+      "reason": "軽いほど高反応性とは言えない。"
+    },
+    "5": {
+      "value": "全て外殻8電子",
+      "verdict": "選ばない候補",
+      "reason": "Heは2で例外。"
+    }
+  },
+  "figures": "原典の全候補を確認し独自の式と理由で説明。画像は転載しない。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R01_retest/17_applied_science/page_006.png"
+  ],
+  "question_id": "R01-RET-APPLIED-16",
+  "source_file": "sources/R01_retest/17_applied_science.pdf",
+  "source_page": "6",
+  "source_sha256": "1e0fc4f3da846f0294f6d24cf805b59d4e70745ba24bfe2f9649004543040af9",
+  "raw_text_sha256": "145ee81b437a12bd2f83c325292c7a8ddde7e8fa7c1f27a4e5e3f12ccfcf1673",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

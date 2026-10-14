@@ -1,0 +1,47 @@
+{
+  "stem": "電荷を固定した平行平板の間隔と誘電率を変え、極板間引力の比を選ぶ。",
+  "conditions": {
+    "初期": "真空、間隔d、帯電量Q、引力F0。",
+    "変更": "間隔5d、比誘電率5の誘電体で全間隙を満たす。",
+    "固定量": "Qは変わらない。",
+    "モデル": "同じ面積A、端効果なし、一様な線形誘電体。"
+  },
+  "choices": {
+    "1": {
+      "value": "\\(F=F_0/25\\)",
+      "verdict": "条件に不一致",
+      "reason": "固定Qで引力は間隔に依存しないため、距離の逆二乗だけを使うのは違う。"
+    },
+    "2": {
+      "value": "\\(F=F_0/5\\)",
+      "verdict": "条件に一致",
+      "reason": "F=Q²/(2εA)でεが5倍となり1/5である。"
+    },
+    "3": {
+      "value": "\\(F=F_0\\)",
+      "verdict": "条件に不一致",
+      "reason": "εの増加による引力減少を無視している。"
+    },
+    "4": {
+      "value": "\\(F=5F_0\\)",
+      "verdict": "条件に不一致",
+      "reason": "固定Qでは引力はεに反比例し、比例ではない。"
+    },
+    "5": {
+      "value": "\\(F=25F_0\\)",
+      "verdict": "条件に不一致",
+      "reason": "電荷固定の平板モデルでは25倍となる要因はない。"
+    }
+  },
+  "figures": "原典画像で問題幹、単位、符号、正誤の向き、全5肢と組合せ表を確認。設問固有の模式図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/R05/17_applied_science/page_002.png"
+  ],
+  "question_id": "R05-REG-APPLIED-03",
+  "source_file": "sources/R05/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "30c4e25891c20295df3327af2f13a5feda5eb0ad98a627ef735b3327a828a2f5",
+  "raw_text_sha256": "9df69791edd48983f788cf40026cb1429468b6a236641afddef9db141705a928",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

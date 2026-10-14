@@ -1,0 +1,71 @@
+{
+  "time": "2026-10-10T21:08:09+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_013_compliance",
+  "question_ids": [
+    "H23-REG-APT-15",
+    "H27-REG-APT-10",
+    "H27-REG-APT-12",
+    "H28-REG-APT-06",
+    "H28-REG-APT-11",
+    "H29-REG-APT-13",
+    "H30-REG-APT-05",
+    "H30-REG-APT-08",
+    "R04-REG-APT-09",
+    "R04-REG-APT-12",
+    "R07-REG-APT-11",
+    "R05-REG-APT-04",
+    "R06-REG-APT-03",
+    "R06-REG-APT-12"
+  ],
+  "source_images": 14,
+  "initial_independent_matches": 13,
+  "source_resolved_independent_revision": 1,
+  "final_matches": 14,
+  "corrected_verified": 14,
+  "partial": 0,
+  "related_pairs_added": 3,
+  "related_pairs_total": 47,
+  "theory_sections": 10,
+  "primary_references_added": 32,
+  "concepts_added": 2,
+  "canonical_counts": {
+    "recorded_at": "2026-10-10T21:02:04+09:00",
+    "registered": 1270,
+    "classification_verified": 288,
+    "summary_verified": 248,
+    "corrected_verified": 238,
+    "corrected_partial": 10,
+    "solution_drafts": 248,
+    "solution_verified": 0,
+    "manual_required": 1032,
+    "subject_drafts": {
+      "BASIC": 82,
+      "APT": 63,
+      "APPLIED": 103
+    }
+  },
+  "tests": "24回帰成功15.772秒（独立解答改訂メモの保存を回帰確認）。初期監査・実ラベル監査通過。",
+  "pdf": {
+    "pages": 446,
+    "bytes": 2054337,
+    "visual_review_pages": [
+      187,
+      188,
+      189,
+      190,
+      199,
+      200
+    ],
+    "log_undefined": 0,
+    "missing_glyphs": 0,
+    "overfull": 0
+  },
+  "risks": [
+    "JISの初回独立解答2から3への変更はJISC現行マークの実画像照合。初回記録と画像ハッシュを保持。",
+    "2025年公益通報法改正の主要部分は2026年12月1日施行予定で現在の施行法と区別。",
+    "Astra未査読"
+  ],
+  "next": "S7_014岩石等17問。原典14頁確認・初回独立解答保存済み。公式比較で付加体1問の不一致と火成岩2問の複数疑義。根拠確認へ。Checkpoint2未到達。"
+}

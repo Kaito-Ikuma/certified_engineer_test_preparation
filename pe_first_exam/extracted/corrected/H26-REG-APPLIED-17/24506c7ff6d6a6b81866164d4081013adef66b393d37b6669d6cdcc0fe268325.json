@@ -1,0 +1,45 @@
+{
+  "stem": "求核性・酸性・配向性と不斉炭素を区別する。",
+  "conditions": {
+    "判断対象": "求核性・酸性・配向性と不斉炭素を区別する。",
+    "原典確認": "化学式・否定・表の全5候補を保存原典24頁画像で照合。"
+  },
+  "choices": {
+    "1": {
+      "value": "C4以上アルカンに骨格異性",
+      "verdict": "選ばない候補",
+      "reason": "C4には直鎖と分枝の二骨格。"
+    },
+    "2": {
+      "value": "OH−/Cl−/H2O/H+で求核はH+",
+      "verdict": "選ぶ候補",
+      "reason": "H+は電子対を受け取る求電子剤であり逆。"
+    },
+    "3": {
+      "value": "電子供与基で芳香族求電子置換促進",
+      "verdict": "選ばない候補",
+      "reason": "中間体安定化で置換を促進する代表傾向。"
+    },
+    "4": {
+      "value": "カルボン酸/フェノールはアルコールより酸性",
+      "verdict": "選ばない候補",
+      "reason": "共役塩基の共鳴安定化等で比較できる。"
+    },
+    "5": {
+      "value": "2,4ジメチルヘキサンに不斉炭素",
+      "verdict": "選ばない候補",
+      "reason": "C4はH・メチル・右エチル・左の分枝鎖の4種を持つ。"
+    }
+  },
+  "figures": "構造式・組合せ表を原典で確認。転載せず独自の名称・式・理由で説明。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H26/17_applied_science/page_007.png"
+  ],
+  "question_id": "H26-REG-APPLIED-17",
+  "source_file": "sources/H26/17_applied_science.pdf",
+  "source_page": "7",
+  "source_sha256": "d7264457acc42c86ce7f6e0f53eb37d894fae3564730277d7c0da09037028817",
+  "raw_text_sha256": "efabbc0365f25c2db8bbf0ab0043017ea9c955250ad1c90286bdf939a93d5544",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}

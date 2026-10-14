@@ -1,0 +1,28 @@
+{
+  "time": "2026-10-14T13:41:37+09:00",
+  "model": "GPT-6.1 Sol (user-declared)",
+  "phase": "S7",
+  "batch": "S7_055_chemistry",
+  "canonical_counts": {
+    "registered": 1270,
+    "solution_drafts": 1105,
+    "corrected_verified": 684,
+    "corrected_partial": 421,
+    "classification_verified": 1126,
+    "manual_required": 586,
+    "subject_drafts": {
+      "BASIC": 305,
+      "APT": 240,
+      "APPLIED": 560
+    }
+  },
+  "source_images_actually_viewed": 26,
+  "source_reviewed_questions": 29,
+  "initial_matches": 29,
+  "new_concepts": 16,
+  "new_references": 17,
+  "pdf_manifest": "extracted/logs/S7_055_build_manifest.json",
+  "checkpoint2_reached": false,
+  "remaining_first_drafts": 165,
+  "next": "基礎設計・情報等30問、解析・環境の残り135問、頻度分析とCheckpoint2資料。"
+}

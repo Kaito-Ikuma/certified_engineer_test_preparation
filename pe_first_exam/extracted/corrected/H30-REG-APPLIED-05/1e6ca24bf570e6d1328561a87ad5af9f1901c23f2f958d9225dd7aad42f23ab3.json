@@ -1,0 +1,46 @@
+{
+  "stem": "岸壁へ接近する船が汽笛の反射音を聞いた時点の岸壁までの距離を求める。",
+  "conditions": {
+    "船速": "岸壁へ20 m/sで等速接近。",
+    "音速・時間": "340 m/s、汽笛から反射音到着まで3 s。",
+    "問う時点": "反射音を聞いた時点。"
+  },
+  "choices": {
+    "1": {
+      "value": "450 m",
+      "verdict": "不適切",
+      "reason": "船の移動60 mを正しい往復の幾何から減じた480 mとは一致しない。"
+    },
+    "2": {
+      "value": "480 m",
+      "verdict": "最適",
+      "reason": "発音時540 mから移動60 mを差し引いた到着時距離。"
+    },
+    "3": {
+      "value": "510 m",
+      "verdict": "不適切",
+      "reason": "静止する船としてct/2を計算した値で、船の移動を無視している。"
+    },
+    "4": {
+      "value": "540 m",
+      "verdict": "不適切",
+      "reason": "発音時の距離であり、反射音を聞いた時点の距離ではない。"
+    },
+    "5": {
+      "value": "570 m",
+      "verdict": "不適切",
+      "reason": "移動方向が接近であることと、音の往復距離の減少を正しく反映していない。"
+    }
+  },
+  "figures": "原典の条件・数式・単位・全5肢を実画像確認。設問固有図なし。",
+  "ambiguity": "",
+  "evidence": [
+    "extracted/pages/H30/17_applied_science/page_002.png"
+  ],
+  "question_id": "H30-REG-APPLIED-05",
+  "source_file": "sources/H30/17_applied_science.pdf",
+  "source_page": "2",
+  "source_sha256": "6f968172109abe6cbb843d1ff390a4883a816261c29706d4f0bc40ea4aeafb71",
+  "raw_text_sha256": "d41621f74a5db2115de949120bf0f167381231d63bf3035ab8d6e668a278f665",
+  "scope": "Source-image checked essential conditions and all options; independent paraphrase"
+}
